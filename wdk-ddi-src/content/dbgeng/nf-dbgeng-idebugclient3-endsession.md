@@ -7,7 +7,7 @@ old-location: debugger\endsession.htm
 old-project: debugger
 ms.assetid: 521a0e4a-99c6-4ad4-886d-3fff9855e1fd
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugClient3, EndSession, IDebugClient3::EndSession
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -117,12 +117,6 @@ HRESULT EndSession(
 <p> </p>
 
 ## -remarks
-<p>This method may be called at any time with <i>Flags</i> set to DEBUG_END_REENTRANT.  If, for example, the application needs to exit but another thread is using the engine, this method can be used to perform as much cleanup as possible.</p>
-
-<p>Using DEBUG_END_REENTRANT may leave the engine in an indeterminate state. If this flag is used, no subsequent calls should be made to the engine.</p>
-
-<p>For more information about debugger sessions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.</p>
-
 <p>This method may be called at any time with <i>Flags</i> set to DEBUG_END_REENTRANT.  If, for example, the application needs to exit but another thread is using the engine, this method can be used to perform as much cleanup as possible.</p>
 
 <p>Using DEBUG_END_REENTRANT may leave the engine in an indeterminate state. If this flag is used, no subsequent calls should be made to the engine.</p>

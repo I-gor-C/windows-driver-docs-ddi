@@ -70,11 +70,7 @@ typedef enum _SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS {
 </dl>
 
 ## -remarks
-<p>The constants in this enumeration are used by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265254">SerCx2CustomReceiveTransactionReportProgress</a> method.</p>
-
-<p>The constants in this enumeration are used by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265254">SerCx2CustomReceiveTransactionReportProgress</a> method.</p>
-
-<p>The constants in this enumeration are used by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265254">SerCx2CustomReceiveTransactionReportProgress</a> method.</p>
+<p>The constants in this enumeration are used by the <a href="..\sercx\nf-sercx-sercx2customreceivetransactionreportprogress.md">SerCx2CustomReceiveTransactionReportProgress</a> method.</p>
 
 ## -requirements
 <table>
@@ -93,7 +89,7 @@ typedef enum _SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265254">SerCx2CustomReceiveTransactionReportProgress</a>
+<a href="..\sercx\nf-sercx-sercx2customreceivetransactionreportprogress.md">SerCx2CustomReceiveTransactionReportProgress</a>
 </dt>
 </dl>
 <p> </p>

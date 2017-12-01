@@ -63,9 +63,7 @@ HRESULT STDMETHODCALLTYPE ShutdownOperation(
 <p><code>ShutdownOperation</code> returns an <b>HRESULT</b> value.</p>
 
 ## -remarks
-<p>The <code>ShutdownOperation</code> method is called by the pipeline manager if the job is canceled or an error occurs. Filters do not have to block this call until they completely finish using any resources. You should set up an internal state to indicate when filters need to cancel a job. Filters must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff554306">IPrintPipelineManagerControl::FilterFinished</a> when the filters are finished, which can be later.</p>
-
-<p>The <code>ShutdownOperation</code> method is called by the pipeline manager if the job is canceled or an error occurs. Filters do not have to block this call until they completely finish using any resources. You should set up an internal state to indicate when filters need to cancel a job. Filters must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff554306">IPrintPipelineManagerControl::FilterFinished</a> when the filters are finished, which can be later.</p>
+<p>The <code>ShutdownOperation</code> method is called by the pipeline manager if the job is canceled or an error occurs. Filters do not have to block this call until they completely finish using any resources. You should set up an internal state to indicate when filters need to cancel a job. Filters must call <a href="print.iprintpipelinemanagercontrol_filterfinished">IPrintPipelineManagerControl::FilterFinished</a> when the filters are finished, which can be later.</p>
 
 ## -requirements
 <table>
@@ -104,7 +102,7 @@ HRESULT STDMETHODCALLTYPE ShutdownOperation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554306">IPrintPipelineManagerControl::FilterFinished</a>
+<a href="print.iprintpipelinemanagercontrol_filterfinished">IPrintPipelineManagerControl::FilterFinished</a>
 </dt>
 </dl>
 <p> </p>

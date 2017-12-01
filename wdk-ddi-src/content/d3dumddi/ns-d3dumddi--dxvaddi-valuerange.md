@@ -60,25 +60,25 @@ typedef struct _DXVADDI_VALUERANGE {
 ### -field <b>MinValue</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562909">DXVADDI_FIXED32</a> structure that specifies the minimum value that is allowed for a given property.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the minimum value that is allowed for a given property.</p>
 </dd>
 
 ### -field <b>MaxValue</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562909">DXVADDI_FIXED32</a> structure that specifies the maximum value that is allowed for a given property.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the maximum value that is allowed for a given property.</p>
 </dd>
 
 ### -field <b>DefaultValue</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562909">DXVADDI_FIXED32</a> structure that specifies the default value for a given property.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the default value for a given property.</p>
 </dd>
 
 ### -field <b>StepSize</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562909">DXVADDI_FIXED32</a> structure that specifies the step size increment for a given property.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the step size increment for a given property.</p>
 </dd>
 </dl>
 
@@ -110,16 +110,16 @@ typedef struct _DXVADDI_VALUERANGE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544132">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ne-d3dumddi--d3dddicaps-type.md">D3DDDICAPS_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562944">DXVADDI_VIDEODESC</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videodesc.md">DXVADDI_VIDEODESC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562935">DXVADDI_QUERYPROCAMPINPUT</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-queryprocampinput.md">DXVADDI_QUERYPROCAMPINPUT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a>

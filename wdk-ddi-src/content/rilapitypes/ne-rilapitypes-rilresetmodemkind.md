@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemkind_2.htm
 old-project: netvista
 ms.assetid: 622f9629-f172-469c-aba5-50a4eec78ab0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

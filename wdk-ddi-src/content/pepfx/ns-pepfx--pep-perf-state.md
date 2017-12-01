@@ -7,7 +7,7 @@ old-location: kernel\pep_perf_state.htm
 old-project: kernel
 ms.assetid: D5C9EF42-B6FE-4472-8188-2B23F87FA475
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PEP_PERF_STATE, PEP_PERF_STATE, *PPEP_PERF_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,9 +69,9 @@ typedef struct _PEP_PERF_STATE {
 </dl>
 
 ## -remarks
-<p>The <b>Discrete.States</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186702">PEP_COMPONENT_PERF_SET</a> structure is a pointer to an array of <b>PEP_PERF_STATE</b> structures. The <b>Unit</b> member of the <b>PEP_COMPONENT_PERF_SET</b> structure specifies the units in which the <b>Value</b> member in each array element is expressed. Component performance can be expressed in hertz (frequency) or in bits per second (bandwidth). For example, if <b>Value</b> = 100,000,000 and <b>Unit</b> = <b>PepPerfStateUnitFrequency</b>, this performance state represents a frequency of 100 megahertz.</p>
+<p>The <b>Discrete.States</b> member of the <a href="..\pepfx\ns-pepfx--pep-component-perf-set.md">PEP_COMPONENT_PERF_SET</a> structure is a pointer to an array of <b>PEP_PERF_STATE</b> structures. The <b>Unit</b> member of the <b>PEP_COMPONENT_PERF_SET</b> structure specifies the units in which the <b>Value</b> member in each array element is expressed. Component performance can be expressed in hertz (frequency) or in bits per second (bandwidth). For example, if <b>Value</b> = 100,000,000 and <b>Unit</b> = <b>PepPerfStateUnitFrequency</b>, this performance state represents a frequency of 100 megahertz.</p>
 
-<p>Device drivers use the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939835">PO_FX_PERF_STATE</a> structure, which is similar to the <b>PEP_PERF_STATE</b> structure.</p>
+<p>Device drivers use the <a href="..\wdm\ns-wdm--po-fx-perf-state.md">PO_FX_PERF_STATE</a> structure, which is similar to the <b>PEP_PERF_STATE</b> structure.</p>
 
 ## -requirements
 <table>
@@ -98,12 +98,12 @@ typedef struct _PEP_PERF_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186702">PEP_COMPONENT_PERF_SET</a>
+<a href="..\pepfx\ns-pepfx--pep-component-perf-set.md">PEP_COMPONENT_PERF_SET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn939835">PO_FX_PERF_STATE</a>
+<a href="..\wdm\ns-wdm--po-fx-perf-state.md">PO_FX_PERF_STATE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PERF_STATE structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PERF_STATE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

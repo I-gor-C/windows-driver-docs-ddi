@@ -7,7 +7,7 @@ old-location: debugger\readhandledata.htm
 old-project: debugger
 ms.assetid: 9ad8e8c1-6aee-4eac-93e6-5997212c63d0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces3, ReadHandleData, IDebugDataSpaces3::ReadHandleData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -105,7 +105,7 @@ HRESULT ReadHandleData(
 <p>DEBUG_HANDLE_DATA_TYPE_HANDLE_COUNT</p>
 </td>
 <td>
-<p>Returns the number of handles held by the object.  This is similar to the field <a href="https://msdn.microsoft.com/library/windows/hardware/ff541500">DEBUG_HANDLE_DATA_BASIC</a>.<b>HandleCount</b>.</p>
+<p>Returns the number of handles held by the object.  This is similar to the field <a href="..\dbgeng\ns-dbgeng--debug-handle-data-basic.md">DEBUG_HANDLE_DATA_BASIC</a>.<b>HandleCount</b>.</p>
 <p>In this case, the argument <i>Buffer</i> can be considered to have type PULONG.</p>
 </td>
 </tr>
@@ -163,8 +163,6 @@ HRESULT ReadHandleData(
 ## -remarks
 <p>This method is only available in user-mode debugging.</p>
 
-<p>This method is only available in user-mode debugging.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -192,16 +190,16 @@ HRESULT ReadHandleData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550531">IDebugDataSpaces2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces2.md">IDebugDataSpaces2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550537">IDebugDataSpaces3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces3.md">IDebugDataSpaces3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550546">IDebugDataSpaces4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 </dt>
 <dt>Handles</dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces2::ReadHandleData method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces2::ReadHandleData method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

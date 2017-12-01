@@ -67,7 +67,7 @@ typedef struct DXGI_DDI_ARG_BLT {
 ### -field <b>hDevice</b>
 
 <dd>
-<p>[in] A handle to the display device (graphics context) on which the driver performs the bitblt. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541664">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
+<p>[in] A handle to the display device (graphics context) on which the driver performs the bitblt. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
 </dd>
 
 ### -field <b>hDstResource</b>
@@ -121,13 +121,13 @@ typedef struct DXGI_DDI_ARG_BLT {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff557451">DXGI_DDI_ARG_BLT_FLAGS</a> structure that identifies the type of bitblt to perform. </p>
+<p>[in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-arg-blt-flags.md">DXGI_DDI_ARG_BLT_FLAGS</a> structure that identifies the type of bitblt to perform. </p>
 </dd>
 
 ### -field <b>Rotate</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff557502">DXGI_DDI_MODE_ROTATION</a>-typed value that identifies the orientation of the display mode.</p>
+<p>[in] A <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-rotation.md">DXGI_DDI_MODE_ROTATION</a>-typed value that identifies the orientation of the display mode.</p>
 </dd>
 </dl>
 
@@ -159,13 +159,13 @@ typedef struct DXGI_DDI_ARG_BLT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a>
+<a href="display.bltdxgi">BltDXGI</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557451">DXGI_DDI_ARG_BLT_FLAGS</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-arg-blt-flags.md">DXGI_DDI_ARG_BLT_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557502">DXGI_DDI_MODE_ROTATION</a>
+<a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-rotation.md">DXGI_DDI_MODE_ROTATION</a>
 </dt>
 </dl>
 <p> </p>

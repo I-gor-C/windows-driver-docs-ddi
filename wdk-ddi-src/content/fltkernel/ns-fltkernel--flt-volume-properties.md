@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The FLT_VOLUME_PROPERTIES structure is passed as a parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543254">FltGetVolumeProperties</a>. </p>
+<p>The FLT_VOLUME_PROPERTIES structure is passed as a parameter to <a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>. </p>
 
 
 ## -syntax
@@ -92,19 +92,19 @@ typedef struct _FLT_VOLUME_PROPERTIES {
 ### -field <b>DeviceCharacteristics</b>
 
 <dd>
-<p>Receives the device characteristics of the volume. For more information, see the reference entry for <a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a>. </p>
+<p>Receives the device characteristics of the volume. For more information, see the reference entry for <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>. </p>
 </dd>
 
 ### -field <b>DeviceObjectFlags</b>
 
 <dd>
-<p>Receives the device object flags for the volume. For more information about these flags, see the reference entries for <a href="https://msdn.microsoft.com/library/windows/hardware/ff548494">IoRegisterFileSystem</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>. </p>
+<p>Receives the device object flags for the volume. For more information about these flags, see the reference entries for <a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a> and <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>. </p>
 </dd>
 
 ### -field <b>AlignmentRequirement</b>
 
 <dd>
-<p>Receives the buffer alignment required by the underlying device. The value must be one of the FILE_<i>xxxx</i>_ALIGNMENT values defined in ntifs.h. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>. </p>
+<p>Receives the buffer alignment required by the underlying device. The value must be one of the FILE_<i>xxxx</i>_ALIGNMENT values defined in ntifs.h. For more information, see <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>. </p>
 </dd>
 
 ### -field <b>SectorSize</b>
@@ -141,28 +141,28 @@ typedef struct _FLT_VOLUME_PROPERTIES {
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that receives the service name of the file system that is mounted on this volume. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543254">FltGetVolumeProperties</a>. </p>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that receives the service name of the file system that is mounted on this volume. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>. </p>
 </dd>
 
 ### -field <b>FileSystemDeviceName</b>
 
 <dd>
-<p>UNICODE_STRING structure that receives the name of the file system device object associated with this volume. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543254">FltGetVolumeProperties</a>. </p>
+<p>UNICODE_STRING structure that receives the name of the file system device object associated with this volume. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>. </p>
 </dd>
 
 ### -field <b>RealDeviceName</b>
 
 <dd>
-<p>UNICODE_STRING structure that receives the name of the storage device object associated with this volume. This structure is empty for network file systems. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543254">FltGetVolumeProperties</a>. </p>
+<p>UNICODE_STRING structure that receives the name of the storage device object associated with this volume. This structure is empty for network file systems. The buffer for this Unicode string is contiguous with this structure and does not need to be initialized before calling <a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>. </p>
 </dd>
 </dl>
 
 ## -remarks
 <p>Storage for the FLT_VOLUME_PROPERTIES structure is typically allocated from paged pool. </p>
 
-<p>To get the volume name for a given volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543249">FltGetVolumeName</a>. </p>
+<p>To get the volume name for a given volume, call <a href="..\fltkernel\nf-fltkernel-fltgetvolumename.md">FltGetVolumeName</a>. </p>
 
-<p>To get the volume globally unique identifier (GUID) name for a given volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543230">FltGetVolumeGuidName</a>. </p>
+<p>To get the volume globally unique identifier (GUID) name for a given volume, call <a href="..\fltkernel\nf-fltkernel-fltgetvolumeguidname.md">FltGetVolumeGuidName</a>. </p>
 
 ## -requirements
 <table>
@@ -181,23 +181,23 @@ typedef struct _FLT_VOLUME_PROPERTIES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543249">FltGetVolumeName</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumename.md">FltGetVolumeName</a>
 </dt>
 <dt><b>FltGetVolumeName</b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543254">FltGetVolumeProperties</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a>
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548494">IoRegisterFileSystem</a>
+<a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>

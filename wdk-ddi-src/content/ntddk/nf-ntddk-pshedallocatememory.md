@@ -65,9 +65,7 @@ PVOID PshedAllocateMemory(
 <p><b>PshedAllocateMemory</b> returns a pointer to the allocated block of memory, or NULL if the memory allocation fails.</p>
 
 ## -remarks
-<p>A PSHED plug-in calls the <b>PshedAllocateMemory</b> function to allocate a block of memory. When the PSHED plug-in is done using the allocated block of memory, it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559463">PshedFreeMemory</a> function to free the memory.</p>
-
-<p>A PSHED plug-in calls the <b>PshedAllocateMemory</b> function to allocate a block of memory. When the PSHED plug-in is done using the allocated block of memory, it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559463">PshedFreeMemory</a> function to free the memory.</p>
+<p>A PSHED plug-in calls the <b>PshedAllocateMemory</b> function to allocate a block of memory. When the PSHED plug-in is done using the allocated block of memory, it calls the <a href="..\ntddk\nf-ntddk-pshedfreememory.md">PshedFreeMemory</a> function to free the memory.</p>
 
 ## -requirements
 <table>
@@ -133,7 +131,7 @@ PVOID PshedAllocateMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559463">PshedFreeMemory</a>
+<a href="..\ntddk\nf-ntddk-pshedfreememory.md">PshedFreeMemory</a>
 </dt>
 </dl>
 <p> </p>

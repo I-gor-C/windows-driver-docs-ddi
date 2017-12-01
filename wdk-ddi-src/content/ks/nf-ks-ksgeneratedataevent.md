@@ -7,7 +7,7 @@ old-location: stream\ksgeneratedataevent.htm
 old-project: stream
 ms.assetid: 3ba49134-e144-4212-9ef7-e16b9d5f90ea
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsGenerateDataEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,10 +83,6 @@ NTSTATUS KsGenerateDataEvent(
 
 <p>This function is specifically for events that pass data back through a callback to a client.</p>
 
-<p>It is assumed that the event list lock has been acquired before this function is called. This function can result in a call to the <b>RemoveHandler</b> for the event entry. Therefore, the function must not be called at higher than the IRQ level of the lock, or the <b>Remove</b> function must be able to handle being called at such an IRQ level.</p>
-
-<p>This function is specifically for events that pass data back through a callback to a client.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -124,9 +120,9 @@ NTSTATUS KsGenerateDataEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560992">KSBUFFER_ITEM</a>
+<a href="stream.ksbuffer_item">KSBUFFER_ITEM</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGenerateDataEvent function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGenerateDataEvent function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

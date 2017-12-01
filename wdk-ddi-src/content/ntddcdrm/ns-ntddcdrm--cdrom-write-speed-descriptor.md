@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>CDROM_WRITE_SPEED_DESCRIPTOR</b> structure is returned for the <a href="https://msdn.microsoft.com/library/windows/hardware/gg441242">IOCTL_CDROM_GET_PERFORMANCE</a> IOCTL when the request type is <b>CdromWriteSpeedRequest</b>. The IOCTL returns the  <a href="https://msdn.microsoft.com/library/windows/hardware/gg441232">CDROM_PERFORMANCE_HEADER</a> followed by one or more descriptors of type <b>CDROM_WRITE_SPEED_DESCRIPTOR</b>.</p>
+<p>The <b>CDROM_WRITE_SPEED_DESCRIPTOR</b> structure is returned for the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-performance.md">IOCTL_CDROM_GET_PERFORMANCE</a> IOCTL when the request type is <b>CdromWriteSpeedRequest</b>. The IOCTL returns the  <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-performance-header.md">CDROM_PERFORMANCE_HEADER</a> followed by one or more descriptors of type <b>CDROM_WRITE_SPEED_DESCRIPTOR</b>.</p>
 
 
 ## -syntax
@@ -66,7 +66,7 @@ typedef struct _CDROM_WRITE_SPEED_DESCRIPTOR {
 
 <dd>
 <p>The MixedReadWrite (MRW) field corresponds to the MRW bit of the Write Speed Descriptor in the MultiMedia Command Set - 6 (MMC-6)
-specification. This field indicates that it is suitable for a mixture of streaming read and write requests (overwrite mode). The <a href="https://msdn.microsoft.com/library/windows/hardware/gg441244">STREAMING_CONTROL_REQUEST_TYPE</a>   enumeration specifies the type of request.</p>
+specification. This field indicates that it is suitable for a mixture of streaming read and write requests (overwrite mode). The <a href="..\ntddcdrm\ne-ntddcdrm--streaming-control-request-type.md">STREAMING_CONTROL_REQUEST_TYPE</a>   enumeration specifies the type of request.</p>
 </dd>
 
 ### -field <b> Exact</b>
@@ -140,10 +140,10 @@ specification for the Write Speed Descriptor.</p>
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441242">IOCTL_CDROM_GET_PERFORMANCE</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441244">STREAMING_CONTROL_REQUEST_TYPE</a>
+<a href="..\ntddcdrm\ne-ntddcdrm--streaming-control-request-type.md">STREAMING_CONTROL_REQUEST_TYPE</a>
 </dt>
 </dl>
 <p> </p>

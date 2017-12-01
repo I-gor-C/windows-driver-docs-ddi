@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ScsiReadCapacity_IN structure is used to deliver input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564890">ScsiReadCapacity</a> WMI method. </p>
+<p>The ScsiReadCapacity_IN structure is used to deliver input parameter data to the <a href="storage.scsireadcapacity">ScsiReadCapacity</a> WMI method. </p>
 
 
 ## -syntax
@@ -83,7 +83,7 @@ typedef struct _ScsiReadCapacity_IN {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the ScsiReadCapacity_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the ScsiReadCapacity_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -102,7 +102,7 @@ typedef struct _ScsiReadCapacity_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564890">ScsiReadCapacity</a>
+<a href="storage.scsireadcapacity">ScsiReadCapacity</a>
 </dt>
 </dl>
 <p> </p>

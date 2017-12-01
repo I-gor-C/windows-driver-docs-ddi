@@ -7,7 +7,7 @@ old-location: netvista\wdi_txrx_mpdu_pn.htm
 old-project: netvista
 ms.assetid: F03F5BE6-B2F2-4A9A-8D6D-1ACC9F08C890
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TXRX_MPDU_PN, WDI_TXRX_MPDU_PN
 ms.prod: windows-hardware
 ms.technology: windows-devices

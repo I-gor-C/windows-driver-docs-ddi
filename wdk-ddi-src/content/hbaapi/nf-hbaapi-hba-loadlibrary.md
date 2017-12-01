@@ -53,7 +53,7 @@ HBA_STATUS HBA_API HBA_LoadLibrary(void);
 
 
 ## -returns
-<p>The <b>HBA_LoadLibrary</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_LoadLibrary</b> returns one of the following qualifiers.</p><dl>
+<p>The <b>HBA_LoadLibrary</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_LoadLibrary</b> returns one of the following qualifiers.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the library loaded properly. </p><dl>
 <dt><b>HBA_STATUS_ERROR_ALREADY_LOADED</b></dt>
@@ -65,7 +65,7 @@ HBA_STATUS HBA_API HBA_LoadLibrary(void);
 
 <p> </p>
 
-<p>The <b>HBA_LoadLibrary</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_LoadLibrary</b> returns one of the following qualifiers.</p><dl>
+<p>The <b>HBA_LoadLibrary</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_LoadLibrary</b> returns one of the following qualifiers.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the library loaded properly. </p><dl>
 <dt><b>HBA_STATUS_ERROR_ALREADY_LOADED</b></dt>
@@ -77,7 +77,7 @@ HBA_STATUS HBA_API HBA_LoadLibrary(void);
 
 <p> </p>
 
-<p>The <b>HBA_LoadLibrary</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_LoadLibrary</b> returns one of the following qualifiers.</p><dl>
+<p>The <b>HBA_LoadLibrary</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_LoadLibrary</b> returns one of the following qualifiers.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the library loaded properly. </p><dl>
 <dt><b>HBA_STATUS_ERROR_ALREADY_LOADED</b></dt>
@@ -139,7 +139,7 @@ HBA_STATUS HBA_API HBA_LoadLibrary(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

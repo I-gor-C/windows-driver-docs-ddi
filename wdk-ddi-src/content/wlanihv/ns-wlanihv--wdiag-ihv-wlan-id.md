@@ -7,7 +7,7 @@ old-location: netvista\wdiag_ihv_wlan_id.htm
 old-project: netvista
 ms.assetid: 72dc7128-fcbc-4ad8-ac81-e2767ac6ffa2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDIAG_IHV_WLAN_ID,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -69,7 +68,7 @@ typedef struct _WDIAG_IHV_WLAN_ID {
 <dd>
 <p>The service set identifier (SSID) of the basic service set (BSS) network. The 
      <b>Ssid</b> member is of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff548773">DOT11_SSID</a> type.</p>
+     <a href="..\wlantypes\ns-wlantypes--dot11-ssid.md">DOT11_SSID</a> type.</p>
 </dd>
 
 ### -field <b>BssType</b>
@@ -77,7 +76,7 @@ typedef struct _WDIAG_IHV_WLAN_ID {
 <dd>
 <p>The type of the BSS network. The 
      <b>BssType</b> member contains a value defined for the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547669">DOT11_BSS_TYPE</a> enumeration.</p>
+     <a href="..\wlantypes\ne-wlantypes--dot11-bss-type.md">DOT11_BSS_TYPE</a> enumeration.</p>
 </dd>
 
 ### -field <b>dwFlags</b>
@@ -123,12 +122,12 @@ typedef struct _WDIAG_IHV_WLAN_ID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547669">DOT11_BSS_TYPE</a>
+<a href="..\wlantypes\ne-wlantypes--dot11-bss-type.md">DOT11_BSS_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548773">DOT11_SSID</a>
+<a href="..\wlantypes\ns-wlantypes--dot11-ssid.md">DOT11_SSID</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDIAG_IHV_WLAN_ID structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDIAG_IHV_WLAN_ID structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

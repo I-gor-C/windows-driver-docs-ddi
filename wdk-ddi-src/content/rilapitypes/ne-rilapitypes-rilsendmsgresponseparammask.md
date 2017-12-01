@@ -7,7 +7,7 @@ old-location: netvista\rilsendmsgresponseparammask_2.htm
 old-project: netvista
 ms.assetid: 09711824-5a7a-4f24-bfe4-b7b146de7bee
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

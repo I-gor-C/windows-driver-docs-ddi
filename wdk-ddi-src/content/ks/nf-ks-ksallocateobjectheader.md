@@ -7,7 +7,7 @@ old-location: stream\ksallocateobjectheader.htm
 old-project: stream
 ms.assetid: 18f5ea44-3f70-4c26-beb3-2f03568df03b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsAllocateObjectHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,7 +78,7 @@ NTSTATUS KsAllocateObjectHeader(
 
 <dd>
 <p>Optionally specifies a pointer to a caller-allocated buffer containing a series of 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a> structures to be added to 
+      <a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a> structures to be added to 
       the object header. Must be set to <b>NULL</b> if there are no object create items.</p>
 </dd>
 
@@ -104,7 +104,7 @@ NTSTATUS KsAllocateObjectHeader(
 
 ## -remarks
 <p>Before calling this routine the driver must allocate system-resident storage for a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561723">KSDISPATCH_TABLE</a> and initialize the dispatch table. 
+     <a href="stream.ksdispatch_table">KSDISPATCH_TABLE</a> and initialize the dispatch table. 
      The memory for this dispatch table cannot be released until <b>KsFreeObjectHeader</b> 
      is called.</p>
 
@@ -116,31 +116,11 @@ NTSTATUS KsAllocateObjectHeader(
 
 <p>If subobjects exist for a given device, the driver must, before calling 
      <b>KsAllocateObjectHeader</b>, allocate a buffer of either paged or nonpaged memory of 
-     sufficient size to hold a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a> 
+     sufficient size to hold a <a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a> 
      structure for each subobject. For example:</p>
 
 <p>Drivers must not free the memory allocated for the subobject 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a> list until after calling 
-     <b>KsFreeDeviceHeader</b>. Failure to do so can result in a bug check condition.</p>
-
-<p>Before calling this routine the driver must allocate system-resident storage for a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561723">KSDISPATCH_TABLE</a> and initialize the dispatch table. 
-     The memory for this dispatch table cannot be released until <b>KsFreeObjectHeader</b> 
-     is called.</p>
-
-<p><b>KsAllocateObjectHeader</b> allocates the memory for the 
-      <b>KSOBJECT_HEADER</b> structure and returns a pointer to the header at 
-       <i>Header</i>. Drivers must not attempt to free the memory themselves, but rather call 
-       <b>KsFreeObjectHeader</b> when all operations requiring this object header have been 
-       completed.</p>
-
-<p>If subobjects exist for a given device, the driver must, before calling 
-     <b>KsAllocateObjectHeader</b>, allocate a buffer of either paged or nonpaged memory of 
-     sufficient size to hold a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a> 
-     structure for each subobject. For example:</p>
-
-<p>Drivers must not free the memory allocated for the subobject 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a> list until after calling 
+     <a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a> list until after calling 
      <b>KsFreeDeviceHeader</b>. Failure to do so can result in a bug check condition.</p>
 
 ## -requirements
@@ -188,15 +168,15 @@ NTSTATUS KsAllocateObjectHeader(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562565">KsFreeObjectHeader</a>
+<a href="..\ks\nf-ks-ksfreeobjectheader.md">KsFreeObjectHeader</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a>
+<a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562560">KsFreeDeviceHeader</a>
+<a href="..\ks\nf-ks-ksfreedeviceheader.md">KsFreeDeviceHeader</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsAllocateObjectHeader function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsAllocateObjectHeader function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

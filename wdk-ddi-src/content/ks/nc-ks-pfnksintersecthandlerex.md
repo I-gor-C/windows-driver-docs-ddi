@@ -7,7 +7,7 @@ old-location: stream\avstrminiintersecthandlerex.htm
 old-project: stream
 ms.assetid: d80f8bc6-29dc-4cb0-87f5-414ec6418156
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,31 +67,31 @@ NTSTATUS AVStrMiniIntersectHandlerEx(
 ### -param <i>Context</i> [in]
 
 <dd>
-<p>Pointer to the <b>Context</b> member of the corresponding <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure.</p>
+<p>Pointer to the <b>Context</b> member of the corresponding <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure.</p>
 </dd>
 
 ### -param <i>Irp</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> containing the intersection request.</p>
+<p>Pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> containing the intersection request.</p>
 </dd>
 
 ### -param <i>Pin</i> [in]
 
 <dd>
-<p>Pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566722">KSP_PIN</a> that was passed in the intersection property request.</p>
+<p>Pointer to a structure of type <a href="stream.ksp_pin">KSP_PIN</a> that was passed in the intersection property request.</p>
 </dd>
 
 ### -param <i>DataRange</i> [in]
 
 <dd>
-<p>Pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a> structures.</p>
+<p>Pointer to an array of <a href="stream.ksdatarange">KSDATARANGE</a> structures.</p>
 </dd>
 
 ### -param <i>MatchingDataRange</i> [in]
 
 <dd>
-<p>Pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a> structures to match to <i>DataRange</i>.</p>
+<p>Pointer to an array of <a href="stream.ksdatarange">KSDATARANGE</a> structures to match to <i>DataRange</i>.</p>
 </dd>
 
 ### -param <i>DataBufferSize</i> [in]
@@ -117,9 +117,7 @@ NTSTATUS AVStrMiniIntersectHandlerEx(
 <p>If the callback finds a match, return STATUS_SUCCESS. Otherwise return STATUS_NO_MATCH.</p>
 
 ## -remarks
-<p>The minidriver specifies this routine's address in the <b>IntersectHandler</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563534">KSPIN_DESCRIPTOR_EX</a> structure.</p>
-
-<p>The minidriver specifies this routine's address in the <b>IntersectHandler</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563534">KSPIN_DESCRIPTOR_EX</a> structure.</p>
+<p>The minidriver specifies this routine's address in the <b>IntersectHandler</b> member of a <a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a> structure.</p>
 
 ## -requirements
 <table>
@@ -148,24 +146,24 @@ NTSTATUS AVStrMiniIntersectHandlerEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>
+<a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566722">KSP_PIN</a>
+<a href="stream.ksp_pin">KSP_PIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
+<a href="stream.ksdatarange">KSDATARANGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563534">KSPIN_DESCRIPTOR_EX</a>
+<a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565198">KSPROPERTY_PIN_DATAINTERSECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563499">KsPinDataIntersectionEx</a>
+<a href="..\ks\nf-ks-kspindataintersectionex.md">KsPinDataIntersectionEx</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniIntersectHandlerEx routine%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniIntersectHandlerEx routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

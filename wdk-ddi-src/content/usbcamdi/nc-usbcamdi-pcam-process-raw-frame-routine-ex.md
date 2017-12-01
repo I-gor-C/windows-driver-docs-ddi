@@ -7,7 +7,7 @@ old-location: stream\camprocessrawvideoframeex.htm
 old-project: stream
 ms.assetid: 07b0d1ea-c099-474e-8dc8-cddec44836e2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: USBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR, *PUSBC_FUNCTION_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -141,33 +141,9 @@ NTSTATUS CamProcessRawVideoFrameEx(
 ## -remarks
 <p>Before USBCAMD calls the minidriver's <b>CamProcessRawVideoFrameEx</b> callback, it sets the first DWORD in the buffer pointed to by the <i>FrameBuffer</i> parameter to the value <i>0xdeadbeef.</i> After calling the minidriver's <b>CamProcessRawVideoFrameEx</b> callback USBCAMD checks the first DWORD in the buffer pointed to by the <i>FrameBuffer</i> parameter for the value <i>0xdeadbeef</i> to determine if <b>CamProcessRawVideoFrameEx</b> successfully copied the video frame from the buffer pointed to by the <i>RawFrameBuffer</i> parameter into the buffer pointed to by the <i>FrameBuffer</i> parameter.</p>
 
-<p>This function is not called if either one of the following bits are set in the <i>CamControlFlag</i> argument passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568599">USBCAMD_InitializeNewInterface</a> function:</p><dl>
-<dd>
+<p>This function is not called if either one of the following bits are set in the <i>CamControlFlag</i> argument passed to the <a href="..\usbcamdi\nf-usbcamdi-usbcamd-initializenewinterface.md">USBCAMD_InitializeNewInterface</a> function:</p>
+
 <p>USBCAMD_CamControlFlag_NoVideoRawProcessing</p>
-</dd>
-<dd>
-<p>USBCAMD_CamControlFlag_NoStillRawProcessing</p>
-</dd>
-</dl><p>USBCAMD_CamControlFlag_NoVideoRawProcessing</p>
-
-<p>USBCAMD_CamControlFlag_NoStillRawProcessing</p>
-
-<p>USBCAMD clears the stream header options flag before passing the raw frame to the minidriver. The default flag is key frames only. The camera minidriver should set the stream header option flags appropriately if it needs to indicate anything other than key frames.</p>
-
-<p>The original USBCAMD does not call <b>CamProcessRawVideoFrameEx</b>.</p>
-
-<p>This function is optional.</p>
-
-<p>Before USBCAMD calls the minidriver's <b>CamProcessRawVideoFrameEx</b> callback, it sets the first DWORD in the buffer pointed to by the <i>FrameBuffer</i> parameter to the value <i>0xdeadbeef.</i> After calling the minidriver's <b>CamProcessRawVideoFrameEx</b> callback USBCAMD checks the first DWORD in the buffer pointed to by the <i>FrameBuffer</i> parameter for the value <i>0xdeadbeef</i> to determine if <b>CamProcessRawVideoFrameEx</b> successfully copied the video frame from the buffer pointed to by the <i>RawFrameBuffer</i> parameter into the buffer pointed to by the <i>FrameBuffer</i> parameter.</p>
-
-<p>This function is not called if either one of the following bits are set in the <i>CamControlFlag</i> argument passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568599">USBCAMD_InitializeNewInterface</a> function:</p><dl>
-<dd>
-<p>USBCAMD_CamControlFlag_NoVideoRawProcessing</p>
-</dd>
-<dd>
-<p>USBCAMD_CamControlFlag_NoStillRawProcessing</p>
-</dd>
-</dl><p>USBCAMD_CamControlFlag_NoVideoRawProcessing</p>
 
 <p>USBCAMD_CamControlFlag_NoStillRawProcessing</p>
 

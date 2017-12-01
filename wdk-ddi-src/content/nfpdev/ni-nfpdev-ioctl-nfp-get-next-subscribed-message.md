@@ -7,7 +7,7 @@ old-location: nfpdrivers\ioctl_nfp_get_next_subscribed_message.htm
 old-project: nfpdrivers
 ms.assetid: 975C32AE-6A2C-44C8-8F53-4158FDF1B942
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: SECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -148,152 +148,6 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 
 <p>The driver MUST support CancelIo of the pended IOCTL.</p>
 
-<p>The client should send another IOCTL each time the pended one is completed. The driver MUST use appropriate locks to guarantee that the number of successful completions of this IOCTL equates to the number of successful message receptions for the subscription type.</p>
-
-<p>The following are required actions when using this IOCTL:<ul>
-<li>
-<p>If this IOCTL is received on a handle that wasn’t previously opened in the “Subs\” device namespace, the driver MUST complete it with STATUS_INVALID_DEVICE_STATE.</p>
-</li>
-<li>
-<p>The driver must maintain a “Received” queue of received messages that match the subscription type within the subscription file handle.</p>
-</li>
-<li>
-<p>	When this IOCTL is received in the driver:</p>
-<ul>
-<li>
-<p>If the “Received” queue is empty, then the driver MUST pend the IOCTL for later completion.</p>
-</li>
-<li>
-<p>	If the “Received” queue is non-empty, then the driver MUST dequeue one message buffer, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with STATUS_SUCCESS immediately.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>If a message matching the type is received and no IOCTL is currently pended, the driver MUST add the message buffer to the “Received” queue.</p>
-</li>
-<li>
-<p>	If a message matching the type is received and there is a pended IOCTL available (the “Received” queue is empty), the driver MUST copy the message buffer to the IOCTL’s output buffer and complete the pended IRP with STATUS_SUCCESS. The “Received” queue MUST continue to be empty following completion of the pended IRP.</p>
-</li>
-<li>
-<p>	If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer MUST contain a hint for the size of the next client buffer and the IOCTL’s Information field MUST contain the size of this message plus <b>sizeof</b>(DWORD) (4 bytes).</p>
-</li>
-<li>
-<p>	If the IOCTL contains an input buffer the driver MUST complete the IOCTL with STATUS_INVALID_PARAMETER.</p>
-</li>
-<li>
-<p>	If a received message has a zero-length payload the driver SHOULD ignore the message.  This is a performance optimization because Windows WILL drop messages with zero-length payloads.</p>
-</li>
-<li>
-<p>If a received message is too large to be copied into this IOCTL’s buffer, the driver MUST copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s “Information” field to sizeof(DWORD) (“4”), and complete the IOCTL with STATUS_BUFFER_OVERFLOW. The message buffer must be left in the “Received” queue.</p>
-</li>
-<li>
-<p>If this IOCTL is received while another is currently pended in the subscription handle, the second (or later) one MUST be completed with STATUS_INVALID_DEVICE_STATE.</p>
-</li>
-<li>
-<p>The driver MUST support CancelIo of the pended IOCTL.</p>
-</li>
-</ul>
-</p>
-
-<p>If this IOCTL is received on a handle that wasn’t previously opened in the “Subs\” device namespace, the driver MUST complete it with STATUS_INVALID_DEVICE_STATE.</p>
-
-<p>The driver must maintain a “Received” queue of received messages that match the subscription type within the subscription file handle.</p>
-
-<p>	When this IOCTL is received in the driver:</p>
-
-<p>If the “Received” queue is empty, then the driver MUST pend the IOCTL for later completion.</p>
-
-<p>	If the “Received” queue is non-empty, then the driver MUST dequeue one message buffer, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with STATUS_SUCCESS immediately.</p>
-
-<p>If a message matching the type is received and no IOCTL is currently pended, the driver MUST add the message buffer to the “Received” queue.</p>
-
-<p>	If a message matching the type is received and there is a pended IOCTL available (the “Received” queue is empty), the driver MUST copy the message buffer to the IOCTL’s output buffer and complete the pended IRP with STATUS_SUCCESS. The “Received” queue MUST continue to be empty following completion of the pended IRP.</p>
-
-<p>	If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer MUST contain a hint for the size of the next client buffer and the IOCTL’s Information field MUST contain the size of this message plus <b>sizeof</b>(DWORD) (4 bytes).</p>
-
-<p>	If the IOCTL contains an input buffer the driver MUST complete the IOCTL with STATUS_INVALID_PARAMETER.</p>
-
-<p>	If a received message has a zero-length payload the driver SHOULD ignore the message.  This is a performance optimization because Windows WILL drop messages with zero-length payloads.</p>
-
-<p>If a received message is too large to be copied into this IOCTL’s buffer, the driver MUST copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s “Information” field to sizeof(DWORD) (“4”), and complete the IOCTL with STATUS_BUFFER_OVERFLOW. The message buffer must be left in the “Received” queue.</p>
-
-<p>If this IOCTL is received while another is currently pended in the subscription handle, the second (or later) one MUST be completed with STATUS_INVALID_DEVICE_STATE.</p>
-
-<p>The driver MUST support CancelIo of the pended IOCTL.</p>
-
-<p>The client should send another IOCTL each time the pended one is completed. The driver MUST use appropriate locks to guarantee that the number of successful completions of this IOCTL equates to the number of successful message receptions for the subscription type.</p>
-
-<p>The following are required actions when using this IOCTL:<ul>
-<li>
-<p>If this IOCTL is received on a handle that wasn’t previously opened in the “Subs\” device namespace, the driver MUST complete it with STATUS_INVALID_DEVICE_STATE.</p>
-</li>
-<li>
-<p>The driver must maintain a “Received” queue of received messages that match the subscription type within the subscription file handle.</p>
-</li>
-<li>
-<p>	When this IOCTL is received in the driver:</p>
-<ul>
-<li>
-<p>If the “Received” queue is empty, then the driver MUST pend the IOCTL for later completion.</p>
-</li>
-<li>
-<p>	If the “Received” queue is non-empty, then the driver MUST dequeue one message buffer, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with STATUS_SUCCESS immediately.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>If a message matching the type is received and no IOCTL is currently pended, the driver MUST add the message buffer to the “Received” queue.</p>
-</li>
-<li>
-<p>	If a message matching the type is received and there is a pended IOCTL available (the “Received” queue is empty), the driver MUST copy the message buffer to the IOCTL’s output buffer and complete the pended IRP with STATUS_SUCCESS. The “Received” queue MUST continue to be empty following completion of the pended IRP.</p>
-</li>
-<li>
-<p>	If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer MUST contain a hint for the size of the next client buffer and the IOCTL’s Information field MUST contain the size of this message plus <b>sizeof</b>(DWORD) (4 bytes).</p>
-</li>
-<li>
-<p>	If the IOCTL contains an input buffer the driver MUST complete the IOCTL with STATUS_INVALID_PARAMETER.</p>
-</li>
-<li>
-<p>	If a received message has a zero-length payload the driver SHOULD ignore the message.  This is a performance optimization because Windows WILL drop messages with zero-length payloads.</p>
-</li>
-<li>
-<p>If a received message is too large to be copied into this IOCTL’s buffer, the driver MUST copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s “Information” field to sizeof(DWORD) (“4”), and complete the IOCTL with STATUS_BUFFER_OVERFLOW. The message buffer must be left in the “Received” queue.</p>
-</li>
-<li>
-<p>If this IOCTL is received while another is currently pended in the subscription handle, the second (or later) one MUST be completed with STATUS_INVALID_DEVICE_STATE.</p>
-</li>
-<li>
-<p>The driver MUST support CancelIo of the pended IOCTL.</p>
-</li>
-</ul>
-</p>
-
-<p>If this IOCTL is received on a handle that wasn’t previously opened in the “Subs\” device namespace, the driver MUST complete it with STATUS_INVALID_DEVICE_STATE.</p>
-
-<p>The driver must maintain a “Received” queue of received messages that match the subscription type within the subscription file handle.</p>
-
-<p>	When this IOCTL is received in the driver:</p>
-
-<p>If the “Received” queue is empty, then the driver MUST pend the IOCTL for later completion.</p>
-
-<p>	If the “Received” queue is non-empty, then the driver MUST dequeue one message buffer, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with STATUS_SUCCESS immediately.</p>
-
-<p>If a message matching the type is received and no IOCTL is currently pended, the driver MUST add the message buffer to the “Received” queue.</p>
-
-<p>	If a message matching the type is received and there is a pended IOCTL available (the “Received” queue is empty), the driver MUST copy the message buffer to the IOCTL’s output buffer and complete the pended IRP with STATUS_SUCCESS. The “Received” queue MUST continue to be empty following completion of the pended IRP.</p>
-
-<p>	If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer MUST contain a hint for the size of the next client buffer and the IOCTL’s Information field MUST contain the size of this message plus <b>sizeof</b>(DWORD) (4 bytes).</p>
-
-<p>	If the IOCTL contains an input buffer the driver MUST complete the IOCTL with STATUS_INVALID_PARAMETER.</p>
-
-<p>	If a received message has a zero-length payload the driver SHOULD ignore the message.  This is a performance optimization because Windows WILL drop messages with zero-length payloads.</p>
-
-<p>If a received message is too large to be copied into this IOCTL’s buffer, the driver MUST copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s “Information” field to sizeof(DWORD) (“4”), and complete the IOCTL with STATUS_BUFFER_OVERFLOW. The message buffer must be left in the “Received” queue.</p>
-
-<p>If this IOCTL is received while another is currently pended in the subscription handle, the second (or later) one MUST be completed with STATUS_INVALID_DEVICE_STATE.</p>
-
-<p>The driver MUST support CancelIo of the pended IOCTL.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -323,4 +177,4 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE control code%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE control code%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

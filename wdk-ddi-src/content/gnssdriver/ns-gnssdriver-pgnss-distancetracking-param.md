@@ -7,7 +7,7 @@ old-location: sensors\gnss_distancetracking_param.htm
 old-project: sensors
 ms.assetid: B37B3C59-225C-40BC-BCA4-9ABF2500AFC0
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_DISTANCETRACKING_PARAM, GNSS_DISTANCETRACKING_PARAM, *PGNSS_DISTANCETRACKING_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices

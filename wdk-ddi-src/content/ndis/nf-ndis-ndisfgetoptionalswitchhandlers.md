@@ -7,7 +7,7 @@ old-location: netvista\ndisfgetoptionalswitchhandlers.htm
 old-project: netvista
 ms.assetid: bf034ecd-5c1b-4117-a7b0-bcca3971386b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFGetOptionalSwitchHandlers
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ NDIS_STATUS NdisFGetOptionalSwitchHandlers(
 ### -param <i>NdisFilterHandle</i> [in]
 
 <dd>
-<p>The NDIS handle that identifies this filter module. When NDIS called the extension's  <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function, it passed this handle in the <i>NdisFilterHandle</i> parameter.</p>
+<p>The NDIS handle that identifies this filter module. When NDIS called the extension's  <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function, it passed this handle in the <i>NdisFilterHandle</i> parameter.</p>
 </dd>
 
 ### -param <i>NdisSwitchContext</i> [out]
@@ -78,9 +78,9 @@ NDIS_STATUS NdisFGetOptionalSwitchHandlers(
 ### -param <i>NdisSwitchHandlers</i> [in, out]
 
 <dd>
-<p>A pointer to a caller-allocated  <a href="https://msdn.microsoft.com/library/windows/hardware/hh598219">NDIS_SWITCH_OPTIONAL_HANDLERS</a> structure. If the call succeeds, this structure will contain a list of pointers to the extensible switch handler functions.</p>
-<p>For more information about these handler functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh598172">Hyper-V Extensible Switch Handler Functions</a>.</p>
-<div class="alert"><b>Note</b>  Before the extension calls <b>NdisFGetOptionalSwitchHandlers</b>, it must initialize the <b>Header</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598219">NDIS_SWITCH_OPTIONAL_HANDLERS</a> structure.</div>
+<p>A pointer to a caller-allocated  <a href="..\ndis\ns-ndis--ndis-switch-optional-handlers.md">NDIS_SWITCH_OPTIONAL_HANDLERS</a> structure. If the call succeeds, this structure will contain a list of pointers to the extensible switch handler functions.</p>
+<p>For more information about these handler functions, see <a href="netvista.hyper_v_extensible_switch_handler_functions">Hyper-V Extensible Switch Handler Functions</a>.</p>
+<div class="alert"><b>Note</b>  Before the extension calls <b>NdisFGetOptionalSwitchHandlers</b>, it must initialize the <b>Header</b> member of the <a href="..\ndis\ns-ndis--ndis-switch-optional-handlers.md">NDIS_SWITCH_OPTIONAL_HANDLERS</a> structure.</div>
 <div> </div>
 </dd>
 </dl>
@@ -91,13 +91,7 @@ NDIS_STATUS NdisFGetOptionalSwitchHandlers(
 </p>
 
 ## -remarks
-<p>The  extension calls the <b>NdisFGetOptionalSwitchHandlers</b> function from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function. </p>
-
-<p>If the extension is installed with multiple <b>FilterMediaTypes</b> INF entries, the call to <b>NdisFGetOptionalSwitchHandlers</b> lets the extension  determine whether it is bound and attached to the driver stack for either the extensible switch or a physical network adapter. If the call returns NDIS_STATUS_SUCCESS, the extension is attached within the extensible switch driver stack. If the call returns NDIS_STATUS_NOT_SUPPORTED, the extension is attached within the driver stack for a physical network adapter.</p>
-
-<p>For more information about <b>FilterMediaTypes</b> INF entries for extensible switch extensions, see <a href="NULL">INF Requirements for Hyper-V Extensible Switch Extensions</a>.</p>
-
-<p>The  extension calls the <b>NdisFGetOptionalSwitchHandlers</b> function from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function. </p>
+<p>The  extension calls the <b>NdisFGetOptionalSwitchHandlers</b> function from its <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function. </p>
 
 <p>If the extension is installed with multiple <b>FilterMediaTypes</b> INF entries, the call to <b>NdisFGetOptionalSwitchHandlers</b> lets the extension  determine whether it is bound and attached to the driver stack for either the extensible switch or a physical network adapter. If the call returns NDIS_STATUS_SUCCESS, the extension is attached within the extensible switch driver stack. If the call returns NDIS_STATUS_NOT_SUPPORTED, the extension is attached within the driver stack for a physical network adapter.</p>
 
@@ -157,12 +151,12 @@ NDIS_STATUS NdisFGetOptionalSwitchHandlers(
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598219">NDIS_SWITCH_OPTIONAL_HANDLERS</a>
+<a href="..\ndis\ns-ndis--ndis-switch-optional-handlers.md">NDIS_SWITCH_OPTIONAL_HANDLERS</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFGetOptionalSwitchHandlers function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFGetOptionalSwitchHandlers function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

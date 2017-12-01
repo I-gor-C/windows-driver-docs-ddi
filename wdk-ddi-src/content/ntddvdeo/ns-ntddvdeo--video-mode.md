@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The VIDEO_MODE structure contains the requested VGA mode that an adapter should set. This structure is used in conjunction with <a href="https://msdn.microsoft.com/library/windows/hardware/ff567846">IOCTL_VIDEO_SET_CURRENT_MODE</a>. </p>
+<p>The VIDEO_MODE structure contains the requested VGA mode that an adapter should set. This structure is used in conjunction with <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-set-current-mode.md">IOCTL_VIDEO_SET_CURRENT_MODE</a>. </p>
 
 
 ## -syntax

@@ -7,7 +7,7 @@ old-location: kernel\rtlverifyversioninfo.htm
 old-project: kernel
 ms.assetid: 7c0ca9a0-dfa4-44ab-8d3a-ab43f72c806f
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlVerifyVersionInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -29,8 +29,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe (kernel mode); 
-Ntdll.dll (user mode)
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql: PASSIVE_LEVEL
 req.iface: 
 req.product: Windows 10 or later.
@@ -61,7 +60,7 @@ NTSTATUS RtlVerifyVersionInfo(
 ### -param <i>VersionInfo</i> [in]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff563620">RTL_OSVERSIONINFOEXW</a> structure that specifies the operating system version requirements to compare to the corresponding attributes of the currently running version of the operating system. </p>
+<p>Pointer to an <a href="kernel.rtl_osversioninfoexw">RTL_OSVERSIONINFOEXW</a> structure that specifies the operating system version requirements to compare to the corresponding attributes of the currently running version of the operating system. </p>
 </dd>
 
 ### -param <i>TypeMask</i> [in]
@@ -360,18 +359,6 @@ NTSTATUS RtlVerifyVersionInfo(
 
 <p>To verify a range of system versions, a driver can call <b>RtlVerifyVersionInfo</b> twice, once to verify a lower bound on the system version and once to verify an upper bound on the system version.</p>
 
-<p><b>RtlVerifyVersionInfo</b> enables a driver to easily verify the presence of a required set of operating system attributes. <b>RtlVerifyVersionInfo</b> is the kernel-mode equivalent of the user-mode <b>VerifyVersionInfo</b> function in the Windows SDK. See the example in the Windows SDK that shows how to verify the system version.</p>
-
-<p>Typically, <b>RtlVerifyVersionInfo</b> returns STATUS_SUCCESS only if all comparisons succeed. However, the major version, minor version, and service pack version are tested in a sequential manner in the following way:</p>
-
-<p>If the major version exceeds the minimum required, then the minor version and service pack version are not tested. For example, if the current major version is 6.0, a test for a system greater than or equal to version 5.1 service pack 1 succeeds. The minor version and service pack version are not tested.</p>
-
-<p>If the minor version exceeds the minimum required, then the service pack version is not tested. For example, if the current major version is 5.2, a test for a system version greater than or equal to version 5.1 service pack 1 succeeds. The service pack version is not tested.</p>
-
-<p>If the major service pack version exceeds the minimum required, then the minor service pack version is not tested.</p>
-
-<p>To verify a range of system versions, a driver can call <b>RtlVerifyVersionInfo</b> twice, once to verify a lower bound on the system version and once to verify an upper bound on the system version.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -436,15 +423,15 @@ NTSTATUS RtlVerifyVersionInfo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561910">RtlGetVersion</a>
+<a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563624">RTL_OSVERSIONINFOW</a>
+<a href="kernel.rtl_osversioninfow">RTL_OSVERSIONINFOW</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563620">RTL_OSVERSIONINFOEXW</a>
+<a href="kernel.rtl_osversioninfoexw">RTL_OSVERSIONINFOEXW</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlVerifyVersionInfo routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlVerifyVersionInfo routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

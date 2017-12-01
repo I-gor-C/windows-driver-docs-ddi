@@ -7,7 +7,7 @@ old-location: debugger\getprocessidbysystemid.htm
 old-project: debugger
 ms.assetid: 7260f0ea-5e8b-4b08-8c8f-70216ffe54a9
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects2, GetProcessIdBySystemId, IDebugSystemObjects2::GetProcessIdBySystemId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,10 +78,6 @@ HRESULT GetProcessIdBySystemId(
 <p> </p>
 
 ## -remarks
-<p>This method is only available in user-mode debugging.</p>
-
-<p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
 <p>This method is only available in user-mode debugging.</p>
 
 <p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>

@@ -85,7 +85,7 @@ typedef struct D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/dn914421">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a> structure describing the operation.</p>
+<p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-waitforsynchronizationobjectfromcpu-flags.md">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a> structure describing the operation.</p>
 <table>
 <tr>
 <th>Value</th>

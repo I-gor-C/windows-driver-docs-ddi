@@ -67,7 +67,7 @@ SIZE_T APIENTRY CalcPrivateDepthStencilViewSize(
 ### -param <i>pCreateDepthStencilView</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542048">D3D11DDIARG_CREATEDEPTHSTENCILVIEW</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createdepthstencilview.md">D3D11DDIARG_CREATEDEPTHSTENCILVIEW</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>
 </dd>
 </dl>
 
@@ -75,8 +75,6 @@ SIZE_T APIENTRY CalcPrivateDepthStencilViewSize(
 <p><b>CalcPrivateDepthStencilViewSize(D3D11)</b> returns the size of the memory region that the driver requires to create a depth-stencil view.</p>
 
 ## -remarks
-<p>None.</p>
-
 <p>None.</p>
 
 ## -requirements
@@ -114,10 +112,10 @@ SIZE_T APIENTRY CalcPrivateDepthStencilViewSize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542141">D3D11DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-devicefuncs~r1.md">D3D11DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542048">D3D11DDIARG_CREATEDEPTHSTENCILVIEW</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createdepthstencilview.md">D3D11DDIARG_CREATEDEPTHSTENCILVIEW</a>
 </dt>
 </dl>
 <p> </p>

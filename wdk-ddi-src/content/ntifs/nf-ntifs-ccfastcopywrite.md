@@ -86,7 +86,7 @@ VOID CcFastCopyWrite(
 <p>None</p>
 
 ## -remarks
-<p><b>CcFastCopyWrite</b> is a faster version of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539045">CcCopyWrite</a>. It differs from <b>CcCopyWrite</b> in the following respects:</p>
+<p><b>CcFastCopyWrite</b> is a faster version of <a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>. It differs from <b>CcCopyWrite</b> in the following respects:</p>
 
 <p><i>FileOffset</i> is a ULONG, not a PLARGE_INTEGER.</p>
 
@@ -98,21 +98,7 @@ VOID CcFastCopyWrite(
 
 <p>If any failure occurs, <b>CcFastCopyWrite</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcFastCopyWrite</b> raises a STATUS_INSUFFICIENT_RESOURCES exception; if an I/O error occurs, <b>CcFastCopyWrite</b> raises the status exception of the I/O error. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcFastCopyWrite</b> in a <b>try-except</b> or <b>try-finally</b> statement.</p>
 
-<p>To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.</p>
-
-<p><b>CcFastCopyWrite</b> is a faster version of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539045">CcCopyWrite</a>. It differs from <b>CcCopyWrite</b> in the following respects:</p>
-
-<p><i>FileOffset</i> is a ULONG, not a PLARGE_INTEGER.</p>
-
-<p>There is no <i>Wait</i> parameter. The caller must be able to enter a wait state until all the data has been copied.</p>
-
-<p><b>CcFastCopyWrite</b> does not return a BOOLEAN to indicate whether the write operation was successful.</p>
-
-<p>If the required pages of the cached file are already resident in memory, the data is copied immediately and no blocking occurs. If any needed pages are not resident, the caller is put in a wait state until all required pages have been made resident and the data can be copied.</p>
-
-<p>If any failure occurs, <b>CcFastCopyWrite</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcFastCopyWrite</b> raises a STATUS_INSUFFICIENT_RESOURCES exception; if an I/O error occurs, <b>CcFastCopyWrite</b> raises the status exception of the I/O error. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcFastCopyWrite</b> in a <b>try-except</b> or <b>try-finally</b> statement.</p>
-
-<p>To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.</p>
+<p>To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.</p>
 
 ## -requirements
 <table>
@@ -161,10 +147,10 @@ VOID CcFastCopyWrite(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539045">CcCopyWrite</a>
+<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 </dl>
 <p> </p>

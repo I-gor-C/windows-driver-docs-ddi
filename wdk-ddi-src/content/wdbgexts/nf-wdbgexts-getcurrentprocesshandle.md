@@ -7,7 +7,7 @@ old-location: debugger\getcurrentprocesshandle.htm
 old-project: debugger
 ms.assetid: b6780f1c-e093-4d91-8909-dabb1ecaefaa
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: GetCurrentProcessHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,8 +66,6 @@ __inline VOID GetCurrentProcessHandle(
 <p>None</p>
 
 ## -remarks
-<p>In kernel-mode debugging, the only process in the target is the virtual process created for the kernel. In this case, an artificial handle is created. The artificial handle can only be used with the debugger.</p>
-
 <p>In kernel-mode debugging, the only process in the target is the virtual process created for the kernel. In this case, an artificial handle is created. The artificial handle can only be used with the debugger.</p>
 
 ## -requirements

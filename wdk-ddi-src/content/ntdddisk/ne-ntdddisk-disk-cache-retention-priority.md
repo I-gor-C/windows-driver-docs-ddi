@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DISK_CACHE_RETENTION_PRIORITY enumeration is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559451">IOCTL_DISK_GET_CACHE_INFORMATION</a> request and the structure <a href="https://msdn.microsoft.com/library/windows/hardware/ff552580">DISK_CACHE_INFORMATION</a> to indicate which kinds data are to be held in the cache on a preferential basis. </p>
+<p>The DISK_CACHE_RETENTION_PRIORITY enumeration is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-cache-information.md">IOCTL_DISK_GET_CACHE_INFORMATION</a> request and the structure <a href="..\ntdddisk\ns-ntdddisk--disk-cache-information.md">DISK_CACHE_INFORMATION</a> to indicate which kinds data are to be held in the cache on a preferential basis. </p>
 
 
 ## -syntax
@@ -95,10 +95,10 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552580">DISK_CACHE_INFORMATION</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-cache-information.md">DISK_CACHE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559451">IOCTL_DISK_GET_CACHE_INFORMATION</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-cache-information.md">IOCTL_DISK_GET_CACHE_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

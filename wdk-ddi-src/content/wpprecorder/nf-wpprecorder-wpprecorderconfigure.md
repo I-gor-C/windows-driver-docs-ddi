@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn914611">WppRecorderConfigure</a> method enables or disables the default log to which WPP prints.</p>
+<p>The <a href="..\wpprecorder\nf-wpprecorder-wpprecorderconfigure.md">WppRecorderConfigure</a> method enables or disables the default log to which WPP prints.</p>
 
 
 ## -syntax
@@ -66,11 +66,7 @@ NTSTATUS WppRecorderConfigure(
 <p>Returns STATUS_SUCCESS if completed successfully.</p>
 
 ## -remarks
-<p>Before calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn914611">WppRecorderConfigure</a>, allocate a <a href="https://msdn.microsoft.com/library/windows/hardware/dn914606">RECORDER_CONFIGURE_PARAMS</a> structure and initialize by calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn914607">RECORDER_CONFIGURE_PARAMS_INIT</a>. </p>
-
-<p>This method only configures the default log. By default that log is enabled. If you have a custom log, you must disable the default log by setting the <b>CreateDefaultLog</b> to FALSE.</p>
-
-<p>Before calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn914611">WppRecorderConfigure</a>, allocate a <a href="https://msdn.microsoft.com/library/windows/hardware/dn914606">RECORDER_CONFIGURE_PARAMS</a> structure and initialize by calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn914607">RECORDER_CONFIGURE_PARAMS_INIT</a>. </p>
+<p>Before calling <a href="..\wpprecorder\nf-wpprecorder-wpprecorderconfigure.md">WppRecorderConfigure</a>, allocate a <a href="..\wpprecorder\ns-wpprecorder--recorder-configure-params.md">RECORDER_CONFIGURE_PARAMS</a> structure and initialize by calling <a href="..\wpprecorder\nf-wpprecorder-recorder-configure-params-init.md">RECORDER_CONFIGURE_PARAMS_INIT</a>. </p>
 
 <p>This method only configures the default log. By default that log is enabled. If you have a custom log, you must disable the default log by setting the <b>CreateDefaultLog</b> to FALSE.</p>
 

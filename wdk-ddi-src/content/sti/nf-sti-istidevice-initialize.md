@@ -67,7 +67,7 @@ HRESULT Initialize(
 ### -param <i>pwszDeviceName</i> [in]
 
 <dd>
-<p>Caller-supplied pointer to a string representing an internal device name, obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543790">IStillImage::GetSTILaunchInformation</a>.</p>
+<p>Caller-supplied pointer to a string representing an internal device name, obtained by calling <a href="image.istillimage_getstilaunchinformation">IStillImage::GetSTILaunchInformation</a>.</p>
 </dd>
 
 ### -param <i>dwVersion</i> 
@@ -118,11 +118,7 @@ HRESULT Initialize(
 <p>If the operation succeeds, the method returns S_OK. Otherwise, it returns one of the STIERR-prefixed error codes defined in <i>stierr.h</i>.</p>
 
 ## -remarks
-<p>The <b>IStiDevice::Initialize</b> method initializes the COM object instance that was created by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a>.</p>
-
-<p>Because <b>IStiDevice::Initialize</b> is called by <b>IStillImage::CreateDevice</b>, clients of the <b>IStiDevice</b> interface do not typically call this method directly.</p>
-
-<p>The <b>IStiDevice::Initialize</b> method initializes the COM object instance that was created by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a>.</p>
+<p>The <b>IStiDevice::Initialize</b> method initializes the COM object instance that was created by calling <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a>.</p>
 
 <p>Because <b>IStiDevice::Initialize</b> is called by <b>IStillImage::CreateDevice</b>, clients of the <b>IStiDevice</b> interface do not typically call this method directly.</p>
 

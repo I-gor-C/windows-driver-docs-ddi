@@ -98,10 +98,6 @@ HRESULT _stdcall wiasReadMultiple(
 
 <p>PROPSPEC, PROPVARIANT, <b>PropVariantClear</b>, and <b>IPropertyStorage::ReadMultiple</b> are described in the Windows SDK documentation.</p>
 
-<p>This function reads multiple properties from a WIA item. When the call succeeds, the minidriver must call <b>PropVariantClear</b> on each element in the array specified by the <i>pv</i> parameter. See <b>IPropertyStorage::ReadMultiple</b> for more information.</p>
-
-<p>PROPSPEC, PROPVARIANT, <b>PropVariantClear</b>, and <b>IPropertyStorage::ReadMultiple</b> are described in the Windows SDK documentation.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -157,7 +153,7 @@ HRESULT _stdcall wiasReadMultiple(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549475">wiasWriteMultiple</a>
+<a href="..\wiamdef\nf-wiamdef-wiaswritemultiple.md">wiasWriteMultiple</a>
 </dt>
 </dl>
 <p> </p>

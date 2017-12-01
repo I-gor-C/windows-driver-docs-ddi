@@ -193,7 +193,7 @@ The flag is set to zero in WDDM 1.x regardless of whether a packet has been prev
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559490">DXGKARG_SUBMITCOMMAND</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-submitcommand.md">DXGKARG_SUBMITCOMMAND</a>
 </dt>
 <dt>
 <a href="display.dxgkddisubmitcommand">DxgkDdiSubmitCommand</a>

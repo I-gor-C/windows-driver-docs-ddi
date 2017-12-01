@@ -7,7 +7,7 @@ old-location: nfpdrivers\ioctl_nfcse_set_routing_table.htm
 old-project: nfpdrivers
 ms.assetid: 54B37EC0-C38A-479C-A45F-424963C4D89A
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: NFCRM_SET_RADIO_STATE, NFCRM_SET_RADIO_STATE, *PNFCRM_SET_RADIO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,54 +87,6 @@ I/O Status block
 <p> </p>
 
 ## -remarks
-<p>The following are requirements that the driver must adhere to.
-
-<ul>
-<li>This IOCTL is sent on a handle with a ‘SEManage’ relative file name, otherwise the driver MUST complete it with STATUS_INVALID_DEVICE_STATE.
-
-</li>
-<li>The driver shall have initial default listen mode routing table entries that route RF technologies A, B, and F and/or ISO-DEP protocol routed to UICC SE if present. These routing entries may later be overridden by new listen mode routing table configuration initiated by device host.
-
-</li>
-<li>The driver shall ensure that protocol NFC-DEP is mapped to device host at all times. Even if the caller doesn’t specify this, the driver needs to add this rule implicitly.
-
-</li>
-<li>If this IOCTL is issued when the NFCC is in RF discovery state, the driver needs to put the NFCC into RF idle state, configure the routing table, and restart RF discovery.</li>
-</ul>
-</p>
-
-<p>The following are requirements that the driver must adhere to.
-
-<ul>
-<li>This IOCTL is sent on a handle with a ‘SEManage’ relative file name, otherwise the driver MUST complete it with STATUS_INVALID_DEVICE_STATE.
-
-</li>
-<li>The driver shall have initial default listen mode routing table entries that route RF technologies A, B, and F and/or ISO-DEP protocol routed to UICC SE if present. These routing entries may later be overridden by new listen mode routing table configuration initiated by device host.
-
-</li>
-<li>The driver shall ensure that protocol NFC-DEP is mapped to device host at all times. Even if the caller doesn’t specify this, the driver needs to add this rule implicitly.
-
-</li>
-<li>If this IOCTL is issued when the NFCC is in RF discovery state, the driver needs to put the NFCC into RF idle state, configure the routing table, and restart RF discovery.</li>
-</ul>
-</p>
-
-<p>The following are requirements that the driver must adhere to.
-
-<ul>
-<li>This IOCTL is sent on a handle with a ‘SEManage’ relative file name, otherwise the driver MUST complete it with STATUS_INVALID_DEVICE_STATE.
-
-</li>
-<li>The driver shall have initial default listen mode routing table entries that route RF technologies A, B, and F and/or ISO-DEP protocol routed to UICC SE if present. These routing entries may later be overridden by new listen mode routing table configuration initiated by device host.
-
-</li>
-<li>The driver shall ensure that protocol NFC-DEP is mapped to device host at all times. Even if the caller doesn’t specify this, the driver needs to add this rule implicitly.
-
-</li>
-<li>If this IOCTL is issued when the NFCC is in RF discovery state, the driver needs to put the NFCC into RF idle state, configure the routing table, and restart RF discovery.</li>
-</ul>
-</p>
-
 <p>The following are requirements that the driver must adhere to.
 
 <ul>

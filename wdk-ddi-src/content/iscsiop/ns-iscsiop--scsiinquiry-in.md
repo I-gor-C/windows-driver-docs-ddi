@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ScsiInquiry_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a> method, which is used to send a SCSI inquiry command.</p>
+<p>The ScsiInquiry_IN structure holds the input data for the <a href="storage.scsiinquiry">ScsiInquiry</a> method, which is used to send a SCSI inquiry command.</p>
 
 
 ## -syntax
@@ -60,7 +60,7 @@ typedef struct _ScsiInquiry_IN {
 ### -field <b>UniqueSessionId</b>
 
 <dd>
-<p>A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
+<p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
 ### -field <b>Lun</b>
@@ -102,16 +102,16 @@ typedef struct _ScsiInquiry_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a>
+<a href="storage.scsiinquiry">ScsiInquiry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564602">ScsiInquiry_OUT</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--scsiinquiry-out.md">ScsiInquiry_OUT</a>
 </dt>
 </dl>
 <p> </p>

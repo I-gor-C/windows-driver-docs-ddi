@@ -59,7 +59,7 @@ typedef struct _ISCSI_TargetPortal {
 ### -field <b>Address</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that indicates the IP address of the portal. The ISCSI_IP_Address structure provides a way to define an IP address that is independent of the version of the IP protocol that the initiator and the target use.</p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that indicates the IP address of the portal. The ISCSI_IP_Address structure provides a way to define an IP address that is independent of the version of the IP protocol that the initiator and the target use.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -95,10 +95,10 @@ typedef struct _ISCSI_TargetPortal {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561577">ISCSI_TargetPortal WMI Class</a>
+<a href="storage.iscsi_targetportal_wmi_class">ISCSI_TargetPortal WMI Class</a>
 </dt>
 </dl>
 <p> </p>

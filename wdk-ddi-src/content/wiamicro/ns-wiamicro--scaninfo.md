@@ -414,7 +414,7 @@ typedef struct _SCANINFO {
 ### -field <b>DelayBetweenRead</b>
 
 <dd>
-<p>Specifies the time delay in milliseconds between <a href="https://msdn.microsoft.com/library/windows/hardware/dn915807">Scan</a> function calls that the scanner can support.</p>
+<p>Specifies the time delay in milliseconds between <a href="..\wiamicro\nf-wiamicro-scan.md">Scan</a> function calls that the scanner can support.</p>
 </dd>
 
 ### -field <b>MaxBufferSize</b>
@@ -443,7 +443,7 @@ typedef struct _SCANINFO {
 </dl>
 
 ## -remarks
-<p>This structure is used as a parameter in the microdriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548129">SetPixelWindow</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/dn915807">Scan</a> functions.</p>
+<p>This structure is used as a parameter in the microdriver's <a href="..\wiamicro\nf-wiamicro-setpixelwindow.md">SetPixelWindow</a>, and <a href="..\wiamicro\nf-wiamicro-scan.md">Scan</a> functions.</p>
 
 ## -requirements
 <table>
@@ -470,10 +470,10 @@ typedef struct _SCANINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548129">SetPixelWindow</a>
+<a href="..\wiamicro\nf-wiamicro-setpixelwindow.md">SetPixelWindow</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn915807">Scan</a>
+<a href="..\wiamicro\nf-wiamicro-scan.md">Scan</a>
 </dt>
 </dl>
 <p> </p>

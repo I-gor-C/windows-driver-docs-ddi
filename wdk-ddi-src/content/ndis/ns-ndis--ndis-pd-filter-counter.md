@@ -7,7 +7,7 @@ old-location: netvista\ndis_pd_filter_counter.htm
 old-project: netvista
 ms.assetid: 74660B47-0219-4724-AD7E-B20A2BB520EB
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_PD_FILTER_COUNTER, NDIS_PD_FILTER_COUNTER
 ms.prod: windows-hardware
 ms.technology: windows-devices

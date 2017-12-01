@@ -64,7 +64,7 @@ typedef struct _DXGKARG_SETPOINTERSHAPE {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561995">DXGK_POINTERFLAGS</a> structure that identifies, in bit-field flags, how to display the mouse pointer.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pointerflags.md">DXGK_POINTERFLAGS</a> structure that identifies, in bit-field flags, how to display the mouse pointer.</p>
 </dd>
 
 ### -field <b>Width</b>
@@ -196,7 +196,7 @@ typedef struct _DXGKARG_SETPOINTERSHAPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561995">DXGK_POINTERFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pointerflags.md">DXGK_POINTERFLAGS</a>
 </dt>
 <dt>
 <a href="display.dxgkddisetpointershape">DxgkDdiSetPointerShape</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatenetbufferlist.htm
 old-project: netvista
 ms.assetid: 9c821aac-9abd-4041-a15e-64306ada1c02
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisAllocateNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>Call the 
   <b>NdisAllocateNetBufferList</b> function to allocate and initialize a 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure from a
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure from a
   NET_BUFFER_LIST structure pool.</p>
 
 
@@ -72,7 +72,7 @@ PNET_BUFFER_LIST NdisAllocateNetBufferList(
 <dd>
 <p>The amount of 
      <i>used data space</i> in the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568389">NET_BUFFER_LIST_CONTEXT</a> structure
+     <a href="..\ndis\ns-ndis--net-buffer-list-context.md">NET_BUFFER_LIST_CONTEXT</a> structure
      to reserve for the caller. The 
      <i>ContextSize</i> must be a multiple of the value defined by MEMORY_ALLOCATION_ALIGNMENT.</p>
 </dd>
@@ -96,38 +96,19 @@ PNET_BUFFER_LIST NdisAllocateNetBufferList(
     <b>NdisAllocateNetBufferList</b> or 
     <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
     NdisAllocateNetBufferAndNetBufferList</a> function to allocate a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure from a pool.</p>
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure from a pool.</p>
 
 <p>If you call 
     <b>NdisAllocateNetBufferList</b> and the NET_BUFFER_LIST structure pool was allocated by calling the 
     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
     NdisAllocateNetBufferListPool</a> function with the 
     <b>fAllocateNetBuffer</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh205394">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure set to <b>TRUE</b>, NDIS allocates a
+    <a href="..\ndis\ns-ndis--net-buffer-list-pool-parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure set to <b>TRUE</b>, NDIS allocates a
     NET_BUFFER_LIST, 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>, MDL, and data.</p>
+    <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>, MDL, and data.</p>
 
 <p>Call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562583">NdisFreeNetBufferList</a> function to
-    free a NET_BUFFER_LIST structure.</p>
-
-<p>You can call the 
-    <b>NdisAllocateNetBufferList</b> or 
-    <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
-    NdisAllocateNetBufferAndNetBufferList</a> function to allocate a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure from a pool.</p>
-
-<p>If you call 
-    <b>NdisAllocateNetBufferList</b> and the NET_BUFFER_LIST structure pool was allocated by calling the 
-    <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
-    NdisAllocateNetBufferListPool</a> function with the 
-    <b>fAllocateNetBuffer</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh205394">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure set to <b>TRUE</b>, NDIS allocates a
-    NET_BUFFER_LIST, 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>, MDL, and data.</p>
-
-<p>Call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562583">NdisFreeNetBufferList</a> function to
+    <a href="..\ndis\nf-ndis-ndisfreenetbufferlist.md">NdisFreeNetBufferList</a> function to
     free a NET_BUFFER_LIST structure.</p>
 
 ## -requirements
@@ -183,7 +164,7 @@ PNET_BUFFER_LIST NdisAllocateNetBufferList(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
+<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -199,21 +180,21 @@ PNET_BUFFER_LIST NdisAllocateNetBufferList(
    NdisAllocateNetBufferListPool</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562583">NdisFreeNetBufferList</a>
+<a href="..\ndis\nf-ndis-ndisfreenetbufferlist.md">NdisFreeNetBufferList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh205394">NET_BUFFER_LIST_POOL_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--net-buffer-list-pool-parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568389">NET_BUFFER_LIST_CONTEXT</a>
+<a href="..\ndis\ns-ndis--net-buffer-list-context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferList function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

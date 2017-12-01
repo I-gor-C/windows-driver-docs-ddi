@@ -92,7 +92,7 @@ typedef struct _DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS {
 <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-configure-protected-output.md">DxgkDdiOPMConfigureProtectedOutput</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560849">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-configure-parameters.md">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

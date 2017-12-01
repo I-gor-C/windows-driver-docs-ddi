@@ -73,7 +73,7 @@ typedef struct _DXGKARG_RECOMMENDVIDPNTOPOLOGY {
 
 <dd>
 <p>
-      A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562023">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a> enumeration that indicates the reason that the <a href="display.dxgkddirecommendvidpntopology">DxgkDdiRecommendVidPnTopology</a> function is being called.
+      A value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-recommendvidpntopology-reason.md">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a> enumeration that indicates the reason that the <a href="display.dxgkddirecommendvidpntopology">DxgkDdiRecommendVidPnTopology</a> function is being called.
      </p>
 </dd>
 
@@ -112,7 +112,7 @@ typedef struct _DXGKARG_RECOMMENDVIDPNTOPOLOGY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562023">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-recommendvidpntopology-reason.md">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a>
 </dt>
 <dt>
 <a href="display.dxgkddirecommendvidpntopology">DxgkDdiRecommendVidPnTopology</a>

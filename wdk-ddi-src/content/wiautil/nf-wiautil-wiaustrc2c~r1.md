@@ -117,13 +117,13 @@ HRESULT _stdcall wiauStrC2C(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550186">wiauStrC2W</a>
+<a href="..\wiautil\nf-wiautil-wiaustrc2w.md">wiauStrC2W</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550187">wiauStrW2C</a>
+<a href="..\wiautil\nf-wiautil-wiaustrw2c.md">wiauStrW2C</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550189">wiauStrW2W</a>
+<a href="..\wiautil\nf-wiautil-wiaustrw2w.md">wiauStrW2W</a>
 </dt>
 </dl>
 <p> </p>

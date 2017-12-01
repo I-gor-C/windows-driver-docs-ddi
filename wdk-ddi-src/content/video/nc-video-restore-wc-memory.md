@@ -62,7 +62,7 @@ VP_STATUS VideoPortRestoreWCMemory(
 ### -param <i>Context</i> [in]
 
 <dd>
-<p>Pointer to a caller-determined context parameter to be passed to the <i>CallbackRoutine</i>. It typically points to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a> buffer.</p>
+<p>Pointer to a caller-determined context parameter to be passed to the <i>CallbackRoutine</i>. It typically points to the <a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a> buffer.</p>
 </dd>
 
 ### -param <i>HwDeviceExtension</i> [in]
@@ -76,8 +76,6 @@ VP_STATUS VideoPortRestoreWCMemory(
 <p><i>VideoPortRestoreWCMemory</i> returns NO_ERROR if it successfully restored Write Combined video memory; otherwise, it returns an error status of ERROR_INVALID_FUNCTION or ERROR_NOT_ENOUGH_MEMORY.</p>
 
 ## -remarks
-<p>After the <a href="..\video\nc-video-protect-wc-memory.md">VideoPortProtectWCMemory</a> callback routine is called, the CPU cannot write to Write Combined memory until <i>VideoPortRestoreWCMemory</i> is called.</p>
-
 <p>After the <a href="..\video\nc-video-protect-wc-memory.md">VideoPortProtectWCMemory</a> callback routine is called, the CPU cannot write to Write Combined memory until <i>VideoPortRestoreWCMemory</i> is called.</p>
 
 ## -requirements
@@ -115,7 +113,7 @@ VP_STATUS VideoPortRestoreWCMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a>
+<a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-protect-wc-memory.md">VideoPortProtectWCMemory</a>

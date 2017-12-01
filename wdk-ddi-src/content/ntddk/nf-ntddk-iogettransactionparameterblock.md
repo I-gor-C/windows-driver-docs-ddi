@@ -62,7 +62,7 @@ PTXN_PARAMETER_BLOCK IoGetTransactionParameterBlock(
 </dl>
 
 ## -returns
-<p>The <b>IoGetTransactionParameterBlock</b> routine returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556863">TXN_PARAMETER_BLOCK</a> structure if the file operation is transacted, otherwise it returns <b>NULL</b>. </p>
+<p>The <b>IoGetTransactionParameterBlock</b> routine returns a pointer to the <a href="..\ntddk\ns-ntddk--txn-parameter-block.md">TXN_PARAMETER_BLOCK</a> structure if the file operation is transacted, otherwise it returns <b>NULL</b>. </p>
 
 ## -remarks
 
@@ -130,7 +130,7 @@ PTXN_PARAMETER_BLOCK IoGetTransactionParameterBlock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556863">TXN_PARAMETER_BLOCK</a>
+<a href="..\ntddk\ns-ntddk--txn-parameter-block.md">TXN_PARAMETER_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

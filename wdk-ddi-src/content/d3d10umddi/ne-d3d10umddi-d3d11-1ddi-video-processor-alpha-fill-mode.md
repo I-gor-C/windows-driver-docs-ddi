@@ -68,7 +68,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE {
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND"></a><a id="d3d11_1ddi_video_processor_alpha_fill_mode_background"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND</b>
 
 <dd>
-<p>Alpha values inside the target rectangle are set to the alpha value specified in the background color. To set the background color, call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn459003">VideoProcessorSetOutputBackgroundColor</a> function.</p>
+<p>Alpha values inside the target rectangle are set to the alpha value specified in the background color. To set the background color, call the <a href="display.videoprocessorsetoutputbackgroundcolor">VideoProcessorSetOutputBackgroundColor</a> function.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_DESTINATION"></a><a id="d3d11_1ddi_video_processor_alpha_fill_mode_destination"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_DESTINATION</b>
@@ -80,7 +80,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE {
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM"></a><a id="d3d11_1ddi_video_processor_alpha_fill_mode_source_stream"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM</b>
 
 <dd>
-<p>Alpha values are taken from an input stream, scaled, and copied to the corresponding destination rectangle for that stream. The input stream is specified in the <i>StreamIndex</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439778">VideoProcessorSetOutputAlphaFillMode</a> function.</p>
+<p>Alpha values are taken from an input stream, scaled, and copied to the corresponding destination rectangle for that stream. The input stream is specified in the <i>StreamIndex</i> parameter of the <a href="display.videoprocessorsetoutputalphafillmode">VideoProcessorSetOutputAlphaFillMode</a> function.</p>
 <p>If the input stream does not have alpha data, the video processor sets the alpha values in the target rectangle to opaque. If the input stream is disabled or the source rectangle is empty, the alpha values in the target rectangle are not modified.</p>
 </dd>
 </dl>
@@ -121,10 +121,10 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439778">VideoProcessorSetOutputAlphaFillMode</a>
+<a href="display.videoprocessorsetoutputalphafillmode">VideoProcessorSetOutputAlphaFillMode</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn459003">VideoProcessorSetOutputBackgroundColor</a>
+<a href="display.videoprocessorsetoutputbackgroundcolor">VideoProcessorSetOutputBackgroundColor</a>
 </dt>
 </dl>
 <p> </p>

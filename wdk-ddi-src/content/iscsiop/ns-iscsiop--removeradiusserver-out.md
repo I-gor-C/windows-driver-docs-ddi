@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The RemoveiSNSServer_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564020">RemoveRADIUSServer</a> method.</p>
+<p>The RemoveiSNSServer_OUT structure holds the output data for the <a href="storage.removeradiusserver">RemoveRADIUSServer</a> method.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _RemoveRADIUSServer_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output from <b>RemoveRADIUSServer</b>, the status of the operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.</p>
+<p>On output from <b>RemoveRADIUSServer</b>, the status of the operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 </dd>
 </dl>
 
@@ -81,13 +81,13 @@ typedef struct _RemoveRADIUSServer_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564020">RemoveRADIUSServer</a>
+<a href="storage.removeradiusserver">RemoveRADIUSServer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564023">RemoveRADIUSServer_IN</a>
+<a href="..\iscsiop\ns-iscsiop--removeradiusserver-in.md">RemoveRADIUSServer_IN</a>
 </dt>
 </dl>
 <p> </p>

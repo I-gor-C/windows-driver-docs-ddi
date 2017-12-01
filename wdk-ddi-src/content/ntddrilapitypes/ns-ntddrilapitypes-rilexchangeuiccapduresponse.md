@@ -7,7 +7,7 @@ old-location: netvista\rilexchangeuiccapduresponse.htm
 old-project: netvista
 ms.assetid: 57418ab1-e341-41ad-a120-cc4f7e0b0227
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILEXCHANGEUICCAPDURESPONSE, RILEXCHANGEUICCAPDURESPONSE, *LPRILEXCHANGEUICCAPDURESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices

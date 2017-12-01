@@ -71,7 +71,7 @@ typedef struct _D3DKMT_CREATEDCFROMMEMORY {
 ### -field <b>Format</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>-typed value that indicates the pixel format for the memory block that <b>pMemory</b> points to.</p>
+<p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format for the memory block that <b>pMemory</b> points to.</p>
 </dd>
 
 ### -field <b>Width</b>
@@ -145,10 +145,10 @@ typedef struct _D3DKMT_CREATEDCFROMMEMORY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546826">D3DKMTCreateDCFromMemory</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatedcfrommemory.md">D3DKMTCreateDCFromMemory</a>
 </dt>
 </dl>
 <p> </p>

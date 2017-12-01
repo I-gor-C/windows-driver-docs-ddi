@@ -7,7 +7,7 @@ old-location: stream\kscamera_perframesetting_header.htm
 old-project: stream
 ms.assetid: 2D8A9E54-5551-4DDF-A123-077BA73AE06D
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSCAMERA_PERFRAMESETTING_HEADER, KSCAMERA_PERFRAMESETTING_HEADER, *PKSCAMERA_PERFRAMESETTING_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices

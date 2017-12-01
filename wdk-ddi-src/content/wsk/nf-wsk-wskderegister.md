@@ -7,7 +7,7 @@ old-location: netvista\wskderegister.htm
 old-project: netvista
 ms.assetid: b2ff3d7b-319d-4256-a574-cb32595fd02f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WskDeregister
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: function
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -44,7 +43,7 @@ req.product: Windows 10 or later.
 <p>The 
   <b>WskDeregister</b> function unregisters a WSK application's registration instance that was previously
   created by 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a>.</p>
+  <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>.</p>
 
 
 ## -syntax
@@ -63,7 +62,7 @@ VOID WskDeregister(
 
 <dd>
 <p>A pointer to the memory location initialized by 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a> that identifies a WSK
+     <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> that identifies a WSK
      application's registration instance.</p>
 </dd>
 </dl>
@@ -73,7 +72,7 @@ VOID WskDeregister(
 
 ## -remarks
 <p>For each call to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a> that returns a success code, there
+    <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> that returns a success code, there
     must be exactly one corresponding 
     <b>WskDeregister</b> call that uses the same 
     <i>WskRegistration</i> parameter that was passed to 
@@ -84,28 +83,7 @@ VOID WskDeregister(
 <p>All captured instances of the provider NPI are released.</p>
 
 <p>Any outstanding calls to functions pointed to by 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571175">WSK_PROVIDER_DISPATCH</a> members have
-      returned.</p>
-
-<p>All sockets are closed.</p>
-
-<p>For more information about attaching a WSK application to the WSK subsystem, see 
-    <a href="netvista.registering_a_winsock_kernel_application">Registering a Winsock Kernel
-    Application</a>.</p>
-
-<p>For each call to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a> that returns a success code, there
-    must be exactly one corresponding 
-    <b>WskDeregister</b> call that uses the same 
-    <i>WskRegistration</i> parameter that was passed to 
-    <b>WskRegister</b>.</p>
-
-<p><b>WskDeregister</b> will wait to return until all of the following have completed:</p>
-
-<p>All captured instances of the provider NPI are released.</p>
-
-<p>Any outstanding calls to functions pointed to by 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571175">WSK_PROVIDER_DISPATCH</a> members have
+      <a href="..\wsk\ns-wsk--wsk-provider-dispatch.md">WSK_PROVIDER_DISPATCH</a> members have
       returned.</p>
 
 <p>All sockets are closed.</p>
@@ -168,12 +146,12 @@ VOID WskDeregister(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a>
+<a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571178">WSK_REGISTRATION</a>
+<a href="..\wsk\ns-wsk--wsk-registration.md">WSK_REGISTRATION</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WskDeregister function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WskDeregister function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

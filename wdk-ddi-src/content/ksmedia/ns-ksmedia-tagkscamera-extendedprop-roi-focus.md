@@ -7,7 +7,7 @@ old-location: stream\kscamera_extendedprop_roi_focus.htm
 old-project: stream
 ms.assetid: 448A62D1-34D6-46EC-ADA4-9C9F832E2BDD
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_FOCUS, KSCAMERA_EXTENDEDPROP_ROI_FOCUS, *PKSCAMERA_EXTENDEDPROP_ROI_FOCUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_FOCUS {
 ### -field <b>ROIInfo</b>
 
 <dd>
-<p>See the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925167">KSCAMERA_EXTENDEDPROP_ROI_INFO</a> structure for more information.</p>
+<p>See the <a href="stream.kscamera_extendedprop_roi_info">KSCAMERA_EXTENDEDPROP_ROI_INFO</a> structure for more information.</p>
 </dd>
 
 ### -field <b>Reserved</b>

@@ -57,7 +57,7 @@ BOOLEAN __stdcall HidD_FreePreparsedData(
 ### -param <i>PreparsedData</i> [in]
 
 <dd>
-<p>Pointer to the buffer, returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539679">HidD_GetPreparsedData</a>, that is freed.</p>
+<p>Pointer to the buffer, returned by <a href="..\hidsdi\nf-hidsdi-hidd-getpreparseddata.md">HidD_GetPreparsedData</a>, that is freed.</p>
 </dd>
 </dl>
 
@@ -67,13 +67,7 @@ BOOLEAN __stdcall HidD_FreePreparsedData(
 ## -remarks
 <p>Only user-mode applications can call <b>HidD_FreePreparsedData</b>.</p>
 
-<p>To obtain a collection's preparsed data, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539679">HidD_GetPreparsedData</a>.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>.</p>
-
-<p>Only user-mode applications can call <b>HidD_FreePreparsedData</b>.</p>
-
-<p>To obtain a collection's preparsed data, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539679">HidD_GetPreparsedData</a>.</p>
+<p>To obtain a collection's preparsed data, use <a href="..\hidsdi\nf-hidsdi-hidd-getpreparseddata.md">HidD_GetPreparsedData</a>.</p>
 
 <p>For more information, see <a href="NULL">HID Collections</a>.</p>
 
@@ -135,7 +129,7 @@ BOOLEAN __stdcall HidD_FreePreparsedData(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539679">HidD_GetPreparsedData</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getpreparseddata.md">HidD_GetPreparsedData</a>
 </dt>
 </dl>
 <p> </p>

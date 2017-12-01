@@ -7,7 +7,7 @@ old-location: debugger\getimplicitprocessdataoffset.htm
 old-project: debugger
 ms.assetid: 20a11f3b-cc49-4080-ac4c-b8e18d4b2f73
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, GetImplicitProcessDataOffset, IDebugSystemObjects4::GetImplicitProcessDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,12 +69,6 @@ HRESULT GetImplicitProcessDataOffset(
 <p> </p>
 
 ## -remarks
-<p>In kernel-mode debugging, the data structure is the KPROCESS structure for the process.</p>
-
-<p>In user-mode debugging, the data structure is the process environment block (PEB) for the process.</p>
-
-<p>For more information about the implicit process, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on the KPROCESS and PEB structures, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.</p>
-
 <p>In kernel-mode debugging, the data structure is the KPROCESS structure for the process.</p>
 
 <p>In user-mode debugging, the data structure is the process environment block (PEB) for the process.</p>

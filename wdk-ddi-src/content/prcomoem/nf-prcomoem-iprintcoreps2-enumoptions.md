@@ -63,7 +63,7 @@ HRESULT EnumOptions(
 ### -param <i>pdevobj</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>Pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>dwFlags</i> [in]
@@ -128,12 +128,6 @@ HRESULT EnumOptions(
 
 <p>For more information, see <a href="NULL">Using EnumOptions</a>.</p>
 
-<p>To reduce the need to make two calls per data access, pass the method an output buffer of a fixed size (1 KB, for example), and then check the function return value. If the method returns S_OK, the buffer already contains the data of interest. If the method returns E_OUTOFMEMORY, the value in *<i>pcbNeeded</i> is the buffer size needed to hold the data of interest. The caller should then allocate a buffer of that larger size and proceed with a second call to the method.</p>
-
-<p>This method is supported for any Pscript5 render plug-in.</p>
-
-<p>For more information, see <a href="NULL">Using EnumOptions</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -161,10 +155,10 @@ HRESULT EnumOptions(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a>
+<a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552990">IPrintCorePS2::EnumFeatures</a>
+<a href="print.iprintcoreps2_enumfeatures">IPrintCorePS2::EnumFeatures</a>
 </dt>
 </dl>
 <p> </p>

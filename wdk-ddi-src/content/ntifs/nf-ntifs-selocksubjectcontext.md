@@ -73,14 +73,6 @@ VOID SeLockSubjectContext(
 
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
 
-<p><b>SeLockSubjectContext</b> acquires read locks on the primary and impersonation tokens of a captured subject context.</p>
-
-<p>To capture a subject context, use <b>SeCaptureSubjectContext</b>.</p>
-
-<p>Each call to <b>SeLockSubjectContext</b> must be matched by a subsequent call to <b>SeUnlockSubjectContext</b>.</p>
-
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -136,13 +128,13 @@ VOID SeLockSubjectContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554792">SeCaptureSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-secapturesubjectcontext.md">SeCaptureSubjectContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a>
+<a href="ifsk.security_subject_context">SECURITY_SUBJECT_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556736">SeUnlockSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-seunlocksubjectcontext.md">SeUnlockSubjectContext</a>
 </dt>
 </dl>
 <p> </p>

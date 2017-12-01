@@ -7,7 +7,7 @@ old-location: bltooth\ioctl_bthx_query_capabilities.htm
 old-project: bltooth
 ms.assetid: 199C93EC-AB91-47F1-914A-F44BFF1796A6
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: BTHDDI_SDP_PARSE_INTERFACE, BTHDDI_SDP_PARSE_INTERFACE, *PBTHDDI_SDP_PARSE_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,11 +56,11 @@ req.iface:
 <p>None.</p>
 
 ### -output-buffer
-<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450833">BTHX_CAPABILITIES</a> structure. </p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="..\bthxddi\ns-bthxddi--bthx-capabilities.md">BTHX_CAPABILITIES</a> structure. </p>
 
-<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450833">BTHX_CAPABILITIES</a> structure. </p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="..\bthxddi\ns-bthxddi--bthx-capabilities.md">BTHX_CAPABILITIES</a> structure. </p>
 
-<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450833">BTHX_CAPABILITIES</a> structure. </p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="..\bthxddi\ns-bthxddi--bthx-capabilities.md">BTHX_CAPABILITIES</a> structure. </p>
 
 ### -output-buffer-length
 <p>The length of the buffer is the size of the <b>BTHX_CAPABILITIES</b> structure.</p>
@@ -142,46 +142,6 @@ I/O Status block
 <p> </p>
 
 ## -remarks
-<p>During startup, the Bluetooth stack sends IOCTL_BTHX_QUERY_CAPABILITIES to query the capabilities of the transport driver.</p>
-
-<p>This is a synchrononous call and failure of this IOCTL prevents Windows from loading the Bluetooth stack.</p>
-
-<p>The output buffer of this IOCTL is defined by the BTHX_CAPABILITIES structure.</p>
-
-<p>The <b>MaxScoChannels</b> member must be set to 1. The <b>ScoSupport</b> member must be set to <b>ScoSupportHCIBypass</b>. Failure to do so prevents the stack from being loaded.</p>
-
-<p>During startup, the Bluetooth stack sends IOCTL_BTHX_QUERY_CAPABILITIES to query the capabilities of the transport driver.</p>
-
-<p>This is a synchrononous call and failure of this IOCTL prevents Windows from loading the Bluetooth stack.</p>
-
-<p>The output buffer of this IOCTL is defined by the BTHX_CAPABILITIES structure.</p>
-
-<p>The <b>MaxScoChannels</b> member must be set to 1. The <b>ScoSupport</b> member must be set to <b>ScoSupportHCIBypass</b>. Failure to do so prevents the stack from being loaded.</p>
-
-<p>During startup, the Bluetooth stack sends IOCTL_BTHX_QUERY_CAPABILITIES to query the capabilities of the transport driver.</p>
-
-<p>This is a synchrononous call and failure of this IOCTL prevents Windows from loading the Bluetooth stack.</p>
-
-<p>The output buffer of this IOCTL is defined by the BTHX_CAPABILITIES structure.</p>
-
-<p>The <b>MaxScoChannels</b> member must be set to 1. The <b>ScoSupport</b> member must be set to <b>ScoSupportHCIBypass</b>. Failure to do so prevents the stack from being loaded.</p>
-
-<p>During startup, the Bluetooth stack sends IOCTL_BTHX_QUERY_CAPABILITIES to query the capabilities of the transport driver.</p>
-
-<p>This is a synchrononous call and failure of this IOCTL prevents Windows from loading the Bluetooth stack.</p>
-
-<p>The output buffer of this IOCTL is defined by the BTHX_CAPABILITIES structure.</p>
-
-<p>The <b>MaxScoChannels</b> member must be set to 1. The <b>ScoSupport</b> member must be set to <b>ScoSupportHCIBypass</b>. Failure to do so prevents the stack from being loaded.</p>
-
-<p>During startup, the Bluetooth stack sends IOCTL_BTHX_QUERY_CAPABILITIES to query the capabilities of the transport driver.</p>
-
-<p>This is a synchrononous call and failure of this IOCTL prevents Windows from loading the Bluetooth stack.</p>
-
-<p>The output buffer of this IOCTL is defined by the BTHX_CAPABILITIES structure.</p>
-
-<p>The <b>MaxScoChannels</b> member must be set to 1. The <b>ScoSupport</b> member must be set to <b>ScoSupportHCIBypass</b>. Failure to do so prevents the stack from being loaded.</p>
-
 <p>During startup, the Bluetooth stack sends IOCTL_BTHX_QUERY_CAPABILITIES to query the capabilities of the transport driver.</p>
 
 <p>This is a synchrononous call and failure of this IOCTL prevents Windows from loading the Bluetooth stack.</p>

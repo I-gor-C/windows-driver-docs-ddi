@@ -7,7 +7,7 @@ old-location: stream\tuner_analog_caps_s.htm
 old-project: stream
 ms.assetid: 350ec4b2-a96a-420a-bb52-d09cc8c5029e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PTUNER_ANALOG_CAPS_S, TUNER_ANALOG_CAPS_S, *PTUNER_ANALOG_CAPS_S
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -117,7 +117,7 @@ typedef struct {
 ### -field <b>StandardsSupported</b>
 
 <dd>
-<p>If the <b>Mode</b> member is set to KSPROPERTY_TUNER_MODE_TV or KSPROPERTY_TUNER_MODE_DSS, a bitwise OR of values from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567297">KS_AnalogVideoStandard</a> enumeration that indicates the analog video standards that the tuner supports. Otherwise, this member is ignored.</p>
+<p>If the <b>Mode</b> member is set to KSPROPERTY_TUNER_MODE_TV or KSPROPERTY_TUNER_MODE_DSS, a bitwise OR of values from the <a href="..\ksmedia\ne-ksmedia-ks-analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration that indicates the analog video standards that the tuner supports. Otherwise, this member is ignored.</p>
 </dd>
 
 ### -field <b>MinFrequency</b>
@@ -148,13 +148,13 @@ typedef struct {
 ### -field <b>ScanSensingRange</b>
 
 <dd>
-<p>The range that the tuning device provides and that the tuner filter uses to determine the presence of a signal. This range represents the larger step sizes that a signal search algorithm can use to advance through the range of frequencies to search. The driver can report the actual lock frequency of a signal and the lock status on the signal through a call to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff565893">KSPROPERTY_TUNER_SCAN_STATUS</a> property. If the driver reports the lock status as Tuner_LockType_Within_Scan_Sensing_Range in the <b>LockStatus</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565898">KSPROPERTY_TUNER_SCAN_STATUS_S</a> structure, the increment step size changes to the smaller value in <b>FineTuneSensingRange</b> until the actual lock frequency is determined. </p>
+<p>The range that the tuning device provides and that the tuner filter uses to determine the presence of a signal. This range represents the larger step sizes that a signal search algorithm can use to advance through the range of frequencies to search. The driver can report the actual lock frequency of a signal and the lock status on the signal through a call to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff565893">KSPROPERTY_TUNER_SCAN_STATUS</a> property. If the driver reports the lock status as Tuner_LockType_Within_Scan_Sensing_Range in the <b>LockStatus</b> member of the <a href="stream.ksproperty_tuner_scan_status_s">KSPROPERTY_TUNER_SCAN_STATUS_S</a> structure, the increment step size changes to the smaller value in <b>FineTuneSensingRange</b> until the actual lock frequency is determined. </p>
 </dd>
 
 ### -field <b>FineTuneSensingRange</b>
 
 <dd>
-<p>The range that the tuning device provides and that the tuner filter uses to determine the actual frequency of a signal. The tuner filter uses this fine-tune-sensing range only when the underlying tuner hardware cannot support hardware-assisted scanning. The driver indicates such support by setting the <b>fSupportsHardwareAssistedScanning</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565892">KSPROPERTY_TUNER_SCAN_CAPS_S</a> structure to <b>TRUE</b> in a call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff565887">KSPROPERTY_TUNER_SCAN_CAPS</a> property. When the tuner filter starts a scan, it initially probes the driver in increments within the range that the <b>ScanSensingRange</b> member specifies until the driver returns Tuner_LockType_Within_Scan_Sensing_Range. The tuner filter then switches into steps of <b>FineTuneSensingRange</b> until the driver reports a complete lock. </p>
+<p>The range that the tuning device provides and that the tuner filter uses to determine the actual frequency of a signal. The tuner filter uses this fine-tune-sensing range only when the underlying tuner hardware cannot support hardware-assisted scanning. The driver indicates such support by setting the <b>fSupportsHardwareAssistedScanning</b> member of the <a href="stream.ksproperty_tuner_scan_caps_s">KSPROPERTY_TUNER_SCAN_CAPS_S</a> structure to <b>TRUE</b> in a call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff565887">KSPROPERTY_TUNER_SCAN_CAPS</a> property. When the tuner filter starts a scan, it initially probes the driver in increments within the range that the <b>ScanSensingRange</b> member specifies until the driver returns Tuner_LockType_Within_Scan_Sensing_Range. The tuner filter then switches into steps of <b>FineTuneSensingRange</b> until the driver reports a complete lock. </p>
 </dd>
 </dl>
 
@@ -186,21 +186,21 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567297">KS_AnalogVideoStandard</a>
+<a href="..\ksmedia\ne-ksmedia-ks-analogvideostandard.md">KS_AnalogVideoStandard</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565887">KSPROPERTY_TUNER_SCAN_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565892">KSPROPERTY_TUNER_SCAN_CAPS_S</a>
+<a href="stream.ksproperty_tuner_scan_caps_s">KSPROPERTY_TUNER_SCAN_CAPS_S</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565893">KSPROPERTY_TUNER_SCAN_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565898">KSPROPERTY_TUNER_SCAN_STATUS_S</a>
+<a href="stream.ksproperty_tuner_scan_status_s">KSPROPERTY_TUNER_SCAN_STATUS_S</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20TUNER_ANALOG_CAPS_S structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20TUNER_ANALOG_CAPS_S structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

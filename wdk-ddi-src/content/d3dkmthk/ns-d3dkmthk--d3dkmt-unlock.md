@@ -103,7 +103,7 @@ typedef struct _D3DKMT_UNLOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547233">D3DKMTUnlock</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtunlock.md">D3DKMTUnlock</a>
 </dt>
 </dl>
 <p> </p>

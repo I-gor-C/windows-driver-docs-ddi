@@ -7,7 +7,7 @@ old-location: netvista\dot11ext_ihv_connectivity_profile.htm
 old-project: netvista
 ms.assetid: 56ef9b59-5dbb-4720-bae1-7af6d9dbc110
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11EXT_IHV_CONNECTIVITY_PROFILE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

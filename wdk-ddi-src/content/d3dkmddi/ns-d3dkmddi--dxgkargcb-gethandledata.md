@@ -94,7 +94,7 @@ typedef struct _DXGKARGCB_GETHANDLEDATA {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff559577">DXGKCB_GETHANDLEDATAFLAGS</a> structure that indicates if allocations belong to a resource.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgkcb-gethandledataflags.md">DXGKCB_GETHANDLEDATAFLAGS</a> structure that indicates if allocations belong to a resource.</p>
 </dd>
 </dl>
 
@@ -126,7 +126,7 @@ typedef struct _DXGKARGCB_GETHANDLEDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559577">DXGKCB_GETHANDLEDATAFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkcb-gethandledataflags.md">DXGKCB_GETHANDLEDATAFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-gethandledata.md">DxgkCbGetHandleData</a>

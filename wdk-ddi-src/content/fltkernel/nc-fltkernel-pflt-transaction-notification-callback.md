@@ -62,7 +62,7 @@ NTSTATUS TransactionNotificationCallback(
 ### -param <i>FltObjects</i> [in]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544816">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current operation. </p>
+<p>Pointer to an <a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current operation. </p>
 </dd>
 
 ### -param <i>TransactionContext</i> [in]
@@ -135,90 +135,28 @@ NTSTATUS TransactionNotificationCallback(
 <p> </p>
 
 ## -remarks
-<p>When a minifilter driver registers itself by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine, it can register a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK as the minifilter's <i>TransactionNotificationCallback</i> routine. </p>
+<p>When a minifilter driver registers itself by calling <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a> from its <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine, it can register a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK as the minifilter's <i>TransactionNotificationCallback</i> routine. </p>
 
-<p>To register the <i>TransactionNotificationCallback</i> routine, the minifilter driver stores the address of a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK in the <b>TransactionNotificationCallback</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544811">FLT_REGISTRATION</a> structure that the minifilter driver passes as the <i>Registration</i> parameter of <b>FltRegisterFilter</b>. </p>
-
-<p>The filter manager calls this routine to notify the minifilter driver about the status of a transaction that the minifilter driver is enlisted in. </p>
-
-<p>If the minifilter driver returns STATUS_PENDING from this callback routine, it must eventually call one of the following routines to indicate that it has finished processing the notification: </p><dl>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541875">FltCommitComplete</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543424">FltPrepareComplete</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543425">FltPrePrepareComplete</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544366">FltRollbackComplete</a>
-</p>
-</dd>
-</dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541875">FltCommitComplete</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543424">FltPrepareComplete</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543425">FltPrePrepareComplete</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544366">FltRollbackComplete</a>
-</p>
-
-<p>When a minifilter driver registers itself by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine, it can register a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK as the minifilter's <i>TransactionNotificationCallback</i> routine. </p>
-
-<p>To register the <i>TransactionNotificationCallback</i> routine, the minifilter driver stores the address of a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK in the <b>TransactionNotificationCallback</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544811">FLT_REGISTRATION</a> structure that the minifilter driver passes as the <i>Registration</i> parameter of <b>FltRegisterFilter</b>. </p>
+<p>To register the <i>TransactionNotificationCallback</i> routine, the minifilter driver stores the address of a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK in the <b>TransactionNotificationCallback</b> member of the <a href="..\fltkernel\ns-fltkernel--flt-registration.md">FLT_REGISTRATION</a> structure that the minifilter driver passes as the <i>Registration</i> parameter of <b>FltRegisterFilter</b>. </p>
 
 <p>The filter manager calls this routine to notify the minifilter driver about the status of a transaction that the minifilter driver is enlisted in. </p>
 
-<p>If the minifilter driver returns STATUS_PENDING from this callback routine, it must eventually call one of the following routines to indicate that it has finished processing the notification: </p><dl>
-<dd>
+<p>If the minifilter driver returns STATUS_PENDING from this callback routine, it must eventually call one of the following routines to indicate that it has finished processing the notification: </p>
+
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541875">FltCommitComplete</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543424">FltPrepareComplete</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543425">FltPrePrepareComplete</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544366">FltRollbackComplete</a>
-</p>
-</dd>
-</dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541875">FltCommitComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltcommitcomplete.md">FltCommitComplete</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543424">FltPrepareComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltpreparecomplete.md">FltPrepareComplete</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543425">FltPrePrepareComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltprepreparecomplete.md">FltPrePrepareComplete</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544366">FltRollbackComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltrollbackcomplete.md">FltRollbackComplete</a>
 </p>
 
 ## -requirements
@@ -264,25 +202,25 @@ NTSTATUS TransactionNotificationCallback(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544811">FLT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel--flt-registration.md">FLT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544816">FLT_RELATED_OBJECTS</a>
+<a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541875">FltCommitComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltcommitcomplete.md">FltCommitComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543424">FltPrepareComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltpreparecomplete.md">FltPrepareComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543425">FltPrePrepareComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltprepreparecomplete.md">FltPrePrepareComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544366">FltRollbackComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltrollbackcomplete.md">FltRollbackComplete</a>
 </dt>
 </dl>
 <p> </p>

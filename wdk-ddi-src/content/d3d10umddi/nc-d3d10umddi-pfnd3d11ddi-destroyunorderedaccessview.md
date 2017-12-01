@@ -88,17 +88,6 @@ The driver can work around this problem by following these steps:
 <div> </div>
 </p>
 
-<p>The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. Therefore, if the driver passes any error, except for D3DDDIERR_DEVICEREMOVED, in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> function, the Direct3D runtime determines that the error is critical. Even if the device is removed, the driver is not required to return D3DDDIERR_DEVICEREMOVED; however, if device removal interferes with the operation of <i>DestroyUnorderedAccessView</i> (which typically should not happen), the driver can return D3DDDIERR_DEVICEREMOVED.<div class="alert"><b>Note</b>  During the destruction of the immediate context and device or the destruction of a deferred context, Windows 7 does not clear the Compute Shader Unordered Access View (CS UAV) bind points. 
-As a result, a driver sees a UAV handle to still be bound to a context, which violates the general guarantees provided by the runtime. 
-The driver can work around this problem by following these steps:
-  <ul>
-<li>Use either the    <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-abandoncommandlist.md">AbandonCommandList</a> or the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createcommandlist.md">CreateCommandList</a> method because each marks the end of a command list.</li>
-<li> Deduce the unbinding of CS UAV bind points by verifying that any one of the following states is set to NULL: blend state, rasterizer state, and depth/stencil state.</li>
-</ul>
-</div>
-<div> </div>
-</p>
-
 ## -requirements
 <table>
 <tr>
@@ -143,7 +132,7 @@ The driver can work around this problem by following these steps:
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createunorderedaccessview.md">CreateUnorderedAccessView</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542141">D3D11DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-devicefuncs~r1.md">D3D11DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a>

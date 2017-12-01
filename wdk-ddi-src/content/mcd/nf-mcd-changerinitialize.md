@@ -76,12 +76,6 @@ NTSTATUS ChangerInitialize(
 
 <p>After <b>ChangerInitialize</b> returns, the changer miniclass driver and the changer should be able to handle any other request. </p>
 
-<p>The changer class driver calls <b>ChangerInitialize</b> during driver initialization, after creating a device object to represent a changer. </p>
-
-<p><b>ChangerInitialize</b> performs any device-specific processing required to get the changer ready to receive requests. It also typically stores device-specific information in the device extension, such as SCSI inquiry data or the non-SCSI equivalent and offsets to generate zero-based element addresses, which are used by the system to refer to changer elements.</p>
-
-<p>After <b>ChangerInitialize</b> returns, the changer miniclass driver and the changer should be able to handle any other request. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -117,7 +111,7 @@ NTSTATUS ChangerInitialize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551400">ChangerAdditionalExtensionSize</a>
+<a href="..\mcd\nf-mcd-changeradditionalextensionsize.md">ChangerAdditionalExtensionSize</a>
 </dt>
 </dl>
 <p> </p>

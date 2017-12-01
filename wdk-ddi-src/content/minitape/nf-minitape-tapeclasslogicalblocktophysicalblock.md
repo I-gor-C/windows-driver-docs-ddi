@@ -101,12 +101,6 @@ TAPE_PHYS_POSITION TapeClassLogicalBlockToPhysicalBlock(
 
 <p>If a tape miniclass driver calls this routine with an unsupported tape density code, <b>TapeClassLogicalBlockToPhysicalBlock</b> does not perform any translation. It returns the logical block address in <b>SeekBlockAddress</b> and returns zero in <b>SpaceBlockCount</b>.</p>
 
-<p>A tape miniclass driver calls <b>TapeClassLogicalBlockToPhysicalBlock</b> to translate a logical block address from an application to a physical block address for a tape device. <b>TapeClassLogicalBlockToPhysicalBlock</b> is not necessary for SCSI-2 or later drivers because devices that comply with SCSI-2 or later standards support logical block addressing.</p>
-
-<p>To position a tape to the physical block address returned by this routine, a tape miniclass driver issues two SCSI commands: a LOCATE command to position the tape to the <b>SeekBlockAddress</b>, and then a SPACE command to advance the tape <b>SpaceBlockCount</b>. The <b>SpaceBlockCount</b> value is necessary if the pseudological blocks on the tape are smaller than the physical blocks; in that case, the logical block boundary might not align with a physical block boundary.</p>
-
-<p>If a tape miniclass driver calls this routine with an unsupported tape density code, <b>TapeClassLogicalBlockToPhysicalBlock</b> does not perform any translation. It returns the logical block address in <b>SeekBlockAddress</b> and returns zero in <b>SpaceBlockCount</b>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -144,7 +138,7 @@ TAPE_PHYS_POSITION TapeClassLogicalBlockToPhysicalBlock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567625">TapeClassPhysicalBlockToLogicalBlock</a>
+<a href="..\minitape\nf-minitape-tapeclassphysicalblocktologicalblock.md">TapeClassPhysicalBlockToLogicalBlock</a>
 </dt>
 </dl>
 <p> </p>

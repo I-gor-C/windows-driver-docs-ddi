@@ -7,7 +7,7 @@ old-location: netvista\dot11_scan_request_v2.htm
 old-project: netvista
 ms.assetid: fd6dd2f4-ee58-46da-ba87-5aecaff35dd0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_SCAN_REQUEST_V2, DOT11_SCAN_REQUEST_V2, *PDOT11_SCAN_REQUEST_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: windot11.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -72,7 +71,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 <dd>
 <p>The type of basic service set (BSS) networks for which the 802.11 station scans. The data type for
      this member is the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547669">DOT11_BSS_TYPE</a> enumeration.</p>
+     <a href="..\wlantypes\ne-wlantypes--dot11-bss-type.md">DOT11_BSS_TYPE</a> enumeration.</p>
 </dd>
 
 ### -field <b>dot11BSSID</b>
@@ -161,7 +160,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 <p>The offset in the 
      <b>ucBuffer</b> array where the service set identifier (SSID) list begins. Each entry in the SSID list is
      formatted as a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff548773">DOT11_SSID</a> structure.
+     <a href="..\wlantypes\ns-wlantypes--dot11-ssid.md">DOT11_SSID</a> structure.
      </p>
 <p>The 802.11 station scans for each SSID in the list. For example, if 
      <b>dot11ScanType</b> is set to 
@@ -231,7 +230,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 <p>The offset in the 
      <b>ucBuffer</b> array where the list of PHY types begins. Each entry in the list of PHY types is
      formatted as a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff548745">DOT11_PHY_TYPE_INFO</a> structure.
+     <a href="..\windot11\ns-windot11--dot11-phy-type-info.md">DOT11_PHY_TYPE_INFO</a> structure.
      </p>
 <p>The 802.11 station must perform the BSS scan by using each of the specified PHY types from this
      list.</p>
@@ -317,7 +316,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548745">DOT11_PHY_TYPE_INFO</a>
+<a href="..\windot11\ns-windot11--dot11-phy-type-info.md">DOT11_PHY_TYPE_INFO</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
@@ -325,4 +324,4 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SCAN_REQUEST_V2 structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SCAN_REQUEST_V2 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfworkitem.htm
 old-project: wdf
 ms.assetid: F9EDA26E-92E0-4936-87B7-E1E2A02A9D96
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,31 +45,31 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFWorkItem</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>. <b>IWDFWorkItem</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFWorkItem</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>. <b>IWDFWorkItem</b> also has these types of members:</p>
 
 <p>The <b>IWDFWorkItem</b> interface has these methods.</p>
 
 <p>
-   The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463883">Enqueue</a> method adds this interface's framework work-item object to the system's work-item queue.
+   The <a href="wdf.iwdfworkitem_enqueue">Enqueue</a> method adds this interface's framework work-item object to the system's work-item queue.
   </p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a> method returns after this interface's work item has been serviced.</p>
+<p>The <a href="wdf.iwdfworkitem_flush">Flush</a> method returns after this interface's work item has been serviced.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463891">GetParentObject</a> method returns the parent framework object of this interface's  work item.</p>
+<p>The <a href="wdf.iwdfworkitem_getparentobject">GetParentObject</a> method returns the parent framework object of this interface's  work item.</p>
 
 <p> </p>
 
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFWorkItem</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>. <b>IWDFWorkItem</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFWorkItem</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>. <b>IWDFWorkItem</b> also has these types of members:</p>
 
 <p>The <b>IWDFWorkItem</b> interface has these methods.</p>
 
 <p>
-   The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463883">Enqueue</a> method adds this interface's framework work-item object to the system's work-item queue.
+   The <a href="wdf.iwdfworkitem_enqueue">Enqueue</a> method adds this interface's framework work-item object to the system's work-item queue.
   </p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a> method returns after this interface's work item has been serviced.</p>
+<p>The <a href="wdf.iwdfworkitem_flush">Flush</a> method returns after this interface's work item has been serviced.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463891">GetParentObject</a> method returns the parent framework object of this interface's  work item.</p>
+<p>The <a href="wdf.iwdfworkitem_getparentobject">GetParentObject</a> method returns the parent framework object of this interface's  work item.</p>
 
 <p> </p>
 
@@ -81,37 +81,37 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh463883">Enqueue</a>
+<a href="wdf.iwdfworkitem_enqueue">Enqueue</a>
 </td>
 <td align="left" width="63%">
 <p>
-   The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463883">Enqueue</a> method adds this interface's framework work-item object to the system's work-item queue.
+   The <a href="wdf.iwdfworkitem_enqueue">Enqueue</a> method adds this interface's framework work-item object to the system's work-item queue.
   </p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a>
+<a href="wdf.iwdfworkitem_flush">Flush</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a> method returns after this interface's work item has been serviced.</p>
+<p>The <a href="wdf.iwdfworkitem_flush">Flush</a> method returns after this interface's work item has been serviced.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh463891">GetParentObject</a>
+<a href="wdf.iwdfworkitem_getparentobject">GetParentObject</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463891">GetParentObject</a> method returns the parent framework object of this interface's  work item.</p>
+<p>The <a href="wdf.iwdfworkitem_getparentobject">GetParentObject</a> method returns the parent framework object of this interface's  work item.</p>
 </td>
 </tr>
 </table><p>
-   The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463883">Enqueue</a> method adds this interface's framework work-item object to the system's work-item queue.
+   The <a href="wdf.iwdfworkitem_enqueue">Enqueue</a> method adds this interface's framework work-item object to the system's work-item queue.
   </p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a> method returns after this interface's work item has been serviced.</p>
+<p>The <a href="wdf.iwdfworkitem_flush">Flush</a> method returns after this interface's work item has been serviced.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463891">GetParentObject</a> method returns the parent framework object of this interface's  work item.</p>
+<p>The <a href="wdf.iwdfworkitem_getparentobject">GetParentObject</a> method returns the parent framework object of this interface's  work item.</p>
 
 <p> </p>
 
@@ -171,9 +171,9 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFWorkItem interface%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFWorkItem interface%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

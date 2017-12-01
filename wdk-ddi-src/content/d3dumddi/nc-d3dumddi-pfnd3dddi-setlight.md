@@ -68,13 +68,13 @@ __checkReturn HRESULT APIENTRY SetLight(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543317">D3DDDIARG_SETLIGHT</a> structure that describes how to set the light source.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setlight.md">D3DDDIARG_SETLIGHT</a> structure that describes how to set the light source.</p>
 </dd>
 
 ### -param <i>pLightProperties</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544579">D3DDDI_LIGHT</a> structure that describes the light properties to set.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-light.md">D3DDDI_LIGHT</a> structure that describes the light properties to set.</p>
 </dd>
 </dl>
 
@@ -82,8 +82,6 @@ __checkReturn HRESULT APIENTRY SetLight(
 <p><i>SetLight</i> returns S_OK or an appropriate error result if the light properties are not successfully set.</p>
 
 ## -remarks
-<p>Light properties describe the type and color of a light source. Depending on the type of light that is being used, a light can have properties for attenuation and range or for spotlight effects. However, not all types of lights will use all of the properties. For more information about light properties, see the Microsoft Windows SDK documentation.</p>
-
 <p>Light properties describe the type and color of a light source. Depending on the type of light that is being used, a light can have properties for attenuation and range or for spotlight effects. However, not all types of lights will use all of the properties. For more information about light properties, see the Microsoft Windows SDK documentation.</p>
 
 ## -requirements
@@ -121,13 +119,13 @@ __checkReturn HRESULT APIENTRY SetLight(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543317">D3DDDIARG_SETLIGHT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setlight.md">D3DDDIARG_SETLIGHT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544579">D3DDDI_LIGHT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-light.md">D3DDDI_LIGHT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

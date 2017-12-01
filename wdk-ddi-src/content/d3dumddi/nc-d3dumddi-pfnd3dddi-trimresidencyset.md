@@ -67,7 +67,7 @@ HRESULT APIENTRY CALLBACK* pfnTrimResidencySet(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906759">D3DDDIARG_TRIMRESIDENCYSET</a> structure that provides the details of the requested operation.
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-trimresidencyset.md">D3DDDIARG_TRIMRESIDENCYSET</a> structure that provides the details of the requested operation.
 
 </p>
 </dd>
@@ -122,7 +122,7 @@ HRESULT APIENTRY CALLBACK* pfnTrimResidencySet(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906759">D3DDDIARG_TRIMRESIDENCYSET</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-trimresidencyset.md">D3DDDIARG_TRIMRESIDENCYSET</a>
 </dt>
 </dl>
 <p> </p>

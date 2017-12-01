@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetBindingCapability_IN structure is used by a WMI client to deliver the input parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553902">GetBindingCapability</a> WMI method to the HBA miniport driver.</p>
+<p>The GetBindingCapability_IN structure is used by a WMI client to deliver the input parameter data of the <a href="storage.getbindingcapability">GetBindingCapability</a> WMI method to the HBA miniport driver.</p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ typedef struct _GetBindingCapability_IN {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the GetBindingCapability_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetBindingCapability_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -81,7 +81,7 @@ typedef struct _GetBindingCapability_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553902">GetBindingCapability</a>
+<a href="storage.getbindingcapability">GetBindingCapability</a>
 </dt>
 </dl>
 <p> </p>

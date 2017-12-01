@@ -58,7 +58,7 @@ FORCEINLINE NTSTATUS UrsDeviceInitInitialize(
 ### -param <i>DeviceInit</i> 
 
 <dd>
-<p>A pointer to a framework-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure. </p>
+<p>A pointer to a framework-allocated <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure. </p>
 </dd>
 </dl>
 
@@ -66,9 +66,7 @@ FORCEINLINE NTSTATUS UrsDeviceInitInitialize(
 <p>The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code. </p>
 
 ## -remarks
-<p>The client driver for the dual-role controller calls this method in its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> implementation before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt628012">UrsDeviceInitialize</a>. For code example, see <b>UrsDeviceInitialize</b>.</p>
-
-<p>The client driver for the dual-role controller calls this method in its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> implementation before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt628012">UrsDeviceInitialize</a>. For code example, see <b>UrsDeviceInitialize</b>.</p>
+<p>The client driver for the dual-role controller calls this method in its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> implementation before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> and <a href="buses.ursdeviceinitialize">UrsDeviceInitialize</a>. For code example, see <b>UrsDeviceInitialize</b>.</p>
 
 ## -requirements
 <table>
@@ -129,7 +127,7 @@ FORCEINLINE NTSTATUS UrsDeviceInitInitialize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 </dt>
 </dl>
 <p> </p>

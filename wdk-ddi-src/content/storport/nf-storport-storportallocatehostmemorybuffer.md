@@ -164,11 +164,6 @@ ULONG StorPortAllocateHostMemoryBuffer(
       The caller should subsequently call <a href="storage.StorPortFreeHostMemoryBuffer">StorPortFreeHostMemoryBuffer</a> when it is
     done with the host memory buffer.</p>
 
-<p>
-        
-      The caller should subsequently call <a href="storage.StorPortFreeHostMemoryBuffer">StorPortFreeHostMemoryBuffer</a> when it is
-    done with the host memory buffer.</p>
-
 ## -requirements
 <table>
 <tr>

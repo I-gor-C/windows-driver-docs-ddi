@@ -7,7 +7,7 @@ old-location: sensors\gnss_chipsetinfo.htm
 old-project: sensors
 ms.assetid: DE45805C-09E6-44B8-A4DA-BF73EC444AA9
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_CHIPSETINFO, GNSS_CHIPSETINFO, *PGNSS_CHIPSETINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

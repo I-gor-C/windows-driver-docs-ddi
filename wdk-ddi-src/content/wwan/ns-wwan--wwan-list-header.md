@@ -7,7 +7,7 @@ old-location: netvista\wwan_list_header.htm
 old-project: netvista
 ms.assetid: ef5c94e9-641c-41ea-baf1-343b876c92a4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WWAN_LIST_HEADER, WWAN_LIST_HEADER, *PWWAN_LIST_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _WWAN_LIST_HEADER {
 
 <dd>
 <p>A value from the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571254">WWAN_STRUCT_TYPE</a> enumeration that represents
+     <a href="..\wwan\ne-wwan--wwan-struct-type.md">WWAN_STRUCT_TYPE</a> enumeration that represents
      the type of objects in the list.</p>
 </dd>
 
@@ -102,7 +102,7 @@ typedef struct _WWAN_LIST_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567913">NDIS_WWAN_PREFERRED_PROVIDERS</a>
+<a href="..\ndiswwan\ns-ndiswwan--ndis-wwan-preferred-providers.md">NDIS_WWAN_PREFERRED_PROVIDERS</a>
 </dt>
 <dt>
 <a href="..\ndiswwan\ns-ndiswwan--ndis-wwan-provisioned-contexts.md">
@@ -113,15 +113,15 @@ typedef struct _WWAN_LIST_HEADER {
    NDIS_WWAN_SET_PREFERRED_PROVIDERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567942">NDIS_WWAN_SMS_RECEIVE</a>
+<a href="..\ndiswwan\ns-ndiswwan--ndis-wwan-sms-receive.md">NDIS_WWAN_SMS_RECEIVE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567948">NDIS_WWAN_VISIBLE_PROVIDERS</a>
+<a href="..\ndiswwan\ns-ndiswwan--ndis-wwan-visible-providers.md">NDIS_WWAN_VISIBLE_PROVIDERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571254">WWAN_STRUCT_TYPE</a>
+<a href="..\wwan\ne-wwan--wwan-struct-type.md">WWAN_STRUCT_TYPE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_LIST_HEADER structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_LIST_HEADER structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

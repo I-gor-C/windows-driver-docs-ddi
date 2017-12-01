@@ -7,7 +7,7 @@ old-location: stream\ksvalidateallocatorcreaterequest.htm
 old-project: stream
 ms.assetid: 9275257b-50d8-4272-b340-4344644b3e15
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsValidateAllocatorCreateRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices

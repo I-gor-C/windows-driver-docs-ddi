@@ -67,7 +67,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
 
 <dd>
 <p>
-      [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562029">DXGK_RENDERKM_OPERATION</a>-type operation code that identifies the GDI hardware-accelerated rendering operation to process. For more information about GDI hardware acceleration, see the Remarks section.
+      [in] A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-renderkm-operation.md">DXGK_RENDERKM_OPERATION</a>-type operation code that identifies the GDI hardware-accelerated rendering operation to process. For more information about GDI hardware acceleration, see the Remarks section.
      </p>
 </dd>
 
@@ -88,7 +88,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
 
 <dd>
 <p>
-       [in] A bit-block transfer (bitblt) that is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561079">DXGK_GDIARG_BITBLT</a> structure.
+       [in] A bit-block transfer (bitblt) that is described by a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-bitblt.md">DXGK_GDIARG_BITBLT</a> structure.
       </p>
 </dd>
 
@@ -96,7 +96,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
 
 <dd>
 <p>
-       [in] A color fill that is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561083">DXGK_GDIARG_COLORFILL</a> structure.
+       [in] A color fill that is described by a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-colorfill.md">DXGK_GDIARG_COLORFILL</a> structure.
       </p>
 </dd>
 
@@ -104,7 +104,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
 
 <dd>
 <p>
-       [in] An alpha blend that is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561074">DXGK_GDIARG_ALPHABLEND</a> structure.
+       [in] An alpha blend that is described by a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-alphablend.md">DXGK_GDIARG_ALPHABLEND</a> structure.
       </p>
 </dd>
 
@@ -112,7 +112,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
 
 <dd>
 <p>
-       [in] A stretch bit-block transfer that is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561089">DXGK_GDIARG_STRETCHBLT</a> structure.
+       [in] A stretch bit-block transfer that is described by a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-stretchblt.md">DXGK_GDIARG_STRETCHBLT</a> structure.
       </p>
 </dd>
 
@@ -120,7 +120,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
 
 <dd>
 <p>
-       [in] A transparent bit-block transfer that is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561091">DXGK_GDIARG_TRANSPARENTBLT</a> structure.
+       [in] A transparent bit-block transfer that is described by a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-transparentblt.md">DXGK_GDIARG_TRANSPARENTBLT</a> structure.
       </p>
 </dd>
 
@@ -128,7 +128,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
 
 <dd>
 <p>
-       [in] A ClearType blend that is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561082">DXGK_GDIARG_CLEARTYPEBLEND</a> structure.
+       [in] A ClearType blend that is described by a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-cleartypeblend.md">DXGK_GDIARG_CLEARTYPEBLEND</a> structure.
       </p>
 </dd>
 </dl>
@@ -138,7 +138,7 @@ typedef struct _DXGK_RENDERKM_COMMAND {
 ## -remarks
 <p>An array of variable-size DXGK_RENDERKM_COMMAND structures defines a command buffer that is used to control GDI hardware-accelerated rendering.</p>
 
-<p>A display miniport driver should report that it supports command buffer processing for GDI hardware acceleration by setting <a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>-&gt;<b>PresentationCaps</b>.<b>SupportKernelModeCommandBuffer</b> to <b>TRUE</b>.</p>
+<p>A display miniport driver should report that it supports command buffer processing for GDI hardware acceleration by setting <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a>-&gt;<b>PresentationCaps</b>.<b>SupportKernelModeCommandBuffer</b> to <b>TRUE</b>.</p>
 
 <p>Each command varies in length depending on the value of the <b>OpCode</b> member and the number of sub-rectangles in the command.</p>
 
@@ -167,31 +167,31 @@ typedef struct _DXGK_RENDERKM_COMMAND {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561074">DXGK_GDIARG_ALPHABLEND</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-alphablend.md">DXGK_GDIARG_ALPHABLEND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561079">DXGK_GDIARG_BITBLT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-bitblt.md">DXGK_GDIARG_BITBLT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561082">DXGK_GDIARG_CLEARTYPEBLEND</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-cleartypeblend.md">DXGK_GDIARG_CLEARTYPEBLEND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561083">DXGK_GDIARG_COLORFILL</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-colorfill.md">DXGK_GDIARG_COLORFILL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561089">DXGK_GDIARG_STRETCHBLT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-stretchblt.md">DXGK_GDIARG_STRETCHBLT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561091">DXGK_GDIARG_TRANSPARENTBLT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-transparentblt.md">DXGK_GDIARG_TRANSPARENTBLT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562004">DXGK_PRESENTATIONCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562029">DXGK_RENDERKM_OPERATION</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-renderkm-operation.md">DXGK_RENDERKM_OPERATION</a>
 </dt>
 </dl>
 <p> </p>

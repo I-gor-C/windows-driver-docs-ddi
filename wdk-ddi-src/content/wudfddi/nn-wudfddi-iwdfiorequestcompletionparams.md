@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequestcompletionparams.htm
 old-project: wdf
 ms.assetid: 36bed6be-7202-4dff-989d-57d790b8eb52
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoRequestCompletionParams</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560292">IWDFRequestCompletionParams</a>. <b>IWDFIoRequestCompletionParams</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoRequestCompletionParams</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a>. <b>IWDFIoRequestCompletionParams</b> also has these types of members:</p>
 
 <p>The <b>IWDFIoRequestCompletionParams</b> interface has these methods.</p>
 
@@ -65,7 +65,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559057">IWDFIoRequestCompletionParams::GetIoctlParameters</a>
+<a href="wdf.iwdfiorequestcompletionparams_getioctlparameters">IWDFIoRequestCompletionParams::GetIoctlParameters</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequestcompletionparams_getioctlparameters">GetIoctlParameters</a> method retrieves parameters that are associated with the completion of a device I/O control request.</p>
@@ -73,7 +73,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559060">IWDFIoRequestCompletionParams::GetReadParameters</a>
+<a href="wdf.iwdfiorequestcompletionparams_getreadparameters">IWDFIoRequestCompletionParams::GetReadParameters</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequestcompletionparams_getreadparameters">GetReadParameters</a> method retrieves parameters that are associated with the completion of a read request.</p>
@@ -81,7 +81,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559062">IWDFIoRequestCompletionParams::GetWriteParameters</a>
+<a href="wdf.iwdfiorequestcompletionparams_getwriteparameters">IWDFIoRequestCompletionParams::GetWriteParameters</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequestcompletionparams_getwriteparameters">GetWriteParameters</a> method retrieves parameters that are associated with the completion of a write request.</p>

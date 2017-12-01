@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains parameters for a request to reset the specified device.  This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187845">EVT_UCX_USBDEVICE_RESET</a> callback function.</p>
+<p>Contains parameters for a request to reset the specified device.  This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="buses.evt_ucx_usbdevice_reset">EVT_UCX_USBDEVICE_RESET</a> callback function.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct _USBDEVICE_RESET {
 ### -field <b>Header</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188075">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
+<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
 </dd>
 
 ### -field <b>DefaultEndpoint</b>
@@ -107,7 +107,7 @@ typedef struct _USBDEVICE_RESET {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187845">EVT_UCX_USBDEVICE_RESET</a>
+<a href="buses.evt_ucx_usbdevice_reset">EVT_UCX_USBDEVICE_RESET</a>
 </dt>
 </dl>
 <p> </p>

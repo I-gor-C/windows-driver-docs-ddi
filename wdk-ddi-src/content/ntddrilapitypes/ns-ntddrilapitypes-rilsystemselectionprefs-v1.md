@@ -7,7 +7,7 @@ old-location: netvista\rilsystemselectionprefs_v1.htm
 old-project: netvista
 ms.assetid: a2ba47e6-9dec-46b4-ac8b-a863345f228f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSYSTEMSELECTIONPREFS_V1, RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices

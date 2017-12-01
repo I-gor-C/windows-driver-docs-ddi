@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DKMT_CREATEDEVICEFLAGS structure identifies the type of device context to be created in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546836">D3DKMTCreateDevice</a> function.</p>
+<p>The D3DKMT_CREATEDEVICEFLAGS structure identifies the type of device context to be created in a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatedevice.md">D3DKMTCreateDevice</a> function.</p>
 
 
 ## -syntax
@@ -124,7 +124,7 @@ typedef struct _D3DKMT_CREATEDEVICEFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547819">D3DKMT_CREATEDEVICE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createdevice.md">D3DKMT_CREATEDEVICE</a>
 </dt>
 </dl>
 <p> </p>

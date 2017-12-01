@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>VideoPortAllocateContiguousMemory</b> function is <b>obsolete</b> in Windows 2000 and later. Video miniport drivers should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff570178">VideoPortAllocateCommonBuffer</a> in its place.</p>
+<p>The <b>VideoPortAllocateContiguousMemory</b> function is <b>obsolete</b> in Windows 2000 and later. Video miniport drivers should use <a href="..\video\nf-video-videoportallocatecommonbuffer.md">VideoPortAllocateCommonBuffer</a> in its place.</p>
 <p><b>VideoPortAllocateContiguousMemory</b> allocates a range of physically contiguous, cache-aligned memory from the nonpaged pool.</p>
 
 
@@ -81,10 +81,6 @@ PVOID VideoPortAllocateContiguousMemory(
 <p><b>VideoPortAllocateContiguousMemory</b> returns the base virtual address for the allocated memory, if the call is successful. If the request cannot be satisfied, <b>NULL</b> is returned.</p>
 
 ## -remarks
-<p><b>VideoPortAllocateContiguousMemory</b> can be called to allocate a contiguous block of physical memory for a long-term internal buffer.</p>
-
-<p>A miniport driver that must use contiguous memory should allocate only what it needs during driver initialization because nonpaged pool is likely to become fragmented as the system runs. If the miniport driver is unloaded, it must deallocate the memory. Contiguous allocations are aligned on an integral multiple of the processor's data-cache-line size to prevent cache and coherency problems.</p>
-
 <p><b>VideoPortAllocateContiguousMemory</b> can be called to allocate a contiguous block of physical memory for a long-term internal buffer.</p>
 
 <p>A miniport driver that must use contiguous memory should allocate only what it needs during driver initialization because nonpaged pool is likely to become fragmented as the system runs. If the miniport driver is unloaded, it must deallocate the memory. Contiguous allocations are aligned on an integral multiple of the processor's data-cache-line size to prevent cache and coherency problems.</p>
@@ -152,7 +148,7 @@ PVOID VideoPortAllocateContiguousMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570177">VideoPortAllocateBuffer</a>
+<a href="..\video\nf-video-videoportallocatebuffer.md">VideoPortAllocateBuffer</a>
 </dt>
 </dl>
 <p> </p>

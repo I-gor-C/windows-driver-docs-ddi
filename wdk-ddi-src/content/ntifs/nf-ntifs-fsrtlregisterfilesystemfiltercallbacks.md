@@ -410,20 +410,18 @@ VOID (*PFS_FILTER_COMPLETION_CALLBACK) (
 <dt>PreAcquireForSectionSynchronization</dt>
 <dt>PostAcquireForSectionSynchronization</dt>
 </dl>
-</p><dl>
-<dt>PreAcquireForSectionSynchronization</dt>
-<dt>PostAcquireForSectionSynchronization</dt>
-</dl><p>The memory manager releases a file after creating a memory-mapped section for a portion of the file. </p>
+</p>
+
+<p>The memory manager releases a file after creating a memory-mapped section for a portion of the file. </p>
 
 <p>
 <dl>
 <dt>PreReleaseForSectionSynchronization</dt>
 <dt>PostReleaseForSectionSynchronization</dt>
 </dl>
-</p><dl>
-<dt>PreReleaseForSectionSynchronization</dt>
-<dt>PostReleaseForSectionSynchronization</dt>
-</dl><p>A kernel component (such as the cache manager) acquires a file exclusively before temporarily disabling section creation for a portion of the file. </p>
+</p>
+
+<p>A kernel component (such as the cache manager) acquires a file exclusively before temporarily disabling section creation for a portion of the file. </p>
 
 <p>
 <div class="alert"><b>Note</b>  For this operation, <i>SyncType</i> is set to SyncTypeOther.</div>
@@ -431,198 +429,47 @@ VOID (*PFS_FILTER_COMPLETION_CALLBACK) (
 </p>
 
 <p>
-<dl>
-<dt>PreAcquireForSectionSynchronization</dt>
-<dt>PostAcquireForSectionSynchronization</dt>
-</dl>
-</p><dl>
-<dt>PreAcquireForSectionSynchronization</dt>
-<dt>PostAcquireForSectionSynchronization</dt>
-</dl><p>
 <div class="alert"><b>Note</b>  PreAcquireForSectionSynchronization should always return a success status code (such as STATUS_SUCCESS) for this operation. Returning any other type of status code causes the system to ASSERT on a checked build. (On free builds, the status code is ignored.)</div>
 <div> </div>
 </p>
 
 <p>A kernel component (such as the cache manager) releases a file after temporarily disabling section creation for a portion of the file. </p>
 
-<p>
-<dl>
-<dt>PreReleaseForSectionSynchronization</dt>
-<dt>PostReleaseForSectionSynchronization</dt>
-</dl>
-</p><dl>
-<dt>PreReleaseForSectionSynchronization</dt>
-<dt>PostReleaseForSectionSynchronization</dt>
-</dl><p>The cache manager acquires a file exclusively before flushing a portion of the file from the cache. </p>
+<p>The cache manager acquires a file exclusively before flushing a portion of the file from the cache. </p>
 
 <p>
 <dl>
 <dt>PreAcquireForCcFlush</dt>
 <dt>PostAcquireForCcFlush</dt>
 </dl>
-</p><dl>
-<dt>PreAcquireForCcFlush</dt>
-<dt>PostAcquireForCcFlush</dt>
-</dl><p>The cache manager releases a file after flushing a portion of the file from the cache. </p>
-
-<p>
-<dl>
-<dt>PreReleaseForCcFlush</dt>
-<dt>PostReleaseForCcFlush</dt>
-</dl>
-</p><dl>
-<dt>PreReleaseForCcFlush</dt>
-<dt>PostReleaseForCcFlush</dt>
-</dl><p>The modified page writer acquires a file exclusively before writing a portion of the file to disk. </p>
-
-<p>
-<dl>
-<dt>PreAcquireForModifiedPageWriter</dt>
-<dt>PostAcquireForModifiedPageWriter</dt>
-</dl>
-</p><dl>
-<dt>PreAcquireForModifiedPageWriter</dt>
-<dt>PostAcquireForModifiedPageWriter</dt>
-</dl><p>The modified page writer releases a file after writing a portion of the file to disk. </p>
-
-<p>
-<dl>
-<dt>PreReleaseForModifiedPageWriter</dt>
-<dt>PostReleaseForModifiedPageWriter</dt>
-</dl>
-</p><dl>
-<dt>PreReleaseForModifiedPageWriter</dt>
-<dt>PostReleaseForModifiedPageWriter</dt>
-</dl><p> </p>
-
-<p>The filter notification callback routine is invoked before the operation request is passed to lower-level filter drivers and the underlying file system. In the callback routine, the filter driver should perform any needed processing and immediately return STATUS_SUCCESS. If a filter driver's callback routine returns a status value other than STATUS_SUCCESS, this causes the operation request to fail. Repeated failure of certain requests, such as locking requests, can halt system progress. Thus, filter drivers should fail such a request only when absolutely necessary. When failing these requests, the filter driver should return an error status value that describes the error as completely and accurately as possible. </p>
-
-<p>PreReleaseForSectionSynchronization </p>
-
-<p>PreReleaseForCcFlush </p>
-
-<p>PreReleaseForModifiedPageWriter </p>
-
-<p>The filter completion callback routine is invoked after the operation request is passed to lower-level filter drivers and the underlying file system. In the completion callback routine, the filter driver must perform any needed processing and immediately return. </p>
-
-<p>The callback routines defined by <b>FsRtlRegisterFileSystemFilterCallbacks</b> supersede the following fast I/O callback routines, which are obsolete and should not be used by file system filter drivers: </p>
-
-<p>AcquireForCcFlush</p>
-
-<p>AcquireFileForNtCreateSection</p>
-
-<p>AcquireForModWrite</p>
-
-<p>ReleaseForCcFlush</p>
-
-<p>ReleaseFileForNtCreateSection</p>
-
-<p>ReleaseForModWrite</p>
-
-<p>File system and file system filter drivers should call <b>FsRtlRegisterFileSystemFilterCallbacks</b> from the driver's <b>DriverEntry</b> routine.  </p>
-
-<p>File systems call <b>FsRtlRegisterFileSystemFilterCallbacks</b> to set the <b>PreAcquireForSectionSynchronization</b> callback member of the FS_FILTER_CALLBACKS structure instead of using the obsolete <b>AcquireFileForNtCreateSection</b>.</p>
-
-<p><b>FsRtlRegisterFileSystemFilterCallbacks</b> registers the notification callback routines that were specified in the <i>Callbacks</i> parameter to be invoked when requests for certain file operations are sent to the underlying file system. </p>
-
-<p>Callback routines are currently defined for the following operations: </p>
-
-<p>The memory manager acquires a file exclusively before creating a memory-mapped section for a portion of the file. </p>
-
-<p>
-<div class="alert"><b>Note</b>  For this operation, <i>SyncType</i> is set to SyncTypeCreateSection.</div>
-<div> </div>
 </p>
 
-<p>
-<dl>
-<dt>PreAcquireForSectionSynchronization</dt>
-<dt>PostAcquireForSectionSynchronization</dt>
-</dl>
-</p><dl>
-<dt>PreAcquireForSectionSynchronization</dt>
-<dt>PostAcquireForSectionSynchronization</dt>
-</dl><p>The memory manager releases a file after creating a memory-mapped section for a portion of the file. </p>
-
-<p>
-<dl>
-<dt>PreReleaseForSectionSynchronization</dt>
-<dt>PostReleaseForSectionSynchronization</dt>
-</dl>
-</p><dl>
-<dt>PreReleaseForSectionSynchronization</dt>
-<dt>PostReleaseForSectionSynchronization</dt>
-</dl><p>A kernel component (such as the cache manager) acquires a file exclusively before temporarily disabling section creation for a portion of the file. </p>
-
-<p>
-<div class="alert"><b>Note</b>  For this operation, <i>SyncType</i> is set to SyncTypeOther.</div>
-<div> </div>
-</p>
-
-<p>
-<dl>
-<dt>PreAcquireForSectionSynchronization</dt>
-<dt>PostAcquireForSectionSynchronization</dt>
-</dl>
-</p><dl>
-<dt>PreAcquireForSectionSynchronization</dt>
-<dt>PostAcquireForSectionSynchronization</dt>
-</dl><p>
-<div class="alert"><b>Note</b>  PreAcquireForSectionSynchronization should always return a success status code (such as STATUS_SUCCESS) for this operation. Returning any other type of status code causes the system to ASSERT on a checked build. (On free builds, the status code is ignored.)</div>
-<div> </div>
-</p>
-
-<p>A kernel component (such as the cache manager) releases a file after temporarily disabling section creation for a portion of the file. </p>
-
-<p>
-<dl>
-<dt>PreReleaseForSectionSynchronization</dt>
-<dt>PostReleaseForSectionSynchronization</dt>
-</dl>
-</p><dl>
-<dt>PreReleaseForSectionSynchronization</dt>
-<dt>PostReleaseForSectionSynchronization</dt>
-</dl><p>The cache manager acquires a file exclusively before flushing a portion of the file from the cache. </p>
-
-<p>
-<dl>
-<dt>PreAcquireForCcFlush</dt>
-<dt>PostAcquireForCcFlush</dt>
-</dl>
-</p><dl>
-<dt>PreAcquireForCcFlush</dt>
-<dt>PostAcquireForCcFlush</dt>
-</dl><p>The cache manager releases a file after flushing a portion of the file from the cache. </p>
+<p>The cache manager releases a file after flushing a portion of the file from the cache. </p>
 
 <p>
 <dl>
 <dt>PreReleaseForCcFlush</dt>
 <dt>PostReleaseForCcFlush</dt>
 </dl>
-</p><dl>
-<dt>PreReleaseForCcFlush</dt>
-<dt>PostReleaseForCcFlush</dt>
-</dl><p>The modified page writer acquires a file exclusively before writing a portion of the file to disk. </p>
+</p>
+
+<p>The modified page writer acquires a file exclusively before writing a portion of the file to disk. </p>
 
 <p>
 <dl>
 <dt>PreAcquireForModifiedPageWriter</dt>
 <dt>PostAcquireForModifiedPageWriter</dt>
 </dl>
-</p><dl>
-<dt>PreAcquireForModifiedPageWriter</dt>
-<dt>PostAcquireForModifiedPageWriter</dt>
-</dl><p>The modified page writer releases a file after writing a portion of the file to disk. </p>
+</p>
+
+<p>The modified page writer releases a file after writing a portion of the file to disk. </p>
 
 <p>
 <dl>
 <dt>PreReleaseForModifiedPageWriter</dt>
 <dt>PostReleaseForModifiedPageWriter</dt>
 </dl>
-</p><dl>
-<dt>PreReleaseForModifiedPageWriter</dt>
-<dt>PostReleaseForModifiedPageWriter</dt>
-</dl><p> </p>
+</p>
 
 <p>The filter notification callback routine is invoked before the operation request is passed to lower-level filter drivers and the underlying file system. In the callback routine, the filter driver should perform any needed processing and immediately return STATUS_SUCCESS. If a filter driver's callback routine returns a status value other than STATUS_SUCCESS, this causes the operation request to fail. Repeated failure of certain requests, such as locking requests, can halt system progress. Thus, filter drivers should fail such a request only when absolutely necessary. When failing these requests, the filter driver should return an error status value that describes the error as completely and accurately as possible. </p>
 

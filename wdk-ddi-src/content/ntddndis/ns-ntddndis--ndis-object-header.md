@@ -7,7 +7,7 @@ old-location: netvista\ndis_object_header.htm
 old-project: netvista
 ms.assetid: 59d1a9b0-a4d0-4a24-aa2f-2167b0f53caa
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_OBJECT_HEADER, NDIS_OBJECT_HEADER, *PNDIS_OBJECT_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices

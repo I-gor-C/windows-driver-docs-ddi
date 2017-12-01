@@ -7,7 +7,7 @@ old-location: netvista\fwps_net_buffer_list_notify_fn0.htm
 old-project: netvista
 ms.assetid: ad603c9c-aa11-4c8b-9d19-be2938608f3d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -119,12 +119,6 @@ void NTAPI FwpsNetBufferListNotifyFN0(
     handle messages for multiple associated buffer lists by using the context and context tag to
     differentiate between instances.</p>
 
-<p>This function is associated with a callout driver by a call to 
-    <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">
-    FwpsNetBufferListAssociateContext0</a>. A callout driver can use a single notification function to
-    handle messages for multiple associated buffer lists by using the context and context tag to
-    differentiate between instances.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -158,23 +152,23 @@ void NTAPI FwpsNetBufferListNotifyFN0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+<a href="netvista.classifyfn">classifyFn</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551224">FWPS_CALLOUT0</a>
+<a href="netvista.fwps_callout0">FWPS_CALLOUT0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>
+<a href="netvista.fwps_filter1">FWPS_FILTER1</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps-net-buffer-list-notify-fn1.md">
   FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
+<a href="netvista.callout_driver_callout_functions">Callout Driver Callout Functions</a>
 </dt>
 <dt>
 <a href="NULL">Using Packet Tagging</a>
@@ -182,4 +176,4 @@ void NTAPI FwpsNetBufferListNotifyFN0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_NET_BUFFER_LIST_NOTIFY_FN0 callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_NET_BUFFER_LIST_NOTIFY_FN0 callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

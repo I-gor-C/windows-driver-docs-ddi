@@ -7,7 +7,7 @@ old-location: wdf\wdfdmaenablerconfiguresystemprofile.htm
 old-project: wdf
 ms.assetid: 3374EBB8-F43A-4A2A-92AC-623B39F5EFA0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfDmaEnablerConfigureSystemProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,13 +69,13 @@ NTSTATUS WdfDmaEnablerConfigureSystemProfile(
 ### -param <i>ProfileConfig</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439495">WDF_DMA_SYSTEM_PROFILE_CONFIG</a> structure. Drivers must initialize this structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh439499">WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT</a>.</p>
+<p>A pointer to a <a href="..\wdfdmaenabler\ns-wdfdmaenabler--wdf-dma-system-profile-config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a> structure. Drivers must initialize this structure by calling <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf-dma-system-profile-config-init.md">WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT</a>.</p>
 </dd>
 
 ### -param <i>ConfigDirection</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551288">WDF_DMA_DIRECTION</a>-typed value that specifies the direction of the DMA transfer operation. If the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551295">WDF_DMA_PROFILE</a> value for this enabler is not <b>WdfDmaProfileSystemDuplex</b>, the framework ignores this parameter.</p>
+<p>A <a href="..\wdfdmaenabler\ne-wdfdmaenabler--wdf-dma-direction.md">WDF_DMA_DIRECTION</a>-typed value that specifies the direction of the DMA transfer operation. If the <a href="..\wdfdmaenabler\ne-wdfdmaenabler--wdf-dma-profile.md">WDF_DMA_PROFILE</a> value for this enabler is not <b>WdfDmaProfileSystemDuplex</b>, the framework ignores this parameter.</p>
 </dd>
 </dl>
 
@@ -86,38 +86,25 @@ NTSTATUS WdfDmaEnablerConfigureSystemProfile(
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl><p>The driver supplied NULL in the <i>ProfileConfig</i> parameter.</p><dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl><p>The <b>Size</b> member of the structure pointed to by the <i>ProfileConfig</i> parameter is not equal to the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439495">WDF_DMA_SYSTEM_PROFILE_CONFIG</a> structure.</p><dl>
+</dl><p>The <b>Size</b> member of the structure pointed to by the <i>ProfileConfig</i> parameter is not equal to the size of the <a href="..\wdfdmaenabler\ns-wdfdmaenabler--wdf-dma-system-profile-config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a> structure.</p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl><p>The <b>DmaDescriptor</b> member of the structure pointed to by the <i>ProfileConfig</i> parameter is NULL or the <i>ConfigDirection</i> parameter contains an invalid value.</p>
 
 <p> </p>
 
 ## -remarks
-<p>Before calling <b>WdfDmaEnablerConfigureSystemProfile</b>, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff546983">WdfDmaEnablerCreate</a> to create the enabler object.</p>
+<p>Before calling <b>WdfDmaEnablerConfigureSystemProfile</b>, the driver must call <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a> to create the enabler object.</p>
 
 <p>A driver typically calls <b>WdfDmaEnablerConfigureSystemProfile</b> from its <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-prepare-hardware.md">EvtDevicePrepareHardware</a> callback function.</p>
 
-<p>If your driver specified a duplex profile when it called <a href="https://msdn.microsoft.com/library/windows/hardware/ff546983">WdfDmaEnablerCreate</a>, the <b>WdfDmaEnablerConfigureSystemProfile</b> method's <i>ConfigDirection</i> parameter's value must be <b>WdfDmaDirectionReadFromDevice</b> to obtain the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544062">DMA_ADAPTER</a> structure for read operations and <b>WdfDmaDirectionWriteToDevice</b> to obtain the <b>DMA_ADAPTER</b> structure for write operations.</p>
+<p>If your driver specified a duplex profile when it called <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>, the <b>WdfDmaEnablerConfigureSystemProfile</b> method's <i>ConfigDirection</i> parameter's value must be <b>WdfDmaDirectionReadFromDevice</b> to obtain the <a href="..\ntddk\ns-ntddk--dma-adapter.md">DMA_ADAPTER</a> structure for read operations and <b>WdfDmaDirectionWriteToDevice</b> to obtain the <b>DMA_ADAPTER</b> structure for write operations.</p>
 
 <p>If the DMA enabler is a duplex enabler, the driver must initialize a particular direction before it can use it.  </p>
 
 <p> If your driver did not specify a duplex profile, the driver can specify either <b>WdfDmaDirectionReadFromDevice</b> or <b>WdfDmaDirectionWriteToDevice</b>.
  </p>
 
-<p>The following code example is from a driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-prepare-hardware.md">EvtDevicePrepareHardware</a> callback function. This example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439495">WDF_DMA_SYSTEM_PROFILE_CONFIG</a> structure and calls <b>WdfDmaEnablerConfigureSystemProfile</b>.</p>
-
-<p>Before calling <b>WdfDmaEnablerConfigureSystemProfile</b>, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff546983">WdfDmaEnablerCreate</a> to create the enabler object.</p>
-
-<p>A driver typically calls <b>WdfDmaEnablerConfigureSystemProfile</b> from its <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-prepare-hardware.md">EvtDevicePrepareHardware</a> callback function.</p>
-
-<p>If your driver specified a duplex profile when it called <a href="https://msdn.microsoft.com/library/windows/hardware/ff546983">WdfDmaEnablerCreate</a>, the <b>WdfDmaEnablerConfigureSystemProfile</b> method's <i>ConfigDirection</i> parameter's value must be <b>WdfDmaDirectionReadFromDevice</b> to obtain the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544062">DMA_ADAPTER</a> structure for read operations and <b>WdfDmaDirectionWriteToDevice</b> to obtain the <b>DMA_ADAPTER</b> structure for write operations.</p>
-
-<p>If the DMA enabler is a duplex enabler, the driver must initialize a particular direction before it can use it.  </p>
-
-<p> If your driver did not specify a duplex profile, the driver can specify either <b>WdfDmaDirectionReadFromDevice</b> or <b>WdfDmaDirectionWriteToDevice</b>.
- </p>
-
-<p>The following code example is from a driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-prepare-hardware.md">EvtDevicePrepareHardware</a> callback function. This example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439495">WDF_DMA_SYSTEM_PROFILE_CONFIG</a> structure and calls <b>WdfDmaEnablerConfigureSystemProfile</b>.</p>
+<p>The following code example is from a driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-prepare-hardware.md">EvtDevicePrepareHardware</a> callback function. This example initializes a <a href="..\wdfdmaenabler\ns-wdfdmaenabler--wdf-dma-system-profile-config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a> structure and calls <b>WdfDmaEnablerConfigureSystemProfile</b>.</p>
 
 ## -requirements
 <table>
@@ -180,7 +167,7 @@ NTSTATUS WdfDmaEnablerConfigureSystemProfile(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>
 </td>
 </tr>
 </table>
@@ -188,18 +175,18 @@ NTSTATUS WdfDmaEnablerConfigureSystemProfile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546983">WdfDmaEnablerCreate</a>
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
 </dt>
 <dt>
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf-dma-enabler-config-init.md">WDF_DMA_ENABLER_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551290">WDF_DMA_ENABLER_CONFIG</a>
+<a href="..\wdfdmaenabler\ns-wdfdmaenabler--wdf-dma-enabler-config.md">WDF_DMA_ENABLER_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439499">WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT</a>
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf-dma-system-profile-config-init.md">WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaEnablerConfigureSystemProfile method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaEnablerConfigureSystemProfile method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

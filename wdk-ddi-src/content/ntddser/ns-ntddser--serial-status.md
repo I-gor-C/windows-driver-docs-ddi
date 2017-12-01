@@ -90,7 +90,7 @@ typedef struct _SERIAL_STATUS {
 </tr>
 </table>
 <p> </p>
-<p>After the serial controller driver supplies the accumulated SERIAL_ERROR_<i>XXX</i> flags to satisfy an <a href="https://msdn.microsoft.com/library/windows/hardware/ff546562">IOCTL_SERIAL_GET_COMMSTATUS</a> request, the driver resets the flags to zero.</p>
+<p>After the serial controller driver supplies the accumulated SERIAL_ERROR_<i>XXX</i> flags to satisfy an <a href="..\ntddser\ni-ntddser-ioctl-serial-get-commstatus.md">IOCTL_SERIAL_GET_COMMSTATUS</a> request, the driver resets the flags to zero.</p>
 </dd>
 
 ### -field <b>HoldReasons</b>
@@ -152,12 +152,12 @@ typedef struct _SERIAL_STATUS {
 ### -field <b>WaitForImmediate</b>
 
 <dd>
-<p>Whether the serial port is waiting to transmit an immediate character. This member is <b>TRUE</b> if the serial port is waiting to transmit an immediate character. Otherwise, it is <b>FALSE</b>. Transmission of an immediate character might be delayed if any flag bit other than SERIAL_TX_WAITING_FOR_XON is set in the <b>HoldReasons</b> member. For more information about immediate characters, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546620">IOCTL_SERIAL_IMMEDIATE_CHAR</a>.</p>
+<p>Whether the serial port is waiting to transmit an immediate character. This member is <b>TRUE</b> if the serial port is waiting to transmit an immediate character. Otherwise, it is <b>FALSE</b>. Transmission of an immediate character might be delayed if any flag bit other than SERIAL_TX_WAITING_FOR_XON is set in the <b>HoldReasons</b> member. For more information about immediate characters, see <a href="..\ntddser\ni-ntddser-ioctl-serial-immediate-char.md">IOCTL_SERIAL_IMMEDIATE_CHAR</a>.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546562">IOCTL_SERIAL_GET_COMMSTATUS</a> request.</p>
+<p>This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl-serial-get-commstatus.md">IOCTL_SERIAL_GET_COMMSTATUS</a> request.</p>
 
 ## -requirements
 <table>
@@ -176,10 +176,10 @@ typedef struct _SERIAL_STATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546562">IOCTL_SERIAL_GET_COMMSTATUS</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-get-commstatus.md">IOCTL_SERIAL_GET_COMMSTATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546620">IOCTL_SERIAL_IMMEDIATE_CHAR</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-immediate-char.md">IOCTL_SERIAL_IMMEDIATE_CHAR</a>
 </dt>
 </dl>
 <p> </p>

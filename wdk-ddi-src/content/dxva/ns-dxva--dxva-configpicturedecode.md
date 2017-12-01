@@ -220,7 +220,7 @@ typedef struct _DXVA_ConfigPictureDecode {
 ### -field <b>bConfig4GroupedCoefs</b>
 
 <dd>
-<p>A value of 1 indicates that transform coefficients for off-host IDCT will be sent using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564053">DXVA_TCoef4Group</a> structure rather than the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564060">DXVA_TCoefSingle</a> structure. This is zero if <b>bConfigResidDiffAccelerator</b> is zero or if <b>bConfigHostInverseScan</b> is 1.</p>
+<p>A value of 1 indicates that transform coefficients for off-host IDCT will be sent using the <a href="..\dxva\ns-dxva--dxva-tcoef4group.md">DXVA_TCoef4Group</a> structure rather than the <a href="..\dxva\ns-dxva--dxva-tcoefsingle.md">DXVA_TCoefSingle</a> structure. This is zero if <b>bConfigResidDiffAccelerator</b> is zero or if <b>bConfigHostInverseScan</b> is 1.</p>
 <p>The preferred value for an accelerator to support is zero if <b>bConfigResidDiffAccelerator</b> is 1.</p>
 </dd>
 </dl>
@@ -245,22 +245,22 @@ typedef struct _DXVA_ConfigPictureDecode {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564053">DXVA_TCoef4Group</a>
+<a href="..\dxva\ns-dxva--dxva-tcoef4group.md">DXVA_TCoef4Group</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564060">DXVA_TCoefSingle</a>
+<a href="..\dxva\ns-dxva--dxva-tcoefsingle.md">DXVA_TCoefSingle</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563983">DXVA_MBctrl_I_HostResidDiff_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-i-hostresiddiff-1.md">DXVA_MBctrl_I_HostResidDiff_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563989">DXVA_MBctrl_I_OffHostIDCT_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-i-offhostidct-1.md">DXVA_MBctrl_I_OffHostIDCT_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563993">DXVA_MBctrl_P_HostResidDiff_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-p-hostresiddiff-1.md">DXVA_MBctrl_P_HostResidDiff_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563997">DXVA_MBctrl_P_OffHostIDCT_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-p-offhostidct-1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>
 </dt>
 </dl>
 <p> </p>

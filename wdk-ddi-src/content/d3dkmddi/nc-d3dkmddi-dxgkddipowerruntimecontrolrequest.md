@@ -110,7 +110,7 @@ _Check_return_ NTSTATUS APIENTRY* DxgkDdiPowerRuntimeControlRequest(
 <p>Returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in Ntstatus.h.</p>
 
 ## -remarks
-<p>The operating system calls <i>DxgkDdiPowerRuntimeControlRequest</i> only if the display miniport driver indicates support by setting <a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>.<b>SupportRuntimePowerManagement</b> to <b>TRUE</b>.</p>
+<p>The operating system calls <i>DxgkDdiPowerRuntimeControlRequest</i> only if the display miniport driver indicates support by setting <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a>.<b>SupportRuntimePowerManagement</b> to <b>TRUE</b>.</p>
 
 <p>The PEP uses the following GUIDs that are defined in D3dkmddi.h to exchange information with the display miniport driver. The display port driver uses these  GUIDs to issue Event Tracing for Windows (ETW) events, which are useful to profile driver performance issues.<p></p>
 <dl>
@@ -153,44 +153,9 @@ _Check_return_ NTSTATUS APIENTRY* DxgkDdiPowerRuntimeControlRequest(
 </dl>
 </p>
 
-<p></p><dl>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_UP"></a><a id="guid_dxgkddi_power_voltage_up"></a>GUID_DXGKDDI_POWER_VOLTAGE_UP</dt>
-<dd>
+<p></p>
+
 <p>Increase the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_DOWN"></a><a id="guid_dxgkddi_power_voltage_down"></a>GUID_DXGKDDI_POWER_VOLTAGE_DOWN</dt>
-<dd>
-<p>Decrease the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE"></a><a id="guid_dxgkddi_power_voltage"></a>GUID_DXGKDDI_POWER_VOLTAGE</dt>
-<dd>
-<p>Change the voltage, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_UP"></a><a id="guid_dxgkddi_power_clock_up"></a>GUID_DXGKDDI_POWER_CLOCK_UP</dt>
-<dd>
-<p>Increase the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_DOWN"></a><a id="guid_dxgkddi_power_clock_down"></a>GUID_DXGKDDI_POWER_CLOCK_DOWN</dt>
-<dd>
-<p>Decrease the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK"></a><a id="guid_dxgkddi_power_clock"></a>GUID_DXGKDDI_POWER_CLOCK</dt>
-<dd>
-<p>Change the clock setting, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_UP"></a><a id="guid_dxgkddi_power_bandwidth_up"></a>GUID_DXGKDDI_POWER_BANDWIDTH_UP</dt>
-<dd>
-<p>Increase the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_DOWN"></a><a id="guid_dxgkddi_power_bandwidth_down"></a>GUID_DXGKDDI_POWER_BANDWIDTH_DOWN</dt>
-<dd>
-<p>Decrease the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH"></a><a id="guid_dxgkddi_power_bandwidth"></a>GUID_DXGKDDI_POWER_BANDWIDTH</dt>
-<dd>
-<p>Change the bandwidth, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-</dl><p>Increase the voltage.</p>
 
 <p>Decrease the voltage.</p>
 
@@ -236,191 +201,7 @@ _Check_return_ NTSTATUS APIENTRY* DxgkDdiPowerRuntimeControlRequest(
 </dl>
 </p>
 
-<p></p><dl>
-<dt><a id="GUID_DXGKDDI_POWER_MANAGEMENT_PREPARE_TO_START"></a><a id="guid_dxgkddi_power_management_prepare_to_start"></a>GUID_DXGKDDI_POWER_MANAGEMENT_PREPARE_TO_START</dt>
-<dd>
 <p>Used after the DirectX graphics kernel subsystem registers the device for runtime power management, but before the device is started. After this function has been called with this GUID, the display miniport driver can call these functions:</p>
-<ul>
-<li>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentactive.md">DxgkCbSetPowerComponentActive</a>
-</li>
-<li>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentlatency.md">DxgkCbSetPowerComponentLatency</a>
-</li>
-<li>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentresidency.md">DxgkCbSetPowerComponentResidency</a>
-</li>
-</ul>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_MANAGEMENT_STARTED"></a><a id="guid_dxgkddi_power_management_started"></a>GUID_DXGKDDI_POWER_MANAGEMENT_STARTED</dt>
-<dd>
-<p>Used after the DirectX graphics kernel subsystem starts runtime power management. After this function has been called with this GUID, the display miniport driver can call any power runtime functions.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_MANAGEMENT_STOPPED"></a><a id="guid_dxgkddi_power_management_stopped"></a>GUID_DXGKDDI_POWER_MANAGEMENT_STOPPED</dt>
-<dd>
-<p>Used immediately before the DirectX graphics kernel subsystem unregisters the device for runtime power management. After this function has been called with this GUID, the display miniport driver should not call any power runtime functions.</p>
-</dd>
-</dl><p>Used after the DirectX graphics kernel subsystem registers the device for runtime power management, but before the device is started. After this function has been called with this GUID, the display miniport driver can call these functions:</p>
-
-<p>Used after the DirectX graphics kernel subsystem starts runtime power management. After this function has been called with this GUID, the display miniport driver can call any power runtime functions.</p>
-
-<p>Used immediately before the DirectX graphics kernel subsystem unregisters the device for runtime power management. After this function has been called with this GUID, the display miniport driver should not call any power runtime functions.</p>
-
-<p>This function can be called simultaneously from multiple execution threads.</p>
-
-<p>The operating system guarantees that this function follows the zero level synchronization mode as defined in <a href="https://msdn.microsoft.com/2baf91e8-fafb-40e2-a24c-cbf04fe45274">Threading and Synchronization Zero Level</a>.</p>
-
-<p>The operating system calls <i>DxgkDdiPowerRuntimeControlRequest</i> only if the display miniport driver indicates support by setting <a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>.<b>SupportRuntimePowerManagement</b> to <b>TRUE</b>.</p>
-
-<p>The PEP uses the following GUIDs that are defined in D3dkmddi.h to exchange information with the display miniport driver. The display port driver uses these  GUIDs to issue Event Tracing for Windows (ETW) events, which are useful to profile driver performance issues.<p></p>
-<dl>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_UP"></a><a id="guid_dxgkddi_power_voltage_up"></a>GUID_DXGKDDI_POWER_VOLTAGE_UP</dt>
-<dd>
-<p>Increase the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_DOWN"></a><a id="guid_dxgkddi_power_voltage_down"></a>GUID_DXGKDDI_POWER_VOLTAGE_DOWN</dt>
-<dd>
-<p>Decrease the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE"></a><a id="guid_dxgkddi_power_voltage"></a>GUID_DXGKDDI_POWER_VOLTAGE</dt>
-<dd>
-<p>Change the voltage, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_UP"></a><a id="guid_dxgkddi_power_clock_up"></a>GUID_DXGKDDI_POWER_CLOCK_UP</dt>
-<dd>
-<p>Increase the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_DOWN"></a><a id="guid_dxgkddi_power_clock_down"></a>GUID_DXGKDDI_POWER_CLOCK_DOWN</dt>
-<dd>
-<p>Decrease the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK"></a><a id="guid_dxgkddi_power_clock"></a>GUID_DXGKDDI_POWER_CLOCK</dt>
-<dd>
-<p>Change the clock setting, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_UP"></a><a id="guid_dxgkddi_power_bandwidth_up"></a>GUID_DXGKDDI_POWER_BANDWIDTH_UP</dt>
-<dd>
-<p>Increase the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_DOWN"></a><a id="guid_dxgkddi_power_bandwidth_down"></a>GUID_DXGKDDI_POWER_BANDWIDTH_DOWN</dt>
-<dd>
-<p>Decrease the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH"></a><a id="guid_dxgkddi_power_bandwidth"></a>GUID_DXGKDDI_POWER_BANDWIDTH</dt>
-<dd>
-<p>Change the bandwidth, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-</dl>
-</p>
-
-<p></p><dl>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_UP"></a><a id="guid_dxgkddi_power_voltage_up"></a>GUID_DXGKDDI_POWER_VOLTAGE_UP</dt>
-<dd>
-<p>Increase the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_DOWN"></a><a id="guid_dxgkddi_power_voltage_down"></a>GUID_DXGKDDI_POWER_VOLTAGE_DOWN</dt>
-<dd>
-<p>Decrease the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE"></a><a id="guid_dxgkddi_power_voltage"></a>GUID_DXGKDDI_POWER_VOLTAGE</dt>
-<dd>
-<p>Change the voltage, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_UP"></a><a id="guid_dxgkddi_power_clock_up"></a>GUID_DXGKDDI_POWER_CLOCK_UP</dt>
-<dd>
-<p>Increase the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_DOWN"></a><a id="guid_dxgkddi_power_clock_down"></a>GUID_DXGKDDI_POWER_CLOCK_DOWN</dt>
-<dd>
-<p>Decrease the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK"></a><a id="guid_dxgkddi_power_clock"></a>GUID_DXGKDDI_POWER_CLOCK</dt>
-<dd>
-<p>Change the clock setting, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_UP"></a><a id="guid_dxgkddi_power_bandwidth_up"></a>GUID_DXGKDDI_POWER_BANDWIDTH_UP</dt>
-<dd>
-<p>Increase the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_DOWN"></a><a id="guid_dxgkddi_power_bandwidth_down"></a>GUID_DXGKDDI_POWER_BANDWIDTH_DOWN</dt>
-<dd>
-<p>Decrease the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH"></a><a id="guid_dxgkddi_power_bandwidth"></a>GUID_DXGKDDI_POWER_BANDWIDTH</dt>
-<dd>
-<p>Change the bandwidth, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-</dl><p>Increase the voltage.</p>
-
-<p>Decrease the voltage.</p>
-
-<p>Change the voltage, but the driver doesn't know if the change is an increase or decrease.</p>
-
-<p>Increase the clock setting.</p>
-
-<p>Decrease the clock setting.</p>
-
-<p>Change the clock setting, but the driver doesn't know if the change is an increase or decrease.</p>
-
-<p>Increase the bandwidth.</p>
-
-<p>Decrease the bandwidth.</p>
-
-<p>Change the bandwidth, but the driver doesn't know if the change is an increase or decrease.</p>
-
-<p>The DirectX graphics kernel subsystem uses the following GUIDs that are defined in D3dkmddi.h to notify the display miniport driver about certain events.<p></p>
-<dl>
-<dt><a id="GUID_DXGKDDI_POWER_MANAGEMENT_PREPARE_TO_START"></a><a id="guid_dxgkddi_power_management_prepare_to_start"></a>GUID_DXGKDDI_POWER_MANAGEMENT_PREPARE_TO_START</dt>
-<dd>
-<p>Used after the DirectX graphics kernel subsystem registers the device for runtime power management, but before the device is started. After this function has been called with this GUID, the display miniport driver can call these functions:</p>
-<ul>
-<li>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentactive.md">DxgkCbSetPowerComponentActive</a>
-</li>
-<li>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentlatency.md">DxgkCbSetPowerComponentLatency</a>
-</li>
-<li>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentresidency.md">DxgkCbSetPowerComponentResidency</a>
-</li>
-</ul>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_MANAGEMENT_STARTED"></a><a id="guid_dxgkddi_power_management_started"></a>GUID_DXGKDDI_POWER_MANAGEMENT_STARTED</dt>
-<dd>
-<p>Used after the DirectX graphics kernel subsystem starts runtime power management. After this function has been called with this GUID, the display miniport driver can call any power runtime functions.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_MANAGEMENT_STOPPED"></a><a id="guid_dxgkddi_power_management_stopped"></a>GUID_DXGKDDI_POWER_MANAGEMENT_STOPPED</dt>
-<dd>
-<p>Used immediately before the DirectX graphics kernel subsystem unregisters the device for runtime power management. After this function has been called with this GUID, the display miniport driver should not call any power runtime functions.</p>
-</dd>
-</dl>
-</p>
-
-<p></p><dl>
-<dt><a id="GUID_DXGKDDI_POWER_MANAGEMENT_PREPARE_TO_START"></a><a id="guid_dxgkddi_power_management_prepare_to_start"></a>GUID_DXGKDDI_POWER_MANAGEMENT_PREPARE_TO_START</dt>
-<dd>
-<p>Used after the DirectX graphics kernel subsystem registers the device for runtime power management, but before the device is started. After this function has been called with this GUID, the display miniport driver can call these functions:</p>
-<ul>
-<li>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentactive.md">DxgkCbSetPowerComponentActive</a>
-</li>
-<li>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentlatency.md">DxgkCbSetPowerComponentLatency</a>
-</li>
-<li>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentresidency.md">DxgkCbSetPowerComponentResidency</a>
-</li>
-</ul>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_MANAGEMENT_STARTED"></a><a id="guid_dxgkddi_power_management_started"></a>GUID_DXGKDDI_POWER_MANAGEMENT_STARTED</dt>
-<dd>
-<p>Used after the DirectX graphics kernel subsystem starts runtime power management. After this function has been called with this GUID, the display miniport driver can call any power runtime functions.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_MANAGEMENT_STOPPED"></a><a id="guid_dxgkddi_power_management_stopped"></a>GUID_DXGKDDI_POWER_MANAGEMENT_STOPPED</dt>
-<dd>
-<p>Used immediately before the DirectX graphics kernel subsystem unregisters the device for runtime power management. After this function has been called with this GUID, the display miniport driver should not call any power runtime functions.</p>
-</dd>
-</dl><p>Used after the DirectX graphics kernel subsystem registers the device for runtime power management, but before the device is started. After this function has been called with this GUID, the display miniport driver can call these functions:</p>
 
 <p>Used after the DirectX graphics kernel subsystem starts runtime power management. After this function has been called with this GUID, the display miniport driver can call any power runtime functions.</p>
 
@@ -481,10 +262,10 @@ _Check_return_ NTSTATUS APIENTRY* DxgkDdiPowerRuntimeControlRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentactive.md">DxgkCbSetPowerComponentActive</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndiswaitevent.htm
 old-project: netvista
 ms.assetid: fefdb56f-6689-4a4f-a198-6108190624f0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisWaitEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisWaitEvent (NDIS 5.1)) in Windows
-   Vista. Supported for NDIS 5.1 drivers (see 
-   NdisWaitEvent (NDIS 5.1)) in Windows
-   XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWaitEvent (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisWaitEvent (NDIS 5.1)) in Windows   XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -96,21 +92,6 @@ BOOLEAN NdisWaitEvent(
     <a href="..\ndis\nc-ndis-protocol-unbind-adapter-ex.md">
     ProtocolUnbindAdapterEx</a> functions.</p>
 
-<p><b>NdisWaitEvent</b> returns control to its caller when the given event is signaled or the specified 
-    <i>MsToWait</i> interval expires, whichever is sooner. If the event is currently in the 
-    <i>signaled</i> state when this call occurs, 
-    <b>NdisWaitEvent</b> returns control immediately.</p>
-
-<p>A miniport driver typically calls 
-    <b>NdisWaitEvent</b> from its 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> and 
-    <a href="..\ndis\nc-ndis-miniport-halt.md">MiniportHaltEx</a> functions. A protocol
-    driver typically calls 
-    <b>NdisWaitEvent</b> from its 
-    <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a> and 
-    <a href="..\ndis\nc-ndis-protocol-unbind-adapter-ex.md">
-    ProtocolUnbindAdapterEx</a> functions.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -168,7 +149,7 @@ BOOLEAN NdisWaitEvent(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -186,13 +167,13 @@ BOOLEAN NdisWaitEvent(
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562732">NdisInitializeEvent</a>
+<a href="..\ndis\nf-ndis-ndisinitializeevent.md">NdisInitializeEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564526">NdisResetEvent</a>
+<a href="..\ndis\nf-ndis-ndisresetevent.md">NdisResetEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564539">NdisSetEvent</a>
+<a href="..\ndis\nf-ndis-ndissetevent.md">NdisSetEvent</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
@@ -203,4 +184,4 @@ BOOLEAN NdisWaitEvent(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisWaitEvent function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisWaitEvent function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

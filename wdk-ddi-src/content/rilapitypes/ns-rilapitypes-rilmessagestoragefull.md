@@ -7,7 +7,7 @@ old-location: netvista\rilmessagestoragefull_2.htm
 old-project: netvista
 ms.assetid: fa0e5c57-7ceb-442d-95ea-971824c88298
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMESSAGESTORAGEFULL, RILMESSAGESTORAGEFULL
 ms.prod: windows-hardware
 ms.technology: windows-devices

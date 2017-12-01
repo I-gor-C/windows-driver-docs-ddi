@@ -78,7 +78,7 @@ typedef struct _PingIPAddress_IN {
 ### -field <b>Address</b>
 
 <dd>
-<p>The IP address to which the ping request must be sent. The IP address is provided by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure.</p>
+<p>The IP address to which the ping request must be sent. The IP address is provided by the <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure.</p>
 </dd>
 </dl>
 
@@ -102,7 +102,7 @@ typedef struct _PingIPAddress_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a>
 </dt>
 </dl>
 <p> </p>

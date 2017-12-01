@@ -7,7 +7,7 @@ old-location: stream\avc_multifunc_irb.htm
 old-project: stream
 ms.assetid: cd8090b1-47d7-4d82-86b3-757b0642c5fe
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: AVC_MULTIFUNC_IRB, AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -153,34 +153,34 @@ typedef struct _AVC_MULTIFUNC_IRB {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554183">AVC_PIN_COUNT</a>
+<a href="..\avc\ns-avc--avc-pin-count.md">AVC_PIN_COUNT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554185">AVC_PIN_DESCRIPTOR</a>
+<a href="..\avc\ns-avc--avc-pin-descriptor.md">AVC_PIN_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554190">AVC_PRECONNECT_INFO</a>
+<a href="..\avc\ns-avc--avc-preconnect-info.md">AVC_PRECONNECT_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554192">AVC_SETCONNECT_INFO</a>
+<a href="..\avc\ns-avc--avc-setconnect-info.md">AVC_SETCONNECT_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554187">AVC_PIN_ID</a>
+<a href="..\avc\ns-avc--avc-pin-id.md">AVC_PIN_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554143">AVC_EXT_PLUG_COUNTS</a>
+<a href="..\avc\ns-avc--avc-ext-plug-counts.md">AVC_EXT_PLUG_COUNTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554200">AVC_UNIQUE_ID</a>
+<a href="..\avc\ns-avc--avc-unique-id.md">AVC_UNIQUE_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554180">AVC_PEER_DO_LOCATOR</a>
+<a href="..\avc\ns-avc--avc-peer-do-locator.md">AVC_PEER_DO_LOCATOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554179">AVC_PEER_DO_LIST</a>
+<a href="..\avc\ns-avc--avc-peer-do-list.md">AVC_PEER_DO_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554199">AVC_SUBUNIT_INFO_BLOCK</a>
+<a href="..\avc\ns-avc--avc-subunit-info-block.md">AVC_SUBUNIT_INFO_BLOCK</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554158">AVC_FUNCTION_GET_PIN_COUNT</a>
@@ -221,4 +221,4 @@ typedef struct _AVC_MULTIFUNC_IRB {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_MULTIFUNC_IRB structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_MULTIFUNC_IRB structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

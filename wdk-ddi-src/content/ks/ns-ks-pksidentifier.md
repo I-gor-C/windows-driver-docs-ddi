@@ -7,7 +7,7 @@ old-location: stream\ksidentifier.htm
 old-project: stream
 ms.assetid: b89977da-d3ac-4f1f-867e-b3b7912b955d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSIDENTIFIER, KSIDENTIFIER, *PKSIDENTIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,7 +87,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561744">KSEVENT</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff563398">KSMETHOD</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> structures are aliases for the KSIDENTIFIER structure. As such, their definitions are identical. </p>
+<p>The <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>, <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>, and <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structures are aliases for the KSIDENTIFIER structure. As such, their definitions are identical. </p>
 
 <p>The use of an ID within the set allows one to perform a single large compare for a set identifier, then smaller quick compares (for example, by using a switch statement for identifiers within a set). For example, a <i>property set</i> is referred to by a unique GUID identifier, and properties within that set are referred to by the short ID.</p>
 
@@ -110,15 +110,15 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561744">KSEVENT</a>
+<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563398">KSMETHOD</a>
+<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSIDENTIFIER structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSIDENTIFIER structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

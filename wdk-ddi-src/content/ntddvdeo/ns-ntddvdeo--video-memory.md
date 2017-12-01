@@ -57,18 +57,18 @@ typedef struct _VIDEO_MEMORY {
 ### -field <b>RequestedVirtualAddress</b>
 
 <dd>
-<p>Pointer to the requested virtual address for either the video memory, or the base of video memory, depending on whether <a href="https://msdn.microsoft.com/library/windows/hardware/ff567812">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff568153">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a> is using this structure.</p>
+<p>Pointer to the requested virtual address for either the video memory, or the base of video memory, depending on whether <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-map-video-memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a> or <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-unmap-video-memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a> is using this structure.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>VIDEO_MEMORY is used as an input structure to two IOCTLs: <a href="https://msdn.microsoft.com/library/windows/hardware/ff567812">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff568153">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>.</p>
+<p>VIDEO_MEMORY is used as an input structure to two IOCTLs: <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-map-video-memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>, and <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-unmap-video-memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>.</p>
 
 <p>When VIDEO_MEMORY is used with IOCTL_VIDEO_MAP_VIDEO_MEMORY, <b>RequestedVirtualAddress</b> points to the requested virtual address for the video memory. In this case, the value is optional. If zero is specified, the operating system will choose an appropriate location.</p>
 
 <p>When VIDEO_MEMORY is used with IOCTL_VIDEO_UNMAP_VIDEO_MEMORY, <b>RequestedVirtualAddress</b> points to the virtual address of the base of video memory. In this case, the size is implicit since it cannot change (you cannot add video memory dynamically, so it must be the same size as when it was mapped).</p>
 
-<p>For structures used in mapping into user-mode video memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff570548">VIDEO_SHARE_MEMORY</a> AND <a href="https://msdn.microsoft.com/library/windows/hardware/ff570549">VIDEO_SHARE_MEMORY_INFORMATION</a>.</p>
+<p>For structures used in mapping into user-mode video memory, see <a href="..\ntddvdeo\ns-ntddvdeo--video-share-memory.md">VIDEO_SHARE_MEMORY</a> AND <a href="..\ntddvdeo\ns-ntddvdeo--video-share-memory-information.md">VIDEO_SHARE_MEMORY_INFORMATION</a>.</p>
 
 ## -requirements
 <table>
@@ -87,13 +87,13 @@ typedef struct _VIDEO_MEMORY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567812">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-map-video-memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568153">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-unmap-video-memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570507">VIDEO_MEMORY_INFORMATION</a>
+<a href="..\ntddvdeo\ns-ntddvdeo--video-memory-information.md">VIDEO_MEMORY_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

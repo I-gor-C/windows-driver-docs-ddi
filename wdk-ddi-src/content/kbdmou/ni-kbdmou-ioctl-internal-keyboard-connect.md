@@ -229,7 +229,7 @@ Kbfiltr is already connected (the filter driver supports only one connect reques
 <a href="..\kbdmou\ns-kbdmou--connect-data.md">CONNECT_DATA (Kbdclass)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541238">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a>
+<a href="..\ntdd8042\ni-ntdd8042-ioctl-internal-i8042-hook-keyboard.md">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/02815805-47cf-454c-8117-f5686a855e25">KeyboardClassServiceCallback</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndismallocateport.htm
 old-project: netvista
 ms.assetid: ca3a2a12-ea80-4f77-9742-b0440fb441f7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMAllocatePort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -109,29 +109,7 @@ NDIS_STATUS NdisMAllocatePort(
     port.</p>
 
 <p>After a port is no longer required, the miniport driver should call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563588">NdisMFreePort</a> function to free the port.</p>
-
-<p>The 
-    <b>NdisMAllocatePort</b> function allocates resources and a port number for a port that is associated with
-    a miniport adapter. The port is not active until the miniport driver issues a 
-    <b>NetEventPortActivation</b> Plug and Play (PnP) event for the port.</p>
-
-<p>After the miniport driver activates the port, NDIS generates a PnP notification for the overlying
-    drivers. If an overlying driver or user-mode application issues the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff569583">OID_GEN_ENUMERATE_PORTS</a> OID to
-    enumerate a miniport adapter's ports, NDIS does not include non-active allocated ports in the list of the
-    ports.</p>
-
-<p>When 
-    <b>NdisMAllocatePort</b> successfully returns, the 
-    <b>PortNumber</b> member of the 
-    <a href="..\ntddndis\ns-ntddndis--ndis-port-characteristics.md">
-    NDIS_PORT_CHARACTERISTICS</a> structure that the 
-    <i>PortCharacteristics</i> parameter specifies is set to the port number that NDIS assigned to the
-    port.</p>
-
-<p>After a port is no longer required, the miniport driver should call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563588">NdisMFreePort</a> function to free the port.</p>
+    <a href="..\ndis\nf-ndis-ndismfreeport.md">NdisMFreePort</a> function to free the port.</p>
 
 ## -requirements
 <table>
@@ -189,10 +167,10 @@ NDIS_STATUS NdisMAllocatePort(
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566791">NDIS_PORT_CHARACTERISTICS</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-port-characteristics.md">NDIS_PORT_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563588">NdisMFreePort</a>
+<a href="..\ndis\nf-ndis-ndismfreeport.md">NdisMFreePort</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569583">OID_GEN_ENUMERATE_PORTS</a>
@@ -203,4 +181,4 @@ NDIS_STATUS NdisMAllocatePort(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocatePort function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocatePort function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

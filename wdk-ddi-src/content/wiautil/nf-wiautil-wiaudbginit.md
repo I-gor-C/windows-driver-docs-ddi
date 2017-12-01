@@ -68,8 +68,6 @@ void __stdcall wiauDbgInit(
 ## -remarks
 <p>If the <b>wiauDbgInit</b> function not called, all DLLs loaded by a process inherit the debug flags of that process. </p>
 
-<p>If the <b>wiauDbgInit</b> function not called, all DLLs loaded by a process inherit the debug flags of that process. </p>
-
 ## -requirements
 <table>
 <tr>

@@ -7,7 +7,7 @@ old-location: kernel\wnode_event_item.htm
 old-project: kernel
 ms.assetid: 1805d174-ac10-4e76-9e3f-e9e156b769ec
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: tagWNODE_EVENT_ITEM, WNODE_EVENT_ITEM, *PWNODE_EVENT_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,18 +58,18 @@ typedef struct tagWNODE_EVENT_ITEM {
 ### -field <b>WnodeHeader</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566375">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.</p>
+<p>Specifies a <a href="..\wmistr\ns-wmistr--wnode-header.md">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>WnodeHeader</b> member of the <b>WNODE_EVENT_ITEM</b> structure is followed by a structure whose type depends on the flags that are set in <b>WnodeHeader</b>. Possibilities include <a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff566378">WNODE_SINGLE_ITEM</a>. For more information about the flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566375">WNODE_HEADER</a>.</p>
+<p>The <b>WnodeHeader</b> member of the <b>WNODE_EVENT_ITEM</b> structure is followed by a structure whose type depends on the flags that are set in <b>WnodeHeader</b>. Possibilities include <a href="kernel.wnode_all_data">WNODE_ALL_DATA</a>, <a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a>, and <a href="kernel.wnode_single_item">WNODE_SINGLE_ITEM</a>. For more information about the flags, see <a href="..\wmistr\ns-wmistr--wnode-header.md">WNODE_HEADER</a>.</p>
 
-<p>The <b>ProviderId</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566375">WNODE_HEADER</a> structure for use in a <b>WNODE_EVENT_ITEM</b> structure should be initialized using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550433">IoWMIDeviceObjectToProviderId</a>.</p>
+<p>The <b>ProviderId</b> member of the <a href="..\wmistr\ns-wmistr--wnode-header.md">WNODE_HEADER</a> structure for use in a <b>WNODE_EVENT_ITEM</b> structure should be initialized using <a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWMIDeviceObjectToProviderId</a>.</p>
 
-<p>A driver generates only events that it has previously enabled in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550859">IRP_MN_ENABLE_EVENTS</a> request. To generate an event, a driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550520">IoWMIWriteEvent</a> and passes a pointer to the <b>WNODE_EVENT_ITEM</b>. WMI queues the event for delivery to all data consumers registered for that event.</p>
+<p>A driver generates only events that it has previously enabled in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550859">IRP_MN_ENABLE_EVENTS</a> request. To generate an event, a driver calls <a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWMIWriteEvent</a> and passes a pointer to the <b>WNODE_EVENT_ITEM</b>. WMI queues the event for delivery to all data consumers registered for that event.</p>
 
-<p>For best performance, events should be small in size. However, if the amount of data for an event exceeds the maximum size defined in the registry, a driver can pass a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566374">WNODE_EVENT_REFERENCE</a>, which WMI uses to query for the related <b>WNODE_EVENT_ITEM</b>. For more information about defining and generating WMI events, see <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a>.</p>
+<p>For best performance, events should be small in size. However, if the amount of data for an event exceeds the maximum size defined in the registry, a driver can pass a <a href="kernel.wnode_event_reference">WNODE_EVENT_REFERENCE</a>, which WMI uses to query for the related <b>WNODE_EVENT_ITEM</b>. For more information about defining and generating WMI events, see <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a>.</p>
 
 ## -requirements
 <table>
@@ -88,30 +88,30 @@ typedef struct tagWNODE_EVENT_ITEM {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550520">IoWMIWriteEvent</a>
+<a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWMIWriteEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550433">IoWMIDeviceObjectToProviderId</a>
+<a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWMIDeviceObjectToProviderId</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550859">IRP_MN_ENABLE_EVENTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a>
+<a href="kernel.wnode_all_data">WNODE_ALL_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566374">WNODE_EVENT_REFERENCE</a>
+<a href="kernel.wnode_event_reference">WNODE_EVENT_REFERENCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566375">WNODE_HEADER</a>
+<a href="..\wmistr\ns-wmistr--wnode-header.md">WNODE_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a>
+<a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566378">WNODE_SINGLE_ITEM</a>
+<a href="kernel.wnode_single_item">WNODE_SINGLE_ITEM</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_EVENT_ITEM structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_EVENT_ITEM structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

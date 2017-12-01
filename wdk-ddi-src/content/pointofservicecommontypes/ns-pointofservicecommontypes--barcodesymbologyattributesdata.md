@@ -66,7 +66,7 @@ typedef struct _BarcodeSymbologyAttributesData {
 
 <dd>
 <p>The barcode symbology  to set or get attributes to or from.</p>
-<p>For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/dn757474">BarcodeSymbology</a> enumeration topic.</p>
+<p>For more information, see the <a href="pos.barcodesymbology">BarcodeSymbology</a> enumeration topic.</p>
 </dd>
 
 ### -field <b>IsCheckDigitValidationSupported</b>

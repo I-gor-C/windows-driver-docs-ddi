@@ -7,7 +7,7 @@ old-location: kernel\key_value_entry.htm
 old-project: kernel
 ms.assetid: 8a0e819e-6da7-4006-a276-9bfd324800d8
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: KEY_VALUE_ENTRY, KEY_VALUE_ENTRY, *PKEY_VALUE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>KEY_VALUE_ENTRY</b> structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560985">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a> structure to describe a single value entry for a registry key.</p>
+<p>The <b>KEY_VALUE_ENTRY</b> structure is used by the <a href="..\wdm\ns-wdm--reg-query-multiple-value-key-information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a> structure to describe a single value entry for a registry key.</p>
 
 
 ## -syntax
@@ -61,7 +61,7 @@ typedef struct _KEY_VALUE_ENTRY {
 ### -field <b>ValueName</b>
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains the name of the value entry.</p>
+<p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the name of the value entry.</p>
 </dd>
 
 ### -field <b>DataLength</b>
@@ -73,18 +73,18 @@ typedef struct _KEY_VALUE_ENTRY {
 ### -field <b>DataOffset</b>
 
 <dd>
-<p>Specifies the offset, in bytes, of the value entry's data within the buffer that is pointed to by the <b>ValueBuffer</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560985">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a>.</p>
+<p>Specifies the offset, in bytes, of the value entry's data within the buffer that is pointed to by the <b>ValueBuffer</b> member of <a href="..\wdm\ns-wdm--reg-query-multiple-value-key-information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a>.</p>
 </dd>
 
 ### -field <b>Type</b>
 
 <dd>
-<p>Specifies the type of the value entry's data. For a description of the possible values for <b>Type</b>, see the <i>Type</i> parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567109">ZwSetValueKey</a>.</p>
+<p>Specifies the type of the value entry's data. For a description of the possible values for <b>Type</b>, see the <i>Type</i> parameter of <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>ValueEntries</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560985">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a> points to an array of KEY_VALUE_ENTRY structures.</p>
+<p>The <b>ValueEntries</b> member of <a href="..\wdm\ns-wdm--reg-query-multiple-value-key-information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a> points to an array of KEY_VALUE_ENTRY structures.</p>
 
 ## -requirements
 <table>
@@ -111,12 +111,12 @@ typedef struct _KEY_VALUE_ENTRY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560985">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a>
+<a href="..\wdm\ns-wdm--reg-query-multiple-value-key-information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567109">ZwSetValueKey</a>
+<a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_VALUE_ENTRY structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_VALUE_ENTRY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

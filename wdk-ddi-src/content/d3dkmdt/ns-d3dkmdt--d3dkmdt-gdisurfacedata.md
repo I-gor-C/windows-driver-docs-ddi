@@ -74,7 +74,7 @@ typedef struct _D3DKMDT_GDISURFACEDATA {
 ### -field <b>Format</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface. The following formats are supported:</p>
+<p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface. The following formats are supported:</p>
 <dl>
 <dd>
 <p>D3DDDIFMT_A8B8G8R8</p>
@@ -92,13 +92,13 @@ typedef struct _D3DKMDT_GDISURFACEDATA {
 <p>D3DDDIFMT_A8</p>
 </dd>
 </dl>
-<p>The D3DDDIFMT_A8 format is used only for D3DKMDT_GDISURFACE_STAGING and D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE staging surface types from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546039">D3DKMDT_GDISURFACETYPE</a> enumeration.</p>
+<p>The D3DDDIFMT_A8 format is used only for D3DKMDT_GDISURFACE_STAGING and D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE staging surface types from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a> enumeration.</p>
 </dd>
 
 ### -field <b>Type</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546039">D3DKMDT_GDISURFACETYPE</a>-typed value that indicates the surface type.</p>
+<p>[in] A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>-typed value that indicates the surface type.</p>
 </dd>
 
 ### -field <b>Flags</b>
@@ -110,7 +110,7 @@ typedef struct _D3DKMDT_GDISURFACEDATA {
 ### -field <b>Pitch</b>
 
 <dd>
-<p>[out] The width of the surface, which includes padding, in bytes. The display miniport driver must return the pitch value for all allocations of <a href="https://msdn.microsoft.com/library/windows/hardware/ff546039">D3DKMDT_GDISURFACETYPE</a> type D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE,  D3DKMDT_GDISURFACE_EXISTINGSYSMEM, and D3DKMDT_GDISURFACE_TEXTURE_CROSSADAPTER.</p>
+<p>[out] The width of the surface, which includes padding, in bytes. The display miniport driver must return the pitch value for all allocations of <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a> type D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE,  D3DKMDT_GDISURFACE_EXISTINGSYSMEM, and D3DKMDT_GDISURFACE_TEXTURE_CROSSADAPTER.</p>
 </dd>
 </dl>
 
@@ -142,10 +142,10 @@ typedef struct _D3DKMDT_GDISURFACEDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546039">D3DKMDT_GDISURFACETYPE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>
 </dt>
 <dt>
 <a href="display.dxgkddigetstandardallocationdriverdata">DxgkDdiGetStandardAllocationDriverData</a>

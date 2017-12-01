@@ -67,8 +67,6 @@ VOID AtaPortBusChangeDetected(
 ## -remarks
 <p>The miniport driver uses this routine to report the arrival or removal of any device that is attached to the channel. In response, the port driver will initiate a re-scan to discover and initialize the device. </p>
 
-<p>The miniport driver uses this routine to report the arrival or removal of any device that is attached to the channel. In response, the port driver will initiate a re-scan to discover and initialize the device. </p>
-
 ## -requirements
 <table>
 <tr>

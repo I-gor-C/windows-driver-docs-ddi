@@ -108,7 +108,7 @@ typedef struct _D3DDDI_UNLOCKFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543394">D3DDDIARG_UNLOCK</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-unlock.md">D3DDDIARG_UNLOCK</a>
 </dt>
 </dl>
 <p> </p>

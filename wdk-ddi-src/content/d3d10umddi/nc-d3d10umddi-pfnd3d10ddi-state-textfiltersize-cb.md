@@ -70,8 +70,6 @@ void APIENTRY pfnStateTextFilterSizeCb(
 ## -remarks
 <p>The <b>pfnStateTextFilterSizeCb</b> function calls the user-mode display driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-settextfiltersize.md">SetTextFilterSize</a> function with the current monochrome convolution filter settings.</p>
 
-<p>The <b>pfnStateTextFilterSizeCb</b> function calls the user-mode display driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-settextfiltersize.md">SetTextFilterSize</a> function with the current monochrome convolution filter settings.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -110,7 +108,7 @@ void APIENTRY pfnStateTextFilterSizeCb(
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541820">D3D10DDI_CORELAYER_DEVICECALLBACKS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-corelayer-devicecallbacks.md">D3D10DDI_CORELAYER_DEVICECALLBACKS</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-settextfiltersize.md">SetTextFilterSize</a>

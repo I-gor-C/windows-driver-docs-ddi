@@ -7,7 +7,7 @@ old-location: kernel\adapterlistcontrol.htm
 old-project: kernel
 ms.assetid: 9fb49710-5d8c-4376-9898-7f0ae570ee94
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,25 +64,25 @@ VOID AdapterListControl(
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure. This is the device object for the target device, previously created by the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.</p>
+<p>Caller-supplied pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure. This is the device object for the target device, previously created by the driver's <a href="kernel.adddevice">AddDevice</a> routine.</p>
 </dd>
 
 ### -param <i>Irp</i> [in]
 
 <dd>
-<p>Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure that describes the I/O operation, if the driver has a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563858">StartIo</a> routine. Otherwise, not used.</p>
+<p>Caller-supplied pointer to an <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure that describes the I/O operation, if the driver has a <a href="kernel.startio">StartIo</a> routine. Otherwise, not used.</p>
 </dd>
 
 ### -param <i>ScatterGather</i> [in]
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563664">SCATTER_GATHER_LIST</a> structure describing scatter/gather regions.</p>
+<p>Caller-supplied pointer to a <a href="..\wdm\ns-wdm--scatter-gather-list.md">SCATTER_GATHER_LIST</a> structure describing scatter/gather regions.</p>
 </dd>
 
 ### -param <i>Context</i> [in]
 
 <dd>
-<p>Caller-supplied pointer to driver-defined context information, specified in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff540573">AllocateAdapterChannel</a>. </p>
+<p>Caller-supplied pointer to driver-defined context information, specified in a previous call to <a href="kernel.allocateadapterchannel">AllocateAdapterChannel</a>. </p>
 </dd>
 </dl>
 
@@ -90,19 +90,7 @@ VOID AdapterListControl(
 <p>None</p>
 
 ## -remarks
-<p>To register an <i>AdapterListControl</i> routine for a specific device object, a driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> to obtain an adapter object, then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff546531">GetScatterGatherList</a> to request use of the adapter and to supply the <i>AdapterListControl</i> routine's address. When the adapter is free, the system calls the <i>AdapterListControl</i> routine.</p>
-
-<p>To define an <i>AdapterListControl</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define an <i>AdapterListControl</i> callback routine that is named <code>MyAdapterListControl</code>, use the DRIVER_LIST_CONTROL type as shown in this code example:</p>
-
-<p>Then, implement your callback routine as follows:</p>
-
-<p>The DRIVER_LIST_CONTROL function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the DRIVER_LIST_CONTROL function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.</p>
-
-<p>For detailed information about implementing an <i>AdapterListControl</i> routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565510">Using Scatter/Gather DMA</a>. </p>
-
-<p>To register an <i>AdapterListControl</i> routine for a specific device object, a driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> to obtain an adapter object, then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff546531">GetScatterGatherList</a> to request use of the adapter and to supply the <i>AdapterListControl</i> routine's address. When the adapter is free, the system calls the <i>AdapterListControl</i> routine.</p>
+<p>To register an <i>AdapterListControl</i> routine for a specific device object, a driver must call <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> to obtain an adapter object, then call <a href="kernel.getscattergatherlist">GetScatterGatherList</a> to request use of the adapter and to supply the <i>AdapterListControl</i> routine's address. When the adapter is free, the system calls the <i>AdapterListControl</i> routine.</p>
 
 <p>To define an <i>AdapterListControl</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
 

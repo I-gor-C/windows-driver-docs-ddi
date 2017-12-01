@@ -79,7 +79,7 @@ HRESULT _stdcall wiasSetItemPropAttribs(
 ### -param <i>pwpi</i> [in]
 
 <dd>
-<p>Pointer to the first element of an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552751">WIA_PROPERTY_INFO</a> structures that contain the property values to be written.</p>
+<p>Pointer to the first element of an array of <a href="..\wiamindr_lh\ns-wiamindr-lh--wia-property-info.md">WIA_PROPERTY_INFO</a> structures that contain the property values to be written.</p>
 </dd>
 </dl>
 
@@ -101,37 +101,7 @@ HRESULT _stdcall wiasSetItemPropAttribs(
 
 <p>VT_UI1, VT_UI2, VT_UI4, VT_UI8, VT_I1, VT_I2, VT_I4, ,VT_I8, VT_R4, VT_R8, VT_BSTR</p>
 
-<p> </p>
-
-<p>Minidrivers should initialize complex properties using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549381">wiasSetPropertyAttributes</a> function.</p>
-
-<p>The minidriver can set the WIA_PROP_CACHEABLE flag on a property that does not change over time. By setting this flag on a property, the minidriver indicates that the WIA service can cache the property value. See the Windows SDK documentation for a list of all property attributes.</p>
-
-<p>It is important to remember that <b>wiasSetItemPropAttribs</b> returns an HRESULT, not a BOOLEAN. For example, if <b>wiasSetItemPropAttribs</b> returns 0, this value must be interpreted as S_OK rather than <b>FALSE</b>, and indicates that everything worked as expected. If <b>wiasSetItemPropAttribs</b> returns the HRESULT S_FALSE, this indicates that one of the properties you are trying to set probably does not exist in the property stream.</p>
-
-<p>To get a wiadebug log of this error, open the registry and turn on WIA logging for Warnings and Errors. The registry key for this is: <b>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StillImage\Debug\wiaservc.dll</b></p>
-
-<p>Set the value of "DebugFlags." to 0x00000003 </p>
-
-<p>Reboot the system and repeat the steps necessary to produce this error. There will now be a file named "wiadebug.log" in %windir% directory.</p>
-
-<p>Minidrivers should use this function to initialize groups of simple properties. The groups of properties can be bitsets, ranges of values, or lists of values. The supported simple types, grouped by attribute are as follows. </p>
-
-<p>WIA_PROP_FLAG</p>
-
-<p>VT_UI1, VT_UI2, VT_UI4, VT_UI8, VT_I1, VT_I2, VT_I4, VT_I8</p>
-
-<p>WIA_PROP_RANGE</p>
-
-<p>VT_UI1, VT_UI2, VT_UI4, VT_UI8, VT_I1, VT_I2, VT_I4, ,VT_I8, VT_R4, VT_R8</p>
-
-<p>WIA_PROP_LIST</p>
-
-<p>VT_UI1, VT_UI2, VT_UI4, VT_UI8, VT_I1, VT_I2, VT_I4, ,VT_I8, VT_R4, VT_R8, VT_BSTR</p>
-
-<p> </p>
-
-<p>Minidrivers should initialize complex properties using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549381">wiasSetPropertyAttributes</a> function.</p>
+<p>Minidrivers should initialize complex properties using the <a href="..\wiamdef\nf-wiamdef-wiassetpropertyattributes.md">wiasSetPropertyAttributes</a> function.</p>
 
 <p>The minidriver can set the WIA_PROP_CACHEABLE flag on a property that does not change over time. By setting this flag on a property, the minidriver indicates that the WIA service can cache the property value. See the Windows SDK documentation for a list of all property attributes.</p>
 
@@ -198,13 +168,13 @@ HRESULT _stdcall wiasSetItemPropAttribs(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549381">wiasSetPropertyAttributes</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetpropertyattributes.md">wiasSetPropertyAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549369">wiasSetItemPropNames</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetitempropnames.md">wiasSetItemPropNames</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552751">WIA_PROPERTY_INFO</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--wia-property-info.md">WIA_PROPERTY_INFO</a>
 </dt>
 </dl>
 <p> </p>

@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CaptureToSysMem(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542897">D3DDDIARG_CAPTURETOSYSMEM</a> structure that describes the parameters of the bit-block transfer (bitblt).</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-capturetosysmem.md">D3DDDIARG_CAPTURETOSYSMEM</a> structure that describes the parameters of the bit-block transfer (bitblt).</p>
 </dd>
 </dl>
 
@@ -82,8 +82,6 @@ __checkReturn HRESULT APIENTRY CaptureToSysMem(
 <p> </p>
 
 ## -remarks
-<p>The <b>CaptureToSysMem</b> function is similar to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-blt.md">Blt</a> function except that <b>CaptureToSysMem</b> supports copying only from a capture buffer.</p>
-
 <p>The <b>CaptureToSysMem</b> function is similar to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-blt.md">Blt</a> function except that <b>CaptureToSysMem</b> supports copying only from a capture buffer.</p>
 
 ## -requirements
@@ -121,10 +119,10 @@ __checkReturn HRESULT APIENTRY CaptureToSysMem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542897">D3DDDIARG_CAPTURETOSYSMEM</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-capturetosysmem.md">D3DDDIARG_CAPTURETOSYSMEM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

@@ -130,7 +130,7 @@ typedef struct _UMDETW_ALLOCATION_USAGE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj542437">UMDEtwLogMapAllocation</a>
+<a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>
 </dt>
 </dl>
 <p> </p>

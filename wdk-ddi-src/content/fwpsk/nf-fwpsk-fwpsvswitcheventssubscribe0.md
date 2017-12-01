@@ -7,7 +7,7 @@ old-location: netvista\fwpsvswitcheventssubscribe0.htm
 old-project: netvista
 ms.assetid: 479ff048-f57f-42ca-8787-f87ed055fdbf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsvSwitchEventsSubscribe0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,7 +96,7 @@ NTSTATUS NTAPI FwpsvSwitchEventsSubscribe0(
 ### -param <i>subscriptionId</i> 
 
 <dd>
-<p>A pointer to a variable that contains a unique identifier that WFP assigns to the subscription. The caller must return the subscription identifier to WFP with the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439691">FwpsvSwitchEventsUnsubscribe0</a> function.</p>
+<p>A pointer to a variable that contains a unique identifier that WFP assigns to the subscription. The caller must return the subscription identifier to WFP with the  <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventsunsubscribe0.md">FwpsvSwitchEventsUnsubscribe0</a> function.</p>
 </dd>
 </dl>
 
@@ -114,18 +114,10 @@ NTSTATUS NTAPI FwpsvSwitchEventsSubscribe0(
 ## -remarks
 <p>A callout driver calls the <b>FwpsvSwitchEventsSubscribe0</b> function to register callback entry points for virtual switch  layer events.</p>
 
-<p>The entry points for the callback notification functions are specified in and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451263">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a> structure. </p>
+<p>The entry points for the callback notification functions are specified in and <a href="netvista.fwps_vswitch_event_dispatch_table0">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a> structure. </p>
 
 <p>The callout driver must later call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh439691">FwpsvSwitchEventsUnsubscribe0</a>  to
-    free the system resources.</p>
-
-<p>A callout driver calls the <b>FwpsvSwitchEventsSubscribe0</b> function to register callback entry points for virtual switch  layer events.</p>
-
-<p>The entry points for the callback notification functions are specified in and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451263">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a> structure. </p>
-
-<p>The callout driver must later call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh439691">FwpsvSwitchEventsUnsubscribe0</a>  to
+    <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventsunsubscribe0.md">FwpsvSwitchEventsUnsubscribe0</a>  to
     free the system resources.</p>
 
 ## -requirements
@@ -181,12 +173,12 @@ NTSTATUS NTAPI FwpsvSwitchEventsSubscribe0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451263">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a>
+<a href="netvista.fwps_vswitch_event_dispatch_table0">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439691">FwpsvSwitchEventsUnsubscribe0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventsunsubscribe0.md">FwpsvSwitchEventsUnsubscribe0</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsvSwitchEventsSubscribe0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsvSwitchEventsSubscribe0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

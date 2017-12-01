@@ -7,7 +7,7 @@ old-location: netvista\dot11extreleasevirtualstation.htm
 old-project: netvista
 ms.assetid: 39a907ba-18dc-4e74-a35d-dbf96ef47287
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -94,20 +94,6 @@ DWORD WINAPI * Dot11ExtReleaseVirtualStation(
     <a href="..\wlanihv\nc-wlanihv-dot11extihv-deinit-adapter.md">Dot11ExtIhvDeinitAdapter</a> IHV
     Handler function.</p>
 
-<p>The operating system can ignore a call to the 
-    <b>Dot11ExtReleaseVirtualStation</b> function if the virtual 802.11 station is
-    still needed, or if the operating system is already processing a request to remove the virtual
-    station.</p>
-
-<p>When this release function completes successfully, the virtual station has been deleted, or the operating system is in the process of deleting the virtual station.</p>
-
-<p>A call to 
-    <b>Dot11ExtReleaseVirtualStation</b> informs the operating system that the
-    virtual station is no longer requested by the IHV Extensions DLL. However, the IHV Extensions DLL should
-    not uninitialize any data that is specific to the virtual station until it receives a call to the 
-    <a href="..\wlanihv\nc-wlanihv-dot11extihv-deinit-adapter.md">Dot11ExtIhvDeinitAdapter</a> IHV
-    Handler function.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -152,4 +138,4 @@ DWORD WINAPI * Dot11ExtReleaseVirtualStation(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_RELEASE_VIRTUAL_STATION callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_RELEASE_VIRTUAL_STATION callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

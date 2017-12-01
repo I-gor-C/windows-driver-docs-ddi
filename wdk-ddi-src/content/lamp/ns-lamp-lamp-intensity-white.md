@@ -7,7 +7,7 @@ old-location: stream\lamp_intensity_white.htm
 old-project: stream
 ms.assetid: BDE53311-589F-4458-9510-1B02F1BD0289
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: LAMP_INTENSITY_WHITE, LAMP_INTENSITY_WHITE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure is the I/O parameter type of <a href="stream.ioctl_lamp_get__intensity_white">IOCTL_LAMP_GET_INTENSITY_WHITE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn925078">IOCTL_LAMP_SET_INTENSITY_WHITE</a>.</p>
+<p>This structure is the I/O parameter type of <a href="stream.ioctl_lamp_get__intensity_white">IOCTL_LAMP_GET_INTENSITY_WHITE</a> and <a href="..\lamp\ni-lamp-ioctl-lamp-set-intensity-white.md">IOCTL_LAMP_SET_INTENSITY_WHITE</a>.</p>
 
 
 ## -syntax

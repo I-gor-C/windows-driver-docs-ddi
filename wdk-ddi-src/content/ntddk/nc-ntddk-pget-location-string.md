@@ -7,7 +7,7 @@ old-location: kernel\pnpgetlocationstring.htm
 old-project: kernel
 ms.assetid: 03ebdeed-10f0-4633-a9cd-4db683a8c3a7
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: FILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS PnpGetLocationString(
 ### -param <i>Context</i> [in, out]
 
 <dd>
-<p>A pointer to interface-specific context information.  The caller passes the value that is passed as the <b>Context</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559634">PNP_LOCATION_INTERFACE</a> structure.</p>
+<p>A pointer to interface-specific context information.  The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\ntddk\ns-ntddk--pnp-location-interface.md">PNP_LOCATION_INTERFACE</a> structure.</p>
 </dd>
 
 ### -param <i>LocationStrings</i> [out]
@@ -75,7 +75,7 @@ NTSTATUS PnpGetLocationString(
 <p>The routine returns an NTSTATUS value to indicate the status of the operation.</p>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff559634">PNP_LOCATION_INTERFACE</a> structure supplies a pointer to the <i>PnpGetLocationString</i> routine.</p>
+<p>The <a href="..\ntddk\ns-ntddk--pnp-location-interface.md">PNP_LOCATION_INTERFACE</a> structure supplies a pointer to the <i>PnpGetLocationString</i> routine.</p>
 
 <p>The <i>PnpGetLocationString</i> routine provides the device-specific part of the location string for the device.  The Plug and Play (PnP) manager assembles the location string for a device by querying the driver for the device, for the device's bus, and any parent buses, and concatenating the provided strings together.</p>
 
@@ -83,17 +83,7 @@ NTSTATUS PnpGetLocationString(
 
 <p>By convention, the location string takes the form <i>ServiceName(BusSpecificLocation)</i>. For example, PCI devices use PCI(<i>XXYY</i>), where <i>XX</i> is the device number, and <i>YY</i> is the function number.</p>
 
-<p>The <i>PnpGetLocationString</i> routine calls a routine such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a> to allocate the memory for the location string. The caller is responsible for calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a> routine to free the memory pointed to by <i>LocationStrings</i> when the location string is no longer needed.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff559634">PNP_LOCATION_INTERFACE</a> structure supplies a pointer to the <i>PnpGetLocationString</i> routine.</p>
-
-<p>The <i>PnpGetLocationString</i> routine provides the device-specific part of the location string for the device.  The Plug and Play (PnP) manager assembles the location string for a device by querying the driver for the device, for the device's bus, and any parent buses, and concatenating the provided strings together.</p>
-
-<p>The routine must return a string that is unique to the device relative to its bus. The string must be the same for the device across all versions of the operating system. Once you select a string for this purpose, you must not change it.</p>
-
-<p>By convention, the location string takes the form <i>ServiceName(BusSpecificLocation)</i>. For example, PCI devices use PCI(<i>XXYY</i>), where <i>XX</i> is the device number, and <i>YY</i> is the function number.</p>
-
-<p>The <i>PnpGetLocationString</i> routine calls a routine such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a> to allocate the memory for the location string. The caller is responsible for calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a> routine to free the memory pointed to by <i>LocationStrings</i> when the location string is no longer needed.</p>
+<p>The <i>PnpGetLocationString</i> routine calls a routine such as <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> to allocate the memory for the location string. The caller is responsible for calling the <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> routine to free the memory pointed to by <i>LocationStrings</i> when the location string is no longer needed.</p>
 
 ## -requirements
 <table>
@@ -138,15 +128,15 @@ NTSTATUS PnpGetLocationString(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a>
+<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559634">PNP_LOCATION_INTERFACE</a>
+<a href="..\ntddk\ns-ntddk--pnp-location-interface.md">PNP_LOCATION_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PGET_LOCATION_STRING routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PGET_LOCATION_STRING routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

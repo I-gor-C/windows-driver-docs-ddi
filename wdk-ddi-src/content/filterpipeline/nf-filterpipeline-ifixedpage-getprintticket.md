@@ -57,7 +57,7 @@ HRESULT GetPrintTicket(
 ### -param <i>ppPrintTicket</i> [out]
 
 <dd>
-<p>Pointer to a location into which the method writes a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551924">IPartPrintTicket</a> interface of a print ticket object. This object contains the print ticket for the fixed page.</p>
+<p>Pointer to a location into which the method writes a pointer to the <a href="print.ipartprintticket">IPartPrintTicket</a> interface of a print ticket object. This object contains the print ticket for the fixed page.</p>
 </dd>
 </dl>
 
@@ -65,9 +65,7 @@ HRESULT GetPrintTicket(
 <p><b>GetPrintTicket</b> returns an <b>HRESULT</b> value. If a print ticket is not in the fixed page, <b>GetPrintTicket</b> might return E_ELEMENT_NOT_FOUND.</p>
 
 ## -remarks
-<p>After calling this method to get the page-level print ticket, a print driver filter can obtain the <i>effective</i> print ticket for the fixed page by merging the page-level print ticket with the document-level print ticket and the job-level print ticket. The filter can get the document-level and job-level print tickets by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550992">IFixedDocument::GetPrintTicket</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550977">IFixedDocumentSequence::GetPrintTicket</a> methods. For more information about merging print tickets, see <a href="NULL">Print Ticket Merging</a>.</p>
-
-<p>After calling this method to get the page-level print ticket, a print driver filter can obtain the <i>effective</i> print ticket for the fixed page by merging the page-level print ticket with the document-level print ticket and the job-level print ticket. The filter can get the document-level and job-level print tickets by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550992">IFixedDocument::GetPrintTicket</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550977">IFixedDocumentSequence::GetPrintTicket</a> methods. For more information about merging print tickets, see <a href="NULL">Print Ticket Merging</a>.</p>
+<p>After calling this method to get the page-level print ticket, a print driver filter can obtain the <i>effective</i> print ticket for the fixed page by merging the page-level print ticket with the document-level print ticket and the job-level print ticket. The filter can get the document-level and job-level print tickets by calling the <a href="print.ifixeddocument_getprintticket">IFixedDocument::GetPrintTicket</a> and <a href="print.ifixeddocumentsequence_getprintticket">IFixedDocumentSequence::GetPrintTicket</a> methods. For more information about merging print tickets, see <a href="NULL">Print Ticket Merging</a>.</p>
 
 ## -requirements
 <table>
@@ -106,13 +104,13 @@ HRESULT GetPrintTicket(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550992">IFixedDocument::GetPrintTicket</a>
+<a href="print.ifixeddocument_getprintticket">IFixedDocument::GetPrintTicket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550977">IFixedDocumentSequence::GetPrintTicket</a>
+<a href="print.ifixeddocumentsequence_getprintticket">IFixedDocumentSequence::GetPrintTicket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551924">IPartPrintTicket</a>
+<a href="print.ipartprintticket">IPartPrintTicket</a>
 </dt>
 </dl>
 <p> </p>

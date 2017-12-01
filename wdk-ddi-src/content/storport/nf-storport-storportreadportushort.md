@@ -73,9 +73,7 @@ STORPORT_API USHORT StorPortReadPortUshort(
 <p><b>StorPortReadPortUshort</b> returns a data item of length <b>sizeof</b>(USHORT).</p>
 
 ## -remarks
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564721">ScsiPortReadPortBufferUshort</a>. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567472">StorPortReadPortBufferUshort</a>. </p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564721">ScsiPortReadPortBufferUshort</a>. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567472">StorPortReadPortBufferUshort</a>. </p>
+<p>For more information, see <a href="..\srb\nf-srb-scsiportreadportbufferushort.md">ScsiPortReadPortBufferUshort</a>. For a buffered version of this routine, see <a href="..\storport\nf-storport-storportreadportbufferushort.md">StorPortReadPortBufferUshort</a>. </p>
 
 ## -requirements
 <table>
@@ -114,10 +112,10 @@ STORPORT_API USHORT StorPortReadPortUshort(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564721">ScsiPortReadPortBufferUshort</a>
+<a href="..\srb\nf-srb-scsiportreadportbufferushort.md">ScsiPortReadPortBufferUshort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567472">StorPortReadPortBufferUshort</a>
+<a href="..\storport\nf-storport-storportreadportbufferushort.md">StorPortReadPortBufferUshort</a>
 </dt>
 </dl>
 <p> </p>

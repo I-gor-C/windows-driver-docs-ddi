@@ -118,15 +118,9 @@ typedef NTSTATUS (*PPARALLEL_DESELECT_ROUTINE)(
 <p> </p>
 
 ## -remarks
-<p>To obtain a pointer to the system-supplied <i>PPARALLEL_DESELECT_ROUTINE</i> callback, a kernel-mode driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543997">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a> request, which returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544299">PARALLEL_PNP_INFORMATION</a> structure. The <b>DeselectDevice</b> member of the PARALLEL_PNP_INFORMATION structure is a pointer to this callback.</p>
+<p>To obtain a pointer to the system-supplied <i>PPARALLEL_DESELECT_ROUTINE</i> callback, a kernel-mode driver uses an <a href="..\parallel\ni-parallel-ioctl-internal-get-parallel-pnp-info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a> request, which returns a <a href="..\parallel\ns-parallel--parallel-pnp-information.md">PARALLEL_PNP_INFORMATION</a> structure. The <b>DeselectDevice</b> member of the PARALLEL_PNP_INFORMATION structure is a pointer to this callback.</p>
 
-<p>A kernel-mode driver can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543987">IOCTL_INTERNAL_DESELECT_DEVICE</a> request or the <i>PPARALLEL_CLEAR_CHIP_MODE</i> callback to deselect a device on a parallel port represented by a parallel port. To deselect a device, a caller should have the parallel port allocated. If the caller does not set the PAR_HAVE_PORT_KEEP_PORT flag, the system-supplied function driver for parallel ports frees the parallel port after deselecting the device.</p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71-8740-70c6fbe9a885">Selecting and Deselecting an IEEE 1284 Device Attached to a ParallelPort</a>.</p>
-
-<p>To obtain a pointer to the system-supplied <i>PPARALLEL_DESELECT_ROUTINE</i> callback, a kernel-mode driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543997">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a> request, which returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544299">PARALLEL_PNP_INFORMATION</a> structure. The <b>DeselectDevice</b> member of the PARALLEL_PNP_INFORMATION structure is a pointer to this callback.</p>
-
-<p>A kernel-mode driver can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543987">IOCTL_INTERNAL_DESELECT_DEVICE</a> request or the <i>PPARALLEL_CLEAR_CHIP_MODE</i> callback to deselect a device on a parallel port represented by a parallel port. To deselect a device, a caller should have the parallel port allocated. If the caller does not set the PAR_HAVE_PORT_KEEP_PORT flag, the system-supplied function driver for parallel ports frees the parallel port after deselecting the device.</p>
+<p>A kernel-mode driver can use an <a href="..\parallel\ni-parallel-ioctl-internal-deselect-device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a> request or the <i>PPARALLEL_CLEAR_CHIP_MODE</i> callback to deselect a device on a parallel port represented by a parallel port. To deselect a device, a caller should have the parallel port allocated. If the caller does not set the PAR_HAVE_PORT_KEEP_PORT flag, the system-supplied function driver for parallel ports frees the parallel port after deselecting the device.</p>
 
 <p>For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71-8740-70c6fbe9a885">Selecting and Deselecting an IEEE 1284 Device Attached to a ParallelPort</a>.</p>
 
@@ -165,16 +159,16 @@ typedef NTSTATUS (*PPARALLEL_DESELECT_ROUTINE)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543987">IOCTL_INTERNAL_DESELECT_DEVICE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-deselect-device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544052">IOCTL_INTERNAL_SELECT_DEVICE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-select-device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544299">PARALLEL_PNP_INFORMATION</a>
+<a href="..\parallel\ns-parallel--parallel-pnp-information.md">PARALLEL_PNP_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544767">PPARALLEL_TRY_SELECT_ROUTINE</a>
+<a href="..\parallel\nc-parallel-pparallel-try-select-routine.md">PPARALLEL_TRY_SELECT_ROUTINE</a>
 </dt>
 </dl>
 <p> </p>

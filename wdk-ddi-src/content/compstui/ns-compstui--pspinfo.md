@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The PSPINFO structure is used as an input parameter to a property sheet page's dialog box procedure, when the Windows message is WM_INITDIALOG. The dialog box procedure's address is specified in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607">DLGPAGE</a> structure.</p>
+<p>The PSPINFO structure is used as an input parameter to a property sheet page's dialog box procedure, when the Windows message is WM_INITDIALOG. The dialog box procedure's address is specified in a <a href="..\compstui\ns-compstui--dlgpage.md">DLGPAGE</a> structure.</p>
 
 
 ## -syntax
@@ -85,12 +85,12 @@ typedef struct _PSPINFO {
 ### -field <b>pfnComPropSheet</b>
 
 <dd>
-<p>CPSUI-supplied pointer to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function.</p>
+<p>CPSUI-supplied pointer to its <a href="print.compropsheet">ComPropSheet</a> function.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Before CPSUI calls <b>CreatePropertySheetPage</b> to create a property sheet page, it expands the size of the standard PROPSHEETPAGE structure in order to append a PSPINFO structure. When the operating system calls a dialog box procedure (pointed to by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607">DLGPAGE</a> structure) and specifies a WM_INITDIALOG message, the function's <b>lParam</b> member points to the expanded PROPSHEETPAGE structure containing the PSPINFO structure.</p>
+<p>Before CPSUI calls <b>CreatePropertySheetPage</b> to create a property sheet page, it expands the size of the standard PROPSHEETPAGE structure in order to append a PSPINFO structure. When the operating system calls a dialog box procedure (pointed to by a <a href="..\compstui\ns-compstui--dlgpage.md">DLGPAGE</a> structure) and specifies a WM_INITDIALOG message, the function's <b>lParam</b> member points to the expanded PROPSHEETPAGE structure containing the PSPINFO structure.</p>
 
 <p>(The <b>CreatePropertySheetPage</b> function, PROPSHEETPAGE structure, WM_INITDIALOG message, and dialog box procedures are all described in the Microsoft Windows SDK documentation.)</p>
 

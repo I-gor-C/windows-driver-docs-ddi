@@ -7,7 +7,7 @@ old-location: audio\pfndrmgetcontentrights.htm
 old-project: audio
 ms.assetid: 1230C71C-9C1A-4F1F-8AA7-C814249675B5
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TXRX_TARGET_CONFIGURATION, WDI_TXRX_TARGET_CONFIGURATION, *PWDI_TXRX_TARGET_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

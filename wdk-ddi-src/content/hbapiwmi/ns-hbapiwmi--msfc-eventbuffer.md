@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The MSFC_EventBuffer structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553935">GetEventBuffer</a> method to retrieve the next events in the HBA's event queue.</p>
+<p>The MSFC_EventBuffer structure is used in conjunction with the <a href="storage.geteventbuffer">GetEventBuffer</a> method to retrieve the next events in the HBA's event queue.</p>
 
 
 ## -syntax
@@ -64,14 +64,14 @@ typedef struct _MSFC_EventBuffer {
 ### -field <b>EventInfo</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556048">HBA_EventInfo</a> that holds information about the events that were retrieved. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-eventinfo.md">HBA_EventInfo</a> that holds information about the events that were retrieved. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration for this structure in <i>hbapiwm.h </i>after compiling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562483">MSFC_EventBuffer WMI Class</a>. </p>
+<p>The WMI tool suite generates a declaration for this structure in <i>hbapiwm.h </i>after compiling the <a href="storage.msfc_eventbuffer_wmi_class">MSFC_EventBuffer WMI Class</a>. </p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556048">HBA_EventInfo</a> structure is declared in <i>hbaapi.h</i>. You must include <i>hbaapi.h</i> to reference this structure.</p>
+<p>The <a href="..\hbaapi\ns-hbaapi-hba-eventinfo.md">HBA_EventInfo</a> structure is declared in <i>hbaapi.h</i>. You must include <i>hbaapi.h</i> to reference this structure.</p>
 
 ## -requirements
 <table>
@@ -93,10 +93,10 @@ typedef struct _MSFC_EventBuffer {
 <a href="storage.event_types_qualifiers">EVENT_TYPE_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553935">GetEventBuffer</a>
+<a href="storage.geteventbuffer">GetEventBuffer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556048">HBA_EventInfo</a>
+<a href="..\hbaapi\ns-hbaapi-hba-eventinfo.md">HBA_EventInfo</a>
 </dt>
 </dl>
 <p> </p>

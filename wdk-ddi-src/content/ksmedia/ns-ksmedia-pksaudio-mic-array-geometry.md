@@ -7,7 +7,7 @@ old-location: audio\ksaudio_mic_array_geometry.htm
 old-project: audio
 ms.assetid: 49b8f602-8f82-4445-98f2-a63563689561
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PKSAUDIO_MIC_ARRAY_GEOMETRY, KSAUDIO_MIC_ARRAY_GEOMETRY, *PKSAUDIO_MIC_ARRAY_GEOMETRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The KSAUDIO_MIC_ARRAY_GEOMETRY structure specifies the type and the geometry of the microphone array. The <b>usNumberOfMicrophones</b> member indicates the number of microphones in the physical array. The KsMicCoord member is a variable of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537086">KSAUDIO_MICROPHONE_COORDINATES</a> and it is an array of structures. The number of entries in this array is given by the value of the <b>usNumberOfMicrophones</b> member.</p>
+<p>The KSAUDIO_MIC_ARRAY_GEOMETRY structure specifies the type and the geometry of the microphone array. The <b>usNumberOfMicrophones</b> member indicates the number of microphones in the physical array. The KsMicCoord member is a variable of type <a href="audio.ksaudio_microphone_coordinates">KSAUDIO_MICROPHONE_COORDINATES</a> and it is an array of structures. The number of entries in this array is given by the value of the <b>usNumberOfMicrophones</b> member.</p>
 
 
 ## -syntax
@@ -166,14 +166,9 @@ typedef struct {
 
 <p>Frequency values are expressed in Hertz (Hz).</p>
 
-<p>For more information about how to process a microphone array in Windows Vista, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=8751">Audio Technologies for Windows </a> page on the WHDC website and refer to the following white papers:</p><dl>
-<dd>
+<p>For more information about how to process a microphone array in Windows Vista, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=8751">Audio Technologies for Windows </a> page on the WHDC website and refer to the following white papers:</p>
+
 <p><a href="http://go.microsoft.com/fwlink/p/?linkid=120592">Microphone Array Support in Windows Vista</a></p>
-</dd>
-<dd>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=120593">How to Build and Use Microphone Arrays for Windows Vista</a></p>
-</dd>
-</dl><p><a href="http://go.microsoft.com/fwlink/p/?linkid=120592">Microphone Array Support in Windows Vista</a></p>
 
 <p><a href="http://go.microsoft.com/fwlink/p/?linkid=120593">How to Build and Use Microphone Arrays for Windows Vista</a></p>
 
@@ -194,9 +189,9 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537086">KSAUDIO_MICROPHONE_COORDINATES</a>
+<a href="audio.ksaudio_microphone_coordinates">KSAUDIO_MICROPHONE_COORDINATES</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSAUDIO_MIC_ARRAY_GEOMETRY structure%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSAUDIO_MIC_ARRAY_GEOMETRY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

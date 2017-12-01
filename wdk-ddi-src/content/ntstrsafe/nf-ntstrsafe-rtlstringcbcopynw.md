@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcbcopyn.htm
 old-project: kernel
 ms.assetid: d64fb3e6-fba1-4383-bdb0-a63dc7c16033
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlStringCbCopyNW
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -116,37 +116,9 @@ NTSTATUS RtlStringCbCopyN(
 
 <p><b>RtlStringCbCopyNA</b></p>
 
-<p> </p>
-
 <p>If <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.</p>
 
-<p>Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff562813">RtlStringCbCopyNEx</a>.</p>
-
-<p>For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.</p>
-
-<p><b>RtlStringCbCopyNW</b> and <b>RtlStringCbCopyNA</b> should be used instead of <b>strncpy</b>. However, these functions  differ in behavior. If <i>cbSrc</i> is larger than the number of bytes in <i>pszSrc</i>, the <b>RtlStringCbCopyN </b>functions—unlike <b>strncpy</b>—do not fill <i>pszDest</i> with null characters until <i>cbSrc</i> bytes have been copied.</p>
-
-<p><b>RtlStringCbCopyN</b> copies a given number of bytes from a source string. The size, in bytes, of the destination buffer is provided to the function to ensure that <b>RtlStringCbCopyN</b> does not write past the end of this buffer.</p>
-
-<p>Use <b>RtlStringCbCopyNW</b> to handle Unicode strings and <b>RtlStringCbCopyNA</b> to handle ANSI strings. The form you use depends on your data, as shown in the following table.</p>
-
-<p>WCHAR</p>
-
-<p>L"string"</p>
-
-<p><b>RtlStringCbCopyNW</b></p>
-
-<p><b>char</b></p>
-
-<p>"string"</p>
-
-<p><b>RtlStringCbCopyNA</b></p>
-
-<p> </p>
-
-<p>If <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.</p>
-
-<p>Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff562813">RtlStringCbCopyNEx</a>.</p>
+<p>Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, see <a href="kernel.rtlstringcbcopynex">RtlStringCbCopyNEx</a>.</p>
 
 <p>For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.</p>
 
@@ -211,15 +183,15 @@ NTSTATUS RtlStringCbCopyN(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562805">RtlStringCbCopy</a>
+<a href="kernel.rtlstringcbcopy">RtlStringCbCopy</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562846">RtlStringCchCopyN</a>
+<a href="kernel.rtlstringcchcopyn">RtlStringCchCopyN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562813">RtlStringCbCopyNEx</a>
+<a href="kernel.rtlstringcbcopynex">RtlStringCbCopyNEx</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCbCopyN function%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCbCopyN function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

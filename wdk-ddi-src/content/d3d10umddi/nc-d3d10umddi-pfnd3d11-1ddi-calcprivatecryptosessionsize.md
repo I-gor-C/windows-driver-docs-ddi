@@ -69,7 +69,7 @@ SIZE_T APIENTRY* CalcPrivateCryptoSessionSize(
 ### -param <i>pCreateData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406308">D3D11_1DDIARG_CREATECRYPTOSESSION</a> structure that describes the cryptographic session.</p>
+<p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createcryptosession.md">D3D11_1DDIARG_CREATECRYPTOSESSION</a> structure that describes the cryptographic session.</p>
 </dd>
 </dl>
 
@@ -77,11 +77,7 @@ SIZE_T APIENTRY* CalcPrivateCryptoSessionSize(
 <p>The required number of bytes for the cryptographic session state.</p>
 
 ## -remarks
-<p>The runtime will validate the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406308">D3D11_1DDIARG_CREATECRYPTOSESSION</a> structure before it calls this function.</p>
-
-<p>This function is not expected to fail.</p>
-
-<p>The runtime will validate the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406308">D3D11_1DDIARG_CREATECRYPTOSESSION</a> structure before it calls this function.</p>
+<p>The runtime will validate the members of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createcryptosession.md">D3D11_1DDIARG_CREATECRYPTOSESSION</a> structure before it calls this function.</p>
 
 <p>This function is not expected to fail.</p>
 
@@ -128,7 +124,7 @@ SIZE_T APIENTRY* CalcPrivateCryptoSessionSize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406308">D3D11_1DDIARG_CREATECRYPTOSESSION</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createcryptosession.md">D3D11_1DDIARG_CREATECRYPTOSESSION</a>
 </dt>
 </dl>
 <p> </p>

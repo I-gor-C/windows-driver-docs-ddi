@@ -73,7 +73,7 @@ typedef struct _DXVA_ProcAmpControlCaps {
 ### -field <b>d3dOutputFormat</b>
 
 <dd>
-<p>Indicates the Direct3D surface format of the output frames. Usually the ProcAmp device outputs frames in a surface format that matches the input surface format. This member ensures that the <a href="wdkgloss.v#wdkgloss.video_mixer_renderer__vmr_#wdkgloss.video_mixer_renderer__vmr_"><i>VMR</i></a> or other video renderer is able to supply the correct format for the output frame surfaces to the ProcAmp control hardware. If the <b>DXVA_VideoProcess_YUV2RGB</b> flag is returned in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564076">DXVA_VideoProcessCaps</a> structure, the VMR assumes that valid output formats are specified by this member as well as the RGB32 format.</p>
+<p>Indicates the Direct3D surface format of the output frames. Usually the ProcAmp device outputs frames in a surface format that matches the input surface format. This member ensures that the <a href="wdkgloss.v#wdkgloss.video_mixer_renderer__vmr_#wdkgloss.video_mixer_renderer__vmr_"><i>VMR</i></a> or other video renderer is able to supply the correct format for the output frame surfaces to the ProcAmp control hardware. If the <b>DXVA_VideoProcess_YUV2RGB</b> flag is returned in the <a href="..\dxva\ne-dxva--dxva-videoprocesscaps.md">DXVA_VideoProcessCaps</a> structure, the VMR assumes that valid output formats are specified by this member as well as the RGB32 format.</p>
 </dd>
 
 ### -field <b>ProcAmpControlProps</b>
@@ -211,10 +211,10 @@ typedef struct _DXVA_ProcAmpControlCaps {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564076">DXVA_VideoProcessCaps</a>
+<a href="..\dxva\ne-dxva--dxva-videoprocesscaps.md">DXVA_VideoProcessCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564027">DXVA_ProcAmpControlProp</a>
+<a href="..\dxva\ne-dxva--dxva-procampcontrolprop.md">DXVA_ProcAmpControlProp</a>
 </dt>
 </dl>
 <p> </p>

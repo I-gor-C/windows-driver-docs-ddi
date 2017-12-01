@@ -71,7 +71,7 @@ typedef struct _D3DDDIARG_UNLOCKASYNC {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544676">D3DDDI_UNLOCKASYNCFLAGS</a> structure that indicates, in bit-field flags, how to unlock the resource.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-unlockasyncflags.md">D3DDDI_UNLOCKASYNCFLAGS</a> structure that indicates, in bit-field flags, how to unlock the resource.</p>
 </dd>
 </dl>
 

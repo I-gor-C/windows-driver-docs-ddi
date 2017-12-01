@@ -73,7 +73,7 @@ ULONG StorPortQueueWorkItem(
 ### -param <i>Worker</i> [in]
 
 <dd>
-<p>A pointer to an opaque buffer for the worker returned by <a href="https://msdn.microsoft.com/library/windows/hardware/hh451486">StorPortInitializeWorker</a>.</p>
+<p>A pointer to an opaque buffer for the worker returned by <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>.</p>
 </dd>
 
 ### -param <i>Context</i> [in, optional]
@@ -142,13 +142,13 @@ ULONG StorPortQueueWorkItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451320">HwStorWorkItem</a>
+<a href="storage.hwstorworkitem">HwStorWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451478">StorPortFreeWorker</a>
+<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451486">StorPortInitializeWorker</a>
+<a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: debugger\ext_typed_data.htm
 old-project: debugger
 ms.assetid: 99abb7b6-3e20-4875-b257-c3fc4146e392
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: EXT_TYPED_DATA, EXT_TYPED_DATA, *PEXT_TYPED_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,8 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The EXT_TYPED_DATA structure is passed to and returned from the <a href="debugger.debug_request_ext_typed_data_ansi">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI </a>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a> operation. It contains the input and output parameters for the operation as well as specifying which particular suboperation to perform.</p>
+<p>The EXT_TYPED_DATA structure is passed to and returned from the <a href="https://msdn.microsoft.com/ac883bc8-3956-4bc3-a11e-b6e036305329">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI </a>
+<a href="debugger.request">Request</a> operation. It contains the input and output parameters for the operation as well as specifying which particular suboperation to perform.</p>
 
 
 ## -syntax
@@ -76,7 +76,7 @@ typedef struct _EXT_TYPED_DATA {
 
 <dd>
 <p>Specifies which suboperation the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541547">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</a>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a> operation should perform. The interpretation of some of the other members depends on <b>Operation</b>. For a list of possible suboperations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544529">EXT_TDOP</a>.</p>
+<a href="debugger.request">Request</a> operation should perform. The interpretation of some of the other members depends on <b>Operation</b>. For a list of possible suboperations, see <a href="..\wdbgexts\ne-wdbgexts--ext-tdop.md">EXT_TDOP</a>.</p>
 </dd>
 
 ### -field <b>Flags</b>
@@ -127,14 +127,14 @@ typedef struct _EXT_TYPED_DATA {
 ### -field <b>InData</b>
 
 <dd>
-<p>Specifies typed data to be used as input to the operation. For details about this structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541706">DEBUG_TYPED_DATA</a>.</p>
+<p>Specifies typed data to be used as input to the operation. For details about this structure, see <a href="..\wdbgexts\ns-wdbgexts--debug-typed-data.md">DEBUG_TYPED_DATA</a>.</p>
 <p>The interpretation of <b>InData</b> depends on the value of <b>Operation</b>.</p>
 </dd>
 
 ### -field <b>OutData</b>
 
 <dd>
-<p>Receives typed data as output from the operation. Any suboperation that returns typed data to <b>OutData</b> initially copies the contents of <b>InData</b> to <b>OutData</b>, then modifies <b>OutData</b> in place, so that the input parameters in <b>InData</b> are also present in <b>OutData</b>. For details about this structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541706">DEBUG_TYPED_DATA</a>.</p>
+<p>Receives typed data as output from the operation. Any suboperation that returns typed data to <b>OutData</b> initially copies the contents of <b>InData</b> to <b>OutData</b>, then modifies <b>OutData</b> in place, so that the input parameters in <b>InData</b> are also present in <b>OutData</b>. For details about this structure, see <a href="..\wdbgexts\ns-wdbgexts--debug-typed-data.md">DEBUG_TYPED_DATA</a>.</p>
 <p>The interpretation of <b>OutData</b> depends on the value of <b>Operation</b>.</p>
 </dd>
 
@@ -142,7 +142,7 @@ typedef struct _EXT_TYPED_DATA {
 
 <dd>
 <p>Specifies the position of an ANSI string to be used as input to the operation. <b>InStrIndex</b> can be zero to indicate that the input parameters do not include an ANSI string.</p>
-<p>The position of the string is relative to the base address of this EXT_TYPED_DATA structure. The string must follow this structure, so <b>InStrIndex</b> must be greater than the size of this structure. The string is part of the input to the operation and <b>InStrIndex</b> must be smaller than <i>InBufferSize</i>, the size of the input buffer passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a>.</p>
+<p>The position of the string is relative to the base address of this EXT_TYPED_DATA structure. The string must follow this structure, so <b>InStrIndex</b> must be greater than the size of this structure. The string is part of the input to the operation and <b>InStrIndex</b> must be smaller than <i>InBufferSize</i>, the size of the input buffer passed to <a href="debugger.request">Request</a>.</p>
 <p>The interpretation of the string depends on the value of <b>Operation</b>.</p>
 </dd>
 
@@ -178,7 +178,7 @@ typedef struct _EXT_TYPED_DATA {
 
 <dd>
 <p>Specifies the position to return an ANSI string as output from the operation. <b>StrBufferIndex</b> can be zero if no ANSI string is to be received from the operation.</p>
-<p>The position of the string is relative to the base address of the returned EXT_TYPED_DATA structure. The string must follow the structure, so <b>StrBufferIndex</b> must be greater than the size of this structure. The string is part of the output from the suboperation, and <b>StrBufferIndex</b> plus <b>StrBufferChars</b> must be smaller than <i>OutBufferSize</i>, the size of the output buffer passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a>.</p>
+<p>The position of the string is relative to the base address of the returned EXT_TYPED_DATA structure. The string must follow the structure, so <b>StrBufferIndex</b> must be greater than the size of this structure. The string is part of the output from the suboperation, and <b>StrBufferIndex</b> plus <b>StrBufferChars</b> must be smaller than <i>OutBufferSize</i>, the size of the output buffer passed to <a href="debugger.request">Request</a>.</p>
 <p>The interpretation of the string depends on the value of <b>Operation</b>.</p>
 </dd>
 
@@ -215,7 +215,7 @@ typedef struct _EXT_TYPED_DATA {
 ### -field <b>Status</b>
 
 <dd>
-<p>Receives the status code returned by the operation. This is the same value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a>.</p>
+<p>Receives the status code returned by the operation. This is the same value returned by <a href="debugger.request">Request</a>.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -226,8 +226,8 @@ typedef struct _EXT_TYPED_DATA {
 </dl>
 
 ## -remarks
-<p>The members of this structure are used as the input and output parameters to the <a href="debugger.debug_request_ext_typed_data_ansi">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI </a>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a> operation. The interpretation of most of the parameters depends on the particular suboperation being performed, as specified by the <b>Operation</b> member.</p>
+<p>The members of this structure are used as the input and output parameters to the <a href="https://msdn.microsoft.com/ac883bc8-3956-4bc3-a11e-b6e036305329">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI </a>
+<a href="debugger.request">Request</a> operation. The interpretation of most of the parameters depends on the particular suboperation being performed, as specified by the <b>Operation</b> member.</p>
 
 <p>This structure can optionally specify additional data--using the members <b>InStrIndex</b> and <b>StrBufferIndex</b>--that is included with the structure. This additional data is specified relative to the address of the instance of this structure. When used with the DEBUG_REQUEST_EXT_TYPED_DATA_ANSI <b>Request</b> operation, the additional data is included in the <i>InBuffer</i> and <i>OutBuffer</i> (as appropriate) and should be included in the size of these two buffers.</p>
 
@@ -251,15 +251,15 @@ typedef struct _EXT_TYPED_DATA {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541547">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a>
+<a href="debugger.request">Request</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541706">DEBUG_TYPED_DATA</a>
+<a href="..\wdbgexts\ns-wdbgexts--debug-typed-data.md">DEBUG_TYPED_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544529">EXT_TDOP</a>
+<a href="..\wdbgexts\ne-wdbgexts--ext-tdop.md">EXT_TDOP</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20EXT_TYPED_DATA structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20EXT_TYPED_DATA structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

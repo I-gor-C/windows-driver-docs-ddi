@@ -7,7 +7,7 @@ old-location: debugger\removesyntheticmodule.htm
 old-project: debugger
 ms.assetid: 951b42b6-4d6a-45af-a27f-6e8056676bb0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols3, RemoveSyntheticModule, IDebugSymbols3::RemoveSyntheticModule
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,11 +73,7 @@ HRESULT RemoveSyntheticModule(
 <p>This method may also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
 
 ## -remarks
-<p>If all the modules are reloaded - for example, by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff554379">Reload</a> with the  <i>Module</i> parameter set to the empty string - all synthetic modules will be discarded.</p>
-
-<p>For more information about synthetic modules, see Synthetic Modules.</p>
-
-<p>If all the modules are reloaded - for example, by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff554379">Reload</a> with the  <i>Module</i> parameter set to the empty string - all synthetic modules will be discarded.</p>
+<p>If all the modules are reloaded - for example, by calling <a href="debugger.reload">Reload</a> with the  <i>Module</i> parameter set to the empty string - all synthetic modules will be discarded.</p>
 
 <p>For more information about synthetic modules, see Synthetic Modules.</p>
 
@@ -108,15 +104,15 @@ HRESULT RemoveSyntheticModule(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537937">AddSyntheticModule</a>
+<a href="debugger.addsyntheticmodule">AddSyntheticModule</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554542">RemoveSyntheticSymbol</a>
+<a href="debugger.removesyntheticsymbol">RemoveSyntheticSymbol</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::RemoveSyntheticModule method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::RemoveSyntheticModule method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

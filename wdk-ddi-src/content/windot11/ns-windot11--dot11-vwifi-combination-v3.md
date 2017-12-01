@@ -7,7 +7,7 @@ old-location: netvista\dot11_vwifi_combination_v3.htm
 old-project: netvista
 ms.assetid: 65A397AE-B835-4043-9A81-24055901310B
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_VWIFI_COMBINATION_V3,
 ms.prod: windows-hardware
 ms.technology: windows-devices

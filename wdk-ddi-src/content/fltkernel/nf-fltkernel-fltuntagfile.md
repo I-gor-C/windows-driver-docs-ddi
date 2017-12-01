@@ -92,15 +92,9 @@ NTSTATUS FltUntagFile(
 <p> </p>
 
 ## -remarks
-<p>Minifilter drivers should use <b>FltUntagFile</b> instead of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544828">FSCTL_DELETE_REPARSE_POINT</a> to delete a reparse point. </p>
+<p>Minifilter drivers should use <b>FltUntagFile</b> instead of <a href="ifsk.fsctl_delete_reparse_point">FSCTL_DELETE_REPARSE_POINT</a> to delete a reparse point. </p>
 
-<p>A minifilter driver can set a reparse tag on a file or directory by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544589">FltTagFile</a>. </p>
-
-<p>For more information about reparse points, see the Microsoft Windows SDK documentation. </p>
-
-<p>Minifilter drivers should use <b>FltUntagFile</b> instead of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544828">FSCTL_DELETE_REPARSE_POINT</a> to delete a reparse point. </p>
-
-<p>A minifilter driver can set a reparse tag on a file or directory by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544589">FltTagFile</a>. </p>
+<p>A minifilter driver can set a reparse tag on a file or directory by calling <a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>. </p>
 
 <p>For more information about reparse points, see the Microsoft Windows SDK documentation. </p>
 
@@ -159,25 +153,25 @@ NTSTATUS FltUntagFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544820">FLT_TAG_DATA_BUFFER</a>
+<a href="..\fltkernel\ns-fltkernel--flt-tag-data-buffer.md">FLT_TAG_DATA_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544589">FltTagFile</a>
+<a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544828">FSCTL_DELETE_REPARSE_POINT</a>
+<a href="ifsk.fsctl_delete_reparse_point">FSCTL_DELETE_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544836">FSCTL_GET_REPARSE_POINT</a>
+<a href="ifsk.fsctl_get_reparse_point">FSCTL_GET_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545568">FSCTL_SET_REPARSE_POINT</a>
+<a href="ifsk.fsctl_set_reparse_point">FSCTL_SET_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549452">IsReparseTagMicrosoft</a>
+<a href="..\ntifs\nf-ntifs-isreparsetagmicrosoft.md">IsReparseTagMicrosoft</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549462">IsReparseTagNameSurrogate</a>
+<a href="..\ntifs\nf-ntifs-isreparsetagnamesurrogate.md">IsReparseTagNameSurrogate</a>
 </dt>
 </dl>
 <p> </p>

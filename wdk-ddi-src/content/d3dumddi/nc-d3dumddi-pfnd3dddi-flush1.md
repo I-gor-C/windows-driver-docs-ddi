@@ -70,7 +70,7 @@ _Check_return_ HRESULT APIENTRY* pfnFlush1(
 ### -param <i>FlushFlags</i> 
 
 <dd>
-<p>A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/dn449154">D3DDDI_FLUSH_FLAGS</a> enumeration that indicates whether the driver should continue to submit command buffers if there have been no new commands.</p>
+<p>A value from the <a href="..\d3dumddi\ne-d3dumddi-d3dddi-flush-flags.md">D3DDDI_FLUSH_FLAGS</a> enumeration that indicates whether the driver should continue to submit command buffers if there have been no new commands.</p>
 </dd>
 </dl>
 
@@ -123,7 +123,7 @@ _Check_return_ HRESULT APIENTRY* pfnFlush1(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn449154">D3DDDI_FLUSH_FLAGS</a>
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi-flush-flags.md">D3DDDI_FLUSH_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

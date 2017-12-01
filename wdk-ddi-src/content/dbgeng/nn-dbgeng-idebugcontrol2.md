@@ -7,7 +7,7 @@ old-location: debugger\idebugcontrol2.htm
 old-project: debugger
 ms.assetid: c8371bbc-cbd1-4ff4-a055-99cc6cd6f8c6
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface: IDebugSystemObjects4
 ## -description
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugControl2</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff550508">IDebugControl</a>. <b>IDebugControl2</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugControl2</b> interface inherits from <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>. <b>IDebugControl2</b> also has these types of members:</p>
 
 <p>The <b>IDebugControl2</b> interface has these methods.</p>
 
@@ -72,7 +72,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545883">GetCurrentSystemUpTime</a>
+<a href="debugger.getcurrentsystemuptime">GetCurrentSystemUpTime</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the number of seconds the current target's computer has been running since it was last started.</p>
@@ -80,7 +80,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546553">GetCurrentTimeDate</a>
+<a href="debugger.getcurrenttimedate">GetCurrentTimeDate</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the time of the current target.
@@ -89,7 +89,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546592">GetDumpFormatFlags</a>
+<a href="debugger.getdumpformatflags">GetDumpFormatFlags</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the flags that describe what information is available in a dump file target.</p>
@@ -97,7 +97,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547988">GetNumberTextReplacements</a>
+<a href="debugger.getnumbertextreplacements">GetNumberTextReplacements</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the number of currently defined user-named and automatic aliases.</p>
@@ -105,7 +105,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549280">GetTextReplacement</a>
+<a href="debugger.gettextreplacement">GetTextReplacement</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the value of a user-named alias or an automatic alias.</p>
@@ -113,7 +113,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553268">OutputTextReplacements</a>
+<a href="debugger.outputtextreplacements">OutputTextReplacements</a>
 </td>
 <td align="left" width="63%">
 <p>Prints all the currently defined user-named aliases to the debugger's output stream.</p>
@@ -121,7 +121,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554548">RemoveTextReplacements</a>
+<a href="debugger.removetextreplacements">RemoveTextReplacements</a>
 </td>
 <td align="left" width="63%">
 <p>Removes all user-named aliases.</p>
@@ -129,7 +129,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556818">SetTextReplacement</a>
+<a href="debugger.settextreplacement">SetTextReplacement</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the value of a user-named alias.  </p>
@@ -174,15 +174,15 @@ req.iface: IDebugSystemObjects4
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550508">IDebugControl</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550519">IDebugControl3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl2 interface%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl2 interface%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -72,9 +72,7 @@ VOID CcSetAdditionalCacheAttributesEx(
 <p>None</p>
 
 ## -remarks
-<p><b>CcSetAdditionalCacheAttributesEx</b> can be called any time after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>. </p>
-
-<p><b>CcSetAdditionalCacheAttributesEx</b> can be called any time after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>. </p>
+<p><b>CcSetAdditionalCacheAttributesEx</b> can be called any time after calling <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>. </p>
 
 ## -requirements
 <table>
@@ -139,10 +137,10 @@ VOID CcSetAdditionalCacheAttributesEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539203">CcSetAdditionalCacheAttributes</a>
+<a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 </dl>
 <p> </p>

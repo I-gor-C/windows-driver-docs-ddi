@@ -103,7 +103,7 @@ typedef enum _USBD_PIPE_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+<a href="buses.usb_enumerations">USB Constants and Enumerations</a>
 </dt>
 </dl>
 <p> </p>

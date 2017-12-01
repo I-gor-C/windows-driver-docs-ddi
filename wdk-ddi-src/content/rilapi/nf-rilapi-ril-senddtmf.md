@@ -7,7 +7,7 @@ old-location: netvista\ril_senddtmf.htm
 old-project: netvista
 ms.assetid: 4091a37e-5115-4213-9242-76b119ad28fc
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SendDTMF
 ms.prod: windows-hardware
 ms.technology: windows-devices

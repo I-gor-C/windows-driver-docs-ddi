@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTSetVidPnSourceOwner1(
 ### -param <i>pSetVidPnSourceOwner1</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406588">D3DKMT_SETVIDPNSOURCEOWNER1</a> structure that describes the parameters for setting or releasing the video present source.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setvidpnsourceowner1.md">D3DKMT_SETVIDPNSOURCEOWNER1</a> structure that describes the parameters for setting or releasing the video present source.</p>
 </dd>
 </dl>
 
@@ -68,9 +68,9 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTSetVidPnSourceOwner1(
 <dt><b>STATUS_DEVICE_REMOVED</b></dt>
 </dl><p>The graphics adapter was stopped or the display device was reset.</p><dl>
 <dt><b>STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE</b></dt>
-</dl><p>The video present source that is specified by an element in the array that the  <b>pVidPnSourceId</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548317">D3DKMT_SETVIDPNSOURCEOWNER</a> specifies is already owned by a display mode manager (DMM) client and cannot be used until the client releases the video present source.</p><dl>
+</dl><p>The video present source that is specified by an element in the array that the  <b>pVidPnSourceId</b> member of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setvidpnsourceowner.md">D3DKMT_SETVIDPNSOURCEOWNER</a> specifies is already owned by a display mode manager (DMM) client and cannot be used until the client releases the video present source.</p><dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDEO_PRESENT_SOURCE</b></dt>
-</dl><p>The video present source that is specified by an element in the array that the  <b>pVidPnSourceId</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548317">D3DKMT_SETVIDPNSOURCEOWNER</a> specifies is invalid. </p><dl>
+</dl><p>The video present source that is specified by an element in the array that the  <b>pVidPnSourceId</b> member of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setvidpnsourceowner.md">D3DKMT_SETVIDPNSOURCEOWNER</a> specifies is invalid. </p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl><p>Parameters were validated and determined to be incorrect.</p>
 
@@ -144,7 +144,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTSetVidPnSourceOwner1(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406588">D3DKMT_SETVIDPNSOURCEOWNER1</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setvidpnsourceowner1.md">D3DKMT_SETVIDPNSOURCEOWNER1</a>
 </dt>
 </dl>
 <p> </p>

@@ -89,7 +89,7 @@ typedef union _WHEA_GENERIC_ERROR_BLOCKSTATUS {
 ### -field <b>ErrorDataEntryCount</b>
 
 <dd>
-<p>The number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560529">WHEA_GENERIC_ERROR_DATA_ENTRY</a> structures that are contained in the generic error status block.</p>
+<p>The number of <a href="whea.whea_generic_error_data_entry">WHEA_GENERIC_ERROR_DATA_ENTRY</a> structures that are contained in the generic error status block.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -106,7 +106,7 @@ typedef union _WHEA_GENERIC_ERROR_BLOCKSTATUS {
 </dl>
 
 ## -remarks
-<p>A WHEA_GENERIC_ERROR_BLOCKSTATUS union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560524">WHEA_GENERIC_ERROR</a> structure.</p>
+<p>A WHEA_GENERIC_ERROR_BLOCKSTATUS union is contained within the <a href="..\ntddk\ns-ntddk--whea-generic-error.md">WHEA_GENERIC_ERROR</a> structure.</p>
 
 ## -requirements
 <table>
@@ -134,10 +134,10 @@ typedef union _WHEA_GENERIC_ERROR_BLOCKSTATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560524">WHEA_GENERIC_ERROR</a>
+<a href="..\ntddk\ns-ntddk--whea-generic-error.md">WHEA_GENERIC_ERROR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560529">WHEA_GENERIC_ERROR_DATA_ENTRY</a>
+<a href="whea.whea_generic_error_data_entry">WHEA_GENERIC_ERROR_DATA_ENTRY</a>
 </dt>
 </dl>
 <p> </p>

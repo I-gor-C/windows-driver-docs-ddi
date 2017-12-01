@@ -7,7 +7,7 @@ old-location: kernel\rtlushorttochar.htm
 old-project: kernel
 ms.assetid: 13C5988F-1669-4B18-9423-74587276320F
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlUShortToChar
 ms.prod: windows-hardware
 ms.technology: windows-devices

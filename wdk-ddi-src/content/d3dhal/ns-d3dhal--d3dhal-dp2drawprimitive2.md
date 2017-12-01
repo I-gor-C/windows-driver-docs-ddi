@@ -42,7 +42,7 @@ req.iface:
 <p>
    DirectX 8.0 and later versions only.
    </p>
-<p>D3DHAL_DRAWPRIMITIVE2 is parsed from the command buffer by the <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a> callback when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structure's <b>bCommand</b> member is set to D3DDP2OP_DRAWPRIMITIVE2, and is used to render a primitive.</p>
+<p>D3DHAL_DRAWPRIMITIVE2 is parsed from the command buffer by the <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a> callback when the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> structure's <b>bCommand</b> member is set to D3DDP2OP_DRAWPRIMITIVE2, and is used to render a primitive.</p>
 
 
 ## -syntax
@@ -103,10 +103,10 @@ typedef struct _D3DHAL_DP2DRAWPRIMITIVE2 {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545526">D3DHAL_DP2DRAWPRIMITIVE</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2drawprimitive.md">D3DHAL_DP2DRAWPRIMITIVE</a>
 </dt>
 </dl>
 <p> </p>

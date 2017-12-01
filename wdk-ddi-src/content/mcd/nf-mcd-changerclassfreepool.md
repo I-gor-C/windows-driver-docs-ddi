@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>ChangerClassFreePool</b> routine frees pool memory previously allocated using <a href="https://msdn.microsoft.com/library/windows/hardware/ff551402">ChangerClassAllocatePool</a>. </p>
+<p>The <b>ChangerClassFreePool</b> routine frees pool memory previously allocated using <a href="..\mcd\nf-mcd-changerclassallocatepool.md">ChangerClassAllocatePool</a>. </p>
 
 
 ## -syntax
@@ -104,7 +104,7 @@ VOID ChangerClassFreePool(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551402">ChangerClassAllocatePool</a>
+<a href="..\mcd\nf-mcd-changerclassallocatepool.md">ChangerClassAllocatePool</a>
 </dt>
 </dl>
 <p> </p>

@@ -96,8 +96,8 @@ typedef struct _D3DDDICB_LOCK {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544214">D3DDDICB_LOCKFLAGS</a> structure that identifies, in bit-field flags, how to lock the allocation.</p>
-<p>Note that specifying some flags together is invalid and that some flags depend on other flags. For more information about specifying these flags, see the Remarks section of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544214">D3DDDICB_LOCKFLAGS</a>.</p>
+<p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lockflags.md">D3DDDICB_LOCKFLAGS</a> structure that identifies, in bit-field flags, how to lock the allocation.</p>
+<p>Note that specifying some flags together is invalid and that some flags depend on other flags. For more information about specifying these flags, see the Remarks section of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lockflags.md">D3DDDICB_LOCKFLAGS</a>.</p>
 </dd>
 
 ### -field <b>GpuVirtualAddress</b>
@@ -136,7 +136,7 @@ typedef struct _D3DDDICB_LOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544214">D3DDDICB_LOCKFLAGS</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lockflags.md">D3DDDICB_LOCKFLAGS</a>
 </dt>
 <dt>
 <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a>

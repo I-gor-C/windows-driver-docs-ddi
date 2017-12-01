@@ -68,15 +68,9 @@ VOID ScsiPortFlushDma(
 ## -remarks
 <p>Only miniport drivers of subordinate HBAs that use a system DMA controller call this routine.</p>
 
-<p><b>ScsiPortFlushDma</b> must be called after a subordinate DMA transfer operation is completed but before the SRB is completed or the next call is made to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564649">ScsiPortIoMapTransfer</a> for the current buffer.</p>
+<p><b>ScsiPortFlushDma</b> must be called after a subordinate DMA transfer operation is completed but before the SRB is completed or the next call is made to <a href="..\srb\nf-srb-scsiportiomaptransfer.md">ScsiPortIoMapTransfer</a> for the current buffer.</p>
 
-<p><b>ScsiPortFlushDma</b> also must be called after <b>ScsiPortIoMapTransfer</b> to cancel a DMA operation, even if no transfer has occurred and the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557291">HwScsiDmaStarted</a> routine has not yet been called.</p>
-
-<p>Only miniport drivers of subordinate HBAs that use a system DMA controller call this routine.</p>
-
-<p><b>ScsiPortFlushDma</b> must be called after a subordinate DMA transfer operation is completed but before the SRB is completed or the next call is made to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564649">ScsiPortIoMapTransfer</a> for the current buffer.</p>
-
-<p><b>ScsiPortFlushDma</b> also must be called after <b>ScsiPortIoMapTransfer</b> to cancel a DMA operation, even if no transfer has occurred and the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557291">HwScsiDmaStarted</a> routine has not yet been called.</p>
+<p><b>ScsiPortFlushDma</b> also must be called after <b>ScsiPortIoMapTransfer</b> to cancel a DMA operation, even if no transfer has occurred and the driver's <a href="storage.hwscsidmastarted">HwScsiDmaStarted</a> routine has not yet been called.</p>
 
 ## -requirements
 <table>
@@ -115,10 +109,10 @@ VOID ScsiPortFlushDma(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557291">HwScsiDmaStarted</a>
+<a href="storage.hwscsidmastarted">HwScsiDmaStarted</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564649">ScsiPortIoMapTransfer</a>
+<a href="..\srb\nf-srb-scsiportiomaptransfer.md">ScsiPortIoMapTransfer</a>
 </dt>
 </dl>
 <p> </p>

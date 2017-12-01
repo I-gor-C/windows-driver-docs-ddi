@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY DecodeExtensionExecute(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543009">D3DDDIARG_DECODEEXTENSIONEXECUTE</a> structure that describes the DirectX VA decode operation to perform.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decodeextensionexecute.md">D3DDDIARG_DECODEEXTENSIONEXECUTE</a> structure that describes the DirectX VA decode operation to perform.</p>
 </dd>
 </dl>
 
@@ -86,17 +86,9 @@ __checkReturn HRESULT APIENTRY DecodeExtensionExecute(
 
 <p><b>DecodeExtensionExecute</b> is called when DirectX VA 2.0 decoders require the nonstandard extensions.</p>
 
-<p>For compatibility with DirectX VA 1.0 decoders that might require these nonstandard extensions, <b>DecodeExtensionExecute</b> is called whenever a DirectX VA 1.0 decoder makes an execution call in which any bDXVA_Func value that is greater than 4 is set in the most significant 8 bits of the <b>Function</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543009">D3DDDIARG_DECODEEXTENSIONEXECUTE</a> structure. <b>DecodeExtensionExecute</b> is also called whenever DirectX VA 1.0 decoder makes a configuration call in which any DXVA_ConfigQueryOrReplyFunc flag other than DXVA_QUERYORREPLYFUNCFLAG_DECODER_PROBE_QUERY (0xFFFFF1) or DXVA_QUERYORREPLYFUNCFLAG_DECODER_LOCK_QUERY (0xFFFFF5) flag is set in the most significant 24 bits of <b>Function</b>. For more information about the meanings for the bit settings of <b>Function</b>, see the <a href="https://msdn.microsoft.com/bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5">DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc Variables</a> and <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func Variable</a> topics. </p>
+<p>For compatibility with DirectX VA 1.0 decoders that might require these nonstandard extensions, <b>DecodeExtensionExecute</b> is called whenever a DirectX VA 1.0 decoder makes an execution call in which any bDXVA_Func value that is greater than 4 is set in the most significant 8 bits of the <b>Function</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decodeextensionexecute.md">D3DDDIARG_DECODEEXTENSIONEXECUTE</a> structure. <b>DecodeExtensionExecute</b> is also called whenever DirectX VA 1.0 decoder makes a configuration call in which any DXVA_ConfigQueryOrReplyFunc flag other than DXVA_QUERYORREPLYFUNCFLAG_DECODER_PROBE_QUERY (0xFFFFF1) or DXVA_QUERYORREPLYFUNCFLAG_DECODER_LOCK_QUERY (0xFFFFF5) flag is set in the most significant 24 bits of <b>Function</b>. For more information about the meanings for the bit settings of <b>Function</b>, see the <a href="https://msdn.microsoft.com/bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5">DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc Variables</a> and <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func Variable</a> topics. </p>
 
-<p>Because of compatibility issues with DirectX VA 1.0 decoders that might make such a configuration call before DXVA_QUERYORREPLYFUNCFLAG_DECODER_LOCK_QUERY, those decoders can make such a configuration call also before a decode device is created. If such a configuration call is made before a decode device is created, the <b>hDecode</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543009">D3DDDIARG_DECODEEXTENSIONEXECUTE</a> structure that the <i>pData</i> parameter points to is set to <b>NULL</b>. In this situation, the driver might be required to return an error (for example, E_FAIL) if the driver cannot support the situation independent of a decode device. </p>
-
-<p>A user-mode display driver can implement the <b>DecodeExtensionExecute</b> function to support extensions to the standard decode types (that is, nonstandard decode GUIDs). These nonstandard decode types are useful for configuring encryption and other miscellaneous enhancements. </p>
-
-<p><b>DecodeExtensionExecute</b> is called when DirectX VA 2.0 decoders require the nonstandard extensions.</p>
-
-<p>For compatibility with DirectX VA 1.0 decoders that might require these nonstandard extensions, <b>DecodeExtensionExecute</b> is called whenever a DirectX VA 1.0 decoder makes an execution call in which any bDXVA_Func value that is greater than 4 is set in the most significant 8 bits of the <b>Function</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543009">D3DDDIARG_DECODEEXTENSIONEXECUTE</a> structure. <b>DecodeExtensionExecute</b> is also called whenever DirectX VA 1.0 decoder makes a configuration call in which any DXVA_ConfigQueryOrReplyFunc flag other than DXVA_QUERYORREPLYFUNCFLAG_DECODER_PROBE_QUERY (0xFFFFF1) or DXVA_QUERYORREPLYFUNCFLAG_DECODER_LOCK_QUERY (0xFFFFF5) flag is set in the most significant 24 bits of <b>Function</b>. For more information about the meanings for the bit settings of <b>Function</b>, see the <a href="https://msdn.microsoft.com/bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5">DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc Variables</a> and <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func Variable</a> topics. </p>
-
-<p>Because of compatibility issues with DirectX VA 1.0 decoders that might make such a configuration call before DXVA_QUERYORREPLYFUNCFLAG_DECODER_LOCK_QUERY, those decoders can make such a configuration call also before a decode device is created. If such a configuration call is made before a decode device is created, the <b>hDecode</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543009">D3DDDIARG_DECODEEXTENSIONEXECUTE</a> structure that the <i>pData</i> parameter points to is set to <b>NULL</b>. In this situation, the driver might be required to return an error (for example, E_FAIL) if the driver cannot support the situation independent of a decode device. </p>
+<p>Because of compatibility issues with DirectX VA 1.0 decoders that might make such a configuration call before DXVA_QUERYORREPLYFUNCFLAG_DECODER_LOCK_QUERY, those decoders can make such a configuration call also before a decode device is created. If such a configuration call is made before a decode device is created, the <b>hDecode</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decodeextensionexecute.md">D3DDDIARG_DECODEEXTENSIONEXECUTE</a> structure that the <i>pData</i> parameter points to is set to <b>NULL</b>. In this situation, the driver might be required to return an error (for example, E_FAIL) if the driver cannot support the situation independent of a decode device. </p>
 
 ## -requirements
 <table>
@@ -133,10 +125,10 @@ __checkReturn HRESULT APIENTRY DecodeExtensionExecute(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543009">D3DDDIARG_DECODEEXTENSIONEXECUTE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decodeextensionexecute.md">D3DDDIARG_DECODEEXTENSIONEXECUTE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

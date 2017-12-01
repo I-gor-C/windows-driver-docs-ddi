@@ -97,10 +97,10 @@ typedef struct _D3DHAL_DP2SETPIXELSHADERCONST {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545689">D3DHAL_DP2PIXELSHADER</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2pixelshader.md">D3DHAL_DP2PIXELSHADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545467">D3DHAL_DP2CREATEPIXELSHADER</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2createpixelshader.md">D3DHAL_DP2CREATEPIXELSHADER</a>
 </dt>
 </dl>
 <p> </p>

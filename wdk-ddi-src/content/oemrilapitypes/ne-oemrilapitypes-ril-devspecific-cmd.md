@@ -7,7 +7,7 @@ old-location: netvista\ril_devspecific_cmd.htm
 old-project: netvista
 ms.assetid: 5c6ac937-c5ff-4788-9c54-375f364bd823
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RtlUnicodeStringVPrintfEx
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: stream\kscachemedium.htm
 old-project: stream
 ms.assetid: d0e9c146-5d73-49e8-92a8-c453f5bbbfe9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsCacheMedium
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,12 +79,6 @@ NTSTATUS KsCacheMedium(
 <p><b>KsCacheMedium</b> returns STATUS_SUCCESS if the caching operation is successful, failure if it is not.</p>
 
 ## -remarks
-<p><b>KsCacheMedium</b> improves graph building performance by creating a registry key at: </p>
-
-<p><b>\System\CurrentControlSet\Control\MediumCache\GUID\DWORD\DWORD </b></p>
-
-<p>This enables fast lookup of connected filters in TvTuner and other complex graphs.  Note that the GUID identifies the Medium of the connection, and that the DWORDs denote the device instance.  The value name is the SymbolicLink for the driver, and ActualValue is the pin direction.turning. </p>
-
 <p><b>KsCacheMedium</b> improves graph building performance by creating a registry key at: </p>
 
 <p><b>\System\CurrentControlSet\Control\MediumCache\GUID\DWORD\DWORD </b></p>

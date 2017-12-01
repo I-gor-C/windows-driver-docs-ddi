@@ -68,7 +68,7 @@ typedef struct _HIDP_REPORT_IDS {
 ### -field <b>CollectionNumber</b>
 
 <dd>
-<p>The index of the collection in the array of  <a href="https://msdn.microsoft.com/library/windows/hardware/mt740161">HIDP_COLLECTION_DESC</a> structure.</p>
+<p>The index of the collection in the array of  <a href="..\hidpddi\ns-hidpddi--hidp-collection-desc.md">HIDP_COLLECTION_DESC</a> structure.</p>
 </dd>
 
 ### -field <b>InputLength</b>
@@ -110,7 +110,7 @@ typedef struct _HIDP_REPORT_IDS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt740164">HidP_GetCollectionDescription</a>
+<a href="..\hidpddi\nf-hidpddi-hidp-getcollectiondescription.md">HidP_GetCollectionDescription</a>
 </dt>
 </dl>
 <p> </p>

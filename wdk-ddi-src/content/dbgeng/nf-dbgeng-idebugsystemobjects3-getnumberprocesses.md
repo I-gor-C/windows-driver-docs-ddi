@@ -7,7 +7,7 @@ old-location: debugger\getnumberprocesses.htm
 old-project: debugger
 ms.assetid: bf0c750f-0e29-42d9-a127-953e3d49b969
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects3, GetNumberProcesses, IDebugSystemObjects3::GetNumberProcesses
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,12 +69,6 @@ HRESULT GetNumberProcesses(
 <p> </p>
 
 ## -remarks
-<p>In kernel-mode debugging, there is only a single virtual process representing the kernel.</p>
-
-<p>In user-mode debugging, the number of processes changes with the create-process and exit-process debugging <a href="debugger.events#events#events">events</a>.</p>
-
-<p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
 <p>In kernel-mode debugging, there is only a single virtual process representing the kernel.</p>
 
 <p>In user-mode debugging, the number of processes changes with the create-process and exit-process debugging <a href="debugger.events#events#events">events</a>.</p>

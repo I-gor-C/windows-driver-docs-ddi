@@ -72,13 +72,13 @@ typedef struct _DXGKARG_OPENALLOCATION {
 ### -field <b>pOpenAllocation</b>
 
 <dd>
-<p>[in/out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561983">DXGK_OPENALLOCATIONINFO</a> structures for the allocations to open.</p>
+<p>[in/out] An array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a> structures for the allocations to open.</p>
 </dd>
 
 ### -field <b>pPrivateDriverData</b>
 
 <dd>
-<p>[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. This block of private data is the same resource-specific data that is passed in the <b>pPrivateDriverData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557559">DXGKARG_CREATEALLOCATION</a> structure in the call to the <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function. The display miniport driver cannot modify this block of private data.</p>
+<p>[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. This block of private data is the same resource-specific data that is passed in the <b>pPrivateDriverData</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createallocation.md">DXGKARG_CREATEALLOCATION</a> structure in the call to the <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function. The display miniport driver cannot modify this block of private data.</p>
 </dd>
 
 ### -field <b>PrivateDriverSize</b>
@@ -90,7 +90,7 @@ typedef struct _DXGKARG_OPENALLOCATION {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561981">DXGK_OPENALLOCATIONFLAGS</a> structure that identifies the operation to perform for allocations.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-openallocationflags.md">DXGK_OPENALLOCATIONFLAGS</a> structure that identifies the operation to perform for allocations.</p>
 </dd>
 
 ### -field <b>SubresourceIndex</b>
@@ -98,7 +98,7 @@ typedef struct _DXGKARG_OPENALLOCATION {
 <dd>
 <p>[in] Supported beginning with Windows 8.</p>
 <p>An index into the resource for the render target surface.</p>
-<p>The operating system specifies this member only if the display miniport driver supports <a href="https://msdn.microsoft.com/03db58e6-a6d5-4b6f-ba71-d22a985f9c57">GDI Hardware Acceleration</a>. Specifically, the display miniport driver must implement  the <a href="display.dxgkddirenderkm">DxgkDdiRenderKm</a> function and must create the device with the <b>GdiDevice</b> member set in <a href="https://msdn.microsoft.com/library/windows/hardware/ff557570">DXGKARG_CREATEDEVICE</a>.<b>Flags</b>.</p>
+<p>The operating system specifies this member only if the display miniport driver supports <a href="https://msdn.microsoft.com/03db58e6-a6d5-4b6f-ba71-d22a985f9c57">GDI Hardware Acceleration</a>. Specifically, the display miniport driver must implement  the <a href="display.dxgkddirenderkm">DxgkDdiRenderKm</a> function and must create the device with the <b>GdiDevice</b> member set in <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createdevice.md">DXGKARG_CREATEDEVICE</a>.<b>Flags</b>.</p>
 <p>If the value of <b>SubresourceIndex</b> is greater than the number of subresources in the allocation, the display miniport driver should return an error.</p>
 </dd>
 
@@ -145,13 +145,13 @@ typedef struct _DXGKARG_OPENALLOCATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561981">DXGK_OPENALLOCATIONFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-openallocationflags.md">DXGK_OPENALLOCATIONFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561983">DXGK_OPENALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557559">DXGKARG_CREATEALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createallocation.md">DXGKARG_CREATEALLOCATION</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>

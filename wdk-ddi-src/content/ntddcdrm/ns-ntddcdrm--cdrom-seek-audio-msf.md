@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CDROM_SEEK_AUDIO_MSF structure contains the minute, second, and frame that the device must seek to upon receipt of a device control IRP with a control code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559373">IOCTL_CDROM_SEEK_AUDIO_MSF</a>. </p>
+<p>The CDROM_SEEK_AUDIO_MSF structure contains the minute, second, and frame that the device must seek to upon receipt of a device control IRP with a control code of <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-seek-audio-msf.md">IOCTL_CDROM_SEEK_AUDIO_MSF</a>. </p>
 
 
 ## -syntax
@@ -95,7 +95,7 @@ typedef struct _CDROM_SEEK_AUDIO_MSF {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559373">IOCTL_CDROM_SEEK_AUDIO_MSF</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-seek-audio-msf.md">IOCTL_CDROM_SEEK_AUDIO_MSF</a>
 </dt>
 </dl>
 <p> </p>

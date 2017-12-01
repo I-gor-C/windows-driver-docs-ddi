@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTCreateKeyedMutex(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547834">D3DKMT_CREATEKEYEDMUTEX</a> structure that describes a keyed mutex object to create. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createkeyedmutex.md">D3DKMT_CREATEKEYEDMUTEX</a> structure that describes a keyed mutex object to create. </p>
 </dd>
 </dl>
 
@@ -71,7 +71,7 @@ NTSTATUS APIENTRY D3DKMTCreateKeyedMutex(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546845">D3DKMTCreateKeyedMutex</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatekeyedmutex.md">D3DKMTCreateKeyedMutex</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
@@ -135,7 +135,7 @@ NTSTATUS APIENTRY D3DKMTCreateKeyedMutex(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547834">D3DKMT_CREATEKEYEDMUTEX</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createkeyedmutex.md">D3DKMT_CREATEKEYEDMUTEX</a>
 </dt>
 </dl>
 <p> </p>

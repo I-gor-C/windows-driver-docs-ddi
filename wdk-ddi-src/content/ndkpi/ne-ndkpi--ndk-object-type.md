@@ -7,7 +7,7 @@ old-location: netvista\ndk_object_type.htm
 old-project: netvista
 ms.assetid: 8CB39DF6-00DA-4480-A44E-62CAF1DB35CE
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,61 +74,61 @@ typedef enum _NDK_OBJECT_TYPE {
 ### -field <a id="NdkObjectTypeAdapter"></a><a id="ndkobjecttypeadapter"></a><a id="NDKOBJECTTYPEADAPTER"></a><b>NdkObjectTypeAdapter</b>
 
 <dd>
-<p>Specifies an NDK adapter object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439848">NDK_ADAPTER</a>).</p>
+<p>Specifies an NDK adapter object (<a href="..\ndkpi\ns-ndkpi--ndk-adapter.md">NDK_ADAPTER</a>).</p>
 </dd>
 
 ### -field <a id="NdkObjectTypeQp"></a><a id="ndkobjecttypeqp"></a><a id="NDKOBJECTTYPEQP"></a><b>NdkObjectTypeQp</b>
 
 <dd>
-<p>Specifies an NDK queue pair (QP) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439933">NDK_QP</a>).</p>
+<p>Specifies an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>).</p>
 </dd>
 
 ### -field <a id="NdkObjectTypeCq"></a><a id="ndkobjecttypecq"></a><a id="NDKOBJECTTYPECQ"></a><b>NdkObjectTypeCq</b>
 
 <dd>
-<p>Specifies an NDK completion queue (CQ) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439854">NDK_CQ</a>).</p>
+<p>Specifies an NDK completion queue (CQ) object (<a href="..\ndkpi\ns-ndkpi--ndk-cq.md">NDK_CQ</a>).</p>
 </dd>
 
 ### -field <a id="NdkObjectTypeMr"></a><a id="ndkobjecttypemr"></a><a id="NDKOBJECTTYPEMR"></a><b>NdkObjectTypeMr</b>
 
 <dd>
-<p>Specifies an NDK memory region (MR) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439922">NDK_MR</a>).</p>
+<p>Specifies an NDK memory region (MR) object (<a href="..\ndkpi\ns-ndkpi--ndk-mr.md">NDK_MR</a>).</p>
 </dd>
 
 ### -field <a id="NdkObjectTypeMw"></a><a id="ndkobjecttypemw"></a><a id="NDKOBJECTTYPEMW"></a><b>NdkObjectTypeMw</b>
 
 <dd>
-<p>Specifies an NDK memory window (MW) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439926">NDK_MW</a>).</p>
+<p>Specifies an NDK memory window (MW) object (<a href="..\ndkpi\ns-ndkpi--ndk-mw.md">NDK_MW</a>).</p>
 </dd>
 
 ### -field <a id="NdkObjectTypePd"></a><a id="ndkobjecttypepd"></a><a id="NDKOBJECTTYPEPD"></a><b>NdkObjectTypePd</b>
 
 <dd>
-<p>Specifies an NDK protection domain (PD) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439931">NDK_PD</a>).</p>
+<p>Specifies an NDK protection domain (PD) object (<a href="..\ndkpi\ns-ndkpi--ndk-pd.md">NDK_PD</a>).</p>
 </dd>
 
 ### -field <a id="NdkObjectTypeSharedEndpoint"></a><a id="ndkobjecttypesharedendpoint"></a><a id="NDKOBJECTTYPESHAREDENDPOINT"></a><b>NdkObjectTypeSharedEndpoint</b>
 
 <dd>
-<p>Specifies an NDK shared endpoint object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439937">NDK_SHARED_ENDPOINT</a>).</p>
+<p>Specifies an NDK shared endpoint object (<a href="..\ndkpi\ns-ndkpi--ndk-shared-endpoint.md">NDK_SHARED_ENDPOINT</a>).</p>
 </dd>
 
 ### -field <a id="NdkObjectTypeConnector"></a><a id="ndkobjecttypeconnector"></a><a id="NDKOBJECTTYPECONNECTOR"></a><b>NdkObjectTypeConnector</b>
 
 <dd>
-<p>Specifies an NDK connector object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439852">NDK_CONNECTOR</a>).</p>
+<p>Specifies an NDK connector object (<a href="..\ndkpi\ns-ndkpi--ndk-connector.md">NDK_CONNECTOR</a>).</p>
 </dd>
 
 ### -field <a id="NdkObjectTypeListener"></a><a id="ndkobjecttypelistener"></a><a id="NDKOBJECTTYPELISTENER"></a><b>NdkObjectTypeListener</b>
 
 <dd>
-<p>Specifies an NDK listener object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439918">NDK_LISTENER</a>).</p>
+<p>Specifies an NDK listener object (<a href="..\ndkpi\ns-ndkpi--ndk-listener.md">NDK_LISTENER</a>).</p>
 </dd>
 
 ### -field <a id="NdkObjectTypeSrq"></a><a id="ndkobjecttypesrq"></a><a id="NDKOBJECTTYPESRQ"></a><b>NdkObjectTypeSrq</b>
 
 <dd>
-<p>Specifies an NDK shared receive queue (SRQ) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439939">NDK_SRQ</a>).</p>
+<p>Specifies an NDK shared receive queue (SRQ) object (<a href="..\ndkpi\ns-ndkpi--ndk-srq.md">NDK_SRQ</a>).</p>
 </dd>
 
 ### -field <a id="NdkObjectTypeMax"></a><a id="ndkobjecttypemax"></a><a id="NDKOBJECTTYPEMAX"></a><b>NdkObjectTypeMax</b>
@@ -141,11 +141,7 @@ typedef enum _NDK_OBJECT_TYPE {
 </dl>
 
 ## -remarks
-<p>NDK objects include an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a> structure that packages the object type,  version, and other information.</p>
-
-<p>NDK objects include an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a> structure that packages the object type,  version, and other information.</p>
-
-<p>NDK objects include an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a> structure that packages the object type,  version, and other information.</p>
+<p>NDK objects include an <a href="..\ndkpi\ns-ndkpi--ndk-object-header.md">NDK_OBJECT_HEADER</a> structure that packages the object type,  version, and other information.</p>
 
 ## -requirements
 <table>
@@ -188,39 +184,39 @@ typedef enum _NDK_OBJECT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439848">NDK_ADAPTER</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-adapter.md">NDK_ADAPTER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439852">NDK_CONNECTOR</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-connector.md">NDK_CONNECTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439854">NDK_CQ</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-cq.md">NDK_CQ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439918">NDK_LISTENER</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-listener.md">NDK_LISTENER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439922">NDK_MR</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-mr.md">NDK_MR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439926">NDK_MW</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-mw.md">NDK_MW</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-object-header.md">NDK_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439931">NDK_PD</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-pd.md">NDK_PD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439933">NDK_QP</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439937">NDK_SHARED_ENDPOINT</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-shared-endpoint.md">NDK_SHARED_ENDPOINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439939">NDK_SRQ</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-srq.md">NDK_SRQ</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_OBJECT_TYPE enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_OBJECT_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

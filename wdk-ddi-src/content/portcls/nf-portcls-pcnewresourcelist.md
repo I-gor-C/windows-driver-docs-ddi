@@ -7,7 +7,7 @@ old-location: audio\pcnewresourcelist.htm
 old-project: audio
 ms.assetid: 80576db6-38de-46c6-89f1-a3dde613fed1
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcNewResourceList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS PcNewResourceList(
 ### -param <i>OutResourceList</i> [out]
 
 <dd>
-<p>Output pointer for the resource-list object created by this function. This parameter points to a caller-allocated pointer variable into which the function outputs the pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536976">IResourceList</a> object. Specify a valid, non-<b>NULL</b> pointer value for this parameter.</p>
+<p>Output pointer for the resource-list object created by this function. This parameter points to a caller-allocated pointer variable into which the function outputs the pointer to the <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> object. Specify a valid, non-<b>NULL</b> pointer value for this parameter.</p>
 </dd>
 
 ### -param <i>OuterUnknown</i> [in, optional]
@@ -73,19 +73,19 @@ NTSTATUS PcNewResourceList(
 ### -param <i>PoolType</i> [in]
 
 <dd>
-<p>Specifies the type of pool from which the object is to be allocated. This is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a> enumeration value.</p>
+<p>Specifies the type of pool from which the object is to be allocated. This is a <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> enumeration value.</p>
 </dd>
 
 ### -param <i>TranslatedResources</i> [in]
 
 <dd>
-<p>Pointer to a WDM-supplied resource list for translated resources. The list is a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541994">CM_RESOURCE_LIST</a>.</p>
+<p>Pointer to a WDM-supplied resource list for translated resources. The list is a system structure of type <a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a>.</p>
 </dd>
 
 ### -param <i>UntranslatedResources</i> [in]
 
 <dd>
-<p>Pointer to a WDM-supplied resource list for untranslated resources. The list is a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541994">CM_RESOURCE_LIST</a>.</p>
+<p>Pointer to a WDM-supplied resource list for untranslated resources. The list is a system structure of type <a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a>.</p>
 </dd>
 </dl>
 
@@ -93,10 +93,6 @@ NTSTATUS PcNewResourceList(
 <p><b>PcNewResourceList</b> returns STATUS_SUCCESS if the call was successful. Otherwise, it returns an appropriate error code.</p>
 
 ## -remarks
-<p>For a discussion of translated and untranslated (or "raw") resource lists, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554399">Mapping Bus-Relative Addresses to Virtual Addresses</a>.</p>
-
-<p>The <i>OutResourceList</i> and <i>OuterUnknown</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
-
 <p>For a discussion of translated and untranslated (or "raw") resource lists, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554399">Mapping Bus-Relative Addresses to Virtual Addresses</a>.</p>
 
 <p>The <i>OutResourceList</i> and <i>OuterUnknown</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
@@ -154,15 +150,15 @@ NTSTATUS PcNewResourceList(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536976">IResourceList</a>
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a>
+<a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541994">CM_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcNewResourceList function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcNewResourceList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

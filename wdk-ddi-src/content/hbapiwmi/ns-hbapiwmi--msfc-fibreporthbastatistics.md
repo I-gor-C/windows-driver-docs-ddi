@@ -65,13 +65,13 @@ typedef struct _MSFC_FibrePortHBAStatistics {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>. </p>
+<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
 ### -field <b>Statistics</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562512">MSFC_HBAPortStatistics</a> with statistical information about the port. </p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--msfc-hbaportstatistics.md">MSFC_HBAPortStatistics</a> with statistical information about the port. </p>
 </dd>
 </dl>
 
@@ -95,7 +95,7 @@ typedef struct _MSFC_FibrePortHBAStatistics {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562505">MSFC_FibrePortHBAStatistics WMI Class</a>
+<a href="storage.msfc_fibreporthbastatistics_wmi_class">MSFC_FibrePortHBAStatistics WMI Class</a>
 </dt>
 </dl>
 <p> </p>

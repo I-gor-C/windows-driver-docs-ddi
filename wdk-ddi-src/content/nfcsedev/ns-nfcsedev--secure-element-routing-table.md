@@ -7,7 +7,7 @@ old-location: nfpdrivers\_secure_element_routing_table.htm
 old-project: nfpdrivers
 ms.assetid: AD5E6434-BBBF-44CB-8153-B8F4D4F75E94
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: SECURE_ELEMENT_ROUTING_TABLE, SECURE_ELEMENT_ROUTING_TABLE, *PSECURE_ELEMENT_ROUTING_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>SECURE_ELEMENT_ROUTING_TABLE is an input parameter for <a href="https://msdn.microsoft.com/library/windows/hardware/dn905513">IOCTL_NFCSE_SET_ROUTING_TABLE</a>.</p>
+<p>SECURE_ELEMENT_ROUTING_TABLE is an input parameter for <a href="..\nfcsedev\ni-nfcsedev-ioctl-nfcse-set-routing-table.md">IOCTL_NFCSE_SET_ROUTING_TABLE</a>.</p>
 
 
 ## -syntax

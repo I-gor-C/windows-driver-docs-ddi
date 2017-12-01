@@ -64,7 +64,7 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS_INPUT {
 ### -field <b>GroupIndex</b>
 
 <dd>
-<p>[in] The index of the overlay capability group for which capabilities are queried. This value is always between zero and (<a href="https://msdn.microsoft.com/library/windows/hardware/hh780236">D3DDDI_MULTIPLANE_OVERLAY_CAPS</a>.<b>NumCapabilityGroups</b> – 1).</p>
+<p>[in] The index of the overlay capability group for which capabilities are queried. This value is always between zero and (<a href="..\d3dumddi\ns-d3dumddi-d3dddi-multiplane-overlay-caps.md">D3DDDI_MULTIPLANE_OVERLAY_CAPS</a>.<b>NumCapabilityGroups</b> – 1).</p>
 </dd>
 </dl>
 
@@ -88,7 +88,7 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS_INPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780236">D3DDDI_MULTIPLANE_OVERLAY_CAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddi-multiplane-overlay-caps.md">D3DDDI_MULTIPLANE_OVERLAY_CAPS</a>
 </dt>
 </dl>
 <p> </p>

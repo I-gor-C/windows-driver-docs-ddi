@@ -110,7 +110,7 @@ typedef struct _FILE_LINK_ENTRY_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff728841">FILE_LINKS_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-links-information.md">FILE_LINKS_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

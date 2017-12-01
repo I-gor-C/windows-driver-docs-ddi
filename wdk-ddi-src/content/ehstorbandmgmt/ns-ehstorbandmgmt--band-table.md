@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>BAND_TABLE</b> structure contains the table of bands returned from an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451380">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a> request. The bands in the band table are selected by a match condition sent as input for <b>IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</b> in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439719">ENUMERATE_BANDS_PARAMETERS</a> structure.</p>
+<p>The <b>BAND_TABLE</b> structure contains the table of bands returned from an <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-enumerate-bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a> request. The bands in the band table are selected by a match condition sent as input for <b>IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</b> in the <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--enumerate-bands-parameters.md">ENUMERATE_BANDS_PARAMETERS</a> structure.</p>
 
 
 ## -syntax
@@ -66,13 +66,13 @@ typedef struct _BAND_TABLE {
 ### -field <b>BandTableOffset</b>
 
 <dd>
-<p>The offset, in bytes, to the start of an array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh439578">BAND_TABLE_ENTRY</a> structures.</p>
+<p>The offset, in bytes, to the start of an array of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-table-entry.md">BAND_TABLE_ENTRY</a> structures.</p>
 </dd>
 
 ### -field <b>BandTableEntryCount</b>
 
 <dd>
-<p>The number of <a href="https://msdn.microsoft.com/library/windows/hardware/hh439578">BAND_TABLE_ENTRY</a> returned in the array at <b>BandTableOffset</b>.</p>
+<p>The number of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-table-entry.md">BAND_TABLE_ENTRY</a> returned in the array at <b>BandTableOffset</b>.</p>
 </dd>
 
 ### -field <b>BandTableEntrySize</b>
@@ -110,13 +110,13 @@ typedef struct _BAND_TABLE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439578">BAND_TABLE_ENTRY</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-table-entry.md">BAND_TABLE_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439719">ENUMERATE_BANDS_PARAMETERS</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--enumerate-bands-parameters.md">ENUMERATE_BANDS_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451380">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a>
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-enumerate-bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a>
 </dt>
 </dl>
 <p> </p>

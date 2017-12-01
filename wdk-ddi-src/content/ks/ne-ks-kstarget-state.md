@@ -7,7 +7,7 @@ old-location: stream\kstarget_state.htm
 old-project: stream
 ms.assetid: 4D18A0F0-51E9-4871-B8C1-32FAA518FAEC
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

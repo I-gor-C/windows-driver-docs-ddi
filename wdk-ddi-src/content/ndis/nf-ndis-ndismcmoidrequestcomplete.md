@@ -7,7 +7,7 @@ old-location: netvista\ndismcmoidrequestcomplete.htm
 old-project: netvista
 ms.assetid: 4c45be9f-3d07-4150-830a-3aa6d74531ff
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCmOidRequestComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,7 +76,7 @@ VOID NdisMCmOidRequestComplete(
 <p>A virtual connection (VC) handle that NDIS passed to the MCM's 
      <i>ProtocolCoOidRequest</i> function. A <b>NULL</b> value for this parameter indicates that the request is not
      VC-specific. This parameter is <b>NULL</b> if the caller of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561711">NdisCoOidRequest</a> function specified a
+     <a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a> function specified a
      <b>NULL</b> VC handle.</p>
 </dd>
 
@@ -93,7 +93,7 @@ VOID NdisMCmOidRequestComplete(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure that the caller
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure that the caller
      of the 
      <b>NdisCoOidRequest</b> function supplied.</p>
 </dd>
@@ -120,24 +120,10 @@ VOID NdisMCmOidRequestComplete(
     <b>NdisMCmOidRequestComplete</b>, NDIS calls the 
     <a href="..\ndis\nc-ndis-protocol-co-oid-request-complete.md">
     ProtocolCoOidRequestComplete</a> function of the CoNDIS client that originally called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561711">NdisCoOidRequest</a> function.</p>
+    <a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a> function.</p>
 
 <p>For more information about the OIDs defined to use with CONDIS drivers, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566707">NDIS OIDs</a>.</p>
-
-<p>A CoNDIS MCM that returns NDIS_STATUS_PENDING from its 
-    <a href="..\ndis\nc-ndis-protocol-co-oid-request.md">ProtocolCoOidRequest</a> function must
-    call the 
-    <b>NdisMCmOidRequestComplete</b> function after the MCM has finished the OID request operation.</p>
-
-<p>After the MCM calls 
-    <b>NdisMCmOidRequestComplete</b>, NDIS calls the 
-    <a href="..\ndis\nc-ndis-protocol-co-oid-request-complete.md">
-    ProtocolCoOidRequestComplete</a> function of the CoNDIS client that originally called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561711">NdisCoOidRequest</a> function.</p>
-
-<p>For more information about the OIDs defined to use with CONDIS drivers, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566707">NDIS OIDs</a>.</p>
+    <a href="netvista.ndis_oids">NDIS OIDs</a>.</p>
 
 ## -requirements
 <table>
@@ -182,7 +168,7 @@ VOID NdisMCmOidRequestComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
+<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -190,10 +176,10 @@ VOID NdisMCmOidRequestComplete(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561711">NdisCoOidRequest</a>
+<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-co-oid-request.md">ProtocolCoOidRequest</a>
@@ -205,4 +191,4 @@ VOID NdisMCmOidRequestComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmOidRequestComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmOidRequestComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

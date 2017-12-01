@@ -7,7 +7,7 @@ old-location: stream\bda_ipv6_address_list.htm
 old-project: stream
 ms.assetid: 45C8C690-7545-47D5-8E98-FB976797AA1A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_IPv6_ADDRESS_LIST, BDA_IPv6_ADDRESS_LIST, *PBDA_IPv6_ADDRESS_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices

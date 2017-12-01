@@ -7,7 +7,7 @@ old-location: debugger\isptr64.htm
 old-project: debugger
 ms.assetid: 0474a8dc-e2e3-4c84-8058-6229bf0e9d62
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IsPtr64
 ms.prod: windows-hardware
 ms.technology: windows-devices

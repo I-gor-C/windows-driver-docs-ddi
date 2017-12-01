@@ -57,7 +57,7 @@ BOOLEAN FltIsCallbackDataDirty(
 ### -param <i>Data</i> [in]
 
 <dd>
-<p>Pointer to a callback data structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>). </p>
+<p>Pointer to a callback data structure (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>). </p>
 </dd>
 </dl>
 
@@ -65,13 +65,9 @@ BOOLEAN FltIsCallbackDataDirty(
 <p>If the FLTFL_CALLBACK_DATA_DIRTY flag is set in the callback data structure, the return value is <b>TRUE</b>. Otherwise, the return value is <b>FALSE</b>. </p>
 
 ## -remarks
-<p>To set an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a> structure's FLTFL_CALLBACK_DATA_DIRTY flag, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544383">FltSetCallbackDataDirty</a>. </p>
+<p>To set an <a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a> structure's FLTFL_CALLBACK_DATA_DIRTY flag, call <a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>. </p>
 
-<p>To clear a callback data structure's FLTFL_CALLBACK_DATA_DIRTY flag, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541853">FltClearCallbackDataDirty</a>. </p>
-
-<p>To set an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a> structure's FLTFL_CALLBACK_DATA_DIRTY flag, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544383">FltSetCallbackDataDirty</a>. </p>
-
-<p>To clear a callback data structure's FLTFL_CALLBACK_DATA_DIRTY flag, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541853">FltClearCallbackDataDirty</a>. </p>
+<p>To clear a callback data structure's FLTFL_CALLBACK_DATA_DIRTY flag, call <a href="..\fltkernel\nf-fltkernel-fltclearcallbackdatadirty.md">FltClearCallbackDataDirty</a>. </p>
 
 ## -requirements
 <table>
@@ -120,13 +116,13 @@ BOOLEAN FltIsCallbackDataDirty(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541853">FltClearCallbackDataDirty</a>
+<a href="..\fltkernel\nf-fltkernel-fltclearcallbackdatadirty.md">FltClearCallbackDataDirty</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544383">FltSetCallbackDataDirty</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>
 </dt>
 </dl>
 <p> </p>

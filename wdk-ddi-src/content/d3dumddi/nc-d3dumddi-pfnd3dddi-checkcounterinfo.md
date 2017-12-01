@@ -69,7 +69,7 @@ VOID APIENTRY* pfnCheckCounterInfo(
 ### -param <i>pCounterInfo</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn449152">D3DDDIARG_COUNTER_INFO</a> structure that the driver populates with global information that's related to manipulating counters.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-counter-info.md">D3DDDIARG_COUNTER_INFO</a> structure that the driver populates with global information that's related to manipulating counters.</p>
 </dd>
 </dl>
 
@@ -81,13 +81,7 @@ VOID APIENTRY* pfnCheckCounterInfo(
 ## -remarks
 <p>This function should behave similarly to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-checkcounterinfo.md">CheckCounterInfo</a> function that supports Microsoft Direct3D 10 and later.</p>
 
-<p>If the user-mode display driver does not support any of the concepts that are represented in the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn449152">D3DDDIARG_COUNTER_INFO</a> structure, it can populate the members of <b>D3DDDIARG_COUNTER_INFO</b> with zeros.</p>
-
-<p>The driver's <i>pfnCheckCounterInfo</i> function cannot call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> callback function to set the <b>D3DDDIERR_DEVICEREMOVED</b> error code because <i>pfnCheckCounterInfo</i> is a capability-check type of function. The driver must ensure that it has enough information after device creation to respond to a call to <i>pfnCheckCounterInfo</i>, even in the presence of <b>D3DDDIERR_DEVICEREMOVED</b>. <i>pfnCheckCounterInfo</i> should not encounter any errors. However, <i>pfnCheckCounterInfo</i> might call <b>pfnSetErrorCb</b> for critical errors.</p>
-
-<p>This function should behave similarly to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-checkcounterinfo.md">CheckCounterInfo</a> function that supports Microsoft Direct3D 10 and later.</p>
-
-<p>If the user-mode display driver does not support any of the concepts that are represented in the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn449152">D3DDDIARG_COUNTER_INFO</a> structure, it can populate the members of <b>D3DDDIARG_COUNTER_INFO</b> with zeros.</p>
+<p>If the user-mode display driver does not support any of the concepts that are represented in the members of the <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-counter-info.md">D3DDDIARG_COUNTER_INFO</a> structure, it can populate the members of <b>D3DDDIARG_COUNTER_INFO</b> with zeros.</p>
 
 <p>The driver's <i>pfnCheckCounterInfo</i> function cannot call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> callback function to set the <b>D3DDDIERR_DEVICEREMOVED</b> error code because <i>pfnCheckCounterInfo</i> is a capability-check type of function. The driver must ensure that it has enough information after device creation to respond to a call to <i>pfnCheckCounterInfo</i>, even in the presence of <b>D3DDDIERR_DEVICEREMOVED</b>. <i>pfnCheckCounterInfo</i> should not encounter any errors. However, <i>pfnCheckCounterInfo</i> might call <b>pfnSetErrorCb</b> for critical errors.</p>
 
@@ -137,7 +131,7 @@ VOID APIENTRY* pfnCheckCounterInfo(
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-checkcounterinfo.md">CheckCounterInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn449152">D3DDDIARG_COUNTER_INFO</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-counter-info.md">D3DDDIARG_COUNTER_INFO</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a>

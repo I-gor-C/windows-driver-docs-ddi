@@ -75,9 +75,7 @@ BOOLEAN TapeMiniVerifyInquiry(
 <p><i>TapeMiniVerifyInquiry</i> returns <b>TRUE</b> if the miniclass driver supports the device.</p>
 
 ## -remarks
-<p><i>TapeMiniVerifyInquiry</i> examines the <i>InquiryData</i>, particularly the <b>VendorId</b> and <b>ProductId</b> members, to determine whether the tape miniclass driver supports the tape device. <i>TapeMiniVerifyInquiry</i> uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567617">TapeClassCompareMemory</a> to compare ID strings against values the tape miniclass driver supports.</p>
-
-<p><i>TapeMiniVerifyInquiry</i> examines the <i>InquiryData</i>, particularly the <b>VendorId</b> and <b>ProductId</b> members, to determine whether the tape miniclass driver supports the tape device. <i>TapeMiniVerifyInquiry</i> uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567617">TapeClassCompareMemory</a> to compare ID strings against values the tape miniclass driver supports.</p>
+<p><i>TapeMiniVerifyInquiry</i> examines the <i>InquiryData</i>, particularly the <b>VendorId</b> and <b>ProductId</b> members, to determine whether the tape miniclass driver supports the tape device. <i>TapeMiniVerifyInquiry</i> uses <a href="..\minitape\nf-minitape-tapeclasscomparememory.md">TapeClassCompareMemory</a> to compare ID strings against values the tape miniclass driver supports.</p>
 
 ## -requirements
 <table>
@@ -106,10 +104,10 @@ BOOLEAN TapeMiniVerifyInquiry(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567617">TapeClassCompareMemory</a>
+<a href="..\minitape\nf-minitape-tapeclasscomparememory.md">TapeClassCompareMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567975">TAPE_STATUS</a>
+<a href="..\minitape\ne-minitape--tape-status.md">TAPE_STATUS</a>
 </dt>
 </dl>
 <p> </p>

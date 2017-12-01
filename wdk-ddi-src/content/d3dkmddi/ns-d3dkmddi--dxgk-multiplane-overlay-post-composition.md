@@ -87,45 +87,7 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION {
 
 For example, if a 1024x768 virtual mode is used with 1920x1080 physical mode, the following configurations are possible:
 
-</p><dl>
-<dd>Stretch mode:
-<dl>
-<dd>SrcRect = {0, 0, 1024, 768}
-</dd>
-<dd>DstRect = {0, 0, 1920, 1080}</dd>
-</dl>
-</dd>
-<dd>Centered mode:
-<dl>
-<dd>SrcRect = {0, 0, 1024, 768}</dd>
-<dd>DstRect = {448, 156, 1472, 924}  
-
-</dd>
-</dl>
-</dd>
-<dd>Aspect ratio stretched:
-<dl>
-<dd>SrcRect = {0, 0, 1024, 768}
-</dd>
-<dd>DstRect = {240, 0, 1680, 1080}   // 1080p monitor resolution
-</dd>
-</dl>
-</dd>
-</dl><dl>
-<dd>SrcRect = {0, 0, 1024, 768}
-</dd>
-<dd>DstRect = {0, 0, 1920, 1080}</dd>
-</dl><dl>
-<dd>SrcRect = {0, 0, 1024, 768}</dd>
-<dd>DstRect = {448, 156, 1472, 924}  
-
-</dd>
-</dl><dl>
-<dd>SrcRect = {0, 0, 1024, 768}
-</dd>
-<dd>DstRect = {240, 0, 1680, 1080}   // 1080p monitor resolution
-</dd>
-</dl>
+</p>
 
 ## -requirements
 <table>

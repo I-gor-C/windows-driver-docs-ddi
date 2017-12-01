@@ -7,7 +7,7 @@ old-location: stream\bda_scan_start.htm
 old-project: stream
 ms.assetid: 931CC532-BC46-4B64-B6BA-29D20827EC0A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_SCAN_START, BDA_SCAN_START, *PBDA_SCAN_START
 ms.prod: windows-hardware
 ms.technology: windows-devices

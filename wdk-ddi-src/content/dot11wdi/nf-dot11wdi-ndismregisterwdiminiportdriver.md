@@ -7,7 +7,7 @@ old-location: netvista\ndismregisterwdiminiportdriver.htm
 old-project: netvista
 ms.assetid: 60FE4E6C-38D4-438F-983B-7336926F6FE2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMRegisterWdiMiniportDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ NDIS_STATUS NdisMRegisterWdiMiniportDriver(
 
 <dd>
 <p>A pointer to an opaque driver object that the miniport driver received in its 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine at the 
+     <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine at the 
      <i>Argument1</i> parameter (see 
      <a href="netvista.driverentry_of_ndis_miniport_drivers">DriverEntry of NDIS
      Miniport Drivers</a>).</p>
@@ -73,7 +73,7 @@ NDIS_STATUS NdisMRegisterWdiMiniportDriver(
 
 <dd>
 <p>A pointer to an opaque registry path that the miniport driver received in its 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine at the 
+     <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine at the 
      <i>Argument2</i> parameter.</p>
 </dd>
 
@@ -97,7 +97,7 @@ NDIS_STATUS NdisMRegisterWdiMiniportDriver(
 <dd>
 <p>A pointer to an 
      
-     <a href="https://msdn.microsoft.com/library/windows/hardware/mt297617">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a> structure that the caller initialized.</p>
+     <a href="..\dot11wdi\ns-dot11wdi--ndis-miniport-driver-wdi-characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a> structure that the caller initialized.</p>
 </dd>
 
 ### -param <i>NdisMiniportDriverHandle</i> [out]
@@ -187,15 +187,15 @@ NDIS_STATUS NdisMRegisterWdiMiniportDriver(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>
+<a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565958">NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a>
+<a href="..\ndis\ns-ndis--ndis-miniport-driver-characteristics.md">NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt297617">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
+<a href="..\dot11wdi\ns-dot11wdi--ndis-miniport-driver-wdi-characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterWdiMiniportDriver function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterWdiMiniportDriver function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

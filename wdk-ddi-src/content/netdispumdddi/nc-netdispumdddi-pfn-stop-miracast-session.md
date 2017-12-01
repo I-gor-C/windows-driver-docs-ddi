@@ -75,12 +75,6 @@ VOID StopMiracastSession(
 
 <p>The operating system guarantees that only one of the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a>, <a href="..\netdispumdddi\nc-netdispumdddi-pfn-destroy-miracast-context.md">DestroyMiracastContext</a>, <a href="..\netdispumdddi\nc-netdispumdddi-pfn-start-miracast-session.md">StartMiracastSession</a>, and <i>StopMiracastSession</i> functions is called at a time.</p>
 
-<p>When this function is called, the Miracast user-mode driver should follow these procedures:</p>
-
-<p>Also, after this function is called, the Miracast user-mode driver might still receive stream data that the display miniport driver generated. The user-mode driver should drop the stream.</p>
-
-<p>The operating system guarantees that only one of the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a>, <a href="..\netdispumdddi\nc-netdispumdddi-pfn-destroy-miracast-context.md">DestroyMiracastContext</a>, <a href="..\netdispumdddi\nc-netdispumdddi-pfn-start-miracast-session.md">StartMiracastSession</a>, and <i>StopMiracastSession</i> functions is called at a time.</p>
-
 ## -requirements
 <table>
 <tr>

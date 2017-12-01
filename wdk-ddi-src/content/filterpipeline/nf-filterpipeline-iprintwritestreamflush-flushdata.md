@@ -39,7 +39,7 @@ req.iface: IPrintWriteStreamFlush
 
 
 ## -description
-<p>The FlushData method flushes buffered data to a data stream while leaving the stream open, allowing the caller to write additional data to the stream.Writing to the stream is done using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554394">IPrintWriteStream::WriteBytes</a> method.</p>
+<p>The FlushData method flushes buffered data to a data stream while leaving the stream open, allowing the caller to write additional data to the stream.Writing to the stream is done using the <a href="print.iprintwritestream_writebytes">IPrintWriteStream::WriteBytes</a> method.</p>
 
 
 ## -syntax
@@ -65,10 +65,6 @@ HRESULT FlushData(
 <p>The FlushData method returns an HRESULT value.</p>
 
 ## -remarks
-<p>Only the last filter in the print filter pipeline benefits from the flush. The data is flushed to the port monitor. However, the port monitor has the option of using  buffers.</p>
-
-<p>The following code snippet shows how to flush data to a data stream. Note that error checking has been omitted for clarity.</p>
-
 <p>Only the last filter in the print filter pipeline benefits from the flush. The data is flushed to the port monitor. However, the port monitor has the option of using  buffers.</p>
 
 <p>The following code snippet shows how to flush data to a data stream. Note that error checking has been omitted for clarity.</p>
@@ -100,10 +96,10 @@ HRESULT FlushData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh768282">IPrintWriteStreamFlush</a>
+<a href="print.iprintwritestreamflush">IPrintWriteStreamFlush</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554394">IPrintWriteStream::WriteBytes</a>
+<a href="print.iprintwritestream_writebytes">IPrintWriteStream::WriteBytes</a>
 </dt>
 </dl>
 <p> </p>

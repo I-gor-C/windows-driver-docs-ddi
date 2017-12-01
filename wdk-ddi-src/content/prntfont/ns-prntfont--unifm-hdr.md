@@ -91,31 +91,31 @@ typedef struct _UNIFM_HDR {
 ### -field <b>loUnidrvInfo</b>
 
 <dd>
-<p>Specifies the byte offset from the beginning of the .ufm (Unidrv Font Metrics) file to the location of the file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff562872">UNIDRVINFO</a> structure.</p>
+<p>Specifies the byte offset from the beginning of the .ufm (Unidrv Font Metrics) file to the location of the file's <a href="..\prntfont\ns-prntfont--unidrvinfo.md">UNIDRVINFO</a> structure.</p>
 </dd>
 
 ### -field <b>loIFIMetrics</b>
 
 <dd>
-<p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569182">PRINTIFI32</a> structure.</p>
+<p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont--printifi32.md">PRINTIFI32</a> structure.</p>
 </dd>
 
 ### -field <b>loExtTextMetric</b>
 
 <dd>
-<p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548801">EXTTEXTMETRIC</a> structure.</p>
+<p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont--exttextmetric.md">EXTTEXTMETRIC</a> structure.</p>
 </dd>
 
 ### -field <b>loWidthTable</b>
 
 <dd>
-<p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563774">WIDTHTABLE</a> structure.</p>
+<p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont--widthtable.md">WIDTHTABLE</a> structure.</p>
 </dd>
 
 ### -field <b>loKernPair</b>
 
 <dd>
-<p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556437">KERNDATA</a> structure.</p>
+<p>Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont--kerndata.md">KERNDATA</a> structure.</p>
 </dd>
 
 ### -field <b>dwReserved</b>
@@ -130,7 +130,7 @@ typedef struct _UNIFM_HDR {
 
 <p>If <b>lGlyphSetDataRCID</b> is not CC_DEFAULT, then the following rules apply:</p>
 
-<p>If <b>lGlyphSetDataRCID</b> contains an RC_GTT resource identifier, the code page number specified for <b>ulDefaultCodepage</b> must be the same code page number that is contained in the .gtt (Glyph Translation Table) file's first <a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a> structure.</p>
+<p>If <b>lGlyphSetDataRCID</b> contains an RC_GTT resource identifier, the code page number specified for <b>ulDefaultCodepage</b> must be the same code page number that is contained in the .gtt (Glyph Translation Table) file's first <a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a> structure.</p>
 
 <p>If <b>lGlyphSetDataRCID</b> contains one of the CC_-prefixed code conversion identifiers (other than CC_DEFAULT), the code page number specified for <b>ulDefaultCodepage</b> must be the code page number that is associated with the CC_-prefixed identifier. (These code page numbers are listed in Prntfont.h, next to each CC_-prefixed identifier.)</p>
 
@@ -155,22 +155,22 @@ typedef struct _UNIFM_HDR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562872">UNIDRVINFO</a>
+<a href="..\prntfont\ns-prntfont--unidrvinfo.md">UNIDRVINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569182">PRINTIFI32</a>
+<a href="..\prntfont\ns-prntfont--printifi32.md">PRINTIFI32</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548801">EXTTEXTMETRIC</a>
+<a href="..\prntfont\ns-prntfont--exttextmetric.md">EXTTEXTMETRIC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563774">WIDTHTABLE</a>
+<a href="..\prntfont\ns-prntfont--widthtable.md">WIDTHTABLE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556437">KERNDATA</a>
+<a href="..\prntfont\ns-prntfont--kerndata.md">KERNDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a>
+<a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a>
 </dt>
 </dl>
 <p> </p>

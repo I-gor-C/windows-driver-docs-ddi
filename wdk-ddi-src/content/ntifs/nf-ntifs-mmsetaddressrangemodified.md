@@ -78,12 +78,6 @@ BOOLEAN MmSetAddressRangeModified(
 
 <p>Callers of <b>MmSetAddressRangeModified</b> must be running at IRQL &lt; DISPATCH_LEVEL for pageable addresses, and IRQL &lt;= DISPATCH_LEVEL for nonpageable addresses.</p>
 
-<p>The entire range specified by <i>Address</i> and <i>Length</i> must reside within the system cache.</p>
-
-<p>For more information about memory management, see <a href="https://msdn.microsoft.com/e030a37c-26ab-4177-9980-4336928975e1">Memory Management</a>. </p>
-
-<p>Callers of <b>MmSetAddressRangeModified</b> must be running at IRQL &lt; DISPATCH_LEVEL for pageable addresses, and IRQL &lt;= DISPATCH_LEVEL for nonpageable addresses.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -139,7 +133,7 @@ BOOLEAN MmSetAddressRangeModified(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539145">CcIsThereDirtyData</a>
+<a href="..\ntifs\nf-ntifs-ccistheredirtydata.md">CcIsThereDirtyData</a>
 </dt>
 </dl>
 <p> </p>

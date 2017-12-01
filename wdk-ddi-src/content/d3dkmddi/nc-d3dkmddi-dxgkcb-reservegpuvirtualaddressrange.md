@@ -72,7 +72,7 @@ NTSTATUS APIENTRY CALLBACK* DxgkCbReserveGpuVirtualAddressRange(
 ### -param <i>pArgs</i> [in, out]
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn906819">DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE</a> structure that describes the operation.</p>
+<p>The <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-reservegpuvirtualaddressrange.md">DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE</a> structure that describes the operation.</p>
 </dd>
 </dl>
 
@@ -130,7 +130,7 @@ NTSTATUS APIENTRY CALLBACK* DxgkCbReserveGpuVirtualAddressRange(
 <a href="display.dxgkddicreateprocess">DxgkDdiCreateProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906819">DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-reservegpuvirtualaddressrange.md">DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE</a>
 </dt>
 </dl>
 <p> </p>

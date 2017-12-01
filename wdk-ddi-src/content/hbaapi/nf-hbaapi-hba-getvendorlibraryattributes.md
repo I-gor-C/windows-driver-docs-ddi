@@ -58,13 +58,13 @@ HBA_UINT32 HBA_API HBA_GetVendorLibraryAttributes(
 ### -param <i>AdapterIndex</i> [in]
 
 <dd>
-<p>Contains an adapter index that identifies which library to query. Each library is associated with one or more HBAs. This routine uses an index to identify the HBA so that the caller does not have to open the adapter to obtain a name or handle. The HBA API library can be associated with more than one HBA, so the same library attributes might be retrieved for different HBAs. The adapter index must be within the range of values returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff556101">HBA_GetNumberOfAdapters</a>. </p>
+<p>Contains an adapter index that identifies which library to query. Each library is associated with one or more HBAs. This routine uses an index to identify the HBA so that the caller does not have to open the adapter to obtain a name or handle. The HBA API library can be associated with more than one HBA, so the same library attributes might be retrieved for different HBAs. The adapter index must be within the range of values returned by <a href="..\hbaapi\nf-hbaapi-hba-getnumberofadapters.md">HBA_GetNumberOfAdapters</a>. </p>
 </dd>
 
 ### -param <i>Attributes</i> [out]
 
 <dd>
-<p>Pointer, on return, to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556119">HBA_LibraryAttributes</a> that holds the attributes of the library associated with the adapter referenced by <i>AdapterIndex</i>.</p>
+<p>Pointer, on return, to a structure of type <a href="..\hbaapi\ns-hbaapi-hba-libraryattributes.md">HBA_LibraryAttributes</a> that holds the attributes of the library associated with the adapter referenced by <i>AdapterIndex</i>.</p>
 </dd>
 </dl>
 
@@ -72,13 +72,7 @@ HBA_UINT32 HBA_API HBA_GetVendorLibraryAttributes(
 <p>The <b>HBA_GetVendorLibraryAttributes</b> routine returns a value that indicates the version of the specification with which the library is compliant. A value of 1 indicates version 1 of the specification. A value of 2 indicates version 2 of the specification. All other values are reserved until the future versions of the specification are published.</p>
 
 ## -remarks
-<p>The <b>HBA_GetVendorLibraryAttributes</b> routine, as defined by the T11 committee's <i>Fibre Channel HBA API</i> specification, retrieves information about a vendor-supplied HBA API library, and the related routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff556115">HBA_GetWrapperLibraryAttributes</a> reports the characteristics of a system-supplied wrapper library that works with the vendor library to provide the fibre channel HBA API. </p>
-
-<p>In particular, the <b>HBA_GetVendorLibraryAttributes</b> routine allows the caller to determine whether a compatible library is installed.</p>
-
-<p>Microsoft supplies both libraries, so currently they return the same information. </p>
-
-<p>The <b>HBA_GetVendorLibraryAttributes</b> routine, as defined by the T11 committee's <i>Fibre Channel HBA API</i> specification, retrieves information about a vendor-supplied HBA API library, and the related routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff556115">HBA_GetWrapperLibraryAttributes</a> reports the characteristics of a system-supplied wrapper library that works with the vendor library to provide the fibre channel HBA API. </p>
+<p>The <b>HBA_GetVendorLibraryAttributes</b> routine, as defined by the T11 committee's <i>Fibre Channel HBA API</i> specification, retrieves information about a vendor-supplied HBA API library, and the related routine <a href="..\hbaapi\nf-hbaapi-hba-getwrapperlibraryattributes.md">HBA_GetWrapperLibraryAttributes</a> reports the characteristics of a system-supplied wrapper library that works with the vendor library to provide the fibre channel HBA API. </p>
 
 <p>In particular, the <b>HBA_GetVendorLibraryAttributes</b> routine allows the caller to determine whether a compatible library is installed.</p>
 
@@ -131,13 +125,13 @@ HBA_UINT32 HBA_API HBA_GetVendorLibraryAttributes(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556101">HBA_GetNumberOfAdapters</a>
+<a href="..\hbaapi\nf-hbaapi-hba-getnumberofadapters.md">HBA_GetNumberOfAdapters</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556115">HBA_GetWrapperLibraryAttributes</a>
+<a href="..\hbaapi\nf-hbaapi-hba-getwrapperlibraryattributes.md">HBA_GetWrapperLibraryAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556119">HBA_LibraryAttributes</a>
+<a href="..\hbaapi\ns-hbaapi-hba-libraryattributes.md">HBA_LibraryAttributes</a>
 </dt>
 </dl>
 <p> </p>

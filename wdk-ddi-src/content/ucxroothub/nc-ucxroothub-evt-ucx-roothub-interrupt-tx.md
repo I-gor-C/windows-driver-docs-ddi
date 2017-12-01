@@ -70,7 +70,7 @@ typedef EVT_UCX_ROOTHUB_INTERRUPT_TX PEVT_UCX_ROOTHUB_INTERRUPT_TX;
 ### -param <i>Request</i> [in]
 
 <dd>
-<p>Contains the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> for the root hub interrupt transfer request.</p>
+<p>Contains the <a href="..\usb\ns-usb--urb.md">URB</a> for the root hub interrupt transfer request.</p>
 </dd>
 </dl>
 
@@ -78,18 +78,7 @@ typedef EVT_UCX_ROOTHUB_INTERRUPT_TX PEVT_UCX_ROOTHUB_INTERRUPT_TX;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188048">UcxRootHubCreate</a>
- method.</p>
-
-<p> The <i>Request</i> parameter contains a buffer in which each bit corresponds to a root
-    hub port, with the first bit corresponding to the first port.  The
-    client driver sets the corresponding bit if any port has changed, and then completes the request.</p>
-
-<p>The client driver returns completion status in <i>Request</i>.</p>
-
-<p>This snippet shows how the callback extracts the root hub interrupt transfer request.</p>
-
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188048">UcxRootHubCreate</a>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxroothubcreate">UcxRootHubCreate</a>
  method.</p>
 
 <p> The <i>Request</i> parameter contains a buffer in which each bit corresponds to a root

@@ -71,7 +71,7 @@ typedef struct _ISCSI_ConnectionStaticInfo {
 ### -field <b>UniqueConnectionId</b>
 
 <dd>
-<p>The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueConnectionId</i> parameter. Do not confuse this value with the connection ID (CID).</p>
+<p>The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the <i>UniqueConnectionId</i> parameter. Do not confuse this value with the connection ID (CID).</p>
 </dd>
 
 ### -field <b>CID</b>
@@ -120,7 +120,7 @@ typedef struct _ISCSI_ConnectionStaticInfo {
 ### -field <b>Protocol</b>
 
 <dd>
-<p>The transport protocol that is used to establish this connection instance. For a list of values that you can assign to this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561494">ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS</a>.</p>
+<p>The transport protocol that is used to establish this connection instance. For a list of values that you can assign to this member, see <a href="storage.iscsi_connection_protocol_type_qualifiers">ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS</a>.</p>
 </dd>
 
 ### -field <b>HeaderIntegrity</b>
@@ -196,13 +196,13 @@ typedef struct _ISCSI_ConnectionStaticInfo {
 ### -field <b>AuthType</b>
 
 <dd>
-<p>The type of authentication that is used to establish a connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561490">ISCSI_ConnectionStaticInfo WMI Class</a>, which is defined in <i>Mgmt.mof</i>, does specify values for this member; but if your software includes <i>Iscsidsc.h</i>, it can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561486">ISCSI_AUTH_TYPES</a> enumeration to assign values to this member.</p>
+<p>The type of authentication that is used to establish a connection. The <a href="storage.iscsi_connectionstaticinfo_wmi_class">ISCSI_ConnectionStaticInfo WMI Class</a>, which is defined in <i>Mgmt.mof</i>, does specify values for this member; but if your software includes <i>Iscsidsc.h</i>, it can use the <a href="storage.iscsi_auth_types">ISCSI_AUTH_TYPES</a> enumeration to assign values to this member.</p>
 </dd>
 
 ### -field <b>LocalAddr</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that holds the IP address of the local network card that the initiator uses to connect to the network.</p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that holds the IP address of the local network card that the initiator uses to connect to the network.</p>
 </dd>
 
 ### -field <b>LocalPort</b>
@@ -214,7 +214,7 @@ typedef struct _ISCSI_ConnectionStaticInfo {
 ### -field <b>RemoteAddr</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that holds the IP address of the remote network card that this connection instance uses.</p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that holds the IP address of the remote network card that this connection instance uses.</p>
 </dd>
 
 ### -field <b>RemotePort</b>
@@ -256,22 +256,22 @@ typedef struct _ISCSI_ConnectionStaticInfo {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561486">ISCSI_AUTH_TYPES</a>
+<a href="storage.iscsi_auth_types">ISCSI_AUTH_TYPES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561494">ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS</a>
+<a href="storage.iscsi_connection_protocol_type_qualifiers">ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561490">ISCSI_ConnectionStaticInfo WMI Class</a>
+<a href="storage.iscsi_connectionstaticinfo_wmi_class">ISCSI_ConnectionStaticInfo WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 </dl>
 <p> </p>

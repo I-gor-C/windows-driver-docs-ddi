@@ -7,7 +7,7 @@ old-location: stream\kstrfasthandler.htm
 old-project: stream
 ms.assetid: 9a72cdb5-2b57-4331-9836-82653732decf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -103,9 +103,7 @@ BOOLEAN KStrFastHandler(
 <p><i>KStrFastHandler</i> returns <b>TRUE</b> if the call was handled. If the call was not handled, it returns <b>FALSE</b> and an IRP is generated to handle the request.</p>
 
 ## -remarks
-<p>The minidriver provides an entry point for this routine in <a href="https://msdn.microsoft.com/library/windows/hardware/ff562521">KSFASTPROPERTY_ITEM</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff561944">KSFASTMETHOD_ITEM</a>.</p>
-
-<p>The minidriver provides an entry point for this routine in <a href="https://msdn.microsoft.com/library/windows/hardware/ff562521">KSFASTPROPERTY_ITEM</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff561944">KSFASTMETHOD_ITEM</a>.</p>
+<p>The minidriver provides an entry point for this routine in <a href="stream.ksfastproperty_item">KSFASTPROPERTY_ITEM</a> or <a href="stream.ksfastmethod_item">KSFASTMETHOD_ITEM</a>.</p>
 
 ## -requirements
 <table>

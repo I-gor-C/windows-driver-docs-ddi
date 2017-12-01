@@ -7,7 +7,7 @@ old-location: netvista\rilimsservice_2.htm
 old-project: netvista
 ms.assetid: 9cac61e7-8260-49ef-881d-6430acb622a8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

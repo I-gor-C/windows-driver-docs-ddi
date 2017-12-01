@@ -7,7 +7,7 @@ old-location: netvista\ndisinitunicodestring.htm
 old-project: netvista
 ms.assetid: 073feb91-48ae-4ad5-9061-117e6541021c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisInitUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisInitUnicodeString (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisInitUnicodeString (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -66,7 +62,7 @@ VOID NdisInitUnicodeString(
 <p>A pointer to a caller-allocated NDIS_STRING type in which 
      <b>NdisInitUnicodeString</b> should store the counted Unicode string. For Windows 2000 and later, NDIS
      defines the NDIS_STRING type as a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> type.</p>
+     <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> type.</p>
 </dd>
 
 ### -param <i>SourceString</i> [in]
@@ -80,20 +76,6 @@ VOID NdisInitUnicodeString(
 <p>None</p>
 
 ## -remarks
-<p>The 
-    <i>DestinationString</i> is initialized to point to the 
-    <i>SourceString</i> . The 
-    <b>Length</b> and 
-    <b>MaximumLength</b> members of NDIS_STRING for the 
-    <i>DestinationString</i> are initialized to the length of the string at 
-    <i>SourceString</i>. If 
-    <i>SourceString</i> is <b>NULL</b>, the length is zero.</p>
-
-<p>Callers of 
-    <b>NdisInitUnicodeString</b> must be running at IRQL &lt;= DISPATCH_LEVEL if the 
-    <i>DestinationString</i> buffer is allocated from nonpaged memory. Usually, callers are running at IRQL =
-    PASSIVE_LEVEL during driver initialization.</p>
-
 <p>The 
     <i>DestinationString</i> is initialized to point to the 
     <i>SourceString</i> . The 
@@ -165,7 +147,7 @@ VOID NdisInitUnicodeString(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -184,10 +166,10 @@ VOID NdisInitUnicodeString(
    NdisAnsiStringToUnicodeString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562730">NdisInitAnsiString</a>
+<a href="..\ndis\nf-ndis-ndisinitansistring.md">NdisInitAnsiString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562741">NdisInitializeString</a>
+<a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndisunicodestringtoansistring.md">
@@ -197,9 +179,9 @@ VOID NdisInitUnicodeString(
 <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInitUnicodeString function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInitUnicodeString function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

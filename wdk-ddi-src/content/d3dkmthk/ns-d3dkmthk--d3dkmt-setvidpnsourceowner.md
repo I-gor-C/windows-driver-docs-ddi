@@ -149,7 +149,7 @@ typedef struct _D3DKMT_SETVIDPNSOURCEOWNER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547201">D3DKMTSetVidPnSourceOwner</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetvidpnsourceowner.md">D3DKMTSetVidPnSourceOwner</a>
 </dt>
 </dl>
 <p> </p>

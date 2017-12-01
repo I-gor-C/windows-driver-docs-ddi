@@ -7,7 +7,7 @@ old-location: kernel\psgetversion.htm
 old-project: kernel
 ms.assetid: db3d2e34-3d83-423d-b446-2800d53a8220
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PsGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>This function is <u>obsolete</u> in Windows XP and later versions of the Windows operating system. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561910">RtlGetVersion</a> instead.</p>
+<p>This function is <u>obsolete</u> in Windows XP and later versions of the Windows operating system. Use <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a> instead.</p>
 <p><b>PsGetVersion</b> returns caller-selected information about the current version of the NT-based operating system. </p>
 
 
@@ -94,10 +94,6 @@ BOOLEAN PsGetVersion(
 <p> </p>
 
 ## -remarks
-<p><b>PsGetVersion</b> returns the requested information, depending on which optional parameter(s) the caller supplies.</p>
-
-<p>To retrieve the current service-pack number, it is easier and more efficient to make an application-level call within the Win32 environment than to call <b>PsGetVersion</b> during system driver initialization, which then must parse the string it returns at <i>CSDVersion</i>. When the registry is initialized, a driver cannot obtain this string from <b>PsGetVersion</b>, but must read the <b>CmCSDVersionString</b> value from the registry. </p>
-
 <p><b>PsGetVersion</b> returns the requested information, depending on which optional parameter(s) the caller supplies.</p>
 
 <p>To retrieve the current service-pack number, it is easier and more efficient to make an application-level call within the Win32 environment than to call <b>PsGetVersion</b> during system driver initialization, which then must parse the string it returns at <i>CSDVersion</i>. When the registry is initialized, a driver cannot obtain this string from <b>PsGetVersion</b>, but must read the <b>CmCSDVersionString</b> value from the registry. </p>
@@ -165,7 +161,7 @@ BOOLEAN PsGetVersion(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547882">IrqlPsPassive</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_irqlpspassive">IrqlPsPassive</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>

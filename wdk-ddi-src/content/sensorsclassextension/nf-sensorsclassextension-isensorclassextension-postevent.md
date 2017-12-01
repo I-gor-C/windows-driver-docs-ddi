@@ -7,7 +7,7 @@ old-location: sensors\isensorclassextension_postevent.htm
 old-project: sensors
 ms.assetid: 201a4558-8755-4a28-9982-c02ce5b5d8e7
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorClassExtension, PostEvent, ISensorClassExtension::PostEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545519">ISensorClassExtension::PostEvent</a> method raises one or more driver events in the sensor class extension.</p>
+<p>The <a href="sensors.isensorclassextension_postevent">ISensorClassExtension::PostEvent</a> method raises one or more driver events in the sensor class extension.</p>
 
 
 ## -syntax
@@ -89,23 +89,6 @@ HRESULT PostEvent(
 <p> </p>
 
 ## -remarks
-<p>The sensor class extension forwards these events to the Sensor API and Location API, which in turn, raise events in client programs.</p>
-
-<p>The collection passed through <i>pEventCollection</i> can contain one or more events. Represent each event and its associated data by using one <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> object. Platform-defined <b>PROPERTYKEY</b>s for events and data types are defined in sensors.h.</p>
-
-<p>Each <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> object returned by this method must contain a time stamp, as described in <a href="https://msdn.microsoft.com/library/windows/hardware/ff545725">SENSOR_CATEGORY_ALL</a>.</p>
-
-<p>The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> structures provided by this method.</p>
-
-<p>To specify the event type, use the SENSOR_EVENT_PARAMETER_EVENT_ID <b>PROPERTYKEY</b> with the appropriate <b>GUID</b> value. </p>
-
-<p>For an example of a class that creates an event thread, see <a href="NULL">Raising sensor events</a>
-</p>
-
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=131487">IPortableDeviceValuesCollection</a> are documented in Windows Portable Devices.</p>
-
-<p>Raise state change events by calling <a href="sensors.isensorclassextension_poststatechange">ISensorClassExtension::PostStateChange</a>.</p>
-
 <p>The sensor class extension forwards these events to the Sensor API and Location API, which in turn, raise events in client programs.</p>
 
 <p>The collection passed through <i>pEventCollection</i> can contain one or more events. Represent each event and its associated data by using one <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> object. Platform-defined <b>PROPERTYKEY</b>s for events and data types are defined in sensors.h.</p>

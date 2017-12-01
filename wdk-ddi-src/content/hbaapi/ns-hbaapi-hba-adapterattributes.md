@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The HBA_AdapterAttributes structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556078">HBA_GetAdapterAttributes</a> routine to report the attributes of an HBA.</p>
+<p>The HBA_AdapterAttributes structure is used in conjunction with the <a href="..\hbaapi\nf-hbaapi-hba-getadapterattributes.md">HBA_GetAdapterAttributes</a> routine to report the attributes of an HBA.</p>
 
 
 ## -syntax
@@ -165,7 +165,7 @@ typedef struct HBA_AdapterAttributes {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556078">HBA_GetAdapterAttributes</a>
+<a href="..\hbaapi\nf-hbaapi-hba-getadapterattributes.md">HBA_GetAdapterAttributes</a>
 </dt>
 </dl>
 <p> </p>

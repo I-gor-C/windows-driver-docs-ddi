@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The MOUNTMGR_TARGET_NAME structure contains the nonpersistent target device name for a device and is used by mount manager clients with the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff560468">IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE</a> request to tell the mount manager to keep the symbolic link for a device active even after the device has gone offline. </p>
+<p>The MOUNTMGR_TARGET_NAME structure contains the nonpersistent target device name for a device and is used by mount manager clients with the  <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-keep-links-when-offline.md">IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE</a> request to tell the mount manager to keep the symbolic link for a device active even after the device has gone offline. </p>
 
 
 ## -syntax
@@ -88,7 +88,7 @@ typedef struct _MOUNTMGR_TARGET_NAME {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560468">IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE</a>
+<a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-keep-links-when-offline.md">IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE</a>
 </dt>
 </dl>
 <p> </p>

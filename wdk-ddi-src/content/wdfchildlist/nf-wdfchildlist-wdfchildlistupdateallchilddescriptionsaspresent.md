@@ -7,7 +7,7 @@ old-location: wdf\wdfchildlistupdateallchilddescriptionsaspresent.htm
 old-project: wdf
 ms.assetid: 598d2b4f-9b49-480a-9cf8-25661c24483f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfChildListUpdateAllChildDescriptionsAsPresent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,12 +76,6 @@ VOID WdfChildListUpdateAllChildDescriptionsAsPresent(
 
 <p>The following code example informs the framework that all of the devices that a device list represents are plugged in and available.</p>
 
-<p>The <b>WdfChildListUpdateAllChildDescriptionsAsPresent</b> method is available in version 1.0 and later versions of KMDF.</p>
-
-<p>For more information about child lists, see <a href="wdf.dynamic_enumeration">Dynamic Enumeration</a>.</p>
-
-<p>The following code example informs the framework that all of the devices that a device list represents are plugged in and available.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -135,7 +129,7 @@ VOID WdfChildListUpdateAllChildDescriptionsAsPresent(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>

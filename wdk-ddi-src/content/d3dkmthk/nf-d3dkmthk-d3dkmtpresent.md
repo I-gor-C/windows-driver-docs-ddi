@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTPresent(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548168">D3DKMT_PRESENT</a> structure that describes parameters for presenting.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present.md">D3DKMT_PRESENT</a> structure that describes parameters for presenting.</p>
 </dd>
 </dl>
 
@@ -71,24 +71,20 @@ NTSTATUS APIENTRY D3DKMTPresent(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547091">D3DKMTPresent</a> could not complete because of insufficient memory.</p><dl>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpresent.md">D3DKMTPresent</a> could not complete because of insufficient memory.</p><dl>
 <dt><b>STATUS_GRAPHICS_ALLOCATION_INVALID</b></dt>
 </dl><p>The primary surface handle was invalidated because of a display mode change. If the OpenGL installable client driver (ICD) receives this error code, it should reopen or re-create the primary handle, replace all references in the command buffer to the old handle with the new handle, and then resubmit the buffer.</p><dl>
 <dt><b>STATUS_GRAPHICS_GPU_EXCEPTION_ON_DEVICE</b></dt>
-</dl><p>An error occurred on the rendering device context that the <b>hContext</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548168">D3DKMT_PRESENT</a> specifies. </p>
+</dl><p>An error occurred on the rendering device context that the <b>hContext</b> member of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present.md">D3DKMT_PRESENT</a> specifies. </p>
 
-<p>For example, the DirectX graphics kernel subsystem puts a device into an error state if the display miniport driver indicated that a DMA buffer that was submitted from this device caused a fault or if the video memory manager could not page-in all of the allocations that are required for a DMA buffer even after splitting the DMA buffer. After a device is in an error state, it cannot perform any more operations and must be destroyed and re-created. The ICD can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546959">D3DKMTGetDeviceState</a> function to determine a more precise reason for the error. </p>
+<p>For example, the DirectX graphics kernel subsystem puts a device into an error state if the display miniport driver indicated that a DMA buffer that was submitted from this device caused a fault or if the video memory manager could not page-in all of the allocations that are required for a DMA buffer even after splitting the DMA buffer. After a device is in an error state, it cannot perform any more operations and must be destroyed and re-created. The ICD can call the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetdevicestate.md">D3DKMTGetDeviceState</a> function to determine a more precise reason for the error. </p>
 
 <p> </p>
 
 <p>This function might also return other NTSTATUS values.</p>
 
 ## -remarks
-<p>The <b>D3DKMTPresent</b> function might return STATUS_INVALID_PARAMETER, depending on the combination of parameter values (that is, values in members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548168">D3DKMT_PRESENT</a> structure that <i>pData</i> points to). The following list describes the most common combinations of parameter values that might cause <b>D3DKMTPresent</b> to return STATUS_INVALID PARAMETER:</p>
-
-<p>The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTPresent</b> to present data.</p>
-
-<p>The <b>D3DKMTPresent</b> function might return STATUS_INVALID_PARAMETER, depending on the combination of parameter values (that is, values in members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548168">D3DKMT_PRESENT</a> structure that <i>pData</i> points to). The following list describes the most common combinations of parameter values that might cause <b>D3DKMTPresent</b> to return STATUS_INVALID PARAMETER:</p>
+<p>The <b>D3DKMTPresent</b> function might return STATUS_INVALID_PARAMETER, depending on the combination of parameter values (that is, values in members of the <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present.md">D3DKMT_PRESENT</a> structure that <i>pData</i> points to). The following list describes the most common combinations of parameter values that might cause <b>D3DKMTPresent</b> to return STATUS_INVALID PARAMETER:</p>
 
 <p>The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTPresent</b> to present data.</p>
 
@@ -147,13 +143,13 @@ NTSTATUS APIENTRY D3DKMTPresent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548168">D3DKMT_PRESENT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present.md">D3DKMT_PRESENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546959">D3DKMTGetDeviceState</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetdevicestate.md">D3DKMTGetDeviceState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547169">D3DKMTSetDisplayMode</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplaymode.md">D3DKMTSetDisplayMode</a>
 </dt>
 </dl>
 <p> </p>

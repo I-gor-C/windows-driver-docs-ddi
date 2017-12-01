@@ -7,7 +7,7 @@ old-location: nfpdrivers\nfc_cx_client_config_init.htm
 old-project: nfpdrivers
 ms.assetid: 0679406E-091D-4E66-956A-54E3A517BF4C
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: NFC_CX_CLIENT_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>NFC_CX_CLIENT_CONFIG_INIT</b> function initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/dn905540">NFC_CX_CLIENT_CONFIG</a> structure.</p>
+<p>The <b>NFC_CX_CLIENT_CONFIG_INIT</b> function initializes the <a href="..\nfccx\ns-nfccx--nfc-cx-client-config.md">NFC_CX_CLIENT_CONFIG</a> structure.</p>
 
 
 ## -syntax
@@ -58,13 +58,13 @@ FORCEINLINE VOID  NFC_CX_CLIENT_CONFIG_INIT(
 ### -param <i>Config</i> [out]
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn905540">NFC_CX_CLIENT_CONFIG</a> structure. </p>
+<p>A pointer to an <a href="..\nfccx\ns-nfccx--nfc-cx-client-config.md">NFC_CX_CLIENT_CONFIG</a> structure. </p>
 </dd>
 
 ### -param <i>BusType</i> [in]
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/dn905564">NFC_CX_TRANSPORT_TYPE</a> enumeration. </p>
+<p>An <a href="..\nfccx\ne-nfccx--nfc-cx-transport-type.md">NFC_CX_TRANSPORT_TYPE</a> enumeration. </p>
 </dd>
 </dl>
 
@@ -115,4 +115,4 @@ FORCEINLINE VOID  NFC_CX_CLIENT_CONFIG_INIT(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_CLIENT_CONFIG_INIT function%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_CLIENT_CONFIG_INIT function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

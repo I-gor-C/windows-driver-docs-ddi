@@ -67,7 +67,7 @@ __checkResult HRESULT APIENTRY CALLBACK pfnSignalSynchronizationObjectCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544274">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a> structure that describes the synchronization objects and context DMA stream that signaling is set up on. </p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-signalsynchronizationobject.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a> structure that describes the synchronization objects and context DMA stream that signaling is set up on. </p>
 </dd>
 </dl>
 
@@ -83,14 +83,6 @@ __checkResult HRESULT APIENTRY CALLBACK pfnSignalSynchronizationObjectCb(
 <p>This function might also return other HRESULT values.</p>
 
 ## -remarks
-<p>
-<p><b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnSignalSynchronizationObjectCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.</p>
-</p>
-
-<p><b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnSignalSynchronizationObjectCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.</p>
-
-<p>The following code example shows how to insert a signal on synchronization objects.</p>
-
 <p>
 <p><b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnSignalSynchronizationObjectCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.</p>
 </p>
@@ -134,7 +126,7 @@ __checkResult HRESULT APIENTRY CALLBACK pfnSignalSynchronizationObjectCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544274">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-signalsynchronizationobject.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a>
 </dt>
 </dl>
 <p> </p>

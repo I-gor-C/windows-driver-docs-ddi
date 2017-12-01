@@ -7,7 +7,7 @@ old-location: debugger\getoffsetinformation.htm
 old-project: debugger
 ms.assetid: 5ef00c92-7b32-473a-8401-4c02e864c181
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces4, GetOffsetInformation, IDebugDataSpaces4::GetOffsetInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices

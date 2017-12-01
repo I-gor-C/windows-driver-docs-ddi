@@ -7,7 +7,7 @@ old-location: kernel\rtluint8sub.htm
 old-project: kernel
 ms.assetid: D8BD24AA-64CF-42CB-8AD2-2B6C77D4B195
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlUInt8Sub
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,8 +83,6 @@ NTSTATUS RtlUInt8Sub(
 <p> </p>
 
 ## -remarks
-<p>This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.</p>
-
 <p>This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.</p>
 
 ## -requirements

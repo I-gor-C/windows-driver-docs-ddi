@@ -118,7 +118,7 @@ typedef enum _D3DKMT_OFFER_PRIORITY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406482">D3DKMT_OFFERALLOCATIONS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-offerallocations.md">D3DKMT_OFFERALLOCATIONS</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: debugger\field_info.htm
 old-project: debugger
 ms.assetid: 627b14dc-9b13-464c-ba23-6e91bef2b940
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: FIELD_INFO, FIELD_INFO, *PFIELD_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,8 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>FIELD_INFO</b> structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551084">Ioctl</a> operation to provide information about a member in a structure.</p>
+<p>The <b>FIELD_INFO</b> structure is used by the <a href="..\wdbgexts\ns-wdbgexts--sym-dump-param.md">IG_DUMP_SYMBOL_INFO</a>
+<a href="debugger.ioctl">Ioctl</a> operation to provide information about a member in a structure.</p>
 
 
 ## -syntax
@@ -104,13 +104,13 @@ typedef struct _FIELD_INFO {
 ### -field <b>address</b>
 
 <dd>
-<p>Receives the address in the target's memory of the member that is specified by <b>fName</b>.  If no address is supplied for the symbol type in SYM_DUMP_PARAM.<b>addr</b>, <b>address</b> receives the offset of the member relative to the beginning of an instance of the type.  For more information about SYM_DUMP_PARAM, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a>.</p>
+<p>Receives the address in the target's memory of the member that is specified by <b>fName</b>.  If no address is supplied for the symbol type in SYM_DUMP_PARAM.<b>addr</b>, <b>address</b> receives the offset of the member relative to the beginning of an instance of the type.  For more information about SYM_DUMP_PARAM, see <a href="..\wdbgexts\ns-wdbgexts--sym-dump-param.md">IG_DUMP_SYMBOL_INFO</a>.</p>
 </dd>
 
 ### -field <b>fieldCallBack</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553487">PSYM_DUMP_FIELD_CALLBACK</a> callback function to be called with the information about the member that is specified by <b>fName</b>.  The callback function is passed a structure with the field information and the value of SYM_DUMP_PARAM.<b>context</b>.</p>
+<p>Specifies a <a href="..\wdbgexts\nc-wdbgexts-psym-dump-field-callback.md">PSYM_DUMP_FIELD_CALLBACK</a> callback function to be called with the information about the member that is specified by <b>fName</b>.  The callback function is passed a structure with the field information and the value of SYM_DUMP_PARAM.<b>context</b>.</p>
 <p>No callback function is called if DBG_DUMP_FIELD_NO_CALLBACK_REQ is set in <b>fOptions</b>, <b>fieldCallBack</b> is <b>NULL</b>, or the <b>Options</b> member of the SYM_DUMP_PARAM structure passed to <b>Ioctl</b> does not have DBG_DUMP_CALL_FOR_EACH set.  If DBG_DUMP_FIELD_COPY_FIELD_DATA is set in <b>fOptions</b>, <b>fieldCallBack</b> is not used.</p>
 </dd>
 
@@ -190,8 +190,8 @@ typedef struct _FIELD_INFO {
 </dl>
 
 ## -remarks
-<p>When calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551084">Ioctl</a> operation, the <b>fName</b> member of this structure should be set to the name of the symbol's member to which this structure applies and the <b>fOptions</b> member should reflect the desired functionality of the operation.  The other members are either optional, or are filled in by <b>Ioctl</b>.</p>
+<p>When calling the <a href="..\wdbgexts\ns-wdbgexts--sym-dump-param.md">IG_DUMP_SYMBOL_INFO</a>
+<a href="debugger.ioctl">Ioctl</a> operation, the <b>fName</b> member of this structure should be set to the name of the symbol's member to which this structure applies and the <b>fOptions</b> member should reflect the desired functionality of the operation.  The other members are either optional, or are filled in by <b>Ioctl</b>.</p>
 
 ## -requirements
 <table>
@@ -210,18 +210,18 @@ typedef struct _FIELD_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a>
+<a href="..\wdbgexts\ns-wdbgexts--sym-dump-param.md">IG_DUMP_SYMBOL_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551084">Ioctl</a>
+<a href="debugger.ioctl">Ioctl</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540429">DBG_DUMP_FIELD_XXX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553487">PSYM_DUMP_FIELD_CALLBACK</a>
+<a href="..\wdbgexts\nc-wdbgexts-psym-dump-field-callback.md">PSYM_DUMP_FIELD_CALLBACK</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20FIELD_INFO structure%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20FIELD_INFO structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

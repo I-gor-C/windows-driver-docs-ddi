@@ -65,8 +65,6 @@ HRESULT STDMETHODCALLTYPE StartOperation(
 ## -remarks
 <p>A filter returns the <code>StartOperation</code> call only when the filter processing is complete.</p>
 
-<p>A filter returns the <code>StartOperation</code> call only when the filter processing is complete.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -72,9 +72,7 @@ HRESULT Current(
 <p><code>Current</code> returns an <b>HRESULT</b> value.</p>
 
 ## -remarks
-<p>Filters should call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556342">IXpsPartIterator::IsDone</a> method before calling <code>Current</code>. One or both parameters can be <b>NULL</b>.</p>
-
-<p>Filters should call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556342">IXpsPartIterator::IsDone</a> method before calling <code>Current</code>. One or both parameters can be <b>NULL</b>.</p>
+<p>Filters should call the <a href="print.ixpspartiterator_isdone">IXpsPartIterator::IsDone</a> method before calling <code>Current</code>. One or both parameters can be <b>NULL</b>.</p>
 
 ## -requirements
 <table>

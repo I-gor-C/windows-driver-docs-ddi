@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackstatechange.htm
 old-project: wdf
 ms.assetid: 39c66462-015d-49ba-9a37-0b3b928e5fbf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556880">IQueueCallbackStateChange::OnStateChange</a>
+<a href="wdf.iqueuecallbackstatechange_onstatechange">IQueueCallbackStateChange::OnStateChange</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iqueuecallbackstatechange_onstatechange">OnStateChange</a> method is called when the state of the I/O queue object changes. </p>
@@ -72,9 +72,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>A driver registers the <b>IQueueCallbackStateChange</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a> method to create an I/O queue or to configure the default I/O queue. </p>
-
-<p>A driver registers the <b>IQueueCallbackStateChange</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a> method to create an I/O queue or to configure the default I/O queue. </p>
+<p>A driver registers the <b>IQueueCallbackStateChange</b> interface when the driver calls the <a href="wdf.iwdfdevice_createioqueue">IWDFDevice::CreateIoQueue</a> method to create an I/O queue or to configure the default I/O queue. </p>
 
 ## -requirements
 <table>

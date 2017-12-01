@@ -58,13 +58,13 @@ typedef struct _D3DKMT_MOVE_RECT {
 ### -field <b>SourcePoint</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a> structure that describes the source (<i>x, y</i>) point where the source rectangle is copied from.</p>
+<p>A <a href="display.point">POINT</a> structure that describes the source (<i>x, y</i>) point where the source rectangle is copied from.</p>
 </dd>
 
 ### -field <b>DestRect</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that contains the destination rectangle where the dirty rectangle is copied to.</p>
+<p>A <a href="display.rect">RECT</a> structure that contains the destination rectangle where the dirty rectangle is copied to.</p>
 </dd>
 </dl>
 
@@ -104,10 +104,10 @@ typedef struct _D3DKMT_MOVE_RECT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a>
+<a href="display.point">POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\fwpmbfestateget0.htm
 old-project: netvista
 ms.assetid: f165c5a0-6f8e-495f-90b9-62d0d8982456
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpmBfeStateGet0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,31 +99,7 @@ FWPM_SERVICE_STATE NTAPI FwpmBfeStateGet0(void);
     to open a session to the filter engine, the filter engine must  be currently running.</p>
 
 <p>Before calling <b>FwpmBfeStateGet0</b>, the callout driver  must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550062">FwpmBfeStateSubscribeChanges0</a> function to register a callback function that is called whenever the
-    state of the filter engine changes.</p>
-
-<p>A callout driver calls the 
-    <b>FwpmBfeStateGet0</b> function to retrieve the current state of the filter engine. For a callout driver
-    to open a session to the filter engine, the filter engine must  be currently running.</p>
-
-<p>Before calling <b>FwpmBfeStateGet0</b>, the callout driver  must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550062">FwpmBfeStateSubscribeChanges0</a> function to register a callback function that is called whenever the
-    state of the filter engine changes.</p>
-
-<p>A callout driver calls the 
-    <b>FwpmBfeStateGet0</b> function to retrieve the current state of the filter engine. For a callout driver
-    to open a session to the filter engine, the filter engine must  be currently running.</p>
-
-<p>Before calling <b>FwpmBfeStateGet0</b>, the callout driver  must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550062">FwpmBfeStateSubscribeChanges0</a> function to register a callback function that is called whenever the
-    state of the filter engine changes.</p>
-
-<p>A callout driver calls the 
-    <b>FwpmBfeStateGet0</b> function to retrieve the current state of the filter engine. For a callout driver
-    to open a session to the filter engine, the filter engine must  be currently running.</p>
-
-<p>Before calling <b>FwpmBfeStateGet0</b>, the callout driver  must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550062">FwpmBfeStateSubscribeChanges0</a> function to register a callback function that is called whenever the
+    <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">FwpmBfeStateSubscribeChanges0</a> function to register a callback function that is called whenever the
     state of the filter engine changes.</p>
 
 ## -requirements
@@ -185,4 +161,4 @@ FWPM_SERVICE_STATE NTAPI FwpmBfeStateGet0(void);
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmBfeStateGet0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmBfeStateGet0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

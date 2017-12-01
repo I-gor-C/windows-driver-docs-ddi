@@ -7,7 +7,7 @@ old-location: netvista\ril_setpreferredoperatorlist.htm
 old-project: netvista
 ms.assetid: e61e9e3f-b70f-4b0a-8e64-4c7c4c086130
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SetPreferredOperatorList
 ms.prod: windows-hardware
 ms.technology: windows-devices

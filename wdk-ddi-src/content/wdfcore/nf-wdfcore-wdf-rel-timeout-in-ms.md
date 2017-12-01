@@ -7,7 +7,7 @@ old-location: wdf\wdf_rel_timeout_in_ms.htm
 old-project: wdf
 ms.assetid: f68b9575-04e4-4046-aec4-b664d8a643d4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_MS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,10 +67,6 @@ LONGLONG WDF_REL_TIMEOUT_IN_MS(
 <p><b>WDF_REL_TIMEOUT_IN_MS</b> returns the relative time value, in system time units (100-nanosecond intervals), that represents the number of milliseconds that <i>Time</i> specifies.</p>
 
 ## -remarks
-<p>A relative time is a time value that is relative to the current system time. For example, if a caller passes a relative time value of five milliseconds to a function that accepts a time-out value, the function will time out five milliseconds after it is called.</p>
-
-<p>The following code example starts a timer. The framework will call the timer's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function after ten milliseconds. </p>
-
 <p>A relative time is a time value that is relative to the current system time. For example, if a caller passes a relative time value of five milliseconds to a function that accepts a time-out value, the function will time out five milliseconds after it is called.</p>
 
 <p>The following code example starts a timer. The framework will call the timer's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function after ten milliseconds. </p>
@@ -136,9 +132,9 @@ LONGLONG WDF_REL_TIMEOUT_IN_MS(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551209">WDF_ABS_TIMEOUT_IN_MS</a>
+<a href="..\wdfcore\nf-wdfcore-wdf-abs-timeout-in-ms.md">WDF_ABS_TIMEOUT_IN_MS</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REL_TIMEOUT_IN_MS function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REL_TIMEOUT_IN_MS function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

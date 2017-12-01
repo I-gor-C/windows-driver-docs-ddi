@@ -71,21 +71,7 @@ BOOLEAN HwStorInterrupt(
 ## -remarks
 <p>The name <b>HwStorInterrupt</b> is just a placeholder. The actual prototype of this routine is defined in <i>Storport.h</i> as follows:</p>
 
-<p>The <b>HwStorInterrupt</b> routine should return within 50 microseconds, ideally as short a time as possible. Therefore, all activity does not have to occur at high IRQL should be deferred to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557383">HwStorDpcRoutine</a> that is defined in the miniport driver and issued by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff567116">StorPortIssueDpc</a>.  The latency of the DPC is very low, and it will be called immediately after the return from high IRQL.</p>
-
-<p>The port driver calls the <b>HwStorInterrupt</b> routine at DIRQL.</p>
-
-<p>To define an <b>HwStorInterrupt</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
-
-<p> For example, to define a <b>HwStorInterrupt</b> callback routine that is named <i>MyHwInterrupt</i>, use the <b>HW_INTERRUPT</b> type as shown in this code example:</p>
-
-<p>Then, implement your callback routine as follows:</p>
-
-<p>The <b>HW_INTERRUPT</b> function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>HW_INTERRUPT</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/40BD11CD-A559-4F90-BF39-4ED2FB800392">Declaring Functions Using Function Role Types for Storport Drivers</a>. For information about _Use_decl_annotations_, see <a href="c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.</p>
-
-<p>The name <b>HwStorInterrupt</b> is just a placeholder. The actual prototype of this routine is defined in <i>Storport.h</i> as follows:</p>
-
-<p>The <b>HwStorInterrupt</b> routine should return within 50 microseconds, ideally as short a time as possible. Therefore, all activity does not have to occur at high IRQL should be deferred to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557383">HwStorDpcRoutine</a> that is defined in the miniport driver and issued by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff567116">StorPortIssueDpc</a>.  The latency of the DPC is very low, and it will be called immediately after the return from high IRQL.</p>
+<p>The <b>HwStorInterrupt</b> routine should return within 50 microseconds, ideally as short a time as possible. Therefore, all activity does not have to occur at high IRQL should be deferred to the <a href="storage.hwstordpcroutine">HwStorDpcRoutine</a> that is defined in the miniport driver and issued by using <a href="..\storport\nf-storport-storportissuedpc.md">StorPortIssueDpc</a>.  The latency of the DPC is very low, and it will be called immediately after the return from high IRQL.</p>
 
 <p>The port driver calls the <b>HwStorInterrupt</b> routine at DIRQL.</p>
 
@@ -132,10 +118,10 @@ BOOLEAN HwStorInterrupt(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557383">HwStorDpcRoutine</a>
+<a href="storage.hwstordpcroutine">HwStorDpcRoutine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567116">StorPortIssueDpc</a>
+<a href="..\storport\nf-storport-storportissuedpc.md">StorPortIssueDpc</a>
 </dt>
 </dl>
 <p> </p>

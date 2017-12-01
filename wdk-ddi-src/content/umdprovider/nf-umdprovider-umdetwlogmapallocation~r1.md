@@ -89,13 +89,13 @@ void UMDEtwLogMapAllocation(
 ### -param <i>Usage</i> 
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/jj542442">UMDETW_ALLOCATION_USAGE</a> structure that indicates the reason for this mapping.</p>
+<p>A <a href="..\umdprovider\ns-umdprovider--umdetw-allocation-usage.md">UMDETW_ALLOCATION_USAGE</a> structure that indicates the reason for this mapping.</p>
 </dd>
 
 ### -param <i>Semantic</i> 
 
 <dd>
-<p>If the allocation is used internally by the user-mode driver, this is a <a href="https://msdn.microsoft.com/library/windows/hardware/jj542441">UMDETW_ALLOCATION_SEMANTIC</a> structure that indicates what the allocation is used for.</p>
+<p>If the allocation is used internally by the user-mode driver, this is a <a href="..\umdprovider\ne-umdprovider--umdetw-allocation-semantic.md">UMDETW_ALLOCATION_SEMANTIC</a> structure that indicates what the allocation is used for.</p>
 </dd>
 </dl>
 
@@ -103,12 +103,6 @@ void UMDEtwLogMapAllocation(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The user-mode display driver must completely account for the video memory it allocates, so it must call this function to log an event every time the allocation changes.</p>
-
-<p>Examples of when to call this function are:</p>
-
-<p><b>UMDEtwLogMapAllocation</b> is defined inline in Umdprovider.h as:</p>
-
 <p>The user-mode display driver must completely account for the video memory it allocates, so it must call this function to log an event every time the allocation changes.</p>
 
 <p>Examples of when to call this function are:</p>
@@ -164,10 +158,10 @@ void UMDEtwLogMapAllocation(
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createresource.md">CreateResource(D3D10)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj542441">UMDETW_ALLOCATION_SEMANTIC</a>
+<a href="..\umdprovider\ne-umdprovider--umdetw-allocation-semantic.md">UMDETW_ALLOCATION_SEMANTIC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj542442">UMDETW_ALLOCATION_USAGE</a>
+<a href="..\umdprovider\ns-umdprovider--umdetw-allocation-usage.md">UMDETW_ALLOCATION_USAGE</a>
 </dt>
 </dl>
 <p> </p>

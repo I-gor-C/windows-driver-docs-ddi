@@ -68,7 +68,7 @@ NTSTATUS FsRtlSetKernelEaFile(
 ### -param <i>EaBuffer</i> [in]
 
 <dd>
-<p>A pointer to a caller-supplied, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute values to be set</p>
+<p>A pointer to a caller-supplied, <a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute values to be set</p>
 </dd>
 
 ### -param <i>Length</i> [in]
@@ -96,11 +96,6 @@ NTSTATUS FsRtlSetKernelEaFile(
 <p> </p>
 
 ## -remarks
-<p> This routine assumes all passed in buffers are from kernel mode.</p>
-
-<p>One or more Kernel EA’s may be set, modified and/or deleted in a single call to <b>FsRtlSetKernelEaFile</b>. Normal EA’s may also be set using the <b>FsRtlSetKernelEaFile</b> function.
-You delete EA’s by specifying an <b>EAName</b> with an <b>EaValueLength</b> of zero.  You can intermix inserting new, modifying existing, or removing EA’s in a single call.</p>
-
 <p> This routine assumes all passed in buffers are from kernel mode.</p>
 
 <p>One or more Kernel EA’s may be set, modified and/or deleted in a single call to <b>FsRtlSetKernelEaFile</b>. Normal EA’s may also be set using the <b>FsRtlSetKernelEaFile</b> function.
@@ -145,7 +140,7 @@ You delete EA’s by specifying an <b>EAName</b> with an <b>EaValueLength</b> of
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff961907">ZwQueryEaFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff961908">ZwSetEaFile</a>
+<a href="..\ntifs\nf-ntifs-zwseteafile.md">ZwSetEaFile</a>
 </dt>
 </dl>
 <p> </p>

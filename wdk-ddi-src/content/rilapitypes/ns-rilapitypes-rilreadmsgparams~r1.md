@@ -7,7 +7,7 @@ old-location: netvista\rilreadmsgparams_2.htm
 old-project: netvista
 ms.assetid: 2b8ee9c8-3945-4350-84dd-4709f162c381
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILREADMSGPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

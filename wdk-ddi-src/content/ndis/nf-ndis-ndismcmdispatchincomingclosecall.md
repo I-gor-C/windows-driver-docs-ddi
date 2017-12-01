@@ -7,7 +7,7 @@ old-location: netvista\ndismcmdispatchincomingclosecall.htm
 old-project: netvista
 ms.assetid: 843050e1-a1ec-4313-b527-529c4ff6ca07
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCmDispatchIncomingCloseCall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   
-   NdisMCmDispatchIncomingCloseCall (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   
-   NdisMCmDispatchIncomingCloseCall (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmDispatchIncomingCloseCall (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisMCmDispatchIncomingCloseCall (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -75,7 +71,7 @@ VOID NdisMCmDispatchIncomingCloseCall(
 <dd>
 <p>Specifies the handle to the VC of the call being disconnected. This handle was supplied by NDIS
      when the VC was originally created, whether by the MCM driver with 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff562812">NdisMCmCreateVc</a> or as an input parameter
+     <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a> or as an input parameter
      to its 
      <a href="..\ndis\nc-ndis-protocol-co-create-vc.md">ProtocolCoCreateVc</a> function.</p>
 </dd>
@@ -103,7 +99,7 @@ VOID NdisMCmDispatchIncomingCloseCall(
     <b>NdisMCmDispatchIncomingCloseCall</b> with the 
     <i>CloseStatus</i> set to NDIS_STATUS_SUCCESS because the corresponding client on the remote node has
     called 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561627">NdisClCloseCall</a>.</p>
+    <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>.</p>
 
 <p>However, an MCM driver also can call 
     <b>NdisMCmDispatchIncomingCloseCall</b> if either of the following occur:</p>
@@ -125,56 +121,12 @@ VOID NdisMCmDispatchIncomingCloseCall(
 <p>After the client calls 
     <b>NdisClCloseCall</b> thereby causing the deactivation of the VC, the original creator of the VC is
     responsible for destroying the VC. Either the client calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561698">NdisCoDeleteVc</a>, which causes NDIS to call
+    <a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>, which causes NDIS to call
     the MCM driver's 
     <a href="..\ndis\nc-ndis-protocol-co-delete-vc.md">ProtocolCoDeleteVc</a> function, or the
     MCM driver calls 
     <b>NdisMCmDeleteVc</b> after calling 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562818">NdisMCmDeactivateVc</a> and releasing any
-    additional resources it had associated with the VC that it created.</p>
-
-<p>A call to 
-    <b>NdisMCmDispatchIncomingCloseCall</b> causes NDIS to call the client's 
-    <a href="..\ndis\nc-ndis-protocol-cl-incoming-close-call.md">
-    ProtocolClIncomingCloseCall</a> function.</p>
-
-<p>Only connection-oriented miniport drivers that provide call-management support can call 
-    <b>NdisMCmDispatchIncomingCall</b>. Stand-alone call managers, which register themselves with NDIS as
-    protocol drivers, call 
-    <b>NdisCmDispatchIncomingCloseCall</b> instead.</p>
-
-<p>In the course of normal network operations, an MCM driver calls 
-    <b>NdisMCmDispatchIncomingCloseCall</b> with the 
-    <i>CloseStatus</i> set to NDIS_STATUS_SUCCESS because the corresponding client on the remote node has
-    called 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561627">NdisClCloseCall</a>.</p>
-
-<p>However, an MCM driver also can call 
-    <b>NdisMCmDispatchIncomingCloseCall</b> if either of the following occur:</p>
-
-<p>The MCM driver has notified a client of an incoming call offer. When the miniport driver's 
-      <a href="..\ndis\nc-ndis-protocol-cm-incoming-call-complete.md">
-      ProtocolCmIncomingCallComplete</a> function is called with the client's acceptance, it validates the
-      input call parameters, which that client has modified. 
-      <i>ProtocolCmIncomingCallComplete</i> determines that the client is proposing unsupportable call
-      parameters for the connection, so it calls 
-      <b>NdisMCmDispatchIncomingCloseCall</b>.</p>
-
-<p>Abormal network conditions force the MCM driver to tear down active calls. For example, if the MCM
-      driver is notified when any link on the connection between this client and the remote party to the
-      connection goes down, the miniport driver would call 
-      <b>NdisCmDispatchIncomingCloseCall</b> to prevent the client from attempting (or expecting) further data
-      transfers on such a broken connection.</p>
-
-<p>After the client calls 
-    <b>NdisClCloseCall</b> thereby causing the deactivation of the VC, the original creator of the VC is
-    responsible for destroying the VC. Either the client calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561698">NdisCoDeleteVc</a>, which causes NDIS to call
-    the MCM driver's 
-    <a href="..\ndis\nc-ndis-protocol-co-delete-vc.md">ProtocolCoDeleteVc</a> function, or the
-    MCM driver calls 
-    <b>NdisMCmDeleteVc</b> after calling 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562818">NdisMCmDeactivateVc</a> and releasing any
+    <a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a> and releasing any
     additional resources it had associated with the VC that it created.</p>
 
 <p>A call to 
@@ -234,7 +186,7 @@ VOID NdisMCmDispatchIncomingCloseCall(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
+<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -245,20 +197,20 @@ VOID NdisMCmDispatchIncomingCloseCall(
 <a href="..\ndis\nc-ndis-miniport-interrupt-dpc.md">MiniportInterruptDPC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561627">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismcmdispatchincomingdropparty.md">
    NdisMCmDispatchIncomingDropParty</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562818">NdisMCmDeactivateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562819">NdisMCmDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562830">NdisMCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cl-incoming-close-call.md">ProtocolClIncomingCloseCall</a>
@@ -269,4 +221,4 @@ VOID NdisMCmDispatchIncomingCloseCall(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDispatchIncomingCloseCall function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDispatchIncomingCloseCall function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

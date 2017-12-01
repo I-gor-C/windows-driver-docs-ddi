@@ -7,7 +7,7 @@ old-location: sensors\gnss_breadcrumbing_param.htm
 old-project: sensors
 ms.assetid: 1EAD5B17-B662-4D97-B045-ED09E4AF6E99
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_BREADCRUMBING_PARAM, GNSS_BREADCRUMBING_PARAM, *PGNSS_BREADCRUMBING_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure contains the configuration passed into the start of breadcrumbing via <a href="https://msdn.microsoft.com/library/windows/hardware/mt767993">IOCTL_GNSS_START_BREADCRUMBING</a>.</p>
+<p>This structure contains the configuration passed into the start of breadcrumbing via <a href="..\gnssdriver\ni-gnssdriver-ioctl-gnss-start-breadcrumbing.md">IOCTL_GNSS_START_BREADCRUMBING</a>.</p>
 
 
 ## -syntax

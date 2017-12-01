@@ -7,7 +7,7 @@ old-location: stream\ksfiltercreatepinfactory.htm
 old-project: stream
 ms.assetid: f4c8de23-dc92-41b0-82ee-2622d3942c0e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsFilterCreatePinFactory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ NTSTATUS KsFilterCreatePinFactory(
 ### -param <i>Filter</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure for which to create a new pin factory.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure for which to create a new pin factory.</p>
 </dd>
 
 ### -param <i>PinDescriptor</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563534">KSPIN_DESCRIPTOR_EX</a> structure that describes the pins this factory will create.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a> structure that describes the pins this factory will create.</p>
 </dd>
 
 ### -param <i>PinID</i> [out]
@@ -79,8 +79,6 @@ NTSTATUS KsFilterCreatePinFactory(
 <p><b>KsFilterCreatePinFactory</b> returns the success or failure of the attempt to create the pin factory. Failure may occur due to invalid parameters or low memory.</p>
 
 ## -remarks
-<p>Note that the filter control mutex must be held before calling this function. For more information, see <a href="NULL">Mutexes in AVStream</a>. </p>
-
 <p>Note that the filter control mutex must be held before calling this function. For more information, see <a href="NULL">Mutexes in AVStream</a>. </p>
 
 ## -requirements
@@ -136,9 +134,9 @@ NTSTATUS KsFilterCreatePinFactory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562528">KsFilterCreateNode</a>
+<a href="..\ks\nf-ks-ksfiltercreatenode.md">KsFilterCreateNode</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterCreatePinFactory function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterCreatePinFactory function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: debugger\debug_stack_frame.htm
 old-project: debugger
 ms.assetid: e3ab83cf-96ed-468d-895f-23b90951cfb5
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_STACK_FRAME, DEBUG_STACK_FRAME, *PDEBUG_STACK_FRAME
 ms.prod: windows-hardware
 ms.technology: windows-devices

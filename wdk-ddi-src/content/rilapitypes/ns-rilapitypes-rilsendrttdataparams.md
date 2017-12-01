@@ -7,7 +7,7 @@ old-location: netvista\rilsendrttdataparams_2.htm
 old-project: netvista
 ms.assetid: 9fc4662f-e827-473a-8e18-f60afb62cd5e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSENDRTTDATAPARAMS, RILSENDRTTDATAPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

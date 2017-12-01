@@ -96,7 +96,7 @@ typedef enum _UCX_CONTROLLER_PARENT_BUS_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188057">UCX_CONTROLLER_CONFIG</a>
+<a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a>
 </dt>
 </dl>
 <p> </p>

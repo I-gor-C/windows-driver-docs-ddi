@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure is used as an input and output buffer for the <a href="https://msdn.microsoft.com/library/windows/hardware/dn932064">IOCTL_STORAGE_DEVICE_POWER_CAP</a>.</p>
+<p>This structure is used as an input and output buffer for the <a href="..\ntddstor\ni-ntddstor-ioctl-storage-device-power-cap.md">IOCTL_STORAGE_DEVICE_POWER_CAP</a>.</p>
 
 
 ## -syntax

@@ -60,7 +60,7 @@ NTSTATUS APIENTRY D3DKMTReserveGpuVirtualAddress(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906327">D3DDDI_RESERVEGPUVIRTUALADDRESS</a> structure that describes the operation.</p>
+<p>A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-reservegpuvirtualaddress.md">D3DDDI_RESERVEGPUVIRTUALADDRESS</a> structure that describes the operation.</p>
 </dd>
 </dl>
 

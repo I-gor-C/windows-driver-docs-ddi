@@ -84,7 +84,7 @@ HRESULT CreateRasterizer(
 ### -param <i>nonTextRenderingMode</i> [in]
 
 <dd>
-<p>Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/ff564291">XPSRAS_RENDERING_MODE</a> enumeration values:</p>
+<p>Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following <a href="print.xpsras_rendering_mode_enumeration">XPSRAS_RENDERING_MODE</a> enumeration values:</p>
 <ul>
 <li>
 <p>XPSRAS_RENDERING_MODE_ANTIALIASED</p>
@@ -112,7 +112,7 @@ HRESULT CreateRasterizer(
 ### -param <i>pixelFormat</i> [in]
 
 <dd>
-<p>Allows a caller to select the pixel format used by the IWICBitmap returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff556365">IXpsRasterizer::RasterizeRect</a>. Set this parameter to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/hh802469">XPSRAS_PIXEL_FORMAT</a> enumeration values:</p>
+<p>Allows a caller to select the pixel format used by the IWICBitmap returned by <a href="print.ixpsrasterizer_rasterizerect">IXpsRasterizer::RasterizeRect</a>. Set this parameter to one of the following <a href="print.xpsras_pixel_format">XPSRAS_PIXEL_FORMAT</a> enumeration values:</p>
 <ul>
 <li>
 <p>XPSRAS_PIXEL_FORMAT_32BPP_PBGRA_UINT_SRGB</p>
@@ -129,7 +129,7 @@ HRESULT CreateRasterizer(
 ### -param <i>backgroundColor</i> [in]
 
 <dd>
-<p>Allows a caller to select background color. Set this parameter to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/dn897481">XPSRAS_BACKGROUND_COLOR</a> enumeration values:</p>
+<p>Allows a caller to select background color. Set this parameter to one of the following <a href="print.xpsras_background_color">XPSRAS_BACKGROUND_COLOR</a> enumeration values:</p>
 <ul>
 <li>
 <p>XPSRAS_BACKGROUND_COLOR_TRANSPARENT</p>
@@ -190,7 +190,7 @@ HRESULT CreateRasterizer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn937110">IXpsRasterizationFactory2</a>
+<a href="..\xpsrassvc\nn-xpsrassvc-ixpsrasterizationfactory2.md">IXpsRasterizationFactory2</a>
 </dt>
 </dl>
 <p> </p>

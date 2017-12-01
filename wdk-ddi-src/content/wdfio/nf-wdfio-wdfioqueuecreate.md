@@ -7,7 +7,7 @@ old-location: wdf\wdfioqueuecreate.htm
 old-project: wdf
 ms.assetid: cd7e993e-1381-4b0c-b046-716e839dbb62
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfIoQueueCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Wdf01000.sys (KMDF); 
-WUDFx02000.dll (UMDF)
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
 req.iface: 
@@ -69,13 +68,13 @@ NTSTATUS WdfIoQueueCreate(
 ### -param <i>Config</i> [in]
 
 <dd>
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552359">WDF_IO_QUEUE_CONFIG</a> structure.</p>
+<p>A pointer to a caller-allocated <a href="..\wdfio\ns-wdfio--wdf-io-queue-config.md">WDF_IO_QUEUE_CONFIG</a> structure.</p>
 </dd>
 
 ### -param <i>QueueAttributes</i> [in, optional]
 
 <dd>
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the new object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES. </p>
+<p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the new object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES. </p>
 </dd>
 
 ### -param <i>Queue</i> [out, optional]
@@ -90,13 +89,13 @@ NTSTATUS WdfIoQueueCreate(
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl><p>An input parameter is invalid.</p><dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl><p>The size of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552359">WDF_IO_QUEUE_CONFIG</a> structure is incorrect.</p><dl>
+</dl><p>The size of the <a href="..\wdfio\ns-wdfio--wdf-io-queue-config.md">WDF_IO_QUEUE_CONFIG</a> structure is incorrect.</p><dl>
 <dt><b>STATUS_POWER_STATE_INVALID</b></dt>
 </dl><p>The framework is performing a power management operation.</p><dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl><p>The amount of available memory is too low.</p><dl>
 <dt><b>STATUS_WDF_NO_CALLBACK</b></dt>
-</dl><p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552359">WDF_IO_QUEUE_CONFIG</a> structure does not specify any <a href="wdf.request_handlers">request handlers</a>, and the dispatching method is not <b>WdfIoQueueDispatchManual</b>.</p><dl>
+</dl><p>The <a href="..\wdfio\ns-wdfio--wdf-io-queue-config.md">WDF_IO_QUEUE_CONFIG</a> structure does not specify any <a href="wdf.request_handlers">request handlers</a>, and the dispatching method is not <b>WdfIoQueueDispatchManual</b>.</p><dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
 </dl><p>The driver is attempting to create a default queue while a default queue already exists for the device, or an internal error occurred.</p>
 
@@ -113,25 +112,13 @@ NTSTATUS WdfIoQueueCreate(
 
 <p>The <i>Config</i> and <i>QueueAttributes</i> parameters specify the queue's configuration and object attributes.</p>
 
-<p>By default, the framework device object that the <i>Device</i> parameter specifies becomes the parent object for the new framework queue object. If the driver specifies a parent object in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure's <b>ParentObject</b> member, the parent object can be a framework device object or any object whose chain of parents leads to a framework device object. The framework will delete the queue object when it deletes the parent object.</p>
+<p>By default, the framework device object that the <i>Device</i> parameter specifies becomes the parent object for the new framework queue object. If the driver specifies a parent object in the <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure's <b>ParentObject</b> member, the parent object can be a framework device object or any object whose chain of parents leads to a framework device object. The framework will delete the queue object when it deletes the parent object.</p>
 
 <p>If your driver provides <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-cleanup.md">EvtCleanupCallback</a> or <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-destroy.md">EvtDestroyCallback</a> callback functions for the framework queue object, the framework calls these callback functions at IRQL = PASSIVE_LEVEL.</p>
 
 <p>For more information about <b>WdfIoQueueCreate</b>, see <a href="wdf.creating_i_o_queues">Creating I/O Queues</a>.</p>
 
-<p>The following code example is the section of an <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback function that creates a device's default I/O queue. The example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552359">WDF_IO_QUEUE_CONFIG</a> structure and then calls <b>WdfIoQueueCreate</b>.</p>
-
-<p>Each call to <b>WdfIoQueueCreate</b> creates an I/O queue for a device. Your driver can create multiple I/O queues for each device. </p>
-
-<p>The <i>Config</i> and <i>QueueAttributes</i> parameters specify the queue's configuration and object attributes.</p>
-
-<p>By default, the framework device object that the <i>Device</i> parameter specifies becomes the parent object for the new framework queue object. If the driver specifies a parent object in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure's <b>ParentObject</b> member, the parent object can be a framework device object or any object whose chain of parents leads to a framework device object. The framework will delete the queue object when it deletes the parent object.</p>
-
-<p>If your driver provides <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-cleanup.md">EvtCleanupCallback</a> or <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-destroy.md">EvtDestroyCallback</a> callback functions for the framework queue object, the framework calls these callback functions at IRQL = PASSIVE_LEVEL.</p>
-
-<p>For more information about <b>WdfIoQueueCreate</b>, see <a href="wdf.creating_i_o_queues">Creating I/O Queues</a>.</p>
-
-<p>The following code example is the section of an <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback function that creates a device's default I/O queue. The example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552359">WDF_IO_QUEUE_CONFIG</a> structure and then calls <b>WdfIoQueueCreate</b>.</p>
+<p>The following code example is the section of an <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback function that creates a device's default I/O queue. The example initializes a <a href="..\wdfio\ns-wdfio--wdf-io-queue-config.md">WDF_IO_QUEUE_CONFIG</a> structure and then calls <b>WdfIoQueueCreate</b>.</p>
 
 ## -requirements
 <table>
@@ -195,7 +182,7 @@ NTSTATUS WdfIoQueueCreate(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975067">ChangeQueueState</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/jj126207">DrvAckIoStop</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_changequeuestate">ChangeQueueState</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_drvackiostop">DrvAckIoStop</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -203,21 +190,21 @@ NTSTATUS WdfIoQueueCreate(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549958">WdfRequestForwardToIoQueue</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoioqueue.md">WdfRequestForwardToIoQueue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545920">WdfDeviceConfigureRequestDispatching</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceconfigurerequestdispatching.md">WdfDeviceConfigureRequestDispatching</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552359">WDF_IO_QUEUE_CONFIG</a>
+<a href="..\wdfio\ns-wdfio--wdf-io-queue-config.md">WDF_IO_QUEUE_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552361">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a>
+<a href="..\wdfio\nf-wdfio-wdf-io-queue-config-init-default-queue.md">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueCreate method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueCreate method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

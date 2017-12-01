@@ -60,13 +60,13 @@ typedef struct D3D11_1DDI_VIDEO_COLOR {
 ### -field <b>YCbCr</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh450932">D3D11_1DDI_VIDEO_COLOR_YCbCrA</a> structure that contains a YCbCr color value.</p>
+<p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-color-ycbcra.md">D3D11_1DDI_VIDEO_COLOR_YCbCrA</a> structure that contains a YCbCr color value.</p>
 </dd>
 
 ### -field <b>RGBA</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh450928">D3D11_1DDI_VIDEO_COLOR_RGBA</a> structure that contains an RGB color value.</p>
+<p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-color-rgba.md">D3D11_1DDI_VIDEO_COLOR_RGBA</a> structure that contains an RGB color value.</p>
 </dd>
 </dl>
 
@@ -106,10 +106,10 @@ typedef struct D3D11_1DDI_VIDEO_COLOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450928">D3D11_1DDI_VIDEO_COLOR_RGBA</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-color-rgba.md">D3D11_1DDI_VIDEO_COLOR_RGBA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450932">D3D11_1DDI_VIDEO_COLOR_YCbCrA</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-color-ycbcra.md">D3D11_1DDI_VIDEO_COLOR_YCbCrA</a>
 </dt>
 </dl>
 <p> </p>

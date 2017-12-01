@@ -63,7 +63,7 @@ VP_STATUS Int10FreeBuffer(
 ### -param <i>Context</i> [in]
 
 <dd>
-<p>Pointer to a video port driver-defined context for the interface. This should be the same as the value in the <b>Context</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570539">VIDEO_PORT_INT10_INTERFACE</a> structure after <a href="https://msdn.microsoft.com/library/windows/hardware/ff570337">VideoPortQueryServices</a> returns.</p>
+<p>Pointer to a video port driver-defined context for the interface. This should be the same as the value in the <b>Context</b> member of the <a href="..\video\ns-video--video-port-int10-interface.md">VIDEO_PORT_INT10_INTERFACE</a> structure after <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a> returns.</p>
 </dd>
 
 ### -param <i>Seg</i> [in]
@@ -83,9 +83,7 @@ VP_STATUS Int10FreeBuffer(
 <p>The <i>Int10FreeBuffer</i> function returns NO_ERROR upon success. Otherwise, the function returns an appropriate error code.</p>
 
 ## -remarks
-<p>The video port implements this function, which can be accessed through a pointer in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570539">VIDEO_PORT_INT10_INTERFACE</a> structure.</p>
-
-<p>The video port implements this function, which can be accessed through a pointer in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570539">VIDEO_PORT_INT10_INTERFACE</a> structure.</p>
+<p>The video port implements this function, which can be accessed through a pointer in the <a href="..\video\ns-video--video-port-int10-interface.md">VIDEO_PORT_INT10_INTERFACE</a> structure.</p>
 
 ## -requirements
 <table>
@@ -130,7 +128,7 @@ VP_STATUS Int10FreeBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570539">VIDEO_PORT_INT10_INTERFACE</a>
+<a href="..\video\ns-video--video-port-int10-interface.md">VIDEO_PORT_INT10_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

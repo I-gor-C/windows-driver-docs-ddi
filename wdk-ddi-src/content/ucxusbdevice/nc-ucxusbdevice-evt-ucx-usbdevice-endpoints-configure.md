@@ -64,13 +64,13 @@ typedef EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE PEVT_UCX_USBDEVICE_ENDPOINTS_CONFI
 ### -param <i>UcxController</i> [in]
 
 <dd>
-<p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a> method.</p>
+<p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
 ### -param <i>Request</i> [in]
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt188019">ENDPOINTS_CONFIGURE</a> structure.</p>
+<p>Contains a structure of type <a href="buses._endpoints_configure">ENDPOINTS_CONFIGURE</a> structure.</p>
 </dd>
 </dl>
 
@@ -78,19 +78,11 @@ typedef EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE PEVT_UCX_USBDEVICE_ENDPOINTS_CONFI
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a> method.</p>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.</p>
 
-<p>In the callback, the driver programs or deprograms the endpoints, as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188019">ENDPOINTS_CONFIGURE</a> structure.</p>
+<p>In the callback, the driver programs or deprograms the endpoints, as described in the <a href="buses._endpoints_configure">ENDPOINTS_CONFIGURE</a> structure.</p>
 
-<p>This callback does not enable or disable the default endpoint. The default endpoint’s state is tied to the state of the device.   The driver implements enable and disable operations in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187840">EVT_UCX_USBDEVICE_DISABLE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt187841">EVT_UCX_USBDEVICE_ENABLE</a> callback functions.</p>
-
-<p>The client driver returns completion status in <i>Request</i>.  The driver can complete the WDFREQUEST asynchronously.</p>
-
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a> method.</p>
-
-<p>In the callback, the driver programs or deprograms the endpoints, as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188019">ENDPOINTS_CONFIGURE</a> structure.</p>
-
-<p>This callback does not enable or disable the default endpoint. The default endpoint’s state is tied to the state of the device.   The driver implements enable and disable operations in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187840">EVT_UCX_USBDEVICE_DISABLE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt187841">EVT_UCX_USBDEVICE_ENABLE</a> callback functions.</p>
+<p>This callback does not enable or disable the default endpoint. The default endpoint’s state is tied to the state of the device.   The driver implements enable and disable operations in the <a href="buses.evt_ucx_usbdevice_disable">EVT_UCX_USBDEVICE_DISABLE</a> and <a href="buses.evt_ucx_usbdevice_enable">EVT_UCX_USBDEVICE_ENABLE</a> callback functions.</p>
 
 <p>The client driver returns completion status in <i>Request</i>.  The driver can complete the WDFREQUEST asynchronously.</p>
 
@@ -135,10 +127,10 @@ typedef EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE PEVT_UCX_USBDEVICE_ENDPOINTS_CONFI
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188019">ENDPOINTS_CONFIGURE</a>
+<a href="buses._endpoints_configure">ENDPOINTS_CONFIGURE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a>
+<a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a>
 </dt>
 </dl>
 <p> </p>

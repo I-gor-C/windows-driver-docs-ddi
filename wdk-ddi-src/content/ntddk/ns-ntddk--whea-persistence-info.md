@@ -106,7 +106,7 @@ typedef union _WHEA_PERSISTENCE_INFO {
 </dl>
 
 ## -remarks
-<p>A WHEA_PERSISTENCE_INFO union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a> structure.</p>
+<p>A WHEA_PERSISTENCE_INFO union is contained within the <a href="..\ntddk\ns-ntddk--whea-error-record-header.md">WHEA_ERROR_RECORD_HEADER</a> structure.</p>
 
 ## -requirements
 <table>
@@ -134,7 +134,7 @@ typedef union _WHEA_PERSISTENCE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a>
+<a href="..\ntddk\ns-ntddk--whea-error-record-header.md">WHEA_ERROR_RECORD_HEADER</a>
 </dt>
 </dl>
 <p> </p>

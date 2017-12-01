@@ -7,7 +7,7 @@ old-location: netvista\ndisunbindadapter.htm
 old-project: netvista
 ms.assetid: 47aacc23-f7d1-4c14-9541-3207debef327
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisUnbindAdapter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ NDIS_STATUS NdisUnbindAdapter(
 
 <dd>
 <p>A handle that the protocol driver obtained from a call to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function. The handle
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function. The handle
      identifies the binding to close.</p>
 </dd>
 </dl>
@@ -75,18 +75,6 @@ NDIS_STATUS NdisUnbindAdapter(
 <p> </p>
 
 ## -remarks
-<p>Protocol drivers call 
-    <b>NdisUnbindAdapter</b> outside the context of the 
-    <a href="..\ndis\nc-ndis-protocol-unbind-adapter-ex.md">ProtocolUnbindAdapterEx</a> or 
-    <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a> functions.
-    NDIS schedules a work item to call the protocol driver's 
-    <i>ProtocolUnbindAdapterEx</i> function and returns immediately.</p>
-
-<p>Before the call to 
-    <b>NdisUnbindAdapter</b> returns, NDIS can already have closed the binding. Therefore, after the call
-    returns, the caller must not assume that the handle it passed to the 
-    <i>NdisBindingHandle</i> parameter is still valid.</p>
-
 <p>Protocol drivers call 
     <b>NdisUnbindAdapter</b> outside the context of the 
     <a href="..\ndis\nc-ndis-protocol-unbind-adapter-ex.md">ProtocolUnbindAdapterEx</a> or 
@@ -152,7 +140,7 @@ NDIS_STATUS NdisUnbindAdapter(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547996">Irql_Protocol_Driver_Function</a>
+<a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -160,7 +148,7 @@ NDIS_STATUS NdisUnbindAdapter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
@@ -171,4 +159,4 @@ NDIS_STATUS NdisUnbindAdapter(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisUnbindAdapter function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisUnbindAdapter function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

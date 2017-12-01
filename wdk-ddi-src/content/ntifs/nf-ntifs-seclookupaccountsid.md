@@ -128,16 +128,6 @@ NTSTATUS SecLookupAccountSid(
 
 <p><b>SecLookupAccountSid</b> is exported by the ksecdd driver, which implements this function by using user-mode helper services. Accordingly, the use of this function within file systems must obey the usual rules for communication with user-mode services. <b>SecLookupAccountSid</b> cannot be used during paging file I/O. </p>
 
-<p><b>SecLookupAccountSid</b> attempts to find a name for the specified SID by first checking a list of well-known SIDs. If the supplied SID does not correspond to a well-known SID, the function checks built-in and administratively defined local accounts. Next, the function checks the primary domain. Security identifiers not recognized by the primary domain are checked against the trusted domains that correspond to their SID prefixes.</p>
-
-<p>If the function cannot find an account name for the SID, <b>SecLookupAccountSid</b> fails. This can occur if a network time-out prevents the function from finding the name. It also occurs for SIDs that have no corresponding account name, such as a logon SID that identifies a logon session.</p>
-
-<p>In addition to looking up SIDs for local accounts, local domain accounts, and explicitly trusted domain accounts, <b>SecLookupAccountSid</b> can look up SIDs for any account in any domain in the forest, including SIDs that appear only in the SIDhistory field of an account in the forest. The SIDhistory field stores former SIDs of an account that has been moved from another domain. To look up a SID, <b>SecLookupAccountSid</b> queries the global catalog of the forest. </p>
-
-<p><b>SecLookupAccountSid</b> is equivalent to the Win32 <b>LookupAccountSid</b> function. </p>
-
-<p><b>SecLookupAccountSid</b> is exported by the ksecdd driver, which implements this function by using user-mode helper services. Accordingly, the use of this function within file systems must obey the usual rules for communication with user-mode services. <b>SecLookupAccountSid</b> cannot be used during paging file I/O. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -191,16 +181,16 @@ NTSTATUS SecLookupAccountSid(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554795">SecLookupAccountName</a>
+<a href="..\ntifs\nf-ntifs-seclookupaccountname.md">SecLookupAccountName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556582">SecLookupWellKnownSid</a>
+<a href="..\ntifs\nf-ntifs-seclookupwellknownsid.md">SecLookupWellKnownSid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556744">SID_NAME_USE</a>
+<a href="..\ntifs\ne-ntifs--sid-name-use.md">SID_NAME_USE</a>
 </dt>
 </dl>
 <p> </p>

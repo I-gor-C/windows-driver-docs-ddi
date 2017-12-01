@@ -119,7 +119,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544026">IOCTL_INTERNAL_PARALLEL_PORT_FREE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-port-free.md">IOCTL_INTERNAL_PARALLEL_PORT_FREE</a>
 </dt>
 </dl>
 <p> </p>

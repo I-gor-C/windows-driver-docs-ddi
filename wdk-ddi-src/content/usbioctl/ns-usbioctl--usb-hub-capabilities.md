@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USB_HUB_CAPABILITIES</b> structure has been deprecated. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539329">USB_HUB_CAPABILITIES_EX</a> instead.</p>
+<p>The <b>USB_HUB_CAPABILITIES</b> structure has been deprecated. Use <a href="..\usbioctl\ns-usbioctl--usb-hub-capabilities-ex.md">USB_HUB_CAPABILITIES_EX</a> instead.</p>
 
 
 ## -syntax
@@ -82,16 +82,16 @@ typedef struct _USB_HUB_CAPABILITIES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537312">IOCTL_USB_GET_HUB_CAPABILITIES</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-hub-capabilities.md">IOCTL_USB_GET_HUB_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539330">USB_HUB_CAP_FLAGS</a>
+<a href="..\usbioctl\ns-usbioctl--usb-hub-cap-flags.md">USB_HUB_CAP_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539329">USB_HUB_CAPABILITIES_EX</a>
+<a href="..\usbioctl\ns-usbioctl--usb-hub-capabilities-ex.md">USB_HUB_CAPABILITIES_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

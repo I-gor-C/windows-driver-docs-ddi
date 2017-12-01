@@ -7,7 +7,7 @@ old-location: netvista\ril3gpp2isdnalerting_2.htm
 old-project: netvista
 ms.assetid: 9fff629b-ad85-4158-b8c4-f5f6abe8e3f5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

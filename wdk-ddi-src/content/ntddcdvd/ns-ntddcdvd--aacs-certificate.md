@@ -69,7 +69,7 @@ typedef struct _AACS_CERTIFICATE {
 </dl>
 
 ## -remarks
-<p>Clients retrieve an Advanced Access Content System (AACS) certificate with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559251">IOCTL_AACS_GET_CERTIFICATE</a> request. Clients send certificates in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff550113">AACS_SEND_CERTIFICATE</a> structure with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559297">IOCTL_AACS_SEND_CERTIFICATE</a> request.</p>
+<p>Clients retrieve an Advanced Access Content System (AACS) certificate with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-get-certificate.md">IOCTL_AACS_GET_CERTIFICATE</a> request. Clients send certificates in a <a href="..\ntddcdvd\ns-ntddcdvd--aacs-send-certificate.md">AACS_SEND_CERTIFICATE</a> structure with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-send-certificate.md">IOCTL_AACS_SEND_CERTIFICATE</a> request.</p>
 
 ## -requirements
 <table>
@@ -88,7 +88,7 @@ typedef struct _AACS_CERTIFICATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559251">IOCTL_AACS_GET_CERTIFICATE</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-get-certificate.md">IOCTL_AACS_GET_CERTIFICATE</a>
 </dt>
 </dl>
 <p> </p>

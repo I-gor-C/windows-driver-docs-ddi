@@ -95,19 +95,19 @@ typedef struct _DXVA_DeinterlaceCaps {
 
 <dd>
 <p>Indicates the Direct3D surface format of the output frames. Usually a deinterlace algorithm outputs frames in a surface format that matches the input sample format. This member ensures that the VMR or other video renderer will be able to supply the correct output frame surfaces to the deinterlace hardware.</p>
-<p>Note that if the <b>DXVA_Deinterlace_YUV2RGB</b> enumerator is returned in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564076">DXVA_VideoProcessCaps</a> enumeration, the VMR will assume that valid output formats are specified by this member, in addition to a D3DFMT_X8R8G8B8 format.</p>
+<p>Note that if the <b>DXVA_Deinterlace_YUV2RGB</b> enumerator is returned in the <a href="..\dxva\ne-dxva--dxva-videoprocesscaps.md">DXVA_VideoProcessCaps</a> enumeration, the VMR will assume that valid output formats are specified by this member, in addition to a D3DFMT_X8R8G8B8 format.</p>
 </dd>
 
 ### -field <b>VideoProcessingCaps</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564076">DXVA_VideoProcessCaps</a> enumeration indicating the operation that can be performed concurrently with the requested deinterlace. </p>
+<p>Specifies a <a href="..\dxva\ne-dxva--dxva-videoprocesscaps.md">DXVA_VideoProcessCaps</a> enumeration indicating the operation that can be performed concurrently with the requested deinterlace. </p>
 </dd>
 
 ### -field <b>DeinterlaceTechnology</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563960">DXVA_DeinterlaceTech</a> enumeration indicating the deinterlacing technology used by this deinterlacing device.</p>
+<p>Specifies a <a href="..\dxva\ne-dxva--dxva-deinterlacetech.md">DXVA_DeinterlaceTech</a> enumeration indicating the deinterlacing technology used by this deinterlacing device.</p>
 </dd>
 </dl>
 
@@ -131,10 +131,10 @@ typedef struct _DXVA_DeinterlaceCaps {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564076">DXVA_VideoProcessCaps</a>
+<a href="..\dxva\ne-dxva--dxva-videoprocesscaps.md">DXVA_VideoProcessCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563960">DXVA_DeinterlaceTech</a>
+<a href="..\dxva\ne-dxva--dxva-deinterlacetech.md">DXVA_DeinterlaceTech</a>
 </dt>
 </dl>
 <p> </p>

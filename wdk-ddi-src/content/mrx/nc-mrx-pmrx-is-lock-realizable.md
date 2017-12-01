@@ -97,10 +97,6 @@ NTSTATUS MRxIsLockRealizable(
 
 <p><i>MRxIsLockRealizable</i> is called in response to receiving an IRP with the IRP_MN_LOCK minor function.</p>
 
-<p><i>MRxIsLockRealizable</i> determines whether the specific byte-range lock requested is supported on this NET_ROOT structure. A network mini-redirector might support certain byte range locks and not support others. For example, a network mini-redirector might only support 32-bit byte range locks or exclusive locks.</p>
-
-<p><i>MRxIsLockRealizable</i> is called in response to receiving an IRP with the IRP_MN_LOCK minor function.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -128,46 +124,46 @@ NTSTATUS MRxIsLockRealizable(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549838">MRxAreFilesAliased</a>
+<a href="ifsk.mrxarefilesaliased">MRxAreFilesAliased</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549841">MRxCleanupFobx</a>
+<a href="ifsk.mrxcleanupfobx">MRxCleanupFobx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549845">MRxCloseSrvOpen</a>
+<a href="ifsk.mrxclosesrvopen">MRxCloseSrvOpen</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549847">MRxCollapseOpen</a>
+<a href="ifsk.mrxcollapseopen">MRxCollapseOpen</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549862">MRxCreate</a>
+<a href="ifsk.mrxcreate">MRxCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549871">MRxDeallocateForFcb</a>
+<a href="ifsk.mrxdeallocateforfcb">MRxDeallocateForFcb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549872">MRxDeallocateForFobx</a>
+<a href="ifsk.mrxdeallocateforfobx">MRxDeallocateForFobx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549878">MRxExtendForCache</a>
+<a href="ifsk.mrxextendforcache">MRxExtendForCache</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549879">MRxExtendForNonCache</a>
+<a href="ifsk.mrxextendfornoncache">MRxExtendForNonCache</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550669">MRxFlush</a>
+<a href="ifsk.mrxflush">MRxFlush</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550677">MRxForceClosed</a>
+<a href="ifsk.mrxforceclosed">MRxForceClosed</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550817">MRxShouldTryToCollapseThisOpen</a>
+<a href="ifsk.mrxshouldtrytocollapsethisopen">MRxShouldTryToCollapseThisOpen</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550839">MRxTruncate</a>
+<a href="ifsk.mrxtruncate">MRxTruncate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550844">MRxZeroExtend</a>
+<a href="ifsk.mrxzeroextend">MRxZeroExtend</a>
 </dt>
 </dl>
 <p> </p>

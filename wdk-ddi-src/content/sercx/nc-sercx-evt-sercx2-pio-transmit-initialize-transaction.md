@@ -62,7 +62,7 @@ VOID EvtSerCx2PioTransmitInitializeTransaction(
 ### -param <i>PioTransmit</i> [in]
 
 <dd>
-<p>A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265269">SerCx2PioTransmitCreate</a> method to create this object.</p>
+<p>A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method to create this object.</p>
 </dd>
 
 ### -param <i>Length</i> [in]
@@ -76,23 +76,9 @@ VOID EvtSerCx2PioTransmitInitializeTransaction(
 <p>None.</p>
 
 ## -remarks
-<p>Your serial controller driver can, as an option, implement this function. If implemented, the driver registers the function in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265269">SerCx2PioTransmitCreate</a> call that creates the PIO-transmit object.</p>
+<p>Your serial controller driver can, as an option, implement this function. If implemented, the driver registers the function in the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> call that creates the PIO-transmit object.</p>
 
-<p>Your driver should implement an <i>EvtSerCx2PioTransmitInitializeTransaction</i> function if it needs to initialize the serial controller and associated hardware in preparation for a new PIO-transmit transaction. SerCx2 calls this function, if it is implemented, before a PIO-transmit transaction starts. In response to this call, the serial controller driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265271">SerCx2PioTransmitInitializeTransactionComplete</a> method to notify SerCx2 after the initialization is finished.</p>
-
-<p>For more information, see <a href="NULL">SerCx2 PIO-Transmit Transactions</a>.</p>
-
-<p>To define an <i>EvtSerCx2PioTransmitInitializeTransaction</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define an <i>EvtSerCx2PioTransmitInitializeTransaction</i> callback function that is named <code>MyPioTransmitInitializeTransaction</code>, use the <b>EVT_SERCX2_PIO_TRANSMIT_INITIALIZE_TRANSACTION</b> function type, as shown in this code example:</p>
-
-<p>Then, implement your callback function as follows:</p>
-
-<p>The <b>EVT_SERCX2_PIO_TRANSMIT_INITIALIZE_TRANSACTION</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_PIO_TRANSMIT_INITIALIZE_TRANSACTION</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
-
-<p>Your serial controller driver can, as an option, implement this function. If implemented, the driver registers the function in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265269">SerCx2PioTransmitCreate</a> call that creates the PIO-transmit object.</p>
-
-<p>Your driver should implement an <i>EvtSerCx2PioTransmitInitializeTransaction</i> function if it needs to initialize the serial controller and associated hardware in preparation for a new PIO-transmit transaction. SerCx2 calls this function, if it is implemented, before a PIO-transmit transaction starts. In response to this call, the serial controller driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265271">SerCx2PioTransmitInitializeTransactionComplete</a> method to notify SerCx2 after the initialization is finished.</p>
+<p>Your driver should implement an <i>EvtSerCx2PioTransmitInitializeTransaction</i> function if it needs to initialize the serial controller and associated hardware in preparation for a new PIO-transmit transaction. SerCx2 calls this function, if it is implemented, before a PIO-transmit transaction starts. In response to this call, the serial controller driver must call the <a href="..\sercx\nf-sercx-sercx2piotransmitinitializetransactioncomplete.md">SerCx2PioTransmitInitializeTransactionComplete</a> method to notify SerCx2 after the initialization is finished.</p>
 
 <p>For more information, see <a href="NULL">SerCx2 PIO-Transmit Transactions</a>.</p>
 
@@ -150,10 +136,10 @@ VOID EvtSerCx2PioTransmitInitializeTransaction(
 <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265269">SerCx2PioTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265271">SerCx2PioTransmitInitializeTransactionComplete</a>
+<a href="..\sercx\nf-sercx-sercx2piotransmitinitializetransactioncomplete.md">SerCx2PioTransmitInitializeTransactionComplete</a>
 </dt>
 </dl>
 <p> </p>

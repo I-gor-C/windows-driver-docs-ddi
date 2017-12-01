@@ -68,13 +68,13 @@ __checkReturn HRESULT APIENTRY CreateVertexShaderDecl(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542970">D3DDDIARG_CREATEVERTEXSHADERDECL</a> structure that retrieves the shader handle that is associated with the vertex shader declaration that is specified by <i>pVertexElements</i>.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createvertexshaderdecl.md">D3DDDIARG_CREATEVERTEXSHADERDECL</a> structure that retrieves the shader handle that is associated with the vertex shader declaration that is specified by <i>pVertexElements</i>.</p>
 </dd>
 
 ### -param <i>pVertexElements</i> [in]
 
 <dd>
-<p> An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544344">D3DDDIVERTEXELEMENT</a> structures that make up the vertex shader declaration.</p>
+<p> An array of <a href="..\d3dumddi\ns-d3dumddi--d3dddivertexelement.md">D3DDDIVERTEXELEMENT</a> structures that make up the vertex shader declaration.</p>
 </dd>
 </dl>
 
@@ -82,10 +82,6 @@ __checkReturn HRESULT APIENTRY CreateVertexShaderDecl(
 <p><b>CreateVertexShaderDecl</b> returns S_OK or an appropriate error result if the vertex shader declaration object is not successfully created.</p>
 
 ## -remarks
-<p>The array of D3DDDIVERTEXELEMENT structures specified by <i>pVertexElements</i> defines vertex data into the pipeline. </p>
-
-<p>For more information about programming shader assemblers, see <a href="https://msdn.microsoft.com/c858766c-b414-4971-b4d9-23ec94aca8ea">Processing Shader Codes</a>.</p>
-
 <p>The array of D3DDDIVERTEXELEMENT structures specified by <i>pVertexElements</i> defines vertex data into the pipeline. </p>
 
 <p>For more information about programming shader assemblers, see <a href="https://msdn.microsoft.com/c858766c-b414-4971-b4d9-23ec94aca8ea">Processing Shader Codes</a>.</p>
@@ -125,13 +121,13 @@ __checkReturn HRESULT APIENTRY CreateVertexShaderDecl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542970">D3DDDIARG_CREATEVERTEXSHADERDECL</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createvertexshaderdecl.md">D3DDDIARG_CREATEVERTEXSHADERDECL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544344">D3DDDIVERTEXELEMENT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddivertexelement.md">D3DDDIVERTEXELEMENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

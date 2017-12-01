@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CHANGER_INITIALIZE_ELEMENT_STATUS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559409">IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS</a> request to initialize the status of all elements or of a specified number of elements of a particular type. </p>
+<p>The CHANGER_INITIALIZE_ELEMENT_STATUS structure is used in conjunction with the <a href="..\ntddchgr\ni-ntddchgr-ioctl-changer-initialize-element-status.md">IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS</a> request to initialize the status of all elements or of a specified number of elements of a particular type. </p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ typedef struct _CHANGER_INITIALIZE_ELEMENT_STATUS {
 ### -field <b>ElementList</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551459">CHANGER_ELEMENT_LIST</a> that specifies the element type and the number of elements. If the <b>Features0</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a> structure is set to CHANGER_INIT_ELEM_STAT_WITH_RANGE, the changer supports initializing a range of elements. In this case, the element type can be <b>ChangerTransport</b>, <b>ChangerSlot</b>, <b>ChangerDrive</b>, or <b>ChangerIEPort</b> and <b>ElementList</b> can specify a number of elements to initialize. Otherwise, the element type must be <b>AllElements</b> and the number of elements is ignored. </p>
+<p>Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element-list.md">CHANGER_ELEMENT_LIST</a> that specifies the element type and the number of elements. If the <b>Features0</b> member of the <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> structure is set to CHANGER_INIT_ELEM_STAT_WITH_RANGE, the changer supports initializing a range of elements. In this case, the element type can be <b>ChangerTransport</b>, <b>ChangerSlot</b>, <b>ChangerDrive</b>, or <b>ChangerIEPort</b> and <b>ElementList</b> can specify a number of elements to initialize. Otherwise, the element type must be <b>AllElements</b> and the number of elements is ignored. </p>
 </dd>
 
 ### -field <b>BarCodeScan</b>
@@ -88,16 +88,16 @@ typedef struct _CHANGER_INITIALIZE_ELEMENT_STATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559409">IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS</a>
+<a href="..\ntddchgr\ni-ntddchgr-ioctl-changer-initialize-element-status.md">IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551433">ChangerInitializeElementStatus</a>
+<a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a>
+<a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551459">CHANGER_ELEMENT_LIST</a>
+<a href="..\ntddchgr\ns-ntddchgr--changer-element-list.md">CHANGER_ELEMENT_LIST</a>
 </dt>
 </dl>
 <p> </p>

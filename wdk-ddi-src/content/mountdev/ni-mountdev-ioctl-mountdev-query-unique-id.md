@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Support for this IOCTL by mount manager clients is mandatory. Upon receiving this IOCTL, the mount manager client must provide a counted byte string identifier that is unique to the client (that is, the device or the volume). The client cannot change this unique ID without alerting the mount manager (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560443">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>). </p>
+<p>Support for this IOCTL by mount manager clients is mandatory. Upon receiving this IOCTL, the mount manager client must provide a counted byte string identifier that is unique to the client (that is, the device or the volume). The client cannot change this unique ID without alerting the mount manager (see <a href="storage.ioctl_mountdev_unique_id_change_notify">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>). </p>
 
 
 ## -ioctlparameters
@@ -53,7 +53,7 @@ req.iface:
 <text></text>
 
 ### -output-buffer
-<p>The device class or volume driver returns the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562264">MOUNTDEV_UNIQUE_ID</a> structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
+<p>The device class or volume driver returns the <a href="..\mountdev\ns-mountdev--mountdev-unique-id.md">MOUNTDEV_UNIQUE_ID</a> structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
 
 ### -output-buffer-length
 <p><b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the output buffer, which must be greater than or equal to <b>sizeof</b>(MOUNTDEV_UNIQUE_ID).</p>
@@ -70,11 +70,11 @@ req.iface:
 
 ### -status-block
 I/O Status block
-<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="https://msdn.microsoft.com/library/windows/hardware/ff562264">MOUNTDEV_UNIQUE_ID</a>, UniqueId) + output-&gt;UniqueIdLength; or alternatively to sizeof(USHORT) + output-&gt;UniqueIdLength, where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
+<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountdev\ns-mountdev--mountdev-unique-id.md">MOUNTDEV_UNIQUE_ID</a>, UniqueId) + output-&gt;UniqueIdLength; or alternatively to sizeof(USHORT) + output-&gt;UniqueIdLength, where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
 
-<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="https://msdn.microsoft.com/library/windows/hardware/ff562264">MOUNTDEV_UNIQUE_ID</a>, UniqueId) + output-&gt;UniqueIdLength; or alternatively to sizeof(USHORT) + output-&gt;UniqueIdLength, where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
+<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountdev\ns-mountdev--mountdev-unique-id.md">MOUNTDEV_UNIQUE_ID</a>, UniqueId) + output-&gt;UniqueIdLength; or alternatively to sizeof(USHORT) + output-&gt;UniqueIdLength, where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
 
-<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="https://msdn.microsoft.com/library/windows/hardware/ff562264">MOUNTDEV_UNIQUE_ID</a>, UniqueId) + output-&gt;UniqueIdLength; or alternatively to sizeof(USHORT) + output-&gt;UniqueIdLength, where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
+<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountdev\ns-mountdev--mountdev-unique-id.md">MOUNTDEV_UNIQUE_ID</a>, UniqueId) + output-&gt;UniqueIdLength; or alternatively to sizeof(USHORT) + output-&gt;UniqueIdLength, where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
 
 ## -remarks
 
@@ -96,10 +96,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560443">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>
+<a href="storage.ioctl_mountdev_unique_id_change_notify">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562264">MOUNTDEV_UNIQUE_ID</a>
+<a href="..\mountdev\ns-mountdev--mountdev-unique-id.md">MOUNTDEV_UNIQUE_ID</a>
 </dt>
 </dl>
 <p> </p>

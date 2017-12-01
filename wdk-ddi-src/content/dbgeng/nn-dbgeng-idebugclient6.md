@@ -7,7 +7,7 @@ old-location: debugger\idebugclient6.htm
 old-project: debugger
 ms.assetid: 9F8DFF33-DE07-4061-9A9E-3C8172F75EB5
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices

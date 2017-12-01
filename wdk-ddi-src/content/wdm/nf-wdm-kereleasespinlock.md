@@ -7,7 +7,7 @@ old-location: kernel\kereleasespinlock.htm
 old-project: kernel
 ms.assetid: 300cdd3b-0c12-45e3-ae45-c26084f3ec12
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: KeReleaseSpinLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ VOID KeReleaseSpinLock(
 ### -param <i>NewIrql</i> [in]
 
 <dd>
-<p>Specifies the IRQL value saved from the preceding call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff551917">KeAcquireSpinLock</a>.</p>
+<p>Specifies the IRQL value saved from the preceding call to <a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>.</p>
 </dd>
 </dl>
 
@@ -73,13 +73,7 @@ VOID KeReleaseSpinLock(
 <p>None</p>
 
 ## -remarks
-<p>This call is a reciprocal to <a href="https://msdn.microsoft.com/library/windows/hardware/ff551917">KeAcquireSpinLock</a>. The input <i>NewIrql</i> value must be the <i>OldIrql</i> returned by <b>KeAcquireSpinLock</b>.</p>
-
-<p>For more information about spin locks, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563830">Spin Locks</a>.</p>
-
-<p>Callers of this routine are running at IRQL = DISPATCH_LEVEL. On return from <b>KeReleaseSpinLock</b>, IRQL is restored to the <i>NewIrql</i> value.</p>
-
-<p>This call is a reciprocal to <a href="https://msdn.microsoft.com/library/windows/hardware/ff551917">KeAcquireSpinLock</a>. The input <i>NewIrql</i> value must be the <i>OldIrql</i> returned by <b>KeAcquireSpinLock</b>.</p>
+<p>This call is a reciprocal to <a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>. The input <i>NewIrql</i> value must be the <i>OldIrql</i> returned by <b>KeAcquireSpinLock</b>.</p>
 
 <p>For more information about spin locks, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563830">Spin Locks</a>.</p>
 
@@ -138,7 +132,7 @@ VOID KeReleaseSpinLock(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547830">IrqlKeReleaseSpinLock</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549016">MarkingQueuedIrps</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn926953">SpinLock</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff819089">SpinLockDpc</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454251">SpinlockRelease</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454252">SpinLockSafe</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff551602">ReqSendWhileSpinlock</a>, <a href="devtest.kmdf_spinlock">Spinlock(kmdf)</a>, <a href="devtest.kmdf_spinlockdpc">SpinlockDpc(kmdf)</a>, <a href="devtest.kmdf_spinlockrelease">SpinlockRelease(kmdf)</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>, <a href="devtest.storport_irqlkereleasespinlock">IrqlKeReleaseSpinLock(storport)</a>, <a href="devtest.storport_spinlock">SpinLock(storport)</a>, <a href="devtest.storport_spinlockdpc">SpinLockDpc(storport)</a>, <a href="devtest.storport_spinlockrelease">SpinLockRelease(storport)</a>, <a href="devtest.storport_spinlocksafe">SpinLockSafe(storport)</a>
+<a href="devtest.wdm_irqlkereleasespinlock">IrqlKeReleaseSpinLock</a>, <a href="devtest.wdm_markingqueuedirps">MarkingQueuedIrps</a>, <a href="devtest.wdm_spinlock">SpinLock</a>, <a href="devtest.wdm_spinlockdpc">SpinLockDpc</a>, <a href="devtest.wdm_spinlockrelease">SpinlockRelease</a>, <a href="devtest.wdm_spinlocksafe">SpinLockSafe</a>, <a href="devtest.kmdf_reqsendwhilespinlock">ReqSendWhileSpinlock</a>, <a href="devtest.kmdf_spinlock">Spinlock(kmdf)</a>, <a href="devtest.kmdf_spinlockdpc">SpinlockDpc(kmdf)</a>, <a href="devtest.kmdf_spinlockrelease">SpinlockRelease(kmdf)</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>, <a href="devtest.storport_irqlkereleasespinlock">IrqlKeReleaseSpinLock(storport)</a>, <a href="devtest.storport_spinlock">SpinLock(storport)</a>, <a href="devtest.storport_spinlockdpc">SpinLockDpc(storport)</a>, <a href="devtest.storport_spinlockrelease">SpinLockRelease(storport)</a>, <a href="devtest.storport_spinlocksafe">SpinLockSafe(storport)</a>
 </td>
 </tr>
 </table>
@@ -146,12 +140,12 @@ VOID KeReleaseSpinLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551917">KeAcquireSpinLock</a>
+<a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552160">KeInitializeSpinLock</a>
+<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeReleaseSpinLock routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeReleaseSpinLock routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

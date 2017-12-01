@@ -82,19 +82,7 @@ VOID VideoPortAcquireSpinLock(
 ## -remarks
 <p>The current IRQL is saved in <i>OldIrql</i>. Then, the current IRQL is reset to DISPATCH_LEVEL, and the specified spin lock is acquired.</p>
 
-<p>The <i>OldIrql</i> value must be specified when the spin lock is released with <a href="https://msdn.microsoft.com/library/windows/hardware/ff570357">VideoPortReleaseSpinLock</a>.</p>
-
-<p>Spin locks can cause serious problems if not used judiciously. In particular, no deadlock protection is performed and dispatching is disabled while the spin lock is held. Therefore: </p>
-
-<p>The code within a critical region guarded by a spin lock must neither be pageable nor make any references to pageable data. </p>
-
-<p>The code within a critical region guarded by a spin lock can neither call any external function that might access pageable data or raise an exception, nor can it generate any exceptions. </p>
-
-<p>The caller should release the spin lock with <b>VideoPortReleaseSpinLock</b> as quickly as possible. </p>
-
-<p>The current IRQL is saved in <i>OldIrql</i>. Then, the current IRQL is reset to DISPATCH_LEVEL, and the specified spin lock is acquired.</p>
-
-<p>The <i>OldIrql</i> value must be specified when the spin lock is released with <a href="https://msdn.microsoft.com/library/windows/hardware/ff570357">VideoPortReleaseSpinLock</a>.</p>
+<p>The <i>OldIrql</i> value must be specified when the spin lock is released with <a href="..\video\nf-video-videoportreleasespinlock.md">VideoPortReleaseSpinLock</a>.</p>
 
 <p>Spin locks can cause serious problems if not used judiciously. In particular, no deadlock protection is performed and dispatching is disabled while the spin lock is held. Therefore: </p>
 
@@ -167,10 +155,10 @@ VOID VideoPortAcquireSpinLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570357">VideoPortReleaseSpinLock</a>
+<a href="..\video\nf-video-videoportreleasespinlock.md">VideoPortReleaseSpinLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570176">VideoPortAcquireSpinLockAtDpcLevel</a>
+<a href="..\video\nf-video-videoportacquirespinlockatdpclevel.md">VideoPortAcquireSpinLockAtDpcLevel</a>
 </dt>
 </dl>
 <p> </p>

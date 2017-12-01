@@ -7,7 +7,7 @@ old-location: debugger\queryvirtual.htm
 old-project: debugger
 ms.assetid: 2d607433-0d2d-4662-acd6-9adbce290b97
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces2, QueryVirtual, IDebugDataSpaces2::QueryVirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,14 +76,6 @@ HRESULT QueryVirtual(
 <p> </p>
 
 ## -remarks
-<p>This method may not work in all sessions.</p>
-
-<p>This method returns attributes for a range of pages.  This range is determined by Windows; it begins at the specified page, and includes all subsequent pages with the same attributes.  The size of the range is given by the <b>RegionSize</b> field of the structure returned in <i>Info</i>.</p>
-
-<p>MEMORY_BASIC_INFORMATION64 appears in the Microsoft Windows SDK header file winnt.h.  It is the 64-bit equivalent of MEMORY_BASIC_INFORMATION, which is described in the Windows SDK documentation.</p>
-
-<p>This method behaves in a similar way to the Windows SDK function <b>VirtualQuery</b>.  See Windows SDK documentation for details.</p>
-
 <p>This method may not work in all sessions.</p>
 
 <p>This method returns attributes for a range of pages.  This range is determined by Windows; it begins at the specified page, and includes all subsequent pages with the same attributes.  The size of the range is given by the <b>RegionSize</b> field of the structure returned in <i>Info</i>.</p>

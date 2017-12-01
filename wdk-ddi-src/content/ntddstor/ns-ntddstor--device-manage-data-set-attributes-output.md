@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT</b> structure describes output for  <a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> control code requests for some data set management actions. </p>
+<p>The <b>DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT</b> structure describes output for  <a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> control code requests for some data set management actions. </p>
 
 
 ## -syntax
@@ -71,13 +71,13 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT {
 ### -field <b>Action</b>
 
 <dd>
-<p>The action related to the instance of this structure. This is a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552520">DEVICE_DATA_MANAGEMENT_SET_ACTION</a> enumeration.</p>
+<p>The action related to the instance of this structure. This is a value from the <a href="..\ntddstor\ns-ntddstor--device-manage-data-set-attributes.md">DEVICE_DATA_MANAGEMENT_SET_ACTION</a> enumeration.</p>
 </dd>
 
 ### -field <b>Flags</b>
 
 <dd>
-<p>Flags for the data set management action. See the <b>Flags</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a>.</p>
+<p>Flags for the data set management action. See the <b>Flags</b> member of <a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a>.</p>
 </dd>
 
 ### -field <b>OperationStatus</b>
@@ -147,13 +147,13 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552520">DEVICE_DATA_MANAGEMENT_SET_ACTION</a>
+<a href="..\ntddstor\ns-ntddstor--device-manage-data-set-attributes.md">DEVICE_DATA_MANAGEMENT_SET_ACTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439633">DEVICE_DATA_SET_LB_PROVISIONING_STATE</a>
+<a href="..\ntddstor\ns-ntddstor--device-data-set-lb-provisioning-state.md">DEVICE_DATA_SET_LB_PROVISIONING_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a>
 </dt>
 </dl>
 <p> </p>

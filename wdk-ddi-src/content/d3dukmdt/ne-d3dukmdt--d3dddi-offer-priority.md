@@ -62,7 +62,7 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 
 <dd>
 <p>The allocation should not be offered.</p>
-<div class="alert"><b>Note</b>  Do not use this value in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451158">D3DDDICB_OFFERALLOCATIONS</a>.<b>Priority</b> member.</div>
+<div class="alert"><b>Note</b>  Do not use this value in the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>.<b>Priority</b> member.</div>
 <div> </div>
 </dd>
 
@@ -127,10 +127,10 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544375">D3DDDI_ALLOCATIONLIST</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451158">D3DDDICB_OFFERALLOCATIONS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>
 </dt>
 </dl>
 <p> </p>

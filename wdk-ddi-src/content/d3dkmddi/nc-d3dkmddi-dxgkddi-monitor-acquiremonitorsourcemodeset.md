@@ -81,7 +81,7 @@ NTSTATUS APIENTRY pfnAcquireMonitorSourceModeSet(
 ### -param <i>ppMonitorSourceModeSetInterface</i> [out]
 
 <dd>
-<p>[out] A pointer to a variable that receives a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561921">DXGK_MONITORSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the monitor source mode set object.</p>
+<p>[out] A pointer to a variable that receives a pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitorsourcemodeset-interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the monitor source mode set object.</p>
 </dd>
 </dl>
 
@@ -101,17 +101,11 @@ NTSTATUS APIENTRY pfnAcquireMonitorSourceModeSet(
 <p>This function might also return other error codes that are defined in <i>Ntstatus.h</i>.</p>
 
 ## -remarks
-<p>VidPN target identifiers are assigned by the display miniport driver. The <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a><i></i> function, implemented by the display miniport driver, returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561001">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.</p>
+<p>VidPN target identifiers are assigned by the display miniport driver. The <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a><i></i> function, implemented by the display miniport driver, returns an array of <a href="..\dispmprt\ns-dispmprt--dxgk-child-descriptor.md">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.</p>
 
 <p>When you have finished using the monitor source mode set object handle, you must release the handle by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-releasemonitorsourcemodeset.md">pfnReleaseMonitorSourceModeSet</a>. Target mode set objects are reference counted, so if you acquire a handle several times, you must release it that same number of times.</p>
 
-<p>This function is also available in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7.</p>
-
-<p>VidPN target identifiers are assigned by the display miniport driver. The <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a><i></i> function, implemented by the display miniport driver, returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561001">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.</p>
-
-<p>When you have finished using the monitor source mode set object handle, you must release the handle by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-releasemonitorsourcemodeset.md">pfnReleaseMonitorSourceModeSet</a>. Target mode set objects are reference counted, so if you acquire a handle several times, you must release it that same number of times.</p>
-
-<p>This function is also available in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7.</p>
+<p>This function is also available in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface-v2.md">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7.</p>
 
 ## -requirements
 <table>
@@ -156,7 +150,7 @@ NTSTATUS APIENTRY pfnAcquireMonitorSourceModeSet(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface-v2.md">DXGK_MONITOR_INTERFACE_V2</a>
 </dt>
 <dt>
 <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>

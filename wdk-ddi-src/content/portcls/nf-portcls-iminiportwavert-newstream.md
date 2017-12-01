@@ -7,7 +7,7 @@ old-location: audio\iminiportwavert_newstream.htm
 old-project: audio
 ms.assetid: efd2eea8-2b05-49a2-b136-a3e1e3e739c5
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IMiniportWaveRT, NewStream, IMiniportWaveRT::NewStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ NTSTATUS NewStream(
 ### -param <i>PortStream</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536922">IPortWaveRTStream</a>.</p>
+<p>Pointer to the <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>.</p>
 </dd>
 
 ### -param <i>Pin</i> [in]
@@ -85,7 +85,7 @@ NTSTATUS NewStream(
 ### -param <i>DataFormat</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a> structure that specifies the data format of the new stream. For more information, see the following Remarks section.</p>
+<p>Pointer to a <a href="stream.ksdataformat">KSDATAFORMAT</a> structure that specifies the data format of the new stream. For more information, see the following Remarks section.</p>
 </dd>
 </dl>
 
@@ -93,30 +93,16 @@ NTSTATUS NewStream(
 <p><code>NewStream</code> returns STATUS_SUCCESS if the call was successful. Otherwise, the method returns an appropriate error status code.</p>
 
 ## -remarks
-<p>The <code>NewStream</code> method sets the initial state of the stream to <a href="https://msdn.microsoft.com/c71fd395-28aa-4421-9443-b5b0a1f3ac7e">KSSTATE_STOP</a> and its initial position to 0. For more information, see related methods <a href="https://msdn.microsoft.com/library/windows/hardware/ff536756">IMiniportWaveRTStream::SetState</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff536749">IMiniportWaveRTStream::GetPosition</a>.</p>
+<p>The <code>NewStream</code> method sets the initial state of the stream to <a href="https://msdn.microsoft.com/c71fd395-28aa-4421-9443-b5b0a1f3ac7e">KSSTATE_STOP</a> and its initial position to 0. For more information, see related methods <a href="audio.iminiportwavertstream_setstate">IMiniportWaveRTStream::SetState</a> and <a href="audio.iminiportwavertstream_getposition">IMiniportWaveRTStream::GetPosition</a>.</p>
 
 <p>The <i>DataFormat</i> parameter, which specifies the data format of the stream, points to one of the following audio-specific, extended versions of the KSDATAFORMAT structure:</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537095">KSDATAFORMAT_WAVEFORMATEX</a>
+<a href="audio.ksdataformat_waveformatex">KSDATAFORMAT_WAVEFORMATEX</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537094">KSDATAFORMAT_DSOUND</a>
-</p>
-
-<p>The <i>Stream</i> and <i>PortStream</i> parameters follow the reference-counting conventions for COM objects.</p>
-
-<p>The <code>NewStream</code> method sets the initial state of the stream to <a href="https://msdn.microsoft.com/c71fd395-28aa-4421-9443-b5b0a1f3ac7e">KSSTATE_STOP</a> and its initial position to 0. For more information, see related methods <a href="https://msdn.microsoft.com/library/windows/hardware/ff536756">IMiniportWaveRTStream::SetState</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff536749">IMiniportWaveRTStream::GetPosition</a>.</p>
-
-<p>The <i>DataFormat</i> parameter, which specifies the data format of the stream, points to one of the following audio-specific, extended versions of the KSDATAFORMAT structure:</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537095">KSDATAFORMAT_WAVEFORMATEX</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537094">KSDATAFORMAT_DSOUND</a>
+<a href="audio.ksdataformat_dsound">KSDATAFORMAT_DSOUND</a>
 </p>
 
 <p>The <i>Stream</i> and <i>PortStream</i> parameters follow the reference-counting conventions for COM objects.</p>
@@ -164,19 +150,19 @@ NTSTATUS NewStream(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536737">IMiniportWaveRT</a>
+<a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536922">IPortWaveRTStream</a>
+<a href="..\portcls\nn-portcls-iminiportwavertstream.md">IPortWaveRTStream</a>
 </dt>
 <dt>IMiniportWaveRTStream</dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536756">IMiniportWaveRTStream::SetState</a>
+<a href="audio.iminiportwavertstream_setstate">IMiniportWaveRTStream::SetState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536749">IMiniportWaveRTStream::GetPosition</a>
+<a href="audio.iminiportwavertstream_getposition">IMiniportWaveRTStream::GetPosition</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IMiniportWaveRT::NewStream method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IMiniportWaveRT::NewStream method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

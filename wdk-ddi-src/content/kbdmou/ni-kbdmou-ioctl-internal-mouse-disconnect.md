@@ -108,7 +108,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541294">IOCTL_INTERNAL_MOUSE_CONNECT</a>
+<a href="..\kbdmou\ni-kbdmou-ioctl-internal-mouse-connect.md">IOCTL_INTERNAL_MOUSE_CONNECT</a>
 </dt>
 </dl>
 <p> </p>

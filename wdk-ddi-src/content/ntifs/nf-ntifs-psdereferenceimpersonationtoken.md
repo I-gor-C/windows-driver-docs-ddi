@@ -69,10 +69,6 @@ VOID PsDereferenceImpersonationToken(
 
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.</p>
 
-<p>If the token's reference count reaches zero, the token is deleted.</p>
-
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -128,10 +124,10 @@ VOID PsDereferenceImpersonationToken(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551907">PsImpersonateClient</a>
+<a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551929">PsReferenceImpersonationToken</a>
+<a href="..\ntifs\nf-ntifs-psreferenceimpersonationtoken.md">PsReferenceImpersonationToken</a>
 </dt>
 </dl>
 <p> </p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DVD_REGION structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560423">IOCTL_DVD_GET_REGION</a> request to retrieve region playback control (RPC) information for a DVD device.</p>
+<p>The DVD_REGION structure is used in conjunction with the <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-dvd-get-region.md">IOCTL_DVD_GET_REGION</a> request to retrieve region playback control (RPC) information for a DVD device.</p>
 
 
 ## -syntax
@@ -102,7 +102,7 @@ typedef struct _DVD_REGION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560423">IOCTL_DVD_GET_REGION</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-dvd-get-region.md">IOCTL_DVD_GET_REGION</a>
 </dt>
 </dl>
 <p> </p>

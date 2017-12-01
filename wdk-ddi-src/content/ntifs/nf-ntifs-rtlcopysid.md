@@ -29,8 +29,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe (kernel mode); 
-Ntdll.dll (user mode)
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql: <= APC_LEVEL
 req.iface: 
 ---
@@ -84,8 +83,6 @@ NTSTATUS RtlCopySid(
 <p> </p>
 
 ## -remarks
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
-
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
 
 ## -requirements
@@ -144,19 +141,19 @@ NTSTATUS RtlCopySid(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552256">RtlEqualPrefixSid</a>
+<a href="..\ntifs\nf-ntifs-rtlequalprefixsid.md">RtlEqualPrefixSid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552260">RtlEqualSid</a>
+<a href="..\ntifs\nf-ntifs-rtlequalsid.md">RtlEqualSid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553085">RtlLengthSid</a>
+<a href="..\ntifs\nf-ntifs-rtllengthsid.md">RtlLengthSid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553314">RtlValidSid</a>
+<a href="..\ntifs\nf-ntifs-rtlvalidsid.md">RtlValidSid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 </dl>
 <p> </p>

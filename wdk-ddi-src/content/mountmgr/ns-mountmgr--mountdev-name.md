@@ -88,13 +88,13 @@ typedef struct _MOUNTDEV_NAME {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560437">IOCTL_MOUNTDEV_QUERY_DEVICE_NAME</a>
+<a href="..\mountmgr\ni-mountmgr-ioctl-mountdev-query-device-name.md">IOCTL_MOUNTDEV_QUERY_DEVICE_NAME</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560434">IOCTL_MOUNTDEV_LINK_CREATED</a>
+<a href="..\mountdev\ni-mountdev-ioctl-mountdev-link-created.md">IOCTL_MOUNTDEV_LINK_CREATED</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560436">IOCTL_MOUNTDEV_LINK_DELETED</a>
+<a href="..\mountdev\ni-mountdev-ioctl-mountdev-link-deleted.md">IOCTL_MOUNTDEV_LINK_DELETED</a>
 </dt>
 </dl>
 <p> </p>

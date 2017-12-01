@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DVD_READ_STRUCTURE structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560426">IOCTL_DVD_READ_STRUCTURE</a> request to retrieve a DVD descriptor containing information about a DVD disc. </p>
+<p>The DVD_READ_STRUCTURE structure is used in conjunction with the <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-dvd-read-structure.md">IOCTL_DVD_READ_STRUCTURE</a> request to retrieve a DVD descriptor containing information about a DVD disc. </p>
 
 
 ## -syntax
@@ -66,7 +66,7 @@ typedef struct DVD_READ_STRUCTURE {
 ### -field <b>Format</b>
 
 <dd>
-<p>Indicates the type of DVD descriptor to retrieve. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553750">DVD_STRUCTURE_FORMAT</a> enumeration type for further information about the values that can be assigned to this member. </p>
+<p>Indicates the type of DVD descriptor to retrieve. See the <a href="..\ntddcdvd\ne-ntddcdvd-dvd-structure-format.md">DVD_STRUCTURE_FORMAT</a> enumeration type for further information about the values that can be assigned to this member. </p>
 </dd>
 
 ### -field <b>SessionId</b>
@@ -102,10 +102,10 @@ typedef struct DVD_READ_STRUCTURE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560426">IOCTL_DVD_READ_STRUCTURE</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-dvd-read-structure.md">IOCTL_DVD_READ_STRUCTURE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553750">DVD_STRUCTURE_FORMAT</a>
+<a href="..\ntddcdvd\ne-ntddcdvd-dvd-structure-format.md">DVD_STRUCTURE_FORMAT</a>
 </dt>
 </dl>
 <p> </p>

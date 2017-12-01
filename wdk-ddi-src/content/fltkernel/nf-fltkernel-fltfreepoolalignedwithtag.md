@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FltFreePoolAlignedWithTag</b> routine frees a cache-aligned buffer that was allocated by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541762">FltAllocatePoolAlignedWithTag</a>. </p>
+<p>The <b>FltFreePoolAlignedWithTag</b> routine frees a cache-aligned buffer that was allocated by a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>. </p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ VOID FltFreePoolAlignedWithTag(
 ### -param <i>Instance</i> [in]
 
 <dd>
-<p>Opaque instance pointer for a caller-owned minifilter driver instance that is attached to the volume. Must be the same instance pointer as the one used in the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541762">FltAllocatePoolAlignedWithTag</a>. </p>
+<p>Opaque instance pointer for a caller-owned minifilter driver instance that is attached to the volume. Must be the same instance pointer as the one used in the call to <a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>. </p>
 </dd>
 
 ### -param <i>Buffer</i> [in]
@@ -71,7 +71,7 @@ VOID FltFreePoolAlignedWithTag(
 ### -param <i>Tag</i> [in]
 
 <dd>
-<p>Tag used to mark the pool block. Must be the same tag as the one used in the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541762">FltAllocatePoolAlignedWithTag</a>. </p>
+<p>Tag used to mark the pool block. Must be the same tag as the one used in the call to <a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>. </p>
 </dd>
 </dl>
 
@@ -79,10 +79,6 @@ VOID FltFreePoolAlignedWithTag(
 <p>None</p>
 
 ## -remarks
-<p>The memory that the <i>Buffer</i> parameter points to must not be accessed after it is freed by <b>FltFreePoolAlignedWithTag</b>. </p>
-
-<p>The caller of <b>FltFreePoolAlignedWithTag</b> can be running at IRQL DISPATCH_LEVEL if a <b>NonPaged</b><i>XxxPoolType</i> value was specified when the memory was allocated. Otherwise, the caller must be running at IRQL &lt;= APC_LEVEL. </p>
-
 <p>The memory that the <i>Buffer</i> parameter points to must not be accessed after it is freed by <b>FltFreePoolAlignedWithTag</b>. </p>
 
 <p>The caller of <b>FltFreePoolAlignedWithTag</b> can be running at IRQL DISPATCH_LEVEL if a <b>NonPaged</b><i>XxxPoolType</i> value was specified when the memory was allocated. Otherwise, the caller must be running at IRQL &lt;= APC_LEVEL. </p>
@@ -132,7 +128,7 @@ VOID FltFreePoolAlignedWithTag(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541762">FltAllocatePoolAlignedWithTag</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>
 </dt>
 </dl>
 <p> </p>

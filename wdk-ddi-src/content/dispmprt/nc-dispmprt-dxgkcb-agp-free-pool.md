@@ -77,8 +77,6 @@ NTSTATUS APIENTRY AgpFreePool(
 ## -remarks
 <p>None.</p>
 
-<p>None.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -128,7 +126,7 @@ NTSTATUS APIENTRY AgpFreePool(
 <a href="..\dispmprt\nc-dispmprt-dxgkcb-agp-set-command.md">AgpSetCommand</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560949">DXGK_AGP_INTERFACE</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-agp-interface.md">DXGK_AGP_INTERFACE</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb-query-services.md">DxgkCbQueryServices</a>

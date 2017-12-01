@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DeleteInitiatorNodeName_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552500">DeleteInitiatorNodeName</a> method.</p>
+<p>The DeleteInitiatorNodeName_OUT structure holds the output data for the <a href="storage.deleteinitiatornodename">DeleteInitiatorNodeName</a> method.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _DeleteInitiatorNodeName_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>The status of the <b>DeleteInitiatorNodeName</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>. </p>
+<p>The status of the <b>DeleteInitiatorNodeName</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>. </p>
 </dd>
 </dl>
 
@@ -81,13 +81,13 @@ typedef struct _DeleteInitiatorNodeName_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552500">DeleteInitiatorNodeName</a>
+<a href="storage.deleteinitiatornodename">DeleteInitiatorNodeName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552505">DeleteInitiatorNodeName_IN</a>
+<a href="..\iscsiop\ns-iscsiop--deleteinitiatornodename-in.md">DeleteInitiatorNodeName_IN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 </dl>
 <p> </p>

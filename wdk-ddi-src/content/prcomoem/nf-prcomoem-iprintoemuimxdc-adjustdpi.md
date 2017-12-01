@@ -105,10 +105,6 @@ HRESULT AdjustDPI(
 
 <p>If the plug-in cannot complete the operation, it should return an appropriate failure HRESULT, which causes the current print job to fail.</p>
 
-<p>The <i>pDPI</i> parameter is IN OUT. All other parameters for this function are input only.</p>
-
-<p>If the plug-in cannot complete the operation, it should return an appropriate failure HRESULT, which causes the current print job to fail.</p>
-
 ## -requirements
 <table>
 <tr>

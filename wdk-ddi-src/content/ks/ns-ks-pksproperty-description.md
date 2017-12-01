@@ -7,7 +7,7 @@ old-location: stream\ksproperty_description.htm
 old-project: stream
 ms.assetid: d3d59dca-7214-493c-bb70-4391696fe017
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSPROPERTY_DESCRIPTION, KSPROPERTY_DESCRIPTION, *PKSPROPERTY_DESCRIPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct {
 ### -field <b>AccessFlags</b>
 
 <dd>
-<p>Specifies the access allowed to this property. A basic-support request sets this member to the bitwise OR of the flags for all the access types that the handler supports for this property. For a list of possible flag values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>.</p>
+<p>Specifies the access allowed to this property. A basic-support request sets this member to the bitwise OR of the flags for all the access types that the handler supports for this property. For a list of possible flag values, see <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.</p>
 </dd>
 
 ### -field <b>DescriptionSize</b>
@@ -73,13 +73,13 @@ typedef struct {
 ### -field <b>PropTypeSet</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562676">KSIDENTIFIER</a>. If supported by the specific property, specifies the type of values contained in this property. This group is uniquely specified by a GUID, such that new types of values may be created without overlapping with extensions to this set. The value types indicate the type of the value (like VT_BOOL, VT_UI4 in the standard set). This is GUID_NULL, with an identifier of zero, if values information is not supported by this property.</p>
+<p>A structure of type <a href="stream.ksidentifier">KSIDENTIFIER</a>. If supported by the specific property, specifies the type of values contained in this property. This group is uniquely specified by a GUID, such that new types of values may be created without overlapping with extensions to this set. The value types indicate the type of the value (like VT_BOOL, VT_UI4 in the standard set). This is GUID_NULL, with an identifier of zero, if values information is not supported by this property.</p>
 </dd>
 
 ### -field <b>MembersListCount</b>
 
 <dd>
-<p>Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff565189">KSPROPERTY_MEMBERSHEADER</a> structures to follow this header.</p>
+<p>Specifies the number of <a href="stream.ksproperty_membersheader">KSPROPERTY_MEMBERSHEADER</a> structures to follow this header.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -94,7 +94,7 @@ typedef struct {
 
 <p>The property values type set is specified by a KSIDENTIFIER structure. The basic set supported is <a href="https://msdn.microsoft.com/library/windows/hardware/ff566576">KSPROPSETID_General</a>. The identifiers within that set are the standard VARENUM types used for OLE.</p>
 
-<p>The values information that may follow the KSPROPERTY_DESCRIPTION structure is described by a list of <a href="https://msdn.microsoft.com/library/windows/hardware/ff565190">KSPROPERTY_MEMBERSLIST</a> structures, each of which contains data range information.</p>
+<p>The values information that may follow the KSPROPERTY_DESCRIPTION structure is described by a list of <a href="stream.ksproperty_memberslist">KSPROPERTY_MEMBERSLIST</a> structures, each of which contains data range information.</p>
 
 <p>For more information, see <a href="NULL">KS Properties</a>.</p>
 
@@ -115,18 +115,18 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565966">KSPROPERTY_VALUES</a>
+<a href="stream.ksproperty_values">KSPROPERTY_VALUES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565189">KSPROPERTY_MEMBERSHEADER</a>
+<a href="stream.ksproperty_membersheader">KSPROPERTY_MEMBERSHEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565176">KSPROPERTY_ITEM</a>
+<a href="stream.ksproperty_item">KSPROPERTY_ITEM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562676">KSIDENTIFIER</a>
+<a href="stream.ksidentifier">KSIDENTIFIER</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_DESCRIPTION structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_DESCRIPTION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

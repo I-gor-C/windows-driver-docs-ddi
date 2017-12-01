@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p><b>Do not use the D3DKMT_VIDSCHESCAPETYPE enumeration; it is for testing purposes only.</b></p>
-<p>The D3DKMT_VIDMMESCAPETYPE enumeration is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548413">D3DKMT_VIDSCH_ESCAPE</a> structure.</p>
+<p>The D3DKMT_VIDMMESCAPETYPE enumeration is used with the <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-vidsch-escape.md">D3DKMT_VIDSCH_ESCAPE</a> structure.</p>
 
 
 ## -syntax

@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p><b>DirectX 8.0 and later versions only.</b></p>
-<p>DD_GETFORMATDATA is the data structure pointed to by the <b>lpvData</b> field of <a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a> for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETFORMAT.</p>
+<p>DD_GETFORMATDATA is the data structure pointed to by the <b>lpvData</b> field of <a href="display.dd_getdriverinfodata">DD_GETDRIVERINFODATA</a> for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETFORMAT.</p>
 
 
 ## -syntax
@@ -60,7 +60,7 @@ typedef struct _DD_GETFORMATDATA {
 ### -field <b>gdi2</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551548">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
+<p>Specifies a <a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
 </dd>
 
 ### -field <b>dwFormatIndex</b>
@@ -72,7 +72,7 @@ typedef struct _DD_GETFORMATDATA {
 ### -field <b>format</b>
 
 <dd>
-<p>Receives the actual pixel format in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff550274">DDPIXELFORMAT</a> structure.</p>
+<p>Receives the actual pixel format in a <a href="..\ksmedia\ns-ksmedia--ddpixelformat.md">DDPIXELFORMAT</a> structure.</p>
 </dd>
 </dl>
 
@@ -100,13 +100,13 @@ typedef struct _DD_GETFORMATDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
+<a href="display.dd_getdriverinfodata">DD_GETDRIVERINFODATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551548">DD_GETDRIVERINFO2DATA</a>
+<a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550274">DDPIXELFORMAT</a>
+<a href="..\ksmedia\ns-ksmedia--ddpixelformat.md">DDPIXELFORMAT</a>
 </dt>
 </dl>
 <p> </p>

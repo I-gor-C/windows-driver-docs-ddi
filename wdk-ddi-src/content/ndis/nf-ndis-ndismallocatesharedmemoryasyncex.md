@@ -7,7 +7,7 @@ old-location: netvista\ndismallocatesharedmemoryasyncex.htm
 old-project: netvista
 ms.assetid: ccbe98ca-7da9-4159-ac1a-c25ec6745ff4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMAllocateSharedMemoryAsyncEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -98,7 +98,7 @@ NDIS_STATUS NdisMAllocateSharedMemoryAsyncEx(
        <i>MiniportSharedMemoryAllocateComplete</i> and passes <b>NULL</b> pointers.</p><dl>
 <dt><b>NDIS_STATUS_FAILURE</b></dt>
 </dl><p>The requested memory could not be allocated at this time. If 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff562784">NdisMAllocateSharedMemoryAsyncEx</a> returns this status, a subsequent call with the same parameters
+       <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">NdisMAllocateSharedMemoryAsyncEx</a> returns this status, a subsequent call with the same parameters
        might succeed, depending on whether system resources have become available.</p>
 
 <p> </p>
@@ -115,13 +115,13 @@ NDIS_STATUS NdisMAllocateSharedMemoryAsyncEx(
     driver-determined low, the miniport driver calls 
     <b>NdisMAllocateSharedMemoryAsyncEx</b> to allocate more buffer space in shared memory. When the number of
     available buffers climbs to a driver-determined high, the miniport driver calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563589">NdisMFreeSharedMemory</a> one or more
+    <a href="..\ndis\nf-ndis-ndismfreesharedmemory.md">NdisMFreeSharedMemory</a> one or more
     times to release its preceding dynamic allocations.</p>
 
 <p>Usually, such a miniport driver retains the block of shared memory that its 
     <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function
     allocated with 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562782">NdisMAllocateSharedMemory</a> until
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a> until
     a NIC is removed. When the NIC is removed, NDIS calls the miniport driver's 
     <a href="..\ndis\nc-ndis-miniport-halt.md">MiniportHaltEx</a> function. This allocation
     is sufficient to handle an average demand for transfers through the NIC.</p>
@@ -133,40 +133,8 @@ NDIS_STATUS NdisMAllocateSharedMemoryAsyncEx(
 
 <p>Any miniport driver that calls 
     <b>NdisMAllocateSharedMemoryAsyncEx</b> or 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562782">NdisMAllocateSharedMemory</a> must release all outstanding allocations with one or more calls to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563589">NdisMFreeSharedMemory</a> when its NIC is removed.</p>
-
-<p>Drivers of bus-master DMA NICs call 
-    <b>NdisMAllocateSharedMemoryAsyncEx</b> to dynamically allocate shared memory. Such drivers also allocate
-    shared memory space during initialization. These drivers use the dynamically allocated shared memory for
-    transfer operations when high network traffic places excessive demands on the existing shared memory
-    space.</p>
-
-<p>Such a miniport driver usually maintains one or more state variables to track the number of shared
-    memory buffers available for incoming transfers. When the number of available buffers reaches a
-    driver-determined low, the miniport driver calls 
-    <b>NdisMAllocateSharedMemoryAsyncEx</b> to allocate more buffer space in shared memory. When the number of
-    available buffers climbs to a driver-determined high, the miniport driver calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563589">NdisMFreeSharedMemory</a> one or more
-    times to release its preceding dynamic allocations.</p>
-
-<p>Usually, such a miniport driver retains the block of shared memory that its 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function
-    allocated with 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562782">NdisMAllocateSharedMemory</a> until
-    a NIC is removed. When the NIC is removed, NDIS calls the miniport driver's 
-    <a href="..\ndis\nc-ndis-miniport-halt.md">MiniportHaltEx</a> function. This allocation
-    is sufficient to handle an average demand for transfers through the NIC.</p>
-
-<p>A miniport driver should set a limit on how much shared memory it can allocate. This limit is
-    driver-specific and should be high enough so that the driver does not run out of buffers. Do not et a
-    limit that is excessively high, as this could result in a wasteful consumption of shared memory that
-    could reduce system performance.</p>
-
-<p>Any miniport driver that calls 
-    <b>NdisMAllocateSharedMemoryAsyncEx</b> or 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562782">NdisMAllocateSharedMemory</a> must release all outstanding allocations with one or more calls to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563589">NdisMFreeSharedMemory</a> when its NIC is removed.</p>
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a> must release all outstanding allocations with one or more calls to 
+    <a href="..\ndis\nf-ndis-ndismfreesharedmemory.md">NdisMFreeSharedMemory</a> when its NIC is removed.</p>
 
 ## -requirements
 <table>
@@ -211,7 +179,7 @@ NDIS_STATUS NdisMAllocateSharedMemoryAsyncEx(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547934">Irql_Gather_DMA_Function</a>
+<a href="devtest.ndis_irql_gather_dma_function">Irql_Gather_DMA_Function</a>
 </td>
 </tr>
 </table>
@@ -229,13 +197,13 @@ NDIS_STATUS NdisMAllocateSharedMemoryAsyncEx(
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562782">NdisMAllocateSharedMemory</a>
+<a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563589">NdisMFreeSharedMemory</a>
+<a href="..\ndis\nf-ndis-ndismfreesharedmemory.md">NdisMFreeSharedMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563646">NdisMRegisterDmaChannel</a>
+<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
@@ -244,4 +212,4 @@ NDIS_STATUS NdisMAllocateSharedMemoryAsyncEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateSharedMemoryAsyncEx function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateSharedMemoryAsyncEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

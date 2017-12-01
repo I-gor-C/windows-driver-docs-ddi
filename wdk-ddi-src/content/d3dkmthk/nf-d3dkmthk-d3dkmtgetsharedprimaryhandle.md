@@ -57,7 +57,7 @@ NTSTATUS D3DKMTGetSharedPrimaryHandle(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548070">D3DKMT_GETSHAREDPRIMARYHANDLE</a> structure that describes the parameters that are required to retrieve the shared handle.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getsharedprimaryhandle.md">D3DKMT_GETSHAREDPRIMARYHANDLE</a> structure that describes the parameters that are required to retrieve the shared handle.</p>
 </dd>
 </dl>
 
@@ -75,12 +75,6 @@ NTSTATUS D3DKMTGetSharedPrimaryHandle(
 <p>This function might also return other NTSTATUS values.</p>
 
 ## -remarks
-<p>The primary surface is typically created by the Microsoft DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>) every time the display mode changes (although, in some situations, the shared primary might not exist). If an OpenGL application attempts to create a primary surface, it typically must open the existing shared primary. To open the shared primary, the OpenGL application must use <b>D3DKMTGetSharedPrimaryHandle</b> to retrieve the global shared handle for the primary surface.</p>
-
-<p><b>Example</b></p>
-
-<p>The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTGetSharedPrimaryHandle</b> to create a primary surface by opening the shared handle.</p>
-
 <p>The primary surface is typically created by the Microsoft DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>) every time the display mode changes (although, in some situations, the shared primary might not exist). If an OpenGL application attempts to create a primary surface, it typically must open the existing shared primary. To open the shared primary, the OpenGL application must use <b>D3DKMTGetSharedPrimaryHandle</b> to retrieve the global shared handle for the primary surface.</p>
 
 <p><b>Example</b></p>
@@ -142,7 +136,7 @@ NTSTATUS D3DKMTGetSharedPrimaryHandle(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548070">D3DKMT_GETSHAREDPRIMARYHANDLE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getsharedprimaryhandle.md">D3DKMT_GETSHAREDPRIMARYHANDLE</a>
 </dt>
 </dl>
 <p> </p>

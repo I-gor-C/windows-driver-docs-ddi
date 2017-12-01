@@ -7,7 +7,7 @@ old-location: debugger\readimagentheaders.htm
 old-project: debugger
 ms.assetid: 2735aabf-b8b0-4eb1-89a2-4733d0b346ed
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces3, ReadImageNtHeaders, IDebugDataSpaces3::ReadImageNtHeaders
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,12 +80,6 @@ HRESULT ReadImageNtHeaders(
 <p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
 
 ## -remarks
-<p>If the image's NT headers are 32-bit, they are automatically converted to 64-bit for consistency.  To determine if the headers were originally 32-bit, look at the value of <b>Headers.OptionalHeader.Magic</b>.  If the value is IMAGE_NT_OPTIONAL_HDR32_MAGIC, the NT headers were originally 32-bit; otherwise the value is IMAGE_NT_OPTIONAL_HDR64_MAGIC, indicating the NT headers were originally 64-bit.</p>
-
-<p>This method will not read ROM headers.</p>
-
-<p>IMAGE_NT_HEADERS64, IMAGE_NT_OPTIONAL_HDR32_MAGIC, and IMAGE_NT_OPTIONAL_HDR64_MAGIC appear in the Microsoft Windows SDK header file winnt.h.  IMAGE_NT_HEADERS64 is the 64-bit equivalent of IMAGE_NT_HEADERS, which is described in the Windows SDK documentation.</p>
-
 <p>If the image's NT headers are 32-bit, they are automatically converted to 64-bit for consistency.  To determine if the headers were originally 32-bit, look at the value of <b>Headers.OptionalHeader.Magic</b>.  If the value is IMAGE_NT_OPTIONAL_HDR32_MAGIC, the NT headers were originally 32-bit; otherwise the value is IMAGE_NT_OPTIONAL_HDR64_MAGIC, indicating the NT headers were originally 64-bit.</p>
 
 <p>This method will not read ROM headers.</p>

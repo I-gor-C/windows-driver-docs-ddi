@@ -7,7 +7,7 @@ old-location: netvista\dot11_wfd_discover_device_filter.htm
 old-project: netvista
 ms.assetid: B8AA23C6-EFFC-47C3-9AD2-72421463CDBA
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_WFD_DISCOVER_DEVICE_FILTER,
 ms.prod: windows-hardware
 ms.technology: windows-devices

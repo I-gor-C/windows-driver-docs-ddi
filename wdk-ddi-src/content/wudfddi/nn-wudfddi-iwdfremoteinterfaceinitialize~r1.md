@@ -7,7 +7,7 @@ old-location: wdf\iwdfremoteinterfaceinitialize.htm
 old-project: wdf
 ms.assetid: 54954874-d67a-4e8b-b791-105e8018f8ca
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]</p>
-<p>UMDF-based drivers receive the <b>IWDFRemoteInterfaceInitialize</b> interface as input to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556775">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a> callback function.</p>
+<p>UMDF-based drivers receive the <b>IWDFRemoteInterfaceInitialize</b> interface as input to an <a href="wdf.ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a> callback function.</p>
 
 
 ## -inheritance
@@ -63,7 +63,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560238">IWDFRemoteInterfaceInitialize::GetInterfaceGuid</a>
+<a href="wdf.iwdfremoteinterfaceinitialize_getinterfaceguid">IWDFRemoteInterfaceInitialize::GetInterfaceGuid</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfremoteinterfaceinitialize_getinterfaceguid">GetInterfaceGuid</a> method retrieves the GUID that identifies a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>. </p>
@@ -71,7 +71,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560242">IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink</a>
+<a href="wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink">IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink">RetrieveSymbolicLink</a> method retrieves the symbolic link name that the operating system assigned to a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>. </p>

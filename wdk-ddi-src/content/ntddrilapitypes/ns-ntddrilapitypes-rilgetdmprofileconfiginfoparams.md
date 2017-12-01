@@ -7,7 +7,7 @@ old-location: netvista\rilgetdmprofileconfiginfoparams.htm
 old-project: netvista
 ms.assetid: df62bc19-81c7-4d80-88ed-5e8a8438d269
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILGETDMPROFILECONFIGINFOPARAMS, RILGETDMPROFILECONFIGINFOPARAMS, *LPRILGETDMPROFILECONFIGINFOPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

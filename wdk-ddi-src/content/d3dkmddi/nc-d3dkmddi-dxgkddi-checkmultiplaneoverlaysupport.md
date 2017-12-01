@@ -67,7 +67,7 @@ _Check_return_ NTSTATUS APIENTRY DxgkDdiCheckMultiPlaneOverlaySupport(
 ### -param <i>pCheckMultiPlaneOverlaySupport</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn305131">DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT</a> structure that provides details on hardware support for multiplane overlays.</p>
+<p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-checkmultiplaneoverlaysupport.md">DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT</a> structure that provides details on hardware support for multiplane overlays.</p>
 </dd>
 </dl>
 
@@ -131,7 +131,7 @@ _Check_return_ NTSTATUS APIENTRY DxgkDdiCheckMultiPlaneOverlaySupport(
 <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn305131">DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-checkmultiplaneoverlaysupport.md">DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT</a>
 </dt>
 </dl>
 <p> </p>

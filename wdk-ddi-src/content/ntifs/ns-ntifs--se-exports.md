@@ -736,10 +736,10 @@ typedef struct _SE_EXPORTS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>
+<a href="ifsk.luid">LUID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 </dl>
 <p> </p>

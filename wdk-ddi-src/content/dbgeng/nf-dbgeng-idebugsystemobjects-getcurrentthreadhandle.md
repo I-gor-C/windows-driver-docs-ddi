@@ -7,7 +7,7 @@ old-location: debugger\getcurrentthreadhandle.htm
 old-project: debugger
 ms.assetid: edbda821-8016-48db-a2f5-7f615428da0c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects, GetCurrentThreadHandle, IDebugSystemObjects::GetCurrentThreadHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,10 +69,6 @@ HRESULT GetCurrentThreadHandle(
 <p> </p>
 
 ## -remarks
-<p>In kernel-mode debugging, an artificial handle is created because the threads are virtual threads.</p>
-
-<p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on system handles, see <a href="wdkgloss.h#wdkgloss.handle#wdkgloss.handle"><i>Handles</i></a>.</p>
-
 <p>In kernel-mode debugging, an artificial handle is created because the threads are virtual threads.</p>
 
 <p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on system handles, see <a href="wdkgloss.h#wdkgloss.handle#wdkgloss.handle"><i>Handles</i></a>.</p>

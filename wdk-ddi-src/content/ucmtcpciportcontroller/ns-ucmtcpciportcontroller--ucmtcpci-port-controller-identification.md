@@ -41,8 +41,8 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>Contains identification information and USB specification version information (in BCD format) about the port controller.
-             This client driver must specify that information in the call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a> during initialization. 
-                 Call <a href="https://msdn.microsoft.com/library/windows/hardware/mt805880">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT</a> to initialize this structure.
+             This client driver must specify that information in the call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a> during initialization. 
+                 Call <a href="buses.ucmtcpci_port_controller_identification_init">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT</a> to initialize this structure.
              </p>
 
 
@@ -141,7 +141,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>
+<a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>
 </dt>
 </dl>
 <p> </p>

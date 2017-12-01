@@ -72,9 +72,7 @@ BOOLEAN FsRtlIsAnsiCharacterLegalNtfs(
 <p><b>FsRtlIsAnsiCharacterLegalNtfs</b> returns <b>TRUE</b> if the character is legal for NTFS file names, <b>FALSE</b> otherwise.</p>
 
 ## -remarks
-<p>For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. </p>
-
-<p>For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. </p>
+<p>For information about other string-handling routines, see <a href="kernel.strings">Strings</a>. </p>
 
 ## -requirements
 <table>
@@ -111,13 +109,13 @@ BOOLEAN FsRtlIsAnsiCharacterLegalNtfs(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546731">FsRtlIsAnsiCharacterLegal</a>
+<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegal.md">FsRtlIsAnsiCharacterLegal</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546735">FsRtlIsAnsiCharacterLegalFat</a>
+<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalfat.md">FsRtlIsAnsiCharacterLegalFat</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546761">FsRtlIsAnsiCharacterLegalHpfs</a>
+<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalhpfs.md">FsRtlIsAnsiCharacterLegalHpfs</a>
 </dt>
 </dl>
 <p> </p>

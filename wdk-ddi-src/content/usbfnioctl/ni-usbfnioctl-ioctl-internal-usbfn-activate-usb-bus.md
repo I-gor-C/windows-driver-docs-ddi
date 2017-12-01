@@ -92,16 +92,6 @@ I/O Status block
 ## -remarks
 <p>All class drivers must send  this IOCTL request before the device attempts to connect with the host.</p>
 
-<p>All class drivers must send  this IOCTL request before the device attempts to connect with the host.</p>
-
-<p>All class drivers must send  this IOCTL request before the device attempts to connect with the host.</p>
-
-<p>All class drivers must send  this IOCTL request before the device attempts to connect with the host.</p>
-
-<p>All class drivers must send  this IOCTL request before the device attempts to connect with the host.</p>
-
-<p>All class drivers must send  this IOCTL request before the device attempts to connect with the host.</p>
-
 ## -requirements
 <table>
 <tr>

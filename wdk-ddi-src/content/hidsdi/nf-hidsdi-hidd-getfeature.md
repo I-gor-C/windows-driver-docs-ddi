@@ -92,53 +92,11 @@ BOOLEAN __stdcall HidD_GetFeature(
 
 <p>For an example of how to parse a HID report, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256119">HClient</a> sample application. This sample is located in the MSDN Code Gallery.</p>
 
-<p>Only user-mode applications can call <b>HidD_GetFeature</b>. Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541100">IOCTL_HID_GET_FEATURE</a> request.</p>
+<p>Only user-mode applications can call <b>HidD_GetFeature</b>. Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl-hid-get-feature.md">IOCTL_HID_GET_FEATURE</a> request.</p>
 
-<p>For more information, see the following topics:</p><dl>
-<dd>
-<p>
-<a href="NULL">Obtaining HID Reports</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="NULL">Interpreting HID Reports</a>
-</p>
-</dd>
-</dl><p>
-<a href="NULL">Obtaining HID Reports</a>
-</p>
+<p>For more information, see the following topics:</p>
 
 <p>
-<a href="NULL">Interpreting HID Reports</a>
-</p>
-
-<p>Before it calls the <b>HidD_GetFeature</b> routine, the caller must do the following:</p>
-
-<p>If the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> includes report IDs, the caller must set the first byte of the <i>ReportBuffer</i> parameter to a nonzero report ID.</p>
-
-<p>If the <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a> does not include report IDs, the caller must set the first byte of the <i>ReportBuffer</i> parameter to zero.
-
-</p>
-
-<p>The feature report is returned in the <i>ReportBuffer</i>  parameter. Depending on the report ID, the caller parses the report by calling one of the following functions:</p>
-
-<p>For an example of how to parse a HID report, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256119">HClient</a> sample application. This sample is located in the MSDN Code Gallery.</p>
-
-<p>Only user-mode applications can call <b>HidD_GetFeature</b>. Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541100">IOCTL_HID_GET_FEATURE</a> request.</p>
-
-<p>For more information, see the following topics:</p><dl>
-<dd>
-<p>
-<a href="NULL">Obtaining HID Reports</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="NULL">Interpreting HID Reports</a>
-</p>
-</dd>
-</dl><p>
 <a href="NULL">Obtaining HID Reports</a>
 </p>
 
@@ -201,25 +159,25 @@ BOOLEAN __stdcall HidD_GetFeature(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539684">HidD_SetFeature</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-setfeature.md">HidD_SetFeature</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538945">HidD_GetInputReport</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getinputreport.md">HidD_GetInputReport</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539690">HidD_SetOutputReport</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-setoutputreport.md">HidD_SetOutputReport</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541100">IOCTL_HID_GET_FEATURE</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-feature.md">IOCTL_HID_GET_FEATURE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541126">IOCTL_HID_GET_INPUT_REPORT</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-input-report.md">IOCTL_HID_GET_INPUT_REPORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541176">IOCTL_HID_SET_FEATURE</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-set-feature.md">IOCTL_HID_SET_FEATURE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541196">IOCTL_HID_SET_OUTPUT_REPORT</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-set-output-report.md">IOCTL_HID_SET_OUTPUT_REPORT</a>
 </dt>
 </dl>
 <p> </p>

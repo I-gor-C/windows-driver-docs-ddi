@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetOverlayColorControls(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543323">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a> structure that describes parameters for changing an overlay's color-control settings.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a> structure that describes parameters for changing an overlay's color-control settings.</p>
 </dd>
 </dl>
 
@@ -85,11 +85,7 @@ __checkReturn HRESULT APIENTRY SetOverlayColorControls(
 ## -remarks
 <p>The Microsoft Direct3D runtime calls the <i>SetOverlayColorControls</i> function to change the brightness, contrast, hue, saturation, sharpness, gamma, and color-enable settings that are associated with a specific overlay. </p>
 
-<p>The runtime can also call <i>SetOverlayColorControls</i> for an overlay that is not yet visible. In this situation, when the <b>hOverlay</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543323">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a> structure pointed to by <i>pData</i> is set to <b>NULL</b>, the driver should store the supplied color-control settings and use them when an overlay that references the specified resource is created.</p>
-
-<p>The Microsoft Direct3D runtime calls the <i>SetOverlayColorControls</i> function to change the brightness, contrast, hue, saturation, sharpness, gamma, and color-enable settings that are associated with a specific overlay. </p>
-
-<p>The runtime can also call <i>SetOverlayColorControls</i> for an overlay that is not yet visible. In this situation, when the <b>hOverlay</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543323">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a> structure pointed to by <i>pData</i> is set to <b>NULL</b>, the driver should store the supplied color-control settings and use them when an overlay that references the specified resource is created.</p>
+<p>The runtime can also call <i>SetOverlayColorControls</i> for an overlay that is not yet visible. In this situation, when the <b>hOverlay</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a> structure pointed to by <i>pData</i> is set to <b>NULL</b>, the driver should store the supplied color-control settings and use them when an overlay that references the specified resource is created.</p>
 
 ## -requirements
 <table>
@@ -126,10 +122,10 @@ __checkReturn HRESULT APIENTRY SetOverlayColorControls(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543323">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

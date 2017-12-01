@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>
 			
-             Creates I/O queues. It should be called after the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/ff541693">EVT_WDF_DRIVER_DEVICE_ADD</a> callback function is invoked and the device object has been created. </p>
+             Creates I/O queues. It should be called after the client driver’s <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EVT_WDF_DRIVER_DEVICE_ADD</a> callback function is invoked and the device object has been created. </p>
 
 
 ## -syntax

@@ -81,11 +81,7 @@ VOID RtlFillMemoryUlong(
 ## -remarks
 <p>If the block of memory at <i>Destination</i> is nonpaged, the caller can be running at any IRQL. Otherwise, callers of <b>RtlFillMemoryUlong</b> must be running at IRQL &lt; DISPATCH_LEVEL. </p>
 
-<p>For more information about managing buffered data and initializing driver-allocated buffers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540656">Buffered Data and Buffer Initialization</a>. </p>
-
-<p>If the block of memory at <i>Destination</i> is nonpaged, the caller can be running at any IRQL. Otherwise, callers of <b>RtlFillMemoryUlong</b> must be running at IRQL &lt; DISPATCH_LEVEL. </p>
-
-<p>For more information about managing buffered data and initializing driver-allocated buffers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540656">Buffered Data and Buffer Initialization</a>. </p>
+<p>For more information about managing buffered data and initializing driver-allocated buffers, see <a href="kernel.buffered_data_and_buffer_initialization">Buffered Data and Buffer Initialization</a>. </p>
 
 ## -requirements
 <table>
@@ -142,13 +138,13 @@ VOID RtlFillMemoryUlong(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561870">RtlFillMemory</a>
+<a href="..\wdm\nf-wdm-rtlfillmemory.md">RtlFillMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552267">RtlFillMemoryUlonglong</a>
+<a href="..\ntifs\nf-ntifs-rtlfillmemoryulonglong.md">RtlFillMemoryUlonglong</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563610">RtlZeroMemory</a>
+<a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>
 </dt>
 </dl>
 <p> </p>

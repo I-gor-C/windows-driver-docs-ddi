@@ -7,7 +7,7 @@ old-location: netvista\ndisfreegenericobject.htm
 old-project: netvista
 ms.assetid: 02c0ea87-d25d-4363-85e3-e47c4c5d8a9b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFreeGenericObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ VOID NdisFreeGenericObject(
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565680">NDIS_GENERIC_OBJECT</a> structure to be
+     <a href="..\ndis\ns-ndis--ndis-generic-object.md">NDIS_GENERIC_OBJECT</a> structure to be
      freed.</p>
 </dd>
 </dl>
@@ -72,13 +72,7 @@ VOID NdisFreeGenericObject(
 ## -remarks
 <p>An NDIS handle is required to allocate some NDIS resources (for example, buffer pools). Components
     that do not otherwise have an NDIS handle use a pointer to an 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff565680">NDIS_GENERIC_OBJECT</a> structure as an NDIS
-    handle. All resources that were allocated with this generic object pointer as the handle must be freed
-    before freeing the generic object.</p>
-
-<p>An NDIS handle is required to allocate some NDIS resources (for example, buffer pools). Components
-    that do not otherwise have an NDIS handle use a pointer to an 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff565680">NDIS_GENERIC_OBJECT</a> structure as an NDIS
+    <a href="..\ndis\ns-ndis--ndis-generic-object.md">NDIS_GENERIC_OBJECT</a> structure as an NDIS
     handle. All resources that were allocated with this generic object pointer as the handle must be freed
     before freeing the generic object.</p>
 
@@ -135,7 +129,7 @@ VOID NdisFreeGenericObject(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff561603">NdisAllocateGenericObject</a>
+<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>, <a href="..\ndis\nf-ndis-ndisallocategenericobject.md">NdisAllocateGenericObject</a>
 </td>
 </tr>
 </table>
@@ -143,12 +137,12 @@ VOID NdisFreeGenericObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565680">NDIS_GENERIC_OBJECT</a>
+<a href="..\ndis\ns-ndis--ndis-generic-object.md">NDIS_GENERIC_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561603">NdisAllocateGenericObject</a>
+<a href="..\ndis\nf-ndis-ndisallocategenericobject.md">NdisAllocateGenericObject</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeGenericObject function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeGenericObject function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

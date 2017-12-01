@@ -7,7 +7,7 @@ old-location: stream\ksstreamallocator_status_ex.htm
 old-project: stream
 ms.assetid: b0477c52-d9e6-47cd-b94c-b9da2c4e07a6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSSTREAMALLOCATOR_STATUS_EX, KSSTREAMALLOCATOR_STATUS_EX, *PKSSTREAMALLOCATOR_STATUS_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices

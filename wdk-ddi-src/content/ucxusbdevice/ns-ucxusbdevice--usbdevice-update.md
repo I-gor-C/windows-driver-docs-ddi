@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Passed by UCX to update the specified device. This structure is in the request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object passed in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187846">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
+<p>Passed by UCX to update the specified device. This structure is in the request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object passed in the <a href="buses.evt_ucx_usbdevice_update">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
 
 
 ## -syntax
@@ -71,25 +71,25 @@ typedef struct _USBDEVICE_UPDATE {
 ### -field <b>Header</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188075">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
+<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
 </dd>
 
-### -field <b><a href="https://msdn.microsoft.com/library/windows/hardware/mt188075">USBDEVICE_MGMT_HEADER</a></b>
+### -field <b><a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a></b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188075">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
+<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
 </dd>
 
 ### -field <b>Flags</b>
 
 <dd>
-<p>A bitwise-OR of <a href="https://msdn.microsoft.com/library/windows/hardware/mt188083">USBDEVICE_UPDATE_FLAGS</a> values that indicates the attributes that must be updated by the client driver.</p>
+<p>A bitwise-OR of <a href="buses._usbdevice_update_flags">USBDEVICE_UPDATE_FLAGS</a> values that indicates the attributes that must be updated by the client driver.</p>
 </dd>
 
 ### -field <b>DeviceDescriptor</b>
 
 <dd>
-<p>A pointer a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.</p>
+<p>A pointer a <a href="..\usbspec\ns-usbspec--usb-device-descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.</p>
 </dd>
 
 ### -field <b>BosDescriptor</b>
@@ -113,13 +113,13 @@ typedef struct _USBDEVICE_UPDATE {
 ### -field <b>FailureFlags</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188082">USBDEVICE_UPDATE_FAILURE_FLAGS</a> structure that indicates the errors, if any, that occurred during the update operation. </p>
+<p>A <a href="buses._usbdevice_update_failure_flags">USBDEVICE_UPDATE_FAILURE_FLAGS</a> structure that indicates the errors, if any, that occurred during the update operation. </p>
 </dd>
 
 ### -field <b>Usb20HardwareLpmParameters</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188081">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>  structure that describes the Link Power Management (LPM) features.</p>
+<p>A <a href="buses._usbdevice_update_20_hardware_lpm_parameters">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>  structure that describes the Link Power Management (LPM) features.</p>
 </dd>
 
 ### -field <b>RootPortResumeTime</b>
@@ -149,16 +149,16 @@ typedef struct _USBDEVICE_UPDATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549969">WdfRequestGetParameters</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188083">USBDEVICE_UPDATE_FLAGS</a>
+<a href="buses._usbdevice_update_flags">USBDEVICE_UPDATE_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188082">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
+<a href="buses._usbdevice_update_failure_flags">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188081">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>
+<a href="buses._usbdevice_update_20_hardware_lpm_parameters">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

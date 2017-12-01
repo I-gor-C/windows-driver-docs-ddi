@@ -61,7 +61,7 @@ __checkReturn HRESULT CALLBACK pfnOfferAllocations2Cb(
 ### -param <i>hDevice</i> [in]
 
 <dd>
-<p> A handle to the display device (graphics context). The Direct3D runtime passed the user-mode driver this handle as the <b>hDevice</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542931">D3DDDIARG_CREATEDEVICE</a> structure at device creation.</p>
+<p> A handle to the display device (graphics context). The Direct3D runtime passed the user-mode driver this handle as the <b>hDevice</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createdevice.md">D3DDDIARG_CREATEDEVICE</a> structure at device creation.</p>
 </dd>
 
 ### -param <i>pData</i> [in]
@@ -89,13 +89,7 @@ __checkReturn HRESULT CALLBACK pfnOfferAllocations2Cb(
 
 <p>After the driver calls <b>pfnOfferAllocations2Cb</b> to offer an allocation to reuse, it must call <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-reclaimallocations3cb.md">pfnReclaimAllocations3Cb</a>  before it locks the allocation or submits it for rendering operations.</p>
 
-<p><b>pfnOfferAllocations2Cb</b> functions identically to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451693">pfnOfferAllocationsCb</a>, except that it takes flags into account through the pData parameter.</p>
-
-<p>The user-mode display driver calls <b>pfnOfferAllocations2Cb</b> to notify the Microsoft DirectX graphics kernel subsystem that, after it completes any previously submitted render operations,  it can offer the allocations' memory for other processes to use.</p>
-
-<p>After the driver calls <b>pfnOfferAllocations2Cb</b> to offer an allocation to reuse, it must call <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-reclaimallocations3cb.md">pfnReclaimAllocations3Cb</a>  before it locks the allocation or submits it for rendering operations.</p>
-
-<p><b>pfnOfferAllocations2Cb</b> functions identically to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451693">pfnOfferAllocationsCb</a>, except that it takes flags into account through the pData parameter.</p>
+<p><b>pfnOfferAllocations2Cb</b> functions identically to <a href="display.pfnofferallocationscb">pfnOfferAllocationsCb</a>, except that it takes flags into account through the pData parameter.</p>
 
 ## -requirements
 <table>
@@ -130,13 +124,13 @@ __checkReturn HRESULT CALLBACK pfnOfferAllocations2Cb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542931">D3DDDIARG_CREATEDEVICE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createdevice.md">D3DDDIARG_CREATEDEVICE</a>
 </dt>
 <dt>
 <a href="display.d3dddicb_offerallocations2">D3DDDICB_OFFERALLOCATIONS2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544512">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
 <a href="display.pfnofferresources">pfnOfferResources</a>

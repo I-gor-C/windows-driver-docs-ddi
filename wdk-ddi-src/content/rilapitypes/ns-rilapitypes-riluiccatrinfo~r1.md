@@ -7,7 +7,7 @@ old-location: netvista\riluiccatrinfo_2.htm
 old-project: netvista
 ms.assetid: d7deda33-b68a-4413-a7fc-2988e97906e1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCATRINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

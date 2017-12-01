@@ -58,7 +58,7 @@ HRESULT GetCapabilities(
 ### -param <i>pDevCaps</i> [in, out]
 
 <dd>
-<p>Caller-supplied pointer to an empty <a href="https://msdn.microsoft.com/library/windows/hardware/ff548380">STI_DEV_CAPS</a> structure.</p>
+<p>Caller-supplied pointer to an empty <a href="..\sti\ns-sti--sti-dev-caps.md">STI_DEV_CAPS</a> structure.</p>
 </dd>
 </dl>
 
@@ -66,13 +66,9 @@ HRESULT GetCapabilities(
 <p>If the operation succeeds, the method returns S_OK. Otherwise, it returns one of the STIERR-prefixed error codes defined in <i>stierr.h</i>.</p>
 
 ## -remarks
-<p>The <b>IStiDevice::GetCapabilities</b> method returns device capability flags in the caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff548380">STI_DEV_CAPS</a> structure.</p>
+<p>The <b>IStiDevice::GetCapabilities</b> method returns device capability flags in the caller-supplied <a href="..\sti\ns-sti--sti-dev-caps.md">STI_DEV_CAPS</a> structure.</p>
 
-<p>Before calling <b>IStiDevice::GetCapabilities</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.</p>
-
-<p>The <b>IStiDevice::GetCapabilities</b> method returns device capability flags in the caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff548380">STI_DEV_CAPS</a> structure.</p>
-
-<p>Before calling <b>IStiDevice::GetCapabilities</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.</p>
+<p>Before calling <b>IStiDevice::GetCapabilities</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.</p>
 
 ## -requirements
 <table>

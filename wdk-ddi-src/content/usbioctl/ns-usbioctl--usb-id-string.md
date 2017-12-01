@@ -104,7 +104,7 @@ typedef struct _USB_ID_STRING {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

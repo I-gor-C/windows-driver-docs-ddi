@@ -218,7 +218,7 @@ typedef struct _DXVA_BufferDescription {
 ### -field <b>dwFirstMBaddress</b>
 
 <dd>
-<p>Specifies the macroblock address of the first macroblock in the buffer passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of <a href="https://msdn.microsoft.com/library/windows/hardware/ff564012">DXVA_PictureParameters</a>. Examples of macroblock addresses are as follows.</p>
+<p>Specifies the macroblock address of the first macroblock in the buffer passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a>. Examples of macroblock addresses are as follows.</p>
 <table>
 <tr>
 <th>Macroblock</th>
@@ -293,7 +293,7 @@ typedef struct _DXVA_BufferDescription {
 <p>Slice-control command</p>
 </td>
 <td>
-<p>Must be equal to the value of the <b>wNumberMBsInSlice</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564049">DXVA_SliceInfo</a> structure in the slice-control buffer.</p>
+<p>Must be equal to the value of the <b>wNumberMBsInSlice</b> member of the <a href="..\dxva\ns-dxva--dxva-sliceinfo.md">DXVA_SliceInfo</a> structure in the slice-control buffer.</p>
 </td>
 </tr>
 <tr>
@@ -353,10 +353,10 @@ typedef struct _DXVA_BufferDescription {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564049">DXVA_SliceInfo</a>
+<a href="..\dxva\ns-dxva--dxva-sliceinfo.md">DXVA_SliceInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564012">DXVA_PictureParameters</a>
+<a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a>
 </dt>
 </dl>
 <p> </p>

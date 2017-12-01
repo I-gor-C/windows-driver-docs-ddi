@@ -7,7 +7,7 @@ old-location: netvista\ndismdirectoidrequestcomplete.htm
 old-project: netvista
 ms.assetid: 11b8d4ed-54c8-4c64-ba9d-2a6fc1b22724
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMDirectOidRequestComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,7 +73,7 @@ VOID NdisMDirectOidRequestComplete(
 
 <dd>
 <p>A pointer to a buffer that is formatted as an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure. The miniport
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure. The miniport
      driver obtained this pointer as an input parameter to its 
      <i>MiniportDirectOidRequest</i> function.</p>
 </dd>
@@ -92,18 +92,6 @@ VOID NdisMDirectOidRequestComplete(
 <p>None</p>
 
 ## -remarks
-<p>A miniport driver that returns NDIS_STATUS_PENDING from its 
-    <a href="..\ndis\nc-ndis-miniport-direct-oid-request.md">
-    MiniportDirectOidRequest</a> function must call 
-    <b>NdisMDirectOidRequestComplete</b> after the miniport driver has finished the request operation.</p>
-
-<p>If an overlying driver originated the direct OID request, NDIS calls the request complete function
-    (see 
-    <a href="..\ndis\nc-ndis-protocol-direct-oid-request-complete.md">
-    ProtocolDirectOidRequestComplete</a> and 
-    <a href="..\ndis\nc-ndis-filter-direct-oid-request-complete.md">
-    FilterDirectOidRequestComplete</a>) of the overlying that originated the request.</p>
-
 <p>A miniport driver that returns NDIS_STATUS_PENDING from its 
     <a href="..\ndis\nc-ndis-miniport-direct-oid-request.md">
     MiniportDirectOidRequest</a> function must call 
@@ -179,7 +167,7 @@ VOID NdisMDirectOidRequestComplete(
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-direct-oid-request-complete.md">
@@ -188,4 +176,4 @@ VOID NdisMDirectOidRequestComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMDirectOidRequestComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMDirectOidRequestComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -67,25 +67,25 @@ HRESULT TextOutAsBitmap(
 ### -param <i>pso</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569901">SURFOBJ</a> structure that describes the surface on which to write. </p>
+<p>Pointer to a <a href="display.surfobj">SURFOBJ</a> structure that describes the surface on which to write. </p>
 </dd>
 
 ### -param <i>pstro</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569738">STROBJ</a> structure that defines the glyphs to be rendered and the positions in which to place them. </p>
+<p>Pointer to a <a href="display.strobj">STROBJ</a> structure that defines the glyphs to be rendered and the positions in which to place them. </p>
 </dd>
 
 ### -param <i>pfo</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565974">FONTOBJ</a> structure from which to retrieve information about the font and its glyphs. </p>
+<p>Pointer to a <a href="display.fontobj">FONTOBJ</a> structure from which to retrieve information about the font and its glyphs. </p>
 </dd>
 
 ### -param <i>pco</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539417">CLIPOBJ</a> structure that defines the clip region through which all rendering must be done. The driver cannot affect any pixels outside the clip region. </p>
+<p>Pointer to a <a href="display.clipobj">CLIPOBJ</a> structure that defines the clip region through which all rendering must be done. The driver cannot affect any pixels outside the clip region. </p>
 </dd>
 
 ### -param <i>prclExtra</i> 
@@ -97,13 +97,13 @@ HRESULT TextOutAsBitmap(
 ### -param <i>prclOpaque</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure that represents a single opaque rectangle. This rectangle is bottom-right exclusive. Pixels within this rectangle (those that are not foreground and not clipped) are to be rendered with the opaque brush. This rectangle always bounds the text to be drawn. If this parameter is <b>NULL</b>, no opaque pixels are to be rendered. </p>
+<p>Pointer to a <a href="display.rectl">RECTL</a> structure that represents a single opaque rectangle. This rectangle is bottom-right exclusive. Pixels within this rectangle (those that are not foreground and not clipped) are to be rendered with the opaque brush. This rectangle always bounds the text to be drawn. If this parameter is <b>NULL</b>, no opaque pixels are to be rendered. </p>
 </dd>
 
 ### -param <i>pboFore</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538261">BRUSHOBJ</a> structure that represents the brush object to be used for the foreground pixels. This brush will always be a solid color brush.</p>
+<p>Pointer to a <a href="display.brushobj">BRUSHOBJ</a> structure that represents the brush object to be used for the foreground pixels. This brush will always be a solid color brush.</p>
 </dd>
 
 ### -param <i>pboOpaque</i> 
@@ -115,7 +115,7 @@ HRESULT TextOutAsBitmap(
 ### -param <i>pptlOrg</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569166">POINTL</a> structure that defines the brush origin for both brushes.</p>
+<p>Pointer to a <a href="display.pointl">POINTL</a> structure that defines the brush origin for both brushes.</p>
 </dd>
 
 ### -param <i>mix</i> 
@@ -137,13 +137,9 @@ HRESULT TextOutAsBitmap(
 <p> </p>
 
 ## -remarks
-<p>The <code>IPrintOemUni::TextOutAsBitmap</code> method is called from Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff553132">IPrintOemDriverUni::DrvUniTextOut</a> method, if that method cannot create the text string using downloadable fonts, either because the font is not available or is rotated. <code>IPrintOemUni::TextOutAsBitmap</code> should create a bitmap image of the text and send it to the print device.</p>
+<p>The <code>IPrintOemUni::TextOutAsBitmap</code> method is called from Unidrv's <a href="print.iprintoemdriveruni_drvunitextout">IPrintOemDriverUni::DrvUniTextOut</a> method, if that method cannot create the text string using downloadable fonts, either because the font is not available or is rotated. <code>IPrintOemUni::TextOutAsBitmap</code> should create a bitmap image of the text and send it to the print device.</p>
 
-<p>The <code>IPrintOemUni::TextOutAsBitmap</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "TextOutAsBitmap" as input.</p>
-
-<p>The <code>IPrintOemUni::TextOutAsBitmap</code> method is called from Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff553132">IPrintOemDriverUni::DrvUniTextOut</a> method, if that method cannot create the text string using downloadable fonts, either because the font is not available or is rotated. <code>IPrintOemUni::TextOutAsBitmap</code> should create a bitmap image of the text and send it to the print device.</p>
-
-<p>The <code>IPrintOemUni::TextOutAsBitmap</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "TextOutAsBitmap" as input.</p>
+<p>The <code>IPrintOemUni::TextOutAsBitmap</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "TextOutAsBitmap" as input.</p>
 
 ## -requirements
 <table>
@@ -172,10 +168,10 @@ HRESULT TextOutAsBitmap(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553132">IPrintOemDriverUni::DrvUniTextOut</a>
+<a href="print.iprintoemdriveruni_drvunitextout">IPrintOemDriverUni::DrvUniTextOut</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a>
+<a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a>
 </dt>
 </dl>
 <p> </p>

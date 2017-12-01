@@ -7,7 +7,7 @@ old-location: audio\phdaudio_transfer_complete_callback.htm
 old-project: audio
 ms.assetid: 6B3DA3B1-33E9-4BE4-A3EE-146080C483A6
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>HDAudio codec transfer complete callback function. <b>PHDAUDIO_TRANSFER_COMPLETE_CALLBACK</b> is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538596">PTRANSFER_CODEC_VERBS</a> callback function. </p>
+<p>HDAudio codec transfer complete callback function. <b>PHDAUDIO_TRANSFER_COMPLETE_CALLBACK</b> is used by the <a href="..\hdaudio\nc-hdaudio-ptransfer-codec-verbs.md">PTRANSFER_CODEC_VERBS</a> callback function. </p>
 
 
 ## -prototype
@@ -69,7 +69,7 @@ typedef PHDAUDIO_TRANSFER_COMPLETE_CALLBACK HDAudioTransferCompleteCallback;
 ### -param <i>Context</i> 
 
 <dd>
-<p> This is the same  context value that was specified previously in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538596">PTRANSFER_CODEC_VERBS</a> routine's callbackContext parameter.</p>
+<p> This is the same  context value that was specified previously in the <a href="..\hdaudio\nc-hdaudio-ptransfer-codec-verbs.md">PTRANSFER_CODEC_VERBS</a> routine's callbackContext parameter.</p>
 </dd>
 </dl>
 
@@ -77,9 +77,7 @@ typedef PHDAUDIO_TRANSFER_COMPLETE_CALLBACK HDAudioTransferCompleteCallback;
 <p>Void</p>
 
 ## -remarks
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538596">PTRANSFER_CODEC_VERBS</a>.</p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538596">PTRANSFER_CODEC_VERBS</a>.</p>
+<p>For more information, see <a href="..\hdaudio\nc-hdaudio-ptransfer-codec-verbs.md">PTRANSFER_CODEC_VERBS</a>.</p>
 
 ## -requirements
 <table>

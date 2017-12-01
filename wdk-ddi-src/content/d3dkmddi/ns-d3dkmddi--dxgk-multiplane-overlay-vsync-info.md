@@ -78,7 +78,7 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO {
 ### -field <b>PlaneAttributes</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh780301">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES</a>  that specifies overlay plane attributes.</p>
+<p>A structure of type <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-attributes.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES</a>  that specifies overlay plane attributes.</p>
 </dd>
 </dl>
 

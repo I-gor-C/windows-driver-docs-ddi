@@ -65,7 +65,7 @@ HRESULT HalftonePattern(
 ### -param <i>pdevobj</i> 
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>pHTPattern</i> 
@@ -158,31 +158,17 @@ HRESULT HalftonePattern(
 
 <p>    *Option: HT_PATSIZE_SUPERCELL_M</p>
 
-<p>    {</p>
-
 <p>        *rcNameID: =HT_SUPERCELL_DISPLAY</p>
-
-<p>    }</p>
 
 <p>    *Option: HT_PATSIZE_6x6_M</p>
 
-<p>    {</p>
-
 <p>        *rcNameID: =HT_DITHER6X6_DISPLAY</p>
-
-<p>    }</p>
 
 <p>    *Option: HT_PATSIZE_8x8_M</p>
 
-<p>    {</p>
-
 <p>        *rcNameID: =HT_DITHER8X8_DISPLAY</p>
 
-<p>    }</p>
-
 <p>    *Option: HT_PAT_DDK_16x16</p>
-
-<p>    {</p>
 
 <p>        *Name: "DDK 16x16"</p>
 
@@ -192,87 +178,9 @@ HRESULT HalftonePattern(
 
 <p>        *HTCallbackID: 1</p>
 
-<p>    }</p>
-
 <p>}</p>
 
-<p>The <code>IPrintOemUni::HalftonePattern</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "HalftonePattern" as input.</p>
-
-<p>For more information about halftoning, see <a href="NULL">Customized Halftoning</a> and <a href="NULL">Option Attributes for the Halftone Feature</a>.</p>
-
-<p>The <code>IPrintOemUni::HalftonePattern</code> method is used to create or modify a halftone pattern before Unidrv passes it to GDI. Its purpose is to allow proprietary halftone patterns to be either stored as encrypted resources or generated at run time.</p>
-
-<p>If the <code>IPrintOemUni::HalftonePattern</code> method is implemented, and if the GPD file entry for the currently selected halftoning method includes an *<b>HTCallbackID</b> attribute, Unidrv calls the <code>IPrintOemUni::HalftonePattern</code> method before passing a halftone pattern to GDI.</p>
-
-<p>If the GPD file entry for the currently selected halftoning method contains an *rcHTPatternID entry identifying an RC_HTPATTERN resource, Unidrv obtains the pattern and passes a pointer to it as the <i>pResource</i> parameter value. This allows you to store the pattern as an encrypted resource, and to use the <code>IPrintOemUni::HalftonePattern</code> method to decode the pattern. The decoded pattern should be returned in the buffer pointed to by <i>pHTPattern</i>.</p>
-
-<p>You can also use the <code>IPrintOemUni::HalftonePattern</code> method to generate a halftone pattern. In this case an RC_HTPATTERN resource is not needed, so <i>pResource</i> is <b>NULL</b>. The <code>IPrintOemUni::HalftonePattern</code> method should generate a pattern and return it in the buffer pointed to by <i>pHTPattern</i>.</p>
-
-<p>If the <code>IPrintOemUni::HalftonePattern</code> method returns one pattern, it is used for all colors. If the method returns three patterns, they must be specified in RGB order.</p>
-
-<p>The following example shows an implementation of a rendering plug-in's <code>HalftonePattern</code> method. The method calculates the length in bytes of the HTPattern_DDK pattern array, and then copies the bytes in the pattern array to the buffer pointed to by this method's <i>pHTPattern</i> parameter. The pattern array can contain either one or three patterns, depending on whether the pattern is used for all colors or has separate red, green, and blue patterns. For the sake of brevity, not all elements of the pattern array are listed. </p>
-
-<p>An implementation of a <code>HalftonePattern</code> method in the rendering plug-in must be accompanied by a Halftone feature in the GPD file. The following GPD example shows a Halftone feature whose HT_PAT_DDK_16x16 option describes the customized pattern generated in the previous sample. </p>
-
-<p>*Feature: Halftone</p>
-
-<p>{</p>
-
-<p>    *rcNameID: =HALFTONING_DISPLAY</p>
-
-<p>    *HelpIndex: 12005</p>
-
-<p>    *DefaultOption: HT_PATSIZE_AUTO</p>
-
-<p>    *Option: HT_PATSIZE_AUTO</p>
-
-<p>    {</p>
-
-<p>        *rcNameID: =HT_AUTO_SELECT_DISPLAY</p>
-
-<p>    }</p>
-
-<p>    *Option: HT_PATSIZE_SUPERCELL_M</p>
-
-<p>    {</p>
-
-<p>        *rcNameID: =HT_SUPERCELL_DISPLAY</p>
-
-<p>    }</p>
-
-<p>    *Option: HT_PATSIZE_6x6_M</p>
-
-<p>    {</p>
-
-<p>        *rcNameID: =HT_DITHER6X6_DISPLAY</p>
-
-<p>    }</p>
-
-<p>    *Option: HT_PATSIZE_8x8_M</p>
-
-<p>    {</p>
-
-<p>        *rcNameID: =HT_DITHER8X8_DISPLAY</p>
-
-<p>    }</p>
-
-<p>    *Option: HT_PAT_DDK_16x16</p>
-
-<p>    {</p>
-
-<p>        *Name: "DDK 16x16"</p>
-
-<p>        *HTPatternSize: PAIR(16, 16)</p>
-
-<p>        *HTNumPatterns: 1</p>
-
-<p>        *HTCallbackID: 1</p>
-
-<p>    }</p>
-
-<p>}</p>
-
-<p>The <code>IPrintOemUni::HalftonePattern</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "HalftonePattern" as input.</p>
+<p>The <code>IPrintOemUni::HalftonePattern</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "HalftonePattern" as input.</p>
 
 <p>For more information about halftoning, see <a href="NULL">Customized Halftoning</a> and <a href="NULL">Option Attributes for the Halftone Feature</a>.</p>
 
@@ -303,7 +211,7 @@ HRESULT HalftonePattern(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a>
+<a href="print.iprintoemuni_imageprocessing">IPrintOemUni::ImageProcessing</a>
 </dt>
 </dl>
 <p> </p>

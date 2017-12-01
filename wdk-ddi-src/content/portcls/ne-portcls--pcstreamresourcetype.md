@@ -7,7 +7,7 @@ old-location: audio\pcstreamresourcetype.htm
 old-project: audio
 ms.assetid: C9563635-66F3-4835-8153-DECB04580544
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: BarcodeSymbologyAttributesData, BarcodeSymbologyAttributesData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,12 +76,6 @@ typedef enum PcStreamResourceType {
 </dl>
 
 ## -remarks
-<p>Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. Two type of stream resources are supported: interrupts and driver-owned threads. Audio drivers should register a resource after creating the resource, and unregister the resource before deleted it. 
-</p>
-
-<p>Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. Two type of stream resources are supported: interrupts and driver-owned threads. Audio drivers should register a resource after creating the resource, and unregister the resource before deleted it. 
-</p>
-
 <p>Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. Two type of stream resources are supported: interrupts and driver-owned threads. Audio drivers should register a resource after creating the resource, and unregister the resource before deleted it. 
 </p>
 

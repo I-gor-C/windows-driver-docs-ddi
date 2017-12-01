@@ -82,19 +82,11 @@ NTSTATUS RtlDeleteAce(
 <p> </p>
 
 ## -remarks
-<p>For information about calculating the size of an ACL, see the Remarks section of the reference entry for <a href="https://msdn.microsoft.com/library/windows/hardware/ff552151">RtlCreateAcl</a>. </p>
+<p>For information about calculating the size of an ACL, see the Remarks section of the reference entry for <a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>. </p>
 
-<p>To add an ACE to an ACL, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff552101">RtlAddAce</a>. </p>
+<p>To add an ACE to an ACL, use <a href="..\ntifs\nf-ntifs-rtladdace.md">RtlAddAce</a>. </p>
 
-<p>To obtain a pointer to an ACE in an ACL, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff552288">RtlGetAce</a>. </p>
-
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
-
-<p>For information about calculating the size of an ACL, see the Remarks section of the reference entry for <a href="https://msdn.microsoft.com/library/windows/hardware/ff552151">RtlCreateAcl</a>. </p>
-
-<p>To add an ACE to an ACL, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff552101">RtlAddAce</a>. </p>
-
-<p>To obtain a pointer to an ACE in an ACL, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff552288">RtlGetAce</a>. </p>
+<p>To obtain a pointer to an ACE in an ACL, use <a href="..\ntifs\nf-ntifs-rtlgetace.md">RtlGetAce</a>. </p>
 
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
 
@@ -161,19 +153,19 @@ NTSTATUS RtlDeleteAce(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+<a href="ifsk.ace">ACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538866">ACL</a>
+<a href="..\ntifs\ns-ntifs--acl.md">ACL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552101">RtlAddAce</a>
+<a href="..\ntifs\nf-ntifs-rtladdace.md">RtlAddAce</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552151">RtlCreateAcl</a>
+<a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552288">RtlGetAce</a>
+<a href="..\ntifs\nf-ntifs-rtlgetace.md">RtlGetAce</a>
 </dt>
 </dl>
 <p> </p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure is used to specify the capabilities and support for IOCTL redirection of a storage silo driver. <b>SILO_DRIVER_CAPABILITIES</b> is included in the system buffer of an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451445">IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES</a> request.</p>
+<p>This structure is used to specify the capabilities and support for IOCTL redirection of a storage silo driver. <b>SILO_DRIVER_CAPABILITIES</b> is included in the system buffer of an <a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-driver-report-capabilities.md">IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES</a> request.</p>
 
 
 ## -syntax
@@ -102,7 +102,7 @@ typedef struct _SILO_DRIVER_CAPABILITIES {
 ### -field <b>MaxLbaFilterCount</b>
 
 <dd>
-<p>Maximum number of LBA filter entries the silo driver can provide in a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406723">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a> request.</p>
+<p>Maximum number of LBA filter entries the silo driver can provide in a <a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-driver-update-lba-filter-table.md">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a> request.</p>
 </dd>
 
 ### -field <b>RedirectedIoctlListCount</b>
@@ -119,7 +119,7 @@ typedef struct _SILO_DRIVER_CAPABILITIES {
 </dl>
 
 ## -remarks
-<p>To support receiving <a href="https://msdn.microsoft.com/library/windows/hardware/hh451439">IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ</a> from the enhanced storage class driver, a silo driver must set <b>CAP_ON_DEMAND_AUTHENTICATION</b> in <b>Capabilities</b>. Also, to support sending <a href="https://msdn.microsoft.com/library/windows/hardware/hh406723">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a>, a silo driver must set <b>CAP_BANDING_SUPPORT</b> in <b>Capabilities</b>.</p>
+<p>To support receiving <a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-driver-perform-authz.md">IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ</a> from the enhanced storage class driver, a silo driver must set <b>CAP_ON_DEMAND_AUTHENTICATION</b> in <b>Capabilities</b>. Also, to support sending <a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-driver-update-lba-filter-table.md">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a>, a silo driver must set <b>CAP_BANDING_SUPPORT</b> in <b>Capabilities</b>.</p>
 
 <p>To receive band management requests from the enhanced storage class driver, a silo driver must register a list of IOCTL codes it wants to receive. The redirected IOCTL list is an array of <b>ULONG</b> IOCTL codes with a length of <b>RedirectedIoctlListCount</b>. This list is included with the <b>SILO_DRIVER_CAPABILITIES</b> structure in the system buffer. The list is located in the system buffer following  <b>SILO_DRIVER_CAPABILITIES</b> at the offset indicated by <b>RedirectedIoctlListOffset</b>.</p>
 
@@ -148,13 +148,13 @@ typedef struct _SILO_DRIVER_CAPABILITIES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451439">IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ</a>
+<a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-driver-perform-authz.md">IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451445">IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES</a>
+<a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-driver-report-capabilities.md">IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406723">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a>
+<a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-driver-update-lba-filter-table.md">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a>
 </dt>
 </dl>
 <p> </p>

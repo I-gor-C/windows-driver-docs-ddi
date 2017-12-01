@@ -76,7 +76,7 @@ typedef struct _ISCSI_DiscoveredTargetPortal {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTargetPortal structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561524">ISCSI_DiscoveredTargetPortal WMI Class</a> in <i>Discover.mof</i>. </p>
+<p>The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTargetPortal structure when it compiles the <a href="storage.iscsi_discoveredtargetportal_wmi_class">ISCSI_DiscoveredTargetPortal WMI Class</a> in <i>Discover.mof</i>. </p>
 
 ## -requirements
 <table>
@@ -95,13 +95,13 @@ typedef struct _ISCSI_DiscoveredTargetPortal {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561511">ISCSI_DiscoveredTargetPortal2</a>
+<a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportal2.md">ISCSI_DiscoveredTargetPortal2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561524">ISCSI_DiscoveredTargetPortal WMI Class</a>
+<a href="storage.iscsi_discoveredtargetportal_wmi_class">ISCSI_DiscoveredTargetPortal WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561574">ISCSI_TargetPortal</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a>
 </dt>
 </dl>
 <p> </p>

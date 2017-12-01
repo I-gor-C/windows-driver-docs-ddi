@@ -39,13 +39,13 @@ req.iface:
 
 
 ## -description
-<p>The <b>IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</b> request disconnects an interrupt service routine (and an optional deferred port check service routine) that was connected by using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544020">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a> request. Only kernel-mode drivers can connect and disconnect an interrupt routine.</p>
+<p>The <b>IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</b> request disconnects an interrupt service routine (and an optional deferred port check service routine) that was connected by using an <a href="..\parallel\ni-parallel-ioctl-internal-parallel-connect-interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a> request. Only kernel-mode drivers can connect and disconnect an interrupt routine.</p>
 
 
 ## -ioctlparameters
 
 ### -input-buffer
-<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544295">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a> structure that the client allocates for the input of interrupt service information.</p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\parallel\ns-parallel--parallel-interrupt-service-routine.md">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a> structure that the client allocates for the input of interrupt service information.</p>
 
 ### -input-buffer-length
 <p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to the size, in bytes, of a PARALLEL_INTERRUPT_SERVICE_ROUTINE structure. </p>
@@ -148,13 +148,13 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544020">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-connect-interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a>
+<a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544295">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a>
+<a href="..\parallel\ns-parallel--parallel-interrupt-service-routine.md">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a>
 </dt>
 </dl>
 <p> </p>

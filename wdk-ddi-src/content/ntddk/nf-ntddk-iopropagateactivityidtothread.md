@@ -7,7 +7,7 @@ old-location: kernel\iopropagateactivityidtothread.htm
 old-project: kernel
 ms.assetid: 8E824793-53DF-4573-81B0-6FE925CCB4C4
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoPropagateActivityIdToThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ NTSTATUS IoPropagateActivityIdToThread(
 ### -param <i>*OriginalId</i> [out]
 
 <dd>
-<p>Upon successfully returning from the call, holds the ID that was previously set on the thread. The driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh439297">IoClearActivityIdThread</a> with this pointer when tracing is completed within the same thread context.</p>
+<p>Upon successfully returning from the call, holds the ID that was previously set on the thread. The driver must call <a href="..\ntddk\nf-ntddk-ioclearactivityidthread.md">IoClearActivityIdThread</a> with this pointer when tracing is completed within the same thread context.</p>
 </dd>
 </dl>
 
@@ -83,11 +83,7 @@ NTSTATUS IoPropagateActivityIdToThread(
 <p> </p>
 
 ## -remarks
-<p>This routine should be used by drivers that are tracing aware and are issuing I/O on a worker thread. Note that such drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh439297">IoClearActivityIdThread</a> with the <i>OriginalId</i> before they return control from the thread, if the call was successful.</p>
-
-<p>Drivers that use I/O work items do not need to call this routine because the I/O subsystem takes care of propagating activity IDs to threads in that case.</p>
-
-<p>This routine should be used by drivers that are tracing aware and are issuing I/O on a worker thread. Note that such drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh439297">IoClearActivityIdThread</a> with the <i>OriginalId</i> before they return control from the thread, if the call was successful.</p>
+<p>This routine should be used by drivers that are tracing aware and are issuing I/O on a worker thread. Note that such drivers must call <a href="..\ntddk\nf-ntddk-ioclearactivityidthread.md">IoClearActivityIdThread</a> with the <i>OriginalId</i> before they return control from the thread, if the call was successful.</p>
 
 <p>Drivers that use I/O work items do not need to call this routine because the I/O subsystem takes care of propagating activity IDs to threads in that case.</p>
 

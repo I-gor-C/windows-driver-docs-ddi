@@ -7,7 +7,7 @@ old-location: netvista\rildmconfiginfoitem.htm
 old-project: netvista
 ms.assetid: 31061811-e148-4af2-8a9b-370d1b45ae1f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

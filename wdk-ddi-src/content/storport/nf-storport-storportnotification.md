@@ -124,7 +124,7 @@ VOID StorPortNotification(
 </p>
 </td>
 <td>
-<p>This notification type returns a LARGE_INTEGER that holds the value from <a href="https://msdn.microsoft.com/library/windows/hardware/ff553071">KeQueryTickCount</a>.</p>
+<p>This notification type returns a LARGE_INTEGER that holds the value from <a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>.</p>
 </td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ VOID StorPortNotification(
 </p>
 </td>
 <td>
-<p>Indicates that the miniport driver requires the port driver to call the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557426">HwStorTimer</a> routine in the requested number of microseconds.</p>
+<p>Indicates that the miniport driver requires the port driver to call the miniport driver's <a href="storage.hwstortimer">HwStorTimer</a> routine in the requested number of microseconds.</p>
 </td>
 </tr>
 <tr>
@@ -174,7 +174,7 @@ VOID StorPortNotification(
 </p>
 </td>
 <td>
-<p>Indicates that the miniport driver has changed the data items or the number of instances of a given data block that was previously registered by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550480">IoWMIRegistrationControl</a>.</p>
+<p>Indicates that the miniport driver has changed the data items or the number of instances of a given data block that was previously registered by calling <a href="..\wdm\nf-wdm-iowmiregistrationcontrol.md">IoWMIRegistrationControl</a>.</p>
 </td>
 </tr>
 </table>
@@ -184,7 +184,7 @@ VOID StorPortNotification(
 ### -param <i>HwDeviceExtension</i> 
 
 <dd>
-<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device.</p>
+<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.</p>
 </dd>
 
 ### -param <i>arguments</i> 
@@ -237,7 +237,7 @@ VOID StorPortNotification(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454268">StorPortNotification2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454275">StorPortStatusPending</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454276">StorPortTimer</a>
+<a href="devtest.storport_storportnotification2">StorPortNotification2</a>, <a href="devtest.storport_storportstatuspending">StorPortStatusPending</a>, <a href="devtest.storport_storporttimer">StorPortTimer</a>
 </td>
 </tr>
 </table>
@@ -245,37 +245,37 @@ VOID StorPortNotification(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>
+<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567434">StorPortNotification for BufferOverrunDetected</a>
+<a href="storage.storportnotification__notificationtype___bufferoverrundetected_">StorPortNotification for BufferOverrunDetected</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567437">StorPortNotification for BusChangeDetected</a>
+<a href="storage.storportnotification__notificationtype___buschangedetected_">StorPortNotification for BusChangeDetected</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567439">StorPortNotification for LinkDown</a>
+<a href="storage.storportnotification__notificationtype___linkdown_">StorPortNotification for LinkDown</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567441">StorPortNotification for LinkUp</a>
+<a href="storage.storportnotification__notificationtype___linkup_">StorPortNotification for LinkUp</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567445">StorPortNotification for QueryTickCount</a>
+<a href="storage.storportnotification__notificationtype___querytickcount_">StorPortNotification for QueryTickCount</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567446">StorPortNotification for RequestComplete</a>
+<a href="storage.storportnotification__notificationtype___requestcomplete_">StorPortNotification for RequestComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567447">StorPortNotification for RequestTimerCall</a>
+<a href="storage.storportnotification__notificationtype___requesttimercall_">StorPortNotification for RequestTimerCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567450">StorPortNotification for ResetDetected</a>
+<a href="storage.storportnotification__notificationtype___resetdetected_">StorPortNotification for ResetDetected</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567452">StorPortNotification for WMIEvent</a>
+<a href="storage.storportnotification__notificationtype___wmievent__pathid____0xff_">StorPortNotification for WMIEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567456">StorPortNotification for WMIReregister</a>
+<a href="storage.storportnotification__notificationtype___wmireregister__pathid____0xff">StorPortNotification for WMIReregister</a>
 </dt>
 </dl>
 <p> </p>

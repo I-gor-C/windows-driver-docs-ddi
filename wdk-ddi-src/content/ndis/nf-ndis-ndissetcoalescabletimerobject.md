@@ -7,7 +7,7 @@ old-location: netvista\ndissetcoalescabletimerobject.htm
 old-project: netvista
 ms.assetid: f6f50bba-cda5-41ed-9e0b-1aea5113a22b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisSetCoalescableTimerObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -123,7 +123,7 @@ BOOLEAN NdisSetCoalescableTimerObject(
 
 ## -remarks
 <p>A timer object set by this function operates the same as a timer set by 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564563">NdisSetTimerObject</a>, with an additional
+    <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>, with an additional
     tolerance value added to the expiration parameter 
     <i>DueTime</i> . The operating system uses this additional tolerance value to adjust the expiration time
     of the timer to coincide with the expiration of other software timers. By doing this, the operating
@@ -174,67 +174,10 @@ BOOLEAN NdisSetCoalescableTimerObject(
     <i>Tolerance</i> = 1 second.</p>
 
 <p>For more information about timer behavior, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff553292">KeSetTimerEx</a>.</p>
+    <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>.</p>
 
 <p>To cancel a timer, call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561624">NdisCancelTimerObject</a> function.</p>
-
-<p>A timer object set by this function operates the same as a timer set by 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564563">NdisSetTimerObject</a>, with an additional
-    tolerance value added to the expiration parameter 
-    <i>DueTime</i> . The operating system uses this additional tolerance value to adjust the expiration time
-    of the timer to coincide with the expiration of other software timers. By doing this, the operating
-    system can reduce power consumption and improve energy efficiency.</p>
-
-<p><b>NdisSetTimerObject</b> operates similarly to 
-    <b>NdisSetCoalescableTimerObject</b> when 
-    <i>Tolerance</i> is set to zero.</p>
-
-<p>After a driver calls 
-    <b>NdisSetCoalescableTimerObject</b>, the timer object is queued until expiration of an interval that is
-    in the range of (
-    <i>DueTime</i> - 
-    <i>Tolerance</i> ) and (
-    <i>DueTime</i> + 
-    <i>Tolerance</i> ). After the interval expires, the operating system removes the timer object from the
-    queue, and the caller-supplied 
-    <a href="..\ndis\nc-ndis-ndis-timer-function.md">NetTimerCallback</a> function is run one
-    time at IRQL = DISPATCH_LEVEL as soon as a processor becomes available.</p>
-
-<p>If a nonzero value is specified in the 
-    <i>MillisecondsPeriod</i> parameter, the timer object is queued again until an interval in the range of (
-    <i>MillisecondsPeriod</i> - 
-    <i>Tolerance</i> ) and (
-    <i>MillisecondsPeriod</i> + 
-    <i>Tolerance</i> ) expires. After this interval expires, the timer object is resubmitted to the queue, and
-    the caller-supplied 
-    <i>NetTimerCallback</i> function is run one time at IRQL = DISPATCH_LEVEL as soon as a processor becomes
-    available.</p>
-
-<p>To use timer coalescing effectively, a caller should specify a 
-    <i>Tolerance</i> value of at least 32 milliseconds. This value equals approximately two default system
-    clock intervals of 15.6 milliseconds. Use a larger 
-    <i>Tolerance</i> value if you can do this, such as 100 milliseconds.</p>
-
-<p>We recommend that 
-    <i>MillisecondsPeriod</i> and 
-    <i>Tolerance</i> be set to multiples of 50 milliseconds. Typical 
-    <i>MillisecondsPeriod</i> values are 50, 100, 250, 500, and 1000 milliseconds. Typical 
-    <i>Tolerance</i> values are 50, 100, 150, and 250 milliseconds.</p>
-
-<p>Typically, a timer with a large 
-    <i>MillisecondsPeriod</i> value can use a proportionally large 
-    <i>Tolerance</i> value. For example, a timer with 
-    <i>MillisecondsPeriod</i> = 500 milliseconds might use 
-    <i>Tolerance</i> = 50 milliseconds. But a timer with 
-    <i>MillisecondsPeriod</i> = 10 seconds might use 
-    <i>Tolerance</i> = 1 second.</p>
-
-<p>For more information about timer behavior, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff553292">KeSetTimerEx</a>.</p>
-
-<p>To cancel a timer, call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561624">NdisCancelTimerObject</a> function.</p>
+    <a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a> function.</p>
 
 ## -requirements
 <table>
@@ -289,19 +232,19 @@ BOOLEAN NdisSetCoalescableTimerObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553292">KeSetTimerEx</a>
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567886">NDIS_TIMER_CHARACTERISTICS</a>
+<a href="..\ndis\ns-ndis--ndis-timer-characteristics.md">NDIS_TIMER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561624">NdisCancelTimerObject</a>
+<a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561618">NdisAllocateTimerObject</a>
+<a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">NdisAllocateTimerObject</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564563">NdisSetTimerObject</a>
+<a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-ndis-timer-function.md">NetTimerCallback</a>
@@ -309,4 +252,4 @@ BOOLEAN NdisSetCoalescableTimerObject(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetCoalescableTimerObject function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSetCoalescableTimerObject function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

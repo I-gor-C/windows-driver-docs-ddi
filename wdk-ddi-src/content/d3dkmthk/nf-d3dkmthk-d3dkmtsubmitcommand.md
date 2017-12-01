@@ -62,7 +62,7 @@ NTSTATUS APIENTRY D3DKMTSubmitCommand(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906806">D3DKMT_SUBMITCOMMAND</a> structure that describes the operation.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-submitcommand.md">D3DKMT_SUBMITCOMMAND</a> structure that describes the operation.</p>
 </dd>
 </dl>
 
@@ -143,7 +143,7 @@ NTSTATUS APIENTRY D3DKMTSubmitCommand(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906806">D3DKMT_SUBMITCOMMAND</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-submitcommand.md">D3DKMT_SUBMITCOMMAND</a>
 </dt>
 </dl>
 <p> </p>

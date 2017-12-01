@@ -60,7 +60,7 @@ NTSTATUS FltParseFileName(
 ### -param <i>FileName</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains the string to parse as a file name. This parameter is required and cannot be <b>NULL</b>. </p>
+<p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the string to parse as a file name. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
 ### -param <i>Extension</i> [in, out]
@@ -102,41 +102,13 @@ NTSTATUS FltParseFileName(
 
 <p><b>FltParseFileName</b> parses this short name as follows: </p>
 
-<p><i>Extension</i>: "txt" </p>
-
 <p><i>Stream</i>: <b>NULL</b></p>
 
 <p><i>FinalComponent</i>: "TestRe~1.txt" </p>
 
-<p>For more information about file name normalization and file name parsing, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544633">FLT_FILE_NAME_INFORMATION</a>. </p>
+<p>For more information about file name normalization and file name parsing, see <a href="..\fltkernel\ns-fltkernel--flt-file-name-information.md">FLT_FILE_NAME_INFORMATION</a>. </p>
 
-<p>To parse the contents of a FLT_FILE_NAME_INFORMATION structure, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543417">FltParseFileNameInformation</a>. </p>
-
-<p><b>FltParseFileName</b> parses the extension, stream name, and final component from a file name string. The file name is not required to be normalized or a full path name. If the file name is a short file name, <b>FltParseFileName</b> parses only the extension. </p>
-
-<p>The following is an example of a normalized name for a local file: </p>
-
-<p><b>FltParseFileName</b> parses this normalized name as follows: </p>
-
-<p><i>Extension</i>: "txt" </p>
-
-<p><i>Stream</i>: ":stream1" </p>
-
-<p><i>FinalComponent</i>: "Test Results.txt:stream1" </p>
-
-<p>The following is an example of a short name for a file: </p>
-
-<p><b>FltParseFileName</b> parses this short name as follows: </p>
-
-<p><i>Extension</i>: "txt" </p>
-
-<p><i>Stream</i>: <b>NULL</b></p>
-
-<p><i>FinalComponent</i>: "TestRe~1.txt" </p>
-
-<p>For more information about file name normalization and file name parsing, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544633">FLT_FILE_NAME_INFORMATION</a>. </p>
-
-<p>To parse the contents of a FLT_FILE_NAME_INFORMATION structure, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543417">FltParseFileNameInformation</a>. </p>
+<p>To parse the contents of a FLT_FILE_NAME_INFORMATION structure, call <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>. </p>
 
 ## -requirements
 <table>
@@ -201,13 +173,13 @@ NTSTATUS FltParseFileName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544633">FLT_FILE_NAME_INFORMATION</a>
+<a href="..\fltkernel\ns-fltkernel--flt-file-name-information.md">FLT_FILE_NAME_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543417">FltParseFileNameInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>

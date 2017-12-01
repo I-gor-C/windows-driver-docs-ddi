@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetDisplayMode(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543304">D3DDDIARG_SETDISPLAYMODE</a> structure that specifies parameters for setting the display mode.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setdisplaymode.md">D3DDDIARG_SETDISPLAYMODE</a> structure that specifies parameters for setting the display mode.</p>
 </dd>
 </dl>
 
@@ -83,21 +83,9 @@ __checkReturn HRESULT APIENTRY SetDisplayMode(
 
 <p>Persistent primaries that are used by full-screen Microsoft DirectX version 9.L applications </p>
 
-<p>The Direct3D runtime calls the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a> function to create the primary to be scanned out. However, the driver should program the hardware to scan out only when its <i>SetDisplayMode</i> function is called. Therefore, the runtime sets the <b>hResource</b> and <b>SubResourceIndex</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543304">D3DDDIARG_SETDISPLAYMODE</a> structure that is pointed to by the <i>pData</i> parameter to the primary that was created through the call to the driver's <i>CreateResource</i> function. The driver should then translate the primary that is represented by <b>hResource</b> and <b>SubResourceIndex</b> to a primary allocation handle. After the driver makes this translation, the driver should pass the resulting handle in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setdisplaymodecb.md">pfnSetDisplayModeCb</a> function, which then initiates a call to the display miniport driver's <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a> function. </p>
+<p>The Direct3D runtime calls the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a> function to create the primary to be scanned out. However, the driver should program the hardware to scan out only when its <i>SetDisplayMode</i> function is called. Therefore, the runtime sets the <b>hResource</b> and <b>SubResourceIndex</b> members of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setdisplaymode.md">D3DDDIARG_SETDISPLAYMODE</a> structure that is pointed to by the <i>pData</i> parameter to the primary that was created through the call to the driver's <i>CreateResource</i> function. The driver should then translate the primary that is represented by <b>hResource</b> and <b>SubResourceIndex</b> to a primary allocation handle. After the driver makes this translation, the driver should pass the resulting handle in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setdisplaymodecb.md">pfnSetDisplayModeCb</a> function, which then initiates a call to the display miniport driver's <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a> function. </p>
 
-<p>The user-mode display driver can set the <b>hPrimaryAllocation</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544255">D3DDDICB_SETDISPLAYMODE</a> structure in the call to <b>pfnSetDisplayModeCb</b> to scan out any allocation. However, the allocation must be marked as a primary (that is, the user-mode display driver must have set the <b>Primary</b> bit-field flag in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544364">D3DDDI_ALLOCATIONINFO</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-allocatecb.md">pfnAllocateCb</a> function to create the allocation).</p>
-
-<p>The Microsoft Direct3D runtime calls <i>SetDisplayMode</i> to switch to a display mode or primary that is not supported by the GDI desktop. The following list describes examples of such primaries: </p>
-
-<p>Primaries that are created with 10-bits-per-channel (10:10:10:2) display and render target formats (for example, D3DFMT_A2R10G10B10)</p>
-
-<p>Multiple-sampled primaries where the multiple-sampling is performed while scanning-out </p>
-
-<p>Persistent primaries that are used by full-screen Microsoft DirectX version 9.L applications </p>
-
-<p>The Direct3D runtime calls the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a> function to create the primary to be scanned out. However, the driver should program the hardware to scan out only when its <i>SetDisplayMode</i> function is called. Therefore, the runtime sets the <b>hResource</b> and <b>SubResourceIndex</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543304">D3DDDIARG_SETDISPLAYMODE</a> structure that is pointed to by the <i>pData</i> parameter to the primary that was created through the call to the driver's <i>CreateResource</i> function. The driver should then translate the primary that is represented by <b>hResource</b> and <b>SubResourceIndex</b> to a primary allocation handle. After the driver makes this translation, the driver should pass the resulting handle in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setdisplaymodecb.md">pfnSetDisplayModeCb</a> function, which then initiates a call to the display miniport driver's <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a> function. </p>
-
-<p>The user-mode display driver can set the <b>hPrimaryAllocation</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544255">D3DDDICB_SETDISPLAYMODE</a> structure in the call to <b>pfnSetDisplayModeCb</b> to scan out any allocation. However, the allocation must be marked as a primary (that is, the user-mode display driver must have set the <b>Primary</b> bit-field flag in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544364">D3DDDI_ALLOCATIONINFO</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-allocatecb.md">pfnAllocateCb</a> function to create the allocation).</p>
+<p>The user-mode display driver can set the <b>hPrimaryAllocation</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-setdisplaymode.md">D3DDDICB_SETDISPLAYMODE</a> structure in the call to <b>pfnSetDisplayModeCb</b> to scan out any allocation. However, the allocation must be marked as a primary (that is, the user-mode display driver must have set the <b>Primary</b> bit-field flag in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationinfo.md">D3DDDI_ALLOCATIONINFO</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-allocatecb.md">pfnAllocateCb</a> function to create the allocation).</p>
 
 ## -requirements
 <table>
@@ -134,10 +122,10 @@ __checkReturn HRESULT APIENTRY SetDisplayMode(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543304">D3DDDIARG_SETDISPLAYMODE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setdisplaymode.md">D3DDDIARG_SETDISPLAYMODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setdisplaymodecb.md">pfnSetDisplayModeCb</a>

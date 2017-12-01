@@ -89,13 +89,13 @@ void UMDEtwLogUnmapAllocation(
 ### -param <i>Usage</i> 
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/jj542442">UMDETW_ALLOCATION_USAGE</a> structure that indicates the reason for this mapping.</p>
+<p>A <a href="..\umdprovider\ns-umdprovider--umdetw-allocation-usage.md">UMDETW_ALLOCATION_USAGE</a> structure that indicates the reason for this mapping.</p>
 </dd>
 
 ### -param <i>Semantic</i> 
 
 <dd>
-<p>If the allocation is used internally by the user-mode driver, this is a <a href="https://msdn.microsoft.com/library/windows/hardware/jj542441">UMDETW_ALLOCATION_SEMANTIC</a> structure that indicates what the allocation is used for.</p>
+<p>If the allocation is used internally by the user-mode driver, this is a <a href="..\umdprovider\ne-umdprovider--umdetw-allocation-semantic.md">UMDETW_ALLOCATION_SEMANTIC</a> structure that indicates what the allocation is used for.</p>
 </dd>
 </dl>
 
@@ -107,15 +107,7 @@ void UMDEtwLogUnmapAllocation(
 
 <p>The user-mode display driver must completely account for the video memory it allocates, so it must call this function to log an event every time the allocation changes.</p>
 
-<p>The driver should pass the same parameters values to <b>UMDEtwLogUnmapAllocation</b> as it did to <a href="https://msdn.microsoft.com/library/windows/hardware/jj542437">UMDEtwLogMapAllocation</a>.</p>
-
-<p><b>UMDEtwLogUnmapAllocation</b> is defined inline in Umdprovider.h as:</p>
-
-<p>When called, this function logs an event that describes which API resource the allocation is, or was, being used for. If no API resource was associated with the allocation, the function logs an event that describes the purpose that the driver indicated for this allocation.</p>
-
-<p>The user-mode display driver must completely account for the video memory it allocates, so it must call this function to log an event every time the allocation changes.</p>
-
-<p>The driver should pass the same parameters values to <b>UMDEtwLogUnmapAllocation</b> as it did to <a href="https://msdn.microsoft.com/library/windows/hardware/jj542437">UMDEtwLogMapAllocation</a>.</p>
+<p>The driver should pass the same parameters values to <b>UMDEtwLogUnmapAllocation</b> as it did to <a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>.</p>
 
 <p><b>UMDEtwLogUnmapAllocation</b> is defined inline in Umdprovider.h as:</p>
 
@@ -168,13 +160,13 @@ void UMDEtwLogUnmapAllocation(
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createresource.md">CreateResource(D3D10)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj542441">UMDETW_ALLOCATION_SEMANTIC</a>
+<a href="..\umdprovider\ne-umdprovider--umdetw-allocation-semantic.md">UMDETW_ALLOCATION_SEMANTIC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj542442">UMDETW_ALLOCATION_USAGE</a>
+<a href="..\umdprovider\ns-umdprovider--umdetw-allocation-usage.md">UMDETW_ALLOCATION_USAGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj542437">UMDEtwLogMapAllocation</a>
+<a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>
 </dt>
 </dl>
 <p> </p>

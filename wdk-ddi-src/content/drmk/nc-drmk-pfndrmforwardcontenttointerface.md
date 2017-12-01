@@ -7,7 +7,7 @@ old-location: audio\pfndrmforwardcontenttointerface.htm
 old-project: audio
 ms.assetid: DFD077B7-307B-439B-828D-DC225FC5AAA0
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TXRX_TARGET_CONFIGURATION, WDI_TXRX_TARGET_CONFIGURATION, *PWDI_TXRX_TARGET_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

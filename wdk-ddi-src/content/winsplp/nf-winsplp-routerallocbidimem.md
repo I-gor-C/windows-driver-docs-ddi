@@ -66,9 +66,7 @@ PVOID RouterAllocBidiMem(
 <p><code>RouterAllocBidiMem</code> returns a pointer to the block of memory if successful. If the function fails, the caller can obtain the error code by calling <b>GetLastError</b> (described in the Microsoft Windows SDK documentation).</p>
 
 ## -remarks
-<p>When the memory allocated by this function is no longer needed, it can be returned by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562012">RouterFreeBidiMem</a>.</p>
-
-<p>When the memory allocated by this function is no longer needed, it can be returned by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562012">RouterFreeBidiMem</a>.</p>
+<p>When the memory allocated by this function is no longer needed, it can be returned by a call to <a href="..\winsplp\nf-winsplp-routerfreebidimem.md">RouterFreeBidiMem</a>.</p>
 
 ## -requirements
 <table>
@@ -125,10 +123,10 @@ PVOID RouterAllocBidiMem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562012">RouterFreeBidiMem</a>
+<a href="..\winsplp\nf-winsplp-routerfreebidimem.md">RouterFreeBidiMem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562071">SendRecvBidiDataFromPort</a>
+<a href="print.sendrecvbididatafromport">SendRecvBidiDataFromPort</a>
 </dt>
 </dl>
 <p> </p>

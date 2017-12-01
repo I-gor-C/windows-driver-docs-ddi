@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>A storage class driver returns an array of <b>DEVICE_MEDIA_INFO</b> structures, embedded in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554987">GET_MEDIA_TYPES</a> structure, in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560563">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> device-control request.</p>
+<p>A storage class driver returns an array of <b>DEVICE_MEDIA_INFO</b> structures, embedded in a <a href="..\ntddstor\ns-ntddstor--get-media-types.md">GET_MEDIA_TYPES</a> structure, in response to an <a href="..\ntddstor\ni-ntddstor-ioctl-storage-get-media-types-ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> device-control request.</p>
 
 
 ## -syntax
@@ -105,7 +105,7 @@ typedef struct _DEVICE_MEDIA_INFO {
 ### -field <b>MediaType</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562216">MEDIA_TYPE</a> of <b>FixedMedia</b>. </p>
+<p>Specifies a <a href="storage.media_type">MEDIA_TYPE</a> of <b>FixedMedia</b>. </p>
 </dd>
 
 ### -field <b>TracksPerCylinder</b>
@@ -175,7 +175,7 @@ typedef struct _DEVICE_MEDIA_INFO {
 ### -field <b>MediaType</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562216">MEDIA_TYPE</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff566992">STORAGE_MEDIA_TYPE</a> value that indicates the type of removable disk. </p>
+<p>Specifies a <a href="storage.media_type">MEDIA_TYPE</a> or <a href="..\ntddstor\ne-ntddstor--storage-media-type.md">STORAGE_MEDIA_TYPE</a> value that indicates the type of removable disk. </p>
 </dd>
 
 ### -field <b>TracksPerCylinder</b>
@@ -219,7 +219,7 @@ typedef struct _DEVICE_MEDIA_INFO {
 ### -field <b>MediaType</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566992">STORAGE_MEDIA_TYPE</a> value that indicates the type of tape described in this structure. </p>
+<p>Specifies a <a href="..\ntddstor\ne-ntddstor--storage-media-type.md">STORAGE_MEDIA_TYPE</a> value that indicates the type of tape described in this structure. </p>
 </dd>
 
 ### -field <b>MediaCharacteristics</b>
@@ -237,7 +237,7 @@ typedef struct _DEVICE_MEDIA_INFO {
 ### -field <b>BusType</b>
 
 <dd>
-<p>Specifies a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566356">STORAGE_BUS_TYPE</a> that indicates the bus type.</p>
+<p>Specifies a value of type <a href="storage.storage_bus_type">STORAGE_BUS_TYPE</a> that indicates the bus type.</p>
 </dd>
 
 ### -field <b>BusSpecificData</b>
@@ -275,7 +275,7 @@ typedef struct _DEVICE_MEDIA_INFO {
 ## -remarks
 <p>This structure is used by a storage driver to indicate the types of media supported by a device and which type is currently mounted, if any. A driver must provide this information if it might control drives in a media library or changer or if its device might be accessed by the Removable Storage Manager (RSM). </p>
 
-<p>The driver fills in an array of <b>DEVICE_MEDIA_INFO</b> structures, one for each medium type supported by the device, embedded in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554987">GET_MEDIA_TYPES</a> structure.</p>
+<p>The driver fills in an array of <b>DEVICE_MEDIA_INFO</b> structures, one for each medium type supported by the device, embedded in a <a href="..\ntddstor\ns-ntddstor--get-media-types.md">GET_MEDIA_TYPES</a> structure.</p>
 
 ## -requirements
 <table>
@@ -294,10 +294,10 @@ typedef struct _DEVICE_MEDIA_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567939">TapeMiniGetMediaTypes</a>
+<a href="storage.tapeminigetmediatypes">TapeMiniGetMediaTypes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566992">STORAGE_MEDIA_TYPE</a>
+<a href="..\ntddstor\ne-ntddstor--storage-media-type.md">STORAGE_MEDIA_TYPE</a>
 </dt>
 </dl>
 <p> </p>

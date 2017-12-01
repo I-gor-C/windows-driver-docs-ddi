@@ -85,7 +85,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS {
 ### -field <b>Caps</b>
 
 <dd>
-<p>Returns a combination of <a href="https://msdn.microsoft.com/library/windows/hardware/dn894620">D3DWDDM2_0DDI_VIDEO_DECODER_CAPS</a> enumeration values combined together using a bitwise <i>OR</i> operation.</p>
+<p>Returns a combination of <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm2-0ddi-video-decoder-caps.md">D3DWDDM2_0DDI_VIDEO_DECODER_CAPS</a> enumeration values combined together using a bitwise <i>OR</i> operation.</p>
 </dd>
 </dl>
 

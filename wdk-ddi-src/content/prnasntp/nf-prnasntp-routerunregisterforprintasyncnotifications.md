@@ -58,7 +58,7 @@ HRESULT RouterUnregisterForPrintAsyncNotifications(
 ### -param <i>hNotify</i> [in]
 
 <dd>
-<p>The registration handle returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562024">RouterRegisterForPrintAsyncNotifications</a> function.</p>
+<p>The registration handle returned by the <a href="..\prnasntp\nf-prnasntp-routerregisterforprintasyncnotifications.md">RouterRegisterForPrintAsyncNotifications</a> function.</p>
 </dd>
 </dl>
 
@@ -115,7 +115,7 @@ HRESULT RouterUnregisterForPrintAsyncNotifications(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562024">RouterRegisterForPrintAsyncNotifications</a>
+<a href="..\prnasntp\nf-prnasntp-routerregisterforprintasyncnotifications.md">RouterRegisterForPrintAsyncNotifications</a>
 </dt>
 </dl>
 <p> </p>

@@ -86,21 +86,9 @@ NTSTATUS SeImpersonateClientEx(
 
 <p>In cases where a higher privilege state is required, the task should be dispatched to a work queue where the task can be safely handled by system worker thread. This way no impersonation is necessary.</p>
 
-<p>To end the impersonation of the user, call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556717">SeStopImpersonatingClient</a> routine.</p>
+<p>To end the impersonation of the user, call the <a href="ifsk.sestopimpersonatingclient">SeStopImpersonatingClient</a> routine.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff551907">PsImpersonateClient</a> routine can be used to cause a server thread to impersonate a client.</p>
-
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
-
-<p><b>SeImpersonateClientEx</b> is used to cause a thread to impersonate a user. The client security context in <i>ClientContext</i> is assumed to be up to date.</p>
-
-<p>It is extremely unsafe to raise the privilege state of an untrusted user thread (take a user's thread and impersonate LocalSystem, for example). If an untrusted user thread had its privilege raised, the user could grab the thread token after it has been elevated and subvert the security of the entire system. </p>
-
-<p>In cases where a higher privilege state is required, the task should be dispatched to a work queue where the task can be safely handled by system worker thread. This way no impersonation is necessary.</p>
-
-<p>To end the impersonation of the user, call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556717">SeStopImpersonatingClient</a> routine.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff551907">PsImpersonateClient</a> routine can be used to cause a server thread to impersonate a client.</p>
+<p>The <a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a> routine can be used to cause a server thread to impersonate a client.</p>
 
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
 
@@ -167,16 +155,16 @@ NTSTATUS SeImpersonateClientEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551907">PsImpersonateClient</a>
+<a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556595">SeCreateClientSecurity</a>
+<a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556598">SeCreateClientSecurityFromSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-secreateclientsecurityfromsubjectcontext.md">SeCreateClientSecurityFromSubjectContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556717">SeStopImpersonatingClient</a>
+<a href="ifsk.sestopimpersonatingclient">SeStopImpersonatingClient</a>
 </dt>
 </dl>
 <p> </p>

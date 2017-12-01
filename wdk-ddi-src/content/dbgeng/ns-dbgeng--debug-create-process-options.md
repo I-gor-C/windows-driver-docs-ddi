@@ -7,7 +7,7 @@ old-location: debugger\debug_create_process_options.htm
 old-project: debugger
 ms.assetid: b4b279c2-d44a-442d-9f1d-0ac0d2304eb8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_CREATE_PROCESS_OPTIONS, DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: nfpdrivers\_secure_element_endpoint_info.htm
 old-project: nfpdrivers
 ms.assetid: C1D812BD-55F0-44F7-BCC8-81CC758EDEF3
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: SECURE_ELEMENT_ENDPOINT_INFO, SECURE_ELEMENT_ENDPOINT_INFO, *PSECURE_ELEMENT_ENDPOINT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>SECURE_ELEMENT_ENDPOINT_INFO is a member of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905622">SECURE_ELEMENT_ENDPOINT_LIST</a>.</p>
+<p>SECURE_ELEMENT_ENDPOINT_INFO is a member of <a href="..\nfcsedev\ns-nfcsedev--secure-element-endpoint-list.md">SECURE_ELEMENT_ENDPOINT_LIST</a>.</p>
 
 
 ## -syntax

@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_target_open_params.htm
 old-project: wdf
 ms.assetid: 9539868c-127b-4781-9a73-b56fbfda3233
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_IO_TARGET_OPEN_PARAMS, WDF_IO_TARGET_OPEN_PARAMS, *PWDF_IO_TARGET_OPEN_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]</p>
-<p>The <b>WDF_IO_TARGET_OPEN_PARAMS</b> structure contains parameters that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548634">WdfIoTargetOpen</a> method uses.</p>
+<p>The <b>WDF_IO_TARGET_OPEN_PARAMS</b> structure contains parameters that the <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a> method uses.</p>
 
 
 ## -syntax
@@ -82,7 +82,7 @@ typedef struct _WDF_IO_TARGET_OPEN_PARAMS {
 ### -field <b>Type</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552386">WDF_IO_TARGET_OPEN_TYPE</a>-typed value, which indicates the type of open operation that <a href="https://msdn.microsoft.com/library/windows/hardware/ff548634">WdfIoTargetOpen</a> will perform.</p>
+<p>A <a href="..\wdfiotarget\ne-wdfiotarget--wdf-io-target-open-type.md">WDF_IO_TARGET_OPEN_TYPE</a>-typed value, which indicates the type of open operation that <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a> will perform.</p>
 </dd>
 
 ### -field <b>EvtIoTargetQueryRemove</b>
@@ -108,21 +108,21 @@ typedef struct _WDF_IO_TARGET_OPEN_PARAMS {
 <dd>
 <p>This member is not applicable to UMDF drivers.</p>
 <p><b>KMDF </b>
-            If the value of <b>Type</b> is <b>WdfIoTargetOpenUseExistingDevice</b>, this is a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the I/O target's device.  If the value of <b>Type</b> is not <b>WdfIoTargetOpenUseExistingDevice</b>, this member is ignored.</p>
+            If the value of <b>Type</b> is <b>WdfIoTargetOpenUseExistingDevice</b>, this is a pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the I/O target's device.  If the value of <b>Type</b> is not <b>WdfIoTargetOpenUseExistingDevice</b>, this member is ignored.</p>
 </dd>
 
 ### -field <b>TargetFileObject</b>
 
 <dd>
 <p>This member is not applicable to UMDF drivers.</p>
-<p><b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenUseExistingDevice</b>, this is a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a> structure. This structure is included in all of the I/O requests that the driver sends to the I/O target (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549963">WdfRequestGetFileObject</a>). This member is optional and can be <b>NULL</b>. 
+<p><b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenUseExistingDevice</b>, this is a pointer to a <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a> structure. This structure is included in all of the I/O requests that the driver sends to the I/O target (see <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a>). This member is optional and can be <b>NULL</b>. 
             If the value of <b>Type</b> is not <b>WdfIoTargetOpenUseExistingDevice</b>, this member is ignored.</p>
 </dd>
 
 ### -field <b>TargetDeviceName</b>
 
 <dd>
-<p>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains the name of a device, file, or device interface. For information about the format of this name, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557762">Object Names</a>.</p>
+<p>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the name of a device, file, or device interface. For information about the format of this name, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557762">Object Names</a>.</p>
 <p>If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.</p>
 </dd>
 
@@ -181,7 +181,7 @@ typedef struct _WDF_IO_TARGET_OPEN_PARAMS {
 ### -field <b>FileAttributes</b>
 
 <dd>
-<p><b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a bitwise OR of the FILE_ATTRIBUTE_<i>Xxxx</i> flags that are defined in <i>Wdm.h</i>. Most drivers specify FILE_ATTRIBUTE_NORMAL. For more information about these flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a>.</p>
+<p><b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a bitwise OR of the FILE_ATTRIBUTE_<i>Xxxx</i> flags that are defined in <i>Wdm.h</i>. Most drivers specify FILE_ATTRIBUTE_NORMAL. For more information about these flags, see <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.</p>
 <p><b>UMDF </b>For more information about 
     this member, see the <i>dwFlagsAndAttributes</i> parameter of the <a href="fs.createfile">CreateFile</a> function in the Windows SDK.</p>
 <p>If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.</p>
@@ -190,7 +190,7 @@ typedef struct _WDF_IO_TARGET_OPEN_PARAMS {
 ### -field <b>CreateDisposition</b>
 
 <dd>
-<p><b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this value indicates an action for the system to take when opening a file. For a list of possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a>.</p>
+<p><b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this value indicates an action for the system to take when opening a file. For a list of possible values, see <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.</p>
 <p><b>UMDF </b>For more information about 
     this member, see the <i>dwCreationDisposition</i> parameter of the <a href="fs.createfile">CreateFile</a> function in the Windows SDK.</p>
 <p>If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.</p>
@@ -200,7 +200,7 @@ typedef struct _WDF_IO_TARGET_OPEN_PARAMS {
 
 <dd>
 <p>This member is not applicable to UMDF drivers.</p>
-<p><b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a bitwise OR of file option flags. For a list of possible flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a>.
+<p><b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this is a bitwise OR of file option flags. For a list of possible flags, see <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.
              If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.</p>
 </dd>
 
@@ -230,7 +230,7 @@ typedef struct _WDF_IO_TARGET_OPEN_PARAMS {
 
 <dd>
 <p>This member is not applicable to UMDF drivers.</p>
-<p><b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this member receives status information when the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548634">WdfIoTargetOpen</a> returns. The information is one of the following values: FILE_CREATED, FILE_OPENED, FILE_OVERWRITTEN, FILE_SUPERSEDED, FILE_EXISTS, or FILE_DOES_NOT_EXIST. If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.</p>
+<p><b>KMDF </b>If the value of <b>Type</b> is <b>WdfIoTargetOpenByName</b>, this member receives status information when the call to <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a> returns. The information is one of the following values: FILE_CREATED, FILE_OPENED, FILE_OVERWRITTEN, FILE_SUPERSEDED, FILE_EXISTS, or FILE_DOES_NOT_EXIST. If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is ignored.</p>
 </dd>
 
 ### -field <b>FileName</b>
@@ -248,19 +248,19 @@ typedef struct _WDF_IO_TARGET_OPEN_PARAMS {
 <p>Drivers should initialize the <b>WDF_IO_TARGET_OPEN_PARAMS</b> structure by calling one of the following functions:</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552380">WDF_IO_TARGET_OPEN_PARAMS_INIT_EXISTING_DEVICE</a>, if your driver can identify a target device by supplying a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure. </p>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdf-io-target-open-params-init-existing-device.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_EXISTING_DEVICE</a>, if your driver can identify a target device by supplying a pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure. </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552378">WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME</a>, if the I/O target is a device, file, or device interface, and if your driver can supply the name of the device, file, or device interface. If you specify the name of a file that already exists, the system replaces the existing file. If the file does not exist, the system creates it.</p>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdf-io-target-open-params-init-create-by-name.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME</a>, if the I/O target is a device, file, or device interface, and if your driver can supply the name of the device, file, or device interface. If you specify the name of a file that already exists, the system replaces the existing file. If the file does not exist, the system creates it.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552381">WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME</a>, if the I/O target is a device, file, or device interface, and if your driver can supply the name of the device, file, or device interface. If you specify the name of a file that already exists, the system opens the existing file. If the file does not exist, the open operation fails.</p>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdf-io-target-open-params-init-open-by-name.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME</a>, if the I/O target is a device, file, or device interface, and if your driver can supply the name of the device, file, or device interface. If you specify the name of a file that already exists, the system opens the existing file. If the file does not exist, the open operation fails.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552382">WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN</a>, if your driver's <a href="..\wdfiotarget\nc-wdfiotarget-evt-wdf-io-target-remove-canceled.md">EvtIoTargetRemoveCanceled</a> callback function is reopening a remote I/O target because the device was not removed.</p>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdf-io-target-open-params-init-reopen.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN</a>, if your driver's <a href="..\wdfiotarget\nc-wdfiotarget-evt-wdf-io-target-remove-canceled.md">EvtIoTargetRemoveCanceled</a> callback function is reopening a remote I/O target because the device was not removed.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265641">WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE</a>, if your UMDF driver needs to send driver-created requests to lower targets that require an associated file object.</p>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdf-io-target-open-params-init-open-by-file.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE</a>, if your UMDF driver needs to send driver-created requests to lower targets that require an associated file object.</p>
 
 ## -requirements
 <table>
@@ -298,7 +298,7 @@ typedef struct _WDF_IO_TARGET_OPEN_PARAMS {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\wdfiotarget\nc-wdfiotarget-evt-wdf-io-target-query-remove.md">EvtIoTargetQueryRemove</a>
@@ -307,24 +307,24 @@ typedef struct _WDF_IO_TARGET_OPEN_PARAMS {
 <a href="..\wdfiotarget\nc-wdfiotarget-evt-wdf-io-target-remove-canceled.md">EvtIoTargetRemoveCanceled</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a>
+<a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552386">WDF_IO_TARGET_OPEN_TYPE</a>
+<a href="..\wdfiotarget\ne-wdfiotarget--wdf-io-target-open-type.md">WDF_IO_TARGET_OPEN_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548634">WdfIoTargetOpen</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549963">WdfRequestGetFileObject</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_OPEN_PARAMS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_OPEN_PARAMS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>DxgkCbQueryVidPnInterface</b> function returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562108">DXGK_VIDPN_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter a VidPN object.</p>
+<p>The <b>DxgkCbQueryVidPnInterface</b> function returns a pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter a VidPN object.</p>
 
 
 ## -prototype
@@ -68,13 +68,13 @@ NTSTATUS APIENTRY DxgkCbQueryVidPnInterface(
 ### -param <i>VidPnInterfaceVersion</i> [in]
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562860">DXGK_VIDPN_INTERFACE_VERSION</a> enumerator that specifies the version of the VidPN interface being requested. Callers must set this parameter to <b>DXGK_VIDPN_INTERFACE_VERSION_V1</b>.</p>
+<p>[in] A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-vidpn-interface-version.md">DXGK_VIDPN_INTERFACE_VERSION</a> enumerator that specifies the version of the VidPN interface being requested. Callers must set this parameter to <b>DXGK_VIDPN_INTERFACE_VERSION_V1</b>.</p>
 </dd>
 
 ### -param <i>ppVidPnInterface</i> [out]
 
 <dd>
-<p>[out] A pointer to a variable that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562108">DXGK_VIDPN_INTERFACE</a> structure.</p>
+<p>[out] A pointer to a variable that receives a pointer to the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> structure.</p>
 </dd>
 </dl>
 
@@ -139,19 +139,19 @@ NTSTATUS APIENTRY DxgkCbQueryVidPnInterface(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPN Interface</a>
+<a href="display.vidpn_interface">VidPN Interface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570560">VidPN Topology Interface</a>
+<a href="display.vidpn_topology_interface">VidPN Topology Interface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPN Source Mode Set Interface</a>
+<a href="display.vidpn_source_mode_set_interface">VidPN Source Mode Set Interface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570559">VidPN Target Mode Set Interface</a>
+<a href="display.vidpn_target_mode_set_interface">VidPN Target Mode Set Interface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568435">Monitor Source Mode Set Interface</a>
+<a href="display.monitor_source_mode_set_interface">Monitor Source Mode Set Interface</a>
 </dt>
 </dl>
 <p> </p>

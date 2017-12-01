@@ -7,7 +7,7 @@ old-location: kernel\reg_query_key_name.htm
 old-project: kernel
 ms.assetid: 396DA33D-46E0-456C-9FCF-85A7D9915F48
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: REG_QUERY_KEY_NAME, REG_QUERY_KEY_NAME, *PREG_QUERY_KEY_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,13 +89,13 @@ typedef struct _REG_QUERY_KEY_NAME {
 ### -field <b>CallContext</b>
 
 <dd>
-<p>Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply.  </p>
+<p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply.  </p>
 </dd>
 
 ### -field <b>ObjectContext</b>
 
 <dd>
-<p>A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541924">CmSetCallbackObjectContext</a>. It contains the key context for the key that is being queried.</p>
+<p>A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. It contains the key context for the key that is being queried.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -106,7 +106,7 @@ typedef struct _REG_QUERY_KEY_NAME {
 </dl>
 
 ## -remarks
-<p>The system passes this structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine every time a thread attempts to query the full name of the registry key. </p>
+<p>The system passes this structure to the <a href="kernel.registrycallback">RegistryCallback</a> routine every time a thread attempts to query the full name of the registry key. </p>
 
 <p>For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.</p>
 
@@ -135,7 +135,7 @@ typedef struct _REG_QUERY_KEY_NAME {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
+<a href="kernel.registrycallback">RegistryCallback</a>
 </dt>
 <dt>
 <a href="kernel.reg_notify_class">REG_NOTIFY_CLASS</a>
@@ -143,4 +143,4 @@ typedef struct _REG_QUERY_KEY_NAME {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20REG_QUERY_KEY_NAME structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20REG_QUERY_KEY_NAME structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

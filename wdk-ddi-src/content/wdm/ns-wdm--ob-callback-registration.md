@@ -7,7 +7,7 @@ old-location: kernel\ob_callback_registration.htm
 old-project: kernel
 ms.assetid: e288b050-0875-4c9b-aa72-47845861755a
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: OB_CALLBACK_REGISTRATION, OB_CALLBACK_REGISTRATION, *POB_CALLBACK_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>OB_CALLBACK_REGISTRATION</b> structure specifies the parameters when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558692">ObRegisterCallbacks</a> routine registers <a href="https://msdn.microsoft.com/library/windows/hardware/ff557745">ObjectPreCallback</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff557741">ObjectPostCallback</a> callback routines.</p>
+<p>The <b>OB_CALLBACK_REGISTRATION</b> structure specifies the parameters when the <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a> routine registers <a href="kernel.objectprecallback">ObjectPreCallback</a> and <a href="kernel.objectpostcallback">ObjectPostCallback</a> callback routines.</p>
 
 
 ## -syntax
@@ -86,12 +86,12 @@ typedef struct _OB_CALLBACK_REGISTRATION {
 ### -field <b>OperationRegistration</b>
 
 <dd>
-<p>A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff558718">OB_OPERATION_REGISTRATION</a> structures. Each structure specifies <a href="https://msdn.microsoft.com/library/windows/hardware/ff557745">ObjectPreCallback</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff557741">ObjectPostCallback</a> callback routines and the types of operations that the routines are called for. </p>
+<p>A pointer to an array of <a href="..\wdm\ns-wdm--ob-operation-registration.md">OB_OPERATION_REGISTRATION</a> structures. Each structure specifies <a href="kernel.objectprecallback">ObjectPreCallback</a> and <a href="kernel.objectpostcallback">ObjectPostCallback</a> callback routines and the types of operations that the routines are called for. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558692">ObRegisterCallbacks</a> routine. The <i>CallBackRegistration</i> parameter to this routine is a pointer to a buffer that contains an <b>OB_CALLBACK_REGISTRATION</b> structure that is followed by an array of one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff558718">OB_OPERATION_REGISTRATION</a> structures.</p>
+<p>This structure is used by the <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a> routine. The <i>CallBackRegistration</i> parameter to this routine is a pointer to a buffer that contains an <b>OB_CALLBACK_REGISTRATION</b> structure that is followed by an array of one or more <a href="..\wdm\ns-wdm--ob-operation-registration.md">OB_OPERATION_REGISTRATION</a> structures.</p>
 
 ## -requirements
 <table>
@@ -118,18 +118,18 @@ typedef struct _OB_CALLBACK_REGISTRATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558718">OB_OPERATION_REGISTRATION</a>
+<a href="..\wdm\ns-wdm--ob-operation-registration.md">OB_OPERATION_REGISTRATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557741">ObjectPostCallback</a>
+<a href="kernel.objectpostcallback">ObjectPostCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557745">ObjectPreCallback</a>
+<a href="kernel.objectprecallback">ObjectPreCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558692">ObRegisterCallbacks</a>
+<a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20OB_CALLBACK_REGISTRATION structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20OB_CALLBACK_REGISTRATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: debugger\debug_handle_data_basic.htm
 old-project: debugger
 ms.assetid: c1ad22b9-9733-417a-96ae-bc5920462f4f
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_HANDLE_DATA_BASIC, DEBUG_HANDLE_DATA_BASIC, *PDEBUG_HANDLE_DATA_BASIC
 ms.prod: windows-hardware
 ms.technology: windows-devices

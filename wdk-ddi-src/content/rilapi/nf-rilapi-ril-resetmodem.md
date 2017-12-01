@@ -7,7 +7,7 @@ old-location: netvista\ril_resetmodem.htm
 old-project: netvista
 ms.assetid: 7cb249d3-b39f-4b6b-8023-bb0c0ef8f9e1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_ResetModem
 ms.prod: windows-hardware
 ms.technology: windows-devices

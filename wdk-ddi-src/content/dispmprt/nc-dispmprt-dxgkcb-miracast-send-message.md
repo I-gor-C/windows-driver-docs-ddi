@@ -66,7 +66,7 @@ NTSTATUS* DxgkCbMiracastSendMessage(
 ### -param <i>MiracastHandle</i> [in]
 
 <dd>
-<p>A driver-supplied handle to the Miracast display device. This handle was originally passed in the <b>MiracastHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn344648">DXGK_MIRACAST_DISPLAY_CALLBACKS</a> structure in a call to the <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-create-context.md">DxgkDdiMiracastCreateContext</a> function.</p>
+<p>A driver-supplied handle to the Miracast display device. This handle was originally passed in the <b>MiracastHandle</b> member of the <a href="..\dispmprt\ns-dispmprt--dxgk-miracast-display-callbacks.md">DXGK_MIRACAST_DISPLAY_CALLBACKS</a> structure in a call to the <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-create-context.md">DxgkDdiMiracastCreateContext</a> function.</p>
 </dd>
 
 ### -param <i>InputBufferSize</i> [in]
@@ -116,12 +116,6 @@ NTSTATUS* DxgkCbMiracastSendMessage(
 <p>If the display miniport driver needs to know the status of message handling in user mode, it should supply the <a href="..\dispmprt\nc-dispmprt-dxgkcb-miracast-send-message-callback.md">DxgkCbMiracastSendMessageCallback</a> function in the <i>pCallback</i> parameter and check the return status in that function's <i>pIoStatusBlock</i> parameter.</p>
 
 ## -remarks
-<p>If the display miniport driver supplies the <i>pInputBuffer</i> and <i>pOutputBuffer</i> buffers, it is the driver’s responsibility to hold these two buffers until the <a href="..\dispmprt\nc-dispmprt-dxgkcb-miracast-send-message-callback.md">DxgkCbMiracastSendMessageCallback</a> function is called. Otherwise, a random memory corruption issue can be created.</p>
-
-<p>If the driver supplies the <a href="..\dispmprt\nc-dispmprt-dxgkcb-miracast-send-message-callback.md">DxgkCbMiracastSendMessageCallback</a> in the <i>pCallback</i> parameter, it's possible that <b>DxgkCbMiracastSendMessageCallback</b> will return before <b>DxgkCbMiracastSendMessage</b> returns.</p>
-
-<p>Here's example code that shows how to use this function:</p>
-
 <p>If the display miniport driver supplies the <i>pInputBuffer</i> and <i>pOutputBuffer</i> buffers, it is the driver’s responsibility to hold these two buffers until the <a href="..\dispmprt\nc-dispmprt-dxgkcb-miracast-send-message-callback.md">DxgkCbMiracastSendMessageCallback</a> function is called. Otherwise, a random memory corruption issue can be created.</p>
 
 <p>If the driver supplies the <a href="..\dispmprt\nc-dispmprt-dxgkcb-miracast-send-message-callback.md">DxgkCbMiracastSendMessageCallback</a> in the <i>pCallback</i> parameter, it's possible that <b>DxgkCbMiracastSendMessageCallback</b> will return before <b>DxgkCbMiracastSendMessage</b> returns.</p>
@@ -179,7 +173,7 @@ NTSTATUS* DxgkCbMiracastSendMessage(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn344648">DXGK_MIRACAST_DISPLAY_CALLBACKS</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-miracast-display-callbacks.md">DXGK_MIRACAST_DISPLAY_CALLBACKS</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb-miracast-send-message-callback.md">DxgkCbMiracastSendMessageCallback</a>

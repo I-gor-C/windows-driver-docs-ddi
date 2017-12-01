@@ -60,25 +60,25 @@ typedef struct _DXVADDI_PROCAMPVALUES {
 ### -field <b>Brightness</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562909">DXVADDI_FIXED32</a> structure that specifies the brightness of the output image, as it is written to the destination surface.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the brightness of the output image, as it is written to the destination surface.</p>
 </dd>
 
 ### -field <b>Contrast</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562909">DXVADDI_FIXED32</a> structure that specifies the contrast of the output image, as it is written to the destination surface.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the contrast of the output image, as it is written to the destination surface.</p>
 </dd>
 
 ### -field <b>Hue</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562909">DXVADDI_FIXED32</a> structure that specifies the hue of the output image, as it is written to the destination surface.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the hue of the output image, as it is written to the destination surface.</p>
 </dd>
 
 ### -field <b>Saturation</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562909">DXVADDI_FIXED32</a> structure that specifies the saturation of the output image, as it is written to the destination surface.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the saturation of the output image, as it is written to the destination surface.</p>
 </dd>
 </dl>
 
@@ -110,7 +110,7 @@ typedef struct _DXVADDI_PROCAMPVALUES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544102">D3DDDIARG_VIDEOPROCESSBLT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a>
 </dt>
 </dl>
 <p> </p>

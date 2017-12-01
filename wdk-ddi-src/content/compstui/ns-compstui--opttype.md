@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The OPTTYPE structure is used by CPSUI applications (including printer interface DLLs) for describing the type and other characteristics of a <a href="https://msdn.microsoft.com/572330d6-1a1b-46fd-bfb4-be2b0990bca4">property sheet option</a>, if the option is specified by an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559656">OPTITEM</a> structure.</p>
+<p>The OPTTYPE structure is used by CPSUI applications (including printer interface DLLs) for describing the type and other characteristics of a <a href="https://msdn.microsoft.com/572330d6-1a1b-46fd-bfb4-be2b0990bca4">property sheet option</a>, if the option is specified by an <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structure.</p>
 
 
 ## -syntax
@@ -84,7 +84,7 @@ typedef struct _OPTTYPE {
 ### -field <a id="OPTTF_NOSPACE_BEFORE_POSTFIX"></a><a id="opttf_nospace_before_postfix"></a>OPTTF_NOSPACE_BEFORE_POSTFIX
 
 <dd>
-<p>CPSUI should not add a space character between the string specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559656">OPTITEM</a> structure's <b>pName</b> string and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559660">OPTPARAM</a> structure's <b>pData</b> string, when displaying the option.</p>
+<p>CPSUI should not add a space character between the string specified by the <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structure's <b>pName</b> string and the <a href="..\compstui\ns-compstui--optparam.md">OPTPARAM</a> structure's <b>pData</b> string, when displaying the option.</p>
 <p>Valid only if the option type is or <a href="https://msdn.microsoft.com/library/windows/hardware/ff562847">TVOT_SCROLLBAR</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff562848">TVOT_TRACKBAR</a>.</p>
 </dd>
 </dl>
@@ -102,20 +102,20 @@ typedef struct _OPTTYPE {
 ### -field <b>Count</b>
 
 <dd>
-<p>Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559660">OPTPARAM</a> structures to which <b>pOptParam</b> points. This member's value is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
+<p>Specifies the number of <a href="..\compstui\ns-compstui--optparam.md">OPTPARAM</a> structures to which <b>pOptParam</b> points. This member's value is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
 </dd>
 
 ### -field <b>BegCtrlID</b>
 
 <dd>
-<p>If <b>pDlgPage</b> in <a href="https://msdn.microsoft.com/library/windows/hardware/ff546211">COMPROPSHEETUI</a> identifies a CPSUI-supplied page, or if <b>DlgTemplateID</b> in <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607">DLGPAGE</a> identifies a CPSUI-supplied template, <b>BegCtrlID</b> is not used.</p>
+<p>If <b>pDlgPage</b> in <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> identifies a CPSUI-supplied page, or if <b>DlgTemplateID</b> in <a href="..\compstui\ns-compstui--dlgpage.md">DLGPAGE</a> identifies a CPSUI-supplied template, <b>BegCtrlID</b> is not used.</p>
 <p>Otherwise, <b>BegCtrlID</b> must contain the first of a sequentially numbered set of Windows control identifiers. Control identifier usage is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.</p>
 </dd>
 
 ### -field <b>pOptParam</b>
 
 <dd>
-<p>Pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559660">OPTPARAM</a> structures describing the parameter values that a user can select for the option.</p>
+<p>Pointer to an array of <a href="..\compstui\ns-compstui--optparam.md">OPTPARAM</a> structures describing the parameter values that a user can select for the option.</p>
 </dd>
 
 ### -field <b>Style</b>

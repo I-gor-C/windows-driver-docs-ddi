@@ -7,7 +7,7 @@ old-location: wdf\wdf_memory_descriptor.htm
 old-project: wdf
 ms.assetid: 0683cb81-4ae7-4296-b46a-ad2e8b25a781
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR, *PWDF_MEMORY_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,7 +73,7 @@ typedef struct _WDF_MEMORY_DESCRIPTOR {
 ### -field <b>Type</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552399">WDF_MEMORY_DESCRIPTOR_TYPE</a>-typed value that identifies the type of buffer description that this <b>WDF_MEMORY_DESCRIPTOR</b> structure contains.</p>
+<p>A <a href="..\wdfmemory\ne-wdfmemory--wdf-memory-descriptor-type.md">WDF_MEMORY_DESCRIPTOR_TYPE</a>-typed value that identifies the type of buffer description that this <b>WDF_MEMORY_DESCRIPTOR</b> structure contains.</p>
 </dd>
 
 ### -field <b>u</b>
@@ -137,7 +137,7 @@ typedef struct _WDF_MEMORY_DESCRIPTOR {
 ### -field <b>Offsets</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561398">WDFMEMORY_OFFSET</a> structure that describes a subsection of the buffer that is represented by the memory object. </p>
+<p>A pointer to a <a href="..\wudfddi_types\ns-wudfddi-types--wdfmemory-offset.md">WDFMEMORY_OFFSET</a> structure that describes a subsection of the buffer that is represented by the memory object. </p>
 </dd>
 </dl>
 </dd>
@@ -148,7 +148,7 @@ typedef struct _WDF_MEMORY_DESCRIPTOR {
 ## -remarks
 <p>The <b>WDF_MEMORY_DESCRIPTOR</b> structure is used as input to several of the framework's <a href="wdf.wdf_i_o_target_object_reference">I/O target object methods</a> and <a href="wdf.wdf_usb_reference">USB device object methods</a>.</p>
 
-<p>To initialize a <b>WDF_MEMORY_DESCRIPTOR</b> structure, your driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff552393">WDF_MEMORY_DESCRIPTOR_INIT_BUFFER</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552396">WDF_MEMORY_DESCRIPTOR_INIT_MDL</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552395">WDF_MEMORY_DESCRIPTOR_INIT_HANDLE</a>.</p>
+<p>To initialize a <b>WDF_MEMORY_DESCRIPTOR</b> structure, your driver should call <a href="..\wdfmemory\nf-wdfmemory-wdf-memory-descriptor-init-buffer.md">WDF_MEMORY_DESCRIPTOR_INIT_BUFFER</a>, or <a href="..\wdfmemory\nf-wdfmemory-wdf-memory-descriptor-init-mdl.md">WDF_MEMORY_DESCRIPTOR_INIT_MDL</a>, or <a href="..\wdfmemory\nf-wdfmemory-wdf-memory-descriptor-init-handle.md">WDF_MEMORY_DESCRIPTOR_INIT_HANDLE</a>.</p>
 
 ## -requirements
 <table>
@@ -183,12 +183,12 @@ typedef struct _WDF_MEMORY_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552399">WDF_MEMORY_DESCRIPTOR_TYPE</a>
+<a href="..\wdfmemory\ne-wdfmemory--wdf-memory-descriptor-type.md">WDF_MEMORY_DESCRIPTOR_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561398">WDFMEMORY_OFFSET</a>
+<a href="..\wudfddi_types\ns-wudfddi-types--wdfmemory-offset.md">WDFMEMORY_OFFSET</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_MEMORY_DESCRIPTOR structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_MEMORY_DESCRIPTOR structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_interrupt_polarity_umdf.htm
 old-project: wdf
 ms.assetid: 30E61DCE-D88C-47B5-B5CD-3C43C6157FBA
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]</p>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh464028">WDF_INTERRUPT_POLARITY</a> enumeration type is used to specify an interrupt signal's polarity.</p>
+<p>The <a href="..\wudfinterrupt\ne-wudfinterrupt--wdf-interrupt-polarity.md">WDF_INTERRUPT_POLARITY</a> enumeration type is used to specify an interrupt signal's polarity.</p>
 
 
 ## -syntax
@@ -78,11 +78,7 @@ typedef enum _WDF_INTERRUPT_POLARITY {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh464028">WDF_INTERRUPT_POLARITY</a> enumeration type is used to specify a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh464020">WDF_INTERRUPT_INFO</a> structure.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh464028">WDF_INTERRUPT_POLARITY</a> enumeration type is used to specify a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh464020">WDF_INTERRUPT_INFO</a> structure.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh464028">WDF_INTERRUPT_POLARITY</a> enumeration type is used to specify a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh464020">WDF_INTERRUPT_INFO</a> structure.</p>
+<p>The <a href="..\wudfinterrupt\ne-wudfinterrupt--wdf-interrupt-polarity.md">WDF_INTERRUPT_POLARITY</a> enumeration type is used to specify a member of the <a href="..\wudfinterrupt\ns-wudfinterrupt--wdf-interrupt-info.md">WDF_INTERRUPT_INFO</a> structure.</p>
 
 ## -requirements
 <table>

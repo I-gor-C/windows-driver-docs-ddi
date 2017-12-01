@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GET_CONFIGURATION_HEADER structure is used to format the output data retrieved by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559334">IOCTL_CDROM_GET_CONFIGURATION</a> request. </p>
+<p>The GET_CONFIGURATION_HEADER structure is used to format the output data retrieved by the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-configuration.md">IOCTL_CDROM_GET_CONFIGURATION</a> request. </p>
 
 
 ## -syntax
@@ -72,13 +72,13 @@ typedef struct _GET_CONFIGURATION_HEADER {
 ### -field <b>CurrentProfile</b>
 
 <dd>
-<p>Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff553851">FEATURE_PROFILE_TYPE</a> that indicates the device's current profile. The bytes in this array are arranged in big-endian order. <b>CurrentProfile</b>[0] has the most significant byte, and  <b>CurrentProfile</b>[3] has the least significant byte.</p>
+<p>Contains an enumerator value of type <a href="..\ntddmmc\ne-ntddmmc--feature-profile-type.md">FEATURE_PROFILE_TYPE</a> that indicates the device's current profile. The bytes in this array are arranged in big-endian order. <b>CurrentProfile</b>[0] has the most significant byte, and  <b>CurrentProfile</b>[3] has the least significant byte.</p>
 </dd>
 
 ### -field <b>Data</b>
 
 <dd>
-<p>Contains the feature data, beginning with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>.</p>
+<p>Contains the feature data, beginning with the <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a>.</p>
 </dd>
 </dl>
 
@@ -102,16 +102,16 @@ typedef struct _GET_CONFIGURATION_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559334">IOCTL_CDROM_GET_CONFIGURATION</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-configuration.md">IOCTL_CDROM_GET_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
+<a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>
+<a href="..\ntddmmc\ne-ntddmmc--feature-number.md">FEATURE_NUMBER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553851">FEATURE_PROFILE_TYPE</a>
+<a href="..\ntddmmc\ne-ntddmmc--feature-profile-type.md">FEATURE_PROFILE_TYPE</a>
 </dt>
 </dl>
 <p> </p>

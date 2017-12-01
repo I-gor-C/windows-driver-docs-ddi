@@ -76,8 +76,6 @@ NTSTATUS NTSTATUS DXGKDDI_SETTARGETGAMMA(
 ## -remarks
 <p>This function is always called at PASSIVE level so the supporting code should be made pageable.</p>
 
-<p>This function is always called at PASSIVE level so the supporting code should be made pageable.</p>
-
 ## -requirements
 <table>
 <tr>

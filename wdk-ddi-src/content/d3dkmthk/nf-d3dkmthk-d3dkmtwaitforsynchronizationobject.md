@@ -57,7 +57,7 @@ NTSTATUS D3DKMTWaitForSynchronizationObject(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548430">D3DKMT_WAITFORSYNCHRONIZATIONOBJECT</a> structure that describes the synchronization objects and context stream that the wait is set up for.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-waitforsynchronizationobject.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECT</a> structure that describes the synchronization objects and context stream that the wait is set up for.</p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS D3DKMTWaitForSynchronizationObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548430">D3DKMT_WAITFORSYNCHRONIZATIONOBJECT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-waitforsynchronizationobject.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECT</a>
 </dt>
 </dl>
 <p> </p>

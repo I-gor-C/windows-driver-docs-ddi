@@ -7,7 +7,7 @@ old-location: debugger\getthreadidbyprocessor.htm
 old-project: debugger
 ms.assetid: c771a581-53ac-44a7-b307-b8a22ac97496
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects3, GetThreadIdByProcessor, IDebugSystemObjects3::GetThreadIdByProcessor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,10 +76,6 @@ HRESULT GetThreadIdByProcessor(
 <p> </p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
-<p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 <p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>

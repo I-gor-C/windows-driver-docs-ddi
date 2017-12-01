@@ -59,13 +59,13 @@ NTSTATUS FltRequestOperationStatusCallback(
 ### -param <i>Data</i> [in]
 
 <dd>
-<p>A pointer to the callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure for the I/O operation. This parameter is required and cannot be <b>NULL</b>. </p>
+<p>A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
 ### -param <i>CallbackRoutine</i> [in]
 
 <dd>
-<p>A pointer to a callback routine that the Filter Manager calls after <a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a> returns. This parameter is required and cannot be <b>NULL</b>. </p>
+<p>A pointer to a callback routine that the Filter Manager calls after <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a> returns. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 
 ### -param <i>RequesterContext</i> [in, optional]
@@ -82,40 +82,22 @@ NTSTATUS FltRequestOperationStatusCallback(
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl><p><b>FltRequestOperationStatusCallback</b> encountered a pool allocation failure. This is an error code. </p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl><p><b>FltRequestOperationStatusCallback</b> was called from a routine that was not a preoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) routine, or the I/O operation was an IRP_MJ_CLOSE request. This is an error code. </p>
+</dl><p><b>FltRequestOperationStatusCallback</b> was called from a routine that was not a preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine, or the I/O operation was an IRP_MJ_CLOSE request. This is an error code. </p>
 
 <p> </p>
 
 ## -remarks
-<p>A minifilter driver can call <b>FltRequestOperationStatusCallback</b> for an IRP-based I/O operation to obtain the status value that <a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a> returned for the operation. </p>
+<p>A minifilter driver can call <b>FltRequestOperationStatusCallback</b> for an IRP-based I/O operation to obtain the status value that <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a> returned for the operation. </p>
 
 <p>Most minifilter drivers never need to call <b>FltRequestOperationStatusCallback</b>. Normally, a minifilter driver only calls this routine to determine whether a requested oplock was granted. </p>
 
-<p><b>FltRequestOperationStatusCallback</b> can only be called from a minifilter driver's preoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) routine. </p>
+<p><b>FltRequestOperationStatusCallback</b> can only be called from a minifilter driver's preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine. </p>
 
 <p><b>FltRequestOperationStatusCallback</b> can only be called for non-IRP_MJ_CLOSE IRP-based operations. To determine whether the operation is an IRP-based operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro.</p>
 
 <p>If the IRP-based operation is an IRP_MJ_CLOSE request, STATUS_INVALID_PARAMETER is returned.</p>
 
-<p><b>FltRequestOperationStatusCallback</b> copies the contents of the I/O parameter block (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544638">FLT_IO_PARAMETER_BLOCK</a>) to the <b>Iopb</b> member of the callback data (FLT_CALLBACK_DATA), and this is the callback data that the Filter Manager will pass to the routine specified in the <i>CallbackRoutine</i> parameter. The copied data represents a snapshot of the I/O parameter block at the time that the preoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) routine calls <b>FltRequestOperationStatusCallback</b>. If the preoperation callback routine changes the I/O parameter block after calling <b>FltRequestOperationStatusCallback</b>, the I/O parameter block that the Filter Manager passes to <i>CallbackRoutine</i> will be different from the I/O parameter block that the filter driver passes down the driver stack when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a>.</p>
-
-<p>The following example code from a preoperation callback routine illustrates how this might happen:</p>
-
-<p>In the example, the read buffer is changed after the call to <b>FltRequestOperationStatusCallback</b>, so when the Filter Manager calls <i>CallbackRoutine</i>, it will pass in a pointer to the old buffer instead of the new one. </p>
-
-<p>The Filter Manager calls the given <i>CallbackRoutine</i> in the context of the originating thread at IRQL &lt;= APC_LEVEL. </p>
-
-<p>A minifilter driver can call <b>FltRequestOperationStatusCallback</b> for an IRP-based I/O operation to obtain the status value that <a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a> returned for the operation. </p>
-
-<p>Most minifilter drivers never need to call <b>FltRequestOperationStatusCallback</b>. Normally, a minifilter driver only calls this routine to determine whether a requested oplock was granted. </p>
-
-<p><b>FltRequestOperationStatusCallback</b> can only be called from a minifilter driver's preoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) routine. </p>
-
-<p><b>FltRequestOperationStatusCallback</b> can only be called for non-IRP_MJ_CLOSE IRP-based operations. To determine whether the operation is an IRP-based operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro.</p>
-
-<p>If the IRP-based operation is an IRP_MJ_CLOSE request, STATUS_INVALID_PARAMETER is returned.</p>
-
-<p><b>FltRequestOperationStatusCallback</b> copies the contents of the I/O parameter block (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544638">FLT_IO_PARAMETER_BLOCK</a>) to the <b>Iopb</b> member of the callback data (FLT_CALLBACK_DATA), and this is the callback data that the Filter Manager will pass to the routine specified in the <i>CallbackRoutine</i> parameter. The copied data represents a snapshot of the I/O parameter block at the time that the preoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) routine calls <b>FltRequestOperationStatusCallback</b>. If the preoperation callback routine changes the I/O parameter block after calling <b>FltRequestOperationStatusCallback</b>, the I/O parameter block that the Filter Manager passes to <i>CallbackRoutine</i> will be different from the I/O parameter block that the filter driver passes down the driver stack when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a>.</p>
+<p><b>FltRequestOperationStatusCallback</b> copies the contents of the I/O parameter block (<a href="..\fltkernel\ns-fltkernel--flt-io-parameter-block.md">FLT_IO_PARAMETER_BLOCK</a>) to the <b>Iopb</b> member of the callback data (FLT_CALLBACK_DATA), and this is the callback data that the Filter Manager will pass to the routine specified in the <i>CallbackRoutine</i> parameter. The copied data represents a snapshot of the I/O parameter block at the time that the preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine calls <b>FltRequestOperationStatusCallback</b>. If the preoperation callback routine changes the I/O parameter block after calling <b>FltRequestOperationStatusCallback</b>, the I/O parameter block that the Filter Manager passes to <i>CallbackRoutine</i> will be different from the I/O parameter block that the filter driver passes down the driver stack when it calls <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>.</p>
 
 <p>The following example code from a preoperation callback routine illustrates how this might happen:</p>
 
@@ -178,25 +160,25 @@ NTSTATUS FltRequestOperationStatusCallback(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544638">FLT_IO_PARAMETER_BLOCK</a>
+<a href="..\fltkernel\ns-fltkernel--flt-io-parameter-block.md">FLT_IO_PARAMETER_BLOCK</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544816">FLT_RELATED_OBJECTS</a>
+<a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a>
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551089">PFLT_GET_OPERATION_STATUS_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-get-operation-status-callback.md">PFLT_GET_OPERATION_STATUS_CALLBACK</a>
 </dt>
 </dl>
 <p> </p>

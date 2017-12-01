@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains the handle to the default endpoint to update in a framework request that is passed by UCX when it invokes <a href="https://msdn.microsoft.com/library/windows/hardware/mt187824">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a> callback function.</p>
+<p>Contains the handle to the default endpoint to update in a framework request that is passed by UCX when it invokes <a href="buses.evt_ucx_default_endpoint_update">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a> callback function.</p>
 
 
 ## -syntax
@@ -64,7 +64,7 @@ typedef struct _DEFAULT_ENDPOINT_UPDATE {
 ### -field <b>Header</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188075">USBDEVICE_MGMT_HEADER</a> structure that contains header information related to the USB device or hub endpoint.</p>
+<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains header information related to the USB device or hub endpoint.</p>
 </dd>
 
 ### -field <b>DefaultEndpoint</b>
@@ -100,7 +100,7 @@ typedef struct _DEFAULT_ENDPOINT_UPDATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187824">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a>
+<a href="buses.evt_ucx_default_endpoint_update">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a>
 </dt>
 </dl>
 <p> </p>

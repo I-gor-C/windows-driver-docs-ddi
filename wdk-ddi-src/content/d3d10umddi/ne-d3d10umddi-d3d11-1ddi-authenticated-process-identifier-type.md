@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Specifies the type of process that is identified in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406429">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT</a>  structure.</p>
+<p>Specifies the type of process that is identified in the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-restricted-shared-resource-process-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT</a>  structure.</p>
 
 
 ## -syntax
@@ -111,7 +111,7 @@ typedef enum D3D11_1DDI_AUTHENTICATED_PROCESS_IDENTIFIER_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406429">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-restricted-shared-resource-process-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT</a>
 </dt>
 </dl>
 <p> </p>

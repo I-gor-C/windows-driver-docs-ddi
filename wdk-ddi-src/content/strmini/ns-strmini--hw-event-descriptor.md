@@ -7,7 +7,7 @@ old-location: stream\hw_event_descriptor.htm
 old-project: stream
 ms.assetid: c0efec37-4897-4ece-9f53-4a62204e5af3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: HW_EVENT_DESCRIPTOR, HW_EVENT_DESCRIPTOR, *PHW_EVENT_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>When the class driver calls one of the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568457">StrMiniEvent</a> routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled. </p>
+<p>When the class driver calls one of the minidriver's <a href="stream.strminievent">StrMiniEvent</a> routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled. </p>
 
 
 ## -syntax
@@ -77,19 +77,19 @@ typedef struct _HW_EVENT_DESCRIPTOR {
 ### -field <b>EventEntry</b>
 
 <dd>
-<p>Points to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a> structure that describes this event.</p>
+<p>Points to the <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure that describes this event.</p>
 </dd>
 
 ### -field <b>EventData</b>
 
 <dd>
-<p>Points to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a> structure that describes this instance of the event.</p>
+<p>Points to the <a href="stream.kseventdata">KSEVENTDATA</a> structure that describes this instance of the event.</p>
 </dd>
 
 ### -field <b>StreamObject</b>
 
 <dd>
-<p>Points to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559697">HW_STREAM_OBJECT</a> for the stream that owns the event that the class driver is enabling/disabling, or <b>NULL</b> if the event belongs to the driver as a whole.</p>
+<p>Points to the <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a> for the stream that owns the event that the class driver is enabling/disabling, or <b>NULL</b> if the event belongs to the driver as a whole.</p>
 </dd>
 
 ### -field <b>DeviceExtension</b>
@@ -101,14 +101,14 @@ typedef struct _HW_EVENT_DESCRIPTOR {
 ### -field <b>EnableEventSetIndex</b>
 
 <dd>
-<p>For stream events, this specifies the index of the event set within the <b>StreamEventsArray</b> member of the stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559692">HW_STREAM_INFORMATION</a> structure.</p>
-<p>For device events, this specifies the index of the event set within the <b>DeviceEventsArray</b> member of the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559690">HW_STREAM_HEADER</a> structure.</p>
+<p>For stream events, this specifies the index of the event set within the <b>StreamEventsArray</b> member of the stream's <a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a> structure.</p>
+<p>For device events, this specifies the index of the event set within the <b>DeviceEventsArray</b> member of the minidriver's <a href="..\strmini\ns-strmini--hw-stream-header.md">HW_STREAM_HEADER</a> structure.</p>
 </dd>
 
 ### -field <b>HwInstanceExtension</b>
 
 <dd>
-<p>Pointer to the minidriver's instance extension. The minidriver may use this buffer to record private information global to this instance of the minidriver. The minidriver sets the size of this buffer in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>.
+<p>Pointer to the minidriver's instance extension. The minidriver may use this buffer to record private information global to this instance of the minidriver. The minidriver sets the size of this buffer in the <a href="..\strmini\ns-strmini--hw-initialization-data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>.
 
 </p>
 </dd>

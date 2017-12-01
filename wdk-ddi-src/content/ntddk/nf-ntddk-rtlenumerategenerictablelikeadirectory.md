@@ -63,7 +63,7 @@ PVOID RtlEnumerateGenericTableLikeADirectory(
 ### -param <i>Table</i> [in]
 
 <dd>
-<p>A pointer to the Adelson-Velsky/Landis (AVL) table (<a href="https://msdn.microsoft.com/library/windows/hardware/ff553327">RTL_AVL_TABLE</a>) that will be enumerated.</p>
+<p>A pointer to the Adelson-Velsky/Landis (AVL) table (<a href="..\ntddk\ns-ntddk--rtl-avl-table.md">RTL_AVL_TABLE</a>) that will be enumerated.</p>
 </dd>
 
 ### -param <i>MatchFunction</i> [in, optional]
@@ -140,73 +140,13 @@ for (ptr = NULL; ptr != NULL;  ) {
 
 <p>There are four routines you can use to enumerate a generic table:</p>
 
-<p></p><dl>
-<dt><a id="RtlEnumerateGenericTable"></a><a id="rtlenumerategenerictable"></a><a id="RTLENUMERATEGENERICTABLE"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff552243">RtlEnumerateGenericTable</a>
-</dt>
-<dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552243">RtlEnumerateGenericTable</a> routine enumerates a generic table in collation order safely across insertions and deletions. However, this routine is not reentrant, so a caller that uses <b>RtlEnumerateGenericTable</b> must acquire exclusive access to the table during the entire enumeration. This routine often used by a caller that is deleting all the elements of a table.</p>
-</dd>
-<dt><a id="RtlEnumerateGenericTableWithoutSplaying"></a><a id="rtlenumerategenerictablewithoutsplaying"></a><a id="RTLENUMERATEGENERICTABLEWITHOUTSPLAYING"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff552247">RtlEnumerateGenericTableWithoutSplaying</a>
-</dt>
-<dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552247">RtlEnumerateGenericTableWithoutSplaying</a>routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. However, it is not safe to use <b>RtlEnumerateGenericTableWithoutSplaying</b>across insertions and deletions. Callers that use <b>RtlEnumerateGenericTableWithoutSplaying</b>can share access to the table, but they must lock out changes by other threads during the entire enumeration.</p>
-</dd>
-<dt><a id="RtlGetElementGenericTable"></a><a id="rtlgetelementgenerictable"></a><a id="RTLGETELEMENTGENERICTABLE"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff552297">RtlGetElementGenericTable</a>
-</dt>
-<dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552297">RtlGetElementGenericTable</a> routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. Furthermore, multiple threads can do insertions and deletions during an enumeration. A thread must obtain shared access for each individual call, but is not required to lock out changes to the table for the entire duration of the enumeration. However, insertions and deletions can cause table entries to be enumerated more than once or dropped completely. For this reason, the <b>RtlGetElementGenericTable</b> routine  is not recommended.</p>
-</dd>
-<dt><a id="RtlEnumerateGenericTableLikeADirectory"></a><a id="rtlenumerategenerictablelikeadirectory"></a><a id="RTLENUMERATEGENERICTABLELIKEADIRECTORY"></a><b>RtlEnumerateGenericTableLikeADirectory</b></dt>
-<dd>
-<p>The <b>RtlEnumerateGenericTableLikeADirectory</b> routine enumerates a generic table in collation order; it is reentrant, and it allows multiple threads to do insertions and deletions during the enumeration without dropping or repeating key names in the enumeration. Caller must acquire shared access that locks out changes to the table across each call to the routine, but it is not necessary to hold a lock for the entire duration of the enumeration.</p>
-</dd>
-</dl><p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552243">RtlEnumerateGenericTable</a> routine enumerates a generic table in collation order safely across insertions and deletions. However, this routine is not reentrant, so a caller that uses <b>RtlEnumerateGenericTable</b> must acquire exclusive access to the table during the entire enumeration. This routine often used by a caller that is deleting all the elements of a table.</p>
+<p></p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552247">RtlEnumerateGenericTableWithoutSplaying</a>routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. However, it is not safe to use <b>RtlEnumerateGenericTableWithoutSplaying</b>across insertions and deletions. Callers that use <b>RtlEnumerateGenericTableWithoutSplaying</b>can share access to the table, but they must lock out changes by other threads during the entire enumeration.</p>
+<p>The <a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTable</a> routine enumerates a generic table in collation order safely across insertions and deletions. However, this routine is not reentrant, so a caller that uses <b>RtlEnumerateGenericTable</b> must acquire exclusive access to the table during the entire enumeration. This routine often used by a caller that is deleting all the elements of a table.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552297">RtlGetElementGenericTable</a> routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. Furthermore, multiple threads can do insertions and deletions during an enumeration. A thread must obtain shared access for each individual call, but is not required to lock out changes to the table for the entire duration of the enumeration. However, insertions and deletions can cause table entries to be enumerated more than once or dropped completely. For this reason, the <b>RtlGetElementGenericTable</b> routine  is not recommended.</p>
+<p>The <a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplaying</a>routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. However, it is not safe to use <b>RtlEnumerateGenericTableWithoutSplaying</b>across insertions and deletions. Callers that use <b>RtlEnumerateGenericTableWithoutSplaying</b>can share access to the table, but they must lock out changes by other threads during the entire enumeration.</p>
 
-<p>The <b>RtlEnumerateGenericTableLikeADirectory</b> routine enumerates a generic table in collation order; it is reentrant, and it allows multiple threads to do insertions and deletions during the enumeration without dropping or repeating key names in the enumeration. Caller must acquire shared access that locks out changes to the table across each call to the routine, but it is not necessary to hold a lock for the entire duration of the enumeration.</p>
-
-<p>By default, the operating system uses splay trees to implement generic tables, but the <b>RtlEnumerateGenericTableLikeADirectory</b> routine only works with Adelson-Velsky/Landis (AVL) trees. To configure the generic table routines to use AVL trees instead of splay trees in your driver, insert the following define statement in a common header file before including Ntddk.h:</p>
-
-<p>If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic table routines. </p>
-
-<p>Callers of <b>RtlEnumerateGenericTableLikeADirectory</b> must be running at IRQL &lt;= APC_LEVEL if either of the following conditions holds:</p>
-
-<p>The caller-allocated memory at <i>Table</i> or at <i>Buffer</i> is pageable. </p>
-
-<p>The caller-supplied <i>MatchFunction</i> contains pageable code. </p>
-
-<p>The <b>RtlEnumerateGenericTableLikeADirectory</b> routine provides a safe means to enumerate a generic table across intermixed insert and delete operations. Starting with the first matched key name, <b>RtlEnumerateGenericTableLikeADirectory</b> returns each name in the table exactly once, unless the name was inserted or deleted during the enumeration. When a key name is inserted or deleted during an enumeration (i.e. between calls to <b>RtlEnumerateGenericTableLikeADirectory</b>) it might or might not be included in the enumeration. Whether such names are included depends on the state of the name when <b>RtlEnumerateGenericTableLikeADirectory</b> processes the directory range in which the name is found.</p>
-
-<p>There are four routines you can use to enumerate a generic table:</p>
-
-<p></p><dl>
-<dt><a id="RtlEnumerateGenericTable"></a><a id="rtlenumerategenerictable"></a><a id="RTLENUMERATEGENERICTABLE"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff552243">RtlEnumerateGenericTable</a>
-</dt>
-<dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552243">RtlEnumerateGenericTable</a> routine enumerates a generic table in collation order safely across insertions and deletions. However, this routine is not reentrant, so a caller that uses <b>RtlEnumerateGenericTable</b> must acquire exclusive access to the table during the entire enumeration. This routine often used by a caller that is deleting all the elements of a table.</p>
-</dd>
-<dt><a id="RtlEnumerateGenericTableWithoutSplaying"></a><a id="rtlenumerategenerictablewithoutsplaying"></a><a id="RTLENUMERATEGENERICTABLEWITHOUTSPLAYING"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff552247">RtlEnumerateGenericTableWithoutSplaying</a>
-</dt>
-<dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552247">RtlEnumerateGenericTableWithoutSplaying</a>routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. However, it is not safe to use <b>RtlEnumerateGenericTableWithoutSplaying</b>across insertions and deletions. Callers that use <b>RtlEnumerateGenericTableWithoutSplaying</b>can share access to the table, but they must lock out changes by other threads during the entire enumeration.</p>
-</dd>
-<dt><a id="RtlGetElementGenericTable"></a><a id="rtlgetelementgenerictable"></a><a id="RTLGETELEMENTGENERICTABLE"></a><a href="https://msdn.microsoft.com/library/windows/hardware/ff552297">RtlGetElementGenericTable</a>
-</dt>
-<dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552297">RtlGetElementGenericTable</a> routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. Furthermore, multiple threads can do insertions and deletions during an enumeration. A thread must obtain shared access for each individual call, but is not required to lock out changes to the table for the entire duration of the enumeration. However, insertions and deletions can cause table entries to be enumerated more than once or dropped completely. For this reason, the <b>RtlGetElementGenericTable</b> routine  is not recommended.</p>
-</dd>
-<dt><a id="RtlEnumerateGenericTableLikeADirectory"></a><a id="rtlenumerategenerictablelikeadirectory"></a><a id="RTLENUMERATEGENERICTABLELIKEADIRECTORY"></a><b>RtlEnumerateGenericTableLikeADirectory</b></dt>
-<dd>
-<p>The <b>RtlEnumerateGenericTableLikeADirectory</b> routine enumerates a generic table in collation order; it is reentrant, and it allows multiple threads to do insertions and deletions during the enumeration without dropping or repeating key names in the enumeration. Caller must acquire shared access that locks out changes to the table across each call to the routine, but it is not necessary to hold a lock for the entire duration of the enumeration.</p>
-</dd>
-</dl><p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552243">RtlEnumerateGenericTable</a> routine enumerates a generic table in collation order safely across insertions and deletions. However, this routine is not reentrant, so a caller that uses <b>RtlEnumerateGenericTable</b> must acquire exclusive access to the table during the entire enumeration. This routine often used by a caller that is deleting all the elements of a table.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552247">RtlEnumerateGenericTableWithoutSplaying</a>routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. However, it is not safe to use <b>RtlEnumerateGenericTableWithoutSplaying</b>across insertions and deletions. Callers that use <b>RtlEnumerateGenericTableWithoutSplaying</b>can share access to the table, but they must lock out changes by other threads during the entire enumeration.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552297">RtlGetElementGenericTable</a> routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. Furthermore, multiple threads can do insertions and deletions during an enumeration. A thread must obtain shared access for each individual call, but is not required to lock out changes to the table for the entire duration of the enumeration. However, insertions and deletions can cause table entries to be enumerated more than once or dropped completely. For this reason, the <b>RtlGetElementGenericTable</b> routine  is not recommended.</p>
+<p>The <a href="..\ntddk\nf-ntddk-rtlgetelementgenerictable.md">RtlGetElementGenericTable</a> routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. Furthermore, multiple threads can do insertions and deletions during an enumeration. A thread must obtain shared access for each individual call, but is not required to lock out changes to the table for the entire duration of the enumeration. However, insertions and deletions can cause table entries to be enumerated more than once or dropped completely. For this reason, the <b>RtlGetElementGenericTable</b> routine  is not recommended.</p>
 
 <p>The <b>RtlEnumerateGenericTableLikeADirectory</b> routine enumerates a generic table in collation order; it is reentrant, and it allows multiple threads to do insertions and deletions during the enumeration without dropping or repeating key names in the enumeration. Caller must acquire shared access that locks out changes to the table across each call to the routine, but it is not necessary to hold a lock for the entire duration of the enumeration.</p>
 
@@ -283,13 +223,13 @@ for (ptr = NULL; ptr != NULL;  ) {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552243">RtlEnumerateGenericTable</a>
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTable</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552247">RtlEnumerateGenericTableWithoutSplaying</a>
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplaying</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552297">RtlGetElementGenericTable</a>
+<a href="..\ntddk\nf-ntddk-rtlgetelementgenerictable.md">RtlGetElementGenericTable</a>
 </dt>
 </dl>
 <p> </p>

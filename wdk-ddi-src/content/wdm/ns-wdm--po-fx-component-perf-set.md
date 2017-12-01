@@ -7,7 +7,7 @@ old-location: kernel\po_fx_component_perf_set.htm
 old-project: kernel
 ms.assetid: 2305BE73-8363-4534-A64D-06C91F636E2F
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PO_FX_COMPONENT_PERF_SET, PO_FX_COMPONENT_PERF_SET, *PPO_FX_COMPONENT_PERF_SET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,13 +83,13 @@ typedef struct _PO_FX_COMPONENT_PERF_SET {
 ### -field <b>Unit</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn939838">PO_FX_PERF_STATE_UNIT</a> value that specifies the type of unit that is controlled by the performance state set. </p>
+<p>A <a href="..\wdm\ne-wdm--po-fx-perf-state-unit.md">PO_FX_PERF_STATE_UNIT</a> value that specifies the type of unit that is controlled by the performance state set. </p>
 </dd>
 
 ### -field <b>Type</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn939837">PO_FX_PERF_STATE_TYPE</a> value that specifies the type of performance states in the set (a discrete number of states or a continuous distribution of states between a minimum and maximum value). </p>
+<p>A <a href="..\wdm\ne-wdm--po-fx-perf-state-type.md">PO_FX_PERF_STATE_TYPE</a> value that specifies the type of performance states in the set (a discrete number of states or a continuous distribution of states between a minimum and maximum value). </p>
 </dd>
 
 ### -field <b>Discrete</b>
@@ -107,7 +107,7 @@ typedef struct _PO_FX_COMPONENT_PERF_SET {
 ### -field <b>States</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn939835">PO_FX_PERF_STATE</a> array. The length of this array is specified by the <b>Count</b> member. Each array element describes one power state in the set.</p>
+<p>A pointer to a <a href="..\wdm\ns-wdm--po-fx-perf-state.md">PO_FX_PERF_STATE</a> array. The length of this array is specified by the <b>Count</b> member. Each array element describes one power state in the set.</p>
 </dd>
 </dl>
 </dd>
@@ -134,7 +134,7 @@ typedef struct _PO_FX_COMPONENT_PERF_SET {
 </dl>
 
 ## -remarks
-<p>When a device driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939778">PoFxRegisterComponentPerfStates</a> routine to register a component for performance state support with the power management framework (PoFx),  the driver can supply a <a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a> structure that  describes the sets of the performance states supported by the component. The <b>PerfStateSets</b> member of the <b>PO_FX_COMPONENT_PERF_INFO</b> structure contains an array of <b>PO_FX_COMPONENT_PERF_SET</b> structures that represent the supported performance states.</p>
+<p>When a device driver calls the <a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a> routine to register a component for performance state support with the power management framework (PoFx),  the driver can supply a <a href="..\wdm\ns-wdm--po-fx-component-perf-info.md">PO_FX_COMPONENT_PERF_INFO</a> structure that  describes the sets of the performance states supported by the component. The <b>PerfStateSets</b> member of the <b>PO_FX_COMPONENT_PERF_INFO</b> structure contains an array of <b>PO_FX_COMPONENT_PERF_SET</b> structures that represent the supported performance states.</p>
 
 <p>Most drivers are expected to define a single set of performance states per component. For example, a driver might define one set of performance states to control the clock frequency for a component. However, some drivers may need to define more than one performance state set to control multiple dimensions of performance states for a component. For example, a driver might define two sets of performance states to control the clock frequency and bus bandwidth.</p>
 
@@ -166,12 +166,12 @@ typedef struct _PO_FX_COMPONENT_PERF_SET {
 <a href="https://msdn.microsoft.com/D5341D6D-7C71-43CB-9C70-7E939B32C33F">Device Performance State Management</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn939778">PoFxRegisterComponentPerfStates</a>
+<a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a>
+<a href="..\wdm\ns-wdm--po-fx-component-perf-info.md">PO_FX_COMPONENT_PERF_INFO</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PO_FX_COMPONENT_PERF_SET structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PO_FX_COMPONENT_PERF_SET structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

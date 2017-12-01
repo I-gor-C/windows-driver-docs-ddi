@@ -64,7 +64,7 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES {
 ### -field <b>pRanges</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn894165">DXGK_BUILDPAGINGBUFFER_COPY_RANGE</a> structure describing each range of page table entries to copy.</p>
+<p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-buildpagingbuffer-copy-range.md">DXGK_BUILDPAGINGBUFFER_COPY_RANGE</a> structure describing each range of page table entries to copy.</p>
 </dd>
 </dl>
 
@@ -104,10 +104,10 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557540">DXGKARG_BUILDPAGINGBUFFER</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn894165">DXGK_BUILDPAGINGBUFFER_COPY_RANGE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-buildpagingbuffer-copy-range.md">DXGK_BUILDPAGINGBUFFER_COPY_RANGE</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: debugger\getreturnoffset.htm
 old-project: debugger
 ms.assetid: 65d72369-7ace-4d3d-a15c-6322c0066470
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl, GetReturnOffset, IDebugControl::GetReturnOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,8 +69,6 @@ HRESULT GetReturnOffset(
 <p> </p>
 
 ## -remarks
-<p>The return address is the location in the process's virtual address space of the instruction that will be executed when the current function returns.</p>
-
 <p>The return address is the location in the process's virtual address space of the instruction that will be executed when the current function returns.</p>
 
 ## -requirements

@@ -91,10 +91,6 @@ HRESULT _stdcall wiasGetContextFromName(
 
 <p>This function should be used by minidrivers when they need to move from one application item context to another, given the item's name. The names of the application items come from their corresponding driver items, which the minidriver creates and names. </p>
 
-<p>This function searches for item contexts whose WIA_IPA_FULL_ITEM_NAME property matches <i>bstrName</i>. Note that this property is different from WIA_IPA_ITEM_NAME, which does not contain path information.</p>
-
-<p>This function should be used by minidrivers when they need to move from one application item context to another, given the item's name. The names of the application items come from their corresponding driver items, which the minidriver creates and names. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -150,7 +146,7 @@ HRESULT _stdcall wiasGetContextFromName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549264">wiasGetRootItem</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetrootitem.md">wiasGetRootItem</a>
 </dt>
 </dl>
 <p> </p>

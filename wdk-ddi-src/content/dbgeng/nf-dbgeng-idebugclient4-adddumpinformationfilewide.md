@@ -7,7 +7,7 @@ old-location: debugger\adddumpinformationfilewide.htm
 old-project: debugger
 ms.assetid: 0b6318de-4f8e-43e8-ad86-c1fc52097662
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugClient4, AddDumpInformationFileWide, IDebugClient4::AddDumpInformationFileWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface: IDebugClient4
 
 
 ## -description
-<p>The <b>AddDumpInformationFileWide</b> method registers additional files containing supporting information that will be used when opening a <a href="debugger.d#dump_file#dump_file">dump file</a>.  The ASCII version of this method is <a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a>.</p>
+<p>The <b>AddDumpInformationFileWide</b> method registers additional files containing supporting information that will be used when opening a <a href="debugger.d#dump_file#dump_file">dump file</a>.  The ASCII version of this method is <a href="debugger.adddumpinformationfile">AddDumpInformationFile</a>.</p>
 
 
 ## -syntax
@@ -83,11 +83,7 @@ HRESULT AddDumpInformationFileWide(
 <p> </p>
 
 ## -remarks
-<p>If supporting information is to be used when opening a dump file, this method or <a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a> must be called before <a href="https://msdn.microsoft.com/library/windows/hardware/ff552322">OpenDumpFile</a> is called. If a session has already started, this method cannot be used.</p>
-
-<p>For more information about crash dump files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542783">Dump-File Targets</a>.</p>
-
-<p>If supporting information is to be used when opening a dump file, this method or <a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a> must be called before <a href="https://msdn.microsoft.com/library/windows/hardware/ff552322">OpenDumpFile</a> is called. If a session has already started, this method cannot be used.</p>
+<p>If supporting information is to be used when opening a dump file, this method or <a href="debugger.adddumpinformationfile">AddDumpInformationFile</a> must be called before <a href="debugger.opendumpfile">OpenDumpFile</a> is called. If a session has already started, this method cannot be used.</p>
 
 <p>For more information about crash dump files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542783">Dump-File Targets</a>.</p>
 
@@ -118,27 +114,27 @@ HRESULT AddDumpInformationFileWide(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550494">IDebugClient4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a>
+<a href="debugger.adddumpinformationfile">AddDumpInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547887">GetNumberDumpFiles</a>
+<a href="debugger.getnumberdumpfiles">GetNumberDumpFiles</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546586">GetDumpFile</a>
+<a href="debugger.getdumpfile">GetDumpFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552322">OpenDumpFile</a>
+<a href="debugger.opendumpfile">OpenDumpFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552324">OpenDumpFileWide</a>
+<a href="debugger.opendumpfilewide">OpenDumpFileWide</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient4::AddDumpInformationFileWide method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient4::AddDumpInformationFileWide method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

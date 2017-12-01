@@ -155,13 +155,13 @@ typedef struct _WINBIO_BIR_HEADER {
 ### -field <b>BiometricDataFormat</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536473">WINBIO_REGISTERED_FORMAT</a> that specifies the data format of the <b>StandardDataBlock</b> for this <a href="https://msdn.microsoft.com/library/windows/hardware/ff536459">WINBIO_BIR</a>.</p>
+<p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-registered-format.md">WINBIO_REGISTERED_FORMAT</a> that specifies the data format of the <b>StandardDataBlock</b> for this <a href="..\winbio_types\ns-winbio-types--winbio-bir.md">WINBIO_BIR</a>.</p>
 </dd>
 
 ### -field <b>ProductId</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536473">WINBIO_REGISTERED_FORMAT</a> that specifies the product identifier for the component that generated the <b>StandardDataBlock</b> for this WINBIO_BIR.</p>
+<p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-registered-format.md">WINBIO_REGISTERED_FORMAT</a> that specifies the product identifier for the component that generated the <b>StandardDataBlock</b> for this WINBIO_BIR.</p>
 </dd>
 </dl>
 
@@ -193,10 +193,10 @@ typedef struct _WINBIO_BIR_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536459">WINBIO_BIR</a>
+<a href="..\winbio_types\ns-winbio-types--winbio-bir.md">WINBIO_BIR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536460">WINBIO_BIR_DATA</a>
+<a href="..\winbio_types\ns-winbio-types--winbio-bir-data.md">WINBIO_BIR_DATA</a>
 </dt>
 </dl>
 <p> </p>

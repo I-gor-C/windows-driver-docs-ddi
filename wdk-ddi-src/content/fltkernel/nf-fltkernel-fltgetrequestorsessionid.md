@@ -58,7 +58,7 @@ NTSTATUS FltGetRequestorSessionId(
 ### -param <i>CallbackData</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a> structure specifying the I/O operation.</p>
+<p>A pointer to the <a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a> structure specifying the I/O operation.</p>
 </dd>
 
 ### -param <i>SessionId</i> [out]
@@ -72,10 +72,6 @@ NTSTATUS FltGetRequestorSessionId(
 <p>The <b>FltGetRequestorSessionId</b> routine returns STATUS_SUCCESS on success or STATUS_UNSUCCESSFUL on failure.</p>
 
 ## -remarks
-<p>If a process has no session ID, the SessionId parameter refers to -1 and the <b>FltGetRequestorSessionId</b> routine returns STATUS_SUCCESS.</p>
-
-<p>If the <b>FltGetRequestorSessionId</b> routine returns STATUS_UNSUCCESSFUL, <i>SessionId</i> is not valid.</p>
-
 <p>If a process has no session ID, the SessionId parameter refers to -1 and the <b>FltGetRequestorSessionId</b> routine returns STATUS_SUCCESS.</p>
 
 <p>If the <b>FltGetRequestorSessionId</b> routine returns STATUS_UNSUCCESSFUL, <i>SessionId</i> is not valid.</p>

@@ -73,7 +73,7 @@ ULONG StorPortInitializePoFxPower(
 ### -param <i>Device</i> [in]
 
 <dd>
-<p>A pointer to a <b>STOR_POFX_DEVICE_V2</b> structure cast to a pointer to <a href="https://msdn.microsoft.com/library/windows/hardware/hh920429">STOR_POFX_DEVICE</a>. This structure contains a component list with F-states for a storage device.</p>
+<p>A pointer to a <b>STOR_POFX_DEVICE_V2</b> structure cast to a pointer to <a href="..\storport\ns-storport--stor-pofx-device.md">STOR_POFX_DEVICE</a>. This structure contains a component list with F-states for a storage device.</p>
 </dd>
 
 ### -param <i>D3ColdEnabled</i> [in, out]
@@ -98,7 +98,7 @@ ULONG StorPortInitializePoFxPower(
 
 <p>-or-</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh920429">STOR_POFX_DEVICE</a> structure pointed to by  <i>Device</i> is formatted incorrectly or contains invalid data.</p><dl>
+<p>The <a href="..\storport\ns-storport--stor-pofx-device.md">STOR_POFX_DEVICE</a> structure pointed to by  <i>Device</i> is formatted incorrectly or contains invalid data.</p><dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
 </dl><p>The storage device was successfully registered with PoFx.</p><dl>
 <dt><b>STOR_STATUS_INSUFFICIENT_RESOURCES</b></dt>
@@ -113,10 +113,6 @@ ULONG StorPortInitializePoFxPower(
 <p> </p>
 
 ## -remarks
-<p>Adapter devices are always registered with a <b>NULL</b> value for <i>address</i>. Unit devices are registered by specifying a valid unit address for <i>address</i>.</p>
-
-<p>If the <b>STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD</b> flag is set in the <b>Flags</b> member of <i>Device</i>, Storport will attempt to enable D3 Cold support for the device component. The D3 Cold enabled status is returned in the <b>BOOLEAN</b> value pointed to by <i>D3ColdEnabled</i>.</p>
-
 <p>Adapter devices are always registered with a <b>NULL</b> value for <i>address</i>. Unit devices are registered by specifying a valid unit address for <i>address</i>.</p>
 
 <p>If the <b>STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD</b> flag is set in the <b>Flags</b> member of <i>Device</i>, Storport will attempt to enable D3 Cold support for the device component. The D3 Cold enabled status is returned in the <b>BOOLEAN</b> value pointed to by <i>D3ColdEnabled</i>.</p>
@@ -156,7 +152,7 @@ ULONG StorPortInitializePoFxPower(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920429">STOR_POFX_DEVICE</a>
+<a href="..\storport\ns-storport--stor-pofx-device.md">STOR_POFX_DEVICE</a>
 </dt>
 </dl>
 <p> </p>

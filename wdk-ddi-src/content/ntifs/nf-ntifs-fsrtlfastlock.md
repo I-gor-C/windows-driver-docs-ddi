@@ -67,7 +67,7 @@ BOOLEAN FsRtlFastLock(
 ### -param <i>FileLock</i> [in]
 
 <dd>
-<p>Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545640">FsRtlAllocateFileLock</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff546122">FsRtlInitializeFileLock</a>.</p>
+<p>Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="ifsk.fsrtlallocatefilelock">FsRtlAllocateFileLock</a> or <a href="ifsk.fsrtlinitializefilelock">FsRtlInitializeFileLock</a>.</p>
 </dd>
 
 ### -param <i>FileObject</i> [in]
@@ -141,10 +141,6 @@ BOOLEAN FsRtlFastLock(
 
 <p>A return value of <b>TRUE</b> indicates that the IO_STATUS_BLOCK structure pointed to by <i>Iosb</i> received status information about the lock operation. To examine the contents of this structure, use the NT_STATUS macro.</p>
 
-<p>The <b>FsRtlFastLock</b> macro causes the caller to acquire a byte-range lock on a region of the specified file.</p>
-
-<p>A return value of <b>TRUE</b> indicates that the IO_STATUS_BLOCK structure pointed to by <i>Iosb</i> received status information about the lock operation. To examine the contents of this structure, use the NT_STATUS macro.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -180,10 +176,10 @@ BOOLEAN FsRtlFastLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545640">FsRtlAllocateFileLock</a>
+<a href="ifsk.fsrtlallocatefilelock">FsRtlAllocateFileLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546122">FsRtlInitializeFileLock</a>
+<a href="ifsk.fsrtlinitializefilelock">FsRtlInitializeFileLock</a>
 </dt>
 </dl>
 <p> </p>

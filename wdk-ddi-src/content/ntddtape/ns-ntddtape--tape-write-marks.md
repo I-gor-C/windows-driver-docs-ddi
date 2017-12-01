@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The TAPE_WRITE_MARKS structure is used in conjunction with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560641">IOCTL_TAPE_WRITE_MARKS</a> request to write a setmark, a filemark, a short filemark, or a long filemark to tape. </p>
+<p>The TAPE_WRITE_MARKS structure is used in conjunction with an <a href="..\ntddtape\ni-ntddtape-ioctl-tape-write-marks.md">IOCTL_TAPE_WRITE_MARKS</a> request to write a setmark, a filemark, a short filemark, or a long filemark to tape. </p>
 
 
 ## -syntax
@@ -134,10 +134,10 @@ typedef struct _TAPE_WRITE_MARKS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560641">IOCTL_TAPE_WRITE_MARKS</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl-tape-write-marks.md">IOCTL_TAPE_WRITE_MARKS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567958">TapeMiniWriteMarks</a>
+<a href="storage.tapeminiwritemarks">TapeMiniWriteMarks</a>
 </dt>
 </dl>
 <p> </p>

@@ -71,11 +71,7 @@ NTSTATUS FltObjectReference(
 ## -remarks
 <p>Adding a rundown reference to an opaque filter, instance, or volume object pointer prevents the object from being freed. </p>
 
-<p>To remove a rundown reference from an opaque filter, instance, or volume pointer, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543378">FltObjectDereference</a>. </p>
-
-<p>Adding a rundown reference to an opaque filter, instance, or volume object pointer prevents the object from being freed. </p>
-
-<p>To remove a rundown reference from an opaque filter, instance, or volume pointer, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543378">FltObjectDereference</a>. </p>
+<p>To remove a rundown reference from an opaque filter, instance, or volume pointer, call <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>. </p>
 
 ## -requirements
 <table>
@@ -132,7 +128,7 @@ NTSTATUS FltObjectReference(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543378">FltObjectDereference</a>
+<a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
 </dt>
 </dl>
 <p> </p>

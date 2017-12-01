@@ -61,7 +61,7 @@ typedef enum _PDO_TYPE {
 ### -field <a id="PDO_TYPE_UNDEFINED"></a><a id="pdo_type_undefined"></a><b>PDO_TYPE_UNDEFINED</b>
 
 <dd>
-<p>Types either enumerated or provided as filter parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451409">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
+<p>Types either enumerated or provided as filter parameter to <a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-device-enumerate-pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
 </p>
 </dd>
 
@@ -108,7 +108,7 @@ typedef enum _PDO_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451409">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
+<a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-device-enumerate-pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
 </dt>
 </dl>
 <p> </p>

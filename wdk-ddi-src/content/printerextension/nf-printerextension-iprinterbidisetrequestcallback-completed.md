@@ -118,7 +118,7 @@ HRESULT Completed(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265385">IPrinterBidiSetRequestCallback</a>
+<a href="..\printerextension\nn-printerextension-iprinterbidisetrequestcallback.md">IPrinterBidiSetRequestCallback</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,10 +7,18 @@ This header is used by Windows kernel. For more information, see
 Vpci.h contain these programming interfaces:
 
 
+## Callback functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [VPCI_READ_BLOCK callback](nc-vpci-vpci-read-block.md) | The ReadVfConfigBlock routine reads a block of configuration data for a PCI Express (PCIe) virtual function (VF). This routine is called by the driver of a PCIe VF on a device that supports the single root I/O virtualization (SR-IOV) interface. |
+| [VPCI_WRITE_BLOCK callback](nc-vpci-vpci-write-block.md) | The WriteVfConfigBlock routine writes a block of configuration data for a PCI Express virtual function (VF). This routine is called by the driver of a PCIe VF on a device that supports the single root I/O virtualization (SR-IOV) interface. |
+
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
+| [VPCI_INTERFACE_STANDARD structure](ns-vpci--vpci-interface-standard.md) | The VPCI_INTERFACE_STANDARD interface structure enables device drivers to access blocks of configuration data that is specific to a PCI Express (PCIe) virtual function (VF) of devices that support the single root I/O virtualization (SR-IOV) interface. |
 | [VPCI_INVALIDATE_BLOCK_OUTPUT structure](ns-vpci--vpci-invalidate-block-output.md) | The VPCI_INVALIDATE_BLOCK_OUTPUT structure is used in an IOCTL_VPCI_INVALIDATE_BLOCK IOCTL request. |
 | [VPCI_READ_BLOCK_INPUT structure](ns-vpci--vpci-read-block-input.md) | The VPCI_READ_BLOCK_INPUT structure is used in an IOCTL_VPCI_READ_BLOCK IOCTL request to read data from a specified configuration block of data for a PCI Express (PCIe) virtual function (VF). |
 | [VPCI_WRITE_BLOCK_INPUT structure](ns-vpci--vpci-write-block-input.md) | The VPCI_WRITE_BLOCK_INPUT structure is used in an IOCTL_VPCI_WRITE_BLOCK IOCTL request to write data to a specified configuration block for a PCI Express (PCIe) virtual function (VF). |

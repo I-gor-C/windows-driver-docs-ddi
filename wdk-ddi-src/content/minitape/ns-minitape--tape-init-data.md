@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>TAPE_INIT_DATA is used only by legacy tape miniclass drivers. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff567968">TAPE_INIT_DATA_EX</a> instead. </p>
+<p>TAPE_INIT_DATA is used only by legacy tape miniclass drivers. Use <a href="..\minitape\ns-minitape--tape-init-data-ex.md">TAPE_INIT_DATA_EX</a> instead. </p>
 
 
 ## -syntax

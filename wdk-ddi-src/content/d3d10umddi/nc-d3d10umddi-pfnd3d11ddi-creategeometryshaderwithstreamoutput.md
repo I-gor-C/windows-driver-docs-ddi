@@ -70,7 +70,7 @@ VOID APIENTRY CreateGeometryShaderWithStreamOutput(
 ### -param <i>pCreateGeometryWithShaderOutput</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542057">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a> structure that describes the parameters that the user-mode display driver uses to create a geometry shader with stream output. </p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-creategeometryshaderwithstreamoutput.md">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a> structure that describes the parameters that the user-mode display driver uses to create a geometry shader with stream output. </p>
 </dd>
 
 ### -param <i>hShader</i> [in]
@@ -88,7 +88,7 @@ VOID APIENTRY CreateGeometryShaderWithStreamOutput(
 ### -param <i>pSignatures</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541746">D3D10DDIARG_STAGE_IO_SIGNATURES</a> structure that forms the shader's signature.</p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-stage-io-signatures.md">D3D10DDIARG_STAGE_IO_SIGNATURES</a> structure that forms the shader's signature.</p>
 </dd>
 </dl>
 
@@ -98,8 +98,6 @@ VOID APIENTRY CreateGeometryShaderWithStreamOutput(
 <p>The driver can use the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> callback function to set an error code. For more information about setting error codes, see the following Remarks section.</p>
 
 ## -remarks
-<p>The driver can pass E_OUTOFMEMORY (if the driver runs out of memory) or D3DDDIERR_DEVICEREMOVED (if the device is removed) in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> function. The Direct3D runtime determines that any other errors are critical. If the driver passes any errors, which includes D3DDDIERR_DEVICEREMOVED, the Direct3D runtime determines that the handle is invalid; therefore, the runtime does not call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyshader.md">DestroyShader</a> function to destroy the handle that the <i>hShader</i> parameter specifies.</p>
-
 <p>The driver can pass E_OUTOFMEMORY (if the driver runs out of memory) or D3DDDIERR_DEVICEREMOVED (if the device is removed) in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> function. The Direct3D runtime determines that any other errors are critical. If the driver passes any errors, which includes D3DDDIERR_DEVICEREMOVED, the Direct3D runtime determines that the handle is invalid; therefore, the runtime does not call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyshader.md">DestroyShader</a> function to destroy the handle that the <i>hShader</i> parameter specifies.</p>
 
 ## -requirements
@@ -140,13 +138,13 @@ VOID APIENTRY CreateGeometryShaderWithStreamOutput(
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-calcprivategeometryshaderwithstreamoutput.md">CalcPrivateGeometryShaderWithStreamOutput(D3D11)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542141">D3D11DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-devicefuncs~r1.md">D3D11DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542057">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-creategeometryshaderwithstreamoutput.md">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541746">D3D10DDIARG_STAGE_IO_SIGNATURES</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-stage-io-signatures.md">D3D10DDIARG_STAGE_IO_SIGNATURES</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyshader.md">DestroyShader</a>

@@ -64,7 +64,7 @@ typedef struct HBA_FCPTargetMapping {
 ### -field <b>entry</b>
 
 <dd>
-<p>Contains a variable length array of structures of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556064">HBA_FcpScsiEntry</a> each of which defines a mapping between an operating system identifier for a logical unit and the corresponding fibre channel protocol (FCP) identifier for the logical unit. </p>
+<p>Contains a variable length array of structures of type <a href="..\hbaapi\ns-hbaapi-hba-fcpscsientry.md">HBA_FcpScsiEntry</a> each of which defines a mapping between an operating system identifier for a logical unit and the corresponding fibre channel protocol (FCP) identifier for the logical unit. </p>
 </dd>
 </dl>
 
@@ -88,7 +88,7 @@ typedef struct HBA_FCPTargetMapping {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556064">HBA_FcpScsiEntry</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcpscsientry.md">HBA_FcpScsiEntry</a>
 </dt>
 </dl>
 <p> </p>

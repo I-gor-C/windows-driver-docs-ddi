@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The STI_DIAG structure is used as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543736">IStiDevice::Diagnostic</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543814">IStiUSD::Diagnostic</a> methods.</p>
+<p>The STI_DIAG structure is used as a parameter to the <a href="image.istidevice_diagnostic">IStiDevice::Diagnostic</a> and <a href="image.istiusd_diagnostic">IStiUSD::Diagnostic</a> methods.</p>
 
 
 ## -syntax
@@ -86,7 +86,7 @@ typedef struct _STI_DIAG {
 ### -field <b>sErrorInfo</b>
 
 <dd>
-<p>Structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff548396">STI_ERROR_INFO</a>.</p>
+<p>Structure of type <a href="image.sti_error_info">STI_ERROR_INFO</a>.</p>
 </dd>
 </dl>
 

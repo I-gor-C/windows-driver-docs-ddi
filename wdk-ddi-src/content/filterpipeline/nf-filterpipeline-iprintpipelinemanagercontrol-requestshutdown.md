@@ -72,9 +72,7 @@ HRESULT RequestShutdown(
 <p><code>RequestShutdown</code> returns an <b>HRESULT</b> value.</p>
 
 ## -remarks
-<p>A filter that uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556291">IXpsDocumentConsumer</a> interface must call <code>IPrintPipelineManagerControl::RequestShutdown</code> before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff556293">IXpsDocumentConsumer::CloseSender</a> to shut down the pipeline. Calling <b>IXpsDocumentConsumer::CloseSender</b> first can produce an invalid XPS document and cause an error. </p>
-
-<p>A filter that uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556291">IXpsDocumentConsumer</a> interface must call <code>IPrintPipelineManagerControl::RequestShutdown</code> before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff556293">IXpsDocumentConsumer::CloseSender</a> to shut down the pipeline. Calling <b>IXpsDocumentConsumer::CloseSender</b> first can produce an invalid XPS document and cause an error. </p>
+<p>A filter that uses the <a href="print.ixpsdocumentconsumer">IXpsDocumentConsumer</a> interface must call <code>IPrintPipelineManagerControl::RequestShutdown</code> before it calls <a href="print.ixpsdocumentconsumer_closesender">IXpsDocumentConsumer::CloseSender</a> to shut down the pipeline. Calling <b>IXpsDocumentConsumer::CloseSender</b> first can produce an invalid XPS document and cause an error. </p>
 
 ## -requirements
 <table>

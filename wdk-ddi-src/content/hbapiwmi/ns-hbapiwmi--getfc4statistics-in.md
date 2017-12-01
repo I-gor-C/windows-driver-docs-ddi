@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetFC4Statistics_IN structure is used to pass input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a> WMI method.</p>
+<p>The GetFC4Statistics_IN structure is used to pass input parameter data to the <a href="storage.getfc4statistics">GetFC4Statistics</a> WMI method.</p>
 
 
 ## -syntax
@@ -69,9 +69,9 @@ typedef struct _GetFC4Statistics_IN {
 </dl>
 
 ## -remarks
-<p>The method <a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a> queries an HBA and port of type Nx_Port for traffic statistics associated with the indicated FC-4 protocol.</p>
+<p>The method <a href="storage.getfc4statistics">GetFC4Statistics</a> queries an HBA and port of type Nx_Port for traffic statistics associated with the indicated FC-4 protocol.</p>
 
-<p>The WMI tool suite generates a declaration of the GetFC4Statistics_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetFC4Statistics_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 <p>For a definition of Nx_Port, see the T11 committee's specification for <i>Fibre Channel HBA API</i> (FC-HBA).</p>
 
@@ -92,7 +92,7 @@ typedef struct _GetFC4Statistics_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a>
+<a href="storage.getfc4statistics">GetFC4Statistics</a>
 </dt>
 </dl>
 <p> </p>

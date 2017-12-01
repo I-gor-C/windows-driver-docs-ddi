@@ -7,7 +7,7 @@ old-location: audio\usbsidebandaudio_stream_status_params.htm
 old-project: audio
 ms.assetid: 5C50D9B0-53C7-4F1B-A6D1-CE77A3645956
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

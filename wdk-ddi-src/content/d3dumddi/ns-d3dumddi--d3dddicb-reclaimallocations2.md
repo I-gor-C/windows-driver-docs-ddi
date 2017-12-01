@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>D3DDDICB_RECLAIMALLOCATIONS2</b> is used with <a href="https://msdn.microsoft.com/library/windows/hardware/dn903528">pfnReclaimAllocations2Cb</a> to describe video memory resources, previously offered for reuse by the driver,  that are to be reclaimed.</p>
+<p><b>D3DDDICB_RECLAIMALLOCATIONS2</b> is used with <a href="display.pfnreclaimallocations2cb">pfnReclaimAllocations2Cb</a> to describe video memory resources, previously offered for reuse by the driver,  that are to be reclaimed.</p>
 
 
 ## -syntax

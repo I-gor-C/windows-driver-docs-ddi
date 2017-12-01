@@ -75,7 +75,7 @@ VOID ScsiDebugPrint(
 ## -remarks
 <p>Prior to Windows XP, the <b>ScsiDebugPrint</b> routine compared the value passed to it in the <i>DebugPrintLevel </i>parameter with the value of the global variable <i>ScsiDebug</i>.and printed the <i>DebugMessage </i>string and diagnostic output whenever <i>DebugPrintLevel</i> was less than or equal to <i>ScsiDebug</i>. If <i>DebugPrintLevel</i> was <i>greater</i> than <i>ScsiDebug</i>.<b>ScsiDebugPrint</b> did not print anything. </p>
 
-<p>In Windows XP and later operating systems, <b>ScsiDebugPrint</b> no longer compares <i>DebugPrintLevel </i>to <i>ScsiDebug. </i>Instead, <b>ScsiDebugPrint</b> simply calls the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff543634">DbgPrintEx</a> and passes it the <i>DebugMessage </i>pointer. Before <b>ScsiDebugPrint</b> calls <b>DbgPrintEx</b> it maps the value passed in <i>DebugPrintLevel </i>to a value used by <b>DbgPrintEx</b> as follows. </p>
+<p>In Windows XP and later operating systems, <b>ScsiDebugPrint</b> no longer compares <i>DebugPrintLevel </i>to <i>ScsiDebug. </i>Instead, <b>ScsiDebugPrint</b> simply calls the routine <a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a> and passes it the <i>DebugMessage </i>pointer. Before <b>ScsiDebugPrint</b> calls <b>DbgPrintEx</b> it maps the value passed in <i>DebugPrintLevel </i>to a value used by <b>DbgPrintEx</b> as follows. </p>
 
 <p>0</p>
 
@@ -87,41 +87,11 @@ VOID ScsiDebugPrint(
 
 <p>2</p>
 
-<p>DPFLTR_TRACE_LEVEL</p>
-
 <p>3</p>
 
 <p>DPFLTR_INFO_LEVEL</p>
 
-<p> </p>
-
-<p>To view the message pointed to by <i>DebugMessage </i>from the kernel debugger, use the component filter mask Kd_ScsiMiniPort_Mask. For more information about debugging masks, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543634">DbgPrintEx</a>. </p>
-
-<p><b>ScsiDebugPrint</b> only functions in checked builds. <b>ScsiDebugPrint</b> compiles to nothing in free builds. </p>
-
-<p>Prior to Windows XP, the <b>ScsiDebugPrint</b> routine compared the value passed to it in the <i>DebugPrintLevel </i>parameter with the value of the global variable <i>ScsiDebug</i>.and printed the <i>DebugMessage </i>string and diagnostic output whenever <i>DebugPrintLevel</i> was less than or equal to <i>ScsiDebug</i>. If <i>DebugPrintLevel</i> was <i>greater</i> than <i>ScsiDebug</i>.<b>ScsiDebugPrint</b> did not print anything. </p>
-
-<p>In Windows XP and later operating systems, <b>ScsiDebugPrint</b> no longer compares <i>DebugPrintLevel </i>to <i>ScsiDebug. </i>Instead, <b>ScsiDebugPrint</b> simply calls the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff543634">DbgPrintEx</a> and passes it the <i>DebugMessage </i>pointer. Before <b>ScsiDebugPrint</b> calls <b>DbgPrintEx</b> it maps the value passed in <i>DebugPrintLevel </i>to a value used by <b>DbgPrintEx</b> as follows. </p>
-
-<p>0</p>
-
-<p>DPFLTR_WARNING_LEVEL</p>
-
-<p>1</p>
-
-<p>DPFLTR_TRACE_LEVEL</p>
-
-<p>2</p>
-
-<p>DPFLTR_TRACE_LEVEL</p>
-
-<p>3</p>
-
-<p>DPFLTR_INFO_LEVEL</p>
-
-<p> </p>
-
-<p>To view the message pointed to by <i>DebugMessage </i>from the kernel debugger, use the component filter mask Kd_ScsiMiniPort_Mask. For more information about debugging masks, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543634">DbgPrintEx</a>. </p>
+<p>To view the message pointed to by <i>DebugMessage </i>from the kernel debugger, use the component filter mask Kd_ScsiMiniPort_Mask. For more information about debugging masks, see <a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>. </p>
 
 <p><b>ScsiDebugPrint</b> only functions in checked builds. <b>ScsiDebugPrint</b> compiles to nothing in free builds. </p>
 
@@ -162,7 +132,7 @@ VOID ScsiDebugPrint(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543634">DbgPrintEx</a>
+<a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
 </dt>
 </dl>
 <p> </p>

@@ -60,7 +60,7 @@ typedef struct _SERCX_ACTIVITY {
 ### -field <b>Size</b>
 
 <dd>
-<p>The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406695">SerCxGetActivity</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
+<p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercxgetactivity.md">SerCxGetActivity</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
 ### -field <b>Transmitting</b>
@@ -77,7 +77,7 @@ typedef struct _SERCX_ACTIVITY {
 </dl>
 
 ## -remarks
-<p>This structure must be initialized by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439532">SERCX_ACTIVITY_INIT</a> function before its initial use. Thereafter, calls to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406695">SerCxGetActivity</a> method update the contents of this structure to indicate the work that is currently pending.</p>
+<p>This structure must be initialized by the <a href="..\sercx\nf-sercx-sercx-activity-init.md">SERCX_ACTIVITY_INIT</a> function before its initial use. Thereafter, calls to the <a href="..\sercx\nf-sercx-sercxgetactivity.md">SerCxGetActivity</a> method update the contents of this structure to indicate the work that is currently pending.</p>
 
 <p>The <b>SERCX_ACTIVITY</b> structure summarizes the pending work that the serial framework extension (SerCx) assigns to the serial controller driver. This work is driven by I/O requests from clients, but an I/O request does not necessarily spawn a work item. For example, if SerCx has a sufficient amount of received data in its memory buffer to complete a pending read request, this request does not cause the <b>Receiving</b> member of the <b>SERCX_ACTIVITY</b> structure to be set to TRUE.</p>
 
@@ -108,19 +108,19 @@ typedef struct _SERCX_ACTIVITY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439532">SERCX_ACTIVITY_INIT</a>
+<a href="..\sercx\nf-sercx-sercx-activity-init.md">SERCX_ACTIVITY_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406677">SerCxCompleteWait</a>
+<a href="..\sercx\nf-sercx-sercxcompletewait.md">SerCxCompleteWait</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406695">SerCxGetActivity</a>
+<a href="..\sercx\nf-sercx-sercxgetactivity.md">SerCxGetActivity</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406713">SerCxProgressReceive</a>
+<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406715">SerCxProgressTransmit</a>
+<a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
 </dt>
 </dl>
 <p> </p>

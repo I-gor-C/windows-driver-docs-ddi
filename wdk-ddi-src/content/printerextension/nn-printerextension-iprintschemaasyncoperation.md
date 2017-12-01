@@ -62,7 +62,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406716">Cancel</a>
+<a href="print.iprintschemaasyncoperation_cancel">Cancel</a>
 </td>
 <td align="left" width="63%">
 <p>Cancels the asynchronous PrintSchema operation.</p>
@@ -70,7 +70,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973223">Start</a>
+<a href="print.iprintschemaasyncoperation_start">Start</a>
 </td>
 <td align="left" width="63%">
 <p>Starts the asynchronous PrintSchema operation.</p>
@@ -83,9 +83,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>Any event sink that implements <a href="https://msdn.microsoft.com/library/windows/hardware/hh451211">IPrintSchemaAsyncOperationEvent</a> is connected to the associated event source, <b>IPrintSchemaAsyncOperation</b>, via the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a> mechanism. You must retrieve a pointer to the <b>IConnectionPoint</b> interface by invoking <b>QueryInterface</b> on the <b>IPrinterQueue</b> object.</p>
-
-<p>Any event sink that implements <a href="https://msdn.microsoft.com/library/windows/hardware/hh451211">IPrintSchemaAsyncOperationEvent</a> is connected to the associated event source, <b>IPrintSchemaAsyncOperation</b>, via the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a> mechanism. You must retrieve a pointer to the <b>IConnectionPoint</b> interface by invoking <b>QueryInterface</b> on the <b>IPrinterQueue</b> object.</p>
+<p>Any event sink that implements <a href="..\printerextension\nn-printerextension-iprintschemaasyncoperationevent.md">IPrintSchemaAsyncOperationEvent</a> is connected to the associated event source, <b>IPrintSchemaAsyncOperation</b>, via the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a> mechanism. You must retrieve a pointer to the <b>IConnectionPoint</b> interface by invoking <b>QueryInterface</b> on the <b>IPrinterQueue</b> object.</p>
 
 ## -requirements
 <table>
@@ -121,7 +119,7 @@ req.product: Windows 10 or later.
 <dl>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451211">IPrintSchemaAsyncOperationEvent</a>
+<a href="..\printerextension\nn-printerextension-iprintschemaasyncoperationevent.md">IPrintSchemaAsyncOperationEvent</a>
 </dt>
 </dl>
 <p> </p>

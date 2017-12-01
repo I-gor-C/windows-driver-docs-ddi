@@ -48,7 +48,7 @@ req.iface:
 </li>
 <li>
 <p>Selects an IEEE 1284.3 daisy chain parallel device or an end-of-chain device attached to the parallel port</p>
-<p>Although a client can select an end-of-chain device using a select device request, Microsoft recommends using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544023">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a> request instead. The parallel port function driver selects the end-of-chain device before it allocates the parallel port to a client.</p>
+<p>Although a client can select an end-of-chain device using a select device request, Microsoft recommends using an <a href="..\parallel\ni-parallel-ioctl-internal-parallel-port-allocate.md">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a> request instead. The parallel port function driver selects the end-of-chain device before it allocates the parallel port to a client.</p>
 </li>
 </ul>
 </p>
@@ -56,14 +56,14 @@ req.iface:
 <p>Allocates the parallel port</p>
 <p>The system-supplied function driver for parallel ports allocates the parallel port if the client does not set the PAR_HAVE_PORT_KEEP_PORT flag in the <b>CommandFlags</b> member of the input PARALLEL_1284_COMMAND structure. Otherwise, the parallel port function driver does not allocate the parallel port.</p>
 <p>Selects an IEEE 1284.3 daisy chain parallel device or an end-of-chain device attached to the parallel port</p>
-<p>Although a client can select an end-of-chain device using a select device request, Microsoft recommends using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544023">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a> request instead. The parallel port function driver selects the end-of-chain device before it allocates the parallel port to a client.</p>
+<p>Although a client can select an end-of-chain device using a select device request, Microsoft recommends using an <a href="..\parallel\ni-parallel-ioctl-internal-parallel-port-allocate.md">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a> request instead. The parallel port function driver selects the end-of-chain device before it allocates the parallel port to a client.</p>
 <p>For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71-8740-70c6fbe9a885">Selecting and Deselecting an IEEE 1284 Device Attached to a ParallelPort</a>.</p>
 
 
 ## -ioctlparameters
 
 ### -input-buffer
-<p>The <b>AssociatedIrp.SystemBuffer</b> points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544243">PARALLEL_1284_COMMAND</a> structure that the client allocates to input the select device information.</p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> points to a <a href="..\parallel\ns-parallel--parallel-1284-command.md">PARALLEL_1284_COMMAND</a> structure that the client allocates to input the select device information.</p>
 
 ### -input-buffer-length
 <p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member specifies the size, in bytes, of a PARALLEL_1284_COMMAND structure.</p>
@@ -166,10 +166,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543987">IOCTL_INTERNAL_DESELECT_DEVICE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-deselect-device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544243">PARALLEL_1284_COMMAND</a>
+<a href="..\parallel\ns-parallel--parallel-1284-command.md">PARALLEL_1284_COMMAND</a>
 </dt>
 </dl>
 <p> </p>

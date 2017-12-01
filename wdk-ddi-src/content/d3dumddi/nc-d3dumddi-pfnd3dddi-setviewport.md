@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetViewport(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544116">D3DDDIARG_VIEWPORTINFO</a> structure that describes the view-clipping rectangle.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-viewportinfo.md">D3DDDIARG_VIEWPORTINFO</a> structure that describes the view-clipping rectangle.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ __checkReturn HRESULT APIENTRY SetViewport(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544116">D3DDDIARG_VIEWPORTINFO</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-viewportinfo.md">D3DDDIARG_VIEWPORTINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY UpdateWInfo(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544124">D3DDDIARG_WINFO</a> structure that describes the w range for w buffering.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-winfo.md">D3DDDIARG_WINFO</a> structure that describes the w range for w buffering.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ __checkReturn HRESULT APIENTRY UpdateWInfo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544124">D3DDDIARG_WINFO</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-winfo.md">D3DDDIARG_WINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

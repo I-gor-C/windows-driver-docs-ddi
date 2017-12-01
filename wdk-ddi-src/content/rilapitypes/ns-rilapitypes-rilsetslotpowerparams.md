@@ -7,7 +7,7 @@ old-location: netvista\rilsetslotpowerparams_2.htm
 old-project: netvista
 ms.assetid: 1f62344f-9e54-4a17-9c0c-ef46614508f2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSETSLOTPOWERPARAMS, RILSETSLOTPOWERPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

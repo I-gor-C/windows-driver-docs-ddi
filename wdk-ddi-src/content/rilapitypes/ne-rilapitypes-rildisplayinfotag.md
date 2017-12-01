@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfotag_2.htm
 old-project: netvista
 ms.assetid: 1e9bbf23-8b3e-490f-b225-562a978662fe
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

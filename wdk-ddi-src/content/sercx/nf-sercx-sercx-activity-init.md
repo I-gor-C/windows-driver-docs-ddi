@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>SERCX_ACTIVITY_INIT</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439527">SERCX_ACTIVITY</a> structure.</p>
+<p>The <b>SERCX_ACTIVITY_INIT</b> function initializes a <a href="..\sercx\ns-sercx--sercx-activity.md">SERCX_ACTIVITY</a> structure.</p>
 
 
 ## -syntax
@@ -111,7 +111,7 @@ VOID SERCX_ACTIVITY_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439527">SERCX_ACTIVITY</a>
+<a href="..\sercx\ns-sercx--sercx-activity.md">SERCX_ACTIVITY</a>
 </dt>
 </dl>
 <p> </p>

@@ -68,7 +68,7 @@ NTSTATUS NTAPI* CreateMiracastContext(
 ### -param <i>pMiracastCallbacks</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265470">MIRACAST_CALLBACKS</a> structure that has pointers to callback functions, supplied by the operating system,  that the Miracast user-mode driver can call.</p>
+<p>A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi--miracast-callbacks.md">MIRACAST_CALLBACKS</a> structure that has pointers to callback functions, supplied by the operating system,  that the Miracast user-mode driver can call.</p>
 </dd>
 
 ### -param <i>ppMiracastContext</i> [out]
@@ -82,12 +82,6 @@ NTSTATUS NTAPI* CreateMiracastContext(
 <p>On success, this function returns <b>STATUS_SUCCESS</b>. Otherwise, the function returns an error code defined in the Ntstatus.h header.</p>
 
 ## -remarks
-<p>When this function is called, the Miracast user-mode driver should prepare all resources that it needs for a new Miracast connected session.</p>
-
-<p>The driver can call the callback functions pointed to by <i>pMiracastCallbacks</i> only during the lifetime of the current Miracast context.</p>
-
-<p>The operating system guarantees that only one of the <i>CreateMiracastContext</i>, <a href="..\netdispumdddi\nc-netdispumdddi-pfn-destroy-miracast-context.md">DestroyMiracastContext</a>, <a href="..\netdispumdddi\nc-netdispumdddi-pfn-start-miracast-session.md">StartMiracastSession</a>, and <a href="..\netdispumdddi\nc-netdispumdddi-pfn-stop-miracast-session.md">StopMiracastSession</a> functions is called at a time.</p>
-
 <p>When this function is called, the Miracast user-mode driver should prepare all resources that it needs for a new Miracast connected session.</p>
 
 <p>The driver can call the callback functions pointed to by <i>pMiracastCallbacks</i> only during the lifetime of the current Miracast context.</p>
@@ -140,7 +134,7 @@ NTSTATUS NTAPI* CreateMiracastContext(
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn-destroy-miracast-context.md">DestroyMiracastContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265470">MIRACAST_CALLBACKS</a>
+<a href="..\netdispumdddi\ns-netdispumdddi--miracast-callbacks.md">MIRACAST_CALLBACKS</a>
 </dt>
 <dt>
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn-start-miracast-session.md">StartMiracastSession</a>

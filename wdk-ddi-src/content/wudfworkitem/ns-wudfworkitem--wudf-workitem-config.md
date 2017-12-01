@@ -7,7 +7,7 @@ old-location: wdf\wudf_workitem_config.htm
 old-project: wdf
 ms.assetid: 877C6641-30F9-44BC-9286-3B1D880482C9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,9 +82,9 @@ typedef struct _WUDF_WORKITEM_CONFIG {
 </dl>
 
 ## -remarks
-<p>Your driver must initialize the <b>WUDF_WORKITEM_CONFIG</b> structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh464097">WUDF_WORKITEM_CONFIG_INIT</a>. Your driver can then pass the structure to the <a href="wdf.iwdfdevice3_createworkitem">IWDFDevice3::CreateWorkItem</a> method as an input parameter.</p>
+<p>Your driver must initialize the <b>WUDF_WORKITEM_CONFIG</b> structure by calling <a href="..\wudfworkitem\nf-wudfworkitem-wudf-workitem-config-init.md">WUDF_WORKITEM_CONFIG_INIT</a>. Your driver can then pass the structure to the <a href="wdf.iwdfdevice3_createworkitem">IWDFDevice3::CreateWorkItem</a> method as an input parameter.</p>
 
-<p>Setting the <b>AutomaticSerialization</b> member of <b>WUDF_WORKITEM_CONFIG</b> to TRUE has no effect if the driver did not enable automatic callback synchronization by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff556991">IWDFDeviceInitialize::SetLockingConstraint</a>.</p>
+<p>Setting the <b>AutomaticSerialization</b> member of <b>WUDF_WORKITEM_CONFIG</b> to TRUE has no effect if the driver did not enable automatic callback synchronization by calling <a href="wdf.iwdfdeviceinitialize_setlockingconstraint">IWDFDeviceInitialize::SetLockingConstraint</a>.</p>
 
 ## -requirements
 <table>
@@ -122,7 +122,7 @@ typedef struct _WUDF_WORKITEM_CONFIG {
 <a href="..\wudfworkitem\nc-wudfworkitem-wudf-workitem-function.md">OnWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464097">WUDF_WORKITEM_CONFIG_INIT</a>
+<a href="..\wudfworkitem\nf-wudfworkitem-wudf-workitem-config-init.md">WUDF_WORKITEM_CONFIG_INIT</a>
 </dt>
 <dt>
 <a href="wdf.iwdfdevice3_createworkitem">IWDFDevice3::CreateWorkItem</a>
@@ -130,4 +130,4 @@ typedef struct _WUDF_WORKITEM_CONFIG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_WORKITEM_CONFIG structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_WORKITEM_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

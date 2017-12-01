@@ -91,7 +91,7 @@ typedef struct _UCX_CONTROLLER_CONFIG {
 ### -field <b>EvtControllerQueryUsbCapability</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187821">EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_controller_query_usb_capability">EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY</a> callback function.</p>
 </dd>
 
 ### -field <b>Reserved1</b>
@@ -103,19 +103,19 @@ typedef struct _UCX_CONTROLLER_CONFIG {
 ### -field <b>EvtControllerGetCurrentFrameNumber</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187820">EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER</a> call back function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_controller_get_current_framenumber">EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER</a> call back function.</p>
 </dd>
 
 ### -field <b>EvtControllerUsbDeviceAdd</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187823">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_controller_usbdevice_add">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtControllerReset</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187822">EVT_UCX_CONTROLLER_RESET</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_controller_reset">EVT_UCX_CONTROLLER_RESET</a> callback function.</p>
 </dd>
 
 ### -field <b>Reserved2</b>

@@ -59,7 +59,7 @@ HBA_STATUS HBA_API HBA_GetBindingSupport(
 ### -param <i>Handle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
 ### -param <i>HbaPortWWN</i> [in]
@@ -71,12 +71,12 @@ HBA_STATUS HBA_API HBA_GetBindingSupport(
 ### -param <i>Flags</i> [out]
 
 <dd>
-<p>Contains a bitwise OR of flags associated with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556046">HBA_BIND_TYPE</a> WMI property qualifier that represent the persistent binding capabilities of the port that are currently enabled. </p>
+<p>Contains a bitwise OR of flags associated with the <a href="storage.hba_bind_type">HBA_BIND_TYPE</a> WMI property qualifier that represent the persistent binding capabilities of the port that are currently enabled. </p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_GetBindingSupport</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetBindingCapability</b> returns one of the following qualifiers.</p><dl>
+<p>The <b>HBA_GetBindingSupport</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetBindingCapability</b> returns one of the following qualifiers.</p><dl>
 <dt><b>HBA_STATUS_ERROR_ILLEGAL_WWN</b></dt>
 </dl><p>Returned if the adapter does not contain a port with the name <i>HbaPortWWN</i>. </p><dl>
 <dt><b>HBA_STATUS_ERROR_NOT_SUPPORTED</b></dt>
@@ -136,13 +136,13 @@ HBA_STATUS HBA_API HBA_GetBindingSupport(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556046">HBA_BIND_TYPE</a>
+<a href="storage.hba_bind_type">HBA_BIND_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

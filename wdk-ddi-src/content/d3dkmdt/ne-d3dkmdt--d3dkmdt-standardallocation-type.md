@@ -111,16 +111,16 @@ typedef enum _D3DKMDT_STANDARDALLOCATION_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557559">DXGKARG_CREATEALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createallocation.md">DXGKARG_CREATEALLOCATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546168">D3DKMDT_SHADOWSURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-shadowsurfacedata.md">D3DKMDT_SHADOWSURFACEDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546583">D3DKMDT_STAGINGSURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-stagingsurfacedata.md">D3DKMDT_STAGINGSURFACEDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546177">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-sharedprimarysurfacedata.md">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>

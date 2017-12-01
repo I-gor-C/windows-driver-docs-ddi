@@ -58,7 +58,7 @@ void USBD_GetUSBDIVersion(
 ### -param <i>VersionInformation</i> [out]
 
 <dd>
-<p>Pointer to caller-allocated memory for a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539149">USBD_VERSION_INFORMATION</a> structure that on return from the routine, contains version information about the HCD.</p>
+<p>Pointer to caller-allocated memory for a <a href="..\usb\ns-usb--usbd-version-information.md">USBD_VERSION_INFORMATION</a> structure that on return from the routine, contains version information about the HCD.</p>
 </dd>
 </dl>
 
@@ -66,8 +66,6 @@ void USBD_GetUSBDIVersion(
 <p>This routine does not return a value.</p>
 
 ## -remarks
-<p>Callers of this routine can be running at IRQL &lt;= DISPATCH_LEVEL if the memory for <i>VersionInformation</i> is allocated from nonpaged pool. Otherwise, callers must be running at IRQL &lt; DISPATCH_LEVEL.</p>
-
 <p>Callers of this routine can be running at IRQL &lt;= DISPATCH_LEVEL if the memory for <i>VersionInformation</i> is allocated from nonpaged pool. Otherwise, callers must be running at IRQL &lt; DISPATCH_LEVEL.</p>
 
 ## -requirements
@@ -116,7 +114,7 @@ void USBD_GetUSBDIVersion(
 <dl>
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406233">USBD_IsInterfaceVersionSupported</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-isinterfaceversionsupported.md">USBD_IsInterfaceVersionSupported</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilconfparticipantstatusparammask.htm
 old-project: netvista
 ms.assetid: a168b84a-fb3b-4e03-bb28-888b80cca6c6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

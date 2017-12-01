@@ -58,13 +58,13 @@ typedef struct D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT {
 ### -field <b>VertexShaderMinPrecision</b>
 
 <dd>
-<p>A combination of values of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh451152">D3DDDICAPS_SHADER_MIN_PRECISION</a> that are combined by using a bitwise OR operation. The resulting value specifies minimum precision levels that the driver supports for the vertex shader. A value of zero indicates that the driver supports only the default precision for the shader model, and not a lower precision.</p>
+<p>A combination of values of type <a href="..\d3dumddi\ne-d3dumddi-d3dddicaps-shader-min-precision.md">D3DDDICAPS_SHADER_MIN_PRECISION</a> that are combined by using a bitwise OR operation. The resulting value specifies minimum precision levels that the driver supports for the vertex shader. A value of zero indicates that the driver supports only the default precision for the shader model, and not a lower precision.</p>
 </dd>
 
 ### -field <b>PixelShaderMinPrecision</b>
 
 <dd>
-<p>A combination of values of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh451152">D3DDDICAPS_SHADER_MIN_PRECISION</a> that are combined by using a bitwise OR operation. The resulting value specifies minimum precision levels that the driver supports for the pixel shader. A value of zero indicates that the driver supports only the default precision for the shader model, and not a lower precision.</p>
+<p>A combination of values of type <a href="..\d3dumddi\ne-d3dumddi-d3dddicaps-shader-min-precision.md">D3DDDICAPS_SHADER_MIN_PRECISION</a> that are combined by using a bitwise OR operation. The resulting value specifies minimum precision levels that the driver supports for the pixel shader. A value of zero indicates that the driver supports only the default precision for the shader model, and not a lower precision.</p>
 </dd>
 </dl>
 
@@ -104,7 +104,7 @@ typedef struct D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451152">D3DDDICAPS_SHADER_MIN_PRECISION</a>
+<a href="..\d3dumddi\ne-d3dumddi-d3dddicaps-shader-min-precision.md">D3DDDICAPS_SHADER_MIN_PRECISION</a>
 </dt>
 </dl>
 <p> </p>

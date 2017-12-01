@@ -78,7 +78,7 @@ NTSTATUS UsbcStartDeviceCallback(
 ### -param <i>FunctionDescriptorBuffer</i> [out]
 
 <dd>
-<p>Pointer to a buffer that contains an array of function descriptors (<a href="https://msdn.microsoft.com/library/windows/hardware/ff539001">USBC_FUNCTION_DESCRIPTOR</a>).</p>
+<p>Pointer to a buffer that contains an array of function descriptors (<a href="..\usbbusif\ns-usbbusif--usbc-function-descriptor.md">USBC_FUNCTION_DESCRIPTOR</a>).</p>
 </dd>
 
 ### -param <i>FunctionDescriptorBufferLength</i> [out]
@@ -104,8 +104,6 @@ NTSTATUS UsbcStartDeviceCallback(
 <p>If the operation succeeds, the vendor-supplied callback routine must return STATUS_SUCCESS.</p>
 
 ## -remarks
-<p>For a general description of the callback routine mechanism, see <a href="buses.custom_enumeration_of_interface_collections_by_vendor_supplied_callbac">Customizing Enumeration of Interface Collections for Composite Devices</a>. </p>
-
 <p>For a general description of the callback routine mechanism, see <a href="buses.custom_enumeration_of_interface_collections_by_vendor_supplied_callbac">Customizing Enumeration of Interface Collections for Composite Devices</a>. </p>
 
 ## -requirements
@@ -135,7 +133,7 @@ NTSTATUS UsbcStartDeviceCallback(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538990">USBC_DEVICE_CONFIGURATION_INTERFACE_V1</a>
+<a href="..\usbbusif\ns-usbbusif--usbc-device-configuration-interface-v1.md">USBC_DEVICE_CONFIGURATION_INTERFACE_V1</a>
 </dt>
 </dl>
 <p> </p>

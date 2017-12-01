@@ -61,7 +61,7 @@ NTSTATUS APIENTRY pfnGetNumFrequencyRanges(
 ### -param <i>hMonitorFrequencyRangeSet</i> [in]
 
 <dd>
-<p>[in] A handle to a monitor frequency range set object. The display miniport driver previously obtained this handle by calling the <b>pfnGetMonitorFrequencyRangeSet</b> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568433">Monitor interface</a>. </p>
+<p>[in] A handle to a monitor frequency range set object. The display miniport driver previously obtained this handle by calling the <b>pfnGetMonitorFrequencyRangeSet</b> function of the <a href="display.monitor_interface">Monitor interface</a>. </p>
 </dd>
 
 ### -param <i>pNumMonitorFrequencyRanges</i> [out]

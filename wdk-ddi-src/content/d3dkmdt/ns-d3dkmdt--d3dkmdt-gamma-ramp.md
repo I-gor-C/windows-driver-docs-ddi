@@ -64,7 +64,7 @@ typedef struct _D3DKMDT_GAMMA_RAMP {
 ### -field <b>Type</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544565">D3DDDI_GAMMARAMP_TYPE</a> enumerator that specifies the format of the lookup table. </p>
+<p>A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-gammaramp-type.md">D3DDDI_GAMMARAMP_TYPE</a> enumerator that specifies the format of the lookup table. </p>
 </dd>
 
 ### -field <b>DataSize</b>
@@ -82,13 +82,13 @@ typedef struct _D3DKMDT_GAMMA_RAMP {
 ### -field <b>pRgb256x3x16</b>
 
 <dd>
-<p>If <b>Type</b> is equal to D3DDDI_GAMMARAMP_RGB256x3x16, this member is a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544571">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> structure that contains the lookup table. </p>
+<p>If <b>Type</b> is equal to D3DDDI_GAMMARAMP_RGB256x3x16, this member is a pointer to a <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> structure that contains the lookup table. </p>
 </dd>
 
 ### -field <b>pDxgi1</b>
 
 <dd>
-<p>If <b>Type</b> is equal to D3DDDI_GAMMARAMP_DXGI_1, this member is a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544568">D3DDDI_GAMMA_RAMP_DXGI_1</a> structure that contains the lookup table. </p>
+<p>If <b>Type</b> is equal to D3DDDI_GAMMARAMP_DXGI_1, this member is a pointer to a <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-dxgi-1.md">D3DDDI_GAMMA_RAMP_DXGI_1</a> structure that contains the lookup table. </p>
 </dd>
 
 ### -field <b>p3x4</b>
@@ -107,7 +107,7 @@ typedef struct _D3DKMDT_GAMMA_RAMP {
 </dl>
 
 ## -remarks
-<p>The <b>GammaRamp</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_GAMMA_RAMP structure.</p>
+<p>The <b>GammaRamp</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_GAMMA_RAMP structure.</p>
 
 ## -requirements
 <table>

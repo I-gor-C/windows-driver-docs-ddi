@@ -7,7 +7,7 @@ old-location: stream\kodeviceinitialize.htm
 old-project: stream
 ms.assetid: 68ae87c5-7d71-4e85-8052-4e5c422340fb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KoDeviceInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

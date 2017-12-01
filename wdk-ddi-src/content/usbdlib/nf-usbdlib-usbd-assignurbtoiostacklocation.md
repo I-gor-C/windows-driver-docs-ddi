@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USBD_AssignUrbToIoStackLocation</b> routine is called by a client driver to associate an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> with the IRP's next stack location.</p>
+<p>The <b>USBD_AssignUrbToIoStackLocation</b> routine is called by a client driver to associate an <a href="..\usb\ns-usb--urb.md">URB</a> with the IRP's next stack location.</p>
 
 
 ## -syntax
@@ -60,20 +60,20 @@ void USBD_AssignUrbToIoStackLocation(
 ### -param <i>USBDHandle</i> [in]
 
 <dd>
-<p>A USBD handle that is retrieved in a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406241">USBD_CreateHandle</a> routine.</p>
+<p>A USBD handle that is retrieved in a previous call to the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>
 </dd>
 
 ### -param <i>StackLocation</i> [in]
 
 <dd>
-<p>Pointer to the IRP's next stack location (<a href="https://msdn.microsoft.com/library/windows/hardware/ff550659">IO_STACK_LOCATION</a>). The client driver received a pointer to the stack location in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549266">IoGetNextIrpStackLocation</a>.</p>
+<p>Pointer to the IRP's next stack location (<a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>). The client driver received a pointer to the stack location in a previous call to <a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a>.</p>
 </dd>
 
 ### -param <i>Urb</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure that is allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/hh406250">USBD_UrbAllocate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406231">USBD_IsochUrbAllocate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406243">USBD_SelectConfigUrbAllocateAndBuild</a>, or 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh406245">USBD_SelectInterfaceUrbAllocateAndBuild</a>.</p>
+<p>Pointer to the <a href="..\usb\ns-usb--urb.md">URB</a> structure that is allocated by <a href="..\usbdlib\nf-usbdlib-usbd-urballocate.md">USBD_UrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd-isochurballocate.md">USBD_IsochUrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd-selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>, or 
+    <a href="..\usbdlib\nf-usbdlib-usbd-selectinterfaceurballocateandbuild.md">USBD_SelectInterfaceUrbAllocateAndBuild</a>.</p>
 </dd>
 </dl>
 
@@ -81,25 +81,15 @@ void USBD_AssignUrbToIoStackLocation(
 <p>This routine does not return a value.</p>
 
 ## -remarks
-<p>If the client driver allocated an URB by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh406250">USBD_UrbAllocate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406231">USBD_IsochUrbAllocate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406243">USBD_SelectConfigUrbAllocateAndBuild</a>, or 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh406245">USBD_SelectInterfaceUrbAllocateAndBuild</a>, then the driver <i>must</i> call <b>USBD_AssignUrbToIoStackLocation</b> to associate the URB with <a href="https://msdn.microsoft.com/library/windows/hardware/ff550659">IO_STACK_LOCATION</a> associated with the IRP. For URBs that are  allocated by those routines, <b>USBD_AssignUrbToIoStackLocation</b> replaces setting   <b>Parameters.Others.Argument1</b> of <b>IO_STACK_LOCATION</b> to the URB. (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537271">IOCTL_INTERNAL_USB_SUBMIT_URB</a>).  </p>
+<p>If the client driver allocated an URB by calling <a href="..\usbdlib\nf-usbdlib-usbd-urballocate.md">USBD_UrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd-isochurballocate.md">USBD_IsochUrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd-selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>, or 
+    <a href="..\usbdlib\nf-usbdlib-usbd-selectinterfaceurballocateandbuild.md">USBD_SelectInterfaceUrbAllocateAndBuild</a>, then the driver <i>must</i> call <b>USBD_AssignUrbToIoStackLocation</b> to associate the URB with <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> associated with the IRP. For URBs that are  allocated by those routines, <b>USBD_AssignUrbToIoStackLocation</b> replaces setting   <b>Parameters.Others.Argument1</b> of <b>IO_STACK_LOCATION</b> to the URB. (see <a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-submit-urb.md">IOCTL_INTERNAL_USB_SUBMIT_URB</a>).  </p>
 
 <p>The client driver must <i>not</i> call <b>USBD_AssignUrbToIoStackLocation</b> for an URB that is allocated by using other mechanisms, such as allocating the URB on the stack. Otherwise, the USB driver stack generates a bugcheck.
 </p>
 
-<p>The client driver must call <b>USBD_AssignUrbToIoStackLocation</b> before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a> to send  the request. <b>USBD_AssignUrbToIoStackLocation</b> populates the IRP's next stack location with the URB.  The routine also updates the <b>FileObject</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550659">IO_STACK_LOCATION</a>. </p>
+<p>The client driver must call <b>USBD_AssignUrbToIoStackLocation</b> before calling <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a> to send  the request. <b>USBD_AssignUrbToIoStackLocation</b> populates the IRP's next stack location with the URB.  The routine also updates the <b>FileObject</b> member of <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>. </p>
 
-<p>For a code example, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450899">How to Submit an URB</a>.</p>
-
-<p>If the client driver allocated an URB by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh406250">USBD_UrbAllocate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406231">USBD_IsochUrbAllocate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406243">USBD_SelectConfigUrbAllocateAndBuild</a>, or 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh406245">USBD_SelectInterfaceUrbAllocateAndBuild</a>, then the driver <i>must</i> call <b>USBD_AssignUrbToIoStackLocation</b> to associate the URB with <a href="https://msdn.microsoft.com/library/windows/hardware/ff550659">IO_STACK_LOCATION</a> associated with the IRP. For URBs that are  allocated by those routines, <b>USBD_AssignUrbToIoStackLocation</b> replaces setting   <b>Parameters.Others.Argument1</b> of <b>IO_STACK_LOCATION</b> to the URB. (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537271">IOCTL_INTERNAL_USB_SUBMIT_URB</a>).  </p>
-
-<p>The client driver must <i>not</i> call <b>USBD_AssignUrbToIoStackLocation</b> for an URB that is allocated by using other mechanisms, such as allocating the URB on the stack. Otherwise, the USB driver stack generates a bugcheck.
-</p>
-
-<p>The client driver must call <b>USBD_AssignUrbToIoStackLocation</b> before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a> to send  the request. <b>USBD_AssignUrbToIoStackLocation</b> populates the IRP's next stack location with the URB.  The routine also updates the <b>FileObject</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550659">IO_STACK_LOCATION</a>. </p>
-
-<p>For a code example, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450899">How to Submit an URB</a>.</p>
+<p>For a code example, see <a href="buses.send_requests_to_the_usb_driver_stack">How to Submit an URB</a>.</p>
 
 ## -requirements
 <table>
@@ -154,19 +144,19 @@ void USBD_AssignUrbToIoStackLocation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406250">USBD_UrbAllocate</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-urballocate.md">USBD_UrbAllocate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406231">USBD_IsochUrbAllocate</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-isochurballocate.md">USBD_IsochUrbAllocate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406243">USBD_SelectConfigUrbAllocateAndBuild</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406245">USBD_SelectInterfaceUrbAllocateAndBuild</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-selectinterfaceurballocateandbuild.md">USBD_SelectInterfaceUrbAllocateAndBuild</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450899">How to Submit an URB</a>
+<a href="buses.send_requests_to_the_usb_driver_stack">How to Submit an URB</a>
 </dt>
 </dl>
 <p> </p>

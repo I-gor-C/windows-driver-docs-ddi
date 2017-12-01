@@ -29,8 +29,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 req.lib: WinSpool.lib
-req.dll: Spoolss.dll; 
-WinSpool.drv
+req.dll: Spoolss.dll; WinSpool.drv
 req.irql: 
 req.iface: 
 req.product: Windows 10 or later.

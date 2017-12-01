@@ -7,7 +7,7 @@ old-location: kernel\psgethostsilo.htm
 old-project: kernel
 ms.assetid: 0B78562C-25DD-4CF2-9804-6DBEDE8B5F69
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PsGetHostSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices

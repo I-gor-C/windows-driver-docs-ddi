@@ -7,7 +7,7 @@ old-location: netvista\riluiccservice_2.htm
 old-project: netvista
 ms.assetid: ffd61de0-652a-4174-a0d2-d53c28180ea5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCSERVICE, RILUICCSERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices

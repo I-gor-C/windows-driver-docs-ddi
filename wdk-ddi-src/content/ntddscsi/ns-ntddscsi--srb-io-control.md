@@ -114,11 +114,11 @@ typedef struct _SRB_IO_CONTROL {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565367">SCSI Port I/O Control Codes</a>
+<a href="storage.scsi_port_i_o_control_codes">SCSI Port I/O Control Codes</a>
 </dt>
 <dt>SCSI Port I/O Control Codes</dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

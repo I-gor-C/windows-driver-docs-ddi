@@ -7,7 +7,7 @@ old-location: netvista\riluiccfiles_2.htm
 old-project: netvista
 ms.assetid: 282cd191-03c5-4599-9a61-e84221ef9143
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCFILES, RILUICCFILES
 ms.prod: windows-hardware
 ms.technology: windows-devices

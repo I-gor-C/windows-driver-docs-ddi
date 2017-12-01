@@ -62,7 +62,7 @@ HRESULT EnumFeatures(
 ### -param <i>poemuiobj</i> [in]
 
 <dd>
-<p>Pointer to the current context, an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559571">OEMUIOBJ</a> structure.</p>
+<p>Pointer to the current context, an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>dwFlags</i> [in]
@@ -115,14 +115,6 @@ HRESULT EnumFeatures(
 
 <p>For more information, see <a href="NULL">Using EnumFeatures</a>.</p>
 
-<p>This method is supported only for Windows XP Pscript5 plug-ins, not for Unidrv plug-ins. </p>
-
-<p><a href="wdkgloss.p#wdkgloss.printer-sticky#wdkgloss.printer-sticky"><i>printer-sticky</i></a> features (see <a href="NULL">Replacing Driver-Supplied Property Sheet Pages</a>), such as those that determine installable memory and the presence of optional accessories, are included in the feature keyword list, which appears in the output buffer pointed to by <i>pmszFeatureList</i> when the method returns. For Pscript5, such features have the <b>OpenGroupType</b> feature attribute set to "InstallableOptions". </p>
-
-<p>To reduce the need to make two calls per data access, pass the method an output buffer of a fixed size (1 KB, for example), and then check the function return value. If the method returns S_OK, the buffer already contains the data of interest. If the method returns E_OUTOFMEMORY, the value in *<i>pcbNeeded</i> is the buffer size needed to hold the data of interest. The caller should then allocate a buffer of that larger size and proceed with a second call to the method.</p>
-
-<p>For more information, see <a href="NULL">Using EnumFeatures</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -150,10 +142,10 @@ HRESULT EnumFeatures(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559571">OEMUIOBJ</a>
+<a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553052">IPrintCoreUI2::EnumOptions</a>
+<a href="print.iprintcoreui2_enumoptions">IPrintCoreUI2::EnumOptions</a>
 </dt>
 </dl>
 <p> </p>

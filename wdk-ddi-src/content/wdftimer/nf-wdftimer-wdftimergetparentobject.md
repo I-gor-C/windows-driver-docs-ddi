@@ -7,7 +7,7 @@ old-location: wdf\wdftimergetparentobject.htm
 old-project: wdf
 ms.assetid: 16ac6fea-9eea-4062-8ab9-fd14d80118a6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfTimerGetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Wdf01000.sys (KMDF); 
-WUDFx02000.dll (UMDF)
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
 req.iface: 
@@ -60,7 +59,7 @@ WDFOBJECT WdfTimerGetParentObject(
 ### -param <i>Timer</i> [in]
 
 <dd>
-<p>A handle to a framework timer object that was obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a>.</p>
+<p>A handle to a framework timer object that was obtained by calling <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>.</p>
 </dd>
 </dl>
 
@@ -70,10 +69,6 @@ WDFOBJECT WdfTimerGetParentObject(
 <p>A bug check occurs if the driver supplies an invalid object handle.</p>
 
 ## -remarks
-<p>For more information about framework timer objects, see <a href="wdf.using_timers">Using Timers</a>.</p>
-
-<p>The following code example shows now an <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function can obtain a timer object's parent. In this example, the driver previously specified that the timer object's parent is a queue object.</p>
-
 <p>For more information about framework timer objects, see <a href="wdf.using_timers">Using Timers</a>.</p>
 
 <p>The following code example shows now an <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function can obtain a timer object's parent. In this example, the driver previously specified that the timer object's parent is a queue object.</p>
@@ -140,7 +135,7 @@ WDFOBJECT WdfTimerGetParentObject(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>
 </td>
 </tr>
 </table>
@@ -148,9 +143,9 @@ WDFOBJECT WdfTimerGetParentObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a>
+<a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfTimerGetParentObject method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfTimerGetParentObject method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

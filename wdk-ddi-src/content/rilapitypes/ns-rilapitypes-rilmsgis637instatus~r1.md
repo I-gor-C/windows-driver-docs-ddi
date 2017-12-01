@@ -7,7 +7,7 @@ old-location: netvista\rilmsgis637instatus_2.htm
 old-project: netvista
 ms.assetid: 70215db8-52c0-48c5-8e59-c60a61fbd07e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMSGIS637INSTATUS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

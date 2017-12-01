@@ -7,7 +7,7 @@ old-location: stream\framing_prop.htm
 old-project: stream
 ms.assetid: EE68F14D-F76D-4D98-99FB-BD3FB93B669A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS, *PTRANSPORTVIDEOPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

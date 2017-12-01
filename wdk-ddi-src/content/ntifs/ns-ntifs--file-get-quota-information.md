@@ -71,12 +71,12 @@ typedef struct _FILE_GET_QUOTA_INFORMATION {
 ### -field <b>Sid</b>
 
 <dd>
-<p>Security identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>) whose quota information is to be returned. </p>
+<p>Security identifier (<a href="ifsk.sid">SID</a>) whose quota information is to be returned. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The FILE_GET_QUOTA_INFORMATION structure is used to query for quota information. The quota information is returned in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540342">FILE_QUOTA_INFORMATION</a>-structured buffer. </p>
+<p>The FILE_GET_QUOTA_INFORMATION structure is used to query for quota information. The quota information is returned in a <a href="..\ntifs\ns-ntifs--file-quota-information.md">FILE_QUOTA_INFORMATION</a>-structured buffer. </p>
 
 <p>This structure must be aligned on a LONG (4-byte) boundary. </p>
 
@@ -97,19 +97,19 @@ typedef struct _FILE_GET_QUOTA_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540342">FILE_QUOTA_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-quota-information.md">FILE_QUOTA_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548279">IoCheckQuotaBufferValidity</a>
+<a href="..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md">IoCheckQuotaBufferValidity</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
+<a href="ifsk.irp_mj_query_quota">IRP_MJ_QUERY_QUOTA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
+<a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 </dl>
 <p> </p>

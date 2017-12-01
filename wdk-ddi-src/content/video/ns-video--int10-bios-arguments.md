@@ -105,7 +105,7 @@ typedef struct _INT10_BIOS_ARGUMENTS {
 </dl>
 
 ## -remarks
-<p>The first seven members of the INT10_BIOS_ARGUMENTS structure are identical to those of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570553">VIDEO_x86_BIOS_ARGUMENTS</a> structure.</p>
+<p>The first seven members of the INT10_BIOS_ARGUMENTS structure are identical to those of the <a href="..\video\ns-video--video-x86-bios-arguments.md">VIDEO_x86_BIOS_ARGUMENTS</a> structure.</p>
 
 ## -requirements
 <table>
@@ -127,7 +127,7 @@ typedef struct _INT10_BIOS_ARGUMENTS {
 <a href="..\video\nc-video-pint10-call-bios.md">Int10CallBios</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570553">VIDEO_x86_BIOS_ARGUMENTS</a>
+<a href="..\video\ns-video--video-x86-bios-arguments.md">VIDEO_x86_BIOS_ARGUMENTS</a>
 </dt>
 </dl>
 <p> </p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION</b> is used with <a href="https://msdn.microsoft.com/library/windows/hardware/dn906317">CheckVideoProcessorFormatConversion</a> to indicate whether the driver supports a specific format/color space conversion combination.</p>
+<p><b>D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION</b> is used with <a href="display.checkvideoprocessorformatconversion">CheckVideoProcessorFormatConversion</a> to indicate whether the driver supports a specific format/color space conversion combination.</p>
 
 
 ## -syntax
@@ -125,7 +125,7 @@ typedef struct D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906317">CheckVideoProcessorFormatConversion</a>
+<a href="display.checkvideoprocessorformatconversion">CheckVideoProcessorFormatConversion</a>
 </dt>
 </dl>
 <p> </p>

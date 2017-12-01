@@ -62,13 +62,13 @@ FLT_PREOP_CALLBACK_STATUS FltCheckOplockEx(
 ### -param <i>Oplock</i> [in]
 
 <dd>
-<p>An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543289">FltInitializeOplock</a>. </p>
+<p>An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>. </p>
 </dd>
 
 ### -param <i>CallbackData</i> [in]
 
 <dd>
-<p>A pointer to the callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure for the I/O operation. </p>
+<p>A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. </p>
 </dd>
 
 ### -param <i>Flags</i> [in]
@@ -93,7 +93,7 @@ FLT_PREOP_CALLBACK_STATUS FltCheckOplockEx(
 ### -param <a id="OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK__0x00000004_"></a><a id="oplock_flag_back_out_atomic_oplock__0x00000004_"></a><a id="OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK__0X00000004_"></a>OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK (0x00000004)
 
 <dd>
-<p>Specifies that <a href="https://msdn.microsoft.com/library/windows/hardware/ff545771">FsRtlCheckOplockEx</a> should revert any state that was previously set up through a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543398">FltOplockFsctrl</a> routine. <b>FltOplockFsctrl</b> is called when an IRP_MJ_CREATE request is processed. This IRP_MJ_CREATE request specifies the FILE_OPEN_REQUIRING_OPLOCK flag in the create options parameter. The OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK flag is typically used in final processing of such a create request when it previously failed. </p>
+<p>Specifies that <a href="ifsk.fsrtlcheckoplockex">FsRtlCheckOplockEx</a> should revert any state that was previously set up through a call to the <a href="..\fltkernel\nf-fltkernel-fltoplockfsctrl.md">FltOplockFsctrl</a> routine. <b>FltOplockFsctrl</b> is called when an IRP_MJ_CREATE request is processed. This IRP_MJ_CREATE request specifies the FILE_OPEN_REQUIRING_OPLOCK flag in the create options parameter. The OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK flag is typically used in final processing of such a create request when it previously failed. </p>
 </dd>
 
 ### -param <a id="OPLOCK_FLAG_IGNORE_OPLOCK_KEYS__0x00000008_"></a><a id="oplock_flag_ignore_oplock_keys__0x00000008_"></a><a id="OPLOCK_FLAG_IGNORE_OPLOCK_KEYS__0X00000008_"></a>OPLOCK_FLAG_IGNORE_OPLOCK_KEYS (0x00000008)
@@ -187,11 +187,11 @@ FLT_PREOP_CALLBACK_STATUS FltCheckOplockEx(
 ## -returns
 <p><b>FltCheckOplockEx</b> returns one of the following FLT_PREOP_CALLBACK_STATUS codes: </p><dl>
 <dt><b>FLT_PREOP_COMPLETE</b></dt>
-</dl><p><b>FltCheckOplockEx</b> encountered a pool allocation failure, or a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545771">FsRtlCheckOplockEx</a> function returned an error. <b>FltCheckOplockEx</b> sets the error code in the <b>Status</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure of the <b>IoStatus</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a> callback data structure. The <i>CallbackData</i> parameter points to this FLT_CALLBACK_DATA structure. </p><dl>
+</dl><p><b>FltCheckOplockEx</b> encountered a pool allocation failure, or a call to the <a href="ifsk.fsrtlcheckoplockex">FsRtlCheckOplockEx</a> function returned an error. <b>FltCheckOplockEx</b> sets the error code in the <b>Status</b> member of the <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure of the <b>IoStatus</b> member of the <a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a> callback data structure. The <i>CallbackData</i> parameter points to this FLT_CALLBACK_DATA structure. </p><dl>
 <dt><b>FLT_PREOP_PENDING</b></dt>
 </dl><p>An oplock break was initiated, which caused the Filter Manager to post the I/O operation to a work queue. The I/O operation is represented by the callback data that the <i>CallbackData</i> parameter points to. </p><dl>
 <dt><b>FLT_PREOP_SUCCESS_WITH_CALLBACK</b></dt>
-</dl><p>The callback data that the <i>CallbackData</i> parameter points to was not pended, and the I/O operation was performed immediately. Be aware that if the caller specified OPLOCK_FLAG_COMPLETE_IF_OPLOCKED in the <i>Flags</i> parameter, an oplock break might actually be in progress even though the I/O operation was not pended. To determine whether this is the situation, the caller should check for STATUS_OPLOCK_BREAK_IN_PROGRESS in the <b>Status</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure of the <b>IoStatus</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a> callback data structure. </p>
+</dl><p>The callback data that the <i>CallbackData</i> parameter points to was not pended, and the I/O operation was performed immediately. Be aware that if the caller specified OPLOCK_FLAG_COMPLETE_IF_OPLOCKED in the <i>Flags</i> parameter, an oplock break might actually be in progress even though the I/O operation was not pended. To determine whether this is the situation, the caller should check for STATUS_OPLOCK_BREAK_IN_PROGRESS in the <b>Status</b> member of the <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure of the <b>IoStatus</b> member of the <a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a> callback data structure. </p>
 
 <p> </p>
 
@@ -202,85 +202,9 @@ FLT_PREOP_CALLBACK_STATUS FltCheckOplockEx(
 
 <p>If the I/O operation cannot continue until the oplock break is complete, <b>FltCheckOplockEx</b> returns FLT_PREOP_PENDING and calls the callback routine that the <i>PrePostCallbackDataRoutine</i> parameter points to. </p>
 
-<p>If a minifilter driver uses oplocks, it must call <b>FltCheckOplockEx</b> from any preoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) routine for I/O operations that can cause oplock breaks. This rule applies to the following types of I/O operations, because these operations can cause oplock breaks: </p><dl>
-<dd>
+<p>If a minifilter driver uses oplocks, it must call <b>FltCheckOplockEx</b> from any preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine for I/O operations that can cause oplock breaks. This rule applies to the following types of I/O operations, because these operations can cause oplock breaks: </p>
+
 <p>IRP_MJ_CLEANUP</p>
-</dd>
-<dd>
-<p>IRP_MJ_CREATE</p>
-</dd>
-<dd>
-<p>IRP_MJ_FILE_SYSTEM_CONTROL</p>
-</dd>
-<dd>
-<p>IRP_MJ_FLUSH_BUFFERS</p>
-</dd>
-<dd>
-<p>IRP_MJ_LOCK_CONTROL</p>
-</dd>
-<dd>
-<p>IRP_MJ_READ</p>
-</dd>
-<dd>
-<p>IRP_MJ_SET_INFORMATION</p>
-</dd>
-<dd>
-<p>IRP_MJ_WRITE</p>
-</dd>
-</dl><p>IRP_MJ_CLEANUP</p>
-
-<p>IRP_MJ_CREATE</p>
-
-<p>IRP_MJ_FILE_SYSTEM_CONTROL</p>
-
-<p>IRP_MJ_FLUSH_BUFFERS</p>
-
-<p>IRP_MJ_LOCK_CONTROL</p>
-
-<p>IRP_MJ_READ</p>
-
-<p>IRP_MJ_SET_INFORMATION</p>
-
-<p>IRP_MJ_WRITE</p>
-
-<p>The I/O operation must be an IRP-based I/O operation. To determine whether a given callback data structure represents an IRP-based I/O operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. </p>
-
-<p>Minifilters must not call <b>FltCheckOplockEx</b> again within the callback specified in <i>WaitCompletionRoutine</i>. Doing so can result in a deadlock condition if the oplock package calls the completion callback before <b>FltCheckOplockEx</b> returns.</p>
-
-<p>For more information about opportunistic locks, see the Microsoft Windows SDK documentation. </p>
-
-<p>A minifilter driver calls <b>FltCheckOplockEx</b> to synchronize an IRP-based I/O operation with the current oplock state of a file according to the following conditions: </p>
-
-<p>If the I/O operation will cause the oplock to break, the oplock break is initiated. </p>
-
-<p>If the I/O operation cannot continue until the oplock break is complete, <b>FltCheckOplockEx</b> returns FLT_PREOP_PENDING and calls the callback routine that the <i>PrePostCallbackDataRoutine</i> parameter points to. </p>
-
-<p>If a minifilter driver uses oplocks, it must call <b>FltCheckOplockEx</b> from any preoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) routine for I/O operations that can cause oplock breaks. This rule applies to the following types of I/O operations, because these operations can cause oplock breaks: </p><dl>
-<dd>
-<p>IRP_MJ_CLEANUP</p>
-</dd>
-<dd>
-<p>IRP_MJ_CREATE</p>
-</dd>
-<dd>
-<p>IRP_MJ_FILE_SYSTEM_CONTROL</p>
-</dd>
-<dd>
-<p>IRP_MJ_FLUSH_BUFFERS</p>
-</dd>
-<dd>
-<p>IRP_MJ_LOCK_CONTROL</p>
-</dd>
-<dd>
-<p>IRP_MJ_READ</p>
-</dd>
-<dd>
-<p>IRP_MJ_SET_INFORMATION</p>
-</dd>
-<dd>
-<p>IRP_MJ_WRITE</p>
-</dd>
-</dl><p>IRP_MJ_CLEANUP</p>
 
 <p>IRP_MJ_CREATE</p>
 
@@ -355,25 +279,25 @@ FLT_PREOP_CALLBACK_STATUS FltCheckOplockEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543289">FltInitializeOplock</a>
+<a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543398">FltOplockFsctrl</a>
+<a href="..\fltkernel\nf-fltkernel-fltoplockfsctrl.md">FltOplockFsctrl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545771">FsRtlCheckOplockEx</a>
+<a href="ifsk.fsrtlcheckoplockex">FsRtlCheckOplockEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a>
+<a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
 </dt>
 </dl>
 <p> </p>

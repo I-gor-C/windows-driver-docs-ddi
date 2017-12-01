@@ -7,7 +7,7 @@ old-location: netvista\rilterminalcapabilityinfo_2.htm
 old-project: netvista
 ms.assetid: 29d9bf92-ea35-4d74-bc4c-3f386e7fb3fa
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILTERMINALCAPABILITYINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: debugger\getdebuggerdata.htm
 old-project: debugger
 ms.assetid: a07afa2e-1f7d-4685-9ede-8b7805dd6583
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: GetDebuggerData
 ms.prod: windows-hardware
 ms.technology: windows-devices

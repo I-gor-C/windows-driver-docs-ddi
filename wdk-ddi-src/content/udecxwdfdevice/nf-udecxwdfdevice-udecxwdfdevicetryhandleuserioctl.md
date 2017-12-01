@@ -59,7 +59,7 @@ FORCEINLINE BOOLEAN UdecxWdfDeviceTryHandleUserIoctl(
 ### -param <i>Device</i> [in]
 
 <dd>
-<p>A handle to a framework device object that represents the controller. The client driver initialized this object in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627990">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
+<p>A handle to a framework device object that represents the controller. The client driver initialized this object in the previous call to <a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
 </dd>
 
 ### -param <i>Request</i> [in]
@@ -74,10 +74,6 @@ FORCEINLINE BOOLEAN UdecxWdfDeviceTryHandleUserIoctl(
     not complete the request. FALSE otherwise; the driver must complete the request.</p>
 
 ## -remarks
-<p>The UDE client driver presents itself to user-mode software as a host controller driver. The client driver registers and exposes the GUID_DEVINTERFACE_USB_HOST_CONTROLLER device interface GUID. User-mode software  can open a handle to the device by specifying that GUID. By using that handle, the software can send IOCTL requests. </p>
-
-<p> The client driver does not need to process the received IOCTL. It can send the request to the class extension by calling <b>UdecxWdfDeviceTryHandleUserIoctl</b>. If the class extension recognizes the request as a standard request, it completes it. Otherwise, the call fails and the client driver is then expected to complete the request. For a list of IOCTLs that must be handled, see <a href="usb_interfaces.htm#um_ioctl">USB IOCTLs for applications and services</a>.</p>
-
 <p>The UDE client driver presents itself to user-mode software as a host controller driver. The client driver registers and exposes the GUID_DEVINTERFACE_USB_HOST_CONTROLLER device interface GUID. User-mode software  can open a handle to the device by specifying that GUID. By using that handle, the software can send IOCTL requests. </p>
 
 <p> The client driver does not need to process the received IOCTL. It can send the request to the class extension by calling <b>UdecxWdfDeviceTryHandleUserIoctl</b>. If the class extension recognizes the request as a standard request, it completes it. Otherwise, the call fails and the client driver is then expected to complete the request. For a list of IOCTLs that must be handled, see <a href="usb_interfaces.htm#um_ioctl">USB IOCTLs for applications and services</a>.</p>
@@ -141,10 +137,10 @@ FORCEINLINE BOOLEAN UdecxWdfDeviceTryHandleUserIoctl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_read.htm
 old-project: netvista
 ms.assetid: A6D2C017-0D50-4AD7-9241-110C97F5FE92
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,20 +66,20 @@ NTSTATUS NdkRead(
 ### -param <i>pNdkQp</i> [in]
 
 <dd>
-<p>A pointer to an NDK queue pair (QP) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439933">NDK_QP</a>).</p>
+<p>A pointer to an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>).</p>
 </dd>
 
 ### -param <i>RequestContext</i> [in, optional]
 
 <dd>
-<p>A context value to be returned in the <b>RequestContext</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439935">NDK_RESULT</a> structure for this request.
+<p>A context value to be returned in the <b>RequestContext</b> member of the <a href="..\ndkpi\ns-ndkpi--ndk-result.md">NDK_RESULT</a> structure for this request.
 </p>
 </dd>
 
 ### -param <i>pSgl</i> 
 
 <dd>
-<p>An array of SGE structures (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439936">NDK_SGE</a>) that represent the buffers to place incoming data into.</p>
+<p>An array of SGE structures (<a href="..\ndkpi\ns-ndkpi--ndk-sge.md">NDK_SGE</a>) that represent the buffers to place incoming data into.</p>
 </dd>
 
 ### -param <i>nSge</i> [in]
@@ -150,7 +150,7 @@ parameter.</p>
 </dl>
 </td>
 <td width="60%">
-<p>If this flag is set and the provider also reports <b>NDK_ADAPTER_FLAG_RDMA_READ_LOCAL_INVALIDATE_SUPPORTED</b> adapter capability in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a> structure, successful completion of the <i>NdkRead</i> function means that the first buffer specified in the <i>pSgl</i> parameter is invalidated. Unsuccessful completion leaves the buffer and token in an undefined state. This flag is ignored if the provider does not report <b>NDK_ADAPTER_FLAG_RDMA_READ_LOCAL_INVALIDATE_SUPPORTED</b> adapter capability in the <b>NDK_ADAPTER_INFO</b> structure.</p>
+<p>If this flag is set and the provider also reports <b>NDK_ADAPTER_FLAG_RDMA_READ_LOCAL_INVALIDATE_SUPPORTED</b> adapter capability in the <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure, successful completion of the <i>NdkRead</i> function means that the first buffer specified in the <i>pSgl</i> parameter is invalidated. Unsuccessful completion leaves the buffer and token in an undefined state. This flag is ignored if the provider does not report <b>NDK_ADAPTER_FLAG_RDMA_READ_LOCAL_INVALIDATE_SUPPORTED</b> adapter capability in the <b>NDK_ADAPTER_INFO</b> structure.</p>
 <p><b>Note</b>  This flag is supported only in NDKPI 1.2 (Windows Server 2012 R2) and later.</p>
 </td>
 </tr>
@@ -191,8 +191,6 @@ parameter.</p>
 <p> </p>
 
 ## -remarks
-<p><i>NdkRead</i> posts a read request on a queue pair (QP).</p>
-
 <p><i>NdkRead</i> posts a read request on a queue pair (QP).</p>
 
 ## -requirements
@@ -244,19 +242,19 @@ parameter.</p>
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439858">NDK_FN_ARM_CQ</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-arm-cq.md">NDK_FN_ARM_CQ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a>
+<a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439933">NDK_QP</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439935">NDK_RESULT</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-result.md">NDK_RESULT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439936">NDK_SGE</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-sge.md">NDK_SGE</a>
 </dt>
 <dt>
 <a href="NULL">NDKPI Deferred Processing Scheme</a>
@@ -267,4 +265,4 @@ parameter.</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_READ callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_READ callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -104,13 +104,9 @@ NTSTATUS PcwCreateInstance(
 <p> </p>
 
 ## -remarks
-<p>Before the provider uses this function, the provider must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a> function to create a registration.</p>
+<p>Before the provider uses this function, the provider must call the <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a> function to create a registration.</p>
 
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550316">PcwCloseInstance</a> function to close this instance.</p>
-
-<p>Before the provider uses this function, the provider must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a> function to create a registration.</p>
-
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550316">PcwCloseInstance</a> function to close this instance.</p>
+<p>Use the <a href="..\wdm\nf-wdm-pcwcloseinstance.md">PcwCloseInstance</a> function to close this instance.</p>
 
 ## -requirements
 <table>
@@ -175,10 +171,10 @@ NTSTATUS PcwCreateInstance(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550316">PcwCloseInstance</a>
+<a href="..\wdm\nf-wdm-pcwcloseinstance.md">PcwCloseInstance</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a>
+<a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>
 </dt>
 </dl>
 <p> </p>

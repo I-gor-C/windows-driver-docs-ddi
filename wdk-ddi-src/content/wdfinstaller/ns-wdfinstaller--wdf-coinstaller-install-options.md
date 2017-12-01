@@ -7,7 +7,7 @@ old-location: wdf\wdf_coinstaller_install_options.htm
 old-project: wdf
 ms.assetid: be8867e4-42be-4f11-bf4b-1b0fd29daa06
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS, *PWDF_COINSTALLER_INSTALL_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,15 +66,15 @@ typedef struct _WDF_COINSTALLER_INSTALL_OPTIONS {
 ### -field <b>ShowRebootPrompt</b>
 
 <dd>
-<p>A Boolean value. If this value is <b>TRUE</b>, and if the co-installer determines that the computer must be restarted to complete the driver installation, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548839">WdfPreDeviceInstallEx</a> informs the Plug and Play (PnP) manager, and the PnP manager prompts the user that a restart is necessary.  </p>
-<p>If this value is <b>FALSE</b>, and if the co-installer determines that the computer must be restarted to complete the driver installation, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548839">WdfPreDeviceInstallEx</a> does not inform the PnP manager. </p>
+<p>A Boolean value. If this value is <b>TRUE</b>, and if the co-installer determines that the computer must be restarted to complete the driver installation, <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a> informs the Plug and Play (PnP) manager, and the PnP manager prompts the user that a restart is necessary.  </p>
+<p>If this value is <b>FALSE</b>, and if the co-installer determines that the computer must be restarted to complete the driver installation, <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a> does not inform the PnP manager. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure is used as an input parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548839">WdfPreDeviceInstallEx</a>.</p>
+<p>The <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure is used as an input parameter to <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a>.</p>
 
-<p>Your installer should initialize the <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff551243">WDF_COINSTALLER_INSTALL_OPTIONS_INIT</a>.</p>
+<p>Your installer should initialize the <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure by calling <a href="..\wdfinstaller\nf-wdfinstaller-wdf-coinstaller-install-options-init.md">WDF_COINSTALLER_INSTALL_OPTIONS_INIT</a>.</p>
 
 ## -requirements
 <table>
@@ -101,9 +101,9 @@ typedef struct _WDF_COINSTALLER_INSTALL_OPTIONS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551243">WDF_COINSTALLER_INSTALL_OPTIONS_INIT</a>
+<a href="..\wdfinstaller\nf-wdfinstaller-wdf-coinstaller-install-options-init.md">WDF_COINSTALLER_INSTALL_OPTIONS_INIT</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_COINSTALLER_INSTALL_OPTIONS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_COINSTALLER_INSTALL_OPTIONS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

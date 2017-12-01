@@ -58,7 +58,7 @@ HRESULT GetStatus(
 ### -param <i>pDevStatus</i> 
 
 <dd>
-<p>Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548369">STI_DEVICE_STATUS</a> structure.</p>
+<p>Caller-supplied pointer to an <a href="..\sti\ns-sti--sti-device-status.md">STI_DEVICE_STATUS</a> structure.</p>
 </dd>
 </dl>
 
@@ -66,15 +66,9 @@ HRESULT GetStatus(
 <p>If the operation succeeds, the method should return S_OK. Otherwise, it should return one of the STIERR-prefixed error codes defined in <i>stierr.h</i>.</p>
 
 ## -remarks
-<p>The caller supplies values for the <b>dwSize</b> and <b>StatusMask</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548369">STI_DEVICE_STATUS</a> structure, and the minidriver must supply values for the rest of the structure members.</p>
+<p>The caller supplies values for the <b>dwSize</b> and <b>StatusMask</b> members of the <a href="..\sti\ns-sti--sti-device-status.md">STI_DEVICE_STATUS</a> structure, and the minidriver must supply values for the rest of the structure members.</p>
 
-<p>If the driver has previously set the STI_GENCAP_POLLING_NEEDED flag in the device's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548380">STI_DEV_CAPS</a> structure, the minidriver's <b>IStiUSD::GetStatus</b> method is the means by which the event monitor determines if a <a href="NULL">Still Image Device Events</a> has occurred. The event monitor will call the method, specifying STI_DEVSTATUS_EVENT_STATE in the supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff548369">STI_DEVICE_STATUS</a> structure. The driver must poll the device and set STI_EVENTHANDLING_PENDING if an event has occurred.</p>
-
-<p>If the caller specifies STI_DEVSTATUS_ONLINE_STATE in the supplied STI_DEVICE_STATUS structure, the minidriver should set the appropriate flag in the structure's <b>dwOnlineState</b> member.</p>
-
-<p>The caller supplies values for the <b>dwSize</b> and <b>StatusMask</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548369">STI_DEVICE_STATUS</a> structure, and the minidriver must supply values for the rest of the structure members.</p>
-
-<p>If the driver has previously set the STI_GENCAP_POLLING_NEEDED flag in the device's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548380">STI_DEV_CAPS</a> structure, the minidriver's <b>IStiUSD::GetStatus</b> method is the means by which the event monitor determines if a <a href="NULL">Still Image Device Events</a> has occurred. The event monitor will call the method, specifying STI_DEVSTATUS_EVENT_STATE in the supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff548369">STI_DEVICE_STATUS</a> structure. The driver must poll the device and set STI_EVENTHANDLING_PENDING if an event has occurred.</p>
+<p>If the driver has previously set the STI_GENCAP_POLLING_NEEDED flag in the device's <a href="..\sti\ns-sti--sti-dev-caps.md">STI_DEV_CAPS</a> structure, the minidriver's <b>IStiUSD::GetStatus</b> method is the means by which the event monitor determines if a <a href="NULL">Still Image Device Events</a> has occurred. The event monitor will call the method, specifying STI_DEVSTATUS_EVENT_STATE in the supplied <a href="..\sti\ns-sti--sti-device-status.md">STI_DEVICE_STATUS</a> structure. The driver must poll the device and set STI_EVENTHANDLING_PENDING if an event has occurred.</p>
 
 <p>If the caller specifies STI_DEVSTATUS_ONLINE_STATE in the supplied STI_DEVICE_STATUS structure, the minidriver should set the appropriate flag in the structure's <b>dwOnlineState</b> member.</p>
 
@@ -105,7 +99,7 @@ HRESULT GetStatus(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543752">IStiDevice::GetStatus</a>
+<a href="image.istidevice_getstatus">IStiDevice::GetStatus</a>
 </dt>
 </dl>
 <p> </p>

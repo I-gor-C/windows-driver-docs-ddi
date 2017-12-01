@@ -62,7 +62,7 @@ typedef struct _D3DHAL_DP2COMMAND {
 ### -field <b>bCommand</b>
 
 <dd>
-<p>Specifies a primitive to draw or a state change to process. This member can be one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545678">D3DHAL_DP2OPERATION</a> enumerated values. </p>
+<p>Specifies a primitive to draw or a state change to process. This member can be one of the <a href="..\d3dhal\ne-d3dhal--d3dhal-dp2operation.md">D3DHAL_DP2OPERATION</a> enumerated values. </p>
 </dd>
 
 ### -field <b>bReserved</b>
@@ -109,7 +109,7 @@ typedef struct _D3DHAL_DP2COMMAND {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545678">D3DHAL_DP2OPERATION</a>
+<a href="..\d3dhal\ne-d3dhal--d3dhal-dp2operation.md">D3DHAL_DP2OPERATION</a>
 </dt>
 </dl>
 <p> </p>

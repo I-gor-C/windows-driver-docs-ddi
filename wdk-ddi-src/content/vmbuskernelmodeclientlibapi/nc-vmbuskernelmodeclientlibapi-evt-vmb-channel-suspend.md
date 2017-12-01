@@ -7,7 +7,7 @@ old-location: netvista\evt_vmb_channel_suspend.htm
 old-project: netvista
 ms.assetid: 31FED6BE-2E89-4D36-A833-9144AD61B885
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VideoPortGetAgpServices
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,28 +96,6 @@ A call to <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi
 <p>This function does guarantee completion of outstanding transactions.  The client may be buggy, malicious,
 or the guest virtual machine may have crashed.  The server must retire any outstanding transactions, probably by cancelling them. </p>
 
-<p>After a channel is created, a client driver can specify callback functions for state changes, including  <i>EvtVmbChannelSuspend</i>, by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmb-channel-state-change-callbacks-init.md">VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT</a> function.</p>
-
-<p>If a running channel is suspended by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpause.md">VmbChannelPause</a> function or closed by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchanneldisable.md">VmbChannelDisable</a> function or by the opposite endpoint, Kernel Mode Client Library (KMCL) calls <i>EvtVmbChannelSuspend</i>.  This callback guarantees that no more 
-<a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt-vmb-channel-process-packet.md">EvtVmbChannelProcessPacket</a> callbacks are running or will be queued.</p>
-
-<p><i>EvtVmbChannelSuspend</i> is also a 
-notification that the KMCL client must eventually complete all outstanding 
-packets indicated by using  <a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt-vmb-channel-process-packet.md">EvtVmbChannelProcessPacket</a> These packets do 
-not have to be completed synchronously.  KMCL blocks until they have 
-been completed.  </p>
-
-<p>The KMCL client must also stop sending packets by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsend.md">VmbPacketSend</a>, <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalmdl.md">VmbPacketSendWithExternalMdl</a>, or <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalpfns.md">VmbPacketSendWithExternalPfns</a> functions.  
-
-</p>
-
-<p>A call to <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpause.md">VmbChannelPause</a> on an active channel blocks until 
-<i>EvtVmbChannelSuspend</i> is called and no more outstanding incoming packets exist.  
-A call to <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchanneldisable.md">VmbChannelDisable</a> block until the channel is paused and closed.</p>
-
-<p>This function does guarantee completion of outstanding transactions.  The client may be buggy, malicious,
-or the guest virtual machine may have crashed.  The server must retire any outstanding transactions, probably by cancelling them. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -166,4 +144,4 @@ or the guest virtual machine may have crashed.  The server must retire any outst
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_SUSPEND callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_SUSPEND callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

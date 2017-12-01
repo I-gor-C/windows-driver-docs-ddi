@@ -101,14 +101,6 @@ NTSTATUS __stdcall HidP_UsageListDifference(
 
 <p>For more information, see <a href="NULL">HID Collections</a>. </p>
 
-<p>A user-mode application or kernel-mode driver can use this routine to compare two usage lists, for example, to determine the change in button state between two usage lists returned by two <a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a> calls.</p>
-
-<p>If the input usage lists have different lengths, an application or driver should set <i>UsageListLength</i> to the length of the larger list.</p>
-
-<p>The routine interprets a zero usage in an input usage list as a delimiter that ends the list. Any usages after a zero in a list are not processed. Unused usages in an output list are set to zero.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -162,7 +154,7 @@ NTSTATUS __stdcall HidP_UsageListDifference(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539824">HidP_UsageAndPageListDifference</a>
+<a href="hid.hidp_usageandpagelistdifference">HidP_UsageAndPageListDifference</a>
 </dt>
 </dl>
 <p> </p>

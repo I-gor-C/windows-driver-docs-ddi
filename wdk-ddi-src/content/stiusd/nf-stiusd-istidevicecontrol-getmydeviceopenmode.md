@@ -58,7 +58,7 @@ HRESULT GetMyDeviceOpenMode(
 ### -param <i>pdwOpenMode</i> 
 
 <dd>
-<p>Receives the mode flag that an application previously specified as the <i>dwMode</i> argument to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a>.</p>
+<p>Receives the mode flag that an application previously specified as the <i>dwMode</i> argument to <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a>.</p>
 </dd>
 </dl>
 
@@ -66,9 +66,7 @@ HRESULT GetMyDeviceOpenMode(
 <p>If the operation succeeds, the method returns S_OK. Otherwise, it returns one of the STIERR-prefixed error codes defined in <i>stierr.h</i>.</p>
 
 ## -remarks
-<p>A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as an input argument to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a> method.</p>
-
-<p>A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as an input argument to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a> method.</p>
+<p>A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as an input argument to its <a href="image.istiusd_initialize">IStiUSD::Initialize</a> method.</p>
 
 ## -requirements
 <table>

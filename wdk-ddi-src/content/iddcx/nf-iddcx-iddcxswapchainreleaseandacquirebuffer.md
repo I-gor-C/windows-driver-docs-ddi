@@ -60,7 +60,7 @@ HRESULT IddCxSwapChainReleaseAndAcquireBuffer(
 ### -param <i>SwapChainObject</i> [in]
 
 <dd>
-<p>The swap-chain object passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/mt761861">EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN</a> call.</p>
+<p>The swap-chain object passed to the <a href="..\iddcx\nc-iddcx-evt-idd-cx-monitor-assign-swapchain.md">EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN</a> call.</p>
 </dd>
 
 ### -param <i>pOutArgs</i> [out]

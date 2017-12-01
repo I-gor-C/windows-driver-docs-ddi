@@ -62,7 +62,7 @@ typedef struct _DD_DXVERSION {
 ### -field <b>gdi2</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551548">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
+<p>Specifies a <a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
 </dd>
 
 ### -field <b>dwDXVersion</b>
@@ -81,7 +81,7 @@ typedef struct _DD_DXVERSION {
 ## -remarks
 <p>This information is provided to a new driver (one that exposes <b>GetDriverInfo2</b>) for DX7 and DX8 applications.</p>
 
-<p>The runtime provides a pointer to a DD_DXVERSION structure in the <b>lpvData</b> field of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a> data structure.</p>
+<p>The runtime provides a pointer to a DD_DXVERSION structure in the <b>lpvData</b> field of the <a href="display.dd_getdriverinfodata">DD_GETDRIVERINFODATA</a> data structure.</p>
 
 <p>The <b>gdi2</b> member of DD_DXVERSION is used by the runtime with type D3DGDI2_TYPE_DXVERSION specified to notify the driver of the current DirectX runtime version being used by the application.</p>
 
@@ -102,10 +102,10 @@ typedef struct _DD_DXVERSION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
+<a href="display.dd_getdriverinfodata">DD_GETDRIVERINFODATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551548">DD_GETDRIVERINFO2DATA</a>
+<a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
 </dt>
 </dl>
 <p> </p>

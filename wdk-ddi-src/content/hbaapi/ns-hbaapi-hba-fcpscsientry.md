@@ -58,13 +58,13 @@ typedef struct HBA_FcpScsiEntry {
 ### -field <b>ScsiId</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557191">HBA_ScsiId</a> that holds information that the operating system uses to identify a SCSI device. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a> that holds information that the operating system uses to identify a SCSI device. </p>
 </dd>
 
 ### -field <b>FcpId</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a> that uniquely identifies the device anywhere on the fibre channel network. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a> that uniquely identifies the device anywhere on the fibre channel network. </p>
 </dd>
 </dl>
 
@@ -88,10 +88,10 @@ typedef struct HBA_FcpScsiEntry {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557191">HBA_ScsiId</a>
+<a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a>
 </dt>
 </dl>
 <p> </p>

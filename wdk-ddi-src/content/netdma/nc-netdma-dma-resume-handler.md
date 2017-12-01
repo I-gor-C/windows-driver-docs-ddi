@@ -7,7 +7,7 @@ old-location: netvista\providerresumedma.htm
 old-project: netvista
 ms.assetid: 06609603-eeed-4fb0-a878-87cad2e72b46
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: MIRACAST_WFD_CONNECTION_STATS, MIRACAST_WFD_CONNECTION_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -91,21 +91,6 @@ NTSTATUS ProviderResumeDma(
 <p>NetDMA calls 
     <i>ProviderResumeDma</i> at IRQL &lt;= DISPATCH_LEVEL.</p>
 
-<p>The 
-    <i>ProviderSuspendDma</i> function is an optional function for NetDMA providers. The NetDMA interface
-    calls the 
-    <i>ProviderResumeDma</i> function, if any, to resume DMA operations that were suspended by calling the 
-    <a href="..\netdma\nc-netdma-dma-suspend-handler.md">ProviderSuspendDma</a> function. If the DMA
-    provider driver specifies an entry point for a 
-    <i>ProviderSuspendDma</i> function, it must also specify an entry point for a 
-    <i>ProviderResumeDma</i> function.</p>
-
-<p>When the DMA engine resumes transfers, the hardware should reload the DMA descriptor that it processed
-    last to get the new next descriptor.</p>
-
-<p>NetDMA calls 
-    <i>ProviderResumeDma</i> at IRQL &lt;= DISPATCH_LEVEL.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -147,4 +132,4 @@ NTSTATUS ProviderResumeDma(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_RESUME_HANDLER callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_RESUME_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\rilpositioninfogsm_2.htm
 old-project: netvista
 ms.assetid: 6f98e5c7-41f5-434f-a18b-8615494aa220
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILPOSITIONINFOGSM,
 ms.prod: windows-hardware
 ms.technology: windows-devices

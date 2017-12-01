@@ -7,7 +7,7 @@ old-location: netvista\rilimssipcause_2.htm
 old-project: netvista
 ms.assetid: ae98e9e7-7001-43dd-9735-e90bb998694c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILIMSSIPCAUSE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

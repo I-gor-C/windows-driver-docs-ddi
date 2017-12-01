@@ -112,7 +112,7 @@ typedef enum _USBD_ENDPOINT_OFFLOAD_MODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>
+<a href="buses.usbd_getcapability">USBD_QueryUsbCapability</a>
 </dt>
 </dl>
 <p> </p>

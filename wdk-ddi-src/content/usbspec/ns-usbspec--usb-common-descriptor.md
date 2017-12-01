@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USB_COMMON_DESCRIPTOR</b> structure contains the head of the first descriptor that matches the search criteria in a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539109">USBD_ParseDescriptors</a>. </p>
+<p>The <b>USB_COMMON_DESCRIPTOR</b> structure contains the head of the first descriptor that matches the search criteria in a call to <a href="..\usbdlib\nf-usbdlib-usbd-parsedescriptors.md">USBD_ParseDescriptors</a>. </p>
 
 
 ## -syntax
@@ -89,10 +89,10 @@ typedef struct _USB_COMMON_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539109">USBD_ParseDescriptors</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-parsedescriptors.md">USBD_ParseDescriptors</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

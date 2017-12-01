@@ -117,10 +117,10 @@ typedef struct DXGI_GAMMA_CONTROL_CAPABILIITES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557455">DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-arg-get-gamma-control-caps.md">DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566790">GetGammaCapsDXGI</a>
+<a href="display.getgammacapsdxgi">GetGammaCapsDXGI</a>
 </dt>
 </dl>
 <p> </p>

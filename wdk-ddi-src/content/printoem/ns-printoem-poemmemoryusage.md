@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The OEMMEMORYUSAGE structure is used as an input parameter to a rendering plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554264">IPrintOemUni::MemoryUsage</a> method.</p>
+<p>The OEMMEMORYUSAGE structure is used as an input parameter to a rendering plug-in's <a href="print.iprintoemuni_memoryusage">IPrintOemUni::MemoryUsage</a> method.</p>
 
 
 ## -syntax
@@ -66,7 +66,7 @@ typedef struct {
 ### -field <b>dwPercentMemoryUsage</b>
 
 <dd>
-<p>Specifies the amount of variably-sized memory required by the <b>IPrintOemUni::MemoryUsage</b> method, expressed as a percentage of the size of the source bitmap received by <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a>. Supplied by the rendering plug-in.</p>
+<p>Specifies the amount of variably-sized memory required by the <b>IPrintOemUni::MemoryUsage</b> method, expressed as a percentage of the size of the source bitmap received by <a href="print.iprintoemuni_imageprocessing">IPrintOemUni::ImageProcessing</a>. Supplied by the rendering plug-in.</p>
 </dd>
 
 ### -field <b>dwMaxBandSize</b>
@@ -77,7 +77,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>The Unidrv driver uses the values in the <b>dwFixedMemoryUsage</b> and <b>dwPercentMemoryUsage</b> members of this structure to determine the optimum size for a GDI drawing surface, taking into account any memory requirements of a rendering plug-in's <b>IPrintOemUni::ImageProcessing</b> method. For more information about how these members are used, see the Remarks section in <a href="https://msdn.microsoft.com/library/windows/hardware/ff554264">IPrintOemUni::MemoryUsage</a>.</p>
+<p>The Unidrv driver uses the values in the <b>dwFixedMemoryUsage</b> and <b>dwPercentMemoryUsage</b> members of this structure to determine the optimum size for a GDI drawing surface, taking into account any memory requirements of a rendering plug-in's <b>IPrintOemUni::ImageProcessing</b> method. For more information about how these members are used, see the Remarks section in <a href="print.iprintoemuni_memoryusage">IPrintOemUni::MemoryUsage</a>.</p>
 
 ## -requirements
 <table>
@@ -96,10 +96,10 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a>
+<a href="print.iprintoemuni_imageprocessing">IPrintOemUni::ImageProcessing</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554264">IPrintOemUni::MemoryUsage</a>
+<a href="print.iprintoemuni_memoryusage">IPrintOemUni::MemoryUsage</a>
 </dt>
 </dl>
 <p> </p>

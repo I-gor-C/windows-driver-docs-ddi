@@ -119,10 +119,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543987">IOCTL_INTERNAL_DESELECT_DEVICE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-deselect-device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544052">IOCTL_INTERNAL_SELECT_DEVICE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-select-device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
 </dt>
 </dl>
 <p> </p>

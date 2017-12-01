@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>When the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551438">ChangerPerformDiagnostics</a> routine performs diagnostic tests on a changer device it returns the results in a WMI_CHANGER_PROBLEM_DEVICE_ERROR structure. </p>
+<p>When the <a href="..\mcd\nf-mcd-changerperformdiagnostics.md">ChangerPerformDiagnostics</a> routine performs diagnostic tests on a changer device it returns the results in a WMI_CHANGER_PROBLEM_DEVICE_ERROR structure. </p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ typedef struct _WMI_CHANGER_PROBLEM_DEVICE_ERROR {
 ### -field <b>ChangerProblemType</b>
 
 <dd>
-<p>Contains one of the enumeration values defined for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551453">CHANGER_DEVICE_PROBLEM_TYPE</a> enumeration data type. The minidriver sets <b>ChangerProblemType</b> to the appropriate enumerator value. </p>
+<p>Contains one of the enumeration values defined for the <a href="..\ntddchgr\ne-ntddchgr--changer-device-problem-type.md">CHANGER_DEVICE_PROBLEM_TYPE</a> enumeration data type. The minidriver sets <b>ChangerProblemType</b> to the appropriate enumerator value. </p>
 </dd>
 </dl>
 
@@ -82,10 +82,10 @@ typedef struct _WMI_CHANGER_PROBLEM_DEVICE_ERROR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551438">ChangerPerformDiagnostics</a>
+<a href="..\mcd\nf-mcd-changerperformdiagnostics.md">ChangerPerformDiagnostics</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551453">CHANGER_DEVICE_PROBLEM_TYPE</a>
+<a href="..\ntddchgr\ne-ntddchgr--changer-device-problem-type.md">CHANGER_DEVICE_PROBLEM_TYPE</a>
 </dt>
 </dl>
 <p> </p>

@@ -72,7 +72,7 @@ typedef enum _UDECX_ENDPOINT_TYPE {
 ### -field <a id="UdecxEndpointTypeDynamic"></a><a id="udecxendpointtypedynamic"></a><a id="UDECXENDPOINTTYPEDYNAMIC"></a><b>UdecxEndpointTypeDynamic</b>
 
 <dd>
-<p>The endpoint is dynamically created in the client driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt595913">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a> callback.</p>
+<p>The endpoint is dynamically created in the client driver's implementation of the <a href="buses.evt_udecx_usb_device_endpoints_configure">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a> callback.</p>
 </dd>
 </dl>
 
@@ -96,7 +96,7 @@ typedef enum _UDECX_ENDPOINT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627970">UdecxUsbDeviceInitSetEndpointsType</a>
+<a href="buses.udecxusbdeviceinitsetendpointstype">UdecxUsbDeviceInitSetEndpointsType</a>
 </dt>
 <dt>
 <a href="buses.usb_endpoints_and_their_pipes">USB endpoints</a>

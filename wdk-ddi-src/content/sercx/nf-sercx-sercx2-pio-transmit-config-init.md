@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>SERCX2_PIO_TRANSMIT_CONFIG_INIT</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265334">SERCX2_PIO_TRANSMIT_CONFIG</a> structure.</p>
+<p>The <b>SERCX2_PIO_TRANSMIT_CONFIG_INIT</b> function initializes a <a href="..\sercx\ns-sercx--sercx2-pio-transmit-config.md">SERCX2_PIO_TRANSMIT_CONFIG</a> structure.</p>
 
 
 ## -syntax
@@ -61,25 +61,25 @@ VOID SERCX2_PIO_TRANSMIT_CONFIG_INIT(
 ### -param <i>PioTransmitConfig</i> [out]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265334">SERCX2_PIO_TRANSMIT_CONFIG</a> structure that is to be initialized.</p>
+<p>A pointer to the <a href="..\sercx\ns-sercx--sercx2-pio-transmit-config.md">SERCX2_PIO_TRANSMIT_CONFIG</a> structure that is to be initialized.</p>
 </dd>
 
 ### -param <i>EvtSerCx2PioTransmitWriteBuffer</i> [in]
 
 <dd>
-<p>The value to load into the <b>EvtSerCx2PioTransmitWriteBuffer</b> member of the <b>SERCX2_PIO_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="https://msdn.microsoft.com/library/windows/hardware/dn265334">SERCX2_PIO_TRANSMIT_CONFIG</a>.</p>
+<p>The value to load into the <b>EvtSerCx2PioTransmitWriteBuffer</b> member of the <b>SERCX2_PIO_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-pio-transmit-config.md">SERCX2_PIO_TRANSMIT_CONFIG</a>.</p>
 </dd>
 
 ### -param <i>EvtSerCx2PioTransmitEnableReadyNotification</i> [in]
 
 <dd>
-<p>The value to load into the <b>EvtSerCx2PioTransmitEnableReadyNotification</b> member of the <b>SERCX2_PIO_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="https://msdn.microsoft.com/library/windows/hardware/dn265334">SERCX2_PIO_TRANSMIT_CONFIG</a>.</p>
+<p>The value to load into the <b>EvtSerCx2PioTransmitEnableReadyNotification</b> member of the <b>SERCX2_PIO_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-pio-transmit-config.md">SERCX2_PIO_TRANSMIT_CONFIG</a>.</p>
 </dd>
 
 ### -param <i>EvtSerCx2PioTransmitCancelReadyNotification</i> [in]
 
 <dd>
-<p>The value to load into the <b>EvtSerCx2PioTransmitCancelReadyNotification</b> member of the <b>SERCX2_PIO_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="https://msdn.microsoft.com/library/windows/hardware/dn265334">SERCX2_PIO_TRANSMIT_CONFIG</a>.</p>
+<p>The value to load into the <b>EvtSerCx2PioTransmitCancelReadyNotification</b> member of the <b>SERCX2_PIO_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx--sercx2-pio-transmit-config.md">SERCX2_PIO_TRANSMIT_CONFIG</a>.</p>
 </dd>
 </dl>
 
@@ -87,11 +87,7 @@ VOID SERCX2_PIO_TRANSMIT_CONFIG_INIT(
 <p>None.</p>
 
 ## -remarks
-<p>Your serial controller driver must use this function to initialize a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265334">SERCX2_PIO_TRANSMIT_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265269">SerCx2PioTransmitCreate</a> method.</p>
-
-<p><b>SERCX2_PIO_TRANSMIT_CONFIG_INIT</b> sets the <b>Size</b> member of the structure to <b>sizeof</b>(<b>SERCX2_PIO_TRANSMIT_CONFIG</b>), and sets three additional members of the structure to the values supplied as input parameters to the function. The function sets the other members of the structure to zero. The driver can, if necessary, explicitly set these other members to nonzero values after the <b>SERCX2_PIO_TRANSMIT_CONFIG_INIT</b> call.</p>
-
-<p>Your serial controller driver must use this function to initialize a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265334">SERCX2_PIO_TRANSMIT_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265269">SerCx2PioTransmitCreate</a> method.</p>
+<p>Your serial controller driver must use this function to initialize a <a href="..\sercx\ns-sercx--sercx2-pio-transmit-config.md">SERCX2_PIO_TRANSMIT_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method.</p>
 
 <p><b>SERCX2_PIO_TRANSMIT_CONFIG_INIT</b> sets the <b>Size</b> member of the structure to <b>sizeof</b>(<b>SERCX2_PIO_TRANSMIT_CONFIG</b>), and sets three additional members of the structure to the values supplied as input parameters to the function. The function sets the other members of the structure to zero. The driver can, if necessary, explicitly set these other members to nonzero values after the <b>SERCX2_PIO_TRANSMIT_CONFIG_INIT</b> call.</p>
 
@@ -138,10 +134,10 @@ VOID SERCX2_PIO_TRANSMIT_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265334">SERCX2_PIO_TRANSMIT_CONFIG</a>
+<a href="..\sercx\ns-sercx--sercx2-pio-transmit-config.md">SERCX2_PIO_TRANSMIT_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265269">SerCx2PioTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
 </dt>
 </dl>
 <p> </p>

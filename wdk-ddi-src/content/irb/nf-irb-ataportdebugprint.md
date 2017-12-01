@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -73,8 +72,6 @@ VOID AtaPortDebugPrint(
 <p>None </p>
 
 ## -remarks
-<p>The verbosity of debug output is determined by <i>DebugPrintLevel</i> and a port driver-specific mask. Use the <b>nt!kd_idep_mask</b> command to set the desired level of verbosity. For more information about the kernel debugger, see the <a href="NULL">Using a Debugger</a> topic </p>
-
 <p>The verbosity of debug output is determined by <i>DebugPrintLevel</i> and a port driver-specific mask. Use the <b>nt!kd_idep_mask</b> command to set the desired level of verbosity. For more information about the kernel debugger, see the <a href="NULL">Using a Debugger</a> topic </p>
 
 ## -requirements

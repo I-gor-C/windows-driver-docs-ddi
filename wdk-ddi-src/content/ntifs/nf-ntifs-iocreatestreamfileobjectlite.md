@@ -78,21 +78,9 @@ PFILE_OBJECT IoCreateStreamFileObjectLite(
 
 <p>A stream file object can also be used to represent an alternate data stream for accessing metadata, such as extended attributes or security descriptors, for an already opened file. In this case, the <i>FileObject</i> parameter in the call to <b>IoCreateStreamFileObjectLite</b> specifies an existing file object for the file. The newly created stream file object permits the file system to view, change, and cache the file's metadata as if it were an ordinary file. </p>
 
-<p>When the stream file object is no longer needed, the caller must decrement its reference count by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a>. When the stream file object's reference count reaches zero, an IRP_MJ_CLOSE request is sent to the file system driver stack for the volume. </p>
+<p>When the stream file object is no longer needed, the caller must decrement its reference count by calling <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>. When the stream file object's reference count reaches zero, an IRP_MJ_CLOSE request is sent to the file system driver stack for the volume. </p>
 
-<p>File system filter driver writers should note that, unlike <a href="https://msdn.microsoft.com/library/windows/hardware/ff548296">IoCreateStreamFileObject</a>, <b>IoCreateStreamFileObjectLite</b> does not cause an IRP_MJ_CLEANUP request to be sent to the file system driver stack. For this reason, and because file systems often create stream file objects as a side effect of operations other than IRP_MJ_CREATE, it is difficult for filter drivers to reliably detect stream file object creation. Thus filter drivers should expect to receive IRP_MJ_CLOSE requests for previously unseen file objects. </p>
-
-<p>If a pool allocation failure occurs, <b>IoCreateStreamFileObjectLite</b> raises a STATUS_INSUFFICIENT_RESOURCES exception. </p>
-
-<p>File systems call <b>IoCreateStreamFileObjectLite</b> to create a new stream file object. A <i>stream file object</i> is identical to an ordinary file object, except that the FO_STREAM_FILE file object flag is set. </p>
-
-<p>A stream file object is commonly used to represent an internal stream for a volume mounted by the file system. This <i>virtual volume file</i> permits the file system to view, change, and cache the volume's on-disk structure as if it were an ordinary file. In this case, the <i>DeviceObject</i> parameter in the call to <b>IoCreateStreamFileObjectLite</b> specifies the volume device object (VDO) for the volume. </p>
-
-<p>A stream file object can also be used to represent an alternate data stream for accessing metadata, such as extended attributes or security descriptors, for an already opened file. In this case, the <i>FileObject</i> parameter in the call to <b>IoCreateStreamFileObjectLite</b> specifies an existing file object for the file. The newly created stream file object permits the file system to view, change, and cache the file's metadata as if it were an ordinary file. </p>
-
-<p>When the stream file object is no longer needed, the caller must decrement its reference count by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a>. When the stream file object's reference count reaches zero, an IRP_MJ_CLOSE request is sent to the file system driver stack for the volume. </p>
-
-<p>File system filter driver writers should note that, unlike <a href="https://msdn.microsoft.com/library/windows/hardware/ff548296">IoCreateStreamFileObject</a>, <b>IoCreateStreamFileObjectLite</b> does not cause an IRP_MJ_CLEANUP request to be sent to the file system driver stack. For this reason, and because file systems often create stream file objects as a side effect of operations other than IRP_MJ_CREATE, it is difficult for filter drivers to reliably detect stream file object creation. Thus filter drivers should expect to receive IRP_MJ_CLOSE requests for previously unseen file objects. </p>
+<p>File system filter driver writers should note that, unlike <a href="..\ntifs\nf-ntifs-iocreatestreamfileobject.md">IoCreateStreamFileObject</a>, <b>IoCreateStreamFileObjectLite</b> does not cause an IRP_MJ_CLEANUP request to be sent to the file system driver stack. For this reason, and because file systems often create stream file objects as a side effect of operations other than IRP_MJ_CREATE, it is difficult for filter drivers to reliably detect stream file object creation. Thus filter drivers should expect to receive IRP_MJ_CLOSE requests for previously unseen file objects. </p>
 
 <p>If a pool allocation failure occurs, <b>IoCreateStreamFileObjectLite</b> raises a STATUS_INSUFFICIENT_RESOURCES exception. </p>
 
@@ -159,22 +147,22 @@ PFILE_OBJECT IoCreateStreamFileObjectLite(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548296">IoCreateStreamFileObject</a>
+<a href="..\ntifs\nf-ntifs-iocreatestreamfileobject.md">IoCreateStreamFileObject</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548303">IoCreateStreamFileObjectEx</a>
+<a href="..\ntifs\nf-ntifs-iocreatestreamfileobjectex.md">IoCreateStreamFileObjectEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
+<a href="ifsk.irp_mj_cleanup">IRP_MJ_CLEANUP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
+<a href="ifsk.irp_mj_close">IRP_MJ_CLOSE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
+<a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 </dt>
 </dl>
 <p> </p>

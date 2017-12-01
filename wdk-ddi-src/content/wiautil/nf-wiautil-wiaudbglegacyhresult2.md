@@ -73,11 +73,7 @@ inline void __stdcall wiauDbgLegacyHresult2(
 <p>None</p>
 
 ## -remarks
-<p>A call to the <b>wiauDbgLegacyHresult2</b> function is equivalent to the following call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549637">wiauDbgErrorHr</a> function:</p>
-
-<p>That is, only one line is output to the log file and/or debugger. The line has the following form:</p>
-
-<p>A call to the <b>wiauDbgLegacyHresult2</b> function is equivalent to the following call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549637">wiauDbgErrorHr</a> function:</p>
+<p>A call to the <b>wiauDbgLegacyHresult2</b> function is equivalent to the following call to the <a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a> function:</p>
 
 <p>That is, only one line is output to the log file and/or debugger. The line has the following form:</p>
 
@@ -116,7 +112,7 @@ inline void __stdcall wiauDbgLegacyHresult2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549637">wiauDbgErrorHr</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a>
 </dt>
 </dl>
 <p> </p>

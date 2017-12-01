@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_forward_progress_reserved_policy_settings.htm
 old-project: wdf
 ms.assetid: 28ffe82f-79b6-4a00-b4fa-36df5df303a6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,7 +82,7 @@ typedef struct _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS {
 </dl>
 
 ## -remarks
-<p>The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS</b> structure is used as a member type in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552364">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.</p>
+<p>The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS</b> structure is used as a member type in the <a href="..\wdfio\ns-wdfio--wdf-io-queue-forward-progress-policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.</p>
 
 ## -requirements
 <table>

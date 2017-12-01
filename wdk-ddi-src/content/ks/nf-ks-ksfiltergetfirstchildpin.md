@@ -7,7 +7,7 @@ old-location: stream\ksfiltergetfirstchildpin.htm
 old-project: stream
 ms.assetid: b026908a-51d4-45a8-9c0e-1c163563bfbf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsFilterGetFirstChildPin
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ PKSPIN KsFilterGetFirstChildPin(
 ### -param <i>Filter</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure to query for instantiated pins.</p>
+<p>A pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure to query for instantiated pins.</p>
 </dd>
 
 ### -param <i>PinId</i> [in]
@@ -69,11 +69,9 @@ PKSPIN KsFilterGetFirstChildPin(
 </dl>
 
 ## -returns
-<p><b>KsFilterGetFirstChildPin</b> returns a pointer to the first instantiated <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure of type <i>PinID</i> on the specified filter.</p>
+<p><b>KsFilterGetFirstChildPin</b> returns a pointer to the first instantiated <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure of type <i>PinID</i> on the specified filter.</p>
 
 ## -remarks
-<p>Note that the object hierarchy is guaranteed stable only while the appropriate mutex is held, in this case the filter control mutex. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
-
 <p>Note that the object hierarchy is guaranteed stable only while the appropriate mutex is held, in this case the filter control mutex. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
 
 ## -requirements
@@ -129,15 +127,15 @@ PKSPIN KsFilterGetFirstChildPin(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a>
+<a href="..\ks\ns-ks--kspin.md">KSPIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562543">KsFilterGetChildPinCount</a>
+<a href="..\ks\nf-ks-ksfiltergetchildpincount.md">KsFilterGetChildPinCount</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563514">KsPinGetNextSiblingPin</a>
+<a href="..\ks\nf-ks-kspingetnextsiblingpin.md">KsPinGetNextSiblingPin</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterGetFirstChildPin function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterGetFirstChildPin function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

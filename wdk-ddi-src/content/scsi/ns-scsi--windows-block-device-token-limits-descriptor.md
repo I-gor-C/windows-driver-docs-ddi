@@ -83,31 +83,31 @@ typedef struct _WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR {
 ### -field <b>MaximumRangeDescriptors</b>
 
 <dd>
-<p>The maximum number of range descriptors that may be included along with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967730">POPULATE_TOKEN_HEADER</a> or the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967746">WRITE_USING_TOKEN_HEADER</a> structures.</p>
+<p>The maximum number of range descriptors that may be included along with the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> or the <a href="storage.write_using_token_header">WRITE_USING_TOKEN_HEADER</a> structures.</p>
 </dd>
 
 ### -field <b>MaximumInactivityTimer</b>
 
 <dd>
-<p>The maximum available to specify as the timeout value in the <b>InactivityTimeout</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967730">POPULATE_TOKEN_HEADER</a> structure.</p>
+<p>The maximum available to specify as the timeout value in the <b>InactivityTimeout</b> member of the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> structure.</p>
 </dd>
 
 ### -field <b>DefaultInactivityTimer</b>
 
 <dd>
-<p>The default value that is used by the copy provider when the <b>InactivityTimeout</b> of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967730">POPULATE_TOKEN_HEADER</a> structure is set to 0.</p>
+<p>The default value that is used by the copy provider when the <b>InactivityTimeout</b> of the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> structure is set to 0.</p>
 </dd>
 
 ### -field <b>MaximumTokenTransferSize</b>
 
 <dd>
-<p>The maximum number of logical blocks that can be specified as a total of the block range descriptors in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967730">POPULATE_TOKEN_HEADER</a> or the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967746">WRITE_USING_TOKEN_HEADER</a> structures.</p>
+<p>The maximum number of logical blocks that can be specified as a total of the block range descriptors in the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> or the <a href="storage.write_using_token_header">WRITE_USING_TOKEN_HEADER</a> structures.</p>
 </dd>
 
 ### -field <b>OptimalTransferCount</b>
 
 <dd>
-<p>The optimal number of logical blocks, as a maximum, to specify as a total of the block range descriptors in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967730">POPULATE_TOKEN_HEADER</a> or the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967746">WRITE_USING_TOKEN_HEADER</a> structures. Offload data transfer performance may degrade if the transfer count is larger than this value.</p>
+<p>The optimal number of logical blocks, as a maximum, to specify as a total of the block range descriptors in the <a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a> or the <a href="storage.write_using_token_header">WRITE_USING_TOKEN_HEADER</a> structures. Offload data transfer performance may degrade if the transfer count is larger than this value.</p>
 </dd>
 </dl>
 
@@ -139,13 +139,13 @@ typedef struct _WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967730">POPULATE_TOKEN_HEADER</a>
+<a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967744">VPD_THIRD_PARTY_COPY_PAGE</a>
+<a href="..\scsi\ns-scsi--vpd-third-party-copy-page.md">VPD_THIRD_PARTY_COPY_PAGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967746">WRITE_USING_TOKEN_HEADER</a>
+<a href="storage.write_using_token_header">WRITE_USING_TOKEN_HEADER</a>
 </dt>
 </dl>
 <p> </p>

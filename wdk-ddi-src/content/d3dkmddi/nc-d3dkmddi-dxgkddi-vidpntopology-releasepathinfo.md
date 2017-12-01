@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>pfnReleasePathInfo</b> function releases a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a> structure that the VidPN manager previously provided to the display miniport driver.</p>
+<p>The <b>pfnReleasePathInfo</b> function releases a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure that the VidPN manager previously provided to the display miniport driver.</p>
 
 
 ## -prototype
@@ -61,7 +61,7 @@ NTSTATUS APIENTRY pfnReleasePathInfo(
 ### -param <i>hVidPnTopology</i> [in]
 
 <dd>
-<p>[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-gettopology.md">pfnGetTopology</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562108">DXGK_VIDPN_INTERFACE</a> interface.</p>
+<p>[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-gettopology.md">pfnGetTopology</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> interface.</p>
 </dd>
 
 ### -param <i>pVidPnPresentPathInfo</i> [in]
@@ -83,26 +83,6 @@ NTSTATUS APIENTRY pfnReleasePathInfo(
 <p> </p>
 
 ## -remarks
-<p>When you have finished using a D3DKMDT_VIDPN_PRESENT_PATH structure that you obtained by calling any of the following functions, you must release the structure by calling <b>pfnReleasePathInfo</b>.</p>
-
-<p>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-acquirefirstpathinfo.md">pfnAcquireFirstPathInfo</a>
-</p>
-
-<p>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-acquirenextpathinfo.md">pfnAcquireNextPathInfo</a>
-</p>
-
-<p>
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-acquirepathinfo.md">pfnAcqirePathInfo</a>
-</p>
-
-<p>If you obtain a D3DKMDT_VIDPN_PRESENT_PATH structure by calling <b><u>pfnCreateNewPathInfo</u></b> and then pass that structure to <b><u>pfnAddPath</u></b>, you do not need to release the structure.</p>
-
-<p>If you obtain a handle by calling <b>pfnCreateNewPathInfo</b> and then you decide not to add the new path to a topology, you must release the newly created structire by calling <b>pfnReleasePathInfo</b>.</p>
-
-<p>The D3DKMDT_HVIDPNTOPOLOGY data type is defined in <i>D3dkmdt.h</i>.</p>
-
 <p>When you have finished using a D3DKMDT_VIDPN_PRESENT_PATH structure that you obtained by calling any of the following functions, you must release the structure by calling <b>pfnReleasePathInfo</b>.</p>
 
 <p>
@@ -175,7 +155,7 @@ NTSTATUS APIENTRY pfnReleasePathInfo(
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-acquirepathinfo.md">pfnAcqirePathInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
 </dt>
 </dl>
 <p> </p>

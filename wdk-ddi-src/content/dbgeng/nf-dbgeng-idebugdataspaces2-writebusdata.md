@@ -7,7 +7,7 @@ old-location: debugger\writebusdata.htm
 old-project: debugger
 ms.assetid: bd4e762d-b3d5-4a4c-bdeb-998cd72783b4
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces2, WriteBusData, IDebugDataSpaces2::WriteBusData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -111,10 +111,6 @@ HRESULT WriteBusData(
 <p> </p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
-<p>The nature of the data read from the bus is system, bus, and slot dependent.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 <p>The nature of the data read from the bus is system, bus, and slot dependent.</p>

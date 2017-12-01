@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -65,7 +64,7 @@ PIDE_SCATTER_GATHER_LIST AtaPortGetScatterGatherList(
 ### -param <i>Irb</i> [in]
 
 <dd>
-<p>A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which a scatter/gather list is constructed.</p>
+<p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which a scatter/gather list is constructed.</p>
 </dd>
 </dl>
 
@@ -73,10 +72,6 @@ PIDE_SCATTER_GATHER_LIST AtaPortGetScatterGatherList(
 <p>If the IRB_FLAGS_USE_DMA flag is set in the <b>IrbFlags</b> member of IRB, the <b>AtaPortGetScatterGatherList</b> routine returns a pointer to the scatter/gather list that is associated with the IRB. Otherwise, <b>AtaPortGetScatterGatherList</b> returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>Every IRB with IRB_FLAGS_USE_DMA set in the <b>IrbFlags</b> member has a scatter/gather list associated with it. </p>
-
-<p>The miniport driver must not modify the scatter/gather list.</p>
-
 <p>Every IRB with IRB_FLAGS_USE_DMA set in the <b>IrbFlags</b> member has a scatter/gather list associated with it. </p>
 
 <p>The miniport driver must not modify the scatter/gather list.</p>
@@ -119,7 +114,7 @@ PIDE_SCATTER_GATHER_LIST AtaPortGetScatterGatherList(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a>
+<a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

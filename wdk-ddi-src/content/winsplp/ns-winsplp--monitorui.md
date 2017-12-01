@@ -88,7 +88,7 @@ typedef struct _MONITORUI {
 </dl>
 
 ## -remarks
-<p>All structure members must be initialized by the port monitor UI DLL. The structure's address is passed to the print spooler as the return value for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551608">InitializePrintMonitorUI</a> function.</p>
+<p>All structure members must be initialized by the port monitor UI DLL. The structure's address is passed to the print spooler as the return value for the <a href="..\winsplp\nf-winsplp-initializeprintmonitorui.md">InitializePrintMonitorUI</a> function.</p>
 
 ## -requirements
 <table>
@@ -107,7 +107,7 @@ typedef struct _MONITORUI {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551608">InitializePrintMonitorUI</a>
+<a href="..\winsplp\nf-winsplp-initializeprintmonitorui.md">InitializePrintMonitorUI</a>
 </dt>
 </dl>
 <p> </p>

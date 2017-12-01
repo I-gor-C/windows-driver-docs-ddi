@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The WINBIO_UPDATE_FIRMWARE structure is the IN payload for <a href="https://msdn.microsoft.com/library/windows/hardware/ff536443">IOCTL_BIOMETRIC_UPDATE_FIRMWARE</a>.</p>
+<p>The WINBIO_UPDATE_FIRMWARE structure is the IN payload for <a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-update-firmware.md">IOCTL_BIOMETRIC_UPDATE_FIRMWARE</a>.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct _WINBIO_UPDATE_FIRMWARE {
 ### -field <b>FirmwareData</b>
 
 <dd>
-<p>Specifies a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536469">WINBIO_DATA</a> that contains the vendor-specific firmware image.</p>
+<p>Specifies a structure of type <a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-data.md">WINBIO_DATA</a> that contains the vendor-specific firmware image.</p>
 </dd>
 </dl>
 
@@ -97,10 +97,10 @@ typedef struct _WINBIO_UPDATE_FIRMWARE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536443">IOCTL_BIOMETRIC_UPDATE_FIRMWARE</a>
+<a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-update-firmware.md">IOCTL_BIOMETRIC_UPDATE_FIRMWARE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536464">WINBIO_BLANK_PAYLOAD</a>
+<a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-blank-payload.md">WINBIO_BLANK_PAYLOAD</a>
 </dt>
 </dl>
 <p> </p>

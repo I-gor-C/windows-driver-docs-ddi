@@ -7,7 +7,7 @@ old-location: debugger\getcurrentprocessuptime.htm
 old-project: debugger
 ms.assetid: 6c6f3824-5e04-45df-8128-f3778aaa3636
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects3, GetCurrentProcessUpTime, IDebugSystemObjects3::GetCurrentProcessUpTime
 ms.prod: windows-hardware
 ms.technology: windows-devices

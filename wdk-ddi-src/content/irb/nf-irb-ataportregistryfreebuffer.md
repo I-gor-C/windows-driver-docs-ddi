@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -40,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>AtaPortRegistryFreeBuffer</b> routine frees the registry buffer that was allocated by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550200">AtaPortRegistryAllocateBuffer</a>.</p>
+<p>The <b>AtaPortRegistryFreeBuffer</b> routine frees the registry buffer that was allocated by using <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>.</p>
 
 
 ## -syntax
@@ -75,11 +74,7 @@ VOID AtaPortRegistryFreeBuffer(
 ## -remarks
 <p><b>AtaPortRegistryFreeBuffer</b> flushes deferred write operations to the registry.</p>
 
-<p>The miniport driver must call <b>AtaPortRegistryFreeBuffer</b> either in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a> routine or in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a> routine. It cannot call <b>AtaPortRegistryFreeBuffer</b> from any other routine. Additionally, the miniport driver can only call <b>AtaPortRegistryFreeBuffer</b> from its <b>IdeHwControl</b> routine if its <b>IdeHwControl</b> routine was called and had a value of either <b>StartChannel</b> or <b>StopChannel</b> in its <i>ControlAction </i>parameter. </p>
-
-<p><b>AtaPortRegistryFreeBuffer</b> flushes deferred write operations to the registry.</p>
-
-<p>The miniport driver must call <b>AtaPortRegistryFreeBuffer</b> either in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a> routine or in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a> routine. It cannot call <b>AtaPortRegistryFreeBuffer</b> from any other routine. Additionally, the miniport driver can only call <b>AtaPortRegistryFreeBuffer</b> from its <b>IdeHwControl</b> routine if its <b>IdeHwControl</b> routine was called and had a value of either <b>StartChannel</b> or <b>StopChannel</b> in its <i>ControlAction </i>parameter. </p>
+<p>The miniport driver must call <b>AtaPortRegistryFreeBuffer</b> either in its <a href="storage.atachannelinitroutine">AtaChannelInitRoutine</a> routine or in its <a href="storage.idehwcontrol">IdeHwControl</a> routine. It cannot call <b>AtaPortRegistryFreeBuffer</b> from any other routine. Additionally, the miniport driver can only call <b>AtaPortRegistryFreeBuffer</b> from its <b>IdeHwControl</b> routine if its <b>IdeHwControl</b> routine was called and had a value of either <b>StartChannel</b> or <b>StopChannel</b> in its <i>ControlAction </i>parameter. </p>
 
 ## -requirements
 <table>
@@ -119,13 +114,13 @@ VOID AtaPortRegistryFreeBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
+<a href="storage.atachannelinitroutine">AtaChannelInitRoutine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
+<a href="storage.idehwcontrol">IdeHwControl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550200">AtaPortRegistryAllocateBuffer</a>
+<a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
 </dt>
 </dl>
 <p> </p>

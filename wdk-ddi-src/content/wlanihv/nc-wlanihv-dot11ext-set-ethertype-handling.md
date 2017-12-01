@@ -7,7 +7,7 @@ old-location: netvista\dot11extsetethertypehandling.htm
 old-project: netvista
 ms.assetid: 0681519e-022a-487c-ae5e-39a293b060ec
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -138,27 +137,6 @@ DWORD WINAPI * Dot11ExtSetEtherTypeHandling(
     <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a> IHV
     Handler function.</p>
 
-<p>When calling the 
-    <b>Dot11ExtSetEtherTypeHandling</b> function, the IHV Extensions DLL must follow
-    these guidelines:</p>
-
-<p>The IHV Extensions DLL can call 
-      <b>Dot11ExtSetEtherTypeHandling</b> from within the calls to either the 
-      <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a> or 
-      <a href="..\wlanihv\nc-wlanihv-dot11extihv-perform-pre-associate.md">
-      Dot11ExtIhvPerformPreAssociate</a> IHV Handler functions.</p>
-
-<p>The IHV Extensions DLL must not call 
-      <b>Dot11ExtSetEtherTypeHandling</b> after successfully completing the
-      pre-association operation through a call to 
-      <a href="..\wlanihv\nc-wlanihv-dot11ext-pre-associate-completion.md">
-      Dot11ExtPreAssociateCompletion</a>.</p>
-
-<p>The operating system defaults to an empty list of privacy exemptions and EtherType registrations prior
-    to the call of the 
-    <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a> IHV
-    Handler function.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -195,7 +173,7 @@ DWORD WINAPI * Dot11ExtSetEtherTypeHandling(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548756">DOT11_PRIVACY_EXEMPTION</a>
+<a href="..\windot11\ns-windot11-dot11-privacy-exemption.md">DOT11_PRIVACY_EXEMPTION</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a>
@@ -218,4 +196,4 @@ DWORD WINAPI * Dot11ExtSetEtherTypeHandling(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_ETHERTYPE_HANDLING callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_ETHERTYPE_HANDLING callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

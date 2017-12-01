@@ -7,7 +7,7 @@ old-location: stream\avstrminipinclose.htm
 old-project: stream
 ms.assetid: 8dd56703-0c22-49db-a7c0-808dfcaaf623
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS AVStrMiniPinClose(
 ### -param <i>Pin</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> that was just closed.</p>
+<p>Pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> that was just closed.</p>
 </dd>
 
 ### -param <i>Irp</i> [in]
@@ -72,18 +72,10 @@ NTSTATUS AVStrMiniPinClose(
 </dl>
 
 ## -returns
-<p>Return STATUS_SUCCESS or STATUS_PENDING. If a minidriver returns STATUS_PENDING, AVStream will not complete the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a> immediately. Before returning STATUS_PENDING, however, the minidriver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549422">IoMarkIrpPending</a>. Once the processing of the close is complete, the minidriver must set the IRP's status code and then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff561025">KsCompletePendingRequest</a>.</p>
+<p>Return STATUS_SUCCESS or STATUS_PENDING. If a minidriver returns STATUS_PENDING, AVStream will not complete the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a> immediately. Before returning STATUS_PENDING, however, the minidriver must call <a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a>. Once the processing of the close is complete, the minidriver must set the IRP's status code and then call <a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>.</p>
 
 ## -remarks
-<p>The minidriver specifies this routine's address in the <b>Close</b> member of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff563535">KSPIN_DISPATCH</a> structure.</p>
-
-<p>At the point at which the routine is called, any registered events on the pin have been freed, but the object is otherwise intact.</p>
-
-<p>The filter control mutex is held while in this function. For more information about mutexes, please see <a href="NULL">Mutexes in AVStream</a>.</p>
-
-<p>This routine is optional.</p>
-
-<p>The minidriver specifies this routine's address in the <b>Close</b> member of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff563535">KSPIN_DISPATCH</a> structure.</p>
+<p>The minidriver specifies this routine's address in the <b>Close</b> member of its <a href="..\ks\ns-ks--kspin-dispatch.md">KSPIN_DISPATCH</a> structure.</p>
 
 <p>At the point at which the routine is called, any registered events on the pin have been freed, but the object is otherwise intact.</p>
 
@@ -126,15 +118,15 @@ NTSTATUS AVStrMiniPinClose(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563535">KSPIN_DISPATCH</a>
+<a href="..\ks\ns-ks--kspin-dispatch.md">KSPIN_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549422">IoMarkIrpPending</a>
+<a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561025">KsCompletePendingRequest</a>
+<a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniPinClose routine%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniPinClose routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

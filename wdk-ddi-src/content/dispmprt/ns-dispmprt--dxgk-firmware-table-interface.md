@@ -104,13 +104,13 @@ typedef struct _DXGK_FIRMWARE_TABLE_INTERFACE {
 ### -field <b>EnumSystemFirmwareTables</b>
 
 <dd>
-<p>A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh802466">EnumSystemFirmwareTables</a> function. </p>
+<p>A pointer to the display port driver's <a href="display.enumsystemfirmwaretables">EnumSystemFirmwareTables</a> function. </p>
 </dd>
 
 ### -field <b>ReadSystemFirmwareTable</b>
 
 <dd>
-<p>A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh802471">ReadSystemFirmwareTable</a> function. </p>
+<p>A pointer to the display port driver's <a href="display.readsystemfirmwaretable">ReadSystemFirmwareTable</a> function. </p>
 </dd>
 </dl>
 
@@ -150,10 +150,10 @@ typedef struct _DXGK_FIRMWARE_TABLE_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh802466">EnumSystemFirmwareTables</a>
+<a href="display.enumsystemfirmwaretables">EnumSystemFirmwareTables</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh802471">ReadSystemFirmwareTable</a>
+<a href="display.readsystemfirmwaretable">ReadSystemFirmwareTable</a>
 </dt>
 </dl>
 <p> </p>

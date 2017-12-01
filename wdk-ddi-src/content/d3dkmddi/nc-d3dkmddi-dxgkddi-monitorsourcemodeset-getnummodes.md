@@ -61,7 +61,7 @@ NTSTATUS APIENTRY pfnGetNumModes(
 ### -param <i>hMonitorSourceModeSet</i> [in]
 
 <dd>
-<p>A handle to a monitor source mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568433">Monitor interface</a>.</p>
+<p>A handle to a monitor source mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a> function of the <a href="display.monitor_interface">Monitor interface</a>.</p>
 </dd>
 
 ### -param <i>pNumMonitorSourceModes</i> [out]
@@ -81,8 +81,6 @@ NTSTATUS APIENTRY pfnGetNumModes(
 <p> </p>
 
 ## -remarks
-<p>The D3DKMDT_HMONITORSOURCEMODESET data type is defined in <i>D3dkmdt.h</i>. </p>
-
 <p>The D3DKMDT_HMONITORSOURCEMODESET data type is defined in <i>D3dkmdt.h</i>. </p>
 
 ## -requirements

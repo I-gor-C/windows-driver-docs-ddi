@@ -7,7 +7,7 @@ old-location: debugger\idebugregisters2.htm
 old-project: debugger
 ms.assetid: f92a75a9-6578-4bbf-8d80-680493b4d284
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface: IDebugSystemObjects4
 ## -description
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugRegisters2</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff550825">IDebugRegisters</a>. <b>IDebugRegisters2</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugRegisters2</b> interface inherits from <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>. <b>IDebugRegisters2</b> also has these types of members:</p>
 
 <p>The <b>IDebugRegisters2</b> interface has these methods.</p>
 
@@ -85,7 +85,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546578">GetDescriptionWide</a>
+<a href="debugger.getdescriptionwide">GetDescriptionWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the description of a register.</p>
@@ -93,7 +93,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546815">GetFrameOffset2</a>
+<a href="debugger.getframeoffset2">GetFrameOffset2</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the location of the stack frame for the current function.</p>
@@ -101,7 +101,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546889">GetIndexByNameWide</a>
+<a href="debugger.getindexbynamewide">GetIndexByNameWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the index of the named register.</p>
@@ -109,7 +109,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546933">GetInstructionOffset2</a>
+<a href="debugger.getinstructionoffset2">GetInstructionOffset2</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the location of the current thread's current instruction.</p>
@@ -117,7 +117,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547957">GetNumberPseudoRegisters</a>
+<a href="debugger.getnumberpseudoregisters">GetNumberPseudoRegisters</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the number of pseudo-registers that are maintained by the debugger engine.</p>
@@ -125,7 +125,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548189">GetPseudoDescription</a>
+<a href="debugger.getpseudodescription">GetPseudoDescription</a>
 </td>
 <td align="left" width="63%">
 <p>Returns a description of a pseudo-register, including its name and type. (ANSI version)</p>
@@ -133,7 +133,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548194">GetPseudoDescriptionWide</a>
+<a href="debugger.getpseudodescriptionwide">GetPseudoDescriptionWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns a description of a pseudo-register, including its name and type. (Unicode version)</p>
@@ -141,7 +141,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548206">GetPseudoIndexByName</a>
+<a href="debugger.getpseudoindexbyname">GetPseudoIndexByName</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the index of a pseudo-register. (ANSI version)</p>
@@ -149,7 +149,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548211">GetPseudoIndexByNameWide</a>
+<a href="debugger.getpseudoindexbynamewide">GetPseudoIndexByNameWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the index of a pseudo-register. (Unicode version)</p>
@@ -157,7 +157,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548215">GetPseudoValues</a>
+<a href="debugger.getpseudovalues">GetPseudoValues</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the values of a number of pseudo-registers.</p>
@@ -165,7 +165,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548414">GetStackOffset2</a>
+<a href="debugger.getstackoffset2">GetStackOffset2</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the current thread's current stack location.</p>
@@ -173,7 +173,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549487">GetValues2</a>
+<a href="debugger.getvalues2">GetValues2</a>
 </td>
 <td align="left" width="63%">
 <p>Fetches the value of several of the target's registers.</p>
@@ -181,7 +181,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553245">OutputRegisters2</a>
+<a href="debugger.outputregisters2">OutputRegisters2</a>
 </td>
 <td align="left" width="63%">
 <p>Formats and outputs the target's registers.</p>
@@ -189,7 +189,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556767">SetPseudoValues</a>
+<a href="debugger.setpseudovalues">SetPseudoValues</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the value of several pseudo-registers.</p>
@@ -197,7 +197,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556884">SetValues2</a>
+<a href="debugger.setvalues2">SetValues2</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the value of several of the target's registers.</p>
@@ -255,9 +255,9 @@ req.iface: IDebugSystemObjects4
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550825">IDebugRegisters</a>
+<a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters2 interface%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters2 interface%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

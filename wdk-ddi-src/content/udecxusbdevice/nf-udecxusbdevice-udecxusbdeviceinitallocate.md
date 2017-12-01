@@ -58,7 +58,7 @@ FORCEINLINE PUDECXUSBDEVICE_INIT UdecxUsbDeviceInitAllocate(
 ### -param <i>UdecxWdfDevice</i> [in]
 
 <dd>
-<p>A handle to a framework device object that represents the a USB device. The client driver initialized this object in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627990">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
+<p>A handle to a framework device object that represents the a USB device. The client driver initialized this object in the previous call to <a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
 </dd>
 </dl>
 
@@ -66,9 +66,7 @@ FORCEINLINE PUDECXUSBDEVICE_INIT UdecxUsbDeviceInitAllocate(
 <p>This method returns a pointer to an opaque <b>UDECXUSBDEVICE_INIT</b> that contains the initialization parameters. The structure is allocated by the USB device emulation  class extension (UdeCx).</p>
 
 ## -remarks
-<p>The UDE client driver calls this method to allocate parameters for the virtual device that is created by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627969">UdecxUsbDeviceInitFree</a>.</p>
-
-<p>The UDE client driver calls this method to allocate parameters for the virtual device that is created by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627969">UdecxUsbDeviceInitFree</a>.</p>
+<p>The UDE client driver calls this method to allocate parameters for the virtual device that is created by a subsequent call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="buses.udecxusbdeviceinitfree">UdecxUsbDeviceInitFree</a>.</p>
 
 ## -requirements
 <table>
@@ -129,10 +127,10 @@ FORCEINLINE PUDECXUSBDEVICE_INIT UdecxUsbDeviceInitAllocate(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

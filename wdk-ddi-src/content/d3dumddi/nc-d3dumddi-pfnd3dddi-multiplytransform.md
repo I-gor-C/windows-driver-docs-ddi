@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY MultiplyTransform(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543221">D3DDDIARG_MULTIPLYTRANSFORM</a> structure that describes how to modify the current transform.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-multiplytransform.md">D3DDDIARG_MULTIPLYTRANSFORM</a> structure that describes how to modify the current transform.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ __checkReturn HRESULT APIENTRY MultiplyTransform(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543221">D3DDDIARG_MULTIPLYTRANSFORM</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-multiplytransform.md">D3DDDIARG_MULTIPLYTRANSFORM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

@@ -69,7 +69,7 @@ SIZE_T APIENTRY* CalcPrivateVideoProcessorOutputViewSize(
 ### -param <i>pView</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406320">D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW</a> structure that describes the video processor output view.</p>
+<p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createvideoprocessoroutputview.md">D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW</a> structure that describes the video processor output view.</p>
 </dd>
 </dl>
 
@@ -77,11 +77,7 @@ SIZE_T APIENTRY* CalcPrivateVideoProcessorOutputViewSize(
 <p>The required number of bytes for the video processor output view state.</p>
 
 ## -remarks
-<p>The runtime will validate the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406320">D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW</a> structure before it calls this function. In particular, the runtime verifies that the specified view is supported as a video processor output format and the <b>D3D11_DDI_BIND_RENDER_TARGET</b> flag is set.</p>
-
-<p>This function is not expected to fail.</p>
-
-<p>The runtime will validate the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406320">D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW</a> structure before it calls this function. In particular, the runtime verifies that the specified view is supported as a video processor output format and the <b>D3D11_DDI_BIND_RENDER_TARGET</b> flag is set.</p>
+<p>The runtime will validate the members of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createvideoprocessoroutputview.md">D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW</a> structure before it calls this function. In particular, the runtime verifies that the specified view is supported as a video processor output format and the <b>D3D11_DDI_BIND_RENDER_TARGET</b> flag is set.</p>
 
 <p>This function is not expected to fail.</p>
 
@@ -128,7 +124,7 @@ SIZE_T APIENTRY* CalcPrivateVideoProcessorOutputViewSize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406320">D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createvideoprocessoroutputview.md">D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW</a>
 </dt>
 </dl>
 <p> </p>

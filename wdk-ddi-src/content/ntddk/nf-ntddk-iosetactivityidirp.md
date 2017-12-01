@@ -7,7 +7,7 @@ old-location: kernel\iosetactivityidirp.htm
 old-project: kernel
 ms.assetid: 81D3BE8C-D6E0-47E2-959C-3834988E4C61
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoSetActivityIdIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,9 +78,7 @@ NTSTATUS IoSetActivityIdIrp(
 <p> </p>
 
 ## -remarks
-<p>Drivers should use IoSetActivityIdIrp only on IRPs that have been allocated using <a href="https://msdn.microsoft.com/library/windows/hardware/ff548257">IoAllocateIrp</a> (and freed using <a href="https://msdn.microsoft.com/library/windows/hardware/hh454223">IoFreeIrp</a>). Otherwise, memory leakage may result.</p>
-
-<p>Drivers should use IoSetActivityIdIrp only on IRPs that have been allocated using <a href="https://msdn.microsoft.com/library/windows/hardware/ff548257">IoAllocateIrp</a> (and freed using <a href="https://msdn.microsoft.com/library/windows/hardware/hh454223">IoFreeIrp</a>). Otherwise, memory leakage may result.</p>
+<p>Drivers should use IoSetActivityIdIrp only on IRPs that have been allocated using <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a> (and freed using <a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>). Otherwise, memory leakage may result.</p>
 
 ## -requirements
 <table>

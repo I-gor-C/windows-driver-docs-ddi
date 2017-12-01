@@ -69,7 +69,7 @@ struct _URB_CONTROL_FEATURE_REQUEST {
 ### -field <b>Hdr</b>
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> indicates either a set or a clear feature operation, to perform on a device, interface, endpoint or other non-standard component. <b>Hdr.Function</b> must have one of the following values:</p>
+<p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> indicates either a set or a clear feature operation, to perform on a device, interface, endpoint or other non-standard component. <b>Hdr.Function</b> must have one of the following values:</p>
 <dl>
 <dd>URB_FUNCTION_SET_FEATURE_TO_DEVICE</dd>
 <dd>URB_FUNCTION_SET_FEATURE_TO_INTERFACE</dd>
@@ -176,13 +176,13 @@ struct _URB_CONTROL_FEATURE_REQUEST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
+<a href="..\usb\ns-usb--urb.md">URB</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a>
+<a href="buses._urb_header">_URB_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

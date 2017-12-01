@@ -64,7 +64,7 @@ typedef struct _DXGKARG_SETTARGETGAMMA {
 ### -field <b>GammaRamp</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546014">D3DKMDT_GAMMA_RAMP</a> struct which describes the type of gamma ramp to set and the buffer containing the ramp data.</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-gamma-ramp.md">D3DKMDT_GAMMA_RAMP</a> struct which describes the type of gamma ramp to set and the buffer containing the ramp data.</p>
 </dd>
 </dl>
 

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628003">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure before a <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a> call.</p>
+<p>Initializes a <a href="buses.udecx_usb_device_state_change_callbacks">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure before a <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a> call.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ FORCEINLINE void UDECX_USB_DEVICE_CALLBACKS_INIT(
 ### -param <i>Callbacks</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628003">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure to initialize.</p>
+<p>A pointer to a <a href="buses.udecx_usb_device_state_change_callbacks">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure to initialize.</p>
 </dd>
 </dl>
 
@@ -127,7 +127,7 @@ FORCEINLINE void UDECX_USB_DEVICE_CALLBACKS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>
+<a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>
 </dt>
 </dl>
 <p> </p>

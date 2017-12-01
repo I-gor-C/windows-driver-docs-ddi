@@ -7,7 +7,7 @@ old-location: debugger\idebugsystemobjects.htm
 old-project: debugger
 ms.assetid: ed830f09-10c0-4614-b002-8ede0e5e30bb
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -113,7 +113,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545787">GetCurrentProcessDataOffset</a>
+<a href="debugger.getcurrentprocessdataoffset">GetCurrentProcessDataOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the location of the system data structure describing the current process.</p>
@@ -121,7 +121,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545794">GetCurrentProcessExecutableName</a>
+<a href="debugger.getcurrentprocessexecutablename">GetCurrentProcessExecutableName</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the name of executable file loaded in the current process.</p>
@@ -129,7 +129,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545816">GetCurrentProcessHandle</a>
+<a href="..\wdbgexts\nf-wdbgexts-getcurrentprocesshandle.md">GetCurrentProcessHandle</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the system handle for the current process.</p>
@@ -137,7 +137,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545836">GetCurrentProcessId</a>
+<a href="debugger.getcurrentprocessid">GetCurrentProcessId</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine process ID for the current process.</p>
@@ -145,7 +145,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545839">GetCurrentProcessPeb</a>
+<a href="debugger.getcurrentprocesspeb">GetCurrentProcessPeb</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the process environment block (PEB) of the current process.</p>
@@ -153,7 +153,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545850">GetCurrentProcessSystemId</a>
+<a href="debugger.getcurrentprocesssystemid">GetCurrentProcessSystemId</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the system process ID of the current process.</p>
@@ -161,7 +161,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545894">GetCurrentThreadDataOffset</a>
+<a href="debugger.getcurrentthreaddataoffset">GetCurrentThreadDataOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the location of the system data structure for the current thread.</p>
@@ -169,7 +169,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545904">GetCurrentThreadHandle</a>
+<a href="debugger.getcurrentthreadhandle">GetCurrentThreadHandle</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the system handle for the current thread.</p>
@@ -177,7 +177,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546542">GetCurrentThreadId</a>
+<a href="debugger.getcurrentthreadid">GetCurrentThreadId</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine thread ID for the current thread.</p>
@@ -185,7 +185,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546544">GetCurrentThreadSystemId</a>
+<a href="debugger.getcurrentthreadsystemid">GetCurrentThreadSystemId</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the system thread ID of the current thread.</p>
@@ -193,7 +193,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546549">GetCurrentThreadTeb</a>
+<a href="debugger.getcurrentthreadteb">GetCurrentThreadTeb</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the location of the thread environment block (TEB) for the current thread.</p>
@@ -201,7 +201,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546640">GetEventProcess</a>
+<a href="debugger.geteventprocess">GetEventProcess</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine process ID for the process on which the last event occurred.</p>
@@ -209,7 +209,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546646">GetEventThread</a>
+<a href="debugger.geteventthread">GetEventThread</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine thread ID for the thread on which the last event occurred.</p>
@@ -217,7 +217,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547946">GetNumberProcesses</a>
+<a href="debugger.getnumberprocesses">GetNumberProcesses</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the number of processes for the current target.</p>
@@ -225,7 +225,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547992">GetNumberThreads</a>
+<a href="debugger.getnumberthreads">GetNumberThreads</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the number of threads in the current process.</p>
@@ -233,7 +233,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548140">GetProcessIdByDataOffset</a>
+<a href="debugger.getprocessidbydataoffset">GetProcessIdByDataOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine process ID for the specified process.</p>
@@ -241,7 +241,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548147">GetProcessIdByHandle</a>
+<a href="debugger.getprocessidbyhandle">GetProcessIdByHandle</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine process ID for the specified process.</p>
@@ -249,7 +249,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548150">GetProcessIdByPeb</a>
+<a href="debugger.getprocessidbypeb">GetProcessIdByPeb</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine process ID for the specified process.</p>
@@ -257,7 +257,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548155">GetProcessIdBySystemId</a>
+<a href="debugger.getprocessidbysystemid">GetProcessIdBySystemId</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine process ID for a process specified by its system process ID.</p>
@@ -265,7 +265,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548160">GetProcessIdsByIndex</a>
+<a href="debugger.getprocessidsbyindex">GetProcessIdsByIndex</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine process ID and system process ID for the specified processes in the current target.</p>
@@ -273,7 +273,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549302">GetThreadIdByDataOffset</a>
+<a href="debugger.getthreadidbydataoffset">GetThreadIdByDataOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine thread ID for the specified thread.</p>
@@ -281,7 +281,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549312">GetThreadIdByHandle</a>
+<a href="debugger.getthreadidbyhandle">GetThreadIdByHandle</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine thread ID for the specified thread.</p>
@@ -289,7 +289,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549319">GetThreadIdByProcessor</a>
+<a href="debugger.getthreadidbyprocessor">GetThreadIdByProcessor</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine thread ID for the kernel-modevirtual thread corresponding to the specified processor.</p>
@@ -297,7 +297,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549329">GetThreadIdBySystemId</a>
+<a href="debugger.getthreadidbysystemid">GetThreadIdBySystemId</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine thread ID for the specified thread.</p>
@@ -305,7 +305,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549336">GetThreadIdByTeb</a>
+<a href="debugger.getthreadidbyteb">GetThreadIdByTeb</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine thread ID of the specified thread.</p>
@@ -313,7 +313,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549339">GetThreadIdsByIndex</a>
+<a href="debugger.getthreadidsbyindex">GetThreadIdsByIndex</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the engine and system thread IDs for the specified threads in the current process.</p>
@@ -321,7 +321,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549356">GetTotalNumberThreads</a>
+<a href="debugger.gettotalnumberthreads">GetTotalNumberThreads</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the total number of threads for all the processes in the current target, in addition to the largest number of threads in any process for the current target.</p>
@@ -329,7 +329,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556645">SetCurrentProcessId</a>
+<a href="debugger.setcurrentprocessid">SetCurrentProcessId</a>
 </td>
 <td align="left" width="63%">
 <p>Makes the specified process the current process.</p>
@@ -337,7 +337,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556650">SetCurrentThreadId</a>
+<a href="debugger.setcurrentthreadid">SetCurrentThreadId</a>
 </td>
 <td align="left" width="63%">
 <p>Makes the specified thread the current thread.</p>
@@ -423,15 +423,15 @@ req.iface: IDebugSystemObjects4
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550885">IDebugSystemObjects2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects2.md">IDebugSystemObjects2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550892">IDebugSystemObjects3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550893">IDebugSystemObjects4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects4.md">IDebugSystemObjects4</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSystemObjects interface%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSystemObjects interface%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -72,10 +72,6 @@ __checkReturn HRESULT APIENTRY CloseAdapter(
 
 <p>Before <b>CloseAdapter</b> closes the graphics adapter object, all of the display devices that were created by using the graphics adapter object in calls to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdevice.md">CreateDevice</a> function must be destroyed in calls to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroydevice.md">DestroyDevice</a> function.</p>
 
-<p>The user-mode display driver's <b>CloseAdapter</b> function should free all of the resources that it allocated for the graphics adapter object.</p>
-
-<p>Before <b>CloseAdapter</b> closes the graphics adapter object, all of the display devices that were created by using the graphics adapter object in calls to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdevice.md">CreateDevice</a> function must be destroyed in calls to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroydevice.md">DestroyDevice</a> function.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -114,7 +110,7 @@ __checkReturn HRESULT APIENTRY CloseAdapter(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdevice.md">CreateDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544355">D3DDDI_ADAPTERFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-adapterfuncs.md">D3DDDI_ADAPTERFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroydevice.md">DestroyDevice</a>

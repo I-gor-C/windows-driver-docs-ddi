@@ -7,7 +7,7 @@ old-location: smartcrd\ioctl_smartcard_eject.htm
 old-project: smartcrd
 ms.assetid: 58bdd794-9061-4aae-a9a6-523db4e2e360
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: GdiStartPageEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices

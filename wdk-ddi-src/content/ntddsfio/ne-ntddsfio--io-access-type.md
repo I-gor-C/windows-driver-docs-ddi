@@ -7,7 +7,7 @@ old-location: kernel\io_access_type.htm
 old-project: kernel
 ms.assetid: 9ABFF1E8-50B8-4B59-964D-BA79AB63BFCE
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: SERIALPERF_STATS, SERIALPERF_STATS, *PSERIALPERF_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices

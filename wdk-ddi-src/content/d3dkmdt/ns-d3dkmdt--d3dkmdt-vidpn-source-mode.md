@@ -68,7 +68,7 @@ typedef struct _D3DKMDT_VIDPN_SOURCE_MODE {
 ### -field <b>Type</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546727">D3DKMDT_VIDPN_SOURCE_MODE_TYPE</a> enumerator that indicates the mode type: graphics or text.</p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-source-mode-type.md">D3DKMDT_VIDPN_SOURCE_MODE_TYPE</a> enumerator that indicates the mode type: graphics or text.</p>
 </dd>
 
 ### -field <b>Format</b>
@@ -81,13 +81,13 @@ typedef struct _D3DKMDT_VIDPN_SOURCE_MODE {
 ### -field <b>Graphics</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546041">D3DKMDT_GRAPHICS_RENDERING_FORMAT</a> structure that contains information about the graphics rendering format (for example, primary surface size and pixel format). This member is meaningful only if the <b>Type</b> member is equal to D3DKMDT_RMT_GRAPHICS.</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-graphics-rendering-format.md">D3DKMDT_GRAPHICS_RENDERING_FORMAT</a> structure that contains information about the graphics rendering format (for example, primary surface size and pixel format). This member is meaningful only if the <b>Type</b> member is equal to D3DKMDT_RMT_GRAPHICS.</p>
 </dd>
 
 ### -field <b>Text</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546603">D3DKMDT_TEXT_RENDERING_FORMAT</a> enumerator that indicates the text format. This member is meaningful only if the <b>Type</b> member is equal to D3DKMDT_RMT_TEXT.</p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-text-rendering-format.md">D3DKMDT_TEXT_RENDERING_FORMAT</a> enumerator that indicates the text format. This member is meaningful only if the <b>Type</b> member is equal to D3DKMDT_RMT_TEXT.</p>
 </dd>
 </dl>
 </dd>
@@ -121,13 +121,13 @@ typedef struct _D3DKMDT_VIDPN_SOURCE_MODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPN Source Mode Set Interface</a>
+<a href="display.vidpn_source_mode_set_interface">VidPN Source Mode Set Interface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546729">D3DKMDT_VIDPN_TARGET_MODE</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-target-mode.md">D3DKMDT_VIDPN_TARGET_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546133">D3DKMDT_MONITOR_SOURCE_MODE</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-monitor-source-mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a>
 </dt>
 </dl>
 <p> </p>

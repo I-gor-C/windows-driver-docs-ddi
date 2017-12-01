@@ -60,7 +60,7 @@ NTSTATUS APIENTRY DxgkCbGetCaptureAddress(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>[in/out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557531">DXGKARGCB_GETCAPTUREADDRESS</a> structure that describes parameters for retrieving information about a capture buffer.</p>
+<p>[in/out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-getcaptureaddress.md">DXGKARGCB_GETCAPTUREADDRESS</a> structure that describes parameters for retrieving information about a capture buffer.</p>
 </dd>
 </dl>
 
@@ -69,7 +69,7 @@ NTSTATUS APIENTRY DxgkCbGetCaptureAddress(
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl><p><b>DxgkCbGetCaptureAddress</b> successfully retrieved the capture buffer information.</p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl><p>The allocation handle that is specified in the <b>hAllocation</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557531">DXGKARGCB_GETCAPTUREADDRESS</a> structure that the <i>pData</i> parameter pointed to was either invalid or did not represent a capture buffer. </p>
+</dl><p>The allocation handle that is specified in the <b>hAllocation</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-getcaptureaddress.md">DXGKARGCB_GETCAPTUREADDRESS</a> structure that the <i>pData</i> parameter pointed to was either invalid or did not represent a capture buffer. </p>
 
 <p> </p>
 
@@ -121,7 +121,7 @@ NTSTATUS APIENTRY DxgkCbGetCaptureAddress(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557531">DXGKARGCB_GETCAPTUREADDRESS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-getcaptureaddress.md">DXGKARGCB_GETCAPTUREADDRESS</a>
 </dt>
 </dl>
 <p> </p>

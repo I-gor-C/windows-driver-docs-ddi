@@ -7,7 +7,7 @@ old-location: netvista\net_dma_provider_characteristics.htm
 old-project: netvista
 ms.assetid: 7ec6d449-fdc2-44d8-976b-5a1d23c76e7b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,9 +15,7 @@ ms.topic: struct
 req.header: netdma.h
 req.include-header: Netdma.h
 req.target-type: Windows
-req.target-min-winverclnt: Supported for NetDMA 2.0 drivers in Windows Server 2008. (Added FriendlyName
-   member.) Supported for NetDMA 1.1 drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in
-   Windows Server 2008 and Windows Vista.
+req.target-min-winverclnt: Supported for NetDMA 2.0 drivers in Windows Server 2008. (Added FriendlyName   member.) Supported for NetDMA 1.1 drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in   Windows Server 2008 and Windows Vista.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -112,7 +110,7 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
 <p>The physical device object (PDO) that is associated with the DMA provider. The Plug and Play (PnP)
      manager supplies a pointer to the PDO at the 
      <i>PhysicalDeviceObject</i> parameter to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.</p>
+     <a href="kernel.adddevice">AddDevice</a> routine.</p>
 </dd>
 
 ### -field <b>MaxDmaChannelCount</b>
@@ -201,9 +199,9 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
 
 ## -remarks
 <p>To register a DMA provider, a DMA provider driver calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568336">NetDmaRegisterProvider</a> function
+    <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a> function
     from its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.</p>
+    <a href="kernel.adddevice">AddDevice</a> routine.</p>
 
 <p>The DMA provider driver supplies a NET_DMA_PROVIDER_CHARACTERISTICS structure at the 
     <i>ProviderCharacteristics</i> parameter of 
@@ -236,10 +234,10 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
+<a href="kernel.adddevice">AddDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568336">NetDmaRegisterProvider</a>
+<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
 </dt>
 <dt>
 <a href="..\netdma\nc-netdma-dma-abort-handler.md">ProviderAbortDma</a>
@@ -272,4 +270,4 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

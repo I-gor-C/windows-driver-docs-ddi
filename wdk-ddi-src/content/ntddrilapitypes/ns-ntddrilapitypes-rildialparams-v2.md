@@ -7,7 +7,7 @@ old-location: netvista\rildialparams_v2.htm
 old-project: netvista
 ms.assetid: 0a60001b-5fa9-4f25-a92f-3634e2a50e36
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILDIALPARAMS_V2, RILDIALPARAMS_V2, *LPRILDIALPARAMS_V2, RILDIALPARAMS, *LPRILDIALPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

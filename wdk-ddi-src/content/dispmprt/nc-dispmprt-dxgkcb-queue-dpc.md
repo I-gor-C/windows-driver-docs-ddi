@@ -60,7 +60,7 @@ BOOLEAN DxgkCbQueueDpc(
 ### -param <i>DeviceHandle</i> [in]
 
 <dd>
-<p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
+<p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 </dl>
 
@@ -68,12 +68,6 @@ BOOLEAN DxgkCbQueueDpc(
 <p><b>DxgkCbQueueDpc</b> returns <b>TRUE</b> if the DPC is successfully queued; otherwise it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>This function queues a DPC object for the display miniport and calls the <a href="display.dxgkddidpcroutine">DxgkDdiDpcRoutine</a> function when the interrupt service routine (ISR) requests it. </p>
-
-<p>There can only be one callback to this function scheduled per device at any one time. If a callback is already scheduled for a device, a second call to <b>DxgkCbQueueDpc</b> will not have any effect and will return <b>FALSE</b>.</p>
-
-<p>For more information on the use of this function, see these topics:</p>
-
 <p>This function queues a DPC object for the display miniport and calls the <a href="display.dxgkddidpcroutine">DxgkDdiDpcRoutine</a> function when the interrupt service routine (ISR) requests it. </p>
 
 <p>There can only be one callback to this function scheduled per device at any one time. If a callback is already scheduled for a device, a second call to <b>DxgkCbQueueDpc</b> will not have any effect and will return <b>FALSE</b>.</p>

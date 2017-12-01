@@ -57,14 +57,14 @@ typedef struct _FEATURE_DATA_POWER_MANAGEMENT {
 ### -field <b>Header</b>
 
 <dd>
-<p>Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
+<p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 </dl>
 
 ## -remarks
 <p>This structure holds data for the feature named "Power Management" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature can perform both initiator and logical-unit directed power management.</p>
 
-<p>When queried, devices supporting this feature must return the information indicated in <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>. No other feature-specific information is required. </p>
+<p>When queried, devices supporting this feature must return the information indicated in <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a>. No other feature-specific information is required. </p>
 
 ## -requirements
 <table>
@@ -83,10 +83,10 @@ typedef struct _FEATURE_DATA_POWER_MANAGEMENT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
+<a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>
+<a href="..\ntddmmc\ne-ntddmmc--feature-number.md">FEATURE_NUMBER</a>
 </dt>
 </dl>
 <p> </p>

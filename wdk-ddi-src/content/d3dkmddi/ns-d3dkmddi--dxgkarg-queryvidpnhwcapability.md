@@ -78,7 +78,7 @@ typedef struct _DXGKARG_QUERYVIDPNHWCAPABILITY {
 ### -field <b>VidPnHWCaps</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546639">D3DKMDT_VIDPN_HW_CAPABILITY</a> structure that describes the capabilities of the display miniport driver to perform display operations without dedicated GPU hardware support.</p>
+<p>[out] A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-hw-capability.md">D3DKMDT_VIDPN_HW_CAPABILITY</a> structure that describes the capabilities of the display miniport driver to perform display operations without dedicated GPU hardware support.</p>
 </dd>
 </dl>
 
@@ -87,7 +87,7 @@ typedef struct _DXGKARG_QUERYVIDPNHWCAPABILITY {
 
 <p>Video present source identifiers are assigned by the operating system. <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>, implemented by the display miniport driver, returns the number N of video present sources supported by the display adapter. Then the operating system assigns identifiers 0, 1, 2, ... N - 1.</p>
 
-<p>Video present target identifiers are assigned by the display miniport driver. <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a>, implemented by the display miniport driver, returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561001">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.</p>
+<p>Video present target identifiers are assigned by the display miniport driver. <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a>, implemented by the display miniport driver, returns an array of <a href="..\dispmprt\ns-dispmprt--dxgk-child-descriptor.md">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.</p>
 
 <p>For more information about video present sources and targets, see <a href="https://msdn.microsoft.com/62a92f00-b1da-41c2-99af-eef8140b064e">Introduction to Video Present Networks</a>.</p>
 
@@ -116,16 +116,16 @@ typedef struct _DXGKARG_QUERYVIDPNHWCAPABILITY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546614">D3DKMDT_VIDEO_PRESENT_SOURCE</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-video-present-source.md">D3DKMDT_VIDEO_PRESENT_SOURCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546617">D3DKMDT_VIDEO_PRESENT_TARGET</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-video-present-target.md">D3DKMDT_VIDEO_PRESENT_TARGET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546639">D3DKMDT_VIDPN_HW_CAPABILITY</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-hw-capability.md">D3DKMDT_VIDPN_HW_CAPABILITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
 </dt>
 <dt>
 <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>
@@ -137,7 +137,7 @@ typedef struct _DXGKARG_QUERYVIDPNHWCAPABILITY {
 <a href="display.dxgkddiqueryvidpnhwcapability">DxgkDdiQueryVidPnHWCapability</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561001">DXGK_CHILD_DESCRIPTOR</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-child-descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187928">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a> structure.</p>
+<p>Initializes a <a href="buses.ucm_connector_typec_attach_params">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a> structure.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ FORCEINLINE void UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT(
 ### -param <i>Config</i> [out]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt187928">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a> structure to initialize.</p>
+<p>Pointer to a caller-allocated <a href="buses.ucm_connector_typec_attach_params">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a> structure to initialize.</p>
 </dd>
 
 ### -param <i>PortPartnerType</i> [in]
@@ -124,7 +124,7 @@ FORCEINLINE void UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187915">UcmConnectorTypeCAttach</a>
+<a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a>
 </dt>
 </dl>
 <p> </p>

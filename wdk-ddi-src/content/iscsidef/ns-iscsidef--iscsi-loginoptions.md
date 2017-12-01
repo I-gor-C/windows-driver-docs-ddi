@@ -141,13 +141,13 @@ typedef struct _ISCSI_LoginOptions {
 ### -field <b>HeaderDigest</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561498">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the header digest in a logon PDU.</p>
+<p>A <a href="storage.iscsi_digest_types">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the header digest in a logon PDU.</p>
 </dd>
 
 ### -field <b>DataDigest</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561498">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the data digest in a logon PDU.</p>
+<p>A <a href="storage.iscsi_digest_types">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the data digest in a logon PDU.</p>
 </dd>
 
 ### -field <b>MaximumConnections</b>
@@ -232,7 +232,7 @@ typedef struct _ISCSI_LoginOptions {
 ### -field <b>AuthType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561486">ISCSI_AUTH_TYPES</a> value that indicates the authentication method that is used to establish a logon connection. </p>
+<p>A <a href="storage.iscsi_auth_types">ISCSI_AUTH_TYPES</a> value that indicates the authentication method that is used to establish a logon connection. </p>
 </dd>
 </dl>
 
@@ -256,13 +256,13 @@ typedef struct _ISCSI_LoginOptions {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561486">ISCSI_AUTH_TYPES</a>
+<a href="storage.iscsi_auth_types">ISCSI_AUTH_TYPES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561498">ISCSI_DIGEST_TYPES</a>
+<a href="storage.iscsi_digest_types">ISCSI_DIGEST_TYPES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561543">ISCSI_LoginOptions WMI Class</a>
+<a href="storage.iscsi_loginoptions_wmi_class">ISCSI_LoginOptions WMI Class</a>
 </dt>
 </dl>
 <p> </p>

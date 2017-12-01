@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceminiportcreate.htm
 old-project: wdf
 ms.assetid: d74dedbd-f418-4ea3-ae76-c0da9c5f2fb9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfDeviceMiniportCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,19 +64,19 @@ NTSTATUS WdfDeviceMiniportCreate(
 ### -param <i>Driver</i> [in]
 
 <dd>
-<p>A handle to the driver's framework driver object, obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a>.</p>
+<p>A handle to the driver's framework driver object, obtained by a previous call to <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>.</p>
 </dd>
 
 ### -param <i>Attributes</i> [in, optional]
 
 <dd>
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.</p>
+<p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.</p>
 </dd>
 
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>A pointer to a WDM <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the functional device object (FDO) for the miniport driver.</p>
+<p>A pointer to a WDM <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the functional device object (FDO) for the miniport driver.</p>
 </dd>
 
 ### -param <i>AttachedDeviceObject</i> [in, optional]
@@ -112,43 +112,9 @@ NTSTATUS WdfDeviceMiniportCreate(
 <p>A bug check occurs if the driver supplies an invalid object handle.</p>
 
 ## -remarks
-<p>If your miniport driver uses the framework, the miniport driver should call <b>WdfDeviceMiniportCreate</b> when its port driver informs it that a device is available. Miniport drivers do not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.</p>
+<p>If your miniport driver uses the framework, the miniport driver should call <b>WdfDeviceMiniportCreate</b> when its port driver informs it that a device is available. Miniport drivers do not call <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.</p>
 
-<p>Your miniport driver might receive its <i>DeviceObject</i>, <i>AttachedDeviceObject</i>, and <i>PDO</i> pointers from its port driver. For example, an NDIS miniport driver can obtain these pointers by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff563592">NdisMGetDeviceProperty</a>.</p>
-
-<p>The following restrictions apply to framework device objects that a miniport driver obtains by calling <b>WdfDeviceMiniportCreate</b>:</p>
-
-<p>The device that the device object represents must support Plug and Play.</p>
-
-<p>The device object does not support any of the device object's event callback functions. Therefore, the port driver must handle all Plug and Play (PnP) and power management operations. </p>
-
-<p>The device object handle cannot be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff551193">WdfWmiProviderCreate</a>, so the port driver must provide any required support for Windows Management Instrumentation (WMI).</p>
-
-<p>The device object handle cannot be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547401">WdfIoQueueCreate</a>, so the framework does not support I/O queues for miniport drivers.</p>
-
-<p>The device object handle cannot be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547345">WdfInterruptCreate</a>, so the framework does not support interrupt objects for miniport drivers.</p>
-
-<p>The device object handle cannot be passed to any general framework device object methods except <a href="https://msdn.microsoft.com/library/windows/hardware/ff546017">WdfDeviceGetIoTarget</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff546942">WdfDeviceWdmGetDeviceObject</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff546934">WdfDeviceWdmGetAttachedDevice</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff546946">WdfDeviceWdmGetPhysicalDevice</a>.</p>
-
-<p>The device object handle cannot be passed to any <a href="wdf_device_object_reference.htm#fdo_methods">framework FDO methods</a> except <a href="https://msdn.microsoft.com/library/windows/hardware/ff547289">WdfFdoQueryForInterface</a>.</p>
-
-<p>The device object handle cannot be passed to any <a href="wdf_device_object_reference.htm#pdo_methods">framework PDO methods</a> or to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545615">WdfChildListCreate</a>, so the miniport driver cannot be a bus driver.</p>
-
-<p>The driver must eventually call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548734">WdfObjectDelete</a> to delete the device object that <b>WdfDeviceMiniportCreate</b> creates.</p>
-
-<p>Framework device objects that <b>WdfDeviceMiniportCreate</b> create can be used as a parent object for any subsequently created framework object. </p>
-
-<p>In order to send I/O requests to I/O targets, the miniport driver might pass the device object handle to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546017">WdfDeviceGetIoTarget</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548591">WdfIoTargetCreate</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>.</p>
-
-<p>The miniport driver can pass the device object handle to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546983">WdfDmaEnablerCreate</a> if the device supports DMA operations.</p>
-
-<p>For more information about miniport drivers, see <a href="wdf.creating_kmdf_miniport_drivers">Using Kernel-Mode Driver Framework with Miniport Drivers</a>.</p>
-
-<p>The following code example calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff563592">NdisMGetDeviceProperty</a> to obtain <i>DeviceObject</i>, <i>AttachedDeviceObject</i>, and <i>PDO</i> pointers; initializes the device object's context space, and creates a miniport device object. </p>
-
-<p>If your miniport driver uses the framework, the miniport driver should call <b>WdfDeviceMiniportCreate</b> when its port driver informs it that a device is available. Miniport drivers do not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.</p>
-
-<p>Your miniport driver might receive its <i>DeviceObject</i>, <i>AttachedDeviceObject</i>, and <i>PDO</i> pointers from its port driver. For example, an NDIS miniport driver can obtain these pointers by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff563592">NdisMGetDeviceProperty</a>.</p>
+<p>Your miniport driver might receive its <i>DeviceObject</i>, <i>AttachedDeviceObject</i>, and <i>PDO</i> pointers from its port driver. For example, an NDIS miniport driver can obtain these pointers by calling <a href="..\ndis\nf-ndis-ndismgetdeviceproperty.md">NdisMGetDeviceProperty</a>.</p>
 
 <p>The following restrictions apply to framework device objects that a miniport driver obtains by calling <b>WdfDeviceMiniportCreate</b>:</p>
 
@@ -156,29 +122,29 @@ NTSTATUS WdfDeviceMiniportCreate(
 
 <p>The device object does not support any of the device object's event callback functions. Therefore, the port driver must handle all Plug and Play (PnP) and power management operations. </p>
 
-<p>The device object handle cannot be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff551193">WdfWmiProviderCreate</a>, so the port driver must provide any required support for Windows Management Instrumentation (WMI).</p>
+<p>The device object handle cannot be passed to <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>, so the port driver must provide any required support for Windows Management Instrumentation (WMI).</p>
 
-<p>The device object handle cannot be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547401">WdfIoQueueCreate</a>, so the framework does not support I/O queues for miniport drivers.</p>
+<p>The device object handle cannot be passed to <a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>, so the framework does not support I/O queues for miniport drivers.</p>
 
-<p>The device object handle cannot be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547345">WdfInterruptCreate</a>, so the framework does not support interrupt objects for miniport drivers.</p>
+<p>The device object handle cannot be passed to <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptcreate.md">WdfInterruptCreate</a>, so the framework does not support interrupt objects for miniport drivers.</p>
 
-<p>The device object handle cannot be passed to any general framework device object methods except <a href="https://msdn.microsoft.com/library/windows/hardware/ff546017">WdfDeviceGetIoTarget</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff546942">WdfDeviceWdmGetDeviceObject</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff546934">WdfDeviceWdmGetAttachedDevice</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff546946">WdfDeviceWdmGetPhysicalDevice</a>.</p>
+<p>The device object handle cannot be passed to any general framework device object methods except <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>, <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetdeviceobject.md">WdfDeviceWdmGetDeviceObject</a>, <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetattacheddevice.md">WdfDeviceWdmGetAttachedDevice</a>, and <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetphysicaldevice.md">WdfDeviceWdmGetPhysicalDevice</a>.</p>
 
-<p>The device object handle cannot be passed to any <a href="wdf_device_object_reference.htm#fdo_methods">framework FDO methods</a> except <a href="https://msdn.microsoft.com/library/windows/hardware/ff547289">WdfFdoQueryForInterface</a>.</p>
+<p>The device object handle cannot be passed to any <a href="wdf_device_object_reference.htm#fdo_methods">framework FDO methods</a> except <a href="..\wdffdo\nf-wdffdo-wdffdoqueryforinterface.md">WdfFdoQueryForInterface</a>.</p>
 
-<p>The device object handle cannot be passed to any <a href="wdf_device_object_reference.htm#pdo_methods">framework PDO methods</a> or to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545615">WdfChildListCreate</a>, so the miniport driver cannot be a bus driver.</p>
+<p>The device object handle cannot be passed to any <a href="wdf_device_object_reference.htm#pdo_methods">framework PDO methods</a> or to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistcreate.md">WdfChildListCreate</a>, so the miniport driver cannot be a bus driver.</p>
 
-<p>The driver must eventually call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548734">WdfObjectDelete</a> to delete the device object that <b>WdfDeviceMiniportCreate</b> creates.</p>
+<p>The driver must eventually call <a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a> to delete the device object that <b>WdfDeviceMiniportCreate</b> creates.</p>
 
 <p>Framework device objects that <b>WdfDeviceMiniportCreate</b> create can be used as a parent object for any subsequently created framework object. </p>
 
-<p>In order to send I/O requests to I/O targets, the miniport driver might pass the device object handle to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546017">WdfDeviceGetIoTarget</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548591">WdfIoTargetCreate</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>.</p>
+<p>In order to send I/O requests to I/O targets, the miniport driver might pass the device object handle to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>, <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>, or <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.</p>
 
-<p>The miniport driver can pass the device object handle to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546983">WdfDmaEnablerCreate</a> if the device supports DMA operations.</p>
+<p>The miniport driver can pass the device object handle to <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a> if the device supports DMA operations.</p>
 
 <p>For more information about miniport drivers, see <a href="wdf.creating_kmdf_miniport_drivers">Using Kernel-Mode Driver Framework with Miniport Drivers</a>.</p>
 
-<p>The following code example calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff563592">NdisMGetDeviceProperty</a> to obtain <i>DeviceObject</i>, <i>AttachedDeviceObject</i>, and <i>PDO</i> pointers; initializes the device object's context space, and creates a miniport device object. </p>
+<p>The following code example calls <a href="..\ndis\nf-ndis-ndismgetdeviceproperty.md">NdisMGetDeviceProperty</a> to obtain <i>DeviceObject</i>, <i>AttachedDeviceObject</i>, and <i>PDO</i> pointers; initializes the device object's context space, and creates a miniport device object. </p>
 
 ## -requirements
 <table>
@@ -233,7 +199,7 @@ NTSTATUS WdfDeviceMiniportCreate(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -241,10 +207,10 @@ NTSTATUS WdfDeviceMiniportCreate(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547193">WdfDriverMiniportUnload</a>
+<a href="..\wdfminiport\nf-wdfminiport-wdfdriverminiportunload.md">WdfDriverMiniportUnload</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>
@@ -252,4 +218,4 @@ NTSTATUS WdfDeviceMiniportCreate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceMiniportCreate method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceMiniportCreate method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

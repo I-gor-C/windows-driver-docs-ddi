@@ -7,7 +7,7 @@ old-location: sensors\sensorscxstatechange.htm
 old-project: sensors
 ms.assetid: E6897994-51C7-4278-9CCE-9B7E9DD408D7
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: SensorsCxStateChange
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelpacketfail.htm
 old-project: netvista
 ms.assetid: 177B4509-A0EC-4F71-AF21-916A7A5F06DB
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbChannelPacketFail
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,9 +68,6 @@ once processing is finished.  </p>
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>Call this function for packets presented to the server endpoint which seem malformed, to
-the extent that channel processing should cease.</p>
-
 <p>Call this function for packets presented to the server endpoint which seem malformed, to
 the extent that channel processing should cease.</p>
 

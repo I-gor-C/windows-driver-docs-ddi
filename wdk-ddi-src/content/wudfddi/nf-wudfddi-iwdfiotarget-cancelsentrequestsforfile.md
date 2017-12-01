@@ -7,7 +7,7 @@ old-location: wdf\iwdfiotarget_cancelsentrequestsforfile.htm
 old-project: wdf
 ms.assetid: df008ee8-352f-4655-b4c0-750eeb281e6a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFIoTarget, CancelSentRequestsForFile, IWDFIoTarget::CancelSentRequestsForFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,14 +59,14 @@ void CancelSentRequestsForFile(
 ### -param <i>pFile</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a> interface for the file object to cancel all I/O requests for. </p>
+<p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface for the file object to cancel all I/O requests for. </p>
 </dd>
 </dl>
 
 ## -returns
 <p>None</p>
 
-<p>The following code example shows a UMDF driver implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554905">IFileCallbackCleanup::OnCleanupFile</a> method that cancels all previously sent I/O requests.</p>
+<p>The following code example shows a UMDF driver implementation of the <a href="wdf.ifilecallbackcleanup_oncleanupfile">IFileCallbackCleanup::OnCleanupFile</a> method that cancels all previously sent I/O requests.</p>
 
 ## -remarks
 
@@ -124,12 +124,12 @@ void CancelSentRequestsForFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559170">IWDFIoTarget</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a>
+<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoTarget::CancelSentRequestsForFile method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoTarget::CancelSentRequestsForFile method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

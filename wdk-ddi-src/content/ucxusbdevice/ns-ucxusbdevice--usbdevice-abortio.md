@@ -62,7 +62,7 @@ typedef struct _USBDEVICE_ABORTIO {
 ### -field <b>Header</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188075">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
+<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
 </dd>
 </dl>
 
@@ -86,13 +86,13 @@ typedef struct _USBDEVICE_ABORTIO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549969">WdfRequestGetParameters</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188078">USBDEVICE_STARTIO</a>
+<a href="buses._usbdevice_startio">USBDEVICE_STARTIO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188076">USBDEVICE_PURGEIO</a>
+<a href="buses._usbdevice_purgeio">USBDEVICE_PURGEIO</a>
 </dt>
 </dl>
 <p> </p>

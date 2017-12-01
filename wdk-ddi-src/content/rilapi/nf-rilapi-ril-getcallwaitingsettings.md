@@ -7,7 +7,7 @@ old-location: netvista\ril_getcallwaitingsettings.htm
 old-project: netvista
 ms.assetid: 5506dd53-ac15-44c6-aded-a71451a1c15d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetCallWaitingSettings
 ms.prod: windows-hardware
 ms.technology: windows-devices

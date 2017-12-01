@@ -117,7 +117,7 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT {
 </dl>
 
 ## -remarks
-<p>The <b>RotationSupport</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546719">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a <b>D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</b> structure.</p>
+<p>The <b>RotationSupport</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a <b>D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</b> structure.</p>
 
 ## -requirements
 <table>

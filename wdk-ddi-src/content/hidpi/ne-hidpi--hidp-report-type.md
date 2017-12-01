@@ -95,16 +95,16 @@ typedef enum _HIDP_REPORT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539718">HidP_GetData</a>
+<a href="..\hidpi\nf-hidpi-hidp-getdata.md">HidP_GetData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539783">HidP_SetData</a>
+<a href="..\hidpi\nf-hidpi-hidp-setdata.md">HidP_SetData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539693">HIDP_BUTTON_CAPS</a>
+<a href="..\hidpi\ns-hidpi--hidp-button-caps.md">HIDP_BUTTON_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539832">HIDP_VALUE_CAPS</a>
+<a href="..\hidpi\ns-hidpi--hidp-value-caps.md">HIDP_VALUE_CAPS</a>
 </dt>
 </dl>
 <p> </p>

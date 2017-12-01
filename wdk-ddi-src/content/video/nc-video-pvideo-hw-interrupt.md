@@ -85,75 +85,30 @@ BOOLEAN HwVidInterrupt(
 
 <p>If any other miniport driver function shares memory, such as part of the <i>HwDeviceExtension</i>, with <i>HwVidInterrupt</i>, it must call <b>VideoPortSynchronizeExecution</b> to synchronize its access to the shared area.</p>
 
-<p><i>HwVidInterrupt</i> can call only the following system-supplied <b>VideoPort</b><i>Xxx</i> routines (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566461">Functions Exported by the Video Port Driver</a>):</p>
+<p><i>HwVidInterrupt</i> can call only the following system-supplied <b>VideoPort</b><i>Xxx</i> routines (see <a href="display.functions_exported_by_the_video_port_driver">Functions Exported by the Video Port Driver</a>):</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>
+<a href="..\video\nf-video-videoportqueuedpc.md">VideoPortQueueDpc</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570492">VideoPortZeroDeviceMemory</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff570493">VideoPortZeroMemory</a>
+<a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a> and <a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570328">VideoPortLogError</a>
+<a href="..\video\nf-video-videoportlogerror.md">VideoPortLogError</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570368">VideoPortStallExecution</a> for no more than a very few microseconds. If possible, <i>HwVidInterrupt</i> should avoid calling this function.</p>
+<a href="..\video\nf-video-videoportstallexecution.md">VideoPortStallExecution</a> for no more than a very few microseconds. If possible, <i>HwVidInterrupt</i> should avoid calling this function.</p>
 
 <p>All <b>VideoPortRead</b><i>Xxx</i> and <b>VideoPortWrite</b><i>Xxx</i> routines.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570294">VideoPortDisableInterrupt</a> (obsolete)</p>
+<a href="..\video\nf-video-videoportdisableinterrupt.md">VideoPortDisableInterrupt</a> (obsolete)</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570296">VideoPortEnableInterrupt</a> (obsolete)</p>
-
-<p><i>HwVidInterrupt</i> must <i>not</i> call any <b>VideoPort</b><i>Xxx</i> function that is not in the preceding list. Violation of this requirement will cause system failure (a "blue screen").</p>
-
-<p>A <i>HwVidInterrupt</i> function cannot be pageable, nor can any function that it calls.</p>
-
-<p>A miniport driver must implement <i>HwVidInterrupt</i> if its video adapter generates interrupts.</p>
-
-<p>First, <i>HwVidInterrupt</i> should determine whether its adapter actually caused the interrupt. If not, this function should return <b>FALSE</b> immediately so the ISR of the device that caused the interrupt will be called promptly.</p>
-
-<p>Otherwise, <i>HwVidInterrupt</i> is generally responsible for completing the I/O operation that caused the interrupt, and should do the following:</p>
-
-<p>Dismiss the interrupt on the adapter (required).</p>
-
-<p>Complete the requested operation that caused the interrupt.</p>
-
-<p>Return control as quickly as possible (required).</p>
-
-<p>If a miniport driver has an <i>HwVidInterrupt</i> function, no register or memory location that can be accessed by <i>HwVidInterrupt</i> can be visible to the corresponding display driver. An interrupt can occur while the display driver is modifying one of the registers or memory locations involved, and there is no way to ensure synchronization. Therefore, all functions requiring access to the critical registers or memory locations for interrupt-driven operations must be in the miniport driver.</p>
-
-<p>If any other miniport driver function shares memory, such as part of the <i>HwDeviceExtension</i>, with <i>HwVidInterrupt</i>, it must call <b>VideoPortSynchronizeExecution</b> to synchronize its access to the shared area.</p>
-
-<p><i>HwVidInterrupt</i> can call only the following system-supplied <b>VideoPort</b><i>Xxx</i> routines (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566461">Functions Exported by the Video Port Driver</a>):</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570492">VideoPortZeroDeviceMemory</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff570493">VideoPortZeroMemory</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570328">VideoPortLogError</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570368">VideoPortStallExecution</a> for no more than a very few microseconds. If possible, <i>HwVidInterrupt</i> should avoid calling this function.</p>
-
-<p>All <b>VideoPortRead</b><i>Xxx</i> and <b>VideoPortWrite</b><i>Xxx</i> routines.</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570294">VideoPortDisableInterrupt</a> (obsolete)</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570296">VideoPortEnableInterrupt</a> (obsolete)</p>
+<a href="..\video\nf-video-videoportenableinterrupt.md">VideoPortEnableInterrupt</a> (obsolete)</p>
 
 <p><i>HwVidInterrupt</i> must <i>not</i> call any <b>VideoPort</b><i>Xxx</i> function that is not in the preceding list. Violation of this requirement will cause system failure (a "blue screen").</p>
 
@@ -186,31 +141,31 @@ BOOLEAN HwVidInterrupt(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566461">Functions Exported by the Video Port Driver</a>
+<a href="display.functions_exported_by_the_video_port_driver">Functions Exported by the Video Port Driver</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pminiport-synchronize-routine.md">HwVidSynchronizeExecutionCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570294">VideoPortDisableInterrupt</a>
+<a href="..\video\nf-video-videoportdisableinterrupt.md">VideoPortDisableInterrupt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570296">VideoPortEnableInterrupt</a>
+<a href="..\video\nf-video-videoportenableinterrupt.md">VideoPortEnableInterrupt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570328">VideoPortLogError</a>
+<a href="..\video\nf-video-videoportlogerror.md">VideoPortLogError</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570368">VideoPortStallExecution</a>
+<a href="..\video\nf-video-videoportstallexecution.md">VideoPortStallExecution</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570372">VideoPortSynchronizeExecution</a>
+<a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570492">VideoPortZeroDeviceMemory</a>
+<a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570493">VideoPortZeroMemory</a>
+<a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
 </dt>
 </dl>
 <p> </p>

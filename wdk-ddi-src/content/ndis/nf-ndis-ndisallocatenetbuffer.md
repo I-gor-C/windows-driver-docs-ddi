@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatenetbuffer.htm
 old-project: netvista
 ms.assetid: b10c5a4b-fb43-4880-9641-ff2dcf0e5cb3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisAllocateNetBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>Call the 
   <b>NdisAllocateNetBuffer</b> function to allocate and initialize a 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure from a <b>NET_BUFFER</b> structure
+  <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure from a <b>NET_BUFFER</b> structure
   pool.</p>
 
 
@@ -63,7 +63,7 @@ PNET_BUFFER NdisAllocateNetBuffer(
 ### -param <i>PoolHandle</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure pool handle that was previously returned from a call to 
+<p>A <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure pool handle that was previously returned from a call to 
      <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">
      NdisAllocateNetBufferPool</a>.</p>
 </dd>
@@ -71,7 +71,7 @@ PNET_BUFFER NdisAllocateNetBuffer(
 ### -param <i>MdlChain</i> [in, optional]
 
 <dd>
-<p>A pointer to an MDL chain that NDIS uses to initialize the new <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure. 
+<p>A pointer to an MDL chain that NDIS uses to initialize the new <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure. 
      <i>MdlChain</i> can be <b>NULL</b>.</p>
 </dd>
 
@@ -97,16 +97,16 @@ PNET_BUFFER NdisAllocateNetBuffer(
 </dl>
 
 ## -returns
-<p><b>NdisAllocateNetBuffer</b> returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure that NDIS allocated. If the
+<p><b>NdisAllocateNetBuffer</b> returns a pointer to the <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure that NDIS allocated. If the
      allocation was unsuccessful, this pointer is <b>NULL</b>.</p>
 
 ## -remarks
 <p>Call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562582">NdisFreeNetBuffer</a> to free a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure that was allocated from a
+    <a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a> to free a 
+    <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure that was allocated from a
     <b>NET_BUFFER</b> structure pool.</p>
 
-<p>The preallocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> can be reused by reinitializing it with another MDL chain when it owns
+<p>The preallocated <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> can be reused by reinitializing it with another MDL chain when it owns
     <b>NET_BUFFER</b>, but the 
     <i>DataOffset</i>, 
     <i>DataLength</i>, 
@@ -118,34 +118,11 @@ PNET_BUFFER NdisAllocateNetBuffer(
 <i>DataOffset</i>, and 
     <i>CurrentMdl</i> starts with the second MDL (<i>M</i>) in the original MDL chain, 
     <i>CurrentMdlOffset</i> is <i>Z</i>. The 
-    <i>MdlChain</i> field in <a href="https://msdn.microsoft.com/library/windows/hardware/ff568381">NET_BUFFER_DATA</a> then needs to point to a new MDL chain that contains <i>X'</i>
+    <i>MdlChain</i> field in <a href="..\ndis\ns-ndis--net-buffer-data.md">NET_BUFFER_DATA</a> then needs to point to a new MDL chain that contains <i>X'</i>
 <i>DataLength</i> and <i>Y'</i>
 <i>DataOffset</i>. If 
     <i>CurrentMdl</i> starts with the third MDL (<i>M'</i>) in the new MDL chain, 
-    <i>CurrentMdlOffset</i> is <i>Z'</i>, and the following macros need to be used to set fields in <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>:</p>
-
-<p>Call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562582">NdisFreeNetBuffer</a> to free a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure that was allocated from a
-    <b>NET_BUFFER</b> structure pool.</p>
-
-<p>The preallocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> can be reused by reinitializing it with another MDL chain when it owns
-    <b>NET_BUFFER</b>, but the 
-    <i>DataOffset</i>, 
-    <i>DataLength</i>, 
-    <i>CurrentMdl</i>, and 
-    <i>CurrentMdlOffset</i> fields in <b>NET_BUFFER</b> must be consistent with the new MDL chain.</p>
-
-<p>For example, if the original MDL chain contains <i>X</i>
-<i>DataLength</i> and <i>Y</i>
-<i>DataOffset</i>, and 
-    <i>CurrentMdl</i> starts with the second MDL (<i>M</i>) in the original MDL chain, 
-    <i>CurrentMdlOffset</i> is <i>Z</i>. The 
-    <i>MdlChain</i> field in <a href="https://msdn.microsoft.com/library/windows/hardware/ff568381">NET_BUFFER_DATA</a> then needs to point to a new MDL chain that contains <i>X'</i>
-<i>DataLength</i> and <i>Y'</i>
-<i>DataOffset</i>. If 
-    <i>CurrentMdl</i> starts with the third MDL (<i>M'</i>) in the new MDL chain, 
-    <i>CurrentMdlOffset</i> is <i>Z'</i>, and the following macros need to be used to set fields in <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>:</p>
+    <i>CurrentMdlOffset</i> is <i>Z'</i>, and the following macros need to be used to set fields in <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>:</p>
 
 ## -requirements
 <table>
@@ -200,7 +177,7 @@ PNET_BUFFER NdisAllocateNetBuffer(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff561607">NdisAllocateNetBuffer</a>
+<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>, <a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
 </td>
 </tr>
 </table>
@@ -208,18 +185,18 @@ PNET_BUFFER NdisAllocateNetBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561613">NdisAllocateNetBufferPool</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">NdisAllocateNetBufferPool</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562582">NdisFreeNetBuffer</a>
+<a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBuffer function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBuffer function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

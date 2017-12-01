@@ -80,7 +80,7 @@ HRESULT QuerySimulationSupport(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562652">SIMULATE_CAPS_1</a> (defined in printoem.h)</p>
+<a href="..\printoem\ns-printoem--simulate-caps-1.md">SIMULATE_CAPS_1</a> (defined in printoem.h)</p>
 </td>
 </tr>
 </table>
@@ -128,10 +128,6 @@ HRESULT QuerySimulationSupport(
 
 <p>The <code>IPrintCoreUI2::QuerySimulationSupport</code> method stores a spooler simulation capability structure in the buffer pointed to by <i>pCaps</i>. This structure specifies the level of spooler support for "N-up" printing, reverse printing, the maximum number of pages that can be printed, collation, and others.</p>
 
-<p>This method is supported only for Windows XP Pscript5 plug-ins, not for Unidrv plug-ins.</p>
-
-<p>The <code>IPrintCoreUI2::QuerySimulationSupport</code> method stores a spooler simulation capability structure in the buffer pointed to by <i>pCaps</i>. This structure specifies the level of spooler support for "N-up" printing, reverse printing, the maximum number of pages that can be printed, collation, and others.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -159,7 +155,7 @@ HRESULT QuerySimulationSupport(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562652">SIMULATE_CAPS_1</a>
+<a href="..\printoem\ns-printoem--simulate-caps-1.md">SIMULATE_CAPS_1</a>
 </dt>
 </dl>
 <p> </p>

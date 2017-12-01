@@ -7,7 +7,7 @@ old-location: stream\lamp_intensity_color.htm
 old-project: stream
 ms.assetid: F87AFCA5-651C-4782-9F6F-C0AFB09010CB
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: LAMP_INTENSITY_COLOR, LAMP_INTENSITY_COLOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure is the I/O parameter type of <a href="https://msdn.microsoft.com/library/windows/hardware/dn925069">IOCTL_LAMP_GET_INTENSITY_COLOR</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn925076">IOCTL_LAMP_SET_INTENSITY_COLOR</a>.</p>
+<p>This structure is the I/O parameter type of <a href="..\lamp\ni-lamp-ioctl-lamp-get-intensity-color.md">IOCTL_LAMP_GET_INTENSITY_COLOR</a> and <a href="..\lamp\ni-lamp-ioctl-lamp-set-intensity-color.md">IOCTL_LAMP_SET_INTENSITY_COLOR</a>.</p>
 
 
 ## -syntax

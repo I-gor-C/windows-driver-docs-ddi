@@ -66,9 +66,7 @@ inline void __stdcall wiauDbgLegacyError(
 <p>None</p>
 
 ## -remarks
-<p>The <b>wiauDbgLegacyError</b> function is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549633">wiauDbgError</a> function except that the latter function has an additional parameter used to identify the function or method that is active when the function is called.</p>
-
-<p>The <b>wiauDbgLegacyError</b> function is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549633">wiauDbgError</a> function except that the latter function has an additional parameter used to identify the function or method that is active when the function is called.</p>
+<p>The <b>wiauDbgLegacyError</b> function is identical to the <a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a> function except that the latter function has an additional parameter used to identify the function or method that is active when the function is called.</p>
 
 ## -requirements
 <table>
@@ -105,7 +103,7 @@ inline void __stdcall wiauDbgLegacyError(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549633">wiauDbgError</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
 </dt>
 </dl>
 <p> </p>

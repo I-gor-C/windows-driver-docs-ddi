@@ -72,13 +72,13 @@ typedef struct _DXGK_QUERYSEGMENTMEMORYSTATE {
 ### -field <b>NumInvalidMemoryRanges</b>
 
 <dd>
-<p>The number of entries in the <b>pMemoryRanges</b> array. This is the value returned by the kernel mode driver in <a href="https://msdn.microsoft.com/library/windows/hardware/dn906842">DXGK_SEGMENTDESCRIPTOR4</a>.</p>
+<p>The number of entries in the <b>pMemoryRanges</b> array. This is the value returned by the kernel mode driver in <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a>.</p>
 </dd>
 
 ### -field <b>pMemoryRanges</b>
 
 <dd>
-<p>Array of <a href="https://msdn.microsoft.com/library/windows/hardware/dn906829">DXGK_MEMORYRANGE</a> structures for the invalid memory ranges.</p>
+<p>Array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-memoryrange.md">DXGK_MEMORYRANGE</a> structures for the invalid memory ranges.</p>
 </dd>
 </dl>
 
@@ -121,10 +121,10 @@ typedef struct _DXGK_QUERYSEGMENTMEMORYSTATE {
 <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906842">DXGK_SEGMENTDESCRIPTOR4</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906829">DXGK_MEMORYRANGE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-memoryrange.md">DXGK_MEMORYRANGE</a>
 </dt>
 </dl>
 <p> </p>

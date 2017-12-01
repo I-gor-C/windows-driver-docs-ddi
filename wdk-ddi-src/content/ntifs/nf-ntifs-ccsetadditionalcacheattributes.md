@@ -79,9 +79,7 @@ VOID CcSetAdditionalCacheAttributes(
 <p>None</p>
 
 ## -remarks
-<p><b>CcSetAdditionalCacheAttributes</b> can be called any time after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>. Initially, both read-ahead and write-behind are enabled.</p>
-
-<p><b>CcSetAdditionalCacheAttributes</b> can be called any time after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>. Initially, both read-ahead and write-behind are enabled.</p>
+<p><b>CcSetAdditionalCacheAttributes</b> can be called any time after calling <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>. Initially, both read-ahead and write-behind are enabled.</p>
 
 ## -requirements
 <table>
@@ -138,13 +136,13 @@ VOID CcSetAdditionalCacheAttributes(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539224">CcSetReadAheadGranularity</a>
+<a href="..\ntifs\nf-ntifs-ccsetreadaheadgranularity.md">CcSetReadAheadGranularity</a>
 </dt>
 </dl>
 <p> </p>

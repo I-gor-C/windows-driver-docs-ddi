@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>RtlConvertSidToUnicodeString</b> routine generates a printable Unicode string representation of a security identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>). </p>
+<p>The <b>RtlConvertSidToUnicodeString</b> routine generates a printable Unicode string representation of a security identifier (<a href="ifsk.sid">SID</a>). </p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ NTSTATUS RtlConvertSidToUnicodeString(
 ### -param <i>UnicodeString</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure to contain the generated Unicode string.  The <i>UnicodeString-&gt;MaximumLength</i> member is set only if <i>AllocateDestinationString</i> is <b>TRUE</b>.</p>
+<p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure to contain the generated Unicode string.  The <i>UnicodeString-&gt;MaximumLength</i> member is set only if <i>AllocateDestinationString</i> is <b>TRUE</b>.</p>
 </dd>
 
 ### -param <i>Sid</i> [in]
@@ -95,15 +95,7 @@ NTSTATUS RtlConvertSidToUnicodeString(
 
 <p>All other members in the <i>SID</i> will be generated as decimal.</p>
 
-<p>If <i>AllocateDestinationString</i> is <b>TRUE</b>, the allocated buffer must be deallocated by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a>.</p>
-
-<p>The generated Unicode string will take one of two forms.  If the value of the IdentifierAuthority member of the <i>SID</i> is less than or equal to 2^32, the IdentifierAuthority member will be generated as decimal. For example, a <i>SID</i> with an IdentifierAuthority of 281,736 generates:</p>
-
-<p>Otherwise the IdentifierAuthority will be generated as hexadecimal. For example, a <i>SID</i> with an IdentifierAuthority of 173,495,281,736 generates:</p>
-
-<p>All other members in the <i>SID</i> will be generated as decimal.</p>
-
-<p>If <i>AllocateDestinationString</i> is <b>TRUE</b>, the allocated buffer must be deallocated by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a>.</p>
+<p>If <i>AllocateDestinationString</i> is <b>TRUE</b>, the allocated buffer must be deallocated by using <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>.</p>
 
 ## -requirements
 <table>
@@ -168,13 +160,13 @@ NTSTATUS RtlConvertSidToUnicodeString(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a>
+<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>

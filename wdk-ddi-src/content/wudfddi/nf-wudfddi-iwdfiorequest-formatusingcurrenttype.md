@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest_formatusingcurrenttype.htm
 old-project: wdf
 ms.assetid: 4cbf6d29-bccd-4629-b282-eb5314f9b4f4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFIoRequest, FormatUsingCurrentType, IWDFIoRequest::FormatUsingCurrentType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,33 +66,9 @@ void  FormatUsingCurrentType();
 
 <p>Call <b>FormatUsingCurrentType</b> to format the request so that the framework can pass the request to the driver's local I/O target.</p>
 
-<p>Call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a> method to send the request to the I/O target.</p>
+<p>Call the <a href="wdf.iwdfiorequest_send">IWDFIoRequest::Send</a> method to send the request to the I/O target.</p>
 
-<p>For a code example of how to use the <b>FormatUsingCurrentType</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>.</p>
-
-<p>When a driver receives an I/O request, the driver might forward the request to the local I/O target, unmodified. To forward the unmodified request, the driver must:</p>
-
-<p>Call <b>FormatUsingCurrentType</b> to format the request so that the framework can pass the request to the driver's local I/O target.</p>
-
-<p>Call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a> method to send the request to the I/O target.</p>
-
-<p>For a code example of how to use the <b>FormatUsingCurrentType</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>.</p>
-
-<p>When a driver receives an I/O request, the driver might forward the request to the local I/O target, unmodified. To forward the unmodified request, the driver must:</p>
-
-<p>Call <b>FormatUsingCurrentType</b> to format the request so that the framework can pass the request to the driver's local I/O target.</p>
-
-<p>Call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a> method to send the request to the I/O target.</p>
-
-<p>For a code example of how to use the <b>FormatUsingCurrentType</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>.</p>
-
-<p>When a driver receives an I/O request, the driver might forward the request to the local I/O target, unmodified. To forward the unmodified request, the driver must:</p>
-
-<p>Call <b>FormatUsingCurrentType</b> to format the request so that the framework can pass the request to the driver's local I/O target.</p>
-
-<p>Call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a> method to send the request to the I/O target.</p>
-
-<p>For a code example of how to use the <b>FormatUsingCurrentType</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>.</p>
+<p>For a code example of how to use the <b>FormatUsingCurrentType</b> method, see <a href="wdf.iwdfiorequest_send">IWDFIoRequest::Send</a>.</p>
 
 ## -requirements
 <table>
@@ -147,12 +123,12 @@ void  FormatUsingCurrentType();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558985">IWDFIoRequest</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
+<a href="wdf.iwdfiorequest_send">IWDFIoRequest::Send</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::FormatUsingCurrentType method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::FormatUsingCurrentType method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -69,7 +69,7 @@ typedef struct _AACS_BINDING_NONCE {
 </dl>
 
 ## -remarks
-<p>Clients retrieve the binding nonce with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559262">IOCTL_AACS_READ_BINDING_NONCE</a> request or an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559248">IOCTL_AACS_GENERATE_BINDING_NONCE</a> request.</p>
+<p>Clients retrieve the binding nonce with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-read-binding-nonce.md">IOCTL_AACS_READ_BINDING_NONCE</a> request or an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-generate-binding-nonce.md">IOCTL_AACS_GENERATE_BINDING_NONCE</a> request.</p>
 
 ## -requirements
 <table>
@@ -88,10 +88,10 @@ typedef struct _AACS_BINDING_NONCE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559248">IOCTL_AACS_GENERATE_BINDING_NONCE</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-generate-binding-nonce.md">IOCTL_AACS_GENERATE_BINDING_NONCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559262">IOCTL_AACS_READ_BINDING_NONCE</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-read-binding-nonce.md">IOCTL_AACS_READ_BINDING_NONCE</a>
 </dt>
 </dl>
 <p> </p>

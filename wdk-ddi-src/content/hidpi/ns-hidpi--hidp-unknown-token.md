@@ -76,7 +76,7 @@ typedef struct _HIDP_UNKNOWN_TOKEN {
 </dl>
 
 ## -remarks
-<p>HIDP_UNKNOWN_TOKEN is designed to be used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539701">HIDP_EXTENDED_ATTRIBUTES</a> structure. <a href="https://msdn.microsoft.com/library/windows/hardware/ff539721">HidP_GetExtendedAttributes</a> returns a HIDP_EXTENDED_ATTRIBUTES structure, which contains a variable length array of <b>HIDP_UNKNOWN_TOKEN</b> structures.</p>
+<p>HIDP_UNKNOWN_TOKEN is designed to be used with the <a href="..\hidpi\ns-hidpi--hidp-extended-attributes.md">HIDP_EXTENDED_ATTRIBUTES</a> structure. <a href="..\hidpi\nf-hidpi-hidp-getextendedattributes.md">HidP_GetExtendedAttributes</a> returns a HIDP_EXTENDED_ATTRIBUTES structure, which contains a variable length array of <b>HIDP_UNKNOWN_TOKEN</b> structures.</p>
 
 ## -requirements
 <table>
@@ -95,10 +95,10 @@ typedef struct _HIDP_UNKNOWN_TOKEN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539701">HIDP_EXTENDED_ATTRIBUTES</a>
+<a href="..\hidpi\ns-hidpi--hidp-extended-attributes.md">HIDP_EXTENDED_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539721">HidP_GetExtendedAttributes</a>
+<a href="..\hidpi\nf-hidpi-hidp-getextendedattributes.md">HidP_GetExtendedAttributes</a>
 </dt>
 </dl>
 <p> </p>

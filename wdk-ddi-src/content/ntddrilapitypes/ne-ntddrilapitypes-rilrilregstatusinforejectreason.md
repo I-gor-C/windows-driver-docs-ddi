@@ -7,7 +7,7 @@ old-location: netvista\rilrilregstatusinforejectreason.htm
 old-project: netvista
 ms.assetid: 17aad504-4223-4764-8a24-536a81807650
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

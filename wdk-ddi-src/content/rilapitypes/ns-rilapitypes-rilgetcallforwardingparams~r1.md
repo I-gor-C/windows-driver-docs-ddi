@@ -7,7 +7,7 @@ old-location: netvista\rilgetcallforwardingparams_2.htm
 old-project: netvista
 ms.assetid: f7ebe2a7-b29e-411e-bdfa-744c95645095
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILGETCALLFORWARDINGPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

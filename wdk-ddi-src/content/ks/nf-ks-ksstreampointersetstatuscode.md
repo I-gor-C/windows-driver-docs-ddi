@@ -7,7 +7,7 @@ old-location: stream\ksstreampointersetstatuscode.htm
 old-project: stream
 ms.assetid: 88d554d9-55b7-42d4-b799-f8cb2029b1ae
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsStreamPointerSetStatusCode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NTSTATUS KsStreamPointerSetStatusCode(
 ### -param <i>StreamPointer</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a> structure. This pointer points to the frame contained in the IRP.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure. This pointer points to the frame contained in the IRP.</p>
 </dd>
 
 ### -param <i>Status</i> [in]
@@ -72,10 +72,6 @@ NTSTATUS KsStreamPointerSetStatusCode(
 <p><b>KsStreamPointerSetStatusCode</b> returns STATUS_SUCCESS if the IRP is completed with the requested status code. Otherwise, it returns an appropriate error code.</p>
 
 ## -remarks
-<p>Note that the IRP contains the frame to which <i>StreamPointer</i> points.</p>
-
-<p>Also see <a href="NULL">Stream Pointers</a>.</p>
-
 <p>Note that the IRP contains the frame to which <i>StreamPointer</i> points.</p>
 
 <p>Also see <a href="NULL">Stream Pointers</a>.</p>
@@ -133,9 +129,9 @@ NTSTATUS KsStreamPointerSetStatusCode(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563535">KSPIN_DISPATCH</a>
+<a href="..\ks\ns-ks--kspin-dispatch.md">KSPIN_DISPATCH</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerSetStatusCode function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerSetStatusCode function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

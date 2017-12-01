@@ -7,7 +7,7 @@ old-location: netvista\ril_setsmsc.htm
 old-project: netvista
 ms.assetid: bbd3ad3a-cf16-490b-83fe-107a0d802406
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SetSMSC
 ms.prod: windows-hardware
 ms.technology: windows-devices

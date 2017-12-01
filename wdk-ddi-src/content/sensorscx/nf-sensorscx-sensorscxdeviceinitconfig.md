@@ -7,7 +7,7 @@ old-location: sensors\sensorscxdeviceinitconfig.htm
 old-project: sensors
 ms.assetid: E347F2E1-5AF5-411A-8F05-DA4826240E02
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: SensorsCxDeviceInitConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices

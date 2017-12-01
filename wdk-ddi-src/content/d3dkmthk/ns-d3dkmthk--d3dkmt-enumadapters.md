@@ -64,7 +64,7 @@ typedef struct _D3DKMT_ENUMADAPTERS {
 ### -field <b>Adapters</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh439469">D3DKMT_ADAPTERINFO</a> structures that supply configuration information for each adapter. The maximum number of adapters that can be enumerated is 16.</p>
+<p>An array of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-adapterinfo.md">D3DKMT_ADAPTERINFO</a> structures that supply configuration information for each adapter. The maximum number of adapters that can be enumerated is 16.</p>
 </dd>
 </dl>
 
@@ -104,7 +104,7 @@ typedef struct _D3DKMT_ENUMADAPTERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439469">D3DKMT_ADAPTERINFO</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-adapterinfo.md">D3DKMT_ADAPTERINFO</a>
 </dt>
 </dl>
 <p> </p>

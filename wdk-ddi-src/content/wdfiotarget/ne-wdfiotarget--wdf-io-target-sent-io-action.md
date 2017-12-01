@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_target_sent_io_action.htm
 old-project: wdf
 ms.assetid: 4295ef73-b9a8-4593-8114-d0b836275b13
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]</p>
-<p>The <b>WDF_IO_TARGET_SENT_IO_ACTION</b> enumeration identifies the actions that the framework can take when a driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548680">WdfIoTargetStop</a> to stop an I/O target.</p>
+<p>The <b>WDF_IO_TARGET_SENT_IO_ACTION</b> enumeration identifies the actions that the framework can take when a driver calls <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a> to stop an I/O target.</p>
 
 
 ## -syntax
@@ -68,40 +68,28 @@ typedef enum _WDF_IO_TARGET_SENT_IO_ACTION {
 ### -field <a id="WdfIoTargetCancelSentIo"></a><a id="wdfiotargetcancelsentio"></a><a id="WDFIOTARGETCANCELSENTIO"></a><b>WdfIoTargetCancelSentIo</b>
 
 <dd>
-<p>Before the framework stops the I/O target, it will attempt to cancel I/O requests that are in the I/O target's queue. The framework cancels all of the target queue's I/O requests, and waits for all I/O requests to complete, before <a href="https://msdn.microsoft.com/library/windows/hardware/ff548680">WdfIoTargetStop</a> returns. The framework also attempts to cancel I/O requests that have left the I/O target's queue and entered lower drivers.</p>
+<p>Before the framework stops the I/O target, it will attempt to cancel I/O requests that are in the I/O target's queue. The framework cancels all of the target queue's I/O requests, and waits for all I/O requests to complete, before <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a> returns. The framework also attempts to cancel I/O requests that have left the I/O target's queue and entered lower drivers.</p>
 </dd>
 
 ### -field <a id="WdfIoTargetWaitForSentIoToComplete"></a><a id="wdfiotargetwaitforsentiotocomplete"></a><a id="WDFIOTARGETWAITFORSENTIOTOCOMPLETE"></a><b>WdfIoTargetWaitForSentIoToComplete</b>
 
 <dd>
-<p>Before the framework stops the I/O target, it will wait for I/O requests that are in the I/O target's queue to be completed. The framework completes all of the target queue's I/O requests, and calls each request's <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function, before <a href="https://msdn.microsoft.com/library/windows/hardware/ff548680">WdfIoTargetStop</a> returns.</p>
+<p>Before the framework stops the I/O target, it will wait for I/O requests that are in the I/O target's queue to be completed. The framework completes all of the target queue's I/O requests, and calls each request's <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function, before <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a> returns.</p>
 </dd>
 
 ### -field <a id="WdfIoTargetLeaveSentIoPending"></a><a id="wdfiotargetleavesentiopending"></a><a id="WDFIOTARGETLEAVESENTIOPENDING"></a><b>WdfIoTargetLeaveSentIoPending</b>
 
 <dd>
-<p>The framework will leave I/O requests in the I/O target's queue. The requests remain in the target's queue until the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548677">WdfIoTargetStart</a> or the device is removed.</p>
+<p>The framework will leave I/O requests in the I/O target's queue. The requests remain in the target's queue until the driver calls <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstart.md">WdfIoTargetStart</a> or the device is removed.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>WDF_IO_TARGET_SENT_IO_ACTION</b> enumeration is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548680">WdfIoTargetStop</a> method.</p>
+<p>The <b>WDF_IO_TARGET_SENT_IO_ACTION</b> enumeration is used as an input parameter to the <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a> method.</p>
 
-<p>If your driver specifies the <b>WdfIoTargetWaitForSentIoToComplete</b> flag, the driver must not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548680">WdfIoTargetStop</a> from a request handler, a <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function, or an <a href="..\wdfusb\nc-wdfusb-evt-wdf-usb-readers-failed.md">EvtUsbTargetPipeReadersFailed</a> callback function.</p>
+<p>If your driver specifies the <b>WdfIoTargetWaitForSentIoToComplete</b> flag, the driver must not call <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a> from a request handler, a <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function, or an <a href="..\wdfusb\nc-wdfusb-evt-wdf-usb-readers-failed.md">EvtUsbTargetPipeReadersFailed</a> callback function.</p>
 
-<p>For the UMDF version of this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561418">WDF_IO_TARGET_SENT_IO_ACTION (UMDF)</a>.</p>
-
-<p>The <b>WDF_IO_TARGET_SENT_IO_ACTION</b> enumeration is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548680">WdfIoTargetStop</a> method.</p>
-
-<p>If your driver specifies the <b>WdfIoTargetWaitForSentIoToComplete</b> flag, the driver must not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548680">WdfIoTargetStop</a> from a request handler, a <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function, or an <a href="..\wdfusb\nc-wdfusb-evt-wdf-usb-readers-failed.md">EvtUsbTargetPipeReadersFailed</a> callback function.</p>
-
-<p>For the UMDF version of this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561418">WDF_IO_TARGET_SENT_IO_ACTION (UMDF)</a>.</p>
-
-<p>The <b>WDF_IO_TARGET_SENT_IO_ACTION</b> enumeration is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548680">WdfIoTargetStop</a> method.</p>
-
-<p>If your driver specifies the <b>WdfIoTargetWaitForSentIoToComplete</b> flag, the driver must not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548680">WdfIoTargetStop</a> from a request handler, a <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function, or an <a href="..\wdfusb\nc-wdfusb-evt-wdf-usb-readers-failed.md">EvtUsbTargetPipeReadersFailed</a> callback function.</p>
-
-<p>For the UMDF version of this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561418">WDF_IO_TARGET_SENT_IO_ACTION (UMDF)</a>.</p>
+<p>For the UMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfddi-types--wdf-io-target-sent-io-action.md">WDF_IO_TARGET_SENT_IO_ACTION (UMDF)</a>.</p>
 
 ## -requirements
 <table>
@@ -139,9 +127,9 @@ typedef enum _WDF_IO_TARGET_SENT_IO_ACTION {
 <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548680">WdfIoTargetStop</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_SENT_IO_ACTION enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_SENT_IO_ACTION enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

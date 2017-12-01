@@ -7,7 +7,7 @@ old-location: netvista\ndiscancelsendnetbufferlists.htm
 old-project: netvista
 ms.assetid: 7b61db73-ddd4-4d46-b378-9a82fdf041ea
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCancelSendNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ VOID NdisCancelSendNetBufferLists(
 
 <dd>
 <p>The handle returned by the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function that
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function that
      identifies the miniport driver or virtual miniport to which the cancellation applies.</p>
 </dd>
 
@@ -78,7 +78,7 @@ VOID NdisCancelSendNetBufferLists(
 ## -remarks
 <p>A protocol driver maps IRPs that it receives from higher-level software to NDIS network data. A list
     of 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures describes the
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures describes the
     network data that the protocol driver sends to lower-level drivers for transmission. If an IRP is
     canceled, a protocol driver can call the 
     <b>NdisCancelSendNetBufferLists</b> function to cancel the pending transmission of the corresponding NDIS
@@ -103,54 +103,7 @@ VOID NdisCancelSendNetBufferLists(
 <p>The protocol driver must ensure that the handle that the 
     <i>NdisBindingHandle</i> parameter specifies remains valid for the duration of the call to 
     <b>NdisCancelSendNetBufferLists</b>. That is, the protocol driver must not call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561640">NdisCloseAdapterEx</a> function to close
-    the binding before 
-    <b>NdisCancelSendNetBufferLists</b> returns.</p>
-
-<p>There is no guarantee that calling 
-    <b>NdisCancelSendNetBufferLists</b> will cancel the pending transmission of all network data with the
-    specified cancellation identifier. For example, if the next-lower driver to which the protocol driver is
-    bound does not provide a 
-    <a href="..\ndis\nc-ndis-miniport-cancel-send.md">MiniportCancelSend</a> function, a call
-    to 
-    <b>NdisCancelSendNetBufferLists</b> does nothing.</p>
-
-<p>In all cases, NDIS returns network data that was submitted for transmission to the originating
-    protocol driver's 
-    <a href="..\ndis\nc-ndis-protocol-send-net-buffer-lists-complete.md">
-    ProtocolSendNetBufferListsComplete</a> function. NDIS returns canceled send data with a completion
-    status of NDIS_STATUS_SEND_ABORTED. The delay between calling 
-    <b>NdisCancelSendNetBufferLists</b> and the return of the canceled NET_BUFFER_LIST structures can vary and
-    therefore cannot be exactly specified.</p>
-
-<p>A protocol driver maps IRPs that it receives from higher-level software to NDIS network data. A list
-    of 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures describes the
-    network data that the protocol driver sends to lower-level drivers for transmission. If an IRP is
-    canceled, a protocol driver can call the 
-    <b>NdisCancelSendNetBufferLists</b> function to cancel the pending transmission of the corresponding NDIS
-    network data.</p>
-
-<p>Call the 
-    <a href="netvista.ndis_set_net_buffer_list_cancel_id">
-    NDIS_SET_NET_BUFFER_LIST_CANCEL_ID</a> macro for each NET_BUFFER_LIST structure that is passed to
-    lower-level drivers for transmission. The NDIS_SET_NET_BUFFER_LIST_CANCEL_ID macro marks the specified
-    packet with a cancellation identifier.</p>
-
-<p><b>NdisCancelSendNetBufferLists</b> cancels the transmission of all data that is marked with the specified
-    cancellation identifier and is associated with the specified miniport driver. The binding handle that is
-    specified in the 
-    <i>NdisBindingHandle</i> parameter identifies the miniport driver.</p>
-
-<p>The 
-    <b>NdisCancelSendNetBufferLists</b> function cancels network data transmissions on a single binding. To
-    cancel network data transmissions on more than one binding, a protocol driver must call the 
-    <b>NdisCancelSendNetBufferLists</b> function once for each binding.</p>
-
-<p>The protocol driver must ensure that the handle that the 
-    <i>NdisBindingHandle</i> parameter specifies remains valid for the duration of the call to 
-    <b>NdisCancelSendNetBufferLists</b>. That is, the protocol driver must not call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561640">NdisCloseAdapterEx</a> function to close
+    <a href="..\ndis\nf-ndis-ndiscloseadapterex.md">NdisCloseAdapterEx</a> function to close
     the binding before 
     <b>NdisCancelSendNetBufferLists</b> returns.</p>
 
@@ -223,7 +176,7 @@ VOID NdisCancelSendNetBufferLists(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548004">Irql_SendRcv_Function</a>
+<a href="devtest.ndis_irql_sendrcv_function">Irql_SendRcv_Function</a>
 </td>
 </tr>
 </table>
@@ -238,13 +191,13 @@ VOID NdisCancelSendNetBufferLists(
    NDIS_SET_NET_BUFFER_LIST_CANCEL_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561640">NdisCloseAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndiscloseadapterex.md">NdisCloseAdapterEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-send-net-buffer-lists-complete.md">
@@ -253,4 +206,4 @@ VOID NdisCancelSendNetBufferLists(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCancelSendNetBufferLists function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCancelSendNetBufferLists function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

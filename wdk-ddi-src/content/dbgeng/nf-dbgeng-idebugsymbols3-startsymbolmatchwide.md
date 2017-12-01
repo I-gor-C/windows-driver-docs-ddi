@@ -7,7 +7,7 @@ old-location: debugger\startsymbolmatchwide.htm
 old-project: debugger
 ms.assetid: dbf8c1a3-cc59-40d7-8355-62891b5b45d2
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols3, StartSymbolMatchWide, IDebugSymbols3::StartSymbolMatchWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ HRESULT StartSymbolMatchWide(
 ### -param <i>Handle</i> [out]
 
 <dd>
-<p>Receives the handle identifying the search.  This handle can be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547856">GetNextSymbolMatch</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543008">EndSymbolMatch</a>.</p>
+<p>Receives the handle identifying the search.  This handle can be passed to <a href="debugger.getnextsymbolmatch">GetNextSymbolMatch</a> and <a href="debugger.endsymbolmatch">EndSymbolMatch</a>.</p>
 </dd>
 </dl>
 
@@ -78,11 +78,7 @@ HRESULT StartSymbolMatchWide(
 <p> </p>
 
 ## -remarks
-<p>This method initializes a symbol search.  The results of the search can be obtained by repeated calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547856">GetNextSymbolMatch</a>.  When all the desired results have been found, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff543008">EndSymbolMatch</a> to release resources the engine holds for the search.</p>
-
-<p>For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
-
-<p>This method initializes a symbol search.  The results of the search can be obtained by repeated calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547856">GetNextSymbolMatch</a>.  When all the desired results have been found, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff543008">EndSymbolMatch</a> to release resources the engine holds for the search.</p>
+<p>This method initializes a symbol search.  The results of the search can be obtained by repeated calls to <a href="debugger.getnextsymbolmatch">GetNextSymbolMatch</a>.  When all the desired results have been found, use <a href="debugger.endsymbolmatch">EndSymbolMatch</a> to release resources the engine holds for the search.</p>
 
 <p>For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
 
@@ -113,15 +109,15 @@ HRESULT StartSymbolMatchWide(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543008">EndSymbolMatch</a>
+<a href="debugger.endsymbolmatch">EndSymbolMatch</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547856">GetNextSymbolMatch</a>
+<a href="debugger.getnextsymbolmatch">GetNextSymbolMatch</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::StartSymbolMatchWide method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::StartSymbolMatchWide method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -64,7 +64,7 @@ NTSTATUS ChangerPerformDiagnostics(
 ### -param <i>ChangerDeviceError</i> [out]
 
 <dd>
-<p>Pointer to the buffer of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff568029">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a> in which the minidriver returns the diagnostic information.</p>
+<p>Pointer to the buffer of type <a href="..\wmidata\ns-wmidata--wmi-changer-problem-device-error.md">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a> in which the minidriver returns the diagnostic information.</p>
 </dd>
 </dl>
 
@@ -79,8 +79,6 @@ NTSTATUS ChangerPerformDiagnostics(
 <p>STATUS_BUFFER_TOO_SMALL</p>
 
 ## -remarks
-<p><b>ChangerPerformDiagnostics</b> routine performs diagnostic tests on the changer device, and reports the problem to the caller. The kind of tests performed depends on the diagnostics support provided by the device. </p>
-
 <p><b>ChangerPerformDiagnostics</b> routine performs diagnostic tests on the changer device, and reports the problem to the caller. The kind of tests performed depends on the diagnostics support provided by the device. </p>
 
 ## -requirements
@@ -110,10 +108,10 @@ NTSTATUS ChangerPerformDiagnostics(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568029">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a>
+<a href="..\wmidata\ns-wmidata--wmi-changer-problem-device-error.md">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551453">CHANGER_DEVICE_PROBLEM_TYPE</a>
+<a href="..\ntddchgr\ne-ntddchgr--changer-device-problem-type.md">CHANGER_DEVICE_PROBLEM_TYPE</a>
 </dt>
 </dl>
 <p> </p>

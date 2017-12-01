@@ -73,9 +73,7 @@ VP_STATUS VideoPortDeleteEvent(
 <p><b>VideoPortDeleteEvent</b> returns NO_ERROR if the event object is successfully deleted.</p>
 
 ## -remarks
-<p>This function should not be used to delete a mapped user event. To delete a mapped user event, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff565434">EngUnmapEvent</a>. </p>
-
-<p>This function should not be used to delete a mapped user event. To delete a mapped user event, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff565434">EngUnmapEvent</a>. </p>
+<p>This function should not be used to delete a mapped user event. To delete a mapped user event, use <a href="display.engunmapevent">EngUnmapEvent</a>. </p>
 
 ## -requirements
 <table>
@@ -140,10 +138,10 @@ VP_STATUS VideoPortDeleteEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570287">VideoPortCreateEvent</a>
+<a href="..\video\nf-video-videoportcreateevent.md">VideoPortCreateEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565434">EngUnmapEvent</a>
+<a href="display.engunmapevent">EngUnmapEvent</a>
 </dt>
 </dl>
 <p> </p>

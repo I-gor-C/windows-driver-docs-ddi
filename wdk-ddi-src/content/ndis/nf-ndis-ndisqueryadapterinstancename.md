@@ -7,7 +7,7 @@ old-location: netvista\ndisqueryadapterinstancename.htm
 old-project: netvista
 ms.assetid: bd6fade6-9b9b-4b38-8e53-c70c40c1165f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisQueryAdapterInstanceName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisQueryAdapterInstanceName
-   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisQueryAdapterInstanceName
-   (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisQueryAdapterInstanceName   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisQueryAdapterInstanceName   (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -68,7 +64,7 @@ NDIS_STATUS NdisQueryAdapterInstanceName(
      string specifies the friendly name of the interface to which the binding refers. This interface is
      either a physical NIC or a virtual adapter. For Windows 2000 and later, NDIS defines the NDIS_STRING
      type as a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> type.</p>
+     <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> type.</p>
 </dd>
 
 ### -param <i>NdisBindingHandle</i> [in]
@@ -77,7 +73,7 @@ NDIS_STATUS NdisQueryAdapterInstanceName(
 <p>A handle that identifies the binding to the target physical NIC or virtual adapter of the
      next-lower driver to which the caller is bound. Typically, 
      <i>NdisBindingHandle</i> was returned by the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function.</p>
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.</p>
 </dd>
 </dl>
 
@@ -92,29 +88,12 @@ NDIS_STATUS NdisQueryAdapterInstanceName(
     to which the protocol driver is bound. The protocol driver specifies the handle to such a NIC or virtual
     adapter in 
     <i>NdisBindingHandle</i> . The protocol driver calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function to retrieve
+    <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function to retrieve
     this handle.</p>
 
 <p><b>NdisQueryAdapterInstanceName</b> allocates memory for the string that specifies the friendly name.
     After the caller finishes using this memory, the caller must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562577">NdisFreeMemory</a> function to release the
-    memory.</p>
-
-<p>Friendly names are intended to help the user quickly and accurately identify a physical NIC or virtual
-    adapter--for example, "PCI Ethernet Adapter" and "Virtual Private Networking Adapter" are considered
-    friendly names.</p>
-
-<p>A protocol driver uses 
-    <b>NdisQueryAdapterInstanceName</b> to retrieve the friendly name of a physical NIC or a virtual adapter
-    to which the protocol driver is bound. The protocol driver specifies the handle to such a NIC or virtual
-    adapter in 
-    <i>NdisBindingHandle</i> . The protocol driver calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function to retrieve
-    this handle.</p>
-
-<p><b>NdisQueryAdapterInstanceName</b> allocates memory for the string that specifies the friendly name.
-    After the caller finishes using this memory, the caller must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562577">NdisFreeMemory</a> function to release the
+    <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a> function to release the
     memory.</p>
 
 <p>Friendly names are intended to help the user quickly and accurately identify a physical NIC or virtual
@@ -178,7 +157,7 @@ NDIS_STATUS NdisQueryAdapterInstanceName(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -186,15 +165,15 @@ NDIS_STATUS NdisQueryAdapterInstanceName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562577">NdisFreeMemory</a>
+<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisQueryAdapterInstanceName function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisQueryAdapterInstanceName function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

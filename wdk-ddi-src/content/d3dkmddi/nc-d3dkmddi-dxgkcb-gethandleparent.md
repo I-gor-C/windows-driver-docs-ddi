@@ -76,8 +76,6 @@ D3DKMT_HANDLE APIENTRY DxgkCbGetHandleParent(
 ## -remarks
 <p>For <b>DxgkCbGetHandleParent</b> to return a resource handle, the handle in <i>hAllocation</i> must be an allocation handle that is associated with a resource; otherwise, <b>DxgkCbGetHandleParent</b> returns <b>NULL</b>.</p>
 
-<p>For <b>DxgkCbGetHandleParent</b> to return a resource handle, the handle in <i>hAllocation</i> must be an allocation handle that is associated with a resource; otherwise, <b>DxgkCbGetHandleParent</b> returns <b>NULL</b>.</p>
-
 ## -requirements
 <table>
 <tr>

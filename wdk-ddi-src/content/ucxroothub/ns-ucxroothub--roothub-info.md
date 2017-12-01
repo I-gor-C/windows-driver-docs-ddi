@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Provides information about a USB root hub. This structure is passed by UCX in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187836">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.</p>
+<p>Provides information about a USB root hub. This structure is passed by UCX in the <a href="buses.evt_ucx_roothub_get_info">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.</p>
 
 
 ## -syntax
@@ -69,7 +69,7 @@ typedef struct _ROOTHUB_INFO {
 ### -field <b>ControllerType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188016">CONTROLLER_TYPE</a> value that identifies the type of eXtensible Host Controller Interface (xHCI) which has the root hub.</p>
+<p>A <a href="buses._controller_type">CONTROLLER_TYPE</a> value that identifies the type of eXtensible Host Controller Interface (xHCI) which has the root hub.</p>
 </dd>
 
 ### -field <b>NumberOf20Ports</b>
@@ -117,7 +117,7 @@ typedef struct _ROOTHUB_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187836">EVT_UCX_ROOTHUB_GET_INFO</a>
+<a href="buses.evt_ucx_roothub_get_info">EVT_UCX_ROOTHUB_GET_INFO</a>
 </dt>
 </dl>
 <p> </p>

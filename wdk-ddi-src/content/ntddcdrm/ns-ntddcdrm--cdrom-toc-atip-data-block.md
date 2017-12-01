@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Device control IRPs with a control code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559367">IOCTL_CDROM_READ_TOC_EX</a> and a format of CDROM_READ_TOC_EX_FORMAT_ATIP return their output data in a header structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551375">CDROM_TOC_ATIP_DATA</a> followed by a series of ATIP data block descriptors defined by <b>CDROM_TOC_ATIP_DATA_BLOCK</b>.</p>
+<p>Device control IRPs with a control code of <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-toc-ex.md">IOCTL_CDROM_READ_TOC_EX</a> and a format of CDROM_READ_TOC_EX_FORMAT_ATIP return their output data in a header structure of type <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-atip-data.md">CDROM_TOC_ATIP_DATA</a> followed by a series of ATIP data block descriptors defined by <b>CDROM_TOC_ATIP_DATA_BLOCK</b>.</p>
 
 
 ## -syntax
@@ -242,13 +242,13 @@ typedef struct _CDROM_TOC_ATIP_DATA_BLOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559367">IOCTL_CDROM_READ_TOC_EX</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-toc-ex.md">IOCTL_CDROM_READ_TOC_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551366">CDROM_READ_TOC_EX</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-read-toc-ex.md">CDROM_READ_TOC_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551375">CDROM_TOC_ATIP_DATA</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-atip-data.md">CDROM_TOC_ATIP_DATA</a>
 </dt>
 </dl>
 <p> </p>

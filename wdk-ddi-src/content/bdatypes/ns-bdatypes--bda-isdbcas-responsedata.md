@@ -7,7 +7,7 @@ old-location: stream\bda_isdbcas_responsedata.htm
 old-project: stream
 ms.assetid: 70BD9007-6CA4-49EC-8A30-3544FE62C18E
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_ISDBCAS_RESPONSEDATA, BDA_ISDBCAS_RESPONSEDATA, *PBDA_ISDBCAS_RESPONSEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

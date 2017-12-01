@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The USBSCAN_PIPE_CONFIGURATION structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542859">IOCTL_GET_PIPE_CONFIGURATION</a>.</p>
+<p>The USBSCAN_PIPE_CONFIGURATION structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl-get-pipe-configuration.md">IOCTL_GET_PIPE_CONFIGURATION</a>.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct _USBSCAN_PIPE_CONFIGURATION {
 ### -field <b>PipeInfo</b>
 
 <dd>
-<p>Pointer to a <b>NumberOfPipes</b>-sized array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548547">USBSCAN_PIPE_INFORMATION</a> structures.</p>
+<p>Pointer to a <b>NumberOfPipes</b>-sized array of <a href="..\usbscan\ns-usbscan--usbscan-pipe-information.md">USBSCAN_PIPE_INFORMATION</a> structures.</p>
 </dd>
 </dl>
 

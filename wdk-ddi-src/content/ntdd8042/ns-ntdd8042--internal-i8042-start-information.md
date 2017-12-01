@@ -76,7 +76,7 @@ typedef struct _INTERNAL_I8042_START_INFORMATION {
 </dl>
 
 ## -remarks
-<p>This structure is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff541257">IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff541265">IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION</a> requests.</p>
+<p>This structure is used with <a href="..\ntdd8042\ni-ntdd8042-ioctl-internal-i8042-keyboard-start-information.md">IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION</a> and <a href="..\ntdd8042\ni-ntdd8042-ioctl-internal-i8042-mouse-start-information.md">IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION</a> requests.</p>
 
 ## -requirements
 <table>
@@ -95,10 +95,10 @@ typedef struct _INTERNAL_I8042_START_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541257">IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION</a>
+<a href="..\ntdd8042\ni-ntdd8042-ioctl-internal-i8042-keyboard-start-information.md">IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541265">IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION</a>
+<a href="..\ntdd8042\ni-ntdd8042-ioctl-internal-i8042-mouse-start-information.md">IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

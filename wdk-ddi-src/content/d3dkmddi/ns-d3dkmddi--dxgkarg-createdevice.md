@@ -72,13 +72,13 @@ typedef struct _DXGKARG_CREATEDEVICE {
 ### -field <b>Flags</b>
 
 <dd>
-<p> A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561039">DXGK_CREATEDEVICEFLAGS</a> structure that identifies how to create the device.</p>
+<p> A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createdeviceflags.md">DXGK_CREATEDEVICEFLAGS</a> structure that identifies how to create the device.</p>
 </dd>
 
 ### -field <b>pInfo</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561047">DXGK_DEVICEINFO</a> structure that contains parameters that the DirectX graphics subsystem requires from the display miniport driver.</p>
+<p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-deviceinfo.md">DXGK_DEVICEINFO</a> structure that contains parameters that the DirectX graphics subsystem requires from the display miniport driver.</p>
 </dd>
 
 ### -field <b>Pasid</b>
@@ -124,10 +124,10 @@ typedef struct _DXGKARG_CREATEDEVICE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561039">DXGK_CREATEDEVICEFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createdeviceflags.md">DXGK_CREATEDEVICEFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561047">DXGK_DEVICEINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-deviceinfo.md">DXGK_DEVICEINFO</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreatedevice">DxgkDdiCreateDevice</a>

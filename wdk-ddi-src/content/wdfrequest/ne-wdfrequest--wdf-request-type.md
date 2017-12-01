@@ -7,7 +7,7 @@ old-location: wdf\wdf_request_type.htm
 old-project: wdf
 ms.assetid: 91c036a0-7fce-4c7d-a217-eb1c487a15d0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfRegistryWdmGetHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -132,13 +132,13 @@ typedef enum _WDF_REQUEST_TYPE {
 ### -field <a id="WdfRequestTypeQueryEA"></a><a id="wdfrequesttypequeryea"></a><a id="WDFREQUESTTYPEQUERYEA"></a><b>WdfRequestTypeQueryEA</b>
 
 <dd>
-<p>The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a> request. The framework does not handle this type of request.</p>
+<p>The request object represents an <a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a> request. The framework does not handle this type of request.</p>
 </dd>
 
 ### -field <a id="WdfRequestTypeSetEA"></a><a id="wdfrequesttypesetea"></a><a id="WDFREQUESTTYPESETEA"></a><b>WdfRequestTypeSetEA</b>
 
 <dd>
-<p>The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549346">IRP_MJ_SET_EA</a> request. The framework does not handle this type of request.</p>
+<p>The request object represents an <a href="ifsk.irp_mj_set_ea">IRP_MJ_SET_EA</a> request. The framework does not handle this type of request.</p>
 </dd>
 
 ### -field <a id="WdfRequestTypeFlushBuffers"></a><a id="wdfrequesttypeflushbuffers"></a><a id="WDFREQUESTTYPEFLUSHBUFFERS"></a><b>WdfRequestTypeFlushBuffers</b>
@@ -150,19 +150,19 @@ typedef enum _WDF_REQUEST_TYPE {
 ### -field <a id="WdfRequestTypeQueryVolumeInformation"></a><a id="wdfrequesttypequeryvolumeinformation"></a><a id="WDFREQUESTTYPEQUERYVOLUMEINFORMATION"></a><b>WdfRequestTypeQueryVolumeInformation</b>
 
 <dd>
-<p>The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a> request. The framework does not handle this type of request.</p>
+<p>The request object represents an <a href="ifsk.irp_mj_query_volume_information">IRP_MJ_QUERY_VOLUME_INFORMATION</a> request. The framework does not handle this type of request.</p>
 </dd>
 
 ### -field <a id="WdfRequestTypeSetVolumeInformation"></a><a id="wdfrequesttypesetvolumeinformation"></a><a id="WDFREQUESTTYPESETVOLUMEINFORMATION"></a><b>WdfRequestTypeSetVolumeInformation</b>
 
 <dd>
-<p>The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549415">IRP_MJ_SET_VOLUME_INFORMATION</a> request. The framework does not handle this type of request.</p>
+<p>The request object represents an <a href="ifsk.irp_mj_set_volume_information">IRP_MJ_SET_VOLUME_INFORMATION</a> request. The framework does not handle this type of request.</p>
 </dd>
 
 ### -field <a id="WdfRequestTypeDirectoryControl"></a><a id="wdfrequesttypedirectorycontrol"></a><a id="WDFREQUESTTYPEDIRECTORYCONTROL"></a><b>WdfRequestTypeDirectoryControl</b>
 
 <dd>
-<p>The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a> request. The framework does not handle this type of request.</p>
+<p>The request object represents an <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a> request. The framework does not handle this type of request.</p>
 </dd>
 
 ### -field <a id="WdfRequestTypeFileSystemControl"></a><a id="wdfrequesttypefilesystemcontrol"></a><a id="WDFREQUESTTYPEFILESYSTEMCONTROL"></a><b>WdfRequestTypeFileSystemControl</b>
@@ -192,7 +192,7 @@ typedef enum _WDF_REQUEST_TYPE {
 ### -field <a id="WdfRequestTypeLockControl"></a><a id="wdfrequesttypelockcontrol"></a><a id="WDFREQUESTTYPELOCKCONTROL"></a><b>WdfRequestTypeLockControl</b>
 
 <dd>
-<p>The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a> request. The framework does not handle this type of request.</p>
+<p>The request object represents an <a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a> request. The framework does not handle this type of request.</p>
 </dd>
 
 ### -field <a id="WdfRequestTypeCleanup"></a><a id="wdfrequesttypecleanup"></a><a id="WDFREQUESTTYPECLEANUP"></a><b>WdfRequestTypeCleanup</b>
@@ -210,13 +210,13 @@ typedef enum _WDF_REQUEST_TYPE {
 ### -field <a id="WdfRequestTypeQuerySecurity"></a><a id="wdfrequesttypequerysecurity"></a><a id="WDFREQUESTTYPEQUERYSECURITY"></a><b>WdfRequestTypeQuerySecurity</b>
 
 <dd>
-<p>The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549298">IRP_MJ_QUERY_SECURITY</a> request. The framework does not handle this type of request.</p>
+<p>The request object represents an <a href="ifsk.irp_mj_query_security">IRP_MJ_QUERY_SECURITY</a> request. The framework does not handle this type of request.</p>
 </dd>
 
 ### -field <a id="WdfRequestTypeSetSecurity"></a><a id="wdfrequesttypesetsecurity"></a><a id="WDFREQUESTTYPESETSECURITY"></a><b>WdfRequestTypeSetSecurity</b>
 
 <dd>
-<p>The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549407">IRP_MJ_SET_SECURITY</a> request. The framework does not handle this type of request.</p>
+<p>The request object represents an <a href="ifsk.irp_mj_set_security">IRP_MJ_SET_SECURITY</a> request. The framework does not handle this type of request.</p>
 </dd>
 
 ### -field <a id="WdfRequestTypePower"></a><a id="wdfrequesttypepower"></a><a id="WDFREQUESTTYPEPOWER"></a><b>WdfRequestTypePower</b>
@@ -240,13 +240,13 @@ typedef enum _WDF_REQUEST_TYPE {
 ### -field <a id="WdfRequestTypeQueryQuota"></a><a id="wdfrequesttypequeryquota"></a><a id="WDFREQUESTTYPEQUERYQUOTA"></a><b>WdfRequestTypeQueryQuota</b>
 
 <dd>
-<p>The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a> request. The framework does not handle this type of request.</p>
+<p>The request object represents an <a href="ifsk.irp_mj_query_quota">IRP_MJ_QUERY_QUOTA</a> request. The framework does not handle this type of request.</p>
 </dd>
 
 ### -field <a id="WdfRequestTypeSetQuota"></a><a id="wdfrequesttypesetquota"></a><a id="WDFREQUESTTYPESETQUOTA"></a><b>WdfRequestTypeSetQuota</b>
 
 <dd>
-<p>The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a> request. The framework does not handle this type of request.</p>
+<p>The request object represents an <a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a> request. The framework does not handle this type of request.</p>
 </dd>
 
 ### -field <a id="WdfRequestTypePnp"></a><a id="wdfrequesttypepnp"></a><a id="WDFREQUESTTYPEPNP"></a><b>WdfRequestTypePnp</b>
@@ -258,13 +258,13 @@ typedef enum _WDF_REQUEST_TYPE {
 ### -field <a id="WdfRequestTypeOther"></a><a id="wdfrequesttypeother"></a><a id="WDFREQUESTTYPEOTHER"></a><b>WdfRequestTypeOther</b>
 
 <dd>
-<p>A driver receives this request type in its <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> event callback function when requests formatted with <a href="https://msdn.microsoft.com/library/windows/hardware/ff548599">WdfIoTargetFormatRequestForInternalIoctlOthers</a> are completed.</p>
+<p>A driver receives this request type in its <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> event callback function when requests formatted with <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetformatrequestforinternalioctlothers.md">WdfIoTargetFormatRequestForInternalIoctlOthers</a> are completed.</p>
 </dd>
 
 ### -field <a id="WdfRequestTypeUsb"></a><a id="wdfrequesttypeusb"></a><a id="WDFREQUESTTYPEUSB"></a><b>WdfRequestTypeUsb</b>
 
 <dd>
-<p>The target device is a USB device. (This value is used only in <a href="https://msdn.microsoft.com/library/windows/hardware/ff552454">WDF_REQUEST_COMPLETION_PARAMS</a> structures.)</p>
+<p>The target device is a USB device. (This value is used only in <a href="..\wdfrequest\ns-wdfrequest--wdf-request-completion-params.md">WDF_REQUEST_COMPLETION_PARAMS</a> structures.)</p>
 </dd>
 
 ### -field <a id="WdfRequestTypeNoFormat"></a><a id="wdfrequesttypenoformat"></a><a id="WDFREQUESTTYPENOFORMAT"></a><b>WdfRequestTypeNoFormat</b>
@@ -281,23 +281,11 @@ typedef enum _WDF_REQUEST_TYPE {
 </dl>
 
 ## -remarks
-<p>The <b>WDF_REQUEST_TYPE</b> enumeration type is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552472">WDF_REQUEST_PARAMETERS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff552454">WDF_REQUEST_COMPLETION_PARAMS</a> structures.</p>
+<p>The <b>WDF_REQUEST_TYPE</b> enumeration type is used in the <a href="..\wdfrequest\ns-wdfrequest--wdf-request-parameters.md">WDF_REQUEST_PARAMETERS</a> and <a href="..\wdfrequest\ns-wdfrequest--wdf-request-completion-params.md">WDF_REQUEST_COMPLETION_PARAMS</a> structures.</p>
 
 <p>For information about how a framework-based driver can handle request types that the framework does not support, see <a href="wdf.handling_an_irp_that_the_framework_does_not_support">Handling an IRP that the Framework Does Not Support</a>.</p>
 
-<p>For the UMDF version of this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561467">WDF_REQUEST_TYPE (UMDF)</a>.</p>
-
-<p>The <b>WDF_REQUEST_TYPE</b> enumeration type is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552472">WDF_REQUEST_PARAMETERS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff552454">WDF_REQUEST_COMPLETION_PARAMS</a> structures.</p>
-
-<p>For information about how a framework-based driver can handle request types that the framework does not support, see <a href="wdf.handling_an_irp_that_the_framework_does_not_support">Handling an IRP that the Framework Does Not Support</a>.</p>
-
-<p>For the UMDF version of this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561467">WDF_REQUEST_TYPE (UMDF)</a>.</p>
-
-<p>The <b>WDF_REQUEST_TYPE</b> enumeration type is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552472">WDF_REQUEST_PARAMETERS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff552454">WDF_REQUEST_COMPLETION_PARAMS</a> structures.</p>
-
-<p>For information about how a framework-based driver can handle request types that the framework does not support, see <a href="wdf.handling_an_irp_that_the_framework_does_not_support">Handling an IRP that the Framework Does Not Support</a>.</p>
-
-<p>For the UMDF version of this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561467">WDF_REQUEST_TYPE (UMDF)</a>.</p>
+<p>For the UMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-type.md">WDF_REQUEST_TYPE (UMDF)</a>.</p>
 
 ## -requirements
 <table>
@@ -346,4 +334,4 @@ typedef enum _WDF_REQUEST_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_TYPE enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

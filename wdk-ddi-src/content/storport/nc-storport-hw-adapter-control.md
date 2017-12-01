@@ -101,7 +101,7 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <p>The miniport driver should not free its resources when stopping its HBA. If the HBA was removed or stopped for PnP resource reconfiguration, the Storport driver releases resources on behalf of the miniport driver. If the HBA is shut down for power management, the miniport driver's resources are preserved so the HBA can be restarted. </p>
 <p>After <b>HwStorAdapterControl</b> returns from stopping the HBA, any data structures allocated on behalf of the miniport driver for the HBA should be considered invalid until the miniport driver is asked to restart. </p>
 <p>Note that the Storport driver might call <b>HwStorAdapterControl</b> to stop the adapter after the HBA has already been physically removed from the system, so the miniport driver's <b>HwStorAdapterControl</b> routine must not perform any operations that require the HBA to be physically present while it is stopping the HBA.</p>
-<p>The miniport driver is not called again for the HBA until either the PnP manager requests that the HBA be started, in which case the Storport driver (re)initializes by calling its <b>HwStorAdapterControl</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a> routines, or an HBA that was stopped for power management is powered up, in which case the Storport driver calls the miniport driver's <b>HwStorAdapterControl</b> routine with <b>ScsiRestartAdapter</b> or, if the miniport driver does not implement that control type, repeats the initialization sequence for the HBA. </p>
+<p>The miniport driver is not called again for the HBA until either the PnP manager requests that the HBA be started, in which case the Storport driver (re)initializes by calling its <b>HwStorAdapterControl</b> and <a href="storage.hwstorinitialize">HwStorInitialize</a> routines, or an HBA that was stopped for power management is powered up, in which case the Storport driver calls the miniport driver's <b>HwStorAdapterControl</b> routine with <b>ScsiRestartAdapter</b> or, if the miniport driver does not implement that control type, repeats the initialization sequence for the HBA. </p>
 </td>
 <td>
 <p>DIRQL</p>
@@ -116,9 +116,9 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 </td>
 <td>
 <p>Reinitializes an HBA. The Storport driver calls <b>HwStorAdapterControl</b> with this control type to power up an HBA that was shut down for power management. All resources previously assigned to the miniport driver are still available, and its device extension and logical unit extensions, if any, are intact.</p>
-<p>The miniport driver performs the same operations as in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a> routine, such as setting up the HBA's registers and its initial state, if any.</p>
-<p>The miniport driver must not call routines that can only be called from <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> or from <b>HwStorAdapterControl</b> when the control type is <b>ScsiSetRunningConfig</b>, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff567076">StorPortGetBusData</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567503">StorPortSetBusDataByOffset</a>. If the miniport driver must call such routines to restart its HBA, it must also implement <b>ScsiSetRunningConfig</b>.</p>
-<p>If the miniport driver does not implement <b>ScsiRestartAdapter</b>, the Storport driver calls the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a> routines. However, because such routines might do detection work unnecessary for restarting the HBA, such a miniport driver will not power up its HBA as quickly as a miniport driver that implements <b>ScsiRestartAdapter</b>. </p>
+<p>The miniport driver performs the same operations as in its <a href="storage.hwstorinitialize">HwStorInitialize</a> routine, such as setting up the HBA's registers and its initial state, if any.</p>
+<p>The miniport driver must not call routines that can only be called from <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> or from <b>HwStorAdapterControl</b> when the control type is <b>ScsiSetRunningConfig</b>, such as <a href="..\storport\nf-storport-storportgetbusdata.md">StorPortGetBusData</a> and <a href="..\storport\nf-storport-storportsetbusdatabyoffset.md">StorPortSetBusDataByOffset</a>. If the miniport driver must call such routines to restart its HBA, it must also implement <b>ScsiSetRunningConfig</b>.</p>
+<p>If the miniport driver does not implement <b>ScsiRestartAdapter</b>, the Storport driver calls the miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> and <a href="storage.hwstorinitialize">HwStorInitialize</a> routines. However, because such routines might do detection work unnecessary for restarting the HBA, such a miniport driver will not power up its HBA as quickly as a miniport driver that implements <b>ScsiRestartAdapter</b>. </p>
 </td>
 <td>
 <p>DIRQL</p>
@@ -133,7 +133,7 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 </td>
 <td>
 <p>Restores any settings on an HBA that the BIOS might need to reboot. The Storport driver calls <b>HwStorAdapterControl</b> with this control type after calling this routine with <b>ScsiStopAdapter</b>. </p>
-<p>A miniport driver must implement <b>ScsiSetBootConfig</b> if it must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567076">StorPortGetBusData</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567503">StorPortSetBusDataByOffset</a> before the system will be able to reboot. </p>
+<p>A miniport driver must implement <b>ScsiSetBootConfig</b> if it must call <a href="..\storport\nf-storport-storportgetbusdata.md">StorPortGetBusData</a> or <a href="..\storport\nf-storport-storportsetbusdatabyoffset.md">StorPortSetBusDataByOffset</a> before the system will be able to reboot. </p>
 </td>
 <td>
 <p>PASSIVE_LEVEL</p>
@@ -149,7 +149,7 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <td>
 <p>Restores any settings on an HBA that the miniport driver might need to control the HBA while the system is running. The Storport driver calls <b>HwStorAdapterControl</b> with <b>ScsiSetRunningConfig</b> before calling this routine with <b>ScsiRestartAdapter</b> if the miniport driver implements that control type.</p>
 <p>The HBA's interrupt is not yet connected when the Storport driver makes this call, so the miniport driver must take care not to generate an interrupt.</p>
-<p>A miniport driver must implement <b>ScsiSetRunningConfig</b> if it must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567076">StorPortGetBusData</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567503">StorPortSetBusDataByOffset</a> to restore the appropriate running configuration to the HBA before it can be restarted.</p>
+<p>A miniport driver must implement <b>ScsiSetRunningConfig</b> if it must call <a href="..\storport\nf-storport-storportgetbusdata.md">StorPortGetBusData</a> and <a href="..\storport\nf-storport-storportsetbusdatabyoffset.md">StorPortSetBusDataByOffset</a> to restore the appropriate running configuration to the HBA before it can be restarted.</p>
 </td>
 <td>
 <p>PASSIVE_LEVEL</p>
@@ -163,7 +163,7 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 <p><b>ScsiPowerSettingNotification</b></p>
 </td>
 <td>
-<p>Notification for a registered power setting change. The Storport driver calls <b>HwStorAdapterControl</b> with this control type if a power setting change occurs. Miniports register for power setting notifications by calling  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451513">StorPortSetPowerSettingNotificationGuids</a> with a list of GUIDs representing the power change events of interest. This control type is valid in Windows 8 and later.</p>
+<p>Notification for a registered power setting change. The Storport driver calls <b>HwStorAdapterControl</b> with this control type if a power setting change occurs. Miniports register for power setting notifications by calling  <a href="..\storport\nf-storport-storportsetpowersettingnotificationguids.md">StorPortSetPowerSettingNotificationGuids</a> with a list of GUIDs representing the power change events of interest. This control type is valid in Windows 8 and later.</p>
 </td>
 <td>
 <p>PASSIVE_LEVEL</p>
@@ -496,7 +496,7 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 ### -param <a id="IoResourceRequirementsList"></a><a id="ioresourcerequirementslist"></a><a id="IORESOURCEREQUIREMENTSLIST"></a><b>IoResourceRequirementsList</b>
 
 <dd>
-<p>The IO resource requirements list. For more information see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550609">IO_RESOURCE_REQUIREMENTS_LIST</a> structure.</p>
+<p>The IO resource requirements list. For more information see the <a href="..\wdm\ns-wdm--io-resource-requirements-list.md">IO_RESOURCE_REQUIREMENTS_LIST</a> structure.</p>
 </dd>
 </dl>
 </td>
@@ -847,18 +847,6 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 
 <p>The <b>HW_ADAPTER_CONTROL</b> function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>HW_ADAPTER_CONTROL</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/40BD11CD-A559-4F90-BF39-4ED2FB800392">Declaring Functions Using Function Role Types for Storport Drivers</a>. For information about _Use_decl_annotations_, see <a href="c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.</p>
 
-<p>Because miniport drivers that work with the Storport driver must support Plug and Play (PnP), this function is required. The control types, <b>ScsiStopAdapter</b> and <b>ScsiRestartAdapter</b>, must be supported.</p>
-
-<p>The name <b>HwStorAdapterControl</b>  is just a placeholder. The actual prototype of this routine is defined in <i>storport.h</i> as follows:</p>
-
-<p>To define an <b>HwStorAdapterControl</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
-
-<p> For example, to define a <b>HwStorAdapterControl</b> callback routine that is named <i>MyHwAdapterControl</i>, use the <b>HW_ADAPTER_CONTROL</b> type as shown in this code example:</p>
-
-<p>Then, implement your callback routine as follows:</p>
-
-<p>The <b>HW_ADAPTER_CONTROL</b> function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>HW_ADAPTER_CONTROL</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/40BD11CD-A559-4F90-BF39-4ED2FB800392">Declaring Functions Using Function Role Types for Storport Drivers</a>. For information about _Use_decl_annotations_, see <a href="c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -886,19 +874,19 @@ SCSI_ADAPTER_CONTROL_STATUS HwStorAdapterControl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a>
+<a href="storage.hwstorfindadapter">HwStorFindAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a>
+<a href="storage.hwstorinitialize">HwStorInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567076">StorPortGetBusData</a>
+<a href="..\storport\nf-storport-storportgetbusdata.md">StorPortGetBusData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567503">StorPortSetBusDataByOffset</a>
+<a href="..\storport\nf-storport-storportsetbusdatabyoffset.md">StorPortSetBusDataByOffset</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451513">StorPortSetPowerSettingNotificationGuids</a>
+<a href="..\storport\nf-storport-storportsetpowersettingnotificationguids.md">StorPortSetPowerSettingNotificationGuids</a>
 </dt>
 </dl>
 <p> </p>

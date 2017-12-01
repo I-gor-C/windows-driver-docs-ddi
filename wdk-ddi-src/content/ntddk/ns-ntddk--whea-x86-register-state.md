@@ -230,7 +230,7 @@ typedef struct _WHEA_X86_REGISTER_STATE {
 </dl>
 
 ## -remarks
-<p>If the <b>RegisterContextType</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560647">WHEA_XPF_CONTEXT_INFO</a> structure is set to XPF_CONTEXT_INFO_32BITCONTEXT, the <b>RegisterData</b> member of that structure contains a WHEA_X86_REGISTER_STATE structure.</p>
+<p>If the <b>RegisterContextType</b> member of a <a href="..\ntddk\ns-ntddk--whea-xpf-context-info.md">WHEA_XPF_CONTEXT_INFO</a> structure is set to XPF_CONTEXT_INFO_32BITCONTEXT, the <b>RegisterData</b> member of that structure contains a WHEA_X86_REGISTER_STATE structure.</p>
 
 ## -requirements
 <table>
@@ -258,7 +258,7 @@ typedef struct _WHEA_X86_REGISTER_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560647">WHEA_XPF_CONTEXT_INFO</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-context-info.md">WHEA_XPF_CONTEXT_INFO</a>
 </dt>
 </dl>
 <p> </p>

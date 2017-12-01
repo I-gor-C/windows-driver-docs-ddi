@@ -81,31 +81,7 @@ VOID EvtSerCxFileCleanup(
 
 <p>The <i>EvtSerCxFileCleanup</i> function is optional. If a serial controller driver does not implement this function, the driver's <i>EvtSerCxFileClose</i> function must handle all clean-up tasks that are required after the last file handle is closed.</p>
 
-<p>To register an <i>EvtSerCxFileCleanup</i> callback function, the driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406711">SerCxInitialize</a> method.</p>
-
-<p>For more information, see <a href="kmdf.framework_file_objects">Framework File Objects</a>.</p>
-
-<p>The function type for this callback is declared in Sercx.h, as follows.</p>
-
-<p>To define an <i>EvtSerCxFileCleanup</i> callback function that is named <code>MyEvtSerCxFileCleanup</code>, you must first provide a function declaration that <a href="NULL">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.</p>
-
-<p>Then, implement your callback function as follows.</p>
-
-<p>For more information about SDV requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions Using Function Role Types for KMDF Drivers</a>.</p>
-
-<p>This function can deallocate certain system resources that the driver previously allocated for the lifetime of the file object. In conjunction with the <a href="..\sercx\nc-sercx-evt-sercx-fileclose.md">EvtSerCxFileClose</a> function, the <i>EvtSerCxFileCleanup</i> function should remove the serial controller device from the state in which it is ready to receive and transmit data. The <i>EvtSerCxFileCleanup</i> function should focus specifically on clean-up tasks, such as deallocating memory.</p>
-
-<p>If the serial controller driver previously allocated memory only for the lifetime of the file object that is now closed, the driver should deallocate this memory in either the <i>EvtSerCxFileCleanup</i> or <i>EvtSerCxFileClose</i> function.</p>
-
-<p>Typically, interrupts should be disabled only after the file object is released. Thus, the <i>EvtSerCxFileClose</i> function, and not the <i>EvtSerCxFileCleanup</i> function, should disable the interrupts.</p>
-
-<p>SerCx calls a driver's <i>EvtSerCxFileCleanup</i> function after the last handle to the file object is closed. Because of outstanding I/O requests, this object might not yet be released. After this call, the driver receives no new requests for I/O operations.</p>
-
-<p>SerCx calls a driver's <i>EvtSerCxFileClose</i> function after it calls the driver's <i>EvtSerCxFileCleanup</i> function. SerCx calls the <i>EvtSerCxFileClose</i> function after the file object is released, which occurs only when all outstanding I/O requests are either completed or canceled.</p>
-
-<p>The <i>EvtSerCxFileCleanup</i> function is optional. If a serial controller driver does not implement this function, the driver's <i>EvtSerCxFileClose</i> function must handle all clean-up tasks that are required after the last file handle is closed.</p>
-
-<p>To register an <i>EvtSerCxFileCleanup</i> callback function, the driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406711">SerCxInitialize</a> method.</p>
+<p>To register an <i>EvtSerCxFileCleanup</i> callback function, the driver must call the <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method.</p>
 
 <p>For more information, see <a href="kmdf.framework_file_objects">Framework File Objects</a>.</p>
 
@@ -163,7 +139,7 @@ VOID EvtSerCxFileCleanup(
 <a href="..\sercx\nc-sercx-evt-sercx-fileclose.md">EvtSerCxFileClose</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406711">SerCxInitialize</a>
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 </dt>
 </dl>
 <p> </p>

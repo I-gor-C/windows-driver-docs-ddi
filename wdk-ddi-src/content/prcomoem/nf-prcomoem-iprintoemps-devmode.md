@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <code>IPrintOemPS::DevMode</code> method, provided by rendering plug-ins for Pscript5, performs operations on private <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> members.</p>
+<p>The <code>IPrintOemPS::DevMode</code> method, provided by rendering plug-ins for Pscript5, performs operations on private <a href="display.devmodew">DEVMODEW</a> members.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ STDMETHOD DevMode(
 ### -param <i>pOemDMParam</i> 
 
 <dd>
-<p>Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure.</p>
+<p>Caller-supplied pointer to an <a href="..\printoem\ns-printoem--oemdmparam.md">OEMDMPARAM</a> structure.</p>
 </dd>
 </dl>
 
@@ -83,11 +83,7 @@ STDMETHOD DevMode(
 ## -remarks
 <p>If you are providing a user interface plug-in for Pscript5, and if you are adding private members to the driver's DEVMODEW structure, you must implement both the <code>IPrintOemUI::DevMode</code> and the <code>IPrintOemPS::DevMode</code> methods. The code implementing these methods must be identical and can be placed in a library that is statically linked to both the UI plug-in and the rendering plug-in.</p>
 
-<p>For a description of the <code>IPrintOemPS::DevMode</code> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554167">IPrintOemUI::DevMode</a>.</p>
-
-<p>If you are providing a user interface plug-in for Pscript5, and if you are adding private members to the driver's DEVMODEW structure, you must implement both the <code>IPrintOemUI::DevMode</code> and the <code>IPrintOemPS::DevMode</code> methods. The code implementing these methods must be identical and can be placed in a library that is statically linked to both the UI plug-in and the rendering plug-in.</p>
-
-<p>For a description of the <code>IPrintOemPS::DevMode</code> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554167">IPrintOemUI::DevMode</a>.</p>
+<p>For a description of the <code>IPrintOemPS::DevMode</code> method, see <a href="print.iprintoemui_devmode">IPrintOemUI::DevMode</a>.</p>
 
 ## -requirements
 <table>

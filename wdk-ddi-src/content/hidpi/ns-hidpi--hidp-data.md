@@ -104,10 +104,10 @@ typedef struct _HIDP_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539718">HidP_GetData</a>
+<a href="..\hidpi\nf-hidpi-hidp-getdata.md">HidP_GetData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539783">HidP_SetData</a>
+<a href="..\hidpi\nf-hidpi-hidp-setdata.md">HidP_SetData</a>
 </dt>
 </dl>
 <p> </p>

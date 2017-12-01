@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnDestroySynchronizationObjectCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544185">D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT</a> structure that contains a handle to the synchronization object to destroy.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-destroysynchronizationobject.md">D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT</a> structure that contains a handle to the synchronization object to destroy.</p>
 </dd>
 </dl>
 
@@ -120,7 +120,7 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnDestroySynchronizationObjectCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544185">D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-destroysynchronizationobject.md">D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createsynchronizationobjectcb.md">pfnCreateSynchronizationObjectCb</a>

@@ -7,7 +7,7 @@ old-location: stream\ksdefaultdeviceiocompletion.htm
 old-project: stream
 ms.assetid: 6e466815-aef4-4602-b3cf-66b47b2e3f3b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsDefaultDeviceIoCompletion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,8 +72,6 @@ NTSTATUS KsDefaultDeviceIoCompletion(
 <p>The <b>KsDefaultDeviceIoCompletion</b> function returns the default response to the possible IOCTLs.</p>
 
 ## -remarks
-<p>Note that this routine will complete the IRP.</p>
-
 <p>Note that this routine will complete the IRP.</p>
 
 ## -requirements

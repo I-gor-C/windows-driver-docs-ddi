@@ -133,10 +133,10 @@ ULONG StorPortInterlockedInsertHeadList(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547799">InitializeListHead</a>
+<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547820">InsertHeadList</a>
+<a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt790427">StorPortInitializeSpinLock</a>

@@ -125,7 +125,7 @@ typedef struct _MSiSCSI_InitiatorNodeFailureEvent {
 ### -field <b>TargetFailureAddr</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that specifies the IP address of the target that a logon or logoff failed for.</p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that specifies the IP address of the target that a logon or logoff failed for.</p>
 </dd>
 </dl>
 
@@ -149,10 +149,10 @@ typedef struct _MSiSCSI_InitiatorNodeFailureEvent {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563049">MSiSCSI_InitiatorNodeFailureEvent WMI Class</a>
+<a href="storage.msiscsi_initiatornodefailureevent_wmi_class">MSiSCSI_InitiatorNodeFailureEvent WMI Class</a>
 </dt>
 </dl>
 <p> </p>

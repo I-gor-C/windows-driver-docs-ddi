@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556104">HBA_GetPortAttributesByWWN</a> fibre channel HBA library routine to report the attributes for a specified remote fibre channel port.</p>
+<p>The structure is used by the <a href="..\hbaapi\nf-hbaapi-hba-getportattributesbywwn.md">HBA_GetPortAttributesByWWN</a> fibre channel HBA library routine to report the attributes for a specified remote fibre channel port.</p>
 
 
 ## -syntax
@@ -273,13 +273,13 @@ typedef struct HBA_PortAttributes {
 ### -field <b>PortSupportedFc4Types</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556052">HBA_fc4types</a> that indicates the FC-4 types that are supported by <b>PortWWN</b>. For a discussion FC-4 types, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4). </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fc4types.md">HBA_fc4types</a> that indicates the FC-4 types that are supported by <b>PortWWN</b>. For a discussion FC-4 types, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4). </p>
 </dd>
 
 ### -field <b>PortActiveFc4Types</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556052">HBA_fc4types</a> that indicates the FC-4 types that are currently available on <b>PortWWN</b>. For a discussion FC-4 types, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4).</p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fc4types.md">HBA_fc4types</a> that indicates the FC-4 types that are currently available on <b>PortWWN</b>. For a discussion FC-4 types, see the ANSI standard for <i>Fibre Channel Generic Services 4th Generation</i> (FC-GS-4).</p>
 </dd>
 
 ### -field <b>PortSymbolicName</b>
@@ -379,7 +379,7 @@ typedef struct HBA_PortAttributes {
 </dl>
 
 ## -remarks
-<p>The HBA_PortAttributes structure serves a purpose very similar to the MSFC_HBAPortAttributesResults structure that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a> WMI method to report port attributes.</p>
+<p>The HBA_PortAttributes structure serves a purpose very similar to the MSFC_HBAPortAttributesResults structure that the <a href="storage.getdiscoveredportattributes">GetDiscoveredPortAttributes</a> WMI method to report port attributes.</p>
 
 ## -requirements
 <table>
@@ -398,10 +398,10 @@ typedef struct HBA_PortAttributes {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
+<a href="storage.getdiscoveredportattributes">GetDiscoveredPortAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556104">HBA_GetPortAttributesByWWN</a>
+<a href="..\hbaapi\nf-hbaapi-hba-getportattributesbywwn.md">HBA_GetPortAttributesByWWN</a>
 </dt>
 </dl>
 <p> </p>

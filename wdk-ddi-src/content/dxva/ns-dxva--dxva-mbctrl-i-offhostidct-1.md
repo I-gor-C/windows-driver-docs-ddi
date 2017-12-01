@@ -98,7 +98,7 @@ typedef struct _DXVA_MBctrl_I_OffHostIDCT_1 {
 <td>
 <p><i>HostResidDiff</i></p>
 <p>Specifies whether spatial-domain residual difference decoded blocks are sent or whether transform coefficients are sent for off-host IDCT for the current macroblock.</p>
-<p>The <i>HostResidDiff </i>flag is always equal to zero in this structure. This flag must be zero if <b>bConfigResidDiffHost</b> is zero. This flag must be 1 if <b>bConfigResidDiffAccelerator</b> is zero. The <b>bConfigResidDiffHost</b> and <b>bConfigResidDiffAccelerator</b> members are contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> structure.</p>
+<p>The <i>HostResidDiff </i>flag is always equal to zero in this structure. This flag must be zero if <b>bConfigResidDiffHost</b> is zero. This flag must be 1 if <b>bConfigResidDiffAccelerator</b> is zero. The <b>bConfigResidDiffHost</b> and <b>bConfigResidDiffAccelerator</b> members are contained in the <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ typedef struct _DXVA_MBctrl_I_OffHostIDCT_1 {
 </li>
 </ul>
 <p>If <b>bConfigHostInverseScan</b> is 1, <i>MBscanMethod</i> is equal to 3, which is an arbitrary scan with absolute coefficient address.</p>
-<p><b>bPicScanMethod</b> and <b>bPicScanFixed</b> are members of <a href="https://msdn.microsoft.com/library/windows/hardware/ff564012">DXVA_PictureParameters</a>. <b>bConfigHostInverseScan</b> is a member of DXVA_ConfigPictureDecode.</p>
+<p><b>bPicScanMethod</b> and <b>bPicScanFixed</b> are members of <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a>. <b>bConfigHostInverseScan</b> is a member of DXVA_ConfigPictureDecode.</p>
 </td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ typedef struct _DXVA_MBctrl_I_OffHostIDCT_1 {
 <td>
 <p><i>FieldResidual</i></p>
 <p>Indicates whether the residual difference blocks use a field IDCT structure as specified in MPEG-2.</p>
-<p>Must be 1 if the <b>bPicStructure</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff564012">DXVA_PictureParameters</a> is 1 or 2. When used for MPEG-2, <i>FieldResidual</i> must be zero if the <i>frame_pred_frame_DCT</i> flag in the MPEG-2 syntax is 1, and must be equal to the <i>dct_type</i> element of the MPEG-2 syntax if <i>dct_type</i> is present for the macroblock.</p>
+<p>Must be 1 if the <b>bPicStructure</b> member of <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a> is 1 or 2. When used for MPEG-2, <i>FieldResidual</i> must be zero if the <i>frame_pred_frame_DCT</i> flag in the MPEG-2 syntax is 1, and must be equal to the <i>dct_type</i> element of the MPEG-2 syntax if <i>dct_type</i> is present for the macroblock.</p>
 </td>
 </tr>
 <tr>
@@ -216,8 +216,8 @@ typedef struct _DXVA_MBctrl_I_OffHostIDCT_1 {
 <dd>
 <p>Each value in the <b>bNumCoef</b> array indicates the number of coefficients in the residual difference data buffer for each block <i>i</i> of the macroblock. </p>
 <p>The array subscript <i>i</i> is the index of the block within the macroblock as specified in MPEG-2 video Figures 6-10, 6-11, and 6-12 (raster-scan order for Y, followed by Cb, followed by Cr). </p>
-<p>This member is used only when the <i>HostResidDiff</i> flag (bit 10 in <b>wMBtype</b>) is zero, and <b>bChromaFormat</b> is 1 (4:2:0). If used in 4:2:2 or 4:4:4 formats, it would increase the size of typical macroblock control commands past a critical memory alignment boundary. As a result, the <i>TCoefEOB</i> bit within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564060">DXVA_TCoefSingle</a> structure is used for determining the number of coefficients in each block in non-4:2:0 cases.</p>
-<p>The purpose of <b>bNumCoef</b> is to indicate the quantity of data present for each block in the residual difference data buffer, expressed as the number of coefficients present. When the <b>bConfig4GroupedCoefs</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> structure is 1, <b>bNumCoef</b> may contain either the actual number of coefficients sent for the block or that value rounded up to be a multiple of four. The data for these coefficients is found in the residual difference buffer in the same order.</p>
+<p>This member is used only when the <i>HostResidDiff</i> flag (bit 10 in <b>wMBtype</b>) is zero, and <b>bChromaFormat</b> is 1 (4:2:0). If used in 4:2:2 or 4:4:4 formats, it would increase the size of typical macroblock control commands past a critical memory alignment boundary. As a result, the <i>TCoefEOB</i> bit within the <a href="..\dxva\ns-dxva--dxva-tcoefsingle.md">DXVA_TCoefSingle</a> structure is used for determining the number of coefficients in each block in non-4:2:0 cases.</p>
+<p>The purpose of <b>bNumCoef</b> is to indicate the quantity of data present for each block in the residual difference data buffer, expressed as the number of coefficients present. When the <b>bConfig4GroupedCoefs</b> member of the <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure is 1, <b>bNumCoef</b> may contain either the actual number of coefficients sent for the block or that value rounded up to be a multiple of four. The data for these coefficients is found in the residual difference buffer in the same order.</p>
 </dd>
 </dl>
 
@@ -241,16 +241,16 @@ typedef struct _DXVA_MBctrl_I_OffHostIDCT_1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563983">DXVA_MBctrl_I_HostResidDiff_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-i-hostresiddiff-1.md">DXVA_MBctrl_I_HostResidDiff_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564060">DXVA_TCoefSingle</a>
+<a href="..\dxva\ns-dxva--dxva-tcoefsingle.md">DXVA_TCoefSingle</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a>
+<a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564012">DXVA_PictureParameters</a>
+<a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a>
 </dt>
 </dl>
 <p> </p>

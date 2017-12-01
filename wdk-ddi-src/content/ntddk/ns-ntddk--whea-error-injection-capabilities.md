@@ -190,7 +190,7 @@ typedef union _WHEA_ERROR_INJECTION_CAPABILITIES {
 </dl>
 
 ## -remarks
-<p>A user-mode WHEA management application calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559516">WHEAErrorInjectionMethods::GetErrorInjectionCapabilitiesRtn</a> method to retrieve a WHEA_ERROR_INJECTION_CAPABILITIES union that describes the types of hardware errors that can be injected into the hardware platform. If a PSHED plug-in is registered to participate in error injection, the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-get-injection-capabilities.md">GetInjectionCapabilities</a> callback function is called to provide this information back to the calling application. The application uses this information when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559518">WHEAErrorInjectionMethods::InjectErrorRtn</a> method to inject a hardware error into the hardware platform.</p>
+<p>A user-mode WHEA management application calls the <a href="whea.wheaerrorinjectionmethods_geterrorinjectioncapabilitiesrtn">WHEAErrorInjectionMethods::GetErrorInjectionCapabilitiesRtn</a> method to retrieve a WHEA_ERROR_INJECTION_CAPABILITIES union that describes the types of hardware errors that can be injected into the hardware platform. If a PSHED plug-in is registered to participate in error injection, the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed-pi-get-injection-capabilities.md">GetInjectionCapabilities</a> callback function is called to provide this information back to the calling application. The application uses this information when it calls the <a href="whea.wheaerrorinjectionmethods_injecterrorrtn">WHEAErrorInjectionMethods::InjectErrorRtn</a> method to inject a hardware error into the hardware platform.</p>
 
 ## -requirements
 <table>
@@ -221,10 +221,10 @@ typedef union _WHEA_ERROR_INJECTION_CAPABILITIES {
 <a href="..\ntddk\nc-ntddk-pshed-pi-get-injection-capabilities.md">GetInjectionCapabilities</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559516">WHEAErrorInjectionMethods::GetErrorInjectionCapabilitiesRtn</a>
+<a href="whea.wheaerrorinjectionmethods_geterrorinjectioncapabilitiesrtn">WHEAErrorInjectionMethods::GetErrorInjectionCapabilitiesRtn</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559518">WHEAErrorInjectionMethods::InjectErrorRtn</a>
+<a href="whea.wheaerrorinjectionmethods_injecterrorrtn">WHEAErrorInjectionMethods::InjectErrorRtn</a>
 </dt>
 </dl>
 <p> </p>

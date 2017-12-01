@@ -70,7 +70,7 @@ __inline DUID_MATCH_STATUS CompareStorageDuids(
 </dl>
 
 ## -returns
-<p><b>CompareStorageDuids</b> returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552760">DUID_MATCH_STATUS</a> value that indicates whether the two DUIDs matched or not, if the operation succeeds. Otherwise, this routine returns a DUID_MATCH_STATUS value that indicates the error status.</p>
+<p><b>CompareStorageDuids</b> returns a <a href="..\storduid\ne-storduid--duid-match-status.md">DUID_MATCH_STATUS</a> value that indicates whether the two DUIDs matched or not, if the operation succeeds. Otherwise, this routine returns a DUID_MATCH_STATUS value that indicates the error status.</p>
 
 ## -remarks
 
@@ -102,7 +102,7 @@ __inline DUID_MATCH_STATUS CompareStorageDuids(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552760">DUID_MATCH_STATUS</a>
+<a href="..\storduid\ne-storduid--duid-match-status.md">DUID_MATCH_STATUS</a>
 </dt>
 </dl>
 <p> </p>

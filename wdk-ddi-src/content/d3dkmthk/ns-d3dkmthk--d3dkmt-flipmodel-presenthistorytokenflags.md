@@ -105,7 +105,7 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS {
 
 <dd>
 <p>A UINT value that specifies whether the driver should use the left image of a stereo allocation for the right and left portions of a stereo frame.</p>
-<p>This member should  be set only if the driver reports support for this option in the current display mode by setting the <b>Type</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546724">D3DKMDT_VIDPN_SOURCE_MODE</a> structure to D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN.</p>
+<p>This member should  be set only if the driver reports support for this option in the current display mode by setting the <b>Type</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-source-mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure to D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN.</p>
 <p>Setting this member is equivalent to setting the    fifth bit of the 32-bit <b>Value</b> member (0x00000010).</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
@@ -190,7 +190,7 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548188">D3DKMT_PRESENTHISTORYTOKEN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
 </dt>
 </dl>
 <p> </p>

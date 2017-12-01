@@ -82,10 +82,10 @@ typedef enum _ENDPOINT_RESET_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188021">ENDPOINT_RESET</a>
+<a href="buses._endpoint_reset">ENDPOINT_RESET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187828">EVT_UCX_ENDPOINT_RESET</a>
+<a href="buses.evt_ucx_endpoint_reset">EVT_UCX_ENDPOINT_RESET</a>
 </dt>
 </dl>
 <p> </p>

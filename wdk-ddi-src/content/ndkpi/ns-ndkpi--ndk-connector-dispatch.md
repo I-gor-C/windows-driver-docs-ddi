@@ -7,7 +7,7 @@ old-location: netvista\ndk_connector_dispatch.htm
 old-project: netvista
 ms.assetid: BBC24A32-4CB6-47AB-BD1D-298159EC9919
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDK_CONNECTOR_DISPATCH, NDK_CONNECTOR_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,72 +67,72 @@ typedef struct _NDK_CONNECTOR_DISPATCH {
 ### -field <b>NdkCloseConnector</b>
 
 <dd>
-<p>The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439863">NDK_FN_CLOSE_OBJECT</a> dispatch function.</p>
+<p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-close-object.md">NDK_FN_CLOSE_OBJECT</a> dispatch function.</p>
 </dd>
 
 ### -field <b>NdkQueryExtension</b>
 
 <dd>
-<p>The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439905">NDK_FN_QUERY_EXTENSION_INTERFACE</a> dispatch function.</p>
+<p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-query-extension-interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a> dispatch function.</p>
 </dd>
 
 ### -field <b>NdkConnect</b>
 
 <dd>
-<p>The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439865">NDK_FN_CONNECT</a> dispatch function.</p>
+<p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-connect.md">NDK_FN_CONNECT</a> dispatch function.</p>
 </dd>
 
 ### -field <b>NdkConnectWithSharedEndpoint</b>
 
 <dd>
-<p>The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439868">NDK_FN_CONNECT_WITH_SHARED_ENDPOINT</a> dispatch function.</p>
+<p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-connect-with-shared-endpoint.md">NDK_FN_CONNECT_WITH_SHARED_ENDPOINT</a> dispatch function.</p>
 </dd>
 
 ### -field <b>NdkCompleteConnect</b>
 
 <dd>
-<p>The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439864">NDK_FN_COMPLETE_CONNECT</a> dispatch function.</p>
+<p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-complete-connect.md">NDK_FN_COMPLETE_CONNECT</a> dispatch function.</p>
 </dd>
 
 ### -field <b>NdkAccept</b>
 
 <dd>
-<p>The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439857">NDK_FN_ACCEPT</a> dispatch function.</p>
+<p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-accept.md">NDK_FN_ACCEPT</a> dispatch function.</p>
 </dd>
 
 ### -field <b>NdkReject</b>
 
 <dd>
-<p>The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439909">NDK_FN_REJECT</a> dispatch function.</p>
+<p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-reject.md">NDK_FN_REJECT</a> dispatch function.</p>
 </dd>
 
 ### -field <b>NdkGetConnectionData</b>
 
 <dd>
-<p>The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439890">NDK_FN_GET_CONNECTION_DATA</a> dispatch function.</p>
+<p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-get-connection-data.md">NDK_FN_GET_CONNECTION_DATA</a> dispatch function.</p>
 </dd>
 
 ### -field <b>NdkGetLocalAddress</b>
 
 <dd>
-<p>The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439893">NDK_FN_GET_LOCAL_ADDRESS</a> dispatch function.</p>
+<p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-get-local-address.md">NDK_FN_GET_LOCAL_ADDRESS</a> dispatch function.</p>
 </dd>
 
 ### -field <b>NdkGetPeerAddress</b>
 
 <dd>
-<p>The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439895">NDK_FN_GET_PEER_ADDRESS</a> dispatch function.</p>
+<p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-get-peer-address.md">NDK_FN_GET_PEER_ADDRESS</a> dispatch function.</p>
 </dd>
 
 ### -field <b>NdkDisconnect</b>
 
 <dd>
-<p>The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439885">NDK_FN_DISCONNECT</a> dispatch function.</p>
+<p>The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk-fn-disconnect.md">NDK_FN_DISCONNECT</a> dispatch function.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>NDK_CONNECTOR_DISPATCH</b> structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439852">NDK_CONNECTOR</a> structure.</p>
+<p>The <b>NDK_CONNECTOR_DISPATCH</b> structure is used in the <a href="..\ndkpi\ns-ndkpi--ndk-connector.md">NDK_CONNECTOR</a> structure.</p>
 
 ## -requirements
 <table>
@@ -175,42 +175,42 @@ typedef struct _NDK_CONNECTOR_DISPATCH {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439852">NDK_CONNECTOR</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-connector.md">NDK_CONNECTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439857">NDK_FN_ACCEPT</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-accept.md">NDK_FN_ACCEPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439863">NDK_FN_CLOSE_OBJECT</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-close-object.md">NDK_FN_CLOSE_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439864">NDK_FN_COMPLETE_CONNECT</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-complete-connect.md">NDK_FN_COMPLETE_CONNECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439865">NDK_FN_CONNECT</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-connect.md">NDK_FN_CONNECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439868">NDK_FN_CONNECT_WITH_SHARED_ENDPOINT</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-connect-with-shared-endpoint.md">NDK_FN_CONNECT_WITH_SHARED_ENDPOINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439885">NDK_FN_DISCONNECT</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-disconnect.md">NDK_FN_DISCONNECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439890">NDK_FN_GET_CONNECTION_DATA</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-get-connection-data.md">NDK_FN_GET_CONNECTION_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439893">NDK_FN_GET_LOCAL_ADDRESS</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-get-local-address.md">NDK_FN_GET_LOCAL_ADDRESS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439895">NDK_FN_GET_PEER_ADDRESS</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-get-peer-address.md">NDK_FN_GET_PEER_ADDRESS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439905">NDK_FN_QUERY_EXTENSION_INTERFACE</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-query-extension-interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439909">NDK_FN_REJECT</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-reject.md">NDK_FN_REJECT</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_CONNECTOR_DISPATCH structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_CONNECTOR_DISPATCH structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

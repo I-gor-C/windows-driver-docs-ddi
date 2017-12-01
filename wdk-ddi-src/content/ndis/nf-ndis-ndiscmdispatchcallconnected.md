@@ -7,7 +7,7 @@ old-location: netvista\ndiscmdispatchcallconnected.htm
 old-project: netvista
 ms.assetid: c5fcca82-ab8f-4ea9-86df-295f43fe7afa
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCmDispatchCallConnected
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisCmDispatchCallConnected
-   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisCmDispatchCallConnected
-   (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmDispatchCallConnected   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmDispatchCallConnected   (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -64,7 +60,7 @@ VOID NdisCmDispatchCallConnected(
 
 <dd>
 <p>Specifies the handle to the VC that represents the connection, which was created with 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a> when the call manager's 
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> when the call manager's 
      <a href="..\ndis\nc-ndis-protocol-co-receive-net-buffer-lists.md">
      ProtocolCoReceiveNetBufferLists</a> function was notified of the incoming call.</p>
 </dd>
@@ -74,22 +70,6 @@ VOID NdisCmDispatchCallConnected(
 <p>None</p>
 
 ## -remarks
-<p>A stand-alone CM's 
-    <a href="..\ndis\nc-ndis-protocol-cm-incoming-call-complete.md">
-    ProtocolCmIncomingCallComplete</a> function calls 
-    <b>NdisCmDispatchCallConnected</b> to complete the final handshake for an incoming call from a remote
-    node, which the client has already accepted.</p>
-
-<p>A call to 
-    <b>NdisCmDispatchCallConnected</b> causes NDIS to call the client's 
-    <a href="..\ndis\nc-ndis-protocol-cl-call-connected.md">
-    ProtocolClCallConnected</a> function.</p>
-
-<p>Only stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
-    <b>NdisCmDispatchCallConnected</b>. Connection-oriented miniport drivers that provide integrated
-    call-management support call 
-    <b>NdisMCmDispatchCallConnected</b> instead.</p>
-
 <p>A stand-alone CM's 
     <a href="..\ndis\nc-ndis-protocol-cm-incoming-call-complete.md">
     ProtocolCmIncomingCallComplete</a> function calls 
@@ -163,7 +143,7 @@ VOID NdisCmDispatchCallConnected(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547917">Irql_CallManager_Function</a>
+<a href="devtest.ndis_irql_callmanager_function">Irql_CallManager_Function</a>
 </td>
 </tr>
 </table>
@@ -171,10 +151,10 @@ VOID NdisCmDispatchCallConnected(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561664">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562826">NdisMCmDispatchCallConnected</a>
+<a href="..\ndis\nf-ndis-ndismcmdispatchcallconnected.md">NdisMCmDispatchCallConnected</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cl-call-connected.md">ProtocolClCallConnected</a>
@@ -190,4 +170,4 @@ VOID NdisCmDispatchCallConnected(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmDispatchCallConnected function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmDispatchCallConnected function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

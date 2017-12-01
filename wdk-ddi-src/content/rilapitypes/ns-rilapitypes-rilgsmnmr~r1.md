@@ -7,7 +7,7 @@ old-location: netvista\rilgsmnmr_2.htm
 old-project: netvista
 ms.assetid: 9689a069-1235-4898-9610-3023f6e80dda
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILGSMNMR,
 ms.prod: windows-hardware
 ms.technology: windows-devices

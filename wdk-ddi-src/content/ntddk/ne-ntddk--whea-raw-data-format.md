@@ -121,7 +121,7 @@ typedef enum _WHEA_RAW_DATA_FORMAT {
 ### -field <a id="WheaRawDataFormatGeneric"></a><a id="whearawdataformatgeneric"></a><a id="WHEARAWDATAFORMATGENERIC"></a><b>WheaRawDataFormatGeneric</b>
 
 <dd>
-<p>The raw data in the hardware error packet contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560524">WHEA_GENERIC_ERROR</a> structure.</p>
+<p>The raw data in the hardware error packet contains a <a href="..\ntddk\ns-ntddk--whea-generic-error.md">WHEA_GENERIC_ERROR</a> structure.</p>
 </dd>
 
 ### -field <a id="WheaRawDataFormatMax"></a><a id="whearawdataformatmax"></a><a id="WHEARAWDATAFORMATMAX"></a><b>WheaRawDataFormatMax</b>
@@ -132,11 +132,7 @@ typedef enum _WHEA_RAW_DATA_FORMAT {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560476">WHEA_ERROR_PACKET_V1</a> structure contains a member of type WHEA_RAW_DATA_FORMAT that specifies the format of the raw data that is contained in the hardware error packet.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560476">WHEA_ERROR_PACKET_V1</a> structure contains a member of type WHEA_RAW_DATA_FORMAT that specifies the format of the raw data that is contained in the hardware error packet.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560476">WHEA_ERROR_PACKET_V1</a> structure contains a member of type WHEA_RAW_DATA_FORMAT that specifies the format of the raw data that is contained in the hardware error packet.</p>
+<p>The <a href="..\ntddk\ns-ntddk--whea-error-packet-v1.md">WHEA_ERROR_PACKET_V1</a> structure contains a member of type WHEA_RAW_DATA_FORMAT that specifies the format of the raw data that is contained in the hardware error packet.</p>
 
 ## -requirements
 <table>
@@ -170,10 +166,10 @@ typedef enum _WHEA_RAW_DATA_FORMAT {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560476">WHEA_ERROR_PACKET_V1</a>
+<a href="..\ntddk\ns-ntddk--whea-error-packet-v1.md">WHEA_ERROR_PACKET_V1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560524">WHEA_GENERIC_ERROR</a>
+<a href="..\ntddk\ns-ntddk--whea-generic-error.md">WHEA_GENERIC_ERROR</a>
 </dt>
 </dl>
 <p> </p>

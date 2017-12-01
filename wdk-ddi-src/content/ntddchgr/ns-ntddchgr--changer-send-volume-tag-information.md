@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure is passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551440">ChangerQueryVolumeTags</a> routine and is used to specify a search criterion for retrieving changer elements. </p>
+<p>This structure is passed to the <a href="..\mcd\nf-mcd-changerqueryvolumetags.md">ChangerQueryVolumeTags</a> routine and is used to specify a search criterion for retrieving changer elements. </p>
 
 
 ## -syntax
@@ -59,13 +59,13 @@ typedef struct _CHANGER_SEND_VOLUME_TAG_INFORMATION {
 ### -field <b>StartingElement</b>
 
 <dd>
-<p>Describes the first element of the range to search for or to set in a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551457">CHANGER_ELEMENT</a>. </p>
+<p>Describes the first element of the range to search for or to set in a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a>. </p>
 </dd>
 
 ### -field <b>ActionCode</b>
 
 <dd>
-<p>Indicates the operation to perform. The <b>Features0</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a> indicates whether the changer supports a particular category of operation:</p>
+<p>Indicates the operation to perform. The <b>Features0</b> member of <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> indicates whether the changer supports a particular category of operation:</p>
 <ul>
 <li>
 <p>Translate operations, also known as "searching operations", request that the target device search its volume tag information for elements that match the template passed to the device. Valid only if <b>Features0</b> is set to CHANGER_VOLUME_SEARCH.</p>
@@ -109,16 +109,16 @@ typedef struct _CHANGER_SEND_VOLUME_TAG_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563961">READ_ELEMENT_ADDRESS_INFO</a>
+<a href="..\ntddchgr\ns-ntddchgr--read-element-address-info.md">READ_ELEMENT_ADDRESS_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a>
+<a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551440">ChangerQueryVolumeTags</a>
+<a href="..\mcd\nf-mcd-changerqueryvolumetags.md">ChangerQueryVolumeTags</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551457">CHANGER_ELEMENT</a>
+<a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a>
 </dt>
 </dl>
 <p> </p>

@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY ExtensionExecute(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543112">D3DDDIARG_EXTENSIONEXECUTE</a> structure that describes the DirectX VA operation to perform.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-extensionexecute.md">D3DDDIARG_EXTENSIONEXECUTE</a> structure that describes the DirectX VA operation to perform.</p>
 </dd>
 </dl>
 
@@ -118,10 +118,10 @@ __checkReturn HRESULT APIENTRY ExtensionExecute(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543112">D3DDDIARG_EXTENSIONEXECUTE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-extensionexecute.md">D3DDDIARG_EXTENSIONEXECUTE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

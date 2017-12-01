@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The SCSISCAN_INFO structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a> (described in the Microsoft Windows SDK documentation), when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542879">IOCTL_SCSISCAN_GET_INFO</a>.</p>
+<p>The SCSISCAN_INFO structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a> (described in the Microsoft Windows SDK documentation), when the specified I/O control code is <a href="..\scsiscan\ni-scsiscan-ioctl-scsiscan-get-info.md">IOCTL_SCSISCAN_GET_INFO</a>.</p>
 
 
 ## -syntax

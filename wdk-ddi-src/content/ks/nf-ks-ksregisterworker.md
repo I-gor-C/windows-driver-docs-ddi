@@ -7,7 +7,7 @@ old-location: stream\ksregisterworker.htm
 old-project: stream
 ms.assetid: b9c74a56-3f2c-4b94-8fb2-6b44075ec34b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsRegisterWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices

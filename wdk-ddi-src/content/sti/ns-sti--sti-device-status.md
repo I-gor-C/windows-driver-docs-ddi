@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The STI_DEVICE_STATUS structure is used as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543752">IStiDevice::GetStatus</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543823">IStiUSD::GetStatus</a> methods.</p>
+<p>The STI_DEVICE_STATUS structure is used as a parameter to the <a href="image.istidevice_getstatus">IStiDevice::GetStatus</a> and <a href="image.istiusd_getstatus">IStiUSD::GetStatus</a> methods.</p>
 
 
 ## -syntax

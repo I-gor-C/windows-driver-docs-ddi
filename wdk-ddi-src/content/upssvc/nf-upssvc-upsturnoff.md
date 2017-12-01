@@ -7,7 +7,7 @@ old-location: battery\upsturnoff.htm
 old-project: battery
 ms.assetid: 17ae946a-e57e-48bd-9213-cf47db2cba64
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/27/2017
 ms.keywords: UPSTurnOff
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,14 +66,6 @@ void UPSTurnOff(
 <p>None</p>
 
 ## -remarks
-<p>The actual delay time should not be less than that specified by <i>aTurnOffDelay</i>, to ensure adequate time for the operating system to shut down. </p>
-
-<p>The default value for <i>aTurnOffDelay </i>is 180 seconds.</p>
-
-<p>The function must not postpone the request to turn off the power. Doing so could result in the operating system unloading the UPS service and the UPS minidriver.</p>
-
-<p>On the other hand, the function must not turn off power from a UPS system that does not have an internal turnoff delay. Doing so will result in a premature loss of power to the computer, which can cause system corruption.</p>
-
 <p>The actual delay time should not be less than that specified by <i>aTurnOffDelay</i>, to ensure adequate time for the operating system to shut down. </p>
 
 <p>The default value for <i>aTurnOffDelay </i>is 180 seconds.</p>

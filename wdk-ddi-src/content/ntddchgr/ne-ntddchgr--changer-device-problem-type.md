@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CHANGER_DEVICE_PROBLEM_TYPE data type contains the values returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551438">ChangerPerformDiagnostics</a> routine.</p>
+<p>The CHANGER_DEVICE_PROBLEM_TYPE data type contains the values returned by the <a href="..\mcd\nf-mcd-changerperformdiagnostics.md">ChangerPerformDiagnostics</a> routine.</p>
 
 
 ## -syntax
@@ -172,10 +172,10 @@ typedef enum _CHANGER_DEVICE_PROBLEM_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551438">ChangerPerformDiagnostics</a>
+<a href="..\mcd\nf-mcd-changerperformdiagnostics.md">ChangerPerformDiagnostics</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568029">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a>
+<a href="..\wmidata\ns-wmidata--wmi-changer-problem-device-error.md">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a>
 </dt>
 </dl>
 <p> </p>

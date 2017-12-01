@@ -88,22 +88,22 @@ typedef struct _PARALLEL_CHIP_MODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544002">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-get-parallel-port-info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544017">IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-clear-chip-mode.md">IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544020">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-connect-interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544031">IOCTL_INTERNAL_PARALLEL_SET_CHIP_MODE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-set-chip-mode.md">IOCTL_INTERNAL_PARALLEL_SET_CHIP_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544398">PPARALLEL_CLEAR_CHIP_MODE</a>
+<a href="..\parallel\nc-parallel-pparallel-clear-chip-mode.md">PPARALLEL_CLEAR_CHIP_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544542">PPARALLEL_SET_CHIP_MODE</a>
+<a href="..\parallel\nc-parallel-pparallel-set-chip-mode.md">PPARALLEL_SET_CHIP_MODE</a>
 </dt>
 </dl>
 <p> </p>

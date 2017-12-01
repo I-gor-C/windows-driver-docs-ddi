@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CreateOverlay(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542948">D3DDDIARG_CREATEOVERLAY</a> structure that describes the overlay.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createoverlay.md">D3DDDIARG_CREATEOVERLAY</a> structure that describes the overlay.</p>
 </dd>
 </dl>
 
@@ -89,8 +89,6 @@ __checkReturn HRESULT APIENTRY CreateOverlay(
 <p> </p>
 
 ## -remarks
-<p>Overlays are independent from the resources that are displayed by using the overlays.</p>
-
 <p>Overlays are independent from the resources that are displayed by using the overlays.</p>
 
 ## -requirements
@@ -128,10 +126,10 @@ __checkReturn HRESULT APIENTRY CreateOverlay(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542948">D3DDDIARG_CREATEOVERLAY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createoverlay.md">D3DDDIARG_CREATEOVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

@@ -61,7 +61,7 @@ struct _URB_SELECT_CONFIGURATION {
 ### -field <b>Hdr</b>
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_SELECT_CONFIGURATION, and <b>Hdr.Length</b> must be the size of the entire URB. Drivers may use the GET_SELECT_CONFIGURATION_REQUEST_SIZE macro defined in usbdlib.h to obtain the size of the URB. </p>
+<p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_SELECT_CONFIGURATION, and <b>Hdr.Length</b> must be the size of the entire URB. Drivers may use the GET_SELECT_CONFIGURATION_REQUEST_SIZE macro defined in usbdlib.h to obtain the size of the URB. </p>
 </dd>
 
 ### -field <b>ConfigurationDescriptor</b>
@@ -79,17 +79,17 @@ struct _URB_SELECT_CONFIGURATION {
 ### -field <b>Interface</b>
 
 <dd>
-<p>Specifies a variable length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> structures, each describing an interface supported by the configuration being selected.</p>
-<p>Before the request is sent to the host controller driver, the driver may select an alternate setting for one or more of the interfaces contained in this array by setting members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> structure for that interface. </p>
-<p>On return from the host controller driver, this member contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> structure with data describing the capabilities and format of the endpoints within that interface.</p>
+<p>Specifies a variable length array of <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structures, each describing an interface supported by the configuration being selected.</p>
+<p>Before the request is sent to the host controller driver, the driver may select an alternate setting for one or more of the interfaces contained in this array by setting members of the <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structure for that interface. </p>
+<p>On return from the host controller driver, this member contains a <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structure with data describing the capabilities and format of the endpoints within that interface.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>An URB_FUNCTION_SELECT_CONFIGURATION URB consists of a <b>_URB_SELECT_CONFIGURATION</b> structure followed by a sequence of variable-length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> structures, each element in the array for each unique interface number in the configuration. Client drivers must allocate enough memory to contain one <a href="https://msdn.microsoft.com/library/windows/hardware/ff539114">USBD_PIPE_INFORMATION</a> structure for each endpoint in the selected interfaces. 
+<p>An URB_FUNCTION_SELECT_CONFIGURATION URB consists of a <b>_URB_SELECT_CONFIGURATION</b> structure followed by a sequence of variable-length array of <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structures, each element in the array for each unique interface number in the configuration. Client drivers must allocate enough memory to contain one <a href="..\usb\ns-usb--usbd-pipe-information.md">USBD_PIPE_INFORMATION</a> structure for each endpoint in the selected interfaces. 
 </p>
 
-<p>Drivers can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539029">USBD_CreateConfigurationRequestEx</a> service routine to allocate the URB.
+<p>Drivers can use the <a href="..\usbdlib\nf-usbdlib-usbd-createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a> service routine to allocate the URB.
 </p>
 
 <p>Other members that are part of this structure but not described here should be treated as opaque and considered to be reserved for system use.
@@ -112,22 +112,22 @@ struct _URB_SELECT_CONFIGURATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
+<a href="..\usb\ns-usb--urb.md">URB</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a>
+<a href="buses._urb_header">_URB_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a>
+<a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539114">USBD_PIPE_INFORMATION</a>
+<a href="..\usb\ns-usb--usbd-pipe-information.md">USBD_PIPE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539029">USBD_CreateConfigurationRequestEx</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwisummary_2.htm
 old-project: netvista
 ms.assetid: 809373c0-210e-4947-a92f-a945b7846da7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMSGMWISUMMARY,
 ms.prod: windows-hardware
 ms.technology: windows-devices

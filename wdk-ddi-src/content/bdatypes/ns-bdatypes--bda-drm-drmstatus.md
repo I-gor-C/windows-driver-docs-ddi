@@ -7,7 +7,7 @@ old-location: stream\bda_drm_drmstatus.htm
 old-project: stream
 ms.assetid: EC287CF0-9B39-4412-849E-9F86EEE69365
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_DRM_DRMSTATUS, BDA_DRM_DRMSTATUS, *PBDA_DRM_DRMSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

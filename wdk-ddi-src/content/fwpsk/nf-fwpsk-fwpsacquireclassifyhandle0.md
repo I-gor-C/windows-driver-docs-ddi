@@ -7,7 +7,7 @@ old-location: netvista\fwpsacquireclassifyhandle0.htm
 old-project: netvista
 ms.assetid: 7348d937-6541-47a7-ae70-7d851d41bc1a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsAcquireClassifyHandle0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ NTSTATUS NTAPI FwpsAcquireClassifyHandle0(
      <i>classifyContext</i> parameter from 
      <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn1.md">classifyFn1</a>. The WFP engine passes this
      value to the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>.</p>
+     <a href="netvista.classifyfn">classifyFn</a>.</p>
 </dd>
 
 ### -param <i>flags</i> [in]
@@ -99,7 +99,7 @@ NTSTATUS NTAPI FwpsAcquireClassifyHandle0(
     functions:</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551197">FwpsPendClassify0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpspendclassify0.md">FwpsPendClassify0</a>
 </p>
 
 <p>
@@ -113,45 +113,15 @@ NTSTATUS NTAPI FwpsAcquireClassifyHandle0(
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551150">FwpsCompleteClassify0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscompleteclassify0.md">FwpsCompleteClassify0</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551208">FwpsReleaseClassifyHandle0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsreleaseclassifyhandle0.md">FwpsReleaseClassifyHandle0</a>
 </p>
 
 <p>For each call to this function, the callout driver must call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551208">FwpsReleaseClassifyHandle0</a> to
-    free the system resources associated with the handle.</p>
-
-<p><b>FwpsAcquireClassifyHandle0</b> is a support function for asynchronous classification and data
-    modification. The handle returned by this function is required as a parameter for the following
-    functions:</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551197">FwpsPendClassify0</a>
-</p>
-
-<p>
-<a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">
-       FwpsAcquireWritableLayerDataPointer0</a>
-</p>
-
-<p>
-<a href="..\fwpsk\nf-fwpsk-fwpsapplymodifiedlayerdata0.md">
-       FwpsApplyModifiedLayerData0</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551150">FwpsCompleteClassify0</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551208">FwpsReleaseClassifyHandle0</a>
-</p>
-
-<p>For each call to this function, the callout driver must call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551208">FwpsReleaseClassifyHandle0</a> to
+    <a href="..\fwpsk\nf-fwpsk-fwpsreleaseclassifyhandle0.md">FwpsReleaseClassifyHandle0</a> to
     free the system resources associated with the handle.</p>
 
 ## -requirements
@@ -207,21 +177,21 @@ NTSTATUS NTAPI FwpsAcquireClassifyHandle0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+<a href="netvista.classifyfn">classifyFn</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn1.md">classifyFn1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551150">FwpsCompleteClassify0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscompleteclassify0.md">FwpsCompleteClassify0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551197">FwpsPendClassify0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpspendclassify0.md">FwpsPendClassify0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551208">FwpsReleaseClassifyHandle0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsreleaseclassifyhandle0.md">FwpsReleaseClassifyHandle0</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAcquireClassifyHandle0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAcquireClassifyHandle0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

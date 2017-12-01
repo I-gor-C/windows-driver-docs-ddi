@@ -83,7 +83,7 @@ typedef struct _D3DDDIARG_LOCKASYNC {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544585">D3DDDI_LOCKASYNCFLAGS</a> structure that indicates, in bit-field flags, how to lock the resource. </p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-lockasyncflags.md">D3DDDI_LOCKASYNCFLAGS</a> structure that indicates, in bit-field flags, how to lock the resource. </p>
 <div class="alert"><b>Note</b>    Some flags are mutually exclusive with other flags. For more information, see the following Remarks section.</div>
 <div> </div>
 </dd>
@@ -97,7 +97,7 @@ typedef struct _D3DDDIARG_LOCKASYNC {
 ### -field <b>Area</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the subrectangle of the surface to lock, if the <b>AreaValid</b> bit-field flag is set in the D3DDDI_LOCKASYNCFLAGS structure that <b>Flags</b> specifies.</p>
+<p>[in] A <a href="display.rect">RECT</a> structure that describes the subrectangle of the surface to lock, if the <b>AreaValid</b> bit-field flag is set in the D3DDDI_LOCKASYNCFLAGS structure that <b>Flags</b> specifies.</p>
 </dd>
 
 ### -field <b>Box</b>
@@ -139,7 +139,7 @@ typedef struct _D3DDDIARG_LOCKASYNC {
 </dl>
 
 ## -remarks
-<p>The members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544585">D3DDDI_LOCKASYNCFLAGS</a> structure that the <b>Flags</b> member specifies must adhere to the following rules:</p>
+<p>The members of the <a href="..\d3dumddi\ns-d3dumddi--d3dddi-lockasyncflags.md">D3DDDI_LOCKASYNCFLAGS</a> structure that the <b>Flags</b> member specifies must adhere to the following rules:</p>
 
 <p>The <b>NoOverwrite</b> bit-field flag must not be simultaneously set with the <b>Discard</b> bit-field flag.</p>
 
@@ -170,13 +170,13 @@ typedef struct _D3DDDIARG_LOCKASYNC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544585">D3DDDI_LOCKASYNCFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-lockasyncflags.md">D3DDDI_LOCKASYNCFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockasync.md">LockAsync</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

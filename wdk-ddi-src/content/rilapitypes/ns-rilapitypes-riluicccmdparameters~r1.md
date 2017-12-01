@@ -7,7 +7,7 @@ old-location: netvista\riluicccmdparameters_2.htm
 old-project: netvista
 ms.assetid: 8ebffcdc-672b-4cfd-9ff2-a911b7c4dde5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCCMDPARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

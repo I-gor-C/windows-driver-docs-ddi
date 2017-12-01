@@ -7,7 +7,7 @@ old-location: netvista\dot11_phy_type_info.htm
 old-project: netvista
 ms.assetid: 9b0cbcc4-e38a-4266-afc5-8b2755d79f4c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_PHY_TYPE_INFO, DOT11_PHY_TYPE_INFO, *PDOT11_PHY_TYPE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: windot11.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -68,7 +67,7 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 
 <dd>
 <p>The type of PHY that the 802.11 station will use for the scan. The PHY type is defined by the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff548741">DOT11_PHY_TYPE</a> enumeration. 
+       <a href="..\windot11\ne-windot11--dot11-phy-type.md">DOT11_PHY_TYPE</a> enumeration. 
        <div class="alert"><b>Note</b>  The miniport driver must ignore this member if it is operating in Extensible
        Station (ExtSTA) mode.</div>
 <div> </div>
@@ -173,7 +172,7 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 
 ## -remarks
 <p>The 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff548767">DOT11_SCAN_REQUEST_V2</a> structure, which
+    <a href="..\windot11\ns-windot11--dot11-scan-request-v2.md">DOT11_SCAN_REQUEST_V2</a> structure, which
     accompanies a set request of 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>, contains an
     array of zero or more DOT11_PHY_TYPE_INFO entries.</p>
@@ -212,7 +211,7 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548767">DOT11_SCAN_REQUEST_V2</a>
+<a href="..\windot11\ns-windot11--dot11-scan-request-v2.md">DOT11_SCAN_REQUEST_V2</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
@@ -220,4 +219,4 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_TYPE_INFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_TYPE_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

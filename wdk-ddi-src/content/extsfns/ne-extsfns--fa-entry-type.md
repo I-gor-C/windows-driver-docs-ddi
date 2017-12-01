@@ -7,7 +7,7 @@ old-location: debugger\fa_entry_type.htm
 old-project: debugger
 ms.assetid: 49E0D15E-4214-421F-9C3F-E7C7A481CA10
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: EVENT_TRACE_HEADER, EVENT_TRACE_HEADER, *PEVENT_TRACE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>A <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">DebugFailureAnalysis</a> object has a collection of <a href="https://msdn.microsoft.com/library/windows/hardware/jj991807">failure analysis entries</a> (FA entries).  Each FA entry  has a tag, and each tag is associated with one of the data types in the <b>FA_ENTRY_TYPE</b> enumeration. For more information, see <a href="debugger.writing_an_analysis_extension_to_extend__analyze#failure_analysis_entries_tags_and_data_types#failure_analysis_entries_tags_and_data_types">Failure Analysis Entries, Tags, and Data Types</a>.</p>
-<p>An FA entry is an <a href="https://msdn.microsoft.com/library/windows/hardware/jj991808">FA_ENTRY</a> structure along with an optional data block. The data type of the tag indicates the type of data in the data block.</p>
+<p>An FA entry is an <a href="..\extsfns\ns-extsfns--fa-entry.md">FA_ENTRY</a> structure along with an optional data block. The data type of the tag indicates the type of data in the data block.</p>
 
 
 ## -syntax
@@ -97,7 +97,7 @@ typedef enum _FA_ENTRY_TYPE {
 ### -field <a id="DEBUG_FA_ENTRY_ANSI_STRING"></a><a id="debug_fa_entry_ansi_string"></a><b>DEBUG_FA_ENTRY_ANSI_STRING</b>
 
 <dd>
-<p>The data block holds a null-terminated string. The <b>DataSize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/jj991808">FA_ENTRY</a> structure holds the size of the string including the null terminator.</p>
+<p>The data block holds a null-terminated string. The <b>DataSize</b> member of the <a href="..\extsfns\ns-extsfns--fa-entry.md">FA_ENTRY</a> structure holds the size of the string including the null terminator.</p>
 </dd>
 
 ### -field <a id="DEBUG_FA_ENTRY_EXTENSION_CMD"></a><a id="debug_fa_entry_extension_cmd"></a><b>DEBUG_FA_ENTRY_EXTENSION_CMD</b>
@@ -109,13 +109,13 @@ typedef enum _FA_ENTRY_TYPE {
 ### -field <a id="DEBUG_FA_ENTRY_STRUCTURED_DATA"></a><a id="debug_fa_entry_structured_data"></a><b>DEBUG_FA_ENTRY_STRUCTURED_DATA</b>
 
 <dd>
-<p>The data block holds a  pointer to an  <a href="https://msdn.microsoft.com/library/windows/hardware/jj983405">IDebugFailureAnalysis2</a> interface.</p>
+<p>The data block holds a  pointer to an  <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a> interface.</p>
 </dd>
 
 ### -field <a id="DEBUG_FA_ENTRY_UNICODE_STRING"></a><a id="debug_fa_entry_unicode_string"></a><b>DEBUG_FA_ENTRY_UNICODE_STRING</b>
 
 <dd>
-<p>The data block holds a null-terminated Unicode string. The <b>DataSize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/jj991808">FA_ENTRY</a> structure holds the size of the Unicode string including the null terminator.</p>
+<p>The data block holds a null-terminated Unicode string. The <b>DataSize</b> member of the <a href="..\extsfns\ns-extsfns--fa-entry.md">FA_ENTRY</a> structure holds the size of the Unicode string including the null terminator.</p>
 </dd>
 
 ### -field <a id="DEBUG_FA_ENTRY_ARRAY"></a><a id="debug_fa_entry_array"></a><b>DEBUG_FA_ENTRY_ARRAY</b>
@@ -151,10 +151,10 @@ typedef enum _FA_ENTRY_TYPE {
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj991807">Failure Analysis Entries</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj991808">FA_ENTRY</a>
+<a href="..\extsfns\ns-extsfns--fa-entry.md">FA_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983405">IDebugFailureAnalysis2</a>
+<a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
 </dt>
 <dt>
 <a href="debugger.idebugfaentrytags">IDebugFAEntryTag</a>
@@ -162,4 +162,4 @@ typedef enum _FA_ENTRY_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20FA_ENTRY_TYPE enumeration%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20FA_ENTRY_TYPE enumeration%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

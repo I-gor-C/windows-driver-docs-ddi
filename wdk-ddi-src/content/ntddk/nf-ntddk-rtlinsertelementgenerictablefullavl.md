@@ -62,13 +62,13 @@ PVOID RtlInsertElementGenericTableFullAvl(
 ### -param <i>Table</i> [in]
 
 <dd>
-<p>Pointer to a generic Adelson-Velsky/Landis (AVL) table (<a href="https://msdn.microsoft.com/library/windows/hardware/ff553327">RTL_AVL_TABLE</a>) that was initialized by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh406465">RtlInitializeGenericTableAvl</a>.</p>
+<p>Pointer to a generic Adelson-Velsky/Landis (AVL) table (<a href="..\ntddk\ns-ntddk--rtl-avl-table.md">RTL_AVL_TABLE</a>) that was initialized by a call to <a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>.</p>
 </dd>
 
 ### -param <i>Buffer</i> [in]
 
 <dd>
-<p>A caller-allocated buffer that contains the user data to copy into the new element. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406465">RtlInitializeGenericTableAvl</a>. </p>
+<p>A caller-allocated buffer that contains the user data to copy into the new element. For more information, see <a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>. </p>
 </dd>
 
 ### -param <i>BufferSize</i> [in]
@@ -86,7 +86,7 @@ PVOID RtlInsertElementGenericTableFullAvl(
 ### -param <i>NodeOrParent</i> [in]
 
 <dd>
-<p>The search result of a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff553092">RtlLookupElementGenericTableFullAvl</a>. This value indicates to the <b>RtlInsertElementGenericTableFullAvl</b> routine whether the tree is currently empty, or if not empty, whether to insert the new entry to the left or the right of the parent entry. The <i>SearchResult</i> parameter can have any of the following values:</p>
+<p>The search result of a previous call to <a href="..\ntddk\nf-ntddk-rtllookupelementgenerictablefullavl.md">RtlLookupElementGenericTableFullAvl</a>. This value indicates to the <b>RtlInsertElementGenericTableFullAvl</b> routine whether the tree is currently empty, or if not empty, whether to insert the new entry to the left or the right of the parent entry. The <i>SearchResult</i> parameter can have any of the following values:</p>
 <p></p>
 <dl>
 
@@ -127,7 +127,7 @@ PVOID RtlInsertElementGenericTableFullAvl(
 <p><b>RtlInsertElementGenericTableFullAvl</b> returns a pointer to the user data for the newly inserted entry, or the user data for a matching entry that is already in the generic table. If no matching entry is found, but <b>RtlInsertElementGenericTableFullAvl</b> cannot insert the new entry (for example, because the <i>AllocateRoutine</i> fails), <b>RtlInsertElementGenericTableFullAvl</b> returns <b>NULL</b>. </p>
 
 ## -remarks
-<p>To insert an entry, <b>RtlInsertElementGenericTableFullAvl</b> calls the <i>CompareRoutine</i> and <i>AllocateRoutine</i> that were registered when the generic table was initialized by <a href="https://msdn.microsoft.com/library/windows/hardware/hh406465">RtlInitializeGenericTableAvl</a>. After inserting the new entry, <b>RtlInsertElementGenericTableFullAvl</b> rebalances the AVL link tree.</p>
+<p>To insert an entry, <b>RtlInsertElementGenericTableFullAvl</b> calls the <i>CompareRoutine</i> and <i>AllocateRoutine</i> that were registered when the generic table was initialized by <a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>. After inserting the new entry, <b>RtlInsertElementGenericTableFullAvl</b> rebalances the AVL link tree.</p>
 
 <p>When a new entry is inserted into the table, its data is copied from <i>Buffer</i> into the new entry. Thus the pointer returned by <b>RtlInsertElementGenericTableFullAvl</b> is never equal to <i>Buffer</i>. </p>
 
@@ -143,31 +143,7 @@ PVOID RtlInsertElementGenericTableFullAvl(
 
 <p>#define RTL_USE_AVL_TABLES 0</p>
 
-<p>If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic table routines. For example, use the <b>RtlInsertElementGenericTableFullAvl</b> routine instead of <b>RtlInsertElementGenericTableFull</b>. In the call to <b>RtlInsertElementGenericTableFullAvl</b>, the caller must pass a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553327">RTL_AVL_TABLE</a> table structure rather than <a href="https://msdn.microsoft.com/library/windows/hardware/ff553345">RTL_GENERIC_TABLE</a>.</p>
-
-<p>Callers of <b>RtlInsertElementGenericTableFullAvl</b> must be running at IRQL &lt; DISPATCH_LEVEL if either of the following conditions holds:</p>
-
-<p>The caller-allocated memory at <i>Table</i> or at <i>Buffer</i> is pageable.</p>
-
-<p>The caller-supplied <i>CompareRoutine</i> or <i>AllocateRoutine</i> contains pageable code. </p>
-
-<p>To insert an entry, <b>RtlInsertElementGenericTableFullAvl</b> calls the <i>CompareRoutine</i> and <i>AllocateRoutine</i> that were registered when the generic table was initialized by <a href="https://msdn.microsoft.com/library/windows/hardware/hh406465">RtlInitializeGenericTableAvl</a>. After inserting the new entry, <b>RtlInsertElementGenericTableFullAvl</b> rebalances the AVL link tree.</p>
-
-<p>When a new entry is inserted into the table, its data is copied from <i>Buffer</i> into the new entry. Thus the pointer returned by <b>RtlInsertElementGenericTableFullAvl</b> is never equal to <i>Buffer</i>. </p>
-
-<p>If the caller's <i>CompareRoutine</i> returns <b>GenericEqual</b>, the data at <i>Buffer</i> is assumed to duplicate the data for an existing entry in the generic table. In this case, <b>RtlInsertElementGenericTableFullAvl</b> does not add the new entry (and thus does not call the <i>AllocateRoutine</i>), because a generic table cannot have duplicate entries.</p>
-
-<p>If a matching entry already exists in the generic table, <b>RtlInsertElementGenericTableFullAvl</b> returns a pointer to the existing entry's data and sets <i>NewElement</i> to <b>FALSE</b>. </p>
-
-<p>If there is no matching entry in the table already,<b>RtlInsertElementGenericTableFullAvl</b> routine allocates sufficient space for the user data of new entry (<i>BufferSize</i>) plus the links associated with the new entry. Thus the total number of bytes will be at least <i>BufferSize</i> + <b>sizeof</b>(BALANCED_LINKS). Caller should not use the first <b>sizeof</b>(BALANCED_LINKS) bytes of the memory that the <i>AllocateRoutine</i>allocates.</p>
-
-<p>Callers of the<i>Rtl..GenericTableAvl</i> routines are responsible for exclusively synchronizing access to the generic table. An exclusive fast mutex is the most efficient synchronization mechanism to use for this purpose. </p>
-
-<p>By default, the operating system uses splay trees to implement generic tables, but the <b>RtlInsertElementGenericTableFullAvl</b> routine only works with Adelson-Velsky/Landis (AVL) trees. To configure the generic table routines to use AVL trees instead of splay trees in your driver, insert the following define statement in a common header file before including <i>Ntddk.h</i>:</p>
-
-<p>#define RTL_USE_AVL_TABLES 0</p>
-
-<p>If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic table routines. For example, use the <b>RtlInsertElementGenericTableFullAvl</b> routine instead of <b>RtlInsertElementGenericTableFull</b>. In the call to <b>RtlInsertElementGenericTableFullAvl</b>, the caller must pass a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553327">RTL_AVL_TABLE</a> table structure rather than <a href="https://msdn.microsoft.com/library/windows/hardware/ff553345">RTL_GENERIC_TABLE</a>.</p>
+<p>If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic table routines. For example, use the <b>RtlInsertElementGenericTableFullAvl</b> routine instead of <b>RtlInsertElementGenericTableFull</b>. In the call to <b>RtlInsertElementGenericTableFullAvl</b>, the caller must pass a <a href="..\ntddk\ns-ntddk--rtl-avl-table.md">RTL_AVL_TABLE</a> table structure rather than <a href="..\ntddk\ns-ntddk--rtl-generic-table.md">RTL_GENERIC_TABLE</a>.</p>
 
 <p>Callers of <b>RtlInsertElementGenericTableFullAvl</b> must be running at IRQL &lt; DISPATCH_LEVEL if either of the following conditions holds:</p>
 
@@ -238,10 +214,10 @@ PVOID RtlInsertElementGenericTableFullAvl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552209">RtlDeleteElementGenericTable</a>
+<a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md">RtlDeleteElementGenericTable</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552989">RtlInitializeGenericTable</a>
+<a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\fwps_callout2.htm
 old-project: netvista
 ms.assetid: 88d5a5ad-b71a-49b3-a1cf-b0dff1a85745
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FWPS_CALLOUT2_, FWPS_CALLOUT2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The <b>FWPS_CALLOUT2</b> structure defines the data that is required for a callout driver to register a
-  callout with the filter engine.<div class="alert"><b>Note</b>  <b>FWPS_CALLOUT2</b> is the specific version of <b>FWPS_CALLOUT</b> used in Windows 8 and later. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information. For Windows 7, <a href="https://msdn.microsoft.com/library/windows/hardware/ff551226">FWPS_CALLOUT1</a> is available. For Windows Vista, <a href="https://msdn.microsoft.com/library/windows/hardware/ff551224">FWPS_CALLOUT0</a> is available.</div>
+  callout with the filter engine.<div class="alert"><b>Note</b>  <b>FWPS_CALLOUT2</b> is the specific version of <b>FWPS_CALLOUT</b> used in Windows 8 and later. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information. For Windows 7, <a href="netvista.fwps_callout1">FWPS_CALLOUT1</a> is available. For Windows Vista, <a href="netvista.fwps_callout0">FWPS_CALLOUT0</a> is available.</div>
 <div> </div>
 </p>
 
@@ -93,7 +93,7 @@ typedef struct FWPS_CALLOUT2_ {
        <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn2.md">classifyFn2</a> callout function only if there
        is a context associated with the data flow. A callout driver associates a context with a data flow by
        calling the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff551165">FwpsFlowAssociateContext0</a> function.</p>
+       <a href="..\fwpsk\nf-fwpsk-fwpsflowassociatecontext0.md">FwpsFlowAssociateContext0</a> function.</p>
 </td>
 </tr>
 <tr>
@@ -199,16 +199,16 @@ typedef struct FWPS_CALLOUT2_ {
 <div class="alert"><b>Caution</b>  <p class="note">If a callout driver sets this flag, it cannot use the following functions to modify NET_BUFFER_LISTs.</p>
 <ul>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551206">FwpsReferenceNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsreferencenetbufferlist0.md">FwpsReferenceNetBufferList0</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551159">FwpsDereferenceNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsdereferencenetbufferlist0.md">FwpsDereferenceNetBufferList0</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551134">FwpsAllocateCloneNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">FwpsAllocateCloneNetBufferList0</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551170">FwpsFreeCloneNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsfreeclonenetbufferlist0.md">FwpsFreeCloneNetBufferList0</a>
 </li>
 </ul>
 <p class="note">With this flag set, <b>FwpsAllocateCloneNetBufferList0</b> will always return an <b>INVALID_PARAMETER</b> error. This may unexpectedly cause a 3rd party callout driver to fail to manage the reference count of NET_BUFFER_LISTs, causing send and receive operations to stop.</p>
@@ -250,7 +250,7 @@ typedef struct FWPS_CALLOUT2_ {
 
 ## -remarks
 <p>A callout driver passes a pointer to an initialized <b>FWPS_CALLOUT2</b> structure to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh439576">FwpsCalloutRegister2</a> function when it
+    <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister2.md">FwpsCalloutRegister2</a> function when it
     registers a callout with the filter engine.</p>
 
 <p>A callout can set the <b>FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW</b> flag only for connections on which
@@ -259,7 +259,7 @@ typedef struct FWPS_CALLOUT2_ {
     data.</p>
 
 <p>This structure is essentially identical to the previous version, 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551226">FWPS_CALLOUT1</a>. The only differences are that
+    <a href="netvista.fwps_callout1">FWPS_CALLOUT1</a>. The only differences are that
     the members of this version store the updated versions of the callout function pointers, and additional flags are available for callout drivers to set.</p>
 
 ## -requirements
@@ -296,13 +296,13 @@ typedef struct FWPS_CALLOUT2_ {
 <a href="..\fwpsk\nc-fwpsk-fwps-callout-flow-delete-notify-fn0.md">flowDeleteFn</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551224">FWPS_CALLOUT0</a>
+<a href="netvista.fwps_callout0">FWPS_CALLOUT0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551226">FWPS_CALLOUT1</a>
+<a href="netvista.fwps_callout1">FWPS_CALLOUT1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439576">FwpsCalloutRegister2</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister2.md">FwpsCalloutRegister2</a>
 </dt>
 <dt>
 <a href="NULL">Using Layer 2 Filtering</a>
@@ -310,4 +310,4 @@ typedef struct FWPS_CALLOUT2_ {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT2 structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT2 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

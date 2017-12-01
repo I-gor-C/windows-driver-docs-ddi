@@ -7,7 +7,7 @@ old-location: sensors\gnss_fixsessiontype.htm
 old-project: sensors
 ms.assetid: CE611168-76B3-496F-91C7-932E1F259529
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This enumeration indicates the type of location fix needed by the GNSS adapter when it issues an <a href="https://msdn.microsoft.com/library/windows/hardware/dn917750">IOCTL_GNSS_START_FIXSESSION</a> control code. This enumeration is set within the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925152">GNSS_FIXSESSION_PARAM</a> structure.</p>
+<p>This enumeration indicates the type of location fix needed by the GNSS adapter when it issues an <a href="..\gnssdriver\ni-gnssdriver-ioctl-gnss-start-fixsession.md">IOCTL_GNSS_START_FIXSESSION</a> control code. This enumeration is set within the <a href="sensors.gnss_fixsession_param">GNSS_FIXSESSION_PARAM</a> structure.</p>
 
 
 ## -syntax

@@ -7,7 +7,7 @@ old-location: netvista\rilsenduicctoolkitenvelopeparams.htm
 old-project: netvista
 ms.assetid: df1ce4d6-e335-4ffa-8e37-85221eb57521
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS, *LPRILSENDUICCTOOLKITENVELOPEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

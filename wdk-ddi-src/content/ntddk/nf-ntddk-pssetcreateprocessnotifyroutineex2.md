@@ -7,7 +7,7 @@ old-location: kernel\pssetcreateprocessnotifyroutineex2.htm
 old-project: kernel
 ms.assetid: 25B053C1-E3A3-4002-9355-F3EEA8FECB44
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PsSetCreateProcessNotifyRoutineEx2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ NTSTATUS PsSetCreateProcessNotifyRoutineEx2(
 ### -param <i> NotifyType</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt805889">PSCREATEPROCESSNOTIFYTYPE</a>-type value that indicates the type of process notification.</p>
+<p>A <a href="..\ntddk\ne-ntddk--pscreateprocessnotifytype.md">PSCREATEPROCESSNOTIFYTYPE</a>-type value that indicates the type of process notification.</p>
 </dd>
 
 ### -param <i>NotifyInformation</i> [in]
 
 <dd>
-<p>The address of the notification information for the specified type of process notification. If <i>NotifyType</i> is <b>PsCreateProcessNotifySubsystems</b>, <i>NotifyInformation</i> is a  <a href="https://msdn.microsoft.com/library/windows/hardware/mt764086">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a> that specifies the entry point of the caller-supplied process-creation callback. </p>
+<p>The address of the notification information for the specified type of process notification. If <i>NotifyType</i> is <b>PsCreateProcessNotifySubsystems</b>, <i>NotifyInformation</i> is a  <a href="..\ntddk\nc-ntddk-pcreate-process-notify-routine-ex.md">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a> that specifies the entry point of the caller-supplied process-creation callback. </p>
 </dd>
 
 ### -param <i>Remove</i> [in]
@@ -89,26 +89,6 @@ NTSTATUS PsSetCreateProcessNotifyRoutineEx2(
 <p> </p>
 
 ## -remarks
-<p>Drivers can call <b>PsSetCreateProcessNotifyRoutineEx2</b> to register their process-creation notify routines.</p>
-
-<p>After a driver-supplied routine is registered, it is called with the unique ID (indicated by <i>ProcessId</i>) 
-        of the created or deleted process.  The <i>ParentId</i> identifies the parent process of the new process (this is the parent used for priority, affinity, quota, token, and handle inheritance, among others) if it was
-        created with the inherit handles option.  If it was created without
-        the inherit handle options, then the parent process ID is NULL.
-        </p>
-
-<p>If the <i>Create</i> value is TRUE, the subsystem process
-        was created; FALSE indicates the process was deleted. </p>
-
-<p>When the process is created, the callback function is invoked just after the first thread in the
-        process has been created. Conversely, for deletion, the function is invoked after the
-        last thread in the process has terminated and the address space is about
-        to be deleted. It is possible that the callback is only invoked for deletion without getting a creation
-        call in cases where the process was created and deleted
-        without a thread ever being created.</p>
-
-<p>A driver must remove any callback function that it registers before it unloads. You can remove the callback by calling <b>PsSetCreateProcessNotifyRoutineEx2</b> with <i>Remove</i> = <b>TRUE</b>.  </p>
-
 <p>Drivers can call <b>PsSetCreateProcessNotifyRoutineEx2</b> to register their process-creation notify routines.</p>
 
 <p>After a driver-supplied routine is registered, it is called with the unique ID (indicated by <i>ProcessId</i>) 
@@ -200,7 +180,7 @@ NTSTATUS PsSetCreateProcessNotifyRoutineEx2(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -208,15 +188,15 @@ NTSTATUS PsSetCreateProcessNotifyRoutineEx2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559951">PsSetCreateProcessNotifyRoutine</a>
+<a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutine.md">PsSetCreateProcessNotifyRoutine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559953">PsSetCreateProcessNotifyRoutineEx</a>
+<a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutineex.md">PsSetCreateProcessNotifyRoutineEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt764086">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a>
+<a href="..\ntddk\nc-ntddk-pcreate-process-notify-routine-ex.md">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PsSetCreateProcessNotifyRoutineEx2 routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PsSetCreateProcessNotifyRoutineEx2 routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

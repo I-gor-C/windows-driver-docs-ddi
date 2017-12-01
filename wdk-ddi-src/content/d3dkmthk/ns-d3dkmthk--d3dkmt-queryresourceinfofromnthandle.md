@@ -140,7 +140,7 @@ typedef struct _D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439446">D3DKMTQueryResourceInfoFromNtHandle</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfofromnthandle.md">D3DKMTQueryResourceInfoFromNtHandle</a>
 </dt>
 </dl>
 <p> </p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>RECORDER_LOG_CREATE_PARAMS</b> structure is an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914615">WppRecorderLogCreate</a> method. </p>
+<p>The <b>RECORDER_LOG_CREATE_PARAMS</b> structure is an input parameter to the <a href="..\wpprecorder\nf-wpprecorder-wpprecorderlogcreate.md">WppRecorderLogCreate</a> method. </p>
 
 
 ## -syntax
@@ -131,7 +131,7 @@ typedef struct _RECORDER_LOG_CREATE_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914609">RECORDER_LOG_CREATE_PARAMS_INIT</a>
+<a href="..\wpprecorder\nf-wpprecorder-recorder-log-create-params-init.md">RECORDER_LOG_CREATE_PARAMS_INIT</a>
 </dt>
 </dl>
 <p> </p>

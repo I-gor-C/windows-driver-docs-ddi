@@ -59,7 +59,7 @@ BOOL WcsDisassociateColorProfileFromDevice(
 ### -param <i>profileManagementScope</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563752">WCS_PROFILE_MANAGEMENT_SCOPE</a> value that specifies the scope of this profile management operation.</p>
+<p>A <a href="..\icm\ne-icm-wcs-profile-management-scope.md">WCS_PROFILE_MANAGEMENT_SCOPE</a> value that specifies the scope of this profile management operation.</p>
 </dd>
 
 ### -param <i>pProfileName</i> [in]
@@ -76,16 +76,6 @@ BOOL WcsDisassociateColorProfileFromDevice(
 </dl>
 
 ## -remarks
-<p>The WCS color profile should be installed on the system and must have been associated with the device using the same value for the <i>profileManagementScope</i> parameter.</p>
-
-<p>If <i>profileManagementScope</i> is WCS_PROFILE_MANAGEMENT_SCOPE_SYSTEM_WIDE, the profile disassociation is system-wide and applies to all users. If <i>profileManagementScope</i> is WCS_PROFILE_MANAGEMENT_SCOPE_CURRENT_USER, the disassociation is only for the current user.</p>
-
-<p>If more than one WCS color profile is associated with a device, WCS uses the last one associated as the default. That is, if your application sequentially associates three profiles with a device, WCS will use the last one associated as the default. If your application then calls the <code>WcsDisassociateColorProfileFromDevice</code> function to disassociate the third profile (which is the default in this example), WCS will use the second profile as the default.</p>
-
-<p>If your application disassociates all profiles from a device, WCS uses the sRGB profile as the default.</p>
-
-<p>This function is executable in Least-Privileged User Account (LUA) context if <i>profileManagementScope</i> is WCS_PROFILE_MANAGEMENT_SCOPE_CURRENT_USER. Otherwise, administrative privileges are required..</p>
-
 <p>The WCS color profile should be installed on the system and must have been associated with the device using the same value for the <i>profileManagementScope</i> parameter.</p>
 
 <p>If <i>profileManagementScope</i> is WCS_PROFILE_MANAGEMENT_SCOPE_SYSTEM_WIDE, the profile disassociation is system-wide and applies to all users. If <i>profileManagementScope</i> is WCS_PROFILE_MANAGEMENT_SCOPE_CURRENT_USER, the disassociation is only for the current user.</p>
@@ -151,7 +141,7 @@ BOOL WcsDisassociateColorProfileFromDevice(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563709">WcsAssociateColorProfileWithDevice</a>
+<a href="..\icm\nf-icm-wcsassociatecolorprofilewithdevice.md">WcsAssociateColorProfileWithDevice</a>
 </dt>
 </dl>
 <p> </p>

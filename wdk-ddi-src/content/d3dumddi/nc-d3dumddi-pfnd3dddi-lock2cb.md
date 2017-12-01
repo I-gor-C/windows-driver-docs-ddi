@@ -67,7 +67,7 @@ HRESULT APIENTRY CALLBACK* pfnLock2Cb(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn894601">D3DDDICB_LOCK2</a> structure that describes the allocation to lock.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-lock2.md">D3DDDICB_LOCK2</a> structure that describes the allocation to lock.</p>
 </dd>
 </dl>
 
@@ -75,10 +75,6 @@ HRESULT APIENTRY CALLBACK* pfnLock2Cb(
 <p>If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.</p>
 
 ## -remarks
-<p>With the Windows Display Driver Model (WDDM) v2 it is now the user mode driver's responsibility to handle the following tasks:</p>
-
-<p>Synchronization of other lock types (not no-overwrite or discard)</p>
-
 <p>With the Windows Display Driver Model (WDDM) v2 it is now the user mode driver's responsibility to handle the following tasks:</p>
 
 <p>Synchronization of other lock types (not no-overwrite or discard)</p>
@@ -126,7 +122,7 @@ HRESULT APIENTRY CALLBACK* pfnLock2Cb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn894601">D3DDDICB_LOCK2</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-lock2.md">D3DDDICB_LOCK2</a>
 </dt>
 </dl>
 <p> </p>

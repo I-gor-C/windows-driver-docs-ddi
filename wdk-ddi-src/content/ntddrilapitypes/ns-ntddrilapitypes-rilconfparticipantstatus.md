@@ -7,7 +7,7 @@ old-location: netvista\rilconfparticipantstatus.htm
 old-project: netvista
 ms.assetid: 7eb0e06b-85f0-4b61-9ed0-2f35156fbb8c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCONFPARTICIPANTSTATUS, RILCONFPARTICIPANTSTATUS, *LPRILCONFPARTICIPANTSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

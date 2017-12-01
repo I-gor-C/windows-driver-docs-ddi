@@ -7,7 +7,7 @@ old-location: debugger\writesymbolwide.htm
 old-project: debugger
 ms.assetid: ed77fddf-c23c-4522-a2c4-875f07d249fb
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbolGroup2, WriteSymbolWide, IDebugSymbolGroup2::WriteSymbolWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,11 +78,7 @@ HRESULT WriteSymbolWide(
 <p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
 
 ## -remarks
-<p>This method can change symbols only if the symbols are stored in a register or memory location that the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> knowns and if they have not had their type changed to an extension by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553191">OutputAsType</a> method.  </p>
-
-<p>For more information about symbol groups, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554702">Scopes and Symbol Groups</a>.</p>
-
-<p>This method can change symbols only if the symbols are stored in a register or memory location that the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> knowns and if they have not had their type changed to an extension by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553191">OutputAsType</a> method.  </p>
+<p>This method can change symbols only if the symbols are stored in a register or memory location that the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> knowns and if they have not had their type changed to an extension by using the <a href="debugger.outputastype">OutputAsType</a> method.  </p>
 
 <p>For more information about symbol groups, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554702">Scopes and Symbol Groups</a>.</p>
 
@@ -113,15 +109,15 @@ HRESULT WriteSymbolWide(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550846">IDebugSymbolGroup2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
+<a href="debugger.getnumbersymbols">GetNumberSymbols</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549201">GetSymbolValueText</a>
+<a href="debugger.getsymbolvaluetext">GetSymbolValueText</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup2::WriteSymbolWide method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup2::WriteSymbolWide method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

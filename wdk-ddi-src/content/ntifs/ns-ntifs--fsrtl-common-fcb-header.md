@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Do not use the FSRTL_COMMON_FCB_HEADER structure outside of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547334">FSRTL_ADVANCED_FCB_HEADER</a> structure.  The FSRTL_COMMON_FCB_HEADER structure contains context information that a file system maintains about a file, directory, volume, or alternate data stream.  </p>
+<p>Do not use the FSRTL_COMMON_FCB_HEADER structure outside of the <a href="..\ntifs\ns-ntifs--fsrtl-advanced-fcb-header.md">FSRTL_ADVANCED_FCB_HEADER</a> structure.  The FSRTL_COMMON_FCB_HEADER structure contains context information that a file system maintains about a file, directory, volume, or alternate data stream.  </p>
 
 
 ## -syntax
@@ -99,7 +99,7 @@ typedef struct _FSRTL_COMMON_FCB_HEADER {
 ### -field <a id="FSRTL_FLAG_LIMIT_MODIFIED_PAGES"></a><a id="fsrtl_flag_limit_modified_pages"></a>FSRTL_FLAG_LIMIT_MODIFIED_PAGES
 
 <dd>
-<p>Reserved for system use.  File system drivers (except for filter drivers) that must set or clear a limit of modified data for a file should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539209">CcSetDirtyPageThreshold</a>.</p>
+<p>Reserved for system use.  File system drivers (except for filter drivers) that must set or clear a limit of modified data for a file should call <a href="..\ntifs\nf-ntifs-ccsetdirtypagethreshold.md">CcSetDirtyPageThreshold</a>.</p>
 </dd>
 
 ### -field <a id="FSRTL_FLAG_ACQUIRE_MAIN_RSRC_EX"></a><a id="fsrtl_flag_acquire_main_rsrc_ex"></a>FSRTL_FLAG_ACQUIRE_MAIN_RSRC_EX
@@ -123,7 +123,7 @@ typedef struct _FSRTL_COMMON_FCB_HEADER {
 ### -field <a id="FSRTL_FLAG_ADVANCED_HEADER"></a><a id="fsrtl_flag_advanced_header"></a>FSRTL_FLAG_ADVANCED_HEADER
 
 <dd>
-<p>This flag indicates that the file system is using <a href="https://msdn.microsoft.com/library/windows/hardware/ff547334">FSRTL_ADVANCED_FCB_HEADER</a> instead of FSRTL_COMMON_FCB_HEADER in its file control block (FCB) structures. This flag is required because use of the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure is deprecated.</p>
+<p>This flag indicates that the file system is using <a href="..\ntifs\ns-ntifs--fsrtl-advanced-fcb-header.md">FSRTL_ADVANCED_FCB_HEADER</a> instead of FSRTL_COMMON_FCB_HEADER in its file control block (FCB) structures. This flag is required because use of the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure is deprecated.</p>
 </dd>
 
 ### -field <a id="FSRTL_FLAG_EOF_ADVANCE_ACTIVE"></a><a id="fsrtl_flag_eof_advance_active"></a>FSRTL_FLAG_EOF_ADVANCE_ACTIVE
@@ -169,7 +169,7 @@ typedef struct _FSRTL_COMMON_FCB_HEADER {
 </tr>
 </table>
 <p> </p>
-<p>For more information about these values, see the reference entries for <a href="https://msdn.microsoft.com/library/windows/hardware/ff545697">FsRtlAreThereCurrentFileLocks</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545791">FsRtlCopyRead</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff545797">FsRtlCopyWrite</a>. </p>
+<p>For more information about these values, see the reference entries for <a href="..\ntifs\nf-ntifs-fsrtlaretherecurrentfilelocks.md">FsRtlAreThereCurrentFileLocks</a>, <a href="ifsk.fsrtlcopyread">FsRtlCopyRead</a>, and <a href="ifsk.fsrtlcopywrite">FsRtlCopyWrite</a>. </p>
 </dd>
 
 ### -field <b>Flags2</b>
@@ -199,7 +199,7 @@ typedef struct _FSRTL_COMMON_FCB_HEADER {
 ### -field <a id="FSRTL_FLAG2_SUPPORTS_FILTER_CONTEXTS"></a><a id="fsrtl_flag2_supports_filter_contexts"></a>FSRTL_FLAG2_SUPPORTS_FILTER_CONTEXTS
 
 <dd>
-<p>This flag indicates that the file system is using <a href="https://msdn.microsoft.com/library/windows/hardware/ff547334">FSRTL_ADVANCED_FCB_HEADER</a> instead of FSRTL_COMMON_FCB_HEADER in its FCB structures. This flag is required because use of the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure is deprecated.</p>
+<p>This flag indicates that the file system is using <a href="..\ntifs\ns-ntifs--fsrtl-advanced-fcb-header.md">FSRTL_ADVANCED_FCB_HEADER</a> instead of FSRTL_COMMON_FCB_HEADER in its FCB structures. This flag is required because use of the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure is deprecated.</p>
 </dd>
 
 ### -field <a id="FSRTL_FLAG2_IS_PAGING_FILE_"></a><a id="fsrtl_flag2_is_paging_file_"></a>FSRTL_FLAG2_IS_PAGING_FILE 
@@ -219,7 +219,7 @@ typedef struct _FSRTL_COMMON_FCB_HEADER {
 ### -field <b>Version</b>
 
 <dd>
-<p>Reserved for system use.  This bit-field is set by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547257">FsRtlSetupAdvancedHeader</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff547263">FsRtlSetupAdvancedHeaderEx</a> macro.  Starting with Windows Vista, the value of this bit-field is FSRTL_FCB_HEADER_V1 or greater; otherwise, the value is FSRTL_FCB_HEADER_V0.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff547334">FSRTL_ADVANCED_FCB_HEADER</a> for more information.</p>
+<p>Reserved for system use.  This bit-field is set by the <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a> or <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheaderex.md">FsRtlSetupAdvancedHeaderEx</a> macro.  Starting with Windows Vista, the value of this bit-field is FSRTL_FCB_HEADER_V1 or greater; otherwise, the value is FSRTL_FCB_HEADER_V0.  See <a href="..\ntifs\ns-ntifs--fsrtl-advanced-fcb-header.md">FSRTL_ADVANCED_FCB_HEADER</a> for more information.</p>
 </dd>
 
 ### -field <b>Resource</b>
@@ -240,7 +240,7 @@ typedef struct _FSRTL_COMMON_FCB_HEADER {
 
 <dd>
 <p>Allocation size for the file stream. </p>
-<p>For more information about the <b>AllocationSize</b>, <b>FileSize</b>, and <b>ValidDataLength</b> members, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.</p>
+<p>For more information about the <b>AllocationSize</b>, <b>FileSize</b>, and <b>ValidDataLength</b> members, see <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.</p>
 </dd>
 
 ### -field <b>FileSize</b>
@@ -257,7 +257,7 @@ typedef struct _FSRTL_COMMON_FCB_HEADER {
 </dl>
 
 ## -remarks
-<p>File systems must set the <b>FsContext</b> member of every file object to point to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff547334">FSRTL_ADVANCED_FCB_HEADER</a> structure.  This structure can be embedded inside of a file-system-specific stream context object structure (the remainder of this structure is file-system-specific). Usually, the FSRTL_ADVANCED_FCB_HEADER  structure is a file control block (FCB). However, on some file systems that support multiple data streams, such as NTFS, it is a stream control block (SCB).</p>
+<p>File systems must set the <b>FsContext</b> member of every file object to point to an <a href="..\ntifs\ns-ntifs--fsrtl-advanced-fcb-header.md">FSRTL_ADVANCED_FCB_HEADER</a> structure.  This structure can be embedded inside of a file-system-specific stream context object structure (the remainder of this structure is file-system-specific). Usually, the FSRTL_ADVANCED_FCB_HEADER  structure is a file control block (FCB). However, on some file systems that support multiple data streams, such as NTFS, it is a stream control block (SCB).</p>
 
 <p>If the file is used as a paging file, the FSRTL_ADVANCED_FCB_HEADER structure must be allocated from nonpaged pool. Otherwise, it can be allocated from paged or nonpaged pool.</p>
 
@@ -278,25 +278,25 @@ typedef struct _FSRTL_COMMON_FCB_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547334">FSRTL_ADVANCED_FCB_HEADER</a>
+<a href="..\ntifs\ns-ntifs--fsrtl-advanced-fcb-header.md">FSRTL_ADVANCED_FCB_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547357">FSRTL_PER_STREAM_CONTEXT</a>
+<a href="..\ntifs\ns-ntifs--fsrtl-per-stream-context.md">FSRTL_PER_STREAM_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545697">FsRtlAreThereCurrentFileLocks</a>
+<a href="..\ntifs\nf-ntifs-fsrtlaretherecurrentfilelocks.md">FsRtlAreThereCurrentFileLocks</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545791">FsRtlCopyRead</a>
+<a href="ifsk.fsrtlcopyread">FsRtlCopyRead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545797">FsRtlCopyWrite</a>
+<a href="ifsk.fsrtlcopywrite">FsRtlCopyWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547257">FsRtlSetupAdvancedHeader</a>
+<a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a>
 </dt>
 </dl>
 <p> </p>

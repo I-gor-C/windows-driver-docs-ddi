@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The tape miniclass driver passes this structure to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff567957">TapeMiniWMIControl</a> routine to indicate which WMI operation must be performed by the device. </p>
+<p>The tape miniclass driver passes this structure to its <a href="storage.tapeminiwmicontrol">TapeMiniWMIControl</a> routine to indicate which WMI operation must be performed by the device. </p>
 
 
 ## -syntax
@@ -66,7 +66,7 @@ typedef struct _TAPE_WMI_OPERATIONS {
 ### -field <a id="TAPE_CHECK_FOR_DRIVE_PROBLEM"></a><a id="tape_check_for_drive_problem"></a>TAPE_CHECK_FOR_DRIVE_PROBLEM
 
 <dd>
-<p>If the tape drive supports commands to return specific device errors, such as tape alerts, the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567957">TapeMiniWMIControl</a> routine should execute the TAPE_QUERY_DEVICE_ERROR_DATA method Otherwise, it should execute the TAPE_QUERY_IO_ERROR_DATA method.</p>
+<p>If the tape drive supports commands to return specific device errors, such as tape alerts, the minidriver's <a href="storage.tapeminiwmicontrol">TapeMiniWMIControl</a> routine should execute the TAPE_QUERY_DEVICE_ERROR_DATA method Otherwise, it should execute the TAPE_QUERY_IO_ERROR_DATA method.</p>
 </dd>
 </dl>
 <p></p>
@@ -98,7 +98,7 @@ typedef struct _TAPE_WMI_OPERATIONS {
 ### -field <b>DataBuffer</b>
 
 <dd>
-<p>Pointer to a buffer in which the tape minidriver returns the results of the operation. The first <b>sizeof</b>(ULONG) bytes of <b>DataBuffer</b> contain a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff567962">TAPE_DRIVE_PROBLEM_TYPE</a>, followed by <b>DataBufferSize</b> - <b>sizeof</b>(ULONG) bytes of tape data. </p>
+<p>Pointer to a buffer in which the tape minidriver returns the results of the operation. The first <b>sizeof</b>(ULONG) bytes of <b>DataBuffer</b> contain a value of type <a href="..\ntddtape\ne-ntddtape--tape-drive-problem-type.md">TAPE_DRIVE_PROBLEM_TYPE</a>, followed by <b>DataBufferSize</b> - <b>sizeof</b>(ULONG) bytes of tape data. </p>
 </dd>
 </dl>
 
@@ -122,10 +122,10 @@ typedef struct _TAPE_WMI_OPERATIONS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567957">TapeMiniWMIControl</a>
+<a href="storage.tapeminiwmicontrol">TapeMiniWMIControl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567962">TAPE_DRIVE_PROBLEM_TYPE</a>
+<a href="..\ntddtape\ne-ntddtape--tape-drive-problem-type.md">TAPE_DRIVE_PROBLEM_TYPE</a>
 </dt>
 </dl>
 <p> </p>

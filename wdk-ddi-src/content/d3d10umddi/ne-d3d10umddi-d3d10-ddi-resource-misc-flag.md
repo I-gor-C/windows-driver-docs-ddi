@@ -109,7 +109,7 @@ typedef enum D3D10_DDI_RESOURCE_MISC_FLAG {
 ### -field <a id="D3D11_DDI_RESOURCE_MISC_BUFFER_ALLOW_RAW_VIEWS"></a><a id="d3d11_ddi_resource_misc_buffer_allow_raw_views"></a><b>D3D11_DDI_RESOURCE_MISC_BUFFER_ALLOW_RAW_VIEWS</b>
 
 <dd>
-<p>The resource is a buffer on which the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createshaderresourceview.md">CreateShaderResourceView(D3D11)</a> function can create a raw-format view. A raw-format view is created through a call to the driver's <b>CreateShaderResourceView(D3D11)</b> function with the D3D11_DDI_BUFFEREX_SRV_FLAG_RAW flag set in the <b>BufferEx</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542073">D3D11DDIARG_CREATESHADERRESOURCEVIEW</a> structure. Raw-format views allow to read (and write in the case of unordered access view (UAV) objects) up to four DWORD values in one instruction.</p>
+<p>The resource is a buffer on which the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createshaderresourceview.md">CreateShaderResourceView(D3D11)</a> function can create a raw-format view. A raw-format view is created through a call to the driver's <b>CreateShaderResourceView(D3D11)</b> function with the D3D11_DDI_BUFFEREX_SRV_FLAG_RAW flag set in the <b>BufferEx</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createshaderresourceview.md">D3D11DDIARG_CREATESHADERRESOURCEVIEW</a> structure. Raw-format views allow to read (and write in the case of unordered access view (UAV) objects) up to four DWORD values in one instruction.</p>
 <p>Supported starting with Windows 7.</p>
 <p>Supported in Windows 7 and later versions.</p>
 </dd>
@@ -167,7 +167,7 @@ typedef enum D3D10_DDI_RESOURCE_MISC_FLAG {
 ### -field <a id="D3DWDDM1_3DDI_RESOURCE_MISC_TILE_POOL"></a><a id="d3dwddm1_3ddi_resource_misc_tile_pool"></a><b>D3DWDDM1_3DDI_RESOURCE_MISC_TILE_POOL</b>
 
 <dd>
-<p>The resource is a tile pool.  Must be a buffer with <a href="https://msdn.microsoft.com/library/windows/hardware/ff542008">D3D10_DDI_RESOURCE_USAGE</a> usage type <b>D3D10_DDI_USAGE_DEFAULT</b>.</p>
+<p>The resource is a tile pool.  Must be a buffer with <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-usage.md">D3D10_DDI_RESOURCE_USAGE</a> usage type <b>D3D10_DDI_USAGE_DEFAULT</b>.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
@@ -231,13 +231,13 @@ typedef enum D3D10_DDI_RESOURCE_MISC_FLAG {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createshaderresourceview.md">CreateShaderResourceView(D3D11)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542008">D3D10_DDI_RESOURCE_USAGE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-usage.md">D3D10_DDI_RESOURCE_USAGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541697">D3D10DDIARG_CREATERESOURCE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createresource.md">D3D10DDIARG_CREATERESOURCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542073">D3D11DDIARG_CREATESHADERRESOURCEVIEW</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createshaderresourceview.md">D3D11DDIARG_CREATESHADERRESOURCEVIEW</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-dispatchindirect.md">DispatchIndirect</a>

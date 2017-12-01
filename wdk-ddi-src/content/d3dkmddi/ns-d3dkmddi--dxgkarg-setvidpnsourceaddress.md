@@ -102,7 +102,7 @@ typedef struct _DXGKARG_SETVIDPNSOURCEADDRESS {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562052">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-setvidpnsourceaddress-flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.</p>
 </dd>
 
 ### -field <b>Duration</b>
@@ -142,7 +142,7 @@ typedef struct _DXGKARG_SETVIDPNSOURCEADDRESS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562052">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-setvidpnsourceaddress-flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>

@@ -7,7 +7,7 @@ old-location: audio\pcnewresourcesublist.htm
 old-project: audio
 ms.assetid: a7e1a7cf-60ea-4489-a1c2-eac5b218af8c
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcNewResourceSublist
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS PcNewResourceSublist(
 ### -param <i>OutResourceList</i> [out]
 
 <dd>
-<p>Output pointer to the resource-list object that this function creates. This parameter points to the caller-allocated pointer variable into which the function outputs the pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536976">IResourceList</a> object. Specify a valid, non-<b>NULL</b> pointer value for this parameter.</p>
+<p>Output pointer to the resource-list object that this function creates. This parameter points to the caller-allocated pointer variable into which the function outputs the pointer to the <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> object. Specify a valid, non-<b>NULL</b> pointer value for this parameter.</p>
 </dd>
 
 ### -param <i>OuterUnknown</i> [in, optional]
@@ -73,13 +73,13 @@ NTSTATUS PcNewResourceSublist(
 ### -param <i>PoolType</i> [in]
 
 <dd>
-<p>Specifies the type of pool from which the object is to be allocated. This is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a> enumeration value.</p>
+<p>Specifies the type of pool from which the object is to be allocated. This is a <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> enumeration value.</p>
 </dd>
 
 ### -param <i>ParentList</i> [in]
 
 <dd>
-<p>Pointer to the resource list from which the child list will be created. The resource list has an <a href="https://msdn.microsoft.com/library/windows/hardware/ff536976">IResourceList</a> interface.</p>
+<p>Pointer to the resource list from which the child list will be created. The resource list has an <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> interface.</p>
 </dd>
 
 ### -param <i>MaximumEntries</i> [in]
@@ -95,13 +95,7 @@ NTSTATUS PcNewResourceSublist(
 ## -remarks
 <p>This function creates an empty resource sublist.</p>
 
-<p>An adapter driver typically uses the <b>PcNewResourceSublist</b> function in combination with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536981">IResourceList::AddEntryFromParent</a> method to take the original list of resources that it received from the system and divide them up into sublists that it assigns to its various subdevices.</p>
-
-<p>The <i>OutResourceList</i>, <i>OuterUnknown</i>, and <i>ParentList</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
-
-<p>This function creates an empty resource sublist.</p>
-
-<p>An adapter driver typically uses the <b>PcNewResourceSublist</b> function in combination with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536981">IResourceList::AddEntryFromParent</a> method to take the original list of resources that it received from the system and divide them up into sublists that it assigns to its various subdevices.</p>
+<p>An adapter driver typically uses the <b>PcNewResourceSublist</b> function in combination with the <a href="audio.iresourcelist_addentryfromparent">IResourceList::AddEntryFromParent</a> method to take the original list of resources that it received from the system and divide them up into sublists that it assigns to its various subdevices.</p>
 
 <p>The <i>OutResourceList</i>, <i>OuterUnknown</i>, and <i>ParentList</i> parameters follow the <a href="NULL">reference-counting conventions for COM objects</a>.</p>
 
@@ -158,15 +152,15 @@ NTSTATUS PcNewResourceSublist(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536976">IResourceList</a>
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a>
+<a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536981">IResourceList::AddEntryFromParent</a>
+<a href="audio.iresourcelist_addentryfromparent">IResourceList::AddEntryFromParent</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcNewResourceSublist function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcNewResourceSublist function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

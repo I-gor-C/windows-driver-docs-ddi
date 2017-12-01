@@ -57,7 +57,7 @@ typedef struct _RemoveRADIUSServer_IN {
 ### -field <b>RADIUSIPAddress</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that specifies the address of the RADIUS server to remove.</p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that specifies the address of the RADIUS server to remove.</p>
 </dd>
 </dl>
 
@@ -81,10 +81,10 @@ typedef struct _RemoveRADIUSServer_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564008">RemovePersistentLogin_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--removepersistentlogin-out.md">RemovePersistentLogin_OUT</a>
 </dt>
 </dl>
 <p> </p>

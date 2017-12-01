@@ -103,7 +103,7 @@ typedef enum _DXVA_VideoChromaSubsampling {
 ### -field <a id="DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes"></a><a id="dxva_videochromasubsampling_vertically_alignedchromaplanes"></a><a id="DXVA_VIDEOCHROMASUBSAMPLING_VERTICALLY_ALIGNEDCHROMAPLANES"></a><b>DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b>
 
 <dd>
-<p>Specifies that the Pb and Pr (or Cb and Cr) planes have the same phase alignment. This enumerator can only be set to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure if the data is vertically cosited.</p>
+<p>Specifies that the Pb and Pr (or Cb and Cr) planes have the same phase alignment. This enumerator can only be set to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a> structure if the data is vertically cosited.</p>
 </dd>
 
 ### -field <a id="DXVA_VideoChromaSubsampling_MPEG2"></a><a id="dxva_videochromasubsampling_mpeg2"></a><a id="DXVA_VIDEOCHROMASUBSAMPLING_MPEG2"></a><b>DXVA_VideoChromaSubsampling_MPEG2</b>
@@ -140,15 +140,7 @@ typedef enum _DXVA_VideoChromaSubsampling {
 </dl>
 
 ## -remarks
-<p>The enumerators of DXVA_VideoChromaSubsampling can be ORed together to create a value in the <b>VideoChromaSubsampling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure.</p>
-
-<p>Cosite variations indicate that the chroma samples are aligned with the luma samples. Typically, 4:2:0 data with chroma is aligned in one or more directions with the luma data. Note that 4:4:4, 4:2:2 and 4:1:1 data are always cosited in both directions.</p>
-
-<p>The enumerators of DXVA_VideoChromaSubsampling can be ORed together to create a value in the <b>VideoChromaSubsampling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure.</p>
-
-<p>Cosite variations indicate that the chroma samples are aligned with the luma samples. Typically, 4:2:0 data with chroma is aligned in one or more directions with the luma data. Note that 4:4:4, 4:2:2 and 4:1:1 data are always cosited in both directions.</p>
-
-<p>The enumerators of DXVA_VideoChromaSubsampling can be ORed together to create a value in the <b>VideoChromaSubsampling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure.</p>
+<p>The enumerators of DXVA_VideoChromaSubsampling can be ORed together to create a value in the <b>VideoChromaSubsampling</b> member of the <a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a> structure.</p>
 
 <p>Cosite variations indicate that the chroma samples are aligned with the luma samples. Typically, 4:2:0 data with chroma is aligned in one or more directions with the luma data. Note that 4:4:4, 4:2:2 and 4:1:1 data are always cosited in both directions.</p>
 
@@ -177,7 +169,7 @@ typedef enum _DXVA_VideoChromaSubsampling {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a>
+<a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a>
 </dt>
 </dl>
 <p> </p>

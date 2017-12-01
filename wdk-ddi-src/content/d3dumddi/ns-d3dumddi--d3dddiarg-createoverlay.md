@@ -65,7 +65,7 @@ typedef struct _D3DDDIARG_CREATEOVERLAY {
 ### -field <b>OverlayInfo</b>
 
 <dd>
-<p>[in] A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544621">D3DDDI_OVERLAYINFO</a> structure that describes information about the overlay. </p>
+<p>[in] A pointer to the <a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlayinfo.md">D3DDDI_OVERLAYINFO</a> structure that describes information about the overlay. </p>
 </dd>
 
 ### -field <b>hOverlay</b>
@@ -106,7 +106,7 @@ typedef struct _D3DDDIARG_CREATEOVERLAY {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createoverlay.md">CreateOverlay</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544621">D3DDDI_OVERLAYINFO</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlayinfo.md">D3DDDI_OVERLAYINFO</a>
 </dt>
 </dl>
 <p> </p>

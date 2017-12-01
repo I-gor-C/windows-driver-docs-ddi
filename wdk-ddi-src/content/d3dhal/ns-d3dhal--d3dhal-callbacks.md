@@ -300,7 +300,7 @@ typedef struct _D3DHAL_CALLBACKS {
 </dl>
 
 ## -remarks
-<p>The driver allocates this structure and sets appropriate values in all members. The driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a> function returns a pointer to this structure in the <b>lpD3DHALCallbacks</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a> structure.</p>
+<p>The driver allocates this structure and sets appropriate values in all members. The driver's <a href="display.drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a> function returns a pointer to this structure in the <b>lpD3DHALCallbacks</b> member of the <a href="display.dd_halinfo">DD_HALINFO</a> structure.</p>
 
 <p>Texture management is now handled though opcodes that are managed in the driver's implementation of <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>.</p>
 
@@ -330,13 +330,13 @@ typedef struct _D3DHAL_CALLBACKS {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544723">D3DHAL_CALLBACKS3</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-callbacks3.md">D3DHAL_CALLBACKS3</a>
 </dt>
 <dt>
 <a href="display.ddgetdriverinfo">DdGetDriverInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a>
+<a href="display.drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a>
 </dt>
 </dl>
 <p> </p>

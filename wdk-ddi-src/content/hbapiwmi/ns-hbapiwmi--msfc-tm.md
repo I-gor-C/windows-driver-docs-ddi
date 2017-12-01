@@ -137,7 +137,7 @@ typedef struct _MSFC_TM {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562965">MSFC_TM WMI Class</a>
+<a href="storage.msfc_tm_wmi_class">MSFC_TM WMI Class</a>
 </dt>
 </dl>
 <p> </p>

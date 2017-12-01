@@ -81,7 +81,7 @@ HRESULT BindPrinter(
 ### -param <a id="OEMPT_DEFAULT"></a><a id="oempt_default"></a>OEMPT_DEFAULT
 
 <dd>
-<p>The system places a binary encoding (a binary large object [BLOB]) of the private <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure into the print ticket in a conversion of a DEVMODEW to a print ticket. </p>
+<p>The system places a binary encoding (a binary large object [BLOB]) of the private <a href="display.devmodew">DEVMODEW</a> structure into the print ticket in a conversion of a DEVMODEW to a print ticket. </p>
 </dd>
 
 ### -param <a id="OEMPT_NOSNAPSHOT"></a><a id="oempt_nosnapshot"></a>OEMPT_NOSNAPSHOT
@@ -122,12 +122,6 @@ HRESULT BindPrinter(
 
 <p>An <b>IPrintTicketProvider</b> object does not have to be able to bind more than once. The print ticket manager always uses different <b>IPrintTicketProvider</b> object instances for binding to different devices. All resources that are acquired in a successful call to <code>IPrintTicketProvider::BindPrinter</code> should be released when the reference count of an <b>IPrintTicketProvider</b> object is zero. (Note that the provider should not close the handle that was passed into the call to <b>BindPrinter</b>). The print ticket manager might create multiple providers for the same device, in different versions, if multiple versions are supported.</p>
 
-<p>The plug-in is responsible for allocating memory for the array that is pointed to by the <i>ppNamespaces</i> parameter and for the namespace URI strings. The array should be allocated by using the <b>CoTaskMemAlloc</b> function; the namespace strings should be allocated by using the <b>SysAllocString</b> function. Both of these functions are described in the Microsoft Windows SDK documentation. The array that is pointed to by the <i>ppNamespaces</i> parameter is not required to contain the namespaces for the Print Schema Keywords or the Print Schema Framework.</p>
-
-<p>Binding to a device enables the provider to cache certain objects and handles that it will need for future print ticket or print capabilities services on that device. For example, the printer handle in <i>hPrinter</i> can be cached. <code>IPrintOemPrintTicketProvider::BindPrinter</code> is guaranteed to be called only once. </p>
-
-<p>An <b>IPrintTicketProvider</b> object does not have to be able to bind more than once. The print ticket manager always uses different <b>IPrintTicketProvider</b> object instances for binding to different devices. All resources that are acquired in a successful call to <code>IPrintTicketProvider::BindPrinter</code> should be released when the reference count of an <b>IPrintTicketProvider</b> object is zero. (Note that the provider should not close the handle that was passed into the call to <b>BindPrinter</b>). The print ticket manager might create multiple providers for the same device, in different versions, if multiple versions are supported.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -155,13 +149,13 @@ HRESULT BindPrinter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553161">IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket</a>
+<a href="print.iprintoemprintticketprovider_convertdevmodetoprintticket">IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553167">IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode</a>
+<a href="print.iprintoemprintticketprovider_convertprinttickettodevmode">IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553170">IPrintOemPrintTicketProvider::GetSupportedVersions</a>
+<a href="print.iprintoemprintticketprovider_getsupportedversions">IPrintOemPrintTicketProvider::GetSupportedVersions</a>
 </dt>
 </dl>
 <p> </p>

@@ -82,7 +82,7 @@ typedef struct _D3DKM_TRANSPARENTBLTFLAGS {
 </dl>
 
 ## -remarks
-<p>For more information about how to use the members of this structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561091">DXGK_GDIARG_TRANSPARENTBLT</a>.</p>
+<p>For more information about how to use the members of this structure, see <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-transparentblt.md">DXGK_GDIARG_TRANSPARENTBLT</a>.</p>
 
 ## -requirements
 <table>
@@ -109,7 +109,7 @@ typedef struct _D3DKM_TRANSPARENTBLTFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561091">DXGK_GDIARG_TRANSPARENTBLT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-transparentblt.md">DXGK_GDIARG_TRANSPARENTBLT</a>
 </dt>
 </dl>
 <p> </p>

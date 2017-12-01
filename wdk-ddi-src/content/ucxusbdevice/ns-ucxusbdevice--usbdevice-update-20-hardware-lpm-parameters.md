@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains parameters for a request to update USB 2.0 link power management (LPM). UCX passes this structure in the  <a href="https://msdn.microsoft.com/library/windows/hardware/mt187846">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
+<p>Contains parameters for a request to update USB 2.0 link power management (LPM). UCX passes this structure in the  <a href="buses.evt_ucx_usbdevice_update">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
 
 
 ## -syntax
@@ -124,16 +124,16 @@ typedef struct _USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188027">ROOTHUB_20PORT_INFO</a>
+<a href="buses._roothub_20port_info">ROOTHUB_20PORT_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188080">USBDEVICE_UPDATE</a>
+<a href="buses._usbdevice_update">USBDEVICE_UPDATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188083">USBDEVICE_UPDATE_FLAGS</a>
+<a href="buses._usbdevice_update_flags">USBDEVICE_UPDATE_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188082">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
+<a href="buses._usbdevice_update_failure_flags">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

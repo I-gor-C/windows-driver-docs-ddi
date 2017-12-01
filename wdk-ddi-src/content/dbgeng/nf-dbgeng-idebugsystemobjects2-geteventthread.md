@@ -7,7 +7,7 @@ old-location: debugger\geteventthread.htm
 old-project: debugger
 ms.assetid: 7a28c9bd-480e-4864-b7ff-9ff0dc1d04ad
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects2, GetEventThread, IDebugSystemObjects2::GetEventThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,10 +69,6 @@ HRESULT GetEventThread(
 <p> </p>
 
 ## -remarks
-<p>In kernel-mode debugging, the engine thread ID for the virtual thread representing the processor on which the event occurred is returned.</p>
-
-<p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details about debugger engine events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
-
 <p>In kernel-mode debugging, the engine thread ID for the virtual thread representing the processor on which the event occurred is returned.</p>
 
 <p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details about debugger engine events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>

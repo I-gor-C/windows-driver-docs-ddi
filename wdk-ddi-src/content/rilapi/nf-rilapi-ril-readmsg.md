@@ -7,7 +7,7 @@ old-location: netvista\ril_readmsg.htm
 old-project: netvista
 ms.assetid: a38c089b-a5f4-4fd2-ab94-ead53228c5e9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_ReadMsg
 ms.prod: windows-hardware
 ms.technology: windows-devices

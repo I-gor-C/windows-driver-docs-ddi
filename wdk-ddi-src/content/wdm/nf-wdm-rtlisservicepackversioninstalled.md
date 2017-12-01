@@ -7,7 +7,7 @@ old-location: kernel\rtlisservicepackversioninstalled.htm
 old-project: kernel
 ms.assetid: 1314ffb5-e6e2-4c22-bc67-388da3bcbe79
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlIsServicePackVersionInstalled
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -220,15 +220,7 @@ BOOLEAN RtlIsServicePackVersionInstalled(
 ## -remarks
 <p>The <b>RtlIsServicePackVersionInstalled</b> routine compares the version that the <i>Version</i> parameter specifies to the version of the currently running Windows operating system.</p>
 
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561954">RtlIsNtDdiVersionAvailable</a> routine to determine if a major version of Windows is running.</p>
-
-<p>For more information about <b>RtlIsServicePackVersionInstalled</b> and <b>RtlIsNtDdiVersionAvailable</b>, see <a href="https://msdn.microsoft.com/7d02148d-502d-4b49-9c56-9fff498dd2af">Header File Changes in the Windows Driver Kit</a>.</p>
-
-<p>The Windows kernel implements <b>RtlIsServicePackVersionInstalled</b> only in Windows Vista and later versions of Windows. However, a compatibility library, Rtlver.lib, implements a version of <b>RtlIsServicePackVersionInstalled</b> that runs in Windows 2000 and later versions of Windows. For kernel-mode drivers that include the Wdm.h header file, calls to <b>RtlIsServicePackVersionInstalled</b> go to the version of this routine that is implemented in Rtlver.lib.</p>
-
-<p>The <b>RtlIsServicePackVersionInstalled</b> routine compares the version that the <i>Version</i> parameter specifies to the version of the currently running Windows operating system.</p>
-
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561954">RtlIsNtDdiVersionAvailable</a> routine to determine if a major version of Windows is running.</p>
+<p>Use the <a href="..\wdm\nf-wdm-rtlisntddiversionavailable.md">RtlIsNtDdiVersionAvailable</a> routine to determine if a major version of Windows is running.</p>
 
 <p>For more information about <b>RtlIsServicePackVersionInstalled</b> and <b>RtlIsNtDdiVersionAvailable</b>, see <a href="https://msdn.microsoft.com/7d02148d-502d-4b49-9c56-9fff498dd2af">Header File Changes in the Windows Driver Kit</a>.</p>
 
@@ -287,15 +279,15 @@ BOOLEAN RtlIsServicePackVersionInstalled(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559941">PsGetVersion</a>
+<a href="..\wdm\nf-wdm-psgetversion.md">PsGetVersion</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561954">RtlIsNtDdiVersionAvailable</a>
+<a href="..\wdm\nf-wdm-rtlisntddiversionavailable.md">RtlIsNtDdiVersionAvailable</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563026">RtlVerifyVersionInfo</a>
+<a href="..\wdm\nf-wdm-rtlverifyversioninfo.md">RtlVerifyVersionInfo</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlIsServicePackVersionInstalled routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlIsServicePackVersionInstalled routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

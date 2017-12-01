@@ -96,7 +96,7 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 </dl>
 <p> </p>

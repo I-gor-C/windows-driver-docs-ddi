@@ -7,7 +7,7 @@ old-location: debugger\getcurrentprocessdataoffset.htm
 old-project: debugger
 ms.assetid: a71190ac-0368-40bd-a19d-82a27986a9b3
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects3, GetCurrentProcessDataOffset, IDebugSystemObjects3::GetCurrentProcessDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,13 +69,7 @@ HRESULT GetCurrentProcessDataOffset(
 <p> </p>
 
 ## -remarks
-<p>In user-mode debugging, the location returned is of the process environment block (PEB) for the current process.  This is the same location returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff545839">GetCurrentProcessPeb</a>.</p>
-
-<p>In kernel-mode debugging, the location returned is of the KPROCESS structure for the system process in which the last event occurred.</p>
-
-<p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details about the PEB and KPROCESS structures, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.</p>
-
-<p>In user-mode debugging, the location returned is of the process environment block (PEB) for the current process.  This is the same location returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff545839">GetCurrentProcessPeb</a>.</p>
+<p>In user-mode debugging, the location returned is of the process environment block (PEB) for the current process.  This is the same location returned by <a href="debugger.getcurrentprocesspeb">GetCurrentProcessPeb</a>.</p>
 
 <p>In kernel-mode debugging, the location returned is of the KPROCESS structure for the system process in which the last event occurred.</p>
 

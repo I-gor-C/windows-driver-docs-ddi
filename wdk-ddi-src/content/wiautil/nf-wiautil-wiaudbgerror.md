@@ -75,8 +75,6 @@ inline void __stdcall wiauDbgError(
 ## -remarks
 <p>The <b>wiauDbgError</b> typically is used to display an error message with no data, such as in the following example:</p>
 
-<p>The <b>wiauDbgError</b> typically is used to display an error message with no data, such as in the following example:</p>
-
 ## -requirements
 <table>
 <tr>
@@ -112,16 +110,16 @@ inline void __stdcall wiauDbgError(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549627">wiauDbgDump</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgdump.md">wiauDbgDump</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549637">wiauDbgErrorHr</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550161">wiauDbgTrace</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550163">wiauDbgWarning</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
 </dt>
 </dl>
 <p> </p>

@@ -57,7 +57,7 @@ NTSTATUS D3DKMTOpenAdapterFromGdiDisplayName(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548113">D3DKMT_OPENADAPTERFROMGDIDISPLAYNAME</a> structure that describes the parameters that are required to perform the mapping.</p>
+<p> A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openadapterfromgdidisplayname.md">D3DKMT_OPENADAPTERFROMGDIDISPLAYNAME</a> structure that describes the parameters that are required to perform the mapping.</p>
 </dd>
 </dl>
 
@@ -74,8 +74,6 @@ NTSTATUS D3DKMTOpenAdapterFromGdiDisplayName(
 <p>This function might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.</p>
 
 ## -remarks
-<p>A graphics adapter corresponds to a video card. A monitor output corresponds to a head on a video card. A system with a single video card contains only one adapter. However, if the video card supports multiple heads, it supports outputting to multiple monitors.</p>
-
 <p>A graphics adapter corresponds to a video card. A monitor output corresponds to a head on a video card. A system with a single video card contains only one adapter. However, if the video card supports multiple heads, it supports outputting to multiple monitors.</p>
 
 ## -requirements
@@ -133,7 +131,7 @@ NTSTATUS D3DKMTOpenAdapterFromGdiDisplayName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548113">D3DKMT_OPENADAPTERFROMGDIDISPLAYNAME</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openadapterfromgdidisplayname.md">D3DKMT_OPENADAPTERFROMGDIDISPLAYNAME</a>
 </dt>
 </dl>
 <p> </p>

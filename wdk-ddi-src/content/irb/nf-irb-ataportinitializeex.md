@@ -83,17 +83,9 @@ ULONG AtaPortInitializeEx(
 
 <p>While starting the adapter device, the miniport driver routine <b><i>AtaAdapterControl</i></b> will be called by the port driver with control action <b>IdeStart</b>.</p>
 
-<p>When the ATA port driver is processing a channel device start request, the miniport driver routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a> is called for each channel on the controller to determine whether it is enabled.</p>
+<p>When the ATA port driver is processing a channel device start request, the miniport driver routine <a href="storage.atacontrollerchannelenabled">AtaControllerChannelEnabled</a> is called for each channel on the controller to determine whether it is enabled.</p>
 
-<p>After the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a> routine determines which channels are enabled, the ATA port driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a> for this channel. </p>
-
-<p>The <b>AtaPortInitializeEx</b> routine initializes key data structures that are used by the port and miniport drivers. It also starts the initialization of the controller's channels. The following sequence describes the principal actions taken by this routine:</p>
-
-<p>While starting the adapter device, the miniport driver routine <b><i>AtaAdapterControl</i></b> will be called by the port driver with control action <b>IdeStart</b>.</p>
-
-<p>When the ATA port driver is processing a channel device start request, the miniport driver routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a> is called for each channel on the controller to determine whether it is enabled.</p>
-
-<p>After the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a> routine determines which channels are enabled, the ATA port driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a> for this channel. </p>
+<p>After the <a href="storage.atacontrollerchannelenabled">AtaControllerChannelEnabled</a> routine determines which channels are enabled, the ATA port driver calls <a href="storage.atachannelinitroutine">AtaChannelInitRoutine</a> for this channel. </p>
 
 ## -requirements
 <table>
@@ -132,16 +124,16 @@ ULONG AtaPortInitializeEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
+<a href="storage.atachannelinitroutine">AtaChannelInitRoutine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a>
+<a href="storage.atacontrollerchannelenabled">AtaControllerChannelEnabled</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>
+<a href="storage.driverentry">DriverEntry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559036">IDE_CONTROLLER_CONFIGURATION</a>
+<a href="..\irb\ns-irb--ide-controller-configuration.md">IDE_CONTROLLER_CONFIGURATION</a>
 </dt>
 </dl>
 <p> </p>

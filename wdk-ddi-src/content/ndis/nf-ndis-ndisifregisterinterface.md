@@ -7,7 +7,7 @@ old-location: netvista\ndisifregisterinterface.htm
 old-project: netvista
 ms.assetid: d0b0ada7-afb1-4cb7-ada6-7c5c7abe7d19
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisIfRegisterInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,7 +72,7 @@ NDIS_STATUS NdisIfRegisterInterface(
 
 <dd>
 <p>The caller-supplied 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value that is associated with the
+     <a href="netvista.net_luid">NET_LUID</a> value that is associated with the
      interface. The interface provider used the 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a> macro to create this
      NET_LUID value. The interface provider should recover the NET_LUID value from persistent storage after
@@ -92,7 +92,7 @@ NDIS_STATUS NdisIfRegisterInterface(
 
 <dd>
 <p>A pointer to a caller-allocated 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568743">NET_IF_INFORMATION</a> structure that
+     <a href="..\ndis\ns-ndis--net-if-information.md">NET_IF_INFORMATION</a> structure that
      provides information about the interface. This structure contains information that remains constant
      while the interface exists.</p>
 </dd>
@@ -133,7 +133,7 @@ NDIS_STATUS NdisIfRegisterInterface(
     interface provider calls the 
     <b>NdisIfRegisterInterface</b> function whenever an interface is started (or detected) and the interface's
     
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> is known.</p>
+    <a href="netvista.net_luid">NET_LUID</a> is known.</p>
 
 <p>The method for detecting or starting an interface is application dependent. For example, if an LBFO
     MUX intermediate driver is an interface provider, that driver might register an internal interface when
@@ -144,46 +144,7 @@ NDIS_STATUS NdisIfRegisterInterface(
 <p>An interface provider can put information about an interface in persistent storage and restore the
     interface as required for the particular application. For example, the provider can store additional
     information about the interface with the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> and it can reregister the interface after
-    the computer restarts.</p>
-
-<p>If 
-    <b>NdisIfRegisterInterface</b> is successful, NDIS adds the interface to the list of known interfaces and
-    allocates a new interface index for this interface. Interface providers should register both enabled and
-    disabled interfaces, wherever possible. All enabled interfaces 
-    must be registered.</p>
-
-<p>NDIS might not return the same interface index every time a provider registers an interface with the
-    same NET_LUID value. For example, NDIS does not necessarily assign the same interface index when an
-    interface is reregistered after a computer restarts or when the interface is deregistered and
-    re-registered. The interface index value zero is reserved, and NDIS does not assign it to any
-    interface.</p>
-
-<p>To indicate that an interface should be removed from the list of known interfaces on the computer, an
-    interface provider calls the 
-    <a href="..\ndis\nf-ndis-ndisifderegisterinterface.md">
-    NdisIfDeregisterInterface</a> function, for example, because the interface has been uninstalled. .</p>
-
-<p>NDIS interface providers call the 
-    <b>NdisIfRegisterInterface</b> function to register a network interface. A call to this function does not
-    imply that the interface is active.</p>
-
-<p>Whenever a computer restarts, NDIS starts with an empty list of registered network interfaces. An
-    interface provider calls the 
-    <b>NdisIfRegisterInterface</b> function whenever an interface is started (or detected) and the interface's
-    
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> is known.</p>
-
-<p>The method for detecting or starting an interface is application dependent. For example, if an LBFO
-    MUX intermediate driver is an interface provider, that driver might register an internal interface when
-    NDIS calls the driver's 
-    <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a> function
-    for the first underlying miniport adapter.</p>
-
-<p>An interface provider can put information about an interface in persistent storage and restore the
-    interface as required for the particular application. For example, the provider can store additional
-    information about the interface with the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> and it can reregister the interface after
+    <a href="netvista.net_luid">NET_LUID</a> and it can reregister the interface after
     the computer restarts.</p>
 
 <p>If 
@@ -256,7 +217,7 @@ NDIS_STATUS NdisIfRegisterInterface(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547949">Irql_Interfaces_Function</a>
+<a href="devtest.ndis_irql_interfaces_function">Irql_Interfaces_Function</a>
 </td>
 </tr>
 </table>
@@ -267,16 +228,16 @@ NDIS_STATUS NdisIfRegisterInterface(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562700">NdisIfDeregisterInterface</a>
+<a href="..\ndis\nf-ndis-ndisifderegisterinterface.md">NdisIfDeregisterInterface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562716">NdisIfRegisterProvider</a>
+<a href="..\ndis\nf-ndis-ndisifregisterprovider.md">NdisIfRegisterProvider</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568743">NET_IF_INFORMATION</a>
+<a href="..\ndis\ns-ndis--net-if-information.md">NET_IF_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
+<a href="netvista.net_luid">NET_LUID</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
@@ -284,4 +245,4 @@ NDIS_STATUS NdisIfRegisterInterface(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfRegisterInterface function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfRegisterInterface function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

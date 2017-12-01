@@ -68,7 +68,7 @@ __checkReturn HRESULT  APIENTRY DrawPrimitive(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543057">D3DDDIARG_DRAWPRIMITIVE</a> structure that describes the primitive to draw.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawprimitive.md">D3DDDIARG_DRAWPRIMITIVE</a> structure that describes the primitive to draw.</p>
 </dd>
 
 ### -param <i>pFlagBuffer</i> [in]
@@ -83,9 +83,7 @@ __checkReturn HRESULT  APIENTRY DrawPrimitive(
 <p><b>DrawPrimitive</b> returns S_OK or an appropriate error result if the primitive is not successfully drawn.</p>
 
 ## -remarks
-<p>When the Microsoft Direct3D runtime specifies triangle-edge flags in the value that the <i>pFlagBuffer</i> parameter points to, the runtime also specifies to draw one or more triangles (that is, the runtime specifies the D3DPT_TRIANGLEFAN value in the <b>PrimitiveType</b> member and from 0x00000001 to 0xFFFFFFFF in the <b>PrimitiveCount</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543057">D3DDDIARG_DRAWPRIMITIVE</a> structure that the <i>pData</i> parameter points to).</p>
-
-<p>When the Microsoft Direct3D runtime specifies triangle-edge flags in the value that the <i>pFlagBuffer</i> parameter points to, the runtime also specifies to draw one or more triangles (that is, the runtime specifies the D3DPT_TRIANGLEFAN value in the <b>PrimitiveType</b> member and from 0x00000001 to 0xFFFFFFFF in the <b>PrimitiveCount</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543057">D3DDDIARG_DRAWPRIMITIVE</a> structure that the <i>pData</i> parameter points to).</p>
+<p>When the Microsoft Direct3D runtime specifies triangle-edge flags in the value that the <i>pFlagBuffer</i> parameter points to, the runtime also specifies to draw one or more triangles (that is, the runtime specifies the D3DPT_TRIANGLEFAN value in the <b>PrimitiveType</b> member and from 0x00000001 to 0xFFFFFFFF in the <b>PrimitiveCount</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawprimitive.md">D3DDDIARG_DRAWPRIMITIVE</a> structure that the <i>pData</i> parameter points to).</p>
 
 ## -requirements
 <table>
@@ -122,10 +120,10 @@ __checkReturn HRESULT  APIENTRY DrawPrimitive(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543057">D3DDDIARG_DRAWPRIMITIVE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawprimitive.md">D3DDDIARG_DRAWPRIMITIVE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

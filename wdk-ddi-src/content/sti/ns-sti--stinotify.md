@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The STINOTIFY structure is used as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543796">IStillImage::LaunchApplicationForDevice</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff543751">IStiDevice::GetLastNotificationData</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543821">IStiUSD::GetNotificationData</a> methods.</p>
+<p>The STINOTIFY structure is used as a parameter to the <a href="image.istillimage_launchapplicationfordevice">IStillImage::LaunchApplicationForDevice</a>, <a href="image.istidevice_getlastnotificationdata">IStiDevice::GetLastNotificationData</a>, and <a href="image.istiusd_getnotificationdata">IStiUSD::GetNotificationData</a> methods.</p>
 
 
 ## -syntax

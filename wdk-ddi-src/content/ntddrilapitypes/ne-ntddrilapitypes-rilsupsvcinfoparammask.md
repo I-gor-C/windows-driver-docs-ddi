@@ -7,7 +7,7 @@ old-location: netvista\rilsupsvcinfoparammask.htm
 old-project: netvista
 ms.assetid: d3a4780f-6fd4-40d3-a629-5dad31720506
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: stream\lamp_capabilities_white.htm
 old-project: stream
 ms.assetid: F407B953-8B03-4053-A5F4-3E96E9F9645E
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: LAMP_CAPABILITIES_WHITE, LAMP_CAPABILITIES_WHITE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct LAMP_CAPABILITIES_WHITE {
 ### -field <b>IsLightIntensityAdjustable</b>
 
 <dd>
-<p>If this field evaluates <b>TRUE</b>, a client can get/set light intensity by calling <a href="stream.ioctl_lamp_get__intensity_white">IOCTL_LAMP_GET_INTENSITY_WHITE</a>  and <a href="https://msdn.microsoft.com/library/windows/hardware/dn925078">IOCTL_LAMP_SET_INTENSITY_WHITE</a>.</p>
+<p>If this field evaluates <b>TRUE</b>, a client can get/set light intensity by calling <a href="stream.ioctl_lamp_get__intensity_white">IOCTL_LAMP_GET_INTENSITY_WHITE</a>  and <a href="..\lamp\ni-lamp-ioctl-lamp-set-intensity-white.md">IOCTL_LAMP_SET_INTENSITY_WHITE</a>.</p>
 </dd>
 </dl>
 

@@ -7,7 +7,7 @@ old-location: wdf\onworkitem.htm
 old-project: wdf
 ms.assetid: 4CCA1F5E-C92E-4D8D-A8C0-B8E9A0F29703
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: UNICODE_STRING, UNICODE_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ typedef void WUDF_WORKITEM_FUNCTION;
 ### -param <i>pWorkItem</i> [in]
 
 <dd>
-<p>A pointer to an  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406734">IWDFWorkItem</a> interface.</p>
+<p>A pointer to an  <a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a> interface.</p>
 </dd>
 </dl>
 
@@ -72,25 +72,11 @@ typedef void WUDF_WORKITEM_FUNCTION;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>To register an <i>OnWorkItem</i> callback function, your driver must place the callback function's address in a <a href="https://msdn.microsoft.com/library/windows/hardware/hh464094">WUDF_WORKITEM_CONFIG</a> structure before calling <a href="wdf.iwdfdevice3_createworkitem">IWDFDevice3::CreateWorkItem</a>.</p>
+<p>To register an <i>OnWorkItem</i> callback function, your driver must place the callback function's address in a <a href="..\wudfworkitem\ns-wudfworkitem--wudf-workitem-config.md">WUDF_WORKITEM_CONFIG</a> structure before calling <a href="wdf.iwdfdevice3_createworkitem">IWDFDevice3::CreateWorkItem</a>.</p>
 
 <p>Typically, a driver's <i>OnWorkItem</i> callback function performs tasks that are specified by information that the driver stored in the context memory of a work-item object.</p>
 
-<p>The driver must not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a> from the <i>OnWorkItem</i> callback function.</p>
-
-<p>For more information, see <a href="wdf.using_workitems">Using Work Items</a>.</p>
-
-<p>The function type is declared in <i>Wudfworkitem.h</i>, as follows.</p>
-
-<p>To define an <i>OnWorkItem</i> callback function that is named <i>MyWorkItem</i>, you must first provide a function declaration that SDV and other verification tools require, as follows:</p>
-
-<p>Then, implement your callback function as follows:</p>
-
-<p>To register an <i>OnWorkItem</i> callback function, your driver must place the callback function's address in a <a href="https://msdn.microsoft.com/library/windows/hardware/hh464094">WUDF_WORKITEM_CONFIG</a> structure before calling <a href="wdf.iwdfdevice3_createworkitem">IWDFDevice3::CreateWorkItem</a>.</p>
-
-<p>Typically, a driver's <i>OnWorkItem</i> callback function performs tasks that are specified by information that the driver stored in the context memory of a work-item object.</p>
-
-<p>The driver must not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a> from the <i>OnWorkItem</i> callback function.</p>
+<p>The driver must not call <a href="wdf.iwdfobject_deletewdfobject">IWDFObject::DeleteWdfObject</a> from the <i>OnWorkItem</i> callback function.</p>
 
 <p>For more information, see <a href="wdf.using_workitems">Using Work Items</a>.</p>
 
@@ -146,12 +132,12 @@ typedef void WUDF_WORKITEM_FUNCTION;
 <a href="wdf.iwdfdevice3_createworkitem">IWDFDevice3::CreateWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464094">WUDF_WORKITEM_CONFIG</a>
+<a href="..\wudfworkitem\ns-wudfworkitem--wudf-workitem-config.md">WUDF_WORKITEM_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a>
+<a href="wdf.iwdfobject_deletewdfobject">IWDFObject::DeleteWdfObject</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_WORKITEM_FUNCTION callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_WORKITEM_FUNCTION callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

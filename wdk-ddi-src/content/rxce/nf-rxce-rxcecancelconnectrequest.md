@@ -82,8 +82,6 @@ NTSTATUS RxCeCancelConnectRequest(
 ## -remarks
 <p><b>RXCE_CONNECTION_INFORMATION</b> is a typedef for a <b>TDI_CONNECTION_INFORMATION</b> structure. </p>
 
-<p><b>RXCE_CONNECTION_INFORMATION</b> is a typedef for a <b>TDI_CONNECTION_INFORMATION</b> structure. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -119,7 +117,7 @@ NTSTATUS RxCeCancelConnectRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554321">RxCeTearDownConnection</a>
+<a href="..\rxce\nf-rxce-rxceteardownconnection.md">RxCeTearDownConnection</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>

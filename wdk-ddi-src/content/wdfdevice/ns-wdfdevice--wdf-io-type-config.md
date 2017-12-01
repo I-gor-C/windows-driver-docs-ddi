@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_type_config.htm
 old-project: wdf
 ms.assetid: EB3CEC0E-5635-410D-B8D2-031FDB0557C1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_IO_TYPE_CONFIG, WDF_IO_TYPE_CONFIG, *PWDF_IO_TYPE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,17 +68,17 @@ typedef struct _WDF_IO_TYPE_CONFIG {
 ### -field <b>ReadWriteIoType</b>
 
 <dd>
-<p><b>KMDF </b>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that the driver will use to access data buffers 
+<p><b>KMDF </b>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-device-io-type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that the driver will use to access data buffers 
     that it receives for read and write requests.
 </p>
-<p><b>UMDF </b>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use to access data buffers of read and write requests. Valid values include <b>WdfDeviceIoBuffered</b>           and <b>WdfDeviceIoDirect</b>.</p>
+<p><b>UMDF </b>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-device-io-type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use to access data buffers of read and write requests. Valid values include <b>WdfDeviceIoBuffered</b>           and <b>WdfDeviceIoDirect</b>.</p>
 </dd>
 
 ### -field <b>DeviceControlIoType</b>
 
 <dd>
 <p>This member does not apply to KMDF.</p>
-<p><b>UMDF </b>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use for the data 
+<p><b>UMDF </b>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-device-io-type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use for the data 
     buffers of IOCTL requests. Valid values include <b>WdfDeviceIoBuffered</b>           and <b>WdfDeviceIoDirect</b>.</p>
 </dd>
 
@@ -95,9 +95,9 @@ typedef struct _WDF_IO_TYPE_CONFIG {
 </dl>
 
 ## -remarks
-<p>The <b>WDF_IO_TYPE_CONFIG</b> structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265604">WdfDeviceInitSetIoTypeEx</a> method.</p>
+<p>The <b>WDF_IO_TYPE_CONFIG</b> structure is used as input to the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a> method.</p>
 
-<p>To initialize a <b>WDF_IO_TYPE_CONFIG</b> structure, your driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/dn265643">WDF_IO_TYPE_CONFIG_INIT</a>.</p>
+<p>To initialize a <b>WDF_IO_TYPE_CONFIG</b> structure, your driver should call <a href="..\wdfdevice\nf-wdfdevice-wdf-io-type-config-init.md">WDF_IO_TYPE_CONFIG_INIT</a>.</p>
 
 <p>If you are writing a driver using UMDF version 2.0 or later, see <a href="wdf.managing_buffer_access_methods_in_umdf_drivers">Managing Buffer Access Methods in UMDF Drivers</a> for more information about specifying preferred buffer access methods.
 </p>
@@ -137,15 +137,15 @@ typedef struct _WDF_IO_TYPE_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>
+<a href="..\wudfddi_types\ne-wudfddi-types--wdf-device-io-type.md">WDF_DEVICE_IO_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265643">WDF_IO_TYPE_CONFIG_INIT</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdf-io-type-config-init.md">WDF_IO_TYPE_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265604">WdfDeviceInitSetIoTypeEx</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TYPE_CONFIG structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TYPE_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

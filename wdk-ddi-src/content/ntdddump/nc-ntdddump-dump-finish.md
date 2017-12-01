@@ -60,7 +60,7 @@ NTSTATUS Dump_Finish(
 ### -param <i>FilterExtension</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553862">FILTER_EXTENSION</a> structure.</p>
+<p>A pointer to a <a href="..\ntdddump\ns-ntdddump--filter-extension.md">FILTER_EXTENSION</a> structure.</p>
 </dd>
 </dl>
 
@@ -105,7 +105,7 @@ NTSTATUS Dump_Finish(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553862">FILTER_EXTENSION</a>
+<a href="..\ntdddump\ns-ntdddump--filter-extension.md">FILTER_EXTENSION</a>
 </dt>
 </dl>
 <p> </p>

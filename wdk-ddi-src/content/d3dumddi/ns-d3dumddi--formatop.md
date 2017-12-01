@@ -61,7 +61,7 @@ typedef struct _FORMATOP {
 ### -field <b>Format</b>
 
 <dd>
-<p>[in] The <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface.</p>
+<p>[in] The <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface.</p>
 </dd>
 
 ### -field <b>Operations</b>
@@ -232,7 +232,7 @@ typedef struct _FORMATOP {
 
 
 <dd>
-<p>Surfaces of this format can only be conditionally used for texture mapping of 2-D textures with dimensions that are not powers of 2. For more information, see the definitions for D3DPTEXTURECAPS_POW2 and D3DPTEXTURECAPS_NONPOW2CONDITIONAL in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549034">D3DPRIMCAPS</a> reference page.</p>
+<p>Surfaces of this format can only be conditionally used for texture mapping of 2-D textures with dimensions that are not powers of 2. For more information, see the definitions for D3DPTEXTURECAPS_POW2 and D3DPTEXTURECAPS_NONPOW2CONDITIONAL in the <a href="..\d3dcaps\ns-d3dcaps--d3dprimcaps.md">D3DPRIMCAPS</a> reference page.</p>
 </dd>
 
 ### -field <a id="FORMATOP_PLANAR__0x02000000L_"></a><a id="formatop_planar__0x02000000l_"></a><a id="FORMATOP_PLANAR__0X02000000L_"></a><p><a id="FORMATOP_PLANAR__0x02000000L_"></a><a id="formatop_planar__0x02000000l_"></a><a id="FORMATOP_PLANAR__0X02000000L_"></a><b>FORMATOP_PLANAR (0x02000000L)</b></p>
@@ -253,7 +253,7 @@ typedef struct _FORMATOP {
 
 
 <dd>
-<p>If the <b>VideoEncoder</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439286">D3DDDI_RESOURCEFLAGS2</a> structure is  set, surfaces of this format can be used as capture buffers.</p>
+<p>If the <b>VideoEncoder</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-resourceflags2.md">D3DDDI_RESOURCEFLAGS2</a> structure is  set, surfaces of this format can be used as capture buffers.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
@@ -261,7 +261,7 @@ typedef struct _FORMATOP {
 
 
 <dd>
-<p>If the <b>VideoEncoder</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439286">D3DDDI_RESOURCEFLAGS2</a> structure is  set, surfaces of this format can be used as video encoder input resources.</p>
+<p>If the <b>VideoEncoder</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-resourceflags2.md">D3DDDI_RESOURCEFLAGS2</a> structure is  set, surfaces of this format can be used as video encoder input resources.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
@@ -290,7 +290,7 @@ typedef struct _FORMATOP {
 ### -field <b>PrivateFormatBitCount</b>
 
 <dd>
-<p>[out] The bits per pixel of a pixel format that is private to the driver (that is, not one of the standard pixel formats that are defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration type). </p>
+<p>[out] The bits per pixel of a pixel format that is private to the driver (that is, not one of the standard pixel formats that are defined by the <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> enumeration type). </p>
 </dd>
 </dl>
 
@@ -322,16 +322,16 @@ typedef struct _FORMATOP {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439286">D3DDDI_RESOURCEFLAGS2</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-resourceflags2.md">D3DDDI_RESOURCEFLAGS2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544132">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ne-d3dumddi--d3dddicaps-type.md">D3DDDICAPS_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a>

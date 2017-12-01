@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SendCTPassThru_IN structure is used to deliver input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565409">SendCTPassThru</a> WMI method. </p>
+<p>The SendCTPassThru_IN structure is used to deliver input parameter data to the <a href="storage.sendctpassthru">SendCTPassThru</a> WMI method. </p>
 
 
 ## -syntax
@@ -76,7 +76,7 @@ typedef struct _SendCTPassThru_IN {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the SendCTPassThru_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the SendCTPassThru_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -95,7 +95,7 @@ typedef struct _SendCTPassThru_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565409">SendCTPassThru</a>
+<a href="storage.sendctpassthru">SendCTPassThru</a>
 </dt>
 </dl>
 <p> </p>

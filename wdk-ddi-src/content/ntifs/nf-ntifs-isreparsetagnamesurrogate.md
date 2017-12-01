@@ -69,10 +69,6 @@ ULONG IsReparseTagNameSurrogate(
 
 <p>For more information about reparse points and volume mount points, see the Microsoft Windows SDK documentation. </p>
 
-<p>If the name surrogate bit is set in the reparse tag, the file or directory represents another named entity in the system, such as a volume mount point. </p>
-
-<p>For more information about reparse points and volume mount points, see the Microsoft Windows SDK documentation. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -108,34 +104,34 @@ ULONG IsReparseTagNameSurrogate(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542988">FltFsControlFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltfscontrolfile.md">FltFsControlFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544589">FltTagFile</a>
+<a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544608">FltUntagFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltuntagfile.md">FltUntagFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544828">FSCTL_DELETE_REPARSE_POINT</a>
+<a href="ifsk.fsctl_delete_reparse_point">FSCTL_DELETE_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544836">FSCTL_GET_REPARSE_POINT</a>
+<a href="ifsk.fsctl_get_reparse_point">FSCTL_GET_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545568">FSCTL_SET_REPARSE_POINT</a>
+<a href="ifsk.fsctl_set_reparse_point">FSCTL_SET_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549452">IsReparseTagMicrosoft</a>
+<a href="..\ntifs\nf-ntifs-isreparsetagmicrosoft.md">IsReparseTagMicrosoft</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552012">REPARSE_DATA_BUFFER</a>
+<a href="..\ntifs\ns-ntifs--reparse-data-buffer.md">REPARSE_DATA_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552014">REPARSE_GUID_DATA_BUFFER</a>
+<a href="..\ntifs\ns-ntifs--reparse-guid-data-buffer.md">REPARSE_GUID_DATA_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566462">ZwFsControlFile</a>
+<a href="..\ntifs\nf-ntifs-zwfscontrolfile.md">ZwFsControlFile</a>
 </dt>
 </dl>
 <p> </p>

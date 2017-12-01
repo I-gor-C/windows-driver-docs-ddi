@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p><code>RouterFreeBidiResponseContainer</code> frees a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545202">BIDI_RESPONSE_CONTAINER</a> structure previously allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff562001">RouterAllocBidiResponseContainer</a>.</p>
+<p><code>RouterFreeBidiResponseContainer</code> frees a <a href="..\winspool\ns-winspool--bidi-response-container.md">BIDI_RESPONSE_CONTAINER</a> structure previously allocated by <a href="..\winsplp\nf-winsplp-routerallocbidiresponsecontainer.md">RouterAllocBidiResponseContainer</a>.</p>
 
 
 ## -syntax
@@ -123,10 +123,10 @@ DWORD RouterFreeBidiResponseContainer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545202">BIDI_RESPONSE_CONTAINER</a>
+<a href="..\winspool\ns-winspool--bidi-response-container.md">BIDI_RESPONSE_CONTAINER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562001">RouterAllocBidiResponseContainer</a>
+<a href="..\winsplp\nf-winsplp-routerallocbidiresponsecontainer.md">RouterAllocBidiResponseContainer</a>
 </dt>
 </dl>
 <p> </p>

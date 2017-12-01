@@ -67,7 +67,7 @@ typedef struct _DXGK_QUERYSEGMENTOUT3 {
 ### -field <b>pSegmentDescriptor</b>
 
 <dd>
-<p>[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh464086">DXGK_SEGMENTDESCRIPTOR3</a> structures that the driver populates with information about the segments it supports. The size of the array is the value that <b>NbSegment</b> specifies.</p>
+<p>[out] An array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor3.md">DXGK_SEGMENTDESCRIPTOR3</a> structures that the driver populates with information about the segments it supports. The size of the array is the value that <b>NbSegment</b> specifies.</p>
 </dd>
 
 ### -field <b>PagingBufferSegmentId</b>
@@ -91,7 +91,7 @@ typedef struct _DXGK_QUERYSEGMENTOUT3 {
 </dl>
 
 ## -remarks
-<p>This structure is used by the  display miniport driver to return information about memory segments in response to a <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function call in which the graphics subsystem specifies the <b>DXGKQAITYPE_QUERYSEGMENT3</b> value in the <b>Type</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a> structure.</p>
+<p>This structure is used by the  display miniport driver to return information about memory segments in response to a <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function call in which the graphics subsystem specifies the <b>DXGKQAITYPE_QUERYSEGMENT3</b> value in the <b>Type</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a> structure.</p>
 
 <p>The video memory manager allocates a paging buffer either from an aperture segment (if the <b>PagingBufferSegmentId</b> member identifies the segment) or as a contiguous write-combined memory block (if <b>PagingBufferSegmentId</b> is set to 0). If <b>PagingBufferSegmentId</b> is set to 0, the GPU must access direct memory access (DMA) buffers by using PCI cycles on systems where AGP transfers that occur outside the AGP aperture are not permitted.</p>
 
@@ -128,13 +128,13 @@ typedef struct _DXGK_QUERYSEGMENTOUT3 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562015">DXGK_QUERYSEGMENTIN</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentin.md">DXGK_QUERYSEGMENTIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464086">DXGK_SEGMENTDESCRIPTOR3</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor3.md">DXGK_SEGMENTDESCRIPTOR3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 </dt>
 <dt>
 <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a>

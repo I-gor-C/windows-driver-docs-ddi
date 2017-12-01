@@ -7,7 +7,7 @@ old-location: stream\bda_diseqc_response.htm
 old-project: stream
 ms.assetid: 724FD17B-D12B-423D-AA0E-93D9D31DC93E
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_DISEQC_RESPONSE, BDA_DISEQC_RESPONSE, *PBDA_DISEQC_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices

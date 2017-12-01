@@ -70,7 +70,7 @@ VOID ReportSessionStatus(
 ### -param <i>MiracastStatus</i> [in]
 
 <dd>
-<p>The current status of the Miracast link, of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn265481">MIRACAST_STATUS</a>.</p>
+<p>The current status of the Miracast link, of type <a href="..\netdispumdddi\ne-netdispumdddi-miracast-status.md">MIRACAST_STATUS</a>.</p>
 </dd>
 
 ### -param <i>Status</i> [in]
@@ -84,8 +84,6 @@ VOID ReportSessionStatus(
 <p>Does not return a value.</p>
 
 ## -remarks
-<p>If the Miracast user-mode driver reports an error in the <i>MiracastStatus</i> parameter, it initiates a tear-down of the current Miracast connected session.</p>
-
 <p>If the Miracast user-mode driver reports an error in the <i>MiracastStatus</i> parameter, it initiates a tear-down of the current Miracast connected session.</p>
 
 ## -requirements
@@ -134,7 +132,7 @@ VOID ReportSessionStatus(
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265481">MIRACAST_STATUS</a>
+<a href="..\netdispumdddi\ne-netdispumdddi-miracast-status.md">MIRACAST_STATUS</a>
 </dt>
 </dl>
 <p> </p>

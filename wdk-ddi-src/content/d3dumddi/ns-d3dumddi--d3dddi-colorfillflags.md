@@ -111,7 +111,7 @@ typedef struct _D3DDDI_COLORFILLFLAGS {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-colorfill.md">ColorFill</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542907">D3DDDIARG_COLORFILL</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-colorfill.md">D3DDDIARG_COLORFILL</a>
 </dt>
 </dl>
 <p> </p>

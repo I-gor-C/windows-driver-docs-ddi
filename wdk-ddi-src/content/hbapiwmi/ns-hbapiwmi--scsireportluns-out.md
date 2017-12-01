@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ScsiReportLuns_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564918">ScsiReportLuns</a> WMI method to the WMI client.</p>
+<p>The ScsiReportLuns_OUT structure is used to report the output parameter data of the <a href="storage.scsireportluns">ScsiReportLuns</a> WMI method to the WMI client.</p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ typedef struct _ScsiReportLuns_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation. </p>
+<p>Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation. </p>
 </dd>
 
 ### -field <b>ResponseBufferSize</b>
@@ -97,7 +97,7 @@ typedef struct _ScsiReportLuns_OUT {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the ScsiReportLuns_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the ScsiReportLuns_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -116,10 +116,10 @@ typedef struct _ScsiReportLuns_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564918">ScsiReportLuns</a>
+<a href="storage.scsireportluns">ScsiReportLuns</a>
 </dt>
 </dl>
 <p> </p>

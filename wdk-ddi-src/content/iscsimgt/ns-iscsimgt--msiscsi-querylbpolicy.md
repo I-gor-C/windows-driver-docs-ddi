@@ -60,7 +60,7 @@ typedef struct _MSiSCSI_QueryLBPolicy {
 ### -field <b>UniqueAdapterId</b>
 
 <dd>
-<p>This is a unique connection identifier that the initiator uses to identify a connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter.</p>
+<p>This is a unique connection identifier that the initiator uses to identify a connection. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -78,7 +78,7 @@ typedef struct _MSiSCSI_QueryLBPolicy {
 ### -field <b>LoadBalancePolicies</b>
 
 <dd>
-<p>This is an enumeration that contains information required to set the load balance policy. For more information about how to set the load balance policy, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561570">ISCSI_Supported_LB_Policies</a>. There will be as many of these structures as the number of sessions available for this adapter.</p>
+<p>This is an enumeration that contains information required to set the load balance policy. For more information about how to set the load balance policy, see <a href="..\iscsimgt\ns-iscsimgt--iscsi-supported-lb-policies.md">ISCSI_Supported_LB_Policies</a>. There will be as many of these structures as the number of sessions available for this adapter.</p>
 </dd>
 </dl>
 
@@ -102,13 +102,13 @@ typedef struct _MSiSCSI_QueryLBPolicy {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561570">ISCSI_Supported_LB_Policies</a>
+<a href="..\iscsimgt\ns-iscsimgt--iscsi-supported-lb-policies.md">ISCSI_Supported_LB_Policies</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 </dl>
 <p> </p>

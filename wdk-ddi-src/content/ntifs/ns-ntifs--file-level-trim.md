@@ -103,10 +103,10 @@ typedef struct _FILE_LEVEL_TRIM {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406405">FILE_LEVEL_TRIM_RANGE</a>
+<a href="..\ntifs\ns-ntifs--file-level-trim-range.md">FILE_LEVEL_TRIM_RANGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451098">FSCTL_FILE_LEVEL_TRIM</a>
+<a href="ifsk.fsctl_file_level_trim">FSCTL_FILE_LEVEL_TRIM</a>
 </dt>
 </dl>
 <p> </p>

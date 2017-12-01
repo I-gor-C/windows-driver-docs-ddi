@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU</b> is used with <a href="https://msdn.microsoft.com/library/windows/hardware/dn906783">D3DKMTSignalSynchronizationObjectFromCpu</a> to enable a driver to signal a monitored fence.</p>
+<p><b>D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU</b> is used with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobjectfromcpu.md">D3DKMTSignalSynchronizationObjectFromCpu</a> to enable a driver to signal a monitored fence.</p>
 
 
 ## -syntax
@@ -118,7 +118,7 @@ typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906783">D3DKMTSignalSynchronizationObjectFromCpu</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobjectfromcpu.md">D3DKMTSignalSynchronizationObjectFromCpu</a>
 </dt>
 </dl>
 <p> </p>

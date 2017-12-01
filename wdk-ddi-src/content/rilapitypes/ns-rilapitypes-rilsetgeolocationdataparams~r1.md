@@ -7,7 +7,7 @@ old-location: netvista\rilsetgeolocationdataparams_2.htm
 old-project: netvista
 ms.assetid: 4e0d035b-5528-4e69-bd6c-9311bf0af4cf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSETGEOLOCATIONDATAPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

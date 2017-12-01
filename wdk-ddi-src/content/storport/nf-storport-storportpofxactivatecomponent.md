@@ -80,7 +80,7 @@ ULONG StorPortPoFxActivateComponent(
 ### -param <i>Component</i> [in]
 
 <dd>
-<p>The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh920429">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh920421">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
+<p>The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="..\storport\ns-storport--stor-pofx-device.md">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
 ### -param <i>Flags</i> [in]
@@ -128,11 +128,7 @@ ULONG StorPortPoFxActivateComponent(
 ## -remarks
 <p>Currently, both adapter devices and unit devices have maximum component count of 1. The index in <i>Component</i> must always be set to 0.</p>
 
-<p>Each call to <b>StorPortPoFxActivateComponent</b> must be matched with a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh920423">StorPortPoFxIdleComponent</a>.</p>
-
-<p>Currently, both adapter devices and unit devices have maximum component count of 1. The index in <i>Component</i> must always be set to 0.</p>
-
-<p>Each call to <b>StorPortPoFxActivateComponent</b> must be matched with a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh920423">StorPortPoFxIdleComponent</a>.</p>
+<p>Each call to <b>StorPortPoFxActivateComponent</b> must be matched with a subsequent call to <a href="..\storport\nf-storport-storportpofxidlecomponent.md">StorPortPoFxIdleComponent</a>.</p>
 
 ## -requirements
 <table>
@@ -187,13 +183,13 @@ ULONG StorPortPoFxActivateComponent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920429">STOR_POFX_DEVICE</a>
+<a href="..\storport\ns-storport--stor-pofx-device.md">STOR_POFX_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920421">StorPortInitializePoFxPower</a>
+<a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920423">StorPortPoFxIdleComponent</a>
+<a href="..\storport\nf-storport-storportpofxidlecomponent.md">StorPortPoFxIdleComponent</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: kernel\iogetfileobjectgenericmapping.htm
 old-project: kernel
 ms.assetid: eae8a64f-c80a-4e70-b332-6cc098273d7c
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoGetFileObjectGenericMapping
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,11 +53,11 @@ PGENERIC_MAPPING  IoGetFileObjectGenericMapping(void);
 
 
 ## -returns
-<p><b>IoGetFileObjectGenericMapping</b> returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a> structure that describes the mapping between each generic access right and the implied set of specific access rights.</p>
+<p><b>IoGetFileObjectGenericMapping</b> returns a pointer to the <a href="..\wdm\ns-wdm--generic-mapping.md">GENERIC_MAPPING</a> structure that describes the mapping between each generic access right and the implied set of specific access rights.</p>
 
-<p><b>IoGetFileObjectGenericMapping</b> returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a> structure that describes the mapping between each generic access right and the implied set of specific access rights.</p>
+<p><b>IoGetFileObjectGenericMapping</b> returns a pointer to the <a href="..\wdm\ns-wdm--generic-mapping.md">GENERIC_MAPPING</a> structure that describes the mapping between each generic access right and the implied set of specific access rights.</p>
 
-<p><b>IoGetFileObjectGenericMapping</b> returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a> structure that describes the mapping between each generic access right and the implied set of specific access rights.</p>
+<p><b>IoGetFileObjectGenericMapping</b> returns a pointer to the <a href="..\wdm\ns-wdm--generic-mapping.md">GENERIC_MAPPING</a> structure that describes the mapping between each generic access right and the implied set of specific access rights.</p>
 
 ## -remarks
 
@@ -125,7 +125,7 @@ PGENERIC_MAPPING  IoGetFileObjectGenericMapping(void);
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547796">IrqlIoPassive5</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_irqliopassive5">IrqlIoPassive5</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -133,18 +133,18 @@ PGENERIC_MAPPING  IoGetFileObjectGenericMapping(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a>
+<a href="..\wdm\ns-wdm--generic-mapping.md">GENERIC_MAPPING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548341">IoCheckShareAccess</a>
+<a href="..\wdm\nf-wdm-iocheckshareaccess.md">IoCheckShareAccess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550324">IoSetShareAccess</a>
+<a href="..\wdm\nf-wdm-iosetshareaccess.md">IoSetShareAccess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetFileObjectGenericMapping routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetFileObjectGenericMapping routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

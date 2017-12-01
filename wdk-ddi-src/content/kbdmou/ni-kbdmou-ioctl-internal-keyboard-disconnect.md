@@ -111,7 +111,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541273">IOCTL_INTERNAL_KEYBOARD_CONNECT</a>
+<a href="..\kbdmou\ni-kbdmou-ioctl-internal-keyboard-connect.md">IOCTL_INTERNAL_KEYBOARD_CONNECT</a>
 </dt>
 </dl>
 <p> </p>

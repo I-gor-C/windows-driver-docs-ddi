@@ -7,7 +7,7 @@ old-location: netvista\ndis_ndk_performance_counters.htm
 old-project: netvista
 ms.assetid: DA752989-B49B-4832-8821-8B45AB3304CD
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_NDK_PERFORMANCE_COUNTERS, NDIS_NDK_PERFORMANCE_COUNTERS, *PNDIS_NDK_PERFORMANCE_COUNTERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,13 +86,13 @@ typedef struct _NDIS_NDK_PERFORMANCE_COUNTERS {
 ### -field <b>Connect</b>
 
 <dd>
-<p>The number of outbound connections established. In a bitmask of counters (for example, <b>MissingCounterMask</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451560">NDIS_NDK_CAPABILITIES</a> structure), this is counter 0.</p>
+<p>The number of outbound connections established. In a bitmask of counters (for example, <b>MissingCounterMask</b> member of the <a href="..\ntddndis\ns-ntddndis--ndis-ndk-capabilities.md">NDIS_NDK_CAPABILITIES</a> structure), this is counter 0.</p>
 </dd>
 
 ### -field <b>Accept</b>
 
 <dd>
-<p>The number of inbound <i>RDMA</i> connections established. In a bitmask of counters (for example, <b>MissingCounterMask</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451560">NDIS_NDK_CAPABILITIES</a> structure), this is counter 1.</p>
+<p>The number of inbound <i>RDMA</i> connections established. In a bitmask of counters (for example, <b>MissingCounterMask</b> member of the <a href="..\ntddndis\ns-ntddndis--ndis-ndk-capabilities.md">NDIS_NDK_CAPABILITIES</a> structure), this is counter 1.</p>
 </dd>
 
 ### -field <b>ConnectFailure</b>
@@ -265,13 +265,13 @@ typedef struct _NDIS_NDK_PERFORMANCE_COUNTERS {
 </dl>
 
 ## -remarks
-<p>The <b>NDIS_NDK_PERFORMANCE_COUNTERS</b> structure is used in the <b>CounterSet</b>  member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451567">NDIS_NDK_STATISTICS_INFO</a> structure. </p>
+<p>The <b>NDIS_NDK_PERFORMANCE_COUNTERS</b> structure is used in the <b>CounterSet</b>  member of the <a href="..\ntddndis\ns-ntddndis--ndis-ndk-statistics-info.md">NDIS_NDK_STATISTICS_INFO</a> structure. </p>
 
 <p>NDK providers are required to support all the performance counters that are included
     in the <b>NDIS_NDK_PERFORMANCE_COUNTERS</b> structure. However, in the rare case that
     a provider cannot support a counter due to extreme implementation difficulties,
     the provider must indicate any unsupported counters with the mask value for the
-    counter which it cannot support. The <b>MissingCounterMask</b>  parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451560">NDIS_NDK_CAPABILITIES</a> structure specifies a bitmask that identifies counters that an NDK provider does not support.</p>
+    counter which it cannot support. The <b>MissingCounterMask</b>  parameter of the <a href="..\ntddndis\ns-ntddndis--ndis-ndk-capabilities.md">NDIS_NDK_CAPABILITIES</a> structure specifies a bitmask that identifies counters that an NDK provider does not support.</p>
 
 <p>All <b>ReservedXX</b> counters must be set to zero by providers and are ignored by NDIS. The term <i>RDMA</i> refers to all NDKPI and NDSPI activity as well as activity through any other RDMA programming interface that might be exposed by the provider. All providers must report the NDKPI and NDSPI activity with these counters, but reporting activity for other RDMA programming interfaces is not a strict requirement. The term <i>RDMA traffic</i> for the RDMA in, out, byte, and frame counters refers to all RDMA activity originating from NDKPI, NDSPI, and other RDMA programming interfaces (if any). This includes reads and writes (that is, direct data placement) as well as sends and receives. This also should also include all of the associated layer two protocol overhead. That is, <i>RDMA traffic</i> on an NDK-capable adapter includes all traffic through the adapter except for traffic that is  delivered through the standard NDIS send and receive interface and TCP chimney by NDIS protocol drivers.</p>
 
@@ -316,12 +316,12 @@ typedef struct _NDIS_NDK_PERFORMANCE_COUNTERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451560">NDIS_NDK_CAPABILITIES</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-ndk-capabilities.md">NDIS_NDK_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451567">NDIS_NDK_STATISTICS_INFO</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-ndk-statistics-info.md">NDIS_NDK_STATISTICS_INFO</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_PERFORMANCE_COUNTERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_PERFORMANCE_COUNTERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

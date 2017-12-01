@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetdevice.htm
 old-project: wdf
 ms.assetid: 627a4633-6857-43a5-af2d-36e4e554ca83
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFUsbTargetPipe2, ConfigureContinuousReader, IWDFUsbTargetPipe2::ConfigureContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUsbTargetDevice</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559170">IWDFIoTarget</a>. <b>IWDFUsbTargetDevice</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUsbTargetDevice</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>. <b>IWDFUsbTargetDevice</b> also has these types of members:</p>
 
 <p>The <b>IWDFUsbTargetDevice</b> interface has these methods.</p>
 
@@ -78,7 +78,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560363">IWDFUsbTargetDevice::FormatRequestForControlTransfer</a>
+<a href="wdf.iwdfusbtargetdevice_formatrequestforcontroltransfer">IWDFUsbTargetDevice::FormatRequestForControlTransfer</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetdevice_formatrequestforcontroltransfer">FormatRequestForControlTransfer</a> method formats an I/O request object for a USB control transfer.</p>
@@ -86,7 +86,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560366">IWDFUsbTargetDevice::GetNumInterfaces</a>
+<a href="wdf.iwdfusbtargetdevice_getnuminterfaces">IWDFUsbTargetDevice::GetNumInterfaces</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetdevice_getnuminterfaces">GetNumInterfaces</a> method retrieves the number of USB interfaces for the USB device.</p>
@@ -94,7 +94,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560369">IWDFUsbTargetDevice::GetWinUsbHandle</a>
+<a href="wdf.iwdfusbtargetdevice_getwinusbhandle">IWDFUsbTargetDevice::GetWinUsbHandle</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetdevice_getwinusbhandle">GetWinUsbHandle</a> method retrieves the WinUsb interface handle that is associated with a I/O target device object.</p>
@@ -102,7 +102,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560374">IWDFUsbTargetDevice::RetrieveDescriptor</a>
+<a href="wdf.iwdfusbtargetdevice_retrievedescriptor">IWDFUsbTargetDevice::RetrieveDescriptor</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetdevice_retrievedescriptor">RetrieveDescriptor</a> method retrieves a USB descriptor, which can describe a device, configuration, or string.</p>
@@ -110,7 +110,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560377">IWDFUsbTargetDevice::RetrieveDeviceInformation</a>
+<a href="wdf.iwdfusbtargetdevice_retrievedeviceinformation">IWDFUsbTargetDevice::RetrieveDeviceInformation</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetdevice_retrievedeviceinformation">RetrieveDeviceInformation</a> method retrieves device information of the specified type.</p>
@@ -118,7 +118,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560379">IWDFUsbTargetDevice::RetrievePowerPolicy</a>
+<a href="wdf.iwdfusbtargetdevice_retrievepowerpolicy">IWDFUsbTargetDevice::RetrievePowerPolicy</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetdevice_retrievepowerpolicy">RetrievePowerPolicy</a> method retrieves a WinUsb power policy.</p>
@@ -126,7 +126,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560381">IWDFUsbTargetDevice::RetrieveUsbInterface</a>
+<a href="wdf.iwdfusbtargetdevice_retrieveusbinterface">IWDFUsbTargetDevice::RetrieveUsbInterface</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetdevice_retrieveusbinterface">RetrieveUsbInterface</a> method retrieves the specified USB interface for a USB device.</p>
@@ -134,7 +134,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560385">IWDFUsbTargetDevice::SetPowerPolicy</a>
+<a href="wdf.iwdfusbtargetdevice_setpowerpolicy">IWDFUsbTargetDevice::SetPowerPolicy</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetdevice_setpowerpolicy">SetPowerPolicy</a> method sets the WinUsb power policy.</p>

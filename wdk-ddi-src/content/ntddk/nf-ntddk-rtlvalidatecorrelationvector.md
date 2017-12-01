@@ -7,7 +7,7 @@ old-location: kernel\rtlvalidatecorrelationvector.htm
 old-project: kernel
 ms.assetid: a73ab33b-3e8c-43d8-8547-1483bcd2af52
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlValidateCorrelationVector
 ms.prod: windows-hardware
 ms.technology: windows-devices

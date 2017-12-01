@@ -7,7 +7,7 @@ old-location: netvista\rilradiostategroups.htm
 old-project: netvista
 ms.assetid: 901fe9e5-4b3c-4f31-9bf0-a4a5bd66bd19
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILRADIOSTATEGROUPS, RILRADIOSTATEGROUPS, *LPRILRADIOSTATEGROUPS
 ms.prod: windows-hardware
 ms.technology: windows-devices

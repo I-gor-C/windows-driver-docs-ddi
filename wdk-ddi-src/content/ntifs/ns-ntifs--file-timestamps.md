@@ -103,7 +103,7 @@ typedef struct _File_TIMESTAMPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt734230">ATOMIC_CREATE_ECP_CONTEXT</a>
+<a href="..\ntifs\ns-ntifs--atomic-create-ecp-context.md">ATOMIC_CREATE_ECP_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>

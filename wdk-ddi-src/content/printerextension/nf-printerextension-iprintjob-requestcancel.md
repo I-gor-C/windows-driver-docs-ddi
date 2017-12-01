@@ -68,8 +68,6 @@ HRESULT RequestCancel(
 ## -remarks
 <p>The <b>RequestCancel</b> method does not wait for the cancellation of a print job to be processed to completion before it returns.</p>
 
-<p>The <b>RequestCancel</b> method does not wait for the cancellation of a print job to be processed to completion before it returns.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -113,7 +111,7 @@ HRESULT RequestCancel(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a>
+<a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a>
 </dt>
 </dl>
 <p> </p>

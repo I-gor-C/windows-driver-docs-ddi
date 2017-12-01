@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjectionhandledestroy0.htm
 old-project: netvista
 ms.assetid: 5a00917b-36e8-4e06-a001-d8e6ac2e3573
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsInjectionHandleDestroy0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,7 @@ req.iface:
 <p>The 
   <b>FwpsInjectionHandleDestroy0</b> function destroys an injection handle that was previously created by
   calling the 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff551180">FwpsInjectionHandleCreate0</a> function.</p>
+  <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function.</p>
 
 
 ## -syntax
@@ -75,14 +75,6 @@ NTSTATUS FwpsInjectionHandleDestroy0(
 <p> </p>
 
 ## -remarks
-<p>A callout driver calls the 
-    <b>FwpsInjectionHandleDestroy0</b> function to destroy an injection handle that was previously created by
-    calling the 
-    <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">
-    FwpsInjectionHandleCreate0</a> function. The 
-    <b>FwpsInjectionHandleDestroy0</b> function will not return to the caller until all pending injections are
-    completed.</p>
-
 <p>A callout driver calls the 
     <b>FwpsInjectionHandleDestroy0</b> function to destroy an injection handle that was previously created by
     calling the 
@@ -144,9 +136,9 @@ NTSTATUS FwpsInjectionHandleDestroy0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551180">FwpsInjectionHandleCreate0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectionHandleDestroy0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectionHandleDestroy0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

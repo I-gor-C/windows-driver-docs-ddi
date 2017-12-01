@@ -73,9 +73,7 @@ HRESULT IBidiRequestContainer::GetEnumObject(
 <p> </p>
 
 ## -remarks
-<p>An application can call <a href="_com_ienumunknown_next">IEnumUnknown::Next</a> to retrieve one or more <a href="https://msdn.microsoft.com/library/windows/hardware/dd144969">IBidiRequest</a> interfaces.</p>
-
-<p>An application can call <a href="_com_ienumunknown_next">IEnumUnknown::Next</a> to retrieve one or more <a href="https://msdn.microsoft.com/library/windows/hardware/dd144969">IBidiRequest</a> interfaces.</p>
+<p>An application can call <a href="_com_ienumunknown_next">IEnumUnknown::Next</a> to retrieve one or more <a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a> interfaces.</p>
 
 ## -requirements
 <table>
@@ -130,13 +128,13 @@ HRESULT IBidiRequestContainer::GetEnumObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+<a href="print.bidirectional_communication_interfaces">Bidirectional Communication Interfaces</a>
 </dt>
 <dt>
-<a href="NULL">Bidirectional Communication Schema</a>
+<a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dd144970">IBidiRequestContainer</a>
+<a href="..\bidispl\nn-bidispl-ibidirequestcontainer.md">IBidiRequestContainer</a>
 </dt>
 <dt>
 <a href="_com_ienumunknown">IEnumUnknown</a>

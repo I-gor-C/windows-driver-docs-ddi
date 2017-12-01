@@ -7,7 +7,7 @@ old-location: netvista\rilpsmediaconfigurationset_2.htm
 old-project: netvista
 ms.assetid: cdaa161e-2481-497c-8a9b-4c07a3d99d1f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILPSMEDIACONFIGURATIONSET,
 ms.prod: windows-hardware
 ms.technology: windows-devices

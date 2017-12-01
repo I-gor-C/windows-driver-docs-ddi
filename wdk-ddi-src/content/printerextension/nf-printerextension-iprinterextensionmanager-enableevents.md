@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The EnableEvents method allows events to be generated for the specified printer driver until  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406703">DisableEvents</a> is called. </p>
+<p>The EnableEvents method allows events to be generated for the specified printer driver until  <a href="print.iprinterextensionmanager_disableevents">DisableEvents</a> is called. </p>
 
 
 ## -syntax
@@ -68,8 +68,6 @@ HRESULT EnableEvents(
 <p>The printer extension should call this method when it is launched so that driver events are generated for it to consume.</p>
 
 ## -remarks
-<p>In the case of a driver event like, for example, Print Preferences or Printer Notifications, the app is expected to call <b>EnableEvents</b>. But if the app doesn't call <b>EnableEvents</b> within 30s, the print system assumes that a UI was  called but it's not being responsive so a standard UI is displayed instead.</p>
-
 <p>In the case of a driver event like, for example, Print Preferences or Printer Notifications, the app is expected to call <b>EnableEvents</b>. But if the app doesn't call <b>EnableEvents</b> within 30s, the print system assumes that a UI was  called but it's not being responsive so a standard UI is displayed instead.</p>
 
 ## -requirements

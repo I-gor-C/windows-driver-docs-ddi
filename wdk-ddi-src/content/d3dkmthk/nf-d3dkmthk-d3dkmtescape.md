@@ -57,7 +57,7 @@ NTSTATUS D3DKMTEscape(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547970">D3DKMT_ESCAPE</a> structure that describes the exchanged information.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-escape.md">D3DKMT_ESCAPE</a> structure that describes the exchanged information.</p>
 </dd>
 </dl>
 
@@ -71,23 +71,19 @@ NTSTATUS D3DKMTEscape(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546940">D3DKMTEscape</a> could not complete because of insufficient memory.</p><dl>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> could not complete because of insufficient memory.</p><dl>
 <dt><b>STATUS_PRIVILEGED_INSTRUCTION</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546940">D3DKMTEscape</a> detected nonprivileged instructions (that is, instructions that access memory beyond the privilege of the current CPU process).</p><dl>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> detected nonprivileged instructions (that is, instructions that access memory beyond the privilege of the current CPU process).</p><dl>
 <dt><b>STATUS_ILLEGAL_INSTRUCTION</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546940">D3DKMTEscape</a> detected instructions that cannot be supported by graphics hardware.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> detected instructions that cannot be supported by graphics hardware.</p>
 
 <p> </p>
 
 <p>This function might also return other <b>NTSTATUS</b> values.</p>
 
 ## -remarks
-<p>The OpenGL ICD calls <b>D3DKMTEscape</b> to exchange data directly with the display miniport driver. For testing purposes, the OpenGL ICD can also call <b>D3DKMTEscape</b> to control the video memory manager and graphics processing unit (GPU) scheduler (which are part of <i>Dxgkrnl.sys</i>) and the behavior of the operating system's Timeout Detection and Recovery (TDR) process. </p>
-
-<p>Hardware vendors can use <b>D3DKMTEscape</b> in their OpenGL ICDs as an extension mechanism. However, vendors should report necessary extensions to Microsoft so the extensions can be natively supported by the operating system.</p>
-
 <p>The OpenGL ICD calls <b>D3DKMTEscape</b> to exchange data directly with the display miniport driver. For testing purposes, the OpenGL ICD can also call <b>D3DKMTEscape</b> to control the video memory manager and graphics processing unit (GPU) scheduler (which are part of <i>Dxgkrnl.sys</i>) and the behavior of the operating system's Timeout Detection and Recovery (TDR) process. </p>
 
 <p>Hardware vendors can use <b>D3DKMTEscape</b> in their OpenGL ICDs as an extension mechanism. However, vendors should report necessary extensions to Microsoft so the extensions can be natively supported by the operating system.</p>
@@ -147,7 +143,7 @@ NTSTATUS D3DKMTEscape(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547970">D3DKMT_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-escape.md">D3DKMT_ESCAPE</a>
 </dt>
 </dl>
 <p> </p>

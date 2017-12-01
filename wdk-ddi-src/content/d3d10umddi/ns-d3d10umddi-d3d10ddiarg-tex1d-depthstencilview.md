@@ -109,7 +109,7 @@ typedef struct D3D10DDIARG_TEX1D_DEPTHSTENCILVIEW {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdepthstencilview.md">CreateDepthStencilView</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541658">D3D10DDIARG_CREATEDEPTHSTENCILVIEW</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdepthstencilview.md">D3D10DDIARG_CREATEDEPTHSTENCILVIEW</a>
 </dt>
 </dl>
 <p> </p>

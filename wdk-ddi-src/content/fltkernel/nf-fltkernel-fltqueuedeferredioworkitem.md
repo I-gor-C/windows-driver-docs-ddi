@@ -61,13 +61,13 @@ NTSTATUS FltQueueDeferredIoWorkItem(
 ### -param <i>FltWorkItem</i> [in]
 
 <dd>
-<p>A pointer to the work item to add to the work queue. The work item must have been allocated by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541720">FltAllocateDeferredIoWorkItem</a>. </p>
+<p>A pointer to the work item to add to the work queue. The work item must have been allocated by calling <a href="..\fltkernel\nf-fltkernel-fltallocatedeferredioworkitem.md">FltAllocateDeferredIoWorkItem</a>. </p>
 </dd>
 
 ### -param <i>Data</i> [in]
 
 <dd>
-<p>A pointer to the callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure for the I/O operation. The operation must be an IRP-based I/O operation. To determine whether a given callback data structure represents an IRP-based I/O operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. </p>
+<p>A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. The operation must be an IRP-based I/O operation. To determine whether a given callback data structure represents an IRP-based I/O operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. </p>
 </dd>
 
 ### -param <i>WorkerRoutine</i> [in]
@@ -156,7 +156,7 @@ NTSTATUS FltQueueDeferredIoWorkItem(
 <dt><b>STATUS_FLT_NOT_SAFE_TO_POST_OPERATION</b></dt>
 </dl><p>The I/O operation cannot be posted safely to a worker thread. Possible reasons include the following: </p>
 
-<p><b>FltQueueDeferredIoWorkItem</b> cannot post an I/O operation to a worker thread if the <b>TopLevelIrp</b> field of the current thread is not <b>NULL</b>, because the resulting file system recursion could cause deadlocks or stack overflows. (For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548405">IoGetTopLevelIrp</a>.) </p>
+<p><b>FltQueueDeferredIoWorkItem</b> cannot post an I/O operation to a worker thread if the <b>TopLevelIrp</b> field of the current thread is not <b>NULL</b>, because the resulting file system recursion could cause deadlocks or stack overflows. (For more information, see <a href="..\ntifs\nf-ntifs-iogettoplevelirp.md">IoGetTopLevelIrp</a>.) </p>
 
 <p><b>FltQueueDeferredIoWorkItem</b> cannot post a paging I/O operation to a worker thread. </p>
 
@@ -169,63 +169,27 @@ NTSTATUS FltQueueDeferredIoWorkItem(
 
 <p>The operation must be an IRP-based I/O operation. To determine whether a given callback data structure represents an IRP-based I/O operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. </p>
 
-<p>A minifilter driver can use <b>FltQueueDeferredIoWorkItem</b> in a preoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) routine as follows: </p>
+<p>A minifilter driver can use <b>FltQueueDeferredIoWorkItem</b> in a preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine as follows: </p>
 
-<p>The preoperation callback calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff541720">FltAllocateDeferredIoWorkItem</a> to allocate the work item. </p>
-
-<p>The preoperation callback calls <b>FltQueueDeferredIoWorkItem</b> to post the operation to the work queue. </p>
-
-<p>The preoperation callback returns FLT_PREOP_PENDING. </p>
-
-<p>After processing the I/O operation, the work routine calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff541913">FltCompletePendedPreOperation</a> to return the I/O operation to the Filter Manager. </p>
-
-<p>The work routine calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff542955">FltFreeDeferredIoWorkItem</a> to free the work item. </p>
-
-<p>A minifilter driver can use <b>FltQueueDeferredIoWorkItem</b> in a post-operation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>) routine as follows: </p>
-
-<p>The post-operation callback calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff541720">FltAllocateDeferredIoWorkItem</a> to allocate the work item. </p>
-
-<p>The post-operation callback calls <b>FltQueueDeferredIoWorkItem</b> to post the operation to the work queue. </p>
-
-<p>The post-operation callback returns FLT_POSTOP_MORE_PROCESSING_REQUIRED. </p>
-
-<p>After processing the I/O operation, the work routine calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff541897">FltCompletePendedPostOperation</a> to return the I/O operation to the Filter Manager. </p>
-
-<p>The work routine calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff542955">FltFreeDeferredIoWorkItem</a> to free the work item. </p>
-
-<p>IRP_MJ_READ</p>
-
-<p>IRP_MJ_WRITE</p>
-
-<p>IRP_MJ_FLUSH_BUFFERS</p>
-
-<p>The <b>FltQueueDeferredIoWorkItem</b> routine posts an I/O operation to a system work queue. The specified <i>WorkerRoutine</i> callback routine is called in the context of a system thread, at IRQL PASSIVE_LEVEL. </p>
-
-<p>The operation must be an IRP-based I/O operation. To determine whether a given callback data structure represents an IRP-based I/O operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. </p>
-
-<p>A minifilter driver can use <b>FltQueueDeferredIoWorkItem</b> in a preoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) routine as follows: </p>
-
-<p>The preoperation callback calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff541720">FltAllocateDeferredIoWorkItem</a> to allocate the work item. </p>
+<p>The preoperation callback calls <a href="..\fltkernel\nf-fltkernel-fltallocatedeferredioworkitem.md">FltAllocateDeferredIoWorkItem</a> to allocate the work item. </p>
 
 <p>The preoperation callback calls <b>FltQueueDeferredIoWorkItem</b> to post the operation to the work queue. </p>
 
 <p>The preoperation callback returns FLT_PREOP_PENDING. </p>
 
-<p>After processing the I/O operation, the work routine calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff541913">FltCompletePendedPreOperation</a> to return the I/O operation to the Filter Manager. </p>
+<p>After processing the I/O operation, the work routine calls <a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a> to return the I/O operation to the Filter Manager. </p>
 
-<p>The work routine calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff542955">FltFreeDeferredIoWorkItem</a> to free the work item. </p>
+<p>The work routine calls <a href="..\fltkernel\nf-fltkernel-fltfreedeferredioworkitem.md">FltFreeDeferredIoWorkItem</a> to free the work item. </p>
 
-<p>A minifilter driver can use <b>FltQueueDeferredIoWorkItem</b> in a post-operation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>) routine as follows: </p>
+<p>A minifilter driver can use <b>FltQueueDeferredIoWorkItem</b> in a post-operation callback (<a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>) routine as follows: </p>
 
-<p>The post-operation callback calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff541720">FltAllocateDeferredIoWorkItem</a> to allocate the work item. </p>
+<p>The post-operation callback calls <a href="..\fltkernel\nf-fltkernel-fltallocatedeferredioworkitem.md">FltAllocateDeferredIoWorkItem</a> to allocate the work item. </p>
 
 <p>The post-operation callback calls <b>FltQueueDeferredIoWorkItem</b> to post the operation to the work queue. </p>
 
 <p>The post-operation callback returns FLT_POSTOP_MORE_PROCESSING_REQUIRED. </p>
 
-<p>After processing the I/O operation, the work routine calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff541897">FltCompletePendedPostOperation</a> to return the I/O operation to the Filter Manager. </p>
-
-<p>The work routine calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff542955">FltFreeDeferredIoWorkItem</a> to free the work item. </p>
+<p>After processing the I/O operation, the work routine calls <a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a> to return the I/O operation to the Filter Manager. </p>
 
 <p>IRP_MJ_READ</p>
 
@@ -296,31 +260,31 @@ NTSTATUS FltQueueDeferredIoWorkItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541720">FltAllocateDeferredIoWorkItem</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatedeferredioworkitem.md">FltAllocateDeferredIoWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541897">FltCompletePendedPostOperation</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541913">FltCompletePendedPreOperation</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542955">FltFreeDeferredIoWorkItem</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreedeferredioworkitem.md">FltFreeDeferredIoWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548405">IoGetTopLevelIrp</a>
+<a href="..\ntifs\nf-ntifs-iogettoplevelirp.md">IoGetTopLevelIrp</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilradiostategroupid_2.htm
 old-project: netvista
 ms.assetid: a676a0d8-ffef-48af-9d98-0510eee83522
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -57,7 +57,7 @@ PFILE_OBJECT CcGetFileObjectFromSectionPtrsRef(
 ### -param <i>SectionObjectPointer</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563687">SECTION_OBJECT_POINTERS</a> structure that is associated with the cached file.</p>
+<p>A pointer to the <a href="..\wdm\ns-wdm--section-object-pointers.md">SECTION_OBJECT_POINTERS</a> structure that is associated with the cached file.</p>
 </dd>
 </dl>
 
@@ -65,9 +65,7 @@ PFILE_OBJECT CcGetFileObjectFromSectionPtrsRef(
 <p>A pointer to the file object for the cached file, or <b>NULL</b> if the file is not cached or is no longer cached.</p>
 
 ## -remarks
-<p>The file object is returned with a reference.  The caller is responsible for calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a> on the file object when it has finished using the file object.</p>
-
-<p>The file object is returned with a reference.  The caller is responsible for calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a> on the file object when it has finished using the file object.</p>
+<p>The file object is returned with a reference.  The caller is responsible for calling <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> on the file object when it has finished using the file object.</p>
 
 ## -requirements
 <table>
@@ -124,13 +122,13 @@ PFILE_OBJECT CcGetFileObjectFromSectionPtrsRef(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539104">CcGetFileObjectFromSectionPtrs</a>
+<a href="..\ntifs\nf-ntifs-ccgetfileobjectfromsectionptrs.md">CcGetFileObjectFromSectionPtrs</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563687">SECTION_OBJECT_POINTERS</a>
+<a href="..\wdm\ns-wdm--section-object-pointers.md">SECTION_OBJECT_POINTERS</a>
 </dt>
 </dl>
 <p> </p>

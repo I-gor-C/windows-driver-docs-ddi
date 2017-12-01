@@ -7,7 +7,7 @@ old-location: wdf\wdf_timer_config_init.htm
 old-project: wdf
 ms.assetid: 2bf613ff-e178-4a33-a1ae-ea6d4bb78d0a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_TIMER_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]</p>
-<p>The <b>WDF_TIMER_CONFIG_INIT</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552519">WDF_TIMER_CONFIG</a> structure for a timer that will use a single due time.</p>
+<p>The <b>WDF_TIMER_CONFIG_INIT</b> function initializes a <a href="..\wdftimer\ns-wdftimer--wdf-timer-config.md">WDF_TIMER_CONFIG</a> structure for a timer that will use a single due time.</p>
 
 
 ## -syntax
@@ -60,7 +60,7 @@ VOID WDF_TIMER_CONFIG_INIT(
 ### -param <i>Config</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552519">WDF_TIMER_CONFIG</a> structure. </p>
+<p>A pointer to a <a href="..\wdftimer\ns-wdftimer--wdf-timer-config.md">WDF_TIMER_CONFIG</a> structure. </p>
 </dd>
 
 ### -param <i>EvtTimerFunc</i> [in]
@@ -74,13 +74,9 @@ VOID WDF_TIMER_CONFIG_INIT(
 <p>None</p>
 
 ## -remarks
-<p>The <b>WDF_TIMER_CONFIG_INIT</b> function zeros the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff552519">WDF_TIMER_CONFIG</a> structure. Then it sets the structure's <b>Size</b> member, stores the <i>EvtTimerFunc</i> pointer, sets the <b>Period</b> member and the <b>TolerableDelay</b> member to zero, and sets the <b>AutomaticSerialization</b> member to <b>TRUE</b>. </p>
+<p>The <b>WDF_TIMER_CONFIG_INIT</b> function zeros the specified <a href="..\wdftimer\ns-wdftimer--wdf-timer-config.md">WDF_TIMER_CONFIG</a> structure. Then it sets the structure's <b>Size</b> member, stores the <i>EvtTimerFunc</i> pointer, sets the <b>Period</b> member and the <b>TolerableDelay</b> member to zero, and sets the <b>AutomaticSerialization</b> member to <b>TRUE</b>. </p>
 
-<p>For a code example that uses <b>WDF_TIMER_CONFIG_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a>.</p>
-
-<p>The <b>WDF_TIMER_CONFIG_INIT</b> function zeros the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff552519">WDF_TIMER_CONFIG</a> structure. Then it sets the structure's <b>Size</b> member, stores the <i>EvtTimerFunc</i> pointer, sets the <b>Period</b> member and the <b>TolerableDelay</b> member to zero, and sets the <b>AutomaticSerialization</b> member to <b>TRUE</b>. </p>
-
-<p>For a code example that uses <b>WDF_TIMER_CONFIG_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a>.</p>
+<p>For a code example that uses <b>WDF_TIMER_CONFIG_INIT</b>, see <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>.</p>
 
 ## -requirements
 <table>
@@ -146,12 +142,12 @@ VOID WDF_TIMER_CONFIG_INIT(
 <a href="wdf.evttimerfunc">EvtTimerFunc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552519">WDF_TIMER_CONFIG</a>
+<a href="..\wdftimer\ns-wdftimer--wdf-timer-config.md">WDF_TIMER_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552526">WDF_TIMER_CONFIG_INIT_PERIODIC</a>
+<a href="..\wdftimer\nf-wdftimer-wdf-timer-config-init-periodic.md">WDF_TIMER_CONFIG_INIT_PERIODIC</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_TIMER_CONFIG_INIT function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_TIMER_CONFIG_INIT function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

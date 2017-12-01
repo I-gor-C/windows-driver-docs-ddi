@@ -141,7 +141,7 @@ typedef struct D3DDDIARG_COPYFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn449153">D3DDDIARG_UPDATESUBRESOURCEUP</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-updatesubresourceup.md">D3DDDIARG_UPDATESUBRESOURCEUP</a>
 </dt>
 </dl>
 <p> </p>

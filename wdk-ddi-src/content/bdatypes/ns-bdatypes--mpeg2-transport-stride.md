@@ -7,7 +7,7 @@ old-location: stream\mpeg2_transport_stride.htm
 old-project: stream
 ms.assetid: 5756bb06-8fd3-4124-b3c8-35d5ed0bd57b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: MPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ms.prod: windows-hardware
 ms.technology: windows-devices

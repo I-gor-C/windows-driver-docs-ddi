@@ -91,8 +91,6 @@ HRESULT APIENTRY* pfnCreateCommandQueue(
 ## -remarks
 <p>Access this callback function by using a device functions core structure, such as the <b>D3D12DDI_DEVICE_FUNCS_CORE_0003</b> structure.</p>
 
-<p>Access this callback function by using a device functions core structure, such as the <b>D3D12DDI_DEVICE_FUNCS_CORE_0003</b> structure.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>A helper function that extracts the offset angle from a given value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546700">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration. Only drivers that support path-independent rotation (DXGKDDI_INTERFACE_VERSION &gt;= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION) should call this function.</p>
+<p>A helper function that extracts the offset angle from a given value of the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration. Only drivers that support path-independent rotation (DXGKDDI_INTERFACE_VERSION &gt;= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION) should call this function.</p>
 
 
 ## -syntax
@@ -59,9 +59,9 @@ __inline
 ### -param <i>Rotation</i> 
 
 <dd>
-<p>On input, a value from  the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546700">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration.</p>
-<p>On output, a value between 1 and 4, inclusive, that corresponds to the <b>OFFSET</b> portion of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546700">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> constant values. An output value of 1 (identity) represents 0 degrees of offset, 2 represents 90 degrees, and so on. An output value of 0 indicates that the VidPN path is not initialized.</p>
-<p>The output value is always one of the supported values specified for this path in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546705">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</a> structure.</p>
+<p>On input, a value from  the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration.</p>
+<p>On output, a value between 1 and 4, inclusive, that corresponds to the <b>OFFSET</b> portion of the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> constant values. An output value of 1 (identity) represents 0 degrees of offset, 2 represents 90 degrees, and so on. An output value of 0 indicates that the VidPN path is not initialized.</p>
+<p>The output value is always one of the supported values specified for this path in the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-rotation-support.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</a> structure.</p>
 </dd>
 </dl>
 
@@ -186,10 +186,6 @@ __inline
 
 <p>The driver should use the output value of the <i>Rotation</i> parameter to rotate the secondary clone path content when the Desktop Window Manager (DWM) has already rotated the primary clone path content. For more info, see <a href="https://msdn.microsoft.com/136CEDA5-2839-4E6E-A032-1A9222C769C6">Supporting Path-Independent Rotation</a>.</p>
 
-<p>This function is declared inline in D3dkmdt.h as:</p>
-
-<p>The driver should use the output value of the <i>Rotation</i> parameter to rotate the secondary clone path content when the Desktop Window Manager (DWM) has already rotated the primary clone path content. For more info, see <a href="https://msdn.microsoft.com/136CEDA5-2839-4E6E-A032-1A9222C769C6">Supporting Path-Independent Rotation</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -241,10 +237,10 @@ __inline
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546700">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546705">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-rotation-support.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</a>
 </dt>
 </dl>
 <p> </p>

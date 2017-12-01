@@ -7,7 +7,7 @@ old-location: kernel\wmilib_context.htm
 old-project: kernel
 ms.assetid: c9319f35-9745-47c4-a98d-4321e0d39f86
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WMILIB_CONTEXT, WMILIB_CONTEXT, *PWMILIB_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,50 +71,50 @@ typedef struct _WMILIB_CONTEXT {
 ### -field <b>GuidList</b>
 
 <dd>
-<p>Pointer to an array of <b>GuidCount</b> <a href="https://msdn.microsoft.com/library/windows/hardware/ff565811">WMIGUIDREGINFO</a> structures that contain registration information for each block.</p>
+<p>Pointer to an array of <b>GuidCount</b> <a href="..\wmilib\ns-wmilib--wmiguidreginfo.md">WMIGUIDREGINFO</a> structures that contain registration information for each block.</p>
 </dd>
 
 ### -field <b>QueryWmiRegInfo</b>
 
 <dd>
-<p>Pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544097">DpWmiQueryReginfo</a> routine, which is a required entry point for drivers that call WMI library support routines.</p>
+<p>Pointer to the driver's <a href="kernel.dpwmiqueryreginfo">DpWmiQueryReginfo</a> routine, which is a required entry point for drivers that call WMI library support routines.</p>
 </dd>
 
 ### -field <b>QueryWmiDataBlock</b>
 
 <dd>
-<p>Pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544096">DpWmiQueryDataBlock</a> routine, which is a required entry point for drivers that call WMI library support routines.</p>
+<p>Pointer to the driver's <a href="kernel.dpwmiquerydatablock">DpWmiQueryDataBlock</a> routine, which is a required entry point for drivers that call WMI library support routines.</p>
 </dd>
 
 ### -field <b>SetWmiDataBlock</b>
 
 <dd>
-<p>Pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544104">DpWmiSetDataBlock</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_WMI_READ_ONLY to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550831">IRP_MN_CHANGE_SINGLE_INSTANCE</a> request.</p>
+<p>Pointer to the driver's <a href="kernel.dpwmisetdatablock">DpWmiSetDataBlock</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_WMI_READ_ONLY to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550831">IRP_MN_CHANGE_SINGLE_INSTANCE</a> request.</p>
 </dd>
 
 ### -field <b>SetWmiDataItem</b>
 
 <dd>
-<p>Pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544108">DpWmiSetDataItem</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_WMI_READ_ONLY to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550836">IRP_MN_CHANGE_SINGLE_ITEM</a> request.</p>
+<p>Pointer to the driver's <a href="kernel.dpwmisetdataitem">DpWmiSetDataItem</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_WMI_READ_ONLY to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550836">IRP_MN_CHANGE_SINGLE_ITEM</a> request.</p>
 </dd>
 
 ### -field <b>ExecuteWmiMethod</b>
 
 <dd>
-<p>Pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544090">DpWmiExecuteMethod</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_INVALID_DEVICE_REQUEST to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550868">IRP_MN_EXECUTE_METHOD</a> request.</p>
+<p>Pointer to the driver's <a href="kernel.dpwmiexecutemethod">DpWmiExecuteMethod</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_INVALID_DEVICE_REQUEST to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550868">IRP_MN_EXECUTE_METHOD</a> request.</p>
 </dd>
 
 ### -field <b>WmiFunctionControl</b>
 
 <dd>
-<p>Pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544094">DpWmiFunctionControl</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_SUCCESS to the caller in response to any <b>IRP_MN_ENABLE_<i>XXX</i></b> or <b>IRP_MN_DISABLE_<i>XXX</i></b> request.</p>
+<p>Pointer to the driver's <a href="kernel.dpwmifunctioncontrol">DpWmiFunctionControl</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_SUCCESS to the caller in response to any <b>IRP_MN_ENABLE_<i>XXX</i></b> or <b>IRP_MN_DISABLE_<i>XXX</i></b> request.</p>
 </dd>
 </dl>
 
 ## -remarks
 <p>A driver that handles WMI IRPs by calling WMI library support routines stores an initialized <b>WMILIB_CONTEXT</b> structure (or a pointer to such a structure) in its device extension. A driver can use the same <b>WMILIB_CONTEXT</b> structure for multiple device objects if each device object supplies the same set of data blocks. </p>
 
-<p>When the driver receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550813">IRP_MJ_SYSTEM_CONTROL</a> request, it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff565834">WmiSystemControl</a> with a pointer to its <b>WMILIB_CONTEXT</b> structure, a pointer to its device object, and a pointer to the IRP. <b>WmiSystemControl</b> determines whether the IRP contains a WMI request and, if so, handles the request by calling the driver's appropriate <i>DpWmiXxx</i> routine.</p>
+<p>When the driver receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550813">IRP_MJ_SYSTEM_CONTROL</a> request, it calls <a href="..\wmilib\nf-wmilib-wmisystemcontrol.md">WmiSystemControl</a> with a pointer to its <b>WMILIB_CONTEXT</b> structure, a pointer to its device object, and a pointer to the IRP. <b>WmiSystemControl</b> determines whether the IRP contains a WMI request and, if so, handles the request by calling the driver's appropriate <i>DpWmiXxx</i> routine.</p>
 
 <p>Memory for this structure can be allocated from paged pool.</p>
 
@@ -135,30 +135,30 @@ typedef struct _WMILIB_CONTEXT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544090">DpWmiExecuteMethod</a>
+<a href="kernel.dpwmiexecutemethod">DpWmiExecuteMethod</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544094">DpWmiFunctionControl</a>
+<a href="kernel.dpwmifunctioncontrol">DpWmiFunctionControl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544097">DpWmiQueryReginfo</a>
+<a href="kernel.dpwmiqueryreginfo">DpWmiQueryReginfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544096">DpWmiQueryDataBlock</a>
+<a href="kernel.dpwmiquerydatablock">DpWmiQueryDataBlock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544104">DpWmiSetDataBlock</a>
+<a href="kernel.dpwmisetdatablock">DpWmiSetDataBlock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544108">DpWmiSetDataItem</a>
+<a href="kernel.dpwmisetdataitem">DpWmiSetDataItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565811">WMIGUIDREGINFO</a>
+<a href="..\wmilib\ns-wmilib--wmiguidreginfo.md">WMIGUIDREGINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565834">WmiSystemControl</a>
+<a href="..\wmilib\nf-wmilib-wmisystemcontrol.md">WmiSystemControl</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WMILIB_CONTEXT structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WMILIB_CONTEXT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

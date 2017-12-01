@@ -69,10 +69,6 @@ PDEVICE_OBJECT IoGetDeviceToVerify(
 
 <p>An underlying removable-media device driver is responsible for notifying higher-level drivers, particularly the file system, when the media appears to have changed since the last access to the target device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563916">Supporting Removable Media</a>.</p>
 
-<p>In general, highest-level drivers, particularly file systems, are most likely to call this routine.</p>
-
-<p>An underlying removable-media device driver is responsible for notifying higher-level drivers, particularly the file system, when the media appears to have changed since the last access to the target device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563916">Supporting Removable Media</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -136,7 +132,7 @@ PDEVICE_OBJECT IoGetDeviceToVerify(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj157234">IrqlIoDispatch</a>
+<a href="devtest.wdm_irqliodispatch">IrqlIoDispatch</a>
 </td>
 </tr>
 </table>
@@ -144,16 +140,16 @@ PDEVICE_OBJECT IoGetDeviceToVerify(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549375">IoIsErrorUserInduced</a>
+<a href="..\wdm\nf-wdm-ioiserroruserinduced.md">IoIsErrorUserInduced</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549707">IoSetHardErrorOrVerifyDevice</a>
+<a href="..\ntddk\nf-ntddk-iosetharderrororverifydevice.md">IoSetHardErrorOrVerifyDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559936">PsGetCurrentThread</a>
+<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548529">IoSetDeviceToVerify</a>
+<a href="..\ntifs\nf-ntifs-iosetdevicetoverify.md">IoSetDeviceToVerify</a>
 </dt>
 </dl>
 <p> </p>

@@ -64,18 +64,14 @@ NTSTATUS FltCloseSectionForDataScan(
 ## -returns
 <p><b>FltCloseSectionForDataScan</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following.</p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl><p>The section context was not properly created. An allocated section context must first be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/hh450937">FltCreateSectionForDataScan</a>. This is an error code. </p><dl>
+</dl><p>The section context was not properly created. An allocated section context must first be passed to <a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>. This is an error code. </p><dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
 </dl><p>The section context is already closed.</p>
 
 <p> </p>
 
 ## -remarks
-<p>Minifilters use the <b>FltCloseSectionForDataScan</b> routine to deallocate  and remove a section context from a file object. All previously allocated section contexts passed to <a href="https://msdn.microsoft.com/library/windows/hardware/hh450937">FltCreateSectionForDataScan</a> must be passed to <b>FltCloseSectionForDataScan</b>. Otherwise, minifilters can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544314">FltReleaseContext</a> if the section context was allocated with <a href="https://msdn.microsoft.com/library/windows/hardware/ff541710">FltAllocateContext</a> but no section was created with  <b>FltCreateSectionForDataScan</b>.</p>
-
-<p>After <b>FltCloseSectionForDataScan</b> returns, operations that conflict with the section  described by <i>SectionContext</i> will not be synchronized by the filter manager.</p>
-
-<p>Minifilters use the <b>FltCloseSectionForDataScan</b> routine to deallocate  and remove a section context from a file object. All previously allocated section contexts passed to <a href="https://msdn.microsoft.com/library/windows/hardware/hh450937">FltCreateSectionForDataScan</a> must be passed to <b>FltCloseSectionForDataScan</b>. Otherwise, minifilters can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544314">FltReleaseContext</a> if the section context was allocated with <a href="https://msdn.microsoft.com/library/windows/hardware/ff541710">FltAllocateContext</a> but no section was created with  <b>FltCreateSectionForDataScan</b>.</p>
+<p>Minifilters use the <b>FltCloseSectionForDataScan</b> routine to deallocate  and remove a section context from a file object. All previously allocated section contexts passed to <a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a> must be passed to <b>FltCloseSectionForDataScan</b>. Otherwise, minifilters can call <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a> if the section context was allocated with <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a> but no section was created with  <b>FltCreateSectionForDataScan</b>.</p>
 
 <p>After <b>FltCloseSectionForDataScan</b> returns, operations that conflict with the section  described by <i>SectionContext</i> will not be synchronized by the filter manager.</p>
 
@@ -132,13 +128,13 @@ NTSTATUS FltCloseSectionForDataScan(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541710">FltAllocateContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450937">FltCreateSectionForDataScan</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541960">FltDeleteContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
 </dt>
 </dl>
 <p> </p>

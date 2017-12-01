@@ -7,7 +7,7 @@ old-location: stream\dvinfo.htm
 old-project: stream
 ms.assetid: 3afd372f-556f-4c3a-804b-9bf7a8c9a438
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DVINFO, DVINFO, *PDVINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

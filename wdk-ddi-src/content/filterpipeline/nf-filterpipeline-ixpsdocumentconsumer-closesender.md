@@ -65,8 +65,6 @@ HRESULT STDMETHODCALLTYPE CloseSender(
 ## -remarks
 <p>The filter must call the <code>CloseSender</code> method when it has finished sending the XPS parts to the pipeline.</p>
 
-<p>The filter must call the <code>CloseSender</code> method when it has finished sending the XPS parts to the pipeline.</p>
-
 ## -requirements
 <table>
 <tr>

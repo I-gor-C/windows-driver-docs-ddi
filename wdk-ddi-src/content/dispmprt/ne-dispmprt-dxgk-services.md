@@ -62,19 +62,19 @@ typedef enum  {
 ### -field <a id="DxgkServicesAgp"></a><a id="dxgkservicesagp"></a><a id="DXGKSERVICESAGP"></a><b>DxgkServicesAgp</b>
 
 <dd>
-<p>Indicates the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538228">AGP Interface</a>.</p>
+<p>Indicates the <a href="display.agp_interface">AGP Interface</a>.</p>
 </dd>
 
 ### -field <a id="DxgkServicesDebugReport"></a><a id="dxgkservicesdebugreport"></a><a id="DXGKSERVICESDEBUGREPORT"></a><b>DxgkServicesDebugReport</b>
 
 <dd>
-<p>Indicates the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551798">Debug Report interface</a>.</p>
+<p>Indicates the <a href="display.debug_report_interface">Debug Report interface</a>.</p>
 </dd>
 
 ### -field <a id="DxgkServicesTimedOperation"></a><a id="dxgkservicestimedoperation"></a><a id="DXGKSERVICESTIMEDOPERATION"></a><b>DxgkServicesTimedOperation</b>
 
 <dd>
-<p>Indicates the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation interface</a>.</p>
+<p>Indicates the <a href="display.timed_operation_interface">Timed Operation interface</a>.</p>
 </dd>
 
 ### -field <a id="DxgkServicesSPB"></a><a id="dxgkservicesspb"></a><a id="DXGKSERVICESSPB"></a><b>DxgkServicesSPB</b>
@@ -94,16 +94,12 @@ typedef enum  {
 ### -field <a id="DxgkServicesFirmwareTable"></a><a id="dxgkservicesfirmwaretable"></a><a id="DXGKSERVICESFIRMWARETABLE"></a><b>DxgkServicesFirmwareTable</b>
 
 <dd>
-<p>Indicates the <a href="https://msdn.microsoft.com/library/windows/hardware/jj647606">System Firmware Table Interface</a>.</p>
+<p>Indicates the <a href="display.system_firmware_table_interface">System Firmware Table Interface</a>.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>An interface, in this context, is a set of function pointers. The functions in the AGP, Debug Report, Timed Operation, SPB, and System Firmware Table interfaces are implemented by the Microsoft DirectX graphics kernel subsystem and called by the display miniport driver.</p>
-
-<p>An interface, in this context, is a set of function pointers. The functions in the AGP, Debug Report, Timed Operation, SPB, and System Firmware Table interfaces are implemented by the Microsoft DirectX graphics kernel subsystem and called by the display miniport driver.</p>
-
 <p>An interface, in this context, is a set of function pointers. The functions in the AGP, Debug Report, Timed Operation, SPB, and System Firmware Table interfaces are implemented by the Microsoft DirectX graphics kernel subsystem and called by the display miniport driver.</p>
 
 ## -requirements

@@ -99,18 +99,6 @@ VP_STATUS VideoPortRegisterBugcheckCallback(
 
 <p>For more information, see <a href="https://msdn.microsoft.com/181fd4f2-feed-4759-80a7-aec97b9094b3">Video Port Driver Support for Bug Check Callbacks</a>.</p>
 
-<p>If you are developing a video miniport driver intended to run on Windows XP or an earlier NT-base operating system, you can use the <a href="..\video\nc-video-pvideo-port-get-proc-address.md">VideoPortGetProcAddress</a> callback routine to find the address of the <b>VideoPortRegisterBugcheckCallback</b> function. For details, see <a href="https://msdn.microsoft.com/48dace7e-7ba3-48bf-9788-469ff42f6fe3">Using VideoPortGetProcAddress</a>.</p>
-
-<p>A miniport driver can register for a callback when a specific type of bug check occurs. Currently, only <a href="https://msdn.microsoft.com/f3d6acaf-3445-4fc3-b4ed-b72a74a32b57">bug check code 0xEA</a> can be hooked. When the bug check occurs, the minidriver-supplied callback function is called and the miniport driver can append data to the dump file. This is useful for collecting statistical data when direct debugging is not possible.</p>
-
-<p>The value of the <i>BugcheckDataSize </i>parameter must be BUGCHECK_DATA_SIZE_RESERVED bytes larger than the data provided by the miniport driver. For example, suppose the miniport driver provides DUMP_SIZE bytes of data to be written to the dump file. Then the value of <i>BugcheckDataSize</i> should be DUMP_SIZE + BUGCHECK_DATA_SIZE_RESERVED, and that total value must be less than or equal to 4000.</p>
-
-<p>The constant BUGCHECK_DATA_SIZE_RESERVED (defined in <i>video.h</i>) is available in Microsoft Windows Server 2003 and later build environments. In the Windows XP SP1 build environment, use 48 instead of BUGCHECK_DATA_SIZE_RESERVED.</p>
-
-<p>The miniport driver can unregister a previously-registered callback by calling this function, specifying <b>NULL</b> for the <i>Callback</i> parameter, or zero for the <i>DataSize</i> parameter.</p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/181fd4f2-feed-4759-80a7-aec97b9094b3">Video Port Driver Support for Bug Check Callbacks</a>.</p>
-
 ## -requirements
 <table>
 <tr>

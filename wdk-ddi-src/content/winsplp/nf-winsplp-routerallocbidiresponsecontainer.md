@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p><code>RouterAllocBidiResponseContainer</code> allocates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545202">BIDI_RESPONSE_CONTAINER</a> structure containing a list of bidi responses. The bidi response list is an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff545204">BIDI_RESPONSE_DATA</a> structures.</p>
+<p><code>RouterAllocBidiResponseContainer</code> allocates a <a href="..\winspool\ns-winspool--bidi-response-container.md">BIDI_RESPONSE_CONTAINER</a> structure containing a list of bidi responses. The bidi response list is an array of <a href="..\winspool\ns-winspool--bidi-response-data.md">BIDI_RESPONSE_DATA</a> structures.</p>
 
 
 ## -syntax
@@ -66,9 +66,7 @@ PBIDI_RESPONSE_CONTAINER RouterAllocBidiResponseContainer(
 <p><code>RouterAllocBidiResponseContainer</code> returns a pointer to the allocated structure, on success. If the function fails to allocate the structure, the caller can obtain the error code from <b>GetLastError</b> (described in the Microsoft Windows SDK documentation).</p>
 
 ## -remarks
-<p>When the memory allocated by this function is no longer needed, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562013">RouterFreeBidiResponseContainer</a>.</p>
-
-<p>When the memory allocated by this function is no longer needed, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562013">RouterFreeBidiResponseContainer</a>.</p>
+<p>When the memory allocated by this function is no longer needed, use <a href="..\winsplp\nf-winsplp-routerfreebidiresponsecontainer.md">RouterFreeBidiResponseContainer</a>.</p>
 
 ## -requirements
 <table>
@@ -125,16 +123,16 @@ PBIDI_RESPONSE_CONTAINER RouterAllocBidiResponseContainer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545204">BIDI_RESPONSE_DATA</a>
+<a href="..\winspool\ns-winspool--bidi-response-data.md">BIDI_RESPONSE_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545202">BIDI_RESPONSE_CONTAINER</a>
+<a href="..\winspool\ns-winspool--bidi-response-container.md">BIDI_RESPONSE_CONTAINER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562013">RouterFreeBidiResponseContainer</a>
+<a href="..\winsplp\nf-winsplp-routerfreebidiresponsecontainer.md">RouterFreeBidiResponseContainer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562071">SendRecvBidiDataFromPort</a>
+<a href="print.sendrecvbididatafromport">SendRecvBidiDataFromPort</a>
 </dt>
 </dl>
 <p> </p>

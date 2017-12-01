@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The WIAS_DOWN_SAMPLE_INFO structure stores information used by the downsampling helper function, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549185">wiasDownSampleBuffer</a>.</p>
+<p>The WIAS_DOWN_SAMPLE_INFO structure stores information used by the downsampling helper function, <a href="..\wiamdef\nf-wiamdef-wiasdownsamplebuffer.md">wiasDownSampleBuffer</a>.</p>
 
 
 ## -syntax
@@ -167,7 +167,7 @@ typedef struct _WIAS_DOWN_SAMPLE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549185">wiasDownSampleBuffer</a>
+<a href="..\wiamdef\nf-wiamdef-wiasdownsamplebuffer.md">wiasDownSampleBuffer</a>
 </dt>
 </dl>
 <p> </p>

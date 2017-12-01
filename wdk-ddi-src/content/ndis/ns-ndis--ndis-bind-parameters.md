@@ -7,7 +7,7 @@ old-location: netvista\ndis_bind_parameters.htm
 old-project: netvista
 ms.assetid: 0a4866a8-a2f2-447b-8aa9-73203b7fc4bb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_BIND_PARAMETERS, NDIS_BIND_PARAMETERS, *PNDIS_BIND_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -109,7 +109,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 
 <dd>
 <p>The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_BIND_PARAMETERS</b> structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_BIND_PARAMETERS.
@@ -193,7 +193,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
      <b>NdisMedium</b><i>Xxx</i> type that the underlying miniport adapter supports. For more information
      about 
      <b>NdisMedium</b><i>Xxx</i> types, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565910">NDIS_MEDIUM</a>.</p>
+     <a href="..\ntddndis\ne-ntddndis--ndis-medium.md">NDIS_MEDIUM</a>.</p>
 </dd>
 
 ### -field <b>MtuSize</b>
@@ -316,7 +316,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 
 <dd>
 <p>The NDIS 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value, that is also the network interface
+     <a href="netvista.net_luid">NET_LUID</a> value, that is also the network interface
      name (
      <i>ifName</i> in RFC 2863), of the highest level interface that is stacked on the
      miniport adapter. That is, if there are virtual miniports or filter modules that are installed over the
@@ -336,7 +336,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 
 <dd>
 <p>The NDIS 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value, that is also the network interface
+     <a href="netvista.net_luid">NET_LUID</a> value, that is also the network interface
      name (
      <i>ifName</i> in RFC 2863), of the lowest level interface on a binding. That is, the
      NDIS network interface of the miniport adapter at the bottom of a filter stack.</p>
@@ -353,7 +353,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a> NDIS network interface
+     <a href="netvista.net_if_access_type">NET_IF_ACCESS_TYPE</a> NDIS network interface
      access type.</p>
 </dd>
 
@@ -361,7 +361,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a> NDIS network
+     <a href="netvista.net_if_direction_type">NET_IF_DIRECTION_TYPE</a> NDIS network
      interface direction type.</p>
 </dd>
 
@@ -467,7 +467,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566599">NDIS_OFFLOAD</a> structure. This structure
+     <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> structure. This structure
      specifies the capabilities for a task-offload-capable miniport adapter. For more information, see 
      <a href="netvista.oid_tcp_offload_current_config">
      OID_TCP_OFFLOAD_CURRENT_CONFIG</a>.</p>
@@ -515,7 +515,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566748">NDIS_PM_CAPABILITIES</a> structure. This
+     <a href="..\ntddndis\ns-ntddndis--ndis-pm-capabilities.md">NDIS_PM_CAPABILITIES</a> structure. This
      structure specifies power management capabilities of the miniport adapter. This member is mandatory for
      NDIS 6.20 and later drivers.</p>
 </dd>
@@ -539,19 +539,19 @@ typedef struct _NDIS_BIND_PARAMETERS {
 ### -field <b>NDKCapabilities</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451560">NDIS_NDK_CAPABILITIES</a> structure. This structure specifies the NDKPI capabilities that are currently enabled on the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does not support NDKPI.</p>
+<p>A pointer to an <a href="..\ntddndis\ns-ntddndis--ndis-ndk-capabilities.md">NDIS_NDK_CAPABILITIES</a> structure. This structure specifies the NDKPI capabilities that are currently enabled on the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does not support NDKPI.</p>
 </dd>
 
 ### -field <b>SriovCapabilities</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451677">NDIS_SRIOV_CAPABILITIES</a> structure. This structure specifies the single root I/O virtualization (SR-IOV) capabilities that are currently enabled on the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does not support SR-IOV features.</p>
+<p>A pointer to an <a href="..\ntddndis\ns-ntddndis--ndis-sriov-capabilities.md">NDIS_SRIOV_CAPABILITIES</a> structure. This structure specifies the single root I/O virtualization (SR-IOV) capabilities that are currently enabled on the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does not support SR-IOV features.</p>
 </dd>
 
 ### -field <b>NicSwitchArray</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451584">NDIS_NIC_SWITCH_INFO_ARRAY</a> structure.  This array enumerates the NIC switches that have been created on the miniport adapter. NIC switches can only be created if SR-IOV is supported and enabled on the adapter. </p>
+<p>A pointer to an <a href="..\ntddndis\ns-ntddndis--ndis-nic-switch-info-array.md">NDIS_NIC_SWITCH_INFO_ARRAY</a> structure.  This array enumerates the NIC switches that have been created on the miniport adapter. NIC switches can only be created if SR-IOV is supported and enabled on the adapter. </p>
 <div class="alert"><b>Note</b>  Starting with Windows Server 2012, Windows supports only the default NIC switch on the miniport adapter. Therefore, this array can contain only one element. </div>
 <div> </div>
 </dd>
@@ -588,41 +588,41 @@ typedef struct _NDIS_BIND_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565696">NDIS_HD_SPLIT_CURRENT_CONFIG</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-hd-split-current-config.md">NDIS_HD_SPLIT_CURRENT_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565910">NDIS_MEDIUM</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-medium.md">NDIS_MEDIUM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566583">NDIS_NIC_SWITCH_CAPABILITIES</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-nic-switch-capabilities.md">NDIS_NIC_SWITCH_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451584">NDIS_NIC_SWITCH_INFO_ARRAY</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-nic-switch-info-array.md">NDIS_NIC_SWITCH_INFO_ARRAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566599">NDIS_OFFLOAD</a>
+<a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566748">NDIS_PM_CAPABILITIES</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-pm-capabilities.md">NDIS_PM_CAPABILITIES</a>
 </dt>
 <dt>
 <a href="..\ntddndis\ns-ntddndis--ndis-receive-filter-capabilities.md">
    NDIS_RECEIVE_FILTER_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451677">NDIS_SRIOV_CAPABILITIES</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-sriov-capabilities.md">NDIS_SRIOV_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a>
+<a href="netvista.net_if_access_type">NET_IF_ACCESS_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a>
+<a href="netvista.net_if_direction_type">NET_IF_DIRECTION_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
+<a href="netvista.net_luid">NET_LUID</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569069">OID_802_3_CURRENT_ADDRESS</a>
@@ -666,7 +666,7 @@ typedef struct _NDIS_BIND_PARAMETERS {
    OID_GEN_SUPPORTED_PACKET_FILTERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567875">NDIS_TCP_CONNECTION_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-tcp-connection-offload.md">NDIS_TCP_CONNECTION_OFFLOAD</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569805">OID_TCP_OFFLOAD_CURRENT_CONFIG</a>
@@ -680,4 +680,4 @@ typedef struct _NDIS_BIND_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_BIND_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_BIND_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

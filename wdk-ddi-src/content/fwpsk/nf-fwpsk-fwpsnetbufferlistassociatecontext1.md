@@ -7,7 +7,7 @@ old-location: netvista\fwpsnetbufferlistassociatecontext1.htm
 old-project: netvista
 ms.assetid: 86e9662e-d308-4e3a-98c1-4134186f1bad
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsNetBufferListAssociateContext1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The 
   <b>FwpsNetBufferListAssociateContext1</b> function associates the callout driver's context with a network buffer
-  list and configures notification for network buffer list events.<div class="alert"><b>Note</b>  <b>FwpsNetBufferListAssociateContext1</b> is the specific version of <b>FwpsNetBufferListAssociateContext</b> used in Windows 8 and later. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information. For Windows 7, <a href="https://msdn.microsoft.com/library/windows/hardware/ff551191">FwpsNetBufferListAssociateContext0</a> is available.</div>
+  list and configures notification for network buffer list events.<div class="alert"><b>Note</b>  <b>FwpsNetBufferListAssociateContext1</b> is the specific version of <b>FwpsNetBufferListAssociateContext</b> used in Windows 8 and later. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information. For Windows 7, <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">FwpsNetBufferListAssociateContext0</a> is available.</div>
 <div> </div>
 </p>
 
@@ -84,7 +84,7 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext1(
 <p>Arbitrary context information set by the callout driver. The filter engine will pass this context
      to the callout driver's 
      
-     <a href="https://msdn.microsoft.com/library/windows/hardware/hh451260">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a> function.</p>
+     <a href="..\fwpsk\nc-fwpsk-fwps-net-buffer-list-notify-fn1.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a> function.</p>
 </dd>
 
 ### -param <i>contextTag</i> [in]
@@ -111,7 +111,7 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext1(
 
 <dd>
 <p>A pointer to the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/hh451260">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a> function. The filter engine will send status notifications to this
+     <a href="..\fwpsk\nc-fwpsk-fwps-net-buffer-list-notify-fn1.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a> function. The filter engine will send status notifications to this
      function.</p>
 </dd>
 
@@ -138,25 +138,12 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext1(
     Packets of interest can be tracked for inspection through multiple layers in the stack.</p>
 
 <p>Before calling this function, the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551192">FwpsNetBufferListGetTagForContext0</a> function must be called to obtain a context tag.</p>
+    <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistgettagforcontext0.md">FwpsNetBufferListGetTagForContext0</a> function must be called to obtain a context tag.</p>
 
 <p>This function is essentially identical to the previous version, 
     
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff551191">FwpsNetBufferListAssociateContext0</a>. The only difference is the 
-       updated <a href="https://msdn.microsoft.com/library/windows/hardware/hh451260">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a> function pointed to by the 
-       <i>notifyFn</i> parameter.</p>
-
-<p>The 
-    <b>FwpsNetBufferListAssociateContext1</b> function associates groups of packets with the callout driver.
-    Packets of interest can be tracked for inspection through multiple layers in the stack.</p>
-
-<p>Before calling this function, the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551192">FwpsNetBufferListGetTagForContext0</a> function must be called to obtain a context tag.</p>
-
-<p>This function is essentially identical to the previous version, 
-    
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff551191">FwpsNetBufferListAssociateContext0</a>. The only difference is the 
-       updated <a href="https://msdn.microsoft.com/library/windows/hardware/hh451260">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a> function pointed to by the 
+  <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">FwpsNetBufferListAssociateContext0</a>. The only difference is the 
+       updated <a href="..\fwpsk\nc-fwpsk-fwps-net-buffer-list-notify-fn1.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a> function pointed to by the 
        <i>notifyFn</i> parameter.</p>
 
 ## -requirements
@@ -212,13 +199,13 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext1(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451260">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-net-buffer-list-notify-fn1.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551191">FwpsNetBufferListAssociateContext0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">FwpsNetBufferListAssociateContext0</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistgettagforcontext0.md">
@@ -238,4 +225,4 @@ NTSTATUS NTAPI FwpsNetBufferListAssociateContext1(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListAssociateContext1 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListAssociateContext1 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

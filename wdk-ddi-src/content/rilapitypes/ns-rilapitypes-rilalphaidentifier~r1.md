@@ -7,7 +7,7 @@ old-location: netvista\rilalphaidentifier_2.htm
 old-project: netvista
 ms.assetid: 40656b8d-3921-420e-9577-12ba272aa72c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILALPHAIDENTIFIER,
 ms.prod: windows-hardware
 ms.technology: windows-devices

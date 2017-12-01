@@ -7,7 +7,7 @@ old-location: netvista\rilgetdriverversionparams_2.htm
 old-project: netvista
 ms.assetid: b396b12e-f8c4-4e5e-b3c4-9822bcd996a4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILGETDRIVERVERSIONPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

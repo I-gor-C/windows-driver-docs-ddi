@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackcreate.htm
 old-project: wdf
 ms.assetid: 50b8acc6-5f08-47d5-b45d-31ff33a06be1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556841">IQueueCallbackCreate::OnCreateFile</a>
+<a href="wdf.iqueuecallbackcreate_oncreatefile">IQueueCallbackCreate::OnCreateFile</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iqueuecallbackcreate_oncreatefile">OnCreateFile</a> method is called to handle an open file request when an application opens a device through the Microsoft Win32 <b>CreateFile</b> function. </p>
@@ -72,9 +72,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>A driver registers the <b>IQueueCallbackCreate</b> interface when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a> method to create an I/O queue or to configure the default I/O queue. For more information about creating or configuring an I/O queue, see <a href="wdf.configuring_dispatch_mode_for_an_i_o_queue">Configuring Dispatch Mode for an I/O Queue</a>.</p>
-
-<p>A driver registers the <b>IQueueCallbackCreate</b> interface when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a> method to create an I/O queue or to configure the default I/O queue. For more information about creating or configuring an I/O queue, see <a href="wdf.configuring_dispatch_mode_for_an_i_o_queue">Configuring Dispatch Mode for an I/O Queue</a>.</p>
+<p>A driver registers the <b>IQueueCallbackCreate</b> interface when it calls the <a href="wdf.iwdfdevice_createioqueue">IWDFDevice::CreateIoQueue</a> method to create an I/O queue or to configure the default I/O queue. For more information about creating or configuring an I/O queue, see <a href="wdf.configuring_dispatch_mode_for_an_i_o_queue">Configuring Dispatch Mode for an I/O Queue</a>.</p>
 
 ## -requirements
 <table>

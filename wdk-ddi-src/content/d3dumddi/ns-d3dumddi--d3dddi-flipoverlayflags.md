@@ -116,7 +116,7 @@ typedef struct _D3DDDI_FLIPOVERLAYFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543124">D3DDDIARG_FLIPOVERLAY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-flipoverlay.md">D3DDDIARG_FLIPOVERLAY</a>
 </dt>
 </dl>
 <p> </p>

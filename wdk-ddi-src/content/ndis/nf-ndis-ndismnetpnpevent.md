@@ -7,7 +7,7 @@ old-location: netvista\ndismnetpnpevent.htm
 old-project: netvista
 ms.assetid: cbb097c1-dd20-4c6d-b23a-1e7683ac3e94
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMNetPnPEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -178,69 +178,6 @@ NDIS_STATUS NdisMNetPnPEvent(
     <a href="..\ndis\nc-ndis-protocol-net-pnp-event.md">ProtocolNetPnPEvent</a> function should propagate the status value that is returned by 
     <b>NdisMNetPnPEvent</b>.</p>
 
-<p>Any miniport driver can call 
-    <b>NdisMNetPnPEvent</b> to generate 
-    <b>NetEventPortActivation</b> and 
-    <b>NetEventPortDeactivation</b> events. Only intermediate drivers can make other event notifications.</p>
-
-<p>To propagate notification of a network Plug and Play event, an NDIS PnP event, or Power Management
-    event to overlying drivers, an NDIS intermediate driver calls 
-    <b>NdisMNetPnPEvent</b> in the context of the driver's 
-    <a href="..\ndis\nc-ndis-protocol-net-pnp-event.md">ProtocolNetPnPEvent</a> function.</p>
-
-<p>If the propagated event is a 
-    <b>NetEventQueryPower</b> or a 
-    <b>NetEventQueryRemoveDevice</b>, the intermediate driver must check the NDIS_STATUS value that is
-    returned by 
-    <b>NdisMNetPnPEvent</b>. If the returned status is NDIS_STATUS_SUCCESS, the intermediate driver should
-    handle the event and then return NDIS_STATUS_SUCCESS from its 
-    <a href="..\ndis\nc-ndis-protocol-net-pnp-event.md">ProtocolNetPnPEvent</a> function. If the returned status is not NDIS_STATUS_SUCCESS, the intermediate
-    driver should return the reported status from its 
-    <i>ProtocolNetPnPEvent</i> function without further processing.</p>
-
-<p>How the intermediate driver processes a 
-    <b>NetEventSetPower</b> received by its 
-    <a href="..\ndis\nc-ndis-protocol-net-pnp-event.md">ProtocolNetPnPEvent</a> function depends on the specified device power state. If the specified device
-    power state is 
-    <b>NdisDeviceStateD0</b>, the intermediate driver should handle the event and then call 
-    <b>NdisMNetPnPEvent</b>. For any other specified device power state, the intermediate driver should first
-    call 
-    <b>NdisMNetPnPEvent</b> and then handle the event.</p>
-
-<p>An intermediate driver should call 
-    <b>NdisMNetPnPEvent</b> to propagate a 
-    <b>NetEventReconfigure</b> or 
-    <b>NetEventBindList</b> only if the 
-    <b>NetEventReconfigure</b> or 
-    <b>NetEventBindList</b> is indicated on a non-<b>NULL</b>
-<i>ProtocolBindingContext</i>. If a 
-    <b>NetEventReconfigure</b> or 
-    <b>NetEventBindList</b> is indicated on a <b>NULL</b>
-<i>ProtocolBindingContext</i>, the intermediate driver should not call 
-    <b>NdisMNetPnPEvent</b> to propagate the event.</p>
-
-<p>If an intermediate driver handles a 
-    <b>NetEventReconfigure</b> or a 
-    <b>NetEventBindList</b>, it should validate any data associated with the event.</p>
-
-<p>An intermediate driver should not propagate the 
-    <b>NetEventBindsComplete</b>, 
-    <b>NetEventPause</b>, 
-    <b>NetEventRestart</b>, 
-    <b>NetEventPortActivation</b>, or 
-    <b>NetEventPortDeactivation</b> events by calling 
-    <b>NdisMNetPnPEvent</b>.</p>
-
-<p>An NDIS intermediate driver can generate its own NDIS port events for virtual miniports as
-    appropriate for the 
-    <b>NetEventPortActivation</b> or 
-    <b>NetEventPortDeactivation</b> events that it receives at its 
-    <a href="..\ndis\nc-ndis-protocol-net-pnp-event.md">ProtocolNetPnPEvent</a> function.</p>
-
-<p>For all other propagated events, the intermediate driver's 
-    <a href="..\ndis\nc-ndis-protocol-net-pnp-event.md">ProtocolNetPnPEvent</a> function should propagate the status value that is returned by 
-    <b>NdisMNetPnPEvent</b>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -294,7 +231,7 @@ NDIS_STATUS NdisMNetPnPEvent(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547996">Irql_Protocol_Driver_Function</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975120">NdisMNetPnPEventInOIDRequest</a>
+<a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>, <a href="devtest.ndis_ndismnetpnpeventinoidrequest">NdisMNetPnPEventInOIDRequest</a>
 </td>
 </tr>
 </table>
@@ -308,7 +245,7 @@ NDIS_STATUS NdisMNetPnPEvent(
 <a href="..\ndis\nc-ndis-miniport-oid-request.md">MiniportOidRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568752">NET_PNP_EVENT_NOTIFICATION</a>
+<a href="..\ndis\ns-ndis--net-pnp-event-notification.md">NET_PNP_EVENT_NOTIFICATION</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-net-pnp-event.md">ProtocolNetPnPEvent</a>
@@ -316,4 +253,4 @@ NDIS_STATUS NdisMNetPnPEvent(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMNetPnPEvent function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMNetPnPEvent function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

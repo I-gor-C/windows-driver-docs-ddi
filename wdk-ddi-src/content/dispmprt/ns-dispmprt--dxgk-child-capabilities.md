@@ -72,7 +72,7 @@ typedef struct _DXGK_CHILD_CAPABILITIES {
 ### -field <b>VideoOutput</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562070">DXGK_VIDEO_OUTPUT_CAPABILITIES</a> structure that contains information about a video output. This member is meaningful only if the child device has type <b>TypeVideoOutput</b>.</p>
+<p>A <a href="..\dispmprt\ns-dispmprt--dxgk-video-output-capabilities.md">DXGK_VIDEO_OUTPUT_CAPABILITIES</a> structure that contains information about a video output. This member is meaningful only if the child device has type <b>TypeVideoOutput</b>.</p>
 </dd>
 
 ### -field <b>Other</b>
@@ -100,12 +100,12 @@ typedef struct _DXGK_CHILD_CAPABILITIES {
 ### -field <b>HpdAwareness</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561006">DXGK_CHILD_DEVICE_HPD_AWARENESS</a> enumerator that indicates the child device's level of hot-plug awareness.</p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--dxgk-child-device-hpd-awareness.md">DXGK_CHILD_DEVICE_HPD_AWARENESS</a> enumerator that indicates the child device's level of hot-plug awareness.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>ChildDeviceType</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561001">DXGK_CHILD_DESCRIPTOR</a> structure is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561008">DXGK_CHILD_DEVICE_TYPE</a> enumerator that indicates type of the child device: <b>TypeVideoOutput</b> or <b>TypeOther</b>.</p>
+<p>The <b>ChildDeviceType</b> member of a <a href="..\dispmprt\ns-dispmprt--dxgk-child-descriptor.md">DXGK_CHILD_DESCRIPTOR</a> structure is a <a href="..\dispmprt\ne-dispmprt--dxgk-child-device-type.md">DXGK_CHILD_DEVICE_TYPE</a> enumerator that indicates type of the child device: <b>TypeVideoOutput</b> or <b>TypeOther</b>.</p>
 
 <p>If a child device is of type <b>TypeVideoOutput</b>, the <b>Type.VideoOutput</b> member of its DXGK_CHILD_DESCRIPTOR structure is a DXGK_VIDEO_OUTPUT_CAPABILITIES structure.</p>
 
@@ -139,10 +139,10 @@ typedef struct _DXGK_CHILD_CAPABILITIES {
 <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561001">DXGK_CHILD_DESCRIPTOR</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-child-descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562070">DXGK_VIDEO_OUTPUT_CAPABILITIES</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-video-output-capabilities.md">DXGK_VIDEO_OUTPUT_CAPABILITIES</a>
 </dt>
 </dl>
 <p> </p>

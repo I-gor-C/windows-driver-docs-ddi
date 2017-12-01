@@ -7,7 +7,7 @@ old-location: debugger\gettotalnumberthreads.htm
 old-project: debugger
 ms.assetid: dce67b78-a5e0-4664-b183-f462bcd773c8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects2, GetTotalNumberThreads, IDebugSystemObjects2::GetTotalNumberThreads
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,8 +76,6 @@ HRESULT GetTotalNumberThreads(
 <p> </p>
 
 ## -remarks
-<p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
 <p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
 
 ## -requirements

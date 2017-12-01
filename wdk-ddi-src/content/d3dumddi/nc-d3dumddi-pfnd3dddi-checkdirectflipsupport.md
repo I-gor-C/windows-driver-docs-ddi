@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY* CheckDirectFlipSupport(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451072">D3DDDIARG_CHECKDIRECTFLIPSUPPORT</a> structure that defines the parameters for the operation.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-checkdirectflipsupport.md">D3DDDIARG_CHECKDIRECTFLIPSUPPORT</a> structure that defines the parameters for the operation.</p>
 </dd>
 </dl>
 
@@ -76,14 +76,6 @@ __checkReturn HRESULT APIENTRY* CheckDirectFlipSupport(
       Returns S_OK or an appropriate error result if the operation is not successfully performed.</p>
 
 ## -remarks
-<p>This function is called at least once before the DWM attempts to present to a Direct Flip swapchain. It is also called after each mode change occurs, or after the DWM re-creates its own swapchain for any reason.</p>
-
-<p>The user-mode driver should ensure that the managed primary allocations of the application and the DWM have the following compatible resources:</p>
-
-<p>The user-mode driver might need to call the kernel-mode driver to perform these validations. To do this, call the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-escapecb.md">pfnEscapeCb</a> callback function and then call the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-gethandledata.md">DxgkCbGetHandleData</a> function to access the kernel-mode driver's resource allocation data.</p>
-
-<p>Because the DWM typically creates its own device using the highest possible Microsoft Direct3D feature level, the DWM will not call this function if the hardware supports a Direct3D device driver interface (DDI) that is greater than version 9.3. However, any Microsoft Direct3D 9 driver should implement this function to enable the Direct Flip user experience.</p>
-
 <p>This function is called at least once before the DWM attempts to present to a Direct Flip swapchain. It is also called after each mode change occurs, or after the DWM re-creates its own swapchain for any reason.</p>
 
 <p>The user-mode driver should ensure that the managed primary allocations of the application and the DWM have the following compatible resources:</p>
@@ -135,10 +127,10 @@ __checkReturn HRESULT APIENTRY* CheckDirectFlipSupport(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451172">D3DDDI_CHECK_DIRECT_FLIP_FLAGS</a>
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi-check-direct-flip-flags.md">D3DDDI_CHECK_DIRECT_FLIP_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

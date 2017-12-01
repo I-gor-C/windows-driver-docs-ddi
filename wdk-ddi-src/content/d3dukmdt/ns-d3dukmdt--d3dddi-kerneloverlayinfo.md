@@ -67,13 +67,13 @@ typedef struct _D3DDDI_KERNELOVERLAYINFO {
 ### -field <b>DstRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544332">D3DDDIRECT</a> structure that contains the overlay destination rectangle in device coordinates.</p>
+<p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddirect.md">D3DDDIRECT</a> structure that contains the overlay destination rectangle in device coordinates.</p>
 </dd>
 
 ### -field <b>SrcRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544332">D3DDDIRECT</a> structure that contains the overlay source rectangle in device coordinates.</p>
+<p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddirect.md">D3DDDIRECT</a> structure that contains the overlay source rectangle in device coordinates.</p>
 </dd>
 
 ### -field <b>pPrivateDriverData</b>
@@ -117,7 +117,7 @@ typedef struct _D3DDDI_KERNELOVERLAYINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544332">D3DDDIRECT</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddirect.md">D3DDDIRECT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createoverlaycb.md">pfnCreateOverlayCb</a>

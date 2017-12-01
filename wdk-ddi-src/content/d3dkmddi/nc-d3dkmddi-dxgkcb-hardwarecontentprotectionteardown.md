@@ -67,7 +67,7 @@ VOID APIENTRY CALLBACK* DxgkCbHardwareContentProtectionTeardown(
 ### -param <i>Flags</i> 
 
 <dd>
-<p>Additional flags defined by <a href="https://msdn.microsoft.com/library/windows/hardware/dn906828">DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS</a> enumeration.</p>
+<p>Additional flags defined by <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-hardware-content-protection-teardown-flags.md">DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS</a> enumeration.</p>
 </dd>
 </dl>
 
@@ -75,13 +75,6 @@ VOID APIENTRY CALLBACK* DxgkCbHardwareContentProtectionTeardown(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The kernel mode driver should always call this callback before and after a hardware content protection tear-down event occurs.</p>
-
-<p>
-
-The driver can call this callback at either passive level or at dispatch level.
-</p>
-
 <p>The kernel mode driver should always call this callback before and after a hardware content protection tear-down event occurs.</p>
 
 <p>
@@ -132,7 +125,7 @@ The driver can call this callback at either passive level or at dispatch level.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906828">DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-hardware-content-protection-teardown-flags.md">DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

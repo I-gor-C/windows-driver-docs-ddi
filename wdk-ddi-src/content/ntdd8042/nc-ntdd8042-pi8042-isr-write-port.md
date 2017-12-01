@@ -75,19 +75,11 @@ VOID I8042IsrWritePort(
 <p>None</p>
 
 ## -remarks
-<p>The PI8042_ISR_WRITE_PORT callback should only be called by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543248">PI8042_KEYBOARD_ISR</a> callback or a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543252">PI8042_MOUSE_ISR</a> callback. I8042prt calls a vendor-supplied ISR callback for a device in the corresponding I8042prt device ISR.</p>
+<p>The PI8042_ISR_WRITE_PORT callback should only be called by a <a href="..\ntdd8042\nc-ntdd8042-pi8042-keyboard-isr.md">PI8042_KEYBOARD_ISR</a> callback or a <a href="..\ntdd8042\nc-ntdd8042-pi8042-mouse-isr.md">PI8042_MOUSE_ISR</a> callback. I8042prt calls a vendor-supplied ISR callback for a device in the corresponding I8042prt device ISR.</p>
 
-<p>I8042prt specifies the keyboard write port callback in the <b>IsrWritePort</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541039">INTERNAL_I8042_HOOK_KEYBOARD</a> structure that I8042prt uses with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541238">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a> request.</p>
+<p>I8042prt specifies the keyboard write port callback in the <b>IsrWritePort</b> member of the <a href="..\ntdd8042\ns-ntdd8042--internal-i8042-hook-keyboard.md">INTERNAL_I8042_HOOK_KEYBOARD</a> structure that I8042prt uses with an <a href="..\ntdd8042\ni-ntdd8042-ioctl-internal-i8042-hook-keyboard.md">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a> request.</p>
 
-<p>I8042prt specifies the mouse write port callback in the <b>IsrWritePort</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541044">INTERNAL_I8042_HOOK_MOUSE</a> structure that I8042prt uses with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541238">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a> request.</p>
-
-<p>The PI8042_ISR_WRITE_PORT callback runs in kernel mode at the same IRQL as the I8042prt ISR for the device.</p>
-
-<p>The PI8042_ISR_WRITE_PORT callback should only be called by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543248">PI8042_KEYBOARD_ISR</a> callback or a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543252">PI8042_MOUSE_ISR</a> callback. I8042prt calls a vendor-supplied ISR callback for a device in the corresponding I8042prt device ISR.</p>
-
-<p>I8042prt specifies the keyboard write port callback in the <b>IsrWritePort</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541039">INTERNAL_I8042_HOOK_KEYBOARD</a> structure that I8042prt uses with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541238">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a> request.</p>
-
-<p>I8042prt specifies the mouse write port callback in the <b>IsrWritePort</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541044">INTERNAL_I8042_HOOK_MOUSE</a> structure that I8042prt uses with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541238">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a> request.</p>
+<p>I8042prt specifies the mouse write port callback in the <b>IsrWritePort</b> member of the <a href="..\ntdd8042\ns-ntdd8042--internal-i8042-hook-mouse.md">INTERNAL_I8042_HOOK_MOUSE</a> structure that I8042prt uses with an <a href="..\ntdd8042\ni-ntdd8042-ioctl-internal-i8042-hook-keyboard.md">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a> request.</p>
 
 <p>The PI8042_ISR_WRITE_PORT callback runs in kernel mode at the same IRQL as the I8042prt ISR for the device.</p>
 
@@ -126,14 +118,14 @@ VOID I8042IsrWritePort(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541238">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a>
+<a href="..\ntdd8042\ni-ntdd8042-ioctl-internal-i8042-hook-keyboard.md">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541044">INTERNAL_I8042_HOOK_MOUSE</a>
+<a href="..\ntdd8042\ns-ntdd8042--internal-i8042-hook-mouse.md">INTERNAL_I8042_HOOK_MOUSE</a>
 </dt>
 <dt><b>IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541242">IOCTL_INTERNAL_I8042_HOOK_MOUSE</a>
+<a href="..\ntdd8042\ni-ntdd8042-ioctl-internal-i8042-hook-mouse.md">IOCTL_INTERNAL_I8042_HOOK_MOUSE</a>
 </dt>
 </dl>
 <p> </p>

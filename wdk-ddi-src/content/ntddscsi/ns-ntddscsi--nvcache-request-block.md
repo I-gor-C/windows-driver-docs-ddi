@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>NVCACHE_REQUEST_BLOCK</b> structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560512">IOCTL_SCSI_MINIPORT</a> request to manage hybrid-hard disk drive (H-HDD) devices (for example, Microsoft ReadyDrive technology). This topic defines the general structure for both input data and output data for a call made to the NV Cache Manager. A caller should fill all required fields before calling <a href="base.deviceiocontrol">DeviceIoControl</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548318">IoBuildDeviceIoControlRequest</a>. The miniport driver must do the same after the requested function is completed, and before it returns.</p>
+<p>The <b>NVCACHE_REQUEST_BLOCK</b> structure is used in conjunction with the <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-miniport.md">IOCTL_SCSI_MINIPORT</a> request to manage hybrid-hard disk drive (H-HDD) devices (for example, Microsoft ReadyDrive technology). This topic defines the general structure for both input data and output data for a call made to the NV Cache Manager. A caller should fill all required fields before calling <a href="base.deviceiocontrol">DeviceIoControl</a> or <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>. The miniport driver must do the same after the requested function is completed, and before it returns.</p>
 
 
 ## -syntax
@@ -78,7 +78,7 @@ typedef struct _NVCACHE_REQUEST_BLOCK {
 ### -field <a id="NRB_FUNCTION_NVCACHE_INFO"></a><a id="nrb_function_nvcache_info"></a>NRB_FUNCTION_NVCACHE_INFO
 
 <dd>
-<p>Get NV Cache Manager feature support information from the device. Upon the successful completion of this function, the required data fields are returned to the caller. The return data structure is <a href="https://msdn.microsoft.com/library/windows/hardware/ff563248">NV_FEATURE_PARAMETER</a>.</p>
+<p>Get NV Cache Manager feature support information from the device. Upon the successful completion of this function, the required data fields are returned to the caller. The return data structure is <a href="..\ntddscsi\ns-ntddscsi--nv-feature-parameter.md">NV_FEATURE_PARAMETER</a>.</p>
 </dd>
 
 ### -field <a id="NRB_FUNCTION_SPINDLE_STATUS"></a><a id="nrb_function_spindle_status"></a>NRB_FUNCTION_SPINDLE_STATUS
@@ -251,10 +251,10 @@ typedef struct _NVCACHE_REQUEST_BLOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560512">IOCTL_SCSI_MINIPORT</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-miniport.md">IOCTL_SCSI_MINIPORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560517">IOCTL_SCSI_MINIPORT_NVCACHE</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-miniport-nvcache.md">IOCTL_SCSI_MINIPORT_NVCACHE</a>
 </dt>
 </dl>
 <p> </p>

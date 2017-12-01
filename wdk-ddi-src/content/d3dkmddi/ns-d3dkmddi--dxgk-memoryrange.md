@@ -39,8 +39,8 @@ req.iface:
 
 
 ## -description
-<p><b>DXGK_MEMORYRANGE</b> is used with <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn906839">DXGK_QUERYSEGMENTMEMORYSTATE</a> to query bad graphics processing unit (GPU) memory ranges.</p>
-<p>The query is done during adapter object initialization. The driver will be called only if <a href="https://msdn.microsoft.com/library/windows/hardware/dn906842">DXGK_SEGMENTDESCRIPTOR4</a>::<b>NumInvalidMemoryRanges</b> is not zero for a segment.
+<p><b>DXGK_MEMORYRANGE</b> is used with <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> and <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentmemorystate.md">DXGK_QUERYSEGMENTMEMORYSTATE</a> to query bad graphics processing unit (GPU) memory ranges.</p>
+<p>The query is done during adapter object initialization. The driver will be called only if <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a>::<b>NumInvalidMemoryRanges</b> is not zero for a segment.
   </p>
 
 
@@ -109,10 +109,10 @@ typedef struct _DXGK_MEMORYRANGE {
 <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906842">DXGK_SEGMENTDESCRIPTOR4</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906839">DXGK_QUERYSEGMENTMEMORYSTATE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentmemorystate.md">DXGK_QUERYSEGMENTMEMORYSTATE</a>
 </dt>
 </dl>
 <p> </p>

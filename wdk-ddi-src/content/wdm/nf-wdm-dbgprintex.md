@@ -28,10 +28,8 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtDll.lib (user mode); 
-NtosKrnl.lib (kernel mode)
-req.dll: NtDll.dll (user mode); 
-NtosKrnl.exe (kernel mode)
+req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql: <= DIRQL (see Comments section)
 req.iface: 
 req.product: Windows 10 or later.
@@ -119,16 +117,6 @@ ULONG __cdecl DbgPrintEx(
 
 <p>There is no upper limit to the size of the <i>Format</i> string or the number of arguments. However, any single call to <b>DbgPrintEx</b> will only transmit 512 bytes of information. There is also a limit to the size of the DbgPrint buffer. See <a href="devtest.reading_and_filtering_debugging_messages#ddk_the_dbgprint_buffer_and_the_debugger_tools#ddk_the_dbgprint_buffer_and_the_debugger_tools">The DbgPrint Buffer and the Debugger</a> for details.</p>
 
-<p>Only kernel-mode drivers can call the <b>DbgPrintEx</b> routine.</p>
-
-<p><b>DbgPrint</b> and <b>DbgPrintEx</b> can be called at IRQL&lt;=DIRQL. However, Unicode format codes (<b>%wc</b> and <b>%ws</b>) can be used only at IRQL = PASSIVE_LEVEL. Also, because the debugger uses interprocess interrupts (IPIs) to communicate with other processors, calling <b>DbgPrint</b> at IRQL&gt;DIRQL can cause deadlocks.</p>
-
-<p><b>DbgPrintEx</b> either passes the specified string to the kernel debugger or does nothing at all, depending on the values of <i>ComponentId</i>, <i>Level</i>, and the corresponding component filter masks. For details, see <a href="NULL">Reading and Filtering Debugging Messages</a>.</p>
-
-<p>Unless it is absolutely necessary, you should not obtain a string from user input or another process and pass it to <b>DbgPrintEx</b>. If you do use a string that you did not create, you must verify that this is a valid format string, and that the format codes match the argument list in type and quantity. The best coding practice is for all <i>Format</i> strings to be static and defined at compile time.</p>
-
-<p>There is no upper limit to the size of the <i>Format</i> string or the number of arguments. However, any single call to <b>DbgPrintEx</b> will only transmit 512 bytes of information. There is also a limit to the size of the DbgPrint buffer. See <a href="devtest.reading_and_filtering_debugging_messages#ddk_the_dbgprint_buffer_and_the_debugger_tools#ddk_the_dbgprint_buffer_and_the_debugger_tools">The DbgPrint Buffer and the Debugger</a> for details.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -194,16 +182,16 @@ ULONG __cdecl DbgPrintEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543632">DbgPrint</a>
+<a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548092">KdPrint</a>
+<a href="..\wdm\nf-wdm-kdprint.md">KdPrint</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548100">KdPrintEx</a>
+<a href="..\wdm\nf-wdm-kdprintex.md">KdPrintEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556075">vDbgPrintEx</a>
+<a href="..\wdm\nf-wdm-vdbgprintex.md">vDbgPrintEx</a>
 </dt>
 </dl>
 <p> </p>

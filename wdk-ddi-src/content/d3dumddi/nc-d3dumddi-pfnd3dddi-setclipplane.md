@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetClipPlane(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543280">D3DDDIARG_SETCLIPPLANE</a> structure that describes the clip plane to set.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setclipplane.md">D3DDDIARG_SETCLIPPLANE</a> structure that describes the clip plane to set.</p>
 </dd>
 </dl>
 
@@ -75,9 +75,7 @@ __checkReturn HRESULT APIENTRY SetClipPlane(
 <p><i>SetClipPlane</i> returns S_OK or an appropriate error result if the clip plane is not successfully set.</p>
 
 ## -remarks
-<p>The coefficients that are passed to <i>SetClipPlane</i> in the <b>Plane</b> array of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543280">D3DDDIARG_SETCLIPPLANE</a> structure that is pointed to by <i>pData </i>are used in the general plane equation. For more information about the general plane equation, see the Remarks section of <b>D3DDDIARG_SETCLIPPLANE</b>. </p>
-
-<p>The coefficients that are passed to <i>SetClipPlane</i> in the <b>Plane</b> array of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543280">D3DDDIARG_SETCLIPPLANE</a> structure that is pointed to by <i>pData </i>are used in the general plane equation. For more information about the general plane equation, see the Remarks section of <b>D3DDDIARG_SETCLIPPLANE</b>. </p>
+<p>The coefficients that are passed to <i>SetClipPlane</i> in the <b>Plane</b> array of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setclipplane.md">D3DDDIARG_SETCLIPPLANE</a> structure that is pointed to by <i>pData </i>are used in the general plane equation. For more information about the general plane equation, see the Remarks section of <b>D3DDDIARG_SETCLIPPLANE</b>. </p>
 
 ## -requirements
 <table>
@@ -114,10 +112,10 @@ __checkReturn HRESULT APIENTRY SetClipPlane(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543280">D3DDDIARG_SETCLIPPLANE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setclipplane.md">D3DDDIARG_SETCLIPPLANE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

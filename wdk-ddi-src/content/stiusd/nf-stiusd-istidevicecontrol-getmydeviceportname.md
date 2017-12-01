@@ -75,11 +75,7 @@ HRESULT GetMyDevicePortName(
 ## -remarks
 <p>The path name that a still image minidriver receives by calling <b>IStiDeviceControl::GetMyDevicePortName</b> can be used as an input argument to <a href="fs.createfile">CreateFile</a> (described in the Microsoft Windows SDK documentation).</p>
 
-<p>A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as an input argument to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a> method.</p>
-
-<p>The path name that a still image minidriver receives by calling <b>IStiDeviceControl::GetMyDevicePortName</b> can be used as an input argument to <a href="fs.createfile">CreateFile</a> (described in the Microsoft Windows SDK documentation).</p>
-
-<p>A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as an input argument to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a> method.</p>
+<p>A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as an input argument to its <a href="image.istiusd_initialize">IStiUSD::Initialize</a> method.</p>
 
 ## -requirements
 <table>

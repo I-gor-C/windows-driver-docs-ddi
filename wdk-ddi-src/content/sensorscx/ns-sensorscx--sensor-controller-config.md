@@ -7,7 +7,7 @@ old-location: sensors\sensor_controller_config.htm
 old-project: sensors
 ms.assetid: EEAC4D16-D0B8-4147-AD2D-7EE60853EBDD
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: SENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -461,17 +461,7 @@ typedef EVT_SENSOR_DRIVER_SET_BATCH_LATENCY *PFN_SENSOR_DRIVER_SET_BATCH_LATENCY
 </dl>
 
 ## -remarks
-<p>This structure is given to the class extension using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn957086">SensorsCxDeviceInitialize</a> function. If any of the following function pointers are not set, the driver will fail to load:</p>
-
-<p>Each function returns STATUS_SUCCESS when completed successfully.
-
-<div class="alert"><b>Note</b>  The class extension (CX) only uses the NT_SUCCESS macro to determine if the call to the driver’s Evt function was successful, but does not take any action if the function failed or does not return STATUS_SUCCESS.
-
-</div>
-<div> </div>
-</p>
-
-<p>This structure is given to the class extension using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn957086">SensorsCxDeviceInitialize</a> function. If any of the following function pointers are not set, the driver will fail to load:</p>
+<p>This structure is given to the class extension using the <a href="..\sensorscx\nf-sensorscx-sensorscxdeviceinitialize.md">SensorsCxDeviceInitialize</a> function. If any of the following function pointers are not set, the driver will fail to load:</p>
 
 <p>Each function returns STATUS_SUCCESS when completed successfully.
 

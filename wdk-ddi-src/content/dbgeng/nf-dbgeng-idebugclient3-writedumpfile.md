@@ -7,7 +7,7 @@ old-location: debugger\writedumpfile.htm
 old-project: debugger
 ms.assetid: 5f410561-b848-471e-8230-f12aa512a897
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugClient3, WriteDumpFile, IDebugClient3::WriteDumpFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,7 +76,7 @@ HRESULT WriteDumpFile(
 <p> </p>
 
 ## -remarks
-<p>The DEBUG_DUMP_<i>XXX</i> constants are used by the methods <b>WriteDumpFile</b>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff561382">WriteDumpFile2</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561389">WriteDumpFileWide</a> to specify the type of crash dump file to create.</p>
+<p>The DEBUG_DUMP_<i>XXX</i> constants are used by the methods <b>WriteDumpFile</b>, <a href="debugger.writedumpfile2">WriteDumpFile2</a>, and <a href="debugger.writedumpfilewide">WriteDumpFileWide</a> to specify the type of crash dump file to create.</p>
 
 <p>The possible values include the following.</p>
 
@@ -93,9 +93,7 @@ HRESULT WriteDumpFile(
 <p>
          Creates a Complete Memory Dump (kernel-mode only).</p>
 
-<p> </p>
-
-<p>To specify the formatting of the file and--for user-mode minidumps--the information to include in the file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561382">WriteDumpFile2</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff561389">WriteDumpFileWide</a>.</p>
+<p>To specify the formatting of the file and--for user-mode minidumps--the information to include in the file, use <a href="debugger.writedumpfile2">WriteDumpFile2</a> or <a href="debugger.writedumpfilewide">WriteDumpFileWide</a>.</p>
 
 <p>For more information about crash dump files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542783">Dump-File Targets</a>.</p>
 
@@ -107,58 +105,7 @@ HRESULT WriteDumpFile(
 
 <p>DEBUG_DUMP_FULL</p>
 
-<p> </p>
-
 <p>Additionally, the following aliases are available for user-mode debugging.</p>
-
-<p>DEBUG_DUMP_SMALL</p>
-
-<p>DEBUG_DUMP_DEFAULT</p>
-
-<p> </p>
-
-<p>For a description of kernel-mode dump files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560246">Varieties of Kernel-Mode Dump Files</a>.  For a description of user-mode dump files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560251">Varieties of User-Mode Dump Files</a>.</p>
-
-<p>The DEBUG_DUMP_<i>XXX</i> constants are used by the methods <b>WriteDumpFile</b>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff561382">WriteDumpFile2</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561389">WriteDumpFileWide</a> to specify the type of crash dump file to create.</p>
-
-<p>The possible values include the following.</p>
-
-<p><b>DEBUG_DUMP_SMALL</b></p>
-
-<p>Creates a Small Memory Dump (kernel-mode) or Minidump (user-mode).</p>
-
-<p><b>DEBUG_DUMP_DEFAULT</b></p>
-
-<p>Creates a Full User-Mode Dump (user-mode) or Kernel Summary Dump (kernel-mode).</p>
-
-<p><b>DEBUG_DUMP_FULL</b></p>
-
-<p>
-         Creates a Complete Memory Dump (kernel-mode only).</p>
-
-<p> </p>
-
-<p>To specify the formatting of the file and--for user-mode minidumps--the information to include in the file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561382">WriteDumpFile2</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff561389">WriteDumpFileWide</a>.</p>
-
-<p>For more information about crash dump files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542783">Dump-File Targets</a>.</p>
-
-<p>Moreover, the following aliases are available for kernel-mode debugging.</p>
-
-<p>DEBUG_DUMP_SMALL</p>
-
-<p>DEBUG_DUMP_DEFAULT</p>
-
-<p>DEBUG_DUMP_FULL</p>
-
-<p> </p>
-
-<p>Additionally, the following aliases are available for user-mode debugging.</p>
-
-<p>DEBUG_DUMP_SMALL</p>
-
-<p>DEBUG_DUMP_DEFAULT</p>
-
-<p> </p>
 
 <p>For a description of kernel-mode dump files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560246">Varieties of Kernel-Mode Dump Files</a>.  For a description of user-mode dump files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560251">Varieties of User-Mode Dump Files</a>.</p>
 
@@ -189,25 +136,25 @@ HRESULT WriteDumpFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549827">IDebugClient</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550481">IDebugClient2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550488">IDebugClient3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550494">IDebugClient4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561382">WriteDumpFile2</a>
+<a href="debugger.writedumpfile2">WriteDumpFile2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561389">WriteDumpFileWide</a>
+<a href="debugger.writedumpfilewide">WriteDumpFileWide</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562428">.dump (Create Dump File)</a>
@@ -215,4 +162,4 @@ HRESULT WriteDumpFile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient::WriteDumpFile method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient::WriteDumpFile method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

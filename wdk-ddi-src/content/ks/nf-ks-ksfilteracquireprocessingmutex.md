@@ -7,7 +7,7 @@ old-location: stream\ksfilteracquireprocessingmutex.htm
 old-project: stream
 ms.assetid: d4a2fe1a-9a16-45b8-b061-9d1b1398e801
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsFilterAcquireProcessingMutex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ void KsFilterAcquireProcessingMutex(
 ### -param <i>Filter</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure representing the AVStream filter for which to acquire the processing mutex.</p>
+<p>A pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure representing the AVStream filter for which to acquire the processing mutex.</p>
 </dd>
 </dl>
 
@@ -65,10 +65,6 @@ void KsFilterAcquireProcessingMutex(
 <p>None</p>
 
 ## -remarks
-<p>AVStream holds the processing control mutex upon return from this routine. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
-
-<p>A minidriver that must suspend processing for a long period of time should not use this mechanism. Instead, it should manipulate the processing control gate directly by using the <b>KSGATE</b><i>Xxx</i> functions. </p>
-
 <p>AVStream holds the processing control mutex upon return from this routine. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
 
 <p>A minidriver that must suspend processing for a long period of time should not use this mechanism. Instead, it should manipulate the processing control gate directly by using the <b>KSGATE</b><i>Xxx</i> functions. </p>
@@ -126,22 +122,22 @@ void KsFilterAcquireProcessingMutex(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562552">KsFilterReleaseProcessingMutex</a>
+<a href="..\ks\nf-ks-ksfilterreleaseprocessingmutex.md">KsFilterReleaseProcessingMutex</a>
 </dt>
 <dt><b>KsFilterReleaseProcessingMutex</b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562527">KsFilterAttemptProcessing</a>
+<a href="..\ks\nf-ks-ksfilterattemptprocessing.md">KsFilterAttemptProcessing</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563502">KsPinGetAndGate</a>
+<a href="..\ks\nf-ks-kspingetandgate.md">KsPinGetAndGate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563488">KsPinAcquireProcessingMutex</a>
+<a href="..\ks\nf-ks-kspinacquireprocessingmutex.md">KsPinAcquireProcessingMutex</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563527">KsPinReleaseProcessingMutex</a>
+<a href="..\ks\nf-ks-kspinreleaseprocessingmutex.md">KsPinReleaseProcessingMutex</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterAcquireProcessingMutex function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterAcquireProcessingMutex function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

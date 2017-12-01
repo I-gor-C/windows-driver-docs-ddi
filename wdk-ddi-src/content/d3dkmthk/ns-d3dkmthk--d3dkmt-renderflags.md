@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DKMT_RENDERFLAGS structure identifies the type of command buffer to be rendered in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547145">D3DKMTRender</a> function.</p>
+<p>The D3DKMT_RENDERFLAGS structure identifies the type of command buffer to be rendered in a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function.</p>
 
 
 ## -syntax
@@ -63,21 +63,21 @@ typedef struct _D3DKMT_RENDERFLAGS {
 ### -field <b>ResizeCommandBuffer</b>
 
 <dd>
-<p>A UINT value that specifies whether to resize the command buffer. The driver puts the requested size in the <b>NewCommandBufferSize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548238">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.</p>
+<p>A UINT value that specifies whether to resize the command buffer. The driver puts the requested size in the <b>NewCommandBufferSize</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-render.md">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.</p>
 <p>Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).</p>
 </dd>
 
 ### -field <b>ResizeAllocationList</b>
 
 <dd>
-<p>A UINT value that specifies whether to resize the allocation list. The driver puts the requested number of elements in the <b>NewAllocationListSize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548238">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.</p>
+<p>A UINT value that specifies whether to resize the allocation list. The driver puts the requested number of elements in the <b>NewAllocationListSize</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-render.md">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.</p>
 <p>Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000002).</p>
 </dd>
 
 ### -field <b>ResizePatchLocationList</b>
 
 <dd>
-<p>A UINT value that specifies whether to resize the patch-location list. The driver puts the requested number of elements in the <b>NewPatchLocationListSize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548238">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.</p>
+<p>A UINT value that specifies whether to resize the patch-location list. The driver puts the requested number of elements in the <b>NewPatchLocationListSize</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-render.md">D3DKMT_RENDER</a> structure. Because a resize request by the driver might not be possible, the driver must always verify the size value that is returned.</p>
 <p>Setting this member is equivalent to setting the third bit of a 32-bit value (0x00000004).</p>
 </dd>
 
@@ -99,7 +99,7 @@ typedef struct _D3DKMT_RENDERFLAGS {
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
-<p>A UINT value that specifies whether the OpenGL ICD supplies a pointer to the command buffer to be rendered in the ICD's call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547145">D3DKMTRender</a> function. If this flag is set, the runtime does not call the display miniport driver's <a href="display.dxgkddirender">DxgkDdiRender</a> function. If this flag is set, the runtime calls the display miniport driver's <a href="display.dxgkddirenderkm">DxgkDdiRenderKm</a> function. </p>
+<p>A UINT value that specifies whether the OpenGL ICD supplies a pointer to the command buffer to be rendered in the ICD's call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. If this flag is set, the runtime does not call the display miniport driver's <a href="display.dxgkddirender">DxgkDdiRender</a> function. If this flag is set, the runtime calls the display miniport driver's <a href="display.dxgkddirenderkm">DxgkDdiRenderKm</a> function. </p>
 <p>Setting this member is equivalent to setting the sixth bit of a 32-bit value (0x00000020).</p>
 </dd>
 
@@ -138,7 +138,7 @@ typedef struct _D3DKMT_RENDERFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548238">D3DKMT_RENDER</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-render.md">D3DKMT_RENDER</a>
 </dt>
 </dl>
 <p> </p>

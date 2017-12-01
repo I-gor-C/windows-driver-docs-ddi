@@ -76,7 +76,7 @@ typedef struct _DXVAHDDDI_BLT_STATE_PRIVATE_DATA {
 </dl>
 
 ## -remarks
-<p>Unlike other bitblt states (<a href="https://msdn.microsoft.com/library/windows/hardware/ff562978">DXVAHDDDI_BLT_STATE</a>), the Direct3D runtime does not maintain the private bitblt state. An application and the driver communicate the private bitblt state directly in a proprietary manner, which consists of setting and retrieving the private bitblt state. To set private bitblt state, the application causes the Direct3D runtime to specify the DXVAHDDDI_BLT_STATE_PRIVATE state in the <b>State</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543093">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a> structure in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-setvideoprocessbltstate.md">SetVideoProcessBltState</a> function. To retrieve private bitblt state, the application causes the Direct3D runtime to call the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-getvideoprocessbltstateprivate.md">GetVideoProcessBltStatePrivate</a> function. </p>
+<p>Unlike other bitblt states (<a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-blt-state.md">DXVAHDDDI_BLT_STATE</a>), the Direct3D runtime does not maintain the private bitblt state. An application and the driver communicate the private bitblt state directly in a proprietary manner, which consists of setting and retrieving the private bitblt state. To set private bitblt state, the application causes the Direct3D runtime to specify the DXVAHDDDI_BLT_STATE_PRIVATE state in the <b>State</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-setvideoprocessbltstate.md">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a> structure in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-setvideoprocessbltstate.md">SetVideoProcessBltState</a> function. To retrieve private bitblt state, the application causes the Direct3D runtime to call the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-getvideoprocessbltstateprivate.md">GetVideoProcessBltStatePrivate</a> function. </p>
 
 ## -requirements
 <table>
@@ -103,10 +103,10 @@ typedef struct _DXVAHDDDI_BLT_STATE_PRIVATE_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543093">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-setvideoprocessbltstate.md">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562978">DXVAHDDDI_BLT_STATE</a>
+<a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-blt-state.md">DXVAHDDDI_BLT_STATE</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-getvideoprocessbltstateprivate.md">GetVideoProcessBltStatePrivate</a>

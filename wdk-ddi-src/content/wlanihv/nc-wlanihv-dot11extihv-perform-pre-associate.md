@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvperformpreassociate.htm
 old-project: netvista
 ms.assetid: 5bf7a1ce-bff0-481e-8053-584fb6319146
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h, L2cmn.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -110,7 +109,7 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547668">DOT11_BSS_LIST</a> structure, which contains one
+     <a href="..\wlclient\ns-wlclient--dot11-bss-list.md">DOT11_BSS_LIST</a> structure, which contains one
      or more 802.11 Beacon or Probe Response frames for the service set identifier (SSID) of the BSS network
      with which the DLL will perform the pre-association operation.</p>
 </dd>
@@ -134,44 +133,6 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
       <i>Winerror.h</i>.</p>
 
 ## -remarks
-<p>The operating system calls the 
-    <i>Dot11ExtIhvPerformPreAssociate</i> function to initiate a pre-association operation with the IHV
-    Extensions DLL. The operating system initiates this operation before it initiates a connection operation
-    with a basic service set (BSS) network through the WLAN adapter. For more information about the
-    connection operation, see 
-    <a href="NULL">Connection Operations</a>.</p>
-
-<p>The pre-association operation must be completed asynchronously from the call to 
-    <i>Dot11ExtIhvPerformPreAssociate</i>. After the pre-association operation completes, the IHV Extensions
-    DLL must call 
-    <a href="..\wlanihv\nc-wlanihv-dot11ext-pre-associate-completion.md">
-    Dot11ExtPreAssociateCompletion</a>.</p>
-
-<p>When the 
-    <i>Dot11ExtIhvPerformPreAssociate</i> function is called, the IHV Extensions DLL must follow these
-    guidelines.</p>
-
-<p>If the IHV Extensions DLL can initiate the pre-association operation, the 
-      <i>Dot11ExtIhvPerformPreAssociate</i> function must return ERROR_SUCCESS and complete the operation
-      asynchronously.</p>
-
-<p>The IHV Extensions DLL provides more information regarding the initiation of the pre-association
-      operation through the 
-      <i>pdwReasonCode</i> parameter. The DLL must set *
-      <i>pdwReasonCode</i> to one of the following:</p>
-
-<p>L2_REASON_CODE_SUCCESS, if the pre-association operation can initiated successfully.</p>
-
-<p>An appropriate L2_REASON_CODE_xxxx error value, if the pre-association operation could not be
-        initiated.</p>
-
-<p>An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_CODE_IHV_BASE+
-        L2_REASON_CODE_GROUP_SIZE-1), regardless of whether the pre-association operation could be initiated
-        or not.</p>
-
-<p>For more information about the pre-association operation, see 
-    <a href="netvista.pre_association_operations">Pre-Association Operation</a>.</p>
-
 <p>The operating system calls the 
     <i>Dot11ExtIhvPerformPreAssociate</i> function to initiate a pre-association operation with the IHV
     Extensions DLL. The operating system initiates this operation before it initiates a connection operation
@@ -246,17 +207,17 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547668">DOT11_BSS_LIST</a>
+<a href="..\wlclient\ns-wlclient--dot11-bss-list.md">DOT11_BSS_LIST</a>
 </dt>
 <dt>
 <a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-connectivity-profile.md">
    DOT11EXT_IHV_CONNECTIVITY_PROFILE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547630">DOT11EXT_IHV_PROFILE_PARAMS</a>
+<a href="..\wlanihvtypes\ns-wlanihvtypes--dot11ext-ihv-profile-params.md">DOT11EXT_IHV_PROFILE_PARAMS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547632">DOT11EXT_IHV_SECURITY_PROFILE</a>
+<a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-security-profile.md">DOT11EXT_IHV_SECURITY_PROFILE</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a>
@@ -275,4 +236,4 @@ DWORD APIENTRY Dot11ExtIhvPerformPreAssociate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PERFORM_PRE_ASSOCIATE callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PERFORM_PRE_ASSOCIATE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

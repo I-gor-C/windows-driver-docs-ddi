@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Frees a Storport work item previously allocated by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451486">StorPortInitializeWorker</a> routine.</p>
+<p>Frees a Storport work item previously allocated by the <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a> routine.</p>
 
 
 ## -syntax
@@ -65,12 +65,12 @@ ULONG StorPortFreeWorker(
 ### -param <i>WorkItem</i> [in]
 
 <dd>
-<p>A pointer to an opaque buffer for the work item context returned by <a href="https://msdn.microsoft.com/library/windows/hardware/hh451486">StorPortInitializeWorker</a>.</p>
+<p>A pointer to an opaque buffer for the work item context returned by <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>.</p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451486">StorPortInitializeWorker</a> routine returns one of these status codes:</p><dl>
+<p>The <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a> routine returns one of these status codes:</p><dl>
 <dt><b>STOR_STATUS_INVALID_IRQL</b></dt>
 </dl><p>Current IRQL &gt; DISPATCH_LEVEL.</p><dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
@@ -85,8 +85,6 @@ ULONG StorPortFreeWorker(
 <p> </p>
 
 ## -remarks
-<p>Miniports should call <b>StorPortFreeWorker</b> whenever a work item is no longer needed or when the miniport receives a PnP SRB notification  that the adapter is removed.</p>
-
 <p>Miniports should call <b>StorPortFreeWorker</b> whenever a work item is no longer needed or when the miniport receives a PnP SRB notification  that the adapter is removed.</p>
 
 ## -requirements
@@ -132,10 +130,10 @@ ULONG StorPortFreeWorker(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451486">StorPortInitializeWorker</a>
+<a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451509">StorPortQueueWorkItem</a>
+<a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a>
 </dt>
 </dl>
 <p> </p>

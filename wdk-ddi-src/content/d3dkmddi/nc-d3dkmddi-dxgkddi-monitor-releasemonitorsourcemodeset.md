@@ -87,11 +87,7 @@ NTSTATUS APIENTRY pfnReleaseMonitorSourceModeSet(
 ## -remarks
 <p>When you have finished using a handle that you obtained by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a>, you must release the handle by calling <b>pfnReleaseMonitorSourceModeSet</b>.</p>
 
-<p>This function is also available in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7.</p>
-
-<p>When you have finished using a handle that you obtained by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a>, you must release the handle by calling <b>pfnReleaseMonitorSourceModeSet</b>.</p>
-
-<p>This function is also available in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7.</p>
+<p>This function is also available in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface-v2.md">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7.</p>
 
 ## -requirements
 <table>
@@ -136,7 +132,7 @@ NTSTATUS APIENTRY pfnReleaseMonitorSourceModeSet(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface-v2.md">DXGK_MONITOR_INTERFACE_V2</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: nfpdrivers\nfc_cx_rf_discovery_config.htm
 old-project: nfpdrivers
 ms.assetid: 4EF45183-335C-40FC-8693-BF3D17B18DF2
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: NFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG, *PNFC_CX_RF_DISCOVERY_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,35 +76,35 @@ typedef struct _NFC_CX_RF_DISCOVERY_CONFIG {
 ### -field <b>PollConfig</b>
 
 <dd>
-<p>Combination of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905560">NFC_CX_POLL_MODE_CONFIG</a> values. </p>
+<p>Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-poll-mode-config.md">NFC_CX_POLL_MODE_CONFIG</a> values. </p>
 <p>This member enables configuration of poll mode settings. The default enables polling for passive poll NFC-A, passive poll NFC-B, and passive poll NFC-F (212 and 424k). Its recommended that NFC clients configure additional active modes if they are supported.</p>
 </dd>
 
 ### -field <b>NfcIPMode</b>
 
 <dd>
-<p> Combination of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905547">NFC_CX_NFCIP_MODE_CONFIG</a> values.</p>
+<p> Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-nfcip-mode-config.md">NFC_CX_NFCIP_MODE_CONFIG</a> values.</p>
 <p>This member enables configuration of NFC-IP initiator mode settings. The value corresponds to combination of NFC_CX_NFCIP_MODE_CONFIG enum. The default enables polling for passive poll NFC-A and passive poll NFC-F (212 and 424k) phases.</p>
 </dd>
 
 ### -field <b>NfcIPTgtMode</b>
 
 <dd>
-<p> Combination of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905548">NFC_CX_NFCIP_TGT_MODE_CONFIG</a> values.</p>
+<p> Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-nfcip-tgt-mode-config.md">NFC_CX_NFCIP_TGT_MODE_CONFIG</a> values.</p>
 <p>This member enables configuration of NFC-IP target mode settings. The default enables passive listen NFC-A and passive listen NFC-F phases.</p>
 </dd>
 
 ### -field <b>NfcCEMode</b>
 
 <dd>
-<p> Combination of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905539">NFC_CX_CE_MODE_CONFIG</a> values. </p>
+<p> Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-ce-mode-config.md">NFC_CX_CE_MODE_CONFIG</a> values. </p>
 <p>This member enables configuration of NFC-CE mode settings. The default enables passive listen NFC-A, passive listen NFC-B, and passive listen NFC-F phases.</p>
 </dd>
 
 ### -field <b>BailoutConfig</b>
 
 <dd>
-<p>Combination of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905549">NFC_CX_POLL_BAILOUT_CONFIG</a> values. Default is disabled.</p>
+<p>Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-poll-bailout-config.md">NFC_CX_POLL_BAILOUT_CONFIG</a> values. Default is disabled.</p>
 <p>This member enables configuration of PA_BAIL_OUT and PB_BAIL_OUT as described in the NCI specification. </p>
 </dd>
 </dl>
@@ -149,4 +149,4 @@ typedef struct _NFC_CX_RF_DISCOVERY_CONFIG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_RF_DISCOVERY_CONFIG structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_RF_DISCOVERY_CONFIG structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

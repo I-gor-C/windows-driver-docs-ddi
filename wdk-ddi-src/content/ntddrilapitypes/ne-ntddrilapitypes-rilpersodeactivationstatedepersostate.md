@@ -7,7 +7,7 @@ old-location: netvista\rilpersodeactivationstatedepersostate.htm
 old-project: netvista
 ms.assetid: 81147a47-b5aa-4f00-812d-2c6cf9d5ab8b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

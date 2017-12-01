@@ -61,7 +61,7 @@ PVOID ScsiPortGetLogicalUnit(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
+<p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
 ### -param <i>PathId</i> [in]
@@ -87,12 +87,6 @@ PVOID ScsiPortGetLogicalUnit(
 <p><b>ScsiPortGetLogicalUnit</b> returns a pointer to the miniport driver's storage area for the requested logical unit. If the operating system-specific port driver considers this logical unit to be nonexistent, it returns <b>NULL</b>.</p>
 
 ## -remarks
-<p><b>ScsiPortGetLogicalUnit</b> is irrelevant if the miniport driver's <b>DriverEntry</b> routine specified zero for the <b>LuExtensionSize</b> in the HW_INITIALIZATION_DATA when it called <b>ScsiPortInitialize</b>. Otherwise, the operating system-specific port driver allocates and initializes with zeros a set of LU extensions of the specified size for the miniport driver to use.</p>
-
-<p>Per-LU storage can be used to store data relevant to a particular peripheral, such as saved data pointers. To access this area, the miniport driver calls <b>ScsiPortGetLogicalUnit</b> when the driver is maintaining information about the state of or current operation for any particular peripheral.</p>
-
-<p>The operating system-specific port driver can consider a logical unit to be nonexistent if there is no active request for that logical unit and the device has never been successfully selected.</p>
-
 <p><b>ScsiPortGetLogicalUnit</b> is irrelevant if the miniport driver's <b>DriverEntry</b> routine specified zero for the <b>LuExtensionSize</b> in the HW_INITIALIZATION_DATA when it called <b>ScsiPortInitialize</b>. Otherwise, the operating system-specific port driver allocates and initializes with zeros a set of LU extensions of the specified size for the miniport driver to use.</p>
 
 <p>Per-LU storage can be used to store data relevant to a particular peripheral, such as saved data pointers. To access this area, the miniport driver calls <b>ScsiPortGetLogicalUnit</b> when the driver is maintaining information about the state of or current operation for any particular peripheral.</p>
@@ -136,16 +130,16 @@ PVOID ScsiPortGetLogicalUnit(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
+<a href="storage.driverentry_of_scsi_miniport_driver">DriverEntry of SCSI Miniport Driver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557456">HW_INITIALIZATION_DATA (SCSI)</a>
+<a href="storage.hw_initialization_data__scsi_">HW_INITIALIZATION_DATA (SCSI)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>
+<a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564654">ScsiPortMoveMemory</a>
+<a href="..\srb\nf-srb-scsiportmovememory.md">ScsiPortMoveMemory</a>
 </dt>
 </dl>
 <p> </p>

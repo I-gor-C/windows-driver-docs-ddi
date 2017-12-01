@@ -68,7 +68,7 @@ struct _URB_CONTROL_GET_STATUS_REQUEST {
 ### -field <b>Hdr</b>
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Length</b> must be <code>sizeof(_URB_CONTROL_GET_STATUS_REQUEST)</code>, and <b>Hdr.Function</b> must be one of the following values:</p>
+<p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Length</b> must be <code>sizeof(_URB_CONTROL_GET_STATUS_REQUEST)</code>, and <b>Hdr.Function</b> must be one of the following values:</p>
 <dl>
 <dd>URB_FUNCTION_GET_STATUS_FROM_DEVICE</dd>
 <dd>URB_FUNCTION_GET_STATUS_FROM_INTERFACE</dd>
@@ -139,7 +139,7 @@ struct _URB_CONTROL_GET_STATUS_REQUEST {
 </dl>
 
 ## -remarks
-<p>Drivers can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538946">UsbBuildGetStatusRequest</a> service routine to format this URB.</p>
+<p>Drivers can use the <a href="..\usbdlib\nf-usbdlib-usbbuildgetstatusrequest.md">UsbBuildGetStatusRequest</a> service routine to format this URB.</p>
 
 <p>The reserved members of this structure must be treated as opaque and are reserved for system use.</p>
 
@@ -160,13 +160,13 @@ struct _URB_CONTROL_GET_STATUS_REQUEST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
+<a href="..\usb\ns-usb--urb.md">URB</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a>
+<a href="buses._urb_header">_URB_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

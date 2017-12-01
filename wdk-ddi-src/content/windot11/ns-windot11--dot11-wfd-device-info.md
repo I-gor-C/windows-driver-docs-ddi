@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_device_info.htm
 old-project: netvista
 ms.assetid: 6E0E9BC9-9C84-4511-A28E-2BB2D6367F74
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_WFD_DEVICE_INFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

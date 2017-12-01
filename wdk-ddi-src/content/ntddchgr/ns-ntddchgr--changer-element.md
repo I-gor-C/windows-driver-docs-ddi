@@ -58,7 +58,7 @@ typedef struct _CHANGER_ELEMENT {
 ### -field <b>ElementType</b>
 
 <dd>
-<p>Indicates the type of element. Can be one of the following values taken from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553754">ELEMENT_TYPE</a> enumeration.</p>
+<p>Indicates the type of element. Can be one of the following values taken from the <a href="..\ntddchgr\ne-ntddchgr--element-type.md">ELEMENT_TYPE</a> enumeration.</p>
 <p></p>
 <dl>
 
@@ -153,13 +153,13 @@ typedef struct _CHANGER_ELEMENT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551459">CHANGER_ELEMENT_LIST</a>
+<a href="..\ntddchgr\ns-ntddchgr--changer-element-list.md">CHANGER_ELEMENT_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551461">CHANGER_ELEMENT_STATUS</a>
+<a href="..\ntddchgr\ns-ntddchgr--changer-element-status.md">CHANGER_ELEMENT_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553754">ELEMENT_TYPE</a>
+<a href="..\ntddchgr\ne-ntddchgr--element-type.md">ELEMENT_TYPE</a>
 </dt>
 </dl>
 <p> </p>

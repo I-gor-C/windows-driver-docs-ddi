@@ -7,7 +7,7 @@ old-location: wdf\wdfioqueuefindrequest.htm
 old-project: wdf
 ms.assetid: 379fc7ec-577a-48a4-83b0-4be4e8cfe1bf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfIoQueueFindRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Wdf01000.sys (KMDF); 
-WUDFx02000.dll (UMDF)
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
 req.iface: 
@@ -82,7 +81,7 @@ NTSTATUS WdfIoQueueFindRequest(
 ### -param <i>Parameters</i> [in, out]
 
 <dd>
-<p>A pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552472">WDF_REQUEST_PARAMETERS</a> structure that receives parameters that are associated with the found request. This parameter is optional and can be <b>NULL</b>.</p>
+<p>A pointer to a driver-allocated <a href="..\wdfrequest\ns-wdfrequest--wdf-request-parameters.md">WDF_REQUEST_PARAMETERS</a> structure that receives parameters that are associated with the found request. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
 ### -param <i>OutRequest</i> [out]
@@ -110,16 +109,6 @@ NTSTATUS WdfIoQueueFindRequest(
 </p>
 
 ## -remarks
-<p>The <b>WdfIoQueueFindRequest</b> method searches a specified I/O queue and attempts to find an I/O request. </p>
-
-<p>Your driver can call <b>WdfIoQueueFindRequest</b> only if the driver is using the manual <a href="wdf.dispatching_methods_for_i_o_requests">dispatching method</a> for the specified I/O queue.</p>
-
-<p>If <i>FileObject</i> is not <b>NULL</b>, <b>WdfIoQueueFindRequest</b> only examines requests that are associated with the specified file object handle.</p>
-
-<p>If <i>FoundRequest</i> is <b>NULL</b>, this method locates the first request in the I/O queue that matches the <i>FileObject</i> value. If <i>FoundRequest</i> is not <b>NULL</b>, the method begins searching at the request that is identified by <i>FoundRequest</i>. To create an iterative loop, specify <b>NULL</b> for the first call, and then use the returned handle as the <i>FoundRequest</i> parameter for subsequent calls.</p>
-
-<p>If <i>Parameters</i> is not <b>NULL</b>, this method copies the found request's parameters into the driver-supplied structure.</p>
-
 <p>The <b>WdfIoQueueFindRequest</b> method searches a specified I/O queue and attempts to find an I/O request. </p>
 
 <p>Your driver can call <b>WdfIoQueueFindRequest</b> only if the driver is using the manual <a href="wdf.dispatching_methods_for_i_o_requests">dispatching method</a> for the specified I/O queue.</p>
@@ -192,7 +181,7 @@ NTSTATUS WdfIoQueueFindRequest(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975098">wdfioqueuefindrequestfailed</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975099">wdfioqueueretrievefoundrequest</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975100">wdfioqueueretrievenextrequest</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_wdfioqueuefindrequestfailed">wdfioqueuefindrequestfailed</a>, <a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">wdfioqueueretrievefoundrequest</a>, <a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">wdfioqueueretrievenextrequest</a>
 </td>
 </tr>
 </table>
@@ -200,18 +189,18 @@ NTSTATUS WdfIoQueueFindRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975099">WdfIoQueueRetrieveFoundRequest</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548482">WdfIoQueueStop</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueuestop.md">WdfIoQueueStop</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548739">WdfObjectDereference</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552472">WDF_REQUEST_PARAMETERS</a>
+<a href="..\wdfrequest\ns-wdfrequest--wdf-request-parameters.md">WDF_REQUEST_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueFindRequest method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueFindRequest method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

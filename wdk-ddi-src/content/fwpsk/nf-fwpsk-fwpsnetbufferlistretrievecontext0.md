@@ -7,7 +7,7 @@ old-location: netvista\fwpsnetbufferlistretrievecontext0.htm
 old-project: netvista
 ms.assetid: 482cec75-8a21-4988-b869-639d019f9460
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsNetBufferListRetrieveContext0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,7 +73,7 @@ NTSTATUS NTAPI FwpsNetBufferListRetrieveContext0(
 <p>A locally unique identifier obtained by calling the 
      <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistgettagforcontext0.md">
      FwpsNetBufferListGetTagForContext0</a> function. This is the context tag used in the initial call to 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551191">FwpsNetBufferListAssociateContext0</a>.</p>
+     <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">FwpsNetBufferListAssociateContext0</a>.</p>
 </dd>
 
 ### -param <i>removeContext</i> [in]
@@ -109,13 +109,6 @@ NTSTATUS NTAPI FwpsNetBufferListRetrieveContext0(
 <p> </p>
 
 ## -remarks
-<p>The 
-    <b>FwpsNetBufferListRetrieveContext0</b> function retrieves a network buffer list that was tagged in
-    another layer.</p>
-
-<p>You can also use this function to remove the context association by setting the 
-    <i>removeContext</i> parameter.</p>
-
 <p>The 
     <b>FwpsNetBufferListRetrieveContext0</b> function retrieves a network buffer list that was tagged in
     another layer.</p>
@@ -176,7 +169,7 @@ NTSTATUS NTAPI FwpsNetBufferListRetrieveContext0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">
@@ -193,4 +186,4 @@ NTSTATUS NTAPI FwpsNetBufferListRetrieveContext0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListRetrieveContext0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListRetrieveContext0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

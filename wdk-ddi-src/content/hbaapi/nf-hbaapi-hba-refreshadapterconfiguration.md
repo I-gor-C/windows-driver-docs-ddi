@@ -109,7 +109,7 @@ void HBA_API HBA_RefreshAdapterConfiguration(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557137">HBA_RefreshInformation</a>
+<a href="..\hbaapi\nf-hbaapi-hba-refreshinformation.md">HBA_RefreshInformation</a>
 </dt>
 </dl>
 <p> </p>

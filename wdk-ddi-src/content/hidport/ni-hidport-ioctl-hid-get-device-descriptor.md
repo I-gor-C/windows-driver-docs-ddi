@@ -144,13 +144,13 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541093">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a>
+<a href="..\hidport\ni-hidport-ioctl-hid-get-device-attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541147">IOCTL_HID_GET_REPORT_DESCRIPTOR</a>
+<a href="..\hidport\ni-hidport-ioctl-hid-get-report-descriptor.md">IOCTL_HID_GET_REPORT_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541064">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
+<a href="..\hidclass\ni-hidclass-ioctl-get-physical-descriptor.md">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

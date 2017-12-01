@@ -7,7 +7,7 @@ old-location: wdf\wdffileobjectgetflags.htm
 old-project: wdf
 ms.assetid: f2f30acb-cab7-444a-8b86-6001a8a325b9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfFileObjectGetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,10 +75,6 @@ ULONG WdfFileObjectGetFlags(
 
 <p>The following code example obtains the flags that a specified framework file object contains.</p>
 
-<p>For more information about framework file objects, see <a href="wdf.framework_file_objects">Framework File Objects</a>.</p>
-
-<p>The following code example obtains the flags that a specified framework file object contains.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -132,7 +128,7 @@ ULONG WdfFileObjectGetFlags(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>

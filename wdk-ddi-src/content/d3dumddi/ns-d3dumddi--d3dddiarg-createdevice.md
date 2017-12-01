@@ -90,7 +90,7 @@ typedef struct _D3DDDIARG_CREATEDEVICE {
 ### -field <b>pCallbacks</b>
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544512">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use.</p>
+<p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use.</p>
 </dd>
 
 ### -field <b>pCommandBuffer</b>
@@ -108,7 +108,7 @@ typedef struct _D3DDDIARG_CREATEDEVICE {
 ### -field <b>pAllocationList</b>
 
 <dd>
-<p>[in] Obsolete. To receive an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544375">D3DDDI_ALLOCATIONLIST</a> structures for the starting allocation list, the driver must first call the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function to create a context for the newly created device.</p>
+<p>[in] Obsolete. To receive an array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures for the starting allocation list, the driver must first call the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function to create a context for the newly created device.</p>
 </dd>
 
 ### -field <b>AllocationListSize</b>
@@ -120,7 +120,7 @@ typedef struct _D3DDDIARG_CREATEDEVICE {
 ### -field <b>pPatchLocationList</b>
 
 <dd>
-<p>[in] Obsolete. To receive an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a> structures for the starting patch-location list, the driver must first call the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function to create a context for the newly created device.</p>
+<p>[in] Obsolete. To receive an array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures for the starting patch-location list, the driver must first call the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function to create a context for the newly created device.</p>
 </dd>
 
 ### -field <b>PatchLocationListSize</b>
@@ -133,14 +133,14 @@ typedef struct _D3DDDIARG_CREATEDEVICE {
 
 <dd>
 <p>
-      [out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.
+      [out] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.
      </p>
 </dd>
 
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544507">D3DDDI_CREATEDEVICEFLAGS</a> structure that identifies how to create the device. </p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-createdeviceflags.md">D3DDDI_CREATEDEVICEFLAGS</a> structure that identifies how to create the device. </p>
 </dd>
 
 ### -field <b>CommandBuffer</b>
@@ -182,13 +182,13 @@ typedef struct _D3DDDIARG_CREATEDEVICE {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdevice.md">CreateDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544507">D3DDDI_CREATEDEVICEFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-createdeviceflags.md">D3DDDI_CREATEDEVICEFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544512">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreatedevice">DxgkDdiCreateDevice</a>

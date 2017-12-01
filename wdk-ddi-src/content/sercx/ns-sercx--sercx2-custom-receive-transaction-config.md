@@ -63,7 +63,7 @@ typedef struct _SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG {
 ### -field <b>Size</b>
 
 <dd>
-<p>The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265251">SerCx2CustomReceiveTransactionCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
+<p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
 ### -field <b>EvtSerCx2CustomReceiveTransactionInitialize</b>
@@ -98,7 +98,7 @@ typedef struct _SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265251">SerCx2CustomReceiveTransactionCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomReceiveTransactionInitialize</b>, call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265316">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT</a> function to initialize this structure.</p>
+<p>The <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomReceiveTransactionInitialize</b>, call the <a href="..\sercx\nf-sercx-sercx2-custom-receive-transaction-config-init.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT</a> function to initialize this structure.</p>
 
 ## -requirements
 <table>
@@ -140,10 +140,10 @@ typedef struct _SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG {
 <a href="..\sercx\nc-sercx-evt-sercx2-custom-receive-transaction-start.md">EvtSerCx2CustomReceiveTransactionStart</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265316">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx2-custom-receive-transaction-config-init.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265251">SerCx2CustomReceiveTransactionCreate</a>
+<a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
 </dt>
 </dl>
 <p> </p>

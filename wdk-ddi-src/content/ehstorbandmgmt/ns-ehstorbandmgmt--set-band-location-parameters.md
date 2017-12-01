@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh464113">SET_BAND_LOCATION_PARAMETERS</a> structure specifies the parameters to set location properties for a band on a storage device for a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451397">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a> request.</p>
+<p>The <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--create-band-parameters.md">SET_BAND_LOCATION_PARAMETERS</a> structure specifies the parameters to set location properties for a band on a storage device for a <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-set-band-location.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a> request.</p>
 
 
 ## -syntax
@@ -79,7 +79,7 @@ typedef struct _SET_BAND_LOCATION_PARAMETERS {
 ### -field <b>AuthKeyOffset</b>
 
 <dd>
-<p>The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the authorization key for the band. The offset is from the beginning of <a href="https://msdn.microsoft.com/library/windows/hardware/hh464113">SET_BAND_LOCATION_PARAMETERS</a>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.</p>
+<p>The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the authorization key for the band. The offset is from the beginning of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--create-band-parameters.md">SET_BAND_LOCATION_PARAMETERS</a>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.</p>
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -115,14 +115,14 @@ typedef struct _SET_BAND_LOCATION_PARAMETERS {
 ### -field <b>BandLocationInfoOffset</b>
 
 <dd>
-<p>The offset, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439557">BAND_LOCATION_INFO</a> structure. The offset is from the beginning of <a href="https://msdn.microsoft.com/library/windows/hardware/hh464113">SET_BAND_LOCATION_PARAMETERS</a>.</p>
+<p>The offset, in bytes, of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-location-info.md">BAND_LOCATION_INFO</a> structure. The offset is from the beginning of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--create-band-parameters.md">SET_BAND_LOCATION_PARAMETERS</a>.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p> Precedence is given to <b>BandID</b> for band selection. If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh439563">BAND_MANAGEMENT_CAPABILITIES</a>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> is used as  the match criteria to select a band. If no band matches either selection criteria, then STATUS_INVALID_PARAMETER is returned in the <i>IoStatus</i> block for <a href="https://msdn.microsoft.com/library/windows/hardware/hh451397">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a>.</p>
+<p> Precedence is given to <b>BandID</b> for band selection. If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-management-capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> is used as  the match criteria to select a band. If no band matches either selection criteria, then STATUS_INVALID_PARAMETER is returned in the <i>IoStatus</i> block for <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-set-band-location.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a>.</p>
 
-<p>If <b>BandID</b> and <b>BandStart </b> are both set to –1,  then the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451397">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a> request will change the properties of the global band.</p>
+<p>If <b>BandID</b> and <b>BandStart </b> are both set to –1,  then the <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-set-band-location.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a> request will change the properties of the global band.</p>
 
 ## -requirements
 <table>
@@ -149,13 +149,13 @@ typedef struct _SET_BAND_LOCATION_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439557">BAND_LOCATION_INFO</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-location-info.md">BAND_LOCATION_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439563">BAND_MANAGEMENT_CAPABILITIES</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-management-capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451397">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a>
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-set-band-location.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a>
 </dt>
 </dl>
 <p> </p>

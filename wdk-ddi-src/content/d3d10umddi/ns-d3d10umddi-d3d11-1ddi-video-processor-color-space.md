@@ -218,8 +218,8 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE {
 ### -field <b>Nominal_Range</b>
 
 <dd>
-<p>[in] A UINT value that specifies that the luminance range of YUV data is described by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265173">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a> enumeration. The default state value is zero, which indicates the studio luminance range of 16 to 235, inclusive [16, 235].</p>
-<p>When YUV-format data is converted to RGB format, the luminance range specified by <a href="https://msdn.microsoft.com/library/windows/hardware/dn265173">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a> is applied to the YUV data before the conversion to RGB.</p>
+<p>[in] A UINT value that specifies that the luminance range of YUV data is described by the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-nominal-range.md">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a> enumeration. The default state value is zero, which indicates the studio luminance range of 16 to 235, inclusive [16, 235].</p>
+<p>When YUV-format data is converted to RGB format, the luminance range specified by <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-nominal-range.md">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a> is applied to the YUV data before the conversion to RGB.</p>
 <p>For more information on luminance range, see <a href="display.yuv_format_ranges">YUV format ranges in Windows 8.1</a>.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
@@ -267,7 +267,7 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265173">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-nominal-range.md">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a>
 </dt>
 </dl>
 <p> </p>

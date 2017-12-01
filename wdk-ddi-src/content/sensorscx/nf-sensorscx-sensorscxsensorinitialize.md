@@ -7,7 +7,7 @@ old-location: sensors\sensorscxsensorinitialize.htm
 old-project: sensors
 ms.assetid: D6C0B66A-58ED-4E1D-89E2-4A1AF77281C1
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: SensorsCxSensorInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ FORCEINLINE NTSTATUS SensorsCxSensorInitialize(
 ### -param <i>pSensorConfig</i> [in]
 
 <dd>
-<p>A list of enumeration properties. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957096">SENSOR_CONFIG</a>.</p>
+<p>A list of enumeration properties. For more information, see <a href="..\sensorscx\ns-sensorscx--sensor-config.md">SENSOR_CONFIG</a>.</p>
 </dd>
 </dl>
 
@@ -77,7 +77,7 @@ FORCEINLINE NTSTATUS SensorsCxSensorInitialize(
 
 <p>STATUS_INVALID_PARAMETER is returned if any of the _In_ parameters are NULL or the <b>pSensorConfig-&gt;pEnumerationList-&gt;Count</b> variable is 0 or too big.</p>
 
-<p>STATUS_BUFFER_TOO_SMALL is returned if the <b>pSensorConfig</b> buffer is smaller than the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn957096">SENSOR_CONFIG</a> structure.</p>
+<p>STATUS_BUFFER_TOO_SMALL is returned if the <b>pSensorConfig</b> buffer is smaller than the size of the <a href="..\sensorscx\ns-sensorscx--sensor-config.md">SENSOR_CONFIG</a> structure.</p>
 
 <p>STATUS_NOT_FOUND is returned if there was an error constructing the controller object context from the <b>Sensor</b> object.</p>
 

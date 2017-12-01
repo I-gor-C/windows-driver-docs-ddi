@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CreateVideoProcessor(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543077">D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR</a> structure. On input, contains information that the driver can use. On output, the driver specifies information that the Microsoft Direct3D runtime can use.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-createvideoprocessor.md">D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR</a> structure. On input, contains information that the driver can use. On output, the driver specifies information that the Microsoft Direct3D runtime can use.</p>
 </dd>
 </dl>
 
@@ -119,10 +119,10 @@ __checkReturn HRESULT APIENTRY CreateVideoProcessor(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543077">D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-createvideoprocessor.md">D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451638">DestroyVideoProcessor</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-destroyvideoprocessor.md">DestroyVideoProcessor</a>
 </dt>
 </dl>
 <p> </p>

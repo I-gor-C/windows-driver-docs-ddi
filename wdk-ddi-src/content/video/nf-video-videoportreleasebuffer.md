@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>VideoPortReleaseBuffer</b> function is <b>obsolete</b> in Windows 2000 and later. In its place, video miniport drivers should instead use <a href="https://msdn.microsoft.com/library/windows/hardware/ff570301">VideoPortFreePool</a>. </p>
+<p>The <b>VideoPortReleaseBuffer</b> function is <b>obsolete</b> in Windows 2000 and later. In its place, video miniport drivers should instead use <a href="..\video\nf-video-videoportfreepool.md">VideoPortFreePool</a>. </p>
 <p><b>VideoPortReleaseBuffer</b> deallocates a block of paged pool memory.</p>
 
 
@@ -74,9 +74,7 @@ VOID VideoPortReleaseBuffer(
 <p>None</p>
 
 ## -remarks
-<p>This function releases memory allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570177">VideoPortAllocateBuffer</a>. A miniport driver must not access the memory block to which <i>Buffer</i> points after it has been freed. </p>
-
-<p>This function releases memory allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570177">VideoPortAllocateBuffer</a>. A miniport driver must not access the memory block to which <i>Buffer</i> points after it has been freed. </p>
+<p>This function releases memory allocated by <a href="..\video\nf-video-videoportallocatebuffer.md">VideoPortAllocateBuffer</a>. A miniport driver must not access the memory block to which <i>Buffer</i> points after it has been freed. </p>
 
 ## -requirements
 <table>
@@ -141,7 +139,7 @@ VOID VideoPortReleaseBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570177">VideoPortAllocateBuffer</a>
+<a href="..\video\nf-video-videoportallocatebuffer.md">VideoPortAllocateBuffer</a>
 </dt>
 </dl>
 <p> </p>

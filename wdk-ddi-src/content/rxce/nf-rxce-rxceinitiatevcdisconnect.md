@@ -74,8 +74,6 @@ NTSTATUS RxCeInitiateVCDisconnect(
 ## -remarks
 <p><b>RxCeInitiateVCDisconnect</b> must be called in the context of a system worker thread. </p>
 
-<p><b>RxCeInitiateVCDisconnect</b> must be called in the context of a system worker thread. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -111,10 +109,10 @@ NTSTATUS RxCeInitiateVCDisconnect(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553439">RxCeBuildVC</a>
+<a href="..\rxce\nf-rxce-rxcebuildvc.md">RxCeBuildVC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554332">RxCeTearDownVC</a>
+<a href="..\rxce\nf-rxce-rxceteardownvc.md">RxCeTearDownVC</a>
 </dt>
 </dl>
 <p> </p>

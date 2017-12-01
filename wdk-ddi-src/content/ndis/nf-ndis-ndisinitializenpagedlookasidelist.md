@@ -7,7 +7,7 @@ old-location: netvista\ndisinitializenpagedlookasidelist.htm
 old-project: netvista
 ms.assetid: d240f2cc-18a6-4c2d-889f-e25a9486d5fe
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisInitializeNPagedLookasideList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,12 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   
-   NdisInitializeNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see
-   
-   
-   NdisInitializeNPagedLookasideList (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInitializeNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see         NdisInitializeNPagedLookasideList (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -160,46 +155,8 @@ VOID NdisInitializeNPagedLookasideList(
     <a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
     NdisFreeToNPagedLookasideList</a> functions to manage the allocation and deallocation of entries (see
     the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a> and 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a> functions). However, a driver that
-    tracks state internally about its memory usage might supply 
-    <i>Allocate</i> and 
-    <i>Free</i> functions to 
-    <b>NdisInitializeNPagedLookasideList</b>.</p>
-
-<p>Callers of 
-    <b>NdisInitializeNPagedLookasideList</b> must be running at IRQL &lt;= DISPATCH_LEVEL, but are usually
-    running at PASSIVE_LEVEL.</p>
-
-<p><b>NdisInitializeNPagedLookasideList</b> initializes the caller-supplied list head but allocates no memory
-    for list entries. The initial entries are allocated on an as-needed basis either with calls to the 
-    <a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
-    NdisAllocateFromNPagedLookasideList</a> function or by the driver-supplied 
-    <i>Allocate</i> callback function at the 
-    <i>Allocate</i> parameter. The list is populated as the driver frees entries back to the list with the 
-    <a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
-    NdisFreeToNPagedLookasideList</a> function. Entries collect on the list until a system-determined but
-    dynamically sized limit is reached. Then, any surplus entries in the lookaside list are returned to
-    nonpaged pool, either by 
-    <b>NdisFreeToNPagedLookasideList</b> or with calls to the driver-supplied 
-    <i>Free</i> callback function at the 
-    <i>Free</i> parameter.</p>
-
-<p>All entries in the lookaside list are of the same size, which is specified in the 
-    <i>Size</i> parameter. A lookaside list is particularly useful to drivers that must dynamically allocate
-    and free fixed-size context areas in which to maintain run-time state about their outstanding I/O
-    operations. For instance, connection-oriented NDIS drivers are likely to find lookaside lists
-    particularly useful because such drivers usually maintain a dynamic set of context areas to track
-    outgoing and incoming calls.</p>
-
-<p>It is more efficient for a driver to allow the 
-    <a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
-    NdisAllocateFromNPagedLookasideList</a> and 
-    <a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
-    NdisFreeToNPagedLookasideList</a> functions to manage the allocation and deallocation of entries (see
-    the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a> and 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a> functions). However, a driver that
+    <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> and 
+    <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> functions). However, a driver that
     tracks state internally about its memory usage might supply 
     <i>Allocate</i> and 
     <i>Free</i> functions to 
@@ -257,7 +214,7 @@ VOID NdisInitializeNPagedLookasideList(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -265,10 +222,10 @@ VOID NdisInitializeNPagedLookasideList(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a>
+<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
@@ -288,4 +245,4 @@ VOID NdisInitializeNPagedLookasideList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInitializeNPagedLookasideList function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInitializeNPagedLookasideList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

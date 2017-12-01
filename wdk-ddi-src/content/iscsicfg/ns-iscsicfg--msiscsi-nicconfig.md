@@ -73,7 +73,7 @@ typedef struct _MSiSCSI_NICConfig {
 ### -field <b>LinkState</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561549">ISCSI_NIC_LINKSTATE</a> enumeration value that indicates whether the port is connected to the network or not.</p>
+<p>A <a href="storage.iscsi_nic_linkstate">ISCSI_NIC_LINKSTATE</a> enumeration value that indicates whether the port is connected to the network or not.</p>
 </dd>
 
 ### -field <b>MaxFrameSize</b>
@@ -90,7 +90,7 @@ typedef struct _MSiSCSI_NICConfig {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite automatically generates a declaration of the MSiSCSI_NICConfig structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563083">MSiSCSI_NICConfig WMI Class</a> in <i>Config.mof</i>.</p>
+<p>The WMI tool suite automatically generates a declaration of the MSiSCSI_NICConfig structure when it compiles the <a href="storage.msiscsi_nicconfig_wmi_class">MSiSCSI_NICConfig WMI Class</a> in <i>Config.mof</i>.</p>
 
 <p>Initiators are <i>not </i>required to implement the MSiSCSI_NICConfig class. </p>
 
@@ -115,10 +115,10 @@ typedef struct _MSiSCSI_NICConfig {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561549">ISCSI_NIC_LINKSTATE</a>
+<a href="storage.iscsi_nic_linkstate">ISCSI_NIC_LINKSTATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563083">MSiSCSI_NICConfig WMI Class</a>
+<a href="storage.msiscsi_nicconfig_wmi_class">MSiSCSI_NICConfig WMI Class</a>
 </dt>
 </dl>
 <p> </p>

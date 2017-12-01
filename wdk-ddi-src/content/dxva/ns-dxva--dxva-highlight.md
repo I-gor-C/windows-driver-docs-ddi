@@ -93,7 +93,7 @@ typedef struct _DXVA_Highlight {
 ### -field <b>HighlightRect</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the area of the highlight rectangle.</p>
+<p>Specifies a <a href="display.rect">RECT</a> structure that defines the area of the highlight rectangle.</p>
 <p>The following restrictions apply to the RECT dimensions:</p>
 <ul>
 <li>
@@ -129,7 +129,7 @@ typedef struct _DXVA_Highlight {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

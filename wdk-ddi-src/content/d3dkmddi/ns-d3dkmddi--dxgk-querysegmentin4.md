@@ -97,7 +97,7 @@ typedef struct _DXGK_QUERYSEGMENTIN4 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906840">DXGK_QUERYSEGMENTOUT4</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentout4.md">DXGK_QUERYSEGMENTOUT4</a>
 </dt>
 </dl>
 <p> </p>

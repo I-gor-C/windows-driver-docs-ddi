@@ -82,8 +82,6 @@ STDMETHOD EnumOptions(
 ## -remarks
 <p>When <code>IPrintCoreHelperUni::EnumOptions</code> returns, the option list contains all options, regardless of constraints or other factors.</p>
 
-<p>When <code>IPrintCoreHelperUni::EnumOptions</code> returns, the option list contains all options, regardless of constraints or other factors.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -111,10 +109,10 @@ STDMETHOD EnumOptions(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552929">IPrintCoreHelperUni::EnumConstrainedOptions</a>
+<a href="print.iprintcorehelperuni_enumconstrainedoptions">IPrintCoreHelperUni::EnumConstrainedOptions</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552931">IPrintCoreHelperUni::EnumFeatures</a>
+<a href="print.iprintcorehelperuni_enumfeatures">IPrintCoreHelperUni::EnumFeatures</a>
 </dt>
 </dl>
 <p> </p>

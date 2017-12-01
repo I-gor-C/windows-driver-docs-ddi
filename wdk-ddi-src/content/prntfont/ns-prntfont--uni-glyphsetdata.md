@@ -98,31 +98,31 @@ typedef struct _UNI_GLYPHSETDATA {
 ### -field <b>dwRunCount</b>
 
 <dd>
-<p>Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550544">GLYPHRUN</a> structures in the array pointed to by <b>loRunOffset</b>.</p>
+<p>Specifies the number of <a href="..\prntfont\ns-prntfont--glyphrun.md">GLYPHRUN</a> structures in the array pointed to by <b>loRunOffset</b>.</p>
 </dd>
 
 ### -field <b>loRunOffset</b>
 
 <dd>
-<p>Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550544">GLYPHRUN</a> structures.</p>
+<p>Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="..\prntfont\ns-prntfont--glyphrun.md">GLYPHRUN</a> structures.</p>
 </dd>
 
 ### -field <b>dwCodePageCount</b>
 
 <dd>
-<p>Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a> structures in the array pointed to by <b>loCodePageOffset</b>.</p>
+<p>Specifies the number of <a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a> structures in the array pointed to by <b>loCodePageOffset</b>.</p>
 </dd>
 
 ### -field <b>loCodePageOffset</b>
 
 <dd>
-<p>Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a> structures.</p>
+<p>Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a> structures.</p>
 </dd>
 
 ### -field <b>loMapTableOffset</b>
 
 <dd>
-<p>Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556509">MAPTABLE</a> structure.</p>
+<p>Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of a <a href="..\prntfont\ns-prntfont--maptable.md">MAPTABLE</a> structure.</p>
 </dd>
 
 ### -field <b>dwReserved</b>
@@ -152,13 +152,13 @@ typedef struct _UNI_GLYPHSETDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550544">GLYPHRUN</a>
+<a href="..\prntfont\ns-prntfont--glyphrun.md">GLYPHRUN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a>
+<a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556509">MAPTABLE</a>
+<a href="..\prntfont\ns-prntfont--maptable.md">MAPTABLE</a>
 </dt>
 </dl>
 <p> </p>

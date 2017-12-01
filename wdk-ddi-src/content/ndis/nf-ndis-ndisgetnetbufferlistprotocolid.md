@@ -7,7 +7,7 @@ old-location: netvista\ndisgetnetbufferlistprotocolid.htm
 old-project: netvista
 ms.assetid: a90b1318-ce21-4483-b253-767674fe0a2f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisGetNetBufferListProtocolId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,7 @@ req.iface:
 <p>The 
   <b>NdisGetNetBufferListProtocolId</b> function retrieves the protocol identifier from the 
   <b>NetBufferListInfo</b> member of a 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 
 ## -syntax
@@ -61,7 +61,7 @@ UCHAR NdisGetNetBufferListProtocolId(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 </dd>
 </dl>
 
@@ -82,19 +82,7 @@ UCHAR NdisGetNetBufferListProtocolId(
 ## -remarks
 <p>NDIS drivers can call the 
     <b>NdisGetNetBufferListProtocolId</b> function to determine the type of protocol driver that created a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. For example,
-    miniport drivers that support TCP chimney offload can verify that a NET_BUFFER_LIST structure comes from
-    a TCP protocol.</p>
-
-<p>Protocol drivers that create NET_BUFFER_LIST structures should set the protocol identifier by calling
-    the 
-    <a href="netvista.ndissetnetbufferlistprotocolid">
-    NdisSetNetBufferListProtocolId</a> macro or by associating an identifier with a NET_BUFFER_LIST
-    pool.</p>
-
-<p>NDIS drivers can call the 
-    <b>NdisGetNetBufferListProtocolId</b> function to determine the type of protocol driver that created a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. For example,
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure. For example,
     miniport drivers that support TCP chimney offload can verify that a NET_BUFFER_LIST structure comes from
     a TCP protocol.</p>
 
@@ -157,7 +145,7 @@ UCHAR NdisGetNetBufferListProtocolId(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="netvista.ndissetnetbufferlistprotocolid">
@@ -166,4 +154,4 @@ UCHAR NdisGetNetBufferListProtocolId(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetNetBufferListProtocolId function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetNetBufferListProtocolId function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

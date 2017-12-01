@@ -62,7 +62,7 @@ NTSTATUS EtwWrite(
 ### -param <i>RegHandle</i> [in]
 
 <dd>
-<p>A pointer to the event provider registration handle, which is returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545603">EtwRegister</a> function if the event provider registration is successful.</p>
+<p>A pointer to the event provider registration handle, which is returned by the <a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a> function if the event provider registration is successful.</p>
 </dd>
 
 ### -param <i>EventDescriptor</i> [in]
@@ -114,21 +114,13 @@ NTSTATUS EtwWrite(
 </p>
 
 ## -remarks
-<p>The <b>EtwWrite</b> function is the kernel-mode equivalent of the user-mode <b>EventWrite</b> function. To ensure that there is a consumer for the event you are publishing, you can precede the call to <b>EtwWrite</b> with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545590">EtwEventEnabled</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545595">EtwProviderEnabled</a>. </p>
+<p>The <b>EtwWrite</b> function is the kernel-mode equivalent of the user-mode <b>EventWrite</b> function. To ensure that there is a consumer for the event you are publishing, you can precede the call to <b>EtwWrite</b> with a call to <a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a> or <a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a>. </p>
 
 <p>Before you can call <b>EtwWrite</b> function to publish an event, you must register the provider with <b>EtwRegister</b>. No tracing calls should be made that fall outside of the code bounded by the <b>EtwRegister</b> and <b>EtwUnregister</b> functions. For the best performance, you can call the <b>EtwRegister</b> function in your <b>DriverEntry</b> routine and the <b>EtwUnregister</b> function in your <b>DriverUnload</b> routine.</p>
 
 <p>If you are using the optional <i>UserData</i> parameter in the <b>EtwWrite</b> function to log additional event data, you can use the <b>EventDataDescCreate</b> macro to simplify the creation of the EVENT_DATA_DESCRIPTOR structures. The following example uses the <b>EventDataDescCreate</b> macro to initialize EVENT_DATA_DESCRIPTOR structures with  the name of the device and its status. The <b>EventDataDescCreate</b> macro stores pointers to the data (that is, it does not store copies of the data). The pointers must remain valid until the call to <b>EtwWrite</b> returns.</p>
 
-<p>You can call <b>EtwWrite</b> at any IRQL. However, when IRQL is greater than APC_LEVEL, any data passed to the <b>EtwWrite</b>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn144773">EtwWriteEx</a>, <b>EtwWriteString</b>, <b>EtwWriteTransfer</b> functions must not be pageable. That is, any kernel-mode routine that is running at IRQL greater than APC_LEVEL cannot access pageable memory.  Data passed to the <b>EtwWrite</b>, <b>EtwWriteEx</b>, <b>EtwWriteString</b>, and <b>EtwWriteTransfer</b> functions must reside in system-space memory, regardless of what the IRQL is.</p>
-
-<p>The <b>EtwWrite</b> function is the kernel-mode equivalent of the user-mode <b>EventWrite</b> function. To ensure that there is a consumer for the event you are publishing, you can precede the call to <b>EtwWrite</b> with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545590">EtwEventEnabled</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545595">EtwProviderEnabled</a>. </p>
-
-<p>Before you can call <b>EtwWrite</b> function to publish an event, you must register the provider with <b>EtwRegister</b>. No tracing calls should be made that fall outside of the code bounded by the <b>EtwRegister</b> and <b>EtwUnregister</b> functions. For the best performance, you can call the <b>EtwRegister</b> function in your <b>DriverEntry</b> routine and the <b>EtwUnregister</b> function in your <b>DriverUnload</b> routine.</p>
-
-<p>If you are using the optional <i>UserData</i> parameter in the <b>EtwWrite</b> function to log additional event data, you can use the <b>EventDataDescCreate</b> macro to simplify the creation of the EVENT_DATA_DESCRIPTOR structures. The following example uses the <b>EventDataDescCreate</b> macro to initialize EVENT_DATA_DESCRIPTOR structures with  the name of the device and its status. The <b>EventDataDescCreate</b> macro stores pointers to the data (that is, it does not store copies of the data). The pointers must remain valid until the call to <b>EtwWrite</b> returns.</p>
-
-<p>You can call <b>EtwWrite</b> at any IRQL. However, when IRQL is greater than APC_LEVEL, any data passed to the <b>EtwWrite</b>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn144773">EtwWriteEx</a>, <b>EtwWriteString</b>, <b>EtwWriteTransfer</b> functions must not be pageable. That is, any kernel-mode routine that is running at IRQL greater than APC_LEVEL cannot access pageable memory.  Data passed to the <b>EtwWrite</b>, <b>EtwWriteEx</b>, <b>EtwWriteString</b>, and <b>EtwWriteTransfer</b> functions must reside in system-space memory, regardless of what the IRQL is.</p>
+<p>You can call <b>EtwWrite</b> at any IRQL. However, when IRQL is greater than APC_LEVEL, any data passed to the <b>EtwWrite</b>, <a href="..\wdm\nf-wdm-etwwriteex.md">EtwWriteEx</a>, <b>EtwWriteString</b>, <b>EtwWriteTransfer</b> functions must not be pageable. That is, any kernel-mode routine that is running at IRQL greater than APC_LEVEL cannot access pageable memory.  Data passed to the <b>EtwWrite</b>, <b>EtwWriteEx</b>, <b>EtwWriteString</b>, and <b>EtwWriteTransfer</b> functions must reside in system-space memory, regardless of what the IRQL is.</p>
 
 ## -requirements
 <table>
@@ -193,26 +185,26 @@ NTSTATUS EtwWrite(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn144773">EtwWriteEx</a>
+<a href="..\wdm\nf-wdm-etwwriteex.md">EtwWriteEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545642">EtwWriteTransfer</a>
+<a href="..\wdm\nf-wdm-etwwritetransfer.md">EtwWriteTransfer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545637">EtwWriteString</a>
+<a href="..\wdm\nf-wdm-etwwritestring.md">EtwWriteString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545590">EtwEventEnabled</a>
+<a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545595">EtwProviderEnabled</a>
+<a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545603">EtwRegister</a>
+<a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=70404">EventDataDescCreate</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545613">EtwUnregister</a>
+<a href="..\wdm\nf-wdm-etwunregister.md">EtwUnregister</a>
 </dt>
 </dl>
 <p> </p>

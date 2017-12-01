@@ -199,7 +199,7 @@ typedef struct _WHEA_XPF_CONTEXT_INFO {
 </dl>
 
 ## -remarks
-<p>The <b>VariableInfo</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560655">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains zero or more WHEA_XPF_CONTEXT_INFO structures, each of which describes specific context information associated with the processor error that occurred. If the size of a particular WHEA_XPF_CONTEXT_INFO structure is not an even multiple of 16 bytes, the space that is allocated for the structure in the buffer will be padded with additional bytes that are set to zero to round the allocated space up to an even multiple of 16 bytes.</p>
+<p>The <b>VariableInfo</b> member of the <a href="..\ntddk\ns-ntddk--whea-xpf-processor-error-section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains zero or more WHEA_XPF_CONTEXT_INFO structures, each of which describes specific context information associated with the processor error that occurred. If the size of a particular WHEA_XPF_CONTEXT_INFO structure is not an even multiple of 16 bytes, the space that is allocated for the structure in the buffer will be padded with additional bytes that are set to zero to round the allocated space up to an even multiple of 16 bytes.</p>
 
 ## -requirements
 <table>
@@ -227,13 +227,13 @@ typedef struct _WHEA_XPF_CONTEXT_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560631">WHEA_X64_REGISTER_STATE</a>
+<a href="..\ntddk\ns-ntddk--whea-x64-register-state.md">WHEA_X64_REGISTER_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560634">WHEA_X86_REGISTER_STATE</a>
+<a href="..\ntddk\ns-ntddk--whea-x86-register-state.md">WHEA_X86_REGISTER_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560655">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-processor-error-section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>
 </dt>
 </dl>
 <p> </p>

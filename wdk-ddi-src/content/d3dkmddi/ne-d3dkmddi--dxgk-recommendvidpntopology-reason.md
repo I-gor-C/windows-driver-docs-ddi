@@ -61,7 +61,7 @@ typedef enum _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON {
 ### -field <a id="DXGK_RVT_UNINITIALIZED"></a><a id="dxgk_rvt_uninitialized"></a><b>DXGK_RVT_UNINITIALIZED</b>
 
 <dd>
-<p>Indicates that a variable of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562023">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a> has not yet been assigned a meaningful value.</p>
+<p>Indicates that a variable of type <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-recommendvidpntopology-reason.md">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a> has not yet been assigned a meaningful value.</p>
 </dd>
 
 ### -field <a id="DXGK_RVT_INITIALIZATION_NOLKG"></a><a id="dxgk_rvt_initialization_nolkg"></a><b>DXGK_RVT_INITIALIZATION_NOLKG</b>

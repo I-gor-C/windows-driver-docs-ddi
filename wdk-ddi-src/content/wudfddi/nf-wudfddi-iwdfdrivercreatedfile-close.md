@@ -7,7 +7,7 @@ old-location: wdf\iwdfdrivercreatedfile_close.htm
 old-project: wdf
 ms.assetid: a9c1d1d7-4222-4c8c-92eb-497d13952bed
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFDriverCreatedFile, Close, IWDFDriverCreatedFile::Close
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]</p>
-<p>The <b>Close</b> method closes an instance of a UMDF driver-created-file object that was created by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558828">IWDFDevice::CreateWdfFile</a> method.</p>
+<p>The <b>Close</b> method closes an instance of a UMDF driver-created-file object that was created by calling the <a href="wdf.iwdfdevice_createwdffile">IWDFDevice::CreateWdfFile</a> method.</p>
 
 
 ## -syntax
@@ -62,12 +62,6 @@ void  Close();
 <p>None</p>
 
 ## -remarks
-<p>For more information, see <a href="wdf.creating_and_using_driver_created_file_objects">Creating and Using Driver-Created File Objects</a>.</p>
-
-<p>For more information, see <a href="wdf.creating_and_using_driver_created_file_objects">Creating and Using Driver-Created File Objects</a>.</p>
-
-<p>For more information, see <a href="wdf.creating_and_using_driver_created_file_objects">Creating and Using Driver-Created File Objects</a>.</p>
-
 <p>For more information, see <a href="wdf.creating_and_using_driver_created_file_objects">Creating and Using Driver-Created File Objects</a>.</p>
 
 ## -requirements
@@ -123,12 +117,12 @@ void  Close();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558895">IWDFDriverCreatedFile</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdrivercreatedfile.md">IWDFDriverCreatedFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558828">IWDFDevice::CreateWdfFile</a>
+<a href="wdf.iwdfdevice_createwdffile">IWDFDevice::CreateWdfFile</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDriverCreatedFile::Close method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDriverCreatedFile::Close method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

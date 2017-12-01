@@ -7,7 +7,7 @@ old-location: netvista\rilversionparams.htm
 old-project: netvista
 ms.assetid: c6931cee-2b86-4bf8-9e9d-b04e2df9eb12
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILVERSIONPARAMS, RILVERSIONPARAMS, *LPRILVERSIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

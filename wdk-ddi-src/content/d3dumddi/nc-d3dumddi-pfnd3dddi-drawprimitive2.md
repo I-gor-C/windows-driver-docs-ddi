@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY DrawPrimitive2(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543061">D3DDDIARG_DRAWPRIMITIVE2</a> structure that describes the primitive to draw.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawprimitive2.md">D3DDDIARG_DRAWPRIMITIVE2</a> structure that describes the primitive to draw.</p>
 </dd>
 </dl>
 
@@ -75,8 +75,6 @@ __checkReturn HRESULT APIENTRY DrawPrimitive2(
 <p><b>DrawPrimitive2</b> returns S_OK or an appropriate error result if the primitive is not successfully drawn.</p>
 
 ## -remarks
-<p>Stream zero contains transform vertices and is the only stream that should be accessed. </p>
-
 <p>Stream zero contains transform vertices and is the only stream that should be accessed. </p>
 
 ## -requirements
@@ -114,10 +112,10 @@ __checkReturn HRESULT APIENTRY DrawPrimitive2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543061">D3DDDIARG_DRAWPRIMITIVE2</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawprimitive2.md">D3DDDIARG_DRAWPRIMITIVE2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

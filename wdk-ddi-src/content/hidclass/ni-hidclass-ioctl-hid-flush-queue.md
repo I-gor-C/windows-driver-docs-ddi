@@ -110,7 +110,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538876">HidD_FlushQueue</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-flushqueue.md">HidD_FlushQueue</a>
 </dt>
 </dl>
 <p> </p>

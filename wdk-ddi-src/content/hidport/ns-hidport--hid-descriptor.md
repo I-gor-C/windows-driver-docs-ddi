@@ -89,7 +89,7 @@ typedef struct _HID_DESCRIPTOR {
 </dl>
 
 ## -remarks
-<p>The HID class driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439622">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a> request to obtain a device's HID descriptor from a HID minidriver.</p>
+<p>The HID class driver uses an <a href="..\hidport\ni-hidport-ioctl-hid-get-device-descriptor.md">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a> request to obtain a device's HID descriptor from a HID minidriver.</p>
 
 <p>For information about HID descriptors, see the Universal Serial Bus (USB) standard<i> Device Class Definition for Human Interface Devices (HID)</i> located at the <a href="http://www.usb.org/home">USB Implementers Forum website</a>.</p>
 
@@ -110,7 +110,7 @@ typedef struct _HID_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439622">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
+<a href="..\hidport\ni-hidport-ioctl-hid-get-device-descriptor.md">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

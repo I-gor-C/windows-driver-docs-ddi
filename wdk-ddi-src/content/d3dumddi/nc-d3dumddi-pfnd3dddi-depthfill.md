@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY DepthFill(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543018">D3DDDIARG_DEPTHFILL</a> structure that describes the parameters of the depth-fill operation.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-depthfill.md">D3DDDIARG_DEPTHFILL</a> structure that describes the parameters of the depth-fill operation.</p>
 </dd>
 </dl>
 
@@ -82,8 +82,6 @@ __checkReturn HRESULT APIENTRY DepthFill(
 <p> </p>
 
 ## -remarks
-<p>DirectX version 7.0 and earlier runtimes call the <b>DepthFill</b> function to fill a depth buffer (z-buffer and stencil buffer) with a pixel value that is specified in native format.</p>
-
 <p>DirectX version 7.0 and earlier runtimes call the <b>DepthFill</b> function to fill a depth buffer (z-buffer and stencil buffer) with a pixel value that is specified in native format.</p>
 
 ## -requirements
@@ -121,10 +119,10 @@ __checkReturn HRESULT APIENTRY DepthFill(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543018">D3DDDIARG_DEPTHFILL</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-depthfill.md">D3DDDIARG_DEPTHFILL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

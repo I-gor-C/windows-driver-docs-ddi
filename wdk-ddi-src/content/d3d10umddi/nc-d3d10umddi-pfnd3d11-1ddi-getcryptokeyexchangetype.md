@@ -116,18 +116,6 @@ HRESULT APIENTRY* GetCryptoKeyExchangeType(
 
 <p><b>NULL_GUID</b> if the driver is not configured to use any encryption algorithm.</p>
 
-<p>The <b>GetCryptoKeyExchangeType</b> function can be called to query the key exchange types for any index from 0 to (<b>D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS.KeyExchangeTypeCount</b>– 1). </p>
-
-<p>The <i>pCryptoType</i> parameter can contain one of the following values:</p>
-
-<p><b>D3DCRYPTOTYPE_AES128_CTR</b> if the driver is configured to use the 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher. 
-</p>
-
-<p><b>D3DCRYPTOTYPE_PROPRIETARY</b> if the driver is configured to use a proprietary encryption algorithm. 
-</p>
-
-<p><b>NULL_GUID</b> if the driver is not configured to use any encryption algorithm.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -171,10 +159,10 @@ HRESULT APIENTRY* GetCryptoKeyExchangeType(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450936">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-content-protection-caps.md">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451656">GetContentProtectionCaps</a>
+<a href="display.getcontentprotectioncaps">GetContentProtectionCaps</a>
 </dt>
 </dl>
 <p> </p>

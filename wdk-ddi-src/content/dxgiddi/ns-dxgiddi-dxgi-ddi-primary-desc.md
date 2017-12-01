@@ -105,7 +105,7 @@ typedef struct DXGI_DDI_PRIMARY_DESC {
 ### -field <b>ModeDesc</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff557499">DXGI_DDI_MODE_DESC</a> structure that describes the display mode. </p>
+<p>[in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-mode-desc.md">DXGI_DDI_MODE_DESC</a> structure that describes the display mode. </p>
 </dd>
 
 ### -field <b>DriverFlags</b>
@@ -144,10 +144,10 @@ typedef struct DXGI_DDI_PRIMARY_DESC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541697">D3D10DDIARG_CREATERESOURCE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createresource.md">D3D10DDIARG_CREATERESOURCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557499">DXGI_DDI_MODE_DESC</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-mode-desc.md">DXGI_DDI_MODE_DESC</a>
 </dt>
 </dl>
 <p> </p>

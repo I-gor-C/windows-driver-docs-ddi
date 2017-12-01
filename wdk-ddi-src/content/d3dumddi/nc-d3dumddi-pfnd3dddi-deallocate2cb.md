@@ -69,7 +69,7 @@ _Check_return_ HRESULT APIENTRY CALLBACK* pfnDeallocate2Cb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906761">D3DDDICB_DEALLOCATE2</a> structure that describes the resource to release.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-deallocate2.md">D3DDDICB_DEALLOCATE2</a> structure that describes the resource to release.</p>
 </dd>
 </dl>
 
@@ -85,11 +85,6 @@ _Check_return_ HRESULT APIENTRY CALLBACK* pfnDeallocate2Cb(
 <p>This function might also return other HRESULT values.</p>
 
 ## -remarks
-<p>When an allocation destruction request is received, VidMm assumes, by default, that commands queued prior to the destruction request may access the allocation being destroyed and defers the destruction operation until the queued commands finish. If the user mode driver (UMD) knows that pending commands don’t access the allocation being destroyed, it can instruct VidMm not to wait until pending commands are finished by setting the <b>AssumeNotInUse</b> flag to <b>TRUE</b> when calling <b>pfnDeallocate2Cb</b>.</p>
-
-<p>If an application or UMD would like to ensure allocation memory is reclaimed prior to the return from the <b>pfnDeallocate2Cb</b> call (for example, to minimize peak memory usage if the surface is being re-created), it should set the <b>SynchronousDestroy</b> flag.
-</p>
-
 <p>When an allocation destruction request is received, VidMm assumes, by default, that commands queued prior to the destruction request may access the allocation being destroyed and defers the destruction operation until the queued commands finish. If the user mode driver (UMD) knows that pending commands don’t access the allocation being destroyed, it can instruct VidMm not to wait until pending commands are finished by setting the <b>AssumeNotInUse</b> flag to <b>TRUE</b> when calling <b>pfnDeallocate2Cb</b>.</p>
 
 <p>If an application or UMD would like to ensure allocation memory is reclaimed prior to the return from the <b>pfnDeallocate2Cb</b> call (for example, to minimize peak memory usage if the surface is being re-created), it should set the <b>SynchronousDestroy</b> flag.
@@ -138,7 +133,7 @@ _Check_return_ HRESULT APIENTRY CALLBACK* pfnDeallocate2Cb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906761">D3DDDICB_DEALLOCATE2</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-deallocate2.md">D3DDDICB_DEALLOCATE2</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-deallocatecb.md">pfnDeallocateCb</a>

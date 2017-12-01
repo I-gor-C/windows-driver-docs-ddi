@@ -60,7 +60,7 @@ typedef struct _SM_GetTargetMapping_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.</p>
+<p>The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.</p>
 </dd>
 
 ### -field <b>TotalEntryCount</b>

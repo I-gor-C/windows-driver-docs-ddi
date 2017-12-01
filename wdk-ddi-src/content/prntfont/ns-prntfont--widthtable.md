@@ -72,12 +72,12 @@ typedef struct _WIDTHTABLE {
 ### -field <b>WidthRun</b>
 
 <dd>
-<p>Is an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563770">WIDTHRUN</a> structures.</p>
+<p>Is an array of <a href="..\prntfont\ns-prntfont--widthrun.md">WIDTHRUN</a> structures.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>A .ufm file's WIDTHTABLE structure, which describes character widths, is accessed by a pointer in the file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563587">UNIFM_HDR</a> structure.</p>
+<p>A .ufm file's WIDTHTABLE structure, which describes character widths, is accessed by a pointer in the file's <a href="..\prntfont\ns-prntfont--unifm-hdr.md">UNIFM_HDR</a> structure.</p>
 
 ## -requirements
 <table>
@@ -96,10 +96,10 @@ typedef struct _WIDTHTABLE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563770">WIDTHRUN</a>
+<a href="..\prntfont\ns-prntfont--widthrun.md">WIDTHRUN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563587">UNIFM_HDR</a>
+<a href="..\prntfont\ns-prntfont--unifm-hdr.md">UNIFM_HDR</a>
 </dt>
 </dl>
 <p> </p>

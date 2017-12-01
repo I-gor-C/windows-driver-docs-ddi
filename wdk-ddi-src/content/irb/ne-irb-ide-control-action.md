@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The IDE_CONTROL_ACTION enumeration type indicates the control action to be performed by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a> routine.</p>
+<p>The IDE_CONTROL_ACTION enumeration type indicates the control action to be performed by a <a href="storage.idehwcontrol">IdeHwControl</a> routine.</p>
 
 
 ## -syntax
@@ -111,7 +111,7 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
+<a href="storage.idehwcontrol">IdeHwControl</a>
 </dt>
 </dl>
 <p> </p>

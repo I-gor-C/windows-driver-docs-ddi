@@ -67,7 +67,7 @@ SIZE_T APIENTRY CalcPrivateElementLayoutSize(
 ### -param <i>pCreateElementLayout</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541674">D3D10DDIARG_CREATEELEMENTLAYOUT</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createelementlayout.md">D3D10DDIARG_CREATEELEMENTLAYOUT</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ SIZE_T APIENTRY CalcPrivateElementLayoutSize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541833">D3D10DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541674">D3D10DDIARG_CREATEELEMENTLAYOUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createelementlayout.md">D3D10DDIARG_CREATEELEMENTLAYOUT</a>
 </dt>
 </dl>
 <p> </p>

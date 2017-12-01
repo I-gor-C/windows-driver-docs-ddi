@@ -83,10 +83,6 @@ HRESULT Seek(
 
 <p>This method is similar to the <b>IStream::Seek</b> and <b>SetFilePointerEx</b> methods. For more information about these methods, see the Microsoft Windows SDK documentation.</p>
 
-<p>The <code>Seek</code> method might block, for example, if seeking to the end of the stream.</p>
-
-<p>This method is similar to the <b>IStream::Seek</b> and <b>SetFilePointerEx</b> methods. For more information about these methods, see the Microsoft Windows SDK documentation.</p>
-
 ## -requirements
 <table>
 <tr>

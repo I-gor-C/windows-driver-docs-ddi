@@ -145,15 +145,9 @@ ULONG StorPortSetPowerSettingNotificationGuids(
 <p> </p>
 
 ## -remarks
-<p>A miniport calls <b>StorPortSetPowerSettingNotificationGuids</b> in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine to register the GUIDs it requests to receive notifications for.</p>
+<p>A miniport calls <b>StorPortSetPowerSettingNotificationGuids</b> in its <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine to register the GUIDs it requests to receive notifications for.</p>
 
-<p>When a power state change occurs for a registered notification, the miniport is notified in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a> routine. The control type of <b>ScsiPowerSettingNotification</b> is set in the <i>ControlType</i> parameter.</p>
-
-<p>The AHCI Link Power management settings are part of the Disk Settings subgroup (0012ee47-9041-4b5d-9b77-535fba8b1442) in the power policy configuration. These are managed under the SUB_DISK configuration  alias with <i>powercfg.exe</i>.</p>
-
-<p>A miniport calls <b>StorPortSetPowerSettingNotificationGuids</b> in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine to register the GUIDs it requests to receive notifications for.</p>
-
-<p>When a power state change occurs for a registered notification, the miniport is notified in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a> routine. The control type of <b>ScsiPowerSettingNotification</b> is set in the <i>ControlType</i> parameter.</p>
+<p>When a power state change occurs for a registered notification, the miniport is notified in its <a href="storage.hwstoradaptercontrol">HwStorAdapterControl</a> routine. The control type of <b>ScsiPowerSettingNotification</b> is set in the <i>ControlType</i> parameter.</p>
 
 <p>The AHCI Link Power management settings are part of the Disk Settings subgroup (0012ee47-9041-4b5d-9b77-535fba8b1442) in the power policy configuration. These are managed under the SUB_DISK configuration  alias with <i>powercfg.exe</i>.</p>
 
@@ -200,10 +194,10 @@ ULONG StorPortSetPowerSettingNotificationGuids(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a>
+<a href="storage.hwstorfindadapter">HwStorFindAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a>
+<a href="storage.hwstoradaptercontrol">HwStorAdapterControl</a>
 </dt>
 </dl>
 <p> </p>

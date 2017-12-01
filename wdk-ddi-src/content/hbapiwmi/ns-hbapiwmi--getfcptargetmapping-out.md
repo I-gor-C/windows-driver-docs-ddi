@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetFcpTargetMapping_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method to the WMI client. </p>
+<p>The GetFcpTargetMapping_OUT structure is used to report the output parameter data of the <a href="storage.getfcptargetmapping">GetFcpTargetMapping</a> WMI method to the WMI client. </p>
 
 
 ## -syntax
@@ -60,7 +60,7 @@ typedef struct _GetFcpTargetMapping_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>. </p>
+<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
 ### -field <b>TotalEntryCount</b>
@@ -72,20 +72,20 @@ typedef struct _GetFcpTargetMapping_OUT {
 ### -field <b>OutEntryCount</b>
 
 <dd>
-<p>Indicates the total number of mappings retrieved by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method. This value will be less than or equal to <b>TotalEntryCount</b>. </p>
+<p>Indicates the total number of mappings retrieved by the <a href="storage.getfcptargetmapping">GetFcpTargetMapping</a> WMI method. This value will be less than or equal to <b>TotalEntryCount</b>. </p>
 </dd>
 
 ### -field <b>Entry</b>
 
 <dd>
-<p>Contains an array of structures of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556040">HBAFCPScsiEntry</a> that describe an HBA's bindings between operating system and fibre channel protocol (FCP) identifiers. </p>
+<p>Contains an array of structures of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpscsientry.md">HBAFCPScsiEntry</a> that describe an HBA's bindings between operating system and fibre channel protocol (FCP) identifiers. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method reports mappings between the information that uniquely identifies a set of logical units for the operating system and the fibre channel protocol (FCP) identifiers for these logical units.</p>
+<p>The <a href="storage.getfcptargetmapping">GetFcpTargetMapping</a> WMI method reports mappings between the information that uniquely identifies a set of logical units for the operating system and the fibre channel protocol (FCP) identifiers for these logical units.</p>
 
-<p>The WMI tool suite generates a declaration of the GetFcpTargetMapping_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetFcpTargetMapping_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -104,16 +104,16 @@ typedef struct _GetFcpTargetMapping_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a>
+<a href="storage.getfcptargetmapping">GetFcpTargetMapping</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556040">HBAFCPScsiEntry</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--hbafcpscsientry.md">HBAFCPScsiEntry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>
+<a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>
 </dt>
 </dl>
 <p> </p>

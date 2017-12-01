@@ -7,7 +7,7 @@ old-location: kernel\clfsreserveandappendlogaligned.htm
 old-project: kernel
 ms.assetid: 4502c9bd-d03c-4f29-b46e-ba4532b838bb
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: ClfsReserveAndAppendLogAligned
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,13 +67,13 @@ NTSTATUS ClfsReserveAndAppendLogAligned(
 ### -param <i>pvMarshalContext</i> [in]
 
 <dd>
-<p>A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541520">ClfsCreateMarshallingArea</a>.</p>
+<p>A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.</p>
 </dd>
 
 ### -param <i>rgWriteEntries</i> [in, optional]
 
 <dd>
-<p>A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541891">CLFS_WRITE_ENTRY</a> structures, each of which holds a pointer to a buffer of data that will become part of the record that is appended to the log. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.</p>
+<p>A pointer to an array of <a href="kernel.clfs_write_entry">CLFS_WRITE_ENTRY</a> structures, each of which holds a pointer to a buffer of data that will become part of the record that is appended to the log. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.</p>
 </dd>
 
 ### -param <i>cWriteEntries</i> [in]
@@ -85,13 +85,13 @@ NTSTATUS ClfsReserveAndAppendLogAligned(
 ### -param <i>cbEntryAlignment</i> [in]
 
 <dd>
-<p>The byte alignment of the data entries pointed to by <i>rgWriteEntries</i> as they are marshaled into a single record. A value of one specifies simple concatenation (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541723">ClfsReserveAndAppendLog</a>). A value larger than one can result in zeros being placed between entries in the record. The value of this parameter must be greater than zero.</p>
+<p>The byte alignment of the data entries pointed to by <i>rgWriteEntries</i> as they are marshaled into a single record. A value of one specifies simple concatenation (see <a href="..\wdm\nf-wdm-clfsreserveandappendlog.md">ClfsReserveAndAppendLog</a>). A value larger than one can result in zeros being placed between entries in the record. The value of this parameter must be greater than zero.</p>
 </dd>
 
 ### -param <i>plsnUndoNext</i> [in, optional]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a> structure that supplies the undo-next LSN of the record to be appended.</p>
+<p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that supplies the undo-next LSN of the record to be appended.</p>
 </dd>
 
 ### -param <i>plsnPrevious</i> [in, optional]
@@ -152,7 +152,7 @@ NTSTATUS ClfsReserveAndAppendLogAligned(
 ### -param <i>plsn</i> [out, optional]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a> structure that receives the LSN of the appended record. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.</p>
+<p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that receives the LSN of the appended record. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.</p>
 </dd>
 </dl>
 
@@ -184,25 +184,9 @@ NTSTATUS ClfsReserveAndAppendLogAligned(
 
 <p>Appends a record to the marshalling area by using space that has already been reserved. Reduces the number of reserved record spaces by one.</p>
 
-<p><i>cWriteEntries</i> &gt; 0.</p>
-
-<p><i>rgWriteEntries</i> is not <b>NULL</b>.</p>
-
-<p><i>plsn</i> is not <b>NULL</b>.</p>
-
-<p><i>cReserveRecords</i> = 0.</p>
-
-<p><i>rgcbReservation</i> is <b>NULL</b>.</p>
-
 <p>CLFS_USE_RESERVATION is cleared.</p>
 
 <p>Appends a record to the marshalling area by reserving new space. Leaves the number of reserved record spaces unchanged.</p>
-
-<p><i>cWriteEntries</i> &gt; 0.</p>
-
-<p><i>rgWriteEntries</i> is not <b>NULL</b>.</p>
-
-<p><i>plsn</i> is not <b>NULL</b>.</p>
 
 <p><i>cReserveRecords</i> &gt; 0.</p>
 
@@ -211,64 +195,6 @@ NTSTATUS ClfsReserveAndAppendLogAligned(
 <p>CLFS_USE_RESERVATION flag is cleared.</p>
 
 <p>Appends a record to the marshalling area by reserving new space. Also reserves space for a set of records that are not appended at this time. The <i>rgcbReservation</i> parameter gives the size of each record that needs space reserved. Increases the number of reserved record spaces by the value of <i>cReserveRecords</i>.</p>
-
-<p> </p>
-
-<p>For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>. </p>
-
-<p>The <b>ClfsReserveAndAppendLogAligned</b> routine changes its fundamental behavior based on the presence of optional parameters and the state of the CLFS_USE_RESERVATION flag. The following table summarizes common scenarios.</p>
-
-<p><i>cWriteEntries</i> = 0.</p>
-
-<p><i>rgWriteEntries</i> = <b>NULL</b>.</p>
-
-<p><i>plsn</i> = <b>NULL</b>.</p>
-
-<p>Reserves space for a set of records, but does not append the records to the marshalling area. The <i>rgcbReservation</i> parameter gives the size of the data portion of each record that needs space reserved.</p>
-
-<p><i>cWriteEntries</i> &gt; 0.</p>
-
-<p><i>rgWriteEntries</i> is not <b>NULL</b>.</p>
-
-<p><i>plsn</i> is not <b>NULL</b>.</p>
-
-<p><i>cReserveRecords</i> = 0.</p>
-
-<p><i>rgcbReservation</i> is <b>NULL</b>.</p>
-
-<p>CLFS_USE_RESERVATION is set.</p>
-
-<p>Appends a record to the marshalling area by using space that has already been reserved. Reduces the number of reserved record spaces by one.</p>
-
-<p><i>cWriteEntries</i> &gt; 0.</p>
-
-<p><i>rgWriteEntries</i> is not <b>NULL</b>.</p>
-
-<p><i>plsn</i> is not <b>NULL</b>.</p>
-
-<p><i>cReserveRecords</i> = 0.</p>
-
-<p><i>rgcbReservation</i> is <b>NULL</b>.</p>
-
-<p>CLFS_USE_RESERVATION is cleared.</p>
-
-<p>Appends a record to the marshalling area by reserving new space. Leaves the number of reserved record spaces unchanged.</p>
-
-<p><i>cWriteEntries</i> &gt; 0.</p>
-
-<p><i>rgWriteEntries</i> is not <b>NULL</b>.</p>
-
-<p><i>plsn</i> is not <b>NULL</b>.</p>
-
-<p><i>cReserveRecords</i> &gt; 0.</p>
-
-<p><i>rgcbReservation</i> is not <b>NULL</b>.</p>
-
-<p>CLFS_USE_RESERVATION flag is cleared.</p>
-
-<p>Appends a record to the marshalling area by reserving new space. Also reserves space for a set of records that are not appended at this time. The <i>rgcbReservation</i> parameter gives the size of each record that needs space reserved. Increases the number of reserved record spaces by the value of <i>cReserveRecords</i>.</p>
-
-<p> </p>
 
 <p>For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>. </p>
 
@@ -335,18 +261,18 @@ NTSTATUS ClfsReserveAndAppendLogAligned(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a>
+<a href="kernel.clfs_lsn">CLFS_LSN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541891">CLFS_WRITE_ENTRY</a>
+<a href="kernel.clfs_write_entry">CLFS_WRITE_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541520">ClfsCreateMarshallingArea</a>
+<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541723">ClfsReserveAndAppendLog</a>
+<a href="..\wdm\nf-wdm-clfsreserveandappendlog.md">ClfsReserveAndAppendLog</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReserveAndAppendLogAligned routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReserveAndAppendLogAligned routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

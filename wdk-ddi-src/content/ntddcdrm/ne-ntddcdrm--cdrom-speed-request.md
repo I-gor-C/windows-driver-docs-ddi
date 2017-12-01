@@ -88,13 +88,13 @@ typedef enum _CDROM_SPEED_REQUEST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551368">CDROM_SET_SPEED</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-set-speed.md">CDROM_SET_SPEED</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551369">CDROM_SET_STREAMING</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-set-streaming.md">CDROM_SET_STREAMING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559381">IOCTL_CDROM_SET_SPEED</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-set-speed.md">IOCTL_CDROM_SET_SPEED</a>
 </dt>
 </dl>
 <p> </p>

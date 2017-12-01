@@ -7,7 +7,7 @@ old-location: stream\ksallocateextradata.htm
 old-project: stream
 ms.assetid: dfeaca74-d34d-4128-bd76-3a1bf1b3f5d6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsAllocateExtraData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,10 +79,6 @@ NTSTATUS KsAllocateExtraData(
 <p>The <b>KsAllocateExtraData</b> function returns STATUS_SUCCESS if successful, or it returns a resource or access error.</p>
 
 ## -remarks
-<p>When <b>KsAllocateExtraData</b> completes successfully, a pointer to a block of memory is returned that contains both the stream data headers from the IRP, specified at <i>Irp</i>, and padding between each header of size specified in <i>ExtraSize</i>. An example of such a resultant buffer is shown below:</p>
-
-<p>When the extra buffer is no longer needed, the memory should be freed using <b>ExFreePool</b>.</p>
-
 <p>When <b>KsAllocateExtraData</b> completes successfully, a pointer to a block of memory is returned that contains both the stream data headers from the IRP, specified at <i>Irp</i>, and padding between each header of size specified in <i>ExtraSize</i>. An example of such a resultant buffer is shown below:</p>
 
 <p>When the extra buffer is no longer needed, the memory should be freed using <b>ExFreePool</b>.</p>

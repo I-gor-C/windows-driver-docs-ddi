@@ -160,7 +160,7 @@ typedef struct _WHEA_PSHED_PLUGIN_CALLBACKS {
 </dl>
 
 ## -remarks
-<p>A WHEA_PSHED_PLUGIN_CALLBACKS structure is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560617">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure.</p>
+<p>A WHEA_PSHED_PLUGIN_CALLBACKS structure is contained within the <a href="..\ntddk\ns-ntddk--whea-pshed-plugin-registration-packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure.</p>
 
 ## -requirements
 <table>
@@ -230,7 +230,7 @@ typedef struct _WHEA_PSHED_PLUGIN_CALLBACKS {
 <a href="..\ntddk\nc-ntddk-pshed-pi-write-error-record.md">WriteErrorRecord</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560617">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
+<a href="..\ntddk\ns-ntddk--whea-pshed-plugin-registration-packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
 </dt>
 </dl>
 <p> </p>

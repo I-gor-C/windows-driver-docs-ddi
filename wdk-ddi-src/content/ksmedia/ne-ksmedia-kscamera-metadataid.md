@@ -7,7 +7,7 @@ old-location: stream\kscamera_metadataid.htm
 old-project: stream
 ms.assetid: 1CD1D065-9A96-42D5-807E-B439B4273920
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices

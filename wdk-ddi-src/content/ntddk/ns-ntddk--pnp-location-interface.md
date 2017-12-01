@@ -7,7 +7,7 @@ old-location: kernel\pnp_location_interface.htm
 old-project: kernel
 ms.assetid: 5189ffad-e5dc-4f5a-a7e3-481d36332c81
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PNP_LOCATION_INTERFACE, PNP_LOCATION_INTERFACE, *PPNP_LOCATION_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>PNP_LOCATION_INTERFACE</b> structure describes the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546564">GUID_PNP_LOCATION_INTERFACE</a> interface.</p>
+<p>The <b>PNP_LOCATION_INTERFACE</b> structure describes the <a href="kernel.guid_pnp_location_interface">GUID_PNP_LOCATION_INTERFACE</a> interface.</p>
 
 
 ## -syntax
@@ -80,19 +80,19 @@ typedef struct _PNP_LOCATION_INTERFACE {
 ### -field <b>InterfaceReference</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff547833">InterfaceReference</a> routine that increments the reference count for the interface. The PINTERFACE_REFERENCE function pointer type is defined in the Wdm.h header file.</p>
+<p>A pointer to an <a href="kernel.interfacereference">InterfaceReference</a> routine that increments the reference count for the interface. The PINTERFACE_REFERENCE function pointer type is defined in the Wdm.h header file.</p>
 </dd>
 
 ### -field <b>InterfaceDereference</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff547829">InterfaceDereference</a> routine that decrements the reference count for the interface. The PINTERFACE_DEREFERENCE function pointer type is defined in the Wdm.h header file.</p>
+<p>A pointer to an <a href="kernel.interfacedereference">InterfaceDereference</a> routine that decrements the reference count for the interface. The PINTERFACE_DEREFERENCE function pointer type is defined in the Wdm.h header file.</p>
 </dd>
 
 ### -field <b>GetLocationString</b>
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558811">PnpGetLocationString</a> routine for the interface. The routine supplies the device-specific part of the SPDRP_LOCATION_PATHS property for the device.</p>
+<p>A pointer to the <a href="..\ntddk\nc-ntddk-pget-location-string.md">PnpGetLocationString</a> routine for the interface. The routine supplies the device-specific part of the SPDRP_LOCATION_PATHS property for the device.</p>
 </dd>
 </dl>
 
@@ -124,18 +124,18 @@ typedef struct _PNP_LOCATION_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547829">InterfaceDereference</a>
+<a href="kernel.interfacedereference">InterfaceDereference</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547833">InterfaceReference</a>
+<a href="kernel.interfacereference">InterfaceReference</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558811">PnpGetLocationString</a>
+<a href="..\ntddk\nc-ntddk-pget-location-string.md">PnpGetLocationString</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PNP_LOCATION_INTERFACE structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PNP_LOCATION_INTERFACE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

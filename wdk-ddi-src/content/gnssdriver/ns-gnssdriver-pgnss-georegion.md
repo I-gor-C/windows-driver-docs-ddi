@@ -7,7 +7,7 @@ old-location: sensors\gnss_georegion.htm
 old-project: sensors
 ms.assetid: 70FC3BCE-3869-4263-8870-BB97438CB5F1
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_GEOREGION, GNSS_GEOREGION, *PGNSS_GEOREGION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,7 +83,7 @@ typedef struct {
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn925179">GNSS_GEOREGION_CIRCLE</a> structure that defines a circular geofence.</p>
+<a href="sensors.gnss_georegion_circle">GNSS_GEOREGION_CIRCLE</a> structure that defines a circular geofence.</p>
 </dd>
 
 ### -field <b>Unused[512]</b>

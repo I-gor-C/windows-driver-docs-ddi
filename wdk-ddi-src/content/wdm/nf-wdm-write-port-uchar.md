@@ -7,7 +7,7 @@ old-location: kernel\write_port_uchar.htm
 old-project: kernel
 ms.assetid: 951b688f-21fa-4555-b877-e140e46a1700
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WRITE_PORT_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,8 +73,6 @@ req.product: Windows 10 or later.
 <p>None</p>
 
 ## -remarks
-<p>Callers of <b>WRITE_PORT_UCHAR</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
-
 <p>Callers of <b>WRITE_PORT_UCHAR</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
 
 ## -requirements

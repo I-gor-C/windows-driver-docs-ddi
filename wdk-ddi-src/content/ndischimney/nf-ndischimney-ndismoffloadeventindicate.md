@@ -7,7 +7,7 @@ old-location: netvista\ndismoffloadeventindicate.htm
 old-project: netvista
 ms.assetid: 81052e73-4dce-48df-8541-5da54e2156d8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMOffloadEventIndicate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -153,12 +153,6 @@ VOID NdisMOffloadEventIndicate(
     <a href="netvista.making_a_neighborreachabilityquery_indication">Making a
     NeighborReachabilityQuery Indication</a>.</p>
 
-<p>The host stack uses the 
-    <b>NeighborReachabilityQuery</b> indication to detect neighbor unreachability for IPv4 and IPv6. For a
-    detailed description of this indication, see 
-    <a href="netvista.making_a_neighborreachabilityquery_indication">Making a
-    NeighborReachabilityQuery Indication</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -204,13 +198,13 @@ VOID NdisMOffloadEventIndicate(
    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568323">NEIGHBOR_OFFLOAD_STATE_CACHED</a>
+<a href="..\ndischimney\ns-ndischimney--neighbor-offload-state-cached.md">NEIGHBOR_OFFLOAD_STATE_CACHED</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568324">NEIGHBOR_OFFLOAD_STATE_CONST</a>
+<a href="..\ndischimney\ns-ndischimney--neighbor-offload-state-const.md">NEIGHBOR_OFFLOAD_STATE_CONST</a>
 </dt>
 <dt>
 <a href="..\ndischimney\ns-ndischimney--neighbor-offload-state-delegated.md">
@@ -219,4 +213,4 @@ VOID NdisMOffloadEventIndicate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMOffloadEventIndicate function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMOffloadEventIndicate function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

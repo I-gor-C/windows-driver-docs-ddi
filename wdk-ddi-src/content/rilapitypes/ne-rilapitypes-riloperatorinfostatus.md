@@ -7,7 +7,7 @@ old-location: netvista\riloperatorinfostatus_2.htm
 old-project: netvista
 ms.assetid: 8b17ae4a-b3ea-48b6-8269-f947e1d74b86
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -154,7 +154,7 @@ typedef struct _VIDEO_PORT_AGP_INTERFACE {
 </dl>
 
 ## -remarks
-<p>PnP video miniport drivers that can use AGP must fill in the <b>Size</b> and <b>Version</b> members, and then call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570337">VideoPortQueryServices</a> function, which initializes the remaining members of this structure.</p>
+<p>PnP video miniport drivers that can use AGP must fill in the <b>Size</b> and <b>Version</b> members, and then call the <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a> function, which initializes the remaining members of this structure.</p>
 
 ## -requirements
 <table>
@@ -173,10 +173,10 @@ typedef struct _VIDEO_PORT_AGP_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570337">VideoPortQueryServices</a>
+<a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a>
+<a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

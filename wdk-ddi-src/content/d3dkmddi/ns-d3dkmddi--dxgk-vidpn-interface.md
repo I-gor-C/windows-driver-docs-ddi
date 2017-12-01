@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DXGK_VIDPN_INTERFACE structure contains pointers to functions that belong to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn interface</a>, which is implemented by the video present network (VidPN) manager.</p>
+<p>The DXGK_VIDPN_INTERFACE structure contains pointers to functions that belong to the <a href="display.vidpn_interface">VidPn interface</a>, which is implemented by the video present network (VidPN) manager.</p>
 
 
 ## -syntax
@@ -67,7 +67,7 @@ typedef struct _DXGK_VIDPN_INTERFACE {
 ### -field <b>Version</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562860">DXGK_VIDPN_INTERFACE_VERSION</a> enumerator that specifies the version of the interface.</p>
+<p>A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-vidpn-interface-version.md">DXGK_VIDPN_INTERFACE_VERSION</a> enumerator that specifies the version of the interface.</p>
 </dd>
 
 ### -field <b>pfnGetTopology</b>

@@ -95,10 +95,10 @@ typedef struct _DISK_EXTENT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560644">IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS</a>
+<a href="..\ntddvol\ni-ntddvol-ioctl-volume-get-volume-disk-extents.md">IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568017">VOLUME_DISK_EXTENTS</a>
+<a href="..\ntddvol\ns-ntddvol--volume-disk-extents.md">VOLUME_DISK_EXTENTS</a>
 </dt>
 </dl>
 <p> </p>

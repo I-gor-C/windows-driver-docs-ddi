@@ -7,7 +7,7 @@ old-location: netvista\rilsetuicclockenabledparams_2.htm
 old-project: netvista
 ms.assetid: c29aa1f0-d274-4782-9b56-31a84e2686e4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSETUICCLOCKENABLEDPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

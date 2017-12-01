@@ -68,7 +68,7 @@ __checkReturn HRESULT APIENTRY SetVertexShaderConstB(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543368">D3DDDIARG_SETVERTEXSHADERCONST</a> structure that specifies how to set the vertex shader constant registers.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setvertexshaderconst.md">D3DDDIARG_SETVERTEXSHADERCONST</a> structure that specifies how to set the vertex shader constant registers.</p>
 </dd>
 
 ### -param <i>pRegisters</i> [in]
@@ -119,10 +119,10 @@ __checkReturn HRESULT APIENTRY SetVertexShaderConstB(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543368">D3DDDIARG_SETVERTEXSHADERCONST</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setvertexshaderconst.md">D3DDDIARG_SETVERTEXSHADERCONST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

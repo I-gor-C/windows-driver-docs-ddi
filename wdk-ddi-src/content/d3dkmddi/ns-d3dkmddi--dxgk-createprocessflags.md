@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>DXGK_CREATEPROCESSFLAGS</b> is used with <a href="https://msdn.microsoft.com/library/windows/hardware/dn914470">DXGKARG_CREATEPROCESS</a> and <a href="display.dxgkddicreateprocess">DxgkDdiCreateProcess</a> to create a kernel mode driver object for a Microsoft DirectX graphics kernel process object.</p>
+<p><b>DXGK_CREATEPROCESSFLAGS</b> is used with <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createprocess.md">DXGKARG_CREATEPROCESS</a> and <a href="display.dxgkddicreateprocess">DxgkDdiCreateProcess</a> to create a kernel mode driver object for a Microsoft DirectX graphics kernel process object.</p>
 
 
 ## -syntax
@@ -122,7 +122,7 @@ typedef struct _DXGK_CREATEPROCESSFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914470">DXGKARG_CREATEPROCESS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createprocess.md">DXGKARG_CREATEPROCESS</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateprocess">DxgkDdiCreateProcess</a>

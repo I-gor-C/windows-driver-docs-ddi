@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>WIA_MICR</b> structure stores header information for the MICR metadata report of one scan job (one call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543956">IWiaMiniDrv::drvAcquireItemData</a>).</p>
+<p>The <b>WIA_MICR</b> structure stores header information for the MICR metadata report of one scan job (one call to <a href="image.iwiaminidrv_drvacquireitemdata">IWiaMiniDrv::drvAcquireItemData</a>).</p>
 
 
 ## -syntax
@@ -75,7 +75,7 @@ typedef struct _WIA_MICR {
 ### -field <b>Size</b>
 
 <dd>
-<p>The complete size of this <b>WIA_MICR</b> header structure, in bytes, including the complete size of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh706271">WIA_MICR_INFO</a> list.</p>
+<p>The complete size of this <b>WIA_MICR</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef--wia-micr-info.md">WIA_MICR_INFO</a> list.</p>
 </dd>
 
 ### -field <b>Placeholder</b>
@@ -87,13 +87,13 @@ typedef struct _WIA_MICR {
 ### -field <b>Count</b>
 
 <dd>
-<p>Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/hh706271">WIA_MICR_INFO</a> elements in the <b>Micr</b> sequence.</p>
+<p>Specifies the number of <a href="..\wiadef\ns-wiadef--wia-micr-info.md">WIA_MICR_INFO</a> elements in the <b>Micr</b> sequence.</p>
 </dd>
 
 ### -field <b>Micr</b>
 
 <dd>
-<p>Placeholder for a sequence of <b>Count</b> contiguous <a href="https://msdn.microsoft.com/library/windows/hardware/hh706271">WIA_MICR_INFO</a> structures.</p>
+<p>Placeholder for a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef--wia-micr-info.md">WIA_MICR_INFO</a> structures.</p>
 </dd>
 </dl>
 

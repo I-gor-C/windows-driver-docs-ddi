@@ -7,7 +7,7 @@ old-location: stream\kspinpropertyhandler.htm
 old-project: stream
 ms.assetid: b721b79b-93f3-4dc8-853d-543222464341
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsPinPropertyHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,7 +73,7 @@ NTSTATUS KsPinPropertyHandler(
 ### -param <i>Data</i> [in, out]
 
 <dd>
-<p>Specifies the data parameter mapped to a system address. This is the same parameter passed to a property handler through a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564263">KsPropertyHandler</a> callback.</p>
+<p>Specifies the data parameter mapped to a system address. This is the same parameter passed to a property handler through a <a href="..\ks\nf-ks-kspropertyhandler.md">KsPropertyHandler</a> callback.</p>
 </dd>
 
 ### -param <i>DescriptorsCount</i> [in]
@@ -93,8 +93,6 @@ NTSTATUS KsPinPropertyHandler(
 <p>The <b>KsPinPropertyHandler</b> function returns STATUS_SUCCESS or an error specific to the property being handled. The function fills in the IO_STATUS_BLOCK.Information field of the PIRP.IoStatus element within the IRP. It does not set the IO_STATUS_BLOCK.Status field nor complete the IRP.</p>
 
 ## -remarks
-<p>Do not use the <b>KsPinPropertyHandler</b> function to define a pin property set; a pin property set can be more easily defined using the DEFINE_KSPROPERY_PINSET macro.</p>
-
 <p>Do not use the <b>KsPinPropertyHandler</b> function to define a pin property set; a pin property set can be more easily defined using the DEFINE_KSPROPERY_PINSET macro.</p>
 
 ## -requirements

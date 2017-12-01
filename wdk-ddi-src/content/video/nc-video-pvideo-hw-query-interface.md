@@ -68,7 +68,7 @@ VP_STATUS HwVidQueryInterface(
 ### -param <i>QueryInterface</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569225">QUERY_INTERFACE</a> structure in which the miniport driver should return information about the interface it supports.</p>
+<p>Pointer to a <a href="..\video\ns-video--query-interface.md">QUERY_INTERFACE</a> structure in which the miniport driver should return information about the interface it supports.</p>
 </dd>
 </dl>
 
@@ -80,31 +80,7 @@ VP_STATUS HwVidQueryInterface(
 
 <p>The video port calls <i>HwVidQueryInterface</i> when it receives an IRP_MN_QUERY_INTERFACE request. If the miniport driver fails the call, the video port driver passes the request to the parent of the miniport driver's device.</p>
 
-<p><i>HwVidQueryInterface</i> should fill in the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a> structure to which <i>QueryInterface</i>-&gt;<b>Interface</b> points as follows:</p>
-
-<p>Set <b>Size</b> to the number of bytes in the INTERFACE structure. This value must not exceed the number of bytes specified by <i>QueryInterface</i>-&gt;<b>Size</b>.</p>
-
-<p>Set <b>Version</b> to the version of the interface being returned by the miniport driver. The miniport driver should best match the version requested by the child driver in <i>QueryInterface</i>-&gt;<b>Version</b>.</p>
-
-<p>Set <b>Context</b> to point to a miniport driver-defined context for the interface. Typically, a miniport driver would set <b>Context</b> to point to the device extension identified by <i>HwDeviceExtension</i>.</p>
-
-<p>Initialize <b>InterfaceReference</b> and <b>InterfaceDereference</b> to point to the miniport driver-implemented reference and dereference routines for this interface.</p>
-
-<p>Initialize all additional interface-specific members to point to the appropriate routines of the interface being exposed.</p>
-
-<p>A miniport driver that returns an interface is responsible for referencing the interface by calling <i>QueryInterface</i>-&gt;<b>Interface.InterfaceReference</b>. The child driver requesting the interface is responsible for dereferencing it when the driver no longer requires the interface by calling <i>QueryInterface</i>-&gt;<b>Interface.InterfaceDereference</b>. If the child driver passes the interface to another component, the child is responsible for taking out another reference, and the other component is responsible for removing the additional reference when it no longer needs access to the interface. Referencing allows a parent to determine when the interface is still required by the child device, and consequently when the parent can free any interface-associated resources.</p>
-
-<p>The driver of a child device can call into the miniport driver through the functions exposed by <i>HwVidQueryInterface</i> at any time without the video port driver's knowledge. Consequently, the miniport driver must synchronize access to itself by acquiring and releasing the video port driver-maintained device lock in all of the functions exposed by <i>HwVidQueryInterface</i>.</p>
-
-<p>A child device is enumerated by <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a>.</p>
-
-<p><i>HwVidQueryInterface</i> should be made pageable.</p>
-
-<p><i>HwVidQueryInterface</i> exposes a communication mechanism between the video miniport driver and the driver of a child device. A miniport driver that exposes such a mechanism should implement this function.</p>
-
-<p>The video port calls <i>HwVidQueryInterface</i> when it receives an IRP_MN_QUERY_INTERFACE request. If the miniport driver fails the call, the video port driver passes the request to the parent of the miniport driver's device.</p>
-
-<p><i>HwVidQueryInterface</i> should fill in the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a> structure to which <i>QueryInterface</i>-&gt;<b>Interface</b> points as follows:</p>
+<p><i>HwVidQueryInterface</i> should fill in the members of the <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure to which <i>QueryInterface</i>-&gt;<b>Interface</b> points as follows:</p>
 
 <p>Set <b>Size</b> to the number of bytes in the INTERFACE structure. This value must not exceed the number of bytes specified by <i>QueryInterface</i>-&gt;<b>Size</b>.</p>
 
@@ -151,16 +127,16 @@ VP_STATUS HwVidQueryInterface(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569225">QUERY_INTERFACE</a>
+<a href="..\video\ns-video--query-interface.md">QUERY_INTERFACE</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570174">VideoPortAcquireDeviceLock</a>
+<a href="..\video\nf-video-videoportacquiredevicelock.md">VideoPortAcquireDeviceLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570356">VideoPortReleaseDeviceLock</a>
+<a href="..\video\nf-video-videoportreleasedevicelock.md">VideoPortReleaseDeviceLock</a>
 </dt>
 </dl>
 <p> </p>

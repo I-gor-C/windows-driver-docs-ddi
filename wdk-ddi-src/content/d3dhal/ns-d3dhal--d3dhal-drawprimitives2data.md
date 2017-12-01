@@ -274,13 +274,13 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
       </b>
 
 
-### -field Points to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a> structure that identifies the DirectDraw surface containing the command data. The <b>fpVidMem</b> member of the embedded <a href="https://msdn.microsoft.com/library/windows/hardware/ff551726">DD_SURFACE_GLOBAL</a> structure points to the buffer that contains state change and primitive drawing commands for the driver to process. Specifically, this buffer contains one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structures, each followed by a <i>D3DHAL_DP2Xxx</i> structure whose exact type is identified by D3DHAL_DP2COMMAND's <b>bCommand</b> member.
+### -field Points to the <a href="display.dd_surface_local">DD_SURFACE_LOCAL</a> structure that identifies the DirectDraw surface containing the command data. The <b>fpVidMem</b> member of the embedded <a href="display.dd_surface_global">DD_SURFACE_GLOBAL</a> structure points to the buffer that contains state change and primitive drawing commands for the driver to process. Specifically, this buffer contains one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> structures, each followed by a <i>D3DHAL_DP2Xxx</i> structure whose exact type is identified by D3DHAL_DP2COMMAND's <b>bCommand</b> member.
 
 
 ### -field <b>DirectX 9.0 and later versions only.</b>
 
 
-### -field In addition to the command-buffer functionality of DirectX 8.1 and earlier, this member can point to a response buffer that the driver returns. Specifically, this response buffer contains one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545710">D3DHAL_DP2RESPONSE</a> structures, each followed by either <a href="https://msdn.microsoft.com/library/windows/hardware/ff545714">D3DHAL_DP2RESPONSEQUERY</a> structures or zero if the response token in the <b>bCommand</b> of D3DHAL_DP2RESPONSE is D3DDP2OP_RESPONSECONTINUE.
+### -field In addition to the command-buffer functionality of DirectX 8.1 and earlier, this member can point to a response buffer that the driver returns. Specifically, this response buffer contains one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2response.md">D3DHAL_DP2RESPONSE</a> structures, each followed by either <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2responsequery.md">D3DHAL_DP2RESPONSEQUERY</a> structures or zero if the response token in the <b>bCommand</b> of D3DHAL_DP2RESPONSE is D3DDP2OP_RESPONSECONTINUE.
 
 </dl>
 </dd>
@@ -313,7 +313,7 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 ### -field <b>lpDDVertex</b>
 
 <dd>
-<p>Points to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a> structure that identifies the DirectDraw surface containing the vertex data when the D3DHALDP2_USERMEMVERTICES flag is not set in <b>dwFlags</b>. Forms a union with <b>lpVertices</b>. </p>
+<p>Points to the <a href="display.dd_surface_local">DD_SURFACE_LOCAL</a> structure that identifies the DirectDraw surface containing the vertex data when the D3DHALDP2_USERMEMVERTICES flag is not set in <b>dwFlags</b>. Forms a union with <b>lpVertices</b>. </p>
 </dd>
 
 ### -field <b>lpVertices</b>
@@ -349,7 +349,7 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 ### -field <b>lpdwRStates</b>
 
 <dd>
-<p>Points to a render state array that the driver should update when it parses render state commands from the command buffer. The driver should update this array only when the D3DHALDP2_EXECUTEBUFFER flag is set in <b>dwFlags</b>. The driver should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549036">D3DRENDERSTATETYPE</a> enumerated types to update the appropriate element of the render state array. </p>
+<p>Points to a render state array that the driver should update when it parses render state commands from the command buffer. The driver should update this array only when the D3DHALDP2_EXECUTEBUFFER flag is set in <b>dwFlags</b>. The driver should use the <a href="..\d3d9types\ne-d3d9types--d3drenderstatetype.md">D3DRENDERSTATETYPE</a> enumerated types to update the appropriate element of the render state array. </p>
 </dd>
 
 ### -field <b>dwVertexSize</b>
@@ -401,7 +401,7 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 ### -field <b>DirectX 9.0 and later versions only.</b>
 
 
-### -field In addition to the error-offset functionality of DirectX 8.1 and earlier, the driver can specify the total size, in bytes, of the outgoing response buffer or zero if the response buffer is empty of responses. This member specifies response-buffer information only when the <b>ddrval</b> member is set to D3D_OK for successful completion. If this member is nonzero, it indicates that previously submitted queries using the D3DDP2OP_ISSUEQUERY operation completed and that responses to those queries are specified in <a href="https://msdn.microsoft.com/library/windows/hardware/ff545710">D3DHAL_DP2RESPONSE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff545714">D3DHAL_DP2RESPONSEQUERY</a> structures and available in the outgoing response buffer. Each D3DHAL_DP2RESPONSEQUERY is followed by the following data related to the query: 
+### -field In addition to the error-offset functionality of DirectX 8.1 and earlier, the driver can specify the total size, in bytes, of the outgoing response buffer or zero if the response buffer is empty of responses. This member specifies response-buffer information only when the <b>ddrval</b> member is set to D3D_OK for successful completion. If this member is nonzero, it indicates that previously submitted queries using the D3DDP2OP_ISSUEQUERY operation completed and that responses to those queries are specified in <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2response.md">D3DHAL_DP2RESPONSE</a> and <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2responsequery.md">D3DHAL_DP2RESPONSEQUERY</a> structures and available in the outgoing response buffer. Each D3DHAL_DP2RESPONSEQUERY is followed by the following data related to the query: 
 
 
 ### -field BOOL for D3DQUERYTYPE_EVENT 
@@ -411,7 +411,7 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 
 
 ### -field 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544702">D3DDEVINFO_VCACHE</a> structure for D3DQUERYTYPE_VCACHE
+<a href="..\d3d9types\ns-d3d9types--d3ddevinfo-vcache.md">D3DDEVINFO_VCACHE</a> structure for D3DQUERYTYPE_VCACHE
 
 
 ### -field The runtime parses the response buffer and updates its internal data structures.
@@ -448,16 +448,16 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549036">D3DRENDERSTATETYPE</a>
+<a href="..\d3d9types\ne-d3d9types--d3drenderstatetype.md">D3DRENDERSTATETYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551726">DD_SURFACE_GLOBAL</a>
+<a href="display.dd_surface_global">DD_SURFACE_GLOBAL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
+<a href="display.dd_surface_local">DD_SURFACE_LOCAL</a>
 </dt>
 </dl>
 <p> </p>

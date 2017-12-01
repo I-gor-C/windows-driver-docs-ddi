@@ -7,7 +7,7 @@ old-location: netvista\rilgetphonebookoptionsparams.htm
 old-project: netvista
 ms.assetid: a6c71f2d-baf7-4293-ae13-38625be3ab3f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILGETPHONEBOOKOPTIONSPARAMS, RILGETPHONEBOOKOPTIONSPARAMS, *LPRILGETPHONEBOOKOPTIONSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

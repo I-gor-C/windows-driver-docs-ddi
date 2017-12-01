@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-                        Initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/mt805870">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.
+                        Initializes the <a href="buses.ucmtcpci_port_controller_capabilities">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.
                 </p>
 
 
@@ -111,7 +111,7 @@ VOID UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>
+<a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>
 </dt>
 </dl>
 <p> </p>

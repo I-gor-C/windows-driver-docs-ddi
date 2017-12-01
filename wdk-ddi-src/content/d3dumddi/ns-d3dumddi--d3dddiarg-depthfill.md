@@ -72,7 +72,7 @@ typedef struct _D3DDDIARG_DEPTHFILL {
 ### -field <b>DstRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure that indicates the upper-left and lower-right points of a rectangle on the buffer to depth fill. </p>
+<p>[in] A <a href="display.rectl">RECTL</a> structure that indicates the upper-left and lower-right points of a rectangle on the buffer to depth fill. </p>
 </dd>
 
 ### -field <b>Depth</b>
@@ -113,7 +113,7 @@ typedef struct _D3DDDIARG_DEPTHFILL {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-depthfill.md">DepthFill</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a>
+<a href="display.rectl">RECTL</a>
 </dt>
 </dl>
 <p> </p>

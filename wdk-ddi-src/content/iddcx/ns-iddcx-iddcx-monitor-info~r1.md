@@ -79,7 +79,7 @@ typedef struct IDDCX_MONITOR_INFO {
 <dd>
 <p>
                      This is a zero-based unique identifier for this connector. It should be unique for this adapter and the value should not change for this connector across system reboot or driver upgrade. </p>
-<div class="alert"><b>Note</b>  The value has to be between 0 and the <a href="https://msdn.microsoft.com/library/windows/hardware/mt761932">IDDCX_ADAPTER_CAPS</a> value MaxMonitorsSupported minus 1.
+<div class="alert"><b>Note</b>  The value has to be between 0 and the <a href="..\iddcx\ns-iddcx-iddcx-adapter-caps.md">IDDCX_ADAPTER_CAPS</a> value MaxMonitorsSupported minus 1.
                  </div>
 <div> </div>
 </dd>

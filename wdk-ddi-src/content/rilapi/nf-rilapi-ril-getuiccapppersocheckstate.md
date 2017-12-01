@@ -7,7 +7,7 @@ old-location: netvista\ril_getuiccapppersocheckstate.htm
 old-project: netvista
 ms.assetid: 328f6ac4-e045-4197-a74c-607e98ba606c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetUiccAppPersoCheckState
 ms.prod: windows-hardware
 ms.technology: windows-devices

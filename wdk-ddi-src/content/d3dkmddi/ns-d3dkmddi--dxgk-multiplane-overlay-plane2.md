@@ -92,7 +92,7 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE2 {
 ### -field <b>PlaneAttributes</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn914477">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a> that specifies overlay plane attributes.</p>
+<p>A structure of type <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-attributes2.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a> that specifies overlay plane attributes.</p>
 </dd>
 </dl>
 
@@ -135,7 +135,7 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE2 {
 <a href="display.dxgkddisetvidpnsourceaddresswithmultiplaneoverlay2">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914477">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-attributes2.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a>
 </dt>
 </dl>
 <p> </p>

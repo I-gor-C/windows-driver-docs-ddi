@@ -60,7 +60,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_DESC {
 ### -field <b>Guid</b>
 
 <dd>
-<p>The DXVA decoding profile. To get the list of profiles supported by the device, call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451670">GetVideoDecoderProfile</a> function.
+<p>The DXVA decoding profile. To get the list of profiles supported by the device, call the <a href="display.getvideodecoderprofile">GetVideoDecoderProfile</a> function.
 
 </p>
 </dd>
@@ -120,7 +120,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_DESC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451670">GetVideoDecoderProfile</a>
+<a href="display.getvideodecoderprofile">GetVideoDecoderProfile</a>
 </dt>
 </dl>
 <p> </p>

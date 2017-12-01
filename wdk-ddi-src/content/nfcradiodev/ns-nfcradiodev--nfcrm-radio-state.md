@@ -7,7 +7,7 @@ old-location: nfpdrivers\_nfcrm_radio_state_.htm
 old-project: nfpdrivers
 ms.assetid: 414486ED-464D-4CAF-95C2-9AC59D608816
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: NFCRM_RADIO_STATE, NFCRM_RADIO_STATE, *PNFCRM_RADIO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

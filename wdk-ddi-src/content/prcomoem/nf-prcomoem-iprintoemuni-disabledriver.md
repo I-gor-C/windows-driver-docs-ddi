@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <code>IPrintOemuNI::DisableDriver</code> method allows a rendering plug-in for <a href="wdkgloss.u#wdkgloss.unidrv#wdkgloss.unidrv"><i>Unidrv</i></a> to free resources that were allocated by the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554248">IPrintOemUni::EnableDriver</a> method.</p>
+<p>The <code>IPrintOemuNI::DisableDriver</code> method allows a rendering plug-in for <a href="wdkgloss.u#wdkgloss.unidrv#wdkgloss.unidrv"><i>Unidrv</i></a> to free resources that were allocated by the plug-in's <a href="print.iprintoemuni_enabledriver">IPrintOemUni::EnableDriver</a> method.</p>
 
 
 ## -syntax
@@ -72,17 +72,9 @@ STDMETHOD DisableDriver(
 ## -remarks
 <p>A rendering plug-in for Unidrv must implement the <code>IPrintOemUni::DisableDriver</code> method.</p>
 
-<p>The <code>IPrintOemUni::DisableDriver</code> method, provided by rendering plug-ins for Unidrv, performs the same types of operations as the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556196">DrvDisableDriver</a> function that is exported by Unidrv's printer graphics DLL.</p>
+<p>The <code>IPrintOemUni::DisableDriver</code> method, provided by rendering plug-ins for Unidrv, performs the same types of operations as the <a href="display.drvdisabledriver">DrvDisableDriver</a> function that is exported by Unidrv's printer graphics DLL.</p>
 
-<p><code>IPrintOemUni::DisableDriver</code> and <b>IPrintOemUni::EnableDriver</b> must be implemented as a pair. If you implement one, you must implement the other. For more information, see the Remarks section in <a href="https://msdn.microsoft.com/library/windows/hardware/ff554248">IPrintOemUni::EnableDriver</a>. </p>
-
-<p>This is the last <b>IPrintOemUni</b> interface method that is called before the rendering plug-in is unloaded.</p>
-
-<p>A rendering plug-in for Unidrv must implement the <code>IPrintOemUni::DisableDriver</code> method.</p>
-
-<p>The <code>IPrintOemUni::DisableDriver</code> method, provided by rendering plug-ins for Unidrv, performs the same types of operations as the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556196">DrvDisableDriver</a> function that is exported by Unidrv's printer graphics DLL.</p>
-
-<p><code>IPrintOemUni::DisableDriver</code> and <b>IPrintOemUni::EnableDriver</b> must be implemented as a pair. If you implement one, you must implement the other. For more information, see the Remarks section in <a href="https://msdn.microsoft.com/library/windows/hardware/ff554248">IPrintOemUni::EnableDriver</a>. </p>
+<p><code>IPrintOemUni::DisableDriver</code> and <b>IPrintOemUni::EnableDriver</b> must be implemented as a pair. If you implement one, you must implement the other. For more information, see the Remarks section in <a href="print.iprintoemuni_enabledriver">IPrintOemUni::EnableDriver</a>. </p>
 
 <p>This is the last <b>IPrintOemUni</b> interface method that is called before the rendering plug-in is unloaded.</p>
 

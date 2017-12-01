@@ -7,7 +7,7 @@ old-location: netvista\rilopenuicclogicalchannelparams_2.htm
 old-project: netvista
 ms.assetid: 067d33bf-33d5-49b7-9923-8c893d0b9184
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILOPENUICCLOGICALCHANNELPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

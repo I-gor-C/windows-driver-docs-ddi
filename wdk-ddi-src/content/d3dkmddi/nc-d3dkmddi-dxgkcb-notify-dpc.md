@@ -60,7 +60,7 @@ VOID APIENTRY DxgkCbNotifyDpc(
 ### -param <i>hAdapter</i> [in]
 
 <dd>
-<p>[in] A handle to the adapter object for the GPU. The driver receives the handle from the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure in a call to its <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
+<p>[in] A handle to the adapter object for the GPU. The driver receives the handle from the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure in a call to its <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 </dl>
 
@@ -68,10 +68,6 @@ VOID APIENTRY DxgkCbNotifyDpc(
 <p>None</p>
 
 ## -remarks
-<p>The display miniport driver's DPC callback routine calls the <b>DxgkCbNotifyDpc</b> function to inform the GPU scheduler about an update to a fence through a direct memory access (DMA) stream to the graphics hardware. </p>
-
-<p>The following code example shows how to notify the GPU scheduler about the DMA or V-Sync interrupt.</p>
-
 <p>The display miniport driver's DPC callback routine calls the <b>DxgkCbNotifyDpc</b> function to inform the GPU scheduler about an update to a fence through a direct memory access (DMA) stream to the graphics hardware. </p>
 
 <p>The following code example shows how to notify the GPU scheduler about the DMA or V-Sync interrupt.</p>
@@ -128,7 +124,7 @@ VOID APIENTRY DxgkCbNotifyDpc(
 <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a>
+<a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

@@ -67,7 +67,7 @@ D3DGPU_VIRTUAL_ADDRESS APIENTRY CALLBACK* DxgkCbMapContextAllocation(
 ### -param <i>pArgs</i> [in]
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn906818">DXGKARGCB_MAPCONTEXTALLOCATION</a> structure that describes the operation.</p>
+<p>The <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-mapcontextallocation.md">DXGKARGCB_MAPCONTEXTALLOCATION</a> structure that describes the operation.</p>
 </dd>
 </dl>
 
@@ -124,7 +124,7 @@ D3DGPU_VIRTUAL_ADDRESS APIENTRY CALLBACK* DxgkCbMapContextAllocation(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906818">DXGKARGCB_MAPCONTEXTALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-mapcontextallocation.md">DXGKARGCB_MAPCONTEXTALLOCATION</a>
 </dt>
 </dl>
 <p> </p>

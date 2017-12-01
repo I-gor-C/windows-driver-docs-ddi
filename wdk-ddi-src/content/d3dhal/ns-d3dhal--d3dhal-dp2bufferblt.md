@@ -95,7 +95,7 @@ typedef struct _D3DHAL_DP2BUFFERBLT {
 ## -remarks
 <p>The <a href="display.created3dbuffer">CreateD3DBuffer</a> callback creates the small integer handles to the vertex or index buffers that can be used as source and destination buffers for buffer blts.</p>
 
-<p>See Remarks for <a href="https://msdn.microsoft.com/library/windows/hardware/ff545869">D3DHAL_DP2TEXBLT</a>.</p>
+<p>See Remarks for <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2texblt.md">D3DHAL_DP2TEXBLT</a>.</p>
 
 ## -requirements
 <table>
@@ -121,7 +121,7 @@ typedef struct _D3DHAL_DP2BUFFERBLT {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a>
 </dt>
 </dl>
 <p> </p>

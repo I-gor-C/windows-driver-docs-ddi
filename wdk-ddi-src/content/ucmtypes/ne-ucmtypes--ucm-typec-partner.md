@@ -156,10 +156,10 @@ typedef enum _UCM_TYPEC_PARTNER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187928">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
+<a href="buses.ucm_connector_typec_attach_params">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187915">UcmConnectorTypeCAttach</a>
+<a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a>
 </dt>
 </dl>
 <p> </p>

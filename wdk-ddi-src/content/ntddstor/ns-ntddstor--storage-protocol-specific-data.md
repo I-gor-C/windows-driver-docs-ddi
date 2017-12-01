@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Describes  protocol-specific device data, provided in the input and output buffer of an  <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request.</p>
+<p>Describes  protocol-specific device data, provided in the input and output buffer of an  <a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request.</p>
 
 
 ## -syntax
@@ -64,13 +64,13 @@ typedef struct _STORAGE_PROTOCOL_SPECIFIC_DATA {
 ### -field <b>ProtocolType</b>
 
 <dd>
-<p>The protocol type. Values for this member are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn931818">STORAGE_PROTOCOL_TYPE</a> enumeration.</p>
+<p>The protocol type. Values for this member are defined in the <a href="..\ntddstor\ne-ntddstor--storage-protocol-type.md">STORAGE_PROTOCOL_TYPE</a> enumeration.</p>
 </dd>
 
 ### -field <b>DataType</b>
 
 <dd>
-<p>The protocol data type. Data types are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn931816">STORAGE_PROTOCOL_NVME_DATA_TYPE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn931813">STORAGE_PROTOCOL_ATA_DATA_TYPE</a> enumerations.</p>
+<p>The protocol data type. Data types are defined in the <a href="..\ntddstor\ne-ntddstor--storage-protocol-nvme-data-type.md">STORAGE_PROTOCOL_NVME_DATA_TYPE</a> and <a href="..\ntddstor\ne-ntddstor--storage-protocol-ata-data-type.md">STORAGE_PROTOCOL_ATA_DATA_TYPE</a> enumerations.</p>
 </dd>
 
 ### -field <b>ProtocolDataRequestValue</b>
@@ -111,21 +111,21 @@ typedef struct _STORAGE_PROTOCOL_SPECIFIC_DATA {
 </dl>
 
 ## -remarks
-<p>When using <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve protocol-specific information in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn931815">STORAGE_PROTOCOL_DATA_DESCRIPTOR</a>, configure the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566997">STORAGE_PROPERTY_QUERY</a> structure as follows:</p>
+<p>When using <a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve protocol-specific information in the <a href="..\ntddstor\ns-ntddstor--storage-protocol-data-descriptor.md">STORAGE_PROTOCOL_DATA_DESCRIPTOR</a>, configure the <a href="..\ntddstor\ns-ntddstor--storage-property-query.md">STORAGE_PROPERTY_QUERY</a> structure as follows:</p>
 
-<p>Allocate a buffer that can contains both a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566997">STORAGE_PROPERTY_QUERY</a> and a <b>STORAGE_PROTOCOL_SPECIFIC_DATA</b> structure.</p>
+<p>Allocate a buffer that can contains both a <a href="..\ntddstor\ns-ntddstor--storage-property-query.md">STORAGE_PROPERTY_QUERY</a> and a <b>STORAGE_PROTOCOL_SPECIFIC_DATA</b> structure.</p>
 
 <p>Set the <b>PropertyID</b>  field to <b>StorageAdapterProtocolSpecificProperty</b> or <b>StorageDeviceProtocolSpecificProperty</b> for a controller or device/namespace request, respectively.</p>
 
 <p>Set the <b>QueryType</b>  field to <b>PropertyStandardQuery</b>.</p>
 
-<p>Fill the <b>STORAGE_PROTOCOL_SPECIFIC_DATA</b> structure with the desired values. The start of the <b>STORAGE_PROTOCOL_SPECIFIC_DATA</b> is the <b>AdditionalParameters</b> field of <a href="https://msdn.microsoft.com/library/windows/hardware/ff566997">STORAGE_PROPERTY_QUERY</a>.</p>
+<p>Fill the <b>STORAGE_PROTOCOL_SPECIFIC_DATA</b> structure with the desired values. The start of the <b>STORAGE_PROTOCOL_SPECIFIC_DATA</b> is the <b>AdditionalParameters</b> field of <a href="..\ntddstor\ns-ntddstor--storage-property-query.md">STORAGE_PROPERTY_QUERY</a>.</p>
 
 <p>To specify a type of NVMe protocol-specific information,  configure the <b>STORAGE_PROTOCOL_SPECIFIC_DATA</b> structure as follows:</p>
 
 <p>Set the <b>ProtocolType</b>  field to <b>ProtocolTypeNVMe</b>.</p>
 
-<p>Set the <b>DataType</b>  field to an enumeration value defined by <a href="https://msdn.microsoft.com/library/windows/hardware/dn931816">STORAGE_PROTOCOL_NVME_DATA_TYPE</a>:<ul>
+<p>Set the <b>DataType</b>  field to an enumeration value defined by <a href="..\ntddstor\ne-ntddstor--storage-protocol-nvme-data-type.md">STORAGE_PROTOCOL_NVME_DATA_TYPE</a>:<ul>
 <li>Use <b>NVMeDataTypeIdentify</b> to get Identify Controller data or Identify Namespace data.</li>
 <li>Use <b>NVMeDataTypeLogPage</b> to get log pages (including SMART/health data).</li>
 <li>Use <b>NVMeDataTypeFeature</b> to get features of the NVMe drive.</li>
@@ -136,7 +136,7 @@ typedef struct _STORAGE_PROTOCOL_SPECIFIC_DATA {
 
 <p>Set the <b>ProtocolType</b>  field to <b>ProtocolTypeAta</b>.</p>
 
-<p>Set the <b>DataType</b>  field to an enumeration value defined by <a href="https://msdn.microsoft.com/library/windows/hardware/dn931813">STORAGE_PROTOCOL_ATA_DATA_TYPE</a>:<ul>
+<p>Set the <b>DataType</b>  field to an enumeration value defined by <a href="..\ntddstor\ne-ntddstor--storage-protocol-ata-data-type.md">STORAGE_PROTOCOL_ATA_DATA_TYPE</a>:<ul>
 <li>Use <b>AtaDataTypeIdentify</b> to identify the ATA drive.</li>
 <li>Use <b>AtaDataTypeLogPage</b> to get log pages from the ATA drive.</li>
 </ul>
@@ -175,16 +175,16 @@ typedef struct _STORAGE_PROTOCOL_SPECIFIC_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566997">STORAGE_PROPERTY_QUERY</a>
+<a href="..\ntddstor\ns-ntddstor--storage-property-query.md">STORAGE_PROPERTY_QUERY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
+<a href="storage.storage_property_id">STORAGE_PROPERTY_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn931817">STORAGE_PROTOCOL_SPECIFIC_DATA</a>
+<a href="..\ntddstor\ns-ntddstor--storage-protocol-specific-data.md">STORAGE_PROTOCOL_SPECIFIC_DATA</a>
 </dt>
 </dl>
 <p> </p>

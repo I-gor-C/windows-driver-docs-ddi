@@ -74,7 +74,7 @@ NTSTATUS DxgkDdiOPMSetSigningKeyAndSequenceNumbers(
 ### -param <i>EncryptedParameters</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560863">DXGKMDT_OPM_ENCRYPTED_PARAMETERS</a> structure that contains a 256-byte array. The array contains between 40 and 256 bytes of data that is encrypted with the public key from the appropriate certificate. For more information about the public key, download the Output Content Protection document at the <a href="http://go.microsoft.com/fwlink/p/?linkid=204788">Output Content Protection and Windows Vista</a> website. If the protected output has OPM semantics, the data is encrypted with the public key from the display miniport driver's OPM certificate. If the protected output has Certified Output Protection Protocol (COPP) semantics, the data is encrypted with the public key from the display miniport driver's COPP certificate. </p>
+<p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-encrypted-parameters.md">DXGKMDT_OPM_ENCRYPTED_PARAMETERS</a> structure that contains a 256-byte array. The array contains between 40 and 256 bytes of data that is encrypted with the public key from the appropriate certificate. For more information about the public key, download the Output Content Protection document at the <a href="http://go.microsoft.com/fwlink/p/?linkid=204788">Output Content Protection and Windows Vista</a> website. If the protected output has OPM semantics, the data is encrypted with the public key from the display miniport driver's OPM certificate. If the protected output has Certified Output Protection Protocol (COPP) semantics, the data is encrypted with the public key from the display miniport driver's COPP certificate. </p>
 <p>The algorithm that the display miniport driver should use to decrypt the data in the array depends on the semantics of the protected output. Protected outputs with OPM semantics use the RSAES-OAEP encryption scheme to decrypt the data. For more information about RSAES-OAEP, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70411">RSA Laboratories</a> website. Protected outputs with COPP semantics use the standard RSA encryption algorithm to decrypt the encrypted data. </p>
 <p>After the display miniport driver decrypts the data, only the first 40 bytes of the data is currently useful. The first 16 bytes of the decrypted data contain the random number that the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-random-number.md">DxgkDdiOPMGetRandomNumber</a> function returned when the handle in the <i>ProtectedOutputHandle</i> parameter was passed to it. The next 16 bytes contain the 128-bit AES signing key. The next 4 bytes contain the sequence number that is used by <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a> or <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-copp-compatible-information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>. The final 4 bytes contain the sequence number that is used by <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-configure-protected-output.md">DxgkDdiOPMConfigureProtectedOutput</a>. The remainder of the decrypted data should be ignored if it exists. </p>
 </dd>
@@ -102,7 +102,7 @@ NTSTATUS DxgkDdiOPMSetSigningKeyAndSequenceNumbers(
 ## -remarks
 <p>The signing key is used to verify that data that is passed to the <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-configure-protected-output.md">DxgkDdiOPMConfigureProtectedOutput</a> and <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a> functions comes from the application that indirectly uses the protected output. The signing key is also used to sign the data that is returned by the <b>DxgkDdiOPMGetInformation</b> and <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-copp-compatible-information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> functions. One of the sequence numbers is used by <i>DxgkDdiOPMConfigureProtectedOutput</i>. The other sequence number is used by <i>DxgkDdiOPMGetInformation</i> or <i>DxgkDdiOPMGetCOPPCompatibleInformation</i>.</p>
 
-<p><i>DxgkDdiOPMSetSigningKeyAndSequenceNumbers</i> should return a failure code if an error occurs or if the data in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560863">DXGKMDT_OPM_ENCRYPTED_PARAMETERS</a> structure that is pointed to by the <i>EncryptedParameters</i> parameter is not in the required format. Otherwise, <i>DxgkDdiOPMSetSigningKeyAndSequenceNumbers</i> should perform the following sequence of operations:</p>
+<p><i>DxgkDdiOPMSetSigningKeyAndSequenceNumbers</i> should return a failure code if an error occurs or if the data in the <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-encrypted-parameters.md">DXGKMDT_OPM_ENCRYPTED_PARAMETERS</a> structure that is pointed to by the <i>EncryptedParameters</i> parameter is not in the required format. Otherwise, <i>DxgkDdiOPMSetSigningKeyAndSequenceNumbers</i> should perform the following sequence of operations:</p>
 
 <p>Decrypt the data that is pointed to by <i>EncryptedParameters</i> with the appropriate private key and encryption scheme. If the output has OPM semantics, the display miniport driver should use its OPM private key to decrypt the data. If the output has COPP semantics, the display miniport driver should use its COPP private key to decrypt the data. </p>
 
@@ -120,95 +120,9 @@ NTSTATUS DxgkDdiOPMSetSigningKeyAndSequenceNumbers(
 
 <p>RSAES-OAEP is a parameterized encryption scheme and MGF1 is a parameterized mask generation function. Following are the parameters OPM uses when it uses RSAES-OAEP and MGF1. For more information about the following terms and the RSA Cryptography Standard, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70411">RSA Laboratories</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=70462">Secure Hashing</a> websites.</p>
 
-<p></p><dl>
-<dt><a id="RSAES-OAEP_Parameters"></a><a id="rsaes-oaep_parameters"></a><a id="RSAES-OAEP_PARAMETERS"></a>RSAES-OAEP Parameters</dt>
-<dd>
 <p></p>
-<dl>
-<dt><a id="Hash"></a><a id="hash"></a><a id="HASH"></a>Hash</dt>
-<dd>
+
 <p>SHA-512</p>
-</dd>
-<dt><a id="MGF"></a><a id="mgf"></a>MGF</dt>
-<dd>
-<p>MGF1 (Defined on page 48 in PKCS #1 v2.1: RSA Cryptography Standard)</p>
-<p>L is always the empty string. </p>
-</dd>
-</dl>
-</dd>
-<dt><a id="MGF1_Parameters"></a><a id="mgf1_parameters"></a><a id="MGF1_PARAMETERS"></a>MGF1 Parameters</dt>
-<dd>
-<p>Hash:  SHA-512</p>
-</dd>
-</dl><p></p><dl>
-<dt><a id="Hash"></a><a id="hash"></a><a id="HASH"></a>Hash</dt>
-<dd>
-<p>SHA-512</p>
-</dd>
-<dt><a id="MGF"></a><a id="mgf"></a>MGF</dt>
-<dd>
-<p>MGF1 (Defined on page 48 in PKCS #1 v2.1: RSA Cryptography Standard)</p>
-<p>L is always the empty string. </p>
-</dd>
-</dl><p>SHA-512</p>
-
-<p>MGF1 (Defined on page 48 in PKCS #1 v2.1: RSA Cryptography Standard)</p>
-
-<p>L is always the empty string. </p>
-
-<p>Hash:  SHA-512</p>
-
-<p>The signing key is used to verify that data that is passed to the <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-configure-protected-output.md">DxgkDdiOPMConfigureProtectedOutput</a> and <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a> functions comes from the application that indirectly uses the protected output. The signing key is also used to sign the data that is returned by the <b>DxgkDdiOPMGetInformation</b> and <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-copp-compatible-information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> functions. One of the sequence numbers is used by <i>DxgkDdiOPMConfigureProtectedOutput</i>. The other sequence number is used by <i>DxgkDdiOPMGetInformation</i> or <i>DxgkDdiOPMGetCOPPCompatibleInformation</i>.</p>
-
-<p><i>DxgkDdiOPMSetSigningKeyAndSequenceNumbers</i> should return a failure code if an error occurs or if the data in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560863">DXGKMDT_OPM_ENCRYPTED_PARAMETERS</a> structure that is pointed to by the <i>EncryptedParameters</i> parameter is not in the required format. Otherwise, <i>DxgkDdiOPMSetSigningKeyAndSequenceNumbers</i> should perform the following sequence of operations:</p>
-
-<p>Decrypt the data that is pointed to by <i>EncryptedParameters</i> with the appropriate private key and encryption scheme. If the output has OPM semantics, the display miniport driver should use its OPM private key to decrypt the data. If the output has COPP semantics, the display miniport driver should use its COPP private key to decrypt the data. </p>
-
-<p>If the output has OPM semantics, verify that the data that was decrypted was encoded with the RSAES-OAEP encoding algorithm. </p>
-
-<p>Verify that at least 40 bytes of the data was decrypted.</p>
-
-<p>Verify that the random number that is contained in the first 16 bytes of the data that was decrypted matches the random number that the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-random-number.md">DxgkDdiOPMGetRandomNumber</a> returned when the handle in the <i>ProtectedOutputHandle</i> parameter was passed to it.</p>
-
-<p>Cache the 128-bit AES signing key and the two 32-bit sequence numbers.</p>
-
-<p>Before a protected output object's handle is passed to <i>DxgkDdiOPMSetSigningKeyAndSequenceNumbers</i>, it is passed to <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-random-number.md">DxgkDdiOPMGetRandomNumber</a>. Each protected output object handle is only passed to <i>DxgkDdiOPMSetSigningKeyAndSequenceNumbers</i> once.</p>
-
-<p><i>DxgkDdiOPMSetSigningKeyAndSequenceNumbers</i> should be made pageable.</p>
-
-<p>RSAES-OAEP is a parameterized encryption scheme and MGF1 is a parameterized mask generation function. Following are the parameters OPM uses when it uses RSAES-OAEP and MGF1. For more information about the following terms and the RSA Cryptography Standard, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70411">RSA Laboratories</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=70462">Secure Hashing</a> websites.</p>
-
-<p></p><dl>
-<dt><a id="RSAES-OAEP_Parameters"></a><a id="rsaes-oaep_parameters"></a><a id="RSAES-OAEP_PARAMETERS"></a>RSAES-OAEP Parameters</dt>
-<dd>
-<p></p>
-<dl>
-<dt><a id="Hash"></a><a id="hash"></a><a id="HASH"></a>Hash</dt>
-<dd>
-<p>SHA-512</p>
-</dd>
-<dt><a id="MGF"></a><a id="mgf"></a>MGF</dt>
-<dd>
-<p>MGF1 (Defined on page 48 in PKCS #1 v2.1: RSA Cryptography Standard)</p>
-<p>L is always the empty string. </p>
-</dd>
-</dl>
-</dd>
-<dt><a id="MGF1_Parameters"></a><a id="mgf1_parameters"></a><a id="MGF1_PARAMETERS"></a>MGF1 Parameters</dt>
-<dd>
-<p>Hash:  SHA-512</p>
-</dd>
-</dl><p></p><dl>
-<dt><a id="Hash"></a><a id="hash"></a><a id="HASH"></a>Hash</dt>
-<dd>
-<p>SHA-512</p>
-</dd>
-<dt><a id="MGF"></a><a id="mgf"></a>MGF</dt>
-<dd>
-<p>MGF1 (Defined on page 48 in PKCS #1 v2.1: RSA Cryptography Standard)</p>
-<p>L is always the empty string. </p>
-</dd>
-</dl><p>SHA-512</p>
 
 <p>MGF1 (Defined on page 48 in PKCS #1 v2.1: RSA Cryptography Standard)</p>
 
@@ -269,7 +183,7 @@ NTSTATUS DxgkDdiOPMSetSigningKeyAndSequenceNumbers(
 <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-random-number.md">DxgkDdiOPMGetRandomNumber</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560863">DXGKMDT_OPM_ENCRYPTED_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-encrypted-parameters.md">DXGKMDT_OPM_ENCRYPTED_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

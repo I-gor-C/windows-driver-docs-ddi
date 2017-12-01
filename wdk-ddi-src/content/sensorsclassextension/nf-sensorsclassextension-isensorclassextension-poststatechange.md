@@ -7,7 +7,7 @@ old-location: sensors\isensorclassextension_poststatechange.htm
 old-project: sensors
 ms.assetid: ae3bc846-df63-4186-9554-f4600e1f2066
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorClassExtension, PostStateChange, ISensorClassExtension::PostStateChange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ HRESULT PostStateChange(
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545708">SensorState</a> value that indicates the new state.</p>
+<a href="sensors.sensorstate">SensorState</a> value that indicates the new state.</p>
 </dd>
 </dl>
 
@@ -82,10 +82,6 @@ HRESULT PostStateChange(
 <p> </p>
 
 ## -remarks
-<p>Sensor state information is also available through the <a href="https://msdn.microsoft.com/a9f88dad-a81d-45dc-b607-e7b4c5036774">SENSOR_PROPERTY_STATE</a> property key.</p>
-
-<p>The following example code demonstrates a function that posts a state-changed event.</p>
-
 <p>Sensor state information is also available through the <a href="https://msdn.microsoft.com/a9f88dad-a81d-45dc-b607-e7b4c5036774">SENSOR_PROPERTY_STATE</a> property key.</p>
 
 <p>The following example code demonstrates a function that posts a state-changed event.</p>
@@ -151,12 +147,12 @@ HRESULT PostStateChange(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545589">ISensorDriver::OnClientSubscribeToEvents</a>
+<a href="sensors.isensordriver_onclientsubscribetoevents">ISensorDriver::OnClientSubscribeToEvents</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545598">ISensorDriver::OnClientUnsubscribeFromEvents</a>
+<a href="sensors.isensordriver_onclientunsubscribefromevents">ISensorDriver::OnClientUnsubscribeFromEvents</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20ISensorClassExtension::PostStateChange method%20 RELEASE:%20(11/26/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20ISensorClassExtension::PostStateChange method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

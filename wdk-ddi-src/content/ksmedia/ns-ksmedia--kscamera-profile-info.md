@@ -7,7 +7,7 @@ old-location: stream\kscamera_profile_info.htm
 old-project: stream
 ms.assetid: 566052ED-2FD8-46A9-8C4E-9FED660D93BF
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KSCAMERA_PROFILE_INFO, KSCAMERA_PROFILE_INFO, *PKSCAMERA_PROFILE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,7 +74,7 @@ typedef struct _KSCAMERA_PROFILE_INFO {
 ### -field <b>PinCount</b>
 
 <dd>
-<p>The number of <a href="https://msdn.microsoft.com/library/windows/hardware/dn925220">KSCAMERA_PROFILE_PININFO</a> structures pointed to by <b>Pins</b>.  This value must be greater than 0.</p>
+<p>The number of <a href="..\ksmedia\ns-ksmedia--kscamera-profile-pininfo.md">KSCAMERA_PROFILE_PININFO</a> structures pointed to by <b>Pins</b>.  This value must be greater than 0.</p>
 </dd>
 
 ### -field <b>Pins</b>

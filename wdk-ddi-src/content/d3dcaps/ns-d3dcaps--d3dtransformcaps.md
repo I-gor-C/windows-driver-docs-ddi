@@ -79,7 +79,7 @@ typedef struct _D3DTRANSFORMCAPS {
 ## -remarks
 <p>This structure has been replaced by D3DCAPS8 (see the DirectX 8.0 SDK documentation) for DirectX 8.0 and later runtimes, but is required for DirectX 7.0 and earlier runtime compatibility. See <a href="https://msdn.microsoft.com/a03a7cbc-95be-4251-8e3a-bef4a093f03d">Reporting DirectX 8.0 Style Direct3D Capabilities</a> for details.</p>
 
-<p>This structure is a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544689">D3DDEVICEDESC_V1</a> structure.</p>
+<p>This structure is a member of the <a href="..\d3dhal\ns-d3dhal--d3ddevicedesc-v1.md">D3DDEVICEDESC_V1</a> structure.</p>
 
 ## -requirements
 <table>
@@ -98,7 +98,7 @@ typedef struct _D3DTRANSFORMCAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544689">D3DDEVICEDESC_V1</a>
+<a href="..\d3dhal\ns-d3dhal--d3ddevicedesc-v1.md">D3DDEVICEDESC_V1</a>
 </dt>
 </dl>
 <p> </p>

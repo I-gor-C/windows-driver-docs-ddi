@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTWaitForVerticalBlankEvent(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548441">D3DKMT_WAITFORVERTICALBLANKEVENT</a> structure that describes parameters for waiting for the vertical blank to occur.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-waitforverticalblankevent.md">D3DKMT_WAITFORVERTICALBLANKEVENT</a> structure that describes parameters for waiting for the vertical blank to occur.</p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS APIENTRY D3DKMTWaitForVerticalBlankEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548441">D3DKMT_WAITFORVERTICALBLANKEVENT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-waitforverticalblankevent.md">D3DKMT_WAITFORVERTICALBLANKEVENT</a>
 </dt>
 </dl>
 <p> </p>

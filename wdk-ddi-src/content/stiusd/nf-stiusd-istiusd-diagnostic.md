@@ -58,7 +58,7 @@ HRESULT Diagnostic(
 ### -param <i>pBuffer</i> 
 
 <dd>
-<p>Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548383">STI_DIAG</a> structure to receive testing status information.</p>
+<p>Caller-supplied pointer to an <a href="..\sti\ns-sti--sti-diag.md">STI_DIAG</a> structure to receive testing status information.</p>
 </dd>
 </dl>
 
@@ -66,8 +66,6 @@ HRESULT Diagnostic(
 <p>If the operation succeeds, the method should return S_OK. Otherwise, it should return one of the STIERR-prefixed error codes defined in <i>stierr.h</i>.</p>
 
 ## -remarks
-<p>The <b>IStiUSD::Diagnostic</b> method is called when a user clicks on the Scanners and Cameras Control Panel's Test button. The method should execute tests to confirm that the device is fully operational. For a scanner, these tests might include turning the light on and off, and moving the scanning arm. For a camera, they might include execution of built-in diagnostic functions, or manipulation of device settings. The return value should indicate success or failure of the diagnostic tests.</p>
-
 <p>The <b>IStiUSD::Diagnostic</b> method is called when a user clicks on the Scanners and Cameras Control Panel's Test button. The method should execute tests to confirm that the device is fully operational. For a scanner, these tests might include turning the light on and off, and moving the scanning arm. For a camera, they might include execution of built-in diagnostic functions, or manipulation of device settings. The return value should indicate success or failure of the diagnostic tests.</p>
 
 ## -requirements
@@ -97,7 +95,7 @@ HRESULT Diagnostic(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543736">IStiDevice::Diagnostic</a>
+<a href="image.istidevice_diagnostic">IStiDevice::Diagnostic</a>
 </dt>
 </dl>
 <p> </p>

@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetDepthStencil(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543299">D3DDDIARG_SETDEPTHSTENCIL</a> structure that specifies the depth buffer.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setdepthstencil.md">D3DDDIARG_SETDEPTHSTENCIL</a> structure that specifies the depth buffer.</p>
 </dd>
 </dl>
 
@@ -75,8 +75,6 @@ __checkReturn HRESULT APIENTRY SetDepthStencil(
 <p><i>SetDepthStencil</i> returns S_OK or an appropriate error result if the depth buffer is not successfully set.</p>
 
 ## -remarks
-<p>The user-mode display driver should store the depth buffer in the driver's context when the Microsoft Direct3D runtime calls <i>SetDepthStencil</i>. </p>
-
 <p>The user-mode display driver should store the depth buffer in the driver's context when the Microsoft Direct3D runtime calls <i>SetDepthStencil</i>. </p>
 
 ## -requirements
@@ -114,10 +112,10 @@ __checkReturn HRESULT APIENTRY SetDepthStencil(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543299">D3DDDIARG_SETDEPTHSTENCIL</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setdepthstencil.md">D3DDDIARG_SETDEPTHSTENCIL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

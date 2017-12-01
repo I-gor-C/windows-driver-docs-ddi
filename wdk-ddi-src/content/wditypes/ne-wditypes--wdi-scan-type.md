@@ -7,7 +7,7 @@ old-location: netvista\wdi_scan_type.htm
 old-project: netvista
 ms.assetid: DF4ECD03-2C2F-44B3-82BE-E57B333AF069
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

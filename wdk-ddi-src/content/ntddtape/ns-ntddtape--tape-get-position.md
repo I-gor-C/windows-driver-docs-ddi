@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The TAPE_GET_POSITION structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560622">IOCTL_TAPE_GET_POSITION</a> request to retrieve the current absolute, logical, or pseudological partition and offset position on the tape.</p>
+<p>The TAPE_GET_POSITION structure is used in conjunction with the <a href="..\ntddtape\ni-ntddtape-ioctl-tape-get-position.md">IOCTL_TAPE_GET_POSITION</a> request to retrieve the current absolute, logical, or pseudological partition and offset position on the tape.</p>
 
 
 ## -syntax
@@ -95,7 +95,7 @@ typedef struct _TAPE_GET_POSITION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560622">IOCTL_TAPE_GET_POSITION</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl-tape-get-position.md">IOCTL_TAPE_GET_POSITION</a>
 </dt>
 </dl>
 <p> </p>

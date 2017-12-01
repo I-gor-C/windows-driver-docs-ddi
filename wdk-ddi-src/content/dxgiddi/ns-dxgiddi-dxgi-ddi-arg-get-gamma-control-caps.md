@@ -58,13 +58,13 @@ typedef struct DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS {
 ### -field <b>hDevice</b>
 
 <dd>
-<p>[in] A handle to the display device (graphics context) from which the driver retrieves gamma capabilities. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541664">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
+<p>[in] A handle to the display device (graphics context) from which the driver retrieves gamma capabilities. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
 </dd>
 
 ### -field <b>pGammaCapabilities</b>
 
 <dd>
-<p>[in/out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557521">DXGI_GAMMA_CONTROL_CAPABILIITES</a> structure that describes gamma capabilities. </p>
+<p>[in/out] A pointer to a <a href="display.dxgi_gamma_control_capabiliites">DXGI_GAMMA_CONTROL_CAPABILIITES</a> structure that describes gamma capabilities. </p>
 </dd>
 </dl>
 
@@ -96,10 +96,10 @@ typedef struct DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557521">DXGI_GAMMA_CONTROL_CAPABILIITES</a>
+<a href="display.dxgi_gamma_control_capabiliites">DXGI_GAMMA_CONTROL_CAPABILIITES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566790">GetGammaCapsDXGI</a>
+<a href="display.getgammacapsdxgi">GetGammaCapsDXGI</a>
 </dt>
 </dl>
 <p> </p>

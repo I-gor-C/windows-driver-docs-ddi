@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaofferanswerset.htm
 old-project: netvista
 ms.assetid: 5d2f913e-10a3-4e96-a12f-5c4ea1dc061f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCALLMEDIAOFFERANSWERSET, RILCALLMEDIAOFFERANSWERSET, *LPRILCALLMEDIAOFFERANSWERSET
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -79,10 +79,6 @@ NTSTATUS MRxFinalizeNetRoot(
 
 <p>RDBSS ignores the return value from <i>MRxFinalizeNetRoot</i>. </p>
 
-<p><i>MRxFinalizeNetRoot</i> is called by RDBSS when RDBSS finalizes a NET_ROOT structure. Because a NET_ROOT structure is always associated with one or more V_NET_ROOT structures, this finalization normally occurs when the last V_NET_ROOT structure on the NET_ROOT structure is finalized. </p>
-
-<p>RDBSS ignores the return value from <i>MRxFinalizeNetRoot</i>. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -110,25 +106,25 @@ NTSTATUS MRxFinalizeNetRoot(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549864">MRxCreateSrvCall</a>
+<a href="ifsk.mrxcreatesrvcall">MRxCreateSrvCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549869">MRxCreateVNetRoot</a>
+<a href="ifsk.mrxcreatevnetroot">MRxCreateVNetRoot</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550649">MRxExtractNetRootName</a>
+<a href="ifsk.mrxextractnetrootname">MRxExtractNetRootName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550656">MRxFinalizeSrvCall</a>
+<a href="ifsk.mrxfinalizesrvcall">MRxFinalizeSrvCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550663">MRxFinalizeVNetRoot</a>
+<a href="ifsk.mrxfinalizevnetroot">MRxFinalizeVNetRoot</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550750">MRxPreparseName</a>
+<a href="ifsk.mrxpreparsename">MRxPreparseName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550824">MRxSrvCallWinnerNotify</a>
+<a href="ifsk.mrxsrvcallwinnernotify">MRxSrvCallWinnerNotify</a>
 </dt>
 </dl>
 <p> </p>

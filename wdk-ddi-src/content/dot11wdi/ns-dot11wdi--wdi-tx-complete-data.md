@@ -7,7 +7,7 @@ old-location: netvista\wdi_tx_complete_data.htm
 old-project: netvista
 ms.assetid: bf7951de-3368-4faf-9bae-272c6d76d1a0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA, *PWDI_TX_COMPLETE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

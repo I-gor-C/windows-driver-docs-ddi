@@ -7,7 +7,7 @@ old-location: stream\kstrqueryreferencestring.htm
 old-project: stream
 ms.assetid: 08fd750f-19cc-4d78-a26b-9f790c5c3acf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a>.</p>
+<p>This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>.</p>
 
 
 ## -prototype
@@ -75,9 +75,7 @@ NTSTATUS KStrQueryReferenceString(
 <p>None.</p>
 
 ## -remarks
-<p>The driver can access this method through the <b>QueryReferenceString</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557584">BUS_INTERFACE_REFERENCE</a> structure.</p>
-
-<p>The driver can access this method through the <b>QueryReferenceString</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557584">BUS_INTERFACE_REFERENCE</a> structure.</p>
+<p>The driver can access this method through the <b>QueryReferenceString</b> member of the <a href="stream.bus_interface_reference">BUS_INTERFACE_REFERENCE</a> structure.</p>
 
 ## -requirements
 <table>

@@ -7,7 +7,7 @@ old-location: stream\hw_initialization_data.htm
 old-project: stream
 ms.assetid: 5be9ba51-bd6c-4650-9c48-f89267a2ac16
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: HW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA, *PHW_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The HW_INITIALIZATION_DATA structure specifies the basic information the class driver needs to begin initializing the minidriver. The minidriver passes an HW_INITIALIZATION_DATA structure to the class driver when it registers itself by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>.</p>
+<p>The HW_INITIALIZATION_DATA structure specifies the basic information the class driver needs to begin initializing the minidriver. The minidriver passes an HW_INITIALIZATION_DATA structure to the class driver when it registers itself by calling <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>.</p>
 
 
 ## -syntax
@@ -78,49 +78,49 @@ typedef struct _HW_INITIALIZATION_DATA {
 ### -field <b>HwInterrupt</b>
 
 <dd>
-<p>Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568459">StrMiniInterrupt</a> routine.</p>
+<p>Points to the minidriver's <a href="stream.strminiinterrupt">StrMiniInterrupt</a> routine.</p>
 </dd>
 
 ### -field <b>HwReceivePacket</b>
 
 <dd>
-<p>Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568463">StrMiniReceiveDevicePacket</a> routine.</p>
+<p>Points to the minidriver's <a href="stream.strminireceivedevicepacket">StrMiniReceiveDevicePacket</a> routine.</p>
 </dd>
 
 ### -field <b>HwCancelPacket</b>
 
 <dd>
-<p>Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568448">StrMiniCancelPacket</a> routine.</p>
+<p>Points to the minidriver's <a href="stream.strminicancelpacket">StrMiniCancelPacket</a> routine.</p>
 </dd>
 
 ### -field <b>HwRequestTimeoutHandler</b>
 
 <dd>
-<p>Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568473">StrMiniRequestTimeout</a> routine.</p>
+<p>Points to the minidriver's <a href="stream.strminirequesttimeout">StrMiniRequestTimeout</a> routine.</p>
 </dd>
 
 ### -field <b>DeviceExtensionSize</b>
 
 <dd>
-<p>Specifies the size in bytes of the buffer the class driver should allocate for the minidriver's device extension. The minidriver may use this buffer to record private information. The class driver passes pointers to this buffer in the <b>HwDeviceExtension</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559697">HW_STREAM_OBJECT</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559702">HW_STREAM_REQUEST_BLOCK</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559706">HW_TIME_CONTEXT</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.</p>
+<p>Specifies the size in bytes of the buffer the class driver should allocate for the minidriver's device extension. The minidriver may use this buffer to record private information. The class driver passes pointers to this buffer in the <b>HwDeviceExtension</b> member of <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.</p>
 </dd>
 
 ### -field <b>PerRequestExtensionSize</b>
 
 <dd>
-<p>Specifies the size in bytes of the buffer the class driver should allocate for the buffer pointed to by <b>SRBExtension</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559702">HW_STREAM_REQUEST_BLOCK</a> structures it passes to the minidriver. The class driver will allocate one buffer for each HW_STREAM_REQUEST_BLOCK.</p>
+<p>Specifies the size in bytes of the buffer the class driver should allocate for the buffer pointed to by <b>SRBExtension</b> member of <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a> structures it passes to the minidriver. The class driver will allocate one buffer for each HW_STREAM_REQUEST_BLOCK.</p>
 </dd>
 
 ### -field <b>PerStreamExtensionSize</b>
 
 <dd>
-<p>Specifies the size in bytes of the buffer the class driver should allocate for the buffer pointed to by the <b>HwStreamExtension</b> member of a stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559697">HW_STREAM_OBJECT</a>. The class driver will allocate one buffer for each stream.</p>
+<p>Specifies the size in bytes of the buffer the class driver should allocate for the buffer pointed to by the <b>HwStreamExtension</b> member of a stream's <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a>. The class driver will allocate one buffer for each stream.</p>
 </dd>
 
 ### -field <b>FilterInstanceExtensionSize</b>
 
 <dd>
-<p>Specifies the size in bytes of the buffer the class extension should allocate for the buffer pointed to by the <b>HwInstanceExtension</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559702">HW_STREAM_REQUEST_BLOCK</a> structures it passes to the minidriver. The class driver allocates one buffer for each instance of the minidriver.</p>
+<p>Specifies the size in bytes of the buffer the class extension should allocate for the buffer pointed to by the <b>HwInstanceExtension</b> member of <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a> structures it passes to the minidriver. The class driver allocates one buffer for each instance of the minidriver.</p>
 </dd>
 
 ### -field <b>BusMasterDMA</b>
@@ -150,7 +150,7 @@ typedef struct _HW_INITIALIZATION_DATA {
 ### -field <b>DmaBufferSize</b>
 
 <dd>
-<p>Specifies the size in bytes of the DMA buffer the class driver should allocate for the minidriver. The minidriver gets a pointer to this buffer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff568243">StreamClassGetDmaBuffer</a>. The class driver allocates contiguous nonpageable memory that will not be available to the operating system, or to other drivers, so this value should be as small as possible.</p>
+<p>Specifies the size in bytes of the DMA buffer the class driver should allocate for the minidriver. The minidriver gets a pointer to this buffer by calling <a href="..\strmini\nf-strmini-streamclassgetdmabuffer.md">StreamClassGetDmaBuffer</a>. The class driver allocates contiguous nonpageable memory that will not be available to the operating system, or to other drivers, so this value should be as small as possible.</p>
 </dd>
 
 ### -field <b>Reserved</b>

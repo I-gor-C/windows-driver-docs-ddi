@@ -345,7 +345,7 @@ typedef struct _HIDP_VALUE_CAPS {
 </dl>
 
 ## -remarks
-<p>Clients obtain a <a href="https://msdn.microsoft.com/d447dda6-a1e5-4e57-b06f-f79f8662c236">value capability array</a> by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff539754">HidP_GetValueCaps</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff539737">HidP_GetSpecificValueCaps</a>. These routines return an array of HIDP_VALUE_CAPS structures in a caller-allocated buffer. The required buffer length is specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a>. </p>
+<p>Clients obtain a <a href="https://msdn.microsoft.com/d447dda6-a1e5-4e57-b06f-f79f8662c236">value capability array</a> by calling <a href="..\hidpi\nf-hidpi-hidp-getvaluecaps.md">HidP_GetValueCaps</a> or <a href="..\hidpi\nf-hidpi-hidp-getspecificvaluecaps.md">HidP_GetSpecificValueCaps</a>. These routines return an array of HIDP_VALUE_CAPS structures in a caller-allocated buffer. The required buffer length is specified in the <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure returned by <a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a>. </p>
 
 <p>For information about the capabilities of HID control values, see <a href="NULL">Collection Capability</a> and <a href="NULL">Value Capability Arrays</a>.</p>
 
@@ -366,28 +366,28 @@ typedef struct _HIDP_VALUE_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539707">HidP_GetButtonCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getbuttoncaps.md">HidP_GetButtonCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539733">HidP_GetSpecificButtonCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getspecificbuttoncaps.md">HidP_GetSpecificButtonCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539737">HidP_GetSpecificValueCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getspecificvaluecaps.md">HidP_GetSpecificValueCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539748">HidP_GetUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp-getusagevalue.md">HidP_GetUsageValue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539750">HidP_GetUsageValueArray</a>
+<a href="..\hidpi\nf-hidpi-hidp-getusagevaluearray.md">HidP_GetUsageValueArray</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539754">HidP_GetValueCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getvaluecaps.md">HidP_GetValueCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a>
+<a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a>
 </dt>
 </dl>
 <p> </p>

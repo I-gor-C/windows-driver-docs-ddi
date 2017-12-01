@@ -65,7 +65,7 @@ FORCEINLINE NTSTATUS UdecxUrbRetrieveControlSetupPacket(
 ### -param <i>SetupPacket</i> [out]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552568">WDF_USB_CONTROL_SETUP_PACKET</a> structure that receives a setup packet describing the USB control transfer.</p>
+<p>A <a href="..\wdfusb\ns-wdfusb--wdf-usb-control-setup-packet.md">WDF_USB_CONTROL_SETUP_PACKET</a> structure that receives a setup packet describing the USB control transfer.</p>
 </dd>
 </dl>
 
@@ -75,11 +75,7 @@ FORCEINLINE NTSTATUS UdecxUrbRetrieveControlSetupPacket(
 ## -remarks
 <p>The client driver can inspect contents of the setup packet to determine the standard control request that is sent to the device.</p>
 
-<p>To complete the request, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/mt595955">UdecxUrbCompleteWithNtStatus</a>.</p>
-
-<p>The client driver can inspect contents of the setup packet to determine the standard control request that is sent to the device.</p>
-
-<p>To complete the request, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/mt595955">UdecxUrbCompleteWithNtStatus</a>.</p>
+<p>To complete the request, the driver must call <a href="buses.udecxurbcompletewithntstatus">UdecxUrbCompleteWithNtStatus</a>.</p>
 
 ## -requirements
 <table>
@@ -140,10 +136,10 @@ FORCEINLINE NTSTATUS UdecxUrbRetrieveControlSetupPacket(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

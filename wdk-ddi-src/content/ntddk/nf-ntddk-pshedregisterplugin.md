@@ -57,7 +57,7 @@ NTSTATUS PshedRegisterPlugin(
 ### -param <i>Packet</i> [in, out]
 
 <dd>
-<p>A pointer to an initialized  <a href="https://msdn.microsoft.com/library/windows/hardware/ff560617">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure that describes the PSHED plug-in's registration information.</p>
+<p>A pointer to an initialized  <a href="..\ntddk\ns-ntddk--whea-pshed-plugin-registration-packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure that describes the PSHED plug-in's registration information.</p>
 </dd>
 </dl>
 
@@ -71,9 +71,7 @@ NTSTATUS PshedRegisterPlugin(
 <p> </p>
 
 ## -remarks
-<p>A PSHED plug-in calls the <b>PshedRegisterPlugin</b> function to register itself with the PSHED. A PSHED plug-in typically calls this function from within either its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function or its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> function.</p>
-
-<p>A PSHED plug-in calls the <b>PshedRegisterPlugin</b> function to register itself with the PSHED. A PSHED plug-in typically calls this function from within either its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function or its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> function.</p>
+<p>A PSHED plug-in calls the <b>PshedRegisterPlugin</b> function to register itself with the PSHED. A PSHED plug-in typically calls this function from within either its <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> function or its <a href="kernel.adddevice">AddDevice</a> function.</p>
 
 ## -requirements
 <table>
@@ -139,13 +137,13 @@ NTSTATUS PshedRegisterPlugin(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
+<a href="kernel.adddevice">AddDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>
+<a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560617">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
+<a href="..\ntddk\ns-ntddk--whea-pshed-plugin-registration-packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: smartcrd\smartcard_extension.htm
 old-project: smartcrd
 ms.assetid: 057d82a8-ce5d-416f-b753-297dcbac27b8
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: SMARTCARD_EXTENSION,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelsettransactionquota.htm
 old-project: netvista
 ms.assetid: C88F03BE-96D3-46A7-8269-1ECBFA539111
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbChannelSetTransactionQuota
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,13 +74,6 @@ VOID VmbChannelSetTransactionQuota(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The incoming packet quota can be set to be lower than the current
-outstanding packet count. In that case, no new packets are removed from
-the queue until sufficient packets have been completed.
-</p>
-
-<p> If the queue is currently blocked due to quota, this operation does not restart it. The queue only restarts once a packet is completed.</p>
-
 <p>The incoming packet quota can be set to be lower than the current
 outstanding packet count. In that case, no new packets are removed from
 the queue until sufficient packets have been completed.

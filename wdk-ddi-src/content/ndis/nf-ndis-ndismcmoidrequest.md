@@ -7,7 +7,7 @@ old-location: netvista\ndismcmoidrequest.htm
 old-project: netvista
 ms.assetid: c5523dff-4957-4265-82ef-2fbc009e6bef
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCmOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,7 +74,7 @@ NDIS_STATUS NdisMCmOidRequest(
      information for, if the request is VC-specific. Otherwise, if this request is not VC-specific, this
      parameter is <b>NULL</b>. For any VC-specific request, the caller originally obtained this handle either when
      it created the VC with the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff562812">NdisMCmCreateVc</a> function, or as an input
+     <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a> function, or as an input
      parameter to its 
      <a href="..\ndis\nc-ndis-protocol-co-create-vc.md">ProtocolCoCreateVc</a> function.</p>
 </dd>
@@ -93,7 +93,7 @@ NDIS_STATUS NdisMCmOidRequest(
 
 <dd>
 <p>A pointer to a caller-allocated buffer that contains an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure.</p>
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure.</p>
 </dd>
 </dl>
 
@@ -108,7 +108,7 @@ NDIS_STATUS NdisMCmOidRequest(
 <dt><b>NDIS_STATUS_INVALID_OID</b></dt>
 </dl><p>The OID_<i>XXX</i> code that was specified in the 
        <b>Oid</b> member of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure at the 
+       <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure at the 
        <i>OidRequest</i> parameter is invalid or unsupported by the underlying driver.</p><dl>
 <dt><b>NDIS_STATUS_INVALID_LENGTH or NDIS_STATUS_BUFFER_TOO_SHORT</b></dt>
 </dl><p>The value that was specified in the 
@@ -120,7 +120,7 @@ NDIS_STATUS NdisMCmOidRequest(
 <dt><b>NDIS_STATUS_INVALID_DATA</b></dt>
 </dl><p>The data that was supplied at 
        <b>InformationBuffer</b> in the given 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure was invalid
+       <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure was invalid
        for the given OID_<i>XXX</i> code.</p><dl>
 <dt><b>NDIS_STATUS_NOT_SUPPORTED or NDIS_STATUS_NOT_RECOGNIZED</b></dt>
 </dl><p>The client driver does not support the requested operation.</p><dl>
@@ -140,7 +140,7 @@ NDIS_STATUS NdisMCmOidRequest(
 <p>To initiate OID requests to CoNDIS clients, MCM drivers call the 
     <b>NdisMCmOidRequest</b> function. Before an MCM driver calls 
     <b>NdisMCmOidRequest</b>, the driver allocates memory for its request and initializes an 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure. The MCM sets
+    <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure. The MCM sets
     the 
     <b>Oid</b> member of the NDIS_OID_REQUEST structure with a CoNDIS OID code.</p>
 
@@ -170,42 +170,7 @@ NDIS_STATUS NdisMCmOidRequest(
 
 <p>For more information about the OIDs that are defined to use with 
     <b>NdisMCmOidRequest</b>, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566707">NDIS OIDs</a>.</p>
-
-<p>To initiate OID requests to CoNDIS clients, MCM drivers call the 
-    <b>NdisMCmOidRequest</b> function. Before an MCM driver calls 
-    <b>NdisMCmOidRequest</b>, the driver allocates memory for its request and initializes an 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure. The MCM sets
-    the 
-    <b>Oid</b> member of the NDIS_OID_REQUEST structure with a CoNDIS OID code.</p>
-
-<p>An MCM driver can call 
-    <b>NdisMCmOidRequest</b> to communicate connection-oriented information, such as a change in addresses to
-    the client that the 
-    <i>NdisAfHandle</i> parameter identifies.</p>
-
-<p>After the MCM calls 
-    <b>NdisMCmOidRequest</b>, NDIS calls the 
-    <a href="..\ndis\nc-ndis-protocol-co-oid-request.md">ProtocolCoOidRequest</a> function of
-    the client.</p>
-
-<p>If the MCM driver's request is VC-specific or party-specific, the MCM driver also passes a non-<b>NULL</b>
-    value at the 
-    <i>NdisVcHandle</i> or 
-    <i>NdisPartyHandle</i> parameter, respectively.</p>
-
-<p>If 
-    <b>NdisMCmOidRequest</b> returns NDIS_STATUS_PENDING, the request is being handled asynchronously and NDIS
-    will call the MCM's 
-    <a href="..\ndis\nc-ndis-protocol-co-oid-request-complete.md">
-    ProtocolCoOidRequestComplete</a> function when the request is completed. If 
-    <b>NdisMCmOidRequest</b> returns any other status, the request is complete when 
-    <b>NdisMCmOidRequest</b> returns and NDIS does not call 
-    <i>ProtocolCoOidRequestComplete</i>.</p>
-
-<p>For more information about the OIDs that are defined to use with 
-    <b>NdisMCmOidRequest</b>, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566707">NDIS OIDs</a>.</p>
+    <a href="netvista.ndis_oids">NDIS OIDs</a>.</p>
 
 ## -requirements
 <table>
@@ -260,7 +225,7 @@ NDIS_STATUS NdisMCmOidRequest(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
+<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -268,10 +233,10 @@ NDIS_STATUS NdisMCmOidRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562812">NdisMCmCreateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cm-add-party.md">ProtocolCmAddParty</a>
@@ -292,4 +257,4 @@ NDIS_STATUS NdisMCmOidRequest(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmOidRequest function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmOidRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

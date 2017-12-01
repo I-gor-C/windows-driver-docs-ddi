@@ -7,7 +7,7 @@ old-location: stream\kspproperty_allocator_mdlcaching.htm
 old-project: stream
 ms.assetid: 91BB915F-E964-41D9-8D2A-3D5EF6F5B398
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

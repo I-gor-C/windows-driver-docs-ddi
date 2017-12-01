@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ScsiReportLuns_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564918">ScsiReportLuns</a> method.</p>
+<p>The ScsiReportLuns_OUT structure holds the output data for the <a href="storage.scsireportluns">ScsiReportLuns</a> method.</p>
 
 
 ## -syntax
@@ -61,7 +61,7 @@ typedef struct _ScsiReportLuns_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>The status of the <b>ScsiReportLuns</b> method. This member will contain 0 if the REPORT LUNS operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the REPORT LUNS operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.  </p>
+<p>The status of the <b>ScsiReportLuns</b> method. This member will contain 0 if the REPORT LUNS operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the REPORT LUNS operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.  </p>
 </dd>
 
 ### -field <b>ResponseBufferSize</b>
@@ -109,19 +109,19 @@ typedef struct _ScsiReportLuns_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564918">ScsiReportLuns</a>
+<a href="storage.scsireportluns">ScsiReportLuns</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564925">ScsiReportLuns_IN</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--scsireportluns-in.md">ScsiReportLuns_IN</a>
 </dt>
 </dl>
 <p> </p>

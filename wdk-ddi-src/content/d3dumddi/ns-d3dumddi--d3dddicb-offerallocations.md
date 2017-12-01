@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Defines the video memory allocations that the driver offers for reuse. Used with the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451693">pfnOfferAllocationsCb</a> function.</p>
+<p>Defines the video memory allocations that the driver offers for reuse. Used with the  <a href="display.pfnofferallocationscb">pfnOfferAllocationsCb</a> function.</p>
 
 
 ## -syntax
@@ -80,7 +80,7 @@ typedef struct _D3DDDICB_OFFERALLOCATIONS {
 ### -field <b>Priority</b>
 
 <dd>
-<p>[in] The priority, of type  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439275">D3DDDI_OFFER_PRIORITY</a>, with which to offer the allocations for reuse.</p>
+<p>[in] The priority, of type  <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-offer-priority.md">D3DDDI_OFFER_PRIORITY</a>, with which to offer the allocations for reuse.</p>
 <div class="alert"><b>Note</b>  Do not set this member to a value of <b>D3DDDI_OFFER_PRIORITY_NONE</b>.</div>
 <div> </div>
 </dd>
@@ -125,10 +125,10 @@ typedef struct _D3DDDICB_OFFERALLOCATIONS {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createresource.md">CreateResource(D3D11)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439275">D3DDDI_OFFER_PRIORITY</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-offer-priority.md">D3DDDI_OFFER_PRIORITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451693">pfnOfferAllocationsCb</a>
+<a href="display.pfnofferallocationscb">pfnOfferAllocationsCb</a>
 </dt>
 </dl>
 <p> </p>

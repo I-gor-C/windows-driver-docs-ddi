@@ -69,7 +69,7 @@ typedef struct _AACS_MEDIA_ID {
 </dl>
 
 ## -remarks
-<p>Clients retrieve the AACS certificate with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559272">IOCTL_AACS_READ_MEDIA_ID</a> request.</p>
+<p>Clients retrieve the AACS certificate with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-read-media-id.md">IOCTL_AACS_READ_MEDIA_ID</a> request.</p>
 
 ## -requirements
 <table>
@@ -88,7 +88,7 @@ typedef struct _AACS_MEDIA_ID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559272">IOCTL_AACS_READ_MEDIA_ID</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-read-media-id.md">IOCTL_AACS_READ_MEDIA_ID</a>
 </dt>
 </dl>
 <p> </p>

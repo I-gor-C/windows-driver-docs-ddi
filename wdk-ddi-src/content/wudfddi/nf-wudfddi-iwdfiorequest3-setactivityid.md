@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest3_setactivityid.htm
 old-project: wdf
 ms.assetid: 57CB3CED-FE46-4A74-9E23-82640B7EF1DC
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFIoRequest3, SetActivityId, IWDFIoRequest3::SetActivityId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,27 +71,15 @@ void SetActivityId(
 ## -remarks
 <p>Calling <b>SetActivityId</b> does not set an association with any previously present activity identifier. When the driver calls <b>SetActivityId</b>, any existing activity identifier is overwritten.</p>
 
-<p>To set an association, retrieve the existing identifier by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh451345">RetrieveActivityId</a> and then associate the existing identifier with the new one by calling <a href="etw.eventwritetransfer_func">EventWriteTransfer</a>.</p>
+<p>To set an association, retrieve the existing identifier by calling <a href="wdf.iwdfiorequest3_retrieveactivityid">RetrieveActivityId</a> and then associate the existing identifier with the new one by calling <a href="etw.eventwritetransfer_func">EventWriteTransfer</a>.</p>
 
-<p>The framework does not clear a request's activity identifier when the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff559048">IWdfIoRequest2::Reuse</a>.</p>
-
-<p>For more information about activity identifiers, see <a href="wdf.using_activity_identifiers">Using Activity Identifiers</a>.</p>
-
-<p>The UMDF 2 equivalent of this method is <a href="https://msdn.microsoft.com/library/windows/hardware/dn265622">WdfRequestSetActivityId</a>.</p>
-
-<p>For a code example that uses <b>SetActivityId</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451345">RetrieveActivityId</a>.</p>
-
-<p>Calling <b>SetActivityId</b> does not set an association with any previously present activity identifier. When the driver calls <b>SetActivityId</b>, any existing activity identifier is overwritten.</p>
-
-<p>To set an association, retrieve the existing identifier by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh451345">RetrieveActivityId</a> and then associate the existing identifier with the new one by calling <a href="etw.eventwritetransfer_func">EventWriteTransfer</a>.</p>
-
-<p>The framework does not clear a request's activity identifier when the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff559048">IWdfIoRequest2::Reuse</a>.</p>
+<p>The framework does not clear a request's activity identifier when the driver calls <a href="wdf.iwdfiorequest2_reuse">IWdfIoRequest2::Reuse</a>.</p>
 
 <p>For more information about activity identifiers, see <a href="wdf.using_activity_identifiers">Using Activity Identifiers</a>.</p>
 
-<p>The UMDF 2 equivalent of this method is <a href="https://msdn.microsoft.com/library/windows/hardware/dn265622">WdfRequestSetActivityId</a>.</p>
+<p>The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetactivityid.md">WdfRequestSetActivityId</a>.</p>
 
-<p>For a code example that uses <b>SetActivityId</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451345">RetrieveActivityId</a>.</p>
+<p>For a code example that uses <b>SetActivityId</b>, see <a href="wdf.iwdfiorequest3_retrieveactivityid">RetrieveActivityId</a>.</p>
 
 ## -requirements
 <table>
@@ -154,15 +142,15 @@ void SetActivityId(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451337">IWDFIoRequest3</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
 </dt>
 <dt>
 <a href="wdf.iwdfiorequest3_retrieveactivityid">IWDFIoRequest3::RetrieveActivityId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265622">WdfRequestSetActivityId</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetactivityid.md">WdfRequestSetActivityId</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest3::SetActivityId method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest3::SetActivityId method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -67,17 +67,9 @@ VOID IoRegisterFileSystem(
 ## -remarks
 <p><b>IoRegisterFileSystem</b> registers a file system as an active file system by inserting the file system's control device object into the global file system queue, and increments the reference count on the file system's control device object.</p>
 
-<p>The file system control device object's device type must be one of the following:</p><dl>
-<dd>
+<p>The file system control device object's device type must be one of the following:</p>
+
 <p>FILE_DEVICE_NETWORK_FILE_SYSTEM</p>
-</dd>
-<dd>
-<p>FILE_DEVICE_CD_ROM_FILE_SYSTEM</p>
-</dd>
-<dd>
-<p>FILE_DEVICE_DISK_FILE_SYSTEM</p>
-</dd>
-</dl><p>FILE_DEVICE_NETWORK_FILE_SYSTEM</p>
 
 <p>FILE_DEVICE_CD_ROM_FILE_SYSTEM</p>
 
@@ -89,33 +81,7 @@ VOID IoRegisterFileSystem(
 
 <p>If the DO_LOW_PRIORITY_FILESYSTEM flag is set on the file system's control device object, the device object is inserted into the next-to-last position in the queue. (The RAW file system occupies the last position in the queue.) If this flag is not set, the device object is inserted at the head of the queue.</p>
 
-<p><b>IoRegisterFileSystem</b> calls the notification routines of file system filter drivers that have registered for this notification by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548499">IoRegisterFsRegistrationChange</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548508">IoRegisterFsRegistrationChangeEx</a>.</p>
-
-<p><b>IoRegisterFileSystem</b> registers a file system as an active file system by inserting the file system's control device object into the global file system queue, and increments the reference count on the file system's control device object.</p>
-
-<p>The file system control device object's device type must be one of the following:</p><dl>
-<dd>
-<p>FILE_DEVICE_NETWORK_FILE_SYSTEM</p>
-</dd>
-<dd>
-<p>FILE_DEVICE_CD_ROM_FILE_SYSTEM</p>
-</dd>
-<dd>
-<p>FILE_DEVICE_DISK_FILE_SYSTEM</p>
-</dd>
-</dl><p>FILE_DEVICE_NETWORK_FILE_SYSTEM</p>
-
-<p>FILE_DEVICE_CD_ROM_FILE_SYSTEM</p>
-
-<p>FILE_DEVICE_DISK_FILE_SYSTEM</p>
-
-<p>If the device type is not one of these values, the file system is not registered.</p>
-
-<p>In addition, the file system control device object must be named. If it is not named, this does not cause the call to <b>IoRegisterFileSystem</b> to fail. However, file system filter drivers, as well as many system components and support routines, use this name to distinguish the file system's control device objects, which are always named, from its volume device objects, which are never named. </p>
-
-<p>If the DO_LOW_PRIORITY_FILESYSTEM flag is set on the file system's control device object, the device object is inserted into the next-to-last position in the queue. (The RAW file system occupies the last position in the queue.) If this flag is not set, the device object is inserted at the head of the queue.</p>
-
-<p><b>IoRegisterFileSystem</b> calls the notification routines of file system filter drivers that have registered for this notification by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548499">IoRegisterFsRegistrationChange</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548508">IoRegisterFsRegistrationChangeEx</a>.</p>
+<p><b>IoRegisterFileSystem</b> calls the notification routines of file system filter drivers that have registered for this notification by calling <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a> or <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchangeex.md">IoRegisterFsRegistrationChangeEx</a>.</p>
 
 ## -requirements
 <table>
@@ -172,16 +138,16 @@ VOID IoRegisterFileSystem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548499">IoRegisterFsRegistrationChange</a>
+<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548508">IoRegisterFsRegistrationChangeEx</a>
+<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchangeex.md">IoRegisterFsRegistrationChangeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548552">IoUnregisterFileSystem</a>
+<a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548557">IoUnregisterFsRegistrationChange</a>
+<a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>
 </dt>
 </dl>
 <p> </p>

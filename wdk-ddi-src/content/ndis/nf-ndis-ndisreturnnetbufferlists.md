@@ -7,7 +7,7 @@ old-location: netvista\ndisreturnnetbufferlists.htm
 old-project: netvista
 ms.assetid: 1a45bc5c-cdc1-46d2-905b-3d5eea3645c1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisReturnNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,9 +41,9 @@ req.iface:
 ## -description
 <p>NDIS drivers call the 
   <b>NdisReturnNetBufferLists</b> function to release ownership of a list of 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures, along with the
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures, along with the
   associated 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures and network data.</p>
+  <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures and network data.</p>
 
 
 ## -syntax
@@ -64,8 +64,8 @@ VOID NdisReturnNetBufferLists(
 
 <dd>
 <p>A handle that identifies the target adapter. This handle was returned by a previous call to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function. All of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures that are
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function. All of the 
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures that are
      specified in this call must be from the binding that this handle identifies.</p>
 </dd>
 
@@ -97,18 +97,7 @@ VOID NdisReturnNetBufferLists(
     <a href="..\ndis\nc-ndis-protocol-receive-net-buffer-lists.md">
     ProtocolReceiveNetBufferLists</a> function was not set, the protocol driver must call 
     <b>NdisReturnNetBufferLists</b> to return the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures and associated
-    data. After the protocol driver calls 
-    <b>NdisReturnNetBufferLists</b>, NDIS calls the underlying miniport driver's 
-    <a href="..\ndis\nc-ndis-miniport-return-net-buffer-lists.md">
-    MiniportReturnNetBufferLists</a> function.</p>
-
-<p>If the NDIS_RECEIVE_FLAGS_RESOURCES flag in the 
-    <i>ReceiveFlags</i> parameter that NDIS passed to the 
-    <a href="..\ndis\nc-ndis-protocol-receive-net-buffer-lists.md">
-    ProtocolReceiveNetBufferLists</a> function was not set, the protocol driver must call 
-    <b>NdisReturnNetBufferLists</b> to return the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures and associated
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures and associated
     data. After the protocol driver calls 
     <b>NdisReturnNetBufferLists</b>, NDIS calls the underlying miniport driver's 
     <a href="..\ndis\nc-ndis-miniport-return-net-buffer-lists.md">
@@ -167,7 +156,7 @@ VOID NdisReturnNetBufferLists(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548004">Irql_SendRcv_Function</a>
+<a href="devtest.ndis_irql_sendrcv_function">Irql_SendRcv_Function</a>
 </td>
 </tr>
 </table>
@@ -179,13 +168,13 @@ VOID NdisReturnNetBufferLists(
    MiniportReturnNetBufferLists</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-receive-net-buffer-lists.md">
@@ -194,4 +183,4 @@ VOID NdisReturnNetBufferLists(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReturnNetBufferLists function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReturnNetBufferLists function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

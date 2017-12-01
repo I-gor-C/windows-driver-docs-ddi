@@ -67,8 +67,6 @@ ULONG RtlNtStatusToDosError(
 ## -remarks
 <p>There is no function that provides the inverse functionality of <b>RtlNtStatusToDosErrorNoTeb</b>, converting a system error code to its corresponding NTSTATUS code. </p>
 
-<p>There is no function that provides the inverse functionality of <b>RtlNtStatusToDosErrorNoTeb</b>, converting a system error code to its corresponding NTSTATUS code. </p>
-
 ## -requirements
 <table>
 <tr>

@@ -7,7 +7,7 @@ old-location: stream\port_configuration_information.htm
 old-project: stream
 ms.assetid: fa990867-4e2f-4940-b6fc-310ec7fc2b68
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION, *PPORT_CONFIGURATION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -81,7 +81,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 ### -field <b>HwDeviceExtension</b>
 
 <dd>
-<p>Pointer to the minidriver's device extension. The minidriver may use this buffer to record private information global to the minidriver. The minidriver sets the size of this buffer in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>. The class driver also passes pointers to this buffer in the <b>HwDeviceExtension</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559697">HW_STREAM_OBJECT</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559702">HW_STREAM_REQUEST_BLOCK</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff559706">HW_TIME_CONTEXT</a> structures it passes to the minidriver.</p>
+<p>Pointer to the minidriver's device extension. The minidriver may use this buffer to record private information global to the minidriver. The minidriver sets the size of this buffer in the <a href="..\strmini\ns-strmini--hw-initialization-data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver also passes pointers to this buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini--hw-stream-object~r1.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini--hw-stream-request-block.md">HW_STREAM_REQUEST_BLOCK</a>, and <a href="..\strmini\ns-strmini--hw-time-context.md">HW_TIME_CONTEXT</a> structures it passes to the minidriver.</p>
 </dd>
 
 ### -field <b>ClassDeviceObject</b>
@@ -93,7 +93,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 ### -field <b>PhysicalDeviceObject</b>
 
 <dd>
-<p>Points to the device object for the driver at the top of the driver stack when the class driver attaches to the driver stack. Drivers use this member when calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a> to communicate with the driver stack. The <b>RealPhysicalDeviceObject</b> member points to the actual PDO for the driver's device.</p>
+<p>Points to the device object for the driver at the top of the driver stack when the class driver attaches to the driver stack. Drivers use this member when calling <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a> to communicate with the driver stack. The <b>RealPhysicalDeviceObject</b> member points to the actual PDO for the driver's device.</p>
 </dd>
 
 ### -field <b>SystemIoBusNumber</b>
@@ -151,7 +151,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 ### -field <b>StreamDescriptorSize</b>
 
 <dd>
-<p>The minidriver fills in this member with the size of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff559686">HW_STREAM_DESCRIPTOR</a> structure.</p>
+<p>The minidriver fills in this member with the size of its <a href="..\strmini\ns-strmini--hw-stream-descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.</p>
 </dd>
 
 ### -field <b>Irp</b>

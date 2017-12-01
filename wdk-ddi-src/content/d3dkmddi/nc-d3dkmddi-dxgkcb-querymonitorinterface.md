@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>DxgkCbQueryMonitorInterface</b> function returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561949">DXGK_MONITOR_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to obtain other interfaces that provide access to monitor descriptors, modes, and frequency ranges.</p>
+<p>The <b>DxgkCbQueryMonitorInterface</b> function returns a pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface.md">DXGK_MONITOR_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to obtain other interfaces that provide access to monitor descriptors, modes, and frequency ranges.</p>
 
 
 ## -prototype
@@ -68,13 +68,13 @@ NTSTATUS APIENTRY DxgkCbQueryMonitorInterface(
 ### -param <i>MonitorInterfaceVersion</i> [in]
 
 <dd>
-<p>[in] A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561979">DXGK_MONITOR_INTERFACE_VERSION</a> enumeration that specifies the version of the monitor interface being requested.</p>
+<p>[in] A value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-monitor-interface-version.md">DXGK_MONITOR_INTERFACE_VERSION</a> enumeration that specifies the version of the monitor interface being requested.</p>
 </dd>
 
 ### -param <i>ppMonitorInterface</i> [out]
 
 <dd>
-<p>[out] A pointer to a variable that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561949">DXGK_MONITOR_INTERFACE</a> structure.</p>
+<p>[out] A pointer to a variable that receives a pointer to the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface.md">DXGK_MONITOR_INTERFACE</a> structure.</p>
 </dd>
 </dl>
 
@@ -129,7 +129,7 @@ NTSTATUS APIENTRY DxgkCbQueryMonitorInterface(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568433">Monitor Interface</a>
+<a href="display.monitor_interface">Monitor Interface</a>
 </dt>
 </dl>
 <p> </p>

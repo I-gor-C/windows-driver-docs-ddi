@@ -95,13 +95,11 @@ NTSTATUS PcwAddInstance(
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl><p>The instance was successfully added to the buffer.</p><dl>
 <dt><b>STATUS_INVALID_BUFFER_SIZE</b></dt>
-</dl><p>One of the provider data blocks is too small. For example, suppose that during the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a>, the provider specifies that counter <i>X</i> is at offset 100 of the first data block of size 4 bytes. If the call to <b>PcwAddInstance</b> specifies that the first data block is 50 bytes, this error status is returned.</p>
+</dl><p>One of the provider data blocks is too small. For example, suppose that during the call to <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>, the provider specifies that counter <i>X</i> is at offset 100 of the first data block of size 4 bytes. If the call to <b>PcwAddInstance</b> specifies that the first data block is 50 bytes, this error status is returned.</p>
 
 <p> </p>
 
 ## -remarks
-<p>The <b>PcwAddInstance</b> function either adds an instance or collects data depending on the purpose of the buffer. The purpose of the buffer is defined by the type of callback. The <b>PcwAddInstance</b> function is called from a <a href="..\wdm\nc-wdm-pcw-callback.md">PcwCallback</a> routine when the reason is either to collect data or to enumerate instances. You can get the <i>Buffer</i> from the <i>Info</i> parameter for the <i>PcwCallback</i> routine</p>
-
 <p>The <b>PcwAddInstance</b> function either adds an instance or collects data depending on the purpose of the buffer. The purpose of the buffer is defined by the type of callback. The <b>PcwAddInstance</b> function is called from a <a href="..\wdm\nc-wdm-pcw-callback.md">PcwCallback</a> routine when the reason is either to collect data or to enumerate instances. You can get the <i>Buffer</i> from the <i>Info</i> parameter for the <i>PcwCallback</i> routine</p>
 
 ## -requirements

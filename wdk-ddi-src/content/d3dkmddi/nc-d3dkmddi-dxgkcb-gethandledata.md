@@ -60,27 +60,21 @@ VOID* APIENTRY CALLBACK DxgkCbGetHandleData(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557534">DXGKARGCB_GETHANDLEDATA</a> structure that describes the allocation data to retrieve.</p>
+<p>[in] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-gethandledata.md">DXGKARGCB_GETHANDLEDATA</a> structure that describes the allocation data to retrieve.</p>
 </dd>
 </dl>
 
 ## -returns
 <p><i>DxgkCbGetHandleData</i> returns a buffer that contains the private data for the allocation.</p>
 
-<p>If <i>DxgkCbGetHandleData</i> returns a <b>NULL</b> pointer, the Microsoft DirectX graphics kernel subsystem was unable to resolve the handle that is supplied in the <b>hObject</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557534">DXGKARGCB_GETHANDLEDATA</a> structure to private data because, for example, of the following possible reasons: </p>
+<p>If <i>DxgkCbGetHandleData</i> returns a <b>NULL</b> pointer, the Microsoft DirectX graphics kernel subsystem was unable to resolve the handle that is supplied in the <b>hObject</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-gethandledata.md">DXGKARGCB_GETHANDLEDATA</a> structure to private data because, for example, of the following possible reasons: </p>
 
 <p>If a <b>NULL</b> pointer is returned, the display miniport driver should fail its currently running DDI function with STATUS_INVALID_HANDLE.</p>
 
 ## -remarks
 <p>When the DirectX graphics kernel subsystem calls the display miniport driver's <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function to create handles to allocations, the display miniport driver can create private data for each allocation handle. The display miniport driver can subsequently call the <b>DxgkCbGetHandleData</b> function to retrieve private data for each graphics subsystem-specific handle. Therefore, the display miniport driver is not required to maintain a private allocation handle table. </p>
 
-<p>If the <b>DeviceSpecific</b> bit-field flag is set in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557534">DXGKARGCB_GETHANDLEDATA</a> structure that <i>pData</i> points to, <b>DxgkCbGetHandleData</b> returns the device-specific data that is associated with the device-specific handle that the driver returned from the call to its <a href="display.dxgkddiopenallocation">DxgkDdiOpenAllocation</a> function. Note that the <b>DeviceSpecific</b> bit-field flag is valid only if the display miniport driver also sets the <b>Type</b> member of DXGKARGCB_GETHANDLEDATA to the DXGK_HANDLE_ALLOCATION enumeration value for the handle in the <b>hObject</b> member of DXGKARGCB_GETHANDLEDATA.</p>
-
-<p>The following code example shows an implementation of <a href="display.dxgkddiopenallocation">DxgkDdiOpenAllocation</a> in which <b>DxgkCbGetHandleData</b> is called.</p>
-
-<p>When the DirectX graphics kernel subsystem calls the display miniport driver's <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function to create handles to allocations, the display miniport driver can create private data for each allocation handle. The display miniport driver can subsequently call the <b>DxgkCbGetHandleData</b> function to retrieve private data for each graphics subsystem-specific handle. Therefore, the display miniport driver is not required to maintain a private allocation handle table. </p>
-
-<p>If the <b>DeviceSpecific</b> bit-field flag is set in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557534">DXGKARGCB_GETHANDLEDATA</a> structure that <i>pData</i> points to, <b>DxgkCbGetHandleData</b> returns the device-specific data that is associated with the device-specific handle that the driver returned from the call to its <a href="display.dxgkddiopenallocation">DxgkDdiOpenAllocation</a> function. Note that the <b>DeviceSpecific</b> bit-field flag is valid only if the display miniport driver also sets the <b>Type</b> member of DXGKARGCB_GETHANDLEDATA to the DXGK_HANDLE_ALLOCATION enumeration value for the handle in the <b>hObject</b> member of DXGKARGCB_GETHANDLEDATA.</p>
+<p>If the <b>DeviceSpecific</b> bit-field flag is set in the <b>Flags</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-gethandledata.md">DXGKARGCB_GETHANDLEDATA</a> structure that <i>pData</i> points to, <b>DxgkCbGetHandleData</b> returns the device-specific data that is associated with the device-specific handle that the driver returned from the call to its <a href="display.dxgkddiopenallocation">DxgkDdiOpenAllocation</a> function. Note that the <b>DeviceSpecific</b> bit-field flag is valid only if the display miniport driver also sets the <b>Type</b> member of DXGKARGCB_GETHANDLEDATA to the DXGK_HANDLE_ALLOCATION enumeration value for the handle in the <b>hObject</b> member of DXGKARGCB_GETHANDLEDATA.</p>
 
 <p>The following code example shows an implementation of <a href="display.dxgkddiopenallocation">DxgkDdiOpenAllocation</a> in which <b>DxgkCbGetHandleData</b> is called.</p>
 
@@ -127,7 +121,7 @@ VOID* APIENTRY CALLBACK DxgkCbGetHandleData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557534">DXGKARGCB_GETHANDLEDATA</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-gethandledata.md">DXGKARGCB_GETHANDLEDATA</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>

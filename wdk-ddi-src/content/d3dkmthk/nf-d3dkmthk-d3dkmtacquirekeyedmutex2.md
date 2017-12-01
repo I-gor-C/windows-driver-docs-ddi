@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTAcquireKeyedMutex2(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439466">D3DKMT_ACQUIREKEYEDMUTEX2</a> structure that specifies the keyed mutex object to acquire. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-acquirekeyedmutex2.md">D3DKMT_ACQUIREKEYEDMUTEX2</a> structure that specifies the keyed mutex object to acquire. </p>
 </dd>
 </dl>
 
@@ -71,16 +71,14 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTAcquireKeyedMutex2(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439340">D3DKMTAcquireKeyedMutex2</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex2.md">D3DKMTAcquireKeyedMutex2</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
 <p>This function might also return other <b>NTSTATUS</b> values.</p>
 
 ## -remarks
-<p><b>D3DKMTAcquireKeyedMutex2</b> behaves like the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546732">D3DKMTAcquireKeyedMutex</a> function but lets the caller specify private data to associate with the keyed mutex.</p>
-
-<p><b>D3DKMTAcquireKeyedMutex2</b> behaves like the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546732">D3DKMTAcquireKeyedMutex</a> function but lets the caller specify private data to associate with the keyed mutex.</p>
+<p><b>D3DKMTAcquireKeyedMutex2</b> behaves like the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a> function but lets the caller specify private data to associate with the keyed mutex.</p>
 
 ## -requirements
 <table>
@@ -145,10 +143,10 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTAcquireKeyedMutex2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439466">D3DKMT_ACQUIREKEYEDMUTEX2</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-acquirekeyedmutex2.md">D3DKMT_ACQUIREKEYEDMUTEX2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546732">D3DKMTAcquireKeyedMutex</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a>
 </dt>
 </dl>
 <p> </p>

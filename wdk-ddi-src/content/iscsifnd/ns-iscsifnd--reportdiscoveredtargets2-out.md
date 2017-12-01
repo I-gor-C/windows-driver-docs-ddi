@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ReportDiscoveredTargets2_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564051">ReportDiscoveredTargets2</a> method.</p>
+<p>The ReportDiscoveredTargets2_OUT structure holds the output data for the <a href="storage.reportdiscoveredtargets2">ReportDiscoveredTargets2</a> method.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ typedef struct _ReportDiscoveredTargets2_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output, the status of the <b>ReportDiscoveredTargets</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>. </p>
+<p>On output, the status of the <b>ReportDiscoveredTargets</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>. </p>
 </dd>
 
 ### -field <b>TargetCount</b>
@@ -71,7 +71,7 @@ typedef struct _ReportDiscoveredTargets2_OUT {
 ### -field <b>Targets</b>
 
 <dd>
-<p>On output, an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561503">ISCSI_DiscoveredTarget2</a> structures, which provide information that is related to discovered targets. </p>
+<p>On output, an array of <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtarget2.md">ISCSI_DiscoveredTarget2</a> structures, which provide information that is related to discovered targets. </p>
 </dd>
 </dl>
 
@@ -95,13 +95,13 @@ typedef struct _ReportDiscoveredTargets2_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561503">ISCSI_DiscoveredTarget2</a>
+<a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtarget2.md">ISCSI_DiscoveredTarget2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564051">ReportDiscoveredTargets2</a>
+<a href="storage.reportdiscoveredtargets2">ReportDiscoveredTargets2</a>
 </dt>
 </dl>
 <p> </p>

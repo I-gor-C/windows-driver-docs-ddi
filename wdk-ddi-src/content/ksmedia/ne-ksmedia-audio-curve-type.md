@@ -7,7 +7,7 @@ old-location: audio\audio_curve_type.htm
 old-project: audio
 ms.assetid: E3CE3385-8744-4E3F-A5EF-41AC4E3E4375
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -105,78 +105,6 @@ for (UINT32 nFrame = 0; nFrame &lt; nFrames; nFrame++) {
 
 <p><img alt="Graphical representation of volume level curve" src="images/curve_type.png"/></p>
 
-<p>The following snippet of pseudocode shows the logic for the algorithm that is applied to the volume setting to reach the target volume level.<pre class="syntax" xml:space="preserve"><code>// POWER IN AMPLITUDE: 1.75
-
-// Fade In:
-// Curve begins at 0 when nFrame = 0
-// When nFrame gets to (nFrames - 1), curve = 1
-//
-// curve = pow(nFrame / (nFrames - 1), exponent)
-
-float fFrameCount = nFrames - 1.0f;
-for (UINT32 nFrame = 0; nFrame &lt; nFrames; nFrame++) {
-    float curve = powf(nFrame / fFrameCount, 1.75f);
-    for (UINT32 nChannel = 0; nChannel &lt; pWfx-&gt;nChannels; nChannel++) {            
-            pFloat[nFrame * pWfx-&gt;nChannels + nChannel] *= curve;
-    }
-}
-
-// Fade Out:
-// curve begins at 1 when nFrame = 0
-// When nFrame gets to (nFrames - 1), curve = 0
-//
-// curve = pow(1 - (nFrame / (nFrames - 1)), exponent)
-
-float fFrameCount = nFrames - 1.0f;
-for (UINT32 nFrame = 0; nFrame &lt; nFrames; nFrame++) {
-    float curve = powf(1.0f - (nFrame / fFrameCount), 1.75f);
-    for (UINT32 nChannel = 0; nChannel &lt; pWfx-&gt;nChannels; nChannel++) {            
-            pFloat[nFrame * pWfx-&gt;nChannels + nChannel] *= curve;
-    }
-}
-</code></pre>
-</p>
-
-<p>And the following diagram shows a graphical representation of the preceding pseudocode for setting the volume level.</p>
-
-<p><img alt="Graphical representation of volume level curve" src="images/curve_type.png"/></p>
-
-<p>The following snippet of pseudocode shows the logic for the algorithm that is applied to the volume setting to reach the target volume level.<pre class="syntax" xml:space="preserve"><code>// POWER IN AMPLITUDE: 1.75
-
-// Fade In:
-// Curve begins at 0 when nFrame = 0
-// When nFrame gets to (nFrames - 1), curve = 1
-//
-// curve = pow(nFrame / (nFrames - 1), exponent)
-
-float fFrameCount = nFrames - 1.0f;
-for (UINT32 nFrame = 0; nFrame &lt; nFrames; nFrame++) {
-    float curve = powf(nFrame / fFrameCount, 1.75f);
-    for (UINT32 nChannel = 0; nChannel &lt; pWfx-&gt;nChannels; nChannel++) {            
-            pFloat[nFrame * pWfx-&gt;nChannels + nChannel] *= curve;
-    }
-}
-
-// Fade Out:
-// curve begins at 1 when nFrame = 0
-// When nFrame gets to (nFrames - 1), curve = 0
-//
-// curve = pow(1 - (nFrame / (nFrames - 1)), exponent)
-
-float fFrameCount = nFrames - 1.0f;
-for (UINT32 nFrame = 0; nFrame &lt; nFrames; nFrame++) {
-    float curve = powf(1.0f - (nFrame / fFrameCount), 1.75f);
-    for (UINT32 nChannel = 0; nChannel &lt; pWfx-&gt;nChannels; nChannel++) {            
-            pFloat[nFrame * pWfx-&gt;nChannels + nChannel] *= curve;
-    }
-}
-</code></pre>
-</p>
-
-<p>And the following diagram shows a graphical representation of the preceding pseudocode for setting the volume level.</p>
-
-<p><img alt="Graphical representation of volume level curve" src="images/curve_type.png"/></p>
-
 ## -requirements
 <table>
 <tr>
@@ -202,7 +130,7 @@ for (UINT32 nFrame = 0; nFrame &lt; nFrames; nFrame++) {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh831854">KSAUDIOENGINE_VOLUMELEVEL</a>
+<a href="audio.ksaudioengine_volumelevel">KSAUDIOENGINE_VOLUMELEVEL</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh831855">KSPROPERTY_AUDIOENGINE_VOLUMELEVEL</a>
@@ -210,4 +138,4 @@ for (UINT32 nFrame = 0; nFrame &lt; nFrames; nFrame++) {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20AUDIO_CURVE_TYPE enumeration%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20AUDIO_CURVE_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

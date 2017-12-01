@@ -7,7 +7,7 @@ old-location: kernel\io_resource_descriptor.htm
 old-project: kernel
 ms.assetid: 03e3a656-c691-4aff-bcc8-4e0bc8390fd7
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR, *PIO_RESOURCE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>IO_RESOURCE_DESCRIPTOR</b> structure describes a range of raw hardware resources, of one type, that can be used by a device. An array of <b>IO_RESOURCE_DESCRIPTOR</b> structures is contained within each <a href="https://msdn.microsoft.com/library/windows/hardware/ff550600">IO_RESOURCE_LIST</a> structure.</p>
+<p>The <b>IO_RESOURCE_DESCRIPTOR</b> structure describes a range of raw hardware resources, of one type, that can be used by a device. An array of <b>IO_RESOURCE_DESCRIPTOR</b> structures is contained within each <a href="..\wdm\ns-wdm--io-resource-list.md">IO_RESOURCE_LIST</a> structure.</p>
 
 
 ## -syntax
@@ -308,7 +308,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 
 <dd>
 <p>Specifies a range of I/O port addresses, using the following members.</p>
-<p>Drivers for Windows Vista and later versions of the Windows operating system must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561950">RtlIoDecodeMemIoResource</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561952">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
+<p>Drivers for Windows Vista and later versions of the Windows operating system must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
 ### -field <b>Length</b>
@@ -341,7 +341,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members:</p>
-<p>Drivers for Windows Vista and later versions of the Windows operating system must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561950">RtlIoDecodeMemIoResource</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561952">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
+<p>Drivers for Windows Vista and later versions of the Windows operating system must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
 ### -field <b>Length</b>
@@ -394,7 +394,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 ### -field <b>AffinityPolicy</b>
 
 <dd>
-<p>Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551783">IRQ_DEVICE_POLICY</a> value that indicates how the system should distribute a device's interrupts between processors.</p>
+<p>Specifies an <a href="..\wdm\ne-wdm--irq-device-policy.md">IRQ_DEVICE_POLICY</a> value that indicates how the system should distribute a device's interrupts between processors.</p>
 </dd>
 
 ### -field <b>Group</b>
@@ -406,13 +406,13 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 ### -field <b>AffinityPolicy</b>
 
 <dd>
-<p>Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551783">IRQ_DEVICE_POLICY</a> value that indicates how the system should distribute a device's interrupts between processors.</p>
+<p>Specifies an <a href="..\wdm\ne-wdm--irq-device-policy.md">IRQ_DEVICE_POLICY</a> value that indicates how the system should distribute a device's interrupts between processors.</p>
 </dd>
 
 ### -field <b>PriorityPolicy</b>
 
 <dd>
-<p>Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551785">IRQ_PRIORITY</a> value that indicates the priority with which the system should dispatch the device's interrupts.</p>
+<p>Specifies an <a href="..\wdm\ne-wdm--irq-priority.md">IRQ_PRIORITY</a> value that indicates the priority with which the system should dispatch the device's interrupts.</p>
 </dd>
 
 ### -field <b>TargetedProcessors</b>
@@ -446,7 +446,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 ### -field <b>DmaV3</b>
 
 <dd>
-<p>Specifies the DMA settings for a driver that uses version 3 of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544071">DMA_OPERATIONS</a> structure.</p>
+<p>Specifies the DMA settings for a driver that uses version 3 of the <a href="..\wdm\ns-wdm--dma-operations.md">DMA_OPERATIONS</a> structure.</p>
 <p>The <b>u.DmaV3</b> member is available starting with Windows 8.</p>
 <dl>
 
@@ -530,7 +530,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members.</p>
-<p>The <b>u.Memory40</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for these versions of Windows must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561950">RtlIoDecodeMemIoResource</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561952">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
+<p>The <b>u.Memory40</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for these versions of Windows must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
 ### -field <b>Length40</b>
@@ -563,7 +563,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members.</p>
-<p>The <b>u.Memory48</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for these versions of Windows must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561950">RtlIoDecodeMemIoResource</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561952">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
+<p>The <b>u.Memory48</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for these versions of Windows must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
 ### -field <b>Length48</b>
@@ -596,7 +596,7 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 
 <dd>
 <p>Specifies a range of memory addresses, using the following members.</p>
-<p>The <b>u.Memory64</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for Windows Vista and later versions of the Windows operating system must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561950">RtlIoDecodeMemIoResource</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561952">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
+<p>The <b>u.Memory64</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers for Windows Vista and later versions of the Windows operating system must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.</p>
 <dl>
 
 ### -field <b>Length64</b>
@@ -787,15 +787,15 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
 <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550609">IO_RESOURCE_REQUIREMENTS_LIST</a>
+<a href="..\wdm\ns-wdm--io-resource-requirements-list.md">IO_RESOURCE_REQUIREMENTS_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550600">IO_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm--io-resource-list.md">IO_RESOURCE_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548371">IoConnectInterrupt</a>
+<a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_RESOURCE_DESCRIPTOR structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_RESOURCE_DESCRIPTOR structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

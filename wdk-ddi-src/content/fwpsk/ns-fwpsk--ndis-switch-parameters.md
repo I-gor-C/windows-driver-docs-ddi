@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_parameters.htm
 old-project: netvista
 ms.assetid: 766e042a-3f21-4f57-a780-83f92bef0a6c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_SWITCH_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct _NDIS_SWITCH_PARAMETERS {
 ### -field <b>Header</b>
 
 <dd>
-<p>The type, revision, and size of the <b>NDIS_SWITCH_PARAMETERS</b> structure. This member is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.</p>
+<p>The type, revision, and size of the <b>NDIS_SWITCH_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
 <p>The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: </p>
 <p></p>
 <dl>
@@ -116,22 +116,22 @@ typedef struct _NDIS_SWITCH_PARAMETERS {
 
 <p>This structure is also passed in the <i>vSwitch</i> parameter of the following callout functions for Windows Filtering Platform callout drivers:<ul>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451269">FWPS_VSWITCH_INTERFACE_EVENT_CALLBACK0</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-vswitch-interface-event-callback0.md">FWPS_VSWITCH_INTERFACE_EVENT_CALLBACK0</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451271">FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-vswitch-lifetime-event-callback0.md">FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451272">FWPS_VSWITCH_POLICY_EVENT_CALLBACK0</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-vswitch-policy-event-callback0.md">FWPS_VSWITCH_POLICY_EVENT_CALLBACK0</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451276">FWPS_VSWITCH_PORT_EVENT_CALLBACK0</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-vswitch-port-event-callback0.md">FWPS_VSWITCH_PORT_EVENT_CALLBACK0</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451281">FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-vswitch-runtime-state-restore-callback0.md">FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451286">FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-vswitch-runtime-state-save-callback0.md">FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0</a>
 </li>
 </ul>
 </p>
@@ -165,25 +165,25 @@ typedef struct _NDIS_SWITCH_PARAMETERS {
 <a href="..\fwpsk\nc-fwpsk-fwps-vswitch-interface-event-callback0.md">IF_COUNTEDFWPS_VSWITCH_INTERFACE_EVENT_CALLBACK0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451271">FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-vswitch-lifetime-event-callback0.md">FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451272">FWPS_VSWITCH_POLICY_EVENT_CALLBACK0</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-vswitch-policy-event-callback0.md">FWPS_VSWITCH_POLICY_EVENT_CALLBACK0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451276">FWPS_VSWITCH_PORT_EVENT_CALLBACK0</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-vswitch-port-event-callback0.md">FWPS_VSWITCH_PORT_EVENT_CALLBACK0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451281">FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-vswitch-runtime-state-restore-callback0.md">FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451286">FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-vswitch-runtime-state-save-callback0.md">FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0</a>
 </dt>
 <dt>
 <a href="netvista.if_counted_string">_STRING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--net-pnp-event.md">NetEventSwitchActivate</a>
@@ -194,4 +194,4 @@ typedef struct _NDIS_SWITCH_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

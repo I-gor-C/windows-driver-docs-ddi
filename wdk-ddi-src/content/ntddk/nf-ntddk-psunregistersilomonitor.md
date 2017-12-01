@@ -7,7 +7,7 @@ old-location: kernel\psunregistersilomonitor.htm
 old-project: kernel
 ms.assetid: B1B85AD5-F626-4177-8218-428B617A97F6
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PsUnregisterSiloMonitor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,10 +65,6 @@ void PsUnregisterSiloMonitor(
 <p>This routine does not return a value.</p>
 
 ## -remarks
-<p>The monitor will not receive further notifications after this routine completes.
-    
-If the monitor allocated a silo context slot, this routine will not complete until all silo contexts have been removed from slot.</p>
-
 <p>The monitor will not receive further notifications after this routine completes.
     
 If the monitor allocated a silo context slot, this routine will not complete until all silo contexts have been removed from slot.</p>

@@ -57,7 +57,7 @@ VOID IoReleaseVpbSpinLock(
 ### -param <i>Irql</i> [in]
 
 <dd>
-<p>Saved IRQL value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff548227">IoAcquireVpbSpinLock</a> when the VPB spin lock was acquired. </p>
+<p>Saved IRQL value returned by <a href="..\ntifs\nf-ntifs-ioacquirevpbspinlock.md">IoAcquireVpbSpinLock</a> when the VPB spin lock was acquired. </p>
 </dd>
 </dl>
 
@@ -65,17 +65,11 @@ VOID IoReleaseVpbSpinLock(
 <p>None</p>
 
 ## -remarks
-<p>This routine is the reciprocal to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548227">IoAcquireVpbSpinLock</a>. Every successful call to <b>IoAcquireVpbSpinLock</b> must be matched by a subsequent call to <b>IoReleaseVpbSpinLock</b>. </p>
+<p>This routine is the reciprocal to <a href="..\ntifs\nf-ntifs-ioacquirevpbspinlock.md">IoAcquireVpbSpinLock</a>. Every successful call to <b>IoAcquireVpbSpinLock</b> must be matched by a subsequent call to <b>IoReleaseVpbSpinLock</b>. </p>
 
-<p>Before using <a href="https://msdn.microsoft.com/library/windows/hardware/ff548227">IoAcquireVpbSpinLock</a> and <b>IoReleaseVpbSpinLock</b>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample. </p>
+<p>Before using <a href="..\ntifs\nf-ntifs-ioacquirevpbspinlock.md">IoAcquireVpbSpinLock</a> and <b>IoReleaseVpbSpinLock</b>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample. </p>
 
-<p>The holder of the VPB spin lock executes at IRQL DISPATCH_LEVEL after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548227">IoAcquireVpbSpinLock</a>. <b>IoReleaseVpbSpinLock</b> restores the caller's original IRQL. </p>
-
-<p>This routine is the reciprocal to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548227">IoAcquireVpbSpinLock</a>. Every successful call to <b>IoAcquireVpbSpinLock</b> must be matched by a subsequent call to <b>IoReleaseVpbSpinLock</b>. </p>
-
-<p>Before using <a href="https://msdn.microsoft.com/library/windows/hardware/ff548227">IoAcquireVpbSpinLock</a> and <b>IoReleaseVpbSpinLock</b>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample. </p>
-
-<p>The holder of the VPB spin lock executes at IRQL DISPATCH_LEVEL after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548227">IoAcquireVpbSpinLock</a>. <b>IoReleaseVpbSpinLock</b> restores the caller's original IRQL. </p>
+<p>The holder of the VPB spin lock executes at IRQL DISPATCH_LEVEL after calling <a href="..\ntifs\nf-ntifs-ioacquirevpbspinlock.md">IoAcquireVpbSpinLock</a>. <b>IoReleaseVpbSpinLock</b> restores the caller's original IRQL. </p>
 
 ## -requirements
 <table>
@@ -132,7 +126,7 @@ VOID IoReleaseVpbSpinLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548227">IoAcquireVpbSpinLock</a>
+<a href="..\ntifs\nf-ntifs-ioacquirevpbspinlock.md">IoAcquireVpbSpinLock</a>
 </dt>
 </dl>
 <p> </p>

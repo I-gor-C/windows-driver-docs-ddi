@@ -7,7 +7,7 @@ old-location: debugger\idebugclient5.htm
 old-project: debugger
 ms.assetid: 4230fbc2-524a-44b1-a090-011e334629a7
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface: IDebugSystemObjects4
 ## -description
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugClient5</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff550494">IDebugClient4</a>. <b>IDebugClient5</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugClient5</b> interface inherits from <a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>. <b>IDebugClient5</b> also has these types of members:</p>
 
 <p>The <b>IDebugClient5</b> interface has these methods.</p>
 
@@ -113,7 +113,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538148">AttachKernelWide</a>
+<a href="debugger.attachkernelwide">AttachKernelWide</a>
 </td>
 <td align="left" width="63%">
 <p>Connects the debugger engine to a kernel target.</p>
@@ -121,7 +121,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539240">ConnectProcessServerWide</a>
+<a href="debugger.connectprocessserverwide">ConnectProcessServerWide</a>
 </td>
 <td align="left" width="63%">
 <p>Connects to a process server.</p>
@@ -129,7 +129,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539323">CreateProcess2</a>
+<a href="debugger.createprocess2">CreateProcess2</a>
 </td>
 <td align="left" width="63%">
 <p>Executes the given command to create a new process. (ANSI version)</p>
@@ -137,7 +137,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540038">CreateProcess2Wide</a>
+<a href="debugger.createprocess2wide">CreateProcess2Wide</a>
 </td>
 <td align="left" width="63%">
 <p>Executes the given command to create a new process. (Unicode version)</p>
@@ -145,7 +145,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540055">CreateProcessAndAttach2</a>
+<a href="debugger.createprocessandattach2">CreateProcessAndAttach2</a>
 </td>
 <td align="left" width="63%">
 <p>Creates a process from a specified command line, then attach to that process or another user-mode process. (ANSI version)</p>
@@ -153,7 +153,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540062">CreateProcessAndAttach2Wide</a>
+<a href="debugger.createprocessandattach2wide">CreateProcessAndAttach2Wide</a>
 </td>
 <td align="left" width="63%">
 <p>Creates a process from a specified command line, then attach to that process or another user-mode process. (Unicode version)</p>
@@ -161,7 +161,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546607">GetEventCallbacksWide</a>
+<a href="debugger.geteventcallbackswide">GetEventCallbacksWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the event callbacks object registered with this client.</p>
@@ -169,7 +169,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546844">GetIdentityWide</a>
+<a href="debugger.getidentitywide">GetIdentityWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns a string describing the computer and user this client represents.</p>
@@ -177,7 +177,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546973">GetKernelConnectionOptionsWide</a>
+<a href="debugger.getkernelconnectionoptionswide">GetKernelConnectionOptionsWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the connection options for the current kernel target.</p>
@@ -185,7 +185,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547896">GetNumberEventCallbacks</a>
+<a href="debugger.getnumbereventcallbacks">GetNumberEventCallbacks</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the  number of event callbacks that are interested in the given events.</p>
@@ -193,7 +193,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547923">GetNumberInputCallbacks</a>
+<a href="debugger.getnumberinputcallbacks">GetNumberInputCallbacks</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the number of input callbacks registered over all clients.</p>
@@ -201,7 +201,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547931">GetNumberOutputCallbacks</a>
+<a href="debugger.getnumberoutputcallbacks">GetNumberOutputCallbacks</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the number of output callbacks registered over all clients.</p>
@@ -209,7 +209,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548074">GetOutputCallbacksWide</a>
+<a href="debugger.getoutputcallbackswide">GetOutputCallbacksWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the output callbacks object registered with the client.</p>
@@ -235,7 +235,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553224">OutputIdentityWide</a>
+<a href="debugger.outputidentitywide">OutputIdentityWide</a>
 </td>
 <td align="left" width="63%">
 <p>Formats and outputs a string describing the computer and user this client represents.</p>
@@ -243,7 +243,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553250">OutputServersWide</a>
+<a href="debugger.outputserverswide">OutputServersWide</a>
 </td>
 <td align="left" width="63%">
 <p>Lists the servers running on a given computer.</p>
@@ -269,7 +269,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556674">SetEventCallbacksWide</a>
+<a href="debugger.seteventcallbackswide">SetEventCallbacksWide</a>
 </td>
 <td align="left" width="63%">
 <p>Registers an event callbacks object with this client.</p>
@@ -277,7 +277,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556732">SetKernelConnectionOptionsWide</a>
+<a href="debugger.setkernelconnectionoptionswide">SetKernelConnectionOptionsWide</a>
 </td>
 <td align="left" width="63%">
 <p>Updates some of the connection options for a live kernel target.</p>
@@ -285,7 +285,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556753">SetOutputCallbacksWide</a>
+<a href="debugger.setoutputcallbackswide">SetOutputCallbacksWide</a>
 </td>
 <td align="left" width="63%">
 <p>Registers an output callbacks object with this client.</p>
@@ -311,7 +311,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558812">StartProcessServerWide</a>
+<a href="debugger.startprocessserverwide">StartProcessServerWide</a>
 </td>
 <td align="left" width="63%">
 <p>Starts a process server.</p>
@@ -319,7 +319,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558814">StartServerWide</a>
+<a href="debugger.startserverwide">StartServerWide</a>
 </td>
 <td align="left" width="63%">
 <p>Starts a debugging server.</p>
@@ -405,9 +405,9 @@ req.iface: IDebugSystemObjects4
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550494">IDebugClient4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient5 interface%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient5 interface%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

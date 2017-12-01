@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Provides an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265397">IPrintJobCollection</a> object that provides a snapshot of a range of print jobs in the queue.</p>
+<p>Provides an <a href="..\printerextension\nn-printerextension-iprintjobcollection.md">IPrintJobCollection</a> object that provides a snapshot of a range of print jobs in the queue.</p>
 
 
 ## -syntax
@@ -61,7 +61,7 @@ HRESULT OnChanged(
 ### -param <i>pCollection</i> [in]
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/dn265397">IPrintJobCollection</a> object.</p>
+<p>An <a href="..\printerextension\nn-printerextension-iprintjobcollection.md">IPrintJobCollection</a> object.</p>
 </dd>
 
 ### -param <i>ulViewOffset</i> [in]
@@ -87,9 +87,7 @@ HRESULT OnChanged(
 <p>This method returns the appropriate <b>HRESULT</b> value.</p>
 
 ## -remarks
-<p>The job range is controlled by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265392">IPrinterQueueView</a> interface. Additionally, this method provides the current number of jobs in the print queue, and the indices of the job range being monitored. Information about the number of jobs, and the indices of the jobs is provided in response to the <a href="print.iprinterqueueview_setviewrange">IPrinterQueueView::SetViewRange</a> method being invoked.</p>
-
-<p>The job range is controlled by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265392">IPrinterQueueView</a> interface. Additionally, this method provides the current number of jobs in the print queue, and the indices of the job range being monitored. Information about the number of jobs, and the indices of the jobs is provided in response to the <a href="print.iprinterqueueview_setviewrange">IPrinterQueueView::SetViewRange</a> method being invoked.</p>
+<p>The job range is controlled by the <a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a> interface. Additionally, this method provides the current number of jobs in the print queue, and the indices of the job range being monitored. Information about the number of jobs, and the indices of the jobs is provided in response to the <a href="print.iprinterqueueview_setviewrange">IPrinterQueueView::SetViewRange</a> method being invoked.</p>
 
 ## -requirements
 <table>
@@ -134,16 +132,16 @@ HRESULT OnChanged(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265392">IPrinterQueueView</a>
+<a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265393">IPrinterQueueViewEvent</a>
+<a href="..\printerextension\nn-printerextension-iprinterqueueviewevent.md">IPrinterQueueViewEvent</a>
 </dt>
 <dt>
 <a href="print.iprinterqueueview_setviewrange">IPrinterQueueView::SetViewRange</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265397">IPrintJobCollection</a>
+<a href="..\printerextension\nn-printerextension-iprintjobcollection.md">IPrintJobCollection</a>
 </dt>
 </dl>
 <p> </p>

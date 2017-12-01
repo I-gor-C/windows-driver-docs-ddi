@@ -7,7 +7,7 @@ old-location: stream\ioctl_avc_remove_virtual_subunit_info.htm
 old-project: stream
 ms.assetid: 0058b595-e807-4908-89b1-3956effba4db
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KBUGCHECK_DATA, KBUGCHECK_DATA, *PKBUGCHECK_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -102,8 +102,6 @@ I/O Status block
 ## -remarks
 <p>Must be called at IRQL = PASSIVE_LEVEL.</p>
 
-<p>Must be called at IRQL = PASSIVE_LEVEL.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -121,18 +119,18 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554198">AVC_SUBUNIT_ADDR_SPEC</a>
+<a href="..\avc\ns-avc--avc-subunit-addr-spec.md">AVC_SUBUNIT_ADDR_SPEC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560789">IOCTL_AVC_CLASS</a>
+<a href="..\avc\ni-avc-ioctl-avc-class.md">IOCTL_AVC_CLASS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560798">IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO</a>
+<a href="..\avc\ni-avc-ioctl-avc-update-virtual-subunit-info.md">IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560783">IOCTL_AVC_BUS_RESET</a>
+<a href="..\avc\ni-avc-ioctl-avc-bus-reset.md">IOCTL_AVC_BUS_RESET</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO control code%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO control code%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

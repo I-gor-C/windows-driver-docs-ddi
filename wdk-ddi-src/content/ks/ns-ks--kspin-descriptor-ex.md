@@ -7,7 +7,7 @@ old-location: stream\kspin_descriptor_ex.htm
 old-project: stream
 ms.assetid: 05c82973-86f9-44f9-8df2-1fc84c8be975
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KSPIN_DESCRIPTOR_EX,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,19 +64,19 @@ typedef struct _KSPIN_DESCRIPTOR_EX {
 ### -field <b>Dispatch</b>
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563535">KSPIN_DISPATCH</a> structure for this pin. This pointer is optional and should only be provided by clients that wish to receive notifications. Clients that need to perform pin-centric processing (filters concerned with the routing of data, in other words hardware drivers) must provide this dispatch table and a process dispatch. See <b>KSPIN_DISPATCH</b> for more information.</p>
+<p>A pointer to the <a href="..\ks\ns-ks--kspin-dispatch.md">KSPIN_DISPATCH</a> structure for this pin. This pointer is optional and should only be provided by clients that wish to receive notifications. Clients that need to perform pin-centric processing (filters concerned with the routing of data, in other words hardware drivers) must provide this dispatch table and a process dispatch. See <b>KSPIN_DISPATCH</b> for more information.</p>
 </dd>
 
 ### -field <b>AutomationTable</b>
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560990">KSAUTOMATION_TABLE</a> structure for this pin. The automation table contains the properties, methods, and events supported by the pin. This automation table is merged with the automation table provided by AVStream for all pins. If the client supplies any property, event, or method handlers that are already provided by AVStream, the client's implementation supersedes that of AVStream.</p>
+<p>A pointer to the <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> structure for this pin. The automation table contains the properties, methods, and events supported by the pin. This automation table is merged with the automation table provided by AVStream for all pins. If the client supplies any property, event, or method handlers that are already provided by AVStream, the client's implementation supersedes that of AVStream.</p>
 </dd>
 
 ### -field <b>PinDescriptor</b>
 
 <dd>
-<p>This member specifies a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff563533">KSPIN_DESCRIPTOR</a>.</p>
+<p>This member specifies a structure of type <a href="stream.kspin_descriptor">KSPIN_DESCRIPTOR</a>.</p>
 </dd>
 
 ### -field <b>Flags</b>
@@ -145,14 +145,14 @@ typedef struct _KSPIN_DESCRIPTOR_EX {
 
 
 <dd>
-<p>Specifying this flag causes AVStream to automatically generate scatter/gather mappings for a queued frame when the minidriver locks a stream pointer referencing that frame. Clients that intend to use this feature need to register their DMA adapter object with AVStream via the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561687">KsDeviceRegisterAdapterObject</a> function. See the <b>DataUsed</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a> for the effect of this flag on the KSSTREAM_HEADER structure. Also see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567140">KSSTREAM_POINTER_OFFSET</a>.</p>
+<p>Specifying this flag causes AVStream to automatically generate scatter/gather mappings for a queued frame when the minidriver locks a stream pointer referencing that frame. Clients that intend to use this feature need to register their DMA adapter object with AVStream via the <a href="..\ks\nf-ks-ksdeviceregisteradapterobject.md">KsDeviceRegisterAdapterObject</a> function. See the <b>DataUsed</b> member of <a href="stream.ksstream_header">KSSTREAM_HEADER</a> for the effect of this flag on the KSSTREAM_HEADER structure. Also see <a href="..\ks\ns-ks--ksstream-pointer-offset.md">KSSTREAM_POINTER_OFFSET</a>.</p>
 </dd>
 
 ### -field <a id="KSPIN_FLAG_DISTINCT_TRAILING_EDGE"></a><a id="kspin_flag_distinct_trailing_edge"></a><p><a id="KSPIN_FLAG_DISTINCT_TRAILING_EDGE"></a><a id="kspin_flag_distinct_trailing_edge"></a><b>KSPIN_FLAG_DISTINCT_TRAILING_EDGE</b></p>
 
 
 <dd>
-<p>Indicates that the queue associated with the pin should have a trailing edge stream pointer. The trailing edge pointer is a special stream pointer that points to the oldest data in the queue unless clone pointers exist on older data. Any data frames in the window between the leading and trailing edge stream pointers are considered to have at least one reference count on them and are not completed until they move out of the window by advancing the trailing edge with <a href="https://msdn.microsoft.com/library/windows/hardware/ff563518">KsPinGetTrailingEdgeStreamPointer</a> and one of the <b>KsStreamPointerAdvance</b><i>Xxx</i> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567137">KsStreamPointerUnlock</a> functions. Pins that do not specify this flag do not have a trailing edge stream pointer.</p>
+<p>Indicates that the queue associated with the pin should have a trailing edge stream pointer. The trailing edge pointer is a special stream pointer that points to the oldest data in the queue unless clone pointers exist on older data. Any data frames in the window between the leading and trailing edge stream pointers are considered to have at least one reference count on them and are not completed until they move out of the window by advancing the trailing edge with <a href="..\ks\nf-ks-kspingettrailingedgestreampointer.md">KsPinGetTrailingEdgeStreamPointer</a> and one of the <b>KsStreamPointerAdvance</b><i>Xxx</i> or <a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a> functions. Pins that do not specify this flag do not have a trailing edge stream pointer.</p>
 </dd>
 
 ### -field <a id="KSPIN_FLAG_PROCESS_IN_RUN_STATE_ONLY"></a><a id="kspin_flag_process_in_run_state_only"></a><p><a id="KSPIN_FLAG_PROCESS_IN_RUN_STATE_ONLY"></a><a id="kspin_flag_process_in_run_state_only"></a><b>KSPIN_FLAG_PROCESS_IN_RUN_STATE_ONLY</b></p>
@@ -209,8 +209,8 @@ typedef struct _KSPIN_DESCRIPTOR_EX {
 
 <dd>
 <p>When specified on a filter-centric filter pin, indicates that one or more instances of the pin type in question must have frames available in order to process data. Mutually exclusive with KSPIN_FLAG_FRAMES_NOT_REQUIRED_FOR_PROCESSING.</p>
-<p>Note that this behavior can be obtained through <a href="https://msdn.microsoft.com/library/windows/hardware/ff563492">KsPinAttachOrGate</a> by manually setting up an OR gate as the frame gate for every instance of the pin and attaching this OR gate to the filter's AND gate.</p>
-<p>When using this flag, minidrivers cannot call <a href="https://msdn.microsoft.com/library/windows/hardware/ff563491">KsPinAttachAndGate</a> or <b>KsPinAttachOrGate</b> on the associated pin instances. (The flag effectively does this for you for the simple OR case.) Also see <a href="NULL">Filter-Centric Processing</a>.</p>
+<p>Note that this behavior can be obtained through <a href="..\ks\nf-ks-kspinattachorgate.md">KsPinAttachOrGate</a> by manually setting up an OR gate as the frame gate for every instance of the pin and attaching this OR gate to the filter's AND gate.</p>
+<p>When using this flag, minidrivers cannot call <a href="..\ks\nf-ks-kspinattachandgate.md">KsPinAttachAndGate</a> or <b>KsPinAttachOrGate</b> on the associated pin instances. (The flag effectively does this for you for the simple OR case.) Also see <a href="NULL">Filter-Centric Processing</a>.</p>
 </dd>
 
 ### -field <a id="KSPIN_FLAG_PROCESS_IF_ANY_IN_RUN_STATE"></a><a id="kspin_flag_process_if_any_in_run_state"></a><p><a id="KSPIN_FLAG_PROCESS_IF_ANY_IN_RUN_STATE"></a><a id="kspin_flag_process_if_any_in_run_state"></a><b>KSPIN_FLAG_PROCESS_IF_ANY_IN_RUN_STATE</b></p>
@@ -251,13 +251,13 @@ typedef struct _KSPIN_DESCRIPTOR_EX {
 ### -field <b>AllocatorFraming</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560982">KSALLOCATOR_FRAMING_EX</a> structure containing the allocator framing requirements for this pin type. Allocator framing specifies items such as memory alignment requirements, maximum frame size, and minimum frame size. This member can be <b>NULL</b>, which indicates that this pin does not support the allocator framing property.</p>
+<p>A pointer to a <a href="stream.ksallocator_framing_ex">KSALLOCATOR_FRAMING_EX</a> structure containing the allocator framing requirements for this pin type. Allocator framing specifies items such as memory alignment requirements, maximum frame size, and minimum frame size. This member can be <b>NULL</b>, which indicates that this pin does not support the allocator framing property.</p>
 </dd>
 
 ### -field <b>IntersectHandler</b>
 
 <dd>
-<p>A pointer to a driver-defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff567185">KStrIntersectHandlerEx</a> function to handle data-intersection. If this member is <b>NULL</b>, the pin handles data intersection queries for data ranges with the specifier KSDATAFORMAT_SPECIFIER_NONE. The intersection handler function receives a single data range from the query and a single data range from the pins list of data ranges. The type, subtype, and specifier GUIDs of these ranges are guaranteed to match, though some may be wildcards. The function either indicates the data ranges do not match, or it produces the best data format in the intersection of the two data ranges. See <a href="NULL">Data Range Intersections in AVStream</a> for more information.</p>
+<p>A pointer to a driver-defined <a href="stream.kstrintersecthandlerex">KStrIntersectHandlerEx</a> function to handle data-intersection. If this member is <b>NULL</b>, the pin handles data intersection queries for data ranges with the specifier KSDATAFORMAT_SPECIFIER_NONE. The intersection handler function receives a single data range from the query and a single data range from the pins list of data ranges. The type, subtype, and specifier GUIDs of these ranges are guaranteed to match, though some may be wildcards. The function either indicates the data ranges do not match, or it produces the best data format in the intersection of the two data ranges. See <a href="NULL">Data Range Intersections in AVStream</a> for more information.</p>
 </dd>
 </dl>
 
@@ -294,18 +294,18 @@ typedef struct _KSPIN_DESCRIPTOR_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563535">KSPIN_DISPATCH</a>
+<a href="..\ks\ns-ks--kspin-dispatch.md">KSPIN_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563533">KSPIN_DESCRIPTOR</a>
+<a href="stream.kspin_descriptor">KSPIN_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560982">KSALLOCATOR_FRAMING_EX</a>
+<a href="stream.ksallocator_framing_ex">KSALLOCATOR_FRAMING_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561687">KsDeviceRegisterAdapterObject</a>
+<a href="..\ks\nf-ks-ksdeviceregisteradapterobject.md">KsDeviceRegisterAdapterObject</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_DESCRIPTOR_EX structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_DESCRIPTOR_EX structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

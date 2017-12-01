@@ -71,7 +71,7 @@ NTSTATUS IoReadDiskSignature(
 ### -param <i>Signature</i> [out]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552637">DISK_SIGNATURE</a> structure the routine uses to return the disk signature information.</p>
+<p>Pointer to a <a href="..\ntddk\ns-ntddk--disk-signature.md">DISK_SIGNATURE</a> structure the routine uses to return the disk signature information.</p>
 </dd>
 </dl>
 
@@ -79,9 +79,7 @@ NTSTATUS IoReadDiskSignature(
 <p>The routine returns STATUS_SUCCESS on success, or the appropriate error code on failure. The routine returns STATUS_DISK_CORRUPT_ERROR if it detects that the disk partition table is corrupted.</p>
 
 ## -remarks
-<p><b>IoReadDiskSignature</b> must only be used by disk drivers. Other drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560359">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a> I/O request instead.</p>
-
-<p><b>IoReadDiskSignature</b> must only be used by disk drivers. Other drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560359">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a> I/O request instead.</p>
+<p><b>IoReadDiskSignature</b> must only be used by disk drivers. Other drivers should use the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-drive-geometry-ex.md">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a> I/O request instead.</p>
 
 ## -requirements
 <table>
@@ -138,10 +136,10 @@ NTSTATUS IoReadDiskSignature(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552637">DISK_SIGNATURE</a>
+<a href="..\ntddk\ns-ntddk--disk-signature.md">DISK_SIGNATURE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560359">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-drive-geometry-ex.md">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a>
 </dt>
 </dl>
 <p> </p>

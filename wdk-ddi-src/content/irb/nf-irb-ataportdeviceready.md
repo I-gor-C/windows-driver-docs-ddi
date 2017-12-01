@@ -81,8 +81,6 @@ VOID __inline AtaPortDeviceReady(
 ## -remarks
 <p>The port driver resumes the paused request queue for the indicated device. If the caller assigns a wildcard value of IDE_UNTAGGED to parameters <i>TargetId</i> and <i>Lun</i>, the port driver will restart the channel request queue. </p>
 
-<p>The port driver resumes the paused request queue for the indicated device. If the caller assigns a wildcard value of IDE_UNTAGGED to parameters <i>TargetId</i> and <i>Lun</i>, the port driver will restart the channel request queue. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -110,7 +108,7 @@ VOID __inline AtaPortDeviceReady(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550155">AtaPortDeviceBusy</a>
+<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
 </dt>
 </dl>
 <p> </p>

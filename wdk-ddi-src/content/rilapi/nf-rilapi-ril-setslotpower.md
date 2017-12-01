@@ -7,7 +7,7 @@ old-location: netvista\ril_setslotpower.htm
 old-project: netvista
 ms.assetid: c7e12c2a-3382-478b-a306-7c86c93d45d0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SetSlotPower
 ms.prod: windows-hardware
 ms.technology: windows-devices

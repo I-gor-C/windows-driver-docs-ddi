@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest.htm
 old-project: wdf
 ms.assetid: 3104284a-4277-4f05-ae3f-3b2bb3c3437d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,13 +45,13 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoRequest</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>. <b>IWDFIoRequest</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoRequest</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>. <b>IWDFIoRequest</b> also has these types of members:</p>
 
 <p>The <b>IWDFIoRequest</b> interface has these methods.</p>
 
 <p>The <a href="wdf.iwdfiorequest_cancelsentrequest">CancelSentRequest</a> method attempts to cancel the I/O request that the driver previously submitted to an I/O target.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406719">Complete</a> method completes an I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest_complete">Complete</a> method completes an I/O request.</p>
 
 <p>The <a href="wdf.iwdfiorequest_completewithinformation">CompleteWithInformation</a> method completes a request with the supplied information.</p>
 
@@ -65,7 +65,7 @@ req.product: Windows 10 or later.
 
 <p>The <a href="wdf.iwdfiorequest_getdeviceiocontrolparameters">GetDeviceIoControlParameters</a> method retrieves the request parameters for a device I/O control-type request.</p>
 
-<p>The <a href="wdf.iwdfiorequest_getfileobject">GetFileObject</a> method retrieves a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a> interface that is associated with an I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest_getfileobject">GetFileObject</a> method retrieves a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface that is associated with an I/O request.</p>
 
 <p>The <a href="wdf.iwdfiorequest_getinputmemory">GetInputMemory</a> method retrieves the memory object that represents the input buffer in an I/O request.</p>
 
@@ -77,7 +77,7 @@ req.product: Windows 10 or later.
 
 <p>The <a href="wdf.iwdfiorequest_getrequestorprocessid">GetRequestorProcessId</a> method retrieves the identifier of the process that sent an I/O request.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a> method retrieves the type of operation that a request contains.</p>
+<p>The <a href="wdf.iwdfiorequest_gettype">GetType</a> method retrieves the type of operation that a request contains.</p>
 
 <p>The <a href="wdf.iwdfiorequest_getwriteparameters">GetWriteParameters</a> method retrieves the request parameters for a write-type request.</p>
 
@@ -105,7 +105,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559067">IWDFIoRequest::CancelSentRequest</a>
+<a href="wdf.iwdfiorequest_cancelsentrequest">IWDFIoRequest::CancelSentRequest</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_cancelsentrequest">CancelSentRequest</a> method attempts to cancel the I/O request that the driver previously submitted to an I/O target.</p>
@@ -113,15 +113,15 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
+<a href="wdf.iwdfiorequest_complete">IWDFIoRequest::Complete</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406719">Complete</a> method completes an I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest_complete">Complete</a> method completes an I/O request.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559074">IWDFIoRequest::CompleteWithInformation</a>
+<a href="wdf.iwdfiorequest_completewithinformation">IWDFIoRequest::CompleteWithInformation</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_completewithinformation">CompleteWithInformation</a> method completes a request with the supplied information.</p>
@@ -129,7 +129,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559077">IWDFIoRequest::FormatUsingCurrentType</a>
+<a href="wdf.iwdfiorequest_formatusingcurrenttype">IWDFIoRequest::FormatUsingCurrentType</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_formatusingcurrenttype">FormatUsingCurrentType</a> method formats an I/O request so that the driver can forward it, unmodified, to the next-lower driver.</p>
@@ -137,7 +137,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559081">IWDFIoRequest::ForwardToIoQueue</a>
+<a href="wdf.iwdfiorequest_forwardtoioqueue">IWDFIoRequest::ForwardToIoQueue</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_forwardtoioqueue">ForwardToIoQueue</a> method forwards (that is, requeues) an I/O request to one of the calling driver's I/O queues.</p>
@@ -145,7 +145,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a>
+<a href="wdf.iwdfiorequest_getcompletionparams">IWDFIoRequest::GetCompletionParams</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_getcompletionparams">GetCompletionParams</a> method retrieves the parameters object for the completion of an I/O request object.</p>
@@ -153,7 +153,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559088">IWDFIoRequest::GetCreateParameters</a>
+<a href="wdf.iwdfiorequest_getcreateparameters">IWDFIoRequest::GetCreateParameters</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_getcreateparameters">GetCreateParameters</a> method retrieves the request parameters for a create-type request.</p>
@@ -161,7 +161,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559095">IWDFIoRequest::GetDeviceIoControlParameters</a>
+<a href="wdf.iwdfiorequest_getdeviceiocontrolparameters">IWDFIoRequest::GetDeviceIoControlParameters</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_getdeviceiocontrolparameters">GetDeviceIoControlParameters</a> method retrieves the request parameters for a device I/O control-type request.</p>
@@ -169,15 +169,15 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559099">IWDFIoRequest::GetFileObject</a>
+<a href="wdf.iwdfiorequest_getfileobject">IWDFIoRequest::GetFileObject</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="wdf.iwdfiorequest_getfileobject">GetFileObject</a> method retrieves a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a> interface that is associated with an I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest_getfileobject">GetFileObject</a> method retrieves a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface that is associated with an I/O request.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559100">IWDFIoRequest::GetInputMemory</a>
+<a href="wdf.iwdfiorequest_getinputmemory">IWDFIoRequest::GetInputMemory</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_getinputmemory">GetInputMemory</a> method retrieves the memory object that represents the input buffer in an I/O request.</p>
@@ -185,7 +185,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559103">IWDFIoRequest::GetIoQueue</a>
+<a href="wdf.iwdfiorequest_getioqueue">IWDFIoRequest::GetIoQueue</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_getioqueue">GetIoQueue</a> method retrieves the I/O queue object that is associated with an I/O request.</p>
@@ -193,7 +193,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559112">IWDFIoRequest::GetOutputMemory</a>
+<a href="wdf.iwdfiorequest_getoutputmemory">IWDFIoRequest::GetOutputMemory</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_getoutputmemory">GetOutputMemory</a> method retrieves the memory object that represents the output buffer for an I/O request.</p>
@@ -201,7 +201,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559113">IWDFIoRequest::GetReadParameters</a>
+<a href="wdf.iwdfiorequest_getreadparameters">IWDFIoRequest::GetReadParameters</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_getreadparameters">GetReadParameters</a> method retrieves the request parameters for a read-type request.</p>
@@ -209,7 +209,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559118">IWDFIoRequest::GetRequestorProcessId</a>
+<a href="wdf.iwdfiorequest_getrequestorprocessid">IWDFIoRequest::GetRequestorProcessId</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_getrequestorprocessid">GetRequestorProcessId</a> method retrieves the identifier of the process that sent an I/O request.</p>
@@ -217,15 +217,15 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559124">IWDFIoRequest::GetType</a>
+<a href="wdf.iwdfiorequest_gettype">IWDFIoRequest::GetType</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a> method retrieves the type of operation that a request contains.</p>
+<p>The <a href="wdf.iwdfiorequest_gettype">GetType</a> method retrieves the type of operation that a request contains.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559130">IWDFIoRequest::GetWriteParameters</a>
+<a href="wdf.iwdfiorequest_getwriteparameters">IWDFIoRequest::GetWriteParameters</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_getwriteparameters">GetWriteParameters</a> method retrieves the request parameters for a write-type request.</p>
@@ -233,7 +233,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a>
+<a href="wdf.iwdfiorequest_impersonate">IWDFIoRequest::Impersonate</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_impersonate">Impersonate</a> method registers the interface for the method that the framework should call for impersonation.</p>
@@ -241,7 +241,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559139">IWDFIoRequest::IsFrom32BitProcess</a>
+<a href="wdf.iwdfiorequest_isfrom32bitprocess">IWDFIoRequest::IsFrom32BitProcess</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_isfrom32bitprocess">IsFrom32BitProcess</a> method determines whether a request originated from a 32-bit process.</p>
@@ -249,7 +249,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559146">IWDFIoRequest::MarkCancelable</a>
+<a href="wdf.iwdfiorequest_markcancelable">IWDFIoRequest::MarkCancelable</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_markcancelable">MarkCancelable</a> method enables the canceling of the I/O request.</p>
@@ -257,7 +257,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
+<a href="wdf.iwdfiorequest_send">IWDFIoRequest::Send</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_send">Send</a> method sends a request to the specified I/O target.</p>
@@ -265,7 +265,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559153">IWDFIoRequest::SetCompletionCallback</a>
+<a href="wdf.iwdfiorequest_setcompletioncallback">IWDFIoRequest::SetCompletionCallback</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_setcompletioncallback">SetCompletionCallback</a> method registers the interface for the <a href="wdf.irequestcallbackrequestcompletion_oncompletion">OnCompletion</a> method that the framework should call when an I/O request completes.</p>
@@ -273,7 +273,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559159">IWDFIoRequest::SetInformation</a>
+<a href="wdf.iwdfiorequest_setinformation">IWDFIoRequest::SetInformation</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_setinformation">SetInformation</a> method sets the size of information for a request.</p>
@@ -281,7 +281,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559163">IWDFIoRequest::UnmarkCancelable</a>
+<a href="wdf.iwdfiorequest_unmarkcancelable">IWDFIoRequest::UnmarkCancelable</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest_unmarkcancelable">UnmarkCancelable</a> method disables the canceling of an I/O request.</p>
@@ -289,7 +289,7 @@ req.product: Windows 10 or later.
 </tr>
 </table><p>The <a href="wdf.iwdfiorequest_cancelsentrequest">CancelSentRequest</a> method attempts to cancel the I/O request that the driver previously submitted to an I/O target.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406719">Complete</a> method completes an I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest_complete">Complete</a> method completes an I/O request.</p>
 
 <p>The <a href="wdf.iwdfiorequest_completewithinformation">CompleteWithInformation</a> method completes a request with the supplied information.</p>
 
@@ -303,7 +303,7 @@ req.product: Windows 10 or later.
 
 <p>The <a href="wdf.iwdfiorequest_getdeviceiocontrolparameters">GetDeviceIoControlParameters</a> method retrieves the request parameters for a device I/O control-type request.</p>
 
-<p>The <a href="wdf.iwdfiorequest_getfileobject">GetFileObject</a> method retrieves a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a> interface that is associated with an I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest_getfileobject">GetFileObject</a> method retrieves a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface that is associated with an I/O request.</p>
 
 <p>The <a href="wdf.iwdfiorequest_getinputmemory">GetInputMemory</a> method retrieves the memory object that represents the input buffer in an I/O request.</p>
 
@@ -315,7 +315,7 @@ req.product: Windows 10 or later.
 
 <p>The <a href="wdf.iwdfiorequest_getrequestorprocessid">GetRequestorProcessId</a> method retrieves the identifier of the process that sent an I/O request.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a> method retrieves the type of operation that a request contains.</p>
+<p>The <a href="wdf.iwdfiorequest_gettype">GetType</a> method retrieves the type of operation that a request contains.</p>
 
 <p>The <a href="wdf.iwdfiorequest_getwriteparameters">GetWriteParameters</a> method retrieves the request parameters for a write-type request.</p>
 

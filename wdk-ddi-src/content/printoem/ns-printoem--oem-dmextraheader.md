@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The OEM_DMEXTRAHEADER structure must be used to define the first members of a set of private <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure members.</p>
+<p>The OEM_DMEXTRAHEADER structure must be used to define the first members of a set of private <a href="display.devmodew">DEVMODEW</a> structure members.</p>
 
 
 ## -syntax
@@ -66,7 +66,7 @@ typedef struct _OEM_DMEXTRAHEADER {
 ### -field <b>dwSignature</b>
 
 <dd>
-<p>Unique signature value that the plug-in also returns when its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554178">IPrintOemUI::GetInfo</a> method receives the OEMGI_GETSIGNATURE flag.</p>
+<p>Unique signature value that the plug-in also returns when its <a href="print.iprintoemui_getinfo">IPrintOemUI::GetInfo</a> method receives the OEMGI_GETSIGNATURE flag.</p>
 </dd>
 
 ### -field <b>dwVersion</b>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>QUERY_FILE_LAYOUT_INPUT</b> structure selects which file layout entries are returned from a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a> request.</p>
+<p>The <b>QUERY_FILE_LAYOUT_INPUT</b> structure selects which file layout entries are returned from a <a href="ifsk.fsctl_query_file_layout">FSCTL_QUERY_FILE_LAYOUT</a> request.</p>
 
 
 ## -syntax
@@ -251,11 +251,11 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 </dl>
 
 ## -remarks
-<p>The <b>QUERY_FILE_LAYOUT_RESTART</b> flag is set on the first <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a> request. If filter ranges are included in the request, they are cached when <b>QUERY_FILE_LAYOUT_RESTART</b> is set. Further requests will return layout file entries until the end of the volume or until filter ranges are exhausted.</p>
+<p>The <b>QUERY_FILE_LAYOUT_RESTART</b> flag is set on the first <a href="ifsk.fsctl_query_file_layout">FSCTL_QUERY_FILE_LAYOUT</a> request. If filter ranges are included in the request, they are cached when <b>QUERY_FILE_LAYOUT_RESTART</b> is set. Further requests will return layout file entries until the end of the volume or until filter ranges are exhausted.</p>
 
 <p>If <b>QUERY_FILE_LAYOUT_RESTART</b> is set again for the same volume, the file layout position is reset to the beginning of the volume. Additionally, the filter ranges are re-cached and their  evaluation order is reset to the first range. </p>
 
-<p>The file layout entries are returned in the output buffer following a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439461">QUERY_FILE_LAYOUT_OUTPUT</a> structure.</p>
+<p>The file layout entries are returned in the output buffer following a <a href="..\ntifs\ns-ntifs--query-file-layout-output.md">QUERY_FILE_LAYOUT_OUTPUT</a> structure.</p>
 
 <p>When <b>FilterType</b> is <b>QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS</b>, the <b>ClusterRanges</b> member of the <b>Filter</b> union is used for range filtering. Otherwise, if <b>FilterType</b> is <b>QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID</b>, the <b>FileReferenceRanges</b> member is used for range filtering.</p>
 
@@ -284,10 +284,10 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a>
+<a href="ifsk.fsctl_query_file_layout">FSCTL_QUERY_FILE_LAYOUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439461">QUERY_FILE_LAYOUT_OUTPUT</a>
+<a href="..\ntifs\ns-ntifs--query-file-layout-output.md">QUERY_FILE_LAYOUT_OUTPUT</a>
 </dt>
 </dl>
 <p> </p>

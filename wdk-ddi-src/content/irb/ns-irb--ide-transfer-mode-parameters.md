@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The IDE_TRANSFER_MODE_PARAMETERS structure is used in conjunction with the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550143">AtaControllerTransferModeSelect</a> routine to set the transfer mode parameters on a channel.</p>
+<p>The IDE_TRANSFER_MODE_PARAMETERS structure is used in conjunction with the miniport driver's <a href="storage.atacontrollertransfermodeselect">AtaControllerTransferModeSelect</a> routine to set the transfer mode parameters on a channel.</p>
 
 
 ## -syntax
@@ -68,7 +68,7 @@ typedef struct _IDE_TRANSFER_MODE_PARAMETERS {
 ### -field <b>DeviceType</b>
 
 <dd>
-<p>Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559096">IDE_DEVICE_TYPE</a> that indicates the type of device. The miniport driver should not select a transfer mode if the device type is <b>DeviceNotExist</b>.</p>
+<p>Contains an enumeration value of type <a href="..\irb\ne-irb-ide-device-type.md">IDE_DEVICE_TYPE</a> that indicates the type of device. The miniport driver should not select a transfer mode if the device type is <b>DeviceNotExist</b>.</p>
 </dd>
 
 ### -field <b>IoReadySupported</b>
@@ -158,10 +158,10 @@ typedef struct _IDE_TRANSFER_MODE_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550143">AtaControllerTransferModeSelect</a>
+<a href="storage.atacontrollertransfermodeselect">AtaControllerTransferModeSelect</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559096">IDE_DEVICE_TYPE</a>
+<a href="..\irb\ne-irb-ide-device-type.md">IDE_DEVICE_TYPE</a>
 </dt>
 </dl>
 <p> </p>

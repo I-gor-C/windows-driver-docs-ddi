@@ -81,7 +81,7 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562971">MSiSCSI_AdapterEvent WMI Class</a>
+<a href="storage.msiscsi_adapterevent_wmi_class">MSiSCSI_AdapterEvent WMI Class</a>
 </dt>
 </dl>
 <p> </p>

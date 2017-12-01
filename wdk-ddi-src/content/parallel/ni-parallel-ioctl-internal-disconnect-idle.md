@@ -119,16 +119,16 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543975">IOCTL_IEEE1284_GET_MODE</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl-ieee1284-get-mode.md">IOCTL_IEEE1284_GET_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543978">IOCTL_IEEE1284_NEGOTIATE</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl-ieee1284-negotiate.md">IOCTL_IEEE1284_NEGOTIATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544061">IOCTL_PAR_GET_DEFAULT_MODES</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl-par-get-default-modes.md">IOCTL_PAR_GET_DEFAULT_MODES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544067">IOCTL_PAR_GET_DEVICE_CAPS</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl-par-get-device-caps.md">IOCTL_PAR_GET_DEVICE_CAPS</a>
 </dt>
 </dl>
 <p> </p>

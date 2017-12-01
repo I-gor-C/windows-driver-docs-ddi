@@ -123,7 +123,7 @@ typedef enum D3D11_1DDI_CONTENT_PROTECTION_CAPS {
 ### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_SEQUENTIAL_CTR_IV"></a><a id="d3d11_1ddi_content_protection_caps_sequential_ctr_iv"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_SEQUENTIAL_CTR_IV</b>
 
 <dd>
-<p>If the encryption type is <b>D3D11_1DDI_CRYPTO_TYPE_AES128_CTR</b>, the application must use a sequential count in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406334">D3D11_1DDI_AES_CTR_IV</a> structure. For more information, see the Remarks for the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-encryptionblt.md">EncryptionBlt(D3D11_1)</a> function.</p>
+<p>If the encryption type is <b>D3D11_1DDI_CRYPTO_TYPE_AES128_CTR</b>, the application must use a sequential count in the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-aes-ctr-iv.md">D3D11_1DDI_AES_CTR_IV</a> structure. For more information, see the Remarks for the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-encryptionblt.md">EncryptionBlt(D3D11_1)</a> function.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPT_SLICEDATA_ONLY"></a><a id="d3d11_1ddi_content_protection_caps_encrypt_slicedata_only"></a><b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPT_SLICEDATA_ONLY</b>
@@ -159,7 +159,7 @@ typedef enum D3D11_1DDI_CONTENT_PROTECTION_CAPS {
 ### -field <a id="D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_TRANSITION"></a><a id="d3dwddm2_0ddi_content_protection_caps_hardware_protected_memory_transition"></a><b>D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_TRANSITION</b>
 
 <dd>
-<p>The hardware or driver can transition allocations between protected and unprotected states by calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn906369">SetHardwareProtection</a>  without requiring the allocation to be re-created.</p>
+<p>The hardware or driver can transition allocations between protected and unprotected states by calling <a href="display.sethardwareprotection">SetHardwareProtection</a>  without requiring the allocation to be re-created.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
@@ -218,7 +218,7 @@ typedef enum D3D11_1DDI_CONTENT_PROTECTION_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406334">D3D11_1DDI_AES_CTR_IV</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-aes-ctr-iv.md">D3D11_1DDI_AES_CTR_IV</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-decryptionblt.md">DecryptionBlt(D3D11_1)</a>
@@ -227,7 +227,7 @@ typedef enum D3D11_1DDI_CONTENT_PROTECTION_CAPS {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-encryptionblt.md">EncryptionBlt(D3D11_1)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906369">SetHardwareProtection</a>
+<a href="display.sethardwareprotection">SetHardwareProtection</a>
 </dt>
 </dl>
 <p> </p>

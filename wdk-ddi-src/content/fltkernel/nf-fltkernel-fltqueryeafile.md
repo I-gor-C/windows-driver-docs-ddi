@@ -78,7 +78,7 @@ NTSTATUS FltQueryEaFile(
 ### -param <i>ReturnedEaData</i> [out]
 
 <dd>
-<p>Pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a>-structured input buffer where the extended attribute values are to be returned. </p>
+<p>Pointer to a caller-supplied <a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a>-structured input buffer where the extended attribute values are to be returned. </p>
 </dd>
 
 ### -param <i>Length</i> [in]
@@ -96,7 +96,7 @@ NTSTATUS FltQueryEaFile(
 ### -param <i>EaList</i> [in, optional]
 
 <dd>
-<p>Pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff540295">FILE_GET_EA_INFORMATION</a>-structured input buffer specifying the extended attributes to be queried. This parameter is optional and can be <b>NULL</b>. </p>
+<p>Pointer to a caller-supplied <a href="..\ntifs\ns-ntifs--file-get-ea-information.md">FILE_GET_EA_INFORMATION</a>-structured input buffer specifying the extended attributes to be queried. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
 ### -param <i>EaListLength</i> [in]
@@ -201,16 +201,16 @@ NTSTATUS FltQueryEaFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a>
+<a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540295">FILE_GET_EA_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-get-ea-information.md">FILE_GET_EA_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544500">FltSetEaFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltseteafile.md">FltSetEaFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548252">IoCheckEaBufferValidity</a>
+<a href="..\ntifs\nf-ntifs-iocheckeabuffervalidity.md">IoCheckEaBufferValidity</a>
 </dt>
 </dl>
 <p> </p>

@@ -41,8 +41,8 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-   The <b>USBD_CreateConfigurationRequestEx</b> routine allocates and formats a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to select a configuration for a USB device.</p>
-<p><b>USBD_CreateConfigurationRequestEx</b> replaces <a href="https://msdn.microsoft.com/library/windows/hardware/ff539025">USBD_CreateConfigurationRequest</a>.</p>
+   The <b>USBD_CreateConfigurationRequestEx</b> routine allocates and formats a <a href="..\usb\ns-usb--urb.md">URB</a> to select a configuration for a USB device.</p>
+<p><b>USBD_CreateConfigurationRequestEx</b> replaces <a href="..\usbdlib\nf-usbdlib-usbd-createconfigurationrequest.md">USBD_CreateConfigurationRequest</a>.</p>
 
 
 ## -syntax
@@ -61,37 +61,27 @@ PURB USBD_CreateConfigurationRequestEx(
 ### -param <i>ConfigurationDescriptor</i> [in]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff539241">USB_CONFIGURATION_DESCRIPTOR</a> structure that contains the configuration descriptor for the configuration to be selected. Typically, the client driver submits a URB  of the type  URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a>)     to retrieve information about configurations, interfaces, endpoints, the vendor, and class-specific descriptors from a USB device. When the client driver specifies USB_CONFIGURATION_DESCRIPTOR_TYPE as the descriptor type, the request retrieves all device information in a <b>USB_CONFIGURATION_DESCRIPTOR</b> structure. The driver then passes the received pointer to    the <b>USB_CONFIGURATION_DESCRIPTOR</b> structure in the <i>ConfigurationDescriptor</i> parameter.</p>
+<p>Pointer to a caller-allocated <a href="..\usbspec\ns-usbspec--usb-configuration-descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> structure that contains the configuration descriptor for the configuration to be selected. Typically, the client driver submits a URB  of the type  URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE (see <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a>)     to retrieve information about configurations, interfaces, endpoints, the vendor, and class-specific descriptors from a USB device. When the client driver specifies USB_CONFIGURATION_DESCRIPTOR_TYPE as the descriptor type, the request retrieves all device information in a <b>USB_CONFIGURATION_DESCRIPTOR</b> structure. The driver then passes the received pointer to    the <b>USB_CONFIGURATION_DESCRIPTOR</b> structure in the <i>ConfigurationDescriptor</i> parameter.</p>
 </dd>
 
 ### -param <i>InterfaceList</i> [in]
 
 <dd>
-<p>Pointer to the first element of a caller-allocated array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539076">USBD_INTERFACE_LIST_ENTRY</a>    structures. The length of the array depends on the number of interfaces in the configuration descriptor. The number  of elements in the array  must be one more than the number of interfaces in the configuration. Initialize the array by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff563610">RtlZeroMemory</a>. The <b>InterfaceDescriptor</b> member of the last element in the array must be set to <b>NULL</b>. </p>
+<p>Pointer to the first element of a caller-allocated array of <a href="..\usbdlib\ns-usbdlib--usbd-interface-list-entry.md">USBD_INTERFACE_LIST_ENTRY</a>    structures. The length of the array depends on the number of interfaces in the configuration descriptor. The number  of elements in the array  must be one more than the number of interfaces in the configuration. Initialize the array by calling <a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>. The <b>InterfaceDescriptor</b> member of the last element in the array must be set to <b>NULL</b>. </p>
 </dd>
 </dl>
 
 ## -returns
-<p><b>USBD_CreateConfigurationRequestEx</b> allocates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure, formats it for the URB_FUNCTION_SELECT_CONFIGURATION request (select-configuration request), and returns a pointer to the <b>URB</b>. The client driver can then use the returned <b>URB</b> to send the select-configuration request  to the host controller driver to set the configuration. You must free the <b>URB</b> when you have finished using it.</p>
+<p><b>USBD_CreateConfigurationRequestEx</b> allocates a <a href="..\usb\ns-usb--urb.md">URB</a> structure, formats it for the URB_FUNCTION_SELECT_CONFIGURATION request (select-configuration request), and returns a pointer to the <b>URB</b>. The client driver can then use the returned <b>URB</b> to send the select-configuration request  to the host controller driver to set the configuration. You must free the <b>URB</b> when you have finished using it.</p>
 
 ## -remarks
-<p>For information about how to build a select-configuration reqeuest and code example, see <a href="https://msdn.microsoft.com/library/windows/hardware/gg615081">How to Select a Configuration for a USB Device</a>.</p>
+<p>For information about how to build a select-configuration reqeuest and code example, see <a href="buses.how_to_select_a_configuration_for_a_usb_device">How to Select a Configuration for a USB Device</a>.</p>
 
-<p>The returned value is a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure that you can use to submit a select-configuration request to the host controller driver to set the specified configuration.</p>
+<p>The returned value is a pointer to the <a href="..\usb\ns-usb--urb.md">URB</a> structure that you can use to submit a select-configuration request to the host controller driver to set the specified configuration.</p>
 
-<p>After the USB driver stack completes the select-configuration request, you can inspect the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> structures.  The <b>Pipes</b> member of <b>USBD_INTERFACE_INFORMATION</b> points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539114">USBD_PIPE_INFORMATION</a> structures. The USB bus driver fills the array of <b>USBD_PIPE_INFORMATION</b> structures with information about the  pipes associated with the endpoints of the interface. The client driver can obtain pipe handles from the <code>Pipes[i].PipeHandle</code> and use them to send I/O requests to specific pipes. </p>
+<p>After the USB driver stack completes the select-configuration request, you can inspect the  <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structures.  The <b>Pipes</b> member of <b>USBD_INTERFACE_INFORMATION</b> points to an array of <a href="..\usb\ns-usb--usbd-pipe-information.md">USBD_PIPE_INFORMATION</a> structures. The USB bus driver fills the array of <b>USBD_PIPE_INFORMATION</b> structures with information about the  pipes associated with the endpoints of the interface. The client driver can obtain pipe handles from the <code>Pipes[i].PipeHandle</code> and use them to send I/O requests to specific pipes. </p>
 
-<p>After you have completed all operations with the returned <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>, you must free the <b>URB</b> by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a>. </p>
-
-<p>You can  allocate the configuration descriptor and the array from nonpaged or paged pool. Callers of this routine can run at IRQL &lt;= DISPATCH_LEVEL if the memory pointed to by <i>ConfigurationDescriptor</i> and <i>InterfaceList</i> is allocated from nonpaged pool. Otherwise, callers must run at IRQL &lt; DISPATCH_LEVEL.</p>
-
-<p>For information about how to build a select-configuration reqeuest and code example, see <a href="https://msdn.microsoft.com/library/windows/hardware/gg615081">How to Select a Configuration for a USB Device</a>.</p>
-
-<p>The returned value is a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure that you can use to submit a select-configuration request to the host controller driver to set the specified configuration.</p>
-
-<p>After the USB driver stack completes the select-configuration request, you can inspect the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> structures.  The <b>Pipes</b> member of <b>USBD_INTERFACE_INFORMATION</b> points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539114">USBD_PIPE_INFORMATION</a> structures. The USB bus driver fills the array of <b>USBD_PIPE_INFORMATION</b> structures with information about the  pipes associated with the endpoints of the interface. The client driver can obtain pipe handles from the <code>Pipes[i].PipeHandle</code> and use them to send I/O requests to specific pipes. </p>
-
-<p>After you have completed all operations with the returned <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>, you must free the <b>URB</b> by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a>. </p>
+<p>After you have completed all operations with the returned <a href="..\usb\ns-usb--urb.md">URB</a>, you must free the <b>URB</b> by calling <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>. </p>
 
 <p>You can  allocate the configuration descriptor and the array from nonpaged or paged pool. Callers of this routine can run at IRQL &lt;= DISPATCH_LEVEL if the memory pointed to by <i>ConfigurationDescriptor</i> and <i>InterfaceList</i> is allocated from nonpaged pool. Otherwise, callers must run at IRQL &lt; DISPATCH_LEVEL.</p>
 
@@ -140,13 +130,13 @@ PURB USBD_CreateConfigurationRequestEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg615081">How to Select a Configuration for a USB Device</a>
+<a href="buses.how_to_select_a_configuration_for_a_usb_device">How to Select a Configuration for a USB Device</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a>
+<a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540422">_URB_SELECT_CONFIGURATION</a>
+<a href="buses._urb_select_configuration">_URB_SELECT_CONFIGURATION</a>
 </dt>
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 </dl>

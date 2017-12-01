@@ -7,7 +7,7 @@ old-location: debugger\getcurrentthreaddataoffset.htm
 old-project: debugger
 ms.assetid: 7837c049-fdca-4f90-9f38-2ec91ed8703b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects, GetCurrentThreadDataOffset, IDebugSystemObjects::GetCurrentThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,13 +69,7 @@ HRESULT GetCurrentThreadDataOffset(
 <p> </p>
 
 ## -remarks
-<p>In user-mode debugging, the location returned is of the thread environment block (TEB) for the current thread.  This is the same location returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff546549">GetCurrentThreadTeb</a>.</p>
-
-<p>In kernel-mode debugging, the location returned is of the KTHREAD structure of the system thread that was executing on the processor represented by the current thread when the last event occurred.</p>
-
-<p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on the KTHREAD and TEB structures, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.</p>
-
-<p>In user-mode debugging, the location returned is of the thread environment block (TEB) for the current thread.  This is the same location returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff546549">GetCurrentThreadTeb</a>.</p>
+<p>In user-mode debugging, the location returned is of the thread environment block (TEB) for the current thread.  This is the same location returned by <a href="debugger.getcurrentthreadteb">GetCurrentThreadTeb</a>.</p>
 
 <p>In kernel-mode debugging, the location returned is of the KTHREAD structure of the system thread that was executing on the processor represented by the current thread when the last event occurred.</p>
 

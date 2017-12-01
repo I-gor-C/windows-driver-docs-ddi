@@ -57,7 +57,7 @@ typedef struct _D3DDDI_EXECUTIONSTATEESCAPE {
 ### -field <b>State</b>
 
 <dd>
-<p>[Out] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn482416">D3DDDI_DEVICEEXECUTION_STATE</a> that indicates the state of the device.</p>
+<p>[Out] A value of type <a href="..\d3dumddi\ne-d3dumddi--d3dddi-deviceexecution-state.md">D3DDDI_DEVICEEXECUTION_STATE</a> that indicates the state of the device.</p>
 </dd>
 </dl>
 
@@ -97,7 +97,7 @@ typedef struct _D3DDDI_EXECUTIONSTATEESCAPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn482416">D3DDDI_DEVICEEXECUTION_STATE</a>
+<a href="..\d3dumddi\ne-d3dumddi--d3dddi-deviceexecution-state.md">D3DDDI_DEVICEEXECUTION_STATE</a>
 </dt>
 </dl>
 <p> </p>

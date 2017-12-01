@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>An array of OPTPARAM structures is used by CPSUI applications (including printer interface DLLs) for describing all the parameter values associated with a <a href="https://msdn.microsoft.com/572330d6-1a1b-46fd-bfb4-be2b0990bca4">property sheet option</a>. The array's address is included in an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559670">OPTTYPE</a> structure.</p>
+<p>An array of OPTPARAM structures is used by CPSUI applications (including printer interface DLLs) for describing all the parameter values associated with a <a href="https://msdn.microsoft.com/572330d6-1a1b-46fd-bfb4-be2b0990bca4">property sheet option</a>. The array's address is included in an <a href="..\compstui\ns-compstui--opttype.md">OPTTYPE</a> structure.</p>
 
 
 ## -syntax

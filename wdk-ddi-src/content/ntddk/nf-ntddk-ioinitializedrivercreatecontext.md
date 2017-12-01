@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>IoInitializeDriverCreateContext</b> routine initializes a caller-allocated variable of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff548565">IO_DRIVER_CREATE_CONTEXT</a>.</p>
+<p>The <b>IoInitializeDriverCreateContext</b> routine initializes a caller-allocated variable of type <a href="..\ntddk\ns-ntddk--io-driver-create-context.md">IO_DRIVER_CREATE_CONTEXT</a>.</p>
 
 
 ## -syntax
@@ -65,17 +65,11 @@ VOID IoInitializeDriverCreateContext(
 <p>None</p>
 
 ## -remarks
-<p>The <b>IoInitializeDriverCreateContext</b> routine initializes a caller-allocated IO_DRIVER_CREATE_CONTEXT structure used in passing additional create parameters to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541939">FltCreateFileEx2</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548283">IoCreateFileEx</a> routines.</p>
+<p>The <b>IoInitializeDriverCreateContext</b> routine initializes a caller-allocated IO_DRIVER_CREATE_CONTEXT structure used in passing additional create parameters to the <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> and <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a> routines.</p>
 
 <p>Callers of <b>IoInitializeDriverCreateContext</b> can be running at any IRQL if the <i>DriverContext</i> block is in nonpaged pool. Otherwise, the caller must be running at IRQL &lt;= APC_LEVEL.</p>
 
-<p>Starting in Windows 10, version 1607, this routine sets the <b>SiloContext</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548565">IO_DRIVER_CREATE_CONTEXT</a> to <b>IO_USE_AMBIENT_SILO</b>.</p>
-
-<p>The <b>IoInitializeDriverCreateContext</b> routine initializes a caller-allocated IO_DRIVER_CREATE_CONTEXT structure used in passing additional create parameters to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541939">FltCreateFileEx2</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548283">IoCreateFileEx</a> routines.</p>
-
-<p>Callers of <b>IoInitializeDriverCreateContext</b> can be running at any IRQL if the <i>DriverContext</i> block is in nonpaged pool. Otherwise, the caller must be running at IRQL &lt;= APC_LEVEL.</p>
-
-<p>Starting in Windows 10, version 1607, this routine sets the <b>SiloContext</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548565">IO_DRIVER_CREATE_CONTEXT</a> to <b>IO_USE_AMBIENT_SILO</b>.</p>
+<p>Starting in Windows 10, version 1607, this routine sets the <b>SiloContext</b> member of <a href="..\ntddk\ns-ntddk--io-driver-create-context.md">IO_DRIVER_CREATE_CONTEXT</a> to <b>IO_USE_AMBIENT_SILO</b>.</p>
 
 ## -requirements
 <table>
@@ -112,10 +106,10 @@ VOID IoInitializeDriverCreateContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541939">FltCreateFileEx2</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548283">IoCreateFileEx</a>
+<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
 </dt>
 </dl>
 <p> </p>

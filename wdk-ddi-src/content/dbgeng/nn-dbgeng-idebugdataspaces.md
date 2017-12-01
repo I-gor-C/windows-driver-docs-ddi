@@ -7,7 +7,7 @@ old-location: debugger\idebugdataspaces.htm
 old-project: debugger
 ms.assetid: 9477821c-4f4f-4ea2-9968-d43f87c496b2
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,7 +96,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539089">CheckLowMemory</a>
+<a href="debugger.checklowmemory">CheckLowMemory</a>
 </td>
 <td align="left" width="63%">
 <p>Checks for memory corruption in the low 4 GB of memory.</p>
@@ -104,7 +104,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553519">ReadBusData</a>
+<a href="debugger.readbusdata">ReadBusData</a>
 </td>
 <td align="left" width="63%">
 <p>Reads data from a system bus.</p>
@@ -112,7 +112,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553524">ReadControl</a>
+<a href="debugger.readcontrol">ReadControl</a>
 </td>
 <td align="left" width="63%">
 <p>Reads implementation-specific system data.</p>
@@ -120,7 +120,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553536">ReadDebuggerData</a>
+<a href="debugger.readdebuggerdata">ReadDebuggerData</a>
 </td>
 <td align="left" width="63%">
 <p>Returns information about the target that the debugger engine has queried or determined during the current session.</p>
@@ -128,7 +128,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553573">ReadIo</a>
+<a href="debugger.readio">ReadIo</a>
 </td>
 <td align="left" width="63%">
 <p>Reads from the system and bus I/O memory.</p>
@@ -136,7 +136,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554292">ReadMsr</a>
+<a href="..\wdbgexts\nf-wdbgexts-readmsr.md">ReadMsr</a>
 </td>
 <td align="left" width="63%">
 <p>Reads a specified Model-Specific Register (MSR).</p>
@@ -144,7 +144,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554313">ReadPhysical</a>
+<a href="..\wdbgexts\nf-wdbgexts-readphysical.md">ReadPhysical</a>
 </td>
 <td align="left" width="63%">
 <p>Reads the target's memory from the specified physical address.</p>
@@ -152,7 +152,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554323">ReadPointersVirtual</a>
+<a href="debugger.readpointersvirtual">ReadPointersVirtual</a>
 </td>
 <td align="left" width="63%">
 <p> Reads pointers from the target's virtual address space.
@@ -161,7 +161,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554326">ReadProcessorSystemData</a>
+<a href="debugger.readprocessorsystemdata">ReadProcessorSystemData</a>
 </td>
 <td align="left" width="63%">
 <p>Returns data about the specified processor.</p>
@@ -169,7 +169,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554359">ReadVirtual</a>
+<a href="debugger.readvirtual">ReadVirtual</a>
 </td>
 <td align="left" width="63%">
 <p>Reads memory from the target's virtual address space.</p>
@@ -177,7 +177,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554361">ReadVirtualUncached</a>
+<a href="debugger.readvirtualuncached">ReadVirtualUncached</a>
 </td>
 <td align="left" width="63%">
 <p>Reads memory from the target's virtual address space.</p>
@@ -185,7 +185,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554747">SearchVirtual</a>
+<a href="debugger.searchvirtual">SearchVirtual</a>
 </td>
 <td align="left" width="63%">
 <p>Searches the target's virtual memory for a specified pattern of bytes.</p>
@@ -193,7 +193,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561371">WriteBusData</a>
+<a href="debugger.writebusdata">WriteBusData</a>
 </td>
 <td align="left" width="63%">
 <p>Writes data to a system bus.</p>
@@ -201,7 +201,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561374">WriteControl</a>
+<a href="debugger.writecontrol">WriteControl</a>
 </td>
 <td align="left" width="63%">
 <p>Writes implementation-specific system data.</p>
@@ -209,7 +209,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561402">WriteIo</a>
+<a href="debugger.writeio">WriteIo</a>
 </td>
 <td align="left" width="63%">
 <p>Writes to the system and bus I/O memory.</p>
@@ -217,7 +217,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561424">WriteMsr</a>
+<a href="..\wdbgexts\nf-wdbgexts-writemsr.md">WriteMsr</a>
 </td>
 <td align="left" width="63%">
 <p>Writes a value to the specified Model-Specific Register (MSR).</p>
@@ -225,7 +225,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561432">WritePhysical</a>
+<a href="..\wdbgexts\nf-wdbgexts-writephysical.md">WritePhysical</a>
 </td>
 <td align="left" width="63%">
 <p>Writes data to the specified physical address in the target's memory.</p>
@@ -233,7 +233,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561451">WritePointersVirtual</a>
+<a href="debugger.writepointersvirtual">WritePointersVirtual</a>
 </td>
 <td align="left" width="63%">
 <p>Writes pointers to the target's virtual address space.</p>
@@ -241,7 +241,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561468">WriteVirtual</a>
+<a href="debugger.writevirtual">WriteVirtual</a>
 </td>
 <td align="left" width="63%">
 <p>Writes data to the target's virtual address space.</p>
@@ -249,7 +249,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561473">WriteVirtualUncached</a>
+<a href="debugger.writevirtualuncached">WriteVirtualUncached</a>
 </td>
 <td align="left" width="63%">
 <p>Writes data to the target's virtual address space.</p>
@@ -318,15 +318,15 @@ req.iface: IDebugSystemObjects4
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550531">IDebugDataSpaces2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces2.md">IDebugDataSpaces2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550537">IDebugDataSpaces3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces3.md">IDebugDataSpaces3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550546">IDebugDataSpaces4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces interface%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces interface%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

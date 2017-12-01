@@ -72,43 +72,43 @@ typedef struct D3D11DDIARG_CREATERESOURCE {
 ### -field <b>pMipInfoList</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541845">D3D10DDI_MIPINFO</a> structures that contains dimensions for MIP levels. For resource formats where a single pixel or texel cannot be referenced directly with a byte address, the dimensions of the physical resource are typically larger or equal to the texel dimensions, in order to satisfy the necessary space requirements. For example, to create a fully mipped BC1 Texture2D, where the most detailed level is 8x8, the <b>pMipInfoList</b> array is:  { { 8, 8, 1, 8, 8, 1 }, { 4, 4, 1, 4, 4, 1 }, { 2, 2, 1, 4, 4, 1 }, { 1, 1, 1, 4, 4, 1 } }. </p>
+<p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-mipinfo.md">D3D10DDI_MIPINFO</a> structures that contains dimensions for MIP levels. For resource formats where a single pixel or texel cannot be referenced directly with a byte address, the dimensions of the physical resource are typically larger or equal to the texel dimensions, in order to satisfy the necessary space requirements. For example, to create a fully mipped BC1 Texture2D, where the most detailed level is 8x8, the <b>pMipInfoList</b> array is:  { { 8, 8, 1, 8, 8, 1 }, { 4, 4, 1, 4, 4, 1 }, { 2, 2, 1, 4, 4, 1 }, { 1, 1, 1, 4, 4, 1 } }. </p>
 </dd>
 
 ### -field <b>pInitialDataUP</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541909">D3D10_DDIARG_SUBRESOURCE_UP</a> structures that provides initialization information for the resource's list of subresources.</p>
+<p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddiarg-subresource-up.md">D3D10_DDIARG_SUBRESOURCE_UP</a> structures that provides initialization information for the resource's list of subresources.</p>
 </dd>
 
 ### -field <b>ResourceDimension</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541810">D3D10DDIRESOURCE_TYPE</a> that indicates the resource type and dimensionality.</p>
+<p>[in] A value of type <a href="display.d3d10ddiresource_type">D3D10DDIRESOURCE_TYPE</a> that indicates the resource type and dimensionality.</p>
 </dd>
 
 ### -field <b>Usage</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff542008">D3D10_DDI_RESOURCE_USAGE</a> that indicates how the resource is used.</p>
+<p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-usage.md">D3D10_DDI_RESOURCE_USAGE</a> that indicates how the resource is used.</p>
 </dd>
 
 ### -field <b>BindFlags</b>
 
 <dd>
-<p>[in] A valid bitwise OR of values of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541995">D3D10_DDI_RESOURCE_BIND_FLAG</a> that indicates how the resource is bound.</p>
+<p>[in] A valid bitwise OR of values of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-bind-flag.md">D3D10_DDI_RESOURCE_BIND_FLAG</a> that indicates how the resource is bound.</p>
 </dd>
 
 ### -field <b>MapFlags</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541957">D3D10_DDI_MAP</a> that indicates the access level to map to the resource.</p>
+<p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-map.md">D3D10_DDI_MAP</a> that indicates the access level to map to the resource.</p>
 </dd>
 
 ### -field <b>MiscFlags</b>
 
 <dd>
-<p>[in] A valid bitwise OR of values of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff542004">D3D10_DDI_RESOURCE_MISC_FLAG</a> that indicates miscellaneous information about the resource.</p>
+<p>[in] A valid bitwise OR of values of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-misc-flag.md">D3D10_DDI_RESOURCE_MISC_FLAG</a> that indicates miscellaneous information about the resource.</p>
 </dd>
 
 ### -field <b>Format</b>
@@ -139,7 +139,7 @@ typedef struct D3D11DDIARG_CREATERESOURCE {
 ### -field <b>pPrimaryDesc</b>
 
 <dd>
-<p>[in, out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557511">DXGI_DDI_PRIMARY_DESC</a> structure that describes a resource that is used as a primary.</p>
+<p>[in, out] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-primary-desc.md">DXGI_DDI_PRIMARY_DESC</a> structure that describes a resource that is used as a primary.</p>
 <p>The Microsoft Direct3D runtime sets <b>pPrimaryDesc</b> to a non-<b>NULL</b> value only if the D3D10_DDI_BIND_PRESENT bit is set in the <b>BindFlags</b> member; however, even if D3D10_DDI_BIND_PRESENT is set, the runtime does not always set <b>pPrimaryDesc</b> to non-<b>NULL</b>. Setting <b>pPrimaryDesc</b> to non-<b>NULL</b> indicates that the runtime will use the created resource as a primary (that is, the resource is scanned out to the display) and in flip-style present operations. </p>
 <p>The user-mode display driver can return the DXGI_DDI_PRIMARY_DRIVER_FLAG_NO_SCANOUT flag in the <b>DriverFlags</b> member of DXGI_DDI_PRIMARY_DESC to prevent the runtime from performing flip-style present operations. </p>
 <p>If <b>pPrimaryDesc</b> is set to <b>NULL</b>, the runtime will use the created resource in; copy-style (bit-block transfer) present operations. </p>
@@ -154,7 +154,7 @@ typedef struct D3D11DDIARG_CREATERESOURCE {
 ### -field <b>DecoderBufferType</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh451066">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> that indicates the  buffer type used by the video decoder.</p>
+<p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-ddi-video-decoder-buffer-type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> that indicates the  buffer type used by the video decoder.</p>
 <p>If the driver does not check that D3D11DDI_MINOR_HEADER_VERSION &gt;= 3 before accessing this  structure member, it should access this member only when the D3D11_DDI_BIND_DECODER flag is set in the <b>BindFlags</b> member.</p>
 </dd>
 </dl>
@@ -190,31 +190,31 @@ typedef struct D3D11DDIARG_CREATERESOURCE {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createresource.md">CreateResource(D3D11)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541957">D3D10_DDI_MAP</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-map.md">D3D10_DDI_MAP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541995">D3D10_DDI_RESOURCE_BIND_FLAG</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-bind-flag.md">D3D10_DDI_RESOURCE_BIND_FLAG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542004">D3D10_DDI_RESOURCE_MISC_FLAG</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-misc-flag.md">D3D10_DDI_RESOURCE_MISC_FLAG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542008">D3D10_DDI_RESOURCE_USAGE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-usage.md">D3D10_DDI_RESOURCE_USAGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451066">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-ddi-video-decoder-buffer-type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541909">D3D10_DDIARG_SUBRESOURCE_UP</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddiarg-subresource-up.md">D3D10_DDIARG_SUBRESOURCE_UP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541845">D3D10DDI_MIPINFO</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-mipinfo.md">D3D10DDI_MIPINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541810">D3D10DDIRESOURCE_TYPE</a>
+<a href="display.d3d10ddiresource_type">D3D10DDIRESOURCE_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557511">DXGI_DDI_PRIMARY_DESC</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-primary-desc.md">DXGI_DDI_PRIMARY_DESC</a>
 </dt>
 <dt>
 <a href="direct3ddxgi.dxgi_format">DXGI_FORMAT</a>

@@ -145,7 +145,7 @@ typedef struct _DXVADDI_VIDEOSAMPLEFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562957">DXVADDI_VIDEOSAMPLE</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videosample.md">DXVADDI_VIDEOSAMPLE</a>
 </dt>
 </dl>
 <p> </p>

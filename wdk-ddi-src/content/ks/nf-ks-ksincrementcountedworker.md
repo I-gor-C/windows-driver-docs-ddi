@@ -7,7 +7,7 @@ old-location: stream\ksincrementcountedworker.htm
 old-project: stream
 ms.assetid: 282ffc00-ca62-4729-afe3-c13ea8069a18
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsIncrementCountedWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Increments the current worker count, and optionally queues the counted work item with the worker previously created by <a href="https://msdn.microsoft.com/library/windows/hardware/ff566770">KsRegisterCountedWorker</a>.</p>
+<p>Increments the current worker count, and optionally queues the counted work item with the worker previously created by <a href="..\ks\nf-ks-ksregistercountedworker.md">KsRegisterCountedWorker</a>.</p>
 
 
 ## -syntax
@@ -65,9 +65,7 @@ ULONG KsIncrementCountedWorker(
 <p>Returns the current counter. A count of one implies that a worker was actually scheduled.</p>
 
 ## -remarks
-<p>This should be called after an addition has been made to the worker's list of tasks to perform. A corresponding call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561660">KsDecrementCountedWorker</a> should be made within the work item after each task has been completed. This may be called at DISPATCH_LEVEL.</p>
-
-<p>This should be called after an addition has been made to the worker's list of tasks to perform. A corresponding call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561660">KsDecrementCountedWorker</a> should be made within the work item after each task has been completed. This may be called at DISPATCH_LEVEL.</p>
+<p>This should be called after an addition has been made to the worker's list of tasks to perform. A corresponding call to <a href="..\ks\nf-ks-ksdecrementcountedworker.md">KsDecrementCountedWorker</a> should be made within the work item after each task has been completed. This may be called at DISPATCH_LEVEL.</p>
 
 ## -requirements
 <table>
@@ -106,12 +104,12 @@ ULONG KsIncrementCountedWorker(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561660">KsDecrementCountedWorker</a>
+<a href="..\ks\nf-ks-ksdecrementcountedworker.md">KsDecrementCountedWorker</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566770">KsRegisterCountedWorker</a>
+<a href="..\ks\nf-ks-ksregistercountedworker.md">KsRegisterCountedWorker</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsIncrementCountedWorker function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsIncrementCountedWorker function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

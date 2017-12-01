@@ -7,7 +7,7 @@ old-location: netvista\riluicctoolkitprofile_2.htm
 old-project: netvista
 ms.assetid: 8d8a6c85-474c-4e86-99a9-ac113edbe7b3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE
 ms.prod: windows-hardware
 ms.technology: windows-devices

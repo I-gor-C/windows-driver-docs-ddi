@@ -7,7 +7,7 @@ old-location: netvista\ndismovememory.htm
 old-project: netvista
 ms.assetid: 1be08720-be44-4e1b-b0ec-b4eb0a2718a0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMoveMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,28 +90,7 @@ VOID NdisMoveMemory(
     <i>Destination</i> are virtual addresses.</p>
 
 <p>If either address falls within a range of device memory that was mapped with 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh975119">NdisMMapIoSpace</a>, a miniport driver should
-    call one of the 
-    <b>Ndis..MappedMemory</b> functions instead of 
-    <b>NdisMoveMemory</b>.</p>
-
-<p>The range specified by 
-    <i>Source</i> and 
-    <i>Length</i> cannot overlap the 
-    <i>Destination</i> range.</p>
-
-<p>Callers of 
-    <b>NdisMoveMemory</b> can run at any IRQL if the given 
-    <i>Source</i> and 
-    <i>Destination</i> are resident. Otherwise, callers must be running at IRQL &lt; DISPATCH_LEVEL, as, for
-    example if either address is on the stack.</p>
-
-<p>Both 
-    <i>Source</i> and 
-    <i>Destination</i> are virtual addresses.</p>
-
-<p>If either address falls within a range of device memory that was mapped with 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh975119">NdisMMapIoSpace</a>, a miniport driver should
+    <a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>, a miniport driver should
     call one of the 
     <b>Ndis..MappedMemory</b> functions instead of 
     <b>NdisMoveMemory</b>.</p>
@@ -144,7 +123,7 @@ VOID NdisMoveMemory(
 <p>Version</p>
 </th>
 <td width="70%">
-<p> Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561808">RtlCopyMemory</a> (not <a href="https://msdn.microsoft.com/library/windows/hardware/ff562030">RtlMoveMemory</a>) instead.</p>
+<p> Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a> (not <a href="..\wdm\nf-wdm-rtlmovememory.md">RtlMoveMemory</a>) instead.</p>
 </td>
 </tr>
 <tr>
@@ -174,9 +153,9 @@ VOID NdisMoveMemory(
    NdisAllocateMemoryWithTagPriority</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975119">NdisMMapIoSpace</a>
+<a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMoveMemory function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMoveMemory function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

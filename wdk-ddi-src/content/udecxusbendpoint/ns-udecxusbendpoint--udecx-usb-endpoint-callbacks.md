@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains function pointers to endpoint callback functions implemented by the UDE client driver. Initialize this structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt628006">UDECX_USB_ENDPOINT_CALLBACKS_INIT</a>.</p>
+<p>Contains function pointers to endpoint callback functions implemented by the UDE client driver. Initialize this structure by calling <a href="buses.udecx_usb_endpoint_callbacks_init">UDECX_USB_ENDPOINT_CALLBACKS_INIT</a>.</p>
 
 
 ## -syntax
@@ -67,19 +67,19 @@ typedef struct _UDECX_USB_ENDPOINT_CALLBACKS {
 ### -field <b>EvtUsbEndpointReset</b>
 
 <dd>
-<p>Required. A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595917">EVT_UDECX_USB_ENDPOINT_RESET</a> callback function implemented by a UDE client driver.</p>
+<p>Required. A pointer to an <a href="buses.evt_udecx_usb_endpoint_reset">EVT_UDECX_USB_ENDPOINT_RESET</a> callback function implemented by a UDE client driver.</p>
 </dd>
 
 ### -field <b>EvtUsbEndpointStart</b>
 
 <dd>
-<p>Optional. A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595918">EVT_UDECX_USB_ENDPOINT_START</a> callback function implemented by a UDE client driver.</p>
+<p>Optional. A pointer to an <a href="buses.evt_udecx_usb_endpoint_start">EVT_UDECX_USB_ENDPOINT_START</a> callback function implemented by a UDE client driver.</p>
 </dd>
 
 ### -field <b>EvtUsbEndpointPurge</b>
 
 <dd>
-<p>Optional. A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595916">EVT_UDECX_USB_ENDPOINT_PURGE</a> callback function implemented by a UDE client driver.</p>
+<p>Optional. A pointer to an <a href="buses.evt_udecx_usb_endpoint_purge">EVT_UDECX_USB_ENDPOINT_PURGE</a> callback function implemented by a UDE client driver.</p>
 </dd>
 </dl>
 
@@ -103,10 +103,10 @@ typedef struct _UDECX_USB_ENDPOINT_CALLBACKS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627985">UdecxUsbEndpointInitSetCallbacks</a>
+<a href="buses.udecxusbendpointinitsetcallbacks">UdecxUsbEndpointInitSetCallbacks</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a>
+<a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>
 </dt>
 </dl>
 <p> </p>

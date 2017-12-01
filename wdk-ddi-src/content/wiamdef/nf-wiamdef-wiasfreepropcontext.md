@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>wiasFreePropContext </b>function releases the memory occupied by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure.</p>
+<p>The <b>wiasFreePropContext </b>function releases the memory occupied by a <a href="..\wiamindr_lh\ns-wiamindr-lh--wia-property-context.md">WIA_PROPERTY_CONTEXT</a> structure.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ HRESULT _stdcall wiasFreePropContext(
 ### -param <i>pContext</i> [in, out]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure that contains a property context.</p>
+<p>Pointer to a <a href="..\wiamindr_lh\ns-wiamindr-lh--wia-property-context.md">WIA_PROPERTY_CONTEXT</a> structure that contains a property context.</p>
 </dd>
 </dl>
 
@@ -123,10 +123,10 @@ HRESULT _stdcall wiasFreePropContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--wia-property-context.md">WIA_PROPERTY_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549167">wiasCreatePropContext</a>
+<a href="..\wiamdef\nf-wiamdef-wiascreatepropcontext.md">wiasCreatePropContext</a>
 </dt>
 </dl>
 <p> </p>

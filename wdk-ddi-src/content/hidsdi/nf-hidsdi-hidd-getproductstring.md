@@ -79,27 +79,15 @@ BOOLEAN __stdcall HidD_GetProductString(
 <p><b>HidD_GetProductString</b> returns <b>TRUE</b> if it successfully returns the entire NULL-terminated embedded string. Otherwise, the routine returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Only user-mode applications can call <b>HidD_GetProductString</b>. Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541146">IOCTL_HID_GET_PRODUCT_STRING</a> request.</p>
+<p>Only user-mode applications can call <b>HidD_GetProductString</b>. Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl-hid-get-product-string.md">IOCTL_HID_GET_PRODUCT_STRING</a> request.</p>
 
 <p>The maximum possible number of characters in an embedded string is device specific. For USB devices, the maximum string length is 126 wide characters (not including the terminating NULL character).</p>
 
-<p>The <b>iProduct</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a> structure for a particular interface is set by the <a href="buses.usb_common_class_generic_parent_driver">USB common class generic parent driver</a> based on the following rules:</p>
+<p>The <b>iProduct</b> member of a <a href="..\usbspec\ns-usbspec--usb-device-descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure for a particular interface is set by the <a href="buses.usb_common_class_generic_parent_driver">USB common class generic parent driver</a> based on the following rules:</p>
 
-<p>If the <b>iInterface</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540065">USB_INTERFACE_DESCRIPTOR</a> structure for the interface is nonzero, the <b>iProduct</b> member of the USB_DEVICE_DESCRIPTOR structure for the interface is set to the <b>iInterface</b> member of the USB_INTERFACE_DESCRIPTOR structure.</p>
+<p>If the <b>iInterface</b> member of the <a href="..\usbspec\ns-usbspec--usb-interface-descriptor.md">USB_INTERFACE_DESCRIPTOR</a> structure for the interface is nonzero, the <b>iProduct</b> member of the USB_DEVICE_DESCRIPTOR structure for the interface is set to the <b>iInterface</b> member of the USB_INTERFACE_DESCRIPTOR structure.</p>
 
-<p>If the interface is grouped by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540054">USB interface association descriptor</a>, and the <b>iFunction</b> member of the interface association descriptor for the interface is nonzero, the <b>iProduct</b> member of the USB_DEVICE_DESCRIPTOR structure for the interface is set to the <b>iFunction</b> member of the interface association descriptor.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p>Only user-mode applications can call <b>HidD_GetProductString</b>. Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541146">IOCTL_HID_GET_PRODUCT_STRING</a> request.</p>
-
-<p>The maximum possible number of characters in an embedded string is device specific. For USB devices, the maximum string length is 126 wide characters (not including the terminating NULL character).</p>
-
-<p>The <b>iProduct</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a> structure for a particular interface is set by the <a href="buses.usb_common_class_generic_parent_driver">USB common class generic parent driver</a> based on the following rules:</p>
-
-<p>If the <b>iInterface</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540065">USB_INTERFACE_DESCRIPTOR</a> structure for the interface is nonzero, the <b>iProduct</b> member of the USB_DEVICE_DESCRIPTOR structure for the interface is set to the <b>iInterface</b> member of the USB_INTERFACE_DESCRIPTOR structure.</p>
-
-<p>If the interface is grouped by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540054">USB interface association descriptor</a>, and the <b>iFunction</b> member of the interface association descriptor for the interface is nonzero, the <b>iProduct</b> member of the USB_DEVICE_DESCRIPTOR structure for the interface is set to the <b>iFunction</b> member of the interface association descriptor.</p>
+<p>If the interface is grouped by a <a href="buses.usb_interface_association_descriptor">USB interface association descriptor</a>, and the <b>iFunction</b> member of the interface association descriptor for the interface is nonzero, the <b>iProduct</b> member of the USB_DEVICE_DESCRIPTOR structure for the interface is set to the <b>iFunction</b> member of the interface association descriptor.</p>
 
 <p>For more information, see <a href="NULL">HID Collections</a>. </p>
 
@@ -158,25 +146,25 @@ BOOLEAN __stdcall HidD_GetProductString(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538927">HidD_GetIndexedString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getindexedstring.md">HidD_GetIndexedString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539677">HidD_GetPhysicalDescriptor</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getphysicaldescriptor.md">HidD_GetPhysicalDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539683">HidD_GetSerialNumberString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getserialnumberstring.md">HidD_GetSerialNumberString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541109">IOCTL_HID_GET_INDEXED_STRING</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-indexed-string.md">IOCTL_HID_GET_INDEXED_STRING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541134">IOCTL_HID_GET_MANUFACTURER_STRING</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-manufacturer-string.md">IOCTL_HID_GET_MANUFACTURER_STRING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541146">IOCTL_HID_GET_PRODUCT_STRING</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-product-string.md">IOCTL_HID_GET_PRODUCT_STRING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541160">IOCTL_HID_GET_SERIALNUMBER_STRING</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-serialnumber-string.md">IOCTL_HID_GET_SERIALNUMBER_STRING</a>
 </dt>
 </dl>
 <p> </p>

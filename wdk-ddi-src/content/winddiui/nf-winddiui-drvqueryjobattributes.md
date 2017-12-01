@@ -67,7 +67,7 @@ BOOL DrvQueryJobAttributes(
 ### -param <i>pDevMode</i> [in]
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </dd>
 
 ### -param <i>dwLevel</i> [in]
@@ -85,7 +85,7 @@ BOOL DrvQueryJobAttributes(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545090">ATTRIBUTE_INFO_1</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-1.md">ATTRIBUTE_INFO_1</a>
 </p>
 </td>
 </tr>
@@ -95,7 +95,7 @@ BOOL DrvQueryJobAttributes(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545091">ATTRIBUTE_INFO_2</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-2.md">ATTRIBUTE_INFO_2</a>
 </p>
 </td>
 </tr>
@@ -105,7 +105,7 @@ BOOL DrvQueryJobAttributes(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-3.md">ATTRIBUTE_INFO_3</a>
 </p>
 </td>
 </tr>
@@ -115,7 +115,7 @@ BOOL DrvQueryJobAttributes(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-4.md">ATTRIBUTE_INFO_4</a>
 </p>
 </td>
 </tr>
@@ -136,13 +136,7 @@ BOOL DrvQueryJobAttributes(
 ## -remarks
 <p>A <a href="NULL">printer interface DLL</a> can optionally provide a <b>DrvQueryJobAttributes</b> function. If the function is provided, it should fill in the supplied structure, described by <i>dwLevel</i> and <i>plAttributeInfo</i>, to indicate the current print job's user-requested attributes (such as N-up parameters and the number of copies) and the driver's ability to support those attributes. The function is typically called by the EMF print processor, so it can determine which job attributes can be handled by the driver (or printer), and which must be handled by the print processor.</p>
 
-<p>For descriptions of the job attributes that the function can specify, see the descriptions of <a href="https://msdn.microsoft.com/library/windows/hardware/ff545090">ATTRIBUTE_INFO_1</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545091">ATTRIBUTE_INFO_2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>.</p>
-
-<p>The ATTRIBUTE_INFO_4 structure is defined for Windows Vista.</p>
-
-<p>A <a href="NULL">printer interface DLL</a> can optionally provide a <b>DrvQueryJobAttributes</b> function. If the function is provided, it should fill in the supplied structure, described by <i>dwLevel</i> and <i>plAttributeInfo</i>, to indicate the current print job's user-requested attributes (such as N-up parameters and the number of copies) and the driver's ability to support those attributes. The function is typically called by the EMF print processor, so it can determine which job attributes can be handled by the driver (or printer), and which must be handled by the print processor.</p>
-
-<p>For descriptions of the job attributes that the function can specify, see the descriptions of <a href="https://msdn.microsoft.com/library/windows/hardware/ff545090">ATTRIBUTE_INFO_1</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545091">ATTRIBUTE_INFO_2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>.</p>
+<p>For descriptions of the job attributes that the function can specify, see the descriptions of <a href="..\winddiui\ns-winddiui--attribute-info-1.md">ATTRIBUTE_INFO_1</a>, <a href="..\winddiui\ns-winddiui--attribute-info-2.md">ATTRIBUTE_INFO_2</a>, <a href="..\winddiui\ns-winddiui--attribute-info-3.md">ATTRIBUTE_INFO_3</a>, and <a href="..\winddiui\ns-winddiui--attribute-info-4.md">ATTRIBUTE_INFO_4</a>.</p>
 
 <p>The ATTRIBUTE_INFO_4 structure is defined for Windows Vista.</p>
 
@@ -173,16 +167,16 @@ BOOL DrvQueryJobAttributes(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545090">ATTRIBUTE_INFO_1</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-1.md">ATTRIBUTE_INFO_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545091">ATTRIBUTE_INFO_2</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-2.md">ATTRIBUTE_INFO_2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-3.md">ATTRIBUTE_INFO_3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-4.md">ATTRIBUTE_INFO_4</a>
 </dt>
 </dl>
 <p> </p>

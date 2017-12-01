@@ -73,7 +73,7 @@ typedef struct _DXGKARG_CREATEPROCESS {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/dn914476">DXGK_CREATEPROCESSFLAGS</a> structure describing the operation.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createprocessflags.md">DXGK_CREATEPROCESSFLAGS</a> structure describing the operation.</p>
 </dd>
 
 ### -field <b>NumPasid</b>
@@ -125,7 +125,7 @@ typedef struct _DXGKARG_CREATEPROCESS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914476">DXGK_CREATEPROCESSFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createprocessflags.md">DXGK_CREATEPROCESSFLAGS</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateprocess">DxgkDdiCreateProcess</a>

@@ -121,15 +121,7 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_SCALING {
 </dl>
 
 ## -remarks
-<p>The <b>Scaling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546719">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_SCALING enumeration.</p>
-
-<p>If D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX or D3DKMDT_VPPS_CUSTOM values are specified but the path is on a display miniport driver that does not support these values (which are available beginning with Windows 7), the driver's calls to <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a> should return STATUS_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED, and the operating system will apply the system default scaling. If a driver cannot support the requested scaling value on the specified path, its calls to <b>DxgkDdiCommitVidPn</b> should return STATUS_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED.</p>
-
-<p>The <b>Scaling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546719">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_SCALING enumeration.</p>
-
-<p>If D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX or D3DKMDT_VPPS_CUSTOM values are specified but the path is on a display miniport driver that does not support these values (which are available beginning with Windows 7), the driver's calls to <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a> should return STATUS_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED, and the operating system will apply the system default scaling. If a driver cannot support the requested scaling value on the specified path, its calls to <b>DxgkDdiCommitVidPn</b> should return STATUS_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED.</p>
-
-<p>The <b>Scaling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546719">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_SCALING enumeration.</p>
+<p>The <b>Scaling</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_SCALING enumeration.</p>
 
 <p>If D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX or D3DKMDT_VPPS_CUSTOM values are specified but the path is on a display miniport driver that does not support these values (which are available beginning with Windows 7), the driver's calls to <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a> should return STATUS_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED, and the operating system will apply the system default scaling. If a driver cannot support the requested scaling value on the specified path, its calls to <b>DxgkDdiCommitVidPn</b> should return STATUS_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED.</p>
 
@@ -161,7 +153,7 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_SCALING {
 <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546712">D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-scaling-support.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT</a>
 </dt>
 </dl>
 <p> </p>

@@ -87,9 +87,7 @@ PVOID VideoPortLockBuffer(
 <p>Returns a pointer to a memory descriptor list (<a href="wdkgloss.m#wdkgloss.mdl#wdkgloss.mdl"><i>MDL</i></a>), or a <b>NULL</b> pointer if the MDL for the memory to be locked cannot be allocated.</p>
 
 ## -remarks
-<p>To unlock the buffer, the video miniport driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff570373">VideoPortUnlockBuffer</a>. </p>
-
-<p>To unlock the buffer, the video miniport driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff570373">VideoPortUnlockBuffer</a>. </p>
+<p>To unlock the buffer, the video miniport driver should call <a href="..\video\nf-video-videoportunlockbuffer.md">VideoPortUnlockBuffer</a>. </p>
 
 ## -requirements
 <table>
@@ -154,7 +152,7 @@ PVOID VideoPortLockBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570373">VideoPortUnlockBuffer</a>
+<a href="..\video\nf-video-videoportunlockbuffer.md">VideoPortUnlockBuffer</a>
 </dt>
 </dl>
 <p> </p>

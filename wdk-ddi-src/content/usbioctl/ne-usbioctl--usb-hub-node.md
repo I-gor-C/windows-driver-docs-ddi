@@ -72,10 +72,6 @@ typedef enum _USB_HUB_NODE {
 ## -remarks
 <p>Composite devices are devices that have multiple interfaces. Windows loads the USB generic parent driver for composite devices, instead of the hub driver, but the generic parent driver performs many of the functions of the hub driver. It creates a child PDO for each interface, as though the interface were a separate device.</p>
 
-<p>Composite devices are devices that have multiple interfaces. Windows loads the USB generic parent driver for composite devices, instead of the hub driver, but the generic parent driver performs many of the functions of the hub driver. It creates a child PDO for each interface, as though the interface were a separate device.</p>
-
-<p>Composite devices are devices that have multiple interfaces. Windows loads the USB generic parent driver for composite devices, instead of the hub driver, but the generic parent driver performs many of the functions of the hub driver. It creates a child PDO for each interface, as though the interface were a separate device.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -93,10 +89,10 @@ typedef enum _USB_HUB_NODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540110">USB_NODE_INFORMATION</a>
+<a href="..\usbioctl\ns-usbioctl--usb-node-information.md">USB_NODE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+<a href="buses.usb_enumerations">USB Constants and Enumerations</a>
 </dt>
 </dl>
 <p> </p>

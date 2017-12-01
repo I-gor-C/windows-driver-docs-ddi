@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The DDC_CONTROL structure holds function pointers and <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> segment information needed by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570290">VideoPortDDCMonitorHelper</a> function, which is exported by the video port driver. The <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a> function, implemented by the video miniport driver, can call <b>VideoPortDDCMonitorHelper</b> for assistance in reading the EDID blocks from its child monitor devices.</p>
+<p>The DDC_CONTROL structure holds function pointers and <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> segment information needed by the <a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a> function, which is exported by the video port driver. The <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a> function, implemented by the video miniport driver, can call <b>VideoPortDDCMonitorHelper</b> for assistance in reading the EDID blocks from its child monitor devices.</p>
 
 
 ## -syntax
@@ -66,13 +66,13 @@ typedef struct _DDC_CONTROL {
 ### -field <b>I2CCallbacks</b>
 
 <dd>
-<p>Is an <a href="https://msdn.microsoft.com/library/windows/hardware/ff567382">I2C_CALLBACKS</a> structure that contains pointers to functions, implemented by the video miniport driver, that read and write individual data bits to the I2C serial clock and data lines.</p>
+<p>Is an <a href="..\video\ns-video--i2c-callbacks.md">I2C_CALLBACKS</a> structure that contains pointers to functions, implemented by the video miniport driver, that read and write individual data bits to the I2C serial clock and data lines.</p>
 </dd>
 
 ### -field <b>EdidSegment</b>
 
 <dd>
-<p>Specifies the particular EDID segment. Currently, this member is meaningful only for EEDID (EDID Version 1.3); for other EDID versions, this member should always be set to 0. For EEDID (EDID Version 1.3), segment numbers can range from 0 through 127, where each segment is 256 bytes in length. Since the EDID version number is in segment 0, this member must be set to 0 the first time  the video miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff570290">VideoPortDDCMonitorHelper</a> regarding a particular monitor.</p>
+<p>Specifies the particular EDID segment. Currently, this member is meaningful only for EEDID (EDID Version 1.3); for other EDID versions, this member should always be set to 0. For EEDID (EDID Version 1.3), segment numbers can range from 0 through 127, where each segment is 256 bytes in length. Since the EDID version number is in segment 0, this member must be set to 0 the first time  the video miniport driver calls <a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a> regarding a particular monitor.</p>
 </dd>
 </dl>
 
@@ -96,7 +96,7 @@ typedef struct _DDC_CONTROL {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
+<a href="display.i2c_functions">I2C Functions</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo-read-clock-line.md">ReadClockLine</a>

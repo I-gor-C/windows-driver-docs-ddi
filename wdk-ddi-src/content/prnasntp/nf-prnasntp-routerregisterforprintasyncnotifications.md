@@ -150,7 +150,7 @@ HRESULT RouterRegisterForPrintAsyncNotifications(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562028">RouterUnregisterForPrintAsyncNotifications</a>
+<a href="..\prnasntp\nf-prnasntp-routerunregisterforprintasyncnotifications.md">RouterUnregisterForPrintAsyncNotifications</a>
 </dt>
 </dl>
 <p> </p>

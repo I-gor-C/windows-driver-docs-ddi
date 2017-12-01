@@ -106,10 +106,10 @@ typedef struct _BLOCK_DEVICE_RANGE_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967730">POPULATE_TOKEN_HEADER</a>
+<a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967746">WRITE_USING_TOKEN_HEADER</a>
+<a href="storage.write_using_token_header">WRITE_USING_TOKEN_HEADER</a>
 </dt>
 </dl>
 <p> </p>

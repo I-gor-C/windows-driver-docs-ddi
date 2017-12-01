@@ -82,8 +82,6 @@ BOOLEAN VideoPortQueueDpc(
 ## -remarks
 <p>The deferred procedure is run when the IRQL on the current processor drops below DISPATCH_LEVEL. Callers of <b>VideoPortQueueDpc</b> must be running at IRQL &gt;= DISPATCH_LEVEL.</p>
 
-<p>The deferred procedure is run when the IRQL on the current processor drops below DISPATCH_LEVEL. Callers of <b>VideoPortQueueDpc</b> must be running at IRQL &gt;= DISPATCH_LEVEL.</p>
-
 ## -requirements
 <table>
 <tr>

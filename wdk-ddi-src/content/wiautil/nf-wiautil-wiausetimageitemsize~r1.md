@@ -103,8 +103,6 @@ HRESULT _stdcall wiauSetImageItemSize(
 ## -remarks
 <p>If the format is not BMP, this function assumes that the value passed in the <i>lSize</i> parameter is correct for the current format.</p>
 
-<p>If the format is not BMP, this function assumes that the value passed in the <i>lSize</i> parameter is correct for the current format.</p>
-
 ## -requirements
 <table>
 <tr>

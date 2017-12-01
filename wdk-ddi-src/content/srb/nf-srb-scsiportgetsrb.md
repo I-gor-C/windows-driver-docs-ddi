@@ -133,7 +133,7 @@ PSCSI_REQUEST_BLOCK ScsiPortGetSrb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

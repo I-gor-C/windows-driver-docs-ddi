@@ -72,8 +72,8 @@ VP_STATUS VideoPortSetTrappedEmulatorPorts(
 ### -param <i>AccessRange</i> [in]
 
 <dd>
-<p>Pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff570498">VIDEO_ACCESS_RANGE</a> elements. Each element describes a proper subrange of the <b>EmulatorAccessEntries</b> that the miniport driver set up in <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a>. Setting the <b>RangeVisible</b> member of an <i>AccessRange</i> element to <b>TRUE</b> enables direct access to the I/O port range by the full-screen MS-DOS application. Setting a <b>RangeVisible</b> member to <b>FALSE</b> causes application-issued <b>IN</b>s, <b>INSB/INSW/INSD</b>s, <b>OUT</b>s and/or <b>OUTSB/OUTSW/OUTSD</b>s to that range to be trapped and forwarded to the corresponding miniport driver <i>SvgaHwIoPortXxx</i> function for validation.</p>
-<p>The <i>AccessRange</i> array passed to <b>VideoPortSetTrappedEmulatorPorts</b> must be a proper subset of the I/O port range(s) that the <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function set up in the <b>EmulatorAccessEntries</b> array of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a> structure. Any I/O port ranges in the access ranges array that are not included in the <b>EmulatorAccessEntries</b> array are trapped and reflected to the user-mode <a href="wdkgloss.v#wdkgloss.vdd#wdkgloss.vdd"><i>VDD</i></a>.</p>
+<p>Pointer to an array of <a href="..\video\ns-video--video-access-range.md">VIDEO_ACCESS_RANGE</a> elements. Each element describes a proper subrange of the <b>EmulatorAccessEntries</b> that the miniport driver set up in <a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a>. Setting the <b>RangeVisible</b> member of an <i>AccessRange</i> element to <b>TRUE</b> enables direct access to the I/O port range by the full-screen MS-DOS application. Setting a <b>RangeVisible</b> member to <b>FALSE</b> causes application-issued <b>IN</b>s, <b>INSB/INSW/INSD</b>s, <b>OUT</b>s and/or <b>OUTSB/OUTSW/OUTSD</b>s to that range to be trapped and forwarded to the corresponding miniport driver <i>SvgaHwIoPortXxx</i> function for validation.</p>
+<p>The <i>AccessRange</i> array passed to <b>VideoPortSetTrappedEmulatorPorts</b> must be a proper subset of the I/O port range(s) that the <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function set up in the <b>EmulatorAccessEntries</b> array of the <a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a> structure. Any I/O port ranges in the access ranges array that are not included in the <b>EmulatorAccessEntries</b> array are trapped and reflected to the user-mode <a href="wdkgloss.v#wdkgloss.vdd#wdkgloss.vdd"><i>VDD</i></a>.</p>
 </dd>
 </dl>
 
@@ -81,19 +81,7 @@ VP_STATUS VideoPortSetTrappedEmulatorPorts(
 <p><b>VideoPortSetTrappedEmulatorPorts</b> returns NO_ERROR if it successfully changed the trapped ports. Otherwise, it returns ERROR_INVALID_PARAMETER.</p>
 
 ## -remarks
-<p>By default, the <i>AccessRange</i> of I/O ports that full-screen MS-DOS applications can access directly includes none of the access range array elements describing I/O port ranges that also have corresponding elements in the <b>EmulatorAccessEntries</b> array of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a> structure. That is, I/O port ranges with corresponding emulator access entries are, by default, hooked to the miniport driver's <i>SvgaHwIoPortXxx</i> functions so application-issued instructions are forwarded to the <i>SvgaHwIoPortXxx</i> functions for validation.</p>
-
-<p>A VGA-compatible SVGA miniport driver can enable and disable ranges of I/O ports on an as-needed basis with calls to <b>VideoPortSetTrappedEmulatorPorts</b>. Enabled port ranges allow a full-screen MS-DOS application to access those I/O ports directly, without having application-issued assembly instructions trapped and forwarded to the miniport driver's <i>SvgaHwIoPortXxx</i> functions for validation first. Direct I/O port access for such an application gives the user faster video I/O response times.</p>
-
-<p><b>VideoPortSetTrappedEmulatorPorts</b> scans the <i>AccessRange</i> parameter array from the first element to the last, enabling and disabling I/O ports as directed in each element. Note that a range of enabled ports (the <b>RangeVisible</b> member set to <b>TRUE</b>) can be disabled again in the same call if the miniport driver includes a duplicate description of the same range with the <b>RangeVisible</b> member set to <b>FALSE</b>. Note also that a miniport driver can enable a wide range of I/O ports in the initial element of the <i>AccessRange</i> array and selectively disable subranges of ports in subsequent array elements when it calls <b>VideoPortSetTrappedEmulatorPorts</b>.</p>
-
-<p>All full-screen MS-DOS applications use the same IOPM (I/O permission map) in x86-based machines and, therefore, the same set of enabled or disabled I/O ports. On each switch to such a full-screen application, a VGA-compatible miniport driver's <a href="..\video\nc-video-pvideo-hw-start-io.md">HwVidStartIO</a> function is called with the IOCTL_VIDEO_ENABLE_VDM <a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a>. The miniport driver should then reinitialize a default set of directly accessible I/O ports, which can include any ports in the <b>EmulatorAccessEntries</b> array.</p>
-
-<p>While giving full-screen MS-DOS applications on x86-based machines direct access to the video ports makes application-initiated video operations faster, every VGA-compatible SVGA miniport driver must continue to trap a subset of critical I/O ports to prevent such an application from hanging the machine. In particular, such miniport drivers should <i>always</i> trap application I/O to the VGA-compatible adapter sequencer and miscellaneous output registers. Such a miniport driver should also trap and validate application-issued direct I/O that could cause the machine to hang for any additional adapter-dependent subset of I/O ports.</p>
-
-<p>Calling <b>VideoPortSetTrappedEmulatorPorts</b> again and resetting the <b>RangeVisible</b> member of an <i>AccessRange</i> element to <b>FALSE</b> causes the application-issued instructions for that range to be forwarded to the corresponding miniport driver <i>SvgaHwIoPortXxx</i> function. </p>
-
-<p>By default, the <i>AccessRange</i> of I/O ports that full-screen MS-DOS applications can access directly includes none of the access range array elements describing I/O port ranges that also have corresponding elements in the <b>EmulatorAccessEntries</b> array of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a> structure. That is, I/O port ranges with corresponding emulator access entries are, by default, hooked to the miniport driver's <i>SvgaHwIoPortXxx</i> functions so application-issued instructions are forwarded to the <i>SvgaHwIoPortXxx</i> functions for validation.</p>
+<p>By default, the <i>AccessRange</i> of I/O ports that full-screen MS-DOS applications can access directly includes none of the access range array elements describing I/O port ranges that also have corresponding elements in the <b>EmulatorAccessEntries</b> array of the <a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a> structure. That is, I/O port ranges with corresponding emulator access entries are, by default, hooked to the miniport driver's <i>SvgaHwIoPortXxx</i> functions so application-issued instructions are forwarded to the <i>SvgaHwIoPortXxx</i> functions for validation.</p>
 
 <p>A VGA-compatible SVGA miniport driver can enable and disable ranges of I/O ports on an as-needed basis with calls to <b>VideoPortSetTrappedEmulatorPorts</b>. Enabled port ranges allow a full-screen MS-DOS application to access those I/O ports directly, without having application-issued assembly instructions trapped and forwarded to the miniport driver's <i>SvgaHwIoPortXxx</i> functions for validation first. Direct I/O port access for such an application gives the user faster video I/O response times.</p>
 
@@ -168,7 +156,7 @@ VP_STATUS VideoPortSetTrappedEmulatorPorts(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564131">EMULATOR_ACCESS_ENTRY</a>
+<a href="..\miniport\ns-miniport--emulator-access-entry.md">EMULATOR_ACCESS_ENTRY</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a>
@@ -177,13 +165,13 @@ VP_STATUS VideoPortSetTrappedEmulatorPorts(
 <a href="..\video\nc-video-pvideo-hw-start-io.md">HwVidStartIO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570498">VIDEO_ACCESS_RANGE</a>
+<a href="..\video\ns-video--video-access-range.md">VIDEO_ACCESS_RANGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a>
+<a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570372">VideoPortSynchronizeExecution</a>
+<a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>
 </dt>
 </dl>
 <p> </p>

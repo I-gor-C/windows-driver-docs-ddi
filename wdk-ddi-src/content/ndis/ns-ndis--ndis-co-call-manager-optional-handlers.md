@@ -7,7 +7,7 @@ old-location: netvista\ndis_co_call_manager_optional_handlers.htm
 old-project: netvista
 ms.assetid: 12d541e1-04dd-4512-827e-d27f16260fe3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, *PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,7 +79,7 @@ typedef struct _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS {
 
 <dd>
 <p>The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
      call manager CoNDIS characteristics structure (NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS). Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_CO_CALL_MANAGER_OPTIONAL_HANDLERS, the 
@@ -236,7 +236,7 @@ typedef struct _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS {
      call manager must set every entry point in the NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure to a
      driver-supplied 
      <i>ProtocolXxx</i> function when it calls 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564550">NdisSetOptionalHandlers</a>, even if
+     <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>, even if
      the call manager does not support incoming calls, outgoing calls, or point-to-multipoint connections.
      For whatever subset of connection-oriented functionality that such a call manager does not support, its
      placeholder 
@@ -254,7 +254,7 @@ typedef struct _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS {
      NdisRegisterProtocolDriver</a> function.</p>
 
 <p>An MCM calls the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564550">NdisSetOptionalHandlers</a> function
+     <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function
      from the 
      <a href="netvista.miniportsetoptions">MiniportSetOptions</a> function. The
      MCM must set every 
@@ -332,7 +332,7 @@ typedef struct _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS {
 <a href="netvista.miniportsetoptions">MiniportSetOptions</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-protocol-driver-characteristics.md">
@@ -343,10 +343,10 @@ typedef struct _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS {
    NdisCmRegisterAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564520">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564550">NdisSetOptionalHandlers</a>
+<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cm-activate-vc-complete.md">
@@ -396,4 +396,4 @@ typedef struct _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

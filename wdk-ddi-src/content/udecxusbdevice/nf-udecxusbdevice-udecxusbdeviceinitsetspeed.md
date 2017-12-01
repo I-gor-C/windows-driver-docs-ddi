@@ -59,13 +59,13 @@ FORCEINLINE void UdecxUsbDeviceInitSetSpeed(
 ### -param <i>UdecxUsbDeviceInit</i> [in, out]
 
 <dd>
-<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627968">UdecxUsbDeviceInitAllocate</a>. </p>
+<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>. </p>
 </dd>
 
 ### -param <i>UsbDeviceSpeed</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt628002">UDECX_USB_DEVICE_SPEED</a>-type value that indicates the USB speed to set.</p>
+<p>A <a href="buses.udecx_usb_device_speed">UDECX_USB_DEVICE_SPEED</a>-type value that indicates the USB speed to set.</p>
 </dd>
 </dl>
 
@@ -73,8 +73,6 @@ FORCEINLINE void UdecxUsbDeviceInitSetSpeed(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>After the client driver sets the USB speed of the device, it only operates in that speed. The speed also determines the kind of port to which the device can connect. For example, a USB SuperSpeed device cannot connect to a USB 2.0 port.</p>
-
 <p>After the client driver sets the USB speed of the device, it only operates in that speed. The speed also determines the kind of port to which the device can connect. For example, a USB SuperSpeed device cannot connect to a USB 2.0 port.</p>
 
 ## -requirements
@@ -136,10 +134,10 @@ FORCEINLINE void UdecxUsbDeviceInitSetSpeed(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

@@ -99,7 +99,7 @@ BOOLEAN FsRtlMdlReadDev(
 ### -param <i>IoStatus</i> [out]
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure that, on output, contains the status of the transfer. If the operation succeeds, <i>IoStatus.Status</i> is set to STATUS_SUCCESS. Otherwise, it is set to an appropriate NTSTATUS error code. <i>IoStatus.Information</i> is set to the actual number of bytes that the routine successfully locked.</p>
+<p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that, on output, contains the status of the transfer. If the operation succeeds, <i>IoStatus.Status</i> is set to STATUS_SUCCESS. Otherwise, it is set to an appropriate NTSTATUS error code. <i>IoStatus.Information</i> is set to the actual number of bytes that the routine successfully locked.</p>
 </dd>
 </dl>
 
@@ -109,11 +109,7 @@ BOOLEAN FsRtlMdlReadDev(
 ## -remarks
 <p>The <b>FltFastIoMdlRead</b> routine bypasses the usual IRP mechanism and returns a linked list of memory descriptor lists (MDL) that the caller can use to directly access the cached file data. This operation does not copy or buffer data and therefore is much faster than a normal read.</p>
 
-<p>The routine is similar to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539159">CcMdlRead</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff546960">FsRtlMdlReadDev</a>. <b>FltFastIoMdlRead</b>, <b>CcMdlRead</b>, and <b>FsRtlMdlReadDev</b> lock the pages that contain the cached file data to prevent the system from swapping these pages to the page file. The pages remain locked in memory until the caller invokes the <a href="https://msdn.microsoft.com/library/windows/hardware/hh706189">FltFastIoMdlReadComplete</a> routine.</p>
-
-<p>The <b>FltFastIoMdlRead</b> routine bypasses the usual IRP mechanism and returns a linked list of memory descriptor lists (MDL) that the caller can use to directly access the cached file data. This operation does not copy or buffer data and therefore is much faster than a normal read.</p>
-
-<p>The routine is similar to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539159">CcMdlRead</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff546960">FsRtlMdlReadDev</a>. <b>FltFastIoMdlRead</b>, <b>CcMdlRead</b>, and <b>FsRtlMdlReadDev</b> lock the pages that contain the cached file data to prevent the system from swapping these pages to the page file. The pages remain locked in memory until the caller invokes the <a href="https://msdn.microsoft.com/library/windows/hardware/hh706189">FltFastIoMdlReadComplete</a> routine.</p>
+<p>The routine is similar to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539159">CcMdlRead</a> and <a href="ifsk.fsrtlmdlreaddev">FsRtlMdlReadDev</a>. <b>FltFastIoMdlRead</b>, <b>CcMdlRead</b>, and <b>FsRtlMdlReadDev</b> lock the pages that contain the cached file data to prevent the system from swapping these pages to the page file. The pages remain locked in memory until the caller invokes the <a href="..\fltkernel\nf-fltkernel-fltfastiomdlreadcomplete.md">FltFastIoMdlReadComplete</a> routine.</p>
 
 ## -requirements
 <table>
@@ -173,10 +169,10 @@ BOOLEAN FsRtlMdlReadDev(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539159">CcMdlRead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh706189">FltFastIoMdlReadComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltfastiomdlreadcomplete.md">FltFastIoMdlReadComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546960">FsRtlMdlReadDev</a>
+<a href="ifsk.fsrtlmdlreaddev">FsRtlMdlReadDev</a>
 </dt>
 </dl>
 <p> </p>

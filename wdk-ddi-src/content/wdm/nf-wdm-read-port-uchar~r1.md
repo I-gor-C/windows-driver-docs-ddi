@@ -7,7 +7,7 @@ old-location: kernel\read_port_uchar.htm
 old-project: kernel
 ms.assetid: a58e55f5-d657-43bf-afef-05af7c6c02cc
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: READ_PORT_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,8 +66,6 @@ UCHAR READ_PORT_UCHAR(
 <p><b>READ_PORT_UCHAR</b> returns the byte that is read from the specified port address.</p>
 
 ## -remarks
-<p>Callers of <b>READ_PORT_UCHAR</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
-
 <p>Callers of <b>READ_PORT_UCHAR</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
 
 ## -requirements

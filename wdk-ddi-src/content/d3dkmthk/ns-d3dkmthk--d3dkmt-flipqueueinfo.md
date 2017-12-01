@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DKMT_FLIPQUEUEINFO structure describes information about the graphics adapter's queue of flip operations that the OpenGL installable client driver (ICD) obtains by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547100">D3DKMTQueryAdapterInfo</a> function.</p>
+<p>The D3DKMT_FLIPQUEUEINFO structure describes information about the graphics adapter's queue of flip operations that the OpenGL installable client driver (ICD) obtains by calling the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a> function.</p>
 
 
 ## -syntax
@@ -71,7 +71,7 @@ typedef struct _D3DKMT_FLIPQUEUEINFO {
 ### -field <b>FlipFlags</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547980">D3DKMT_FLIPINFOFLAGS</a> structure that indicates, in bit-field flags, flipping capabilities.</p>
+<p>[out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-flipinfoflags.md">D3DKMT_FLIPINFOFLAGS</a> structure that indicates, in bit-field flags, flipping capabilities.</p>
 </dd>
 </dl>
 
@@ -103,13 +103,13 @@ typedef struct _D3DKMT_FLIPQUEUEINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547980">D3DKMT_FLIPINFOFLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-flipinfoflags.md">D3DKMT_FLIPINFOFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548203">D3DKMT_QUERYADAPTERINFO</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547100">D3DKMTQueryAdapterInfo</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
 </dt>
 </dl>
 <p> </p>

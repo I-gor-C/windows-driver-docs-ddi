@@ -7,7 +7,7 @@ old-location: kernel\iogetdeviceproperty.htm
 old-project: kernel
 ms.assetid: 8c3b7f81-ea6e-47ae-a396-58826d097f1f
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoGetDeviceProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,7 +82,7 @@ NTSTATUS IoGetDeviceProperty(
 ### -param <a id="DevicePropertyBootConfiguration"></a><a id="devicepropertybootconfiguration"></a><a id="DEVICEPROPERTYBOOTCONFIGURATION"></a><b>DevicePropertyBootConfiguration</b>
 
 <dd>
-<p>Requests the hardware resources assigned to the device by the firmware, in raw form. <i>PropertyBuffer</i> points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541994">CM_RESOURCE_LIST</a> structure.</p>
+<p>Requests the hardware resources assigned to the device by the firmware, in raw form. <i>PropertyBuffer</i> points to a <a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a> structure.</p>
 </dd>
 
 ### -param <a id="DevicePropertyBootConfigurationTranslated"></a><a id="devicepropertybootconfigurationtranslated"></a><a id="DEVICEPROPERTYBOOTCONFIGURATIONTRANSLATED"></a><b>DevicePropertyBootConfigurationTranslated</b>
@@ -154,13 +154,13 @@ NTSTATUS IoGetDeviceProperty(
 ### -param <a id="DevicePropertyInstallState"></a><a id="devicepropertyinstallstate"></a><a id="DEVICEPROPERTYINSTALLSTATE"></a><b>DevicePropertyInstallState</b>
 
 <dd>
-<p>(Windows XP and later versions of Windows.) Requests the device's installation state. The installation state is returned as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543130">DEVICE_INSTALL_STATE</a> enumeration value (see the Ntddk.h header file). </p>
+<p>(Windows XP and later versions of Windows.) Requests the device's installation state. The installation state is returned as a <a href="..\wdm\ne-wdm--device-install-state.md">DEVICE_INSTALL_STATE</a> enumeration value (see the Ntddk.h header file). </p>
 </dd>
 
 ### -param <a id="DevicePropertyLegacyBusType"></a><a id="devicepropertylegacybustype"></a><a id="DEVICEPROPERTYLEGACYBUSTYPE"></a><b>DevicePropertyLegacyBusType</b>
 
 <dd>
-<p>Requests the bus type, such as PCIBus or PCMCIABus. <i>PropertyBuffer</i> points to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff547839">INTERFACE_TYPE</a> enumeration value.</p>
+<p>Requests the bus type, such as PCIBus or PCMCIABus. <i>PropertyBuffer</i> points to an <a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a> enumeration value.</p>
 </dd>
 
 ### -param <a id="DevicePropertyLocationInformation"></a><a id="devicepropertylocationinformation"></a><a id="DEVICEPROPERTYLOCATIONINFORMATION"></a><b>DevicePropertyLocationInformation</b>
@@ -184,7 +184,7 @@ NTSTATUS IoGetDeviceProperty(
 ### -param <a id="DevicePropertyRemovalPolicy"></a><a id="devicepropertyremovalpolicy"></a><a id="DEVICEPROPERTYREMOVALPOLICY"></a><b>DevicePropertyRemovalPolicy</b>
 
 <dd>
-<p>(Windows XP and later versions of Windows.) Requests the device's current removal policy. The operating system uses this value as a hint to determine how the device is normally removed. The <i>PropertyBuffer</i> parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543179">DEVICE_REMOVAL_POLICY</a> enumeration value.</p>
+<p>(Windows XP and later versions of Windows.) Requests the device's current removal policy. The operating system uses this value as a hint to determine how the device is normally removed. The <i>PropertyBuffer</i> parameter points to a <a href="..\wdm\ne-wdm--device-removal-policy.md">DEVICE_REMOVAL_POLICY</a> enumeration value.</p>
 </dd>
 
 ### -param <a id="DevicePropertyUINumber"></a><a id="devicepropertyuinumber"></a><a id="DEVICEPROPERTYUINUMBER"></a><b>DevicePropertyUINumber</b>
@@ -227,12 +227,6 @@ NTSTATUS IoGetDeviceProperty(
 <p> </p>
 
 ## -remarks
-<p><b>IoGetDeviceProperty</b> retrieves device setup information from the registry. Use this routine, rather than accessing the registry directly, to insulate a driver from differences across platforms and from possible changes in the registry structure.</p>
-
-<p>For many <i>DeviceProperty</i> requests, it can take two or more calls to <b>IoGetDeviceProperty</b> to determine the required <i>BufferLength</i>. The first call should use a best-guess value. If the return status is STATUS_BUFFER_TOO_SMALL, the driver should free its current buffer, allocate a buffer of the size returned in <i>ResultLength</i>, and call <b>IoGetDeviceProperty</b> again. Because some of the setup properties are dynamic, the data size can change between the time the required size is returned and driver calls this routine again. Therefore, drivers should call <b>IoGetDeviceProperty</b> inside a loop that runs until the return status is not STATUS_BUFFER_TOO_SMALL.</p>
-
-<p>Function drivers that support devices on a legacy bus and a PnP bus can use the <b>DevicePropertyBusNumber</b>, <b>DevicePropertyBusTypeGuid</b>, and <b>DevicePropertyLegacyBusType</b> properties to distinguish between the buses.</p>
-
 <p><b>IoGetDeviceProperty</b> retrieves device setup information from the registry. Use this routine, rather than accessing the registry directly, to insulate a driver from differences across platforms and from possible changes in the registry structure.</p>
 
 <p>For many <i>DeviceProperty</i> requests, it can take two or more calls to <b>IoGetDeviceProperty</b> to determine the required <i>BufferLength</i>. The first call should use a best-guess value. If the return status is STATUS_BUFFER_TOO_SMALL, the driver should free its current buffer, allocate a buffer of the size returned in <i>ResultLength</i>, and call <b>IoGetDeviceProperty</b> again. Because some of the setup properties are dynamic, the data size can change between the time the required size is returned and driver calls this routine again. Therefore, drivers should call <b>IoGetDeviceProperty</b> inside a loop that runs until the return status is not STATUS_BUFFER_TOO_SMALL.</p>
@@ -302,7 +296,7 @@ NTSTATUS IoGetDeviceProperty(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -310,22 +304,22 @@ NTSTATUS IoGetDeviceProperty(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541994">CM_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543179">DEVICE_REMOVAL_POLICY</a>
+<a href="..\wdm\ne-wdm--device-removal-policy.md">DEVICE_REMOVAL_POLICY</a>
 </dt>
 <dt><a href="wdkgloss.g#wdkgloss.guid#wdkgloss.guid"><b>GUID</b></a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550609">IO_RESOURCE_REQUIREMENTS_LIST</a>
+<a href="..\wdm\ns-wdm--io-resource-requirements-list.md">IO_RESOURCE_REQUIREMENTS_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547839">INTERFACE_TYPE</a>
+<a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetDeviceProperty routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetDeviceProperty routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

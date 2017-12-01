@@ -7,7 +7,7 @@ old-location: bltooth\sdpaddattributetotree.htm
 old-project: bltooth
 ms.assetid: f5b72de2-c2e9-44ac-a2a7-04271e9253d3
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: SdpAddAttributeToTree
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,7 +85,7 @@ NTSTATUS SdpAddAttributeToTree(
 <p>Specifies a 4-byte 
      <a href="wdkgloss.p#wdkgloss.pool_tag#wdkgloss.pool_tag"><i>pool tag</i></a> that uniquely identifies the driver that does the memory
      allocation. For more information about pool tags, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>.</p>
+     <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>.</p>
 </dd>
 </dl>
 
@@ -94,14 +94,7 @@ NTSTATUS SdpAddAttributeToTree(
 
 ## -remarks
 <p>Bluetooth profile drivers can obtain a pointer to this function through the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536635">BTHDDI_SDP_NODE_INTERFACE</a>.</p>
-
-<p>For more information about the tree structure, see 
-    <a href="https://msdn.microsoft.com/762cf68b-0082-4b9e-8f24-ff19ecf6f8bd">Converting SDP Records to a
-    Tree Structure</a>.</p>
-
-<p>Bluetooth profile drivers can obtain a pointer to this function through the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536635">BTHDDI_SDP_NODE_INTERFACE</a>.</p>
+    <a href="..\bthsdpddi\ns-bthsdpddi--bthddi-sdp-node-interface.md">BTHDDI_SDP_NODE_INTERFACE</a>.</p>
 
 <p>For more information about the tree structure, see 
     <a href="https://msdn.microsoft.com/762cf68b-0082-4b9e-8f24-ff19ecf6f8bd">Converting SDP Records to a
@@ -150,9 +143,9 @@ NTSTATUS SdpAddAttributeToTree(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536635">BTHDDI_SDP_NODE_INTERFACE</a>
+<a href="..\bthsdpddi\ns-bthsdpddi--bthddi-sdp-node-interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SdpAddAttributeToTree function%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SdpAddAttributeToTree function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

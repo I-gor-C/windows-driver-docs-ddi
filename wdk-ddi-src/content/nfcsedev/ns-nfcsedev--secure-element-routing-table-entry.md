@@ -7,7 +7,7 @@ old-location: nfpdrivers\_secure_element_routing_table_entry.htm
 old-project: nfpdrivers
 ms.assetid: 199FEA6A-A57F-4B13-832A-65DB7729455F
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: SECURE_ELEMENT_ROUTING_TABLE_ENTRY, SECURE_ELEMENT_ROUTING_TABLE_ENTRY, *PSECURE_ELEMENT_ROUTING_TABLE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>SECURE_ELEMENT_ROUTING_TABLE_ENTRY is a member of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905627">SECURE_ELEMENT_ROUTING_TABLE</a>.</p>
+<p>SECURE_ELEMENT_ROUTING_TABLE_ENTRY is a member of <a href="..\nfcsedev\ns-nfcsedev--secure-element-routing-table.md">SECURE_ELEMENT_ROUTING_TABLE</a>.</p>
 
 
 ## -syntax

@@ -73,13 +73,9 @@ VP_STATUS VideoPortDeleteSpinLock(
 <p>If the spin lock is successfully deleted, <b>VideoPortDeleteSpinLock</b> returns NO_ERROR.</p>
 
 ## -remarks
-<p>A miniport driver uses this function to delete a spin lock that was previously created in a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570289">VideoPortCreateSpinLock</a>.</p>
+<p>A miniport driver uses this function to delete a spin lock that was previously created in a call to <a href="..\video\nf-video-videoportcreatespinlock.md">VideoPortCreateSpinLock</a>.</p>
 
-<p>This routine cannot be called from an ISR or from a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570372">VideoPortSynchronizeExecution</a> callback requested where the <i>Priority</i> parameter is set to either <b>VpMediumPriority</b> or <b>VpHighPriority</b>.</p>
-
-<p>A miniport driver uses this function to delete a spin lock that was previously created in a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570289">VideoPortCreateSpinLock</a>.</p>
-
-<p>This routine cannot be called from an ISR or from a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570372">VideoPortSynchronizeExecution</a> callback requested where the <i>Priority</i> parameter is set to either <b>VpMediumPriority</b> or <b>VpHighPriority</b>.</p>
+<p>This routine cannot be called from an ISR or from a <a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a> callback requested where the <i>Priority</i> parameter is set to either <b>VpMediumPriority</b> or <b>VpHighPriority</b>.</p>
 
 ## -requirements
 <table>
@@ -144,10 +140,10 @@ VP_STATUS VideoPortDeleteSpinLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570289">VideoPortCreateSpinLock</a>
+<a href="..\video\nf-video-videoportcreatespinlock.md">VideoPortCreateSpinLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570372">VideoPortSynchronizeExecution</a>
+<a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>
 </dt>
 </dl>
 <p> </p>

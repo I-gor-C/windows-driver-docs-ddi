@@ -78,10 +78,6 @@ typedef enum _REFS_SMR_VOLUME_GC_METHOD {
 ## -remarks
 <p>Currently the only supported value  is <b>SmrGcMethodCompaction</b>.</p>
 
-<p>Currently the only supported value  is <b>SmrGcMethodCompaction</b>.</p>
-
-<p>Currently the only supported value  is <b>SmrGcMethodCompaction</b>.</p>
-
 ## -requirements
 <table>
 <tr>

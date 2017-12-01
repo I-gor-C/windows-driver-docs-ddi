@@ -137,13 +137,13 @@ HRESULT IBidiSpl2::SendRecvXMLString(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dd144981">IBidiSpl2</a>
+<a href="..\bidispl\nn-bidispl-ibidispl2.md">IBidiSpl2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+<a href="print.bidirectional_communication_interfaces">Bidirectional Communication Interfaces</a>
 </dt>
 <dt>
-<a href="NULL">Print Spooler Components</a>
+<a href="https://msdn.microsoft.com/42b5e6cf-b434-4734-86f3-b3b9d15ea468">Print Spooler Components</a>
 </dt>
 </dl>
 <p> </p>

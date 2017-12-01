@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-             Stores the values of all control registers. This structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt805836">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL</a> request.</p>
+             Stores the values of all control registers. This structure is used in the <a href="buses.ioctl_ucmtcpci_port_controller_set_control">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL</a> request.</p>
 
 
 ## -syntax
@@ -66,7 +66,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS {
 ### -field <b>PortControllerObject</b>
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 
 ### -field <b>ControlType</b>
@@ -130,7 +130,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_SET_CONTROL_IN_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt805836">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL</a>
+<a href="buses.ioctl_ucmtcpci_port_controller_set_control">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL</a>
 </dt>
 </dl>
 <p> </p>

@@ -79,7 +79,7 @@ typedef struct D3D10_2DDI_ADAPTERFUNCS {
 ### -field <b>pfnGetSupportedVersions</b>
 
 <dd>
-<p>A pointer to the driver's <a href="NULL">GetSupportedVersions</a> function that retrieves the version of the operating system that the driver supports and the hardware capabilities that are available (for example, Direct3D version 10.0, Direct3D version 10.1, and so on).</p>
+<p>A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10-2ddi-getsupportedversions.md">GetSupportedVersions</a> function that retrieves the version of the operating system that the driver supports and the hardware capabilities that are available (for example, Direct3D version 10.0, Direct3D version 10.1, and so on).</p>
 </dd>
 
 ### -field <b>pfnGetCaps</b>
@@ -126,13 +126,13 @@ typedef struct D3D10_2DDI_ADAPTERFUNCS {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541724">D3D10DDIARG_OPENADAPTER</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-openadapter.md">D3D10DDIARG_OPENADAPTER</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10-2ddi-getcaps.md">GetCaps(D3D10_2)</a>
 </dt>
 <dt>
-<a href="NULL">GetSupportedVersions</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10-2ddi-getsupportedversions.md">GetSupportedVersions</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-openadapter.md">OpenAdapter10</a>

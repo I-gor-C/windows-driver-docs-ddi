@@ -78,7 +78,7 @@ typedef struct _DXGKARG_PREEMPTCOMMAND {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561997">DXGK_PREEMPTCOMMANDFLAGS</a> structure with a reserved member or a 32-bit value. No flags are currently defined for this structure.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-preemptcommandflags.md">DXGK_PREEMPTCOMMANDFLAGS</a> structure with a reserved member or a 32-bit value. No flags are currently defined for this structure.</p>
 </dd>
 </dl>
 
@@ -110,7 +110,7 @@ typedef struct _DXGKARG_PREEMPTCOMMAND {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561997">DXGK_PREEMPTCOMMANDFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-preemptcommandflags.md">DXGK_PREEMPTCOMMANDFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-dpc.md">DxgkCbNotifyDpc</a>

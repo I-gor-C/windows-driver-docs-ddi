@@ -7,7 +7,7 @@ old-location: kernel\dma_adapter_info_v1.htm
 old-project: kernel
 ms.assetid: 5BB089B8-4384-450D-BC81-9D9D068CF4EB
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: DMA_ADAPTER_INFO_V1, DMA_ADAPTER_INFO_V1, *PDMA_ADAPTER_INFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -94,9 +94,9 @@ typedef struct _DMA_ADAPTER_INFO_V1 {
 </dl>
 
 ## -remarks
-<p>The <b>V1</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450993">DMA_ADAPTER_INFO</a> structure is a structure of type <b>DMA_ADAPTER_INFO_V1</b>.</p>
+<p>The <b>V1</b> member of the <a href="..\wdm\ns-wdm--dma-adapter-info.md">DMA_ADAPTER_INFO</a> structure is a structure of type <b>DMA_ADAPTER_INFO_V1</b>.</p>
 
-<p>A driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/hh451121">GetDmaAdapterInfo</a> to obtain information about the hardware capabilities of a system DMA channel. <b>GetDmaAdapterInfo</b> writes this information into the <b>V1</b> member of a caller-supplied <b>DMA_ADAPTER_INFO</b> structure.</p>
+<p>A driver calls <a href="kernel.getdmaadapterinfo">GetDmaAdapterInfo</a> to obtain information about the hardware capabilities of a system DMA channel. <b>GetDmaAdapterInfo</b> writes this information into the <b>V1</b> member of a caller-supplied <b>DMA_ADAPTER_INFO</b> structure.</p>
 
 ## -requirements
 <table>
@@ -123,12 +123,12 @@ typedef struct _DMA_ADAPTER_INFO_V1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450993">DMA_ADAPTER_INFO</a>
+<a href="..\wdm\ns-wdm--dma-adapter-info.md">DMA_ADAPTER_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451121">GetDmaAdapterInfo</a>
+<a href="kernel.getdmaadapterinfo">GetDmaAdapterInfo</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DMA_ADAPTER_INFO_V1 structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DMA_ADAPTER_INFO_V1 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

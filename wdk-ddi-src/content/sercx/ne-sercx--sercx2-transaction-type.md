@@ -86,10 +86,6 @@ typedef enum _SERCX2_TRANSACTION_TYPE {
 ## -remarks
 <p>The <a href="..\sercx\nc-sercx-evt-sercx2-select-next-receive-transaction-type.md">EvtSerCx2SelectNextReceiveTransactionType</a> and <a href="..\sercx\nc-sercx-evt-sercx2-select-next-transmit-transaction-type.md">EvtSerCx2SelectNextTransmitTransactionType</a> event callback functions return <b>SERCX2_TRANSACTION_TYPE</b> enumeration values.</p>
 
-<p>The <a href="..\sercx\nc-sercx-evt-sercx2-select-next-receive-transaction-type.md">EvtSerCx2SelectNextReceiveTransactionType</a> and <a href="..\sercx\nc-sercx-evt-sercx2-select-next-transmit-transaction-type.md">EvtSerCx2SelectNextTransmitTransactionType</a> event callback functions return <b>SERCX2_TRANSACTION_TYPE</b> enumeration values.</p>
-
-<p>The <a href="..\sercx\nc-sercx-evt-sercx2-select-next-receive-transaction-type.md">EvtSerCx2SelectNextReceiveTransactionType</a> and <a href="..\sercx\nc-sercx-evt-sercx2-select-next-transmit-transaction-type.md">EvtSerCx2SelectNextTransmitTransactionType</a> event callback functions return <b>SERCX2_TRANSACTION_TYPE</b> enumeration values.</p>
-
 ## -requirements
 <table>
 <tr>

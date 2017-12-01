@@ -7,7 +7,7 @@ old-location: bltooth\bthx_sco_support.htm
 old-project: bltooth
 ms.assetid: A9B303C7-868D-47EB-8279-9F655F58630C
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: BTHDDI_SDP_PARSE_INTERFACE, BTHDDI_SDP_PARSE_INTERFACE, *PBTHDDI_SDP_PARSE_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,23 +76,9 @@ typedef enum _BTHX_SCO_SUPPORT {
 </dl>
 
 ## -remarks
-<p>Upon starting, the Bluetooth stack will query the transport driver for its capabilities by sending the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450883">IOCTL_BTHX_QUERY_CAPABILITIES</a> IOCTL.
+<p>Upon starting, the Bluetooth stack will query the transport driver for its capabilities by sending the <a href="..\bthxddi\ni-bthxddi-ioctl-bthx-query-capabilities.md">IOCTL_BTHX_QUERY_CAPABILITIES</a> IOCTL.
 
-The output buffer of this IOCTL is defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450833">BTHX_CAPABILITIES</a> structure which contains the 
-BTHX_SCO_SUPPORT structure.
-
-The transport driver must specify <b>ScoSupportHCIBypass</b>.</p>
-
-<p>Upon starting, the Bluetooth stack will query the transport driver for its capabilities by sending the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450883">IOCTL_BTHX_QUERY_CAPABILITIES</a> IOCTL.
-
-The output buffer of this IOCTL is defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450833">BTHX_CAPABILITIES</a> structure which contains the 
-BTHX_SCO_SUPPORT structure.
-
-The transport driver must specify <b>ScoSupportHCIBypass</b>.</p>
-
-<p>Upon starting, the Bluetooth stack will query the transport driver for its capabilities by sending the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450883">IOCTL_BTHX_QUERY_CAPABILITIES</a> IOCTL.
-
-The output buffer of this IOCTL is defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450833">BTHX_CAPABILITIES</a> structure which contains the 
+The output buffer of this IOCTL is defined by the <a href="..\bthxddi\ns-bthxddi--bthx-capabilities.md">BTHX_CAPABILITIES</a> structure which contains the 
 BTHX_SCO_SUPPORT structure.
 
 The transport driver must specify <b>ScoSupportHCIBypass</b>.</p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> routine allocates and formats a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure that is required for a request to select an interface or change its alternate setting.
+<p>The <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> routine allocates and formats a <a href="..\usb\ns-usb--urb.md">URB</a> structure that is required for a request to select an interface or change its alternate setting.
 
 </p>
 
@@ -63,25 +63,25 @@ NTSTATUS USBD_SelectInterfaceUrbAllocateAndBuild(
 ### -param <i>USBDHandle</i> [in]
 
 <dd>
-<p>USBD handle that is retrieved by the client driver in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406241">USBD_CreateHandle</a> routine.</p>
+<p>USBD handle that is retrieved by the client driver in a previous call to  the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>
 </dd>
 
 ### -param <i>ConfigurationHandle</i> [in]
 
 <dd>
-<p>Handle returned by the USB driver stack in the  <b>UrbSelectConfiguration.ConfigurationHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure, after the driver stack completes a select-configuration  request.</p>
+<p>Handle returned by the USB driver stack in the  <b>UrbSelectConfiguration.ConfigurationHandle</b> member of the <a href="..\usb\ns-usb--urb.md">URB</a> structure, after the driver stack completes a select-configuration  request.</p>
 </dd>
 
 ### -param <i>InterfaceList</i> [in]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff539076">USBD_INTERFACE_LIST_ENTRY</a>    structure. For more information, see Remarks.</p>
+<p>Pointer to a caller-allocated <a href="..\usbdlib\ns-usbdlib--usbd-interface-list-entry.md">USBD_INTERFACE_LIST_ENTRY</a>    structure. For more information, see Remarks.</p>
 </dd>
 
 ### -param <i>Urb</i> [out]
 
 <dd>
-<p>Pointer to a  <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure that receives the URB allocated by <b>USBD_SelectInterfaceUrbAllocateAndBuild</b>. The client driver must free the URB when the driver has finished using it by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh406252">USBD_UrbFree</a>.</p>
+<p>Pointer to a  <a href="..\usb\ns-usb--urb.md">URB</a> structure that receives the URB allocated by <b>USBD_SelectInterfaceUrbAllocateAndBuild</b>. The client driver must free the URB when the driver has finished using it by calling <a href="..\usbdlib\nf-usbdlib-usbd-urbfree.md">USBD_UrbFree</a>.</p>
 </dd>
 </dl>
 
@@ -100,27 +100,14 @@ NTSTATUS USBD_SelectInterfaceUrbAllocateAndBuild(
 ## -remarks
 <p>The client driver must call the <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> routine after selecting a configuration in the device. After a select-configuration request completes, the client driver receives a configuration handle in the <b>UrbSelectConfiguration.ConfigurationHandle</b> member of the URB. That handle must be specified in the <i>ConfigurationHandle</i> parameter of <b>USBD_SelectInterfaceUrbAllocateAndBuild</b>. </p>
 
-<p>A client driver calls <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> to allocate and build an URB for a select-interface request to change the alternate setting of an interface, in the selected configuration.  In the call to <b>USBD_SelectInterfaceUrbAllocateAndBuild</b>, the client driver must allocate and provide a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539076">USBD_INTERFACE_LIST_ENTRY</a> structure. The client driver must set the structure members as follows: </p>
+<p>A client driver calls <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> to allocate and build an URB for a select-interface request to change the alternate setting of an interface, in the selected configuration.  In the call to <b>USBD_SelectInterfaceUrbAllocateAndBuild</b>, the client driver must allocate and provide a pointer to a <a href="..\usbdlib\ns-usbdlib--usbd-interface-list-entry.md">USBD_INTERFACE_LIST_ENTRY</a> structure. The client driver must set the structure members as follows: </p>
 
-<p><b>USBD_SelectInterfaceUrbAllocateAndBuild</b> allocates an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure and fills it with information about the specified interface setting, and endpoints. The routine also allocates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> structure.  The structure members (except pipe information) are filled based on the specified interface descriptor. 
-<b>USBD_SelectInterfaceUrbAllocateAndBuild</b> sets the <b>Interface</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539076">USBD_INTERFACE_LIST_ENTRY</a> to the address of <b>USBD_INTERFACE_INFORMATION</b> in the URB. The client driver can send this URB to the USB driver stack to select an alternate setting in the interface.</p>
-
-<p>A client driver cannot change alternate settings in multiple interfaces in a single select-interface request. Each request targets only one interface.</p>
-
-<p>After the select-interface request is complete, the USB driver stack populates <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> with information about pipes opened for endpoints that are defined in the selected alternate setting. The client driver can obtain those pipe handles by inspecting the  array pointed to by the <b>Pipes</b> member of <b>USBD_INTERFACE_INFORMATION</b>, and store the handles for future  data transfer requests.  </p>
-
-<p>The client driver can reuse an URB allocated by <b>USBD_SelectInterfaceUrbAllocateAndBuild</b><i> only</i> for another select-interface request for the same alternate setting.  The client driver <i>must not</i> reuse the URB for any other type of request, or for another select-interface request for a different alternate setting.  Instead of allocating a new URB, reusing an existing URB  is the preferred approach in certain scenarios. Consider a USB audio device that has an interface with two alternate settings, defined for two bandwidth requirements. Setting 0 is defined  for zero bandwidth;  Setting 1 is defined to use a certain amount of bandwidth. The client driver wants to frequently switch between the two settings depending on whether the device is in use. To implement this scenario, the client driver can allocate two URBs for select-interface requests, one per setting. The client driver can use (and reuse) an URB for a select-interface request to select Setting 1 when there are sounds to send to the device. To conserve bandwidth when there are no sounds, the client driver can use (and reuse) the other URB to switch to Setting 0. This implementation prevents the client driver from allocating URBs for each of those select-interface requests, every time the driver needs to change the setting. </p>
-
-<p>The client driver must call the <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> routine after selecting a configuration in the device. After a select-configuration request completes, the client driver receives a configuration handle in the <b>UrbSelectConfiguration.ConfigurationHandle</b> member of the URB. That handle must be specified in the <i>ConfigurationHandle</i> parameter of <b>USBD_SelectInterfaceUrbAllocateAndBuild</b>. </p>
-
-<p>A client driver calls <b>USBD_SelectInterfaceUrbAllocateAndBuild</b> to allocate and build an URB for a select-interface request to change the alternate setting of an interface, in the selected configuration.  In the call to <b>USBD_SelectInterfaceUrbAllocateAndBuild</b>, the client driver must allocate and provide a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539076">USBD_INTERFACE_LIST_ENTRY</a> structure. The client driver must set the structure members as follows: </p>
-
-<p><b>USBD_SelectInterfaceUrbAllocateAndBuild</b> allocates an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure and fills it with information about the specified interface setting, and endpoints. The routine also allocates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> structure.  The structure members (except pipe information) are filled based on the specified interface descriptor. 
-<b>USBD_SelectInterfaceUrbAllocateAndBuild</b> sets the <b>Interface</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539076">USBD_INTERFACE_LIST_ENTRY</a> to the address of <b>USBD_INTERFACE_INFORMATION</b> in the URB. The client driver can send this URB to the USB driver stack to select an alternate setting in the interface.</p>
+<p><b>USBD_SelectInterfaceUrbAllocateAndBuild</b> allocates an <a href="..\usb\ns-usb--urb.md">URB</a> structure and fills it with information about the specified interface setting, and endpoints. The routine also allocates a <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structure.  The structure members (except pipe information) are filled based on the specified interface descriptor. 
+<b>USBD_SelectInterfaceUrbAllocateAndBuild</b> sets the <b>Interface</b> member of <a href="..\usbdlib\ns-usbdlib--usbd-interface-list-entry.md">USBD_INTERFACE_LIST_ENTRY</a> to the address of <b>USBD_INTERFACE_INFORMATION</b> in the URB. The client driver can send this URB to the USB driver stack to select an alternate setting in the interface.</p>
 
 <p>A client driver cannot change alternate settings in multiple interfaces in a single select-interface request. Each request targets only one interface.</p>
 
-<p>After the select-interface request is complete, the USB driver stack populates <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> with information about pipes opened for endpoints that are defined in the selected alternate setting. The client driver can obtain those pipe handles by inspecting the  array pointed to by the <b>Pipes</b> member of <b>USBD_INTERFACE_INFORMATION</b>, and store the handles for future  data transfer requests.  </p>
+<p>After the select-interface request is complete, the USB driver stack populates <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> with information about pipes opened for endpoints that are defined in the selected alternate setting. The client driver can obtain those pipe handles by inspecting the  array pointed to by the <b>Pipes</b> member of <b>USBD_INTERFACE_INFORMATION</b>, and store the handles for future  data transfer requests.  </p>
 
 <p>The client driver can reuse an URB allocated by <b>USBD_SelectInterfaceUrbAllocateAndBuild</b><i> only</i> for another select-interface request for the same alternate setting.  The client driver <i>must not</i> reuse the URB for any other type of request, or for another select-interface request for a different alternate setting.  Instead of allocating a new URB, reusing an existing URB  is the preferred approach in certain scenarios. Consider a USB audio device that has an interface with two alternate settings, defined for two bandwidth requirements. Setting 0 is defined  for zero bandwidth;  Setting 1 is defined to use a certain amount of bandwidth. The client driver wants to frequently switch between the two settings depending on whether the device is in use. To implement this scenario, the client driver can allocate two URBs for select-interface requests, one per setting. The client driver can use (and reuse) an URB for a select-interface request to select Setting 1 when there are sounds to send to the device. To conserve bandwidth when there are no sounds, the client driver can use (and reuse) the other URB to switch to Setting 0. This implementation prevents the client driver from allocating URBs for each of those select-interface requests, every time the driver needs to change the setting. </p>
 
@@ -177,10 +164,10 @@ NTSTATUS USBD_SelectInterfaceUrbAllocateAndBuild(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406241">USBD_CreateHandle</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406243">USBD_SelectConfigUrbAllocateAndBuild</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>
 </dt>
 </dl>
 <p> </p>

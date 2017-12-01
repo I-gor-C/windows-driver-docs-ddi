@@ -79,19 +79,19 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH {
 ### -field <b>ImportanceOrdinal</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546697">D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE</a> enumerator that specifies the importance of the path relative to other paths. For example, the path presenting the primary view might have higher importance than other paths so that it will be assigned the best source and target mode sets. Path importance ordinal numbers are unique within a given video present network (VidPN) topology. </p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-importance.md">D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE</a> enumerator that specifies the importance of the path relative to other paths. For example, the path presenting the primary view might have higher importance than other paths so that it will be assigned the best source and target mode sets. Path importance ordinal numbers are unique within a given video present network (VidPN) topology. </p>
 </dd>
 
 ### -field <b>ContentTransformation</b>
 
 <dd>
-<p> A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546719">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> enumerator that indicates the transformation applied to the content presented on the video present path.</p>
+<p> A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> enumerator that indicates the transformation applied to the content presented on the video present path.</p>
 </dd>
 
 ### -field <b>VisibleFromActiveTLOffset</b>
 
 <dd>
-<p>A D3DKMDT_2DOFFSET structure that contains the offset, in pixels, from the top-left corner of the video signal's active pixels to the top-left corner of the monitor's visible pixels. The D3DKMDT_2DOFFSET data type is defined in <i>D3dkmdt.h</i> as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545977">D3DKMDT_2DREGION</a> structure.</p>
+<p>A D3DKMDT_2DOFFSET structure that contains the offset, in pixels, from the top-left corner of the video signal's active pixels to the top-left corner of the monitor's visible pixels. The D3DKMDT_2DOFFSET data type is defined in <i>D3dkmdt.h</i> as a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-2dregion.md">D3DKMDT_2DREGION</a> structure.</p>
 </dd>
 
 ### -field <b>VisibleFromActiveBROffset</b>
@@ -103,31 +103,31 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH {
 ### -field <b>VidPnTargetColorBasis</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545984">D3DKMDT_COLOR_BASIS</a> enumerator that specifies the color basis used by the path's video present target.</p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-color-basis.md">D3DKMDT_COLOR_BASIS</a> enumerator that specifies the color basis used by the path's video present target.</p>
 </dd>
 
 ### -field <b>VidPnTargetColorCoeffDynamicRanges</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545986">D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES</a> structure that specifies a range for each channel in the color basis used by the path's video present target.</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-color-coeff-dynamic-ranges.md">D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES</a> structure that specifies a range for each channel in the color basis used by the path's video present target.</p>
 </dd>
 
 ### -field <b>Content</b>
 
 <dd>
-<p>A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546652">D3DKMDT_VIDPN_PRESENT_PATH_CONTENT</a> enumeration that indicates the type of content, graphics or video, displayed by the path.</p>
+<p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-content.md">D3DKMDT_VIDPN_PRESENT_PATH_CONTENT</a> enumeration that indicates the type of content, graphics or video, displayed by the path.</p>
 </dd>
 
 ### -field <b>CopyProtection</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546656">D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION</a> structure that describes the copy protection supported by, and currently active on, the path.</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-copyprotection.md">D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION</a> structure that describes the copy protection supported by, and currently active on, the path.</p>
 </dd>
 
 ### -field <b>GammaRamp</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546014">D3DKMDT_GAMMA_RAMP</a> structure that contains a description of a gamma lookup table and a pointer to the lookup table.</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-gamma-ramp.md">D3DKMDT_GAMMA_RAMP</a> structure that contains a description of a gamma lookup table and a pointer to the lookup table.</p>
 </dd>
 </dl>
 

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>A printer interface DLL's <b>DrvConvertDevMode</b> function converts a printer's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure from one version to another.</p>
+<p>A printer interface DLL's <b>DrvConvertDevMode</b> function converts a printer's <a href="display.devmodew">DEVMODEW</a> structure from one version to another.</p>
 
 
 ## -syntax
@@ -122,18 +122,6 @@ BOOL DrvConvertDevMode(
 <p>If the operation succeeds, the function should return <b>TRUE</b>; otherwise, it should call SetLastError to set an error code, and return <b>FALSE</b>.</p>
 
 ## -remarks
-<p>In a client/server environment, a client might be running one version of the operating system or printer driver while the server (spooler) is running another, which means a printer's DEVMODEW structure definition might be inconsistent between the client and server. The <b>DrvConvertDevMode</b> function must be capable of performing conversions from one version of the printer's DEVMODEW structure to another.</p>
-
-<p>When converting from one DEVMODEW version to another, both public and private DEVMODEW members must be included.</p>
-
-<p>The printer name pointed to by <i>pPrinterName</i> can be used as an input argument to the <b>OpenPrinter</b> function (described in the Microsoft Windows SDK documentation), which can be called to obtain stored default values when the CDM_DRIVER_DEFAULT flag is received. Note that the printer name string must be not be modified in any way prior to a call to <b>OpenPrinter</b>. In addition, a call to <b>OpenPrinter</b> must be in the same thread as was used to call <b>DrvConvertDevMode</b>. </p>
-
-<p>The function should verify that both <i>pdmIn</i> and <i>pdmOut</i> (if applicable) point to valid DEVMODEW structures. If they do not, the function should call SetLastError(ERROR_INVALID_PARAMETER) and return <b>FALSE</b>. If the output DEVMODEW size specified by <i>pcbNeeded</i> is too small, the driver should overwrite the size value supplied by <i>pcbNeeded</i> with the required buffer size, call SetLastError(ERROR_INSUFFICIENT_BUFFER), and return <b>FALSE</b>.</p>
-
-<p>The <b>DrvConvertDevMode</b> function runs in the spooler's context and must therefore not display a user interface.</p>
-
-<p>When <b>DrvConvertDevMode</b> is called with a <b>NULL</b> DEVMODEW structure pointer in the <i>pdmOut </i>parameter to get the buffer size, the driver is expected to set the last error to ERROR_INSUFFICIENT_BUFFER. If the last error is not set to this value, the spooler assumes a general error.</p>
-
 <p>In a client/server environment, a client might be running one version of the operating system or printer driver while the server (spooler) is running another, which means a printer's DEVMODEW structure definition might be inconsistent between the client and server. The <b>DrvConvertDevMode</b> function must be capable of performing conversions from one version of the printer's DEVMODEW structure to another.</p>
 
 <p>When converting from one DEVMODEW version to another, both public and private DEVMODEW members must be included.</p>

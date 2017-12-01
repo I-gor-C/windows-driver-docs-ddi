@@ -65,11 +65,7 @@ VOID FsRtlIncrementCcFastReadResourceMiss(
 <p>This routine does not return a value.</p>
 
 ## -remarks
-<p><b>FsRtlIncrementCcFastReadResourceMiss </b>increments the CcFastReadReadResourceMiss performance counter in the per processor control block of cache manager system counters. This counter indicates that a fast I/O read operation (<a href="https://msdn.microsoft.com/library/windows/hardware/ff545791">FsRtlCopyRead</a>) was called, but fast I/O was not possible because the file resource could not be acquired for shared access. </p>
-
-<p>File system drivers should call this function to update the performance counter if the driver chooses to override the default fast I/O read handler.</p>
-
-<p><b>FsRtlIncrementCcFastReadResourceMiss </b>increments the CcFastReadReadResourceMiss performance counter in the per processor control block of cache manager system counters. This counter indicates that a fast I/O read operation (<a href="https://msdn.microsoft.com/library/windows/hardware/ff545791">FsRtlCopyRead</a>) was called, but fast I/O was not possible because the file resource could not be acquired for shared access. </p>
+<p><b>FsRtlIncrementCcFastReadResourceMiss </b>increments the CcFastReadReadResourceMiss performance counter in the per processor control block of cache manager system counters. This counter indicates that a fast I/O read operation (<a href="ifsk.fsrtlcopyread">FsRtlCopyRead</a>) was called, but fast I/O was not possible because the file resource could not be acquired for shared access. </p>
 
 <p>File system drivers should call this function to update the performance counter if the driver chooses to override the default fast I/O read handler.</p>
 
@@ -136,16 +132,16 @@ VOID FsRtlIncrementCcFastReadResourceMiss(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545791">FsRtlCopyRead</a>
+<a href="ifsk.fsrtlcopyread">FsRtlCopyRead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546078">FsRtlIncrementCcFastReadNotPossible</a>
+<a href="..\ntifs\nf-ntifs-fsrtlincrementccfastreadnotpossible.md">FsRtlIncrementCcFastReadNotPossible</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546085">FsRtlIncrementCcFastReadNoWait</a>
+<a href="..\ntifs\nf-ntifs-fsrtlincrementccfastreadnowait.md">FsRtlIncrementCcFastReadNoWait</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546096">FsRtlIncrementCcFastReadWait</a>
+<a href="..\ntifs\nf-ntifs-fsrtlincrementccfastreadwait.md">FsRtlIncrementCcFastReadWait</a>
 </dt>
 </dl>
 <p> </p>

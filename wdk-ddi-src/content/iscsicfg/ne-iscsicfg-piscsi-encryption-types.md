@@ -76,11 +76,7 @@ typedef enum  {
 </dl>
 
 ## -remarks
-<p>The ISCSI_ENCRYPTION_TYPES enumeration is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a>.</p>
-
-<p>The ISCSI_ENCRYPTION_TYPES enumeration is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a>.</p>
-
-<p>The ISCSI_ENCRYPTION_TYPES enumeration is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a>.</p>
+<p>The ISCSI_ENCRYPTION_TYPES enumeration is used with the <a href="storage.msiscsi_securitycapabilities_wmi_class">MSiSCSI_SecurityCapabilities WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -99,10 +95,10 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563130">MSiSCSI_SecurityCapabilities</a>
+<a href="..\iscsicfg\ns-iscsicfg--msiscsi-securitycapabilities.md">MSiSCSI_SecurityCapabilities</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a>
+<a href="storage.msiscsi_securitycapabilities_wmi_class">MSiSCSI_SecurityCapabilities WMI Class</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rildeletemsgparams_2.htm
 old-project: netvista
 ms.assetid: 793e9724-fff0-4bdc-a8ed-1e62fa54b4df
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILDELETEMSGPARAMS, RILDELETEMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

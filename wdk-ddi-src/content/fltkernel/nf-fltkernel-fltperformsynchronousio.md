@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>A minifilter driver calls <b>FltPerformSynchronousIo</b> to initiate a synchronous I/O operation after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541703">FltAllocateCallbackData</a> to allocate a callback data structure for the operation. </p>
+<p>A minifilter driver calls <b>FltPerformSynchronousIo</b> to initiate a synchronous I/O operation after calling <a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a> to allocate a callback data structure for the operation. </p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ VOID FltPerformSynchronousIo(
 ### -param <i>CallbackData</i> [in, out]
 
 <dd>
-<p>Pointer to a callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure allocated by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541703">FltAllocateCallbackData</a>. This parameter is required and cannot be <b>NULL</b>. The caller is responsible for freeing this structure when it is no longer needed by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff542949">FltFreeCallbackData</a>. </p>
+<p>Pointer to a callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure allocated by a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>. This parameter is required and cannot be <b>NULL</b>. The caller is responsible for freeing this structure when it is no longer needed by calling <a href="..\fltkernel\nf-fltkernel-fltfreecallbackdata.md">FltFreeCallbackData</a>. </p>
 </dd>
 </dl>
 
@@ -69,199 +69,51 @@ VOID FltPerformSynchronousIo(
 
 <p>Minifilter drivers can only initiate IRP-based I/O operations. They cannot initiate fast I/O or file system filter (FSFilter) callback operations. </p>
 
-<p><b>FltPerformSynchronousIo</b> sends the I/O operation only to the minifilter driver instances attached below the initiating instance (specified in the <i>Instance</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541703">FltAllocateCallbackData</a>), and the file system. Minifilter drivers attached above the specified instance do not receive the I/O operation. </p>
+<p><b>FltPerformSynchronousIo</b> sends the I/O operation only to the minifilter driver instances attached below the initiating instance (specified in the <i>Instance</i> parameter to <a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>), and the file system. Minifilter drivers attached above the specified instance do not receive the I/O operation. </p>
 
-<p>Minifilter drivers should use <b>FltPerformSynchronousIo</b> only in cases where routines such as the following cannot be used: </p><dl>
-<dd>
+<p>Minifilter drivers should use <b>FltPerformSynchronousIo</b> only in cases where routines such as the following cannot be used: </p>
+
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541863">FltClose</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543439">FltQueryInformationFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544516">FltSetInformationFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544564">FltSetVolumeInformation</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544589">FltTagFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544608">FltUntagFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a>
-</p>
-</dd>
-</dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541863">FltClose</a>
+<a href="..\fltkernel\nf-fltkernel-fltclose.md">FltClose</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543439">FltQueryInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544516">FltSetInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544564">FltSetVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetvolumeinformation.md">FltSetVolumeInformation</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544589">FltTagFile</a>
+<a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544608">FltUntagFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltuntagfile.md">FltUntagFile</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
 </p>
 
-<p>After <b>FltPerformSynchronousIo</b> returns, the caller can reissue the I/O operation by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544311">FltReissueSynchronousIo</a>. Alternatively, the caller can free the callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff542949">FltFreeCallbackData</a> or prepare it to be reused by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544358">FltReuseCallbackData</a>. </p>
-
-<p>A minifilter driver calls <b>FltPerformSynchronousIo</b> to initiate a synchronous I/O operation. </p>
-
-<p>Minifilter drivers can only initiate IRP-based I/O operations. They cannot initiate fast I/O or file system filter (FSFilter) callback operations. </p>
-
-<p><b>FltPerformSynchronousIo</b> sends the I/O operation only to the minifilter driver instances attached below the initiating instance (specified in the <i>Instance</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541703">FltAllocateCallbackData</a>), and the file system. Minifilter drivers attached above the specified instance do not receive the I/O operation. </p>
-
-<p>Minifilter drivers should use <b>FltPerformSynchronousIo</b> only in cases where routines such as the following cannot be used: </p><dl>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541863">FltClose</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543439">FltQueryInformationFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544516">FltSetInformationFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544564">FltSetVolumeInformation</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544589">FltTagFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544608">FltUntagFile</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a>
-</p>
-</dd>
-</dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541863">FltClose</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543439">FltQueryInformationFile</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544516">FltSetInformationFile</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544564">FltSetVolumeInformation</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544589">FltTagFile</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544608">FltUntagFile</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a>
-</p>
-
-<p>After <b>FltPerformSynchronousIo</b> returns, the caller can reissue the I/O operation by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544311">FltReissueSynchronousIo</a>. Alternatively, the caller can free the callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff542949">FltFreeCallbackData</a> or prepare it to be reused by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544358">FltReuseCallbackData</a>. </p>
+<p>After <b>FltPerformSynchronousIo</b> returns, the caller can reissue the I/O operation by calling <a href="..\fltkernel\nf-fltkernel-fltreissuesynchronousio.md">FltReissueSynchronousIo</a>. Alternatively, the caller can free the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure by calling <a href="..\fltkernel\nf-fltkernel-fltfreecallbackdata.md">FltFreeCallbackData</a> or prepare it to be reused by calling <a href="..\fltkernel\nf-fltkernel-fltreusecallbackdata.md">FltReuseCallbackData</a>. </p>
 
 ## -requirements
 <table>
@@ -318,52 +170,52 @@ VOID FltPerformSynchronousIo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541703">FltAllocateCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541863">FltClose</a>
+<a href="..\fltkernel\nf-fltkernel-fltclose.md">FltClose</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542949">FltFreeCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreecallbackdata.md">FltFreeCallbackData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543439">FltQueryInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544311">FltReissueSynchronousIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltreissuesynchronousio.md">FltReissueSynchronousIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544358">FltReuseCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltreusecallbackdata.md">FltReuseCallbackData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544516">FltSetInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544564">FltSetVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetvolumeinformation.md">FltSetVolumeInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544589">FltTagFile</a>
+<a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544608">FltUntagFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltuntagfile.md">FltUntagFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
 </dt>
 </dl>
 <p> </p>

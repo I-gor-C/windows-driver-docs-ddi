@@ -152,7 +152,7 @@ NTSTATUS RegisterOpRegionHandler(
 ### -param <i>Handler</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536153">ACPI_OP_REGION_HANDLER</a>-typed operation region handler (supplied by an ACPI device function driver).</p>
+<p>Pointer to the <a href="..\oprghdlr\nc-oprghdlr-acpi-op-region-handler.md">ACPI_OP_REGION_HANDLER</a>-typed operation region handler (supplied by an ACPI device function driver).</p>
 </dd>
 
 ### -param <i>Context</i> [in]
@@ -188,10 +188,6 @@ NTSTATUS RegisterOpRegionHandler(
 <p> </p>
 
 ## -remarks
-<p>The operation region context specified by <i>Context</i> is device-specific and is only used by the function driver. Typically, the context is the device extension for the functional device object (<a href="wdkgloss.f#wdkgloss.fdo#wdkgloss.fdo"><i>FDO</i></a>). The ACPI driver passes this context back to the function driver when it calls the operation region handler. The operation region object is only used by a function driver to uniquely identify the operation region when it deregisters the operation region handler.</p>
-
-<p>For more information about operation regions, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/supporting-an-operation-region">Supporting an Operation Region</a>. </p>
-
 <p>The operation region context specified by <i>Context</i> is device-specific and is only used by the function driver. Typically, the context is the device extension for the functional device object (<a href="wdkgloss.f#wdkgloss.fdo#wdkgloss.fdo"><i>FDO</i></a>). The ACPI driver passes this context back to the function driver when it calls the operation region handler. The operation region object is only used by a function driver to uniquely identify the operation region when it deregisters the operation region handler.</p>
 
 <p>For more information about operation regions, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/supporting-an-operation-region">Supporting an Operation Region</a>. </p>
@@ -241,10 +237,10 @@ NTSTATUS RegisterOpRegionHandler(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536135">DeRegisterOpRegionHandler</a>
+<a href="..\oprghdlr\nf-oprghdlr-deregisteropregionhandler.md">DeRegisterOpRegionHandler</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536153">ACPI_OP_REGION_HANDLER</a>
+<a href="..\oprghdlr\nc-oprghdlr-acpi-op-region-handler.md">ACPI_OP_REGION_HANDLER</a>
 </dt>
 </dl>
 <p> </p>

@@ -111,7 +111,7 @@ typedef struct _D3DDDI_ADAPTERFUNCS {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdevice.md">CreateDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543226">D3DDDIARG_OPENADAPTER</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-openadapter.md">D3DDDIARG_OPENADAPTER</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a>

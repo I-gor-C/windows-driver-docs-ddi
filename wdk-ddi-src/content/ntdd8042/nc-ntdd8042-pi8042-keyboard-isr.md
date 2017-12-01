@@ -72,13 +72,13 @@ BOOLEAN KeyboardIsr(
 ### -param <i>CurrentInput</i> [in]
 
 <dd>
-<p>Pointer to the input <a href="https://msdn.microsoft.com/library/windows/hardware/ff542337">KEYBOARD_INPUT_DATA</a> structure that is being constructed by the ISR.</p>
+<p>Pointer to the input <a href="hid.keyboard_input_data">KEYBOARD_INPUT_DATA</a> structure that is being constructed by the ISR.</p>
 </dd>
 
 ### -param <i>CurrentOutput</i> [in]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543218">OUTPUT_PACKET</a> structure, which specifies an array of bytes that is being written to the hardware device.</p>
+<p>Pointer to an <a href="..\ntdd8042\ns-ntdd8042--output-packet.md">OUTPUT_PACKET</a> structure, which specifies an array of bytes that is being written to the hardware device.</p>
 </dd>
 
 ### -param <i>StatusByte</i> [in]
@@ -102,7 +102,7 @@ BOOLEAN KeyboardIsr(
 ### -param <i>ScanState</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542342">KEYBOARD_SCAN_STATE</a> enumeration value, which identifies the keyboard scan state.</p>
+<p>Pointer to a <a href="..\ntdd8042\ne-ntdd8042--keyboard-scan-state.md">KEYBOARD_SCAN_STATE</a> enumeration value, which identifies the keyboard scan state.</p>
 </dd>
 </dl>
 
@@ -110,12 +110,6 @@ BOOLEAN KeyboardIsr(
 <p>A PI8042_KEYBOARD_ISR callback returns <b>TRUE</b> if the I8042prt keyboard ISR should continue; otherwise it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>A PI8042_KEYBOARD_ISR callback is not needed if the default operation of the I8042prt keyboard ISR is sufficient. </p>
-
-<p>An optional, vendor-supplied, upper-level keyboard filter driver can provide a PI8042_KEYBOARD_ISR callback. The I8042prt ISR calls the callback after it validates the interrupt and reads the scan code. </p>
-
-<p>The PI8042_KEYBOARD_ISR callback runs in kernel mode at the IRQL of the I8042prt keyboard ISR.</p>
-
 <p>A PI8042_KEYBOARD_ISR callback is not needed if the default operation of the I8042prt keyboard ISR is sufficient. </p>
 
 <p>An optional, vendor-supplied, upper-level keyboard filter driver can provide a PI8042_KEYBOARD_ISR callback. The I8042prt ISR calls the callback after it validates the interrupt and reads the scan code. </p>
@@ -160,16 +154,16 @@ BOOLEAN KeyboardIsr(
 <a href="https://msdn.microsoft.com/0feca7de-aa80-4d1e-a5fc-901c18169649">KbFilter_IsrHook</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542337">KEYBOARD_INPUT_DATA</a>
+<a href="hid.keyboard_input_data">KEYBOARD_INPUT_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542342">KEYBOARD_SCAN_STATE</a>
+<a href="..\ntdd8042\ne-ntdd8042--keyboard-scan-state.md">KEYBOARD_SCAN_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543218">OUTPUT_PACKET</a>
+<a href="..\ntdd8042\ns-ntdd8042--output-packet.md">OUTPUT_PACKET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543248">PI8042_KEYBOARD_ISR</a>
+<a href="..\ntdd8042\nc-ntdd8042-pi8042-keyboard-isr.md">PI8042_KEYBOARD_ISR</a>
 </dt>
 </dl>
 <p> </p>

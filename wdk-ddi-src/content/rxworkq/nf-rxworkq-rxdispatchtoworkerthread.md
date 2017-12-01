@@ -116,21 +116,7 @@ NTSTATUS RxDispatchToWorkerThread(
 
 <p>For a very infrequent operation, space can be conserved by dynamically allocating and freeing memory for the work queue item when its is needed. The <b>RxDispatchToWorkerThread</b> routine would be used in this case </p>
 
-<p>When an operation is going to be repeatedly dispatched, time is conserved by allocating in advance the WORK_QUEUE_ITEM as part of the data structure to be dispatched and using this pre-allocated memory repeatedly. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554620">RxPostToWorkerThread</a> routine would be used in this case </p>
-
-<p>The trade off between the two dispatching operations is time versus space (memory usage).</p>
-
-<p>The <b>RxDispatchToWorkerThread</b> invokes a routine in the context of a worker thread. The memory for the WORK_QUEUE_ITEM is allocated by the <b>RxDispatchToWorkerThread</b> routine from non-paged pool memory. Hence this routine can fail if insufficient resources are available. </p>
-
-<p>The current implementation of the <b>RxDispatchToWorkerThread </b>routine queues work onto the same processor from which the call originated. </p>
-
-<p>If the <b>RxDispatchToWorkerThread </b>routine fails on a debug build, the <b>_RxLog</b> routine is called with details of the error. If the <b>RxDispatchToWorkerThread </b>routine fails and WMI is enabled in the kernel, details of the error will be logged with WMI.</p>
-
-<p>There are two common cases of dispatching operations to worker threads:</p>
-
-<p>For a very infrequent operation, space can be conserved by dynamically allocating and freeing memory for the work queue item when its is needed. The <b>RxDispatchToWorkerThread</b> routine would be used in this case </p>
-
-<p>When an operation is going to be repeatedly dispatched, time is conserved by allocating in advance the WORK_QUEUE_ITEM as part of the data structure to be dispatched and using this pre-allocated memory repeatedly. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554620">RxPostToWorkerThread</a> routine would be used in this case </p>
+<p>When an operation is going to be repeatedly dispatched, time is conserved by allocating in advance the WORK_QUEUE_ITEM as part of the data structure to be dispatched and using this pre-allocated memory repeatedly. The <a href="..\rxworkq\nf-rxworkq-rxposttoworkerthread.md">RxPostToWorkerThread</a> routine would be used in this case </p>
 
 <p>The trade off between the two dispatching operations is time versus space (memory usage).</p>
 
@@ -175,10 +161,10 @@ NTSTATUS RxDispatchToWorkerThread(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554620">RxPostToWorkerThread</a>
+<a href="..\rxworkq\nf-rxworkq-rxposttoworkerthread.md">RxPostToWorkerThread</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554734">RxSpinDownMRxDispatcher</a>
+<a href="..\rxworkq\nf-rxworkq-rxspindownmrxdispatcher.md">RxSpinDownMRxDispatcher</a>
 </dt>
 </dl>
 <p> </p>

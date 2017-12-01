@@ -59,7 +59,7 @@ void UdecxUsbDeviceSignalFunctionWake(
 ### -param <i>UdecxUsbDevice</i> [in]
 
 <dd>
-<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>.</p>
+<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.</p>
 </dd>
 
 ### -param <i>Interface</i> [in]
@@ -73,13 +73,7 @@ void UdecxUsbDeviceSignalFunctionWake(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The client driver for the device must have enabled wake capability in the most recent <a href="https://msdn.microsoft.com/library/windows/hardware/mt595915">EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE</a> call.
-</p>
-
-<p>If the device is in a low power state, or going to such a state, this call also wakes up  the entire device.
-</p>
-
-<p>The client driver for the device must have enabled wake capability in the most recent <a href="https://msdn.microsoft.com/library/windows/hardware/mt595915">EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE</a> call.
+<p>The client driver for the device must have enabled wake capability in the most recent <a href="buses.evt_udecx_usb_device_set_function_suspend_and_wake">EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE</a> call.
 </p>
 
 <p>If the device is in a low power state, or going to such a state, this call also wakes up  the entire device.
@@ -144,13 +138,13 @@ void UdecxUsbDeviceSignalFunctionWake(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595915">EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE</a>
+<a href="buses.evt_udecx_usb_device_set_function_suspend_and_wake">EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

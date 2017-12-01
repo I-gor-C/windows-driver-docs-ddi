@@ -7,7 +7,7 @@ old-location: wdf\read_register_ulong64.htm
 old-project: wdf
 ms.assetid: D8AB8735-8909-463E-B10E-1FE5FD557FBB
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: READ_REGISTER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ ULONG64 READ_REGISTER_ULONG64(
 ### -param <i>pDevice</i> [in]
 
 <dd>
-<p>Specifies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface for the device object of the device to access.</p>
+<p>Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.</p>
 </dd>
 
 ### -param <i>Register</i> [in]
@@ -74,8 +74,6 @@ ULONG64 READ_REGISTER_ULONG64(
 <p><b>READ_REGISTER_ULONG64</b> returns the ULONG64 value that is read from the specified port address.</p>
 
 ## -remarks
-<p>For more information, see <a href="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.</p>
-
 <p>For more information, see <a href="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.</p>
 
 ## -requirements

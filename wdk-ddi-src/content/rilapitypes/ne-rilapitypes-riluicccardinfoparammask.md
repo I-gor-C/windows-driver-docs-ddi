@@ -7,7 +7,7 @@ old-location: netvista\riluicccardinfoparammask_2.htm
 old-project: netvista
 ms.assetid: f27c7f54-f939-4e9b-a27c-b0137fbb7cec
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

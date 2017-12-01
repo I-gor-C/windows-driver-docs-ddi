@@ -135,8 +135,6 @@ ULONG StorPortInvokeAcpiMethod(
 ## -remarks
 <p>The <b>StorPortInvokeAcpiMethod</b> enables a miniport driver to invoke ACPI methods defined for storage controllers and storage LUNs. The method names are four-byte character strings that occupy a <b>ULONG</b> value in <i>MethodName</i>.</p>
 
-<p>The <b>StorPortInvokeAcpiMethod</b> enables a miniport driver to invoke ACPI methods defined for storage controllers and storage LUNs. The method names are four-byte character strings that occupy a <b>ULONG</b> value in <i>MethodName</i>.</p>
-
 ## -requirements
 <table>
 <tr>

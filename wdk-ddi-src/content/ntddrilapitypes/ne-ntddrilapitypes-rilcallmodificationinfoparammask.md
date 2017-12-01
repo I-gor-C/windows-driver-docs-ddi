@@ -7,7 +7,7 @@ old-location: netvista\rilcallmodificationinfoparammask.htm
 old-project: netvista
 ms.assetid: 1282f158-9e41-4789-abe9-181f367ea235
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

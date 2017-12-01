@@ -90,10 +90,6 @@ NTSTATUS MRxComputeNewBufferingState(
 
 <p>The Server Message Block (SMB) redirector uses <i>MRxComputeNewBufferingState</i> to map the SMB-specific oplock levels into the appropriate RDBSS buffering state flags. The oplock level is passed in the <i>MrxContext</i> parameter.</p>
 
-<p>Before calling <i>MRxComputeNewBufferingState</i>, RDBSS sets the <b>FcbState</b> member of <i>SrvOpen</i><i>-&gt;Fcb</i> to FCB_STATE_BUFFERSTATE_CHANGING. </p>
-
-<p>The Server Message Block (SMB) redirector uses <i>MRxComputeNewBufferingState</i> to map the SMB-specific oplock levels into the appropriate RDBSS buffering state flags. The oplock level is passed in the <i>MrxContext</i> parameter.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -121,10 +117,10 @@ NTSTATUS MRxComputeNewBufferingState(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549850">MRxCompleteBufferingStateChangeRequest</a>
+<a href="ifsk.mrxcompletebufferingstatechangerequest">MRxCompleteBufferingStateChangeRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550687">MRxGetConnectionId</a>
+<a href="ifsk.mrxgetconnectionid">MRxGetConnectionId</a>
 </dt>
 </dl>
 <p> </p>

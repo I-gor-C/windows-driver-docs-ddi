@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The VOLUME_DISK_EXTENTS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560644">IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS</a> request to retrieve information about all the extents on a given volume.</p>
+<p>The VOLUME_DISK_EXTENTS structure is used in conjunction with the <a href="..\ntddvol\ni-ntddvol-ioctl-volume-get-volume-disk-extents.md">IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS</a> request to retrieve information about all the extents on a given volume.</p>
 
 
 ## -syntax
@@ -88,10 +88,10 @@ typedef struct _VOLUME_DISK_EXTENTS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552606">DISK_EXTENT</a>
+<a href="..\ntddvol\ns-ntddvol--disk-extent.md">DISK_EXTENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560644">IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS</a>
+<a href="..\ntddvol\ni-ntddvol-ioctl-volume-get-volume-disk-extents.md">IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS</a>
 </dt>
 <dt>disk extent</dt>
 </dl>

@@ -7,7 +7,7 @@ old-location: wdf\iremoteinterfacecallbackevent.htm
 old-project: wdf
 ms.assetid: 72b68ed0-d14c-44b1-b848-40c427fe6c9a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556889">IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent</a>
+<a href="wdf.iremoteinterfacecallbackevent_onremoteinterfaceevent">IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent</a>
 </td>
 <td align="left" width="63%">
 <p>A UMDF-based driver's <a href="wdf.iremoteinterfacecallbackevent_onremoteinterfaceevent">OnRemoteInterfaceEvent</a> event callback function handles device events that are associated with a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>.</p>
@@ -72,9 +72,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>If your driver supports an <b>IRemoteInterfaceCallbackEvent</b> interface for a device, the <b>IUnknown::QueryInterface</b> method that the driver passes to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a> must return the interface. </p>
-
-<p>If your driver supports an <b>IRemoteInterfaceCallbackEvent</b> interface for a device, the <b>IUnknown::QueryInterface</b> method that the driver passes to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a> must return the interface. </p>
+<p>If your driver supports an <b>IRemoteInterfaceCallbackEvent</b> interface for a device, the <b>IUnknown::QueryInterface</b> method that the driver passes to <a href="wdf.iwdfdevice2_createremoteinterface">IWDFDevice2::CreateRemoteInterface</a> must return the interface. </p>
 
 ## -requirements
 <table>

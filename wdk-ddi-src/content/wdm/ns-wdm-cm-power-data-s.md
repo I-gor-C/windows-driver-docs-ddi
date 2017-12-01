@@ -7,7 +7,7 @@ old-location: kernel\cm_power_data.htm
 old-project: kernel
 ms.assetid: 38fea22b-4d9a-4b03-bbb7-c22578f60def
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: CM_Power_Data_s, CM_POWER_DATA, *PCM_POWER_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ typedef struct CM_Power_Data_s {
 ### -field <b>PD_MostRecentPowerState</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff554628">DEVICE_POWER_STATE</a> value representing the device's most recent power state.</p>
+<p>A <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a> value representing the device's most recent power state.</p>
 </dd>
 
 ### -field <b>PD_Capabilities</b>
@@ -92,7 +92,7 @@ typedef struct CM_Power_Data_s {
 ### -field <b>PD_D1Latency</b>
 
 <dd>
-<p>The device's latency when returning the D0 state from the D1 state. For more information, see the <b>D1Latency</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff543095">DEVICE_CAPABILITIES</a>.</p>
+<p>The device's latency when returning the D0 state from the D1 state. For more information, see the <b>D1Latency</b> member of <a href="..\wdm\ns-wdm--device-capabilities.md">DEVICE_CAPABILITIES</a>.</p>
 </dd>
 
 ### -field <b>PD_D2Latency</b>
@@ -110,7 +110,7 @@ typedef struct CM_Power_Data_s {
 ### -field <b>PD_PowerStateMapping</b>
 
 <dd>
-<p>An array of <b>DEVICE_POWER_STATE</b> values representing the maximum device power state achievable for each system power state. For more information, see the <b>DeviceState</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff543095">DEVICE_CAPABILITIES</a>.</p>
+<p>An array of <b>DEVICE_POWER_STATE</b> values representing the maximum device power state achievable for each system power state. For more information, see the <b>DeviceState</b> member of <a href="..\wdm\ns-wdm--device-capabilities.md">DEVICE_CAPABILITIES</a>.</p>
 </dd>
 
 ### -field <b>PD_DeepestSystemWake</b>
@@ -148,10 +148,10 @@ typedef struct CM_Power_Data_s {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543095">DEVICE_CAPABILITIES</a>
+<a href="..\wdm\ns-wdm--device-capabilities.md">DEVICE_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554628">DEVICE_POWER_STATE</a>
+<a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551967">SetupDiGetDeviceRegistryProperty</a>
@@ -159,4 +159,4 @@ typedef struct CM_Power_Data_s {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_POWER_DATA structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_POWER_DATA structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

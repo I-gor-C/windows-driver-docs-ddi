@@ -7,7 +7,7 @@ old-location: netvista\nmrregisterprovider.htm
 old-project: netvista
 ms.assetid: aac9382c-5177-4216-bf3d-7970b18662eb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NmrRegisterProvider
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: function
 req.header: netioddk.h
 req.include-header: Wsk.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -85,7 +84,7 @@ NTSTATUS NmrRegisterProvider(
 <dd>
 <p>A pointer to a variable that receives a handle used by the NMR to represent the registration of
      the provider module. The provider module must save this handle and pass it as a parameter to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568778">NmrDeregisterProvider</a> function when
+     <a href="..\netioddk\nf-netioddk-nmrderegisterprovider.md">NmrDeregisterProvider</a> function when
      it deregisters from the NMR.</p>
 </dd>
 </dl>
@@ -111,22 +110,7 @@ NTSTATUS NmrRegisterProvider(
 
 <p>A provider module typically calls the 
     <b>NmrRegisterProvider</b> function from its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function after it has completed
-    all other initialization tasks. The call to the 
-    <b>NmrRegisterProvider</b> function indicates to the NMR that the provider module is ready to attach to
-    any client modules that have registered or will register as clients of the same 
-    <a href="netvista.network_programming_interface">NPI</a> for which the provider module
-    has registered as a provider.</p>
-
-<p>A provider module calls the 
-    <b>NmrRegisterProvider</b> function to register as a provider of an 
-    <a href="netvista.network_programming_interface">NPI</a> so that it can attach to
-    client modules that register as clients of the same 
-    NPI.</p>
-
-<p>A provider module typically calls the 
-    <b>NmrRegisterProvider</b> function from its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function after it has completed
+    <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> function after it has completed
     all other initialization tasks. The call to the 
     <b>NmrRegisterProvider</b> function indicates to the NMR that the provider module is ready to attach to
     any client modules that have registered or will register as clients of the same 
@@ -187,15 +171,15 @@ NTSTATUS NmrRegisterProvider(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568778">NmrDeregisterProvider</a>
+<a href="..\netioddk\nf-netioddk-nmrderegisterprovider.md">NmrDeregisterProvider</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>
+<a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568814">NPI_PROVIDER_CHARACTERISTICS</a>
+<a href="..\netioddk\ns-netioddk--npi-provider-characteristics.md">NPI_PROVIDER_CHARACTERISTICS</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrRegisterProvider function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrRegisterProvider function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

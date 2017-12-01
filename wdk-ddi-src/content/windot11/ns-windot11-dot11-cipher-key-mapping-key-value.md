@@ -7,7 +7,7 @@ old-location: netvista\dot11_cipher_key_mapping_key_value.htm
 old-project: netvista
 ms.assetid: 0ab5239d-422e-483e-a633-4efab47311fc
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_CIPHER_KEY_MAPPING_KEY_VALUE, DOT11_CIPHER_KEY_MAPPING_KEY_VALUE, *PDOT11_CIPHER_KEY_MAPPING_KEY_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: windot11.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -79,7 +78,7 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
 <dd>
 <p>The value of the cipher algorithm that uses this key. For more information about enumerator values
      for cipher algorithms, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>.</p>
+     <a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>.</p>
 </dd>
 
 ### -field <b>Direction</b>
@@ -87,7 +86,7 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
 <dd>
 <p>This member specifies whether the 802.11 station uses the key for receive or transmit packets. The
      data type for this member is the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547680">DOT11_DIRECTION</a> enumeration.</p>
+     <a href="..\windot11\ne-windot11-dot11-direction.md">DOT11_DIRECTION</a> enumeration.</p>
 </dd>
 
 ### -field <b>bDelete</b>
@@ -206,16 +205,16 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547680">DOT11_DIRECTION</a>
+<a href="..\windot11\ne-windot11-dot11-direction.md">DOT11_DIRECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548668">DOT11_KEY_ALGO_CCMP</a>
+<a href="..\windot11\ns-windot11-dot11-key-algo-ccmp.md">DOT11_KEY_ALGO_CCMP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548676">DOT11_KEY_ALGO_TKIP_MIC</a>
+<a href="..\windot11\ns-windot11-dot11-key-algo-tkip-mic.md">DOT11_KEY_ALGO_TKIP_MIC</a>
 </dt>
 <dt>
 <a href="netvista.oid_dot11_cipher_key_mapping_key">
@@ -230,4 +229,4 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

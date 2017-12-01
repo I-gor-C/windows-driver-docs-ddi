@@ -69,7 +69,7 @@ typedef struct _SID_AND_ATTRIBUTES {
 </dl>
 
 ## -remarks
-<p>A group is represented by a SID. SIDs have attributes that indicate whether they are currently enabled, disabled, or mandatory, and how they are used. A <b>SID_AND_ATTRIBUTES</b> structure can represent a SID whose attributes change frequently. For example, it is used to represent groups in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556834">TOKEN_GROUPS</a> structure. </p>
+<p>A group is represented by a SID. SIDs have attributes that indicate whether they are currently enabled, disabled, or mandatory, and how they are used. A <b>SID_AND_ATTRIBUTES</b> structure can represent a SID whose attributes change frequently. For example, it is used to represent groups in the <a href="..\ntifs\ns-ntifs--token-groups.md">TOKEN_GROUPS</a> structure. </p>
 
 ## -requirements
 <table>
@@ -88,16 +88,16 @@ typedef struct _SID_AND_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+<a href="ifsk.ace">ACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556654">SeFilterToken</a>
+<a href="..\ntifs\nf-ntifs-sefiltertoken.md">SeFilterToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556834">TOKEN_GROUPS</a>
+<a href="..\ntifs\ns-ntifs--token-groups.md">TOKEN_GROUPS</a>
 </dt>
 </dl>
 <p> </p>

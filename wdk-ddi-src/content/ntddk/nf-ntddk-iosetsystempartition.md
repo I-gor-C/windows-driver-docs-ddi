@@ -7,7 +7,7 @@ old-location: kernel\iosetsystempartition.htm
 old-project: kernel
 ms.assetid: f1606881-da8b-4034-bbdf-53c75e594032
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoSetSystemPartition
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,8 +65,6 @@ NTSTATUS IoSetSystemPartition(
 <p>STATUS_SUCCESS if the boot partition can be set, or an error code on failure. </p>
 
 ## -remarks
-<p>The specified partition must contain the boot loader.</p>
-
 <p>The specified partition must contain the boot loader.</p>
 
 ## -requirements

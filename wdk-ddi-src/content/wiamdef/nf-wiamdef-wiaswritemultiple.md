@@ -89,8 +89,6 @@ HRESULT _stdcall wiasWriteMultiple(
 ## -remarks
 <p>This function operates in a similar manner to <b>IPropertyStorage::WriteMultiple</b>, which is described in the Windows SDK documentation. The PROPSPEC and PROPVARIANT structures are also described in the Windows SDK documentation.</p>
 
-<p>This function operates in a similar manner to <b>IPropertyStorage::WriteMultiple</b>, which is described in the Windows SDK documentation. The PROPSPEC and PROPVARIANT structures are also described in the Windows SDK documentation.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -146,7 +144,7 @@ HRESULT _stdcall wiasWriteMultiple(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549300">wiasReadMultiple</a>
+<a href="..\wiamdef\nf-wiamdef-wiasreadmultiple.md">wiasReadMultiple</a>
 </dt>
 </dl>
 <p> </p>

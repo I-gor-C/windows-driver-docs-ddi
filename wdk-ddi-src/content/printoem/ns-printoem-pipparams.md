@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The IPPARAMS structure is used as an input parameter to a rendering plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a> method.</p>
+<p>The IPPARAMS structure is used as an input parameter to a rendering plug-in's <a href="print.iprintoemuni_imageprocessing">IPrintOemUni::ImageProcessing</a> method.</p>
 
 
 ## -syntax
@@ -68,7 +68,7 @@ typedef struct {
 ### -field <b>ptOffset</b>
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a> structure containing the banded image's offset from the upper left corner of the drawing area. Supplied by Unidrv.</p>
+<p>Pointer to a <a href="display.point">POINT</a> structure containing the banded image's offset from the upper left corner of the drawing area. Supplied by Unidrv.</p>
 </dd>
 
 ### -field <b>pHalftoneOption</b>
@@ -86,7 +86,7 @@ typedef struct {
 ### -field <b>bBlankBand</b>
 
 <dd>
-<p>Specifies whether a blank band was drawn in the source bitmap supplied to <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a>. A value of <b>TRUE</b> indicates that nothing was drawn in the source bitmap supplied to <b>IPrintOemUni::ImageProcessing</b>. A <b>TRUE</b> value also indicates that data in the source bitmap is invalid and should not be processed. Supplied by Unidrv.</p>
+<p>Specifies whether a blank band was drawn in the source bitmap supplied to <a href="print.iprintoemuni_imageprocessing">IPrintOemUni::ImageProcessing</a>. A value of <b>TRUE</b> indicates that nothing was drawn in the source bitmap supplied to <b>IPrintOemUni::ImageProcessing</b>. A <b>TRUE</b> value also indicates that data in the source bitmap is invalid and should not be processed. Supplied by Unidrv.</p>
 </dd>
 </dl>
 
@@ -110,10 +110,10 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a>
+<a href="print.iprintoemuni_imageprocessing">IPrintOemUni::ImageProcessing</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a>
+<a href="display.point">POINT</a>
 </dt>
 </dl>
 <p> </p>

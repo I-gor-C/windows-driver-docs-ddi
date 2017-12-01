@@ -7,7 +7,7 @@ old-location: netvista\rilradioconfigurationradiotype.htm
 old-project: netvista
 ms.assetid: f4efebb4-0258-44f6-bdf0-ff61d3b13792
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

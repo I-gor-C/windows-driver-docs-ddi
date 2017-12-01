@@ -61,7 +61,7 @@ STORPORT_API BOOLEAN StorPortDeviceReady(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
+<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
 ### -param <i>PathId</i> [in]
@@ -87,8 +87,6 @@ STORPORT_API BOOLEAN StorPortDeviceReady(
 <p><b>StorPortDeviceReady</b> returns <b>TRUE</b> if the miniport driver succeeded in notifying the port driver, <b>FALSE</b> if not.</p>
 
 ## -remarks
-<p>It is not generally necessary to notify the target device that new requests are required. </p>
-
 <p>It is not generally necessary to notify the target device that new requests are required. </p>
 
 ## -requirements
@@ -128,10 +126,10 @@ STORPORT_API BOOLEAN StorPortDeviceReady(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567050">StorPortDeviceBusy</a>
+<a href="..\storport\nf-storport-storportdevicebusy.md">StorPortDeviceBusy</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567489">StorPortReady</a>
+<a href="..\storport\nf-storport-storportready.md">StorPortReady</a>
 </dt>
 </dl>
 <p> </p>

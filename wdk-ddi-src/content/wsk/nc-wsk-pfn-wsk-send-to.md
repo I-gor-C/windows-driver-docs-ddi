@@ -7,7 +7,7 @@ old-location: netvista\wsksendto.htm
 old-project: netvista
 ms.assetid: 34257ef2-947a-463a-b234-04fbaffa9344
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -67,7 +66,7 @@ NTSTATUS WSKAPI * WskSendTo(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a> structure that specifies the socket
+     <a href="..\wsk\ns-wsk--wsk-socket.md">WSK_SOCKET</a> structure that specifies the socket
      object for the datagram socket over which to send the datagram.</p>
 </dd>
 
@@ -75,7 +74,7 @@ NTSTATUS WSKAPI * WskSendTo(
 
 <dd>
 <p>A pointer to an initialized 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571153">WSK_BUF</a> structure that describes the data buffer
+     <a href="..\wsk\ns-wsk--wsk-buf.md">WSK_BUF</a> structure that describes the data buffer
      that contains the datagram that is being sent over the socket.</p>
 </dd>
 
@@ -119,7 +118,7 @@ NTSTATUS WSKAPI * WskSendTo(
 <p>A pointer to a buffer that contains control information that is associated with the datagram that
      is being sent. The control information data consists of one or more control data objects, each of which
      begins with a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a> structure. If there is no control
+     <a href="netvista.cmsghdr">CMSGHDR</a> structure. If there is no control
      information that is associated with the datagram, this parameter should be <b>NULL</b>.</p>
 </dd>
 
@@ -148,7 +147,7 @@ NTSTATUS WSKAPI * WskSendTo(
 <dt><b>STATUS_FILE_FORCED_CLOSED</b></dt>
 </dl><p>The socket is no longer functional. The IRP will be completed with failure status. The WSK
        application must call the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a> function to close the
+       <a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a> function to close the
        socket as soon as possible.</p><dl>
 <dt><b>Other status codes</b></dt>
 </dl><p>An error occurred. The IRP will be completed with failure status.</p>
@@ -158,24 +157,7 @@ NTSTATUS WSKAPI * WskSendTo(
 ## -remarks
 <p>If the 
     <b>WskSendTo</b> function returns STATUS_PENDING, the MDL chain that is described in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571153">WSK_BUF</a> structure that is pointed to by the 
-    <i>Buffer</i> parameter must remain locked in memory until the IRP is completed. In addition, the buffer
-    that is pointed to by the 
-    <i>ControlInfo</i> parameter must also remain valid until the IRP is completed. If the WSK application
-    allocated the MDL chain or the control information buffer with one of the 
-    <b>ExAllocate<i>Xxx</i></b> functions, it cannot free the memory with the corresponding 
-    <b>ExFree<i>Xxx</i></b> function until after the IRP is completed. If the WSK application allocated the MDL chain or
-    the control information buffer on the stack, it cannot return from the function that calls the 
-    <b>WskSendTo</b> function until after the IRP is completed.</p>
-
-<p>The WSK subsystem does not perform any buffering of data when it sends datagrams over a socket.
-    Therefore, a call to the 
-    <b>WskSendTo</b> function will not be completed by the WSK subsystem until all of the data has actually
-    been sent.</p>
-
-<p>If the 
-    <b>WskSendTo</b> function returns STATUS_PENDING, the MDL chain that is described in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571153">WSK_BUF</a> structure that is pointed to by the 
+    <a href="..\wsk\ns-wsk--wsk-buf.md">WSK_BUF</a> structure that is pointed to by the 
     <i>Buffer</i> parameter must remain locked in memory until the IRP is completed. In addition, the buffer
     that is pointed to by the 
     <i>ControlInfo</i> parameter must also remain valid until the IRP is completed. If the WSK application
@@ -234,34 +216,34 @@ NTSTATUS WSKAPI * WskSendTo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571127">WskControlSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-control-socket.md">WskControlSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571141">WskReceiveFrom</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-receive-from.md">WskReceiveFrom</a>
 </dt>
 <dt>
 <a href="..\wsk\nc-wsk-pfn-wsk-receive-from-event.md">WskReceiveFromEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
+<a href="netvista.cmsghdr">CMSGHDR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
+<a href="netvista.sockaddr">SOCKADDR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571153">WSK_BUF</a>
+<a href="..\wsk\ns-wsk--wsk-buf.md">WSK_BUF</a>
 </dt>
 <dt>
 <a href="..\wsk\ns-wsk--wsk-provider-datagram-dispatch.md">
    WSK_PROVIDER_DATAGRAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk--wsk-socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_SEND_TO callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_SEND_TO callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

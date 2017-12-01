@@ -143,13 +143,7 @@ NTSTATUS EtwActivityIdControl(
 
 <p>Callers of <b>EtwActivityIdControl</b> must be running at IRQL &lt; DISPATCH_LEVEL, unless the <i>ControlCode</i> is EVENT_ACTIVITY_CTRL_CREATE_ID, in which case the function can be called at any IRQL.</p>
 
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/dn268326">EtwActivityIdControlKernel</a> function to  query or set  activity identifiers  kernel threads. </p>
-
-<p>Activity identifiers provide a method of linking separate events in a common thread of computation. An <i>activity</i> is a work item performed by an application and or a driver. The concept of activity is a core component in end-to-end tracing.</p>
-
-<p>Callers of <b>EtwActivityIdControl</b> must be running at IRQL &lt; DISPATCH_LEVEL, unless the <i>ControlCode</i> is EVENT_ACTIVITY_CTRL_CREATE_ID, in which case the function can be called at any IRQL.</p>
-
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/dn268326">EtwActivityIdControlKernel</a> function to  query or set  activity identifiers  kernel threads. </p>
+<p>Use the <a href="devtest.etwactivityidcontrolkernel">EtwActivityIdControlKernel</a> function to  query or set  activity identifiers  kernel threads. </p>
 
 ## -requirements
 <table>
@@ -214,7 +208,7 @@ NTSTATUS EtwActivityIdControl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn268326">EtwActivityIdControlKernel</a>
+<a href="devtest.etwactivityidcontrolkernel">EtwActivityIdControlKernel</a>
 </dt>
 </dl>
 <p> </p>

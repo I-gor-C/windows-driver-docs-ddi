@@ -78,12 +78,12 @@ typedef struct _DXGKARG_DESTROYALLOCATION {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561045">DXGK_DESTROYALLOCATIONFLAGS</a> structure that identifies how to release the allocations.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-destroyallocationflags.md">DXGK_DESTROYALLOCATIONFLAGS</a> structure that identifies how to release the allocations.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The handles in the array that the <b>pAllocationList</b> member specifies are handles to allocations that the driver's <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function previously returned in the <b>hAllocation</b> members of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a> structures, which are part of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557559">DXGKARG_CREATEALLOCATION</a> structure's <b>pAllocationInfo</b> member. Each allocation handle points to a buffer that contains private driver data for the allocation. The display miniport driver must release the memory for the allocations during the call to <a href="display.dxgkddidestroyallocation">DxgkDdiDestroyAllocation</a>. </p>
+<p>The handles in the array that the <b>pAllocationList</b> member specifies are handles to allocations that the driver's <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function previously returned in the <b>hAllocation</b> members of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a> structures, which are part of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createallocation.md">DXGKARG_CREATEALLOCATION</a> structure's <b>pAllocationInfo</b> member. Each allocation handle points to a buffer that contains private driver data for the allocation. The display miniport driver must release the memory for the allocations during the call to <a href="display.dxgkddidestroyallocation">DxgkDdiDestroyAllocation</a>. </p>
 
 ## -requirements
 <table>
@@ -116,13 +116,13 @@ typedef struct _DXGKARG_DESTROYALLOCATION {
 <a href="display.dxgkddidestroyallocation">DxgkDdiDestroyAllocation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561045">DXGK_DESTROYALLOCATIONFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-destroyallocationflags.md">DXGK_DESTROYALLOCATIONFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557559">DXGKARG_CREATEALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createallocation.md">DXGKARG_CREATEALLOCATION</a>
 </dt>
 </dl>
 <p> </p>

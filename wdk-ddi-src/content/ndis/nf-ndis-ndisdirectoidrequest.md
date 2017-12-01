@@ -7,7 +7,7 @@ old-location: netvista\ndisdirectoidrequest.htm
 old-project: netvista
 ms.assetid: 771e5761-beea-4a31-9ebe-d65e9157f1f4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisDirectOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NDIS_STATUS NdisDirectOidRequest(
 
 <dd>
 <p>The handle that the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function returns that
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function returns that
      identifies the target miniport adapter on the binding.</p>
 </dd>
 
@@ -69,7 +69,7 @@ NDIS_STATUS NdisDirectOidRequest(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure that specifies
      the operation that is requested with a given OID_<i>Xxx</i> code to either query the status of an adapter or to set the state of an adapter.</p>
 </dd>
 </dl>
@@ -86,7 +86,7 @@ NDIS_STATUS NdisDirectOidRequest(
 <dt><b>NDIS_STATUS_INVALID_OID</b></dt>
 </dl><p>The OID_<i>Xxx</i> code that was specified in the 
        <b>Oid</b> member of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>-structured buffer at 
+       <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>-structured buffer at 
        <i>OidRequest</i> was invalid or unsupported by the underlying driver.</p><dl>
 <dt><b>NDIS_STATUS_INVALID_LENGTH or NDIS_STATUS_BUFFER_TOO_SHORT</b></dt>
 </dl><p>The value that was specified in the 
@@ -132,28 +132,11 @@ NDIS_STATUS NdisDirectOidRequest(
 <p>The 
     <b>NdisDirectOidRequest</b> function cannot be used for general OID requests. For general OID requests,
     use the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a> function instead. 
+    <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a> function instead. 
     <b>NdisDirectOidRequest</b> can be used only for OIDs that NDIS supports for use with the direct OID
-    interface. For example, the following OIDs can be used:</p><dl>
-<dd>
+    interface. For example, the following OIDs can be used:</p>
+
 <p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_update_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</a>
-</p>
-</dd>
-</dl><p>
 <a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
        OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
 </p>
@@ -186,66 +169,7 @@ NDIS_STATUS NdisDirectOidRequest(
 
 <p>The direct OID request interface is similar to the general OID request interface. For more information
     about issuing general requests, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a>.</p>
-
-<p>The 
-    <b>NdisDirectOidRequest</b> function cannot be used for general OID requests. For general OID requests,
-    use the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a> function instead. 
-    <b>NdisDirectOidRequest</b> can be used only for OIDs that NDIS supports for use with the direct OID
-    interface. For example, the following OIDs can be used:</p><dl>
-<dd>
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_update_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</a>
-</p>
-</dd>
-</dl><p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
-</p>
-
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
-</p>
-
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_update_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</a>
-</p>
-
-<p>A protocol driver must allocate sufficient memory to hold the information buffer that is associated
-    with the specified OID. The driver must also allocate and set up the buffer at the 
-    <i>OidRequest</i> parameter before it calls 
-    <b>NdisDirectOidRequest</b>. Both buffers must be allocated from nonpaged pool because the underlying
-    driver runs at raised IRQL while processing the request.</p>
-
-<p><b>NdisDirectOidRequest</b> forwards a request to underlying drivers or handles the request itself. If the
-    next-lower driver is an NDIS intermediate driver, the intermediate driver can call 
-    <b>NdisDirectOidRequest</b> with an OID-specific request of its own before completing the request that the
-    higher-level driver originally submitted.</p>
-
-<p>A driver that calls 
-    <b>NdisDirectOidRequest</b> must register the 
-    <a href="..\ndis\nc-ndis-protocol-direct-oid-request-complete.md">
-    ProtocolDirectOidRequestComplete</a> function.</p>
-
-<p>The direct OID request interface is similar to the general OID request interface. For more information
-    about issuing general requests, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a>.</p>
+    <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>.</p>
 
 ## -requirements
 <table>
@@ -300,7 +224,7 @@ NDIS_STATUS NdisDirectOidRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
 <a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
@@ -315,10 +239,10 @@ NDIS_STATUS NdisDirectOidRequest(
    OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-direct-oid-request-complete.md">
@@ -330,4 +254,4 @@ NDIS_STATUS NdisDirectOidRequest(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDirectOidRequest function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDirectOidRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

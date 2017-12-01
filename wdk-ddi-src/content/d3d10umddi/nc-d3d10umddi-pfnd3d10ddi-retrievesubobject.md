@@ -88,7 +88,7 @@ HRESULT APIENTRY* RetrieveSubObject(D3D11_1)(
 </dl>
 </td>
 <td width="60%">
-<p>A video function table that is described as a   structure. The function returns a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406452">D3D11_1DDI_VIDEODEVICEFUNCS</a> structure in the buffer referenced by the <i>pOutputParamsBuffer</i> parameter.</p>
+<p>A video function table that is described as a   structure. The function returns a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-videodevicefuncs.md">D3D11_1DDI_VIDEODEVICEFUNCS</a> structure in the buffer referenced by the <i>pOutputParamsBuffer</i> parameter.</p>
 </td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ HRESULT APIENTRY* RetrieveSubObject(D3D11_1)(
 </dl>
 </td>
 <td width="60%">
-<p>A WDDM 2.0 and later video function table that is described as a   structure. The function returns a <a href="https://msdn.microsoft.com/library/windows/hardware/dn894613">D3DWDDM2_0DDI_VIDEODEVICEFUNCS</a> structure in the buffer referenced by the <i>pOutputParamsBuffer</i> parameter.</p>
+<p>A WDDM 2.0 and later video function table that is described as a   structure. The function returns a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-videodevicefuncs.md">D3DWDDM2_0DDI_VIDEODEVICEFUNCS</a> structure in the buffer referenced by the <i>pOutputParamsBuffer</i> parameter.</p>
 <p>Supported starting with WDDM 2.0.</p>
 </td>
 </tr>
@@ -138,12 +138,6 @@ HRESULT APIENTRY* RetrieveSubObject(D3D11_1)(
 </p>
 
 ## -remarks
-<p>The Direct3D runtime considers the retrieved subparts to be appended to the Direct3D driver device object and expects  them to be destroyed along with the rest of the device when <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroydevice.md">DestroyDevice</a> is called.</p>
-
-<p>Subdevices are retrieved from the root device object independently. The DDI interface version is provided implicitly within the subdevice ID.</p>
-
-<p>This function is free-threaded.</p>
-
 <p>The Direct3D runtime considers the retrieved subparts to be appended to the Direct3D driver device object and expects  them to be destroyed along with the rest of the device when <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroydevice.md">DestroyDevice</a> is called.</p>
 
 <p>Subdevices are retrieved from the root device object independently. The DDI interface version is provided implicitly within the subdevice ID.</p>
@@ -193,10 +187,10 @@ HRESULT APIENTRY* RetrieveSubObject(D3D11_1)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406452">D3D11_1DDI_VIDEODEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-videodevicefuncs.md">D3D11_1DDI_VIDEODEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn894613">D3DWDDM2_0DDI_VIDEODEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-videodevicefuncs.md">D3DWDDM2_0DDI_VIDEODEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroydevice.md">DestroyDevice</a>

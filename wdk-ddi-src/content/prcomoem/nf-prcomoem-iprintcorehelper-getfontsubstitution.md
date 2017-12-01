@@ -91,12 +91,6 @@ HRESULT GetFontSubstitution(
 
 <p>To obtain a list of available fonts, create an information context for the current printer, and call SetGraphicsMode(hIC, GM_ADVANCED). Then enumerate device fonts by means of a call to EnumFontFamilies. The callback parameter (see EnumFontFamProc in the Microsoft Windows SDK documentation) of EnumFontFamilies should filter for device fonts by incrementing a counter for each font for which the bitwise AND result (FontType &amp; TRUETYPE_FONTTYPE) is nonzero.</p>
 
-<p>If an application attempts to print text that uses the TrueType font specified in the <i>pszTrueTypeFontName</i> parameter, that text will instead be printed in the device font specified in the <i>ppszDevFontName</i> parameter. The device font name must be that of a valid, installed font.</p>
-
-<p>A font is identified by its font face name, which appears in the <b>lfFaceName</b> member of the LOGFONT structure.</p>
-
-<p>To obtain a list of available fonts, create an information context for the current printer, and call SetGraphicsMode(hIC, GM_ADVANCED). Then enumerate device fonts by means of a call to EnumFontFamilies. The callback parameter (see EnumFontFamProc in the Microsoft Windows SDK documentation) of EnumFontFamilies should filter for device fonts by incrementing a counter for each font for which the bitwise AND result (FontType &amp; TRUETYPE_FONTTYPE) is nonzero.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -124,7 +118,7 @@ HRESULT GetFontSubstitution(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552962">IPrintCoreHelper::SetFontSubstitution</a>
+<a href="print.iprintcorehelper_setfontsubstitution">IPrintCoreHelper::SetFontSubstitution</a>
 </dt>
 </dl>
 <p> </p>

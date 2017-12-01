@@ -65,7 +65,7 @@ VOID VideoPortUnlockBuffer(
 ### -param <i>Mdl</i> [in]
 
 <dd>
-<p>Pointer to the MDL of the buffer to be released. This parameter should be the same pointer that was returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570326">VideoPortLockBuffer</a>.</p>
+<p>Pointer to the MDL of the buffer to be released. This parameter should be the same pointer that was returned by <a href="..\video\nf-video-videoportlockbuffer.md">VideoPortLockBuffer</a>.</p>
 </dd>
 </dl>
 
@@ -138,7 +138,7 @@ VOID VideoPortUnlockBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570326">VideoPortLockBuffer</a>
+<a href="..\video\nf-video-videoportlockbuffer.md">VideoPortLockBuffer</a>
 </dt>
 </dl>
 <p> </p>

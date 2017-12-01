@@ -71,7 +71,7 @@ NTSTATUS ChangerClassInitialize(
 ### -param <i>MCDInitData</i> [in]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff562210">MCD_INIT_DATA</a> structure containing miniclass driver-specific information such as the entry points for the changer miniclass driver's command processing routines. </p>
+<p>Pointer to an <a href="..\mcd\ns-mcd--mcd-init-data.md">MCD_INIT_DATA</a> structure containing miniclass driver-specific information such as the entry points for the changer miniclass driver's command processing routines. </p>
 </dd>
 </dl>
 
@@ -83,13 +83,7 @@ NTSTATUS ChangerClassInitialize(
 
 <p>Changer miniclass drivers call <b>ChangerClassInitialize</b> from within their <b>DriverEntry</b> routines to initialize the driver. <b>ChangerClassInitialize</b> performs many tasks formerly performed by the changer class driver's <b>DriverEntry</b> routine such as registering the miniclass driver's dispatch routines. It allocates a driver object extension and copies the data contained in <i>MCDInitData</i> into the driver object extension along with other initialization data such as the driver's registry path and pointers to certain changer class driver routines that are operating system-specific. </p>
 
-<p>Changer miniclass drivers must allocate an <a href="https://msdn.microsoft.com/library/windows/hardware/ff562210">MCD_INIT_DATA</a> structure, zero the structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff563610">RtlZeroMemory</a>, and then assign values to the appropriate members, before passing the structure's address to <b>ChangerClassInitialize</b> by means of the <i>MCDInitData</i> parameter. </p>
-
-<p><b>ChangerClassInitialize</b> is a changer class driver routine that miniclass drivers can call in Microsoft Windows XP and later operating systems.</p>
-
-<p>Changer miniclass drivers call <b>ChangerClassInitialize</b> from within their <b>DriverEntry</b> routines to initialize the driver. <b>ChangerClassInitialize</b> performs many tasks formerly performed by the changer class driver's <b>DriverEntry</b> routine such as registering the miniclass driver's dispatch routines. It allocates a driver object extension and copies the data contained in <i>MCDInitData</i> into the driver object extension along with other initialization data such as the driver's registry path and pointers to certain changer class driver routines that are operating system-specific. </p>
-
-<p>Changer miniclass drivers must allocate an <a href="https://msdn.microsoft.com/library/windows/hardware/ff562210">MCD_INIT_DATA</a> structure, zero the structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff563610">RtlZeroMemory</a>, and then assign values to the appropriate members, before passing the structure's address to <b>ChangerClassInitialize</b> by means of the <i>MCDInitData</i> parameter. </p>
+<p>Changer miniclass drivers must allocate an <a href="..\mcd\ns-mcd--mcd-init-data.md">MCD_INIT_DATA</a> structure, zero the structure by calling <a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>, and then assign values to the appropriate members, before passing the structure's address to <b>ChangerClassInitialize</b> by means of the <i>MCDInitData</i> parameter. </p>
 
 ## -requirements
 <table>
@@ -128,10 +122,10 @@ NTSTATUS ChangerClassInitialize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562210">MCD_INIT_DATA</a>
+<a href="..\mcd\ns-mcd--mcd-init-data.md">MCD_INIT_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563610">RtlZeroMemory</a>
+<a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilmanagecallparamscommand.htm
 old-project: netvista
 ms.assetid: d0344812-811e-47f6-a03b-bb753cce912a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

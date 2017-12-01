@@ -7,7 +7,7 @@ old-location: kernel\rtlshorttochar.htm
 old-project: kernel
 ms.assetid: AC7D5479-7C68-445A-9788-F5E96D6BB41E
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlShortToChar
 ms.prod: windows-hardware
 ms.technology: windows-devices

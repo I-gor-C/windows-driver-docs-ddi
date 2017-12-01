@@ -179,7 +179,7 @@ typedef struct HBA_PortStatistics {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556107">HBA_GetPortStatistics</a>
+<a href="..\hbaapi\nf-hbaapi-hba-getportstatistics.md">HBA_GetPortStatistics</a>
 </dt>
 </dl>
 <p> </p>

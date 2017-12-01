@@ -91,14 +91,14 @@ typedef enum _DXGK_QUERYADAPTERINFOTYPE {
 ### -field <a id="DXGKQAITYPE_DRIVERCAPS"></a><a id="dxgkqaitype_drivercaps"></a><b>DXGKQAITYPE_DRIVERCAPS</b>
 
 <dd>
-<p>Indicates the driver capabilities in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a> structure.</p>
+<p>Indicates the driver capabilities in a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a> structure.</p>
 </dd>
 
 ### -field <a id="DXGKQAITYPE_QUERYSEGMENT"></a><a id="dxgkqaitype_querysegment"></a><b>DXGKQAITYPE_QUERYSEGMENT</b>
 
 <dd>
 <p>
-      Indicates memory-segment information in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562018">DXGK_QUERYSEGMENTOUT</a> structure.
+      Indicates memory-segment information in a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentout.md">DXGK_QUERYSEGMENTOUT</a> structure.
      </p>
 </dd>
 
@@ -119,7 +119,7 @@ typedef enum _DXGK_QUERYADAPTERINFOTYPE {
 ### -field <a id="DXGKQAITYPE_QUERYSEGMENT3"></a><a id="dxgkqaitype_querysegment3"></a><b>DXGKQAITYPE_QUERYSEGMENT3</b>
 
 <dd>
-<p>Indicates memory-segment information in a <a href="https://msdn.microsoft.com/library/windows/hardware/hh464082">DXGK_QUERYSEGMENTOUT3</a> structure.</p>
+<p>Indicates memory-segment information in a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentout3.md">DXGK_QUERYSEGMENTOUT3</a> structure.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
@@ -161,14 +161,14 @@ typedef enum _DXGK_QUERYADAPTERINFOTYPE {
 ### -field <a id="DXGKQAITYPE_QUERYSEGMENT4"></a><a id="dxgkqaitype_querysegment4"></a><b>DXGKQAITYPE_QUERYSEGMENT4</b>
 
 <dd>
-<p>Indicates memory-segment information in a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906840">DXGK_QUERYSEGMENTOUT4</a> structure.</p>
+<p>Indicates memory-segment information in a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentout4.md">DXGK_QUERYSEGMENTOUT4</a> structure.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
 ### -field <a id="DXGKQAITYPE_SEGMENTMEMORYSTATE"></a><a id="dxgkqaitype_segmentmemorystate"></a><b>DXGKQAITYPE_SEGMENTMEMORYSTATE</b>
 
 <dd>
-<p>Indicates bad memory ranges in a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906829">DXGK_MEMORYRANGE</a> structure. </p>
+<p>Indicates bad memory ranges in a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-memoryrange.md">DXGK_MEMORYRANGE</a> structure. </p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
@@ -224,17 +224,7 @@ DescriptorLength + FIELD_OFFSET( DXGK_QUERYINTEGRATEDDISPLAYOUT, Descriptor )
 </dl>
 
 ## -remarks
-<p>The display miniport driver must fill the buffer pointed to by the <b>pOutputData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a> structure as follows:</p>
-
-<p> </p>
-
-<p>The display miniport driver must fill the buffer pointed to by the <b>pOutputData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a> structure as follows:</p>
-
-<p> </p>
-
-<p>The display miniport driver must fill the buffer pointed to by the <b>pOutputData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a> structure as follows:</p>
-
-<p> </p>
+<p>The display miniport driver must fill the buffer pointed to by the <b>pOutputData</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a> structure as follows:</p>
 
 ## -requirements
 <table>
@@ -261,22 +251,22 @@ DescriptorLength + FIELD_OFFSET( DXGK_QUERYINTEGRATEDDISPLAYOUT, Descriptor )
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464073">DXGK_POWER_RUNTIME_COMPONENT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-runtime-component.md">DXGK_POWER_RUNTIME_COMPONENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562018">DXGK_QUERYSEGMENTOUT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentout.md">DXGK_QUERYSEGMENTOUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464082">DXGK_QUERYSEGMENTOUT3</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentout3.md">DXGK_QUERYSEGMENTOUT3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn439359">DXGKARG_HISTORYBUFFERPRECISION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 </dt>
 <dt>
 <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a>

@@ -125,10 +125,10 @@ typedef struct _USB_HUB_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540020">USB_HUB_INFORMATION</a>
+<a href="..\usbioctl\ns-usbioctl--usb-hub-information.md">USB_HUB_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

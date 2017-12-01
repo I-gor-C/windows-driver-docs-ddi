@@ -79,7 +79,7 @@ typedef struct _D3DKMT_PRESENT {
 ### -field <b>hDevice</b>
 
 <dd>
-<p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device to present to. A device handle is supplied to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547091">D3DKMTPresent</a> function in the union that D3DKMT_PRESENT contains for compatibility with Microsoft Direct3D version 10.</p>
+<p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device to present to. A device handle is supplied to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpresent.md">D3DKMTPresent</a> function in the union that D3DKMT_PRESENT contains for compatibility with Microsoft Direct3D version 10.</p>
 </dd>
 
 ### -field <b>hContext</b>
@@ -118,14 +118,14 @@ typedef struct _D3DKMT_PRESENT {
 ### -field <b>Color</b>
 
 <dd>
-<p>[in] The ARGB 32-bit (see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration) color-fill or color-key value . A value for color fill is set when the <b>ColorFill</b> bit-field flag is set in the <b>Flags</b> member. A value for color key is set when either the <b>SrcColorKey</b> or <b>DstColorKey</b> bit-field flag is set in the <b>Flags</b> member. Note that only one of the <b>ColorFill</b>, <b>SrcColorKey</b>, and <b>DstColorKey</b> bit-field flags is set at any time. </p>
+<p>[in] The ARGB 32-bit (see the <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> enumeration) color-fill or color-key value . A value for color fill is set when the <b>ColorFill</b> bit-field flag is set in the <b>Flags</b> member. A value for color key is set when either the <b>SrcColorKey</b> or <b>DstColorKey</b> bit-field flag is set in the <b>Flags</b> member. Note that only one of the <b>ColorFill</b>, <b>SrcColorKey</b>, and <b>DstColorKey</b> bit-field flags is set at any time. </p>
 <p>If the primary format is palettized RGB, <b>Color</b> contains the palette index rather than the D3DDDIFMT_A8R8G8B8 value from D3DDDIFORMAT. </p>
 </dd>
 
 ### -field <b>DstRect</b>
 
 <dd>
-<p>[in] The optional destination <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> for the bitblt. The destination RECT is used only if the <b>DstRectValid</b> bit-field flag is set in the <b>Flags</b> member. </p>
+<p>[in] The optional destination <a href="display.rect">RECT</a> for the bitblt. The destination RECT is used only if the <b>DstRectValid</b> bit-field flag is set in the <b>Flags</b> member. </p>
 </dd>
 
 ### -field <b>SrcRect</b>
@@ -155,13 +155,13 @@ typedef struct _D3DKMT_PRESENT {
 ### -field <b>FlipInterval</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544549">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). </p>
+<p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-flipinterval-type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). </p>
 </dd>
 
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548179">D3DKMT_PRESENTFLAGS</a> structure that identifies, in bit-field flags, how to display. Note that the <b>ColorFill</b>, <b>SrcColorKey</b>, and <b>DstColorKey</b> bit-field flags are mutually exclusive.</p>
+<p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-presentflags.md">D3DKMT_PRESENTFLAGS</a> structure that identifies, in bit-field flags, how to display. Note that the <b>ColorFill</b>, <b>SrcColorKey</b>, and <b>DstColorKey</b> bit-field flags are mutually exclusive.</p>
 </dd>
 
 ### -field <b>BroadcastContextCount</b>
@@ -174,7 +174,7 @@ typedef struct _D3DKMT_PRESENT {
 
 <dd>
 <p>[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the additional contexts to broadcast the current present operation to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of contexts that the OpenGL ICD can broadcast the current present operation to.</p>
-<p>Broadcasting is supported only for flip operations. To broadcast a flip operation, the display miniport driver must support memory mapped I/O (MMIO)-based flips. To indicate support of MMIO flips, the display miniport driver sets the <b>FlipOnVSyncMmIo</b> bit-field flag in the <b>FlipCaps</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a> structure when its <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function is called.</p>
+<p>Broadcasting is supported only for flip operations. To broadcast a flip operation, the display miniport driver must support memory mapped I/O (MMIO)-based flips. To indicate support of MMIO flips, the display miniport driver sets the <b>FlipOnVSyncMmIo</b> bit-field flag in the <b>FlipCaps</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a> structure when its <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function is called.</p>
 <p>The original context that the <b>hContext</b> member specifies and that the OpenGL ICD presents to is not an element in the <b>BroadcastContext</b> array. For example, if the <b>BroadcastContext</b> array contains one element, the OpenGL ICD sends the present operation to the owning context (<b>hContext</b>) and broadcasts to that one additional context. </p>
 </dd>
 
@@ -188,14 +188,14 @@ typedef struct _D3DKMT_PRESENT {
 ### -field <b>PresentHistoryToken</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548188">D3DKMT_PRESENTHISTORYTOKEN</a> structure that identifies the type of present operation.</p>
+<p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a> structure that identifies the type of present operation.</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
 
 ### -field <b>pPresentRegions</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406550">D3DKMT_PRESENT_RGNS</a> structure that identifies dirty and move regions.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present-rgns.md">D3DKMT_PRESENT_RGNS</a> structure that identifies dirty and move regions.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 </dl>
@@ -228,22 +228,22 @@ typedef struct _D3DKMT_PRESENT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406550">D3DKMT_PRESENT_RGNS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present-rgns.md">D3DKMT_PRESENT_RGNS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548179">D3DKMT_PRESENTFLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-presentflags.md">D3DKMT_PRESENTFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548188">D3DKMT_PRESENTHISTORYTOKEN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547091">D3DKMTPresent</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpresent.md">D3DKMTPresent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

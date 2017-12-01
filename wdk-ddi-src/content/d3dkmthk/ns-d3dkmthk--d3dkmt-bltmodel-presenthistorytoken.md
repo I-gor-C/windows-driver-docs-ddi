@@ -78,7 +78,7 @@ typedef struct _D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN {
 ### -field <b>DirtyRegions</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547937">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the bitblt surface. </p>
+<p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-dirtyregions.md">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the bitblt surface. </p>
 </dd>
 </dl>
 
@@ -110,10 +110,10 @@ typedef struct _D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547937">D3DKMT_DIRTYREGIONS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-dirtyregions.md">D3DKMT_DIRTYREGIONS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548188">D3DKMT_PRESENTHISTORYTOKEN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
 </dt>
 </dl>
 <p> </p>

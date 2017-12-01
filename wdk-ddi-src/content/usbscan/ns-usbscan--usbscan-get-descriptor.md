@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The USBSCAN_GET_DESCRIPTOR structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542864">IOCTL_GET_USB_DESCRIPTOR</a>.</p>
+<p>The USBSCAN_GET_DESCRIPTOR structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl-get-usb-descriptor.md">IOCTL_GET_USB_DESCRIPTOR</a>.</p>
 
 
 ## -syntax

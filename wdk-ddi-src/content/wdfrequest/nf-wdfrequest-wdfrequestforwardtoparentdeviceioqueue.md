@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestforwardtoparentdeviceioqueue.htm
 old-project: wdf
 ms.assetid: 81511d81-206c-420b-a956-42cf68b57fc4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfRequestForwardToParentDeviceIoQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,7 +73,7 @@ NTSTATUS WdfRequestForwardToParentDeviceIoQueue(
 ### -param <i>ForwardOptions</i> [in]
 
 <dd>
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552459">WDF_REQUEST_FORWARD_OPTIONS</a> structure.</p>
+<p>A pointer to a caller-allocated <a href="..\wdfrequest\ns-wdfrequest--wdf-request-forward-options.md">WDF_REQUEST_FORWARD_OPTIONS</a> structure.</p>
 </dd>
 </dl>
 
@@ -94,7 +94,7 @@ NTSTATUS WdfRequestForwardToParentDeviceIoQueue(
 
 <p>The driver has enabled <a href="wdf.guaranteeing_forward_progress_of_i_o_operations">guaranted forward progress</a> and the specified I/O request is reserved for low-memory situations.</p>
 
-<p>The driver did not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548789">WdfPdoInitAllowForwardingRequestToParent</a>.</p><dl>
+<p>The driver did not call <a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitallowforwardingrequesttoparent.md">WdfPdoInitAllowForwardingRequestToParent</a>.</p><dl>
 <dt><b>STATUS_WDF_BUSY</b></dt>
 </dl><p>The specified I/O queue is not accepting new requests.</p>
 
@@ -110,27 +110,13 @@ NTSTATUS WdfRequestForwardToParentDeviceIoQueue(
 </p>
 
 ## -remarks
-<p>Before a driver can call <b>WdfRequestForwardToParentDeviceIoQueue</b>, it must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548789">WdfPdoInitAllowForwardingRequestToParent</a>.</p>
+<p>Before a driver can call <b>WdfRequestForwardToParentDeviceIoQueue</b>, it must call <a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitallowforwardingrequesttoparent.md">WdfPdoInitAllowForwardingRequestToParent</a>.</p>
 
 <p>The driver must use the same <a href="wdf.accessing_data_buffers_in_kmdf_drivers">method to access data buffers</a> (buffered, direct, or neither) for both the parent device and the child device.</p>
 
 <p>If your driver will call <b>WdfRequestForwardToParentDeviceIoQueue</b> to requeue an I/O request, the driver must not use the request object as the parent of other framework objects, such as timer objects or work item objects.</p>
 
-<p>If your driver has called <a href="https://msdn.microsoft.com/library/windows/hardware/ff546786">WdfDeviceInitSetRequestAttributes</a> to specify <a href="wdf.framework_object_context_space">context space</a> for the <i>parent</i> device's request objects, the framework does not add this context space to request objects that the driver receives in a child device's queue. The driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548723">WdfObjectAllocateContext</a> to add the context space to a request object before the driver calls <b>WdfRequestForwardToParentDeviceIoQueue</b>. On the other hand, if the driver called <b>WdfDeviceInitSetRequestAttributes</b> for the <i>child</i> device's request objects, and if the parent device's request objects use context space that is equal to or smaller than the child device's context space, the driver can use the request object's context space without calling <b>WdfObjectAllocateContext</b>.</p>
-
-<p>Currently, the driver must use the <a href="..\wdfrequest\ne-wdfrequest--wdf-request-forward-options-flags.md">send and forget option</a> for all requeued I/O requests. Therefore, be aware that by the time that the framework deletes a requeued request object, it might have already removed the child device that originally received the request object. Thus, the driver must not use the <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-cleanup.md">EvtCleanupCallback</a> or <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-destroy.md">EvtDestroyCallback</a> function of a requeued request object to access child device resources, because the resources might be removed before the <i>EvtCleanupCallback</i> or <i>EvtDestroyCallback</i> function runs.</p>
-
-<p>For more information about <b>WdfRequestForwardToParentDeviceIoQueue</b>, see <a href="wdf.requeuing_i_o_requests">Requeuing I/O Requests</a>.</p>
-
-<p>The following code example first determines the parent device of a device that received an I/O request, and then it requeues the I/O request to the parent device's default I/O queue.</p>
-
-<p>Before a driver can call <b>WdfRequestForwardToParentDeviceIoQueue</b>, it must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548789">WdfPdoInitAllowForwardingRequestToParent</a>.</p>
-
-<p>The driver must use the same <a href="wdf.accessing_data_buffers_in_kmdf_drivers">method to access data buffers</a> (buffered, direct, or neither) for both the parent device and the child device.</p>
-
-<p>If your driver will call <b>WdfRequestForwardToParentDeviceIoQueue</b> to requeue an I/O request, the driver must not use the request object as the parent of other framework objects, such as timer objects or work item objects.</p>
-
-<p>If your driver has called <a href="https://msdn.microsoft.com/library/windows/hardware/ff546786">WdfDeviceInitSetRequestAttributes</a> to specify <a href="wdf.framework_object_context_space">context space</a> for the <i>parent</i> device's request objects, the framework does not add this context space to request objects that the driver receives in a child device's queue. The driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548723">WdfObjectAllocateContext</a> to add the context space to a request object before the driver calls <b>WdfRequestForwardToParentDeviceIoQueue</b>. On the other hand, if the driver called <b>WdfDeviceInitSetRequestAttributes</b> for the <i>child</i> device's request objects, and if the parent device's request objects use context space that is equal to or smaller than the child device's context space, the driver can use the request object's context space without calling <b>WdfObjectAllocateContext</b>.</p>
+<p>If your driver has called <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetrequestattributes.md">WdfDeviceInitSetRequestAttributes</a> to specify <a href="wdf.framework_object_context_space">context space</a> for the <i>parent</i> device's request objects, the framework does not add this context space to request objects that the driver receives in a child device's queue. The driver can call <a href="..\wdfobject\nf-wdfobject-wdfobjectallocatecontext.md">WdfObjectAllocateContext</a> to add the context space to a request object before the driver calls <b>WdfRequestForwardToParentDeviceIoQueue</b>. On the other hand, if the driver called <b>WdfDeviceInitSetRequestAttributes</b> for the <i>child</i> device's request objects, and if the parent device's request objects use context space that is equal to or smaller than the child device's context space, the driver can use the request object's context space without calling <b>WdfObjectAllocateContext</b>.</p>
 
 <p>Currently, the driver must use the <a href="..\wdfrequest\ne-wdfrequest--wdf-request-forward-options-flags.md">send and forget option</a> for all requeued I/O requests. Therefore, be aware that by the time that the framework deletes a requeued request object, it might have already removed the child device that originally received the request object. Thus, the driver must not use the <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-cleanup.md">EvtCleanupCallback</a> or <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-destroy.md">EvtDestroyCallback</a> function of a requeued request object to access child device resources, because the resources might be removed before the <i>EvtCleanupCallback</i> or <i>EvtDestroyCallback</i> function runs.</p>
 
@@ -191,7 +177,7 @@ NTSTATUS WdfRequestForwardToParentDeviceIoQueue(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>
 </td>
 </tr>
 </table>
@@ -199,9 +185,9 @@ NTSTATUS WdfRequestForwardToParentDeviceIoQueue(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548789">WdfPdoInitAllowForwardingRequestToParent</a>
+<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitallowforwardingrequesttoparent.md">WdfPdoInitAllowForwardingRequestToParent</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestForwardToParentDeviceIoQueue method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestForwardToParentDeviceIoQueue method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

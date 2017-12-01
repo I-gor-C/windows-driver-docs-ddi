@@ -84,7 +84,7 @@ typedef struct _D3D12DDIARG_CREATEDEVICE_0003 {
 ### -field <b>pKTCallbacks</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544512">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use to access kernel services.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use to access kernel services.</p>
 </dd>
 
 ### -field <b>hDrvDevice</b>

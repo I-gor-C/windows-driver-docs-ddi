@@ -201,10 +201,10 @@ typedef struct _DISK_EX_INT13_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552601">DISK_DETECTION_INFO</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-detection-info.md">DISK_DETECTION_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552624">DISK_INT13_INFO</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-int13-info.md">DISK_INT13_INFO</a>
 </dt>
 </dl>
 <p> </p>

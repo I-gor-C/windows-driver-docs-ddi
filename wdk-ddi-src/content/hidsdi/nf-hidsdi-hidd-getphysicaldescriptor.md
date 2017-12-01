@@ -79,11 +79,7 @@ BOOLEAN __stdcall HidD_GetPhysicalDescriptor(
 <p><b>HidD_GetPhysicalDescriptor</b> returns <b>TRUE</b> if it succeeds; otherwise, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Only user-mode applications can call <b>HidD_GetPhysicalDescriptor</b>. Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541064">IOCTL_GET_PHYSICAL_DESCRIPTOR</a> request.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p>Only user-mode applications can call <b>HidD_GetPhysicalDescriptor</b>. Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541064">IOCTL_GET_PHYSICAL_DESCRIPTOR</a> request.</p>
+<p>Only user-mode applications can call <b>HidD_GetPhysicalDescriptor</b>. Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl-get-physical-descriptor.md">IOCTL_GET_PHYSICAL_DESCRIPTOR</a> request.</p>
 
 <p>For more information, see <a href="NULL">HID Collections</a>. </p>
 
@@ -142,19 +138,19 @@ BOOLEAN __stdcall HidD_GetPhysicalDescriptor(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538927">HidD_GetIndexedString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getindexedstring.md">HidD_GetIndexedString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538959">HidD_GetManufacturerString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getmanufacturerstring.md">HidD_GetManufacturerString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539681">HidD_GetProductString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getproductstring.md">HidD_GetProductString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539683">HidD_GetSerialNumberString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getserialnumberstring.md">HidD_GetSerialNumberString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541064">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
+<a href="..\hidclass\ni-hidclass-ioctl-get-physical-descriptor.md">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

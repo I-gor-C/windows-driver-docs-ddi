@@ -138,13 +138,13 @@ typedef struct _UNIFONTOBJ {
 ### -field <b>pIFIMetrics</b>
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a> structure. Supplied by Unidrv.</p>
+<p>Pointer to an <a href="display.ifimetrics">IFIMETRICS</a> structure. Supplied by Unidrv.</p>
 </dd>
 
 ### -field <b>pfnGetInfo</b>
 
 <dd>
-<p>Pointer to Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function. Supplied by Unidrv.</p>
+<p>Pointer to Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function. Supplied by Unidrv.</p>
 </dd>
 </dl>
 
@@ -168,10 +168,10 @@ typedef struct _UNIFONTOBJ {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
+<a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a>
+<a href="display.ifimetrics">IFIMETRICS</a>
 </dt>
 </dl>
 <p> </p>

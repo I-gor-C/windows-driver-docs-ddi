@@ -74,13 +74,7 @@ VOID CcSetDirtyPageThreshold(
 ## -remarks
 <p><b>CcSetDirtyPageThreshold</b> sets or removes a per-file dirty page threshold. After a per-file dirty page threshold is set on a cached file, if the file system attempts to exceed the threshold, the cache manager will refuse requests to write to the file.</p>
 
-<p>To determine whether the cache manager will accept or refuse write requests, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539021">CcCanIWrite</a>.</p>
-
-<p>Note that the <i>per-file</i> dirty page threshold is not the same as the <i>global</i> dirty page threshold for the entire system cache.</p>
-
-<p><b>CcSetDirtyPageThreshold</b> sets or removes a per-file dirty page threshold. After a per-file dirty page threshold is set on a cached file, if the file system attempts to exceed the threshold, the cache manager will refuse requests to write to the file.</p>
-
-<p>To determine whether the cache manager will accept or refuse write requests, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539021">CcCanIWrite</a>.</p>
+<p>To determine whether the cache manager will accept or refuse write requests, use <a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a>.</p>
 
 <p>Note that the <i>per-file</i> dirty page threshold is not the same as the <i>global</i> dirty page threshold for the entire system cache.</p>
 
@@ -131,10 +125,10 @@ VOID CcSetDirtyPageThreshold(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539021">CcCanIWrite</a>
+<a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539060">CcDeferWrite</a>
+<a href="..\ntifs\nf-ntifs-ccdeferwrite.md">CcDeferWrite</a>
 </dt>
 </dl>
 <p> </p>

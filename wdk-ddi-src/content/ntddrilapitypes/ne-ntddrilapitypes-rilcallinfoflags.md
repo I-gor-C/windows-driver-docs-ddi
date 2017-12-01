@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfoflags.htm
 old-project: netvista
 ms.assetid: c4edec8f-a001-491b-a3e6-03d19ac94f18
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

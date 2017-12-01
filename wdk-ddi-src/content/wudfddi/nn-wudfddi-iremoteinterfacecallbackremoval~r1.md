@@ -7,7 +7,7 @@ old-location: wdf\iremoteinterfacecallbackremoval.htm
 old-project: wdf
 ms.assetid: f4cbad57-922f-4265-b436-847feeca853c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556893">IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval</a>
+<a href="wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval">IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval</a>
 </td>
 <td align="left" width="63%">
 <p>A UMDF-based driver's <a href="wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval">OnRemoteInterfaceRemoval</a> event callback function notifies the driver that it cannot use a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a> because the interface has been removed.</p>
@@ -72,9 +72,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>If your driver supports an <b>IRemoteInterfaceCallbackRemoval</b> interface for a device, the <b>IUnknown::QueryInterface</b> method that the driver passes to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a> must return the interface. </p>
-
-<p>If your driver supports an <b>IRemoteInterfaceCallbackRemoval</b> interface for a device, the <b>IUnknown::QueryInterface</b> method that the driver passes to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a> must return the interface. </p>
+<p>If your driver supports an <b>IRemoteInterfaceCallbackRemoval</b> interface for a device, the <b>IUnknown::QueryInterface</b> method that the driver passes to <a href="wdf.iwdfdevice2_createremoteinterface">IWDFDevice2::CreateRemoteInterface</a> must return the interface. </p>
 
 ## -requirements
 <table>

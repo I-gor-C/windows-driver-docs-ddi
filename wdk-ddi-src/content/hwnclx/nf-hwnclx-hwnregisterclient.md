@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Registers the hardware notification client driver and its callback functions with the class extension. This function should be invoked when the client driver is loaded and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine is called for initialization. F</p>
+<p>Registers the hardware notification client driver and its callback functions with the class extension. This function should be invoked when the client driver is loaded and the <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine is called for initialization. F</p>
 
 
 ## -syntax
@@ -71,7 +71,7 @@ FORCEINLINE NTSTATUS  HwNRegisterClient(
 ### -param <i>RegistryPath</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains the path to the client driver’s registry key. </p>
+<p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains the path to the client driver’s registry key. </p>
 </dd>
 </dl>
 

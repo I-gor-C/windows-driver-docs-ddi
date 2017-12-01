@@ -78,7 +78,7 @@ NTSTATUS FltQuerySecurityObject(
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a> value. This parameter is 
+<a href="ifsk.security_information">SECURITY_INFORMATION</a> value. This parameter is 
        required and must be one of the following:</p>
 <table>
 <tr>
@@ -129,7 +129,7 @@ NTSTATUS FltQuerySecurityObject(
 
 <dd>
 <p>Pointer to a caller-supplied output buffer that receives a copy of the security descriptor for the 
-      specified object. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> 
+      specified object. The <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> 
       structure is returned in self-relative format. This parameter is optional and can be 
       <b>NULL</b>.</p>
 </dd>
@@ -168,26 +168,11 @@ NTSTATUS FltQuerySecurityObject(
 <p>The NTFS file system imposes a 64-KB limit on the size of the security descriptor that is written to disk for a 
      file. (The FAT file system does not support security descriptors for files.) Thus, a 64-KB buffer pointed to by 
      the <i>SecurityDescriptor</i> parameter is guaranteed to be large enough to hold the returned 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> structure.</p>
+     <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure.</p>
 
 <p>The object that the <i>FileObject</i> parameter points to can represent a named data stream. 
      For more information about named data streams, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540364">FILE_STREAM_INFORMATION</a>.</p>
-
-<p>For more information about security and access control, see the Microsoft Windows SDK documentation.</p>
-
-<p>A security descriptor can be in absolute or self-relative form. In self-relative form, all members of the 
-     structure are located contiguously in memory. In absolute form, the structure contains only pointers to its 
-     members.</p>
-
-<p>The NTFS file system imposes a 64-KB limit on the size of the security descriptor that is written to disk for a 
-     file. (The FAT file system does not support security descriptors for files.) Thus, a 64-KB buffer pointed to by 
-     the <i>SecurityDescriptor</i> parameter is guaranteed to be large enough to hold the returned 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> structure.</p>
-
-<p>The object that the <i>FileObject</i> parameter points to can represent a named data stream. 
-     For more information about named data streams, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540364">FILE_STREAM_INFORMATION</a>.</p>
+     <a href="..\ntifs\ns-ntifs--file-stream-information.md">FILE_STREAM_INFORMATION</a>.</p>
 
 <p>For more information about security and access control, see the Microsoft Windows SDK documentation.</p>
 
@@ -246,13 +231,13 @@ NTSTATUS FltQuerySecurityObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540364">FILE_STREAM_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-stream-information.md">FILE_STREAM_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
+<a href="ifsk.security_information">SECURITY_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

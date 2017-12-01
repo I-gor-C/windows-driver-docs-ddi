@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetFC3MgmtInfo_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553939">GetFC3MgmtInfo</a> WMI method to the WMI client.</p>
+<p>The GetFC3MgmtInfo_OUT structure is used to report the output parameter data of the <a href="storage.getfc3mgmtinfo">GetFC3MgmtInfo</a> WMI method to the WMI client.</p>
 
 
 ## -syntax
@@ -58,20 +58,20 @@ typedef struct _GetFC3MgmtInfo_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation. </p>
+<p>Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation. </p>
 </dd>
 
 ### -field <b>MgmtInfo</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556032">HBAFC3MgmtInfo</a> that reports FC3 management information. </p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafc3mgmtinfo.md">HBAFC3MgmtInfo</a> that reports FC3 management information. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553939">GetFC3MgmtInfo</a> method reports fibre channel-3 management information.</p>
+<p>The <a href="storage.getfc3mgmtinfo">GetFC3MgmtInfo</a> method reports fibre channel-3 management information.</p>
 
-<p>The WMI tool suite generates a declaration of the GetEventBuffer_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetEventBuffer_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -90,13 +90,13 @@ typedef struct _GetFC3MgmtInfo_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553939">GetFC3MgmtInfo</a>
+<a href="storage.getfc3mgmtinfo">GetFC3MgmtInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556032">HBAFC3MgmtInfo</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--hbafc3mgmtinfo.md">HBAFC3MgmtInfo</a>
 </dt>
 </dl>
 <p> </p>

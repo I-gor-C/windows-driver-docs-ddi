@@ -81,12 +81,6 @@ NTSTATUS MRxFinalizeVNetRoot(
 
 <p>RDBSS ignores the return value from <i>MRxFinalizeVNetRoot</i>. </p>
 
-<p><i>MRxFinalizeVNetRoot</i> is called by RDBSS when it finalizes a NET_ROOT structure. </p>
-
-<p>After the <i>MRxFinalizeVNetRoot</i> returns, RDBSS uninitializes the V_NET_ROOT structure members, dereferences the NET_ROOT structure, and releases the memory for the V_NET_ROOT structure.</p>
-
-<p>RDBSS ignores the return value from <i>MRxFinalizeVNetRoot</i>. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -114,25 +108,25 @@ NTSTATUS MRxFinalizeVNetRoot(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549864">MRxCreateSrvCall</a>
+<a href="ifsk.mrxcreatesrvcall">MRxCreateSrvCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549869">MRxCreateVNetRoot</a>
+<a href="ifsk.mrxcreatevnetroot">MRxCreateVNetRoot</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550649">MRxExtractNetRootName</a>
+<a href="ifsk.mrxextractnetrootname">MRxExtractNetRootName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550653">MRxFinalizeNetRoot</a>
+<a href="ifsk.mrxfinalizenetroot">MRxFinalizeNetRoot</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554426">RxFinalizeSrvCall</a>
+<a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550750">MRxPreparseName</a>
+<a href="ifsk.mrxpreparsename">MRxPreparseName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550824">MRxSrvCallWinnerNotify</a>
+<a href="ifsk.mrxsrvcallwinnernotify">MRxSrvCallWinnerNotify</a>
 </dt>
 </dl>
 <p> </p>

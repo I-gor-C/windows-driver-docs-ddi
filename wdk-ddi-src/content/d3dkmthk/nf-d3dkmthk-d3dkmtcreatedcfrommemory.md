@@ -57,7 +57,7 @@ NTSTATUS D3DKMTCreateDCFromMemory(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547814">D3DKMT_CREATEDCFROMMEMORY</a> structure that describes parameters for creating a display context.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createdcfrommemory.md">D3DKMT_CREATEDCFROMMEMORY</a> structure that describes parameters for creating a display context.</p>
 </dd>
 </dl>
 
@@ -73,10 +73,6 @@ NTSTATUS D3DKMTCreateDCFromMemory(
 <p>This function might also return other <b>NTSTATUS</b> values.</p>
 
 ## -remarks
-<p>The kernel controls the memory referenced by the display context created by the <b>D3DKMTCreateDCFromMemory</b> function. You must call the  <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroydcfrommemory.md">D3DKMTDestoryDCFromMemory</a> function to free the memory referenced by the display context. Any  other approach  to free this memory will fail. </p>
-
-<p>During the execution of the <b>D3DKMTCreateDCFromMemory</b> function, the kernel locks and probes the referenced memory by performing a non-thread safe write to each page in the memory. No other threads in your process should be trying to access any part of this memory for the duration of the <b>D3DKMTCreateDCFromMemory</b> call; otherwise, the results will be undefined.</p>
-
 <p>The kernel controls the memory referenced by the display context created by the <b>D3DKMTCreateDCFromMemory</b> function. You must call the  <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroydcfrommemory.md">D3DKMTDestoryDCFromMemory</a> function to free the memory referenced by the display context. Any  other approach  to free this memory will fail. </p>
 
 <p>During the execution of the <b>D3DKMTCreateDCFromMemory</b> function, the kernel locks and probes the referenced memory by performing a non-thread safe write to each page in the memory. No other threads in your process should be trying to access any part of this memory for the duration of the <b>D3DKMTCreateDCFromMemory</b> call; otherwise, the results will be undefined.</p>
@@ -136,7 +132,7 @@ NTSTATUS D3DKMTCreateDCFromMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547814">D3DKMT_CREATEDCFROMMEMORY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createdcfrommemory.md">D3DKMT_CREATEDCFROMMEMORY</a>
 </dt>
 </dl>
 <p> </p>

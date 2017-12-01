@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FSCTL_OFFLOAD_WRITE_INPUT</b> structure contains the input for the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a> control code request.</p>
+<p>The <b>FSCTL_OFFLOAD_WRITE_INPUT</b> structure contains the input for the <a href="ifsk.fsctl_offload_write">FSCTL_OFFLOAD_WRITE</a> control code request.</p>
 
 
 ## -syntax
@@ -92,12 +92,12 @@ typedef struct _FSCTL_OFFLOAD_WRITE_INPUT {
 ### -field <b>Token</b>
 
 <dd>
-<p>A byte array that contains a token structure, <a href="https://msdn.microsoft.com/library/windows/hardware/hh451469">STORAGE_OFFLOAD_TOKEN</a>, representing a file data range to be logically written. The contents of <b>Token</b>  must remain unmodified between offload operations.</p>
+<p>A byte array that contains a token structure, <a href="..\ntddstor\ns-ntddstor--storage-offload-token.md">STORAGE_OFFLOAD_TOKEN</a>, representing a file data range to be logically written. The contents of <b>Token</b>  must remain unmodified between offload operations.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p><b>CopyLength</b> can be zero. The value of <b>FileOffset</b> + <b>CopyLength</b> is bounded by both <b>MAXULONGLONG</b> and <b>MAXFILESIZE</b>. <a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a> will return with <b>STATUS_INVALID_PARAMETER</b> if these conditions are not met.</p>
+<p><b>CopyLength</b> can be zero. The value of <b>FileOffset</b> + <b>CopyLength</b> is bounded by both <b>MAXULONGLONG</b> and <b>MAXFILESIZE</b>. <a href="ifsk.fsctl_offload_write">FSCTL_OFFLOAD_WRITE</a> will return with <b>STATUS_INVALID_PARAMETER</b> if these conditions are not met.</p>
 
 ## -requirements
 <table>
@@ -124,16 +124,16 @@ typedef struct _FSCTL_OFFLOAD_WRITE_INPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a>
+<a href="ifsk.fsctl_offload_read">FSCTL_OFFLOAD_READ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a>
+<a href="ifsk.fsctl_offload_write">FSCTL_OFFLOAD_WRITE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451130">FSCTL_OFFLOAD_WRITE_OUTPUT</a>
+<a href="..\ntifs\ns-ntifs--fsctl-offload-write-output.md">FSCTL_OFFLOAD_WRITE_OUTPUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451469">STORAGE_OFFLOAD_TOKEN</a>
+<a href="..\ntddstor\ns-ntddstor--storage-offload-token.md">STORAGE_OFFLOAD_TOKEN</a>
 </dt>
 </dl>
 <p> </p>

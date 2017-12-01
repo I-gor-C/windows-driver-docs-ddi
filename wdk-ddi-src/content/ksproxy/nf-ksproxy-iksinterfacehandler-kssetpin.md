@@ -7,7 +7,7 @@ old-location: stream\iksinterfacehandler_kssetpin.htm
 old-project: stream
 ms.assetid: 71e4be0a-a5a6-469a-948b-bc5277bc8cbe
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IKsInterfaceHandler, KsSetPin, IKsInterfaceHandler::KsSetPin
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ HRESULT KsSetPin(
 ### -param <i>KsPin</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559896">IKsPin</a> interface for the pin to which this streaming interface handler is to be attached. This pin must support the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559883">IKsObject</a> interface from which the underlying kernel handle can be obtained.</p>
+<p>Pointer to the <a href="..\ksproxy\nn-ksproxy-ikspin~r1.md">IKsPin</a> interface for the pin to which this streaming interface handler is to be attached. This pin must support the <a href="..\ksproxy\nn-ksproxy-iksobject.md">IKsObject</a> interface from which the underlying kernel handle can be obtained.</p>
 </dd>
 </dl>
 
@@ -65,8 +65,6 @@ HRESULT KsSetPin(
 <p>Returns NOERROR if successful; otherwise, returns an error code.</p>
 
 ## -remarks
-<p>The <b>KsSetPin</b> method is called after an instance of the interface handler is created but before any streaming is required of the instance.</p>
-
 <p>The <b>KsSetPin</b> method is called after an instance of the interface handler is created but before any streaming is required of the instance.</p>
 
 ## -requirements
@@ -96,12 +94,12 @@ HRESULT KsSetPin(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559883">IKsObject</a>
+<a href="..\ksproxy\nn-ksproxy-iksobject.md">IKsObject</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559896">IKsPin</a>
+<a href="..\ksproxy\nn-ksproxy-ikspin~r1.md">IKsPin</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsInterfaceHandler::KsSetPin method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsInterfaceHandler::KsSetPin method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

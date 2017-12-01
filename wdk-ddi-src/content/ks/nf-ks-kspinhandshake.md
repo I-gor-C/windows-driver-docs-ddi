@@ -7,7 +7,7 @@ old-location: stream\kspinhandshake.htm
 old-project: stream
 ms.assetid: 31855688-9221-4128-89c5-dbc4f3e6f794
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsPinHandshake
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ NTSTATUS KsPinHandshake(
 ### -param <i>Pin</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure that is initiating the handshake. The handshake request is passed on to the pin connected to this object.</p>
+<p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure that is initiating the handshake. The handshake request is passed on to the pin connected to this object.</p>
 </dd>
 
 ### -param <i>In</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562673">KSHANDSHAKE</a> structure containing the handshake information to be passed to the connected pin.</p>
+<p>A pointer to the <a href="stream.kshandshake">KSHANDSHAKE</a> structure containing the handshake information to be passed to the connected pin.</p>
 </dd>
 
 ### -param <i>Out</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562673">KSHANDSHAKE</a> structure that is filled in with handshake information by the connected pin.</p>
+<p>A pointer to a <a href="stream.kshandshake">KSHANDSHAKE</a> structure that is filled in with handshake information by the connected pin.</p>
 </dd>
 </dl>
 
@@ -79,10 +79,6 @@ NTSTATUS KsPinHandshake(
 <p><b>KsPinHandshake </b>returns STATUS_SUCCESS if the connected pin is accepting the negotiated connection. Otherwise, it returns an appropriate error code.</p>
 
 ## -remarks
-<p>Protocol handshakes can be used to negotiate private interfaces between two pins that are both AVStream pins. </p>
-
-<p>Connections between AVStream pins are performed using this type of handshake.</p>
-
 <p>Protocol handshakes can be used to negotiate private interfaces between two pins that are both AVStream pins. </p>
 
 <p>Connections between AVStream pins are performed using this type of handshake.</p>
@@ -130,15 +126,15 @@ NTSTATUS KsPinHandshake(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563509">KsPinGetConnectedPinInterface</a>
+<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560813">IOCTL_KS_HANDSHAKE</a>
+<a href="..\ks\ni-ks-ioctl-ks-handshake.md">IOCTL_KS_HANDSHAKE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562673">KSHANDSHAKE</a>
+<a href="stream.kshandshake">KSHANDSHAKE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinHandshake function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinHandshake function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

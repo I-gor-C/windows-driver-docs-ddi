@@ -7,7 +7,7 @@ old-location: debugger\getsymbolinformation.htm
 old-project: debugger
 ms.assetid: 1866c6ad-57a2-4f3d-a2c8-f5748ecf42bc
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugAdvanced3, GetSymbolInformation, IDebugAdvanced3::GetSymbolInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices

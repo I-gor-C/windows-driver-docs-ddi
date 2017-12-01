@@ -7,7 +7,7 @@ old-location: netvista\dot11_eap_result.htm
 old-project: netvista
 ms.assetid: 90898f5c-ffc1-4e6c-a8f8-ba839f449082
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_EAP_RESULT, DOT11_EAP_RESULT, *PDOT11_EAP_RESULT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wlanihv.h
 req.include-header: Winlanihv.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

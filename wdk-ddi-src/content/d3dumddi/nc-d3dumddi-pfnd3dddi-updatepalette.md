@@ -68,7 +68,7 @@ __checkReturn HRESULT APIENTRY UpdatePalette(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544093">D3DDDIARG_UPDATEPALETTE</a> structure that describes parameters for the palette-update operation.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-updatepalette.md">D3DDDIARG_UPDATEPALETTE</a> structure that describes parameters for the palette-update operation.</p>
 </dd>
 
 ### -param <i>pPaletteData</i> [in]
@@ -84,17 +84,7 @@ __checkReturn HRESULT APIENTRY UpdatePalette(
 ## -remarks
 <p>The palette data in the array that is specified by <i>pPaletteData</i> consists of one UINT value for each palette entry (PALETTEENTRY structure). The palette entry is in ARGB format, with 8 bits for each of the four channels.</p>
 
-<p>The user-mode display driver uses the following members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544093">D3DDDIARG_UPDATEPALETTE</a> structure that is pointed to by <i>pData</i> to update the texture palette: </p>
-
-<p>The <b>PaletteHandle</b> member specifies the handle to the palette that is associated with the surface.</p>
-
-<p>The <b>StartIndex</b> member specifies the index of the entry in the array at <i>pPaletteData</i> where the update should start.</p>
-
-<p>The <b>NumEntries</b> member specifies the number of entries in the array at <i>pPaletteData</i> to update.</p>
-
-<p>The palette data in the array that is specified by <i>pPaletteData</i> consists of one UINT value for each palette entry (PALETTEENTRY structure). The palette entry is in ARGB format, with 8 bits for each of the four channels.</p>
-
-<p>The user-mode display driver uses the following members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544093">D3DDDIARG_UPDATEPALETTE</a> structure that is pointed to by <i>pData</i> to update the texture palette: </p>
+<p>The user-mode display driver uses the following members of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-updatepalette.md">D3DDDIARG_UPDATEPALETTE</a> structure that is pointed to by <i>pData</i> to update the texture palette: </p>
 
 <p>The <b>PaletteHandle</b> member specifies the handle to the palette that is associated with the surface.</p>
 
@@ -137,10 +127,10 @@ __checkReturn HRESULT APIENTRY UpdatePalette(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544093">D3DDDIARG_UPDATEPALETTE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-updatepalette.md">D3DDDIARG_UPDATEPALETTE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

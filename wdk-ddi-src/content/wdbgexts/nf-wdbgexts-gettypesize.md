@@ -7,7 +7,7 @@ old-location: debugger\gettypesize.htm
 old-project: debugger
 ms.assetid: 5532799d-5c3b-41ba-ab62-dca9c9d9eb56
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: GetTypeSize
 ms.prod: windows-hardware
 ms.technology: windows-devices

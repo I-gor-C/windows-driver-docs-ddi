@@ -7,7 +7,7 @@ old-location: netvista\rilimsnwenabledflags_2.htm
 old-project: netvista
 ms.assetid: 3295b0f0-a498-47fb-9744-06ea74626bb5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

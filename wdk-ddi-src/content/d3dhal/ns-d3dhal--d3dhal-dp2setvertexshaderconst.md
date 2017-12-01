@@ -97,10 +97,10 @@ typedef struct _D3DHAL_DP2SETVERTEXSHADERCONST {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545925">D3DHAL_DP2VERTEXSHADER</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545478">D3DHAL_DP2CREATEVERTEXSHADER</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2createvertexshader.md">D3DHAL_DP2CREATEVERTEXSHADER</a>
 </dt>
 </dl>
 <p> </p>

@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY* ReclaimResources(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451080">D3DDDIARG_RECLAIMRESOURCES</a> structure that defines the video memory resources to reclaim.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-reclaimresources.md">D3DDDIARG_RECLAIMRESOURCES</a> structure that defines the video memory resources to reclaim.</p>
 </dd>
 </dl>
 
@@ -77,15 +77,15 @@ __checkReturn HRESULT APIENTRY* ReclaimResources(
 <dt><b>S_OK</b></dt>
 </dl><p>The video memory resources were successfully reclaimed.</p>
 
-<p>This error code is returned if the driver does not need to call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a> function.</p><dl>
+<p>This error code is returned if the driver does not need to call the <a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a> function.</p><dl>
 <dt><b>E_INVALIDARG</b></dt>
 </dl><p>An invalid parameter was supplied.</p>
 
-<p>This error code is returned if the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a> function and that function returns <b>E_INVALIDARG</b>.</p><dl>
+<p>This error code is returned if the driver calls the <a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a> function and that function returns <b>E_INVALIDARG</b>.</p><dl>
 <dt><b>D3DDDIERR_DEVICEREMOVED</b></dt>
 </dl><p>The video memory manager or display miniport driver could not complete the operation because either a Plug and Play (PnP) Stop event or a Timeout Detection and Recovery (TDR) event occurred.</p>
 
-<p>This error code is returned if the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a> function and that function returns <b>D3DDDIERR_DEVICEREMOVED</b>.</p>
+<p>This error code is returned if the driver calls the <a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a> function and that function returns <b>D3DDDIERR_DEVICEREMOVED</b>.</p>
 
 <p> </p>
 
@@ -135,19 +135,19 @@ __checkReturn HRESULT APIENTRY* ReclaimResources(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451080">D3DDDIARG_RECLAIMRESOURCES</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-reclaimresources.md">D3DDDIARG_RECLAIMRESOURCES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-offerresources.md">OfferResources</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a>
+<a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439828">ReclaimResourcesDXGI</a>
+<a href="display.reclaimresourcesdxgi">ReclaimResourcesDXGI</a>
 </dt>
 </dl>
 <p> </p>

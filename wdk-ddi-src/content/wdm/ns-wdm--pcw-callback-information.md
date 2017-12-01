@@ -111,10 +111,10 @@ typedef union _PCW_CALLBACK_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550341">PCW_COUNTER_INFORMATION</a>
+<a href="..\wdm\ns-wdm--pcw-counter-information.md">PCW_COUNTER_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550346">PCW_MASK_INFORMATION</a>
+<a href="..\wdm\ns-wdm--pcw-mask-information.md">PCW_MASK_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

@@ -100,7 +100,7 @@ typedef struct _STORAGE_DEVICE_LAYOUT_SIGNATURE {
 </dl>
 
 ## -remarks
-<p>The device layout signature contributes to the definition of a device unique identifier (DUID). For more information about DUIDs, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566975">STORAGE_DEVICE_UNIQUE_IDENTIFIER</a> structure.</p>
+<p>The device layout signature contributes to the definition of a device unique identifier (DUID). For more information about DUIDs, see the description of the <a href="..\storduid\ns-storduid--storage-device-unique-identifier.md">STORAGE_DEVICE_UNIQUE_IDENTIFIER</a> structure.</p>
 
 ## -requirements
 <table>
@@ -119,7 +119,7 @@ typedef struct _STORAGE_DEVICE_LAYOUT_SIGNATURE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566975">STORAGE_DEVICE_UNIQUE_IDENTIFIER</a>
+<a href="..\storduid\ns-storduid--storage-device-unique-identifier.md">STORAGE_DEVICE_UNIQUE_IDENTIFIER</a>
 </dt>
 </dl>
 <p> </p>

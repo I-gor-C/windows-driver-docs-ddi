@@ -99,13 +99,13 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN {
 ### -field <b>FlipInterval</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544549">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).</p>
+<p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-flipinterval-type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).</p>
 </dd>
 
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547991">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS</a> structure that identifies, in bit-field flags, attributes of a flip present-history operation.</p>
+<p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-flipmodel-presenthistorytokenflags.md">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS</a> structure that identifies, in bit-field flags, attributes of a flip present-history operation.</p>
 </dd>
 
 ### -field <b>hCompSurf</b>
@@ -181,7 +181,7 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN {
 ### -field <b>DirtyRegions</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547937">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the flip surface.</p>
+<p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-dirtyregions.md">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the flip surface.</p>
 </dd>
 </dl>
 
@@ -213,16 +213,16 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544549">D3DDDI_FLIPINTERVAL_TYPE</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-flipinterval-type.md">D3DDDI_FLIPINTERVAL_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547937">D3DKMT_DIRTYREGIONS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-dirtyregions.md">D3DKMT_DIRTYREGIONS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547991">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-flipmodel-presenthistorytokenflags.md">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548188">D3DKMT_PRESENTHISTORYTOKEN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
 </dt>
 </dl>
 <p> </p>

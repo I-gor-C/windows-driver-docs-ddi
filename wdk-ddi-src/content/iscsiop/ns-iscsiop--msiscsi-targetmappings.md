@@ -60,7 +60,7 @@ typedef struct _MSiSCSI_TargetMappings {
 ### -field <b>UniqueAdapterId</b>
 
 <dd>
-<p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563012">MSiSCSI_HBAInformation</a> structure.</p>
+<p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt--msiscsi-hbainformation.md">MSiSCSI_HBAInformation</a> structure.</p>
 </dd>
 
 ### -field <b>TargetMappingCount</b>
@@ -78,7 +78,7 @@ typedef struct _MSiSCSI_TargetMappings {
 ### -field <b>TargetMappings</b>
 
 <dd>
-<p>A variable-length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561572">ISCSI_TargetMapping</a> structures, each of which provides a list of LUN mappings that are associated with a particular iSCSI session that is associated with the adapter ID.</p>
+<p>A variable-length array of <a href="..\iscsidef\ns-iscsidef--iscsi-targetmapping.md">ISCSI_TargetMapping</a> structures, each of which provides a list of LUN mappings that are associated with a particular iSCSI session that is associated with the adapter ID.</p>
 </dd>
 </dl>
 
@@ -102,13 +102,13 @@ typedef struct _MSiSCSI_TargetMappings {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561572">ISCSI_TargetMapping</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-targetmapping.md">ISCSI_TargetMapping</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563012">MSiSCSI_HBAInformation</a>
+<a href="..\iscsimgt\ns-iscsimgt--msiscsi-hbainformation.md">MSiSCSI_HBAInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563147">MSiSCSI_TargetMappings WMI Class</a>
+<a href="storage.msiscsi_targetmappings_wmi_class">MSiSCSI_TargetMappings WMI Class</a>
 </dt>
 </dl>
 <p> </p>

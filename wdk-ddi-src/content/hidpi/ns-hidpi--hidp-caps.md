@@ -108,19 +108,19 @@ typedef struct _HIDP_CAPS {
 ### -field <b>NumberLinkCollectionNodes</b>
 
 <dd>
-<p>Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539764">HIDP_LINK_COLLECTION_NODE</a> structures that are returned for this top-level collection by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539725">HidP_GetLinkCollectionNodes</a>.</p>
+<p>Specifies the number of <a href="..\hidpi\ns-hidpi--hidp-link-collection-node.md">HIDP_LINK_COLLECTION_NODE</a> structures that are returned for this top-level collection by <a href="..\hidpi\nf-hidpi-hidp-getlinkcollectionnodes.md">HidP_GetLinkCollectionNodes</a>.</p>
 </dd>
 
 ### -field <b>NumberInputButtonCaps</b>
 
 <dd>
-<p>Specifies the number of input <a href="https://msdn.microsoft.com/library/windows/hardware/ff539693">HIDP_BUTTON_CAPS</a> structures that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539707">HidP_GetButtonCaps</a> returns.</p>
+<p>Specifies the number of input <a href="..\hidpi\ns-hidpi--hidp-button-caps.md">HIDP_BUTTON_CAPS</a> structures that <a href="..\hidpi\nf-hidpi-hidp-getbuttoncaps.md">HidP_GetButtonCaps</a> returns.</p>
 </dd>
 
 ### -field <b>NumberInputValueCaps</b>
 
 <dd>
-<p>Specifies the number of input <a href="https://msdn.microsoft.com/library/windows/hardware/ff539832">HIDP_VALUE_CAPS</a> structures that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539754">HidP_GetValueCaps</a> returns.</p>
+<p>Specifies the number of input <a href="..\hidpi\ns-hidpi--hidp-value-caps.md">HIDP_VALUE_CAPS</a> structures that <a href="..\hidpi\nf-hidpi-hidp-getvaluecaps.md">HidP_GetValueCaps</a> returns.</p>
 </dd>
 
 ### -field <b>NumberInputDataIndices</b>
@@ -167,7 +167,7 @@ typedef struct _HIDP_CAPS {
 </dl>
 
 ## -remarks
-<p>Callers of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538865">HIDClass support routines</a> use the information provided in this structure when a called routine requires, as input, the size of a report type, the number of link collection nodes, the number of control capabilities, or the number of data indices.</p>
+<p>Callers of the <a href="hid.hidclass_support_routines">HIDClass support routines</a> use the information provided in this structure when a called routine requires, as input, the size of a report type, the number of link collection nodes, the number of control capabilities, or the number of data indices.</p>
 
 ## -requirements
 <table>
@@ -186,31 +186,31 @@ typedef struct _HIDP_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539707">HidP_GetButtonCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getbuttoncaps.md">HidP_GetButtonCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539725">HidP_GetLinkCollectionNodes</a>
+<a href="..\hidpi\nf-hidpi-hidp-getlinkcollectionnodes.md">HidP_GetLinkCollectionNodes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539733">HidP_GetSpecificButtonCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getspecificbuttoncaps.md">HidP_GetSpecificButtonCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539737">HidP_GetSpecificValueCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getspecificvaluecaps.md">HidP_GetSpecificValueCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539754">HidP_GetValueCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getvaluecaps.md">HidP_GetValueCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539764">HIDP_LINK_COLLECTION_NODE</a>
+<a href="..\hidpi\ns-hidpi--hidp-link-collection-node.md">HIDP_LINK_COLLECTION_NODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539693">HIDP_BUTTON_CAPS</a>
+<a href="..\hidpi\ns-hidpi--hidp-button-caps.md">HIDP_BUTTON_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539832">HIDP_VALUE_CAPS</a>
+<a href="..\hidpi\ns-hidpi--hidp-value-caps.md">HIDP_VALUE_CAPS</a>
 </dt>
 </dl>
 <p> </p>

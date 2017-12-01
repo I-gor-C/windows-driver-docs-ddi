@@ -7,7 +7,7 @@ old-location: stream\bus_interface_reference.htm
 old-project: stream
 ms.assetid: 17c2c46c-ff79-4c80-82c9-c49b18426789
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PBUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE, *PBUS_INTERFACE_REFERENCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,25 +60,25 @@ typedef struct {
 ### -field <b>Interface</b>
 
 <dd>
-<p>Specifies the exported <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a>.</p>
+<p>Specifies the exported <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>.</p>
 </dd>
 
 ### -field <b>ReferenceDeviceObject</b>
 
 <dd>
-<p>Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567198">KStrReferenceDeviceObject</a> routine.</p>
+<p>Pointer to a driver-supplied <a href="stream.kstrreferencedeviceobject">KStrReferenceDeviceObject</a> routine.</p>
 </dd>
 
 ### -field <b>DereferenceDeviceObject</b>
 
 <dd>
-<p>Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567170">KStrDereferenceDeviceObject</a> routine.</p>
+<p>Pointer to a driver-supplied <a href="stream.kstrdereferencedeviceobject">KStrDereferenceDeviceObject</a> routine.</p>
 </dd>
 
 ### -field <b>QueryReferenceString</b>
 
 <dd>
-<p>Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567193">KStrQueryReferenceString</a> routine.</p>
+<p>Pointer to a driver-supplied <a href="stream.kstrqueryreferencestring">KStrQueryReferenceString</a> routine.</p>
 </dd>
 </dl>
 

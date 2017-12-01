@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The DEVQUERYPRINT_INFO structure is used as an input parameter to a printer interface DLL's <a href="https://msdn.microsoft.com/library/windows/hardware/ff547576">DevQueryPrintEx</a> function.</p>
+<p>The DEVQUERYPRINT_INFO structure is used as an input parameter to a printer interface DLL's <a href="..\winddiui\nf-winddiui-devqueryprintex.md">DevQueryPrintEx</a> function.</p>
 
 
 ## -syntax
@@ -82,7 +82,7 @@ typedef struct _DEVQUERYPRINT_INFO {
 ### -field <b>pDevMode</b>
 
 <dd>
-<p>Spooler-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure describing printer characteristics required by the print job.</p>
+<p>Spooler-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure describing printer characteristics required by the print job.</p>
 </dd>
 
 ### -field <b>pszErrorStr</b>
@@ -124,7 +124,7 @@ typedef struct _DEVQUERYPRINT_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547576">DevQueryPrintEx</a>
+<a href="..\winddiui\nf-winddiui-devqueryprintex.md">DevQueryPrintEx</a>
 </dt>
 </dl>
 <p> </p>

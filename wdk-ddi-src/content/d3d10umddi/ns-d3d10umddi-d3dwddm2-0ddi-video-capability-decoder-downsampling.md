@@ -76,7 +76,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING {
 ### -field <b>pInputConfig</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/hh450947">D3D11_1DDI_VIDEO_DECODER_CONFIG</a> structure that contains the configuration data associated with the decode profile .</p>
+<p>[in] A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-decoder-config.md">D3D11_1DDI_VIDEO_DECODER_CONFIG</a> structure that contains the configuration data associated with the decode profile .</p>
 </dd>
 
 ### -field <b>pFrameRate</b>
@@ -88,7 +88,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING {
 ### -field <b>pOutputDesc</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/hh450951">D3D11_1DDI_VIDEO_DECODER_DESC</a> structure that contains the resolution and the format of the display frames.  This is the destination resolution and format of the down sample operation.
+<p>[in] A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-decoder-desc.md">D3D11_1DDI_VIDEO_DECODER_DESC</a> structure that contains the resolution and the format of the display frames.  This is the destination resolution and format of the down sample operation.
 
 </p>
 <div class="alert"><b>Note</b>  The decode profile (<b>Guid</b>) member of <b>pOutputDesc</b> can be ignored.
@@ -151,13 +151,13 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450947">D3D11_1DDI_VIDEO_DECODER_CONFIG</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-decoder-config.md">D3D11_1DDI_VIDEO_DECODER_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450951">D3D11_1DDI_VIDEO_DECODER_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-decoder-desc.md">D3D11_1DDI_VIDEO_DECODER_DESC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906320">D3DDDI_COLOR_SPACE_TYPE</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-color-space-type.md">D3DDDI_COLOR_SPACE_TYPE</a>
 </dt>
 </dl>
 <p> </p>

@@ -89,22 +89,22 @@ typedef struct _PRINT_FEATURE_OPTION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552963">IPrintCoreHelper::SetOptions</a>
+<a href="print.iprintcorehelper_setoptions">IPrintCoreHelper::SetOptions</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552965">IPrintCoreHelper::WhyConstrained</a>
+<a href="print.iprintcorehelper_whyconstrained">IPrintCoreHelper::WhyConstrained</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552912">IPrintCoreHelperPS::SetOptions</a>
+<a href="print.iprintcorehelperps_setoptions">IPrintCoreHelperPS::SetOptions</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552915">IPrintCoreHelperPS::WhyConstrained</a>
+<a href="print.iprintcorehelperps_whyconstrained">IPrintCoreHelperPS::WhyConstrained</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552945">IPrintCoreHelperUni::SetOptions</a>
+<a href="print.iprintcorehelperuni_setoptions">IPrintCoreHelperUni::SetOptions</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552947">IPrintCoreHelperUni::WhyConstrained</a>
+<a href="print.iprintcorehelperuni_whyconstrained">IPrintCoreHelperUni::WhyConstrained</a>
 </dt>
 </dl>
 <p> </p>

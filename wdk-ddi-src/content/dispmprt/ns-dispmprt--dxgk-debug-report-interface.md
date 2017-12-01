@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DXGK_DEBUG_REPORT_INTERFACE structure contains pointers to functions in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551798">Debug Report interface</a>, which is implemented by the display port driver.</p>
+<p>The DXGK_DEBUG_REPORT_INTERFACE structure contains pointers to functions in the <a href="display.debug_report_interface">Debug Report interface</a>, which is implemented by the display port driver.</p>
 
 
 ## -syntax
@@ -103,19 +103,19 @@ typedef struct _DXGK_DEBUG_REPORT_INTERFACE {
 ### -field <b>DbgReportCreate</b>
 
 <dd>
-<p>A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff549088">DbgReportCreate</a> function.</p>
+<p>A pointer to the display port driver's <a href="display.dbgreportcreate2">DbgReportCreate</a> function.</p>
 </dd>
 
 ### -field <b>DbgReportSecondaryData</b>
 
 <dd>
-<p>A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff549099">DbgReportSecondaryData</a> function.</p>
+<p>A pointer to the display port driver's <a href="display.dbgreportsecondarydata2">DbgReportSecondaryData</a> function.</p>
 </dd>
 
 ### -field <b>DbgReportComplete</b>
 
 <dd>
-<p>A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff549080">DbgReportComplete</a> function. </p>
+<p>A pointer to the display port driver's <a href="display.dbgreportcomplete">DbgReportComplete</a> function. </p>
 </dd>
 </dl>
 

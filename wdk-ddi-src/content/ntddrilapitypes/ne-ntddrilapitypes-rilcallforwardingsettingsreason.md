@@ -7,7 +7,7 @@ old-location: netvista\rilcallforwardingsettingsreason.htm
 old-project: netvista
 ms.assetid: d1c39f60-15fb-450d-b879-fb5d236fcf45
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

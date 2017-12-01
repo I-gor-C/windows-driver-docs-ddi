@@ -7,7 +7,7 @@ old-location: kernel\ioregisterdeviceinterface.htm
 old-project: kernel
 ms.assetid: 4d0782c7-0516-4326-9994-7820446f2af6
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoRegisterDeviceInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,7 +73,7 @@ NTSTATUS IoRegisterDeviceInterface(
 ### -param <i>ReferenceString</i> [in, optional]
 
 <dd>
-<p>Optionally points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>. The string must not contain any path separator characters ("/" or "\"). Function drivers typically specify <b>NULL</b> for this parameter. Filter drivers must specify <b>NULL</b>.</p>
+<p>Optionally points to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>. The string must not contain any path separator characters ("/" or "\"). Function drivers typically specify <b>NULL</b> for this parameter. Filter drivers must specify <b>NULL</b>.</p>
 <p>Reference strings are only used by a few bus drivers, such as <i>swenum</i>, which is a bus driver that uses device interface instances as placeholders for software devices created on demand. When an instance of an interface is opened, the I/O manager passes the instance's reference string to the driver. The string becomes part of the interface instance's name (as an appended path component). The driver can then use the reference string to differentiate between two interface instances of the same class for a single device.</p>
 <p>On Microsoft Windows 98/Me systems, the <i>ReferenceString</i> value can be no longer than MAX_PATH characters. There is no length limit on Windows 2000 and later versions of Windows.</p>
 </dd>
@@ -83,7 +83,7 @@ NTSTATUS IoRegisterDeviceInterface(
 <dd>
 <p>A pointer to a Unicode string structure allocated by the caller. If this routine is successful, it initializes the Unicode string and allocates the string buffer containing the kernel-mode path to the symbolic link for an instance of the specified device interface class. </p>
 <p>The caller must treat <i>SymbolicLinkName</i> as opaque and must not disassemble it.</p>
-<p>The caller is responsible for freeing <i>SymbolicLinkName</i> with <a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a> when it is no longer needed.</p>
+<p>The caller is responsible for freeing <i>SymbolicLinkName</i> with <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a> when it is no longer needed.</p>
 </dd>
 </dl>
 
@@ -95,25 +95,11 @@ NTSTATUS IoRegisterDeviceInterface(
 <p> </p>
 
 ## -remarks
-<p><b>IoRegisterDeviceInterface</b> registers a device interface class, if it has not been previously registered, and creates a new instance of the interface class. A driver can call this routine several times for a given device to register several interface classes and create instances of the classes. A function or filter driver typically registers device interfaces in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine. For example, a fault-tolerant volume driver might register an instance of a fault-tolerant-volume interface and an instance of a volume interface for a particular volume.</p>
+<p><b>IoRegisterDeviceInterface</b> registers a device interface class, if it has not been previously registered, and creates a new instance of the interface class. A driver can call this routine several times for a given device to register several interface classes and create instances of the classes. A function or filter driver typically registers device interfaces in its <a href="kernel.adddevice">AddDevice</a> routine. For example, a fault-tolerant volume driver might register an instance of a fault-tolerant-volume interface and an instance of a volume interface for a particular volume.</p>
 
-<p>If the device interface class has not been registered previously, the I/O manager creates a registry key for it, along with instance-specific persistent storage under the key. Drivers can access this persistent storage using <a href="https://msdn.microsoft.com/library/windows/hardware/ff549433">IoOpenDeviceInterfaceRegistryKey</a>.</p>
+<p>If the device interface class has not been registered previously, the I/O manager creates a registry key for it, along with instance-specific persistent storage under the key. Drivers can access this persistent storage using <a href="..\wdm\nf-wdm-ioopendeviceinterfaceregistrykey.md">IoOpenDeviceInterfaceRegistryKey</a>.</p>
 
-<p>A driver registers an interface instance once and then calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549700">IoSetDeviceInterfaceState</a> to enable and disable the interface.</p>
-
-<p>Registered interfaces persist across operating system reboots. If the specified interface is already registered, the I/O manager passes its name in <i>SymbolicLinkName </i>and returns the informational success status STATUS_OBJECT_NAME_EXISTS.</p>
-
-<p>Most drivers use a <b>NULL</b> reference string for a device interface instance. If a driver uses a non-<b>NULL</b> reference string, it must do additional work, including possibly managing its own namespace and security. A filter driver that exposes a device interface must use a <b>NULL</b> <i>ReferenceString</i> to avoid conflicts with other drivers in the device stack.</p>
-
-<p>Callers of this routine are not required to remove the registration for a device interface when it is no longer needed. Device interface registrations can be removed from user mode, if necessary.</p>
-
-<p>Callers of <b>IoRegisterDeviceInterface</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.</p>
-
-<p><b>IoRegisterDeviceInterface</b> registers a device interface class, if it has not been previously registered, and creates a new instance of the interface class. A driver can call this routine several times for a given device to register several interface classes and create instances of the classes. A function or filter driver typically registers device interfaces in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine. For example, a fault-tolerant volume driver might register an instance of a fault-tolerant-volume interface and an instance of a volume interface for a particular volume.</p>
-
-<p>If the device interface class has not been registered previously, the I/O manager creates a registry key for it, along with instance-specific persistent storage under the key. Drivers can access this persistent storage using <a href="https://msdn.microsoft.com/library/windows/hardware/ff549433">IoOpenDeviceInterfaceRegistryKey</a>.</p>
-
-<p>A driver registers an interface instance once and then calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549700">IoSetDeviceInterfaceState</a> to enable and disable the interface.</p>
+<p>A driver registers an interface instance once and then calls <a href="..\wdm\nf-wdm-iosetdeviceinterfacestate.md">IoSetDeviceInterfaceState</a> to enable and disable the interface.</p>
 
 <p>Registered interfaces persist across operating system reboots. If the specified interface is already registered, the I/O manager passes its name in <i>SymbolicLinkName </i>and returns the informational success status STATUS_OBJECT_NAME_EXISTS.</p>
 
@@ -186,7 +172,7 @@ NTSTATUS IoRegisterDeviceInterface(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547780">IrqlIoPassive3</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_irqliopassive3">IrqlIoPassive3</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -194,18 +180,18 @@ NTSTATUS IoRegisterDeviceInterface(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549186">IoGetDeviceInterfaces</a>
+<a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549433">IoOpenDeviceInterfaceRegistryKey</a>
+<a href="..\wdm\nf-wdm-ioopendeviceinterfaceregistrykey.md">IoOpenDeviceInterfaceRegistryKey</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549700">IoSetDeviceInterfaceState</a>
+<a href="..\wdm\nf-wdm-iosetdeviceinterfacestate.md">IoSetDeviceInterfaceState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a>
+<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterDeviceInterface routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterDeviceInterface routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

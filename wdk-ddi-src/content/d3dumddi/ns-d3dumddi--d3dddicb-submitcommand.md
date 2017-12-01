@@ -91,7 +91,7 @@ typedef struct _D3DDDICB_SUBMITCOMMAND {
 ### -field <b>Flags</b>
 
 <dd>
-<p>An instance of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914420">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.</p>
+<p>An instance of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.</p>
 </dd>
 
 ### -field <b>BroadcastContextCount</b>
@@ -133,7 +133,7 @@ typedef struct _D3DDDICB_SUBMITCOMMAND {
 ### -field <b>MarkerLogType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn535966">D3DDDI_MARKERLOGTYPE</a> enumeration that indicates the type of marker in the Event Tracing for Windows (ETW) log that the user-mode display driver supports.</p>
+<p>A <a href="..\d3dumddi\ne-d3dumddi-d3dddi-markerlogtype.md">D3DDDI_MARKERLOGTYPE</a> enumeration that indicates the type of marker in the Event Tracing for Windows (ETW) log that the user-mode display driver supports.</p>
 </dd>
 
 ### -field <b>RenderCBSequence</b>
@@ -219,7 +219,7 @@ typedef struct _D3DDDICB_SUBMITCOMMAND {
 <p>The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-submitcommandcb.md">pfnSubmitCommandCb</a> code path no longer provides an allocation list for the user mode driver to provide a list of allocations that will be read and written to during this command. However, it is necessary to synchronize some writes that would not normally be known without the allocation list. For this, a new small allocation list specifically for surfaces which will be written to and used for displaying content. The <b>WrittenPrimaries</b> array should be used to provide such allocations.
 </p>
 
-<p>Despite the name, <b>WrittenPrimaries</b> must contain allocations that are considered <i>SwapChainBackBuffer</i> allocations according to the runtime in addition to the primaries. This is exposed to the user mode driver by a new flag in <a href="https://msdn.microsoft.com/library/windows/hardware/ff542004">D3D10_DDI_RESOURCE_MISC_FLAG</a>. The runtime will provide the <b>D3DWDDM2_0DDI_RESOURCE_MISC_DISPLAYABLE_SURFACE</b> flag to the user mode driver during calls to create a resource or heap that is created as a <i>FlipEx swapchain</i> or <i>primary</i>. The driver may use this flag to determine all allocations that should be put in the <b>WrittenPrimaries</b> list for Microsoft Direct3D 11. Other runtimes have not changed.
+<p>Despite the name, <b>WrittenPrimaries</b> must contain allocations that are considered <i>SwapChainBackBuffer</i> allocations according to the runtime in addition to the primaries. This is exposed to the user mode driver by a new flag in <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-misc-flag.md">D3D10_DDI_RESOURCE_MISC_FLAG</a>. The runtime will provide the <b>D3DWDDM2_0DDI_RESOURCE_MISC_DISPLAYABLE_SURFACE</b> flag to the user mode driver during calls to create a resource or heap that is created as a <i>FlipEx swapchain</i> or <i>primary</i>. The driver may use this flag to determine all allocations that should be put in the <b>WrittenPrimaries</b> list for Microsoft Direct3D 11. Other runtimes have not changed.
 </p>
 
 <p>If the driver receives a call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a> that has this flag, the allocation should be added to this list on every <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-submitcommandcb.md">pfnSubmitCommandCb</a> call that writes to the surface.</p>
@@ -260,7 +260,7 @@ typedef struct _D3DDDICB_SUBMITCOMMAND {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542004">D3D10_DDI_RESOURCE_MISC_FLAG</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-misc-flag.md">D3D10_DDI_RESOURCE_MISC_FLAG</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-submitcommandcb.md">pfnSubmitCommandCb</a>

@@ -7,7 +7,7 @@ old-location: netvista\miniportqueryoffload.htm
 old-project: netvista
 ms.assetid: a583c4cb-53c1-4eff-bcfe-c962f736b1f8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BINARY_DATA, BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -127,47 +127,6 @@ VOID MiniportQueryOffload(
 <p>The query operation did not succeed. The host stack will terminate the state objects that could not
      be queried.</p>
 
-<p>The 
-    <i>MiniportQueryOffload</i> function can query any TCP chimney state that has been offloaded to the
-    offload target.</p>
-
-<p>The 
-    <i>MiniportQueryOffload</i> function stores the 
-    <i>OffloadBlockList</i> pointer and then returns. The offload target always completes the query operation
-    asynchronously by calling the 
-    <a href="..\ndischimney\nf-ndischimney-ndismqueryoffloadstatecomplete.md">
-    NdisMQueryOffloadStateComplete</a> function. The 
-    <i>OffloadBlockList</i> pointer points to an 
-    <a href="..\ndischimney\ns-ndischimney--ndis-miniport-offload-block-list.md">
-    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that can either be a stand-alone structure or the root
-    node in an 
-    <a href="NULL">offload state tree</a>. The state tree is valid
-    until the offload target calls the 
-    <b>NdisMQueryOffloadStateComplete</b> function.</p>
-
-<p>After returning from the 
-    <i>MiniportQueryOffload</i> function, the miniport driver fills in the 
-    <a href="netvista.offload_state_structures">offload state structure</a> that is
-    associated with each NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure in the state tree pointed to by the 
-    <i>OffloadBlockList</i> pointer. To each of these offload state structures, the miniport driver writes the
-    current value of each variable in the structure.</p>
-
-<p>Before calling the 
-    <b>NdisMQueryOffloadStateComplete</b> function, the offload target must write either of the following
-    NDIS_STATUS values to the 
-    <b>Status</b> member of each NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure in the state tree:</p>
-
-<p>NDIS_STATUS_SUCCESS
-     </p>
-
-<p>The offload target successfully queried the state objects.</p>
-
-<p>NDIS_STATUS_FAILURE
-     </p>
-
-<p>The query operation did not succeed. The host stack will terminate the state objects that could not
-     be queried.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -200,7 +159,7 @@ VOID MiniportQueryOffload(
    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563672">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nf-ndischimney-ndismqueryoffloadstatecomplete.md">
@@ -209,4 +168,4 @@ VOID MiniportQueryOffload(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_QUERY_OFFLOAD_HANDLER callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_QUERY_OFFLOAD_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

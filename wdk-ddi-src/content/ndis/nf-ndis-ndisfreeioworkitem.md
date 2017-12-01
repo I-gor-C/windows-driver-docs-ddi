@@ -7,7 +7,7 @@ old-location: netvista\ndisfreeioworkitem.htm
 old-project: netvista
 ms.assetid: ddc2f96b-fa2c-43c1-960f-7f8e06a5b22d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFreeIoWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,12 +69,7 @@ VOID NdisFreeIoWorkItem(
 
 ## -remarks
 <p><b>NdisFreeIoWorkItem</b> calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff549133">IoFreeWorkItem</a> to free the structure that is
-    specified by the
-    <i>NdisIoWorkItemHandle</i> parameter.</p>
-
-<p><b>NdisFreeIoWorkItem</b> calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff549133">IoFreeWorkItem</a> to free the structure that is
+    <a href="..\wdm\nf-wdm-iofreeworkitem.md">IoFreeWorkItem</a> to free the structure that is
     specified by the
     <i>NdisIoWorkItemHandle</i> parameter.</p>
 
@@ -131,7 +126,7 @@ VOID NdisFreeIoWorkItem(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975103">Init_NdisAllocateIoWorkItem</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_init_ndisallocateioworkitem">Init_NdisAllocateIoWorkItem</a>, <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -139,13 +134,13 @@ VOID NdisFreeIoWorkItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549133">IoFreeWorkItem</a>
+<a href="..\wdm\nf-wdm-iofreeworkitem.md">IoFreeWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561604">NdisAllocateIoWorkItem</a>
+<a href="..\ndis\nf-ndis-ndisallocateioworkitem.md">NdisAllocateIoWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563775">NdisQueueIoWorkItem</a>
+<a href="..\ndis\nf-ndis-ndisqueueioworkitem.md">NdisQueueIoWorkItem</a>
 </dt>
 <dt>
 <a href="NULL">NDIS I/O Work Items</a>
@@ -153,4 +148,4 @@ VOID NdisFreeIoWorkItem(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeIoWorkItem function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeIoWorkItem function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

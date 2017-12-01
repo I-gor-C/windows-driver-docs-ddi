@@ -7,7 +7,7 @@ old-location: netvista\wdi_anqp_query_status.htm
 old-project: netvista
 ms.assetid: 5EC1B41D-2A6F-43B7-9E22-8A65CF4E11CA
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

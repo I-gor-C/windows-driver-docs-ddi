@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DXGK_MONITORFREQUENCYRANGESET_INTERFACE structure contains pointers to functions that belong to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568430">Monitor Frequency Range Set interface</a>, which is implemented by the video present network (VidPN) manager.</p>
+<p>The DXGK_MONITORFREQUENCYRANGESET_INTERFACE structure contains pointers to functions that belong to the <a href="display.monitor_frequency_range_set_interface">Monitor Frequency Range Set interface</a>, which is implemented by the video present network (VidPN) manager.</p>
 
 
 ## -syntax

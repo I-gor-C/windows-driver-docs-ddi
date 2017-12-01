@@ -59,7 +59,7 @@ HBA_STATUS HBA_API HBA_RegisterForAdapterAddEvents(
 ### -param <i>callback</i> [in]
 
 <dd>
-<p>Pointer to a callback routine of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556045">HBA_ADAPTER_CALLBACK</a> that is called when an adapter is added to the system.</p>
+<p>Pointer to a callback routine of type <a href="storage.hba_adapter_callback">HBA_ADAPTER_CALLBACK</a> that is called when an adapter is added to the system.</p>
 </dd>
 
 ### -param <i>userData</i> 
@@ -71,12 +71,12 @@ HBA_STATUS HBA_API HBA_RegisterForAdapterAddEvents(
 ### -param <i>callbackHandle</i> 
 
 <dd>
-<p>Contains an opaque identifier that the user must pass to <a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a> to de-register the callback routine.</p>
+<p>Contains an opaque identifier that the user must pass to <a href="..\hbaapi\nf-hbaapi-hba-removecallback.md">HBA_RemoveCallback</a> to de-register the callback routine.</p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_RegisterForAdapterAddEvents</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, this member should have one of the following values.</p><dl>
+<p>The <b>HBA_RegisterForAdapterAddEvents</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, this member should have one of the following values.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the callback routine was successfully registered. </p><dl>
 <dt><b>HBA_STATUS_ERROR</b></dt>
@@ -85,8 +85,6 @@ HBA_STATUS HBA_API HBA_RegisterForAdapterAddEvents(
 <p> </p>
 
 ## -remarks
-<p>When a new adapter is added to the system, an event of type HBA_EVENT_ADAPTER_ADD is generated.</p>
-
 <p>When a new adapter is added to the system, an event of type HBA_EVENT_ADAPTER_ADD is generated.</p>
 
 ## -requirements
@@ -136,13 +134,13 @@ HBA_STATUS HBA_API HBA_RegisterForAdapterAddEvents(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556045">HBA_ADAPTER_CALLBACK</a>
+<a href="storage.hba_adapter_callback">HBA_ADAPTER_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a>
+<a href="..\hbaapi\nf-hbaapi-hba-removecallback.md">HBA_RemoveCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

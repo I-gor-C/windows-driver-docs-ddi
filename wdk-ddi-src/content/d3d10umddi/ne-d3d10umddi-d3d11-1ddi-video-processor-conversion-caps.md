@@ -62,7 +62,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS {
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS_DEINTERLACE_BLEND"></a><a id="d3d11_1ddi_video_processor_conversion_caps_deinterlace_blend"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS_DEINTERLACE_BLEND</b>
 
 <dd>
-<p>The driver can perform blend deinterlacing where the two fields in an interlaced frame are blended. The driver uses this deinterlacing type when it deinterlaces at half rate. For more information about half rate, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563061">DXVAHDDDI_OUTPUT_RATE</a>.</p>
+<p>The driver can perform blend deinterlacing where the two fields in an interlaced frame are blended. The driver uses this deinterlacing type when it deinterlaces at half rate. For more information about half rate, see <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-output-rate.md">DXVAHDDDI_OUTPUT_RATE</a>.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS_DEINTERLACE_BOB"></a><a id="d3d11_1ddi_video_processor_conversion_caps_deinterlace_bob"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS_DEINTERLACE_BOB</b>
@@ -86,7 +86,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS {
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS_INVERSE_TELECINE"></a><a id="d3d11_1ddi_video_processor_conversion_caps_inverse_telecine"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS_INVERSE_TELECINE</b>
 
 <dd>
-<p>The driver can convert from the interlaced frames to original progressive frames by reversing the telecine. For more information about reversing the telecine, see the <b>ITelecineCaps</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450990">D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS</a> structure.</p>
+<p>The driver can convert from the interlaced frames to original progressive frames by reversing the telecine. For more information about reversing the telecine, see the <b>ITelecineCaps</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-processor-rate-conversion-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS</a> structure.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS_FRAME_RATE_CONVERSION"></a><a id="d3d11_1ddi_video_processor_conversion_caps_frame_rate_conversion"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS_FRAME_RATE_CONVERSION</b>
@@ -132,10 +132,10 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450990">D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-processor-rate-conversion-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_RATE_CONVERSION_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563061">DXVAHDDDI_OUTPUT_RATE</a>
+<a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-output-rate.md">DXVAHDDDI_OUTPUT_RATE</a>
 </dt>
 </dl>
 <p> </p>

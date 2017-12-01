@@ -7,7 +7,7 @@ old-location: netvista\rilmessageflags_2.htm
 old-project: netvista
 ms.assetid: 49f8bd1b-5c8a-47d3-a5d5-817216562559
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

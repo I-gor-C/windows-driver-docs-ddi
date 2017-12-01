@@ -192,10 +192,10 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567825">IOCTL_VIDEO_QUERY_POINTER_ATTR</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-query-pointer-attr.md">IOCTL_VIDEO_QUERY_POINTER_ATTR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568144">IOCTL_VIDEO_SET_POINTER_ATTR</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-set-pointer-attr.md">IOCTL_VIDEO_SET_POINTER_ATTR</a>
 </dt>
 </dl>
 <p> </p>

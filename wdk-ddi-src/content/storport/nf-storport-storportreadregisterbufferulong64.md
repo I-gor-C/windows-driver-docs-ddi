@@ -83,8 +83,6 @@ req.product: Windows 10 or later.
 ## -remarks
 <p>The <b>StorPortReadRegisterBufferUlong64</b> routine is only available on the 64-bit version of Windows.</p>
 
-<p>The <b>StorPortReadRegisterBufferUlong64</b> routine is only available on the 64-bit version of Windows.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -120,7 +118,7 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967742">StorPortWriteRegisterBufferUlong64</a>
+<a href="..\storport\nf-storport-storportwriteregisterbufferulong64.md">StorPortWriteRegisterBufferUlong64</a>
 </dt>
 </dl>
 <p> </p>

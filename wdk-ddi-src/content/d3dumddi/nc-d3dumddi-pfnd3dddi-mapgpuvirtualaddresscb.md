@@ -71,7 +71,7 @@ HRESULT APIENTRY CALLBACK* pfnMapGpuVirtualAddressCb(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906325">D3DDDI_MAPGPUVIRTUALADDRESS</a> structure that describes the operation to perform.
+<p>A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-mapgpuvirtualaddress.md">D3DDDI_MAPGPUVIRTUALADDRESS</a> structure that describes the operation to perform.
 
 </p>
 </dd>
@@ -137,7 +137,7 @@ HRESULT APIENTRY CALLBACK* pfnMapGpuVirtualAddressCb(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906325">D3DDDI_MAPGPUVIRTUALADDRESS</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-mapgpuvirtualaddress.md">D3DDDI_MAPGPUVIRTUALADDRESS</a>
 </dt>
 </dl>
 <p> </p>

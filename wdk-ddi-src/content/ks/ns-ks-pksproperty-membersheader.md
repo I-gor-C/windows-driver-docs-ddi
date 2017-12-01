@@ -7,7 +7,7 @@ old-location: stream\ksproperty_membersheader.htm
 old-project: stream
 ms.assetid: 8a5d8f8c-4924-4ae0-a7b2-8d2b04a49a9e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSPROPERTY_MEMBERSHEADER, KSPROPERTY_MEMBERSHEADER, *PKSPROPERTY_MEMBERSHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ typedef struct {
 ### -field <b>MembersFlags</b>
 
 <dd>
-<p>Specifies the type of entries in the members list. The size of valid values is determined by value type, as specified in the <b>PropTypeSet</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565132">KSPROPERTY_DESCRIPTION</a> structure. The number of range pairs is determined by <b>MembersCount</b>. This should be one of the values listed in the following table.</p>
+<p>Specifies the type of entries in the members list. The size of valid values is determined by value type, as specified in the <b>PropTypeSet</b> member of the <a href="stream.ksproperty_description">KSPROPERTY_DESCRIPTION</a> structure. The number of range pairs is determined by <b>MembersCount</b>. This should be one of the values listed in the following table.</p>
 <table>
 <tr>
 <th>Value</th>
@@ -71,7 +71,7 @@ typedef struct {
 <p>KSPROPERTY_MEMBER_RANGES</p>
 </td>
 <td>
-<p>Indicates that list members are ranges, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff564394">KSPROPERTY_BOUNDS_LONG</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff564395">KSPROPERTY_BOUNDS_LONGLONG</a>.</p>
+<p>Indicates that list members are ranges, of type <a href="stream.ksproperty_bounds_long">KSPROPERTY_BOUNDS_LONG</a> or <a href="stream.ksproperty_bounds_longlong">KSPROPERTY_BOUNDS_LONGLONG</a>.</p>
 </td>
 </tr>
 <tr>
@@ -88,7 +88,7 @@ typedef struct {
 </p>
 </td>
 <td>
-<p>Indicates that the following members are stepped values within ranges, of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn936838">KSPROPERTY_STEPPING_LONG</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/dn936841">KSPROPERTY_STEPPING_LONGLONG</a>..</p>
+<p>Indicates that the following members are stepped values within ranges, of type <a href="stream.ksproperty_stepping_long">KSPROPERTY_STEPPING_LONG</a> or <a href="stream.ksproperty_stepping_longlong">KSPROPERTY_STEPPING_LONGLONG</a>..</p>
 </td>
 </tr>
 <tr>
@@ -118,7 +118,7 @@ typedef struct {
 ### -field <b>Flags</b>
 
 <dd>
-<p>Specifies the type of entries in the members list. The size of valid values is determined by value type, as specified in the <b>PropTypeSet</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565132">KSPROPERTY_DESCRIPTION</a> structure. The number of range pairs is determined by <b>MembersCount</b>. This should be one of the values listed in the following table.</p>
+<p>Specifies the type of entries in the members list. The size of valid values is determined by value type, as specified in the <b>PropTypeSet</b> member of the <a href="stream.ksproperty_description">KSPROPERTY_DESCRIPTION</a> structure. The number of range pairs is determined by <b>MembersCount</b>. This should be one of the values listed in the following table.</p>
 <table>
 <tr>
 <th>Value</th>
@@ -129,7 +129,7 @@ typedef struct {
 <p>KSPROPERTY_MEMBER_RANGES</p>
 </td>
 <td>
-<p>Indicates that list members are ranges, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff564394">KSPROPERTY_BOUNDS_LONG</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff564395">KSPROPERTY_BOUNDS_LONGLONG</a>.</p>
+<p>Indicates that list members are ranges, of type <a href="stream.ksproperty_bounds_long">KSPROPERTY_BOUNDS_LONG</a> or <a href="stream.ksproperty_bounds_longlong">KSPROPERTY_BOUNDS_LONGLONG</a>.</p>
 </td>
 </tr>
 <tr>
@@ -146,7 +146,7 @@ typedef struct {
 </p>
 </td>
 <td>
-<p>Indicates that the following members are stepped values within ranges, of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn936838">KSPROPERTY_STEPPING_LONG</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/dn936841">KSPROPERTY_STEPPING_LONGLONG</a>..</p>
+<p>Indicates that the following members are stepped values within ranges, of type <a href="stream.ksproperty_stepping_long">KSPROPERTY_STEPPING_LONG</a> or <a href="stream.ksproperty_stepping_longlong">KSPROPERTY_STEPPING_LONGLONG</a>..</p>
 </td>
 </tr>
 <tr>
@@ -165,7 +165,7 @@ typedef struct {
 ## -remarks
 <p>The size of the array can be determined by multiplying <b>MembersCount</b> by <b>MembersSize</b>.</p>
 
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff565190">KSPROPERTY_MEMBERSLIST</a> structure contains a KSPROPERTY_MEMBERSHEADER structure as its first member. The second member, <b>Members</b>, points to an array of property values or ranges.</p>
+<p>A <a href="stream.ksproperty_memberslist">KSPROPERTY_MEMBERSLIST</a> structure contains a KSPROPERTY_MEMBERSHEADER structure as its first member. The second member, <b>Members</b>, points to an array of property values or ranges.</p>
 
 ## -requirements
 <table>
@@ -184,27 +184,27 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565176">KSPROPERTY_ITEM</a>
+<a href="stream.ksproperty_item">KSPROPERTY_ITEM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565190">KSPROPERTY_MEMBERSLIST</a>
+<a href="stream.ksproperty_memberslist">KSPROPERTY_MEMBERSLIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565132">KSPROPERTY_DESCRIPTION</a>
+<a href="stream.ksproperty_description">KSPROPERTY_DESCRIPTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564394">KSPROPERTY_BOUNDS_LONG</a>
+<a href="stream.ksproperty_bounds_long">KSPROPERTY_BOUNDS_LONG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564395">KSPROPERTY_BOUNDS_LONGLONG</a>
+<a href="stream.ksproperty_bounds_longlong">KSPROPERTY_BOUNDS_LONGLONG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn936838">KSPROPERTY_STEPPING_LONG</a>
+<a href="stream.ksproperty_stepping_long">KSPROPERTY_STEPPING_LONG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn936841">KSPROPERTY_STEPPING_LONGLONG</a>
+<a href="stream.ksproperty_stepping_longlong">KSPROPERTY_STEPPING_LONGLONG</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_MEMBERSHEADER structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_MEMBERSHEADER structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

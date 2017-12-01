@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CreateLight(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542943">D3DDDIARG_CREATELIGHT</a> structure that contains the index into the light array.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createlight.md">D3DDDIARG_CREATELIGHT</a> structure that contains the index into the light array.</p>
 </dd>
 </dl>
 
@@ -75,9 +75,7 @@ __checkReturn HRESULT APIENTRY CreateLight(
 <p><b>CreateLight</b> should return S_OK or an appropriate error result if it cannot successfully create a light source.</p>
 
 ## -remarks
-<p>The user-mode display driver should enlarge its light array as necessary to accommodate at least as many light sources as specified by the <b>Index</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/ff542943">D3DDDIARG_CREATELIGHT</a>.</p>
-
-<p>The user-mode display driver should enlarge its light array as necessary to accommodate at least as many light sources as specified by the <b>Index</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/ff542943">D3DDDIARG_CREATELIGHT</a>.</p>
+<p>The user-mode display driver should enlarge its light array as necessary to accommodate at least as many light sources as specified by the <b>Index</b> member in <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createlight.md">D3DDDIARG_CREATELIGHT</a>.</p>
 
 ## -requirements
 <table>
@@ -114,10 +112,10 @@ __checkReturn HRESULT APIENTRY CreateLight(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542943">D3DDDIARG_CREATELIGHT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createlight.md">D3DDDIARG_CREATELIGHT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

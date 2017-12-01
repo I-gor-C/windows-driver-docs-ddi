@@ -7,7 +7,7 @@ old-location: netvista\ril_sendsupservicedata.htm
 old-project: netvista
 ms.assetid: d5bf5fa0-12c0-4971-91bc-775c59d45d60
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SendSupServiceData
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -143,7 +143,7 @@ typedef struct _DXGK_TRANSFERFLAGS {
 <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557540">DXGKARG_BUILDPAGINGBUFFER</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
 </dt>
 </dl>
 <p> </p>

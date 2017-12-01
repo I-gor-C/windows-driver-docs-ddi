@@ -7,7 +7,7 @@ old-location: netvista\rildmconfiginfovalue_2.htm
 old-project: netvista
 ms.assetid: 6b917b11-a2f2-4b8b-9964-2d7b4a6a1871
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILDMCONFIGINFOVALUE, RILDMCONFIGINFOVALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices

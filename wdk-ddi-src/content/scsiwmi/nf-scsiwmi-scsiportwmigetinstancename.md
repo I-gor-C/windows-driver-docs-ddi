@@ -58,7 +58,7 @@ PWCHAR ScsiPortWmiGetInstanceName(
 ### -param <i>RequestContext</i> [in]
 
 <dd>
-<p>Pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff564946">SCSIWMI_REQUEST_CONTEXT</a> that contains the request context for a WMI SRB. </p>
+<p>Pointer to a structure of type <a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a> that contains the request context for a WMI SRB. </p>
 </dd>
 </dl>
 
@@ -66,13 +66,7 @@ PWCHAR ScsiPortWmiGetInstanceName(
 <p>Pointer to a counted string containing the instance name associated with the indicated SRB.  If the SRB type is one that does not use an instance name, <b>ScsiPortWmiGetInstanceName</b> returns <b>NULL</b>. </p>
 
 ## -remarks
-<p>The parameter <b>RequestContext</b> points to a request context structure, <a href="https://msdn.microsoft.com/library/windows/hardware/ff564946">SCSIWMI_REQUEST_CONTEXT</a>, that contains information associated with a <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a> (WMI) SCSI request block (SRB). The request context structure, in turn, contains one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566371">WMI WNODE_XXX Structures</a> that is used by the WMI system to pass data between user-mode data consumers and kernel-mode data providers such as drivers. </p>
-
-<p>The WNODE_XXX structure contained in the request context holds an instance name associated with the WMI SRB. The miniport driver calls <b>ScsiPortWmiGetInstanceName</b> to extract this instance name from the request context. </p>
-
-<p>The memory allocated for the request context must remain valid until after the miniport driver calls <b>ScsiPortWmiPostProcess</b>, and <b>ScsiPortWmiPostProcess</b> returns the final SRB status and buffer size. If the SRB can pend, the memory for the request context should be allocated from the SRB extension. If the SRB cannot pend, the memory can be allocated from a stack frame that does not go out of scope.</p>
-
-<p>The parameter <b>RequestContext</b> points to a request context structure, <a href="https://msdn.microsoft.com/library/windows/hardware/ff564946">SCSIWMI_REQUEST_CONTEXT</a>, that contains information associated with a <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a> (WMI) SCSI request block (SRB). The request context structure, in turn, contains one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566371">WMI WNODE_XXX Structures</a> that is used by the WMI system to pass data between user-mode data consumers and kernel-mode data providers such as drivers. </p>
+<p>The parameter <b>RequestContext</b> points to a request context structure, <a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a>, that contains information associated with a <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a> (WMI) SCSI request block (SRB). The request context structure, in turn, contains one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566371">WMI WNODE_XXX Structures</a> that is used by the WMI system to pass data between user-mode data consumers and kernel-mode data providers such as drivers. </p>
 
 <p>The WNODE_XXX structure contained in the request context holds an instance name associated with the WMI SRB. The miniport driver calls <b>ScsiPortWmiGetInstanceName</b> to extract this instance name from the request context. </p>
 
@@ -105,13 +99,13 @@ PWCHAR ScsiPortWmiGetInstanceName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564946">SCSIWMI_REQUEST_CONTEXT</a>
+<a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a>
+<a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a>
+<a href="kernel.wnode_all_data">WNODE_ALL_DATA</a>
 </dt>
 </dl>
 <p> </p>

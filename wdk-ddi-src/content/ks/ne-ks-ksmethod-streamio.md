@@ -7,7 +7,7 @@ old-location: stream\ksmethod_streamio.htm
 old-project: stream
 ms.assetid: BFA53A37-A1EB-4F06-9903-967A94029BC8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -82,11 +82,7 @@ BOOLEAN EtwProviderEnabled(
 ## -remarks
 <p>You can use the <b>EtwProviderEnabled</b> function to verify that the registered provider is enabled for any event by passing in zeros for the <i>Level</i> and <i>Keyword</i> values when you call the function. If any event is enabled, the provider is enabled. </p>
 
-<p>If an event descriptor is already available, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545590">EtwEventEnabled</a> function.</p>
-
-<p>You can use the <b>EtwProviderEnabled</b> function to verify that the registered provider is enabled for any event by passing in zeros for the <i>Level</i> and <i>Keyword</i> values when you call the function. If any event is enabled, the provider is enabled. </p>
-
-<p>If an event descriptor is already available, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545590">EtwEventEnabled</a> function.</p>
+<p>If an event descriptor is already available, use the <a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a> function.</p>
 
 ## -requirements
 <table>
@@ -151,7 +147,7 @@ BOOLEAN EtwProviderEnabled(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545590">EtwEventEnabled</a>
+<a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a>
 </dt>
 </dl>
 <p> </p>

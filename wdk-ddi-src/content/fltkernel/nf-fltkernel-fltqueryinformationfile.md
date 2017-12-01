@@ -105,7 +105,7 @@ NTSTATUS FltQueryInformationFile(
 <p><b>FileAttributeTagInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545750">FILE_ATTRIBUTE_TAG_INFORMATION</a> structure for the file. </p>
+<p>Return a <a href="..\ntddk\ns-ntddk--file-attribute-tag-information.md">FILE_ATTRIBUTE_TAG_INFORMATION</a> structure for the file. </p>
 </td>
 </tr>
 <tr>
@@ -113,7 +113,7 @@ NTSTATUS FltQueryInformationFile(
 <p><b>FileBasicInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545762">FILE_BASIC_INFORMATION</a> structure for the file. </p>
+<p>Return a <a href="..\wdm\ns-wdm--file-basic-information.md">FILE_BASIC_INFORMATION</a> structure for the file. </p>
 </td>
 </tr>
 <tr>
@@ -137,7 +137,7 @@ NTSTATUS FltQueryInformationFile(
 <p><b>FileInternalInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540318">FILE_INTERNAL_INFORMATION</a> structure for the file. </p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-internal-information.md">FILE_INTERNAL_INFORMATION</a> structure for the file. </p>
 </td>
 </tr>
 <tr>
@@ -153,7 +153,7 @@ NTSTATUS FltQueryInformationFile(
 <p><b>FileNameInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545817">FILE_NAME_INFORMATION</a> structure for the file. </p>
+<p>Return a <a href="..\ntddk\ns-ntddk--file-name-information.md">FILE_NAME_INFORMATION</a> structure for the file. </p>
 </td>
 </tr>
 <tr>
@@ -161,7 +161,7 @@ NTSTATUS FltQueryInformationFile(
 <p><b>FileNetworkOpenInformation</b></p>
 </td>
 <td>
-<p>Return a single <a href="https://msdn.microsoft.com/library/windows/hardware/ff545822">FILE_NETWORK_OPEN_INFORMATION</a> structure for the file. </p>
+<p>Return a single <a href="..\wdm\ns-wdm--file-network-open-information.md">FILE_NETWORK_OPEN_INFORMATION</a> structure for the file. </p>
 </td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ NTSTATUS FltQueryInformationFile(
 <p><b>FilePositionInformation</b></p>
 </td>
 <td>
-<p>Return a single <a href="https://msdn.microsoft.com/library/windows/hardware/ff545848">FILE_POSITION_INFORMATION</a> structure for the file. </p>
+<p>Return a single <a href="..\wdm\ns-wdm--file-position-information.md">FILE_POSITION_INFORMATION</a> structure for the file. </p>
 </td>
 </tr>
 <tr>
@@ -177,7 +177,7 @@ NTSTATUS FltQueryInformationFile(
 <p><b>FileStandardInformation</b></p>
 </td>
 <td>
-<p>Return a single <a href="https://msdn.microsoft.com/library/windows/hardware/ff545855">FILE_STANDARD_INFORMATION</a> structure for the file. </p>
+<p>Return a single <a href="..\wdm\ns-wdm--file-standard-information.md">FILE_STANDARD_INFORMATION</a> structure for the file. </p>
 </td>
 </tr>
 <tr>
@@ -185,7 +185,7 @@ NTSTATUS FltQueryInformationFile(
 <p><b>FileStreamInformation</b></p>
 </td>
 <td>
-<p>Return a single <a href="https://msdn.microsoft.com/library/windows/hardware/ff540364">FILE_STREAM_INFORMATION</a> structure for the file. </p>
+<p>Return a single <a href="..\ntifs\ns-ntifs--file-stream-information.md">FILE_STREAM_INFORMATION</a> structure for the file. </p>
 </td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ NTSTATUS FltQueryInformationFile(
 <p><b>FileHardLinkInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff728841">FILE_LINKS_INFORMATION</a> structure for the file. </p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-links-information.md">FILE_LINKS_INFORMATION</a> structure for the file. </p>
 </td>
 </tr>
 </table>
@@ -215,12 +215,6 @@ NTSTATUS FltQueryInformationFile(
 <p> </p>
 
 ## -remarks
-<p>A minifilter driver calls <b>FltQueryInformationFile</b> to retrieve information for a given file. The file must currently be open. </p>
-
-<p><b>FltQueryInformationFile</b> returns zero in any member of a FILE_<i>XXX</i>_INFORMATION structure that is not supported by a particular file system. </p>
-
-<p>Callers of <b>FltQueryInformationFile</b> must be running at IRQL = PASSIVE_LEVEL and <a href="https://msdn.microsoft.com/0578df31-1467-4bad-ba62-081d61278deb">with APCs enabled</a>.</p>
-
 <p>A minifilter driver calls <b>FltQueryInformationFile</b> to retrieve information for a given file. The file must currently be open. </p>
 
 <p><b>FltQueryInformationFile</b> returns zero in any member of a FILE_<i>XXX</i>_INFORMATION structure that is not supported by a particular file system. </p>
@@ -282,43 +276,43 @@ NTSTATUS FltQueryInformationFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545740">FILE_ALIGNMENT_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-alignment-information.md">FILE_ALIGNMENT_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545750">FILE_ATTRIBUTE_TAG_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-attribute-tag-information.md">FILE_ATTRIBUTE_TAG_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545762">FILE_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm--file-basic-information.md">FILE_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540318">FILE_INTERNAL_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-internal-information.md">FILE_INTERNAL_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545817">FILE_NAME_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-name-information.md">FILE_NAME_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545822">FILE_NETWORK_OPEN_INFORMATION</a>
+<a href="..\wdm\ns-wdm--file-network-open-information.md">FILE_NETWORK_OPEN_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545848">FILE_POSITION_INFORMATION</a>
+<a href="..\wdm\ns-wdm--file-position-information.md">FILE_POSITION_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545855">FILE_STANDARD_INFORMATION</a>
+<a href="..\wdm\ns-wdm--file-standard-information.md">FILE_STANDARD_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540364">FILE_STREAM_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-stream-information.md">FILE_STREAM_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff728841">FILE_LINKS_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-links-information.md">FILE_LINKS_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543446">FltQueryVolumeInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformationfile.md">FltQueryVolumeInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544516">FltSetInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567052">ZwQueryInformationFile</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 </dt>
 </dl>
 <p> </p>

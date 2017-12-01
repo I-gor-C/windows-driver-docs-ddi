@@ -78,8 +78,6 @@ VOID WriteClockLine(
 ## -remarks
 <p><i>WriteClockLine</i> should be made pageable.</p>
 
-<p><i>WriteClockLine</i> should be made pageable.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -107,7 +105,7 @@ VOID WriteClockLine(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
+<a href="display.i2c_functions">I2C Functions</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a>
@@ -119,7 +117,7 @@ VOID WriteClockLine(
 <a href="..\video\nc-video-pvideo-read-data-line.md">ReadDataLine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570290">VideoPortDDCMonitorHelper</a>
+<a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo-write-data-line.md">WriteDataLine</a>

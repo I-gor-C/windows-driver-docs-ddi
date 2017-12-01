@@ -66,7 +66,7 @@ PVOID VideoPortGetMdl(
 ### -param <i>pDma</i> [in]
 
 <dd>
-<p>Is a handle to the DMA context being queried. This handle was obtained from <a href="https://msdn.microsoft.com/library/windows/hardware/ff570327">VideoPortLockPages</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff570295">VideoPortDoDma</a>.</p>
+<p>Is a handle to the DMA context being queried. This handle was obtained from <a href="..\video\nf-video-videoportlockpages.md">VideoPortLockPages</a> or <a href="..\video\nf-video-videoportdodma.md">VideoPortDoDma</a>.</p>
 </dd>
 </dl>
 
@@ -74,8 +74,6 @@ PVOID VideoPortGetMdl(
 <p><b>VideoPortGetMdl</b> returns <i>pDma</i>, for compatibility reasons. </p>
 
 ## -remarks
-<p>See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bus-Master DMA in Video Miniport Drivers</a> for information about packet-based and common-buffer DMA transfers.</p>
-
 <p>See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bus-Master DMA in Video Miniport Drivers</a> for information about packet-based and common-buffer DMA transfers.</p>
 
 ## -requirements

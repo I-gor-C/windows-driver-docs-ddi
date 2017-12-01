@@ -88,10 +88,10 @@ typedef struct _FILTER_REPLY_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541621">FILTER_MESSAGE_HEADER</a>
+<a href="..\fltuserstructures\ns-fltuserstructures--filter-message-header.md">FILTER_MESSAGE_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541508">FilterReplyMessage</a>
+<a href="ifsk.filterreplymessage">FilterReplyMessage</a>
 </dt>
 </dl>
 <p> </p>

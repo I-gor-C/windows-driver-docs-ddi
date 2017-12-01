@@ -7,7 +7,7 @@ old-location: audio\ksaudio_mixcap_table.htm
 old-project: audio
 ms.assetid: 508d73f6-1660-4663-87f5-8dbd1dff153a
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PKSAUDIO_MIXCAP_TABLE, KSAUDIO_MIXCAP_TABLE, *PKSAUDIO_MIXCAP_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ typedef struct {
 ### -field <b>Capabilities</b>
 
 <dd>
-<p>Contains the first entry in a two-dimensional array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff537090">KSAUDIO_MIX_CAPS</a> structures. Given a supermixer node with <i>m</i> input channels and <i>n</i> output channels, the array contains <i>m</i>*<i></i> elements. Each element describes the mix-level capabilities of the path from a particular input channel to a particular output channel.</p>
+<p>Contains the first entry in a two-dimensional array of <a href="audio.ksaudio_mix_caps">KSAUDIO_MIX_CAPS</a> structures. Given a supermixer node with <i>m</i> input channels and <i>n</i> output channels, the array contains <i>m</i>*<i></i> elements. Each element describes the mix-level capabilities of the path from a particular input channel to a particular output channel.</p>
 </dd>
 </dl>
 
@@ -108,8 +108,6 @@ typedef struct {
 
 <p>Input channel M-1 to output channel N-1</p>
 
-<p> </p>
-
 <p>In other words, the mixer caps for the path from input channel <i>i</i> to output channel <i>j</i> are contained in <b>Capabilities</b>[<i>i</i>*N+<i>j</i>]. If no path exists from input <i>i</i> to output <i>j</i>, set the <b>Mute</b> member of matrix element (<i>i</i>,<i>j</i>) to <b>TRUE</b>.</p>
 
 <p>The size of the table is calculated from the KSAUDIO_MIXCAP_TABLE structure that is retrieved by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537291">KSPROPERTY_AUDIO_MIX_LEVEL_CAPS</a> get property request. If the structure's <b>InputChannels</b> and <b>OutputChannels</b> members have the values <i>m</i> and <i>n</i>, the total storage required for the KSAUDIO_MIXCAP_TABLE structure plus the KSAUDIO_MIX_CAPS array is calculated as</p>
@@ -141,7 +139,7 @@ typedef struct {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537292">KSPROPERTY_AUDIO_MIX_LEVEL_TABLE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537090">KSAUDIO_MIX_CAPS</a>
+<a href="audio.ksaudio_mix_caps">KSAUDIO_MIX_CAPS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537198">KSNODETYPE_SUPERMIX</a>
@@ -149,4 +147,4 @@ typedef struct {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSAUDIO_MIXCAP_TABLE structure%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSAUDIO_MIXCAP_TABLE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

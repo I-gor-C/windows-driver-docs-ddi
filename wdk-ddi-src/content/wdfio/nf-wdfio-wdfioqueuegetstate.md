@@ -7,7 +7,7 @@ old-location: wdf\wdfioqueuegetstate.htm
 old-project: wdf
 ms.assetid: 83bfddd5-fc4d-4f5c-9904-7564810f5b4c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfIoQueueGetState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Wdf01000.sys (KMDF); 
-WUDFx02000.dll (UMDF)
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
 req.iface: 
@@ -79,7 +78,7 @@ WDF_IO_QUEUE_STATE WdfIoQueueGetState(
 </dl>
 
 ## -returns
-<p><b>WdfIoQueueGetState</b> returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561417">WDF_IO_QUEUE_STATE</a>-typed value, which can contain the bitwise OR of several <b>WDF_IO_QUEUE_STATE</b> enumerators. </p>
+<p><b>WdfIoQueueGetState</b> returns a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-io-queue-state.md">WDF_IO_QUEUE_STATE</a>-typed value, which can contain the bitwise OR of several <b>WDF_IO_QUEUE_STATE</b> enumerators. </p>
 
 <p>A bug check occurs if the driver supplies an invalid object handle.
 
@@ -89,42 +88,19 @@ WDF_IO_QUEUE_STATE WdfIoQueueGetState(
 <p>After calling <b>WdfIoQueueGetState</b>, your driver can pass the received state value to the following functions, which are defined in <i>Wdfio.h</i>:</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552363">WDF_IO_QUEUE_DRAINED</a>, which returns <b>TRUE</b> if the queue is drained.</p>
+<a href="..\wdfio\nf-wdfio-wdf-io-queue-drained.md">WDF_IO_QUEUE_DRAINED</a>, which returns <b>TRUE</b> if the queue is drained.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552368">WDF_IO_QUEUE_IDLE</a>, which returns <b>TRUE</b> if the queue is idle.</p>
+<a href="..\wdfio\nf-wdfio-wdf-io-queue-idle.md">WDF_IO_QUEUE_IDLE</a>, which returns <b>TRUE</b> if the queue is idle.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552369">WDF_IO_QUEUE_PURGED</a>, which returns <b>TRUE</b> if the queue is purged.</p>
+<a href="..\wdfio\nf-wdfio-wdf-io-queue-purged.md">WDF_IO_QUEUE_PURGED</a>, which returns <b>TRUE</b> if the queue is purged.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552371">WDF_IO_QUEUE_READY</a>, which returns <b>TRUE</b> if the queue is ready.</p>
+<a href="..\wdfio\nf-wdfio-wdf-io-queue-ready.md">WDF_IO_QUEUE_READY</a>, which returns <b>TRUE</b> if the queue is ready.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552375">WDF_IO_QUEUE_STOPPED</a>, which returns <b>TRUE</b> if the queue is stopped.</p>
-
-<p>If your driver uses the framework's <a href="wdf.using_automatic_synchronization">automatic synchronization</a>, the I/O queue's status will not change between the time that the <b>WdfIoQueueGetState</b> method obtains status information from the framework and the time that the method returns. Otherwise the queue's status might change before the <b>WdfIoQueueGetState</b> method returns.</p>
-
-<p>For more information about the <b>WdfIoQueueGetState</b> method, see <a href="wdf.managing_i_o_queues#obtaining_i_o_queue_properties#obtaining_i_o_queue_properties">Obtaining I/O Queue Properties</a>.</p>
-
-<p>The following code example is a routine that returns <b>TRUE</b> if a specified I/O queue is idle.</p>
-
-<p>After calling <b>WdfIoQueueGetState</b>, your driver can pass the received state value to the following functions, which are defined in <i>Wdfio.h</i>:</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552363">WDF_IO_QUEUE_DRAINED</a>, which returns <b>TRUE</b> if the queue is drained.</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552368">WDF_IO_QUEUE_IDLE</a>, which returns <b>TRUE</b> if the queue is idle.</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552369">WDF_IO_QUEUE_PURGED</a>, which returns <b>TRUE</b> if the queue is purged.</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552371">WDF_IO_QUEUE_READY</a>, which returns <b>TRUE</b> if the queue is ready.</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552375">WDF_IO_QUEUE_STOPPED</a>, which returns <b>TRUE</b> if the queue is stopped.</p>
+<a href="..\wdfio\nf-wdfio-wdf-io-queue-stopped.md">WDF_IO_QUEUE_STOPPED</a>, which returns <b>TRUE</b> if the queue is stopped.</p>
 
 <p>If your driver uses the framework's <a href="wdf.using_automatic_synchronization">automatic synchronization</a>, the I/O queue's status will not change between the time that the <b>WdfIoQueueGetState</b> method obtains status information from the framework and the time that the method returns. Otherwise the queue's status might change before the <b>WdfIoQueueGetState</b> method returns.</p>
 
@@ -194,7 +170,7 @@ WDF_IO_QUEUE_STATE WdfIoQueueGetState(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -202,7 +178,7 @@ WDF_IO_QUEUE_STATE WdfIoQueueGetState(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561417">WDF_IO_QUEUE_STATE</a>
+<a href="..\wudfddi_types\ne-wudfddi-types--wdf-io-queue-state.md">WDF_IO_QUEUE_STATE</a>
 </dt>
 <dt>
 <a href="..\wdfio\nc-wdfio-evt-wdf-io-queue-state.md">EvtIoQueueState</a>
@@ -210,4 +186,4 @@ WDF_IO_QUEUE_STATE WdfIoQueueGetState(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueGetState method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueGetState method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DISK_GROW_PARTITION structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560376">IOCTL_DISK_GROW_PARTITION</a> request to enlarge a partition. </p>
+<p>The DISK_GROW_PARTITION structure is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-grow-partition.md">IOCTL_DISK_GROW_PARTITION</a> request to enlarge a partition. </p>
 
 
 ## -syntax
@@ -88,7 +88,7 @@ typedef struct _DISK_GROW_PARTITION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560376">IOCTL_DISK_GROW_PARTITION</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-grow-partition.md">IOCTL_DISK_GROW_PARTITION</a>
 </dt>
 </dl>
 <p> </p>

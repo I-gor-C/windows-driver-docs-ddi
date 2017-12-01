@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestgetfileobject.htm
 old-project: wdf
 ms.assetid: 0c5a1e12-b66f-4bcb-bb9d-739b883fe9c2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfRequestGetFileObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Wdf01000.sys (KMDF); 
-WUDFx02000.dll (UMDF)
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
 req.iface: 
@@ -65,7 +64,7 @@ WDFFILEOBJECT WdfRequestGetFileObject(
 </dl>
 
 ## -returns
-<p><b>WdfRequestGetFileObject</b> returns a handle to the framework file object, if the framework has created a file object for the specified request. Otherwise, this method returns <b>NULL</b>. (A driver typically tests for a <b>NULL</b> return value only if it sets the <a href="..\wdfdevice\ne-wdfdevice--wdf-fileobject-class.md">WdfFileObjectCanBeOptional</a> bit flag in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551319">WDF_FILEOBJECT_CONFIG</a> structure.)</p>
+<p><b>WdfRequestGetFileObject</b> returns a handle to the framework file object, if the framework has created a file object for the specified request. Otherwise, this method returns <b>NULL</b>. (A driver typically tests for a <b>NULL</b> return value only if it sets the <a href="..\wdfdevice\ne-wdfdevice--wdf-fileobject-class.md">WdfFileObjectCanBeOptional</a> bit flag in the <a href="..\wdfdevice\ns-wdfdevice--wdf-fileobject-config.md">WDF_FILEOBJECT_CONFIG</a> structure.)</p>
 
 <p>A bug check occurs if the driver supplies an invalid object handle.
 
@@ -74,17 +73,7 @@ WDFFILEOBJECT WdfRequestGetFileObject(
 ## -remarks
 <p>The <b>WdfRequestGetFileObject</b> method returns <b>NULL</b> if either:</p>
 
-<p>Your driver has not called <a href="https://msdn.microsoft.com/library/windows/hardware/ff546107">WdfDeviceInitSetFileObjectConfig</a> and specified a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551315">WDF_FILEOBJECT_CLASS</a> value that causes the framework to create file objects.</p>
-
-<p>Another driver sent a read, write, or I/O control request to your driver without first sending a request type of <a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-type.md">WdfRequestTypeCreate</a>.</p>
-
-<p>For more information about <b>WdfRequestGetFileObject</b> and framework file objects, see <a href="wdf.framework_file_objects">Framework File Objects</a>.</p>
-
-<p>The following code example obtains an I/O request's file object and then calls a driver-defined routine that obtains a pointer to the file object's context space.</p>
-
-<p>The <b>WdfRequestGetFileObject</b> method returns <b>NULL</b> if either:</p>
-
-<p>Your driver has not called <a href="https://msdn.microsoft.com/library/windows/hardware/ff546107">WdfDeviceInitSetFileObjectConfig</a> and specified a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551315">WDF_FILEOBJECT_CLASS</a> value that causes the framework to create file objects.</p>
+<p>Your driver has not called <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfileobjectconfig.md">WdfDeviceInitSetFileObjectConfig</a> and specified a <a href="..\wdfdevice\ne-wdfdevice--wdf-fileobject-class.md">WDF_FILEOBJECT_CLASS</a> value that causes the framework to create file objects.</p>
 
 <p>Another driver sent a read, write, or I/O control request to your driver without first sending a request type of <a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-type.md">WdfRequestTypeCreate</a>.</p>
 
@@ -154,7 +143,7 @@ WDFFILEOBJECT WdfRequestGetFileObject(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff546059">FileObjectConfigured</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547261">InvalidReqAccess</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547267">InvalidReqAccessLocal</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_fileobjectconfigured">FileObjectConfigured</a>, <a href="devtest.kmdf_invalidreqaccess">InvalidReqAccess</a>, <a href="devtest.kmdf_invalidreqaccesslocal">InvalidReqAccessLocal</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -162,12 +151,12 @@ WDFFILEOBJECT WdfRequestGetFileObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551315">WDF_FILEOBJECT_CLASS</a>
+<a href="..\wdfdevice\ne-wdfdevice--wdf-fileobject-class.md">WDF_FILEOBJECT_CLASS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546107">WdfDeviceInitSetFileObjectConfig</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfileobjectconfig.md">WdfDeviceInitSetFileObjectConfig</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestGetFileObject method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestGetFileObject method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

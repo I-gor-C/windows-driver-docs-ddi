@@ -66,7 +66,7 @@ VOID VideoPortSetBytesUsed(
 ### -param <i>pDma</i> [in, out]
 
 <dd>
-<p>Pointer to a DMA handle. To obtain the appropriate DMA handle, use the value in the <b>OutputBuffer</b> member of the <i>pVrp</i> parameter after <a href="https://msdn.microsoft.com/library/windows/hardware/ff570327">VideoPortLockPages</a> returns. </p>
+<p>Pointer to a DMA handle. To obtain the appropriate DMA handle, use the value in the <b>OutputBuffer</b> member of the <i>pVrp</i> parameter after <a href="..\video\nf-video-videoportlockpages.md">VideoPortLockPages</a> returns. </p>
 </dd>
 
 ### -param <i>BytesUsed</i> [in]
@@ -137,10 +137,10 @@ VOID VideoPortSetBytesUsed(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570307">VideoPortGetBytesUsed</a>
+<a href="..\video\nf-video-videoportgetbytesused.md">VideoPortGetBytesUsed</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570547">VIDEO_REQUEST_PACKET</a>
+<a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a>
 </dt>
 </dl>
 <p> </p>

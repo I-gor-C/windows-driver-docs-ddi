@@ -97,11 +97,7 @@ typedef enum _MOUSE_STATE {
 </dl>
 
 ## -remarks
-<p>The MOUSE_STATE enumerator is used as input to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543252">PI8042_MOUSE_ISR</a> callback.</p>
-
-<p>The MOUSE_STATE enumerator is used as input to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543252">PI8042_MOUSE_ISR</a> callback.</p>
-
-<p>The MOUSE_STATE enumerator is used as input to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543252">PI8042_MOUSE_ISR</a> callback.</p>
+<p>The MOUSE_STATE enumerator is used as input to a <a href="..\ntdd8042\nc-ntdd8042-pi8042-mouse-isr.md">PI8042_MOUSE_ISR</a> callback.</p>
 
 ## -requirements
 <table>
@@ -123,7 +119,7 @@ typedef enum _MOUSE_STATE {
 <a href="https://msdn.microsoft.com/34d0a7e9-4a1e-43ba-a643-800ebaadc360">MouFilter_IsrHook</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543252">PI8042_MOUSE_ISR</a>
+<a href="..\ntdd8042\nc-ntdd8042-pi8042-mouse-isr.md">PI8042_MOUSE_ISR</a>
 </dt>
 </dl>
 <p> </p>

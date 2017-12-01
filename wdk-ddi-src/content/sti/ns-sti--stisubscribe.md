@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The STISUBSCRIBE structure is used as a parameter for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543768">IStiDevice::Subscribe</a> method.</p>
+<p>The STISUBSCRIBE structure is used as a parameter for the <a href="image.istidevice_subscribe">IStiDevice::Subscribe</a> method.</p>
 
 
 ## -syntax

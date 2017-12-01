@@ -7,7 +7,7 @@ old-location: audio\usbsidebandaudio_sidetone_params.htm
 old-project: audio
 ms.assetid: FE97B772-CD08-4F76-88DA-05F24881D062
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: USBSIDEBANDAUDIO_SIDETONE_PARAMS, USBSIDEBANDAUDIO_SIDETONE_PARAMS, *PUSBSIDEBANDAUDIO_SIDETONE_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

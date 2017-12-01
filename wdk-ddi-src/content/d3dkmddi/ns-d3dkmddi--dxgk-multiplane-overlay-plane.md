@@ -94,7 +94,7 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE {
 ### -field <b>PlaneAttributes</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh780301">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES</a>  that specifies overlay plane attributes.</p>
+<p>A structure of type <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-attributes.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES</a>  that specifies overlay plane attributes.</p>
 </dd>
 </dl>
 
@@ -134,10 +134,10 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780301">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-attributes.md">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>

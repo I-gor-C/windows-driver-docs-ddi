@@ -7,7 +7,7 @@ old-location: kernel\iowmiregistrationcontrol.htm
 old-project: kernel
 ms.assetid: fe135118-1992-43c7-8492-81f9febd79b9
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoWMIRegistrationControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ NTSTATUS IoWMIRegistrationControl(
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>A pointer to a device object. This object is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> system structure.</p>
+<p>A pointer to a device object. This object is a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> system structure.</p>
 </dd>
 
 ### -param <i>Action</i> [in]
@@ -120,12 +120,6 @@ NTSTATUS IoWMIRegistrationControl(
 <p> </p>
 
 ## -remarks
-<p>After a driver calls <b>IoWMIRegistrationControl</b>, WMI sends the driver an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a> request so the driver can provide information to WMI. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560870">Registering as a WMI Data Provider</a>.</p>
-
-<p>If the caller specifies WMIREG_ACTION_DEREGISTER for <i>Action</i>, <b>IoWMIRegistrationControl</b> causes the calling thread to block until all <b>IRP_MJ_SYSTEM_CONTROL</b> requests that were previously sent to the specified device object have completed. In such a case, if a driver calls <b>IoWMIRegistrationControl</b> within a dispatch routine for an <b>IRP_MJ_SYSTEM_CONTROL</b> request, the calling thread will deadlock.</p>
-
-<p>If a device is removed suddenly (for example, in a surprise removal), causing the PnP manager to send an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551760">IRP_MN_SURPRISE_REMOVAL</a> IRP, the driver must call <b>IoWMIRegistrationControl</b> and specify WMIREG_ACTION_DEREGISTER in <i>Action</i> in the call. Note that if the driver calls <b>IoWMIRegistrationControl</b> with <i>Action</i> set to WMIREG_ACTION_DEREGISTER in response to an <b>IRP_MN_SURPRISE_REMOVAL</b> IRP, the driver must not make the same call to <b>IoWMIRegistrationControl</b> in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a> IRP.</p>
-
 <p>After a driver calls <b>IoWMIRegistrationControl</b>, WMI sends the driver an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a> request so the driver can provide information to WMI. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560870">Registering as a WMI Data Provider</a>.</p>
 
 <p>If the caller specifies WMIREG_ACTION_DEREGISTER for <i>Action</i>, <b>IoWMIRegistrationControl</b> causes the calling thread to block until all <b>IRP_MJ_SYSTEM_CONTROL</b> requests that were previously sent to the specified device object have completed. In such a case, if a driver calls <b>IoWMIRegistrationControl</b> within a dispatch routine for an <b>IRP_MJ_SYSTEM_CONTROL</b> request, the calling thread will deadlock.</p>
@@ -195,7 +189,7 @@ NTSTATUS IoWMIRegistrationControl(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547796">IrqlIoPassive5</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548273">LowerDriverReturn</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_irqliopassive5">IrqlIoPassive5</a>, <a href="devtest.wdm_lowerdriverreturn">LowerDriverReturn</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -217,4 +211,4 @@ NTSTATUS IoWMIRegistrationControl(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIRegistrationControl routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIRegistrationControl routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -64,7 +64,7 @@ typedef struct HBA_FCPTargetMappingV2 {
 ### -field <b>entry</b>
 
 <dd>
-<p>Contains a variable length array of structures of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556068">HBA_FcpScsiEntryV2</a> each of which defines a mapping between an operating system identifier, a logical unit ID descriptor (LUID) and the corresponding fibre channel protocol (FCP) identifier for a logical unit. </p>
+<p>Contains a variable length array of structures of type <a href="..\hbaapi\ns-hbaapi-hba-fcpscsientryv2.md">HBA_FcpScsiEntryV2</a> each of which defines a mapping between an operating system identifier, a logical unit ID descriptor (LUID) and the corresponding fibre channel protocol (FCP) identifier for a logical unit. </p>
 </dd>
 </dl>
 
@@ -88,7 +88,7 @@ typedef struct HBA_FCPTargetMappingV2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556099">HBA_GetFcpTargetMappingV2</a>
+<a href="..\hbaapi\nf-hbaapi-hba-getfcptargetmappingv2.md">HBA_GetFcpTargetMappingV2</a>
 </dt>
 </dl>
 <p> </p>

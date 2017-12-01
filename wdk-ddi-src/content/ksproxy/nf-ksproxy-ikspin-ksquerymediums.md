@@ -7,7 +7,7 @@ old-location: stream\ikspin_ksquerymediums.htm
 old-project: stream
 ms.assetid: de6efd10-7f97-422a-abd4-c21c4cbc1dd7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IKsPin, KsQueryMediums, IKsPin::KsQueryMediums
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ HRESULT KsQueryMediums(
 ### -param <i>MediumList</i> [out]
 
 <dd>
-<p>Pointer to a buffer that receives a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563441">KSMULTIPLE_ITEM</a> structure, followed by a sequence of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a> structures that describe medium types. The KSMULTIPLE_ITEM structure is a header that describes the size of the buffer and the number of entries in the list that follows the header.</p>
+<p>Pointer to a buffer that receives a pointer to a <a href="stream.ksmultiple_item">KSMULTIPLE_ITEM</a> structure, followed by a sequence of <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structures that describe medium types. The KSMULTIPLE_ITEM structure is a header that describes the size of the buffer and the number of entries in the list that follows the header.</p>
 </dd>
 </dl>
 
@@ -65,10 +65,6 @@ HRESULT KsQueryMediums(
 <p>Returns NOERROR if successful; otherwise, returns an error code.</p>
 
 ## -remarks
-<p>The returned mediums are ordered by preference. </p>
-
-<p>Applications call <b>KsQueryMediums</b> to retrieve mediums that pins support in order to build a filter graph.</p>
-
 <p>The returned mediums are ordered by preference. </p>
 
 <p>Applications call <b>KsQueryMediums</b> to retrieve mediums that pins support in order to build a filter graph.</p>
@@ -100,12 +96,12 @@ HRESULT KsQueryMediums(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563441">KSMULTIPLE_ITEM</a>
+<a href="stream.ksmultiple_item">KSMULTIPLE_ITEM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a>
+<a href="stream.kspin_medium">KSPIN_MEDIUM</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsPin::KsQueryMediums method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsPin::KsQueryMediums method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

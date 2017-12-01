@@ -64,7 +64,7 @@ typedef struct _DXGK_ALLOCATIONUSAGEHINT {
 ### -field <b>v1</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560986">DXGK_ALLOCATIONUSAGEINFO1</a> structure that describes how an allocation can be used in direct memory access (DMA) buffering.</p>
+<p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationusageinfo1.md">DXGK_ALLOCATIONUSAGEINFO1</a> structure that describes how an allocation can be used in direct memory access (DMA) buffering.</p>
 </dd>
 </dl>
 
@@ -96,13 +96,13 @@ typedef struct _DXGK_ALLOCATIONUSAGEHINT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560986">DXGK_ALLOCATIONUSAGEINFO1</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationusageinfo1.md">DXGK_ALLOCATIONUSAGEINFO1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557559">DXGKARG_CREATEALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createallocation.md">DXGKARG_CREATEALLOCATION</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Contains pointers to functions in the <a href="https://msdn.microsoft.com/library/windows/hardware/jj658947">Simple Peripheral Bus (SPB) Interface</a> that the display miniport driver can call to inspect and alter SPB resources.</p>
+<p>Contains pointers to functions in the <a href="display.simple__peripheral_bus__spb__interface">Simple Peripheral Bus (SPB) Interface</a> that the display miniport driver can call to inspect and alter SPB resources.</p>
 <p>For more information on SPB architecture, see <a href="https://msdn.microsoft.com/2c660e14-5b27-4610-a328-735b07ed0773">Simple Peripheral Buses</a> and <a href="https://msdn.microsoft.com/A6DFD2DB-93F4-410F-8875-7E3E3EFCE660">SPB Peripheral Device Driver Overview</a>.</p>
 
 
@@ -129,31 +129,31 @@ typedef struct _DXGK_SPB_INTERFACE {
 ### -field <b>OpenSpbResource</b>
 
 <dd>
-<p>A pointer to the display miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451581">OpenSpbResource</a> function.</p>
+<p>A pointer to the display miniport driver's <a href="display.openspbresource">OpenSpbResource</a> function.</p>
 </dd>
 
 ### -field <b>CloseSpbResource</b>
 
 <dd>
-<p>A pointer to the display miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh406257">CloseSpbResource</a> function.</p>
+<p>A pointer to the display miniport driver's <a href="display.closespbresource">CloseSpbResource</a> function.</p>
 </dd>
 
 ### -field <b>ReadSpbResource</b>
 
 <dd>
-<p>A pointer to the display miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439824">ReadSpbResource</a> function.</p>
+<p>A pointer to the display miniport driver's <a href="display.readspbresource">ReadSpbResource</a> function.</p>
 </dd>
 
 ### -field <b>WriteSpbResource</b>
 
 <dd>
-<p>A pointer to the display miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439925">WriteSpbResource</a> function.</p>
+<p>A pointer to the display miniport driver's <a href="display.writespbresource">WriteSpbResource</a> function.</p>
 </dd>
 
 ### -field <b>SpbResourceIoControl</b>
 
 <dd>
-<p>A pointer to the display miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439861">SpbResourceIoControl</a> function.</p>
+<p>A pointer to the display miniport driver's <a href="display.spbresourceiocontrol">SpbResourceIoControl</a> function.</p>
 </dd>
 </dl>
 
@@ -193,19 +193,19 @@ typedef struct _DXGK_SPB_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406257">CloseSpbResource</a>
+<a href="display.closespbresource">CloseSpbResource</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451581">OpenSpbResource</a>
+<a href="display.openspbresource">OpenSpbResource</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439824">ReadSpbResource</a>
+<a href="display.readspbresource">ReadSpbResource</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439861">SpbResourceIoControl</a>
+<a href="display.spbresourceiocontrol">SpbResourceIoControl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439925">WriteSpbResource</a>
+<a href="display.writespbresource">WriteSpbResource</a>
 </dt>
 </dl>
 <p> </p>

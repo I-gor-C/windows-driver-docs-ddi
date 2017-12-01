@@ -7,7 +7,7 @@ old-location: stream\_ksedit.htm
 old-project: stream
 ms.assetid: 9368846a-b985-40f4-8b02-1bb48431141a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: _KsEdit
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -93,16 +93,6 @@ NTSTATUS _KsEdit(
 <p>Returns success or STATUS_INSUFFICIENT_RESOURCES.</p>
 
 ## -remarks
-<p>Note that <b>KsEdit</b> and <b>KsEditSized</b> are macros created to make <b>_KsEdit</b> easier to use. While <b>_KsEdit</b> allows you to resize an item, <b>KsEdit</b> does not. The macro <b>KsEdit</b> calls <b>_KsEdit</b>, specifying <b>sizeof</b>(**<i>PointerToPointerToItem</i>) as both sizes.</p>
-
-<p>For example, consider a pin that needs to modify its allocator framing on creation. Because the descriptor is statically coded and new pins may use it, the solution is to modify the pin descriptor as follows:</p>
-
-<p>The call to <b>KsEdit</b> guarantees that <i>Pin-&gt;Descriptor </i>is dynamic memory that is associated with <i>Pin</i>. Note that arbitrary modification of descriptors and other AVStream structures can cause undesirable results. Minidrivers should exercise caution when using <b>KsEdit</b> on AVStream structures.</p>
-
-<p><b>KsEditSized</b> calls <b>_KsEdit</b> with the same parameters it receives, except that <i>Object</i> is replaced by <i>Object-&gt;Bag</i> and the pointer is typecast to PVOID.</p>
-
-<p>Note that when calling <b>_KsEdit</b>, a caller must hold the mutex associated with the bag. For more information, see <a href="NULL">Object Bags</a> and <a href="NULL">Mutexes in AVStream</a>. </p>
-
 <p>Note that <b>KsEdit</b> and <b>KsEditSized</b> are macros created to make <b>_KsEdit</b> easier to use. While <b>_KsEdit</b> allows you to resize an item, <b>KsEdit</b> does not. The macro <b>KsEdit</b> calls <b>_KsEdit</b>, specifying <b>sizeof</b>(**<i>PointerToPointerToItem</i>) as both sizes.</p>
 
 <p>For example, consider a pin that needs to modify its allocator framing on creation. Because the descriptor is statically coded and new pins may use it, the solution is to modify the pin descriptor as follows:</p>

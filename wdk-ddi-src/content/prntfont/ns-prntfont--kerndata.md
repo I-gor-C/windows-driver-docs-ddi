@@ -72,12 +72,12 @@ typedef struct _KERNDATA {
 ### -field <b>KernPair</b>
 
 <dd>
-<p>Is an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff565630">FD_KERNINGPAIR</a> structures.</p>
+<p>Is an array of <a href="display.fd_kerningpair">FD_KERNINGPAIR</a> structures.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>A .ufm file's KERNDATA structures are accessed by a pointer in the file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563587">UNIFM_HDR</a> structure.</p>
+<p>A .ufm file's KERNDATA structures are accessed by a pointer in the file's <a href="..\prntfont\ns-prntfont--unifm-hdr.md">UNIFM_HDR</a> structure.</p>
 
 ## -requirements
 <table>
@@ -96,10 +96,10 @@ typedef struct _KERNDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565630">FD_KERNINGPAIR</a>
+<a href="display.fd_kerningpair">FD_KERNINGPAIR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563587">UNIFM_HDR</a>
+<a href="..\prntfont\ns-prntfont--unifm-hdr.md">UNIFM_HDR</a>
 </dt>
 </dl>
 <p> </p>

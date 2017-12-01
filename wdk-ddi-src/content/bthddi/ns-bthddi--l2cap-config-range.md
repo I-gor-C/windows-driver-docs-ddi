@@ -7,7 +7,7 @@ old-location: bltooth\l2cap_config_range.htm
 old-project: bltooth
 ms.assetid: 95f288ea-a32a-478f-870b-5aa6ff1edf44
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: L2CAP_CONFIG_RANGE, L2CAP_CONFIG_RANGE, *PL2CAP_CONFIG_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,9 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback
-   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access
-   paged memory)
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
 req.iface: IBidiSpl2
 ---
 
@@ -43,7 +41,7 @@ req.iface: IBidiSpl2
 ## -description
 <p>The L2CAP_CONFIG_RANGE structure is used to specify a range of possible values for the 
   <b>FlushTO</b> member of the 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff536860">_BRB_L2CA_OPEN_CHANNEL</a> structure during
+  <a href="bltooth._brb_l2ca_open_channel">_BRB_L2CA_OPEN_CHANNEL</a> structure during
   incoming requests.</p>
 
 
@@ -98,7 +96,7 @@ typedef struct _L2CAP_CONFIG_RANGE {
 <p>A profile driver negotiates these values separately from the flush timeout settings it requests when
     it attempts to open an outbound channel to a remote device using the <b>BRB_L2CA_OPEN_CHANNEL</b> request. For
     more information about value ranges, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536761">L2CAP_CONFIG_VALUE_RANGE</a>.</p>
+    <a href="..\bthddi\ns-bthddi--l2cap-config-value-range.md">L2CAP_CONFIG_VALUE_RANGE</a>.</p>
 
 ## -requirements
 <table>
@@ -125,12 +123,12 @@ typedef struct _L2CAP_CONFIG_RANGE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536860">_BRB_L2CA_OPEN_CHANNEL</a>
+<a href="bltooth._brb_l2ca_open_channel">_BRB_L2CA_OPEN_CHANNEL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536761">L2CAP_CONFIG_VALUE_RANGE</a>
+<a href="..\bthddi\ns-bthddi--l2cap-config-value-range.md">L2CAP_CONFIG_VALUE_RANGE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20L2CAP_CONFIG_RANGE structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20L2CAP_CONFIG_RANGE structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

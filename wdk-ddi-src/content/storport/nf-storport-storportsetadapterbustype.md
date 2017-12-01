@@ -59,20 +59,20 @@ ULONG StorPortSetAdapterBusType(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device.</p>
+<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.</p>
 </dd>
 
 ### -param <i>BusType</i> [in]
 
 <dd>
-<p>Contains a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566356">STORAGE_BUS_TYPE</a> that specifies the type of bus-specific configuration data to be set.</p>
+<p>Contains a value of type <a href="storage.storage_bus_type">STORAGE_BUS_TYPE</a> that specifies the type of bus-specific configuration data to be set.</p>
 </dd>
 </dl>
 
 ## -returns
 <p>The <b>StorPortSetAdapterBusType</b> routine returns one of the following status codes:</p><dl>
 <dt><b>STOR_STATUS_UNSUCCESSFUL</b></dt>
-</dl><p>This routine will return this value if it was called outside the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> function.</p><dl>
+</dl><p>This routine will return this value if it was called outside the <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> function.</p><dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
 </dl><p>This routine will return this value if it was successful.</p><dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>

@@ -7,7 +7,7 @@ old-location: audio\iadapterpowermanagement_powerchangestate.htm
 old-project: audio
 ms.assetid: b3e0fca7-d5ab-4d52-9702-dae83c540a71
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IAdapterPowerManagement, PowerChangeState, IAdapterPowerManagement::PowerChangeState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -106,19 +106,7 @@ void PowerChangeState(
 ## -remarks
 <p>PortCls calls the <code>PowerChangeState</code> method in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> power IRP. This call must not fail. PortCls and the system use the <code>PowerChangeState</code> call to place the device in the desired power state. When the system attempts to suspend or resume an active audio stream, the driver must be capable of saving or restoring its device context appropriately.</p>
 
-<p>To assist the driver, PortCls will pause any active audio streams prior to calling this method to place the device in a sleep state. After calling this method, PortCls will unpause active audio streams, to wake the device up. Miniports can opt for additional notification by utilizing the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536947">IPowerNotify</a> interface.</p>
-
-<p>The miniport driver must perform the requested change to the device's power state before it returns from the <code>PowerChangeState</code> call. If the miniport driver needs to save or restore any device state before a power-state change, the miniport driver should support the <b>IPowerNotify</b> interface, which allows it to receive advance warning of any such change. Before returning from a successful <code>PowerChangeState</code> call, the miniport driver should cache the new power state.</p>
-
-<p>While the miniport driver is in one of the sleep states (any state other than PowerDeviceD0), it must avoid writing to the hardware. The miniport driver must cache any hardware accesses that need to be deferred until the device powers up again. If the power state is changing from one of the sleep states to PowerDeviceD0, the miniport driver should perform any deferred hardware accesses after it has powered up the device. If the power state is changing from PowerDeviceD0 to a sleep state, the miniport driver can perform any necessary hardware accesses during the <code>PowerChangeState</code> call before it powers down the device.</p>
-
-<p>While powered down, a miniport driver is never asked to create a miniport driver object or stream object. PortCls always places the device in the PowerDeviceD0 state before calling the miniport driver's <b>NewStream</b> method.</p>
-
-<p>The code for this method must reside in paged memory.</p>
-
-<p>PortCls calls the <code>PowerChangeState</code> method in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> power IRP. This call must not fail. PortCls and the system use the <code>PowerChangeState</code> call to place the device in the desired power state. When the system attempts to suspend or resume an active audio stream, the driver must be capable of saving or restoring its device context appropriately.</p>
-
-<p>To assist the driver, PortCls will pause any active audio streams prior to calling this method to place the device in a sleep state. After calling this method, PortCls will unpause active audio streams, to wake the device up. Miniports can opt for additional notification by utilizing the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536947">IPowerNotify</a> interface.</p>
+<p>To assist the driver, PortCls will pause any active audio streams prior to calling this method to place the device in a sleep state. After calling this method, PortCls will unpause active audio streams, to wake the device up. Miniports can opt for additional notification by utilizing the <a href="..\portcls\nn-portcls-ipowernotify.md">IPowerNotify</a> interface.</p>
 
 <p>The miniport driver must perform the requested change to the device's power state before it returns from the <code>PowerChangeState</code> call. If the miniport driver needs to save or restore any device state before a power-state change, the miniport driver should support the <b>IPowerNotify</b> interface, which allows it to receive advance warning of any such change. Before returning from a successful <code>PowerChangeState</code> call, the miniport driver should cache the new power state.</p>
 
@@ -155,15 +143,15 @@ void PowerChangeState(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536485">IAdapterPowerManagement</a>
+<a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536947">IPowerNotify</a>
+<a href="..\portcls\nn-portcls-ipowernotify.md">IPowerNotify</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IAdapterPowerManagement::PowerChangeState method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IAdapterPowerManagement::PowerChangeState method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

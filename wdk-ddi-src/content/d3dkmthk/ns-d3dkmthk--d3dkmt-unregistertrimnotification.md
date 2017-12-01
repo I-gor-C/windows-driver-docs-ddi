@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>D3DKMT_UNREGISTERTRIMNOTIFICATION</b> is used with <a href="https://msdn.microsoft.com/library/windows/hardware/dn906787">D3DKMTUnregisterTrimNotification</a> to remove a callback registration for a kernel mode device receiving notifications from a graphics framework (such as OpenGL).
+<p><b>D3DKMT_UNREGISTERTRIMNOTIFICATION</b> is used with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtunregistertrimnotification.md">D3DKMTUnregisterTrimNotification</a> to remove a callback registration for a kernel mode device receiving notifications from a graphics framework (such as OpenGL).
 
 </p>
 
@@ -59,7 +59,7 @@ typedef struct _D3DKMT_UNREGISTERTRIMNOTIFICATION {
 ### -field <b>Handle</b>
 
 <dd>
-<p>[out] The callback notification handle received from the call to <a href="https://msdn.microsoft.com/library/windows/hardware/dn906781">D3DKMTRegisterTrimNotification</a>.</p>
+<p>[out] The callback notification handle received from the call to <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtregistertrimnotification.md">D3DKMTRegisterTrimNotification</a>.</p>
 </dd>
 </dl>
 
@@ -99,10 +99,10 @@ typedef struct _D3DKMT_UNREGISTERTRIMNOTIFICATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906787">D3DKMTUnregisterTrimNotification</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtunregistertrimnotification.md">D3DKMTUnregisterTrimNotification</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906781">D3DKMTRegisterTrimNotification</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtregistertrimnotification.md">D3DKMTRegisterTrimNotification</a>
 </dt>
 </dl>
 <p> </p>

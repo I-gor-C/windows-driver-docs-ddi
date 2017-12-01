@@ -7,7 +7,7 @@ old-location: wdf\ipnpcallback_ond0entry.htm
 old-project: wdf
 ms.assetid: 6efa3d8e-3e54-4ab1-82e0-08ba12bb1877
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IPnpCallback, OnD0Entry, IPnpCallback::OnD0Entry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,13 +60,13 @@ HRESULT OnD0Entry(
 ### -param <i>pWdfDevice</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556917">IWDFDevice</a> interface for the device object of the device that enters the D0 power state.</p>
+<p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a> interface for the device object of the device that enters the D0 power state.</p>
 </dd>
 
 ### -param <i>previousState</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552421">WDF_POWER_DEVICE_STATE</a>-typed value that identifies the power state of the device before it entered the D0 power state.</p>
+<p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-device-state.md">WDF_POWER_DEVICE_STATE</a>-typed value that identifies the power state of the device before it entered the D0 power state.</p>
 </dd>
 </dl>
 
@@ -75,14 +75,12 @@ HRESULT OnD0Entry(
        S_OK or another status code for which SUCCEEDED(status) equals <b>TRUE</b>.</p>
 
 <p> If it returns a status code for which SUCCEEDED(status) equals <b>FALSE</b>, the framework removes the device. If the device's drivers are not supporting other devices on the system, the I/O manager unloads the drivers. 
-The framework notifies the PnP manager, which then attempts to restart the device by requesting the bus driver to reenumerate its devices. If your driver was unloaded, it will be reloaded.    In this case, the framework will not call the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556803">IPnpCallback::OnD0Exit</a> callback function.</p>
+The framework notifies the PnP manager, which then attempts to restart the device by requesting the bus driver to reenumerate its devices. If your driver was unloaded, it will be reloaded.    In this case, the framework will not call the driver's <a href="wdf.ipnpcallback_ond0exit">IPnpCallback::OnD0Exit</a> callback function.</p>
 
 <p>HRESULT error codes are defined in Winerror.h. </p>
 
 ## -remarks
-<p>A driver registers the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556762">IPnpCallback</a> interface when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. </p>
-
-<p>A driver registers the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556762">IPnpCallback</a> interface when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. </p>
+<p>A driver registers the <a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallback</a> interface when it calls the <a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a> method to create a device object. </p>
 
 ## -requirements
 <table>
@@ -101,18 +99,18 @@ The framework notifies the PnP manager, which then attempts to restart the devic
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556762">IPnpCallback</a>
+<a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556917">IWDFDevice</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+<a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552421">WDF_POWER_DEVICE_STATE</a>
+<a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-device-state.md">WDF_POWER_DEVICE_STATE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IPnpCallback::OnD0Entry method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IPnpCallback::OnD0Entry method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

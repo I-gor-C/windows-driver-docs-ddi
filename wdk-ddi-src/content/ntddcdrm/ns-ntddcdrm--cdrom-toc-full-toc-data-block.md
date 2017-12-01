@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CDROM_TOC_FULL_TOC_DATA_BLOCK structure contains track descriptor data used in conjunction with the data from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551383">CDROM_TOC_FULL_TOC_DATA</a> structure. </p>
+<p>The CDROM_TOC_FULL_TOC_DATA_BLOCK structure contains track descriptor data used in conjunction with the data from the <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-full-toc-data.md">CDROM_TOC_FULL_TOC_DATA</a> structure. </p>
 
 
 ## -syntax
@@ -209,13 +209,13 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA_BLOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559367">IOCTL_CDROM_READ_TOC_EX</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-toc-ex.md">IOCTL_CDROM_READ_TOC_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551366">CDROM_READ_TOC_EX</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-read-toc-ex.md">CDROM_READ_TOC_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551383">CDROM_TOC_FULL_TOC_DATA</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-full-toc-data.md">CDROM_TOC_FULL_TOC_DATA</a>
 </dt>
 </dl>
 <p> </p>

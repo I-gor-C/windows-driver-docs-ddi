@@ -119,7 +119,7 @@ NTSTATUS __stdcall HidP_GetScaledUsageValue(
 <dt><b>HIDP_STATUS_INVALID_REPORT_LENGTH</b></dt>
 </dl><p>The specified report length is not valid</p><dl>
 <dt><b>HIDP_STATUS_BAD_LOG_PHY_VALUES</b></dt>
-</dl><p>The collection returned an illegal logical or physical value. To extract the value returned by the collection, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539748">HidP_GetUsageValue</a>.</p><dl>
+</dl><p>The collection returned an illegal logical or physical value. To extract the value returned by the collection, call <a href="..\hidpi\nf-hidpi-hidp-getusagevalue.md">HidP_GetUsageValue</a>.</p><dl>
 <dt><b>HIDP_STATUS_NULL</b></dt>
 </dl><p>The current state of the scaled value from the collection is less than the logical minimum or is greater than the logical maximum, and the scaled value has a <b>NULL</b> state.</p><dl>
 <dt><b>HIDP_STATUS_VALUE_OUT_OF_RANGE</b></dt>
@@ -134,17 +134,9 @@ NTSTATUS __stdcall HidP_GetScaledUsageValue(
 ## -remarks
 <p>The caller-allocated buffers supplied at <i>PreparsedData</i>, <i>UsageValue</i>, and<i> Report </i>must be allocated from nonpaged pool.</p>
 
-<p>User-mode applications and kernel-mode drivers must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539750">HidP_GetUsageValueArray</a> to extract data for a <a href="hid.value_capability_arrays#usage_value_array#usage_value_array">usage value array</a>.</p>
+<p>User-mode applications and kernel-mode drivers must use <a href="..\hidpi\nf-hidpi-hidp-getusagevaluearray.md">HidP_GetUsageValueArray</a> to extract data for a <a href="hid.value_capability_arrays#usage_value_array#usage_value_array">usage value array</a>.</p>
 
-<p>If the routine returns status HIDP_STATUS_BAD_LOG_PHY_VALUES, an application or driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539748">HidP_GetUsageValue</a> to extract the raw usage data.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p>The caller-allocated buffers supplied at <i>PreparsedData</i>, <i>UsageValue</i>, and<i> Report </i>must be allocated from nonpaged pool.</p>
-
-<p>User-mode applications and kernel-mode drivers must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539750">HidP_GetUsageValueArray</a> to extract data for a <a href="hid.value_capability_arrays#usage_value_array#usage_value_array">usage value array</a>.</p>
-
-<p>If the routine returns status HIDP_STATUS_BAD_LOG_PHY_VALUES, an application or driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539748">HidP_GetUsageValue</a> to extract the raw usage data.</p>
+<p>If the routine returns status HIDP_STATUS_BAD_LOG_PHY_VALUES, an application or driver can call <a href="..\hidpi\nf-hidpi-hidp-getusagevalue.md">HidP_GetUsageValue</a> to extract the raw usage data.</p>
 
 <p>For more information, see <a href="NULL">HID Collections</a>. </p>
 
@@ -204,10 +196,10 @@ NTSTATUS __stdcall HidP_GetScaledUsageValue(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539748">HidP_GetUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp-getusagevalue.md">HidP_GetUsageValue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539750">HidP_GetUsageValueArray</a>
+<a href="..\hidpi\nf-hidpi-hidp-getusagevaluearray.md">HidP_GetUsageValueArray</a>
 </dt>
 </dl>
 <p> </p>

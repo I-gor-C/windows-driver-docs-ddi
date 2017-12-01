@@ -88,10 +88,10 @@ typedef enum _WRITE_ROTATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551370">CDROM_SPEED_REQUEST</a>
+<a href="..\ntddcdrm\ne-ntddcdrm--cdrom-speed-request.md">CDROM_SPEED_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559381">IOCTL_CDROM_SET_SPEED</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-set-speed.md">IOCTL_CDROM_SET_SPEED</a>
 </dt>
 </dl>
 <p> </p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>RECORDER_LOG_CREATE_PARAMS_INIT</b> function is used to initialize the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914608">RECORDER_LOG_CREATE_PARAMS</a> structure.</p>
+<p>The <b>RECORDER_LOG_CREATE_PARAMS_INIT</b> function is used to initialize the <a href="..\wpprecorder\ns-wpprecorder--recorder-log-create-params.md">RECORDER_LOG_CREATE_PARAMS</a> structure.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ FORCEINLINE  void RECORDER_LOG_CREATE_PARAMS_INIT(
 ### -param <i>Params</i> [out]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914608">RECORDER_LOG_CREATE_PARAMS</a> structure to initialize.</p>
+<p>A pointer to the <a href="..\wpprecorder\ns-wpprecorder--recorder-log-create-params.md">RECORDER_LOG_CREATE_PARAMS</a> structure to initialize.</p>
 </dd>
 
 ### -param <i>LogIdentifier</i> [in, optional]
@@ -100,7 +100,7 @@ FORCEINLINE  void RECORDER_LOG_CREATE_PARAMS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914608">RECORDER_LOG_CREATE_PARAMS</a>
+<a href="..\wpprecorder\ns-wpprecorder--recorder-log-create-params.md">RECORDER_LOG_CREATE_PARAMS</a>
 </dt>
 </dl>
 <p> </p>

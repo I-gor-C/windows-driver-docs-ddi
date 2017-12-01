@@ -65,7 +65,7 @@ typedef struct _DXGKARG_CREATEOVERLAY {
 ### -field <b>OverlayInfo</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561988">DXGK_OVERLAYINFO</a> structure that contains parameters that are required to create the overlay.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-overlayinfo.md">DXGK_OVERLAYINFO</a> structure that contains parameters that are required to create the overlay.</p>
 </dd>
 
 ### -field <b>hOverlay</b>
@@ -103,7 +103,7 @@ typedef struct _DXGKARG_CREATEOVERLAY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561988">DXGK_OVERLAYINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-overlayinfo.md">DXGK_OVERLAYINFO</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateoverlay">DxgkDdiCreateOverlay</a>

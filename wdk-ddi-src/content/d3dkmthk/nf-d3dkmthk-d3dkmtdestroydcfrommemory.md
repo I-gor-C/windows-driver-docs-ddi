@@ -57,7 +57,7 @@ NTSTATUS D3DKMTDestroyDCFromMemory(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547878">D3DKMT_DESTROYDCFROMMEMORY</a> structure that contains handles to the display context and bitmap.</p>
+<p> A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroydcfrommemory.md">D3DKMT_DESTROYDCFROMMEMORY</a> structure that contains handles to the display context and bitmap.</p>
 </dd>
 </dl>
 
@@ -130,7 +130,7 @@ NTSTATUS D3DKMTDestroyDCFromMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547878">D3DKMT_DESTROYDCFROMMEMORY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroydcfrommemory.md">D3DKMT_DESTROYDCFROMMEMORY</a>
 </dt>
 </dl>
 <p> </p>

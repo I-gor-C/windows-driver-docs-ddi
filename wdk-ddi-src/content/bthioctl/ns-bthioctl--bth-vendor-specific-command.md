@@ -7,7 +7,7 @@ old-location: bltooth\bth_vendor_specific_command.htm
 old-project: bltooth
 ms.assetid: c37844d9-206a-4060-8b46-9afe691fe8f9
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: BTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND, *PBTH_VENDOR_SPECIFIC_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,7 +90,7 @@ typedef struct _BTH_VENDOR_SPECIFIC_COMMAND {
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536641">BTH_COMMAND_HEADER</a> structure that
+     <a href="..\bthioctl\ns-bthioctl--bth-command-header.md">BTH_COMMAND_HEADER</a> structure that
      contains information about the vendor-specific command that includes an operation code and buffer
      length. The buffer length should only include the size of the data to be sent to the radio. It should
      not include the size of the patterns.</p>
@@ -101,7 +101,7 @@ typedef struct _BTH_VENDOR_SPECIFIC_COMMAND {
 <dd>
 <p>A UCHAR array that contains the data and patterns for the command that is specified in the 
      <b>HciHeader</b> member. Patterns are specified with 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536655">BTH_VENDOR_PATTERN</a> structures.</p>
+     <a href="..\bthioctl\ns-bthioctl--bth-vendor-pattern.md">BTH_VENDOR_PATTERN</a> structures.</p>
 </dd>
 </dl>
 
@@ -113,7 +113,7 @@ typedef struct _BTH_VENDOR_SPECIFIC_COMMAND {
 
 <p>To specify the size of the HCI command data, use the
     <b>TotalParameterLength</b> member in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536641">BTH_COMMAND_HEADER</a> structure in the
+    <a href="..\bthioctl\ns-bthioctl--bth-command-header.md">BTH_COMMAND_HEADER</a> structure in the
     BTH_VENDOR_SPECIFIC_COMMAND structure's 
     <b>HciHeader</b> member.</p>
 
@@ -122,7 +122,7 @@ typedef struct _BTH_VENDOR_SPECIFIC_COMMAND {
 
 <p>If patterns are required, the patterns follow the data to be sent to the radio in the 
     <b>Data</b> member buffer. Each pattern begins with a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536655">BTH_VENDOR_PATTERN</a> structure.</p>
+    <a href="..\bthioctl\ns-bthioctl--bth-vendor-pattern.md">BTH_VENDOR_PATTERN</a> structure.</p>
 
 <p>If such patterns are specified, the 
     <b>TotalParameterLength</b> member should not include the size of the patterns.</p>
@@ -152,15 +152,15 @@ typedef struct _BTH_VENDOR_SPECIFIC_COMMAND {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536641">BTH_COMMAND_HEADER</a>
+<a href="..\bthioctl\ns-bthioctl--bth-command-header.md">BTH_COMMAND_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536655">BTH_VENDOR_PATTERN</a>
+<a href="..\bthioctl\ns-bthioctl--bth-vendor-pattern.md">BTH_VENDOR_PATTERN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536686">IOCTL_BTH_HCI_VENDOR_COMMAND</a>
+<a href="..\bthioctl\ni-bthioctl-ioctl-bth-hci-vendor-command.md">IOCTL_BTH_HCI_VENDOR_COMMAND</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_VENDOR_SPECIFIC_COMMAND structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_VENDOR_SPECIFIC_COMMAND structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -62,7 +62,7 @@ POPLOCK_KEY_CONTEXT IoGetOplockKeyContextEx(
 </dl>
 
 ## -returns
-<p>An pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439448">OPLOCK_KEY_CONTEXT</a> structure containing the oplock keys for <i>FileObject</i>. Otherwise, NULL if <i>FileObject</i>  has no  oplock keys.</p>
+<p>An pointer to an <a href="..\ntddk\ns-ntddk--oplock-key-context.md">OPLOCK_KEY_CONTEXT</a> structure containing the oplock keys for <i>FileObject</i>. Otherwise, NULL if <i>FileObject</i>  has no  oplock keys.</p>
 
 ## -remarks
 
@@ -120,13 +120,13 @@ POPLOCK_KEY_CONTEXT IoGetOplockKeyContextEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406392">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>
+<a href="ifsk.dual_oplock_key_ecp_context">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551003">OPLOCK_KEY_ECP_CONTEXT</a>
+<a href="..\ntddk\ns-ntddk--oplock-key-ecp-context.md">OPLOCK_KEY_ECP_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439448">OPLOCK_KEY_CONTEXT</a>
+<a href="..\ntddk\ns-ntddk--oplock-key-context.md">OPLOCK_KEY_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>

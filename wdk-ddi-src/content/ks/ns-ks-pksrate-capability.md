@@ -7,7 +7,7 @@ old-location: stream\ksrate_capability.htm
 old-project: stream
 ms.assetid: 70866a87-0ebd-4230-9958-ace18116fa23
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSRATE_CAPABILITY, KSRATE_CAPABILITY, *PKSRATE_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ typedef struct {
 ### -field <b>Property</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> that specifies the property identifier.</p>
+<p>A structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> that specifies the property identifier.</p>
 </dd>
 
 ### -field <b>Rate</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566752">KSRATE</a> that specifies the requested rate.</p>
+<p>A structure of type <a href="stream.ksrate">KSRATE</a> that specifies the requested rate.</p>
 </dd>
 </dl>
 

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>D3DHAL_DP2INDEXEDLINELIST is parsed from the command buffer by the <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a> callback when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structure's <b>bCommand</b> member is set to D3DDP2OP_INDEXEDLINELIST, and is used to render the lines using vertex indices.</p>
+<p>D3DHAL_DP2INDEXEDLINELIST is parsed from the command buffer by the <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a> callback when the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> structure's <b>bCommand</b> member is set to D3DDP2OP_INDEXEDLINELIST, and is used to render the lines using vertex indices.</p>
 
 
 ## -syntax
@@ -74,9 +74,9 @@ typedef struct _D3DHAL_DP2INDEXEDLINELIST {
 
 <p>The driver should process a total of (<b>wPrimitiveCount</b> * 2) vertices from the vertex buffer, two vertices per line. The sequence of lines rendered is (<b>wV1</b>₀, <b>wV2</b>₀), (<b>wV1</b>₁, <b>wV2</b>₁), ..., (<b>wV1</b>ₙ,<b>wV2</b>ₙ), where n equals (<b>wPrimitiveCount</b>- 1). The driver should interpret the vertex buffer indexes based on the current command as follows:</p>
 
-<p>When the command is D3DDP2OP_INDEXEDLINELIST, the vertex buffer indexes are relative to the vertex buffer offset specified by the <b>dwVertexOffset</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545957">D3DHAL_DRAWPRIMITIVES2DATA</a> structure.</p>
+<p>When the command is D3DDP2OP_INDEXEDLINELIST, the vertex buffer indexes are relative to the vertex buffer offset specified by the <b>dwVertexOffset</b> member of the <a href="..\d3dhal\ns-d3dhal--d3dhal-drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a> structure.</p>
 
-<p>When the command is D3DDP2OP_INDEXEDLINELIST2, a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545832">D3DHAL_DP2STARTVERTEX</a> structure immediately follows it and precedes the D3DHAL_DP2INDEXEDLINELIST structure(s) in the command buffer. The vertex buffer indexes are relative to the vertex buffer offset specified by <b>dwVertexOffset</b> plus the base offset obtained from the <b>wVStart</b> member of the D3DHAL_DP2STARTVERTEX structure.</p>
+<p>When the command is D3DDP2OP_INDEXEDLINELIST2, a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2startvertex.md">D3DHAL_DP2STARTVERTEX</a> structure immediately follows it and precedes the D3DHAL_DP2INDEXEDLINELIST structure(s) in the command buffer. The vertex buffer indexes are relative to the vertex buffer offset specified by <b>dwVertexOffset</b> plus the base offset obtained from the <b>wVStart</b> member of the D3DHAL_DP2STARTVERTEX structure.</p>
 
 <p>The following figure shows a portion of a sample command buffer containing a D3DDP2OP_INDEXEDLINELIST command and two D3DHAL_DP2INDEXEDLINELIST structures. The driver should draw two lines using the following four vertices from the vertex buffer: (v[0], v[4]), (v[5], v[6]).</p>
 
@@ -103,13 +103,13 @@ typedef struct _D3DHAL_DP2INDEXEDLINELIST {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545832">D3DHAL_DP2STARTVERTEX</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2startvertex.md">D3DHAL_DP2STARTVERTEX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545957">D3DHAL_DRAWPRIMITIVES2DATA</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
 </dt>
 </dl>
 <p> </p>

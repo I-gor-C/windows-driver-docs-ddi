@@ -7,7 +7,7 @@ old-location: netvista\wskcontrolclient.htm
 old-project: netvista
 ms.assetid: dad13c60-3511-4641-9182-71a1ce032a69
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -246,21 +245,6 @@ NTSTATUS WSKAPI * WskControlClient(
     stack, it cannot return from the function that calls the 
     <b>WskControlClient</b> function until after the IRP is completed.</p>
 
-<p>For more information about how the input and output buffers are used for each client control
-    operation, see 
-    <a href="netvista.wsk_client_control_operations">WSK Client Control
-    Operations</a>.</p>
-
-<p>If the 
-    <b>WskControlClient</b> function returns STATUS_PENDING, any buffers that are pointed to by the 
-    <i>InputBuffer</i> parameter or the 
-    <i>OutputBuffer</i> parameter must remain valid until the IRP is completed. If the WSK application
-    allocated the buffers with one of the 
-    <b>ExAllocate<i>Xxx</i></b> functions, it cannot free the memory with the corresponding 
-    <b>ExFree<i>Xxx</i></b> function until after the IRP is completed. If the WSK application allocated the buffers on the
-    stack, it cannot return from the function that calls the 
-    <b>WskControlClient</b> function until after the IRP is completed.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -305,19 +289,19 @@ NTSTATUS WSKAPI * WskControlClient(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571122">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571175">WSK_PROVIDER_DISPATCH</a>
+<a href="..\wsk\ns-wsk--wsk-provider-dispatch.md">WSK_PROVIDER_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571177">WSK_PROVIDER_NPI</a>
+<a href="..\wsk\ns-wsk--wsk-provider-npi.md">WSK_PROVIDER_NPI</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571193">WSK_TRANSPORT</a>
+<a href="..\wsk\ns-wsk--wsk-transport.md">WSK_TRANSPORT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571157">WSK Client Control Operations</a>
@@ -325,4 +309,4 @@ NTSTATUS WSKAPI * WskControlClient(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_CLIENT callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_CLIENT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

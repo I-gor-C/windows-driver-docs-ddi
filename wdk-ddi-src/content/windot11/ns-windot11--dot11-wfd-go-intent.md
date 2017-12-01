@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_go_intent.htm
 old-project: netvista
 ms.assetid: 8E4F88EF-04A9-4313-AE6A-2467DA08044A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_WFD_GO_INTENT,
 ms.prod: windows-hardware
 ms.technology: windows-devices

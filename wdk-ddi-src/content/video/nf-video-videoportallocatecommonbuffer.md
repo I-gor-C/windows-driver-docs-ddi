@@ -69,7 +69,7 @@ PVOID VideoPortAllocateCommonBuffer(
 ### -param <i>VpDmaAdapter</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>.</p>
+<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a previous call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.</p>
 </dd>
 
 ### -param <i>DesiredLength</i> [in]
@@ -87,7 +87,7 @@ PVOID VideoPortAllocateCommonBuffer(
 ### -param <i>CacheEnabled</i> [in]
 
 <dd>
-<p>Specifies whether the allocated memory can be cached.  For more information, see the description of the <i>CacheEnabled</i> parameter for <a href="https://msdn.microsoft.com/library/windows/hardware/ff540575">AllocateCommonBuffer</a>.</p>
+<p>Specifies whether the allocated memory can be cached.  For more information, see the description of the <i>CacheEnabled</i> parameter for <a href="kernel.allocatecommonbuffer">AllocateCommonBuffer</a>.</p>
 </dd>
 
 ### -param <i>Reserved</i> [out]
@@ -101,9 +101,7 @@ PVOID VideoPortAllocateCommonBuffer(
 <p><b>VideoPortAllocateCommonBuffer</b> returns the base virtual address of the allocated buffer if successful; otherwise, it returns <b>NULL</b> if the buffer cannot be allocated.</p>
 
 ## -remarks
-<p>When the buffer is no longer needed, the video miniport driver should release it by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff570355">VideoPortReleaseCommonBuffer</a>.</p>
-
-<p>When the buffer is no longer needed, the video miniport driver should release it by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff570355">VideoPortReleaseCommonBuffer</a>.</p>
+<p>When the buffer is no longer needed, the video miniport driver should release it by calling <a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>.</p>
 
 ## -requirements
 <table>
@@ -168,13 +166,13 @@ PVOID VideoPortAllocateCommonBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540575">AllocateCommonBuffer</a>
+<a href="kernel.allocatecommonbuffer">AllocateCommonBuffer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>
+<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570355">VideoPortReleaseCommonBuffer</a>
+<a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>

@@ -69,13 +69,13 @@ ULONG StorPortGetBusData(
 ### -param <i>BusDataType</i> [in]
 
 <dd>
-<p>Contains a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff540700">BUS_DATA_TYPE</a> that specifies the type of bus-specific configuration data to be returned. Currently, this value can be one of the following: <b>Cmos</b>, <b>EisaConfiguration</b>, <b>Pos</b>, or <b>PCIConfiguration</b>. However, additional types of bus configuration will be supported in the future. The upper bound on the types supported is always <b>MaximumBusDataType</b>.</p>
+<p>Contains a value of type <a href="..\ntddk\ne-ntddk--bus-data-type.md">BUS_DATA_TYPE</a> that specifies the type of bus-specific configuration data to be returned. Currently, this value can be one of the following: <b>Cmos</b>, <b>EisaConfiguration</b>, <b>Pos</b>, or <b>PCIConfiguration</b>. However, additional types of bus configuration will be supported in the future. The upper bound on the types supported is always <b>MaximumBusDataType</b>.</p>
 </dd>
 
 ### -param <i>SystemIoBusNumber</i> [in]
 
 <dd>
-<p>Specifies the system-assigned number of the I/O bus. The miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine obtains this value from the <b>SystemIoBusNumber</b> member initially set in <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>.</p>
+<p>Specifies the system-assigned number of the I/O bus. The miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine obtains this value from the <b>SystemIoBusNumber</b> member initially set in <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>.</p>
 </dd>
 
 ### -param <i>SlotNumber</i> [in]
@@ -108,13 +108,9 @@ ULONG StorPortGetBusData(
 <p> </p>
 
 ## -remarks
-<p><b>StorPortGetBusData</b> can be called only from a miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine or from <a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a> when the control type is <b>ScsiSetRunningConfig</b>. Calls from other miniport driver routines will result in system failure or incorrect operation for the caller.</p>
+<p><b>StorPortGetBusData</b> can be called only from a miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine or from <a href="storage.hwstoradaptercontrol">HwStorAdapterControl</a> when the control type is <b>ScsiSetRunningConfig</b>. Calls from other miniport driver routines will result in system failure or incorrect operation for the caller.</p>
 
-<p>Configuration data returned by <b>StorPortGetBusData</b> is valid only until the miniport driver calls <b>StorPortGetBusData</b> again. As soon as the caller's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine returns control, any returned configuration data becomes invalid.</p>
-
-<p><b>StorPortGetBusData</b> can be called only from a miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine or from <a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a> when the control type is <b>ScsiSetRunningConfig</b>. Calls from other miniport driver routines will result in system failure or incorrect operation for the caller.</p>
-
-<p>Configuration data returned by <b>StorPortGetBusData</b> is valid only until the miniport driver calls <b>StorPortGetBusData</b> again. As soon as the caller's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine returns control, any returned configuration data becomes invalid.</p>
+<p>Configuration data returned by <b>StorPortGetBusData</b> is valid only until the miniport driver calls <b>StorPortGetBusData</b> again. As soon as the caller's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine returns control, any returned configuration data becomes invalid.</p>
 
 ## -requirements
 <table>
@@ -153,10 +149,10 @@ ULONG StorPortGetBusData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a>
+<a href="storage.hwstorfindadapter">HwStorFindAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>
+<a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

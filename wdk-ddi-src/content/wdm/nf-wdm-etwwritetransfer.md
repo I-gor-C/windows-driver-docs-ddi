@@ -103,8 +103,6 @@ NTSTATUS EtwWriteTransfer(
 ## -remarks
 <p>You can call <b>EtwWriteTransfer</b> at any IRQL. However, when IRQL is greater than APC_LEVEL, any data passed to the <b>EtwWrite</b>, <b>EtwWriteString</b>, <b>EtwWriteTransfer</b> functions must not be pageable. That is, any kernel-mode routine that is running at IRQL greater than APC_LEVEL cannot access pageable memory. Data passed to the <b>EtwWrite</b>, <b>EtwWriteString</b>, <b>EtwWriteTransfer</b> functions must reside in system-space memory, regardless of what the IRQL is.</p>
 
-<p>You can call <b>EtwWriteTransfer</b> at any IRQL. However, when IRQL is greater than APC_LEVEL, any data passed to the <b>EtwWrite</b>, <b>EtwWriteString</b>, <b>EtwWriteTransfer</b> functions must not be pageable. That is, any kernel-mode routine that is running at IRQL greater than APC_LEVEL cannot access pageable memory. Data passed to the <b>EtwWrite</b>, <b>EtwWriteString</b>, <b>EtwWriteTransfer</b> functions must reside in system-space memory, regardless of what the IRQL is.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -168,10 +166,10 @@ NTSTATUS EtwWriteTransfer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545627">EtwWrite</a>
+<a href="..\wdm\nf-wdm-etwwrite.md">EtwWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545637">EtwWriteString</a>
+<a href="..\wdm\nf-wdm-etwwritestring.md">EtwWriteString</a>
 </dt>
 </dl>
 <p> </p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>SCSI_POWER_REQUEST_BLOCK</b> structure is a special version of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> that is used for power management requests.</p>
+<p>The <b>SCSI_POWER_REQUEST_BLOCK</b> structure is a special version of a <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a> that is used for power management requests.</p>
 
 
 ## -syntax
@@ -90,8 +90,8 @@ typedef struct _SCSI_POWER_REQUEST_BLOCK {
 ### -field <b>SrbStatus</b>
 
 <dd>
-<p>The status of the completed request. This member should be set by the miniport driver before it notifies the Storport driver that the request has completed. A miniport driver notifies the Storport driver that the request has completed by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567433">StorPortNotification</a> function with the <a href="storage.storportnotification__notificationtype___requestcomplete_">RequestComplete</a> notification type.</p>
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> in the WDK documentation for a list of possible values for this member.</p>
+<p>The status of the completed request. This member should be set by the miniport driver before it notifies the Storport driver that the request has completed. A miniport driver notifies the Storport driver that the request has completed by calling the <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a> function with the <a href="storage.storportnotification__notificationtype___requestcomplete_">RequestComplete</a> notification type.</p>
+<p>See <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a> in the WDK documentation for a list of possible values for this member.</p>
 </dd>
 
 ### -field <b>SrbPowerFlags</b>
@@ -121,7 +121,7 @@ typedef struct _SCSI_POWER_REQUEST_BLOCK {
 ### -field <b>DevicePowerState</b>
 
 <dd>
-<p>An enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff567578">STOR_DEVICE_POWER_STATE</a> that specifies the requested power state of the device.</p>
+<p>An enumerator value of type <a href="..\storport\ne-storport--stor-device-power-state.md">STOR_DEVICE_POWER_STATE</a> that specifies the requested power state of the device.</p>
 </dd>
 
 ### -field <b>SrbFlags</b>
@@ -169,13 +169,13 @@ typedef struct _SCSI_POWER_REQUEST_BLOCK {
 ### -field <b>SrbExtension</b>
 
 <dd>
-<p>A pointer to the SRB extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a> structure. The Storport driver does not initialize the memory that this member points to. The HBA can directly access the data that the miniport driver writes into the SRB extension. A miniport driver can obtain the physical address of the SRB extension by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567095">StorPortGetPhysicalAddress</a> routine. </p>
+<p>A pointer to the SRB extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a> structure. The Storport driver does not initialize the memory that this member points to. The HBA can directly access the data that the miniport driver writes into the SRB extension. A miniport driver can obtain the physical address of the SRB extension by calling the <a href="..\storport\nf-storport-storportgetphysicaladdress.md">StorPortGetPhysicalAddress</a> routine. </p>
 </dd>
 
 ### -field <b>PowerAction</b>
 
 <dd>
-<p>An enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff567587">STOR_POWER_ACTION</a> that specifies the type of system shutdown that is about to occur. This value is meaningful only if the device is moving into the D1, D2, or D3 power state as indicated by the <b>DevicePowerState</b> member. </p>
+<p>An enumerator value of type <a href="storage.stor_power_action">STOR_POWER_ACTION</a> that specifies the type of system shutdown that is about to occur. This value is meaningful only if the device is moving into the D1, D2, or D3 power state as indicated by the <b>DevicePowerState</b> member. </p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -192,9 +192,9 @@ typedef struct _SCSI_POWER_REQUEST_BLOCK {
 </dl>
 
 ## -remarks
-<p>The Storport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557369">HwStorBuildIo</a> to pass SRBs to the miniport driver. <b>HwStorBuildIo</b> should check the <b>Function</b> member of the SRB to determine the type of the SRB. If the <b>Function</b> member is set to SRB_FUNCTION_POWER, the SRB is a structure of type <b>SCSI_POWER_REQUEST_BLOCK</b>.</p>
+<p>The Storport driver calls <a href="storage.hwstorbuildio">HwStorBuildIo</a> to pass SRBs to the miniport driver. <b>HwStorBuildIo</b> should check the <b>Function</b> member of the SRB to determine the type of the SRB. If the <b>Function</b> member is set to SRB_FUNCTION_POWER, the SRB is a structure of type <b>SCSI_POWER_REQUEST_BLOCK</b>.</p>
 
-<p>The Storport driver sends <b>SCSI_POWER_REQUEST_BLOCK</b> requests to a miniport driver to notify the miniport driver of Windows power events that affect storage devices that are connected to the adapter. In the case of a power up event, this request gives the miniport driver an opportunity to initialize itself. In the case of a hibernation or shutdown event, this request gives the miniport driver an opportunity to complete I/O requests and prepare for a power down. The miniport driver can use the value in the <b>PowerAction</b> member of the <b>SCSI_POWER_REQUEST_BLOCK</b> to determine what actions are required. After the miniport driver completes the <b>SCSI_POWER_REQUEST_BLOCK</b> request, the Storport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557274">HwScsiAdapterControl</a> with a control request of <b>ScsiStopAdapter</b> to power down the adapter. The miniport driver reinitialize while processing the SRB_FUNCTION_POWER request, or it can wait and reinitialize when the Storport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a> to perform a an <b>ScsiRestartAdapter</b> control request.</p>
+<p>The Storport driver sends <b>SCSI_POWER_REQUEST_BLOCK</b> requests to a miniport driver to notify the miniport driver of Windows power events that affect storage devices that are connected to the adapter. In the case of a power up event, this request gives the miniport driver an opportunity to initialize itself. In the case of a hibernation or shutdown event, this request gives the miniport driver an opportunity to complete I/O requests and prepare for a power down. The miniport driver can use the value in the <b>PowerAction</b> member of the <b>SCSI_POWER_REQUEST_BLOCK</b> to determine what actions are required. After the miniport driver completes the <b>SCSI_POWER_REQUEST_BLOCK</b> request, the Storport driver calls <a href="storage.hwscsiadaptercontrol">HwScsiAdapterControl</a> with a control request of <b>ScsiStopAdapter</b> to power down the adapter. The miniport driver reinitialize while processing the SRB_FUNCTION_POWER request, or it can wait and reinitialize when the Storport driver calls <a href="storage.hwstoradaptercontrol">HwStorAdapterControl</a> to perform a an <b>ScsiRestartAdapter</b> control request.</p>
 
 <p> When transitioning from the D0 power state to a lower-powered state (D1, D2, or D3) the Storport driver sends a <b>SCSI_POWER_REQUEST_BLOCK</b> request to the miniport driver before the underlying bus driver powers down the adapter. </p>
 
@@ -225,13 +225,13 @@ typedef struct _SCSI_POWER_REQUEST_BLOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557369">HwStorBuildIo</a>
+<a href="storage.hwstorbuildio">HwStorBuildIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567433">StorPortNotification</a>
+<a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>
 </dt>
 </dl>
 <p> </p>

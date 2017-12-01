@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>FltParseFileNameInformation</b> parses the contents of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544633">FLT_FILE_NAME_INFORMATION</a> structure. </p>
+<p><b>FltParseFileNameInformation</b> parses the contents of a <a href="..\fltkernel\ns-fltkernel--flt-file-name-information.md">FLT_FILE_NAME_INFORMATION</a> structure. </p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ NTSTATUS FltParseFileNameInformation(
 ### -param <i>FileNameInformation</i> [in, out]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544633">FLT_FILE_NAME_INFORMATION</a> structure returned by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543003">FltGetDestinationFileNameInformation</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff543032">FltGetFileNameInformation</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff543035">FltGetFileNameInformationUnsafe</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff543177">FltGetTunneledName</a>. This parameter is required and cannot be <b>NULL</b>. </p>
+<p>Pointer to an <a href="..\fltkernel\ns-fltkernel--flt-file-name-information.md">FLT_FILE_NAME_INFORMATION</a> structure returned by a previous call to <a href="..\fltkernel\nf-fltkernel-fltgetdestinationfilenameinformation.md">FltGetDestinationFileNameInformation</a>, <a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformation.md">FltGetFileNameInformation</a>, <a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformationunsafe.md">FltGetFileNameInformationUnsafe</a>, or <a href="..\fltkernel\nf-fltkernel-fltgettunneledname.md">FltGetTunneledName</a>. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 </dl>
 
@@ -65,7 +65,7 @@ NTSTATUS FltParseFileNameInformation(
 <p><b>FltParseFileNameInformation</b> returns STATUS_SUCCESS or an appropriate NTSTATUS error code. </p>
 
 ## -remarks
-<p><b>FltParseFileNameInformation</b> parses the <b>Name</b> member of a FLT_FILE_NAME_INFORMATION structure and uses the results to set the values of the <b>Volume</b>, <b>Share</b>, <b>Extension</b>, <b>Stream</b>, <b>FinalComponent</b>, <b>ParentDir</b>, and <b>NamesParsed</b> members of this structure. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544633">FLT_FILE_NAME_INFORMATION</a>. </p>
+<p><b>FltParseFileNameInformation</b> parses the <b>Name</b> member of a FLT_FILE_NAME_INFORMATION structure and uses the results to set the values of the <b>Volume</b>, <b>Share</b>, <b>Extension</b>, <b>Stream</b>, <b>FinalComponent</b>, <b>ParentDir</b>, and <b>NamesParsed</b> members of this structure. For more information, see <a href="..\fltkernel\ns-fltkernel--flt-file-name-information.md">FLT_FILE_NAME_INFORMATION</a>. </p>
 
 <p>The following is an example of a normalized name for a remote file: </p>
 
@@ -91,8 +91,6 @@ NTSTATUS FltParseFileNameInformation(
 
 <p><b>Share</b>: <b>NULL</b></p>
 
-<p><b>Extension</b>: "txt" </p>
-
 <p><b>Stream</b>: ":stream1:$DATA" </p>
 
 <p><b>FinalComponent</b>: "TestRe~1.txt:stream1:$DATA" </p>
@@ -104,62 +102,6 @@ NTSTATUS FltParseFileNameInformation(
 <p><b>FltParseFileNameInformation</b> parses this short name as follows: </p>
 
 <p><b>Volume</b>: <b>NULL</b></p>
-
-<p><b>Share</b>: <b>NULL</b></p>
-
-<p><b>Extension</b>: "txt" </p>
-
-<p><b>Stream</b>: <b>NULL</b></p>
-
-<p><b>FinalComponent</b>: "TestRe~1.txt" </p>
-
-<p><b>ParentDir</b>: <b>NULL</b></p>
-
-<p>The caller must not modify the contents of the <i>FileNameInformation</i> structure, because the Filter Manager caches this structure so that all minifilter drivers can use it. </p>
-
-<p><b>FltParseFileNameInformation</b> parses the <b>Name</b> member of a FLT_FILE_NAME_INFORMATION structure and uses the results to set the values of the <b>Volume</b>, <b>Share</b>, <b>Extension</b>, <b>Stream</b>, <b>FinalComponent</b>, <b>ParentDir</b>, and <b>NamesParsed</b> members of this structure. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544633">FLT_FILE_NAME_INFORMATION</a>. </p>
-
-<p>The following is an example of a normalized name for a remote file: </p>
-
-<p><b>FltParseFileNameInformation</b> parses this normalized name as follows: </p>
-
-<p><b>Volume</b>: "\Device\LanManRedirector" </p>
-
-<p><b>Share</b>: "\MyServer\MyShare" </p>
-
-<p><b>Extension</b>: "txt" </p>
-
-<p><b>Stream</b>: ":stream1" </p>
-
-<p><b>FinalComponent</b>: "Test Results.txt:stream1" </p>
-
-<p><b>ParentDir</b>: "\Documents and Settings\MyUser\My Documents\" </p>
-
-<p>The following is an example of an opened name for a local file: </p>
-
-<p><b>FltParseFileNameInformation</b> parses this opened name as follows: </p>
-
-<p><b>Volume</b>: "\Device\HarddiskVolume1" </p>
-
-<p><b>Share</b>: <b>NULL</b></p>
-
-<p><b>Extension</b>: "txt" </p>
-
-<p><b>Stream</b>: ":stream1:$DATA" </p>
-
-<p><b>FinalComponent</b>: "TestRe~1.txt:stream1:$DATA" </p>
-
-<p><b>ParentDir</b>: "\Docume~1\MyUser\My Documents\" </p>
-
-<p>The following is an example of a short name for a file: </p>
-
-<p><b>FltParseFileNameInformation</b> parses this short name as follows: </p>
-
-<p><b>Volume</b>: <b>NULL</b></p>
-
-<p><b>Share</b>: <b>NULL</b></p>
-
-<p><b>Extension</b>: "txt" </p>
 
 <p><b>Stream</b>: <b>NULL</b></p>
 
@@ -232,22 +174,22 @@ NTSTATUS FltParseFileNameInformation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544633">FLT_FILE_NAME_INFORMATION</a>
+<a href="..\fltkernel\ns-fltkernel--flt-file-name-information.md">FLT_FILE_NAME_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543003">FltGetDestinationFileNameInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetdestinationfilenameinformation.md">FltGetDestinationFileNameInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543032">FltGetFileNameInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformation.md">FltGetFileNameInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543035">FltGetFileNameInformationUnsafe</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformationunsafe.md">FltGetFileNameInformationUnsafe</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543177">FltGetTunneledName</a>
+<a href="..\fltkernel\nf-fltkernel-fltgettunneledname.md">FltGetTunneledName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543413">FltParseFileName</a>
+<a href="..\fltkernel\nf-fltkernel-fltparsefilename.md">FltParseFileName</a>
 </dt>
 </dl>
 <p> </p>

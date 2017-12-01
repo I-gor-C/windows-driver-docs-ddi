@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenAdapterFromLuid(
 ### -param <i>pAdapter</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh780267">D3DKMT_OPENADAPTERFROMLUID</a> structure that describes information that is required to perform the mapping.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openadapterfromluid.md">D3DKMT_OPENADAPTERFROMLUID</a> structure that describes information that is required to perform the mapping.</p>
 </dd>
 </dl>
 
@@ -139,7 +139,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenAdapterFromLuid(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780267">D3DKMT_OPENADAPTERFROMLUID</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openadapterfromluid.md">D3DKMT_OPENADAPTERFROMLUID</a>
 </dt>
 </dl>
 <p> </p>

@@ -77,7 +77,7 @@ typedef struct _STOR_LOG_EVENT_DETAILS {
 ### -field <b>Size</b>
 
 <dd>
-<p>The size of this structure. Set before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff567428">StorPortLogSystemEvent</a>.</p>
+<p>The size of this structure. Set before calling <a href="..\storport\nf-storport-storportlogsystemevent.md">StorPortLogSystemEvent</a>.</p>
 </dd>
 
 ### -field <b>Flags</b>
@@ -154,7 +154,7 @@ typedef struct _STOR_LOG_EVENT_DETAILS {
 </dl>
 
 ## -remarks
-<p>Although <a href="https://msdn.microsoft.com/library/windows/hardware/ff567426">StorPortLogError</a> uses <b>PathId</b>, <b>TargetId</b>, and <b>LunId</b> values that are 8bits wide, for <a href="https://msdn.microsoft.com/library/windows/hardware/ff567428">StorPortLogSystemEvent</a> they are 32bits wide. The combined size of the miniport driver's dump data and string areas cannot exceed 150 bytes. This restriction is due to the &lt; 255 byte limit that the kernel enforces on the event log entries.</p>
+<p>Although <a href="..\storport\nf-storport-storportlogerror.md">StorPortLogError</a> uses <b>PathId</b>, <b>TargetId</b>, and <b>LunId</b> values that are 8bits wide, for <a href="..\storport\nf-storport-storportlogsystemevent.md">StorPortLogSystemEvent</a> they are 32bits wide. The combined size of the miniport driver's dump data and string areas cannot exceed 150 bytes. This restriction is due to the &lt; 255 byte limit that the kernel enforces on the event log entries.</p>
 
 ## -requirements
 <table>
@@ -173,10 +173,10 @@ typedef struct _STOR_LOG_EVENT_DETAILS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567582">STOR_EVENT_ASSOCIATION_ENUM</a>
+<a href="..\storport\ne-storport--stor-event-association-enum.md">STOR_EVENT_ASSOCIATION_ENUM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567428">StorPortLogSystemEvent</a>
+<a href="..\storport\nf-storport-storportlogsystemevent.md">StorPortLogSystemEvent</a>
 </dt>
 </dl>
 <p> </p>

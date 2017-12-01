@@ -7,7 +7,7 @@ old-location: netvista\ril_setequipmentstate.htm
 old-project: netvista
 ms.assetid: 52b76027-5562-403b-9993-40d3d9a33e35
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SetEquipmentState
 ms.prod: windows-hardware
 ms.technology: windows-devices

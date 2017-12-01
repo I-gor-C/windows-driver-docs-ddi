@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest_send.htm
 old-project: wdf
 ms.assetid: f916b414-9cd9-4745-a021-07c810d0d68b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFIoRequest, Send, IWDFIoRequest::Send
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,13 +61,13 @@ HRESULT Send(
 ### -param <i>pIoTarget</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559170">IWDFIoTarget</a> interface for the I/O target object, which typically represents a lower driver in the stack. </p>
+<p>A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a> interface for the I/O target object, which typically represents a lower driver in the stack. </p>
 </dd>
 
 ### -param <i>Flags</i> [in]
 
 <dd>
-<p>A valid bitwise OR of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552493">WDF_REQUEST_SEND_OPTIONS_FLAGS</a>-typed flags.</p>
+<p>A valid bitwise OR of <a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-send-options-flags.md">WDF_REQUEST_SEND_OPTIONS_FLAGS</a>-typed flags.</p>
 </dd>
 
 ### -param <i>Timeout</i> [in]
@@ -92,24 +92,14 @@ HRESULT Send(
 ## -returns
 <p><b>Send</b> returns S_OK if the operation succeeds. Otherwise, this method returns one of the error codes that are defined in Winerror.h.</p>
 
-<p>Note that the return value represents the status of the <b>Send</b> method's attempt to send the I/O request to the I/O target. The return value does not represent the completion status of the I/O request. Your driver must use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560292">IWDFRequestCompletionParams</a> interface to obtain the I/O request's completion status.</p>
+<p>Note that the return value represents the status of the <b>Send</b> method's attempt to send the I/O request to the I/O target. The return value does not represent the completion status of the I/O request. Your driver must use the <a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a> interface to obtain the I/O request's completion status.</p>
 
 ## -remarks
 <p>If <b>Send</b> returns an error code, the driver should typically complete the request with the error code that <b>Send</b> returned, as the code in the following Example section shows.</p>
 
-<p>If your driver sets the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag in the <i>Flags</i> parameter, and if <b>Send</b> successfully sends the I/O request to the I/O target, <b>Send</b> returns after the I/O target completes the I/O request. In this case, <b>Send</b> returns S_OK and the driver can immediately call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a> to obtain the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560292">IWDFRequestCompletionParams</a> interface. The code example at <b>IWDFIoRequest::GetCompletionParams</b> shows a call to <b>Send</b> with the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag set.</p>
+<p>If your driver sets the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag in the <i>Flags</i> parameter, and if <b>Send</b> successfully sends the I/O request to the I/O target, <b>Send</b> returns after the I/O target completes the I/O request. In this case, <b>Send</b> returns S_OK and the driver can immediately call <a href="wdf.iwdfiorequest_getcompletionparams">IWDFIoRequest::GetCompletionParams</a> to obtain the <a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a> interface. The code example at <b>IWDFIoRequest::GetCompletionParams</b> shows a call to <b>Send</b> with the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag set.</p>
 
-<p>If your driver does not set the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag, and if <b>Send</b> successfully sends the I/O request to the I/O target, <b>Send</b> returns S_OK while the I/O target is still processing the I/O request asynchronously. In this case, the driver provides an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a> callback function that the framework calls after the I/O target completes the I/O request. Typically, the <b>OnCompletion</b> callback function calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a>. The code example in the following Example section shows a call to <b>Send</b> without the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag.</p>
-
-<p>A driver cannot call <b>Send</b> to send an I/O request to a USB pipe, if the driver has configured a <a href="wdf.working_with_usb_pipes_in_umdf">continuous reader</a> for the pipe.</p>
-
-<p>The following code example forwards a request to a device's I/O target.</p>
-
-<p>If <b>Send</b> returns an error code, the driver should typically complete the request with the error code that <b>Send</b> returned, as the code in the following Example section shows.</p>
-
-<p>If your driver sets the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag in the <i>Flags</i> parameter, and if <b>Send</b> successfully sends the I/O request to the I/O target, <b>Send</b> returns after the I/O target completes the I/O request. In this case, <b>Send</b> returns S_OK and the driver can immediately call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a> to obtain the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560292">IWDFRequestCompletionParams</a> interface. The code example at <b>IWDFIoRequest::GetCompletionParams</b> shows a call to <b>Send</b> with the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag set.</p>
-
-<p>If your driver does not set the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag, and if <b>Send</b> successfully sends the I/O request to the I/O target, <b>Send</b> returns S_OK while the I/O target is still processing the I/O request asynchronously. In this case, the driver provides an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a> callback function that the framework calls after the I/O target completes the I/O request. Typically, the <b>OnCompletion</b> callback function calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a>. The code example in the following Example section shows a call to <b>Send</b> without the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag.</p>
+<p>If your driver does not set the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag, and if <b>Send</b> successfully sends the I/O request to the I/O target, <b>Send</b> returns S_OK while the I/O target is still processing the I/O request asynchronously. In this case, the driver provides an <a href="wdf.irequestcallbackrequestcompletion_oncompletion">IRequestCallbackRequestCompletion::OnCompletion</a> callback function that the framework calls after the I/O target completes the I/O request. Typically, the <b>OnCompletion</b> callback function calls <a href="wdf.iwdfiorequest_getcompletionparams">IWDFIoRequest::GetCompletionParams</a>. The code example in the following Example section shows a call to <b>Send</b> without the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag.</p>
 
 <p>A driver cannot call <b>Send</b> to send an I/O request to a USB pipe, if the driver has configured a <a href="wdf.working_with_usb_pipes_in_umdf">continuous reader</a> for the pipe.</p>
 
@@ -168,21 +158,21 @@ HRESULT Send(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558985">IWDFIoRequest</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a>
+<a href="wdf.irequestcallbackrequestcompletion_oncompletion">IRequestCallbackRequestCompletion::OnCompletion</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561462">WDF_REQUEST_SEND_OPTIONS_FLAGS (UMDF)</a>
+<a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-send-options-flags.md">WDF_REQUEST_SEND_OPTIONS_FLAGS (UMDF)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a>
+<a href="wdf.iwdfiorequest_getcompletionparams">IWDFIoRequest::GetCompletionParams</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559170">IWDFIoTarget</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::Send method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::Send method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

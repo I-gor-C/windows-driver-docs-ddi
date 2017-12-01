@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemconfigitem_2.htm
 old-project: netvista
 ms.assetid: 9ac8f93e-4eac-47ec-bc1d-090abb339626
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILRESETMODEMCONFIGITEM, RILRESETMODEMCONFIGITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices

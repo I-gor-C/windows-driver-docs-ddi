@@ -7,7 +7,7 @@ old-location: kernel\iowmiqueryalldatamultiple.htm
 old-project: kernel
 ms.assetid: 660ed1ad-3aad-44a9-9523-e167f84fe9d5
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoWMIQueryAllDataMultiple
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS IoWMIQueryAllDataMultiple(
 ### -param <i>DataBlockObjectList</i> [in]
 
 <dd>
-<p>Pointer to an array of pointers to WMI data block objects. The caller opens a data block object for each WMI class with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550453">IoWMIOpenBlock</a> routine. Each object must be opened with the WMIGUID_QUERY access right.</p>
+<p>Pointer to an array of pointers to WMI data block objects. The caller opens a data block object for each WMI class with the <a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a> routine. Each object must be opened with the WMIGUID_QUERY access right.</p>
 </dd>
 
 ### -param <i>ObjectCount</i> [in]
@@ -79,7 +79,7 @@ NTSTATUS IoWMIQueryAllDataMultiple(
 ### -param <i>OutBuffer</i> [out, optional]
 
 <dd>
-<p>Pointer to the buffer where the routine returns the WMI data. The routine returns a sequence of variable-sized <a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a> structures, one for each set of returned data blocks. The <b>WnodeHeader.Linkage</b> member of each <b>WNODE_ALL_DATA</b> structure contains the offset from the beginning of the current <b>WNODE_ALL_DATA</b> to the beginning of the next <b>WNODE_ALL_DATA</b>. The final block in the chain has <b>WnodeHeader.Linkage</b> set to zero. <i>OutBuffer</i> must point to a buffer allocated from nonpaged pool. </p>
+<p>Pointer to the buffer where the routine returns the WMI data. The routine returns a sequence of variable-sized <a href="kernel.wnode_all_data">WNODE_ALL_DATA</a> structures, one for each set of returned data blocks. The <b>WnodeHeader.Linkage</b> member of each <b>WNODE_ALL_DATA</b> structure contains the offset from the beginning of the current <b>WNODE_ALL_DATA</b> to the beginning of the next <b>WNODE_ALL_DATA</b>. The final block in the chain has <b>WnodeHeader.Linkage</b> set to zero. <i>OutBuffer</i> must point to a buffer allocated from nonpaged pool. </p>
 </dd>
 </dl>
 
@@ -97,13 +97,7 @@ NTSTATUS IoWMIQueryAllDataMultiple(
 
 <p>If no drivers implement any of the specified WMI classes, the routine returns STATUS_SUCCESS It also returns a value of zero in the memory location pointed to by the <i>InOutBufferSize</i> parameter.</p>
 
-<p>To query a single WMI class, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff550463">IoWMIQueryAllData</a>. </p>
-
-<p><b>IoWMIQueryAllDataMultiple</b> determines which drivers support the specified WMI classes, and issues an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551650">IRP_MN_QUERY_ALL_DATA</a> request to every such driver. </p>
-
-<p>If no drivers implement any of the specified WMI classes, the routine returns STATUS_SUCCESS It also returns a value of zero in the memory location pointed to by the <i>InOutBufferSize</i> parameter.</p>
-
-<p>To query a single WMI class, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff550463">IoWMIQueryAllData</a>. </p>
+<p>To query a single WMI class, use <a href="..\wdm\nf-wdm-iowmiqueryalldata.md">IoWMIQueryAllData</a>. </p>
 
 ## -requirements
 <table>
@@ -168,10 +162,10 @@ NTSTATUS IoWMIQueryAllDataMultiple(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550453">IoWMIOpenBlock</a>
+<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550463">IoWMIQueryAllData</a>
+<a href="..\wdm\nf-wdm-iowmiqueryalldata.md">IoWMIQueryAllData</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551650">IRP_MN_QUERY_ALL_DATA</a>
@@ -179,4 +173,4 @@ NTSTATUS IoWMIQueryAllDataMultiple(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIQueryAllDataMultiple routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIQueryAllDataMultiple routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: kernel\ioinitializetimer.htm
 old-project: kernel
 ms.assetid: f2b0f74d-7417-443e-96ec-5101b1289f9d
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoInitializeTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>IoInitializeTimer</b> routine sets up a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff550381">IoTimer</a> routine associated with a given device object. </p>
+<p>The <b>IoInitializeTimer</b> routine sets up a driver-supplied <a href="..\wdm\nc-wdm-io-timer-routine.md">IoTimer</a> routine associated with a given device object. </p>
 
 
 ## -syntax
@@ -82,19 +82,11 @@ NTSTATUS IoInitializeTimer(
 ## -remarks
 <p><b>IoInitializeTimer</b> should be called only once per device object.</p>
 
-<p>A driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550381">IoTimer</a> routine is called once per second after the driver enables the timer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550373">IoStartTimer</a>. The driver can disable the timer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550377">IoStopTimer</a> and can reenable it again with <b>IoStartTimer</b>.</p>
+<p>A driver's <a href="..\wdm\nc-wdm-io-timer-routine.md">IoTimer</a> routine is called once per second after the driver enables the timer by calling <a href="..\ntifs\nf-ntifs-iostarttimer.md">IoStartTimer</a>. The driver can disable the timer by calling <a href="..\ntifs\nf-ntifs-iostoptimer.md">IoStopTimer</a> and can reenable it again with <b>IoStartTimer</b>.</p>
 
 <p>The driver's <i>IoTimer</i> routine is called at IRQL = DISPATCH_LEVEL and therefore must not contain pageable code.</p>
 
-<p>When the timer is running, the I/O manager calls the driver-supplied <i>IoTimer</i> routine once per second. Drivers whose time-out routines should be called at variable intervals or at intervals of finer granularity can set up a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542983">CustomTimerDpc</a> routine and use the <b>Ke<i>Xxx</i>Timer</b> routines.</p>
-
-<p><b>IoInitializeTimer</b> should be called only once per device object.</p>
-
-<p>A driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550381">IoTimer</a> routine is called once per second after the driver enables the timer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550373">IoStartTimer</a>. The driver can disable the timer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550377">IoStopTimer</a> and can reenable it again with <b>IoStartTimer</b>.</p>
-
-<p>The driver's <i>IoTimer</i> routine is called at IRQL = DISPATCH_LEVEL and therefore must not contain pageable code.</p>
-
-<p>When the timer is running, the I/O manager calls the driver-supplied <i>IoTimer</i> routine once per second. Drivers whose time-out routines should be called at variable intervals or at intervals of finer granularity can set up a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542983">CustomTimerDpc</a> routine and use the <b>Ke<i>Xxx</i>Timer</b> routines.</p>
+<p>When the timer is running, the I/O manager calls the driver-supplied <i>IoTimer</i> routine once per second. Drivers whose time-out routines should be called at variable intervals or at intervals of finer granularity can set up a <a href="kernel.customtimerdpc">CustomTimerDpc</a> routine and use the <b>Ke<i>Xxx</i>Timer</b> routines.</p>
 
 ## -requirements
 <table>
@@ -159,7 +151,7 @@ NTSTATUS IoInitializeTimer(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547796">IrqlIoPassive5</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_irqliopassive5">IrqlIoPassive5</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -167,21 +159,21 @@ NTSTATUS IoInitializeTimer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550381">IoTimer</a>
+<a href="..\wdm\nc-wdm-io-timer-routine.md">IoTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550373">IoStartTimer</a>
+<a href="..\ntifs\nf-ntifs-iostarttimer.md">IoStartTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550377">IoStopTimer</a>
+<a href="..\ntifs\nf-ntifs-iostoptimer.md">IoStopTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552168">KeInitializeTimer</a>
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553286">KeSetTimer</a>
+<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoInitializeTimer routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoInitializeTimer routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

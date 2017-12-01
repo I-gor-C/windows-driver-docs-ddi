@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FsRtlRemovePerFileContext</b> routine returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547352">FSRTL_PER_FILE_CONTEXT</a> object that is associated with a file. <b>FsRtlRemovePerFileContext</b> removes the <b>FSRTL_PER_FILE_CONTEXT</b> object from the list it occupies, along with the associated driver specific context information.</p>
+<p>The <b>FsRtlRemovePerFileContext</b> routine returns a pointer to a <a href="..\ntifs\ns-ntifs--fsrtl-per-file-context.md">FSRTL_PER_FILE_CONTEXT</a> object that is associated with a file. <b>FsRtlRemovePerFileContext</b> removes the <b>FSRTL_PER_FILE_CONTEXT</b> object from the list it occupies, along with the associated driver specific context information.</p>
 
 
 ## -syntax
@@ -76,24 +76,14 @@ PFSRTL_PER_FILE_CONTEXT FsRtlRemovePerFileContext(
 </dl>
 
 ## -returns
-<p>A pointer to the first <a href="https://msdn.microsoft.com/library/windows/hardware/ff547352">FSRTL_PER_FILE_CONTEXT</a> that matches the <i>OwnerId</i> and <i>InstanceId</i>, if specified. If no match is found or if the system does not support per file context information, this routine returns <b>NULL</b>.</p>
+<p>A pointer to the first <a href="..\ntifs\ns-ntifs--fsrtl-per-file-context.md">FSRTL_PER_FILE_CONTEXT</a> that matches the <i>OwnerId</i> and <i>InstanceId</i>, if specified. If no match is found or if the system does not support per file context information, this routine returns <b>NULL</b>.</p>
 
 ## -remarks
 <p><b>FsRtlRemovePerFileContext</b> removes only the first matching per-file context structure that it finds. If there are additional matching per-file contexts, the filter driver must call <b>FsRtlRemovePerFileContext</b> as many times as required to remove them all.</p>
 
-<p>The file system filter driver must free the memory that is used for this context information after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547352">FSRTL_PER_FILE_CONTEXT</a> has been removed.</p>
+<p>The file system filter driver must free the memory that is used for this context information after the <a href="..\ntifs\ns-ntifs--fsrtl-per-file-context.md">FSRTL_PER_FILE_CONTEXT</a> has been removed.</p>
 
-<p>Use this routine for your drivers to remove contexts only when the driver must discard per-file context information while the file is still open. Contexts are removed when a file is closed by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff547290">FsRtlTeardownPerFileContexts</a>.</p>
-
-<p>Do not use this routine inside your <i>FreeCallback</i> routine. The file system removes contexts from the list before that routine is called.</p>
-
-<p>Do not use this routine inside your IRP_CLOSE handler. You will not be notified when the stream is torn down.</p>
-
-<p><b>FsRtlRemovePerFileContext</b> removes only the first matching per-file context structure that it finds. If there are additional matching per-file contexts, the filter driver must call <b>FsRtlRemovePerFileContext</b> as many times as required to remove them all.</p>
-
-<p>The file system filter driver must free the memory that is used for this context information after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547352">FSRTL_PER_FILE_CONTEXT</a> has been removed.</p>
-
-<p>Use this routine for your drivers to remove contexts only when the driver must discard per-file context information while the file is still open. Contexts are removed when a file is closed by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff547290">FsRtlTeardownPerFileContexts</a>.</p>
+<p>Use this routine for your drivers to remove contexts only when the driver must discard per-file context information while the file is still open. Contexts are removed when a file is closed by using <a href="..\ntifs\nf-ntifs-fsrtlteardownperfilecontexts.md">FsRtlTeardownPerFileContexts</a>.</p>
 
 <p>Do not use this routine inside your <i>FreeCallback</i> routine. The file system removes contexts from the list before that routine is called.</p>
 
@@ -162,16 +152,16 @@ PFSRTL_PER_FILE_CONTEXT FsRtlRemovePerFileContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547352">FSRTL_PER_FILE_CONTEXT</a>
+<a href="..\ntifs\ns-ntifs--fsrtl-per-file-context.md">FSRTL_PER_FILE_CONTEXT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546051">FsRtlGetPerFileContextPointer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546184">FsRtlInsertPerFileContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtlinsertperfilecontext.md">FsRtlInsertPerFileContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546930">FsRtlLookupPerFileContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtllookupperfilecontext.md">FsRtlLookupPerFileContext</a>
 </dt>
 <dt>
 <a href="ifsk.tracking_per_file_context_in_a_legacy_file_system_filter_driver">Tracking Per-File Context in a Legacy File System Filter Driver</a>

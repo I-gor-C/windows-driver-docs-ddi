@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The LoginToTarget_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> method, which is used to login to a target.</p>
+<p>The LoginToTarget_IN structure holds the input data for the <a href="storage.logintotarget">LoginToTarget</a> method, which is used to login to a target.</p>
 
 
 ## -syntax
@@ -71,31 +71,31 @@ typedef struct _LoginToTarget_IN {
 ### -field <b>PortNumber</b>
 
 <dd>
-<p>The number of the port (initiator portal) that the HBA initiator uses to establish the logon session. This value must match the <b>Index</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561557">ISCSI_PortalInfo</a> structure.</p>
+<p>The number of the port (initiator portal) that the HBA initiator uses to establish the logon session. This value must match the <b>Index</b> member of the <a href="..\iscsimgt\ns-iscsimgt--iscsi-portalinfo.md">ISCSI_PortalInfo</a> structure.</p>
 </dd>
 
 ### -field <b>LoginOptions</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561541">ISCSI_LoginOptions</a> structure that specifies the characteristics of the logon session.</p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-loginoptions.md">ISCSI_LoginOptions</a> structure that specifies the characteristics of the logon session.</p>
 </dd>
 
 ### -field <b>SessionType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561598">LOGINSESSIONTYPE</a> enumeration value that specifies the type of logon session. </p>
+<p>A <a href="storage.loginsessiontype">LOGINSESSIONTYPE</a> enumeration value that specifies the type of logon session. </p>
 </dd>
 
 ### -field <b>SecurityFlags</b>
 
 <dd>
-<p>A bitwise OR of security flags that indicate the security requirements that are associated with the authentication key that is used to establish the logon session. For a list of the flags that you can combine to define this member's value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>.</p>
+<p>A bitwise OR of security flags that indicate the security requirements that are associated with the authentication key that is used to establish the logon session. For a list of the flags that you can combine to define this member's value, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.</p>
 </dd>
 
 ### -field <b>TargetPortal</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561574">ISCSI_TargetPortal</a> structure that indicates which target portal to use to make the connection. </p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a> structure that indicates which target portal to use to make the connection. </p>
 </dd>
 
 ### -field <b>UsernameSize</b>
@@ -149,7 +149,7 @@ typedef struct _LoginToTarget_IN {
 ### -field <b>Mappings</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561572">ISCSI_TargetMapping</a> structure that maps a collection of logical unit numbers (LUNs) that are locally defined to a group of 64-bit iSCSI LUNs. If the initiator service does not specify mappings, the HBA's miniport driver can use any mappings for the LUNs. The miniport driver should report unmapped LUNs to the port driver to be enumerated.</p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-targetmapping.md">ISCSI_TargetMapping</a> structure that maps a collection of logical unit numbers (LUNs) that are locally defined to a group of 64-bit iSCSI LUNs. If the initiator service does not specify mappings, the HBA's miniport driver can use any mappings for the LUNs. The miniport driver should report unmapped LUNs to the port driver to be enumerated.</p>
 </dd>
 
 ### -field <b>Key</b>
@@ -179,31 +179,31 @@ typedef struct _LoginToTarget_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561541">ISCSI_LoginOptions</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-loginoptions.md">ISCSI_LoginOptions</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561557">ISCSI_PortalInfo</a>
+<a href="..\iscsimgt\ns-iscsimgt--iscsi-portalinfo.md">ISCSI_PortalInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561572">ISCSI_TargetMapping</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-targetmapping.md">ISCSI_TargetMapping</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561574">ISCSI_TargetPortal</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561598">LOGINSESSIONTYPE</a>
+<a href="storage.loginsessiontype">LOGINSESSIONTYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561601">LoginToTarget_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--logintotarget-out.md">LoginToTarget_OUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
+<a href="storage.msiscsi_operations_wmi_class">MSiSCSI_Operations WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
+<a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>
 </dt>
 </dl>
 <p> </p>

@@ -45,7 +45,7 @@ req.iface:
 ## -ioctlparameters
 
 ### -input-buffer
-<p>The mount point manager places a variable-length structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562256">MOUNTDEV_NAME</a>, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The mount manager inserts the persistent name just assigned at the address pointed to by the <i>Name</i> member of this structure. </p>
+<p>The mount point manager places a variable-length structure of type <a href="..\mountmgr\ns-mountmgr--mountdev-name.md">MOUNTDEV_NAME</a>, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The mount manager inserts the persistent name just assigned at the address pointed to by the <i>Name</i> member of this structure. </p>
 
 ### -input-buffer-length
 <p><b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the input buffer, which must be greater than or equal to <b>sizeof</b>(MOUNTDEV_NAME).</p>
@@ -108,7 +108,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562256">MOUNTDEV_NAME</a>
+<a href="..\mountmgr\ns-mountmgr--mountdev-name.md">MOUNTDEV_NAME</a>
 </dt>
 </dl>
 <p> </p>

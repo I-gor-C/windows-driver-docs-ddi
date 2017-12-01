@@ -7,7 +7,7 @@ old-location: smartcrd\pts_data.htm
 old-project: smartcrd
 ms.assetid: aa542c6f-24f9-4ef4-a425-93905cca976a
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: PTS_DATA, PTS_DATA, *PPTS_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

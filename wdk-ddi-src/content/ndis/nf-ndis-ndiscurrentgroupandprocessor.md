@@ -7,7 +7,7 @@ old-location: netvista\ndiscurrentgroupandprocessor.htm
 old-project: netvista
 ms.assetid: 056f7f4b-152b-426a-b59e-0f6663b386a8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCurrentGroupAndProcessor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,33 +65,6 @@ PROCESSOR_NUMBER NdisCurrentGroupAndProcessor(void);
      processor number and group number of the current processor.</p>
 
 ## -remarks
-<p>NDIS drivers call the 
-    <b>NdisCurrentGroupAndProcessor</b> function to obtain the group-relative processor number and group
-    number of the current processor.</p>
-
-<p>The PROCESSOR_NUMBER structure contains a 
-    <b>Group</b> member of type USHORT and a 
-    <b>Number</b> member of type UCHAR for group and processor numbers, respectively. The group and processor
-    numbers are zero-based values.</p>
-
-<p>NDIS drivers call the 
-    <b>NdisCurrentGroupAndProcessor</b> function to obtain the group-relative processor number and group
-    number of the current processor.</p>
-
-<p>The PROCESSOR_NUMBER structure contains a 
-    <b>Group</b> member of type USHORT and a 
-    <b>Number</b> member of type UCHAR for group and processor numbers, respectively. The group and processor
-    numbers are zero-based values.</p>
-
-<p>NDIS drivers call the 
-    <b>NdisCurrentGroupAndProcessor</b> function to obtain the group-relative processor number and group
-    number of the current processor.</p>
-
-<p>The PROCESSOR_NUMBER structure contains a 
-    <b>Group</b> member of type USHORT and a 
-    <b>Number</b> member of type UCHAR for group and processor numbers, respectively. The group and processor
-    numbers are zero-based values.</p>
-
 <p>NDIS drivers call the 
     <b>NdisCurrentGroupAndProcessor</b> function to obtain the group-relative processor number and group
     number of the current processor.</p>

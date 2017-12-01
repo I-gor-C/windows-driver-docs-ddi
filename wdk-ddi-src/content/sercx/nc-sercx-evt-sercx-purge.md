@@ -76,11 +76,9 @@ NTSTATUS EvtSerCxPurge(
 <p>The <i>EvtSerCxPurge</i> function returns STATUS_SUCCESS if the call is successful. Otherwise, it returns an appropriate error status code.</p>
 
 ## -remarks
-<p>The serial controller driver implements this callback function. SerCx calls this function when a client (application or peripheral driver) sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff546655">IOCTL_SERIAL_PURGE</a> control request that requires hardware buffers managed by the serial controller to be purged.</p>
+<p>The serial controller driver implements this callback function. SerCx calls this function when a client (application or peripheral driver) sends an <a href="..\ntddser\ni-ntddser-ioctl-serial-purge.md">IOCTL_SERIAL_PURGE</a> control request that requires hardware buffers managed by the serial controller to be purged.</p>
 
 <p>SerCx performs the purge operations that are designated by the flags listed in the following table.</p>
-
-<p> </p>
 
 <p>The <i>EvtSerCxPurge</i> function will never receive a purge request that contains any of the flags in this table. The SERIAL_PURGE_<i>XXX</i> flags are defined in the Ntddser.h header file.</p>
 
@@ -88,29 +86,7 @@ NTSTATUS EvtSerCxPurge(
 
 <p>If the <b>IOCTL_SERIAL_PURGE</b> control request requires pending read or write requests to be canceled, SerCx cancels these requests before it calls the <i>EvtSerCxPurge</i> function.</p>
 
-<p>To register an <i>EvtSerCxPurge</i> callback function, the controller driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406711">SerCxInitialize</a> method during the <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback.</p>
-
-<p>The function type for this callback is declared in Sercx.h, as follows.</p>
-
-<p>To define an <i>EvtSerCxPurge</i> callback function that is named <code>MyEvtSerCxPurge</code>, you must first provide a function declaration that <a href="NULL">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.</p>
-
-<p>Then, implement your callback function as follows.</p>
-
-<p>For more information about SDV requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions Using Function Role Types for KMDF Drivers</a>.</p>
-
-<p>The serial controller driver implements this callback function. SerCx calls this function when a client (application or peripheral driver) sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff546655">IOCTL_SERIAL_PURGE</a> control request that requires hardware buffers managed by the serial controller to be purged.</p>
-
-<p>SerCx performs the purge operations that are designated by the flags listed in the following table.</p>
-
-<p> </p>
-
-<p>The <i>EvtSerCxPurge</i> function will never receive a purge request that contains any of the flags in this table. The SERIAL_PURGE_<i>XXX</i> flags are defined in the Ntddser.h header file.</p>
-
-<p>Currently, no SERIAL_PURGE_<i>XXX</i> flags are defined to designate purge operations that are performed by the serial controller driver, and the serial controller driver should perform no purge operations in response to a <i>EvtSerCxPurge</i> call.</p>
-
-<p>If the <b>IOCTL_SERIAL_PURGE</b> control request requires pending read or write requests to be canceled, SerCx cancels these requests before it calls the <i>EvtSerCxPurge</i> function.</p>
-
-<p>To register an <i>EvtSerCxPurge</i> callback function, the controller driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406711">SerCxInitialize</a> method during the <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback.</p>
+<p>To register an <i>EvtSerCxPurge</i> callback function, the controller driver calls the <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method during the <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback.</p>
 
 <p>The function type for this callback is declared in Sercx.h, as follows.</p>
 
@@ -166,10 +142,10 @@ NTSTATUS EvtSerCxPurge(
 <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546655">IOCTL_SERIAL_PURGE</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-purge.md">IOCTL_SERIAL_PURGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406711">SerCxInitialize</a>
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 </dt>
 </dl>
 <p> </p>

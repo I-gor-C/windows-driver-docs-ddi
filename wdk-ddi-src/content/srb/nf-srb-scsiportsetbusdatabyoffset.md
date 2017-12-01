@@ -70,13 +70,13 @@ ULONG ScsiPortSetBusDataByOffset(
 ### -param <i>BusDataType</i> [in]
 
 <dd>
-<p>Contains a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff540700">BUS_DATA_TYPE</a> that specifies the type of bus data to be set. Currently, its value can be <b>PCIConfiguration</b>. However, additional types of standardized, dynamically configurable buses will be supported in future. The upper bound on the bus types supported is always <b>MaximumBusDataType</b>. </p>
+<p>Contains a value of type <a href="..\ntddk\ne-ntddk--bus-data-type.md">BUS_DATA_TYPE</a> that specifies the type of bus data to be set. Currently, its value can be <b>PCIConfiguration</b>. However, additional types of standardized, dynamically configurable buses will be supported in future. The upper bound on the bus types supported is always <b>MaximumBusDataType</b>. </p>
 </dd>
 
 ### -param <i>SystemIoBusNumber</i> [in]
 
 <dd>
-<p>Specifies the system-assigned number of the I/O bus on which the HBA is connected. The miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a> routine obtains this value from the input PORT_CONFIGURATION_INFORMATION <b>SystemIoBusNumber</b> member. </p>
+<p>Specifies the system-assigned number of the I/O bus on which the HBA is connected. The miniport driver's <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> routine obtains this value from the input PORT_CONFIGURATION_INFORMATION <b>SystemIoBusNumber</b> member. </p>
 </dd>
 
 ### -param <i>SlotNumber</i> [in]
@@ -110,10 +110,6 @@ ULONG ScsiPortSetBusDataByOffset(
 <p><b>ScsiPortSetBusDataByOffset</b> returns the number of bytes of data successfully set for the given <i>SlotNumber</i>. If the given <i>BusDataType</i> is not valid for the current platform or if the supplied information is invalid, <b>ScsiPortSetBusDataByOffset</b> returns zero. </p>
 
 ## -remarks
-<p>Miniport drivers of HBAs on a PCI bus seldom call <b>ScsiPortSetBusDataByOffset</b> unless unusual circumstances or the nature of a particular driver's HBA requires such a call. For example, a miniport driver might call <b>ScsiPortSetBusDataByOffset</b> to clear a bit in the PCI status register if its HBA signals a target abort during initialization or to set device-specific configuration data for the HBA.</p>
-
-<p><b>ScsiPortSetBusDataByOffset</b> can be called only from the miniport driver's <i>HwScsiFindAdapter</i> routine or from HwScsiAdapterControl when the control type is <b>ScsiSetRunningConfig</b>. </p>
-
 <p>Miniport drivers of HBAs on a PCI bus seldom call <b>ScsiPortSetBusDataByOffset</b> unless unusual circumstances or the nature of a particular driver's HBA requires such a call. For example, a miniport driver might call <b>ScsiPortSetBusDataByOffset</b> to clear a bit in the PCI status register if its HBA signals a target abort during initialization or to set device-specific configuration data for the HBA.</p>
 
 <p><b>ScsiPortSetBusDataByOffset</b> can be called only from the miniport driver's <i>HwScsiFindAdapter</i> routine or from HwScsiAdapterControl when the control type is <b>ScsiSetRunningConfig</b>. </p>
@@ -158,19 +154,19 @@ ULONG ScsiPortSetBusDataByOffset(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546633">HalSetBusDataByOffset</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
+<a href="storage.hwscsifindadapter">HwScsiFindAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537455">PCI_COMMON_CONFIG</a>
+<a href="..\wdm\ns-wdm--pci-common-config.md">PCI_COMMON_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558790">PCI_SLOT_NUMBER</a>
+<a href="..\wdm\ns-wdm--pci-slot-number.md">PCI_SLOT_NUMBER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563900">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+<a href="storage.port_configuration_information__scsi_">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564624">ScsiPortGetBusData</a>
+<a href="..\srb\nf-srb-scsiportgetbusdata.md">ScsiPortGetBusData</a>
 </dt>
 </dl>
 <p> </p>

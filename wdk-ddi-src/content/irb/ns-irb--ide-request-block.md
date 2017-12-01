@@ -441,7 +441,7 @@ typedef struct _IDE_REQUEST_BLOCK {
 ### -field <b>IdeTaskFile</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559144">IDE_TASK_FILE</a> that holds the IDE task file for the indicated controller. This member is defined whenever the result of a bitwise AND between the <b>Function</b> member and IRB_FUNCTION_ATA_COMMAND is nonzero.</p>
+<p>Contains a structure of type <a href="..\irb\ns-irb--ide-task-file.md">IDE_TASK_FILE</a> that holds the IDE task file for the indicated controller. This member is defined whenever the result of a bitwise AND between the <b>Function</b> member and IRB_FUNCTION_ATA_COMMAND is nonzero.</p>
 </dd>
 
 ### -field <b>Cdb</b>
@@ -453,7 +453,7 @@ typedef struct _IDE_REQUEST_BLOCK {
 ### -field <b>PowerChange</b>
 
 <dd>
-<p>Indicates an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff563909">POWER_CHANGE_INFO</a> that defines a power state transition. This member is defined whenever <b>Function</b> is equal to IRB_FUNCTION_POWER_CHANGE.</p>
+<p>Indicates an enumeration value of type <a href="storage.power_change_info">POWER_CHANGE_INFO</a> that defines a power state transition. This member is defined whenever <b>Function</b> is equal to IRB_FUNCTION_POWER_CHANGE.</p>
 </dd>
 
 ### -field <b>AsUChar</b>
@@ -464,7 +464,7 @@ typedef struct _IDE_REQUEST_BLOCK {
 </dl>
 
 ## -remarks
-<p>The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> but with characteristics more suitable for managing devices on an IDE bus.</p>
+<p>The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a> but with characteristics more suitable for managing devices on an IDE bus.</p>
 
 ## -requirements
 <table>
@@ -483,16 +483,16 @@ typedef struct _IDE_REQUEST_BLOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550155">AtaportDeviceBusy</a>
+<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaportDeviceBusy</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559144">IDE_TASK_FILE</a>
+<a href="..\irb\ns-irb--ide-task-file.md">IDE_TASK_FILE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563909">POWER_CHANGE_INFO</a>
+<a href="storage.power_change_info">POWER_CHANGE_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

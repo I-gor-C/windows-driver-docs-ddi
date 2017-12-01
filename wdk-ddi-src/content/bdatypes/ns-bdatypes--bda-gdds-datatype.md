@@ -7,7 +7,7 @@ old-location: stream\bda_gdds_datatype.htm
 old-project: stream
 ms.assetid: D2E6A110-EC0F-4753-BAF1-7A9F84ECDD35
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_GDDS_DATATYPE, BDA_GDDS_DATATYPE, *P_BDA_GDDS_DATATYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices

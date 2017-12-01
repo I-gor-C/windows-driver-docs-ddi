@@ -7,7 +7,7 @@ old-location: kernel\getvirtualfunctiondata.htm
 old-project: kernel
 ms.assetid: 2DE7417D-C616-4D1F-835D-29F477410F1E
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ ULONG GetVirtualFunctionData(
 ### -param <i>Context</i> [in, out]
 
 <dd>
-<p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406642">PCI_VIRTUALIZATION_INTERFACE</a> structure for the interface.</p>
+<p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--pci-virtualization-interface.md">PCI_VIRTUALIZATION_INTERFACE</a> structure for the interface.</p>
 </dd>
 
 ### -param <i>VirtualFunction</i> [in]
@@ -98,13 +98,9 @@ ULONG GetVirtualFunctionData(
       <i>GetVirtualFunctionData</i> routine returns the length, in bytes, of the PCIe configuration data that was read after a successful read operation. If the read operation is unsuccessful, the routine returns zero. </p>
 
 ## -remarks
-<p>The <i>GetVirtualFunctionData</i> routine resembles the <a href="https://msdn.microsoft.com/library/windows/hardware/gg604850">GetBusData</a> routine, except that it reads PCIe configuration data from a VF instead of from a device's physical function (PF).</p>
+<p>The <i>GetVirtualFunctionData</i> routine resembles the <a href="..\wdm\nc-wdm-get-set-device-data.md">GetBusData</a> routine, except that it reads PCIe configuration data from a VF instead of from a device's physical function (PF).</p>
 
-<p>The <i>GetVirtualFunctionData</i> routine is provided by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a> interface. The <a href="https://msdn.microsoft.com/library/windows/hardware/gg604850">GetBusData</a> routine is provided by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546561">GUID_BUS_INTERFACE_STANDARD</a> interface.</p>
-
-<p>The <i>GetVirtualFunctionData</i> routine resembles the <a href="https://msdn.microsoft.com/library/windows/hardware/gg604850">GetBusData</a> routine, except that it reads PCIe configuration data from a VF instead of from a device's physical function (PF).</p>
-
-<p>The <i>GetVirtualFunctionData</i> routine is provided by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a> interface. The <a href="https://msdn.microsoft.com/library/windows/hardware/gg604850">GetBusData</a> routine is provided by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546561">GUID_BUS_INTERFACE_STANDARD</a> interface.</p>
+<p>The <i>GetVirtualFunctionData</i> routine is provided by the <a href="kernel.guid_pci_virtualization_interface">GUID_PCI_VIRTUALIZATION_INTERFACE</a> interface. The <a href="..\wdm\nc-wdm-get-set-device-data.md">GetBusData</a> routine is provided by the <a href="kernel.guid_bus_interface_standard">GUID_BUS_INTERFACE_STANDARD</a> interface.</p>
 
 ## -requirements
 <table>
@@ -150,18 +146,18 @@ ULONG GetVirtualFunctionData(
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg604850">GetBusData</a>
+<a href="..\wdm\nc-wdm-get-set-device-data.md">GetBusData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546561">GUID_BUS_INTERFACE_STANDARD</a>
+<a href="kernel.guid_bus_interface_standard">GUID_BUS_INTERFACE_STANDARD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a>
+<a href="kernel.guid_pci_virtualization_interface">GUID_PCI_VIRTUALIZATION_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406642">PCI_VIRTUALIZATION_INTERFACE</a>
+<a href="..\wdm\ns-wdm--pci-virtualization-interface.md">PCI_VIRTUALIZATION_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20GET_VIRTUAL_DEVICE_DATA routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20GET_VIRTUAL_DEVICE_DATA routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

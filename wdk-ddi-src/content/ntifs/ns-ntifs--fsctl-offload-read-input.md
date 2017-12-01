@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FSCTL_OFFLOAD_READ_INPUT</b> structure contains the input for the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a> control code request.</p>
+<p>The <b>FSCTL_OFFLOAD_READ_INPUT</b> structure contains the input for the <a href="ifsk.fsctl_offload_read">FSCTL_OFFLOAD_READ</a> control code request.</p>
 
 
 ## -syntax
@@ -124,10 +124,10 @@ typedef struct _FSCTL_OFFLOAD_READ_INPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a>
+<a href="ifsk.fsctl_offload_read">FSCTL_OFFLOAD_READ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451109">FSCTL_OFFLOAD_READ_OUTPUT</a>
+<a href="..\ntifs\ns-ntifs--fsctl-offload-read-output.md">FSCTL_OFFLOAD_READ_OUTPUT</a>
 </dt>
 </dl>
 <p> </p>

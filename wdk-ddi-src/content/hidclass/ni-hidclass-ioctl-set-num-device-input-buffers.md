@@ -119,7 +119,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539675">HidD_GetNumInputBuffers</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getnuminputbuffers.md">HidD_GetNumInputBuffers</a>
 </dt>
 </dl>
 <p> </p>

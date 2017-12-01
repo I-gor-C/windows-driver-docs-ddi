@@ -7,7 +7,7 @@ old-location: wdf\iwdfinterrupt.htm
 old-project: wdf
 ms.assetid: 729A2361-6FE1-4096-AC8B-3D042326EE5C
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,57 +45,57 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFInterrupt</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>. <b>IWDFInterrupt</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFInterrupt</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>. <b>IWDFInterrupt</b> also has these types of members:</p>
 
 <p>The <b>IWDFInterrupt</b> interface has these methods.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451289">AcquireInterruptLock</a> method begins a code sequence that executes while holding an interrupt object's lock.</p>
+<p>The <a href="wdf.iwdfinterrupt_acquireinterruptlock">AcquireInterruptLock</a> method begins a code sequence that executes while holding an interrupt object's lock.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450971">Disable</a> method disables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-disable.md">OnInterruptDisable</a> callback function.</p>
+<p>The <a href="wdf.iwdfinterrupt_disable">Disable</a> method disables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-disable.md">OnInterruptDisable</a> callback function.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451004">Enable</a> method enables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-enable.md">OnInterruptEnable</a> callback function.</p>
+<p>The <a href="wdf.iwdfinterrupt_enable">Enable</a> method enables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-enable.md">OnInterruptEnable</a> callback function.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451305">GetDevice</a> method returns the framework device object interface for this interrupt object.</p>
+<p>The <a href="wdf.iwdfinterrupt_getdevice">GetDevice</a> method returns the framework device object interface for this interrupt object.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451309">GetInfo</a> method retrieves information about a specified interrupt.</p>
+<p>The <a href="wdf.iwdfinterrupt_getinfo">GetInfo</a> method retrieves information about a specified interrupt.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451314">QueueWorkItemForIsr</a> method queues a work item to process interrupt-related work outside of the interrupt service routine.</p>
+<p>The <a href="wdf.iwdfinterrupt_queueworkitemforisr">QueueWorkItemForIsr</a> method queues a work item to process interrupt-related work outside of the interrupt service routine.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451319">ReleaseInterruptLock</a> method ends a code sequence that executes while holding an interrupt object's lock.</p>
+<p>The <a href="wdf.iwdfinterrupt_releaseinterruptlock">ReleaseInterruptLock</a> method ends a code sequence that executes while holding an interrupt object's lock.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451324">SetExtendedPolicy</a> method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
+<p>The <a href="wdf.iwdfinterrupt_setextendedpolicy">SetExtendedPolicy</a> method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
   </p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451328">SetPolicy</a> method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.</p>
+<p>The <a href="wdf.iwdfinterrupt_setpolicy">SetPolicy</a> method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451332">TryToAcquireInterruptLock</a> method acquires the interrupt lock if no other thread has already acquired it.</p>
+<p>The <a href="wdf.iwdfinterrupt_trytoacquireinterruptlock">TryToAcquireInterruptLock</a> method acquires the interrupt lock if no other thread has already acquired it.</p>
 
 <p> </p>
 
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFInterrupt</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>. <b>IWDFInterrupt</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFInterrupt</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>. <b>IWDFInterrupt</b> also has these types of members:</p>
 
 <p>The <b>IWDFInterrupt</b> interface has these methods.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451289">AcquireInterruptLock</a> method begins a code sequence that executes while holding an interrupt object's lock.</p>
+<p>The <a href="wdf.iwdfinterrupt_acquireinterruptlock">AcquireInterruptLock</a> method begins a code sequence that executes while holding an interrupt object's lock.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450971">Disable</a> method disables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-disable.md">OnInterruptDisable</a> callback function.</p>
+<p>The <a href="wdf.iwdfinterrupt_disable">Disable</a> method disables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-disable.md">OnInterruptDisable</a> callback function.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451004">Enable</a> method enables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-enable.md">OnInterruptEnable</a> callback function.</p>
+<p>The <a href="wdf.iwdfinterrupt_enable">Enable</a> method enables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-enable.md">OnInterruptEnable</a> callback function.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451305">GetDevice</a> method returns the framework device object interface for this interrupt object.</p>
+<p>The <a href="wdf.iwdfinterrupt_getdevice">GetDevice</a> method returns the framework device object interface for this interrupt object.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451309">GetInfo</a> method retrieves information about a specified interrupt.</p>
+<p>The <a href="wdf.iwdfinterrupt_getinfo">GetInfo</a> method retrieves information about a specified interrupt.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451314">QueueWorkItemForIsr</a> method queues a work item to process interrupt-related work outside of the interrupt service routine.</p>
+<p>The <a href="wdf.iwdfinterrupt_queueworkitemforisr">QueueWorkItemForIsr</a> method queues a work item to process interrupt-related work outside of the interrupt service routine.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451319">ReleaseInterruptLock</a> method ends a code sequence that executes while holding an interrupt object's lock.</p>
+<p>The <a href="wdf.iwdfinterrupt_releaseinterruptlock">ReleaseInterruptLock</a> method ends a code sequence that executes while holding an interrupt object's lock.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451324">SetExtendedPolicy</a> method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
+<p>The <a href="wdf.iwdfinterrupt_setextendedpolicy">SetExtendedPolicy</a> method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
   </p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451328">SetPolicy</a> method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.</p>
+<p>The <a href="wdf.iwdfinterrupt_setpolicy">SetPolicy</a> method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451332">TryToAcquireInterruptLock</a> method acquires the interrupt lock if no other thread has already acquired it.</p>
+<p>The <a href="wdf.iwdfinterrupt_trytoacquireinterruptlock">TryToAcquireInterruptLock</a> method acquires the interrupt lock if no other thread has already acquired it.</p>
 
 <p> </p>
 
@@ -107,105 +107,105 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451289">AcquireInterruptLock</a>
+<a href="wdf.iwdfinterrupt_acquireinterruptlock">AcquireInterruptLock</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451289">AcquireInterruptLock</a> method begins a code sequence that executes while holding an interrupt object's lock.</p>
+<p>The <a href="wdf.iwdfinterrupt_acquireinterruptlock">AcquireInterruptLock</a> method begins a code sequence that executes while holding an interrupt object's lock.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450971">Disable</a>
+<a href="wdf.iwdfinterrupt_disable">Disable</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450971">Disable</a> method disables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-disable.md">OnInterruptDisable</a> callback function.</p>
+<p>The <a href="wdf.iwdfinterrupt_disable">Disable</a> method disables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-disable.md">OnInterruptDisable</a> callback function.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451004">Enable</a>
+<a href="wdf.iwdfinterrupt_enable">Enable</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451004">Enable</a> method enables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-enable.md">OnInterruptEnable</a> callback function.</p>
+<p>The <a href="wdf.iwdfinterrupt_enable">Enable</a> method enables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-enable.md">OnInterruptEnable</a> callback function.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451305">GetDevice</a>
+<a href="wdf.iwdfinterrupt_getdevice">GetDevice</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451305">GetDevice</a> method returns the framework device object interface for this interrupt object.</p>
+<p>The <a href="wdf.iwdfinterrupt_getdevice">GetDevice</a> method returns the framework device object interface for this interrupt object.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451309">GetInfo</a>
+<a href="wdf.iwdfinterrupt_getinfo">GetInfo</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451309">GetInfo</a> method retrieves information about a specified interrupt.</p>
+<p>The <a href="wdf.iwdfinterrupt_getinfo">GetInfo</a> method retrieves information about a specified interrupt.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451314">QueueWorkItemForIsr</a>
+<a href="wdf.iwdfinterrupt_queueworkitemforisr">QueueWorkItemForIsr</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451314">QueueWorkItemForIsr</a> method queues a work item to process interrupt-related work outside of the interrupt service routine.</p>
+<p>The <a href="wdf.iwdfinterrupt_queueworkitemforisr">QueueWorkItemForIsr</a> method queues a work item to process interrupt-related work outside of the interrupt service routine.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451319">ReleaseInterruptLock</a>
+<a href="wdf.iwdfinterrupt_releaseinterruptlock">ReleaseInterruptLock</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451319">ReleaseInterruptLock</a> method ends a code sequence that executes while holding an interrupt object's lock.</p>
+<p>The <a href="wdf.iwdfinterrupt_releaseinterruptlock">ReleaseInterruptLock</a> method ends a code sequence that executes while holding an interrupt object's lock.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451324">SetExtendedPolicy</a>
+<a href="wdf.iwdfinterrupt_setextendedpolicy">SetExtendedPolicy</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451324">SetExtendedPolicy</a> method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
+<p>The <a href="wdf.iwdfinterrupt_setextendedpolicy">SetExtendedPolicy</a> method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
   </p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451328">SetPolicy</a>
+<a href="wdf.iwdfinterrupt_setpolicy">SetPolicy</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451328">SetPolicy</a> method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.</p>
+<p>The <a href="wdf.iwdfinterrupt_setpolicy">SetPolicy</a> method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451332">TryToAcquireInterruptLock</a>
+<a href="wdf.iwdfinterrupt_trytoacquireinterruptlock">TryToAcquireInterruptLock</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451332">TryToAcquireInterruptLock</a> method acquires the interrupt lock if no other thread has already acquired it.</p>
+<p>The <a href="wdf.iwdfinterrupt_trytoacquireinterruptlock">TryToAcquireInterruptLock</a> method acquires the interrupt lock if no other thread has already acquired it.</p>
 </td>
 </tr>
-</table><p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451289">AcquireInterruptLock</a> method begins a code sequence that executes while holding an interrupt object's lock.</p>
+</table><p>The <a href="wdf.iwdfinterrupt_acquireinterruptlock">AcquireInterruptLock</a> method begins a code sequence that executes while holding an interrupt object's lock.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450971">Disable</a> method disables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-disable.md">OnInterruptDisable</a> callback function.</p>
+<p>The <a href="wdf.iwdfinterrupt_disable">Disable</a> method disables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-disable.md">OnInterruptDisable</a> callback function.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451004">Enable</a> method enables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-enable.md">OnInterruptEnable</a> callback function.</p>
+<p>The <a href="wdf.iwdfinterrupt_enable">Enable</a> method enables a specified device interrupt by calling the driver's <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-enable.md">OnInterruptEnable</a> callback function.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451305">GetDevice</a> method returns the framework device object interface for this interrupt object.</p>
+<p>The <a href="wdf.iwdfinterrupt_getdevice">GetDevice</a> method returns the framework device object interface for this interrupt object.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451309">GetInfo</a> method retrieves information about a specified interrupt.</p>
+<p>The <a href="wdf.iwdfinterrupt_getinfo">GetInfo</a> method retrieves information about a specified interrupt.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451314">QueueWorkItemForIsr</a> method queues a work item to process interrupt-related work outside of the interrupt service routine.</p>
+<p>The <a href="wdf.iwdfinterrupt_queueworkitemforisr">QueueWorkItemForIsr</a> method queues a work item to process interrupt-related work outside of the interrupt service routine.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451319">ReleaseInterruptLock</a> method ends a code sequence that executes while holding an interrupt object's lock.</p>
+<p>The <a href="wdf.iwdfinterrupt_releaseinterruptlock">ReleaseInterruptLock</a> method ends a code sequence that executes while holding an interrupt object's lock.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451324">SetExtendedPolicy</a> method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
+<p>The <a href="wdf.iwdfinterrupt_setextendedpolicy">SetExtendedPolicy</a> method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
   </p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451328">SetPolicy</a> method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.</p>
+<p>The <a href="wdf.iwdfinterrupt_setpolicy">SetPolicy</a> method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451332">TryToAcquireInterruptLock</a> method acquires the interrupt lock if no other thread has already acquired it.</p>
+<p>The <a href="wdf.iwdfinterrupt_trytoacquireinterruptlock">TryToAcquireInterruptLock</a> method acquires the interrupt lock if no other thread has already acquired it.</p>
 
 <p> </p>
 
@@ -265,9 +265,9 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFInterrupt interface%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFInterrupt interface%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -59,19 +59,19 @@ NTSTATUS DxgkInitializeDisplayOnlyDriver(
 ### -param <i>DriverObject</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a> structure. The KMDOD previously obtained this pointer in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function.</p>
+<p>A pointer to a <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a> structure. The KMDOD previously obtained this pointer in its <a href="display.driverentry_of_display_miniport_driver">DriverEntry</a> function.</p>
 </dd>
 
 ### -param <i>RegistryPath</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that supplies the path to the KMDOD's service registry key.  The KMDOD previously obtained this pointer in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function.</p>
+<p>A pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that supplies the path to the KMDOD's service registry key.  The KMDOD previously obtained this pointer in its <a href="display.driverentry_of_display_miniport_driver">DriverEntry</a> function.</p>
 </dd>
 
 ### -param <i>KmdDodInitializationData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451571">KMDDOD_INITIALIZATION_DATA</a> structure that supplies the DirectX graphics kernel subsystem with pointers to functions implemented by the KMDOD.</p>
+<p>A pointer to a <a href="..\dispmprt\ns-dispmprt--kmddod-initialization-data.md">KMDDOD_INITIALIZATION_DATA</a> structure that supplies the DirectX graphics kernel subsystem with pointers to functions implemented by the KMDOD.</p>
 </dd>
 </dl>
 
@@ -80,8 +80,6 @@ NTSTATUS DxgkInitializeDisplayOnlyDriver(
       Returns STATUS_SUCCESS if it succeeds; otherwise, it returns one of the error codes defined in Ntstatus.h.</p>
 
 ## -remarks
-<p>All parameters that are supplied by the KMDOD can be in paged memory.</p>
-
 <p>All parameters that are supplied by the KMDOD can be in paged memory.</p>
 
 ## -requirements
@@ -145,19 +143,19 @@ NTSTATUS DxgkInitializeDisplayOnlyDriver(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556157">DriverEntry of Display Miniport Driver</a>
+<a href="display.driverentry_of_display_miniport_driver">DriverEntry of Display Miniport Driver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451571">KMDDOD_INITIALIZATION_DATA</a>
+<a href="..\dispmprt\ns-dispmprt--kmddod-initialization-data.md">KMDDOD_INITIALIZATION_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>
+<a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560824">DxgkInitialize</a>
+<a href="..\dispmprt\nf-dispmprt-dxgkinitialize.md">DxgkInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>

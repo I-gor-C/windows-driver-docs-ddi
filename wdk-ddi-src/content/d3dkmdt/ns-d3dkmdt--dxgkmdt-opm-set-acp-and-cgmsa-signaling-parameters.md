@@ -66,7 +66,7 @@ typedef struct _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
 ### -field <b>ulNewTVProtectionStandard</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560894">DXGKMDT_OPM_PROTECTION_STANDARD</a>-typed value that indicates the type of television signal to set ACP and CGMS-A signaling for on the protected output. </p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--dxgkmdt-opm-protection-standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>-typed value that indicates the type of television signal to set ACP and CGMS-A signaling for on the protected output. </p>
 </dd>
 
 ### -field <b>ulAspectRatioChangeMask1</b>
@@ -152,7 +152,7 @@ typedef struct _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560894">DXGKMDT_OPM_PROTECTION_STANDARD</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--dxgkmdt-opm-protection-standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>
 </dt>
 </dl>
 <p> </p>

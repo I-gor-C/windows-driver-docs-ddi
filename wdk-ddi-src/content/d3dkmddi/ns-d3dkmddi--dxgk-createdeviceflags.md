@@ -125,7 +125,7 @@ typedef struct _DXGK_CREATEDEVICEFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557570">DXGKARG_CREATEDEVICE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createdevice.md">DXGKARG_CREATEDEVICE</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreatedevice">DxgkDdiCreateDevice</a>

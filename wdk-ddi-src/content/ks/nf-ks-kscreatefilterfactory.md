@@ -7,7 +7,7 @@ old-location: stream\kscreatefilterfactory.htm
 old-project: stream
 ms.assetid: ebfdae87-febc-4383-93f4-5d613df273a9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsCreateFilterFactory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,13 +64,13 @@ NTSTATUS KsCreateFilterFactory(
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure for which to add a filter factory. </p>
+<p>A pointer to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure for which to add a filter factory. </p>
 </dd>
 
 ### -param <i>Descriptor</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562553">KSFILTER_DESCRIPTOR</a> that describes the characteristics of individual filters that this factory can create.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksfilter-descriptor.md">KSFILTER_DESCRIPTOR</a> that describes the characteristics of individual filters that this factory can create.</p>
 </dd>
 
 ### -param <i>RefString</i> [in, optional]
@@ -169,7 +169,7 @@ NTSTATUS KsCreateFilterFactory(
 ### -param <i>FilterFactory</i> [out, optional]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a> structure that AVStream sets to point to the newly created filter factory object. If this optional parameter is unspecified, the caller is not informed about the resulting filter factory object.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure that AVStream sets to point to the newly created filter factory object. If this optional parameter is unspecified, the caller is not informed about the resulting filter factory object.</p>
 </dd>
 </dl>
 
@@ -177,21 +177,13 @@ NTSTATUS KsCreateFilterFactory(
 <p>Returns STATUS_SUCCESS if the filter factory can be created. Otherwise, it returns an appropriate error code.</p>
 
 ## -remarks
-<p>If you call <b>KsCreateFilterFactory</b> after <a href="https://msdn.microsoft.com/library/windows/hardware/ff554284">AVStrMiniDevicePostStart</a>), you must then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff562539">KsFilterFactorySetDeviceClassesState</a> to enable the device class. (Also call <b>KsFilterFactorySetDeviceClassesState</b> to disable a filter factory.)</p>
+<p>If you call <b>KsCreateFilterFactory</b> after <a href="stream.avstrminidevicepoststart">AVStrMiniDevicePostStart</a>), you must then call <a href="..\ks\nf-ks-ksfilterfactorysetdeviceclassesstate.md">KsFilterFactorySetDeviceClassesState</a> to enable the device class. (Also call <b>KsFilterFactorySetDeviceClassesState</b> to disable a filter factory.)</p>
 
 <p>If you call <b>KsCreateFilterFactory</b> in the context of <i>AVStrMiniDevicePostStart</i> or before, you do not need to do this.</p>
 
 <p>Before calling this function, the minidriver must obtain the device mutex. For information about how to do this, see <a href="NULL">Device Mutex in AVStream</a>.</p>
 
-<p>This function should be used by minidrivers that either initialize themselves without a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562683">KsInitializeDriver</a> or that must dynamically add and remove new filter types. </p>
-
-<p>If you call <b>KsCreateFilterFactory</b> after <a href="https://msdn.microsoft.com/library/windows/hardware/ff554284">AVStrMiniDevicePostStart</a>), you must then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff562539">KsFilterFactorySetDeviceClassesState</a> to enable the device class. (Also call <b>KsFilterFactorySetDeviceClassesState</b> to disable a filter factory.)</p>
-
-<p>If you call <b>KsCreateFilterFactory</b> in the context of <i>AVStrMiniDevicePostStart</i> or before, you do not need to do this.</p>
-
-<p>Before calling this function, the minidriver must obtain the device mutex. For information about how to do this, see <a href="NULL">Device Mutex in AVStream</a>.</p>
-
-<p>This function should be used by minidrivers that either initialize themselves without a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562683">KsInitializeDriver</a> or that must dynamically add and remove new filter types. </p>
+<p>This function should be used by minidrivers that either initialize themselves without a call to <a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a> or that must dynamically add and remove new filter types. </p>
 
 ## -requirements
 <table>
@@ -246,18 +238,18 @@ NTSTATUS KsCreateFilterFactory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561675">KsDeleteFilterFactory</a>
+<a href="..\ks\nf-ks-ksdeletefilterfactory.md">KsDeleteFilterFactory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562553">KSFILTER_DESCRIPTOR</a>
+<a href="..\ks\ns-ks--ksfilter-descriptor.md">KSFILTER_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563534">KSPIN_DESCRIPTOR_EX</a>
+<a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563473">KSNODE_DESCRIPTOR</a>
+<a href="..\ks\ns-ks--ksnode-descriptor.md">KSNODE_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsCreateFilterFactory function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsCreateFilterFactory function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: audio\ikeyworddetectoroemadapter_getcapabilities.htm
 old-project: audio
 ms.assetid: 5885E2BB-78DA-46F5-8330-DE8785C61946
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IKeywordDetectorOemAdapter, GetCapabilities, IKeywordDetectorOemAdapter::GetCapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -92,7 +92,7 @@ HRESULT GetCapabilities(
 ### -param <i>ppMediaType</i> [out]
 
 <dd>
-<p>The audio format required by <a href="https://msdn.microsoft.com/library/windows/hardware/dn957509">IKeywordDetectorOemAdapter::VerifyUserKeyword</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn957506">IKeywordDetectorOemAdapter::ComputeAndAddUserModelData</a>. </p>
+<p>The audio format required by <a href="audio.ikeyworddetectoroemadapter_verifyuserkeyword">IKeywordDetectorOemAdapter::VerifyUserKeyword</a> and <a href="audio.ikeyworddetectoroemadapter_computeandaddusermodeldata">IKeywordDetectorOemAdapter::ComputeAndAddUserModelData</a>. </p>
 <p>The only valid values for the IMFMediaType are the following:</p>
 <ul>
 <li>Type = Audio</li>
@@ -116,12 +116,6 @@ HRESULT GetCapabilities(
 <p> </p>
 
 ## -remarks
-<p>The information returned from this routine would normally not change for a given version of the OEMDLL or the user independent model data installed along with it.
-</p>
-
-<p>The OEMDLL must have internal user independent models for the keywords and languages returned from this method.
-</p>
-
 <p>The information returned from this routine would normally not change for a given version of the OEMDLL or the user independent model data installed along with it.
 </p>
 
@@ -171,7 +165,7 @@ HRESULT GetCapabilities(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn957504">IKeywordDetectorOemAdapter</a>
+<a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
 </dt>
 <dt>
 <a href="com.cotaskmemalloc">CoTaskMemAlloc</a>
@@ -180,10 +174,10 @@ HRESULT GetCapabilities(
 <a href="com.cotaskmemfree">CoTaskMemFree</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn957509">IKeywordDetectorOemAdapter::VerifyUserKeyword</a>
+<a href="audio.ikeyworddetectoroemadapter_verifyuserkeyword">IKeywordDetectorOemAdapter::VerifyUserKeyword</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn957506">IKeywordDetectorOemAdapter::ComputeAndAddUserModelData</a>
+<a href="audio.ikeyworddetectoroemadapter_computeandaddusermodeldata">IKeywordDetectorOemAdapter::ComputeAndAddUserModelData</a>
 </dt>
 <dt>
 <a href="mf.mfcreatemediatype">MFCreateMediaType</a>
@@ -197,4 +191,4 @@ HRESULT GetCapabilities(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IKeywordDetectorOemAdapter::GetCapabilities method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IKeywordDetectorOemAdapter::GetCapabilities method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

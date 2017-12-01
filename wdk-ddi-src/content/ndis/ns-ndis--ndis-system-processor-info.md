@@ -7,7 +7,7 @@ old-location: netvista\ndis_system_processor_info.htm
 old-project: netvista
 ms.assetid: f59b9394-7742-423d-9a6e-3a429ccb0740
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_SYSTEM_PROCESSOR_INFO, NDIS_SYSTEM_PROCESSOR_INFO, *PNDIS_SYSTEM_PROCESSOR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO {
 
 <dd>
 <p>The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_SYSTEM_PROCESSOR_INFO structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -148,7 +148,7 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO {
 
 <dd>
 <p>An array of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566808">NDIS_PROCESSOR_INFO</a> structures. After
+     <a href="..\ndis\ns-ndis--ndis-processor-info.md">NDIS_PROCESSOR_INFO</a> structures. After
      the 
      <b>NdisGetProcessorInformation</b> function returns successfully, this array provides information for
      each processor in the local computer. The number of values in the array is equal to the number of
@@ -172,7 +172,7 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO {
 <p>Version</p>
 </th>
 <td width="70%">
-<p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff567872">NDIS_SYSTEM_PROCESSOR_INFO_EX</a>.</p>
+<p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="..\ntddndis\ns-ntddndis--ndis-system-processor-info-ex.md">NDIS_SYSTEM_PROCESSOR_INFO_EX</a>.</p>
 </td>
 </tr>
 <tr>
@@ -190,19 +190,19 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566808">NDIS_PROCESSOR_INFO</a>
+<a href="..\ndis\ns-ndis--ndis-processor-info.md">NDIS_PROCESSOR_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566813">NDIS_PROCESSOR_VENDOR</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-processor-vendor.md">NDIS_PROCESSOR_VENDOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567872">NDIS_SYSTEM_PROCESSOR_INFO_EX</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-system-processor-info-ex.md">NDIS_SYSTEM_PROCESSOR_INFO_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562661">NdisGetProcessorInformation</a>
+<a href="..\ndis\nf-ndis-ndisgetprocessorinformation.md">NdisGetProcessorInformation</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
@@ -211,4 +211,4 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SYSTEM_PROCESSOR_INFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SYSTEM_PROCESSOR_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -39,9 +39,9 @@ req.iface:
 
 
 ## -description
-<p>This routine removes an <a href="..\ntifs\ns-ntifs--open-reparse-list-entry.md">OPEN_REPARSE_LIST_ENTRY</a> structure (added by <a href="https://msdn.microsoft.com/library/windows/hardware/mt734255">FltAddOpenReparseEntry</a>) from a create operation.</p>
+<p>This routine removes an <a href="..\ntifs\ns-ntifs--open-reparse-list-entry.md">OPEN_REPARSE_LIST_ENTRY</a> structure (added by <a href="..\fltkernel\nf-fltkernel-fltaddopenreparseentry.md">FltAddOpenReparseEntry</a>) from a create operation.</p>
 <p>
-<div class="alert"><b>Important</b>  <i>OpenReparseEntry</i> must be an entry added by <a href="https://msdn.microsoft.com/library/windows/hardware/mt734255">FltAddOpenReparseEntry</a>. All other entries are not valid.</div>
+<div class="alert"><b>Important</b>  <i>OpenReparseEntry</i> must be an entry added by <a href="..\fltkernel\nf-fltkernel-fltaddopenreparseentry.md">FltAddOpenReparseEntry</a>. All other entries are not valid.</div>
 <div> </div>
 </p>
 

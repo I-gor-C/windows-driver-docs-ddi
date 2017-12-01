@@ -7,7 +7,7 @@ old-location: netvista\fwpscalloutunregisterbyid0.htm
 old-project: netvista
 ms.assetid: 81e7e704-c387-48a0-a222-cae751bba1d3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsCalloutUnregisterById0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,8 +60,8 @@ NTSTATUS NTAPI FwpsCalloutUnregisterById0(
 <dd>
 <p>The run-time identifier for the callout that is being unregistered from the filter engine. This
      must be the run-time identifier that was returned when the callout driver called either the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551140">FwpsCalloutRegister0</a> or 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a> function to
+     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a> or 
+     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a> function to
      register the callout with the filter engine.</p>
 </dd>
 </dl>
@@ -74,7 +74,7 @@ NTSTATUS NTAPI FwpsCalloutUnregisterById0(
 <dt><b>STATUS_DEVICE_BUSY</b></dt>
 </dl><p>There are one or more data flows being processed by the callout that have an outstanding context
        associated with the data flow. A callout driver must call the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff551169">FwpsFlowRemoveContext0</a> function
+       <a href="..\fwpsk\nf-fwpsk-fwpsflowremovecontext0.md">FwpsFlowRemoveContext0</a> function
        for each of these data flows to remove the associated context. After the context has been successfully
        removed from each of these data flows, the callout driver must call the 
        <b>FwpsCalloutUnregisterById0</b> function again to finish unregistering the callout from the filter
@@ -92,17 +92,6 @@ NTSTATUS NTAPI FwpsCalloutUnregisterById0(
 <p> </p>
 
 ## -remarks
-<p>A callout driver calls the 
-    <b>FwpsCalloutUnregisterById0</b> function to unregister a callout from the filter engine, using the
-    run-time identifier to identify the callout to be unregistered. This function succeeds even if there
-    are filters in the filter engine that specify the callout for the filter's action. In this situation,
-    filters with an action type of <b>FWP_ACTION_CALLOUT_TERMINATING</b> or <b>FWP_ACTION_CALLOUT_UNKNOWN</b> are treated
-    as <b>FWP_ACTION_BLOCK</b>, and filters with an action type of <b>FWP_ACTION_CALLOUT_INSPECTION</b> are ignored after
-    the callout has been deregistered from the filter engine.</p>
-
-<p>A callout driver cannot be unloaded until all of the callouts that were previously registered with the
-    filter engine have been successfully unregistered.</p>
-
 <p>A callout driver calls the 
     <b>FwpsCalloutUnregisterById0</b> function to unregister a callout from the filter engine, using the
     run-time identifier to identify the callout to be unregistered. This function succeeds even if there
@@ -167,16 +156,16 @@ NTSTATUS NTAPI FwpsCalloutUnregisterById0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551140">FwpsCalloutRegister0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551145">FwpsCalloutUnregisterByKey0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutunregisterbykey0.md">FwpsCalloutUnregisterByKey0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551169">FwpsFlowRemoveContext0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsflowremovecontext0.md">FwpsFlowRemoveContext0</a>
 </dt>
 <dt>
 <a href="NULL">Types of Callouts</a>
@@ -184,4 +173,4 @@ NTSTATUS NTAPI FwpsCalloutUnregisterById0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCalloutUnregisterById0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCalloutUnregisterById0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

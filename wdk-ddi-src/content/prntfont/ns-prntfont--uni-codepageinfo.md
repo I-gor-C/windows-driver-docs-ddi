@@ -66,13 +66,13 @@ typedef struct _UNI_CODEPAGEINFO {
 ### -field <b>SelectSymbolSet</b>
 
 <dd>
-<p>Is an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551796">INVOC</a> structure containing the printer command to select the code page's symbol set.</p>
+<p>Is an <a href="..\prntfont\ns-prntfont--invoc.md">INVOC</a> structure containing the printer command to select the code page's symbol set.</p>
 </dd>
 
 ### -field <b>UnSelectSymbolSet</b>
 
 <dd>
-<p>Is an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551796">INVOC</a> structure containing the printer command to deselect the code page's symbol set.</p>
+<p>Is an <a href="..\prntfont\ns-prntfont--invoc.md">INVOC</a> structure containing the printer command to deselect the code page's symbol set.</p>
 </dd>
 </dl>
 
@@ -96,7 +96,7 @@ typedef struct _UNI_CODEPAGEINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551796">INVOC</a>
+<a href="..\prntfont\ns-prntfont--invoc.md">INVOC</a>
 </dt>
 </dl>
 <p> </p>

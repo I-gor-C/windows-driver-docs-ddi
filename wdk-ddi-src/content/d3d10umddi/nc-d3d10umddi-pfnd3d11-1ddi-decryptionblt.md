@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Writes encrypted data to a protected surface. This function is called only if <b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_DECRYPTION_BLT</b> is set in the <b>Caps</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450936">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a> structure.</p>
+<p>Writes encrypted data to a protected surface. This function is called only if <b>D3D11_1DDI_CONTENT_PROTECTION_CAPS_DECRYPTION_BLT</b> is set in the <b>Caps</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-content-protection-caps.md">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a> structure.</p>
 
 
 ## -prototype
@@ -76,7 +76,7 @@ VOID APIENTRY* DecryptionBlt(
 ### -param <i>hCryptoSession</i> [in]
 
 <dd>
-<p>A handle to the driver's private data for the cryptographic session. This handle was created by the Direct3D runtime and passed to the driver in the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function.</p>
+<p>A handle to the driver's private data for the cryptographic session. This handle was created by the Direct3D runtime and passed to the driver in the call to the <a href="display.createcryptosession1">CreateCryptoSession</a> function.</p>
 </dd>
 
 ### -param <i>hSrcResource</i> [in]
@@ -96,7 +96,7 @@ VOID APIENTRY* DecryptionBlt(
 ### -param <i>pEncryptedBlockInfo</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406446">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a> structure that describes the portions of the buffer that are encrypted. </p>
+<p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-encrypted-block-info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a> structure that describes the portions of the buffer that are encrypted. </p>
 <div class="alert"><b>Note</b>  If the entire buffer is encrypted, <i>pEncryptedBlockinfo</i> should be set to NULL.</div>
 <div> </div>
 </dd>
@@ -136,15 +136,7 @@ VOID APIENTRY* DecryptionBlt(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>For 128-bit AES-CTR encryption, the <i>pIV</i> parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406334">D3D11_1DDI_AES_CTR_IV</a> structure that is allocated by the application. However, the actual contents of this structure are filled in by the driver or graphics adapter.  When the first IV is generated, the driver or adapter  initializes the <b>IV</b> member of this structure to a random number. For each subsequent IV, the caller increments the <b>IV</b> member, ensuring that the value always increases. This procedure enables the application to validate that the same IV is never used more than once with the same key pair.
-
-</p>
-
-<p>For other encryption types, a different structure might be used, or the encryption might not use an IV.
-
-</p>
-
-<p>For 128-bit AES-CTR encryption, the <i>pIV</i> parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406334">D3D11_1DDI_AES_CTR_IV</a> structure that is allocated by the application. However, the actual contents of this structure are filled in by the driver or graphics adapter.  When the first IV is generated, the driver or adapter  initializes the <b>IV</b> member of this structure to a random number. For each subsequent IV, the caller increments the <b>IV</b> member, ensuring that the value always increases. This procedure enables the application to validate that the same IV is never used more than once with the same key pair.
+<p>For 128-bit AES-CTR encryption, the <i>pIV</i> parameter points to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-aes-ctr-iv.md">D3D11_1DDI_AES_CTR_IV</a> structure that is allocated by the application. However, the actual contents of this structure are filled in by the driver or graphics adapter.  When the first IV is generated, the driver or adapter  initializes the <b>IV</b> member of this structure to a random number. For each subsequent IV, the caller increments the <b>IV</b> member, ensuring that the value always increases. This procedure enables the application to validate that the same IV is never used more than once with the same key pair.
 
 </p>
 
@@ -195,13 +187,13 @@ VOID APIENTRY* DecryptionBlt(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406334">D3D11_1DDI_AES_CTR_IV</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-aes-ctr-iv.md">D3D11_1DDI_AES_CTR_IV</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406446">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-encrypted-block-info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450936">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-content-protection-caps.md">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
 </dt>
 </dl>
 <p> </p>

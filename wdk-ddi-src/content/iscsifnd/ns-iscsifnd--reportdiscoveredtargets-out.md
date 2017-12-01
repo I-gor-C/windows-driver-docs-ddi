@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ReportDiscoveredTargets_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564046">ReportDiscoveredTargets</a> method.</p>
+<p>The ReportDiscoveredTargets_OUT structure holds the output data for the <a href="storage.reportdiscoveredtargets">ReportDiscoveredTargets</a> method.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ typedef struct _ReportDiscoveredTargets_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output, the status of the <b>ReportDiscoveredTargets</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>. </p>
+<p>On output, the status of the <b>ReportDiscoveredTargets</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>. </p>
 </dd>
 
 ### -field <b>TargetCount</b>
@@ -71,7 +71,7 @@ typedef struct _ReportDiscoveredTargets_OUT {
 ### -field <b>Targets</b>
 
 <dd>
-<p>On output, an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561501">ISCSI_DiscoveredTarget</a> structures, which provide information that is related to discovered targets. </p>
+<p>On output, an array of <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtarget.md">ISCSI_DiscoveredTarget</a> structures, which provide information that is related to discovered targets. </p>
 </dd>
 </dl>
 
@@ -95,16 +95,16 @@ typedef struct _ReportDiscoveredTargets_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561501">ISCSI_DiscoveredTarget</a>
+<a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtarget.md">ISCSI_DiscoveredTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564046">ReportDiscoveredTargets</a>
+<a href="storage.reportdiscoveredtargets">ReportDiscoveredTargets</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564054">ReportDiscoveredTargets2_OUT</a>
+<a href="..\iscsifnd\ns-iscsifnd--reportdiscoveredtargets2-out.md">ReportDiscoveredTargets2_OUT</a>
 </dt>
 </dl>
 <p> </p>

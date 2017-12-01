@@ -67,7 +67,7 @@ NTSTATUS* DxgkDdiSetBacklightOptimization(
 ### -param <i>OptimizationLevel</i> [in]
 
 <dd>
-<p>A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/jj128358">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a> that indicates the optimization level of brightness control.</p>
+<p>A value of type <a href="..\d3dkmdt\ne-d3dkmdt-dxgk-backlight-optimization-level.md">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a> that indicates the optimization level of brightness control.</p>
 </dd>
 </dl>
 
@@ -75,18 +75,6 @@ NTSTATUS* DxgkDdiSetBacklightOptimization(
 <p>Returns <b>STATUS_SUCCESS</b> if it succeeds. Otherwise, it returns one of the error codes that are defined in Ntstatus.h.</p>
 
 ## -remarks
-<p>The display miniport driver can dynamically change the backlight optimization level of the integrated display panel based upon the current content on the screen.</p>
-
-<p>The driver must respond to requests from the operating system to change the backlight optimization level in the <i>OptimizationLevel</i> parameter. Such requests are based upon system state changes.</p>
-
-<p>After the driver has enabled adaptive brightness on the display panel in response to a call to the <a href="..\dispmprt\nc-dispmprt-dxgk-brightness-set-state.md">DxgkDdiSetBrightnessState</a> function, it must not disable adaptive brightness.</p>
-
-<p>When the driver transitions from one backlight optimization level to another, it should make a gradual transition in brightness settings of the integrated display panel. An important  example of this type of transition is when a user adjusts video playback controls and the operating system responds by resetting the value of <i>OptimizationLevel</i> from <b>DxgkBacklightOptimizationDynamic</b> to <b>DxgkBacklightOptimizationDesktop</b>.</p>
-
-<p>Connecting additional display devices to the system must not compromise the ability of the driver to perform adaptive brightness control on the integrated display panel.</p>
-
-<p>This function should be made pageable.</p>
-
 <p>The display miniport driver can dynamically change the backlight optimization level of the integrated display panel based upon the current content on the screen.</p>
 
 <p>The driver must respond to requests from the operating system to change the backlight optimization level in the <i>OptimizationLevel</i> parameter. Such requests are based upon system state changes.</p>
@@ -150,7 +138,7 @@ NTSTATUS* DxgkDdiSetBacklightOptimization(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj128358">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-dxgk-backlight-optimization-level.md">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a>
 </dt>
 <dt>
 <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a>

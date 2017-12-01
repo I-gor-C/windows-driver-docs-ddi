@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbinterface.htm
 old-project: wdf
 ms.assetid: 90770016-1267-437e-af70-99741231dc29
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFUsbTargetPipe2, ConfigureContinuousReader, IWDFUsbTargetPipe2::ConfigureContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUsbInterface</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>. <b>IWDFUsbInterface</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUsbInterface</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>. <b>IWDFUsbInterface</b> also has these types of members:</p>
 
 <p>The <b>IWDFUsbInterface</b> interface has these methods.</p>
 
@@ -76,7 +76,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560317">IWDFUsbInterface::GetConfiguredSettingIndex</a>
+<a href="wdf.iwdfusbinterface_getconfiguredsettingindex">IWDFUsbInterface::GetConfiguredSettingIndex</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbinterface_getconfiguredsettingindex">GetConfiguredSettingIndex</a> method retrieves the current setting index for a USB interface.</p>
@@ -84,7 +84,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560320">IWDFUsbInterface::GetInterfaceDescriptor</a>
+<a href="wdf.iwdfusbinterface_getinterfacedescriptor">IWDFUsbInterface::GetInterfaceDescriptor</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbinterface_getinterfacedescriptor">GetInterfaceDescriptor</a> method retrieves a descriptor for a USB interface.</p>
@@ -92,7 +92,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560327">IWDFUsbInterface::GetInterfaceNumber</a>
+<a href="wdf.iwdfusbinterface_getinterfacenumber">IWDFUsbInterface::GetInterfaceNumber</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbinterface_getinterfacenumber">GetInterfaceNumber</a> method retrieves the index of a USB interface.</p>
@@ -100,7 +100,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560334">IWDFUsbInterface::GetNumEndPoints</a>
+<a href="wdf.iwdfusbinterface_getnumendpoints">IWDFUsbInterface::GetNumEndPoints</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbinterface_getnumendpoints">GetNumEndPoints</a> method retrieves the number of endpoints (pipes) on a USB interface.</p>
@@ -108,7 +108,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560337">IWDFUsbInterface::GetWinUsbHandle</a>
+<a href="wdf.iwdfusbinterface_getwinusbhandle">IWDFUsbInterface::GetWinUsbHandle</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbinterface_getwinusbhandle">GetWinUsbHandle</a> method retrieves the WinUsb interface handle that is associated with a USB interface.</p>
@@ -116,7 +116,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560339">IWDFUsbInterface::RetrieveUsbPipeObject</a>
+<a href="wdf.iwdfusbinterface_retrieveusbpipeobject">IWDFUsbInterface::RetrieveUsbPipeObject</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbinterface_retrieveusbpipeobject">RetrieveUsbPipeObject</a> method retrieves a USB pipe object for the specified pipe index.</p>
@@ -124,7 +124,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560343">IWDFUsbInterface::SelectSetting</a>
+<a href="wdf.iwdfusbinterface_selectsetting">IWDFUsbInterface::SelectSetting</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbinterface_selectsetting">SelectSetting</a> method selects the specified alternate setting on a USB interface.</p>

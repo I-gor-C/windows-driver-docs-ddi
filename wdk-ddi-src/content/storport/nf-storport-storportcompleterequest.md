@@ -62,7 +62,7 @@ STORPORT_API VOID StorPortCompleteRequest(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
+<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
 ### -param <i>PathId</i> [in]
@@ -94,8 +94,6 @@ STORPORT_API VOID StorPortCompleteRequest(
 <p>None </p>
 
 ## -remarks
-<p>We do not recommend that writers of Storport miniport drivers use this particular Storport interface routine. Instead, the miniport driver should call StorPortNotification( RequestComplete ) for each outstanding request.</p>
-
 <p>We do not recommend that writers of Storport miniport drivers use this particular Storport interface routine. Instead, the miniport driver should call StorPortNotification( RequestComplete ) for each outstanding request.</p>
 
 ## -requirements
@@ -135,7 +133,7 @@ STORPORT_API VOID StorPortCompleteRequest(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567042">StorPortCompleteRequest</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454262">StorPortDDIsPortOnly</a>
+<a href="..\storport\nf-storport-storportcompleterequest.md">StorPortCompleteRequest</a>, <a href="devtest.storport_storportddisportonly">StorPortDDIsPortOnly</a>
 </td>
 </tr>
 </table>
@@ -143,7 +141,7 @@ STORPORT_API VOID StorPortCompleteRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564608">ScsiPortCompleteRequest</a>
+<a href="..\srb\nf-srb-scsiportcompleterequest.md">ScsiPortCompleteRequest</a>
 </dt>
 </dl>
 <p> </p>

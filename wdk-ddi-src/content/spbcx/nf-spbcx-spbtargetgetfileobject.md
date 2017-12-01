@@ -74,14 +74,6 @@ WDFFILEOBJECT SpbTargetGetFileObject(
 
 <p>After <b>SpbTargetGetFileObject</b> returns a WDFFILEOBJECT handle, there is no guarantee that the target connection will remain open unless another object (for example, an active I/O request) holds a reference to the WDFFILEOBJECT object to prevent it from closing unexpectedly.  This method is most useful, and, therefore, most likely to be called, when the target connection is guaranteed to be open. Typically, such calls occur during <a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a> and <a href="https://msdn.microsoft.com/02756C35-E76C-42C0-80FA-359CADE224A1">EvtSpbTargetDisconnect</a> callbacks, and during the processing of I/O requests.</p>
 
-<p>Your controller driver can call this method to obtain a WDFFILEOBJECT handle to an open target device on the bus. The SPB controller driver can then use this handle as an input parameter to WDF methods that require such a handle.</p>
-
-<p><b>SpbTargetGetFileObject</b> returns NULL only if the WDFFILEOBJECT handle to the target was closed but, before it closed, the SPB controller driver took an additional reference on the SBPTARGET object to extend its lifetime.</p>
-
-<p>If the connection was closed and the SPB controller driver holds no references to the SPBTARGET object, the SBPTARGET handle is no longer valid. Passing an invalid handle to <b>SpbTargetGetFileObject</b> causes a bug check.</p>
-
-<p>After <b>SpbTargetGetFileObject</b> returns a WDFFILEOBJECT handle, there is no guarantee that the target connection will remain open unless another object (for example, an active I/O request) holds a reference to the WDFFILEOBJECT object to prevent it from closing unexpectedly.  This method is most useful, and, therefore, most likely to be called, when the target connection is guaranteed to be open. Typically, such calls occur during <a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a> and <a href="https://msdn.microsoft.com/02756C35-E76C-42C0-80FA-359CADE224A1">EvtSpbTargetDisconnect</a> callbacks, and during the processing of I/O requests.</p>
-
 ## -requirements
 <table>
 <tr>

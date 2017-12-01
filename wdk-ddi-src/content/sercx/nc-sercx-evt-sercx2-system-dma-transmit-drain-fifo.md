@@ -61,7 +61,7 @@ VOID EvtSerCx2SystemDmaTransmitDrainFifo(
 ### -param <i>SystemDmaTransmit</i> [in]
 
 <dd>
-<p>A <a href="serports.sercx2systemdmatransmit_object_handle">SERCX2SYSTEMDMATRANSMIT</a> handle to a system-DMA-transmit object. The serial controller driver previously called the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265288">SerCx2SystemDmaTransmitCreate</a> method to create this object.</p>
+<p>A <a href="serports.sercx2systemdmatransmit_object_handle">SERCX2SYSTEMDMATRANSMIT</a> handle to a system-DMA-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a> method to create this object.</p>
 </dd>
 </dl>
 
@@ -69,27 +69,9 @@ VOID EvtSerCx2SystemDmaTransmitDrainFifo(
 <p>None.</p>
 
 ## -remarks
-<p>Your serial controller driver can, as an option, implement this function. If your driver implements this function, it must also implement the <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-cancel-drain-fifo.md">EvtSerCx2SystemDmaTransmitCancelDrainFifo</a> and <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-purge-fifo.md">EvtSerCx2SystemDmaTransmitPurgeFifo</a> event callback functions. A driver that implements these functions registers them in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265288">SerCx2SystemDmaTransmitCreate</a> call that creates the system-DMA-transmit object.</p>
+<p>Your serial controller driver can, as an option, implement this function. If your driver implements this function, it must also implement the <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-cancel-drain-fifo.md">EvtSerCx2SystemDmaTransmitCancelDrainFifo</a> and <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-purge-fifo.md">EvtSerCx2SystemDmaTransmitPurgeFifo</a> event callback functions. A driver that implements these functions registers them in the <a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a> call that creates the system-DMA-transmit object.</p>
 
-<p>SerCx2 calls the <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> function, if it is implemented, to drain the transmit FIFO in the serial controller hardware at the end of a system-DMA-transmit transaction. This function makes sure that any data bytes that remain in the FIFO are transmitted to the serially connected peripheral device. After the last byte is transmitted from the FIFO, the <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> function calls the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265289">SerCx2SystemDmaTransmitDrainFifoComplete</a> method to notify SerCx2.</p>
-
-<p>If the serial controller driver implements an <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> function, SerCx2 does not complete a pending write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request until the driver calls <b>SerCx2SystemDmaTransmitDrainFifoComplete</b>.</p>
-
-<p>If your serial controller has a hardware FIFO (or similar buffering mechanism) to hold transmit data, your driver should implement an <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> function. Otherwise, SerCx2 cannot confirm that the transmit FIFO has drained before the pending write request is completed. Instead, SerCx2 completes this request after the last byte in the write buffer is written to the transmit FIFO. There can be no guarantee that data written to the transmit FIFO will be transmitted without a significant delay. Any data that remains in the FIFO after the write request is completed might be lost before it can be transmitted to the serially connected peripheral device. This unexpected data loss in a successfully completed write request can create reliability problems for the peripheral driver.</p>
-
-<p>For more information, see <a href="NULL">SerCx2 System-DMA-Transmit Transactions</a>.</p>
-
-<p>To define an <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define an <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> callback function that is named <code>MySystemDmaTransmitDrainFifo</code>, use the <b>EVT_SERCX2_SYSTEM_DMA_TRANSMIT_DRAIN_FIFO</b> function type, as shown in this code example:</p>
-
-<p>Then, implement your callback function as follows:</p>
-
-<p>The <b>EVT_SERCX2_SYSTEM_DMA_TRANSMIT_DRAIN_FIFO</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_SYSTEM_DMA_TRANSMIT_DRAIN_FIFO</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
-
-<p>Your serial controller driver can, as an option, implement this function. If your driver implements this function, it must also implement the <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-cancel-drain-fifo.md">EvtSerCx2SystemDmaTransmitCancelDrainFifo</a> and <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-purge-fifo.md">EvtSerCx2SystemDmaTransmitPurgeFifo</a> event callback functions. A driver that implements these functions registers them in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265288">SerCx2SystemDmaTransmitCreate</a> call that creates the system-DMA-transmit object.</p>
-
-<p>SerCx2 calls the <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> function, if it is implemented, to drain the transmit FIFO in the serial controller hardware at the end of a system-DMA-transmit transaction. This function makes sure that any data bytes that remain in the FIFO are transmitted to the serially connected peripheral device. After the last byte is transmitted from the FIFO, the <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> function calls the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265289">SerCx2SystemDmaTransmitDrainFifoComplete</a> method to notify SerCx2.</p>
+<p>SerCx2 calls the <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> function, if it is implemented, to drain the transmit FIFO in the serial controller hardware at the end of a system-DMA-transmit transaction. This function makes sure that any data bytes that remain in the FIFO are transmitted to the serially connected peripheral device. After the last byte is transmitted from the FIFO, the <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> function calls the <a href="..\sercx\nf-sercx-sercx2systemdmatransmitdrainfifocomplete.md">SerCx2SystemDmaTransmitDrainFifoComplete</a> method to notify SerCx2.</p>
 
 <p>If the serial controller driver implements an <i>EvtSerCx2SystemDmaTransmitDrainFifo</i> function, SerCx2 does not complete a pending write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request until the driver calls <b>SerCx2SystemDmaTransmitDrainFifoComplete</b>.</p>
 
@@ -160,10 +142,10 @@ VOID EvtSerCx2SystemDmaTransmitDrainFifo(
 <a href="serports.sercx2systemdmatransmit_object_handle">SERCX2SYSTEMDMATRANSMIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265288">SerCx2SystemDmaTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265289">SerCx2SystemDmaTransmitDrainFifoComplete</a>
+<a href="..\sercx\nf-sercx-sercx2systemdmatransmitdrainfifocomplete.md">SerCx2SystemDmaTransmitDrainFifoComplete</a>
 </dt>
 </dl>
 <p> </p>

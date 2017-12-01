@@ -64,7 +64,7 @@ NTSTATUS IoRegisterFsRegistrationChange(
 ### -param <i>DriverNotificationRoutine</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551037">PDRIVER_FS_NOTIFICATION</a> routine, which the file system calls when it registers or unregisters itself.</p>
+<p>A pointer to the <a href="ifsk.pdriver_fs_notification">PDRIVER_FS_NOTIFICATION</a> routine, which the file system calls when it registers or unregisters itself.</p>
 </dd>
 </dl>
 
@@ -78,21 +78,13 @@ NTSTATUS IoRegisterFsRegistrationChange(
 <p> </p>
 
 ## -remarks
-<p><b>IoRegisterFsRegistrationChange</b> registers a file system filter driver to be notified whenever a file system calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548494">IoRegisterFileSystem</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548552">IoUnregisterFileSystem</a>. </p>
+<p><b>IoRegisterFsRegistrationChange</b> registers a file system filter driver to be notified whenever a file system calls <a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a> or <a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>. </p>
 
-<p>To stop receiving such notifications, the filter driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548557">IoUnregisterFsRegistrationChange</a>. </p><p class="note">Because the caller's notification routine can be called even before <b>IoRegisterFsRegistrationChange</b> returns, a filter driver should not call this routine until after it has created any data structures that it needs in order to process these notifications. </p><p class="note">Additionally, in Windows XP and later, <b>IoRegisterFsRegistrationChange</b> ignores RAW devices. For information about attaching to the RAW file system by name, see <a href="ifsk.attaching_the_filter_device_object_to_the_target_device_object">Attaching the Filter Device Object to the Target Device Object</a>. </p>
-
-<p><b>IoRegisterFsRegistrationChange</b> increments the reference count on the filter driver's driver object. </p>
-
-<p>In Update Rollup for Windows 2000 SP4, file system filter drivers can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548508">IoRegisterFsRegistrationChangeEx</a> instead of <b>IoRegisterFsRegistrationChange</b>. The effect of <b>IoRegisterFsRegistrationChangeEx</b> is identical to that of <b>IoRegisterFsRegistrationChange</b> on Windows XP and later. </p>
-
-<p><b>IoRegisterFsRegistrationChange</b> registers a file system filter driver to be notified whenever a file system calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548494">IoRegisterFileSystem</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548552">IoUnregisterFileSystem</a>. </p>
-
-<p>To stop receiving such notifications, the filter driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548557">IoUnregisterFsRegistrationChange</a>. </p><p class="note">Because the caller's notification routine can be called even before <b>IoRegisterFsRegistrationChange</b> returns, a filter driver should not call this routine until after it has created any data structures that it needs in order to process these notifications. </p><p class="note">Additionally, in Windows XP and later, <b>IoRegisterFsRegistrationChange</b> ignores RAW devices. For information about attaching to the RAW file system by name, see <a href="ifsk.attaching_the_filter_device_object_to_the_target_device_object">Attaching the Filter Device Object to the Target Device Object</a>. </p>
+<p>To stop receiving such notifications, the filter driver should call <a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>. </p><p class="note">Because the caller's notification routine can be called even before <b>IoRegisterFsRegistrationChange</b> returns, a filter driver should not call this routine until after it has created any data structures that it needs in order to process these notifications. </p><p class="note">Additionally, in Windows XP and later, <b>IoRegisterFsRegistrationChange</b> ignores RAW devices. For information about attaching to the RAW file system by name, see <a href="ifsk.attaching_the_filter_device_object_to_the_target_device_object">Attaching the Filter Device Object to the Target Device Object</a>. </p>
 
 <p><b>IoRegisterFsRegistrationChange</b> increments the reference count on the filter driver's driver object. </p>
 
-<p>In Update Rollup for Windows 2000 SP4, file system filter drivers can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548508">IoRegisterFsRegistrationChangeEx</a> instead of <b>IoRegisterFsRegistrationChange</b>. The effect of <b>IoRegisterFsRegistrationChangeEx</b> is identical to that of <b>IoRegisterFsRegistrationChange</b> on Windows XP and later. </p>
+<p>In Update Rollup for Windows 2000 SP4, file system filter drivers can call <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchangeex.md">IoRegisterFsRegistrationChangeEx</a> instead of <b>IoRegisterFsRegistrationChange</b>. The effect of <b>IoRegisterFsRegistrationChangeEx</b> is identical to that of <b>IoRegisterFsRegistrationChange</b> on Windows XP and later. </p>
 
 ## -requirements
 <table>
@@ -149,16 +141,16 @@ NTSTATUS IoRegisterFsRegistrationChange(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548494">IoRegisterFileSystem</a>
+<a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548508">IoRegisterFsRegistrationChangeEx</a>
+<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchangeex.md">IoRegisterFsRegistrationChangeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548552">IoUnregisterFileSystem</a>
+<a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548557">IoUnregisterFsRegistrationChange</a>
+<a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>
 </dt>
 </dl>
 <p> </p>

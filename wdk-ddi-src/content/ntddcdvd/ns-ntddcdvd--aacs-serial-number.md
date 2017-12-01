@@ -69,7 +69,7 @@ typedef struct _AACS_SERIAL_NUMBER {
 </dl>
 
 ## -remarks
-<p>Clients retrieve the AACS serial number with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559289">IOCTL_AACS_READ_SERIAL_NUMBER</a> request.</p>
+<p>Clients retrieve the AACS serial number with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-read-serial-number.md">IOCTL_AACS_READ_SERIAL_NUMBER</a> request.</p>
 
 ## -requirements
 <table>
@@ -88,7 +88,7 @@ typedef struct _AACS_SERIAL_NUMBER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559289">IOCTL_AACS_READ_SERIAL_NUMBER</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-read-serial-number.md">IOCTL_AACS_READ_SERIAL_NUMBER</a>
 </dt>
 </dl>
 <p> </p>

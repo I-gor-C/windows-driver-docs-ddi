@@ -7,7 +7,7 @@ old-location: netvista\dot11_offload_network.htm
 old-project: netvista
 ms.assetid: 75DC558F-801B-42ED-9282-127E86E78923
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_OFFLOAD_NETWORK, DOT11_OFFLOAD_NETWORK, *PDOT11_OFFLOAD_NETWORK
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -103,7 +103,7 @@ typedef struct _WHEA_PCI_SLOT_NUMBER {
 </dl>
 
 ## -remarks
-<p>A WHEA_PCI_SLOT_NUMBER structure is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560446">WHEA_AER_BRIDGE_DESCRIPTOR</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff560447">WHEA_AER_ENDPOINT_DESCRIPTOR</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560450">WHEA_AER_ROOTPORT_DESCRIPTOR</a> structures.</p>
+<p>A WHEA_PCI_SLOT_NUMBER structure is contained within the <a href="..\ntddk\ns-ntddk--whea-aer-bridge-descriptor.md">WHEA_AER_BRIDGE_DESCRIPTOR</a>, <a href="..\ntddk\ns-ntddk--whea-aer-endpoint-descriptor.md">WHEA_AER_ENDPOINT_DESCRIPTOR</a>, and <a href="..\ntddk\ns-ntddk--whea-aer-rootport-descriptor.md">WHEA_AER_ROOTPORT_DESCRIPTOR</a> structures.</p>
 
 ## -requirements
 <table>
@@ -131,13 +131,13 @@ typedef struct _WHEA_PCI_SLOT_NUMBER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560446">WHEA_AER_BRIDGE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk--whea-aer-bridge-descriptor.md">WHEA_AER_BRIDGE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560447">WHEA_AER_ENDPOINT_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk--whea-aer-endpoint-descriptor.md">WHEA_AER_ENDPOINT_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560450">WHEA_AER_ROOTPORT_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk--whea-aer-rootport-descriptor.md">WHEA_AER_ROOTPORT_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

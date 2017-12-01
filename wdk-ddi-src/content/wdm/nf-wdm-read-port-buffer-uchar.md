@@ -7,7 +7,7 @@ old-location: kernel\read_port_buffer_uchar.htm
 old-project: kernel
 ms.assetid: a32a7c6a-16dd-4d12-aa32-6bdb60990568
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: READ_PORT_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,10 +80,6 @@ VOID READ_PORT_BUFFER_UCHAR(
 <p>None</p>
 
 ## -remarks
-<p>The size of the buffer must be large enough to contain at least the specified number of bytes.</p>
-
-<p>Callers of <b>READ_PORT_BUFFER_UCHAR</b> can be running at any IRQL, assuming the <i>Buffer</i> is resident and the <i>Port</i> is resident, mapped device memory.</p>
-
 <p>The size of the buffer must be large enough to contain at least the specified number of bytes.</p>
 
 <p>Callers of <b>READ_PORT_BUFFER_UCHAR</b> can be running at any IRQL, assuming the <i>Buffer</i> is resident and the <i>Port</i> is resident, mapped device memory.</p>

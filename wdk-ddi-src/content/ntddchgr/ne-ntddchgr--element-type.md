@@ -64,7 +64,7 @@ typedef enum _ELEMENT_TYPE {
 ### -field <a id="AllElements"></a><a id="allelements"></a><a id="ALLELEMENTS"></a><b>AllElements</b>
 
 <dd>
-<p>Indicates all elements of a changer, including its robotic transport, drives, slots, and IEport. <b>AllElements</b> is valid only in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551424">ChangerGetElementStatus</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551433">ChangerInitializeElementStatus</a> call.</p>
+<p>Indicates all elements of a changer, including its robotic transport, drives, slots, and IEport. <b>AllElements</b> is valid only in a <a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a> or <a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a> call.</p>
 </dd>
 
 ### -field <a id="ChangerTransport"></a><a id="changertransport"></a><a id="CHANGERTRANSPORT"></a><b>ChangerTransport</b>
@@ -94,13 +94,13 @@ typedef enum _ELEMENT_TYPE {
 ### -field <a id="ChangerDoor"></a><a id="changerdoor"></a><a id="CHANGERDOOR"></a><b>ChangerDoor</b>
 
 <dd>
-<p>Indicates a mechanism that provides access to all media in a changer at one time (as compared to an IEport that provides access to one or more, but not all, media). For example, a large front door or a magazine that contains all media in the changer are elements of this type. <b>ChangerDoor</b> is valid only in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551447">ChangerSetAccess</a> call.</p>
+<p>Indicates a mechanism that provides access to all media in a changer at one time (as compared to an IEport that provides access to one or more, but not all, media). For example, a large front door or a magazine that contains all media in the changer are elements of this type. <b>ChangerDoor</b> is valid only in a <a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a> call.</p>
 </dd>
 
 ### -field <a id="ChangerKeypad"></a><a id="changerkeypad"></a><a id="CHANGERKEYPAD"></a><b>ChangerKeypad</b>
 
 <dd>
-<p>Indicates the keypad or other input control on the front panel of a changer. <b>ChangerKeypad</b> is valid only in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551447">ChangerSetAccess</a> call.</p>
+<p>Indicates the keypad or other input control on the front panel of a changer. <b>ChangerKeypad</b> is valid only in a <a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a> call.</p>
 </dd>
 
 ### -field <a id="ChangerMaxElement"></a><a id="changermaxelement"></a><a id="CHANGERMAXELEMENT"></a><b>ChangerMaxElement</b>
@@ -130,13 +130,13 @@ typedef enum _ELEMENT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551424">ChangerGetElementStatus</a>
+<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551433">ChangerInitializeElementStatus</a>
+<a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551447">ChangerSetAccess</a>
+<a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a>
 </dt>
 </dl>
 <p> </p>

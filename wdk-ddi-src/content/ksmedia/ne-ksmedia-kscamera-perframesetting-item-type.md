@@ -7,7 +7,7 @@ old-location: stream\kscamera_perframesetting_item_type.htm
 old-project: stream
 ms.assetid: B4312084-E545-45FD-BA93-3BE551CE52DF
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices

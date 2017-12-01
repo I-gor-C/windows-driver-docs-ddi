@@ -7,7 +7,7 @@ old-location: netvista\rilradiostategroupid.htm
 old-project: netvista
 ms.assetid: 147eb9f7-da0c-41c2-83b3-766164dbc905
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

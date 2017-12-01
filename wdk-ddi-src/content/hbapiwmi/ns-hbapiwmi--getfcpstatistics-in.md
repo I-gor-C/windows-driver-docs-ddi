@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetFCPStatistics_IN structure is used to deliver input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554939">GetFCPStatistics</a> WMI method. </p>
+<p>The GetFCPStatistics_IN structure is used to deliver input parameter data to the <a href="storage.getfcpstatistics">GetFCPStatistics</a> WMI method. </p>
 
 
 ## -syntax
@@ -57,12 +57,12 @@ typedef struct _GetFCPStatistics_IN {
 ### -field <b>ScsiId</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556042">HBAScsiID</a> that uniquely identifies a logical unit and the bus and HBA that the logical unit is connected to.</p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbascsiid.md">HBAScsiID</a> that uniquely identifies a logical unit and the bus and HBA that the logical unit is connected to.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the GetFCPStatistics_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetFCPStatistics_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -81,10 +81,10 @@ typedef struct _GetFCPStatistics_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554939">GetFCPStatistics</a>
+<a href="storage.getfcpstatistics">GetFCPStatistics</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556042">HBAScsiID</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--hbascsiid.md">HBAScsiID</a>
 </dt>
 </dl>
 <p> </p>

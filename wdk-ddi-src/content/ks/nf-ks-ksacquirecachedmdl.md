@@ -7,7 +7,7 @@ old-location: stream\ksacquirecachedmdl.htm
 old-project: stream
 ms.assetid: C6C693CC-D9C0-4EE8-9F8C-07D8665C673D
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsAcquireCachedMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices

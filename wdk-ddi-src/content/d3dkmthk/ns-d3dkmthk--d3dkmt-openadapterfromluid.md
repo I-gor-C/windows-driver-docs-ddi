@@ -64,7 +64,7 @@ typedef struct _D3DKMT_OPENADAPTERFROMLUID {
 ### -field <b>hAdapter</b>
 
 <dd>
-<p>[out] A handle to the graphics adapter for the device that the <b>AdapterLuid</b> member specifies. The adapter handle is returned from a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780247">D3DKMTOpenAdapterFromLuid</a> function.</p>
+<p>[out] A handle to the graphics adapter for the device that the <b>AdapterLuid</b> member specifies. The adapter handle is returned from a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromluid.md">D3DKMTOpenAdapterFromLuid</a> function.</p>
 </dd>
 </dl>
 
@@ -104,7 +104,7 @@ typedef struct _D3DKMT_OPENADAPTERFROMLUID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780247">D3DKMTOpenAdapterFromLuid</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromluid.md">D3DKMTOpenAdapterFromLuid</a>
 </dt>
 </dl>
 <p> </p>

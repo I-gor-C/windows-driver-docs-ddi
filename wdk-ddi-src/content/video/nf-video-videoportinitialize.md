@@ -61,7 +61,7 @@ ULONG VideoPortInitialize(
 ### -param <i>Argument1</i> 
 
 <dd>
-<p>A pointer with which the operating system called <a href="https://msdn.microsoft.com/library/windows/hardware/ff556159">DriverEntry of Video Miniport Driver</a>.</p>
+<p>A pointer with which the operating system called <a href="display.driverentry_of_video_miniport_driver">DriverEntry of Video Miniport Driver</a>.</p>
 </dd>
 
 ### -param <i>Argument2</i> 
@@ -73,7 +73,7 @@ ULONG VideoPortInitialize(
 ### -param <i>HwInitializationData</i> 
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570505">VIDEO_HW_INITIALIZATION_DATA</a> structure on the stack. The miniport driver's <b>DriverEntry</b> routine zero-initialized this structure and then filled it in with driver-specific configuration information describing a video adapter that the miniport driver can support.</p>
+<p>Pointer to the <a href="..\video\ns-video--video-hw-initialization-data.md">VIDEO_HW_INITIALIZATION_DATA</a> structure on the stack. The miniport driver's <b>DriverEntry</b> routine zero-initialized this structure and then filled it in with driver-specific configuration information describing a video adapter that the miniport driver can support.</p>
 </dd>
 
 ### -param <i>HwContext</i> 
@@ -87,31 +87,13 @@ ULONG VideoPortInitialize(
 <p><b>VideoPortInitialize</b> returns the final status of the initialization operation. </p>
 
 ## -remarks
-<p>Every video miniport driver must call <b>VideoPortInitialize</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function. <b>DriverEntry</b> can call <b>VideoPortInitialize</b> only after it has first zero-initialized and then set up the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570505">VIDEO_HW_INITIALIZATION_DATA</a> structure. <b>VideoPortInitialize</b> can be called only from a miniport driver's <b>DriverEntry</b> function.</p>
+<p>Every video miniport driver must call <b>VideoPortInitialize</b> from its <a href="display.driverentry_of_video_miniport_driver">DriverEntry</a> function. <b>DriverEntry</b> can call <b>VideoPortInitialize</b> only after it has first zero-initialized and then set up the <a href="..\video\ns-video--video-hw-initialization-data.md">VIDEO_HW_INITIALIZATION_DATA</a> structure. <b>VideoPortInitialize</b> can be called only from a miniport driver's <b>DriverEntry</b> function.</p>
 
 <p>The <b>VideoPortInitialize</b> function:</p>
 
 <p>Checks the validity of the miniport driver's VIDEO_HW_INITIALIZATION_DATA specifications.</p>
 
-<p>Allocates memory for and zero-initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a> structure.</p>
-
-<p>Fills in as much adapter configuration information as it can in VIDEO_PORT_CONFIG_INFO.</p>
-
-<p>Fills in some of the public members of the device object created by the system to represent the graphics adapter. The video port driver manages the device objects, therefore, the miniport driver need not be concerned with device object details.</p>
-
-<p>Allocates memory for, and zero-initializes the device extension of, the device object. A <i>device extension </i>is each miniport driver's primary and only global storage area for adapter-specific state information. The miniport driver specifies the size of the device extension in the <b>HwDeviceExtensionSize</b> member of VIDEO_HW_INITIALIZATION_DATA. The video port driver passes this device extension to most of the miniport driver functions that it calls.</p>
-
-<p>Collects and stores pertinent information in the device extension.</p>
-
-<p>The miniport driver's <b>DriverEntry</b> routine propagates the value returned by <b>VideoPortInitialize</b> back to its caller. Miniport drivers should not use this return value. </p>
-
-<p>Every video miniport driver must call <b>VideoPortInitialize</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function. <b>DriverEntry</b> can call <b>VideoPortInitialize</b> only after it has first zero-initialized and then set up the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570505">VIDEO_HW_INITIALIZATION_DATA</a> structure. <b>VideoPortInitialize</b> can be called only from a miniport driver's <b>DriverEntry</b> function.</p>
-
-<p>The <b>VideoPortInitialize</b> function:</p>
-
-<p>Checks the validity of the miniport driver's VIDEO_HW_INITIALIZATION_DATA specifications.</p>
-
-<p>Allocates memory for and zero-initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a> structure.</p>
+<p>Allocates memory for and zero-initializes a <a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a> structure.</p>
 
 <p>Fills in as much adapter configuration information as it can in VIDEO_PORT_CONFIG_INFO.</p>
 
@@ -186,7 +168,7 @@ ULONG VideoPortInitialize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556159">DriverEntry of Video Miniport Driver</a>
+<a href="display.driverentry_of_video_miniport_driver">DriverEntry of Video Miniport Driver</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a>
@@ -195,13 +177,13 @@ ULONG VideoPortInitialize(
 <a href="..\video\nc-video-pvideo-hw-initialize.md">HwVidInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570505">VIDEO_HW_INITIALIZATION_DATA</a>
+<a href="..\video\ns-video--video-hw-initialization-data.md">VIDEO_HW_INITIALIZATION_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a>
+<a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570493">VideoPortZeroMemory</a>
+<a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
 </dt>
 </dl>
 <p> </p>

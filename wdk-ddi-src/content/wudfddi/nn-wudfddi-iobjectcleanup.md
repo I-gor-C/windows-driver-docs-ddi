@@ -7,7 +7,7 @@ old-location: wdf\iobjectcleanup.htm
 old-project: wdf
 ms.assetid: 5e465c90-3290-4c89-bf47-521280c0fe5c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
+<a href="wdf.iobjectcleanup_oncleanup">IObjectCleanup::OnCleanup</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iobjectcleanup_oncleanup">OnCleanup</a> method releases any references to a WDF object to prevent interface leakage.</p>
@@ -72,10 +72,6 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>The framework calls the method of the <b>IObjectCleanup</b> interface when the associated framework object is about to be released.</p>
-
-<p>A driver can register the <b>IObjectCleanup</b> interface when the driver calls any method that creates a WDF object. </p>
-
 <p>The framework calls the method of the <b>IObjectCleanup</b> interface when the associated framework object is about to be released.</p>
 
 <p>A driver can register the <b>IObjectCleanup</b> interface when the driver calls any method that creates a WDF object. </p>

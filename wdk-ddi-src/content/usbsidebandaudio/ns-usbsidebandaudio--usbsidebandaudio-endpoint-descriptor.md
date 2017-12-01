@@ -7,7 +7,7 @@ old-location: audio\usbsidebandaudio_endpoint_descriptor.htm
 old-project: audio
 ms.assetid: 552986F7-AEE9-4CBF-A932-629885F99487
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, *PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices

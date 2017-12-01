@@ -7,7 +7,7 @@ old-location: stream\ksunregisterworker.htm
 old-project: stream
 ms.assetid: 789b12db-7f51-426f-8f43-d3a3e43d85b3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsUnregisterWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,8 +65,6 @@ VOID KsUnregisterWorker(
 <p>None</p>
 
 ## -remarks
-<p>The client must ensure that outstanding I/O initiated on any worker thread has been completed before unregistering the worker has been completed. This means canceling or completing outstanding I/O either before unregistering the worker, or before the worker item returns from its callback for the last time and is unregistered. Unregistering of a worker will wait for any currently queued work items to complete before returning. </p>
-
 <p>The client must ensure that outstanding I/O initiated on any worker thread has been completed before unregistering the worker has been completed. This means canceling or completing outstanding I/O either before unregistering the worker, or before the worker item returns from its callback for the last time and is unregistered. Unregistering of a worker will wait for any currently queued work items to complete before returning. </p>
 
 ## -requirements

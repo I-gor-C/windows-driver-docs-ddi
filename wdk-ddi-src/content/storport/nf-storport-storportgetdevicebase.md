@@ -63,37 +63,37 @@ STORPORT_API PVOID StorPortGetDeviceBase(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
+<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
 ### -param <i>BusType</i> [in]
 
 <dd>
-<p>Specifies the interface type of the I/O bus on which the HBA is connected. The miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine obtains the value for this parameter from the <b>AdapterInterfaceType</b> member of the input <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>.</p>
+<p>Specifies the interface type of the I/O bus on which the HBA is connected. The miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine obtains the value for this parameter from the <b>AdapterInterfaceType</b> member of the input <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>.</p>
 </dd>
 
 ### -param <i>SystemIoBusNumber</i> [in]
 
 <dd>
-<p>Specifies the system-assigned number of the I/O bus on which the HBA is connected. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine obtains the value for this parameter from the <b>SystemIoBusNumber</b> member of the input <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>.</p>
+<p>Specifies the system-assigned number of the I/O bus on which the HBA is connected. The <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine obtains the value for this parameter from the <b>SystemIoBusNumber</b> member of the input <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>.</p>
 </dd>
 
 ### -param <i>IoAddress</i> [in]
 
 <dd>
-<p>Specifies the bus-relative base address of a range used by the HBA. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine obtains the value for this parameter from one of the <b>AccessRanges</b> elements in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> if the port driver supplies range-configuration information. Otherwise, this address can be a value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff567076">StorPortGetBusData</a> or a miniport driver-supplied default value. Avoid using a base address of zero because its successful return status can conflict with the error status (<b>NULL</b>).</p>
+<p>Specifies the bus-relative base address of a range used by the HBA. The <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine obtains the value for this parameter from one of the <b>AccessRanges</b> elements in the <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> if the port driver supplies range-configuration information. Otherwise, this address can be a value returned by <a href="..\storport\nf-storport-storportgetbusdata.md">StorPortGetBusData</a> or a miniport driver-supplied default value. Avoid using a base address of zero because its successful return status can conflict with the error status (<b>NULL</b>).</p>
 </dd>
 
 ### -param <i>NumberOfBytes</i> [in]
 
 <dd>
-<p>Specifies the size in bytes of the range that the mapping should cover. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine obtains the value of this parameter from the same <b>AccessRanges</b> element as <i>IoAddress</i> if the port driver supplies range configuration information. Otherwise, this value can be returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff567076">StorPortGetBusData</a> or a miniport driver-supplied default. In any case, the driver must not access the hardware outside of the returned, mapped range.</p>
+<p>Specifies the size in bytes of the range that the mapping should cover. The <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine obtains the value of this parameter from the same <b>AccessRanges</b> element as <i>IoAddress</i> if the port driver supplies range configuration information. Otherwise, this value can be returned by <a href="..\storport\nf-storport-storportgetbusdata.md">StorPortGetBusData</a> or a miniport driver-supplied default. In any case, the driver must not access the hardware outside of the returned, mapped range.</p>
 </dd>
 
 ### -param <i>InIoSpace</i> [in]
 
 <dd>
-<p>TRUE indicates the range to be mapped is in I/O space, and the miniport driver will pass mapped addresses in this range to the Storport <i>port</i> read/write routines to communicate with the HBA. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine obtains the value of this parameter from the same <b>AccessRanges</b> element as <i>IoAddress</i>. Note that a miniport driver <i>must invert</i> the value of the <b>InMemorySpace</b> member in an ACCESS_RANGE-type element before it is passed to <b>StorPortGetDeviceBase</b> as the <i>InIoSpace</i> argument. <b>FALSE</b> indicates that the range to be mapped is in memory space. </p>
+<p>TRUE indicates the range to be mapped is in I/O space, and the miniport driver will pass mapped addresses in this range to the Storport <i>port</i> read/write routines to communicate with the HBA. The <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine obtains the value of this parameter from the same <b>AccessRanges</b> element as <i>IoAddress</i>. Note that a miniport driver <i>must invert</i> the value of the <b>InMemorySpace</b> member in an ACCESS_RANGE-type element before it is passed to <b>StorPortGetDeviceBase</b> as the <i>InIoSpace</i> argument. <b>FALSE</b> indicates that the range to be mapped is in memory space. </p>
 </dd>
 </dl>
 
@@ -101,10 +101,6 @@ STORPORT_API PVOID StorPortGetDeviceBase(
 <p>A mapped, logical base address corresponding to the bus-relative address supplied in the <i>IoAddress</i> parameter. </p>
 
 ## -remarks
-<p>Every miniport driver must pass mapped, logical access range addresses to the Storport <i>port</i> read/write routines and the Storport <i>register</i> read/write routines when communicating with its HBA(s).</p>
-
-<p>This routine supports only those addresses that were assigned to the driver by the system Plug and Play (PnP) manager.</p>
-
 <p>Every miniport driver must pass mapped, logical access range addresses to the Storport <i>port</i> read/write routines and the Storport <i>register</i> read/write routines when communicating with its HBA(s).</p>
 
 <p>This routine supports only those addresses that were assigned to the driver by the system Plug and Play (PnP) manager.</p>
@@ -146,7 +142,7 @@ STORPORT_API PVOID StorPortGetDeviceBase(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567061">StorPortFreeDeviceBase</a>
+<a href="..\storport\nf-storport-storportfreedevicebase.md">StorPortFreeDeviceBase</a>
 </dt>
 </dl>
 <p> </p>

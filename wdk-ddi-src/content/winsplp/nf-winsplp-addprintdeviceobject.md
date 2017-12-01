@@ -82,22 +82,7 @@ HRESULT WINAPI AddPrintDeviceObject(
 
 <p><b>Print Provider is intialized after spooler service starts</b></p>
 
-<p>The print provider should call this function for each previously-installed Printer owned by the provider. During this time, <b>AddPrintDeviceObject</b> doesn't have to impersonate the user context when it is called.<div class="alert"><b>Note</b>  Any device object that is added using  <b>AddPrintDeviceObject</b> will persist until you remove it using <a href="https://msdn.microsoft.com/library/windows/hardware/dn897337">RemovePrintDeviceObject</a>, or 
-    until the spooler service restarts. And when the spooler services stops, all the device objects are automatically deleted.</div>
-<div> </div>
-</p>
-
-<p>The <b>AddPrintDeviceObject</b> function should be called in the following situations:</p>
-
-<p><b>User installs a Printer</b></p>
-
-<p>The print provider should call this function after installing the printer.</p>
-
-<p>The function must be called by impersonating the user who is installing the printer.</p>
-
-<p><b>Print Provider is intialized after spooler service starts</b></p>
-
-<p>The print provider should call this function for each previously-installed Printer owned by the provider. During this time, <b>AddPrintDeviceObject</b> doesn't have to impersonate the user context when it is called.<div class="alert"><b>Note</b>  Any device object that is added using  <b>AddPrintDeviceObject</b> will persist until you remove it using <a href="https://msdn.microsoft.com/library/windows/hardware/dn897337">RemovePrintDeviceObject</a>, or 
+<p>The print provider should call this function for each previously-installed Printer owned by the provider. During this time, <b>AddPrintDeviceObject</b> doesn't have to impersonate the user context when it is called.<div class="alert"><b>Note</b>  Any device object that is added using  <b>AddPrintDeviceObject</b> will persist until you remove it using <a href="..\winsplp\nf-winsplp-removeprintdeviceobject.md">RemovePrintDeviceObject</a>, or 
     until the spooler service restarts. And when the spooler services stops, all the device objects are automatically deleted.</div>
 <div> </div>
 </p>
@@ -149,7 +134,7 @@ HRESULT WINAPI AddPrintDeviceObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn897337">RemovePrintDeviceObject</a>
+<a href="..\winsplp\nf-winsplp-removeprintdeviceobject.md">RemovePrintDeviceObject</a>
 </dt>
 </dl>
 <p> </p>

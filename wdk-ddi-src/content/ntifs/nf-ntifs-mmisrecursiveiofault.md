@@ -67,8 +67,6 @@ BOOLEAN  MmIsRecursiveIoFault(
 ## -remarks
 <p>When a page fault occurs, the file system can call <b>MmIsRecursiveIoFault</b> to determine whether an I/O operation is in progress for the current thread.</p>
 
-<p>When a page fault occurs, the file system can call <b>MmIsRecursiveIoFault</b> to determine whether an I/O operation is in progress for the current thread.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -124,7 +122,7 @@ BOOLEAN  MmIsRecursiveIoFault(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554572">MmIsAddressValid</a>
+<a href="..\ntddk\nf-ntddk-mmisaddressvalid.md">MmIsAddressValid</a>
 </dt>
 </dl>
 <p> </p>

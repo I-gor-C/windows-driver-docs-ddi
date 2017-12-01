@@ -7,7 +7,7 @@ old-location: netvista\rilosgeolocationinfo_2.htm
 old-project: netvista
 ms.assetid: 5207e880-67cb-4cd5-9884-a01e6dd20201
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILOSGEOLOCATIONINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

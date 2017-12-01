@@ -96,7 +96,7 @@ NTSTATUS FltSetInformationFile(
 <p><b>FileAllocationInformation</b></p>
 </td>
 <td>
-<p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540232">FILE_ALLOCATION_INFORMATION</a> for the file. </p>
+<p>Set <a href="..\ntifs\ns-ntifs--file-allocation-information.md">FILE_ALLOCATION_INFORMATION</a> for the file. </p>
 </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ NTSTATUS FltSetInformationFile(
 <p><b>FileBasicInformation</b></p>
 </td>
 <td>
-<p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff545762">FILE_BASIC_INFORMATION</a> for the file. </p>
+<p>Set <a href="..\wdm\ns-wdm--file-basic-information.md">FILE_BASIC_INFORMATION</a> for the file. </p>
 </td>
 </tr>
 <tr>
@@ -112,7 +112,7 @@ NTSTATUS FltSetInformationFile(
 <p><b>FileDispositionInformation</b></p>
 </td>
 <td>
-<p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff545765">FILE_DISPOSITION_INFORMATION</a> for the file. </p>
+<p>Set <a href="..\ntddk\ns-ntddk--file-disposition-information.md">FILE_DISPOSITION_INFORMATION</a> for the file. </p>
 </td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ NTSTATUS FltSetInformationFile(
 <p><b>FileEndOfFileInformation</b></p>
 </td>
 <td>
-<p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff545780">FILE_END_OF_FILE_INFORMATION</a> for the file. </p>
+<p>Set <a href="..\ntddk\ns-ntddk--file-end-of-file-information.md">FILE_END_OF_FILE_INFORMATION</a> for the file. </p>
 </td>
 </tr>
 <tr>
@@ -128,7 +128,7 @@ NTSTATUS FltSetInformationFile(
 <p><b>FileLinkInformation</b></p>
 </td>
 <td>
-<p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540324">FILE_LINK_INFORMATION</a> for the file. </p>
+<p>Set <a href="..\ntifs\ns-ntifs--file-link-information.md">FILE_LINK_INFORMATION</a> for the file. </p>
 </td>
 </tr>
 <tr>
@@ -136,7 +136,7 @@ NTSTATUS FltSetInformationFile(
 <p><b>FilePositionInformation</b></p>
 </td>
 <td>
-<p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff545848">FILE_POSITION_INFORMATION</a> for the file. </p>
+<p>Set <a href="..\wdm\ns-wdm--file-position-information.md">FILE_POSITION_INFORMATION</a> for the file. </p>
 </td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ NTSTATUS FltSetInformationFile(
 <p><b>FileRenameInformation</b></p>
 </td>
 <td>
-<p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540344">FILE_RENAME_INFORMATION</a> for the file. For more information about file renaming, see the following Remarks section. </p>
+<p>Set <a href="..\ntifs\ns-ntifs--file-rename-information.md">FILE_RENAME_INFORMATION</a> for the file. For more information about file renaming, see the following Remarks section. </p>
 </td>
 </tr>
 <tr>
@@ -152,7 +152,7 @@ NTSTATUS FltSetInformationFile(
 <p><b>FileValidDataLengthInformation</b></p>
 </td>
 <td>
-<p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff545873">FILE_VALID_DATA_LENGTH_INFORMATION</a> for the file. </p>
+<p>Set <a href="..\ntddk\ns-ntddk--file-valid-data-length-information.md">FILE_VALID_DATA_LENGTH_INFORMATION</a> for the file. </p>
 </td>
 </tr>
 </table>
@@ -166,15 +166,9 @@ NTSTATUS FltSetInformationFile(
 ## -remarks
 <p>A minifilter driver calls <b>FltSetInformationFile</b> to set information for a given file. The file must currently be open. </p>
 
-<p>A file rename operation imposes the following restriction on the parameter values passed to <b>FltSetInformationFile</b>: As noted in the reference entry for <a href="https://msdn.microsoft.com/library/windows/hardware/ff540344">FILE_RENAME_INFORMATION</a>, a file or directory can only be renamed within a volume. In other words, a rename operation cannot cause a file or directory to be moved to a different volume. Unlike <a href="https://msdn.microsoft.com/library/windows/hardware/ff567096">ZwSetInformationFile</a>, <b>FltSetInformationFile</b> does not validate the contents of the FILE_RENAME_INFORMATION structure. Thus the caller of <b>FltSetInformationFile</b> is responsible for ensuring that the new name for the file or directory is on the same volume as the old name. </p>
+<p>A file rename operation imposes the following restriction on the parameter values passed to <b>FltSetInformationFile</b>: As noted in the reference entry for <a href="..\ntifs\ns-ntifs--file-rename-information.md">FILE_RENAME_INFORMATION</a>, a file or directory can only be renamed within a volume. In other words, a rename operation cannot cause a file or directory to be moved to a different volume. Unlike <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>, <b>FltSetInformationFile</b> does not validate the contents of the FILE_RENAME_INFORMATION structure. Thus the caller of <b>FltSetInformationFile</b> is responsible for ensuring that the new name for the file or directory is on the same volume as the old name. </p>
 
-<p>Minifilter drivers must use <b>FltSetInformationFile</b> , not <a href="https://msdn.microsoft.com/library/windows/hardware/ff567096">ZwSetInformationFile</a>, to rename a file. </p>
-
-<p>A minifilter driver calls <b>FltSetInformationFile</b> to set information for a given file. The file must currently be open. </p>
-
-<p>A file rename operation imposes the following restriction on the parameter values passed to <b>FltSetInformationFile</b>: As noted in the reference entry for <a href="https://msdn.microsoft.com/library/windows/hardware/ff540344">FILE_RENAME_INFORMATION</a>, a file or directory can only be renamed within a volume. In other words, a rename operation cannot cause a file or directory to be moved to a different volume. Unlike <a href="https://msdn.microsoft.com/library/windows/hardware/ff567096">ZwSetInformationFile</a>, <b>FltSetInformationFile</b> does not validate the contents of the FILE_RENAME_INFORMATION structure. Thus the caller of <b>FltSetInformationFile</b> is responsible for ensuring that the new name for the file or directory is on the same volume as the old name. </p>
-
-<p>Minifilter drivers must use <b>FltSetInformationFile</b> , not <a href="https://msdn.microsoft.com/library/windows/hardware/ff567096">ZwSetInformationFile</a>, to rename a file. </p>
+<p>Minifilter drivers must use <b>FltSetInformationFile</b> , not <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>, to rename a file. </p>
 
 ## -requirements
 <table>
@@ -231,37 +225,37 @@ NTSTATUS FltSetInformationFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540232">FILE_ALLOCATION_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-allocation-information.md">FILE_ALLOCATION_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545762">FILE_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm--file-basic-information.md">FILE_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545765">FILE_DISPOSITION_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-disposition-information.md">FILE_DISPOSITION_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545780">FILE_END_OF_FILE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-end-of-file-information.md">FILE_END_OF_FILE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540324">FILE_LINK_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-link-information.md">FILE_LINK_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545848">FILE_POSITION_INFORMATION</a>
+<a href="..\wdm\ns-wdm--file-position-information.md">FILE_POSITION_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540344">FILE_RENAME_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-rename-information.md">FILE_RENAME_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545873">FILE_VALID_DATA_LENGTH_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-valid-data-length-information.md">FILE_VALID_DATA_LENGTH_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543439">FltQueryInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543446">FltQueryVolumeInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformationfile.md">FltQueryVolumeInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567096">ZwSetInformationFile</a>
+<a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
 </dt>
 </dl>
 <p> </p>

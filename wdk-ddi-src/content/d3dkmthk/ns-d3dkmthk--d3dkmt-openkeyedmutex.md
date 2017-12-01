@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DKMT_OPENKEYEDMUTEX structure describes a keyed mutex that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547054">D3DKMTOpenKeyedMutex</a> function opens. </p>
+<p>The D3DKMT_OPENKEYEDMUTEX structure describes a keyed mutex that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenkeyedmutex.md">D3DKMTOpenKeyedMutex</a> function opens. </p>
 
 
 ## -syntax
@@ -96,7 +96,7 @@ typedef struct _D3DKMT_OPENKEYEDMUTEX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547054">D3DKMTOpenKeyedMutex</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenkeyedmutex.md">D3DKMTOpenKeyedMutex</a>
 </dt>
 </dl>
 <p> </p>

@@ -69,25 +69,25 @@ typedef struct _D3DKMT_GETDEVICESTATE {
 ### -field <b>StateType</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547922">D3DKMT_DEVICESTATE_TYPE</a>-typed value that indicates the type of status to retrieve for the device.</p>
+<p>[in] A <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-devicestate-type.md">D3DKMT_DEVICESTATE_TYPE</a>-typed value that indicates the type of status to retrieve for the device.</p>
 </dd>
 
 ### -field <b>ExecutionState</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547900">D3DKMT_DEVICEEXECUTION_STATE</a>-typed value that indicates the execution status of the device. The union that is contained in D3DKMT_GETDEVICESTATE holds a value from this enumeration if the <b>StateType</b> member is D3DKMT_DEVICESTATE_EXECUTION. </p>
+<p>[out] A <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-deviceexecution-state.md">D3DKMT_DEVICEEXECUTION_STATE</a>-typed value that indicates the execution status of the device. The union that is contained in D3DKMT_GETDEVICESTATE holds a value from this enumeration if the <b>StateType</b> member is D3DKMT_DEVICESTATE_EXECUTION. </p>
 </dd>
 
 ### -field <b>PresentState</b>
 
 <dd>
-<p>[in/out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547905">D3DKMT_DEVICEPRESENT_STATE</a> structure that describes parameters for retrieving the present status of the device. The union that is contained in D3DKMT_GETDEVICESTATE holds a structure of this type if the <b>StateType</b> member is D3DKMT_DEVICESTATE_PRESENT. </p>
+<p>[in/out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-devicepresent-state.md">D3DKMT_DEVICEPRESENT_STATE</a> structure that describes parameters for retrieving the present status of the device. The union that is contained in D3DKMT_GETDEVICESTATE holds a structure of this type if the <b>StateType</b> member is D3DKMT_DEVICESTATE_PRESENT. </p>
 </dd>
 
 ### -field <b>ResetState</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547915">D3DKMT_DEVICERESET_STATE</a> structure that describes the reset status of the device. The union that is contained in D3DKMT_GETDEVICESTATE holds a structure of this type if the <b>StateType</b> member is D3DKMT_DEVICESTATE_RESET. </p>
+<p>[out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-devicereset-state.md">D3DKMT_DEVICERESET_STATE</a> structure that describes the reset status of the device. The union that is contained in D3DKMT_GETDEVICESTATE holds a structure of this type if the <b>StateType</b> member is D3DKMT_DEVICESTATE_RESET. </p>
 </dd>
 </dl>
 
@@ -119,19 +119,19 @@ typedef struct _D3DKMT_GETDEVICESTATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547900">D3DKMT_DEVICEEXECUTION_STATE</a>
+<a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-deviceexecution-state.md">D3DKMT_DEVICEEXECUTION_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547905">D3DKMT_DEVICEPRESENT_STATE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-devicepresent-state.md">D3DKMT_DEVICEPRESENT_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547915">D3DKMT_DEVICERESET_STATE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-devicereset-state.md">D3DKMT_DEVICERESET_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547922">D3DKMT_DEVICESTATE_TYPE</a>
+<a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-devicestate-type.md">D3DKMT_DEVICESTATE_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546959">D3DKMTGetDeviceState</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetdevicestate.md">D3DKMTGetDeviceState</a>
 </dt>
 </dl>
 <p> </p>

@@ -133,8 +133,6 @@ BOOLEAN VideoPortCheckForDeviceExistence(
 ## -remarks
 <p>For more information about PCI identifiers, see <a href="NULL">Identifiers for PCI Devices</a>. </p>
 
-<p>For more information about PCI identifiers, see <a href="NULL">Identifiers for PCI Devices</a>. </p>
-
 ## -requirements
 <table>
 <tr>

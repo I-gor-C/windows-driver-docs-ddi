@@ -370,30 +370,6 @@ typedef enum D3D10_DDI_FILTER {
 
 <p>Filtering can also be described by a comparison component. By default (no comparison filtering), the result of a sampling operation is a blend of a number of samples. Comparison filtering performs identically to the default mode in terms of which set of texels are read from the texture except for one difference. Just before blending the values together to produce a final result, each individual value read from the texture is compared against a reference value that is provided from the shader. The type of comparison (greater than, less than, equal to, and so on) is determined by the selected sampler state. The result of each comparison is true (1.0) or false (0.0). Comparison filtering then blends these true and false results together rather than the original values read from the texture. Therefore, the final result of a comparison filter is always in the range 0.0 to 1.0. The primary use for comparison filtering is for shadow-buffer filtering.</p>
 
-<p>Filtering determines a representative value from the sample coordinates of a texture and derivatives for those coordinates. The magnitude of the derivative determines the level of detail (LOD) on the texture to read.</p>
-
-<p>If the LOD is positive (which indicates that the region that is sampled is smaller than roughly the size of a texel in the largest active MIP-map level of the texture), the filter is a <i>magnifying</i> filter. Otherwise, the filter is a <i>minifying</i> filter. When magnifying, the largest active MIP-map level of the texture is used. When minifying, the two MIP-map levels that are closest to the LOD are used. For a given MIP-map level that is accessed on a texture, filtering can be <i>point</i> or <i>linear</i>. Point filtering returns the nearest texel to the lookup coordinates. Linear filtering returns the linear-weighted blend of the nearest 4 texels to the sample location.</p>
-
-<p>When the driver chooses between two MIP-map levels, the driver uses the <i>mip</i> filter. The mip filter can also be point or linear. Point mip filtering returns the result of sampling from the nearest mip to the calculated LOD. Linear mip filtering returns the linear-weighted blend between the nearest two MIP-map levels to the calculated LOD.</p>
-
-<p>The values of the D3D10_DDI_FILTER enumeration describe many of the possible combinations of min, mag, and mip filtering that can also be point or linear. For example, D3D10_DDI_FILTER_MIN_MAG_POINT_MIP_LINEAR means to use point filtering for the min and mag filters and to use linear filtering for the mip filter.</p>
-
-<p>Another type of filtering is <i>anisotropic</i>. This takes into account anisotropy in the derivatives of the texture coordinates to perform an area sampling of the texture. For example, if a texture is being viewed at a slope, anisotropic filtering accounts for this when computing what the filtered result should be, at greater processing power than the min, mag, or mip filters. No value is derived in mixing anisotropic filtering with other filtering modes for magnifying and minifying. For anisotropic filtering, the mip filter is always linear. Therefore, the anisotropic filtering values of D3D10_DDI_FILTER do not expose choices of min, mag, or mip.</p>
-
-<p>Filtering can also be described by a comparison component. By default (no comparison filtering), the result of a sampling operation is a blend of a number of samples. Comparison filtering performs identically to the default mode in terms of which set of texels are read from the texture except for one difference. Just before blending the values together to produce a final result, each individual value read from the texture is compared against a reference value that is provided from the shader. The type of comparison (greater than, less than, equal to, and so on) is determined by the selected sampler state. The result of each comparison is true (1.0) or false (0.0). Comparison filtering then blends these true and false results together rather than the original values read from the texture. Therefore, the final result of a comparison filter is always in the range 0.0 to 1.0. The primary use for comparison filtering is for shadow-buffer filtering.</p>
-
-<p>Filtering determines a representative value from the sample coordinates of a texture and derivatives for those coordinates. The magnitude of the derivative determines the level of detail (LOD) on the texture to read.</p>
-
-<p>If the LOD is positive (which indicates that the region that is sampled is smaller than roughly the size of a texel in the largest active MIP-map level of the texture), the filter is a <i>magnifying</i> filter. Otherwise, the filter is a <i>minifying</i> filter. When magnifying, the largest active MIP-map level of the texture is used. When minifying, the two MIP-map levels that are closest to the LOD are used. For a given MIP-map level that is accessed on a texture, filtering can be <i>point</i> or <i>linear</i>. Point filtering returns the nearest texel to the lookup coordinates. Linear filtering returns the linear-weighted blend of the nearest 4 texels to the sample location.</p>
-
-<p>When the driver chooses between two MIP-map levels, the driver uses the <i>mip</i> filter. The mip filter can also be point or linear. Point mip filtering returns the result of sampling from the nearest mip to the calculated LOD. Linear mip filtering returns the linear-weighted blend between the nearest two MIP-map levels to the calculated LOD.</p>
-
-<p>The values of the D3D10_DDI_FILTER enumeration describe many of the possible combinations of min, mag, and mip filtering that can also be point or linear. For example, D3D10_DDI_FILTER_MIN_MAG_POINT_MIP_LINEAR means to use point filtering for the min and mag filters and to use linear filtering for the mip filter.</p>
-
-<p>Another type of filtering is <i>anisotropic</i>. This takes into account anisotropy in the derivatives of the texture coordinates to perform an area sampling of the texture. For example, if a texture is being viewed at a slope, anisotropic filtering accounts for this when computing what the filtered result should be, at greater processing power than the min, mag, or mip filters. No value is derived in mixing anisotropic filtering with other filtering modes for magnifying and minifying. For anisotropic filtering, the mip filter is always linear. Therefore, the anisotropic filtering values of D3D10_DDI_FILTER do not expose choices of min, mag, or mip.</p>
-
-<p>Filtering can also be described by a comparison component. By default (no comparison filtering), the result of a sampling operation is a blend of a number of samples. Comparison filtering performs identically to the default mode in terms of which set of texels are read from the texture except for one difference. Just before blending the values together to produce a final result, each individual value read from the texture is compared against a reference value that is provided from the shader. The type of comparison (greater than, less than, equal to, and so on) is determined by the selected sampler state. The result of each comparison is true (1.0) or false (0.0). Comparison filtering then blends these true and false results together rather than the original values read from the texture. Therefore, the final result of a comparison filter is always in the range 0.0 to 1.0. The primary use for comparison filtering is for shadow-buffer filtering.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -422,7 +398,7 @@ typedef enum D3D10_DDI_FILTER {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createsampler.md">CreateSampler</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542011">D3D10_DDI_SAMPLER_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-sampler-desc.md">D3D10_DDI_SAMPLER_DESC</a>
 </dt>
 </dl>
 <p> </p>

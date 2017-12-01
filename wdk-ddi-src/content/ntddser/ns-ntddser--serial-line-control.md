@@ -122,7 +122,7 @@ typedef struct _SERIAL_LINE_CONTROL {
 </dl>
 
 ## -remarks
-<p>This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546582">IOCTL_SERIAL_GET_LINE_CONTROL</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff546740">IOCTL_SERIAL_SET_LINE_CONTROL</a> requests.</p>
+<p>This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl-serial-get-line-control.md">IOCTL_SERIAL_GET_LINE_CONTROL</a> and <a href="..\ntddser\ni-ntddser-ioctl-serial-set-line-control.md">IOCTL_SERIAL_SET_LINE_CONTROL</a> requests.</p>
 
 ## -requirements
 <table>
@@ -141,10 +141,10 @@ typedef struct _SERIAL_LINE_CONTROL {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546582">IOCTL_SERIAL_GET_LINE_CONTROL</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-get-line-control.md">IOCTL_SERIAL_GET_LINE_CONTROL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546740">IOCTL_SERIAL_SET_LINE_CONTROL</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-set-line-control.md">IOCTL_SERIAL_SET_LINE_CONTROL</a>
 </dt>
 </dl>
 <p> </p>

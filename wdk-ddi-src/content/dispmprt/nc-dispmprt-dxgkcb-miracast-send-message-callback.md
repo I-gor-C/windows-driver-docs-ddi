@@ -67,7 +67,7 @@ VOID* DxgkCbMiracastSendMessageCallback(
 ### -param <i>pIoStatusBlock</i> [in]
 
 <dd>
-<p>A pointer to a driver-supplied buffer to hold the returned <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure for the completed or canceled user-mode message. This structure holds the status of the I/O call and the number of bytes that the user-mode driver wrote to the output buffer.</p>
+<p>A pointer to a driver-supplied buffer to hold the returned <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure for the completed or canceled user-mode message. This structure holds the status of the I/O call and the number of bytes that the user-mode driver wrote to the output buffer.</p>
 </dd>
 </dl>
 
@@ -75,10 +75,6 @@ VOID* DxgkCbMiracastSendMessageCallback(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>This function can be called simultaneously from multiple execution threads.</p>
-
-<p>The operating system guarantees that this function follows the zero level synchronization mode as defined in <a href="https://msdn.microsoft.com/2baf91e8-fafb-40e2-a24c-cbf04fe45274">Threading and Synchronization Zero Level</a>.</p>
-
 <p>This function can be called simultaneously from multiple execution threads.</p>
 
 <p>The operating system guarantees that this function follows the zero level synchronization mode as defined in <a href="https://msdn.microsoft.com/2baf91e8-fafb-40e2-a24c-cbf04fe45274">Threading and Synchronization Zero Level</a>.</p>
@@ -137,7 +133,7 @@ VOID* DxgkCbMiracastSendMessageCallback(
 <a href="..\dispmprt\nc-dispmprt-dxgkcb-miracast-send-message.md">DxgkCbMiracastSendMessage</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a>
+<a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

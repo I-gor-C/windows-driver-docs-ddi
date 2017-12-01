@@ -7,7 +7,7 @@ old-location: netvista\rilcalleridsettings_2.htm
 old-project: netvista
 ms.assetid: 129fcbf9-8162-494a-a571-5c604849d387
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCALLERIDSETTINGS, RILCALLERIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

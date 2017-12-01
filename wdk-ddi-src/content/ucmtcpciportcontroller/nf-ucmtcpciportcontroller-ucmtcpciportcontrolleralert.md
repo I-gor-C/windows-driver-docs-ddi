@@ -62,13 +62,13 @@ VOID UcmTcpciPortControllerAlert(
 ### -param <i>PortControllerObject</i> [in]
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 
 ### -param <i>AlertData</i> 
 
 <dd>
-<p>A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt805898">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a> that contains all current alerts that have not been sent to UcmTcpciCx. This value cannot be NULL.</p>
+<p>A pointer to an array of <a href="buses.ucmtcpci_port_controller_alert_data">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a> that contains all current alerts that have not been sent to UcmTcpciCx. This value cannot be NULL.</p>
 </dd>
 
 ### -param <i>NumberOfAlerts</i> 
@@ -84,17 +84,7 @@ VOID UcmTcpciPortControllerAlert(
                     </p>
 
 ## -remarks
-<p>The client driver must call <b>UcmTcpciPortControllerAlert</b> that has been previously started by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt805846">UcmTcpciPortControllerStart</a>.</p>
-
-<p>When a hardware alert occurs, the client driver must determine the type of alerts, fetch any auxiliary information associated with that alert, such as a PD message, populate the array, and then call <b>UcmTcpciPortControllerAlert</b>.</p>
-
-<p>The client driver must report the alerts sequentially. The driver must not call this method on threads that are running simultaneously as that can lead to race conditions. Even though the class extension ensures that all internal data is correctly lock-protected, if the driver calls <b>UcmTcpciPortControllerAlert</b> from multiple threads at the same time without any external synchronization, it is not guaranteed that set of received alerts is current. To avoid that scenario, the driver must call this method within the <a href="https://msdn.microsoft.com/d72a15be-772f-4cd4-a304-10981056d735">Interrupt Service Routine</a> (ISR)or a <a href="https://msdn.microsoft.com/962e6b38-afed-4711-a556-ed9cbc139a1a">DPC object</a> that is queued for the ISR. The ISR should be  synchronized correctly to have only one instance running at any given time. </p>
-
-<p>The client driver must assume that the class extension may submit requests before <b>UcmTcpciPortControllerAlert</b> returns, from within this call. </p>
-
-<p>When handling alerts, UcmTcpciCx may send hardware requests to the client driver before the <b>UcmTcpciPortControllerAlert</b> call returns. If the driver holds a lock while calling <b>UcmTcpciPortControllerAlert</b> and also attempts to acquire the same lock when handling the hardware request, deadlock can occur.</p>
-
-<p>The client driver must call <b>UcmTcpciPortControllerAlert</b> that has been previously started by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt805846">UcmTcpciPortControllerStart</a>.</p>
+<p>The client driver must call <b>UcmTcpciPortControllerAlert</b> that has been previously started by calling <a href="buses.ucmtcpciportcontrollerstart">UcmTcpciPortControllerStart</a>.</p>
 
 <p>When a hardware alert occurs, the client driver must determine the type of alerts, fetch any auxiliary information associated with that alert, such as a PD message, populate the array, and then call <b>UcmTcpciPortControllerAlert</b>.</p>
 

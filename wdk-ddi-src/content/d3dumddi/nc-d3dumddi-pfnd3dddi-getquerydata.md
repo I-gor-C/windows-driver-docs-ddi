@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY GetQueryData(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543182">D3DDDIARG_GETQUERYDATA</a> structure that contains the information about the query that is retrieved from the driver.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getquerydata.md">D3DDDIARG_GETQUERYDATA</a> structure that contains the information about the query that is retrieved from the driver.</p>
 </dd>
 </dl>
 
@@ -87,13 +87,7 @@ __checkReturn HRESULT APIENTRY GetQueryData(
 
 <p>If the query is completed, the driver should return S_OK; otherwise, the driver should return S_FALSE. </p>
 
-<p>If a driver supports <a href="display.supporting_multiple_processors#runtime-handled_multiple-processor_optimizations#runtime-handled_multiple-processor_optimizations">runtime-handled multiple-processor optimizations</a> and exposes a DDI version of 0x0000000B or greater, the runtime will call <i>GetQueryData</i> in a reentrant manner. The driver returns the DDI-version value in the <b>DriverVersion</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541724">D3D10DDIARG_OPENADAPTER</a> structure in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-openadapter.md">OpenAdapter</a> function. When the runtime calls <i>GetQueryData</i> in a reentrant manner, one thread can execute inside <i>GetQueryData</i> while another thread that references the same display device executes inside of another user-mode display driver function. </p>
-
-<p>The Microsoft Direct3D runtime can call <i>GetQueryData</i> at any time after calling the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-issuequery.md">IssueQuery</a> function. The user-mode display driver should check the current fence value against the value that is stored in the driver's private query structure to determine if the query issue is complete.</p>
-
-<p>If the query is completed, the driver should return S_OK; otherwise, the driver should return S_FALSE. </p>
-
-<p>If a driver supports <a href="display.supporting_multiple_processors#runtime-handled_multiple-processor_optimizations#runtime-handled_multiple-processor_optimizations">runtime-handled multiple-processor optimizations</a> and exposes a DDI version of 0x0000000B or greater, the runtime will call <i>GetQueryData</i> in a reentrant manner. The driver returns the DDI-version value in the <b>DriverVersion</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541724">D3D10DDIARG_OPENADAPTER</a> structure in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-openadapter.md">OpenAdapter</a> function. When the runtime calls <i>GetQueryData</i> in a reentrant manner, one thread can execute inside <i>GetQueryData</i> while another thread that references the same display device executes inside of another user-mode display driver function. </p>
+<p>If a driver supports <a href="display.supporting_multiple_processors#runtime-handled_multiple-processor_optimizations#runtime-handled_multiple-processor_optimizations">runtime-handled multiple-processor optimizations</a> and exposes a DDI version of 0x0000000B or greater, the runtime will call <i>GetQueryData</i> in a reentrant manner. The driver returns the DDI-version value in the <b>DriverVersion</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-openadapter.md">D3D10DDIARG_OPENADAPTER</a> structure in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-openadapter.md">OpenAdapter</a> function. When the runtime calls <i>GetQueryData</i> in a reentrant manner, one thread can execute inside <i>GetQueryData</i> while another thread that references the same display device executes inside of another user-mode display driver function. </p>
 
 ## -requirements
 <table>
@@ -130,10 +124,10 @@ __checkReturn HRESULT APIENTRY GetQueryData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543182">D3DDDIARG_GETQUERYDATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getquerydata.md">D3DDDIARG_GETQUERYDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-issuequery.md">IssueQuery</a>

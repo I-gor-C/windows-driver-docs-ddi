@@ -90,13 +90,7 @@ VOID __inline AtaPortDeviceBusy(
 
 <p>The port driver automatically resumes paused queues after the time-out interval expires.</p>
 
-<p>The miniport driver must not call <b>AtaPortDeviceBusy</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff558992">IdeHwInterrupt</a> routine.</p>
-
-<p>When the port driver receives this call, it pauses the request queue for the indicated device for the time that is indicated by <i>BusyTimeout</i>. The caller can pause the channel request queue instead of the request queue for an individual device by assigning the wildcard value of IDE_UNTAGGED to parameters <i>TargetId</i> and <i>Lun</i>. </p>
-
-<p>The port driver automatically resumes paused queues after the time-out interval expires.</p>
-
-<p>The miniport driver must not call <b>AtaPortDeviceBusy</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff558992">IdeHwInterrupt</a> routine.</p>
+<p>The miniport driver must not call <b>AtaPortDeviceBusy</b> from its <a href="storage.idehwinterrupt">IdeHwInterrupt</a> routine.</p>
 
 ## -requirements
 <table>
@@ -125,10 +119,10 @@ VOID __inline AtaPortDeviceBusy(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558992">IdeHwInterrupt</a>
+<a href="storage.idehwinterrupt">IdeHwInterrupt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550157">AtaPortDeviceReady</a>
+<a href="..\irb\nf-irb-ataportdeviceready.md">AtaPortDeviceReady</a>
 </dt>
 </dl>
 <p> </p>

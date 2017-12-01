@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The <b>TOKEN_INFORMATION_CLASS</b> enumeration type contains values that specify the type of information being assigned to or retrieved from an access token. </p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556690">SeQueryInformationToken</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567055">ZwQueryInformationToken</a> use <b>TOKEN_INFORMATION_CLASS</b> values to indicate the type of token information to retrieve. </p>
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> and <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a> use <b>TOKEN_INFORMATION_CLASS</b> values to indicate the type of token information to retrieve. </p>
 
 
 ## -syntax
@@ -99,67 +99,67 @@ typedef enum _TOKEN_INFORMATION_CLASS {
 ### -field <a id="TokenUser"></a><a id="tokenuser"></a><a id="TOKENUSER"></a><b>TokenUser</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556855">TOKEN_USER</a> structure containing the token's user account. </p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-user.md">TOKEN_USER</a> structure containing the token's user account. </p>
 </dd>
 
 ### -field <a id="TokenGroups"></a><a id="tokengroups"></a><a id="TOKENGROUPS"></a><b>TokenGroups</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556834">TOKEN_GROUPS</a> structure containing the group accounts associated with the token. </p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-groups.md">TOKEN_GROUPS</a> structure containing the group accounts associated with the token. </p>
 </dd>
 
 ### -field <a id="TokenPrivileges"></a><a id="tokenprivileges"></a><a id="TOKENPRIVILEGES"></a><b>TokenPrivileges</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556846">TOKEN_PRIVILEGES</a> structure containing the token's privileges. </p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-privileges.md">TOKEN_PRIVILEGES</a> structure containing the token's privileges. </p>
 </dd>
 
 ### -field <a id="TokenOwner"></a><a id="tokenowner"></a><a id="TOKENOWNER"></a><b>TokenOwner</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556842">TOKEN_OWNER</a> structure containing the default owner SID for newly created objects. </p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-owner.md">TOKEN_OWNER</a> structure containing the default owner SID for newly created objects. </p>
 </dd>
 
 ### -field <a id="TokenPrimaryGroup"></a><a id="tokenprimarygroup"></a><a id="TOKENPRIMARYGROUP"></a><b>TokenPrimaryGroup</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556845">TOKEN_PRIMARY_GROUP</a> structure containing the default primary group SID for newly created objects. </p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-primary-group.md">TOKEN_PRIMARY_GROUP</a> structure containing the default primary group SID for newly created objects. </p>
 </dd>
 
 ### -field <a id="TokenDefaultDacl"></a><a id="tokendefaultdacl"></a><a id="TOKENDEFAULTDACL"></a><b>TokenDefaultDacl</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556831">TOKEN_DEFAULT_DACL</a> structure containing the default discretionary ACL (DACL)) for newly created objects. </p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-default-dacl.md">TOKEN_DEFAULT_DACL</a> structure containing the default discretionary ACL (DACL)) for newly created objects. </p>
 </dd>
 
 ### -field <a id="TokenSource"></a><a id="tokensource"></a><a id="TOKENSOURCE"></a><b>TokenSource</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556848">TOKEN_SOURCE</a> structure containing the source of the token. TOKEN_QUERY_SOURCE access is needed to retrieve this information. </p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-source.md">TOKEN_SOURCE</a> structure containing the source of the token. TOKEN_QUERY_SOURCE access is needed to retrieve this information. </p>
 </dd>
 
 ### -field <a id="TokenType"></a><a id="tokentype"></a><a id="TOKENTYPE"></a><b>TokenType</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556851">TOKEN_TYPE</a> value indicating whether the token is a primary or impersonation token. </p>
+<p>The buffer receives a <a href="..\ntifs\ne-ntifs--token-type.md">TOKEN_TYPE</a> value indicating whether the token is a primary or impersonation token. </p>
 </dd>
 
 ### -field <a id="TokenImpersonationLevel"></a><a id="tokenimpersonationlevel"></a><a id="TOKENIMPERSONATIONLEVEL"></a><b>TokenImpersonationLevel</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556631">SECURITY_IMPERSONATION_LEVEL</a> value indicating the impersonation level of the token. If the access token is not an impersonation token, the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556690">SeQueryInformationToken</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567055">ZwQueryInformationToken</a> fails. </p>
+<p>The buffer receives a <a href="..\wudfddi\ne-wudfddi--security-impersonation-level.md">SECURITY_IMPERSONATION_LEVEL</a> value indicating the impersonation level of the token. If the access token is not an impersonation token, the call to <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> or <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a> fails. </p>
 </dd>
 
 ### -field <a id="TokenStatistics"></a><a id="tokenstatistics"></a><a id="TOKENSTATISTICS"></a><b>TokenStatistics</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556849">TOKEN_STATISTICS</a> structure containing various token statistics. </p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-statistics.md">TOKEN_STATISTICS</a> structure containing various token statistics. </p>
 </dd>
 
 ### -field <a id="TokenRestrictedSids"></a><a id="tokenrestrictedsids"></a><a id="TOKENRESTRICTEDSIDS"></a><b>TokenRestrictedSids</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556834">TOKEN_GROUPS</a> structure containing the list of restricting SIDs in a restricted token. This value is valid starting with Windows Vista.</p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-groups.md">TOKEN_GROUPS</a> structure containing the list of restricting SIDs in a restricted token. This value is valid starting with Windows Vista.</p>
 </dd>
 
 ### -field <a id="TokenSessionId"></a><a id="tokensessionid"></a><a id="TOKENSESSIONID"></a><b>TokenSessionId</b>
@@ -171,7 +171,7 @@ typedef enum _TOKEN_INFORMATION_CLASS {
 ### -field <a id="TokenGroupsAndPrivileges"></a><a id="tokengroupsandprivileges"></a><a id="TOKENGROUPSANDPRIVILEGES"></a><b>TokenGroupsAndPrivileges</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556836">TOKEN_GROUPS_AND_PRIVILEGES</a> structure that contains the user SID, the group accounts, the restricted SIDs, and the authentication ID associated with the token. This value is valid starting with Windows Vista.</p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-groups-and-privileges.md">TOKEN_GROUPS_AND_PRIVILEGES</a> structure that contains the user SID, the group accounts, the restricted SIDs, and the authentication ID associated with the token. This value is valid starting with Windows Vista.</p>
 </dd>
 
 ### -field <a id="TokenSessionReference"></a><a id="tokensessionreference"></a><a id="TOKENSESSIONREFERENCE"></a><b>TokenSessionReference</b>
@@ -195,7 +195,7 @@ typedef enum _TOKEN_INFORMATION_CLASS {
 ### -field <a id="TokenOrigin"></a><a id="tokenorigin"></a><a id="TOKENORIGIN"></a><b>TokenOrigin</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556839">TOKEN_ORIGIN</a> value. </p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-origin.md">TOKEN_ORIGIN</a> value. </p>
 <p>If the token resulted from a logon that used explicit credentials, such as passing a name, domain, and password to the user-mode <a href="security.logonuser">LogonUser</a> function, then the <b>TOKEN_ORIGIN</b> structure will contain the ID of the logon session that created it.</p>
 <p>If the token resulted from network authentication, such as a call to user-mode <b>AcceptSecurityContext</b> function or a call to user-mode <b>LogonUser</b> function with dwLogonType set to LOGON32_LOGON_NETWORK or LOGON32_LOGON_NETWORK_CLEARTEXT, then this value will be zero.</p>
 <p> This value is valid starting with Windows Server 2003.</p>
@@ -240,7 +240,7 @@ typedef enum _TOKEN_INFORMATION_CLASS {
 ### -field <a id="TokenIntegrityLevel"></a><a id="tokenintegritylevel"></a><a id="TOKENINTEGRITYLEVEL"></a><b>TokenIntegrityLevel</b>
 
 <dd>
-<p>The buffer receives a <a href="security.token_mandatory_label">TOKEN_MANDATORY_LABEL</a> structure that specifies the token's integrity level. This value is valid starting with Windows Vista. For <a href="https://msdn.microsoft.com/library/windows/hardware/ff556690">SeQueryInformationToken</a> the output is the actual integrity level  (<b>DWORD</b>).</p>
+<p>The buffer receives a <a href="security.token_mandatory_label">TOKEN_MANDATORY_LABEL</a> structure that specifies the token's integrity level. This value is valid starting with Windows Vista. For <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> the output is the actual integrity level  (<b>DWORD</b>).</p>
 </dd>
 
 ### -field <a id="TokenUIAccess"></a><a id="tokenuiaccess"></a><a id="TOKENUIACCESS"></a><b>TokenUIAccess</b>
@@ -258,7 +258,7 @@ typedef enum _TOKEN_INFORMATION_CLASS {
 ### -field <a id="TokenLogonSid"></a><a id="tokenlogonsid"></a><a id="TOKENLOGONSID"></a><b>TokenLogonSid</b>
 
 <dd>
-<p>The buffer receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556834">TOKEN_GROUPS</a> structure that specifies the token's logon SID. This value is valid starting with Windows Vista.</p>
+<p>The buffer receives a <a href="..\ntifs\ns-ntifs--token-groups.md">TOKEN_GROUPS</a> structure that specifies the token's logon SID. This value is valid starting with Windows Vista.</p>
 </dd>
 
 ### -field <a id="TokenIsAppContainer"></a><a id="tokenisappcontainer"></a><a id="TOKENISAPPCONTAINER"></a><b>TokenIsAppContainer</b>
@@ -366,58 +366,58 @@ typedef enum _TOKEN_INFORMATION_CLASS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538866">ACL</a>
+<a href="..\ntifs\ns-ntifs--acl.md">ACL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556631">SECURITY_IMPERSONATION_LEVEL</a>
+<a href="..\wudfddi\ne-wudfddi--security-impersonation-level.md">SECURITY_IMPERSONATION_LEVEL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556654">SeFilterToken</a>
+<a href="..\ntifs\nf-ntifs-sefiltertoken.md">SeFilterToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556690">SeQueryInformationToken</a>
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556724">SeTokenIsRestricted</a>
+<a href="..\ntifs\nf-ntifs-setokenisrestricted.md">SeTokenIsRestricted</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556831">TOKEN_DEFAULT_DACL</a>
+<a href="..\ntifs\ns-ntifs--token-default-dacl.md">TOKEN_DEFAULT_DACL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556834">TOKEN_GROUPS</a>
+<a href="..\ntifs\ns-ntifs--token-groups.md">TOKEN_GROUPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556842">TOKEN_OWNER</a>
+<a href="..\ntifs\ns-ntifs--token-owner.md">TOKEN_OWNER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556839">TOKEN_ORIGIN</a>
+<a href="..\ntifs\ns-ntifs--token-origin.md">TOKEN_ORIGIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556845">TOKEN_PRIMARY_GROUP</a>
+<a href="..\ntifs\ns-ntifs--token-primary-group.md">TOKEN_PRIMARY_GROUP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556846">TOKEN_PRIVILEGES</a>
+<a href="..\ntifs\ns-ntifs--token-privileges.md">TOKEN_PRIVILEGES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556848">TOKEN_SOURCE</a>
+<a href="..\ntifs\ns-ntifs--token-source.md">TOKEN_SOURCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556849">TOKEN_STATISTICS</a>
+<a href="..\ntifs\ns-ntifs--token-statistics.md">TOKEN_STATISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556851">TOKEN_TYPE</a>
+<a href="..\ntifs\ne-ntifs--token-type.md">TOKEN_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556855">TOKEN_USER</a>
+<a href="..\ntifs\ns-ntifs--token-user.md">TOKEN_USER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567055">ZwQueryInformationToken</a>
+<a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567102">ZwSetInformationToken</a>
+<a href="..\ntifs\nf-ntifs-zwsetinformationtoken.md">ZwSetInformationToken</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallhandoverstate.htm
 old-project: netvista
 ms.assetid: 1c9fb343-32f1-444e-9328-097da72cd006
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCALLHANDOVERSTATE, RILCALLHANDOVERSTATE, *LPRILCALLHANDOVERSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

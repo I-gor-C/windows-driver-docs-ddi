@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnEscapeCb(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544190">D3DDDICB_ESCAPE</a> structure that describes the shared information.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-escape.md">D3DDDICB_ESCAPE</a> structure that describes the shared information.</p>
 </dd>
 </dl>
 
@@ -93,10 +93,6 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnEscapeCb(
 <p>This function might also return other HRESULT values.</p>
 
 ## -remarks
-<p>A user-mode display driver calls <b>pfnEscapeCb</b> to share miscellaneous information with the display miniport driver in a way that is not supported by any other driver communication. The user-mode display driver can send miscellaneous information to the display miniport driver or can retrieve information from the display miniport driver. </p>
-
-<p><b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnEscapeCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.</p>
-
 <p>A user-mode display driver calls <b>pfnEscapeCb</b> to share miscellaneous information with the display miniport driver in a way that is not supported by any other driver communication. The user-mode display driver can send miscellaneous information to the display miniport driver or can retrieve information from the display miniport driver. </p>
 
 <p><b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnEscapeCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.</p>
@@ -136,10 +132,10 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnEscapeCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544512">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544190">D3DDDICB_ESCAPE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-escape.md">D3DDDICB_ESCAPE</a>
 </dt>
 <dt>
 <a href="display.dxgkddiescape">DxgkDdiEscape</a>

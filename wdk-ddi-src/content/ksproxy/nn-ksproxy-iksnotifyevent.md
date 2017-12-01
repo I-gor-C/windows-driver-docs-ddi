@@ -7,7 +7,7 @@ old-location: stream\iksnotifyevent.htm
 old-project: stream
 ms.assetid: 1de4db64-be4c-4a9b-b1ab-29f703e17959
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsSynchronousDeviceControl
 ms.prod: windows-hardware
 ms.technology: windows-devices

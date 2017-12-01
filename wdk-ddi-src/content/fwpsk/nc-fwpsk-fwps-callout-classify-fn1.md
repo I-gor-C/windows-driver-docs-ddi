@@ -7,7 +7,7 @@ old-location: netvista\classifyfn1.htm
 old-project: netvista
 ms.assetid: 128fd929-6e83-46a0-9475-e459ede58f30
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ void NTAPI classifyFn1(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552401">FWPS_INCOMING_VALUES0</a> structure. This
+     <a href="netvista.fwps_incoming_values0">FWPS_INCOMING_VALUES0</a> structure. This
      structure contains the values for each of the data fields in the layer being filtered.</p>
 </dd>
 
@@ -89,7 +89,7 @@ void NTAPI classifyFn1(
      <i>classifyFn1</i> callout function is called. For the stream layer, this parameter points to an 
      <a href="netvista.fwps_stream_callout_io_packet0">
      FWPS_STREAM_CALLOUT_IO_PACKET0</a> structure. For all of the other layers, this parameter points to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure if it is not
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure if it is not
      <b>NULL</b>.</p>
 </dd>
 
@@ -103,7 +103,7 @@ void NTAPI classifyFn1(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a> structure. This structure
+     <a href="netvista.fwps_filter1">FWPS_FILTER1</a> structure. This structure
      describes the filter that specifies the callout for the filter's action.</p>
 </dd>
 
@@ -120,7 +120,7 @@ void NTAPI classifyFn1(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a> structure that
+     <a href="netvista.fwps_classify_out0">FWPS_CLASSIFY_OUT0</a> structure that
      receives any data that the 
      <i>classifyFn1</i> callout function returns to the caller.</p>
 </dd>
@@ -131,7 +131,7 @@ void NTAPI classifyFn1(
 
 ## -remarks
 <p>A callout driver registers a callout's callout functions with the filter engine by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a> function.</p>
+    <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a> function.</p>
 
 <p>The filter engine calls a callout's 
     <i>classifyFn1</i> callout function with data to be processed whenever all of the test conditions are true
@@ -140,54 +140,22 @@ void NTAPI classifyFn1(
 <p>A callout's 
     <i>classifyFn1</i> callout function should clear the FWPS_RIGHT_ACTION_WRITE flag in the 
     <b>rights</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a> structure in any of
+    <a href="netvista.fwps_classify_out0">FWPS_CLASSIFY_OUT0</a> structure in any of
     the following situations:</p>
 
 <p>When the 
       <i>classifyFn1</i> callout function sets the 
       <b>actionType</b> member of the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a> structure to
+      <a href="netvista.fwps_classify_out0">FWPS_CLASSIFY_OUT0</a> structure to
       FWP_ACTION_BLOCK.</p>
 
 <p>When the 
       <i>classifyFn1</i> callout function sets the 
       <b>actionType</b> member of the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a> structure to
+      <a href="netvista.fwps_classify_out0">FWPS_CLASSIFY_OUT0</a> structure to
       FWP_ACTION_PERMIT and the FWPS_FILTER_FLAG_CLEAR_ACTION_RIGHT flag is set in the 
       <b>Flags</b> member of the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a> structure.</p>
-
-<p>When a callout has indicated that it intends to modify the clone net buffer list by setting the 
-      <i>intendToModify</i> parameter to <b>TRUE</b> in a call to the 
-      <a href="..\fwpsk\nf-fwpsk-fwpsreferencenetbufferlist0.md">
-      FwpsReferenceNetBufferList0</a> function.</p>
-
-<p>A callout driver registers a callout's callout functions with the filter engine by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a> function.</p>
-
-<p>The filter engine calls a callout's 
-    <i>classifyFn1</i> callout function with data to be processed whenever all of the test conditions are true
-    for a filter in the filter engine that specifies the callout for the filter's action.</p>
-
-<p>A callout's 
-    <i>classifyFn1</i> callout function should clear the FWPS_RIGHT_ACTION_WRITE flag in the 
-    <b>rights</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a> structure in any of
-    the following situations:</p>
-
-<p>When the 
-      <i>classifyFn1</i> callout function sets the 
-      <b>actionType</b> member of the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a> structure to
-      FWP_ACTION_BLOCK.</p>
-
-<p>When the 
-      <i>classifyFn1</i> callout function sets the 
-      <b>actionType</b> member of the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a> structure to
-      FWP_ACTION_PERMIT and the FWPS_FILTER_FLAG_CLEAR_ACTION_RIGHT flag is set in the 
-      <b>Flags</b> member of the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a> structure.</p>
+      <a href="netvista.fwps_filter1">FWPS_FILTER1</a> structure.</p>
 
 <p>When a callout has indicated that it intends to modify the clone net buffer list by setting the 
       <i>intendToModify</i> parameter to <b>TRUE</b> in a call to the 
@@ -227,7 +195,7 @@ void NTAPI classifyFn1(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+<a href="netvista.classifyfn">classifyFn</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn0</a>
@@ -236,35 +204,35 @@ void NTAPI classifyFn1(
 <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn2.md">classifyFn2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551206">FwpsReferenceNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsreferencenetbufferlist0.md">FwpsReferenceNetBufferList0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551224">FWPS_CALLOUT0</a>
+<a href="netvista.fwps_callout0">FWPS_CALLOUT0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a>
+<a href="netvista.fwps_classify_out0">FWPS_CLASSIFY_OUT0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>
+<a href="netvista.fwps_filter1">FWPS_FILTER1</a>
 </dt>
 <dt>
 <a href="netvista.fwps_incoming_metadata_values0">
    FWPS_INCOMING_METADATA_VALUES0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552401">FWPS_INCOMING_VALUES0</a>
+<a href="netvista.fwps_incoming_values0">FWPS_INCOMING_VALUES0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="NULL">Associating Context with a Data Flow</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
+<a href="netvista.callout_driver_callout_functions">Callout Driver Callout Functions</a>
 </dt>
 <dt>
 <a href="NULL">Data Logging</a>
@@ -285,4 +253,4 @@ void NTAPI classifyFn1(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_CLASSIFY_FN1 callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_CLASSIFY_FN1 callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

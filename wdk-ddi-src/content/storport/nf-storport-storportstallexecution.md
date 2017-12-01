@@ -105,7 +105,7 @@ STORPORT_API VOID StorPortStallExecution(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454255">SpNoWait</a>
+<a href="devtest.storport_spnowait">SpNoWait</a>
 </td>
 </tr>
 </table>
@@ -113,7 +113,7 @@ STORPORT_API VOID StorPortStallExecution(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564757">ScsiPortStallExecution</a>
+<a href="..\srb\nf-srb-scsiportstallexecution.md">ScsiPortStallExecution</a>
 </dt>
 </dl>
 <p> </p>

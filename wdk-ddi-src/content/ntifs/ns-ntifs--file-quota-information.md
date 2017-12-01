@@ -87,7 +87,7 @@ typedef struct _FILE_QUOTA_INFORMATION {
 ### -field <b>QuotaThreshold</b>
 
 <dd>
-<p>Maximum mount of disk space on this volume that can be used by the user without triggering an event. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540258">FILE_FS_CONTROL_INFORMATION</a>. </p>
+<p>Maximum mount of disk space on this volume that can be used by the user without triggering an event. For more information, see <a href="..\ntifs\ns-ntifs--file-fs-control-information.md">FILE_FS_CONTROL_INFORMATION</a>. </p>
 </dd>
 
 ### -field <b>QuotaLimit</b>
@@ -108,7 +108,7 @@ typedef struct _FILE_QUOTA_INFORMATION {
 
 <p>FILE_WRITE_DATA access to the volume is required to set this information. To perform this operation, create an IRP with major function code IRP_MJ_SET_QUOTA. </p>
 
-<p>To check the validity of a buffer containing FILE_QUOTA_INFORMATION structure, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548279">IoCheckQuotaBufferValidity</a>. </p>
+<p>To check the validity of a buffer containing FILE_QUOTA_INFORMATION structure, call <a href="..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md">IoCheckQuotaBufferValidity</a>. </p>
 
 <p>On 32-bit platforms, this structure must be aligned on a LONG (4-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on a 4-byte boundary. </p>
 
@@ -131,16 +131,16 @@ typedef struct _FILE_QUOTA_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540258">FILE_FS_CONTROL_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-fs-control-information.md">FILE_FS_CONTROL_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548279">IoCheckQuotaBufferValidity</a>
+<a href="..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md">IoCheckQuotaBufferValidity</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
+<a href="ifsk.irp_mj_query_quota">IRP_MJ_QUERY_QUOTA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
+<a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a>
 </dt>
 </dl>
 <p> </p>

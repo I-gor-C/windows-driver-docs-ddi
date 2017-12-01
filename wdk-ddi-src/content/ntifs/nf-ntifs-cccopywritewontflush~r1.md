@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>CcCopyWriteWontFlush</b> macro determines whether the amount of data to be copied in a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539045">CcCopyWrite</a> is small enough not to require immediate flushing to disk if <b>CcCopyWrite</b> is called with <i>Wait</i> set to <b>FALSE</b>.</p>
+<p>The <b>CcCopyWriteWontFlush</b> macro determines whether the amount of data to be copied in a call to <a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a> is small enough not to require immediate flushing to disk if <b>CcCopyWrite</b> is called with <i>Wait</i> set to <b>FALSE</b>.</p>
 
 
 ## -syntax
@@ -76,7 +76,7 @@ BOOLEAN CcCopyWriteWontFlush(
 </dl>
 
 ## -returns
-<p><b>CcCopyWriteWontFlush</b> returns <b>TRUE</b> if the amount of data to be copied in a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539045">CcCopyWrite</a> is small enough not to require immediate flushing to disk, <b>FALSE</b> otherwise.</p>
+<p><b>CcCopyWriteWontFlush</b> returns <b>TRUE</b> if the amount of data to be copied in a call to <a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a> is small enough not to require immediate flushing to disk, <b>FALSE</b> otherwise.</p>
 
 ## -remarks
 
@@ -128,13 +128,13 @@ BOOLEAN CcCopyWriteWontFlush(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539021">CcCanIWrite</a>
+<a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539045">CcCopyWrite</a>
+<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539060">CcDeferWrite</a>
+<a href="..\ntifs\nf-ntifs-ccdeferwrite.md">CcDeferWrite</a>
 </dt>
 </dl>
 <p> </p>

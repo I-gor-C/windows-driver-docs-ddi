@@ -7,7 +7,7 @@ old-location: stream\kscreateclock.htm
 old-project: stream
 ms.assetid: a125161d-c086-45a4-9b66-4c13d9ed5f11
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsCreateClock
 ms.prod: windows-hardware
 ms.technology: windows-devices

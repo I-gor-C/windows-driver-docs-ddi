@@ -129,25 +129,7 @@ VOID CcSetFileSizes(
 
 <p>If any failure occurs, <b>CcSetFileSizes</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcSetFileSizes</b> raises a STATUS_INSUFFICIENT_RESOURCES exception. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcSetFileSizes</b> in a <b>try-except</b> or <b>try-finally</b> statement.</p>
 
-<p>To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.</p>
-
-<p>The <b>CcGetFileSizePointer</b> macro returns the size of a file, given a pointer to a file object for the file.</p>
-
-<p>Parameters</p>
-
-<p>File systems must call <b>CcSetFileSizes</b> to update the cache manager data structures whenever one of the following changes is made to a cached file:</p>
-
-<p>Its allocation size is increased.</p>
-
-<p>Its valid data length is decreased.</p>
-
-<p>Its valid data length is increased by a non-cached I/O operation.</p>
-
-<p>Its file size is increased or decreased.</p>
-
-<p>If any failure occurs, <b>CcSetFileSizes</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcSetFileSizes</b> raises a STATUS_INSUFFICIENT_RESOURCES exception. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcSetFileSizes</b> in a <b>try-except</b> or <b>try-finally</b> statement.</p>
-
-<p>To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.</p>
+<p>To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.</p>
 
 <p>The <b>CcGetFileSizePointer</b> macro returns the size of a file, given a pointer to a file object for the file.</p>
 
@@ -200,7 +182,7 @@ VOID CcSetFileSizes(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 </dl>
 <p> </p>

@@ -71,13 +71,13 @@ VP_STATUS VideoPortStartDma(
 ### -param <i>VpDmaAdapter</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure is returned from a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>.</p>
+<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure is returned from a call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.</p>
 </dd>
 
 ### -param <i>Mdl</i> [in]
 
 <dd>
-<p>Pointer to the <a href="wdkgloss.m#wdkgloss.mdl#wdkgloss.mdl"><i>MDL</i></a> that describes the buffer. This pointer is returned from a call to the video port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff570326">VideoPortLockBuffer</a> function.</p>
+<p>Pointer to the <a href="wdkgloss.m#wdkgloss.mdl#wdkgloss.mdl"><i>MDL</i></a> that describes the buffer. This pointer is returned from a call to the video port driver's <a href="..\video\nf-video-videoportlockbuffer.md">VideoPortLockBuffer</a> function.</p>
 </dd>
 
 ### -param <i>Offset</i> [in]
@@ -129,17 +129,7 @@ VP_STATUS VideoPortStartDma(
 
 <p>Calls the video miniport driver's <a href="..\video\nc-video-pexecute-dma.md">HwVidExecuteDma</a> callback.</p>
 
-<p>It is possible that not all of the requested data has been transferred, since the actual amount of memory transferred is limited by the number of map registers available to the driver. Callers of this function should inspect the actual transfer size returned at <i>pLength</i> to determine whether additional data remains to be transferred. If so, the miniport driver should call <b>VideoPortStartDma</b> (and subsequently, <a href="https://msdn.microsoft.com/library/windows/hardware/ff570286">VideoPortCompleteDma</a>) as many times as necessary to fulfill the entire transfer request. </p>
-
-<p>To prepare for a DMA-transfer operation, <b>VideoPortStartDma</b>:</p>
-
-<p>Flushes the memory region in the host processor's caches.</p>
-
-<p>Builds a scatter/gather list.</p>
-
-<p>Calls the video miniport driver's <a href="..\video\nc-video-pexecute-dma.md">HwVidExecuteDma</a> callback.</p>
-
-<p>It is possible that not all of the requested data has been transferred, since the actual amount of memory transferred is limited by the number of map registers available to the driver. Callers of this function should inspect the actual transfer size returned at <i>pLength</i> to determine whether additional data remains to be transferred. If so, the miniport driver should call <b>VideoPortStartDma</b> (and subsequently, <a href="https://msdn.microsoft.com/library/windows/hardware/ff570286">VideoPortCompleteDma</a>) as many times as necessary to fulfill the entire transfer request. </p>
+<p>It is possible that not all of the requested data has been transferred, since the actual amount of memory transferred is limited by the number of map registers available to the driver. Callers of this function should inspect the actual transfer size returned at <i>pLength</i> to determine whether additional data remains to be transferred. If so, the miniport driver should call <b>VideoPortStartDma</b> (and subsequently, <a href="..\video\nf-video-videoportcompletedma.md">VideoPortCompleteDma</a>) as many times as necessary to fulfill the entire transfer request. </p>
 
 ## -requirements
 <table>
@@ -204,10 +194,10 @@ VP_STATUS VideoPortStartDma(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>
+<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570286">VideoPortCompleteDma</a>
+<a href="..\video\nf-video-videoportcompletedma.md">VideoPortCompleteDma</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pexecute-dma.md">HwVidExecuteDma</a>

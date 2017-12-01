@@ -7,7 +7,7 @@ old-location: netvista\rilemergencynumberslist_2.htm
 old-project: netvista
 ms.assetid: 06816431-a6fc-4c24-a31d-c486a4ba667f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILEMERGENCYNUMBERSLIST,
 ms.prod: windows-hardware
 ms.technology: windows-devices

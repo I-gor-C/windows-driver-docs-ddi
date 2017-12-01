@@ -82,7 +82,7 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS {
 ### -field <b>OverlayCaps</b>
 
 <dd>
-<p>The overlay capabilities, given as a bitwise <b>OR</b> of values from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780237">D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS</a> enumeration.</p>
+<p>The overlay capabilities, given as a bitwise <b>OR</b> of values from the <a href="..\d3dumddi\ne-d3dumddi--d3dddi-multiplane-overlay-feature-caps.md">D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS</a> enumeration.</p>
 </dd>
 </dl>
 
@@ -122,7 +122,7 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780237">D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS</a>
+<a href="..\d3dumddi\ne-d3dumddi--d3dddi-multiplane-overlay-feature-caps.md">D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS</a>
 </dt>
 </dl>
 <p> </p>

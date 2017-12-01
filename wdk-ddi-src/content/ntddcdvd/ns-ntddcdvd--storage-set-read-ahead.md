@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The STORAGE_SET_READ_AHEAD structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560608">IOCTL_STORAGE_SET_READ_AHEAD</a> request to instruct the device to skip to the target address upon reaching the trigger address. </p>
+<p>The STORAGE_SET_READ_AHEAD structure is used in conjunction with the <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-storage-set-read-ahead.md">IOCTL_STORAGE_SET_READ_AHEAD</a> request to instruct the device to skip to the target address upon reaching the trigger address. </p>
 
 
 ## -syntax
@@ -88,7 +88,7 @@ typedef struct _STORAGE_SET_READ_AHEAD {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560608">IOCTL_STORAGE_SET_READ_AHEAD</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-storage-set-read-ahead.md">IOCTL_STORAGE_SET_READ_AHEAD</a>
 </dt>
 </dl>
 <p> </p>

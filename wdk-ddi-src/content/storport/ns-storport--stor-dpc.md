@@ -66,10 +66,10 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567110">StorPortInitializeDpc</a>
+<a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567116">StorPortIssueDpc</a>
+<a href="..\storport\nf-storport-storportissuedpc.md">StorPortIssueDpc</a>
 </dt>
 </dl>
 <p> </p>

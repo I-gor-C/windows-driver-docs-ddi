@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The GETINFO_GLYPHSTRING structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.</p>
+<p>The GETINFO_GLYPHSTRING structure is used as input to the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function.</p>
 
 
 ## -syntax
@@ -64,13 +64,13 @@ typedef struct _GETINFO_GLYPHSTRING {
 ### -field <b>dwSize</b>
 
 <dd>
-<p>Specifies the size, in bytes, of the GETINFO_GLYPHSTRING structure. This value is supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller.</p>
+<p>Specifies the size, in bytes, of the GETINFO_GLYPHSTRING structure. This value is supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
 ### -field <b>dwCount</b>
 
 <dd>
-<p>Specifies the number of elements in the arrays pointed to by <b>pGlyphIn</b> and <b>pGlyphOut</b>. This value is supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller.</p>
+<p>Specifies the number of elements in the arrays pointed to by <b>pGlyphIn</b> and <b>pGlyphOut</b>. This value is supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
 ### -field <b>dwTypeIn</b>
@@ -100,13 +100,13 @@ typedef struct _GETINFO_GLYPHSTRING {
 </tr>
 </table>
 <p> </p>
-<p>Supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller.</p>
+<p>Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
 ### -field <b>pGlyphIn</b>
 
 <dd>
-<p>Pointer to an array of glyph specifiers. The array element type is indicated by <b>dwTypeIn</b>. This value is supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller.</p>
+<p>Pointer to an array of glyph specifiers. The array element type is indicated by <b>dwTypeIn</b>. This value is supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
 ### -field <b>dwTypeOut</b>
@@ -131,7 +131,7 @@ typedef struct _GETINFO_GLYPHSTRING {
 <p>TYPE_TRANSDATA</p>
 </td>
 <td>
-<p>The <b>pGlyphOut</b> array elements are of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562816">TRANSDATA</a>. This value is valid only when <b>dwTypeIn</b> has been set to TYPE_GLYPHHANDLE.</p>
+<p>The <b>pGlyphOut</b> array elements are of type <a href="..\prntfont\ns-prntfont--transdata.md">TRANSDATA</a>. This value is valid only when <b>dwTypeIn</b> has been set to TYPE_GLYPHHANDLE.</p>
 </td>
 </tr>
 <tr>
@@ -146,7 +146,7 @@ typedef struct _GETINFO_GLYPHSTRING {
 <p> </p>
 <dl>
 <dd>
-<p>Supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller.</p>
+<p>Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 </dl>
 </dd>
@@ -154,7 +154,7 @@ typedef struct _GETINFO_GLYPHSTRING {
 ### -field <b>pGlyphOut</b>
 
 <dd>
-<p>Caller-supplied pointer to an empty array of glyph specifiers. The array is filled in by Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function. The array element type is indicated by <b>dwTypeOut</b>. This pointer is supplied by the <u>UNIFONTOBJ_GetInfo</u> caller.</p>
+<p>Caller-supplied pointer to an empty array of glyph specifiers. The array is filled in by Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function. The array element type is indicated by <b>dwTypeOut</b>. This pointer is supplied by the <u>UNIFONTOBJ_GetInfo</u> caller.</p>
 </dd>
 
 ### -field <b>dwGlyphOutSize</b>
@@ -165,17 +165,17 @@ typedef struct _GETINFO_GLYPHSTRING {
 </dl>
 
 ## -remarks
-<p>To convert an array of glyph specifiers from one type to another, a rendering plug-in can supply the address of a GETINFO_GLYPHSTRING structure when calling Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.</p>
+<p>To convert an array of glyph specifiers from one type to another, a rendering plug-in can supply the address of a GETINFO_GLYPHSTRING structure when calling Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function.</p>
 
-<p>If the conversion is from TYPE_GLYPHHANDLE to TYPE_TRANSDATA, <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> must be called twice.</p>
+<p>If the conversion is from TYPE_GLYPHHANDLE to TYPE_TRANSDATA, <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> must be called twice.</p>
 
-<p>Before the first call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>, the rendering plug-in fills in the <b>dwSize</b>, <b>dwCount</b>, <b>dwTypeIn</b>, and <b>pGlyphIn</b> members and sets <b>dwGlyphOutSize</b> member to zero. </p>
+<p>Before the first call to <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a>, the rendering plug-in fills in the <b>dwSize</b>, <b>dwCount</b>, <b>dwTypeIn</b>, and <b>pGlyphIn</b> members and sets <b>dwGlyphOutSize</b> member to zero. </p>
 
-<p>After <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> returns, the <b>dwGlyphOutSize</b> member contains the size, in bytes, of the buffer needed to store the converted string.</p>
+<p>After <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> returns, the <b>dwGlyphOutSize</b> member contains the size, in bytes, of the buffer needed to store the converted string.</p>
 
-<p>The plug-in allocates a block of memory of the size received in the <b>dwGlyphOutSize</b> member, sets the <b>pGlyphOut</b> member to point to this memory block, and calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> once more. UNIDRV then converts the string from TYPE_GLYPHHANDLE to TYPE_TRANSDATA.</p>
+<p>The plug-in allocates a block of memory of the size received in the <b>dwGlyphOutSize</b> member, sets the <b>pGlyphOut</b> member to point to this memory block, and calls <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> once more. UNIDRV then converts the string from TYPE_GLYPHHANDLE to TYPE_TRANSDATA.</p>
 
-<p>The values that a rendering plug-in specifies for the <b>dwTypeIn </b>and <b>pGlyphIn</b> members typically are those that were previously received as the <b>dwType </b>and <i>pGlyph</i> parameters to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554267">IPrintOemUni::OutputCharStr</a> method.</p>
+<p>The values that a rendering plug-in specifies for the <b>dwTypeIn </b>and <b>pGlyphIn</b> members typically are those that were previously received as the <b>dwType </b>and <i>pGlyph</i> parameters to the <a href="print.iprintoemuni_outputcharstr">IPrintOemUni::OutputCharStr</a> method.</p>
 
 ## -requirements
 <table>
@@ -194,10 +194,10 @@ typedef struct _GETINFO_GLYPHSTRING {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
+<a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554267">IPrintOemUni::OutputCharStr</a>
+<a href="print.iprintoemuni_outputcharstr">IPrintOemUni::OutputCharStr</a>
 </dt>
 </dl>
 <p> </p>

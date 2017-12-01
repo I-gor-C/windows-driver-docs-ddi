@@ -78,7 +78,7 @@ typedef struct _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS {
 <li><b>LevelSensitive</b></li>
 <li><b>Latched</b></li>
 </ul>
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554239">KINTERRUPT_MODE</a>.</p>
+<p>For more information, see <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a>.</p>
 </dd>
 
 ### -field <b>Polarity</b>
@@ -92,7 +92,7 @@ typedef struct _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS {
 <li><b>InterruptFallingEdge</b></li>
 <li><b>InterruptActiveBoth</b></li>
 </ul>
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554243">KINTERRUPT_POLARITY</a>.</p>
+<p>For more information, see <a href="..\wdm\ne-wdm--kinterrupt-polarity.md">KINTERRUPT_POLARITY</a>.</p>
 </dd>
 
 ### -field <b>Flags</b>
@@ -139,10 +139,10 @@ typedef struct _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS {
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698243">CLIENT_ReconfigureInterrupt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554239">KINTERRUPT_MODE</a>
+<a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554243">KINTERRUPT_POLARITY</a>
+<a href="..\wdm\ne-wdm--kinterrupt-polarity.md">KINTERRUPT_POLARITY</a>
 </dt>
 </dl>
 <p> </p>

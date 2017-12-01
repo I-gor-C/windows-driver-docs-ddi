@@ -7,7 +7,7 @@ old-location: netvista\ndisfcanceloidrequest.htm
 old-project: netvista
 ms.assetid: 67dc0769-0d65-4048-84aa-1100883bde46
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFCancelOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,14 +61,14 @@ VOID NdisFCancelOidRequest(
 <dd>
 <p>The NDIS handle that identifies this filter module. NDIS passed the handle to the filter driver in
      a call to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function.</p>
+     <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
 ### -param <i>RequestId</i> [in]
 
 <dd>
 <p>A cancellation identifier for the request. This identifier specifies the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structures that are being
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structures that are being
      canceled.</p>
 </dd>
 </dl>
@@ -81,18 +81,7 @@ VOID NdisFCancelOidRequest(
     <b>NdisFCancelOidRequest</b> to cancel a previously issued request. The request can be originated by the
     filter driver or by overlying drivers. The pointer passed at 
     <i>OidRequest</i> must be the same pointer that was passed in the call to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561830">NdisFOidRequest</a> function.</p>
-
-<p>The filter driver can call 
-    <b>NdisFCancelOidRequest</b> from the 
-    <a href="..\ndis\nc-ndis-filter-cancel-oid-request.md">FilterCancelOidRequest</a> function
-    to pass on the cancellation to underlying drivers.</p>
-
-<p>Filter drivers call 
-    <b>NdisFCancelOidRequest</b> to cancel a previously issued request. The request can be originated by the
-    filter driver or by overlying drivers. The pointer passed at 
-    <i>OidRequest</i> must be the same pointer that was passed in the call to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561830">NdisFOidRequest</a> function.</p>
+    <a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a> function.</p>
 
 <p>The filter driver can call 
     <b>NdisFCancelOidRequest</b> from the 
@@ -152,7 +141,7 @@ VOID NdisFCancelOidRequest(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547990">Irql_OID_Function</a>
+<a href="devtest.ndis_irql_oid_function">Irql_OID_Function</a>
 </td>
 </tr>
 </table>
@@ -160,18 +149,18 @@ VOID NdisFCancelOidRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-filter-cancel-oid-request.md">FilterCancelOidRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561830">NdisFOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFCancelOidRequest function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFCancelOidRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

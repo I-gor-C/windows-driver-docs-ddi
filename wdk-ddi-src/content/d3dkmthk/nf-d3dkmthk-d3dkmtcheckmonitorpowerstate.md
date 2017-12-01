@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTCheckMonitorPowerState(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547301">D3DKMT_CHECKMONITORPOWERSTATE</a> structure that describes the connection to the monitor for which to check the power state. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-checkmonitorpowerstate.md">D3DKMT_CHECKMONITORPOWERSTATE</a> structure that describes the connection to the monitor for which to check the power state. </p>
 </dd>
 </dl>
 
@@ -130,7 +130,7 @@ NTSTATUS APIENTRY D3DKMTCheckMonitorPowerState(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547301">D3DKMT_CHECKMONITORPOWERSTATE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-checkmonitorpowerstate.md">D3DKMT_CHECKMONITORPOWERSTATE</a>
 </dt>
 </dl>
 <p> </p>

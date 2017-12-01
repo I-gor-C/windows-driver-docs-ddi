@@ -7,7 +7,7 @@ old-location: debugger\getnearinstruction.htm
 old-project: debugger
 ms.assetid: 76387681-cac6-4c35-9095-28942a856c30
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl2, GetNearInstruction, IDebugControl2::GetNearInstruction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,8 +83,6 @@ HRESULT GetNearInstruction(
 <p> </p>
 
 ## -remarks
-<p>On some architectures, like x86 and x64, the size of an instruction may vary.  On these architectures, when <i>Delta</i> is negative, the desired instruction location might not be uniquely defined.  In this case, the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> will search backward from <i>Offset</i> until it encounters a location such that there are the <i>Delta</i> number of instructions between that location and <i>Offset</i>.</p>
-
 <p>On some architectures, like x86 and x64, the size of an instruction may vary.  On these architectures, when <i>Delta</i> is negative, the desired instruction location might not be uniquely defined.  In this case, the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> will search backward from <i>Offset</i> until it encounters a location such that there are the <i>Delta</i> number of instructions between that location and <i>Offset</i>.</p>
 
 ## -requirements

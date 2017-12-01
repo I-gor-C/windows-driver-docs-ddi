@@ -7,7 +7,7 @@ old-location: netvista\ndistcpoffloadforwardcomplete.htm
 old-project: netvista
 ms.assetid: 080949ab-8a27-4d13-992e-597210d4882c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BINARY_DATA, BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,7 +72,7 @@ VOID NdisTcpOffloadForwardComplete(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. This structure
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure. This structure
      can be stand-alone or the first structure in a linked list of NET_BUFFER_LIST structures. The offload
      target obtained these structures in one or more calls to its 
      <a href="..\ndischimney\nc-ndischimney-w-tcp-offload-forward-handler.md">
@@ -85,7 +85,7 @@ VOID NdisTcpOffloadForwardComplete(
 
 ## -remarks
 <p>To improve system performance, an offload target can create a linked list that contains 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures from multiple
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures from multiple
     calls to the 
     <a href="..\ndischimney\nc-ndischimney-w-tcp-offload-forward-handler.md">
     MiniportTcpOffloadForward</a> function. The offload target can then pass such a linked list in a single
@@ -96,60 +96,9 @@ VOID NdisTcpOffloadForwardComplete(
     it passes to the 
     <b>NdisTcpOffloadForwardComplete</b> function:</p>
 
-<p></p><dl>
-<dt><a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS</dt>
-<dd>
+<p></p>
+
 <p>The offload target accepted all the forwarded TCP segments and has processed them.</p>
-</dd>
-<dt><a id="NDIS_STATUS_UPLOAD_IN_PROGRESS"></a><a id="ndis_status_upload_in_progress"></a>NDIS_STATUS_UPLOAD_IN_PROGRESS</dt>
-<dd>
-<p>The offload target will not process the forwarded TCP segments because the specified TCP
-      connection is being uploaded. In this case, the host stack queues and processes the TCP
-      segments.</p>
-</dd>
-<dt><a id="NDIS_STATUS_REQUEST_ABORTED"></a><a id="ndis_status_request_aborted"></a>NDIS_STATUS_REQUEST_ABORTED</dt>
-<dd>
-<p>The offload target has received an RST segment on the TCP connection. In this case, the host
-      stack does not processes the forwarded TCP segments.</p>
-</dd>
-</dl><p>The offload target accepted all the forwarded TCP segments and has processed them.</p>
-
-<p>The offload target will not process the forwarded TCP segments because the specified TCP
-      connection is being uploaded. In this case, the host stack queues and processes the TCP
-      segments.</p>
-
-<p>The offload target has received an RST segment on the TCP connection. In this case, the host
-      stack does not processes the forwarded TCP segments.</p>
-
-<p>To improve system performance, an offload target can create a linked list that contains 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures from multiple
-    calls to the 
-    <a href="..\ndischimney\nc-ndischimney-w-tcp-offload-forward-handler.md">
-    MiniportTcpOffloadForward</a> function. The offload target can then pass such a linked list in a single
-    call to the 
-    <b>NdisTcpOffloadForwardComplete</b> function.</p>
-
-<p>An offload target must write one of the following status values to each NET_BUFFER_LIST structure that
-    it passes to the 
-    <b>NdisTcpOffloadForwardComplete</b> function:</p>
-
-<p></p><dl>
-<dt><a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS</dt>
-<dd>
-<p>The offload target accepted all the forwarded TCP segments and has processed them.</p>
-</dd>
-<dt><a id="NDIS_STATUS_UPLOAD_IN_PROGRESS"></a><a id="ndis_status_upload_in_progress"></a>NDIS_STATUS_UPLOAD_IN_PROGRESS</dt>
-<dd>
-<p>The offload target will not process the forwarded TCP segments because the specified TCP
-      connection is being uploaded. In this case, the host stack queues and processes the TCP
-      segments.</p>
-</dd>
-<dt><a id="NDIS_STATUS_REQUEST_ABORTED"></a><a id="ndis_status_request_aborted"></a>NDIS_STATUS_REQUEST_ABORTED</dt>
-<dd>
-<p>The offload target has received an RST segment on the TCP connection. In this case, the host
-      stack does not processes the forwarded TCP segments.</p>
-</dd>
-</dl><p>The offload target accepted all the forwarded TCP segments and has processed them.</p>
 
 <p>The offload target will not process the forwarded TCP segments because the specified TCP
       connection is being uploaded. In this case, the host stack queues and processes the TCP
@@ -196,15 +145,15 @@ VOID NdisTcpOffloadForwardComplete(
 <a href="..\ndischimney\nc-ndischimney-w-tcp-offload-forward-handler.md">MiniportTcpOffloadForward</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_FORWARD_COMPLETE callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_FORWARD_COMPLETE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

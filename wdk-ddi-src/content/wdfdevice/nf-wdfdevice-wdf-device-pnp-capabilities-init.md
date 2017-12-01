@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_pnp_capabilities_init.htm
 old-project: wdf
 ms.assetid: 5ae60715-ba51-4814-ae34-34967cdbab78
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_DEVICE_PNP_CAPABILITIES_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]</p>
-<p>The <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551257">WDF_DEVICE_PNP_CAPABILITIES</a> structure.</p>
+<p>The <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b> function initializes a <a href="..\wdfdevice\ns-wdfdevice--wdf-device-pnp-capabilities.md">WDF_DEVICE_PNP_CAPABILITIES</a> structure.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ VOID WDF_DEVICE_PNP_CAPABILITIES_INIT(
 ### -param <i>Caps</i> [out]
 
 <dd>
-<p>A pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff551257">WDF_DEVICE_PNP_CAPABILITIES</a> structure.</p>
+<p>A pointer to a driver-supplied <a href="..\wdfdevice\ns-wdfdevice--wdf-device-pnp-capabilities.md">WDF_DEVICE_PNP_CAPABILITIES</a> structure.</p>
 </dd>
 </dl>
 
@@ -67,13 +67,9 @@ VOID WDF_DEVICE_PNP_CAPABILITIES_INIT(
 <p>None</p>
 
 ## -remarks
-<p>The <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b> function zeros the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff551257">WDF_DEVICE_PNP_CAPABILITIES</a> structure, sets the structure's <b>Size</b> member, and sets other members to default values.</p>
+<p>The <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b> function zeros the specified <a href="..\wdfdevice\ns-wdfdevice--wdf-device-pnp-capabilities.md">WDF_DEVICE_PNP_CAPABILITIES</a> structure, sets the structure's <b>Size</b> member, and sets other members to default values.</p>
 
-<p>For a code example that uses <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546898">WdfDeviceSetPnpCapabilities</a>.</p>
-
-<p>The <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b> function zeros the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff551257">WDF_DEVICE_PNP_CAPABILITIES</a> structure, sets the structure's <b>Size</b> member, and sets other members to default values.</p>
-
-<p>For a code example that uses <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546898">WdfDeviceSetPnpCapabilities</a>.</p>
+<p>For a code example that uses <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b>, see <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpnpcapabilities.md">WdfDeviceSetPnpCapabilities</a>.</p>
 
 ## -requirements
 <table>

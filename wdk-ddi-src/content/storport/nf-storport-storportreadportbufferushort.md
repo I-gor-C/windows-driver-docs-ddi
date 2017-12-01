@@ -87,9 +87,7 @@ STORPORT_API VOID StorPortReadPortBufferUshort(
 <p>None </p>
 
 ## -remarks
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564721">ScsiPortReadPortBufferUshort</a>. For a nonbuffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567477">StorPortReadPortUshort</a>. </p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564721">ScsiPortReadPortBufferUshort</a>. For a nonbuffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567477">StorPortReadPortUshort</a>. </p>
+<p>For more information, see <a href="..\srb\nf-srb-scsiportreadportbufferushort.md">ScsiPortReadPortBufferUshort</a>. For a nonbuffered version of this routine, see <a href="..\storport\nf-storport-storportreadportushort.md">StorPortReadPortUshort</a>. </p>
 
 ## -requirements
 <table>
@@ -128,10 +126,10 @@ STORPORT_API VOID StorPortReadPortBufferUshort(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564721">ScsiPortReadPortBufferUshort</a>
+<a href="..\srb\nf-srb-scsiportreadportbufferushort.md">ScsiPortReadPortBufferUshort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567477">StorPortReadPortUshort</a>
+<a href="..\storport\nf-storport-storportreadportushort.md">StorPortReadPortUshort</a>
 </dt>
 </dl>
 <p> </p>

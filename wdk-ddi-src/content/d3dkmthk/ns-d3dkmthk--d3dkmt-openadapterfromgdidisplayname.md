@@ -66,19 +66,19 @@ typedef struct _D3DKMT_OPENADAPTERFROMGDIDISPLAYNAME {
 ### -field <b>hAdapter</b>
 
 <dd>
-<p>[out] A handle to the graphics adapter for the GDI device that <b>DeviceName</b> specifies. The adapter handle is returned from the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547038">D3DKMTOpenAdapterFromGdiDisplayName</a> function.</p>
+<p>[out] A handle to the graphics adapter for the GDI device that <b>DeviceName</b> specifies. The adapter handle is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromgdidisplayname.md">D3DKMTOpenAdapterFromGdiDisplayName</a> function.</p>
 </dd>
 
 ### -field <b>AdapterLuid</b>
 
 <dd>
-<p>[out] The locally unique identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>) of the graphics adapter for the GDI device that <b>DeviceName</b> specifies. The LUID is returned from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547038">D3DKMTOpenAdapterFromGdiDisplayName</a> call.</p>
+<p>[out] The locally unique identifier (<a href="kernel.luid">LUID</a>) of the graphics adapter for the GDI device that <b>DeviceName</b> specifies. The LUID is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromgdidisplayname.md">D3DKMTOpenAdapterFromGdiDisplayName</a> call.</p>
 </dd>
 
 ### -field <b>VidPnSourceId</b>
 
 <dd>
-<p>[out] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the GDI device that <b>DeviceName</b> specifies. The identification number is returned from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547038">D3DKMTOpenAdapterFromGdiDisplayName</a> call.</p>
+<p>[out] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the GDI device that <b>DeviceName</b> specifies. The identification number is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromgdidisplayname.md">D3DKMTOpenAdapterFromGdiDisplayName</a> call.</p>
 </dd>
 </dl>
 
@@ -110,7 +110,7 @@ typedef struct _D3DKMT_OPENADAPTERFROMGDIDISPLAYNAME {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547038">D3DKMTOpenAdapterFromGdiDisplayName</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromgdidisplayname.md">D3DKMTOpenAdapterFromGdiDisplayName</a>
 </dt>
 </dl>
 <p> </p>

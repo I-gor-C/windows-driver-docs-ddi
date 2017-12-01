@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CreateDecodeDevice(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542927">D3DDDIARG_CREATEDECODEDEVICE</a> structure. On input, this structure contains information that the driver can use. On output, the driver specifies information in the structure that the Microsoft Direct3D runtime can use.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createdecodedevice.md">D3DDDIARG_CREATEDECODEDEVICE</a> structure. On input, this structure contains information that the driver can use. On output, the driver specifies information in the structure that the Microsoft Direct3D runtime can use.</p>
 </dd>
 </dl>
 
@@ -119,7 +119,7 @@ __checkReturn HRESULT APIENTRY CreateDecodeDevice(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542927">D3DDDIARG_CREATEDECODEDEVICE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createdecodedevice.md">D3DDDIARG_CREATEDECODEDEVICE</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroydecodedevice.md">DestroyDecodeDevice</a>

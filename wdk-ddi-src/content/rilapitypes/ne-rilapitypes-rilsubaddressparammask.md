@@ -7,7 +7,7 @@ old-location: netvista\rilsubaddressparammask_2.htm
 old-project: netvista
 ms.assetid: ef802d35-2ca6-4fe2-9f3b-e2d1e91b8500
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

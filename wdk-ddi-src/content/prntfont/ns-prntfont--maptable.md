@@ -72,12 +72,12 @@ typedef struct _MAPTABLE {
 ### -field <b>Trans</b>
 
 <dd>
-<p>Is an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff562816">TRANSDATA</a> structures.</p>
+<p>Is an array of <a href="..\prntfont\ns-prntfont--transdata.md">TRANSDATA</a> structures.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>A .gtt file's MAPTABLE structure, which contains a glyph mapping table, is accessed by a pointer in the file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563597">UNI_GLYPHSETDATA</a> structure. The table maps glyph handles to the character codes or commands that must be sent to the printer in order to print glyphs.</p>
+<p>A .gtt file's MAPTABLE structure, which contains a glyph mapping table, is accessed by a pointer in the file's <a href="..\prntfont\ns-prntfont--uni-glyphsetdata.md">UNI_GLYPHSETDATA</a> structure. The table maps glyph handles to the character codes or commands that must be sent to the printer in order to print glyphs.</p>
 
 ## -requirements
 <table>
@@ -96,7 +96,7 @@ typedef struct _MAPTABLE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562816">TRANSDATA</a>
+<a href="..\prntfont\ns-prntfont--transdata.md">TRANSDATA</a>
 </dt>
 </dl>
 <p> </p>

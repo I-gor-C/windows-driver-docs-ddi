@@ -7,7 +7,7 @@ old-location: netvista\rilltekind_2.htm
 old-project: netvista
 ms.assetid: ab80e0a2-d404-4333-8a3e-f8e74d8c7f20
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

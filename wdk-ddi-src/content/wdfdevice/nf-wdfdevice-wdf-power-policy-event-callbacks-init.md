@@ -7,7 +7,7 @@ old-location: wdf\wdf_power_policy_event_callbacks_init.htm
 old-project: wdf
 ms.assetid: 09ab4995-58be-4d87-adf7-e843e637ac09
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_POWER_POLICY_EVENT_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]</p>
-<p>The <b>WDF_POWER_POLICY_EVENT_CALLBACKS_INIT</b> function initializes a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552424">WDF_POWER_POLICY_EVENT_CALLBACKS</a> structure.</p>
+<p>The <b>WDF_POWER_POLICY_EVENT_CALLBACKS_INIT</b> function initializes a driver's <a href="..\wdfdevice\ns-wdfdevice--wdf-power-policy-event-callbacks.md">WDF_POWER_POLICY_EVENT_CALLBACKS</a> structure.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ VOID WDF_POWER_POLICY_EVENT_CALLBACKS_INIT(
 ### -param <i>Callbacks</i> [out]
 
 <dd>
-<p>A pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552424">WDF_POWER_POLICY_EVENT_CALLBACKS</a> structure.</p>
+<p>A pointer to a driver-allocated <a href="..\wdfdevice\ns-wdfdevice--wdf-power-policy-event-callbacks.md">WDF_POWER_POLICY_EVENT_CALLBACKS</a> structure.</p>
 </dd>
 </dl>
 
@@ -67,13 +67,9 @@ VOID WDF_POWER_POLICY_EVENT_CALLBACKS_INIT(
 <p>None</p>
 
 ## -remarks
-<p>The <b>WDF_POWER_POLICY_EVENT_CALLBACKS_INIT</b> function zeros the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff552424">WDF_POWER_POLICY_EVENT_CALLBACKS</a> structure and sets the structures <b>Size</b> member.</p>
+<p>The <b>WDF_POWER_POLICY_EVENT_CALLBACKS_INIT</b> function zeros the specified <a href="..\wdfdevice\ns-wdfdevice--wdf-power-policy-event-callbacks.md">WDF_POWER_POLICY_EVENT_CALLBACKS</a> structure and sets the structures <b>Size</b> member.</p>
 
-<p>For a code example that uses <b>WDF_POWER_POLICY_EVENT_CALLBACKS_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546774">WdfDeviceInitSetPowerPolicyEventCallbacks</a>.</p>
-
-<p>The <b>WDF_POWER_POLICY_EVENT_CALLBACKS_INIT</b> function zeros the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff552424">WDF_POWER_POLICY_EVENT_CALLBACKS</a> structure and sets the structures <b>Size</b> member.</p>
-
-<p>For a code example that uses <b>WDF_POWER_POLICY_EVENT_CALLBACKS_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546774">WdfDeviceInitSetPowerPolicyEventCallbacks</a>.</p>
+<p>For a code example that uses <b>WDF_POWER_POLICY_EVENT_CALLBACKS_INIT</b>, see <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks.md">WdfDeviceInitSetPowerPolicyEventCallbacks</a>.</p>
 
 ## -requirements
 <table>

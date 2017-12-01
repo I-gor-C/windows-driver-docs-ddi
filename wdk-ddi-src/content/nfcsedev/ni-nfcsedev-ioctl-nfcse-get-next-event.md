@@ -7,7 +7,7 @@ old-location: nfpdrivers\ioctl_nfcse_get_next_event.htm
 old-project: nfpdrivers
 ms.assetid: B142BB21-D70E-4BA2-B2C1-60468FA8378E
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: NFCRM_SET_RADIO_STATE, NFCRM_SET_RADIO_STATE, *PNFCRM_SET_RADIO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ req.iface:
 
 ### -output-buffer
 <p>
-                A <b>DWORD</b> indicating the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn905590">SECURE_ELEMENT_EVENT_INFO</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_EVENT_INFO</b> structure itself. </p>
+                A <b>DWORD</b> indicating the size of the <a href="..\nfcsedev\ns-nfcsedev--secure-element-event-info.md">SECURE_ELEMENT_EVENT_INFO</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_EVENT_INFO</b> structure itself. </p>
 
 <p>
-                A <b>DWORD</b> indicating the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn905590">SECURE_ELEMENT_EVENT_INFO</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_EVENT_INFO</b> structure itself. </p>
+                A <b>DWORD</b> indicating the size of the <a href="..\nfcsedev\ns-nfcsedev--secure-element-event-info.md">SECURE_ELEMENT_EVENT_INFO</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_EVENT_INFO</b> structure itself. </p>
 
 <p>
-                A <b>DWORD</b> indicating the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn905590">SECURE_ELEMENT_EVENT_INFO</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_EVENT_INFO</b> structure itself. </p>
+                A <b>DWORD</b> indicating the size of the <a href="..\nfcsedev\ns-nfcsedev--secure-element-event-info.md">SECURE_ELEMENT_EVENT_INFO</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_EVENT_INFO</b> structure itself. </p>
 
 ### -output-buffer-length
 
@@ -94,190 +94,6 @@ I/O Status block
 <p> </p>
 
 ## -remarks
-<p>The following are requirements that the driver must adhere to.<ul>
-<li>
-<p>This IOCTL must be called on a handle that has an <b>SEEvents</b> relative file name; otherwise, the driver returns STATUS_INVALID_DEVICE_STATE</p>
-</li>
-<li>
-<p>This driver must support CancelIO for this pending IOCTL.</p>
-</li>
-<li>
-<p>This driver must maintain a received queue of the received secure element events that match the subscription type.</p>
-</li>
-<li>
-<p>The following conditions must be met when this IOCTL is received in the driver:</p>
-<ul>
-<li>
-<p>If the received queue is empty, then the driver must pend the IOCTL for later completion.</p>
-</li>
-<li>
-<p>If the received queue is non-empty, then the driver must de-queue one event, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with <b>STATUS_SUCCESS</b> immediately.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer must contain the size of the SECURE_ELEMENT_EVENT_INFO structure plus its payload.</p>
-</li>
-<li>
-<p>If a received secure element event info is too large to be copied into this IOCTL’s buffer, the driver must copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s information field to sizeof(DWORD), and complete the IOCTL with <b>STATUS_BUFFER_OVERFLOW</b>. The event must then be left in the received queue.</p>
-</li>
-</ul>
-</p>
-
-<p>This IOCTL must be called on a handle that has an <b>SEEvents</b> relative file name; otherwise, the driver returns STATUS_INVALID_DEVICE_STATE</p>
-
-<p>This driver must support CancelIO for this pending IOCTL.</p>
-
-<p>This driver must maintain a received queue of the received secure element events that match the subscription type.</p>
-
-<p>The following conditions must be met when this IOCTL is received in the driver:</p>
-
-<p>If the received queue is empty, then the driver must pend the IOCTL for later completion.</p>
-
-<p>If the received queue is non-empty, then the driver must de-queue one event, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with <b>STATUS_SUCCESS</b> immediately.</p>
-
-<p>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer must contain the size of the SECURE_ELEMENT_EVENT_INFO structure plus its payload.</p>
-
-<p>If a received secure element event info is too large to be copied into this IOCTL’s buffer, the driver must copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s information field to sizeof(DWORD), and complete the IOCTL with <b>STATUS_BUFFER_OVERFLOW</b>. The event must then be left in the received queue.</p>
-
-<p>The following are requirements that the driver must adhere to.<ul>
-<li>
-<p>This IOCTL must be called on a handle that has an <b>SEEvents</b> relative file name; otherwise, the driver returns STATUS_INVALID_DEVICE_STATE</p>
-</li>
-<li>
-<p>This driver must support CancelIO for this pending IOCTL.</p>
-</li>
-<li>
-<p>This driver must maintain a received queue of the received secure element events that match the subscription type.</p>
-</li>
-<li>
-<p>The following conditions must be met when this IOCTL is received in the driver:</p>
-<ul>
-<li>
-<p>If the received queue is empty, then the driver must pend the IOCTL for later completion.</p>
-</li>
-<li>
-<p>If the received queue is non-empty, then the driver must de-queue one event, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with <b>STATUS_SUCCESS</b> immediately.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer must contain the size of the SECURE_ELEMENT_EVENT_INFO structure plus its payload.</p>
-</li>
-<li>
-<p>If a received secure element event info is too large to be copied into this IOCTL’s buffer, the driver must copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s information field to sizeof(DWORD), and complete the IOCTL with <b>STATUS_BUFFER_OVERFLOW</b>. The event must then be left in the received queue.</p>
-</li>
-</ul>
-</p>
-
-<p>This IOCTL must be called on a handle that has an <b>SEEvents</b> relative file name; otherwise, the driver returns STATUS_INVALID_DEVICE_STATE</p>
-
-<p>This driver must support CancelIO for this pending IOCTL.</p>
-
-<p>This driver must maintain a received queue of the received secure element events that match the subscription type.</p>
-
-<p>The following conditions must be met when this IOCTL is received in the driver:</p>
-
-<p>If the received queue is empty, then the driver must pend the IOCTL for later completion.</p>
-
-<p>If the received queue is non-empty, then the driver must de-queue one event, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with <b>STATUS_SUCCESS</b> immediately.</p>
-
-<p>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer must contain the size of the SECURE_ELEMENT_EVENT_INFO structure plus its payload.</p>
-
-<p>If a received secure element event info is too large to be copied into this IOCTL’s buffer, the driver must copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s information field to sizeof(DWORD), and complete the IOCTL with <b>STATUS_BUFFER_OVERFLOW</b>. The event must then be left in the received queue.</p>
-
-<p>The following are requirements that the driver must adhere to.<ul>
-<li>
-<p>This IOCTL must be called on a handle that has an <b>SEEvents</b> relative file name; otherwise, the driver returns STATUS_INVALID_DEVICE_STATE</p>
-</li>
-<li>
-<p>This driver must support CancelIO for this pending IOCTL.</p>
-</li>
-<li>
-<p>This driver must maintain a received queue of the received secure element events that match the subscription type.</p>
-</li>
-<li>
-<p>The following conditions must be met when this IOCTL is received in the driver:</p>
-<ul>
-<li>
-<p>If the received queue is empty, then the driver must pend the IOCTL for later completion.</p>
-</li>
-<li>
-<p>If the received queue is non-empty, then the driver must de-queue one event, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with <b>STATUS_SUCCESS</b> immediately.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer must contain the size of the SECURE_ELEMENT_EVENT_INFO structure plus its payload.</p>
-</li>
-<li>
-<p>If a received secure element event info is too large to be copied into this IOCTL’s buffer, the driver must copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s information field to sizeof(DWORD), and complete the IOCTL with <b>STATUS_BUFFER_OVERFLOW</b>. The event must then be left in the received queue.</p>
-</li>
-</ul>
-</p>
-
-<p>This IOCTL must be called on a handle that has an <b>SEEvents</b> relative file name; otherwise, the driver returns STATUS_INVALID_DEVICE_STATE</p>
-
-<p>This driver must support CancelIO for this pending IOCTL.</p>
-
-<p>This driver must maintain a received queue of the received secure element events that match the subscription type.</p>
-
-<p>The following conditions must be met when this IOCTL is received in the driver:</p>
-
-<p>If the received queue is empty, then the driver must pend the IOCTL for later completion.</p>
-
-<p>If the received queue is non-empty, then the driver must de-queue one event, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with <b>STATUS_SUCCESS</b> immediately.</p>
-
-<p>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer must contain the size of the SECURE_ELEMENT_EVENT_INFO structure plus its payload.</p>
-
-<p>If a received secure element event info is too large to be copied into this IOCTL’s buffer, the driver must copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s information field to sizeof(DWORD), and complete the IOCTL with <b>STATUS_BUFFER_OVERFLOW</b>. The event must then be left in the received queue.</p>
-
-<p>The following are requirements that the driver must adhere to.<ul>
-<li>
-<p>This IOCTL must be called on a handle that has an <b>SEEvents</b> relative file name; otherwise, the driver returns STATUS_INVALID_DEVICE_STATE</p>
-</li>
-<li>
-<p>This driver must support CancelIO for this pending IOCTL.</p>
-</li>
-<li>
-<p>This driver must maintain a received queue of the received secure element events that match the subscription type.</p>
-</li>
-<li>
-<p>The following conditions must be met when this IOCTL is received in the driver:</p>
-<ul>
-<li>
-<p>If the received queue is empty, then the driver must pend the IOCTL for later completion.</p>
-</li>
-<li>
-<p>If the received queue is non-empty, then the driver must de-queue one event, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with <b>STATUS_SUCCESS</b> immediately.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer must contain the size of the SECURE_ELEMENT_EVENT_INFO structure plus its payload.</p>
-</li>
-<li>
-<p>If a received secure element event info is too large to be copied into this IOCTL’s buffer, the driver must copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s information field to sizeof(DWORD), and complete the IOCTL with <b>STATUS_BUFFER_OVERFLOW</b>. The event must then be left in the received queue.</p>
-</li>
-</ul>
-</p>
-
-<p>This IOCTL must be called on a handle that has an <b>SEEvents</b> relative file name; otherwise, the driver returns STATUS_INVALID_DEVICE_STATE</p>
-
-<p>This driver must support CancelIO for this pending IOCTL.</p>
-
-<p>This driver must maintain a received queue of the received secure element events that match the subscription type.</p>
-
-<p>The following conditions must be met when this IOCTL is received in the driver:</p>
-
-<p>If the received queue is empty, then the driver must pend the IOCTL for later completion.</p>
-
-<p>If the received queue is non-empty, then the driver must de-queue one event, copy the message buffer to the IOCTL’s output buffer, and complete the IOCTL with <b>STATUS_SUCCESS</b> immediately.</p>
-
-<p>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer must contain the size of the SECURE_ELEMENT_EVENT_INFO structure plus its payload.</p>
-
-<p>If a received secure element event info is too large to be copied into this IOCTL’s buffer, the driver must copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL’s information field to sizeof(DWORD), and complete the IOCTL with <b>STATUS_BUFFER_OVERFLOW</b>. The event must then be left in the received queue.</p>
-
 <p>The following are requirements that the driver must adhere to.<ul>
 <li>
 <p>This IOCTL must be called on a handle that has an <b>SEEvents</b> relative file name; otherwise, the driver returns STATUS_INVALID_DEVICE_STATE</p>

@@ -78,7 +78,7 @@ typedef struct _MSFC_FCAdapterHBAAttributes {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>. </p>
+<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
 ### -field <b>NodeWWN</b>
@@ -186,10 +186,10 @@ typedef struct _MSFC_FCAdapterHBAAttributes {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562497">MSFC_FCAdapterHBAAttributes WMI Class</a>
+<a href="storage.msfc_fcadapterhbaattributes_wmi_class">MSFC_FCAdapterHBAAttributes WMI Class</a>
 </dt>
 </dl>
 <p> </p>

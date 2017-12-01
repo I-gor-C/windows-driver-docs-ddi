@@ -81,7 +81,7 @@ typedef struct _DXVA_VideoDesc {
 ### -field <b>SampleFormat</b>
 
 <dd>
-<p>Specifies the format of the sample defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564045">DXVA_SampleFormat</a> structure.</p>
+<p>Specifies the format of the sample defined by the <a href="..\dxva\ne-dxva--dxva-sampleformat.md">DXVA_SampleFormat</a> structure.</p>
 </dd>
 
 ### -field <b>d3dFormat</b>
@@ -93,13 +93,13 @@ typedef struct _DXVA_VideoDesc {
 ### -field <b>InputSampleFreq</b>
 
 <dd>
-<p>Specifies the frequency of incoming video defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563969">DXVA_Frequency</a> structure.</p>
+<p>Specifies the frequency of incoming video defined by the <a href="..\dxva\ns-dxva--dxva-frequency.md">DXVA_Frequency</a> structure.</p>
 </dd>
 
 ### -field <b>OutputFrameFreq</b>
 
 <dd>
-<p>Specifies the desired frame rate of output video as defined by <a href="https://msdn.microsoft.com/library/windows/hardware/ff563969">DXVA_Frequency</a>.</p>
+<p>Specifies the desired frame rate of output video as defined by <a href="..\dxva\ns-dxva--dxva-frequency.md">DXVA_Frequency</a>.</p>
 </dd>
 </dl>
 
@@ -123,10 +123,10 @@ typedef struct _DXVA_VideoDesc {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564045">DXVA_SampleFormat</a>
+<a href="..\dxva\ne-dxva--dxva-sampleformat.md">DXVA_SampleFormat</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563969">DXVA_Frequency</a>
+<a href="..\dxva\ns-dxva--dxva-frequency.md">DXVA_Frequency</a>
 </dt>
 </dl>
 <p> </p>

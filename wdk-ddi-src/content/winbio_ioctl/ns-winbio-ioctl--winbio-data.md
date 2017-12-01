@@ -65,7 +65,7 @@ typedef struct _WINBIO_DATA {
 ### -field <b>Data</b>
 
 <dd>
-<p>Specifies an array that contains the payload. Frequently this member contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536459">WINBIO_BIR</a>.</p>
+<p>Specifies an array that contains the payload. Frequently this member contains a structure of type <a href="..\winbio_types\ns-winbio-types--winbio-bir.md">WINBIO_BIR</a>.</p>
 </dd>
 </dl>
 

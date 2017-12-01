@@ -93,14 +93,14 @@ typedef struct _NETWORK_OPEN_ECP_CONTEXT_V0 {
 ### -field <a id="Location"></a><a id="location"></a><a id="LOCATION"></a><b>Location</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff550908">NETWORK_OPEN_LOCATION_QUALIFIER</a>-typed value that specifies the location restriction to attach to the file. </p>
+<p>A <a href="..\ntifs\ne-ntifs-network-open-location-qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>-typed value that specifies the location restriction to attach to the file. </p>
 </dd>
 
 ### -field <a id="Integrity"></a><a id="integrity"></a><a id="INTEGRITY"></a><b>Integrity</b>
 
 <dd>
 <p>This member is currently not implemented and should be ignored. </p>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff550902">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>-typed value that specifies the integrity restriction to attach to the file. </p>
+<p>A <a href="..\ntifs\ne-ntifs-network-open-integrity-qualifier.md">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>-typed value that specifies the integrity restriction to attach to the file. </p>
 </dd>
 </dl>
 </dd>
@@ -115,14 +115,14 @@ typedef struct _NETWORK_OPEN_ECP_CONTEXT_V0 {
 ### -field <a id="Location"></a><a id="location"></a><a id="LOCATION"></a><b>Location</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff550908">NETWORK_OPEN_LOCATION_QUALIFIER</a>-typed value that specifies the location restriction to attach to the file. </p>
+<p>A <a href="..\ntifs\ne-ntifs-network-open-location-qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>-typed value that specifies the location restriction to attach to the file. </p>
 </dd>
 
 ### -field <a id="Integrity"></a><a id="integrity"></a><a id="INTEGRITY"></a><b>Integrity</b>
 
 <dd>
 <p>This member is currently not implemented and should be ignored. </p>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff550902">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>-typed value that specifies the integrity restriction to attach to the file. </p>
+<p>A <a href="..\ntifs\ne-ntifs-network-open-integrity-qualifier.md">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>-typed value that specifies the integrity restriction to attach to the file. </p>
 </dd>
 </dl>
 </dd>
@@ -135,9 +135,9 @@ typedef struct _NETWORK_OPEN_ECP_CONTEXT_V0 {
 
 <p>The NETWORK_OPEN_ECP_CONTEXT_V0 structure is read-only. You should use it to retrieve information about the network ECP context on a file only. For more information about this issue, see <a href="ifsk.system_defined_ecps">System-Defined ECPs</a>.</p>
 
-<p>If a caller must verify that the file system acknowledged the NETWORK_OPEN_ECP_CONTEXT_V0 context structure, the caller should call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543321">FltIsEcpAcknowledged</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff546808">FsRtlIsEcpAcknowledged</a> routine on the ECP after the operation is complete.</p>
+<p>If a caller must verify that the file system acknowledged the NETWORK_OPEN_ECP_CONTEXT_V0 context structure, the caller should call the <a href="..\fltkernel\nf-fltkernel-fltisecpacknowledged.md">FltIsEcpAcknowledged</a> or <a href="..\ntifs\nf-ntifs-fsrtlisecpacknowledged.md">FsRtlIsEcpAcknowledged</a> routine on the ECP after the operation is complete.</p>
 
-<p>In most cases, drivers that run on Windows Vista and later versions of Windows use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550896">NETWORK_OPEN_ECP_CONTEXT</a> structure to interpret network ECP contexts on files. However, drivers that run on Windows 7 and later versions of Windows and that must interpret network ECP contexts on files that reside on Windows Vista must use the NETWORK_OPEN_ECP_CONTEXT_V0 structure instead. </p>
+<p>In most cases, drivers that run on Windows Vista and later versions of Windows use the <a href="..\ntifs\ns-ntifs--network-open-ecp-context.md">NETWORK_OPEN_ECP_CONTEXT</a> structure to interpret network ECP contexts on files. However, drivers that run on Windows 7 and later versions of Windows and that must interpret network ECP contexts on files that reside on Windows Vista must use the NETWORK_OPEN_ECP_CONTEXT_V0 structure instead. </p>
 
 ## -requirements
 <table>
@@ -164,13 +164,13 @@ typedef struct _NETWORK_OPEN_ECP_CONTEXT_V0 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550896">NETWORK_OPEN_ECP_CONTEXT</a>
+<a href="..\ntifs\ns-ntifs--network-open-ecp-context.md">NETWORK_OPEN_ECP_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550902">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>
+<a href="..\ntifs\ne-ntifs-network-open-integrity-qualifier.md">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550908">NETWORK_OPEN_LOCATION_QUALIFIER</a>
+<a href="..\ntifs\ne-ntifs-network-open-location-qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>
 </dt>
 </dl>
 <p> </p>

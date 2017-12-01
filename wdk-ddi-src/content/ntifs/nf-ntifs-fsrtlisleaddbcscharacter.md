@@ -67,11 +67,7 @@ BOOLEAN FsRtlIsLeadDbcsCharacter(
 ## -remarks
 <p>Lead bytes are unique to double-byte character sets. A lead byte introduces a double-byte character. Lead bytes occupy a specific range of byte values. The <b>FsRtlIsLeadDbcsCharacter</b> macro uses the system code page to check lead-byte ranges.  </p>
 
-<p>For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. </p>
-
-<p>Lead bytes are unique to double-byte character sets. A lead byte introduces a double-byte character. Lead bytes occupy a specific range of byte values. The <b>FsRtlIsLeadDbcsCharacter</b> macro uses the system code page to check lead-byte ranges.  </p>
-
-<p>For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. </p>
+<p>For information about other string-handling routines, see <a href="kernel.strings">Strings</a>. </p>
 
 ## -requirements
 <table>
@@ -108,13 +104,13 @@ BOOLEAN FsRtlIsLeadDbcsCharacter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545877">FsRtlDissectDbcs</a>
+<a href="ifsk.fsrtldissectdbcs">FsRtlDissectDbcs</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545891">FsRtlDoesDbcsContainWildCards</a>
+<a href="ifsk.fsrtldoesdbcscontainwildcards">FsRtlDoesDbcsContainWildCards</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546803">FsRtlIsDbcsInExpression</a>
+<a href="ifsk.fsrtlisdbcsinexpression">FsRtlIsDbcsInExpression</a>
 </dt>
 </dl>
 <p> </p>

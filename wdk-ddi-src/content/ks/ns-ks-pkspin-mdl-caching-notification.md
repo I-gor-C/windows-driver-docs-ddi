@@ -7,7 +7,7 @@ old-location: stream\kspin_mdl_caching_notification.htm
 old-project: stream
 ms.assetid: 93BAAF88-3F82-4E32-B403-4028ECF21F9A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSPIN_MDL_CACHING_NOTIFICATION, KSPIN_MDL_CACHING_NOTIFICATION, *PKSPIN_MDL_CACHING_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

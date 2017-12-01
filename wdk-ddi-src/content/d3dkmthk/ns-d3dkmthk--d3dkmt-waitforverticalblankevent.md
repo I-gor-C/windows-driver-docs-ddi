@@ -103,7 +103,7 @@ typedef struct _D3DKMT_WAITFORVERTICALBLANKEVENT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547265">D3DKMTWaitForVerticalBlankEvent</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforverticalblankevent.md">D3DKMTWaitForVerticalBlankEvent</a>
 </dt>
 </dl>
 <p> </p>

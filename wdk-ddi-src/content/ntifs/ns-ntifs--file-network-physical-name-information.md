@@ -71,15 +71,15 @@ typedef struct _FILE_NETWORK_PHYSICAL_NAME_INFORMATION {
 ## -remarks
 <p>The <b>FILE_NETWORK_PHYSICAL_NAME_INFORMATION</b> structure is used to retrieve the network physical name information for a file. This operation can be performed in either of the following ways: </p>
 
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567052">ZwQueryInformationFile</a>, passing <b>FileNetworkPhysicalNameInformation</b> as the value of <i>FileInformationClass</i> and passing a caller-allocated buffer formatted as a <b>FILE_NETWORK_PHYSICAL_NAME_INFORMATION</b> structure for the value of <i>FileInformation</i>. The <i>FileHandle</i> parameter specifies the file target for the name information.</p>
+<p>Call <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>, passing <b>FileNetworkPhysicalNameInformation</b> as the value of <i>FileInformationClass</i> and passing a caller-allocated buffer formatted as a <b>FILE_NETWORK_PHYSICAL_NAME_INFORMATION</b> structure for the value of <i>FileInformation</i>. The <i>FileHandle</i> parameter specifies the file target for the name information.</p>
 
-<p>Create an IRP with major function code <a href="https://msdn.microsoft.com/library/windows/hardware/ff549283">IRP_MJ_QUERY_INFORMATION</a>. </p>
+<p>Create an IRP with major function code <a href="ifsk.irp_mj_query_information">IRP_MJ_QUERY_INFORMATION</a>. </p>
 
-<p>The <b>FileName</b> of <b>FILE_NETWORK_PHYSICAL_NAME_INFORMATION</b> will contain the network name of the file target handle passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff567052">ZwQueryInformationFile</a>. The physical network name returned is in the format of <i>\;X:\Server\ShareName\Dir1\Dir2\...\FileName</i>.</p>
+<p>The <b>FileName</b> of <b>FILE_NETWORK_PHYSICAL_NAME_INFORMATION</b> will contain the network name of the file target handle passed to <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>. The physical network name returned is in the format of <i>\;X:\Server\ShareName\Dir1\Dir2\...\FileName</i>.</p>
 
-<p>If the physical name is longer than the length set in <b>FileNameLength</b>, then STATUS_BUFFER_OVERFLOW is returned  from <a href="https://msdn.microsoft.com/library/windows/hardware/ff567052">ZwQueryInformationFile</a> and <b>FileNameLength</b> is updated with the number of bytes required to hold the entire name string. The count of characters in the name is <b>FileNameLength</b> / <b>sizeof</b>(WCHAR).</p>
+<p>If the physical name is longer than the length set in <b>FileNameLength</b>, then STATUS_BUFFER_OVERFLOW is returned  from <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> and <b>FileNameLength</b> is updated with the number of bytes required to hold the entire name string. The count of characters in the name is <b>FileNameLength</b> / <b>sizeof</b>(WCHAR).</p>
 
-<p>The following is an example of querying the network physical name  information of a file target using <a href="https://msdn.microsoft.com/library/windows/hardware/ff567052">ZwQueryInformationFile</a>.</p>
+<p>The following is an example of querying the network physical name  information of a file target using <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>.</p>
 
 ## -requirements
 <table>
@@ -98,13 +98,13 @@ typedef struct _FILE_NETWORK_PHYSICAL_NAME_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff728840">FILE_INFORMATION_CLASS</a>
+<a href="..\wdm\ne-wdm--file-information-class.md">FILE_INFORMATION_CLASS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549283">IRP_MJ_QUERY_INFORMATION</a>
+<a href="ifsk.irp_mj_query_information">IRP_MJ_QUERY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567052">ZwQueryInformationFile</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 </dt>
 </dl>
 <p> </p>

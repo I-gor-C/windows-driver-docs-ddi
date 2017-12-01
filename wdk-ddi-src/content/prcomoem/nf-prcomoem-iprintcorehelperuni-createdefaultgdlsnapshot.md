@@ -102,7 +102,7 @@ HRESULT CreateDefaultGDLSnapshot(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552923">IPrintCoreHelperUni::CreateGDLSnapshot</a>
+<a href="print.iprintcorehelperuni_creategdlsnapshot">IPrintCoreHelperUni::CreateGDLSnapshot</a>
 </dt>
 </dl>
 <p> </p>

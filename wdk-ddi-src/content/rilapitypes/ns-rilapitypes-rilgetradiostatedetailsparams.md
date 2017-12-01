@@ -7,7 +7,7 @@ old-location: netvista\rilgetradiostatedetailsparams_2.htm
 old-project: netvista
 ms.assetid: 35379f40-6440-4f03-8e14-81aed1e85883
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILGETRADIOSTATEDETAILSPARAMS, RILGETRADIOSTATEDETAILSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -68,7 +68,7 @@ BOOLEAN VideoPortScanRom(
 ### -param <i>RomBase</i> 
 
 <dd>
-<p>Specifies the base ROM address at which the search should start. The given <i>RomBase</i> must be in a mapped range returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a>.</p>
+<p>Specifies the base ROM address at which the search should start. The given <i>RomBase</i> must be in a mapped range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.</p>
 </dd>
 
 ### -param <i>RomLength</i> 
@@ -88,9 +88,7 @@ BOOLEAN VideoPortScanRom(
 <p>If the string is found, <b>VideoPortScanRom</b> returns <b>TRUE</b>. Otherwise, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p><b>VideoPortScanRom</b> cannot be called from a miniport driver's <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pvideo-hw-timer.md">HwVidTimer</a> functions, or from <a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>, or from a callback to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570372">VideoPortSynchronizeExecution</a>. </p>
-
-<p><b>VideoPortScanRom</b> cannot be called from a miniport driver's <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pvideo-hw-timer.md">HwVidTimer</a> functions, or from <a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>, or from a callback to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570372">VideoPortSynchronizeExecution</a>. </p>
+<p><b>VideoPortScanRom</b> cannot be called from a miniport driver's <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pvideo-hw-timer.md">HwVidTimer</a> functions, or from <a href="..\video\nf-video-videoportqueuedpc.md">VideoPortQueueDpc</a>, or from a callback to <a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>. </p>
 
 ## -requirements
 <table>
@@ -158,10 +156,10 @@ BOOLEAN VideoPortScanRom(
 <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a>
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570317">VideoPortGetRomImage</a>
+<a href="..\video\nf-video-videoportgetromimage.md">VideoPortGetRomImage</a>
 </dt>
 </dl>
 <p> </p>

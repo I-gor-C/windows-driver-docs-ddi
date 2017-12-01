@@ -60,13 +60,13 @@ FORCEINLINE void UdecxUrbComplete(
 ### -param <i>Request</i> [in]
 
 <dd>
-<p>A handle to a framework request object that contains the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> for the transfer.</p>
+<p>A handle to a framework request object that contains the <a href="..\usb\ns-usb--urb.md">URB</a> for the transfer.</p>
 </dd>
 
 ### -param <i>UsbdStatus</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff539136">USBD_STATUS</a>-typed value that indicates the success or failure of the completed URB request. </p>
+<p>A <a href="buses.usbd_status">USBD_STATUS</a>-typed value that indicates the success or failure of the completed URB request. </p>
 </dd>
 </dl>
 
@@ -135,10 +135,10 @@ FORCEINLINE void UdecxUrbComplete(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

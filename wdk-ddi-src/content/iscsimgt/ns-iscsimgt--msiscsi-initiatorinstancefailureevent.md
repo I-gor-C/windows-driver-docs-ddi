@@ -58,7 +58,7 @@ typedef struct _MSiSCSI_InitiatorInstanceFailureEvent {
 ### -field <b>FailureType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561533">ISCSI_INITIATOR_FAILURE_TYPE_QUALIFIERS</a> value that indicates why the initiator instance failed.</p>
+<p>A <a href="storage.iscsi_initiator_failure_type_qualifiers">ISCSI_INITIATOR_FAILURE_TYPE_QUALIFIERS</a> value that indicates why the initiator instance failed.</p>
 </dd>
 
 ### -field <b>RemoteNodeName</b>
@@ -88,10 +88,10 @@ typedef struct _MSiSCSI_InitiatorInstanceFailureEvent {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561533">ISCSI_INITIATOR_FAILURE_TYPE_QUALIFIERS</a>
+<a href="storage.iscsi_initiator_failure_type_qualifiers">ISCSI_INITIATOR_FAILURE_TYPE_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563032">MSiSCSI_InitiatorInstanceFailureEvent WMI Class</a>
+<a href="storage.msiscsi_initiatorinstancefailureevent_wmi_class">MSiSCSI_InitiatorInstanceFailureEvent WMI Class</a>
 </dt>
 </dl>
 <p> </p>

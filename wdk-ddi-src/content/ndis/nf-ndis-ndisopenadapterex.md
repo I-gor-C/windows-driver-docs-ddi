@@ -7,7 +7,7 @@ old-location: netvista\ndisopenadapterex.htm
 old-project: netvista
 ms.assetid: 2dc356e6-a2ef-4b43-abe5-7c5058c15cf5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisOpenAdapterEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,7 +80,7 @@ NDIS_STATUS NdisOpenAdapterEx(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566734">NDIS_OPEN_PARAMETERS</a> structure that is
+     <a href="..\ndis\ns-ndis--ndis-open-parameters.md">NDIS_OPEN_PARAMETERS</a> structure that is
      set up by the caller.</p>
 </dd>
 
@@ -129,35 +129,6 @@ NDIS_STATUS NdisOpenAdapterEx(
 <p> </p>
 
 ## -remarks
-<p>A protocol driver must call 
-    <b>NdisOpenAdapterEx</b> from its 
-    <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a> function.
-    NDIS fails any attempt to call 
-    <b>NdisOpenAdapterEx</b> outside the context of 
-    <i>ProtocolBindAdapterEx</i>.</p>
-
-<p>If 
-    <b>NdisOpenAdapterEx</b> returns NDIS_STATUS_PENDING, the caller must not use the values at 
-    <i>NdisBindingHandle</i> and the 
-    <b>SelectedMediumIndex</b> member at 
-    <i>OpenParameters</i> until NDIS calls the 
-    <a href="..\ndis\nc-ndis-protocol-open-adapter-complete-ex.md">
-    ProtocolOpenAdapterCompleteEx</a> function.</p>
-
-<p>The string at 
-    <b>AdapterName</b> must remain valid only until 
-    <b>NdisOpenAdapterEx</b> returns. Therefore, in the case that 
-    <b>NdisOpenAdapterEx</b> returns NDIS_STATUS_PENDING, the driver is not required to continue to retain
-    this string after 
-    <b>NdisOpenAdapterEx</b> returns.</p>
-
-<p>After the open operation completes successfully, the caller can use the value that NDIS returned in
-    the 
-    <i>NdisBindingHandle</i> in subsequent calls to 
-    <b>Ndis<i>Xxx</i></b> functions. The caller can use the 
-    <b>SelectedMediumIndex</b> member of the 
-    <i>OpenParameters</i> parameter to determine how it should interact with the underlying driver.</p>
-
 <p>A protocol driver must call 
     <b>NdisOpenAdapterEx</b> from its 
     <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a> function.
@@ -240,7 +211,7 @@ NDIS_STATUS NdisOpenAdapterEx(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547996">Irql_Protocol_Driver_Function</a>
+<a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -248,10 +219,10 @@ NDIS_STATUS NdisOpenAdapterEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566734">NDIS_OPEN_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-open-parameters.md">NDIS_OPEN_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564520">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
@@ -263,4 +234,4 @@ NDIS_STATUS NdisOpenAdapterEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenAdapterEx function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenAdapterEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

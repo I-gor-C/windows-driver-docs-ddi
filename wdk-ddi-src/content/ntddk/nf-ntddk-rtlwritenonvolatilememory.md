@@ -100,12 +100,7 @@ NTSTATUS RtlWriteNonVolatileMemory(
 <p> </p>
 
 ## -remarks
-<p> This is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561808">RtlCopyMemory</a> equivalent for non-volatile memory
-    the value add is only with verifier enabled. When the verifier is enabled,
-    ranges that are modified can be tracked in <b>NvToken</b> and can be reported
-    in <a href="..\ntddk\nf-ntddk-rtlfreenonvolatiletoken.md">RtlFreeNonVolatileToken</a> if a flush is not called for a write. This routine is currently not supported for Windows Server until the next major release of Windows Server.</p>
-
-<p> This is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561808">RtlCopyMemory</a> equivalent for non-volatile memory
+<p> This is a <a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a> equivalent for non-volatile memory
     the value add is only with verifier enabled. When the verifier is enabled,
     ranges that are modified can be tracked in <b>NvToken</b> and can be reported
     in <a href="..\ntddk\nf-ntddk-rtlfreenonvolatiletoken.md">RtlFreeNonVolatileToken</a> if a flush is not called for a write. This routine is currently not supported for Windows Server until the next major release of Windows Server.</p>
@@ -143,7 +138,7 @@ NTSTATUS RtlWriteNonVolatileMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561808">RtlCopyMemory</a>
+<a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a>
 </dt>
 <dt>
 <a href="ifsk.RtlDrainNonVolatileFlush">RtlDrainNonVolatileFlush</a>

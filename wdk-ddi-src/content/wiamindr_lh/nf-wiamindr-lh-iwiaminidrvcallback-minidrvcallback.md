@@ -196,7 +196,7 @@ HRESULT MiniDrvCallback(
 ### -param <i>pTranCtx</i> [in]
 
 <dd>
-<p>Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a> structure containing the data transfer values.</p>
+<p>Points to a <a href="..\wiamindr_lh\ns-wiamindr-lh--minidrv-transfer-context.md">MINIDRV_TRANSFER_CONTEXT</a> structure containing the data transfer values.</p>
 </dd>
 
 ### -param <i>lReserved</i> [in]
@@ -210,10 +210,6 @@ HRESULT MiniDrvCallback(
 <p>If the method succeeds, it returns S_OK. If the callback is canceled by the client application, the method returns S_FALSE. If the method fails, it returns a standard COM error code.</p>
 
 ## -remarks
-<p>The percent complete values are sent directly from the driver. The WIA service does not adjust the values.</p>
-
-<p>IT_MSG_FILE_PREVIEW_DATA_HEADER  is for out-of-band-data. This allows the application doing a file transfer to display the banded data. This is useful for scroll-fed scanners that have an unknown length and no preview scan. The information reported in this message should be treated the same as IT_MSG_DATA_HEADER. If a driver supports this message, it can supply preview data during its file transfer. </p>
-
 <p>The percent complete values are sent directly from the driver. The WIA service does not adjust the values.</p>
 
 <p>IT_MSG_FILE_PREVIEW_DATA_HEADER  is for out-of-band-data. This allows the application doing a file transfer to display the banded data. This is useful for scroll-fed scanners that have an unknown length and no preview scan. The information reported in this message should be treated the same as IT_MSG_DATA_HEADER. If a driver supports this message, it can supply preview data during its file transfer. </p>
@@ -253,7 +249,7 @@ HRESULT MiniDrvCallback(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--minidrv-transfer-context.md">MINIDRV_TRANSFER_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>

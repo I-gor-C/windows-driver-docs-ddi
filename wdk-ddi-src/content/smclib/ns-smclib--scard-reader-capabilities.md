@@ -7,7 +7,7 @@ old-location: smartcrd\scard_reader_capabilities.htm
 old-project: smartcrd
 ms.assetid: f55b74d0-d545-419a-87fb-c320f789aaf4
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: SCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -281,7 +281,7 @@ typedef struct {
 </tr>
 </table>
 <p> </p>
-<p>Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548974">SMARTCARD_EXTENSION</a>. </p>
+<p>Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="..\smclib\ns-smclib--smartcard-extension.md">SMARTCARD_EXTENSION</a>. </p>
 </dd>
 
 ### -field <b>Channel</b>

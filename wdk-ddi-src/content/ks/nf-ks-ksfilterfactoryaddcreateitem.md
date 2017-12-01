@@ -7,7 +7,7 @@ old-location: stream\ksfilterfactoryaddcreateitem.htm
 old-project: stream
 ms.assetid: c09840fb-8195-4ac5-a164-ba4d82615344
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsFilterFactoryAddCreateItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ NTSTATUS KsFilterFactoryAddCreateItem(
 ### -param <i>FilterFactory</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a> structure representing the filter factory to which to add a new create item.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure representing the filter factory to which to add a new create item.</p>
 </dd>
 
 ### -param <i>RefString</i> [in]
@@ -72,13 +72,13 @@ NTSTATUS KsFilterFactoryAddCreateItem(
 ### -param <i>SecurityDescriptor</i> [in, optional]
 
 <dd>
-<p>This parameter optionally contains a pointer to a SECURITY_DESCRIPTOR structure for this type of object. See the Microsoft Windows SDK For information about this structure. For related information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a>. If <b>NULL</b>, no descriptor is assigned.</p>
+<p>This parameter optionally contains a pointer to a SECURITY_DESCRIPTOR structure for this type of object. See the Microsoft Windows SDK For information about this structure. For related information, see <a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a>. If <b>NULL</b>, no descriptor is assigned.</p>
 </dd>
 
 ### -param <i>CreateItemFlags</i> [in]
 
 <dd>
-<p>See the table for the <b>Flags</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a>.</p>
+<p>See the table for the <b>Flags</b> member of <a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a>.</p>
 </dd>
 </dl>
 
@@ -86,10 +86,6 @@ NTSTATUS KsFilterFactoryAddCreateItem(
 <p><b>KsFilterFactoryAddCreateItem</b> returns success or failure of the attempt to add a new create item.</p>
 
 ## -remarks
-<p>Normally, only a single create item using the reference GUID supplied in the filter descriptor is added for the filter factory. This function allows the caller to add create items associated with the given filter factory.</p>
-
-<p>For more information, see <a href="NULL">Initializing an AVStream Minidriver</a>. </p>
-
 <p>Normally, only a single create item using the reference GUID supplied in the filter descriptor is added for the filter factory. This function allows the caller to add create items associated with the given filter factory.</p>
 
 <p>For more information, see <a href="NULL">Initializing an AVStream Minidriver</a>. </p>
@@ -139,24 +135,24 @@ NTSTATUS KsFilterFactoryAddCreateItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a>
+<a href="stream.ksobject_create_item">KSOBJECT_CREATE_ITEM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560968">KsAllocateObjectCreateItem</a>
+<a href="..\ks\nf-ks-ksallocateobjectcreateitem.md">KsAllocateObjectCreateItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560944">KsAddObjectCreateItemToDeviceHeader</a>
+<a href="..\ks\nf-ks-ksaddobjectcreateitemtodeviceheader.md">KsAddObjectCreateItemToDeviceHeader</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560947">KsAddObjectCreateItemToObjectHeader</a>
+<a href="..\ks\nf-ks-ksaddobjectcreateitemtoobjectheader.md">KsAddObjectCreateItemToObjectHeader</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562563">KsFreeObjectCreateItem</a>
+<a href="..\ks\nf-ks-ksfreeobjectcreateitem.md">KsFreeObjectCreateItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566744">KsQueryObjectCreateItem</a>
+<a href="..\ks\nf-ks-ksqueryobjectcreateitem.md">KsQueryObjectCreateItem</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterFactoryAddCreateItem function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterFactoryAddCreateItem function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

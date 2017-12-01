@@ -67,8 +67,6 @@ HRESULT GetXpsPartIterator(
 ## -remarks
 <p>Filters should not add or delete parts while using the iterator that the <b>GetXpsPartIterator</b> method retrieves.</p>
 
-<p>Filters should not add or delete parts while using the iterator that the <b>GetXpsPartIterator</b> method retrieves.</p>
-
 ## -requirements
 <table>
 <tr>

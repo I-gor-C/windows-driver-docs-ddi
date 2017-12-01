@@ -7,7 +7,7 @@ old-location: netvista\rilpositioninfo_v2_2.htm
 old-project: netvista
 ms.assetid: f91d95bf-715d-484b-b44e-19bd2250d304
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILPOSITIONINFO_V2, RILPOSITIONINFO_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices

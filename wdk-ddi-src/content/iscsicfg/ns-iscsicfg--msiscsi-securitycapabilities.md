@@ -85,12 +85,12 @@ typedef struct _MSiSCSI_SecurityCapabilities {
 ### -field <b>EncryptionAvailable</b>
 
 <dd>
-<p>A variable length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561528">ISCSI_ENCRYPTION_TYPES</a> structures, which indicate types of encryption that the initiator supports. </p>
+<p>A variable length array of <a href="storage.iscsi_encryption_types">ISCSI_ENCRYPTION_TYPES</a> structures, which indicate types of encryption that the initiator supports. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite automatically generates a declaration of the MSiSCSI_SecurityCapabilities structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a> in <i>Config.mof</i>. </p>
+<p>The WMI tool suite automatically generates a declaration of the MSiSCSI_SecurityCapabilities structure when it compiles the <a href="storage.msiscsi_securitycapabilities_wmi_class">MSiSCSI_SecurityCapabilities WMI Class</a> in <i>Config.mof</i>. </p>
 
 <p>Initiators that support IPsec must implement the MSiSCSI_SecurityCapabilities class. </p>
 
@@ -113,10 +113,10 @@ typedef struct _MSiSCSI_SecurityCapabilities {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561528">ISCSI_ENCRYPTION_TYPES</a>
+<a href="storage.iscsi_encryption_types">ISCSI_ENCRYPTION_TYPES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a>
+<a href="storage.msiscsi_securitycapabilities_wmi_class">MSiSCSI_SecurityCapabilities WMI Class</a>
 </dt>
 </dl>
 <p> </p>

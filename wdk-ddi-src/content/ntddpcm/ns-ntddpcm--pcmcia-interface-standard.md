@@ -76,13 +76,13 @@ typedef struct _PCMCIA_INTERFACE_STANDARD {
 ### -field <b>InterfaceReference</b>
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547833">InterfaceReference</a> implementation. </p>
+<p>Pointer to the <a href="kernel.interfacereference">InterfaceReference</a> implementation. </p>
 </dd>
 
 ### -field <b>InterfaceDereference</b>
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547829">InterfaceDereference</a> implementation. </p>
+<p>Pointer to the <a href="kernel.interfacedereference">InterfaceDereference</a> implementation. </p>
 </dd>
 
 ### -field <b>Context</b>

@@ -58,13 +58,13 @@ typedef union _DXVAHDDDI_COLOR {
 ### -field <b>RGB</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563027">DXVAHDDDI_COLOR_RGBA</a> structure that describes color in RGB terms. </p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-color-rgba.md">DXVAHDDDI_COLOR_RGBA</a> structure that describes color in RGB terms. </p>
 </dd>
 
 ### -field <b>YCbCr</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563033">DXVAHDDDI_COLOR_YCbCrA</a> structure that describes color in a YCbCr terms. </p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-color-ycbcra.md">DXVAHDDDI_COLOR_YCbCrA</a> structure that describes color in a YCbCr terms. </p>
 </dd>
 </dl>
 
@@ -96,10 +96,10 @@ typedef union _DXVAHDDDI_COLOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563027">DXVAHDDDI_COLOR_RGBA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-color-rgba.md">DXVAHDDDI_COLOR_RGBA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563033">DXVAHDDDI_COLOR_YCbCrA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-color-ycbcra.md">DXVAHDDDI_COLOR_YCbCrA</a>
 </dt>
 </dl>
 <p> </p>

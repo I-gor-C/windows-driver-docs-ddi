@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SENDCMDOUTPARAMS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a> request to retrieve data returned by a Self-Monitoring Analysis and Reporting Technology (SMART) command. </p>
+<p>The SENDCMDOUTPARAMS structure is used in conjunction with the <a href="storage.smart_send_drive_command">SMART_SEND_DRIVE_COMMAND</a> request to retrieve data returned by a Self-Monitoring Analysis and Reporting Technology (SMART) command. </p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct _SENDCMDOUTPARAMS {
 ### -field <b>DriverStatus</b>
 
 <dd>
-<p>Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552658">DRIVERSTATUS</a> structure that indicates the driver status. </p>
+<p>Contains a <a href="..\ntdddisk\ns-ntdddisk--driverstatus.md">DRIVERSTATUS</a> structure that indicates the driver status. </p>
 </dd>
 
 ### -field <b>bBuffer</b>
@@ -76,9 +76,9 @@ typedef struct _SENDCMDOUTPARAMS {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a> is used to send SMART commands to a device. </p>
+<p>The <a href="storage.smart_send_drive_command">SMART_SEND_DRIVE_COMMAND</a> is used to send SMART commands to a device. </p>
 
-<p>The SENDCMDOUTPARAMS structure is also used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a> request. </p>
+<p>The SENDCMDOUTPARAMS structure is also used with the <a href="storage.smart_rcv_drive_data">SMART_RCV_DRIVE_DATA</a> request. </p>
 
 ## -requirements
 <table>
@@ -97,13 +97,13 @@ typedef struct _SENDCMDOUTPARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a>
+<a href="storage.smart_send_drive_command">SMART_SEND_DRIVE_COMMAND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a>
+<a href="storage.smart_rcv_drive_data">SMART_RCV_DRIVE_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565401">SENDCMDINPARAMS</a>
+<a href="..\ntdddisk\ns-ntdddisk--sendcmdinparams.md">SENDCMDINPARAMS</a>
 </dt>
 </dl>
 <p> </p>

@@ -62,7 +62,7 @@ typedef struct _D3D11_1DDI_GETCAPTUREHANDLEDATA {
 
 <dd>
 <p>[in] The handle to the resource for which the allocation handle is to be obtained.</p>
-<p>The Direct3D version 11 and later runtime will have already verified that this resource was created using the <b>D3D11_DDI_BIND_CAPTURE</b> value in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541995">D3D10_DDI_RESOURCE_BIND_FLAG</a> enumeration.</p>
+<p>The Direct3D version 11 and later runtime will have already verified that this resource was created using the <b>D3D11_DDI_BIND_CAPTURE</b> value in the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-bind-flag.md">D3D10_DDI_RESOURCE_BIND_FLAG</a> enumeration.</p>
 </dd>
 
 ### -field <b>ArrayIndex</b>
@@ -129,7 +129,7 @@ typedef struct _D3D11_1DDI_GETCAPTUREHANDLEDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541995">D3D10_DDI_RESOURCE_BIND_FLAG</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-bind-flag.md">D3D10_DDI_RESOURCE_BIND_FLAG</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-getcapturehandle.md">GetCaptureHandle</a>

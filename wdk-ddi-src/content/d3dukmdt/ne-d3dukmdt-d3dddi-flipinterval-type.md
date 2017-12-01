@@ -117,7 +117,7 @@ typedef enum D3DDDI_FLIPINTERVAL_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557618">DXGKARG_PRESENT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-present.md">DXGKARG_PRESENT</a>
 </dt>
 </dl>
 <p> </p>

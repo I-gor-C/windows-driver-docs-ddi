@@ -68,7 +68,7 @@ __checkReturn HRESULT APIENTRY CreatePixelShader(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542952">D3DDDIARG_CREATEPIXELSHADER</a> structure that retrieves the shader handle that is associated with the pixel shader code that is specified by <b>pCode</b>.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createpixelshader.md">D3DDDIARG_CREATEPIXELSHADER</a> structure that retrieves the shader handle that is associated with the pixel shader code that is specified by <b>pCode</b>.</p>
 </dd>
 
 ### -param <i>pCode</i> [in]
@@ -82,8 +82,6 @@ __checkReturn HRESULT APIENTRY CreatePixelShader(
 <p><b>CreatePixelShader</b> returns S_OK or an appropriate error result if the pixel shader code object is not successfully created.</p>
 
 ## -remarks
-<p>For more information about programming shader assemblers, see <a href="https://msdn.microsoft.com/c858766c-b414-4971-b4d9-23ec94aca8ea">Processing Shader Codes</a>.</p>
-
 <p>For more information about programming shader assemblers, see <a href="https://msdn.microsoft.com/c858766c-b414-4971-b4d9-23ec94aca8ea">Processing Shader Codes</a>.</p>
 
 ## -requirements
@@ -121,10 +119,10 @@ __checkReturn HRESULT APIENTRY CreatePixelShader(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542952">D3DDDIARG_CREATEPIXELSHADER</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createpixelshader.md">D3DDDIARG_CREATEPIXELSHADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

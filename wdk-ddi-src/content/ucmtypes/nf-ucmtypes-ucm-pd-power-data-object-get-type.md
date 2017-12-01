@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Retrieves the type of Power Data Object from the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> structure. </p>
+<p>Retrieves the type of Power Data Object from the <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> structure. </p>
 
 
 ## -syntax
@@ -58,17 +58,15 @@ FORCEINLINE  UCM_PD_POWER_DATA_OBJECT_GET_TYPE(
 ### -param <i>Pdo</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> structure that contains the type of Power Data Object.</p>
+<p>A pointer to a <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> structure that contains the type of Power Data Object.</p>
 </dd>
 </dl>
 
 ## -returns
-<p>Returns the <b>Common.Type</b> member of the  <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> structure.</p>
+<p>Returns the <b>Common.Type</b> member of the  <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> structure.</p>
 
 ## -remarks
-<p>For information about the Power Data Object including the types of object, see Power Delivery specification. The Type member of <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> indicates the type of Power Data Object.</p>
-
-<p>For information about the Power Data Object including the types of object, see Power Delivery specification. The Type member of <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> indicates the type of Power Data Object.</p>
+<p>For information about the Power Data Object including the types of object, see Power Delivery specification. The Type member of <a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> indicates the type of Power Data Object.</p>
 
 ## -requirements
 <table>
@@ -119,7 +117,7 @@ FORCEINLINE  UCM_PD_POWER_DATA_OBJECT_GET_TYPE(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a>
+<a href="buses.ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a>
 </dt>
 </dl>
 <p> </p>

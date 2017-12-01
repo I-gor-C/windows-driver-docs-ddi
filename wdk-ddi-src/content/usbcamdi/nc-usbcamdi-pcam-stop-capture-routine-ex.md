@@ -7,7 +7,7 @@ old-location: stream\camstopcaptureex.htm
 old-project: stream
 ms.assetid: b8b6e3f0-f5c8-449f-9001-3182b3547d8d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: USBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR, *PUSBC_FUNCTION_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,12 +83,6 @@ NTSTATUS CamStopCaptureEx(
 <p><b>CamStopCaptureEx</b> returns STATUS_SUCCESS or an appropriate error code. This return value is the completion code for the read IRP.</p>
 
 ## -remarks
-<p>USBCAMD calls the minidriver's <b>CamStopCaptureEx</b> callback function immediately after the isochronous video stream is stopped. Typically, a camera minidriver selects an alternate setting within the USB video streaming interface that uses no additional bandwidth.</p>
-
-<p>The original USBCAMD does not call <b>CamStopCaptureEx</b>.</p>
-
-<p>This function is required.</p>
-
 <p>USBCAMD calls the minidriver's <b>CamStopCaptureEx</b> callback function immediately after the isochronous video stream is stopped. Typically, a camera minidriver selects an alternate setting within the USB video streaming interface that uses no additional bandwidth.</p>
 
 <p>The original USBCAMD does not call <b>CamStopCaptureEx</b>.</p>

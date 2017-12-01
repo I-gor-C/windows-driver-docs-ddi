@@ -7,7 +7,7 @@ old-location: netvista\ndismregisterscattergatherdma.htm
 old-project: netvista
 ms.assetid: 90ce64a2-9140-4b5f-88aa-b4f01a3d0c6f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMRegisterScatterGatherDma
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -98,7 +98,7 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
 
 <dd>
 <p>The 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+       <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
        NDIS_SG_DMA_DESCRIPTION structure. Set the 
        <b>Type</b> member of the structure that 
        <b>Header</b> specifies to NDIS_OBJECT_TYPE_SG_DMA_DESCRIPTION, the 
@@ -236,52 +236,6 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
     NdisMDeregisterScatterGatherDma</a> function to deallocate the DMA resources that 
     <b>NdisMRegisterScatterGatherDma</b> allocated.</p>
 
-<p>An NDIS bus-master miniport driver calls 
-    <b>NdisMRegisterScatterGatherDma</b> within its 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function to
-    initialize resources for scatter/gather DMA operations. The 
-    <i>DmaDescription</i> parameter that the miniport driver passes to 
-    <b>NdisMRegisterScatterGatherDma</b> contains the information that NDIS uses to initialize the
-    scatter/gather DMA resources. After 
-    <b>NdisMRegisterScatterGatherDma</b> returns, the 
-    <b>ScatterGatherListSize</b> member of 
-    <i>DmaDescription</i> contains a buffer size that should be sufficient to hold a scatter/gather list.
-    Miniport drivers should use this size to preallocate the memory for scatter/gather lists.</p>
-
-<p>The 
-    <b>ProcessSGListHandler</b> member in the 
-    <i>DmaDescription</i> parameter defines the entry point in the miniport driver for the 
-    <a href="..\ndis\nc-ndis-miniport-process-sg-list.md">MiniportProcessSGList</a> function.
-    When a miniport driver calls 
-    <a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">
-    NdisMAllocateNetBufferSGList</a>, NDIS calls HAL to provide the scatter/gather list to the miniport
-    driver. HAL calls 
-    <i>MiniportProcessSGList</i> after HAL finishes building the scatter/gather list. NDIS can call 
-    <i>MiniportProcessSGList</i> outside the context of the call to 
-    <b>NdisMAllocateNetBufferSGList</b>.</p>
-
-<p><b>NdisMRegisterScatterGatherDma</b> returns a pointer to a context area that is opaque to the miniport
-    driver. The miniport driver must use this handle in subsequent calls to NDIS scatter/gather DMA
-    functions.</p>
-
-<p>Bus-master miniport drivers call 
-    <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
-    NdisMAllocateSharedMemoryAsyncEx</a> to dynamically allocate shared memory for data transfer
-    operations. This call is required when high network traffic causes the miniport driver to run low on the
-    shared memory space that the driver allocated during initialization. If 
-    <b>NdisMAllocateSharedMemoryAsyncEx</b> returns NDIS_STATUS_PENDING, NDIS calls the 
-    <a href="..\ndis\nc-ndis-miniport-allocate-shared-mem-complete.md">
-    MiniportSharedMemoryAllocateComplete</a> function to complete the operation at a later time. Miniport
-    drivers specify the entry point for the 
-    <i>MiniportSharedMemoryAllocateComplete</i> function in the 
-    <b>SharedMemAllocateCompleteHandler</b> member of the 
-    <i>DmaDescription</i> parameter.</p>
-
-<p>Miniport drivers call the 
-    <a href="..\ndis\nf-ndis-ndismderegisterscattergatherdma.md">
-    NdisMDeregisterScatterGatherDma</a> function to deallocate the DMA resources that 
-    <b>NdisMRegisterScatterGatherDma</b> allocated.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -335,7 +289,7 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547153">Init_RegisterSG</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547934">Irql_Gather_DMA_Function</a>
+<a href="devtest.ndis_init_registersg">Init_RegisterSG</a>, <a href="devtest.ndis_irql_gather_dma_function">Irql_Gather_DMA_Function</a>
 </td>
 </tr>
 </table>
@@ -353,10 +307,10 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
    MiniportSharedMemoryAllocateComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562776">NdisMAllocateNetBufferSGList</a>
+<a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">NdisMAllocateNetBufferSGList</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
@@ -367,10 +321,10 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
    NdisMDeregisterScatterGatherDma</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563672">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
 <a href="NULL">Allocating and Freeing Scatter/Gather Lists</a>
@@ -387,4 +341,4 @@ NDIS_STATUS NdisMRegisterScatterGatherDma(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterScatterGatherDma function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterScatterGatherDma function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

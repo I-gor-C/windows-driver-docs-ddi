@@ -67,7 +67,7 @@ HRESULT PrinterEvent(
 ### -param <i>iDriverEvent</i> 
 
 <dd>
-<p>Caller-supplied value identifying the event that has occurred. For a list of valid values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548564">DrvPrinterEvent</a>.</p>
+<p>Caller-supplied value identifying the event that has occurred. For a list of valid values, see <a href="..\winddiui\nf-winddiui-drvprinterevent.md">DrvPrinterEvent</a>.</p>
 </dd>
 
 ### -param <i>dwFlags</i> 
@@ -95,15 +95,7 @@ HRESULT PrinterEvent(
 <p> </p>
 
 ## -remarks
-<p>A user interface plug-in's <code>IPrintOemUI::PrinterEvent</code> method performs the same types of operations as the <b>DrvPrinterEvent</b> function that is exported by user-mode printer interface DLLs. For information about printer events and how they should be processed, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548564">DrvPrinterEvent</a> function.</p>
-
-<p>If you provide a user interface plug-in, the printer driver's <b>DrvPrinterEvent</b> function calls the <code>IPrintOemUI::PrinterEvent</code> method. The <b>DrvPrinterEvent</b> function performs its own processing for the specified event, and then calls the <code>IPrintOemUI::PrinterEvent</code> method to handle additional processing of the event.</p>
-
-<p>If <code>IPrintOemUI::PrinterEvent</code> methods are exported by multiple user interface plug-ins, the methods are called in the order that the plug-ins are specified for installation.</p>
-
-<p>For more information about creating and installing user interface plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
-
-<p>A user interface plug-in's <code>IPrintOemUI::PrinterEvent</code> method performs the same types of operations as the <b>DrvPrinterEvent</b> function that is exported by user-mode printer interface DLLs. For information about printer events and how they should be processed, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548564">DrvPrinterEvent</a> function.</p>
+<p>A user interface plug-in's <code>IPrintOemUI::PrinterEvent</code> method performs the same types of operations as the <b>DrvPrinterEvent</b> function that is exported by user-mode printer interface DLLs. For information about printer events and how they should be processed, see the description of the <a href="..\winddiui\nf-winddiui-drvprinterevent.md">DrvPrinterEvent</a> function.</p>
 
 <p>If you provide a user interface plug-in, the printer driver's <b>DrvPrinterEvent</b> function calls the <code>IPrintOemUI::PrinterEvent</code> method. The <b>DrvPrinterEvent</b> function performs its own processing for the specified event, and then calls the <code>IPrintOemUI::PrinterEvent</code> method to handle additional processing of the event.</p>
 
@@ -138,7 +130,7 @@ HRESULT PrinterEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548564">DrvPrinterEvent</a>
+<a href="..\winddiui\nf-winddiui-drvprinterevent.md">DrvPrinterEvent</a>
 </dt>
 </dl>
 <p> </p>

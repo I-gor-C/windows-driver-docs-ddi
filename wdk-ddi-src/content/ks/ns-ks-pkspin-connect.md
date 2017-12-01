@@ -7,7 +7,7 @@ old-location: stream\kspin_connect.htm
 old-project: stream
 ms.assetid: 62ce7a36-87ce-40d1-bdd4-8a4f4bc60b00
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSPIN_CONNECT, KSPIN_CONNECT, *PKSPIN_CONNECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561652">KsCreatePin</a> call.</p>
+<p>Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a <a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a> call.</p>
 
 
 ## -syntax
@@ -61,13 +61,13 @@ typedef struct {
 ### -field <b>Interface</b>
 
 <dd>
-<p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a> to use for this connection. </p>
+<p>Specifies the <a href="stream.kspin_interface">KSPIN_INTERFACE</a> to use for this connection. </p>
 </dd>
 
 ### -field <b>Medium</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a> that specifies the medium to use for this connection. </p>
+<p>A structure of type <a href="stream.kspin_medium">KSPIN_MEDIUM</a> that specifies the medium to use for this connection. </p>
 </dd>
 
 ### -field <b>PinId</b>
@@ -85,7 +85,7 @@ typedef struct {
 ### -field <b>Priority</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff564250">KSPRIORITY</a> that specifies the priority for the connection, usually KSPRIORITY_NORMAL. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a> property for details.</p>
+<p>A structure of type <a href="stream.kspriority">KSPRIORITY</a> that specifies the priority for the connection, usually KSPRIORITY_NORMAL. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a> property for details.</p>
 </dd>
 </dl>
 
@@ -109,10 +109,10 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561652">KsCreatePin</a>
+<a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a>
+<a href="stream.kspin_interface">KSPIN_INTERFACE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a>
@@ -120,4 +120,4 @@ typedef struct {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_CONNECT structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_CONNECT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

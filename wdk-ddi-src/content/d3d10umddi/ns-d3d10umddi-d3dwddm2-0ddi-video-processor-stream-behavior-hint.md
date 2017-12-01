@@ -60,7 +60,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_PROCESSOR_STREAM_BEHAVIOR_HINT {
 ### -field <b>Enable</b>
 
 <dd>
-<p>Specifies whether this input stream is enabled. If <b>TRUE</b>,  <a href="https://msdn.microsoft.com/library/windows/hardware/dn906379">VideoProcessorGetBehaviorHints</a> uses this stream to compute the behavior hints. Otherwise, this stream is not used.  </p>
+<p>Specifies whether this input stream is enabled. If <b>TRUE</b>,  <a href="display.videoprocessorgetbehaviorhints">VideoProcessorGetBehaviorHints</a> uses this stream to compute the behavior hints. Otherwise, this stream is not used.  </p>
 </dd>
 
 ### -field <b>Width</b>
@@ -118,7 +118,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_PROCESSOR_STREAM_BEHAVIOR_HINT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906379">VideoProcessorGetBehaviorHints</a>
+<a href="display.videoprocessorgetbehaviorhints">VideoProcessorGetBehaviorHints</a>
 </dt>
 </dl>
 <p> </p>

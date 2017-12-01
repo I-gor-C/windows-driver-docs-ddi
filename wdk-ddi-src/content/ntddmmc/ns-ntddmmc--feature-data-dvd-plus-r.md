@@ -60,7 +60,7 @@ typedef struct _FEATURE_DATA_DVD_PLUS_R {
 ### -field <b>Header</b>
 
 <dd>
-<p>Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
+<p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
 ### -field <b>Write</b>
@@ -102,7 +102,7 @@ typedef struct _FEATURE_DATA_DVD_PLUS_R {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
+<a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a>
 </dt>
 </dl>
 <p> </p>

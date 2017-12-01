@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY GetCaps(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a> structure that describes the capabilities to retrieve.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a> structure that describes the capabilities to retrieve.</p>
 </dd>
 </dl>
 
@@ -82,25 +82,13 @@ __checkReturn HRESULT APIENTRY GetCaps(
 <p> </p>
 
 ## -remarks
-<p>The data that is returned by the <i>GetCaps</i> function in the <b>pData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a> structure depends on the type of data that is requested (that is, the data depends on the <b>Type</b> member of <b>D3DDDIARG_GETCAPS</b> and sometimes on the <b>pInfo</b> member).</p>
+<p>The data that is returned by the <i>GetCaps</i> function in the <b>pData</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a> structure depends on the type of data that is requested (that is, the data depends on the <b>Type</b> member of <b>D3DDDIARG_GETCAPS</b> and sometimes on the <b>pInfo</b> member).</p>
 
-<p>Here are examples of how to set up the <i>GetCaps</i> call depending on the value of <a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a>.<b>Type</b>.</p>
+<p>Here are examples of how to set up the <i>GetCaps</i> call depending on the value of <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a>.<b>Type</b>.</p>
 
-<p> </p>
+<p>See the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a> enumeration topic for explanations of other values for <b>D3DDDIARG_GETCAPS</b>.<b>Type</b> that are used for multiplane overlays.</p>
 
-<p>See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a> enumeration topic for explanations of other values for <b>D3DDDIARG_GETCAPS</b>.<b>Type</b> that are used for multiplane overlays.</p>
-
-<p>If a Microsoft Direct3D Level 9 driver that supports Windows Display Driver Model (WDDM) 1.3 and later completes a call to <i>GetCaps</i> and returns <b>S_OK</b> but doesn't change the data in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a> structure, it indicates to the Direct3D runtime that the hardware and driver don't support simple instancing. For more info, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn465882">D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT</a>.</p>
-
-<p>The data that is returned by the <i>GetCaps</i> function in the <b>pData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a> structure depends on the type of data that is requested (that is, the data depends on the <b>Type</b> member of <b>D3DDDIARG_GETCAPS</b> and sometimes on the <b>pInfo</b> member).</p>
-
-<p>Here are examples of how to set up the <i>GetCaps</i> call depending on the value of <a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a>.<b>Type</b>.</p>
-
-<p> </p>
-
-<p>See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a> enumeration topic for explanations of other values for <b>D3DDDIARG_GETCAPS</b>.<b>Type</b> that are used for multiplane overlays.</p>
-
-<p>If a Microsoft Direct3D Level 9 driver that supports Windows Display Driver Model (WDDM) 1.3 and later completes a call to <i>GetCaps</i> and returns <b>S_OK</b> but doesn't change the data in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a> structure, it indicates to the Direct3D runtime that the hardware and driver don't support simple instancing. For more info, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn465882">D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT</a>.</p>
+<p>If a Microsoft Direct3D Level 9 driver that supports Windows Display Driver Model (WDDM) 1.3 and later completes a call to <i>GetCaps</i> and returns <b>S_OK</b> but doesn't change the data in the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a> structure, it indicates to the Direct3D runtime that the hardware and driver don't support simple instancing. For more info, see <a href="..\d3dumddi\ns-d3dumddi-d3dddicaps-simple-instancing-support.md">D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT</a>.</p>
 
 ## -requirements
 <table>
@@ -137,19 +125,19 @@ __checkReturn HRESULT APIENTRY GetCaps(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544355">D3DDDI_ADAPTERFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-adapterfuncs.md">D3DDDI_ADAPTERFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn465882">D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddicaps-simple-instancing-support.md">D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550275">DDRAW_CAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi--ddraw-caps.md">DDRAW_CAPS</a>
 </dt>
 </dl>
 <p> </p>

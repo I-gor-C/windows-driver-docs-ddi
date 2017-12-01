@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_device_capability_config.htm
 old-project: netvista
 ms.assetid: 918307D4-0952-4FF0-8591-522C7E92194A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_WFD_DEVICE_CAPABILITY_CONFIG,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,14 +89,14 @@ typedef struct _DOT11_WFD_DEVICE_CAPABILITY_CONFIG {
 
 <dd>
 <p>When set to TRUE, the miniport must enable Service Discovery support. The miniport must also set the Service Discovery bit in the P2P Device Capability Bitmap. If <b>bServiceDiscoveryEnabled</b> is FALSE, Service Discovery support must be disabled and the miniport must ignore all Service Discovery packets it receives.</p>
-<p> The system will set this to TRUE only if the miniport also sets TRUE for the <b>bServiceDiscoverySupported</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406574">DOT11_WFD_ATTRIBUTES</a>. The default value for this member is FALSE.</p>
+<p> The system will set this to TRUE only if the miniport also sets TRUE for the <b>bServiceDiscoverySupported</b> member of <a href="..\windot11\ns-windot11--dot11-wfd-attributes.md">DOT11_WFD_ATTRIBUTES</a>. The default value for this member is FALSE.</p>
 </dd>
 
 ### -field <b>bClientDiscoverabilityEnabled</b>
 
 <dd>
 <p>When set to TRUE, the miniport must enable Client Discoverability support. The miniport must also set the Client Discoverability bit in the P2P Device Capability Bitmap. If <b>bClientDiscoveryEnabled</b> is FALSE,  Client Discoverability support must be disabled and the miniport must ignore all Client Discovery packets it receives.</p>
-<p>The system will set this to TRUE only if the miniport also sets TRUE for the <b>bClientDiscoverabilitySupported</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406574">DOT11_WFD_ATTRIBUTES</a>. The default value for this member is FALSE.</p>
+<p>The system will set this to TRUE only if the miniport also sets TRUE for the <b>bClientDiscoverabilitySupported</b> member of <a href="..\windot11\ns-windot11--dot11-wfd-attributes.md">DOT11_WFD_ATTRIBUTES</a>. The default value for this member is FALSE.</p>
 </dd>
 
 ### -field <b>bConcurrentOperationSupported</b>
@@ -109,7 +109,7 @@ typedef struct _DOT11_WFD_DEVICE_CAPABILITY_CONFIG {
 
 <dd>
 <p>When set to TRUE, the miniport must enable P2P Managed Device support. The miniport must also set the P2P Infrastructure Managed bit in the P2P Device Capability Bitmap. Otherwise, the P2P Managed Device support must be disabled.</p>
-<p>The system will set this member to TRUE only if the miniport also sets TRUE for the  <b>bInfrastructureManagementSupported</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406574">DOT11_WFD_ATTRIBUTES</a>. The default value for this member is FALSE</p>
+<p>The system will set this member to TRUE only if the miniport also sets TRUE for the  <b>bInfrastructureManagementSupported</b> member of <a href="..\windot11\ns-windot11--dot11-wfd-attributes.md">DOT11_WFD_ATTRIBUTES</a>. The default value for this member is FALSE</p>
 </dd>
 
 ### -field <b>bDeviceLimitReached</b>

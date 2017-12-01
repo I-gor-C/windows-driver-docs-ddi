@@ -7,7 +7,7 @@ old-location: stream\ksvalidateconnectrequest.htm
 old-project: stream
 ms.assetid: 64343a8a-9629-469e-95a3-b9c140cdd324
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsValidateConnectRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,13 +73,13 @@ NTSTATUS KsValidateConnectRequest(
 ### -param <i>Descriptor </i> [in]
 
 <dd>
-<p>Specifies a pointer to the list of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563533">KSPIN_DESCRIPTOR</a> structures.</p>
+<p>Specifies a pointer to the list of <a href="stream.kspin_descriptor">KSPIN_DESCRIPTOR</a> structures.</p>
 </dd>
 
 ### -param <i>Connect </i> [out]
 
 <dd>
-<p>Specifies a location in which to place a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563531">KSPIN_CONNECT</a> pointer passed to the create request. If <b>KsValidateConnectRequest</b>  returns success, then Connect+1 will contain a pointer to the KSDATAFORMAT with which the pin was opened.</p>
+<p>Specifies a location in which to place a pointer to the <a href="stream.kspin_connect">KSPIN_CONNECT</a> pointer passed to the create request. If <b>KsValidateConnectRequest</b>  returns success, then Connect+1 will contain a pointer to the KSDATAFORMAT with which the pin was opened.</p>
 </dd>
 </dl>
 
@@ -87,10 +87,6 @@ NTSTATUS KsValidateConnectRequest(
 <p>The <b>KsValidateConnectRequest</b> function returns STATUS_SUCCESS if successful, or it returns an error.</p>
 
 ## -remarks
-<p>The <b>KsValidateConnectRequest</b> function handles basic connection structure access exceptions and validates the communication requirements, medium, protocol, and basic data format. The validation performed on the data format passed is based on the data range list for the specified pin against which a pin instance is to be created. Validation is successful in three instances: if a range major format is a wildcard, the range major format matches and the range subformat is a wildcard, or the range major format, range subformat, and the range specifier all match.</p>
-
-<p>The buffer is passed a copy of the original input buffer, if the originator was not in kernel mode, and is therefore safe to access.</p>
-
 <p>The <b>KsValidateConnectRequest</b> function handles basic connection structure access exceptions and validates the communication requirements, medium, protocol, and basic data format. The validation performed on the data format passed is based on the data range list for the specified pin against which a pin instance is to be created. Validation is successful in three instances: if a range major format is a wildcard, the range major format matches and the range subformat is a wildcard, or the range major format, range subformat, and the range specifier all match.</p>
 
 <p>The buffer is passed a copy of the original input buffer, if the originator was not in kernel mode, and is therefore safe to access.</p>

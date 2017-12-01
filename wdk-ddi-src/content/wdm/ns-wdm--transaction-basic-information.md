@@ -7,7 +7,7 @@ old-location: kernel\transaction_basic_information.htm
 old-project: kernel
 ms.assetid: 79dd9ff3-2a5f-457a-8a8a-4963a799055c
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: TRANSACTION_BASIC_INFORMATION, TRANSACTION_BASIC_INFORMATION, *PTRANSACTION_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,18 +66,18 @@ typedef struct _TRANSACTION_BASIC_INFORMATION {
 ### -field <b>State</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff564849">TRANSACTION_STATE</a>-typed value that specifies the transaction's current state.</p>
+<p>A <a href="..\wdm\ne-wdm--transaction-state.md">TRANSACTION_STATE</a>-typed value that specifies the transaction's current state.</p>
 </dd>
 
 ### -field <b>Outcome</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff564835">TRANSACTION_OUTCOME</a>-typed value that specifies the transaction's outcome (result).</p>
+<p>A <a href="..\wdm\ne-wdm--transaction-outcome.md">TRANSACTION_OUTCOME</a>-typed value that specifies the transaction's outcome (result).</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>TRANSACTION_BASIC_INFORMATION</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567057">ZwQueryInformationTransaction</a> routine. This routine fills in the structure's members.</p>
+<p>The <b>TRANSACTION_BASIC_INFORMATION</b> structure is used with the <a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a> routine. This routine fills in the structure's members.</p>
 
 ## -requirements
 <table>
@@ -104,21 +104,21 @@ typedef struct _TRANSACTION_BASIC_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564679">TmGetTransactionId</a>
+<a href="..\wdm\nf-wdm-tmgettransactionid.md">TmGetTransactionId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564800">TRANSACTION_INFORMATION_CLASS</a>
+<a href="..\wdm\ne-wdm--transaction-information-class.md">TRANSACTION_INFORMATION_CLASS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564835">TRANSACTION_OUTCOME</a>
+<a href="..\wdm\ne-wdm--transaction-outcome.md">TRANSACTION_OUTCOME</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564849">TRANSACTION_STATE</a>
+<a href="..\wdm\ne-wdm--transaction-state.md">TRANSACTION_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567057">ZwQueryInformationTransaction</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TRANSACTION_BASIC_INFORMATION structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TRANSACTION_BASIC_INFORMATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

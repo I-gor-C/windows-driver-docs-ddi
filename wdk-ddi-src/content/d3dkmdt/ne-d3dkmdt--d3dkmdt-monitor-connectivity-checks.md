@@ -76,11 +76,7 @@ typedef enum _D3DKMDT_MONITOR_CONNECTIVITY_CHECKS {
 </dl>
 
 ## -remarks
-<p>The <b>MonitorConnectivityChecks</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557552">DXGKARG_COMMITVIDPN</a> structure is a D3DKMDT_MONITOR_CONNECTIVITY_CHECKS value.</p>
-
-<p>The <b>MonitorConnectivityChecks</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557552">DXGKARG_COMMITVIDPN</a> structure is a D3DKMDT_MONITOR_CONNECTIVITY_CHECKS value.</p>
-
-<p>The <b>MonitorConnectivityChecks</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557552">DXGKARG_COMMITVIDPN</a> structure is a D3DKMDT_MONITOR_CONNECTIVITY_CHECKS value.</p>
+<p>The <b>MonitorConnectivityChecks</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-commitvidpn.md">DXGKARG_COMMITVIDPN</a> structure is a D3DKMDT_MONITOR_CONNECTIVITY_CHECKS value.</p>
 
 ## -requirements
 <table>

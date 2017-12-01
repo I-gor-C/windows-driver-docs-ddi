@@ -7,7 +7,7 @@ old-location: sensors\gnss_supl_ni_info.htm
 old-project: sensors
 ms.assetid: 78D19A0C-E247-4DDA-A689-494B5A61A673
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_SUPL_NI_INFO, GNSS_SUPL_NI_INFO, *PGNSS_SUPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -60,7 +60,7 @@ NTSTATUS UcmTcpciDeviceInitInitialize(
 ### -param <i>DeviceInit</i> [in]
 
 <dd>
-<p>A pointer to a framework-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure. </p>
+<p>A pointer to a framework-allocated <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure. </p>
 </dd>
 </dl>
 
@@ -70,9 +70,7 @@ NTSTATUS UcmTcpciDeviceInitInitialize(
                     </p>
 
 ## -remarks
-<p>The client driver calls this method after it has performed all of its own initialization in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure, just before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.</p>
-
-<p>The client driver calls this method after it has performed all of its own initialization in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure, just before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.</p>
+<p>The client driver calls this method after it has performed all of its own initialization in the <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure, just before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.</p>
 
 ## -requirements
 <table>
@@ -125,7 +123,7 @@ NTSTATUS UcmTcpciDeviceInitInitialize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
+<a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a>
 </dt>
 </dl>
 <p> </p>

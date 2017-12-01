@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Contains pointers to functions implemented by a kernel mode display-only driver (KMDOD). The KMDOD's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function provides the Microsoft DirectX graphics kernel subsystem with entry points by filling in the members of this structure.</p>
+<p>Contains pointers to functions implemented by a kernel mode display-only driver (KMDOD). The KMDOD's <a href="display.driverentry_of_display_miniport_driver">DriverEntry</a> function provides the Microsoft DirectX graphics kernel subsystem with entry points by filling in the members of this structure.</p>
 
 
 ## -syntax
@@ -395,10 +395,10 @@ typedef struct _KMDDOD_INITIALIZATION_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556157">DriverEntry of Display Miniport Driver</a>
+<a href="display.driverentry_of_display_miniport_driver">DriverEntry of Display Miniport Driver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh463972">DxgkInitializeDisplayOnlyDriver</a>
+<a href="..\dispmprt\nf-dispmprt-dxgkinitializedisplayonlydriver.md">DxgkInitializeDisplayOnlyDriver</a>
 </dt>
 </dl>
 <p> </p>

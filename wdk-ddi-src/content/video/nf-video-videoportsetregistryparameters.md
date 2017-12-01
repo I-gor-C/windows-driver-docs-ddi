@@ -97,19 +97,7 @@ VP_STATUS VideoPortSetRegistryParameters(
 
 <p>In a checked build of any version of the operating system, a value name that begins with "DefaultSettings." causes an assertion failure.</p>
 
-<p><b>VideoPortSetRegistryParameters</b> cannot be called from a miniport driver's <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pvideo-hw-timer.md">HwVidTimer</a> functions, or from <a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>, or from a callback to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570372">VideoPortSynchronizeExecution</a>. </p>
-
-<p><b>VideoPortSetRegistryParameters</b> searches under the registry's <b>adapter</b> key for the value name specified in the <i>ValueName</i> parameter. If the value name that is searched for does not exist, this function creates it automatically. When the value name is found or created, the contents of the <i>ValueData</i> parameter are copied to the value name. </p>
-
-<p>For Windows XP and later operating system versions, the value name specified in the <i>ValueName</i> parameters does not need to be directly associated with the <b>adapter</b> key. Instead, <i>ValueName</i> can be associated with a subkey whose path includes the <b>adapter</b> key. If the <i>ValueName</i> string contains one or more backslashes, <b>VideoPortSetRegistryParameters</b> searches for or creates the subkey whose value name is at the end of the string. </p>
-
-<p>For example, if <i>ValueName</i> is set to the string "SubKey1\Value1", this function searches for <b>SubKey1</b> under the <b>adapter</b> key in the registry, creating <b>SubKey1</b> if it does not exist. The function then searches for the <b>Value1</b> value name, creating it if necessary. <b>VideoPortSetRegistryParameters</b> then copies the contents of the <i>ValueData</i> parameter to the registry. The path specified in the <i>ValueName</i> parameter can refer to a value name an arbitrary number of levels below the <b>adapter</b> key, but the behavior of this function is essentially the same. If at any point a subkey or value name is not found, it is created automatically. </p>
-
-<p>In Windows 2000 and later, <b>VideoPortSetRegistryParameters</b> returns ERROR_INVALID_PARAMETER if the string passed in the <i>ValueName</i> parameter begins with "DefaultSettings." (note that the period is part of the string). In operating systems earlier than Windows 2000, a video miniport driver can pass a value name that begins with "DefaultSettings." to specify the default resolution for a monitor, but there is no need for that capability in Windows 2000 and later.</p>
-
-<p>In a checked build of any version of the operating system, a value name that begins with "DefaultSettings." causes an assertion failure.</p>
-
-<p><b>VideoPortSetRegistryParameters</b> cannot be called from a miniport driver's <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pvideo-hw-timer.md">HwVidTimer</a> functions, or from <a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>, or from a callback to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570372">VideoPortSynchronizeExecution</a>. </p>
+<p><b>VideoPortSetRegistryParameters</b> cannot be called from a miniport driver's <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pvideo-hw-timer.md">HwVidTimer</a> functions, or from <a href="..\video\nf-video-videoportqueuedpc.md">VideoPortQueueDpc</a>, or from a callback to <a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>. </p>
 
 ## -requirements
 <table>
@@ -180,10 +168,10 @@ VP_STATUS VideoPortSetRegistryParameters(
 <a href="..\video\nc-video-pvideo-hw-initialize.md">HwVidInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570298">VideoPortFlushRegistry</a>
+<a href="..\video\nf-video-videoportflushregistry.md">VideoPortFlushRegistry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570316">VideoPortGetRegistryParameters</a>
+<a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a>
 </dt>
 </dl>
 <p> </p>

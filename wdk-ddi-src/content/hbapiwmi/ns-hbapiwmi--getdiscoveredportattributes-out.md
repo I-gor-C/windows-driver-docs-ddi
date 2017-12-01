@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetDiscoveredPortAttributes_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a> WMI method to the WMI client. </p>
+<p>The GetDiscoveredPortAttributes_OUT structure is used to report the output parameter data of the <a href="storage.getdiscoveredportattributes">GetDiscoveredPortAttributes</a> WMI method to the WMI client. </p>
 
 
 ## -syntax
@@ -58,18 +58,18 @@ typedef struct _GetDiscoveredPortAttributes_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.</p>
+<p>Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation.</p>
 </dd>
 
 ### -field <b>PortAttributes</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562510">MSFC_HBAPortAttributesResults</a> that holds the port attributes to report.</p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--msfc-hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a> that holds the port attributes to report.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the GetDiscoveredPortAttributes_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetDiscoveredPortAttributes_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -88,7 +88,7 @@ typedef struct _GetDiscoveredPortAttributes_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
+<a href="storage.getdiscoveredportattributes">GetDiscoveredPortAttributes</a>
 </dt>
 </dl>
 <p> </p>

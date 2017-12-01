@@ -82,8 +82,6 @@ HRESULT RawWriteData(
 ## -remarks
 <p>A still image minidriver typically implements this method by calling <b>WriteFile</b> (described in the Windows SDK documentation).</p>
 
-<p>A still image minidriver typically implements this method by calling <b>WriteFile</b> (described in the Windows SDK documentation).</p>
-
 ## -requirements
 <table>
 <tr>
@@ -111,7 +109,7 @@ HRESULT RawWriteData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543764">IStiDevice::RawWriteData</a>
+<a href="image.istidevice_rawwritedata">IStiDevice::RawWriteData</a>
 </dt>
 </dl>
 <p> </p>

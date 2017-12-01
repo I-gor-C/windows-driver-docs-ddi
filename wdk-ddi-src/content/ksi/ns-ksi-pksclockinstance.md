@@ -7,7 +7,7 @@ old-location: stream\ksclockinstance.htm
 old-project: stream
 ms.assetid: DC8A7CE9-7FDE-4FC9-8C71-3F3368E7E5C1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSCLOCKINSTANCE, KSCLOCKINSTANCE, *PKSCLOCKINSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices

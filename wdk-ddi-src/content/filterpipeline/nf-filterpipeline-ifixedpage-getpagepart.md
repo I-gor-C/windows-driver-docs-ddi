@@ -74,8 +74,6 @@ HRESULT GetPagePart(
 ## -remarks
 <p>A filter must use QueryInterface on the return value to see what part types reside in the page.</p>
 
-<p>A filter must use QueryInterface on the return value to see what part types reside in the page.</p>
-
 ## -requirements
 <table>
 <tr>

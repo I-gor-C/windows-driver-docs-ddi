@@ -101,23 +101,13 @@ PRX_CONTEXT RxCreateRxContext(
 <p><b>RxCreateRxContext</b> returns a pointer to an allocated RX_CONTEXT data structure on success or a <b>NULL</b> pointer on failure. </p>
 
 ## -remarks
-<p><b>RxCreateRxContext</b> calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff554502">RxInitializeContext</a> to initialize the newly created RX_CONTEXT structure before returning. </p>
+<p><b>RxCreateRxContext</b> calls <a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a> to initialize the newly created RX_CONTEXT structure before returning. </p>
 
 <p><b>RxCreateRxContext</b> allocates non-paged pool memory when creating a new RX_CONTEXT data structure and sets the following value in the Flags member of the RX_CONTEXT:</p>
 
-<p></p><dl>
-<dt><a id="RX_CONTEXT_FLAG_FROM_POOL"></a><a id="rx_context_flag_from_pool"></a>RX_CONTEXT_FLAG_FROM_POOL</dt>
-<dd></dd>
-</dl><p>When this value is set, the RX_CONTEXT structure was allocated from non-paged pool memory.</p>
+<p></p>
 
-<p><b>RxCreateRxContext</b> calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff554502">RxInitializeContext</a> to initialize the newly created RX_CONTEXT structure before returning. </p>
-
-<p><b>RxCreateRxContext</b> allocates non-paged pool memory when creating a new RX_CONTEXT data structure and sets the following value in the Flags member of the RX_CONTEXT:</p>
-
-<p></p><dl>
-<dt><a id="RX_CONTEXT_FLAG_FROM_POOL"></a><a id="rx_context_flag_from_pool"></a>RX_CONTEXT_FLAG_FROM_POOL</dt>
-<dd></dd>
-</dl><p>When this value is set, the RX_CONTEXT structure was allocated from non-paged pool memory.</p>
+<p>When this value is set, the RX_CONTEXT structure was allocated from non-paged pool memory.</p>
 
 ## -requirements
 <table>
@@ -154,34 +144,34 @@ PRX_CONTEXT RxCreateRxContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554340">RxCompleteRequest</a>
+<a href="..\rxprocs\nf-rxprocs-rxcompleterequest.md">RxCompleteRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554348">RxCompleteRequest_Real</a>
+<a href="..\rxprocs\nf-rxprocs-rxcompleterequest-real.md">RxCompleteRequest_Real</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554388">RxDereference</a>
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554393">RxDereferenceAndDeleteRxContext_Real</a>
+<a href="..\rxcontx\nf-rxcontx-rxdereferenceanddeleterxcontext-real.md">RxDereferenceAndDeleteRxContext_Real</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554502">RxInitializeContext</a>
+<a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554643">RxPrepareContextForReuse</a>
+<a href="..\rxcontx\nf-rxcontx-rxpreparecontextforreuse.md">RxPrepareContextForReuse</a>
 </dt>
 <dt>
 <a href="..\rxcontx\nf-rxcontx-rxresumeblockedoperations-serially.md">RxResumeBlockedOperations_Serially</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557377">__RxSynchronizeBlockingOperations</a>
+<a href="..\rxcontx\nf-rxcontx---rxsynchronizeblockingoperations.md">__RxSynchronizeBlockingOperations</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557382">__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</a>
+<a href="ifsk.__rxsynchronizeblockingoperationsmaybedroppingfcblock">__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554751">RX_CONTEXT</a>
+<a href="..\rxcontx\ns-rxcontx--rx-context.md">RX_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>

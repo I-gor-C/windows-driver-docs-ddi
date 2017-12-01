@@ -7,7 +7,7 @@ old-location: netvista\tal_txrx_parameters.htm
 old-project: netvista
 ms.assetid: 44f5c907-7368-43ea-b581-3b9ecf25c611
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TAL_TXRX_PARAMETERS, TAL_TXRX_PARAMETERS, *PTAL_TXRX_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices

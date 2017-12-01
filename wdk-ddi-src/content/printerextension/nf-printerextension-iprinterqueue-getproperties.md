@@ -111,10 +111,10 @@ HRESULT GetProperties(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>
+<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>
+<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
 </dt>
 </dl>
 <p> </p>

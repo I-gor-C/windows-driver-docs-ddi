@@ -119,7 +119,7 @@ STORPORT_API VOID StorPortMoveMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564654">ScsiPortMoveMemory</a>
+<a href="..\srb\nf-srb-scsiportmovememory.md">ScsiPortMoveMemory</a>
 </dt>
 </dl>
 <p> </p>

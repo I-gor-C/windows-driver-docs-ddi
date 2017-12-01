@@ -7,7 +7,7 @@ old-location: netvista\ril_sendrtt.htm
 old-project: netvista
 ms.assetid: d655aa2e-ec58-4f9b-a349-a19e7c78469a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SendRTT
 ms.prod: windows-hardware
 ms.technology: windows-devices

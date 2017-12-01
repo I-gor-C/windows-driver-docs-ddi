@@ -109,7 +109,7 @@ typedef struct _D3DHAL_DP2VOLUMEBLT {
 ## -remarks
 <p>The <a href="display.d3dcreatesurfaceex">D3dCreateSurfaceEx</a> callback creates the small integer handles to the volume textures that can be used as source and destination volume textures for volume texture blts.</p>
 
-<p>See Remarks for <a href="https://msdn.microsoft.com/library/windows/hardware/ff545869">D3DHAL_DP2TEXBLT</a>.</p>
+<p>See Remarks for <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2texblt.md">D3DHAL_DP2TEXBLT</a>.</p>
 
 ## -requirements
 <table>
@@ -135,7 +135,7 @@ typedef struct _D3DHAL_DP2VOLUMEBLT {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545869">D3DHAL_DP2TEXBLT</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2texblt.md">D3DHAL_DP2TEXBLT</a>
 </dt>
 </dl>
 <p> </p>

@@ -58,13 +58,13 @@ typedef struct _FEATURE_DATA_DISC_CONTROL_BLOCKS {
 ### -field <b>Header</b>
 
 <dd>
-<p>Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
+<p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
 ### -field <b>Data</b>
 
 <dd>
-<p>Contains zero, one, or more disk control blocks. Each disk control block is contained in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553783">FEATURE_DATA_DISC_CONTROL_BLOCKS_EX</a> structure. </p>
+<p>Contains zero, one, or more disk control blocks. Each disk control block is contained in a <a href="..\ntddmmc\ns-ntddmmc--feature-data-disc-control-blocks-ex.md">FEATURE_DATA_DISC_CONTROL_BLOCKS_EX</a> structure. </p>
 </dd>
 </dl>
 
@@ -88,13 +88,13 @@ typedef struct _FEATURE_DATA_DISC_CONTROL_BLOCKS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
+<a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>
+<a href="..\ntddmmc\ne-ntddmmc--feature-number.md">FEATURE_NUMBER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553783">FEATURE_DATA_DISC_CONTROL_BLOCKS_EX</a>
+<a href="..\ntddmmc\ns-ntddmmc--feature-data-disc-control-blocks-ex.md">FEATURE_DATA_DISC_CONTROL_BLOCKS_EX</a>
 </dt>
 </dl>
 <p> </p>

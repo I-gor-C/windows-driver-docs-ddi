@@ -77,25 +77,25 @@ typedef struct _USBC_DEVICE_CONFIGURATION_INTERFACE_V1 {
 ### -field <b>Context</b>
 
 <dd>
-<p>The USB generic parent driver does not use this member. It is populated by the vendor supplied filter driver and may be used to track instance information for the bus interface. It is passed as a parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547833">InterfaceReference</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547829">InterfaceDereference</a>. </p>
+<p>The USB generic parent driver does not use this member. It is populated by the vendor supplied filter driver and may be used to track instance information for the bus interface. It is passed as a parameter to <a href="kernel.interfacereference">InterfaceReference</a> and <a href="kernel.interfacedereference">InterfaceDereference</a>. </p>
 </dd>
 
 ### -field <b>InterfaceReference</b>
 
 <dd>
-<p>Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547833">InterfaceReference</a>. </p>
+<p>Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="kernel.interfacereference">InterfaceReference</a>. </p>
 </dd>
 
 ### -field <b>InterfaceDereference</b>
 
 <dd>
-<p>Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547829">InterfaceDereference</a>. </p>
+<p>Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="kernel.interfacedereference">InterfaceDereference</a>. </p>
 </dd>
 
 ### -field <b>StartDeviceCallback</b>
 
 <dd>
-<p>Pointer to the callback routine that the filter driver furnishes to the USB generic parent driver to assist in defining interface collections on a device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539007">USBC_START_DEVICE_CALLBACK</a>.</p>
+<p>Pointer to the callback routine that the filter driver furnishes to the USB generic parent driver to assist in defining interface collections on a device. For more information, see <a href="..\usbbusif\nc-usbbusif-usbc-start-device-callback.md">USBC_START_DEVICE_CALLBACK</a>.</p>
 </dd>
 
 ### -field <b>PdoEnableCallback</b>
@@ -134,10 +134,10 @@ typedef struct _USBC_DEVICE_CONFIGURATION_INTERFACE_V1 {
 <a href="buses.custom_enumeration_of_interface_collections_by_vendor_supplied_callbac">Customizing Enumeration of Interface Collections for Composite Devices</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539007">USBC_START_DEVICE_CALLBACK</a>
+<a href="..\usbbusif\nc-usbbusif-usbc-start-device-callback.md">USBC_START_DEVICE_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB structures</a>
+<a href="buses.usb_structures_and_enumerations">USB structures</a>
 </dt>
 </dl>
 <p> </p>

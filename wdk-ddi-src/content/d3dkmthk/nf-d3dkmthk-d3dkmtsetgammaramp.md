@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTSetGammaRamp(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548307">D3DKMT_SETGAMMARAMP</a> structure that describes parameters for setting the gamma ramp.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setgammaramp.md">D3DKMT_SETGAMMARAMP</a> structure that describes parameters for setting the gamma ramp.</p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS APIENTRY D3DKMTSetGammaRamp(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548307">D3DKMT_SETGAMMARAMP</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setgammaramp.md">D3DKMT_SETGAMMARAMP</a>
 </dt>
 </dl>
 <p> </p>

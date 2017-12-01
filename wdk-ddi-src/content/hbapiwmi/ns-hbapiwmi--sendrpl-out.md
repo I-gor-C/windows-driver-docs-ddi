@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SendRPL_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565488">SendRPL</a> WMI method to the WMI client.</p>
+<p>The SendRPL_OUT structure is used to report the output parameter data of the <a href="storage.sendrpl">SendRPL</a> WMI method to the WMI client.</p>
 
 
 ## -syntax
@@ -60,7 +60,7 @@ typedef struct _SendRPL_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>. </p>
+<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. </p>
 </dd>
 
 ### -field <b>TotalRspBufferSize</b>
@@ -83,7 +83,7 @@ typedef struct _SendRPL_OUT {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the SendRPL_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the SendRPL_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -102,7 +102,7 @@ typedef struct _SendRPL_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565488">SendRPL</a>
+<a href="storage.sendrpl">SendRPL</a>
 </dt>
 </dl>
 <p> </p>

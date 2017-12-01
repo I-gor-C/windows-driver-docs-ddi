@@ -7,7 +7,7 @@ old-location: netvista\rildialedidsettings.htm
 old-project: netvista
 ms.assetid: e68ed118-76c7-44ff-a10f-dc64f1ce2d0e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILDIALEDIDSETTINGS, RILDIALEDIDSETTINGS, *LPRILDIALEDIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices

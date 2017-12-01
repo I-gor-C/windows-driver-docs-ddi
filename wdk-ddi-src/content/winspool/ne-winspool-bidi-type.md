@@ -142,8 +142,6 @@ typedef enum  {
 
 <p>SNMP_SYNTAX_CNTR64</p>
 
-<p>SNMP_SYNTAX_OCTETS</p>
-
 <p>SNMP_SYNTAX_OPAQUE</p>
 
 <p>BIDI_BLOB</p>
@@ -151,96 +149,6 @@ typedef enum  {
 <p>(none)</p>
 
 <p>BIDI_FLOAT</p>
-
-<p> </p>
-
-<p>See the smiValue structure in the Microsoft Windows SDK documentation for descriptions of the WinSNMP data types.</p>
-
-<p>The following correspondence applies between Simple Network Management Protocol (SNMP) types and bidi types defined in the BIDI_TYPE enumeration.</p>
-
-<p>SNMP_SYNTAX_CNTR32</p>
-
-<p>SNMP_SYNTAX_GAUGE32</p>
-
-<p>SNMP_SYNTAX_INT</p>
-
-<p>SNMP_SYNTAX_TIMETICKS</p>
-
-<p>SNMP_SYNTAX_UINT32</p>
-
-<p>BIDI_BOOL</p>
-
-<p>BIDI_INT</p>
-
-<p>SNMP_SYNTAX_IPADDR</p>
-
-<p>SNMP_SYNTAX_OCTETS</p>
-
-<p>SNMP_SYNTAX_OID</p>
-
-<p>BIDI_ENUM</p>
-
-<p>BIDI_STRING</p>
-
-<p>BIDI_TEXT</p>
-
-<p>SNMP_SYNTAX_CNTR64</p>
-
-<p>SNMP_SYNTAX_OCTETS</p>
-
-<p>SNMP_SYNTAX_OPAQUE</p>
-
-<p>BIDI_BLOB</p>
-
-<p>(none)</p>
-
-<p>BIDI_FLOAT</p>
-
-<p> </p>
-
-<p>See the smiValue structure in the Microsoft Windows SDK documentation for descriptions of the WinSNMP data types.</p>
-
-<p>The following correspondence applies between Simple Network Management Protocol (SNMP) types and bidi types defined in the BIDI_TYPE enumeration.</p>
-
-<p>SNMP_SYNTAX_CNTR32</p>
-
-<p>SNMP_SYNTAX_GAUGE32</p>
-
-<p>SNMP_SYNTAX_INT</p>
-
-<p>SNMP_SYNTAX_TIMETICKS</p>
-
-<p>SNMP_SYNTAX_UINT32</p>
-
-<p>BIDI_BOOL</p>
-
-<p>BIDI_INT</p>
-
-<p>SNMP_SYNTAX_IPADDR</p>
-
-<p>SNMP_SYNTAX_OCTETS</p>
-
-<p>SNMP_SYNTAX_OID</p>
-
-<p>BIDI_ENUM</p>
-
-<p>BIDI_STRING</p>
-
-<p>BIDI_TEXT</p>
-
-<p>SNMP_SYNTAX_CNTR64</p>
-
-<p>SNMP_SYNTAX_OCTETS</p>
-
-<p>SNMP_SYNTAX_OPAQUE</p>
-
-<p>BIDI_BLOB</p>
-
-<p>(none)</p>
-
-<p>BIDI_FLOAT</p>
-
-<p> </p>
 
 <p>See the smiValue structure in the Microsoft Windows SDK documentation for descriptions of the WinSNMP data types.</p>
 

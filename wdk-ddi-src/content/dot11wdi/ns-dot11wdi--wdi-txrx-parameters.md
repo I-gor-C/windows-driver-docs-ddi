@@ -7,7 +7,7 @@ old-location: netvista\wdi_txrx_parameters.htm
 old-project: netvista
 ms.assetid: 839a1c3d-ac9f-4723-a0f1-6610b763c32a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TXRX_PARAMETERS, WDI_TXRX_PARAMETERS, *PWDI_TXRX_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices

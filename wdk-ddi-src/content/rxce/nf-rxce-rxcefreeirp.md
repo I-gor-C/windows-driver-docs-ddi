@@ -68,8 +68,6 @@ VOID RxCeFreeIrp(
 ## -remarks
 <p>An IRP allocated with an associated memory descriptor list allocated with <b>RxCeAllocateIrpWithMDL</b> should be freed when the IRP is completed using <b>RxCeFreeIrp</b>.</p>
 
-<p>An IRP allocated with an associated memory descriptor list allocated with <b>RxCeAllocateIrpWithMDL</b> should be freed when the IRP is completed using <b>RxCeFreeIrp</b>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -105,10 +103,10 @@ VOID RxCeFreeIrp(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553405">RxCeAllocateIrpWithMDL</a>
+<a href="..\rxce\nf-rxce-rxceallocateirpwithmdl.md">RxCeAllocateIrpWithMDL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a>
+<a href="..\wdm\ns-wdm--mdl.md">MDL</a>
 </dt>
 </dl>
 <p> </p>

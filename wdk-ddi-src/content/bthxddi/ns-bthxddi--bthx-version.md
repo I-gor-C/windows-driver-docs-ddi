@@ -7,7 +7,7 @@ old-location: bltooth\bthx_version.htm
 old-project: bltooth
 ms.assetid: 2C5CC5B1-52F1-4DF5-9397-E8FD4983BA25
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: BTHX_VERSION, BTHX_VERSION, *PBTHX_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices

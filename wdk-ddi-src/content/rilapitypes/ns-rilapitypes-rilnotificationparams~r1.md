@@ -7,7 +7,7 @@ old-location: netvista\rilnotificationparams_2.htm
 old-project: netvista
 ms.assetid: 25a67292-b6fd-448a-a7bd-2867b3f46f13
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILNOTIFICATIONPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

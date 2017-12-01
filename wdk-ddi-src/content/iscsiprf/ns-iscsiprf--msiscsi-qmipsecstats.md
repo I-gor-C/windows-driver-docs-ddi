@@ -200,7 +200,7 @@ typedef struct _MSiSCSI_QMIPSECStats {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563105">MSiSCSI_QMIPSECStats WMI Class</a>
+<a href="storage.msiscsi_qmipsecstats_wmi_class">MSiSCSI_QMIPSECStats WMI Class</a>
 </dt>
 </dl>
 <p> </p>

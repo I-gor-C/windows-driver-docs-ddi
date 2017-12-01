@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The IOCTL_HID_GET_COLLECTION_INFORMATION request obtains a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="https://msdn.microsoft.com/library/windows/hardware/ff539870">HID_COLLECTION_INFORMATION</a> structure. This information includes the size, in bytes, of a collection's <a href="NULL">preparsed data</a>.</p>
+<p>The IOCTL_HID_GET_COLLECTION_INFORMATION request obtains a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="..\hidclass\ns-hidclass--hid-collection-information.md">HID_COLLECTION_INFORMATION</a> structure. This information includes the size, in bytes, of a collection's <a href="NULL">preparsed data</a>.</p>
 <p>For general information about HIDClass devices, see <a href="NULL">HID Collections</a>. </p>
 
 
@@ -129,7 +129,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539870">HID_COLLECTION_INFORMATION</a>
+<a href="..\hidclass\ns-hidclass--hid-collection-information.md">HID_COLLECTION_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

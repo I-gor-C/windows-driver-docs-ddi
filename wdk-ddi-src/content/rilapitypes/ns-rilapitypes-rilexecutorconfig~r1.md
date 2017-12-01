@@ -7,7 +7,7 @@ old-location: netvista\rilexecutorconfig_2.htm
 old-project: netvista
 ms.assetid: 8f10bb0f-2a9e-4310-946d-c1c9250391e7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILEXECUTORCONFIG,
 ms.prod: windows-hardware
 ms.technology: windows-devices

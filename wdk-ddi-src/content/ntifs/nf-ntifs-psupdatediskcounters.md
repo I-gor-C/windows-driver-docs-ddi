@@ -102,8 +102,6 @@ VOID PsUpdateDiskCounters(
 ## -remarks
 <p>File system drivers use <b>PsUpdateDiskCounters</b> to update counts for disk I/O accounting. A client process can be "charged" the disk I/O counts by the file system.</p>
 
-<p>File system drivers use <b>PsUpdateDiskCounters</b> to update counts for disk I/O accounting. A client process can be "charged" the disk I/O counts by the file system.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -167,7 +165,7 @@ VOID PsUpdateDiskCounters(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971608">PsIsDiskCountersEnabled</a>
+<a href="..\ntifs\nf-ntifs-psisdiskcountersenabled.md">PsIsDiskCountersEnabled</a>
 </dt>
 </dl>
 <p> </p>

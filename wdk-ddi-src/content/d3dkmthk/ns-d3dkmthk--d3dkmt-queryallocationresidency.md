@@ -152,7 +152,7 @@ typedef struct _D3DKMT_QUERYALLOCATIONRESIDENCY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547110">D3DKMTQueryAllocationResidency</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryallocationresidency.md">D3DKMTQueryAllocationResidency</a>
 </dt>
 </dl>
 <p> </p>

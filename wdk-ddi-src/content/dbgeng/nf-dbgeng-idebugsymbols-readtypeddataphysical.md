@@ -7,7 +7,7 @@ old-location: debugger\readtypeddataphysical.htm
 old-project: debugger
 ms.assetid: 72562325-27f9-4e80-b03f-8926adad99c1
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols, ReadTypedDataPhysical, IDebugSymbols::ReadTypedDataPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -112,15 +112,7 @@ HRESULT ReadTypedDataPhysical(
 
 <p>The number of bytes this method attempts to read is the smaller of the size of the buffer and the size of the variable.</p>
 
-<p>This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554313">ReadPhysical</a>.</p>
-
-<p>For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.</p>
-
-<p>This method is only available in kernel mode debugging.</p>
-
-<p>The number of bytes this method attempts to read is the smaller of the size of the buffer and the size of the variable.</p>
-
-<p>This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554313">ReadPhysical</a>.</p>
+<p>This is a convenience method.  The same result can be obtained by calling <a href="debugger.gettypesize2">GetTypeSize</a> and <a href="..\wdbgexts\nf-wdbgexts-readphysical.md">ReadPhysical</a>.</p>
 
 <p>For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.</p>
 

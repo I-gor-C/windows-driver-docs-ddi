@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatesharedmemory.htm
 old-project: netvista
 ms.assetid: 1e4919df-7897-44c3-876f-0f1acfe6d5af
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisAllocateSharedMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,12 +70,12 @@ NDIS_STATUS NdisAllocateSharedMemory(
 <dl>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564520">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </p>
 </dd>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </p>
 </dd>
 </dl>
@@ -130,28 +130,7 @@ NDIS_STATUS NdisAllocateSharedMemory(
     <b>NdisAllocateSharedMemory</b>.</p>
 
 <p>The driver must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562601">NdisFreeSharedMemory</a> function to free
-    the shared memory that it allocates with 
-    <b>NdisAllocateSharedMemory</b>.</p>
-
-<p>NDIS drivers call the 
-    <b>NdisAllocateSharedMemory</b> function to allocate a block of shared memory from an NDIS shared memory
-    provider.</p>
-
-<p>The 
-    <i>SharedMemoryParameters</i> parameter contains a pointer to an 
-    <a href="..\ndis\ns-ndis--ndis-shared-memory-parameters.md">
-    NDIS_SHARED_MEMORY_PARAMETERS</a> structure that defines the requested attributes for the shared
-    memory. If the <b>NDIS_SHARED_MEM_PARAMETERS_CONTIGUOUS</b> flag is not set in the 
-    <b>Flags</b> member, shared memory can be specified in a scatter-gather list that is contained in
-    non-contiguous memory.</p>
-
-<p>NDIS calls the 
-    <a href="..\ndis\nc-ndis-allocate-shared-memory-handler.md">NetAllocateSharedMemory</a> function of a shared memory provider from the context of the call to 
-    <b>NdisAllocateSharedMemory</b>.</p>
-
-<p>The driver must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562601">NdisFreeSharedMemory</a> function to free
+    <a href="..\ndis\nf-ndis-ndisfreesharedmemory.md">NdisFreeSharedMemory</a> function to free
     the shared memory that it allocates with 
     <b>NdisAllocateSharedMemory</b>.</p>
 
@@ -208,35 +187,35 @@ NDIS_STATUS NdisAllocateSharedMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567303">NDIS_SHARED_MEMORY_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-shared-memory-parameters.md">NDIS_SHARED_MEMORY_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562608">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562601">NdisFreeSharedMemory</a>
+<a href="..\ndis\nf-ndis-ndisfreesharedmemory.md">NdisFreeSharedMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563646">NdisMRegisterDmaChannel</a>
+<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
    NdisMRegisterScatterGatherDma</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564520">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-allocate-shared-memory-handler.md">NetAllocateSharedMemory</a>
@@ -244,4 +223,4 @@ NDIS_STATUS NdisAllocateSharedMemory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateSharedMemory function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateSharedMemory function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

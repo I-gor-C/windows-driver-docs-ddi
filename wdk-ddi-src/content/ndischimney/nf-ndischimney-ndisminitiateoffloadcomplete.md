@@ -7,7 +7,7 @@ old-location: netvista\ndisminitiateoffloadcomplete.htm
 old-project: netvista
 ms.assetid: 983b2e04-1563-4f2e-85a7-8fd93ec1cd8c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMInitiateOffloadComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -124,46 +124,6 @@ VOID NdisMInitiateOffloadComplete(
     <a href="netvista.returning_completion_status_of_an_initiate_offload_operation">
     Returning Completion Status of an Initiate Offload Operation</a>.</p>
 
-<p>Before calling 
-    <b>NdisMInitiateOffloadComplete</b>, the offload target must write one of the following NDIS_STATUS
-    values to the 
-    <b>Status</b> member of each 
-    <a href="..\ndischimney\ns-ndischimney--ndis-miniport-offload-block-list.md">
-    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure in the state tree passed to the offload target's 
-    <i>MiniportInitiateOffload</i> function:</p>
-
-<p>NDIS_STATUS_SUCCESS</p>
-
-<p>NDIS_STATUS_PARTIAL_SUCCESS</p>
-
-<p>NDIS_STATUS_RESOURCES</p>
-
-<p>NDIS_STATUS_OFFLOAD_TCP_ENTRIES</p>
-
-<p>NDIS_STATUS_OFFLOAD_PATH_ENTRIES</p>
-
-<p>NDIS_STATUS_OFFLOAD_NEIGHBOR_ENTRIES</p>
-
-<p>NDIS_STATUS_OFFLOAD_HW_ADDRESS_ENTRIES</p>
-
-<p>NDIS_STATUS_OFFLOAD_IP_ADDRESS_ENTRIES</p>
-
-<p>NDIS_STATUS_OFFLOAD_TCP_XMIT_BUFFER</p>
-
-<p>NDIS_STATUS_OFFLOAD_TCP_RCV_BUFFER</p>
-
-<p>NDIS_STATUS_OFFLOAD_TCP_RCV_WINDOW</p>
-
-<p>NDIS_STATUS_OFFLOAD_VLAN_ENTRIES</p>
-
-<p>NDIS_STATUS_OFFLOAD_PATH_MTU</p>
-
-<p>NDIS_STATUS_FAILURE</p>
-
-<p>For more information, see 
-    <a href="netvista.returning_completion_status_of_an_initiate_offload_operation">
-    Returning Completion Status of an Initiate Offload Operation</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -206,13 +166,13 @@ VOID NdisMInitiateOffloadComplete(
    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564606">NdisTcpOffloadReceiveHandler</a>
+<a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-receive-indicate.md">NdisTcpOffloadReceiveHandler</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564595">NdisTcpOffloadEventHandler</a>
+<a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-event-indicate.md">NdisTcpOffloadEventHandler</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569816">OID_TCP_TASK_OFFLOAD</a>
@@ -220,4 +180,4 @@ VOID NdisMInitiateOffloadComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMInitiateOffloadComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMInitiateOffloadComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

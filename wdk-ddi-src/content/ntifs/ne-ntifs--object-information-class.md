@@ -58,13 +58,13 @@ typedef enum _OBJECT_INFORMATION_CLASS {
 ### -field <a id="ObjectBasicInformation"></a><a id="objectbasicinformation"></a><a id="OBJECTBASICINFORMATION"></a><b>ObjectBasicInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551944">PUBLIC_OBJECT_BASIC_INFORMATION</a> structure is supplied.</p>
+<p>A <a href="..\ntifs\ns-ntifs--public-object-basic-information.md">PUBLIC_OBJECT_BASIC_INFORMATION</a> structure is supplied.</p>
 </dd>
 
 ### -field <a id="ObjectTypeInformation"></a><a id="objecttypeinformation"></a><a id="OBJECTTYPEINFORMATION"></a><b>ObjectTypeInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551947">PUBLIC_OBJECT_TYPE_INFORMATION</a> structure is supplied.</p>
+<p>A <a href="..\ntifs\ns-ntifs---public-object-type-information.md">PUBLIC_OBJECT_TYPE_INFORMATION</a> structure is supplied.</p>
 </dd>
 </dl>
 
@@ -96,13 +96,13 @@ typedef enum _OBJECT_INFORMATION_CLASS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551944">PUBLIC_OBJECT_BASIC_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--public-object-basic-information.md">PUBLIC_OBJECT_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551947">PUBLIC_OBJECT_TYPE_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs---public-object-type-information.md">PUBLIC_OBJECT_TYPE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567062">ZwQueryObject</a>
+<a href="..\ntifs\nf-ntifs-zwqueryobject.md">ZwQueryObject</a>
 </dt>
 </dl>
 <p> </p>

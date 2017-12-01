@@ -7,7 +7,7 @@ old-location: bltooth\bthddi_sdp_parse_interface.htm
 old-project: bltooth
 ms.assetid: bb8a1dd5-8207-4034-993e-eed49dc0f9c4
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: BTHDDI_SDP_PARSE_INTERFACE, BTHDDI_SDP_PARSE_INTERFACE, *PBTHDDI_SDP_PARSE_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,14 +76,14 @@ typedef struct _BTHDDI_SDP_PARSE_INTERFACE {
 <p>A structure that describes the 
      <b>BTHDDI_SDP_NODE_INTERFACE</b> interface for use by profile drivers. For more information about this
      structure, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a>.</p>
+     <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>.</p>
 </dd>
 
 ### -field <b>SdpValidateStream</b>
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536847">SdpValidateStream</a> function.</p>
+     <a href="bltooth.sdpvalidatestream">SdpValidateStream</a> function.</p>
 </dd>
 
 ### -field <b>SdpConvertStreamToTree</b>
@@ -106,49 +106,49 @@ typedef struct _BTHDDI_SDP_PARSE_INTERFACE {
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536839">SdpFreeTree</a> function.</p>
+     <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a> function.</p>
 </dd>
 
 ### -field <b>SdpByteSwapUuid128</b>
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536793">SdpByteSwapUuid128</a> function.</p>
+     <a href="bltooth.sdpbyteswapuuid128">SdpByteSwapUuid128</a> function.</p>
 </dd>
 
 ### -field <b>SdpByteSwapUint128</b>
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536788">SdpByteSwapUint128</a> function.</p>
+     <a href="bltooth.sdpbyteswapuint128">SdpByteSwapUint128</a> function.</p>
 </dd>
 
 ### -field <b>SdpByteSwapUint64</b>
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536790">SdpByteSwapUint64</a> function.</p>
+     <a href="bltooth.sdpbyteswapuint64">SdpByteSwapUint64</a> function.</p>
 </dd>
 
 ### -field <b>SdpRetrieveUuid128</b>
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536846">SdpRetrieveUuid128</a> function.</p>
+     <a href="bltooth.sdpretrieveuuid128">SdpRetrieveUuid128</a> function.</p>
 </dd>
 
 ### -field <b>SdpRetrieveUint128</b>
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536843">SdpRetrieveUint128</a> function.</p>
+     <a href="bltooth.sdpretrieveuint128">SdpRetrieveUint128</a> function.</p>
 </dd>
 
 ### -field <b>SdpRetrieveUint64</b>
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536845">SdpRetrieveUint64</a> function.</p>
+     <a href="bltooth.sdpretrieveuint64">SdpRetrieveUint64</a> function.</p>
 </dd>
 
 ### -field <b>SdpFindAttributeInTree</b>
@@ -163,7 +163,7 @@ typedef struct _BTHDDI_SDP_PARSE_INTERFACE {
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536841">SdpGetNextElement</a> function.</p>
+     <a href="bltooth.sdpgetnextelement">SdpGetNextElement</a> function.</p>
 </dd>
 
 ### -field <b>Reserved1</b>
@@ -224,45 +224,45 @@ typedef struct _BTHDDI_SDP_PARSE_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a>
+<a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536847">SdpValidateStream</a>
+<a href="bltooth.sdpvalidatestream">SdpValidateStream</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536794">SdpConvertStreamToTree</a>
+<a href="bltooth.sdpconvertstreamtotree">SdpConvertStreamToTree</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536796">SdpConvertTreeToStream</a>
+<a href="bltooth.sdpconverttreetostream">SdpConvertTreeToStream</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536839">SdpFreeTree</a>
+<a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536793">SdpByteSwapUuid128</a>
+<a href="bltooth.sdpbyteswapuuid128">SdpByteSwapUuid128</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536788">SdpByteSwapUint128</a>
+<a href="bltooth.sdpbyteswapuint128">SdpByteSwapUint128</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536790">SdpByteSwapUint64</a>
+<a href="bltooth.sdpbyteswapuint64">SdpByteSwapUint64</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536846">SdpRetrieveUuid128</a>
+<a href="bltooth.sdpretrieveuuid128">SdpRetrieveUuid128</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536843">SdpRetrieveUint128</a>
+<a href="bltooth.sdpretrieveuint128">SdpRetrieveUint128</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536845">SdpRetrieveUint64</a>
+<a href="bltooth.sdpretrieveuint64">SdpRetrieveUint64</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536838">SdpFindAttributeInTree</a>
+<a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">SdpFindAttributeInTree</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536841">SdpGetNextElement</a>
+<a href="bltooth.sdpgetnextelement">SdpGetNextElement</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTHDDI_SDP_PARSE_INTERFACE structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTHDDI_SDP_PARSE_INTERFACE structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

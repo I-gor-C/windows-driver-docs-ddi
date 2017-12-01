@@ -7,7 +7,7 @@ old-location: netvista\wskfreeaddressinfo.htm
 old-project: netvista
 ms.assetid: 552b4024-03d3-4e9b-b149-cf584c7e7259
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -43,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p>The 
   <b>WskFreeAddressInfo</b> function frees address information that the 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff571132">WskGetAddressInfo</a> function has dynamically
+  <a href="..\wsk\nc-wsk-pfn-wsk-get-address-info.md">WskGetAddressInfo</a> function has dynamically
   allocated.</p>
 
 
@@ -77,7 +76,7 @@ VOID WSKAPI * WskFreeAddressInfo(
 <p>[in] A pointer to a linked list of one or more <a href="winsock.addrinfoex">ADDRINFOEXW</a> structures that contain response
      information about the host. This pointer was returned through the 
      <i>Result</i> parameter of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571132">WskGetAddressInfo</a> function.
+     <a href="..\wsk\nc-wsk-pfn-wsk-get-address-info.md">WskGetAddressInfo</a> function.
      </p>
 <p>The <a href="winsock.addrinfoex">ADDRINFOEXW</a> structure is defined in the 
      Ws2def.h header file. It is identical to the 
@@ -143,12 +142,12 @@ VOID WSKAPI * WskFreeAddressInfo(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571122">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571132">WskGetAddressInfo</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-get-address-info.md">WskGetAddressInfo</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_FREE_ADDRESS_INFO callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_FREE_ADDRESS_INFO callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

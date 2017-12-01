@@ -7,7 +7,7 @@ old-location: kernel\zwgetnotificationresourcemanager.htm
 old-project: kernel
 ms.assetid: 53892fd1-d83c-4b6e-9c39-2f64ba0ab310
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: ZwGetNotificationResourceManager
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,13 +64,13 @@ NTSTATUS ZwGetNotificationResourceManager(
 ### -param <i>ResourceManagerHandle</i> [in]
 
 <dd>
-<p>A handle to a <a href="https://msdn.microsoft.com/b44f2035-ee9f-453b-b12d-89ca36a8b280">resource manager object</a> that was obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff566427">ZwCreateResourceManager</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567026">ZwOpenResourceManager</a>. The handle must have RESOURCEMANAGER_GET_NOTIFICATION access to the object.</p>
+<p>A handle to a <a href="https://msdn.microsoft.com/b44f2035-ee9f-453b-b12d-89ca36a8b280">resource manager object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a> or <a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>. The handle must have RESOURCEMANAGER_GET_NOTIFICATION access to the object.</p>
 </dd>
 
 ### -param <i>TransactionNotification</i> [out]
 
 <dd>
-<p>A pointer to a caller-allocated buffer that receives information about the retrieved notification. The buffer must be large enough to contain a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a> structure plus additional notification-specific arguments.</p>
+<p>A pointer to a caller-allocated buffer that receives information about the retrieved notification. The buffer must be large enough to contain a <a href="kernel.transaction_notification">TRANSACTION_NOTIFICATION</a> structure plus additional notification-specific arguments.</p>
 </dd>
 
 ### -param <i>NotificationLength</i> [in]
@@ -98,7 +98,7 @@ NTSTATUS ZwGetNotificationResourceManager(
 ### -param <i>Asynchronous</i> [in]
 
 <dd>
-<p>A ULONG value that must be zero. <b>ZwGetNotificationResourceManager</b> does not support asynchronous notifications. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff564676">TmEnableCallbacks</a> to enable asynchronous notifications. </p>
+<p>A ULONG value that must be zero. <b>ZwGetNotificationResourceManager</b> does not support asynchronous notifications. Use <a href="..\wdm\nf-wdm-tmenablecallbacks.md">TmEnableCallbacks</a> to enable asynchronous notifications. </p>
 </dd>
 
 ### -param <i>AsynchronousContext</i> [in, optional]
@@ -126,19 +126,9 @@ NTSTATUS ZwGetNotificationResourceManager(
 <p>The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.</p>
 
 ## -remarks
-<p>Use the <b>ZwGetNotificationResourceManager</b> routine to obtain notifications synchronously. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564676">TmEnableCallbacks</a> routine to enable asynchronous notifications. </p>
+<p>Use the <b>ZwGetNotificationResourceManager</b> routine to obtain notifications synchronously. Use the <a href="..\wdm\nf-wdm-tmenablecallbacks.md">TmEnableCallbacks</a> routine to enable asynchronous notifications. </p>
 
-<p>The received <a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a> structure contains the enlistment key that the resource manager specified when it called <a href="https://msdn.microsoft.com/library/windows/hardware/ff566422">ZwCreateEnlistment</a>. You can use the enlistment key to identify the enlistment that the notification applies to.</p>
-
-<p>For more information about the <b>ZwGetNotificationResourceManager</b> routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542865">Creating a Resource Manager</a>. </p>
-
-<p><b>NtGetNotificationResourceManager</b> and <b>ZwGetNotificationResourceManager</b> are two versions of the same Windows Native System Services routine.</p>
-
-<p>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.</p>
-
-<p>Use the <b>ZwGetNotificationResourceManager</b> routine to obtain notifications synchronously. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564676">TmEnableCallbacks</a> routine to enable asynchronous notifications. </p>
-
-<p>The received <a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a> structure contains the enlistment key that the resource manager specified when it called <a href="https://msdn.microsoft.com/library/windows/hardware/ff566422">ZwCreateEnlistment</a>. You can use the enlistment key to identify the enlistment that the notification applies to.</p>
+<p>The received <a href="kernel.transaction_notification">TRANSACTION_NOTIFICATION</a> structure contains the enlistment key that the resource manager specified when it called <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>. You can use the enlistment key to identify the enlistment that the notification applies to.</p>
 
 <p>For more information about the <b>ZwGetNotificationResourceManager</b> routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542865">Creating a Resource Manager</a>. </p>
 
@@ -209,7 +199,7 @@ NTSTATUS ZwGetNotificationResourceManager(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -217,24 +207,24 @@ NTSTATUS ZwGetNotificationResourceManager(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564676">TmEnableCallbacks</a>
+<a href="..\wdm\nf-wdm-tmenablecallbacks.md">TmEnableCallbacks</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a>
+<a href="kernel.transaction_notification">TRANSACTION_NOTIFICATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566422">ZwCreateEnlistment</a>
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566427">ZwCreateResourceManager</a>
+<a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567026">ZwOpenResourceManager</a>
+<a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwGetNotificationResourceManager routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwGetNotificationResourceManager routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

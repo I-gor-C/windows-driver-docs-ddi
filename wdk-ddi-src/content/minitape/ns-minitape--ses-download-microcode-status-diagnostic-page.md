@@ -70,7 +70,7 @@ typedef struct _SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE {
 <dd>
 <p>Indicates the number of download microcode status
 descriptors in <i>Descriptors</i>, not including the primary <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>. This value shall
-be set to the same value as the <i>NumberOfSecondarySubEnclosures</i> field in the <a href="..\storport\ns-storport--ses-configuration-diagnostic-page.md">SES_CONFIGURATION_DIAGNOSTIC_PAGE</a> structure.</p>
+be set to the same value as the <i>NumberOfSecondarySubEnclosures</i> field in the <a href="..\minitape\ns-minitape--ses-configuration-diagnostic-page.md">SES_CONFIGURATION_DIAGNOSTIC_PAGE</a> structure.</p>
 </dd>
 
 ### -field <b>PageLength</b>

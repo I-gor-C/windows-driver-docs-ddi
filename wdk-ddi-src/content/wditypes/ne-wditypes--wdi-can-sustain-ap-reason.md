@@ -7,7 +7,7 @@ old-location: netvista\wdi_can_sustain_ap_reason.htm
 old-project: netvista
 ms.assetid: 9AAE4B3F-7C5C-457D-9388-63E6E6AB8A2E
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

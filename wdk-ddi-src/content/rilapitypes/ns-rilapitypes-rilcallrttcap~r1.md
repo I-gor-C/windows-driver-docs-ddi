@@ -7,7 +7,7 @@ old-location: netvista\rilcallrttcap_2.htm
 old-project: netvista
 ms.assetid: e1652bc1-e15d-4018-8f4c-2514958ffd27
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCALLRTTCAP,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -116,7 +116,7 @@ typedef struct D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createshaderresourceview.md">CreateShaderResourceView</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541708">D3D10DDIARG_CREATESHADERRESOURCEVIEW</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createshaderresourceview.md">D3D10DDIARG_CREATESHADERRESOURCEVIEW</a>
 </dt>
 </dl>
 <p> </p>

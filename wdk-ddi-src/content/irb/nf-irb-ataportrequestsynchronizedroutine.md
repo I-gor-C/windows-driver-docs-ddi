@@ -72,15 +72,7 @@ BOOLEAN __inline AtaPortRequestSynchronizedRoutine(
 <p>None </p>
 
 ## -remarks
-<p>This routine is typically used by miniport drivers that set the <b>SyncWithIsr</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559029">IDE_CHANNEL_CONFIGURATION</a> structure to <b>FALSE</b>. When <b>SyncWithIsr</b> is set to <b>FALSE</b>, the miniport driver should use the <b>AtaPortRequestSynchronizedRoutine </b>routine to ensure synchronized access to data structures that are modified in the ISR. </p>
-
-<p>The pointer to the channel extension that is stored in <i>ChannelExtension</i> will be passed to the worker routine when it is called.</p>
-
-<p>When the port driver calls the routine that is pointed to by <i>SynchronizedRoutine</i>, it passes the pointer to the channel extension that is stored in <i>ChannelExtension</i>.</p>
-
-<p>The <i>SynchronizedRoutine</i> function pointer is declared in <i>Irb.h</i> as follows:</p>
-
-<p>This routine is typically used by miniport drivers that set the <b>SyncWithIsr</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559029">IDE_CHANNEL_CONFIGURATION</a> structure to <b>FALSE</b>. When <b>SyncWithIsr</b> is set to <b>FALSE</b>, the miniport driver should use the <b>AtaPortRequestSynchronizedRoutine </b>routine to ensure synchronized access to data structures that are modified in the ISR. </p>
+<p>This routine is typically used by miniport drivers that set the <b>SyncWithIsr</b> member of the <a href="..\irb\ns-irb--ide-channel-configuration.md">IDE_CHANNEL_CONFIGURATION</a> structure to <b>FALSE</b>. When <b>SyncWithIsr</b> is set to <b>FALSE</b>, the miniport driver should use the <b>AtaPortRequestSynchronizedRoutine </b>routine to ensure synchronized access to data structures that are modified in the ISR. </p>
 
 <p>The pointer to the channel extension that is stored in <i>ChannelExtension</i> will be passed to the worker routine when it is called.</p>
 
@@ -115,7 +107,7 @@ BOOLEAN __inline AtaPortRequestSynchronizedRoutine(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550148">AtaPortControllerSyncRoutine</a>
+<a href="..\irb\nf-irb-ataportcontrollersyncroutine.md">AtaPortControllerSyncRoutine</a>
 </dt>
 </dl>
 <p> </p>

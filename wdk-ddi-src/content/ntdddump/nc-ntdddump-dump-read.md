@@ -62,7 +62,7 @@ NTSTATUS Dump_Read(
 ### -param <i>FilterExtension</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553862">FILTER_EXTENSION</a> structure.</p>
+<p>A pointer to a <a href="..\ntdddump\ns-ntdddump--filter-extension.md">FILTER_EXTENSION</a> structure.</p>
 </dd>
 
 ### -param <i>DiskByteOffset</i> [in]
@@ -74,7 +74,7 @@ NTSTATUS Dump_Read(
 ### -param <i>Mdl</i> [in]
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a> structure that describes the data buffer containing the dump data. Filter drivers should not modify this field.</p>
+<p>A pointer to an <a href="..\wdm\ns-wdm--mdl.md">MDL</a> structure that describes the data buffer containing the dump data. Filter drivers should not modify this field.</p>
 </dd>
 </dl>
 
@@ -82,10 +82,6 @@ NTSTATUS Dump_Read(
 <p>If the routine succeeds, it must return STATUS_SUCCESS. Otherwise, it must return one of the error status values defined in <i>Ntstatus.h</i>.</p>
 
 ## -remarks
-<p>Filter drivers can read the data that was read by the crashdump process. </p>
-
-<p>Filter drivers can modify the contents of the data buffer contained in <b>Mdl</b> to revert any changes made to the data when it was written to disk. </p>
-
 <p>Filter drivers can read the data that was read by the crashdump process. </p>
 
 <p>Filter drivers can modify the contents of the data buffer contained in <b>Mdl</b> to revert any changes made to the data when it was written to disk. </p>
@@ -125,10 +121,10 @@ NTSTATUS Dump_Read(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553709">Dump_Write</a>
+<a href="..\ntdddump\nc-ntdddump-dump-write.md">Dump_Write</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553862">FILTER_EXTENSION</a>
+<a href="..\ntdddump\ns-ntdddump--filter-extension.md">FILTER_EXTENSION</a>
 </dt>
 </dl>
 <p> </p>

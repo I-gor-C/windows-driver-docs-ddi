@@ -58,18 +58,18 @@ HBA_STATUS HBA_API HBA_GetFcpPersistentBinding(
 ### -param <i>Handle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA to query for the bindings. The HBA returns bindings for the targets that it can enumerate. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA to query for the bindings. The HBA returns bindings for the targets that it can enumerate. </p>
 </dd>
 
 ### -param <i>Binding</i> [in, out]
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556055">HBA_FCPBinding</a> that holds an array of elements of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556058">HBA_FCPBindingEntry</a>, each of which holds a persistent binding between operating system and fibre channel protocol (FCP) identifiers for a logical unit. On input, the <b>NumberOfEntries</b> member of HBA_FCPBinding should contain the number of bindings that fit in the output buffer. On output, <b>NumberOfEntries</b> holds the number of entries actually returned, which is equal to the number specified on input, or the full set of available bindings, whichever is smaller. The value in <b>NumberOfEntries</b> will contain the number of persistent bindings returned even when an error occurred because of insufficient buffer space. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fcpbinding.md">HBA_FCPBinding</a> that holds an array of elements of type <a href="..\hbaapi\ns-hbaapi-hba-fcpbindingentry.md">HBA_FCPBindingEntry</a>, each of which holds a persistent binding between operating system and fibre channel protocol (FCP) identifiers for a logical unit. On input, the <b>NumberOfEntries</b> member of HBA_FCPBinding should contain the number of bindings that fit in the output buffer. On output, <b>NumberOfEntries</b> holds the number of entries actually returned, which is equal to the number specified on input, or the full set of available bindings, whichever is smaller. The value in <b>NumberOfEntries</b> will contain the number of persistent bindings returned even when an error occurred because of insufficient buffer space. </p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_GetFcpPersistentBinding</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetFcpPersistentBinding</b> returns one of the following qualifiers.</p><dl>
+<p>The <b>HBA_GetFcpPersistentBinding</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetFcpPersistentBinding</b> returns one of the following qualifiers.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the persistent bindings were successfully retrieved. </p><dl>
 <dt><b>HBA_STATUS_ERROR_NOT_SUPPORTED</b></dt>
@@ -82,8 +82,6 @@ HBA_STATUS HBA_API HBA_GetFcpPersistentBinding(
 <p> </p>
 
 ## -remarks
-<p>The <b>HBA_GetFcpPersistentBinding</b> routine retrieves a set of bindings between operating system and fibre channel protocol (FCP) identifiers for the logical units that it can enumerate. These bindings persist across reboots of the operating system.</p>
-
 <p>The <b>HBA_GetFcpPersistentBinding</b> routine retrieves a set of bindings between operating system and fibre channel protocol (FCP) identifiers for the logical units that it can enumerate. These bindings persist across reboots of the operating system.</p>
 
 ## -requirements
@@ -133,13 +131,13 @@ HBA_STATUS HBA_API HBA_GetFcpPersistentBinding(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556055">HBA_FCPBinding</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcpbinding.md">HBA_FCPBinding</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

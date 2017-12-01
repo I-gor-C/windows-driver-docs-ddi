@@ -67,11 +67,7 @@ LARGE_INTEGER PsGetProcessExitTime(
 ## -remarks
 <p>System time is a count of 100-nanosecond intervals since January 1, 1601. System time is typically updated approximately every ten milliseconds. This value is computed for the GMT time zone. To adjust this value for the local time zone, use <b>ExSystemTimeToLocalTime</b>.</p>
 
-<p>For more information about converting time values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542994">Data Conversions</a>. </p>
-
-<p>System time is a count of 100-nanosecond intervals since January 1, 1601. System time is typically updated approximately every ten milliseconds. This value is computed for the GMT time zone. To adjust this value for the local time zone, use <b>ExSystemTimeToLocalTime</b>.</p>
-
-<p>For more information about converting time values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542994">Data Conversions</a>. </p>
+<p>For more information about converting time values, see <a href="kernel.data_conversions">Data Conversions</a>. </p>
 
 ## -requirements
 <table>
@@ -128,13 +124,13 @@ LARGE_INTEGER PsGetProcessExitTime(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545622">ExSystemTimeToLocalTime</a>
+<a href="..\wdm\nf-wdm-exsystemtimetolocaltime.md">ExSystemTimeToLocalTime</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553068">KeQuerySystemTime</a>
+<a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551915">PsIsThreadTerminating</a>
+<a href="..\ntifs\nf-ntifs-psisthreadterminating.md">PsIsThreadTerminating</a>
 </dt>
 </dl>
 <p> </p>

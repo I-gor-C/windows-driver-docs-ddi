@@ -7,7 +7,7 @@ old-location: stream\ksproperty_mediaseeking.htm
 old-project: stream
 ms.assetid: 9B9C308B-7D0B-4549-9EE5-2E53B0B8946C
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: sensors\gnss_agnss_injectposition.htm
 old-project: sensors
 ms.assetid: 1FB73F94-F8F3-409F-8B34-3CD303512AD0
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_AGNSS_INJECTPOSITION, GNSS_AGNSS_INJECTPOSITION, *PGNSS_AGNSS_INJECTPOSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices

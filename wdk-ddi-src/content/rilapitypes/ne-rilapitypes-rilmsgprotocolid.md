@@ -7,7 +7,7 @@ old-location: netvista\rilmsgprotocolid_2.htm
 old-project: netvista
 ms.assetid: a4dc4bc4-f636-46be-b99c-12d2bf4a577f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -102,7 +102,7 @@ typedef struct _WHEA_XPF_PROCINFO {
 ### -field <b>ValidBits</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560663">WHEA_XPF_PROCINFO_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-xpf-procinfo-validbits.md">WHEA_XPF_PROCINFO_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
 </dd>
 
 ### -field <b>CheckInfo</b>
@@ -117,25 +117,25 @@ typedef struct _WHEA_XPF_PROCINFO {
 ### -field <b>CacheCheck</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560642">WHEA_XPF_CACHE_CHECK</a> union that describes cache error information. </p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-xpf-cache-check.md">WHEA_XPF_CACHE_CHECK</a> union that describes cache error information. </p>
 </dd>
 
 ### -field <b>TlbCheck</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560665">WHEA_XPF_TLB_CHECK</a> union that describes translation lookaside buffer error information. </p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-xpf-tlb-check.md">WHEA_XPF_TLB_CHECK</a> union that describes translation lookaside buffer error information. </p>
 </dd>
 
 ### -field <b>BusCheck</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560639">WHEA_XPF_BUS_CHECK</a> union that describes bus error information.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-xpf-bus-check.md">WHEA_XPF_BUS_CHECK</a> union that describes bus error information.</p>
 </dd>
 
 ### -field <b>MsCheck</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560652">WHEA_XPF_MS_CHECK</a> union that describes microarchitecture-specific error information. </p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-xpf-ms-check.md">WHEA_XPF_MS_CHECK</a> union that describes microarchitecture-specific error information. </p>
 </dd>
 
 ### -field <b>AsULONGLONG</b>
@@ -176,7 +176,7 @@ typedef struct _WHEA_XPF_PROCINFO {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560655">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains an array of WHEA_XPF_PROCINFO structures, each of which describes specific error information associated with the processor error that occurred.</p>
+<p>The <a href="..\ntddk\ns-ntddk--whea-xpf-processor-error-section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains an array of WHEA_XPF_PROCINFO structures, each of which describes specific error information associated with the processor error that occurred.</p>
 
 ## -requirements
 <table>
@@ -204,22 +204,22 @@ typedef struct _WHEA_XPF_PROCINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560639">WHEA_XPF_BUS_CHECK</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-bus-check.md">WHEA_XPF_BUS_CHECK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560642">WHEA_XPF_CACHE_CHECK</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-cache-check.md">WHEA_XPF_CACHE_CHECK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560652">WHEA_XPF_MS_CHECK</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-ms-check.md">WHEA_XPF_MS_CHECK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560655">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-processor-error-section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560663">WHEA_XPF_PROCINFO_VALIDBITS</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-procinfo-validbits.md">WHEA_XPF_PROCINFO_VALIDBITS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560665">WHEA_XPF_TLB_CHECK</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-tlb-check.md">WHEA_XPF_TLB_CHECK</a>
 </dt>
 </dl>
 <p> </p>

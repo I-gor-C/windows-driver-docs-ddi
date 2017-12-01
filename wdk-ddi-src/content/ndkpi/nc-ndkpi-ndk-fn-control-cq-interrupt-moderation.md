@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_control_cq_interrupt_moderation.htm
 old-project: netvista
 ms.assetid: 44EB6C92-1ADA-4675-9E19-BAB79097FF5B
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ NTSTATUS NdkControlCqInterruptModeration(
 ### -param <i>pNdkCq</i> [in]
 
 <dd>
-<p>A pointer to an NDK completion queue object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439854">NDK_CQ</a>).
+<p>A pointer to an NDK completion queue object (<a href="..\ndkpi\ns-ndkpi--ndk-cq.md">NDK_CQ</a>).
 </p>
 </dd>
 
@@ -93,7 +93,7 @@ The maximum number of completions that a provider can accumulate in the CQ befor
 </dl><p> The request failed due to insufficient resources. </p><dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
 </dl><p>The NDK 
-provider does not support CQ interrupt moderation control with <a href="https://msdn.microsoft.com/library/windows/hardware/jj552973">NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</a>. A provider that sets the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORT flag in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a> structure's <b>AdapterFlags</b> member must not return this status code.
+provider does not support CQ interrupt moderation control with <a href="..\ndkpi\nc-ndkpi-ndk-fn-control-cq-interrupt-moderation.md">NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</a>. A provider that sets the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORT flag in the <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure's <b>AdapterFlags</b> member must not return this status code.
 </p><dl>
 <dt><b>STATUS_INVALID_PARAMETER_MIX</b></dt>
 </dl><p>The NDK 
@@ -105,18 +105,7 @@ consumer provided a MAXULONG for <i>ModerationInterval</i> and MAXULONG or a val
 <p> </p>
 
 ## -remarks
-<p>NDK consumers must not call <i>NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</i> unless the provider sets the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED  flag in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a> structure's <b>AdapterFlags</b> member. For a provider that sets the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED flag, the NDK consumer can call this function at any point after a CQ is created. The default behavior for a CQ is no interrupt moderation. The NDK consumer must not call this function on the same CQ concurrently.
-</p>
-
-<p>The NDK consumer must not specify a MAXULONG for <i>ModerationInterval</i> and MAXULONG or a value larger than the  number of completion entries that the CQ can hold  (<i>CqDepth</i>) for <i>ModerationCount</i> at the same time. Otherwise, the provider will return STATUS_INVALID_PARAMETER_MIX.
-</p>
-
-<p>The NDK consumer can call <i>NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</i> multiple times. A provider might not apply the settings before returning from this function.  However, the provider must not delay the application of the settings indefinitely. If the consumer issues another call to this function while the provider has not yet applied the settings from a previous invocation of the function, the provider must make the most recently provided settings effective as soon as possible. That is, either the provider must cancel the application of the previous settings and apply the new settings, or wait for the application of previous settings to complete and apply the new settings.</p>
-
-<p>Providers that indicate support for interrupt moderation with the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED flag must normally handle <i>NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</i> successfully and return STATUS_SUCCESS.  However,  a provider can fail the request due to a resource shortage such as a memory allocation failure. In this case,  the provider must return STATUS_INSUFFICIENT_RESOURCES. Providers cannot return STATUS_PENDING from this function. Providers that do not indicate support for this function with the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED flag must still implement this function. In this case,  this function  must return STATUS_NOT_SUPPORTED.
-</p>
-
-<p>NDK consumers must not call <i>NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</i> unless the provider sets the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED  flag in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a> structure's <b>AdapterFlags</b> member. For a provider that sets the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED flag, the NDK consumer can call this function at any point after a CQ is created. The default behavior for a CQ is no interrupt moderation. The NDK consumer must not call this function on the same CQ concurrently.
+<p>NDK consumers must not call <i>NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</i> unless the provider sets the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED  flag in the <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure's <b>AdapterFlags</b> member. For a provider that sets the NDK_ADAPTER_FLAG_CQ_INTERRUPT_MODERATION_SUPPORTED flag, the NDK consumer can call this function at any point after a CQ is created. The default behavior for a CQ is no interrupt moderation. The NDK consumer must not call this function on the same CQ concurrently.
 </p>
 
 <p>The NDK consumer must not specify a MAXULONG for <i>ModerationInterval</i> and MAXULONG or a value larger than the  number of completion entries that the CQ can hold  (<i>CqDepth</i>) for <i>ModerationCount</i> at the same time. Otherwise, the provider will return STATUS_INVALID_PARAMETER_MIX.
@@ -176,15 +165,15 @@ consumer provided a MAXULONG for <i>ModerationInterval</i> and MAXULONG or a val
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a>
+<a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439854">NDK_CQ</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-cq.md">NDK_CQ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439855">NDK_CQ_DISPATCH</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-cq-dispatch.md">NDK_CQ_DISPATCH</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

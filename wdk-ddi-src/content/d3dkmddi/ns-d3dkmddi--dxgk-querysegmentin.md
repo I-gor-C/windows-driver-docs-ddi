@@ -71,7 +71,7 @@ typedef struct _DXGK_QUERYSEGMENTIN {
 ### -field <b>AgpFlags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562039">DXGK_SEGMENTFLAGS</a> structure that identifies properties for the available AGP aperture in bit-field flags.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentflags.md">DXGK_SEGMENTFLAGS</a> structure that identifies properties for the available AGP aperture in bit-field flags.</p>
 </dd>
 </dl>
 
@@ -103,16 +103,16 @@ typedef struct _DXGK_QUERYSEGMENTIN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562018">DXGK_QUERYSEGMENTOUT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentout.md">DXGK_QUERYSEGMENTOUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562035">DXGK_SEGMENTDESCRIPTOR</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor.md">DXGK_SEGMENTDESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562039">DXGK_SEGMENTFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentflags.md">DXGK_SEGMENTFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 </dt>
 <dt>
 <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <code>IPrintOemUni::DevMode</code> method, provided by rendering plug-ins for Unidrv, performs operations on private <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> members.</p>
+<p>The <code>IPrintOemUni::DevMode</code> method, provided by rendering plug-ins for Unidrv, performs operations on private <a href="display.devmodew">DEVMODEW</a> members.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ STDMETHOD DevMode(
 ### -param <i>pOemDMParam</i> 
 
 <dd>
-<p>Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure.</p>
+<p>Caller-supplied pointer to an <a href="..\printoem\ns-printoem--oemdmparam.md">OEMDMPARAM</a> structure.</p>
 </dd>
 </dl>
 
@@ -81,105 +81,27 @@ STDMETHOD DevMode(
 ## -remarks
 <p>A rendering plug-in for Unidrv must implement the <code>IPrintOemUni::DevMode</code> method.</p>
 
-<p>If you are providing a user interface plug-in for Unidrv, and if you are adding private members to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure, you must implement both the <code>IPrintOemUI::DevMode</code> and the <code>IPrintOemUni::DevMode</code> methods. The code implementing these methods must be identical and can be placed in a library that is statically linked to both the UI plug-in and the rendering plug-in.</p>
+<p>If you are providing a user interface plug-in for Unidrv, and if you are adding private members to the driver's <a href="display.devmodew">DEVMODEW</a> structure, you must implement both the <code>IPrintOemUI::DevMode</code> and the <code>IPrintOemUni::DevMode</code> methods. The code implementing these methods must be identical and can be placed in a library that is statically linked to both the UI plug-in and the rendering plug-in.</p>
 
 <p>The <code>IPrintOemUni::DevMode</code> method must perform the operation indicated by its <i>dwMode</i> value. Each time <code>IPrintOemUni::DevMode</code> is called, <i>dwMode</i> contains one of the following constants, which are listed in the order they are received:</p>
 
-<p></p><dl>
-<dt><a id="OEMDM_SIZE"></a><a id="oemdm_size"></a>OEMDM_SIZE</dt>
-<dd>
-<p>Indicates that the <code>IPrintOemUni::DevMode</code> method should return the size of the memory allocation needed to store the render plug-in's private DEVMODEW members. This constant is set the first time the method is called. The method should place the number of bytes needed in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>cbBufSize</b> member.</p>
-<p>The printer driver DLL allocates the specified amount of memory and passes its address to the rendering plug-in in subsequent calls to <code>IPrintOemUni::DevMode</code>.</p>
-</dd>
-<dt><a id="OEMDM_DEFAULT"></a><a id="oemdm_default"></a>OEMDM_DEFAULT</dt>
-<dd>
-<p>Indicates that the <code>IPrintOemUni::DevMode</code> method should fill the private DEVMODEW members with their default values. For this operation, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pOEMDMOut</b> and <b>cbBufSize</b> members contain the address and size of the area that has been allocated for storage of private DEVMODEW members. The method should write the private DEVMODEW default values into the buffer pointed to by the <b>pOEMDMOut</b> member, and return the number of bytes written by placing it in the <b>cbBufSize</b> member.</p>
-</dd>
-<dt><a id="OEMDM_CONVERT"></a><a id="oemdm_convert"></a>OEMDM_CONVERT</dt>
-<dd>
-<p>Indicates the <code>IPrintOemUni::DevMode</code> method should convert private DEVMODEW members to the current version, if necessary. (EMF spooling can occur over a network, and the system that spooled the EMF records might be running an older or newer version of the printer driver or user interface plug-in.) A private DEVMODEW section's version number is contained in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff559588">OEM_DMEXTRAHEADER</a> structure.</p>
-<p>The public and private members of the DEVMODEW structure to be converted are pointed to by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMIn</b> and <b>pOEMDMIn</b> members. The <code>IPrintOemUni::DevMode</code> method should place converted private members in the memory space described by the structure's <b>pOEMDMOut</b> and <b>cbBufSize</b> members, and it should return the count of written bytes by placing it in the structure's <b>cbBufSize</b> member. The value returned in <b>cbBufSize</b> cannot be larger than the value received.</p>
-</dd>
-<dt><a id="OEMDM_MERGE"></a><a id="oemdm_merge"></a>OEMDM_MERGE</dt>
-<dd>
-<p>Indicates that the <code>IPrintOemUni::DevMode</code> method should validate the information contained in private DEVMODEW members and merge validated values into a private DEVMODEW structure containing default values. For this constant, the method receives the following DEVMODEW contents:</p>
-<ul>
-<li>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMIn</b> and <b>pOEMDMIn</b> members point to the public and private members of the DEVMODEW structure to be validated.</p>
-</li>
-<li>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMOut</b> and <b>pOEMDMOut</b> members point to current default DEVMODEW values (obtained from property sheet contents).</p>
-</li>
-</ul>
-<p>The method should validate the contents of each private DEVMODEW member pointed to by <i>pOEMDMIn</i>. Each valid value should be copied to the output buffer pointed to by <i>pOEMDMOut</i>, overwriting the default. For invalid input values, the default output value should not be modified. (Finding invalid values is not considered an error, so the method should return S_OK.)</p>
-</dd>
-</dl><p>Indicates that the <code>IPrintOemUni::DevMode</code> method should return the size of the memory allocation needed to store the render plug-in's private DEVMODEW members. This constant is set the first time the method is called. The method should place the number of bytes needed in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>cbBufSize</b> member.</p>
+<p></p>
+
+<p>Indicates that the <code>IPrintOemUni::DevMode</code> method should return the size of the memory allocation needed to store the render plug-in's private DEVMODEW members. This constant is set the first time the method is called. The method should place the number of bytes needed in the <a href="..\printoem\ns-printoem--oemdmparam.md">OEMDMPARAM</a> structure's <b>cbBufSize</b> member.</p>
 
 <p>The printer driver DLL allocates the specified amount of memory and passes its address to the rendering plug-in in subsequent calls to <code>IPrintOemUni::DevMode</code>.</p>
 
-<p>Indicates that the <code>IPrintOemUni::DevMode</code> method should fill the private DEVMODEW members with their default values. For this operation, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pOEMDMOut</b> and <b>cbBufSize</b> members contain the address and size of the area that has been allocated for storage of private DEVMODEW members. The method should write the private DEVMODEW default values into the buffer pointed to by the <b>pOEMDMOut</b> member, and return the number of bytes written by placing it in the <b>cbBufSize</b> member.</p>
+<p>Indicates that the <code>IPrintOemUni::DevMode</code> method should fill the private DEVMODEW members with their default values. For this operation, the <a href="..\printoem\ns-printoem--oemdmparam.md">OEMDMPARAM</a> structure's <b>pOEMDMOut</b> and <b>cbBufSize</b> members contain the address and size of the area that has been allocated for storage of private DEVMODEW members. The method should write the private DEVMODEW default values into the buffer pointed to by the <b>pOEMDMOut</b> member, and return the number of bytes written by placing it in the <b>cbBufSize</b> member.</p>
 
-<p>Indicates the <code>IPrintOemUni::DevMode</code> method should convert private DEVMODEW members to the current version, if necessary. (EMF spooling can occur over a network, and the system that spooled the EMF records might be running an older or newer version of the printer driver or user interface plug-in.) A private DEVMODEW section's version number is contained in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff559588">OEM_DMEXTRAHEADER</a> structure.</p>
+<p>Indicates the <code>IPrintOemUni::DevMode</code> method should convert private DEVMODEW members to the current version, if necessary. (EMF spooling can occur over a network, and the system that spooled the EMF records might be running an older or newer version of the printer driver or user interface plug-in.) A private DEVMODEW section's version number is contained in its <a href="..\printoem\ns-printoem--oem-dmextraheader.md">OEM_DMEXTRAHEADER</a> structure.</p>
 
-<p>The public and private members of the DEVMODEW structure to be converted are pointed to by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMIn</b> and <b>pOEMDMIn</b> members. The <code>IPrintOemUni::DevMode</code> method should place converted private members in the memory space described by the structure's <b>pOEMDMOut</b> and <b>cbBufSize</b> members, and it should return the count of written bytes by placing it in the structure's <b>cbBufSize</b> member. The value returned in <b>cbBufSize</b> cannot be larger than the value received.</p>
-
-<p>Indicates that the <code>IPrintOemUni::DevMode</code> method should validate the information contained in private DEVMODEW members and merge validated values into a private DEVMODEW structure containing default values. For this constant, the method receives the following DEVMODEW contents:</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMIn</b> and <b>pOEMDMIn</b> members point to the public and private members of the DEVMODEW structure to be validated.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMOut</b> and <b>pOEMDMOut</b> members point to current default DEVMODEW values (obtained from property sheet contents).</p>
-
-<p>The method should validate the contents of each private DEVMODEW member pointed to by <i>pOEMDMIn</i>. Each valid value should be copied to the output buffer pointed to by <i>pOEMDMOut</i>, overwriting the default. For invalid input values, the default output value should not be modified. (Finding invalid values is not considered an error, so the method should return S_OK.)</p>
-
-<p>A rendering plug-in for Unidrv must implement the <code>IPrintOemUni::DevMode</code> method.</p>
-
-<p>If you are providing a user interface plug-in for Unidrv, and if you are adding private members to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure, you must implement both the <code>IPrintOemUI::DevMode</code> and the <code>IPrintOemUni::DevMode</code> methods. The code implementing these methods must be identical and can be placed in a library that is statically linked to both the UI plug-in and the rendering plug-in.</p>
-
-<p>The <code>IPrintOemUni::DevMode</code> method must perform the operation indicated by its <i>dwMode</i> value. Each time <code>IPrintOemUni::DevMode</code> is called, <i>dwMode</i> contains one of the following constants, which are listed in the order they are received:</p>
-
-<p></p><dl>
-<dt><a id="OEMDM_SIZE"></a><a id="oemdm_size"></a>OEMDM_SIZE</dt>
-<dd>
-<p>Indicates that the <code>IPrintOemUni::DevMode</code> method should return the size of the memory allocation needed to store the render plug-in's private DEVMODEW members. This constant is set the first time the method is called. The method should place the number of bytes needed in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>cbBufSize</b> member.</p>
-<p>The printer driver DLL allocates the specified amount of memory and passes its address to the rendering plug-in in subsequent calls to <code>IPrintOemUni::DevMode</code>.</p>
-</dd>
-<dt><a id="OEMDM_DEFAULT"></a><a id="oemdm_default"></a>OEMDM_DEFAULT</dt>
-<dd>
-<p>Indicates that the <code>IPrintOemUni::DevMode</code> method should fill the private DEVMODEW members with their default values. For this operation, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pOEMDMOut</b> and <b>cbBufSize</b> members contain the address and size of the area that has been allocated for storage of private DEVMODEW members. The method should write the private DEVMODEW default values into the buffer pointed to by the <b>pOEMDMOut</b> member, and return the number of bytes written by placing it in the <b>cbBufSize</b> member.</p>
-</dd>
-<dt><a id="OEMDM_CONVERT"></a><a id="oemdm_convert"></a>OEMDM_CONVERT</dt>
-<dd>
-<p>Indicates the <code>IPrintOemUni::DevMode</code> method should convert private DEVMODEW members to the current version, if necessary. (EMF spooling can occur over a network, and the system that spooled the EMF records might be running an older or newer version of the printer driver or user interface plug-in.) A private DEVMODEW section's version number is contained in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff559588">OEM_DMEXTRAHEADER</a> structure.</p>
-<p>The public and private members of the DEVMODEW structure to be converted are pointed to by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMIn</b> and <b>pOEMDMIn</b> members. The <code>IPrintOemUni::DevMode</code> method should place converted private members in the memory space described by the structure's <b>pOEMDMOut</b> and <b>cbBufSize</b> members, and it should return the count of written bytes by placing it in the structure's <b>cbBufSize</b> member. The value returned in <b>cbBufSize</b> cannot be larger than the value received.</p>
-</dd>
-<dt><a id="OEMDM_MERGE"></a><a id="oemdm_merge"></a>OEMDM_MERGE</dt>
-<dd>
-<p>Indicates that the <code>IPrintOemUni::DevMode</code> method should validate the information contained in private DEVMODEW members and merge validated values into a private DEVMODEW structure containing default values. For this constant, the method receives the following DEVMODEW contents:</p>
-<ul>
-<li>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMIn</b> and <b>pOEMDMIn</b> members point to the public and private members of the DEVMODEW structure to be validated.</p>
-</li>
-<li>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMOut</b> and <b>pOEMDMOut</b> members point to current default DEVMODEW values (obtained from property sheet contents).</p>
-</li>
-</ul>
-<p>The method should validate the contents of each private DEVMODEW member pointed to by <i>pOEMDMIn</i>. Each valid value should be copied to the output buffer pointed to by <i>pOEMDMOut</i>, overwriting the default. For invalid input values, the default output value should not be modified. (Finding invalid values is not considered an error, so the method should return S_OK.)</p>
-</dd>
-</dl><p>Indicates that the <code>IPrintOemUni::DevMode</code> method should return the size of the memory allocation needed to store the render plug-in's private DEVMODEW members. This constant is set the first time the method is called. The method should place the number of bytes needed in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>cbBufSize</b> member.</p>
-
-<p>The printer driver DLL allocates the specified amount of memory and passes its address to the rendering plug-in in subsequent calls to <code>IPrintOemUni::DevMode</code>.</p>
-
-<p>Indicates that the <code>IPrintOemUni::DevMode</code> method should fill the private DEVMODEW members with their default values. For this operation, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pOEMDMOut</b> and <b>cbBufSize</b> members contain the address and size of the area that has been allocated for storage of private DEVMODEW members. The method should write the private DEVMODEW default values into the buffer pointed to by the <b>pOEMDMOut</b> member, and return the number of bytes written by placing it in the <b>cbBufSize</b> member.</p>
-
-<p>Indicates the <code>IPrintOemUni::DevMode</code> method should convert private DEVMODEW members to the current version, if necessary. (EMF spooling can occur over a network, and the system that spooled the EMF records might be running an older or newer version of the printer driver or user interface plug-in.) A private DEVMODEW section's version number is contained in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff559588">OEM_DMEXTRAHEADER</a> structure.</p>
-
-<p>The public and private members of the DEVMODEW structure to be converted are pointed to by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMIn</b> and <b>pOEMDMIn</b> members. The <code>IPrintOemUni::DevMode</code> method should place converted private members in the memory space described by the structure's <b>pOEMDMOut</b> and <b>cbBufSize</b> members, and it should return the count of written bytes by placing it in the structure's <b>cbBufSize</b> member. The value returned in <b>cbBufSize</b> cannot be larger than the value received.</p>
+<p>The public and private members of the DEVMODEW structure to be converted are pointed to by the <a href="..\printoem\ns-printoem--oemdmparam.md">OEMDMPARAM</a> structure's <b>pPublicDMIn</b> and <b>pOEMDMIn</b> members. The <code>IPrintOemUni::DevMode</code> method should place converted private members in the memory space described by the structure's <b>pOEMDMOut</b> and <b>cbBufSize</b> members, and it should return the count of written bytes by placing it in the structure's <b>cbBufSize</b> member. The value returned in <b>cbBufSize</b> cannot be larger than the value received.</p>
 
 <p>Indicates that the <code>IPrintOemUni::DevMode</code> method should validate the information contained in private DEVMODEW members and merge validated values into a private DEVMODEW structure containing default values. For this constant, the method receives the following DEVMODEW contents:</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMIn</b> and <b>pOEMDMIn</b> members point to the public and private members of the DEVMODEW structure to be validated.</p>
+<p>The <a href="..\printoem\ns-printoem--oemdmparam.md">OEMDMPARAM</a> structure's <b>pPublicDMIn</b> and <b>pOEMDMIn</b> members point to the public and private members of the DEVMODEW structure to be validated.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure's <b>pPublicDMOut</b> and <b>pOEMDMOut</b> members point to current default DEVMODEW values (obtained from property sheet contents).</p>
+<p>The <a href="..\printoem\ns-printoem--oemdmparam.md">OEMDMPARAM</a> structure's <b>pPublicDMOut</b> and <b>pOEMDMOut</b> members point to current default DEVMODEW values (obtained from property sheet contents).</p>
 
 <p>The method should validate the contents of each private DEVMODEW member pointed to by <i>pOEMDMIn</i>. Each valid value should be copied to the output buffer pointed to by <i>pOEMDMOut</i>, overwriting the default. For invalid input values, the default output value should not be modified. (Finding invalid values is not considered an error, so the method should return S_OK.)</p>
 
@@ -210,7 +132,7 @@ STDMETHOD DevMode(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554167">IPrintOemUI::DevMode</a>
+<a href="print.iprintoemui_devmode">IPrintOemUI::DevMode</a>
 </dt>
 </dl>
 <p> </p>

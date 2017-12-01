@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The AddConnectionToSession_OUT structure holds output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> method.</p>
+<p>The AddConnectionToSession_OUT structure holds output data for the <a href="storage.addconnectiontosession">AddConnectionToSession</a> method.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ typedef struct _AddConnectionToSession_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>The status of the <b>AddConnectionToSession </b>operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.  </p>
+<p>The status of the <b>AddConnectionToSession </b>operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.  </p>
 </dd>
 
 ### -field <b>UniqueConnectionId</b>
@@ -88,16 +88,16 @@ typedef struct _AddConnectionToSession_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550122">AddConnectionToSession_IN</a>
+<a href="..\iscsiop\ns-iscsiop--addconnectiontosession-in.md">AddConnectionToSession_IN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
+<a href="storage.msiscsi_operations_wmi_class">MSiSCSI_Operations WMI Class</a>
 </dt>
 </dl>
 <p> </p>

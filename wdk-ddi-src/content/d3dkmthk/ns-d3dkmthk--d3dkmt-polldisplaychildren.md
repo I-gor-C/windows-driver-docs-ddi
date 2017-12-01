@@ -69,14 +69,14 @@ typedef struct _D3DKMT_POLLDISPLAYCHILDREN {
 ### -field <b>NonDestructiveOnly</b>
 
 <dd>
-<p>[in] A UINT value that specifies whether the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547077">D3DKMTPollDisplayChildren</a> function should be only nondestructive. A nonzero value indicates only a nondestructive call; a zero value indicates the call can be destructive (that is, the call can cause visual artifacts on the screen). </p>
+<p>[in] A UINT value that specifies whether the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpolldisplaychildren.md">D3DKMTPollDisplayChildren</a> function should be only nondestructive. A nonzero value indicates only a nondestructive call; a zero value indicates the call can be destructive (that is, the call can cause visual artifacts on the screen). </p>
 </dd>
 
 ### -field <b>SynchronousPolling</b>
 
 <dd>
 <p>Supported beginning with Windows 7 operating system.</p>
-<p>[in] A UINT value that specifies whether the connectivity status of all child devices is reported within 1 second of the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547077">D3DKMTPollDisplayChildren</a>. If set to a nonzero value, connectivity status is reported within 1 second. Otherwise, there is no time limit on when the display miniport can complete and report the polling.</p>
+<p>[in] A UINT value that specifies whether the connectivity status of all child devices is reported within 1 second of the call to <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpolldisplaychildren.md">D3DKMTPollDisplayChildren</a>. If set to a nonzero value, connectivity status is reported within 1 second. Otherwise, there is no time limit on when the display miniport can complete and report the polling.</p>
 <p>If the display miniport driver needs to poll child devices after receiving notice of an ACPI event, the runtime should set <b>SynchronousPolling</b> to a nonzero value.</p>
 </dd>
 
@@ -139,7 +139,7 @@ typedef struct _D3DKMT_POLLDISPLAYCHILDREN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547077">D3DKMTPollDisplayChildren</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpolldisplaychildren.md">D3DKMTPollDisplayChildren</a>
 </dt>
 <dt>
 <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a>

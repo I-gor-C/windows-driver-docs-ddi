@@ -62,7 +62,7 @@ typedef struct _DXGKARG_CREATEALLOCATION {
 ### -field <b>pPrivateDriverData</b>
 
 <dd>
-<p>[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. This member is typically used to provide data for a group of allocations. Note that this member is distinct from the <b>pPrivateDriverData</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a> structures in the array that <b>pAllocationInfo</b> specifies. You can set private data for this member in addition to private data for each allocation. </p>
+<p>[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. This member is typically used to provide data for a group of allocations. Note that this member is distinct from the <b>pPrivateDriverData</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a> structures in the array that <b>pAllocationInfo</b> specifies. You can set private data for this member in addition to private data for each allocation. </p>
 </dd>
 
 ### -field <b>PrivateDriverDataSize</b>
@@ -80,7 +80,7 @@ typedef struct _DXGKARG_CREATEALLOCATION {
 ### -field <b>pAllocationInfo</b>
 
 <dd>
-<p>[in/out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a> structures that describe the allocations to create.</p>
+<p>[in/out] An array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a> structures that describe the allocations to create.</p>
 </dd>
 
 ### -field <b>hResource</b>
@@ -92,7 +92,7 @@ typedef struct _DXGKARG_CREATEALLOCATION {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561023">DXGK_CREATEALLOCATIONFLAGS</a> structure that identifies how to create allocations. Setting all of the bit-field flags to 0 indicates that allocations belong to the device and not to a particular resource.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createallocationflags.md">DXGK_CREATEALLOCATIONFLAGS</a> structure that identifies how to create allocations. Setting all of the bit-field flags to 0 indicates that allocations belong to the device and not to a particular resource.</p>
 </dd>
 </dl>
 
@@ -124,10 +124,10 @@ typedef struct _DXGKARG_CREATEALLOCATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561023">DXGK_CREATEALLOCATIONFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createallocationflags.md">DXGK_CREATEALLOCATIONFLAGS</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>

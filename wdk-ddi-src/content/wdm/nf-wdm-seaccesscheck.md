@@ -7,7 +7,7 @@ old-location: kernel\seaccesscheck.htm
 old-project: kernel
 ms.assetid: 90726c66-738f-416f-993a-84cbf2eb67d2
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: SeAccessCheck
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ BOOLEAN SeAccessCheck(
 ### -param <i>SecurityDescriptor</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor protecting the object being accessed. </p>
+<p>Pointer to the <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor protecting the object being accessed. </p>
 </dd>
 
 ### -param <i>SubjectSecurityContext</i> [in]
@@ -98,13 +98,13 @@ BOOLEAN SeAccessCheck(
 ### -param <i>Privileges</i> [out]
 
 <dd>
-<p>Pointer to a caller-supplied variable to be set to the address of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551860">PRIVILEGE_SET</a> structure that will be used as part of the access validation, or this parameter can be <b>NULL</b>. The returned buffer, if any, must be released by the caller with <a href="https://msdn.microsoft.com/library/windows/hardware/ff556656">SeFreePrivileges</a>.</p>
+<p>Pointer to a caller-supplied variable to be set to the address of the <a href="..\wdm\ns-wdm--privilege-set.md">PRIVILEGE_SET</a> structure that will be used as part of the access validation, or this parameter can be <b>NULL</b>. The returned buffer, if any, must be released by the caller with <a href="..\ntifs\nf-ntifs-sefreeprivileges.md">SeFreePrivileges</a>.</p>
 </dd>
 
 ### -param <i>GenericMapping</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a> structure associated with this object type. This value specifies the specific access rights implied by each GENERIC_<i>XXX</i> access right.</p>
+<p>Pointer to the <a href="..\wdm\ns-wdm--generic-mapping.md">GENERIC_MAPPING</a> structure associated with this object type. This value specifies the specific access rights implied by each GENERIC_<i>XXX</i> access right.</p>
 </dd>
 
 ### -param <i>AccessMode</i> [in]
@@ -130,12 +130,6 @@ BOOLEAN SeAccessCheck(
 <p>If access is allowed, <b>SeAccessCheck</b> returns <b>TRUE</b>.</p>
 
 ## -remarks
-<p><b>SeAccessCheck</b> might perform privilege tests for <b>SeTakeOwnershipPrivilege</b> and <b>SeSecurityPrivilege</b>, depending on the accesses being requested. It might perform additional privilege testing in future releases of the operating system.</p>
-
-<p>This routine also might check whether the caller is the owner of the object in order to grant WRITE_DAC or READ_CONTROL access.</p>
-
-<p>If this routine returns <b>FALSE</b>, the caller should use the returned <i>AccessStatus</i> as its return value. That is, the caller should avoid hardcoding a return value of STATUS_ACCESS_DENIED or any other specific STATUS_<i>XXX</i> value. </p>
-
 <p><b>SeAccessCheck</b> might perform privilege tests for <b>SeTakeOwnershipPrivilege</b> and <b>SeSecurityPrivilege</b>, depending on the accesses being requested. It might perform additional privilege testing in future releases of the operating system.</p>
 
 <p>This routine also might check whether the caller is the owner of the object in order to grant WRITE_DAC or READ_CONTROL access.</p>
@@ -205,7 +199,7 @@ BOOLEAN SeAccessCheck(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -213,25 +207,25 @@ BOOLEAN SeAccessCheck(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556656">SeFreePrivileges</a>
+<a href="..\ntifs\nf-ntifs-sefreeprivileges.md">SeFreePrivileges</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549231">IoGetFileObjectGenericMapping</a>
+<a href="..\ntddk\nf-ntddk-iogetfileobjectgenericmapping.md">IoGetFileObjectGenericMapping</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563793">SeValidSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-sevalidsecuritydescriptor.md">SeValidSecurityDescriptor</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a>
+<a href="..\wdm\ns-wdm--generic-mapping.md">GENERIC_MAPPING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551860">PRIVILEGE_SET</a>
+<a href="..\wdm\ns-wdm--privilege-set.md">PRIVILEGE_SET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a>
@@ -239,4 +233,4 @@ BOOLEAN SeAccessCheck(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SeAccessCheck routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SeAccessCheck routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

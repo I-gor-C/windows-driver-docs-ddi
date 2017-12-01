@@ -7,7 +7,7 @@ old-location: stream\ksevents_locktype.htm
 old-project: stream
 ms.assetid: 775d08ad-40c2-44b7-af02-6c182301e46f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

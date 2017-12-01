@@ -7,7 +7,7 @@ old-location: kernel\device_description.htm
 old-project: kernel
 ms.assetid: 7f0c7d72-9fe6-4cc1-8028-fd64cdee5d85
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: DEVICE_DESCRIPTION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -77,7 +77,7 @@ typedef struct _DEVICE_DESCRIPTION {
 ### -field <b>Version</b>
 
 <dd>
-<p>The version of this structure. The <b>Version</b> member of the <b>DEVICE_DESCRIPTION</b> structure that is passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> routine determines which version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544062">DMA_ADAPTER</a> structure is returned by this routine. The following is a list of the possible values of the <b>Version</b> member and the corresponding <b>DMA_ADAPTER</b> versions:</p>
+<p>The version of this structure. The <b>Version</b> member of the <b>DEVICE_DESCRIPTION</b> structure that is passed to the <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> routine determines which version of the <a href="..\ntddk\ns-ntddk--dma-adapter.md">DMA_ADAPTER</a> structure is returned by this routine. The following is a list of the possible values of the <b>Version</b> member and the corresponding <b>DMA_ADAPTER</b> versions:</p>
 <dl class="indent">
 
 ### -field <a id="DEVICE_DESCRIPTION_VERSION"></a><a id="device_description_version"></a><p><a id="DEVICE_DESCRIPTION_VERSION"></a><a id="device_description_version"></a><b>DEVICE_DESCRIPTION_VERSION</b></p>
@@ -184,7 +184,7 @@ typedef struct _DEVICE_DESCRIPTION {
 ### -field <b>InterfaceType</b>
 
 <dd>
-<p>The interface type of the I/O bus to use for DMA. Set this member to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547839">INTERFACE_TYPE</a> enumeration value that indicates the interface type. For more information, see the Remarks section.</p>
+<p>The interface type of the I/O bus to use for DMA. Set this member to the <a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a> enumeration value that indicates the interface type. For more information, see the Remarks section.</p>
 </dd>
 
 ### -field <b>DmaWidth</b>
@@ -247,13 +247,13 @@ typedef struct _DEVICE_DESCRIPTION {
 </dl>
 
 ## -remarks
-<p>The driver of a device that uses DMA to transfer data uses the <b>DEVICE_DESCRIPTION</b> structure to pass information about the device to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> routine. The driver calls this routine to request an adapter object for a physical device object (PDO). This PDO represents the device's physical connection to the I/O bus to use for DMA. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546535">Getting an Adapter Object</a>.</p>
+<p>The driver of a device that uses DMA to transfer data uses the <b>DEVICE_DESCRIPTION</b> structure to pass information about the device to the <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> routine. The driver calls this routine to request an adapter object for a physical device object (PDO). This PDO represents the device's physical connection to the I/O bus to use for DMA. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546535">Getting an Adapter Object</a>.</p>
 
 <p>To allocate resources for a DMA controller, the I/O manager needs information about the controller but can obtain some of this information only from a driver. For example, the driver for a bus-master device knows whether the device supports scatter/gather DMA or uses full 32-bit addresses. Or, the driver for a subordinate device can determine the DMA channel number from the resource list that the driver receives in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request that starts the device. The driver uses the <b>DEVICE_DESCRIPTION</b> structure to pass this information to the I/O manager.</p>
 
 <p>Before calling <b>IoGetDmaAdapter</b>, the driver should first zero-initialize the entire <b>DEVICE_DESCRIPTION</b> structure, then fill in selected members to describe the device.</p>
 
-<p>The <b>InterfaceType</b> member specifies the type of bus interface that will be used for DMA. If you set <b>InterfaceType</b> to <b>InterfaceTypeUndefined</b>, <b>IoGetDmaAdapter</b> queries the PDO to determine the correct interface type for your device. Or, you can specify an explicit interface type, such as <b>Internal</b>, <b>Isa</b>, <b>Eisa</b>, or <b>PCIBus</b>. For more information, see the list of supported interface types in <a href="https://msdn.microsoft.com/library/windows/hardware/ff547839">INTERFACE_TYPE</a>.</p>
+<p>The <b>InterfaceType</b> member specifies the type of bus interface that will be used for DMA. If you set <b>InterfaceType</b> to <b>InterfaceTypeUndefined</b>, <b>IoGetDmaAdapter</b> queries the PDO to determine the correct interface type for your device. Or, you can specify an explicit interface type, such as <b>Internal</b>, <b>Isa</b>, <b>Eisa</b>, or <b>PCIBus</b>. For more information, see the list of supported interface types in <a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a>.</p>
 
 <p>If the <b>ScatterGather</b> member is set to <b>TRUE</b> and the <b>InterfaceType</b> member is set to <b>PCIBus</b>, the <b>Dma32BitAddresses</b> member is ignored and <b>IoGetDmaAdapter</b> assumes that the device supports 32-bit DMA addresses.</p>
 
@@ -291,16 +291,16 @@ typedef struct _DEVICE_DESCRIPTION {
 <a href="..\wdm\ns-wdm--cm-partial-resource-descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541994">CM_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544062">DMA_ADAPTER</a>
+<a href="..\ntddk\ns-ntddk--dma-adapter.md">DMA_ADAPTER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547839">INTERFACE_TYPE</a>
+<a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+<a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
@@ -308,4 +308,4 @@ typedef struct _DEVICE_DESCRIPTION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DEVICE_DESCRIPTION structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DEVICE_DESCRIPTION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

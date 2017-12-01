@@ -7,7 +7,7 @@ old-location: stream\ksproperty_service.htm
 old-project: stream
 ms.assetid: 771027AA-E64D-4AC8-9C52-D1F96A761FAD
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSTOPOLOGY, KSTOPOLOGY, *PKSTOPOLOGY
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -72,7 +72,7 @@ NTSTATUS FsRtlChangeBackingFileObject(
 ### -param <i>ChangeBackingType</i> [in]
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff547341">FSRTL_CHANGE_BACKING_TYPE</a> enumeration value that indicates which internal memory area the new file object will designate.</p>
+<p>An <a href="..\ntifs\ne-ntifs--fsrtl-change-backing-type.md">FSRTL_CHANGE_BACKING_TYPE</a> enumeration value that indicates which internal memory area the new file object will designate.</p>
 </dd>
 
 ### -param <i>Flags</i> [in]
@@ -91,25 +91,11 @@ NTSTATUS FsRtlChangeBackingFileObject(
 <dt><b>STATUS_INVALID_PARAMETER_4</b></dt>
 </dl><p>The change operation failed because the caller specified an invalid value in <i>Flags</i>.</p><dl>
 <dt><b>STATUS_NOT_SUPPORT</b></dt>
-</dl><p>The change operation failed because the caller obtained the file object in a way that does not allow subsequent swapping of the file object. For example, if the caller obtained the file object with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539104">CcGetFileObjectFromSectionPtrs</a>, it is not safe to swap the file object.</p>
+</dl><p>The change operation failed because the caller obtained the file object in a way that does not allow subsequent swapping of the file object. For example, if the caller obtained the file object with a call to <a href="..\ntifs\nf-ntifs-ccgetfileobjectfromsectionptrs.md">CcGetFileObjectFromSectionPtrs</a>, it is not safe to swap the file object.</p>
 
 <p> </p>
 
 ## -remarks
-<p>The <b>FsRtlChangeBackingFileObject</b> routine changes the file object for one of the following:</p>
-
-<p>One of the memory manager's image control areas for the stream</p>
-
-<p>The memory manager's data control area for the stream</p>
-
-<p>The cache manager's shared cache map for the stream</p>
-
-<p>The <b>FsRtlChangeBackingFileObject</b> routine is not synchronous. It processes the request for a change of file object and returns immediately. The cache manager and the memory manager synchronize the change of the file object and will not free the old file object until all incomplete operations that are associated with the old file object have finished. A return status of STATUS_SUCCESS from <b>FsRtlChangeBackingFileObject</b> does not mean that the operating system has already changed the file object.</p>
-
-<p>However, after <b>FsRtlChangeBackingFileObject</b> runs successfully, the operating system associates all future operations with the new file object.</p>
-
-<p>To change the file object for more than one backing type, the caller must call <b>FsRtlChangeBackingFileObject</b> multiple times, one time for each backing type to change.</p>
-
 <p>The <b>FsRtlChangeBackingFileObject</b> routine changes the file object for one of the following:</p>
 
 <p>One of the memory manager's image control areas for the stream</p>
@@ -187,7 +173,7 @@ NTSTATUS FsRtlChangeBackingFileObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547341">FSRTL_CHANGE_BACKING_TYPE</a>
+<a href="..\ntifs\ne-ntifs--fsrtl-change-backing-type.md">FSRTL_CHANGE_BACKING_TYPE</a>
 </dt>
 </dl>
 <p> </p>

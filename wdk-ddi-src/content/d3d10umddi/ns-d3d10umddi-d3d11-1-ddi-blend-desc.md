@@ -71,7 +71,7 @@ typedef struct D3D11_1_DDI_BLEND_DESC {
 ### -field <b>RenderTarget</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451056">D3D11_1_DDI_RENDER_TARGET_BLEND_DESC</a> structures that indicate the blend state for each associated render target.</p>
+<p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1-ddi-render-target-blend-desc.md">D3D11_1_DDI_RENDER_TARGET_BLEND_DESC</a> structures that indicate the blend state for each associated render target.</p>
 </dd>
 </dl>
 
@@ -117,7 +117,7 @@ typedef struct D3D11_1_DDI_BLEND_DESC {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createblendstate.md">CreateBlendState(D3D11_1)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451056">D3D11_1_DDI_RENDER_TARGET_BLEND_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1-ddi-render-target-blend-desc.md">D3D11_1_DDI_RENDER_TARGET_BLEND_DESC</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: stream\camstartcaptureex.htm
 old-project: stream
 ms.assetid: ab2222ed-3166-4984-b76c-5499879f91d5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: USBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR, *PUSBC_FUNCTION_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,10 +83,6 @@ NTSTATUS CamStartCaptureEx(
 <p><b>CamStartCaptureEx</b> returns STATUS_SUCCESS or an appropriate error code. This return value is the completion code for the read IRP.</p>
 
 ## -remarks
-<p>The original USBCAMD does not call <b>CamStartCaptureEx</b>.</p>
-
-<p>This function is required.</p>
-
 <p>The original USBCAMD does not call <b>CamStartCaptureEx</b>.</p>
 
 <p>This function is required.</p>

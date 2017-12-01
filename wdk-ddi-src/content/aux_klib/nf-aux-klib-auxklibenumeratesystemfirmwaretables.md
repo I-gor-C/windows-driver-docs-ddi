@@ -7,7 +7,7 @@ old-location: kernel\auxklibenumeratesystemfirmwaretables.htm
 old-project: kernel
 ms.assetid: EEAB636B-5565-4C2A-9EC7-4DC63EBB286F
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: AuxKlibEnumerateSystemFirmwareTables
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -131,27 +131,11 @@ NTSTATUS AuxKlibEnumerateSystemFirmwareTables(
 
 <p>The ACPI table provider ('ACPI') returns a list of DWORD table identifiers. Each identifier returned corresponds to <b>Signature</b> field of the <b>DESCRIPTION_HEADER</b> structure for an ACPI table currently in the ACPI namespace of the system. For more information about this structure, see the Advanced Configuration and Power Interface Specification at the <a href="http://go.microsoft.com/fwlink/p/?linkid=57185">Advanced Configuration and Power Interface</a> website.</p>
 
-<p>For ACPI, if the system firmware contains multiple tables with the same name, <b>AuxKlibEnumerateSystemFirmwareTables</b> enumerates them all. However, <a href="https://msdn.microsoft.com/library/windows/hardware/jj151549">AuxKlibGetSystemFirmwareTable</a> retrieves only the first table in the list that has this name.</p>
+<p>For ACPI, if the system firmware contains multiple tables with the same name, <b>AuxKlibEnumerateSystemFirmwareTables</b> enumerates them all. However, <a href="..\aux_klib\nf-aux-klib-auxklibgetsystemfirmwaretable.md">AuxKlibGetSystemFirmwareTable</a> retrieves only the first table in the list that has this name.</p>
 
 <p><b>AuxKlibEnumerateSystemFirmwareTables</b> is the kernel-mode equivalent of the Win32 <a href="https://msdn.microsoft.com/library/windows/hardware/hh802466">EnumSystemFirmwareTables</a> function.</p>
 
-<p>Drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff540636">AuxKlibInitialize</a> before calling <b>AuxKlibEnumerateSystemFirmwareTable</b>.</p>
-
-<p><b>AuxKlibEnumerateSystemFirmwareTables</b> is defined in the Aux_klib.h header file that is included in the WDK for Windows 8 and later versions of Windows. To use this routine, drivers should link to the version of Aux_klib.lib that is included in the WDK for Windows 8 and later versions of Windows. The implementation of <b>AuxKlibEnumerateSystemFirmwareTables</b> in these versions of the WDK can be used in versions of Windows starting with Windows Vista.</p>
-
-<p>If the call is successful, this routine writes an array of one or more table identifiers to the buffer pointed to by the <i>FirmwareTableBuffer</i> parameter. Each element of this array is a DWORD value that identifies a firmware table that is available from the provider specified by the <i>FirmwareTableProviderSignature</i> parameter.</p>
-
-<p>The raw SMBIOS table provider ('RSMB') currently returns a single table identifier, 0x00000000. This corresponds to the raw SMBIOS firmware table.</p>
-
-<p>The raw firmware table provider ('FIRM') retrieves a list of DWORD table identifiers. Each identifier corresponds to the beginning of a physical address range. Currently, this provider returns two identifiers, 0x000C0000 and 0x000E0000. These identifiers represent physical memory from 0x000C0000 to 0x000DFFFF and from 0x000E0000 to 0x000FFFFF, respectively.</p>
-
-<p>The ACPI table provider ('ACPI') returns a list of DWORD table identifiers. Each identifier returned corresponds to <b>Signature</b> field of the <b>DESCRIPTION_HEADER</b> structure for an ACPI table currently in the ACPI namespace of the system. For more information about this structure, see the Advanced Configuration and Power Interface Specification at the <a href="http://go.microsoft.com/fwlink/p/?linkid=57185">Advanced Configuration and Power Interface</a> website.</p>
-
-<p>For ACPI, if the system firmware contains multiple tables with the same name, <b>AuxKlibEnumerateSystemFirmwareTables</b> enumerates them all. However, <a href="https://msdn.microsoft.com/library/windows/hardware/jj151549">AuxKlibGetSystemFirmwareTable</a> retrieves only the first table in the list that has this name.</p>
-
-<p><b>AuxKlibEnumerateSystemFirmwareTables</b> is the kernel-mode equivalent of the Win32 <a href="https://msdn.microsoft.com/library/windows/hardware/hh802466">EnumSystemFirmwareTables</a> function.</p>
-
-<p>Drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff540636">AuxKlibInitialize</a> before calling <b>AuxKlibEnumerateSystemFirmwareTable</b>.</p>
+<p>Drivers must call <a href="..\aux_klib\nf-aux-klib-auxklibinitialize.md">AuxKlibInitialize</a> before calling <b>AuxKlibEnumerateSystemFirmwareTable</b>.</p>
 
 <p><b>AuxKlibEnumerateSystemFirmwareTables</b> is defined in the Aux_klib.h header file that is included in the WDK for Windows 8 and later versions of Windows. To use this routine, drivers should link to the version of Aux_klib.lib that is included in the WDK for Windows 8 and later versions of Windows. The implementation of <b>AuxKlibEnumerateSystemFirmwareTables</b> in these versions of the WDK can be used in versions of Windows starting with Windows Vista.</p>
 
@@ -208,10 +192,10 @@ NTSTATUS AuxKlibEnumerateSystemFirmwareTables(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151549">AuxKlibGetSystemFirmwareTable</a>
+<a href="..\aux_klib\nf-aux-klib-auxklibgetsystemfirmwaretable.md">AuxKlibGetSystemFirmwareTable</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540636">AuxKlibInitialize</a>
+<a href="..\aux_klib\nf-aux-klib-auxklibinitialize.md">AuxKlibInitialize</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh802466">EnumSystemFirmwareTables</a>
@@ -219,4 +203,4 @@ NTSTATUS AuxKlibEnumerateSystemFirmwareTables(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20AuxKlibEnumerateSystemFirmwareTables routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20AuxKlibEnumerateSystemFirmwareTables routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: kernel\rtlconvertlongtolargeinteger.htm
 old-project: kernel
 ms.assetid: 8c1f6cd3-f54b-4104-bd14-63d2c284946c
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlConvertLongToLargeInteger
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,8 +66,6 @@ LARGE_INTEGER RtlConvertLongToLargeInteger(
 <p><b>RtlConvertLongToLargeInteger</b> returns the large integer result.</p>
 
 ## -remarks
-<p>This routine is not supported in Windows XP. Use native support for <b>__int64</b> instead. </p>
-
 <p>This routine is not supported in Windows XP. Use native support for <b>__int64</b> instead. </p>
 
 ## -requirements

@@ -104,7 +104,7 @@ typedef enum _DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451245">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-present-displayonly-progress.md">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
 </dt>
 </dl>
 <p> </p>

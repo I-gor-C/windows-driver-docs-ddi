@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_wake_reason.htm
 old-project: netvista
 ms.assetid: 9caed664-6367-4eb0-9c9f-551f8a5938bc
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_PM_WAKE_REASON, NDIS_PM_WAKE_REASON, *PNDIS_PM_WAKE_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ typedef struct _NDIS_PM_WAKE_REASON {
 ### -field <b>Header</b>
 
 <dd>
-<p>The type, revision, and size of the <b>NDIS_PM_WAKE_REASON</b> structure. This member is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.</p>
+<p>The type, revision, and size of the <b>NDIS_PM_WAKE_REASON</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
 <p>The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_PM_WAKE_REASON</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: </p>
 <p></p>
 <dl>
@@ -89,7 +89,7 @@ typedef struct _NDIS_PM_WAKE_REASON {
 ### -field <b>WakeReason</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/hh451607">NDIS_PM_WAKE_REASON_TYPE</a> enumeration value that specifies the reason why the network adapter generated the wake-up event.</p>
+<p>An <a href="..\ntddndis\ne-ntddndis--ndis-pm-wake-reason-type.md">NDIS_PM_WAKE_REASON_TYPE</a> enumeration value that specifies the reason why the network adapter generated the wake-up event.</p>
 </dd>
 
 ### -field <b>InfoBufferOffset</b>
@@ -142,12 +142,12 @@ typedef struct _NDIS_PM_WAKE_REASON {
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451607">NDIS_PM_WAKE_REASON_TYPE</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-pm-wake-reason-type.md">NDIS_PM_WAKE_REASON_TYPE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WAKE_REASON structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WAKE_REASON structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

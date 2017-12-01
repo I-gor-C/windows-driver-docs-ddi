@@ -109,13 +109,13 @@ typedef struct _STORAGE_HW_FIRMWARE_DOWNLOAD {
 ### -field <b>Offset</b>
 
 <dd>
-<p>The offset in this buffer of where the Image file begins. This should be aligned to ImagePayloadAlignment from <a href="https://msdn.microsoft.com/library/windows/hardware/dn931810">STORAGE_HW_FIRMWARE_INFO</a>.</p>
+<p>The offset in this buffer of where the Image file begins. This should be aligned to ImagePayloadAlignment from <a href="..\ntddstor\ns-ntddstor--storage-hw-firmware-info.md">STORAGE_HW_FIRMWARE_INFO</a>.</p>
 </dd>
 
 ### -field <b>BufferSize</b>
 
 <dd>
-<p>The buffer size of the ImageBuffer. This should be a multiple of ImagePayloadAlignment from <a href="https://msdn.microsoft.com/library/windows/hardware/dn931810">STORAGE_HW_FIRMWARE_INFO</a>.</p>
+<p>The buffer size of the ImageBuffer. This should be a multiple of ImagePayloadAlignment from <a href="..\ntddstor\ns-ntddstor--storage-hw-firmware-info.md">STORAGE_HW_FIRMWARE_INFO</a>.</p>
 </dd>
 
 ### -field <b>ImageBuffer</b>

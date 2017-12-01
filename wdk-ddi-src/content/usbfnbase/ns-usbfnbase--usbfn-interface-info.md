@@ -67,7 +67,7 @@ typedef struct _USBFN_INTERFACE_INFO {
 ### -field <b>Speed</b>
 
 <dd>
-<p>The operating bus speed indicated by <a href="https://msdn.microsoft.com/library/windows/hardware/mt187987">USBFN_BUS_SPEED</a>-typed flags.</p>
+<p>The operating bus speed indicated by <a href="buses.usbfn_bus_speed">USBFN_BUS_SPEED</a>-typed flags.</p>
 </dd>
 
 ### -field <b> Size</b>
@@ -103,7 +103,7 @@ typedef struct _USBFN_INTERFACE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187987">USBFN_BUS_SPEED</a>
+<a href="buses.usbfn_bus_speed">USBFN_BUS_SPEED</a>
 </dt>
 </dl>
 <p> </p>

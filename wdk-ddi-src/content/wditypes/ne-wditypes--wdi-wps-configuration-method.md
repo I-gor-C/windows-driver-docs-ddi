@@ -7,7 +7,7 @@ old-location: netvista\wdi_wps_configuration_method.htm
 old-project: netvista
 ms.assetid: 116B19BD-959F-4711-B3FB-9880539B7849
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

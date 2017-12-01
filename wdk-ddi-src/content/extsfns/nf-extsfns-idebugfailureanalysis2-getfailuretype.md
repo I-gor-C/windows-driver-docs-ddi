@@ -7,7 +7,7 @@ old-location: debugger\idebugfailureanalysis2_getfailuretype.htm
 old-project: debugger
 ms.assetid: 3BE85B65-DAE0-41E7-AB24-B5E8E7073E1A
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugFailureAnalysis2, GetFailureType, IDebugFailureAnalysis2::GetFailureType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,11 +53,11 @@ DEBUG_FAILURE_TYPE GetFailureType();
 
 
 ## -returns
-<p>This method returns a value in the <a href="https://msdn.microsoft.com/library/windows/hardware/jj983402">DEBUG_FAILURE_TYPE</a> enumeration.</p>
+<p>This method returns a value in the <a href="..\extsfns\ne-extsfns--debug-failure-type.md">DEBUG_FAILURE_TYPE</a> enumeration.</p>
 
-<p>This method returns a value in the <a href="https://msdn.microsoft.com/library/windows/hardware/jj983402">DEBUG_FAILURE_TYPE</a> enumeration.</p>
+<p>This method returns a value in the <a href="..\extsfns\ne-extsfns--debug-failure-type.md">DEBUG_FAILURE_TYPE</a> enumeration.</p>
 
-<p>This method returns a value in the <a href="https://msdn.microsoft.com/library/windows/hardware/jj983402">DEBUG_FAILURE_TYPE</a> enumeration.</p>
+<p>This method returns a value in the <a href="..\extsfns\ne-extsfns--debug-failure-type.md">DEBUG_FAILURE_TYPE</a> enumeration.</p>
 
 ## -remarks
 
@@ -89,19 +89,19 @@ DEBUG_FAILURE_TYPE GetFailureType();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983405">IDebugFailureAnalysis2</a>
+<a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983432">_EFN_Analyze</a>
+<a href="debugger._efn_analyze">_EFN_Analyze</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983415">GetFailureClass</a>
+<a href="debugger.idebugfailureanalysis2_getfailureclass">GetFailureClass</a>
 </dt>
 <dt><b>GetFailureClass</b></dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2::GetFailureType method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2::GetFailureType method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

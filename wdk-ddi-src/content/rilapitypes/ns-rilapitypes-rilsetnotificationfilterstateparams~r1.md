@@ -7,7 +7,7 @@ old-location: netvista\rilsetnotificationfilterstateparams_2.htm
 old-project: netvista
 ms.assetid: 87dc2ef3-047c-4255-832c-508b378ca412
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSETNOTIFICATIONFILTERSTATEPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

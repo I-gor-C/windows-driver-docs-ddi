@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GETVERSIONINPARAMS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566202">SMART_GET_VERSION</a> request to retrieve version information, a capabilities mask, and a bitmask for the indicated device. </p>
+<p>The GETVERSIONINPARAMS structure is used in conjunction with the <a href="storage.smart_get_version">SMART_GET_VERSION</a> request to retrieve version information, a capabilities mask, and a bitmask for the indicated device. </p>
 
 
 ## -syntax
@@ -218,7 +218,7 @@ typedef struct _GETVERSIONINPARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566202">SMART_GET_VERSION</a>
+<a href="storage.smart_get_version">SMART_GET_VERSION</a>
 </dt>
 </dl>
 <p> </p>

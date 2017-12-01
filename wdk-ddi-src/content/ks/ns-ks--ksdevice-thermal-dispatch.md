@@ -7,7 +7,7 @@ old-location: stream\ksdevice_thermal_dispatch.htm
 old-project: stream
 ms.assetid: 6E4ADD86-EFC4-4369-83A1-1D2824235310
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH, *PKSDEVICE_THERMAL_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,7 +82,7 @@ void
 
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> object representing the device managed by KS.</p>
+<p>[in] A <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> object representing the device managed by KS.</p>
 </dd>
 
 ### -field <a id="Engaged"></a><a id="engaged"></a><a id="ENGAGED"></a><p><a id="Engaged"></a><a id="engaged"></a><a id="ENGAGED"></a><b><i>Engaged</i></b></p>
@@ -96,7 +96,7 @@ void
 
 
 <dd>
-<p>[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/hh698235">ActiveCooling</a> routine.</p>
+<p>[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the <a href="..\poclass\nc-poclass-device-active-cooling.md">ActiveCooling</a> routine.</p>
 </dd>
 </dl>
 </dd>
@@ -128,7 +128,7 @@ void
 
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> object representing the device managed by KS.</p>
+<p>[in] A <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> object representing the device managed by KS.</p>
 </dd>
 
 ### -field <a id="Percentage"></a><a id="percentage"></a><a id="PERCENTAGE"></a><p><a id="Percentage"></a><a id="percentage"></a><a id="PERCENTAGE"></a><b><i>Percentage</i></b></p>
@@ -142,7 +142,7 @@ void
 
 
 <dd>
-<p>[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh698270">PassiveCooling</a> routine.</p>
+<p>[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the  <a href="..\poclass\nc-poclass-device-passive-cooling.md">PassiveCooling</a> routine.</p>
 </dd>
 </dl>
 </dd>

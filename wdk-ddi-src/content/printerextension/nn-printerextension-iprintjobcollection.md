@@ -49,14 +49,14 @@ req.product: Windows 10 or later.
 
 <p>The <b>IPrintJobCollection</b> interface has these methods.</p>
 
-<p>Gets a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a> object.</p>
+<p>Gets a pointer to an <a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a> object.</p>
 
 <p> </p>
 
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintJobCollection</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406342">Count</a>
+<a href="print.iprintjobcollection_count">Count</a>
 </p>
 
 <p>Read-only</p>
@@ -64,7 +64,7 @@ req.product: Windows 10 or later.
 <p>Gets the number of jobs in the print queue.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973226">NewEnum</a>
+<a href="print.iprintjobcollection_newenum">NewEnum</a>
 </p>
 
 <p>Read-only</p>
@@ -81,13 +81,13 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406567">GetAt</a>
+<a href="print.iprintjobcollection_getat">GetAt</a>
 </td>
 <td align="left" width="63%">
-<p>Gets a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a> object.</p>
+<p>Gets a pointer to an <a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a> object.</p>
 </td>
 </tr>
-</table><p>Gets a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a> object.</p>
+</table><p>Gets a pointer to an <a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a> object.</p>
 
 <p> </p>
 
@@ -100,7 +100,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406342">Count</a>
+<a href="print.iprintjobcollection_count">Count</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -113,7 +113,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973226">NewEnum</a>
+<a href="print.iprintjobcollection_newenum">NewEnum</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -124,7 +124,7 @@ req.product: Windows 10 or later.
 </td>
 </tr>
 </table><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406342">Count</a>
+<a href="print.iprintjobcollection_count">Count</a>
 </p>
 
 <p>Read-only</p>
@@ -132,7 +132,7 @@ req.product: Windows 10 or later.
 <p>Gets the number of jobs in the print queue.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973226">NewEnum</a>
+<a href="print.iprintjobcollection_newenum">NewEnum</a>
 </p>
 
 <p>Read-only</p>
@@ -142,10 +142,6 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>The order of print jobs in the enumerated list is the same as the order provided by <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd162625(v=vs.85).aspx">EnumJobs</a>, which is the actual print queue order.</p>
-
-<p><b>IPrintJobCollection</b> also helps to make it possible to perform job management from a UWP device app or from a printer extension. For more information, see <a href="NULL">Job Management</a>.</p>
-
 <p>The order of print jobs in the enumerated list is the same as the order provided by <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd162625(v=vs.85).aspx">EnumJobs</a>, which is the actual print queue order.</p>
 
 <p><b>IPrintJobCollection</b> also helps to make it possible to perform job management from a UWP device app or from a printer extension. For more information, see <a href="NULL">Job Management</a>.</p>

@@ -162,37 +162,37 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnCheckVideoDecoderFormat</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451615">CheckVideoDecoderFormat</a> function.</p>
+<p>The entry point for the driver's <a href="display.checkvideodecoderformat">CheckVideoDecoderFormat</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetVideoDecoderConfigCount</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451665">GetVideoDecoderConfig</a> function.</p>
+<p>The entry point for the driver's <a href="display.getvideodecoderconfigcount">GetVideoDecoderConfig</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetVideoDecoderConfig</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451665">GetVideoDecoderConfig</a> function.</p>
+<p>The entry point for the driver's <a href="display.getvideodecoderconfig">GetVideoDecoderConfig</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetVideoDecoderBufferTypeCount</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451663">GetVideoDecoderBufferTypeCount</a> function.</p>
+<p>The entry point for the driver's <a href="display.getvideodecoderbuffertypecount">GetVideoDecoderBufferTypeCount</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetVideoDecoderBufferInfo</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451661">GetVideoDecoderBufferInfo</a> function.</p>
+<p>The entry point for the driver's <a href="display.getvideodecoderbufferinfo">GetVideoDecoderBufferInfo</a> function.</p>
 </dd>
 
 ### -field <b>pfnCalcPrivateVideoDecoderSize</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451610">CalcPrivateVideoDecoderSize</a> function.</p>
+<p>The entry point for the driver's <a href="display.calcprivatevideodecodersize">CalcPrivateVideoDecoderSize</a> function.</p>
 </dd>
 
 ### -field <b>pfnCreateVideoDecoder</b>
@@ -204,37 +204,37 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnDestroyVideoDecoder</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451634">DestroyVideoDecoder</a> function.</p>
+<p>The entry point for the driver's <a href="display.destroyvideodecoder">DestroyVideoDecoder</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoDecoderExtension</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451699">VideoDecoderExtension</a> function.</p>
+<p>The entry point for the driver's <a href="display.videodecoderextension">VideoDecoderExtension</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoDecoderBeginFrame</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451697">VideoDecoderBeginFrame</a> function.</p>
+<p>The entry point for the driver's <a href="display.videodecoderbeginframe">VideoDecoderBeginFrame</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoDecoderEndFrame</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451698">VideoDecoderEndFrame</a> function.</p>
+<p>The entry point for the driver's <a href="display.videodecoderendframe">VideoDecoderEndFrame</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoDecoderSubmitBuffers</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451701">VideoDecoderSubmitBuffers</a> function.</p>
+<p>The entry point for the driver's <a href="display.videodecodersubmitbuffers">VideoDecoderSubmitBuffers</a> function.</p>
 </dd>
 
 ### -field <b>pfnCalcPrivateVideoProcessorEnumSize</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451611">CalcPrivateVideoProcessorEnumSize</a> function.</p>
+<p>The entry point for the driver's <a href="display.calcprivatevideoprocessorenumsize">CalcPrivateVideoProcessorEnumSize</a> function.</p>
 </dd>
 
 ### -field <b>pfnCreateVideoProcessorEnum</b>
@@ -246,43 +246,43 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnDestroyVideoProcessorEnum</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451639">DestroyVideoProcessorEnum</a> function.</p>
+<p>The entry point for the driver's <a href="display.destroyvideoprocessorenum">DestroyVideoProcessorEnum</a> function.</p>
 </dd>
 
 ### -field <b>pfnCheckVideoProcessorFormat</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451616">CheckVideoProcessorFormat</a> function.</p>
+<p>The entry point for the driver's <a href="display.checkvideoprocessorformat">CheckVideoProcessorFormat</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetVideoProcessorCaps</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451674">GetVideoProcessorCaps</a> function.</p>
+<p>The entry point for the driver's <a href="display.getvideoprocessorcaps">GetVideoProcessorCaps</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetVideoProcessorRateConversionCaps</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451690">GetVideoProcessorRateConversionCaps</a> function.</p>
+<p>The entry point for the driver's <a href="display.getvideoprocessorrateconversioncaps">GetVideoProcessorRateConversionCaps</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetVideoProcessorCustomRate</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451676">GetVideoProcessorCustomRate</a> function.</p>
+<p>The entry point for the driver's <a href="display.getvideoprocessorcustomrate">GetVideoProcessorCustomRate</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetVideoProcessorFilterRange</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451689">GetVideoProcessorFilterRange</a> function.</p>
+<p>The entry point for the driver's <a href="display.getvideoprocessorfilterrange">GetVideoProcessorFilterRange</a> function.</p>
 </dd>
 
 ### -field <b>pfnCalcPrivateVideoProcessorSize</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451614">CalcPrivateVideoProcessorSize</a> function.</p>
+<p>The entry point for the driver's <a href="display.calcprivatevideoprocessorsize">CalcPrivateVideoProcessorSize</a> function.</p>
 </dd>
 
 ### -field <b>pfnCreateVideoProcessor</b>
@@ -294,151 +294,151 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnDestroyVideoProcessor</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451638">DestroyVideoProcessor</a> function.</p>
+<p>The entry point for the driver's <a href="display.destroyvideoprocessor1">DestroyVideoProcessor</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetOutputTargetRect</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439790">VideoProcessorSetOutputTargetRect</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetoutputtargetrect">VideoProcessorSetOutputTargetRect</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetOutputBackgroundColor</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/dn459003">VideoProcessorSetOutputBackgroundColor</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetoutputbackgroundcolor">VideoProcessorSetOutputBackgroundColor</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetOutputColorSpace</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439782">VideoProcessorSetOutputColorSpace</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetoutputcolorspace">VideoProcessorSetOutputColorSpace</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetOutputAlphaFillMode</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439778">VideoProcessorSetOutputAlphaFillMode</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetoutputalphafillmode">VideoProcessorSetOutputAlphaFillMode</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetOutputConstriction</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439784">VideoProcessorSetOutputConstriction</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetoutputconstriction">VideoProcessorSetOutputConstriction</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetOutputStereoMode</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439788">VideoProcessorSetOutputStereoMode</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetoutputstereomode">VideoProcessorSetOutputStereoMode</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetOutputExtension</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439786">VideoProcessorSetOutputExtension</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetoutputextension">VideoProcessorSetOutputExtension</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorGetOutputExtension</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451705">VideoProcessorGetOutputExtension</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorgetoutputextension">VideoProcessorGetOutputExtension</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamFrameFormat</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439804">VideoProcessorSetStreamFrameFormat</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamframeformat">VideoProcessorSetStreamFrameFormat</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamColorSpace</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439796">VideoProcessorSetStreamColorSpace</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamcolorspace">VideoProcessorSetStreamColorSpace</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamOutputRate</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439807">VideoProcessorSetStreamOutputRate</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamoutputrate">VideoProcessorSetStreamOutputRate</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamSourceRect</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439815">VideoProcessorSetStreamSourceRect</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamsourcerect">VideoProcessorSetStreamSourceRect</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamDestRect</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/dn459004">VideoProcessorSetStreamDestRect</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamdestrect">VideoProcessorSetStreamDestRect</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamAlpha</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439792">VideoProcessorSetStreamAlpha</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamalpha">VideoProcessorSetStreamAlpha</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamPalette</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439809">VideoProcessorSetStreamPalette</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreampalette">VideoProcessorSetStreamPalette</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamPixelAspectRatio</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439811">VideoProcessorSetStreamPixelAspectRatio</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreampixelaspectratio">VideoProcessorSetStreamPixelAspectRatio</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamLumaKey</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439805">VideoProcessorSetStreamLumaKey</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamlumakey">VideoProcessorSetStreamLumaKey</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamStereoFormat</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439817">VideoProcessorSetStreamStereoFormat</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamAutoProcessingMode</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439794">VideoProcessorSetStreamAutoProcessingMode</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamautoprocessingmode">VideoProcessorSetStreamAutoProcessingMode</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamFilter</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439802">VideoProcessorSetStreamFilter</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamfilter">VideoProcessorSetStreamFilter</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamExtension</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439800">VideoProcessorSetStreamExtension</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamextension">VideoProcessorSetStreamExtension</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorGetStreamExtension</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439773">VideoProcessorGetStreamExtension</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorgetstreamextension">VideoProcessorGetStreamExtension</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorBlt</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451703">VideoProcessorBlt</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorblt">VideoProcessorBlt</a> function.</p>
 </dd>
 
 ### -field <b>pfnCalcPrivateVideoDecoderOutputViewSize</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451608">CalcPrivateVideoDecoderOutputViewSize</a> function.</p>
+<p>The entry point for the driver's <a href="display.calcprivatevideodecoderoutputviewsize">CalcPrivateVideoDecoderOutputViewSize</a> function.</p>
 </dd>
 
 ### -field <b>pfnCreateVideoDecoderOutputView</b>
@@ -450,7 +450,7 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnDestroyVideoDecoderOutputView</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451636">DestroyVideoDecoderOutputView</a> function.</p>
+<p>The entry point for the driver's <a href="display.destroyvideodecoderoutputview">DestroyVideoDecoderOutputView</a> function.</p>
 </dd>
 
 ### -field <b>pfnCalcPrivateVideoProcessorInputViewSize</b>
@@ -468,7 +468,7 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnDestroyVideoProcessorInputView</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451642">DestroyVideoProcessorInputView</a> function.</p>
+<p>The entry point for the driver's <a href="display.destroyvideoprocessorinputview">DestroyVideoProcessorInputView</a> function.</p>
 </dd>
 
 ### -field <b>pfnCalcPrivateVideoProcessorOutputViewSize</b>
@@ -486,19 +486,19 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnDestroyVideoProcessorOutputView</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451644">DestroyVideoProcessorOutputView</a> function.</p>
+<p>The entry point for the driver's <a href="display.destroyvideoprocessoroutputview">DestroyVideoProcessorOutputView</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorInputViewReadAfterWriteHazard</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439775">VideoProcessorInputViewReadAfterWriteHazard</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorinputviewreadafterwritehazard">VideoProcessorInputViewReadAfterWriteHazard</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetContentProtectionCaps</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451656">GetContentProtectionCaps</a> function.</p>
+<p>The entry point for the driver's <a href="display.getcontentprotectioncaps">GetContentProtectionCaps</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetCryptoKeyExchangeType</b>
@@ -516,25 +516,25 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnCreateCryptoSession</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function.</p>
+<p>The entry point for the driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function.</p>
 </dd>
 
 ### -field <b>pfnDestroyCryptoSession</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451632">DestroyCryptoSession</a> function.</p>
+<p>The entry point for the driver's <a href="display.destroycryptosession1">DestroyCryptoSession</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetCertificateSize</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451654">GetCertificateSize</a> function.</p>
+<p>The entry point for the driver's <a href="display.getcertificatesize">GetCertificateSize</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetCertificate</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451652">GetCertificate</a> function.</p>
+<p>The entry point for the driver's <a href="display.getcertificate">GetCertificate</a> function.</p>
 </dd>
 
 ### -field <b>pfnNegotiateCryptoSessionKeyExchange</b>
@@ -558,25 +558,25 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnStartSessionKeyRefresh</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451696">StartSessionKeyRefresh</a> function.</p>
+<p>The entry point for the driver's <a href="display.startsessionkeyrefresh1">StartSessionKeyRefresh</a> function.</p>
 </dd>
 
 ### -field <b>pfnFinishSessionKeyRefresh</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451648">FinishSessionKeyRefresh</a> function.</p>
+<p>The entry point for the driver's <a href="display.finishsessionkeyrefresh1">FinishSessionKeyRefresh</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetEncryptionBltKey</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451660">GetEncryptionBltKey</a> function.</p>
+<p>The entry point for the driver's <a href="..\d3dumddi\ns-d3dumddi--getencryptionbltkey.md">GetEncryptionBltKey</a> function.</p>
 </dd>
 
 ### -field <b>pfnCalcPrivateAuthenticatedChannelSize</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451604">CalcPrivateAuthenticatedChannelSize</a> function.</p>
+<p>The entry point for the driver's <a href="display.calcprivateauthenticatedchannelsize">CalcPrivateAuthenticatedChannelSize</a> function.</p>
 </dd>
 
 ### -field <b>pfnCreateAuthenticatedChannel</b>
@@ -588,13 +588,13 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnDestroyAuthenticatedChannel</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451630">DestroyAuthenticatedChannel</a> function.</p>
+<p>The entry point for the driver's <a href="display.destroyauthenticatedchannel1">DestroyAuthenticatedChannel</a> function.</p>
 </dd>
 
 ### -field <b>pfnNegotiateAuthenticatedChannelKeyExchange</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451691">NegotiateAuthenticatedChannelKeyExchange</a> function.</p>
+<p>The entry point for the driver's <a href="display.negotiateauthenticatedchannelkeyexchange">NegotiateAuthenticatedChannelKeyExchange</a> function.</p>
 </dd>
 
 ### -field <b>pfnQueryAuthenticatedChannel</b>
@@ -612,19 +612,19 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnVideoDecoderGetHandle</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451700">VideoDecoderGetHandle</a> function.</p>
+<p>The entry point for the driver's <a href="display.videodecodergethandle">VideoDecoderGetHandle</a> function.</p>
 </dd>
 
 ### -field <b>pfnCryptoSessionGetHandle</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451626">CryptoSessionGetHandle</a> function.</p>
+<p>The entry point for the driver's <a href="display.cryptosessiongethandle">CryptoSessionGetHandle</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamRotation</b>
 
 <dd>
-<p>The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439813">VideoProcessorSetStreamRotation</a> function.</p>
+<p>The entry point for the driver's <a href="display.videoprocessorsetstreamrotation">VideoProcessorSetStreamRotation</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetCaptureHandle</b>
@@ -636,79 +636,79 @@ typedef struct D3DWDDM2_0DDI_VIDEODEVICEFUNCS {
 ### -field <b>pfnGetDataForNewHardwareKey</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906350">GetDataForNewHardwareKey</a> function.</p>
+<p>The entry point for the driver's     <a href="display.getdatafornewhardwarekey">GetDataForNewHardwareKey</a> function.</p>
 </dd>
 
 ### -field <b>pfnCheckCryptoSessionStatus</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906316">CheckCryptoSessionStatus</a> function.</p>
+<p>The entry point for the driver's     <a href="display.checkcryptosessionstatus">CheckCryptoSessionStatus</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoDecoderSubmitBuffers1</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906377">VideoDecoderSubmitBuffers1</a> function.</p>
+<p>The entry point for the driver's     <a href="display.videodecodersubmitbuffers1">VideoDecoderSubmitBuffers1</a> function.</p>
 </dd>
 
 ### -field <b>pfnQueryVideoCapabilities</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906368">QueryVideoCapabilities</a> function.</p>
+<p>The entry point for the driver's     <a href="display.queryvideocapabilities">QueryVideoCapabilities</a> function.</p>
 </dd>
 
 ### -field <b>pfnCheckVideoProcessorFormatConversion</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906317">CheckVideoProcessorFormatConversion</a> function.</p>
+<p>The entry point for the driver's     <a href="display.checkvideoprocessorformatconversion">CheckVideoProcessorFormatConversion</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoDecoderEnableDownsampling</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906376">VideoDecoderEnableDownsampling</a> function.</p>
+<p>The entry point for the driver's     <a href="display.videodecoderenabledownsampling">VideoDecoderEnableDownsampling</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoDecoderUpdateDownsampling</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906378">VideoDecoderUpdateDownsampling</a> function.</p>
+<p>The entry point for the driver's     <a href="display.videodecoderupdatedownsampling">VideoDecoderUpdateDownsampling</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamMirror</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906383">VideoProcessorSetStreamMirror</a> function.</p>
+<p>The entry point for the driver's     <a href="display.videoprocessorsetstreammirror">VideoProcessorSetStreamMirror</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetOutputColorSpace1</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906380">VideoProcessorSetOutputColorSpace1</a> function.</p>
+<p>The entry point for the driver's     <a href="display.videoprocessorsetoutputcolorspace1">VideoProcessorSetOutputColorSpace1</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetStreamColorSpace1</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906382">VideoProcessorSetStreamColorSpace1</a> function.</p>
+<p>The entry point for the driver's     <a href="display.videoprocessorsetstreamcolorspace1">VideoProcessorSetStreamColorSpace1</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorSetOutputShaderUsage</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906381">VideoProcessorSetOutputShaderUsage</a> function.</p>
+<p>The entry point for the driver's     <a href="display.videoprocessorsetoutputshaderusage">VideoProcessorSetOutputShaderUsage</a> function.</p>
 </dd>
 
 ### -field <b>pfnVideoProcessorGetBehaviorHints</b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906379">VideoProcessorGetBehaviorHints</a> function.</p>
+<p>The entry point for the driver's     <a href="display.videoprocessorgetbehaviorhints">VideoProcessorGetBehaviorHints</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetCryptoSessionPrivateDataSize        </b>
 
 <dd>
-<p>The entry point for the driver's     <a href="https://msdn.microsoft.com/library/windows/hardware/dn906349">GetCryptoSessionPrivateDataSize</a> function.</p>
+<p>The entry point for the driver's     <a href="display.getcryptosessionprivatedatasize">GetCryptoSessionPrivateDataSize</a> function.</p>
 </dd>
 </dl>
 

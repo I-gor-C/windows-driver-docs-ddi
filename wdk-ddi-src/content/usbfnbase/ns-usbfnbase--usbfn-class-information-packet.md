@@ -63,13 +63,13 @@ typedef struct _USBFN_CLASS_INFORMATION_PACKET {
 ### -field <b>FullSpeedClassInterface</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt187990">USBFN_CLASS_INTERFACE</a> structure that describes an interface for full speed device.</p>
+<p>A <a href="buses.usbfn_class_interface">USBFN_CLASS_INTERFACE</a> structure that describes an interface for full speed device.</p>
 </dd>
 
 ### -field <b>HighSpeedClassInterface</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt187990">USBFN_CLASS_INTERFACE</a> structure that describes an interface for high speed device.</p>
+<p>A <a href="buses.usbfn_class_interface">USBFN_CLASS_INTERFACE</a> structure that describes an interface for high speed device.</p>
 </dd>
 
 ### -field <b>InterfaceName[MAX_INTERFACE_NAME_LENGTH]</b>
@@ -93,7 +93,7 @@ typedef struct _USBFN_CLASS_INFORMATION_PACKET {
 ### -field <b>SuperSpeedClassInterface</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt187990">USBFN_CLASS_INTERFACE</a> structure that describes an interface for SuperSpeed device.</p>
+<p>A <a href="buses.usbfn_class_interface">USBFN_CLASS_INTERFACE</a> structure that describes an interface for SuperSpeed device.</p>
 </dd>
 </dl>
 
@@ -117,13 +117,13 @@ typedef struct _USBFN_CLASS_INFORMATION_PACKET {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187990">USBFN_CLASS_INTERFACE</a>
+<a href="buses.usbfn_class_interface">USBFN_CLASS_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545939">WdfDeviceCreateSymbolicLink</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatesymboliclink.md">WdfDeviceCreateSymbolicLink</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546878">WdfDeviceSetDeviceInterfaceState</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetdeviceinterfacestate.md">WdfDeviceSetDeviceInterfaceState</a>
 </dt>
 </dl>
 <p> </p>

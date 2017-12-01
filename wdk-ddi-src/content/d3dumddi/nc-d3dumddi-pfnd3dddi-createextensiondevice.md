@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CreateExtensionDevice(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542938">D3DDDIARG_CREATEEXTENSIONDEVICE</a> structure. On input, this structure contains information that the driver can use. On output, the driver specifies information in the structure that the Microsoft Direct3D runtime can use.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createextensiondevice.md">D3DDDIARG_CREATEEXTENSIONDEVICE</a> structure. On input, this structure contains information that the driver can use. On output, the driver specifies information in the structure that the Microsoft Direct3D runtime can use.</p>
 </dd>
 </dl>
 
@@ -119,7 +119,7 @@ __checkReturn HRESULT APIENTRY CreateExtensionDevice(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542938">D3DDDIARG_CREATEEXTENSIONDEVICE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createextensiondevice.md">D3DDDIARG_CREATEEXTENSIONDEVICE</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroyextensiondevice.md">DestroyExtensionDevice</a>

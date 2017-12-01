@@ -123,7 +123,7 @@ typedef struct _MSFC_VirtualFibrePortAttributes {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh127629">MSFC_VirtualFibrePortAttributes WMI Class</a>
+<a href="storage.msfc_virtualfibreportattributes_wmi_class">MSFC_VirtualFibrePortAttributes WMI Class</a>
 </dt>
 </dl>
 <p> </p>

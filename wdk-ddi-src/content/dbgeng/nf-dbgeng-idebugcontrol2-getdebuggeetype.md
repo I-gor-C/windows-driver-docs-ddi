@@ -7,7 +7,7 @@ old-location: debugger\getdebuggeetype.htm
 old-project: debugger
 ms.assetid: 86f236fa-73f8-4071-b6da-6de2d276cbff
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl2, GetDebuggeeType, IDebugControl2::GetDebuggeeType
 ms.prod: windows-hardware
 ms.technology: windows-devices

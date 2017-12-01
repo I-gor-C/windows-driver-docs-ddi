@@ -7,7 +7,7 @@ old-location: debugger\addflags.htm
 old-project: debugger
 ms.assetid: 92161111-5e02-4a97-9656-9a297e9ea1af
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugBreakpoint2, AddFlags, IDebugBreakpoint2::AddFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,8 +71,6 @@ HRESULT AddFlags(
 <p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
 
 ## -remarks
-<p>For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
-
 <p>For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
 
 ## -requirements

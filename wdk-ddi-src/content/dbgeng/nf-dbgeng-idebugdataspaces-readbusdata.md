@@ -7,7 +7,7 @@ old-location: debugger\readbusdata.htm
 old-project: debugger
 ms.assetid: 5790b133-dbdc-4f77-a70e-616b0902794e
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces, ReadBusData, IDebugDataSpaces::ReadBusData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -113,10 +113,6 @@ HRESULT ReadBusData(
 <p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
-<p>The nature of the data read from the bus is system, bus, and slot dependent.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 <p>The nature of the data read from the bus is system, bus, and slot dependent.</p>

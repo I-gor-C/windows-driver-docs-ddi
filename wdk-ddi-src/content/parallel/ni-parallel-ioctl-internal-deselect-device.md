@@ -46,7 +46,7 @@ req.iface:
 ## -ioctlparameters
 
 ### -input-buffer
-<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544243">PARALLEL_1284_COMMAND</a> structure that the client allocates to input IEEE 1284.3 command information. The client can free the parallel port by not setting the PAR_HAVE_PORT_KEEP_PORT flag in the <b>CommandFlags</b> member.</p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\parallel\ns-parallel--parallel-1284-command.md">PARALLEL_1284_COMMAND</a> structure that the client allocates to input IEEE 1284.3 command information. The client can free the parallel port by not setting the PAR_HAVE_PORT_KEEP_PORT flag in the <b>CommandFlags</b> member.</p>
 
 ### -input-buffer-length
 <p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member specifies the size, in bytes, of the PARALLEL_1284_COMMAND structure.</p>
@@ -149,10 +149,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544052">IOCTL_INTERNAL_SELECT_DEVICE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-select-device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544243">PARALLEL_1284_COMMAND</a>
+<a href="..\parallel\ns-parallel--parallel-1284-command.md">PARALLEL_1284_COMMAND</a>
 </dt>
 </dl>
 <p> </p>

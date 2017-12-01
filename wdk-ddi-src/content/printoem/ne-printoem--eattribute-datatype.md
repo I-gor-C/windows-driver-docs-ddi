@@ -128,7 +128,7 @@ typedef enum _EATTRIBUTE_DATATYPE {
 ### -field <a id="kADT_CUSTOMSIZEPARAMS"></a><a id="kadt_customsizeparams"></a><a id="KADT_CUSTOMSIZEPARAMS"></a><b>kADT_CUSTOMSIZEPARAMS</b>
 
 <dd>
-<p>The attribute is an array containing CUSTOMPARAM_MAX (a constant defined in printoem.h) elements. Each element is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547337">CUSTOMSIZEPARAM</a> structure.</p>
+<p>The attribute is an array containing CUSTOMPARAM_MAX (a constant defined in printoem.h) elements. Each element is a <a href="..\printoem\ns-printoem--customsizeparam.md">CUSTOMSIZEPARAM</a> structure.</p>
 </dd>
 </dl>
 
@@ -152,7 +152,7 @@ typedef enum _EATTRIBUTE_DATATYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547337">CUSTOMSIZEPARAM</a>
+<a href="..\printoem\ns-printoem--customsizeparam.md">CUSTOMSIZEPARAM</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilimssipreason.htm
 old-project: netvista
 ms.assetid: bb3269d5-1e42-4e18-9d93-ad7f3f4de3f9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

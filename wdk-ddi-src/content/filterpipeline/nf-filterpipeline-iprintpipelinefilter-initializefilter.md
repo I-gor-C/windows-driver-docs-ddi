@@ -59,19 +59,19 @@ HRESULT InitializeFilter(
 ### -param <i>pICommunicator</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551050">IInterFilterCommunicator</a> interface.</p>
+<p>A pointer to the <a href="print.iinterfiltercommunicator">IInterFilterCommunicator</a> interface.</p>
 </dd>
 
 ### -param <i>pIPropertyBag</i> [in]
 
 <dd>
-<p>A pointer to the<a href="https://msdn.microsoft.com/library/windows/hardware/ff554320">IPrintPipelinePropertyBag</a> interface.</p>
+<p>A pointer to the<a href="print.iprintpipelinepropertybag">IPrintPipelinePropertyBag</a> interface.</p>
 </dd>
 
 ### -param <i>pIPipelineControl</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554303">IPrintPipelineManagerControl</a> interface.</p>
+<p>A pointer to the <a href="print.iprintpipelinemanagercontrol">IPrintPipelineManagerControl</a> interface.</p>
 </dd>
 </dl>
 
@@ -79,12 +79,6 @@ HRESULT InitializeFilter(
 <p><code>InitializeFilter</code> returns an <b>HRESULT</b> value. The method should return a value other than "S_OK" or "S_FALSE" if the necessary operations are not performed inside <code>InitializeFilter</code>.</p>
 
 ## -remarks
-<p>When the <code>InitializeFilter</code> method is called, the filters should:</p>
-
-<p>Get, add, or delete properties from the property bag.</p>
-
-<p>Get the read and write interfaces.</p>
-
 <p>When the <code>InitializeFilter</code> method is called, the filters should:</p>
 
 <p>Get, add, or delete properties from the property bag.</p>
@@ -128,13 +122,13 @@ HRESULT InitializeFilter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551050">IInterFilterCommunicator</a>
+<a href="print.iinterfiltercommunicator">IInterFilterCommunicator</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554303">IPrintPipelineManagerControl</a>
+<a href="print.iprintpipelinemanagercontrol">IPrintPipelineManagerControl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554320">IPrintPipelinePropertyBag</a>
+<a href="print.iprintpipelinepropertybag">IPrintPipelinePropertyBag</a>
 </dt>
 </dl>
 <p> </p>

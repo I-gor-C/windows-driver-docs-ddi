@@ -95,7 +95,7 @@ typedef enum _STORAGE_PROTOCOL_UFS_DATA_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn931815">STORAGE_PROTOCOL_DATA_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor--storage-protocol-data-descriptor.md">STORAGE_PROTOCOL_DATA_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

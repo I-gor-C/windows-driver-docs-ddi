@@ -64,12 +64,12 @@ typedef struct _AACS_SEND_CERTIFICATE {
 ### -field <b>Certificate</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff550107">AACS_CERTIFICATE</a> that specifies the certificate to retrieve.</p>
+<p>A structure of type <a href="..\ntddcdvd\ns-ntddcdvd--aacs-certificate.md">AACS_CERTIFICATE</a> that specifies the certificate to retrieve.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Clients send an Advanced Access Content System (AACS) certificate with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559297">IOCTL_AACS_SEND_CERTIFICATE</a> request. Clients retrieve an AACS certificate with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559251">IOCTL_AACS_GET_CERTIFICATE</a> request. </p>
+<p>Clients send an Advanced Access Content System (AACS) certificate with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-send-certificate.md">IOCTL_AACS_SEND_CERTIFICATE</a> request. Clients retrieve an AACS certificate with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-get-certificate.md">IOCTL_AACS_GET_CERTIFICATE</a> request. </p>
 
 ## -requirements
 <table>
@@ -88,13 +88,13 @@ typedef struct _AACS_SEND_CERTIFICATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550107">AACS_CERTIFICATE</a>
+<a href="..\ntddcdvd\ns-ntddcdvd--aacs-certificate.md">AACS_CERTIFICATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553743">DVD_SESSION_ID</a>
+<a href="storage.dvd_session_id">DVD_SESSION_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559251">IOCTL_AACS_GET_CERTIFICATE</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-get-certificate.md">IOCTL_AACS_GET_CERTIFICATE</a>
 </dt>
 </dl>
 <p> </p>

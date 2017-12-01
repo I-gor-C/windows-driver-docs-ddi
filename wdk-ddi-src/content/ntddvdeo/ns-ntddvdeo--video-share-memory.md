@@ -83,9 +83,9 @@ typedef struct _VIDEO_SHARE_MEMORY {
 </dl>
 
 ## -remarks
-<p>VIDEO_SHARE_MEMORY is provided so that applications such as Direct Draw can have a view of video memory. Although the display driver is unable to directly provide such access to video memory, it can call into the video miniport driver for this purpose. The display driver does this by sending an <a href="https://msdn.microsoft.com/library/windows/hardware/ff568149">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a> request to the miniport driver. When the miniport driver fulfills this request, it uses the information in the VIDEO_SHARE_MEMORY structure, and fills in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570549">VIDEO_SHARE_MEMORY_INFORMATION</a> structure with the actual location of the requested memory, if no location was specified. When the application no longer needs the shared memory, the display driver can release this memory by making an <a href="https://msdn.microsoft.com/library/windows/hardware/ff568155">IOCTL_VIDEO_UNSHARE_VIDEO_MEMORY</a> request, which also uses a VIDEO_SHARE_MEMORY structure as an input buffer.</p>
+<p>VIDEO_SHARE_MEMORY is provided so that applications such as Direct Draw can have a view of video memory. Although the display driver is unable to directly provide such access to video memory, it can call into the video miniport driver for this purpose. The display driver does this by sending an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-share-video-memory.md">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a> request to the miniport driver. When the miniport driver fulfills this request, it uses the information in the VIDEO_SHARE_MEMORY structure, and fills in a <a href="..\ntddvdeo\ns-ntddvdeo--video-share-memory-information.md">VIDEO_SHARE_MEMORY_INFORMATION</a> structure with the actual location of the requested memory, if no location was specified. When the application no longer needs the shared memory, the display driver can release this memory by making an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-unshare-video-memory.md">IOCTL_VIDEO_UNSHARE_VIDEO_MEMORY</a> request, which also uses a VIDEO_SHARE_MEMORY structure as an input buffer.</p>
 
-<p>For structures used in mapping into kernel-mode video memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff570506">VIDEO_MEMORY</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff570507">VIDEO_MEMORY_INFORMATION</a>.</p>
+<p>For structures used in mapping into kernel-mode video memory, see <a href="..\ntddvdeo\ns-ntddvdeo--video-memory.md">VIDEO_MEMORY</a> and <a href="..\ntddvdeo\ns-ntddvdeo--video-memory-information.md">VIDEO_MEMORY_INFORMATION</a>.</p>
 
 ## -requirements
 <table>
@@ -104,13 +104,13 @@ typedef struct _VIDEO_SHARE_MEMORY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570549">VIDEO_SHARE_MEMORY_INFORMATION</a>
+<a href="..\ntddvdeo\ns-ntddvdeo--video-share-memory-information.md">VIDEO_SHARE_MEMORY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568149">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-share-video-memory.md">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568155">IOCTL_VIDEO_UNSHARE_VIDEO_MEMORY</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-unshare-video-memory.md">IOCTL_VIDEO_UNSHARE_VIDEO_MEMORY</a>
 </dt>
 </dl>
 <p> </p>

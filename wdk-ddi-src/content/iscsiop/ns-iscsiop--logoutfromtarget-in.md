@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The LogoutFromTarget_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561602">LogoutFromTarget</a> method, which is used to log out from an iSCSI target.</p>
+<p>The LogoutFromTarget_IN structure holds the input data for the <a href="storage.logoutfromtarget">LogoutFromTarget</a> method, which is used to log out from an iSCSI target.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _LogoutFromTarget_IN {
 ### -field <b>UniqueSessionId</b>
 
 <dd>
-<p>A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
+<p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 </dl>
 
@@ -81,16 +81,16 @@ typedef struct _LogoutFromTarget_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562194">LogoutFromTarget_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--logoutfromtarget-out.md">LogoutFromTarget_OUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
+<a href="storage.msiscsi_operations_wmi_class">MSiSCSI_Operations WMI Class</a>
 </dt>
 </dl>
 <p> </p>

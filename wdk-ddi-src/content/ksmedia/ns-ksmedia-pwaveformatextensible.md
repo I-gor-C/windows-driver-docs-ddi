@@ -7,7 +7,7 @@ old-location: audio\waveformatextensible.htm
 old-project: audio
 ms.assetid: 54bcb18e-df4b-471c-b121-4db75ce5c49b
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PWAVEFORMATEXTENSIBLE, WAVEFORMATEXTENSIBLE, *PWAVEFORMATEXTENSIBLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ typedef struct {
 ### -field <b>Format</b>
 
 <dd>
-<p>Specifies the stream's wave-data format. This member is a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a>. The <b>wFormat</b> member of WAVEFORMATEX should be set to WAVE_FORMAT_EXTENSIBLE. The <b>wBitsPerSample</b> member of WAVEFORMATEX is defined unambiguously as the size of the container for each sample. Sample containers are always byte-aligned, and <b>wBitsPerSample</b> must be a multiple of eight.</p>
+<p>Specifies the stream's wave-data format. This member is a structure of type <a href="audio.waveformatex">WAVEFORMATEX</a>. The <b>wFormat</b> member of WAVEFORMATEX should be set to WAVE_FORMAT_EXTENSIBLE. The <b>wBitsPerSample</b> member of WAVEFORMATEX is defined unambiguously as the size of the container for each sample. Sample containers are always byte-aligned, and <b>wBitsPerSample</b> must be a multiple of eight.</p>
 </dd>
 
 ### -field <b>Samples</b>
@@ -95,7 +95,7 @@ typedef struct {
 ### -field <b>dwChannelMask</b>
 
 <dd>
-<p>Specifies the assignment of channels in the multichannel stream to speaker positions. The encoding is the same as that used for the <b>ActiveSpeakerPositions</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537083">KSAUDIO_CHANNEL_CONFIG</a> structure. For more information, see the following Remarks section.</p>
+<p>Specifies the assignment of channels in the multichannel stream to speaker positions. The encoding is the same as that used for the <b>ActiveSpeakerPositions</b> member of the <a href="audio.ksaudio_channel_config">KSAUDIO_CHANNEL_CONFIG</a> structure. For more information, see the following Remarks section.</p>
 </dd>
 
 ### -field <b>SubFormat</b>
@@ -106,7 +106,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>WAVEFORMATEXTENSIBLE is an extended form of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a> structure. WAVEFORMATEX can unambiguously describe only a subset of the formats that can be described by WAVEFORMATEXTENSIBLE. WAVEFORMATEXTENSIBLE is not subject to the limitations of WAVEFORMATEX, which is unable to unambiguously specify formats with more than two channels or for which the number of valid bits per sample does not equal the sample container size. For more information, see <a href="NULL">Audio Data Formats and Data Ranges</a>.</p>
+<p>WAVEFORMATEXTENSIBLE is an extended form of the <a href="audio.waveformatex">WAVEFORMATEX</a> structure. WAVEFORMATEX can unambiguously describe only a subset of the formats that can be described by WAVEFORMATEXTENSIBLE. WAVEFORMATEXTENSIBLE is not subject to the limitations of WAVEFORMATEX, which is unable to unambiguously specify formats with more than two channels or for which the number of valid bits per sample does not equal the sample container size. For more information, see <a href="NULL">Audio Data Formats and Data Ranges</a>.</p>
 
 <p>Frequently, the <b>wValidBitsPerSample</b> member, which specifies the sample precision, contains the same value as the <b>Format</b>.<b>wBitsPerSample</b> member, which specifies the sample container size. However, these values can be different. For example, if the wave data originated from a 20-bit A/D converter, then <b>wValidBitsPerSample</b> should be 20 but <b>Format</b>.<b>wBitsPerSample</b> might be 24 or 32. If <b>wValidBitsPerSample</b> is less than <b>Format</b>.<b>wBitsPerSample</b>, the valid bits (the actual PCM data) are left-aligned within the container. The unused bits in the least-significant portion of the container should be set to zero.</p>
 
@@ -186,39 +186,17 @@ typedef struct {
 
 <p>0x20000</p>
 
-<p> </p>
-
 <p>The channels that are specified in <b>dwChannelMask</b> should be present in the order shown in the preceding table, beginning at the top.</p>
 
 <p>For example, if only front-left and front-center are specified, then front-left and front-center should be in channels 0 and 1, respectively, of the interleaved stream.</p>
 
-<p>As a second example, if <b>nChannels</b> (in the <b>Format</b> member; see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a>) is set to 4 and <b>dwChannelMask</b> is set to 0x00000033, the audio channels are intended for playback to the front-left, front-right, back-left, and back-right speakers. The channel data should be interleaved in that order within each block.</p>
+<p>As a second example, if <b>nChannels</b> (in the <b>Format</b> member; see <a href="audio.waveformatex">WAVEFORMATEX</a>) is set to 4 and <b>dwChannelMask</b> is set to 0x00000033, the audio channels are intended for playback to the front-left, front-right, back-left, and back-right speakers. The channel data should be interleaved in that order within each block.</p>
 
 <p>Channel locations beyond the predefined ones are considered reserved.</p>
 
-<p>Alternatively, the channel mask can be specified as one of the following constants, which are defined in Ksmedia.h and are bitwise ORed combinations of the preceding flags that represent standard speaker configurations:</p><dl>
-<dd>
+<p>Alternatively, the channel mask can be specified as one of the following constants, which are defined in Ksmedia.h and are bitwise ORed combinations of the preceding flags that represent standard speaker configurations:</p>
+
 <p>KSAUDIO_SPEAKER_MONO</p>
-</dd>
-<dd>
-<p>KSAUDIO_SPEAKER_STEREO</p>
-</dd>
-<dd>
-<p>KSAUDIO_SPEAKER_QUAD</p>
-</dd>
-<dd>
-<p>KSAUDIO_SPEAKER_SURROUND</p>
-</dd>
-<dd>
-<p>KSAUDIO_SPEAKER_5POINT1</p>
-</dd>
-<dd>
-<p>KSAUDIO_SPEAKER_7POINT1</p>
-</dd>
-<dd>
-<p>KSAUDIO_SPEAKER_DIRECTOUT</p>
-</dd>
-</dl><p>KSAUDIO_SPEAKER_MONO</p>
 
 <p>KSAUDIO_SPEAKER_STEREO</p>
 
@@ -232,7 +210,7 @@ typedef struct {
 
 <p>KSAUDIO_SPEAKER_DIRECTOUT</p>
 
-<p>A hardware device can be set to one of these speaker configurations by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537250">KSPROPERTY_AUDIO_CHANNEL_CONFIG</a>set-property request. For more information about setting speaker configurations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537083">KSAUDIO_CHANNEL_CONFIG</a>.</p>
+<p>A hardware device can be set to one of these speaker configurations by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537250">KSPROPERTY_AUDIO_CHANNEL_CONFIG</a>set-property request. For more information about setting speaker configurations, see <a href="audio.ksaudio_channel_config">KSAUDIO_CHANNEL_CONFIG</a>.</p>
 
 <p>Typically, the count in <b>nChannels</b> equals the number of bits set in <b>dwChannelMask</b>, but this is not necessarily so. If <b>nChannels</b> is less than the number of bits set in <b>dwChannelMask</b>, the extra (most significant) bits in <b>dwChannelMask</b> are ignored. If <b>nChannels</b> exceeds the number of bits set in <b>dwChannelMask</b>, the channels that have no corresponding mask bits are not assigned to any physical speaker position. In any speaker configuration other than KSAUDIO_SPEAKER_DIRECTOUT, an audio sink like KMixer (see <a href="audio.kernel_mode_wdm_audio_components#kmixer_system_driver#kmixer_system_driver">KMixer System Driver</a>) simply ignores these excess channels and mixes only the channels that have corresponding mask bits.</p>
 
@@ -240,7 +218,7 @@ typedef struct {
 
 <p>For more information about multichannel configurations, see the white paper titled <i>Multiple Channel Audio Data and WAVE Files</i> at the <a href="http://go.microsoft.com/fwlink/p/?linkid=8751">audio technology</a> website.</p>
 
-<p>The <b>SubFormat</b> member contains a GUID that specifies the general data format for a wave stream. For example, this GUID might specify that the stream contains integer PCM data. The other members provide additional information such as the sample size and the number of channels. The meaning of the <b>SubFormat</b> GUID is similar to that of the 16-bit format tag in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a> structure's <b>wFormatTag</b> member.</p>
+<p>The <b>SubFormat</b> member contains a GUID that specifies the general data format for a wave stream. For example, this GUID might specify that the stream contains integer PCM data. The other members provide additional information such as the sample size and the number of channels. The meaning of the <b>SubFormat</b> GUID is similar to that of the 16-bit format tag in the <a href="audio.waveformatex">WAVEFORMATEX</a> structure's <b>wFormatTag</b> member.</p>
 
 <p>Before WAVEFORMATEXTENSIBLE was introduced in Windows 98 Second Edition, WAVEFORMATEX was the preferred structure for specifying wave formats. At that time, vendors needed to register each new wave format with Microsoft so that an official format tag could be assigned to the format. A list of registered format tags appears in public header file Mmreg.h.</p>
 
@@ -272,8 +250,6 @@ typedef struct {
 
 <p>KSDATAFORMAT_SUBTYPE_ADPCM</p>
 
-<p> </p>
-
 <p>For more information, see <a href="NULL">Converting Between Format Tags and Subformat GUIDs</a>.</p>
 
 <p>Because WAVEFORMATEXTENSIBLE is an extended version of WAVEFORMATEX, it can describe additional formats that cannot be described by WAVEFORMATEX alone. Vendors are free to define their own <b>SubFormat</b> GUIDs to identify proprietary formats for which no wave-format tags exist.</p>
@@ -295,12 +271,12 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a>
+<a href="audio.waveformatex">WAVEFORMATEX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537083">KSAUDIO_CHANNEL_CONFIG</a>
+<a href="audio.ksaudio_channel_config">KSAUDIO_CHANNEL_CONFIG</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20WAVEFORMATEXTENSIBLE structure%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20WAVEFORMATEXTENSIBLE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

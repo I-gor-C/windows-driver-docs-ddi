@@ -7,7 +7,7 @@ old-location: kernel\pssetloadimagenotifyroutineex.htm
 old-project: kernel
 ms.assetid: 792cdb59-e0c2-4697-9934-b7e45a7a31a8
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PsSetLoadImageNotifyRoutineEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ req.iface:
 ### -param <i>NotifyRoutine</i> [in]
 
 <dd>
-<p>A pointer to the caller-implemented <a href="https://msdn.microsoft.com/library/windows/hardware/mt764088">PLOAD_IMAGE_NOTIFY_ROUTINE</a> callback routine for load-image notifications.</p>
+<p>A pointer to the caller-implemented <a href="..\ntddk\nc-ntddk-pload-image-notify-routine.md">PLOAD_IMAGE_NOTIFY_ROUTINE</a> callback routine for load-image notifications.</p>
 </dd>
 
 ### -param <i>Flags</i> [in]

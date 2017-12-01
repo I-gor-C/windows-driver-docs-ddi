@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>GetParameterInitializer</b> method retrieves the <a href="https://msdn.microsoft.com/library/windows/hardware/dn454557">IPrintSchemaParameterInitializer</a> object, and it  represents the &lt;psf:ParameterInit&gt; element in the PrintTicket XML.</p>
+<p>The <b>GetParameterInitializer</b> method retrieves the <a href="..\printerextension\nn-printerextension-iprintschemaparameterinitializer.md">IPrintSchemaParameterInitializer</a> object, and it  represents the &lt;psf:ParameterInit&gt; element in the PrintTicket XML.</p>
 <p>The keyword name and keyword namespace URI specify the <b>IPrintSchemaParameterInitializer</b> object to be retrieved.</p>
 
 
@@ -73,7 +73,7 @@ HRESULT GetParameterInitializer(
 ### -param <i>ppParameterInitializer</i> [out, retval]
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn454557">IPrintSchemaParameterInitializer</a> object.</p>
+<p>The <a href="..\printerextension\nn-printerextension-iprintschemaparameterinitializer.md">IPrintSchemaParameterInitializer</a> object.</p>
 </dd>
 </dl>
 
@@ -126,10 +126,10 @@ HRESULT GetParameterInitializer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn454560">IPrintSchematicket2</a>
+<a href="..\printerextension\nn-printerextension-iprintschematicket2.md">IPrintSchematicket2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn454557">IPrintSchemaParameterInitializer</a>
+<a href="..\printerextension\nn-printerextension-iprintschemaparameterinitializer.md">IPrintSchemaParameterInitializer</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\ril_emergencymodecontrol.htm
 old-project: netvista
 ms.assetid: 011b8b11-5e75-4db9-ba3d-6483a90788ac
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_EmergencyModeControl
 ms.prod: windows-hardware
 ms.technology: windows-devices

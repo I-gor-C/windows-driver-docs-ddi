@@ -7,7 +7,7 @@ old-location: debugger\inputwide.htm
 old-project: debugger
 ms.assetid: 79997d8c-4641-4953-a1a2-e5bde88cbc3f
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl4, InputWide, IDebugControl4::InputWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,8 +85,6 @@ HRESULT InputWide(
 <p> </p>
 
 ## -remarks
-<p>For an overview of input in the debugger engine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>
-
 <p>For an overview of input in the debugger engine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>
 
 ## -requirements

@@ -60,7 +60,7 @@ struct _URB_SELECT_INTERFACE {
 ### -field <b>Hdr</b>
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_SELECT_INTERFACE, and <b>Hdr.Length</b> must be the size of the entire URB.</p>
+<p>Pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_SELECT_INTERFACE, and <b>Hdr.Length</b> must be the size of the entire URB.</p>
 </dd>
 
 ### -field <b>ConfigurationHandle</b>
@@ -72,14 +72,14 @@ struct _URB_SELECT_INTERFACE {
 ### -field <b>Interface</b>
 
 <dd>
-<p>A variable-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> structure that specifies the interface and the new alternate setting for that interface, and if required, the new maximum packet sizes for the corresponding pipes. For more information, see Remarks.</p>
+<p>A variable-length <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structure that specifies the interface and the new alternate setting for that interface, and if required, the new maximum packet sizes for the corresponding pipes. For more information, see Remarks.</p>
 </dd>
 </dl>
 
 ## -remarks
 <p>You can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537164">GET_SELECT_INTERFACE_REQUEST_SIZE</a> macro to determine the size of the URB_FUNCTION_SELECT_INTERFACE URB, and the <b>UsbBuildSelectInterfaceRequest</b> routine to format the URB.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> structure contains information about the interface and its alternate setting.  The <b>Pipes</b> member of <b>USBD_INTERFACE_INFORMATION</b> points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539114">USBD_PIPE_INFORMATION</a> structures. The array stores information about the  pipes associated with the endpoints of the interface. You can override certain default settings for a pipe, such as its maximum packet size. To alter the maximum packet size, set the USBD_PF_CHANGE_MAX_PACKET flag in <code>Pipes[i].PipeFlags</code>, and then specify the new value in <code>Pipes[i].MaximumPacketSize</code>. </p>
+<p>The <a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a> structure contains information about the interface and its alternate setting.  The <b>Pipes</b> member of <b>USBD_INTERFACE_INFORMATION</b> points to an array of <a href="..\usb\ns-usb--usbd-pipe-information.md">USBD_PIPE_INFORMATION</a> structures. The array stores information about the  pipes associated with the endpoints of the interface. You can override certain default settings for a pipe, such as its maximum packet size. To alter the maximum packet size, set the USBD_PF_CHANGE_MAX_PACKET flag in <code>Pipes[i].PipeFlags</code>, and then specify the new value in <code>Pipes[i].MaximumPacketSize</code>. </p>
 
 <p> After the bus driver successfully completes processing the URB_FUNCTION_SELECT_INTERFACE URB, it returns an array of handles for each pipe in the  <code>Pipes[i].PipeHandle</code>  member. The client driver can store pipe handles to send I/O requests to specific pipes.</p>
 
@@ -100,19 +100,19 @@ struct _URB_SELECT_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
+<a href="..\usb\ns-usb--urb.md">URB</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a>
+<a href="buses._urb_header">_URB_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a>
+<a href="..\usb\ns-usb--usbd-interface-information.md">USBD_INTERFACE_INFORMATION</a>
 </dt>
 <dt>
 <a href="buses.configuring_usb_devices">Configuring USB Devices</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

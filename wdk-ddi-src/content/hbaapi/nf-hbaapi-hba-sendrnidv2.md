@@ -63,7 +63,7 @@ HBA_STATUS HBA_API HBA_SendRNIDV2(
 ### -param <i>handle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA that will route the command. The HBA routes this command through the port specified by <i>hbaPortWWN </i>to the port specified by <i>destWWN </i>on the appropriate fabric configuration server. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA that will route the command. The HBA routes this command through the port specified by <i>hbaPortWWN </i>to the port specified by <i>destWWN </i>on the appropriate fabric configuration server. </p>
 </dd>
 
 ### -param <i>hbaPortWWN</i> [in]
@@ -104,16 +104,12 @@ HBA_STATUS HBA_API HBA_SendRNIDV2(
 </dl>
 
 ## -returns
-<p>The <b>HBA_SendRNIDV2</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA.</p>
+<p>The <b>HBA_SendRNIDV2</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA.</p>
 
 ## -remarks
 <p>The node identification data request is a common transport (CT) command that queries a fabric configuration server for node identification data. For a complete description of this command, see the sections dealing with node identification requests in the <i>Fibre Channel Generic Services - 4 (FC-GS-4)</i> specification published by the ANSI committee.</p>
 
-<p>The <b>HBA_SendRNIDV2</b> library routine serves a purpose very similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a> WMI method. </p>
-
-<p>The node identification data request is a common transport (CT) command that queries a fabric configuration server for node identification data. For a complete description of this command, see the sections dealing with node identification requests in the <i>Fibre Channel Generic Services - 4 (FC-GS-4)</i> specification published by the ANSI committee.</p>
-
-<p>The <b>HBA_SendRNIDV2</b> library routine serves a purpose very similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a> WMI method. </p>
+<p>The <b>HBA_SendRNIDV2</b> library routine serves a purpose very similar to the <a href="storage.sendrnid">SendRNID</a> WMI method. </p>
 
 ## -requirements
 <table>
@@ -162,13 +158,13 @@ HBA_STATUS HBA_API HBA_SendRNIDV2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557216">HBA_SendRNID</a>
+<a href="..\hbaapi\nf-hbaapi-hba-sendrnid.md">HBA_SendRNID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a>
+<a href="storage.sendrnid">SendRNID</a>
 </dt>
 </dl>
 <p> </p>

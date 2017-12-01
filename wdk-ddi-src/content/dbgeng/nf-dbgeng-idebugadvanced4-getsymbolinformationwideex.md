@@ -7,7 +7,7 @@ old-location: debugger\getsymbolinformationwideex.htm
 old-project: debugger
 ms.assetid: E862C691-133F-4FA5-A698-09CD5D0E32B3
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugAdvanced4, GetSymbolInformationWideEx, IDebugAdvanced4::GetSymbolInformationWideEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -214,7 +214,7 @@ HRESULT GetSymbolInformationWideEx(
 ### -param <i>pInfoEx</i> [out, optional]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt613240">SYMBOL_INFO_EX</a> structure. </p>
+<p>A pointer to a <a href="..\dbgeng\ns-dbgeng--symbol-info-ex.md">SYMBOL_INFO_EX</a> structure. </p>
 </dd>
 </dl>
 

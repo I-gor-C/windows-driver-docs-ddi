@@ -58,7 +58,7 @@ HRESULT GetLastErrorInfo(
 ### -param <i>pLastErrorInfo</i> 
 
 <dd>
-<p>Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548396">STI_ERROR_INFO</a> structure to receive error information.</p>
+<p>Caller-supplied pointer to an <a href="image.sti_error_info">STI_ERROR_INFO</a> structure to receive error information.</p>
 </dd>
 </dl>
 
@@ -66,9 +66,7 @@ HRESULT GetLastErrorInfo(
 <p>If the operation succeeds, the method should return S_OK. Otherwise, it should return one of the STIERR-prefixed error codes defined in <i>Stierr.h</i>.</p>
 
 ## -remarks
-<p>The method should fill in the received <a href="https://msdn.microsoft.com/library/windows/hardware/ff548396">STI_ERROR_INFO</a> structure.</p>
-
-<p>The method should fill in the received <a href="https://msdn.microsoft.com/library/windows/hardware/ff548396">STI_ERROR_INFO</a> structure.</p>
+<p>The method should fill in the received <a href="image.sti_error_info">STI_ERROR_INFO</a> structure.</p>
 
 ## -requirements
 <table>
@@ -97,7 +95,7 @@ HRESULT GetLastErrorInfo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543749">IStiDevice::GetLastErrorInfo</a>
+<a href="image.istidevice_getlasterrorinfo">IStiDevice::GetLastErrorInfo</a>
 </dt>
 </dl>
 <p> </p>

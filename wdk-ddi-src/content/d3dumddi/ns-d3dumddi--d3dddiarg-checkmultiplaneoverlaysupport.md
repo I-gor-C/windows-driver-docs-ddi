@@ -72,7 +72,7 @@ typedef struct _D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT {
 ### -field <b>pPlanes</b>
 
 <dd>
-<p>[out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh780232">D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO</a> structure that specifies support attributes that the hardware provides for multiplane overlays.</p>
+<p>[out] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddi-check-multiplane-overlay-support-plane-info.md">D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO</a> structure that specifies support attributes that the hardware provides for multiplane overlays.</p>
 </dd>
 
 ### -field <b>Supported</b>
@@ -119,7 +119,7 @@ typedef struct _D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780232">D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddi-check-multiplane-overlay-support-plane-info.md">D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO</a>
 </dt>
 <dt>
 <a href="display.pfncheckmultiplaneoverlaysupport__d3d_">pfnCheckMultiPlaneOverlaySupport (D3D)</a>

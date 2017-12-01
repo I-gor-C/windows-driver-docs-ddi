@@ -7,7 +7,7 @@ old-location: nfpdrivers\_secure_element_proto_routing_info.htm
 old-project: nfpdrivers
 ms.assetid: E22C5985-13A8-4A55-A97B-DABD7E475BD3
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: SECURE_ELEMENT_PROTO_ROUTING_INFO, SECURE_ELEMENT_PROTO_ROUTING_INFO, *PSECURE_ELEMENT_PROTO_ROUTING_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>SECURE_ELEMENT_PROTO_ROUTING_INFO
- is a member of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905628">SECURE_ELEMENT_ROUTING_TABLE_ENTRY</a>. </p>
+ is a member of <a href="..\nfcsedev\ns-nfcsedev--secure-element-routing-table-entry.md">SECURE_ELEMENT_ROUTING_TABLE_ENTRY</a>. </p>
 
 
 ## -syntax

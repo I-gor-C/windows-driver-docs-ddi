@@ -64,7 +64,7 @@ typedef struct _D3DDDIARG_UPDATEOVERLAY {
 ### -field <b>OverlayInfo</b>
 
 <dd>
-<p>[in] A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544621">D3DDDI_OVERLAYINFO</a> structure that describes the modification for the overlay. </p>
+<p>[in] A pointer to the <a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlayinfo.md">D3DDDI_OVERLAYINFO</a> structure that describes the modification for the overlay. </p>
 </dd>
 </dl>
 
@@ -99,7 +99,7 @@ typedef struct _D3DDDIARG_UPDATEOVERLAY {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-updateoverlay.md">UpdateOverlay</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544621">D3DDDI_OVERLAYINFO</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlayinfo.md">D3DDDI_OVERLAYINFO</a>
 </dt>
 </dl>
 <p> </p>

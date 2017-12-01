@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>ENUMERATE_BANDS_PARAMETERS</b> structure is used to select which band information entries are selected for return from an  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451380">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a> request.</p>
+<p>The <b>ENUMERATE_BANDS_PARAMETERS</b> structure is used to select which band information entries are selected for return from an  <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-enumerate-bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a> request.</p>
 
 
 ## -syntax
@@ -93,7 +93,7 @@ typedef struct _ENUMERATE_BANDS_PARAMETERS {
 </dl>
 </td>
 <td width="60%">
-<p>Include media encryption algorithm information in the <b>SecurityInfo</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh439578">BAND_TABLE_ENTRY</a>.</p>
+<p>Include media encryption algorithm information in the <b>SecurityInfo</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-table-entry.md">BAND_TABLE_ENTRY</a>.</p>
 </td>
 </tr>
 </table>
@@ -126,7 +126,7 @@ typedef struct _ENUMERATE_BANDS_PARAMETERS {
 </dl>
 
 ## -remarks
-<p>When <b>ENUMBANDS_ENUM_ALL_BANDS</b> is not set in <b>Flags</b>, a selection attempt is made to match a single band. A single band match is made based on the values in <b>BandID</b>, <b>BandStart</b>, and <b>BandSize</b>. Precedence is given to <b>BandID</b> for band selection. If <b>BandID</b> &gt; 0 and  <b>BandID</b> &lt; <b>MaxBandCount</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh439563">BAND_MANAGEMENT_CAPABILITIES</a> If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <b>BAND_MANAGEMENT_CAPABILITIES</b>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> and <b>BandSize</b> are used as  match criteria to select a band.</p>
+<p>When <b>ENUMBANDS_ENUM_ALL_BANDS</b> is not set in <b>Flags</b>, a selection attempt is made to match a single band. A single band match is made based on the values in <b>BandID</b>, <b>BandStart</b>, and <b>BandSize</b>. Precedence is given to <b>BandID</b> for band selection. If <b>BandID</b> &gt; 0 and  <b>BandID</b> &lt; <b>MaxBandCount</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-management-capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a> If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <b>BAND_MANAGEMENT_CAPABILITIES</b>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> and <b>BandSize</b> are used as  match criteria to select a band.</p>
 
 <p>When <b>BandStart</b> and <b>BandSize</b> are used to match a band, the first band configured at or after the <b>BandStart</b> location having the exact size of  <b>BandSize</b> is returned. If <b>BandSize</b> == 0, when <b>BandStart</b> is valid, then the first band configured at or after <b>BandStart</b> is returned.</p>
 
@@ -159,16 +159,16 @@ typedef struct _ENUMERATE_BANDS_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439563">BAND_MANAGEMENT_CAPABILITIES</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-management-capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439573">BAND_TABLE</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-table.md">BAND_TABLE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439578">BAND_TABLE_ENTRY</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-table-entry.md">BAND_TABLE_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451380">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a>
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-enumerate-bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a>
 </dt>
 </dl>
 <p> </p>

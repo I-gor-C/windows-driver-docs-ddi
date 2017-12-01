@@ -113,7 +113,7 @@ typedef struct _DXGK_PTE {
 ### -field <b>LargePage</b>
 
 <dd>
-<p>The bit can be set only when the kernel mode driver sets the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562869">DXGK_VIRTUALADDRESSCAPS</a>::<b>GpuMmu</b>.<b>LargePageSupported</b> cap. When set the page table address (<b>PageTableAddress</b> + <b>SegmentId</b>) is the memory address of an allocation. The allocation size is equal to the virtual address range, covered by the lower page table level. This flag cannot be set for the leaf page tables.</p>
+<p>The bit can be set only when the kernel mode driver sets the <a href="display.dxgk_virtualaddresscaps">DXGK_VIRTUALADDRESSCAPS</a>::<b>GpuMmu</b>.<b>LargePageSupported</b> cap. When set the page table address (<b>PageTableAddress</b> + <b>SegmentId</b>) is the memory address of an allocation. The allocation size is equal to the virtual address range, covered by the lower page table level. This flag cannot be set for the leaf page tables.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
@@ -127,7 +127,7 @@ typedef struct _DXGK_PTE {
 ### -field <b>PageTablePageSize</b>
 
 <dd>
-<p>For the level 1 page table entry defines the pages size of the leaf page table PTEs. The value is provided by the  <a href="https://msdn.microsoft.com/library/windows/hardware/dn906834">DXGK_PTE_PAGE_SIZE</a> enumerator. This value should be ignored  when dual-PTE is supported.</p>
+<p>For the level 1 page table entry defines the pages size of the leaf page table PTEs. The value is provided by the  <a href="..\d3dukmdt\ne-d3dukmdt--dxgk-pte-page-size.md">DXGK_PTE_PAGE_SIZE</a> enumerator. This value should be ignored  when dual-PTE is supported.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 

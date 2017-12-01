@@ -7,7 +7,7 @@ old-location: kernel\rtlint8touchar.htm
 old-project: kernel
 ms.assetid: 3E8BF45A-D968-4C9F-8C38-65B39665496B
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlInt8ToUChar
 ms.prod: windows-hardware
 ms.technology: windows-devices

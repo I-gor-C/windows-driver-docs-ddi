@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CDROM_SET_SPEED structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559381">IOCTL_CDROM_SET_SPEED</a> request to set the spindle speed of a CD-ROM drive during data transfers in which no data loss is permitted.</p>
+<p>The CDROM_SET_SPEED structure is used with the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-set-speed.md">IOCTL_CDROM_SET_SPEED</a> request to set the spindle speed of a CD-ROM drive during data transfers in which no data loss is permitted.</p>
 
 
 ## -syntax
@@ -60,7 +60,7 @@ typedef struct _CDROM_SET_SPEED {
 ### -field <b>RequestType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551370">CDROM_SPEED_REQUEST</a>-typed value that indicates the type of set speed operation for <a href="https://msdn.microsoft.com/library/windows/hardware/ff559381">IOCTL_CDROM_SET_SPEED</a> to perform.</p>
+<p>A <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-speed-request.md">CDROM_SPEED_REQUEST</a>-typed value that indicates the type of set speed operation for <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-set-speed.md">IOCTL_CDROM_SET_SPEED</a> to perform.</p>
 </dd>
 
 ### -field <b>ReadSpeed</b>
@@ -78,7 +78,7 @@ typedef struct _CDROM_SET_SPEED {
 ### -field <b>RotationControl</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff568045">WRITE_ROTATION</a>-typed value that indicates whether the drive uses constant angular velocity (CAV) or constant linear velocity (CLV) rotation when it writes to a CD.</p>
+<p>A <a href="..\ntddcdrm\ne-ntddcdrm--write-rotation.md">WRITE_ROTATION</a>-typed value that indicates whether the drive uses constant angular velocity (CAV) or constant linear velocity (CLV) rotation when it writes to a CD.</p>
 </dd>
 </dl>
 
@@ -102,16 +102,16 @@ typedef struct _CDROM_SET_SPEED {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551369">CDROM_SET_STREAMING</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-set-streaming.md">CDROM_SET_STREAMING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551370">CDROM_SPEED_REQUEST</a>
+<a href="..\ntddcdrm\ne-ntddcdrm--cdrom-speed-request.md">CDROM_SPEED_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559381">IOCTL_CDROM_SET_SPEED</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-set-speed.md">IOCTL_CDROM_SET_SPEED</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568045">WRITE_ROTATION</a>
+<a href="..\ntddcdrm\ne-ntddcdrm--write-rotation.md">WRITE_ROTATION</a>
 </dt>
 </dl>
 <p> </p>

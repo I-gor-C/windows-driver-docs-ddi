@@ -73,7 +73,7 @@ typedef struct _DXGKARG_COMMITVIDPN {
 ### -field <b>MonitorConnectivityChecks</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546082">D3DKMDT_MONITOR_CONNECTIVITY_CHECKS</a> enumerator (<b>D3DKMDT_MCC_IGNORE</b> or <b>D3DKMDT_MCC_ENFORCE</b>) that specifies whether to verify that video outputs in the new topology have monitors connected. If this member is equal to <b>D3DKMDT_MCC_ENFORCE</b> and one of the video outputs in the new VidPN's topology does not have a monitor connected, <i>DxgkDdiCommitVidPn</i> must leave the currently active VidPN in place and return STATUS_GRAPHICS_INVALID_VIDPN_TOPOLOGY. If this member is equal to D3DKMDT_MCC_IGNORE, <i>DxgkDdiCommitVidPn</i> can make the new VidPN active without checking to see whether any video outputs have monitors connected.</p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-connectivity-checks.md">D3DKMDT_MONITOR_CONNECTIVITY_CHECKS</a> enumerator (<b>D3DKMDT_MCC_IGNORE</b> or <b>D3DKMDT_MCC_ENFORCE</b>) that specifies whether to verify that video outputs in the new topology have monitors connected. If this member is equal to <b>D3DKMDT_MCC_ENFORCE</b> and one of the video outputs in the new VidPN's topology does not have a monitor connected, <i>DxgkDdiCommitVidPn</i> must leave the currently active VidPN in place and return STATUS_GRAPHICS_INVALID_VIDPN_TOPOLOGY. If this member is equal to D3DKMDT_MCC_IGNORE, <i>DxgkDdiCommitVidPn</i> can make the new VidPN active without checking to see whether any video outputs have monitors connected.</p>
 </dd>
 
 ### -field <b>hPrimaryAllocation</b>
@@ -85,7 +85,7 @@ typedef struct _DXGKARG_COMMITVIDPN {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff557556">DXGKARG_COMMITVIDPN_FLAGS</a> structure that identifies details about a call to the <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a> function.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-commitvidpn-flags.md">DXGKARG_COMMITVIDPN_FLAGS</a> structure that identifies details about a call to the <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a> function.</p>
 </dd>
 </dl>
 
@@ -120,7 +120,7 @@ typedef struct _DXGKARG_COMMITVIDPN {
 <a href="display.dxgkddicommitvidpn">DxgkDdiCommitVidPn</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546082">D3DKMDT_MONITOR_CONNECTIVITY_CHECKS</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-connectivity-checks.md">D3DKMDT_MONITOR_CONNECTIVITY_CHECKS</a>
 </dt>
 </dl>
 <p> </p>

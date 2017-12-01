@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USB_TOPOLOGY_ADDRESS</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537263">IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS</a> I/O request to retrieve information about a USB device?s location in the USB device tree. </p>
+<p>The <b>USB_TOPOLOGY_ADDRESS</b> structure is used with the <a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-get-topology-address.md">IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS</a> I/O request to retrieve information about a USB device?s location in the USB device tree. </p>
 
 
 ## -syntax
@@ -118,10 +118,10 @@ typedef struct _USB_TOPOLOGY_ADDRESS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537263">IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-get-topology-address.md">IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

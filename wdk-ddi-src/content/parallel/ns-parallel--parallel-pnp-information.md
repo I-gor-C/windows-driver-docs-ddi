@@ -130,13 +130,13 @@ typedef struct _PARALLEL_PNP_INFORMATION {
 ### -field <b>TrySetChipMode</b>
 
 <dd>
-<p>Pointer to the system-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff544542">PPARALLEL_SET_CHIP_MODE</a> callback that a kernel-mode driver can use to change the operating mode of the parallel port.</p>
+<p>Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel-set-chip-mode.md">PPARALLEL_SET_CHIP_MODE</a> callback that a kernel-mode driver can use to change the operating mode of the parallel port.</p>
 </dd>
 
 ### -field <b>ClearChipMode</b>
 
 <dd>
-<p>Pointer to the system-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff544398">PPARALLEL_CLEAR_CHIP_MODE</a> callback that a kernel-mode driver can use to clear the operating mode of the parallel port.</p>
+<p>Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel-clear-chip-mode.md">PPARALLEL_CLEAR_CHIP_MODE</a> callback that a kernel-mode driver can use to clear the operating mode of the parallel port.</p>
 </dd>
 
 ### -field <b>FifoDepth</b>
@@ -172,13 +172,13 @@ typedef struct _PARALLEL_PNP_INFORMATION {
 ### -field <b>TrySelectDevice</b>
 
 <dd>
-<p>Pointer to the system-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff544767">PPARALLEL_TRY_SELECT_ROUTINE</a> callback that a kernel-mode driver can use to attempt to select an IEEE 1284.3 device.</p>
+<p>Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel-try-select-routine.md">PPARALLEL_TRY_SELECT_ROUTINE</a> callback that a kernel-mode driver can use to attempt to select an IEEE 1284.3 device.</p>
 </dd>
 
 ### -field <b>DeselectDevice</b>
 
 <dd>
-<p>Pointer to the system-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff544504">PPARALLEL_DESELECT_ROUTINE</a> callback that a kernel-mode driver can use to deselect an IEEE 1284.3 device.</p>
+<p>Pointer to the system-supplied <a href="..\parallel\nc-parallel-pparallel-deselect-routine.md">PPARALLEL_DESELECT_ROUTINE</a> callback that a kernel-mode driver can use to deselect an IEEE 1284.3 device.</p>
 </dd>
 
 ### -field <b>Context</b>
@@ -220,31 +220,31 @@ typedef struct _PARALLEL_PNP_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543996">IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-get-more-parallel-port-info.md">IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543997">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-get-parallel-pnp-info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544002">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-get-parallel-port-info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544207">MORE_PARALLEL_PORT_INFORMATION</a>
+<a href="..\parallel\ns-parallel--more-parallel-port-information.md">MORE_PARALLEL_PORT_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544322">PARALLEL_PORT_INFORMATION</a>
+<a href="..\parallel\ns-parallel--parallel-port-information.md">PARALLEL_PORT_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544398">PPARALLEL_CLEAR_CHIP_MODE</a>
+<a href="..\parallel\nc-parallel-pparallel-clear-chip-mode.md">PPARALLEL_CLEAR_CHIP_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544504">PPARALLEL_DESELECT_ROUTINE</a>
+<a href="..\parallel\nc-parallel-pparallel-deselect-routine.md">PPARALLEL_DESELECT_ROUTINE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544542">PPARALLEL_SET_CHIP_MODE</a>
+<a href="..\parallel\nc-parallel-pparallel-set-chip-mode.md">PPARALLEL_SET_CHIP_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544767">PPARALLEL_TRY_SELECT_ROUTINE</a>
+<a href="..\parallel\nc-parallel-pparallel-try-select-routine.md">PPARALLEL_TRY_SELECT_ROUTINE</a>
 </dt>
 </dl>
 <p> </p>

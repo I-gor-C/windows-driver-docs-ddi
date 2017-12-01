@@ -80,7 +80,7 @@ typedef struct _SERIAL_CHARS {
 ### -field <b>EventChar</b>
 
 <dd>
-<p>The event character. Receipt of this character signals a serial communication event if the SERIAL_EV_RXFLAG flag bit is set in the current wait mask. The wait mask is set by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546780">IOCTL_SERIAL_SET_WAIT_MASK</a> request. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff546805">IOCTL_SERIAL_WAIT_ON_MASK</a> request initiates a wait for the events in the wait mask.</p>
+<p>The event character. Receipt of this character signals a serial communication event if the SERIAL_EV_RXFLAG flag bit is set in the current wait mask. The wait mask is set by the <a href="..\ntddser\ni-ntddser-ioctl-serial-set-wait-mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a> request. The <a href="..\ntddser\ni-ntddser-ioctl-serial-wait-on-mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a> request initiates a wait for the events in the wait mask.</p>
 </dd>
 
 ### -field <b>XonChar</b>
@@ -97,7 +97,7 @@ typedef struct _SERIAL_CHARS {
 </dl>
 
 ## -remarks
-<p>This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546688">IOCTL_SERIAL_SET_CHARS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff546558">IOCTL_SERIAL_GET_CHARS</a> requests.</p>
+<p>This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl-serial-set-chars.md">IOCTL_SERIAL_SET_CHARS</a> and <a href="..\ntddser\ni-ntddser-ioctl-serial-get-chars.md">IOCTL_SERIAL_GET_CHARS</a> requests.</p>
 
 <p>An <b>IOCTL_SERIAL_SET_CHARS</b> request to set the XON and XOFF characters to the same value will fail.</p>
 
@@ -118,16 +118,16 @@ typedef struct _SERIAL_CHARS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546558">IOCTL_SERIAL_GET_CHARS</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-get-chars.md">IOCTL_SERIAL_GET_CHARS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546688">IOCTL_SERIAL_SET_CHARS</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-set-chars.md">IOCTL_SERIAL_SET_CHARS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546780">IOCTL_SERIAL_SET_WAIT_MASK</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-set-wait-mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546805">IOCTL_SERIAL_WAIT_ON_MASK</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-wait-on-mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
 </dt>
 </dl>
 <p> </p>

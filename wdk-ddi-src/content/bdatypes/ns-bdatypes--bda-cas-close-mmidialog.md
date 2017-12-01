@@ -7,7 +7,7 @@ old-location: stream\bda_cas_close_mmidialog.htm
 old-project: stream
 ms.assetid: 430580CF-F2FB-4684-B681-361E74D8EABD
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_CAS_CLOSE_MMIDIALOG, BDA_CAS_CLOSE_MMIDIALOG, *PBDA_CAS_CLOSE_MMIDIALOG
 ms.prod: windows-hardware
 ms.technology: windows-devices

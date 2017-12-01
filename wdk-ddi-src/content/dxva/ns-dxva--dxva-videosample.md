@@ -72,13 +72,13 @@ typedef struct _DXVA_VideoSample {
 ### -field <b>SampleFormat</b>
 
 <dd>
-<p>Specifies the format of the sample as defined by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564045">DXVA_SampleFormat</a> structure.</p>
+<p>Specifies the format of the sample as defined by a <a href="..\dxva\ne-dxva--dxva-sampleformat.md">DXVA_SampleFormat</a> structure.</p>
 </dd>
 
 ### -field <b>lpDDSSrcSurface</b>
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a> structure.</p>
+<p>Pointer to a <a href="display.dd_surface_local">DD_SURFACE_LOCAL</a> structure.</p>
 </dd>
 </dl>
 
@@ -102,13 +102,13 @@ typedef struct _DXVA_VideoSample {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563912">DXVA_DeinterlaceBlt</a>
+<a href="..\dxva\ns-dxva--dxva-deinterlaceblt.md">DXVA_DeinterlaceBlt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564045">DXVA_SampleFormat</a>
+<a href="..\dxva\ne-dxva--dxva-sampleformat.md">DXVA_SampleFormat</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
+<a href="display.dd_surface_local">DD_SURFACE_LOCAL</a>
 </dt>
 </dl>
 <p> </p>

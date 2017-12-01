@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOfferAllocations(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406482">D3DKMT_OFFERALLOCATIONS</a> structure that defines memory allocations that the driver offers for reuse.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-offerallocations.md">D3DKMT_OFFERALLOCATIONS</a> structure that defines memory allocations that the driver offers for reuse.</p>
 </dd>
 </dl>
 
@@ -138,10 +138,10 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOfferAllocations(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406482">D3DKMT_OFFERALLOCATIONS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-offerallocations.md">D3DKMT_OFFERALLOCATIONS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439451">D3DKMTReclaimAllocations</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreclaimallocations.md">D3DKMTReclaimAllocations</a>
 </dt>
 </dl>
 <p> </p>

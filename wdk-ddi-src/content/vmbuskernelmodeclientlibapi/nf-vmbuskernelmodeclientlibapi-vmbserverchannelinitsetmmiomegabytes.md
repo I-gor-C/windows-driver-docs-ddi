@@ -7,7 +7,7 @@ old-location: netvista\vmbserverchannelinitsetmmiomegabytes.htm
 old-project: netvista
 ms.assetid: 9E19BCC0-5529-470C-BF69-521FEFA3303E
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbServerChannelInitSetMmioMegabytes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,13 +90,6 @@ space, in megabytes, to reserve.</p>
 <p> </p>
 
 ## -remarks
-<p>This function exists as a convenience for driver creators.
-Everything it does could be done by interacting the with the guest plug-and-play
-manager and requesting memory-mapped I/O space directly.  It is
-a common requirement that the Windows and Linux VMBus drivers have
-the capacity to reserve MMIO space on behalf of the client.  This function allows the
-server endpoint to suggest the right amount of MMIO space to reserve.</p>
-
 <p>This function exists as a convenience for driver creators.
 Everything it does could be done by interacting the with the guest plug-and-play
 manager and requesting memory-mapped I/O space directly.  It is

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff536427">IOCTL_BIOMETRIC_CALIBRATE</a> IOCTL returns the WINBIO_CALIBRATION_INFO structure as output.</p>
+<p>The <a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-calibrate.md">IOCTL_BIOMETRIC_CALIBRATE</a> IOCTL returns the WINBIO_CALIBRATION_INFO structure as output.</p>
 
 
 ## -syntax
@@ -103,7 +103,7 @@ typedef struct _WINBIO_CALIBRATION_INFO {
 ### -field <b>CalibrationData</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536469">WINBIO_DATA</a> that contains calibration data specific to this sensor.  This member is optional.</p>
+<p>A structure of type <a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-data.md">WINBIO_DATA</a> that contains calibration data specific to this sensor.  This member is optional.</p>
 </dd>
 </dl>
 

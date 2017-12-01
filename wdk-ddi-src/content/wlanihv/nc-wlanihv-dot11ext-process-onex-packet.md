@@ -7,7 +7,7 @@ old-location: netvista\dot11extprocessonexpacket.htm
 old-project: netvista
 ms.assetid: 796c2976-b7b1-49ea-bf23-c018efd228ee
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -89,27 +88,7 @@ DWORD WINAPI * Dot11ExtProcessOneXPacket(
 
 ## -remarks
 <p>When it calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547610">Dot11ExtStartOneX</a> function, the IHV
-    Extensions DLL initiates an 802.1X authentication operation by using the 802.1X module of the Native
-    802.11 framework. This allows the DLL to use the standard extensible authentication protocol (EAP)
-    algorithms that are supported by the operating system.</p>
-
-<p>While the 802.1X authentication operation is pending, the IHV Extensions DLL forwards received EAP
-    over LAN (EAPOL) packets to the operating system through a call to the 
-    <b>Dot11ExtProcessOneXPacket</b> function. The IHV Extensions DLL receives these
-    packets through the 
-    <a href="..\wlanihv\nc-wlanihv-dot11extihv-receive-packet.md">Dot11ExtIhvReceivePacket</a> IHV
-    Handler function.</p>
-
-<p>For more information about EAPOL packets, refer to Clause 7 of the IEEE 802.1X-2001 standard.</p>
-
-<p>For more information about using the 802.1X module for authentication, see 
-    <a href="netvista.interface_to_the_native_802_11_802_1x_module">Interface to the Native
-    802.11 802.1X Module</a>
-</p>
-
-<p>When it calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547610">Dot11ExtStartOneX</a> function, the IHV
+    <a href="..\wlanihv\nc-wlanihv-dot11ext-onex-start.md">Dot11ExtStartOneX</a> function, the IHV
     Extensions DLL initiates an 802.1X authentication operation by using the 802.1X module of the Native
     802.11 framework. This allows the DLL to use the standard extensible authentication protocol (EAP)
     algorithms that are supported by the operating system.</p>
@@ -174,12 +153,12 @@ DWORD WINAPI * Dot11ExtProcessOneXPacket(
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-receive-packet.md">Dot11ExtIhvReceivePacket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547610">Dot11ExtStartOneX</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-onex-start.md">Dot11ExtStartOneX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547614">Dot11ExtStopOneX</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-onex-stop.md">Dot11ExtStopOneX</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_PROCESS_ONEX_PACKET callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_PROCESS_ONEX_PACKET callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

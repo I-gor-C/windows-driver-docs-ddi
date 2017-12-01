@@ -65,13 +65,13 @@ typedef struct _DXGKARG_ENUMVIDPNCOFUNCMODALITY {
 ### -field <b>EnumPivotType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546003">D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE</a> enumerator that supplies the enumeration pivot type.</p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-enumcofuncmodality-pivot-type.md">D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE</a> enumerator that supplies the enumeration pivot type.</p>
 </dd>
 
 ### -field <b>EnumPivot</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561064">DXGK_ENUM_PIVOT</a> structure.</p>
+<p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-enum-pivot.md">DXGK_ENUM_PIVOT</a> structure.</p>
 </dd>
 </dl>
 
@@ -105,13 +105,13 @@ typedef struct _DXGKARG_ENUMVIDPNCOFUNCMODALITY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561064">DXGK_ENUM_PIVOT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-enum-pivot.md">DXGK_ENUM_PIVOT</a>
 </dt>
 <dt>
 <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546003">D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-enumcofuncmodality-pivot-type.md">D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE</a>
 </dt>
 </dl>
 <p> </p>

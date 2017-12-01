@@ -71,7 +71,7 @@ typedef struct _D3DKMT_GETSHAREDPRIMARYHANDLE {
 ### -field <b>hSharedPrimary</b>
 
 <dd>
-<p>[out] A handle to the global shared primary surface if a shared handle currently exists. The shared handle is returned from the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547015">D3DKMTGetSharedPrimaryHandle</a> function.</p>
+<p>[out] A handle to the global shared primary surface if a shared handle currently exists. The shared handle is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetsharedprimaryhandle.md">D3DKMTGetSharedPrimaryHandle</a> function.</p>
 </dd>
 </dl>
 
@@ -103,7 +103,7 @@ typedef struct _D3DKMT_GETSHAREDPRIMARYHANDLE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547015">D3DKMTGetSharedPrimaryHandle</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetsharedprimaryhandle.md">D3DKMTGetSharedPrimaryHandle</a>
 </dt>
 </dl>
 <p> </p>

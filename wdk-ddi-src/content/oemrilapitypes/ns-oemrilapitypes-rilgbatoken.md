@@ -7,7 +7,7 @@ old-location: netvista\rilgbatoken.htm
 old-project: netvista
 ms.assetid: f842d945-1d1e-4f0b-9cc9-82a8401c170a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILGBATOKEN, RILGBATOKEN, *LPRILGBATOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices

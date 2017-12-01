@@ -46,28 +46,28 @@ req.iface:
 ## -ioctlparameters
 
 ### -input-buffer
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure. </p>
+<p>A <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure. </p>
 
 ### -input-buffer-length
-<p>The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure. </p>
+<p>The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure. </p>
 
-<p>The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure. </p>
+<p>The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure. </p>
 
 ### -output-buffer
-<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure that the client allocates to output information.</p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure that the client allocates to output information.</p>
 
-<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure that the client allocates to output information.</p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure that the client allocates to output information.</p>
 
-<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure that the client allocates to output information.</p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure that the client allocates to output information.</p>
 
 ### -output-buffer-length
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure.</p>
+<p>The size of a <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure.</p>
 
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure.</p>
+<p>The size of a <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure.</p>
 
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure.</p>
+<p>The size of a <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure.</p>
 
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure.</p>
+<p>The size of a <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure.</p>
 
 ### -in-out-buffer
 
@@ -139,10 +139,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544046">IOCTL_INTERNAL_PARCLASS_DISCONNECT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parclass-disconnect.md">IOCTL_INTERNAL_PARCLASS_DISCONNECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a>
+<a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

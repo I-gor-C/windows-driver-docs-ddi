@@ -58,7 +58,7 @@ typedef struct _FEATURE_DATA_CDRW_CAV_WRITE {
 ### -field <b>Header</b>
 
 <dd>
-<p>Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
+<p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
 ### -field <b>Reserved1</b>
@@ -88,10 +88,10 @@ typedef struct _FEATURE_DATA_CDRW_CAV_WRITE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
+<a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>
+<a href="..\ntddmmc\ne-ntddmmc--feature-number.md">FEATURE_NUMBER</a>
 </dt>
 </dl>
 <p> </p>

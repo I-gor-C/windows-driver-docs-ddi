@@ -62,13 +62,13 @@ NTSTATUS __stdcall HidP_SetData(
 ### -param <i>ReportType</i> [in]
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.</p>
+<p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.</p>
 </dd>
 
 ### -param <i>DataList</i> [in, out]
 
 <dd>
-<p>Pointer to a caller-allocated array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539699">HIDP_DATA</a> structures that specify which buttons and usage values to set.</p>
+<p>Pointer to a caller-allocated array of <a href="..\hidpi\ns-hidpi--hidp-data.md">HIDP_DATA</a> structures that specify which buttons and usage values to set.</p>
 </dd>
 
 ### -param <i>DataLength</i> [in, out]
@@ -92,7 +92,7 @@ NTSTATUS __stdcall HidP_SetData(
 ### -param <i>ReportLength</i> [in]
 
 <dd>
-<p>Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a> returns in a collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.</p>
+<p>Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a> returns in a collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
 </dd>
 </dl>
 
@@ -103,7 +103,7 @@ NTSTATUS __stdcall HidP_SetData(
 <dt><b>HIDP_STATUS_INVALID_PREPARSED_DATA</b></dt>
 </dl><p>The preparsed data specified by <i>PreparsedData</i> is not valid.</p><dl>
 <dt><b>HIDP_STATUS_INVALID_REPORT_LENGTH</b></dt>
-</dl><p>The size, in bytes, of the HID report is not equal to the length specified in the collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure for the specified report type.</p><dl>
+</dl><p>The size, in bytes, of the HID report is not equal to the length specified in the collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure for the specified report type.</p><dl>
 <dt><b>HIDP_STATUS_INVALID_REPORT_TYPE</b></dt>
 </dl><p><i>ReportType</i> is not valid.</p><dl>
 <dt><b>HIDP_STATUS_REPORT_DOES_NOT_EXIST</b></dt>
@@ -129,49 +129,11 @@ NTSTATUS __stdcall HidP_SetData(
 <p> </p>
 
 ## -remarks
-<p>Except for usage value arrays, a user-mode application or kernel-mode driver can use <b>HidP_SetData</b> to set buttons and usage values in a report. To set a usage value array, an application or driver must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539801">HidP_SetUsageValueArray</a>.</p>
+<p>Except for usage value arrays, a user-mode application or kernel-mode driver can use <b>HidP_SetData</b> to set buttons and usage values in a report. To set a usage value array, an application or driver must use <a href="..\hidpi\nf-hidpi-hidp-setusagevaluearray.md">HidP_SetUsageValueArray</a>.</p>
 
 <p><b>HidP_SetData</b> sets the output value of <i>DataLength</i> as follows:</p>
 
-<p></p><dl>
-<dt><a id="ReportType__PreparsedData__Report__or_ReportLength_are_not_valid."></a><a id="reporttype__preparseddata__report__or_reportlength_are_not_valid."></a><a id="REPORTTYPE__PREPARSEDDATA__REPORT__OR_REPORTLENGTH_ARE_NOT_VALID."></a><i>ReportType</i>, <i>PreparsedData</i>, <i>Report</i>, or <i>ReportLength</i> are not valid.</dt>
-<dd>
-<p>The input value is unchanged.</p>
-</dd>
-<dt><a id="All_control_data_was_successfully_set."></a><a id="all_control_data_was_successfully_set."></a><a id="ALL_CONTROL_DATA_WAS_SUCCESSFULLY_SET."></a>All control data was successfully set.</dt>
-<dd>
-<p>The input value is unchanged.</p>
-</dd>
-<dt><a id="A_control_s_data_could_not_be_set."></a><a id="a_control_s_data_could_not_be_set."></a><a id="A_CONTROL_S_DATA_COULD_NOT_BE_SET."></a>A control's data could not be set.</dt>
-<dd>
-<p>Set to the index of the <i>DataList</i> member that caused the error.</p>
-</dd>
-</dl><p>The input value is unchanged.</p>
-
-<p>The input value is unchanged.</p>
-
-<p>Set to the index of the <i>DataList</i> member that caused the error.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p>Except for usage value arrays, a user-mode application or kernel-mode driver can use <b>HidP_SetData</b> to set buttons and usage values in a report. To set a usage value array, an application or driver must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539801">HidP_SetUsageValueArray</a>.</p>
-
-<p><b>HidP_SetData</b> sets the output value of <i>DataLength</i> as follows:</p>
-
-<p></p><dl>
-<dt><a id="ReportType__PreparsedData__Report__or_ReportLength_are_not_valid."></a><a id="reporttype__preparseddata__report__or_reportlength_are_not_valid."></a><a id="REPORTTYPE__PREPARSEDDATA__REPORT__OR_REPORTLENGTH_ARE_NOT_VALID."></a><i>ReportType</i>, <i>PreparsedData</i>, <i>Report</i>, or <i>ReportLength</i> are not valid.</dt>
-<dd>
-<p>The input value is unchanged.</p>
-</dd>
-<dt><a id="All_control_data_was_successfully_set."></a><a id="all_control_data_was_successfully_set."></a><a id="ALL_CONTROL_DATA_WAS_SUCCESSFULLY_SET."></a>All control data was successfully set.</dt>
-<dd>
-<p>The input value is unchanged.</p>
-</dd>
-<dt><a id="A_control_s_data_could_not_be_set."></a><a id="a_control_s_data_could_not_be_set."></a><a id="A_CONTROL_S_DATA_COULD_NOT_BE_SET."></a>A control's data could not be set.</dt>
-<dd>
-<p>Set to the index of the <i>DataList</i> member that caused the error.</p>
-</dd>
-</dl><p>The input value is unchanged.</p>
+<p></p>
 
 <p>The input value is unchanged.</p>
 
@@ -235,25 +197,25 @@ NTSTATUS __stdcall HidP_SetData(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539699">HIDP_DATA</a>
+<a href="..\hidpi\ns-hidpi--hidp-data.md">HIDP_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539718">HidP_GetData</a>
+<a href="..\hidpi\nf-hidpi-hidp-getdata.md">HidP_GetData</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539792">HidP_SetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp-setusages.md">HidP_SetUsages</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539801">HidP_SetUsageValueArray</a>
+<a href="..\hidpi\nf-hidpi-hidp-setusagevaluearray.md">HidP_SetUsageValueArray</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539819">HidP_UnsetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp-unsetusages.md">HidP_UnsetUsages</a>
 </dt>
 </dl>
 <p> </p>

@@ -83,7 +83,7 @@ typedef struct _D3DKMDT_FREQUENCY_RANGE {
 </dl>
 
 ## -remarks
-<p>The <b>RangeLimits</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546103">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a D3DKMDT_FREQUENCY_RANGE structure.</p>
+<p>The <b>RangeLimits</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-monitor-frequency-range.md">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a D3DKMDT_FREQUENCY_RANGE structure.</p>
 
 ## -requirements
 <table>
@@ -110,7 +110,7 @@ typedef struct _D3DKMDT_FREQUENCY_RANGE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568430">Monitor Frequency Range Set Interface</a>
+<a href="display.monitor_frequency_range_set_interface">Monitor Frequency Range Set Interface</a>
 </dt>
 </dl>
 <p> </p>

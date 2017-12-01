@@ -7,7 +7,7 @@ old-location: debugger\getimplicitthreaddataoffset.htm
 old-project: debugger
 ms.assetid: fe7a1afe-dc87-412c-9e35-4a1af05f9474
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects2, GetImplicitThreadDataOffset, IDebugSystemObjects2::GetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,12 +69,6 @@ HRESULT GetImplicitThreadDataOffset(
 <p> </p>
 
 ## -remarks
-<p>In kernel-mode debugging, the data structure is the KTHREAD structure for the process.</p>
-
-<p>In user-mode debugging, the data structure is the thread environment block (TEB) for the process.</p>
-
-<p>For more information about the implicit thread, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on the KTHREAD structure and TEB, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.</p>
-
 <p>In kernel-mode debugging, the data structure is the KTHREAD structure for the process.</p>
 
 <p>In user-mode debugging, the data structure is the thread environment block (TEB) for the process.</p>

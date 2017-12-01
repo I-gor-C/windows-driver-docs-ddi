@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The PROPSHEETUI_INFO_HEADER structure is used as an input parameter to an application's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a>-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_INFO_HEADER.</p>
+<p>The PROPSHEETUI_INFO_HEADER structure is used as an input parameter to an application's <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_INFO_HEADER.</p>
 
 
 ## -syntax
@@ -130,7 +130,7 @@ typedef struct _PROPSHEETUI_INFO_HEADER {
 ### -field <b>hWndParent</b>
 
 <dd>
-<p>Handle to the window to be used as the parent of the property sheet. By default, CPSUI supplies the window handle that it received for the <i>hWndOwner</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546148">CommonPropertySheetUI</a>, but the application can overwrite that handle with another.</p>
+<p>Handle to the window to be used as the parent of the property sheet. By default, CPSUI supplies the window handle that it received for the <i>hWndOwner</i> parameter to <a href="print.commonpropertysheetui">CommonPropertySheetUI</a>, but the application can overwrite that handle with another.</p>
 </dd>
 
 ### -field <b>hInst</b>

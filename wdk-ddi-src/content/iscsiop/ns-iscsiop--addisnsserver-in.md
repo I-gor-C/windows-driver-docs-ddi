@@ -81,10 +81,10 @@ typedef struct _AddiSNSServer_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550127">AddiSNSServer_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--addisnsserver-out.md">AddiSNSServer_OUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
+<a href="storage.msiscsi_operations_wmi_class">MSiSCSI_Operations WMI Class</a>
 </dt>
 </dl>
 <p> </p>

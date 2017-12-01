@@ -7,7 +7,7 @@ old-location: netvista\ndismaxgroupcount.htm
 old-project: netvista
 ms.assetid: 080707c5-cf46-4066-a241-684cdae37fee
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMaxGroupCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,28 +70,7 @@ USHORT NdisMaxGroupCount(void);
     the local computer system.</p>
 
 <p>To obtain the number of groups that are currently active, call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff560700">NdisActiveGroupCount</a> function.</p>
-
-<p>NDIS drivers call the 
-    <b>NdisMaxGroupCount</b> function to obtain the maximum number of processor groups that are included in
-    the local computer system.</p>
-
-<p>To obtain the number of groups that are currently active, call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff560700">NdisActiveGroupCount</a> function.</p>
-
-<p>NDIS drivers call the 
-    <b>NdisMaxGroupCount</b> function to obtain the maximum number of processor groups that are included in
-    the local computer system.</p>
-
-<p>To obtain the number of groups that are currently active, call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff560700">NdisActiveGroupCount</a> function.</p>
-
-<p>NDIS drivers call the 
-    <b>NdisMaxGroupCount</b> function to obtain the maximum number of processor groups that are included in
-    the local computer system.</p>
-
-<p>To obtain the number of groups that are currently active, call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff560700">NdisActiveGroupCount</a> function.</p>
+    <a href="..\ndis\nf-ndis-ndisactivegroupcount.md">NdisActiveGroupCount</a> function.</p>
 
 ## -requirements
 <table>
@@ -146,9 +125,9 @@ USHORT NdisMaxGroupCount(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560700">NdisActiveGroupCount</a>
+<a href="..\ndis\nf-ndis-ndisactivegroupcount.md">NdisActiveGroupCount</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMaxGroupCount function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMaxGroupCount function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

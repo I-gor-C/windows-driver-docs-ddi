@@ -57,7 +57,7 @@ NTSTATUS D3DKMTDestroyOverlay(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547894">D3DKMT_DESTROYOVERLAY</a> structure that contains the handle to the overlay to destroy.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyoverlay.md">D3DKMT_DESTROYOVERLAY</a> structure that contains the handle to the overlay to destroy.</p>
 </dd>
 </dl>
 
@@ -130,7 +130,7 @@ NTSTATUS D3DKMTDestroyOverlay(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547894">D3DKMT_DESTROYOVERLAY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyoverlay.md">D3DKMT_DESTROYOVERLAY</a>
 </dt>
 </dl>
 <p> </p>

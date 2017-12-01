@@ -116,7 +116,7 @@ typedef struct _D3DDDI_ISSUEQUERYFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543192">D3DDDIARG_ISSUEQUERY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-issuequery.md">D3DDDIARG_ISSUEQUERY</a>
 </dt>
 </dl>
 <p> </p>

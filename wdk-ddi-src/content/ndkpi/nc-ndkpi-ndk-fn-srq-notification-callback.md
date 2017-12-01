@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_srq_notification_callback.htm
 old-project: netvista
 ms.assetid: 3063F991-DDC5-4E52-979B-6CFCD11A604C
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ VOID NdkSrqNotificationCallback(
 ### -param <i>SrqNotificationContext</i> [in, optional]
 
 <dd>
-<p>A context area that was specified in the <i>SrqNotificationContext</i> parameter of the <i>NdkCreateSrq</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439883">NDK_FN_CREATE_SRQ</a>) function when the SRQ  object was created.</p>
+<p>A context area that was specified in the <i>SrqNotificationContext</i> parameter of the <i>NdkCreateSrq</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-create-srq.md">NDK_FN_CREATE_SRQ</a>) function when the SRQ  object was created.</p>
 </dd>
 
 ### -param <i>SrqStatus</i> [in]
@@ -101,9 +101,7 @@ VOID NdkSrqNotificationCallback(
 <p>None</p>
 
 ## -remarks
-<p>An NDK provider calls the <i>NdkSrqNotificationCallback</i> function when the number of receive requests that are queued on the SRQ falls below the minimum number of queued receive requests (<i>NotifyThreshold</i>). The   <i>NotifyThreshold</i> is an input parameter to the <i>NdkCreateSrq</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439883">NDK_FN_CREATE_SRQ</a>)  and <i>NdkModifySrq</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439903">NDK_FN_MODIFY_SRQ</a>)  functions.</p>
-
-<p>An NDK provider calls the <i>NdkSrqNotificationCallback</i> function when the number of receive requests that are queued on the SRQ falls below the minimum number of queued receive requests (<i>NotifyThreshold</i>). The   <i>NotifyThreshold</i> is an input parameter to the <i>NdkCreateSrq</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439883">NDK_FN_CREATE_SRQ</a>)  and <i>NdkModifySrq</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439903">NDK_FN_MODIFY_SRQ</a>)  functions.</p>
+<p>An NDK provider calls the <i>NdkSrqNotificationCallback</i> function when the number of receive requests that are queued on the SRQ falls below the minimum number of queued receive requests (<i>NotifyThreshold</i>). The   <i>NotifyThreshold</i> is an input parameter to the <i>NdkCreateSrq</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-create-srq.md">NDK_FN_CREATE_SRQ</a>)  and <i>NdkModifySrq</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-modify-srq.md">NDK_FN_MODIFY_SRQ</a>)  functions.</p>
 
 ## -requirements
 <table>

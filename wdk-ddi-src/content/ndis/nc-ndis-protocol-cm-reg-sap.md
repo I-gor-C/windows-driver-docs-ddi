@@ -7,7 +7,7 @@ old-location: netvista\protocolcmregistersap.htm
 old-project: netvista
 ms.assetid: 3e3e7a0e-a8d2-40b2-895b-187d24867080
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: callback
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   ProtocolCmRegisterSap (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   ProtocolCmRegisterSap (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -132,54 +128,7 @@ NDIS_STATUS ProtocolCmRegisterSap(
     switch) it should use a virtual connection to the network control agent that it established in its 
     <i>ProtocolBindAdapterEx</i> function. Stand-alone call managers communicate through the underlying
     miniport driver by calling 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561728">NdisCoSendNetBufferLists</a>.
-    Miniport drivers with integrated call-management support never call 
-    <b>NdisCoSendNetBufferLists</b>. Instead, they transmit the data directly across the network.</p>
-
-<p>In addition, 
-    <i>ProtocolCmRegisterSap</i> should perform any necessary allocations of dynamic resources and structures
-    that the call manager needs to maintain state information about the SAP on behalf of the
-    connection-oriented client. Such resources include, but are not limited to, memory buffers, data
-    structures, events, and other such similar resources. A call manager must also initialize any resources
-    it allocates before returning control to NDIS. Call managers must store the NDIS-supplied handle
-    identifying the SAP, provided at 
-    <i>NdisSapHandle</i>, in their context area for future use.</p>
-
-<p>If 
-    <i>ProtocolCmRegisterSap</i> will return NDIS_STATUS_SUCCESS, it should, after allocating the per-SAP
-    state area, set the address of this state area in 
-    <i>CallMgrSapContext</i> before returning control to NDIS. To do this, dereference 
-    <i>CallMgrSapContext</i> and store a pointer to the data area as the value of the handle. For example:</p>
-
-<p>If the given SAP that is already registered by another connection-oriented client, the call manager
-    must fail the request and return NDIS_STATUS_INVALID_DATA.</p>
-
-<p>After a call manager has registered a SAP on behalf of a connection-oriented client, it notifies that
-    client of an incoming call offer directed to that SAP by calling 
-    <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">
-    NdisCmDispatchIncomingCall</a>.</p>
-
-<p>To define a <i>ProtocolCmRegisterSap</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define a <i>ProtocolCmRegisterSap</i> function that is named "MyCmRegisterSap", use the <b>PROTOCOL_CM_REG_SAP</b> type as shown in this code example:</p>
-
-<p>Then, implement your function as follows:</p>
-
-<p>The <b>PROTOCOL_CM_REG_SAP</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_CM_REG_SAP</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
-
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. </p>
-
-<p><i>ProtocolCmMakeCall</i> communicates with network control devices or other media-specific agents, as
-    necessary, to register the SAP, as specified at 
-    <i>Sap</i>, on the network for a connection-oriented client. Such actions could include, but are not
-    limited to communicating with switching hardware, communicating with a network control station, or other
-    actions that are appropriate to the network medium.</p>
-
-<p>If a call manager is required to communicate with networking control agents (in other words, a network
-    switch) it should use a virtual connection to the network control agent that it established in its 
-    <i>ProtocolBindAdapterEx</i> function. Stand-alone call managers communicate through the underlying
-    miniport driver by calling 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561728">NdisCoSendNetBufferLists</a>.
+    <a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>.
     Miniport drivers with integrated call-management support never call 
     <b>NdisCoSendNetBufferLists</b>. Instead, they transmit the data directly across the network.</p>
 
@@ -253,13 +202,13 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561664">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561689">NdisCmRegisterSapComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmregistersapcomplete.md">NdisCmRegisterSapComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561728">NdisCoSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cm-deregister-sap.md">ProtocolCmDeregisterSap</a>
@@ -270,4 +219,4 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_REG_SAP callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_CM_REG_SAP callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

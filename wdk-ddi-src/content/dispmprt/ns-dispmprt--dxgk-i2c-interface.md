@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DXGK_I2C_INTERFACE structure contains pointers to functions in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567386">I2C interface</a>, which is implemented by the display miniport driver.</p>
+<p>The DXGK_I2C_INTERFACE structure contains pointers to functions in the <a href="display.i2c_interface">I2C interface</a>, which is implemented by the display miniport driver.</p>
 
 
 ## -syntax

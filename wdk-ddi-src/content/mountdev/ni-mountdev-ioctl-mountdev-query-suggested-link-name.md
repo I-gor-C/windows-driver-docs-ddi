@@ -54,7 +54,7 @@ req.iface:
 <text></text>
 
 ### -output-buffer
-<p>The client driver must place a variable-length structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562258">MOUNTDEV_SUGGESTED_LINK_NAME</a>, defined in <i>moundev.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. Starting at the address of the structure member <i>Name</i>, the client driver must insert the suggested persistent name.</p>
+<p>The client driver must place a variable-length structure of type <a href="..\mountdev\ns-mountdev--mountdev-suggested-link-name.md">MOUNTDEV_SUGGESTED_LINK_NAME</a>, defined in <i>moundev.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. Starting at the address of the structure member <i>Name</i>, the client driver must insert the suggested persistent name.</p>
 
 ### -output-buffer-length
 <p><b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the output buffer, which must be greater than or equal to <b>sizeof</b>(MOUNTDEV_SUGGESTED_LINK_NAME). </p>
@@ -109,7 +109,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562258">MOUNTDEV_SUGGESTED_LINK_NAME</a>
+<a href="..\mountdev\ns-mountdev--mountdev-suggested-link-name.md">MOUNTDEV_SUGGESTED_LINK_NAME</a>
 </dt>
 </dl>
 <p> </p>

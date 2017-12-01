@@ -64,7 +64,7 @@ typedef struct _DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS {
 ### -field <b>ProgressId</b>
 
 <dd>
-<p>A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh464079">DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID</a> that represents the status of the current present operation.</p>
+<p>A value of type <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-present-display-only-progress-id.md">DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID</a> that represents the status of the current present operation.</p>
 </dd>
 </dl>
 
@@ -104,7 +104,7 @@ typedef struct _DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464079">DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-present-display-only-progress-id.md">DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID</a>
 </dt>
 </dl>
 <p> </p>

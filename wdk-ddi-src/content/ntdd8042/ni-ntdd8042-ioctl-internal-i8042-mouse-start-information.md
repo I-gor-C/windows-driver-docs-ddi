@@ -48,7 +48,7 @@ req.iface:
 ## -ioctlparameters
 
 ### -input-buffer
-<p><b>Parameters.DeviceIoControl.Type3InputBuffer</b> points to an input buffer allocated by I8042prt to input an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541052">INTERNAL_I8042_START_INFORMATION</a> structure.</p>
+<p><b>Parameters.DeviceIoControl.Type3InputBuffer</b> points to an input buffer allocated by I8042prt to input an <a href="..\ntdd8042\ns-ntdd8042--internal-i8042-start-information.md">INTERNAL_I8042_START_INFORMATION</a> structure.</p>
 
 ### -input-buffer-length
 <p><b>Parameters.DeviceIoControl.InputBufferLength</b> specifies the size, in bytes, of an INTERNAL_I8042_START_INFORMATION structure.</p>
@@ -121,7 +121,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541052">INTERNAL_I8042_START_INFORMATION</a>
+<a href="..\ntdd8042\ns-ntdd8042--internal-i8042-start-information.md">INTERNAL_I8042_START_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

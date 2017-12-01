@@ -110,63 +110,9 @@ NTSTATUS RxChangeBufferingState(
 
 <p>RDBSS does not currently use a number of possible buffering options, so these options are ignored internally by RDBSS when they are set off using <b>RxChangeBufferingState</b>. These ignored buffering options include the following:</p>
 
-<p>FCB_STATE_WRITEBUFFERING_ENABLED</p>
-
-<p>FCB_STATE_READBUFFERING_ENABLED</p>
-
 <p>FCB_STATE_OPENSHARING_ENABLED</p>
 
 <p>FCB_STATE_COLLAPSING_ENABLED</p>
-
-<p>FCB_STATE_FILESIZECACHEING_ENABLED</p>
-
-<p>FCB_STATE_FILETIMECACHEING_ENABLED</p>
-
-<p>If the FCB_STATE_WRITECACHING_ENABLED buffering state is changed to off, any FCB in the system cache is flushed. </p>
-
-<p>On exit from <b>RxChangeBufferingState</b>, there is no change in resource ownership. </p>
-
-<p>If local buffering is disabled for this FCB (FCB_STATE_DISABLE_LOCAL_BUFFERING is set in the FcbState structure member of the FCB), this will disable local buffering independent of the open mode on the FCB and any default buffering options. When FCB_STATE_DISABLE_LOCAL_BUFFERING is set, the new buffering state set by <b>RxChangeBufferingState</b> will be to disable all buffering.</p>
-
-<p>If <i>ComputeNewState</i> is <b>TRUE</b>, then the <b>MRxComputeNewBufferingState</b> routine exported by the network mini-redirector is called to compute the new buffering state to use.</p>
-
-<p>If the FCB is acquired exclusively and <i>ComputeNewState</i> is <b>FALSE</b>. then <b>RxChangeBufferingState</b> will set the following buffering state options:</p>
-
-<p>FCB_STATE_WRITECACHING_ENABLED</p>
-
-<p>FCB_STATE_FILESIZECACHEING_ENABLED</p>
-
-<p>FCB_STATE_FILETIMECACHEING_ENABLED</p>
-
-<p>FCB_STATE_WRITEBUFFERING_ENABLED</p>
-
-<p>FCB_STATE_LOCK_BUFFERING_ENABLED</p>
-
-<p>FCB_STATE_READBUFFERING_ENABLED</p>
-
-<p>FCB_STATE_READCACHING_ENABLED</p>
-
-<p>To acquire the FCB exclusively requires that the FCB must not be opened with any of the following values:</p>
-
-<p>ShareAccess.SharedRead</p>
-
-<p>ShareAccess.SharedWrite</p>
-
-<p>ShareAccess.SharedDelete</p>
-
-<p>RDBSS does not currently use a number of possible buffering options, so these options are ignored internally by RDBSS when they are set off using <b>RxChangeBufferingState</b>. These ignored buffering options include the following:</p>
-
-<p>FCB_STATE_WRITEBUFFERING_ENABLED</p>
-
-<p>FCB_STATE_READBUFFERING_ENABLED</p>
-
-<p>FCB_STATE_OPENSHARING_ENABLED</p>
-
-<p>FCB_STATE_COLLAPSING_ENABLED</p>
-
-<p>FCB_STATE_FILESIZECACHEING_ENABLED</p>
-
-<p>FCB_STATE_FILETIMECACHEING_ENABLED</p>
 
 <p>If the FCB_STATE_WRITECACHING_ENABLED buffering state is changed to off, any FCB in the system cache is flushed. </p>
 
@@ -207,10 +153,10 @@ NTSTATUS RxChangeBufferingState(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554485">RxIndicateChangeOfBufferingState</a>
+<a href="..\rxprocs\nf-rxprocs-rxindicatechangeofbufferingstate.md">RxIndicateChangeOfBufferingState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554490">RxIndicateChangeOfBufferingStateForSrvOpen</a>
+<a href="..\rxprocs\nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen.md">RxIndicateChangeOfBufferingStateForSrvOpen</a>
 </dt>
 <dt>
 <a href="ifsk.the_srv_open_structure">The SRV_OPEN Structure</a>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The STORAGE_PREDICT_FAILURE structure is used in conjunction with <a href="https://msdn.microsoft.com/library/windows/hardware/ff560587">IOCTL_STORAGE_PREDICT_FAILURE</a> to report whether a device is currently predicting a failure.</p>
+<p>The STORAGE_PREDICT_FAILURE structure is used in conjunction with <a href="..\ntddstor\ni-ntddstor-ioctl-storage-predict-failure.md">IOCTL_STORAGE_PREDICT_FAILURE</a> to report whether a device is currently predicting a failure.</p>
 
 
 ## -syntax
@@ -69,7 +69,7 @@ typedef struct _STORAGE_PREDICT_FAILURE {
 </dl>
 
 ## -remarks
-<p>Upon receiving an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560587">IOCTL_STORAGE_PREDICT_FAILURE</a> device control request, the disk class driver attempts to verify if an IDE drive supports SMART. If the drive is a SCSI drive, the class driver attempts to verify if the SCSI disk supports the equivalent IDE SMART technology: Information Exception Control Page, X3T10/94-190 Rev 4. </p>
+<p>Upon receiving an <a href="..\ntddstor\ni-ntddstor-ioctl-storage-predict-failure.md">IOCTL_STORAGE_PREDICT_FAILURE</a> device control request, the disk class driver attempts to verify if an IDE drive supports SMART. If the drive is a SCSI drive, the class driver attempts to verify if the SCSI disk supports the equivalent IDE SMART technology: Information Exception Control Page, X3T10/94-190 Rev 4. </p>
 
 <p>If the device does not support failure prediction, the disk class driver fails the IRP with a status of STATUS_INVALID_DEVICE_REQUEST.</p>
 
@@ -92,7 +92,7 @@ typedef struct _STORAGE_PREDICT_FAILURE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560587">IOCTL_STORAGE_PREDICT_FAILURE</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-predict-failure.md">IOCTL_STORAGE_PREDICT_FAILURE</a>
 </dt>
 </dl>
 <p> </p>

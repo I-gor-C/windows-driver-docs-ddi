@@ -7,7 +7,7 @@ old-location: debugger\idebugregisters.htm
 old-project: debugger
 ms.assetid: a2587ea7-20cd-43be-ba71-750e699ee0ce
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -77,7 +77,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546575">GetDescription</a>
+<a href="debugger.getdescription">GetDescription</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the description of a register.</p>
@@ -85,7 +85,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546806">GetFrameOffset</a>
+<a href="debugger.getframeoffset">GetFrameOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the location of the stack frame for the current function.</p>
@@ -93,7 +93,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546881">GetIndexByName</a>
+<a href="debugger.getindexbyname">GetIndexByName</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the index of the named register.</p>
@@ -101,7 +101,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546916">GetInstructionOffset</a>
+<a href="debugger.getinstructionoffset">GetInstructionOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the location of the current thread's current instruction.</p>
@@ -109,7 +109,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547960">GetNumberRegisters</a>
+<a href="debugger.getnumberregisters">GetNumberRegisters</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the number of registers on the target computer.</p>
@@ -117,7 +117,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548403">GetStackOffset</a>
+<a href="debugger.getstackoffset">GetStackOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the current thread's current stack location.</p>
@@ -125,7 +125,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff597624">GetValue</a>
+<a href="debugger.getvalue">GetValue</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the value of one of the target's registers.</p>
@@ -133,7 +133,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549480">GetValues</a>
+<a href="debugger.getvalues">GetValues</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the value of several of the target's registers.</p>
@@ -141,7 +141,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553242">OutputRegisters</a>
+<a href="debugger.outputregisters">OutputRegisters</a>
 </td>
 <td align="left" width="63%">
 <p>Formats and sends the target's registers to the clients as output.</p>
@@ -149,7 +149,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff597642">SetValue</a>
+<a href="debugger.setvalue">SetValue</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the value of one of the target's registers.</p>
@@ -157,7 +157,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556883">SetValues</a>
+<a href="debugger.setvalues">SetValues</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the value of several of the target's registers.</p>
@@ -207,9 +207,9 @@ req.iface: IDebugSystemObjects4
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550835">IDebugRegisters2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters interface%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters interface%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

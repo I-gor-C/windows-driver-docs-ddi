@@ -103,7 +103,7 @@ NTSTATUS FltQueryQuotaInformationFile(
 ### -param <i>SidList</i> [in, optional]
 
 <dd>
-<p>A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff540298">FILE_GET_QUOTA_INFORMATION</a>-structured input buffer that specifies the quota information to be queried. This parameter is optional and can be <b>NULL</b>. </p>
+<p>A pointer to a caller-supplied <a href="..\ntifs\ns-ntifs--file-get-quota-information.md">FILE_GET_QUOTA_INFORMATION</a>-structured input buffer that specifies the quota information to be queried. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
 ### -param <i>SidListLength</i> [in]
@@ -204,13 +204,13 @@ NTSTATUS FltQueryQuotaInformationFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540298">FILE_GET_QUOTA_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-get-quota-information.md">FILE_GET_QUOTA_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451042">FltSetQuotaInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetquotainformationfile.md">FltSetQuotaInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567064">ZwQueryQuotaInformationFile</a>
+<a href="..\ntifs\nf-ntifs-zwqueryquotainformationfile.md">ZwQueryQuotaInformationFile</a>
 </dt>
 </dl>
 <p> </p>

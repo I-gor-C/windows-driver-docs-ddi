@@ -57,7 +57,7 @@ BOOLEAN FltIsFltMgrVolumeDeviceObject(
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>A pointer to the device object (<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>) to test.</p>
+<p>A pointer to the device object (<a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>) to test.</p>
 </dd>
 </dl>
 
@@ -65,8 +65,6 @@ BOOLEAN FltIsFltMgrVolumeDeviceObject(
 <p>The <b>FltIsFltMgrVolumeDeviceObject</b> routine returns <b>TRUE</b> if <i>DeviceObject</i> is a filter manager volume device object; otherwise, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>None</p>
-
 <p>None</p>
 
 ## -requirements
@@ -132,7 +130,7 @@ BOOLEAN FltIsFltMgrVolumeDeviceObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>
 </dt>
 </dl>
 <p> </p>

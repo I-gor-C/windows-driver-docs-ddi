@@ -77,23 +77,13 @@ ULONG KdPrint(
 ## -remarks
 <p><b>KdPrint</b> is identical to the <b>DbgPrint</b> routine in code that is compiled for a debug configuration.  This routine has no effect if compiled for a release configuration. Only kernel-mode drivers can call the <b>KdPrint</b> routine.</p>
 
-<p>In Microsoft Windows Server 2003 and earlier versions of Windows, the <b>DbgPrint</b> routine sends a message to the kernel debugger. In Windows Vista and later versions of Windows, <b>KdPrint</b> sends a message only if certain conditions apply. Specifically, it behaves like <a href="https://msdn.microsoft.com/library/windows/hardware/ff548100">KdPrintEx</a> with the DEFAULT component and a message importance level of DPFLTR_INFO_LEVEL. In other words, the following two function calls are identical:</p>
+<p>In Microsoft Windows Server 2003 and earlier versions of Windows, the <b>DbgPrint</b> routine sends a message to the kernel debugger. In Windows Vista and later versions of Windows, <b>KdPrint</b> sends a message only if certain conditions apply. Specifically, it behaves like <a href="..\wdm\nf-wdm-kdprintex.md">KdPrintEx</a> with the DEFAULT component and a message importance level of DPFLTR_INFO_LEVEL. In other words, the following two function calls are identical:</p>
 
 <p>For more information about message filtering, components, and message importance level, see <a href="NULL">Reading and Filtering Debugging Messages</a>.</p>
 
 <p>Unless it is absolutely necessary, you should not obtain a string from user input or another process and pass it to <b>KdPrint</b>. If you do use a string that you did not create, you must verify that this is a valid format string, and that the format codes match the argument list in type and quantity. The best coding practice is for all <i>Format</i> strings to be static and defined at compile time.</p>
 
-<p>There is no upper limit to the size of the <i>Format</i> string or the number of arguments. However, any single call to <b>KdPrint</b> will only transmit 512 bytes of information. There is also a limit to the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543632">DbgPrint</a> buffer. See <a href="devtest.reading_and_filtering_debugging_messages#ddk_the_dbgprint_buffer_and_the_debugger_tools#ddk_the_dbgprint_buffer_and_the_debugger_tools">The DbgPrint Buffer and the Debugger</a> for details.</p>
-
-<p><b>KdPrint</b> is identical to the <b>DbgPrint</b> routine in code that is compiled for a debug configuration.  This routine has no effect if compiled for a release configuration. Only kernel-mode drivers can call the <b>KdPrint</b> routine.</p>
-
-<p>In Microsoft Windows Server 2003 and earlier versions of Windows, the <b>DbgPrint</b> routine sends a message to the kernel debugger. In Windows Vista and later versions of Windows, <b>KdPrint</b> sends a message only if certain conditions apply. Specifically, it behaves like <a href="https://msdn.microsoft.com/library/windows/hardware/ff548100">KdPrintEx</a> with the DEFAULT component and a message importance level of DPFLTR_INFO_LEVEL. In other words, the following two function calls are identical:</p>
-
-<p>For more information about message filtering, components, and message importance level, see <a href="NULL">Reading and Filtering Debugging Messages</a>.</p>
-
-<p>Unless it is absolutely necessary, you should not obtain a string from user input or another process and pass it to <b>KdPrint</b>. If you do use a string that you did not create, you must verify that this is a valid format string, and that the format codes match the argument list in type and quantity. The best coding practice is for all <i>Format</i> strings to be static and defined at compile time.</p>
-
-<p>There is no upper limit to the size of the <i>Format</i> string or the number of arguments. However, any single call to <b>KdPrint</b> will only transmit 512 bytes of information. There is also a limit to the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543632">DbgPrint</a> buffer. See <a href="devtest.reading_and_filtering_debugging_messages#ddk_the_dbgprint_buffer_and_the_debugger_tools#ddk_the_dbgprint_buffer_and_the_debugger_tools">The DbgPrint Buffer and the Debugger</a> for details.</p>
+<p>There is no upper limit to the size of the <i>Format</i> string or the number of arguments. However, any single call to <b>KdPrint</b> will only transmit 512 bytes of information. There is also a limit to the size of the <a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a> buffer. See <a href="devtest.reading_and_filtering_debugging_messages#ddk_the_dbgprint_buffer_and_the_debugger_tools#ddk_the_dbgprint_buffer_and_the_debugger_tools">The DbgPrint Buffer and the Debugger</a> for details.</p>
 
 ## -requirements
 <table>
@@ -131,7 +121,7 @@ ULONG KdPrint(
 </th>
 <td width="70%">
 <dl>
-<dt>NtosKrnl.lib (See <a href="https://msdn.microsoft.com/library/windows/hardware/ff543632">DbgPrint</a>.)</dt>
+<dt>NtosKrnl.lib (See <a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -150,13 +140,13 @@ ULONG KdPrint(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543632">DbgPrint</a>
+<a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543634">DbgPrintEx</a>
+<a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548100">KdPrintEx</a>
+<a href="..\wdm\nf-wdm-kdprintex.md">KdPrintEx</a>
 </dt>
 </dl>
 <p> </p>

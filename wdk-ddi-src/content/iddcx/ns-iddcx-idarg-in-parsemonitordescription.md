@@ -77,7 +77,7 @@ typedef struct IDARG_IN_PARSEMONITORDESCRIPTION {
 
 <dd>
 <p>
-                     [out] Pointer to buffer that the driver should copy the monitor modes to if the value is non-NULL. If value is NULL, then driver should not copy any data and should just set the  <a href="https://msdn.microsoft.com/library/windows/hardware/mt761912">IDARG_OUT_PARSEMONITORDESCRIPTION</a> value <b>MonitorModeBufferOutputCount</b> to indicate the size of buffer required to store the modes.</p>
+                     [out] Pointer to buffer that the driver should copy the monitor modes to if the value is non-NULL. If value is NULL, then driver should not copy any data and should just set the  <a href="..\iddcx\ns-iddcx-idarg-out-parsemonitordescription.md">IDARG_OUT_PARSEMONITORDESCRIPTION</a> value <b>MonitorModeBufferOutputCount</b> to indicate the size of buffer required to store the modes.</p>
 </dd>
 </dl>
 
@@ -101,7 +101,7 @@ typedef struct IDARG_IN_PARSEMONITORDESCRIPTION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt761912">IDARG_OUT_PARSEMONITORDESCRIPTION</a>
+<a href="..\iddcx\ns-iddcx-idarg-out-parsemonitordescription.md">IDARG_OUT_PARSEMONITORDESCRIPTION</a>
 </dt>
 </dl>
 <p> </p>

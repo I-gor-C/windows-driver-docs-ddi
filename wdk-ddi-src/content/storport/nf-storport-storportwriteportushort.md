@@ -80,9 +80,7 @@ STORPORT_API VOID StorPortWritePortUshort(
 <p>None </p>
 
 ## -remarks
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564841">ScsiPortWritePortUshort</a>. For a buffered equivalent of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567520">StorPortWritePortBufferUshort</a>. </p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564841">ScsiPortWritePortUshort</a>. For a buffered equivalent of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567520">StorPortWritePortBufferUshort</a>. </p>
+<p>For more information, see <a href="..\srb\nf-srb-scsiportwriteportushort.md">ScsiPortWritePortUshort</a>. For a buffered equivalent of this routine, see <a href="..\storport\nf-storport-storportwriteportbufferushort.md">StorPortWritePortBufferUshort</a>. </p>
 
 ## -requirements
 <table>
@@ -121,10 +119,10 @@ STORPORT_API VOID StorPortWritePortUshort(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564841">ScsiPortWritePortUshort</a>
+<a href="..\srb\nf-srb-scsiportwriteportushort.md">ScsiPortWritePortUshort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567520">StorPortWritePortBufferUshort</a>
+<a href="..\storport\nf-storport-storportwriteportbufferushort.md">StorPortWritePortBufferUshort</a>
 </dt>
 </dl>
 <p> </p>

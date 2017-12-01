@@ -116,7 +116,7 @@ typedef struct _D3DDDI_OPENRESOURCEFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543232">D3DDDIARG_OPENRESOURCE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-openresource.md">D3DDDIARG_OPENRESOURCE</a>
 </dt>
 </dl>
 <p> </p>

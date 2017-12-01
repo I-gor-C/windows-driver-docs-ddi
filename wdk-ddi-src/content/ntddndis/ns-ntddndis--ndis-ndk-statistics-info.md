@@ -7,7 +7,7 @@ old-location: netvista\ndis_ndk_statistics_info.htm
 old-project: netvista
 ms.assetid: F3FA3790-0754-4D5E-9F27-8ECD71278520
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_NDK_STATISTICS_INFO, NDIS_NDK_STATISTICS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct _NDIS_NDK_STATISTICS_INFO {
 ### -field <b>Header</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_STATISTICS_INFO</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:</p>
+<p>An <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_STATISTICS_INFO</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:</p>
 <ul>
 <li>Set the <b>Type</b> member to <b>NDIS_OBJECT_TYPE_DEFAULT</b>.</li>
 <li>Set the <b>Revision</b> member to <b>NDIS_NDK_STATISTICS_INFO_REVISION_1</b>.</li>
@@ -69,16 +69,16 @@ typedef struct _NDIS_NDK_STATISTICS_INFO {
 ### -field <b>CounterSet</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/hh451565">NDIS_NDK_PERFORMANCE_COUNTERS</a> structure that contains the NDK performance counters.</p>
+<p>An <a href="..\ntddndis\ns-ntddndis--ndis-ndk-performance-counters.md">NDIS_NDK_PERFORMANCE_COUNTERS</a> structure that contains the NDK performance counters.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>NDIS_NDK_STATISTICS_INFO</b> structure is returned with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451813">OID_NDK_STATISTICS</a> OID. The <b>InformationBuffer</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure contains a pointer to this structure.
+<p>The <b>NDIS_NDK_STATISTICS_INFO</b> structure is returned with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451813">OID_NDK_STATISTICS</a> OID. The <b>InformationBuffer</b> member of the <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure contains a pointer to this structure.
 
 </p>
 
-<p>The NDK-capable miniport driver is required to fill in the <b>CounterSet</b> member, which is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451565">NDIS_NDK_PERFORMANCE_COUNTERS</a> structure.</p>
+<p>The NDK-capable miniport driver is required to fill in the <b>CounterSet</b> member, which is an <a href="..\ntddndis\ns-ntddndis--ndis-ndk-performance-counters.md">NDIS_NDK_PERFORMANCE_COUNTERS</a> structure.</p>
 
 ## -requirements
 <table>
@@ -121,10 +121,10 @@ typedef struct _NDIS_NDK_STATISTICS_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451565">NDIS_NDK_PERFORMANCE_COUNTERS</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-ndk-performance-counters.md">NDIS_NDK_PERFORMANCE_COUNTERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451813">OID_NDK_STATISTICS</a>
@@ -132,4 +132,4 @@ typedef struct _NDIS_NDK_STATISTICS_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_STATISTICS_INFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_STATISTICS_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

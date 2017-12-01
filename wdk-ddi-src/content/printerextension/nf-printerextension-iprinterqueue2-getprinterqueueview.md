@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Retrieves an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265392">IPrinterQueueView</a> object, and initializes the object with the range of jobs to be monitored.</p>
+<p>Retrieves an <a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a> object, and initializes the object with the range of jobs to be monitored.</p>
 <p>This method allows the user to perform job management tasks from within a UWP  device app for printers.</p>
 
 
@@ -101,10 +101,7 @@ HRESULT GetPrinterQueueView(
 <p> </p>
 
 ## -remarks
-<p>Only one <a href="https://msdn.microsoft.com/library/windows/hardware/dn265392">IPrinterQueueView</a> object can be retrieved per <a href="https://msdn.microsoft.com/library/windows/hardware/dn265389">IPrinterQueue2</a> object.
-However it is possible to move around the single view that you retrieve. In other words, it is possible to  change the positions of the monitored jobs by invoking <a href="print.iprinterqueueview_setviewrange">IPrinterQueueView::SetViewRange</a>.</p>
-
-<p>Only one <a href="https://msdn.microsoft.com/library/windows/hardware/dn265392">IPrinterQueueView</a> object can be retrieved per <a href="https://msdn.microsoft.com/library/windows/hardware/dn265389">IPrinterQueue2</a> object.
+<p>Only one <a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a> object can be retrieved per <a href="..\printerextension\nn-printerextension-iprinterqueue2.md">IPrinterQueue2</a> object.
 However it is possible to move around the single view that you retrieve. In other words, it is possible to  change the positions of the monitored jobs by invoking <a href="print.iprinterqueueview_setviewrange">IPrinterQueueView::SetViewRange</a>.</p>
 
 ## -requirements
@@ -150,10 +147,10 @@ However it is possible to move around the single view that you retrieve. In othe
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265389">IPrinterQueue2</a>
+<a href="..\printerextension\nn-printerextension-iprinterqueue2.md">IPrinterQueue2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265392">IPrinterQueueView</a>
+<a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a>
 </dt>
 </dl>
 <p> </p>

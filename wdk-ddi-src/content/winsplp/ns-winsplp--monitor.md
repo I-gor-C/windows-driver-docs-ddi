@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The MONITOR structure is obsolete and is supported only for compatibility reasons. New print monitors should implement <a href="https://msdn.microsoft.com/library/windows/hardware/ff557532">MONITOR2</a> so that they can be used with print server clusters.</p>
+<p>The MONITOR structure is obsolete and is supported only for compatibility reasons. New print monitors should implement <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> so that they can be used with print server clusters.</p>
 <p>The MONITOR structure contains pointers to the functions defined by print monitors.</p>
 
 
@@ -134,103 +134,103 @@ typedef struct _MONITOR {
 ### -field <b>pfnEnumPorts</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548754">EnumPorts</a> function. (Port monitors only.)</p>
+<p>Pointer to the print monitor's <a href="print.enumports">EnumPorts</a> function. (Port monitors only.)</p>
 </dd>
 
 ### -field <b>pfnOpenPort</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559593">OpenPort</a> function.</p>
+<p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-openport.md">OpenPort</a> function.</p>
 </dd>
 
 ### -field <b>pfnOpenPortEx</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559596">OpenPortEx</a> function. (Language monitors only.)</p>
+<p>Pointer to the print monitor's <a href="print.openportex">OpenPortEx</a> function. (Language monitors only.)</p>
 </dd>
 
 ### -field <b>pfnStartDocPort</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff562710">StartDocPort</a> function.</p>
+<p>Pointer to the print monitor's <a href="print.startdocport">StartDocPort</a> function.</p>
 </dd>
 
 ### -field <b>pfnWritePort</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563792">WritePort</a> function.</p>
+<p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-writeport.md">WritePort</a> function.</p>
 </dd>
 
 ### -field <b>pfnReadPort</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561909">ReadPort</a> function.</p>
+<p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-readport.md">ReadPort</a> function.</p>
 </dd>
 
 ### -field <b>pfnEndDocPort</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548742">EndDocPort</a> function.</p>
+<p>Pointer to the print monitor's <a href="print.enddocport">EndDocPort</a> function.</p>
 </dd>
 
 ### -field <b>pfnClosePort</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff545975">ClosePort</a> function.</p>
+<p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-closeport.md">ClosePort</a> function.</p>
 </dd>
 
 ### -field <b>pfnAddPort</b>
 
 <dd>
-<p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff545022">AddPort</a> function.</p>
+<p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.addport">AddPort</a> function.</p>
 </dd>
 
 ### -field <b>pfnAddPortEx</b>
 
 <dd>
-<p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff545025">AddPortEx</a> function. (Port monitors only.)</p>
+<p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.addportex">AddPortEx</a> function. (Port monitors only.)</p>
 </dd>
 
 ### -field <b>pfnConfigurePort</b>
 
 <dd>
-<p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546286">ConfigurePort</a> function.</p>
+<p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.configureport">ConfigurePort</a> function.</p>
 </dd>
 
 ### -field <b>pfnDeletePort</b>
 
 <dd>
-<p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff547427">DeletePort</a> function.</p>
+<p>(Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="print.deleteport">DeletePort</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetPrinterDataFromPort</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550506">GetPrinterDataFromPort</a> function.</p>
+<p>Pointer to the print monitor's <a href="print.getprinterdatafromport">GetPrinterDataFromPort</a> function.</p>
 </dd>
 
 ### -field <b>pfnSetPortTimeOuts</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff562630">SetPortTimeOuts</a> function. (Port monitors only.)</p>
+<p>Pointer to the print monitor's <a href="print.setporttimeouts">SetPortTimeOuts</a> function. (Port monitors only.)</p>
 </dd>
 
 ### -field <b>pfnXcvOpenPort</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564259">XcvOpenPort</a> function. (Port monitors only.)</p>
+<p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a> function. (Port monitors only.)</p>
 </dd>
 
 ### -field <b>pfnXcvDataPort</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564258">XcvDataPort</a> function. (Port monitors only.)</p>
+<p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-xcvdataport.md">XcvDataPort</a> function. (Port monitors only.)</p>
 </dd>
 
 ### -field <b>pfnXcvClosePort</b>
 
 <dd>
-<p>Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564254">XcvClosePort</a> function. (Port monitors only.)</p>
+<p>Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-xcvcloseport.md">XcvClosePort</a> function. (Port monitors only.)</p>
 </dd>
 </dl>
 
@@ -254,10 +254,10 @@ typedef struct _MONITOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557541">MONITORUI</a>
+<a href="..\winsplp\ns-winsplp--monitorui.md">MONITORUI</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557532">MONITOR2</a>
+<a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a>
 </dt>
 </dl>
 <p> </p>

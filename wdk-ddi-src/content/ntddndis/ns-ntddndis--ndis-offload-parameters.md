@@ -7,7 +7,7 @@ old-location: netvista\ndis_offload_parameters.htm
 old-project: netvista
 ms.assetid: ceb6647a-a43e-4ab1-88d4-49927103ecba
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS, *PNDIS_OFFLOAD_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,7 +88,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 
 <dd>
 <p>The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_OFFLOAD_PARAMETERS</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
@@ -800,23 +800,9 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
     to set the default offload configuration of the NIC.</p>
 
 <p>To access the checksum offload settings, use the following members of the <b>NDIS_OFFLOAD_PARAMETERS</b>
-    structure:</p><dl>
-<dd>
+    structure:</p>
+
 <p><b>IPv4Checksum</b></p>
-</dd>
-<dd>
-<p><b>TCPIPv4Checksum</b></p>
-</dd>
-<dd>
-<p><b>UDPIPv4Checksum</b></p>
-</dd>
-<dd>
-<p><b>TCPIPv6Checksum</b></p>
-</dd>
-<dd>
-<p><b>UDPIPv6Checksum</b></p>
-</dd>
-</dl><p><b>IPv4Checksum</b></p>
 
 <p><b>TCPIPv4Checksum</b></p>
 
@@ -828,28 +814,9 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 
 <p>The preceding members can have one of the following values:</p>
 
-<p></p><dl>
-<dt><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</dt>
-<dd>
+<p></p>
+
 <p>The miniport driver should not change the current setting.</p>
-</dd>
-<dt><a id="NDIS_OFFLOAD_PARAMETERS_TX_RX_DISABLED"></a><a id="ndis_offload_parameters_tx_rx_disabled"></a>NDIS_OFFLOAD_PARAMETERS_TX_RX_DISABLED</dt>
-<dd>
-<p>The feature that the member specifies is disabled.</p>
-</dd>
-<dt><a id="NDIS_OFFLOAD_PARAMETERS_TX_ENABLED_RX_DISABLED"></a><a id="ndis_offload_parameters_tx_enabled_rx_disabled"></a>NDIS_OFFLOAD_PARAMETERS_TX_ENABLED_RX_DISABLED</dt>
-<dd>
-<p>The feature that the member specifies is enabled for transmit and disabled for receive.</p>
-</dd>
-<dt><a id="NDIS_OFFLOAD_PARAMETERS_RX_ENABLED_TX_DISABLED"></a><a id="ndis_offload_parameters_rx_enabled_tx_disabled"></a>NDIS_OFFLOAD_PARAMETERS_RX_ENABLED_TX_DISABLED</dt>
-<dd>
-<p>The feature that the member specifies is enabled for receive and disabled for transmit.</p>
-</dd>
-<dt><a id="NDIS_OFFLOAD_PARAMETERS_TX_RX_ENABLED"></a><a id="ndis_offload_parameters_tx_rx_enabled"></a>NDIS_OFFLOAD_PARAMETERS_TX_RX_ENABLED</dt>
-<dd>
-<p>The feature that the member specifies is enabled for transmit and receive.</p>
-</dd>
-</dl><p>The miniport driver should not change the current setting.</p>
 
 <p>The feature that the member specifies is disabled.</p>
 
@@ -900,7 +867,7 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="netvista.oid_tcp_offload_hardware_capabilities">
@@ -912,4 +879,4 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

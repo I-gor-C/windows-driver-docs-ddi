@@ -152,11 +152,7 @@ VOID (*PDIRTY_PAGE_ROUTINE) (
 ## -remarks
 <p>File systems call <b>CcGetDirtyPages</b> to return dirty pages in all files that match a given log handle. <b>CcGetDirtyPages</b> searches for dirty pages in all files that match the given <i>LogHandle</i> and calls the <i>DirtyPageRoutine</i> for each page. </p>
 
-<p>To set a log handle for a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539217">CcSetLogHandleForFile</a>. </p>
-
-<p>File systems call <b>CcGetDirtyPages</b> to return dirty pages in all files that match a given log handle. <b>CcGetDirtyPages</b> searches for dirty pages in all files that match the given <i>LogHandle</i> and calls the <i>DirtyPageRoutine</i> for each page. </p>
-
-<p>To set a log handle for a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539217">CcSetLogHandleForFile</a>. </p>
+<p>To set a log handle for a file, use <a href="..\ntifs\nf-ntifs-ccsetloghandleforfile.md">CcSetLogHandleForFile</a>. </p>
 
 ## -requirements
 <table>
@@ -221,10 +217,10 @@ VOID (*PDIRTY_PAGE_ROUTINE) (
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539211">CcSetDirtyPinnedData</a>
+<a href="..\ntifs\nf-ntifs-ccsetdirtypinneddata.md">CcSetDirtyPinnedData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539217">CcSetLogHandleForFile</a>
+<a href="..\ntifs\nf-ntifs-ccsetloghandleforfile.md">CcSetLogHandleForFile</a>
 </dt>
 </dl>
 <p> </p>

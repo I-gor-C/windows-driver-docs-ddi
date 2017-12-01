@@ -88,7 +88,7 @@ typedef struct _GPIO_ENABLE_INTERRUPT_PARAMETERS {
 <li><b>LevelSensitive</b></li>
 <li><b>Latched</b></li>
 </ul>
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554239">KINTERRUPT_MODE</a>.</p>
+<p>For more information, see <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a>.</p>
 </dd>
 
 ### -field <b>Polarity</b>
@@ -102,7 +102,7 @@ typedef struct _GPIO_ENABLE_INTERRUPT_PARAMETERS {
 <li><b>InterruptFallingEdge</b></li>
 <li><b>InterruptActiveBoth</b></li>
 </ul>
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554243">KINTERRUPT_POLARITY</a>.</p>
+<p>For more information, see <a href="..\wdm\ne-wdm--kinterrupt-polarity.md">KINTERRUPT_POLARITY</a>.</p>
 </dd>
 
 ### -field <b>PullConfiguration</b>
@@ -151,24 +151,9 @@ typedef struct _GPIO_ENABLE_INTERRUPT_PARAMETERS {
 #define GPIO_PIN_PULL_CONFIGURATION_NONE (0x3)</pre>
 </p>
 
-<p></p><dl>
-<dt><a id="GPIO_PIN_PULL_CONFIGURATION_DEFAULT"></a><a id="gpio_pin_pull_configuration_default"></a>GPIO_PIN_PULL_CONFIGURATION_DEFAULT</dt>
-<dd>
+<p></p>
+
 <p>Configure the GPIO pin to use the default pull-up or pull-down configuration.</p>
-</dd>
-<dt><a id="GPIO_PIN_PULL_CONFIGURATION_PULLUP"></a><a id="gpio_pin_pull_configuration_pullup"></a>GPIO_PIN_PULL_CONFIGURATION_PULLUP</dt>
-<dd>
-<p>Configure the GPIO pin to be passively pulled up when it is not actively driven.</p>
-</dd>
-<dt><a id="GPIO_PIN_PULL_CONFIGURATION_PULLDOWN"></a><a id="gpio_pin_pull_configuration_pulldown"></a>GPIO_PIN_PULL_CONFIGURATION_PULLDOWN</dt>
-<dd>
-<p>Configure the GPIO pin to be passively pulled down when it is not actively driven.</p>
-</dd>
-<dt><a id="GPIO_PIN_PULL_CONFIGURATION_NONE"></a><a id="gpio_pin_pull_configuration_none"></a>GPIO_PIN_PULL_CONFIGURATION_NONE</dt>
-<dd>
-<p>Configure the GPIO pin to float (be neither pulled up nor pulled down) when it is not actively driven.</p>
-</dd>
-</dl><p>Configure the GPIO pin to use the default pull-up or pull-down configuration.</p>
 
 <p>Configure the GPIO pin to be passively pulled up when it is not actively driven.</p>
 
@@ -217,10 +202,10 @@ typedef struct _GPIO_ENABLE_INTERRUPT_PARAMETERS {
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439435">CLIENT_UnmaskInterrupt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554239">KINTERRUPT_MODE</a>
+<a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554243">KINTERRUPT_POLARITY</a>
+<a href="..\wdm\ne-wdm--kinterrupt-polarity.md">KINTERRUPT_POLARITY</a>
 </dt>
 </dl>
 <p> </p>

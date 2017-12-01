@@ -72,7 +72,7 @@ typedef struct _D3DKMT_GETDISPLAYMODELIST {
 ### -field <b>pModeList</b>
 
 <dd>
-<p>[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff547942">D3DKMT_DISPLAYMODE</a> structures that represent the list of display modes.</p>
+<p>[out] An array of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-displaymode.md">D3DKMT_DISPLAYMODE</a> structures that represent the list of display modes.</p>
 </dd>
 
 ### -field <b>ModeCount</b>
@@ -110,10 +110,10 @@ typedef struct _D3DKMT_GETDISPLAYMODELIST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547942">D3DKMT_DISPLAYMODE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-displaymode.md">D3DKMT_DISPLAYMODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546967">D3DKMTGetDisplayModeList</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetdisplaymodelist.md">D3DKMTGetDisplayModeList</a>
 </dt>
 </dl>
 <p> </p>

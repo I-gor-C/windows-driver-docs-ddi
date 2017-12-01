@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The DRIVER_UPGRADE_INFO_1 structure is used as an input to a printer interface DLL's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548648">DrvUpgradePrinter</a> function.</p>
+<p>The DRIVER_UPGRADE_INFO_1 structure is used as an input to a printer interface DLL's <a href="..\winddiui\nf-winddiui-drvupgradeprinter.md">DrvUpgradePrinter</a> function.</p>
 
 
 ## -syntax
@@ -89,10 +89,10 @@ typedef struct _DRIVER_UPGRADE_INFO_1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548648">DrvUpgradePrinter</a>
+<a href="..\winddiui\nf-winddiui-drvupgradeprinter.md">DrvUpgradePrinter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548527">DRIVER_UPGRADE_INFO_2</a>
+<a href="..\winddiui\ns-winddiui--driver-upgrade-info-2.md">DRIVER_UPGRADE_INFO_2</a>
 </dt>
 </dl>
 <p> </p>

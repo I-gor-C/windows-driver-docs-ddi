@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains information about the operation to reset the controller. This is used by the client driver in its <a href="https://msdn.microsoft.com/library/windows/hardware/mt187822">EVT_UCX_CONTROLLER_RESET</a> callback function.</p>
+<p>Contains information about the operation to reset the controller. This is used by the client driver in its <a href="buses.evt_ucx_controller_reset">EVT_UCX_CONTROLLER_RESET</a> callback function.</p>
 
 
 ## -syntax
@@ -77,7 +77,7 @@ typedef struct _UCX_CONTROLLER_RESET_COMPLETE_INFO {
 </dl>
 
 ## -remarks
-<p>This structure is populated by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt188035">UcxControllerResetComplete</a>.</p>
+<p>This structure is populated by a call to <a href="buses._ucxcontrollerresetcomplete">UcxControllerResetComplete</a>.</p>
 
 ## -requirements
 <table>

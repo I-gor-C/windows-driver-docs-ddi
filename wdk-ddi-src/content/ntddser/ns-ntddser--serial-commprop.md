@@ -460,7 +460,7 @@ typedef struct _SERIAL_COMMPROP {
 
 <dd>
 <p>Receive queue size. This member specifies the size, in bytes, of the serial controller driver's internal input buffer. A value of zero indicates that the buffer size is unavailable.</p>
-<p>For SerCx2 and SerCx, this member is set by the associated serial controller driver. For SerCx2, the driver typically sets this member to zero. For SerCx, the driver typically sets this member to the size of the ring buffer that SerCx uses to buffer received data. This driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406704">SerCxGetRingBufferUtilization</a> method to get the ring buffer size from SerCx.</p>
+<p>For SerCx2 and SerCx, this member is set by the associated serial controller driver. For SerCx2, the driver typically sets this member to zero. For SerCx, the driver typically sets this member to the size of the ring buffer that SerCx uses to buffer received data. This driver can call the <a href="..\sercx\nf-sercx-sercxgetringbufferutilization.md">SerCxGetRingBufferUtilization</a> method to get the ring buffer size from SerCx.</p>
 <p>Serial.sys sets this member to a nonzero value that indicates the input buffer size.</p>
 </dd>
 
@@ -484,7 +484,7 @@ typedef struct _SERIAL_COMMPROP {
 </dl>
 
 ## -remarks
-<p>This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546597">IOCTL_SERIAL_GET_PROPERTIES</a> request.</p>
+<p>This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl-serial-get-properties.md">IOCTL_SERIAL_GET_PROPERTIES</a> request.</p>
 
 ## -requirements
 <table>
@@ -503,7 +503,7 @@ typedef struct _SERIAL_COMMPROP {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546597">IOCTL_SERIAL_GET_PROPERTIES</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-get-properties.md">IOCTL_SERIAL_GET_PROPERTIES</a>
 </dt>
 </dl>
 <p> </p>

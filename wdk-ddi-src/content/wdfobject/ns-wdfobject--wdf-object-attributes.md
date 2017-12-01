@@ -7,7 +7,7 @@ old-location: wdf\wdf_object_attributes.htm
 old-project: wdf
 ms.assetid: 3331c2d8-3100-410d-9c75-33a3b55d5a49
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_OBJECT_ATTRIBUTES, WDF_OBJECT_ATTRIBUTES, *PWDF_OBJECT_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,13 +84,13 @@ typedef struct _WDF_OBJECT_ATTRIBUTES {
 ### -field <b>ExecutionLevel</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551310">WDF_EXECUTION_LEVEL</a>-typed value that specifies the maximum IRQL at which the framework will call the object's event callback functions. For a list of framework objects for which the driver can specify an <b>ExecutionLevel</b> value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff551310">WDF_EXECUTION_LEVEL</a>.</p>
+<p>A <a href="..\wdfobject\ne-wdfobject--wdf-execution-level.md">WDF_EXECUTION_LEVEL</a>-typed value that specifies the maximum IRQL at which the framework will call the object's event callback functions. For a list of framework objects for which the driver can specify an <b>ExecutionLevel</b> value, see <a href="..\wdfobject\ne-wdfobject--wdf-execution-level.md">WDF_EXECUTION_LEVEL</a>.</p>
 </dd>
 
 ### -field <b>SynchronizationScope</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552518">WDF_SYNCHRONIZATION_SCOPE</a>-typed value that specifies how the framework will synchronize execution of the object's event callback functions. For a list of framework objects for which the driver can specify a <b>SynchronizationScope</b> value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552518">WDF_SYNCHRONIZATION_SCOPE</a>.</p>
+<p>A <a href="..\wdfobject\ne-wdfobject--wdf-synchronization-scope.md">WDF_SYNCHRONIZATION_SCOPE</a>-typed value that specifies how the framework will synchronize execution of the object's event callback functions. For a list of framework objects for which the driver can specify a <b>SynchronizationScope</b> value, see <a href="..\wdfobject\ne-wdfobject--wdf-synchronization-scope.md">WDF_SYNCHRONIZATION_SCOPE</a>.</p>
 </dd>
 
 ### -field <b>ParentObject</b>
@@ -103,20 +103,20 @@ typedef struct _WDF_OBJECT_ATTRIBUTES {
 ### -field <b>ContextSizeOverride</b>
 
 <dd>
-<p>If not zero, this value overrides the <b>ContextSize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552407">WDF_OBJECT_CONTEXT_TYPE_INFO</a> structure that the <b>ContextTypeInfo</b> member references. This value is optional and can be zero. If the value is not zero, it must specify a size, in bytes, that is larger than the value that is specified for the <b>ContextSize</b> member of the WDF_OBJECT_CONTEXT_TYPE_INFO structure. For more information, see the following Remarks section.</p>
+<p>If not zero, this value overrides the <b>ContextSize</b> member of the <a href="..\wdfobject\ns-wdfobject--wdf-object-context-type-info.md">WDF_OBJECT_CONTEXT_TYPE_INFO</a> structure that the <b>ContextTypeInfo</b> member references. This value is optional and can be zero. If the value is not zero, it must specify a size, in bytes, that is larger than the value that is specified for the <b>ContextSize</b> member of the WDF_OBJECT_CONTEXT_TYPE_INFO structure. For more information, see the following Remarks section.</p>
 </dd>
 
 ### -field <b>ContextTypeInfo</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552407">WDF_OBJECT_CONTEXT_TYPE_INFO</a> structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552405">WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE</a> macro sets this pointer.</p>
+<p>A pointer to a <a href="..\wdfobject\ns-wdfobject--wdf-object-context-type-info.md">WDF_OBJECT_CONTEXT_TYPE_INFO</a> structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552405">WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE</a> macro sets this pointer.</p>
 </dd>
 </dl>
 
 ## -remarks
 <p>The WDF_OBJECT_ATTRIBUTES structure is used as an input argument to several methods that create framework objects.</p>
 
-<p>To initialize a WDF_OBJECT_ATTRIBUTES structure, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff552402">WDF_OBJECT_ATTRIBUTES_INIT</a>. </p>
+<p>To initialize a WDF_OBJECT_ATTRIBUTES structure, the driver must call <a href="..\wdfobject\nf-wdfobject-wdf-object-attributes-init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>. </p>
 
 <p>Additionally, if you are defining object-specific context information for an object, you must use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552405">WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE</a> macro. </p>
 
@@ -163,10 +163,10 @@ typedef struct _WDF_OBJECT_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548723">WdfObjectAllocateContext</a>
+<a href="..\wdfobject\nf-wdfobject-wdfobjectallocatecontext.md">WdfObjectAllocateContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552402">WDF_OBJECT_ATTRIBUTES_INIT</a>
+<a href="..\wdfobject\nf-wdfobject-wdf-object-attributes-init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>
@@ -177,4 +177,4 @@ typedef struct _WDF_OBJECT_ATTRIBUTES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_OBJECT_ATTRIBUTES structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_OBJECT_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

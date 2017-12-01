@@ -112,12 +112,9 @@ VOID RxInitializeContext(
 
 <p>If the <i>Irp</i> parameter is configured for asynchronous operation, then the <b>Flags</b> member of the RX_CONTEXT structure pointed to by <i>RxContext</i> also has the following value set:</p>
 
-<p></p><dl>
-<dt><a id="RX_CONTEXT_FLAG_ASYNC_OPERATION"></a><a id="rx_context_flag_async_operation"></a>RX_CONTEXT_FLAG_ASYNC_OPERATION</dt>
-<dd>
+<p></p>
+
 <p>When this value is set, the RX_CONTEXT structure is tagged for asynchronous operation.</p>
-</dd>
-</dl><p>When this value is set, the RX_CONTEXT structure is tagged for asynchronous operation.</p>
 
 <p>RX_CONTEXT_FLAG_ASYNC_OPERATION is also set for the following conditions:</p>
 
@@ -129,88 +126,15 @@ VOID RxInitializeContext(
 
 <p>If this is a recursive file system call (the TopLevelIrp member in the thread local storage is the current <i>Irp</i>) then the <b>Flags</b> member of <i>RxContext</i> also has the following value set:</p>
 
-<p></p><dl>
-<dt><a id="RX_CONTEXT_FLAG_RECURSIVE_CALL"></a><a id="rx_context_flag_recursive_call"></a>RX_CONTEXT_FLAG_RECURSIVE_CALL</dt>
-<dd>
 <p>When this value is set, the RX_CONTEXT structure is tagged as a recursive call.</p>
-</dd>
-</dl><p>When this value is set, the RX_CONTEXT structure is tagged as a recursive call.</p>
 
 <p>If the <i>RxDeviceObject</i> parameter indicates that this is the top level RDBSS device object, then the <b>Flags</b> member of the RX_CONTEXT structure also has the following value set:</p>
 
-<p></p><dl>
-<dt><a id="RX_CONTEXT_FLAG_THIS_DEVICE_TOP_LEVEL"></a><a id="rx_context_flag_this_device_top_level"></a>RX_CONTEXT_FLAG_THIS_DEVICE_TOP_LEVEL</dt>
-<dd>
 <p>When this value is set, the RX_CONTEXT structure is tagged as using the top level device object.</p>
-</dd>
-</dl><p>When this value is set, the RX_CONTEXT structure is tagged as using the top level device object.</p>
 
 <p>If the <i>Irp</i> FileObject Flags member has the FO_WRITE_THROUGH option set, then the <b>Flags</b> member of the RX_CONTEXT structure also has the following value set:</p>
 
-<p></p><dl>
-<dt><a id="RX_CONTEXT_FLAG_WRITE_THROUGH"></a><a id="rx_context_flag_write_through"></a>RX_CONTEXT_FLAG_WRITE_THROUGH</dt>
-<dd>
 <p>When this value is set, the RX_CONTEXT structure is tagged as set to write through mode.</p>
-</dd>
-</dl><p>When this value is set, the RX_CONTEXT structure is tagged as set to write through mode.</p>
-
-<p><b>RxInitializeContext</b> sets a number of other members in the RX_CONTEXT structure including the following:</p>
-
-<p>Sets the proper <b>NodeTypeCode</b>, <b>NodeByteSize</b>, <b>SerialNumber</b>, <b>RxDeviceObject</b>, and initializes the <b>ReferenceCount</b> to 1.</p>
-
-<p>Initializes the SyncEvent</p>
-
-<p>Initialize the associated ScavengerEntry</p>
-
-<p>Initializes the list entry of BlockedOperations</p>
-
-<p>Sets the RX_CONTEXT members based on the <i>Irp</i>. These include <b>CurrentIrp</b>, <b>OriginalThread</b>, <b>MajorFunction</b>, <b>MinorFunction</b>, <b>CurrentIrpSp</b>, <b>pFcb</b>, <b>NonPagedFcb</b>, <b>pFobx</b>, <b>pRelevantSrvOpen</b>, and <b>FobxSerialNumber</b> members.</p>
-
-<p><b>RxInitializeContext</b> is called internally by the <b>RxCreateRxContext</b> routine. So the <b>RxInitializeContext</b> routine would normally only be used by network min-redirector drivers that allocate RX_CONTEXT structures directly rather than calling the <b>RxCreateRxContext</b> routine to allocate and initialize an RX_CONTEXT structure. </p>
-
-<p>If the <i>Irp</i> parameter is configured for asynchronous operation, then the <b>Flags</b> member of the RX_CONTEXT structure pointed to by <i>RxContext</i> also has the following value set:</p>
-
-<p></p><dl>
-<dt><a id="RX_CONTEXT_FLAG_ASYNC_OPERATION"></a><a id="rx_context_flag_async_operation"></a>RX_CONTEXT_FLAG_ASYNC_OPERATION</dt>
-<dd>
-<p>When this value is set, the RX_CONTEXT structure is tagged for asynchronous operation.</p>
-</dd>
-</dl><p>When this value is set, the RX_CONTEXT structure is tagged for asynchronous operation.</p>
-
-<p>RX_CONTEXT_FLAG_ASYNC_OPERATION is also set for the following conditions:</p>
-
-<p>The <b>MajorFunction</b> member of the <i>Irp</i> is IRP_MJ_READ, IRP_MJ_WRITE, or IRP_MJ_DEVICE_CONTROL.</p>
-
-<p>The <b>MajorFunction</b> member of the <i>Irp</i> is an IRP_MJ_DIRECTORY_CONTROL and the <b>MinorFunction</b> member of the <i>IRP</i> is an IRP_MN_NOTIFY_CHANGE_DIRECTORY.</p>
-
-<p>The <b>MajorFunction</b> member of the <i>Irp</i> is an IRP_MJ_FILE_SYSTEM_CONTROL and <b>NetRoot</b> member of the associated FCB is not <b>NULL</b> and the <b>Type</b> member of the NET_ROOT is NET_ROOT_PIPE.</p>
-
-<p>If this is a recursive file system call (the TopLevelIrp member in the thread local storage is the current <i>Irp</i>) then the <b>Flags</b> member of <i>RxContext</i> also has the following value set:</p>
-
-<p></p><dl>
-<dt><a id="RX_CONTEXT_FLAG_RECURSIVE_CALL"></a><a id="rx_context_flag_recursive_call"></a>RX_CONTEXT_FLAG_RECURSIVE_CALL</dt>
-<dd>
-<p>When this value is set, the RX_CONTEXT structure is tagged as a recursive call.</p>
-</dd>
-</dl><p>When this value is set, the RX_CONTEXT structure is tagged as a recursive call.</p>
-
-<p>If the <i>RxDeviceObject</i> parameter indicates that this is the top level RDBSS device object, then the <b>Flags</b> member of the RX_CONTEXT structure also has the following value set:</p>
-
-<p></p><dl>
-<dt><a id="RX_CONTEXT_FLAG_THIS_DEVICE_TOP_LEVEL"></a><a id="rx_context_flag_this_device_top_level"></a>RX_CONTEXT_FLAG_THIS_DEVICE_TOP_LEVEL</dt>
-<dd>
-<p>When this value is set, the RX_CONTEXT structure is tagged as using the top level device object.</p>
-</dd>
-</dl><p>When this value is set, the RX_CONTEXT structure is tagged as using the top level device object.</p>
-
-<p>If the <i>Irp</i> FileObject Flags member has the FO_WRITE_THROUGH option set, then the <b>Flags</b> member of the RX_CONTEXT structure also has the following value set:</p>
-
-<p></p><dl>
-<dt><a id="RX_CONTEXT_FLAG_WRITE_THROUGH"></a><a id="rx_context_flag_write_through"></a>RX_CONTEXT_FLAG_WRITE_THROUGH</dt>
-<dd>
-<p>When this value is set, the RX_CONTEXT structure is tagged as set to write through mode.</p>
-</dd>
-</dl><p>When this value is set, the RX_CONTEXT structure is tagged as set to write through mode.</p>
 
 <p><b>RxInitializeContext</b> sets a number of other members in the RX_CONTEXT structure including the following:</p>
 
@@ -259,34 +183,34 @@ VOID RxInitializeContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554340">RxCompleteRequest</a>
+<a href="..\rxprocs\nf-rxprocs-rxcompleterequest.md">RxCompleteRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554348">RxCompleteRequest_Real</a>
+<a href="..\rxprocs\nf-rxprocs-rxcompleterequest-real.md">RxCompleteRequest_Real</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554367">RxCreateRxContext</a>
+<a href="..\rxcontx\nf-rxcontx-rxcreaterxcontext.md">RxCreateRxContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554388">RxDereference</a>
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554393">RxDereferenceAndDeleteRxContext_Real</a>
+<a href="..\rxcontx\nf-rxcontx-rxdereferenceanddeleterxcontext-real.md">RxDereferenceAndDeleteRxContext_Real</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554643">RxPrepareContextForReuse</a>
+<a href="..\rxcontx\nf-rxcontx-rxpreparecontextforreuse.md">RxPrepareContextForReuse</a>
 </dt>
 <dt>
 <a href="..\rxcontx\nf-rxcontx-rxresumeblockedoperations-serially.md">RxResumeBlockedOperations_Serially</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557377">__RxSynchronizeBlockingOperations</a>
+<a href="..\rxcontx\nf-rxcontx---rxsynchronizeblockingoperations.md">__RxSynchronizeBlockingOperations</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557382">__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</a>
+<a href="ifsk.__rxsynchronizeblockingoperationsmaybedroppingfcblock">__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554751">RX_CONTEXT</a>
+<a href="..\rxcontx\ns-rxcontx--rx-context.md">RX_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>

@@ -58,7 +58,7 @@ HDC GdiGetDC(
 ### -param <i>SpoolFileHandle</i> 
 
 <dd>
-<p>Caller-supplied spool file handle, obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549517">GdiGetSpoolFileHandle</a>.</p>
+<p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
 </dd>
 </dl>
 
@@ -66,15 +66,9 @@ HDC GdiGetDC(
 <p>If the operation succeeds, the function returns a device context handle. Otherwise the function returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>The <b>GdiGetDC</b> function is exported by gdi32.dll for use within a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p>
+<p>The <b>GdiGetDC</b> function is exported by gdi32.dll for use within a print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> function.</p>
 
-<p>A print processor can call <b>GdiGetDC</b> to obtain a printer's device context handle anytime after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549517">GdiGetSpoolFileHandle</a>. The print processor can use the context handle to call Win32 device context functions, in order to perform such operations as applying transformations on the print image.</p>
-
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
-
-<p>The <b>GdiGetDC</b> function is exported by gdi32.dll for use within a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p>
-
-<p>A print processor can call <b>GdiGetDC</b> to obtain a printer's device context handle anytime after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549517">GdiGetSpoolFileHandle</a>. The print processor can use the context handle to call Win32 device context functions, in order to perform such operations as applying transformations on the print image.</p>
+<p>A print processor can call <b>GdiGetDC</b> to obtain a printer's device context handle anytime after calling <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>. The print processor can use the context handle to call Win32 device context functions, in order to perform such operations as applying transformations on the print image.</p>
 
 <p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
 

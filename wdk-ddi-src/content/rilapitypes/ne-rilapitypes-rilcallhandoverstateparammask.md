@@ -7,7 +7,7 @@ old-location: netvista\rilcallhandoverstateparammask_2.htm
 old-project: netvista
 ms.assetid: a9a5c8dc-8ffa-4142-879c-3a782b45dbff
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

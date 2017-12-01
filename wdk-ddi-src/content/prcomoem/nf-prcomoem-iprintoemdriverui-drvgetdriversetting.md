@@ -63,7 +63,7 @@ HRESULT DrvGetDriverSetting(
 ### -param <i>pci</i> 
 
 <dd>
-<p>Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559571">OEMUIOBJ</a> structure.</p>
+<p>Caller-supplied pointer to an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>Feature</i> 
@@ -109,18 +109,6 @@ HRESULT DrvGetDriverSetting(
 <p> </p>
 
 ## -remarks
-<p>When calling the <code>IPrintOemDriverUI::DrvGetDriverSetting</code> method, a user interface plug-in can specify either a string pointer or a constant value for <i>pFeatureKeyword</i>.</p>
-
-<p>If <i>pFeatureKeyword</i> is a string, it must represent one of the following:<ul>
-<li>A feature name specified in a <a href="https://msdn.microsoft.com/ebf12f61-6194-4033-92a2-2bbccc40a6fd">Unidrv minidriver</a> GPD file, or,</li>
-<li>A keyword argument to an *<b>OpenUI</b> entry in a Pscript5 minidriver's PPD file.</li>
-</ul>
-</p>
-
-<p>The method returns one or more NULL-terminated strings in the buffer pointed to by <i>pOutput</i>. Each string represents the name of a currently selected option.The number of strings is returned in <i>pdwOptionsReturned</i>.</p>
-
-<p>If <i>pFeatureKeyword</i> is a constant, it must be one of the <b>OEMGDS_</b>-prefixed constants defined in printoem.h. The method returns the value indicated by the specified constant by placing it in the buffer pointed to by <i>pOutput</i>. The value returned in <i>pdwOptionsReturned</i> is always 1.</p>
-
 <p>When calling the <code>IPrintOemDriverUI::DrvGetDriverSetting</code> method, a user interface plug-in can specify either a string pointer or a constant value for <i>pFeatureKeyword</i>.</p>
 
 <p>If <i>pFeatureKeyword</i> is a string, it must represent one of the following:<ul>

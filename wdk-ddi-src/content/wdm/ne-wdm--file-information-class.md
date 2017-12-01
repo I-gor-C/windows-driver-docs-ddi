@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <= APC_LEVEL
+req.irql: PASSIVE_LEVEL
 req.iface: 
 req.product: Windows 10 or later.
 ---
@@ -124,43 +124,43 @@ typedef enum _FILE_INFORMATION_CLASS {
 ### -field <a id="FileDirectoryInformation"></a><a id="filedirectoryinformation"></a><a id="FILEDIRECTORYINFORMATION"></a><b>FileDirectoryInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540248">FILE_DIRECTORY_INFORMATION</a> structure.  </p>
+<p>A <a href="..\ntifs\ns-ntifs--file-directory-information.md">FILE_DIRECTORY_INFORMATION</a> structure.  </p>
 </dd>
 
 ### -field <a id="FileFullDirectoryInformation"></a><a id="filefulldirectoryinformation"></a><a id="FILEFULLDIRECTORYINFORMATION"></a><b>FileFullDirectoryInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540289">FILE_FULL_DIR_INFORMATION</a> structure.</p>
+<p>A <a href="..\ntifs\ns-ntifs--file-full-dir-information.md">FILE_FULL_DIR_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileBothDirectoryInformation"></a><a id="filebothdirectoryinformation"></a><a id="FILEBOTHDIRECTORYINFORMATION"></a><b>FileBothDirectoryInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540235">FILE_BOTH_DIR_INFORMATION</a> structure.</p>
+<p>A <a href="..\ntifs\ns-ntifs--file-both-dir-information.md">FILE_BOTH_DIR_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileBasicInformation"></a><a id="filebasicinformation"></a><a id="FILEBASICINFORMATION"></a><b>FileBasicInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545762">FILE_BASIC_INFORMATION</a> structure.</p>
+<p>A <a href="..\wdm\ns-wdm--file-basic-information.md">FILE_BASIC_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileStandardInformation"></a><a id="filestandardinformation"></a><a id="FILESTANDARDINFORMATION"></a><b>FileStandardInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545855">FILE_STANDARD_INFORMATION</a> structure.</p>
+<p>A <a href="..\wdm\ns-wdm--file-standard-information.md">FILE_STANDARD_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileInternalInformation"></a><a id="fileinternalinformation"></a><a id="FILEINTERNALINFORMATION"></a><b>FileInternalInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540318">FILE_INTERNAL_INFORMATION</a> structure.</p>
+<p>A <a href="..\ntifs\ns-ntifs--file-internal-information.md">FILE_INTERNAL_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileEaInformation"></a><a id="fileeainformation"></a><a id="FILEEAINFORMATION"></a><b>FileEaInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545773">FILE_EA_INFORMATION</a> structure.
+<p>A <a href="..\ntifs\ns-ntifs--file-ea-information.md">FILE_EA_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -168,33 +168,33 @@ typedef enum _FILE_INFORMATION_CLASS {
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545733">FILE_ACCESS_INFORMATION</a> structure.</p>
+A <a href="..\ntifs\ns-ntifs--file-access-information.md">FILE_ACCESS_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileNameInformation"></a><a id="filenameinformation"></a><a id="FILENAMEINFORMATION"></a><b>FileNameInformation</b>
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545817">FILE_NAME_INFORMATION</a> structure.</p>
+A <a href="..\ntddk\ns-ntddk--file-name-information.md">FILE_NAME_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileRenameInformation"></a><a id="filerenameinformation"></a><a id="FILERENAMEINFORMATION"></a><b>FileRenameInformation</b>
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540344">FILE_RENAME_INFORMATION</a> structure.</p>
+A <a href="..\ntifs\ns-ntifs--file-rename-information.md">FILE_RENAME_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileLinkInformation"></a><a id="filelinkinformation"></a><a id="FILELINKINFORMATION"></a><b>FileLinkInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540324">FILE_LINK_INFORMATION</a> structure.</p>
+<p>A <a href="..\ntifs\ns-ntifs--file-link-information.md">FILE_LINK_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileNamesInformation"></a><a id="filenamesinformation"></a><a id="FILENAMESINFORMATION"></a><b>FileNamesInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540329">FILE_NAMES_INFORMATION</a> structure.
+<p>A <a href="..\ntifs\ns-ntifs--file-names-information.md">FILE_NAMES_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -202,7 +202,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540344">FILE_RE
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545765">FILE_DISPOSITION_INFORMATION</a> structure.
+A <a href="..\ntddk\ns-ntddk--file-disposition-information.md">FILE_DISPOSITION_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -210,7 +210,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545765">FILE_DI
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545848">FILE_POSITION_INFORMATION</a> structure.
+A <a href="..\wdm\ns-wdm--file-position-information.md">FILE_POSITION_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -218,7 +218,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545848">FILE_PO
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a> structure.
+A <a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -226,7 +226,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FU
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545809">FILE_MODE_INFORMATION</a> structure.
+A <a href="..\ntifs\ns-ntifs--file-mode-information.md">FILE_MODE_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -234,14 +234,14 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545809">FILE_MO
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545740">FILE_ALIGNMENT_INFORMATION</a> structure.</p>
+A <a href="..\ntddk\ns-ntddk--file-alignment-information.md">FILE_ALIGNMENT_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileAllInformation"></a><a id="fileallinformation"></a><a id="FILEALLINFORMATION"></a><b>FileAllInformation</b>
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545743">FILE_ALL_INFORMATION</a> structure.
+A <a href="..\ntifs\ns-ntifs--file-all-information.md">FILE_ALL_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -249,14 +249,14 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545743">FILE_AL
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540232">FILE_ALLOCATION_INFORMATION</a> structure.</p>
+A <a href="..\ntifs\ns-ntifs--file-allocation-information.md">FILE_ALLOCATION_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileEndOfFileInformation"></a><a id="fileendoffileinformation"></a><a id="FILEENDOFFILEINFORMATION"></a><b>FileEndOfFileInformation</b>
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545780">FILE_END_OF_FILE_INFORMATION</a> structure.
+A <a href="..\ntddk\ns-ntddk--file-end-of-file-information.md">FILE_END_OF_FILE_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -264,7 +264,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545780">FILE_EN
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545817">FILE_NAME_INFORMATION</a> structure.
+A <a href="..\ntddk\ns-ntddk--file-name-information.md">FILE_NAME_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -272,7 +272,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545817">FILE_NA
 
 <dd>
 <p>
-A message buffer that contains one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff540364">FILE_STREAM_INFORMATION</a> structures.
+A message buffer that contains one or more <a href="..\ntifs\ns-ntifs--file-stream-information.md">FILE_STREAM_INFORMATION</a> structures.
 </p>
 </dd>
 
@@ -280,7 +280,7 @@ A message buffer that contains one or more <a href="https://msdn.microsoft.com/l
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728845">FILE_PIPE_INFORMATION</a> structure.
+A <a href="..\ntifs\ns-ntifs--file-pipe-information.md">FILE_PIPE_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -288,7 +288,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728845">FILE_PI
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728846">FILE_PIPE_LOCAL_INFORMATION</a> structure.
+A <a href="..\ntifs\ns-ntifs--file-pipe-local-information.md">FILE_PIPE_LOCAL_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -296,7 +296,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728846">FILE_PI
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728847">FILE_PIPE_REMOTE_INFORMATION</a> structure.
+A <a href="..\ntifs\ns-ntifs--file-pipe-remote-information.md">FILE_PIPE_REMOTE_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -304,7 +304,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728847">FILE_PI
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728843">FILE_MAILSLOT_QUERY_INFORMATION</a> structure.
+A <a href="..\ntifs\ns-ntifs--file-mailslot-query-information.md">FILE_MAILSLOT_QUERY_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -312,7 +312,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728843">FILE_MA
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728844">FILE_MAILSLOT_SET_INFORMATION</a> structure.
+A <a href="..\ntifs\ns-ntifs--file-mailslot-set-information.md">FILE_MAILSLOT_SET_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -320,7 +320,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728844">FILE_MA
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540239">FILE_COMPRESSION_INFORMATION</a> structure.
+A <a href="..\ntifs\ns-ntifs--file-compression-information.md">FILE_COMPRESSION_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -328,7 +328,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540239">FILE_CO
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540335">FILE_OBJECTID_INFORMATION</a> structure.
+A <a href="..\ntifs\ns-ntifs--file-objectid-information.md">FILE_OBJECTID_INFORMATION</a> structure.
  </p>
 </dd>
 
@@ -349,28 +349,28 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540335">FILE_OB
 ### -field <a id="FileQuotaInformation"></a><a id="filequotainformation"></a><a id="FILEQUOTAINFORMATION"></a><b>FileQuotaInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540342">FILE_QUOTA_INFORMATION</a> structure.  
+<p>A <a href="..\ntifs\ns-ntifs--file-quota-information.md">FILE_QUOTA_INFORMATION</a> structure.  
 </p>
 </dd>
 
 ### -field <a id="FileReparsePointInformation"></a><a id="filereparsepointinformation"></a><a id="FILEREPARSEPOINTINFORMATION"></a><b>FileReparsePointInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540354">FILE_REPARSE_POINT_INFORMATION</a> structure.
+<p>A <a href="..\ntifs\ns-ntifs--file-reparse-point-information.md">FILE_REPARSE_POINT_INFORMATION</a> structure.
 </p>
 </dd>
 
 ### -field <a id="FileNetworkOpenInformation"></a><a id="filenetworkopeninformation"></a><a id="FILENETWORKOPENINFORMATION"></a><b>FileNetworkOpenInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545822">FILE_NETWORK_OPEN_INFORMATION</a> structure.
+<p>A <a href="..\wdm\ns-wdm--file-network-open-information.md">FILE_NETWORK_OPEN_INFORMATION</a> structure.
 </p>
 </dd>
 
 ### -field <a id="FileAttributeTagInformation"></a><a id="fileattributetaginformation"></a><a id="FILEATTRIBUTETAGINFORMATION"></a><b>FileAttributeTagInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545750">FILE_ATTRIBUTE_TAG_INFORMATION</a> structure.
+<p>A <a href="..\ntddk\ns-ntddk--file-attribute-tag-information.md">FILE_ATTRIBUTE_TAG_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -384,7 +384,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540335">FILE_OB
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540303">FILE_ID_BOTH_DIR_INFORMATION</a> structure.
+A <a href="..\ntifs\ns-ntifs--file-id-both-dir-information.md">FILE_ID_BOTH_DIR_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -392,21 +392,21 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540303">FILE_ID
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540310">FILE_ID_FULL_DIR_INFORMATION</a> structure.</p>
+A <a href="..\ntifs\ns-ntifs--file-id-full-dir-information.md">FILE_ID_FULL_DIR_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileValidDataLengthInformation"></a><a id="filevaliddatalengthinformation"></a><a id="FILEVALIDDATALENGTHINFORMATION"></a><b>FileValidDataLengthInformation</b>
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545873">FILE_VALID_DATA_LENGTH_INFORMATION</a> structure.</p>
+A <a href="..\ntddk\ns-ntddk--file-valid-data-length-information.md">FILE_VALID_DATA_LENGTH_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <a id="FileShortNameInformation"></a><a id="fileshortnameinformation"></a><a id="FILESHORTNAMEINFORMATION"></a><b>FileShortNameInformation</b>
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545817">FILE_NAME_INFORMATION</a> structure.
+A <a href="..\ntddk\ns-ntddk--file-name-information.md">FILE_NAME_INFORMATION</a> structure.
 </p>
 </dd>
 
@@ -427,7 +427,7 @@ This value is reserved for system use. This value is available starting with Win
 ### -field <a id="FileIoPriorityHintInformation"></a><a id="fileiopriorityhintinformation"></a><a id="FILEIOPRIORITYHINTINFORMATION"></a><b>FileIoPriorityHintInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545802">FILE_IO_PRIORITY_HINT_INFORMATION</a> structure. This value is available starting with Windows Vista.</p>
+<p>A <a href="..\wdm\ns-wdm--file-io-priority-hint-information.md">FILE_IO_PRIORITY_HINT_INFORMATION</a> structure. This value is available starting with Windows Vista.</p>
 </dd>
 
 ### -field <a id="FileSfioReserveInformation"></a><a id="filesfioreserveinformation"></a><a id="FILESFIORESERVEINFORMATION"></a><b>FileSfioReserveInformation</b>
@@ -447,7 +447,7 @@ This value is reserved for system use. This value is available starting with Win
 ### -field <a id="FileHardLinkInformation"></a><a id="filehardlinkinformation"></a><a id="FILEHARDLINKINFORMATION"></a><b>FileHardLinkInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728841">FILE_LINKS_INFORMATION</a> structure. This value is available starting with Windows Vista.</p>
+<p>A <a href="..\ntifs\ns-ntifs--file-links-information.md">FILE_LINKS_INFORMATION</a> structure. This value is available starting with Windows Vista.</p>
 </dd>
 
 ### -field <a id="FileProcessIdsUsingFileInformation"></a><a id="fileprocessidsusingfileinformation"></a><a id="FILEPROCESSIDSUSINGFILEINFORMATION"></a><b>FileProcessIdsUsingFileInformation</b>
@@ -460,7 +460,7 @@ A <b>FILE_PROCESS_IDS_USING_FILE_INFORMATION</b> structure. This value is reserv
 ### -field <a id="FileNormalizedNameInformation"></a><a id="filenormalizednameinformation"></a><a id="FILENORMALIZEDNAMEINFORMATION"></a><b>FileNormalizedNameInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545817">FILE_NAME_INFORMATION</a> structure. This value is defined starting with Windows Vista. It is supported starting with Windows 8.
+<p>A <a href="..\fltkernel\ns-fltkernel--flt-file-name-information.md">FILE_NAME_INFORMATION</a> structure. This value is defined starting with Windows Vista. It is supported starting with Windows 8.
 </p>
 </dd>
 
@@ -468,14 +468,14 @@ A <b>FILE_PROCESS_IDS_USING_FILE_INFORMATION</b> structure. This value is reserv
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/dn602488">FILE_NETWORK_PHYSICAL_NAME_INFORMATION</a> structure. This value is available starting with Windows Vista.</p>
+A <a href="..\ntifs\ns-ntifs--file-network-physical-name-information.md">FILE_NETWORK_PHYSICAL_NAME_INFORMATION</a> structure. This value is available starting with Windows Vista.</p>
 </dd>
 
 ### -field <a id="FileIdGlobalTxDirectoryInformation"></a><a id="fileidglobaltxdirectoryinformation"></a><a id="FILEIDGLOBALTXDIRECTORYINFORMATION"></a><b>FileIdGlobalTxDirectoryInformation</b>
 
 <dd>
 <p>
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728839">FILE_ID_GLOBAL_TX_DIR_INFORMATION</a> structure. This value is available starting with Windows 7.
+A <a href="..\ntifs\ns-ntifs--file-id-global-tx-dir-information.md">FILE_ID_GLOBAL_TX_DIR_INFORMATION</a> structure. This value is available starting with Windows 7.
 </p>
 </dd>
 
@@ -515,7 +515,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728839">FILE_ID
 ### -field <a id="FileRenameInformationBypassAccessCheck"></a><a id="filerenameinformationbypassaccesscheck"></a><a id="FILERENAMEINFORMATIONBYPASSACCESSCHECK"></a><b>FileRenameInformationBypassAccessCheck</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540344">FILE_RENAME_INFORMATION</a> structure. This value is available starting with Windows 10. </p>
+<p>A <a href="..\ntifs\ns-ntifs--file-rename-information.md">FILE_RENAME_INFORMATION</a> structure. This value is available starting with Windows 10. </p>
 <p>This is a special version of the <b>FileRenameInformation</b> operation that is used by kernel-mode drivers only in order to bypass security
         access checks.  This operation
         is only recognized by the <i>IOManager</i> and a file system should never
@@ -526,7 +526,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728839">FILE_ID
 ### -field <a id="FileLinkInformationBypassAccessCheck"></a><a id="filelinkinformationbypassaccesscheck"></a><a id="FILELINKINFORMATIONBYPASSACCESSCHECK"></a><b>FileLinkInformationBypassAccessCheck</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540324">FILE_LINK_INFORMATION</a> structure. This value is available starting with Windows 10.</p>
+<p>A <a href="..\ntifs\ns-ntifs--file-link-information.md">FILE_LINK_INFORMATION</a> structure. This value is available starting with Windows 10.</p>
 <p>This is a special version of the <b>FileLinkInformation</b> operation that is used by kernel-mode drivers only in order to bypass security
         access checks.  This operation
         is only recognized by the <i>IOManager</i> and a file system should never
@@ -555,7 +555,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728839">FILE_ID
 ### -field <a id="FileReplaceCompletionInformation"></a><a id="filereplacecompletioninformation"></a><a id="FILEREPLACECOMPLETIONINFORMATION"></a><b>FileReplaceCompletionInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn369252">FILE_COMPLETION_INFORMATION</a> structure to change or remove the completion port associated with a file handle. This value is available starting with Windows 8.1.</p>
+<p>A <a href="..\ntifs\ns-ntifs--file-completion-information.md">FILE_COMPLETION_INFORMATION</a> structure to change or remove the completion port associated with a file handle. This value is available starting with Windows 8.1.</p>
 </dd>
 
 ### -field <a id="FileHardLinkFullIdInformation"></a><a id="filehardlinkfullidinformation"></a><a id="FILEHARDLINKFULLIDINFORMATION"></a><b>FileHardLinkFullIdInformation</b>
@@ -579,14 +579,14 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff728839">FILE_ID
 ### -field <a id="FileRenameInformationEx"></a><a id="filerenameinformationex"></a><a id="FILERENAMEINFORMATIONEX"></a><b>FileRenameInformationEx</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540344">FILE_RENAME_INFORMATION</a> structure which contains additional flags. This value is available starting with Windows 10, version 1709. </p>
+<p>A <a href="..\ntifs\ns-ntifs--file-rename-information.md">FILE_RENAME_INFORMATION</a> structure which contains additional flags. This value is available starting with Windows 10, version 1709. </p>
 <p></p>
 </dd>
 
 ### -field <a id="FileRenameInformationExBypassAccessCheck"></a><a id="filerenameinformationexbypassaccesscheck"></a><a id="FILERENAMEINFORMATIONEXBYPASSACCESSCHECK"></a><b>FileRenameInformationExBypassAccessCheck</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540344">FILE_RENAME_INFORMATION</a> structure which contains additional flags. This value is available starting with Windows 10, version 1709. </p>
+<p>A <a href="..\ntifs\ns-ntifs--file-rename-information.md">FILE_RENAME_INFORMATION</a> structure which contains additional flags. This value is available starting with Windows 10, version 1709. </p>
 <p>This is a special version of the <b>FileRenameInformation</b> operation that is used by kernel-mode drivers only in order to bypass security
         access checks.  This operation
         is only recognized by the <i>IOManager</i> and a file system should never

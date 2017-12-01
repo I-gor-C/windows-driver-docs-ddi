@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbolgroup2.htm
 old-project: debugger
 ms.assetid: d702fe69-966c-4b9a-aa0e-b8376288cb79
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface: IDebugSystemObjects4
 ## -description
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSymbolGroup2</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff550838">IDebugSymbolGroup</a>. <b>IDebugSymbolGroup2</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSymbolGroup2</b> interface inherits from <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>. <b>IDebugSymbolGroup2</b> also has these types of members:</p>
 
 <p>The <b>IDebugSymbolGroup2</b> interface has these methods.</p>
 
@@ -89,7 +89,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537934">AddSymbolWide</a>
+<a href="debugger.addsymbolwide">AddSymbolWide</a>
 </td>
 <td align="left" width="63%">
 <p>Adds a symbol to a symbol group.
@@ -98,7 +98,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548484">GetSymbolEntryInformation</a>
+<a href="debugger.getsymbolentryinformation">GetSymbolEntryInformation</a>
 </td>
 <td align="left" width="63%">
 <p>Returns information about a symbol in a symbol group.</p>
@@ -106,7 +106,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549129">GetSymbolNameWide</a>
+<a href="debugger.getsymbolnamewide">GetSymbolNameWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the name of a symbol in a symbol group.
@@ -115,7 +115,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549135">GetSymbolOffset</a>
+<a href="debugger.getsymboloffset">GetSymbolOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Retrieves the location in the process's virtual address space of a symbol in a symbol group, if the symbol has an absolute address.</p>
@@ -123,7 +123,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549165">GetSymbolRegister</a>
+<a href="debugger.getsymbolregister">GetSymbolRegister</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the register that contains the value or a pointer to the value of a symbol in a symbol group.
@@ -132,7 +132,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549169">GetSymbolSize</a>
+<a href="debugger.getsymbolsize">GetSymbolSize</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the size of a symbol's value.</p>
@@ -140,7 +140,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549188">GetSymbolTypeName</a>
+<a href="debugger.getsymboltypename">GetSymbolTypeName</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the name of the specified symbol's type.
@@ -149,7 +149,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549192">GetSymbolTypeNameWide</a>
+<a href="debugger.getsymboltypenamewide">GetSymbolTypeNameWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the name of the specified symbol's type.
@@ -158,7 +158,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549201">GetSymbolValueText</a>
+<a href="debugger.getsymbolvaluetext">GetSymbolValueText</a>
 </td>
 <td align="left" width="63%">
 <p>Returns a string that represents the value of a symbol.
@@ -167,7 +167,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549208">GetSymbolValueTextWide</a>
+<a href="debugger.getsymbolvaluetextwide">GetSymbolValueTextWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns a string that represents the value of a symbol.
@@ -176,7 +176,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553198">OutputAsTypeWide</a>
+<a href="debugger.outputastypewide">OutputAsTypeWide</a>
 </td>
 <td align="left" width="63%">
 <p>Changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type.</p>
@@ -184,7 +184,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554526">RemoveSymbolByNameWide</a>
+<a href="debugger.removesymbolbynamewide">RemoveSymbolByNameWide</a>
 </td>
 <td align="left" width="63%">
 <p>Removes the specified symbol from a symbol group.
@@ -193,7 +193,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561460">WriteSymbolWide</a>
+<a href="debugger.writesymbolwide">WriteSymbolWide</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the value of the specified symbol.</p>
@@ -255,9 +255,9 @@ req.iface: IDebugSystemObjects4
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550838">IDebugSymbolGroup</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup2 interface%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup2 interface%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

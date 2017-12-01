@@ -68,43 +68,43 @@ typedef struct _DXVADDI_EXTENDEDFORMAT {
 ### -field <b>SampleFormat</b>
 
 <dd>
-<p>[in] A UINT value that specifies how a video frame is sampled. The eight bits are defined by one of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562937">DXVADDI_SAMPLEFORMAT</a> enumeration type.</p>
+<p>[in] A UINT value that specifies how a video frame is sampled. The eight bits are defined by one of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-sampleformat.md">DXVADDI_SAMPLEFORMAT</a> enumeration type.</p>
 </dd>
 
 ### -field <b>VideoChromaSubsampling</b>
 
 <dd>
-<p>[in] The chroma encoding scheme for Y'Cb'Cr' data. The four bits are defined by a bitwise OR of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562943">DXVADDI_VIDEOCHROMASUBSAMPLING</a> enumeration type. </p>
+<p>[in] The chroma encoding scheme for Y'Cb'Cr' data. The four bits are defined by a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videochromasubsampling.md">DXVADDI_VIDEOCHROMASUBSAMPLING</a> enumeration type. </p>
 </dd>
 
 ### -field <b>NominalRange</b>
 
 <dd>
-<p>[in] A UINT value that specifies whether sample data includes headroom (that is, values beyond 1.0 white) and toeroom (that is, superblacks below the reference 0.0 black). The three bits are defined by one of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562912">DXVADDI_NOMINALRANGE</a> enumeration type. </p>
+<p>[in] A UINT value that specifies whether sample data includes headroom (that is, values beyond 1.0 white) and toeroom (that is, superblacks below the reference 0.0 black). The three bits are defined by one of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-nominalrange.md">DXVADDI_NOMINALRANGE</a> enumeration type. </p>
 </dd>
 
 ### -field <b>VideoTransferMatrix</b>
 
 <dd>
-<p>[in] The conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The three bits are defined by one of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562970">DXVADDI_VIDEOTRANSFERMATRIX</a> enumeration type. </p>
+<p>[in] The conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The three bits are defined by one of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videotransfermatrix.md">DXVADDI_VIDEOTRANSFERMATRIX</a> enumeration type. </p>
 </dd>
 
 ### -field <b>VideoLighting</b>
 
 <dd>
-<p>[in] Lighting conditions for viewing video. The four bits are defined by one of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562947">DXVADDI_VIDEOLIGHTING</a> enumeration type. </p>
+<p>[in] Lighting conditions for viewing video. The four bits are defined by one of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videolighting.md">DXVADDI_VIDEOLIGHTING</a> enumeration type. </p>
 </dd>
 
 ### -field <b>VideoPrimaries</b>
 
 <dd>
-<p>[in] Color primaries, which state which RGB basis functions are used. The five bits are defined by one of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562951">DXVADDI_VIDEOPRIMARIES</a> enumeration type. </p>
+<p>[in] Color primaries, which state which RGB basis functions are used. The five bits are defined by one of the values in the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a> enumeration type. </p>
 </dd>
 
 ### -field <b>VideoTransferFunction</b>
 
 <dd>
-<p>[in] The conversion function from R'G'B' to RGB. The five bits are defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562962">DXVADDI_VIDEOTRANSFERFUNCTION</a> enumeration type. </p>
+<p>[in] The conversion function from R'G'B' to RGB. The five bits are defined by the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videotransferfunction.md">DXVADDI_VIDEOTRANSFERFUNCTION</a> enumeration type. </p>
 </dd>
 
 ### -field <b>Value</b>
@@ -142,7 +142,7 @@ typedef struct _DXVADDI_EXTENDEDFORMAT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562944">DXVADDI_VIDEODESC</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videodesc.md">DXVADDI_VIDEODESC</a>
 </dt>
 </dl>
 <p> </p>

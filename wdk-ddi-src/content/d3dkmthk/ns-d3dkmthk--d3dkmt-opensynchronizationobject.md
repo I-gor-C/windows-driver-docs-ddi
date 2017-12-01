@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DKMT_OPENSYNCHRONIZATIONOBJECT structure describes a synchronization object that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547069">D3DKMTOpenSynchronizationObject</a> function opens. </p>
+<p>The D3DKMT_OPENSYNCHRONIZATIONOBJECT structure describes a synchronization object that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopensynchronizationobject.md">D3DKMTOpenSynchronizationObject</a> function opens. </p>
 
 
 ## -syntax
@@ -103,7 +103,7 @@ typedef struct _D3DKMT_OPENSYNCHRONIZATIONOBJECT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547069">D3DKMTOpenSynchronizationObject</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopensynchronizationobject.md">D3DKMTOpenSynchronizationObject</a>
 </dt>
 </dl>
 <p> </p>

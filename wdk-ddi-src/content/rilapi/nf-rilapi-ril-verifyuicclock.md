@@ -7,7 +7,7 @@ old-location: netvista\ril_verifyuicclock.htm
 old-project: netvista
 ms.assetid: e32e4b7d-715b-4eae-832f-314980ab89b3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_VerifyUiccLock
 ms.prod: windows-hardware
 ms.technology: windows-devices

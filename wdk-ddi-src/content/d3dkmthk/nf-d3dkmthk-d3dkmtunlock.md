@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTUnlock(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548393">D3DKMT_UNLOCK</a> structure that describes a list of allocations to unlock.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-unlock.md">D3DKMT_UNLOCK</a> structure that describes a list of allocations to unlock.</p>
 </dd>
 </dl>
 
@@ -73,10 +73,6 @@ NTSTATUS APIENTRY D3DKMTUnlock(
 <p>This function might also return other NTSTATUS values.</p>
 
 ## -remarks
-<p>All of the allocations that the <b>D3DKMTUnlock</b> function unlocks must belong to the same device.</p>
-
-<p>The following code examples demonstrates how an OpenGL ICD can use <b>D3DKMTUnlock</b> to unlock three allocations.</p>
-
 <p>All of the allocations that the <b>D3DKMTUnlock</b> function unlocks must belong to the same device.</p>
 
 <p>The following code examples demonstrates how an OpenGL ICD can use <b>D3DKMTUnlock</b> to unlock three allocations.</p>
@@ -136,7 +132,7 @@ NTSTATUS APIENTRY D3DKMTUnlock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548393">D3DKMT_UNLOCK</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-unlock.md">D3DKMT_UNLOCK</a>
 </dt>
 </dl>
 <p> </p>

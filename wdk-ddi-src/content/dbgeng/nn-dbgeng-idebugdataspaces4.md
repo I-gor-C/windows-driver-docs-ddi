@@ -7,7 +7,7 @@ old-location: debugger\idebugdataspaces4.htm
 old-project: debugger
 ms.assetid: e03202a5-2e4a-43f8-8183-fdd26df6ff8f
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface: IDebugSystemObjects4
 ## -description
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugDataSpaces4</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff550537">IDebugDataSpaces3</a>. <b>IDebugDataSpaces4</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugDataSpaces4</b> interface inherits from <a href="..\dbgeng\nn-dbgeng-idebugdataspaces3.md">IDebugDataSpaces3</a>. <b>IDebugDataSpaces4</b> also has these types of members:</p>
 
 <p>The <b>IDebugDataSpaces4</b> interface has these methods.</p>
 
@@ -75,7 +75,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547847">GetNextDifferentlyValidOffsetVirtual</a>
+<a href="debugger.getnextdifferentlyvalidoffsetvirtual">GetNextDifferentlyValidOffsetVirtual</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the offset of the next address whose validity might be different from the validity of the specified address.</p>
@@ -83,7 +83,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548055">GetOffsetInformation</a>
+<a href="debugger.getoffsetinformation">GetOffsetInformation</a>
 </td>
 <td align="left" width="63%">
 <p>Provides general information about an address in a process's data space.</p>
@@ -91,7 +91,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549471">GetValidRegionVirtual</a>
+<a href="debugger.getvalidregionvirtual">GetValidRegionVirtual</a>
 </td>
 <td align="left" width="63%">
 <p>Locates the first valid region of memory in a specified memory range.</p>
@@ -99,7 +99,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554300">ReadMultiByteStringVirtual</a>
+<a href="debugger.readmultibytestringvirtual">ReadMultiByteStringVirtual</a>
 </td>
 <td align="left" width="63%">
 <p>Reads a null-terminated, multibyte string from the target.</p>
@@ -107,7 +107,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554304">ReadMultiByteStringVirtualWide</a>
+<a href="debugger.readmultibytestringvirtualwide">ReadMultiByteStringVirtualWide</a>
 </td>
 <td align="left" width="63%">
 <p>Reads a null-terminated, multibyte string from the target and converts it to Unicode.</p>
@@ -115,7 +115,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554311">ReadPhysical2</a>
+<a href="debugger.readphysical2">ReadPhysical2</a>
 </td>
 <td align="left" width="63%">
 <p>Reads the target's memory from the specified physical address.</p>
@@ -123,7 +123,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554351">ReadUnicodeStringVirtual</a>
+<a href="debugger.readunicodestringvirtual">ReadUnicodeStringVirtual</a>
 </td>
 <td align="left" width="63%">
 <p>Reads a null-terminated, Unicode string from the target and converts it to a multibyte string.</p>
@@ -131,7 +131,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554357">ReadUnicodeStringVirtualWide</a>
+<a href="debugger.readunicodestringvirtualwide">ReadUnicodeStringVirtualWide</a>
 </td>
 <td align="left" width="63%">
 <p>Reads a null-terminated, Unicode string from the target.</p>
@@ -139,7 +139,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554755">SearchVirtual2</a>
+<a href="debugger.searchvirtual2">SearchVirtual2</a>
 </td>
 <td align="left" width="63%">
 <p>Searches the process's virtual memory for a specified pattern of bytes.</p>
@@ -147,7 +147,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561441">WritePhysical2</a>
+<a href="debugger.writephysical2">WritePhysical2</a>
 </td>
 <td align="left" width="63%">
 <p>Writes data to the specified physical address in the target's memory.</p>
@@ -195,15 +195,15 @@ req.iface: IDebugSystemObjects4
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550528">IDebugDataSpaces</a>
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces.md">IDebugDataSpaces</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550531">IDebugDataSpaces2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces2.md">IDebugDataSpaces2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550537">IDebugDataSpaces3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces3.md">IDebugDataSpaces3</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4 interface%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces4 interface%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

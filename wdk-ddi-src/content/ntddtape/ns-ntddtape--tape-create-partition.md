@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The TAPE_CREATE_PARTITION structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560612">IOCTL_TAPE_CREATE_PARTITION</a> request to create a specified number of fixed, select, or initiator partitions of a given size on the tape media.</p>
+<p>The TAPE_CREATE_PARTITION structure is used in conjunction with the <a href="..\ntddtape\ni-ntddtape-ioctl-tape-create-partition.md">IOCTL_TAPE_CREATE_PARTITION</a> request to create a specified number of fixed, select, or initiator partitions of a given size on the tape media.</p>
 
 
 ## -syntax
@@ -126,10 +126,10 @@ typedef struct _TAPE_CREATE_PARTITION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567932">TapeMiniCreatePartition</a>
+<a href="storage.tapeminicreatepartition">TapeMiniCreatePartition</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560612">IOCTL_TAPE_CREATE_PARTITION</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl-tape-create-partition.md">IOCTL_TAPE_CREATE_PARTITION</a>
 </dt>
 </dl>
 <p> </p>

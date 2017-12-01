@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains parameters for a request to transition the specified device to the Addressed state. This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187838">EVT_UCX_USBDEVICE_ADDRESS</a> callback function. </p>
+<p>Contains parameters for a request to transition the specified device to the Addressed state. This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="buses.evt_ucx_usbdevice_address">EVT_UCX_USBDEVICE_ADDRESS</a> callback function. </p>
 
 
 ## -syntax
@@ -64,7 +64,7 @@ typedef struct _USBDEVICE_ADDRESS {
 ### -field <b>Header</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188075">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
+<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -100,7 +100,7 @@ typedef struct _USBDEVICE_ADDRESS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187838">EVT_UCX_USBDEVICE_ADDRESS</a>
+<a href="buses.evt_ucx_usbdevice_address">EVT_UCX_USBDEVICE_ADDRESS</a>
 </dt>
 </dl>
 <p> </p>

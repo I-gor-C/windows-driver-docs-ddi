@@ -7,7 +7,7 @@ old-location: smartcrd\ioctl_smartcard_swallow.htm
 old-project: smartcrd
 ms.assetid: c229769d-8798-436e-bd26-9dfd507fba9c
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: GdiStartPageEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -135,18 +135,6 @@ I/O Status block
 <p> </p>
 
 ## -remarks
-<p>The <b>Information</b> member must be set to zero.</p>
-
-<p>The <b>Status</b> member is set to one of the values in the status block table.</p>
-
-<p>The <b>Information</b> member must be set to zero.</p>
-
-<p>The <b>Status</b> member is set to one of the values in the status block table.</p>
-
-<p>The <b>Information</b> member must be set to zero.</p>
-
-<p>The <b>Status</b> member is set to one of the values in the status block table.</p>
-
 <p>The <b>Information</b> member must be set to zero.</p>
 
 <p>The <b>Status</b> member is set to one of the values in the status block table.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndisclgetprotocolvccontextfromtapicallid.htm
 old-project: netvista
 ms.assetid: 5c716207-b093-499a-8fad-344b5ac51e25
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisClGetProtocolVcContextFromTapiCallId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,12 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   
-   NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1
-   drivers (see 
-   
-   NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1   drivers (see       NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -66,7 +61,7 @@ NDIS_STATUS NdisClGetProtocolVcContextFromTapiCallId(
 <dd>
 <p>Unicode string that identifies a particular VC. This string is the Unicode version of a string
      identifier that was previously returned by the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561700">NdisCoGetTapiCallID</a> function.</p>
+     <a href="..\ndis\nf-ndis-ndiscogettapicallid.md">NdisCoGetTapiCallID</a> function.</p>
 </dd>
 
 ### -param <i>ProtocolVcContext</i> [out]
@@ -90,10 +85,10 @@ NDIS_STATUS NdisClGetProtocolVcContextFromTapiCallId(
 
 ## -remarks
 <p>Suppose a call manager calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a> to create a VC for a TAPI
+    <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> to create a VC for a TAPI
     call. NDIS in turn supplies the handle to the VC to a client. The client passes this VC handle in a call
     to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561700">NdisCoGetTapiCallId</a> function to
+    <a href="..\ndis\nf-ndis-ndiscogettapicallid.md">NdisCoGetTapiCallId</a> function to
     retrieve a string identifier for the VC. The client can then present this identifier as a Unicode string
     to 
     <b>NdisClGetProtocolVcContextFromTapiCallId</b> to get back its context for the VC.</p>
@@ -106,27 +101,7 @@ NDIS_STATUS NdisClGetProtocolVcContextFromTapiCallId(
     <b>NdisClGetProtocolVcContextFromTapiCallId</b> to get back the correct context for the VC.</p>
 
 <p>See the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure for more
-    information.</p>
-
-<p>Suppose a call manager calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a> to create a VC for a TAPI
-    call. NDIS in turn supplies the handle to the VC to a client. The client passes this VC handle in a call
-    to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561700">NdisCoGetTapiCallId</a> function to
-    retrieve a string identifier for the VC. The client can then present this identifier as a Unicode string
-    to 
-    <b>NdisClGetProtocolVcContextFromTapiCallId</b> to get back its context for the VC.</p>
-
-<p>The client creates a context for each VC that it manages. The client uses 
-    <b>NdisCoGetTapiCallId</b> to retrieve a string identifier for each VC. The client passes each string
-    identifier to a TAPI application to identify each VC. Later, if a TAPI application passes one of these
-    string identifiers down to the client in a VC-related operation, the client must pass this string
-    identifier as a Unicode string in a call to 
-    <b>NdisClGetProtocolVcContextFromTapiCallId</b> to get back the correct context for the VC.</p>
-
-<p>See the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure for more
+    <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure for more
     information.</p>
 
 ## -requirements
@@ -187,7 +162,7 @@ NDIS_STATUS NdisClGetProtocolVcContextFromTapiCallId(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547996">Irql_Protocol_Driver_Function</a>
+<a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -195,15 +170,15 @@ NDIS_STATUS NdisClGetProtocolVcContextFromTapiCallId(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561700">NdisCoGetTapiCallId</a>
+<a href="..\ndis\nf-ndis-ndiscogettapicallid.md">NdisCoGetTapiCallId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClGetProtocolVcContextFromTapiCallId function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClGetProtocolVcContextFromTapiCallId function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

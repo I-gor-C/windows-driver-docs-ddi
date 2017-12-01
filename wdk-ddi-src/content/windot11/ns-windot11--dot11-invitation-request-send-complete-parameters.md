@@ -7,7 +7,7 @@ old-location: netvista\dot11_invitation_request_send_complete_parameters.htm
 old-project: netvista
 ms.assetid: 9E2951DE-083E-43D2-A487-97D0ADD76BE2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

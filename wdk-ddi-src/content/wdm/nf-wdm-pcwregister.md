@@ -85,8 +85,6 @@ NTSTATUS PcwRegister(
 ## -remarks
 <p>The provider calls this function to create a new registration. The registration is added to the counter set's registration list. All the input arguments are captured so that the caller does not have to keep a copy of them.</p>
 
-<p>The provider calls this function to create a new registration. The registration is added to the counter set's registration list. All the input arguments are captured so that the caller does not have to keep a copy of them.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -150,7 +148,7 @@ NTSTATUS PcwRegister(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550326">PcwUnregister</a>
+<a href="..\wdm\nf-wdm-pcwunregister.md">PcwUnregister</a>
 </dt>
 </dl>
 <p> </p>

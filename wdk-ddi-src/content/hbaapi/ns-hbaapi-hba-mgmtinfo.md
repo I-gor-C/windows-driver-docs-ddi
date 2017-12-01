@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The HBA_MgmtInfo structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557231">HBA_SetRNIDMgmtInfo</a> routine to program the HBA to return the indicated request node identification information data (RNID). </p>
+<p>The HBA_MgmtInfo structure is used in conjunction with the <a href="..\hbaapi\nf-hbaapi-hba-setrnidmgmtinfo.md">HBA_SetRNIDMgmtInfo</a> routine to program the HBA to return the indicated request node identification information data (RNID). </p>
 
 
 ## -syntax
@@ -137,10 +137,10 @@ typedef struct HBA_MgmtInfo {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556109">HBA_GetRNIDMgmtInfo</a>
+<a href="..\hbaapi\nf-hbaapi-hba-getrnidmgmtinfo.md">HBA_GetRNIDMgmtInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557231">HBA_SetRNIDMgmtInfo</a>
+<a href="..\hbaapi\nf-hbaapi-hba-setrnidmgmtinfo.md">HBA_SetRNIDMgmtInfo</a>
 </dt>
 </dl>
 <p> </p>

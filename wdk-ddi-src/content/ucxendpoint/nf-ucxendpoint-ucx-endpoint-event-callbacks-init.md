@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188063">UCX_ENDPOINT_EVENT_CALLBACKS</a> structure with client driver's callback functions. The client driver calls this function before calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a> method to create an endpoint and register its callback functions with UCX.</p>
+<p>Initializes a <a href="buses._ucx_endpoint_event_callbacks">UCX_ENDPOINT_EVENT_CALLBACKS</a> structure with client driver's callback functions. The client driver calls this function before calling <a href="buses._ucxendpointcreate">UcxEndpointCreate</a> method to create an endpoint and register its callback functions with UCX.</p>
 
 
 ## -syntax
@@ -66,55 +66,55 @@ void UCX_ENDPOINT_EVENT_CALLBACKS_INIT(
 ### -param <i>Callbacks</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188063">UCX_ENDPOINT_EVENT_CALLBACKS</a> structure that contains pointers to the client driver's event callback functions.</p>
+<p>A pointer to a <a href="buses._ucx_endpoint_event_callbacks">UCX_ENDPOINT_EVENT_CALLBACKS</a> structure that contains pointers to the client driver's event callback functions.</p>
 </dd>
 
 ### -param <i>EvtEndpointPurge</i> [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187827">EVT_UCX_ENDPOINT_PURGE</a>                     event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_purge">EVT_UCX_ENDPOINT_PURGE</a>                     event callback function.</p>
 </dd>
 
 ### -param <i>EvtEndpointStart</i> [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187829">EVT_UCX_ENDPOINT_START</a>                     event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_start">EVT_UCX_ENDPOINT_START</a>                     event callback function.</p>
 </dd>
 
 ### -param <i>EvtEndpointAbort</i> [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187825">EVT_UCX_ENDPOINT_ABORT</a>                     event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_abort">EVT_UCX_ENDPOINT_ABORT</a>                     event callback function.</p>
 </dd>
 
 ### -param <i>EvtEndpointReset</i> [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187828">EVT_UCX_ENDPOINT_RESET</a>                     event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_reset">EVT_UCX_ENDPOINT_RESET</a>                     event callback function.</p>
 </dd>
 
 ### -param <i>EvtEndpointOkToCancelTransfers</i> [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187826">EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS</a>    event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_ok_to_cancel_transfers">EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS</a>    event callback function.</p>
 </dd>
 
 ### -param <i>EvtEndpointStaticStreamsAdd</i> [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187830">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a>        event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_static_streams_add">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a>        event callback function.</p>
 </dd>
 
 ### -param <i>EvtEndpointStaticStreamsEnable</i> [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187832">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a>     event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_static_streams_enable">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a>     event callback function.</p>
 </dd>
 
 ### -param <i>EvtEndpointStaticStreamsDisable</i> [in]
 
 <dd>
-<p>A pointer to client driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187831">EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE</a>    event callback function.</p>
+<p>A pointer to client driver's implementation of the <a href="buses.evt_ucx_endpoint_static_streams_disable">EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE</a>    event callback function.</p>
 </dd>
 </dl>
 
@@ -165,7 +165,7 @@ void UCX_ENDPOINT_EVENT_CALLBACKS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>
+<a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
 </dt>
 </dl>
 <p> </p>

@@ -44,12 +44,12 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrinterExtensionEventArgs</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/hh406649">IPrinterExtensionContext</a>. <b>IPrinterExtensionEventArgs</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrinterExtensionEventArgs</b> interface inherits from <a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>. <b>IPrinterExtensionEventArgs</b> also has these types of members:</p>
 
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrinterExtensionEventArgs</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973208">BidiNotification</a>
+<a href="print.iprinterextensioneventargs_bidinotification">BidiNotification</a>
 </p>
 
 <p>Read-only</p>
@@ -57,15 +57,15 @@ req.product: Windows 10 or later.
 <p>Gets the text of the bidirectional communication (Bidi) notification, if applicable.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973209">DetailedReasonId</a>
+<a href="print.iprinterextensioneventargs_detailedreasonid">DetailedReasonId</a>
 </p>
 
 <p>Read-only</p>
 
-<p>Gets a more detailed activation reason than what can be retrieved from  <a href="https://msdn.microsoft.com/library/windows/hardware/hh973210">ReasonId</a>.</p>
+<p>Gets a more detailed activation reason than what can be retrieved from  <a href="print.iprinterextensioneventargs_reasonid">ReasonId</a>.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973210">ReasonId</a>
+<a href="print.iprinterextensioneventargs_reasonid">ReasonId</a>
 </p>
 
 <p>Read-only</p>
@@ -73,15 +73,15 @@ req.product: Windows 10 or later.
 <p>Gets the reason why the printer extension was activated.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a>
+<a href="print.iprinterextensioneventargs_request">Request</a>
 </p>
 
 <p>Read-only</p>
 
-<p>Gets the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439517">IPrinterExtensionRequest</a> object for the current event.</p>
+<p>Gets the <a href="..\printerextension\nn-printerextension-iprinterextensionrequest.md">IPrinterExtensionRequest</a> object for the current event.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973212">SourceApplication</a>
+<a href="print.iprinterextensioneventargs_sourceapplication">SourceApplication</a>
 </p>
 
 <p>Read-only</p>
@@ -89,7 +89,7 @@ req.product: Windows 10 or later.
 <p>Gets the name of the application that invoked the printer extension.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973213">WindowModal</a>
+<a href="print.iprinterextensioneventargs_windowmodal">WindowModal</a>
 </p>
 
 <p>Read-only</p>
@@ -97,7 +97,7 @@ req.product: Windows 10 or later.
 <p>Gets the run mode parameter that determines whether or not the printer extension should be run as modal.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973214">WindowParent</a>
+<a href="print.iprinterextensioneventargs_windowparent">WindowParent</a>
 </p>
 
 <p>Read-only</p>
@@ -142,7 +142,7 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406649">IPrinterExtensionContext</a>
+<a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>
 </dt>
 <dt>
 <a href="NULL">V4 Printer Driver Property Bags</a>

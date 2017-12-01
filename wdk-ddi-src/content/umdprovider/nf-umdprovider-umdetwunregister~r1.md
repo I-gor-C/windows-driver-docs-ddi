@@ -65,18 +65,6 @@ void UMDEtwUnregister(void);
 
 <p>The <a href="etw.eventunregister_func">EventUnregister</a> function is  described in the <a href="events.windows_events">Windows Events</a> documentation.</p>
 
-<p><b>UMDEtwUnregister</b> is defined inline in Umdprovider.h as:</p>
-
-<p>The <a href="etw.eventunregister_func">EventUnregister</a> function is  described in the <a href="events.windows_events">Windows Events</a> documentation.</p>
-
-<p><b>UMDEtwUnregister</b> is defined inline in Umdprovider.h as:</p>
-
-<p>The <a href="etw.eventunregister_func">EventUnregister</a> function is  described in the <a href="events.windows_events">Windows Events</a> documentation.</p>
-
-<p><b>UMDEtwUnregister</b> is defined inline in Umdprovider.h as:</p>
-
-<p>The <a href="etw.eventunregister_func">EventUnregister</a> function is  described in the <a href="events.windows_events">Windows Events</a> documentation.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -120,7 +108,7 @@ void UMDEtwUnregister(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj542439">UMDEtwRegister</a>
+<a href="..\umdprovider\nf-umdprovider-umdetwregister.md">UMDEtwRegister</a>
 </dt>
 </dl>
 <p> </p>

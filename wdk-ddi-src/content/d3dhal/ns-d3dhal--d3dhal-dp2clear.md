@@ -97,7 +97,7 @@ typedef struct _D3DHAL_DP2CLEAR {
 </td>
 <td>
 <p>DirectX 8.0 and later versions only.</p>
-<p>If this flag is set, the specified rectangles should be clipped against the current viewport. Furthermore, it is possible that when D3DCLEAR_COMPUTERECTS is specified the number of rectangles to clear can be zero (the number of rectangles to clear can be found in the <b>wStateCount</b>/<b>wPrimtiveCount</b> union of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structure for the clear). In this case the entire viewport should be cleared.</p>
+<p>If this flag is set, the specified rectangles should be clipped against the current viewport. Furthermore, it is possible that when D3DCLEAR_COMPUTERECTS is specified the number of rectangles to clear can be zero (the number of rectangles to clear can be found in the <b>wStateCount</b>/<b>wPrimtiveCount</b> union of the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> structure for the clear). In this case the entire viewport should be cleared.</p>
 </td>
 </tr>
 </table>
@@ -113,7 +113,7 @@ typedef struct _D3DHAL_DP2CLEAR {
 ### -field <b>dvFillDepth</b>
 
 <dd>
-<p>Specifies the value that the driver should use to set the depth in the context's depth buffer. This member can be a value in the interval 0.0 to 1.0. The driver should convert this value to an integer using the <b>dwZBitMask</b> member of the depth buffer's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550274">DDPIXELFORMAT</a> structure.</p>
+<p>Specifies the value that the driver should use to set the depth in the context's depth buffer. This member can be a value in the interval 0.0 to 1.0. The driver should convert this value to an integer using the <b>dwZBitMask</b> member of the depth buffer's <a href="..\ksmedia\ns-ksmedia--ddpixelformat.md">DDPIXELFORMAT</a> structure.</p>
 </dd>
 
 ### -field <b>dwFillStencil</b>
@@ -125,7 +125,7 @@ typedef struct _D3DHAL_DP2CLEAR {
 ### -field <b>Rects</b>
 
 <dd>
-<p>Specifies the rectangular areas of the buffer that the driver should clear. The rectangles are specified in screen coordinates. This member of the structure contains the first rectangle area to be blitted. The <b>wStateCount</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> contains the total number of rectangle areas to be blitted. The other (<b>wStateCount</b>-1) RECT structures required follow the D3DHAL_DP2CLEAR structure without any padding.</p>
+<p>Specifies the rectangular areas of the buffer that the driver should clear. The rectangles are specified in screen coordinates. This member of the structure contains the first rectangle area to be blitted. The <b>wStateCount</b> member of the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> contains the total number of rectangle areas to be blitted. The other (<b>wStateCount</b>-1) RECT structures required follow the D3DHAL_DP2CLEAR structure without any padding.</p>
 </dd>
 </dl>
 
@@ -154,10 +154,10 @@ typedef struct _D3DHAL_DP2CLEAR {
 <dl>
 <dt>D3DDP2OP_CLEAR</dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550274">DDPIXELFORMAT</a>
+<a href="..\ksmedia\ns-ksmedia--ddpixelformat.md">DDPIXELFORMAT</a>
 </dt>
 </dl>
 <p> </p>

@@ -149,7 +149,7 @@ DWORD DrvDeviceCapabilities(
 </td>
 <td>
 <p>The <i>pvOutput</i> parameter is not used.</p>
-<p>The function's return value should be the <b>dmDriverVersion</b> member of the driver's internal <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.</p>
+<p>The function's return value should be the <b>dmDriverVersion</b> member of the driver's internal <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -185,7 +185,7 @@ DWORD DrvDeviceCapabilities(
 </td>
 <td>
 <p>The <i>pvOutput</i> parameter is not used.</p>
-<p>The function's return value should be the <b>dmDriverExtra</b> member of the driver's internal <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.</p>
+<p>The function's return value should be the <b>dmDriverExtra</b> member of the driver's internal <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -194,7 +194,7 @@ DWORD DrvDeviceCapabilities(
 </td>
 <td>
 <p>The <i>pvOutput</i> parameter is not used.</p>
-<p>The function's return value should be the <b>dmFields</b> member of the driver's internal <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure. The <b>dmFields</b> member indicates which members in the device-independent portion of the DEVMODEW structure are supported by the printer driver.</p>
+<p>The function's return value should be the <b>dmFields</b> member of the driver's internal <a href="display.devmodew">DEVMODEW</a> structure. The <b>dmFields</b> member indicates which members in the device-independent portion of the DEVMODEW structure are supported by the printer driver.</p>
 </td>
 </tr>
 <tr>
@@ -249,7 +249,7 @@ DWORD DrvDeviceCapabilities(
 <p>DC_MEDIATYPES</p>
 </td>
 <td>
-<p>The <i>pvOutput</i> parameter points to a buffer that the function should fill with a DWORD array. Each array element should contain a DMMEDIA-prefixed constant (see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure) or customized value representing a supported media type. </p>
+<p>The <i>pvOutput</i> parameter points to a buffer that the function should fill with a DWORD array. Each array element should contain a DMMEDIA-prefixed constant (see the <a href="display.devmodew">DEVMODEW</a> structure) or customized value representing a supported media type. </p>
 <p>The function's return value should be the number of elements in the returned array.</p>
 <p>If <i>pvOutput</i> is <b>NULL</b>, the function should simply return the number of array elements required.</p>
 </td>
@@ -376,7 +376,7 @@ DWORD DrvDeviceCapabilities(
 </td>
 <td>
 <p>The <i>pvOutput</i> parameter is not used.</p>
-<p>The function's return value should be the <b>dmSize</b> member of the driver's internal <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.</p>
+<p>The function's return value should be the <b>dmSize</b> member of the driver's internal <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -407,7 +407,7 @@ DWORD DrvDeviceCapabilities(
 </td>
 <td>
 <p>The <i>pvOutput</i> parameter is not used.</p>
-<p>The function's return value should be the <b>dmSpecVersion</b> member of the driver's internal <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.</p>
+<p>The function's return value should be the <b>dmSpecVersion</b> member of the driver's internal <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </td>
 </tr>
 </table>
@@ -423,7 +423,7 @@ DWORD DrvDeviceCapabilities(
 ### -param <i>pDevMode</i> [in]
 
 <dd>
-<p>A caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure that describes the current print job characteristics. If this parameter is <b>NULL</b>, <b>DrvDeviceCapabilities</b> retrieves the current default initialization values for the specified printer driver, such as the user default DEVMODEW structure of the print queue.</p>
+<p>A caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure that describes the current print job characteristics. If this parameter is <b>NULL</b>, <b>DrvDeviceCapabilities</b> retrieves the current default initialization values for the specified printer driver, such as the user default DEVMODEW structure of the print queue.</p>
 </dd>
 </dl>
 

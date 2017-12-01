@@ -68,8 +68,6 @@ VOID SPB_CONTROLLER_CONFIG_INIT(
 ## -remarks
 <p>Your SPB controller driver must use this function to initialize an <b>SPB_CONTROLLER_CONFIG</b> structure before passing this structure as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a> method. This method completes the initialization of the SPB framework extension (SpbCx).</p>
 
-<p>Your SPB controller driver must use this function to initialize an <b>SPB_CONTROLLER_CONFIG</b> structure before passing this structure as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a> method. This method completes the initialization of the SPB framework extension (SpbCx).</p>
-
 ## -requirements
 <table>
 <tr>

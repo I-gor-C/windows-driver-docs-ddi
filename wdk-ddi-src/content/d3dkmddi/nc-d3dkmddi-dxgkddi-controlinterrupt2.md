@@ -67,7 +67,7 @@ NTSTATUS APIENTRY* DxgkDdi_ControlInterrupt2(
 ### -param <i>InterruptControl</i> [in]
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/mt654042">DXGKARG_CONTROLINTERRUPT2</a>-type value that supplies the interrupt type, as well as the VSYNC state.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-controlinterrupt2.md">DXGKARG_CONTROLINTERRUPT2</a>-type value that supplies the interrupt type, as well as the VSYNC state.</p>
 </dd>
 </dl>
 
@@ -77,7 +77,7 @@ NTSTATUS APIENTRY* DxgkDdi_ControlInterrupt2(
 </dl><p>The interrupt type was successfully enabled or disabled on the graphics hardware.</p><dl>
 <dt><b>STATUS_NOT_IMPLEMENTED</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt667971">DxgkDdi_ControlInterrupt2</a> does not support enabling or disabling the specified interrupt type.</p>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-controlinterrupt2.md">DxgkDdi_ControlInterrupt2</a> does not support enabling or disabling the specified interrupt type.</p>
 
 <p> </p>
 

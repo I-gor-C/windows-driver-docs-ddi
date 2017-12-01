@@ -81,14 +81,6 @@ PRINTER_ACCESS_MANAGE_LIMITED access to the queue.</p>
 
 <p>A call to set a property on a queue property bag will fail with ERROR_ACCESS_DENIED, if the user does not have the appropriate permission. This behavior was true before PRINTER_ACCESS_MANAGE_LIMITED was introduced, and it's still the current behavior.</p>
 
-<p>In Windows 8.1 a new flag, PRINTER_ACCESS_MANAGE_LIMITED, has been introduced to grant print queue permissions that are more limited than PRINTER_ACCESS_ADMINISTER, but more powerful than 
-PRINTER_ACCESS_USE.</p>
-
-<p>The permissions are a subset of those associated with PRINTER_ACCESS_ADMINISTER. This means that if the currently logged-on user has PRINTER_ACCESS_ADMINISTER permission, the user can gain 
-PRINTER_ACCESS_MANAGE_LIMITED access to the queue.</p>
-
-<p>A call to set a property on a queue property bag will fail with ERROR_ACCESS_DENIED, if the user does not have the appropriate permission. This behavior was true before PRINTER_ACCESS_MANAGE_LIMITED was introduced, and it's still the current behavior.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -116,7 +108,7 @@ PRINTER_ACCESS_MANAGE_LIMITED access to the queue.</p>
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>
+<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
 </dt>
 </dl>
 <p> </p>

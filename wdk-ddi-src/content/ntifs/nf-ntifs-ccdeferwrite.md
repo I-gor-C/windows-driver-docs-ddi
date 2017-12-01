@@ -68,7 +68,7 @@ VOID CcDeferWrite(
 ### -param <i>PostRoutine</i> [in]
 
 <dd>
-<p>Address of a routine for the cache manager to call to write to the cached file. Note that it is possible that this routine will be called immediately, even if <a href="https://msdn.microsoft.com/library/windows/hardware/ff539021">CcCanIWrite</a> has just returned <b>FALSE</b> .</p>
+<p>Address of a routine for the cache manager to call to write to the cached file. Note that it is possible that this routine will be called immediately, even if <a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a> has just returned <b>FALSE</b> .</p>
 <p>The post routine is defined in ntifs.h as:</p>
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -115,15 +115,9 @@ VOID (*PCC_POST_DEFERRED_WRITE) (
 <p>None</p>
 
 ## -remarks
-<p>A file system would normally call <b>CcDeferWrite</b> after receiving a return value of <b>FALSE</b> from <a href="https://msdn.microsoft.com/library/windows/hardware/ff539021">CcCanIWrite</a>.</p>
+<p>A file system would normally call <b>CcDeferWrite</b> after receiving a return value of <b>FALSE</b> from <a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a>.</p>
 
-<p>To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.</p>
-
-<p>The context parameters passed to <i>PostRoutine</i> are typically the I/O request and related context data.</p>
-
-<p>A file system would normally call <b>CcDeferWrite</b> after receiving a return value of <b>FALSE</b> from <a href="https://msdn.microsoft.com/library/windows/hardware/ff539021">CcCanIWrite</a>.</p>
-
-<p>To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.</p>
+<p>To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.</p>
 
 <p>The context parameters passed to <i>PostRoutine</i> are typically the I/O request and related context data.</p>
 
@@ -174,13 +168,13 @@ VOID (*PCC_POST_DEFERRED_WRITE) (
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539021">CcCanIWrite</a>
+<a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539209">CcSetDirtyPageThreshold</a>
+<a href="..\ntifs\nf-ntifs-ccsetdirtypagethreshold.md">CcSetDirtyPageThreshold</a>
 </dt>
 </dl>
 <p> </p>

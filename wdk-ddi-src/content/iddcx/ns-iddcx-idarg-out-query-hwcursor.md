@@ -89,7 +89,7 @@ typedef struct DARG_OUT_QUERY_HWCURSOR {
 
 <dd>
 <p>
-                     [out] Indicates if the cursor shape has been updated since the last time the driver was called. If it has been updated, the OS updates the <b>CursorShapeInfo</b> structure and copies the new cursor image data into the <a href="https://msdn.microsoft.com/library/windows/hardware/mt761896">IDARG_IN_QUERY_HWCURSOR</a> buffer <b>pShapeBuffer</b>.
+                     [out] Indicates if the cursor shape has been updated since the last time the driver was called. If it has been updated, the OS updates the <b>CursorShapeInfo</b> structure and copies the new cursor image data into the <a href="..\iddcx\ns-iddcx-idarg-in-query-hwcursor.md">IDARG_IN_QUERY_HWCURSOR</a> buffer <b>pShapeBuffer</b>.
                  </p>
 </dd>
 

@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_service_name_hash.htm
 old-project: netvista
 ms.assetid: B03C779A-ED25-48D7-BB5E-EB95ED1B2D00
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_P2P_SERVICE_NAME_HASH,
 ms.prod: windows-hardware
 ms.technology: windows-devices

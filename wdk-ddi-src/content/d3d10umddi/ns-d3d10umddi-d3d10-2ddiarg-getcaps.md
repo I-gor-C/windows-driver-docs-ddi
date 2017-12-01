@@ -60,7 +60,7 @@ typedef struct D3D10_2DDIARG_GETCAPS {
 ### -field <b>Type</b>
 
 <dd>
-<p>[in] The type of capabilities to retrieve. The Microsoft Direct3D runtime can supply one of the values from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541894">D3D10_2DDICAPS_TYPE</a> enumeration, possibly along with information in the memory block that is pointed to by <b>pInfo</b>, to retrieve particular capability data in the memory block at <b>pData</b>.</p>
+<p>[in] The type of capabilities to retrieve. The Microsoft Direct3D runtime can supply one of the values from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-2ddicaps-type.md">D3D10_2DDICAPS_TYPE</a> enumeration, possibly along with information in the memory block that is pointed to by <b>pInfo</b>, to retrieve particular capability data in the memory block at <b>pData</b>.</p>
 </dd>
 
 ### -field <b>pInfo</b>
@@ -110,7 +110,7 @@ typedef struct D3D10_2DDIARG_GETCAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541894">D3D10_2DDICAPS_TYPE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-2ddicaps-type.md">D3D10_2DDICAPS_TYPE</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10-2ddi-getcaps.md">GetCaps(D3D10_2)</a>

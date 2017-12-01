@@ -60,7 +60,7 @@ VOID USBD_RegisterHcFilter(
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>Pointer to the device object that is the current top of the stack as reported by <a href="https://msdn.microsoft.com/library/windows/hardware/ff548300">IoAttachDeviceToDeviceStack</a>.</p>
+<p>Pointer to the device object that is the current top of the stack as reported by <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>.</p>
 </dd>
 
 ### -param <i>FilterDeviceObject</i> [in]
@@ -74,8 +74,6 @@ VOID USBD_RegisterHcFilter(
 <p>None. </p>
 
 ## -remarks
-<p>USB bus filter drivers must call this routine after attaching their device object to the device object stack for the host controller driver.</p>
-
 <p>USB bus filter drivers must call this routine after attaching their device object to the device object stack for the host controller driver.</p>
 
 ## -requirements
@@ -131,7 +129,7 @@ VOID USBD_RegisterHcFilter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548300">IoAttachDeviceToDeviceStack</a>
+<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
 </dt>
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 </dl>

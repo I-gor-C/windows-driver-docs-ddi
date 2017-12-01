@@ -66,13 +66,13 @@ typedef struct _D3DKMT_BRIGHTNESS_INFO {
 ### -field <b>Type</b>
 
 <dd>
-<p>A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/jj128342">D3DKMT_BRIGHTNESS_INFO_TYPE</a> that  indicates the type of brightness information to retrieve or set.</p>
+<p>A value of type <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-brightness-info-type.md">D3DKMT_BRIGHTNESS_INFO_TYPE</a> that  indicates the type of brightness information to retrieve or set.</p>
 </dd>
 
 ### -field <b>PossibleLevels</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/jj128343">D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS</a> structure that contains information about all possible brightness levels that the integrated display panel supports.</p>
+<p>A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-brightness-possible-levels.md">D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS</a> structure that contains information about all possible brightness levels that the integrated display panel supports.</p>
 </dd>
 
 ### -field <b>Brightness</b>
@@ -84,25 +84,25 @@ typedef struct _D3DKMT_BRIGHTNESS_INFO {
 ### -field <b>BrightnessCaps</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/jj128359">DXGK_BRIGHTNESS_CAPS</a> structure that represents the brightness control capabilities of the integrated display panel.</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-caps.md">DXGK_BRIGHTNESS_CAPS</a> structure that represents the brightness control capabilities of the integrated display panel.</p>
 </dd>
 
 ### -field <b>BrightnessState</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/jj128361">DXGK_BRIGHTNESS_STATE</a> structure that represents the smooth brightness control capabilities of the integrated display panel.</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-state.md">DXGK_BRIGHTNESS_STATE</a> structure that represents the smooth brightness control capabilities of the integrated display panel.</p>
 </dd>
 
 ### -field <b>OptimizationLevel</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/jj128358">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a> structure that represents the optimization level of brightness control.</p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt-dxgk-backlight-optimization-level.md">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a> structure that represents the optimization level of brightness control.</p>
 </dd>
 
 ### -field <b>ReductionInfo</b>
 
 <dd>
-<p>A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/jj128357">DXGK_BACKLIGHT_INFO</a> that provides the current absolute level of backlight reduction.</p>
+<p>A value of type <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-backlight-info.md">DXGK_BACKLIGHT_INFO</a> that provides the current absolute level of backlight reduction.</p>
 </dd>
 
 ### -field <b>VerboseLogging</b>
@@ -148,22 +148,22 @@ typedef struct _D3DKMT_BRIGHTNESS_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj128342">D3DKMT_BRIGHTNESS_INFO_TYPE</a>
+<a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-brightness-info-type.md">D3DKMT_BRIGHTNESS_INFO_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj128343">D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-brightness-possible-levels.md">D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj128357">DXGK_BACKLIGHT_INFO</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgk-backlight-info.md">DXGK_BACKLIGHT_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj128358">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-dxgk-backlight-optimization-level.md">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj128359">DXGK_BRIGHTNESS_CAPS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-caps.md">DXGK_BRIGHTNESS_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj128361">DXGK_BRIGHTNESS_STATE</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-state.md">DXGK_BRIGHTNESS_STATE</a>
 </dt>
 </dl>
 <p> </p>

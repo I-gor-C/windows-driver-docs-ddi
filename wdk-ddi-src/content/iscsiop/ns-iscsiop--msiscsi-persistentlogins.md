@@ -71,7 +71,7 @@ typedef struct _MSiSCSI_PersistentLogins {
 ### -field <b>PersistentLogins</b>
 
 <dd>
-<p>A variable length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561553">ISCSI_Persistent_Login</a> structures, each of which contains information that is associated with a particular persistent logon session that the initiator maintains.</p>
+<p>A variable length array of <a href="..\iscsiop\ns-iscsiop--iscsi-persistent-login.md">ISCSI_Persistent_Login</a> structures, each of which contains information that is associated with a particular persistent logon session that the initiator maintains.</p>
 </dd>
 </dl>
 
@@ -95,13 +95,13 @@ typedef struct _MSiSCSI_PersistentLogins {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561553">ISCSI_Persistent_Login</a>
+<a href="..\iscsiop\ns-iscsiop--iscsi-persistent-login.md">ISCSI_Persistent_Login</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561556">ISCSI_Persistent_Login WMI Class</a>
+<a href="storage.iscsi_persistent_login_wmi_class">ISCSI_Persistent_Login WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563096">MSiSCSI_PersistentLogins WMI Class</a>
+<a href="storage.msiscsi_persistentlogins_wmi_class">MSiSCSI_PersistentLogins WMI Class</a>
 </dt>
 </dl>
 <p> </p>

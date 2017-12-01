@@ -85,7 +85,7 @@ typedef struct _D3DDDIARG_BUFFERBLT1 {
 ### -field <b>CopyFlags</b>
 
 <dd>
-<p>A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451175">D3DDDI_COPY_FLAGS</a> enumeration type.</p>
+<p>A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi-d3dddi-copy-flags.md">D3DDDI_COPY_FLAGS</a> enumeration type.</p>
 </dd>
 </dl>
 
@@ -125,7 +125,7 @@ typedef struct _D3DDDIARG_BUFFERBLT1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451175">D3DDDI_COPY_FLAGS</a>
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi-copy-flags.md">D3DDDI_COPY_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

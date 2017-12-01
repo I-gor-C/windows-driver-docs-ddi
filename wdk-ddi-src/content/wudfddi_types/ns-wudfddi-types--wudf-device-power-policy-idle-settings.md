@@ -7,7 +7,7 @@ old-location: wdf\wudf_device_power_policy_idle_settings.htm
 old-project: wdf
 ms.assetid: E6EF8852-E39C-491B-9430-0308CA6276C0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,7 +72,7 @@ typedef struct _WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS {
 ### -field <b> IdleCaps</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552429">WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</a>-typed enumerator that identifies the device's ability to wake itself up after being set to a low-power state, while the system remains in its working (S0) state.</p>
+<p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-policy-s0-idle-capabilities.md">WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</a>-typed enumerator that identifies the device's ability to wake itself up after being set to a low-power state, while the system remains in its working (S0) state.</p>
 </dd>
 
 ### -field <b> DxState</b>
@@ -90,13 +90,13 @@ typedef struct _WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS {
 ### -field <b> UserControlOfIdleSettings</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552432">WDF_POWER_POLICY_S0_IDLE_USER_CONTROL</a>-typed enumerator that indicates whether users have the ability to modify the device's idle settings.</p>
+<p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-policy-s0-idle-user-control.md">WDF_POWER_POLICY_S0_IDLE_USER_CONTROL</a>-typed enumerator that indicates whether users have the ability to modify the device's idle settings.</p>
 </dd>
 
 ### -field <b> Enabled</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552533">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device will be powered down if it remains idle and while the system power is at S0. This member can have one of the following values:</p>
+<p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device will be powered down if it remains idle and while the system power is at S0. This member can have one of the following values:</p>
 <dl>
 <dd>
 <p><b>WdfTrue</b> - Powering down is enabled.</p>
@@ -108,13 +108,13 @@ typedef struct _WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS {
 <p><b>WdfUseDefault</b> - Powering down is initially enabled by default; but if the <b>UserControlOfIdleSettings</b> member is set to <b>IdleAllowUserControl</b>, the <a href="wdf.user_control_of_device_idle_and_wake_behavior_in_umdf">user's setting or driver's INF file</a> overrides the initial value.</p>
 </dd>
 </dl>
-<p>If powering down is enabled, the device has a wake-up capability, and the idle timeout value expires, the framework calls the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556817">IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0</a> method before the device enters a low-power state.</p>
+<p>If powering down is enabled, the device has a wake-up capability, and the idle timeout value expires, the framework calls the driver's <a href="wdf.ipowerpolicycallbackwakefroms0_onarmwakefroms0">IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0</a> method before the device enters a low-power state.</p>
 </dd>
 
 ### -field <b> PowerUpIdleDeviceOnSystemWake</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552533">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device will return to its working (D0) state when the system returns to its working (S0) state. This member is valid only if the driver sets the <b>IdleCaps</b> member to <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-policy-s0-idle-capabilities.md">IdleCannotWakeFromS0</a>. The <b>PowerUpIdleDeviceOnSystemWake</b> member can have one of the following values:</p>
+<p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device will return to its working (D0) state when the system returns to its working (S0) state. This member is valid only if the driver sets the <b>IdleCaps</b> member to <a href="..\wudfddi_types\ne-wudfddi-types--wdf-power-policy-s0-idle-capabilities.md">IdleCannotWakeFromS0</a>. The <b>PowerUpIdleDeviceOnSystemWake</b> member can have one of the following values:</p>
 <dl>
 <dd>
 <p><b>WdfTrue</b> - If both the device and the system are in a low-power state, the device returns to its working state when the system returns to its working state.</p>
@@ -132,7 +132,7 @@ typedef struct _WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS {
 ### -field <b> ExcludeD3Cold</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552533">WDF_TRI_STATE</a>-typed enumerator that indicates whether the framework can put the device in the D3cold power state when the idle timeout period expires. The <b>ExcludeD3Cold</b> member can have one of the following values:</p>
+<p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the framework can put the device in the D3cold power state when the idle timeout period expires. The <b>ExcludeD3Cold</b> member can have one of the following values:</p>
 <dl>
 <dd>
 <p><b>WdfTrue</b> - The framework will move a device to a low-power D-state when the idle timeout period expires.  If that D-state is D3, the device will be moved to D3hot.  If <b>ExcludeD3Cold</b> is set to <b>WdfTrue</b>, then no further transition from D3hot to D3cold will be allowed.</p>
@@ -169,17 +169,17 @@ Needs = PciD3ColdSupported
 <p>
 <ul>
 <li>
-<p>If the driver has ever specified <b>IdleCanWakeFromS0</b> for the <i>IdleCaps</i> parameter's value in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451202">AssignS0IdleSettingsEx</a>, it cannot subsequently change that value to <b>IdleUsbSelectiveSuspend</b>.</p>
+<p>If the driver has ever specified <b>IdleCanWakeFromS0</b> for the <i>IdleCaps</i> parameter's value in a previous call to <a href="wdf.iwdfdevice3_assigns0idlesettingsex">AssignS0IdleSettingsEx</a>, it cannot subsequently change that value to <b>IdleUsbSelectiveSuspend</b>.</p>
 </li>
 <li>
-<p>If the driver has ever specified <b>IdleUsbSelectiveSuspend</b> for the <i>IdleCaps</i> parameter's value in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451202">AssignS0IdleSettingsEx</a>, it cannot subsequently change that value to <b>IdleCanWakeFromS0</b>.</p>
+<p>If the driver has ever specified <b>IdleUsbSelectiveSuspend</b> for the <i>IdleCaps</i> parameter's value in a previous call to <a href="wdf.iwdfdevice3_assigns0idlesettingsex">AssignS0IdleSettingsEx</a>, it cannot subsequently change that value to <b>IdleCanWakeFromS0</b>.</p>
 </li>
 </ul>
 </p>
 
-<p>If the driver has ever specified <b>IdleCanWakeFromS0</b> for the <i>IdleCaps</i> parameter's value in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451202">AssignS0IdleSettingsEx</a>, it cannot subsequently change that value to <b>IdleUsbSelectiveSuspend</b>.</p>
+<p>If the driver has ever specified <b>IdleCanWakeFromS0</b> for the <i>IdleCaps</i> parameter's value in a previous call to <a href="wdf.iwdfdevice3_assigns0idlesettingsex">AssignS0IdleSettingsEx</a>, it cannot subsequently change that value to <b>IdleUsbSelectiveSuspend</b>.</p>
 
-<p>If the driver has ever specified <b>IdleUsbSelectiveSuspend</b> for the <i>IdleCaps</i> parameter's value in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451202">AssignS0IdleSettingsEx</a>, it cannot subsequently change that value to <b>IdleCanWakeFromS0</b>.</p>
+<p>If the driver has ever specified <b>IdleUsbSelectiveSuspend</b> for the <i>IdleCaps</i> parameter's value in a previous call to <a href="wdf.iwdfdevice3_assigns0idlesettingsex">AssignS0IdleSettingsEx</a>, it cannot subsequently change that value to <b>IdleCanWakeFromS0</b>.</p>
 
 <p>The following rules apply to the value that you specify for the <b>DxState</b> member:</p>
 
@@ -187,9 +187,9 @@ Needs = PciD3ColdSupported
 
 <p>For USB devices, the value cannot be <b>PowerDeviceD0</b> or <b>PowerDeviceD3</b>.</p>
 
-<p>If you specify <b>DevicePowerMaximum</b>, the framework uses the value that the driver for the device's bus supplied in the <b>DeviceWake</b> member of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff551264">WDF_DEVICE_POWER_CAPABILITIES</a> structure.</p>
+<p>If you specify <b>DevicePowerMaximum</b>, the framework uses the value that the driver for the device's bus supplied in the <b>DeviceWake</b> member of its <a href="..\wdfdevice\ns-wdfdevice--wdf-device-power-capabilities.md">WDF_DEVICE_POWER_CAPABILITIES</a> structure.</p>
 
-<p>If the value of the <b>IdleCaps</b> member is <b>IdleCanWakeFromS0</b>, you cannot specify a device power state that is lower than the device power state in the <b>DeviceWake</b> member of the bus driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551264">WDF_DEVICE_POWER_CAPABILITIES</a> structure. (In other words, if the bus driver's <b>DeviceWake</b> value is <b>PowerDeviceD2</b>, your function driver's <b>DxState</b> value cannot be <b>PowerDeviceD3</b>.)</p>
+<p>If the value of the <b>IdleCaps</b> member is <b>IdleCanWakeFromS0</b>, you cannot specify a device power state that is lower than the device power state in the <b>DeviceWake</b> member of the bus driver's <a href="..\wdfdevice\ns-wdfdevice--wdf-device-power-capabilities.md">WDF_DEVICE_POWER_CAPABILITIES</a> structure. (In other words, if the bus driver's <b>DeviceWake</b> value is <b>PowerDeviceD2</b>, your function driver's <b>DxState</b> value cannot be <b>PowerDeviceD3</b>.)</p>
 
 <p>In operating systems earlier than Windows 8, the D3 power state signifies that the device is in a low-power state, but that some power to the bus is still maintained. Starting in Windows 8, the former D3 power state is called D3hot, and a new power state (D3cold) is available. A device can enter the D3cold state either while the system is in its working (S0) state or in a low-power state.  When a device is in the D3cold  power state, the bus is inactive and the device must trigger its own wake signal when an external action (for example plugging in a network cable) causes a hardware event.</p>
 
@@ -197,7 +197,7 @@ Needs = PciD3ColdSupported
 
 <p>For information about registry entries that control a device's idle capabilities, see <a href="wdf.user_control_of_device_idle_and_wake_behavior_in_umdf">User Control of Device Idle and Wake Behavior in UMDF</a>. </p>
 
-<p>To initialize its <b>WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</b> structure, your driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/hh464080">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</a>.</p>
+<p>To initialize its <b>WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</b> structure, your driver should call <a href="..\wudfdevice\nf-wudfdevice-wudf-device-power-policy-idle-settings-init.md">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</a>.</p>
 
 ## -requirements
 <table>
@@ -235,9 +235,9 @@ Needs = PciD3ColdSupported
 <a href="wdf.iwdfdevice3_assigns0idlesettingsex">IWDFDevice3::AssignS0IdleSettingsEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464080">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</a>
+<a href="..\wudfdevice\nf-wudfdevice-wudf-device-power-policy-idle-settings-init.md">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

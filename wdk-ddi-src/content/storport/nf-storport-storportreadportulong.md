@@ -73,9 +73,7 @@ STORPORT_API ULONG StorPortReadPortUlong(
 <p><b>StorPortReadPortUlong</b> returns a data item of length <b>sizeof</b>(ULONG).</p>
 
 ## -remarks
-<p>For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564729">ScsiPortReadPortUlong</a> routine. For a buffered version of this routine see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567471">StorPortReadPortBufferUlong</a>.</p>
-
-<p>For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564729">ScsiPortReadPortUlong</a> routine. For a buffered version of this routine see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567471">StorPortReadPortBufferUlong</a>.</p>
+<p>For more information, see the <a href="..\srb\nf-srb-scsiportreadportulong.md">ScsiPortReadPortUlong</a> routine. For a buffered version of this routine see <a href="..\storport\nf-storport-storportreadportbufferulong.md">StorPortReadPortBufferUlong</a>.</p>
 
 ## -requirements
 <table>
@@ -114,10 +112,10 @@ STORPORT_API ULONG StorPortReadPortUlong(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564718">ScsiPortReadPortBufferUlong</a>
+<a href="..\srb\nf-srb-scsiportreadportbufferulong.md">ScsiPortReadPortBufferUlong</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567475">StorPortReadPortUlong</a>
+<a href="..\storport\nf-storport-storportreadportulong.md">StorPortReadPortUlong</a>
 </dt>
 </dl>
 <p> </p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The RemovePersistentEntry_IN structure is used by a WMI client to deliver input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563988">RemovePersistentEntry</a> WMI method.</p>
+<p>The RemovePersistentEntry_IN structure is used by a WMI client to deliver input parameter data to the <a href="storage.removepersistententry">RemovePersistentEntry</a> WMI method.</p>
 
 
 ## -syntax
@@ -64,12 +64,12 @@ typedef struct _RemovePersistentEntry_IN {
 ### -field <b>Binding</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556035">HBAFCPBindingEntry2</a> that indicates the binding to be removed from the indicated port's list of bindings. </p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpbindingentry2.md">HBAFCPBindingEntry2</a> that indicates the binding to be removed from the indicated port's list of bindings. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the RemovePersistentEntry_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the RemovePersistentEntry_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -88,7 +88,7 @@ typedef struct _RemovePersistentEntry_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563988">RemovePersistentEntry</a>
+<a href="storage.removepersistententry">RemovePersistentEntry</a>
 </dt>
 </dl>
 <p> </p>

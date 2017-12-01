@@ -7,7 +7,7 @@ old-location: wdf\wdf_timer_config.htm
 old-project: wdf
 ms.assetid: 5ef6491d-90bb-472c-821a-b296bef17463
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_TIMER_CONFIG, WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,7 +76,7 @@ typedef struct _WDF_TIMER_CONFIG {
 ### -field <b>Period</b>
 
 <dd>
-<p>A time period, in milliseconds. The framework calls the driver's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function repeatedly, whenever the specified number of milliseconds elapses. If this value is zero, the framework does not call the driver's <i>EvtTimerFunc</i> callback function repeatedly. Instead, it calls the callback function once, after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550054">WdfTimerStart</a> method's <i>DueTime</i> has elapsed. (The time period must be zero if <a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a> sets the execution level to <a href="..\wdfobject\ne-wdfobject--wdf-execution-level.md">WdfExecutionLevelPassive</a>.) The time period cannot be a negative value.</p>
+<p>A time period, in milliseconds. The framework calls the driver's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function repeatedly, whenever the specified number of milliseconds elapses. If this value is zero, the framework does not call the driver's <i>EvtTimerFunc</i> callback function repeatedly. Instead, it calls the callback function once, after the <a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a> method's <i>DueTime</i> has elapsed. (The time period must be zero if <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a> sets the execution level to <a href="..\wdfobject\ne-wdfobject--wdf-execution-level.md">WdfExecutionLevelPassive</a>.) The time period cannot be a negative value.</p>
 </dd>
 
 ### -field <b>AutomaticSerialization</b>
@@ -88,10 +88,10 @@ typedef struct _WDF_TIMER_CONFIG {
 ### -field <b>TolerableDelay</b>
 
 <dd>
-<p>Specifies a tolerance, in milliseconds, for the timer period that <i>Period</i> specifies and for the initial time interval that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550054">WdfTimerStart</a> method's <i>DueTime</i> specifies. For a periodic timer, the time interval between two successive timer expirations will be in the range from (<i>Period</i> - <i>TolerableDelay</i>) to (<i>Period</i> + <i>TolerableDelay</i>). The initial expiration time will be in the range from <i>DueTime</i> to (<i>DueTime</i> + <i>TolerableDelay</i>). The <i>TolerableDelay</i> value cannot be negative.</p>
+<p>Specifies a tolerance, in milliseconds, for the timer period that <i>Period</i> specifies and for the initial time interval that the <a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a> method's <i>DueTime</i> specifies. For a periodic timer, the time interval between two successive timer expirations will be in the range from (<i>Period</i> - <i>TolerableDelay</i>) to (<i>Period</i> + <i>TolerableDelay</i>). The initial expiration time will be in the range from <i>DueTime</i> to (<i>DueTime</i> + <i>TolerableDelay</i>). The <i>TolerableDelay</i> value cannot be negative.</p>
 <p> The <b>TolerableDelay</b> member is available in version 1.9 and later versions of KMDF.</p>
 <p> Starting in Windows 8.1, in a driver using at minimum KMDF 1.13 or UMDF 2.0, you can set this member to <b>TolerableDelayUnlimited</b> to specify that the system should not be woken up as a result of this timer's expiration.</p>
-<p>If  <b>UseHighResolutionTimer</b> is <b>WdfTrue</b>, you must set <b>TolerableDelay</b> to zero. Otherwise, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a> returns a failure code.</p>
+<p>If  <b>UseHighResolutionTimer</b> is <b>WdfTrue</b>, you must set <b>TolerableDelay</b> to zero. Otherwise, <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a> returns a failure code.</p>
 <p>For more information about this member, see the following Remarks section.</p>
 </dd>
 
@@ -100,17 +100,17 @@ typedef struct _WDF_TIMER_CONFIG {
 <dd>
 <p><b>KMDF only</b></p>
 <p>This member is available starting with Windows 8.1 and KMDF version 1.13.</p>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552533">WDF_TRI_STATE</a>-typed value. If this value is <b>WdfTrue</b>, the framework uses a high resolution timer that has an accuracy of one millisecond.  If the value is <b>WdfFalse</b> or <b>WdfDefault</b>, the framework uses a standard timer that has an accuracy matching the system clock tick interval, which is by default 15.6 milliseconds.</p>
-<div class="alert"><b>Warning</b>  If you set <b>UseHighResolutionTimer</b> to <b>WdfTrue</b>, you must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff550054">WdfTimerStart</a> with the <i>DueTime</i> parameter set to a negative value.  Otherwise, the call causes the system to crash.</div>
+<p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed value. If this value is <b>WdfTrue</b>, the framework uses a high resolution timer that has an accuracy of one millisecond.  If the value is <b>WdfFalse</b> or <b>WdfDefault</b>, the framework uses a standard timer that has an accuracy matching the system clock tick interval, which is by default 15.6 milliseconds.</p>
+<div class="alert"><b>Warning</b>  If you set <b>UseHighResolutionTimer</b> to <b>WdfTrue</b>, you must call <a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a> with the <i>DueTime</i> parameter set to a negative value.  Otherwise, the call causes the system to crash.</div>
 <div> </div>
-<p>If  <b>UseHighResolutionTimer</b> is <b>WdfTrue</b>, you must set <b>TolerableDelay</b> to zero. Otherwise, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a> returns a failure code.</p>
+<p>If  <b>UseHighResolutionTimer</b> is <b>WdfTrue</b>, you must set <b>TolerableDelay</b> to zero. Otherwise, <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a> returns a failure code.</p>
 <p>
              For more information about this member, see the following Remarks section.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>WDF_TIMER_CONFIG</b> structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a> method. To initialize a <b>WDF_TIMER_CONFIG</b> structure, your driver must call either <a href="https://msdn.microsoft.com/library/windows/hardware/ff552522">WDF_TIMER_CONFIG_INIT</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552526">WDF_TIMER_CONFIG_INIT_PERIODIC</a>.</p>
+<p>The <b>WDF_TIMER_CONFIG</b> structure is used as input to the <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a> method. To initialize a <b>WDF_TIMER_CONFIG</b> structure, your driver must call either <a href="..\wdftimer\nf-wdftimer-wdf-timer-config-init.md">WDF_TIMER_CONFIG_INIT</a> or <a href="..\wdftimer\nf-wdftimer-wdf-timer-config-init-periodic.md">WDF_TIMER_CONFIG_INIT_PERIODIC</a>.</p>
 
 <p>Setting the <b>AutomaticSerialization</b> member of <b>WDF_TIMER_CONFIG</b> to <b>TRUE</b> has no effect if the parent object's <a href="..\wdfobject\ne-wdfobject--wdf-synchronization-scope.md">synchronization scope</a> is set to <b>WdfSynchronizationScopeNone</b>.</p>
 
@@ -162,18 +162,18 @@ typedef struct _WDF_TIMER_CONFIG {
 <a href="wdf.evttimerfunc">EvtTimerFunc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552522">WDF_TIMER_CONFIG_INIT</a>
+<a href="..\wdftimer\nf-wdftimer-wdf-timer-config-init.md">WDF_TIMER_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552526">WDF_TIMER_CONFIG_INIT_PERIODIC</a>
+<a href="..\wdftimer\nf-wdftimer-wdf-timer-config-init-periodic.md">WDF_TIMER_CONFIG_INIT_PERIODIC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a>
+<a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550054">WdfTimerStart</a>
+<a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_TIMER_CONFIG structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_TIMER_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

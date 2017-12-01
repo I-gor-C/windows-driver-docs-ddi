@@ -127,7 +127,7 @@ typedef struct _DXGKARG_CANCELCOMMAND {
 ### -field <b>pAllocationList</b>
 
 <dd>
-<p>[in] A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560975">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to. </p>
+<p>[in] A pointer to an array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to. </p>
 </dd>
 
 ### -field <b>AllocationListSize</b>
@@ -140,7 +140,7 @@ typedef struct _DXGKARG_CANCELCOMMAND {
 ### -field <b>pPatchLocationList</b>
 
 <dd>
-<p>[in] A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a> structures for the list of patch locations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to.</p>
+<p>[in] A pointer to an array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures for the list of patch locations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to.</p>
 <p>Note that the array can begin with an element that is before the range that is used to patch the DMA buffer.</p>
 </dd>
 
@@ -200,10 +200,10 @@ typedef struct _DXGKARG_CANCELCOMMAND {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560975">DXGK_ALLOCATIONLIST</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a>
 </dt>
 <dt>
 <a href="display.dxgkddicancelcommand">DxgkDdiCancelCommand</a>

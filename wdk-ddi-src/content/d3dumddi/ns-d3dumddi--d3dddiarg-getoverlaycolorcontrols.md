@@ -71,7 +71,7 @@ typedef struct _D3DDDIARG_GETOVERLAYCOLORCONTROLS {
 ### -field <b>ColorControls</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544612">D3DDDI_OVERLAYCOLORCONTROLS</a> structure that <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getoverlaycolorcontrols.md">GetOverlayColorControls</a> populates with color-control settings.</p>
+<p>[out] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlaycolorcontrols.md">D3DDDI_OVERLAYCOLORCONTROLS</a> structure that <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getoverlaycolorcontrols.md">GetOverlayColorControls</a> populates with color-control settings.</p>
 </dd>
 </dl>
 
@@ -103,7 +103,7 @@ typedef struct _D3DDDIARG_GETOVERLAYCOLORCONTROLS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544612">D3DDDI_OVERLAYCOLORCONTROLS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlaycolorcontrols.md">D3DDDI_OVERLAYCOLORCONTROLS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getoverlaycolorcontrols.md">GetOverlayColorControls</a>

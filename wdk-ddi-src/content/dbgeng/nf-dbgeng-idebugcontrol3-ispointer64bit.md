@@ -7,7 +7,7 @@ old-location: debugger\ispointer64bit.htm
 old-project: debugger
 ms.assetid: 01003268-844e-4613-ac13-0306396e56b9
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl3, IsPointer64Bit, IDebugControl3::IsPointer64Bit
 ms.prod: windows-hardware
 ms.technology: windows-devices

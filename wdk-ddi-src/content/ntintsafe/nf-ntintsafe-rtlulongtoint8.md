@@ -7,7 +7,7 @@ old-location: kernel\rtlulongtoint8.htm
 old-project: kernel
 ms.assetid: E44C756E-BD9B-4DC0-9F6D-07A366ED72B7
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlULongToInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices

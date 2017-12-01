@@ -69,7 +69,7 @@ SIZE_T APIENTRY* CalcPrivateVideoProcessorInputViewSize(
 ### -param <i>pView</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406318">D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW</a> structure that describes the video processor input view.</p>
+<p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createvideoprocessorinputview.md">D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW</a> structure that describes the video processor input view.</p>
 </dd>
 </dl>
 
@@ -77,11 +77,7 @@ SIZE_T APIENTRY* CalcPrivateVideoProcessorInputViewSize(
 <p>The required number of bytes for the video processor input view state.</p>
 
 ## -remarks
-<p>The runtime will validate the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406318">D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW</a> structure before it calls this function. In particular, the runtime verifies that the specified view is supported as a video processor input format.</p>
-
-<p>This function is not expected to fail.</p>
-
-<p>The runtime will validate the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406318">D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW</a> structure before it calls this function. In particular, the runtime verifies that the specified view is supported as a video processor input format.</p>
+<p>The runtime will validate the members of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createvideoprocessorinputview.md">D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW</a> structure before it calls this function. In particular, the runtime verifies that the specified view is supported as a video processor input format.</p>
 
 <p>This function is not expected to fail.</p>
 
@@ -128,7 +124,7 @@ SIZE_T APIENTRY* CalcPrivateVideoProcessorInputViewSize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406318">D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createvideoprocessorinputview.md">D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW</a>
 </dt>
 </dl>
 <p> </p>

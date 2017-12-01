@@ -7,7 +7,7 @@ old-location: stream\avcstrm_function.htm
 old-project: stream
 ms.assetid: 0dacc4b0-003f-4c73-8705-1c1e86ce357c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: AVCPRECONNECTINFO, AVCPRECONNECTINFO, *PAVCPRECONNECTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -77,7 +77,7 @@ typedef enum _AVCSTRM_FUNCTION {
 ### -field <a id="AVCSTRM_ABORT_STREAMING"></a><a id="avcstrm_abort_streaming"></a><b>AVCSTRM_ABORT_STREAMING</b>
 
 <dd>
-<p>Abort streaming. This cancels <i>all</i> streaming IRPs. To cancel an individual IRP, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff548338">IoCancelIrp</a>.</p>
+<p>Abort streaming. This cancels <i>all</i> streaming IRPs. To cancel an individual IRP, use <a href="..\wdm\nf-wdm-iocancelirp.md">IoCancelIrp</a>.</p>
 </dd>
 
 ### -field <a id="AVCSTRM_OPEN"></a><a id="avcstrm_open"></a><b>AVCSTRM_OPEN</b>
@@ -166,4 +166,4 @@ typedef enum _AVCSTRM_FUNCTION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVCSTRM_FUNCTION enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVCSTRM_FUNCTION enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -94,39 +94,9 @@ VOID SpbRequestComplete(
 <p>None.</p>
 
 ## -remarks
-<p>Your controller driver calls this method to complete an I/O request that it previously received during one of the following callbacks:</p><dl>
-<dd>
-<a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/2BC0E6E7-7EE1-487A-9276-AE8EBB3FFD43">EvtSpbControllerIoRead</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/C56F1528-5FDA-4BC9-AB32-7882FB0F7713">EvtSpbControllerIoSequence</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/D97C3A17-309E-4364-8DFB-9073901D332E">EvtSpbControllerIoWrite</a>
-</dd>
-</dl><p>Call <b>SpbRequestComplete</b> instead of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549945">WdfRequestComplete</a> method to complete I/O requests received by the callback functions in the preceding list.</p>
+<p>Your controller driver calls this method to complete an I/O request that it previously received during one of the following callbacks:</p>
 
-<p>A bug check occurs if the caller supplies an invalid SPBREQUEST handle.</p>
-
-<p>A call to <b>SpbRequestComplete</b> represents the final stage in the processing of an I/O request. When this method returns, the <i>Request</i> handle value is no longer valid.</p>
-
-<p>Your controller driver calls this method to complete an I/O request that it previously received during one of the following callbacks:</p><dl>
-<dd>
-<a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/2BC0E6E7-7EE1-487A-9276-AE8EBB3FFD43">EvtSpbControllerIoRead</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/C56F1528-5FDA-4BC9-AB32-7882FB0F7713">EvtSpbControllerIoSequence</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/D97C3A17-309E-4364-8DFB-9073901D332E">EvtSpbControllerIoWrite</a>
-</dd>
-</dl><p>Call <b>SpbRequestComplete</b> instead of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549945">WdfRequestComplete</a> method to complete I/O requests received by the callback functions in the preceding list.</p>
+<p>Call <b>SpbRequestComplete</b> instead of the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> method to complete I/O requests received by the callback functions in the preceding list.</p>
 
 <p>A bug check occurs if the caller supplies an invalid SPBREQUEST handle.</p>
 
@@ -200,7 +170,7 @@ VOID SpbRequestComplete(
 <a href="buses.spbrequest_object_handle">SPBREQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549945">WdfRequestComplete</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a>
 </dt>
 </dl>
 <p> </p>

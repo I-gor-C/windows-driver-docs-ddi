@@ -68,8 +68,6 @@ HRESULT GetItemName(
 ## -remarks
 <p>If there is enough memory available, the method allocates a string containing the current item's name, excluding path information. The method returns a pointer to the string in <i>pbstrItemName</i>. The minidriver must deallocate the memory used by the string by calling the <b>SysFreeString</b> function, which is documented in the Microsoft Windows SDK. </p>
 
-<p>If there is enough memory available, the method allocates a string containing the current item's name, excluding path information. The method returns a pointer to the string in <i>pbstrItemName</i>. The minidriver must deallocate the memory used by the string by calling the <b>SysFreeString</b> function, which is documented in the Microsoft Windows SDK. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -105,7 +103,7 @@ HRESULT GetItemName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>
+<a href="image.iwiadrvitem_getfullitemname">IWiaDrvItem::GetFullItemName</a>
 </dt>
 </dl>
 <p> </p>

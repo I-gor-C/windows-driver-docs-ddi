@@ -7,7 +7,7 @@ old-location: debugger\getvirtualtranslationphysicaloffsets.htm
 old-project: debugger
 ms.assetid: 40438ee7-2e58-4048-8739-75f21179c22c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces4, GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,15 +96,7 @@ HRESULT GetVirtualTranslationPhysicalOffsets(
 
 <p>Translating a virtual address to a physical address requires Windows  to walk down the paging hierarchy.  At each level it reads paging information from physical memory.  This method returns the offsets for these physical pages.  The number of levels in the paging hierarchy may be different for different addresses.</p>
 
-<p>The address at the last level of the hierarchy is the physical address corresponding to the specified virtual address.  This is what <a href="https://msdn.microsoft.com/library/windows/hardware/ff560335">VirtualToPhysical</a> would return.</p>
-
-<p>For details on how virtual addresses are translated into physical addresses, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.</p>
-
-<p>This method is only available in kernel-mode debugging.</p>
-
-<p>Translating a virtual address to a physical address requires Windows  to walk down the paging hierarchy.  At each level it reads paging information from physical memory.  This method returns the offsets for these physical pages.  The number of levels in the paging hierarchy may be different for different addresses.</p>
-
-<p>The address at the last level of the hierarchy is the physical address corresponding to the specified virtual address.  This is what <a href="https://msdn.microsoft.com/library/windows/hardware/ff560335">VirtualToPhysical</a> would return.</p>
+<p>The address at the last level of the hierarchy is the physical address corresponding to the specified virtual address.  This is what <a href="debugger.virtualtophysical">VirtualToPhysical</a> would return.</p>
 
 <p>For details on how virtual addresses are translated into physical addresses, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.</p>
 

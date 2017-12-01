@@ -7,7 +7,7 @@ old-location: sensors\isensorclassextension_cleanupfile.htm
 old-project: sensors
 ms.assetid: eeade123-fb83-478f-99e3-e79bbbb1919b
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorClassExtension, CleanupFile, ISensorClassExtension::CleanupFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545512">ISensorClassExtension::CleanupFile</a> method notifies the class extension about a file handle that closes and cancels all pending I/O requests, for the specified application.</p>
+<p>The <a href="sensors.isensorclassextension_cleanupfile">ISensorClassExtension::CleanupFile</a> method notifies the class extension about a file handle that closes and cancels all pending I/O requests, for the specified application.</p>
 
 
 ## -syntax
@@ -74,13 +74,9 @@ HRESULT CleanupFile(
 <p> </p>
 
 ## -remarks
-<p>Your driver must call this method to forward <a href="https://msdn.microsoft.com/library/windows/hardware/ff554905">IFileCallbackCleanup::OnCleanupFile</a> method calls from UMDF. You receive this call any time that a file handle closes. Typically, you receive this call after an application stops responding.</p>
+<p>Your driver must call this method to forward <a href="umdf.ifilecallbackcleanup_oncleanupfile">IFileCallbackCleanup::OnCleanupFile</a> method calls from UMDF. You receive this call any time that a file handle closes. Typically, you receive this call after an application stops responding.</p>
 
-<p>When finished, the sensor class extension calls the driver in <a href="sensors.isensordriver_onclientdisconnect">ISensorDriver::OnClientDisconnect</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff545598">ISensorDriver::OnClientUnsubscribeFromEvents</a>, if applicable.</p>
-
-<p>Your driver must call this method to forward <a href="https://msdn.microsoft.com/library/windows/hardware/ff554905">IFileCallbackCleanup::OnCleanupFile</a> method calls from UMDF. You receive this call any time that a file handle closes. Typically, you receive this call after an application stops responding.</p>
-
-<p>When finished, the sensor class extension calls the driver in <a href="sensors.isensordriver_onclientdisconnect">ISensorDriver::OnClientDisconnect</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff545598">ISensorDriver::OnClientUnsubscribeFromEvents</a>, if applicable.</p>
+<p>When finished, the sensor class extension calls the driver in <a href="sensors.isensordriver_onclientdisconnect">ISensorDriver::OnClientDisconnect</a>, and <a href="sensors.isensordriver_onclientunsubscribefromevents">ISensorDriver::OnClientUnsubscribeFromEvents</a>, if applicable.</p>
 
 ## -requirements
 <table>

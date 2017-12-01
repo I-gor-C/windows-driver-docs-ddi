@@ -72,16 +72,10 @@ typedef EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS PEVT_UCX_ENDPOINT_OK_TO_CANCEL_T
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
  method.</p>
 
-<p>Before completing the URB associated with the transfer, the client driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/mt188042">UcxEndpointNeedToCancelTransfers</a>
-and then waits for UCX to call this function. Then the client driver can complete the URB with <b>STATUS_CANCELLED</b>.</p>
-
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>
- method.</p>
-
-<p>Before completing the URB associated with the transfer, the client driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/mt188042">UcxEndpointNeedToCancelTransfers</a>
+<p>Before completing the URB associated with the transfer, the client driver calls <a href="buses._ucxendpointneedtocanceltransfers">UcxEndpointNeedToCancelTransfers</a>
 and then waits for UCX to call this function. Then the client driver can complete the URB with <b>STATUS_CANCELLED</b>.</p>
 
 ## -requirements

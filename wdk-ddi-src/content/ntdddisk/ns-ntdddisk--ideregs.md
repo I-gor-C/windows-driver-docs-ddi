@@ -225,10 +225,10 @@ typedef struct _IDEREGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551323">ATA_PASS_THROUGH_EX</a>
+<a href="..\ntddscsi\ns-ntddscsi--ata-pass-through-ex.md">ATA_PASS_THROUGH_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551322">ATA_PASS_THROUGH_DIRECT</a>
+<a href="..\ntddscsi\ns-ntddscsi--ata-pass-through-direct.md">ATA_PASS_THROUGH_DIRECT</a>
 </dt>
 </dl>
 <p> </p>

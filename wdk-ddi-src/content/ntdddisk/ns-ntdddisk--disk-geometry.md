@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DISK_GEOMETRY structure is obsolete and provided only to support existing drivers. New drivers must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff552618">DISK_GEOMETRY_EX</a>. DISK_GEOMETRY is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560357">IOCTL_DISK_GET_DRIVE_GEOMETRY</a> and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560371">IOCTL_DISK_GET_MEDIA_TYPES</a> requests, in order to retrieve information about the geometry of a physical disk. </p>
+<p>The DISK_GEOMETRY structure is obsolete and provided only to support existing drivers. New drivers must use <a href="..\ntdddisk\ns-ntdddisk--disk-geometry-ex.md">DISK_GEOMETRY_EX</a>. DISK_GEOMETRY is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-drive-geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a> and the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-media-types.md">IOCTL_DISK_GET_MEDIA_TYPES</a> requests, in order to retrieve information about the geometry of a physical disk. </p>
 
 
 ## -syntax
@@ -67,7 +67,7 @@ typedef struct _DISK_GEOMETRY {
 ### -field <b>MediaType</b>
 
 <dd>
-<p>Indicates the type of disk. The enumeration <a href="https://msdn.microsoft.com/library/windows/hardware/ff562216">MEDIA_TYPE</a> lists the values that can be assigned to this member. </p>
+<p>Indicates the type of disk. The enumeration <a href="storage.media_type">MEDIA_TYPE</a> lists the values that can be assigned to this member. </p>
 </dd>
 
 ### -field <b>TracksPerCylinder</b>
@@ -91,10 +91,10 @@ typedef struct _DISK_GEOMETRY {
 
 ## -remarks
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552618">DISK_GEOMETRY_EX</a> must be used with new drivers, in order to accommodate GUID Partition Table (GPT) partitions. The DISK_GEOMETRY structure is nested within the DISK_GEOMETRY_EX structure.</p>
+<a href="..\ntdddisk\ns-ntdddisk--disk-geometry-ex.md">DISK_GEOMETRY_EX</a> must be used with new drivers, in order to accommodate GUID Partition Table (GPT) partitions. The DISK_GEOMETRY structure is nested within the DISK_GEOMETRY_EX structure.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560371">IOCTL_DISK_GET_MEDIA_TYPES</a> causes an array of these structures to be returned. </p>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-media-types.md">IOCTL_DISK_GET_MEDIA_TYPES</a> causes an array of these structures to be returned. </p>
 
 ## -requirements
 <table>
@@ -113,13 +113,13 @@ typedef struct _DISK_GEOMETRY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552618">DISK_GEOMETRY_EX</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-geometry-ex.md">DISK_GEOMETRY_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560357">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-drive-geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560371">IOCTL_DISK_GET_MEDIA_TYPES</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-media-types.md">IOCTL_DISK_GET_MEDIA_TYPES</a>
 </dt>
 </dl>
 <p> </p>

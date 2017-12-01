@@ -7,7 +7,7 @@ old-location: kernel\write_register_ulong.htm
 old-project: kernel
 ms.assetid: d1f3d510-5b2c-4956-b9e0-cd26b2d818a9
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WRITE_REGISTER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,8 +73,6 @@ VOID WRITE_REGISTER_ULONG(
 <p>None</p>
 
 ## -remarks
-<p>Callers of <b>WRITE_REGISTER_ULONG</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.</p>
-
 <p>Callers of <b>WRITE_REGISTER_ULONG</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.</p>
 
 ## -requirements

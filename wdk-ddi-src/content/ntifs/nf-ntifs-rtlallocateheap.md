@@ -102,7 +102,7 @@ PVOID RtlAllocateHeap(
 ### -param <i>Size</i> [in]
 
 <dd>
-<p>Number of bytes to be allocated. If the heap, specified by the <i>HeapHandle</i> parameter, is a nongrowable heap, <i>Size</i> must be less than or equal to the heap's virtual memory threshold. (For more information, see the <b>VirtualMemoryThreshold</b> member of the <i>Parameters</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff552159">RtlCreateHeap</a>.) </p>
+<p>Number of bytes to be allocated. If the heap, specified by the <i>HeapHandle</i> parameter, is a nongrowable heap, <i>Size</i> must be less than or equal to the heap's virtual memory threshold. (For more information, see the <b>VirtualMemoryThreshold</b> member of the <i>Parameters</i> parameter to <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>.) </p>
 </dd>
 </dl>
 
@@ -118,20 +118,6 @@ PVOID RtlAllocateHeap(
 <p> </p>
 
 ## -remarks
-<p><b>RtlAllocateHeap</b> allocates a block of memory of the specified size from the specified heap. </p>
-
-<p>To free a block of memory allocated by <b>RtlAllocateHeap</b>, call <b>RtlFreeHeap</b>. </p>
-
-<p>Memory allocated by <b>RtlAllocateHeap</b> is not movable. Since the memory is not movable, it is possible for the heap to become fragmented. </p>
-
-<p>Serialization ensures mutual exclusion when two or more threads attempt to simultaneously allocate or free blocks from the same heap. There is a small performance cost to serialization, but it must be used whenever multiple threads allocate and free memory from the same heap. Setting the HEAP_NO_SERIALIZE value eliminates mutual exclusion on the heap. Without serialization, two or more threads that use the same heap handle might attempt to allocate or free memory simultaneously, likely causing corruption in the heap. The HEAP_NO_SERIALIZE value can, therefore, be safely used only in the following situations: </p>
-
-<p>The process has only one thread. </p>
-
-<p>The process has multiple threads, but only one thread calls the heap functions for a specific heap. </p>
-
-<p>The process has multiple threads, and the application provides its own mechanism for mutual exclusion to a specific heap. </p>
-
 <p><b>RtlAllocateHeap</b> allocates a block of memory of the specified size from the specified heap. </p>
 
 <p>To free a block of memory allocated by <b>RtlAllocateHeap</b>, call <b>RtlFreeHeap</b>. </p>
@@ -209,13 +195,13 @@ PVOID RtlAllocateHeap(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552159">RtlCreateHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552233">RtlDestroyHeap</a>
+<a href="..\ntifs\nf-ntifs-rtldestroyheap.md">RtlDestroyHeap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552276">RtlFreeHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlfreeheap.md">RtlFreeHeap</a>
 </dt>
 </dl>
 <p> </p>

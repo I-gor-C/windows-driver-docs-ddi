@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><i>TapeMiniCreatePartition</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560612">IOCTL_TAPE_CREATE_PARTITION</a> request. This routine is required.</p>
+<p><i>TapeMiniCreatePartition</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl-tape-create-partition.md">IOCTL_TAPE_CREATE_PARTITION</a> request. This routine is required.</p>
 
 
 ## -prototype
@@ -78,7 +78,7 @@ TAPE_STATUS TapeMiniCreatePartition(
 ### -param <i>CommandParameters</i> [in, out]
 
 <dd>
-<p>Pointer to a buffer allocated by the caller that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567960">TAPE_CREATE_PARTITION</a> structure.</p>
+<p>Pointer to a buffer allocated by the caller that contains a <a href="..\ntddtape\ns-ntddtape--tape-create-partition.md">TAPE_CREATE_PARTITION</a> structure.</p>
 </dd>
 
 ### -param <i>Srb</i> [in, out]
@@ -90,7 +90,7 @@ TAPE_STATUS TapeMiniCreatePartition(
 ### -param <i>CallNumber</i> [in]
 
 <dd>
-<p>Specifies the number of times <i>TapeMiniCreatePartition</i> has been called to process a given tape command. <i>CallNumber</i> is zero the first time this routine is called and is incremented for each subsequent call until the miniclass driver returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567975">TAPE_STATUS</a> value that indicates the command is complete.</p>
+<p>Specifies the number of times <i>TapeMiniCreatePartition</i> has been called to process a given tape command. <i>CallNumber</i> is zero the first time this routine is called and is incremented for each subsequent call until the miniclass driver returns a <a href="..\minitape\ne-minitape--tape-status.md">TAPE_STATUS</a> value that indicates the command is complete.</p>
 </dd>
 
 ### -param <i>StatusOfLastCommand</i> [in, optional]
@@ -177,27 +177,7 @@ TAPE_STATUS TapeMiniCreatePartition(
 
 <p><i>TapeMiniCreatePartition</i> might also fill in the following members in the SRB:</p>
 
-<p><b>DataBuffer</b> - Pointer to the data buffer to be transferred. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff567615">TapeClassAllocateSrbBuffer</a> to allocate a <b>DataBuffer</b> of length greater than or equal to <b>DataTransferLength</b>.</p>
-
-<p><b>DataTransferLength</b> - Specifies the number of bytes to be transferred in the SRB. This member is set by <b>TapeClassAllocateSrbBuffer</b>.</p>
-
-<p><b>TimeOutValue</b> - Specifies a time-out value for this command, overriding the default time-out value from the tape class driver's device extension.</p>
-
-<p><b>SrbFlags</b> - Specifies a flag for this command. The tape miniclass driver must set SRB_FLAGS_DATA_OUT if the SRB is sending data to the tape drive. This member can be zero if the SRB is requesting data from the tape drive or if no data is being transferred by the command.</p>
-
-<p>If the tape miniclass driver stores partition information in the minitape extension, <i>TapeMiniCreatePartition</i> updates the extension before returning to the tape class driver with TAPE_STATUS_SUCCESS.</p>
-
-<p><i>TapeMiniCreatePartition</i> creates a partition on a tape by filling in the CDB in an SRB passed by the tape class driver. Creating a partition typically requires a series of SRBs to complete the operation. After <i>TapeMiniCreatePartition</i> fills in a given SRB and returns, the tape class driver sends the SRB to the target device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>TapeMiniCreatePartition</i> again.</p>
-
-<p><i>TapeMiniCreatePartition</i> must fill in the following members in the SRB before returning to the tape class driver:</p>
-
-<p><b>Cdb</b> - Pointer to the SCSI CDB for the command. Clear the CDB with <b>TapeClassZeroMemory</b> before filling it in.</p>
-
-<p><b>CdbLength</b> - Specifies the number of bytes in the CDB.</p>
-
-<p><i>TapeMiniCreatePartition</i> might also fill in the following members in the SRB:</p>
-
-<p><b>DataBuffer</b> - Pointer to the data buffer to be transferred. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff567615">TapeClassAllocateSrbBuffer</a> to allocate a <b>DataBuffer</b> of length greater than or equal to <b>DataTransferLength</b>.</p>
+<p><b>DataBuffer</b> - Pointer to the data buffer to be transferred. Use <a href="..\minitape\nf-minitape-tapeclassallocatesrbbuffer.md">TapeClassAllocateSrbBuffer</a> to allocate a <b>DataBuffer</b> of length greater than or equal to <b>DataTransferLength</b>.</p>
 
 <p><b>DataTransferLength</b> - Specifies the number of bytes to be transferred in the SRB. This member is set by <b>TapeClassAllocateSrbBuffer</b>.</p>
 
@@ -234,19 +214,19 @@ TAPE_STATUS TapeMiniCreatePartition(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567615">TapeClassAllocateSrbBuffer</a>
+<a href="..\minitape\nf-minitape-tapeclassallocatesrbbuffer.md">TapeClassAllocateSrbBuffer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567927">TapeClassZeroMemory</a>
+<a href="..\minitape\nf-minitape-tapeclasszeromemory.md">TapeClassZeroMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567975">TAPE_STATUS</a>
+<a href="..\minitape\ne-minitape--tape-status.md">TAPE_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560612">IOCTL_TAPE_CREATE_PARTITION</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl-tape-create-partition.md">IOCTL_TAPE_CREATE_PARTITION</a>
 </dt>
 </dl>
 <p> </p>

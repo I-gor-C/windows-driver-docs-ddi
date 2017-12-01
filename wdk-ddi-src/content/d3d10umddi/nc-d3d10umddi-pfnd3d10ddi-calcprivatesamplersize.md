@@ -67,7 +67,7 @@ SIZE_T APIENTRY CalcPrivateSamplerSize(
 ### -param <i>pSamplerDesc</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542011">D3D10_DDI_SAMPLER_DESC</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-sampler-desc.md">D3D10_DDI_SAMPLER_DESC</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ SIZE_T APIENTRY CalcPrivateSamplerSize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542011">D3D10_DDI_SAMPLER_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-sampler-desc.md">D3D10_DDI_SAMPLER_DESC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541833">D3D10DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

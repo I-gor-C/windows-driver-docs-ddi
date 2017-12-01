@@ -67,7 +67,7 @@ STDMETHOD EnablePDEV(
 ### -param <i>pdevobj</i> 
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>pPrinterName</i> 
@@ -97,7 +97,7 @@ STDMETHOD EnablePDEV(
 ### -param <i>pGdiInfo</i> 
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566484">GDIINFO</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="display.gdiinfo">GDIINFO</a> structure.</p>
 </dd>
 
 ### -param <i>cjDevInfo</i> 
@@ -109,13 +109,13 @@ STDMETHOD EnablePDEV(
 ### -param <i>pDevInfo</i> 
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552835">DEVINFO</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="display.devinfo">DEVINFO</a> structure.</p>
 </dd>
 
 ### -param <i>pded</i> 
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556206">DRVENABLEDATA</a> structure containing the addresses of the printer driver's graphics DDI hooking functions. For more information, see the following Remarks section.</p>
+<p>Caller-supplied pointer to a <a href="display.drvenabledata">DRVENABLEDATA</a> structure containing the addresses of the printer driver's graphics DDI hooking functions. For more information, see the following Remarks section.</p>
 </dd>
 
 ### -param <i>pDevOem</i> [out]
@@ -139,31 +139,17 @@ STDMETHOD EnablePDEV(
 ## -remarks
 <p>A rendering plug-in for Unidrv must implement the <code>IPrintOemUni::EnablePDEV</code> method.</p>
 
-<p>The <code>IPrintOemUni::EnablePDEV</code> method performs the same types of operations as the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a> function that is exported by a printer graphics DLL. Its purpose is to allow a rendering plug-in to create its own PDEV structure. (For more information about PDEV structures, see <a href="NULL">Customized PDEV Structures</a>.)</p>
+<p>The <code>IPrintOemUni::EnablePDEV</code> method performs the same types of operations as the <a href="display.drvenablepdev">DrvEnablePDEV</a> function that is exported by a printer graphics DLL. Its purpose is to allow a rendering plug-in to create its own PDEV structure. (For more information about PDEV structures, see <a href="NULL">Customized PDEV Structures</a>.)</p>
 
-<p>If you provide a rendering plug-in that exports the <code>IPrintOemUni::EnablePDEV</code> method, Undrv's printer graphics DLL calls the method from within its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a> function.</p>
+<p>If you provide a rendering plug-in that exports the <code>IPrintOemUni::EnablePDEV</code> method, Undrv's printer graphics DLL calls the method from within its <a href="display.drvenablepdev">DrvEnablePDEV</a> function.</p>
 
-<p>The <code>IPrintOemUni::EnablePDEV</code> method should allocate an instance of its private PDEV structure, initialize it, and return its address as the method's <i>pDevOem</i> parameter. Other plug-in methods receive the address as the <i>pdevOEM</i> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
-
-<p>The <b>pdevOEM</b> member of the DEVOBJ structure is not used with the <code>IPrintOemUni::EnablePDEV</code> method.</p>
-
-<p>The structures pointed to by the <i>phsurfPatterns</i>, <i>pGdiInfo</i>, and <i>pDevInfo</i> parameter values are the same ones that Unidrv's <b>DrvEnablePDEV</b> function receives. The rendering plug-in can modify the structure contents as necessary. It can supply surface fill patterns by obtaining HSURF-typed surface handles and placing them in the buffer pointed to by <i>phsurfPatterns</i>. Fill pattern types and handle order are listed in the description of <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a>.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556206">DRVENABLEDATA</a> structure pointed to by <i>pded</i> contains the addresses of graphics DDI functions provided Unidrv's printer graphics DLL. You are allowed to provide customized hooking functions in your plug-in for these graphics DDI functions. The DRVENABLEDATA structure's contents enable your customized hooking functions to call back to the driver's graphics DDI functions. For more information, see <a href="NULL">Customized Graphics DDI Functions</a>.</p>
-
-<p>A rendering plug-in for Unidrv must implement the <code>IPrintOemUni::EnablePDEV</code> method.</p>
-
-<p>The <code>IPrintOemUni::EnablePDEV</code> method performs the same types of operations as the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a> function that is exported by a printer graphics DLL. Its purpose is to allow a rendering plug-in to create its own PDEV structure. (For more information about PDEV structures, see <a href="NULL">Customized PDEV Structures</a>.)</p>
-
-<p>If you provide a rendering plug-in that exports the <code>IPrintOemUni::EnablePDEV</code> method, Undrv's printer graphics DLL calls the method from within its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a> function.</p>
-
-<p>The <code>IPrintOemUni::EnablePDEV</code> method should allocate an instance of its private PDEV structure, initialize it, and return its address as the method's <i>pDevOem</i> parameter. Other plug-in methods receive the address as the <i>pdevOEM</i> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>The <code>IPrintOemUni::EnablePDEV</code> method should allocate an instance of its private PDEV structure, initialize it, and return its address as the method's <i>pDevOem</i> parameter. Other plug-in methods receive the address as the <i>pdevOEM</i> member of the <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 
 <p>The <b>pdevOEM</b> member of the DEVOBJ structure is not used with the <code>IPrintOemUni::EnablePDEV</code> method.</p>
 
-<p>The structures pointed to by the <i>phsurfPatterns</i>, <i>pGdiInfo</i>, and <i>pDevInfo</i> parameter values are the same ones that Unidrv's <b>DrvEnablePDEV</b> function receives. The rendering plug-in can modify the structure contents as necessary. It can supply surface fill patterns by obtaining HSURF-typed surface handles and placing them in the buffer pointed to by <i>phsurfPatterns</i>. Fill pattern types and handle order are listed in the description of <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a>.</p>
+<p>The structures pointed to by the <i>phsurfPatterns</i>, <i>pGdiInfo</i>, and <i>pDevInfo</i> parameter values are the same ones that Unidrv's <b>DrvEnablePDEV</b> function receives. The rendering plug-in can modify the structure contents as necessary. It can supply surface fill patterns by obtaining HSURF-typed surface handles and placing them in the buffer pointed to by <i>phsurfPatterns</i>. Fill pattern types and handle order are listed in the description of <a href="display.drvenablepdev">DrvEnablePDEV</a>.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556206">DRVENABLEDATA</a> structure pointed to by <i>pded</i> contains the addresses of graphics DDI functions provided Unidrv's printer graphics DLL. You are allowed to provide customized hooking functions in your plug-in for these graphics DDI functions. The DRVENABLEDATA structure's contents enable your customized hooking functions to call back to the driver's graphics DDI functions. For more information, see <a href="NULL">Customized Graphics DDI Functions</a>.</p>
+<p>The <a href="display.drvenabledata">DRVENABLEDATA</a> structure pointed to by <i>pded</i> contains the addresses of graphics DDI functions provided Unidrv's printer graphics DLL. You are allowed to provide customized hooking functions in your plug-in for these graphics DDI functions. The DRVENABLEDATA structure's contents enable your customized hooking functions to call back to the driver's graphics DDI functions. For more information, see <a href="NULL">Customized Graphics DDI Functions</a>.</p>
 
 ## -requirements
 <table>

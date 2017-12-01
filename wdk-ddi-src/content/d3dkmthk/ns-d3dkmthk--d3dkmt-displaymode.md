@@ -77,7 +77,7 @@ typedef struct _D3DKMT_DISPLAYMODE {
 ### -field <b>Format</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the display mode.</p>
+<p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the display mode.</p>
 </dd>
 
 ### -field <b>IntegerRefreshRate</b>
@@ -89,19 +89,19 @@ typedef struct _D3DKMT_DISPLAYMODE {
 ### -field <b>RefreshRate</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544641">D3DDDI_RATIONAL</a> structure that indicates the refresh rate of the display mode. </p>
+<p>[out] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-rational.md">D3DDDI_RATIONAL</a> structure that indicates the refresh rate of the display mode. </p>
 </dd>
 
 ### -field <b>ScanLineOrdering</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544682">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a>-typed value that indicates how scan lines are ordered in the display mode.</p>
+<p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-video-signal-scanline-ordering.md">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a>-typed value that indicates how scan lines are ordered in the display mode.</p>
 </dd>
 
 ### -field <b>DisplayOrientation</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544646">D3DDDI_ROTATION</a>-typed value that identifies the orientation of the display mode.</p>
+<p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-rotation.md">D3DDDI_ROTATION</a>-typed value that identifies the orientation of the display mode.</p>
 </dd>
 
 ### -field <b>DisplayFixedOutput</b>
@@ -113,7 +113,7 @@ typedef struct _D3DKMT_DISPLAYMODE {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545991">D3DKMDT_DISPLAYMODE_FLAGS</a> structure that indicates information about the display mode.</p>
+<p>[out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmdt-displaymode-flags.md">D3DKMDT_DISPLAYMODE_FLAGS</a> structure that indicates information about the display mode.</p>
 </dd>
 </dl>
 
@@ -145,25 +145,25 @@ typedef struct _D3DKMT_DISPLAYMODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544641">D3DDDI_RATIONAL</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-rational.md">D3DDDI_RATIONAL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544646">D3DDDI_ROTATION</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-rotation.md">D3DDDI_ROTATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544682">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-video-signal-scanline-ordering.md">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545991">D3DKMDT_DISPLAYMODE_FLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmdt-displaymode-flags.md">D3DKMDT_DISPLAYMODE_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548036">D3DKMT_GETDISPLAYMODELIST</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getdisplaymodelist.md">D3DKMT_GETDISPLAYMODELIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546967">D3DKMTGetDisplayModeList</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetdisplaymodelist.md">D3DKMTGetDisplayModeList</a>
 </dt>
 </dl>
 <p> </p>

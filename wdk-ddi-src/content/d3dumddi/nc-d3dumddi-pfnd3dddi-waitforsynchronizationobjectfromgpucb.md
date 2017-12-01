@@ -67,7 +67,7 @@ HRESULT APIENTRY CALLBACK* pfnWaitForSynchronizationObjectFromGpuCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906769">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a> structure that provides the details of the requested operation.
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicb-waitforsynchronizationobjectfromgpu.md">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a> structure that provides the details of the requested operation.
 
 </p>
 </dd>
@@ -77,8 +77,6 @@ HRESULT APIENTRY CALLBACK* pfnWaitForSynchronizationObjectFromGpuCb(
 <p>If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.</p>
 
 ## -remarks
-<p>This function semantics are similar to existing <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-waitforsynchronizationobject2cb.md">pfnWaitForSynchronizationObject2Cb</a> call, except that this callback also supports monitored fence objects and an array of monitored fence values to wait for.</p>
-
 <p>This function semantics are similar to existing <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-waitforsynchronizationobject2cb.md">pfnWaitForSynchronizationObject2Cb</a> call, except that this callback also supports monitored fence objects and an array of monitored fence values to wait for.</p>
 
 ## -requirements
@@ -127,7 +125,7 @@ HRESULT APIENTRY CALLBACK* pfnWaitForSynchronizationObjectFromGpuCb(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-waitforsynchronizationobject2cb.md">pfnWaitForSynchronizationObject2Cb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906769">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddicb-waitforsynchronizationobjectfromgpu.md">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-waitforsynchronizationobjectcb.md">pfnWaitForSynchronizationObjectCb</a>

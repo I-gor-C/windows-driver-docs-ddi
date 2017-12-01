@@ -100,16 +100,6 @@ PVOID APIENTRY AgpReserveVirtual(
 
 <p>The miniport driver should call <a href="..\videoagp\nc-videoagp-pagp-release-virtual.md">AgpReleaseVirtual</a> to release the reserved virtual address range when it is no longer needed.</p>
 
-<p>If <b>ProcessHandle</b> is not 0, then <b>AgpReserveVirtual</b> reserves, but does not commit, a range of virtual addresses in the address space of a user-mode process. In that case, you must call <a href="..\videoagp\nc-videoagp-pagp-commit-virtual.md">AgpCommitVirtual</a> to map the reserved (user-mode) virtual addresses to physical addresses.</p>
-
-<p>If <b>ProcessHandle</b> is 0, then <b>AgpReserveVirtual</b> allocates a range of virtual addresses in system space and automatically maps (commits) the entire range of virtual addresses to physical addresses. Even though <b>AgpReserveVirtual</b> commits the entire virtual range, you still must call <a href="..\videoagp\nc-videoagp-pagp-commit-virtual.md">AgpCommitVirtual</a> before any code accesses the virtual range.</p>
-
-<p>When you call <b>AgpReserveVirtual</b> to allocate a range of virtual addresses in system space (that is, if you set <b>ProcessHandle</b> to 0), the entire range of physical addresses identified by <b>PhysicalReserveContext</b> must be committed to locked pages of physical memory by a previous call to <a href="..\videoagp\nc-videoagp-pagp-commit-physical.md">AgpCommitPhysical</a>.</p>
-
-<p>The miniport driver can call <a href="..\videoagp\nc-videoagp-pagp-release-virtual.md">AgpReleaseVirtual</a> several times to reserve many smaller address ranges rather than one big range.</p>
-
-<p>The miniport driver should call <a href="..\videoagp\nc-videoagp-pagp-release-virtual.md">AgpReleaseVirtual</a> to release the reserved virtual address range when it is no longer needed.</p>
-
 ## -requirements
 <table>
 <tr>

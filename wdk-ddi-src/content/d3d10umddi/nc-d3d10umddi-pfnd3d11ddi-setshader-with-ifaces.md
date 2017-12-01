@@ -88,7 +88,7 @@ VOID APIENTRY CsSetShaderWithIfaces(
 ### -param <i>pPointerData</i> [in]
 
 <dd>
-<p> An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542095">D3D11DDIARG_POINTERDATA</a> structures. Each structure describes the location of the data that is referenced by a class instance that is assigned to an interface implementation. The number of elements in the array is specified by the <i>NumClassInstances</i> parameter. </p>
+<p> An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-pointerdata.md">D3D11DDIARG_POINTERDATA</a> structures. Each structure describes the location of the data that is referenced by a class instance that is assigned to an interface implementation. The number of elements in the array is specified by the <i>NumClassInstances</i> parameter. </p>
 </dd>
 </dl>
 
@@ -98,16 +98,6 @@ VOID APIENTRY CsSetShaderWithIfaces(
 <p>The driver can use the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> callback function to set an error code. For more information about setting error codes, see the following Remarks section.</p>
 
 ## -remarks
-<p>Each class instance for an interface implementation has the following pieces of information:  </p>
-
-<p>Code that is associated with that class instance</p>
-
-<p>A location for the data that is used by that class instance</p>
-
-<p>The <i>NumClassInstances</i> parameter specifies the number of interfaces that must be assigned values at run time. For each interface, each element of the <b>pIfaces</b> array provides a function table identifier, and each element of the <b>pPointerData</b> array provides the data locations for a class instance that is assigned to the interface. </p>
-
-<p>The driver can pass E_OUTOFMEMORY (if the driver runs out of memory) or D3DDDIERR_DEVICEREMOVED (if the device is removed) in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> function. The Direct3D runtime determines that any other errors are critical. If the driver passes any errors, which includes D3DDDIERR_DEVICEREMOVED, the Direct3D runtime determines that the handle is invalid; therefore, the runtime does not call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyshader.md">DestroyShader</a> function to destroy the handle that the <i>hShader</i> parameter specifies.</p>
-
 <p>Each class instance for an interface implementation has the following pieces of information:  </p>
 
 <p>Code that is associated with that class instance</p>
@@ -153,10 +143,10 @@ VOID APIENTRY CsSetShaderWithIfaces(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542141">D3D11DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-devicefuncs~r1.md">D3D11DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542095">D3D11DDIARG_POINTERDATA</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-pointerdata.md">D3D11DDIARG_POINTERDATA</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-destroyshader.md">DestroyShader</a>

@@ -7,7 +7,7 @@ old-location: debugger\gettype.htm
 old-project: debugger
 ms.assetid: c6aa6560-3183-4e3a-a625-80d1c5072af5
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugBreakpoint, GetType, IDebugBreakpoint::GetType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -103,13 +103,7 @@ HRESULT GetType(
 ## -remarks
 <p>If changes are made to the breakpoint, the processor type might change.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the information that is returned in <i>BreakType</i> and <i>ProcType</i>.</p>
-
-<p>For more information about breakpoint types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538928">Breakpoints</a>.</p>
-
-<p>If changes are made to the breakpoint, the processor type might change.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the information that is returned in <i>BreakType</i> and <i>ProcType</i>.</p>
+<p>The <a href="debugger.getparameters">GetParameters</a> method also returns the information that is returned in <i>BreakType</i> and <i>ProcType</i>.</p>
 
 <p>For more information about breakpoint types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538928">Breakpoints</a>.</p>
 

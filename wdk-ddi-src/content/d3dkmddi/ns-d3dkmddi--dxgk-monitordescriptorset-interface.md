@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DXGK_MONITORDESCRIPTORSET_INTERFACE structure contains pointers to functions that belong to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568427">Monitor Descriptor Set Interface</a>, which is implemented by the video present network (VidPN) manager.</p>
+<p>The DXGK_MONITORDESCRIPTORSET_INTERFACE structure contains pointers to functions that belong to the <a href="display.monitor_descriptor_set_interface">Monitor Descriptor Set Interface</a>, which is implemented by the video present network (VidPN) manager.</p>
 
 
 ## -syntax

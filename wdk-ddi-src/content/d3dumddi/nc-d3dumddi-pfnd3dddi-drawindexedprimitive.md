@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY DrawIndexedPrimitive(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543048">D3DDDIARG_DRAWINDEXEDPRIMITIVE</a> structure that describes the indexed primitive to draw.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawindexedprimitive.md">D3DDDIARG_DRAWINDEXEDPRIMITIVE</a> structure that describes the indexed primitive to draw.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ __checkReturn HRESULT APIENTRY DrawIndexedPrimitive(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543048">D3DDDIARG_DRAWINDEXEDPRIMITIVE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-drawindexedprimitive.md">D3DDDIARG_DRAWINDEXEDPRIMITIVE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-drawindexedprimitive2.md">DrawIndexedPrimitive2</a>

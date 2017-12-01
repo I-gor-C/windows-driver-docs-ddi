@@ -105,42 +105,6 @@ I/O Status block
 
 <p>The request  is sent to the physical function (PF) by virtualization stack to get the specific ranges on which intercepts must be placed.</p>
 
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request  is sent to the physical function (PF) by virtualization stack to get the specific ranges on which intercepts must be placed.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request  is sent to the physical function (PF) by virtualization stack to get the specific ranges on which intercepts must be placed.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request  is sent to the physical function (PF) by virtualization stack to get the specific ranges on which intercepts must be placed.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request  is sent to the physical function (PF) by virtualization stack to get the specific ranges on which intercepts must be placed.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request  is sent to the physical function (PF) by virtualization stack to get the specific ranges on which intercepts must be placed.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request  is sent to the physical function (PF) by virtualization stack to get the specific ranges on which intercepts must be placed.</p>
-
 ## -requirements
 <table>
 <tr>

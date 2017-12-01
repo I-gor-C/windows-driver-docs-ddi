@@ -77,17 +77,7 @@ VP_STATUS VideoPortEnumerateChildren(
 
 <p>New hardware is connected, which generates an interrupt.</p>
 
-<p>The miniport driver's interrupt handler (<a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a>) queues a DPC routine (<a href="..\video\nc-video-pminiport-dpc-routine.md">HwVidDpcRoutine</a>) by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>.</p>
-
-<p>The asynchronously executed DPC contains a call to <b>VideoPortEnumerateChildren</b>.</p>
-
-<p><b>VideoPortEnumerateChildren</b> causes <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a> to be called, allowing the Plug and Play Manager to enumerate all of the adapter's child devices.</p>
-
-<p>Some devices generate an interrupt when new hardware is connected to the system, or when existing hardware is disconnected from the system. For these devices, <b>VideoPortEnumerateChildren</b> can make such system changes as seamless as possible. The following is one possible scenario that forces the reenumeration of child devices through <b>VideoPortEnumerateChildren</b>:</p>
-
-<p>New hardware is connected, which generates an interrupt.</p>
-
-<p>The miniport driver's interrupt handler (<a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a>) queues a DPC routine (<a href="..\video\nc-video-pminiport-dpc-routine.md">HwVidDpcRoutine</a>) by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>.</p>
+<p>The miniport driver's interrupt handler (<a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a>) queues a DPC routine (<a href="..\video\nc-video-pminiport-dpc-routine.md">HwVidDpcRoutine</a>) by calling <a href="..\video\nf-video-videoportqueuedpc.md">VideoPortQueueDpc</a>.</p>
 
 <p>The asynchronously executed DPC contains a call to <b>VideoPortEnumerateChildren</b>.</p>
 
@@ -165,7 +155,7 @@ VP_STATUS VideoPortEnumerateChildren(
 <a href="..\video\nc-video-pminiport-dpc-routine.md">HwVidDpcRoutine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>
+<a href="..\video\nf-video-videoportqueuedpc.md">VideoPortQueueDpc</a>
 </dt>
 </dl>
 <p> </p>

@@ -133,25 +133,25 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538910">HidD_GetFeature</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getfeature.md">HidD_GetFeature</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538945">HidD_GetInputReport</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getinputreport.md">HidD_GetInputReport</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539684">HidD_SetFeature</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-setfeature.md">HidD_SetFeature</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539690">HidD_SetOutputReport</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-setoutputreport.md">HidD_SetOutputReport</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541100">IOCTL_HID_GET_FEATURE</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-feature.md">IOCTL_HID_GET_FEATURE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541126">IOCTL_HID_GET_INPUT_REPORT</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-input-report.md">IOCTL_HID_GET_INPUT_REPORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541176">IOCTL_HID_SET_FEATURE</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-set-feature.md">IOCTL_HID_SET_FEATURE</a>
 </dt>
 </dl>
 <p> </p>

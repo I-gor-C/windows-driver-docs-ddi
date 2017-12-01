@@ -88,7 +88,7 @@ typedef union _SE_SID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 </dl>
 <p> </p>

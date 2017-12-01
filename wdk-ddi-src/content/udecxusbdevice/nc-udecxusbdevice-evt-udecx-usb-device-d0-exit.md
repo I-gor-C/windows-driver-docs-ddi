@@ -63,19 +63,19 @@ NTSTATUS EvtUsbDeviceLinkPowerExit(
 ### -param <i>UdecxWdfDevice</i> [in]
 
 <dd>
-<p>A handle to a framework device object that represents the controller to which the USB device is attached. The client driver initialized this object in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627990">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
+<p>A handle to a framework device object that represents the controller to which the USB device is attached. The client driver initialized this object in a previous call to <a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.</p>
 </dd>
 
 ### -param <i>UdecxUsbDevice</i> [in]
 
 <dd>
-<p>A handle to UDE device object. The client driver created this object in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>.</p>
+<p>A handle to UDE device object. The client driver created this object in a previous call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.</p>
 </dd>
 
 ### -param <i>WakeSetting</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt628004">UDECX_USB_DEVICE_WAKE_SETTING</a>-type value that indicates remote wake capability of the USB device.</p>
+<p>A <a href="buses.udecx_usb_device_wake_setting">UDECX_USB_DEVICE_WAKE_SETTING</a>-type value that indicates remote wake capability of the USB device.</p>
 </dd>
 </dl>
 
@@ -83,20 +83,12 @@ NTSTATUS EvtUsbDeviceLinkPowerExit(
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE.</p>
 
 ## -remarks
-<p>The client driver registered the function in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627972">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
+<p>The client driver registered the function in a previous call to <a href="buses.udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
 
 <p>In the callback implementation, the client driver for the USB device is expected to perform steps to send the device to a low power state. In this function, the driver can initiate its wake-up from a low link power state, function suspend, or both.
-To do so, the driver for a USB 2.0 device must call the <a href="https://msdn.microsoft.com/library/windows/hardware/mt627982">UdecxUsbDeviceSignalWake</a> method.  USB 3.0 devices must use <a href="https://msdn.microsoft.com/library/windows/hardware/mt627981">UdecxUsbDeviceSignalFunctionWake</a>.</p>
+To do so, the driver for a USB 2.0 device must call the <a href="buses.udecxusbdevicesignalwake">UdecxUsbDeviceSignalWake</a> method.  USB 3.0 devices must use <a href="buses.udecxusbdevicesignalfunctionwake">UdecxUsbDeviceSignalFunctionWake</a>.</p>
 
-<p>The power request may be completed asynchronously by returning STATUS_PENDING, and then later calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627974">UdecxUsbDeviceLinkPowerExitComplete</a> with the actual completion code.
-</p>
-
-<p>The client driver registered the function in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627972">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
-
-<p>In the callback implementation, the client driver for the USB device is expected to perform steps to send the device to a low power state. In this function, the driver can initiate its wake-up from a low link power state, function suspend, or both.
-To do so, the driver for a USB 2.0 device must call the <a href="https://msdn.microsoft.com/library/windows/hardware/mt627982">UdecxUsbDeviceSignalWake</a> method.  USB 3.0 devices must use <a href="https://msdn.microsoft.com/library/windows/hardware/mt627981">UdecxUsbDeviceSignalFunctionWake</a>.</p>
-
-<p>The power request may be completed asynchronously by returning STATUS_PENDING, and then later calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627974">UdecxUsbDeviceLinkPowerExitComplete</a> with the actual completion code.
+<p>The power request may be completed asynchronously by returning STATUS_PENDING, and then later calling <a href="buses.udecxusbdevicelinkpowerexitcomplete">UdecxUsbDeviceLinkPowerExitComplete</a> with the actual completion code.
 </p>
 
 ## -requirements
@@ -148,19 +140,19 @@ To do so, the driver for a USB 2.0 device must call the <a href="https://msdn.mi
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627982">UdecxUsbDeviceSignalWake</a>
+<a href="buses.udecxusbdevicesignalwake">UdecxUsbDeviceSignalWake</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627974">UdecxUsbDeviceLinkPowerExitComplete</a>
+<a href="buses.udecxusbdevicelinkpowerexitcomplete">UdecxUsbDeviceLinkPowerExitComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595910">EVT_UDECX_USB_DEVICE_D0_ENTRY</a>
+<a href="buses.evt_udecx_usb_device_d0_entry">EVT_UDECX_USB_DEVICE_D0_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

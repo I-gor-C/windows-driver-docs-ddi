@@ -7,7 +7,7 @@ old-location: debugger\getprocessidbydataoffset.htm
 old-project: debugger
 ms.assetid: a2c094f4-f54d-4c3c-95e7-75df717db8cc
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects3, GetProcessIdByDataOffset, IDebugSystemObjects3::GetProcessIdByDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,13 +80,7 @@ HRESULT GetProcessIdByDataOffset(
 ## -remarks
 <p>This method is currently not available in kernel-mode debugging.</p>
 
-<p>In user-mode debugging, this method behaves the same as <a href="https://msdn.microsoft.com/library/windows/hardware/ff548150">GetProcessIdByPeb</a>.</p>
-
-<p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
-<p>This method is currently not available in kernel-mode debugging.</p>
-
-<p>In user-mode debugging, this method behaves the same as <a href="https://msdn.microsoft.com/library/windows/hardware/ff548150">GetProcessIdByPeb</a>.</p>
+<p>In user-mode debugging, this method behaves the same as <a href="debugger.getprocessidbypeb">GetProcessIdByPeb</a>.</p>
 
 <p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
 

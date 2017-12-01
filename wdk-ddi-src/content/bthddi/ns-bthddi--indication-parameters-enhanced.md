@@ -7,7 +7,7 @@ old-location: bltooth\indication_parameters_enhanced.htm
 old-project: bltooth
 ms.assetid: D0FBA555-B61F-4D6F-B93F-C77D395F2BCD
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: INDICATION_PARAMETERS_ENHANCED,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,9 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback
-   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access
-   paged memory)
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
 req.iface: IBidiSpl2
 ---
 
@@ -147,7 +145,7 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
 
 <dd>
 <p>A 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/hh450869">CHANNEL_CONFIG_PARAMETERS_ENHANCED</a> structure that contains the parameters for the current channel. This
+       <a href="..\bthddi\ns-bthddi--channel-config-parameters-enhanced.md">CHANNEL_CONFIG_PARAMETERS_ENHANCED</a> structure that contains the parameters for the current channel. This
        value is only valid if the channel was previously open and is now in the process of being configured.
        This member is used when the callback function specifies the 
        <i>IndicationRemoteConfigRequest</i> INDICATION_CODE value.</p>
@@ -238,7 +236,7 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
 
 <dd>
 <p>A 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/hh450869">CHANNEL_CONFIG_PARAMETERS_ENHANCED</a> structure that contains the parameters for the current channel. This
+       <a href="..\bthddi\ns-bthddi--channel-config-parameters-enhanced.md">CHANNEL_CONFIG_PARAMETERS_ENHANCED</a> structure that contains the parameters for the current channel. This
        value is only valid if the channel was previously open and is now in the process of being configured.
        This member is used when the callback function specifies the 
        <i>IndicationRemoteConfigRequest</i> INDICATION_CODE value.</p>
@@ -371,7 +369,7 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
 
 <dd>
 <p>An 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff536763">L2CAP_DISCONNECT_REASON</a> value that
+       <a href="..\bthddi\ne-bthddi--l2cap-disconnect-reason.md">L2CAP_DISCONNECT_REASON</a> value that
        indicates why the L2CAP connection to the remote device was terminated.</p>
 </dd>
 

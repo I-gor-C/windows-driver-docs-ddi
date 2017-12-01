@@ -41,8 +41,8 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>The <b>USB_PROTOCOLS</b> union is used to report the Universal Serial Bus (USB) signaling protocols that are supported by the port.</p>
-<p>The  supported protocols are retrieved in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406295">USB_NODE_CONNECTION_INFORMATION_EX_V2</a> structure by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450861">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a> I/O control request.</p>
-<p>In the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450861">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a> request, the caller specifies a bitwise <b>OR</b> of one or more flags defined in <b>USB_PROTOCOLS</b>. Upon successful completion, the request retrieves flags, which indicate the protocols that are actually supported by the port.</p>
+<p>The  supported protocols are retrieved in the <a href="..\usbioctl\ns-usbioctl--usb-node-connection-information-ex-v2.md">USB_NODE_CONNECTION_INFORMATION_EX_V2</a> structure by the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-information-ex-v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a> I/O control request.</p>
+<p>In the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-information-ex-v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a> request, the caller specifies a bitwise <b>OR</b> of one or more flags defined in <b>USB_PROTOCOLS</b>. Upon successful completion, the request retrieves flags, which indicate the protocols that are actually supported by the port.</p>
 
 
 ## -syntax
@@ -130,10 +130,10 @@ typedef union _USB_PROTOCOLS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406295">USB_NODE_CONNECTION_INFORMATION_EX_V2</a>
+<a href="..\usbioctl\ns-usbioctl--usb-node-connection-information-ex-v2.md">USB_NODE_CONNECTION_INFORMATION_EX_V2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450861">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-information-ex-v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
 </dt>
 </dl>
 <p> </p>

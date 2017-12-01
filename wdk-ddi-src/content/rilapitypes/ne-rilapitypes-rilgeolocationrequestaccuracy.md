@@ -7,7 +7,7 @@ old-location: netvista\rilgeolocationrequestaccuracy_2.htm
 old-project: netvista
 ms.assetid: 160de99b-d04e-4c7d-bde2-92d23123f295
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: stream\ks_videoinfoheader2.htm
 old-project: stream
 ms.assetid: 4eb909fe-7ba2-4208-b713-54252022a5cf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2, *PKS_VIDEOINFOHEADER2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -278,7 +278,7 @@ typedef struct tagKS_VIDEOINFOHEADER2 {
 <p> </p>
 <p>The AMCONTROL_USED flag provides backward compatibility with older filters. If the AMCONTROL_USED flag is not set, the remaining bits in this field should be ignored. If a filter uses any other flags, it should set the AMCONTROL_USED flag. </p>
 <p>The two AMCONTROL_PAD_xxx flags are used by decoders to determine the aspect ratio of the output rectangle.</p>
-<p>If the AMCONTROL_COLORINFO_PRESENT flag is set, it means the upper 24 bits of the dwControlFlags field are treated as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure. </p>
+<p>If the AMCONTROL_COLORINFO_PRESENT flag is set, it means the upper 24 bits of the dwControlFlags field are treated as a <a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a> structure. </p>
 <p>See the Remarks section later in this topic for more information about <b>dwControlFlags</b>.</p>
 </dd>
 
@@ -297,16 +297,16 @@ typedef struct tagKS_VIDEOINFOHEADER2 {
 ### -field <b>bmiHeader</b>
 
 <dd>
-<p>Indicates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information for the video image bitmap.</p>
+<p>Indicates a <a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information for the video image bitmap.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>To describe a video stream without bob or weave settings, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a>.</p>
+<p>To describe a video stream without bob or weave settings, use <a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a>.</p>
 
 <p>The KS_VIDEOINFOHEADER2 structure is identical to the DirectShow <a href="http://go.microsoft.com/fwlink/p/?linkid=96751">VIDEOINFOHEADER2</a> structure.</p>
 
-<p>Capture minidrivers that produce video fields (instead of frames) must use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567629">KS_DATARANGE_VIDEO2</a> structure, which contains the KS_VIDEOINFOHEADER2 structure.</p>
+<p>Capture minidrivers that produce video fields (instead of frames) must use the <a href="stream.ks_datarange_video2">KS_DATARANGE_VIDEO2</a> structure, which contains the KS_VIDEOINFOHEADER2 structure.</p>
 
 <p>A source filter can request that the sink filter take only a section of the video by providing values that effectively define a clipping rectangle in the <b>rcSource</b> member. However, if the sink filter does not check for the clipping rectangle on connection, the sink filter simply renders all of the video, effectively ignoring any clipping information passed from the source filter to the sink filter.</p>
 
@@ -314,7 +314,7 @@ typedef struct tagKS_VIDEOINFOHEADER2 {
 
 <p>The <b>rcTarget</b> member specifies the destination rectangle for the video. Most source filters set this member to all zeros. A downstream filter can request that the video be placed in a particular area of the buffers that it supplies. In this case, it calls the Win32 function <b>QueryAccept</b> with a nonempty target.</p>
 
-<p>If the AMCONTROL_COLORINFO_PRESENT flag is set in the <b>dwControlFlags</b> member, you can cast the <b>dwControlFlags</b> value to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure to access the extended color information. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=96751">VIDEOINFOHEADER2</a>.</p>
+<p>If the AMCONTROL_COLORINFO_PRESENT flag is set in the <b>dwControlFlags</b> member, you can cast the <b>dwControlFlags</b> value to a <a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a> structure to access the extended color information. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=96751">VIDEOINFOHEADER2</a>.</p>
 
 ## -requirements
 <table>
@@ -333,15 +333,15 @@ typedef struct tagKS_VIDEOINFOHEADER2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a>
+<a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567629">KS_DATARANGE_VIDEO2</a>
+<a href="stream.ks_datarange_video2">KS_DATARANGE_VIDEO2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a>
+<a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEOINFOHEADER2 structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEOINFOHEADER2 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

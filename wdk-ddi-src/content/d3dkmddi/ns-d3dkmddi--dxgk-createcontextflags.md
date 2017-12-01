@@ -66,14 +66,14 @@ typedef struct _DXGK_CREATECONTEXTFLAGS {
 ### -field <b>SystemContext</b>
 
 <dd>
-<p>A UINT value that specifies whether contexts that a driver's <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function creates are system contexts for the engine that the <b>EngineAffinity</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557567">DXGKARG_CREATECONTEXT</a> structure specifies. A system context is created for the paging engine only.</p>
+<p>A UINT value that specifies whether contexts that a driver's <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function creates are system contexts for the engine that the <b>EngineAffinity</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createcontext.md">DXGKARG_CREATECONTEXT</a> structure specifies. A system context is created for the paging engine only.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
 ### -field <b>GdiContext</b>
 
 <dd>
-<p>A UINT value that specifies whether the contexts that a driver's <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function creates are GDI-specific contexts for the engine that the <b>EngineAffinity</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557567">DXGKARG_CREATECONTEXT</a> structure specifies.</p>
+<p>A UINT value that specifies whether the contexts that a driver's <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function creates are GDI-specific contexts for the engine that the <b>EngineAffinity</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createcontext.md">DXGKARG_CREATECONTEXT</a> structure specifies.</p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 <p>This member is available beginning with Windows 7.</p>
 </dd>
@@ -134,7 +134,7 @@ typedef struct _DXGK_CREATECONTEXTFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557567">DXGKARG_CREATECONTEXT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createcontext.md">DXGKARG_CREATECONTEXT</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a>

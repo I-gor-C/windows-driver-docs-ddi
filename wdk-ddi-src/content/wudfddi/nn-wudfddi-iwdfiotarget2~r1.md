@@ -7,7 +7,7 @@ old-location: wdf\iwdfiotarget2.htm
 old-project: wdf
 ms.assetid: 52ce1c63-b2cf-4eda-b056-4f1f999110c5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoTarget2</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559170">IWDFIoTarget</a>. <b>IWDFIoTarget2</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoTarget2</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>. <b>IWDFIoTarget2</b> also has these types of members:</p>
 
 <p>The <b>IWDFIoTarget2</b> interface has these methods.</p>
 
@@ -65,7 +65,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559182">IWDFIoTarget2::FormatRequestForFlush</a>
+<a href="wdf.iwdfiotarget2_formatrequestforflush">IWDFIoTarget2::FormatRequestForFlush</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiotarget2_formatrequestforflush">FormatRequestForFlush</a> method builds an I/O request for a flush operation but does not send the request to an I/O target.</p>
@@ -73,7 +73,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559184">IWDFIoTarget2::FormatRequestForQueryInformation</a>
+<a href="wdf.iwdfiotarget2_formatrequestforqueryinformation">IWDFIoTarget2::FormatRequestForQueryInformation</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiotarget2_formatrequestforqueryinformation">FormatRequestForQueryInformation</a> method formats an I/O request to obtain information about a file, but it does not send the request to an I/O target.</p>
@@ -81,7 +81,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559191">IWDFIoTarget2::FormatRequestForSetInformation</a>
+<a href="wdf.iwdfiotarget2_formatrequestforsetinformation">IWDFIoTarget2::FormatRequestForSetInformation</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiotarget2_formatrequestforsetinformation">FormatRequestForSetInformation</a> method formats an I/O request to set information about a file, but it does not send the request to an I/O target.</p>

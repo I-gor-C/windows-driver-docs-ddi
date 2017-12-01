@@ -119,7 +119,7 @@ typedef struct tagDEVICEDIALOGDATA2 {
 </dl>
 
 ## -remarks
-<p>The DEVICEDIALOGDATA2 structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545053">IWiaUIExtension2::DeviceDialog</a> method.</p>
+<p>The DEVICEDIALOGDATA2 structure is used by the <a href="image.iwiauiextension2_devicedialog">IWiaUIExtension2::DeviceDialog</a> method.</p>
 
 <p>The <b>DeviceDialog</b> method must allocate the <b>BSTR</b> pointer array specified in <i>pbstrFilePaths</i> by calling the <a href="http://go.microsoft.com/fwlink/p/?linkid=121997">CoTaskMemAlloc</a> function, and it must allocate each string pointed to by the array by calling the <a href="http://go.microsoft.com/fwlink/p/?linkid=121998">SysAllocString</a> function. The calling program is responsible for freeing the storage for the pointer array and strings.</p>
 
@@ -159,7 +159,7 @@ typedef struct tagDEVICEDIALOGDATA2 {
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=122007">IWiaPropertyStorage</a></dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=122008">IWiaTransfer</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545053">IWiaUIExtension2::DeviceDialog</a>
+<a href="image.iwiauiextension2_devicedialog">IWiaUIExtension2::DeviceDialog</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=121995">PathMakeUniqueName</a></dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=121996">PathYetAnotherMakeUniqueName</a></dt>

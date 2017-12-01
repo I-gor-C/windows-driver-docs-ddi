@@ -7,7 +7,7 @@ old-location: kernel\pep_acpi_enumerate_device_namespace.htm
 old-project: kernel
 ms.assetid: 61315EFB-DEA7-4CF2-97D3-EACD223AFB50
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, *PPEP_ACPI_ENUMERATE_DEVICE_NAMESPACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -92,16 +92,16 @@ typedef struct _PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE {
 ### -field <b>Objects</b>
 
 <dd>
-<p>[out] The first element in an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt186684">PEP_ACPI_OBJECT_NAME_WITH_TYPE</a> structures that describe the objects in the ACPI namespace of the device. If this array contains more than one element, the additional array elements follow the end of the <b>PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE</b> structure.</p>
+<p>[out] The first element in an array of <a href="..\pepfx\ns-pepfx--pep-acpi-object-name-with-type.md">PEP_ACPI_OBJECT_NAME_WITH_TYPE</a> structures that describe the objects in the ACPI namespace of the device. If this array contains more than one element, the additional array elements follow the end of the <b>PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE</b> structure.</p>
 </dd>
 </dl>
 
 ## -remarks
 <p>This structure is used by the <a href="kernel.pep_notify_acpi_enumerate_device_namespace">PEP_NOTIFY_ACPI_ENUMERATE_DEVICE_NAMESPACE</a> notification. The <b>RequestFlags</b> and <b>TotalBufferSize</b> members contain input values supplied by PoFx when the notification is sent. The PEP may overwrite the <b>TotalBufferSize</b> input value with an output value if the input value is less than the required output buffer size. The <b>Status</b>, <b>ObjectCount</b>, and <b>Objects</b> members contain output values that the PEP writes to the structure.</p>
 
-<p>If N is the number of objects listed in the ACPI namespace under this device, the PEP should verify that the storage allocated by PoFx for the <b>Objects</b> array is large enough to contain N array elements. If N &gt; 1, the additional N–1 array elements follow the end of the <b>PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE</b> structure. The buffer size required to contain the structure and additional array elements is calculated as follows:</p><dl>
-<dd>size = <b>sizeof</b>(<b>PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE</b>) + (N – 1) × <b>sizeof</b>(<b>PEP_ACPI_OBJECT_NAME_WITH_TYPE</b>)</dd>
-</dl><p>If the input value specified in the <b>TotalBufferSize</b> member is less than the required size, the PEP overwrites the <b>TotalBufferSize</b> input value with the required size, and sets the <b>Status</b> member to STATUS_BUFFER_TOO_SMALL. In response, PoFx will allocate a buffer of the required size and send a second <a href="kernel.pep_notify_acpi_enumerate_device_namespace">PEP_NOTIFY_ACPI_ENUMERATE_DEVICE_NAMESPACE</a> notification to the PEP for this device.</p>
+<p>If N is the number of objects listed in the ACPI namespace under this device, the PEP should verify that the storage allocated by PoFx for the <b>Objects</b> array is large enough to contain N array elements. If N &gt; 1, the additional N–1 array elements follow the end of the <b>PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE</b> structure. The buffer size required to contain the structure and additional array elements is calculated as follows:</p>
+
+<p>If the input value specified in the <b>TotalBufferSize</b> member is less than the required size, the PEP overwrites the <b>TotalBufferSize</b> input value with the required size, and sets the <b>Status</b> member to STATUS_BUFFER_TOO_SMALL. In response, PoFx will allocate a buffer of the required size and send a second <a href="kernel.pep_notify_acpi_enumerate_device_namespace">PEP_NOTIFY_ACPI_ENUMERATE_DEVICE_NAMESPACE</a> notification to the PEP for this device.</p>
 
 ## -requirements
 <table>
@@ -128,7 +128,7 @@ typedef struct _PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186684">PEP_ACPI_OBJECT_NAME_WITH_TYPE</a>
+<a href="..\pepfx\ns-pepfx--pep-acpi-object-name-with-type.md">PEP_ACPI_OBJECT_NAME_WITH_TYPE</a>
 </dt>
 <dt>
 <a href="kernel.pep_notify_acpi_enumerate_device_namespace">PEP_NOTIFY_ACPI_ENUMERATE_DEVICE_NAMESPACE</a>
@@ -139,4 +139,4 @@ typedef struct _PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

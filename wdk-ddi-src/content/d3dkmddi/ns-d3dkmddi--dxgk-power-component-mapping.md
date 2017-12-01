@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Used in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh464073">DXGK_POWER_RUNTIME_COMPONENT</a>.<b>ComponentMapping</b> member to define the standard component types of the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) that describe the power component.</p>
+<p>Used in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-runtime-component.md">DXGK_POWER_RUNTIME_COMPONENT</a>.<b>ComponentMapping</b> member to define the standard component types of the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) that describe the power component.</p>
 
 
 ## -syntax
@@ -68,7 +68,7 @@ typedef struct _DXGK_POWER_COMPONENT_MAPPING {
 ### -field <b>ComponentType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh464070">DXGK_POWER_COMPONENT_TYPE</a>-typed value that indicates the power component type that is reported by the display miniport driver to the DirectX graphics kernel subsystem.</p>
+<p>A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-power-component-type.md">DXGK_POWER_COMPONENT_TYPE</a>-typed value that indicates the power component type that is reported by the display miniport driver to the DirectX graphics kernel subsystem.</p>
 </dd>
 
 ### -field <b>EngineDesc</b>
@@ -147,10 +147,10 @@ typedef struct _DXGK_POWER_COMPONENT_MAPPING {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464070">DXGK_POWER_COMPONENT_TYPE</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-power-component-type.md">DXGK_POWER_COMPONENT_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464073">DXGK_POWER_RUNTIME_COMPONENT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-runtime-component.md">DXGK_POWER_RUNTIME_COMPONENT</a>
 </dt>
 </dl>
 <p> </p>

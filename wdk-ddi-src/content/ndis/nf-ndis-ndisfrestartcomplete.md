@@ -7,7 +7,7 @@ old-location: netvista\ndisfrestartcomplete.htm
 old-project: netvista
 ms.assetid: 84685763-e7d8-4184-afa3-83efb4a0d3d7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFRestartComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ VOID NdisFRestartComplete(
 <dd>
 <p>The NDIS handle that identifies this filter module. NDIS passed the handle to the filter driver in
      a call to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function.</p>
+     <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
 ### -param <i>Status</i> [in]
@@ -91,7 +91,7 @@ VOID NdisFRestartComplete(
 <dd>
 <p>The driver indicates NDIS_STATUS_FAILURE if none of the preceding values applies. The driver
        should call the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff564672">NdisWriteEventLogEntry</a> function
+       <a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a> function
        together with parameters that specify the reason for the failure.</p>
 </dd>
 </dl>
@@ -102,20 +102,6 @@ VOID NdisFRestartComplete(
 <p>None</p>
 
 ## -remarks
-<p>NDIS calls a filter driver's 
-    <a href="..\ndis\nc-ndis-filter-restart.md">FilterRestart</a> function to initiate a
-    restart request for filter module. The filter module remains in the 
-    <i>Restarting</i> state until the restart operation is complete.</p>
-
-<p>A pending restart operation is complete after the driver calls the 
-    <b>NdisFRestartComplete</b> function. The filter module is in the 
-    <i>Running</i> state after the restart operation is complete.</p>
-
-<p>A filter driver can resume indicating received network data immediately after NDIS calls 
-    <i>FilterRestart</i> and before the driver calls 
-    <b>NdisFRestartComplete</b>. The driver should be ready to accept send requests after it completes the
-    restart operation.</p>
-
 <p>NDIS calls a filter driver's 
     <a href="..\ndis\nc-ndis-filter-restart.md">FilterRestart</a> function to initiate a
     restart request for filter module. The filter module remains in the 
@@ -183,7 +169,7 @@ VOID NdisFRestartComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547930">Irql_Filter_Driver_Function</a>
+<a href="devtest.ndis_irql_filter_driver_function">Irql_Filter_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -191,15 +177,15 @@ VOID NdisFRestartComplete(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-filter-restart.md">FilterRestart</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564672">NdisWriteEventLogEntry</a>
+<a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFRestartComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFRestartComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

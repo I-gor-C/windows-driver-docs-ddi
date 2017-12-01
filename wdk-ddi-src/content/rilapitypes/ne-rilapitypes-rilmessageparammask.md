@@ -7,7 +7,7 @@ old-location: netvista\rilmessageparammask_2.htm
 old-project: netvista
 ms.assetid: 1c20e35b-3589-46a5-8155-c35206d5e6c0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

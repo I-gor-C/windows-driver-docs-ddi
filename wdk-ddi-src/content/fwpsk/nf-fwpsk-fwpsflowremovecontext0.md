@@ -7,7 +7,7 @@ old-location: netvista\fwpsflowremovecontext0.htm
 old-project: netvista
 ms.assetid: edc257bc-2805-47d8-827a-536e5d74793b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsFlowRemoveContext0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ NTSTATUS NTAPI FwpsFlowRemoveContext0(
 <p>A run-time identifier that specifies the data flow from which to remove the context. The run-time
      identifier for a data flow is provided to a callout driver through the FWPS_METADATA_FIELD_FLOW_HANDLE
      metadata value that was passed to the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function.</p>
+     <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function.</p>
 </dd>
 
 ### -param <i>layerId</i> [in]
@@ -74,7 +74,7 @@ NTSTATUS NTAPI FwpsFlowRemoveContext0(
      <a href="netvista.run_time_filtering_layer_identifiers">Run-time Filtering Layer
      Identifiers</a>. A callout driver should specify the same identifier that it specified when it called
      the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551165">FwpsFlowAssociateContext0</a> function to associate the context with the data flow.</p>
+     <a href="..\fwpsk\nf-fwpsk-fwpsflowassociatecontext0.md">FwpsFlowAssociateContext0</a> function to associate the context with the data flow.</p>
 </dd>
 
 ### -param <i>calloutId</i> [in]
@@ -82,8 +82,8 @@ NTSTATUS NTAPI FwpsFlowRemoveContext0(
 <dd>
 <p>The run-time identifier for the callout in the filter engine. This identifier was returned when
      the callout driver called either the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551140">FwpsCalloutRegister0</a> or 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a> functions to
+     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a> or 
+     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a> functions to
      register the callout with the filter engine.</p>
 </dd>
 </dl>
@@ -101,15 +101,6 @@ NTSTATUS NTAPI FwpsFlowRemoveContext0(
 <p> </p>
 
 ## -remarks
-<p>If the 
-    <b>FwpsFlowRemoveContext0</b> function returns STATUS_SUCCESS, 
-    <b>FwpsFlowRemoveContext0</b> calls the 
-    <a href="..\fwpsk\nc-fwpsk-fwps-callout-flow-delete-notify-fn0.md">flowDeleteFn</a> callout function
-    synchronously. If 
-    <b>FwpsFlowRemoveContext0</b> returns STATUS_PENDING, 
-    <b>FwpsFlowRemoveContext0</b> calls 
-    <i>flowDeleteFn</i> asynchronously because an active callout classification is in progress.</p>
-
 <p>If the 
     <b>FwpsFlowRemoveContext0</b> function returns STATUS_SUCCESS, 
     <b>FwpsFlowRemoveContext0</b> calls the 
@@ -172,21 +163,21 @@ NTSTATUS NTAPI FwpsFlowRemoveContext0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps-callout-flow-delete-notify-fn0.md">flowDeleteFn</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551140">FwpsCalloutRegister0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551165">FwpsFlowAssociateContext0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsflowassociatecontext0.md">FwpsFlowAssociateContext0</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsFlowRemoveContext0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsFlowRemoveContext0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

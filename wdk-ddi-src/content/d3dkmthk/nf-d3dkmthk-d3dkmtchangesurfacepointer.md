@@ -67,8 +67,6 @@ NTSTATUS APIENTRY D3DKMTChangeSurfacePointer(
 ## -remarks
 <p>This function is for system use only.</p>
 
-<p>This function is for system use only.</p>
-
 ## -requirements
 <table>
 <tr>

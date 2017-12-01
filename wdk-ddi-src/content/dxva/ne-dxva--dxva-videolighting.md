@@ -104,15 +104,7 @@ typedef enum _DXVA_VideoLighting {
 </dl>
 
 ## -remarks
-<p>One of the enumerators of DXVA_VideoLighting can be specified in the <b>VideoLighting</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure.</p>
-
-<p>The video lighting enumerators can be used to alter the gamma to generate a comparable experience in a different lighting condition. </p>
-
-<p>One of the enumerators of DXVA_VideoLighting can be specified in the <b>VideoLighting</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure.</p>
-
-<p>The video lighting enumerators can be used to alter the gamma to generate a comparable experience in a different lighting condition. </p>
-
-<p>One of the enumerators of DXVA_VideoLighting can be specified in the <b>VideoLighting</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure.</p>
+<p>One of the enumerators of DXVA_VideoLighting can be specified in the <b>VideoLighting</b> member of the <a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a> structure.</p>
 
 <p>The video lighting enumerators can be used to alter the gamma to generate a comparable experience in a different lighting condition. </p>
 
@@ -141,7 +133,7 @@ typedef enum _DXVA_VideoLighting {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a>
+<a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a>
 </dt>
 </dl>
 <p> </p>

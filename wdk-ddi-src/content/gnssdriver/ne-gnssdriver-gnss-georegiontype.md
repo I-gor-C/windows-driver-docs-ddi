@@ -7,7 +7,7 @@ old-location: sensors\gnss_georegiontype.htm
 old-project: sensors
 ms.assetid: 736A1D63-A96E-4E29-ADFD-F441AC4757C6
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: wdf\iwdfpropertystorefactory_retrievedevicepropertystore.htm
 old-project: wdf
 ms.assetid: 23a4c968-b1d1-48f4-9ea9-b97c4b5b4208
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFPropertyStoreFactory, RetrieveDevicePropertyStore, IWDFPropertyStoreFactory::RetrieveDevicePropertyStore
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,13 +64,13 @@ HRESULT RetrieveDevicePropertyStore(
 ### -param <i>RootSpecifier</i> [in]
 
 <dd>
-<p>The address of a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff561453">WDF_PROPERTY_STORE_ROOT</a> structure. The driver fills in this structure to identify the property store that <a href="wdf.iwdfdevice_retrievedevicepropertystore">RetrieveDevicePropertyStore</a> retrieves.</p>
+<p>The address of a driver-allocated <a href="..\wudfddi_types\ns-wudfddi-types--wdf-property-store-root.md">WDF_PROPERTY_STORE_ROOT</a> structure. The driver fills in this structure to identify the property store that <a href="wdf.iwdfdevice_retrievedevicepropertystore">RetrieveDevicePropertyStore</a> retrieves.</p>
 </dd>
 
 ### -param <i>Flags</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561449">WDF_PROPERTY_STORE_RETRIEVE_FLAGS</a>-typed flag that specifies whether UMDF should create a specified registry entry if it does not exist, and whether the new entry should be deleted when Windows restarts.</p>
+<p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-property-store-retrieve-flags.md">WDF_PROPERTY_STORE_RETRIEVE_FLAGS</a>-typed flag that specifies whether UMDF should create a specified registry entry if it does not exist, and whether the new entry should be deleted when Windows restarts.</p>
 </dd>
 
 ### -param <i>DesiredAccess</i> [in]
@@ -88,13 +88,13 @@ HRESULT RetrieveDevicePropertyStore(
 ### -param <i>PropertyStore</i> [out]
 
 <dd>
-<p>The address of a location that receives a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560168">IWDFNamedPropertyStore2</a> interface. The driver uses this interface to access values in the registry.</p>
+<p>The address of a location that receives a pointer to an <a href="..\wudfddi\nn-wudfddi-iwdfnamedpropertystore2.md">IWDFNamedPropertyStore2</a> interface. The driver uses this interface to access values in the registry.</p>
 </dd>
 
 ### -param <i>Disposition</i> [out]
 
 <dd>
-<p>The address of a location that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561440">WDF_PROPERTY_STORE_DISPOSITION</a>-typed value. </p>
+<p>The address of a location that receives a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-property-store-disposition.md">WDF_PROPERTY_STORE_DISPOSITION</a>-typed value. </p>
 </dd>
 </dl>
 
@@ -113,14 +113,6 @@ HRESULT RetrieveDevicePropertyStore(
 </p>
 
 ## -remarks
-<p>Your driver can call <a href="wdf.iwdfdevice_retrievedevicepropertystore">RetrieveDevicePropertyStore</a> to obtain access to the driver's software key, the current device's hardware key, keys for the device interfaces that the current device supports, or the <b>DEVICEMAP</b> key.</p>
-
-<p>If you supply the <i>SubkeyPath</i> parameter, you must use a unique name, such as the driver's service name. A driver might use a subkey to store device-specific information.</p>
-
-<p>For more information about using <a href="wdf.iwdfdevice_retrievedevicepropertystore">RetrieveDevicePropertyStore</a> to access the registry, see <a href="wdf.using_the_registry_in_umdf_drivers">Using the Registry in UMDF-based Drivers</a>. </p>
-
-<p>The following code example retrieves the value that is assigned to the <b>PortName</b> entry under a device's hardware key.</p>
-
 <p>Your driver can call <a href="wdf.iwdfdevice_retrievedevicepropertystore">RetrieveDevicePropertyStore</a> to obtain access to the driver's software key, the current device's hardware key, keys for the device interfaces that the current device supports, or the <b>DEVICEMAP</b> key.</p>
 
 <p>If you supply the <i>SubkeyPath</i> parameter, you must use a unique name, such as the driver's service name. A driver might use a subkey to store device-specific information.</p>
@@ -182,15 +174,15 @@ HRESULT RetrieveDevicePropertyStore(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560223">IWDFPropertyStoreFactory</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfpropertystorefactory.md">IWDFPropertyStoreFactory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
+<a href="wdf.iwdfdevice_retrievedevicepropertystore">IWDFDevice::RetrieveDevicePropertyStore</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>
+<a href="wdf.iwdfdeviceinitialize_retrievedevicepropertystore">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFPropertyStoreFactory::RetrieveDevicePropertyStore method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFPropertyStoreFactory::RetrieveDevicePropertyStore method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

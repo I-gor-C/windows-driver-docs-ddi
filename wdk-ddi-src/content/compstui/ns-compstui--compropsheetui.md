@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The COMPROPSHEETUI structure is used as an input parameter to CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function, if the function code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff546388">CPSFUNC_ADD_PCOMPROPSHEETUI</a>. All structure members must be supplied by the caller of <i>ComPropSheet</i>.</p>
+<p>The COMPROPSHEETUI structure is used as an input parameter to CPSUI's <a href="print.compropsheet">ComPropSheet</a> function, if the function code is <a href="print.cpsfunc_add_pcompropsheetui">CPSFUNC_ADD_PCOMPROPSHEETUI</a>. All structure members must be supplied by the caller of <i>ComPropSheet</i>.</p>
 
 
 ## -syntax
@@ -124,33 +124,33 @@ typedef struct _COMPROPSHEETUI {
 ### -field <b>UserData</b>
 
 <dd>
-<p>Optional caller-supplied value, which CPSUI places in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547088">CPSUICBPARAM</a> structure's <b>UserData</b> member when calling the function pointed to by <b>pfnCallBack</b>.</p>
+<p>Optional caller-supplied value, which CPSUI places in a <a href="..\compstui\ns-compstui--cpsuicbparam.md">CPSUICBPARAM</a> structure's <b>UserData</b> member when calling the function pointed to by <b>pfnCallBack</b>.</p>
 </dd>
 
 ### -field <b>pHelpFile</b>
 
 <dd>
 <p>Caller-supplied pointer to a NULL-terminated text string representing a path to a help file. For printer interface DLLs, this is typically the help file path obtained by calling GetPrinterDriver (described in the Microsoft Windows SDK documentation).</p>
-<p>The help file is indexed by values contained in the <b>HelpIndex</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559656">OPTITEM</a> structures.</p>
+<p>The help file is indexed by values contained in the <b>HelpIndex</b> member of <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structures.</p>
 </dd>
 
 ### -field <b>pfnCallBack</b>
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564313">_CPSUICALLBACK</a>-typed callback function, which CPSUI calls when a user modifies the page's option values.</p>
-<p>Can be used only if <b>pDlgPage</b> identifies a CPSUI-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607">DLGPAGE</a> structure, or if the <b>DlgProc</b> member of an application-supplied DLGPAGE structure is <b>NULL</b>.</p>
+<p>Caller-supplied pointer to a <a href="..\compstui\nc-compstui--cpsuicallback.md">_CPSUICALLBACK</a>-typed callback function, which CPSUI calls when a user modifies the page's option values.</p>
+<p>Can be used only if <b>pDlgPage</b> identifies a CPSUI-supplied <a href="..\compstui\ns-compstui--dlgpage.md">DLGPAGE</a> structure, or if the <b>DlgProc</b> member of an application-supplied DLGPAGE structure is <b>NULL</b>.</p>
 </dd>
 
 ### -field <b>pOptItem</b>
 
 <dd>
-<p>Caller-supplied pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559656">OPTITEM</a> structures describing the page's options.</p>
+<p>Caller-supplied pointer to an array of <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structures describing the page's options.</p>
 </dd>
 
 ### -field <b>pDlgPage</b>
 
 <dd>
-<p>This member specifies <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607">DLGPAGE</a> structures that describe pages to be added to the property sheet. It can be either of the following:</p>
+<p>This member specifies <a href="..\compstui\ns-compstui--dlgpage.md">DLGPAGE</a> structures that describe pages to be added to the property sheet. It can be either of the following:</p>
 <ul>
 <li>
 <p>A pointer to an array of DLGPAGE structures.</p>
@@ -163,7 +163,7 @@ typedef struct _COMPROPSHEETUI {
 
 <dd>
 <p>Defines one treeview page whose tab reads <b>Advanced</b>.</p>
-<p>For use only by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548548">DrvDocumentPropertySheets</a> function.</p>
+<p>For use only by a <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> function.</p>
 </dd>
 </dl>
 <p></p>
@@ -173,7 +173,7 @@ typedef struct _COMPROPSHEETUI {
 
 <dd>
 <p>Defines three pages, whose tabs are <b>Layout</b>, <b>Paper/Quality</b>, and <b>Advanced</b>. The <b>Advanced</b> page is a treeview.</p>
-<p>For use only by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548548">DrvDocumentPropertySheets</a> function.</p>
+<p>For use only by a <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> function.</p>
 </dd>
 </dl>
 <p></p>
@@ -183,7 +183,7 @@ typedef struct _COMPROPSHEETUI {
 
 <dd>
 <p>Defines one treeview page whose tab reads <b>Device Settings</b>.</p>
-<p>For use only by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548542">DrvDevicePropertySheets</a> function.</p>
+<p>For use only by a <a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a> function.</p>
 </dd>
 </dl>
 <p></p>
@@ -203,13 +203,13 @@ typedef struct _COMPROPSHEETUI {
 ### -field <b>cOptItem</b>
 
 <dd>
-<p>Caller-supplied number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559656">OPTITEM</a> structures pointed to by <b>pOptItem</b>.</p>
+<p>Caller-supplied number of <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structures pointed to by <b>pOptItem</b>.</p>
 </dd>
 
 ### -field <b>cDlgPage</b>
 
 <dd>
-<p>Caller-supplied number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607">DLGPAGE</a> structures pointed to by <b>pDlgPage</b>. Not used if <b>pDlgPage</b> specifies a predefined CPSUI_PDLGPAGE-prefixed structure.</p>
+<p>Caller-supplied number of <a href="..\compstui\ns-compstui--dlgpage.md">DLGPAGE</a> structures pointed to by <b>pDlgPage</b>. Not used if <b>pDlgPage</b> specifies a predefined CPSUI_PDLGPAGE-prefixed structure.</p>
 </dd>
 
 ### -field <b>IconID</b>

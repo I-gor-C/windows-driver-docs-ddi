@@ -65,21 +65,17 @@ HANDLE OpenPrintProcessor(
 ### -param <i>pPrintProcessorOpenData</i> [in]
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560988">PRINTPROCESSOROPENDATA</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="..\winsplp\ns-winsplp--printprocessoropendata.md">PRINTPROCESSOROPENDATA</a> structure.</p>
 </dd>
 </dl>
 
 ## -returns
-<p>If the operation succeeds, the function should return a handle that can be used as an input argument for subsequent calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff546352">ControlPrintProcessor</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff545976">ClosePrintProcessor</a>. If the operation fails, the function should call <b>SetLastError</b> to set an error code, and then return <b>NULL</b>.</p>
+<p>If the operation succeeds, the function should return a handle that can be used as an input argument for subsequent calls to <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a>, <a href="..\winsplp\nf-winsplp-controlprintprocessor.md">ControlPrintProcessor</a>, and <a href="..\winsplp\nf-winsplp-closeprintprocessor.md">ClosePrintProcessor</a>. If the operation fails, the function should call <b>SetLastError</b> to set an error code, and then return <b>NULL</b>.</p>
 
 ## -remarks
 <p>Print processors are required to export an <code>OpenPrintProcessor</code> function. The spooler calls the function when a print job is available. The function should perform initialization operations that are required before a job can be processed, based on the job's data type.</p>
 
-<p>The function must return a handle. Typically, the handle is a pointer to an internal structure. The structure must contain a pointer to the printer's name and a pointer to the printer's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure, both of which are received in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560988">PRINTPROCESSOROPENDATA</a> structure. These two pointers are required by the print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function, and this latter function receives the handle as input when the spooler calls it.</p>
-
-<p>Print processors are required to export an <code>OpenPrintProcessor</code> function. The spooler calls the function when a print job is available. The function should perform initialization operations that are required before a job can be processed, based on the job's data type.</p>
-
-<p>The function must return a handle. Typically, the handle is a pointer to an internal structure. The structure must contain a pointer to the printer's name and a pointer to the printer's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure, both of which are received in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560988">PRINTPROCESSOROPENDATA</a> structure. These two pointers are required by the print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function, and this latter function receives the handle as input when the spooler calls it.</p>
+<p>The function must return a handle. Typically, the handle is a pointer to an internal structure. The structure must contain a pointer to the printer's name and a pointer to the printer's <a href="display.devmodew">DEVMODEW</a> structure, both of which are received in the <a href="..\winsplp\ns-winsplp--printprocessoropendata.md">PRINTPROCESSOROPENDATA</a> structure. These two pointers are required by the print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> function, and this latter function receives the handle as input when the spooler calls it.</p>
 
 ## -requirements
 <table>
@@ -118,16 +114,16 @@ HANDLE OpenPrintProcessor(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560988">PRINTPROCESSOROPENDATA</a>
+<a href="..\winsplp\ns-winsplp--printprocessoropendata.md">PRINTPROCESSOROPENDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a>
+<a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546352">ControlPrintProcessor</a>
+<a href="..\winsplp\nf-winsplp-controlprintprocessor.md">ControlPrintProcessor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545976">ClosePrintProcessor</a>
+<a href="..\winsplp\nf-winsplp-closeprintprocessor.md">ClosePrintProcessor</a>
 </dt>
 </dl>
 <p> </p>

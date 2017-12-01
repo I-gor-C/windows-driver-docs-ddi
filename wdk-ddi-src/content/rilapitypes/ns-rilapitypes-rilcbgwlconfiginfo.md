@@ -7,7 +7,7 @@ old-location: netvista\rilcbgwlconfiginfo_2.htm
 old-project: netvista
 ms.assetid: 5939b967-bbc7-42e3-af90-a1c20698a934
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCBGWLCONFIGINFO, RILCBGWLCONFIGINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

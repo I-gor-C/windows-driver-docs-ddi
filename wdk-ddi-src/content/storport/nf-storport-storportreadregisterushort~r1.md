@@ -73,9 +73,7 @@ STORPORT_API USHORT StorPortReadRegisterUshort(
 <p><b>StorPortReadRegisterUshort</b> returns an unsigned character of data read from the indicated register address. </p>
 
 ## -remarks
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564744">ScsiPortReadRegisterUshort</a>. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567481">StorPortReadRegisterBufferUshort</a>.</p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564744">ScsiPortReadRegisterUshort</a>. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567481">StorPortReadRegisterBufferUshort</a>.</p>
+<p>For more information, see <a href="..\srb\nf-srb-scsiportreadregisterushort.md">ScsiPortReadRegisterUshort</a>. For a buffered version of this routine, see <a href="..\storport\nf-storport-storportreadregisterbufferushort.md">StorPortReadRegisterBufferUshort</a>.</p>
 
 ## -requirements
 <table>
@@ -114,10 +112,10 @@ STORPORT_API USHORT StorPortReadRegisterUshort(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564744">ScsiPortReadRegisterUshort</a>
+<a href="..\srb\nf-srb-scsiportreadregisterushort.md">ScsiPortReadRegisterUshort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567481">StorPortReadRegisterBufferUshort</a>
+<a href="..\storport\nf-storport-storportreadregisterbufferushort.md">StorPortReadRegisterBufferUshort</a>
 </dt>
 </dl>
 <p> </p>

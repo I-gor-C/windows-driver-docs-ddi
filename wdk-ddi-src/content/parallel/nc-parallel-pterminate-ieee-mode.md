@@ -69,13 +69,7 @@ typedef NTSTATUS ( *PTERMINATE_IEEE_MODE)(
 <p> </p>
 
 ## -remarks
-<p>To obtain a pointer to the system-supplied PTERMINATE_IEEE_MODE callback, a kernel-mode driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544040">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request, which returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure. The <b>TerminateIeeeMode</b> member of the PARCLASS_INFORMATION structure is a pointer to this callback.</p>
-
-<p>The PTERMINATE_IEEE_MODE callback runs in the caller's thread at the IRQL of the caller.</p>
-
-<p>For more information, see <a href="NULL">Setting and Clearing a Communication Mode for a Parallel Device</a>.</p>
-
-<p>To obtain a pointer to the system-supplied PTERMINATE_IEEE_MODE callback, a kernel-mode driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544040">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request, which returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure. The <b>TerminateIeeeMode</b> member of the PARCLASS_INFORMATION structure is a pointer to this callback.</p>
+<p>To obtain a pointer to the system-supplied PTERMINATE_IEEE_MODE callback, a kernel-mode driver uses an <a href="..\parallel\ni-parallel-ioctl-internal-parclass-connect.md">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request, which returns a <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure. The <b>TerminateIeeeMode</b> member of the PARCLASS_INFORMATION structure is a pointer to this callback.</p>
 
 <p>The PTERMINATE_IEEE_MODE callback runs in the caller's thread at the IRQL of the caller.</p>
 
@@ -108,25 +102,25 @@ typedef NTSTATUS ( *PTERMINATE_IEEE_MODE)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543975">IOCTL_IEEE1284_GET_MODE</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl-ieee1284-get-mode.md">IOCTL_IEEE1284_GET_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543978">IOCTL_IEEE1284_NEGOTIATE</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl-ieee1284-negotiate.md">IOCTL_IEEE1284_NEGOTIATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544061">IOCTL_PAR_GET_DEFAULT_MODES</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl-par-get-default-modes.md">IOCTL_PAR_GET_DEFAULT_MODES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544365">PDETERMINE_IEEE_MODES</a>
+<a href="..\parallel\nc-parallel-pdetermine-ieee-modes.md">PDETERMINE_IEEE_MODES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544386">PNEGOTIATE_IEEE_MODE</a>
+<a href="..\parallel\nc-parallel-pnegotiate-ieee-mode.md">PNEGOTIATE_IEEE_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544524">PPARALLEL_IEEE_FWD_TO_REV</a>
+<a href="..\parallel\nc-parallel-pparallel-ieee-fwd-to-rev.md">PPARALLEL_IEEE_FWD_TO_REV</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544528">PPARALLEL_IEEE_REV_TO_FWD</a>
+<a href="..\parallel\nc-parallel-pparallel-ieee-rev-to-fwd.md">PPARALLEL_IEEE_REV_TO_FWD</a>
 </dt>
 </dl>
 <p> </p>

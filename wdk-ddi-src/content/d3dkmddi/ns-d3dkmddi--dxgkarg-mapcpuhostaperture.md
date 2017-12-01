@@ -75,7 +75,7 @@ typedef struct _DXGKARG_MAPCPUHOSTAPERTURE {
 
 <dd>
 <p>A zero-based physical adapter index in a linked display adapter link.
-The page size is equal to the segment page size, reported in <a href="https://msdn.microsoft.com/library/windows/hardware/ff562039">DXGK_SEGMENTFLAGS</a>.
+The page size is equal to the segment page size, reported in <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentflags.md">DXGK_SEGMENTFLAGS</a>.
 </p>
 <div class="alert"><b>Note</b>  The allocation itself might be aligned on 4KB page boundary. When the segment page size is 64 KB, CPU host aperture in this case will map more than the allocation size.
 </div>

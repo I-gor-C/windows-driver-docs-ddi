@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The IO_BLOCK structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542869">IOCTL_READ_REGISTERS</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff542920">IOCTL_WRITE_REGISTERS</a>. Values contained in structure members are used to create a USB Device Request (described in the <i>Universal Serial Bus Specification</i>).</p>
+<p>The IO_BLOCK structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl-read-registers.md">IOCTL_READ_REGISTERS</a> or <a href="..\usbscan\ni-usbscan-ioctl-write-registers.md">IOCTL_WRITE_REGISTERS</a>. Values contained in structure members are used to create a USB Device Request (described in the <i>Universal Serial Bus Specification</i>).</p>
 
 
 ## -syntax

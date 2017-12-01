@@ -64,7 +64,7 @@ typedef struct D3D11_1DDIARG_CREATEVIDEOPROCESSOR {
 ### -field <b>RateConversionCapsIndex</b>
 
 <dd>
-<p>Specifies the frame-rate conversion capabilities for the video processor. The value is a zero-based index that corresponds to the <i>RateConversionIndex</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451690">GetVideoProcessorRateConversionCaps</a> method. </p>
+<p>Specifies the frame-rate conversion capabilities for the video processor. The value is a zero-based index that corresponds to the <i>RateConversionIndex</i> parameter of the <a href="display.getvideoprocessorrateconversioncaps">GetVideoProcessorRateConversionCaps</a> method. </p>
 </dd>
 </dl>
 
@@ -107,7 +107,7 @@ typedef struct D3D11_1DDIARG_CREATEVIDEOPROCESSOR {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createvideoprocessorenum.md">CreateVideoProcessorEnum</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451690">GetVideoProcessorRateConversionCaps</a>
+<a href="display.getvideoprocessorrateconversioncaps">GetVideoProcessorRateConversionCaps</a>
 </dt>
 </dl>
 <p> </p>

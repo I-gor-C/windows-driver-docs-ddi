@@ -85,10 +85,6 @@ typedef enum  {
 ## -remarks
 <p>For more info on how the driver uses these enumeration values with reporting calls to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-report-statistic.md">ReportStatistic</a> callback function, see <a href="https://msdn.microsoft.com/E1CE637F-42ED-4BEB-A2FF-04B4B88469DC">Reporting Miracast encode chunks and statistics</a>.</p>
 
-<p>For more info on how the driver uses these enumeration values with reporting calls to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-report-statistic.md">ReportStatistic</a> callback function, see <a href="https://msdn.microsoft.com/E1CE637F-42ED-4BEB-A2FF-04B4B88469DC">Reporting Miracast encode chunks and statistics</a>.</p>
-
-<p>For more info on how the driver uses these enumeration values with reporting calls to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-report-statistic.md">ReportStatistic</a> callback function, see <a href="https://msdn.microsoft.com/E1CE637F-42ED-4BEB-A2FF-04B4B88469DC">Reporting Miracast encode chunks and statistics</a>.</p>
-
 ## -requirements
 <table>
 <tr>

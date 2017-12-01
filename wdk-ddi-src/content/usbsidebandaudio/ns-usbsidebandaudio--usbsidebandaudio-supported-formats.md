@@ -7,7 +7,7 @@ old-location: audio\usbsidebandaudio_supported_formats.htm
 old-project: audio
 ms.assetid: 69D1C328-309B-41FC-8216-971A3C6D38AF
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: USBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS, *PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS
 ms.prod: windows-hardware
 ms.technology: windows-devices

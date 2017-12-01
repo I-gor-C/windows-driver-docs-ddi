@@ -67,8 +67,6 @@ VOID RxMakeLateDeviceAvailable(
 ## -remarks
 <p><b>RxMakeLateDeviceAvailable</b> clears the DO_DEVICE_INITIALIZING bit in the <b>Flags</b> member of the device object. </p>
 
-<p><b>RxMakeLateDeviceAvailable</b> clears the DO_DEVICE_INITIALIZING bit in the <b>Flags</b> member of the device object. </p>
-
 ## -requirements
 <table>
 <tr>

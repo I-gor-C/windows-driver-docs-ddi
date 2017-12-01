@@ -87,14 +87,6 @@ __checkReturn HRESULT NTStatus SeEtwWriteKMCveEvent(
 
 <p>Source Name: Microsoft-Windows-Audit-CVE or CVE-Audit</p>
 
-<p>The <b> 	SeEtwWriteKMCveEvent</b> function publishes a CVE-based event. This function should be called only in scenarios where an attempt to exploit a known, patched vulnerability is detected by the application. Ideally, this function call should be added as part of the fix (update) itself. 
- The default consumer for this event is EventLog-System. To enable another consumer, the provider can be added to the consumer session.
-</p>
-
-<p>Provider GUID: 85a62a0d-7e17-485f-9d4f-749a287193a6</p>
-
-<p>Source Name: Microsoft-Windows-Audit-CVE or CVE-Audit</p>
-
 ## -requirements
 <table>
 <tr>

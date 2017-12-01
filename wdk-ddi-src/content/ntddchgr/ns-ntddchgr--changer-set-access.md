@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CHANGER_SET_ACCESS structure is used in conjunction with the<a href="https://msdn.microsoft.com/library/windows/hardware/ff559422">IOCTL_CHANGER_SET_ACCESS</a> request to set the state of the device's import/export port (IEport), door, or keypad. </p>
+<p>The CHANGER_SET_ACCESS structure is used in conjunction with the<a href="..\ntddchgr\ni-ntddchgr-ioctl-changer-set-access.md">IOCTL_CHANGER_SET_ACCESS</a> request to set the state of the device's import/export port (IEport), door, or keypad. </p>
 
 
 ## -syntax
@@ -58,14 +58,14 @@ typedef struct _CHANGER_SET_ACCESS {
 ### -field <b>Element</b>
 
 <dd>
-<p>Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551457">CHANGER_ELEMENT</a> structure that specifies the element type and the zero-based address of the element to set. The <b>ElementType</b> member of the CHANGER_ELEMENT structure must be assigned one of the following values:</p>
+<p>Contains a <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a> structure that specifies the element type and the zero-based address of the element to set. The <b>ElementType</b> member of the CHANGER_ELEMENT structure must be assigned one of the following values:</p>
 <p><b>ChangerIEPortChangerDoorChangerKeypad</b></p>
 </dd>
 
 ### -field <b>Control</b>
 
 <dd>
-<p>Specifies the operation to perform on the element. The <b>Features0</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a> indicates whether the changer supports a particular category of operation.</p>
+<p>Specifies the operation to perform on the element. The <b>Features0</b> member of <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> indicates whether the changer supports a particular category of operation.</p>
 <p></p>
 <dl>
 
@@ -116,16 +116,16 @@ typedef struct _CHANGER_SET_ACCESS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559422">IOCTL_CHANGER_SET_ACCESS</a>
+<a href="..\ntddchgr\ni-ntddchgr-ioctl-changer-set-access.md">IOCTL_CHANGER_SET_ACCESS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551447">ChangerSetAccess</a>
+<a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a>
+<a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551457">CHANGER_ELEMENT</a>
+<a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a>
 </dt>
 </dl>
 <p> </p>

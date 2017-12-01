@@ -7,7 +7,7 @@ old-location: stream\ksadditemtoobjectbag.htm
 old-project: stream
 ms.assetid: 4c8b6252-8438-4cd1-81e0-02c260da0daf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsAddItemToObjectBag
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ NTSTATUS KsAddItemToObjectBag(
 ### -param <i>ObjectBag</i> [in]
 
 <dd>
-<p>The KSOBJECT_BAG (equivalent to type PVOID) to which to add the requested item. Every AVStream object (for example, <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a>) contains a member called <i>Bag</i>. Pass that member in this parameter.</p>
+<p>The KSOBJECT_BAG (equivalent to type PVOID) to which to add the requested item. Every AVStream object (for example, <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> and <a href="..\ks\ns-ks--kspin.md">KSPIN</a>) contains a member called <i>Bag</i>. Pass that member in this parameter.</p>
 </dd>
 
 ### -param <i>Item</i> [in]
@@ -82,7 +82,7 @@ NTSTATUS KsAddItemToObjectBag(
 </td>
 </tr>
 </table></span></div>
-<p>If the caller does not specify this optional parameter, <i>Item</i> is freed with <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a> when removed from the object bag or when the object bag is deleted.</p>
+<p>If the caller does not specify this optional parameter, <i>Item</i> is freed with <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> when removed from the object bag or when the object bag is deleted.</p>
 </dd>
 </dl>
 
@@ -90,11 +90,7 @@ NTSTATUS KsAddItemToObjectBag(
 <p>Either returns STATUS_SUCCESS indicating that the addition went normally or STATUS_INSUFFICIENT_RESOURCES indicating that there are insufficient system resources for the operation to proceed.</p>
 
 ## -remarks
-<p>Before calling <b>KsAddItemToObjectBag</b>, the minidriver must acquire the mutex associated with the specific object bag. If <i>ObjectBag</i> is a member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a>, acquire the device mutex. If the bag is a member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>, acquire the filter control mutex. If the bag is a member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> object, acquire the parent KSFILTER's filter control mutex.</p>
-
-<p>For more information, see <a href="NULL">Object Bags</a> and <a href="NULL">Mutexes in AVStream</a>.</p>
-
-<p>Before calling <b>KsAddItemToObjectBag</b>, the minidriver must acquire the mutex associated with the specific object bag. If <i>ObjectBag</i> is a member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a>, acquire the device mutex. If the bag is a member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>, acquire the filter control mutex. If the bag is a member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> object, acquire the parent KSFILTER's filter control mutex.</p>
+<p>Before calling <b>KsAddItemToObjectBag</b>, the minidriver must acquire the mutex associated with the specific object bag. If <i>ObjectBag</i> is a member of a <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> or <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a>, acquire the device mutex. If the bag is a member of a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a>, acquire the filter control mutex. If the bag is a member of a <a href="..\ks\ns-ks--kspin.md">KSPIN</a> object, acquire the parent KSFILTER's filter control mutex.</p>
 
 <p>For more information, see <a href="NULL">Object Bags</a> and <a href="NULL">Mutexes in AVStream</a>.</p>
 
@@ -151,27 +147,27 @@ NTSTATUS KsAddItemToObjectBag(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566798">KsRemoveItemFromObjectBag</a>
+<a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561695">KsDiscard</a>
+<a href="..\ks\nf-ks-ksdiscard.md">KsDiscard</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560965">KsAllocateObjectBag</a>
+<a href="..\ks\nf-ks-ksallocateobjectbag.md">KsAllocateObjectBag</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562562">KsFreeObjectBag</a>
+<a href="..\ks\nf-ks-ksfreeobjectbag.md">KsFreeObjectBag</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561031">KsCopyObjectBagItems</a>
+<a href="..\ks\nf-ks-kscopyobjectbagitems.md">KsCopyObjectBagItems</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568796">_KsEdit</a>
+<a href="..\ks\nf-ks--ksedit.md">_KsEdit</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a>
+<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsAddItemToObjectBag function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsAddItemToObjectBag function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

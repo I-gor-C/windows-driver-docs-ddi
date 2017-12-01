@@ -59,7 +59,7 @@ BOOLEAN PshedSynchronizeExecution(
 ### -param <i>ErrorSource</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure that describes an error source.</p>
+<p>A pointer to a <a href="..\ntddk\ns-ntddk--whea-error-source-descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure that describes an error source.</p>
 </dd>
 
 ### -param <i>SynchronizeRoutine</i> [in]
@@ -101,18 +101,6 @@ SynchronizeRoutine(
 <p><b>PshedSynchronizeExecution</b> returns the value that is returned by the function pointed to by the <i>SynchronizeRoutine</i> parameter.</p>
 
 ## -remarks
-<p>A PSHED plug-in calls the <b>PshedSynchronizeExecution</b> function to synchronize the execution of a given function with the hardware error processing for an error source. This is required whenever a PSHED plug-in shares resources between code that executes outside of the normal hardware error processing flow and code that executes as part of the normal hardware error processing flow. For more information about the processing of hardware errors, see <a href="NULL">Error Processing</a>.</p>
-
-<p>When this function is called, the following occurs:</p>
-
-<p>The IRQL is raised to the IRQL at which the low-level hardware error handler (LLHEH) for the error source executes.</p>
-
-<p>Access to the context area specified by the <i>SynchronizeContext</i> parameter is synchronized with the LLHEH by acquiring the associated spin lock.</p>
-
-<p>The function specified in the <i>SynchronizeRoutine</i> parameter is called.</p>
-
-<p>Callers of the <b>PshedSynchronizeExecution</b> function must be running at IRQL &lt;= DIRQL, that is, less than or equal to the IRQL at which the LLHEH for the error source executes.</p>
-
 <p>A PSHED plug-in calls the <b>PshedSynchronizeExecution</b> function to synchronize the execution of a given function with the hardware error processing for an error source. This is required whenever a PSHED plug-in shares resources between code that executes outside of the normal hardware error processing flow and code that executes as part of the normal hardware error processing flow. For more information about the processing of hardware errors, see <a href="NULL">Error Processing</a>.</p>
 
 <p>When this function is called, the following occurs:</p>
@@ -189,7 +177,7 @@ SynchronizeRoutine(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk--whea-error-source-descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

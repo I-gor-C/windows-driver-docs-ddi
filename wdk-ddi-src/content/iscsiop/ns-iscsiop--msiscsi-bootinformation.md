@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The MSiSCSI_BootInformation structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562984">MSiSCSI_BootInformation WMI Class</a> to expose information about the node that contains the target boot device. </p>
+<p>The MSiSCSI_BootInformation structure is used with the <a href="storage.msiscsi_bootinformation_wmi_class">MSiSCSI_BootInformation WMI Class</a> to expose information about the node that contains the target boot device. </p>
 
 
 ## -syntax

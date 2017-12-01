@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetFcpTargetMapping_IN structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method to the WMI client.</p>
+<p>The GetFcpTargetMapping_IN structure is used to report the output parameter data of the <a href="storage.getfcptargetmapping">GetFcpTargetMapping</a> WMI method to the WMI client.</p>
 
 
 ## -syntax
@@ -69,9 +69,9 @@ typedef struct _GetFcpTargetMapping_IN {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method queries a WMI provider for mappings between the information that uniquely identifies a set of logical units for the operating system and the fibre channel protocol (FCP) identifiers for the logical units.</p>
+<p>The <a href="storage.getfcptargetmapping">GetFcpTargetMapping</a> WMI method queries a WMI provider for mappings between the information that uniquely identifies a set of logical units for the operating system and the fibre channel protocol (FCP) identifiers for the logical units.</p>
 
-<p>The WMI tool suite generates a declaration of the GetFcpTargetMapping_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetFcpTargetMapping_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -90,10 +90,10 @@ typedef struct _GetFcpTargetMapping_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a>
+<a href="storage.getfcptargetmapping">GetFcpTargetMapping</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>
+<a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>
 </dt>
 </dl>
 <p> </p>

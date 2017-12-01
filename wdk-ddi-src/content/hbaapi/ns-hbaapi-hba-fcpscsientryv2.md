@@ -59,24 +59,24 @@ typedef struct HBA_FcpScsiEntryV2 {
 ### -field <b>ScsiId</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557191">HBA_ScsiId</a> that holds information that the operating system uses to identify a SCSI device. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a> that holds information that the operating system uses to identify a SCSI device. </p>
 </dd>
 
 ### -field <b>FcpId</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a> that uniquely identifies the device anywhere on the fibre channel network. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a> that uniquely identifies the device anywhere on the fibre channel network. </p>
 </dd>
 
 ### -field <b>LUID</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557091">HBA_LUID</a> that holds a logical unit descriptor for the device that the operating system derives from SCSI inquiry data. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-luid.md">HBA_LUID</a> that holds a logical unit descriptor for the device that the operating system derives from SCSI inquiry data. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The HBA_FcpScsiEntryV2 structure includes all of the information contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556064">HBA_FcpScsiEntry</a> structure and, in addition, contains the identification descriptor for the logical unit derived from SCSI inquiry data.</p>
+<p>The HBA_FcpScsiEntryV2 structure includes all of the information contained in the <a href="..\hbaapi\ns-hbaapi-hba-fcpscsientry.md">HBA_FcpScsiEntry</a> structure and, in addition, contains the identification descriptor for the logical unit derived from SCSI inquiry data.</p>
 
 ## -requirements
 <table>
@@ -95,16 +95,16 @@ typedef struct HBA_FcpScsiEntryV2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556064">HBA_FcpScsiEntry</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcpscsientry.md">HBA_FcpScsiEntry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557091">HBA_LUID</a>
+<a href="..\hbaapi\ns-hbaapi-hba-luid.md">HBA_LUID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557191">HBA_ScsiId</a>
+<a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a>
 </dt>
 </dl>
 <p> </p>

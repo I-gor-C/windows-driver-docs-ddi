@@ -67,15 +67,9 @@ PFILE_OBJECT CcGetFileObjectFromSectionPtrs(
 ## -remarks
 <p>The file system is responsible for ensuring that the file object remains valid while in use. It is impossible for the cache manager to guarantee this. </p>
 
-<p>By using <b>CcGetFileObjectFromSectionPtrs</b>, you lose some caching functionality. Instead, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539113">CcGetFileObjectFromSectionPtrsRef</a> routine, which provides the same functionality as <b>CcGetFileObjectFromSectionPtrs</b> as well as creating a reference for the object.</p>
+<p>By using <b>CcGetFileObjectFromSectionPtrs</b>, you lose some caching functionality. Instead, use the <a href="..\ntifs\nf-ntifs-ccgetfileobjectfromsectionptrsref.md">CcGetFileObjectFromSectionPtrsRef</a> routine, which provides the same functionality as <b>CcGetFileObjectFromSectionPtrs</b> as well as creating a reference for the object.</p>
 
-<p>For more information about creating mapped sections and views of memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563682">Sections and Views</a>. </p>
-
-<p>The file system is responsible for ensuring that the file object remains valid while in use. It is impossible for the cache manager to guarantee this. </p>
-
-<p>By using <b>CcGetFileObjectFromSectionPtrs</b>, you lose some caching functionality. Instead, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539113">CcGetFileObjectFromSectionPtrsRef</a> routine, which provides the same functionality as <b>CcGetFileObjectFromSectionPtrs</b> as well as creating a reference for the object.</p>
-
-<p>For more information about creating mapped sections and views of memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563682">Sections and Views</a>. </p>
+<p>For more information about creating mapped sections and views of memory, see <a href="kernel.sections_and_views">Sections and Views</a>. </p>
 
 ## -requirements
 <table>
@@ -124,10 +118,10 @@ PFILE_OBJECT CcGetFileObjectFromSectionPtrs(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539113">CcGetFileObjectFromSectionPtrsRef</a>
+<a href="..\ntifs\nf-ntifs-ccgetfileobjectfromsectionptrsref.md">CcGetFileObjectFromSectionPtrsRef</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539188">CcPurgeCacheSection</a>
+<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
 </dt>
 </dl>
 <p> </p>

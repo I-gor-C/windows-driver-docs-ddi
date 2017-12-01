@@ -84,15 +84,7 @@ NTSTATUS IoVerifyVolume(
 
 <p>If the verify operation fails, the I/O Manager sends a volume mount request to the device. </p>
 
-<p>Before using <a href="https://msdn.microsoft.com/library/windows/hardware/ff548529">IoSetDeviceToVerify</a> and <b>IoVerifyVolume</b>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample. </p>
-
-<p>For more information about removable-media devices, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563916">Supporting Removable Media</a>. </p>
-
-<p><b>IoVerifyVolume</b> sends a volume verify request to the given removable-media device. </p>
-
-<p>If the verify operation fails, the I/O Manager sends a volume mount request to the device. </p>
-
-<p>Before using <a href="https://msdn.microsoft.com/library/windows/hardware/ff548529">IoSetDeviceToVerify</a> and <b>IoVerifyVolume</b>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample. </p>
+<p>Before using <a href="..\ntifs\nf-ntifs-iosetdevicetoverify.md">IoSetDeviceToVerify</a> and <b>IoVerifyVolume</b>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample. </p>
 
 <p>For more information about removable-media devices, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563916">Supporting Removable Media</a>. </p>
 
@@ -151,10 +143,10 @@ NTSTATUS IoVerifyVolume(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549212">IoGetDeviceToVerify</a>
+<a href="..\ntifs\nf-ntifs-iogetdevicetoverify.md">IoGetDeviceToVerify</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548529">IoSetDeviceToVerify</a>
+<a href="..\ntifs\nf-ntifs-iosetdevicetoverify.md">IoSetDeviceToVerify</a>
 </dt>
 </dl>
 <p> </p>

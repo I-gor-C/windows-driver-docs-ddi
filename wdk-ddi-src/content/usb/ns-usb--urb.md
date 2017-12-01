@@ -81,25 +81,25 @@ typedef struct _URB {
 ### -field <b>UrbHeader</b>
 
 <dd>
-<p>Provides basic information about the request being sent to the host controller driver. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a>.</p>
+<p>Provides basic information about the request being sent to the host controller driver. For more information, see <a href="buses._urb_header">_URB_HEADER</a>.</p>
 </dd>
 
 ### -field <b>UrbSelectInterface</b>
 
 <dd>
-<p>Defines the format of a select interface command for a USB device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540425">_URB_SELECT_INTERFACE</a>.</p>
+<p>Defines the format of a select interface command for a USB device. For more information, see <a href="buses._urb_select_interface">_URB_SELECT_INTERFACE</a>.</p>
 </dd>
 
 ### -field <b>UrbSelectConfiguration</b>
 
 <dd>
-<p>Defines the format of a select configuration command for a USB device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540422">_URB_SELECT_CONFIGURATION</a>.</p>
+<p>Defines the format of a select configuration command for a USB device. For more information, see <a href="buses._urb_select_configuration">_URB_SELECT_CONFIGURATION</a>.</p>
 </dd>
 
 ### -field <b>UrbPipeRequest</b>
 
 <dd>
-<p>Defines the format for a command for a  pipe in a USB endpoint. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540419">_URB_PIPE_REQUEST</a>.</p>
+<p>Defines the format for a command for a  pipe in a USB endpoint. For more information, see <a href="buses._urb_pipe_request">_URB_PIPE_REQUEST</a>.</p>
 </dd>
 
 ### -field <b>UrbFrameLengthControl</b>
@@ -123,19 +123,19 @@ typedef struct _URB {
 ### -field <b>UrbGetCurrentFrameNumber</b>
 
 <dd>
-<p>Defines the format for a command to get the current frame number on a USB bus. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540401">_URB_GET_CURRENT_FRAME_NUMBER</a>.</p>
+<p>Defines the format for a command to get the current frame number on a USB bus. For more information, see <a href="buses._urb_get_current_frame_number">_URB_GET_CURRENT_FRAME_NUMBER</a>.</p>
 </dd>
 
 ### -field <b>UrbControlTransfer</b>
 
 <dd>
-<p>Defines the format for a command to transmit or receive data on a control pipe. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540384">_URB_CONTROL_TRANSFER</a>.</p>
+<p>Defines the format for a command to transmit or receive data on a control pipe. For more information, see <a href="buses._urb_control_transfer">_URB_CONTROL_TRANSFER</a>.</p>
 </dd>
 
 ### -field <b>UrbControlTransferEx</b>
 
 <dd>
-<p>Defines the format for a command to transmit or receive data on a control pipe. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540387">_URB_CONTROL_TRANSFER_EX</a>.</p>
+<p>Defines the format for a command to transmit or receive data on a control pipe. For more information, see <a href="buses._urb_control_transfer_ex">_URB_CONTROL_TRANSFER_EX</a>.</p>
 </dd>
 
 ### -field <b>UrbControlTransferEx</b>
@@ -147,61 +147,61 @@ typedef struct _URB {
 ### -field <b>UrbBulkOrInterruptTransfer</b>
 
 <dd>
-<p>Defines the format for a command to transmit or receive data on a bulk pipe, or to receive data from an interrupt pipe. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540352">_URB_BULK_OR_INTERRUPT_TRANSFER</a>.</p>
+<p>Defines the format for a command to transmit or receive data on a bulk pipe, or to receive data from an interrupt pipe. For more information, see <a href="buses._urb_bulk_or_interrupt_transfer">_URB_BULK_OR_INTERRUPT_TRANSFER</a>.</p>
 </dd>
 
 ### -field <b>UrbIsochronousTransfer</b>
 
 <dd>
-<p>Defines the format of an isochronous transfer to a USB device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540414">_URB_ISOCH_TRANSFER</a>.</p>
+<p>Defines the format of an isochronous transfer to a USB device. For more information, see <a href="buses._urb_isoch_transfer">_URB_ISOCH_TRANSFER</a>.</p>
 </dd>
 
 ### -field <b>UrbControlDescriptorRequest</b>
 
 <dd>
-<p>Defines the format for a command to retrieve or set descriptor(s) on a USB device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a>.</p>
+<p>Defines the format for a command to retrieve or set descriptor(s) on a USB device. For more information, see <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a>.</p>
 </dd>
 
 ### -field <b>UrbControlGetStatusRequest</b>
 
 <dd>
-<p>Defines the format for a command to get status from a device, interface, or endpoint. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540378">_URB_CONTROL_GET_STATUS_REQUEST</a>.</p>
+<p>Defines the format for a command to get status from a device, interface, or endpoint. For more information, see <a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a>.</p>
 </dd>
 
 ### -field <b>UrbControlFeatureRequest</b>
 
 <dd>
-<p>Defines the format for a command to set or clear USB-defined features on an device, interface, or endpoint. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540361">_URB_CONTROL_FEATURE_REQUEST</a>.</p>
+<p>Defines the format for a command to set or clear USB-defined features on an device, interface, or endpoint. For more information, see <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a>.</p>
 </dd>
 
 ### -field <b>UrbControlVendorClassRequest</b>
 
 <dd>
-<p>Defines the format for a command to send or receive a vendor or class-specific request on a device, interface, endpoint, or other device-defined target. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540393">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a>.</p>
+<p>Defines the format for a command to send or receive a vendor or class-specific request on a device, interface, endpoint, or other device-defined target. For more information, see <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a>.</p>
 </dd>
 
 ### -field <b>UrbControlGetInterfaceRequest</b>
 
 <dd>
-<p>Defines the format for a command to get the current alternate interface setting for a selected interface. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540373">_URB_CONTROL_GET_INTERFACE_REQUEST</a>.</p>
+<p>Defines the format for a command to get the current alternate interface setting for a selected interface. For more information, see <a href="buses._urb_control_get_interface_request">_URB_CONTROL_GET_INTERFACE_REQUEST</a>.</p>
 </dd>
 
 ### -field <b>UrbControlGetConfigurationRequest</b>
 
 <dd>
-<p>Defines the format for a command to get the current configuration for a device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540365">_URB_CONTROL_GET_CONFIGURATION_REQUEST</a>.</p>
+<p>Defines the format for a command to get the current configuration for a device. For more information, see <a href="buses._urb_control_get_configuration_request">_URB_CONTROL_GET_CONFIGURATION_REQUEST</a>.</p>
 </dd>
 
 ### -field <b>UrbOSFeatureDescriptorRequest</b>
 
 <dd>
-<p>Defines the format for a command to request a Microsoft OS Descriptor. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540417">_URB_OS_FEATURE_DESCRIPTOR_REQUEST</a>.</p>
+<p>Defines the format for a command to request a Microsoft OS Descriptor. For more information, see <a href="buses._urb_os_feature_descriptor_request">_URB_OS_FEATURE_DESCRIPTOR_REQUEST</a>.</p>
 </dd>
 
 ### -field <b>UrbOpenStaticStreams</b>
 
 <dd>
-<p>Defines the format for a command to open streams in a bulk endpoint of a USB 3.0 device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406294">_URB_OPEN_STATIC_STREAMS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.</p>
+<p>Defines the format for a command to open streams in a bulk endpoint of a USB 3.0 device. For more information, see <a href="buses._urb_open_basic_streams">_URB_OPEN_STATIC_STREAMS</a> and <a href="buses.how_to_open_streams_in_a_usb_endpoint">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.</p>
 </dd>
 
 ### -field <b>UrbGetIsochPipeTransferPathDelays</b>
@@ -213,7 +213,7 @@ For more information, see <a href="buses._urb_get_isoch_pipe_transfer_path_delay
 </dl>
 
 ## -remarks
-<p>For information about the function codes to set in each structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a>.</p>
+<p>For information about the function codes to set in each structure, see <a href="buses._urb_header">_URB_HEADER</a>.</p>
 
 ## -requirements
 <table>
@@ -232,10 +232,10 @@ For more information, see <a href="buses._urb_get_isoch_pipe_transfer_path_delay
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537271">IOCTL_INTERNAL_USB_SUBMIT_URB</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-submit-urb.md">IOCTL_INTERNAL_USB_SUBMIT_URB</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

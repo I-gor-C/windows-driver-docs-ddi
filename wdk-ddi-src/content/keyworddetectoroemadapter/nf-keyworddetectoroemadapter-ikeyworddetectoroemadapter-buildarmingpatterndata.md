@@ -7,7 +7,7 @@ old-location: audio\ikeyworddetectoroemadapter_buildarmingpatterndata.htm
 old-project: audio
 ms.assetid: F74DC3C3-C182-4BBA-93C8-95A73C58CFEF
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IKeywordDetectorOemAdapter, BuildArmingPatternData, IKeywordDetectorOemAdapter::BuildArmingPatternData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,13 +60,13 @@ HRESULT BuildArmingPatternData(
 ### -param <i>ModelData</i> [in]
 
 <dd>
-<p>A pointer to <b>IStream</b> bound to model data for the <a href="https://msdn.microsoft.com/library/windows/hardware/dn957511">KEYWORDSELECTOR</a> values in the <i>KeywordSelectors</i> parameter.</p>
+<p>A pointer to <b>IStream</b> bound to model data for the <a href="audio.keywordselector">KEYWORDSELECTOR</a> values in the <i>KeywordSelectors</i> parameter.</p>
 </dd>
 
 ### -param <i>KeywordSelectors</i> [in]
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/dn957511">KEYWORDSELECTOR</a> structures identifying the desired set of matches for the keyword detector to arm.</p>
+<p>An array of <a href="audio.keywordselector">KEYWORDSELECTOR</a> structures identifying the desired set of matches for the keyword detector to arm.</p>
 </dd>
 
 ### -param <i>NumKeywordSelectors</i> [in]
@@ -96,8 +96,6 @@ HRESULT BuildArmingPatternData(
 <p> </p>
 
 ## -remarks
-<p>The operating system may call this method at any time. The operating system may also store the returned pattern data to reuse later for the same set of keyword selectors.</p>
-
 <p>The operating system may call this method at any time. The operating system may also store the returned pattern data to reuse later for the same set of keyword selectors.</p>
 
 ## -requirements
@@ -143,10 +141,10 @@ HRESULT BuildArmingPatternData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn957504">IKeywordDetectorOemAdapter</a>
+<a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn957511">KEYWORDSELECTOR</a>
+<a href="audio.keywordselector">KEYWORDSELECTOR</a>
 </dt>
 <dt>
 <a href="com.cotaskmemalloc">CoTaskMemAlloc</a>
@@ -157,4 +155,4 @@ HRESULT BuildArmingPatternData(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IKeywordDetectorOemAdapter::BuildArmingPatternData method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IKeywordDetectorOemAdapter::BuildArmingPatternData method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

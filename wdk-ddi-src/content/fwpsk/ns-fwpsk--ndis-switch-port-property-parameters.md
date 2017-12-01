@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_port_property_parameters.htm
 old-project: netvista
 ms.assetid: 656acfd4-6f34-41aa-862e-134a2b95dcab
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_SWITCH_PORT_PROPERTY_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ typedef struct _NDIS_SWITCH_PORT_PROPERTY_PARAMETERS {
 ### -field <b>Header</b>
 
 <dd>
-<p>The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure. This member is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.</p>
+<p>The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
 <p>The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value:</p>
 <p></p>
 <dl>
@@ -96,7 +96,7 @@ typedef struct _NDIS_SWITCH_PORT_PROPERTY_PARAMETERS {
 ### -field <b>PropertyType</b>
 
 <dd>
-<p> An <a href="https://msdn.microsoft.com/library/windows/hardware/hh598242">NDIS_SWITCH_PORT_PROPERTY_TYPE</a> enumeration value that specifies the type of port property that is contained within the property buffer.</p>
+<p> An <a href="..\ntddndis\ne-ntddndis--ndis-switch-port-property-type.md">NDIS_SWITCH_PORT_PROPERTY_TYPE</a> enumeration value that specifies the type of port property that is contained within the property buffer.</p>
 </dd>
 
 ### -field <b>PropertyId</b>
@@ -163,17 +163,17 @@ For more information, see the Remarks section.</p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598278">OID_SWITCH_PORT_PROPERTY_UPDATE</a>
 </p>
 
-<p>The property buffer contains a structure that is associated with the <b>PropertyType</b> member. The property buffer follows the <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure in the information buffer that is associated with these OID set requests. The <b>InformationBuffer</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure contains a pointer to this information buffer.</p>
+<p>The property buffer contains a structure that is associated with the <b>PropertyType</b> member. The property buffer follows the <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure in the information buffer that is associated with these OID set requests. The <b>InformationBuffer</b> member of the <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure contains a pointer to this information buffer.</p>
 
 <p>The extensible switch extension must follow these guidelines when it processes an <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure:</p>
 
-<p>If the <b>PropertyType</b> member is set to <b>NdisSwitchPortPropertyTypeSecurity</b>, the property buffer is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh598241">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a> structure.</p>
+<p>If the <b>PropertyType</b> member is set to <b>NdisSwitchPortPropertyTypeSecurity</b>, the property buffer is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-switch-port-property-security.md">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a> structure.</p>
 
-<p>If the <b>PropertyType</b> member is set to <b>NdisSwitchPortPropertyTypeVlan</b>, the property buffer is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh598243">NDIS_SWITCH_PORT_PROPERTY_VLAN</a> structure.</p>
+<p>If the <b>PropertyType</b> member is set to <b>NdisSwitchPortPropertyTypeVlan</b>, the property buffer is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-switch-port-property-vlan.md">NDIS_SWITCH_PORT_PROPERTY_VLAN</a> structure.</p>
 
-<p>If the <b>PropertyType</b> member is set to <b>NdisSwitchPortPropertyTypeProfile</b>, the property buffer is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh598240">NDIS_SWITCH_PORT_PROPERTY_PROFILE</a> structure.</p>
+<p>If the <b>PropertyType</b> member is set to <b>NdisSwitchPortPropertyTypeProfile</b>, the property buffer is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-switch-port-property-profile.md">NDIS_SWITCH_PORT_PROPERTY_PROFILE</a> structure.</p>
 
-<p>If the <b>PropertyType</b> member is set to <b>NdisSwitchPortPropertyTypeCustom</b>, the <b>PropertyId</b> member must be set to the GUID value the independent software vendor (ISV) created for the custom port property. The property buffer is formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/hh598230">NDIS_SWITCH_PORT_PROPERTY_CUSTOM</a> structure that contains the parameters for the custom port property as defined by the ISV.</p>
+<p>If the <b>PropertyType</b> member is set to <b>NdisSwitchPortPropertyTypeCustom</b>, the <b>PropertyId</b> member must be set to the GUID value the independent software vendor (ISV) created for the custom port property. The property buffer is formatted as a <a href="..\ntddndis\ns-ntddndis--ndis-switch-port-property-custom.md">NDIS_SWITCH_PORT_PROPERTY_CUSTOM</a> structure that contains the parameters for the custom port property as defined by the ISV.</p>
 
 <p>Extensible switch extensions can access the custom port property inside an <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure by using the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598239">NDIS_SWITCH_PORT_PROPERTY_PARAMETERS_GET_PROPERTY</a> macro.</p>
 
@@ -205,28 +205,28 @@ For more information, see the Remarks section.</p>
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598230">NDIS_SWITCH_PORT_PROPERTY_CUSTOM</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-switch-port-property-custom.md">NDIS_SWITCH_PORT_PROPERTY_CUSTOM</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598239">NDIS_SWITCH_PORT_PROPERTY_PARAMETERS_GET_PROPERTY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598240">NDIS_SWITCH_PORT_PROPERTY_PROFILE</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-switch-port-property-profile.md">NDIS_SWITCH_PORT_PROPERTY_PROFILE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598241">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-switch-port-property-security.md">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598242">NDIS_SWITCH_PORT_PROPERTY_TYPE</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-switch-port-property-type.md">NDIS_SWITCH_PORT_PROPERTY_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598243">NDIS_SWITCH_PORT_PROPERTY_VLAN</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-switch-port-property-vlan.md">NDIS_SWITCH_PORT_PROPERTY_VLAN</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598275">OID_SWITCH_PORT_PROPERTY_ADD</a>
@@ -237,4 +237,4 @@ For more information, see the Remarks section.</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_PROPERTY_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_PROPERTY_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -78,7 +78,7 @@ typedef struct _DXGKARG_SETPALETTE {
 ### -field <b>pLookupTable</b>
 
 <dd>
-<p>[in] An array of color entries to copy into the device's color palette (that is, the device's color registers). Each color entry is accessed as a generic 32-bit value or as the <b>Red</b>, <b>Green</b>, <b>Blue</b>, and <b>Unused</b> members of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546155">D3DKMDT_PALETTEDATA</a> structure.</p>
+<p>[in] An array of color entries to copy into the device's color palette (that is, the device's color registers). Each color entry is accessed as a generic 32-bit value or as the <b>Red</b>, <b>Green</b>, <b>Blue</b>, and <b>Unused</b> members of a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-palettedata.md">D3DKMDT_PALETTEDATA</a> structure.</p>
 </dd>
 </dl>
 
@@ -110,7 +110,7 @@ typedef struct _DXGKARG_SETPALETTE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546155">D3DKMDT_PALETTEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-palettedata.md">D3DKMDT_PALETTEDATA</a>
 </dt>
 <dt>
 <a href="display.dxgkddisetpalette">DxgkDdiSetPalette</a>

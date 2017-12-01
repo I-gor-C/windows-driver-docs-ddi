@@ -87,7 +87,7 @@ typedef enum _DXGK_RENDERKM_OPERATION {
 ### -field <a id="DXGK_GDIOP_ESCAPE"></a><a id="dxgk_gdiop_escape"></a><b>DXGK_GDIOP_ESCAPE</b>
 
 <dd>
-<p>Reserved for future use. The driver should skip this command when setting the value of the <b>CommandSize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562026">DXGK_RENDERKM_COMMAND</a> structure.</p>
+<p>Reserved for future use. The driver should skip this command when setting the value of the <b>CommandSize</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-renderkm-command.md">DXGK_RENDERKM_COMMAND</a> structure.</p>
 </dd>
 
 ### -field <a id="DXGK_GDIOP_TRANSPARENTBLT"></a><a id="dxgk_gdiop_transparentblt"></a><b>DXGK_GDIOP_TRANSPARENTBLT</b>
@@ -131,7 +131,7 @@ typedef enum _DXGK_RENDERKM_OPERATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562026">DXGK_RENDERKM_COMMAND</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-renderkm-command.md">DXGK_RENDERKM_COMMAND</a>
 </dt>
 <dt>
 <a href="display.dxgkddirenderkm">DxgkDdiRenderKm</a>

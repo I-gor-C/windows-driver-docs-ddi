@@ -70,10 +70,6 @@ BOOLEAN RxIsThisACscAgentOpen(
 
 <p>The <b>RxIsThisACscAgentOpen</b> routine is called internally by RDBSS when initializing a V_NET_ROOT structure. A network mini-redirector integrated with client-side caching might call <b>RxIsThisACscAgentOpen</b> as part of the <b>MRxCreateVNetRoot</b> callback routine provided by the network mini-redirector. </p>
 
-<p><b>RxIsThisACscAgentOpen</b> is not useful for third-party network mini-redirectors since they cannot integrate into the existing client-side caching infrastructure.</p>
-
-<p>The <b>RxIsThisACscAgentOpen</b> routine is called internally by RDBSS when initializing a V_NET_ROOT structure. A network mini-redirector integrated with client-side caching might call <b>RxIsThisACscAgentOpen</b> as part of the <b>MRxCreateVNetRoot</b> callback routine provided by the network mini-redirector. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -120,7 +116,7 @@ BOOLEAN RxIsThisACscAgentOpen(
 <a href="ifsk.the_v_net_root_structure">The V_NET_ROOT Structure</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554751">RX_CONTEXT</a>
+<a href="..\rxcontx\ns-rxcontx--rx-context.md">RX_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>

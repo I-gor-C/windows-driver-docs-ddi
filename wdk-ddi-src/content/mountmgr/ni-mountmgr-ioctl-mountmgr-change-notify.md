@@ -49,7 +49,7 @@ req.iface:
 ## -ioctlparameters
 
 ### -input-buffer
-<p>The mount manager client initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562273">MOUNTMGR_CHANGE_NOTIFY_INFO</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
+<p>The mount manager client initializes the <a href="..\mountmgr\ns-mountmgr--mountmgr-change-notify-info.md">MOUNTMGR_CHANGE_NOTIFY_INFO</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
 
 ### -input-buffer-length
 <p><b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the input buffer, which must be greater than or equal to <b>sizeof</b>(MOUNTMGR_CHANGE_NOTIFY_INFO).</p>
@@ -57,11 +57,11 @@ req.iface:
 <p><b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the input buffer, which must be greater than or equal to <b>sizeof</b>(MOUNTMGR_CHANGE_NOTIFY_INFO).</p>
 
 ### -output-buffer
-<p>The mount manager returns the current <i>EpicNumber</i> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562273">MOUNTMGR_CHANGE_NOTIFY_INFO</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
+<p>The mount manager returns the current <i>EpicNumber</i> in the <a href="..\mountmgr\ns-mountmgr--mountmgr-change-notify-info.md">MOUNTMGR_CHANGE_NOTIFY_INFO</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
 
-<p>The mount manager returns the current <i>EpicNumber</i> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562273">MOUNTMGR_CHANGE_NOTIFY_INFO</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
+<p>The mount manager returns the current <i>EpicNumber</i> in the <a href="..\mountmgr\ns-mountmgr--mountmgr-change-notify-info.md">MOUNTMGR_CHANGE_NOTIFY_INFO</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
 
-<p>The mount manager returns the current <i>EpicNumber</i> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562273">MOUNTMGR_CHANGE_NOTIFY_INFO</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
+<p>The mount manager returns the current <i>EpicNumber</i> in the <a href="..\mountmgr\ns-mountmgr--mountmgr-change-notify-info.md">MOUNTMGR_CHANGE_NOTIFY_INFO</a> structure, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
 
 ### -output-buffer-length
 
@@ -113,7 +113,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562273">MOUNTMGR_CHANGE_NOTIFY_INFO</a>
+<a href="..\mountmgr\ns-mountmgr--mountmgr-change-notify-info.md">MOUNTMGR_CHANGE_NOTIFY_INFO</a>
 </dt>
 </dl>
 <p> </p>

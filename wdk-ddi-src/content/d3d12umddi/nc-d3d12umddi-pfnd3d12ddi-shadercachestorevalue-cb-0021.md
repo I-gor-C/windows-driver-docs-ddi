@@ -112,8 +112,6 @@ HRESULT APIENTRY CALLBACK * pfnShaderCacheStoreValueCb(
 ## -remarks
 <p>Access this callback by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi-shadercache-callbacks-0021.md">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a> structure.</p>
 
-<p>Access this callback by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi-shadercache-callbacks-0021.md">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a> structure.</p>
-
 ## -requirements
 <table>
 <tr>

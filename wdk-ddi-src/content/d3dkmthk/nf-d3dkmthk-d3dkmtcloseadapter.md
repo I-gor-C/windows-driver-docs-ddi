@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>D3DKMTCloseAdapter</b> function closes a graphics adapter that was previously opened by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547047">D3DKMTOpenAdapterFromHdc</a> function.</p>
+<p>The <b>D3DKMTCloseAdapter</b> function closes a graphics adapter that was previously opened by using the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a> function.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTCloseAdapter(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547789">D3DKMT_CLOSEADAPTER</a> structure that specifies the adapter to close.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-closeadapter.md">D3DKMT_CLOSEADAPTER</a> structure that specifies the adapter to close.</p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS APIENTRY D3DKMTCloseAdapter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547789">D3DKMT_CLOSEADAPTER</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-closeadapter.md">D3DKMT_CLOSEADAPTER</a>
 </dt>
 </dl>
 <p> </p>

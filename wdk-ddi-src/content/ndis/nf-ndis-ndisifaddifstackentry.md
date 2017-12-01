@@ -7,7 +7,7 @@ old-location: netvista\ndisifaddifstackentry.htm
 old-project: netvista
 ms.assetid: 6927bcdf-e2b5-4a60-8f71-a977f3a1c120
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisIfAddIfStackEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -105,25 +105,6 @@ NDIS_STATUS NdisIfAddIfStackEntry(
     <b>NdisIfAddIfStackEntry</b> to populate the interface stack table. NDIS deletes the corresponding stack
     entries for an interface when the interface is deregistered.</p>
 
-<p>NDIS drivers can call the 
-    <b>NdisIfAddIfStackEntry</b> function to specify the ordering of two network interfaces in the NDIS
-    interface stack. The NDIS proxy provider specifies the order for filter modules and miniport adapters.
-    NDIS also specifies the relationship between the virtual miniport and the underlying miniport adapter for
-    filter intermediate drivers. However, NDIS does not specify the stack order for MUX intermediate
-    drivers.</p>
-
-<p>NDIS maintains an interface stack table (<i>ifStackTable</i> from 
-    <a href="netvista.overview_of_ndis_network_interfaces">RFC 2863</a>). NDIS provides
-    the 
-    <b>NdisIfAddIfStackEntry</b> and 
-    <a href="..\ndis\nf-ndis-ndisifdeleteifstackentry.md">
-    NdisIfDeleteIfStackEntry</a> functions to add and delete entries in this table.</p>
-
-<p>Any driver that can provide the information about the stack order relationship between two interfaces
-    should call 
-    <b>NdisIfAddIfStackEntry</b> to populate the interface stack table. NDIS deletes the corresponding stack
-    entries for an interface when the interface is deregistered.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -177,7 +158,7 @@ NDIS_STATUS NdisIfAddIfStackEntry(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547949">Irql_Interfaces_Function</a>
+<a href="devtest.ndis_irql_interfaces_function">Irql_Interfaces_Function</a>
 </td>
 </tr>
 </table>
@@ -185,9 +166,9 @@ NDIS_STATUS NdisIfAddIfStackEntry(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562698">NdisIfDeleteIfStackEntry</a>
+<a href="..\ndis\nf-ndis-ndisifdeleteifstackentry.md">NdisIfDeleteIfStackEntry</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfAddIfStackEntry function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfAddIfStackEntry function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

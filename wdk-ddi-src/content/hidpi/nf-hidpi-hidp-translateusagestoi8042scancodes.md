@@ -206,35 +206,7 @@ NTSTATUS __stdcall HidP_TranslateUsagesToI8042ScanCodes(
 
 <p>A previous usage list, current usage list, break usage list, and a make usage list.</p>
 
-<p>Each list is a zero-initialized array of usages. To ensure that the processing code maps all the usages that can change between consecutive HID input reports, the processing code must set the number of elements in each list to the maximum number of usages that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539742">HidP_GetUsages</a> can return for the HID_USAGE_PAGE_KEYBOARD usage page. This number is obtained using <a href="https://msdn.microsoft.com/library/windows/hardware/ff539770">HidP_MaxUsageListLength</a>.</p>
-
-<p>A zero-initialized _HIDP_KEYBOARD_MODIFIER_STATE structure for use by the translate usages routine.</p>
-
-<p>In the processing loop, the code must maintain this structure for use by the translate usages routine. The processing code can read the state of the modifier keys, but the code must not modify the structure. The translate usage routine uses this structure to maintain internal information about the state of the modifier keys. </p>
-
-<p>After initializing the required structures, each iteration of the processing loop typically includes the following sequence of operations:</p>
-
-<p>Call <b>HidP_GetUsages</b> to obtain the current usage list of usages that are set to ON. Set the <i>UsagePage</i> input parameter of the get usages routine to HID_USAGE_PAGE_KEYBOARD. </p>
-
-<p>Call <b>HidP_UsageListDifference</b> to compare the current usage list of usages to a previous usage list. The usage list difference routine returns a break usage list and a make usage list.</p>
-
-<p>Call the translate usage routine, setting <i>ChangedUsageList</i> to the break usage list, <i>KeyAction</i> to HidP_KeyboardBreak, and <i>ModifierState</i> to the structure that the processing code maintains for the translate usages routine. The translate usages routine uses the <i>InsertCodesProcedure</i>s callback routine to return the break scan codes to the processing loop.</p>
-
-<p>Call the translate usage routine, setting <i>ChangedUsageList</i> to the make usage list, <i>KeyAction</i> to HidP_KeyboardMake, and <i>ModifierState</i> to the structure that the processing code maintains for the translate usages routine. The translate usages routine uses the <i>InsertCodesProcedure</i>s callback routine to return the make scan codes to the processing loop.</p>
-
-<p>Update the previous usage list to the current usage list.</p>
-
-<p>For information about the mapping between HID usages and PS/2 keyboard scan codes, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=242210">key support and scan codes</a> website.</p>
-
-<p><b>HidP_TranslateUsagesToI8042ScanCodes</b> sequentially maps the keyboard button usages in the changed usage list in the order in which they occur in the list, beginning with the value at <i>ChangedUsageList.</i> After the translate usage routine successfully maps a usage, it uses the caller's <i>InsertCodesProcedure</i> routine to return the corresponding scan code to the caller. The translate usage routine continues to map the usages in the list until one of the following occurs: a usage value in the list is zero; it maps the number of usages that is specified by <i>UsageListLength</i>; a usage maps to an invalid keyboard scan code.</p>
-
-<p><b>HidP_TranslateUsagesToI8042ScanCodes</b> is designed primarily to be used in a processing loop that repeatedly determines the current usage list (usages that are currently set to ON), compares them with a previous usage list (usages that were previously set to ON), and maps the difference between the current and previous usage lists to make scan codes and break scan codes. The following operations illustrate how to use the translate usages routine.</p>
-
-<p>Prior to beginning a processing loop, the processing code typically allocates and initializes the following data:</p>
-
-<p>A previous usage list, current usage list, break usage list, and a make usage list.</p>
-
-<p>Each list is a zero-initialized array of usages. To ensure that the processing code maps all the usages that can change between consecutive HID input reports, the processing code must set the number of elements in each list to the maximum number of usages that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539742">HidP_GetUsages</a> can return for the HID_USAGE_PAGE_KEYBOARD usage page. This number is obtained using <a href="https://msdn.microsoft.com/library/windows/hardware/ff539770">HidP_MaxUsageListLength</a>.</p>
+<p>Each list is a zero-initialized array of usages. To ensure that the processing code maps all the usages that can change between consecutive HID input reports, the processing code must set the number of elements in each list to the maximum number of usages that <a href="..\hidpi\nf-hidpi-hidp-getusages.md">HidP_GetUsages</a> can return for the HID_USAGE_PAGE_KEYBOARD usage page. This number is obtained using <a href="..\hidpi\nf-hidpi-hidp-maxusagelistlength.md">HidP_MaxUsageListLength</a>.</p>
 
 <p>A zero-initialized _HIDP_KEYBOARD_MODIFIER_STATE structure for use by the translate usages routine.</p>
 
@@ -307,13 +279,13 @@ NTSTATUS __stdcall HidP_TranslateUsagesToI8042ScanCodes(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539742">HidP_GetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp-getusages.md">HidP_GetUsages</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539770">HidP_MaxUsageListLength</a>
+<a href="..\hidpi\nf-hidpi-hidp-maxusagelistlength.md">HidP_MaxUsageListLength</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539826">HidP_UsageListDifference</a>
+<a href="..\hidpi\nf-hidpi-hidp-usagelistdifference.md">HidP_UsageListDifference</a>
 </dt>
 </dl>
 <p> </p>

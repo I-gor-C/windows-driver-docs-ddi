@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The TAPE_SET_MEDIA_PARAMETERS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560636">IOCTL_TAPE_SET_MEDIA_PARAMS</a> request to reset the block size of the media in a tape drive.</p>
+<p>The TAPE_SET_MEDIA_PARAMETERS structure is used in conjunction with the <a href="..\ntddtape\ni-ntddtape-ioctl-tape-set-media-params.md">IOCTL_TAPE_SET_MEDIA_PARAMS</a> request to reset the block size of the media in a tape drive.</p>
 
 
 ## -syntax
@@ -81,10 +81,10 @@ typedef struct _TAPE_SET_MEDIA_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560636">IOCTL_TAPE_SET_MEDIA_PARAMS</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl-tape-set-media-params.md">IOCTL_TAPE_SET_MEDIA_PARAMS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567953">TapeMiniSetMediaParameters</a>
+<a href="storage.tapeminisetmediaparameters">TapeMiniSetMediaParameters</a>
 </dt>
 </dl>
 <p> </p>

@@ -92,7 +92,7 @@ typedef struct _DXGK_SET_TIMING_PATH_INFO {
 ### -field <b>OutputColorSpace</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn906320">D3DDDI_COLOR_SPACE_TYPE</a> value which describes the output color space intended for the transported pixels.  The driver is responsible for sending appropriate metadata to ensure the display device is set up to interpret pixels correctly for this color space. </p>
+<p>A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-color-space-type.md">D3DDDI_COLOR_SPACE_TYPE</a> value which describes the output color space intended for the transported pixels.  The driver is responsible for sending appropriate metadata to ensure the display device is set up to interpret pixels correctly for this color space. </p>
 <p>The output colorspace is fixed until modified by another SetTiming call.  If the colorspace set on swap chain presented to this target is different from the output colorspace, the driver is required to convert to the output colorspace during scan-out.  </p>
 <p>If multiple pixel planes are enabled on the target, the driver must perform composition of the planes in a valid composition colorspace, typically a linear space in addition to converting the composed pixels into the output colorspace. </p>
 <p>Since the SelectedWireFormat already indicates the color encoding, and chroma subsampling, the OutputColorSpace is only used to determine the primaries and gamma with which the pixel values should be encoded; the other elements: color model, range and cositing should be ignored as they are defined by the SelectedWireFormat.

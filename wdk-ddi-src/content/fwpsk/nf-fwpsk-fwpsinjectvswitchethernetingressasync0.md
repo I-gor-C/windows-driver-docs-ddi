@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjectvswitchingressasync0.htm
 old-project: netvista
 ms.assetid: ccb22035-08fe-44a6-88d5-bf9db7c2f499
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsInjectvSwitchEthernetIngressAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FwpsInjectvSwitchEthernetIngressAsync0</b> (was <b>FwpsInjectvSwitchIngressAsync0</b>) function reinjects a previously absorbed virtual switch packet (unmodified) back to the virtual switch ingress data path where it was intercepted. This function can also inject a packet created with  the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551135">FwpsAllocateNetBufferAndNetBufferList0</a>  function.</p>
+<p>The <b>FwpsInjectvSwitchEthernetIngressAsync0</b> (was <b>FwpsInjectvSwitchIngressAsync0</b>) function reinjects a previously absorbed virtual switch packet (unmodified) back to the virtual switch ingress data path where it was intercepted. This function can also inject a packet created with  the <a href="..\fwpsk\nf-fwpsk-fwpsallocatenetbufferandnetbufferlist0.md">FwpsAllocateNetBufferAndNetBufferList0</a>  function.</p>
 
 
 ## -syntax
@@ -66,7 +66,7 @@ NTSTATUS NTAPI FwpsInjectvSwitchEthernetIngressAsync0(
 ### -param <i>injectionHandle</i> [in]
 
 <dd>
-<p>An injection handle that was previously created by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551180">FwpsInjectionHandleCreate0</a> function with the <i>flags</i> parameter set to <b>FWPS_INJECTION_TYPE_VSWITCH</b>.
+<p>An injection handle that was previously created by a call to the <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function with the <i>flags</i> parameter set to <b>FWPS_INJECTION_TYPE_VSWITCH</b>.
 
 
 The <i>addressFamily</i> parameter is not used and should be set to <b>AF_UNSPEC</b>.
@@ -76,7 +76,7 @@ The <i>addressFamily</i> parameter is not used and should be set to <b>AF_UNSPEC
 ### -param <i>injectionContext</i> [in, optional]
 
 <dd>
-<p>An optional handle to the injection context that can be  retrieved with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551202">FwpsQueryPacketInjectionState0</a> function.</p>
+<p>An optional handle to the injection context that can be  retrieved with the <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a> function.</p>
 </dd>
 
 ### -param <i>flags</i> [in]
@@ -95,8 +95,8 @@ The <i>addressFamily</i> parameter is not used and should be set to <b>AF_UNSPEC
 
 <dd>
 <p>The virtual  switch identifier that the filtering engine passed in the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552401">FWPS_INCOMING_VALUES0</a> structure to the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function. This is the  <b>GUID</b> of the virtual switch that is provided in an xxx_VSWITCH_ID field. </p>
+     <a href="netvista.fwps_incoming_values0">FWPS_INCOMING_VALUES0</a> structure to the callout driver's 
+     <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function. This is the  <b>GUID</b> of the virtual switch that is provided in an xxx_VSWITCH_ID field. </p>
 </dd>
 
 ### -param <i>vSwitchSourcePortId</i> [in]
@@ -114,7 +114,7 @@ The <i>addressFamily</i> parameter is not used and should be set to <b>AF_UNSPEC
 ### -param <i>netBufferLists</i> 
 
 <dd>
-<p>A chain of <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures to be injected into the virtual switch egress data path.</p>
+<p>A chain of <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures to be injected into the virtual switch egress data path.</p>
 </dd>
 
 ### -param <i>completionFn</i> [in]
@@ -124,7 +124,7 @@ The <i>addressFamily</i> parameter is not used and should be set to <b>AF_UNSPEC
      <a href="..\fwpsk\nc-fwpsk-fwps-inject-complete0.md">completionFn</a> callout function that is provided by
      the callout driver. The filter engine calls this function after the packet data, at the 
      <i>netBufferLists</i> parameter, has been injected into the virtual switch egress data path. The 
-     <i>completionFn</i> function will be called once for each <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> in the chain. <i>completionFn</i> must be specified when injecting cloned or created <b>NET_BUFFER_LIST</b> structures. This parameter can be NULL when injecting original unaltered <b>NET_BUFFER_LIST</b> structures that were received from the filter engine. </p>
+     <i>completionFn</i> function will be called once for each <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> in the chain. <i>completionFn</i> must be specified when injecting cloned or created <b>NET_BUFFER_LIST</b> structures. This parameter can be NULL when injecting original unaltered <b>NET_BUFFER_LIST</b> structures that were received from the filter engine. </p>
 </dd>
 
 ### -param <i>completionContext</i> [in, optional]
@@ -140,7 +140,7 @@ The <i>addressFamily</i> parameter is not used and should be set to <b>AF_UNSPEC
 <p>The 
      <b>FwpsInjectvSwitchEthernetIngressAsync0</b> function returns one of the following <b>NTSTATUS</b> codes.</p><dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl><p>The virtual switch <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> chain was successfully injected.</p><dl>
+</dl><p>The virtual switch <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> chain was successfully injected.</p><dl>
 <dt><b>Other status codes</b></dt>
 </dl><p>An error occurred.</p>
 
@@ -149,11 +149,7 @@ The <i>addressFamily</i> parameter is not used and should be set to <b>AF_UNSPEC
 ## -remarks
 <p>
 
-When a callout injects packets with <b>FwpsInjectvSwitchEthernetIngressAsync0</b>, the injected packets could be classified again if the packets match the same filter as they were originally classified. Therefore, like callouts at IP layers, virtual switch callouts must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551202">FwpsQueryPacketInjectionState0</a> function to protect against infinite packet inspections.</p>
-
-<p>
-
-When a callout injects packets with <b>FwpsInjectvSwitchEthernetIngressAsync0</b>, the injected packets could be classified again if the packets match the same filter as they were originally classified. Therefore, like callouts at IP layers, virtual switch callouts must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551202">FwpsQueryPacketInjectionState0</a> function to protect against infinite packet inspections.</p>
+When a callout injects packets with <b>FwpsInjectvSwitchEthernetIngressAsync0</b>, the injected packets could be classified again if the packets match the same filter as they were originally classified. Therefore, like callouts at IP layers, virtual switch callouts must call the <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a> function to protect against infinite packet inspections.</p>
 
 ## -requirements
 <table>
@@ -211,21 +207,21 @@ When a callout injects packets with <b>FwpsInjectvSwitchEthernetIngressAsync0</b
 <a href="..\fwpsk\nc-fwpsk-fwps-inject-complete0.md">completionFn</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552401">FWPS_INCOMING_VALUES0</a>
+<a href="netvista.fwps_incoming_values0">FWPS_INCOMING_VALUES0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551135">FwpsAllocateNetBufferAndNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsallocatenetbufferandnetbufferlist0.md">FwpsAllocateNetBufferAndNetBufferList0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551180">FwpsInjectionHandleCreate0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551202">FwpsQueryPacketInjectionState0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectvSwitchEthernetIngressAsync0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectvSwitchEthernetIngressAsync0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

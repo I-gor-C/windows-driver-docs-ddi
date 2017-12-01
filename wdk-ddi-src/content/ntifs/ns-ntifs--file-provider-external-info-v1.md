@@ -109,7 +109,7 @@ typedef struct _FILE_PROVIDER_EXTERNAL_INFO_V1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426731">FILE_PROVIDER_EXTERNAL_INFO_V0</a>
+<a href="..\ntifs\ns-ntifs--file-provider-external-info-v0.md">FILE_PROVIDER_EXTERNAL_INFO_V0</a>
 </dt>
 </dl>
 <p> </p>

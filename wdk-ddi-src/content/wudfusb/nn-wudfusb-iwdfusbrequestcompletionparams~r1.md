@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbrequestcompletionparams.htm
 old-project: wdf
 ms.assetid: 50a0c8c9-06c6-48c9-a799-0949cf415f6e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFUsbTargetPipe2, ConfigureContinuousReader, IWDFUsbTargetPipe2::ConfigureContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUsbRequestCompletionParams</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560292">IWDFRequestCompletionParams</a>. <b>IWDFUsbRequestCompletionParams</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUsbRequestCompletionParams</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a>. <b>IWDFUsbRequestCompletionParams</b> also has these types of members:</p>
 
 <p>The <b>IWDFUsbRequestCompletionParams</b> interface has these methods.</p>
 
@@ -67,7 +67,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560348">IWDFUsbRequestCompletionParams::GetCompletedUsbRequestType</a>
+<a href="wdf.iwdfusbrequestcompletionparams_getcompletedusbrequesttype">IWDFUsbRequestCompletionParams::GetCompletedUsbRequestType</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbrequestcompletionparams_getcompletedusbrequesttype">GetCompletedUsbRequestType</a> method retrieves the type of operation that the request to be completed contains.</p>
@@ -75,7 +75,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560351">IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters</a>
+<a href="wdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters">IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters">GetDeviceControlTransferParameters</a> method retrieves parameters that are associated with the completion of a device I/O control request.</p>
@@ -83,7 +83,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560352">IWDFUsbRequestCompletionParams::GetPipeReadParameters</a>
+<a href="wdf.iwdfusbrequestcompletionparams_getpipereadparameters">IWDFUsbRequestCompletionParams::GetPipeReadParameters</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbrequestcompletionparams_getpipereadparameters">GetPipeReadParameters</a> method retrieves parameters that are associated with the completion of a read request.</p>
@@ -91,7 +91,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560356">IWDFUsbRequestCompletionParams::GetPipeWriteParameters</a>
+<a href="wdf.iwdfusbrequestcompletionparams_getpipewriteparameters">IWDFUsbRequestCompletionParams::GetPipeWriteParameters</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbrequestcompletionparams_getpipewriteparameters">GetPipeWriteParameters</a> method retrieves parameters that are associated with the completion of a write request.</p>

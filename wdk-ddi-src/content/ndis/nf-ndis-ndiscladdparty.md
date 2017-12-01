@@ -7,7 +7,7 @@ old-location: netvista\ndiscladdparty.htm
 old-project: netvista
 ms.assetid: e48357b2-52dc-48af-aeb1-8d84ea107579
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisClAddParty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisClAddParty (NDIS 5.1)) in
-   Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisClAddParty (NDIS 5.1)) in
-   Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClAddParty (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClAddParty (NDIS 5.1)) in   Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -65,7 +61,7 @@ NDIS_STATUS NdisClAddParty(
 
 <dd>
 <p>Pointer to the VC handle returned by 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a>.</p>
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>.</p>
 </dd>
 
 ### -param <i>ProtocolPartyContext</i> [in]
@@ -101,7 +97,7 @@ NDIS_STATUS NdisClAddParty(
 ## -remarks
 <p>Before it calls 
     <b>NdisClAddParty</b>, a client must set up a multipoint connection on its VC with 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a>, as well as allocating and
+    <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>, as well as allocating and
     initializing its context area for the party to be added. Clients commonly pass a pointer to such a
     context area as the 
     <i>ProtocolPartyContext</i> and a pointer to a variable within that context area as the 
@@ -116,69 +112,8 @@ NDIS_STATUS NdisClAddParty(
     NDIS_STATUS_PENDING if it attempts to satisfy this request. If its attempt is rejected on the remote
     endpoint or by the underlying miniport driver, the call manager returns a final error status, such as
     NDIS_STATUS_FAILURE, when it calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561651">NdisCmAddPartyComplete</a> or 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562798">NdisMCmAddPartyComplete</a>. The
-    client's 
-    <a href="..\ndis\nc-ndis-protocol-cl-add-party-complete.md">
-    ProtocolClAddPartyComplete</a> function should check the input 
-    <i>Status</i> argument for NDIS_STATUS_SUCCESS before proceeding further.</p>
-
-<p>The underlying network medium determines whether a client can specify per-party traffic parameters on
-    a multipoint VC.</p>
-
-<p>If the underlying network medium does not support per-party traffic parameters on multipoint VCs, a
-    call manager can do one of the following whenever a client attempts to add a party with a specification
-    at 
-    <i>CallParameters</i> that does not match the already established traffic parameters for that VC:</p>
-
-<p>Reject the request to add a new party.</p>
-
-<p>Reset the traffic parameters to those already established for the multipoint VC when it successfully
-      adds the party on that VC.</p>
-
-<p>Change the traffic parameters for every party already on the VC when it successfully adds the new
-      party.</p>
-
-<p>If the add-party operation succeeds, the variable at 
-    <i>NdisPartyHandle</i> has been set by NDIS to a valid handle shared among NDIS, the client, and the call
-    manager. The client must treat this NDIS-supplied handle as an opaque variable to be passed, unmodified
-    and uninterpreted, in subsequent calls to 
-    <b>NdisCl/Co<i>Xxx</i></b> functions concerning the newly added party.</p>
-
-<p>In turn, NDIS passes the client-supplied 
-    <i>ProtocolPartyContext</i> handle in subsequent calls to the client's ProtocolCl<i>Xxx</i> functions that concern this newly added party, including the call to 
-    <a href="..\ndis\nc-ndis-protocol-cl-add-party-complete.md">
-    ProtocolClAddPartyComplete</a>.</p>
-
-<p>Whether a multipoint call permits transfers in both directions and/or per-party transfers with
-    per-party traffic parameters depends on the medium of the underlying miniport driver to which the client
-    is bound. The 
-    <i>NdisPartyHandle</i> represents only the specific party added by a successful call to 
-    <b>NdisClAddParty</b>, rather than the multipoint VC. Consequently, the client can use its 
-    <i>ProtocolPartyContext</i> area only for subsequent party-specific call-management requests. For data
-    transfers over network media that do not support per-party transfers or traffic parameters, the client
-    must use the 
-    <i>NdisVcHandle</i> instead.</p>
-
-<p>Before it calls 
-    <b>NdisClAddParty</b>, a client must set up a multipoint connection on its VC with 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a>, as well as allocating and
-    initializing its context area for the party to be added. Clients commonly pass a pointer to such a
-    context area as the 
-    <i>ProtocolPartyContext</i> and a pointer to a variable within that context area as the 
-    <i>NdisPartyHandle</i> parameters when they call 
-    <b>NdisClAddParty</b>.</p>
-
-<p>A call to 
-    <b>NdisClAddParty</b> causes NDIS to forward this request to the 
-    <a href="..\ndis\nc-ndis-protocol-cm-add-party.md">ProtocolCmAddParty</a> function of the
-    call manager with which the client shares the given 
-    <i>NdisVcHandle</i> . The call manager either returns an error status immediately or, more commonly,
-    NDIS_STATUS_PENDING if it attempts to satisfy this request. If its attempt is rejected on the remote
-    endpoint or by the underlying miniport driver, the call manager returns a final error status, such as
-    NDIS_STATUS_FAILURE, when it calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561651">NdisCmAddPartyComplete</a> or 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562798">NdisMCmAddPartyComplete</a>. The
+    <a href="..\ndis\nf-ndis-ndiscmaddpartycomplete.md">NdisCmAddPartyComplete</a> or 
+    <a href="..\ndis\nf-ndis-ndismcmaddpartycomplete.md">NdisMCmAddPartyComplete</a>. The
     client's 
     <a href="..\ndis\nc-ndis-protocol-cl-add-party-complete.md">
     ProtocolClAddPartyComplete</a> function should check the input 
@@ -278,7 +213,7 @@ NDIS_STATUS NdisClAddParty(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547996">Irql_Protocol_Driver_Function</a>
+<a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -293,28 +228,28 @@ NDIS_STATUS NdisClAddParty(
    NdisAllocateFromNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561627">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561629">NdisClDropParty</a>
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561651">NdisCmAddPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmaddpartycomplete.md">NdisCmAddPartyComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561711">NdisCoOidRequest</a>
+<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561716">NdisCoOidRequestComplete</a>
+<a href="..\ndis\nf-ndis-ndiscooidrequestcomplete.md">NdisCoOidRequestComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562798">NdisMCmAddPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmaddpartycomplete.md">NdisMCmAddPartyComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cl-add-party-complete.md">ProtocolClAddPartyComplete</a>
@@ -325,4 +260,4 @@ NDIS_STATUS NdisClAddParty(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClAddParty function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClAddParty function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

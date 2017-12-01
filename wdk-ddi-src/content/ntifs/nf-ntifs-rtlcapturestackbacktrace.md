@@ -28,10 +28,8 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.lib; 
-OneCoreUAP.lib on Windows 10
-req.dll: NtDll.dll (user mode); 
-NtosKrnl.exe (kernel mode)
+req.lib: NtosKrnl.lib; OneCoreUAP.lib on Windows 10
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql: <= DISPATCH_LEVEL
 req.iface: 
 ---

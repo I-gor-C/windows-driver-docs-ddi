@@ -90,13 +90,13 @@ typedef struct _SRIOV_DEVICE_INTERFACE_STANDARD {
 ### -field <b>InterfaceReference</b>
 
 <dd>
-<p>Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547833">InterfaceReference</a>. </p>
+<p>Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="kernel.interfacereference">InterfaceReference</a>. </p>
 </dd>
 
 ### -field <b>InterfaceDereference</b>
 
 <dd>
-<p>Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547829">InterfaceDereference</a>. </p>
+<p>Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="kernel.interfacedereference">InterfaceDereference</a>. </p>
 </dd>
 
 ### -field <b>ReadVfConfig</b>
@@ -186,10 +186,10 @@ typedef struct _SRIOV_DEVICE_INTERFACE_STANDARD {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545870">WdfDeviceAddQueryInterface</a>
+<a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552443">WDF_QUERY_INTERFACE_CONFIG_INIT</a>
+<a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdf-query-interface-config-init.md">WDF_QUERY_INTERFACE_CONFIG_INIT</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\wsk_provider_stream_dispatch.htm
 old-project: netvista
 ms.assetid: A10B901E-9987-40E9-976B-4CD9455E0AEE
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WSK_PROVIDER_STREAM_DISPATCH, WSK_PROVIDER_STREAM_DISPATCH, *PWSK_PROVIDER_STREAM_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,21 +82,21 @@ typedef struct _WSK_PROVIDER_STREAM_DISPATCH {
 
 <dd>
 <p>A pointer to the WSK subsystem's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571121">WskBind</a> function for the socket.</p>
+     <a href="..\wsk\nc-wsk-pfn-wsk-bind.md">WskBind</a> function for the socket.</p>
 </dd>
 
 ### -field <b>WskAccept</b>
 
 <dd>
 <p>A pointer to the WSK subsystem's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571109">WskAccept</a> function for the socket.</p>
+     <a href="..\wsk\nc-wsk-pfn-wsk-accept.md">WskAccept</a> function for the socket.</p>
 </dd>
 
 ### -field <b>WskConnect</b>
 
 <dd>
 <p>A pointer to the WSK subsystem's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a> function for the socket.</p>
+     <a href="..\wsk\nc-wsk-pfn-wsk-connect.md">WskConnect</a> function for the socket.</p>
 </dd>
 
 ### -field <b>WskListen</b>
@@ -110,21 +110,21 @@ typedef struct _WSK_PROVIDER_STREAM_DISPATCH {
 
 <dd>
 <p>A pointer to the WSK subsystem's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571146">WskSend</a> function for the socket.</p>
+     <a href="..\wsk\nc-wsk-pfn-wsk-send.md">WskSend</a> function for the socket.</p>
 </dd>
 
 ### -field <b>WskReceive</b>
 
 <dd>
 <p>A pointer to the WSK subsystem's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571139">WskReceive</a> function for the socket.</p>
+     <a href="..\wsk\nc-wsk-pfn-wsk-receive.md">WskReceive</a> function for the socket.</p>
 </dd>
 
 ### -field <b>WskDisconnect</b>
 
 <dd>
 <p>A pointer to the WSK subsystem's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571129">WskDisconnect</a> function for the
+     <a href="..\wsk\nc-wsk-pfn-wsk-disconnect.md">WskDisconnect</a> function for the
      socket.</p>
 </dd>
 
@@ -132,14 +132,14 @@ typedef struct _WSK_PROVIDER_STREAM_DISPATCH {
 
 <dd>
 <p>A pointer to the WSK subsystem's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571144">WskRelease</a> function for the socket.</p>
+     <a href="..\wsk\nc-wsk-pfn-wsk-release-data-indication-list.md">WskRelease</a> function for the socket.</p>
 </dd>
 
 ### -field <b>WskGetLocalAddress</b>
 
 <dd>
 <p>A pointer to the WSK subsystem's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571133">WskGetLocalAddress</a> function for the
+     <a href="..\wsk\nc-wsk-pfn-wsk-get-local-address.md">WskGetLocalAddress</a> function for the
      socket.</p>
 </dd>
 
@@ -147,7 +147,7 @@ typedef struct _WSK_PROVIDER_STREAM_DISPATCH {
 
 <dd>
 <p>A pointer to the WSK subsystem's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571135">WskGetRemoteAddress</a> function for the
+     <a href="..\wsk\nc-wsk-pfn-wsk-get-remote-address.md">WskGetRemoteAddress</a> function for the
      socket.</p>
 </dd>
 
@@ -171,10 +171,10 @@ typedef struct _WSK_PROVIDER_STREAM_DISPATCH {
 
 <p>A WSK application receives a pointer to a WSK_PROVIDER_STREAM_DISPATCH structure when the WSK
     application calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a> function to create a stream socket.
+    <a href="..\wsk\nc-wsk-pfn-wsk-socket.md">WskSocket</a> function to create a stream socket.
     The pointer is contained in the 
     <b>Dispatch</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a> structure that is received from the
+    <a href="..\wsk\ns-wsk--wsk-socket.md">WSK_SOCKET</a> structure that is received from the
     WSK subsystem.</p>
 
 ## -requirements
@@ -205,16 +205,16 @@ typedef struct _WSK_PROVIDER_STREAM_DISPATCH {
 <a href="..\wsk\ns-wsk--wsk-client-stream-dispatch.md">WSK_CLIENT_STREAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk--wsk-socket.md">WSK_SOCKET</a>
 </dt>
 <dt>
 <a href="..\wsk\ns-wsk--wsk-provider-basic-dispatch.md">
     WSK_PROVIDER_BASIC_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-socket.md">WskSocket</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_STREAM_DISPATCH structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_STREAM_DISPATCH structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

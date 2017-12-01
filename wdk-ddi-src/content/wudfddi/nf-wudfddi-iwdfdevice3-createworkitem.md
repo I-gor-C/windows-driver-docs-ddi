@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice3_createworkitem.htm
 old-project: wdf
 ms.assetid: B34EABF4-C659-4DB4-AEC6-94F544D79221
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFDevice3, CreateWorkItem, IWDFDevice3::CreateWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ HRESULT CreateWorkItem(
 ### -param <i>pConfig</i> [in]
 
 <dd>
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh464094">WUDF_WORKITEM_CONFIG</a> structure that the driver must have already initialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh464097">WUDF_WORKITEM_CONFIG_INIT</a>.</p>
+<p>A pointer to a caller-allocated <a href="..\wudfworkitem\ns-wudfworkitem--wudf-workitem-config.md">WUDF_WORKITEM_CONFIG</a> structure that the driver must have already initialized by calling <a href="..\wudfworkitem\nf-wudfworkitem-wudf-workitem-config-init.md">WUDF_WORKITEM_CONFIG_INIT</a>.</p>
 </dd>
 
 ### -param <i>pParentObject</i> [in, optional]
@@ -73,7 +73,7 @@ HRESULT CreateWorkItem(
 ### -param <i>ppWorkItem</i> [out]
 
 <dd>
-<p>A pointer to a buffer that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406734">IWDFWorkItem</a> interface for the new WorkItem object.</p>
+<p>A pointer to a buffer that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a> interface for the new WorkItem object.</p>
 </dd>
 </dl>
 
@@ -81,11 +81,7 @@ HRESULT CreateWorkItem(
 <p>The method returns S_OK if the operation succeeds. Otherwise, this method returns one of the error codes that are defined in Winerror.h.</p>
 
 ## -remarks
-<p>If you specify a parent object, the framework automatically deletes the work-item when the parent object is deleted. Alternatively, the driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a> to delete a work-item. The driver must not delete a work-item in its <a href="..\wudfworkitem\nc-wudfworkitem-wudf-workitem-function.md">OnWorkItem</a> callback function.</p>
-
-<p>For more information, see <a href="wdf.using_workitems">Using Work Items</a>.</p>
-
-<p>If you specify a parent object, the framework automatically deletes the work-item when the parent object is deleted. Alternatively, the driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a> to delete a work-item. The driver must not delete a work-item in its <a href="..\wudfworkitem\nc-wudfworkitem-wudf-workitem-function.md">OnWorkItem</a> callback function.</p>
+<p>If you specify a parent object, the framework automatically deletes the work-item when the parent object is deleted. Alternatively, the driver can call <a href="wdf.iwdfobject_deletewdfobject">IWDFObject::DeleteWdfObject</a> to delete a work-item. The driver must not delete a work-item in its <a href="..\wudfworkitem\nc-wudfworkitem-wudf-workitem-function.md">OnWorkItem</a> callback function.</p>
 
 <p>For more information, see <a href="wdf.using_workitems">Using Work Items</a>.</p>
 
@@ -142,16 +138,16 @@ HRESULT CreateWorkItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406734">IWDFWorkItem</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464094">WUDF_WORKITEM_CONFIG</a>
+<a href="..\wudfworkitem\ns-wudfworkitem--wudf-workitem-config.md">WUDF_WORKITEM_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464097">WUDF_WORKITEM_CONFIG_INIT</a>
+<a href="..\wudfworkitem\nf-wudfworkitem-wudf-workitem-config-init.md">WUDF_WORKITEM_CONFIG_INIT</a>
 </dt>
 <dt>
 <a href="..\wudfworkitem\nc-wudfworkitem-wudf-workitem-function.md">OnWorkItem</a>
@@ -159,4 +155,4 @@ HRESULT CreateWorkItem(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice3::CreateWorkItem method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice3::CreateWorkItem method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

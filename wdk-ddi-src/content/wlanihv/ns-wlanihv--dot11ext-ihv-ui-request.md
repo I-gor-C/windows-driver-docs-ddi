@@ -7,7 +7,7 @@ old-location: netvista\dot11ext_ihv_ui_request.htm
 old-project: netvista
 ms.assetid: 028e3445-320a-41c8-9577-219f9fbabe40
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11EXT_IHV_UI_REQUEST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -99,7 +98,7 @@ typedef struct _DOT11EXT_IHV_UI_REQUEST {
 <p>The IHV Extensions DLL can issue requests to the IHV UI extensions DLL to interact with the user for
     input to network UI extensions defined by the IHV. The IHV Extensions DLL initiates these requests
     through calls to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547567">Dot11ExtSendUIRequest</a> or 
+    <a href="..\wlanihv\nc-wlanihv-dot11ext-send-ui-request.md">Dot11ExtSendUIRequest</a> or 
     <a href="..\wlanihv\nc-wlanihv-dot11extihv-query-ui-request.md">
     Dot11ExtIhvQueryUIRequest</a> functions.</p>
 
@@ -140,9 +139,9 @@ typedef struct _DOT11EXT_IHV_UI_REQUEST {
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-query-ui-request.md">Dot11ExtIhvQueryUIRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547567">Dot11ExtSendUIRequest</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-send-ui-request.md">Dot11ExtSendUIRequest</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_UI_REQUEST structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_UI_REQUEST structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

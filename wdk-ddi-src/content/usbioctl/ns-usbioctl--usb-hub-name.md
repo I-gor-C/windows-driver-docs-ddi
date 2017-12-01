@@ -89,10 +89,10 @@ typedef struct _USB_HUB_NAME {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537249">IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-get-controller-name.md">IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

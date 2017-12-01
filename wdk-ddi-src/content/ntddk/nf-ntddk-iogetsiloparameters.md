@@ -62,7 +62,7 @@ PIO_FOEXT_SILO_PARAMETERS IoGetSiloParameters(
 </dl>
 
 ## -returns
-<p>If <b>null</b>, the file is not in a container context. Otherwise, a non-null value of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt734263">IO_FOEXT_SILO_PARAMETERS</a> indicates that the file is within a Container context.</p>
+<p>If <b>null</b>, the file is not in a container context. Otherwise, a non-null value of type <a href="..\ntddk\ns-ntddk--io-foext-silo-parameters.md">IO_FOEXT_SILO_PARAMETERS</a> indicates that the file is within a Container context.</p>
 
 ## -remarks
 

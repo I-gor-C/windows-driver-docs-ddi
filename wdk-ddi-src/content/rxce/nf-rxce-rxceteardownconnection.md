@@ -74,8 +74,6 @@ NTSTATUS RxCeTearDownConnection(
 ## -remarks
 <p>When <b>RxCeTearDownConnection</b> is successful, the data members in the RXCE_CONNECTION structure pointed to by the <i>pConnection</i> parameter will be properly uninitialized, and allocated memory for connection information and handler will be freed. </p>
 
-<p>When <b>RxCeTearDownConnection</b> is successful, the data members in the RXCE_CONNECTION structure pointed to by the <i>pConnection</i> parameter will be properly uninitialized, and allocated memory for connection information and handler will be freed. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -111,7 +109,7 @@ NTSTATUS RxCeTearDownConnection(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553417">RxCeBuildConnection</a>
+<a href="..\rxce\nf-rxce-rxcebuildconnection.md">RxCeBuildConnection</a>
 </dt>
 </dl>
 <p> </p>

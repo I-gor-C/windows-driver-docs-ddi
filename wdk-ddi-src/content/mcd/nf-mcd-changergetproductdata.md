@@ -78,15 +78,7 @@ NTSTATUS ChangerGetProductData(
 
 <p>The changer class driver checks the output buffer length in the I/O stack location before calling <b>ChangerGetProductData</b>. If output buffer length is smaller than <b>sizeof</b>(CHANGER_PRODUCT_DATA) then the changer class driver returns with a value of STATUS_INFO_LENGTH_MISMATCH</p>
 
-<p><b>ChangerGetProductData</b> fills in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551475">CHANGER_PRODUCT_DATA</a> structure at <i>Irp</i><b>-&gt;AssociatedIrp.SystemBuffer</b> before returning to the changer class driver. If the miniclass driver cached inquiry data in the changer's device extension before returning from <b>ChangerInitialize</b>, all members except <b>DeviceType</b> can be filled in from this data. </p>
-
-<p>This routine is required.</p>
-
-<p><b>ChangerGetProductData</b> returns product data for a changer.</p>
-
-<p>The changer class driver checks the output buffer length in the I/O stack location before calling <b>ChangerGetProductData</b>. If output buffer length is smaller than <b>sizeof</b>(CHANGER_PRODUCT_DATA) then the changer class driver returns with a value of STATUS_INFO_LENGTH_MISMATCH</p>
-
-<p><b>ChangerGetProductData</b> fills in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551475">CHANGER_PRODUCT_DATA</a> structure at <i>Irp</i><b>-&gt;AssociatedIrp.SystemBuffer</b> before returning to the changer class driver. If the miniclass driver cached inquiry data in the changer's device extension before returning from <b>ChangerInitialize</b>, all members except <b>DeviceType</b> can be filled in from this data. </p>
+<p><b>ChangerGetProductData</b> fills in a <a href="..\ntddchgr\ns-ntddchgr--changer-product-data.md">CHANGER_PRODUCT_DATA</a> structure at <i>Irp</i><b>-&gt;AssociatedIrp.SystemBuffer</b> before returning to the changer class driver. If the miniclass driver cached inquiry data in the changer's device extension before returning from <b>ChangerInitialize</b>, all members except <b>DeviceType</b> can be filled in from this data. </p>
 
 ## -requirements
 <table>
@@ -123,10 +115,10 @@ NTSTATUS ChangerGetProductData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551431">ChangerInitialize</a>
+<a href="..\mcd\nf-mcd-changerinitialize.md">ChangerInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551475">CHANGER_PRODUCT_DATA</a>
+<a href="..\ntddchgr\ns-ntddchgr--changer-product-data.md">CHANGER_PRODUCT_DATA</a>
 </dt>
 </dl>
 <p> </p>

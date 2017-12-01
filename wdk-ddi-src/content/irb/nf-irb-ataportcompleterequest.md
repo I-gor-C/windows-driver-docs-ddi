@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -65,7 +64,7 @@ VOID AtaPortCompleteRequest(
 ### -param <i>Irb</i> [in]
 
 <dd>
-<p>A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) to be completed.</p>
+<p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) to be completed.</p>
 </dd>
 </dl>
 
@@ -73,8 +72,6 @@ VOID AtaPortCompleteRequest(
 <p>None </p>
 
 ## -remarks
-<p>The miniport driver uses this routine to indicate to the port driver that the IRB has completed. The miniport driver must not touch the IRB after this call. It is an error to complete an IRB with status IRB_STATUS_PENDING.</p>
-
 <p>The miniport driver uses this routine to indicate to the port driver that the IRB has completed. The miniport driver must not touch the IRB after this call. It is an error to complete an IRB with status IRB_STATUS_PENDING.</p>
 
 ## -requirements
@@ -115,7 +112,7 @@ VOID AtaPortCompleteRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a>
+<a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

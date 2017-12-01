@@ -85,7 +85,7 @@ typedef struct _D3DDDIARG_LOCK {
 ### -field <b>Area</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the subrectangle of the surface to lock.</p>
+<p>[in] A <a href="display.rect">RECT</a> structure that describes the subrectangle of the surface to lock.</p>
 </dd>
 
 ### -field <b>Box</b>
@@ -115,7 +115,7 @@ typedef struct _D3DDDIARG_LOCK {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544591">D3DDDI_LOCKFLAGS</a> structure that indicates, in bit-field flags, how to lock the resource. Note that some flags are mutually exclusive with other flags. For more information, see the following Remarks section.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-lockflags.md">D3DDDI_LOCKFLAGS</a> structure that indicates, in bit-field flags, how to lock the resource. Note that some flags are mutually exclusive with other flags. For more information, see the following Remarks section.</p>
 </dd>
 </dl>
 
@@ -155,7 +155,7 @@ typedef struct _D3DDDIARG_LOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544591">D3DDDI_LOCKFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-lockflags.md">D3DDDI_LOCKFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lock.md">Lock</a>

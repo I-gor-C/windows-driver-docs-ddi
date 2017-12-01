@@ -77,8 +77,6 @@ __checkReturn HRESULT APIENTRY SetVertexShaderDecl(
 ## -remarks
 <p>After setting the vertex shader declaration, all of the drawing operations use that declaration until another declaration is selected.</p>
 
-<p>After setting the vertex shader declaration, all of the drawing operations use that declaration until another declaration is selected.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -114,7 +112,7 @@ __checkReturn HRESULT APIENTRY SetVertexShaderDecl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

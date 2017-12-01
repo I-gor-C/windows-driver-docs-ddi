@@ -103,7 +103,7 @@ typedef struct _D3DKMT_INVALIDATEACTIVEVIDPN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547023">D3DKMTInvalidateActiveVidPn</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtinvalidateactivevidpn.md">D3DKMTInvalidateActiveVidPn</a>
 </dt>
 </dl>
 <p> </p>

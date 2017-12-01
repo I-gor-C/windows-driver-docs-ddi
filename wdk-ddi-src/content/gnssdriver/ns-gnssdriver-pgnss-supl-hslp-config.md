@@ -7,7 +7,7 @@ old-location: sensors\gnss_supl_hslp_config.htm
 old-project: sensors
 ms.assetid: 08CCC4A8-2D85-436D-B18E-77C91A24F59C
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_SUPL_HSLP_CONFIG, GNSS_SUPL_HSLP_CONFIG, *PGNSS_SUPL_HSLP_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: debugger\translatevirtualtophysical.htm
 old-project: debugger
 ms.assetid: 803f766a-e02f-4b9c-bfe0-6197e0f2855c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: TranslateVirtualToPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,8 +73,6 @@ __inline BOOL TranslateVirtualToPhysical(
 <p>If the function succeeds, the return value is <b>TRUE</b>; otherwise, it is <b>FALSE</b>.</p>
 
 ## -remarks
-<p>This function is only available in kernel-mode debugging.</p>
-
 <p>This function is only available in kernel-mode debugging.</p>
 
 ## -requirements

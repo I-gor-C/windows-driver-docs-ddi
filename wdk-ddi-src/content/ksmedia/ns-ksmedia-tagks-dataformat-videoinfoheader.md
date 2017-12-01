@@ -7,7 +7,7 @@ old-location: stream\ks_dataformat_videoinfoheader.htm
 old-project: stream
 ms.assetid: 60a04887-d696-42b2-95af-cce1c0bc102b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagKS_DATAFORMAT_VIDEOINFOHEADER, KS_DATAFORMAT_VIDEOINFOHEADER, *PKS_DATAFORMAT_VIDEOINFOHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ typedef struct tagKS_DATAFORMAT_VIDEOINFOHEADER {
 ## -remarks
 <p>This format is used for most capture output streams.</p>
 
-<p>Minidrivers that must specify a data format that contains settings for bob or weave must use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567335">KS_DATAFORMAT_VIDEOINFOHEADER2</a> structure.</p>
+<p>Minidrivers that must specify a data format that contains settings for bob or weave must use the <a href="stream.ks_dataformat_videoinfoheader2">KS_DATAFORMAT_VIDEOINFOHEADER2</a> structure.</p>
 
 ## -requirements
 <table>
@@ -90,15 +90,15 @@ typedef struct tagKS_DATAFORMAT_VIDEOINFOHEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567335">KS_DATAFORMAT_VIDEOINFOHEADER2</a>
+<a href="stream.ks_dataformat_videoinfoheader2">KS_DATAFORMAT_VIDEOINFOHEADER2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>
+<a href="stream.ksdataformat">KSDATAFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a>
+<a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_DATAFORMAT_VIDEOINFOHEADER structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_DATAFORMAT_VIDEOINFOHEADER structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

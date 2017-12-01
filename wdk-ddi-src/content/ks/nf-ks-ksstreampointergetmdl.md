@@ -7,7 +7,7 @@ old-location: stream\ksstreampointergetmdl.htm
 old-project: stream
 ms.assetid: 05d37fbd-9bdc-478a-8772-6f63d1363c1c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsStreamPointerGetMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ PMDL KsStreamPointerGetMdl(
 ### -param <i>StreamPointer</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a> structure that references the frame for which to return the associated MDL.</p>
+<p>A pointer to the <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure that references the frame for which to return the associated MDL.</p>
 </dd>
 </dl>
 
@@ -65,10 +65,6 @@ PMDL KsStreamPointerGetMdl(
 <p>Returns either a pointer to the <a href="wdkgloss.m#wdkgloss.memory_descriptor_list__mdl_#wdkgloss.memory_descriptor_list__mdl_"><i>memory descriptor list (MDL)</i></a> describing the frame referenced by <i>StreamPointer</i> or returns <b>NULL</b>. A <b>NULL</b> return value usually indicates that the given stream pointer was not locked at call-time.</p>
 
 ## -remarks
-<p>The stream pointer <b>must</b> be locked in order for <b>KsStreamPointerGetMdl </b>to execute successfully.</p>
-
-<p>Also see <a href="NULL">Stream Pointers</a>.</p>
-
 <p>The stream pointer <b>must</b> be locked in order for <b>KsStreamPointerGetMdl </b>to execute successfully.</p>
 
 <p>Also see <a href="NULL">Stream Pointers</a>.</p>
@@ -126,12 +122,12 @@ PMDL KsStreamPointerGetMdl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567131">KsStreamPointerGetIrp</a>
+<a href="..\ks\nf-ks-ksstreampointergetirp.md">KsStreamPointerGetIrp</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn892390">KsStreamPointerLock</a>
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerGetMdl function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerGetMdl function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

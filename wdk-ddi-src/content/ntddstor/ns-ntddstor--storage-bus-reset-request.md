@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The STORAGE_BUS_RESET_REQUEST structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560600">IOCTL_STORAGE_RESET_BUS</a> request to specify the path of the bus to be reset.</p>
+<p>The STORAGE_BUS_RESET_REQUEST structure is used in conjunction with the <a href="..\ntddstor\ni-ntddstor-ioctl-storage-reset-bus.md">IOCTL_STORAGE_RESET_BUS</a> request to specify the path of the bus to be reset.</p>
 
 
 ## -syntax
@@ -81,7 +81,7 @@ typedef struct _STORAGE_BUS_RESET_REQUEST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560600">IOCTL_STORAGE_RESET_BUS</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-reset-bus.md">IOCTL_STORAGE_RESET_BUS</a>
 </dt>
 </dl>
 <p> </p>

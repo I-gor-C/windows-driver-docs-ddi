@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The MOUNTMGR_DRIVE_LETTER_TARGET structure is used by a mount manager client with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560473">IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER</a> request to furnish a nonpersistent target device name to the mount manager. </p>
+<p>The MOUNTMGR_DRIVE_LETTER_TARGET structure is used by a mount manager client with an <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-next-drive-letter.md">IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER</a> request to furnish a nonpersistent target device name to the mount manager. </p>
 
 
 ## -syntax
@@ -90,7 +90,7 @@ typedef struct _MOUNTMGR_DRIVE_LETTER_TARGET {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560473">IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER</a>
+<a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-next-drive-letter.md">IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER</a>
 </dt>
 </dl>
 <p> </p>

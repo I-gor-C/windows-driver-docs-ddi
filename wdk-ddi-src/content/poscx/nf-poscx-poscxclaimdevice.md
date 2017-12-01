@@ -42,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p>PosCxClaimDevice is called to claim a device for exclusive use. 
 
-The caller should call <a href="https://msdn.microsoft.com/library/windows/hardware/mt593132">PosCxReleaseDevice</a> when the device is no longer needed. 
+The caller should call <a href="..\poscx\nf-poscx-poscxreleasedevice.md">PosCxReleaseDevice</a> when the device is no longer needed. 
 
       </p>
 <p>If the device is already claimed, the caller must wait until access is granted.</p>

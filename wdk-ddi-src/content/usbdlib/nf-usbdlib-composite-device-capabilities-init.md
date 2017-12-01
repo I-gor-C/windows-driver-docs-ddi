@@ -125,10 +125,10 @@ member of <b>COMPOSITE_DEVICE_CAPABILITIES</b> to 0.</p>
 <a href="..\usbdlib\ns-usbdlib--composite-device-capabilities.md">COMPOSITE_DEVICE_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450897">How to Register a Composite Device</a>
+<a href="buses.register_a_composite_driver">How to Register a Composite Device</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450898">REGISTER_COMPOSITE_DEVICE</a>
+<a href="..\usbdlib\ns-usbdlib--register-composite-device.md">REGISTER_COMPOSITE_DEVICE</a>
 </dt>
 </dl>
 <p> </p>

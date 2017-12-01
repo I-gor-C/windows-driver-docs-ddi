@@ -193,22 +193,22 @@ typedef struct _ACE_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538796">ACCESS_ALLOWED_ACE</a>
+<a href="..\ntifs\ns-ntifs--access-allowed-ace.md">ACCESS_ALLOWED_ACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538831">ACCESS_DENIED_ACE</a>
+<a href="..\ntifs\ns-ntifs--access-denied-ace.md">ACCESS_DENIED_ACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+<a href="ifsk.ace">ACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538866">ACL</a>
+<a href="..\ntifs\ns-ntifs--acl.md">ACL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556769">SYSTEM_ALARM_ACE</a>
+<a href="ifsk.system_alarm_ace">SYSTEM_ALARM_ACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556771">SYSTEM_AUDIT_ACE</a>
+<a href="..\ntifs\ns-ntifs--system-audit-ace.md">SYSTEM_AUDIT_ACE</a>
 </dt>
 </dl>
 <p> </p>

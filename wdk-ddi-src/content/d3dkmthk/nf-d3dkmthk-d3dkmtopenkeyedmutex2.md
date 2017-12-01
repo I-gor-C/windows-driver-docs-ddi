@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenKeyedMutex2(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406490">D3DKMT_OPENKEYEDMUTEX2</a> structure that describes a keyed mutex object that includes private data.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openkeyedmutex2.md">D3DKMT_OPENKEYEDMUTEX2</a> structure that describes a keyed mutex object that includes private data.</p>
 </dd>
 </dl>
 
@@ -71,16 +71,14 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenKeyedMutex2(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439405">D3DKMTOpenKeyedMutex2</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenkeyedmutex2.md">D3DKMTOpenKeyedMutex2</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
 <p>This function might also return other NTSTATUS values.</p>
 
 ## -remarks
-<p><b>D3DKMTOpenKeyedMutex2</b> behaves like the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547054">D3DKMTOpenKeyedMutex</a> function but lets the caller specify private data to associate with the keyed mutex.</p>
-
-<p><b>D3DKMTOpenKeyedMutex2</b> behaves like the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547054">D3DKMTOpenKeyedMutex</a> function but lets the caller specify private data to associate with the keyed mutex.</p>
+<p><b>D3DKMTOpenKeyedMutex2</b> behaves like the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenkeyedmutex.md">D3DKMTOpenKeyedMutex</a> function but lets the caller specify private data to associate with the keyed mutex.</p>
 
 ## -requirements
 <table>
@@ -145,10 +143,10 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenKeyedMutex2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406490">D3DKMT_OPENKEYEDMUTEX2</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openkeyedmutex2.md">D3DKMT_OPENKEYEDMUTEX2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547054">D3DKMTOpenKeyedMutex</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenkeyedmutex.md">D3DKMTOpenKeyedMutex</a>
 </dt>
 </dl>
 <p> </p>

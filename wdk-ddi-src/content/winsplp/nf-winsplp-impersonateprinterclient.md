@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>ImpersonatePrinterClient resumes impersonation of the client, completing the operation begun by <a href="https://msdn.microsoft.com/library/windows/hardware/ff561987">RevertToPrinterSelf</a>.</p>
+<p>ImpersonatePrinterClient resumes impersonation of the client, completing the operation begun by <a href="..\winsplp\nf-winsplp-reverttoprinterself.md">RevertToPrinterSelf</a>.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ BOOL ImpersonatePrinterClient(
 ### -param <i>hToken</i> [in]
 
 <dd>
-<p>Caller-supplied handle to a thread. This parameter must have been previously returned by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561987">RevertToPrinterSelf</a>.</p>
+<p>Caller-supplied handle to a thread. This parameter must have been previously returned by a call to <a href="..\winsplp\nf-winsplp-reverttoprinterself.md">RevertToPrinterSelf</a>.</p>
 </dd>
 </dl>
 
@@ -66,9 +66,7 @@ BOOL ImpersonatePrinterClient(
 <p>If the operation succeeds, the function returns <b>TRUE</b>. Otherwise the function returns <b>FALSE</b>. The caller can obtain an error code by calling GetLastError (described in the Microsoft Windows SDK documentation).</p>
 
 ## -remarks
-<p>This function must be called after a successful call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561987">RevertToPrinterSelf</a>. It resumes impersonation of the client and cleans up the thread handle.</p>
-
-<p>This function must be called after a successful call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561987">RevertToPrinterSelf</a>. It resumes impersonation of the client and cleans up the thread handle.</p>
+<p>This function must be called after a successful call to <a href="..\winsplp\nf-winsplp-reverttoprinterself.md">RevertToPrinterSelf</a>. It resumes impersonation of the client and cleans up the thread handle.</p>
 
 ## -requirements
 <table>
@@ -117,7 +115,7 @@ BOOL ImpersonatePrinterClient(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561987">RevertToPrinterSelf</a>
+<a href="..\winsplp\nf-winsplp-reverttoprinterself.md">RevertToPrinterSelf</a>
 </dt>
 </dl>
 <p> </p>

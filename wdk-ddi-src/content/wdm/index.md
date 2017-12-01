@@ -1,11 +1,11 @@
 # Wdm.h header
 
 
-This header is used by Windows kernel, Driver test tools, PCI, Installable file system. For more information, see
+This header is used by Windows kernel, Installable file system, PCI, Driver test tools. For more information, see
 - [Windows kernel](../_kernel/index.md)
-- [Driver test tools](../_devtest/index.md)
-- [PCI](../_PCI/index.md)
 - [Installable file system](../_ifsk/index.md)
+- [PCI](../_PCI/index.md)
+- [Driver test tools](../_devtest/index.md)
 
 Wdm.h contain these programming interfaces:
 
@@ -549,6 +549,7 @@ Wdm.h contain these programming interfaces:
 | [NtRecoverEnlistment function](nf-wdm-ntrecoverenlistment.md) | The ZwRecoverEnlistment routine initiates a recovery operation for the transaction that is associated with a specified enlistment. |
 | [NtRecoverResourceManager function](nf-wdm-ntrecoverresourcemanager.md) | The ZwRecoverResourceManager routine tries to recover the transaction that is associated with each enlistment of a specified resource manager object. |
 | [NtRecoverTransactionManager function](nf-wdm-ntrecovertransactionmanager.md) | The ZwRecoverTransactionManager routine reconstructs the state of the transaction manager object (including all transactions, enlistments, and resource managers) from the recovery information that is in the log stream. |
+| [NtRenameTransactionManager function](nf-wdm-ntrenametransactionmanager.md) | The NtRenameTransactionManager routine changes the identity of the transaction manager object that is stored in the CLFS log file stream contained in the log file name. |
 | [NtRollbackComplete function](nf-wdm-ntrollbackcomplete.md) | The ZwRollbackComplete routine notifies KTM that the calling resource manager has finished rolling back a transaction's data. |
 | [NtRollbackEnlistment function](nf-wdm-ntrollbackenlistment.md) | The ZwRollbackEnlistment routine rolls back the transaction that is associated with a specified enlistment. |
 | [NtRollbackTransaction function](nf-wdm-ntrollbacktransaction.md) | The ZwRollbackTransaction routine initiates a rollback operation for a specified transaction. |
@@ -940,6 +941,7 @@ Wdm.h contain these programming interfaces:
 | [GET_D3COLD_CAPABILITY callback](nc-wdm-get-d3cold-capability.md) | The GetBusDriverD3ColdSupport routine enables the driver for a device to query whether the enumerating bus driver supports the D3cold device power state. |
 | [GET_D3COLD_LAST_TRANSITION_STATUS callback](nc-wdm-get-d3cold-last-transition-status.md) | The GetLastTransitionStatus routine enables the driver for a device to query whether the most recent transition to the D3hot substate was followed by a transition to the D3cold substate. |
 | [GET_IDLE_WAKE_INFO callback](nc-wdm-get-idle-wake-info.md) | The GetIdleWakeInfo routine enables the driver for a device to discover the device power states from which the device can signal a wake event. |
+| [GET_SET_DEVICE_DATA callback](nc-wdm-get-set-device-data.md) | The GetBusData routine reads data from the device's configuration space. |
 | [GET_VIRTUAL_DEVICE_DATA callback](nc-wdm-get-virtual-device-data.md) | The GetVirtualFunctionData routine reads data from the PCI Express (PCIe) configuration space of a virtual function (VF) on a device that supports the single root I/O virtualization (SR-IOV) interface. |
 | [GET_VIRTUAL_DEVICE_LOCATION callback](nc-wdm-get-virtual-device-location.md) | The GetLocation routine returns the device location of a PCI Express (PCIe) virtual function (VF) on a PCI bus. A device that supports the single root I/O virtualization (SR-IOV) interface can expose one or more VFs on the PCI bus. |
 | [GET_VIRTUAL_DEVICE_RESOURCES callback](nc-wdm-get-virtual-device-resources.md) | The GetResources routine returns the resources that the PCI Express (PCIe) physical function (PF) requires in order to enable virtualization on a device that supports the single root I/O virtualization (SR-IOV) interface. |
@@ -976,10 +978,12 @@ Wdm.h contain these programming interfaces:
 | [PO_FX_DEVICE_POWER_REQUIRED_CALLBACK callback](nc-wdm-po-fx-device-power-required-callback.md) | The DevicePowerRequiredCallback callback routine notifies the device driver that the device must enter and remain in the D0 power state. |
 | [PO_FX_POWER_CONTROL_CALLBACK callback](nc-wdm-po-fx-power-control-callback.md) | The PowerControlCallback callback routine performs a power control operation that is requested by the power management framework (PoFx). |
 | [PREENUMERATE_SELF callback](nc-wdm-preenumerate-self.md) | A ReenumerateSelf routine requests that a bus driver reenumerate a child device. |
+| [PROCESSOR_HALT_ROUTINE callback](nc-wdm-processor-halt-routine.md) | A Halt callback routine transitions the processor to an idle state. |
 | [REQUEST_POWER_COMPLETE callback](nc-wdm-request-power-complete.md) | The PowerCompletion callback routine completes the processing of a power IRP. |
 | [RTL_QUERY_REGISTRY_ROUTINE callback](nc-wdm-rtl-query-registry-routine.md) | The QueryRoutine routine provides information about a registry value that was requested in a preceding call to the RtlQueryRegistryValues routine. |
 | [SET_D3COLD_SUPPORT callback](nc-wdm-set-d3cold-support.md) | The SetD3ColdSupport routine enables or disables transitions to the D3cold device power state. |
 | [SET_VIRTUAL_DEVICE_DATA callback](nc-wdm-set-virtual-device-data.md) | The SetVirtualFunctionData routine writes data to the PCI Express (PCIe) configuration space of a virtual function (VF) on a device that supports the single root I/O virtualization (SR-IOV) interface. |
+| [TRANSLATE_BUS_ADDRESS callback](nc-wdm-translate-bus-address.md) | The TranslateBusAddress routine translates addresses on the parent bus to logical addresses. |
 
 ## Structures
 

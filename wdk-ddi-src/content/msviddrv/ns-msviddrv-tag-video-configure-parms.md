@@ -7,7 +7,7 @@ old-location: stream\videoconfigparms.htm
 old-project: stream
 ms.assetid: 58FE3B56-AFC6-46DE-BBE1-CCFA8FF1390A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tag_video_configure_parms, VIDEOCONFIGPARMS, *LPVIDEOCONFIGPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

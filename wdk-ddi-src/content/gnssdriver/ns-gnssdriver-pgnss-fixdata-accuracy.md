@@ -7,7 +7,7 @@ old-location: sensors\gnss_fixdata_accuracy.htm
 old-project: sensors
 ms.assetid: 3C08FE5D-1385-4FE3-98C9-9FC530C6C755
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY, *PGNSS_FIXDATA_ACCURACY
 ms.prod: windows-hardware
 ms.technology: windows-devices

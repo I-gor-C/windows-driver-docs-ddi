@@ -72,7 +72,7 @@ typedef struct _D3D12DDIARG_OPENADAPTER {
 ### -field <b>pAdapterCallbacks</b>
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544350">D3DDDI_ADAPTERCALLBACKS</a> structure that contains the Direct3D runtime-supplied <b>pfnQueryAdapterInfoCb</b> callback function that the driver can use.</p>
+<p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-adaptercallbacks.md">D3DDDI_ADAPTERCALLBACKS</a> structure that contains the Direct3D runtime-supplied <b>pfnQueryAdapterInfoCb</b> callback function that the driver can use.</p>
 </dd>
 
 ### -field <b>pAdapterFuncs</b>

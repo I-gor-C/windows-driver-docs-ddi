@@ -7,7 +7,7 @@ old-location: stream\ksfilter_dispatch.htm
 old-project: stream
 ms.assetid: 3b84c06f-774e-45e1-9a64-711749bb3a88
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KSFILTER_DISPATCH,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,25 +60,25 @@ typedef struct _KSFILTER_DISPATCH {
 ### -field <b>Create</b>
 
 <dd>
-<p>Optional. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556310">AVStrMiniFilterCreate</a> callback routine.</p>
+<p>Optional. A pointer to a minidriver-supplied <a href="stream.avstrminifiltercreate">AVStrMiniFilterCreate</a> callback routine.</p>
 </dd>
 
 ### -field <b>Close</b>
 
 <dd>
-<p>Optional. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556307">AVStrMiniFilterClose</a> callback routine.</p>
+<p>Optional. A pointer to a minidriver-supplied <a href="stream.avstrminifilterclose">AVStrMiniFilterClose</a> callback routine.</p>
 </dd>
 
 ### -field <b>Process</b>
 
 <dd>
-<p>Optional. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556315">AVStrMiniFilterProcess</a> callback routine.</p>
+<p>Optional. A pointer to a minidriver-supplied <a href="stream.avstrminifilterprocess">AVStrMiniFilterProcess</a> callback routine.</p>
 </dd>
 
 ### -field <b>Reset</b>
 
 <dd>
-<p>Optional. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556317">AVStrMiniFilterReset</a> callback routine.</p>
+<p>Optional. A pointer to a minidriver-supplied <a href="stream.avstrminifilterreset">AVStrMiniFilterReset</a> callback routine.</p>
 </dd>
 </dl>
 
@@ -115,15 +115,15 @@ typedef struct _KSFILTER_DISPATCH {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561025">KsCompletePendingRequest</a>
+<a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564256">KSPROCESSPIN</a>
+<a href="..\ks\ns-ks--ksprocesspin.md">KSPROCESSPIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564260">KSPROCESSPIN_INDEXENTRY</a>
+<a href="..\ks\ns-ks--ksprocesspin-indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSFILTER_DISPATCH structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSFILTER_DISPATCH structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

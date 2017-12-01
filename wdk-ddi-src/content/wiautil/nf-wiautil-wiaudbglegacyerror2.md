@@ -73,9 +73,7 @@ inline void __stdcall wiauDbgLegacyError2(
 <p>None</p>
 
 ## -remarks
-<p>The <b>wiauDbgLegacyError2</b> function is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549633">wiauDbgError</a> function except that the former has a parameter that specifies the handle to the DLL instance and the latter has a parameter used to identify the function or method that is active when the function is called.</p>
-
-<p>The <b>wiauDbgLegacyError2</b> function is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549633">wiauDbgError</a> function except that the former has a parameter that specifies the handle to the DLL instance and the latter has a parameter used to identify the function or method that is active when the function is called.</p>
+<p>The <b>wiauDbgLegacyError2</b> function is identical to the <a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a> function except that the former has a parameter that specifies the handle to the DLL instance and the latter has a parameter used to identify the function or method that is active when the function is called.</p>
 
 ## -requirements
 <table>
@@ -112,7 +110,7 @@ inline void __stdcall wiauDbgLegacyError2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549633">wiauDbgError</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
 </dt>
 </dl>
 <p> </p>

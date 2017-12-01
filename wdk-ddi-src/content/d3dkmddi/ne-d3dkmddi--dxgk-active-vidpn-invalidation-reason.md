@@ -71,7 +71,7 @@ typedef enum _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON {
 ### -field <a id="DXGK_AVIR_USERMODE"></a><a id="dxgk_avir_usermode"></a><b>DXGK_AVIR_USERMODE</b>
 
 <dd>
-<p>Indicates that a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547023">D3DKMTInvalidateActiveVidPn</a> function has been made in user mode.</p>
+<p>Indicates that a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtinvalidateactivevidpn.md">D3DKMTInvalidateActiveVidPn</a> function has been made in user mode.</p>
 </dd>
 </dl>
 
@@ -103,7 +103,7 @@ typedef enum _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547023">D3DKMTInvalidateActiveVidPN</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtinvalidateactivevidpn.md">D3DKMTInvalidateActiveVidPN</a>
 </dt>
 </dl>
 <p> </p>

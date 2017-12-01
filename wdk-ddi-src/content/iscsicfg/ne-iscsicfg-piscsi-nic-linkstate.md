@@ -69,11 +69,7 @@ typedef enum  {
 </dl>
 
 ## -remarks
-<p>The ISCSI_NIC_LINKSTATE enumeration is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563083">MSiSCSI_NICConfig WMI Class</a>.</p>
-
-<p>The ISCSI_NIC_LINKSTATE enumeration is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563083">MSiSCSI_NICConfig WMI Class</a>.</p>
-
-<p>The ISCSI_NIC_LINKSTATE enumeration is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563083">MSiSCSI_NICConfig WMI Class</a>.</p>
+<p>The ISCSI_NIC_LINKSTATE enumeration is used with the <a href="storage.msiscsi_nicconfig_wmi_class">MSiSCSI_NICConfig WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -92,10 +88,10 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563079">MSiSCSI_NICConfig</a>
+<a href="..\iscsicfg\ns-iscsicfg--msiscsi-nicconfig.md">MSiSCSI_NICConfig</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563083">MSiSCSI_NICConfig WMI Class</a>
+<a href="storage.msiscsi_nicconfig_wmi_class">MSiSCSI_NICConfig WMI Class</a>
 </dt>
 </dl>
 <p> </p>

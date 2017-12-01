@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTCheckOcclusion(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547306">D3DKMT_CHECKOCCLUSION</a> structure that describes parameters for checking occlusion.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-checkocclusion.md">D3DKMT_CHECKOCCLUSION</a> structure that describes parameters for checking occlusion.</p>
 </dd>
 </dl>
 
@@ -75,8 +75,6 @@ NTSTATUS APIENTRY D3DKMTCheckOcclusion(
 <p>This function might also return other <b>NTSTATUS</b> values.</p>
 
 ## -remarks
-<p>The handle to the window that is checked for occlusion must be valid. A window is not occluded if a part of its client area lies on a unowned video present network (VidPn) source, if its client area is an empty rectangular area (RECT), or if desktop composition is running.</p>
-
 <p>The handle to the window that is checked for occlusion must be valid. A window is not occluded if a part of its client area lies on a unowned video present network (VidPn) source, if its client area is an empty rectangular area (RECT), or if desktop composition is running.</p>
 
 ## -requirements
@@ -134,7 +132,7 @@ NTSTATUS APIENTRY D3DKMTCheckOcclusion(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547306">D3DKMT_CHECKOCCLUSION</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-checkocclusion.md">D3DKMT_CHECKOCCLUSION</a>
 </dt>
 </dl>
 <p> </p>

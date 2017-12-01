@@ -7,7 +7,7 @@ old-location: debugger\getid.htm
 old-project: debugger
 ms.assetid: 991d8a40-1991-4c06-9557-9abee3ed8073
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugBreakpoint2, GetId, IDebugBreakpoint2::GetId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,13 +73,7 @@ HRESULT GetId(
 ## -remarks
 <p>The breakpoint ID remains fixed as long as the breakpoint exists.  However, after the breakpoint has been removed, you can use its ID for another breakpoint.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the breakpoint ID.</p>
-
-<p>For more information about how to use breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.</p>
-
-<p>The breakpoint ID remains fixed as long as the breakpoint exists.  However, after the breakpoint has been removed, you can use its ID for another breakpoint.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the breakpoint ID.</p>
+<p>The <a href="debugger.getparameters">GetParameters</a> method also returns the breakpoint ID.</p>
 
 <p>For more information about how to use breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.</p>
 

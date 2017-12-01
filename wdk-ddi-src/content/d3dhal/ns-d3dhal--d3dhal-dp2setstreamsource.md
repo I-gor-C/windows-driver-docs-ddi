@@ -85,7 +85,7 @@ typedef struct _D3DHAL_DP2SETSTREAMSOURCE {
 
 <p>The runtime does not validate that the streams accessed by the current vertex shader are non-NULL. It is the responsibility of the driver writer to ensure the driver/hardware does not crash when this error case arises. Debug versions of your display driver should display messages in the debug output stream to indicate when this problem has been detected.</p>
 
-<p>Only a single stream source is set by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structure. That is, the <b>wStateCount</b> field of the D3DHAL_DP2COMMAND is always one when <b>bCommand</b> is D3DDP2OP_SETSTREAMSOURCE.</p>
+<p>Only a single stream source is set by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> structure. That is, the <b>wStateCount</b> field of the D3DHAL_DP2COMMAND is always one when <b>bCommand</b> is D3DDP2OP_SETSTREAMSOURCE.</p>
 
 ## -requirements
 <table>
@@ -108,10 +108,10 @@ typedef struct _D3DHAL_DP2SETSTREAMSOURCE {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545811">D3DHAL_DP2SETSTREAMSOURCEUM</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setstreamsourceum.md">D3DHAL_DP2SETSTREAMSOURCEUM</a>
 </dt>
 </dl>
 <p> </p>

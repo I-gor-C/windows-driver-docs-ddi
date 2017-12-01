@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY EncryptionBlt(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543105">D3DDDIARG_ENCRYPTIONBLT</a> structure that describes the parameters of the encrypted bit-block transfer (bitblt) operation. </p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-encryptionblt.md">D3DDDIARG_ENCRYPTIONBLT</a> structure that describes the parameters of the encrypted bit-block transfer (bitblt) operation. </p>
 </dd>
 </dl>
 
@@ -83,17 +83,7 @@ __checkReturn HRESULT APIENTRY EncryptionBlt(
 <p> </p>
 
 ## -remarks
-<p>Hardware and drivers can optionally support <i>EncryptionBlt</i>. Some hardware might also require to use a separate key to decrypt the data that is read back. The driver returns this key in a block of memory that the <b>pIV</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff543105">D3DDDIARG_ENCRYPTIONBLT</a> points to. </p>
-
-<p>If the driver and hardware use a separate key for the encryption bitblt, the application must recognize this fact and use the key. </p>
-
-<p>If the crypto type is D3DCRYPTOTYPE_AES128_CTR, <b>pIV</b> points to a D3DAES_CTR_IV structure that the application allocates. However, the actual contents of the D3DAES_CTR_IV structure are filled in by the driver and hardware. When the driver and hardware generate the first initialization vector, they should initialize the <b>IV</b> member of the D3DAES_CTR_IV structure to a random number (that is not too big). Each subsequent initialization vector should simply increment the <b>IV</b> member, which ensures that the <b>IV</b> always increases in value. This fact enables the application to validate that the same <b>IV</b> is never used multiple times with the same key pair.</p>
-
-<p><i>EncryptionBlt</i> cannot read back sub-rectangles. <i>EncryptionBlt</i> also cannot read back partially encrypted buffers because many of the hardware-based solutions do not allow non-encrypted reads from protected memory.</p>
-
-<p>The Direct3D runtime verifies that the destination surface specified by the <b>DstSubResourceIndex</b> member of D3DDDIARG_ENCRYPTIONBLT is in system memory and that no stretching, colorspace conversion, and so on is performed. An application should ensure that the system memory buffer is properly aligned and that the buffer's size matches the source surface. The driver should verify the memory alignment and the buffer size (<b>DstResourceSize</b> member of D3DDDIARG_ENCRYPTIONBLT) and fail if these conditions are not correct.</p>
-
-<p>Hardware and drivers can optionally support <i>EncryptionBlt</i>. Some hardware might also require to use a separate key to decrypt the data that is read back. The driver returns this key in a block of memory that the <b>pIV</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff543105">D3DDDIARG_ENCRYPTIONBLT</a> points to. </p>
+<p>Hardware and drivers can optionally support <i>EncryptionBlt</i>. Some hardware might also require to use a separate key to decrypt the data that is read back. The driver returns this key in a block of memory that the <b>pIV</b> member of <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-encryptionblt.md">D3DDDIARG_ENCRYPTIONBLT</a> points to. </p>
 
 <p>If the driver and hardware use a separate key for the encryption bitblt, the application must recognize this fact and use the key. </p>
 
@@ -138,10 +128,10 @@ __checkReturn HRESULT APIENTRY EncryptionBlt(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543105">D3DDDIARG_ENCRYPTIONBLT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-encryptionblt.md">D3DDDIARG_ENCRYPTIONBLT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

@@ -67,7 +67,7 @@ HRESULT APIENTRY CALLBACK* pfnCreatePagingQueueCb(
 ### -param <i>pData</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906760">D3DDDICB_CREATEPAGINGQUEUE</a> structure that provides the details of the requested operation.
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicb-createpagingqueue.md">D3DDDICB_CREATEPAGINGQUEUE</a> structure that provides the details of the requested operation.
 
 </p>
 </dd>
@@ -77,8 +77,6 @@ HRESULT APIENTRY CALLBACK* pfnCreatePagingQueueCb(
 <p>If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.</p>
 
 ## -remarks
-<p>A device can have multiple paging queues created for it. Paging queues can be destroyed either explicitly by calling <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroypagingqueuecb.md">pfnDestroyPagingQueueCb</a>, or by implicitly destroying the device they belong to. After the latter, paging queue handles will become invalid.</p>
-
 <p>A device can have multiple paging queues created for it. Paging queues can be destroyed either explicitly by calling <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroypagingqueuecb.md">pfnDestroyPagingQueueCb</a>, or by implicitly destroying the device they belong to. After the latter, paging queue handles will become invalid.</p>
 
 ## -requirements

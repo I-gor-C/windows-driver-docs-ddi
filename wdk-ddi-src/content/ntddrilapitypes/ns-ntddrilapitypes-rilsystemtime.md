@@ -7,7 +7,7 @@ old-location: netvista\rilsystemtime.htm
 old-project: netvista
 ms.assetid: da01963f-a0eb-4222-b0c7-20b924f65f66
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSYSTEMTIME, RILSYSTEMTIME, *LPRILSYSTEMTIME
 ms.prod: windows-hardware
 ms.technology: windows-devices

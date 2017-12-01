@@ -70,8 +70,6 @@ VOID APIENTRY CALLBACK * pfnShaderCacheAddRefCb(
 ## -remarks
 <p>Access this callback function by using the <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-2ddi-corelayer-devicecallbacks~r1.md">D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS</a> structure.</p>
 
-<p>Access this callback function by using the <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-2ddi-corelayer-devicecallbacks~r1.md">D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS</a> structure.</p>
-
 ## -requirements
 <table>
 <tr>

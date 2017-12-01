@@ -7,7 +7,7 @@ old-location: netvista\dot11_peer_info.htm
 old-project: netvista
 ms.assetid: f1d5bbd9-45e3-4802-ab9b-77ff6bdcd6ec
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_PEER_INFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: windot11.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -86,7 +85,7 @@ typedef struct _DOT11_PEER_INFO {
 <p>The authentication algorithm that the 802.11 station resolved with the peer station during the
      association operation. For more information about the data type for the 
      <b>AuthAlgo</b> member, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547655">DOT11_AUTH_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes--dot11-auth-algorithm.md">DOT11_AUTH_ALGORITHM</a>.
      </p>
 <p>This member is not defined if the peer is not associated.</p>
 </dd>
@@ -97,7 +96,7 @@ typedef struct _DOT11_PEER_INFO {
 <p>The unicast cipher algorithm that the 802.11 station resolved with the peer station during the
      association operation. For more information about the data type for the 
      <b>UnicastCipherAlgo</b> member, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
      </p>
 <p>This member is not defined if the peer is not associated.</p>
 </dd>
@@ -108,7 +107,7 @@ typedef struct _DOT11_PEER_INFO {
 <p>The multicast cipher algorithm that the 802.11 station resolved with the peer station during the
      association operation. For more information about the data type for the 
      <b>MulticastCipherAlgo</b> member, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
      </p>
 <p>This member is not defined if the peer is not associated.</p>
 </dd>
@@ -160,7 +159,7 @@ typedef struct _DOT11_PEER_INFO {
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547650">DOT11_ASSOCIATION_STATE</a>-type value
+     <a href="..\windot11\ne-windot11--dot11-association-state.md">DOT11_ASSOCIATION_STATE</a>-type value
      that indicates the 802.11 authentication and association state of the peer station. The state can be
      either 
      <b>dot11_assoc_state_auth_unassoc</b> or 
@@ -176,7 +175,7 @@ typedef struct _DOT11_PEER_INFO {
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff548755">DOT11_POWER_MODE</a>-type value that describes
+     <a href="..\windot11\ne-windot11--dot11-power-mode.md">DOT11_POWER_MODE</a>-type value that describes
      the latest power management mode of the peer station.</p>
 </dd>
 
@@ -185,7 +184,7 @@ typedef struct _DOT11_PEER_INFO {
 <dd>
 <p>A LARGEINTEGER value that specifies the timestamp when the 802.11 association procedure successfully
      completed. The miniport driver calls 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff562629">NdisGetCurrentSystemTime</a> to get
+     <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a> to get
      the timestamp of the association completion.
      </p>
 <p>This member has a value of zero if the peer is not associated.</p>
@@ -195,7 +194,7 @@ typedef struct _DOT11_PEER_INFO {
 
 <dd>
 <p>The statistics counters for data traffic, defined by the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff548725">DOT11_PEER_STATISTICS</a> structure.
+     <a href="..\windot11\ns-windot11--dot11-peer-statistics.md">DOT11_PEER_STATISTICS</a> structure.
      </p>
 <p>This member has a value of zero if the peer is not associated.</p>
 </dd>
@@ -230,24 +229,24 @@ typedef struct _DOT11_PEER_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547650">DOT11_ASSOCIATION_STATE</a>
+<a href="..\windot11\ne-windot11--dot11-association-state.md">DOT11_ASSOCIATION_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548719">DOT11_PEER_INFO_LIST</a>
+<a href="..\windot11\ns-windot11--dot11-peer-info-list.md">DOT11_PEER_INFO_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548725">DOT11_PEER_STATISTICS</a>
+<a href="..\windot11\ns-windot11--dot11-peer-statistics.md">DOT11_PEER_STATISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548755">DOT11_POWER_MODE</a>
+<a href="..\windot11\ne-windot11--dot11-power-mode.md">DOT11_POWER_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562629">NdisGetCurrentSystemTime</a>
+<a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PEER_INFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PEER_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

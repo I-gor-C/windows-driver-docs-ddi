@@ -7,7 +7,7 @@ old-location: audio\iinterruptsync_registerserviceroutine.htm
 old-project: audio
 ms.assetid: fb0650ee-24a6-4f64-9f16-dded0ccc79cd
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IInterruptSync, RegisterServiceRoutine, IInterruptSync::RegisterServiceRoutine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ NTSTATUS RegisterServiceRoutine(
 ### -param <i>Routine</i> [in]
 
 <dd>
-<p>Pointer to the routine that is to be called. This parameter is a function pointer of type PINTERRUPTSYNCROUTINE (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536590">IInterruptSync</a>).</p>
+<p>Pointer to the routine that is to be called. This parameter is a function pointer of type PINTERRUPTSYNCROUTINE (see <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>).</p>
 </dd>
 
 ### -param <i>DynamicContext</i> [in]
@@ -79,8 +79,6 @@ NTSTATUS RegisterServiceRoutine(
 <p><code>RegisterServiceRoutine</code> returns STATUS_SUCCESS if the call was successful. Otherwise, the method returns an appropriate error code.</p>
 
 ## -remarks
-<p>This method adds the specified routine to the synchronization object's list of ISRs. When an interrupt occurs, the routine at the head of the list is called first, and the routine at the tail is called last.</p>
-
 <p>This method adds the specified routine to the synchronization object's list of ISRs. When an interrupt occurs, the routine at the head of the list is called first, and the routine at the tail is called last.</p>
 
 ## -requirements

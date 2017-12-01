@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcbcopy.htm
 old-project: kernel
 ms.assetid: 77a42d5e-92ff-4e64-9bd3-b713286d3db0
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlStringCbCopyW
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -97,7 +97,7 @@ NTSTATUS RtlStringCbCopy(
 
 <p><b>wcscpy</b></p>
 
-<p><b>RtlStringCbCopyA</b> and <b>RtlStringCbCopyW</b> are not replacements for <b>strncpy</b>. To replace <b>strncpy</b>, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562811">RtlStringCbCopyN</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff562813">RtlStringCbCopyNEx</a>.</p>
+<p><b>RtlStringCbCopyA</b> and <b>RtlStringCbCopyW</b> are not replacements for <b>strncpy</b>. To replace <b>strncpy</b>, use <a href="kernel.rtlstringcbcopyn">RtlStringCbCopyN</a> or <a href="kernel.rtlstringcbcopynex">RtlStringCbCopyNEx</a>.</p>
 
 <p>The size of the destination buffer is provided to the function to ensure that <b>RtlStringCbCopy</b> does not write past the end of the buffer.</p>
 
@@ -115,43 +115,9 @@ NTSTATUS RtlStringCbCopy(
 
 <p><b>RtlStringCbCopyA</b></p>
 
-<p> </p>
-
 <p>If <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.</p>
 
-<p>Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562807">RtlStringCbCopyEx</a>.</p>
-
-<p>For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>. </p>
-
-<p><b>RtlStringCbCopyA</b> and <b>RtlStringCbCopyW</b> should be used instead of the following functions: </p>
-
-<p><b>strcpy</b></p>
-
-<p><b>wcscpy</b></p>
-
-<p><b>RtlStringCbCopyA</b> and <b>RtlStringCbCopyW</b> are not replacements for <b>strncpy</b>. To replace <b>strncpy</b>, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562811">RtlStringCbCopyN</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff562813">RtlStringCbCopyNEx</a>.</p>
-
-<p>The size of the destination buffer is provided to the function to ensure that <b>RtlStringCbCopy</b> does not write past the end of the buffer.</p>
-
-<p>Use <b>RtlStringCbCopyW</b> to handle Unicode strings and <b>RtlStringCbCopyA</b> to handle ANSI strings. The form you use depends on your data as shown in the following table.</p>
-
-<p>WCHAR</p>
-
-<p>L"string"</p>
-
-<p><b>RtlStringCbCopyW</b></p>
-
-<p><b>char</b></p>
-
-<p>"string"</p>
-
-<p><b>RtlStringCbCopyA</b></p>
-
-<p> </p>
-
-<p>If <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.</p>
-
-<p>Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562807">RtlStringCbCopyEx</a>.</p>
+<p>Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="kernel.rtlstringcbcopyex">RtlStringCbCopyEx</a>.</p>
 
 <p>For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>. </p>
 
@@ -216,12 +182,12 @@ NTSTATUS RtlStringCbCopy(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562807">RtlStringCbCopyEx</a>
+<a href="kernel.rtlstringcbcopyex">RtlStringCbCopyEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562841">RtlStringCchCopy</a>
+<a href="kernel.rtlstringcchcopy">RtlStringCchCopy</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCbCopy function%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCbCopy function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

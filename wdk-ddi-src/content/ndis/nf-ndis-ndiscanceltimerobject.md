@@ -7,7 +7,7 @@ old-location: netvista\ndiscanceltimerobject.htm
 old-project: netvista
 ms.assetid: b66652b7-2e02-49f5-a7e3-60ff35363a19
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCancelTimerObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The 
   <b>NdisCancelTimerObject</b> function cancels a timer object that is associated with a previous call to the 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff564563">NdisSetTimerObject</a> function.</p>
+  <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a> function.</p>
 
 
 ## -syntax
@@ -82,40 +82,14 @@ BOOLEAN NdisCancelTimerObject(
 
 <p>If a nonzero value was specified in the 
     <i>MillisecondsPeriod</i> parameter of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564563">NdisSetTimerObject</a> function, the timer is known as a <i>periodic timer</i>. If a zero value was specified in the <i>MillisecondsPeriod</i> parameter, the timer is known as a <i>one-shot timer</i>. The following points apply to canceling both types of timers:</p>
+    <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a> function, the timer is known as a <i>periodic timer</i>. If a zero value was specified in the <i>MillisecondsPeriod</i> parameter, the timer is known as a <i>one-shot timer</i>. The following points apply to canceling both types of timers:</p>
 
 <p>If  the caller of
     <b>NdisCancelTimerObject</b> is canceling a periodic timer, it must be running at IRQL = PASSIVE_LEVEL. Otherwise, the caller of 
     <b>NdisCancelTimerObject</b> should be running at IRQL &lt;= DISPATCH_LEVEL.</p>
 
 <p>If  the caller of
-    <b>NdisCancelTimerObject</b> is canceling a periodic timer, <b>NdisCancelTimerObject</b> calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff552050">KeFlushQueuedDpcs</a> to ensure that the timer is not currently running. Therefore, the caller is not required to have a separate synchronization mechanism to ensure that the timer is not currently being executed on another processor.</p>
-
-<p>If  the caller of
-    <b>NdisCancelTimerObject</b> is canceling a one-shot timer, the caller is required to have a separate synchronization mechanism to ensure the timer is not currently running on another processor. For example, the caller could call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567897">NDIS_WAIT_FOR_MUTEX</a> in order to wait for the timer thread to signal a mutex object when the thread is about to complete.</p>
-
-<p>For more information, see <a href="NULL">Synchronization and Notification in Network Drivers</a>.</p>
-
-<p>A call to 
-    <b>NdisCancelTimerObject</b> cancels execution of a 
-    <a href="..\ndis\nc-ndis-ndis-timer-function.md">NetTimerCallback</a> function, provided
-    that the last specified timeout interval has not yet expired.</p>
-
-<p>NDIS drivers should call 
-    <b>NdisCancelTimerObject</b> first when they are halting or unloading to ensure that a 
-    <i>NetTimerCallback</i> function does not attempt to access resources that the driver has already
-    released.</p>
-
-<p>If a nonzero value was specified in the 
-    <i>MillisecondsPeriod</i> parameter of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564563">NdisSetTimerObject</a> function, the timer is known as a <i>periodic timer</i>. If a zero value was specified in the <i>MillisecondsPeriod</i> parameter, the timer is known as a <i>one-shot timer</i>. The following points apply to canceling both types of timers:</p>
-
-<p>If  the caller of
-    <b>NdisCancelTimerObject</b> is canceling a periodic timer, it must be running at IRQL = PASSIVE_LEVEL. Otherwise, the caller of 
-    <b>NdisCancelTimerObject</b> should be running at IRQL &lt;= DISPATCH_LEVEL.</p>
-
-<p>If  the caller of
-    <b>NdisCancelTimerObject</b> is canceling a periodic timer, <b>NdisCancelTimerObject</b> calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff552050">KeFlushQueuedDpcs</a> to ensure that the timer is not currently running. Therefore, the caller is not required to have a separate synchronization mechanism to ensure that the timer is not currently being executed on another processor.</p>
+    <b>NdisCancelTimerObject</b> is canceling a periodic timer, <b>NdisCancelTimerObject</b> calls <a href="..\wdm\nf-wdm-keflushqueueddpcs.md">KeFlushQueuedDpcs</a> to ensure that the timer is not currently running. Therefore, the caller is not required to have a separate synchronization mechanism to ensure that the timer is not currently being executed on another processor.</p>
 
 <p>If  the caller of
     <b>NdisCancelTimerObject</b> is canceling a one-shot timer, the caller is required to have a separate synchronization mechanism to ensure the timer is not currently running on another processor. For example, the caller could call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567897">NDIS_WAIT_FOR_MUTEX</a> in order to wait for the timer thread to signal a mutex object when the thread is about to complete.</p>
@@ -175,7 +149,7 @@ BOOLEAN NdisCancelTimerObject(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548019">Irql_Timer_Function</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550378">PeriodicTimer</a>
+<a href="devtest.ndis_irql_timer_function">Irql_Timer_Function</a>, <a href="devtest.ndis_periodictimer">PeriodicTimer</a>
 </td>
 </tr>
 </table>
@@ -183,10 +157,10 @@ BOOLEAN NdisCancelTimerObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561618">NdisAllocateTimerObject</a>
+<a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">NdisAllocateTimerObject</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564563">NdisSetTimerObject</a>
+<a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-ndis-timer-function.md">NetTimerCallback</a>
@@ -194,4 +168,4 @@ BOOLEAN NdisCancelTimerObject(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCancelTimerObject function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCancelTimerObject function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

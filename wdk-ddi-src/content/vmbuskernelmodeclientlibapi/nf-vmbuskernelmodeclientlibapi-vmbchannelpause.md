@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelpause.htm
 old-project: netvista
 ms.assetid: 434CA5F7-24D4-40E7-AE77-C0732D3FBBFF
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbChannelPause
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,12 +68,6 @@ VOID VmbChannelPause(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>This function waits until the channel is in the paused state before it returns. This ensures that all packets that are waiting for completion have completed.
-</p>
-
-<p> If the channel is disabled, this function sets the channel to automatically
-pause when it is enabled.</p>
-
 <p>This function waits until the channel is in the paused state before it returns. This ensures that all packets that are waiting for completion have completed.
 </p>
 

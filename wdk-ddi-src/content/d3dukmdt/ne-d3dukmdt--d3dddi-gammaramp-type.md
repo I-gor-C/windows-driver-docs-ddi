@@ -81,7 +81,7 @@ typedef enum _D3DDDI_GAMMARAMP_TYPE {
 ### -field <a id="D3DDDI_GAMMARAMP_DXGI_1"></a><a id="d3dddi_gammaramp_dxgi_1"></a><b>D3DDDI_GAMMARAMP_DXGI_1</b>
 
 <dd>
-<p>Indicates that the gamma lookup table is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544568">D3DDDI_GAMMA_RAMP_DXGI_1</a> structure. </p>
+<p>Indicates that the gamma lookup table is described by a <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-dxgi-1.md">D3DDDI_GAMMA_RAMP_DXGI_1</a> structure. </p>
 </dd>
 
 ### -field <a id="D3DDDI_GAMMARAMP_MATRIX_3x4"></a><a id="d3dddi_gammaramp_matrix_3x4"></a><a id="D3DDDI_GAMMARAMP_MATRIX_3X4"></a><b>D3DDDI_GAMMARAMP_MATRIX_3x4</b>
@@ -92,11 +92,7 @@ typedef enum _D3DDDI_GAMMARAMP_TYPE {
 </dl>
 
 ## -remarks
-<p>The <b>GammaRamp</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546014">D3DKMDT_GAMMA_RAMP</a> structure. The <b>Type</b> member of the D3DKMDT_GAMMA_RAMP structure is a D3DDDI_GAMMARAMP_TYPE value.</p>
-
-<p>The <b>GammaRamp</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546014">D3DKMDT_GAMMA_RAMP</a> structure. The <b>Type</b> member of the D3DKMDT_GAMMA_RAMP structure is a D3DDDI_GAMMARAMP_TYPE value.</p>
-
-<p>The <b>GammaRamp</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546014">D3DKMDT_GAMMA_RAMP</a> structure. The <b>Type</b> member of the D3DKMDT_GAMMA_RAMP structure is a D3DDDI_GAMMARAMP_TYPE value.</p>
+<p>The <b>GammaRamp</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-gamma-ramp.md">D3DKMDT_GAMMA_RAMP</a> structure. The <b>Type</b> member of the D3DKMDT_GAMMA_RAMP structure is a D3DDDI_GAMMARAMP_TYPE value.</p>
 
 ## -requirements
 <table>
@@ -123,7 +119,7 @@ typedef enum _D3DDDI_GAMMARAMP_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545984">D3DKMDT_COLOR_BASIS</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-color-basis.md">D3DKMDT_COLOR_BASIS</a>
 </dt>
 </dl>
 <p> </p>

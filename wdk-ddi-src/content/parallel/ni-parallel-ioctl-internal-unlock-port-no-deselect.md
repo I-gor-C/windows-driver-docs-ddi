@@ -120,13 +120,13 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544009">IOCTL_INTERNAL_LOCK_PORT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-lock-port.md">IOCTL_INTERNAL_LOCK_PORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544014">IOCTL_INTERNAL_LOCK_PORT_NO_SELECT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-lock-port-no-select.md">IOCTL_INTERNAL_LOCK_PORT_NO_SELECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544056">IOCTL_INTERNAL_UNLOCK_PORT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-unlock-port.md">IOCTL_INTERNAL_UNLOCK_PORT</a>
 </dt>
 </dl>
 <p> </p>

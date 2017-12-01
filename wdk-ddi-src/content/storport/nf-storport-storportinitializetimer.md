@@ -85,18 +85,9 @@ ULONG StorPortInitializeTimer(
 <p> </p>
 
 ## -remarks
-<p>Storport provides a single timer to a miniport driver by using the  <b>RequestTimerCall</b> notification type in <a href="https://msdn.microsoft.com/library/windows/hardware/ff567433">StorPortNotification</a>. If a miniport requires more than one timer, additional timers are created with <b>StorPortInitializeTimer</b>.</p>
+<p>Storport provides a single timer to a miniport driver by using the  <b>RequestTimerCall</b> notification type in <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>. If a miniport requires more than one timer, additional timers are created with <b>StorPortInitializeTimer</b>.</p>
 
-<p>It is recommended that miniports call <b>StorPortInitializeTimer</b> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> function to ensure that the additional timer resources are available.</p>
-
-<p>Miniports can use this routine to set coalescing timers to create a delay period after an initial timeout.</p>
-
-<p>Prior to Windows 8, a maximum of 4 timers can be created with <b>StorPortInitializeTimer</b>.
-Starting with Windows 8, there is no maximum timers limitation.</p>
-
-<p>Storport provides a single timer to a miniport driver by using the  <b>RequestTimerCall</b> notification type in <a href="https://msdn.microsoft.com/library/windows/hardware/ff567433">StorPortNotification</a>. If a miniport requires more than one timer, additional timers are created with <b>StorPortInitializeTimer</b>.</p>
-
-<p>It is recommended that miniports call <b>StorPortInitializeTimer</b> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> function to ensure that the additional timer resources are available.</p>
+<p>It is recommended that miniports call <b>StorPortInitializeTimer</b> in the <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> function to ensure that the additional timer resources are available.</p>
 
 <p>Miniports can use this routine to set coalescing timers to create a delay period after an initial timeout.</p>
 
@@ -146,16 +137,16 @@ Starting with Windows 8, there is no maximum timers limitation.</p>
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a>
+<a href="storage.hwstorfindadapter">HwStorFindAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451476">StorPortFreeTimer</a>
+<a href="..\storport\nf-storport-storportfreetimer.md">StorPortFreeTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567433">StorPortNotification</a>
+<a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451511">StorPortRequestTimer</a>
+<a href="..\storport\nf-storport-storportrequesttimer.md">StorPortRequestTimer</a>
 </dt>
 </dl>
 <p> </p>

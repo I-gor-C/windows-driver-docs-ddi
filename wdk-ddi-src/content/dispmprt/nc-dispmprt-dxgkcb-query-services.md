@@ -62,19 +62,19 @@ NTSTATUS DxgkCbQueryServices(
 ### -param <i>DeviceHandle</i> [in]
 
 <dd>
-<p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
+<p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
 ### -param <i>ServicesType</i> [in]
 
 <dd>
-<p>A constant from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562049">DXGK_SERVICES</a> enumeration that specifies which interface is being requested. This parameter must be set to <b>DxgkServicesAgp</b>, <b>DxgkServicesDebugReport</b>, or <b>DxgkServicesTimedOperation</b>, as those are the only supported interfaces.</p>
+<p>A constant from the <a href="..\dispmprt\ne-dispmprt-dxgk-services.md">DXGK_SERVICES</a> enumeration that specifies which interface is being requested. This parameter must be set to <b>DxgkServicesAgp</b>, <b>DxgkServicesDebugReport</b>, or <b>DxgkServicesTimedOperation</b>, as those are the only supported interfaces.</p>
 </dd>
 
 ### -param <i>Interface</i> [in, out]
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a> structure that receives the requested interface.</p>
+<p>A pointer to an <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure that receives the requested interface.</p>
 </dd>
 </dl>
 
@@ -86,7 +86,7 @@ NTSTATUS DxgkCbQueryServices(
 
 <p>To obtain an AGP interface, do the following:</p>
 
-<p>Allocate a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560949">DXGK_AGP_INTERFACE</a> structure.</p>
+<p>Allocate a <a href="..\dispmprt\ns-dispmprt--dxgk-agp-interface.md">DXGK_AGP_INTERFACE</a> structure.</p>
 
 <p>Set the <b>Size</b> member to sizeof(DXGK_AGP_INTERFACE).</p>
 
@@ -98,7 +98,7 @@ NTSTATUS DxgkCbQueryServices(
 
 <p>To obtain a Debug Report interface, do the following:</p>
 
-<p>Allocate a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561040">DXGK_DEBUG_REPORT_INTERFACE</a> structure.</p>
+<p>Allocate a <a href="..\dispmprt\ns-dispmprt--dxgk-debug-report-interface.md">DXGK_DEBUG_REPORT_INTERFACE</a> structure.</p>
 
 <p>Set the <b>Size</b> member to sizeof(DXGK_DEBUG_REPORT_INTERFACE).</p>
 
@@ -106,11 +106,11 @@ NTSTATUS DxgkCbQueryServices(
 
 <p>Call <b>DxgkCbQueryServices</b>; set <i>ServicesType</i> to <b>DxgkServicesDebugReport</b>, and set <i>Interface</i> to the address (cast as PINTERFACE) of your DXGK_DEBUG_REPORT_INTERFACE structure.</p>
 
-<p>On return from <b>DxgkCbQueryServices</b>, your DXGK_DEBUG_REPORT_INTERFACE structure will contain pointers to the interface functions: <a href="https://msdn.microsoft.com/library/windows/hardware/ff549088">DbgReportCreate</a> and the like.</p>
+<p>On return from <b>DxgkCbQueryServices</b>, your DXGK_DEBUG_REPORT_INTERFACE structure will contain pointers to the interface functions: <a href="display.dbgreportcreate2">DbgReportCreate</a> and the like.</p>
 
 <p>To obtain a Timed Operation interface, do the following:</p>
 
-<p>Allocate a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562065">DXGK_TIMED_OPERATION_INTERFACE</a> structure.</p>
+<p>Allocate a <a href="..\dispmprt\ns-dispmprt--dxgk-timed-operation-interface.md">DXGK_TIMED_OPERATION_INTERFACE</a> structure.</p>
 
 <p>Set the <b>Size</b> member to sizeof(DXGK_TIMED_OPERATION_INTERFACE).</p>
 
@@ -118,45 +118,7 @@ NTSTATUS DxgkCbQueryServices(
 
 <p>Call <b>DxgkCbQueryServices</b>; set <i>ServicesType</i> to <b>DxgkServicesTimedOperation</b>, and set <i>Interface</i> to the address (cast as PINTERFACE) of your DXGK_TIMED_OPERATION_INTERFACE structure.</p>
 
-<p>On return from <b>DxgkCbQueryServices</b>, your DXGK_TIMED_OPERATION_INTERFACE structure will contain pointers to the interface functions: <a href="https://msdn.microsoft.com/library/windows/hardware/ff570084">TimedOperationStart</a> and the like.</p>
-
-<p>An interface, in this context, is a set of functions implemented by the display port driver. The display port driver makes the functions of an interface available to other drivers by providing function pointers in response to <b>DxgkCbQueryServices</b>.</p>
-
-<p>To obtain an AGP interface, do the following:</p>
-
-<p>Allocate a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560949">DXGK_AGP_INTERFACE</a> structure.</p>
-
-<p>Set the <b>Size</b> member to sizeof(DXGK_AGP_INTERFACE).</p>
-
-<p>Set the <b>Version</b> member. Version constants are defined in <i>Dispmprt.h</i> (for example, DXGK_AGP_INTERFACE_VERSION_1).</p>
-
-<p>Call <b>DxgkCbQueryServices</b>; set <i>ServicesType</i> to <b>DxgkServicesAgp</b>, and set <i>Interface</i> to the address (cast as PINTERFACE) of your DXGK_AGP_INTERFACE structure.</p>
-
-<p>On return from <b>DxgkCbQueryServices</b>, your DXGK_AGP_INTERFACE structure will contain pointers to the interface functions: <a href="..\dispmprt\nc-dispmprt-dxgkcb-agp-allocate-pool.md">AgpAllocatePool</a> and the like.</p>
-
-<p>To obtain a Debug Report interface, do the following:</p>
-
-<p>Allocate a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561040">DXGK_DEBUG_REPORT_INTERFACE</a> structure.</p>
-
-<p>Set the <b>Size</b> member to sizeof(DXGK_DEBUG_REPORT_INTERFACE).</p>
-
-<p>Set the <b>Version</b> member. Version constants are defined in <i>Dispmprt.h</i> (for example,  DXGK_DEBUG_REPORT_INTERFACE_VERSION_1).</p>
-
-<p>Call <b>DxgkCbQueryServices</b>; set <i>ServicesType</i> to <b>DxgkServicesDebugReport</b>, and set <i>Interface</i> to the address (cast as PINTERFACE) of your DXGK_DEBUG_REPORT_INTERFACE structure.</p>
-
-<p>On return from <b>DxgkCbQueryServices</b>, your DXGK_DEBUG_REPORT_INTERFACE structure will contain pointers to the interface functions: <a href="https://msdn.microsoft.com/library/windows/hardware/ff549088">DbgReportCreate</a> and the like.</p>
-
-<p>To obtain a Timed Operation interface, do the following:</p>
-
-<p>Allocate a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562065">DXGK_TIMED_OPERATION_INTERFACE</a> structure.</p>
-
-<p>Set the <b>Size</b> member to sizeof(DXGK_TIMED_OPERATION_INTERFACE).</p>
-
-<p>Set the <b>Version</b> member. Version constants are defined in <i>Dispmprt.h</i> (for example,  DXGK_TIMED_OPERATION_INTERFACE_VERSION_1).</p>
-
-<p>Call <b>DxgkCbQueryServices</b>; set <i>ServicesType</i> to <b>DxgkServicesTimedOperation</b>, and set <i>Interface</i> to the address (cast as PINTERFACE) of your DXGK_TIMED_OPERATION_INTERFACE structure.</p>
-
-<p>On return from <b>DxgkCbQueryServices</b>, your DXGK_TIMED_OPERATION_INTERFACE structure will contain pointers to the interface functions: <a href="https://msdn.microsoft.com/library/windows/hardware/ff570084">TimedOperationStart</a> and the like.</p>
+<p>On return from <b>DxgkCbQueryServices</b>, your DXGK_TIMED_OPERATION_INTERFACE structure will contain pointers to the interface functions: <a href="display.timedoperationstart">TimedOperationStart</a> and the like.</p>
 
 ## -requirements
 <table>
@@ -201,16 +163,16 @@ NTSTATUS DxgkCbQueryServices(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a>
+<a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538228">AGP Interface</a>
+<a href="display.agp_interface">AGP Interface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551798">Debug Report Interface</a>
+<a href="display.debug_report_interface">Debug Report Interface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>
+<a href="display.timed_operation_interface">Timed Operation Interface</a>
 </dt>
 </dl>
 <p> </p>

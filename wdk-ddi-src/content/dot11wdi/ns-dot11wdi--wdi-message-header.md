@@ -7,7 +7,7 @@ old-location: netvista\wdi_message_header.htm
 old-project: netvista
 ms.assetid: 69c3ebf5-8805-47d0-a507-d2e3e1d1b0df
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER, *PWDI_MESSAGE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices

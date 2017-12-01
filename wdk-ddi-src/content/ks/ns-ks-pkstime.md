@@ -7,7 +7,7 @@ old-location: stream\kstime.htm
 old-project: stream
 ms.assetid: e026a539-7aa5-4205-970d-cf452e4471da
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSTIME, KSTIME, *PKSTIME
 ms.prod: windows-hardware
 ms.technology: windows-devices

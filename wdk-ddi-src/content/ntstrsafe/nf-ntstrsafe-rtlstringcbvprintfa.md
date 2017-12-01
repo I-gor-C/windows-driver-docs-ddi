@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcbvprintf.htm
 old-project: kernel
 ms.assetid: 9dfd1894-c9b5-43c2-8377-c28577898754
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlStringCbVPrintfA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -126,47 +126,9 @@ NTSTATUS RtlStringCbVPrintf(
 
 <p><b>RtlStringCbVPrintfA</b></p>
 
-<p> </p>
-
 <p>If <i>pszDest</i> and <i>pszFormat </i>point to overlapping strings or if any argument strings overlap, the behavior of the function is undefined..</p>
 
-<p>Neither <i>pszFormat</i> nor <i>pszDest</i> should be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562832">RtlStringCbVPrintfEx</a>.</p>
-
-<p>For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.</p>
-
-<p><b>RtlStringCbVPrintfW</b> and <b>RtlStringCbVPrintfA</b> should be used instead of the following functions: </p>
-
-<p><b>vsprintf</b></p>
-
-<p><b>vswprintf</b></p>
-
-<p>_<b>vsnprintf</b></p>
-
-<p>_<b>vsnwprintf</b></p>
-
-<p>All of these functions accept a format string, along with a set of arguments in a <b>va_list</b>-typed argument list, and return a formatted string. The size, in bytes, of the destination buffer is provided to <b>RtlStringCbVPrintfW</b> and <b>RtlStringCbVPrintfA</b> to ensure that they do not write past the end of the buffer.</p>
-
-<p>For more information about <b>va_list</b>-typed argument lists, see the Microsoft Windows SDK documentation.</p>
-
-<p>Use <b>RtlStringCbVPrintfW</b> to handle Unicode strings and <b>RtlStringCbVPrintfA</b> to handle ANSI strings. The form you use depends on your data, as shown in the following table.</p>
-
-<p>WCHAR</p>
-
-<p>L"string"</p>
-
-<p><b>RtlStringCbVPrintfW</b></p>
-
-<p><b>char</b></p>
-
-<p>"string"</p>
-
-<p><b>RtlStringCbVPrintfA</b></p>
-
-<p> </p>
-
-<p>If <i>pszDest</i> and <i>pszFormat </i>point to overlapping strings or if any argument strings overlap, the behavior of the function is undefined..</p>
-
-<p>Neither <i>pszFormat</i> nor <i>pszDest</i> should be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562832">RtlStringCbVPrintfEx</a>.</p>
+<p>Neither <i>pszFormat</i> nor <i>pszDest</i> should be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="kernel.rtlstringcbvprintfex">RtlStringCbVPrintfEx</a>.</p>
 
 <p>For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.</p>
 
@@ -231,15 +193,15 @@ NTSTATUS RtlStringCbVPrintf(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562832">RtlStringCbVPrintfEx</a>
+<a href="kernel.rtlstringcbvprintfex">RtlStringCbVPrintfEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562824">RtlStringCbPrintf</a>
+<a href="kernel.rtlstringcbprintf">RtlStringCbPrintf</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562865">RtlStringCchVPrintf</a>
+<a href="kernel.rtlstringcchvprintf">RtlStringCchVPrintf</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCbVPrintf function%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCbVPrintf function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

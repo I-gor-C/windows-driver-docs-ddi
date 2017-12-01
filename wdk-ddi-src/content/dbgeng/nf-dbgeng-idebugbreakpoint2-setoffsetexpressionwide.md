@@ -7,7 +7,7 @@ old-location: debugger\setoffsetexpressionwide.htm
 old-project: debugger
 ms.assetid: 1db89a5a-641b-4fca-bd60-217c9be8f19f
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugBreakpoint2, SetOffsetExpressionWide, IDebugBreakpoint2::SetOffsetExpressionWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,8 +70,6 @@ HRESULT SetOffsetExpressionWide(
 <p> </p>
 
 ## -remarks
-<p>For more information about how to use breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.</p>
-
 <p>For more information about how to use breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.</p>
 
 ## -requirements

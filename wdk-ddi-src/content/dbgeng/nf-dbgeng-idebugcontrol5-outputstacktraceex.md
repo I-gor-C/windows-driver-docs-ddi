@@ -7,7 +7,7 @@ old-location: debugger\idebugcontrol5_outputstacktraceex.htm
 old-project: debugger
 ms.assetid: C89203F9-FCCF-4D71-8E8A-9F5F4AE89004
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl5, OutputStackTraceEx, IDebugControl5::OutputStackTraceEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ HRESULT OutputStackTraceEx(
 ### -param <i>OutputControl</i> [in]
 
 <dd>
-<p>Specifies where to send the output.  For possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.</p>
+<p>Specifies where to send the output.  For possible values, see <a href="debugger.debug_outctl_xxx">DEBUG_OUTCTL_XXX</a>.</p>
 </dd>
 
 ### -param <i>Frames</i> [in, optional]
@@ -185,9 +185,7 @@ HRESULT OutputStackTraceEx(
 <p> </p>
 
 ## -remarks
-<p>The array of stack frames can be obtained using <a href="https://msdn.microsoft.com/library/windows/hardware/dn818565">GetStackTraceEx</a>. </p>
-
-<p>The array of stack frames can be obtained using <a href="https://msdn.microsoft.com/library/windows/hardware/dn818565">GetStackTraceEx</a>. </p>
+<p>The array of stack frames can be obtained using <a href="debugger.idebugcontrol5_getstacktraceex">GetStackTraceEx</a>. </p>
 
 ## -requirements
 <table>
@@ -216,13 +214,13 @@ HRESULT OutputStackTraceEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn818562">IDebugControl5</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol5.md">IDebugControl5</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn818564">GetContextStackTraceEx</a>
+<a href="debugger.idebugcontrol5_getcontextstacktraceex">GetContextStackTraceEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn818565">GetStackTraceEx</a>
+<a href="debugger.idebugcontrol5_getstacktraceex">GetStackTraceEx</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/1061015f-cb0c-490b-b256-e0dedb659f22">k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)</a>
@@ -230,4 +228,4 @@ HRESULT OutputStackTraceEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl5::OutputStackTraceEx method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl5::OutputStackTraceEx method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

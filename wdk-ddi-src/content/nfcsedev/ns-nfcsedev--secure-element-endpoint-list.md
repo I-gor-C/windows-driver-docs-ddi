@@ -7,7 +7,7 @@ old-location: nfpdrivers\_secure_element_endpoint_list.htm
 old-project: nfpdrivers
 ms.assetid: 0F69EE38-C124-47A6-B3CA-31F089657894
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: SECURE_ELEMENT_ENDPOINT_LIST, SECURE_ELEMENT_ENDPOINT_LIST, *PSECURE_ELEMENT_ENDPOINT_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The output parameter for <a href="https://msdn.microsoft.com/library/windows/hardware/dn905506">IOCTL_NFCSE_ENUM_ENDPOINTS</a>.</p>
+<p>The output parameter for <a href="..\nfcsedev\ni-nfcsedev-ioctl-nfcse-enum-endpoints.md">IOCTL_NFCSE_ENUM_ENDPOINTS</a>.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct _SECURE_ELEMENT_ENDPOINT_LIST {
 ### -field <b>EndpointList[ANYSIZE_ARRAY]</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905621">SECURE_ELEMENT_ENDPOINT_INFO</a> structures.</p>
+<p>An array of <a href="..\nfcsedev\ns-nfcsedev--secure-element-endpoint-info.md">SECURE_ELEMENT_ENDPOINT_INFO</a> structures.</p>
 </dd>
 </dl>
 

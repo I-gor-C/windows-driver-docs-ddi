@@ -67,7 +67,7 @@ HRESULT APIENTRY CALLBACK* pfnUnlock2Cb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn894603">D3DDDICB_UNLOCK2</a> structure that describes the allocation to unlock.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-unlock2.md">D3DDDICB_UNLOCK2</a> structure that describes the allocation to unlock.</p>
 </dd>
 </dl>
 

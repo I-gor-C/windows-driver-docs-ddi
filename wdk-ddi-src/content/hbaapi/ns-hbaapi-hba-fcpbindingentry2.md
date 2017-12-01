@@ -72,7 +72,7 @@ typedef struct HBA_FCPBindingEntry2 {
 <p>HBA_BIND_TO_D_ID</p>
 </td>
 <td>
-<p>Indicates that the target is identified by its fibre channel protocol (FCP) ID. The <b>Fcid</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a> structure contains this value.</p>
+<p>Indicates that the target is identified by its fibre channel protocol (FCP) ID. The <b>Fcid</b> member of the <a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a> structure contains this value.</p>
 </td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ typedef struct HBA_FCPBindingEntry2 {
 <p>HBA_BIND_TO_WWPN</p>
 </td>
 <td>
-<p>Indicates that the target is identified by its worldwide port name. The <b>PortWWN</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a> structure contains this value.</p>
+<p>Indicates that the target is identified by its worldwide port name. The <b>PortWWN</b> member of the <a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a> structure contains this value.</p>
 </td>
 </tr>
 <tr>
@@ -88,7 +88,7 @@ typedef struct HBA_FCPBindingEntry2 {
 <p>HBA_BIND_TO_WWNN</p>
 </td>
 <td>
-<p>Indicates that the fibre channel target device is identified by its worldwide node name. The <b>NodeWWN</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a> structure contains this value.</p>
+<p>Indicates that the fibre channel target device is identified by its worldwide node name. The <b>NodeWWN</b> member of the <a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a> structure contains this value.</p>
 </td>
 </tr>
 <tr>
@@ -96,7 +96,7 @@ typedef struct HBA_FCPBindingEntry2 {
 <p>HBA_BIND_TO_LUID</p>
 </td>
 <td>
-<p>Indicates that the target is identified by its fibre channel logical unit ID. The <b>FcpLun</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a> structure contains this value.</p>
+<p>Indicates that the target is identified by its fibre channel logical unit ID. The <b>FcpLun</b> member of the <a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a> structure contains this value.</p>
 </td>
 </tr>
 <tr>
@@ -109,39 +109,37 @@ typedef struct HBA_FCPBindingEntry2 {
 </tr>
 </table>
 <p> </p>
-<p>For a comparable set of values that define how an HBA specifies targets and logical units in the persistent bindings that it maintains, see the WMI property qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff556046">HBA_BIND_TYPE</a>. </p>
+<p>For a comparable set of values that define how an HBA specifies targets and logical units in the persistent bindings that it maintains, see the WMI property qualifier <a href="storage.hba_bind_type">HBA_BIND_TYPE</a>. </p>
 <p>For a more detailed description of the values that this member can have, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
 ### -field <b>ScsiId</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557191">HBA_ScsiId</a> that contains the information that uniquely identifies a logical unit for the operating system.</p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a> that contains the information that uniquely identifies a logical unit for the operating system.</p>
 </dd>
 
 ### -field <b>FcpId</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.</p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.</p>
 </dd>
 
 ### -field <b>LUID</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557091">HBA_LUID</a> that holds a logical unit descriptor for the device that the operating system derives from SCSI inquiry data. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-luid.md">HBA_LUID</a> that holds a logical unit descriptor for the device that the operating system derives from SCSI inquiry data. </p>
 </dd>
 
 ### -field <b>Status</b>
 
 <dd>
-<p>Contains, on return, a status value that indicates the condition of the HBA. The status values that can be returned in this member correspond to the values associated with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> WMI property qualifier. </p>
+<p>Contains, on return, a status value that indicates the condition of the HBA. The status values that can be returned in this member correspond to the values associated with the <a href="storage.hba_status">HBA_STATUS</a> WMI property qualifier. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>This structure is very similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556035">HBAFCPBindingEntry2</a> structure. The only difference is that HBA_FCPBindingEntry2 returns HBA status. </p>
-
-<p>This structure is very similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556035">HBAFCPBindingEntry2</a> structure. The only difference is that HBA_FCPBindingEntry2 returns HBA status. </p>
+<p>This structure is very similar to the <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpbindingentry2.md">HBAFCPBindingEntry2</a> structure. The only difference is that HBA_FCPBindingEntry2 returns HBA status. </p>
 
 ## -requirements
 <table>
@@ -160,25 +158,25 @@ typedef struct HBA_FCPBindingEntry2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556046">HBA_BIND_TYPE</a>
+<a href="storage.hba_bind_type">HBA_BIND_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556058">HBA_FCPBindingEntry</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcpbindingentry.md">HBA_FCPBindingEntry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557091">HBA_LUID</a>
+<a href="..\hbaapi\ns-hbaapi-hba-luid.md">HBA_LUID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557191">HBA_ScsiId</a>
+<a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556034">HBAFCPBindingEntry</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--hbafcpbindingentry.md">HBAFCPBindingEntry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556035">HBAFCPBindingEntry2</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--hbafcpbindingentry2.md">HBAFCPBindingEntry2</a>
 </dt>
 </dl>
 <p> </p>

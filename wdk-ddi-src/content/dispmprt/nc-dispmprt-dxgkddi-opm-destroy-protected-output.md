@@ -79,10 +79,6 @@ NTSTATUS DxgkDdiOPMDestroyProtectedOutput(
 
 <p><i>DxgkDdiOPMDestroyProtectedOutput</i> should be made pageable.</p>
 
-<p>The DirectX graphics kernel subsystem calls <i>DxgkDdiOPMDestroyProtectedOutput</i> when it finishes using the protected output object.</p>
-
-<p><i>DxgkDdiOPMDestroyProtectedOutput</i> should be made pageable.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -74,7 +74,7 @@ typedef struct _MSiSCSI_RADIUSConfig {
 ### -field <b>RADIUSServer</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that specifies a fixed address for the RADIUS server. The ISCSI_IP_Address structure defines the IP address in a way that is independent of the version of the IP protocol in use. </p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that specifies a fixed address for the RADIUS server. The ISCSI_IP_Address structure defines the IP address in a way that is independent of the version of the IP protocol in use. </p>
 </dd>
 
 ### -field <b>BackupRADIUSServer</b>
@@ -99,7 +99,7 @@ typedef struct _MSiSCSI_RADIUSConfig {
 ## -remarks
 <p>Initiators use RADIUS servers to perform authentication during the challenge handshake of CHAP.</p>
 
-<p>The WMI tool suite automatically generates a declaration of the MSiSCSI_RADIUSConfig structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563114">MSiSCSI_RADIUSConfig WMI Class</a> in <i>Config.mof</i>. </p>
+<p>The WMI tool suite automatically generates a declaration of the MSiSCSI_RADIUSConfig structure when it compiles the <a href="storage.msiscsi_radiusconfig_wmi_class">MSiSCSI_RADIUSConfig WMI Class</a> in <i>Config.mof</i>. </p>
 
 <p>Initiators that support using RADIUS for CHAP authentication must implement the MSiSCSI_RADIUSConfig class.</p>
 
@@ -124,10 +124,10 @@ typedef struct _MSiSCSI_RADIUSConfig {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563114">MSiSCSI_RADIUSConfig WMI Class</a>
+<a href="storage.msiscsi_radiusconfig_wmi_class">MSiSCSI_RADIUSConfig WMI Class</a>
 </dt>
 </dl>
 <p> </p>

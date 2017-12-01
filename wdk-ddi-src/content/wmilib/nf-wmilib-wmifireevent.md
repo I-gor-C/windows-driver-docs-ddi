@@ -7,7 +7,7 @@ old-location: kernel\wmifireevent.htm
 old-project: kernel
 ms.assetid: 600391ef-f4bb-479b-ad73-305e365ed70d
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WmiFireEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NTSTATUS WmiFireEvent(
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>. </p>
+<p>A pointer to the driver's <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>. </p>
 </dd>
 
 ### -param <i>Guid</i> [in]
@@ -91,22 +91,14 @@ NTSTATUS WmiFireEvent(
 </dl>
 
 ## -returns
-<p><b>WmiFireEvent</b> propagates the status returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550520">IoWmiWriteEvent</a>, or returns STATUS_INSUFFICIENT_RESOURCES if it could not allocate memory for the event.</p>
+<p><b>WmiFireEvent</b> propagates the status returned by <a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWmiWriteEvent</a>, or returns STATUS_INSUFFICIENT_RESOURCES if it could not allocate memory for the event.</p>
 
 ## -remarks
 <p>A driver calls <b>WmiFireEvent</b> to send an event to WMI for delivery to all data consumers that have requested notification of the event. All pointers passed to <b>WmiFireEvent</b> must point to nonpagable memory, such as nonpaged pool.</p>
 
-<p>The driver sends an event only if it has been previously enabled by the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544094">DpWmiFunctionControl</a> routine, which WMI calls to process an <b>IRP_MN_ENABLE_EVENT</b> request.</p>
+<p>The driver sends an event only if it has been previously enabled by the driver's <a href="kernel.dpwmifunctioncontrol">DpWmiFunctionControl</a> routine, which WMI calls to process an <b>IRP_MN_ENABLE_EVENT</b> request.</p>
 
-<p>The driver writes any data associated with the event to the buffer at <i>EventData</i>. WMI fills in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a> structure with the data and calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550520">IoWmiWriteEvent</a> to deliver the event.</p>
-
-<p>For more information about event tracing, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566350">WMI Event Tracing</a>. </p>
-
-<p>A driver calls <b>WmiFireEvent</b> to send an event to WMI for delivery to all data consumers that have requested notification of the event. All pointers passed to <b>WmiFireEvent</b> must point to nonpagable memory, such as nonpaged pool.</p>
-
-<p>The driver sends an event only if it has been previously enabled by the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544094">DpWmiFunctionControl</a> routine, which WMI calls to process an <b>IRP_MN_ENABLE_EVENT</b> request.</p>
-
-<p>The driver writes any data associated with the event to the buffer at <i>EventData</i>. WMI fills in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a> structure with the data and calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550520">IoWmiWriteEvent</a> to deliver the event.</p>
+<p>The driver writes any data associated with the event to the buffer at <i>EventData</i>. WMI fills in a <a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a> structure with the data and calls <a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWmiWriteEvent</a> to deliver the event.</p>
 
 <p>For more information about event tracing, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566350">WMI Event Tracing</a>. </p>
 
@@ -163,15 +155,15 @@ NTSTATUS WmiFireEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544094">DpWmiFunctionControl</a>
+<a href="kernel.dpwmifunctioncontrol">DpWmiFunctionControl</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550859">IRP_MN_ENABLE_EVENTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565834">WmiSystemControl</a>
+<a href="..\wmilib\nf-wmilib-wmisystemcontrol.md">WmiSystemControl</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WmiFireEvent routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WmiFireEvent routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

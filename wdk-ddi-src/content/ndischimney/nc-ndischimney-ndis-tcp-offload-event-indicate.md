@@ -7,7 +7,7 @@ old-location: netvista\ndistcpoffloadeventhandler.htm
 old-project: netvista
 ms.assetid: b62e8a07-fe7b-4c52-8795-19e4bb889b6e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BINARY_DATA, BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -173,14 +173,11 @@ VOID NdisTcpOffloadEventHandler(
 
 <p>Complete all outstanding send requests and disconnect requests on the connection with
       NDIS_STATUS_REQUEST_ABORTED. The offload target writes this status value to the 
-      <b>Status</b> member of each <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure in the linked list that it passes to the 
+      <b>Status</b> member of each <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure in the linked list that it passes to the 
       <a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-send-complete.md">
       NdisTcpOffloadSendComplete</a> function or to the 
       <a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-disconnect-complete.md">
       NdisTcpOffloadDisconnectComplete</a> function.</p>
-
-<p>The offload target must not free the resources for the connection until the host stack terminates the
-    offload of the connection.</p>
 
 <p>The offload target specifies the reason for the termination request as a <b>TCP_UPLOAD_REASON</b> value in
     the 
@@ -214,26 +211,18 @@ VOID NdisTcpOffloadEventHandler(
 
 <p><b>InvalidState</b></p>
 
-<p>Mandatory</p>
-
 <p>Offload target receives a segment with the URG bit set in the TCP header. Note that the offload
        target does not send an ACK to acknowledge the urgent data.</p>
 
 <p><b>ReceivedUrgentData</b></p>
 
-<p>Mandatory</p>
-
 <p>A timeout occurred on the TCP connection.</p>
 
 <p><b>TimeoutExpiration</b></p>
 
-<p>Mandatory</p>
-
 <p>The offload target is requesting an upload for an unspecified reason.</p>
 
 <p><b>UploadRequested</b></p>
-
-<p>Mandatory</p>
 
 <p>The offload target has detected that too many transmit segments are being dropped on the TCP
        connection.</p>
@@ -247,33 +236,21 @@ VOID NdisTcpOffloadEventHandler(
 
 <p><b>HighFragmentation</b></p>
 
-<p>Optional</p>
-
 <p>The offload target has received too many out-of-order segments on the TCP connection.</p>
 
 <p><b>HighOutofOrderPackets</b></p>
-
-<p>Optional</p>
 
 <p>The activity (sends/receives) on the TCP connection is too low.</p>
 
 <p><b>LowActivity</b></p>
 
-<p>Optional</p>
-
 <p>There are no preposted receive buffers for the TCP connection.</p>
 
 <p><b>NoBufferProposting</b></p>
 
-<p>Optional</p>
-
 <p>The received buffers posted for the TCP connection are too small.</p>
 
 <p><b>SmallIO</b></p>
-
-<p>Optional</p>
-
-<p> </p>
 
 <p>The offload target must not initiate the termination of a half-closed TCP connection when that
     connection is in one of the following states:</p>
@@ -288,162 +265,7 @@ VOID NdisTcpOffloadEventHandler(
 
 <p>An offload target can request the termination of all TCP connections that have been offloaded to it.
     For more information, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563619">NdisMOffloadEventIndicate</a>.</p>
-
-<p>The send backlog size can be a function of the round-trip time (RTT) for the connection, the interface
-    bandwidth, and other parameters. The specific variables and algorithm that the offload target uses to
-    calculate the send backlog size are implementation-specific. An offload target could, for example, use
-    minimum of the bandwidth-delay product and the advertised receive window as the algorithm. Note, however,
-    that the send backlog size does not vary according to the number of data bytes that are currently posted
-    for transmission on the connection.</p>
-
-<p>The offload target should implement a throttling mechanism to ensure that, if the value for 
-    <b>SendBacklogSize</b> changes too frequently or by too small an amount, the offload target does not
-    indicate a 
-    <b>SendBacklogSize</b> event. This will prevent a storm of event indications from occurring.</p>
-
-<p>An offload target should indicate a graceful disconnect only when:</p>
-
-<p>It has received a FIN segment from the remote host.</p>
-
-<p>All data received on the connection prior to the reception of the FIN segment has been consumed by
-      the client application (that is, there is no receive data to be indicated on the connection).</p>
-
-<p>The offload target must not free the resources for the connection until the host stack terminates the
-    offload of the connection.</p>
-
-<p>Note that a graceful disconnect shuts down only the receive half of the connection. It does not shut
-    down the send half of the connection.</p>
-
-<p>When an offload target receives an acceptable RST segment on a TCP connection, it must:</p>
-
-<p>In its internal state for the connection, mark the connection as aborted.</p>
-
-<p>Call the 
-      <b>NdisTcpOffloadEventHandler</b> function with an 
-      <i>EventType</i> of 
-      <b>TcpIndicateAbort</b>.<div class="alert"><b>Note</b>  When the miniport indicates the <b>TcpIndicateAbort</b> event, the host TCP/IP stack will terminate the offload of the connection. The offload target is free to indicate the <b>TcpIndicateAbort</b> event as soon as the RST segment arrives.</div>
-<div> </div>
-</p>
-
-<p>Complete all outstanding send requests and disconnect requests on the connection with
-      NDIS_STATUS_REQUEST_ABORTED. The offload target writes this status value to the 
-      <b>Status</b> member of each <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure in the linked list that it passes to the 
-      <a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-send-complete.md">
-      NdisTcpOffloadSendComplete</a> function or to the 
-      <a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-disconnect-complete.md">
-      NdisTcpOffloadDisconnectComplete</a> function.</p>
-
-<p>The offload target must not free the resources for the connection until the host stack terminates the
-    offload of the connection.</p>
-
-<p>The offload target specifies the reason for the termination request as a <b>TCP_UPLOAD_REASON</b> value in
-    the 
-    <i>EventSpecificInformation</i> parameter that it passes to the 
-    <b>NdisTcpOffloadEventHandler</b> function. In response, the host stack calls the 
-    <a href="..\ndischimney\nc-ndischimney-w-terminate-offload-handler.md">MiniportTerminateOffload</a> function
-    of the offload target.</p>
-
-<p>The offload target can request the termination of only one TCP connection per call to 
-    <b>NdisTcpOffloadEventHandler</b>. The offload target cannot request the termination of a neighbor state
-    object or a path state object. Only the host stack can initiate the termination of a neighbor or path
-    state object.</p>
-
-<p>The following table describes events or circumstances that can cause an offload target to request the
-    termination of the offload of a TCP connection.</p>
-
-<p>The right-most column indicates, for each <b>TCP_UPLOAD_REASON</b>, whether the host stack always uploads the
-    connection (mandatory) or might or might not upload the connection (optional). In the mandatory cases, an
-    offload target does not continue processing the offloaded connection. In the optional cases, an offload
-    target must be able to continue processing on the offloaded connection if the host stack does not
-    terminate the offload of that connection.</p>
-
-<p>The hardware state used to track the connection is corrupt.</p>
-
-<p><b>HardwareFailure</b></p>
-
-<p>Mandatory</p>
-
-<p>Offload target attempted to send data on a TCP connection that depends on an invalidated state
-       object.</p>
-
-<p><b>InvalidState</b></p>
-
-<p>Mandatory</p>
-
-<p>Offload target receives a segment with the URG bit set in the TCP header. Note that the offload
-       target does not send an ACK to acknowledge the urgent data.</p>
-
-<p><b>ReceivedUrgentData</b></p>
-
-<p>Mandatory</p>
-
-<p>A timeout occurred on the TCP connection.</p>
-
-<p><b>TimeoutExpiration</b></p>
-
-<p>Mandatory</p>
-
-<p>The offload target is requesting an upload for an unspecified reason.</p>
-
-<p><b>UploadRequested</b></p>
-
-<p>Mandatory</p>
-
-<p>The offload target has detected that too many transmit segments are being dropped on the TCP
-       connection.</p>
-
-<p><b>HighDropRate</b></p>
-
-<p>Optional</p>
-
-<p>The offload target has detected that too many fragments are being received on the TCP
-       connection.</p>
-
-<p><b>HighFragmentation</b></p>
-
-<p>Optional</p>
-
-<p>The offload target has received too many out-of-order segments on the TCP connection.</p>
-
-<p><b>HighOutofOrderPackets</b></p>
-
-<p>Optional</p>
-
-<p>The activity (sends/receives) on the TCP connection is too low.</p>
-
-<p><b>LowActivity</b></p>
-
-<p>Optional</p>
-
-<p>There are no preposted receive buffers for the TCP connection.</p>
-
-<p><b>NoBufferProposting</b></p>
-
-<p>Optional</p>
-
-<p>The received buffers posted for the TCP connection are too small.</p>
-
-<p><b>SmallIO</b></p>
-
-<p>Optional</p>
-
-<p> </p>
-
-<p>The offload target must not initiate the termination of a half-closed TCP connection when that
-    connection is in one of the following states:</p>
-
-<p>FIN_WAIT1--The local host stack has closed the TCP connection, but the connection might still be
-      receiving data from the remote endpoint.</p>
-
-<p>FIN_WAIT2--The local host has closed the TCP connection and received an ACK for the FIN segment that
-      it sent, but the offloaded connection might still be receiving data from the remote host.</p>
-
-<p>CLOSE_WAIT--The local host might still be sending data.</p>
-
-<p>An offload target can request the termination of all TCP connections that have been offloaded to it.
-    For more information, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563619">NdisMOffloadEventIndicate</a>.</p>
+    <a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>.</p>
 
 <p>The send backlog size can be a function of the round-trip time (RTT) for the connection, the interface
     bandwidth, and other parameters. The specific variables and algorithm that the offload target uses to
@@ -498,7 +320,7 @@ VOID NdisTcpOffloadEventHandler(
 <a href="..\ndischimney\nc-ndischimney-w-terminate-offload-handler.md">MiniportTerminateOffload</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563619">NdisMOffloadEventIndicate</a>
+<a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-disconnect-complete.md">
@@ -509,7 +331,7 @@ VOID NdisTcpOffloadEventHandler(
    NdisTcpOffloadReceiveComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564609">NdisTcpOffloadSendComplete</a>
+<a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-send-complete.md">NdisTcpOffloadSendComplete</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-tcp-offload-event-handler.md">ProtocolTcpOffloadEvent</a>
@@ -524,4 +346,4 @@ VOID NdisTcpOffloadEventHandler(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_EVENT_INDICATE callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_EVENT_INDICATE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

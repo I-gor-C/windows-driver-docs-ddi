@@ -82,7 +82,7 @@ typedef struct _DISK_DETECTION_INFO {
 <p><b>DetectExInt13</b></p>
 </li>
 </ol>
-<p>See the structure <a href="https://msdn.microsoft.com/library/windows/hardware/ff552516">DETECTION_TYPE</a> for further information.</p>
+<p>See the structure <a href="..\ntdddisk\ne-ntdddisk--detection-type.md">DETECTION_TYPE</a> for further information.</p>
 </dd>
 
 ### -field ( <i>unnamed struct</i> )
@@ -94,13 +94,13 @@ typedef struct _DISK_DETECTION_INFO {
 ### -field <b>Int13</b>
 
 <dd>
-<p>Contains <a href="https://msdn.microsoft.com/library/windows/hardware/ff552624">DISK_INT13_INFO</a> structure with the disk parameters for INT 13 type partitions. This member is used if <b>DetectionType </b>== <b>DetectInt13</b>.</p>
+<p>Contains <a href="..\ntdddisk\ns-ntdddisk--disk-int13-info.md">DISK_INT13_INFO</a> structure with the disk parameters for INT 13 type partitions. This member is used if <b>DetectionType </b>== <b>DetectInt13</b>.</p>
 </dd>
 
 ### -field <b>ExInt13</b>
 
 <dd>
-<p>Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552610">DISK_EX_INT13_INFO</a> structure with the disk parameters for extended INT 13 type partitions. This member is used if <b>DetectionType</b> == <b>DetectExInt13</b>.</p>
+<p>Contains a <a href="..\ntdddisk\ns-ntdddisk--disk-ex-int13-info.md">DISK_EX_INT13_INFO</a> structure with the disk parameters for extended INT 13 type partitions. This member is used if <b>DetectionType</b> == <b>DetectExInt13</b>.</p>
 </dd>
 </dl>
 </dd>
@@ -126,13 +126,13 @@ typedef struct _DISK_DETECTION_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552618">DISK_GEOMETRY_EX</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-geometry-ex.md">DISK_GEOMETRY_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552624">DISK_INT13_INFO</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-int13-info.md">DISK_INT13_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552610">DISK_EX_INT13_INFO</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-ex-int13-info.md">DISK_EX_INT13_INFO</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: stream\ksproperty_cameracontrol_extended_property.htm
 old-project: stream
 ms.assetid: DA89A917-75F3-4120-90A4-8DA9DB322B4F
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices

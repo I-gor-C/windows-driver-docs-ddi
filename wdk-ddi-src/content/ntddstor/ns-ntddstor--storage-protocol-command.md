@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure is used as an input buffer when using the pass-through mechanism to issue  a vendor-specific command to a storage device (via <a href="https://msdn.microsoft.com/library/windows/hardware/dn932068">IOCTL_STORAGE_PROTOCOL_COMMAND</a>).</p>
+<p>This structure is used as an input buffer when using the pass-through mechanism to issue  a vendor-specific command to a storage device (via <a href="..\ntddstor\ni-ntddstor-ioctl-storage-protocol-command.md">IOCTL_STORAGE_PROTOCOL_COMMAND</a>).</p>
 
 
 ## -syntax
@@ -277,7 +277,7 @@ typedef struct _STORAGE_PROTOCOL_COMMAND {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn932068">IOCTL_STORAGE_PROTOCOL_COMMAND</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-protocol-command.md">IOCTL_STORAGE_PROTOCOL_COMMAND</a>
 </dt>
 </dl>
 <p> </p>

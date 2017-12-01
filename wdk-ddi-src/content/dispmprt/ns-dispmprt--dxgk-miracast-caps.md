@@ -64,7 +64,7 @@ typedef struct _DXGK_MIRACAST_CAPS {
 ### -field <b>MaxChunkPrivateDriverDataSize</b>
 
 <dd>
-<p>The maximum size, in bytes, of the private data that the display miniport driver will pass when it reports a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561136">DXGK_INTERRUPT_TYPE</a> interrupt type of <b>DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE</b>.</p>
+<p>The maximum size, in bytes, of the private data that the display miniport driver will pass when it reports a <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-interrupt-type.md">DXGK_INTERRUPT_TYPE</a> interrupt type of <b>DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE</b>.</p>
 </dd>
 
 ### -field <b>Flags</b>
@@ -129,7 +129,7 @@ typedef struct _DXGK_MIRACAST_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561136">DXGK_INTERRUPT_TYPE</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-interrupt-type.md">DXGK_INTERRUPT_TYPE</a>
 </dt>
 </dl>
 <p> </p>

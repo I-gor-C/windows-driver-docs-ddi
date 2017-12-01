@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DETECTION_TYPE enumeration type is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560359">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a> request and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552618">DISK_GEOMETRY_EX</a> structure to determine the type of formatting used by the BIOS to record the disk geometry. </p>
+<p>The DETECTION_TYPE enumeration type is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-drive-geometry-ex.md">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a> request and the <a href="..\ntdddisk\ns-ntdddisk--disk-geometry-ex.md">DISK_GEOMETRY_EX</a> structure to determine the type of formatting used by the BIOS to record the disk geometry. </p>
 
 
 ## -syntax
@@ -78,10 +78,6 @@ typedef enum _DETECTION_TYPE {
 ## -remarks
 <p>Possible formatting types are the standard INT 13h partition format or the extended INT 13h partition format. </p>
 
-<p>Possible formatting types are the standard INT 13h partition format or the extended INT 13h partition format. </p>
-
-<p>Possible formatting types are the standard INT 13h partition format or the extended INT 13h partition format. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -99,7 +95,7 @@ typedef enum _DETECTION_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552601">DISK_DETECTION_INFO</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-detection-info.md">DISK_DETECTION_INFO</a>
 </dt>
 </dl>
 <p> </p>

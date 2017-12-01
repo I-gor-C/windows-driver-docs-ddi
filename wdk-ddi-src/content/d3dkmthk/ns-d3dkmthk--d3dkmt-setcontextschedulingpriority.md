@@ -96,7 +96,7 @@ typedef struct _D3DKMT_SETCONTEXTSCHEDULINGPRIORITY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547163">D3DKMTSetContextSchedulingPriority</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetcontextschedulingpriority.md">D3DKMTSetContextSchedulingPriority</a>
 </dt>
 </dl>
 <p> </p>

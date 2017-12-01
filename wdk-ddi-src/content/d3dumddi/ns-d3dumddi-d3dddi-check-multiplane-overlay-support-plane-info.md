@@ -71,7 +71,7 @@ typedef struct D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO {
 ### -field <b>PlaneAttributes</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh780234">D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a> structure that specifies overlay plane attributes.</p>
+<p>A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-multiplane-overlay-attributes.md">D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a> structure that specifies overlay plane attributes.</p>
 </dd>
 </dl>
 
@@ -111,7 +111,7 @@ typedef struct D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780234">D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-multiplane-overlay-attributes.md">D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>
 </dt>
 </dl>
 <p> </p>

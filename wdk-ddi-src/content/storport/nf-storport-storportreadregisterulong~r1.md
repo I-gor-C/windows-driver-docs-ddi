@@ -73,9 +73,7 @@ STORPORT_API ULONG StorPortReadRegisterUlong(
 <p><b>StorPortReadRegisterUlong</b> returns an unsigned character of data read from the indicated register address. </p>
 
 ## -remarks
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564742">ScsiPortReadRegisterUlong</a>. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567480">StorPortReadRegisterBufferUlong</a>.</p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564742">ScsiPortReadRegisterUlong</a>. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567480">StorPortReadRegisterBufferUlong</a>.</p>
+<p>For more information, see <a href="..\srb\nf-srb-scsiportreadregisterulong.md">ScsiPortReadRegisterUlong</a>. For a buffered version of this routine, see <a href="..\storport\nf-storport-storportreadregisterbufferulong.md">StorPortReadRegisterBufferUlong</a>.</p>
 
 ## -requirements
 <table>
@@ -114,10 +112,10 @@ STORPORT_API ULONG StorPortReadRegisterUlong(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564742">ScsiPortReadRegisterUlong</a>
+<a href="..\srb\nf-srb-scsiportreadregisterulong.md">ScsiPortReadRegisterUlong</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567480">StorPortReadRegisterBufferUlong</a>
+<a href="..\storport\nf-storport-storportreadregisterbufferulong.md">StorPortReadRegisterBufferUlong</a>
 </dt>
 </dl>
 <p> </p>

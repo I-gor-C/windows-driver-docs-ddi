@@ -90,27 +90,7 @@ I/O Status block
 <p>If the request is successful, the USB function class extension (UFX) returns STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it returns a status value for which NT_SUCCESS(status) equals FALSE. </p>
 
 ## -remarks
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
-
-<p>The USB function class extension (UFX) determines the endpoints that are remote wake-up capable and registers for remote wake notifications.</p>
-
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
-
-<p>The USB function class extension (UFX) determines the endpoints that are remote wake-up capable and registers for remote wake notifications.</p>
-
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
-
-<p>The USB function class extension (UFX) determines the endpoints that are remote wake-up capable and registers for remote wake notifications.</p>
-
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
-
-<p>The USB function class extension (UFX) determines the endpoints that are remote wake-up capable and registers for remote wake notifications.</p>
-
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
-
-<p>The USB function class extension (UFX) determines the endpoints that are remote wake-up capable and registers for remote wake notifications.</p>
-
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
+<p>This request must be sent after sending the <a href="buses.ioctl_internal_usbfn_activate_usb_bus">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
 
 <p>The USB function class extension (UFX) determines the endpoints that are remote wake-up capable and registers for remote wake notifications.</p>
 

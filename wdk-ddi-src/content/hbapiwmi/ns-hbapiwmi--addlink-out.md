@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The AddLink_OUT structure is used by an HBA miniport driver to report the status of a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550128">AddLink</a> WMI method.</p>
+<p>The AddLink_OUT structure is used by an HBA miniport driver to report the status of a call to the <a href="storage.addlink">AddLink</a> WMI method.</p>
 
 
 ## -syntax
@@ -57,12 +57,12 @@ typedef struct _AddLink_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.</p>
+<p>Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the AddLink_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562490">MSFC_EventControl WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the AddLink_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_eventcontrol_wmi_class">MSFC_EventControl WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -81,13 +81,13 @@ typedef struct _AddLink_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550128">AddLink</a>
+<a href="storage.addlink">AddLink</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562490">MSFC_EventControl WMI Class</a>
+<a href="storage.msfc_eventcontrol_wmi_class">MSFC_EventControl WMI Class</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\ril_drainmodemlogs.htm
 old-project: netvista
 ms.assetid: 2a9f3bb8-3de5-439c-86a3-7fdc6b025b8d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_DrainModemLogs
 ms.prod: windows-hardware
 ms.technology: windows-devices

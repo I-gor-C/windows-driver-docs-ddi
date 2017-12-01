@@ -61,7 +61,7 @@ SCSI_PHYSICAL_ADDRESS ScsiPortGetPhysicalAddress(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
+<p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
 ### -param <i>Srb</i> [in]
@@ -87,18 +87,6 @@ SCSI_PHYSICAL_ADDRESS ScsiPortGetPhysicalAddress(
 <p><b>ScsiPortGetPhysicalAddress</b> returns the corresponding physical address for a given <i>VirtualAddress</i>. If the given address cannot be converted, it returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>Miniport drivers of bus-master HBAs call <b>ScsiPortGetPhysicalAddress</b> to get mapped physical address ranges to be used during DMA operations. For example, <b>ScsiPortGetPhysicalAddress</b> can be used to build a scatter/gather list for data transfers that span pages. Note that the <i>Length</i> returned can be greater than the size of the <b>DataBuffer</b> in a given SRB.</p>
-
-<p>If a non-<b>NULL</b><i>Srb</i> is passed, the <i>VirtualAddress</i> either must be within the range of the <b>DataBuffer</b> of the SRB or must be a pointer from the <b>SenseInfoBuffer</b>. Otherwise, the given <i>VirtualAddress</i> must be in the miniport driver's uncached extension, the <b>SrbExtension</b>, or the<b> SenseInfoBuffer</b>.</p>
-
-<p>A miniport driver can call <b>ScsiPortGetPhysicalAddress</b> to translate an extension address only if that miniport driver's <b>DriverEntry</b> routine set <b>NeedPhysicalAddresses</b> to <b>TRUE</b> in the HW_INITIALIZATION_DATA when it called <b>ScsiPortInitialize</b>.</p>
-
-<p>Due to constraints on some buses, such as ISA, the address returned by this routine is not guaranteed to match the address returned by an analogous outside routine (such as <b>MmGetPhysicalAddress</b>). A miniport driver should call only <b>ScsiPort</b><i>Xxx</i> routines to be portable.</p>
-
-<p><b>ScsiPortGetPhysicalAddress</b> uses <b>SCSI_PHYSICAL_ADDRESS</b> to represent physical addresses.</p>
-
-<p>The <b>SCSI_PHYSICAL_ADDRESS</b> type is an operating system-independent data type that SCSI miniport drivers use to represent either a physical addresses or a bus-relative address. </p>
-
 <p>Miniport drivers of bus-master HBAs call <b>ScsiPortGetPhysicalAddress</b> to get mapped physical address ranges to be used during DMA operations. For example, <b>ScsiPortGetPhysicalAddress</b> can be used to build a scatter/gather list for data transfers that span pages. Note that the <i>Length</i> returned can be greater than the size of the <b>DataBuffer</b> in a given SRB.</p>
 
 <p>If a non-<b>NULL</b><i>Srb</i> is passed, the <i>VirtualAddress</i> either must be within the range of the <b>DataBuffer</b> of the SRB or must be a pointer from the <b>SenseInfoBuffer</b>. Otherwise, the given <i>VirtualAddress</i> must be in the miniport driver's uncached extension, the <b>SrbExtension</b>, or the<b> SenseInfoBuffer</b>.</p>
@@ -148,19 +136,19 @@ SCSI_PHYSICAL_ADDRESS ScsiPortGetPhysicalAddress(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557456">HW_INITIALIZATION_DATA (SCSI)</a>
+<a href="storage.hw_initialization_data__scsi_">HW_INITIALIZATION_DATA (SCSI)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
+<a href="storage.driverentry_of_scsi_miniport_driver">DriverEntry of SCSI Miniport Driver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564639">ScsiPortGetUncachedExtension</a>
+<a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564643">ScsiPortGetVirtualAddress</a>
+<a href="..\srb\nf-srb-scsiportgetvirtualaddress.md">ScsiPortGetVirtualAddress</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

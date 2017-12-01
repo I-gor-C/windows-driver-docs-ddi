@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_ongetsupportedevents.htm
 old-project: sensors
 ms.assetid: b323f803-56fb-44db-9b88-be25062c08ff
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorDriver, OnGetSupportedEvents, ISensorDriver::OnGetSupportedEvents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545623">ISensorDriver::OnGetSupportedEvents</a> method retrieves the list of events that the specified sensor can raise.</p>
+<p>The <a href="sensors.isensordriver_ongetsupportedevents">ISensorDriver::OnGetSupportedEvents</a> method retrieves the list of events that the specified sensor can raise.</p>
 
 
 ## -syntax
@@ -80,10 +80,6 @@ HRESULT OnGetSupportedEvents(
 <p>If the operation succeeds, this method returns S_OK. Otherwise, this method returns one of the error codes that are defined in Winerror.h.</p>
 
 ## -remarks
-<p>Event IDs are represented by <b>GUID</b>s. Platform-defined events are defined in sensors.h. </p>
-
-<p>You must use CoTaskMemAlloc to create the event ID buffer. The sensor class extension frees this memory.</p>
-
 <p>Event IDs are represented by <b>GUID</b>s. Platform-defined events are defined in sensors.h. </p>
 
 <p>You must use CoTaskMemAlloc to create the event ID buffer. The sensor class extension frees this memory.</p>

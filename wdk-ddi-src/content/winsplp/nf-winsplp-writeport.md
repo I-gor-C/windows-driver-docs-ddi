@@ -88,28 +88,9 @@ BOOL WritePort(
 
 ## -remarks
 <p>
-<a href="NULL">Language monitors</a> and port monitor server DLLs are required to define a <code>WritePort</code> function and include the function's address in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557532">MONITOR2</a> structure.</p>
+<a href="NULL">Language monitors</a> and port monitor server DLLs are required to define a <code>WritePort</code> function and include the function's address in a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure.</p>
 
-<p>The handle received as the function's <i>hPort</i> argument is the port handle that the monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559593">OpenPort</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559596">OpenPortEx</a> function supplied.</p>
-
-<p>Typically, a language monitor's <code>WritePort</code> function adds language-specific commands to the data stream contained in the buffer pointed to by <i>pBuffer</i>, and then passes the modified data stream to the port monitor's <code>WritePort</code> function.</p>
-
-<p>A port monitor server DLL's <code>WritePort</code> function usually calls <b>WriteFile</b> (described in the Microsoft Windows SDK documentation) to send the data stream to the kernel-mode port driver.</p>
-
-<p>A typical print job consists of multiple calls to <code>WritePort</code>. Each call can have a different <i>cbBuf</i> value.</p>
-
-<p>The function should return the number of bytes successfully written by placing the number in the location pointed to by <i>pcbWritten</i>. For language monitors, this number must not include the number of extra, language-specific bytes added to the data stream.</p>
-
-<p>The spooler determines the success or failure of the write operation by checking <code>WritePort</code>'s return value, not the returned byte count. So a returned byte count of zero does not represent a failed write unless the function returns <b>FALSE</b>.</p>
-
-<p>Some sort of system-implemented or monitor-implemented time-out mechanism must ensure that the <code>WritePort</code> function will return within a reasonable amount of time, to avoid stalling the spooler.</p>
-
-<p>It is acceptable for a language monitor to call a port monitor's <code>WritePort</code> routine outside of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562710">StartDocPort</a>/<a href="https://msdn.microsoft.com/library/windows/hardware/ff548742">EndDocPort</a> pair. However, some port monitors might fail such a call, so the language monitor must be written to handle this failure.</p>
-
-<p>
-<a href="NULL">Language monitors</a> and port monitor server DLLs are required to define a <code>WritePort</code> function and include the function's address in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557532">MONITOR2</a> structure.</p>
-
-<p>The handle received as the function's <i>hPort</i> argument is the port handle that the monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559593">OpenPort</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559596">OpenPortEx</a> function supplied.</p>
+<p>The handle received as the function's <i>hPort</i> argument is the port handle that the monitor's <a href="..\winsplp\nf-winsplp-openport.md">OpenPort</a> or <a href="print.openportex">OpenPortEx</a> function supplied.</p>
 
 <p>Typically, a language monitor's <code>WritePort</code> function adds language-specific commands to the data stream contained in the buffer pointed to by <i>pBuffer</i>, and then passes the modified data stream to the port monitor's <code>WritePort</code> function.</p>
 
@@ -123,7 +104,7 @@ BOOL WritePort(
 
 <p>Some sort of system-implemented or monitor-implemented time-out mechanism must ensure that the <code>WritePort</code> function will return within a reasonable amount of time, to avoid stalling the spooler.</p>
 
-<p>It is acceptable for a language monitor to call a port monitor's <code>WritePort</code> routine outside of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562710">StartDocPort</a>/<a href="https://msdn.microsoft.com/library/windows/hardware/ff548742">EndDocPort</a> pair. However, some port monitors might fail such a call, so the language monitor must be written to handle this failure.</p>
+<p>It is acceptable for a language monitor to call a port monitor's <code>WritePort</code> routine outside of a <a href="print.startdocport">StartDocPort</a>/<a href="print.enddocport">EndDocPort</a> pair. However, some port monitors might fail such a call, so the language monitor must be written to handle this failure.</p>
 
 ## -requirements
 <table>
@@ -152,19 +133,19 @@ BOOL WritePort(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557532">MONITOR2</a>
+<a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559593">OpenPort</a>
+<a href="..\winsplp\nf-winsplp-openport.md">OpenPort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559596">OpenPortEx</a>
+<a href="print.openportex">OpenPortEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562710">StartDocPort</a>
+<a href="print.startdocport">StartDocPort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548742">EndDocPort</a>
+<a href="print.enddocport">EndDocPort</a>
 </dt>
 </dl>
 <p> </p>

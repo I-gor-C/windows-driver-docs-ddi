@@ -74,7 +74,7 @@ typedef struct _D3DDDIARG_EXTENSIONEXECUTE {
 ### -field <b>pPrivateInput</b>
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562916">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the extension operation.</p>
+<p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatedata.md">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the extension operation.</p>
 </dd>
 
 ### -field <b>pPrivateOutput</b>
@@ -93,7 +93,7 @@ typedef struct _D3DDDIARG_EXTENSIONEXECUTE {
 
 <dd>
 <p>
-      [in] A pointer to a list of <a href="https://msdn.microsoft.com/library/windows/hardware/ff562914">DXVADDI_PRIVATEBUFFER</a> structures that describe private buffers that an extension device uses to perform an extended operation.
+      [in] A pointer to a list of <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatebuffer.md">DXVADDI_PRIVATEBUFFER</a> structures that describe private buffers that an extension device uses to perform an extended operation.
      </p>
 </dd>
 </dl>
@@ -129,10 +129,10 @@ typedef struct _D3DDDIARG_EXTENSIONEXECUTE {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createextensiondevice.md">CreateExtensionDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562914">DXVADDI_PRIVATEBUFFER</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatebuffer.md">DXVADDI_PRIVATEBUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562916">DXVADDI_PRIVATEDATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatedata.md">DXVADDI_PRIVATEDATA</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-extensionexecute.md">ExtensionExecute</a>

@@ -135,11 +135,7 @@ typedef enum _USB_CONNECTION_STATUS {
 </dl>
 
 ## -remarks
-<p>The USB bus driver reports connection status in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540094">USB_NODE_CONNECTION_INFORMATION_EX</a> structure in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537321">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> request.</p>
-
-<p>The USB bus driver reports connection status in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540094">USB_NODE_CONNECTION_INFORMATION_EX</a> structure in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537321">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> request.</p>
-
-<p>The USB bus driver reports connection status in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540094">USB_NODE_CONNECTION_INFORMATION_EX</a> structure in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537321">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> request.</p>
+<p>The USB bus driver reports connection status in a <a href="..\usbioctl\ns-usbioctl--usb-node-connection-information-ex.md">USB_NODE_CONNECTION_INFORMATION_EX</a> structure in response to an <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-information-ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> request.</p>
 
 ## -requirements
 <table>
@@ -158,13 +154,13 @@ typedef enum _USB_CONNECTION_STATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540094">USB_NODE_CONNECTION_INFORMATION_EX</a>
+<a href="..\usbioctl\ns-usbioctl--usb-node-connection-information-ex.md">USB_NODE_CONNECTION_INFORMATION_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537321">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-information-ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+<a href="buses.usb_enumerations">USB Constants and Enumerations</a>
 </dt>
 </dl>
 <p> </p>

@@ -83,7 +83,7 @@ typedef struct _DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS {
 ### -field <b>OverlayCaps</b>
 
 <dd>
-<p>The overlay capabilities, given as a bitwise <b>OR</b> of values from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780286">DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS</a> enumeration.</p>
+<p>The overlay capabilities, given as a bitwise <b>OR</b> of values from the <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-multiplane-overlay-feature-caps.md">DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS</a> enumeration.</p>
 </dd>
 
 ### -field <b>StereoCaps</b>

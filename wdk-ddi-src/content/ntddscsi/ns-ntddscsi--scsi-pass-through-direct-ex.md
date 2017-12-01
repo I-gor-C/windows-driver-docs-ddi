@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>SCSI_PASS_THROUGH_DIRECT_EX</b> structure is used in conjunction with an <a href="https://msdn.microsoft.com/library/windows/hardware/jj602800">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a> request to instruct the port driver to send an embedded SCSI command to the target device. <b>SCSI_PASS_THROUGH_DIRECT_EX</b> can contain a bi-directional data transfers and a variable length command data block.</p>
+<p>The <b>SCSI_PASS_THROUGH_DIRECT_EX</b> structure is used in conjunction with an <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-pass-through-direct-ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a> request to instruct the port driver to send an embedded SCSI command to the target device. <b>SCSI_PASS_THROUGH_DIRECT_EX</b> can contain a bi-directional data transfers and a variable length command data block.</p>
 
 
 ## -syntax
@@ -175,7 +175,7 @@ typedef struct _SCSI_PASS_THROUGH_DIRECT_EX {
 ### -field <b>StorAddressOffset</b>
 
 <dd>
-<p>The location of the target device's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451521">STOR_ADDR_BTL8</a> address structure, in bytes, from the beginning of this structure.</p>
+<p>The location of the target device's <a href="..\scsi\ns-scsi--stor-addr-btl8.md">STOR_ADDR_BTL8</a> address structure, in bytes, from the beginning of this structure.</p>
 </dd>
 
 ### -field <b>SenseInfoOffset</b>
@@ -216,7 +216,7 @@ typedef struct _SCSI_PASS_THROUGH_DIRECT_EX {
 </dl>
 
 ## -remarks
-<p>The <b>SCSI_PASS_THROUGH_DIRECT_EX</b> structure is used with <a href="https://msdn.microsoft.com/library/windows/hardware/jj602800">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>. With this request, the system locks down the buffer in user memory and the device accesses this memory directly. For a double-buffered equivalent of this device control request see <b>IOCTL_SCSI_PASS_THROUGH_EX</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/jj553715">SCSI_PASS_THROUGH_EX</a>.</p>
+<p>The <b>SCSI_PASS_THROUGH_DIRECT_EX</b> structure is used with <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-pass-through-direct-ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>. With this request, the system locks down the buffer in user memory and the device accesses this memory directly. For a double-buffered equivalent of this device control request see <b>IOCTL_SCSI_PASS_THROUGH_EX</b> and <a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through-ex.md">SCSI_PASS_THROUGH_EX</a>.</p>
 
 ## -requirements
 <table>
@@ -243,16 +243,16 @@ typedef struct _SCSI_PASS_THROUGH_DIRECT_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560521">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-pass-through-direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj602800">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-pass-through-direct-ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565346">SCSI_PASS_THROUGH_DIRECT</a>
+<a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through-direct.md">SCSI_PASS_THROUGH_DIRECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451521">STOR_ADDR_BTL8</a>
+<a href="..\scsi\ns-scsi--stor-addr-btl8.md">STOR_ADDR_BTL8</a>
 </dt>
 </dl>
 <p> </p>

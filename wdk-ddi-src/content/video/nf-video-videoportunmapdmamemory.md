@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>The <b>VideoPortUnmapDmaMemory</b> function is <b>obsolete</b> in Windows 2000 and later.</p>
-<p><b>VideoPortUnmapDmaMemory</b> unmaps a range of memory previously mapped by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570330">VideoPortMapDmaMemory</a>.</p>
+<p><b>VideoPortUnmapDmaMemory</b> unmaps a range of memory previously mapped by <a href="..\video\nf-video-videoportmapdmamemory.md">VideoPortMapDmaMemory</a>.</p>
 
 
 ## -syntax
@@ -88,8 +88,6 @@ BOOLEAN VideoPortUnmapDmaMemory(
 <p><b>VideoPortUnmapDmaMemory</b> always <b>FALSE</b>.</p>
 
 ## -remarks
-<p>See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bus-Master DMA in Video Miniport Drivers</a> for information about packet-based and common-buffer DMA transfers.</p>
-
 <p>See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bus-Master DMA in Video Miniport Drivers</a> for information about packet-based and common-buffer DMA transfers.</p>
 
 ## -requirements

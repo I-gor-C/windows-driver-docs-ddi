@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>FltReleaseContexts</b> releases each context in a given <a href="https://msdn.microsoft.com/library/windows/hardware/ff544812">FLT_RELATED_CONTEXTS</a> structure. </p>
+<p><b>FltReleaseContexts</b> releases each context in a given <a href="..\fltkernel\ns-fltkernel--flt-related-contexts.md">FLT_RELATED_CONTEXTS</a> structure. </p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ VOID FltReleaseContexts(
 ### -param <i>Contexts</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544812">FLT_RELATED_CONTEXTS</a> structure. </p>
+<p>Pointer to the <a href="..\fltkernel\ns-fltkernel--flt-related-contexts.md">FLT_RELATED_CONTEXTS</a> structure. </p>
 </dd>
 </dl>
 
@@ -65,19 +65,9 @@ VOID FltReleaseContexts(
 <p>None </p>
 
 ## -remarks
-<p><b>FltReleaseContexts</b> decrements the reference count on all contexts in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544812">FLT_RELATED_CONTEXTS</a> structure and sets all members of the structure to NULL_CONTEXT. </p>
+<p><b>FltReleaseContexts</b> decrements the reference count on all contexts in the <a href="..\fltkernel\ns-fltkernel--flt-related-contexts.md">FLT_RELATED_CONTEXTS</a> structure and sets all members of the structure to NULL_CONTEXT. </p>
 
-<p>To get the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544812">FLT_RELATED_CONTEXTS</a> structure for a given minifilter driver for a given I/O request, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff542997">FltGetContexts</a>. </p>
-
-<p>For more information about context reference counting, see <a href="ifsk.referencing_contexts">Referencing Contexts</a>. </p>
-
-<p>Callers of <b>FltReleaseContexts</b> must be running at IRQL &lt;= DISPATCH_LEVEL if all contexts were allocated from nonpaged pool. If any contexts were allocated from paged pool, callers must be running at IRQL &lt;= APC_LEVEL. </p>
-
-<p>When each context's reference count reaches zero, the context is freed immediately if the caller is running at IRQL &lt;= APC_LEVEL. If the caller is running at IRQL DISPATCH_LEVEL, a work item is scheduled to free the context. </p>
-
-<p><b>FltReleaseContexts</b> decrements the reference count on all contexts in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544812">FLT_RELATED_CONTEXTS</a> structure and sets all members of the structure to NULL_CONTEXT. </p>
-
-<p>To get the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544812">FLT_RELATED_CONTEXTS</a> structure for a given minifilter driver for a given I/O request, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff542997">FltGetContexts</a>. </p>
+<p>To get the <a href="..\fltkernel\ns-fltkernel--flt-related-contexts.md">FLT_RELATED_CONTEXTS</a> structure for a given minifilter driver for a given I/O request, call <a href="..\fltkernel\nf-fltkernel-fltgetcontexts.md">FltGetContexts</a>. </p>
 
 <p>For more information about context reference counting, see <a href="ifsk.referencing_contexts">Referencing Contexts</a>. </p>
 
@@ -140,19 +130,19 @@ VOID FltReleaseContexts(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544629">FLT_CONTEXT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel--flt-context-registration.md">FLT_CONTEXT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544812">FLT_RELATED_CONTEXTS</a>
+<a href="..\fltkernel\ns-fltkernel--flt-related-contexts.md">FLT_RELATED_CONTEXTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541710">FltAllocateContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542997">FltGetContexts</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetcontexts.md">FltGetContexts</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544314">FltReleaseContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 </dt>
 </dl>
 <p> </p>

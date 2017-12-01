@@ -7,7 +7,7 @@ old-location: stream\kse_pin.htm
 old-project: stream
 ms.assetid: 6936F732-ECAA-4CA7-B2AF-CA22A5C93FC9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSE_PIN, KSE_PIN, *PKSE_PIN
 ms.prod: windows-hardware
 ms.technology: windows-devices

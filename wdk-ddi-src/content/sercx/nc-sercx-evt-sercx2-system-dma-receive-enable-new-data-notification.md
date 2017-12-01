@@ -61,7 +61,7 @@ VOID EvtSerCx2SystemDmaReceiveEnableNewDataNotification(
 ### -param <i>SystemDmaReceive</i> [in]
 
 <dd>
-<p>A <a href="serports.sercx2systemdmareceive_object_handle">SERCX2SYSTEMDMARECEIVE</a> handle to a system-DMA-receive object. The serial controller driver previously called the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265279">SerCx2SystemDmaReceiveCreate</a> method to create this object.</p>
+<p>A <a href="serports.sercx2systemdmareceive_object_handle">SERCX2SYSTEMDMARECEIVE</a> handle to a system-DMA-receive object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2systemdmareceivecreate.md">SerCx2SystemDmaReceiveCreate</a> method to create this object.</p>
 </dd>
 </dl>
 
@@ -69,33 +69,9 @@ VOID EvtSerCx2SystemDmaReceiveEnableNewDataNotification(
 <p>None.</p>
 
 ## -remarks
-<p>Your serial controller driver can, as an option, implement this function. If implemented, the driver registers the function in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265279">SerCx2SystemDmaReceiveCreate</a> call that creates the system-DMA-receive object.</p>
+<p>Your serial controller driver can, as an option, implement this function. If implemented, the driver registers the function in the <a href="..\sercx\nf-sercx-sercx2systemdmareceivecreate.md">SerCx2SystemDmaReceiveCreate</a> call that creates the system-DMA-receive object.</p>
 
-<p>After the <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> function is called to enable a new-data notification for a system-DMA-receive transaction, the serial controller driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265283">SerCx2SystemDmaReceiveNewDataNotification</a> method to notify SerCx2 when the driver detects that one or more bytes of received data either are ready to be transferred or have already been transferred by the system DMA controller.</p>
-
-<p>The new-data notification enabled by the <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> function is a one-shot notification. After this function is called and the serial controller driver sends a new-data notification to SerCx2, no further notification is sent until SerCx2 calls the function again to enable another notification.</p>
-
-<p>The <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> function typically enables an interrupt to be triggered when the serial controller receives data from the peripheral device.</p>
-
-<p>No more than one new-data notification can be pending at a time. After SerCx2 calls the <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> function to enable a new-data notification, SerCx2 does not call this function again until the controller driver calls <b>SerCx2SystemDmaReceiveNewDataNotification</b>.</p>
-
-<p>A pending new-data notification can be canceled if the associated read request times out or is canceled. To cancel a new-data notification for a system-DMA-receive transaction, SerCx2 calls the <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-receive-cancel-new-data-notification.md">EvtSerCx2SystemDmaReceiveCancelNewDataNotification</a> event callback function. A driver that implements an <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> function must also implement an <i>EvtSerCx2SystemDmaReceiveCancelNewDataNotification</i> function.</p>
-
-<p>SerCx2 uses new-data notifications to efficiently manage interval time-outs that occur during the handling of read requests that are processed as system-DMA-receive transactions.</p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265343">SerCx2 System-DMA-Receive Transactions</a>.</p>
-
-<p>To define an <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define an <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> callback function that is named <code>MySystemDmaReceiveEnableNewDataNotification</code>, use the <b>EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION</b> function type, as shown in this code example:</p>
-
-<p>Then, implement your callback function as follows:</p>
-
-<p>The <b>EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION</b> function type is defined in the Sercx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
-
-<p>Your serial controller driver can, as an option, implement this function. If implemented, the driver registers the function in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265279">SerCx2SystemDmaReceiveCreate</a> call that creates the system-DMA-receive object.</p>
-
-<p>After the <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> function is called to enable a new-data notification for a system-DMA-receive transaction, the serial controller driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265283">SerCx2SystemDmaReceiveNewDataNotification</a> method to notify SerCx2 when the driver detects that one or more bytes of received data either are ready to be transferred or have already been transferred by the system DMA controller.</p>
+<p>After the <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> function is called to enable a new-data notification for a system-DMA-receive transaction, the serial controller driver must call the <a href="..\sercx\nf-sercx-sercx2systemdmareceivenewdatanotification.md">SerCx2SystemDmaReceiveNewDataNotification</a> method to notify SerCx2 when the driver detects that one or more bytes of received data either are ready to be transferred or have already been transferred by the system DMA controller.</p>
 
 <p>The new-data notification enabled by the <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> function is a one-shot notification. After this function is called and the serial controller driver sends a new-data notification to SerCx2, no further notification is sent until SerCx2 calls the function again to enable another notification.</p>
 
@@ -160,7 +136,7 @@ VOID EvtSerCx2SystemDmaReceiveEnableNewDataNotification(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544071">DMA_OPERATIONS</a>
+<a href="..\wdm\ns-wdm--dma-operations.md">DMA_OPERATIONS</a>
 </dt>
 <dt>
 <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-receive-cancel-new-data-notification.md">EvtSerCx2SystemDmaReceiveCancelNewDataNotification</a>
@@ -169,16 +145,16 @@ VOID EvtSerCx2SystemDmaReceiveEnableNewDataNotification(
 <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-receive-cleanup-transaction.md">EvtSerCx2SystemDmaReceiveCleanupTransaction</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560782">ReadDmaCounter</a>
+<a href="kernel.readdmacounter">ReadDmaCounter</a>
 </dt>
 <dt>
 <a href="serports.sercx2systemdmareceive_object_handle">SERCX2SYSTEMDMARECEIVE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265279">SerCx2SystemDmaReceiveCreate</a>
+<a href="..\sercx\nf-sercx-sercx2systemdmareceivecreate.md">SerCx2SystemDmaReceiveCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265283">SerCx2SystemDmaReceiveNewDataNotification</a>
+<a href="..\sercx\nf-sercx-sercx2systemdmareceivenewdatanotification.md">SerCx2SystemDmaReceiveNewDataNotification</a>
 </dt>
 </dl>
 <p> </p>

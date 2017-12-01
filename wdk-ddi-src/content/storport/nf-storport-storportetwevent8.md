@@ -492,10 +492,6 @@ ULONG StorPortEtwEvent8(
 
 <p>Events generated from StorPort miniport drivers are published to the "Microsoft-Windows-Storage-Storport/Diagnose" ETW channel.</p>
 
-<p>If any parameter is not named, ParameterXName = NULL, the routine will set the corresponding parameter value to 0.</p>
-
-<p>Events generated from StorPort miniport drivers are published to the "Microsoft-Windows-Storage-Storport/Diagnose" ETW channel.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -539,10 +535,10 @@ ULONG StorPortEtwEvent8(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn582028">StorPortEtwEvent2</a>
+<a href="..\storport\nf-storport-storportetwevent2.md">StorPortEtwEvent2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn582029">StorPortEtwEvent4</a>
+<a href="..\storport\nf-storport-storportetwevent4.md">StorPortEtwEvent4</a>
 </dt>
 </dl>
 <p> </p>

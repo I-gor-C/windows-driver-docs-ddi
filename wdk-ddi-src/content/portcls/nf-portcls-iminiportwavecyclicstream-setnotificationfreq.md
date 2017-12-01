@@ -7,7 +7,7 @@ old-location: audio\iminiportwavecyclicstream_setnotificationfreq.htm
 old-project: audio
 ms.assetid: b909c11c-de56-43e8-b339-b92249bc7e1c
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IMiniportWaveCyclicStream, SetNotificationFreq, IMiniportWaveCyclicStream::SetNotificationFreq
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,11 +72,7 @@ ULONG SetNotificationFreq(
 <p><code>SetNotificationFreq</code> returns the new notification interval expressed in milliseconds. In all current Windows releases, the port driver ignores this value.</p>
 
 ## -remarks
-<p>During each notification interrupt, the miniport driver's interrupt service routine calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536903">IPortWaveCyclic::Notify</a> method with the stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536994">IServiceGroup</a> object as the call parameter. This is the <b>IServiceGroup</b> object that the miniport driver previously output to the port driver during the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a> call.</p>
-
-<p>In all current Windows releases, the WaveCyclic port driver specifies an <i>Interval</i> value of 10 milliseconds. This value might change in future releases. </p>
-
-<p>During each notification interrupt, the miniport driver's interrupt service routine calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536903">IPortWaveCyclic::Notify</a> method with the stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536994">IServiceGroup</a> object as the call parameter. This is the <b>IServiceGroup</b> object that the miniport driver previously output to the port driver during the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a> call.</p>
+<p>During each notification interrupt, the miniport driver's interrupt service routine calls the <a href="audio.iportwavecyclic_notify">IPortWaveCyclic::Notify</a> method with the stream's <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> object as the call parameter. This is the <b>IServiceGroup</b> object that the miniport driver previously output to the port driver during the <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a> call.</p>
 
 <p>In all current Windows releases, the WaveCyclic port driver specifies an <i>Interval</i> value of 10 milliseconds. This value might change in future releases. </p>
 
@@ -115,18 +111,18 @@ ULONG SetNotificationFreq(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536715">IMiniportWaveCyclicStream</a>
+<a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536903">IPortWaveCyclic::Notify</a>
+<a href="audio.iportwavecyclic_notify">IPortWaveCyclic::Notify</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536994">IServiceGroup</a>
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a>
+<a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IMiniportWaveCyclicStream::SetNotificationFreq method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IMiniportWaveCyclicStream::SetNotificationFreq method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

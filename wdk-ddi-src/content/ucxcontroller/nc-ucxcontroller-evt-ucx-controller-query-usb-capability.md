@@ -67,7 +67,7 @@ typedef EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY PEVT_UCX_CONTROLLER_QUERY_USB_CA
 ### -param <i>UcxController</i> [in]
 
 <dd>
-<p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a> method.</p>
+<p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
 ### -param <i>CapabilityType</i> [in]
@@ -88,7 +88,7 @@ typedef EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY PEVT_UCX_CONTROLLER_QUERY_USB_CA
 </ul>
 </li>
 </ul>
-<p>   See the Remarks section of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a> for more information.</p>
+<p>   See the Remarks section of <a href="buses.usbd_getcapability">USBD_QueryUsbCapability</a> for more information.</p>
 </dd>
 
 ### -param <i>OutputBufferLength</i> [in]
@@ -126,9 +126,7 @@ typedef EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY PEVT_UCX_CONTROLLER_QUERY_USB_CA
 <p> </p>
 
 ## -remarks
-<p>The UCX client driver registers its <i>EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY</i> implementation with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a> method.</p>
-
-<p>The UCX client driver registers its <i>EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY</i> implementation with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a> method.</p>
+<p>The UCX client driver registers its <i>EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY</i> implementation with the USB host controller extension (UCX) by calling the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 
 ## -requirements
 <table>
@@ -171,7 +169,7 @@ typedef EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY PEVT_UCX_CONTROLLER_QUERY_USB_CA
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a>
+<a href="buses._ucxcontrollercreate">UcxControllerCreate</a>
 </dt>
 </dl>
 <p> </p>

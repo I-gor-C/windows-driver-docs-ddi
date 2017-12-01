@@ -7,7 +7,7 @@ old-location: netvista\ndiscogettapicallid.htm
 old-project: netvista
 ms.assetid: 3cb47545-177f-46ef-aff6-33ad8c9a6974
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCoGetTapiCallId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisCoGetTapiCallId (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisCoGetTapiCallId (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -65,7 +61,7 @@ NDIS_STATUS NdisCoGetTapiCallId(
 <dd>
 <p>Specifies the NDIS handle to the VC. This handle was supplied by NDIS when the VC was originally
      created with the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a> function.</p>
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> function.</p>
 </dd>
 
 ### -param <i>TapiCallId</i> [in, out]
@@ -95,25 +91,7 @@ NDIS_STATUS NdisCoGetTapiCallId(
 
 ## -remarks
 <p>Suppose a call manager calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a> to create a VC for a TAPI
-    call. NDIS in turn supplies the handle to the VC to a client. The client passes this VC handle in a call
-    to the 
-    <b>NdisCoGetTapiCallId</b> function to retrieve a string that identifies the VC. The client can pass this
-    string identifier to a TAPI application to identify the VC.</p>
-
-<p>The client creates a context for each VC that it manages. The client uses 
-    <b>NdisCoGetTapiCallId</b> to retrieve a string identifier for each VC. The client passes each string
-    identifier to a TAPI application to identify each VC. Later, if a TAPI application passes one of these
-    string identifiers down to the client in a VC-related operation, the client must pass this string
-    identifier as a Unicode string in a call to 
-    <a href="..\ndis\nf-ndis-ndisclgetprotocolvccontextfromtapicallid.md">
-    NdisClGetProtocolVcContextFromTapiCallId</a> to get back the correct context for the VC.</p>
-
-<p>For more information about the VAR_STRING structure, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564235">TAPI Objects</a>.</p>
-
-<p>Suppose a call manager calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a> to create a VC for a TAPI
+    <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> to create a VC for a TAPI
     call. NDIS in turn supplies the handle to the VC to a client. The client passes this VC handle in a call
     to the 
     <b>NdisCoGetTapiCallId</b> function to retrieve a string that identifies the VC. The client can pass this
@@ -187,7 +165,7 @@ NDIS_STATUS NdisCoGetTapiCallId(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547924">Irql_Connection_Function</a>
+<a href="devtest.ndis_irql_connection_function">Irql_Connection_Function</a>
 </td>
 </tr>
 </table>
@@ -199,9 +177,9 @@ NDIS_STATUS NdisCoGetTapiCallId(
    NdisClGetProtocolVcContextFromTapiCallId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoGetTapiCallId function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoGetTapiCallId function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -74,7 +74,7 @@ typedef struct D3DDDICB_EVICT {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] Specifies eviction behavior as documented in <a href="https://msdn.microsoft.com/library/windows/hardware/dn906322">D3DDDI_EVICT_FLAGS</a>. </p>
+<p>[in] Specifies eviction behavior as documented in <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-evict-flags.md">D3DDDI_EVICT_FLAGS</a>. </p>
 </dd>
 
 ### -field <b>NumBytesToTrim</b>
@@ -123,7 +123,7 @@ typedef struct D3DDDICB_EVICT {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-evictcb.md">pfnEvictCb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906322">D3DDDI_EVICT_FLAGS</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-evict-flags.md">D3DDDI_EVICT_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

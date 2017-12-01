@@ -7,7 +7,7 @@ old-location: stream\ksproperty_stream.htm
 old-project: stream
 ms.assetid: 1A7C7181-00AF-4AAB-822F-017F11DB9409
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

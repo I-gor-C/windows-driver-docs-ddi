@@ -7,7 +7,7 @@ old-location: stream\facecharacterizationblobheader.htm
 old-project: stream
 ms.assetid: F3BDB935-A8CB-41BA-B912-0B9264FE0B09
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagFaceCharacterizationBlobHeader, FaceCharacterizationBlobHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ typedef struct tagFaceCharacterizationBlobHeader {
 ### -field <b>Size</b>
 
 <dd>
-<p>Size of this header + all following <a href="https://msdn.microsoft.com/library/windows/hardware/dn927642">FaceCharacterization</a> structures.</p>
+<p>Size of this header + all following <a href="stream.facecharacterization">FaceCharacterization</a> structures.</p>
 </dd>
 
 ### -field <b>Count</b>
 
 <dd>
-<p>Number of <b>FaceCharacterization</b> structures in the blob. Must match the number of <a href="https://msdn.microsoft.com/library/windows/hardware/dn927644">FaceRectInfo</a> structures in <a href="https://msdn.microsoft.com/library/windows/hardware/dn927645">FaceRectInfoBlobHeader</a>.</p>
+<p>Number of <b>FaceCharacterization</b> structures in the blob. Must match the number of <a href="stream.facerectinfo">FaceRectInfo</a> structures in <a href="stream.facerectinfoblobheader">FaceRectInfoBlobHeader</a>.</p>
 </dd>
 </dl>
 

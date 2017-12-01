@@ -7,7 +7,7 @@ old-location: wdf\wdfchildlistgetdevice.htm
 old-project: wdf
 ms.assetid: 5d51ec82-4891-47f1-8fc1-b20cb611d7fe
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfChildListGetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,10 +74,6 @@ WDFDEVICE WdfChildListGetDevice(
 
 <p>The following code example obtains a handle to the device object that represents the parent device of a child list.</p>
 
-<p>For more information about child lists, see <a href="wdf.dynamic_enumeration">Dynamic Enumeration</a>.</p>
-
-<p>The following code example obtains a handle to the device object that represents the parent device of a child list.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -131,7 +127,7 @@ WDFDEVICE WdfChildListGetDevice(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>

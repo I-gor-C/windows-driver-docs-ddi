@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>HidP_MaxUsageListLength</b> routine returns the maximum number of <a href="NULL">HID usages</a> that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539742">HidP_GetUsages</a> can return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>.</p>
+<p>The <b>HidP_MaxUsageListLength</b> routine returns the maximum number of <a href="NULL">HID usages</a> that <a href="..\hidpi\nf-hidpi-hidp-getusages.md">HidP_GetUsages</a> can return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ ULONG __stdcall HidP_MaxUsageListLength(
 ### -param <i>ReportType</i> [in]
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator value that indicates the report type.</p>
+<p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the report type.</p>
 </dd>
 
 ### -param <i>UsagePage</i> [in]
@@ -76,11 +76,9 @@ ULONG __stdcall HidP_MaxUsageListLength(
 </dl>
 
 ## -returns
-<p>If successful, <b>HidP_MaxUsageListLength</b> returns the maximum number of <a href="NULL">HID usages</a> that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539742">HidP_GetUsages</a> can return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>. If the specified preparsed data or report type is not valid, the routine returns zero.</p>
+<p>If successful, <b>HidP_MaxUsageListLength</b> returns the maximum number of <a href="NULL">HID usages</a> that <a href="..\hidpi\nf-hidpi-hidp-getusages.md">HidP_GetUsages</a> can return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>. If the specified preparsed data or report type is not valid, the routine returns zero.</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
 <p>For more information, see <a href="NULL">HID Collections</a>. </p>
 
 ## -requirements
@@ -142,7 +140,7 @@ ULONG __stdcall HidP_MaxUsageListLength(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539742">HidP_GetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp-getusages.md">HidP_GetUsages</a>
 </dt>
 </dl>
 <p> </p>

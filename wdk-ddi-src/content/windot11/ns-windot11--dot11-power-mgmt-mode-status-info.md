@@ -7,7 +7,7 @@ old-location: netvista\dot11_power_mgmt_mode_status_info.htm
 old-project: netvista
 ms.assetid: A373EA34-A7CF-47B3-8194-438BE7F4FC9C
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_POWER_MGMT_MODE_STATUS_INFO, DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

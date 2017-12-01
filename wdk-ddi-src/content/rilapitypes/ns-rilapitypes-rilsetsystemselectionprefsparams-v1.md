@@ -7,7 +7,7 @@ old-location: netvista\rilsetsystemselectionprefsparams_v1_2.htm
 old-project: netvista
 ms.assetid: 84e21a8a-f393-415a-87b6-48700044c9a9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSETSYSTEMSELECTIONPREFSPARAMS_V1, RILSETSYSTEMSELECTIONPREFSPARAMS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices

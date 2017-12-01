@@ -242,7 +242,7 @@ VOID FltNotifyFilterChangeDirectory(
 </td>
 </tr>
 </table></span></div>
-<p>For more information about the <i>TargetContext</i> parameter, see the <i>TargetContext</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547041">FsRtlNotifyFullReportChange</a> routine. </p>
+<p>For more information about the <i>TargetContext</i> parameter, see the <i>TargetContext</i> parameter of the <a href="ifsk.fsrtlnotifyfullreportchange">FsRtlNotifyFullReportChange</a> routine. </p>
 </dd>
 
 ### -param <i>SubjectContext</i> [in, optional]
@@ -254,7 +254,7 @@ VOID FltNotifyFilterChangeDirectory(
 ### -param <i>FilterCallback</i> [in, optional]
 
 <dd>
-<p>Optional pointer to a callback routine to be invoked when a change occurs to the directory. If this callback routine returns <b>TRUE</b>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547018">FsRtlNotifyFilterReportChange</a> completes the pending IRP_MN_NOTIFY_CHANGE_DIRECTORY operations in the notify list; otherwise, it does not. Such a caller-supplied routine is declared as follows: </p>
+<p>Optional pointer to a callback routine to be invoked when a change occurs to the directory. If this callback routine returns <b>TRUE</b>, <a href="ifsk.fsrtlnotifyfilterreportchange">FsRtlNotifyFilterReportChange</a> completes the pending IRP_MN_NOTIFY_CHANGE_DIRECTORY operations in the notify list; otherwise, it does not. Such a caller-supplied routine is declared as follows: </p>
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -276,7 +276,7 @@ VOID FltNotifyFilterChangeDirectory(
 <p>None </p>
 
 ## -remarks
-<p>A minifilter driver can call <b>FltNotifyFilterChangeDirectory</b> from the preoperation callback routine (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) that it registered to process notify change directory operations. These operations have a major function code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a> and a minor function code of  IRP_MN_NOTIFY_CHANGE_DIRECTORY. </p>
+<p>A minifilter driver can call <b>FltNotifyFilterChangeDirectory</b> from the preoperation callback routine (<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) that it registered to process notify change directory operations. These operations have a major function code of <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a> and a minor function code of  IRP_MN_NOTIFY_CHANGE_DIRECTORY. </p>
 
 <p>The minifilter driver calls <b>FltNotifyFilterChangeDirectory</b> to create a notify structure to hold the callback data structure for the operation and add the notify structure to the notify list for the current volume. </p>
 
@@ -286,19 +286,7 @@ VOID FltNotifyFilterChangeDirectory(
 
 <p>If the operation's file object has not been cleaned up, <b>FltNotifyFilterChangeDirectory</b> checks whether the notify list already contains a notify structure for the given <i>FsContext</i> value. If such a notify structure is found, and there are pending changes to report, <b>FltNotifyFilterChangeDirectory</b> completes the callback data structure pointed to by the <i>NotifyCallbackData</i> parameter. If a notify structure is found, but there are no pending changes to report, <b>FltNotifyFilterChangeDirectory</b> adds the operation to the notify structure. If no such notify structure is found, <b>FltNotifyFilterChangeDirectory</b> creates a notify structure for the operation and inserts it into the list. </p>
 
-<p>When a change occurs to the directory, the file system calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff547018">FsRtlNotifyFilterReportChange</a> to complete the pending IRP_MN_NOTIFY_CHANGE_DIRECTORY operations in the notify list. </p>
-
-<p>A minifilter driver can call <b>FltNotifyFilterChangeDirectory</b> from the preoperation callback routine (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) that it registered to process notify change directory operations. These operations have a major function code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a> and a minor function code of  IRP_MN_NOTIFY_CHANGE_DIRECTORY. </p>
-
-<p>The minifilter driver calls <b>FltNotifyFilterChangeDirectory</b> to create a notify structure to hold the callback data structure for the operation and add the notify structure to the notify list for the current volume. </p>
-
-<p><b>FltNotifyFilterChangeDirectory</b> does the following:</p>
-
-<p>Checks whether the operation's file object has been cleaned up. If so, <b>FltNotifyFilterChangeDirectory</b> completes the operation with status STATUS_NOTIFY_CLEANUP and does not add it to the notify list. </p>
-
-<p>If the operation's file object has not been cleaned up, <b>FltNotifyFilterChangeDirectory</b> checks whether the notify list already contains a notify structure for the given <i>FsContext</i> value. If such a notify structure is found, and there are pending changes to report, <b>FltNotifyFilterChangeDirectory</b> completes the callback data structure pointed to by the <i>NotifyCallbackData</i> parameter. If a notify structure is found, but there are no pending changes to report, <b>FltNotifyFilterChangeDirectory</b> adds the operation to the notify structure. If no such notify structure is found, <b>FltNotifyFilterChangeDirectory</b> creates a notify structure for the operation and inserts it into the list. </p>
-
-<p>When a change occurs to the directory, the file system calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff547018">FsRtlNotifyFilterReportChange</a> to complete the pending IRP_MN_NOTIFY_CHANGE_DIRECTORY operations in the notify list. </p>
+<p>When a change occurs to the directory, the file system calls <a href="ifsk.fsrtlnotifyfilterreportchange">FsRtlNotifyFilterReportChange</a> to complete the pending IRP_MN_NOTIFY_CHANGE_DIRECTORY operations in the notify list. </p>
 
 ## -requirements
 <table>
@@ -355,13 +343,13 @@ VOID FltNotifyFilterChangeDirectory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547018">FsRtlNotifyFilterReportChange</a>
+<a href="ifsk.fsrtlnotifyfilterreportchange">FsRtlNotifyFilterReportChange</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
+<a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
 </dt>
 </dl>
 <p> </p>

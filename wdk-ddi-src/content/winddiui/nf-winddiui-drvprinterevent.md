@@ -86,7 +86,7 @@ BOOL DrvPrinterEvent(
 <p>PRINTER_EVENT_ATTRIBUTES_CHANGED</p>
 </td>
 <td>
-<p>The attribute bits for a printer have changed. In response to an application's call to the <b>SetPrinter</b> function (described in the Windows SDK documentation), the spooler calls the printer driver's <b>DrvPrinterEvent</b> function, passing the event code in the call. When this event code is used, the <i>lParam</i> parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560858">PRINTER_EVENT_ATTRIBUTES_INFO</a> structure that describes the old and the new attributes.</p>
+<p>The attribute bits for a printer have changed. In response to an application's call to the <b>SetPrinter</b> function (described in the Windows SDK documentation), the spooler calls the printer driver's <b>DrvPrinterEvent</b> function, passing the event code in the call. When this event code is used, the <i>lParam</i> parameter points to a <a href="..\winddiui\ns-winddiui--printer-event-attributes-info.md">PRINTER_EVENT_ATTRIBUTES_INFO</a> structure that describes the old and the new attributes.</p>
 </td>
 </tr>
 <tr>
@@ -185,18 +185,6 @@ BOOL DrvPrinterEvent(
 <p>If the operation succeeds, the function should return <b>TRUE</b>; otherwise, it should return <b>FALSE</b>. Currently, however, the only time the function's return value is checked is when the spooler has called <b>DrvPrinterEvent</b> during processing of the <b>AddPrinter</b> function, with <i>DriverEvent</i> set to PRINTER_EVENT_INITIALIZE. If <b>DrvPrinterEvent</b> returns <b>FALSE</b> in this case, the spooler does not create the printer and instead causes <b>AddPrinter</b> to fail.</p>
 
 ## -remarks
-<p>All <a href="https://msdn.microsoft.com/2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac">printer interface DLLs</a> must provide a <b>DrvPrinterEvent</b> function, and the function must support the PRINTER_EVENT_INITIALIZE event code. Support for all other event codes is optional.</p>
-
-<p>Registry settings stored when handling a PRINTER_EVENT_INITIALIZE event should be stored under the HKEY_LOCAL_MACHINE key by calling <b>SetPrinterData</b>. For the PRINTER_EVENT_INITIALIZE and PRINTER_EVENT_DELETE event codes, the spooler verifies that the caller has administrative privilege and calls <b>DrvPrinterEvent</b> while impersonating the caller.</p>
-
-<p>In contrast, if you need to store settings in the registry when handling a PRINTER_EVENT_ADD_CONNECTION event, the printer interface DLL should write them under the HKEY_CURRENT_USER key so that they are stored on a per-user basis. Then if a user with a roaming profile logs onto another system, the connection follows the user. The <b>DrvPrinterEvent</b> function is called only when the user first makes the connection, and not when the user subsequently logs onto other systems using the roaming profile.</p>
-
-<p>For the PRINTER_EVENT_ADD_CONNECTION and PRINTER_EVENT_DELETE_CONNECTION event codes, the <b>DrvPrinterEvent</b> function's execution context is the calling application (usually the Print Folder), and the function can display a user interface. For all other event codes, the execution context is the print spooler and a user interface cannot be displayed.</p>
-
-<p>An example of a driver that might display a user interface when a connection is made is a FAX driver, which could prompt the user for the name and telephone number of the user (FAX sender), and save the information until the connection is deleted.</p>
-
-<p>An example of the type of file that might be stored in a client cache is a large font-metrics file that contains too much information to be written to the registry. When the <b>DrvPrinterEvent</b> function's event code is PRINTER_EVENT_CACHE_REFRESH, the printer interface DLL can reload the file from the server to ensure the cache is up to date.</p>
-
 <p>All <a href="https://msdn.microsoft.com/2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac">printer interface DLLs</a> must provide a <b>DrvPrinterEvent</b> function, and the function must support the PRINTER_EVENT_INITIALIZE event code. Support for all other event codes is optional.</p>
 
 <p>Registry settings stored when handling a PRINTER_EVENT_INITIALIZE event should be stored under the HKEY_LOCAL_MACHINE key by calling <b>SetPrinterData</b>. For the PRINTER_EVENT_INITIALIZE and PRINTER_EVENT_DELETE event codes, the spooler verifies that the caller has administrative privilege and calls <b>DrvPrinterEvent</b> while impersonating the caller.</p>

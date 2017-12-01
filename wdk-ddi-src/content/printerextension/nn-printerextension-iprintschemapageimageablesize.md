@@ -44,12 +44,12 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaPageImageableSize</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/hh451270">IPrintSchemaElement</a>. <b>IPrintSchemaPageImageableSize</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaPageImageableSize</b> interface inherits from <a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>. <b>IPrintSchemaPageImageableSize</b> also has these types of members:</p>
 
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaPageImageableSize</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973229">ExtentHeightInMicrons</a>
+<a href="print.iprintschemapageimageablesize_extentheightinmicrons">ExtentHeightInMicrons</a>
 </p>
 
 <p>Read-only</p>
@@ -57,7 +57,7 @@ req.product: Windows 10 or later.
 <p>Gets the vertical distance between the origin and the bounding limit of the canvas application media size.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973230">ExtentWidthInMicrons</a>
+<a href="print.iprintschemapageimageablesize_extentwidthinmicrons">ExtentWidthInMicrons</a>
 </p>
 
 <p>Read-only</p>
@@ -65,7 +65,7 @@ req.product: Windows 10 or later.
 <p>Gets the horizontal distance between the origin and the bounding limit of the application media size.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973231">ImageableSizeHeightInMicrons</a>
+<a href="print.iprintschemapageimageablesize_imageablesizeheightinmicrons">ImageableSizeHeightInMicrons</a>
 </p>
 
 <p>Read-only</p>
@@ -73,7 +73,7 @@ req.product: Windows 10 or later.
 <p>Gets the vertical dimension of the application media size relative to the page orientation.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973232">ImageableSizeWidthInMicrons</a>
+<a href="print.iprintschemapageimageablesize_imageablesizewidthinmicrons">ImageableSizeWidthInMicrons</a>
 </p>
 
 <p>Read-only</p>
@@ -81,7 +81,7 @@ req.product: Windows 10 or later.
 <p>Gets the horizontal dimension of the application media size relative to the page orientation.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973233">OriginHeightInMicrons</a>
+<a href="print.iprintschemapageimageablesize_originheightinmicrons">OriginHeightInMicrons</a>
 </p>
 
 <p>Read-only</p>
@@ -89,7 +89,7 @@ req.product: Windows 10 or later.
 <p>Gets the vertical origin of the imageable area relative to the application media size.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973234">OriginWidthInMicrons</a>
+<a href="print.iprintschemapageimageablesize_originwidthinmicrons">OriginWidthInMicrons</a>
 </p>
 
 <p>Read-only</p>

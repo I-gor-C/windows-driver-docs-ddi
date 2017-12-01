@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Defines the duplicated desktop image that is to be released in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439438">D3DKMTOutputDuplReleaseFrame</a> function.</p>
+<p>Defines the duplicated desktop image that is to be released in a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtoutputduplreleaseframe.md">D3DKMTOutputDuplReleaseFrame</a> function.</p>
 
 
 ## -syntax
@@ -104,7 +104,7 @@ typedef struct _D3DKMT_OUTPUTDUPL_RELEASE_FRAME {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439438">D3DKMTOutputDuplReleaseFrame</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtoutputduplreleaseframe.md">D3DKMTOutputDuplReleaseFrame</a>
 </dt>
 </dl>
 <p> </p>

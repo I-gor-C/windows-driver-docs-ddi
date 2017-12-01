@@ -147,7 +147,7 @@ typedef struct D3D10DDIARG_INPUT_ELEMENT_DESC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541674">D3D10DDIARG_CREATEELEMENTLAYOUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createelementlayout.md">D3D10DDIARG_CREATEELEMENTLAYOUT</a>
 </dt>
 </dl>
 <p> </p>

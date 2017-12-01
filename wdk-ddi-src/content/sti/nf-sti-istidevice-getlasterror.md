@@ -66,9 +66,7 @@ HRESULT GetLastError(
 <p>If the operation succeeds, the method returns S_OK. Otherwise, it returns one of the STIERR-prefixed error codes defined in <i>stierr.h</i>.</p>
 
 ## -remarks
-<p>Before calling IStiDevice::GetLastError, clients of the IStiDevice COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a> to obtain an IStiDevice interface pointer, which provides access to a specified device.</p>
-
-<p>Before calling IStiDevice::GetLastError, clients of the IStiDevice COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a> to obtain an IStiDevice interface pointer, which provides access to a specified device.</p>
+<p>Before calling IStiDevice::GetLastError, clients of the IStiDevice COM interface must call <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a> to obtain an IStiDevice interface pointer, which provides access to a specified device.</p>
 
 ## -requirements
 <table>

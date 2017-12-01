@@ -57,7 +57,7 @@ VOID FltReuseCallbackData(
 ### -param <i>CallbackData</i> [in, out]
 
 <dd>
-<p>Pointer to the callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure to be reused. This structure must have been allocated by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541703">FltAllocateCallbackData</a>. This parameter is required and cannot be <b>NULL</b>. </p>
+<p>Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure to be reused. This structure must have been allocated by a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>. This parameter is required and cannot be <b>NULL</b>. </p>
 </dd>
 </dl>
 
@@ -65,27 +65,15 @@ VOID FltReuseCallbackData(
 <p>None </p>
 
 ## -remarks
-<p><b>FltReuseCallbackData</b> reinitializes a callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure so that it can be used in a new I/O operation. <b>FltReuseCallbackData</b> does not change the <b>TargetInstance</b> field or the <b>TargetFileObject</b> field of the callback data structure's I/O parameter block. </p>
+<p><b>FltReuseCallbackData</b> reinitializes a callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure so that it can be used in a new I/O operation. <b>FltReuseCallbackData</b> does not change the <b>TargetInstance</b> field or the <b>TargetFileObject</b> field of the callback data structure's I/O parameter block. </p>
 
-<p>The <b>FltReuseCallbackData</b> routine frees any <a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a> chain associated with the supplied <i>CallbackData</i> object. A pointer to an MDL chain associated with a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a> object will be invalid after a call to <b>FltReuseCallbackData</b> for that object.</p>
-
-<p>Using <b>FltReuseCallbackData</b> to reuse a callback data structure is faster than freeing the structure and allocating a new one. </p>
-
-<p>A minifilter driver should use <b>FltReuseCallbackData</b> only on a callback data structure that the minifilter driver previously allocated with <a href="https://msdn.microsoft.com/library/windows/hardware/ff541703">FltAllocateCallbackData</a> and used in a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543421">FltPerformSynchronousIo</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>. </p>
-
-<p>If the callback data structure was used for asynchronous I/O, the minifilter driver should not call <b>FltReuseCallbackData</b> until the <i>CallbackRoutine</i> specified in the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a> is called. </p>
-
-<p>In particular, a minifilter driver should not use this routine for any callback data structures not allocated by the minifilter driver itself. </p>
-
-<p><b>FltReuseCallbackData</b> reinitializes a callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure so that it can be used in a new I/O operation. <b>FltReuseCallbackData</b> does not change the <b>TargetInstance</b> field or the <b>TargetFileObject</b> field of the callback data structure's I/O parameter block. </p>
-
-<p>The <b>FltReuseCallbackData</b> routine frees any <a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a> chain associated with the supplied <i>CallbackData</i> object. A pointer to an MDL chain associated with a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a> object will be invalid after a call to <b>FltReuseCallbackData</b> for that object.</p>
+<p>The <b>FltReuseCallbackData</b> routine frees any <a href="..\wdm\ns-wdm--mdl.md">MDL</a> chain associated with the supplied <i>CallbackData</i> object. A pointer to an MDL chain associated with a <a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a> object will be invalid after a call to <b>FltReuseCallbackData</b> for that object.</p>
 
 <p>Using <b>FltReuseCallbackData</b> to reuse a callback data structure is faster than freeing the structure and allocating a new one. </p>
 
-<p>A minifilter driver should use <b>FltReuseCallbackData</b> only on a callback data structure that the minifilter driver previously allocated with <a href="https://msdn.microsoft.com/library/windows/hardware/ff541703">FltAllocateCallbackData</a> and used in a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543421">FltPerformSynchronousIo</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>. </p>
+<p>A minifilter driver should use <b>FltReuseCallbackData</b> only on a callback data structure that the minifilter driver previously allocated with <a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a> and used in a call to <a href="..\fltkernel\nf-fltkernel-fltperformsynchronousio.md">FltPerformSynchronousIo</a> or <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>. </p>
 
-<p>If the callback data structure was used for asynchronous I/O, the minifilter driver should not call <b>FltReuseCallbackData</b> until the <i>CallbackRoutine</i> specified in the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a> is called. </p>
+<p>If the callback data structure was used for asynchronous I/O, the minifilter driver should not call <b>FltReuseCallbackData</b> until the <i>CallbackRoutine</i> specified in the call to <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a> is called. </p>
 
 <p>In particular, a minifilter driver should not use this routine for any callback data structures not allocated by the minifilter driver itself. </p>
 
@@ -144,22 +132,22 @@ VOID FltReuseCallbackData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541703">FltAllocateCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542949">FltFreeCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreecallbackdata.md">FltFreeCallbackData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543421">FltPerformSynchronousIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltperformsynchronousio.md">FltPerformSynchronousIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544311">FltReissueSynchronousIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltreissuesynchronousio.md">FltReissueSynchronousIo</a>
 </dt>
 </dl>
 <p> </p>

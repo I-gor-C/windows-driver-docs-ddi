@@ -60,7 +60,7 @@ STORPORT_API BOOLEAN StorPortSynchronizeAccess(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
+<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
 ### -param <i>SynchronizedAccessRoutine</i> [in]
@@ -80,7 +80,7 @@ STORPORT_API BOOLEAN StorPortSynchronizeAccess(
 <p>The return value from  <i>SynchronizedAccessRoutine</i>.</p>
 
 ## -remarks
-<p>Miniport drivers that operate in full-duplex mode, and that access information that is shared between their <a href="https://msdn.microsoft.com/library/windows/hardware/ff557423">HwStorStartIo</a> routine and interrupt-service routine, must use this routine to access the shared data in a synchronized manner. </p>
+<p>Miniport drivers that operate in full-duplex mode, and that access information that is shared between their <a href="storage.hwstorstartio">HwStorStartIo</a> routine and interrupt-service routine, must use this routine to access the shared data in a synchronized manner. </p>
 
 <p>The miniport driver passes a callback routine to <b>StorPortSynchronizeAccess</b>, and <b>StorPortSynchronizeAccess</b> calls it after guaranteeing exclusive access to sensitive data structures. The miniport driver's callback routine must conform to the following prototype:</p>
 
@@ -88,17 +88,7 @@ STORPORT_API BOOLEAN StorPortSynchronizeAccess(
 
 <p>For more information, see <a href="NULL">Synchronized Access within Unsynchronized Miniport Driver Routines</a>.</p>
 
-<p>For more information about synchronization routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff553302">KeSynchronizeExecution</a>.</p>
-
-<p>Miniport drivers that operate in full-duplex mode, and that access information that is shared between their <a href="https://msdn.microsoft.com/library/windows/hardware/ff557423">HwStorStartIo</a> routine and interrupt-service routine, must use this routine to access the shared data in a synchronized manner. </p>
-
-<p>The miniport driver passes a callback routine to <b>StorPortSynchronizeAccess</b>, and <b>StorPortSynchronizeAccess</b> calls it after guaranteeing exclusive access to sensitive data structures. The miniport driver's callback routine must conform to the following prototype:</p>
-
-<p>where <i>HwDeviceExtension</i> is a pointer to the hardware device extension, and <i>Context</i> is just a pointer to the same context information that the caller supplied when calling <b>StorPortSynchronizeAccess</b>. </p>
-
-<p>For more information, see <a href="NULL">Synchronized Access within Unsynchronized Miniport Driver Routines</a>.</p>
-
-<p>For more information about synchronization routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff553302">KeSynchronizeExecution</a>.</p>
+<p>For more information about synchronization routines, see <a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>.</p>
 
 ## -requirements
 <table>
@@ -137,7 +127,7 @@ STORPORT_API BOOLEAN StorPortSynchronizeAccess(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553302">KeSynchronizeExecution</a>
+<a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>
 </dt>
 </dl>
 <p> </p>

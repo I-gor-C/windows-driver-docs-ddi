@@ -102,7 +102,7 @@ typedef struct _HBAScsiID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554939">GetFCPStatistics</a>
+<a href="storage.getfcpstatistics">GetFCPStatistics</a>
 </dt>
 </dl>
 <p> </p>

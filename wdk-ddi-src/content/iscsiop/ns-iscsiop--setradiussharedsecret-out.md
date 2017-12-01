@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetRADIUSSharedSecret_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565815">SetRADIUSSharedSecret</a> method.</p>
+<p>The SetRADIUSSharedSecret_OUT structure holds the output data for the <a href="storage.setradiussharedsecret">SetRADIUSSharedSecret</a> method.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _SetRADIUSSharedSecret_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output, the status of the <b>SetRADIUSSharedSecret</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.</p>
+<p>On output, the status of the <b>SetRADIUSSharedSecret</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 </dd>
 </dl>
 
@@ -81,13 +81,13 @@ typedef struct _SetRADIUSSharedSecret_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565815">SetRADIUSSharedSecret</a>
+<a href="storage.setradiussharedsecret">SetRADIUSSharedSecret</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565831">SetRADIUSSharedSecret_IN</a>
+<a href="..\iscsiop\ns-iscsiop--setradiussharedsecret-in.md">SetRADIUSSharedSecret_IN</a>
 </dt>
 </dl>
 <p> </p>

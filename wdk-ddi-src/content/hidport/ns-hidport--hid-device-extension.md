@@ -95,7 +95,7 @@ typedef struct _HID_DEVICE_EXTENSION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539835">HidRegisterMinidriver</a>
+<a href="..\hidport\nf-hidport-hidregisterminidriver.md">HidRegisterMinidriver</a>
 </dt>
 </dl>
 <p> </p>

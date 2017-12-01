@@ -60,13 +60,13 @@ HRESULT DownloadFontHeader(
 ### -param <i>pdevobj</i> 
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>pUFObj</i> 
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563590">UNIFONTOBJ</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--unifontobj.md">UNIFONTOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>pdwResult</i> [out]
@@ -92,31 +92,15 @@ HRESULT DownloadFontHeader(
 
 <p>Information that might be required for constructing a non-<a href="wdkgloss.p#wdkgloss.pcl#wdkgloss.pcl"><i>PCL</i></a> font header can be obtained by:</p>
 
-<p>Referencing the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563590">UNIFONTOBJ</a> structure that is received as an input argument.</p>
+<p>Referencing the <a href="..\printoem\ns-printoem--unifontobj.md">UNIFONTOBJ</a> structure that is received as an input argument.</p>
 
-<p>Calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function to get the font's <a href="https://msdn.microsoft.com/library/windows/hardware/ff565974">FONTOBJ</a> structure.</p>
+<p>Calling the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function to get the font's <a href="display.fontobj">FONTOBJ</a> structure.</p>
 
-<p>The method should send the header information to the spooler by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff553138">IPrintOemDriverUni::DrvWriteSpoolBuf</a>.</p>
+<p>The method should send the header information to the spooler by calling <a href="print.iprintoemdriveruni_drvwritespoolbuf">IPrintOemDriverUni::DrvWriteSpoolBuf</a>.</p>
 
-<p>The <code>IPrintOemUni::DownloadFontHeader</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "DownloadFontHeader" as input.</p>
+<p>The <code>IPrintOemUni::DownloadFontHeader</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "DownloadFontHeader" as input.</p>
 
-<p>If you implement the <code>IPrintOemUni::DownloadFontHeader</code> method, you must also implement the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554241">IPrintOemUni::DownloadCharGlyph</a> method.</p>
-
-<p>For additional information see <a href="NULL">Customized Font Management</a>.</p>
-
-<p>The <code>IPrintOemUni::DownloadFontHeader</code> method is used for supporting soft fonts on printers that do not accept <a href="wdkgloss.p#wdkgloss.pcl#wdkgloss.pcl"><i>PCL</i></a> commands. Its purpose is to allow a rendering plug-in to obtain font header information from Unidrv and to send the information to the printer.</p>
-
-<p>Information that might be required for constructing a non-<a href="wdkgloss.p#wdkgloss.pcl#wdkgloss.pcl"><i>PCL</i></a> font header can be obtained by:</p>
-
-<p>Referencing the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563590">UNIFONTOBJ</a> structure that is received as an input argument.</p>
-
-<p>Calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function to get the font's <a href="https://msdn.microsoft.com/library/windows/hardware/ff565974">FONTOBJ</a> structure.</p>
-
-<p>The method should send the header information to the spooler by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff553138">IPrintOemDriverUni::DrvWriteSpoolBuf</a>.</p>
-
-<p>The <code>IPrintOemUni::DownloadFontHeader</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "DownloadFontHeader" as input.</p>
-
-<p>If you implement the <code>IPrintOemUni::DownloadFontHeader</code> method, you must also implement the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554241">IPrintOemUni::DownloadCharGlyph</a> method.</p>
+<p>If you implement the <code>IPrintOemUni::DownloadFontHeader</code> method, you must also implement the <a href="print.iprintoemuni_downloadcharglyph">IPrintOemUni::DownloadCharGlyph</a> method.</p>
 
 <p>For additional information see <a href="NULL">Customized Font Management</a>.</p>
 

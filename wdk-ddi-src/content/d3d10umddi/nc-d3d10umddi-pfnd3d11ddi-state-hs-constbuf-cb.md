@@ -122,7 +122,7 @@ void APIENTRY pfnStateHsConstBufCb(
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542137">D3D11DDI_CORELAYER_DEVICECALLBACKS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-corelayer-devicecallbacks~r1.md">D3D11DDI_CORELAYER_DEVICECALLBACKS</a>
 </dt>
 </dl>
 <p> </p>

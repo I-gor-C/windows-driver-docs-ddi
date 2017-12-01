@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOutputDuplReleaseFrame(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406533">D3DKMT_OUTPUTDUPL_RELEASE_FRAME</a> structure that defines the duplicated desktop image that is to be released.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-outputdupl-release-frame.md">D3DKMT_OUTPUTDUPL_RELEASE_FRAME</a> structure that defines the duplicated desktop image that is to be released.</p>
 </dd>
 </dl>
 
@@ -141,7 +141,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOutputDuplReleaseFrame(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406533">D3DKMT_OUTPUTDUPL_RELEASE_FRAME</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-outputdupl-release-frame.md">D3DKMT_OUTPUTDUPL_RELEASE_FRAME</a>
 </dt>
 </dl>
 <p> </p>

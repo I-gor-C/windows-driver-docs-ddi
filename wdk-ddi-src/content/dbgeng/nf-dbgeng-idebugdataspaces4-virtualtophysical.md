@@ -7,7 +7,7 @@ old-location: debugger\virtualtophysical.htm
 old-project: debugger
 ms.assetid: e0b7bd4c-cb3f-4bc3-8359-241c9a245204
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces4, VirtualToPhysical, IDebugDataSpaces4::VirtualToPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,8 +80,6 @@ HRESULT VirtualToPhysical(
 <p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 ## -requirements

@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetRenderTarget(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543347">D3DDDIARG_SETRENDERTARGET</a> structure that describes the render target surface.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setrendertarget.md">D3DDDIARG_SETRENDERTARGET</a> structure that describes the render target surface.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ __checkReturn HRESULT APIENTRY SetRenderTarget(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543347">D3DDDIARG_SETRENDERTARGET</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setrendertarget.md">D3DDDIARG_SETRENDERTARGET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

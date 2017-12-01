@@ -67,13 +67,13 @@ typedef struct _D3DDDIARG_CREATEVIDEOPROCESSDEVICE {
 ### -field <b>VideoDesc</b>
 
 <dd>
-<p>[in] The <a href="https://msdn.microsoft.com/library/windows/hardware/ff562944">DXVADDI_VIDEODESC</a> structure for the video stream that the video processing device should process.</p>
+<p>[in] The <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videodesc.md">DXVADDI_VIDEODESC</a> structure for the video stream that the video processing device should process.</p>
 </dd>
 
 ### -field <b>RenderTargetFormat</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.</p>
+<p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.</p>
 </dd>
 
 ### -field <b>MaxSubStreams</b>
@@ -120,7 +120,7 @@ typedef struct _D3DDDIARG_CREATEVIDEOPROCESSDEVICE {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createvideoprocessdevice.md">CreateVideoProcessDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562944">DXVADDI_VIDEODESC</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videodesc.md">DXVADDI_VIDEODESC</a>
 </dt>
 </dl>
 <p> </p>

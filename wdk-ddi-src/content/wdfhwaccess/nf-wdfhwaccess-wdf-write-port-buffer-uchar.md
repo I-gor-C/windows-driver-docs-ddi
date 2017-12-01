@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_port_buffer_uchar.htm
 old-project: wdf
 ms.assetid: 744189F3-07D1-42F2-986C-70BEBE760123
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WRITE_PORT_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,8 +90,6 @@ void WDF_WRITE_PORT_BUFFER_UCHAR(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The size of the buffer must be large enough to contain at least the specified number of bytes.</p>
-
 <p>The size of the buffer must be large enough to contain at least the specified number of bytes.</p>
 
 ## -requirements

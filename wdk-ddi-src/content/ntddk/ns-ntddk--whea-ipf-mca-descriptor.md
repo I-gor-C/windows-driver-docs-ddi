@@ -76,7 +76,7 @@ typedef struct _WHEA_IPF_MCA_DESCRIPTOR {
 </dl>
 
 ## -remarks
-<p>A WHEA_IPF_MCA_DESCRIPTOR structure is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.</p>
+<p>A WHEA_IPF_MCA_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk--whea-error-source-descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.</p>
 
 ## -requirements
 <table>
@@ -104,7 +104,7 @@ typedef struct _WHEA_IPF_MCA_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk--whea-error-source-descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

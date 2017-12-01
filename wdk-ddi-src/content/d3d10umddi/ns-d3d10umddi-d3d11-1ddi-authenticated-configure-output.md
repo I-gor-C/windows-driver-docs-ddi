@@ -61,7 +61,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 ### -field <b>omac</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh406450">D3D11_1DDI_OMAC</a> structure that contains a Message Authentication Code (MAC) of the data. The driver uses Advanced Encryption Standard (AES)-based one-key CBC MAC (OMAC) to calculate this value for the block of data that appears after this structure member.</p>
+<p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-omac.md">D3D11_1DDI_OMAC</a> structure that contains a Message Authentication Code (MAC) of the data. The driver uses Advanced Encryption Standard (AES)-based one-key CBC MAC (OMAC) to calculate this value for the block of data that appears after this structure member.</p>
 </dd>
 
 ### -field <b>ConfigureType</b>
@@ -75,7 +75,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 
 <dd>
 <p>Sets the level of encryption that is performed before protected content becomes accessible to the CPU or bus.</p>
-<p>Input data: <a href="https://msdn.microsoft.com/library/windows/hardware/hh406347">D3D11_1DDI_AUTHENTICATED_CONFIGURE_ACCESSIBLE_ENCRYPTION</a>
+<p>Input data: <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-accessible-encryption.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_ACCESSIBLE_ENCRYPTION</a>
 </p>
 </dd>
 
@@ -84,7 +84,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 
 <dd>
 <p>Associates a cryptographic session with a DirectX Video Acceleration 2 (DXVA-2) decode device and a Direct3D device.</p>
-<p>Input data: <a href="https://msdn.microsoft.com/library/windows/hardware/hh406350">D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION</a>
+<p>Input data: <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-crypto-session.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION</a>
 </p>
 </dd>
 
@@ -95,7 +95,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 <p>Initializes the authenticated channel.
 
 </p>
-<p>Input data: <a href="https://msdn.microsoft.com/library/windows/hardware/hh406354">D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE</a>
+<p>Input data: <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-initialize.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE</a>
 </p>
 </dd>
 
@@ -106,7 +106,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 <p>Enables or disables protection for the device.
 
 </p>
-<p>Input data: <a href="https://msdn.microsoft.com/library/windows/hardware/hh406366">D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION</a>
+<p>Input data: <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-protection.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION</a>
 </p>
 </dd>
 
@@ -117,7 +117,7 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 <p>Enables a process to open a shared resource, or disables a process from opening shared resources.
 
 </p>
-<p>Input data: <a href="https://msdn.microsoft.com/library/windows/hardware/hh406369">D3D11_1DDI_AUTHENTICATED_CONFIGURE_SHARED_RESOURCE</a>
+<p>Input data: <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-shared-resource.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_SHARED_RESOURCE</a>
 </p>
 </dd>
 </dl>
@@ -186,22 +186,22 @@ typedef struct D3D11_1DDI_AUTHENTICATED_CONFIGURE_OUTPUT {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406347">D3D11_1DDI_AUTHENTICATED_CONFIGURE_ACCESSIBLE_ENCRYPTION</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-accessible-encryption.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_ACCESSIBLE_ENCRYPTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406350">D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-crypto-session.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406354">D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-initialize.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406366">D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-protection.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406369">D3D11_1DDI_AUTHENTICATED_CONFIGURE_SHARED_RESOURCE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-configure-shared-resource.md">D3D11_1DDI_AUTHENTICATED_CONFIGURE_SHARED_RESOURCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406450">D3D11_1DDI_OMAC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-omac.md">D3D11_1DDI_OMAC</a>
 </dt>
 </dl>
 <p> </p>

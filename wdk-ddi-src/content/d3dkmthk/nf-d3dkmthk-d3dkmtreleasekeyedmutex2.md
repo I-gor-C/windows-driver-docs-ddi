@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTReleaseKeyedMutex2(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406571">D3DKMT_RELEASEKEYEDMUTEX2</a> structure that specifies the keyed mutex object to release. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-releasekeyedmutex2.md">D3DKMT_RELEASEKEYEDMUTEX2</a> structure that specifies the keyed mutex object to release. </p>
 </dd>
 </dl>
 
@@ -71,7 +71,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTReleaseKeyedMutex2(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439455">D3DKMTReleaseKeyedMutex2</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex2.md">D3DKMTReleaseKeyedMutex2</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
@@ -79,11 +79,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTReleaseKeyedMutex2(
 
 ## -remarks
 <p><b>D3DKMTReleaseKeyedMutex2</b> behaves like 
-  the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547129">D3DKMTReleaseKeyedMutex</a> function but lets 
-  the caller specify private data to associate with the keyed mutex.</p>
-
-<p><b>D3DKMTReleaseKeyedMutex2</b> behaves like 
-  the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547129">D3DKMTReleaseKeyedMutex</a> function but lets 
+  the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex.md">D3DKMTReleaseKeyedMutex</a> function but lets 
   the caller specify private data to associate with the keyed mutex.</p>
 
 ## -requirements
@@ -149,10 +145,10 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTReleaseKeyedMutex2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406571">D3DKMT_RELEASEKEYEDMUTEX2</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-releasekeyedmutex2.md">D3DKMT_RELEASEKEYEDMUTEX2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547129">D3DKMTReleaseKeyedMutex</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex.md">D3DKMTReleaseKeyedMutex</a>
 </dt>
 </dl>
 <p> </p>

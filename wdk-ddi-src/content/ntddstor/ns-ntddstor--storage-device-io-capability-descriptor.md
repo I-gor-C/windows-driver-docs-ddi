@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The output buffer for the StorageDeviceIoCapabilityProperty as defined in <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>.</p>
+<p>The output buffer for the StorageDeviceIoCapabilityProperty as defined in <a href="storage.storage_property_id">STORAGE_PROPERTY_ID</a>.</p>
 
 
 ## -syntax

@@ -82,11 +82,7 @@ ULONG StorPortInitializeSpinlock(
 <p> </p>
 
 ## -remarks
-<p>This routine must be called before an initial call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>, to any other support routine that requires a spin lock as an argument.</p>
-
-<p>For more information about spin locks, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563830">Spin Locks</a>.</p>
-
-<p>This routine must be called before an initial call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>, to any other support routine that requires a spin lock as an argument.</p>
+<p>This routine must be called before an initial call to <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>, to any other support routine that requires a spin lock as an argument.</p>
 
 <p>For more information about spin locks, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563830">Spin Locks</a>.</p>
 
@@ -120,10 +116,10 @@ ULONG StorPortInitializeSpinlock(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567023">StorPortAcquireMSISpinLock</a>
+<a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567496">StorPortReleaseSpinLock</a>
+<a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567494">StorPortReleaseMSISpinLock</a>

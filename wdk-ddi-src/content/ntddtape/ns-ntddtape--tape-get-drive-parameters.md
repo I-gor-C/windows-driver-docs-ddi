@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The TAPE_GET_DRIVE_PARAMETERS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560618">IOCTL_TAPE_GET_DRIVE_PARAMS</a> request to retrieve information about capabilities of the tape drive.</p>
+<p>The TAPE_GET_DRIVE_PARAMETERS structure is used in conjunction with the <a href="..\ntddtape\ni-ntddtape-ioctl-tape-get-drive-params.md">IOCTL_TAPE_GET_DRIVE_PARAMS</a> request to retrieve information about capabilities of the tape drive.</p>
 
 
 ## -syntax
@@ -613,10 +613,10 @@ typedef struct _TAPE_GET_DRIVE_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560618">IOCTL_TAPE_GET_DRIVE_PARAMS</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl-tape-get-drive-params.md">IOCTL_TAPE_GET_DRIVE_PARAMS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567936">TapeMiniGetDriveParameters</a>
+<a href="storage.tapeminigetdriveparameters">TapeMiniGetDriveParameters</a>
 </dt>
 </dl>
 <p> </p>

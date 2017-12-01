@@ -95,7 +95,7 @@ typedef struct _ISCSI_LUNList {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561547">ISCSI_LUNList WMI Class</a>
+<a href="storage.iscsi_lunlist_wmi_class">ISCSI_LUNList WMI Class</a>
 </dt>
 </dl>
 <p> </p>

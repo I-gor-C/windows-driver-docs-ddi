@@ -60,13 +60,13 @@ typedef struct {
 ### -field <b>ChunkType</b>
 
 <dd>
-<p>The type of chunk that is to be processed, specified as a <a href="https://msdn.microsoft.com/library/windows/hardware/dn322057">DXGK_MIRACAST_CHUNK_TYPE</a> enumeration value.</p>
+<p>The type of chunk that is to be processed, specified as a <a href="..\d3dukmdt\ne-d3dukmdt--dxgk-miracast-chunk-type.md">DXGK_MIRACAST_CHUNK_TYPE</a> enumeration value.</p>
 </dd>
 
 ### -field <b>ChunkId</b>
 
 <dd>
-<p>The identifier for this chunk, of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn322055">DXGK_MIRACAST_CHUNK_ID</a>.</p>
+<p>The identifier for this chunk, of type <a href="..\d3dukmdt\ns-d3dukmdt-dxgk-miracast-chunk-id.md">DXGK_MIRACAST_CHUNK_ID</a>.</p>
 </dd>
 
 ### -field <b>ProcessingTime</b>
@@ -118,10 +118,10 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn322055">DXGK_MIRACAST_CHUNK_ID</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-dxgk-miracast-chunk-id.md">DXGK_MIRACAST_CHUNK_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn322057">DXGK_MIRACAST_CHUNK_TYPE</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--dxgk-miracast-chunk-type.md">DXGK_MIRACAST_CHUNK_TYPE</a>
 </dt>
 </dl>
 <p> </p>

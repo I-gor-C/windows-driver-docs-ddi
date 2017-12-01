@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmabroadcastserviceid.htm
 old-project: netvista
 ms.assetid: 71f887ed-ab80-4b5f-bc74-d4333984fdd2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

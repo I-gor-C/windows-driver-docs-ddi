@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>HYBRID_INFORMATION</b> structure contains hybrid disk capability information. The structure is returned when the HYBRID_FUNCTION_GET_INFO function is selected in a <a href="https://msdn.microsoft.com/library/windows/hardware/dn323747">IOCTL_SCSI_MINIPORT_HYBRID</a> request  sent to an HBA miniport driver.</p>
+<p>The <b>HYBRID_INFORMATION</b> structure contains hybrid disk capability information. The structure is returned when the HYBRID_FUNCTION_GET_INFO function is selected in a <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-miniport-hybrid.md">IOCTL_SCSI_MINIPORT_HYBRID</a> request  sent to an HBA miniport driver.</p>
 
 
 ## -syntax
@@ -403,7 +403,7 @@ typedef struct _HYBRID_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn323747">IOCTL_SCSI_MINIPORT_HYBRID</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-miniport-hybrid.md">IOCTL_SCSI_MINIPORT_HYBRID</a>
 </dt>
 </dl>
 <p> </p>

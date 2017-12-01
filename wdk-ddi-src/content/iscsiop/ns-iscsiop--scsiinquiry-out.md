@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ScsiInquiry_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a> method.</p>
+<p>The ScsiInquiry_OUT structure holds the output data for the <a href="storage.scsiinquiry">ScsiInquiry</a> method.</p>
 
 
 ## -syntax
@@ -61,7 +61,7 @@ typedef struct _ScsiInquiry_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>The status of the <b>ScsiInquiry</b> operation. This member will contain 0 if the INQUIRY operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the INQUIRY operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.</p>
+<p>The status of the <b>ScsiInquiry</b> operation. This member will contain 0 if the INQUIRY operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the INQUIRY operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 </dd>
 
 ### -field <b>ResponseBufferSize</b>
@@ -109,13 +109,13 @@ typedef struct _ScsiInquiry_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a>
+<a href="storage.scsiinquiry">ScsiInquiry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564598">ScsiInquiry_IN</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--scsiinquiry-in.md">ScsiInquiry_IN</a>
 </dt>
 </dl>
 <p> </p>

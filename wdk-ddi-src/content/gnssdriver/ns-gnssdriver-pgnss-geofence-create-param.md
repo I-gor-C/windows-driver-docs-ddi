@@ -7,7 +7,7 @@ old-location: sensors\gnss_geofence_create_param.htm
 old-project: sensors
 ms.assetid: CA517EF6-41EE-4DB0-B628-35902BA34FFB
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_GEOFENCE_CREATE_PARAM, GNSS_GEOFENCE_CREATE_PARAM, *PGNSS_GEOFENCE_CREATE_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\rilrange.htm
 old-project: netvista
 ms.assetid: 2f704899-eb5e-4632-a76d-eb474f3273f9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILRANGE, RILRANGE, *LPRILRANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices

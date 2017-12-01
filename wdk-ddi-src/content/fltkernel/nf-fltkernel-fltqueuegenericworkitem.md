@@ -61,7 +61,7 @@ NTSTATUS FltQueueGenericWorkItem(
 ### -param <i>FltWorkItem</i> [in]
 
 <dd>
-<p>Pointer to the work item to be added to the work queue. The work item must have been allocated by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541749">FltAllocateGenericWorkItem</a>. </p>
+<p>Pointer to the work item to be added to the work queue. The work item must have been allocated by calling <a href="..\fltkernel\nf-fltkernel-fltallocategenericworkitem.md">FltAllocateGenericWorkItem</a>. </p>
 </dd>
 
 ### -param <i>FltObject</i> [in]
@@ -159,15 +159,9 @@ NTSTATUS FltQueueGenericWorkItem(
 ## -remarks
 <p><b>FltQueueGenericWorkItem</b> inserts a work item that is not associated with a specific I/O operation into a system work queue. The specified <i>WorkerRoutine</i> callback routine is called in the context of a system thread, at IRQL PASSIVE_LEVEL. </p>
 
-<p>To allocate a work item, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541749">FltAllocateGenericWorkItem</a>. </p>
+<p>To allocate a work item, call <a href="..\fltkernel\nf-fltkernel-fltallocategenericworkitem.md">FltAllocateGenericWorkItem</a>. </p>
 
-<p>To free the work item when it is no longer needed, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff542971">FltFreeGenericWorkItem</a>. </p>
-
-<p><b>FltQueueGenericWorkItem</b> inserts a work item that is not associated with a specific I/O operation into a system work queue. The specified <i>WorkerRoutine</i> callback routine is called in the context of a system thread, at IRQL PASSIVE_LEVEL. </p>
-
-<p>To allocate a work item, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541749">FltAllocateGenericWorkItem</a>. </p>
-
-<p>To free the work item when it is no longer needed, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff542971">FltFreeGenericWorkItem</a>. </p>
+<p>To free the work item when it is no longer needed, call <a href="..\fltkernel\nf-fltkernel-fltfreegenericworkitem.md">FltFreeGenericWorkItem</a>. </p>
 
 ## -requirements
 <table>
@@ -224,10 +218,10 @@ NTSTATUS FltQueueGenericWorkItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541749">FltAllocateGenericWorkItem</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocategenericworkitem.md">FltAllocateGenericWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542971">FltFreeGenericWorkItem</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreegenericworkitem.md">FltFreeGenericWorkItem</a>
 </dt>
 </dl>
 <p> </p>

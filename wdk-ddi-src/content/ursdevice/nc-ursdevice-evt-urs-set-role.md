@@ -64,13 +64,13 @@ typedef EVT_URS_SET_ROLE PFN_URS_SET_ROLE;
 ### -param <i>Device</i> [in]
 
 <dd>
-<p>A handle to the framework device object that the client driver retrieved in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.</p>
+<p>A handle to the framework device object that the client driver retrieved in the previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.</p>
 </dd>
 
 ### -param <i>Role</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt628024">URS_ROLE</a> type value that indicates the role to set for the controller device.</p>
+<p>A <a href="buses.urs_role">URS_ROLE</a> type value that indicates the role to set for the controller device.</p>
 </dd>
 </dl>
 
@@ -78,9 +78,7 @@ typedef EVT_URS_SET_ROLE PFN_URS_SET_ROLE;
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.</p>
 
 ## -remarks
-<p> To register the client driver's implementation of the event callback the driver must set the  <b>EvtUrsSetRole</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a> to a function pointer of the implementation method and then call the <a href="https://msdn.microsoft.com/library/windows/hardware/mt628012">UrsDeviceInitialize</a> method by passing the populated structure. The driver must call the method after it creates the framework device object for the controller. </p>
-
-<p> To register the client driver's implementation of the event callback the driver must set the  <b>EvtUrsSetRole</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a> to a function pointer of the implementation method and then call the <a href="https://msdn.microsoft.com/library/windows/hardware/mt628012">UrsDeviceInitialize</a> method by passing the populated structure. The driver must call the method after it creates the framework device object for the controller. </p>
+<p> To register the client driver's implementation of the event callback the driver must set the  <b>EvtUrsSetRole</b> member of <a href="buses.urs_config">URS_CONFIG</a> to a function pointer of the implementation method and then call the <a href="buses.ursdeviceinitialize">UrsDeviceInitialize</a> method by passing the populated structure. The driver must call the method after it creates the framework device object for the controller. </p>
 
 ## -requirements
 <table>
@@ -131,7 +129,7 @@ typedef EVT_URS_SET_ROLE PFN_URS_SET_ROLE;
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt628012">UrsDeviceInitialize</a>
+<a href="buses.ursdeviceinitialize">UrsDeviceInitialize</a>
 </dt>
 </dl>
 <p> </p>

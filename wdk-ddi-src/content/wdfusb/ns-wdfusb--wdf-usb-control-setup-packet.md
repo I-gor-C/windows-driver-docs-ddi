@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_control_setup_packet.htm
 old-project: wdf
 ms.assetid: f50ee559-3df7-4e15-b5a6-d6b85277c461
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_USB_CONTROL_SETUP_PACKET, WDF_USB_CONTROL_SETUP_PACKET, *PWDF_USB_CONTROL_SETUP_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -103,7 +103,7 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 ### -field <b>Recipient</b>
 
 <dd>
-<p>A bit field that is specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552554">WDF_USB_BMREQUEST_RECIPIENT</a>-typed value.</p>
+<p>A bit field that is specified by a <a href="..\wdfusb\ne-wdfusb--wdf-usb-bmrequest-recipient.md">WDF_USB_BMREQUEST_RECIPIENT</a>-typed value.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -115,13 +115,13 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 ### -field <b>Type</b>
 
 <dd>
-<p>A bit field that is specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552557">WDF_USB_BMREQUEST_TYPE</a>-typed value.</p>
+<p>A bit field that is specified by a <a href="..\wdfusb\ne-wdfusb--wdf-usb-bmrequest-type.md">WDF_USB_BMREQUEST_TYPE</a>-typed value.</p>
 </dd>
 
 ### -field <b>Dir</b>
 
 <dd>
-<p>A bit field that is specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552545">WDF_USB_BMREQUEST_DIRECTION</a>-typed value.</p>
+<p>A bit field that is specified by a <a href="..\wdfusb\ne-wdfusb--wdf-usb-bmrequest-direction.md">WDF_USB_BMREQUEST_DIRECTION</a>-typed value.</p>
 </dd>
 </dl>
 </dd>
@@ -227,28 +227,28 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 </dl>
 
 ## -remarks
-<p>The <b>WDF_USB_CONTROL_SETUP_PACKET</b> structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550104">WdfUsbTargetDeviceSendControlTransferSynchronously</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550082">WdfUsbTargetDeviceFormatRequestForControlTransfer</a> methods.</p>
+<p>The <b>WDF_USB_CONTROL_SETUP_PACKET</b> structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendcontroltransfersynchronously.md">WdfUsbTargetDeviceSendControlTransferSynchronously</a> and <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer.md">WdfUsbTargetDeviceFormatRequestForControlTransfer</a> methods.</p>
 
 <p>To initialize a <b>WDF_USB_CONTROL_SETUP_PACKET</b> structure, the driver should call one of the following functions:</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552571">WDF_USB_CONTROL_SETUP_PACKET_INIT</a>
+<a href="..\wdfusb\nf-wdfusb-wdf-usb-control-setup-packet-init.md">WDF_USB_CONTROL_SETUP_PACKET_INIT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552574">WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS</a>
+<a href="..\wdfusb\nf-wdfusb-wdf-usb-control-setup-packet-init-class.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552576">WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE</a>
+<a href="..\wdfusb\nf-wdfusb-wdf-usb-control-setup-packet-init-feature.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552582">WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS</a>
+<a href="..\wdfusb\nf-wdfusb-wdf-usb-control-setup-packet-init-get-status.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552588">WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR</a>
+<a href="..\wdfusb\nf-wdfusb-wdf-usb-control-setup-packet-init-vendor.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR</a>
 </p>
 
 ## -requirements
@@ -284,21 +284,21 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552545">WDF_USB_BMREQUEST_DIRECTION</a>
+<a href="..\wdfusb\ne-wdfusb--wdf-usb-bmrequest-direction.md">WDF_USB_BMREQUEST_DIRECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552554">WDF_USB_BMREQUEST_RECIPIENT</a>
+<a href="..\wdfusb\ne-wdfusb--wdf-usb-bmrequest-recipient.md">WDF_USB_BMREQUEST_RECIPIENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552557">WDF_USB_BMREQUEST_TYPE</a>
+<a href="..\wdfusb\ne-wdfusb--wdf-usb-bmrequest-type.md">WDF_USB_BMREQUEST_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550082">WdfUsbTargetDeviceFormatRequestForControlTransfer</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer.md">WdfUsbTargetDeviceFormatRequestForControlTransfer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550104">WdfUsbTargetDeviceSendControlTransferSynchronously</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendcontroltransfersynchronously.md">WdfUsbTargetDeviceSendControlTransferSynchronously</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTROL_SETUP_PACKET union%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTROL_SETUP_PACKET union%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

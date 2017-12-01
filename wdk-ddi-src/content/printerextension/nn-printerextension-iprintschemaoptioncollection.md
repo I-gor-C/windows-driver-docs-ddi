@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Exposes a collection of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> objects.</p>
+<p>Exposes a collection of <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> objects.</p>
 
 
 ## -inheritance
@@ -48,22 +48,22 @@ req.product: Windows 10 or later.
 
 <p>The <b>IPrintSchemaOptionCollection</b> interface has these methods.</p>
 
-<p>Gets a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> object.</p>
+<p>Gets a pointer to an <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> object.</p>
 
 <p> </p>
 
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaOptionCollection</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406342">Count</a>
+<a href="print.iprintschemaoptioncollection_count">Count</a>
 </p>
 
 <p>Read-only</p>
 
-<p>Gets a count of the number of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> objects in the collection.</p>
+<p>Gets a count of the number of <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> objects in the collection.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973226">NewEnum</a>
+<a href="print.iprintschemaoptioncollection_newenum">NewEnum</a>
 </p>
 
 <p>Read-only</p>
@@ -80,13 +80,13 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406567">GetAt</a>
+<a href="print.iprintschemaoptioncollection_getat">GetAt</a>
 </td>
 <td align="left" width="63%">
-<p>Gets a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> object.</p>
+<p>Gets a pointer to an <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> object.</p>
 </td>
 </tr>
-</table><p>Gets a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> object.</p>
+</table><p>Gets a pointer to an <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> object.</p>
 
 <p> </p>
 
@@ -99,20 +99,20 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406342">Count</a>
+<a href="print.iprintschemaoptioncollection_count">Count</a>
 </p>
 </td>
 <td align="left" width="10%">
 <p>Read-only</p>
 </td>
 <td align="left" width="63%">
-<p>Gets a count of the number of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> objects in the collection.</p>
+<p>Gets a count of the number of <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> objects in the collection.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973226">NewEnum</a>
+<a href="print.iprintschemaoptioncollection_newenum">NewEnum</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -123,15 +123,15 @@ req.product: Windows 10 or later.
 </td>
 </tr>
 </table><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406342">Count</a>
+<a href="print.iprintschemaoptioncollection_count">Count</a>
 </p>
 
 <p>Read-only</p>
 
-<p>Gets a count of the number of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> objects in the collection.</p>
+<p>Gets a count of the number of <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> objects in the collection.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973226">NewEnum</a>
+<a href="print.iprintschemaoptioncollection_newenum">NewEnum</a>
 </p>
 
 <p>Read-only</p>
@@ -179,7 +179,7 @@ req.product: Windows 10 or later.
 <a href="automat.idispatch">IDispatch</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a>
+<a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>
 </dt>
 </dl>
 <p> </p>

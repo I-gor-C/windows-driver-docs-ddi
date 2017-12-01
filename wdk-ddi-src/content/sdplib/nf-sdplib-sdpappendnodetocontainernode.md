@@ -7,7 +7,7 @@ old-location: bltooth\sdpappendnodetocontainernode.htm
 old-project: bltooth
 ms.assetid: beec5516-6191-4b70-8c80-ddbaedbad5c0
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: SdpAppendNodeToContainerNode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,31 +78,17 @@ NTSTATUS SdpAppendNodeToContainerNode(
 ## -remarks
 <p>Use the 
     <b>SdpAppendNodeToContainerNode</b> function to insert any type of 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a> into a sequence or alternative node,
+    <a href="..\sdpnode\ns-sdpnode--sdp-node.md">SDP_NODE</a> into a sequence or alternative node,
     including other sequences.</p>
 
 <p>Do not use this function to attach attribute nodes to the top level of an SDP record. Call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536784">SdpAddAttributeToTree</a> function to
+    <a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a> function to
     perform that action. For more information about the tree structure, see 
     <a href="https://msdn.microsoft.com/762cf68b-0082-4b9e-8f24-ff19ecf6f8bd">Converting SDP Records to a
     Tree Structure</a>.</p>
 
 <p>Bluetooth profile drivers can obtain a pointer to this function through the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536635">BTHDDI_SDP_NODE_INTERFACE</a>.</p>
-
-<p>Use the 
-    <b>SdpAppendNodeToContainerNode</b> function to insert any type of 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a> into a sequence or alternative node,
-    including other sequences.</p>
-
-<p>Do not use this function to attach attribute nodes to the top level of an SDP record. Call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536784">SdpAddAttributeToTree</a> function to
-    perform that action. For more information about the tree structure, see 
-    <a href="https://msdn.microsoft.com/762cf68b-0082-4b9e-8f24-ff19ecf6f8bd">Converting SDP Records to a
-    Tree Structure</a>.</p>
-
-<p>Bluetooth profile drivers can obtain a pointer to this function through the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536635">BTHDDI_SDP_NODE_INTERFACE</a>.</p>
+    <a href="..\bthsdpddi\ns-bthsdpddi--bthddi-sdp-node-interface.md">BTHDDI_SDP_NODE_INTERFACE</a>.</p>
 
 ## -requirements
 <table>
@@ -147,15 +133,15 @@ NTSTATUS SdpAppendNodeToContainerNode(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a>
+<a href="..\sdpnode\ns-sdpnode--sdp-node.md">SDP_NODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536784">SdpAddAttributeToTree</a>
+<a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536635">BTHDDI_SDP_NODE_INTERFACE</a>
+<a href="..\bthsdpddi\ns-bthsdpddi--bthddi-sdp-node-interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SdpAppendNodeToContainerNode function%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SdpAppendNodeToContainerNode function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

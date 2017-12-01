@@ -40,3 +40,9 @@ Drmk.h contain these programming interfaces:
 | [PKSP_DRMAUDIOSTREAM_CONTENTID structure](ns-drmk-pksp-drmaudiostream-contentid.md) | The KSP_DRMAUDIOSTREAM_CONTENTID structure specifies the property, request type, and context for a KSPROPERTY_DRMAUDIOSTREAM_CONTENTIDset-property request. It also specifies a list of function pointers to the DRM functions. |
 | [tagDRMFORWARD structure](ns-drmk-tagdrmforward.md) | The DRMFORWARD structure contains the information that the DRMK system driver needs in order to forward a DRM content ID to a device that handles protected content. |
 | [tagDRMRIGHTS structure](ns-drmk-tagdrmrights.md) | The DRMRIGHTS structure specifies the DRM content rights assigned to a KS audio pin or to a port-class driver's stream object. |
+
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [IDrmAudioStream interface](nn-drmk-idrmaudiostream.md) | The IDrmAudioStream interface assigns DRM protection to the digital content in an audio stream. |

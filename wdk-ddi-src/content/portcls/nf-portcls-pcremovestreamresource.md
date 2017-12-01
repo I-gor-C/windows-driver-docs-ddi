@@ -7,7 +7,7 @@ old-location: audio\pcremovestreamresource.htm
 old-project: audio
 ms.assetid: D923DA5C-0169-475D-8C0C-6A99EB06ECE0
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcRemoveStreamResource
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NTSTATUS  PcRemoveStreamResource(
 
 <dd>
 <p>PCSTREAMRESOURCE– Resource handle returned by PcAddStreamResource.  
-For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt298188">PcAddStreamResource</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt298191">PCSTREAMRESOURCE_DESCRIPTOR</a>.  </p>
+For more information, see <a href="..\portcls\nf-portcls-pcaddstreamresource.md">PcAddStreamResource</a> and <a href="..\portcls\ns-portcls--pcstreamresource-descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>.  </p>
 </dd>
 </dl>
 
@@ -84,19 +84,7 @@ Stream resources are any resources used by the audio driver to process audio str
 
 <p>The audio driver must make sure the resource is valid when making this call.</p>
 
-<p>Audio drivers that only run in Windows 10 can use  <a href="https://msdn.microsoft.com/library/windows/hardware/mt298188">PcAddStreamResource</a> and <b>PcRemoveStreamResource</b>. For Audio waveRT miniport drivers that need to also run under previous versions of Windows, use <a href="audio.iportclsstreamresourcemanager_addstreamresource">AddStreamResource</a> and <a href="audio.iportclsstreamresourcemanager_removestreamresource">RemoveStreamResource</a>. </p>
-
-<p>To help ensure glitch-free operation, audio drivers must register their streaming resources with portcls. This allows the OS to manage resources to avoid interference between audio streaming and other subsystems. 
-
-Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. </p>
-
-<p>Audio drivers must remove a previously registered resource.  Drivers may unregister a resource as a result of the following system activities:  
-
-</p>
-
-<p>The audio driver must make sure the resource is valid when making this call.</p>
-
-<p>Audio drivers that only run in Windows 10 can use  <a href="https://msdn.microsoft.com/library/windows/hardware/mt298188">PcAddStreamResource</a> and <b>PcRemoveStreamResource</b>. For Audio waveRT miniport drivers that need to also run under previous versions of Windows, use <a href="audio.iportclsstreamresourcemanager_addstreamresource">AddStreamResource</a> and <a href="audio.iportclsstreamresourcemanager_removestreamresource">RemoveStreamResource</a>. </p>
+<p>Audio drivers that only run in Windows 10 can use  <a href="..\portcls\nf-portcls-pcaddstreamresource.md">PcAddStreamResource</a> and <b>PcRemoveStreamResource</b>. For Audio waveRT miniport drivers that need to also run under previous versions of Windows, use <a href="audio.iportclsstreamresourcemanager_addstreamresource">AddStreamResource</a> and <a href="audio.iportclsstreamresourcemanager_removestreamresource">RemoveStreamResource</a>. </p>
 
 ## -requirements
 <table>
@@ -159,15 +147,15 @@ Stream resources are any resources used by the audio driver to process audio str
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt298188">PcAddStreamResource</a>
+<a href="..\portcls\nf-portcls-pcaddstreamresource.md">PcAddStreamResource</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt298191">PCSTREAMRESOURCE_DESCRIPTOR</a>
+<a href="..\portcls\ns-portcls--pcstreamresource-descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt298190">PcStreamResourceType</a>
+<a href="..\portcls\ne-portcls--pcstreamresourcetype.md">PcStreamResourceType</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcRemoveStreamResource function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcRemoveStreamResource function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

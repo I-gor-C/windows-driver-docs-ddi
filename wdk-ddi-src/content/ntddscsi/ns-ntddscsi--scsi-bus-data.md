@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SCSI_BUS_DATA structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560509">IOCTL_SCSI_GET_INQUIRY_DATA</a> request and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564949">SCSI_ADAPTER_BUS_INFO</a> structure to retrieve the SCSI inquiry data for all devices on a given SCSI bus. </p>
+<p>The SCSI_BUS_DATA structure is used in conjunction with the <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-get-inquiry-data.md">IOCTL_SCSI_GET_INQUIRY_DATA</a> request and the <a href="..\ntddscsi\ns-ntddscsi--scsi-adapter-bus-info.md">SCSI_ADAPTER_BUS_INFO</a> structure to retrieve the SCSI inquiry data for all devices on a given SCSI bus. </p>
 
 
 ## -syntax
@@ -95,10 +95,10 @@ typedef struct _SCSI_BUS_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560509">IOCTL_SCSI_GET_INQUIRY_DATA</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-get-inquiry-data.md">IOCTL_SCSI_GET_INQUIRY_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564949">SCSI_ADAPTER_BUS_INFO</a>
+<a href="..\ntddscsi\ns-ntddscsi--scsi-adapter-bus-info.md">SCSI_ADAPTER_BUS_INFO</a>
 </dt>
 </dl>
 <p> </p>

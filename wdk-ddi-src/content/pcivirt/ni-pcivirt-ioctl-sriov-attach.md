@@ -143,46 +143,6 @@ is completed by the lower devices in the stack. In this case, the driver must de
 
 <p>In this example handling of the IOCTL_SRIOV_ATTACH request, the PF driver maintains PnP states in its device context. The deviceContext-&gt;PnpRebalancing is set to TRUE, when the driver receives IRP_MN_QUERY_STOP_DEVICE and set to FALSE when it receives IRP_MN_START_DEVICE.</p>
 
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>This request is unsafe if the PF device is currently stopped or stopping for resource re-balance. A device is
-considered to be stopped after it received  <a href="https://msdn.microsoft.com/library/windows/hardware/ff551725">IRP_MN_QUERY_STOP_DEVICE</a> and restarted when it receives  <a href="https://msdn.microsoft.com/library/windows/hardware/ff550826">IRP_MN_CANCEL_STOP_DEVICE</a> or when  <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> 
-is completed by the lower devices in the stack. In this case, the driver must delay the completion of this request until the device is restarted.    </p>
-
-<p>It is not necessary to keep  this IRP pending because the request always a sent as
-        a synchronous kernel-mode IRP causing the caller to block the thread in any case.  
-</p>
-
-<p>Upon the completion of this request, the VSP can subsequently  send
-<a href="buses.ioctl_sriov_notification">IOCTL_SRIOV_NOTIFICATION</a> and <a href="buses.ioctl_sriov_event_complete">IOCTL_SRIOV_EVENT_COMPLETE</a> requests.  </p>
-
-<p>To unregister for Plug and Play events, the VSP sends the <a href="buses.ioctl_sriov_detach">IOCTL_SRIOV_DETACH</a> request.</p>
-
-<p>These events (defined in <a href="buses._sriov_pf_event">SRIOV_PF_EVENT</a>) cause the completion of  <a href="buses.ioctl_sriov_notification">IOCTL_SRIOV_NOTIFICATION</a> and a wait for  <a href="buses.ioctl_sriov_event_complete">IOCTL_SRIOV_EVENT_COMPLETE</a>:
-</p>
-
-<p>In this example handling of the IOCTL_SRIOV_ATTACH request, the PF driver maintains PnP states in its device context. The deviceContext-&gt;PnpRebalancing is set to TRUE, when the driver receives IRP_MN_QUERY_STOP_DEVICE and set to FALSE when it receives IRP_MN_START_DEVICE.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>This request is unsafe if the PF device is currently stopped or stopping for resource re-balance. A device is
-considered to be stopped after it received  <a href="https://msdn.microsoft.com/library/windows/hardware/ff551725">IRP_MN_QUERY_STOP_DEVICE</a> and restarted when it receives  <a href="https://msdn.microsoft.com/library/windows/hardware/ff550826">IRP_MN_CANCEL_STOP_DEVICE</a> or when  <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> 
-is completed by the lower devices in the stack. In this case, the driver must delay the completion of this request until the device is restarted.    </p>
-
-<p>It is not necessary to keep  this IRP pending because the request always a sent as
-        a synchronous kernel-mode IRP causing the caller to block the thread in any case.  
-</p>
-
-<p>Upon the completion of this request, the VSP can subsequently  send
-<a href="buses.ioctl_sriov_notification">IOCTL_SRIOV_NOTIFICATION</a> and <a href="buses.ioctl_sriov_event_complete">IOCTL_SRIOV_EVENT_COMPLETE</a> requests.  </p>
-
-<p>To unregister for Plug and Play events, the VSP sends the <a href="buses.ioctl_sriov_detach">IOCTL_SRIOV_DETACH</a> request.</p>
-
-<p>These events (defined in <a href="buses._sriov_pf_event">SRIOV_PF_EVENT</a>) cause the completion of  <a href="buses.ioctl_sriov_notification">IOCTL_SRIOV_NOTIFICATION</a> and a wait for  <a href="buses.ioctl_sriov_event_complete">IOCTL_SRIOV_EVENT_COMPLETE</a>:
-</p>
-
-<p>In this example handling of the IOCTL_SRIOV_ATTACH request, the PF driver maintains PnP states in its device context. The deviceContext-&gt;PnpRebalancing is set to TRUE, when the driver receives IRP_MN_QUERY_STOP_DEVICE and set to FALSE when it receives IRP_MN_START_DEVICE.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -211,13 +171,13 @@ is completed by the lower devices in the stack. In this case, the driver must de
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548651">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548656">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548660">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 <dt>
 <a href="buses.ioctl_sriov_detach">IOCTL_SRIOV_DETACH</a>

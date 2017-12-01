@@ -165,7 +165,7 @@ typedef struct _PTP_VENDOR_DATA_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546452">PTP_VENDOR_DATA_OUT</a>
+<a href="..\ptpusd\ns-ptpusd--ptp-vendor-data-out.md">PTP_VENDOR_DATA_OUT</a>
 </dt>
 </dl>
 <p> </p>

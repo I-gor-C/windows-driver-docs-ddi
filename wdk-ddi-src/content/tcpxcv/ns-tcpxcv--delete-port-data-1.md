@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> function uses a DELETE_PORT_DATA_1 structure when it deletes a port.</p>
+<p>The <a href="print.xcvdata">XcvData</a> function uses a DELETE_PORT_DATA_1 structure when it deletes a port.</p>
 
 
 ## -syntax
@@ -84,7 +84,7 @@ typedef struct _DELETE_PORT_DATA_1 {
 </dl>
 
 ## -remarks
-<p>When the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> function is called to delete a port, its <i>pInputData</i> parameter must be set with the address of a DELETE_PORT_DATA_1 structure. Set this function's <i>pszDataName</i> parameter to the string L"DeletePort". </p>
+<p>When the <a href="print.xcvdata">XcvData</a> function is called to delete a port, its <i>pInputData</i> parameter must be set with the address of a DELETE_PORT_DATA_1 structure. Set this function's <i>pszDataName</i> parameter to the string L"DeletePort". </p>
 
 <p>See <a href="NULL">TCPMON Xcv Interface</a> for more information.</p>
 
@@ -105,7 +105,7 @@ typedef struct _DELETE_PORT_DATA_1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>
+<a href="print.xcvdata">XcvData</a>
 </dt>
 </dl>
 <p> </p>

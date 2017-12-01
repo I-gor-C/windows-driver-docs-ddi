@@ -70,7 +70,7 @@ typedef struct _HBAFCPBindingEntry {
 <p>HBA_BIND_TO_D_ID</p>
 </td>
 <td>
-<p>Indicates that the target is identified by its fibre channel protocol (FCP) ID. The <b>Fcid</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556038">HBAFCPID</a> structure contains this value.</p>
+<p>Indicates that the target is identified by its fibre channel protocol (FCP) ID. The <b>Fcid</b> member of the <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpid.md">HBAFCPID</a> structure contains this value.</p>
 </td>
 </tr>
 <tr>
@@ -78,7 +78,7 @@ typedef struct _HBAFCPBindingEntry {
 <p>HBA_BIND_TO_WWPN</p>
 </td>
 <td>
-<p>Indicates that the target is identified by its worldwide port name. The <b>PortWWN</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556038">HBAFCPID</a> structure contains this value.</p>
+<p>Indicates that the target is identified by its worldwide port name. The <b>PortWWN</b> member of the <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpid.md">HBAFCPID</a> structure contains this value.</p>
 </td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ typedef struct _HBAFCPBindingEntry {
 <p>HBA_BIND_TO_WWNN</p>
 </td>
 <td>
-<p>Indicates that the fibre channel target device is identified by its worldwide node name. The <b>NodeWWN</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556038">HBAFCPID</a> structure contains this value.</p>
+<p>Indicates that the fibre channel target device is identified by its worldwide node name. The <b>NodeWWN</b> member of the <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpid.md">HBAFCPID</a> structure contains this value.</p>
 </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ typedef struct _HBAFCPBindingEntry {
 <p>HBA_BIND_TO_LUID</p>
 </td>
 <td>
-<p>Indicates that the target is identified by its fibre channel logical unit ID. The <b>FcpLun</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556038">HBAFCPID</a> structure contains this value.</p>
+<p>Indicates that the target is identified by its fibre channel logical unit ID. The <b>FcpLun</b> member of the <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpid.md">HBAFCPID</a> structure contains this value.</p>
 </td>
 </tr>
 <tr>
@@ -108,25 +108,25 @@ typedef struct _HBAFCPBindingEntry {
 </table>
 <p> </p>
 <p>You must include file <i>hbaapi.h </i>to use the symbolic constants in this table (See the <b>Headers</b> section).</p>
-<p>For a comparable set of values that define how an HBA specifies targets and logical units in the persistent bindings that it maintains, see the WMI property qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff556046">HBA_BIND_TYPE</a>. </p>
+<p>For a comparable set of values that define how an HBA specifies targets and logical units in the persistent bindings that it maintains, see the WMI property qualifier <a href="storage.hba_bind_type">HBA_BIND_TYPE</a>. </p>
 <p>For a more detailed description of the values that this member can have, see the T11 committee's <i>Fibre Channel HBA API</i> specification. </p>
 </dd>
 
 ### -field <b>FCPId</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556038">HBAFCPID</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.</p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpid.md">HBAFCPID</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.</p>
 </dd>
 
 ### -field <b>ScsiId</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556042">HBAScsiID</a> that contains the information that uniquely identifies a logical unit for the operating system. </p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbascsiid.md">HBAScsiID</a> that contains the information that uniquely identifies a logical unit for the operating system. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of this structure automatically when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556037">HBAFCPBindingEntry WMI Class</a> in <i>hbaapi.mof</i>. </p>
+<p>The WMI tool suite generates a declaration of this structure automatically when it compiles the <a href="storage.hbafcpbindingentry_wmi_class">HBAFCPBindingEntry WMI Class</a> in <i>hbaapi.mof</i>. </p>
 
 <p>For an explanation of the fibre channel protocol (FCP), see the T11 committee's <i>Fibre Channel Protocol for SCSI</i> specification. </p>
 
@@ -147,7 +147,7 @@ typedef struct _HBAFCPBindingEntry {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556037">HBAFCPBindingEntry WMI Class</a>
+<a href="storage.hbafcpbindingentry_wmi_class">HBAFCPBindingEntry WMI Class</a>
 </dt>
 </dl>
 <p> </p>

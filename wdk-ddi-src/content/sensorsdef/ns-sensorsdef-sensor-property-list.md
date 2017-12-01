@@ -7,7 +7,7 @@ old-location: sensors\sensor_property_list.htm
 old-project: sensors
 ms.assetid: 03E03BB9-95DB-49C0-AF14-FFF1998C98A7
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: SENSOR_PROPERTY_LIST, SENSOR_PROPERTY_LIST, *PSENSOR_PROPERTY_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>This structure contains a list of all <a href="https://msdn.microsoft.com/library/windows/hardware/dn946708">SENSOR_VALUE_PAIR</a> structures for each sensor. This structure is returned by calling ReadFile.</p>
+<p>This structure contains a list of all <a href="..\sensorsdef\ns-sensorsdef-sensor-value-pair.md">SENSOR_VALUE_PAIR</a> structures for each sensor. This structure is returned by calling ReadFile.</p>
 
 
 ## -syntax

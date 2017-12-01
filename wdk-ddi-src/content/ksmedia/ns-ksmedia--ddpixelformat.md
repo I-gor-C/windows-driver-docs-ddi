@@ -98,7 +98,7 @@ typedef struct _DDPIXELFORMAT {
 
 <dd>
 <p>Specifies the size in bytes of the DDPIXELFORMAT structure. The driver must initialize this member before the structure is used.</p>
-<p><b>DirectX 9.0 and later versions only.</b> Specifies, on input, the version of the Microsoft DirectX runtime being used by the application. This member is set to DD_RUNTIME_VERSION, which is 0x00000900 for DirectX 9.0, in the <b>format</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551569">DD_GETFORMATDATA</a> structure for a D3DGDI2_TYPE_GETFORMAT query.</p>
+<p><b>DirectX 9.0 and later versions only.</b> Specifies, on input, the version of the Microsoft DirectX runtime being used by the application. This member is set to DD_RUNTIME_VERSION, which is 0x00000900 for DirectX 9.0, in the <b>format</b> member of the <a href="..\d3dhal\ns-d3dhal--dd-getformatdata.md">DD_GETFORMATDATA</a> structure for a D3DGDI2_TYPE_GETFORMAT query.</p>
 </dd>
 
 ### -field <b>dwFlags</b>

@@ -84,7 +84,7 @@ typedef struct _FLT_CALLBACK_DATA {
 <p>FLTFL_CALLBACK_DATA_DIRTY</p>
 </td>
 <td>
-<p>A minifilter sets this flag (by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544383">FltSetCallbackDataDirty</a>) to indicate that it has modified the contents of the callback data structure. (For more information, see the following Remarks section.) </p>
+<p>A minifilter sets this flag (by calling <a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>) to indicate that it has modified the contents of the callback data structure. (For more information, see the following Remarks section.) </p>
 </td>
 </tr>
 </table>
@@ -148,7 +148,7 @@ typedef struct _FLT_CALLBACK_DATA {
 <p>FLTFL_CALLBACK_DATA_REISSUED_IO</p>
 </td>
 <td>
-<p>The callback data structure represents an I/O operation that is being reissued by a minifilter. (To reissue an I/O operation, a minifilter calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff544311">FltReissueSynchronousIo</a>.) This flag is valid only for IRP-based operations. </p>
+<p>The callback data structure represents an I/O operation that is being reissued by a minifilter. (To reissue an I/O operation, a minifilter calls <a href="..\fltkernel\nf-fltkernel-fltreissuesynchronousio.md">FltReissueSynchronousIo</a>.) This flag is valid only for IRP-based operations. </p>
 </td>
 </tr>
 <tr>
@@ -184,7 +184,7 @@ typedef struct _FLT_CALLBACK_DATA {
 <p>FLTFL_CALLBACK_DATA_POST_OPERATION</p>
 </td>
 <td>
-<p>The Filter Manager sets this flag to indicate that it is currently calling registered postoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>) routines for the operation. This flag is valid only during I/O completion. </p>
+<p>The Filter Manager sets this flag to indicate that it is currently calling registered postoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>) routines for the operation. This flag is valid only during I/O completion. </p>
 </td>
 </tr>
 </table>
@@ -200,19 +200,19 @@ typedef struct _FLT_CALLBACK_DATA {
 ### -field <b>Iopb</b>
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544638">FLT_IO_PARAMETER_BLOCK</a> structure that contains the parameters for the I/O operation. </p>
+<p>Pointer to an <a href="..\fltkernel\ns-fltkernel--flt-io-parameter-block.md">FLT_IO_PARAMETER_BLOCK</a> structure that contains the parameters for the I/O operation. </p>
 </dd>
 
 ### -field <b>IoStatus</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure that contains status and information for the I/O operation. A minifilter can modify the contents of this structure only in a preoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) routine from which it is about to return FLT_PREOP_COMPLETE or in a postoperation callback (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>) routine from which it is about to return FLT_POSTOP_FINISHED_PROCESSING. Otherwise, the contents of this structure are normally set by the Filter Manager. </p>
+<p>An <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that contains status and information for the I/O operation. A minifilter can modify the contents of this structure only in a preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine from which it is about to return FLT_PREOP_COMPLETE or in a postoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>) routine from which it is about to return FLT_POSTOP_FINISHED_PROCESSING. Otherwise, the contents of this structure are normally set by the Filter Manager. </p>
 </dd>
 
 ### -field <b>TagData</b>
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544820">FLT_TAG_DATA_BUFFER</a> structure that contains reparse point data for the I/O operation. This pointer is valid only in the post-create path. Thus only a minifilter's postoperation callback routine can change the value of this member. A minifilter's post-create callback routine can change this member to point to a different FLT_TAG_DATA_BUFFER structure. However, if it changes the member to point to a different structure, it must first free the existing structure to prevent a pool memory leak. </p>
+<p>Pointer to an <a href="..\fltkernel\ns-fltkernel--flt-tag-data-buffer.md">FLT_TAG_DATA_BUFFER</a> structure that contains reparse point data for the I/O operation. This pointer is valid only in the post-create path. Thus only a minifilter's postoperation callback routine can change the value of this member. A minifilter's post-create callback routine can change this member to point to a different FLT_TAG_DATA_BUFFER structure. However, if it changes the member to point to a different structure, it must first free the existing structure to prevent a pool memory leak. </p>
 </dd>
 
 ### -field <b>QueueLinks</b>
@@ -241,11 +241,11 @@ typedef struct _FLT_CALLBACK_DATA {
 </dl>
 
 ## -remarks
-<p>A minifilter registers preoperation (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>) and postoperation (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>) callback routines for one or more types of I/O operations. When the Filter Manager calls one of these callback routines, it passes a callback data (FLT_CALLBACK_DATA) structure as the first parameter. This structure represents the I/O operation. </p>
+<p>A minifilter registers preoperation (<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) and postoperation (<a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>) callback routines for one or more types of I/O operations. When the Filter Manager calls one of these callback routines, it passes a callback data (FLT_CALLBACK_DATA) structure as the first parameter. This structure represents the I/O operation. </p>
 
-<p>A minifilter's preoperation or postoperation callback routine can modify the contents of the callback data structure, except for the <b>Thread</b> and <b>RequestorMode</b> members. If it does, it must then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544383">FltSetCallbackDataDirty</a>, unless it has also modified the contents of the <b>IoStatus</b> member. Otherwise, the modified values are ignored. </p>
+<p>A minifilter's preoperation or postoperation callback routine can modify the contents of the callback data structure, except for the <b>Thread</b> and <b>RequestorMode</b> members. If it does, it must then call <a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>, unless it has also modified the contents of the <b>IoStatus</b> member. Otherwise, the modified values are ignored. </p>
 
-<p>A minifilter can initiate an I/O operation by calling a support routine such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a> or by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541703">FltAllocateCallbackData</a> to allocate a callback data structure; initializing the structure's I/O parameters, and passing the structure to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543421">FltPerformSynchronousIo</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>. </p>
+<p>A minifilter can initiate an I/O operation by calling a support routine such as <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a> or by calling <a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a> to allocate a callback data structure; initializing the structure's I/O parameters, and passing the structure to <a href="..\fltkernel\nf-fltkernel-fltperformsynchronousio.md">FltPerformSynchronousIo</a> or <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>. </p>
 
 <p>A minifilter-initiated I/O operation is sent only to the minifilter instances attached below the calling instance, and to the file system. Minifilters attached above the specified instance do not receive the I/O operation.  </p>
 
@@ -268,10 +268,10 @@ typedef struct _FLT_CALLBACK_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544638">FLT_IO_PARAMETER_BLOCK</a>
+<a href="..\fltkernel\ns-fltkernel--flt-io-parameter-block.md">FLT_IO_PARAMETER_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a>
+<a href="ifsk.flt_is_fastio_operation">FLT_IS_FASTIO_OPERATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544648">FLT_IS_FS_FILTER_OPERATION</a>
@@ -286,52 +286,52 @@ typedef struct _FLT_CALLBACK_DATA {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544663">FLT_IS_SYSTEM_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544811">FLT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel--flt-registration.md">FLT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544816">FLT_RELATED_OBJECTS</a>
+<a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544820">FLT_TAG_DATA_BUFFER</a>
+<a href="..\fltkernel\ns-fltkernel--flt-tag-data-buffer.md">FLT_TAG_DATA_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541703">FltAllocateCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542949">FltFreeCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreecallbackdata.md">FltFreeCallbackData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543421">FltPerformSynchronousIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltperformsynchronousio.md">FltPerformSynchronousIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544311">FltReissueSynchronousIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltreissuesynchronousio.md">FltReissueSynchronousIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544358">FltReuseCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltreusecallbackdata.md">FltReuseCallbackData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544383">FltSetCallbackDataDirty</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550659">IO_STACK_LOCATION</a>
+<a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a>
+<a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
 </dt>
 </dl>
 <p> </p>

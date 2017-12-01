@@ -44,7 +44,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaFeature</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/hh451262">IPrintSchemaDisplayableElement</a>. <b>IPrintSchemaFeature</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaFeature</b> interface inherits from <a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>. <b>IPrintSchemaFeature</b> also has these types of members:</p>
 
 <p>The <b>IPrintSchemaFeature</b> interface has these methods.</p>
 
@@ -55,7 +55,7 @@ req.product: Windows 10 or later.
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaFeature</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971603">DisplayUI</a>
+<a href="print.iprintschemafeature_displayui">DisplayUI</a>
 </p>
 
 <p>Read-only</p>
@@ -63,23 +63,23 @@ req.product: Windows 10 or later.
 <p>Gets the setting that indicates whether or not to show the print UI.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971604">SelectedOption</a>
+<a href="print.iprintschemafeature_selectedoption">SelectedOption</a>
 </p>
 
 <p>Read-only</p>
 
-<p>Gets an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> representing the selected option.</p>
+<p>Gets an <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> representing the selected option.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971604">SelectedOption</a>
+<a href="print.iprintschemafeature_put_selectedoption">SelectedOption</a>
 </p>
 
 <p>Write-only</p>
 
-<p>Changes the selected option of the Print Schema Feature element to the specified <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> element.</p>
+<p>Changes the selected option of the Print Schema Feature element to the specified <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> element.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971606">SelectionType</a>
+<a href="print.iprintschemafeature_selectiontype">SelectionType</a>
 </p>
 
 <p>Read-only</p>
@@ -96,7 +96,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451273">GetOption</a>
+<a href="print.iprintschemafeature_getoption">GetOption</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the option with the given name.</p>
@@ -115,7 +115,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971603">DisplayUI</a>
+<a href="print.iprintschemafeature_displayui">DisplayUI</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -128,33 +128,33 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971604">SelectedOption</a>
+<a href="print.iprintschemafeature_selectedoption">SelectedOption</a>
 </p>
 </td>
 <td align="left" width="10%">
 <p>Read-only</p>
 </td>
 <td align="left" width="63%">
-<p>Gets an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> representing the selected option.</p>
+<p>Gets an <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> representing the selected option.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971604">SelectedOption</a>
+<a href="print.iprintschemafeature_put_selectedoption">SelectedOption</a>
 </p>
 </td>
 <td align="left" width="10%">
 <p>Write-only</p>
 </td>
 <td align="left" width="63%">
-<p>Changes the selected option of the Print Schema Feature element to the specified <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> element.</p>
+<p>Changes the selected option of the Print Schema Feature element to the specified <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> element.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971606">SelectionType</a>
+<a href="print.iprintschemafeature_selectiontype">SelectionType</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -165,7 +165,7 @@ req.product: Windows 10 or later.
 </td>
 </tr>
 </table><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971603">DisplayUI</a>
+<a href="print.iprintschemafeature_displayui">DisplayUI</a>
 </p>
 
 <p>Read-only</p>
@@ -173,23 +173,23 @@ req.product: Windows 10 or later.
 <p>Gets the setting that indicates whether or not to show the print UI.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971604">SelectedOption</a>
+<a href="print.iprintschemafeature_selectedoption">SelectedOption</a>
 </p>
 
 <p>Read-only</p>
 
-<p>Gets an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> representing the selected option.</p>
+<p>Gets an <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> representing the selected option.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971604">SelectedOption</a>
+<a href="print.iprintschemafeature_put_selectedoption">SelectedOption</a>
 </p>
 
 <p>Write-only</p>
 
-<p>Changes the selected option of the Print Schema Feature element to the specified <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> element.</p>
+<p>Changes the selected option of the Print Schema Feature element to the specified <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> element.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971606">SelectionType</a>
+<a href="print.iprintschemafeature_selectiontype">SelectionType</a>
 </p>
 
 <p>Read-only</p>
@@ -199,9 +199,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>You must ensure that each Feature or Option in a PrintTicket or PrintCapabilities XML document has a <i>name</i> attribute specified. This attribute is used to build the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> and <b>IPrintSchemaFeature</b> objects. If the <i>name</i> attribute is omitted, the feature or option will not be displayed in the object model, or the Microsoft-provided print preferences experience.</p>
-
-<p>You must ensure that each Feature or Option in a PrintTicket or PrintCapabilities XML document has a <i>name</i> attribute specified. This attribute is used to build the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> and <b>IPrintSchemaFeature</b> objects. If the <i>name</i> attribute is omitted, the feature or option will not be displayed in the object model, or the Microsoft-provided print preferences experience.</p>
+<p>You must ensure that each Feature or Option in a PrintTicket or PrintCapabilities XML document has a <i>name</i> attribute specified. This attribute is used to build the <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> and <b>IPrintSchemaFeature</b> objects. If the <i>name</i> attribute is omitted, the feature or option will not be displayed in the object model, or the Microsoft-provided print preferences experience.</p>
 
 ## -requirements
 <table>
@@ -236,7 +234,7 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451262">IPrintSchemaDisplayableElement</a>
+<a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
 </dt>
 <dt>
 <a href="print.iprintschemacapabilities_getfeature">IPrintSchemaCapabilities::GetFeature</a>

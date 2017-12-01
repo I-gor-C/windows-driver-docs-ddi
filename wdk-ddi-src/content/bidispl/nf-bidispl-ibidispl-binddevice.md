@@ -39,7 +39,7 @@ req.iface: IBidiSpl
 
 
 ## -description
-<p>The <b>IBidiSpl::BindDevice</b> method binds a printer to a bidi request. This method is similar to the <a href="NULL">OpenPrinter</a> function.</p>
+<p>The <b>IBidiSpl::BindDevice</b> method binds a printer to a bidi request. This method is similar to the <a href="https://msdn.microsoft.com/8bbb46a8-2bba-4d15-a2e2-4770b52d2505">OpenPrinter</a> function.</p>
 
 
 ## -syntax
@@ -78,7 +78,7 @@ HRESULT IBidiSpl::BindDevice(
 </dl>
 </td>
 <td width="60%">
-<p>Permits users to perform all administrative tasks and basic printing operations except for SYNCHRONIZE. This is the same as PRINTER_ALL_ACCESS in <a href="NULL">OpenPrinter</a>.</p>
+<p>Permits users to perform all administrative tasks and basic printing operations except for SYNCHRONIZE. This is the same as PRINTER_ALL_ACCESS in <a href="https://msdn.microsoft.com/8bbb46a8-2bba-4d15-a2e2-4770b52d2505">OpenPrinter</a>.</p>
 </td>
 </tr>
 <tr>
@@ -89,7 +89,7 @@ HRESULT IBidiSpl::BindDevice(
 </dl>
 </td>
 <td width="60%">
-<p>Permits users to perform basic printing operations. This is the same as PRINTER_ACCESS_USE in <a href="NULL">OpenPrinter</a>.</p>
+<p>Permits users to perform basic printing operations. This is the same as PRINTER_ACCESS_USE in <a href="https://msdn.microsoft.com/8bbb46a8-2bba-4d15-a2e2-4770b52d2505">OpenPrinter</a>.</p>
 </td>
 </tr>
 </table>
@@ -164,16 +164,16 @@ HRESULT IBidiSpl::BindDevice(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dd144980">IBidiSpl</a>
+<a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+<a href="print.bidirectional_communication_interfaces">Bidirectional Communication Interfaces</a>
 </dt>
 <dt>
-<a href="NULL">Bidirectional Communication Schema</a>
+<a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 </dt>
 <dt>
-<a href="NULL">OpenPrinter</a>
+<a href="https://msdn.microsoft.com/8bbb46a8-2bba-4d15-a2e2-4770b52d2505">OpenPrinter</a>
 </dt>
 </dl>
 <p> </p>

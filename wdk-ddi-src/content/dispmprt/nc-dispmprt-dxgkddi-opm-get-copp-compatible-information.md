@@ -75,13 +75,13 @@ NTSTATUS DxgkDdiOPMGetCOPPCompatibleInformation(
 ### -param <i>Parameters</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560859">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that contains the type of COPP-compatible information to retrieve from the protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> determines if the parameters contain a valid request from the application that indirectly created the protected output object. For more information, see the Remarks section. </p>
+<p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-copp-compatible-get-info-parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that contains the type of COPP-compatible information to retrieve from the protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> determines if the parameters contain a valid request from the application that indirectly created the protected output object. For more information, see the Remarks section. </p>
 </dd>
 
 ### -param <i>RequestedInformation</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560910">DXGKMDT_OPM_REQUESTED_INFORMATION</a> structure that receives the protected output object's COPP-compatible information if <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> returns successfully.</p>
+<p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-requested-information.md">DXGKMDT_OPM_REQUESTED_INFORMATION</a> structure that receives the protected output object's COPP-compatible information if <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> returns successfully.</p>
 <p>If <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> fails, the value that <i>RequestedInformation</i> points to is unchanged.</p>
 </dd>
 </dl>
@@ -98,7 +98,7 @@ NTSTATUS DxgkDdiOPMGetCOPPCompatibleInformation(
 </dd>
 <dt><b>STATUS_GRAPHICS_OPM_PROTECTED_OUTPUT_DOES_NOT_HAVE_OPM_SEMANTICS</b></dt>
 <dd>
-<p>OPM-specific information was requested. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> cannot return OPM-specific information because it can return only COPP-specific information. Callers that require OPM-specific information should create a protected output with OPM semantics and then call <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a>. Following are the types of requests (that are specified in the <b>guidInformation</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560859">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to) that cause <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> to return this value:</p>
+<p>OPM-specific information was requested. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> cannot return OPM-specific information because it can return only COPP-specific information. Callers that require OPM-specific information should create a protected output with OPM semantics and then call <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a>. Following are the types of requests (that are specified in the <b>guidInformation</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-copp-compatible-get-info-parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to) that cause <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> to return this value:</p>
 <p></p>
 <dl>
 <dt><a id="DXGKMDT_OPM_GET_CURRENT_HDCP_SRM_VERSION"></a><a id="dxgkmdt_opm_get_current_hdcp_srm_version"></a>DXGKMDT_OPM_GET_CURRENT_HDCP_SRM_VERSION</dt>
@@ -155,7 +155,7 @@ NTSTATUS DxgkDdiOPMGetCOPPCompatibleInformation(
 
 <p>The protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter does not have COPP semantics. The DirectX graphics kernel subsystem should call the <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a> function instead of <i>DxgkDdiOPMGetCOPPCompatibleInformation </i>for protected output objects with OPM semantics.</p>
 
-<p>OPM-specific information was requested. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> cannot return OPM-specific information because it can return only COPP-specific information. Callers that require OPM-specific information should create a protected output with OPM semantics and then call <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a>. Following are the types of requests (that are specified in the <b>guidInformation</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560859">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to) that cause <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> to return this value:</p>
+<p>OPM-specific information was requested. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> cannot return OPM-specific information because it can return only COPP-specific information. Callers that require OPM-specific information should create a protected output with OPM semantics and then call <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a>. Following are the types of requests (that are specified in the <b>guidInformation</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-copp-compatible-get-info-parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to) that cause <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> to return this value:</p>
 
 ## -remarks
 <p>The DirectX graphics kernel subsystem should call <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> only if the output has COPP semantics.</p>
@@ -166,7 +166,7 @@ NTSTATUS DxgkDdiOPMGetCOPPCompatibleInformation(
 
 <p>The DirectX graphics kernel subsystem can pass a handle to a protected output only with COPP semantics. </p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560859">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to is not signed.</p>
+<p>The <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-copp-compatible-get-info-parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to is not signed.</p>
 
 ## -requirements
 <table>
@@ -218,13 +218,13 @@ NTSTATUS DxgkDdiOPMGetCOPPCompatibleInformation(
 <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-set-signing-key-and-sequence-numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560859">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-copp-compatible-get-info-parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560887">DXGKMDT_OPM_OMAC</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-omac.md">DXGKMDT_OPM_OMAC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560910">DXGKMDT_OPM_REQUESTED_INFORMATION</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-requested-information.md">DXGKMDT_OPM_REQUESTED_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: stream\ksrelativeevent.htm
 old-project: stream
 ms.assetid: 4edb8b74-d5e5-49ee-85a7-9eb095f5a575
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KSRELATIVEEVENT, KSRELATIVEEVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -95,13 +95,13 @@ typedef struct {
 ### -field <b>Event</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561744">KSEVENT</a> structure that contains the event to be used.</p>
+<p>A <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a> structure that contains the event to be used.</p>
 </dd>
 
 ### -field <b>EventData</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a> structure that specifies the header for the event-specific data. The header itself is not actually used except as a starting point to access the event-specific data, and must be initialized to zero.</p>
+<p>A <a href="stream.kseventdata">KSEVENTDATA</a> structure that specifies the header for the event-specific data. The header itself is not actually used except as a starting point to access the event-specific data, and must be initialized to zero.</p>
 </dd>
 </dl>
 

@@ -71,7 +71,7 @@ typedef struct _DXGKARG_RECOMMENDMONITORMODES {
 ### -field <b>pMonitorSourceModeSetInterface</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561921">DXGK_MONITORSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can use to inspect, and possibly add modes to, the monitor source mode set.</p>
+<p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitorsourcemodeset-interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can use to inspect, and possibly add modes to, the monitor source mode set.</p>
 </dd>
 </dl>
 
@@ -103,7 +103,7 @@ typedef struct _DXGKARG_RECOMMENDMONITORMODES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561921">DXGK_MONITORSOURCEMODESET_INTERFACE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitorsourcemodeset-interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a>
 </dt>
 <dt>
 <a href="display.dxgkddirecommendmonitormodes">DxgkDdiRecommendMonitorModes</a>

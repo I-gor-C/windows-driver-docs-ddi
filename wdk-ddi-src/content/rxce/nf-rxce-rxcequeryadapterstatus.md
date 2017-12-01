@@ -85,10 +85,6 @@ NTSTATUS RxCeQueryAdapterStatus(
 
 <p><b>RxCeQueryAdapterStatus</b> calls <b>TdiBuildQueryInformation</b> with a TDI_QUERY_ADAPTER_STATUS query. </p>
 
-<p><b>RxCeQueryAdapterStatus</b> returns an ADAPTER_STATUS structure for a given transport. This routine is most commonly used to get the NetBIOS name of the adapter. </p>
-
-<p><b>RxCeQueryAdapterStatus</b> calls <b>TdiBuildQueryInformation</b> with a TDI_QUERY_ADAPTER_STATUS query. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -125,10 +121,10 @@ NTSTATUS RxCeQueryAdapterStatus(
 <dl>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=138885">ADAPTER_STATUS</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553461">RxCeQueryInformation</a>
+<a href="..\rxce\nf-rxce-rxcequeryinformation.md">RxCeQueryInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553474">RxCeQueryTransportInformation</a>
+<a href="..\rxce\nf-rxce-rxcequerytransportinformation.md">RxCeQueryTransportInformation</a>
 </dt>
 </dl>
 <p> </p>

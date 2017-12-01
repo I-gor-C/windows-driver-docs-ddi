@@ -101,8 +101,8 @@ typedef struct _DXGK_SEGMENTFLAGS {
 ### -field <b>CpuVisible</b>
 
 <dd>
-<p>[out] A UINT value that specifies whether the memory segment is accessible to the CPU at the address that is specified by the <b>CpuTranslatedAddress</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562035">DXGK_SEGMENTDESCRIPTOR</a> structure that describes the memory segment.</p>
-<p> This member has no meaning for an aperture segment, including the AGP-type aperture segment. The only exception occurs when the  user-mode display driver has not set up an alternate virtual address for a primary allocation (that is, when the driver has not set <b>UseAlternateVA</b> in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544214">D3DDDICB_LOCKFLAGS</a> structure during a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> function).</p>
+<p>[out] A UINT value that specifies whether the memory segment is accessible to the CPU at the address that is specified by the <b>CpuTranslatedAddress</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor.md">DXGK_SEGMENTDESCRIPTOR</a> structure that describes the memory segment.</p>
+<p> This member has no meaning for an aperture segment, including the AGP-type aperture segment. The only exception occurs when the  user-mode display driver has not set up an alternate virtual address for a primary allocation (that is, when the driver has not set <b>UseAlternateVA</b> in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lockflags.md">D3DDDICB_LOCKFLAGS</a> structure during a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> function).</p>
 <p>See Remarks for more info.</p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
@@ -110,7 +110,7 @@ typedef struct _DXGK_SEGMENTFLAGS {
 ### -field <b>UseBanking</b>
 
 <dd>
-<p>[out] A UINT value that specifies whether the segment is divided into banks that the driver uses to provide hints to the video memory manager about the placement of allocations within the segment. The driver should also specify valid bank information in the <b>NbOfBanks</b> and <b>pBankRangeTable</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562035">DXGK_SEGMENTDESCRIPTOR</a> structure that describes the segment.</p>
+<p>[out] A UINT value that specifies whether the segment is divided into banks that the driver uses to provide hints to the video memory manager about the placement of allocations within the segment. The driver should also specify valid bank information in the <b>NbOfBanks</b> and <b>pBankRangeTable</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor.md">DXGK_SEGMENTDESCRIPTOR</a> structure that describes the segment.</p>
 <p>Setting this member is equivalent to setting the fourth bit of the 32-bit <b>Value</b> member (0x00000008).</p>
 </dd>
 
@@ -124,7 +124,7 @@ typedef struct _DXGK_SEGMENTFLAGS {
 ### -field <b>PitchAlignment</b>
 
 <dd>
-<p>[out] A UINT value that specifies whether an allocation that is mapped into the segment must be pitch aligned. For this type of segment, the video memory manager uses the <b>Size</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a> structure for the allocation to allocate a backing store for the allocation. However, the video memory manager uses the <b>PitchAlignedSize</b> member of DXGK_ALLOCATIONINFO to allocate resources for the segment. An allocation that is targeted for this type of segment typically has a different size for the backing store and for the segment. When the backing-store size does not match the segment size, the driver must determine how to correctly move the data in the allocation. This type of segment cannot be used for eviction. </p>
+<p>[out] A UINT value that specifies whether an allocation that is mapped into the segment must be pitch aligned. For this type of segment, the video memory manager uses the <b>Size</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a> structure for the allocation to allocate a backing store for the allocation. However, the video memory manager uses the <b>PitchAlignedSize</b> member of DXGK_ALLOCATIONINFO to allocate resources for the segment. An allocation that is targeted for this type of segment typically has a different size for the backing store and for the segment. When the backing-store size does not match the segment size, the driver must determine how to correctly move the data in the allocation. This type of segment cannot be used for eviction. </p>
 <p>Setting this member is equivalent to setting the sixth bit of the 32-bit <b>Value</b> member (0x00000020).</p>
 </dd>
 
@@ -177,7 +177,7 @@ typedef struct _DXGK_SEGMENTFLAGS {
 ### -field <b>Use64KBPages</b>
 
 <dd>
-<p>[out] When set, the GPU memory segment supports 64 KB pages. Otherwise, 4 KB pages are supported. When the driver sets the cap and an allocation can be paged-in to the segment, the allocation alignment, returned by the kernel mode driver from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>, must be multiple a of 64 KB.</p>
+<p>[out] When set, the GPU memory segment supports 64 KB pages. Otherwise, 4 KB pages are supported. When the driver sets the cap and an allocation can be paged-in to the segment, the allocation alignment, returned by the kernel mode driver from <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a>, must be multiple a of 64 KB.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
@@ -239,13 +239,11 @@ typedef struct _DXGK_SEGMENTFLAGS {
 
 <p>Note that for an AGP-type aperture segment, the driver must exclusively set the <b>Agp</b> member of the structure in the union that DXGK_SEGMENTFLAGS contains. Although the AGP-type aperture segment is an aperture and visible to the CPU, if any other members are set, the adapter fails to initialize.</p>
 
-<p>In the special case where the allocation uses an aperture segment on a shared primary allocation (<a href="https://msdn.microsoft.com/library/windows/hardware/ff557598">DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA</a>.<b>StandardAllocationType</b> is <b>D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE</b>), and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560966">DXGK_ALLOCATIONINFOFLAGS</a>.<b>UseAlternateVA</b> is not set,  the driver should use a section-backed primary allocation (<a href="https://msdn.microsoft.com/library/windows/hardware/ff562072">DXGK_VIDMMCAPS</a>.<b>SectionBackedPrimary</b> is set) when the driver's <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function is called. By using a section-backed primary you can avoid the limitations of <b>CpuVisible</b> for the aperture segment.</p>
+<p>In the special case where the allocation uses an aperture segment on a shared primary allocation (<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-getstandardallocationdriverdata.md">DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA</a>.<b>StandardAllocationType</b> is <b>D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE</b>), and <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>.<b>UseAlternateVA</b> is not set,  the driver should use a section-backed primary allocation (<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidmmcaps.md">DXGK_VIDMMCAPS</a>.<b>SectionBackedPrimary</b> is set) when the driver's <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function is called. By using a section-backed primary you can avoid the limitations of <b>CpuVisible</b> for the aperture segment.</p>
 
-<p>You can avoid the limitations of <b>CpuVisible</b> for an aperture segment by using a shared, section-backed primary allocation. In this case, use an aperture segment on a shared primary allocation (<a href="https://msdn.microsoft.com/library/windows/hardware/ff557598">DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA</a>.<b>StandardAllocationType</b> is <b>D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE</b>), do not set <a href="https://msdn.microsoft.com/library/windows/hardware/ff560966">DXGK_ALLOCATIONINFOFLAGS</a>.<b>UseAlternateVA</b>,  and use a section-backed primary allocation (set <a href="https://msdn.microsoft.com/library/windows/hardware/ff562072">DXGK_VIDMMCAPS</a>.<b>SectionBackedPrimary</b>) when the driver's <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function is called. </p>
+<p>You can avoid the limitations of <b>CpuVisible</b> for an aperture segment by using a shared, section-backed primary allocation. In this case, use an aperture segment on a shared primary allocation (<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-getstandardallocationdriverdata.md">DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA</a>.<b>StandardAllocationType</b> is <b>D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE</b>), do not set <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>.<b>UseAlternateVA</b>,  and use a section-backed primary allocation (set <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidmmcaps.md">DXGK_VIDMMCAPS</a>.<b>SectionBackedPrimary</b>) when the driver's <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function is called. </p>
 
 <p>The combination of values for the <b>PreservedDuringStandby</b>, <b>PreservedDuringHibernate</b>, and  <b>PartiallyPreservedDuringHibernate</b> members determines whether a segment is purged of its content when the system enters a low-power (standby) system state, as follows.</p>
-
-<p> </p>
 
 <p>The operating system does not recognize combinations in this table that are marked "invalid."</p>
 
@@ -255,29 +253,13 @@ typedef struct _DXGK_SEGMENTFLAGS {
 <p>The following are common combinations of member values.</p>
 </p>
 
-<p>The following are common combinations of member values.</p><dl>
-<dt><a id="PreservedDuringStandby_and_PreservedDuringHibernate_set"></a><a id="preservedduringstandby_and_preservedduringhibernate_set"></a><a id="PRESERVEDDURINGSTANDBY_AND_PRESERVEDDURINGHIBERNATE_SET"></a><b>PreservedDuringStandby</b> and <b>PreservedDuringHibernate</b> set</dt>
-<dd>
+<p>The following are common combinations of member values.</p>
+
 <p>The segment is never purged during a power transition. This combination of member values should be set on memory segments that are populated from driver-allocated system memory—not BIOS-reserved memory, which is not automatically preserved in the hibernate state. These two members should also both be set for aperture segments in which page table content should be preserved during power transitions.</p>
-</dd>
-<dt><a id="PreservedDuringStandby_set__but_PreservedDuringHibernate_not_set"></a><a id="preservedduringstandby_set__but_preservedduringhibernate_not_set"></a><a id="PRESERVEDDURINGSTANDBY_SET__BUT_PRESERVEDDURINGHIBERNATE_NOT_SET"></a><b>PreservedDuringStandby</b> set, but <b>PreservedDuringHibernate</b> not set</dt>
-<dd>
-<p>The segment is preserved during a sleep state but purged during a hibernate state. This combination of member values should be used for memory segments that are populated from BIOS-reserved memory, or for memory and aperture segments that are exposed by a discrete GPU that keeps its VRAM refreshed during a sleep state.</p>
-</dd>
-<dt><a id="PreservedDuringStandby_and_PartiallyPreservedDuringHibernate_set"></a><a id="preservedduringstandby_and_partiallypreservedduringhibernate_set"></a><a id="PRESERVEDDURINGSTANDBY_AND_PARTIALLYPRESERVEDDURINGHIBERNATE_SET"></a><b>PreservedDuringStandby</b> and <b>PartiallyPreservedDuringHibernate</b> set</dt>
-<dd>
-<p>The segment is preserved during a sleep state. In addition, during a hibernate state, only those allocations beyond the memory address specified by the <b>SystemMemoryEndAddress</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh464086">DXGK_SEGMENTDESCRIPTOR3</a> structure are evicted.</p>
-<p>This combination of member values should be set on memory segments that are populated partially from driver-allocated memory and partially from BIOS-reserved memory. <b>PartiallyPreservedDuringHibernate</b> and <b>PreservedDuringHibernate</b> cannot both be set on the same segment, and they cannot be set on aperture segments.</p>
-</dd>
-<dt><a id="No_standby_or_hibernate_members_set"></a><a id="no_standby_or_hibernate_members_set"></a><a id="NO_STANDBY_OR_HIBERNATE_MEMBERS_SET"></a>No standby or hibernate members set</dt>
-<dd>
-<p>The segment is purged during all power transitions.</p>
-</dd>
-</dl><p>The segment is never purged during a power transition. This combination of member values should be set on memory segments that are populated from driver-allocated system memory—not BIOS-reserved memory, which is not automatically preserved in the hibernate state. These two members should also both be set for aperture segments in which page table content should be preserved during power transitions.</p>
 
 <p>The segment is preserved during a sleep state but purged during a hibernate state. This combination of member values should be used for memory segments that are populated from BIOS-reserved memory, or for memory and aperture segments that are exposed by a discrete GPU that keeps its VRAM refreshed during a sleep state.</p>
 
-<p>The segment is preserved during a sleep state. In addition, during a hibernate state, only those allocations beyond the memory address specified by the <b>SystemMemoryEndAddress</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh464086">DXGK_SEGMENTDESCRIPTOR3</a> structure are evicted.</p>
+<p>The segment is preserved during a sleep state. In addition, during a hibernate state, only those allocations beyond the memory address specified by the <b>SystemMemoryEndAddress</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor3.md">DXGK_SEGMENTDESCRIPTOR3</a> structure are evicted.</p>
 
 <p>This combination of member values should be set on memory segments that are populated partially from driver-allocated memory and partially from BIOS-reserved memory. <b>PartiallyPreservedDuringHibernate</b> and <b>PreservedDuringHibernate</b> cannot both be set on the same segment, and they cannot be set on aperture segments.</p>
 
@@ -308,19 +290,19 @@ typedef struct _DXGK_SEGMENTFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562015">DXGK_QUERYSEGMENTIN</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentin.md">DXGK_QUERYSEGMENTIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562035">DXGK_SEGMENTDESCRIPTOR</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor.md">DXGK_SEGMENTDESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464086">DXGK_SEGMENTDESCRIPTOR3</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor3.md">DXGK_SEGMENTDESCRIPTOR3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 </dt>
 <dt>
 <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a>

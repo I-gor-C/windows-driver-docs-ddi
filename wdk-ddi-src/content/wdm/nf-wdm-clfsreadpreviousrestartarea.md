@@ -7,7 +7,7 @@ old-location: kernel\clfsreadpreviousrestartarea.htm
 old-project: kernel
 ms.assetid: 832da270-e1e1-41bf-a9cf-0b363c0d2d74
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: ClfsReadPreviousRestartArea
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS ClfsReadPreviousRestartArea(
 ### -param <i>pvReadContext</i> [in]
 
 <dd>
-<p>A pointer to a read context obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541709">ClfsReadRestartArea</a>.</p>
+<p>A pointer to a read context obtained by a previous call to <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>.</p>
 </dd>
 
 ### -param <i>ppvRestartBuffer</i> [out]
@@ -79,7 +79,7 @@ NTSTATUS ClfsReadPreviousRestartArea(
 ### -param <i>plsnRestart</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a> structure that receives the previous LSN of the restart record that was read.</p>
+<p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that receives the previous LSN of the restart record that was read.</p>
 </dd>
 </dl>
 
@@ -93,17 +93,7 @@ NTSTATUS ClfsReadPreviousRestartArea(
 
 <p>Read contexts are not thread-safe. Clients are responsible for serializing access to read contexts.</p>
 
-<p>Clients append restart records to a CLFS log by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541770">ClfsWriteRestartArea</a>.       </p>
-
-<p>With the <b>ReadPreviousLogRestartArea</b> routine, clients can implement a form of fuzzy checkpointing. For example, the checkpoint state could consist of the log records delimited by two or more restart records. </p>
-
-<p>For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>.</p>
-
-<p>For information about reading records from CLFS streams, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560785">Reading Data Records from a CLFS Stream</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560786">Reading Restart Records from a CLFS Stream</a>.</p>
-
-<p>Read contexts are not thread-safe. Clients are responsible for serializing access to read contexts.</p>
-
-<p>Clients append restart records to a CLFS log by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541770">ClfsWriteRestartArea</a>.       </p>
+<p>Clients append restart records to a CLFS log by calling <a href="..\wdm\nf-wdm-clfswriterestartarea.md">ClfsWriteRestartArea</a>.       </p>
 
 <p>With the <b>ReadPreviousLogRestartArea</b> routine, clients can implement a form of fuzzy checkpointing. For example, the checkpoint state could consist of the log records delimited by two or more restart records. </p>
 
@@ -170,15 +160,15 @@ NTSTATUS ClfsReadPreviousRestartArea(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a>
+<a href="kernel.clfs_lsn">CLFS_LSN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541709">ClfsReadRestartArea</a>
+<a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541770">ClfsWriteRestartArea</a>
+<a href="..\wdm\nf-wdm-clfswriterestartarea.md">ClfsWriteRestartArea</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReadPreviousRestartArea routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReadPreviousRestartArea routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

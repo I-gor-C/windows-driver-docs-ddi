@@ -7,7 +7,7 @@ old-location: audio\iminiportaudioenginenode.htm
 old-project: audio
 ms.assetid: 58170D54-869A-49CC-865A-AB64BFB41A4B
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcUnregisterIoTimeout
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,7 +89,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265074">GetAudioEngineDescriptor</a>
+<a href="audio.iminiportaudioenginenode_getaudioenginedescriptor">GetAudioEngineDescriptor</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the descriptor for the audio engine node.</p>
@@ -97,7 +97,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265075">GetBufferSizeRange</a>
+<a href="audio.iminiportaudioenginenode_getbuffersizerange">GetBufferSizeRange</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the minimum and maximum buffer size that the hardware audio engine can support.</p>
@@ -105,7 +105,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265076">GetDeviceAttributeSteppings</a>
+<a href="audio.iminiportaudioenginenode_getdeviceattributesteppings">GetDeviceAttributeSteppings</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the allowed stepping value for the audio device attribute.</p>
@@ -113,7 +113,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265077">GetDeviceChannelCount</a>
+<a href="audio.iminiportaudioenginenode_getdevicechannelcount">GetDeviceChannelCount</a>
 </td>
 <td align="left" width="63%">
 <p>Gets a count of the number of channels supported by the audio device.</p>
@@ -121,7 +121,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265078">GetDeviceChannelMute</a>
+<a href="audio.iminiportaudioenginenode_getdevicechannelmute">GetDeviceChannelMute</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the state of the Mute node for the audio device channel.</p>
@@ -129,7 +129,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265079">GetDeviceChannelPeakMeter</a>
+<a href="audio.iminiportaudioenginenode_getdevicechannelpeakmeter">GetDeviceChannelPeakMeter</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the PeakMeter value  for the audio device channel.</p>
@@ -137,7 +137,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265080">GetDeviceChannelVolume</a>
+<a href="audio.iminiportaudioenginenode_getdevicechannelvolume">GetDeviceChannelVolume</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the volume level for a given channel of the audio device.</p>
@@ -145,7 +145,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265081">GetDeviceFormat</a>
+<a href="audio.iminiportaudioenginenode_getdeviceformat">GetDeviceFormat</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the audio data format for an audio device.</p>
@@ -153,7 +153,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265082">GetEngineFormatSize</a>
+<a href="audio.iminiportaudioenginenode_getengineformatsize">GetEngineFormatSize</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the format type and the buffer size for the audio engine's audio data format.</p>
@@ -161,7 +161,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265083">GetGfxState</a>
+<a href="audio.iminiportaudioenginenode_getgfxstate">GetGfxState</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the state of the global effects (GFX) node in the audio engine.</p>
@@ -169,7 +169,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265084">GetMixFormat</a>
+<a href="audio.iminiportaudioenginenode_getmixformat">GetMixFormat</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the audio data format for the audio engine mixer.</p>
@@ -177,7 +177,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265085">GetSupportedDeviceFormats</a>
+<a href="audio.iminiportaudioenginenode_getsupporteddeviceformats">GetSupportedDeviceFormats</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the supported audio data formats for the audio device.</p>
@@ -185,7 +185,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265086">SetDeviceChannelMute</a>
+<a href="audio.iminiportaudioenginenode_setdevicechannelmute">SetDeviceChannelMute</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the state of the Mute node for the audio device channel.</p>
@@ -193,7 +193,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265087">SetDeviceChannelVolume</a>
+<a href="audio.iminiportaudioenginenode_setdevicechannelvolume">SetDeviceChannelVolume</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the volume level for a given channel of the audio device.</p>
@@ -201,7 +201,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265088">SetDeviceFormat</a>
+<a href="audio.iminiportaudioenginenode_setdeviceformat">SetDeviceFormat</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the audio data format for an audio device.</p>
@@ -209,7 +209,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265089">SetGfxState</a>
+<a href="audio.iminiportaudioenginenode_setgfxstate">SetGfxState</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the state of the global effects (GFX) node in the audio engine.</p>

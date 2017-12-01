@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628005">UDECX_USB_ENDPOINT_CALLBACKS</a> structure before a <a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a> call.</p>
+<p>Initializes a <a href="buses.udecx_usb_endpoint_callbacks">UDECX_USB_ENDPOINT_CALLBACKS</a> structure before a <a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a> call.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ FORCEINLINE void UDECX_USB_ENDPOINT_CALLBACKS_INIT(
 ### -param <i>Callbacks</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628005">UDECX_USB_ENDPOINT_CALLBACKS</a> to initialize.</p>
+<p>A pointer to a <a href="buses.udecx_usb_endpoint_callbacks">UDECX_USB_ENDPOINT_CALLBACKS</a> to initialize.</p>
 </dd>
 </dl>
 
@@ -127,7 +127,7 @@ FORCEINLINE void UDECX_USB_ENDPOINT_CALLBACKS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a>
+<a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>
 </dt>
 </dl>
 <p> </p>

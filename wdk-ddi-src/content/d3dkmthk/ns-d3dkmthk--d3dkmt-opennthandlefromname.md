@@ -65,7 +65,7 @@ typedef struct _D3DKMT_OPENNTHANDLEFROMNAME {
 ### -field <b>pObjAttrib</b>
 
 <dd>
-<p>[in] A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff557749">OBJECT_ATTRIBUTES</a> structure that specifies attributes of the adapter, including its name.</p>
+<p>[in] A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies attributes of the adapter, including its name.</p>
 </dd>
 
 ### -field <b>hNtHandle</b>

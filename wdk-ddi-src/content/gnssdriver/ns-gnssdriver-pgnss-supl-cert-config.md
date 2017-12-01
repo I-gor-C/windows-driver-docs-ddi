@@ -7,7 +7,7 @@ old-location: sensors\gnss_supl_cert_config.htm
 old-project: sensors
 ms.assetid: F974D5E2-7230-4F85-9C1A-7CE7E240DBE1
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,7 +76,7 @@ typedef struct {
 ### -field <b>CertAction</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn925225">GNSS_SUPL_CERT_ACTION</a> enumeration value that specifies the action to take on the certificate.</p>
+<p>A <a href="..\gnssdriver\ne-gnssdriver-gnss-supl-cert-action.md">GNSS_SUPL_CERT_ACTION</a> enumeration value that specifies the action to take on the certificate.</p>
 <table></table>
 <p> </p>
 <table>

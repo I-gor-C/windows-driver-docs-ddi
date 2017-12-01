@@ -7,7 +7,7 @@ old-location: netvista\dot11_wps_config_method.htm
 old-project: netvista
 ms.assetid: FFA5B3FF-57AF-4701-97FB-E1182CDE8F7A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PRINTER_EVENT_ATTRIBUTES_INFO, PRINTER_EVENT_ATTRIBUTES_INFO, *PPRINTER_EVENT_ATTRIBUTES_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

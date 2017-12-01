@@ -67,8 +67,6 @@ LOGICAL FsRtlIsPagingFile(
 ## -remarks
 <p>File system filter drivers call <b>FsRtlIsPagingFile</b> to determine whether a given file object represents a paging file. </p>
 
-<p>File system filter drivers call <b>FsRtlIsPagingFile</b> to determine whether a given file object represents a paging file. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -132,7 +130,7 @@ LOGICAL FsRtlIsPagingFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547152">FsRtlPostPagingFileStackOverflow</a>
+<a href="ifsk.fsrtlpostpagingfilestackoverflow">FsRtlPostPagingFileStackOverflow</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547285">FsRtlSupportsPerStreamContexts</a>

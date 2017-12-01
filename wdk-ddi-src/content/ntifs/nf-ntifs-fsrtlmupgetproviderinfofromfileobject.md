@@ -100,25 +100,11 @@ NTSTATUS FsRtlMupGetProviderInfoFromFileObject(
 ## -remarks
 <p>A file system filter driver can call the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine to get information about a network redirector from a file object for a file that is located on a remote file system. The amount of information that is returned by the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine depends on the value of the <i>Level</i> parameter. If the <i>Level </i>parameter is set to 1, the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine returns a FSRTL_MUP_PROVIDER_INFO_LEVEL_1 structure in the buffer that is pointed to by the <i>pBuffer </i>parameter. The FSRTL_MUP_PROVIDER_INFO_LEVEL_1 structure is defined as follows:</p>
 
-<p></p><dl>
-<dt><a id="ProviderId"></a><a id="providerid"></a><a id="PROVIDERID"></a><b>ProviderId</b></dt>
-<dd>
+<p></p>
+
 <p>The provider identifier of the network redirector.</p>
-</dd>
-</dl><p>The provider identifier of the network redirector.</p>
 
 <p>If the <i>Level </i>parameter is set to 2, the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine returns a FSRTL_MUP_PROVIDER_INFO_LEVEL_2 structure in the buffer that is pointed to by the <i>pBuffer </i>parameter. The FSRTL_MUP_PROVIDER_INFO_LEVEL_2 structure is defined as follows:</p>
-
-<p></p><dl>
-<dt><a id="ProviderId"></a><a id="providerid"></a><a id="PROVIDERID"></a><b>ProviderId</b></dt>
-<dd>
-<p>The provider identifier of the network redirector.</p>
-</dd>
-<dt><a id="ProviderName"></a><a id="providername"></a><a id="PROVIDERNAME"></a><b>ProviderName</b></dt>
-<dd>
-<p>A Unicode string that contains the device name of the network redirector.</p>
-</dd>
-</dl><p>The provider identifier of the network redirector.</p>
 
 <p>A Unicode string that contains the device name of the network redirector.</p>
 
@@ -126,37 +112,7 @@ NTSTATUS FsRtlMupGetProviderInfoFromFileObject(
 
 <p>The value of the UNC provider identifier for a particular network redirector remains the same if the network redirector is unloaded from the system and then reloaded back into the system.</p>
 
-<p>To get the UNC provider identifier of a network redirector from the device name of the network redirector, a file system filter driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546971">FsRtlMupGetProviderIdFromName</a> routine.</p>
-
-<p>A file system filter driver can call the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine to get information about a network redirector from a file object for a file that is located on a remote file system. The amount of information that is returned by the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine depends on the value of the <i>Level</i> parameter. If the <i>Level </i>parameter is set to 1, the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine returns a FSRTL_MUP_PROVIDER_INFO_LEVEL_1 structure in the buffer that is pointed to by the <i>pBuffer </i>parameter. The FSRTL_MUP_PROVIDER_INFO_LEVEL_1 structure is defined as follows:</p>
-
-<p></p><dl>
-<dt><a id="ProviderId"></a><a id="providerid"></a><a id="PROVIDERID"></a><b>ProviderId</b></dt>
-<dd>
-<p>The provider identifier of the network redirector.</p>
-</dd>
-</dl><p>The provider identifier of the network redirector.</p>
-
-<p>If the <i>Level </i>parameter is set to 2, the <b>FsRtlMupGetProviderInfoFromFileObject</b> routine returns a FSRTL_MUP_PROVIDER_INFO_LEVEL_2 structure in the buffer that is pointed to by the <i>pBuffer </i>parameter. The FSRTL_MUP_PROVIDER_INFO_LEVEL_2 structure is defined as follows:</p>
-
-<p></p><dl>
-<dt><a id="ProviderId"></a><a id="providerid"></a><a id="PROVIDERID"></a><b>ProviderId</b></dt>
-<dd>
-<p>The provider identifier of the network redirector.</p>
-</dd>
-<dt><a id="ProviderName"></a><a id="providername"></a><a id="PROVIDERNAME"></a><b>ProviderName</b></dt>
-<dd>
-<p>A Unicode string that contains the device name of the network redirector.</p>
-</dd>
-</dl><p>The provider identifier of the network redirector.</p>
-
-<p>A Unicode string that contains the device name of the network redirector.</p>
-
-<p>A file system filter driver can quickly compare the value of the provider identifier to the value of other provider identifiers without needing to do a string comparison.</p>
-
-<p>The value of the UNC provider identifier for a particular network redirector remains the same if the network redirector is unloaded from the system and then reloaded back into the system.</p>
-
-<p>To get the UNC provider identifier of a network redirector from the device name of the network redirector, a file system filter driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546971">FsRtlMupGetProviderIdFromName</a> routine.</p>
+<p>To get the UNC provider identifier of a network redirector from the device name of the network redirector, a file system filter driver can call the <a href="..\ntifs\nf-ntifs-fsrtlmupgetprovideridfromname.md">FsRtlMupGetProviderIdFromName</a> routine.</p>
 
 ## -requirements
 <table>
@@ -221,7 +177,7 @@ NTSTATUS FsRtlMupGetProviderInfoFromFileObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546971">FsRtlMupGetProviderIdFromName</a>
+<a href="..\ntifs\nf-ntifs-fsrtlmupgetprovideridfromname.md">FsRtlMupGetProviderIdFromName</a>
 </dt>
 </dl>
 <p> </p>

@@ -183,7 +183,7 @@ typedef struct _WHEA_XPF_MC_BANK_DESCRIPTOR {
 </dl>
 
 ## -remarks
-<p>An array of WHEA_XPF_MC_BANK_DESCRIPTOR structures is contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560646">WHEA_XPF_CMC_DESCRIPTOR</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560649">WHEA_XPF_MCE_DESCRIPTOR</a> structures.</p>
+<p>An array of WHEA_XPF_MC_BANK_DESCRIPTOR structures is contained in the <a href="..\ntddk\ns-ntddk--whea-xpf-cmc-descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a> and <a href="..\ntddk\ns-ntddk--whea-xpf-mce-descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a> structures.</p>
 
 ## -requirements
 <table>
@@ -211,10 +211,10 @@ typedef struct _WHEA_XPF_MC_BANK_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560646">WHEA_XPF_CMC_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-cmc-descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560649">WHEA_XPF_MCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-mce-descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

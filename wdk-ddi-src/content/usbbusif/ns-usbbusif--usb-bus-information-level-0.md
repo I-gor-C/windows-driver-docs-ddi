@@ -102,7 +102,7 @@ typedef struct _USB_BUS_INFORMATION_LEVEL_0 {
 <a href="buses.querybusinformation">QueryBusInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

@@ -113,7 +113,7 @@ typedef struct _D3DDDICB_RENDER {
 ### -field <b>pNewAllocationList</b>
 
 <dd>
-<p>[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544375">D3DDDI_ALLOCATIONLIST</a> structures that the user-mode display driver receives to use as the allocation list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a> function.</p>
+<p>[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the user-mode display driver receives to use as the allocation list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a> function.</p>
 </dd>
 
 ### -field <b>NewAllocationListSize</b>
@@ -126,7 +126,7 @@ typedef struct _D3DDDICB_RENDER {
 ### -field <b>pNewPatchLocationList</b>
 
 <dd>
-<p>[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a> structures that the user-mode display driver receives to use as the patch-location list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a> function.</p>
+<p>[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the user-mode display driver receives to use as the patch-location list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a> function.</p>
 </dd>
 
 ### -field <b>NewPatchLocationListSize</b>
@@ -139,7 +139,7 @@ typedef struct _D3DDDICB_RENDER {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544247">D3DDDICB_RENDERFLAGS</a> structure that indicates information about a command buffer to be rendered.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-renderflags.md">D3DDDICB_RENDERFLAGS</a> structure that indicates information about a command buffer to be rendered.</p>
 </dd>
 
 ### -field <b>hContext</b>
@@ -217,13 +217,13 @@ typedef struct _D3DDDICB_RENDER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544375">D3DDDI_ALLOCATIONLIST</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544247">D3DDDICB_RENDERFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-renderflags.md">D3DDDICB_RENDERFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a>

@@ -121,7 +121,7 @@ typedef enum D3DWDDM2_0DDI_VIDEO_DECODER_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906368">QueryVideoCapabilities</a>
+<a href="display.queryvideocapabilities">QueryVideoCapabilities</a>
 </dt>
 </dl>
 <p> </p>

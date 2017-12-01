@@ -57,7 +57,7 @@ NTSTATUS D3DKMTCheckVidPnExclusiveOwnership(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547784">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a> structure that describes the parameters to determine exclusive VidPN ownership. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-checkvidpnexclusiveownership.md">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a> structure that describes the parameters to determine exclusive VidPN ownership. </p>
 </dd>
 </dl>
 
@@ -68,7 +68,7 @@ NTSTATUS D3DKMTCheckVidPnExclusiveOwnership(
 <dt><b>STATUS_DEVICE_REMOVED</b></dt>
 </dl><p>The graphics adapter was stopped or the display device was reset.</p><dl>
 <dt><b>STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE</b></dt>
-</dl><p>The video present source that is identified by the <b>VidPnSourceId</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff547784">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a> is already owned by a display mode manager (DMM) client and cannot be used until the client releases the video present source.</p><dl>
+</dl><p>The video present source that is identified by the <b>VidPnSourceId</b> member of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-checkvidpnexclusiveownership.md">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a> is already owned by a display mode manager (DMM) client and cannot be used until the client releases the video present source.</p><dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDEO_PRESENT_SOURCE</b></dt>
 </dl><p>The video present source that is identified by the <b>VidPnSourceId</b> member of D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP is invalid. </p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -136,7 +136,7 @@ NTSTATUS D3DKMTCheckVidPnExclusiveOwnership(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547784">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-checkvidpnexclusiveownership.md">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a>
 </dt>
 </dl>
 <p> </p>

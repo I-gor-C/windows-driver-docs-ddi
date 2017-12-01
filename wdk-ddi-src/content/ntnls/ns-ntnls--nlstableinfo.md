@@ -7,7 +7,7 @@ old-location: kernel\nlstableinfo.htm
 old-project: kernel
 ms.assetid: B9E64163-B338-49C9-8167-C36B110AB710
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: NLSTABLEINFO, NLSTABLEINFO, *PNLSTABLEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

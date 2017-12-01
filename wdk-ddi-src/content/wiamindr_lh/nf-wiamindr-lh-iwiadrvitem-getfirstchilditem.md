@@ -68,8 +68,6 @@ HRESULT GetFirstChildItem(
 ## -remarks
 <p>Minidrivers typically use this method to retrieve the first child item in a driver item folder. The item being searched must be a folder item.</p>
 
-<p>Minidrivers typically use this method to retrieve the first child item in a driver item folder. The item being searched must be a folder item.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -105,10 +103,10 @@ HRESULT GetFirstChildItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543889">IWiaDrvItem::GetNextSiblingItem</a>
+<a href="image.iwiadrvitem_getnextsiblingitem">IWiaDrvItem::GetNextSiblingItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543892">IWiaDrvItem::GetParentItem</a>
+<a href="image.iwiadrvitem_getparentitem">IWiaDrvItem::GetParentItem</a>
 </dt>
 </dl>
 <p> </p>

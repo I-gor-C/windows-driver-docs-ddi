@@ -73,9 +73,7 @@ VOID VideoPortClearEvent(
 <p>None</p>
 
 ## -remarks
-<p>To set the state of an event object to the signaled state, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff570364">VideoPortSetEvent</a>. </p>
-
-<p>To set the state of an event object to the signaled state, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff570364">VideoPortSetEvent</a>. </p>
+<p>To set the state of an event object to the signaled state, use <a href="..\video\nf-video-videoportsetevent.md">VideoPortSetEvent</a>. </p>
 
 ## -requirements
 <table>
@@ -140,7 +138,7 @@ VOID VideoPortClearEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570364">VideoPortSetEvent</a>
+<a href="..\video\nf-video-videoportsetevent.md">VideoPortSetEvent</a>
 </dt>
 </dl>
 <p> </p>

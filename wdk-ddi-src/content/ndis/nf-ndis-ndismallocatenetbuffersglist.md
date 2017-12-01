@@ -7,7 +7,7 @@ old-location: netvista\ndismallocatenetbuffersglist.htm
 old-project: netvista
 ms.assetid: 3fd8d121-a249-433a-a93d-4027a4bfcb61
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMAllocateNetBufferSGList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,7 @@ req.iface:
 <p>Bus-master miniport drivers call the 
   <b>NdisMAllocateNetBufferSGList</b> function to obtain a scatter/gather list for the network data that is
   associated with a 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure.</p>
+  <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure.</p>
 
 
 ## -syntax
@@ -79,7 +79,7 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
      associated with this NET_BUFFER structure. The scatter/gather list is generated from the data starting
      at the beginning of the MDL that is specified at the 
      <b>CurrentMdl</b> member of the associated 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568381">NET_BUFFER_DATA</a> structure.</p>
+     <a href="..\ndis\ns-ndis--net-buffer-data.md">NET_BUFFER_DATA</a> structure.</p>
 </dd>
 
 ### -param <i>Context</i> [in]
@@ -137,7 +137,7 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
     <a href="..\ndis\nc-ndis-miniport-send-net-buffer-lists.md">
     MiniportSendNetBufferLists</a> function. The miniport driver calls 
     <b>NdisMAllocateNetBufferSGList</b> once for each 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure for which it must obtain a
+    <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure for which it must obtain a
     scatter/gather list.</p>
 
 <p>When a miniport driver calls 
@@ -172,60 +172,12 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
 <p>To improve system performance, the scatter/gather list is generated from the network data starting at
     the beginning of the MDL that is specified at the 
     <b>CurrentMdl</b> member of the associated 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568381">NET_BUFFER_DATA</a> structure. The start of the
+    <a href="..\ndis\ns-ndis--net-buffer-data.md">NET_BUFFER_DATA</a> structure. The start of the
     network data in the SG list is offset from the beginning of the SG list by the value specified in the 
     <b>CurrentMdlOffset</b> member of the associated NET_BUFFER_DATA structure.</p>
 
 <p>Miniport drivers must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563586">NdisMFreeNetBufferSGList</a> function
-    to free a scatter/gather list.</p>
-
-<p>An NDIS bus-master miniport driver calls 
-    <b>NdisMAllocateNetBufferSGList</b> from its 
-    <a href="..\ndis\nc-ndis-miniport-send-net-buffer-lists.md">
-    MiniportSendNetBufferLists</a> function. The miniport driver calls 
-    <b>NdisMAllocateNetBufferSGList</b> once for each 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure for which it must obtain a
-    scatter/gather list.</p>
-
-<p>When a miniport driver calls 
-    <b>NdisMAllocateNetBufferSGList</b>, NDIS calls HAL to build the scatter/gather list. After HAL builds
-    the scatter/gather list, it calls the 
-    <i>MiniportProcessSGList</i> function that the miniport driver registered by calling 
-    <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
-    NdisMRegisterScatterGatherDma</a>.</p>
-
-<p>HAL can call 
-    <i>MiniportProcessSGList</i> before or after NDIS returns from 
-    <b>NdisMAllocateNetBufferSGList</b>. Miniport drivers must not attempt to access the scatter/gather list
-    until after HAL calls 
-    <i>MiniportProcessSGList</i>.</p>
-
-<p>To improve system performance, miniport drivers should preallocate buffers for the use in the 
-    <i>ScatterGatherListBuffer</i> parameter of 
-    <b>NdisMAllocateNetBufferSGList</b>. NDIS provides the recommended size for the buffers in the 
-    <b>ScatterGatherListSize</b> member of the 
-    <i>DmaDescription</i> parameter when the miniport driver calls 
-    <b>NdisMRegisterScatterGatherDma</b>. Miniport drivers specify the size of the buffer in the 
-    <i>ScatterGatherListBufferSize</i> parameter when they call 
-    <b>NdisMAllocateNetBufferSGList</b>.</p>
-
-<p>NDIS might allocate a buffer even if the miniport driver specifies a buffer in the 
-    <i>ScatterGatherListBuffer</i> parameter. This can happen if the specified buffer is too small to hold the
-    scatter/gather list. Therefore, driver writers must not assume that the buffer specified in the 
-    <i>ScatterGatherListBuffer</i> parameter contains the scatter/gather list. HAL passes the correct
-    scatter/gather list pointer to the miniport driver's 
-    <i>MiniportProcessSGList</i> function.</p>
-
-<p>To improve system performance, the scatter/gather list is generated from the network data starting at
-    the beginning of the MDL that is specified at the 
-    <b>CurrentMdl</b> member of the associated 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568381">NET_BUFFER_DATA</a> structure. The start of the
-    network data in the SG list is offset from the beginning of the SG list by the value specified in the 
-    <b>CurrentMdlOffset</b> member of the associated NET_BUFFER_DATA structure.</p>
-
-<p>Miniport drivers must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563586">NdisMFreeNetBufferSGList</a> function
+    <a href="..\ndis\nf-ndis-ndismfreenetbuffersglist.md">NdisMFreeNetBufferSGList</a> function
     to free a scatter/gather list.</p>
 
 ## -requirements
@@ -281,7 +233,7 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547934">Irql_Gather_DMA_Function</a>
+<a href="devtest.ndis_irql_gather_dma_function">Irql_Gather_DMA_Function</a>
 </td>
 </tr>
 </table>
@@ -295,13 +247,13 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
 <a href="..\ndis\nc-ndis-miniport-send-net-buffer-lists.md">MiniportSendNetBufferLists</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568381">NET_BUFFER_DATA</a>
+<a href="..\ndis\ns-ndis--net-buffer-data.md">NET_BUFFER_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563586">NdisMFreeNetBufferSGList</a>
+<a href="..\ndis\nf-ndis-ndismfreenetbuffersglist.md">NdisMFreeNetBufferSGList</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
@@ -322,4 +274,4 @@ NDIS_STATUS NdisMAllocateNetBufferSGList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateNetBufferSGList function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateNetBufferSGList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

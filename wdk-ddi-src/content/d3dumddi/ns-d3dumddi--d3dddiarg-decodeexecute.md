@@ -71,7 +71,7 @@ typedef struct _D3DDDIARG_DECODEEXECUTE {
 ### -field <b>pCompressedBuffers</b>
 
 <dd>
-<p>[in] A pointer to a list of <a href="https://msdn.microsoft.com/library/windows/hardware/ff562896">DXVADDI_DECODEBUFFERDESC</a> structures that describe the compressed buffers that are passed from the host decoder to the accelerator.</p>
+<p>[in] A pointer to a list of <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-decodebufferdesc.md">DXVADDI_DECODEBUFFERDESC</a> structures that describe the compressed buffers that are passed from the host decoder to the accelerator.</p>
 </dd>
 </dl>
 
@@ -109,7 +109,7 @@ typedef struct _D3DDDIARG_DECODEEXECUTE {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decodeexecute.md">DecodeExecute</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562896">DXVADDI_DECODEBUFFERDESC</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-decodebufferdesc.md">DXVADDI_DECODEBUFFERDESC</a>
 </dt>
 </dl>
 <p> </p>

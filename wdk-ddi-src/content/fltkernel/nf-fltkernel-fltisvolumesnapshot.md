@@ -84,8 +84,6 @@ NTSTATUS FltIsVolumeSnapshot(
 ## -remarks
 <p>If the volume or instance object does not support snapshots, <b>FltIsVolumeSnapshot</b> returns STATUS_SUCCESS and <i>IsSnapshotVolume</i> is <b>FALSE</b>.</p>
 
-<p>If the volume or instance object does not support snapshots, <b>FltIsVolumeSnapshot</b> returns STATUS_SUCCESS and <i>IsSnapshotVolume</i> is <b>FALSE</b>.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The STI_DEV_CAPS structure is used as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543745">IStiDevice::GetCapabilities</a> method. It is also a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548361">STI_DEVICE_INFORMATION</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548408">STI_WIA_DEVICE_INFORMATION</a> structures.</p>
+<p>The STI_DEV_CAPS structure is used as a parameter to the <a href="image.istidevice_getcapabilities">IStiDevice::GetCapabilities</a> method. It is also a member of the <a href="image.sti_device_information">STI_DEVICE_INFORMATION</a> and <a href="image.sti_wia_device_information">STI_WIA_DEVICE_INFORMATION</a> structures.</p>
 
 
 ## -syntax
@@ -83,7 +83,7 @@ typedef struct _STI_DEV_CAPS {
 ### -field <a id="STI_GENCAP_NOTIFICATIONS"></a><a id="sti_gencap_notifications"></a>STI_GENCAP_NOTIFICATIONS
 
 <dd>
-<p>The device supports event notifications (either asynchronously or through polling), and the device can be subscribed to (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543768">IStiDevice::Subscribe</a>).</p>
+<p>The device supports event notifications (either asynchronously or through polling), and the device can be subscribed to (see <a href="image.istidevice_subscribe">IStiDevice::Subscribe</a>).</p>
 </dd>
 </dl>
 <p></p>
@@ -92,7 +92,7 @@ typedef struct _STI_DEV_CAPS {
 ### -field <a id="STI_GENCAP_POLLING_NEEDED"></a><a id="sti_gencap_polling_needed"></a>STI_GENCAP_POLLING_NEEDED
 
 <dd>
-<p>The device is not capable of issuing asynchronous notifications; polling of the device is required (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543752">IStiDevice::GetStatus</a>).</p>
+<p>The device is not capable of issuing asynchronous notifications; polling of the device is required (see <a href="image.istidevice_getstatus">IStiDevice::GetStatus</a>).</p>
 </dd>
 </dl>
 <p></p>

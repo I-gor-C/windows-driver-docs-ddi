@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Contains pointers to functions in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn344651">Wireless display (Miracast) interface</a> that the display miniport driver implements to create, destroy, query, and control Miracast device resources.</p>
+<p>Contains pointers to functions in the <a href="display.wireless_display__miracast__interface">Wireless display (Miracast) interface</a> that the display miniport driver implements to create, destroy, query, and control Miracast device resources.</p>
 
 
 ## -syntax

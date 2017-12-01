@@ -7,7 +7,7 @@ old-location: netvista\wwan_struct_type.htm
 old-project: netvista
 ms.assetid: 43729964-9338-45ab-ad59-406176c1ae9f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,7 +85,7 @@ typedef enum _WWAN_STRUCT_TYPE {
 
 <dd>
 <p>The elements are of type 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571201">WWAN_CONTEXT</a>.
+     <a href="..\wwan\ns-wwan--wwan-context.md">WWAN_CONTEXT</a>.
      </p>
 <p>
 <a href="netvista.oid_wwan_provisioned_contexts">
@@ -97,7 +97,7 @@ typedef enum _WWAN_STRUCT_TYPE {
 
 <dd>
 <p>The elements are of type 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571223">WWAN_PROVIDER</a>.
+     <a href="..\wwan\ns-wwan--wwan-provider.md">WWAN_PROVIDER</a>.
      </p>
 <p>Both <a href="https://msdn.microsoft.com/library/windows/hardware/ff569830">OID_WWAN_PREFERRED_PROVIDERS</a> and 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569843">OID_WWAN_VISIBLE_PROVIDERS</a> use this
@@ -108,7 +108,7 @@ typedef enum _WWAN_STRUCT_TYPE {
 
 <dd>
 <p>The elements are of type 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571248">WWAN_SMS_PDU_RECORD</a>.</p>
+     <a href="..\wwan\ns-wwan--wwan-sms-pdu-record.md">WWAN_SMS_PDU_RECORD</a>.</p>
 </dd>
 
 ### -field <a id="WwanStructReserved0"></a><a id="wwanstructreserved0"></a><a id="WWANSTRUCTRESERVED0"></a><b>WwanStructReserved0</b>
@@ -133,7 +133,7 @@ typedef enum _WWAN_STRUCT_TYPE {
 
 <dd>
 <p>The elements are of type 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571243">WWAN_SMS_CDMA_RECORD</a>.</p>
+     <a href="..\wwan\ns-wwan--wwan-sms-cdma-record.md">WWAN_SMS_CDMA_RECORD</a>.</p>
 </dd>
 
 ### -field <a id="WwanStructReserved3"></a><a id="wwanstructreserved3"></a><a id="WWANSTRUCTRESERVED3"></a><b>WwanStructReserved3</b>
@@ -146,14 +146,14 @@ typedef enum _WWAN_STRUCT_TYPE {
 
 <dd>
 <p>The elements are of type 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/hh831870">WWAN_DEVICE_SERVICE_ENTRY</a>.</p>
+     <a href="..\wwan\ns-wwan--wwan-device-service-entry.md">WWAN_DEVICE_SERVICE_ENTRY</a>.</p>
 </dd>
 
 ### -field <a id="WwanStructProvider2"></a><a id="wwanstructprovider2"></a><a id="WWANSTRUCTPROVIDER2"></a><b>WwanStructProvider2</b>
 
 <dd>
 <p>The elements are of type 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/hh464135">WWAN_PROVIDER2</a>.</p>
+     <a href="..\wwan\ns-wwan--wwan-provider2.md">WWAN_PROVIDER2</a>.</p>
 <p>The following OIDs use this value to represent a list of network providers for WWAN 2.0 miniport drivers:</p>
 <p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569830">OID_WWAN_PREFERRED_PROVIDERS</a>
@@ -182,7 +182,7 @@ typedef enum _WWAN_STRUCT_TYPE {
 ### -field <a id="WwanStructDeviceCellularClass"></a><a id="wwanstructdevicecellularclass"></a><a id="WWANSTRUCTDEVICECELLULARCLASS"></a><b>WwanStructDeviceCellularClass</b>
 
 <dd>
-<p>The elements are of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff571199">WWAN_CELLULAR_CLASS</a>. </p>
+<p>The elements are of type <a href="..\wwan\ne-wwan--wwan-cellular-class.md">WWAN_CELLULAR_CLASS</a>. </p>
 <p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569824">OID_WWAN_DEVICE_CAPS</a> uses this value to represent multiple cellular classes supported by the miniport driver.</p>
 </dd>
@@ -225,13 +225,13 @@ typedef enum _WWAN_STRUCT_TYPE {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569833">OID_WWAN_READY_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571201">WWAN_CONTEXT</a>
+<a href="..\wwan\ns-wwan--wwan-context.md">WWAN_CONTEXT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569831">OID_WWAN_PROVISIONED_CONTEXTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571223">WWAN_PROVIDER</a>
+<a href="..\wwan\ns-wwan--wwan-provider.md">WWAN_PROVIDER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569830">OID_WWAN_PREFERRED_PROVIDERS</a>
@@ -240,15 +240,15 @@ typedef enum _WWAN_STRUCT_TYPE {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569843">OID_WWAN_VISIBLE_PROVIDERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571248">WWAN_SMS_PDU_RECORD</a>
+<a href="..\wwan\ns-wwan--wwan-sms-pdu-record.md">WWAN_SMS_PDU_RECORD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571243">WWAN_SMS_CDMA_RECORD</a>
+<a href="..\wwan\ns-wwan--wwan-sms-cdma-record.md">WWAN_SMS_CDMA_RECORD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571208">WWAN_LIST_HEADER</a>
+<a href="..\wwan\ns-wwan--wwan-list-header.md">WWAN_LIST_HEADER</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_STRUCT_TYPE enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_STRUCT_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

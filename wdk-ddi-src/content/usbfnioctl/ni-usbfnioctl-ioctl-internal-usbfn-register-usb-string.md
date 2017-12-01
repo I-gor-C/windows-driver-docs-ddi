@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 ## -ioctlparameters
 
 ### -input-buffer
-<p>A pointer to a buffer that contains a  <a href="https://msdn.microsoft.com/library/windows/hardware/mt188007">USBFN_USB_STRING</a> structure with the USB string descriptor. </p>
+<p>A pointer to a buffer that contains a  <a href="buses.usbfn_usb_string">USBFN_USB_STRING</a> structure with the USB string descriptor. </p>
 
 ### -input-buffer-length
 <p>The length of the input buffer must be at least <code>sizeof(USBFN_USB_STRING)</code>.</p>
@@ -90,17 +90,7 @@ I/O Status block
 <p>If the request is successful, the USB function class extension (UFX) returns STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it returns a status value for which NT_SUCCESS(status) equals FALSE. </p>
 
 ## -remarks
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
-
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
-
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
-
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
-
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
-
-<p>This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
+<p>This request must be sent after sending the <a href="buses.ioctl_internal_usbfn_activate_usb_bus">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.</p>
 
 ## -requirements
 <table>
@@ -119,10 +109,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188007">USBFN_USB_STRING</a>
+<a href="buses.usbfn_usb_string">USBFN_USB_STRING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a>
+<a href="buses.ioctl_internal_usbfn_activate_usb_bus">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a>
 </dt>
 </dl>
 <p> </p>

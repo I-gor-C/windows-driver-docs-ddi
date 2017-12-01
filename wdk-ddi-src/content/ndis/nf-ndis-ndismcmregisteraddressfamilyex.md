@@ -7,7 +7,7 @@ old-location: netvista\ndismcmregisteraddressfamilyex.htm
 old-project: netvista
 ms.assetid: f58a9c08-d2cf-48d1-98d1-68aecd3b7bd0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCmRegisterAddressFamilyEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -141,44 +141,6 @@ NDIS_STATUS NdisMCmRegisterAddressFamilyEx(
     MCM driver can support a particular type of AF for clients that are bound to a given miniport
     adapter.</p>
 
-<p>NDIS MCMs, which register as NDIS miniport drivers by calling the 
-    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
-    NdisMRegisterMiniportDriver</a> function, should call the 
-    <b>NdisMCmRegisterAddressFamilyEx</b> function to register an AF. Stand-alone call managers should instead
-    call the 
-    <a href="..\ndis\nf-ndis-ndiscmregisteraddressfamilyex.md">
-    NdisCmRegisterAddressFamilyEx</a> function.</p>
-
-<p>To register an AF for a miniport adapter, the MCM should call 
-    <b>NdisMCmRegisterAddressFamilyEx</b> from the 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function.</p>
-
-<p>The driver of any network interface card (NIC) that has on-board connection-oriented signaling support
-    can register itself as an MCM driver for better performance in managing calls. If a driver registers as
-    an MCM driver, any stand-alone call manager with the NIC driver's own call-management support is
-    displaced.</p>
-
-<p>An MCM driver calls 
-    <b>NdisMCmRegisterAddressFamilyEx</b> after it has determined that a NIC is fully operational and the
-    driver can complete network I/O operations. That is, such an MCM registers itself as a call manager and
-    advertises its specific signaling services for CoNDIS clients.</p>
-
-<p>After 
-    <i>MiniportInitializeEx</i> returns control with a successful registration as a call manager, NDIS calls
-    the 
-    <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a> functions
-    of potential clients and, then, the 
-    <a href="..\ndis\nc-ndis-protocol-co-af-register-notify.md">
-    ProtocolCoAfRegisterNotify</a> functions of all of the clients that bind themselves to the associated
-    MCM miniport adapter. These clients then cause NDIS to call the 
-    <a href="..\ndis\nc-ndis-protocol-cm-open-af.md">ProtocolCmOpenAf</a> function of the
-    MCM.</p>
-
-<p>An MCM can support more than one AF for a single NIC that it manages. The MCM driver must call 
-    <b>NdisMCmRegisterAddressFamilyEx</b> once for each AF that it registers for a miniport adapter. Only one
-    MCM driver can support a particular type of AF for clients that are bound to a given miniport
-    adapter.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -232,7 +194,7 @@ NDIS_STATUS NdisMCmRegisterAddressFamilyEx(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
+<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -250,7 +212,7 @@ NDIS_STATUS NdisMCmRegisterAddressFamilyEx(
    NdisCmRegisterAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
@@ -277,4 +239,4 @@ NDIS_STATUS NdisMCmRegisterAddressFamilyEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmRegisterAddressFamilyEx function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmRegisterAddressFamilyEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

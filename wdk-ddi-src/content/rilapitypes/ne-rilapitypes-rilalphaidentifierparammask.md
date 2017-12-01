@@ -7,7 +7,7 @@ old-location: netvista\rilalphaidentifierparammask_2.htm
 old-project: netvista
 ms.assetid: 20ac3122-dece-48de-b29a-9d4f7e22c7e0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

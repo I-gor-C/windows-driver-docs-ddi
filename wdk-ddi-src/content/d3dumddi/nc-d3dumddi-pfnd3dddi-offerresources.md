@@ -67,7 +67,7 @@ _Check_return_ HRESULT APIENTRY* OfferResources(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451078">D3DDDIARG_OFFERRESOURCES</a> structure that defines the video memory resources that the driver offers.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-offerresources.md">D3DDDIARG_OFFERRESOURCES</a> structure that defines the video memory resources that the driver offers.</p>
 </dd>
 </dl>
 
@@ -85,11 +85,7 @@ _Check_return_ HRESULT APIENTRY* OfferResources(
 <p> </p>
 
 ## -remarks
-<p>If the user-mode driver does not have outstanding work queued that references an allocation that it has been asked to offer, then it can offer the allocation immediately or postpone the offer until the next call is made to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a> or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-present.md">Present</a> functions. However, the driver must always process all batched offer calls that have been submitted through <i>Flush</i> or <i>Present</i>.</p>
-
-<p>If the driver uses the <a href="https://msdn.microsoft.com/f22e19ba-9ff3-4aa1-a3f0-103f67ea7c60">renaming service</a> of the video memory manager, then the driver should offer the last allocation instance.</p>
-
-<p>If the user-mode driver does not have outstanding work queued that references an allocation that it has been asked to offer, then it can offer the allocation immediately or postpone the offer until the next call is made to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a> or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-present.md">Present</a> functions. However, the driver must always process all batched offer calls that have been submitted through <i>Flush</i> or <i>Present</i>.</p>
+<p>If the user-mode driver does not have outstanding work queued that references an allocation that it has been asked to offer, then it can offer the allocation immediately or postpone the offer until the next call is made to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-flush.md">Flush</a> or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-present.md">Present</a> functions. However, the driver must always process all batched offer calls that have been submitted through <i>Flush</i> or <i>Present</i>.</p>
 
 <p>If the driver uses the <a href="https://msdn.microsoft.com/f22e19ba-9ff3-4aa1-a3f0-103f67ea7c60">renaming service</a> of the video memory manager, then the driver should offer the last allocation instance.</p>
 
@@ -136,13 +132,13 @@ _Check_return_ HRESULT APIENTRY* OfferResources(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451078">D3DDDIARG_OFFERRESOURCES</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-offerresources.md">D3DDDIARG_OFFERRESOURCES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-flush.md">Flush</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-present.md">Present</a>

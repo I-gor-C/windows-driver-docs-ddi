@@ -73,7 +73,7 @@ NTSTATUS FsRtlQueryKernelEaFile(
 ### -param <i>ReturnedEaData</i> [out]
 
 <dd>
-<p>A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a>-structured output buffer, where the extended attribute values are to be returned.</p>
+<p>A pointer to a caller-supplied <a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a>-structured output buffer, where the extended attribute values are to be returned.</p>
 </dd>
 
 ### -param <i>Length</i> [in]
@@ -92,7 +92,7 @@ NTSTATUS FsRtlQueryKernelEaFile(
 ### -param <i>EaList</i> [in]
 
 <dd>
-<p>A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff540295">FILE_GET_EA_INFORMATION</a>-structured input buffer, which specifies the extended attributes to be queried. This parameter is optional and can be<b> NULL</b>.</p>
+<p>A pointer to a caller-supplied <a href="..\ntifs\ns-ntifs--file-get-ea-information.md">FILE_GET_EA_INFORMATION</a>-structured input buffer, which specifies the extended attributes to be queried. This parameter is optional and can be<b> NULL</b>.</p>
 </dd>
 
 ### -param <i>EaListLength</i> [in]
@@ -140,8 +140,6 @@ NTSTATUS FsRtlQueryKernelEaFile(
 ## -remarks
 <p>This routine <b>FsRtlQueryKernelEaFile </b>assumes all passed in buffers are from kernel mode as it  requires that the given Input and Output buffers if specified, be kernel mode addresses.  The operation will fail if a user mode address is specified. </p>
 
-<p>This routine <b>FsRtlQueryKernelEaFile </b>assumes all passed in buffers are from kernel mode as it  requires that the given Input and Output buffers if specified, be kernel mode addresses.  The operation will fail if a user mode address is specified. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -178,7 +176,7 @@ NTSTATUS FsRtlQueryKernelEaFile(
 <a href="ifsk.FsRtlSetKernelEaFile">FsRtlSetKernelEaFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff961907">ZwQueryEaFile</a>
+<a href="..\ntifs\nf-ntifs-zwqueryeafile.md">ZwQueryEaFile</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff961908">ZwSetEaFile</a>

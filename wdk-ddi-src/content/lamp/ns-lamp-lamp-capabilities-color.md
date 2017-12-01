@@ -7,7 +7,7 @@ old-location: stream\lamp_capabilities_color.htm
 old-project: stream
 ms.assetid: BCF2171C-93CB-4DAC-AA78-C272D5445F99
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: LAMP_CAPABILITIES_COLOR, LAMP_CAPABILITIES_COLOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ typedef struct LAMP_CAPABILITIES_COLOR {
 ### -field <b>IsLightIntensityAdjustable</b>
 
 <dd>
-<p>If <b>IsSupported</b> evaluates to <b>TRUE</b> (the driver is capable of emitting color light) and this field evaluates to <b>TRUE</b>, a client can get/set light intensity of a color lamp by calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn925069">IOCTL_LAMP_GET_INTENSITY_COLOR</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn925076">IOCTL_LAMP_SET_INTENSITY_COLOR</a>.
+<p>If <b>IsSupported</b> evaluates to <b>TRUE</b> (the driver is capable of emitting color light) and this field evaluates to <b>TRUE</b>, a client can get/set light intensity of a color lamp by calling <a href="..\lamp\ni-lamp-ioctl-lamp-get-intensity-color.md">IOCTL_LAMP_GET_INTENSITY_COLOR</a> and <a href="..\lamp\ni-lamp-ioctl-lamp-set-intensity-color.md">IOCTL_LAMP_SET_INTENSITY_COLOR</a>.
 </p>
 </dd>
 </dl>

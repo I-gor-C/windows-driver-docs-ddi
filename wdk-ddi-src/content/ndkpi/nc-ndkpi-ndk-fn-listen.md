@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_listen.htm
 old-project: netvista
 ms.assetid: 1C3DF31C-500E-456A-B121-48F5945D6999
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ NTSTATUS NdkListen(
 ### -param <i>pNdkListener</i> [in]
 
 <dd>
-<p>A pointer to an NDK listener object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439918">NDK_LISTENER</a>).</p>
+<p>A pointer to an NDK listener object (<a href="..\ndkpi\ns-ndkpi--ndk-listener.md">NDK_LISTENER</a>).</p>
 </dd>
 
 ### -param <i>pAddress</i> 
@@ -86,7 +86,7 @@ NTSTATUS NdkListen(
 ### -param <i>RequestCompletion</i> [in]
 
 <dd>
-<p>A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439912">NDK_FN_REQUEST_COMPLETION</a>).</p>
+<p>A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-request-completion.md">NDK_FN_REQUEST_COMPLETION</a>).</p>
 </dd>
 
 ### -param <i>RequestContext</i> [in, optional]
@@ -103,7 +103,7 @@ NTSTATUS NdkListen(
 </dl><p>The listen request succeeded.
 </p><dl>
 <dt><b>STATUS_PENDING</b></dt>
-</dl><p> The operation is pending and will be completed later. The driver will call the specified <i>RequestCompletion</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439912">NDK_FN_REQUEST_COMPLETION</a>) function to complete the pending operation.
+</dl><p> The operation is pending and will be completed later. The driver will call the specified <i>RequestCompletion</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-request-completion.md">NDK_FN_REQUEST_COMPLETION</a>) function to complete the pending operation.
  </p><dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl><p>The request failed due to insufficient resources. </p><dl>
@@ -119,8 +119,6 @@ NTSTATUS NdkListen(
 <p> </p>
 
 ## -remarks
-<p><i>NdkListen</i> puts a listener object into listening mode on the specified  local address.</p>
-
 <p><i>NdkListen</i> puts a listener object into listening mode on the specified  local address.</p>
 
 ## -requirements
@@ -172,10 +170,10 @@ NTSTATUS NdkListen(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439912">NDK_FN_REQUEST_COMPLETION</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-request-completion.md">NDK_FN_REQUEST_COMPLETION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439918">NDK_LISTENER</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-listener.md">NDK_LISTENER</a>
 </dt>
 <dt>
 <a href="NULL">NDKPI Object Lifetime Requirements</a>
@@ -183,4 +181,4 @@ NTSTATUS NdkListen(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_LISTEN callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_LISTEN callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

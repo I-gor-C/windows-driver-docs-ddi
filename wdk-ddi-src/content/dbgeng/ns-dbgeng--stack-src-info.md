@@ -7,7 +7,7 @@ old-location: debugger\stack_src_info.htm
 old-project: debugger
 ms.assetid: F19D5A5C-D9CF-40CC-B344-8F2D862FBF04
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: STACK_SRC_INFO, STACK_SRC_INFO, *PSTACK_SRC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

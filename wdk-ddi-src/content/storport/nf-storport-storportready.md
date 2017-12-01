@@ -58,7 +58,7 @@ STORPORT_API BOOLEAN StorPortReady(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
+<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 </dl>
 
@@ -66,8 +66,6 @@ STORPORT_API BOOLEAN StorPortReady(
 <p><b>StorPortReady</b> returns <b>TRUE</b> if the miniport driver succeeded in notifying the port driver and <b>FALSE</b> if not. </p>
 
 ## -remarks
-<p>The functionality provided by this routine is exclusive to the Storport driver library. It has no parallel in the library of ScsiPort support routines.</p>
-
 <p>The functionality provided by this routine is exclusive to the Storport driver library. It has no parallel in the library of ScsiPort support routines.</p>
 
 ## -requirements
@@ -107,7 +105,7 @@ STORPORT_API BOOLEAN StorPortReady(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567041">StorPortBusy</a>
+<a href="..\storport\nf-storport-storportbusy.md">StorPortBusy</a>
 </dt>
 </dl>
 <p> </p>

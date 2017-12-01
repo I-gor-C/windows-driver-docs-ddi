@@ -7,7 +7,7 @@ old-location: netvista\ndissystemprocessorcount.htm
 old-project: netvista
 ms.assetid: 17c7b02d-3d32-4056-9baa-2fef74765da3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisSystemProcessorCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,89 +78,11 @@ CCHAR NdisSystemProcessorCount(void);
 <p>If your code uses an array of buffers, one buffer for each processor, you must decide whether to have
     a statically sized array based on 
     <b>NdisSystemProcessorCount</b> or a dynamically sized array based on 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564577">NdisSystemActiveProcessorCount</a>.</p>
+    <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">NdisSystemActiveProcessorCount</a>.</p>
 
 <p>To optimize your code based on the number of processors, you must use a resizable structure. In this
     case, use 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564577">NdisSystemActiveProcessorCount</a>.</p>
-
-<p>If you are not optimizing and if the data structures that result from using the maximum processor
-    count are relatively small, a resizable structure is not necessary. In this case, use 
-    <b>NdisSystemProcessorCount</b> to determine the size for a static array.</p>
-
-<p>An NDIS driver can call the 
-    <b>NdisSystemProcessorCount</b> function to retrieve the maximum number of processors in the local
-    computer. To retrieve the number of currently active processors, the driver must call the 
-    <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
-    NdisSystemActiveProcessorCount</a> function.</p>
-
-<p><b>NdisSystemProcessorCount</b> is similar to the 
-    <a href="..\ntddk\nf-ntddk-kequerymaximumprocessorcount.md">
-    KeQueryMaximumProcessorCount</a> function.</p>
-
-<p>The value that 
-    <b>NdisSystemProcessorCount</b> returns does not change at runtime.</p>
-
-<p>If your code uses an array of buffers, one buffer for each processor, you must decide whether to have
-    a statically sized array based on 
-    <b>NdisSystemProcessorCount</b> or a dynamically sized array based on 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564577">NdisSystemActiveProcessorCount</a>.</p>
-
-<p>To optimize your code based on the number of processors, you must use a resizable structure. In this
-    case, use 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564577">NdisSystemActiveProcessorCount</a>.</p>
-
-<p>If you are not optimizing and if the data structures that result from using the maximum processor
-    count are relatively small, a resizable structure is not necessary. In this case, use 
-    <b>NdisSystemProcessorCount</b> to determine the size for a static array.</p>
-
-<p>An NDIS driver can call the 
-    <b>NdisSystemProcessorCount</b> function to retrieve the maximum number of processors in the local
-    computer. To retrieve the number of currently active processors, the driver must call the 
-    <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
-    NdisSystemActiveProcessorCount</a> function.</p>
-
-<p><b>NdisSystemProcessorCount</b> is similar to the 
-    <a href="..\ntddk\nf-ntddk-kequerymaximumprocessorcount.md">
-    KeQueryMaximumProcessorCount</a> function.</p>
-
-<p>The value that 
-    <b>NdisSystemProcessorCount</b> returns does not change at runtime.</p>
-
-<p>If your code uses an array of buffers, one buffer for each processor, you must decide whether to have
-    a statically sized array based on 
-    <b>NdisSystemProcessorCount</b> or a dynamically sized array based on 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564577">NdisSystemActiveProcessorCount</a>.</p>
-
-<p>To optimize your code based on the number of processors, you must use a resizable structure. In this
-    case, use 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564577">NdisSystemActiveProcessorCount</a>.</p>
-
-<p>If you are not optimizing and if the data structures that result from using the maximum processor
-    count are relatively small, a resizable structure is not necessary. In this case, use 
-    <b>NdisSystemProcessorCount</b> to determine the size for a static array.</p>
-
-<p>An NDIS driver can call the 
-    <b>NdisSystemProcessorCount</b> function to retrieve the maximum number of processors in the local
-    computer. To retrieve the number of currently active processors, the driver must call the 
-    <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
-    NdisSystemActiveProcessorCount</a> function.</p>
-
-<p><b>NdisSystemProcessorCount</b> is similar to the 
-    <a href="..\ntddk\nf-ntddk-kequerymaximumprocessorcount.md">
-    KeQueryMaximumProcessorCount</a> function.</p>
-
-<p>The value that 
-    <b>NdisSystemProcessorCount</b> returns does not change at runtime.</p>
-
-<p>If your code uses an array of buffers, one buffer for each processor, you must decide whether to have
-    a statically sized array based on 
-    <b>NdisSystemProcessorCount</b> or a dynamically sized array based on 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564577">NdisSystemActiveProcessorCount</a>.</p>
-
-<p>To optimize your code based on the number of processors, you must use a resizable structure. In this
-    case, use 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564577">NdisSystemActiveProcessorCount</a>.</p>
+    <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">NdisSystemActiveProcessorCount</a>.</p>
 
 <p>If you are not optimizing and if the data structures that result from using the maximum processor
     count are relatively small, a resizable structure is not necessary. In this case, use 
@@ -183,7 +105,7 @@ CCHAR NdisSystemProcessorCount(void);
 <p>Version</p>
 </th>
 <td width="70%">
-<p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562689">NdisGroupMaxProcessorCount</a>.</p>
+<p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="..\ndis\nf-ndis-ndisgroupmaxprocessorcount.md">NdisGroupMaxProcessorCount</a>.</p>
 </td>
 </tr>
 <tr>
@@ -219,7 +141,7 @@ CCHAR NdisSystemProcessorCount(void);
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -231,10 +153,10 @@ CCHAR NdisSystemProcessorCount(void);
    Drivers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553042">KeQueryMaximumProcessorCount</a>
+<a href="..\ntddk\nf-ntddk-kequerymaximumprocessorcount.md">KeQueryMaximumProcessorCount</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562689">NdisGroupMaxProcessorCount</a>
+<a href="..\ndis\nf-ndis-ndisgroupmaxprocessorcount.md">NdisGroupMaxProcessorCount</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
@@ -243,4 +165,4 @@ CCHAR NdisSystemProcessorCount(void);
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSystemProcessorCount function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSystemProcessorCount function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

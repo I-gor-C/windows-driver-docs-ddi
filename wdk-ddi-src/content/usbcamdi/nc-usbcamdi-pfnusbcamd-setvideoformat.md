@@ -7,7 +7,7 @@ old-location: stream\usbcamd_setvideoformat.htm
 old-project: stream
 ms.assetid: 84a63c69-0f27-42e4-ae10-e394dd8b715d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: USBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR, *PUSBC_FUNCTION_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -92,12 +92,6 @@ NTSTATUS APIENTRY USBCAMD_SetVideoFormat(
 
 <p><b>USBCAMD_SetVideoFormat</b> is not available in USBCAMD version 1.0.</p>
 
-<p>Note that this function returns <b>TRUE</b> to indicate success and not STATUS_SUCCESS.</p>
-
-<p>Camera minidrivers must handle all SRBs related to video format. Camera minidrivers should use <b>USBCAMD_SetVideoFormat</b> to inform USBCAMD of a video format change. Typically, the camera minidriver calls <b>USBCAMD_SetVideoFormat</b> from within its SRB_SET_DATA_FORMAT handler.</p>
-
-<p><b>USBCAMD_SetVideoFormat</b> is not available in USBCAMD version 1.0.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -125,7 +119,7 @@ NTSTATUS APIENTRY USBCAMD_SetVideoFormat(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568605">USBCAMD_INTERFACE</a>
+<a href="stream.usbcamd_interface">USBCAMD_INTERFACE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568201">SRB_SET_DATA_FORMAT</a>
@@ -133,4 +127,4 @@ NTSTATUS APIENTRY USBCAMD_SetVideoFormat(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_SetVideoFormat routine%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_SetVideoFormat routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

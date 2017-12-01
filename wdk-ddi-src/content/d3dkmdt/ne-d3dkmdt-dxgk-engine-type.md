@@ -64,7 +64,7 @@ typedef enum _DXGK_ENGINE_TYPE {
 ### -field <a id="DXGK_ENGINE_TYPE_OTHER"></a><a id="dxgk_engine_type_other"></a><b>DXGK_ENGINE_TYPE_OTHER</b>
 
 <dd>
-<p>The engine does not match any of the other <a href="https://msdn.microsoft.com/library/windows/hardware/dn265417">DXGK_ENGINE_TYPE</a> enumeration values. This value is used for proprietary or unique functionality that is not exposed by typical adapters, as well as for an engine that performs work that doesn't fall under another category.</p>
+<p>The engine does not match any of the other <a href="..\d3dkmdt\ne-d3dkmdt-dxgk-engine-type.md">DXGK_ENGINE_TYPE</a> enumeration values. This value is used for proprietary or unique functionality that is not exposed by typical adapters, as well as for an engine that performs work that doesn't fall under another category.</p>
 </dd>
 
 ### -field <a id="DXGK_ENGINE_TYPE_3D"></a><a id="dxgk_engine_type_3d"></a><b>DXGK_ENGINE_TYPE_3D</b>
@@ -114,14 +114,6 @@ typedef enum _DXGK_ENGINE_TYPE {
 </dl>
 
 ## -remarks
-<p>The display miniport driver should follow these rules to determine the engine type:</p>
-
-<p>For more information on how to use this enumeration, see <a href="https://msdn.microsoft.com/822FEB3E-A39D-4B33-BD9D-F3166EF99AF8">Enumerating GPU engine capabilities</a>.</p>
-
-<p>The display miniport driver should follow these rules to determine the engine type:</p>
-
-<p>For more information on how to use this enumeration, see <a href="https://msdn.microsoft.com/822FEB3E-A39D-4B33-BD9D-F3166EF99AF8">Enumerating GPU engine capabilities</a>.</p>
-
 <p>The display miniport driver should follow these rules to determine the engine type:</p>
 
 <p>For more information on how to use this enumeration, see <a href="https://msdn.microsoft.com/822FEB3E-A39D-4B33-BD9D-F3166EF99AF8">Enumerating GPU engine capabilities</a>.</p>

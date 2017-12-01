@@ -7,7 +7,7 @@ old-location: wdf\iwdfdriver_retrieveversionstring.htm
 old-project: wdf
 ms.assetid: 2fa320df-bafd-42f4-a0a1-14151c39d68a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFDriver, RetrieveVersionString, IWDFDriver::RetrieveVersionString
 ms.prod: windows-hardware
 ms.technology: windows-devices

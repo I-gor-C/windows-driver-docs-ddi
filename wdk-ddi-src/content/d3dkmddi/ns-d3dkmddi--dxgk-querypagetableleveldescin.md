@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>DXGK_QUERYPAGETABLELEVELDESCIN</b> structure is used to request page level descriptors from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560940">Dxgkrnl Interface</a>.</p>
+<p>The <b>DXGK_QUERYPAGETABLELEVELDESCIN</b> structure is used to request page level descriptors from the <a href="display.dxgkrnl_interface">Dxgkrnl Interface</a>.</p>
 
 
 ## -syntax

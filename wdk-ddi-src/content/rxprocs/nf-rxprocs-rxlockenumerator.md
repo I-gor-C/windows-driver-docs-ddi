@@ -98,10 +98,6 @@ BOOLEAN RxLockEnumerator(
 
 <p>The <b>RxLockEnumerator</b> routine needs to allocate non-paged pool memory in order to enumerate locks. Consequently, <b>RxLockEnumerator</b> can fail if the memory allocation fails. </p>
 
-<p><b>RxLockEnumerator</b> is normally called from a network min-redirector to enumerate the file locks on an FCB. <b>RxLockEnumerator</b> gets one lock on each call. so the caller needs to keep the enumeration state internally. As a result, only one enumeration process can be in progress at any time. </p>
-
-<p>The <b>RxLockEnumerator</b> routine needs to allocate non-paged pool memory in order to enumerate locks. Consequently, <b>RxLockEnumerator</b> can fail if the memory allocation fails. </p>
-
 ## -requirements
 <table>
 <tr>

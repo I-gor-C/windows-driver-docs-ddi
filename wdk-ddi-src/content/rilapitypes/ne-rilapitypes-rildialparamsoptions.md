@@ -7,7 +7,7 @@ old-location: netvista\rildialparamsoptions_2.htm
 old-project: netvista
 ms.assetid: c2635f91-005f-45e7-9d6c-92caca7f4452
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

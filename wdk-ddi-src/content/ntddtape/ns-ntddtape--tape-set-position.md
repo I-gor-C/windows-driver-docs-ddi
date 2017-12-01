@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The TAPE_SET_POSITION structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560637">IOCTL_TAPE_SET_POSITION</a> request to move the current position on the tape to the specified partition and offset.</p>
+<p>The TAPE_SET_POSITION structure is used in conjunction with the <a href="..\ntddtape\ni-ntddtape-ioctl-tape-set-position.md">IOCTL_TAPE_SET_POSITION</a> request to move the current position on the tape to the specified partition and offset.</p>
 
 
 ## -syntax
@@ -183,10 +183,10 @@ typedef struct _TAPE_SET_POSITION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560637">IOCTL_TAPE_SET_POSITION</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl-tape-set-position.md">IOCTL_TAPE_SET_POSITION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567954">TapeMiniSetPosition</a>
+<a href="storage.tapeminisetposition">TapeMiniSetPosition</a>
 </dt>
 </dl>
 <p> </p>

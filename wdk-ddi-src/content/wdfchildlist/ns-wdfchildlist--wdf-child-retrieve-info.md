@@ -7,7 +7,7 @@ old-location: wdf\wdf_child_retrieve_info.htm
 old-project: wdf
 ms.assetid: 0c48e7cd-e9aa-4ae7-bd44-fe16e1b0d619
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO, *PWDF_CHILD_RETRIEVE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]</p>
-<p>The WDF_CHILD_RETRIEVE_INFO structure contains information about a child device that is obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545655">WdfChildListRetrieveNextDevice</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545663">WdfChildListRetrievePdo</a>.</p>
+<p>The WDF_CHILD_RETRIEVE_INFO structure contains information about a child device that is obtained by calling <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> or <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievepdo.md">WdfChildListRetrievePdo</a>.</p>
 
 
 ## -syntax
@@ -69,36 +69,36 @@ typedef struct _WDF_CHILD_RETRIEVE_INFO {
 ### -field <b>IdentificationDescription</b>
 
 <dd>
-<p>A pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff551223">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure. The driver must supply a value for this structure's <b>IdentificationDescriptionSize</b> member. </p>
-<p>If the driver is calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545655">WdfChildListRetrieveNextDevice</a> and supplying an <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-compare.md">EvtChildListIdentificationDescriptionCompare</a> callback function, the driver must also provide an <a href="wdf.dynamic_enumeration#dynamic_child_descriptions#dynamic_child_descriptions">identification description</a> that the callback function can use to compare with an entry in a child list.</p>
-<p>If the driver is calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545663">WdfChildListRetrievePdo</a>, the driver must fill in the entire identification description.</p>
+<p>A pointer to a driver-allocated <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-identification-description-header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure. The driver must supply a value for this structure's <b>IdentificationDescriptionSize</b> member. </p>
+<p>If the driver is calling <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> and supplying an <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-compare.md">EvtChildListIdentificationDescriptionCompare</a> callback function, the driver must also provide an <a href="wdf.dynamic_enumeration#dynamic_child_descriptions#dynamic_child_descriptions">identification description</a> that the callback function can use to compare with an entry in a child list.</p>
+<p>If the driver is calling <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievepdo.md">WdfChildListRetrievePdo</a>, the driver must fill in the entire identification description.</p>
 </dd>
 
 ### -field <b>AddressDescription</b>
 
 <dd>
-<p>A pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff551219">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure. The driver must supply a value for this structure's <b>AddressDescriptionSize</b> member. The framework fills in the rest of the <a href="wdf.dynamic_enumeration#dynamic_child_descriptions#dynamic_child_descriptions">address description</a> when it retrieves a child from the child list. If the value of <b>AddressDescriptionSize</b> is <b>NULL</b>, address description information is not retrieved.</p>
+<p>A pointer to a driver-allocated <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-address-description-header.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure. The driver must supply a value for this structure's <b>AddressDescriptionSize</b> member. The framework fills in the rest of the <a href="wdf.dynamic_enumeration#dynamic_child_descriptions#dynamic_child_descriptions">address description</a> when it retrieves a child from the child list. If the value of <b>AddressDescriptionSize</b> is <b>NULL</b>, address description information is not retrieved.</p>
 </dd>
 
 ### -field <b>Status</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551233">WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS</a>-typed value that the framework provides.</p>
+<p>A <a href="..\wdfchildlist\ne-wdfchildlist--wdf-child-list-retrieve-device-status.md">WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS</a>-typed value that the framework provides.</p>
 </dd>
 
 ### -field <b>EvtChildListIdentificationDescriptionCompare</b>
 
 <dd>
 <p>A driver-supplied pointer to an <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-compare.md">EvtChildListIdentificationDescriptionCompare</a> callback function. </p>
-<p>If the driver is calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545655">WdfChildListRetrieveNextDevice</a>, this pointer is optional and can be <b>NULL</b>. </p>
-<p>If the driver is calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545663">WdfChildListRetrievePdo</a>, this pointer is not used.</p>
+<p>If the driver is calling <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>, this pointer is optional and can be <b>NULL</b>. </p>
+<p>If the driver is calling <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievepdo.md">WdfChildListRetrievePdo</a>, this pointer is not used.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WDF_CHILD_RETRIEVE_INFO structure is passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545655">WdfChildListRetrieveNextDevice</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff545663">WdfChildListRetrievePdo</a> methods. </p>
+<p>The WDF_CHILD_RETRIEVE_INFO structure is passed to the <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> and <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievepdo.md">WdfChildListRetrievePdo</a> methods. </p>
 
-<p>To initialize a WDF_CHILD_RETRIEVE_INFO structure, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff551237">WDF_CHILD_RETRIEVE_INFO_INIT</a>.</p>
+<p>To initialize a WDF_CHILD_RETRIEVE_INFO structure, the driver must call <a href="..\wdfchildlist\nf-wdfchildlist-wdf-child-retrieve-info-init.md">WDF_CHILD_RETRIEVE_INFO_INIT</a>.</p>
 
 ## -requirements
 <table>
@@ -128,21 +128,21 @@ typedef struct _WDF_CHILD_RETRIEVE_INFO {
 <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-compare.md">EvtChildListIdentificationDescriptionCompare</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551219">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a>
+<a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-address-description-header.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551223">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
+<a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-identification-description-header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551233">WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS</a>
+<a href="..\wdfchildlist\ne-wdfchildlist--wdf-child-list-retrieve-device-status.md">WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545655">WdfChildListRetrieveNextDevice</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545663">WdfChildListRetrievePdo</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievepdo.md">WdfChildListRetrievePdo</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_CHILD_RETRIEVE_INFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_CHILD_RETRIEVE_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

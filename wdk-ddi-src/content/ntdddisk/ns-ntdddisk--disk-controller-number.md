@@ -88,7 +88,7 @@ typedef struct _DISK_CONTROLLER_NUMBER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559430">IOCTL_DISK_CONTROLLER_NUMBER</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-controller-number.md">IOCTL_DISK_CONTROLLER_NUMBER</a>
 </dt>
 </dl>
 <p> </p>

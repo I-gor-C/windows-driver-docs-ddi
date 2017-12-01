@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetFcpPersistentBinding_IN structure is used to pass input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFcpPersistentBinding</a> WMI method </p>
+<p>The GetFcpPersistentBinding_IN structure is used to pass input parameter data to the <a href="storage.getfcppersistentbinding">GetFcpPersistentBinding</a> WMI method </p>
 
 
 ## -syntax
@@ -57,12 +57,12 @@ typedef struct _GetFcpPersistentBinding_IN {
 ### -field <b>InEntryCount</b>
 
 <dd>
-<p>Indicates the number of binding entries that will fit in the buffer that the WMI client provides when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFcpPersistentBinding</a> WMI method.</p>
+<p>Indicates the number of binding entries that will fit in the buffer that the WMI client provides when it calls the <a href="storage.getfcppersistentbinding">GetFcpPersistentBinding</a> WMI method.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the GetFcpPersistentBinding_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetFcpPersistentBinding_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -81,10 +81,10 @@ typedef struct _GetFcpPersistentBinding_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFcpPersistentBinding</a>
+<a href="storage.getfcppersistentbinding">GetFcpPersistentBinding</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>
+<a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>
 </dt>
 </dl>
 <p> </p>

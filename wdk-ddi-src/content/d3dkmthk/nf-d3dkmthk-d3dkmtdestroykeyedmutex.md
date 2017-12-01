@@ -57,7 +57,7 @@ NTSTATUS D3DKMTDestroyKeyedMutex(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547885">D3DKMT_DESTROYKEYEDMUTEX</a> structure that specifies the keyed mutex object to destroy. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroykeyedmutex.md">D3DKMT_DESTROYKEYEDMUTEX</a> structure that specifies the keyed mutex object to destroy. </p>
 </dd>
 </dl>
 
@@ -130,7 +130,7 @@ NTSTATUS D3DKMTDestroyKeyedMutex(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547885">D3DKMT_DESTROYKEYEDMUTEX</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroykeyedmutex.md">D3DKMT_DESTROYKEYEDMUTEX</a>
 </dt>
 </dl>
 <p> </p>

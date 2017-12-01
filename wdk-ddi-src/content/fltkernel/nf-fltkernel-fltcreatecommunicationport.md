@@ -76,7 +76,7 @@ NTSTATUS FltCreateCommunicationPort(
 ### -param <i>ObjectAttributes</i> [in]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff557749">OBJECT_ATTRIBUTES</a> structure that specifies the attributes of the communication server port. This structure must have been initialized by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547804">InitializeObjectAttributes</a>. This parameter is required and cannot be <b>NULL</b>. Members of this structure for a communication port object include the following. </p>
+<p>Pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the attributes of the communication server port. This structure must have been initialized by a previous call to <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. This parameter is required and cannot be <b>NULL</b>. Members of this structure for a communication port object include the following. </p>
 <table>
 <tr>
 <th>Member</th>
@@ -88,7 +88,7 @@ NTSTATUS FltCreateCommunicationPort(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547804">InitializeObjectAttributes</a> sets this member to <b>sizeof(</b>OBJECT_ATTRIBUTES<b>)</b>.</p>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> sets this member to <b>sizeof(</b>OBJECT_ATTRIBUTES<b>)</b>.</p>
 </td>
 </tr>
 <tr>
@@ -96,7 +96,7 @@ NTSTATUS FltCreateCommunicationPort(
 <p><b>PUNICODE_STRING </b><b>ObjectName</b></p>
 </td>
 <td>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure containing a unique name (for example, L"\\MyFilterPort") for the port object. </p>
+<p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure containing a unique name (for example, L"\\MyFilterPort") for the port object. </p>
 </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ NTSTATUS FltCreateCommunicationPort(
 <p><b>PSECURITY_DESCRIPTOR </b><b>SecurityDescriptor</b></p>
 </td>
 <td>
-<p>Pointer to a security descriptor (<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>) to be applied to the port object. If needed, a default security descriptor can be created by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541778">FltBuildDefaultSecurityDescriptor</a>. </p>
+<p>Pointer to a security descriptor (<a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>) to be applied to the port object. If needed, a default security descriptor can be created by calling <a href="..\fltkernel\nf-fltkernel-fltbuilddefaultsecuritydescriptor.md">FltBuildDefaultSecurityDescriptor</a>. </p>
 </td>
 </tr>
 <tr>
@@ -128,7 +128,7 @@ NTSTATUS FltCreateCommunicationPort(
 ### -param <i>ConnectNotifyCallback</i> [in]
 
 <dd>
-<p>Pointer to a caller-supplied callback routine. The Filter Manager calls this routine whenever a user-mode application calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff540460">FilterConnectCommunicationPort</a> to send a connection request to the minifilter driver. This parameter is required and cannot be <b>NULL</b>. This routine is called at IRQL = PASSIVE_LEVEL. </p>
+<p>Pointer to a caller-supplied callback routine. The Filter Manager calls this routine whenever a user-mode application calls <a href="ifsk.filterconnectcommunicationport">FilterConnectCommunicationPort</a> to send a connection request to the minifilter driver. This parameter is required and cannot be <b>NULL</b>. This routine is called at IRQL = PASSIVE_LEVEL. </p>
 <p>This routine is declared as follows: </p>
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -154,8 +154,8 @@ NTSTATUS FltCreateCommunicationPort(
 
 <dd>
 <p>Opaque handle for the new client port that is established between the user-mode application and the kernel-mode minifilter driver. </p>
-<p>The minifilter driver must pass this handle as the <i>ClientPort</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff544378">FltSendMessage</a> when sending and replying to messages on this client port. (Note that this is not the same as the <i>ServerPort</i> handle returned by <b>FltCreateCommunicationPort</b>.) </p>
-<p>The minifilter driver must eventually close this client port. The client port is closed by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541867">FltCloseClientPort</a>, usually from the minifilter driver's <i>DisconnectNotifyCallback</i> routine. </p>
+<p>The minifilter driver must pass this handle as the <i>ClientPort</i> parameter to <a href="..\fltkernel\nf-fltkernel-fltsendmessage.md">FltSendMessage</a> when sending and replying to messages on this client port. (Note that this is not the same as the <i>ServerPort</i> handle returned by <b>FltCreateCommunicationPort</b>.) </p>
+<p>The minifilter driver must eventually close this client port. The client port is closed by calling <a href="..\fltkernel\nf-fltkernel-fltcloseclientport.md">FltCloseClientPort</a>, usually from the minifilter driver's <i>DisconnectNotifyCallback</i> routine. </p>
 </dd>
 
 ### -param <a id="ServerPortCookie"></a><a id="serverportcookie"></a><a id="SERVERPORTCOOKIE"></a><i>ServerPortCookie</i>
@@ -216,7 +216,7 @@ NTSTATUS FltCreateCommunicationPort(
 ### -param <i>MessageNotifyCallback</i> [in, optional]
 
 <dd>
-<p>Pointer to a caller-supplied callback routine. The Filter Manager calls this routine, at IRQL = PASSIVE_LEVEL, whenever a user-mode application calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff541513">FilterSendMessage</a> to send a message to the minifilter driver through the client port. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, any request made from user mode to send data to the port will receive an error. </p>
+<p>Pointer to a caller-supplied callback routine. The Filter Manager calls this routine, at IRQL = PASSIVE_LEVEL, whenever a user-mode application calls <a href="ifsk.filtersendmessage">FilterSendMessage</a> to send a message to the minifilter driver through the client port. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, any request made from user mode to send data to the port will receive an error. </p>
 <p>This routine is declared as follows: </p>
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -250,7 +250,7 @@ NTSTATUS FltCreateCommunicationPort(
 <dd>
 <p>Pointer to a caller-allocated buffer containing the message to be sent to the minifilter driver. </p>
 <p>Note that <i>InputBuffer</i> is a pointer to a raw, unlocked user-mode buffer. This pointer is valid only in the context of the user-mode process and must only be accessed from within a <b>try</b>/<b>except</b> block. </p>
-<p>The filter manager calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff559876">ProbeForRead</a> to validate this pointer, but it does not ensure that the buffer is properly aligned. If the buffer contains structures that have alignment requirements, the minifilter driver is responsible for performing any necessary alignment checks. To do this, the minifilter driver can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549486">IS_ALIGNED</a> macro as shown in the MiniSpy sample minifilter driver. </p>
+<p>The filter manager calls <a href="..\wdm\nf-wdm-probeforread.md">ProbeForRead</a> to validate this pointer, but it does not ensure that the buffer is properly aligned. If the buffer contains structures that have alignment requirements, the minifilter driver is responsible for performing any necessary alignment checks. To do this, the minifilter driver can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549486">IS_ALIGNED</a> macro as shown in the MiniSpy sample minifilter driver. </p>
 <p>This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
@@ -265,7 +265,7 @@ NTSTATUS FltCreateCommunicationPort(
 <dd>
 <p>Pointer to a caller-allocated buffer that receives the reply (if any) from the minifilter driver. </p>
 <p>Note that <i>OutputBuffer</i> is a pointer to a raw, unlocked user-mode buffer. This pointer is valid only in the context of the user-mode process and must only be accessed from within a <b>try</b>/<b>except</b> block. </p>
-<p>The filter manager calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff559879">ProbeForWrite</a> to validate this pointer, but it does not ensure that the buffer is properly aligned. If the buffer contains structures that have alignment requirements, the minifilter driver is responsible for performing any necessary alignment checks. To do this, the minifilter driver can use the <b>IS_ALIGNED</b> macro as shown in the MiniSpy sample minifilter driver.</p>
+<p>The filter manager calls <a href="..\wdm\nf-wdm-probeforwrite.md">ProbeForWrite</a> to validate this pointer, but it does not ensure that the buffer is properly aligned. If the buffer contains structures that have alignment requirements, the minifilter driver is responsible for performing any necessary alignment checks. To do this, the minifilter driver can use the <b>IS_ALIGNED</b> macro as shown in the MiniSpy sample minifilter driver.</p>
 <p>This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
@@ -304,19 +304,11 @@ NTSTATUS FltCreateCommunicationPort(
 ## -remarks
 <p>A minifilter driver calls <b>FltCreateCommunicationPort</b> to create a communication server port object. </p>
 
-<p>After the server port has been created, a user-mode application can connect to the port by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff540460">FilterConnectCommunicationPort</a>. When connected, the user-mode application can send and receive messages by calling user-mode messaging functions such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff541513">FilterSendMessage</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff541508">FilterReplyMessage</a>. </p>
+<p>After the server port has been created, a user-mode application can connect to the port by calling <a href="ifsk.filterconnectcommunicationport">FilterConnectCommunicationPort</a>. When connected, the user-mode application can send and receive messages by calling user-mode messaging functions such as <a href="ifsk.filtersendmessage">FilterSendMessage</a>, <a href="ifsk.filtergetmessage">FilterGetMessage</a>, and <a href="ifsk.filterreplymessage">FilterReplyMessage</a>. </p>
 
 <p>Callers must set the OBJ_KERNEL_HANDLE <b>Attributes</b> flag for the <i>ObjectAttributes</i> parameter of <b>FltCreateCommunicationPort</b>. Setting this flag prevents the minifilter driver communication server port handle from being used by a user-mode process in whose context a caller of <b>FltCreateCommunicationPort</b> might be running. If this flag is not set, <b>FltCreateCommunicationPort</b> returns STATUS_INVALID_PARAMETER. </p>
 
-<p>Any server port that is created by <b>FltCreateCommunicationPort</b> must eventually be closed by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541871">FltCloseCommunicationPort</a>. When the server port is closed, no new connections to the server port are allowed, and all calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff540460">FilterConnectCommunicationPort</a> fail. However, any existing connections remain open until they are closed by the user-mode application or the minifilter driver, or until the minifilter driver is unloaded. </p>
-
-<p>A minifilter driver calls <b>FltCreateCommunicationPort</b> to create a communication server port object. </p>
-
-<p>After the server port has been created, a user-mode application can connect to the port by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff540460">FilterConnectCommunicationPort</a>. When connected, the user-mode application can send and receive messages by calling user-mode messaging functions such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff541513">FilterSendMessage</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff541508">FilterReplyMessage</a>. </p>
-
-<p>Callers must set the OBJ_KERNEL_HANDLE <b>Attributes</b> flag for the <i>ObjectAttributes</i> parameter of <b>FltCreateCommunicationPort</b>. Setting this flag prevents the minifilter driver communication server port handle from being used by a user-mode process in whose context a caller of <b>FltCreateCommunicationPort</b> might be running. If this flag is not set, <b>FltCreateCommunicationPort</b> returns STATUS_INVALID_PARAMETER. </p>
-
-<p>Any server port that is created by <b>FltCreateCommunicationPort</b> must eventually be closed by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541871">FltCloseCommunicationPort</a>. When the server port is closed, no new connections to the server port are allowed, and all calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff540460">FilterConnectCommunicationPort</a> fail. However, any existing connections remain open until they are closed by the user-mode application or the minifilter driver, or until the minifilter driver is unloaded. </p>
+<p>Any server port that is created by <b>FltCreateCommunicationPort</b> must eventually be closed by calling <a href="..\fltkernel\nf-fltkernel-fltclosecommunicationport.md">FltCloseCommunicationPort</a>. When the server port is closed, no new connections to the server port are allowed, and all calls to <a href="ifsk.filterconnectcommunicationport">FilterConnectCommunicationPort</a> fail. However, any existing connections remain open until they are closed by the user-mode application or the minifilter driver, or until the minifilter driver is unloaded. </p>
 
 ## -requirements
 <table>
@@ -373,49 +365,49 @@ NTSTATUS FltCreateCommunicationPort(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540460">FilterConnectCommunicationPort</a>
+<a href="ifsk.filterconnectcommunicationport">FilterConnectCommunicationPort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>
+<a href="ifsk.filtergetmessage">FilterGetMessage</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541513">FilterSendMessage</a>
+<a href="ifsk.filtersendmessage">FilterSendMessage</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541508">FilterReplyMessage</a>
+<a href="ifsk.filterreplymessage">FilterReplyMessage</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541778">FltBuildDefaultSecurityDescriptor</a>
+<a href="..\fltkernel\nf-fltkernel-fltbuilddefaultsecuritydescriptor.md">FltBuildDefaultSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541867">FltCloseClientPort</a>
+<a href="..\fltkernel\nf-fltkernel-fltcloseclientport.md">FltCloseClientPort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541871">FltCloseCommunicationPort</a>
+<a href="..\fltkernel\nf-fltkernel-fltclosecommunicationport.md">FltCloseCommunicationPort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542984">FltFreeSecurityDescriptor</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreesecuritydescriptor.md">FltFreeSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544378">FltSendMessage</a>
+<a href="..\fltkernel\nf-fltkernel-fltsendmessage.md">FltSendMessage</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547804">InitializeObjectAttributes</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557749">OBJECT_ATTRIBUTES</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551085">PFLT_FILTER_UNLOAD_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-filter-unload-callback.md">PFLT_FILTER_UNLOAD_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559876">ProbeForRead</a>
+<a href="..\wdm\nf-wdm-probeforread.md">ProbeForRead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559879">ProbeForWrite</a>
+<a href="..\wdm\nf-wdm-probeforwrite.md">ProbeForWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

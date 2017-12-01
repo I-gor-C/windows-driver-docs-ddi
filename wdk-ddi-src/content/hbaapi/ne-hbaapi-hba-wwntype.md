@@ -88,7 +88,7 @@ typedef enum HBA_wwntype {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557216">HBA_SendRNID</a>
+<a href="..\hbaapi\nf-hbaapi-hba-sendrnid.md">HBA_SendRNID</a>
 </dt>
 </dl>
 <p> </p>

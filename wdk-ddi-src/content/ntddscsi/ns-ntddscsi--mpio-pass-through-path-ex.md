@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>MPIO_PASS_THROUGH_PATH_EX</b>  structure is used together with an <a href="https://msdn.microsoft.com/library/windows/hardware/jj602799">IOCTL_MPIO_PASS_THROUGH_PATH_EX</a> request to instruct the port driver to send an embedded SCSI command to the target device.</p>
+<p>The <b>MPIO_PASS_THROUGH_PATH_EX</b>  structure is used together with an <a href="..\ntddscsi\ni-ntddscsi-ioctl-mpio-pass-through-path-ex.md">IOCTL_MPIO_PASS_THROUGH_PATH_EX</a> request to instruct the port driver to send an embedded SCSI command to the target device.</p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ typedef struct _MPIO_PASS_THROUGH_PATH_EX {
 ### -field <b>PassThroughOffset</b>
 
 <dd>
-<p>The offset from the beginning of this structure to a <a href="https://msdn.microsoft.com/library/windows/hardware/jj553715">SCSI_PASS_THROUGH_EX</a> structure that is configured in the same manner as it is for an <a href="https://msdn.microsoft.com/library/windows/hardware/jj602801">IOCTL_SCSI_PASS_THROUGH_EX</a> request.</p>
+<p>The offset from the beginning of this structure to a <a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through-ex.md">SCSI_PASS_THROUGH_EX</a> structure that is configured in the same manner as it is for an <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-pass-through-ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a> request.</p>
 </dd>
 
 ### -field <b>Version</b>
@@ -127,7 +127,7 @@ typedef struct _MPIO_PASS_THROUGH_PATH_EX {
 ### -field <b>PortNumber</b>
 
 <dd>
-<p>The port number if MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set. Otherwise, this member is zero. If MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set, the <b>PathID</b> and <b>TargetId</b> values are taken from address structure associated with the embedded <a href="https://msdn.microsoft.com/library/windows/hardware/jj553715">SCSI_PASS_THROUGH_EX</a> structure.</p>
+<p>The port number if MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set. Otherwise, this member is zero. If MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set, the <b>PathID</b> and <b>TargetId</b> values are taken from address structure associated with the embedded <a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through-ex.md">SCSI_PASS_THROUGH_EX</a> structure.</p>
 </dd>
 
 ### -field <b>MpioPathId</b>
@@ -165,25 +165,25 @@ typedef struct _MPIO_PASS_THROUGH_PATH_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj602801">IOCTL_SCSI_PASS_THROUGH_EX</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-pass-through-ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj602800">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-pass-through-direct-ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj553715">SCSI_PASS_THROUGH_EX</a>
+<a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through-ex.md">SCSI_PASS_THROUGH_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj553713">SCSI_PASS_THROUGH_DIRECT_EX</a>
+<a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through-direct-ex.md">SCSI_PASS_THROUGH_DIRECT_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj602799">IOCTL_MPIO_PASS_THROUGH_PATH_EX</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-mpio-pass-through-path-ex.md">IOCTL_MPIO_PASS_THROUGH_PATH_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj602798">IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-mpio-pass-through-path-direct-ex.md">IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451474">STORAGE_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

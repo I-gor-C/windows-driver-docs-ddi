@@ -68,8 +68,6 @@ HRESULT drvUnInitializeWia(
 ## -remarks
 <p>The WIA service calls the <b>IWiaMiniDrv::drvUnInitializeWia</b> method when the resources associated with an application item tree are no longer needed. The minidriver can then unload any DLLs and free any allocated memory.</p>
 
-<p>The WIA service calls the <b>IWiaMiniDrv::drvUnInitializeWia</b> method when the resources associated with an application item tree are no longer needed. The minidriver can then unload any DLLs and free any allocated memory.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -105,7 +103,7 @@ HRESULT drvUnInitializeWia(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544986">IWiaMiniDrv::drvInitializeWia</a>
+<a href="image.iwiaminidrv_drvinitializewia">IWiaMiniDrv::drvInitializeWia</a>
 </dt>
 </dl>
 <p> </p>

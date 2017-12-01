@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetIndices(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543313">D3DDDIARG_SETINDICES</a> structure that describes parameters for setting the current index buffer.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setindices.md">D3DDDIARG_SETINDICES</a> structure that describes parameters for setting the current index buffer.</p>
 </dd>
 </dl>
 
@@ -75,9 +75,7 @@ __checkReturn HRESULT APIENTRY SetIndices(
 <p><i>SetIndices</i> returns S_OK or an appropriate error result if the index buffer is not successfully set.</p>
 
 ## -remarks
-<p>The Microsoft Direct3D runtime supplies a handle value of zero in the <b>hIndexBuffer</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543313">D3DDDIARG_SETINDICES</a> structure that is pointed to by the <i>pData</i> parameter to clear the current index buffer. The driver should handle subsequent attempts to draw indexed primitives (before a new current index buffer is established) so that a crash does not occur. The debug version of your driver should display informative messages to the debug output stream when this error condition is detected.</p>
-
-<p>The Microsoft Direct3D runtime supplies a handle value of zero in the <b>hIndexBuffer</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543313">D3DDDIARG_SETINDICES</a> structure that is pointed to by the <i>pData</i> parameter to clear the current index buffer. The driver should handle subsequent attempts to draw indexed primitives (before a new current index buffer is established) so that a crash does not occur. The debug version of your driver should display informative messages to the debug output stream when this error condition is detected.</p>
+<p>The Microsoft Direct3D runtime supplies a handle value of zero in the <b>hIndexBuffer</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setindices.md">D3DDDIARG_SETINDICES</a> structure that is pointed to by the <i>pData</i> parameter to clear the current index buffer. The driver should handle subsequent attempts to draw indexed primitives (before a new current index buffer is established) so that a crash does not occur. The debug version of your driver should display informative messages to the debug output stream when this error condition is detected.</p>
 
 ## -requirements
 <table>
@@ -114,10 +112,10 @@ __checkReturn HRESULT APIENTRY SetIndices(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543313">D3DDDIARG_SETINDICES</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setindices.md">D3DDDIARG_SETINDICES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11extpostassociatecompletion.htm
 old-project: netvista
 ms.assetid: 25db270c-3de8-4ced-82f1-2cd778006538
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -80,7 +79,7 @@ DWORD WINAPI * Dot11ExtPostAssociateCompletion(
 <dd>
 <p>The media access control (MAC) address of the access point (AP) with which the IHV Extensions DLL
      performed a security operation. This parameter is formatted as a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff548681">DOT11_MAC_ADDRESS</a> structure.
+     <a href="..\windot11\ns-windot11--dot11-mac-address.md">DOT11_MAC_ADDRESS</a> structure.
      </p>
 <div class="alert"><b>Note</b>  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic
      service set (BSS) networks.</div>
@@ -152,59 +151,6 @@ DWORD WINAPI * Dot11ExtPostAssociateCompletion(
 
 <p>An appropriate L2_REASON_CODE_xxxx error value.</p>
 
-<p>An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_CODE_IHV_BASE+
-        L2_REASON_CODE_GROUP_SIZE-1).</p>
-
-<p>In this situation, the IHV Extensions DLL must not set 
-      <i>dwWin32Error</i> to ERROR_SUCCESS. Instead, the DLL must set 
-      <i>dwWin32Error</i> to an appropriate error code defined in 
-      Winerror.h.</p>
-
-<p>The IHV Extensions DLL must call 
-      <b>Dot11ExtPostAssociateCompletion</b> to cancel all pending post-association operation whenever the 
-      <a href="..\wlanihv\nc-wlanihv-dot11extihv-adapter-reset.md">Dot11ExtIhvAdapterReset</a> or 
-      <a href="..\wlanihv\nc-wlanihv-dot11extihv-deinit-adapter.md">Dot11ExtIhvDeinitAdapter</a> IHV
-      Handler functions are called. In this situation, the DLL must set the 
-      <i>dwStatus</i> parameter to ERROR_CANCELLED.</p>
-
-<p>The IHV Extensions DLL calls the 
-    <i>Dot11ExtPostAssociateCompletion</i> function to do any of the following:</p>
-
-<p>Complete the post-association operation initiated by a call to the 
-      <a href="..\wlanihv\nc-wlanihv-dot11extihv-perform-post-associate.md">
-      Dot11ExtIhvPerformPostAssociate</a> IHV Handler function.</p>
-
-<p>After completing the post-association operation, indicate a change in the port state for the
-      security session referenced by the 
-      <i>hSecuritySessionID</i> parameter.</p>
-
-<p>For example, if the authorization state of the port changes, the IHV Extensions DLL can notify the
-      operating system by calling 
-      <i>Dot11ExtPostAssociateCompletion</i>.</p>
-
-<p>The IHV Extensions DLL must follow these guidelines when calling the 
-    <b>Dot11ExtPostAssociateCompletion</b> function.</p>
-
-<p>If the post-association operation completed successfully, the IHV Extensions DLL must set 
-      <i>dwReasonCode</i> to one of the following:</p>
-
-<p>L2_REASON_CODE_SUCCESS.</p>
-
-<p>An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_CODE_IHV_BASE+
-        L2_REASON_CODE_GROUP_SIZE-1).</p>
-
-<p>In this situation, the IHV Extensions DLL must set 
-      <i>dwWin32Error</i> to ERROR_SUCCESS.</p>
-
-<p>If the post-association operation completed with a failure, the IHV Extensions DLL must not set 
-      <i>dwReasonCode</i> to L2_REASON_CODE_SUCCESS. Instead, the DLL must set 
-      <i>dwReasonCode</i> to one of the following:</p>
-
-<p>An appropriate L2_REASON_CODE_xxxx error value.</p>
-
-<p>An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_CODE_IHV_BASE+
-        L2_REASON_CODE_GROUP_SIZE-1).</p>
-
 <p>In this situation, the IHV Extensions DLL must not set 
       <i>dwWin32Error</i> to ERROR_SUCCESS. Instead, the DLL must set 
       <i>dwWin32Error</i> to an appropriate error code defined in 
@@ -253,7 +199,7 @@ DWORD WINAPI * Dot11ExtPostAssociateCompletion(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548681">DOT11_MAC_ADDRESS</a>
+<a href="..\windot11\ns-windot11--dot11-mac-address.md">DOT11_MAC_ADDRESS</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-adapter-reset.md">Dot11ExtIhvAdapterReset</a>
@@ -269,7 +215,7 @@ DWORD WINAPI * Dot11ExtPostAssociateCompletion(
    Dot11ExtIhvPerformPostAssociate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547563">Dot11ExtSendPacket</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-send-packet.md">Dot11ExtSendPacket</a>
 </dt>
 <dt>
 <a href="netvista.native_802_11_ihv_handler_functions">Native 802.11 IHV Handler
@@ -278,4 +224,4 @@ DWORD WINAPI * Dot11ExtPostAssociateCompletion(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_POST_ASSOCIATE_COMPLETION callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_POST_ASSOCIATE_COMPLETION callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

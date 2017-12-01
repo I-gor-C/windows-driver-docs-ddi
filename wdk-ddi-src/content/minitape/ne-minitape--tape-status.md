@@ -291,7 +291,7 @@ typedef enum _TAPE_STATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560625">IOCTL_TAPE_GET_STATUS</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl-tape-get-status.md">IOCTL_TAPE_GET_STATUS</a>
 </dt>
 </dl>
 <p> </p>

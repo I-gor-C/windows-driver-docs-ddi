@@ -57,7 +57,7 @@ NTSTATUS D3DKMTConfigureSharedResource(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547793">D3DKMT_CONFIGURESHAREDRESOURCE</a> structure that specifies parameters to configure the shared resource. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-configuresharedresource.md">D3DKMT_CONFIGURESHAREDRESOURCE</a> structure that specifies parameters to configure the shared resource. </p>
 </dd>
 </dl>
 
@@ -71,7 +71,7 @@ NTSTATUS D3DKMTConfigureSharedResource(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546798">D3DKMTConfigureSharedResource</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
@@ -135,7 +135,7 @@ NTSTATUS D3DKMTConfigureSharedResource(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547793">D3DKMT_CONFIGURESHAREDRESOURCE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-configuresharedresource.md">D3DKMT_CONFIGURESHAREDRESOURCE</a>
 </dt>
 </dl>
 <p> </p>

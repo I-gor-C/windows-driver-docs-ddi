@@ -194,7 +194,7 @@ typedef struct _VPB {
 ## -remarks
 <p>A volume parameter block (VPB) object is used to create an association between a physical disk device object and a logical volume device object. That is, a VPB maps a file system's volume device object to the device or partition upon which the volume is mounted. A VPB object exists only for device objects that represent physical media, virtual media, or logical media that can be mounted.</p>
 
-<p>The I/O manager allocates and deallocates memory for the VPB structure from nonpaged pool. This allocation (or deallocation) occurs when a device object (as described previously) is created by calling either the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548559">IoVerifyVolume</a> functions. That is, the device object that is created must be one of the following types:<ul>
+<p>The I/O manager allocates and deallocates memory for the VPB structure from nonpaged pool. This allocation (or deallocation) occurs when a device object (as described previously) is created by calling either the <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> or <a href="..\ntifs\nf-ntifs-ioverifyvolume.md">IoVerifyVolume</a> functions. That is, the device object that is created must be one of the following types:<ul>
 <li>FILE_DEVICE_DISK</li>
 <li>FILE_DEVICE_CD_ROM</li>
 <li>FILE_DEVICE_TAPE</li>
@@ -204,7 +204,7 @@ typedef struct _VPB {
 
 <p>For more information about device object types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a>.</p>
 
-<p>Drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548227">IoAcquireVpbSpinLock</a> before they access any applicable members of the VPB object.</p>
+<p>Drivers must call <a href="..\ntifs\nf-ntifs-ioacquirevpbspinlock.md">IoAcquireVpbSpinLock</a> before they access any applicable members of the VPB object.</p>
 
 ## -requirements
 <table>
@@ -223,10 +223,10 @@ typedef struct _VPB {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a>
+<a href="..\ntifs\ns-ntifs--file-objectid-information.md">FILE_OBJECT</a>
 </dt>
 <dt>
 <a href="ifsk.how_the_volume_is_mounted">How the Volume Is Mounted</a>

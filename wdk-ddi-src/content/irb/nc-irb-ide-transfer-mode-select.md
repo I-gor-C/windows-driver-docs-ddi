@@ -67,7 +67,7 @@ BOOLEAN AtaControllerTransferModeSelect(
 ### -param <i>TransferModeParams</i> [in, out]
 
 <dd>
-<p>A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559151">IDE_TRANSFER_MODE_PARAMETERS</a> that indicates to the miniport driver the channel on which to set the transfer modes and which transfer modes are available. </p>
+<p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-transfer-mode-parameters.md">IDE_TRANSFER_MODE_PARAMETERS</a> that indicates to the miniport driver the channel on which to set the transfer modes and which transfer modes are available. </p>
 </dd>
 </dl>
 
@@ -75,10 +75,6 @@ BOOLEAN AtaControllerTransferModeSelect(
 <p><b><i>AtaControllerTransferModeSelect</i></b> returns <b>TRUE</b> to acknowledge the receipt of the transfer mode parameters. The miniport driver ignores a return value of <b>FALSE</b>.</p>
 
 ## -remarks
-<p>The <b><i>AtaControllerTransferModeSelect</i></b> miniport driver routine must select the appropriate timing modes and program the controller for the selected modes. The miniport driver must select at least one programmed input/output (PIO) mode for the indicated channel, and preferably at least one direct memory access (DMA) timing mode also. To communicate to the caller the transfer modes that it selected, the miniport driver sets the appropriate bits in the <b>TransferModeSelected</b> member of the IDE_TRANSFER_MODE_PARAMETERS structure.</p>
-
-<p><b><i>AtaControllerTransferModeSelect</i></b> is an optional routine. </p>
-
 <p>The <b><i>AtaControllerTransferModeSelect</i></b> miniport driver routine must select the appropriate timing modes and program the controller for the selected modes. The miniport driver must select at least one programmed input/output (PIO) mode for the indicated channel, and preferably at least one direct memory access (DMA) timing mode also. To communicate to the caller the transfer modes that it selected, the miniport driver sets the appropriate bits in the <b>TransferModeSelected</b> member of the IDE_TRANSFER_MODE_PARAMETERS structure.</p>
 
 <p><b><i>AtaControllerTransferModeSelect</i></b> is an optional routine. </p>
@@ -110,7 +106,7 @@ BOOLEAN AtaControllerTransferModeSelect(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559151">IDE_TRANSFER_MODE_PARAMETERS</a>
+<a href="..\irb\ns-irb--ide-transfer-mode-parameters.md">IDE_TRANSFER_MODE_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

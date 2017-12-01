@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CDROM_EXCLUSIVE_LOCK structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559327">IOCTL_CDROM_EXCLUSIVE_ACCESS</a> request to lock a CD-ROM device for exclusive access.</p>
+<p>The CDROM_EXCLUSIVE_LOCK structure is used with the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-exclusive-access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a> request to lock a CD-ROM device for exclusive access.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ typedef struct _CDROM_EXCLUSIVE_LOCK {
 ### -field <b>Access</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551362">CDROM_EXCLUSIVE_ACCESS</a> structure that specifies the type of exclusive access request and the flags that are associated with the request.</p>
+<p>A <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-exclusive-access.md">CDROM_EXCLUSIVE_ACCESS</a> structure that specifies the type of exclusive access request and the flags that are associated with the request.</p>
 </dd>
 
 ### -field <b>CallerName</b>
@@ -88,10 +88,10 @@ typedef struct _CDROM_EXCLUSIVE_LOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551362">CDROM_EXCLUSIVE_ACCESS</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-exclusive-access.md">CDROM_EXCLUSIVE_ACCESS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559327">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-exclusive-access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
 </dt>
 </dl>
 <p> </p>

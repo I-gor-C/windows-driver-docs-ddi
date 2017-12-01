@@ -80,7 +80,7 @@ ULONG StorPortPoFxIdleComponent(
 ### -param <i>Component</i> [in]
 
 <dd>
-<p>The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh920429">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh920421">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
+<p>The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="..\storport\ns-storport--stor-pofx-device.md">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
 ### -param <i>Flags</i> [in]
@@ -121,7 +121,7 @@ ULONG StorPortPoFxIdleComponent(
 
 <p>-or-</p>
 
-<p><b>StorPortPoFxIdleComponent</b> was called with an inactive <i>Component</i> and an <i>Srb</i> for which a previous call to   <a href="https://msdn.microsoft.com/library/windows/hardware/hh920422">StorPortPoFxActivateComponent</a> was not performed.</p><dl>
+<p><b>StorPortPoFxIdleComponent</b> was called with an inactive <i>Component</i> and an <i>Srb</i> for which a previous call to   <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a> was not performed.</p><dl>
 <dt><b>STOR_STATUS_INVALID_IRQL</b></dt>
 </dl><p>The current IRQL &gt; DISPATCH_LEVEL.</p><dl>
 <dt><b>STOR_STATUS_BUSY</b></dt>
@@ -132,11 +132,7 @@ ULONG StorPortPoFxIdleComponent(
 ## -remarks
 <p>Currently, both adapter devices and unit devices have maximum component count of 1. The index in <i>Component</i> must always be set to 0.</p>
 
-<p>Each call to <b>StorPortPoFxIdleComponent</b> must be matched with a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh920422">StorPortPoFxActivateComponent</a>.</p>
-
-<p>Currently, both adapter devices and unit devices have maximum component count of 1. The index in <i>Component</i> must always be set to 0.</p>
-
-<p>Each call to <b>StorPortPoFxIdleComponent</b> must be matched with a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh920422">StorPortPoFxActivateComponent</a>.</p>
+<p>Each call to <b>StorPortPoFxIdleComponent</b> must be matched with a previous call to <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>.</p>
 
 ## -requirements
 <table>
@@ -181,13 +177,13 @@ ULONG StorPortPoFxIdleComponent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920429">STOR_POFX_DEVICE</a>
+<a href="..\storport\ns-storport--stor-pofx-device.md">STOR_POFX_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920421">StorPortInitializePoFxPower</a>
+<a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920422">StorPortPoFxActivateComponent</a>
+<a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>
 </dt>
 </dl>
 <p> </p>

@@ -127,13 +127,13 @@ typedef struct _VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE {
 <a href="..\video\nc-video-protect-wc-memory.md">VideoPortProtectWCMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570337">VideoPortQueryServices</a>
+<a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-restore-wc-memory.md">VideoPortRestoreWCMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a>
+<a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

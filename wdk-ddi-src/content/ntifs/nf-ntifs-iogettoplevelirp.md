@@ -89,34 +89,6 @@ PIRP IoGetTopLevelIrp(
 
 <p>The cache manager is the top-level component for the current thread, and the current thread is in a fast I/O path.</p>
 
-<p> </p>
-
-<p><b>IoGetTopLevelIrp</b> can return <b>NULL</b>, an arbitrary file-system-specific value (such as a pointer to the current IRP), or one of the flags listed in the following table.</p>
-
-<p>If the current thread holds no resources above the file system, <b>IoGetTopLevelIrp</b> returns <b>NULL</b>.</p>
-
-<p>If the file system is the top-level component for the current thread, <b>IoGetTopLevelIrp</b> returns a pointer to the current IRP.</p>
-
-<p>If a component other than the file system is the top-level component for the current thread, <b>IoGetTopLevelIrp</b> returns one of the following flags: </p>
-
-<p>FSRTL_FSP_TOP_LEVEL_IRP</p>
-
-<p>This is a recursive call.</p>
-
-<p>FSRTL_CACHE_TOP_LEVEL_IRP</p>
-
-<p>The cache manager is the top-level component for the current thread.</p>
-
-<p>FSRTL_MOD_WRITE_TOP_LEVEL_IRP</p>
-
-<p>The modified page writer is the top-level component for the current thread.</p>
-
-<p>FSRTL_FAST_IO_TOP_LEVEL_IRP</p>
-
-<p>The cache manager is the top-level component for the current thread, and the current thread is in a fast I/O path.</p>
-
-<p> </p>
-
 ## -requirements
 <table>
 <tr>
@@ -172,7 +144,7 @@ PIRP IoGetTopLevelIrp(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548540">IoSetTopLevelIrp</a>
+<a href="..\ntifs\nf-ntifs-iosettoplevelirp.md">IoSetTopLevelIrp</a>
 </dt>
 </dl>
 <p> </p>

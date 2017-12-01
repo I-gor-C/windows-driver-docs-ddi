@@ -87,8 +87,6 @@ typedef DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP2 ;
 ## -remarks
 <p>Register your implementation of this callback function by setting the appropriate member of  and then calling .</p>
 
-<p>Register your implementation of this callback function by setting the appropriate member of  and then calling .</p>
-
 ## -requirements
 <table>
 <tr>

@@ -132,7 +132,7 @@ _Check_return_ HRESULT CALLBACK pfnReclaimAllocations3Cb(
 <a href="display.d3dddicb_reclaimallocations3">D3DDDICB_RECLAIMALLOCATIONS3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544512">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
 <a href="display.pfnreclaimresources">pfnReclaimResources</a>

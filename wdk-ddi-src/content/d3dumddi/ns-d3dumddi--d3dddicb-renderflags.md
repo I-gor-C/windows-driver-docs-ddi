@@ -66,21 +66,21 @@ typedef struct _D3DDDICB_RENDERFLAGS {
 ### -field <b>ResizeCommandBuffer</b>
 
 <dd>
-<p>A UINT value that specifies whether to resize the command buffer. The driver puts the requested size in the <b>NewCommandBufferSize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544241">D3DDDICB_RENDER</a> structure. </p>
+<p>A UINT value that specifies whether to resize the command buffer. The driver puts the requested size in the <b>NewCommandBufferSize</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-render.md">D3DDDICB_RENDER</a> structure. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
 ### -field <b>ResizeAllocationList</b>
 
 <dd>
-<p>A UINT value that specifies whether to resize the allocation list. The driver puts the requested number of elements in the <b>NewAllocationListSize</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544241">D3DDDICB_RENDER</a>. </p>
+<p>A UINT value that specifies whether to resize the allocation list. The driver puts the requested number of elements in the <b>NewAllocationListSize</b> member of <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-render.md">D3DDDICB_RENDER</a>. </p>
 <p>Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).</p>
 </dd>
 
 ### -field <b>ResizePatchLocationList</b>
 
 <dd>
-<p>A UINT value that specifies whether to resize the patch-location list. The driver puts the requested number of elements in the <b>NewPatchLocationListSize</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544241">D3DDDICB_RENDER</a>. </p>
+<p>A UINT value that specifies whether to resize the patch-location list. The driver puts the requested number of elements in the <b>NewPatchLocationListSize</b> member of <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-render.md">D3DDDICB_RENDER</a>. </p>
 <p>Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).</p>
 </dd>
 
@@ -132,7 +132,7 @@ typedef struct _D3DDDICB_RENDERFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544241">D3DDDICB_RENDER</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-render.md">D3DDDICB_RENDER</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_isolation_parameters.htm
 old-project: netvista
 ms.assetid: 71A01647-3415-4F76-A67C-D1022C8A11D9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_ISOLATION_PARAMETERS, NDIS_ISOLATION_PARAMETERS, *PNDIS_ISOLATION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct _NDIS_ISOLATION_PARAMETERS {
 ### -field <b>Header</b>
 
 <dd>
-<p>The type, revision, and size of the <b>NDIS_ISOLATION_PARAMETERS</b>  structure. This member is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.</p>
+<p>The type, revision, and size of the <b>NDIS_ISOLATION_PARAMETERS</b>  structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
 <p>The <b>Type</b> member of <b>Header</b> must be set to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. To specify the version of the <b>NDIS_ISOLATION_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: </p>
 <p></p>
 <dl>
@@ -87,7 +87,7 @@ typedef struct _NDIS_ISOLATION_PARAMETERS {
 ### -field <b>IsolationMode</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/dn383677">NDIS_ISOLATION_MODE</a> enumeration value that specifies the isolation mode.</p>
+<p>An <a href="..\ntddndis\ne-ntddndis--ndis-isolation-mode.md">NDIS_ISOLATION_MODE</a> enumeration value that specifies the isolation mode.</p>
 </dd>
 
 ### -field <b>AllowUntaggedTraffic</b>
@@ -99,13 +99,13 @@ typedef struct _NDIS_ISOLATION_PARAMETERS {
 ### -field <b>NumRoutingDomainEntries</b>
 
 <dd>
-<p>A <b>ULONG</b> value that specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/dn383681">NDIS_ROUTING_DOMAIN_ENTRY</a> in the array that follows the <b>NDIS_ISOLATION_PARAMETERS</b> structure.</p>
+<p>A <b>ULONG</b> value that specifies the number of <a href="..\ntddndis\ns-ntddndis--ndis-routing-domain-entry.md">NDIS_ROUTING_DOMAIN_ENTRY</a> in the array that follows the <b>NDIS_ISOLATION_PARAMETERS</b> structure.</p>
 </dd>
 
 ### -field <b>FirstRoutingDomainEntryOffset</b>
 
 <dd>
-<p>A <b>ULONG</b> value that specifies the offset, in bytes, to the first <a href="https://msdn.microsoft.com/library/windows/hardware/dn383681">NDIS_ROUTING_DOMAIN_ENTRY</a> element in the array that follows the <b>NDIS_ISOLATION_PARAMETERS</b> structure. The offset is measured from the start of the <b>NDIS_ISOLATION_PARAMETERS</b> structure to the beginning of the first element of the array.</p>
+<p>A <b>ULONG</b> value that specifies the offset, in bytes, to the first <a href="..\ntddndis\ns-ntddndis--ndis-routing-domain-entry.md">NDIS_ROUTING_DOMAIN_ENTRY</a> element in the array that follows the <b>NDIS_ISOLATION_PARAMETERS</b> structure. The offset is measured from the start of the <b>NDIS_ISOLATION_PARAMETERS</b> structure to the beginning of the first element of the array.</p>
 <div class="alert"><b>Note</b>  If the value of <b>NumRoutingDomainEntries</b> is zero, this member is ignored.</div>
 <div> </div>
 </dd>
@@ -139,19 +139,19 @@ typedef struct _NDIS_ISOLATION_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn383677">NDIS_ISOLATION_MODE</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-isolation-mode.md">NDIS_ISOLATION_MODE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn383680">NDIS_ISOLATION_PARAMETERS_GET_FIRST_ROUTING_DOMAIN_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn383681">NDIS_ROUTING_DOMAIN_ENTRY</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-routing-domain-entry.md">NDIS_ROUTING_DOMAIN_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn383687">NDIS_SWITCH_PORT_PROPERTY_ISOLATION</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-switch-port-property-isolation.md">NDIS_SWITCH_PORT_PROPERTY_ISOLATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn383690">OID_GEN_ISOLATION_PARAMETERS</a>
@@ -159,4 +159,4 @@ typedef struct _NDIS_ISOLATION_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_ISOLATION_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_ISOLATION_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

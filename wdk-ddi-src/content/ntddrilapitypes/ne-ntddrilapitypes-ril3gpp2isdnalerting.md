@@ -7,7 +7,7 @@ old-location: netvista\ril3gpp2isdnalerting.htm
 old-project: netvista
 ms.assetid: e3ba9bdd-2741-4a6c-9613-1ced31fc3dbf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

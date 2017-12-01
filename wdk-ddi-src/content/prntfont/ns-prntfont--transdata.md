@@ -64,8 +64,8 @@ typedef struct _TRANSDATA {
 ### -field <b>ubCodePageID</b>
 
 <dd>
-<p>Specifies the zero-based index of a particular structure in the array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a> structures. The first structure in this array has an index of 0, the second structure has an index of 1, and so on.</p>
-<p>The <b>loCodePageOffset</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563597">UNI_GLYPHSETDATA</a> structure contains the offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of the array of UNI_CODEPAGEINFO structures.</p>
+<p>Specifies the zero-based index of a particular structure in the array of <a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a> structures. The first structure in this array has an index of 0, the second structure has an index of 1, and so on.</p>
+<p>The <b>loCodePageOffset</b> member of the <a href="..\prntfont\ns-prntfont--uni-glyphsetdata.md">UNI_GLYPHSETDATA</a> structure contains the offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of the array of UNI_CODEPAGEINFO structures.</p>
 </dd>
 
 ### -field <b>ubType</b>
@@ -117,7 +117,7 @@ typedef struct _TRANSDATA {
 <p><b>Action Flags</b></p>
 </td>
 <td>
-<p>One of the following flags can be set. All are optional. Not valid if the <b>lPredefinedID</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563597">UNI_GLYPHSETDATA</a> structure is set to CC_NOPRECNV.</p>
+<p>One of the following flags can be set. All are optional. Not valid if the <b>lPredefinedID</b> member of the <a href="..\prntfont\ns-prntfont--uni-glyphsetdata.md">UNI_GLYPHSETDATA</a> structure is set to CC_NOPRECNV.</p>
 </td>
 </tr>
 <tr>
@@ -135,7 +135,7 @@ typedef struct _TRANSDATA {
 <p>MTYPE_DISABLE</p>
 </td>
 <td>
-<p>The specified mapping, contained in the .gtt file specified by the <b>lPredefinedID</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563597">UNI_GLYPHSETDATA</a> structure, is disabled.</p>
+<p>The specified mapping, contained in the .gtt file specified by the <b>lPredefinedID</b> member of the <a href="..\prntfont\ns-prntfont--uni-glyphsetdata.md">UNI_GLYPHSETDATA</a> structure, is disabled.</p>
 </td>
 </tr>
 <tr>
@@ -185,7 +185,7 @@ typedef struct _TRANSDATA {
 ### -field <b>sCode</b>
 
 <dd>
-<p>Specifies the offset to a command string. The offset is relative to the beginning of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556509">MAPTABLE</a> structure containing the TRANSDATA array. The first word of the command string must be the command size. Valid if the MTYPE_COMPOSE flag is set in <b>uType</b>.</p>
+<p>Specifies the offset to a command string. The offset is relative to the beginning of the <a href="..\prntfont\ns-prntfont--maptable.md">MAPTABLE</a> structure containing the TRANSDATA array. The first word of the command string must be the command size. Valid if the MTYPE_COMPOSE flag is set in <b>uType</b>.</p>
 </dd>
 
 ### -field <b>ubCode</b>
@@ -204,7 +204,7 @@ typedef struct _TRANSDATA {
 </dl>
 
 ## -remarks
-<p>A .gtt file's TRANSDATA structure array, which contains glyph mapping information, is contained in the file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556509">MAPTABLE</a> structure.</p>
+<p>A .gtt file's TRANSDATA structure array, which contains glyph mapping information, is contained in the file's <a href="..\prntfont\ns-prntfont--maptable.md">MAPTABLE</a> structure.</p>
 
 ## -requirements
 <table>
@@ -223,13 +223,13 @@ typedef struct _TRANSDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a>
+<a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563597">UNI_GLYPHSETDATA</a>
+<a href="..\prntfont\ns-prntfont--uni-glyphsetdata.md">UNI_GLYPHSETDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556509">MAPTABLE</a>
+<a href="..\prntfont\ns-prntfont--maptable.md">MAPTABLE</a>
 </dt>
 </dl>
 <p> </p>

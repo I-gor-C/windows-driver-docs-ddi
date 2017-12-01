@@ -702,7 +702,7 @@ typedef struct _GET_CHANGER_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551425">ChangerGetParameters</a>
+<a href="..\mcd\nf-mcd-changergetparameters.md">ChangerGetParameters</a>
 </dt>
 </dl>
 <p> </p>

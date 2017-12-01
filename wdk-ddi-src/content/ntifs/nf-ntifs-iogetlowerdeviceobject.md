@@ -75,23 +75,9 @@ PDEVICE_OBJECT IoGetLowerDeviceObject(
 
 <p>The device object pointed to by <i>DeviceObject</i> is the lowest device object in the driver stack. </p>
 
-<p>A file system filter driver typically uses <b>IoGetLowerDeviceObject</b> to determine whether it is already attached to the filter driver stack that is chained above a given file system device object. First, the filter calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549145">IoGetAttachedDeviceReference</a> to get a pointer to the topmost device object in the stack. Then it calls <b>IoGetLowerDeviceObject</b> repeatedly to walk the driver stack, checking each device object to see whether the object belongs to the filter driver. </p>
+<p>A file system filter driver typically uses <b>IoGetLowerDeviceObject</b> to determine whether it is already attached to the filter driver stack that is chained above a given file system device object. First, the filter calls <a href="..\ntifs\nf-ntifs-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a> to get a pointer to the topmost device object in the stack. Then it calls <b>IoGetLowerDeviceObject</b> repeatedly to walk the driver stack, checking each device object to see whether the object belongs to the filter driver. </p>
 
-<p><b>IoGetLowerDeviceObject</b> increments the reference count on the next-lower-level device object. Thus every successful call to <b>IoGetLowerDeviceObject</b> must be matched by a subsequent call <a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a>. </p>
-
-<p>Given a pointer to a device object in a file system or device driver stack, <b>IoGetLowerDeviceObject</b> returns a pointer to the next-lower-level device object on the stack.</p>
-
-<p><b>IoGetLowerDeviceObject</b> returns <b>NULL</b> if: </p>
-
-<p>The next-lower-level driver is not loaded. </p>
-
-<p>The next-lower-level driver is currently being unloaded, removed, or deleted. </p>
-
-<p>The device object pointed to by <i>DeviceObject</i> is the lowest device object in the driver stack. </p>
-
-<p>A file system filter driver typically uses <b>IoGetLowerDeviceObject</b> to determine whether it is already attached to the filter driver stack that is chained above a given file system device object. First, the filter calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549145">IoGetAttachedDeviceReference</a> to get a pointer to the topmost device object in the stack. Then it calls <b>IoGetLowerDeviceObject</b> repeatedly to walk the driver stack, checking each device object to see whether the object belongs to the filter driver. </p>
-
-<p><b>IoGetLowerDeviceObject</b> increments the reference count on the next-lower-level device object. Thus every successful call to <b>IoGetLowerDeviceObject</b> must be matched by a subsequent call <a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a>. </p>
+<p><b>IoGetLowerDeviceObject</b> increments the reference count on the next-lower-level device object. Thus every successful call to <b>IoGetLowerDeviceObject</b> must be matched by a subsequent call <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>. </p>
 
 ## -requirements
 <table>
@@ -156,13 +142,13 @@ PDEVICE_OBJECT IoGetLowerDeviceObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548359">IoGetAttachedDevice</a>
+<a href="..\ntifs\nf-ntifs-iogetattacheddevice.md">IoGetAttachedDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549145">IoGetAttachedDeviceReference</a>
+<a href="..\ntifs\nf-ntifs-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 </dt>
 </dl>
 <p> </p>

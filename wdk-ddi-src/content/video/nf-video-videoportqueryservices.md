@@ -66,13 +66,13 @@ VP_STATUS VideoPortQueryServices(
 ### -param <i>ServicesType</i> [in]
 
 <dd>
-<p>A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570540">VIDEO_PORT_SERVICES</a> enumerated type that specifies which interface is being requested.</p>
+<p>A value from the <a href="..\video\ne-video-video-port-services.md">VIDEO_PORT_SERVICES</a> enumerated type that specifies which interface is being requested.</p>
 </dd>
 
 ### -param <i>Interface</i> [in, out]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a> structure, which contains basic information about the requested interface. See the following <b>Remarks</b> section for more information.</p>
+<p>Pointer to an <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure, which contains basic information about the requested interface. See the following <b>Remarks</b> section for more information.</p>
 </dd>
 </dl>
 
@@ -80,29 +80,17 @@ VP_STATUS VideoPortQueryServices(
 <p>If <b>VideoPortQueryServices</b> succeeds, it returns NO_ERROR; otherwise, it returns an error code.</p>
 
 ## -remarks
-<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesI2C</b>, the <i>Interface</i> parameter must be a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570538">VIDEO_PORT_I2C_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure.</p>
+<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesI2C</b>, the <i>Interface</i> parameter must be a pointer to a <a href="..\video\ns-video--video-port-i2c-interface.md">VIDEO_PORT_I2C_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure.</p>
 
-<p>Similarly, if the <i>ServicesType</i> parameter is set to <b>VideoPortServicesAGP</b>, the <i>Interface</i> parameter must be a pointer to either a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570527">VIDEO_PORT_AGP_INTERFACE</a> structure, or a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570528">VIDEO_PORT_AGP_INTERFACE_2</a> structure, each cast as a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a> structure. </p>
-
-<p>The VIDEO_PORT_AGP_INTERFACE and VIDEO_PORT_AGP_INTERFACE_2 structures are nearly identical, except that the latter structure has a member that points to the <a href="..\videoagp\nc-videoagp-pagp-set-rate.md">AgpSetRate</a> function, which is used to reset the transfer rate for an AGP chipset. A video miniport driver querying AGP support should call <b>VideoPortQueryServices</b> first with <i>Interface</i> pointing to a VIDEO_PORT_AGP_INTERFACE_2 structure. If that call fails, the miniport driver can then make another call to <b>VideoPortQueryServices</b>, this time with <i>Interface</i> pointing to a VIDEO_PORT_AGP_INTERFACE structure.</p>
-
-<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesInt10</b>, the <i>Interface</i> parameter must be a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570539">VIDEO_PORT_INT10_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure.</p>
-
-<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesDebugReport</b>, the <i>Interface</i> parameter must be a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570532">VIDEO_PORT_DEBUG_REPORT_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure.</p>
-
-<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesWCMemoryProtection</b>, the <i>Interface</i> parameter must be a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570541">VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure. </p>
-
-<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesI2C</b>, the <i>Interface</i> parameter must be a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570538">VIDEO_PORT_I2C_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure.</p>
-
-<p>Similarly, if the <i>ServicesType</i> parameter is set to <b>VideoPortServicesAGP</b>, the <i>Interface</i> parameter must be a pointer to either a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570527">VIDEO_PORT_AGP_INTERFACE</a> structure, or a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570528">VIDEO_PORT_AGP_INTERFACE_2</a> structure, each cast as a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a> structure. </p>
+<p>Similarly, if the <i>ServicesType</i> parameter is set to <b>VideoPortServicesAGP</b>, the <i>Interface</i> parameter must be a pointer to either a <a href="..\video\ns-video--video-port-agp-interface.md">VIDEO_PORT_AGP_INTERFACE</a> structure, or a <a href="..\video\ns-video--video-port-agp-interface-2.md">VIDEO_PORT_AGP_INTERFACE_2</a> structure, each cast as a pointer to an <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure. </p>
 
 <p>The VIDEO_PORT_AGP_INTERFACE and VIDEO_PORT_AGP_INTERFACE_2 structures are nearly identical, except that the latter structure has a member that points to the <a href="..\videoagp\nc-videoagp-pagp-set-rate.md">AgpSetRate</a> function, which is used to reset the transfer rate for an AGP chipset. A video miniport driver querying AGP support should call <b>VideoPortQueryServices</b> first with <i>Interface</i> pointing to a VIDEO_PORT_AGP_INTERFACE_2 structure. If that call fails, the miniport driver can then make another call to <b>VideoPortQueryServices</b>, this time with <i>Interface</i> pointing to a VIDEO_PORT_AGP_INTERFACE structure.</p>
 
-<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesInt10</b>, the <i>Interface</i> parameter must be a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570539">VIDEO_PORT_INT10_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure.</p>
+<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesInt10</b>, the <i>Interface</i> parameter must be a pointer to a <a href="..\video\ns-video--video-port-int10-interface.md">VIDEO_PORT_INT10_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure.</p>
 
-<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesDebugReport</b>, the <i>Interface</i> parameter must be a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570532">VIDEO_PORT_DEBUG_REPORT_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure.</p>
+<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesDebugReport</b>, the <i>Interface</i> parameter must be a pointer to a <a href="..\video\ns-video--video-port-debug-report-interface.md">VIDEO_PORT_DEBUG_REPORT_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure.</p>
 
-<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesWCMemoryProtection</b>, the <i>Interface</i> parameter must be a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570541">VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure. </p>
+<p>If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesWCMemoryProtection</b>, the <i>Interface</i> parameter must be a pointer to a <a href="..\video\ns-video--video-port-wcmemoryprotection-interface.md">VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE</a> structure, cast as a pointer to an INTERFACE structure. </p>
 
 ## -requirements
 <table>
@@ -167,25 +155,25 @@ VP_STATUS VideoPortQueryServices(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a>
+<a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570527">VIDEO_PORT_AGP_INTERFACE</a>
+<a href="..\video\ns-video--video-port-agp-interface.md">VIDEO_PORT_AGP_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570528">VIDEO_PORT_AGP_INTERFACE_2</a>
+<a href="..\video\ns-video--video-port-agp-interface-2.md">VIDEO_PORT_AGP_INTERFACE_2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570538">VIDEO_PORT_I2C_INTERFACE</a>
+<a href="..\video\ns-video--video-port-i2c-interface.md">VIDEO_PORT_I2C_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570539">VIDEO_PORT_INT10_INTERFACE</a>
+<a href="..\video\ns-video--video-port-int10-interface.md">VIDEO_PORT_INT10_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570532">VIDEO_PORT_DEBUG_REPORT_INTERFACE</a>
+<a href="..\video\ns-video--video-port-debug-report-interface.md">VIDEO_PORT_DEBUG_REPORT_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570541">VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE</a>
+<a href="..\video\ns-video--video-port-wcmemoryprotection-interface.md">VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE</a>
 </dt>
 <dt>
 <a href="..\videoagp\nc-videoagp-pagp-set-rate.md">AgpSetRate</a>

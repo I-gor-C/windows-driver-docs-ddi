@@ -7,7 +7,7 @@ old-location: wdf\wdf_driver_version_available_params_init.htm
 old-project: wdf
 ms.assetid: aba3844e-745d-4d2c-9855-0535f53d7b0a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]</p>
-<p>The WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551306">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a> structure.</p>
+<p>The WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function initializes a <a href="..\wdfdriver\ns-wdfdriver--wdf-driver-version-available-params.md">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a> structure.</p>
 
 
 ## -syntax
@@ -61,7 +61,7 @@ VOID WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT(
 ### -param <i>Params</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551306">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a> structure.</p>
+<p>A pointer to a <a href="..\wdfdriver\ns-wdfdriver--wdf-driver-version-available-params.md">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a> structure.</p>
 </dd>
 
 ### -param <i>MajorVersion</i> [in]
@@ -81,13 +81,9 @@ VOID WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT(
 <p>None</p>
 
 ## -remarks
-<p>The WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function zeros the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551306">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a> structure that the <i>Params</i> parameter points to and sets the structure's <b>Size</b> member. Then, this function sets the structure's <b>MajorVersion</b> and <b>MinorVersion</b> members to the specified values.</p>
+<p>The WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function zeros the <a href="..\wdfdriver\ns-wdfdriver--wdf-driver-version-available-params.md">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a> structure that the <i>Params</i> parameter points to and sets the structure's <b>Size</b> member. Then, this function sets the structure's <b>MajorVersion</b> and <b>MinorVersion</b> members to the specified values.</p>
 
-<p>For a code example that uses WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547190">WdfDriverIsVersionAvailable</a>.</p>
-
-<p>The WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function zeros the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551306">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a> structure that the <i>Params</i> parameter points to and sets the structure's <b>Size</b> member. Then, this function sets the structure's <b>MajorVersion</b> and <b>MinorVersion</b> members to the specified values.</p>
-
-<p>For a code example that uses WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547190">WdfDriverIsVersionAvailable</a>.</p>
+<p>For a code example that uses WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, see <a href="..\wdfdriver\nf-wdfdriver-wdfdriverisversionavailable.md">WdfDriverIsVersionAvailable</a>.</p>
 
 ## -requirements
 <table>
@@ -132,9 +128,9 @@ VOID WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551306">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a>
+<a href="..\wdfdriver\ns-wdfdriver--wdf-driver-version-available-params.md">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

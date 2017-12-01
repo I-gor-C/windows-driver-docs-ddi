@@ -7,7 +7,7 @@ old-location: wdf\iwdfremotetarget_close.htm
 old-project: wdf
 ms.assetid: c24082c4-0c79-4956-8035-79198cb2b7ee
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFRemoteTarget, Close, IWDFRemoteTarget::Close
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ HRESULT Close();
 <p>The <b>Close</b> method always returns S_OK.</p>
 
 ## -remarks
-<p>If your driver provides an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function, the callback function must call <b>Close</b>. </p>
+<p>If your driver provides an <a href="wdf.iremotetargetcallbackremoval_onremotetargetremovecomplete">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function, the callback function must call <b>Close</b>. </p>
 
 <p>The <b>Close</b> method completes or cancels all I/O requests that the driver has sent to the I/O target. </p>
 
@@ -70,37 +70,7 @@ HRESULT Close();
 
 <p>For more information about the <b>Close</b> method, see <a href="wdf.controlling_a_general_i_o_target_s_state_in_umdf">Controlling a General I/O Target's State in UMDF</a>.</p>
 
-<p>The following code example shows an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function that calls <b>Close</b>.</p>
-
-<p>If your driver provides an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function, the callback function must call <b>Close</b>. </p>
-
-<p>The <b>Close</b> method completes or cancels all I/O requests that the driver has sent to the I/O target. </p>
-
-<p>After a driver calls <b>Close</b>, the driver cannot send I/O requests to the I/O target. </p>
-
-<p>For more information about the <b>Close</b> method, see <a href="wdf.controlling_a_general_i_o_target_s_state_in_umdf">Controlling a General I/O Target's State in UMDF</a>.</p>
-
-<p>The following code example shows an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function that calls <b>Close</b>.</p>
-
-<p>If your driver provides an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function, the callback function must call <b>Close</b>. </p>
-
-<p>The <b>Close</b> method completes or cancels all I/O requests that the driver has sent to the I/O target. </p>
-
-<p>After a driver calls <b>Close</b>, the driver cannot send I/O requests to the I/O target. </p>
-
-<p>For more information about the <b>Close</b> method, see <a href="wdf.controlling_a_general_i_o_target_s_state_in_umdf">Controlling a General I/O Target's State in UMDF</a>.</p>
-
-<p>The following code example shows an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function that calls <b>Close</b>.</p>
-
-<p>If your driver provides an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function, the callback function must call <b>Close</b>. </p>
-
-<p>The <b>Close</b> method completes or cancels all I/O requests that the driver has sent to the I/O target. </p>
-
-<p>After a driver calls <b>Close</b>, the driver cannot send I/O requests to the I/O target. </p>
-
-<p>For more information about the <b>Close</b> method, see <a href="wdf.controlling_a_general_i_o_target_s_state_in_umdf">Controlling a General I/O Target's State in UMDF</a>.</p>
-
-<p>The following code example shows an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556900">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function that calls <b>Close</b>.</p>
+<p>The following code example shows an <a href="wdf.iremotetargetcallbackremoval_onremotetargetremovecomplete">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a> callback function that calls <b>Close</b>.</p>
 
 ## -requirements
 <table>
@@ -155,12 +125,12 @@ HRESULT Close();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560247">IWDFRemoteTarget</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560259">IWDFRemoteTarget::CloseForQueryRemove</a>
+<a href="wdf.iwdfremotetarget_closeforqueryremove">IWDFRemoteTarget::CloseForQueryRemove</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFRemoteTarget::Close method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFRemoteTarget::Close method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

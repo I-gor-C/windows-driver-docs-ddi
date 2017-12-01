@@ -135,22 +135,22 @@ typedef struct _IDE_CHANNEL_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>
+<a href="storage.idehwinitialize">IdeHwInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557462">IdeHwBuildIo</a>
+<a href="storage.idehwbuildio">IdeHwBuildIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559003">IdeHwStartIo</a>
+<a href="storage.idehwstartio">IdeHwStartIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558992">IdeHwInterrupt</a>
+<a href="storage.idehwinterrupt">IdeHwInterrupt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558998">IdeHwReset</a>
+<a href="storage.idehwreset">IdeHwReset</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
+<a href="storage.idehwcontrol">IdeHwControl</a>
 </dt>
 </dl>
 <p> </p>

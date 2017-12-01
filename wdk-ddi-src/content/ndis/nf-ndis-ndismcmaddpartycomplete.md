@@ -7,7 +7,7 @@ old-location: netvista\ndismcmaddpartycomplete.htm
 old-project: netvista
 ms.assetid: 5bbcd552-00c2-4085-8222-c514eb92e654
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCmAddPartyComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisMCmAddPartyComplete (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisMCmAddPartyComplete (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmAddPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmAddPartyComplete (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -121,52 +117,9 @@ VOID NdisMCmAddPartyComplete(
 
 <p>Reject the request to add a new party. (This alternative implicitly forces clients to set up their
       traffic parameters for a multipoint VC with 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a> and to specify the same
+      <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a> and to specify the same
       traffic parameters at each subsequent call to 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff561625">NdisClAddParty</a> for the given multipoint
-      VC.)</p>
-
-<p>If the MCM driver sets 
-    <i>Status</i> to NDIS_STATUS_SUCCESS, it must supply an explicit handle, which is usually a pointer to the
-    driver-allocated per-party state area, as 
-    <i>CallMgrPartyContext</i> when it calls 
-    <b>NdisMCmAddPartyComplete</b>.</p>
-
-<p>A call to 
-    <b>NdisMCmAddPartyComplete</b> causes NDIS to call the client's 
-    <a href="..\ndis\nc-ndis-protocol-cl-add-party-complete.md">
-    ProtocolClAddPartyComplete</a> function.</p>
-
-<p>Only connection-oriented miniport drivers that provide integrated call-management support can call 
-    <b>NdisMCmAddPartyComplete</b>. Stand-alone call managers, which register themselves with NDIS as
-    protocol drivers, call 
-    <b>NdisCmAddPartyComplete</b> instead.</p>
-
-<p>If an MCM driver's 
-    <a href="..\ndis\nc-ndis-protocol-cm-add-party.md">ProtocolCmAddParty</a> function returns
-    NDIS_STATUS_PENDING, the driver must call 
-    <b>NdisMCmAddPartyComplete</b> subsequently to notify the client and NDIS that its attempt to add a party
-    on the multipoint VC has completed, whether successfully or with an MCM driver-determined error
-    status.</p>
-
-<p>The underlying network medium determines whether a client can specify per-party traffic parameters on
-    a multipoint VC.</p>
-
-<p>If the underlying network medium does not support per-party traffic parameters on multipoint VCs, an
-    MCM driver can do one of the following whenever a client attempts to add a party with a specification at 
-    <i>CallParameters</i> that does not match the already established traffic parameters for that VC:</p>
-
-<p>Reset the traffic parameters to those already established for the multipoint VC when it successfully
-      adds the party on that VC.</p>
-
-<p>Change the traffic parameters for every party already on the VC when it successfully adds the new
-      party.</p>
-
-<p>Reject the request to add a new party. (This alternative implicitly forces clients to set up their
-      traffic parameters for a multipoint VC with 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a> and to specify the same
-      traffic parameters at each subsequent call to 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff561625">NdisClAddParty</a> for the given multipoint
+      <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a> for the given multipoint
       VC.)</p>
 
 <p>If the MCM driver sets 
@@ -232,7 +185,7 @@ VOID NdisMCmAddPartyComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
+<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -247,13 +200,13 @@ VOID NdisMCmAddPartyComplete(
    NdisAllocateFromNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561625">NdisClAddParty</a>
+<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561651">NdisCmAddPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmaddpartycomplete.md">NdisCmAddPartyComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563543">NdisMCmDropPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmdroppartycomplete.md">NdisMCmDropPartyComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cl-add-party-complete.md">ProtocolClAddPartyComplete</a>
@@ -264,4 +217,4 @@ VOID NdisMCmAddPartyComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmAddPartyComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmAddPartyComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

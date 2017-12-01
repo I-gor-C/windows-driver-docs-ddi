@@ -93,7 +93,7 @@ HRESULT AdjustImageableArea(
 ### -param <i>prclImageableArea</i> 
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure that contains the printable area. This parameter is populated by UnidrvUI.dll or PS5UI.dll with data from the corresponding GPD or PPD, before the parameter is passed to the plug-in. The plug-in can then update this data before returning. </p>
+<p>A pointer to a <a href="display.rectl">RECTL</a> structure that contains the printable area. This parameter is populated by UnidrvUI.dll or PS5UI.dll with data from the corresponding GPD or PPD, before the parameter is passed to the plug-in. The plug-in can then update this data before returning. </p>
 </dd>
 </dl>
 
@@ -101,10 +101,6 @@ HRESULT AdjustImageableArea(
 <p><code>AdjustImageableArea</code> returns S_OK if this method succeeds. Otherwise, this method should return E_NOTIMPL if the plug-in does not support the method, or any appropriate failure value if the plug-in cannot complete the operation. For more information, see the following Remarks section.</p>
 
 ## -remarks
-<p>The <i>prclImageableArea</i> parameter is IN OUT. All other parameters for this method are input only.</p>
-
-<p>If the plug-in cannot complete the operation, it should return an appropriate failure HRESULT value, which willcause the current print job to fail.</p>
-
 <p>The <i>prclImageableArea</i> parameter is IN OUT. All other parameters for this method are input only.</p>
 
 <p>If the plug-in cannot complete the operation, it should return an appropriate failure HRESULT value, which willcause the current print job to fail.</p>
@@ -144,7 +140,7 @@ HRESULT AdjustImageableArea(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a>
+<a href="display.rectl">RECTL</a>
 </dt>
 </dl>
 <p> </p>

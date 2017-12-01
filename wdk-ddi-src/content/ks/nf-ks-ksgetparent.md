@@ -7,7 +7,7 @@ old-location: stream\ksgetparent.htm
 old-project: stream
 ms.assetid: d7804745-295f-491a-80f4-84441598bbf4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsGetParent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ PVOID KsGetParent(
 ### -param <i>Object</i> [in]
 
 <dd>
-<p>A pointer to the AVStream object for which to find the parent. Must be a pointer to one of the following types: <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a>. Callers must manually typecast the object to a PVOID.</p>
+<p>A pointer to the AVStream object for which to find the parent. Must be a pointer to one of the following types: <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a>, <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a>, <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a>, or <a href="..\ks\ns-ks--kspin.md">KSPIN</a>. Callers must manually typecast the object to a PVOID.</p>
 </dd>
 </dl>
 
@@ -69,13 +69,7 @@ PVOID KsGetParent(
 
 <p>The object hierarchy is only guaranteed stable while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
 
-<p>Minidrivers rarely use this function directly. Callers of <b>KsGetParent</b> must manually perform typecasts to and from PVOID. There are a number of inline versions that do the casting for you: <a href="https://msdn.microsoft.com/library/windows/hardware/ff562536">KsFilterFactoryGetParentDevice</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff562548">KsFilterGetParentFilterFactory</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff563516">KsPinGetParentFilter</a>.</p>
-
-<p>For a graphical representation of AVStream parent/child relationships, see the diagram in <a href="NULL">AVStream Object Hierarchy</a>.</p>
-
-<p>The object hierarchy is only guaranteed stable while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="NULL">Mutexes in AVStream</a>.</p>
-
-<p>Minidrivers rarely use this function directly. Callers of <b>KsGetParent</b> must manually perform typecasts to and from PVOID. There are a number of inline versions that do the casting for you: <a href="https://msdn.microsoft.com/library/windows/hardware/ff562536">KsFilterFactoryGetParentDevice</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff562548">KsFilterGetParentFilterFactory</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff563516">KsPinGetParentFilter</a>.</p>
+<p>Minidrivers rarely use this function directly. Callers of <b>KsGetParent</b> must manually perform typecasts to and from PVOID. There are a number of inline versions that do the casting for you: <a href="..\ks\nf-ks-ksfilterfactorygetparentdevice.md">KsFilterFactoryGetParentDevice</a>, <a href="..\ks\nf-ks-ksfiltergetparentfilterfactory.md">KsFilterGetParentFilterFactory</a>, and <a href="..\ks\nf-ks-kspingetparentfilter.md">KsPinGetParentFilter</a>.</p>
 
 ## -requirements
 <table>
@@ -130,27 +124,27 @@ PVOID KsGetParent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a>
+<a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a>
+<a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>
+<a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a>
+<a href="..\ks\ns-ks--kspin.md">KSPIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562536">KsFilterFactoryGetParentDevice</a>
+<a href="..\ks\nf-ks-ksfilterfactorygetparentdevice.md">KsFilterFactoryGetParentDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562548">KsFilterGetParentFilterFactory</a>
+<a href="..\ks\nf-ks-ksfiltergetparentfilterfactory.md">KsFilterGetParentFilterFactory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563516">KsPinGetParentFilter</a>
+<a href="..\ks\nf-ks-kspingetparentfilter.md">KsPinGetParentFilter</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGetParent function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGetParent function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -72,10 +72,6 @@ BOOLEAN IdeHwReset(
 
 <p><b><i>IdeHwReset</i></b> can be called even if the miniport driver is not ready for another request.</p>
 
-<p>The <b><i>IdeHwReset</i></b> routine should complete all pending requests and reset the indicated channel.</p>
-
-<p><b><i>IdeHwReset</i></b> can be called even if the miniport driver is not ready for another request.</p>
-
 ## -requirements
 <table>
 <tr>

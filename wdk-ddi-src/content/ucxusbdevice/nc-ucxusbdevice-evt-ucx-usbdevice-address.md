@@ -64,13 +64,13 @@ typedef EVT_UCX_USBDEVICE_ADDRESS PEVT_UCX_USBDEVICE_ADDRESS;
 ### -param <i>UcxController</i> [in]
 
 <dd>
-<p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a> method.</p>
+<p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
 ### -param <i>Request</i> [in]
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt188070">USBDEVICE_ADDRESS</a>.</p>
+<p>A structure of type <a href="buses._usbdevice_address">USBDEVICE_ADDRESS</a>.</p>
 </dd>
 </dl>
 
@@ -78,11 +78,7 @@ typedef EVT_UCX_USBDEVICE_ADDRESS PEVT_UCX_USBDEVICE_ADDRESS;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a> method.</p>
-
-<p>The client driver returns completion status in <i>Request</i>.  The driver can complete the WDFREQUEST asynchronously.</p>
-
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a> method.</p>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.</p>
 
 <p>The client driver returns completion status in <i>Request</i>.  The driver can complete the WDFREQUEST asynchronously.</p>
 
@@ -127,13 +123,13 @@ typedef EVT_UCX_USBDEVICE_ADDRESS PEVT_UCX_USBDEVICE_ADDRESS;
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188068">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
+<a href="buses._ucx_usbdevice_event_callbacks_init">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a>
+<a href="buses._ucxusbdevicecreate">UcxUsbDeviceCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188053">UcxUsbDeviceInitSetEventCallbacks</a>
+<a href="buses._ucxusbdeviceinitseteventcallbacks">UcxUsbDeviceInitSetEventCallbacks</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: wdf\wdfchildlistretrievenextdevice.htm
 old-project: wdf
 ms.assetid: 925807ff-e445-4ccf-ace6-fd913439799b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfChildListRetrieveNextDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ NTSTATUS WdfChildListRetrieveNextDevice(
 ### -param <i>Iterator</i> [in]
 
 <dd>
-<p>A pointer to the same caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff551230">WDF_CHILD_LIST_ITERATOR</a> structure that the driver previously supplied to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545601">WdfChildListBeginIteration</a>.</p>
+<p>A pointer to the same caller-allocated <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-list-iterator.md">WDF_CHILD_LIST_ITERATOR</a> structure that the driver previously supplied to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>.</p>
 </dd>
 
 ### -param <i>Device</i> [out]
@@ -80,7 +80,7 @@ NTSTATUS WdfChildListRetrieveNextDevice(
 ### -param <i>Info</i> [in, out]
 
 <dd>
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff551234">WDF_CHILD_RETRIEVE_INFO</a> structure. This pointer is optional and can be <b>NULL</b>.</p>
+<p>A pointer to a caller-allocated <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-retrieve-info.md">WDF_CHILD_RETRIEVE_INFO</a> structure. This pointer is optional and can be <b>NULL</b>.</p>
 </dd>
 </dl>
 
@@ -89,13 +89,13 @@ NTSTATUS WdfChildListRetrieveNextDevice(
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl><p>An input parameter was invalid.</p><dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl><p>The size of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551230">WDF_CHILD_LIST_ITERATOR</a> structure that <i>Iterator</i> specified was incorrect</p><dl>
+</dl><p>The size of the <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-list-iterator.md">WDF_CHILD_LIST_ITERATOR</a> structure that <i>Iterator</i> specified was incorrect</p><dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl><p>An address description was specified but the child list did not contain address descriptions.</p><dl>
 <dt><b>STATUS_NO_MORE_ENTRIES</b></dt>
 </dl><p>The framework reached the end of the child list.</p><dl>
 <dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
-</dl><p>The driver has not called <a href="https://msdn.microsoft.com/library/windows/hardware/ff545601">WdfChildListBeginIteration</a>.</p>
+</dl><p>The driver has not called <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>.</p>
 
 <p> </p>
 
@@ -107,37 +107,21 @@ NTSTATUS WdfChildListRetrieveNextDevice(
 </p>
 
 ## -remarks
-<p>Before calling <b>WdfChildListRetrieveNextDevice</b>, your driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545601">WdfChildListBeginIteration</a>. After the driver has finished traversing the child list, it must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545618">WdfChildListEndIteration</a>. The framework then informs the Plug and Play (PnP) manager of any changes that were made to the child list.</p>
+<p>Before calling <b>WdfChildListRetrieveNextDevice</b>, your driver must call <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>. After the driver has finished traversing the child list, it must call <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistenditeration.md">WdfChildListEndIteration</a>. The framework then informs the Plug and Play (PnP) manager of any changes that were made to the child list.</p>
 
 <p>Each time the driver calls <b>WdfChildListRetrieveNextDevice</b>, the method retrieves the next child that matches the following search criteria:</p>
 
-<p>The child's type must correspond to <a href="https://msdn.microsoft.com/library/windows/hardware/ff552507">WDF_RETRIEVE_CHILD_FLAGS</a>-typed flags in the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551230">WDF_CHILD_LIST_ITERATOR</a> structure.</p>
+<p>The child's type must correspond to <a href="..\wdfchildlist\ne-wdfchildlist--wdf-retrieve-child-flags.md">WDF_RETRIEVE_CHILD_FLAGS</a>-typed flags in the driver's <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-list-iterator.md">WDF_CHILD_LIST_ITERATOR</a> structure.</p>
 
-<p>If the driver provides a pointer to an <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-compare.md">EvtChildListIdentificationDescriptionCompare</a> callback function in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff551234">WDF_CHILD_RETRIEVE_INFO</a> structure, the callback function must return <b>TRUE</b>.</p>
-
-<p>If the driver provides an <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-compare.md">EvtChildListIdentificationDescriptionCompare</a> callback function, it must also provide an <a href="wdf.dynamic_enumeration#dynamic_child_descriptions#dynamic_child_descriptions">identification description</a> in the WDF_CHILD_RETRIEVE_INFO structure. The framework uses the callback function to compare the passed-in identification descriptor with a child's description in the child list, if the WDF_RETRIEVE_CHILD_FLAGS-typed flags indicate that the child is a match candidate. If the callback function returns <b>TRUE</b>, the match is successful. If the callback function returns <b>FALSE</b>, the framework looks for another candidate.</p>
-
-<p>When <b>WdfChildListRetrieveNextDevice</b> finds a match, it copies the child's identification description and address description into the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551234">WDF_CHILD_RETRIEVE_INFO</a> structure, if the pointer that the <i>Info</i> parameter specifies is not <b>NULL</b>. (Note that this operation overwrites the driver's input identification description.) The method also places a handle to the child's device object in the location that the <i>Device</i> parameter identifies.</p>
-
-<p>For more information about child lists, see <a href="wdf.dynamic_enumeration">Dynamic Enumeration</a>.</p>
-
-<p>The following code example informs the framework that all of a parent device's children are being ejected. The example obtains a device's default child list and walks through the list. It obtains each child's identification descriptor, and it passes each identification descriptor to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545641">WdfChildListRequestChildEject</a>.</p>
-
-<p>Before calling <b>WdfChildListRetrieveNextDevice</b>, your driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545601">WdfChildListBeginIteration</a>. After the driver has finished traversing the child list, it must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545618">WdfChildListEndIteration</a>. The framework then informs the Plug and Play (PnP) manager of any changes that were made to the child list.</p>
-
-<p>Each time the driver calls <b>WdfChildListRetrieveNextDevice</b>, the method retrieves the next child that matches the following search criteria:</p>
-
-<p>The child's type must correspond to <a href="https://msdn.microsoft.com/library/windows/hardware/ff552507">WDF_RETRIEVE_CHILD_FLAGS</a>-typed flags in the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551230">WDF_CHILD_LIST_ITERATOR</a> structure.</p>
-
-<p>If the driver provides a pointer to an <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-compare.md">EvtChildListIdentificationDescriptionCompare</a> callback function in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff551234">WDF_CHILD_RETRIEVE_INFO</a> structure, the callback function must return <b>TRUE</b>.</p>
+<p>If the driver provides a pointer to an <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-compare.md">EvtChildListIdentificationDescriptionCompare</a> callback function in its <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-retrieve-info.md">WDF_CHILD_RETRIEVE_INFO</a> structure, the callback function must return <b>TRUE</b>.</p>
 
 <p>If the driver provides an <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-compare.md">EvtChildListIdentificationDescriptionCompare</a> callback function, it must also provide an <a href="wdf.dynamic_enumeration#dynamic_child_descriptions#dynamic_child_descriptions">identification description</a> in the WDF_CHILD_RETRIEVE_INFO structure. The framework uses the callback function to compare the passed-in identification descriptor with a child's description in the child list, if the WDF_RETRIEVE_CHILD_FLAGS-typed flags indicate that the child is a match candidate. If the callback function returns <b>TRUE</b>, the match is successful. If the callback function returns <b>FALSE</b>, the framework looks for another candidate.</p>
 
-<p>When <b>WdfChildListRetrieveNextDevice</b> finds a match, it copies the child's identification description and address description into the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551234">WDF_CHILD_RETRIEVE_INFO</a> structure, if the pointer that the <i>Info</i> parameter specifies is not <b>NULL</b>. (Note that this operation overwrites the driver's input identification description.) The method also places a handle to the child's device object in the location that the <i>Device</i> parameter identifies.</p>
+<p>When <b>WdfChildListRetrieveNextDevice</b> finds a match, it copies the child's identification description and address description into the driver's <a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-retrieve-info.md">WDF_CHILD_RETRIEVE_INFO</a> structure, if the pointer that the <i>Info</i> parameter specifies is not <b>NULL</b>. (Note that this operation overwrites the driver's input identification description.) The method also places a handle to the child's device object in the location that the <i>Device</i> parameter identifies.</p>
 
 <p>For more information about child lists, see <a href="wdf.dynamic_enumeration">Dynamic Enumeration</a>.</p>
 
-<p>The following code example informs the framework that all of a parent device's children are being ejected. The example obtains a device's default child list and walks through the list. It obtains each child's identification descriptor, and it passes each identification descriptor to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545641">WdfChildListRequestChildEject</a>.</p>
+<p>The following code example informs the framework that all of a parent device's children are being ejected. The example obtains a device's default child list and walks through the list. It obtains each child's identification descriptor, and it passes each identification descriptor to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistrequestchildeject.md">WdfChildListRequestChildEject</a>.</p>
 
 ## -requirements
 <table>
@@ -192,7 +176,7 @@ NTSTATUS WdfChildListRetrieveNextDevice(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -200,39 +184,39 @@ NTSTATUS WdfChildListRetrieveNextDevice(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551230">WDF_CHILD_LIST_ITERATOR</a>
+<a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-list-iterator.md">WDF_CHILD_LIST_ITERATOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551232">WDF_CHILD_LIST_ITERATOR_INIT</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdf-child-list-iterator-init.md">WDF_CHILD_LIST_ITERATOR_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551225">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdf-child-identification-description-header-init.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551234">WDF_CHILD_RETRIEVE_INFO</a>
+<a href="..\wdfchildlist\ns-wdfchildlist--wdf-child-retrieve-info.md">WDF_CHILD_RETRIEVE_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552507">WDF_RETRIEVE_CHILD_FLAGS</a>
+<a href="..\wdfchildlist\ne-wdfchildlist--wdf-retrieve-child-flags.md">WDF_RETRIEVE_CHILD_FLAGS</a>
 </dt>
 <dt>
 <a href="..\wdfchildlist\nc-wdfchildlist-evt-wdf-child-list-identification-description-compare.md">EvtChildListIdentificationDescriptionCompare</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545608">WdfChildListBeginScan</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginscan.md">WdfChildListBeginScan</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545641">WdfChildListRequestChildEject</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistrequestchildeject.md">WdfChildListRequestChildEject</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545655">WdfChildListRetrieveNextDevice</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545601">WdfChildListBeginIteration</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545618">WdfChildListEndIteration</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistenditeration.md">WdfChildListEndIteration</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfChildListRetrieveNextDevice method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfChildListRetrieveNextDevice method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: stream\ksproperty_cameracontrol_s_ex.htm
 old-project: stream
 ms.assetid: fa015adf-93b6-472f-8a78-a627a59c032e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSPROPERTY_CAMERACONTROL_S_EX, KSPROPERTY_CAMERACONTROL_S_EX, *PKSPROPERTY_CAMERACONTROL_S_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct {
 ### -field <b>Property</b>
 
 <dd>
-<p>Specifies an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
+<p>Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.</p>
 </dd>
 
 ### -field <b>Value</b>
@@ -126,16 +126,16 @@ If the driver receives this value, it should set the camera control synchronousl
 <p>If set, indicates that when the application submits a query, the driver should return the value of the <b>Capabilities</b> member of the appropriate camera control structure from the following list.</p>
 <ul>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151590">KSPROPERTY_CAMERACONTROL_FLASH_S</a>
+<a href="stream.ksproperty_cameracontrol_flash_s">KSPROPERTY_CAMERACONTROL_FLASH_S</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj553707">KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S</a>
+<a href="stream.ksproperty_cameracontrol_image_pin_capability_s">KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151592">KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S</a>
+<a href="stream.ksproperty_cameracontrol_region_of_interest_s">KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151594">KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S</a>
+<a href="stream.ksproperty_cameracontrol_videostabilization_mode_s">KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S</a>
 </li>
 </ul>
 </dd>
@@ -183,19 +183,19 @@ If the driver receives this value, it should set the camera control synchronousl
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151587">KSEVENT_CAMERACONTROL</a>
+<a href="..\ksmedia\ne-ksmedia-ksevent-cameracontrol.md">KSEVENT_CAMERACONTROL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151590">KSPROPERTY_CAMERACONTROL_FLASH_S</a>
+<a href="stream.ksproperty_cameracontrol_flash_s">KSPROPERTY_CAMERACONTROL_FLASH_S</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151592">KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S</a>
+<a href="stream.ksproperty_cameracontrol_region_of_interest_s">KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151594">KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S</a>
+<a href="stream.ksproperty_cameracontrol_videostabilization_mode_s">KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
@@ -203,4 +203,4 @@ If the driver receives this value, it should set the camera control synchronousl
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_CAMERACONTROL_S_EX structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_CAMERACONTROL_S_EX structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

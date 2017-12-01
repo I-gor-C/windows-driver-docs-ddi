@@ -91,7 +91,7 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT {
 </dl>
 
 ## -remarks
-<p>The <b>ScalingSupport</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546719">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure.</p>
+<p>The <b>ScalingSupport</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure.</p>
 
 ## -requirements
 <table>
@@ -118,10 +118,10 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546706">D3DKMDT_VIDPN_PRESENT_PATH_SCALING</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-scaling.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546719">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path-transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a>
 </dt>
 </dl>
 <p> </p>

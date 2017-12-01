@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetTransform(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543367">D3DDDIARG_SETTRANSFORM</a> structure that describes how to set up the transform.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-settransform.md">D3DDDIARG_SETTRANSFORM</a> structure that describes how to set up the transform.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ __checkReturn HRESULT APIENTRY SetTransform(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543367">D3DDDIARG_SETTRANSFORM</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-settransform.md">D3DDDIARG_SETTRANSFORM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

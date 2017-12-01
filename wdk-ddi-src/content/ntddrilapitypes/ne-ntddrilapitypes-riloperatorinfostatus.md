@@ -7,7 +7,7 @@ old-location: netvista\riloperatorinfostatus.htm
 old-project: netvista
 ms.assetid: 372d84da-600f-44db-ac76-b59ceac7321d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

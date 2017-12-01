@@ -66,7 +66,7 @@ NTSTATUS APIENTRY CALLBACK* DxgkCbPowerRuntimeControlRequest(
 ### -param <i>hAdapter</i> [in]
 
 <dd>
-<p>A handle to the display adapter. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure in a call to its <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
+<p>A handle to the display adapter. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="..\dispmprt\ns-dispmprt--dxgkrnl-interface.md">DXGKRNL_INTERFACE</a> structure in a call to its <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 
 ### -param <i>PowerControlCode</i> [in]
@@ -151,142 +151,9 @@ NTSTATUS APIENTRY CALLBACK* DxgkCbPowerRuntimeControlRequest(
 </dl>
 </p>
 
-<p></p><dl>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_UP"></a><a id="guid_dxgkddi_power_voltage_up"></a>GUID_DXGKDDI_POWER_VOLTAGE_UP</dt>
-<dd>
+<p></p>
+
 <p>Increase the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_DOWN"></a><a id="guid_dxgkddi_power_voltage_down"></a>GUID_DXGKDDI_POWER_VOLTAGE_DOWN</dt>
-<dd>
-<p>Decrease the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE"></a><a id="guid_dxgkddi_power_voltage"></a>GUID_DXGKDDI_POWER_VOLTAGE</dt>
-<dd>
-<p>Change the voltage, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_UP"></a><a id="guid_dxgkddi_power_clock_up"></a>GUID_DXGKDDI_POWER_CLOCK_UP</dt>
-<dd>
-<p>Increase the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_DOWN"></a><a id="guid_dxgkddi_power_clock_down"></a>GUID_DXGKDDI_POWER_CLOCK_DOWN</dt>
-<dd>
-<p>Decrease the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK"></a><a id="guid_dxgkddi_power_clock"></a>GUID_DXGKDDI_POWER_CLOCK</dt>
-<dd>
-<p>Change the clock setting, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_UP"></a><a id="guid_dxgkddi_power_bandwidth_up"></a>GUID_DXGKDDI_POWER_BANDWIDTH_UP</dt>
-<dd>
-<p>Increase the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_DOWN"></a><a id="guid_dxgkddi_power_bandwidth_down"></a>GUID_DXGKDDI_POWER_BANDWIDTH_DOWN</dt>
-<dd>
-<p>Decrease the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH"></a><a id="guid_dxgkddi_power_bandwidth"></a>GUID_DXGKDDI_POWER_BANDWIDTH</dt>
-<dd>
-<p>Change the bandwidth, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-</dl><p>Increase the voltage.</p>
-
-<p>Decrease the voltage.</p>
-
-<p>Change the voltage, but the driver doesn't know if the change is an increase or decrease.</p>
-
-<p>Increase the clock setting.</p>
-
-<p>Decrease the clock setting.</p>
-
-<p>Change the clock setting, but the driver doesn't know if the change is an increase or decrease.</p>
-
-<p>Increase the bandwidth.</p>
-
-<p>Decrease the bandwidth.</p>
-
-<p>Change the bandwidth, but the driver doesn't know if the change is an increase or decrease.</p>
-
-<p>These GUIDs do not imply that there is any communication protocol between the display miniport driver and the PEP, nor do they imply that there are any restrictions on the values that can be passed between the display miniport driver and the PEP.</p>
-
-<p>Although the driver can use any GUID in the <i>PowerControlCode</i> parameter, the following GUIDs that are defined in D3dkmddi.h are recommended. By using these GUIDs, the display port driver can issue Event Tracing for Windows (ETW) events, which are useful to profile driver performance issues.<p></p>
-<dl>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_UP"></a><a id="guid_dxgkddi_power_voltage_up"></a>GUID_DXGKDDI_POWER_VOLTAGE_UP</dt>
-<dd>
-<p>Increase the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_DOWN"></a><a id="guid_dxgkddi_power_voltage_down"></a>GUID_DXGKDDI_POWER_VOLTAGE_DOWN</dt>
-<dd>
-<p>Decrease the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE"></a><a id="guid_dxgkddi_power_voltage"></a>GUID_DXGKDDI_POWER_VOLTAGE</dt>
-<dd>
-<p>Change the voltage, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_UP"></a><a id="guid_dxgkddi_power_clock_up"></a>GUID_DXGKDDI_POWER_CLOCK_UP</dt>
-<dd>
-<p>Increase the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_DOWN"></a><a id="guid_dxgkddi_power_clock_down"></a>GUID_DXGKDDI_POWER_CLOCK_DOWN</dt>
-<dd>
-<p>Decrease the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK"></a><a id="guid_dxgkddi_power_clock"></a>GUID_DXGKDDI_POWER_CLOCK</dt>
-<dd>
-<p>Change the clock setting, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_UP"></a><a id="guid_dxgkddi_power_bandwidth_up"></a>GUID_DXGKDDI_POWER_BANDWIDTH_UP</dt>
-<dd>
-<p>Increase the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_DOWN"></a><a id="guid_dxgkddi_power_bandwidth_down"></a>GUID_DXGKDDI_POWER_BANDWIDTH_DOWN</dt>
-<dd>
-<p>Decrease the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH"></a><a id="guid_dxgkddi_power_bandwidth"></a>GUID_DXGKDDI_POWER_BANDWIDTH</dt>
-<dd>
-<p>Change the bandwidth, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-</dl>
-</p>
-
-<p></p><dl>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_UP"></a><a id="guid_dxgkddi_power_voltage_up"></a>GUID_DXGKDDI_POWER_VOLTAGE_UP</dt>
-<dd>
-<p>Increase the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE_DOWN"></a><a id="guid_dxgkddi_power_voltage_down"></a>GUID_DXGKDDI_POWER_VOLTAGE_DOWN</dt>
-<dd>
-<p>Decrease the voltage.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_VOLTAGE"></a><a id="guid_dxgkddi_power_voltage"></a>GUID_DXGKDDI_POWER_VOLTAGE</dt>
-<dd>
-<p>Change the voltage, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_UP"></a><a id="guid_dxgkddi_power_clock_up"></a>GUID_DXGKDDI_POWER_CLOCK_UP</dt>
-<dd>
-<p>Increase the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK_DOWN"></a><a id="guid_dxgkddi_power_clock_down"></a>GUID_DXGKDDI_POWER_CLOCK_DOWN</dt>
-<dd>
-<p>Decrease the clock setting.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_CLOCK"></a><a id="guid_dxgkddi_power_clock"></a>GUID_DXGKDDI_POWER_CLOCK</dt>
-<dd>
-<p>Change the clock setting, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_UP"></a><a id="guid_dxgkddi_power_bandwidth_up"></a>GUID_DXGKDDI_POWER_BANDWIDTH_UP</dt>
-<dd>
-<p>Increase the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH_DOWN"></a><a id="guid_dxgkddi_power_bandwidth_down"></a>GUID_DXGKDDI_POWER_BANDWIDTH_DOWN</dt>
-<dd>
-<p>Decrease the bandwidth.</p>
-</dd>
-<dt><a id="GUID_DXGKDDI_POWER_BANDWIDTH"></a><a id="guid_dxgkddi_power_bandwidth"></a>GUID_DXGKDDI_POWER_BANDWIDTH</dt>
-<dd>
-<p>Change the bandwidth, but the driver doesn't know if the change is an increase or decrease.</p>
-</dd>
-</dl><p>Increase the voltage.</p>
 
 <p>Decrease the voltage.</p>
 
@@ -363,7 +230,7 @@ NTSTATUS APIENTRY CALLBACK* DxgkCbPowerRuntimeControlRequest(
 <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a>
+<a href="..\dispmprt\ns-dispmprt--dxgkrnl-interface.md">DXGKRNL_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

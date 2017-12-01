@@ -98,22 +98,6 @@ STORPORT_API STOR_PHYSICAL_ADDRESS StorPortConvertUlongToPhysicalAddress(
 
 <p><a id="Return_value"></a><a id="return_value"></a><a id="RETURN_VALUE"></a>Return value</p>
 
-<p><b>StorPortConvertUlongToPhysicalAddress</b> uses <b>STOR_PHYSICAL_ADDRESS</b> to represent physical addresses.</p>
-
-<p>The <b>STOR_PHYSICAL_ADDRESS</b> type is an operating system-independent data type that Storport miniport drivers use to represent either a physical addresses or a bus-relative address. </p>
-
-<p>The StorPortConvertPhysicalAddressToULong64 macro converts a physical address to a ULONG64 value.</p>
-
-<p></p>
-
-<p><a id="Address__in_"></a><a id="address__in_"></a><a id="ADDRESS__IN_"></a><i>Address [in]</i></p>
-
-<p><b>STOR_PHYSICAL_ADDRESS</b></p>
-
-<p>Specifies an address value of type STOR_PHYSICAL_ADDRESS.</p>
-
-<p><a id="Return_value"></a><a id="return_value"></a><a id="RETURN_VALUE"></a>Return value</p>
-
 ## -requirements
 <table>
 <tr>

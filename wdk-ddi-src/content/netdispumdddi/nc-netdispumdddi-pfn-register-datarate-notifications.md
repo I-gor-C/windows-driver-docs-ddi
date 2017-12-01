@@ -95,16 +95,7 @@ NTSTATUS RegisterForDataRateNotifications(
 ## -remarks
 <p>The user-mode driver can optionally call this function to register for automatic calls to data rate notification callback functions once a second.</p>
 
-<p>To unregister from notifications, the driver should supply a value of <b>NULL</b> for the <i>pfnDataRateNotify</i> parameter and for the <b>CurrentBitRate</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265482">MIRACAST_WFD_CONNECTION_STATS</a> structure
-pointed to by the <i>pWfdConnectionStats</i> parameter when it calls the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-start-miracast-session.md">StartMiracastSession</a> function. When the operating system receives <b>NULL</b> for both <i>pfnDataRateNotify</i> and <b>CurrentBitRate</b>, it will no longer provide notifications.</p>
-
-<p>Also, if the operating system can no longer provide QoS data, it sets the <i>pDataRateStats</i> parameter to <b>NULL</b> when the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-datarate-notification.md">pfnDataRateNotify</a>  function is called.</p>
-
-<p>The function fails if the driver attempts to register while it is already registered, or if it attempts to unregister if it has already unregistered. The function fails if the call is made outside of the calling thread in which the operating system called <a href="..\netdispumdddi\nc-netdispumdddi-pfn-start-miracast-session.md">StartMiracastSession</a> or <a href="..\netdispumdddi\nc-netdispumdddi-pfn-stop-miracast-session.md">StopMiracastSession</a> functions.</p>
-
-<p>The user-mode driver can optionally call this function to register for automatic calls to data rate notification callback functions once a second.</p>
-
-<p>To unregister from notifications, the driver should supply a value of <b>NULL</b> for the <i>pfnDataRateNotify</i> parameter and for the <b>CurrentBitRate</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265482">MIRACAST_WFD_CONNECTION_STATS</a> structure
+<p>To unregister from notifications, the driver should supply a value of <b>NULL</b> for the <i>pfnDataRateNotify</i> parameter and for the <b>CurrentBitRate</b> member of the <a href="..\netdispumdddi\ns-netdispumdddi-miracast-wfd-connection-stats.md">MIRACAST_WFD_CONNECTION_STATS</a> structure
 pointed to by the <i>pWfdConnectionStats</i> parameter when it calls the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-start-miracast-session.md">StartMiracastSession</a> function. When the operating system receives <b>NULL</b> for both <i>pfnDataRateNotify</i> and <b>CurrentBitRate</b>, it will no longer provide notifications.</p>
 
 <p>Also, if the operating system can no longer provide QoS data, it sets the <i>pDataRateStats</i> parameter to <b>NULL</b> when the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-datarate-notification.md">pfnDataRateNotify</a>  function is called.</p>
@@ -157,7 +148,7 @@ pointed to by the <i>pWfdConnectionStats</i> parameter when it calls the <a href
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265482">MIRACAST_WFD_CONNECTION_STATS</a>
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast-wfd-connection-stats.md">MIRACAST_WFD_CONNECTION_STATS</a>
 </dt>
 <dt>
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn-datarate-notification.md">pfnDataRateNotify</a>

@@ -78,7 +78,7 @@ typedef struct _D3DDDIARG_FLIPOVERLAY {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544559">D3DDDI_FLIPOVERLAYFLAGS</a> structure that indicates, in bit-field flags, how to flip the resource.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-flipoverlayflags.md">D3DDDI_FLIPOVERLAYFLAGS</a> structure that indicates, in bit-field flags, how to flip the resource.</p>
 </dd>
 </dl>
 
@@ -110,7 +110,7 @@ typedef struct _D3DDDIARG_FLIPOVERLAY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544559">D3DDDI_FLIPOVERLAYFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-flipoverlayflags.md">D3DDDI_FLIPOVERLAYFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-flipoverlay.md">FlipOverlay</a>

@@ -91,13 +91,13 @@ typedef struct _TAPE_INIT_DATA_EX {
 ### -field <b>VerifyInquiry</b>
 
 <dd>
-<p>Specifies the entry point of the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567956">TapeMiniVerifyInquiry</a> routine, which determines whether the driver supports a given device. This routine is required.</p>
+<p>Specifies the entry point of the tape miniclass driver's <a href="storage.tapeminiverifyinquiry">TapeMiniVerifyInquiry</a> routine, which determines whether the driver supports a given device. This routine is required.</p>
 </dd>
 
 ### -field <b>QueryModeCapabilitiesPage</b>
 
 <dd>
-<p>Directs the tape class driver when <b>TRUE</b> to pass a mode capabilities page to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567956">TapeMiniVerifyInquiry</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567934">TapeMiniExtensionInit</a> routines.</p>
+<p>Directs the tape class driver when <b>TRUE</b> to pass a mode capabilities page to the tape miniclass driver's <a href="storage.tapeminiverifyinquiry">TapeMiniVerifyInquiry</a> and <a href="storage.tapeminiextensioninit">TapeMiniExtensionInit</a> routines.</p>
 </dd>
 
 ### -field <b>MinitapeExtensionSize</b>
@@ -109,7 +109,7 @@ typedef struct _TAPE_INIT_DATA_EX {
 ### -field <b>ExtensionInit</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567934">TapeMiniExtensionInit</a> routine, which initializes an optional minitape extension, if any. If <b>MiniTapeExtensionSize</b> is zero, <b>ExtensionInit</b> must be <b>NULL</b>.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminiextensioninit">TapeMiniExtensionInit</a> routine, which initializes an optional minitape extension, if any. If <b>MiniTapeExtensionSize</b> is zero, <b>ExtensionInit</b> must be <b>NULL</b>.</p>
 </dd>
 
 ### -field <b>DefaultTimeOutValue</b>
@@ -121,7 +121,7 @@ typedef struct _TAPE_INIT_DATA_EX {
 ### -field <b>TapeError</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567955">TapeMiniTapeError</a> routine, which augments the error-handling activities of the tape class driver. This routine is optional. If one is not used, <b>TapeError</b> must be set to <b>NULL</b>.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminitapeerror">TapeMiniTapeError</a> routine, which augments the error-handling activities of the tape class driver. This routine is optional. If one is not used, <b>TapeError</b> must be set to <b>NULL</b>.</p>
 </dd>
 
 ### -field <b>CommandExtensionSize</b>
@@ -133,79 +133,79 @@ typedef struct _TAPE_INIT_DATA_EX {
 ### -field <b>CreatePartition</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567932">TapeMiniCreatePartition</a> routine, which creates a partition on a tape. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminicreatepartition">TapeMiniCreatePartition</a> routine, which creates a partition on a tape. This routine is required.</p>
 </dd>
 
 ### -field <b>Erase</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567933">TapeMiniErase</a> routine, which erases a tape. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminierase">TapeMiniErase</a> routine, which erases a tape. This routine is required.</p>
 </dd>
 
 ### -field <b>GetDriveParameters</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567936">TapeMiniGetDriveParameters</a> routine, which handles requests to get drive parameters. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminigetdriveparameters">TapeMiniGetDriveParameters</a> routine, which handles requests to get drive parameters. This routine is required.</p>
 </dd>
 
 ### -field <b>GetMediaParameters</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567937">TapeMiniGetMediaParameters</a> routine, which handles requests to get media parameters. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminigetmediaparameters">TapeMiniGetMediaParameters</a> routine, which handles requests to get media parameters. This routine is required.</p>
 </dd>
 
 ### -field <b>GetPosition</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567946">TapeMiniGetPosition</a> routine, which handles requests to get the position of a tape. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminigetposition">TapeMiniGetPosition</a> routine, which handles requests to get the position of a tape. This routine is required.</p>
 </dd>
 
 ### -field <b>GetStatus</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567949">TapeMiniGetStatus</a> routine, which handles requests for status. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminigetstatus">TapeMiniGetStatus</a> routine, which handles requests for status. This routine is required.</p>
 </dd>
 
 ### -field <b>Prepare</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567950">TapeMiniPrepare</a> routine, which prepares a tape device. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminiprepare">TapeMiniPrepare</a> routine, which prepares a tape device. This routine is required.</p>
 </dd>
 
 ### -field <b>SetDriveParameters</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567952">TapeMiniSetDriveParameters</a> routine, which sets drive parameters. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminisetdriveparameters">TapeMiniSetDriveParameters</a> routine, which sets drive parameters. This routine is required.</p>
 </dd>
 
 ### -field <b>SetMediaParameters</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567953">TapeMiniSetMediaParameters</a> routine, which sets media parameters. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminisetmediaparameters">TapeMiniSetMediaParameters</a> routine, which sets media parameters. This routine is required.</p>
 </dd>
 
 ### -field <b>SetPosition</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567954">TapeMiniSetPosition</a> routine, which positions a tape. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminisetposition">TapeMiniSetPosition</a> routine, which positions a tape. This routine is required.</p>
 </dd>
 
 ### -field <b>WriteMarks</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567958">TapeMiniWriteMarks</a> routine, which writes marks to tape. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminiwritemarks">TapeMiniWriteMarks</a> routine, which writes marks to tape. This routine is required.</p>
 </dd>
 
 ### -field <b>PreProcessReadWrite</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567951">TapeMiniPreProcessReadWrite</a> routine, which executes device-specific operations before all reads and writes. This routine is optional and is not needed by most drivers. If one is not used, <b>PreProcessReadWrite</b> must be <b>NULL</b>.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminipreprocessreadwrite">TapeMiniPreProcessReadWrite</a> routine, which executes device-specific operations before all reads and writes. This routine is optional and is not needed by most drivers. If one is not used, <b>PreProcessReadWrite</b> must be <b>NULL</b>.</p>
 </dd>
 
 ### -field <b>TapeGetMediaTypes</b>
 
 <dd>
-<p>Pointer to the tape miniclass driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff567939">TapeMiniGetMediaTypes</a> routine, which gets a description of each media type supported by a tape device. This routine is required.</p>
+<p>Pointer to the tape miniclass driver's <a href="storage.tapeminigetmediatypes">TapeMiniGetMediaTypes</a> routine, which gets a description of each media type supported by a tape device. This routine is required.</p>
 </dd>
 
 ### -field <b>MediaTypesSupported</b>
@@ -217,7 +217,7 @@ typedef struct _TAPE_INIT_DATA_EX {
 ### -field <b>TapeWMIOperations</b>
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567957">TapeMiniWMIControl</a> routine. </p>
+<p>Pointer to the <a href="storage.tapeminiwmicontrol">TapeMiniWMIControl</a> routine. </p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -228,7 +228,7 @@ typedef struct _TAPE_INIT_DATA_EX {
 </dl>
 
 ## -remarks
-<p>A tape miniclass driver's <b>DriverEntry </b>routine calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567927">TapeClassZeroMemory</a> to clear TAPE_INIT_DATA_EX, fills in the required members and any appropriate optional members, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567619">TapeClassInitialize</a> with a pointer to this structure.</p>
+<p>A tape miniclass driver's <b>DriverEntry </b>routine calls <a href="..\minitape\nf-minitape-tapeclasszeromemory.md">TapeClassZeroMemory</a> to clear TAPE_INIT_DATA_EX, fills in the required members and any appropriate optional members, and <a href="..\minitape\nf-minitape-tapeclassinitialize.md">TapeClassInitialize</a> with a pointer to this structure.</p>
 
 <p>The names of the tape miniclass driver routines indicated in the member descriptions of this structure are just placeholder names. The prototype for these routines is declared in <i>newtape.h</i> as follows:</p>
 
@@ -251,58 +251,58 @@ typedef struct _TAPE_INIT_DATA_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
+<a href="storage.driverentry_of_tape_miniclass_driver">DriverEntry of Tape Miniclass Driver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567619">TapeClassInitialize</a>
+<a href="..\minitape\nf-minitape-tapeclassinitialize.md">TapeClassInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567927">TapeClassZeroMemory</a>
+<a href="..\minitape\nf-minitape-tapeclasszeromemory.md">TapeClassZeroMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567932">TapeMiniCreatePartition</a>
+<a href="storage.tapeminicreatepartition">TapeMiniCreatePartition</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567933">TapeMiniErase</a>
+<a href="storage.tapeminierase">TapeMiniErase</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567934">TapeMiniExtensionInit</a>
+<a href="storage.tapeminiextensioninit">TapeMiniExtensionInit</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567936">TapeMiniGetDriveParameters</a>
+<a href="storage.tapeminigetdriveparameters">TapeMiniGetDriveParameters</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567937">TapeMiniGetMediaParameters</a>
+<a href="storage.tapeminigetmediaparameters">TapeMiniGetMediaParameters</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567939">TapeMiniGetMediaTypes</a>
+<a href="storage.tapeminigetmediatypes">TapeMiniGetMediaTypes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567946">TapeMiniGetPosition</a>
+<a href="storage.tapeminigetposition">TapeMiniGetPosition</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567949">TapeMiniGetStatus</a>
+<a href="storage.tapeminigetstatus">TapeMiniGetStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567950">TapeMiniPrepare</a>
+<a href="storage.tapeminiprepare">TapeMiniPrepare</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567952">TapeMiniSetDriveParameters</a>
+<a href="storage.tapeminisetdriveparameters">TapeMiniSetDriveParameters</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567953">TapeMiniSetMediaParameters</a>
+<a href="storage.tapeminisetmediaparameters">TapeMiniSetMediaParameters</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567954">TapeMiniSetPosition</a>
+<a href="storage.tapeminisetposition">TapeMiniSetPosition</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567955">TapeMiniTapeError</a>
+<a href="storage.tapeminitapeerror">TapeMiniTapeError</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567956">TapeMiniVerifyInquiry</a>
+<a href="storage.tapeminiverifyinquiry">TapeMiniVerifyInquiry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567958">TapeMiniWriteMarks</a>
+<a href="storage.tapeminiwritemarks">TapeMiniWriteMarks</a>
 </dt>
 </dl>
 <p> </p>

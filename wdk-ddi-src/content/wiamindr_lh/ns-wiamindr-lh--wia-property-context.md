@@ -79,7 +79,7 @@ typedef struct _WIA_PROPERTY_CONTEXT {
 ## -remarks
 <p>The Boolean values indicate whether the corresponding property is being written (changed) by an application calling <b>IPropertyStorage::WriteMultiple</b>, which is described in the Microsoft Windows SDK documentation.</p>
 
-<p>Several WIA service library functions use the WIA_PROPERTY_CONTEXT structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff549167">wiasCreatePropContext</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff549195">wiasFreePropContext</a> functions use it when a property context is created or freed. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff549271">wiasIsPropChanged</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff549374">wiasSetPropChanged</a> use this structure to determine whether a property changed, and to modify a property context when the property does change. The <b>wiasGetChangedValue</b><i>Xxx</i> functions use this structure to determine whether a property of a certain type has changed. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff549448">wiasUpdateValidFormat</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff549441">wiasUpdateScanRect</a> use it to, respectively, update a property context and to update the scanning area sizes for a scanning device.</p>
+<p>Several WIA service library functions use the WIA_PROPERTY_CONTEXT structure. The <a href="..\wiamdef\nf-wiamdef-wiascreatepropcontext.md">wiasCreatePropContext</a> and <a href="..\wiamdef\nf-wiamdef-wiasfreepropcontext.md">wiasFreePropContext</a> functions use it when a property context is created or freed. The <a href="..\wiamdef\nf-wiamdef-wiasispropchanged.md">wiasIsPropChanged</a> and <a href="..\wiamdef\nf-wiamdef-wiassetpropchanged.md">wiasSetPropChanged</a> use this structure to determine whether a property changed, and to modify a property context when the property does change. The <b>wiasGetChangedValue</b><i>Xxx</i> functions use this structure to determine whether a property of a certain type has changed. The <a href="..\wiamdef\nf-wiamdef-wiasupdatevalidformat.md">wiasUpdateValidFormat</a> and <a href="..\wiamdef\nf-wiamdef-wiasupdatescanrect.md">wiasUpdateScanRect</a> use it to, respectively, update a property context and to update the scanning area sizes for a scanning device.</p>
 
 ## -requirements
 <table>
@@ -106,34 +106,34 @@ typedef struct _WIA_PROPERTY_CONTEXT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549167">wiasCreatePropContext</a>
+<a href="..\wiamdef\nf-wiamdef-wiascreatepropcontext.md">wiasCreatePropContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549195">wiasFreePropContext</a>
+<a href="..\wiamdef\nf-wiamdef-wiasfreepropcontext.md">wiasFreePropContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549271">wiasIsPropChanged</a>
+<a href="..\wiamdef\nf-wiamdef-wiasispropchanged.md">wiasIsPropChanged</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549374">wiasSetPropChanged</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetpropchanged.md">wiasSetPropChanged</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549200">wiasGetChangedValueFloat</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluefloat.md">wiasGetChangedValueFloat</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549211">wiasGetChangedValueGuid</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvalueguid.md">wiasGetChangedValueGuid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549214">wiasGetChangedValueLong</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluelong.md">wiasGetChangedValueLong</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549219">wiasGetChangedValueStr</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluestr.md">wiasGetChangedValueStr</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549448">wiasUpdateValidFormat</a>
+<a href="..\wiamdef\nf-wiamdef-wiasupdatevalidformat.md">wiasUpdateValidFormat</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549441">wiasUpdateScanRect</a>
+<a href="..\wiamdef\nf-wiamdef-wiasupdatescanrect.md">wiasUpdateScanRect</a>
 </dt>
 </dl>
 <p> </p>

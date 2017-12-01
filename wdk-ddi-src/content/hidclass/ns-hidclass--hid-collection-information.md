@@ -97,7 +97,7 @@ typedef struct _HID_COLLECTION_INFORMATION {
 </dl>
 
 ## -remarks
-<p>Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541092">IOCTL_HID_GET_COLLECTION_INFORMATION</a> to obtain a collection's <b>HID_COLLECTION_INFORMATION</b> structure.</p>
+<p>Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl-hid-get-collection-information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a> to obtain a collection's <b>HID_COLLECTION_INFORMATION</b> structure.</p>
 
 ## -requirements
 <table>
@@ -116,13 +116,13 @@ typedef struct _HID_COLLECTION_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541089">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-collection-descriptor.md">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541092">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-collection-information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539870">HID_COLLECTION_INFORMATION</a>
+<a href="..\hidclass\ns-hidclass--hid-collection-information.md">HID_COLLECTION_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

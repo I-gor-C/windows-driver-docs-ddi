@@ -7,7 +7,7 @@ old-location: debugger\checklowmemory.htm
 old-project: debugger
 ms.assetid: b7e3bb5c-d4c7-469e-aa2d-fa9a98706c2f
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces4, CheckLowMemory, IDebugDataSpaces4::CheckLowMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,24 +80,6 @@ HRESULT CheckLowMemory();
 <p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
 
 ## -remarks
-<p>This method is only available in <a href="debugger.k#kernel_mode_debugging#kernel_mode_debugging"><i>kernel-mode debugging</i></a>, and is only useful when the <a href="debugger.k#kernel#kernel"><i>kernel</i></a> was booted using the <b>/nolowmem</b> option.</p>
-
-<p>When the kernel is booted with the <b>/nolowmem</b> option, the kernel, drivers, operating system and applications are loaded in memory above 4 GB, while the low 4 GB of memory is filled with a unique pattern.  The <b>CheckLowMemory</b> method checks this pattern for corruption.</p>
-
-<p>This may be used to verify that a driver behaves well when using physical addresses greater than 32 bits in length.  See <i>Physical Address Extension (PAE)</i>, <b>/pae</b>, and <b>/nolowmem</b> in the Windows Driver Kit.</p>
-
-<p>This method is only available in <a href="debugger.k#kernel_mode_debugging#kernel_mode_debugging"><i>kernel-mode debugging</i></a>, and is only useful when the <a href="debugger.k#kernel#kernel"><i>kernel</i></a> was booted using the <b>/nolowmem</b> option.</p>
-
-<p>When the kernel is booted with the <b>/nolowmem</b> option, the kernel, drivers, operating system and applications are loaded in memory above 4 GB, while the low 4 GB of memory is filled with a unique pattern.  The <b>CheckLowMemory</b> method checks this pattern for corruption.</p>
-
-<p>This may be used to verify that a driver behaves well when using physical addresses greater than 32 bits in length.  See <i>Physical Address Extension (PAE)</i>, <b>/pae</b>, and <b>/nolowmem</b> in the Windows Driver Kit.</p>
-
-<p>This method is only available in <a href="debugger.k#kernel_mode_debugging#kernel_mode_debugging"><i>kernel-mode debugging</i></a>, and is only useful when the <a href="debugger.k#kernel#kernel"><i>kernel</i></a> was booted using the <b>/nolowmem</b> option.</p>
-
-<p>When the kernel is booted with the <b>/nolowmem</b> option, the kernel, drivers, operating system and applications are loaded in memory above 4 GB, while the low 4 GB of memory is filled with a unique pattern.  The <b>CheckLowMemory</b> method checks this pattern for corruption.</p>
-
-<p>This may be used to verify that a driver behaves well when using physical addresses greater than 32 bits in length.  See <i>Physical Address Extension (PAE)</i>, <b>/pae</b>, and <b>/nolowmem</b> in the Windows Driver Kit.</p>
-
 <p>This method is only available in <a href="debugger.k#kernel_mode_debugging#kernel_mode_debugging"><i>kernel-mode debugging</i></a>, and is only useful when the <a href="debugger.k#kernel#kernel"><i>kernel</i></a> was booted using the <b>/nolowmem</b> option.</p>
 
 <p>When the kernel is booted with the <b>/nolowmem</b> option, the kernel, drivers, operating system and applications are loaded in memory above 4 GB, while the low 4 GB of memory is filled with a unique pattern.  The <b>CheckLowMemory</b> method checks this pattern for corruption.</p>

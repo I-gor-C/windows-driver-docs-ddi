@@ -57,7 +57,7 @@ NTSTATUS D3DKMTOpenSynchronizationObject(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548152">D3DKMT_OPENSYNCHRONIZATIONOBJECT</a> structure that describes a shared synchronization object to open. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-opensynchronizationobject.md">D3DKMT_OPENSYNCHRONIZATIONOBJECT</a> structure that describes a shared synchronization object to open. </p>
 </dd>
 </dl>
 
@@ -71,7 +71,7 @@ NTSTATUS D3DKMTOpenSynchronizationObject(
 </dl><p>Parameters were validated and determined to be incorrect. </p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547069">D3DKMTOpenSynchronizationObject</a> could not complete because of insufficient memory. </p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopensynchronizationobject.md">D3DKMTOpenSynchronizationObject</a> could not complete because of insufficient memory. </p>
 
 <p> </p>
 
@@ -135,7 +135,7 @@ NTSTATUS D3DKMTOpenSynchronizationObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548152">D3DKMT_OPENSYNCHRONIZATIONOBJECT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-opensynchronizationobject.md">D3DKMT_OPENSYNCHRONIZATIONOBJECT</a>
 </dt>
 </dl>
 <p> </p>

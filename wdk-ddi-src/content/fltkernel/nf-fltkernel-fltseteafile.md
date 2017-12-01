@@ -72,7 +72,7 @@ NTSTATUS FltSetEaFile(
 ### -param <i>EaBuffer</i> [in]
 
 <dd>
-<p>Pointer to a caller-supplied, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute (EA) values to be set. </p>
+<p>Pointer to a caller-supplied, <a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute (EA) values to be set. </p>
 </dd>
 
 ### -param <i>Length</i> [in]
@@ -155,13 +155,13 @@ NTSTATUS FltSetEaFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a>
+<a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543435">FltQueryEaFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryeafile.md">FltQueryEaFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548252">IoCheckEaBufferValidity</a>
+<a href="..\ntifs\nf-ntifs-iocheckeabuffervalidity.md">IoCheckEaBufferValidity</a>
 </dt>
 </dl>
 <p> </p>

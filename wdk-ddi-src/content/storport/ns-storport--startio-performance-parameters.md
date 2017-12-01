@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>STARTIO_PERFORMANCE_PARAMETERS</b> structure describes the performance parameters that are returned to the miniport driver by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567099">StorPortGetStartIoPerfParams</a> routine.</p>
+<p>The <b>STARTIO_PERFORMANCE_PARAMETERS</b> structure describes the performance parameters that are returned to the miniport driver by the <a href="..\storport\nf-storport-storportgetstartioperfparams.md">StorPortGetStartIoPerfParams</a> routine.</p>
 
 
 ## -syntax
@@ -103,7 +103,7 @@ typedef struct _STARTIO_PERFORMANCE_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567099">StorPortGetStartIoPerfParams</a>
+<a href="..\storport\nf-storport-storportgetstartioperfparams.md">StorPortGetStartIoPerfParams</a>
 </dt>
 </dl>
 <p> </p>

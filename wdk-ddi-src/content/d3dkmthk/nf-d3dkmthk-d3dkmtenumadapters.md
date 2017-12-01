@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTEnumAdapters(
 ### -param <i>pEnumAdapters</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406463">D3DKMT_ENUMADAPTERS</a> structure that lists all graphics adapters and their characteristics.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-enumadapters.md">D3DKMT_ENUMADAPTERS</a> structure that lists all graphics adapters and their characteristics.</p>
 </dd>
 </dl>
 
@@ -74,8 +74,6 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTEnumAdapters(
 <p>This function might also return other NTSTATUS values.</p>
 
 ## -remarks
-<p>The operating system enumerates graphics adapters in the same sequence as their corresponding physical devices.</p>
-
 <p>The operating system enumerates graphics adapters in the same sequence as their corresponding physical devices.</p>
 
 ## -requirements
@@ -141,7 +139,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTEnumAdapters(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406463">D3DKMT_ENUMADAPTERS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-enumadapters.md">D3DKMT_ENUMADAPTERS</a>
 </dt>
 </dl>
 <p> </p>

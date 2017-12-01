@@ -57,7 +57,7 @@ NTSTATUS D3DKMTDestroyAllocation(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547868">D3DKMT_DESTROYALLOCATION</a> structure that contains information for releasing allocations.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyallocation.md">D3DKMT_DESTROYALLOCATION</a> structure that contains information for releasing allocations.</p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS D3DKMTDestroyAllocation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547868">D3DKMT_DESTROYALLOCATION</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyallocation.md">D3DKMT_DESTROYALLOCATION</a>
 </dt>
 </dl>
 <p> </p>

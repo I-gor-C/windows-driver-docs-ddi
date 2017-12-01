@@ -108,7 +108,7 @@ typedef struct _DXGK_MAPAPERTUREFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557540">DXGKARG_BUILDPAGINGBUFFER</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
 </dt>
 <dt>
 <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>StorPortReleaseSpinLock</b> routine releases a spinlock acquired by <a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>.</p>
+<p>The <b>StorPortReleaseSpinLock</b> routine releases a spinlock acquired by <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ VOID StorPortReleaseSpinLock(
 ### -param <i>LockHandle</i> [in, out]
 
 <dd>
-<p>Pointer to a lock handle returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>.</p>
+<p>Pointer to a lock handle returned by <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>.</p>
 </dd>
 </dl>
 
@@ -102,7 +102,7 @@ VOID StorPortReleaseSpinLock(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454273">StorPortSpinLock</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454272">StorPortSpinLock4</a>
+<a href="devtest.storport_storportspinlock">StorPortSpinLock</a>, <a href="devtest.storport_storportspinlock4">StorPortSpinLock4</a>
 </td>
 </tr>
 </table>
@@ -110,7 +110,7 @@ VOID StorPortReleaseSpinLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>
+<a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>
 </dt>
 </dl>
 <p> </p>

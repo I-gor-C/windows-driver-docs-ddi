@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>SE_TOKEN_USER</b> structure holds the maximum-sized valid user SID that can be returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff556690">SeQueryInformationToken</a>, <a href="security.gettokeninformation">GetTokenInformation</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567055">ZwQueryInformationToken</a> with the TokenUser information class. This structure is suitable for stack allocation.</p>
+<p>The <b>SE_TOKEN_USER</b> structure holds the maximum-sized valid user SID that can be returned by <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>, <a href="security.gettokeninformation">GetTokenInformation</a>, or <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a> with the TokenUser information class. This structure is suitable for stack allocation.</p>
 
 
 ## -syntax
@@ -106,13 +106,13 @@ typedef struct _SE_TOKEN_USER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556742">SID_AND_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556855">TOKEN_USER</a>
+<a href="..\ntifs\ns-ntifs--token-user.md">TOKEN_USER</a>
 </dt>
 </dl>
 <p> </p>

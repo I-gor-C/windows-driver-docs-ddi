@@ -7,7 +7,7 @@ old-location: smartcrd\t0_data.htm
 old-project: smartcrd
 ms.assetid: CC827018-F6B2-48DF-BF0A-36654F866BD9
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: T0_DATA, T0_DATA, *PT0_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

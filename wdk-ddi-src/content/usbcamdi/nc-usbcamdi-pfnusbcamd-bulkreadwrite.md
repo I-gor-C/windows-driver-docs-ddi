@@ -7,7 +7,7 @@ old-location: stream\usbcamd_bulkreadwrite.htm
 old-project: stream
 ms.assetid: 4888e6a7-be44-4ed9-80be-9dd7641653ef
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: USBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR, *PUSBC_FUNCTION_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,13 +90,13 @@ NTSTATUS APIENTRY USBCAMD_BulkReadWrite(
 ### -param <i>CommandComplete</i> [in]
 
 <dd>
-<p>Pointer to a camera minidriver defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff557713">CommandCompleteFunction</a>, which is called when the bulk read or write is completed. This value can be <b>NULL</b>.</p>
+<p>Pointer to a camera minidriver defined <a href="stream.commandcompletefunction">CommandCompleteFunction</a>, which is called when the bulk read or write is completed. This value can be <b>NULL</b>.</p>
 </dd>
 
 ### -param <i>CommandContext</i> [in]
 
 <dd>
-<p>Pointer to a block of memory, that is passed as an argument to the camera minidriver defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff557713">CommandCompleteFunction</a>.</p>
+<p>Pointer to a block of memory, that is passed as an argument to the camera minidriver defined <a href="stream.commandcompletefunction">CommandCompleteFunction</a>.</p>
 </dd>
 </dl>
 
@@ -120,10 +120,6 @@ NTSTATUS APIENTRY USBCAMD_BulkReadWrite(
 <p> </p>
 
 ## -remarks
-<p>USBCAMD can accept one read and one write request at a time.</p>
-
-<p><b>USBCAMD_BulkReadWrite</b> is not available in USBCAMD version 1.0.</p>
-
 <p>USBCAMD can accept one read and one write request at a time.</p>
 
 <p><b>USBCAMD_BulkReadWrite</b> is not available in USBCAMD version 1.0.</p>
@@ -155,12 +151,12 @@ NTSTATUS APIENTRY USBCAMD_BulkReadWrite(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568605">USBCAMD_INTERFACE</a>
+<a href="stream.usbcamd_interface">USBCAMD_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557713">CommandCompleteFunction</a>
+<a href="stream.commandcompletefunction">CommandCompleteFunction</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_BulkReadWrite routine%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_BulkReadWrite routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -71,19 +71,19 @@ typedef struct _DEVOBJ {
 ### -field <b>pdevOEM</b>
 
 <dd>
-<p>Pointer to the rendering plug-in's private PDEV structure, as returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff554249">IPrintOemUni::EnablePDEV</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff553215">IPrintOemPS::EnablePDEV</a>. Supplied by the Unidrv or Pscript5 driver.</p>
+<p>Pointer to the rendering plug-in's private PDEV structure, as returned by <a href="print.iprintoemuni_enablepdev">IPrintOemUni::EnablePDEV</a> or <a href="print.iprintoemps_enablepdev">IPrintOemPS::EnablePDEV</a>. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
 ### -field <b>hEngine</b>
 
 <dd>
-<p>GDI handle to the physical device. This handle is received by the printer driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556181">DrvCompletePDEV</a> function, as the function's <i>hdev</i> argument.</p>
+<p>GDI handle to the physical device. This handle is received by the printer driver's <a href="display.drvcompletepdev">DrvCompletePDEV</a> function, as the function's <i>hdev</i> argument.</p>
 </dd>
 
 ### -field <b>hPrinter</b>
 
 <dd>
-<p>Spooler's handle to the printer. This handle is received by the printer driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a> function, as the function's <i>hDriver</i> argument.</p>
+<p>Spooler's handle to the printer. This handle is received by the printer driver's <a href="display.drvenablepdev">DrvEnablePDEV</a> function, as the function's <i>hDriver</i> argument.</p>
 </dd>
 
 ### -field <b>hOEM</b>
@@ -95,7 +95,7 @@ typedef struct _DEVOBJ {
 ### -field <b>pPublicDM</b>
 
 <dd>
-<p>Pointer to the printer's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure. Supplied by the Unidrv or Pscript5 driver.</p>
+<p>Pointer to the printer's <a href="display.devmodew">DEVMODEW</a> structure. Supplied by the Unidrv or Pscript5 driver.</p>
 </dd>
 
 ### -field <b>pOEMDM</b>
@@ -108,12 +108,12 @@ typedef struct _DEVOBJ {
 
 <dd>
 <p>
-      Not used. In a previous version of the interface, this was a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548571">DRVPROCS</a> structure.</p>
+      Not used. In a previous version of the interface, this was a pointer to a <a href="..\printoem\ns-printoem--drvprocs.md">DRVPROCS</a> structure.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The DEVOBJ structure is accessible to graphics DDI hooking functions through the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569901">SURFOBJ</a> structure's <b>dhpdev</b> member. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554249">IPrintOemUni::EnablePDEV</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff553215">IPrintOemPS::EnablePDEV</a>.</p>
+<p>The DEVOBJ structure is accessible to graphics DDI hooking functions through the <a href="display.surfobj">SURFOBJ</a> structure's <b>dhpdev</b> member. For more information, see <a href="print.iprintoemuni_enablepdev">IPrintOemUni::EnablePDEV</a> or <a href="print.iprintoemps_enablepdev">IPrintOemPS::EnablePDEV</a>.</p>
 
 ## -requirements
 <table>
@@ -132,22 +132,22 @@ typedef struct _DEVOBJ {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554249">IPrintOemUni::EnablePDEV</a>
+<a href="print.iprintoemuni_enablepdev">IPrintOemUni::EnablePDEV</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553215">IPrintOemPS::EnablePDEV</a>
+<a href="print.iprintoemps_enablepdev">IPrintOemPS::EnablePDEV</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556181">DrvCompletePDEV</a>
+<a href="display.drvcompletepdev">DrvCompletePDEV</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a>
+<a href="display.drvenablepdev">DrvEnablePDEV</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a>
+<a href="display.devmodew">DEVMODEW</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569901">SURFOBJ</a>
+<a href="display.surfobj">SURFOBJ</a>
 </dt>
 </dl>
 <p> </p>

@@ -41,8 +41,8 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-                 Used in the client driver's call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt805841">UcmTcpciDeviceInitialize</a>. 
-             Call <a href="https://msdn.microsoft.com/library/windows/hardware/mt805848">UCMTCPCI_DEVICE_CONFIG_INIT</a> to initialize this structure.
+                 Used in the client driver's call to <a href="buses.ucmtcpcideviceinitialize">UcmTcpciDeviceInitialize</a>. 
+             Call <a href="buses.ucmtcpci_device_config_init">UCMTCPCI_DEVICE_CONFIG_INIT</a> to initialize this structure.
              </p>
 
 
@@ -86,7 +86,7 @@ typedef struct _UCMTCPCI_DEVICE_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt805841">UcmTcpciDeviceInitialize</a>
+<a href="buses.ucmtcpcideviceinitialize">UcmTcpciDeviceInitialize</a>
 </dt>
 </dl>
 <p> </p>

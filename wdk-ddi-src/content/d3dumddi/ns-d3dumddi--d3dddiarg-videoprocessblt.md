@@ -72,7 +72,7 @@ typedef struct _D3DDDIARG_VIDEOPROCESSBLT {
 ### -field <b>TargetFrame</b>
 
 <dd>
-<p>[in] A REFERENCE_TIME value that identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a sample, as defined by the <b>Start</b> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562957">DXVADDI_VIDEOSAMPLE</a> structure, or the midpoint between the starting display time and the ending display time. </p>
+<p>[in] A REFERENCE_TIME value that identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a sample, as defined by the <b>Start</b> member in the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videosample.md">DXVADDI_VIDEOSAMPLE</a> structure, or the midpoint between the starting display time and the ending display time. </p>
 <p>If a frame rate conversion is requested, the time in <b>TargetFrame</b> can be different from any of the times in the <b>Start</b> members of the samples.</p>
 </dd>
 
@@ -85,13 +85,13 @@ typedef struct _D3DDDIARG_VIDEOPROCESSBLT {
 ### -field <b>TargetRect</b>
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the location within the destination surface to which the output image is written. Note that the output image is restricted to the pixels within the rectangle that is pointed to by <b>TargetRect</b>. That is, every pixel within this rectangle must be written to; pixels outside this rectangle must not be modified. </p>
+<p>[in] A pointer to a <a href="display.rect">RECT</a> structure that describes the location within the destination surface to which the output image is written. Note that the output image is restricted to the pixels within the rectangle that is pointed to by <b>TargetRect</b>. That is, every pixel within this rectangle must be written to; pixels outside this rectangle must not be modified. </p>
 </dd>
 
 ### -field <b>ConstrictionSize</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/dn915850">SIZE</a> structure that specifies, for protected content, the size to reduce the output image to. <b>ConstrictionSize</b> should be from (1, 1) to (width, height) of the target rectangle that is specified in the <b>TargetRect</b> member. <b>ConstrictionSize</b> should be (0, 0) to represent no constriction.</p>
+<p>[in] A <a href="display.size">SIZE</a> structure that specifies, for protected content, the size to reduce the output image to. <b>ConstrictionSize</b> should be from (1, 1) to (width, height) of the target rectangle that is specified in the <b>TargetRect</b> member. <b>ConstrictionSize</b> should be (0, 0) to represent no constriction.</p>
 <p>For example, consider video that natively has 1920 x 1080 pixels and that is displayed full screen on a 1920 x 1080-resolution monitor for which output protection is unsupported. If the video content specifies a rule that only 854 x 480 pixels of original information can be displayed, the driver must reduce the original image from 1920 x 1080 to 854 x 480 and then stretch the image again to 1920 x 1080. In this example, the SIZE structure in the <b>ConstrictionSize</b> member would specify a size of 854 x 480 pixels.</p>
 </dd>
 
@@ -104,61 +104,61 @@ typedef struct _D3DDDIARG_VIDEOPROCESSBLT {
 ### -field <b>BackgroundColor</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562891">DXVADDI_AYUVSAMPLE16</a> structure that identifies background color. </p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-ayuvsample16.md">DXVADDI_AYUVSAMPLE16</a> structure that identifies background color. </p>
 </dd>
 
 ### -field <b>DestFormat</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a> structure that identifies extended format information for the destination surface. </p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure that identifies extended format information for the destination surface. </p>
 </dd>
 
 ### -field <b>DestFlags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562952">DXVADDI_VIDEOPROCESSBLTFLAGS</a> structure that identifies changes in the current destination surface from the previous destination surface.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videoprocessbltflags.md">DXVADDI_VIDEOPROCESSBLTFLAGS</a> structure that identifies changes in the current destination surface from the previous destination surface.</p>
 </dd>
 
 ### -field <b>ProcAmpValues</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562917">DXVADDI_PROCAMPVALUES</a> structure that specifies ProcAmp adjustment data that is output to the destination surface.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-procampvalues.md">DXVADDI_PROCAMPVALUES</a> structure that specifies ProcAmp adjustment data that is output to the destination surface.</p>
 </dd>
 
 ### -field <b>Alpha</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562909">DXVADDI_FIXED32</a> structure that specifies the planar-transparency value of the output image as it is written to the destination surface. When the alpha value is 1.0, the background color is drawn opaque (without transparency and alpha blending). When the alpha value is 0.0, the background should not be drawn (transparent).</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-fixed32.md">DXVADDI_FIXED32</a> structure that specifies the planar-transparency value of the output image as it is written to the destination surface. When the alpha value is 1.0, the background color is drawn opaque (without transparency and alpha blending). When the alpha value is 0.0, the background should not be drawn (transparent).</p>
 </dd>
 
 ### -field <b>NoiseFilterLuma</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562907">DXVADDI_FILTERVALUES</a> structure that specifies the luma noise filter.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the luma noise filter.</p>
 </dd>
 
 ### -field <b>NoiseFilterChroma</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562907">DXVADDI_FILTERVALUES</a> structure that specifies the chroma noise filter.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the chroma noise filter.</p>
 </dd>
 
 ### -field <b>DetailFilterLuma</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562907">DXVADDI_FILTERVALUES</a> structure that specifies the luma detail filter.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the luma detail filter.</p>
 </dd>
 
 ### -field <b>DetailFilterChroma</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562907">DXVADDI_FILTERVALUES</a> structure that specifies the chroma detail filter.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the chroma detail filter.</p>
 </dd>
 
 ### -field <b>pSrcSurfaces</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff562957">DXVADDI_VIDEOSAMPLE</a> structures that describe the input samples that are required for the deinterlacing, frame-rate conversion, and substream compositing operations. For more information about how input samples are arranged in this array, see <a href="https://msdn.microsoft.com/99110b1a-1511-44f5-a4bb-a5e38fd41fff">Input Buffer Order</a>.</p>
+<p>[in] An array of <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videosample.md">DXVADDI_VIDEOSAMPLE</a> structures that describe the input samples that are required for the deinterlacing, frame-rate conversion, and substream compositing operations. For more information about how input samples are arranged in this array, see <a href="https://msdn.microsoft.com/99110b1a-1511-44f5-a4bb-a5e38fd41fff">Input Buffer Order</a>.</p>
 </dd>
 
 ### -field <b>NumSrcSurfaces</b>
@@ -199,22 +199,22 @@ typedef struct _D3DDDIARG_VIDEOPROCESSBLT {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createvideoprocessdevice.md">CreateVideoProcessDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562893">DXVADDI_AYUVSAMPLE8</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-ayuvsample8.md">DXVADDI_AYUVSAMPLE8</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562917">DXVADDI_PROCAMPVALUES</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-procampvalues.md">DXVADDI_PROCAMPVALUES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562952">DXVADDI_VIDEOPROCESSBLTFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videoprocessbltflags.md">DXVADDI_VIDEOPROCESSBLTFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562957">DXVADDI_VIDEOSAMPLE</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videosample.md">DXVADDI_VIDEOSAMPLE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-videoprocessblt.md">VideoProcessBlt</a>

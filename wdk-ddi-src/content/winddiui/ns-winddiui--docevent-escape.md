@@ -79,7 +79,7 @@ typedef struct _DOCEVENT_ESCAPE {
 ## -remarks
 <p>The DOCEVENT_ESCAPE structure is defined for Windows XP and later.</p>
 
-<p>This structure is used in conjunction with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548544">DrvDocumentEvent</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>, in which the <i>iEsc</i> parameter is set to DOCUMENTEVENT_ESCAPE. Before calling either of these functions, the caller must fill in the members of this structure.</p>
+<p>This structure is used in conjunction with a call to <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a> or <a href="print.iprintoemui2_documentevent">IPrintOemUI2::DocumentEvent</a>, in which the <i>iEsc</i> parameter is set to DOCUMENTEVENT_ESCAPE. Before calling either of these functions, the caller must fill in the members of this structure.</p>
 
 <p>Refer to the Microsoft Windows SDK documentation for a description of the <b>ExtEscape</b> function and the three parameters that correspond to the members of this structure. </p>
 
@@ -100,10 +100,10 @@ typedef struct _DOCEVENT_ESCAPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548544">DrvDocumentEvent</a>
+<a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>
+<a href="print.iprintoemui2_documentevent">IPrintOemUI2::DocumentEvent</a>
 </dt>
 </dl>
 <p> </p>

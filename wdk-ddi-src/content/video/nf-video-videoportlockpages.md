@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>VideoPortLockPages</b> function is <b>obsolete</b> in Windows 2000 and later. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff570326">VideoPortLockBuffer</a> in place of this function.</p>
+<p>The <b>VideoPortLockPages</b> function is <b>obsolete</b> in Windows 2000 and later. Use <a href="..\video\nf-video-videoportlockbuffer.md">VideoPortLockBuffer</a> in place of this function.</p>
 <p><b>VideoPortLockPages</b> locks the specified virtual memory and possibly performs part or all of a DMA transfer.</p>
 
 
@@ -69,7 +69,7 @@ BOOLEAN VideoPortLockPages(
 ### -param <i>pVrp</i> [in, out]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570547">VIDEO_REQUEST_PACKET</a> structure. The miniport driver must have set <b>InputBuffer</b> and <b>InputBufferLength</b> to contain the virtual address and the size in bytes, respectively, of the memory to be locked for the transfer. This memory was allocated by the display driver and passed to the miniport driver through an IOCTL. The video port returns a pointer to and the size in bytes of the scatter/gather list in <b>OutputBuffer</b> and <b>OutputBufferLength</b>, respectively.</p>
+<p>Pointer to a <a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a> structure. The miniport driver must have set <b>InputBuffer</b> and <b>InputBufferLength</b> to contain the virtual address and the size in bytes, respectively, of the memory to be locked for the transfer. This memory was allocated by the display driver and passed to the miniport driver through an IOCTL. The video port returns a pointer to and the size in bytes of the scatter/gather list in <b>OutputBuffer</b> and <b>OutputBufferLength</b>, respectively.</p>
 </dd>
 
 ### -param <i>pUEvent</i> [in]
@@ -130,10 +130,6 @@ BOOLEAN VideoPortLockPages(
 
 <p><b>VideoPortLockPages</b> cannot be called from an ISR or DPC.</p>
 
-<p>See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bus-Master DMA in Video Miniport Drivers</a> for information about packet-based and common-buffer DMA transfers.</p>
-
-<p><b>VideoPortLockPages</b> cannot be called from an ISR or DPC.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -189,7 +185,7 @@ BOOLEAN VideoPortLockPages(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570326">VideoPortLockBuffer</a>
+<a href="..\video\nf-video-videoportlockbuffer.md">VideoPortLockBuffer</a>
 </dt>
 </dl>
 <p> </p>

@@ -58,7 +58,7 @@ HRESULT _stdcall wiasWritePageBufToFile(
 ### -param <i>pmdtc</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a> structure.</p>
+<p>Pointer to a <a href="..\wiamindr_lh\ns-wiamindr-lh--minidrv-transfer-context.md">MINIDRV_TRANSFER_CONTEXT</a> structure.</p>
 </dd>
 </dl>
 
@@ -68,25 +68,13 @@ HRESULT _stdcall wiasWritePageBufToFile(
 ## -remarks
 <p>The function writes data from a minidriver-allocated temporary page buffer to the image file opened by the WIA service. Minidrivers typically call this function after acquiring a page of data for which the minidriver allocated a temporary buffer.</p>
 
-<p>This function is similar to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549473">wiasWriteBufToFile</a>, which can be used to write a buffer of image data to any type of image file. If a WIA minidriver intends to write a page of image data to a multipage TIFF file, including all appropriate tags, image file directory (IFD) entries, and other nonimage data, it should call this function, rather than <b>wiasWriteBufToFile</b>.</p>
+<p>This function is similar to <a href="..\wiamdef\nf-wiamdef-wiaswritebuftofile.md">wiasWriteBufToFile</a>, which can be used to write a buffer of image data to any type of image file. If a WIA minidriver intends to write a page of image data to a multipage TIFF file, including all appropriate tags, image file directory (IFD) entries, and other nonimage data, it should call this function, rather than <b>wiasWriteBufToFile</b>.</p>
 
 <p>The expression <i>pmdtc</i>-&gt;<i>hFile</i> contains the handle to the file in TYMED_FILE (and TYMED_MULTIPAGE_FILE) transfers. This can be used to directly access the file that is being written to.</p>
 
 <p>An example of how to use it is:</p>
 
-<p>However, if you are considering using just the file handle in your TYMED_FILE and TYMED_MULTIPAGE_FILE transfers (to write data directly to the file using the file handle, instead of calling <b>wiasWritePageBufToFile</b>), use <a href="https://msdn.microsoft.com/library/windows/hardware/ff549473">wiasWriteBufToFile</a>. This function performs the equivalent of:</p>
-
-<p>This is essentially what you would do if you used the file handle directly. The advantage of the first example is that if the implementation was changed in a future release of WIA (for example, if the WIA service began using pipes instead of files, internally), the driver would not need to be updated.</p>
-
-<p>The function writes data from a minidriver-allocated temporary page buffer to the image file opened by the WIA service. Minidrivers typically call this function after acquiring a page of data for which the minidriver allocated a temporary buffer.</p>
-
-<p>This function is similar to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549473">wiasWriteBufToFile</a>, which can be used to write a buffer of image data to any type of image file. If a WIA minidriver intends to write a page of image data to a multipage TIFF file, including all appropriate tags, image file directory (IFD) entries, and other nonimage data, it should call this function, rather than <b>wiasWriteBufToFile</b>.</p>
-
-<p>The expression <i>pmdtc</i>-&gt;<i>hFile</i> contains the handle to the file in TYMED_FILE (and TYMED_MULTIPAGE_FILE) transfers. This can be used to directly access the file that is being written to.</p>
-
-<p>An example of how to use it is:</p>
-
-<p>However, if you are considering using just the file handle in your TYMED_FILE and TYMED_MULTIPAGE_FILE transfers (to write data directly to the file using the file handle, instead of calling <b>wiasWritePageBufToFile</b>), use <a href="https://msdn.microsoft.com/library/windows/hardware/ff549473">wiasWriteBufToFile</a>. This function performs the equivalent of:</p>
+<p>However, if you are considering using just the file handle in your TYMED_FILE and TYMED_MULTIPAGE_FILE transfers (to write data directly to the file using the file handle, instead of calling <b>wiasWritePageBufToFile</b>), use <a href="..\wiamdef\nf-wiamdef-wiaswritebuftofile.md">wiasWriteBufToFile</a>. This function performs the equivalent of:</p>
 
 <p>This is essentially what you would do if you used the file handle directly. The advantage of the first example is that if the implementation was changed in a future release of WIA (for example, if the WIA service began using pipes instead of files, internally), the driver would not need to be updated.</p>
 
@@ -145,13 +133,13 @@ HRESULT _stdcall wiasWritePageBufToFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--minidrv-transfer-context.md">MINIDRV_TRANSFER_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549473">wiasWriteBufToFile</a>
+<a href="..\wiamdef\nf-wiamdef-wiaswritebuftofile.md">wiasWriteBufToFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549495">wiasWritePageBufToStream</a>
+<a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftostream.md">wiasWritePageBufToStream</a>
 </dt>
 </dl>
 <p> </p>

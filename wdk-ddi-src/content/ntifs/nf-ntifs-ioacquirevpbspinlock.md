@@ -57,7 +57,7 @@ VOID IoAcquireVpbSpinLock(
 ### -param <i>Irql</i> [out]
 
 <dd>
-<p>Pointer to a caller-allocated variable in which to save the current IRQL for a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548519">IoReleaseVpbSpinLock</a>. Usually the <i>Irql</i> is saved on the stack as a local variable.</p>
+<p>Pointer to a caller-allocated variable in which to save the current IRQL for a subsequent call to <a href="..\ntifs\nf-ntifs-ioreleasevpbspinlock.md">IoReleaseVpbSpinLock</a>. Usually the <i>Irql</i> is saved on the stack as a local variable.</p>
 </dd>
 </dl>
 
@@ -75,27 +75,11 @@ VOID IoAcquireVpbSpinLock(
 
 <p>ReferenceCount</p>
 
-<p>Every successful call to <b>IoAcquireVpbSpinLock</b> must be matched by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548519">IoReleaseVpbSpinLock</a>. To prevent deadlock, the holder of the VPB spin lock must release it immediately when it is no longer needed. </p>
+<p>Every successful call to <b>IoAcquireVpbSpinLock</b> must be matched by a subsequent call to <a href="..\ntifs\nf-ntifs-ioreleasevpbspinlock.md">IoReleaseVpbSpinLock</a>. To prevent deadlock, the holder of the VPB spin lock must release it immediately when it is no longer needed. </p>
 
-<p>Before using <b>IoAcquireVpbSpinLock</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548519">IoReleaseVpbSpinLock</a>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample. </p>
+<p>Before using <b>IoAcquireVpbSpinLock</b> and <a href="..\ntifs\nf-ntifs-ioreleasevpbspinlock.md">IoReleaseVpbSpinLock</a>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample. </p>
 
-<p>After calling <b>IoAcquireVpbSpinLock</b>, the caller executes at IRQL DISPATCH_LEVEL. Calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548519">IoReleaseVpbSpinLock</a> restores the caller's original IRQL. </p>
-
-<p>File systems call <b>IoAcquireVpbSpinLock</b> to acquire the VPB spin lock. This global spin lock must be acquired before accessing any of the following fields of a VPB: </p>
-
-<p>Flags (specifically, VPB_MOUNTED)</p>
-
-<p>DeviceObject</p>
-
-<p>RealDevice</p>
-
-<p>ReferenceCount</p>
-
-<p>Every successful call to <b>IoAcquireVpbSpinLock</b> must be matched by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548519">IoReleaseVpbSpinLock</a>. To prevent deadlock, the holder of the VPB spin lock must release it immediately when it is no longer needed. </p>
-
-<p>Before using <b>IoAcquireVpbSpinLock</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548519">IoReleaseVpbSpinLock</a>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample. </p>
-
-<p>After calling <b>IoAcquireVpbSpinLock</b>, the caller executes at IRQL DISPATCH_LEVEL. Calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548519">IoReleaseVpbSpinLock</a> restores the caller's original IRQL. </p>
+<p>After calling <b>IoAcquireVpbSpinLock</b>, the caller executes at IRQL DISPATCH_LEVEL. Calling <a href="..\ntifs\nf-ntifs-ioreleasevpbspinlock.md">IoReleaseVpbSpinLock</a> restores the caller's original IRQL. </p>
 
 ## -requirements
 <table>
@@ -152,7 +136,7 @@ VOID IoAcquireVpbSpinLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548519">IoReleaseVpbSpinlock</a>
+<a href="..\ntifs\nf-ntifs-ioreleasevpbspinlock.md">IoReleaseVpbSpinlock</a>
 </dt>
 </dl>
 <p> </p>

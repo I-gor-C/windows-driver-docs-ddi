@@ -80,7 +80,7 @@ typedef struct _D3DKMT_SUBMITCOMMAND {
 ### -field <b>Flags</b>
 
 <dd>
-<p>An instance of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914420">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.</p>
+<p>An instance of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.</p>
 </dd>
 
 ### -field <b>PresentHistoryToken</b>
@@ -174,7 +174,7 @@ typedef struct _D3DKMT_SUBMITCOMMAND {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914420">D3DDDICB_SUBMITCOMMANDFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a>
 </dt>
 </dl>
 <p> </p>

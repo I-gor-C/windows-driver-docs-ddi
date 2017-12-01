@@ -7,7 +7,7 @@ old-location: kernel\clfsallocreservedlog.htm
 old-project: kernel
 ms.assetid: 05e4fb47-38ef-4b46-a1bb-220c5b1a63ca
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: ClfsAllocReservedLog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ NTSTATUS ClfsAllocReservedLog(
 ### -param <i>pvMarshalContext</i> [in]
 
 <dd>
-<p>A pointer to an opaque context that represents a marshalling area. The caller previously obtained this pointer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541520">ClfsCreateMarshallingArea</a>.</p>
+<p>A pointer to an opaque context that represents a marshalling area. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.</p>
 </dd>
 
 ### -param <i>cRecords</i> [in]
 
 <dd>
-<p>The number of records in the set. This value must match the value of <i>cRecords</i> previously passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff540779">ClfsAlignReservedLog</a>.</p>
+<p>The number of records in the set. This value must match the value of <i>cRecords</i> previously passed to <a href="..\wdm\nf-wdm-clfsalignreservedlog.md">ClfsAlignReservedLog</a>.</p>
 </dd>
 
 ### -param <i>pcbAdjustment</i> [in]
 
 <dd>
-<p>A pointer to a LONGLONG-typed variable that supplies the size, in bytes, of the reservation that will hold all the records in the set. The caller previously obtained this size by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff540779">ClfsAlignReservedLog</a>.</p>
+<p>A pointer to a LONGLONG-typed variable that supplies the size, in bytes, of the reservation that will hold all the records in the set. The caller previously obtained this size by calling <a href="..\wdm\nf-wdm-clfsalignreservedlog.md">ClfsAlignReservedLog</a>.</p>
 </dd>
 </dl>
 
@@ -80,8 +80,6 @@ NTSTATUS ClfsAllocReservedLog(
 <p><b>ClfsAllocReservedLog</b> returns STATUS_SUCCESS if it succeeds; otherwise, it returns one of the error codes defined in Ntstatus.h.</p>
 
 ## -remarks
-<p>For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>.</p>
-
 <p>For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>.</p>
 
 ## -requirements
@@ -147,9 +145,9 @@ NTSTATUS ClfsAllocReservedLog(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540779">ClfsAlignReservedLog</a>
+<a href="..\wdm\nf-wdm-clfsalignreservedlog.md">ClfsAlignReservedLog</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsAllocReservedLog routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsAllocReservedLog routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

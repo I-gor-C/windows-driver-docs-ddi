@@ -96,7 +96,7 @@ VOID POS_CX_ATTRIBUTES_INIT(
 <a href="..\poscx\ns-poscx--pos-cx-attributes.md">POS_CX_ATTRIBUTE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt593125">PosCxInit</a>
+<a href="..\poscx\nf-poscx-poscxinit.md">PosCxInit</a>
 </dt>
 </dl>
 <p> </p>

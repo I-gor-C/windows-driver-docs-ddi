@@ -7,7 +7,7 @@ old-location: audio\ipinname_getpinname.htm
 old-project: audio
 ms.assetid: 97fa159c-ce71-4ce2-8d40-def7671d014c
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IPinName, GetPinName, IPinName::GetPinName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,41 +79,9 @@ NTSTATUS GetPinName(
 <p>The <code>GetPinName</code> method returns STATUS_SUCCESS if the call was successful. Otherwise, it returns an appropriate error code.</p>
 
 ## -remarks
-<p>If a client needs the current pin name of an endpoint, but has determined that the miniport driver does not support the <code>GetPinName</code> method, the client uses the friendly name of the topology bridge pin. For more information about pin categories and friendly names, see <a href="NULL">Pin Category Property</a> and <a href="NULL">Friendly Names for Audio Endpoint Devices</a>. </p><dl>
-<dd>
+<p>If a client needs the current pin name of an endpoint, but has determined that the miniport driver does not support the <code>GetPinName</code> method, the client uses the friendly name of the topology bridge pin. For more information about pin categories and friendly names, see <a href="NULL">Pin Category Property</a> and <a href="NULL">Friendly Names for Audio Endpoint Devices</a>. </p>
+
 <p>KSNODETYPE_SPEAKER</p>
-</dd>
-<dd>
-<p>KSNODETYPE_DESKTOP_SPEAKER</p>
-</dd>
-<dd>
-<p>KSNODETYPE_ROOM_SPEAKER</p>
-</dd>
-<dd>
-<p>KSNODETYPE_LOW_FREQUENCY_EFFECTS_SPEAKER</p>
-</dd>
-</dl><p>KSNODETYPE_SPEAKER</p>
-
-<p>KSNODETYPE_DESKTOP_SPEAKER</p>
-
-<p>KSNODETYPE_ROOM_SPEAKER</p>
-
-<p>KSNODETYPE_LOW_FREQUENCY_EFFECTS_SPEAKER</p>
-
-<p>If a client needs the current pin name of an endpoint, but has determined that the miniport driver does not support the <code>GetPinName</code> method, the client uses the friendly name of the topology bridge pin. For more information about pin categories and friendly names, see <a href="NULL">Pin Category Property</a> and <a href="NULL">Friendly Names for Audio Endpoint Devices</a>. </p><dl>
-<dd>
-<p>KSNODETYPE_SPEAKER</p>
-</dd>
-<dd>
-<p>KSNODETYPE_DESKTOP_SPEAKER</p>
-</dd>
-<dd>
-<p>KSNODETYPE_ROOM_SPEAKER</p>
-</dd>
-<dd>
-<p>KSNODETYPE_LOW_FREQUENCY_EFFECTS_SPEAKER</p>
-</dd>
-</dl><p>KSNODETYPE_SPEAKER</p>
 
 <p>KSNODETYPE_DESKTOP_SPEAKER</p>
 
@@ -164,7 +132,7 @@ NTSTATUS GetPinName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536837">IPinName</a>
+<a href="..\portcls\nn-portcls-ipinname.md">IPinName</a>
 </dt>
 <dt>
 <a href="NULL">Friendly Names for Audio Endpoint Devices</a>
@@ -175,4 +143,4 @@ NTSTATUS GetPinName(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IPinName::GetPinName method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IPinName::GetPinName method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

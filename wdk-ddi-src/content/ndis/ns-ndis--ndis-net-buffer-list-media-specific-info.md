@@ -7,7 +7,7 @@ old-location: netvista\ndis_net_buffer_list_media_specific_info.htm
 old-project: netvista
 ms.assetid: cae95c4f-0af3-49de-a312-83958896006a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, *PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

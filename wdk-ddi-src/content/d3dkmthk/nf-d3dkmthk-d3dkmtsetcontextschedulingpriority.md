@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTSetContextSchedulingPriority(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548267">D3DKMT_SETCONTEXTSCHEDULINGPRIORITY</a> structure that describes parameters for setting the scheduling priority for a device context.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setcontextschedulingpriority.md">D3DKMT_SETCONTEXTSCHEDULINGPRIORITY</a> structure that describes parameters for setting the scheduling priority for a device context.</p>
 </dd>
 </dl>
 
@@ -130,7 +130,7 @@ NTSTATUS APIENTRY D3DKMTSetContextSchedulingPriority(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548267">D3DKMT_SETCONTEXTSCHEDULINGPRIORITY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setcontextschedulingpriority.md">D3DKMT_SETCONTEXTSCHEDULINGPRIORITY</a>
 </dt>
 </dl>
 <p> </p>

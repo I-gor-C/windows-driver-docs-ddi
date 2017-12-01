@@ -74,8 +74,6 @@ NTSTATUS FsRtlQueryCachedVdl(
 ## -remarks
 <p>The <b>FsRtlQueryCachedVdl</b> routine will return the VDL for a full span file region. This is a region beginning at an offset of 0 and having a length of <b>MAXLONGLONG</b>.</p>
 
-<p>The <b>FsRtlQueryCachedVdl</b> routine will return the VDL for a full span file region. This is a region beginning at an offset of 0 and having a length of <b>MAXLONGLONG</b>.</p>
-
 ## -requirements
 <table>
 <tr>

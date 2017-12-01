@@ -90,25 +90,9 @@ VOID HwStorDpcRoutine(
 <p>None. </p>
 
 ## -remarks
-<p>When a miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567110">StorPortInitializeDpc</a> to initialize a DPC it must load the <i>HwDpcRoutine</i>  parameter of the <b>StorPortInitializeDpc</b> routine with a pointer to the <b>HwStorDpcRoutine</b> routine. </p>
+<p>When a miniport driver calls <a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a> to initialize a DPC it must load the <i>HwDpcRoutine</i>  parameter of the <b>StorPortInitializeDpc</b> routine with a pointer to the <b>HwStorDpcRoutine</b> routine. </p>
 
-<p>Any particular instance of a DPC routine is guaranteed to be synchronized with other instances of the DPC routine. A DPC routine can synchronize itself with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557423">HwStorStartIo</a> routine or with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557403">HwStorInterrupt</a> routine by acquiring the appropriate spin lock with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>. For more information about the management of spin locks within DPC routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567116">StorPortIssueDpc</a>. </p>
-
-<p>The name <b>HwStorDpcRoutine</b> is just a placeholder. The actual prototype of this routine is defined in <i>storport.h</i> as follows:</p>
-
-<p>The port driver calls the <b>HwStorDpcRoutine</b> routine at DISPATCH IRQL.</p>
-
-<p>To define an <b>HwStorDpcRoutine</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.</p>
-
-<p> For example, to define a <b>HwStorDpcRoutine</b> callback routine that is named <i>MyHwDpcRoutine</i>, use the <b>HW_DPC_ROUTINE</b> type as shown in this code example:</p>
-
-<p>Then, implement your callback routine as follows:</p>
-
-<p>The <b>HW_DPC_ROUTINE</b> function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>HW_DPC_ROUTINE</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/40BD11CD-A559-4F90-BF39-4ED2FB800392">Declaring Functions Using Function Role Types for Storport Drivers</a>. For information about _Use_decl_annotations_, see <a href="c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.</p>
-
-<p>When a miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567110">StorPortInitializeDpc</a> to initialize a DPC it must load the <i>HwDpcRoutine</i>  parameter of the <b>StorPortInitializeDpc</b> routine with a pointer to the <b>HwStorDpcRoutine</b> routine. </p>
-
-<p>Any particular instance of a DPC routine is guaranteed to be synchronized with other instances of the DPC routine. A DPC routine can synchronize itself with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557423">HwStorStartIo</a> routine or with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557403">HwStorInterrupt</a> routine by acquiring the appropriate spin lock with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>. For more information about the management of spin locks within DPC routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567116">StorPortIssueDpc</a>. </p>
+<p>Any particular instance of a DPC routine is guaranteed to be synchronized with other instances of the DPC routine. A DPC routine can synchronize itself with the <a href="storage.hwstorstartio">HwStorStartIo</a> routine or with the <a href="storage.hwstorinterrupt">HwStorInterrupt</a> routine by acquiring the appropriate spin lock with a call to <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>. For more information about the management of spin locks within DPC routines, see <a href="..\storport\nf-storport-storportissuedpc.md">StorPortIssueDpc</a>. </p>
 
 <p>The name <b>HwStorDpcRoutine</b> is just a placeholder. The actual prototype of this routine is defined in <i>storport.h</i> as follows:</p>
 
@@ -157,19 +141,19 @@ VOID HwStorDpcRoutine(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557403">HwStorInterrupt</a>
+<a href="storage.hwstorinterrupt">HwStorInterrupt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557423">HwStorStartIo</a>
+<a href="storage.hwstorstartio">HwStorStartIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>
+<a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567110">StorPortInitializeDpc</a>
+<a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567116">StorPortIssueDpc</a>
+<a href="..\storport\nf-storport-storportissuedpc.md">StorPortIssueDpc</a>
 </dt>
 </dl>
 <p> </p>

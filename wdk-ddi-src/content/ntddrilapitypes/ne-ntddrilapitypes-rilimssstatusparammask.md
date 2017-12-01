@@ -7,7 +7,7 @@ old-location: netvista\rilimssstatusparammask.htm
 old-project: netvista
 ms.assetid: bc31d252-eb1d-492c-ae2b-c6c7a8509685
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

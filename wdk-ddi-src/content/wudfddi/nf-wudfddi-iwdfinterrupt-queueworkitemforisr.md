@@ -7,7 +7,7 @@ old-location: wdf\iwdfinterrupt_queueworkitemforisr.htm
 old-project: wdf
 ms.assetid: 5C6DC011-4032-4DB6-AE17-88E510DF9A3A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFInterrupt, QueueWorkItemForIsr, IWDFInterrupt::QueueWorkItemForIsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,18 +62,6 @@ BOOLEAN QueueWorkItemForIsr();
 <p>The method returns TRUE if a work item was successfully queued. If a work item is already in the queue, the method returns FALSE.</p>
 
 ## -remarks
-<p>The driver provides a pointer to its <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-workitem.md">OnInterruptWorkItem</a> callback function when it calls  <a href="wdf.iwdfdevice3_createinterrupt">IWDFDevice3::CreateInterrupt</a> to create the interrupt object.</p>
-
-<p>For more information about handling interrupts in UMDF drivers, see <a href="wdf.accessing_hardware_and_handling_interrupts">Accessing Hardware and Handling Interrupts</a>.</p>
-
-<p>The driver provides a pointer to its <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-workitem.md">OnInterruptWorkItem</a> callback function when it calls  <a href="wdf.iwdfdevice3_createinterrupt">IWDFDevice3::CreateInterrupt</a> to create the interrupt object.</p>
-
-<p>For more information about handling interrupts in UMDF drivers, see <a href="wdf.accessing_hardware_and_handling_interrupts">Accessing Hardware and Handling Interrupts</a>.</p>
-
-<p>The driver provides a pointer to its <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-workitem.md">OnInterruptWorkItem</a> callback function when it calls  <a href="wdf.iwdfdevice3_createinterrupt">IWDFDevice3::CreateInterrupt</a> to create the interrupt object.</p>
-
-<p>For more information about handling interrupts in UMDF drivers, see <a href="wdf.accessing_hardware_and_handling_interrupts">Accessing Hardware and Handling Interrupts</a>.</p>
-
 <p>The driver provides a pointer to its <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-workitem.md">OnInterruptWorkItem</a> callback function when it calls  <a href="wdf.iwdfdevice3_createinterrupt">IWDFDevice3::CreateInterrupt</a> to create the interrupt object.</p>
 
 <p>For more information about handling interrupts in UMDF drivers, see <a href="wdf.accessing_hardware_and_handling_interrupts">Accessing Hardware and Handling Interrupts</a>.</p>
@@ -134,7 +122,7 @@ BOOLEAN QueueWorkItemForIsr();
 <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf-interrupt-workitem.md">OnInterruptWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451283">IWDFInterrupt</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
 </dt>
 <dt>
 <a href="wdf.iwdfdevice3_createworkitem">IWDFDevice3::CreateWorkItem</a>
@@ -142,4 +130,4 @@ BOOLEAN QueueWorkItemForIsr();
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFInterrupt::QueueWorkItemForIsr method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFInterrupt::QueueWorkItemForIsr method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

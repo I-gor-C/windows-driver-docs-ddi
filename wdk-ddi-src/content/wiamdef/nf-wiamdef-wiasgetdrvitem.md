@@ -65,7 +65,7 @@ HRESULT _stdcall wiasGetDrvItem(
 ### -param <i>ppDrvItem</i> [out]
 
 <dd>
-<p>Pointer to a memory location that receives the address of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543896">IWiaDrvItem Interface</a>.</p>
+<p>Pointer to a memory location that receives the address of an <a href="image.iwiadrvitem_interface">IWiaDrvItem Interface</a>.</p>
 </dd>
 </dl>
 
@@ -130,10 +130,10 @@ HRESULT _stdcall wiasGetDrvItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549264">wiasGetRootItem</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetrootitem.md">wiasGetRootItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549160">wiasCreateDrvItem</a>
+<a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
 </dt>
 </dl>
 <p> </p>

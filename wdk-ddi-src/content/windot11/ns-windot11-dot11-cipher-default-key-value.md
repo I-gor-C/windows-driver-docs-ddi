@@ -7,7 +7,7 @@ old-location: netvista\dot11_cipher_default_key_value.htm
 old-project: netvista
 ms.assetid: 7362b20a-6ec4-4b22-8981-3a4b647a3cfa
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_CIPHER_DEFAULT_KEY_VALUE, DOT11_CIPHER_DEFAULT_KEY_VALUE, *PDOT11_CIPHER_DEFAULT_KEY_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: windot11.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 8 and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows 8 and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -66,7 +65,7 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
 <dd>
 <p>The type, revision, and size of the DOT11_CIPHER_DEFAULT_KEY_VALUE structure. This member is
      formatted as an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.
      </p>
 <p>The miniport driver must set the members of 
      <i>Header</i> to the following values:</p>
@@ -93,7 +92,7 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
 </dd>
 </dl>
 <p>For more information about these members, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.</p>
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
 ### -field <b>uKeyIndex</b>
@@ -115,7 +114,7 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
 <dd>
 <p>The value of the cipher algorithm that uses this key. For more information about values for cipher
      algorithms, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
      </p>
 <p>For BIP, this should be set to DOT11_CIPHER_ALGO_BIP to pre-set the initial IGTK packet number.</p>
 <p>The miniport driver must ignore this member if 
@@ -234,7 +233,7 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
      <b>DOT11_CIPHER_ALGO_BIP</b>, the 
      <b>ucKey</b> array defines the key material through the
      
-     <a href="https://msdn.microsoft.com/library/windows/hardware/hh770894">DOT11_KEY_ALGO_BIP</a> structure.</p>
+     <a href="..\windot11\ns-windot11-dot11-key-algo-bip.md">DOT11_KEY_ALGO_BIP</a> structure.</p>
 </dd>
 </dl>
 
@@ -274,16 +273,16 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548668">DOT11_KEY_ALGO_CCMP</a>
+<a href="..\windot11\ns-windot11-dot11-key-algo-ccmp.md">DOT11_KEY_ALGO_CCMP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548676">DOT11_KEY_ALGO_TKIP_MIC</a>
+<a href="..\windot11\ns-windot11-dot11-key-algo-tkip-mic.md">DOT11_KEY_ALGO_TKIP_MIC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569119">OID_DOT11_CIPHER_DEFAULT_KEY</a>
@@ -297,4 +296,4 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_DEFAULT_KEY_VALUE structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_DEFAULT_KEY_VALUE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

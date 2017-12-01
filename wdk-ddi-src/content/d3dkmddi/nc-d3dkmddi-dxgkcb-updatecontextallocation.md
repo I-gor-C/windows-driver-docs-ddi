@@ -69,7 +69,7 @@ NTSTATUS APIENTRY DxgkCbUpdateContextAllocation(
 ### -param <i>pArgs</i> [in]
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn906820">DXGKARGCB_UPDATECONTEXTALLOCATION</a> structure that describes the operation.</p>
+<p>The <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-updatecontextallocation.md">DXGKARGCB_UPDATECONTEXTALLOCATION</a> structure that describes the operation.</p>
 </dd>
 </dl>
 
@@ -126,7 +126,7 @@ NTSTATUS APIENTRY DxgkCbUpdateContextAllocation(
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-updatecontextallocation.md">DxgkCbUpdateContextAllocation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906820">DXGKARGCB_UPDATECONTEXTALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-updatecontextallocation.md">DXGKARGCB_UPDATECONTEXTALLOCATION</a>
 </dt>
 </dl>
 <p> </p>

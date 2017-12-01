@@ -7,7 +7,7 @@ old-location: stream\ksdevice_thermal_state.htm
 old-project: stream
 ms.assetid: 37425A71-D242-4E4B-9EE8-57207A022459
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

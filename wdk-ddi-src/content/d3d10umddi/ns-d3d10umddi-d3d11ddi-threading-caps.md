@@ -120,7 +120,7 @@ typedef struct D3D11DDI_THREADING_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541894">D3D10_2DDICAPS_TYPE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-2ddicaps-type.md">D3D10_2DDICAPS_TYPE</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10-2ddi-getcaps.md">GetCaps(D3D10_2)</a>

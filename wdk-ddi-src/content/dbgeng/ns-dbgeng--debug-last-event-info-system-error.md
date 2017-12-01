@@ -7,7 +7,7 @@ old-location: debugger\debug_last_event_info_system_error.htm
 old-project: debugger
 ms.assetid: A66C26AB-3AED-4F44-9F7F-DE5A92BB611A
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_LAST_EVENT_INFO_SYSTEM_ERROR, DEBUG_LAST_EVENT_INFO_SYSTEM_ERROR, *PDEBUG_LAST_EVENT_INFO_SYSTEM_ERROR
 ms.prod: windows-hardware
 ms.technology: windows-devices

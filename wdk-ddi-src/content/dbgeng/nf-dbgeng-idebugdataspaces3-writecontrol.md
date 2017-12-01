@@ -7,7 +7,7 @@ old-location: debugger\writecontrol.htm
 old-project: debugger
 ms.assetid: 0b512c66-7cd8-4605-87d5-13b78d790c8c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces3, WriteControl, IDebugDataSpaces3::WriteControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -97,8 +97,6 @@ HRESULT WriteControl(
 <p> </p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 ## -requirements

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The LogoutFromTarget_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561602">LogoutFromTarget</a> method.</p>
+<p>The LogoutFromTarget_OUT structure holds the output data for the <a href="storage.logoutfromtarget">LogoutFromTarget</a> method.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _LogoutFromTarget_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output from <b>LogoutFromTarget</b>, the status of the logoff operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.</p>
+<p>On output from <b>LogoutFromTarget</b>, the status of the logoff operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 </dd>
 </dl>
 
@@ -81,19 +81,19 @@ typedef struct _LogoutFromTarget_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561602">LogoutFromTarget</a>
+<a href="storage.logoutfromtarget">LogoutFromTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562191">LogoutFromTarget_IN</a>
+<a href="..\iscsiop\ns-iscsiop--logoutfromtarget-in.md">LogoutFromTarget_IN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
+<a href="storage.msiscsi_operations_wmi_class">MSiSCSI_Operations WMI Class</a>
 </dt>
 </dl>
 <p> </p>

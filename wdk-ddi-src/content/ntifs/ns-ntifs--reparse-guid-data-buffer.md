@@ -101,15 +101,15 @@ typedef struct _REPARSE_GUID_DATA_BUFFER {
 ## -remarks
 <p>The REPARSE_GUID_DATA_BUFFER structure is used by all third-party file systems, filters, and minifilters, as well as some Microsoft file systems, filters, and minifilters to store data for a reparse point. Each reparse point contains one REPARSE_GUID_DATA_BUFFER structure. </p>
 
-<p>Microsoft reparse points can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552012">REPARSE_DATA_BUFFER</a> structure instead of the REPARSE_GUID_DATA_BUFFER structure. However, third-party reparse points are required to use the REPARSE_GUID_DATA_BUFFER structure. </p>
+<p>Microsoft reparse points can use the <a href="..\ntifs\ns-ntifs--reparse-data-buffer.md">REPARSE_DATA_BUFFER</a> structure instead of the REPARSE_GUID_DATA_BUFFER structure. However, third-party reparse points are required to use the REPARSE_GUID_DATA_BUFFER structure. </p>
 
 <p>Reparse point tags are assigned to third parties by Microsoft. You may request more than one reparse point for use with a file system, file system filter driver, or minifilter driver. For more information about requesting a reparse point tag from Microsoft, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=8706">Windows IFS Kit</a> website. </p>
 
 <p>Reparse point GUIDs are not assigned by Microsoft. However, you must choose one GUID to use with your assigned reparse point tag, and you must always use this GUID with the tag. To generate a GUID, you should use GUIDGen (<i>Guidgen.exe</i>), a tool that is included in the Microsoft Windows SDK. </p>
 
-<p>Minifilters can set or delete a reparse point by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544589">FltTagFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff544608">FltUntagFile</a>. Minifilters can retrieve a reparse point by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544836">FSCTL_GET_REPARSE_POINT</a> control code. This code can be sent to the file system by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff542988">FltFsControlFile</a>. </p>
+<p>Minifilters can set or delete a reparse point by calling <a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a> or <a href="..\fltkernel\nf-fltkernel-fltuntagfile.md">FltUntagFile</a>. Minifilters can retrieve a reparse point by using the <a href="ifsk.fsctl_get_reparse_point">FSCTL_GET_REPARSE_POINT</a> control code. This code can be sent to the file system by calling <a href="..\fltkernel\nf-fltkernel-fltfscontrolfile.md">FltFsControlFile</a>. </p>
 
-<p>File systems and filter drivers can retrieve, set, or delete a reparse point by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544836">FSCTL_GET_REPARSE_POINT</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545568">FSCTL_SET_REPARSE_POINT</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff544828">FSCTL_DELETE_REPARSE_POINT</a> control codes. These codes can be sent to the file system by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff566462">ZwFsControlFile</a>. </p>
+<p>File systems and filter drivers can retrieve, set, or delete a reparse point by using the <a href="ifsk.fsctl_get_reparse_point">FSCTL_GET_REPARSE_POINT</a>, <a href="ifsk.fsctl_set_reparse_point">FSCTL_SET_REPARSE_POINT</a>, and <a href="ifsk.fsctl_delete_reparse_point">FSCTL_DELETE_REPARSE_POINT</a> control codes. These codes can be sent to the file system by calling <a href="..\ntifs\nf-ntifs-zwfscontrolfile.md">ZwFsControlFile</a>. </p>
 
 <p>For more information about reparse points and reparse point tags, see the Windows SDK documentation.  </p>
 
@@ -130,43 +130,43 @@ typedef struct _REPARSE_GUID_DATA_BUFFER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540354">FILE_REPARSE_POINT_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-reparse-point-information.md">FILE_REPARSE_POINT_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544705">FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL</a>
+<a href="ifsk.flt_parameters_for_irp_mj_file_system_control">FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542988">FltFsControlFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltfscontrolfile.md">FltFsControlFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544589">FltTagFile</a>
+<a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544608">FltUntagFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltuntagfile.md">FltUntagFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544828">FSCTL_DELETE_REPARSE_POINT</a>
+<a href="ifsk.fsctl_delete_reparse_point">FSCTL_DELETE_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544836">FSCTL_GET_REPARSE_POINT</a>
+<a href="ifsk.fsctl_get_reparse_point">FSCTL_GET_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545568">FSCTL_SET_REPARSE_POINT</a>
+<a href="ifsk.fsctl_set_reparse_point">FSCTL_SET_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550751">IRP_MJ_FILE_SYSTEM_CONTROL</a>
+<a href="ifsk.irp_mj_file_system_control">IRP_MJ_FILE_SYSTEM_CONTROL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549452">IsReparseTagMicrosoft</a>
+<a href="..\ntifs\nf-ntifs-isreparsetagmicrosoft.md">IsReparseTagMicrosoft</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549462">IsReparseTagNameSurrogate</a>
+<a href="..\ntifs\nf-ntifs-isreparsetagnamesurrogate.md">IsReparseTagNameSurrogate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552012">REPARSE_DATA_BUFFER</a>
+<a href="..\ntifs\ns-ntifs--reparse-data-buffer.md">REPARSE_DATA_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566462">ZwFsControlFile</a>
+<a href="..\ntifs\nf-ntifs-zwfscontrolfile.md">ZwFsControlFile</a>
 </dt>
 </dl>
 <p> </p>

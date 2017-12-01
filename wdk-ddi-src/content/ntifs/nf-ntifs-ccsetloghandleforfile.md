@@ -109,9 +109,7 @@ VOID (*PFLUSH_TO_LSN) (
 <p>None</p>
 
 ## -remarks
-<p><b>CcSetLogHandleForFile</b> sets a log handle for a file, for use in subsequent calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539088">CcGetDirtyPages</a>. </p>
-
-<p><b>CcSetLogHandleForFile</b> sets a log handle for a file, for use in subsequent calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539088">CcGetDirtyPages</a>. </p>
+<p><b>CcSetLogHandleForFile</b> sets a log handle for a file, for use in subsequent calls to <a href="..\ntifs\nf-ntifs-ccgetdirtypages.md">CcGetDirtyPages</a>. </p>
 
 ## -requirements
 <table>
@@ -176,10 +174,10 @@ VOID (*PFLUSH_TO_LSN) (
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539088">CcGetDirtyPages</a>
+<a href="..\ntifs\nf-ntifs-ccgetdirtypages.md">CcGetDirtyPages</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539211">CcSetDirtyPinnedData</a>
+<a href="..\ntifs\nf-ntifs-ccsetdirtypinneddata.md">CcSetDirtyPinnedData</a>
 </dt>
 </dl>
 <p> </p>

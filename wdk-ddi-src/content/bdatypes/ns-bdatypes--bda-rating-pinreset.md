@@ -7,7 +7,7 @@ old-location: stream\bda_rating_pinreset.htm
 old-project: stream
 ms.assetid: 237463EC-3C57-4DCA-9757-870B5F55C584
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_RATING_PINRESET, BDA_RATING_PINRESET, *PBDA_RATING_PINRESET
 ms.prod: windows-hardware
 ms.technology: windows-devices

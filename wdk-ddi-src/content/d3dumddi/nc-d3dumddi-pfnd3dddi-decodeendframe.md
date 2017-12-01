@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY DecodeEndFrame(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542991">D3DDDIARG_DECODEENDFRAME</a> structure that describes the DirectX VA decoder that should stop decoding a frame.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decodeendframe.md">D3DDDIARG_DECODEENDFRAME</a> structure that describes the DirectX VA decoder that should stop decoding a frame.</p>
 </dd>
 </dl>
 
@@ -81,8 +81,6 @@ __checkReturn HRESULT APIENTRY DecodeEndFrame(
 <p> </p>
 
 ## -remarks
-<p>The <b>DecodeEndFrame</b> function notifies the user-mode display driver that its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decodeexecute.md">DecodeExecute</a> function can no longer be called on the specified decode device.</p>
-
 <p>The <b>DecodeEndFrame</b> function notifies the user-mode display driver that its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decodeexecute.md">DecodeExecute</a> function can no longer be called on the specified decode device.</p>
 
 ## -requirements
@@ -120,10 +118,10 @@ __checkReturn HRESULT APIENTRY DecodeEndFrame(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542991">D3DDDIARG_DECODEENDFRAME</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decodeendframe.md">D3DDDIARG_DECODEENDFRAME</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decodeexecute.md">DecodeExecute</a>

@@ -80,9 +80,7 @@ STORPORT_API VOID StorPortWritePortUchar(
 <p>None </p>
 
 ## -remarks
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564834">ScsiPortWritePortUchar</a>. For a buffered equivalent of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567515">StorPortWritePortBufferUchar</a>. </p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564834">ScsiPortWritePortUchar</a>. For a buffered equivalent of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567515">StorPortWritePortBufferUchar</a>. </p>
+<p>For more information, see <a href="..\srb\nf-srb-scsiportwriteportuchar.md">ScsiPortWritePortUchar</a>. For a buffered equivalent of this routine, see <a href="..\storport\nf-storport-storportwriteportbufferuchar.md">StorPortWritePortBufferUchar</a>. </p>
 
 ## -requirements
 <table>
@@ -121,10 +119,10 @@ STORPORT_API VOID StorPortWritePortUchar(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564834">ScsiPortWritePortUchar</a>
+<a href="..\srb\nf-srb-scsiportwriteportuchar.md">ScsiPortWritePortUchar</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567515">StorPortWritePortBufferUchar</a>
+<a href="..\storport\nf-storport-storportwriteportbufferuchar.md">StorPortWritePortBufferUchar</a>
 </dt>
 </dl>
 <p> </p>

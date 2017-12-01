@@ -70,19 +70,19 @@ typedef struct _MSiSCSI_ConnectionStatistics {
 ### -field <b>CID</b>
 
 <dd>
-<p>The iSCSI connection identifier (ID) for this connection instance. This ID is an internal value that the iSCSI protocol uses to identify the connection. Do not use this ID. Application software should use the connection identifier that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods return in the <i>UniqueConnectionId</i> parameter.</p>
+<p>The iSCSI connection identifier (ID) for this connection instance. This ID is an internal value that the iSCSI protocol uses to identify the connection. Do not use this ID. Application software should use the connection identifier that the <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods return in the <i>UniqueConnectionId</i> parameter.</p>
 </dd>
 
 ### -field <b>USID</b>
 
 <dd>
-<p>The iSCSI session ID for this connection instance. This ID is an internal value that the iSCSI protocol uses to identify the session. Application software should use the session identifier that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods return in the <i>UniqueSessionId</i> parameter.</p>
+<p>The iSCSI session ID for this connection instance. This ID is an internal value that the iSCSI protocol uses to identify the session. Application software should use the session identifier that the <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods return in the <i>UniqueSessionId</i> parameter.</p>
 </dd>
 
 ### -field <b>UniqueAdapterId</b>
 
 <dd>
-<p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this ID. The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563012">MSiSCSI_HBAInformation</a> structure.</p>
+<p>A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this ID. The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt--msiscsi-hbainformation.md">MSiSCSI_HBAInformation</a> structure.</p>
 </dd>
 
 ### -field <b>BytesSent</b>
@@ -111,11 +111,11 @@ typedef struct _MSiSCSI_ConnectionStatistics {
 </dl>
 
 ## -remarks
-<p>Initiators must register the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562989">MSiSCSI_ConnectionStatistics WMI Class</a> with the following dynamic instance name for the connection: </p>
+<p>Initiators must register the <a href="storage.msiscsi_connectionstatistics_wmi_class">MSiSCSI_ConnectionStatistics WMI Class</a> with the following dynamic instance name for the connection: </p>
 
 <p>The first number sign (#) is the value in the <b>USID</b> member of <b>MSiSCSI_ConnectionStatistics</b>, and the second number sign (#) is the value in the <b>CID</b> member. It is optional that you implement this class.</p>
 
-<p>The totals tracked by this structure are valid for the lifetime of the connection in the session. Totals for all connections in a session are obtained in <a href="https://msdn.microsoft.com/library/windows/hardware/ff563137">MSiSCSI_SessionStatistics</a> structure.</p>
+<p>The totals tracked by this structure are valid for the lifetime of the connection in the session. Totals for all connections in a session are obtained in <a href="..\iscsiprf\ns-iscsiprf--msiscsi-sessionstatistics.md">MSiSCSI_SessionStatistics</a> structure.</p>
 
 ## -requirements
 <table>
@@ -134,16 +134,16 @@ typedef struct _MSiSCSI_ConnectionStatistics {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562989">MSiSCSI_ConnectionStatistics WMI Class</a>
+<a href="storage.msiscsi_connectionstatistics_wmi_class">MSiSCSI_ConnectionStatistics WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563012">MSiSCSI_HBAInformation</a>
+<a href="..\iscsimgt\ns-iscsimgt--msiscsi-hbainformation.md">MSiSCSI_HBAInformation</a>
 </dt>
 </dl>
 <p> </p>

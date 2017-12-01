@@ -7,7 +7,7 @@ old-location: kernel\auxklibquerymoduleinformation.htm
 old-project: kernel
 ms.assetid: 5e267d53-4e92-4c94-8a59-93d3c79574dd
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: AuxKlibQueryModuleInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ NTSTATUS AuxKlibQueryModuleInformation(
 ### -param <i>QueryInfo</i> [out, optional]
 
 <dd>
-<p>A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff540641">AUX_MODULE_BASIC_INFO</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff540643">AUX_MODULE_EXTENDED_INFO</a> structures that receives information about loaded image modules. If this pointer is <b>NULL</b>, <b>AuxKlibQueryModuleInformation</b> writes the required buffer size to the location that <i>BufferSize</i> points to.</p>
+<p>A pointer to an array of <a href="..\aux_klib\ns-aux-klib--aux-module-basic-info.md">AUX_MODULE_BASIC_INFO</a> or <a href="..\aux_klib\ns-aux-klib--aux-module-extended-info.md">AUX_MODULE_EXTENDED_INFO</a> structures that receives information about loaded image modules. If this pointer is <b>NULL</b>, <b>AuxKlibQueryModuleInformation</b> writes the required buffer size to the location that <i>BufferSize</i> points to.</p>
 </dd>
 </dl>
 
@@ -85,31 +85,15 @@ NTSTATUS AuxKlibQueryModuleInformation(
 
 <p>Call <b>AuxKlibQueryModuleInformation</b> with a <b>NULL</b> <i>QueryInfo</i> pointer. After <b>AuxKlibQueryModuleInformation</b> returns, the location that the <i>BufferSize</i> parameter points to will contain the number of bytes that the driver will have to allocate for the array.</p>
 
-<p>Call a memory allocation routine, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>, to allocate a buffer for the array. </p>
+<p>Call a memory allocation routine, such as <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>, to allocate a buffer for the array. </p>
 
 <p>Call <b>AuxKlibQueryModuleInformation</b> again. This time, the <i>QueryInfo</i> pointer must contain the address of the allocated buffer. After <b>AuxKlibQueryModuleInformation</b> returns, the buffer contains an array of module information. </p>
 
 <p>The number of loaded modules can change between the first and second calls to <b>AuxKlibQueryModuleInformation</b>. As a result, the second call to <b>AuxKlibQueryModuleInformation</b> might return STATUS_BUFFER_TOO_SMALL even if the driver allocates a buffer that is based on the size that was obtained from the first call.</p>
 
-<p>If a call to <b>AuxKlibQueryModuleInformation</b> succeeds, the routine writes an <b>ImageBase</b> value to each element in the <i>QueryInfo</i> array. Each <b>ImageBase</b> value is a pointer to the base of a loaded driver image. This pointer remains valid only while the driver remains loaded. The caller should assume that the driver can be unloaded at any time unless the caller can guarantee otherwise. For example, a driver might be unloaded between a call to <b>AuxKlibQueryModuleInformation</b> that obtains a pointer to the driver image and a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff540631">AuxKlibGetImageExportDirectory</a> that uses this pointer.</p>
+<p>If a call to <b>AuxKlibQueryModuleInformation</b> succeeds, the routine writes an <b>ImageBase</b> value to each element in the <i>QueryInfo</i> array. Each <b>ImageBase</b> value is a pointer to the base of a loaded driver image. This pointer remains valid only while the driver remains loaded. The caller should assume that the driver can be unloaded at any time unless the caller can guarantee otherwise. For example, a driver might be unloaded between a call to <b>AuxKlibQueryModuleInformation</b> that obtains a pointer to the driver image and a call to <a href="..\aux_klib\nf-aux-klib-auxklibgetimageexportdirectory.md">AuxKlibGetImageExportDirectory</a> that uses this pointer.</p>
 
-<p>Drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff540636">AuxKlibInitialize</a> before calling <b>AuxKlibQueryModuleInformation</b>.</p>
-
-<p>The following code example illustrates the steps that are listed in the preceding Remarks section.</p>
-
-<p>To obtain information about the operating system's loaded image modules, a driver must:</p>
-
-<p>Call <b>AuxKlibQueryModuleInformation</b> with a <b>NULL</b> <i>QueryInfo</i> pointer. After <b>AuxKlibQueryModuleInformation</b> returns, the location that the <i>BufferSize</i> parameter points to will contain the number of bytes that the driver will have to allocate for the array.</p>
-
-<p>Call a memory allocation routine, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>, to allocate a buffer for the array. </p>
-
-<p>Call <b>AuxKlibQueryModuleInformation</b> again. This time, the <i>QueryInfo</i> pointer must contain the address of the allocated buffer. After <b>AuxKlibQueryModuleInformation</b> returns, the buffer contains an array of module information. </p>
-
-<p>The number of loaded modules can change between the first and second calls to <b>AuxKlibQueryModuleInformation</b>. As a result, the second call to <b>AuxKlibQueryModuleInformation</b> might return STATUS_BUFFER_TOO_SMALL even if the driver allocates a buffer that is based on the size that was obtained from the first call.</p>
-
-<p>If a call to <b>AuxKlibQueryModuleInformation</b> succeeds, the routine writes an <b>ImageBase</b> value to each element in the <i>QueryInfo</i> array. Each <b>ImageBase</b> value is a pointer to the base of a loaded driver image. This pointer remains valid only while the driver remains loaded. The caller should assume that the driver can be unloaded at any time unless the caller can guarantee otherwise. For example, a driver might be unloaded between a call to <b>AuxKlibQueryModuleInformation</b> that obtains a pointer to the driver image and a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff540631">AuxKlibGetImageExportDirectory</a> that uses this pointer.</p>
-
-<p>Drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff540636">AuxKlibInitialize</a> before calling <b>AuxKlibQueryModuleInformation</b>.</p>
+<p>Drivers must call <a href="..\aux_klib\nf-aux-klib-auxklibinitialize.md">AuxKlibInitialize</a> before calling <b>AuxKlibQueryModuleInformation</b>.</p>
 
 <p>The following code example illustrates the steps that are listed in the preceding Remarks section.</p>
 
@@ -158,21 +142,21 @@ NTSTATUS AuxKlibQueryModuleInformation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540641">AUX_MODULE_BASIC_INFO</a>
+<a href="..\aux_klib\ns-aux-klib--aux-module-basic-info.md">AUX_MODULE_BASIC_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540643">AUX_MODULE_EXTENDED_INFO</a>
+<a href="..\aux_klib\ns-aux-klib--aux-module-extended-info.md">AUX_MODULE_EXTENDED_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540631">AuxKlibGetImageExportDirectory</a>
+<a href="..\aux_klib\nf-aux-klib-auxklibgetimageexportdirectory.md">AuxKlibGetImageExportDirectory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540636">AuxKlibInitialize</a>
+<a href="..\aux_klib\nf-aux-klib-auxklibinitialize.md">AuxKlibInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20AuxKlibQueryModuleInformation routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20AuxKlibQueryModuleInformation routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

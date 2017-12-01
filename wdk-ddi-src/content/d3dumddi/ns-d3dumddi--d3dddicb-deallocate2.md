@@ -80,7 +80,7 @@ typedef struct _D3DDDICB_DEALLOCATE2 {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/dn906318">D3DDDICB_DESTROYALLOCATION2FLAGS</a> structure that contains additional details about the operation.</p>
+<p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-destroyallocation2flags.md">D3DDDICB_DESTROYALLOCATION2FLAGS</a> structure that contains additional details about the operation.</p>
 </dd>
 </dl>
 
@@ -123,7 +123,7 @@ typedef struct _D3DDDICB_DEALLOCATE2 {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-deallocate2cb.md">pfnDeallocate2Cb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906318">D3DDDICB_DESTROYALLOCATION2FLAGS</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-destroyallocation2flags.md">D3DDDICB_DESTROYALLOCATION2FLAGS</a>
 </dt>
 </dl>
 <p> </p>

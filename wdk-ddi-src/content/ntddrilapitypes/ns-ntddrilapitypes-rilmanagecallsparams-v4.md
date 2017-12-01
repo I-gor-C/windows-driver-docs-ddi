@@ -7,7 +7,7 @@ old-location: netvista\rilmanagecallsparams_v4.htm
 old-project: netvista
 ms.assetid: 8e38c6d5-bd61-455e-a628-b4e6ef9c936c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMANAGECALLSPARAMS_V4, RILMANAGECALLSPARAMS_V4, *LPRILMANAGECALLSPARAMS_V4, RILMANAGECALLSPARAMS, *LPRILMANAGECALLSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

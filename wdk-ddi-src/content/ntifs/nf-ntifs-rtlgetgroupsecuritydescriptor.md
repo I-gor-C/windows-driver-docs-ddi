@@ -65,7 +65,7 @@ NTSTATUS RtlGetGroupSecurityDescriptor(
 ### -param <i>Group</i> [out]
 
 <dd>
-<p>Pointer to a variable that receives a pointer to the security identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>) for the primary group. If the security descriptor does not contain a primary group, <i>*Group</i> receives <b>NULL</b>.</p>
+<p>Pointer to a variable that receives a pointer to the security identifier (<a href="ifsk.sid">SID</a>) for the primary group. If the security descriptor does not contain a primary group, <i>*Group</i> receives <b>NULL</b>.</p>
 </dd>
 
 ### -param <i>GroupDefaulted</i> [out]
@@ -87,19 +87,9 @@ NTSTATUS RtlGetGroupSecurityDescriptor(
 
 <p>If the security descriptor pointed to by <i>SecurityDescriptor</i> does not contain a primary group, <b>RtlGetGroupSecurityDescriptor</b> sets the pointer pointed to by <i>Group</i> to <b>NULL</b> and ignores the remaining output parameter, <i>GroupDefaulted</i>. </p>
 
-<p>To set the primary group information for a security descriptor, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553218">RtlSetGroupSecurityDescriptor</a>. </p>
+<p>To set the primary group information for a security descriptor, use <a href="..\ntifs\nf-ntifs-rtlsetgroupsecuritydescriptor.md">RtlSetGroupSecurityDescriptor</a>. </p>
 
-<p>To retrieve the owner information for a security descriptor, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff552976">RtlGetOwnerSecurityDescriptor</a>. </p>
-
-<p>For more information about security and access control, see the Microsoft Windows SDK documentation.</p>
-
-<p>If the security descriptor pointed to by <i>SecurityDescriptor</i> contains a primary group, <b>RtlGetGroupSecurityDescriptor</b> sets the pointer pointed to by <i>Group</i> to the address of the security descriptor's group SID and sets the variable pointed to by <i>GroupDefaulted</i> to a valid value. </p>
-
-<p>If the security descriptor pointed to by <i>SecurityDescriptor</i> does not contain a primary group, <b>RtlGetGroupSecurityDescriptor</b> sets the pointer pointed to by <i>Group</i> to <b>NULL</b> and ignores the remaining output parameter, <i>GroupDefaulted</i>. </p>
-
-<p>To set the primary group information for a security descriptor, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553218">RtlSetGroupSecurityDescriptor</a>. </p>
-
-<p>To retrieve the owner information for a security descriptor, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff552976">RtlGetOwnerSecurityDescriptor</a>. </p>
+<p>To retrieve the owner information for a security descriptor, use <a href="..\ntifs\nf-ntifs-rtlgetownersecuritydescriptor.md">RtlGetOwnerSecurityDescriptor</a>. </p>
 
 <p>For more information about security and access control, see the Microsoft Windows SDK documentation.</p>
 
@@ -166,16 +156,16 @@ NTSTATUS RtlGetGroupSecurityDescriptor(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552976">RtlGetOwnerSecurityDescriptor</a>
+<a href="..\ntifs\nf-ntifs-rtlgetownersecuritydescriptor.md">RtlGetOwnerSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553218">RtlSetGroupSecurityDescriptor</a>
+<a href="..\ntifs\nf-ntifs-rtlsetgroupsecuritydescriptor.md">RtlSetGroupSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 </dl>
 <p> </p>

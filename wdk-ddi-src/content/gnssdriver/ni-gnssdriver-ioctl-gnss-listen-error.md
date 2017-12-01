@@ -7,7 +7,7 @@ old-location: sensors\ioctl_gnss_listen_error_.htm
 old-project: sensors
 ms.assetid: 4B08FB8D-8C4A-4C23-A809-11E7DF190236
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -108,66 +108,6 @@ I/O Status block
 
 <p>The Error code is in HRESULT format. The driver can create codes using the <b>MAKE_HRESULT</b> macro with codes in <b>FACILITY_ITF</b>.</p>
 
-<p>The GNSS adapter ensures that this request is always pending, so that the driver can indicate an error.
-
-</p>
-
-<p>When the driver completes the I/O call, the adapter issues another IOCTL to continue waiting for further error notifications.</p>
-
-<p>The driver can complete this call when it wants to report an error condition. The GNSS adapter will use the error data to log telemetry events.
-
-</p>
-
-<p>The Error code is in HRESULT format. The driver can create codes using the <b>MAKE_HRESULT</b> macro with codes in <b>FACILITY_ITF</b>.</p>
-
-<p>The GNSS adapter ensures that this request is always pending, so that the driver can indicate an error.
-
-</p>
-
-<p>When the driver completes the I/O call, the adapter issues another IOCTL to continue waiting for further error notifications.</p>
-
-<p>The driver can complete this call when it wants to report an error condition. The GNSS adapter will use the error data to log telemetry events.
-
-</p>
-
-<p>The Error code is in HRESULT format. The driver can create codes using the <b>MAKE_HRESULT</b> macro with codes in <b>FACILITY_ITF</b>.</p>
-
-<p>The GNSS adapter ensures that this request is always pending, so that the driver can indicate an error.
-
-</p>
-
-<p>When the driver completes the I/O call, the adapter issues another IOCTL to continue waiting for further error notifications.</p>
-
-<p>The driver can complete this call when it wants to report an error condition. The GNSS adapter will use the error data to log telemetry events.
-
-</p>
-
-<p>The Error code is in HRESULT format. The driver can create codes using the <b>MAKE_HRESULT</b> macro with codes in <b>FACILITY_ITF</b>.</p>
-
-<p>The GNSS adapter ensures that this request is always pending, so that the driver can indicate an error.
-
-</p>
-
-<p>When the driver completes the I/O call, the adapter issues another IOCTL to continue waiting for further error notifications.</p>
-
-<p>The driver can complete this call when it wants to report an error condition. The GNSS adapter will use the error data to log telemetry events.
-
-</p>
-
-<p>The Error code is in HRESULT format. The driver can create codes using the <b>MAKE_HRESULT</b> macro with codes in <b>FACILITY_ITF</b>.</p>
-
-<p>The GNSS adapter ensures that this request is always pending, so that the driver can indicate an error.
-
-</p>
-
-<p>When the driver completes the I/O call, the adapter issues another IOCTL to continue waiting for further error notifications.</p>
-
-<p>The driver can complete this call when it wants to report an error condition. The GNSS adapter will use the error data to log telemetry events.
-
-</p>
-
-<p>The Error code is in HRESULT format. The driver can create codes using the <b>MAKE_HRESULT</b> macro with codes in <b>FACILITY_ITF</b>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -188,15 +128,15 @@ I/O Status block
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548651">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548656">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548660">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_LISTEN_ERROR control code%20 RELEASE:%20(11/26/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_LISTEN_ERROR control code%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

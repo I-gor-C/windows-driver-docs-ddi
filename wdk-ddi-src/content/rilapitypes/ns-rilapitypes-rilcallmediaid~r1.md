@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaid_2.htm
 old-project: netvista
 ms.assetid: ad367969-217c-4b9a-b9b1-1b6d1bf04f2e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCALLMEDIAID,
 ms.prod: windows-hardware
 ms.technology: windows-devices

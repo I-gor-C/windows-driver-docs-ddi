@@ -7,7 +7,7 @@ old-location: netvista\ril_senduicctoolkitcmdresponse.htm
 old-project: netvista
 ms.assetid: 400e2172-803c-4b6c-a41e-3c322077ffa4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SendUiccToolkitCmdResponse
 ms.prod: windows-hardware
 ms.technology: windows-devices

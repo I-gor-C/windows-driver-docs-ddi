@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Describes a keyed mutex object that the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439455">D3DKMTReleaseKeyedMutex2</a> function releases that includes private data.</p>
+<p>Describes a keyed mutex object that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex2.md">D3DKMTReleaseKeyedMutex2</a> function releases that includes private data.</p>
 
 
 ## -syntax
@@ -125,7 +125,7 @@ typedef struct _D3DKMT_RELEASEKEYEDMUTEX2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439455">D3DKMTReleaseKeyedMutex2</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex2.md">D3DKMTReleaseKeyedMutex2</a>
 </dt>
 </dl>
 <p> </p>

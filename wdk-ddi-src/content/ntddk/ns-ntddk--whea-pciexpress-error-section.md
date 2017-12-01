@@ -66,7 +66,7 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 ### -field <b>ValidBits</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560580">WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-pciexpress-error-section-validbits.md">WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
 </dd>
 
 ### -field <b>PortType</b>
@@ -398,7 +398,7 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 </dl>
 
 ## -remarks
-<p>The WHEA_PCIEXPRESS_ERROR_SECTION structure describes the error data that is contained in a PCI Express (PCIe) error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a PCIe error section only if the <b>SectionType </b>member of one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560496">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains PCIEXPRESS_ERROR_SECTION_GUID.</p>
+<p>The WHEA_PCIEXPRESS_ERROR_SECTION structure describes the error data that is contained in a PCI Express (PCIe) error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a PCIe error section only if the <b>SectionType </b>member of one of the <a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains PCIEXPRESS_ERROR_SECTION_GUID.</p>
 
 ## -requirements
 <table>
@@ -432,13 +432,13 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+<a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560496">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560580">WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</a>
+<a href="..\ntddk\ns-ntddk--whea-pciexpress-error-section-validbits.md">WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</a>
 </dt>
 </dl>
 <p> </p>

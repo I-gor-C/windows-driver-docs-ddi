@@ -101,17 +101,7 @@ NTSTATUS RtlOemToUnicodeN(
 
 <p>This routine does not modify the source string unless the <i>UnicodeString</i> and <i>OemString</i> pointers are equivalent. The returned Unicode string is null-terminated if it is not truncated. </p>
 
-<p>For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. </p>
-
-<p><b>RtlOemToUnicodeN</b> supports only precomposed Unicode characters that are mapped to the current system OEM code page installed at system boot time. </p>
-
-<p>If the current system code page defines a single-byte character set, all single-byte characters in the range 0x00 to 0x7f are simply zero-extended in the corresponding Unicode string to speed the conversion operation. The character value 0x5c in such a code page is translated into the backslash character, even if the current code page defines this character as the Yen sign. </p>
-
-<p>For the return value STATUS_SUCCESS, the value of <i>BytesInUnicodeString</i>, if any, indicates the length of the returned Unicode string, rather than the given <i>MaxBytesInUnicodeString</i>. </p>
-
-<p>This routine does not modify the source string unless the <i>UnicodeString</i> and <i>OemString</i> pointers are equivalent. The returned Unicode string is null-terminated if it is not truncated. </p>
-
-<p>For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. </p>
+<p>For information about other string-handling routines, see <a href="kernel.strings">Strings</a>. </p>
 
 ## -requirements
 <table>
@@ -168,13 +158,13 @@ NTSTATUS RtlOemToUnicodeN(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553142">RtlOemStringToCountedUnicodeString</a>
+<a href="..\ntifs\nf-ntifs-rtloemstringtocountedunicodestring.md">RtlOemStringToCountedUnicodeString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553153">RtlOemStringToUnicodeString</a>
+<a href="..\ntifs\nf-ntifs-rtloemstringtounicodestring.md">RtlOemStringToUnicodeString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553272">RtlUnicodeToOemN</a>
+<a href="..\ntifs\nf-ntifs-rtlunicodetooemn.md">RtlUnicodeToOemN</a>
 </dt>
 </dl>
 <p> </p>

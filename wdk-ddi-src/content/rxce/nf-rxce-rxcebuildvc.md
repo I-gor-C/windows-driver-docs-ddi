@@ -81,8 +81,6 @@ NTSTATUS RxCeBuildVC(
 ## -remarks
 <p>When <b>RxCeBuildVC</b> is successful, the data members in the RXCE_VC structure pointed to by the <i>pVC</i> parameter will be properly initialized and the virtual circuit will be added to the specified RDBSS connection. </p>
 
-<p>When <b>RxCeBuildVC</b> is successful, the data members in the RXCE_VC structure pointed to by the <i>pVC</i> parameter will be properly initialized and the virtual circuit will be added to the specified RDBSS connection. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -118,7 +116,7 @@ NTSTATUS RxCeBuildVC(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554332">RxCeTearDownVC</a>
+<a href="..\rxce\nf-rxce-rxceteardownvc.md">RxCeTearDownVC</a>
 </dt>
 </dl>
 <p> </p>

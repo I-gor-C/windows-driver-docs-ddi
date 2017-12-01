@@ -96,7 +96,7 @@ NTSTATUS EXPORT AcpiOpRegionHandler(
 ### -param <i>OperationRegionObject</i> 
 
 <dd>
-<p>Specifies the operation region object returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff536158">RegisterOpRegionHandler</a> for the operation region handler.</p>
+<p>Specifies the operation region object returned by <a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a> for the operation region handler.</p>
 </dd>
 
 ### -param <i>Address</i> 
@@ -156,14 +156,6 @@ NTSTATUS EXPORT AcpiOpRegionHandler(
 
 <p>For detailed information about constraints on operation regions, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=57185">Advanced Configuration and Power Interface (ACPI) Specification</a>.</p>
 
-<p>When the ACPI driver calls an operation region handler, it specifies values for <i>Address</i> and <i>Size</i> that ensure that the access is within the operation region that is defined in the ACPI BIOS for the ACPI device. The ACPI device function driver must ensure that the operation region memory buffer it allocates is at least as large, in bytes, as the operation region defined for the ACPI device.</p>
-
-<p>For more information about operation region handlers, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/supporting-an-operation-region">Supporting an Operation Region</a>.</p>
-
-<p>An ACPI_OP_REGION_HANDLER-typed routine runs at the caller's IRQL.</p>
-
-<p>For detailed information about constraints on operation regions, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=57185">Advanced Configuration and Power Interface (ACPI) Specification</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -199,10 +191,10 @@ NTSTATUS EXPORT AcpiOpRegionHandler(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536158">RegisterOpRegionHandler</a>
+<a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536135">DeRegisterOpRegionHandler</a>
+<a href="..\oprghdlr\nf-oprghdlr-deregisteropregionhandler.md">DeRegisterOpRegionHandler</a>
 </dt>
 </dl>
 <p> </p>

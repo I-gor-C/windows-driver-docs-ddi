@@ -62,12 +62,10 @@ POPLOCK_KEY_ECP_CONTEXT IoGetOplockKeyContextEx(
 </dl>
 
 ## -returns
-<p>An pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551003">OPLOCK_KEY_ECP_CONTEXT</a> structure containing the target oplock key for <i>FileObject</i>. Otherwise, NULL if <i>FileObject</i>  has no target oplock key.</p>
+<p>An pointer to an <a href="..\ntddk\ns-ntddk--oplock-key-ecp-context.md">OPLOCK_KEY_ECP_CONTEXT</a> structure containing the target oplock key for <i>FileObject</i>. Otherwise, NULL if <i>FileObject</i>  has no target oplock key.</p>
 
 ## -remarks
-<p>Use the <b>IoGetOplockKeyContext</b> routine only in Windows 7. Because  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439325">IoGetOplockKeyContextEx</a> returns a dual oplock key context, it should be used in Windows 8 and later versions of Windows.</p>
-
-<p>Use the <b>IoGetOplockKeyContext</b> routine only in Windows 7. Because  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439325">IoGetOplockKeyContextEx</a> returns a dual oplock key context, it should be used in Windows 8 and later versions of Windows.</p>
+<p>Use the <b>IoGetOplockKeyContext</b> routine only in Windows 7. Because  <a href="..\ntddk\nf-ntddk-iogetoplockkeycontextex.md">IoGetOplockKeyContextEx</a> returns a dual oplock key context, it should be used in Windows 8 and later versions of Windows.</p>
 
 ## -requirements
 <table>
@@ -122,16 +120,16 @@ POPLOCK_KEY_ECP_CONTEXT IoGetOplockKeyContextEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406392">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>
+<a href="ifsk.dual_oplock_key_ecp_context">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439325">IoGetOplockKeyContextEx</a>
+<a href="..\ntddk\nf-ntddk-iogetoplockkeycontextex.md">IoGetOplockKeyContextEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551003">OPLOCK_KEY_ECP_CONTEXT</a>
+<a href="..\ntddk\ns-ntddk--oplock-key-ecp-context.md">OPLOCK_KEY_ECP_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439448">OPLOCK_KEY_CONTEXT</a>
+<a href="..\ntddk\ns-ntddk--oplock-key-context.md">OPLOCK_KEY_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>

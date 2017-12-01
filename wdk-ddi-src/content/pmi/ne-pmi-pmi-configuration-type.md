@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The PMI_CONFIGURATION_TYPE enumeration defines the type of PMI configuration data that is referenced by the <b>Configuration</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543865">PMI_CONFIGURATION</a> structure. This enumeration is also used to specify the type of <a href="https://msdn.microsoft.com/library/windows/hardware/ff543859">PMI_CAPABILITIES</a> structure to return through an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543842">IOCTL_PMI_GET_CONFIGURATION</a> I/O control (IOCTL) request.</p>
+<p>The PMI_CONFIGURATION_TYPE enumeration defines the type of PMI configuration data that is referenced by the <b>Configuration</b> member of the <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure. This enumeration is also used to specify the type of <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure to return through an <a href="..\pmi\ni-pmi-ioctl-pmi-get-configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> I/O control (IOCTL) request.</p>
 
 
 ## -syntax
@@ -60,19 +60,19 @@ typedef enum  {
 ### -field <a id="PmiMeasurementConfiguration"></a><a id="pmimeasurementconfiguration"></a><a id="PMIMEASUREMENTCONFIGURATION"></a><b>PmiMeasurementConfiguration</b>
 
 <dd>
-<p>The PMI configuration data, formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543887">PMI_MEASUREMENT_CONFIGURATION</a> structure, contains information about the measurement configuration of the power meter.</p>
+<p>The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi--pmi-measurement-configuration.md">PMI_MEASUREMENT_CONFIGURATION</a> structure, contains information about the measurement configuration of the power meter.</p>
 </dd>
 
 ### -field <a id="PmiBudgetingConfiguration"></a><a id="pmibudgetingconfiguration"></a><a id="PMIBUDGETINGCONFIGURATION"></a><b>PmiBudgetingConfiguration</b>
 
 <dd>
-<p>The PMI configuration data, formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543858">PMI_BUDGETING_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.</p>
+<p>The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi--pmi-budgeting-configuration.md">PMI_BUDGETING_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.</p>
 </dd>
 
 ### -field <a id="PmiThresholdConfiguration"></a><a id="pmithresholdconfiguration"></a><a id="PMITHRESHOLDCONFIGURATION"></a><b>PmiThresholdConfiguration</b>
 
 <dd>
-<p>The PMI configuration data, formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543908">PMI_THRESHOLD_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.</p>
+<p>The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi--pmi-threshold-configuration.md">PMI_THRESHOLD_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.</p>
 </dd>
 
 ### -field <a id="PmiConfigurationMax"></a><a id="pmiconfigurationmax"></a><a id="PMICONFIGURATIONMAX"></a><b>PmiConfigurationMax</b>
@@ -83,11 +83,7 @@ typedef enum  {
 </dl>
 
 ## -remarks
-<p>The <b>ConfigurationType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543865">PMI_CONFIGURATION</a> structure contains information about the type of PMI configuration data that is referenced by the <b>Configuration</b> member of that structure. This structure is returned through a successful completion of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543842">IOCTL_PMI_GET_CONFIGURATION</a> IOCTL request and is passed in the input buffer for an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543849">IOCTL_PMI_SET_CONFIGURATION</a> IOCTL request.</p>
-
-<p>The <b>ConfigurationType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543865">PMI_CONFIGURATION</a> structure contains information about the type of PMI configuration data that is referenced by the <b>Configuration</b> member of that structure. This structure is returned through a successful completion of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543842">IOCTL_PMI_GET_CONFIGURATION</a> IOCTL request and is passed in the input buffer for an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543849">IOCTL_PMI_SET_CONFIGURATION</a> IOCTL request.</p>
-
-<p>The <b>ConfigurationType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543865">PMI_CONFIGURATION</a> structure contains information about the type of PMI configuration data that is referenced by the <b>Configuration</b> member of that structure. This structure is returned through a successful completion of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543842">IOCTL_PMI_GET_CONFIGURATION</a> IOCTL request and is passed in the input buffer for an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543849">IOCTL_PMI_SET_CONFIGURATION</a> IOCTL request.</p>
+<p>The <b>ConfigurationType</b> member of the <a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a> structure contains information about the type of PMI configuration data that is referenced by the <b>Configuration</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl-pmi-get-configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> IOCTL request and is passed in the input buffer for an <a href="..\pmi\ni-pmi-ioctl-pmi-set-configuration.md">IOCTL_PMI_SET_CONFIGURATION</a> IOCTL request.</p>
 
 ## -requirements
 <table>
@@ -114,22 +110,22 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543842">IOCTL_PMI_GET_CONFIGURATION</a>
+<a href="..\pmi\ni-pmi-ioctl-pmi-get-configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543849">IOCTL_PMI_SET_CONFIGURATION</a>
+<a href="..\pmi\ni-pmi-ioctl-pmi-set-configuration.md">IOCTL_PMI_SET_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543858">PMI_BUDGETING_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi--pmi-budgeting-configuration.md">PMI_BUDGETING_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543865">PMI_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi--pmi-configuration.md">PMI_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543887">PMI_MEASUREMENT_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi--pmi-measurement-configuration.md">PMI_MEASUREMENT_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543908">PMI_THRESHOLD_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi--pmi-threshold-configuration.md">PMI_THRESHOLD_CONFIGURATION</a>
 </dt>
 </dl>
 <p> </p>

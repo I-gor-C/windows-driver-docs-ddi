@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The POS_CX_EVENT_ATTRIBUTES describes the priority and access rights for the POS events coming from the device. The values are a combination of the values defined in <a href="https://msdn.microsoft.com/library/windows/hardware/mt593143">POS_CX_EVENT_DEST</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt593144">POS_CX_EVENT_PRIORITY</a>.</p>
+<p>The POS_CX_EVENT_ATTRIBUTES describes the priority and access rights for the POS events coming from the device. The values are a combination of the values defined in <a href="..\poscx\ne-poscx--pos-cx-event-dest.md">POS_CX_EVENT_DEST</a> and <a href="..\poscx\ne-poscx--pos-cx-event-priority.md">POS_CX_EVENT_PRIORITY</a>.</p>
 
 
 ## -syntax
@@ -104,10 +104,10 @@ typedef enum _POS_CX_EVENT_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt593143">POS_CX_EVENT_DEST</a>
+<a href="..\poscx\ne-poscx--pos-cx-event-dest.md">POS_CX_EVENT_DEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt593144">POS_CX_EVENT_PRIORITY</a>
+<a href="..\poscx\ne-poscx--pos-cx-event-priority.md">POS_CX_EVENT_PRIORITY</a>
 </dt>
 </dl>
 <p> </p>

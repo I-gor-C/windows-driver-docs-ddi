@@ -76,8 +76,6 @@ HRESULT SendMessage(
 ## -remarks
 <p>When the current transfer sequence is cancelled, the <b>SendMessage</b> method returns S_FALSE.</p>
 
-<p>When the current transfer sequence is cancelled, the <b>SendMessage</b> method returns S_FALSE.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -113,7 +111,7 @@ HRESULT SendMessage(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151550">IWiaMiniDrvTransferCallback</a>
+<a href="..\wiamindr_lh\nn-wiamindr-lh-iwiaminidrvtransfercallback.md">IWiaMiniDrvTransferCallback</a>
 </dt>
 <dt>
 <a href="NULL">Cancellation of Data Transfers in Windows Vista</a>

@@ -42,7 +42,7 @@ req.iface:
 <p>
    DirectX 9.0 and later versions only.
    </p>
-<p>DD_MULTISAMPLEQUALITYLEVELSDATA is the data structure pointed to by the <b>lpvData</b> field of <a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a> for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETMULTISAMPLEQUALITYLEVELS.</p>
+<p>DD_MULTISAMPLEQUALITYLEVELSDATA is the data structure pointed to by the <b>lpvData</b> field of <a href="display.dd_getdriverinfodata">DD_GETDRIVERINFODATA</a> for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETMULTISAMPLEQUALITYLEVELS.</p>
 
 
 ## -syntax
@@ -64,7 +64,7 @@ typedef struct _DD_MULTISAMPLEQUALITYLEVELSDATA {
 ### -field <b>gdi2</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551548">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
+<p>Specifies a <a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.</p>
 </dd>
 
 ### -field <b>Format</b>
@@ -95,7 +95,7 @@ typedef struct _DD_MULTISAMPLEQUALITYLEVELSDATA {
 ## -remarks
 <p>The driver assigns an integer from 1 to 8 to the <b>QualityLevels</b> member. If the driver fails, ignores this D3DGDI2_TYPE_GETMULTISAMPLEQUALITYLEVELS query, or returns a value that is out of range, but otherwise reports that it supports multisampling, then the runtime determines that the number of quality levels is 1. </p>
 
-<p>When the runtime calls a driver's <a href="display.ddcancreatesurface">DdCanCreateSurface</a>, <a href="display.ddcreatesurface">DdCreateSurface</a>, or <a href="display.d3dcreatesurfaceex">D3dCreateSurfaceEx</a> functions to create a surface, the runtime encodes the number of multiple-sample quality levels into three bits (the DDSCAPS3_MULTISAMPLE_QUALITY_MASK mask) of the <b>dwCaps3</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff550292">DDSCAPS2</a> structure.</p>
+<p>When the runtime calls a driver's <a href="display.ddcancreatesurface">DdCanCreateSurface</a>, <a href="display.ddcreatesurface">DdCreateSurface</a>, or <a href="display.d3dcreatesurfaceex">D3dCreateSurfaceEx</a> functions to create a surface, the runtime encodes the number of multiple-sample quality levels into three bits (the DDSCAPS3_MULTISAMPLE_QUALITY_MASK mask) of the <b>dwCaps3</b> member of a <a href="display.ddscaps2">DDSCAPS2</a> structure.</p>
 
 <p>For more information about D3DFORMAT and D3DMULTISAMPLE_TYPE, see the DirectX SDK documentation.</p>
 
@@ -125,13 +125,13 @@ typedef struct _DD_MULTISAMPLEQUALITYLEVELSDATA {
 <a href="display.ddcreatesurface">DdCreateSurface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
+<a href="display.dd_getdriverinfodata">DD_GETDRIVERINFODATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551548">DD_GETDRIVERINFO2DATA</a>
+<a href="..\d3dhal\ns-d3dhal--dd-getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550292">DDSCAPS2</a>
+<a href="display.ddscaps2">DDSCAPS2</a>
 </dt>
 </dl>
 <p> </p>

@@ -104,14 +104,6 @@ NTSTATUS SeCreateClientSecurityFromSubjectContext(
 
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.</p>
 
-<p><b>SeCreateClientSecurityFromSubjectContext</b> initializes a client security context block to represent a client's security context.</p>
-
-<p>If the <b>ContextTrackingMode</b> member of <i>ClientSecurityQos</i> is set to SECURITY_DYNAMIC_TRACKING and <i>ServerIsRemote</i> is set to <b>FALSE</b>, <b>SeCreateClientSecurityFromSubjectContext</b> uses a reference to the client's effective token. Otherwise, <b>SeCreateClientSecurityFromSubjectContext</b> creates a copy of the client's token.</p>
-
-<p>Each call to <b>SeCreateClientSecurityFromSubjectContext</b> must be matched by a subsequent call to <b>SeDeleteClientSecurity</b>.</p>
-
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -175,13 +167,13 @@ NTSTATUS SeCreateClientSecurityFromSubjectContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a>
+<a href="ifsk.security_subject_context">SECURITY_SUBJECT_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556648">SeDeleteClientSecurity</a>
+<a href="..\ntifs\nf-ntifs-sedeleteclientsecurity.md">SeDeleteClientSecurity</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556659">SeImpersonateClientEx</a>
+<a href="..\ntifs\nf-ntifs-seimpersonateclientex.md">SeImpersonateClientEx</a>
 </dt>
 </dl>
 <p> </p>

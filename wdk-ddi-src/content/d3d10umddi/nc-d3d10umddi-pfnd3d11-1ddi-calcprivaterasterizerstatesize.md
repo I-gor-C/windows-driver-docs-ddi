@@ -67,7 +67,7 @@ SIZE_T APIENTRY* CalcPrivateRasterizerStateSize(D3D11_1)(
 ### -param <i></i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451052">D3D11_1_DDI_RASTERIZER_DESC</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1-ddi-rasterizer-desc.md">D3D11_1_DDI_RASTERIZER_DESC</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>
 </dd>
 </dl>
 
@@ -120,7 +120,7 @@ SIZE_T APIENTRY* CalcPrivateRasterizerStateSize(D3D11_1)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451052">D3D11_1_DDI_RASTERIZER_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1-ddi-rasterizer-desc.md">D3D11_1_DDI_RASTERIZER_DESC</a>
 </dt>
 </dl>
 <p> </p>

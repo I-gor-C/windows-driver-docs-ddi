@@ -7,7 +7,7 @@ old-location: netvista\rilgetpreferencedoperatorlistformat_2.htm
 old-project: netvista
 ms.assetid: 1193174e-9247-4854-94d8-7404b2b15e5c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

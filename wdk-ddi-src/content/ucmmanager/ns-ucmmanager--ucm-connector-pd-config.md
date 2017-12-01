@@ -74,18 +74,18 @@ typedef struct _UCM_CONNECTOR_PD_CONFIG {
 ### -field <b>SupportedPowerRoles</b>
 
 <dd>
-<p>Indicates the operating mode of the connector. This value is a bitwise OR of <a href="https://msdn.microsoft.com/library/windows/hardware/mt187944">UCM_POWER_ROLE</a>-typed flags.</p>
+<p>Indicates the operating mode of the connector. This value is a bitwise OR of <a href="buses.ucm_power_role">UCM_POWER_ROLE</a>-typed flags.</p>
 </dd>
 
 ### -field <b>EvtSetPowerRole</b>
 
 <dd>
-<p>A pointer to the Policy Manager's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187819">EVT_UCM_CONNECTOR_SET_POWER_ROLE</a> event callback.</p>
+<p>A pointer to the Policy Manager's implementation of the <a href="buses.evt_ucm_connector_set_power_role">EVT_UCM_CONNECTOR_SET_POWER_ROLE</a> event callback.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Initialize this structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt187925">UCM_CONNECTOR_PD_CONFIG_INIT</a>. An initialized <a href="https://msdn.microsoft.com/library/windows/hardware/mt187930">UCM_CONNECTOR_TYPEC_CONFIG</a> structure is set to the <b>PdConfig</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187922">UCM_CONNECTOR_CONFIG</a> structure, which is an input parameter value to <a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a> that is called by Policy Manager to create a connector object.</p>
+<p>Initialize this structure by calling <a href="buses.ucm_connector_pd_config_init">UCM_CONNECTOR_PD_CONFIG_INIT</a>. An initialized <a href="buses.ucm_connector_type_c_config">UCM_CONNECTOR_TYPEC_CONFIG</a> structure is set to the <b>PdConfig</b> member of the <a href="buses.ucm_connector_config">UCM_CONNECTOR_CONFIG</a> structure, which is an input parameter value to <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a> that is called by Policy Manager to create a connector object.</p>
 
 ## -requirements
 <table>
@@ -136,7 +136,7 @@ typedef struct _UCM_CONNECTOR_PD_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>
+<a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>
 </dt>
 </dl>
 <p> </p>

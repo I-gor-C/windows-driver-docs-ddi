@@ -7,7 +7,7 @@ old-location: stream\ks_amvp_mode.htm
 old-project: stream
 ms.assetid: 9464a17a-fa09-46c5-a4a7-d5cbd58deebd
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices

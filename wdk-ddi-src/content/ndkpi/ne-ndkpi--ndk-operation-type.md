@@ -7,7 +7,7 @@ old-location: netvista\ndk_operation_type.htm
 old-project: netvista
 ms.assetid: EBB89BDA-6249-4D0F-A0EE-7074DDAFFFC1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>NDK_OPERATION_TYPE</b> enumeration defines types of NDK operations. Its enumeration values are used in the <b>Type</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265509">NDK_RESULT_EX</a> structure.</p>
+<p>The <b>NDK_OPERATION_TYPE</b> enumeration defines types of NDK operations. Its enumeration values are used in the <b>Type</b> member of the <a href="..\ndkpi\ns-ndkpi--ndk-result-ex.md">NDK_RESULT_EX</a> structure.</p>
 
 
 ## -syntax
@@ -64,49 +64,49 @@ typedef enum _NDK_OPERATION_TYPE {
 ### -field <a id="NdkOperationTypeReceive"></a><a id="ndkoperationtypereceive"></a><a id="NDKOPERATIONTYPERECEIVE"></a><b>NdkOperationTypeReceive</b>
 
 <dd>
-<p>An <i>NdkReceive</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439907">NDK_FN_RECEIVE</a>) operation.</p>
+<p>An <i>NdkReceive</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-receive.md">NDK_FN_RECEIVE</a>) operation.</p>
 </dd>
 
 ### -field <a id="NdkOperationTypeReceiveAndInvalidate"></a><a id="ndkoperationtypereceiveandinvalidate"></a><a id="NDKOPERATIONTYPERECEIVEANDINVALIDATE"></a><b>NdkOperationTypeReceiveAndInvalidate</b>
 
 <dd>
-<p>An <i>NdkSendAndInvalidate</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/dn265507">NDK_FN_SEND_AND_INVALIDATE</a>) operation.</p>
+<p>An <i>NdkSendAndInvalidate</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-send-and-invalidate.md">NDK_FN_SEND_AND_INVALIDATE</a>) operation.</p>
 </dd>
 
 ### -field <a id="NdkOperationTypeSend"></a><a id="ndkoperationtypesend"></a><a id="NDKOPERATIONTYPESEND"></a><b>NdkOperationTypeSend</b>
 
 <dd>
-<p>An <i>NdkSend</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439914">NDK_FN_SEND</a>) operation.</p>
+<p>An <i>NdkSend</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-send.md">NDK_FN_SEND</a>) operation.</p>
 </dd>
 
 ### -field <a id="NdkOperationTypeFastRegister"></a><a id="ndkoperationtypefastregister"></a><a id="NDKOPERATIONTYPEFASTREGISTER"></a><b>NdkOperationTypeFastRegister</b>
 
 <dd>
-<p>An <i>NdkFastRegister</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439887">NDK_FN_FAST_REGISTER</a>) operation.</p>
+<p>An <i>NdkFastRegister</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-fast-register.md">NDK_FN_FAST_REGISTER</a>) operation.</p>
 </dd>
 
 ### -field <a id="NdkOperationTypeBind"></a><a id="ndkoperationtypebind"></a><a id="NDKOPERATIONTYPEBIND"></a><b>NdkOperationTypeBind</b>
 
 <dd>
-<p>An <i>NdkBind</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439859">NDK_FN_BIND</a>)  operation.</p>
+<p>An <i>NdkBind</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-bind.md">NDK_FN_BIND</a>)  operation.</p>
 </dd>
 
 ### -field <a id="NdkOperationTypeInvalidate"></a><a id="ndkoperationtypeinvalidate"></a><a id="NDKOPERATIONTYPEINVALIDATE"></a><b>NdkOperationTypeInvalidate</b>
 
 <dd>
-<p>An <i>NdkInvalidate</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439901">NDK_FN_INVALIDATE</a>) operation.</p>
+<p>An <i>NdkInvalidate</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-invalidate.md">NDK_FN_INVALIDATE</a>) operation.</p>
 </dd>
 
 ### -field <a id="NdkOperationTypeRead"></a><a id="ndkoperationtyperead"></a><a id="NDKOPERATIONTYPEREAD"></a><b>NdkOperationTypeRead</b>
 
 <dd>
-<p>An <i>NdkRead</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439906">NDK_FN_READ</a>) operation.</p>
+<p>An <i>NdkRead</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-read.md">NDK_FN_READ</a>) operation.</p>
 </dd>
 
 ### -field <a id="NdkOperationTypeWrite"></a><a id="ndkoperationtypewrite"></a><a id="NDKOPERATIONTYPEWRITE"></a><b>NdkOperationTypeWrite</b>
 
 <dd>
-<p>An <i>NdkWrite</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439917">NDK_FN_WRITE</a>) operation.</p>
+<p>An <i>NdkWrite</i> (<a href="..\ndkpi\nc-ndkpi-ndk-fn-write.md">NDK_FN_WRITE</a>) operation.</p>
 </dd>
 </dl>
 
@@ -154,9 +154,9 @@ typedef enum _NDK_OPERATION_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265509">NDK_RESULT_EX</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-result-ex.md">NDK_RESULT_EX</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_OPERATION_TYPE enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_OPERATION_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

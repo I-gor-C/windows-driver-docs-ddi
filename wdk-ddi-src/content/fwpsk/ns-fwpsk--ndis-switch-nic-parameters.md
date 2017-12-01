@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_nic_parameters.htm
 old-project: netvista
 ms.assetid: 52B9DD8B-E96F-464C-9D98-5EF8B6C050C5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_SWITCH_NIC_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,7 +76,7 @@ typedef struct _NDIS_SWITCH_NIC_PARAMETERS {
 ### -field <b>Header</b>
 
 <dd>
-<p>The type, revision, and size of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure. This member is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.</p>
+<p>The type, revision, and size of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
 <p>The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: </p>
 <p></p>
 <dl>
@@ -150,13 +150,13 @@ typedef struct _NDIS_SWITCH_NIC_PARAMETERS {
 ### -field <b>NicType</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/hh598218">NDIS_SWITCH_NIC_TYPE</a> value that specifies the type of the network adapter that is connected to an extensible switch port.</p>
+<p>An <a href="..\ntddndis\ne-ntddndis--ndis-switch-nic-type.md">NDIS_SWITCH_NIC_TYPE</a> value that specifies the type of the network adapter that is connected to an extensible switch port.</p>
 </dd>
 
 ### -field <b>NicState</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/jj673024">NDIS_SWITCH_NIC_STATE</a> value that specifies the current state of the network adapter.</p>
+<p>An <a href="..\ntddndis\ne-ntddndis--ndis-switch-nic-state.md">NDIS_SWITCH_NIC_STATE</a> value that specifies the current state of the network adapter.</p>
 </dd>
 
 ### -field <b>VmName</b>
@@ -222,7 +222,7 @@ underlying network adapter.</p>
 ### -field <b>VMMacAddress</b>
 
 <dd>
-<p>A <b>UCHAR</b> array that specifies the MAC address that is configured on the network adapter inside the VM itself. The field is all zeros for non VM NICs. If <i>AllowMacSpoofing</i> (from <a href="https://msdn.microsoft.com/library/windows/hardware/hh598241">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>) is TRUE, this address will also be applied to the <i>CurrentMacAddress.</i></p>
+<p>A <b>UCHAR</b> array that specifies the MAC address that is configured on the network adapter inside the VM itself. The field is all zeros for non VM NICs. If <i>AllowMacSpoofing</i> (from <a href="..\ntddndis\ns-ntddndis--ndis-switch-port-property-security.md">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>) is TRUE, this address will also be applied to the <i>CurrentMacAddress.</i></p>
 </dd>
 
 ### -field <b>CurrentMacAddress</b>
@@ -244,7 +244,7 @@ underlying network adapter.</p>
 </dl>
 
 ## -remarks
-<p>OID query requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh598261">OID_SWITCH_NIC_ARRAY</a> return an <a href="https://msdn.microsoft.com/library/windows/hardware/hh598212">NDIS_SWITCH_NIC_ARRAY</a> structure that contains zero or more elements. Each element is formatted as an <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure.</p>
+<p>OID query requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh598261">OID_SWITCH_NIC_ARRAY</a> return an <a href="..\ntddndis\ns-ntddndis--ndis-switch-nic-array.md">NDIS_SWITCH_NIC_ARRAY</a> structure that contains zero or more elements. Each element is formatted as an <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure.</p>
 
 <p>The <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure is also used in the following OID requests: </p>
 
@@ -317,19 +317,19 @@ These types of network adapters are exposed in the guest operating system that r
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598212">NDIS_SWITCH_NIC_ARRAY</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-switch-nic-array.md">NDIS_SWITCH_NIC_ARRAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598215">NDIS_SWITCH_NIC_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-switch-nic-parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj673024">NDIS_SWITCH_NIC_STATE</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-switch-nic-state.md">NDIS_SWITCH_NIC_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598218">NDIS_SWITCH_NIC_TYPE</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-switch-nic-type.md">NDIS_SWITCH_NIC_TYPE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598206">NDIS_STATUS_SWITCH_PORT_REMOVE_VF</a>
@@ -361,4 +361,4 @@ These types of network adapters are exposed in the guest operating system that r
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

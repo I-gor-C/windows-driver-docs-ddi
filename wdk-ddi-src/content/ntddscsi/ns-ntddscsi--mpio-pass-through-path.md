@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>MPIO_PASS_THROUGH_PATH</b> structure is used together with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560492">IOCTL_MPIO_PASS_THROUGH_PATH</a> request to instruct the port driver to send an embedded SCSI command to the target device. </p>
+<p>The <b>MPIO_PASS_THROUGH_PATH</b> structure is used together with an <a href="..\ntddscsi\ni-ntddscsi-ioctl-mpio-pass-through-path.md">IOCTL_MPIO_PASS_THROUGH_PATH</a> request to instruct the port driver to send an embedded SCSI command to the target device. </p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ typedef struct _MPIO_PASS_THROUGH_PATH {
 ### -field <b>PassThrough</b>
 
 <dd>
-<p>Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565345">SCSI_PASS_THROUGH</a> structure that is set up in the same way as it is for an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560519">IOCTL_SCSI_PASS_THROUGH</a> request.</p>
+<p>Contains a <a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through.md">SCSI_PASS_THROUGH</a> structure that is set up in the same way as it is for an <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-pass-through.md">IOCTL_SCSI_PASS_THROUGH</a> request.</p>
 </dd>
 
 ### -field <b>Version</b>
@@ -105,7 +105,7 @@ typedef struct _MPIO_PASS_THROUGH_PATH {
 <p>MPIO_IOCTL_FLAG_USE_SCSIADDRESS</p>
 </td>
 <td>
-<p>The real LUN is specified in terms of the supplied <b>PortNumber</b> member and the <b>PathId</b> and <b>TargetId</b> members of the embedded <a href="https://msdn.microsoft.com/library/windows/hardware/ff565345">SCSI_PASS_THROUGH</a> structure. These values are obtained by using a WMI request for the PDOSCSI_ADDR that is associated with the real LUN. This flag or MPIO_IOCTL_FLAG_USE_PATHID must be set, but not both.</p>
+<p>The real LUN is specified in terms of the supplied <b>PortNumber</b> member and the <b>PathId</b> and <b>TargetId</b> members of the embedded <a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through.md">SCSI_PASS_THROUGH</a> structure. These values are obtained by using a WMI request for the PDOSCSI_ADDR that is associated with the real LUN. This flag or MPIO_IOCTL_FLAG_USE_PATHID must be set, but not both.</p>
 </td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ typedef struct _MPIO_PASS_THROUGH_PATH {
 ### -field <b>PortNumber</b>
 
 <dd>
-<p>The port number if MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set. Otherwise, this member is zero. If MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set, the <b>PathId</b> and <b>TargetId</b> values are taken from the embedded <a href="https://msdn.microsoft.com/library/windows/hardware/ff565345">SCSI_PASS_THROUGH</a> structure.</p>
+<p>The port number if MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set. Otherwise, this member is zero. If MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set, the <b>PathId</b> and <b>TargetId</b> values are taken from the embedded <a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through.md">SCSI_PASS_THROUGH</a> structure.</p>
 </dd>
 
 ### -field <b>MpioPathId</b>
@@ -138,7 +138,7 @@ typedef struct _MPIO_PASS_THROUGH_PATH {
 </dl>
 
 ## -remarks
-<p>The <b>MPIO_PASS_THROUGH_PATH</b> structure is used for a double-buffered device control request. To bypass buffering in system memory, callers should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff560495">IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT</a>. When the system handles an <b>IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT</b> request, it locks down the buffer in user memory, and the device accesses this memory directly.</p>
+<p>The <b>MPIO_PASS_THROUGH_PATH</b> structure is used for a double-buffered device control request. To bypass buffering in system memory, callers should use <a href="..\ntddscsi\ni-ntddscsi-ioctl-mpio-pass-through-path-direct.md">IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT</a>. When the system handles an <b>IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT</b> request, it locks down the buffer in user memory, and the device accesses this memory directly.</p>
 
 ## -requirements
 <table>
@@ -157,22 +157,22 @@ typedef struct _MPIO_PASS_THROUGH_PATH {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560519">IOCTL_SCSI_PASS_THROUGH</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-pass-through.md">IOCTL_SCSI_PASS_THROUGH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560521">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-pass-through-direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565346">SCSI_PASS_THROUGH_DIRECT</a>
+<a href="..\ntddscsi\ns-ntddscsi--scsi-pass-through-direct.md">SCSI_PASS_THROUGH_DIRECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560492">IOCTL_MPIO_PASS_THROUGH_PATH</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-mpio-pass-through-path.md">IOCTL_MPIO_PASS_THROUGH_PATH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560495">IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-mpio-pass-through-path-direct.md">IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

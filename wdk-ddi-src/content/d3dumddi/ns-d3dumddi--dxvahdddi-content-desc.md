@@ -63,14 +63,14 @@ typedef struct _DXVAHDDDI_CONTENT_DESC {
 ### -field <b>InputFrameFormat</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563056">DXVAHDDDI_FRAME_FORMAT</a>-typed value that indicates the frame format of the input video stream. </p>
+<p>[in] A <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-frame-format.md">DXVAHDDDI_FRAME_FORMAT</a>-typed value that indicates the frame format of the input video stream. </p>
 </dd>
 
 ### -field <b>InputFrameRate</b>
 
 <dd>
 <p>
-      [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563064">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the frame rate of the input video stream. 
+      [in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the frame rate of the input video stream. 
      </p>
 </dd>
 
@@ -90,7 +90,7 @@ typedef struct _DXVAHDDDI_CONTENT_DESC {
 
 <dd>
 <p>
-      [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563064">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the frame rate of the output. 
+      [in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the frame rate of the output. 
      </p>
 </dd>
 
@@ -135,10 +135,10 @@ typedef struct _DXVAHDDDI_CONTENT_DESC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563056">DXVAHDDDI_FRAME_FORMAT</a>
+<a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-frame-format.md">DXVAHDDDI_FRAME_FORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563064">DXVAHDDDI_RATIONAL</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-rational.md">DXVAHDDDI_RATIONAL</a>
 </dt>
 </dl>
 <p> </p>

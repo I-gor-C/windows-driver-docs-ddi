@@ -7,7 +7,7 @@ old-location: netvista\dot11extsendpacket.htm
 old-project: netvista
 ms.assetid: 0672eed0-4824-464b-9f4e-93862f27d586
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -134,40 +133,6 @@ DWORD WINAPI * Dot11ExtSendPacket(
 
 <p>This packet data is passed to the miniport driver.</p>
 
-<p>The IHV Extensions DLL must follow these guidelines when calling the 
-    <b>Dot11ExtSendPacket</b> function.</p>
-
-<p>The packet sent through a call of the 
-      <b>Dot11ExtSendPacket</b> function will complete asynchronously. The IHV
-      Extensions DLL must not free the memory referenced by the 
-      <i>pvPacket</i> parameter until the 
-      <a href="..\wlanihv\nc-wlanihv-dot11extihv-send-packet-completion.md">
-      Dot11ExtIhvSendPacketCompletion</a> IHV Handler function is called with the same handle value as the 
-      <i>hSendCompletion</i> parameter.</p>
-
-<p>The IHV Extensions DLL must set the 
-      <i>hSendCompletion</i> parameter to a value that uniquely identifies the packet data that is referenced
-      by the 
-      <i>pvPacket</i> parameter.</p>
-
-<p>For more information about the IHV Handler functions, see 
-    <a href="netvista.native_802_11_ihv_handler_functions">Native 802.11 IHV Handler
-    Functions</a>.</p>
-
-<p>The buffer pointed to by 
-    <i>pvPacket</i> should contain the following packet data, specified in network byte order:</p>
-
-<p>MAC address of destination (6 bytes), formatted according to the guidelines discussed in 
-      <a href="netvista.802_11_mac_header_management">802.11 MAC Header
-      Management</a>
-</p>
-
-<p>IEEE EtherType (2 bytes)</p>
-
-<p>Payload</p>
-
-<p>This packet data is passed to the miniport driver.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -220,4 +185,4 @@ DWORD WINAPI * Dot11ExtSendPacket(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SEND_PACKET callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SEND_PACKET callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

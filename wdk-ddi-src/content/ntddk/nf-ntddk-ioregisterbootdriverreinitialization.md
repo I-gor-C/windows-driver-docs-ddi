@@ -7,7 +7,7 @@ old-location: kernel\ioregisterbootdriverreinitialization.htm
 old-project: kernel
 ms.assetid: af1c1f4b-7710-4cf7-9596-32d11db98abb
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoRegisterBootDriverReinitialization
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ VOID IoRegisterBootDriverReinitialization(
 ### -param <i>DriverReinitializationRoutine</i> [in]
 
 <dd>
-<p>Pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561022">Reinitialize</a> routine.</p>
+<p>Pointer to the driver's <a href="..\ntddk\nc-ntddk-driver-reinitialize.md">Reinitialize</a> routine.</p>
 </dd>
 
 ### -param <i>Context</i> [in, optional]
@@ -79,15 +79,7 @@ VOID IoRegisterBootDriverReinitialization(
 <p>None</p>
 
 ## -remarks
-<p>A boot driver normally calls <b>IoRegisterBootDriverReinitialization</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine, which is run during boot driver initialization. <b>IoRegisterBootDriverReinitialization</b> registers the driver's reinitialization callback routine to be called by the I/O manager after all devices have been enumerated and started. The <i>DriverReinitializationRoutine</i> is run in a system thread at IRQL = PASSIVE_LEVEL. </p>
-
-<p>A driver should call <b>IoRegisterBootDriverReinitialization</b> only if its <i>DriverEntry</i> routine will return STATUS_SUCCESS. </p>
-
-<p>If the <i>DriverReinitializationRoutine</i> uses the registry, the <i>DriverEntry</i> routine must include in <b>IoRegisterBootDriverReinitialization</b>'s <i>Context</i> parameter a copy of the string to which <i>DriverEntry</i>'s own <i>RegistryPath</i> parameter points. </p>
-
-<p>The <i>DriverEntry</i> routine can call <b>IoRegisterBootDriverReinitialization</b> only once. If the reinitialization routine needs to be run more than once, the <i>DriverReinitializationRoutine</i> can call <b>IoRegisterBootDriverReinitialization</b> as many additional times as needed, using the <i>Count</i> parameter to keep track of the number of times the <i>DriverReinitializationRoutine</i> has been called. </p>
-
-<p>A boot driver normally calls <b>IoRegisterBootDriverReinitialization</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine, which is run during boot driver initialization. <b>IoRegisterBootDriverReinitialization</b> registers the driver's reinitialization callback routine to be called by the I/O manager after all devices have been enumerated and started. The <i>DriverReinitializationRoutine</i> is run in a system thread at IRQL = PASSIVE_LEVEL. </p>
+<p>A boot driver normally calls <b>IoRegisterBootDriverReinitialization</b> from its <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine, which is run during boot driver initialization. <b>IoRegisterBootDriverReinitialization</b> registers the driver's reinitialization callback routine to be called by the I/O manager after all devices have been enumerated and started. The <i>DriverReinitializationRoutine</i> is run in a system thread at IRQL = PASSIVE_LEVEL. </p>
 
 <p>A driver should call <b>IoRegisterBootDriverReinitialization</b> only if its <i>DriverEntry</i> routine will return STATUS_SUCCESS. </p>
 
@@ -158,7 +150,7 @@ VOID IoRegisterBootDriverReinitialization(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -166,15 +158,15 @@ VOID IoRegisterBootDriverReinitialization(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>
+<a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549511">IoRegisterDriverReinitialization</a>
+<a href="..\ntddk\nf-ntddk-ioregisterdriverreinitialization.md">IoRegisterDriverReinitialization</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561022">Reinitialize</a>
+<a href="..\ntddk\nc-ntddk-driver-reinitialize.md">Reinitialize</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterBootDriverReinitialization routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterBootDriverReinitialization routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

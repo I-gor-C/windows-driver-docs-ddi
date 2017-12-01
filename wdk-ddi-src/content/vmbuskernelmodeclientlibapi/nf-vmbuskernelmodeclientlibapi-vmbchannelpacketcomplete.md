@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelpacketcomplete.htm
 old-project: netvista
 ms.assetid: 1DC215DF-1F53-4910-84D5-17E13BE6202A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbChannelPacketComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,10 +85,6 @@ once processing is finished.  </p>
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>This function is called when the client driver is finished
-processing a packet.  This function may be called directly from the packet parsing function
-or it may be called later.  </p>
-
 <p>This function is called when the client driver is finished
 processing a packet.  This function may be called directly from the packet parsing function
 or it may be called later.  </p>

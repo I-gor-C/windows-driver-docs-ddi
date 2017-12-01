@@ -7,7 +7,7 @@ old-location: debugger\searchmemory.htm
 old-project: debugger
 ms.assetid: 7e07c47e-803b-44fa-9d0f-aa86475246d2
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: SearchMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices

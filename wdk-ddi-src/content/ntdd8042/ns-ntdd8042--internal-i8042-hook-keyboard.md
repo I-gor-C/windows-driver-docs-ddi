@@ -68,25 +68,25 @@ typedef struct _INTERNAL_I8042_HOOK_KEYBOARD {
 ### -field <b>InitializationRoutine</b>
 
 <dd>
-<p>Pointer, if non-<b>NULL</b>, to an optional <a href="https://msdn.microsoft.com/library/windows/hardware/ff543243">PI8042_KEYBOARD_INITIALIZATION_ROUTINE</a>callback. I8042prt uses this callback to initialize a device after the device is reset. Otherwise, <b>IntializatonRoutine</b> is <b>NULL</b>.</p>
+<p>Pointer, if non-<b>NULL</b>, to an optional <a href="..\ntdd8042\nc-ntdd8042-pi8042-keyboard-initialization-routine.md">PI8042_KEYBOARD_INITIALIZATION_ROUTINE</a>callback. I8042prt uses this callback to initialize a device after the device is reset. Otherwise, <b>IntializatonRoutine</b> is <b>NULL</b>.</p>
 </dd>
 
 ### -field <b>IsrRoutine</b>
 
 <dd>
-<p>Pointer, if non-<b>NULL</b>, to an optional <a href="https://msdn.microsoft.com/library/windows/hardware/ff543248">PI8042_KEYBOARD_ISR</a> callback that customizes the operation of the I8042prt keyboard ISR. Otherwise, <b>IsrRoutine </b>is <b>NULL</b>.</p>
+<p>Pointer, if non-<b>NULL</b>, to an optional <a href="..\ntdd8042\nc-ntdd8042-pi8042-keyboard-isr.md">PI8042_KEYBOARD_ISR</a> callback that customizes the operation of the I8042prt keyboard ISR. Otherwise, <b>IsrRoutine </b>is <b>NULL</b>.</p>
 </dd>
 
 ### -field <b>IsrWritePort</b>
 
 <dd>
-<p>Pointer to the system-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff543231">PI8042_ISR_WRITE_PORT</a> callback, which writes data to a keyboard.</p>
+<p>Pointer to the system-supplied <a href="..\ntdd8042\nc-ntdd8042-pi8042-isr-write-port.md">PI8042_ISR_WRITE_PORT</a> callback, which writes data to a keyboard.</p>
 </dd>
 
 ### -field <b>QueueKeyboardPacket</b>
 
 <dd>
-<p>Pointer to the system-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff543263">PI8042_QUEUE_PACKET</a> callback, which queues a keyboard input data packet for processing by the keyboard's ISR deferred procedure call.</p>
+<p>Pointer to the system-supplied <a href="..\ntdd8042\nc-ntdd8042-pi8042-queue-packet.md">PI8042_QUEUE_PACKET</a> callback, which queues a keyboard input data packet for processing by the keyboard's ISR deferred procedure call.</p>
 </dd>
 
 ### -field <b>CallContext</b>
@@ -97,7 +97,7 @@ typedef struct _INTERNAL_I8042_HOOK_KEYBOARD {
 </dl>
 
 ## -remarks
-<p>This structure is only used with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541238">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a> request. </p>
+<p>This structure is only used with an <a href="..\ntdd8042\ni-ntdd8042-ioctl-internal-i8042-hook-keyboard.md">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a> request. </p>
 
 <p><b>Context</b>, <b>InitializationRoutine</b>, and <b>IsrRoutine</b> can be supplied by an optional, vendor-supplied, upper-level filter driver.</p>
 
@@ -120,7 +120,7 @@ typedef struct _INTERNAL_I8042_HOOK_KEYBOARD {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541238">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a>
+<a href="..\ntdd8042\ni-ntdd8042-ioctl-internal-i8042-hook-keyboard.md">IOCTL_INTERNAL_I8042_HOOK_KEYBOARD</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/1ea0ce84-f3e3-48af-8015-66fc35c17129">KbFilter_InitializationRoutine</a>
@@ -129,13 +129,13 @@ typedef struct _INTERNAL_I8042_HOOK_KEYBOARD {
 <a href="https://msdn.microsoft.com/0feca7de-aa80-4d1e-a5fc-901c18169649">KbFilter_IsrHook</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543231">PI8042_ISR_WRITE_PORT</a>
+<a href="..\ntdd8042\nc-ntdd8042-pi8042-isr-write-port.md">PI8042_ISR_WRITE_PORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543248">PI8042_KEYBOARD_ISR</a>
+<a href="..\ntdd8042\nc-ntdd8042-pi8042-keyboard-isr.md">PI8042_KEYBOARD_ISR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543263">PI8042_QUEUE_PACKET</a>
+<a href="..\ntdd8042\nc-ntdd8042-pi8042-queue-packet.md">PI8042_QUEUE_PACKET</a>
 </dt>
 </dl>
 <p> </p>

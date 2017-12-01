@@ -7,7 +7,7 @@ old-location: wdf\iwdfdriver.htm
 old-project: wdf
 ms.assetid: ada475ae-e697-475c-b461-8e3a36ae9ab1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDriver</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>. <b>IWDFDriver</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDriver</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>. <b>IWDFDriver</b> also has these types of members:</p>
 
 <p>The <b>IWDFDriver</b> interface has these methods.</p>
 
@@ -71,7 +71,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+<a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdriver_createdevice">CreateDevice</a> method configures and creates a new framework device object.</p>
@@ -79,7 +79,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558902">IWDFDriver::CreatePreallocatedWdfMemory</a>
+<a href="wdf.iwdfdriver_createpreallocatedwdfmemory">IWDFDriver::CreatePreallocatedWdfMemory</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdriver_createpreallocatedwdfmemory">CreatePreallocatedWdfMemory</a> method creates a <a href="wdf.framework_memory_object">framework memory object</a> for the specified buffer.</p>
@@ -87,7 +87,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558905">IWDFDriver::CreateWdfMemory</a>
+<a href="wdf.iwdfdriver_createwdfmemory">IWDFDriver::CreateWdfMemory</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdriver_createwdfmemory">CreateWdfMemory</a> method creates a <a href="wdf.framework_memory_object">framework memory object</a> and allocates, for the memory object, a data buffer of the specified nonzero size.</p>
@@ -95,7 +95,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558906">IWDFDriver::CreateWdfObject</a>
+<a href="wdf.iwdfdriver_createwdfobject">IWDFDriver::CreateWdfObject</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdriver_createwdfobject">CreateWdfObject</a> method creates a custom (or user) WDF object from a parent WDF object.</p>
@@ -103,7 +103,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558909">IWDFDriver::IsVersionAvailable</a>
+<a href="wdf.iwdfdriver_isversionavailable">IWDFDriver::IsVersionAvailable</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdriver_isversionavailable">IsVersionAvailable</a> method determines whether the specified version of the framework is available.</p>
@@ -111,7 +111,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558911">IWDFDriver::RetrieveVersionString</a>
+<a href="wdf.iwdfdriver_retrieveversionstring">IWDFDriver::RetrieveVersionString</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdriver_retrieveversionstring">RetrieveVersionString</a> method retrieves the version of the framework.</p>

@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -67,7 +66,7 @@ IDE_PHYSICAL_ADDRESS AtaPortGetPhysicalAddress(
 ### -param <i>Irb</i> [in, optional]
 
 <dd>
-<p>A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which the address range is converted. </p>
+<p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which the address range is converted. </p>
 </dd>
 
 ### -param <i>VirtualAddress</i> [in, optional]
@@ -127,7 +126,7 @@ IDE_PHYSICAL_ADDRESS AtaPortGetPhysicalAddress(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a>
+<a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

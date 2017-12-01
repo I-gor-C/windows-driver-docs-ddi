@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CDROM_PERFORMANCE_HEADER structure is used by the  <a href="https://msdn.microsoft.com/library/windows/hardware/gg441242">IOCTL_CDROM_GET_PERFORMANCE</a>  IOCTL to  return data.  When the request type is  CdromPerformanceRequest, the IOCTL returns this header followed by optional descriptors. </p>
+<p>The CDROM_PERFORMANCE_HEADER structure is used by the  <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>  IOCTL to  return data.  When the request type is  CdromPerformanceRequest, the IOCTL returns this header followed by optional descriptors. </p>
 
 
 ## -syntax
@@ -68,7 +68,7 @@ typedef struct _CDROM_PERFORMANCE_HEADER {
 ### -field <b> Except</b>
 
 <dd>
-<p>The format of the descriptors that follow the header depend on the value in this field. If false (0), the <a href="https://msdn.microsoft.com/library/windows/hardware/gg441229">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a> follows the <b>CDROM_PERFORMANCE_HEADER</b> in the returned data. If true (1),  the <a href="https://msdn.microsoft.com/library/windows/hardware/gg441228">CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR</a> follows the <b>CDROM_PERFORMANCE_HEADER</b> in the returned data.</p>
+<p>The format of the descriptors that follow the header depend on the value in this field. If false (0), the <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-nominal-performance-descriptor.md">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a> follows the <b>CDROM_PERFORMANCE_HEADER</b> in the returned data. If true (1),  the <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-exception-performance-descriptor.md">CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR</a> follows the <b>CDROM_PERFORMANCE_HEADER</b> in the returned data.</p>
 </dd>
 
 ### -field <b>Write</b>
@@ -92,9 +92,9 @@ typedef struct _CDROM_PERFORMANCE_HEADER {
 ### -field <b> Data</b>
 
 <dd>
-<p>Contains a list of the following records, depending upon the type of request: <a href="https://msdn.microsoft.com/library/windows/hardware/gg441229">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a>,   
-    <a href="https://msdn.microsoft.com/library/windows/hardware/gg441228">CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR</a>,   
-    <a href="https://msdn.microsoft.com/library/windows/hardware/gg441239">CDROM_WRITE_SPEED_DESCRIPTOR</a>. 
+<p>Contains a list of the following records, depending upon the type of request: <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-nominal-performance-descriptor.md">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a>,   
+    <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-exception-performance-descriptor.md">CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR</a>,   
+    <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-write-speed-descriptor.md">CDROM_WRITE_SPEED_DESCRIPTOR</a>. 
 </p>
 </dd>
 </dl>
@@ -119,16 +119,16 @@ typedef struct _CDROM_PERFORMANCE_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441242">IOCTL_CDROM_GET_PERFORMANCE</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441229">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-nominal-performance-descriptor.md">CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441228">CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-exception-performance-descriptor.md">CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441239">CDROM_WRITE_SPEED_DESCRIPTOR</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-write-speed-descriptor.md">CDROM_WRITE_SPEED_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

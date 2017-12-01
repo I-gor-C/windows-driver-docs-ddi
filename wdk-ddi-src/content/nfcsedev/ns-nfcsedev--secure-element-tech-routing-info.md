@@ -7,7 +7,7 @@ old-location: nfpdrivers\_secure_element_tech_routing_info.htm
 old-project: nfpdrivers
 ms.assetid: 62622A56-D84A-40E4-9CFA-4B0938B8FD85
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: SECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>SECURE_ELEMENT_TECH_ROUTING_INFO is  a member of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905628">SECURE_ELEMENT_ROUTING_TABLE_ENTRY</a>.</p>
+<p>SECURE_ELEMENT_TECH_ROUTING_INFO is  a member of <a href="..\nfcsedev\ns-nfcsedev--secure-element-routing-table-entry.md">SECURE_ELEMENT_ROUTING_TABLE_ENTRY</a>.</p>
 
 
 ## -syntax

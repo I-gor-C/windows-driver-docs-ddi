@@ -39,19 +39,19 @@ req.iface:
 
 
 ## -description
-<p>The <b>IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO</b> request returns information about a parallel port. This information supplements the information that a client obtains by using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544002">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a> request. The additional information about the parallel port includes the type of system interface, the bus number, and the interrupt resources used by the port.</p>
+<p>The <b>IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO</b> request returns information about a parallel port. This information supplements the information that a client obtains by using an <a href="..\parallel\ni-parallel-ioctl-internal-get-parallel-port-info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a> request. The additional information about the parallel port includes the type of system interface, the bus number, and the interrupt resources used by the port.</p>
 <p>For more information, see <a href="https://msdn.microsoft.com/d8ae2296-05b6-419a-93cc-00fcb12d41fe">Obtaining Information About a ParallelPort</a>.</p>
 
 
 ## -ioctlparameters
 
 ### -input-buffer
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544207">MORE_PARALLEL_PORT_INFORMATION</a> structure.</p>
+<p>A <a href="..\parallel\ns-parallel--more-parallel-port-information.md">MORE_PARALLEL_PORT_INFORMATION</a> structure.</p>
 
 ### -input-buffer-length
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544207">MORE_PARALLEL_PORT_INFORMATION</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--more-parallel-port-information.md">MORE_PARALLEL_PORT_INFORMATION</a> structure.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544207">MORE_PARALLEL_PORT_INFORMATION</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--more-parallel-port-information.md">MORE_PARALLEL_PORT_INFORMATION</a> structure.</p>
 
 ### -output-buffer
 <p>The <b>AssociatedIrp.SystemBuffer</b> member points to a MORE_PARALLEL_PORT_INFORMATION structure that the client allocates to output parallel port information.</p>
@@ -139,13 +139,13 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543997">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-get-parallel-pnp-info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544002">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-get-parallel-port-info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544207">MORE_PARALLEL_PORT_INFORMATION</a>
+<a href="..\parallel\ns-parallel--more-parallel-port-information.md">MORE_PARALLEL_PORT_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

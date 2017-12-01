@@ -7,7 +7,7 @@ old-location: kernel\wmicompleterequest.htm
 old-project: kernel
 ms.assetid: c6377dcc-a83b-4766-b882-25d228a26efe
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WmiCompleteRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NTSTATUS WmiCompleteRequest(
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.</p>
+<p>A pointer to the driver's <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
 ### -param <i>Irp</i> [in, out]
@@ -86,7 +86,7 @@ NTSTATUS WmiCompleteRequest(
 ### -param <i>PriorityBoost </i> [in]
 
 <dd>
-<p>Specifies a system-defined constant by which to increment the run-time priority of the original thread that requested the operation. WMI calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548343">IoCompleteRequest</a> with <i>PriorityBoost</i> when it completes the IRP. See <b>IoCompleteRequest</b> for more information on <i>PriorityBoost</i>. </p>
+<p>Specifies a system-defined constant by which to increment the run-time priority of the original thread that requested the operation. WMI calls <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a> with <i>PriorityBoost</i> when it completes the IRP. See <b>IoCompleteRequest</b> for more information on <i>PriorityBoost</i>. </p>
 </dd>
 </dl>
 
@@ -98,13 +98,7 @@ NTSTATUS WmiCompleteRequest(
 
 <p>A driver should always return the return value from <b>WmiCompleteRequest</b> in its <i>DpWmiXxx</i> routine.</p>
 
-<p>A driver must not call <b>WmiCompleteRequest</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff544097">DpWmiQueryRegInfo</a> routine. </p>
-
-<p>A driver calls <b>WmiCompleteRequest</b> from a <i>DpWmiXxx</i> routine after it finishes all other processing in that routine, or after the driver finishes all processing for a pending IRP. <b>WmiCompleteRequest</b> fills in a <b>WNODE_<i>XXX</i></b> with any data returned by the driver and calls <b>IoCompleteRequest</b> to complete the IRP.</p>
-
-<p>A driver should always return the return value from <b>WmiCompleteRequest</b> in its <i>DpWmiXxx</i> routine.</p>
-
-<p>A driver must not call <b>WmiCompleteRequest</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff544097">DpWmiQueryRegInfo</a> routine. </p>
+<p>A driver must not call <b>WmiCompleteRequest</b> from its <a href="kernel.dpwmiqueryreginfo">DpWmiQueryRegInfo</a> routine. </p>
 
 ## -requirements
 <table>
@@ -159,30 +153,30 @@ NTSTATUS WmiCompleteRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544090">DpWmiExecuteMethod</a>
+<a href="kernel.dpwmiexecutemethod">DpWmiExecuteMethod</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544094">DpWmiFunctionControl</a>
+<a href="kernel.dpwmifunctioncontrol">DpWmiFunctionControl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544096">DpWmiQueryDataBlock</a>
+<a href="kernel.dpwmiquerydatablock">DpWmiQueryDataBlock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544097">DpWmiQueryReginfo</a>
+<a href="kernel.dpwmiqueryreginfo">DpWmiQueryReginfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544104">DpWmiSetDataBlock</a>
+<a href="kernel.dpwmisetdatablock">DpWmiSetDataBlock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544108">DpWmiSetDataItem</a>
+<a href="kernel.dpwmisetdataitem">DpWmiSetDataItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548343">IoCompleteRequest</a>
+<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565834">WmiSystemControl</a>
+<a href="..\wmilib\nf-wmilib-wmisystemcontrol.md">WmiSystemControl</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WmiCompleteRequest routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WmiCompleteRequest routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -75,8 +75,6 @@ HRESULT OnBidiResponseReceived(
 ## -remarks
 <p>The <i>bstrResponse</i> parameter is formatted according to the schema that is described in <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183368(v=vs.85).aspx">Bidi Request and Response Schemas</a>.</p>
 
-<p>The <i>bstrResponse</i> parameter is formatted according to the schema that is described in <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183368(v=vs.85).aspx">Bidi Request and Response Schemas</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -124,10 +122,10 @@ HRESULT OnBidiResponseReceived(
 <a href="print.iprinterqueue_sendbidiquery">IPrinterQueue::SendBidiQuery</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>
+<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439618">IPrinterQueueEvent</a>
+<a href="..\printerextension\nn-printerextension-iprinterqueueevent.md">IPrinterQueueEvent</a>
 </dt>
 </dl>
 <p> </p>

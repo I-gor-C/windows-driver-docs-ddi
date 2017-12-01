@@ -67,12 +67,12 @@ typedef struct _D3DHAL_DP2ADDDIRTYRECT {
 ### -field <b>rDirtyArea</b>
 
 <dd>
-<p>Specifies the 2D texture that was marked as dirtied. This is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure.</p>
+<p>Specifies the 2D texture that was marked as dirtied. This is a <a href="display.rectl">RECTL</a> structure.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>D3DHAL_DP2ADDDIRTYRECT, along with the DP2OP_ADDDIRTYRECT token, is used only for driver managed resources and surfaces. D3DHAL_DP2ADDDIRTYRECT is never sent unless the driver indicates that it manages resources. To indicate that it manages resources, the driver must set the DDCAPS2_CANMANAGERESOURCE bit, in addition to the DDCAPS2_CANMANAGETEXTURE bit, in the <b>dwCaps2</b> member of a DDCORECAPS structure. The driver specifies this <a href="https://msdn.microsoft.com/library/windows/hardware/ff549248">DDCORECAPS</a> structure in the <b>ddCaps</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a> structure when the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a> function is called to initialize the DirectDraw component of the driver.</p>
+<p>D3DHAL_DP2ADDDIRTYRECT, along with the DP2OP_ADDDIRTYRECT token, is used only for driver managed resources and surfaces. D3DHAL_DP2ADDDIRTYRECT is never sent unless the driver indicates that it manages resources. To indicate that it manages resources, the driver must set the DDCAPS2_CANMANAGERESOURCE bit, in addition to the DDCAPS2_CANMANAGETEXTURE bit, in the <b>dwCaps2</b> member of a DDCORECAPS structure. The driver specifies this <a href="display.ddcorecaps">DDCORECAPS</a> structure in the <b>ddCaps</b> member of a <a href="display.dd_halinfo">DD_HALINFO</a> structure when the driver's <a href="display.drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a> function is called to initialize the DirectDraw component of the driver.</p>
 
 ## -requirements
 <table>
@@ -91,19 +91,19 @@ typedef struct _D3DHAL_DP2ADDDIRTYRECT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545678">D3DHAL_DP2OPERATION</a>
+<a href="..\d3dhal\ne-d3dhal--d3dhal-dp2operation.md">D3DHAL_DP2OPERATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549248">DDCORECAPS</a>
+<a href="display.ddcorecaps">DDCORECAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a>
+<a href="display.dd_halinfo">DD_HALINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a>
+<a href="display.drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a>
 </dt>
 </dl>
 <p> </p>

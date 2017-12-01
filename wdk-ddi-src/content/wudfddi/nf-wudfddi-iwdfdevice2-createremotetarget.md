@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice2_createremotetarget.htm
 old-project: wdf
 ms.assetid: 0b11d913-f488-4237-85e3-4469eefc0b91
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFDevice2, CreateRemoteTarget, IWDFDevice2::CreateRemoteTarget
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,19 +61,19 @@ HRESULT CreateRemoteTarget(
 ### -param <i>pCallbackInterface</i> [in, optional]
 
 <dd>
-<p>A pointer to an optional, driver-supplied callback interface. The <b>IUnknown::QueryInterface</b> method of this interface must return a pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556894">IRemoteTargetCallbackRemoval</a> interface, if the driver supports that interface. This parameter is optional and can be <b>NULL</b>.</p>
+<p>A pointer to an optional, driver-supplied callback interface. The <b>IUnknown::QueryInterface</b> method of this interface must return a pointer to the driver's <a href="..\wudfddi\nn-wudfddi-iremotetargetcallbackremoval.md">IRemoteTargetCallbackRemoval</a> interface, if the driver supports that interface. This parameter is optional and can be <b>NULL</b>.</p>
 </dd>
 
 ### -param <i>pParentObject</i> [in, optional]
 
 <dd>
-<p>A pointer to a framework object. If the driver provides this optional pointer, the specified object becomes the parent of the new remote target object. If this parameter is <b>NULL</b>, the device object that provides the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556918">IWDFDevice2</a> interface becomes the parent. The framework will delete the remote target object when it deletes the parent object. </p>
+<p>A pointer to a framework object. If the driver provides this optional pointer, the specified object becomes the parent of the new remote target object. If this parameter is <b>NULL</b>, the device object that provides the <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a> interface becomes the parent. The framework will delete the remote target object when it deletes the parent object. </p>
 </dd>
 
 ### -param <i>ppRemoteTarget</i> [out]
 
 <dd>
-<p>A pointer to a location that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560247">IWDFRemoteTarget</a> interface of the new remote target object.</p>
+<p>A pointer to a location that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a> interface of the new remote target object.</p>
 </dd>
 </dl>
 
@@ -82,28 +82,20 @@ HRESULT CreateRemoteTarget(
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl><p>The framework's attempt to allocate memory failed.</p><dl>
 <dt><b>HRESULT_FROM_WIN32 (ERROR_INVALID_PARAMETER)</b></dt>
-</dl><p>The <i>pParentObject</i> parameter did not specify the device object that provides the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556918">IWDFDevice2</a> interface or an object whose chain of parents leads to that object. </p>
+</dl><p>The <i>pParentObject</i> parameter did not specify the device object that provides the <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a> interface or an object whose chain of parents leads to that object. </p>
 
 <p> </p>
 
 <p>This method might return one of the other values that Winerror.h contains.</p>
 
 ## -remarks
-<p>After your driver has called <b>CreateRemoteTarget</b>, the driver can open the remote target by calling either <a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a> (to open a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>) or <a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a> (to open a file).</p>
+<p>After your driver has called <b>CreateRemoteTarget</b>, the driver can open the remote target by calling either <a href="wdf.iwdfremotetarget_openremoteinterface">IWDFRemoteTarget::OpenRemoteInterface</a> (to open a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>) or <a href="wdf.iwdfremotetarget_openfilebyname">IWDFRemoteTarget::OpenFileByName</a> (to open a file).</p>
 
-<p>If the driver uses the <i>pParentObject</i> parameter to specify a parent object, the parent object can be the device object that provides the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556918">IWDFDevice2</a> interface, or it can be any object whose chain of parents leads to that device object. The framework will delete the remote target object when it (or the driver) deletes the device object.</p>
-
-<p>For more information about remote I/O targets, see <a href="wdf.using_i_o_targets_in_umdf">Using I/O Targets in UMDF</a>.</p>
-
-<p>For code examples that use <b>CreateRemoteTarget</b>, see the code examples at <a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>.</p>
-
-<p>After your driver has called <b>CreateRemoteTarget</b>, the driver can open the remote target by calling either <a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a> (to open a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>) or <a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a> (to open a file).</p>
-
-<p>If the driver uses the <i>pParentObject</i> parameter to specify a parent object, the parent object can be the device object that provides the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556918">IWDFDevice2</a> interface, or it can be any object whose chain of parents leads to that device object. The framework will delete the remote target object when it (or the driver) deletes the device object.</p>
+<p>If the driver uses the <i>pParentObject</i> parameter to specify a parent object, the parent object can be the device object that provides the <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a> interface, or it can be any object whose chain of parents leads to that device object. The framework will delete the remote target object when it (or the driver) deletes the device object.</p>
 
 <p>For more information about remote I/O targets, see <a href="wdf.using_i_o_targets_in_umdf">Using I/O Targets in UMDF</a>.</p>
 
-<p>For code examples that use <b>CreateRemoteTarget</b>, see the code examples at <a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>.</p>
+<p>For code examples that use <b>CreateRemoteTarget</b>, see the code examples at <a href="wdf.iwdfdevice2_createremoteinterface">IWDFDevice2::CreateRemoteInterface</a> and <a href="wdf.iwdfremotetarget_openfilebyname">IWDFRemoteTarget::OpenFileByName</a>.</p>
 
 ## -requirements
 <table>
@@ -158,15 +150,15 @@ HRESULT CreateRemoteTarget(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556918">IWDFDevice2</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>
+<a href="wdf.iwdfremotetarget_openfilebyname">IWDFRemoteTarget::OpenFileByName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>
+<a href="wdf.iwdfremotetarget_openremoteinterface">IWDFRemoteTarget::OpenRemoteInterface</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice2::CreateRemoteTarget method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice2::CreateRemoteTarget method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -71,7 +71,7 @@ HRESULT APIENTRY* NegotiateCryptoSessionKeyExchange(
 ### -param <i>hCryptoSession</i> [in]
 
 <dd>
-<p>A handle to the cryptographic session object that was created through a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function. 
+<p>A handle to the cryptographic session object that was created through a call to the <a href="display.createcryptosession1">CreateCryptoSession</a> function. 
 
 </p>
 </dd>
@@ -104,12 +104,6 @@ HRESULT APIENTRY* NegotiateCryptoSessionKeyExchange(
 <p> </p>
 
 ## -remarks
-<p>The <i>pData</i> parameter references a buffer that contains a session key for the cryptographic session. The key exchange mechanism depends on the type of the encryption algorithm that is used by the cryptographic session.</p>
-
-<p>For sessions that use the RSA Encryption Scheme - Optimal Asymmetric Encryption Padding (RSAES-OAEP) algorithm, the key buffer must contain 256 bytes of data and must be encrypted by using the RSA Encryption Scheme - Optimal Asymmetric Encryption Padding (RSAES-OAEP) algorithm with the public key from the cryptographic session certificate.</p>
-
-<p>The key exchange for a cryptographic session is identical to the key exchange for the Output Protection Manager (OPM) interface. However,  the OPM key buffer contains additional data besides the session key.  </p>
-
 <p>The <i>pData</i> parameter references a buffer that contains a session key for the cryptographic session. The key exchange mechanism depends on the type of the encryption algorithm that is used by the cryptographic session.</p>
 
 <p>For sessions that use the RSA Encryption Scheme - Optimal Asymmetric Encryption Padding (RSAES-OAEP) algorithm, the key buffer must contain 256 bytes of data and must be encrypted by using the RSA Encryption Scheme - Optimal Asymmetric Encryption Padding (RSAES-OAEP) algorithm with the public key from the cryptographic session certificate.</p>
@@ -159,7 +153,7 @@ HRESULT APIENTRY* NegotiateCryptoSessionKeyExchange(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a>
+<a href="display.createcryptosession1">CreateCryptoSession</a>
 </dt>
 </dl>
 <p> </p>

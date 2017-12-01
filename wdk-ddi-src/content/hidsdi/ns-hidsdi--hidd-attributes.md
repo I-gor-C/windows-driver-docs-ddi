@@ -83,9 +83,9 @@ typedef struct _HIDD_ATTRIBUTES {
 </dl>
 
 ## -remarks
-<p>A caller of <a href="https://msdn.microsoft.com/library/windows/hardware/ff538900">HidD_GetAttributes</a>, uses this structure to obtain a device's vendor information.</p>
+<p>A caller of <a href="..\hidsdi\nf-hidsdi-hidd-getattributes.md">HidD_GetAttributes</a>, uses this structure to obtain a device's vendor information.</p>
 
-<p>Before using a HIDD_ATTRIBUTES structure with <a href="https://msdn.microsoft.com/library/windows/hardware/ff538865">HIDClass support routines</a>, the caller must set the <b>Size</b> member.</p>
+<p>Before using a HIDD_ATTRIBUTES structure with <a href="hid.hidclass_support_routines">HIDClass support routines</a>, the caller must set the <b>Size</b> member.</p>
 
 ## -requirements
 <table>
@@ -104,7 +104,7 @@ typedef struct _HIDD_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538900">HidD_GetAttributes</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getattributes.md">HidD_GetAttributes</a>
 </dt>
 </dl>
 <p> </p>

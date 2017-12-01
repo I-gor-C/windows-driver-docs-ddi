@@ -7,7 +7,7 @@ old-location: stream\stream_priority.htm
 old-project: stream
 ms.assetid: 790A00A5-1107-4686-B690-80D07B69AF62
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PST_PARAMETER_DATA, ST_PARAMETER_DATA, *PST_PARAMETER_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

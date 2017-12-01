@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>StorPortInitializePerfOpts</b> function initializes the performance optimizations that both the miniport driver and the Storport driver support using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563845">PERF_CONFIGURATION_DATA</a> structure.</p>
+<p>The <b>StorPortInitializePerfOpts</b> function initializes the performance optimizations that both the miniport driver and the Storport driver support using a <a href="..\storport\ns-storport--perf-configuration-data.md">PERF_CONFIGURATION_DATA</a> structure.</p>
 
 
 ## -syntax
@@ -85,7 +85,7 @@ ULONG StorPortInitializePerfOpts(
 
 <p>Or if <i>Query</i> is set to <b>TRUE</b>,  the <b>Flags</b> member of the structure pointed to by <i>PerfConfigData</i> contains the supported flags.</p><dl>
 <dt><b>STOR_STATUS_UNSUCCESSFUL</b></dt>
-</dl><p>The miniport driver set a flag in <i>PerfConfigData</i> that Storport did not recognize, or the miniport driver has called this routine from outside the miniport-driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a> routine.</p><dl>
+</dl><p>The miniport driver set a flag in <i>PerfConfigData</i> that Storport did not recognize, or the miniport driver has called this routine from outside the miniport-driver-supplied <a href="storage.hwstorinitialize">HwStorInitialize</a> routine.</p><dl>
 <dt><b>STOR_STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl><p>Unable to allocate internal structures to support the requested optimizations.</p><dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
@@ -95,16 +95,10 @@ ULONG StorPortInitializePerfOpts(
 
 ## -remarks
 <p>
-    The miniport driver can call <b>StorPortInitializePerfOpts</b> only during the miniport-supplied   <a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a> routine or <a href="https://msdn.microsoft.com/library/windows/hardware/ff557407">HwStorPassiveInitializeRoutine</a> routine.
+    The miniport driver can call <b>StorPortInitializePerfOpts</b> only during the miniport-supplied   <a href="storage.hwstorinitialize">HwStorInitialize</a> routine or <a href="storage.hwstorpassiveinitializeroutine">HwStorPassiveInitializeRoutine</a> routine.
    </p>
 
-<p>Available performance optimizations depend on the version of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563845">PERF_CONFIGURATION_DATA</a>. Setting the <b>Version</b> member to <b>STOR_PERF_VERSION</b> will allow all supported optimizations to be selected.</p>
-
-<p>
-    The miniport driver can call <b>StorPortInitializePerfOpts</b> only during the miniport-supplied   <a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a> routine or <a href="https://msdn.microsoft.com/library/windows/hardware/ff557407">HwStorPassiveInitializeRoutine</a> routine.
-   </p>
-
-<p>Available performance optimizations depend on the version of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563845">PERF_CONFIGURATION_DATA</a>. Setting the <b>Version</b> member to <b>STOR_PERF_VERSION</b> will allow all supported optimizations to be selected.</p>
+<p>Available performance optimizations depend on the version of <a href="..\storport\ns-storport--perf-configuration-data.md">PERF_CONFIGURATION_DATA</a>. Setting the <b>Version</b> member to <b>STOR_PERF_VERSION</b> will allow all supported optimizations to be selected.</p>
 
 ## -requirements
 <table>
@@ -133,7 +127,7 @@ ULONG StorPortInitializePerfOpts(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454270">StorPortPerfOpts</a>
+<a href="devtest.storport_storportperfopts">StorPortPerfOpts</a>
 </td>
 </tr>
 </table>
@@ -141,7 +135,7 @@ ULONG StorPortInitializePerfOpts(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563845">PERF_CONFIGURATION_DATA</a>
+<a href="..\storport\ns-storport--perf-configuration-data.md">PERF_CONFIGURATION_DATA</a>
 </dt>
 </dl>
 <p> </p>

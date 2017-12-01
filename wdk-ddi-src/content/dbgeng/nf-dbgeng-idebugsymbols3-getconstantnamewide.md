@@ -7,7 +7,7 @@ old-location: debugger\getconstantnamewide.htm
 old-project: debugger
 ms.assetid: 743d2f83-905b-4bc9-8e23-b330c3ca7629
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols3, GetConstantNameWide, IDebugSymbols3::GetConstantNameWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -106,8 +106,6 @@ HRESULT GetConstantNameWide(
 <p> </p>
 
 ## -remarks
-<p>For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
-
 <p>For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
 
 ## -requirements

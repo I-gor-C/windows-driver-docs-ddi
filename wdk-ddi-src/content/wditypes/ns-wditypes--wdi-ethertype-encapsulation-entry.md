@@ -7,7 +7,7 @@ old-location: netvista\wdi_ethertype_encapsulation_entry.htm
 old-project: netvista
 ms.assetid: 49FE4EC0-B735-48C0-B26E-E165CA840D12
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_ETHERTYPE_ENCAPSULATION_ENTRY, WDI_ETHERTYPE_ENCAPSULATION_ENTRY, *PWDI_ETHERTYPE_ENCAPSULATION_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices

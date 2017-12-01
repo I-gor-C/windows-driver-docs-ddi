@@ -7,7 +7,7 @@ old-location: netvista\ndismcmactivatevc.htm
 old-project: netvista
 ms.assetid: 2c2e4f7d-578a-4429-baca-ebe45423afff
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCmActivateVc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisMCmActivateVc (NDIS 5.1)) in
-   Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisMCmActivateVc (NDIS 5.1)) in
-   Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmActivateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmActivateVc (NDIS 5.1)) in   Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -96,10 +92,10 @@ NDIS_STATUS NdisMCmActivateVc(
     <b>NdisMCmActivateVc</b> following the handshake denoting a negotiated agreement with the remote node or
     successful call-setup at the switch, before it notifies NDIS (and the client) of outgoing call completion
     with 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563544">NdisMCmMakeCallComplete</a>. For an
+    <a href="..\ndis\nf-ndis-ndismcmmakecallcomplete.md">NdisMCmMakeCallComplete</a>. For an
     incoming call, an MCM driver usually calls 
     <b>NdisMCmActivateVc</b> after it has called 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562812">NdisMCmCreateVc</a> successfully and before it
+    <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a> successfully and before it
     calls 
     <a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">
     NdisMCmDispatchIncomingCall</a>.</p>
@@ -110,53 +106,7 @@ NDIS_STATUS NdisMCmActivateVc(
 
 <p>For the duration of the connection, an MCM driver can modify the call parameters as conditions on the
     network change and/or whenever the client calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561636">NdisClModifyCallQoS</a>. The MCM driver
-    must update the state that it maintains about call parameters to the new values if it can continue to
-    make transfers on the VC according to the newly modified call parameters. It must call 
-    <b>NdisMCmActivateVc</b> to notify NDIS of any changes in the call parameters for the active VC.
-    Otherwise, the MCM driver can do either of the following:</p>
-
-<p>Call 
-      <b>NdisMCmDeactivateVc</b> after failing the client's request to modify QoS or other call parameters for
-      the VC to such a state that the miniport driver cannot continue to make transfers on the VC.</p>
-
-<p>Restore the call parameters to a previously accepted state, notify the client that requested the
-      change, and remain ready to continue transferring data on the VC. In this case, the client has the
-      option of accepting the restored call parameters or rejecting them and initiating a close of the
-      VC.</p>
-
-<p>Only connection-oriented miniport drivers that provide integrated call-management support can call 
-    <b>NdisMCmActivateVc</b>. Stand-alone call managers, which register themselves with NDIS as protocol
-    drivers, call 
-    <b>NdisCmActivateVc</b> instead.</p>
-
-<p><b>NdisMCmActivateVc</b> informs NDIS that an MCM driver has set up call and media parameters on a newly
-    created VC or changed the call parameters on an established VC.</p>
-
-<p>An MCM driver must call 
-    <b>NdisMCmActivateVc</b> after establishing a connection on a VC but before any data is sent or received
-    on that VC. This call notifies NDIS that the miniport driver has made a NIC ready for transfers on the
-    VC.</p>
-
-<p>For a client-initiated outgoing call, an MCM driver usually calls 
-    <b>NdisMCmActivateVc</b> following the handshake denoting a negotiated agreement with the remote node or
-    successful call-setup at the switch, before it notifies NDIS (and the client) of outgoing call completion
-    with 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563544">NdisMCmMakeCallComplete</a>. For an
-    incoming call, an MCM driver usually calls 
-    <b>NdisMCmActivateVc</b> after it has called 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562812">NdisMCmCreateVc</a> successfully and before it
-    calls 
-    <a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">
-    NdisMCmDispatchIncomingCall</a>.</p>
-
-<p>The driver writer determines whether an MCM driver has an (internal) 
-    <i>MiniportCoActivateVc</i> function that the driver calls in the context of setting up connections for
-    outgoing and incoming calls.</p>
-
-<p>For the duration of the connection, an MCM driver can modify the call parameters as conditions on the
-    network change and/or whenever the client calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561636">NdisClModifyCallQoS</a>. The MCM driver
+    <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>. The MCM driver
     must update the state that it maintains about call parameters to the new values if it can continue to
     make transfers on the VC according to the newly modified call parameters. It must call 
     <b>NdisMCmActivateVc</b> to notify NDIS of any changes in the call parameters for the active VC.
@@ -233,7 +183,7 @@ NDIS_STATUS NdisMCmActivateVc(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
+<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -247,22 +197,22 @@ NDIS_STATUS NdisMCmActivateVc(
 <a href="..\ndis\nc-ndis-miniport-co-activate-vc.md">MiniportCoActivateVc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561636">NdisClModifyCallQoS</a>
+<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561649">NdisCmActivateVc</a>
+<a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562818">NdisMCmDeactivateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562830">NdisMCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562812">NdisMCmCreateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-co-create-vc.md">ProtocolCoCreateVc</a>
@@ -270,4 +220,4 @@ NDIS_STATUS NdisMCmActivateVc(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmActivateVc function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmActivateVc function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

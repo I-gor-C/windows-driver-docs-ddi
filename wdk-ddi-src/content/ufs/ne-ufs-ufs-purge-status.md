@@ -104,18 +104,6 @@ the values 2, 3, 4, or 5, the
 cleared to <b>UFS_PurgeStatusIdle</b> the first time
 that it is read.</p>
 
-<p>When the <b>UFS_PURGE_STATUS</b> is equal to
-the values 2, 3, 4, or 5, the
-<b>UFS_PURGE_STATUS</b> is automatically
-cleared to <b>UFS_PurgeStatusIdle</b> the first time
-that it is read.</p>
-
-<p>When the <b>UFS_PURGE_STATUS</b> is equal to
-the values 2, 3, 4, or 5, the
-<b>UFS_PURGE_STATUS</b> is automatically
-cleared to <b>UFS_PurgeStatusIdle</b> the first time
-that it is read.</p>
-
 ## -requirements
 <table>
 <tr>

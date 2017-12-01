@@ -76,7 +76,7 @@ NTSTATUS DxgkDdiOPMConfigureProtectedOutput(
 ### -param <i>Parameters</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560849">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a> structure that contains parameters that are used to configure the protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter. </p>
+<p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-configure-parameters.md">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a> structure that contains parameters that are used to configure the protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter. </p>
 </dd>
 
 ### -param <i>AdditionalParametersSize</i> [in]
@@ -104,10 +104,6 @@ NTSTATUS DxgkDdiOPMConfigureProtectedOutput(
 <p>This function might also return other error codes that are defined in Ntstatus.h.</p>
 
 ## -remarks
-<p>The DirectX graphics kernel subsystem calls <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a> or <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-copp-compatible-information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> to retrieve information about the output and then calls <i>DxgkDdiOPMConfigureProtectedOutput</i> one or more times to configure the output.</p>
-
-<p><i>DxgkDdiOPMConfigureProtectedOutput</i> should be made pageable.</p>
-
 <p>The DirectX graphics kernel subsystem calls <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a> or <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-copp-compatible-information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> to retrieve information about the output and then calls <i>DxgkDdiOPMConfigureProtectedOutput</i> one or more times to configure the output.</p>
 
 <p><i>DxgkDdiOPMConfigureProtectedOutput</i> should be made pageable.</p>
@@ -159,7 +155,7 @@ NTSTATUS DxgkDdiOPMConfigureProtectedOutput(
 <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560849">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-configure-parameters.md">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

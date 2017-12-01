@@ -7,7 +7,7 @@ old-location: stream\ksfilterfactorysetdeviceclassesstate.htm
 old-project: stream
 ms.assetid: 66515f08-b652-4aa0-8f22-b5ff0a407d6a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsFilterFactorySetDeviceClassesState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ NTSTATUS KsFilterFactorySetDeviceClassesState(
 ### -param <i>FilterFactory</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a> for which to change device class status.</p>
+<p>A pointer to the <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> for which to change device class status.</p>
 </dd>
 
 ### -param <i>NewState</i> [in]
@@ -72,8 +72,6 @@ NTSTATUS KsFilterFactorySetDeviceClassesState(
 <p><b>KsFilterFactorySetDeviceClassesState</b> returns STATUS_SUCCESS or an error code.</p>
 
 ## -remarks
-<p>This function is available in Windows XP and DirectX 8.0 and later.</p>
-
 <p>This function is available in Windows XP and DirectX 8.0 and later.</p>
 
 ## -requirements

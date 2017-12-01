@@ -71,7 +71,7 @@ typedef struct _D3DDDI_RESOURCEFLAGS2 {
 
 <dd>
 <p>If set, indicates that the resource can be used as a capture buffer and/or a video encoder input resource.</p>
-<p>If this member is set, the driver must set  either the <b>FORMATOP_CAPTURE</b> or <b>FORMATOP_VIDEO_ENCODER</b> flag values, or both, in the <b>Operations</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566438">FORMATOP</a> structure.</p>
+<p>If this member is set, the driver must set  either the <b>FORMATOP_CAPTURE</b> or <b>FORMATOP_VIDEO_ENCODER</b> flag values, or both, in the <b>Operations</b> member of the <a href="..\d3dumddi\ns-d3dumddi--formatop.md">FORMATOP</a> structure.</p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
@@ -149,7 +149,7 @@ typedef struct _D3DDDI_RESOURCEFLAGS2 {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource2.md">CreateResource2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566438">FORMATOP</a>
+<a href="..\d3dumddi\ns-d3dumddi--formatop.md">FORMATOP</a>
 </dt>
 </dl>
 <p> </p>

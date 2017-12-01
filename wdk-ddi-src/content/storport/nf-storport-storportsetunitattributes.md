@@ -100,8 +100,6 @@ ULONG StorPortSetUnitAttributes(
 ## -remarks
 <p>A miniport driver will call this routine to register the unit attributes with Storport during completion of an SRB containing a SCSIOP_INQUIRY command request.  The bitfields in <i>attributes</i> are set based on the data returned from the adapter for the inquiry command. Storport will issue an inquiry for the unit at <i>Address</i> during a bus enumeration.</p>
 
-<p>A miniport driver will call this routine to register the unit attributes with Storport during completion of an SRB containing a SCSIOP_INQUIRY command request.  The bitfields in <i>attributes</i> are set based on the data returned from the adapter for the inquiry command. Storport will issue an inquiry for the unit at <i>Address</i> during a bus enumeration.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -145,10 +143,10 @@ ULONG StorPortSetUnitAttributes(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451518">STOR_ADDRESS</a>
+<a href="..\scsi\ns-scsi--stor-address.md">STOR_ADDRESS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj206458">STOR_UNIT_ATTRIBUTES</a>
+<a href="..\storport\ns-storport--stor-unit-attributes.md">STOR_UNIT_ATTRIBUTES</a>
 </dt>
 </dl>
 <p> </p>

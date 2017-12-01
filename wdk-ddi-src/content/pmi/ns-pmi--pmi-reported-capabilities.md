@@ -103,7 +103,7 @@ typedef struct _PMI_REPORTED_CAPABILITIES {
 ### -field <b>MeasurementUnit</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff543897">PMI_MEASUREMENT_UNIT</a> enumeration value that specifies the measurement unit. </p>
+<p>A <a href="..\pmi\ne-pmi-pmi-measurement-unit.md">PMI_MEASUREMENT_UNIT</a> enumeration value that specifies the measurement unit. </p>
 <div class="alert"><b>Note</b>  Beginning with Windows 7, Windows Server 2008 R2, only measurement units of milliwatts (mW) are supported.</div>
 <div> </div>
 </dd>
@@ -111,7 +111,7 @@ typedef struct _PMI_REPORTED_CAPABILITIES {
 ### -field <b>MeasurementType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff543895">PMI_MEASUREMENT_TYPE</a> enumeration value that specifies the measurement type, such as whether input or output power is measured.</p>
+<p>A <a href="..\pmi\ne-pmi-pmi-measurement-type.md">PMI_MEASUREMENT_TYPE</a> enumeration value that specifies the measurement type, such as whether input or output power is measured.</p>
 </dd>
 
 ### -field <b>Accuracy</b>
@@ -190,9 +190,9 @@ typedef struct _PMI_REPORTED_CAPABILITIES {
 
 <p>The power meter's asset information. This information is defined by the OEM for the power meter.</p>
 
-<p>The PMI_REPORTED_CAPABILITIES structure is returned through an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543837">IOCTL_PMI_GET_CAPABILITIES</a> I/O control (IOCTL) query request. The input data for this query request is set to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543864">PMI_CAPABILITIES_TYPE</a> enumerator value of <b>PmiReportedCapabilities</b>..</p>
+<p>The PMI_REPORTED_CAPABILITIES structure is returned through an <a href="..\pmi\ni-pmi-ioctl-pmi-get-capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> I/O control (IOCTL) query request. The input data for this query request is set to the <a href="..\pmi\ne-pmi-pmi-capabilities-type.md">PMI_CAPABILITIES_TYPE</a> enumerator value of <b>PmiReportedCapabilities</b>..</p>
 
-<p>If the query request completes successfully, the request returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543859">PMI_CAPABILITIES</a> structure. The <b>Capabilities</b> member of this structure is formatted as a PMI_REPORTED_CAPABILITIES structure.</p>
+<p>If the query request completes successfully, the request returns a <a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a> structure. The <b>Capabilities</b> member of this structure is formatted as a PMI_REPORTED_CAPABILITIES structure.</p>
 
 ## -requirements
 <table>
@@ -219,13 +219,13 @@ typedef struct _PMI_REPORTED_CAPABILITIES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543837">IOCTL_PMI_GET_CAPABILITIES</a>
+<a href="..\pmi\ni-pmi-ioctl-pmi-get-capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543859">PMI_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi--pmi-capabilities.md">PMI_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543864">PMI_CAPABILITIES_TYPE</a>
+<a href="..\pmi\ne-pmi-pmi-capabilities-type.md">PMI_CAPABILITIES_TYPE</a>
 </dt>
 </dl>
 <p> </p>

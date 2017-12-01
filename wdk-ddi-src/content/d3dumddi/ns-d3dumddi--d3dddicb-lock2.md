@@ -65,7 +65,7 @@ typedef struct _D3DDDICB_LOCK2 {
 ### -field <b>Flags</b>
 
 <dd>
-<p>A set of flags to pass to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a> kernel function which will determine how the allocation is locked. See <a href="https://msdn.microsoft.com/library/windows/hardware/dn894602">D3DDDICB_LOCK2FLAGS</a> for details.</p>
+<p>A set of flags to pass to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a> kernel function which will determine how the allocation is locked. See <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lock2flags.md">D3DDDICB_LOCK2FLAGS</a> for details.</p>
 </dd>
 
 ### -field <b>pData</b>
@@ -114,7 +114,7 @@ typedef struct _D3DDDICB_LOCK2 {
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn894602">D3DDDICB_LOCK2FLAGS</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lock2flags.md">D3DDDICB_LOCK2FLAGS</a>
 </dt>
 </dl>
 <p> </p>

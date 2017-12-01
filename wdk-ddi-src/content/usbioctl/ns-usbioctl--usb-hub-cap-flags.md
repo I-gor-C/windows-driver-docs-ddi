@@ -140,10 +140,10 @@ typedef union _USB_HUB_CAP_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539329">USB_HUB_CAPABILITIES_EX</a>
+<a href="..\usbioctl\ns-usbioctl--usb-hub-capabilities-ex.md">USB_HUB_CAPABILITIES_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

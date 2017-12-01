@@ -7,7 +7,7 @@ old-location: stream\ksgetbusenumpnpdeviceobject.htm
 old-project: stream
 ms.assetid: 8e81a294-9388-467d-8405-472fbe9fe827
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsGetBusEnumPnpDeviceObject
 ms.prod: windows-hardware
 ms.technology: windows-devices

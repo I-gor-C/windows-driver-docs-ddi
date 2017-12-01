@@ -77,8 +77,6 @@ __checkReturn HRESULT APIENTRY DeletePixelShader(
 ## -remarks
 <p>The <b>DeletePixelShader</b> function notifies the driver about the deletion of the pixel shader code object that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createpixelshader.md">CreatePixelShader</a> function created. The driver can then clean up any driver-side resources that are associated with the pixel shader code.</p>
 
-<p>The <b>DeletePixelShader</b> function notifies the driver about the deletion of the pixel shader code object that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createpixelshader.md">CreatePixelShader</a> function created. The driver can then clean up any driver-side resources that are associated with the pixel shader code.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -117,7 +115,7 @@ __checkReturn HRESULT APIENTRY DeletePixelShader(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createpixelshader.md">CreatePixelShader</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

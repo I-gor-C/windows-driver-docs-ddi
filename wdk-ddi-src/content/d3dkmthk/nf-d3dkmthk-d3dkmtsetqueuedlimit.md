@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTSetQueuedLimit(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548314">D3DKMT_SETQUEUEDLIMIT</a> structure that describes parameters for setting or retrieving the limit of queued operations.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setqueuedlimit.md">D3DKMT_SETQUEUEDLIMIT</a> structure that describes parameters for setting or retrieving the limit of queued operations.</p>
 </dd>
 </dl>
 
@@ -132,10 +132,10 @@ NTSTATUS APIENTRY D3DKMTSetQueuedLimit(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548225">D3DKMT_QUEUEDLIMIT_TYPE</a>
+<a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-queuedlimit-type.md">D3DKMT_QUEUEDLIMIT_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548314">D3DKMT_SETQUEUEDLIMIT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setqueuedlimit.md">D3DKMT_SETQUEUEDLIMIT</a>
 </dt>
 </dl>
 <p> </p>

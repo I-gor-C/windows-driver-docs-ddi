@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTAcquireKeyedMutex(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547275">D3DKMT_ACQUIREKEYEDMUTEX</a> structure that specifies the keyed mutex object to acquire. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-acquirekeyedmutex.md">D3DKMT_ACQUIREKEYEDMUTEX</a> structure that specifies the keyed mutex object to acquire. </p>
 </dd>
 </dl>
 
@@ -71,7 +71,7 @@ NTSTATUS APIENTRY D3DKMTAcquireKeyedMutex(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546732">D3DKMTAcquireKeyedMutex</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
@@ -135,7 +135,7 @@ NTSTATUS APIENTRY D3DKMTAcquireKeyedMutex(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547275">D3DKMT_ACQUIREKEYEDMUTEX</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-acquirekeyedmutex.md">D3DKMT_ACQUIREKEYEDMUTEX</a>
 </dt>
 </dl>
 <p> </p>

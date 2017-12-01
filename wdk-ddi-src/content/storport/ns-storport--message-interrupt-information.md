@@ -63,7 +63,7 @@ typedef struct _MESSAGE_INTERRUPT_INFORMATION {
 ### -field <b>MessageId</b>
 
 <dd>
-<p>An identifier identifies the MSI interrupt. A miniport driver can pass this value to <a href="https://msdn.microsoft.com/library/windows/hardware/ff567023">StorPortAcquireMSISpinLock</a> in the <i>MessageId</i> parameter to obtain a spin lock for synchronization purposes. </p>
+<p>An identifier identifies the MSI interrupt. A miniport driver can pass this value to <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a> in the <i>MessageId</i> parameter to obtain a spin lock for synchronization purposes. </p>
 </dd>
 
 ### -field <b>MessageData</b>
@@ -93,12 +93,12 @@ typedef struct _MESSAGE_INTERRUPT_INFORMATION {
 ### -field <b>InterruptMode</b>
 
 <dd>
-<p>A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff554239">KINTERRUPT_MODE</a> that specifies the interrupt mode associated with the message.  </p>
+<p>A value of type <a href="..\wdm\ne-wdm--kinterrupt-mode.md">KINTERRUPT_MODE</a> that specifies the interrupt mode associated with the message.  </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Miniport drivers retrieve the MSI information in a <b>MESSAGE_INTERRUPT_INFORMATION</b> structure by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567090">StorPortGetMSIInfo</a> routine. </p>
+<p>Miniport drivers retrieve the MSI information in a <b>MESSAGE_INTERRUPT_INFORMATION</b> structure by calling the <a href="..\storport\nf-storport-storportgetmsiinfo.md">StorPortGetMSIInfo</a> routine. </p>
 
 ## -requirements
 <table>
@@ -117,7 +117,7 @@ typedef struct _MESSAGE_INTERRUPT_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567090">StorPortGetMSIInfo</a>
+<a href="..\storport\nf-storport-storportgetmsiinfo.md">StorPortGetMSIInfo</a>
 </dt>
 </dl>
 <p> </p>

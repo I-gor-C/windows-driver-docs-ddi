@@ -7,7 +7,7 @@ old-location: stream\kspersistdeviceprofile.htm
 old-project: stream
 ms.assetid: 4EC3E99B-C73C-4EAC-9EBD-BB45ABFCE8EC
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsPersistDeviceProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ req.iface:
 ### -param <i>FilterFactory</i> [in]
 
 <dd>
-<p>This is the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a> that was used to initialize the profile store in <a href="https://msdn.microsoft.com/library/windows/hardware/dn917797">KsInitializeDeviceProfile</a>.</p>
+<p>This is the <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> that was used to initialize the profile store in <a href="..\ks\nf-ks-ksinitializedeviceprofile.md">KsInitializeDeviceProfile</a>.</p>
 </dd>
 </dl>
 

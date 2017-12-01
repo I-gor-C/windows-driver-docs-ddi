@@ -7,7 +7,7 @@ old-location: stream\ksmpegvid_rect.htm
 old-project: stream
 ms.assetid: 3fde33d4-a9c8-4647-bd2d-3da66f13ef8a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KSMPEGVID_RECT, KSMPEGVID_RECT, *PKSMPEGVID_RECT
 ms.prod: windows-hardware
 ms.technology: windows-devices

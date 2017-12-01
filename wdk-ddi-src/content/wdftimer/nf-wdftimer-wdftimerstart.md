@@ -7,7 +7,7 @@ old-location: wdf\wdftimerstart.htm
 old-project: wdf
 ms.assetid: 32c40be2-dee0-4ac7-9f78-a64b9f985f51
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfTimerStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Wdf01000.sys (KMDF); 
-WUDFx02000.dll (UMDF)
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
 req.iface: 
@@ -61,7 +60,7 @@ BOOLEAN WdfTimerStart(
 ### -param <i>Timer</i> [in]
 
 <dd>
-<p>A handle to a framework timer object that was obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a>.</p>
+<p>A handle to a framework timer object that was obtained by calling <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>.</p>
 </dd>
 
 ### -param <i>DueTime</i> [in]
@@ -75,7 +74,7 @@ BOOLEAN WdfTimerStart(
 <li>If the value is positive, the time period specifies an absolute time (which is actually relative to January 1, 1601).</li>
 </ul>
 </p>
-<div class="alert"><b>Warning</b>  If you set the <b>UseHighResolutionTimer</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552519">WDF_TIMER_CONFIG</a> to <b>WdfTrue</b>, you must call <b>WdfTimerStart</b> with the <i>DueTime</i> parameter set to a negative value.  Otherwise, the call causes the system to crash.</div>
+<div class="alert"><b>Warning</b>  If you set the <b>UseHighResolutionTimer</b> member of <a href="..\wdftimer\ns-wdftimer--wdf-timer-config.md">WDF_TIMER_CONFIG</a> to <b>WdfTrue</b>, you must call <b>WdfTimerStart</b> with the <i>DueTime</i> parameter set to a negative value.  Otherwise, the call causes the system to crash.</div>
 <div> </div>
 <p>Relative times are not affected by any changes to the system time that might occur within the specified time period. Absolute times do reflect system time changes.</p>
 <p>The framework provides <a href="wdf.wdf_timer_object_reference">time conversion functions</a> that convert time values into system time units.
@@ -92,33 +91,17 @@ BOOLEAN WdfTimerStart(
 <p>A bug check occurs if the driver supplies an invalid object handle.</p>
 
 ## -remarks
-<p>After a driver calls <b>WdfTimerStart</b>, the framework calls the driver's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function when the time that is specified for the <i>DueTime</i> parameter elapses. After this first call, the framework calls the callback function each time that the time period that is specified by the <b>Period</b> member of the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552519">WDF_TIMER_CONFIG</a> structure elapses. </p>
+<p>After a driver calls <b>WdfTimerStart</b>, the framework calls the driver's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function when the time that is specified for the <i>DueTime</i> parameter elapses. After this first call, the framework calls the callback function each time that the time period that is specified by the <b>Period</b> member of the driver's <a href="..\wdftimer\ns-wdftimer--wdf-timer-config.md">WDF_TIMER_CONFIG</a> structure elapses. </p>
 
 <p>The expiration of the timer ultimately depends on the granularity of the system clock. The value specified for <i>DueTime</i> guarantees that the framework calls the driver's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function on or after the given <i>DueTime</i>. However, <b>WdfTimerStart</b> cannot override the granularity of the system clock, whatever the value specified for <i>DueTime</i>. </p>
 
-<p>When a driver calls <b>WdfTimerStart</b>, its timer object is added to the system's queue of timer objects. If the timer is not a periodic timer, the system removes the timer object from the queue after the timer's "due time" has elapsed. If the timer is a periodic timer, the timer object remains in the queue until the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550056">WdfTimerStop</a>.</p>
+<p>When a driver calls <b>WdfTimerStart</b>, its timer object is added to the system's queue of timer objects. If the timer is not a periodic timer, the system removes the timer object from the queue after the timer's "due time" has elapsed. If the timer is a periodic timer, the timer object remains in the queue until the driver calls <a href="..\wdftimer\nf-wdftimer-wdftimerstop.md">WdfTimerStop</a>.</p>
 
 <p>A driver might call <b>WdfTimerStart</b> from its <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function in order to restart a non-periodic timer after it expires.</p>
 
 <p><b>WdfTimerStart</b> returns <b>TRUE</b> if the driver has previously called <b>WdfTimerStart</b> and the timer object is still in the system's queue because the time period has not elapsed (or because it is a periodic timer). Before <b>WdfTimerStart</b> returns <b>TRUE</b>, the operating system resets the time period to the value that the driver specified in the new call to <b>WdfTimerStart</b>. The framework calls the <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function only after the new time period elapses.</p>
 
-<p>To stop the timer's clock, the driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff550056">WdfTimerStop</a>.</p>
-
-<p>For more information about framework timer objects, see <a href="wdf.using_timers">Using Timers</a>.</p>
-
-<p>The following code example starts a timer. The framework will call the timer's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function after 10 milliseconds. </p>
-
-<p>After a driver calls <b>WdfTimerStart</b>, the framework calls the driver's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function when the time that is specified for the <i>DueTime</i> parameter elapses. After this first call, the framework calls the callback function each time that the time period that is specified by the <b>Period</b> member of the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552519">WDF_TIMER_CONFIG</a> structure elapses. </p>
-
-<p>The expiration of the timer ultimately depends on the granularity of the system clock. The value specified for <i>DueTime</i> guarantees that the framework calls the driver's <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function on or after the given <i>DueTime</i>. However, <b>WdfTimerStart</b> cannot override the granularity of the system clock, whatever the value specified for <i>DueTime</i>. </p>
-
-<p>When a driver calls <b>WdfTimerStart</b>, its timer object is added to the system's queue of timer objects. If the timer is not a periodic timer, the system removes the timer object from the queue after the timer's "due time" has elapsed. If the timer is a periodic timer, the timer object remains in the queue until the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550056">WdfTimerStop</a>.</p>
-
-<p>A driver might call <b>WdfTimerStart</b> from its <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function in order to restart a non-periodic timer after it expires.</p>
-
-<p><b>WdfTimerStart</b> returns <b>TRUE</b> if the driver has previously called <b>WdfTimerStart</b> and the timer object is still in the system's queue because the time period has not elapsed (or because it is a periodic timer). Before <b>WdfTimerStart</b> returns <b>TRUE</b>, the operating system resets the time period to the value that the driver specified in the new call to <b>WdfTimerStart</b>. The framework calls the <a href="wdf.evttimerfunc">EvtTimerFunc</a> callback function only after the new time period elapses.</p>
-
-<p>To stop the timer's clock, the driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff550056">WdfTimerStop</a>.</p>
+<p>To stop the timer's clock, the driver can call <a href="..\wdftimer\nf-wdftimer-wdftimerstop.md">WdfTimerStop</a>.</p>
 
 <p>For more information about framework timer objects, see <a href="wdf.using_timers">Using Timers</a>.</p>
 
@@ -186,7 +169,7 @@ BOOLEAN WdfTimerStart(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -197,15 +180,15 @@ BOOLEAN WdfTimerStart(
 <a href="wdf.evttimerfunc">EvtTimerFunc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552519">WDF_TIMER_CONFIG</a>
+<a href="..\wdftimer\ns-wdftimer--wdf-timer-config.md">WDF_TIMER_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a>
+<a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550056">WdfTimerStop</a>
+<a href="..\wdftimer\nf-wdftimer-wdftimerstop.md">WdfTimerStop</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfTimerStart method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfTimerStart method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

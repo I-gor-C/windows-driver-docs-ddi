@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The TAPE_SET_DRIVE_PARAMETERS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560632">IOCTL_TAPE_SET_DRIVE_PARAMS</a> request to adjust the configurable parameters of a tape drive.</p>
+<p>The TAPE_SET_DRIVE_PARAMETERS structure is used in conjunction with the <a href="..\ntddtape\ni-ntddtape-ioctl-tape-set-drive-params.md">IOCTL_TAPE_SET_DRIVE_PARAMS</a> request to adjust the configurable parameters of a tape drive.</p>
 
 
 ## -syntax
@@ -109,10 +109,10 @@ typedef struct _TAPE_SET_DRIVE_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560632">IOCTL_TAPE_SET_DRIVE_PARAMS</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl-tape-set-drive-params.md">IOCTL_TAPE_SET_DRIVE_PARAMS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567952">TapeMiniSetDriveParameters</a>
+<a href="storage.tapeminisetdriveparameters">TapeMiniSetDriveParameters</a>
 </dt>
 </dl>
 <p> </p>

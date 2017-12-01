@@ -82,7 +82,7 @@ typedef struct _STORAGE_PHYSICAL_NODE_DATA {
 ### -field <b>AdapterDataOffset</b>
 
 <dd>
-<p>The data offset from the beginning of the data structure. The buffer contains an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt653959">STORAGE_PHYSICAL_ADAPTER_DATA</a>.</p>
+<p>The data offset from the beginning of the data structure. The buffer contains an array of <a href="..\ntddstor\ns-ntddstor--storage-physical-adapter-data.md">STORAGE_PHYSICAL_ADAPTER_DATA</a>.</p>
 </dd>
 
 ### -field <b>DeviceCount</b>
@@ -100,7 +100,7 @@ typedef struct _STORAGE_PHYSICAL_NODE_DATA {
 ### -field <b>DeviceDataOffset</b>
 
 <dd>
-<p>The data offset from the beginning of the data structure. The buffer contains an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt653960">STORAGE_PHYSICAL_DEVICE_DATA</a>.</p>
+<p>The data offset from the beginning of the data structure. The buffer contains an array of <a href="..\ntddstor\ns-ntddstor--storage-physical-device-data.md">STORAGE_PHYSICAL_DEVICE_DATA</a>.</p>
 </dd>
 
 ### -field <b>Reserved[3]</b>

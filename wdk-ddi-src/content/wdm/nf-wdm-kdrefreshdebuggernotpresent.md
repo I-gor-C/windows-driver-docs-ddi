@@ -69,30 +69,6 @@ NTKERNELAPI BOOLEAN KdRefreshDebuggerNotPresent(void);
 
 <p>The following sample shows how to use <b>KdRefreshDebuggerNotPresent</b>:</p>
 
-<p>When <b>KdRefreshDebuggerNotPresent</b> is called, it forces the value of KD_DEBUGGER_NOT_PRESENT to be updated to reflect whether a kernel debugger is currently attached. This updated value is also used as the return value of this routine.</p>
-
-<p>If a kernel debugger was recently attached or removed, the value of KD_DEBUGGER_NOT_PRESENT may not reflect the new state. If you suspect this has happened, you should call <b>KdRefreshDebuggerNotPresent</b> to refresh the value of this variable. After this call, you may use either the value of KD_DEBUGGER_NOT_PRESENT or the return value of <b>KdRefreshDebuggerNotPresent</b> to determine if the kernel debugger is present.</p>
-
-<p>KD_DEBUGGER_NOT_PRESENT can be modified by Windows or any other kernel-mode binary. Therefore, it is possible that the most recent return value of <b>KdRefreshDebuggerNotPresent</b> may not match the current value of KD_DEBUGGER_NOT_PRESENT.</p>
-
-<p>The following sample shows how to use <b>KdRefreshDebuggerNotPresent</b>:</p>
-
-<p>When <b>KdRefreshDebuggerNotPresent</b> is called, it forces the value of KD_DEBUGGER_NOT_PRESENT to be updated to reflect whether a kernel debugger is currently attached. This updated value is also used as the return value of this routine.</p>
-
-<p>If a kernel debugger was recently attached or removed, the value of KD_DEBUGGER_NOT_PRESENT may not reflect the new state. If you suspect this has happened, you should call <b>KdRefreshDebuggerNotPresent</b> to refresh the value of this variable. After this call, you may use either the value of KD_DEBUGGER_NOT_PRESENT or the return value of <b>KdRefreshDebuggerNotPresent</b> to determine if the kernel debugger is present.</p>
-
-<p>KD_DEBUGGER_NOT_PRESENT can be modified by Windows or any other kernel-mode binary. Therefore, it is possible that the most recent return value of <b>KdRefreshDebuggerNotPresent</b> may not match the current value of KD_DEBUGGER_NOT_PRESENT.</p>
-
-<p>The following sample shows how to use <b>KdRefreshDebuggerNotPresent</b>:</p>
-
-<p>When <b>KdRefreshDebuggerNotPresent</b> is called, it forces the value of KD_DEBUGGER_NOT_PRESENT to be updated to reflect whether a kernel debugger is currently attached. This updated value is also used as the return value of this routine.</p>
-
-<p>If a kernel debugger was recently attached or removed, the value of KD_DEBUGGER_NOT_PRESENT may not reflect the new state. If you suspect this has happened, you should call <b>KdRefreshDebuggerNotPresent</b> to refresh the value of this variable. After this call, you may use either the value of KD_DEBUGGER_NOT_PRESENT or the return value of <b>KdRefreshDebuggerNotPresent</b> to determine if the kernel debugger is present.</p>
-
-<p>KD_DEBUGGER_NOT_PRESENT can be modified by Windows or any other kernel-mode binary. Therefore, it is possible that the most recent return value of <b>KdRefreshDebuggerNotPresent</b> may not match the current value of KD_DEBUGGER_NOT_PRESENT.</p>
-
-<p>The following sample shows how to use <b>KdRefreshDebuggerNotPresent</b>:</p>
-
 ## -requirements
 <table>
 <tr>

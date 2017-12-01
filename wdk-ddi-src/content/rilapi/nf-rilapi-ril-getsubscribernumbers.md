@@ -7,7 +7,7 @@ old-location: netvista\ril_getsubscribernumbers.htm
 old-project: netvista
 ms.assetid: 31634cee-0d8e-4eed-b127-906da6a7b8fe
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetSubscriberNumbers
 ms.prod: windows-hardware
 ms.technology: windows-devices

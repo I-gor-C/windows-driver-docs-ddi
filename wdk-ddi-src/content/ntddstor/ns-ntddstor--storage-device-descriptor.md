@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The <b>STORAGE_DEVICE_DESCRIPTOR</b> structure 
    is used in conjunction with the 
-   <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request to 
+   <a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request to 
    retrieve the storage device descriptor data for a device.</p>
 
 
@@ -146,7 +146,7 @@ typedef struct _STORAGE_DEVICE_DESCRIPTOR {
 
 <dd>
 <p>Specifies an enumerator value of type 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff566356">STORAGE_BUS_TYPE</a> that indicates the type of bus to 
+      <a href="storage.storage_bus_type">STORAGE_BUS_TYPE</a> that indicates the type of bus to 
       which the device is connected. This should be used to interpret the raw device properties at the end of this 
       structure (if any).</p>
 </dd>
@@ -167,13 +167,13 @@ typedef struct _STORAGE_DEVICE_DESCRIPTOR {
 
 ## -remarks
 <p>Applications and storage class drivers issue a device-control request with the I/O control code 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve 
+     <a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve 
      this structure, which contains information about a target device. The structure can be retrieved only from an 
      FDO; attempting to retrieve device properties from an adapter causes an error.</p>
 
 <p>An application or driver can determine the required buffer size by casting the retrieved 
      <b>STORAGE_DEVICE_DESCRIPTOR</b> structure to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566968">STORAGE_DESCRIPTOR_HEADER</a>, which contains 
+     <a href="..\ntddstor\ns-ntddstor--storage-descriptor-header.md">STORAGE_DESCRIPTOR_HEADER</a>, which contains 
      only <b>Version</b> and <b>Size</b>.</p>
 
 ## -requirements
@@ -193,22 +193,22 @@ typedef struct _STORAGE_DEVICE_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548318">IoBuildDeviceIoControlRequest</a>
+<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566346">STORAGE_ADAPTER_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor--storage-adapter-descriptor.md">STORAGE_ADAPTER_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566968">STORAGE_DESCRIPTOR_HEADER</a>
+<a href="..\ntddstor\ns-ntddstor--storage-descriptor-header.md">STORAGE_DESCRIPTOR_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor--storage-device-descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566972">STORAGE_DEVICE_ID_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor--storage-device-id-descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

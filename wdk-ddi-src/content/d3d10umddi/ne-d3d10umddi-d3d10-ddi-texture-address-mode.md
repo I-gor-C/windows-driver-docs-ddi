@@ -117,7 +117,7 @@ typedef enum D3D10_DDI_TEXTURE_ADDRESS_MODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542011">D3D10_DDI_SAMPLER_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-sampler-desc.md">D3D10_DDI_SAMPLER_DESC</a>
 </dt>
 </dl>
 <p> </p>

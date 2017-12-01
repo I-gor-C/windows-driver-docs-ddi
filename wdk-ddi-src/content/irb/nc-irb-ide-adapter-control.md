@@ -85,7 +85,7 @@ BOOLEAN AtaAdapterControl(
 <p>IDE_CONTROLLER_CONFIGURATION</p>
 </td>
 <td>
-<p>Indicates that the adapter is being started. The miniport driver should update the member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559036">IDE_CONTROLLER_CONFIGURATION</a> structure. If it is required, the miniport driver could obtain its hardware resources from the <b>IDE_CONTROLLER_CONFIGURATION</b> structure.</p>
+<p>Indicates that the adapter is being started. The miniport driver should update the member in the <a href="..\irb\ns-irb--ide-controller-configuration.md">IDE_CONTROLLER_CONFIGURATION</a> structure. If it is required, the miniport driver could obtain its hardware resources from the <b>IDE_CONTROLLER_CONFIGURATION</b> structure.</p>
 </td>
 </tr>
 <tr>
@@ -149,8 +149,6 @@ BOOLEAN AtaAdapterControl(
 ## -remarks
 <p>The port driver guarantees that there is no outstanding I/O on the adapter before it invokes the <i>AtaAdapterControl</i> routine.</p>
 
-<p>The port driver guarantees that there is no outstanding I/O on the adapter before it invokes the <i>AtaAdapterControl</i> routine.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -178,7 +176,7 @@ BOOLEAN AtaAdapterControl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559036">IDE_CONTROLLER_CONFIGURATION</a>
+<a href="..\irb\ns-irb--ide-controller-configuration.md">IDE_CONTROLLER_CONFIGURATION</a>
 </dt>
 </dl>
 <p> </p>

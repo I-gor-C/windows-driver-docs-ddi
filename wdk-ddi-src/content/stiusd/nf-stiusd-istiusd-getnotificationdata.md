@@ -58,7 +58,7 @@ HRESULT GetNotificationData(
 ### -param <i>pBuffer</i> 
 
 <dd>
-<p>Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548350">STINOTIFY</a> structure to receive event information.</p>
+<p>Caller-supplied pointer to an <a href="..\sti\ns-sti--stinotify.md">STINOTIFY</a> structure to receive event information.</p>
 </dd>
 </dl>
 
@@ -66,9 +66,7 @@ HRESULT GetNotificationData(
 <p>If the operation succeeds, the method should return S_OK. Otherwise, it should return one of the STIERR-prefixed error codes defined in <i>stierr.h</i>. If no events have occurred since the last time the method was called, the method should return STIERR_NOEVENTS.</p>
 
 ## -remarks
-<p>Each time a device event occurs, the still image event monitor calls <b>IStiUSD::GetNotificationData</b> to obtain an event description. These descriptions are added to a linked list and when an application calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff543751">IStiDevice::GetLastNotificationData</a>, the most recent addition to the list is returned.</p>
-
-<p>Each time a device event occurs, the still image event monitor calls <b>IStiUSD::GetNotificationData</b> to obtain an event description. These descriptions are added to a linked list and when an application calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff543751">IStiDevice::GetLastNotificationData</a>, the most recent addition to the list is returned.</p>
+<p>Each time a device event occurs, the still image event monitor calls <b>IStiUSD::GetNotificationData</b> to obtain an event description. These descriptions are added to a linked list and when an application calls <a href="image.istidevice_getlastnotificationdata">IStiDevice::GetLastNotificationData</a>, the most recent addition to the list is returned.</p>
 
 ## -requirements
 <table>

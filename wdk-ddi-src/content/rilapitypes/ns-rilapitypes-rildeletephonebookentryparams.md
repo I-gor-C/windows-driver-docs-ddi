@@ -7,7 +7,7 @@ old-location: netvista\rildeletephonebookentryparams_2.htm
 old-project: netvista
 ms.assetid: 33e64f4f-a632-47d0-a133-f64d6f4b1cda
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

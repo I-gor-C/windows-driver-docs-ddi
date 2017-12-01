@@ -68,7 +68,7 @@ __checkReturn HRESULT APIENTRY SetStreamSourceUM(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543363">D3DDDIARG_SETSTREAMSOURCEUM</a> structure that specifies the vertex stream source to bind.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setstreamsourceum.md">D3DDDIARG_SETSTREAMSOURCEUM</a> structure that specifies the vertex stream source to bind.</p>
 </dd>
 
 ### -param <i>pUMBuffer</i> [in]
@@ -119,10 +119,10 @@ __checkReturn HRESULT APIENTRY SetStreamSourceUM(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543363">D3DDDIARG_SETSTREAMSOURCEUM</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setstreamsourceum.md">D3DDDIARG_SETSTREAMSOURCEUM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

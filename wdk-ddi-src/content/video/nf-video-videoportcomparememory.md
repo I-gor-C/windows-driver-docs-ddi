@@ -80,11 +80,7 @@ ULONG VideoPortCompareMemory(
 <p><b>VideoPortCompareMemory</b> returns the number of bytes that are equivalent. If both blocks are equivalent, it returns the <i>Length</i> parameter.</p>
 
 ## -remarks
-<p>The values in the <i>Source1</i> and <i>Source2</i> parameters must be in a mapped logical range returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a> and/or a <a href="wdkgloss.s#wdkgloss.system_space#wdkgloss.system_space"><i>system space</i></a> RAM address, such as an address on the stack.</p>
-
-<p>Callers of <b>VideoPortCompareMemory</b> can be running at any IRQL if both blocks of memory are resident.</p>
-
-<p>The values in the <i>Source1</i> and <i>Source2</i> parameters must be in a mapped logical range returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a> and/or a <a href="wdkgloss.s#wdkgloss.system_space#wdkgloss.system_space"><i>system space</i></a> RAM address, such as an address on the stack.</p>
+<p>The values in the <i>Source1</i> and <i>Source2</i> parameters must be in a mapped logical range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a> and/or a <a href="wdkgloss.s#wdkgloss.system_space#wdkgloss.system_space"><i>system space</i></a> RAM address, such as an address on the stack.</p>
 
 <p>Callers of <b>VideoPortCompareMemory</b> can be running at any IRQL if both blocks of memory are resident.</p>
 
@@ -151,19 +147,19 @@ ULONG VideoPortCompareMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a>
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570332">VideoPortMoveMemory</a>
+<a href="..\video\nf-video-videoportmovememory.md">VideoPortMoveMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570360">VideoPortScanRom</a>
+<a href="..\video\nf-video-videoportscanrom.md">VideoPortScanRom</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570492">VideoPortZeroDeviceMemory</a>
+<a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570493">VideoPortZeroMemory</a>
+<a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
 </dt>
 </dl>
 <p> </p>

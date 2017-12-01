@@ -154,7 +154,7 @@ typedef struct _ISCSI_DiscoveredTargetPortal2 {
 </dl>
 
 ## -remarks
-<p>The ISCSI_DiscoveredTargetPortal2 structure is a superset of the information that is provided by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561509">ISCSI_DiscoveredTargetPortal</a> structure, which only defines the target portal address. In addition to the network address of the target portal, the ISCSI_DiscoveredTargetPortal2 structure contains information about the target portal's security characteristics.</p>
+<p>The ISCSI_DiscoveredTargetPortal2 structure is a superset of the information that is provided by the <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportal.md">ISCSI_DiscoveredTargetPortal</a> structure, which only defines the target portal address. In addition to the network address of the target portal, the ISCSI_DiscoveredTargetPortal2 structure contains information about the target portal's security characteristics.</p>
 
 <p>If the iSNS server does not assign a security bitmap to the target portal, the operating system associates the bitmap in the <b>DefaultSecurityBitmap</b> registry value with the portal. The <b>DefaultSecurityBitmap</b> registry value is located under the following registry key: <b>HKLM\Software\Microsoft\Windows NT\Current Version\ISCSI\Discovery Values</b>. </p>
 
@@ -162,7 +162,7 @@ typedef struct _ISCSI_DiscoveredTargetPortal2 {
 
 <p>In general, management applications should use the iSCSI client PSKey command to configure the security bitmap for a target portal. But if there are a large number of portals that have the same security bitmap, the default security bitmap is a good way to automatically assign the same bitmap to all portals.</p>
 
-<p>The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTargetPortal2 structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561524">ISCSI_DiscoveredTargetPortal WMI Class</a> in <i>Discover.mof</i>. </p>
+<p>The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTargetPortal2 structure when it compiles the <a href="storage.iscsi_discoveredtargetportal_wmi_class">ISCSI_DiscoveredTargetPortal WMI Class</a> in <i>Discover.mof</i>. </p>
 
 ## -requirements
 <table>
@@ -181,13 +181,13 @@ typedef struct _ISCSI_DiscoveredTargetPortal2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561509">ISCSI_DiscoveredTargetPortal</a>
+<a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportal.md">ISCSI_DiscoveredTargetPortal</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561524">ISCSI_DiscoveredTargetPortal WMI Class</a>
+<a href="storage.iscsi_discoveredtargetportal_wmi_class">ISCSI_DiscoveredTargetPortal WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561574">ISCSI_TargetPortal</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\ril_getrfstate.htm
 old-project: netvista
 ms.assetid: a73cd67e-839a-403c-9968-313417eac25a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetRFState
 ms.prod: windows-hardware
 ms.technology: windows-devices

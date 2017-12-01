@@ -7,7 +7,7 @@ old-location: netvista\fwpsaleendpointenum0.htm
 old-project: netvista
 ms.assetid: 8b3257ea-9eeb-426b-8c82-a4f0242861a8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsAleEndpointEnum0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,14 +64,14 @@ NTSTATUS NTAPI FwpsAleEndpointEnum0(
 <dd>
 <p>The handle for an open session with the filter engine. This handle is obtained when a session is
      opened by calling 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550075">FwpmEngineOpen0</a>.</p>
+     <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>.</p>
 </dd>
 
 ### -param <i>enumHandle</i> [in]
 
 <dd>
 <p>The enumeration handle created by a previous call to 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550091">FwpsAleEndpointDestroyEnumHandle0</a>.</p>
+     <a href="..\fwpsk\nf-fwpsk-fwpsaleendpointdestroyenumhandle0.md">FwpsAleEndpointDestroyEnumHandle0</a>.</p>
 </dd>
 
 ### -param <i>numEntriesRequested</i> [in]
@@ -87,7 +87,7 @@ NTSTATUS NTAPI FwpsAleEndpointEnum0(
 
 <dd>
 <p>A pointer to an array of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551218">FWPS_ALE_ENDPOINT_PROPERTIES0</a> structure pointers. Each structure contains the properties of a
+     <a href="netvista.fwps_ale_endpoint_properties0">FWPS_ALE_ENDPOINT_PROPERTIES0</a> structure pointers. Each structure contains the properties of a
      single endpoint. The array contains as many elements as the value returned in 
      <i>numEntriesReturned</i>.</p>
 </dd>
@@ -112,7 +112,7 @@ NTSTATUS NTAPI FwpsAleEndpointEnum0(
 
 ## -remarks
 <p>To enumerate ALE endpoints, the callout driver must first obtain an enumeration handle by calling 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550089">FwpsAleEndpointCreateEnumHandle0</a>. The handle returned is associated with any parameters specified
+    <a href="..\fwpsk\nf-fwpsk-fwpsaleendpointcreateenumhandle0.md">FwpsAleEndpointCreateEnumHandle0</a>. The handle returned is associated with any parameters specified
     in the optional 
     <i>enumTemplate</i> parameter of 
     <b>FwpsAleEndpointCreateEnumHandle0</b>.</p>
@@ -122,21 +122,7 @@ NTSTATUS NTAPI FwpsAleEndpointEnum0(
     of the handle.</p>
 
 <p>When finished examining endpoint properties, the callout driver must call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550091">FwpsAleEndpointDestroyEnumHandle0</a> to release the system resources associated with the enumeration
-    handle.</p>
-
-<p>To enumerate ALE endpoints, the callout driver must first obtain an enumeration handle by calling 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550089">FwpsAleEndpointCreateEnumHandle0</a>. The handle returned is associated with any parameters specified
-    in the optional 
-    <i>enumTemplate</i> parameter of 
-    <b>FwpsAleEndpointCreateEnumHandle0</b>.</p>
-
-<p>After obtaining a handle, the callout driver can call 
-    <b>FwpsAleEndpointEnum0</b> to get information about the endpoints that match the enumeration parameters
-    of the handle.</p>
-
-<p>When finished examining endpoint properties, the callout driver must call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550091">FwpsAleEndpointDestroyEnumHandle0</a> to release the system resources associated with the enumeration
+    <a href="..\fwpsk\nf-fwpsk-fwpsaleendpointdestroyenumhandle0.md">FwpsAleEndpointDestroyEnumHandle0</a> to release the system resources associated with the enumeration
     handle.</p>
 
 ## -requirements
@@ -200,7 +186,7 @@ NTSTATUS NTAPI FwpsAleEndpointEnum0(
    FwpsAleEndpointDestroyEnumHandle0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551128">FwpsAleEndpointGetById0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetbyid0.md">FwpsAleEndpointGetById0</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetsecurityinfo0.md">
@@ -213,4 +199,4 @@ NTSTATUS NTAPI FwpsAleEndpointEnum0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAleEndpointEnum0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAleEndpointEnum0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

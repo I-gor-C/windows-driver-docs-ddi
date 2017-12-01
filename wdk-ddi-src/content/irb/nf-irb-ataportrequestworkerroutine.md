@@ -80,14 +80,6 @@ BOOLEAN __inline AtaPortRequestWorkerRoutine(
 
 <p>The <i>WorkerRoutine</i> function pointer is declared in <i>Irb.h</i> as follows:</p>
 
-<p>The miniport driver can request a worker routine to perform tasks that cannot be done in the interrupt service routine. Transferring operations to a worker routine is an effective way to keep the interrupt service routine as small as possible.</p>
-
-<p>The worker routine is not synchronized with the interrupt. </p>
-
-<p>When the port driver calls the worker routine, the port driver will pass the pointer to the channel extension that is stored in <i>ChannelExtension</i>.</p>
-
-<p>The <i>WorkerRoutine</i> function pointer is declared in <i>Irb.h</i> as follows:</p>
-
 ## -requirements
 <table>
 <tr>

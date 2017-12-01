@@ -7,7 +7,7 @@ old-location: kernel\read_register_uchar.htm
 old-project: kernel
 ms.assetid: 49f9d7d7-c774-4ba5-a9f3-6d605a3de674
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: READ_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,8 +66,6 @@ UCHAR READ_REGISTER_UCHAR(
 <p><b>READ_REGISTER_UCHAR</b> returns the byte read from the specified register address.</p>
 
 ## -remarks
-<p>Callers of <b>READ_REGISTER_UCHAR</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.</p>
-
 <p>Callers of <b>READ_REGISTER_UCHAR</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.</p>
 
 ## -requirements

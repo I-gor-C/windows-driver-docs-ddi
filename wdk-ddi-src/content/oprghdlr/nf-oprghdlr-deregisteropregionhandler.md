@@ -64,7 +64,7 @@ NTSTATUS DeRegisterOpRegionHandler(
 ### -param <i>OperationRegionObject</i> [in]
 
 <dd>
-<p>Specifies the operation region object returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff536158">RegisterOpRegionHandler</a> for the operation region handler.</p>
+<p>Specifies the operation region object returned by <a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a> for the operation region handler.</p>
 </dd>
 </dl>
 
@@ -80,11 +80,7 @@ NTSTATUS DeRegisterOpRegionHandler(
 <p> </p>
 
 ## -remarks
-<p>This routine is used in combination with <a href="https://msdn.microsoft.com/library/windows/hardware/ff536158">RegisterOpRegionHandler</a>. To deregister an operation region handler, the caller must specify the operation region object returned by <b>RegisterOpRegionHandler</b> when it registered the operation region handler.</p>
-
-<p>For more information about operation regions, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/supporting-an-operation-region">Supporting an Operation Region</a>. </p>
-
-<p>This routine is used in combination with <a href="https://msdn.microsoft.com/library/windows/hardware/ff536158">RegisterOpRegionHandler</a>. To deregister an operation region handler, the caller must specify the operation region object returned by <b>RegisterOpRegionHandler</b> when it registered the operation region handler.</p>
+<p>This routine is used in combination with <a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a>. To deregister an operation region handler, the caller must specify the operation region object returned by <b>RegisterOpRegionHandler</b> when it registered the operation region handler.</p>
 
 <p>For more information about operation regions, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/supporting-an-operation-region">Supporting an Operation Region</a>. </p>
 
@@ -133,10 +129,10 @@ NTSTATUS DeRegisterOpRegionHandler(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536158">RegisterOpRegionHandler</a>
+<a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536153">ACPI_OP_REGION_HANDLER</a>
+<a href="..\oprghdlr\nc-oprghdlr-acpi-op-region-handler.md">ACPI_OP_REGION_HANDLER</a>
 </dt>
 </dl>
 <p> </p>

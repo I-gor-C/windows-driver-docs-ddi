@@ -76,7 +76,7 @@ typedef struct _ISCSI_TargetMapping {
 ### -field <b>UniqueSessionId</b>
 
 <dd>
-<p>A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
+<p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
 ### -field <b>LUNCount</b>
@@ -106,7 +106,7 @@ typedef struct _ISCSI_TargetMapping {
 ### -field <b>LUNList</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561544">ISCSI_LUNList</a> structure that holds a list of LUNs that are associated with the target device.</p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-lunlist.md">ISCSI_LUNList</a> structure that holds a list of LUNs that are associated with the target device.</p>
 </dd>
 </dl>
 
@@ -132,16 +132,16 @@ typedef struct _ISCSI_TargetMapping {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561544">ISCSI_LUNList</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-lunlist.md">ISCSI_LUNList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561573">ISCSI_TargetMapping WMI Class</a>
+<a href="storage.iscsi_targetmapping_wmi_class">ISCSI_TargetMapping WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 </dl>
 <p> </p>

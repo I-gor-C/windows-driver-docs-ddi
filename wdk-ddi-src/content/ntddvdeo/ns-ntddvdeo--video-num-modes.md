@@ -64,12 +64,12 @@ typedef struct _VIDEO_NUM_MODES {
 ### -field <b>ModeInformationLength</b>
 
 <dd>
-<p>Is the length, in bytes, of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570521">VIDEO_MODE_INFORMATION</a> structure that describes each of the modes supported by the device.</p>
+<p>Is the length, in bytes, of the <a href="..\ntddvdeo\ns-ntddvdeo--video-mode-information.md">VIDEO_MODE_INFORMATION</a> structure that describes each of the modes supported by the device.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The miniport driver returns a VIDEO_NUM_MODES structure in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff567824">IOCTL_VIDEO_QUERY_NUM_AVAIL_MODES</a> request.</p>
+<p>The miniport driver returns a VIDEO_NUM_MODES structure in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-query-num-avail-modes.md">IOCTL_VIDEO_QUERY_NUM_AVAIL_MODES</a> request.</p>
 
 ## -requirements
 <table>
@@ -88,10 +88,10 @@ typedef struct _VIDEO_NUM_MODES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570521">VIDEO_MODE_INFORMATION</a>
+<a href="..\ntddvdeo\ns-ntddvdeo--video-mode-information.md">VIDEO_MODE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567824">IOCTL_VIDEO_QUERY_NUM_AVAIL_MODES</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-query-num-avail-modes.md">IOCTL_VIDEO_QUERY_NUM_AVAIL_MODES</a>
 </dt>
 </dl>
 <p> </p>

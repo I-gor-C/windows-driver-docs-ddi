@@ -7,7 +7,7 @@ old-location: stream\bda_tuner_tunerstate.htm
 old-project: stream
 ms.assetid: 77B30ADC-27F2-4883-97FC-F6C29B539EE0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_TUNER_TUNERSTATE, BDA_TUNER_TUNERSTATE, *PBDA_TUNER_TUNERSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: sensors\gnss_fixsession_param.htm
 old-project: sensors
 ms.assetid: D51126FD-0448-487A-BD4E-170901E90B1E
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM, *PGNSS_FIXSESSION_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -125,25 +125,25 @@ typedef struct {
 ### -field <b>SingleShotParam</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn925218">GNSS_SINGLESHOT_PARAM</a> structure defines the parameters for a single-shot fix session.</p>
+<p>The <a href="sensors.gnss_singleshot_param">GNSS_SINGLESHOT_PARAM</a> structure defines the parameters for a single-shot fix session.</p>
 </dd>
 
 ### -field <b>DistanceParam</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn925105">GNSS_DISTANCETRACKING_PARAM</a> structure defines the parameters for a distance-based tracking fix session.</p>
+<p>The <a href="sensors.gnss_distancetracking_param">GNSS_DISTANCETRACKING_PARAM</a> structure defines the parameters for a distance-based tracking fix session.</p>
 </dd>
 
 ### -field <b>ContinuousParam</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn925099">GNSS_CONTINUOUSTRACKING_PARAM</a> structure defines the parameters for a continuous tracking fix session.</p>
+<p>The <a href="sensors.gnss_continuoustracking_param">GNSS_CONTINUOUSTRACKING_PARAM</a> structure defines the parameters for a continuous tracking fix session.</p>
 </dd>
 
 ### -field <b>LkgFixParam</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn925182">GNSS_LKGFIX_PARAM</a>  structure is not used currently by the system.</p>
+<p>The <a href="sensors.gnss_lkgfix_param">GNSS_LKGFIX_PARAM</a>  structure is not used currently by the system.</p>
 </dd>
 
 ### -field <b>Unused[512]</b>

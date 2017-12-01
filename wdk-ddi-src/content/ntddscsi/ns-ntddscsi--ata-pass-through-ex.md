@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ATA_PASS_THROUGH_EX structure is used in conjunction with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559309">IOCTL_ATA_PASS_THROUGH</a> request to instruct the port driver to send an embedded ATA command to the target device. </p>
+<p>The ATA_PASS_THROUGH_EX structure is used in conjunction with an <a href="..\ntddscsi\ni-ntddscsi-ioctl-ata-pass-through.md">IOCTL_ATA_PASS_THROUGH</a> request to instruct the port driver to send an embedded ATA command to the target device. </p>
 
 
 ## -syntax
@@ -261,7 +261,7 @@ typedef struct _ATA_PASS_THROUGH_EX {
 </tr>
 </table>
 <p> </p>
-<p>When <a href="https://msdn.microsoft.com/library/windows/hardware/ff559309">IOCTL_ATA_PASS_THROUGH</a> completes, the port driver updates <b>CurrentTaskFile</b> with the values that are present in the device's output registers at the completion of the embedded command. The array values in <b>CurrentTaskFile</b> correspond to the following task file output registers.</p>
+<p>When <a href="..\ntddscsi\ni-ntddscsi-ioctl-ata-pass-through.md">IOCTL_ATA_PASS_THROUGH</a> completes, the port driver updates <b>CurrentTaskFile</b> with the values that are present in the device's output registers at the completion of the embedded command. The array values in <b>CurrentTaskFile</b> correspond to the following task file output registers.</p>
 <table>
 <tr>
 <th>Byte</th>
@@ -338,7 +338,7 @@ typedef struct _ATA_PASS_THROUGH_EX {
 
 ## -remarks
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559309">IOCTL_ATA_PASS_THROUGH</a> is a buffered device control request. To bypass buffering in system memory, callers should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff559315">IOCTL_ATA_PASS_THROUGH_DIRECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff551322">ATA_PASS_THROUGH_DIRECT</a>. When handling an IOCTL_ATA_PASS_THROUGH_DIRECT request, the system locks down the buffer in user memory and the device accesses this memory directly. </p>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-ata-pass-through.md">IOCTL_ATA_PASS_THROUGH</a> is a buffered device control request. To bypass buffering in system memory, callers should use <a href="..\ntddscsi\ni-ntddscsi-ioctl-ata-pass-through-direct.md">IOCTL_ATA_PASS_THROUGH_DIRECT</a> and <a href="..\ntddscsi\ns-ntddscsi--ata-pass-through-direct.md">ATA_PASS_THROUGH_DIRECT</a>. When handling an IOCTL_ATA_PASS_THROUGH_DIRECT request, the system locks down the buffer in user memory and the device accesses this memory directly. </p>
 
 ## -requirements
 <table>
@@ -357,13 +357,13 @@ typedef struct _ATA_PASS_THROUGH_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551322">ATA_PASS_THROUGH_DIRECT</a>
+<a href="..\ntddscsi\ns-ntddscsi--ata-pass-through-direct.md">ATA_PASS_THROUGH_DIRECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559309">IOCTL_ATA_PASS_THROUGH</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-ata-pass-through.md">IOCTL_ATA_PASS_THROUGH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559315">IOCTL_ATA_PASS_THROUGH_DIRECT</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-ata-pass-through-direct.md">IOCTL_ATA_PASS_THROUGH_DIRECT</a>
 </dt>
 </dl>
 <p> </p>

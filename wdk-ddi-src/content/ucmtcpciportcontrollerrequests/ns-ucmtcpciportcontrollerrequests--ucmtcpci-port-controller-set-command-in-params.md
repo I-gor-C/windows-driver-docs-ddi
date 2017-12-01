@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-             Stores the specified command registers. This structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt805834">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</a> request.
+             Stores the specified command registers. This structure is used in the <a href="buses.ioctl_ucmtcpci_port_controller_set_command">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</a> request.
                  </p>
 
 
@@ -61,7 +61,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS {
 ### -field <b>PortControllerObject</b>
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 
 ### -field <b>Command</b>
@@ -94,7 +94,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt805834">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</a>
+<a href="buses.ioctl_ucmtcpci_port_controller_set_command">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</a>
 </dt>
 </dl>
 <p> </p>

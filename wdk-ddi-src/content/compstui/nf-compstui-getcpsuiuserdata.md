@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>CPSUI's <b>GetCPSUIUserData</b> function retrieves data that was previously stored using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562624">SetCPSUIUserData</a> function.</p>
+<p>CPSUI's <b>GetCPSUIUserData</b> function retrieves data that was previously stored using the <a href="..\compstui\nf-compstui-setcpsuiuserdata.md">SetCPSUIUserData</a> function.</p>
 
 
 ## -syntax
@@ -62,14 +62,10 @@ ULONG_PTR GetCPSUIUserData(
 </dl>
 
 ## -returns
-<p>If the operation succeeds, the function returns the value that was previously supplied to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562624">SetCPSUIUserData</a>; otherwise the function returns zero.</p>
+<p>If the operation succeeds, the function returns the value that was previously supplied to <a href="..\compstui\nf-compstui-setcpsuiuserdata.md">SetCPSUIUserData</a>; otherwise the function returns zero.</p>
 
 ## -remarks
-<p>The <b>GetCPSUIUserData</b> function should only be called from within a dialog box procedure that has been associated with a dialog box by using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607">DLGPAGE</a> or an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548795">EXTPUSH</a> structure.</p>
-
-<p>The handle specified for <i>hDlg</i> must be the handle received as input to the dialog box procedure. (Dialog box procedures are described in the Microsoft Windows SDK documentation.)</p>
-
-<p>The <b>GetCPSUIUserData</b> function should only be called from within a dialog box procedure that has been associated with a dialog box by using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607">DLGPAGE</a> or an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548795">EXTPUSH</a> structure.</p>
+<p>The <b>GetCPSUIUserData</b> function should only be called from within a dialog box procedure that has been associated with a dialog box by using a <a href="..\compstui\ns-compstui--dlgpage.md">DLGPAGE</a> or an <a href="..\compstui\ns-compstui--extpush.md">EXTPUSH</a> structure.</p>
 
 <p>The handle specified for <i>hDlg</i> must be the handle received as input to the dialog box procedure. (Dialog box procedures are described in the Microsoft Windows SDK documentation.)</p>
 

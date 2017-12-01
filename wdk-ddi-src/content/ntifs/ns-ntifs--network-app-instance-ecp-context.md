@@ -80,7 +80,7 @@ typedef struct _NETWORK_APP_INSTANCE_ECP_CONTEXT {
 
 <p>For example, a file system filter driver will allocate a <b>NETWORK_APP_INSTANCE_ECP_CONTEXT</b> with the unique application instance GUID. The context structure is inserted into the ECP list of a file when it is created or opened. The cluster nodes cache the instance identifier from the ECP when processing the network file system create request. On failover, the resuming node can match the application to its set of opened files and grant access.</p>
 
-<p>The <b>NETWORK_APP_INSTANCE_ECP_CONTEXT</b> is identified in an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a> by <b>GUID_ECP_NETWORK_APP_INSTANCE</b>. This and other system-defined identifiers are described in <a href="ifsk.system_defined_ecps">System-Defined ECPs</a>.</p>
+<p>The <b>NETWORK_APP_INSTANCE_ECP_CONTEXT</b> is identified in an <a href="ifsk.ecp_list">ECP_LIST</a> by <b>GUID_ECP_NETWORK_APP_INSTANCE</b>. This and other system-defined identifiers are described in <a href="ifsk.system_defined_ecps">System-Defined ECPs</a>.</p>
 
 <p>For information about how to use ECPs to associate extra information with a file when the file is created, see <a href="ifsk.using_extra_create_parameters_with_an_irp_mj_create_operation">Using Extra Create Parameters with an IRP_MJ_CREATE Operation</a>. </p>
 
@@ -109,10 +109,10 @@ typedef struct _NETWORK_APP_INSTANCE_ECP_CONTEXT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
+<a href="ifsk.ecp_list">ECP_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548283">IoCreateFileEx</a>
+<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
 </dt>
 </dl>
 <p> </p>

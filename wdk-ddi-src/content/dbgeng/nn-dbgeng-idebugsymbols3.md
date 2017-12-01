@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols3.htm
 old-project: debugger
 ms.assetid: 3fce9384-93f3-4d81-b6ae-bda7a94da24a
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface: IDebugSystemObjects4
 ## -description
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSymbols3</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff550864">IDebugSymbols2</a>. <b>IDebugSymbols3</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSymbols3</b> interface inherits from <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>. <b>IDebugSymbols3</b> also has these types of members:</p>
 
 <p>The <b>IDebugSymbols3</b> interface has these methods.</p>
 
@@ -191,7 +191,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537937">AddSyntheticModule</a>
+<a href="debugger.addsyntheticmodule">AddSyntheticModule</a>
 </td>
 <td align="left" width="63%">
 <p>Adds a synthetic module to the module list the debugger maintains for the current process.</p>
@@ -199,7 +199,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537940">AddSyntheticModuleWide</a>
+<a href="debugger.addsyntheticmodulewide">AddSyntheticModuleWide</a>
 </td>
 <td align="left" width="63%">
 <p>Adds a synthetic module to the module list the debugger maintains for the current process.</p>
@@ -207,7 +207,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537943">AddSyntheticSymbol</a>
+<a href="debugger.addsyntheticsymbol">AddSyntheticSymbol</a>
 </td>
 <td align="left" width="63%">
 <p>Adds a synthetic symbol to a module in the current process. (ANSI version)</p>
@@ -215,7 +215,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537946">AddSyntheticSymbolWide</a>
+<a href="debugger.addsyntheticsymbolwide">AddSyntheticSymbolWide</a>
 </td>
 <td align="left" width="63%">
 <p>Adds a synthetic symbol to a module in the current process.
@@ -224,7 +224,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538094">AppendImagePathWide</a>
+<a href="debugger.appendimagepathwide">AppendImagePathWide</a>
 </td>
 <td align="left" width="63%">
 <p>Appends directories to the executable image path.</p>
@@ -232,7 +232,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538107">AppendSourcePathWide</a>
+<a href="debugger.appendsourcepathwide">AppendSourcePathWide</a>
 </td>
 <td align="left" width="63%">
 <p>Appends directories to the source path.</p>
@@ -240,7 +240,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538113">AppendSymbolPathWide</a>
+<a href="debugger.appendsymbolpathwide">AppendSymbolPathWide</a>
 </td>
 <td align="left" width="63%">
 <p>Appends directories to the symbol path.</p>
@@ -248,7 +248,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540096">CreateSymbolGroup2</a>
+<a href="debugger.createsymbolgroup2">CreateSymbolGroup2</a>
 </td>
 <td align="left" width="63%">
 <p>Creates a new symbol group.</p>
@@ -256,7 +256,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545445">FindSourceFileWide</a>
+<a href="debugger.findsourcefilewide">FindSourceFileWide</a>
 </td>
 <td align="left" width="63%">
 <p>Searches the source path for a specified source file.</p>
@@ -264,7 +264,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545723">GetConstantNameWide</a>
+<a href="debugger.getconstantnamewide">GetConstantNameWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the name of the specified constant.</p>
@@ -272,7 +272,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545862">GetCurrentScopeFrameIndex</a>
+<a href="debugger.getcurrentscopeframeindex">GetCurrentScopeFrameIndex</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the index of the current stack frame in the call stack.</p>
@@ -280,7 +280,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546753">GetFieldNameWide</a>
+<a href="debugger.getfieldnamewide">GetFieldNameWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the name of a field within a structure.</p>
@@ -288,7 +288,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546767">GetFieldOffsetWide</a>
+<a href="debugger.getfieldoffsetwide">GetFieldOffsetWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the offset of a field from the base address of an instance of a type.</p>
@@ -296,7 +296,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546771">GetFieldTypeAndOffset</a>
+<a href="debugger.getfieldtypeandoffset">GetFieldTypeAndOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the type of a field and its offset within a container. (ANSI version)</p>
@@ -304,7 +304,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546775">GetFieldTypeAndOffsetWide</a>
+<a href="debugger.getfieldtypeandoffsetwide">GetFieldTypeAndOffsetWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the type of a field and its offset within a container. (Unicode version)</p>
@@ -312,7 +312,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546817">GetFunctionEntryByOffset</a>
+<a href="debugger.getfunctionentrybyoffset">GetFunctionEntryByOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the function entry information for a function.</p>
@@ -320,7 +320,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546857">GetImagePathWide</a>
+<a href="debugger.getimagepathwide">GetImagePathWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the executable image path.</p>
@@ -328,7 +328,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547008">GetLineByOffsetWide</a>
+<a href="debugger.getlinebyoffsetwide">GetLineByOffsetWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the source filename and the line number within the source file of an instruction in the target.</p>
@@ -336,7 +336,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547102">GetModuleByModuleName2</a>
+<a href="debugger.getmodulebymodulename2">GetModuleByModuleName2</a>
 </td>
 <td align="left" width="63%">
 <p>Searches through the process's modules for one with the specified name.</p>
@@ -344,7 +344,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547116">GetModuleByModuleName2Wide</a>
+<a href="debugger.getmodulebymodulename2wide">GetModuleByModuleName2Wide</a>
 </td>
 <td align="left" width="63%">
 <p>Searches through the process's modules for one with the specified name.</p>
@@ -352,7 +352,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547126">GetModuleByModuleNameWide</a>
+<a href="debugger.getmodulebymodulenamewide">GetModuleByModuleNameWide</a>
 </td>
 <td align="left" width="63%">
 <p>Searches through the target's modules for one with the specified name.</p>
@@ -360,7 +360,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547138">GetModuleByOffset2</a>
+<a href="debugger.getmodulebyoffset2">GetModuleByOffset2</a>
 </td>
 <td align="left" width="63%">
 <p>Searches through the process's modules for one whose memory allocation includes the specified location.</p>
@@ -368,7 +368,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547154">GetModuleNameStringWide</a>
+<a href="debugger.getmodulenamestringwide">GetModuleNameStringWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the name of the specified module.</p>
@@ -376,7 +376,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547177">GetModuleVersionInformationWide</a>
+<a href="debugger.getmoduleversioninformationwide">GetModuleVersionInformationWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns version information for the specified module.</p>
@@ -384,7 +384,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547186">GetNameByOffsetWide</a>
+<a href="debugger.getnamebyoffsetwide">GetNameByOffsetWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the name of the symbol at the specified location in the target's virtual address space.</p>
@@ -392,7 +392,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547837">GetNearNameByOffsetWide</a>
+<a href="debugger.getnearnamebyoffsetwide">GetNearNameByOffsetWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the name of a symbol that is located near the specified location.</p>
@@ -400,7 +400,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547859">GetNextSymbolMatchWide</a>
+<a href="debugger.getnextsymbolmatchwide">GetNextSymbolMatchWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the next symbol found in a symbol search.</p>
@@ -408,7 +408,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548026">GetOffsetByLineWide</a>
+<a href="debugger.getoffsetbylinewide">GetOffsetByLineWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the location of the instruction that corresponds to a specified line in the source code.</p>
@@ -416,7 +416,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548042">GetOffsetByNameWide</a>
+<a href="debugger.getoffsetbynamewide">GetOffsetByNameWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the location of a symbol identified by name.
@@ -425,7 +425,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548287">GetScopeSymbolGroup2</a>
+<a href="debugger.getscopesymbolgroup2">GetScopeSymbolGroup2</a>
 </td>
 <td align="left" width="63%">
 <p>Returns a symbol group containing the symbols in the current target's scope.</p>
@@ -433,7 +433,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548305">GetSourceEntriesByLine</a>
+<a href="debugger.getsourceentriesbyline">GetSourceEntriesByLine</a>
 </td>
 <td align="left" width="63%">
 <p>Queries symbol information and returns locations in the target's memory that correspond to lines in a source file. (ANSI version)</p>
@@ -441,7 +441,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548312">GetSourceEntriesByLineWide</a>
+<a href="debugger.getsourceentriesbylinewide">GetSourceEntriesByLineWide</a>
 </td>
 <td align="left" width="63%">
 <p>Queries symbol information and returns locations in the target's memory that correspond to lines in a source file. (Unicode version)</p>
@@ -479,7 +479,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548346">GetSourceFileLineOffsetsWide</a>
+<a href="debugger.getsourcefilelineoffsetswide">GetSourceFileLineOffsetsWide</a>
 </td>
 <td align="left" width="63%">
 <p>Maps each line in a source file to a location in the target's memory.</p>
@@ -487,7 +487,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548375">GetSourcePathElementWide</a>
+<a href="debugger.getsourcepathelementwide">GetSourcePathElementWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns an element from the source path.</p>
@@ -495,7 +495,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548381">GetSourcePathWide</a>
+<a href="debugger.getsourcepathwide">GetSourcePathWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the source path.</p>
@@ -503,7 +503,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548458">GetSymbolEntriesByName</a>
+<a href="debugger.getsymbolentriesbyname">GetSymbolEntriesByName</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the symbols whose names match a given pattern. (ANSI version)</p>
@@ -511,7 +511,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548463">GetSymbolEntriesByNameWide</a>
+<a href="debugger.getsymbolentriesbynamewide">GetSymbolEntriesByNameWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the symbols whose names match a given pattern.
@@ -520,7 +520,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548476">GetSymbolEntriesByOffset</a>
+<a href="debugger.getsymbolentriesbyoffset">GetSymbolEntriesByOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the symbols which are located at a specified address.</p>
@@ -540,7 +540,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548484">GetSymbolEntryInformation</a>
+<a href="debugger.getsymbolentryinformation">GetSymbolEntryInformation</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the symbol entry information for a symbol.</p>
@@ -554,7 +554,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548491">GetSymbolEntryString</a>
+<a href="debugger.getsymbolentrystring">GetSymbolEntryString</a>
 </td>
 <td align="left" width="63%">
 <p>Returns string information for the specified symbol. (ANSI version)</p>
@@ -562,7 +562,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548496">GetSymbolEntryStringWide</a>
+<a href="debugger.getsymbolentrystringwide">GetSymbolEntryStringWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns string information for the specified symbol.
@@ -571,7 +571,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549119">GetSymbolModuleWide</a>
+<a href="debugger.getsymbolmodulewide">GetSymbolModuleWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the base address of module which contains the specified symbol.</p>
@@ -579,7 +579,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549161">GetSymbolPathWide</a>
+<a href="debugger.getsymbolpathwide">GetSymbolPathWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the symbol path.</p>
@@ -587,7 +587,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549182">GetSymbolTypeIdWide</a>
+<a href="debugger.getsymboltypeidwide">GetSymbolTypeIdWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the type ID and module of the specified symbol.</p>
@@ -595,7 +595,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549387">GetTypeIdWide</a>
+<a href="debugger.gettypeidwide">GetTypeIdWide</a>
 </td>
 <td align="left" width="63%">
 <p>Looks up the specified type and return its type ID.</p>
@@ -603,7 +603,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549419">GetTypeNameWide</a>
+<a href="debugger.gettypenamewide">GetTypeNameWide</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the name of the type symbol specified by its type ID and module.</p>
@@ -617,7 +617,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553258">OutputSymbolByOffset</a>
+<a href="debugger.outputsymbolbyoffset">OutputSymbolByOffset</a>
 </td>
 <td align="left" width="63%">
 <p>Looks up a symbol by address and prints the symbol name and other symbol information to the debugger console.</p>
@@ -625,7 +625,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554384">ReloadWide</a>
+<a href="debugger.reloadwide">ReloadWide</a>
 </td>
 <td align="left" width="63%">
 <p>Deletes the engine's symbol information for the specified module and reload these symbols as needed.</p>
@@ -633,7 +633,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554536">RemoveSyntheticModule</a>
+<a href="debugger.removesyntheticmodule">RemoveSyntheticModule</a>
 </td>
 <td align="left" width="63%">
 <p>Removes a synthetic module from the module list the debugger maintains for the current process.</p>
@@ -641,7 +641,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554542">RemoveSyntheticSymbol</a>
+<a href="debugger.removesyntheticsymbol">RemoveSyntheticSymbol</a>
 </td>
 <td align="left" width="63%">
 <p>Removes a synthetic symbol from a module in the current process.</p>
@@ -649,7 +649,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556710">SetImagePathWide</a>
+<a href="debugger.setimagepathwide">SetImagePathWide</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the executable image path.</p>
@@ -657,7 +657,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556774">SetScopeFrameByIndex</a>
+<a href="debugger.setscopeframebyindex">SetScopeFrameByIndex</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the current scope to the scope of one of the frames on the call stack.</p>
@@ -671,7 +671,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556778">SetScopeFromStoredEvent</a>
+<a href="debugger.setscopefromstoredevent">SetScopeFromStoredEvent</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the current scope to the scope of the stored event.</p>
@@ -679,7 +679,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556788">SetSourcePathWide</a>
+<a href="debugger.setsourcepathwide">SetSourcePathWide</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the source path.</p>
@@ -687,7 +687,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556804">SetSymbolPathWide</a>
+<a href="debugger.setsymbolpathwide">SetSymbolPathWide</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the symbol path.</p>
@@ -695,7 +695,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558816">StartSymbolMatchWide</a>
+<a href="debugger.startsymbolmatchwide">StartSymbolMatchWide</a>
 </td>
 <td align="left" width="63%">
 <p>Initializes a search for symbols whose names match a given pattern.</p>
@@ -859,12 +859,12 @@ req.iface: IDebugSystemObjects4
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550856">IDebugSymbols</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550864">IDebugSymbols2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3 interface%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3 interface%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

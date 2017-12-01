@@ -67,7 +67,7 @@ __checkReturn HRESULT* pfnPresent1(
 ### -param <i>pPresentData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn457997">D3DDDIARG_PRESENT1</a> structure that describes how to display to the destination surface. </p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-present1.md">D3DDDIARG_PRESENT1</a> structure that describes how to display to the destination surface. </p>
 </dd>
 </dl>
 
@@ -76,8 +76,6 @@ __checkReturn HRESULT* pfnPresent1(
       Returns <b>S_OK</b> or an appropriate error result if the function does not complete successfully.</p>
 
 ## -remarks
-<p>The user-mode display driver must submit all partially built render data (command buffers) by calling the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a>  function. The driver must make only  a single call to <b>pfnRenderCb</b>.</p>
-
 <p>The user-mode display driver must submit all partially built render data (command buffers) by calling the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a>  function. The driver must make only  a single call to <b>pfnRenderCb</b>.</p>
 
 ## -requirements
@@ -134,7 +132,7 @@ __checkReturn HRESULT* pfnPresent1(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn457997">D3DDDIARG_PRESENT1</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-present1.md">D3DDDIARG_PRESENT1</a>
 </dt>
 </dl>
 <p> </p>

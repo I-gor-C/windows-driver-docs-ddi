@@ -7,7 +7,7 @@ old-location: sensors\gnss_breadcrumb_list.htm
 old-project: sensors
 ms.assetid: 40C11C4B-2FFE-452F-AA08-2BCD4B6A4F7F
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_BREADCRUMB_LIST, GNSS_BREADCRUMB_LIST, *PGNSS_BREADCRUMB_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure contains the response to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt767992">IOCTL_GNSS_POP_BREADCRUMBS</a>.</p>
+<p>This structure contains the response to an <a href="..\gnssdriver\ni-gnssdriver-ioctl-gnss-pop-breadcrumbs.md">IOCTL_GNSS_POP_BREADCRUMBS</a>.</p>
 
 
 ## -syntax

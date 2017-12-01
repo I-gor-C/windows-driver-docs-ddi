@@ -7,7 +7,7 @@ old-location: netvista\offload_ipsec_add_sa.htm
 old-project: netvista
 ms.assetid: 592d338c-8ab0-4163-bcfa-75c941b83c3d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: OFFLOAD_IPSEC_ADD_SA, OFFLOAD_IPSEC_ADD_SA, *POFFLOAD_IPSEC_ADD_SA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -220,7 +220,7 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
 <p>The length of each key in the buffer at 
      <b>KeyMat</b> is specified by 
      <b>algoKeylen</b> in the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568842">OFFLOAD_ALGO_INFO</a> structure that
+     <a href="..\ntddndis\ns-ntddndis--offload-algo-info.md">OFFLOAD_ALGO_INFO</a> structure that
      specifies the confidentiality or integrity algorithm. (An OFFLOAD_ALGO_INFO structure is a member of an
      OFFLOAD_SECURITY_ASSOCIATION structure.)</p>
 </dd>
@@ -250,10 +250,10 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557028">NDIS_IPSEC_PACKET_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568842">OFFLOAD_ALGO_INFO</a>
+<a href="..\ntddndis\ns-ntddndis--offload-algo-info.md">OFFLOAD_ALGO_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569061">OFFLOAD_SECURITY_ASSOCIATION</a>
+<a href="..\ntddndis\ns-ntddndis--offload-security-association.md">OFFLOAD_SECURITY_ASSOCIATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
@@ -264,4 +264,4 @@ typedef struct _OFFLOAD_IPSEC_ADD_SA {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OFFLOAD_IPSEC_ADD_SA structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OFFLOAD_IPSEC_ADD_SA structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

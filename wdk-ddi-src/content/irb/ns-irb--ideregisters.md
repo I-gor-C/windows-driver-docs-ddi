@@ -111,7 +111,7 @@ typedef struct _IDEREGISTERS {
 </dl>
 
 ## -remarks
-<p>The information reported in the IDEREGISTERS structure is intended to be a superset of the information contained in <a href="https://msdn.microsoft.com/library/windows/hardware/ff559015">IDEREGS</a>. Microsoft might expand the contents of the IDEREGISTERS structure in the future. If you need a structure whose size is stable across different versions of the operating system, you should use <b>IDEREGS</b>.</p>
+<p>The information reported in the IDEREGISTERS structure is intended to be a superset of the information contained in <a href="..\ntdddisk\ns-ntdddisk--ideregs.md">IDEREGS</a>. Microsoft might expand the contents of the IDEREGISTERS structure in the future. If you need a structure whose size is stable across different versions of the operating system, you should use <b>IDEREGS</b>.</p>
 
 ## -requirements
 <table>
@@ -130,7 +130,7 @@ typedef struct _IDEREGISTERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559015">IDEREGS</a>
+<a href="..\ntdddisk\ns-ntdddisk--ideregs.md">IDEREGS</a>
 </dt>
 </dl>
 <p> </p>

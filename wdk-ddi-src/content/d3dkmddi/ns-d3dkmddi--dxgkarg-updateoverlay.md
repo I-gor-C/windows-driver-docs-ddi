@@ -57,7 +57,7 @@ typedef struct _DXGKARG_UPDATEOVERLAY {
 ### -field <b>OverlayInfo</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561988">DXGK_OVERLAYINFO</a> structure that contains parameters that are required to modify the overlay.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-overlayinfo.md">DXGK_OVERLAYINFO</a> structure that contains parameters that are required to modify the overlay.</p>
 </dd>
 </dl>
 
@@ -89,7 +89,7 @@ typedef struct _DXGKARG_UPDATEOVERLAY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561988">DXGK_OVERLAYINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-overlayinfo.md">DXGK_OVERLAYINFO</a>
 </dt>
 <dt>
 <a href="display.dxgkddiupdateoverlay">DxgkDdiUpdateOverlay</a>

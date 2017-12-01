@@ -7,7 +7,7 @@ old-location: netvista\rilimssipcausecode.htm
 old-project: netvista
 ms.assetid: b76ea0fb-8139-4272-b9a0-2daa5b660c7d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

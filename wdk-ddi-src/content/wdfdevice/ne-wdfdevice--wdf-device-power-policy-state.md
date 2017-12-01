@@ -7,7 +7,7 @@ old-location: wdf\wdf_device_power_policy_state.htm
 old-project: wdf
 ms.assetid: 87fa78f7-417a-4720-9520-0eb90486630a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_REL_TIMEOUT_IN_US
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -832,11 +832,7 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
 </dl>
 
 ## -remarks
-<p>The WDF_DEVICE_POWER_POLICY_STATE enumeration is used as a member type in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551273">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a> structure and as the return type for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545974">WdfDeviceGetDevicePowerPolicyState</a> method.</p>
-
-<p>The WDF_DEVICE_POWER_POLICY_STATE enumeration is used as a member type in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551273">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a> structure and as the return type for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545974">WdfDeviceGetDevicePowerPolicyState</a> method.</p>
-
-<p>The WDF_DEVICE_POWER_POLICY_STATE enumeration is used as a member type in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551273">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a> structure and as the return type for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545974">WdfDeviceGetDevicePowerPolicyState</a> method.</p>
+<p>The WDF_DEVICE_POWER_POLICY_STATE enumeration is used as a member type in the <a href="..\wdfdevice\ns-wdfdevice--wdf-device-power-policy-notification-data.md">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerpolicystate.md">WdfDeviceGetDevicePowerPolicyState</a> method.</p>
 
 ## -requirements
 <table>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetPresharedKeyForId_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a> method.</p>
+<p>The GetPresharedKeyForId_OUT structure holds the output data for the <a href="storage.getpresharedkeyforid">GetPresharedKeyForId</a> method.</p>
 
 
 ## -syntax
@@ -58,13 +58,13 @@ typedef struct _GetPresharedKeyForId_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output from <b>GetPresharedKeyForId</b>, the status of the <b>GetPresharedKeyForId</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.  </p>
+<p>On output from <b>GetPresharedKeyForId</b>, the status of the <b>GetPresharedKeyForId</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.  </p>
 </dd>
 
 ### -field <b>SecurityFlags</b>
 
 <dd>
-<p>A bitwise OR of flags that indicate the security requirements of a target.  For a list of possible values for this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>.</p>
+<p>A bitwise OR of flags that indicate the security requirements of a target.  For a list of possible values for this member, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.</p>
 </dd>
 </dl>
 
@@ -88,19 +88,19 @@ typedef struct _GetPresharedKeyForId_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>
+<a href="storage.getpresharedkeyforid">GetPresharedKeyForId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554973">GetPresharedKeyForId_IN</a>
+<a href="..\iscsiop\ns-iscsiop--getpresharedkeyforid-in.md">GetPresharedKeyForId_IN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563135">MSiSCSI_SecurityConfigOperations WMI Class</a>
+<a href="storage.msiscsi_securityconfigoperations_wmi_class">MSiSCSI_SecurityConfigOperations WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
+<a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>
 </dt>
 </dl>
 <p> </p>

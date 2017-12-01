@@ -57,7 +57,7 @@ BOOLEAN FltOplockIsSharedRequest(
 ### -param <i>CallbackData</i> [in]
 
 <dd>
-<p>A pointer to the callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure for the I/O operation. The caller must ensure that the I/O operation has a major code of IRP_MJ_FILE_SYSTEM_CONTROL and a minor code of IRP_MN_USER_FS_REQUEST. </p>
+<p>A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. The caller must ensure that the I/O operation has a major code of IRP_MJ_FILE_SYSTEM_CONTROL and a minor code of IRP_MN_USER_FS_REQUEST. </p>
 </dd>
 </dl>
 
@@ -130,7 +130,7 @@ BOOLEAN FltOplockIsSharedRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547128">FsRtlOplockIsSharedRequest</a>
+<a href="ifsk.fsrtloplockissharedrequest">FsRtlOplockIsSharedRequest</a>
 </dt>
 </dl>
 <p> </p>

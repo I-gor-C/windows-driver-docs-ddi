@@ -102,7 +102,7 @@ typedef struct _MSFC_FibrePortNPIVAttributes {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh127624">MSFC_FibrePortNPIVAttributes WMI Class</a>
+<a href="storage.msfc_fibreportnpivattributes_wmi_class">MSFC_FibrePortNPIVAttributes WMI Class</a>
 </dt>
 </dl>
 <p> </p>

@@ -61,13 +61,13 @@ NTSTATUS FltDecodeParameters(
 ### -param <i>CallbackData</i> [in]
 
 <dd>
-<p>Pointer to the callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure for the I/O operation. </p>
+<p>Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. </p>
 </dd>
 
 ### -param <i>MdlAddressPointer</i> [out]
 
 <dd>
-<p>Pointer to a caller-supplied variable that receives a pointer to the <b>MdlAddress</b> (or <b>OutputMdlAddress</b>) member of the callback data parameter (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544673">FLT_PARAMETERS</a>) structure (note that this member is itself a pointer). This parameter is optional and can be <b>NULL</b>. If the I/O operation does not have an MDL field, this parameter receives <b>NULL</b>. </p>
+<p>Pointer to a caller-supplied variable that receives a pointer to the <b>MdlAddress</b> (or <b>OutputMdlAddress</b>) member of the callback data parameter (<a href="..\fltkernel\ns-fltkernel--flt-parameters.md">FLT_PARAMETERS</a>) structure (note that this member is itself a pointer). This parameter is optional and can be <b>NULL</b>. If the I/O operation does not have an MDL field, this parameter receives <b>NULL</b>. </p>
 </dd>
 
 ### -param <i>Buffer</i> [out]
@@ -92,7 +92,7 @@ NTSTATUS FltDecodeParameters(
 ## -returns
 <p><b>FltDecodeParameters</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following: </p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl><p>The callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure represents an I/O operation that does not have any buffer parameters. This is an error code. </p>
+</dl><p>The callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure represents an I/O operation that does not have any buffer parameters. This is an error code. </p>
 
 <p> </p>
 
@@ -120,34 +120,6 @@ NTSTATUS FltDecodeParameters(
 <p><i>DesiredAccess</i></p>
 
 <p>IoWriteAccess</p>
-
-<p> </p>
-
-<p><b>FltDecodeParameters</b> returns pointers to the parameters for an I/O operation, rather than the parameter values, so that the caller can modify the values of the parameters if desired. </p>
-
-<p><b>FltDecodeParameters</b> can be used for fast I/O operations as well as IRP-based operations. It is not meaningful for file system filter (FSFilter) callback operations, because those operations do not have buffer parameters. </p>
-
-<p>IOCTL and FSCTL operations can have one or two buffers, depending on the buffering method used. In cases where the operation has two buffers (and two length fields), <b>FltDecodeParameters</b> returns the <b>OutputBuffer</b>, <b>OutputBufferLength</b>, and/or <b>OutputMdlAddress</b> fields as appropriate. </p>
-
-<p>Not all of the four parameters are returned for every I/O operation. For example, for an IRP_MJ_READ request, <b>FltDecodeParameters</b> sets the output parameters as follows. </p>
-
-<p><i>MdlAddressPointer</i></p>
-
-<p>&amp;(CallbackData-&gt;Iopb-&gt;Parameters.Read.MdlAddress)</p>
-
-<p><i>Buffer</i></p>
-
-<p>&amp;(CallbackData-&gt;Iopb-&gt;Parameters.Read.ReadBuffer)</p>
-
-<p><i>Length</i></p>
-
-<p>&amp;(CallbackData-&gt;Iopb-&gt;Parameters.Read.Length)</p>
-
-<p><i>DesiredAccess</i></p>
-
-<p>IoWriteAccess</p>
-
-<p> </p>
 
 ## -requirements
 <table>
@@ -194,10 +166,10 @@ NTSTATUS FltDecodeParameters(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a>
+<a href="ifsk.flt_is_fastio_operation">FLT_IS_FASTIO_OPERATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544648">FLT_IS_FS_FILTER_OPERATION</a>
@@ -206,10 +178,10 @@ NTSTATUS FltDecodeParameters(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544673">FLT_PARAMETERS</a>
+<a href="..\fltkernel\ns-fltkernel--flt-parameters.md">FLT_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543371">FltLockUserBuffer</a>
+<a href="..\fltkernel\nf-fltkernel-fltlockuserbuffer.md">FltLockUserBuffer</a>
 </dt>
 </dl>
 <p> </p>

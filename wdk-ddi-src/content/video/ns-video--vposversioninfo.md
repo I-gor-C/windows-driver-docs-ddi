@@ -100,7 +100,7 @@ typedef struct _VPOSVERSIONINFO {
 ## -remarks
 <p>This structure is available in Windows XP and later.</p>
 
-<p>To obtain version information about the currently running operating system, a video miniport driver would call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570318">VideoPortGetVersion</a> function, which fills in this structure.</p>
+<p>To obtain version information about the currently running operating system, a video miniport driver would call the <a href="..\video\nf-video-videoportgetversion.md">VideoPortGetVersion</a> function, which fills in this structure.</p>
 
 ## -requirements
 <table>
@@ -119,7 +119,7 @@ typedef struct _VPOSVERSIONINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570318">VideoPortGetVersion</a>
+<a href="..\video\nf-video-videoportgetversion.md">VideoPortGetVersion</a>
 </dt>
 </dl>
 <p> </p>

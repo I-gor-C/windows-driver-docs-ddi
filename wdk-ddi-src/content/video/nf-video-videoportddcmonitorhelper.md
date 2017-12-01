@@ -67,7 +67,7 @@ BOOLEAN VideoPortDDCMonitorHelper(
 ### -param <i>DDCControl</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549272">DDC_CONTROL</a> structure.</p>
+<p>A pointer to a <a href="..\video\ns-video--ddc-control.md">DDC_CONTROL</a> structure.</p>
 </dd>
 
 ### -param <i>EdidBuffer</i> [in, out]
@@ -88,14 +88,6 @@ BOOLEAN VideoPortDDCMonitorHelper(
 
 ## -remarks
 <p class="note">This function existed prior to the Windows XP release, but has been changed.</p><p class="note">The video miniport driver's <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a> function can call <b>VideoPortDDCMonitorHelper</b> for assistance in reading the <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> structure from a DDC2-compliant monitor. <b>VideoPortDDCMonitorHelper </b>implements the details of reading the EDID structure according to the I²C specification, but must call back into the video miniport driver to read and write individual data bits to the I²C serial clock and data lines.</p><p class="note">The four functions, implemented by the video miniport driver, that read and write individual bits to the I²C clock and data lines are <a href="..\video\nc-video-pvideo-read-clock-line.md">ReadClockLine</a>, <a href="..\video\nc-video-pvideo-read-data-line.md">ReadDataLine</a>, <a href="..\video\nc-video-pvideo-write-clock-line.md">WriteClockLine</a>, and <a href="..\video\nc-video-pvideo-write-data-line.md">WriteDataLine</a>. When the video miniport driver calls <b>VideoPortDDCMonitorHelper</b>, it supplies pointers to those four functions in <i>DDCControl</i><b>-&gt;I2CCallbacks</b>.</p><p class="note">The <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> can be obtained using the ACPI_METHOD_OUTPUT_DDC method whose alias is defined in Dispmprt.h. This method is required for integrated LCDs that do not have another standard mechanism for returning EDID data.</p><p class="note">In a 256-byte buffer, a caller of this function can receive:</p>
-
-<p>One 128-byte EDID</p>
-
-<p>Two 128-byte EDIDs</p>
-
-<p>One 256-byte EDID (from P&amp;D display)</p>
-
-<p>No EDID</p><p class="note">The caller should always ask for the full 256 bytes, because it is impossible to read just the second 128-byte block of the segment.</p><p class="note">This function existed prior to the Windows XP release, but has been changed.</p><p class="note">The video miniport driver's <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a> function can call <b>VideoPortDDCMonitorHelper</b> for assistance in reading the <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> structure from a DDC2-compliant monitor. <b>VideoPortDDCMonitorHelper </b>implements the details of reading the EDID structure according to the I²C specification, but must call back into the video miniport driver to read and write individual data bits to the I²C serial clock and data lines.</p><p class="note">The four functions, implemented by the video miniport driver, that read and write individual bits to the I²C clock and data lines are <a href="..\video\nc-video-pvideo-read-clock-line.md">ReadClockLine</a>, <a href="..\video\nc-video-pvideo-read-data-line.md">ReadDataLine</a>, <a href="..\video\nc-video-pvideo-write-clock-line.md">WriteClockLine</a>, and <a href="..\video\nc-video-pvideo-write-data-line.md">WriteDataLine</a>. When the video miniport driver calls <b>VideoPortDDCMonitorHelper</b>, it supplies pointers to those four functions in <i>DDCControl</i><b>-&gt;I2CCallbacks</b>.</p><p class="note">The <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> can be obtained using the ACPI_METHOD_OUTPUT_DDC method whose alias is defined in Dispmprt.h. This method is required for integrated LCDs that do not have another standard mechanism for returning EDID data.</p><p class="note">In a 256-byte buffer, a caller of this function can receive:</p>
 
 <p>One 128-byte EDID</p>
 
@@ -168,7 +160,7 @@ BOOLEAN VideoPortDDCMonitorHelper(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
+<a href="display.i2c_functions">I2C Functions</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a>

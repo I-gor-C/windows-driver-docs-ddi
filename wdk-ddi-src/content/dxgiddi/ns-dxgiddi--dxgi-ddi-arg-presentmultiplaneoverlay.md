@@ -66,13 +66,13 @@ typedef struct _DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY {
 ### -field <b>hDevice</b>
 
 <dd>
-<p>[in] A handle to the display device (graphics context) on which the driver performs the presentation. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541664">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
+<p>[in] A handle to the display device (graphics context) on which the driver performs the presentation. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
 </dd>
 
 ### -field <b>pDXGIContext</b>
 
 <dd>
-<p>[in] A handle to the DXGI context. This handle is opaque to the driver. The driver should assign the handle in this member to the <b>pDXGIContext</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780275">DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY</a> structure when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780324">pfnPresentMultiPlaneOverlayCb (DXGI)</a> function. </p>
+<p>[in] A handle to the DXGI context. This handle is opaque to the driver. The driver should assign the handle in this member to the <b>pDXGIContext</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgiddicb-present-multiplane-overlay.md">DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY</a> structure when the driver calls the <a href="display.pfnpresentmultiplaneoverlaycb_dxgi">pfnPresentMultiPlaneOverlayCb (DXGI)</a> function. </p>
 </dd>
 
 ### -field <b>VidPnSourceId</b>
@@ -84,13 +84,13 @@ typedef struct _DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff557509">DXGI_DDI_PRESENT_FLAGS</a> structure that identifies, in bit-field flags, how to display.</p>
+<p>[in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-present-flags.md">DXGI_DDI_PRESENT_FLAGS</a> structure that identifies, in bit-field flags, how to display.</p>
 </dd>
 
 ### -field <b>FlipInterval</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557495">DXGI_DDI_FLIP_INTERVAL_TYPE</a> that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). </p>
+<p>[in] A value of type <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-flip-interval-type.md">DXGI_DDI_FLIP_INTERVAL_TYPE</a> that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). </p>
 </dd>
 
 ### -field <b>PresentPlaneCount</b>
@@ -102,7 +102,7 @@ typedef struct _DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY {
 ### -field <b>pPresentPlanes</b>
 
 <dd>
-<p>[in] A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh780295">DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY</a> that  describes the overlay plane to display.</p>
+<p>[in] A pointer to a structure of type <a href="..\dxgiddi\ns-dxgiddi--dxgi-ddi-present-multiplane-overlay.md">DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY</a> that  describes the overlay plane to display.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -151,22 +151,22 @@ typedef struct _DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541664">D3D10DDIARG_CREATEDEVICE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557495">DXGI_DDI_FLIP_INTERVAL_TYPE</a>
+<a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-flip-interval-type.md">DXGI_DDI_FLIP_INTERVAL_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557509">DXGI_DDI_PRESENT_FLAGS</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-present-flags.md">DXGI_DDI_PRESENT_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780295">DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY</a>
+<a href="..\dxgiddi\ns-dxgiddi--dxgi-ddi-present-multiplane-overlay.md">DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780275">DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgiddicb-present-multiplane-overlay.md">DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780324">pfnPresentMultiPlaneOverlayCb (DXGI)</a>
+<a href="display.pfnpresentmultiplaneoverlaycb_dxgi">pfnPresentMultiPlaneOverlayCb (DXGI)</a>
 </dt>
 </dl>
 <p> </p>

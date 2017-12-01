@@ -81,7 +81,7 @@ typedef struct _DXGK_OVERLAYINFO {
 ### -field <b>DstRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that contains the overlay destination rectangle, in device coordinates.</p>
+<p>[in] A <a href="display.rect">RECT</a> structure that contains the overlay destination rectangle, in device coordinates.</p>
 </dd>
 
 ### -field <b>SrcRect</b>
@@ -134,16 +134,16 @@ typedef struct _DXGK_OVERLAYINFO {
 <a href="display.dxgkddicreateoverlay">DxgkDdiCreateOverlay</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557572">DXGKARG_CREATEOVERLAY</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createoverlay.md">DXGKARG_CREATEOVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559496">DXGKARG_UPDATEOVERLAY</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-updateoverlay.md">DXGKARG_UPDATEOVERLAY</a>
 </dt>
 <dt>
 <a href="display.dxgkddiupdateoverlay">DxgkDdiUpdateOverlay</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

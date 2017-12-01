@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SCSI_INQUIRY_DATA structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560509">IOCTL_SCSI_GET_INQUIRY_DATA</a> request to retrieve the SCSI inquiry data for all devices on a given SCSI bus. </p>
+<p>The SCSI_INQUIRY_DATA structure is used in conjunction with the <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-get-inquiry-data.md">IOCTL_SCSI_GET_INQUIRY_DATA</a> request to retrieve the SCSI inquiry data for all devices on a given SCSI bus. </p>
 
 
 ## -syntax
@@ -104,7 +104,7 @@ typedef struct _SCSI_INQUIRY_DATA {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560509">IOCTL_SCSI_GET_INQUIRY_DATA</a> request retrieves inquiry data for all devices associated with a specified adapter. An adapter can potentially have multiple buses. The <b>PathId</b> member identifies the bus. Each bus can have multiple target devices. The <b>TargetId</b> member identifies the target device, and each target device can have multiple logical units. The <b>Lun</b> member identifies the logical unit. </p>
+<p>The <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-get-inquiry-data.md">IOCTL_SCSI_GET_INQUIRY_DATA</a> request retrieves inquiry data for all devices associated with a specified adapter. An adapter can potentially have multiple buses. The <b>PathId</b> member identifies the bus. Each bus can have multiple target devices. The <b>TargetId</b> member identifies the target device, and each target device can have multiple logical units. The <b>Lun</b> member identifies the logical unit. </p>
 
 ## -requirements
 <table>
@@ -123,13 +123,13 @@ typedef struct _SCSI_INQUIRY_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560509">IOCTL_SCSI_GET_INQUIRY_DATA</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-get-inquiry-data.md">IOCTL_SCSI_GET_INQUIRY_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565304">SCSI_BUS_DATA</a>
+<a href="..\ntddscsi\ns-ntddscsi--scsi-bus-data.md">SCSI_BUS_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564949">SCSI_ADAPTER_BUS_INFO</a>
+<a href="..\ntddscsi\ns-ntddscsi--scsi-adapter-bus-info.md">SCSI_ADAPTER_BUS_INFO</a>
 </dt>
 </dl>
 <p> </p>

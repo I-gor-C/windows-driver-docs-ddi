@@ -7,7 +7,7 @@ old-location: kernel\getlasttransitionstatus.htm
 old-project: kernel
 ms.assetid: 2ED5A28B-8668-411D-9462-8D6ED2F08B35
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,13 +62,13 @@ VOID GetLastTransitionStatus(
 ### -param <i>Context</i> [in, optional]
 
 <dd>
-<p>A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967706">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.</p>
+<p>A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="..\wdm\ns-wdm--d3cold-support-interface.md">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.</p>
 </dd>
 
 ### -param <i>LastTransitionStatus</i> [out]
 
 <dd>
-<p>A pointer to a variable into which the routine writes one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/hh967705">D3COLD_LAST_TRANSITION_STATUS</a> enumeration values:</p>
+<p>A pointer to a variable into which the routine writes one of the following <a href="..\wdm\ne-wdm--d3cold-last-transition-status.md">D3COLD_LAST_TRANSITION_STATUS</a> enumeration values:</p>
 <ul>
 <li><b>LastDStateTransitionStatusUnknown</b></li>
 <li><b>LastDStateTransitionD3hot</b></li>
@@ -84,11 +84,7 @@ VOID GetLastTransitionStatus(
 ## -remarks
 <p>This routine tries to get the information needed to answer the caller's query from the parent bus driver and platform firmware. If this information is not available, the routine writes the value <b>LastDStateTransitionStatusUnknown</b> to the location pointed to by <i>the LastTransitionStatus</i> parameter.</p>
 
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh967705">D3COLD_LAST_TRANSITION_STATUS</a>.</p>
-
-<p>This routine tries to get the information needed to answer the caller's query from the parent bus driver and platform firmware. If this information is not available, the routine writes the value <b>LastDStateTransitionStatusUnknown</b> to the location pointed to by <i>the LastTransitionStatus</i> parameter.</p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh967705">D3COLD_LAST_TRANSITION_STATUS</a>.</p>
+<p>For more information, see <a href="..\wdm\ne-wdm--d3cold-last-transition-status.md">D3COLD_LAST_TRANSITION_STATUS</a>.</p>
 
 ## -requirements
 <table>
@@ -133,12 +129,12 @@ VOID GetLastTransitionStatus(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967705">D3COLD_LAST_TRANSITION_STATUS</a>
+<a href="..\wdm\ne-wdm--d3cold-last-transition-status.md">D3COLD_LAST_TRANSITION_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967706">D3COLD_SUPPORT_INTERFACE</a>
+<a href="..\wdm\ns-wdm--d3cold-support-interface.md">D3COLD_SUPPORT_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20GET_D3COLD_LAST_TRANSITION_STATUS routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20GET_D3COLD_LAST_TRANSITION_STATUS routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

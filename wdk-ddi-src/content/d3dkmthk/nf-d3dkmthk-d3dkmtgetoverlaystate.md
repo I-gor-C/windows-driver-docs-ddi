@@ -57,7 +57,7 @@ NTSTATUS D3DKMTGetOverlayState(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548049">D3DKMT_GETOVERLAYSTATE</a> structure that describes parameters to retrieve status about an overlay. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getoverlaystate.md">D3DKMT_GETOVERLAYSTATE</a> structure that describes parameters to retrieve status about an overlay. </p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS D3DKMTGetOverlayState(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548049">D3DKMT_GETOVERLAYSTATE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getoverlaystate.md">D3DKMT_GETOVERLAYSTATE</a>
 </dt>
 </dl>
 <p> </p>

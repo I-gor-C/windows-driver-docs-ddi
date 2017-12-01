@@ -68,8 +68,6 @@ HRESULT STDMETHODCALLTYPE SetMinimalLineWidth(
 ## -remarks
 <p>This method is supported in Windows 7 and later. It is not supported in versions of the Windows operating system before Windows 7.</p>
 
-<p>This method is supported in Windows 7 and later. It is not supported in versions of the Windows operating system before Windows 7.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -106,13 +104,13 @@ HRESULT STDMETHODCALLTYPE SetMinimalLineWidth(
 <dl>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee719675.aspx">IWICBitmap</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556365">IXpsRasterizer::RasterizeRect</a>
+<a href="print.ixpsrasterizer_rasterizerect">IXpsRasterizer::RasterizeRect</a>
 </dt>
 <dt>
 <a href="print.ixpsrasterizernotificationcallback_interface">IXpsRasterizerNotificationCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556350">IXpsRasterizationFactory::CreateRasterizer</a>
+<a href="print.ixpsrasterizationfactory_createrasterizer">IXpsRasterizationFactory::CreateRasterizer</a>
 </dt>
 </dl>
 <p> </p>

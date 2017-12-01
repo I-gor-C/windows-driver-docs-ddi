@@ -70,14 +70,14 @@ NTSTATUS* DxgkDdiMiracastQueryCaps(
 ### -param <i>MiracastCapsSize</i> [in]
 
 <dd>
-<p>The size, supplied by the operating system, of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn322054">DXGK_MIRACAST_CAPS</a> structure pointed to by the <i>MiracastCaps</i> parameter.</p>
+<p>The size, supplied by the operating system, of the <a href="..\dispmprt\ns-dispmprt--dxgk-miracast-caps.md">DXGK_MIRACAST_CAPS</a> structure pointed to by the <i>MiracastCaps</i> parameter.</p>
 <p>The driver should check this value before it fills the structure.</p>
 </dd>
 
 ### -param <i>MiracastCaps</i> [out]
 
 <dd>
-<p>A pointer to an operating system-provided buffer that holds a <a href="https://msdn.microsoft.com/library/windows/hardware/dn322054">DXGK_MIRACAST_CAPS</a> structure that the driver fills with Miracast device capabilities.</p>
+<p>A pointer to an operating system-provided buffer that holds a <a href="..\dispmprt\ns-dispmprt--dxgk-miracast-caps.md">DXGK_MIRACAST_CAPS</a> structure that the driver fills with Miracast device capabilities.</p>
 </dd>
 </dl>
 
@@ -85,8 +85,6 @@ NTSTATUS* DxgkDdiMiracastQueryCaps(
 <p>Returns <b>STATUS_SUCCESS</b> if it succeeds. Otherwise, it returns one of the error codes that are defined in Ntstatus.h.</p>
 
 ## -remarks
-<p>The operating system guarantees that this function follows the third-level synchronization mode as defined in <a href="https://msdn.microsoft.com/780d37d9-40c6-4737-9042-473810868227">Threading and Synchronization Third Level</a>.</p>
-
 <p>The operating system guarantees that this function follows the third-level synchronization mode as defined in <a href="https://msdn.microsoft.com/780d37d9-40c6-4737-9042-473810868227">Threading and Synchronization Third Level</a>.</p>
 
 ## -requirements
@@ -140,7 +138,7 @@ NTSTATUS* DxgkDdiMiracastQueryCaps(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn322054">DXGK_MIRACAST_CAPS</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-miracast-caps.md">DXGK_MIRACAST_CAPS</a>
 </dt>
 <dt>
 <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a>

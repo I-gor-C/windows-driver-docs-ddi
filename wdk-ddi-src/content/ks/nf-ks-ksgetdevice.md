@@ -7,7 +7,7 @@ old-location: stream\ksgetdevice.htm
 old-project: stream
 ms.assetid: 27fb223f-9e6b-42af-b3d8-1018dc5416c2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsGetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,16 +62,12 @@ PKSDEVICE KsGetDevice(
 </dl>
 
 ## -returns
-<p><b>KsGetDevice</b> returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> structure that is the AVStream device to which <i>Object</i> belongs.</p>
+<p><b>KsGetDevice</b> returns a pointer to a <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure that is the AVStream device to which <i>Object</i> belongs.</p>
 
 ## -remarks
 <p><i>Object</i> should be one of: PKSPIN, PKSFILTER, or PKSFILTERFACTORY. Callers must perform appropriate typecasting to PVOID.</p>
 
-<p>Minidrivers typically do not call this function directly. There are a number of functions that perform inline calls to <b>KsGetDevice</b> and that perform typecasting automatically: <a href="https://msdn.microsoft.com/library/windows/hardware/ff562532">KsFilterFactoryGetDevice</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff562544">KsFilterGetDevice</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff563511">KsPinGetDevice</a>.</p>
-
-<p><i>Object</i> should be one of: PKSPIN, PKSFILTER, or PKSFILTERFACTORY. Callers must perform appropriate typecasting to PVOID.</p>
-
-<p>Minidrivers typically do not call this function directly. There are a number of functions that perform inline calls to <b>KsGetDevice</b> and that perform typecasting automatically: <a href="https://msdn.microsoft.com/library/windows/hardware/ff562532">KsFilterFactoryGetDevice</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff562544">KsFilterGetDevice</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff563511">KsPinGetDevice</a>.</p>
+<p>Minidrivers typically do not call this function directly. There are a number of functions that perform inline calls to <b>KsGetDevice</b> and that perform typecasting automatically: <a href="..\ks\nf-ks-ksfilterfactorygetdevice.md">KsFilterFactoryGetDevice</a>, <a href="..\ks\nf-ks-ksfiltergetdevice.md">KsFilterGetDevice</a>, and <a href="..\ks\nf-ks-kspingetdevice.md">KsPinGetDevice</a>.</p>
 
 ## -requirements
 <table>
@@ -126,27 +122,27 @@ PKSDEVICE KsGetDevice(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a>
+<a href="..\ks\ns-ks--kspin.md">KSPIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>
+<a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a>
+<a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a>
+<a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562532">KsFilterFactoryGetDevice</a>
+<a href="..\ks\nf-ks-ksfilterfactorygetdevice.md">KsFilterFactoryGetDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562544">KsFilterGetDevice</a>
+<a href="..\ks\nf-ks-ksfiltergetdevice.md">KsFilterGetDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563511">KsPinGetDevice</a>
+<a href="..\ks\nf-ks-kspingetdevice.md">KsPinGetDevice</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGetDevice function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGetDevice function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

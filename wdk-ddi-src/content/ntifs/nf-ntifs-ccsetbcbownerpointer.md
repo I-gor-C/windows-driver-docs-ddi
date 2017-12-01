@@ -64,7 +64,7 @@ VOID CcSetBcbOwnerPointer(
 ### -param <i>OwnerPointer</i> [in]
 
 <dd>
-<p>A valid resource owner pointer, which means a pointer to an allocated system address, with the low-order two bits set. This address may not be deallocated until after the BCB is unpinned by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539231">CcUnpinDataForThread</a>.</p>
+<p>A valid resource owner pointer, which means a pointer to an allocated system address, with the low-order two bits set. This address may not be deallocated until after the BCB is unpinned by a subsequent call to <a href="..\ntifs\nf-ntifs-ccunpindataforthread.md">CcUnpinDataForThread</a>.</p>
 </dd>
 </dl>
 
@@ -74,15 +74,9 @@ VOID CcSetBcbOwnerPointer(
 ## -remarks
 <p>File systems call <b>CcSetBcbOwnerPointer</b> to set the resource owner for a pinned buffer control block (BCB), in cases where another thread will unpin the BCB and thus the current thread can exit.</p>
 
-<p>Each call to <b>CcSetBcbOwnerPointer</b> must be matched by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539231">CcUnpinDataForThread</a>, which must be called with the same owner pointer.</p>
+<p>Each call to <b>CcSetBcbOwnerPointer</b> must be matched by a subsequent call to <a href="..\ntifs\nf-ntifs-ccunpindataforthread.md">CcUnpinDataForThread</a>, which must be called with the same owner pointer.</p>
 
-<p>BCBs that have been modified by <b>CcSetBcbOwnerPointer</b> cannot be unpinned by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff539228">CcUnpinData</a>.</p>
-
-<p>File systems call <b>CcSetBcbOwnerPointer</b> to set the resource owner for a pinned buffer control block (BCB), in cases where another thread will unpin the BCB and thus the current thread can exit.</p>
-
-<p>Each call to <b>CcSetBcbOwnerPointer</b> must be matched by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539231">CcUnpinDataForThread</a>, which must be called with the same owner pointer.</p>
-
-<p>BCBs that have been modified by <b>CcSetBcbOwnerPointer</b> cannot be unpinned by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff539228">CcUnpinData</a>.</p>
+<p>BCBs that have been modified by <b>CcSetBcbOwnerPointer</b> cannot be unpinned by calling <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>.</p>
 
 ## -requirements
 <table>
@@ -131,13 +125,13 @@ VOID CcSetBcbOwnerPointer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539228">CcUnpinData</a>
+<a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539231">CcUnpinDataForThread</a>
+<a href="..\ntifs\nf-ntifs-ccunpindataforthread.md">CcUnpinDataForThread</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545600">ExSetResourceOwnerPointer</a>
+<a href="..\wdm\nf-wdm-exsetresourceownerpointer.md">ExSetResourceOwnerPointer</a>
 </dt>
 </dl>
 <p> </p>

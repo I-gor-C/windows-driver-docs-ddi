@@ -70,19 +70,19 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS {
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_FILL"></a><a id="d3d11_1ddi_video_processor_feature_caps_alpha_fill"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_FILL</b>
 
 <dd>
-<p>The video processor can set alpha values on the output pixels. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439778">VideoProcessorSetOutputAlphaFillMode</a>.</p>
+<p>The video processor can set alpha values on the output pixels. For more information, see <a href="display.videoprocessorsetoutputalphafillmode">VideoProcessorSetOutputAlphaFillMode</a>.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_CONSTRICTION"></a><a id="d3d11_1ddi_video_processor_feature_caps_constriction"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_CONSTRICTION</b>
 
 <dd>
-<p>The video processor can downsample the video output. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439784">VideoProcessorSetOutputConstriction</a>.</p>
+<p>The video processor can downsample the video output. For more information, see <a href="display.videoprocessorsetoutputconstriction">VideoProcessorSetOutputConstriction</a>.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_LUMA_KEY"></a><a id="d3d11_1ddi_video_processor_feature_caps_luma_key"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_LUMA_KEY</b>
 
 <dd>
-<p>The video processor can perform luma keying. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439805">VideoProcessorSetStreamLumaKey</a>.</p>
+<p>The video processor can perform luma keying. For more information, see <a href="display.videoprocessorsetstreamlumakey">VideoProcessorSetStreamLumaKey</a>.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_PALETTE"></a><a id="d3d11_1ddi_video_processor_feature_caps_alpha_palette"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_PALETTE</b>
@@ -109,7 +109,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS {
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_STEREO"></a><a id="d3d11_1ddi_video_processor_feature_caps_stereo"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_STEREO</b>
 
 <dd>
-<p>The video processor can support 3-D stereo video. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439817">VideoProcessorSetStreamStereoFormat</a>.</p>
+<p>The video processor can support 3-D stereo video. For more information, see <a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a>.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ROTATION"></a><a id="d3d11_1ddi_video_processor_feature_caps_rotation"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ROTATION</b>
@@ -133,14 +133,14 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS {
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_MIRROR"></a><a id="d3d11_1ddi_video_processor_feature_caps_mirror"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_MIRROR</b>
 
 <dd>
-<p>Indicates that the driver supports <a href="https://msdn.microsoft.com/library/windows/hardware/dn906383">VideoProcessorSetStreamMirror</a>.</p>
+<p>Indicates that the driver supports <a href="display.videoprocessorsetstreammirror">VideoProcessorSetStreamMirror</a>.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_PIXEL_SHADER_USAGE"></a><a id="d3d11_1ddi_video_processor_feature_caps_pixel_shader_usage"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_PIXEL_SHADER_USAGE</b>
 
 <dd>
-<p>Indicates that the hardware can benefit from a hint as to whether a shader might be used to read the output of  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451703">VideoProcessorBlt</a>.  This should only be set by hardware that support multi-plane overlays.</p>
+<p>Indicates that the hardware can benefit from a hint as to whether a shader might be used to read the output of  <a href="display.videoprocessorblt">VideoProcessorBlt</a>.  This should only be set by hardware that support multi-plane overlays.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
@@ -185,22 +185,22 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439778">VideoProcessorSetOutputAlphaFillMode</a>
+<a href="display.videoprocessorsetoutputalphafillmode">VideoProcessorSetOutputAlphaFillMode</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439784">VideoProcessorSetOutputConstriction</a>
+<a href="display.videoprocessorsetoutputconstriction">VideoProcessorSetOutputConstriction</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439805">VideoProcessorSetStreamLumaKey</a>
+<a href="display.videoprocessorsetstreamlumakey">VideoProcessorSetStreamLumaKey</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439817">VideoProcessorSetStreamStereoFormat</a>
+<a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906383">VideoProcessorSetStreamMirror</a>
+<a href="display.videoprocessorsetstreammirror">VideoProcessorSetStreamMirror</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451703">VideoProcessorBlt</a>
+<a href="display.videoprocessorblt">VideoProcessorBlt</a>
 </dt>
 </dl>
 <p> </p>

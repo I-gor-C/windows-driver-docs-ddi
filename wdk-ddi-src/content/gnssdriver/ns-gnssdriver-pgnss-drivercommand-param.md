@@ -7,7 +7,7 @@ old-location: sensors\gnss_drivercommand_param.htm
 old-project: sensors
 ms.assetid: EC6EDD7A-B57F-4350-9EB9-56721EAC19BD
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_DRIVERCOMMAND_PARAM, GNSS_DRIVERCOMMAND_PARAM, *PGNSS_DRIVERCOMMAND_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -77,7 +77,7 @@ typedef struct {
 
 <dd>
 <p>Identifies the specific command that the driver is required to execute.</p>
-<p>This is a well-defined list of GNSS driver commands, as defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925109">GNSS_DRIVERCOMMAND_TYPE</a> enumeration.</p>
+<p>This is a well-defined list of GNSS driver commands, as defined by the <a href="..\gnssdriver\ne-gnssdriver-gnss-drivercommand-type.md">GNSS_DRIVERCOMMAND_TYPE</a> enumeration.</p>
 </dd>
 
 ### -field <b>CommandFlag</b>

@@ -7,7 +7,7 @@ old-location: stream\kspin_mdl_caching_event.htm
 old-project: stream
 ms.assetid: 74A7C2C8-F12B-4753-8E1F-C425B0B56788
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

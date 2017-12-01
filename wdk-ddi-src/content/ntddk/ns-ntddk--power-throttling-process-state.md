@@ -7,7 +7,7 @@ old-location: kernel\power_throttling_process_state.htm
 old-project: kernel
 ms.assetid: f22be66a-1f1c-4999-a99e-9a8575313239
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: POWER_THROTTLING_PROCESS_STATE, POWER_THROTTLING_PROCESS_STATE, *PPOWER_THROTTLING_PROCESS_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

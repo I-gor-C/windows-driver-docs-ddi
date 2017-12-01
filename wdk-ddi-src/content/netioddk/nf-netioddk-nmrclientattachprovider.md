@@ -7,7 +7,7 @@ old-location: netvista\nmrclientattachprovider.htm
 old-project: netvista
 ms.assetid: dca8f82b-f058-4765-890c-973f8462c2f5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NmrClientAttachProvider
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: function
 req.header: netioddk.h
 req.include-header: Wsk.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -163,40 +162,6 @@ NTSTATUS NmrClientAttachProvider(
     <i>ProviderDispatch</i> parameters so that it can call the provider module's 
     <a href="netvista.network_programming_interface">NPI</a> functions.</p>
 
-<p>A client module calls the 
-    <b>NmrClientAttachProvider</b> function from its 
-    <a href="netvista.clientattachprovider">ClientAttachProvider</a> callback
-    function to attach itself to a provider module.</p>
-
-<p>When a client module calls the 
-    <b>NmrClientAttachProvider</b> function, the NMR calls the provider module's 
-    <a href="netvista.providerattachclient">ProviderAttachClient</a> callback
-    function to complete the attachment process. The 
-    <b>NmrClientAttachProvider</b> function returns the status code that is returned by the provider module's 
-    <i>ProviderAttachClient</i> callback
-    function.</p>
-
-<p>If the 
-    <b>NmrClientAttachProvider</b> function does not return STATUS_SUCCESS, the client module should perform
-    any necessary cleanup of the data contained within its binding context structure. The client module
-    should then free the memory for its binding context structure if it dynamically allocated the memory for
-    the structure.</p>
-
-<p>If the 
-    <b>NmrClientAttachProvider</b> function returns STATUS_SUCCESS and the client module dynamically allocated
-    the memory for its binding context, the client module should free that allocated memory when the NMR
-    calls the client module's 
-    <a href="netvista.clientcleanupbindingcontext">
-    ClientCleanupBindingContext</a> callback function after the client module and provider module are
-    detached from each other.</p>
-
-<p>If the 
-    <b>NmrClientAttachProvider</b> function returns STATUS_SUCCESS, the client module must save the pointers
-    returned in the 
-    <i>ProviderBindingContext</i> and 
-    <i>ProviderDispatch</i> parameters so that it can call the provider module's 
-    <a href="netvista.network_programming_interface">NPI</a> functions.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -262,4 +227,4 @@ NTSTATUS NmrClientAttachProvider(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrClientAttachProvider function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NmrClientAttachProvider function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

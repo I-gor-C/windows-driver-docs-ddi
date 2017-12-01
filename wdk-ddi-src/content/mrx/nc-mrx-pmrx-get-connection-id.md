@@ -83,10 +83,6 @@ NTSTATUS MRxGetConnectionId(
 
 <p>If connection IDs are supported by the network mini-redirector, then the returned connection ID is appended to the NET_ROOT structure name stored in the NetName table used by RDBSS for storing network names. RDBSS considers the connection ID as an opaque blob, and does a byte-by-byte comparison of the connection ID blob while looking up the NetName table for a given name with a connection ID. </p>
 
-<p><i>MRxGetConnectionId</i> is called by RDBSS when trying to find or construct a V_NET_ROOT structure. </p>
-
-<p>If connection IDs are supported by the network mini-redirector, then the returned connection ID is appended to the NET_ROOT structure name stored in the NetName table used by RDBSS for storing network names. RDBSS considers the connection ID as an opaque blob, and does a byte-by-byte comparison of the connection ID blob while looking up the NetName table for a given name with a connection ID. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -114,10 +110,10 @@ NTSTATUS MRxGetConnectionId(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549850">MRxCompleteBufferingStateChangeRequest</a>
+<a href="ifsk.mrxcompletebufferingstatechangerequest">MRxCompleteBufferingStateChangeRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549856">MRxComputeNewBufferingState</a>
+<a href="ifsk.mrxcomputenewbufferingstate">MRxComputeNewBufferingState</a>
 </dt>
 </dl>
 <p> </p>

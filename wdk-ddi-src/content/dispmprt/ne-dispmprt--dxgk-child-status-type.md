@@ -86,11 +86,7 @@ typedef enum _DXGK_CHILD_STATUS_TYPE {
 </dl>
 
 ## -remarks
-<p>The <b>Type</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561010">DXGK_CHILD_STATUS</a> structure is a member of the <b>DXGK_CHILD_STATUS_TYPE</b> enumeration.</p>
-
-<p>The <b>Type</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561010">DXGK_CHILD_STATUS</a> structure is a member of the <b>DXGK_CHILD_STATUS_TYPE</b> enumeration.</p>
-
-<p>The <b>Type</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561010">DXGK_CHILD_STATUS</a> structure is a member of the <b>DXGK_CHILD_STATUS_TYPE</b> enumeration.</p>
+<p>The <b>Type</b> member of a <a href="..\dispmprt\ns-dispmprt--dxgk-child-status.md">DXGK_CHILD_STATUS</a> structure is a member of the <b>DXGK_CHILD_STATUS_TYPE</b> enumeration.</p>
 
 ## -requirements
 <table>

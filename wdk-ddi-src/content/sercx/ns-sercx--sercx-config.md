@@ -70,13 +70,13 @@ typedef struct _SERCX_CONFIG {
 ### -field <b>Size</b>
 
 <dd>
-<p>The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406711">SerCxInitialize</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
+<p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
 ### -field <b>PowerManaged</b>
 
 <dd>
-<p>Whether the controller queue should be power-managed. If set to <b>WdfTrue</b>, the controller queue should be power-managed.  If set to <b>WdfFalse</b>, the controller queue not be power-managed. If set to <b>WdfDefault</b>, the controller queue should be power-managed unless the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547273">WdfFdoInitSetFilter</a> method. For more information, see the description of the <b>PowerManaged</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/ff552359">WDF_IO_QUEUE_CONFIG</a>.</p>
+<p>Whether the controller queue should be power-managed. If set to <b>WdfTrue</b>, the controller queue should be power-managed.  If set to <b>WdfFalse</b>, the controller queue not be power-managed. If set to <b>WdfDefault</b>, the controller queue should be power-managed unless the driver calls the <a href="..\wdffdo\nf-wdffdo-wdffdoinitsetfilter.md">WdfFdoInitSetFilter</a> method. For more information, see the description of the <b>PowerManaged</b> member in <a href="..\wdfio\ns-wdfio--wdf-io-queue-config.md">WDF_IO_QUEUE_CONFIG</a>.</p>
 </dd>
 
 ### -field <b>EvtSerCxFileOpen</b>
@@ -147,7 +147,7 @@ typedef struct _SERCX_CONFIG {
 </dl>
 
 ## -remarks
-<p>Before this structure is passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406711">SerCxInitialize</a> method, it must be initialized by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439553">SERCX_CONFIG_INIT</a> function, and then modified by the controller driver to set the callback function pointers and the <b>PowerManaged</b> member.</p>
+<p>Before this structure is passed to the <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method, it must be initialized by the <a href="..\sercx\nf-sercx-sercx-config-init.md">SERCX_CONFIG_INIT</a> function, and then modified by the controller driver to set the callback function pointers and the <b>PowerManaged</b> member.</p>
 
 ## -requirements
 <table>
@@ -207,16 +207,16 @@ typedef struct _SERCX_CONFIG {
 <a href="..\sercx\nc-sercx-evt-sercx-waitmask.md">EvtSerCxWaitmask</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439553">SERCX_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx-config-init.md">SERCX_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406711">SerCxInitialize</a>
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547273">WdfFdoInitSetFilter</a>
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitsetfilter.md">WdfFdoInitSetFilter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552359">WDF_IO_QUEUE_CONFIG</a>
+<a href="..\wdfio\ns-wdfio--wdf-io-queue-config.md">WDF_IO_QUEUE_CONFIG</a>
 </dt>
 </dl>
 <p> </p>

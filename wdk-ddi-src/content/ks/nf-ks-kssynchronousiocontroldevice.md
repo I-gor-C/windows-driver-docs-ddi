@@ -7,7 +7,7 @@ old-location: stream\kssynchronousiocontroldevice.htm
 old-project: stream
 ms.assetid: 7e4ca8ea-52c1-462e-bf02-cc82e9ab2be2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsSynchronousIoControlDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices

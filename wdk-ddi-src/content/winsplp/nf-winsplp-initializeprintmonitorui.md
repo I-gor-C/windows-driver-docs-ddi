@@ -61,11 +61,9 @@ PMONITORUI WINAPI InitializePrintMonitorUI(
 </dl>
 
 ## -returns
-<p>The function should return a pointer to an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff557541">MONITORUI</a> structure.</p>
+<p>The function should return a pointer to an initialized <a href="..\winsplp\ns-winsplp--monitorui.md">MONITORUI</a> structure.</p>
 
 ## -remarks
-<p>Port monitor UI DLLs are required to export an <b>InitializePrintMonitorUI</b> function. The function is called immediately after the DLL is loaded, and is not called again until the DLL is reloaded. Its purposes are to allow the DLL to initialize itself, and to provide the spooler with pointers to internal functions.</p>
-
 <p>Port monitor UI DLLs are required to export an <b>InitializePrintMonitorUI</b> function. The function is called immediately after the DLL is loaded, and is not called again until the DLL is reloaded. Its purposes are to allow the DLL to initialize itself, and to provide the spooler with pointers to internal functions.</p>
 
 ## -requirements
@@ -95,10 +93,10 @@ PMONITORUI WINAPI InitializePrintMonitorUI(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551600">InitializePrintMonitor</a>
+<a href="..\winsplp\nf-winsplp-initializeprintmonitor.md">InitializePrintMonitor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557541">MONITORUI</a>
+<a href="..\winsplp\ns-winsplp--monitorui.md">MONITORUI</a>
 </dt>
 </dl>
 <p> </p>

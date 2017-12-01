@@ -7,7 +7,7 @@ old-location: netvista\rilmsginstatus.htm
 old-project: netvista
 ms.assetid: 383ed544-c8c8-42a0-a7de-57f0f4072611
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMSGINSTATUS, RILMSGINSTATUS, *LPRILMSGINSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

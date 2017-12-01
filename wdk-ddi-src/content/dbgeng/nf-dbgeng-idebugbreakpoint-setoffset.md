@@ -7,7 +7,7 @@ old-location: debugger\setoffset.htm
 old-project: debugger
 ms.assetid: 25898500-f16e-4838-854f-5eb299727e2b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugBreakpoint, SetOffset, IDebugBreakpoint::SetOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,8 +73,6 @@ HRESULT SetOffset(
 <p>This method can also return other error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
 
 ## -remarks
-<p>For more information about how to use breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.</p>
-
 <p>For more information about how to use breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.</p>
 
 ## -requirements

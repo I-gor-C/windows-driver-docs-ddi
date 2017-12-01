@@ -90,7 +90,7 @@ typedef struct _DXGKARG_PRESENT_DISPLAYONLY {
 ### -field <b>Flags</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh406547">D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</a> structure that identifies how to display the source image in the present operation.</p>
+<p>A <a href="..\d3dkmddi\ns-d3dkmddi--d3dkmt-present-display-only-flags.md">D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</a> structure that identifies how to display the source image in the present operation.</p>
 </dd>
 
 ### -field <b>NumMoves</b>
@@ -102,7 +102,7 @@ typedef struct _DXGKARG_PRESENT_DISPLAYONLY {
 ### -field <b>pMoves</b>
 
 <dd>
-<p>A pointer to a list of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406478">D3DKMT_MOVE_RECT</a> screen-to-screen moves.</p>
+<p>A pointer to a list of <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmt-move-rect.md">D3DKMT_MOVE_RECT</a> screen-to-screen moves.</p>
 </dd>
 
 ### -field <b>NumDirtyRects</b>
@@ -114,7 +114,7 @@ typedef struct _DXGKARG_PRESENT_DISPLAYONLY {
 ### -field <b>pDirtyRect</b>
 
 <dd>
-<p>A pointer to a list of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> dirty rectangles.</p>
+<p>A pointer to a list of <a href="display.rect">RECT</a> dirty rectangles.</p>
 </dd>
 
 ### -field <b>pfnPresentDisplayOnlyProgress</b>
@@ -160,10 +160,10 @@ typedef struct _DXGKARG_PRESENT_DISPLAYONLY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406478">D3DKMT_MOVE_RECT</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmt-move-rect.md">D3DKMT_MOVE_RECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406547">D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--d3dkmt-present-display-only-flags.md">D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</a>
 </dt>
 <dt>
 <a href="display.dxgkcbpresentdisplayonlyprogress">DxgkCbPresentDisplayOnlyProgress</a>
@@ -172,7 +172,7 @@ typedef struct _DXGKARG_PRESENT_DISPLAYONLY {
 <a href="display.dxgkddipresentdisplayonly">DxgkDdiPresentDisplayOnly</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

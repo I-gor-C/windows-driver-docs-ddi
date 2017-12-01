@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The OEMDMPARAM structure is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554167">IPrintOemUI::DevMode</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554230">IPrintOemUni::DevMode</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff553205">IPrintOemPS::DevMode</a> methods.</p>
+<p>The OEMDMPARAM structure is used as an input parameter to the <a href="print.iprintoemui_devmode">IPrintOemUI::DevMode</a>, <a href="print.iprintoemuni_devmode">IPrintOemUni::DevMode</a>, and <a href="print.iprintoemps_devmode">IPrintOemPS::DevMode</a> methods.</p>
 
 
 ## -syntax
@@ -84,7 +84,7 @@ typedef struct _OEMDMPARAM {
 ### -field <a id="For_IPrintOemUni__DevMode_and_IPrintOemPS__DevMode_"></a><a id="for_iprintoemuni__devmode_and_iprintoemps__devmode_"></a><a id="FOR_IPRINTOEMUNI__DEVMODE_AND_IPRINTOEMPS__DEVMODE_"></a>For <b>IPrintOemUni::DevMode</b> and <b>IPrintOemPS::DevMode</b>:
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>Pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 </dl>
 </dd>
@@ -134,7 +134,7 @@ typedef struct _OEMDMPARAM {
 </dl>
 
 ## -remarks
-<p>For more information about the use of OEMDMPARAM structure members, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554167">IPrintOemUI::DevMode</a> method.</p>
+<p>For more information about the use of OEMDMPARAM structure members, see the description of the <a href="print.iprintoemui_devmode">IPrintOemUI::DevMode</a> method.</p>
 
 ## -requirements
 <table>

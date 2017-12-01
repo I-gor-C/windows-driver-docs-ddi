@@ -64,7 +64,7 @@ typedef struct HBA_FCPBinding2 {
 ### -field <b>entry</b>
 
 <dd>
-<p>Variable length array of elements of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556060">HBA_FCPBindingEntry2</a>, each of which holds a persistent binding between operating system identifiers, a SCSI logical unit ID descriptor (LUID) and a fibre channel protocol (FCP) identifier for a logical unit. </p>
+<p>Variable length array of elements of type <a href="..\hbaapi\ns-hbaapi-hba-fcpbindingentry2.md">HBA_FCPBindingEntry2</a>, each of which holds a persistent binding between operating system identifiers, a SCSI logical unit ID descriptor (LUID) and a fibre channel protocol (FCP) identifier for a logical unit. </p>
 </dd>
 </dl>
 
@@ -88,7 +88,7 @@ typedef struct HBA_FCPBinding2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556102">HBA_GetPersistentBindingV2</a>
+<a href="..\hbaapi\nf-hbaapi-hba-getpersistentbindingv2.md">HBA_GetPersistentBindingV2</a>
 </dt>
 </dl>
 <p> </p>

@@ -40,9 +40,9 @@ req.iface:
 
 ## -description
 <p>
-<p>The <b>D3DDDICB_DESTROYALLOCATION2FLAGS</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/dn906793">D3DKMT_DESTROYALLOCATION2</a> structure to describe parameters for releasing allocations with <a href="https://msdn.microsoft.com/library/windows/hardware/dn906772">D3DKMTDestroyAllocation2</a>.</p>
+<p>The <b>D3DDDICB_DESTROYALLOCATION2FLAGS</b> structure is used with the <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyallocation2.md">D3DKMT_DESTROYALLOCATION2</a> structure to describe parameters for releasing allocations with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroyallocation2.md">D3DKMTDestroyAllocation2</a>.</p>
 </p>
-<p>The <b>D3DDDICB_DESTROYALLOCATION2FLAGS</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/dn906793">D3DKMT_DESTROYALLOCATION2</a> structure to describe parameters for releasing allocations with <a href="https://msdn.microsoft.com/library/windows/hardware/dn906772">D3DKMTDestroyAllocation2</a>.</p>
+<p>The <b>D3DDDICB_DESTROYALLOCATION2FLAGS</b> structure is used with the <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyallocation2.md">D3DKMT_DESTROYALLOCATION2</a> structure to describe parameters for releasing allocations with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroyallocation2.md">D3DKMTDestroyAllocation2</a>.</p>
 
 
 ## -syntax
@@ -194,10 +194,10 @@ typedef struct _D3DDDICB_DESTROYALLOCATION2FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906793">D3DKMT_DESTROYALLOCATION2</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyallocation2.md">D3DKMT_DESTROYALLOCATION2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906772">D3DKMTDestroyAllocation2</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroyallocation2.md">D3DKMTDestroyAllocation2</a>
 </dt>
 </dl>
 <p> </p>

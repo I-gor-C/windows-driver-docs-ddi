@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>pfnCreateNewPathInfo</b> function returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a> structure that the display miniport driver populates before calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-addpath.md">pfnAddPath</a>.</p>
+<p>The <b>pfnCreateNewPathInfo</b> function returns a pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure that the display miniport driver populates before calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-addpath.md">pfnAddPath</a>.</p>
 
 
 ## -prototype
@@ -61,7 +61,7 @@ NTSTATUS APIENTRY pfnCreateNewPathInfo(
 ### -param <i>hVidPnTopology</i> [in]
 
 <dd>
-<p>[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-gettopology.md">pfnGetTopology</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562108">DXGK_VIDPN_INTERFACE</a> interface.</p>
+<p>[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-gettopology.md">pfnGetTopology</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> interface.</p>
 </dd>
 
 ### -param <i>ppNewVidPnPresentPathInfo</i> [out]
@@ -81,14 +81,6 @@ NTSTATUS APIENTRY pfnCreateNewPathInfo(
 <p> </p>
 
 ## -remarks
-<p>After you call <b>pfnCreateNewPathInfo</b> to obtain a D3DKMDT_VIDPN_PRESENT_PATH structure, you must do one, but not both, of the following:</p>
-
-<p>Populate the structure and pass it to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-addpath.md">pfnAddPath</a>.</p>
-
-<p>Release the structure by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-releasepathinfo.md">pfnReleasePathInfo</a>.</p>
-
-<p>The D3DKMDT_HVIDPNTOPOLOGY data type is defined in <i>D3dkmdt.h</i>.</p>
-
 <p>After you call <b>pfnCreateNewPathInfo</b> to obtain a D3DKMDT_VIDPN_PRESENT_PATH structure, you must do one, but not both, of the following:</p>
 
 <p>Populate the structure and pass it to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-addpath.md">pfnAddPath</a>.</p>
@@ -138,7 +130,7 @@ NTSTATUS APIENTRY pfnCreateNewPathInfo(
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-releasepathinfo.md">pfnReleasePathInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
 </dt>
 </dl>
 <p> </p>

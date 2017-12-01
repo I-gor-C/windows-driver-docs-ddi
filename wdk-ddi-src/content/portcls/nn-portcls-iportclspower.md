@@ -1,0 +1,63 @@
+---
+UID: NN.portcls.IPortClsPower
+title: IPortClsPower
+author: windows-driver-content
+description: The IPortClsPower interface is supported in Windows Vista and later versions of Windows. IPortClsPower is the power management interface that the port class driver (PortCls) exposes to the adapter.
+old-location: audio\iportclspower.htm
+old-project: audio
+ms.assetid: bebd704b-2824-4bea-aae8-d77c66830715
+ms.author: windowsdriverdev
+ms.date: 11/28/2017
+ms.keywords: PcUnregisterIoTimeout
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: IPortClsPower
+req.alt-loc: portcls.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+req.iface: 
+---
+
+# IPortClsPower interface
+
+
+
+## -description
+<p>The <code>IPortClsPower</code> interface is supported in Windows Vista and later versions of Windows. <code>IPortClsPower</code> is the power management interface that the port class driver (PortCls) exposes to the adapter.</p>
+
+
+## -inheritance
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsPower</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface but does not have additional members.</p>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Portcls.h</dt>
+</dl>
+</td>
+</tr>
+</table>

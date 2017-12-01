@@ -7,7 +7,7 @@ old-location: stream\kspin_cinstances.htm
 old-project: stream
 ms.assetid: 90C861C3-26E0-43C0-A4CA-FD5491995DAB
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSPIN_CINSTANCES, KSPIN_CINSTANCES, *PKSPIN_CINSTANCES
 ms.prod: windows-hardware
 ms.technology: windows-devices

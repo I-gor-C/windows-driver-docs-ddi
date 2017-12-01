@@ -81,25 +81,25 @@ typedef struct DXGI_DDI_MODE_DESC {
 ### -field <b>RefreshRate</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff557516">DXGI_DDI_RATIONAL</a> structure that indicates the refresh rate of the display mode.</p>
+<p>[out] A <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-rational.md">DXGI_DDI_RATIONAL</a> structure that indicates the refresh rate of the display mode.</p>
 </dd>
 
 ### -field <b>ScanlineOrdering</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff557507">DXGI_DDI_MODE_SCANLINE_ORDER</a>-typed value that indicates how scan lines are ordered in the display mode.</p>
+<p>[out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-scanline-order.md">DXGI_DDI_MODE_SCANLINE_ORDER</a>-typed value that indicates how scan lines are ordered in the display mode.</p>
 </dd>
 
 ### -field <b>Rotation</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff557502">DXGI_DDI_MODE_ROTATION</a>-typed value that identifies the orientation of the display mode.</p>
+<p>[out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-rotation.md">DXGI_DDI_MODE_ROTATION</a>-typed value that identifies the orientation of the display mode.</p>
 </dd>
 
 ### -field <b>Scaling</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff557505">DXGI_DDI_MODE_SCALING</a>-typed value that identifies the scaling of the display mode.</p>
+<p>[out] A <a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-scaling.md">DXGI_DDI_MODE_SCALING</a>-typed value that identifies the scaling of the display mode.</p>
 </dd>
 </dl>
 
@@ -131,19 +131,19 @@ typedef struct DXGI_DDI_MODE_DESC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557502">DXGI_DDI_MODE_ROTATION</a>
+<a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-rotation.md">DXGI_DDI_MODE_ROTATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557505">DXGI_DDI_MODE_SCALING</a>
+<a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-scaling.md">DXGI_DDI_MODE_SCALING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557507">DXGI_DDI_MODE_SCANLINE_ORDER</a>
+<a href="..\dxgiddi\ne-dxgiddi-dxgi-ddi-mode-scanline-order.md">DXGI_DDI_MODE_SCANLINE_ORDER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557511">DXGI_DDI_PRIMARY_DESC</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-primary-desc.md">DXGI_DDI_PRIMARY_DESC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557516">DXGI_DDI_RATIONAL</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-rational.md">DXGI_DDI_RATIONAL</a>
 </dt>
 </dl>
 <p> </p>

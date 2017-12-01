@@ -7,7 +7,7 @@ old-location: netvista\wdi_type_nonce.htm
 old-project: netvista
 ms.assetid: 62E3A714-BA18-4DD5-ACFC-A9EFA37EABB4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TYPE_NONCE, WDI_TYPE_NONCE, *PWDI_TYPE_NONCE
 ms.prod: windows-hardware
 ms.technology: windows-devices

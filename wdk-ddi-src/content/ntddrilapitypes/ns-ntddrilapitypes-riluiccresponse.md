@@ -7,7 +7,7 @@ old-location: netvista\riluiccresponse.htm
 old-project: netvista
 ms.assetid: c584e508-b0f1-4809-808e-089e9a7fbcf9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCRESPONSE, RILUICCRESPONSE, *LPRILUICCRESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices

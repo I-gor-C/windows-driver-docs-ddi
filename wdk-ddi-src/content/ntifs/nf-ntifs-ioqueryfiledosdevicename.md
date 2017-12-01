@@ -77,7 +77,7 @@ NTSTATUS IoQueryFileDosDeviceName(
 </td>
 </tr>
 </table></span></div>
-<div class="alert"><b>Note</b>    This structure must eventually be freed by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a>.</div>
+<div class="alert"><b>Note</b>    This structure must eventually be freed by calling <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>.</div>
 <div> </div>
 </dd>
 </dl>
@@ -86,8 +86,6 @@ NTSTATUS IoQueryFileDosDeviceName(
 <p><b>IoQueryFileDosDeviceName</b> returns STATUS_SUCCESS or an error NTSTATUS value, such as STATUS_INSUFFICIENT_RESOURCES. </p>
 
 ## -remarks
-<p>For more information about MS-DOS names, see the Files and I/O section of the Platform Software Development Kit (SDK) documentation. </p>
-
 <p>For more information about MS-DOS names, see the Files and I/O section of the Platform Software Development Kit (SDK) documentation. </p>
 
 ## -requirements
@@ -153,7 +151,7 @@ NTSTATUS IoQueryFileDosDeviceName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>

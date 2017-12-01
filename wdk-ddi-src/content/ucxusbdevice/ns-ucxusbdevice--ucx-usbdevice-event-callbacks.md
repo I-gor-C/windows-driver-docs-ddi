@@ -76,55 +76,55 @@ typedef struct _UCX_USBDEVICE_EVENT_CALLBACKS {
 ### -field <b>EvtUsbDeviceEndpointsConfigure</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187842">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_usbdevice_endpoints_configure">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceEnable</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187841">EVT_UCX_USBDEVICE_ENABLE</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_usbdevice_enable">EVT_UCX_USBDEVICE_ENABLE</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceDisable</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187840">EVT_UCX_USBDEVICE_DISABLE</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_usbdevice_disable">EVT_UCX_USBDEVICE_DISABLE</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceReset</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187845">EVT_UCX_USBDEVICE_RESET</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_usbdevice_reset">EVT_UCX_USBDEVICE_RESET</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceAddress</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187838">EVT_UCX_USBDEVICE_ADDRESS</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_usbdevice_address">EVT_UCX_USBDEVICE_ADDRESS</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceUpdate</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187846">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_usbdevice_update">EVT_UCX_USBDEVICE_UPDATE</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceHubInfo</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187844">EVT_UCX_USBDEVICE_HUB_INFO</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_usbdevice_hub_info">EVT_UCX_USBDEVICE_HUB_INFO</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceDefaultEndpointAdd</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187839">EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_usbdevice_default_endpoint_add">EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceEndpointAdd</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187843">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_usbdevice_endpoint_add">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceSuspend</b>
@@ -166,10 +166,10 @@ typedef struct _UCX_USBDEVICE_EVENT_CALLBACKS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188068">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
+<a href="buses._ucx_usbdevice_event_callbacks_init">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188053">UcxUsbDeviceInitSetEventCallbacks</a>
+<a href="buses._ucxusbdeviceinitseteventcallbacks">UcxUsbDeviceInitSetEventCallbacks</a>
 </dt>
 </dl>
 <p> </p>

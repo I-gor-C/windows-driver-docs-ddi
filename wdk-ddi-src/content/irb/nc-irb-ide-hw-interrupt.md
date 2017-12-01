@@ -78,7 +78,7 @@ BOOLEAN IdeHwInterrupt(
 
 <p>Disable interrupts on the channel that is indicated by the <i>ChannelExtension</i> parameter. </p>
 
-<p>Request a worker routine by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550229">AtaPortRequestWorkerRoutine</a>. </p>
+<p>Request a worker routine by using <a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>. </p>
 
 <p>Complete additional processing in the worker routine.</p>
 
@@ -87,41 +87,11 @@ BOOLEAN IdeHwInterrupt(
 <p>The following ATA port routines must not be called from the <b><i>IdeHwInterrupt</i></b> routine:</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550146">AtaPortCompleteAllActiveRequests</a>
+<a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550155">AtaPortDeviceBusy</a>
-</p>
-
-<p>However, the miniport driver can request a worker routine and make calls in the worker routine.</p>
-
-<p>The worker routine must clear the interrupt on the HBA before it returns <b>TRUE</b>.</p>
-
-<p>The <b><i>IdeHwInterrupt</i></b> routine completes interrupt-driven I/O operations. </p>
-
-<p>If the indicated channel did not generate the interrupt, the miniport driver should make a second (recursive) call to the <b><i>IdeHwInterrupt</i></b> routine to handle interrupts that are intended for the controller's other channel.</p>
-
-<p>If the miniport driver requires a large amount of time to process the interrupt, it must follow these steps:</p>
-
-<p>Dismiss the interrupt on the HBA.</p>
-
-<p>Disable interrupts on the channel that is indicated by the <i>ChannelExtension</i> parameter. </p>
-
-<p>Request a worker routine by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550229">AtaPortRequestWorkerRoutine</a>. </p>
-
-<p>Complete additional processing in the worker routine.</p>
-
-<p>Enable interrupts on the channel.</p>
-
-<p>The following ATA port routines must not be called from the <b><i>IdeHwInterrupt</i></b> routine:</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550146">AtaPortCompleteAllActiveRequests</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550155">AtaPortDeviceBusy</a>
+<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
 </p>
 
 <p>However, the miniport driver can request a worker routine and make calls in the worker routine.</p>
@@ -155,13 +125,13 @@ BOOLEAN IdeHwInterrupt(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550146">AtaPortCompleteAllActiveRequests</a>
+<a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550155">AtaPortDeviceBusy</a>
+<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550229">AtaPortRequestWorkerRoutine</a>
+<a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>
 </dt>
 </dl>
 <p> </p>

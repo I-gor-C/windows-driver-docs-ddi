@@ -76,9 +76,9 @@ typedef struct _DXVAHDDDI_STREAM_STATE_PRIVATE_DATA {
 </dl>
 
 ## -remarks
-<p>Unlike other stream states (<a href="https://msdn.microsoft.com/library/windows/hardware/ff563068">DXVAHDDDI_STREAM_STATE</a>), the Direct3D runtime does not maintain the private stream state. An application and the driver communicates the private stream state directly through a proprietary manner, which consists of setting and retrieving the private stream state. </p>
+<p>Unlike other stream states (<a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-stream-state.md">DXVAHDDDI_STREAM_STATE</a>), the Direct3D runtime does not maintain the private stream state. An application and the driver communicates the private stream state directly through a proprietary manner, which consists of setting and retrieving the private stream state. </p>
 
-<p>To set private stream state, the application causes the Direct3D runtime to specify the DXVAHDDDI_STREAM_STATE_PRIVATE state in the <b>State</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543098">D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE</a> structure in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-setvideoprocessstreamstate.md">SetVideoProcessStreamState</a> function. To retrieve private stream state, the application causes the Direct3D runtime to call the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-getvideoprocessstreamstateprivate.md">GetVideoProcessStreamStatePrivate</a> function. </p>
+<p>To set private stream state, the application causes the Direct3D runtime to specify the DXVAHDDDI_STREAM_STATE_PRIVATE state in the <b>State</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-setvideoprocessstreamstate.md">D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE</a> structure in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-setvideoprocessstreamstate.md">SetVideoProcessStreamState</a> function. To retrieve private stream state, the application causes the Direct3D runtime to call the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-getvideoprocessstreamstateprivate.md">GetVideoProcessStreamStatePrivate</a> function. </p>
 
 ## -requirements
 <table>
@@ -105,10 +105,10 @@ typedef struct _DXVAHDDDI_STREAM_STATE_PRIVATE_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543098">D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-setvideoprocessstreamstate.md">D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563068">DXVAHDDDI_STREAM_STATE</a>
+<a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-stream-state.md">DXVAHDDDI_STREAM_STATE</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-getvideoprocessstreamstateprivate.md">GetVideoProcessStreamStatePrivate</a>

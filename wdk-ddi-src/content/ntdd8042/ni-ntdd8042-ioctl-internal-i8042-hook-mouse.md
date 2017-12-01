@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>
 <p>The IOCTL_INTERNAL_I8042_HOOK_MOUSE request adds an ISR callback routine to the I8042prt mouse ISR. The ISR callback is optional and is provided by an upper-level mouse filter driver.</p>
-<p>I8042prt sends this request after it receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541294">IOCTL_INTERNAL_MOUSE_CONNECT</a> request. I8042prt sends a synchronous IOCTL_INTERNAL_I8042_HOOK_MOUSE request to the top of the mouse device stack.</p>
+<p>I8042prt sends this request after it receives an <a href="..\kbdmou\ni-kbdmou-ioctl-internal-mouse-connect.md">IOCTL_INTERNAL_MOUSE_CONNECT</a> request. I8042prt sends a synchronous IOCTL_INTERNAL_I8042_HOOK_MOUSE request to the top of the mouse device stack.</p>
 <p>After Moufiltr receives the hook mouse request, it filters the request in the following way:</p>
 <ul>
 <li>
@@ -58,7 +58,7 @@ req.iface:
 <dl>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539965">I8042prt Callback Routines</a>
+<a href="hid.i8042prt_callback_routines">I8042prt Callback Routines</a>
 </p>
 </dd>
 <dd>
@@ -69,14 +69,14 @@ req.iface:
 </dl>
 </p>
 <p>The IOCTL_INTERNAL_I8042_HOOK_MOUSE request adds an ISR callback routine to the I8042prt mouse ISR. The ISR callback is optional and is provided by an upper-level mouse filter driver.</p>
-<p>I8042prt sends this request after it receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541294">IOCTL_INTERNAL_MOUSE_CONNECT</a> request. I8042prt sends a synchronous IOCTL_INTERNAL_I8042_HOOK_MOUSE request to the top of the mouse device stack.</p>
+<p>I8042prt sends this request after it receives an <a href="..\kbdmou\ni-kbdmou-ioctl-internal-mouse-connect.md">IOCTL_INTERNAL_MOUSE_CONNECT</a> request. I8042prt sends a synchronous IOCTL_INTERNAL_I8042_HOOK_MOUSE request to the top of the mouse device stack.</p>
 <p>After Moufiltr receives the hook mouse request, it filters the request in the following way:</p>
 <p>Saves the upper-level information passed to Moufiltr, which includes the context of an upper-level device object and a pointer to an ISR callback</p>
 <p>Replaces the upper-level information with its own</p>
 <p>Saves the context of I8042prt and pointers to callbacks that the Moufiltr ISR callbacks can use</p>
 <p>For more information about this request and the callbacks, see the following topics:</p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539965">I8042prt Callback Routines</a>
+<a href="hid.i8042prt_callback_routines">I8042prt Callback Routines</a>
 </p>
 <p>
 <a href="https://msdn.microsoft.com/c6b60905-edd0-496e-a4e7-5ca271a51bce">Moufiltr Callback Routines</a>
@@ -86,7 +86,7 @@ req.iface:
 ## -ioctlparameters
 
 ### -input-buffer
-<p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to a value greater than or equal to the size, in bytes, of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541044">INTERNAL_I8042_HOOK_MOUSE</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to a value greater than or equal to the size, in bytes, of an <a href="..\ntdd8042\ns-ntdd8042--internal-i8042-hook-mouse.md">INTERNAL_I8042_HOOK_MOUSE</a> structure.</p>
 
 <p>The <b>Parameters.DeviceIoControl.Type3InputBuffer</b> points to an INTERNAL_I8042_HOOK_MOUSE structure that is allocated and set initially by I8042prt.</p>
 
@@ -181,10 +181,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541044">INTERNAL_I8042_HOOK_MOUSE</a>
+<a href="..\ntdd8042\ns-ntdd8042--internal-i8042-hook-mouse.md">INTERNAL_I8042_HOOK_MOUSE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541294">IOCTL_INTERNAL_MOUSE_CONNECT</a>
+<a href="..\kbdmou\ni-kbdmou-ioctl-internal-mouse-connect.md">IOCTL_INTERNAL_MOUSE_CONNECT</a>
 </dt>
 </dl>
 <p> </p>

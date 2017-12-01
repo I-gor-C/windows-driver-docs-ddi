@@ -66,7 +66,7 @@ typedef struct _DXGK_OPENALLOCATIONINFO {
 ### -field <b>pPrivateDriverData</b>
 
 <dd>
-<p>[in/out] A pointer to a block of private data that is passed between the user-mode display driver and the display miniport driver. This block of private data is the same allocation-specific data that is passed in the <b>pPrivateDriverData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a> structure in the call to the <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function. The display miniport driver's <a href="display.dxgkddiopenallocation">DxgkDdiOpenAllocation</a> function can modify this block of private data if the <b>Create</b> bit-field flag is set in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557609">DXGKARG_OPENALLOCATION</a> structure. The user-mode display driver can access modifications to the block of private data.</p>
+<p>[in/out] A pointer to a block of private data that is passed between the user-mode display driver and the display miniport driver. This block of private data is the same allocation-specific data that is passed in the <b>pPrivateDriverData</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a> structure in the call to the <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function. The display miniport driver's <a href="display.dxgkddiopenallocation">DxgkDdiOpenAllocation</a> function can modify this block of private data if the <b>Create</b> bit-field flag is set in the <b>Flags</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-openallocation.md">DXGKARG_OPENALLOCATION</a> structure. The user-mode display driver can access modifications to the block of private data.</p>
 </dd>
 
 ### -field <b>PrivateDriverDataSize</b>
@@ -110,10 +110,10 @@ typedef struct _DXGK_OPENALLOCATIONINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557609">DXGKARG_OPENALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-openallocation.md">DXGKARG_OPENALLOCATION</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>

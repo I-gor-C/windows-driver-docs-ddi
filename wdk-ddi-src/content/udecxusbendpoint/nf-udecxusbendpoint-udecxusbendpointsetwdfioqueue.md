@@ -59,13 +59,13 @@ FORCEINLINE void UdecxUsbEndpointSetWdfIoQueue(
 ### -param <i>UdecxUsbEndpoint</i> [in]
 
 <dd>
-<p>A handle to a UDE endpoint object. The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a>.</p>
+<p>A handle to a UDE endpoint object. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>.</p>
 </dd>
 
 ### -param <i>WdfQueue</i> [in]
 
 <dd>
-<p>A handle to a framework queue object that will handle requests sent to the endpoint. The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547401">WdfIoQueueCreate</a>. </p>
+<p>A handle to a framework queue object that will handle requests sent to the endpoint. The client driver retrieved this pointer in the previous call to <a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>. </p>
 </dd>
 </dl>
 
@@ -137,10 +137,10 @@ FORCEINLINE void UdecxUsbEndpointSetWdfIoQueue(
 <a href="wdf.creating_i_o_queues">Creating I/O Queues</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

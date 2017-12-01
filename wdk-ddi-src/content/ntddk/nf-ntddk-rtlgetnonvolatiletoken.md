@@ -94,8 +94,6 @@ NTSTATUS RtlGetNonVolatileToken(
 ## -remarks
 <p>This routine is currently not supported for Windows Server until the next major release of Windows Server.</p>
 
-<p>This routine is currently not supported for Windows Server until the next major release of Windows Server.</p>
-
 ## -requirements
 <table>
 <tr>

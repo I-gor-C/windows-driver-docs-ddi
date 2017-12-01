@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The TAPE_ERASE structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560615">IOCTL_TAPE_ERASE</a> request to erase the current tape partition.</p>
+<p>The TAPE_ERASE structure is used in conjunction with the <a href="..\ntddtape\ni-ntddtape-ioctl-tape-erase.md">IOCTL_TAPE_ERASE</a> request to erase the current tape partition.</p>
 
 
 ## -syntax
@@ -88,7 +88,7 @@ typedef struct _TAPE_ERASE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560615">IOCTL_TAPE_ERASE</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl-tape-erase.md">IOCTL_TAPE_ERASE</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: debugger\startenumtagged.htm
 old-project: debugger
 ms.assetid: b79b1f09-baff-4071-a209-6fc399c9aef9
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces4, StartEnumTagged, IDebugDataSpaces4::StartEnumTagged
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ HRESULT StartEnumTagged(
 ### -param <i>Handle</i> [out]
 
 <dd>
-<p>Receives the handle identifying the enumeration.  This handle can be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547874">GetNextTagged</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff542978">EndEnumTagged</a>.</p>
+<p>Receives the handle identifying the enumeration.  This handle can be passed to <a href="debugger.getnexttagged">GetNextTagged</a> and <a href="debugger.endenumtagged">EndEnumTagged</a>.</p>
 </dd>
 </dl>
 
@@ -69,9 +69,7 @@ HRESULT StartEnumTagged(
 <p> </p>
 
 ## -remarks
-<p>The resources held by an enumeration created with this method can be released using <a href="https://msdn.microsoft.com/library/windows/hardware/ff542978">EndEnumTagged</a>.</p>
-
-<p>The resources held by an enumeration created with this method can be released using <a href="https://msdn.microsoft.com/library/windows/hardware/ff542978">EndEnumTagged</a>.</p>
+<p>The resources held by an enumeration created with this method can be released using <a href="debugger.endenumtagged">EndEnumTagged</a>.</p>
 
 ## -requirements
 <table>

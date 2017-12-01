@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Device control IRPs with a control code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559367">IOCTL_CDROM_READ_TOC_EX</a> and a format of CDROM_READ_TOC_EX_FORMAT_CDTEXT return their output data in this structure followed by a series of descriptors of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551382">CDROM_TOC_CD_TEXT_DATA_BLOCK</a>. </p>
+<p>Device control IRPs with a control code of <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-toc-ex.md">IOCTL_CDROM_READ_TOC_EX</a> and a format of CDROM_READ_TOC_EX_FORMAT_CDTEXT return their output data in this structure followed by a series of descriptors of type <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-cd-text-data-block.md">CDROM_TOC_CD_TEXT_DATA_BLOCK</a>. </p>
 
 
 ## -syntax
@@ -78,7 +78,7 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA {
 ### -field <b>Descriptors</b>
 
 <dd>
-<p>Contains zero or more text data block descriptors of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551382">CDROM_TOC_CD_TEXT_DATA_BLOCK</a>. </p>
+<p>Contains zero or more text data block descriptors of type <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-cd-text-data-block.md">CDROM_TOC_CD_TEXT_DATA_BLOCK</a>. </p>
 </dd>
 </dl>
 
@@ -102,13 +102,13 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559367">IOCTL_CDROM_READ_TOC_EX</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-toc-ex.md">IOCTL_CDROM_READ_TOC_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551366">CDROM_READ_TOC_EX</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-read-toc-ex.md">CDROM_READ_TOC_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551382">CDROM_TOC_CD_TEXT_DATA_BLOCK</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-cd-text-data-block.md">CDROM_TOC_CD_TEXT_DATA_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

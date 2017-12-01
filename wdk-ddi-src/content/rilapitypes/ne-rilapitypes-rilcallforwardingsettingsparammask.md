@@ -7,7 +7,7 @@ old-location: netvista\rilcallforwardingsettingsparammask_2.htm
 old-project: netvista
 ms.assetid: 4db4e6fe-1faf-4109-95aa-e2e5bf3b0dd6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

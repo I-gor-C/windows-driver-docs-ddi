@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>D3DKMT_CREATEPAGINGQUEUE</b> is used with <a href="https://msdn.microsoft.com/library/windows/hardware/dn906771">D3DKMTCreatePagingQueue</a> to create a device paging queue that can be used to synchronize with video memory management operations for the device, such as making the device resource resident.</p>
+<p><b>D3DKMT_CREATEPAGINGQUEUE</b> is used with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatepagingqueue.md">D3DKMTCreatePagingQueue</a> to create a device paging queue that can be used to synchronize with video memory management operations for the device, such as making the device resource resident.</p>
 
 
 ## -syntax
@@ -97,7 +97,7 @@ typedef struct _D3DKMT_CREATEPAGINGQUEUE {
 </dl>
 
 ## -remarks
-<p>A device can have multiple paging queues created for it. Paging queues can be destroyed either explicitly by calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn906773">D3DKMTDestroyPagingQueue</a>, or by implicitly destroying the device they belong to. After the latter, paging queue handles will become invalid.</p>
+<p>A device can have multiple paging queues created for it. Paging queues can be destroyed either explicitly by calling <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroypagingqueue.md">D3DKMTDestroyPagingQueue</a>, or by implicitly destroying the device they belong to. After the latter, paging queue handles will become invalid.</p>
 
 ## -requirements
 <table>
@@ -132,10 +132,10 @@ typedef struct _D3DKMT_CREATEPAGINGQUEUE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906771">D3DKMTCreatePagingQueue</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatepagingqueue.md">D3DKMTCreatePagingQueue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906773">D3DKMTDestroyPagingQueue</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroypagingqueue.md">D3DKMTDestroyPagingQueue</a>
 </dt>
 </dl>
 <p> </p>

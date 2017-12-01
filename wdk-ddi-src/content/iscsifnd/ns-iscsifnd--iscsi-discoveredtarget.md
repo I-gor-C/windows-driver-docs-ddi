@@ -78,12 +78,12 @@ typedef struct _ISCSI_DiscoveredTarget {
 ### -field <b>TargetDiscoveredPortalGroups</b>
 
 <dd>
-<p>A variable-length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561515">ISCSI_DiscoveredTargetPortalGroup</a> structures that contains information about the portal groups that the initiator can use to connect to the target.</p>
+<p>A variable-length array of <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a> structures that contains information about the portal groups that the initiator can use to connect to the target.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTarget structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561527">ISCSI_DiscoveredTarget WMI Class</a> in <i>Discover.mof</i>. </p>
+<p>The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTarget structure when it compiles the <a href="storage.iscsi_discoveredtarget_wmi_class">ISCSI_DiscoveredTarget WMI Class</a> in <i>Discover.mof</i>. </p>
 
 ## -requirements
 <table>
@@ -102,13 +102,13 @@ typedef struct _ISCSI_DiscoveredTarget {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561527">ISCSI_DiscoveredTarget WMI Class</a>
+<a href="storage.iscsi_discoveredtarget_wmi_class">ISCSI_DiscoveredTarget WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561503">ISCSI_DiscoveredTarget2</a>
+<a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtarget2.md">ISCSI_DiscoveredTarget2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561515">ISCSI_DiscoveredTargetPortalGroup</a>
+<a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a>
 </dt>
 </dl>
 <p> </p>

@@ -81,7 +81,7 @@ typedef struct _FEATURE_DATA_DISC_CONTROL_BLOCKS_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553781">FEATURE_DATA_DISC_CONTROL_BLOCKS</a>
+<a href="..\ntddmmc\ns-ntddmmc--feature-data-disc-control-blocks.md">FEATURE_DATA_DISC_CONTROL_BLOCKS</a>
 </dt>
 </dl>
 <p> </p>

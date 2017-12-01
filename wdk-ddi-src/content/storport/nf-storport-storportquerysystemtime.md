@@ -68,8 +68,6 @@ STORPORT_API VOID StorPortQuerySystemTime(
 ## -remarks
 <p>The system time returned in <i>CurrentTime</i> is the number of 100-nanosecond intervals that have elapsed since January 1, 1601. System time is typically updated approximately every ten milliseconds. This value is computed for the GMT time zone. </p>
 
-<p>The system time returned in <i>CurrentTime</i> is the number of 100-nanosecond intervals that have elapsed since January 1, 1601. System time is typically updated approximately every ten milliseconds. This value is computed for the GMT time zone. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -115,7 +113,7 @@ STORPORT_API VOID StorPortQuerySystemTime(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564708">ScsiPortQuerySystemTime</a>
+<a href="..\srb\nf-srb-scsiportquerysystemtime.md">ScsiPortQuerySystemTime</a>
 </dt>
 </dl>
 <p> </p>

@@ -67,7 +67,7 @@ SIZE_T APIENTRY CalcPrivateDeviceSize(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541649">D3D10DDIARG_CALCPRIVATEDEVICESIZE</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region.</p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-calcprivatedevicesize.md">D3D10DDIARG_CALCPRIVATEDEVICESIZE</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region.</p>
 </dd>
 </dl>
 
@@ -112,7 +112,7 @@ SIZE_T APIENTRY CalcPrivateDeviceSize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541649">D3D10DDIARG_CALCPRIVATEDEVICESIZE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-calcprivatedevicesize.md">D3D10DDIARG_CALCPRIVATEDEVICESIZE</a>
 </dt>
 </dl>
 <p> </p>

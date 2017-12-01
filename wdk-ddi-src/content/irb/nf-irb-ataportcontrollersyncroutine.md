@@ -76,10 +76,6 @@ BOOLEAN __inline AtaPortControllerSyncRoutine(
 
 <p>The <i>ControllerSyncRoutine</i> function pointer is declared in <i>Irb.h</i> as follows:</p>
 
-<p>The miniport driver uses this routine to synchronize access to data structures that are shared across channels on a controller. The miniport driver, however, should use this routine very sparingly.</p>
-
-<p>The <i>ControllerSyncRoutine</i> function pointer is declared in <i>Irb.h</i> as follows:</p>
-
 ## -requirements
 <table>
 <tr>
@@ -107,7 +103,7 @@ BOOLEAN __inline AtaPortControllerSyncRoutine(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550223">AtaPortRequestSynchronizedRoutine</a>
+<a href="..\irb\nf-irb-ataportrequestsynchronizedroutine.md">AtaPortRequestSynchronizedRoutine</a>
 </dt>
 </dl>
 <p> </p>

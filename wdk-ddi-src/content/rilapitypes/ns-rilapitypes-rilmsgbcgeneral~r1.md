@@ -7,7 +7,7 @@ old-location: netvista\rilmsgbcgeneral_2.htm
 old-project: netvista
 ms.assetid: 7202683f-5e02-48dd-b8b7-cb998fd660df
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMSGBCGENERAL,
 ms.prod: windows-hardware
 ms.technology: windows-devices

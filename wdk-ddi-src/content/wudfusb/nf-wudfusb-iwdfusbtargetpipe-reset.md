@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetpipe_reset.htm
 old-project: wdf
 ms.assetid: 8d42dd60-a032-4486-87e0-2204e833035b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFUsbTargetPipe, Reset, IWDFUsbTargetPipe::Reset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,10 +58,10 @@ HRESULT  Reset();
 <p><b>Reset</b> returns one of the following values:</p><dl>
 <dt><b>S_OK </b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn926942">Reset</a> successfully reset the data toggle and cleared the stall condition. </p><dl>
+<a href="wdf.iwdfusbtargetpipe_reset">Reset</a> successfully reset the data toggle and cleared the stall condition. </p><dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn926942">Reset</a> encountered an allocation failure.</p><dl>
+<a href="wdf.iwdfusbtargetpipe_reset">Reset</a> encountered an allocation failure.</p><dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
 </dl><p>This value corresponds to the error code that the WinUsb API returned.</p>
 
@@ -70,10 +70,10 @@ HRESULT  Reset();
 <p><b>Reset</b> returns one of the following values:</p><dl>
 <dt><b>S_OK </b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn926942">Reset</a> successfully reset the data toggle and cleared the stall condition. </p><dl>
+<a href="wdf.iwdfusbtargetpipe_reset">Reset</a> successfully reset the data toggle and cleared the stall condition. </p><dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn926942">Reset</a> encountered an allocation failure.</p><dl>
+<a href="wdf.iwdfusbtargetpipe_reset">Reset</a> encountered an allocation failure.</p><dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
 </dl><p>This value corresponds to the error code that the WinUsb API returned.</p>
 
@@ -82,10 +82,10 @@ HRESULT  Reset();
 <p><b>Reset</b> returns one of the following values:</p><dl>
 <dt><b>S_OK </b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn926942">Reset</a> successfully reset the data toggle and cleared the stall condition. </p><dl>
+<a href="wdf.iwdfusbtargetpipe_reset">Reset</a> successfully reset the data toggle and cleared the stall condition. </p><dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn926942">Reset</a> encountered an allocation failure.</p><dl>
+<a href="wdf.iwdfusbtargetpipe_reset">Reset</a> encountered an allocation failure.</p><dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
 </dl><p>This value corresponds to the error code that the WinUsb API returned.</p>
 
@@ -94,19 +94,7 @@ HRESULT  Reset();
 ## -remarks
 <p>The <b>Reset</b> method generates a UMDF request and synchronously sends the request to the I/O target.</p>
 
-<p>For more information about how <b>Reset</b> works, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540300">WinUsb_ResetPipe</a> function.</p>
-
-<p>The <b>Reset</b> method generates a UMDF request and synchronously sends the request to the I/O target.</p>
-
-<p>For more information about how <b>Reset</b> works, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540300">WinUsb_ResetPipe</a> function.</p>
-
-<p>The <b>Reset</b> method generates a UMDF request and synchronously sends the request to the I/O target.</p>
-
-<p>For more information about how <b>Reset</b> works, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540300">WinUsb_ResetPipe</a> function.</p>
-
-<p>The <b>Reset</b> method generates a UMDF request and synchronously sends the request to the I/O target.</p>
-
-<p>For more information about how <b>Reset</b> works, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540300">WinUsb_ResetPipe</a> function.</p>
+<p>For more information about how <b>Reset</b> works, see the <a href="buses.winusb_resetpipe">WinUsb_ResetPipe</a> function.</p>
 
 ## -requirements
 <table>
@@ -161,12 +149,12 @@ HRESULT  Reset();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560391">IWDFUsbTargetPipe</a>
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540300">WinUsb_ResetPipe</a>
+<a href="buses.winusb_resetpipe">WinUsb_ResetPipe</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetPipe::Reset method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetPipe::Reset method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

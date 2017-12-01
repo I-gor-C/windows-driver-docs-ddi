@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The STOR_SCATTER_GATHER_LIST structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567097">StorPortGetScatterGatherList</a> routine to retrieve the scatter/gather list for a SCSI request block (SRB). </p>
+<p>The STOR_SCATTER_GATHER_LIST structure is used in conjunction with the <a href="..\storport\nf-storport-storportgetscattergatherlist.md">StorPortGetScatterGatherList</a> routine to retrieve the scatter/gather list for a SCSI request block (SRB). </p>
 
 
 ## -syntax
@@ -77,7 +77,7 @@ typedef struct _STOR_SCATTER_GATHER_LIST {
 </dl>
 
 ## -remarks
-<p>Miniport drivers that work with the Storport driver call the Storport support routine, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567097">StorPortGetScatterGatherList</a>, to retrieve the scatter gather list for an SRB. <b>StorPortGetScatterGatherList</b> returns a structure of type STOR_SCATTER_GATHER_LIST. Each scatter/gather element is of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff567588">STOR_SCATTER_GATHER_ELEMENT</a>. </p>
+<p>Miniport drivers that work with the Storport driver call the Storport support routine, <a href="..\storport\nf-storport-storportgetscattergatherlist.md">StorPortGetScatterGatherList</a>, to retrieve the scatter gather list for an SRB. <b>StorPortGetScatterGatherList</b> returns a structure of type STOR_SCATTER_GATHER_LIST. Each scatter/gather element is of type <a href="..\storport\ns-storport--stor-scatter-gather-element.md">STOR_SCATTER_GATHER_ELEMENT</a>. </p>
 
 ## -requirements
 <table>
@@ -96,10 +96,10 @@ typedef struct _STOR_SCATTER_GATHER_LIST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567588">STOR_SCATTER_GATHER_ELEMENT</a>
+<a href="..\storport\ns-storport--stor-scatter-gather-element.md">STOR_SCATTER_GATHER_ELEMENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567097">StorPortGetScatterGatherList</a>
+<a href="..\storport\nf-storport-storportgetscattergatherlist.md">StorPortGetScatterGatherList</a>
 </dt>
 </dl>
 <p> </p>

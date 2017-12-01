@@ -7,7 +7,7 @@ old-location: netvista\dot11_cipher_algorithm.htm
 old-project: netvista
 ms.assetid: 5fc1af01-7dd5-43dd-aefe-99dec0b5aa6a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11EXT_IHV_SSID_LIST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: enum
 req.header: wlantypes.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 8 and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows 8 and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -135,7 +134,7 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
      <b>DOT11_AUTH_ALGO_80211_OPEN</b> or 
      <b>DOT11_AUTH_ALGO_80211_SHARED_KEY</b> have been enabled. For more information about these
      authentication algorithms, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547655">DOT11_AUTH_ALGORITHM</a>.</div>
+     <a href="..\wlantypes\ne-wlantypes--dot11-auth-algorithm.md">DOT11_AUTH_ALGORITHM</a>.</div>
 <div> </div>
 </dd>
 
@@ -175,150 +174,9 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
     <b>DOT11_CIPHER_ALGO_IHV_END</b>.</p>
 
 <p>A miniport driver must enable or select cipher algorithms based on the following preference order
-    (listed from highest to lowest):</p><dl>
-<dd>
+    (listed from highest to lowest):</p>
+
 <p><b>DOT11_CIPHER_ALGO_CCMP</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_TKIP</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_WEP</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_WEP104</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_WEP40</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_NONE</b></p>
-</dd>
-</dl><p><b>DOT11_CIPHER_ALGO_CCMP</b></p>
-
-<p><b>DOT11_CIPHER_ALGO_TKIP</b></p>
-
-<p><b>DOT11_CIPHER_ALGO_WEP</b></p>
-
-<p><b>DOT11_CIPHER_ALGO_WEP104</b></p>
-
-<p><b>DOT11_CIPHER_ALGO_WEP40</b></p>
-
-<p><b>DOT11_CIPHER_ALGO_NONE</b></p>
-
-<p>If the miniport driver supports IHV-defined cipher algorithms, the miniport driver can determine the
-    preference order for these algorithms with respect to the 802.11 standard cipher algorithms.</p>
-
-<p>Starting with Windows 7, an 802.11 miniport driver can report any combination of supported
-    authentication and cipher algorithm pairs in the 
-    <a href="..\windot11\ns-windot11-dot11-auth-cipher-pair-list.md">
-    DOT11_AUTH_CIPHER_PAIR_LIST</a> structure. However, if the operating system starts Soft AP, it enables
-    only the 
-    <b>DOT11_AUTH_ALGO_RSNA_PSK</b> authentication algorithm and the 
-    <b>DOT11_CIPHER_ALGO_CCMP</b> cipher algorithm. To support Soft AP, the miniport driver must support this
-    authentication/cipher pair.</p>
-
-<p>If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport driver must allow
-    peer stations to associate with the Extensible AP by using 
-    <a href="NULL">Open System Authentication</a> or 
-    <a href="https://msdn.microsoft.com/41dd280b-e54c-4233-8051-45e7b1284d1d">Wired Equivalent Privacy (WEP)</a> algorithms, regardless of
-    the enabled authorization and cipher algorithms. For more information about WPS and Extensible AP, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff569436">OID_DOT11_WPS_ENABLED</a>.</p>
-
-<p>An IHV can assign a value for its proprietary cipher algorithms from 
-    <b>DOT11_CIPHER_ALGO_IHV_START</b> through 
-    <b>DOT11_CIPHER_ALGO_IHV_END</b>. The IHV must assign a unique number in this range to each of its
-    proprietary cipher algorithms.</p>
-
-<p>If the IHV develops its own support for an cipher algorithm supported by the operating system, the IHV
-    must also assign a unique number from this range. For example, if the IHV develops its own version of
-    TKIP, it must assign a value for this version from 
-    <b>DOT11_CIPHER_ALGO_IHV_START</b> through 
-    <b>DOT11_CIPHER_ALGO_IHV_END</b>.</p>
-
-<p>A miniport driver must enable or select cipher algorithms based on the following preference order
-    (listed from highest to lowest):</p><dl>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_CCMP</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_TKIP</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_WEP</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_WEP104</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_WEP40</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_NONE</b></p>
-</dd>
-</dl><p><b>DOT11_CIPHER_ALGO_CCMP</b></p>
-
-<p><b>DOT11_CIPHER_ALGO_TKIP</b></p>
-
-<p><b>DOT11_CIPHER_ALGO_WEP</b></p>
-
-<p><b>DOT11_CIPHER_ALGO_WEP104</b></p>
-
-<p><b>DOT11_CIPHER_ALGO_WEP40</b></p>
-
-<p><b>DOT11_CIPHER_ALGO_NONE</b></p>
-
-<p>If the miniport driver supports IHV-defined cipher algorithms, the miniport driver can determine the
-    preference order for these algorithms with respect to the 802.11 standard cipher algorithms.</p>
-
-<p>Starting with Windows 7, an 802.11 miniport driver can report any combination of supported
-    authentication and cipher algorithm pairs in the 
-    <a href="..\windot11\ns-windot11-dot11-auth-cipher-pair-list.md">
-    DOT11_AUTH_CIPHER_PAIR_LIST</a> structure. However, if the operating system starts Soft AP, it enables
-    only the 
-    <b>DOT11_AUTH_ALGO_RSNA_PSK</b> authentication algorithm and the 
-    <b>DOT11_CIPHER_ALGO_CCMP</b> cipher algorithm. To support Soft AP, the miniport driver must support this
-    authentication/cipher pair.</p>
-
-<p>If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport driver must allow
-    peer stations to associate with the Extensible AP by using 
-    <a href="NULL">Open System Authentication</a> or 
-    <a href="https://msdn.microsoft.com/41dd280b-e54c-4233-8051-45e7b1284d1d">Wired Equivalent Privacy (WEP)</a> algorithms, regardless of
-    the enabled authorization and cipher algorithms. For more information about WPS and Extensible AP, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff569436">OID_DOT11_WPS_ENABLED</a>.</p>
-
-<p>An IHV can assign a value for its proprietary cipher algorithms from 
-    <b>DOT11_CIPHER_ALGO_IHV_START</b> through 
-    <b>DOT11_CIPHER_ALGO_IHV_END</b>. The IHV must assign a unique number in this range to each of its
-    proprietary cipher algorithms.</p>
-
-<p>If the IHV develops its own support for an cipher algorithm supported by the operating system, the IHV
-    must also assign a unique number from this range. For example, if the IHV develops its own version of
-    TKIP, it must assign a value for this version from 
-    <b>DOT11_CIPHER_ALGO_IHV_START</b> through 
-    <b>DOT11_CIPHER_ALGO_IHV_END</b>.</p>
-
-<p>A miniport driver must enable or select cipher algorithms based on the following preference order
-    (listed from highest to lowest):</p><dl>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_CCMP</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_TKIP</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_WEP</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_WEP104</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_WEP40</b></p>
-</dd>
-<dd>
-<p><b>DOT11_CIPHER_ALGO_NONE</b></p>
-</dd>
-</dl><p><b>DOT11_CIPHER_ALGO_CCMP</b></p>
 
 <p><b>DOT11_CIPHER_ALGO_TKIP</b></p>
 
@@ -379,10 +237,10 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
    DOT11_ASSOCIATION_COMPLETION_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547662">DOT11_AUTH_CIPHER_PAIR_LIST</a>
+<a href="..\windot11\ns-windot11-dot11-auth-cipher-pair-list.md">DOT11_AUTH_CIPHER_PAIR_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547673">DOT11_CIPHER_ALGORITHM_LIST</a>
+<a href="..\windot11\ns-windot11-dot11-cipher-algorithm-list.md">DOT11_CIPHER_ALGORITHM_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569119">OID_DOT11_CIPHER_DEFAULT_KEY</a>
@@ -397,4 +255,4 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_ALGORITHM enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_ALGORITHM enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

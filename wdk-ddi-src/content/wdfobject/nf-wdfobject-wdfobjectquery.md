@@ -7,7 +7,7 @@ old-location: wdf\wdfobjectquery.htm
 old-project: wdf
 ms.assetid: c9e654cc-7ea5-41dd-8ee5-23a89f61e3c1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfObjectQuery
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -104,7 +104,7 @@ NTSTATUS WdfObjectQuery(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>
 </td>
 </tr>
 </table>

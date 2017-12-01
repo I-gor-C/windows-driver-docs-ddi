@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The PRI_RESERVATION_DESCRIPTOR structure is used to construct the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563921">PRI_RESERVATION_LIST</a> structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS.</p>
+<p>The PRI_RESERVATION_DESCRIPTOR structure is used to construct the <a href="storage.pri_reservation_list">PRI_RESERVATION_LIST</a> structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS.</p>
 
 
 ## -syntax
@@ -98,7 +98,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560582">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> request is used to obtain information about persistent reservations and reservation keys that are active within a device server.</p>
+<p>The <a href="..\ntddstor\ni-ntddstor-ioctl-storage-persistent-reserve-in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> request is used to obtain information about persistent reservations and reservation keys that are active within a device server.</p>
 
 ## -requirements
 <table>
@@ -117,10 +117,10 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560582">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-persistent-reserve-in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563921">PRI_RESERVATION_LIST</a>
+<a href="storage.pri_reservation_list">PRI_RESERVATION_LIST</a>
 </dt>
 </dl>
 <p> </p>

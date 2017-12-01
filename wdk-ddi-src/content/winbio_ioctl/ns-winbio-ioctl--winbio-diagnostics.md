@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff536436">IOCTL_BIOMETRIC_GET_SENSOR_STATUS</a> IOCTL returns the WINBIO_DIAGNOSTICS structure as output.</p>
+<p>The <a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-get-sensor-status.md">IOCTL_BIOMETRIC_GET_SENSOR_STATUS</a> IOCTL returns the WINBIO_DIAGNOSTICS structure as output.</p>
 
 
 ## -syntax
@@ -102,7 +102,7 @@ typedef struct _WINBIO_DIAGNOSTICS {
 ### -field <b>VendorDiagnostics</b>
 
 <dd>
-<p>An optional <a href="https://msdn.microsoft.com/library/windows/hardware/ff536469">WINBIO_DATA</a> structure for vendor-specific additional information.</p>
+<p>An optional <a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-data.md">WINBIO_DATA</a> structure for vendor-specific additional information.</p>
 </dd>
 </dl>
 
@@ -134,7 +134,7 @@ typedef struct _WINBIO_DIAGNOSTICS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536436">IOCTL_BIOMETRIC_GET_SENSOR_STATUS</a>
+<a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-get-sensor-status.md">IOCTL_BIOMETRIC_GET_SENSOR_STATUS</a>
 </dt>
 </dl>
 <p> </p>

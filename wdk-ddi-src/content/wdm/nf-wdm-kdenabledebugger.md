@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>KdEnableDebugger</b> routine re-enables the kernel debugger after a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548083">KdDisableDebugger</a> routine disables the kernel debugger. </p>
+<p>The <b>KdEnableDebugger</b> routine re-enables the kernel debugger after a call to the <a href="..\wdm\nf-wdm-kddisabledebugger.md">KdDisableDebugger</a> routine disables the kernel debugger. </p>
 
 
 ## -syntax
@@ -73,18 +73,6 @@ NTSTATUS KdEnableDebugger(void);
 <p>STATUS_DEBUGGER_INACTIVE</p>
 
 ## -remarks
-<p>If the operating system was booted with no debug controls, <b>KdEnableDebugger</b> returns STATUS_DEBUGGER_INACTIVE.</p>
-
-<p>If the kernel debugger is blocked (that is, the <b>KdBlockEnable</b> system variable is set to a value other than <b>FALSE</b>), <b>KdEnableDebugger</b> returns STATUS_ACCESS_DENIED. </p>
-
-<p>If the operating system was booted with no debug controls, <b>KdEnableDebugger</b> returns STATUS_DEBUGGER_INACTIVE.</p>
-
-<p>If the kernel debugger is blocked (that is, the <b>KdBlockEnable</b> system variable is set to a value other than <b>FALSE</b>), <b>KdEnableDebugger</b> returns STATUS_ACCESS_DENIED. </p>
-
-<p>If the operating system was booted with no debug controls, <b>KdEnableDebugger</b> returns STATUS_DEBUGGER_INACTIVE.</p>
-
-<p>If the kernel debugger is blocked (that is, the <b>KdBlockEnable</b> system variable is set to a value other than <b>FALSE</b>), <b>KdEnableDebugger</b> returns STATUS_ACCESS_DENIED. </p>
-
 <p>If the operating system was booted with no debug controls, <b>KdEnableDebugger</b> returns STATUS_DEBUGGER_INACTIVE.</p>
 
 <p>If the kernel debugger is blocked (that is, the <b>KdBlockEnable</b> system variable is set to a value other than <b>FALSE</b>), <b>KdEnableDebugger</b> returns STATUS_ACCESS_DENIED. </p>
@@ -152,7 +140,7 @@ NTSTATUS KdEnableDebugger(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548083">KdDisableDebugger</a>
+<a href="..\wdm\nf-wdm-kddisabledebugger.md">KdDisableDebugger</a>
 </dt>
 </dl>
 <p> </p>

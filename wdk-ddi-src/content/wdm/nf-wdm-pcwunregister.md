@@ -68,11 +68,7 @@ VOID PcwUnregister(
 ## -remarks
 <p>The <b>PcwUnregister</b> function unregisters the provider of the specified counter-set. Instances owned by the counter-set registration are automatically destroyed. These instances should not be touched by the provider while the counter set is being unregistered, or accessed after the counter set is unregistered.</p>
 
-<p>Before the provider uses this function, the provider must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a> function to create a registration.</p>
-
-<p>The <b>PcwUnregister</b> function unregisters the provider of the specified counter-set. Instances owned by the counter-set registration are automatically destroyed. These instances should not be touched by the provider while the counter set is being unregistered, or accessed after the counter set is unregistered.</p>
-
-<p>Before the provider uses this function, the provider must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a> function to create a registration.</p>
+<p>Before the provider uses this function, the provider must call the <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a> function to create a registration.</p>
 
 ## -requirements
 <table>
@@ -137,7 +133,7 @@ VOID PcwUnregister(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a>
+<a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>
 </dt>
 </dl>
 <p> </p>

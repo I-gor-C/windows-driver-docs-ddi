@@ -7,7 +7,7 @@ old-location: debugger\readlistentry.htm
 old-project: debugger
 ms.assetid: b5bfbb6d-4797-4e5f-bc66-398527b13d85
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: ReadListEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,13 +73,6 @@ __inline ULONG ReadListEntry(
 <p>If the function succeeds, the return value is <b>TRUE</b>; otherwise, it is <b>FALSE</b>.</p>
 
 ## -remarks
-<p>For more information about the LIST_ENTRY structures, see the Windows Driver Kit (WDK) documentation.</p>
-
-<p>If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).
-</p>
-
-<p>LIST_ENTRY64 and LIST_ENTRY32 are defined in <b>winnt.h</b>.</p>
-
 <p>For more information about the LIST_ENTRY structures, see the Windows Driver Kit (WDK) documentation.</p>
 
 <p>If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).

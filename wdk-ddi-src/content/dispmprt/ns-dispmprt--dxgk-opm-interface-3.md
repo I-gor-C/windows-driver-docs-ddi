@@ -91,13 +91,13 @@ typedef struct _DXGK_OPM_INTERFACE_3 {
 ### -field <b>InterfaceReference</b>
 
 <dd>
-<p>A pointer to an interface reference function that is implemented by the display miniport driver. For more information about the operation of an interface reference function, see the Remarks section of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a> structure.</p>
+<p>A pointer to an interface reference function that is implemented by the display miniport driver. For more information about the operation of an interface reference function, see the Remarks section of the <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure.</p>
 </dd>
 
 ### -field <b>InterfaceDereference</b>
 
 <dd>
-<p>A pointer to an interface dereference function that is implemented by the display miniport driver. For more information about the operation of an interface dereference function, see the Remarks section of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a> structure.</p>
+<p>A pointer to an interface dereference function that is implemented by the display miniport driver. For more information about the operation of an interface dereference function, see the Remarks section of the <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure.</p>
 </dd>
 
 ### -field <b>DxgkDdiOPMGetCertificateSize</b>

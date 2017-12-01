@@ -65,7 +65,7 @@ NTSTATUS __stdcall HidP_SetUsageValueArray(
 ### -param <i>ReportType</i> [in]
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.</p>
+<p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.</p>
 </dd>
 
 ### -param <i>UsagePage</i> [in]
@@ -113,7 +113,7 @@ NTSTATUS __stdcall HidP_SetUsageValueArray(
 ### -param <i>ReportLength</i> [in]
 
 <dd>
-<p>Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a> returns in a collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.</p>
+<p>Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a> returns in a collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
 </dd>
 </dl>
 
@@ -143,15 +143,7 @@ NTSTATUS __stdcall HidP_SetUsageValueArray(
 <p> </p>
 
 ## -remarks
-<p>The required size, in bytes, of the <i>UsageValue</i> buffer is determined by multiplying together the <b>BitSize</b> and <b>ReportCount</b> members of the usage value array's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539832">HIDP_VALUE_CAPS</a> structure, and rounding the result up to the nearest byte.</p>
-
-<p><b>HidP_SetUsageValueArray</b> only supports usage value arrays where each data field of the array is a multiple of eight bits.</p>
-
-<p>The caller must set the <i>UsageValue</i> buffer exactly as it should occur in the report.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p>The required size, in bytes, of the <i>UsageValue</i> buffer is determined by multiplying together the <b>BitSize</b> and <b>ReportCount</b> members of the usage value array's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539832">HIDP_VALUE_CAPS</a> structure, and rounding the result up to the nearest byte.</p>
+<p>The required size, in bytes, of the <i>UsageValue</i> buffer is determined by multiplying together the <b>BitSize</b> and <b>ReportCount</b> members of the usage value array's <a href="..\hidpi\ns-hidpi--hidp-value-caps.md">HIDP_VALUE_CAPS</a> structure, and rounding the result up to the nearest byte.</p>
 
 <p><b>HidP_SetUsageValueArray</b> only supports usage value arrays where each data field of the array is a multiple of eight bits.</p>
 
@@ -215,10 +207,10 @@ NTSTATUS __stdcall HidP_SetUsageValueArray(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539787">HidP_SetScaledUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp-setscaledusagevalue.md">HidP_SetScaledUsageValue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539797">HidP_SetUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp-setusagevalue.md">HidP_SetUsageValue</a>
 </dt>
 </dl>
 <p> </p>

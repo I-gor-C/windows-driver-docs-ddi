@@ -68,8 +68,6 @@ HRESULT DumpItemData(
 ## -remarks
 <p>This method is provided for Microsoft internal debugging only. It will return E_NOTIMPL on the release operating system. </p>
 
-<p>This method is provided for Microsoft internal debugging only. It will return E_NOTIMPL on the release operating system. </p>
-
 ## -requirements
 <table>
 <tr>

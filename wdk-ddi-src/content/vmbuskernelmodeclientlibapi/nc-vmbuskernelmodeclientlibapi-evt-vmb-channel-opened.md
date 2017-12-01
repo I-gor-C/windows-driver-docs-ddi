@@ -7,7 +7,7 @@ old-location: netvista\evt_vmb_channel_opened.htm
 old-project: netvista
 ms.assetid: 4E35AAA4-B9BA-4248-BBE6-FB576CAFD046
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VideoPortGetAgpServices
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,22 +90,6 @@ be queued, but they cannot be sent.
 <p>If the client driver returns a failure  status code, the channel
 rolls back to a state where no traffic flows.</p>
 
-<p>After a channel is created, a client driver can specify callback functions for state changes, including  <i>EvtVmbChannelOpened</i>, by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmb-channel-state-change-callbacks-init.md">VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT</a> function.</p>
-
-<p>After a channel has been  
-configured, the Kernel Mode Client Library (KMCL) client calls the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelenable.md">VmbChannelEnable</a> function.  On the host, this 
-function offers a channel to the guest.  On the guest, this function 
-accepts an existing offer or waits for such an offer to arrive.  When a channel is opened, KMCL invokes the <i>EvtVmbChannelOpened</i> callback function.  
-After this callback finishes, the channel
-is in the open state.</p>
-
-<p>  Before this callback function is invoked, packets can
-be queued, but they cannot be sent.
-</p>
-
-<p>If the client driver returns a failure  status code, the channel
-rolls back to a state where no traffic flows.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -139,4 +123,4 @@ rolls back to a state where no traffic flows.</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_OPENED callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20EVT_VMB_CHANNEL_OPENED callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

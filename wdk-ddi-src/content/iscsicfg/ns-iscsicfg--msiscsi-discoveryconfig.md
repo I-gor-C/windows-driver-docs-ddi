@@ -85,12 +85,12 @@ typedef struct _MSiSCSI_DiscoveryConfig {
 ### -field <b>iSNSServer</b>
 
 <dd>
-<p>If <b>AutomaticiSNSDiscovery</b> is <b>FALSE</b>, <b>iSNSServer</b> contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that provides a fixed address of the iSNS server that is independent of the version of the IP protocol in use. </p>
+<p>If <b>AutomaticiSNSDiscovery</b> is <b>FALSE</b>, <b>iSNSServer</b> contains a <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that provides a fixed address of the iSNS server that is independent of the version of the IP protocol in use. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite automatically generates a declaration of the MSiSCSI_DiscoveryConfig structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562995">MSiSCSI_DiscoveryConfig WMI Class</a> in <i>Config.mof</i>. </p>
+<p>The WMI tool suite automatically generates a declaration of the MSiSCSI_DiscoveryConfig structure when it compiles the <a href="storage.msiscsi_discoveryconfig_wmi_class">MSiSCSI_DiscoveryConfig WMI Class</a> in <i>Config.mof</i>. </p>
 
 <p>Initiators are required to implement the MSiSCSI_DiscoveryConfig class. You must implement this class.</p>
 
@@ -111,10 +111,10 @@ typedef struct _MSiSCSI_DiscoveryConfig {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562995">MSiSCSI_DiscoveryConfig WMI Class</a>
+<a href="storage.msiscsi_discoveryconfig_wmi_class">MSiSCSI_DiscoveryConfig WMI Class</a>
 </dt>
 </dl>
 <p> </p>

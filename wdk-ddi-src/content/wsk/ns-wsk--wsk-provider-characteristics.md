@@ -7,7 +7,7 @@ old-location: netvista\wsk_provider_characteristics.htm
 old-project: netvista
 ms.assetid: 25371620-23bb-4a98-9554-14057742b0ca
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WSK_PROVIDER_CHARACTERISTICS, WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -74,7 +73,7 @@ typedef struct _WSK_PROVIDER_CHARACTERISTICS {
 
 ## -remarks
 <p>When a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571122">WskCaptureProviderNPI</a> call fails
+    <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a> call fails
     with status code STATUS_NOINTERFACE, the WSK application can use a call to 
     <a href="..\wsk\nf-wsk-wskqueryprovidercharacteristics.md">
     WskQueryProviderCharacteristics</a> to query the range of WSK NPI versions supported by the WSK
@@ -93,13 +92,13 @@ typedef struct _WSK_PROVIDER_CHARACTERISTICS {
 
 <p>If a WSK application determines that the WSK subsystem supports a version of the WSK NPI that is
     compatible with the application, the application should call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a> and, by means of the 
+    <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> and, by means of the 
     <b>Dispatch</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571163">WSK_CLIENT_NPI</a> structure pointed to by the 
+    <a href="..\wsk\ns-wsk--wsk-client-npi.md">WSK_CLIENT_NPI</a> structure pointed to by the 
     <i>WskClientNpi</i> parameter, it should specify the exact version of the WSK NPI that it would like to
     use in the 
     <b>Version</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571159">WSK_CLIENT_DISPATCH</a> structure. The WSK
+    <a href="..\wsk\ns-wsk--wsk-client-dispatch.md">WSK_CLIENT_DISPATCH</a> structure. The WSK
     application should specify the remaining members of the WSK_CLIENT_DISPATCH structure to conform with the
     version of the WSK NPI that is specified in the 
     <b>Version</b> member of the structure.</p>
@@ -134,22 +133,22 @@ typedef struct _WSK_PROVIDER_CHARACTERISTICS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571122">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
 <dt>
 <a href="..\wsk\nf-wsk-wskqueryprovidercharacteristics.md">
    WskQueryProviderCharacteristics</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a>
+<a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571159">WSK_CLIENT_DISPATCH</a>
+<a href="..\wsk\ns-wsk--wsk-client-dispatch.md">WSK_CLIENT_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571163">WSK_CLIENT_NPI</a>
+<a href="..\wsk\ns-wsk--wsk-client-npi.md">WSK_CLIENT_NPI</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

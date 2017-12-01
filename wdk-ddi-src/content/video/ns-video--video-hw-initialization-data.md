@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The VIDEO_HW_INITIALIZATION_DATA structure specifies the entry points and storage requirements for the miniport driver. This structure is created on the stack and initialized by the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function.</p>
+<p>The VIDEO_HW_INITIALIZATION_DATA structure specifies the entry points and storage requirements for the miniport driver. This structure is created on the stack and initialized by the miniport driver's <a href="display.driverentry_of_video_miniport_driver">DriverEntry</a> function.</p>
 
 
 ## -syntax
@@ -115,7 +115,7 @@ typedef struct _VIDEO_HW_INITIALIZATION_DATA {
 
 <dd>
 <p>Specifies the size in bytes of the storage the miniport driver requires for its private, adapter-specific device extension. A miniport driver uses this storage to hold driver-determined per-adapter information, such as the mapped logical address ranges for the adapter registers and whatever context information the driver maintains about its I/O operations.</p>
-<p>A pointer to the device extension is passed in every call made to the miniport driver's standard functions except <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>, <a href="..\video\nc-video-pminiport-synchronize-routine.md">HwVidSynchronizeExecutionCallback</a>, and any <i>SvgaHwIoPortXxx</i> functions. The video port driver allocates the memory for the device extension and initializes it with zeros before it is passed to the miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function.</p>
+<p>A pointer to the device extension is passed in every call made to the miniport driver's standard functions except <a href="display.driverentry_of_video_miniport_driver">DriverEntry</a>, <a href="..\video\nc-video-pminiport-synchronize-routine.md">HwVidSynchronizeExecutionCallback</a>, and any <i>SvgaHwIoPortXxx</i> functions. The video port driver allocates the memory for the device extension and initializes it with zeros before it is passed to the miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function.</p>
 </dd>
 
 ### -field <b>StartingDeviceNumber</b>
@@ -175,7 +175,7 @@ typedef struct _VIDEO_HW_INITIALIZATION_DATA {
 ### -field <b>HwLegacyResourceList</b>
 
 <dd>
-<p>Pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff570498">VIDEO_ACCESS_RANGE</a> structures. Each structure describes a device I/O port or memory range for the video adapter that is not listed in PCI configuration space.</p>
+<p>Pointer to an array of <a href="..\video\ns-video--video-access-range.md">VIDEO_ACCESS_RANGE</a> structures. Each structure describes a device I/O port or memory range for the video adapter that is not listed in PCI configuration space.</p>
 </dd>
 
 ### -field <b>HwLegacyResourceCount</b>
@@ -204,7 +204,7 @@ typedef struct _VIDEO_HW_INITIALIZATION_DATA {
 </dl>
 
 ## -remarks
-<p>A miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function must initialize this structure with zeros before it sets relevant values in any member.</p>
+<p>A miniport driver's <a href="display.driverentry_of_video_miniport_driver">DriverEntry</a> function must initialize this structure with zeros before it sets relevant values in any member.</p>
 
 <p>The video port driver will ignore the <b>HwLegacyResourceCount</b> and <b>HwLegacyResourceList</b> members when <b>HwGetLegacyResources</b> is initialized with a pointer to a <a href="..\video\nc-video-pvideo-hw-legacyresources.md">HwVidLegacyResources</a> implementation.</p>
 
@@ -225,16 +225,16 @@ typedef struct _VIDEO_HW_INITIALIZATION_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564131">EMULATOR_ACCESS_ENTRY</a>
+<a href="..\miniport\ns-miniport--emulator-access-entry.md">EMULATOR_ACCESS_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570498">VIDEO_ACCESS_RANGE</a>
+<a href="..\video\ns-video--video-access-range.md">VIDEO_ACCESS_RANGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a>
+<a href="..\video\ns-video--video-port-config-info.md">VIDEO_PORT_CONFIG_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570493">VideoPortZeroMemory</a>
+<a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo-hw-legacyresources.md">HwVidLegacyResources</a>

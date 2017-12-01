@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>PosCxOpen is called to create an open PosCx library instance. This function initializes all resources it needs to manage a single open instance. It should be called from the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540868">EVT_WDF_DEVICE_FILE_CREATE</a>   callback.</p>
+<p>PosCxOpen is called to create an open PosCx library instance. This function initializes all resources it needs to manage a single open instance. It should be called from the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-file-create.md">EVT_WDF_DEVICE_FILE_CREATE</a>   callback.</p>
 
 
 ## -syntax

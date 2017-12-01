@@ -84,43 +84,43 @@ typedef struct D3D11_1_DDI_RENDER_TARGET_BLEND_DESC {
 ### -field <b>SrcBlend</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541916">D3D10_DDI_BLEND</a> that indicates the blend mode of the source for the enabled render target. </p>
+<p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a> that indicates the blend mode of the source for the enabled render target. </p>
 </dd>
 
 ### -field <b>DestBlend</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541916">D3D10_DDI_BLEND</a> that indicates the blend mode of the destination for the enabled render target. </p>
+<p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a> that indicates the blend mode of the destination for the enabled render target. </p>
 </dd>
 
 ### -field <b>BlendOp</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541923">D3D10_DDI_BLEND_OP</a> that indicates the blending operation for the enabled render target. </p>
+<p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend-op.md">D3D10_DDI_BLEND_OP</a> that indicates the blending operation for the enabled render target. </p>
 </dd>
 
 ### -field <b>SrcBlendAlpha</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541916">D3D10_DDI_BLEND</a> that indicates the transparency blend mode of the source for the enabled render target. </p>
+<p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a> that indicates the transparency blend mode of the source for the enabled render target. </p>
 </dd>
 
 ### -field <b>DestBlendAlpha</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541916">D3D10_DDI_BLEND</a> that indicates the transparency blend mode of the destination for the enabled render target. </p>
+<p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a> that indicates the transparency blend mode of the destination for the enabled render target. </p>
 </dd>
 
 ### -field <b>BlendOpAlpha</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541923">D3D10_DDI_BLEND_OP</a> that indicates the transparency blending operation for the enabled render target. </p>
+<p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend-op.md">D3D10_DDI_BLEND_OP</a> that indicates the transparency blending operation for the enabled render target. </p>
 </dd>
 
 ### -field <b>LogicOp</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh451051">D3D11_1_DDI_LOGIC_OP</a> that specifies  shader logic operations that are available in the blend state.</p>
+<p>[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1-ddi-logic-op.md">D3D11_1_DDI_LOGIC_OP</a> that specifies  shader logic operations that are available in the blend state.</p>
 </dd>
 
 ### -field <b>RenderTargetWriteMask</b>
@@ -219,16 +219,16 @@ typedef struct D3D11_1_DDI_RENDER_TARGET_BLEND_DESC {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createblendstate.md">CreateBlendState(D3D11_1)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541916">D3D10_DDI_BLEND</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541923">D3D10_DDI_BLEND_OP</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend-op.md">D3D10_DDI_BLEND_OP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451041">D3D11_1_DDI_BLEND_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1-ddi-blend-desc.md">D3D11_1_DDI_BLEND_DESC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451051">D3D11_1_DDI_LOGIC_OP</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1-ddi-logic-op.md">D3D11_1_DDI_LOGIC_OP</a>
 </dt>
 </dl>
 <p> </p>

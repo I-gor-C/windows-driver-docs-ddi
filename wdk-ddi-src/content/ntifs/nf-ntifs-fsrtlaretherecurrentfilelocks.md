@@ -57,7 +57,7 @@ BOOLEAN FsRtlAreThereCurrentFileLocks(
 ### -param <i>FileLock</i> [in]
 
 <dd>
-<p>Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545640">FsRtlAllocateFileLock</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff546122">FsRtlInitializeFileLock</a>.</p>
+<p>Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="ifsk.fsrtlallocatefilelock">FsRtlAllocateFileLock</a> or <a href="ifsk.fsrtlinitializefilelock">FsRtlInitializeFileLock</a>.</p>
 </dd>
 </dl>
 
@@ -65,8 +65,6 @@ BOOLEAN FsRtlAreThereCurrentFileLocks(
 <p><b>FsRtlAreThereCurrentFileLocks</b> returns <b>TRUE</b> if any byte-range locks have been granted for the file, <b>FALSE</b> otherwise.</p>
 
 ## -remarks
-<p>File systems and filter drivers often call <b>FsRtlAreThereCurrentFileLocks</b> from their FastIoCheckIfPossible routines. </p>
-
 <p>File systems and filter drivers often call <b>FsRtlAreThereCurrentFileLocks</b> from their FastIoCheckIfPossible routines. </p>
 
 ## -requirements
@@ -104,10 +102,10 @@ BOOLEAN FsRtlAreThereCurrentFileLocks(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545640">FsRtlAllocateFileLock</a>
+<a href="ifsk.fsrtlallocatefilelock">FsRtlAllocateFileLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546122">FsRtlInitializeFileLock</a>
+<a href="ifsk.fsrtlinitializefilelock">FsRtlInitializeFileLock</a>
 </dt>
 </dl>
 <p> </p>

@@ -83,7 +83,7 @@ typedef struct D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW {
 </dl>
 
 ## -remarks
-<p>The value in the <b>First2DArrayFace</b> member added with 6 multiplied by the number in the <b>NumCubes</b> member must be less than or equal to the value in the <b>ArraySize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541697">D3D10DDIARG_CREATERESOURCE</a> structure for the shader resource whose view is created in a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10-1ddi-createshaderresourceview.md">CreateShaderResourceView(D3D10_1)</a> function. That is, the following calculation applies:</p>
+<p>The value in the <b>First2DArrayFace</b> member added with 6 multiplied by the number in the <b>NumCubes</b> member must be less than or equal to the value in the <b>ArraySize</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createresource.md">D3D10DDIARG_CREATERESOURCE</a> structure for the shader resource whose view is created in a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10-1ddi-createshaderresourceview.md">CreateShaderResourceView(D3D10_1)</a> function. That is, the following calculation applies:</p>
 
 ## -requirements
 <table>
@@ -116,10 +116,10 @@ typedef struct D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10-1ddi-createshaderresourceview.md">CreateShaderResourceView(D3D10_1)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541861">D3D10_1DDIARG_CREATESHADERRESOURCEVIEW</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-1ddiarg-createshaderresourceview.md">D3D10_1DDIARG_CREATESHADERRESOURCEVIEW</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541697">D3D10DDIARG_CREATERESOURCE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createresource.md">D3D10DDIARG_CREATERESOURCE</a>
 </dt>
 </dl>
 <p> </p>

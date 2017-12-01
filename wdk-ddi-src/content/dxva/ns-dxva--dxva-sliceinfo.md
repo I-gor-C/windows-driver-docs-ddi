@@ -158,7 +158,7 @@ typedef struct _DXVA_SliceInfo {
 </dl>
 
 ## -remarks
-<p>Slice-control buffers are provided to guide the operation of off-host VLD bitstream processing. Slice-control buffers are sent only when the <b>bConfigBitstreamRaw</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> is 1. The host software decoder must determine the location of slice-level resynchronization points in the bitstream. A <i>slice</i> is defined to be a multimacroblock layer that includes a resynchronization point in the bitstream data.</p>
+<p>Slice-control buffers are provided to guide the operation of off-host VLD bitstream processing. Slice-control buffers are sent only when the <b>bConfigBitstreamRaw</b> member of <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> is 1. The host software decoder must determine the location of slice-level resynchronization points in the bitstream. A <i>slice</i> is defined to be a multimacroblock layer that includes a resynchronization point in the bitstream data.</p>
 
 <p>In H.261 bitstreams, a GOB is considered a slice. In H.263 bitstreams, a sequence of one or more GOBs starting with a GOB start code and containing no additional GOB start codes, is considered a slice. A slice-control buffer must contain one or more DXVA_SliceInfo structures, according to the contents of a corresponding bitstream data buffer.</p>
 
@@ -179,7 +179,7 @@ typedef struct _DXVA_SliceInfo {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a>
+<a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a>
 </dt>
 </dl>
 <p> </p>

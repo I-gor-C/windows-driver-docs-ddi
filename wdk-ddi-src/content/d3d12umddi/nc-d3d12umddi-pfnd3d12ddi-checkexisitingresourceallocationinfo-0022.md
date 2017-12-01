@@ -84,8 +84,6 @@ VOID APIENTRY* pfnCheckExistingResourceAllocationInfo(
 ## -remarks
 <p>This callback function is part of a two step process of resource creation. After the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi-checkresourceallocationinfo-0022.md">pfnCheckResourceAllocationInfo</a> callback function, the resource is created. During resource creation, the layout is never _UNDEFINED, since the driver will have returned a resolved texture layout. </p>
 
-<p>This callback function is part of a two step process of resource creation. After the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi-checkresourceallocationinfo-0022.md">pfnCheckResourceAllocationInfo</a> callback function, the resource is created. During resource creation, the layout is never _UNDEFINED, since the driver will have returned a resolved texture layout. </p>
-
 ## -requirements
 <table>
 <tr>

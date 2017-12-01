@@ -61,7 +61,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS {
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_MONO_OFFSET"></a><a id="d3d11_1ddi_video_processor_stereo_caps_mono_offset"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_MONO_OFFSET</b>
 
 <dd>
-<p>The video processor supports the <b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO_OFFSET</b> format defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451029">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT</a> enumeration.</p>
+<p>The video processor supports the <b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO_OFFSET</b> format defined in the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-stereo-format.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT</a> enumeration.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_ROW_INTERLEAVED"></a><a id="d3d11_1ddi_video_processor_stereo_caps_row_interleaved"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_ROW_INTERLEAVED</b>
@@ -87,7 +87,7 @@ format.</p>
 ### -field <a id="D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_FLIP_MODE"></a><a id="d3d11_1ddi_video_processor_stereo_caps_flip_mode"></a><b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS_FLIP_MODE</b>
 
 <dd>
-<p>The video processor can flip one or both views. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451025">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE</a>.</p>
+<p>The video processor can flip one or both views. For more information, see <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-stereo-flip-mode.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE</a>.</p>
 </dd>
 </dl>
 
@@ -127,10 +127,10 @@ format.</p>
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451025">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-stereo-flip-mode.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451029">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-processor-stereo-format.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT</a>
 </dt>
 </dl>
 <p> </p>

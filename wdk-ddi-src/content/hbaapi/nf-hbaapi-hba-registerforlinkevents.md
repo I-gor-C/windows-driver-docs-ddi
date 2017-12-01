@@ -62,7 +62,7 @@ HBA_STATUS HBA_API HBA_RegisterForLinkEvents(
 ### -param <i>callback</i> 
 
 <dd>
-<p>Pointer to a callback routine of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556121">HBA_LINK_CALLBACK</a> to call when the event occurs. </p>
+<p>Pointer to a callback routine of type <a href="storage.hba_link_callback">HBA_LINK_CALLBACK</a> to call when the event occurs. </p>
 </dd>
 
 ### -param <i>userData</i> 
@@ -86,7 +86,7 @@ HBA_STATUS HBA_API HBA_RegisterForLinkEvents(
 ### -param <i>handle</i> 
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA for which event callbacks are requested.</p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA for which event callbacks are requested.</p>
 </dd>
 
 ### -param <i>callbackHandle</i> 
@@ -97,7 +97,7 @@ HBA_STATUS HBA_API HBA_RegisterForLinkEvents(
 </dl>
 
 ## -returns
-<p>The <b>HBA_RegisterForLinkEvents</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_RegisterForLinkEvents</b> returns one of the following values.</p><dl>
+<p>The <b>HBA_RegisterForLinkEvents</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_RegisterForLinkEvents</b> returns one of the following values.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the callback registration was successful. </p><dl>
 <dt><b>HBA_STATUS_ERROR_NOT_SUPPORTED</b></dt>
@@ -108,9 +108,7 @@ HBA_STATUS HBA_API HBA_RegisterForLinkEvents(
 <p> </p>
 
 ## -remarks
-<p>Only RLIR events are reported. To stop event delivery, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a>.</p>
-
-<p>Only RLIR events are reported. To stop event delivery, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a>.</p>
+<p>Only RLIR events are reported. To stop event delivery, call <a href="..\hbaapi\nf-hbaapi-hba-removecallback.md">HBA_RemoveCallback</a>.</p>
 
 ## -requirements
 <table>
@@ -159,16 +157,16 @@ HBA_STATUS HBA_API HBA_RegisterForLinkEvents(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556121">HBA_LINK_CALLBACK</a>
+<a href="storage.hba_link_callback">HBA_LINK_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a>
+<a href="..\hbaapi\nf-hbaapi-hba-removecallback.md">HBA_RemoveCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

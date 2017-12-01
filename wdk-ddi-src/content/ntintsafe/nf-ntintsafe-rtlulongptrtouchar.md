@@ -7,7 +7,7 @@ old-location: kernel\rtlulongptrtouchar.htm
 old-project: kernel
 ms.assetid: 074159BD-EF74-45F9-B7A5-47F9E01E32C6
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlULongPtrToUChar
 ms.prod: windows-hardware
 ms.technology: windows-devices

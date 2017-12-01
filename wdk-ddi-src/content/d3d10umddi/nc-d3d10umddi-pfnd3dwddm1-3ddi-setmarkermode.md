@@ -68,7 +68,7 @@ _Check_return_ HRESULT APIENTRY* SetMarkerMode(
 ### -param <i>Type</i> [in]
 
 <dd>
-<p>A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/dn535968">D3DWDDM1_3DDI_MARKER_TYPE</a> enumeration that indicates the type of marker event  that the driver should support.</p>
+<p>A value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1-3ddi-marker-type.md">D3DWDDM1_3DDI_MARKER_TYPE</a> enumeration that indicates the type of marker event  that the driver should support.</p>
 </dd>
 
 ### -param <i>Flags</i> 
@@ -84,8 +84,6 @@ _Check_return_ HRESULT APIENTRY* SetMarkerMode(
       Returns <b>S_OK</b> or an appropriate error result if the function does not complete successfully.</p>
 
 ## -remarks
-<p>Follow these guidelines when you set up profile-type marker events in your user-mode driver, indicated by the <b>D3DWDDM1_3DDI_MARKER_TYPE_PROFILE</b> type:</p>
-
 <p>Follow these guidelines when you set up profile-type marker events in your user-mode driver, indicated by the <b>D3DWDDM1_3DDI_MARKER_TYPE_PROFILE</b> type:</p>
 
 ## -requirements
@@ -139,7 +137,7 @@ _Check_return_ HRESULT APIENTRY* SetMarkerMode(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn535968">D3DWDDM1_3DDI_MARKER_TYPE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1-3ddi-marker-type.md">D3DWDDM1_3DDI_MARKER_TYPE</a>
 </dt>
 </dl>
 <p> </p>

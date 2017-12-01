@@ -78,7 +78,7 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 ### -field <b>Revision</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560623">WHEA_REVISION</a> union that describes the revision level of the WHEA_ERROR_RECORD_HEADER structure.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_ERROR_RECORD_HEADER structure.</p>
 </dd>
 
 ### -field <b>SignatureEnd</b>
@@ -96,13 +96,13 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 ### -field <b>Severity</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560503">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition described by the error record.</p>
+<p>A <a href="..\ntddk\ne-ntddk--whea-error-severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition described by the error record.</p>
 </dd>
 
 ### -field <b>ValidBits</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560493">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a> union that specifies which members of the WHEA_ERROR_RECORD_HEADER structure contain valid data.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-error-record-header-validbits.md">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a> union that specifies which members of the WHEA_ERROR_RECORD_HEADER structure contain valid data.</p>
 </dd>
 
 ### -field <b>Length</b>
@@ -114,7 +114,7 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 ### -field <b>Timestamp</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560629">WHEA_TIMESTAMP</a> union that indicates the time that the error was reported to the operating system. This member contains valid data only if the <b>ValidBits.Timestamp</b> bit is set.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-timestamp.md">WHEA_TIMESTAMP</a> union that indicates the time that the error was reported to the operating system. This member contains valid data only if the <b>ValidBits.Timestamp</b> bit is set.</p>
 </dd>
 
 ### -field <b>PlatformId</b>
@@ -253,7 +253,7 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 ### -field <b>PersistenceInfo</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560599">WHEA_PERSISTENCE_INFO</a> union that is used by the error record persistence interface.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-persistence-info.md">WHEA_PERSISTENCE_INFO</a> union that is used by the error record persistence interface.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -264,7 +264,7 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 </dl>
 
 ## -remarks
-<p>A WHEA_ERROR_RECORD_HEADER structure is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560483">WHEA_ERROR_RECORD</a> structure. The WHEA_ERROR_RECORD_HEADER structure describes general information about the hardware error condition that is described by the error record.</p>
+<p>A WHEA_ERROR_RECORD_HEADER structure is contained within the <a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a> structure. The WHEA_ERROR_RECORD_HEADER structure describes general information about the hardware error condition that is described by the error record.</p>
 
 ## -requirements
 <table>
@@ -292,22 +292,22 @@ typedef struct _WHEA_ERROR_RECORD_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560483">WHEA_ERROR_RECORD</a>
+<a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560493">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a>
+<a href="..\ntddk\ns-ntddk--whea-error-record-header-validbits.md">WHEA_ERROR_RECORD_HEADER_VALIDBITS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560503">WHEA_ERROR_SEVERITY</a>
+<a href="..\ntddk\ne-ntddk--whea-error-severity.md">WHEA_ERROR_SEVERITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560599">WHEA_PERSISTENCE_INFO</a>
+<a href="..\ntddk\ns-ntddk--whea-persistence-info.md">WHEA_PERSISTENCE_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560623">WHEA_REVISION</a>
+<a href="..\ntddk\ns-ntddk--whea-revision.md">WHEA_REVISION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560629">WHEA_TIMESTAMP</a>
+<a href="..\ntddk\ns-ntddk--whea-timestamp.md">WHEA_TIMESTAMP</a>
 </dt>
 </dl>
 <p> </p>

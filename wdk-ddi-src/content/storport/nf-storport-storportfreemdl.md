@@ -83,9 +83,7 @@ ULONG StorPortFreeMdl(
 <p> </p>
 
 ## -remarks
-<p>A miniport driver calls the <b>StorPortFreeMdl</b> routine to free the MDL that was allocated in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff567028">StorPortAllocateMdl</a>.</p>
-
-<p>A miniport driver calls the <b>StorPortFreeMdl</b> routine to free the MDL that was allocated in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff567028">StorPortAllocateMdl</a>.</p>
+<p>A miniport driver calls the <b>StorPortFreeMdl</b> routine to free the MDL that was allocated in a previous call to <a href="..\storport\nf-storport-storportallocatemdl.md">StorPortAllocateMdl</a>.</p>
 
 ## -requirements
 <table>
@@ -122,7 +120,7 @@ ULONG StorPortFreeMdl(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
+<a href="devtest.storport_storportirql">StorPortIrql</a>
 </td>
 </tr>
 </table>
@@ -130,7 +128,7 @@ ULONG StorPortFreeMdl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567028">StorPortAllocateMdl</a>
+<a href="..\storport\nf-storport-storportallocatemdl.md">StorPortAllocateMdl</a>
 </dt>
 </dl>
 <p> </p>

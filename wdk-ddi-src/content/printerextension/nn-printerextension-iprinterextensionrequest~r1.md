@@ -62,7 +62,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406716">Cancel</a>
+<a href="print.iprinterextensionrequest_cancel">Cancel</a>
 </td>
 <td align="left" width="63%">
 <p>Completes the extension event with a cancellation.</p>
@@ -70,7 +70,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406719">Complete</a>
+<a href="print.iprinterextensionrequest_complete">Complete</a>
 </td>
 <td align="left" width="63%">
 <p>Completes the extension event.</p>
@@ -118,7 +118,7 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973207">IPrinterExtensionEventArgs</a>
+<a href="..\printerextension\nn-printerextension-iprinterextensioneventargs.md">IPrinterExtensionEventArgs</a>
 </dt>
 <dt>
 <a href="print.iprinterextensioneventargs_request">IPrinterExtensionEventArgs::Request</a>

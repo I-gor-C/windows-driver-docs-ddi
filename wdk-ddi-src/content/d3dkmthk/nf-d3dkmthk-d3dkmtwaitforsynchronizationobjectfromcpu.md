@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTWaitForSynchronizationObjectFrom
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906810">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU</a> structure that describes the operation.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-waitforsynchronizationobjectfromcpu.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU</a> structure that describes the operation.</p>
 </dd>
 </dl>
 
@@ -139,7 +139,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTWaitForSynchronizationObjectFrom
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906810">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-waitforsynchronizationobjectfromcpu.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU</a>
 </dt>
 </dl>
 <p> </p>

@@ -89,16 +89,16 @@ typedef struct _WIM_PROVIDER_SUSPEND_OVERLAY_INPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426735">FSCTL_SUSPEND_OVERLAY</a>
+<a href="ifsk.fsctl_suspend_overlay">FSCTL_SUSPEND_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632437">FSCTL_ADD_OVERLAY</a>
+<a href="ifsk.fsctl_add_overlay">FSCTL_ADD_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632442">FSCTL_REMOVE_OVERLAY</a>
+<a href="ifsk.fsctl_remove_overlay">FSCTL_REMOVE_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632445">FSCTL_UPDATE_OVERLAY</a>
+<a href="ifsk.fsctl_update_overlay">FSCTL_UPDATE_OVERLAY</a>
 </dt>
 </dl>
 <p> </p>

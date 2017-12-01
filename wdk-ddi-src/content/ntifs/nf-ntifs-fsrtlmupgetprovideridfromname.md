@@ -84,13 +84,7 @@ NTSTATUS FsRtlMupGetProviderIdFromName(
 
 <p>The value of the provider identifier for a particular network redirector remains the same if the network redirector is unloaded from the system and then reloaded back into the system.</p>
 
-<p>To get the provider identifier of a network redirector from a file object, a file system filter driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546981">FsRtlMupGetProviderInfoFromFileObject</a> routine.</p>
-
-<p>A file system filter driver can call the <b>FsRtlMupGetProviderIdFromName</b> routine to get the provider identifier of a network redirector from the name of the network redirector. The file system filter driver can quickly compare the value of this identifier to the value of other provider identifiers without needing to do a string comparison.</p>
-
-<p>The value of the provider identifier for a particular network redirector remains the same if the network redirector is unloaded from the system and then reloaded back into the system.</p>
-
-<p>To get the provider identifier of a network redirector from a file object, a file system filter driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546981">FsRtlMupGetProviderInfoFromFileObject</a> routine.</p>
+<p>To get the provider identifier of a network redirector from a file object, a file system filter driver can call the <a href="..\ntifs\nf-ntifs-fsrtlmupgetproviderinfofromfileobject.md">FsRtlMupGetProviderInfoFromFileObject</a> routine.</p>
 
 ## -requirements
 <table>
@@ -155,7 +149,7 @@ NTSTATUS FsRtlMupGetProviderIdFromName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546981">FsRtlMupGetProviderInfoFromFileObject</a>
+<a href="..\ntifs\nf-ntifs-fsrtlmupgetproviderinfofromfileobject.md">FsRtlMupGetProviderInfoFromFileObject</a>
 </dt>
 </dl>
 <p> </p>

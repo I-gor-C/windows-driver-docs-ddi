@@ -7,7 +7,7 @@ old-location: stream\ikspinex.htm
 old-project: stream
 ms.assetid: 9e6fd96d-c78e-44f3-ae4c-3688da48a494
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsSynchronousDeviceControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,7 +44,7 @@ req.iface:
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsPinEx</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559896">IKsPin</a>. <b>IKsPinEx</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsPinEx</b> interface inherits from <a href="..\ksproxy\nn-ksproxy-ikspin~r1.md">IKsPin</a>. <b>IKsPinEx</b> also has these types of members:</p>
 
 <p>The <b>IKsPinEx</b> interface has these methods.</p>
 
@@ -52,7 +52,7 @@ req.iface:
 
 <p> </p>
 
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsPinEx</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559896">IKsPin</a>. <b>IKsPinEx</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsPinEx</b> interface inherits from <a href="..\ksproxy\nn-ksproxy-ikspin~r1.md">IKsPin</a>. <b>IKsPinEx</b> also has these types of members:</p>
 
 <p>The <b>IKsPinEx</b> interface has these methods.</p>
 
@@ -60,7 +60,7 @@ req.iface:
 
 <p> </p>
 
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsPinEx</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559896">IKsPin</a>. <b>IKsPinEx</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsPinEx</b> interface inherits from <a href="..\ksproxy\nn-ksproxy-ikspin~r1.md">IKsPin</a>. <b>IKsPinEx</b> also has these types of members:</p>
 
 <p>The <b>IKsPinEx</b> interface has these methods.</p>
 
@@ -87,13 +87,7 @@ req.iface:
 <p> </p>
 
 ## -remarks
-<p>An interface handler (<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>) uses many of the <b>IKsPinEx</b> methods to route media samples of a particular media type. </p>
-
-<p>An interface handler (<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>) uses many of the <b>IKsPinEx</b> methods to route media samples of a particular media type. </p>
-
-<p>An interface handler (<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>) uses many of the <b>IKsPinEx</b> methods to route media samples of a particular media type. </p>
-
-<p>An interface handler (<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>) uses many of the <b>IKsPinEx</b> methods to route media samples of a particular media type. </p>
+<p>An interface handler (<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>) uses many of the <b>IKsPinEx</b> methods to route media samples of a particular media type. </p>
 
 ## -requirements
 <table>
@@ -122,12 +116,12 @@ req.iface:
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>
+<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559896">IKsPin</a>
+<a href="..\ksproxy\nn-ksproxy-ikspin~r1.md">IKsPin</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsPinEx interface%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsPinEx interface%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -96,7 +96,7 @@ NTSTATUS FltSetVolumeInformation(
 <p><b>FileFsControlInformation</b></p>
 </td>
 <td>
-<p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540258">FILE_FS_CONTROL_INFORMATION</a> for the volume. </p>
+<p>Set <a href="..\ntifs\ns-ntifs--file-fs-control-information.md">FILE_FS_CONTROL_INFORMATION</a> for the volume. </p>
 </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ NTSTATUS FltSetVolumeInformation(
 <p><b>FileFsLabelInformation</b></p>
 </td>
 <td>
-<p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540271">FILE_FS_LABEL_INFORMATION</a> for the volume. </p>
+<p>Set <a href="..\ntddk\ns-ntddk--file-fs-label-information.md">FILE_FS_LABEL_INFORMATION</a> for the volume. </p>
 </td>
 </tr>
 <tr>
@@ -112,7 +112,7 @@ NTSTATUS FltSetVolumeInformation(
 <p><b>FileFsObjectIdInformation</b></p>
 </td>
 <td>
-<p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540274">FILE_FS_OBJECTID_INFORMATION</a> for the volume. </p>
+<p>Set <a href="..\ntddk\ns-ntddk--file-fs-objectid-information.md">FILE_FS_OBJECTID_INFORMATION</a> for the volume. </p>
 </td>
 </tr>
 </table>
@@ -134,9 +134,7 @@ NTSTATUS FltSetVolumeInformation(
 <p> </p>
 
 ## -remarks
-<p>To query information about a volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>. </p>
-
-<p>To query information about a volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>. </p>
+<p>To query information about a volume, call <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>. </p>
 
 ## -requirements
 <table>
@@ -193,16 +191,16 @@ NTSTATUS FltSetVolumeInformation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540258">FILE_FS_CONTROL_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-fs-control-information.md">FILE_FS_CONTROL_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540271">FILE_FS_LABEL_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-fs-label-information.md">FILE_FS_LABEL_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540274">FILE_FS_OBJECTID_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-fs-objectid-information.md">FILE_FS_OBJECTID_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
 </dt>
 </dl>
 <p> </p>

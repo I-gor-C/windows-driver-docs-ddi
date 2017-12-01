@@ -57,7 +57,7 @@ NTSTATUS D3DKMTFlipOverlay(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548002">D3DKMT_FLIPOVERLAY</a> structure that describes how to change the display on the overlay.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-flipoverlay.md">D3DKMT_FLIPOVERLAY</a> structure that describes how to change the display on the overlay.</p>
 </dd>
 </dl>
 
@@ -71,7 +71,7 @@ NTSTATUS D3DKMTFlipOverlay(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546949">D3DKMTFlipOverlay</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtflipoverlay.md">D3DKMTFlipOverlay</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
@@ -135,7 +135,7 @@ NTSTATUS D3DKMTFlipOverlay(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548002">D3DKMT_FLIPOVERLAY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-flipoverlay.md">D3DKMT_FLIPOVERLAY</a>
 </dt>
 </dl>
 <p> </p>

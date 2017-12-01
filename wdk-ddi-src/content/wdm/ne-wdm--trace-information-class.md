@@ -7,7 +7,7 @@ old-location: kernel\trace_information_class.htm
 old-project: kernel
 ms.assetid: 38fa1687-5ad6-4536-8930-8505e5960207
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <= APC_LEVEL
+req.irql: PASSIVE_LEVEL
 req.iface: 
 req.product: Windows 10 or later.
 ---
@@ -116,7 +116,7 @@ typedef enum _TRACE_INFORMATION_CLASS {
 ### -field <a id="TraceHandleByNameClass"></a><a id="tracehandlebynameclass"></a><a id="TRACEHANDLEBYNAMECLASS"></a><b>TraceHandleByNameClass</b>
 
 <dd>
-<p>Retrieves an event trace handle (TRACEHANDLE) identified by a caller-supplied friendly name (<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure in buffer).</p>
+<p>Retrieves an event trace handle (TRACEHANDLE) identified by a caller-supplied friendly name (<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure in buffer).</p>
 </dd>
 
 ### -field <a id="LoggerEventsLostClass"></a><a id="loggereventslostclass"></a><a id="LOGGEREVENTSLOSTCLASS"></a><b>LoggerEventsLostClass</b>
@@ -175,11 +175,7 @@ typedef enum _TRACE_INFORMATION_CLASS {
 </dl>
 
 ## -remarks
-<p><b>TRACE_INFORMATION_CLASS</b> is provided primarily for use with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565820">WmiQueryTraceInformation</a> routine, which returns information about a WMI event tracing session.</p>
-
-<p><b>TRACE_INFORMATION_CLASS</b> is provided primarily for use with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565820">WmiQueryTraceInformation</a> routine, which returns information about a WMI event tracing session.</p>
-
-<p><b>TRACE_INFORMATION_CLASS</b> is provided primarily for use with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565820">WmiQueryTraceInformation</a> routine, which returns information about a WMI event tracing session.</p>
+<p><b>TRACE_INFORMATION_CLASS</b> is provided primarily for use with the <a href="..\wdm\nf-wdm-wmiquerytraceinformation.md">WmiQueryTraceInformation</a> routine, which returns information about a WMI event tracing session.</p>
 
 ## -requirements
 <table>
@@ -198,18 +194,18 @@ typedef enum _TRACE_INFORMATION_CLASS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565807">WmiFireEvent</a>
+<a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565820">WmiQueryTraceInformation</a>
+<a href="..\wdm\nf-wdm-wmiquerytraceinformation.md">WmiQueryTraceInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565836">WmiTraceMessage</a>
+<a href="..\wdm\nf-wdm-wmitracemessage.md">WmiTraceMessage</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566340">WmiTraceMessageVa</a>
+<a href="..\wdm\nf-wdm-wmitracemessageva.md">WmiTraceMessageVa</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TRACE_INFORMATION_CLASS enumeration%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TRACE_INFORMATION_CLASS enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11extsetdefaultkeyid.htm
 old-project: netvista
 ms.assetid: 405da147-9b41-4563-8694-6619f86ed366
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -94,19 +93,6 @@ DWORD WINAPI * Dot11ExtSetDefaultKeyId(
     OID_DOT11_CIPHER_DEFAULT_KEY_ID</a> object identifier (OID) to the Native 802.11 miniport driver, which
     manages the WLAN adapter.</p>
 
-<p>The default key identifier (ID) specifies the index of a cipher key in the adapter's default key and
-    per-station default key tables that the adapter uses for data encryption. The adapter uses the cipher key
-    referenced by the default key ID as the default encryption key for transmitted packets unless a
-    key-mapping key exists for the destination media access control (MAC) address. For more information about
-    these cipher key types, see 
-    <a href="NULL">802.11 Cipher Key Types</a>.</p>
-
-<p>A call to the 
-    <b>Dot11ExtSetDefaultKeyId</b> function results in a set request of the 
-    <a href="netvista.oid_dot11_cipher_default_key_id">
-    OID_DOT11_CIPHER_DEFAULT_KEY_ID</a> object identifier (OID) to the Native 802.11 miniport driver, which
-    manages the WLAN adapter.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -154,4 +140,4 @@ DWORD WINAPI * Dot11ExtSetDefaultKeyId(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_DEFAULT_KEY_ID callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_DEFAULT_KEY_ID callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

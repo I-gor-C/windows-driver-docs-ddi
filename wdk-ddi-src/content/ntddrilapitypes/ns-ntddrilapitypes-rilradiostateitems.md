@@ -7,7 +7,7 @@ old-location: netvista\rilradiostateitems.htm
 old-project: netvista
 ms.assetid: 26b2521c-7008-437d-aed3-3ed2be5d5959
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILRADIOSTATEITEMS, RILRADIOSTATEITEMS, *LPRILRADIOSTATEITEMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

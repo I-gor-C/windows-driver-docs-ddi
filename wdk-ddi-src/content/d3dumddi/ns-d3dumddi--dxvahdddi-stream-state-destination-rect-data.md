@@ -64,7 +64,7 @@ typedef struct _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA {
 ### -field <b>DestinationRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that specifies the coordinates of the destination rectangle relevant to the target rectangle. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is empty (0,0,0,0). </p>
+<p>[in] A <a href="display.rect">RECT</a> structure that specifies the coordinates of the destination rectangle relevant to the target rectangle. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is empty (0,0,0,0). </p>
 </dd>
 </dl>
 
@@ -98,7 +98,7 @@ typedef struct _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

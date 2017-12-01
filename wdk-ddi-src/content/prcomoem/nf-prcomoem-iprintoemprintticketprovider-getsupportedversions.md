@@ -84,13 +84,7 @@ STDMETHOD GetSupportedVersions(
 
 <p>The plug-in is responsible for allocating the array memory that is pointed to by the <i>ppVersions</i> parameter. The plug-in should allocate this memory by using the <b>CoTaskMemAlloc</b> function (described in the Microsoft Windows SDK documentation), but it is not responsible for freeing this memory.</p>
 
-<p><code>IPrintOemPrintTicketProvider::GetSupportedVersions</code> can be called before the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553151">IPrintOemPrintTicketProvider::BindPrinter</a> method is called. As a result, the OEM plug-in provider should not close the printer handle that is associated with the <i>hPrinter</i> parameter.</p>
-
-<p><code>IPrintOemPrintTicketProvider::GetSupportedVersions</code> returns the major version numbers of the print schemas that are supported by the provider interface. (The only currently defined version number is 1.) Providers can omit intermediate versions.</p>
-
-<p>The plug-in is responsible for allocating the array memory that is pointed to by the <i>ppVersions</i> parameter. The plug-in should allocate this memory by using the <b>CoTaskMemAlloc</b> function (described in the Microsoft Windows SDK documentation), but it is not responsible for freeing this memory.</p>
-
-<p><code>IPrintOemPrintTicketProvider::GetSupportedVersions</code> can be called before the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553151">IPrintOemPrintTicketProvider::BindPrinter</a> method is called. As a result, the OEM plug-in provider should not close the printer handle that is associated with the <i>hPrinter</i> parameter.</p>
+<p><code>IPrintOemPrintTicketProvider::GetSupportedVersions</code> can be called before the <a href="print.iprintoemprintticketprovider_bindprinter">IPrintOemPrintTicketProvider::BindPrinter</a> method is called. As a result, the OEM plug-in provider should not close the printer handle that is associated with the <i>hPrinter</i> parameter.</p>
 
 ## -requirements
 <table>
@@ -119,7 +113,7 @@ STDMETHOD GetSupportedVersions(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553151">IPrintOemPrintTicketProvider::BindPrinter</a>
+<a href="print.iprintoemprintticketprovider_bindprinter">IPrintOemPrintTicketProvider::BindPrinter</a>
 </dt>
 </dl>
 <p> </p>

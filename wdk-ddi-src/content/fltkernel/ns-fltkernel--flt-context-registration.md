@@ -114,7 +114,7 @@ typedef struct _FLT_CONTEXT_REGISTRATION {
 ### -field <b>ContextCleanupCallback</b>
 
 <dd>
-<p>A pointer to a minifilter-defined <b>ContextCleanupCallback</b> routine of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551078">PFLT_CONTEXT_CLEANUP_CALLBACK</a>. The filter manager calls this routine immediately before it deletes the context. If the minifilter has no memory or pointers to clean up inside the context, this member is optional and can be <b>NULL</b>. </p>
+<p>A pointer to a minifilter-defined <b>ContextCleanupCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt-context-cleanup-callback.md">PFLT_CONTEXT_CLEANUP_CALLBACK</a>. The filter manager calls this routine immediately before it deletes the context. If the minifilter has no memory or pointers to clean up inside the context, this member is optional and can be <b>NULL</b>. </p>
 </dd>
 
 ### -field <b>Size</b>
@@ -132,13 +132,13 @@ typedef struct _FLT_CONTEXT_REGISTRATION {
 ### -field <b>ContextAllocateCallback</b>
 
 <dd>
-<p>Pointer to a minifilter-defined <b>ContextAllocateCallback</b> routine of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551075">PFLT_CONTEXT_ALLOCATE_CALLBACK</a>. This member is optional and can be <b>NULL</b>. If it is not <b>NULL</b>, the <b>Size</b> and <b>PoolTag</b> members are ignored. </p>
+<p>Pointer to a minifilter-defined <b>ContextAllocateCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt-context-allocate-callback.md">PFLT_CONTEXT_ALLOCATE_CALLBACK</a>. This member is optional and can be <b>NULL</b>. If it is not <b>NULL</b>, the <b>Size</b> and <b>PoolTag</b> members are ignored. </p>
 </dd>
 
 ### -field <b>ContextFreeCallback</b>
 
 <dd>
-<p>A pointer to a minifilter-defined <b>ContextFreeCallback</b> routine of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551082">PFLT_CONTEXT_FREE_CALLBACK</a>. This member is optional and can be <b>NULL</b>. If it is not <b>NULL</b>, the <b>Size</b> and <b>PoolTag</b> members are ignored. </p>
+<p>A pointer to a minifilter-defined <b>ContextFreeCallback</b> routine of type <a href="..\fltkernel\nc-fltkernel-pflt-context-free-callback.md">PFLT_CONTEXT_FREE_CALLBACK</a>. This member is optional and can be <b>NULL</b>. If it is not <b>NULL</b>, the <b>Size</b> and <b>PoolTag</b> members are ignored. </p>
 </dd>
 
 ### -field <b>Reserved1</b>
@@ -149,9 +149,9 @@ typedef struct _FLT_CONTEXT_REGISTRATION {
 </dl>
 
 ## -remarks
-<p>When a minifilter calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a> from its <b>DriverEntry</b> routine, it must register each context type that it uses. </p>
+<p>When a minifilter calls <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a> from its <b>DriverEntry</b> routine, it must register each context type that it uses. </p>
 
-<p>To register these context types, the minifilter creates a variable-length array of FLT_CONTEXT_REGISTRATION structures and stores a pointer to the array in the <b>ContextRegistration</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544811">FLT_REGISTRATION</a> structure that the minifilter passes as the <i>Registration</i> parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a>. The last element of this array must be {FLT_CONTEXT_END}. </p>
+<p>To register these context types, the minifilter creates a variable-length array of FLT_CONTEXT_REGISTRATION structures and stores a pointer to the array in the <b>ContextRegistration</b> member of the <a href="..\fltkernel\ns-fltkernel--flt-registration.md">FLT_REGISTRATION</a> structure that the minifilter passes as the <i>Registration</i> parameter of <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>. The last element of this array must be {FLT_CONTEXT_END}. </p>
 
 <p>For each context type that the minifilter uses, the minifilter must supply at least one FLT_CONTEXT_REGISTRATION structure, according to the following rules: </p>
 
@@ -180,19 +180,19 @@ typedef struct _FLT_CONTEXT_REGISTRATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544811">FLT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel--flt-registration.md">FLT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551075">PFLT_CONTEXT_ALLOCATE_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-context-allocate-callback.md">PFLT_CONTEXT_ALLOCATE_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551078">PFLT_CONTEXT_CLEANUP_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-context-cleanup-callback.md">PFLT_CONTEXT_CLEANUP_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551082">PFLT_CONTEXT_FREE_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-context-free-callback.md">PFLT_CONTEXT_FREE_CALLBACK</a>
 </dt>
 </dl>
 <p> </p>

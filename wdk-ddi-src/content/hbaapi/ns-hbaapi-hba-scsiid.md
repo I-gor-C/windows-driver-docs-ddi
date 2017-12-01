@@ -102,7 +102,7 @@ typedef struct HBA_ScsiId {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556096">HBA_GetFCPStatistics</a>
+<a href="..\hbaapi\nf-hbaapi-hba-getfcpstatistics.md">HBA_GetFCPStatistics</a>
 </dt>
 </dl>
 <p> </p>

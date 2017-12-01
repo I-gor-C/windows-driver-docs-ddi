@@ -65,7 +65,7 @@ typedef struct _D3DDDIARG_CREATEEXTENSIONDEVICE {
 ### -field <b>pPrivate</b>
 
 <dd>
-<p>[in] A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562916">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to create the extension device. </p>
+<p>[in] A pointer to the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatedata.md">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to create the extension device. </p>
 </dd>
 
 ### -field <b>hExtension</b>
@@ -106,7 +106,7 @@ typedef struct _D3DDDIARG_CREATEEXTENSIONDEVICE {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createextensiondevice.md">CreateExtensionDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562916">DXVADDI_PRIVATEDATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatedata.md">DXVADDI_PRIVATEDATA</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a>

@@ -7,7 +7,7 @@ old-location: stream\ksfilterreleaseprocessingmutex.htm
 old-project: stream
 ms.assetid: 8ccf24a4-f087-4d61-8a9e-4bc05d7ec7bf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsFilterReleaseProcessingMutex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ void KsFilterReleaseProcessingMutex(
 ### -param <i>Filter</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure representing the AVStream filter for which to release the processing mutex.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure representing the AVStream filter for which to release the processing mutex.</p>
 </dd>
 </dl>
 
@@ -65,8 +65,6 @@ void KsFilterReleaseProcessingMutex(
 <p>None</p>
 
 ## -remarks
-<p>For more AVStream-specific information about mutexes, see <a href="NULL">Mutexes in AVStream</a> and <a href="NULL">Processing Mutex in AVStream</a>.</p>
-
 <p>For more AVStream-specific information about mutexes, see <a href="NULL">Mutexes in AVStream</a> and <a href="NULL">Processing Mutex in AVStream</a>.</p>
 
 ## -requirements
@@ -122,9 +120,9 @@ void KsFilterReleaseProcessingMutex(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562524">KsFilterAcquireProcessingMutex</a>
+<a href="..\ks\nf-ks-ksfilteracquireprocessingmutex.md">KsFilterAcquireProcessingMutex</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterReleaseProcessingMutex function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterReleaseProcessingMutex function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

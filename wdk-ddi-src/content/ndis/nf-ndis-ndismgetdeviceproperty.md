@@ -7,7 +7,7 @@ old-location: netvista\ndismgetdeviceproperty.htm
 old-project: netvista
 ms.assetid: caef96b6-1b94-475d-9f78-66ae6d6ac979
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMGetDeviceProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,9 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see 
-   NdisMGetDeviceProperty (NDIS
-   5.1).
+req.target-min-winverclnt: Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see    NdisMGetDeviceProperty (NDIS   5.1).
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -75,7 +73,7 @@ VOID NdisMGetDeviceProperty(
 
 <dd>
 <p>A pointer to a caller-allocated buffer. The buffer receives a pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the
+     <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the
      physical device for the miniport adapter. This pointer is optional.</p>
 </dd>
 
@@ -83,7 +81,7 @@ VOID NdisMGetDeviceProperty(
 
 <dd>
 <p>A pointer to a caller-allocated buffer. The buffer receives a pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure. 
+     <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure. 
      <b>DEVICE_OBJECT</b> represents the functional device object that NDIS creates for the physical device.
      This pointer is optional.</p>
 </dd>
@@ -92,7 +90,7 @@ VOID NdisMGetDeviceProperty(
 
 <dd>
 <p>A pointer to a caller-allocated buffer. The buffer receives a pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the next device object. This next device object is
+     <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure that represents the next device object. This next device object is
      preceded in the chain by the functional device object that belongs to the miniport driver. NDIS creates
      this functional device object for the physical device. For example, the next device object could be the
      object that is associated with a bus driver or HAL This pointer is optional.</p>
@@ -135,28 +133,7 @@ VOID NdisMGetDeviceProperty(
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff546847">Handling IRPs</a>.</p>
 
 <p>Pointers to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> for the physical, functional, and next device objects that 
-    <b>NdisMGetDeviceProperty</b> retrieves are simply handles that are opaque to the miniport driver.</p>
-
-<p>Miniport drivers can call 
-    <b>NdisMGetDeviceProperty</b> to retrieve pointers to "raw" or "translated" resources. Raw resources have
-    not been translated by HAL; translated resources have been. To locate more information about raw and
-    translated resources, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562374">Plug and Play</a>.</p>
-
-<p>Miniport drivers must retrieve specific information to set up their communications. Miniport drivers
-    for miniport instances that communicate through bus drivers use 
-    <b>NdisMGetDeviceProperty</b> to retrieve this information. For example, miniport driver instances that
-    attach to Universal Serial Bus (USB) or IEEE 1394 buses require miniport drivers that expose a standard
-    NDIS miniport driver interface at their upper edge, and use the class interface for the particular bus at
-    their lower edge. To use the USB or 1394 class interface, a miniport driver creates and submits I/O
-    Request Packets (IRPs). The miniport driver uses the physical and next-device objects that 
-    <b>NdisMGetDeviceProperty</b> retrieves to submit IRPs to the class interface for a particular bus. To
-    locate more information about creating and submitting IRPs to bus drivers, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff546847">Handling IRPs</a>.</p>
-
-<p>Pointers to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> for the physical, functional, and next device objects that 
+    <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> for the physical, functional, and next device objects that 
     <b>NdisMGetDeviceProperty</b> retrieves are simply handles that are opaque to the miniport driver.</p>
 
 <p>Miniport drivers can call 
@@ -220,7 +197,7 @@ VOID NdisMGetDeviceProperty(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>
+<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -228,7 +205,7 @@ VOID NdisMGetDeviceProperty(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
@@ -236,4 +213,4 @@ VOID NdisMGetDeviceProperty(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetDeviceProperty function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMGetDeviceProperty function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

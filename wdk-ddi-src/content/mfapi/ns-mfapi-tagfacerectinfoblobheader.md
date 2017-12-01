@@ -7,7 +7,7 @@ old-location: stream\facerectinfoblobheader.htm
 old-project: stream
 ms.assetid: BDDC33C2-CD2D-4F97-AAD1-DF69250F60B3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagFaceRectInfoBlobHeader, FaceRectInfoBlobHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ typedef struct tagFaceRectInfoBlobHeader {
 ### -field <b>Size</b>
 
 <dd>
-<p>Size of this header + all following <a href="https://msdn.microsoft.com/library/windows/hardware/dn927644">FaceRectInfo</a> structures.</p>
+<p>Size of this header + all following <a href="stream.facerectinfo">FaceRectInfo</a> structures.</p>
 </dd>
 
 ### -field <b>Count</b>

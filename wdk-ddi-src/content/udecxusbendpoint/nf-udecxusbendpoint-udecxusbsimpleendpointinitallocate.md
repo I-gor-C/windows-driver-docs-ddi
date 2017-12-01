@@ -58,7 +58,7 @@ PUDECXUSBENDPOINT_INIT UdecxUsbSimpleEndpointInitAllocate(
 ### -param <i>UdecxUsbDevice</i> [in]
 
 <dd>
-<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>.</p>
+<p>A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.</p>
 </dd>
 </dl>
 
@@ -66,14 +66,9 @@ PUDECXUSBENDPOINT_INIT UdecxUsbSimpleEndpointInitAllocate(
 <p>This method returns a pointer to an opaque <b>UDECXUSBENDPOINT_INIT</b> structure that contains the initialization parameters. The structure is allocated by the USB device emulation  class extension (UdeCx).</p>
 
 ## -remarks
-<p>The UDE client driver calls this method to allocate parameters for a simple endpoint that is created by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627984">UdecxUsbEndpointInitFree</a>.</p>
+<p>The UDE client driver calls this method to allocate parameters for a simple endpoint that is created by a subsequent call to <a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="buses.udecxusbendpointinitfree">UdecxUsbEndpointInitFree</a>.</p>
 
-<p>The only valid time to create simple endpoints is after creating a the UDE device object and before calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627975">UdecxUsbDevicePlugIn</a> on the device.
-</p>
-
-<p>The UDE client driver calls this method to allocate parameters for a simple endpoint that is created by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627984">UdecxUsbEndpointInitFree</a>.</p>
-
-<p>The only valid time to create simple endpoints is after creating a the UDE device object and before calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627975">UdecxUsbDevicePlugIn</a> on the device.
+<p>The only valid time to create simple endpoints is after creating a the UDE device object and before calling <a href="buses.udecxusbdeviceplugin">UdecxUsbDevicePlugIn</a> on the device.
 </p>
 
 ## -requirements
@@ -135,13 +130,13 @@ PUDECXUSBENDPOINT_INIT UdecxUsbSimpleEndpointInitAllocate(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a>
+<a href="buses.udecxusbendpointcreate">UdecxUsbEndpointCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

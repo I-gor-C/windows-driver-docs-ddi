@@ -114,7 +114,7 @@ typedef struct _DXGKARG_COLLECTDBGINFO {
 ### -field <b>pExtension</b>
 
 <dd>
-<p>[out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557550">DXGKARG_COLLECTDBGINFO_EXT</a> structure that is allocated by the operating system and that the driver optionally populates with debug extension information.</p>
+<p>[out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-collectdbginfo-ext.md">DXGKARG_COLLECTDBGINFO_EXT</a> structure that is allocated by the operating system and that the driver optionally populates with debug extension information.</p>
 </dd>
 </dl>
 
@@ -146,7 +146,7 @@ typedef struct _DXGKARG_COLLECTDBGINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557550">DXGKARG_COLLECTDBGINFO_EXT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-collectdbginfo-ext.md">DXGKARG_COLLECTDBGINFO_EXT</a>
 </dt>
 <dt>
 <a href="display.dxgkddicollectdbginfo">DxgkDdiCollectDbgInfo</a>

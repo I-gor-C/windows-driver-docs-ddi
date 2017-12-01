@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetRADIUSSharedSecret_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565815">SetRADIUSSharedSecret</a> method.</p>
+<p>The SetRADIUSSharedSecret_IN structure holds the input data for the <a href="storage.setradiussharedsecret">SetRADIUSSharedSecret</a> method.</p>
 
 
 ## -syntax
@@ -88,10 +88,10 @@ typedef struct _SetRADIUSSharedSecret_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565815">SetRADIUSSharedSecret</a>
+<a href="storage.setradiussharedsecret">SetRADIUSSharedSecret</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565837">SetRADIUSSharedSecret_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--setradiussharedsecret-out.md">SetRADIUSSharedSecret_OUT</a>
 </dt>
 </dl>
 <p> </p>

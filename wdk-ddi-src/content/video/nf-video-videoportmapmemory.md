@@ -145,28 +145,13 @@ VP_STATUS VideoPortMapMemory(
 <p><b>VideoPortMapMemory</b> runs in kernel mode within the same context as the user-mode thread that initiated the call.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a> and <b>VideoPortMapMemory</b> can both be called by the video miniport driver to map video memory into a virtual address space. If you call both of these functions to map the same physical addresses, or if you call one of the functions more than once to map the same physical addresses, you might have more than one virtual-address range that maps to the same physical-address range. In that case, you must set the VIDEO_MEMORY_SPACE_P6CACHE flag of the <i>InIoSpace</i> parameter to the same value in all of those calls.</p>
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a> and <b>VideoPortMapMemory</b> can both be called by the video miniport driver to map video memory into a virtual address space. If you call both of these functions to map the same physical addresses, or if you call one of the functions more than once to map the same physical addresses, you might have more than one virtual-address range that maps to the same physical-address range. In that case, you must set the VIDEO_MEMORY_SPACE_P6CACHE flag of the <i>InIoSpace</i> parameter to the same value in all of those calls.</p>
 
-<p>Every universal memory architecture (UMA) display device uses a frame buffer that is located in main memory rather than on a PCI bus. In this case, do not call <b>VideoPortMapMemory</b> to map the frame buffer. To map a UMA frame buffer into system space, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff554618">MmMapIoSpace</a>. To map a UMA frame buffer into the virtual address space of a user-mode process, perform the following steps:</p>
+<p>Every universal memory architecture (UMA) display device uses a frame buffer that is located in main memory rather than on a PCI bus. In this case, do not call <b>VideoPortMapMemory</b> to map the frame buffer. To map a UMA frame buffer into system space, call <a href="..\wdm\nf-wdm-mmmapiospace.md">MmMapIoSpace</a>. To map a UMA frame buffer into the virtual address space of a user-mode process, perform the following steps:</p>
 
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567029">ZwOpenSection</a> to get a handle to the operating system's physical-memory section object, which is named <b>\Device\PhysicalMemory</b>.</p>
+<p>Call <a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a> to get a handle to the operating system's physical-memory section object, which is named <b>\Device\PhysicalMemory</b>.</p>
 
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566481">ZwMapViewOfSection</a> to map a view of the frame buffer into the virtual address space of the current process.</p>
-
-<p>The following example shows how to map a UMA frame buffer into the virtual address space of the current process.</p>
-
-<p>Miniport drivers should use <b>VideoPortMapMemory</b> to manage video adapters that allow the video <a href="wdkgloss.f#wdkgloss.frame_buffer#wdkgloss.frame_buffer"><i>frame buffer</i></a> to be completely mapped at all times. That is, miniport drivers for adapters that are not restricted to using <a href="wdkgloss.b#wdkgloss.bank#wdkgloss.bank"><i>banks</i></a> to map a slice at a time can use the more efficient <b>VideoPortMapMemory</b>. </p>
-
-<p><b>VideoPortMapMemory</b> runs in kernel mode within the same context as the user-mode thread that initiated the call.</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a> and <b>VideoPortMapMemory</b> can both be called by the video miniport driver to map video memory into a virtual address space. If you call both of these functions to map the same physical addresses, or if you call one of the functions more than once to map the same physical addresses, you might have more than one virtual-address range that maps to the same physical-address range. In that case, you must set the VIDEO_MEMORY_SPACE_P6CACHE flag of the <i>InIoSpace</i> parameter to the same value in all of those calls.</p>
-
-<p>Every universal memory architecture (UMA) display device uses a frame buffer that is located in main memory rather than on a PCI bus. In this case, do not call <b>VideoPortMapMemory</b> to map the frame buffer. To map a UMA frame buffer into system space, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff554618">MmMapIoSpace</a>. To map a UMA frame buffer into the virtual address space of a user-mode process, perform the following steps:</p>
-
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567029">ZwOpenSection</a> to get a handle to the operating system's physical-memory section object, which is named <b>\Device\PhysicalMemory</b>.</p>
-
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566481">ZwMapViewOfSection</a> to map a view of the frame buffer into the virtual address space of the current process.</p>
+<p>Call <a href="..\wdm\nf-wdm-zwmapviewofsection.md">ZwMapViewOfSection</a> to map a view of the frame buffer into the virtual address space of the current process.</p>
 
 <p>The following example shows how to map a UMA frame buffer into the virtual address space of the current process.</p>
 
@@ -235,13 +220,13 @@ VP_STATUS VideoPortMapMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567812">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-map-video-memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570547">VIDEO_REQUEST_PACKET</a>
+<a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570376">VideoPortUnmapMemory</a>
+<a href="..\video\nf-video-videoportunmapmemory.md">VideoPortUnmapMemory</a>
 </dt>
 </dl>
 <p> </p>

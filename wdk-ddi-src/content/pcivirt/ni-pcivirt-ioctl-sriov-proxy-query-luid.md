@@ -115,43 +115,7 @@ identifier of the physical device.  This request is only required for SR-IOV dev
 
 <p>Before sending this request, the user mode application must obtain a handle to the PCI Express SR-IOV device by querying for GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
 
-<p>In this example, the PF driver generates a unique identifier by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff566415">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. </p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>This IOCTL request originates in the user mode and  is handled by the physical function (PF) driver in order to supply the local unique
-identifier of the physical device.  This request is only required for SR-IOV devices doing direct assignment. </p>
-
-<p>Before sending this request, the user mode application must obtain a handle to the PCI Express SR-IOV device by querying for GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>In this example, the PF driver generates a unique identifier by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff566415">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. </p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>This IOCTL request originates in the user mode and  is handled by the physical function (PF) driver in order to supply the local unique
-identifier of the physical device.  This request is only required for SR-IOV devices doing direct assignment. </p>
-
-<p>Before sending this request, the user mode application must obtain a handle to the PCI Express SR-IOV device by querying for GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>In this example, the PF driver generates a unique identifier by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff566415">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. </p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>This IOCTL request originates in the user mode and  is handled by the physical function (PF) driver in order to supply the local unique
-identifier of the physical device.  This request is only required for SR-IOV devices doing direct assignment. </p>
-
-<p>Before sending this request, the user mode application must obtain a handle to the PCI Express SR-IOV device by querying for GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>In this example, the PF driver generates a unique identifier by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff566415">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. </p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>This IOCTL request originates in the user mode and  is handled by the physical function (PF) driver in order to supply the local unique
-identifier of the physical device.  This request is only required for SR-IOV devices doing direct assignment. </p>
-
-<p>Before sending this request, the user mode application must obtain a handle to the PCI Express SR-IOV device by querying for GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>In this example, the PF driver generates a unique identifier by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff566415">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. </p>
+<p>In this example, the PF driver generates a unique identifier by calling <a href="..\ntddk\nf-ntddk-zwallocatelocallyuniqueid.md">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. </p>
 
 ## -requirements
 <table>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfiotargetstatemanagement_getstate.htm
 old-project: wdf
 ms.assetid: f915294f-457f-4913-b4b0-e94e1806a06d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFIoTargetStateManagement, GetState, IWDFIoTargetStateManagement::GetState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,43 +55,13 @@ WDF_IO_TARGET_STATE  GetState();
 
 
 ## -returns
-<p><b>GetState</b> returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552390">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.</p>
+<p><b>GetState</b> returns a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-io-target-state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.</p>
 
-<p><b>GetState</b> returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552390">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.</p>
+<p><b>GetState</b> returns a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-io-target-state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.</p>
 
-<p><b>GetState</b> returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552390">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.</p>
+<p><b>GetState</b> returns a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-io-target-state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.</p>
 
 ## -remarks
-<p>For more information about <b>GetState</b>, see <a href="wdf.controlling_a_general_i_o_target_s_state_in_umdf">Controlling a General I/O Target's State</a>. 
-
-</p>
-
-<p>For more information about I/O targets, see <a href="wdf.using_i_o_targets_in_umdf">Using I/O Targets</a>.
-
-</p>
-
-<p>The following code example determines whether a local I/O target is stopped.</p>
-
-<p>For more information about <b>GetState</b>, see <a href="wdf.controlling_a_general_i_o_target_s_state_in_umdf">Controlling a General I/O Target's State</a>. 
-
-</p>
-
-<p>For more information about I/O targets, see <a href="wdf.using_i_o_targets_in_umdf">Using I/O Targets</a>.
-
-</p>
-
-<p>The following code example determines whether a local I/O target is stopped.</p>
-
-<p>For more information about <b>GetState</b>, see <a href="wdf.controlling_a_general_i_o_target_s_state_in_umdf">Controlling a General I/O Target's State</a>. 
-
-</p>
-
-<p>For more information about I/O targets, see <a href="wdf.using_i_o_targets_in_umdf">Using I/O Targets</a>.
-
-</p>
-
-<p>The following code example determines whether a local I/O target is stopped.</p>
-
 <p>For more information about <b>GetState</b>, see <a href="wdf.controlling_a_general_i_o_target_s_state_in_umdf">Controlling a General I/O Target's State</a>. 
 
 </p>
@@ -155,12 +125,12 @@ WDF_IO_TARGET_STATE  GetState();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559198">IWDFIoTargetStateManagement</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560265">IWDFRemoteTarget::GetState</a>
+<a href="wdf.iwdfremotetarget_getstate">IWDFRemoteTarget::GetState</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoTargetStateManagement::GetState method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoTargetStateManagement::GetState method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

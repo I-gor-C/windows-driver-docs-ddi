@@ -7,7 +7,7 @@ old-location: wdf\iwdffilehandletargetfactory.htm
 old-project: wdf
 ms.assetid: b4754176-53a2-4ee4-a441-5d9a4a4a17e2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558930">IWDFFileHandleTargetFactory::CreateFileHandleTarget</a>
+<a href="wdf.iwdffilehandletargetfactory_createfilehandletarget">IWDFFileHandleTargetFactory::CreateFileHandleTarget</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdffilehandletargetfactory_createfilehandletarget">CreateFileHandleTarget</a> method creates a file-handle-based I/O target object.</p>
@@ -72,8 +72,6 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>Drivers obtain the <b>IWDFFileHandleTargetFactory</b> interface by calling <b>IWDFDevice::QueryInterface</b>.</p>
-
 <p>Drivers obtain the <b>IWDFFileHandleTargetFactory</b> interface by calling <b>IWDFDevice::QueryInterface</b>.</p>
 
 ## -requirements

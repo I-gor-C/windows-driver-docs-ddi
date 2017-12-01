@@ -228,10 +228,10 @@ typedef struct _D3DDDI_BLTFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542884">D3DDDIARG_BLT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-blt.md">D3DDDIARG_BLT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-flush.md">Flush</a>
 </dt>
 </dl>
 <p> </p>

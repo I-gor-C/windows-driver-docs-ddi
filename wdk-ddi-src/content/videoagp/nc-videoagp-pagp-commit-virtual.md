@@ -106,22 +106,6 @@ PVOID APIENTRY AgpCommitVirtual(
 
 <p>When a miniport driver calls <b>AgpCommitVirtual</b>, a portion of the virtual address range identified by <b>VirtualReserveContext</b> is mapped to physical addresses. The mapped portion begins <i>Offset</i> pages into the virtual address range that is identified by <b>VirtualReserveContext</b>.</p>
 
-<p>Before calling <b>AgpCommitVirtual</b> to commit a range of virtual pages, you must do the following:</p>
-
-<p>Call <a href="..\videoagp\nc-videoagp-pagp-reserve-physical.md">AgpReservePhysical</a> to reserve a range of physical addresses for the GPU to use.</p>
-
-<p>Call <a href="..\videoagp\nc-videoagp-pagp-commit-physical.md">AgpCommitPhysical</a> to map a portion (or all) of the reserved physical addresses to locked pages in system memory.</p>
-
-<p>Call <a href="..\videoagp\nc-videoagp-pagp-reserve-virtual.md">AgpReserveVirtual</a> to reserve a range of virtual addresses that is associated with the range of physical addresses reserved by <a href="..\videoagp\nc-videoagp-pagp-reserve-physical.md">AgpReservePhysical</a>.</p>
-
-<p>After these items are completed, you can call <b>AgpCommitVirtual</b> to map a portion of the reserved virtual pages to pages that have already been mapped and locked by <a href="..\videoagp\nc-videoagp-pagp-commit-physical.md">AgpCommitPhysical</a>. You must not attempt to map a page of virtual addresses if the corresponding page of physical addresses has not already been mapped.</p>
-
-<p>Video miniport drivers that run on Microsoft Windows 2000 should always commit a virtual range whose size is a multiple of 64 kilobytes. If you call <b>AgpCommitVirtual</b> to commit a virtual range that is not a multiple of 64 kilobytes, it can return an invalid virtual address.</p>
-
-<p>On Windows XP and later, <b>AgpCommitVirtual</b> automatically expands the committed range so that it is a multiple of 64 kilobytes.</p>
-
-<p>When a miniport driver calls <b>AgpCommitVirtual</b>, a portion of the virtual address range identified by <b>VirtualReserveContext</b> is mapped to physical addresses. The mapped portion begins <i>Offset</i> pages into the virtual address range that is identified by <b>VirtualReserveContext</b>.</p>
-
 ## -requirements
 <table>
 <tr>

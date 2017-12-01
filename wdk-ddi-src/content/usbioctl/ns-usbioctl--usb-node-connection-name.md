@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USB_NODE_CONNECTION_NAME</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537323">IOCTL_USB_GET_NODE_CONNECTION_NAME</a> I/O control request to retrieve the symbolic link of the downstream hub that is attached to the port.</p>
+<p>The <b>USB_NODE_CONNECTION_NAME</b> structure is used with the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-name.md">IOCTL_USB_GET_NODE_CONNECTION_NAME</a> I/O control request to retrieve the symbolic link of the downstream hub that is attached to the port.</p>
 
 
 ## -syntax
@@ -96,10 +96,10 @@ typedef struct _USB_NODE_CONNECTION_NAME {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537323">IOCTL_USB_GET_NODE_CONNECTION_NAME</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-name.md">IOCTL_USB_GET_NODE_CONNECTION_NAME</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

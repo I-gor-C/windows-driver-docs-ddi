@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The purpose of the <b>REQUEST_REMOTE_WAKE_NOTIFICATION</b> structure is to specify input parameters for the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh450856">IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION</a> I/O control request. </p>
+<p>The purpose of the <b>REQUEST_REMOTE_WAKE_NOTIFICATION</b> structure is to specify input parameters for the  <a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-request-remote-wake-notification.md">IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION</a> I/O control request. </p>
 
 
 ## -syntax
@@ -73,7 +73,7 @@ typedef struct _REQUEST_REMOTE_WAKE_NOTIFICATION {
 ### -field <b>UsbdFunctionHandle</b>
 
 <dd>
-<p>A function handle that is associated with the function that sends the resume signal. The handle was obtained in a previous <a href="https://msdn.microsoft.com/library/windows/hardware/hh450854">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> request.</p>
+<p>A function handle that is associated with the function that sends the resume signal. The handle was obtained in a previous <a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-register-composite-device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> request.</p>
 </dd>
 
 ### -field <b>Interface</b>
@@ -111,10 +111,10 @@ typedef struct _REQUEST_REMOTE_WAKE_NOTIFICATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450856">IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-request-remote-wake-notification.md">IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450854">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-register-composite-device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
 </dt>
 <dt>
 <a href="buses.how-to__implement_remote_and_function_wake_support">How to Implement Function Suspend in a Composite Driver</a>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The FINVOCATION structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554274">IPrintOemUni::SendFontCmd</a> method. The structure is defined in printoem.h.</p>
+<p>The FINVOCATION structure is used as input to the <a href="print.iprintoemuni_sendfontcmd">IPrintOemUni::SendFontCmd</a> method. The structure is defined in printoem.h.</p>
 
 
 ## -syntax
@@ -89,7 +89,7 @@ typedef struct _FINVOCATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554274">IPrintOemUni::SendFontCmd</a>
+<a href="print.iprintoemuni_sendfontcmd">IPrintOemUni::SendFontCmd</a>
 </dt>
 </dl>
 <p> </p>

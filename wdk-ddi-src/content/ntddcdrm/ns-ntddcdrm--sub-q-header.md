@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SUB_Q_HEADER structure contains audio status information and the length of the Q subchannel data being returned. This structure is used in conjunction with <a href="https://msdn.microsoft.com/library/windows/hardware/ff567595">SUB_Q_CHANNEL_DATA</a>.</p>
+<p>The SUB_Q_HEADER structure contains audio status information and the length of the Q subchannel data being returned. This structure is used in conjunction with <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-channel-data.md">SUB_Q_CHANNEL_DATA</a>.</p>
 
 
 ## -syntax
@@ -149,13 +149,13 @@ typedef struct _SUB_Q_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559363">IOCTL_CDROM_READ_Q_CHANNEL</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-q-channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551371">CDROM_SUB_Q_DATA_FORMAT</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-sub-q-data-format.md">CDROM_SUB_Q_DATA_FORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567595">SUB_Q_CHANNEL_DATA</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--sub-q-channel-data.md">SUB_Q_CHANNEL_DATA</a>
 </dt>
 </dl>
 <p> </p>

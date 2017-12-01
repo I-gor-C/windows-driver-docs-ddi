@@ -58,13 +58,13 @@ typedef struct _FILTER_MESSAGE_HEADER {
 ### -field <b>ReplyLength</b>
 
 <dd>
-<p>On output from <a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>, this field receives the length, in bytes, of the expected reply, including the FILTER_REPLY_HEADER header. Set to zero if no reply is expected. </p>
+<p>On output from <a href="ifsk.filtergetmessage">FilterGetMessage</a>, this field receives the length, in bytes, of the expected reply, including the FILTER_REPLY_HEADER header. Set to zero if no reply is expected. </p>
 </dd>
 
 ### -field <b>MessageId</b>
 
 <dd>
-<p>On output from <a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>, this field receives the unique identifier (ID) for the message sent by the kernel-mode driver. If the application replies to the message, it must set this ID in the <b>MessageId</b> field of the FILTER_REPLY_HEADER header in the reply. </p>
+<p>On output from <a href="ifsk.filtergetmessage">FilterGetMessage</a>, this field receives the unique identifier (ID) for the message sent by the kernel-mode driver. If the application replies to the message, it must set this ID in the <b>MessageId</b> field of the FILTER_REPLY_HEADER header in the reply. </p>
 </dd>
 </dl>
 
@@ -88,10 +88,10 @@ typedef struct _FILTER_MESSAGE_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541628">FILTER_REPLY_HEADER</a>
+<a href="..\fltuserstructures\ns-fltuserstructures--filter-reply-header.md">FILTER_REPLY_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>
+<a href="ifsk.filtergetmessage">FilterGetMessage</a>
 </dt>
 </dl>
 <p> </p>

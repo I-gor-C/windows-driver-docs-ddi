@@ -7,7 +7,7 @@ old-location: stream\kscamera_perframesetting_cap_item_header.htm
 old-project: stream
 ms.assetid: 6E68CACB-4E0E-41E4-BAB6-0B7ECEFA92F6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, *PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct {
 ### -field <b>Type</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn925212">KSCAMERA_PERFRAMESETTING_ITEM_TYPE</a>.</p>
+<p>The <a href="..\ksmedia\ne-ksmedia-kscamera-perframesetting-item-type.md">KSCAMERA_PERFRAMESETTING_ITEM_TYPE</a>.</p>
 </dd>
 
 ### -field <b>Flags</b>

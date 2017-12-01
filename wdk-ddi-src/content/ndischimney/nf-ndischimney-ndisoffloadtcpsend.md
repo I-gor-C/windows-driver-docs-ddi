@@ -7,7 +7,7 @@ old-location: netvista\ndisoffloadtcpsend.htm
 old-project: netvista
 ms.assetid: a2743bbb-a6fa-4b7e-8087-132e221a5624
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisOffloadTcpSend
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NDIS_STATUS NdisOffloadTcpSend(
 
 <dd>
 <p>A handle to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566705">NDIS_OFFLOAD_HANDLE</a> structure in the
+     <a href="..\ndischimney\ns-ndischimney--ndis-offload-handle.md">NDIS_OFFLOAD_HANDLE</a> structure in the
      caller's context for the offloaded TCP connection. For more information, see 
      <a href="netvista.referencing_offloaded_state_through_an_intermediate_driver">
      Referencing Offloaded State Through an Intermediate Driver</a>.</p>
@@ -71,10 +71,10 @@ NDIS_STATUS NdisOffloadTcpSend(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. This structure
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure. This structure
      can be a stand-alone structure or the first structure in a linked list of NET_BUFFER_LIST structures.
      Each NET_BUFFER_LIST structure in the list describes a list of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures. Each NET_BUFFER structure
+     <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures. Each NET_BUFFER structure
      in the list points to a chain of memory descriptor lists (MDLs). The MDLs contain the data to be
      transmitted. The NET_BUFFER_LIST and associated structures are locked so that they remain resident in
      physical memory. However, they are not mapped into system memory.</p>
@@ -87,30 +87,6 @@ NDIS_STATUS NdisOffloadTcpSend(
      completed asynchronously.</p>
 
 ## -remarks
-<p>In response to a call to its 
-    <a href="..\ndischimney\nc-ndischimney-w-tcp-offload-send-handler.md">MiniportTcpOffloadSend</a> function,
-    an intermediate driver calls the 
-    <b>NdisOffloadTcpSend</b> function to propagate the send operation to the underlying intermediate driver
-    or offload target. For more information, see 
-    <a href="NULL">Propagating I/O Operations</a>.</p>
-
-<p>To the 
-    <b>NdisOffloadTcpSend</b> function, the intermediate driver passes the following:</p>
-
-<p>An 
-      <i>NdisOffloadHandle</i> that references the NDIS_OFFLOAD_HANDLE structure stored in the intermediate
-      driver's context for the offloaded TCP connection. For more information, see 
-      <a href="netvista.referencing_offloaded_state_through_an_intermediate_driver">
-      Referencing Offloaded State Through an Intermediate Driver</a>.</p>
-
-<p>The same PNET_BUFFER_LIST pointer that NDIS passed to the intermediate driver's 
-      <i>MiniportTcpOffloadSend</i> function.</p>
-
-<p>When the underlying driver or offload target subsequently completes the send operation by calling the 
-    <b>NdisTcpOffloadSendComplete</b> function, NDIS calls the intermediate driver's 
-    <i>ProtocolOffloadSendComplete</i> function. The intermediate driver then calls the 
-    <b>NdisTcpOffloadSendComplete</b> function to propagate the completion of the send operation.</p>
-
 <p>In response to a call to its 
     <a href="..\ndischimney\nc-ndischimney-w-tcp-offload-send-handler.md">MiniportTcpOffloadSend</a> function,
     an intermediate driver calls the 
@@ -175,16 +151,16 @@ NDIS_STATUS NdisOffloadTcpSend(
 <a href="..\ndischimney\nc-ndischimney-w-tcp-offload-send-handler.md">MiniportTcpOffloadSend</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566705">NDIS_OFFLOAD_HANDLE</a>
+<a href="..\ndischimney\ns-ndischimney--ndis-offload-handle.md">NDIS_OFFLOAD_HANDLE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564609">NdisTcpOffloadSendComplete</a>
+<a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-send-complete.md">NdisTcpOffloadSendComplete</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-tcp-offload-send-complete-handler.md">
@@ -193,4 +169,4 @@ NDIS_STATUS NdisOffloadTcpSend(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOffloadTcpSend function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOffloadTcpSend function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\ndisgetversion.htm
 old-project: netvista
 ms.assetid: d3e2c799-f789-499f-9948-f41d7576296e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisGetVersion (NDIS 5.1)) in
-   Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisGetVersion (NDIS 5.1)) in
-   Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetVersion (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetVersion (NDIS 5.1)) in   Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -68,15 +64,6 @@ UINT NdisGetVersion(void);
      unsigned integer respectively.</p>
 
 ## -remarks
-<p>System support for 
-    <b>NdisGetVersion</b> is available in Windows XP and later versions.</p>
-
-<p>System support for 
-    <b>NdisGetVersion</b> is available in Windows XP and later versions.</p>
-
-<p>System support for 
-    <b>NdisGetVersion</b> is available in Windows XP and later versions.</p>
-
 <p>System support for 
     <b>NdisGetVersion</b> is available in Windows XP and later versions.</p>
 
@@ -137,7 +124,7 @@ UINT NdisGetVersion(void);
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>

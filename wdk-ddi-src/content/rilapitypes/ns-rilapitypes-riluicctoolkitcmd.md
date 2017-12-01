@@ -7,7 +7,7 @@ old-location: netvista\riluicctoolkitcmd_2.htm
 old-project: netvista
 ms.assetid: d5a50ec7-6b25-4854-9dca-dcd868816735
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCTOOLKITCMD, RILUICCTOOLKITCMD
 ms.prod: windows-hardware
 ms.technology: windows-devices

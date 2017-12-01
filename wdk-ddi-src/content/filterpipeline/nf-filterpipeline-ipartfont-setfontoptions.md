@@ -57,7 +57,7 @@ HRESULT SetFontOptions(
 ### -param <i>options</i> [in]
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff548775">ExpsFontOptions</a>-typed value that describes the options for the font.</p>
+<p>An <a href="print.expsfontoptions">ExpsFontOptions</a>-typed value that describes the options for the font.</p>
 </dd>
 </dl>
 

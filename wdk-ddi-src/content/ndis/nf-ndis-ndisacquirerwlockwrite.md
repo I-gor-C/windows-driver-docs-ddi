@@ -7,7 +7,7 @@ old-location: netvista\ndisacquirerwlockwrite.htm
 old-project: netvista
 ms.assetid: 124302d7-0776-4025-b71f-ce6300f97f49
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisAcquireRWLockWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ VOID NdisAcquireRWLockWrite(
 
 <dd>
 <p>A pointer to an opaque 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a> variable that represents a
+     <a href="..\ndis\ns-ndis--ndis-rw-lock-ex.md">NDIS_RW_LOCK_EX</a> variable that represents a
      lock. The caller can use this lock to gain write or read access to resources that are shared between
      non-ISR driver threads.</p>
 </dd>
@@ -71,7 +71,7 @@ VOID NdisAcquireRWLockWrite(
 
 <dd>
 <p>A pointer to an opaque 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff557070">LOCK_STATE_EX</a> variable that tracks the state
+     <a href="..\ndis\ns-ndis--lock-state-ex.md">LOCK_STATE_EX</a> variable that tracks the state
      of the lock. This variable exists in the interval between the times that the caller obtains and releases
      the lock. The caller must use a different variable of type <b>LOCK_STATE_EX</b> for each attempt that it makes to
      obtain the lock from the same non-ISR driver thread.</p>
@@ -84,7 +84,7 @@ VOID NdisAcquireRWLockWrite(
      caller's current IRQL is <b>DISPATCH_LEVEL</b>. Otherwise, set this parameter to zero. For more information
      about dispatch IRQL tracking, see 
      <a href="NULL">Dispatch IRQL Tracking</a>.</p>
-<div class="alert"><b>Note</b>  If the caller knows the current IRQL is <b>DISPATCH_LEVEL</b>, set this parameter to <b>NDIS_RWL_AT_DISPATCH_LEVEL</b>.  This flag makes the lock even more efficient by causing it to omit a check for the current IRQL.  If the current IRQL is unknown, do not test the current IRQL with <a href="https://msdn.microsoft.com/library/windows/hardware/ff552054">KeGetCurrentIrql</a> solely to determine whether to set this flag, as it is more efficient to allow the <b>NdisAcquireRWLockWrite</b> function to test the IRQL itself.</div>
+<div class="alert"><b>Note</b>  If the caller knows the current IRQL is <b>DISPATCH_LEVEL</b>, set this parameter to <b>NDIS_RWL_AT_DISPATCH_LEVEL</b>.  This flag makes the lock even more efficient by causing it to omit a check for the current IRQL.  If the current IRQL is unknown, do not test the current IRQL with <a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a> solely to determine whether to set this flag, as it is more efficient to allow the <b>NdisAcquireRWLockWrite</b> function to test the IRQL itself.</div>
 <div> </div>
 </dd>
 </dl>
@@ -97,65 +97,24 @@ VOID NdisAcquireRWLockWrite(
     <b>NdisAcquireRWLockWrite</b> function to modify resources that are shared between driver threads.</p>
 
 <p>The driver must allocate a variable of type 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a> with the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561615">NdisAllocateRWLock</a> function before the
+    <a href="..\ndis\ns-ndis--ndis-rw-lock-ex.md">NDIS_RW_LOCK_EX</a> with the 
+    <a href="..\ndis\nf-ndis-ndisallocaterwlock.md">NdisAllocateRWLock</a> function before the
     driver calls the 
     <b>NdisAcquireRWLockWrite</b> function. The driver must provide a handle to 
     <b>NdisAllocateRWLock</b> for the resident storage for the locks it uses.</p>
 
 <p>After the driver calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561615">NdisAllocateRWLock</a>, it can call 
+    <a href="..\ndis\nf-ndis-ndisallocaterwlock.md">NdisAllocateRWLock</a>, it can call 
     <b>NdisAcquireRWLockWrite</b> or 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff560697">NdisAcquireRWLockRead</a> to obtain
+    <a href="..\ndis\nf-ndis-ndisacquirerwlockread.md">NdisAcquireRWLockRead</a> to obtain
     either write or read access to the resource. Only one non-ISR driver thread at a time can obtain write
     access to the resource. When one non-ISR thread has write access, all read and write accesses by other
     non-ISR threads must wait until the write-access holder releases the lock. However, if a non-ISR thread
     has read access, other non-ISR threads can concurrently obtain read access.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a> lock does not support promotion from read to write.  Once a processor has acquired an <b>NDIS_RW_LOCK_EX</b> for read access (by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff560697">NdisAcquireRWLockRead</a>), the same processor must not attempt to acquire write access (by calling <b>NdisAcquireRWLockWrite</b>) until the previous read access is released.</p>
+<p>The <a href="..\ndis\ns-ndis--ndis-rw-lock-ex.md">NDIS_RW_LOCK_EX</a> lock does not support promotion from read to write.  Once a processor has acquired an <b>NDIS_RW_LOCK_EX</b> for read access (by calling <a href="..\ndis\nf-ndis-ndisacquirerwlockread.md">NdisAcquireRWLockRead</a>), the same processor must not attempt to acquire write access (by calling <b>NdisAcquireRWLockWrite</b>) until the previous read access is released.</p>
 
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a> write lock  can be acquired recursively on the same processor.  For each call to <b>NdisAcquireRWLockWrite</b>, there must be a corresponding call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564523">NdisReleaseRWLock</a>.  The lock is only released after the last call to <b>NdisReleaseRWLock</b>.</p>
-
-<p>A driver thread should never hold a write lock for more than a few microseconds. Holding a write lock
-    for a prolonged period of time degrades both operating system and driver performance.</p>
-
-<p>The driver cannot use a lock to protect resources from read or write access that its other functions
-    share with the 
-    <a href="..\ndis\nc-ndis-miniport-isr.md">MiniportInterrupt</a> or 
-    <a href="..\ndis\nc-ndis-miniport-disable-interrupt.md">
-    MiniportDisableInterruptEx</a> functions, or both. Instead, the driver must call 
-    <a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
-    NdisMSynchronizeWithInterruptEx</a> so that its 
-    <a href="..\ndis\nc-ndis-miniport-synchronize-interrupt.md">
-    MiniportSynchronizeInterrupt</a> function accesses such shared resources at the same DIRQL that its 
-    <i>MiniportInterrupt</i> or 
-    <i>
-    MiniportDisableInterruptEx</i> functions, or both, do.</p>
-
-<p><b>NdisAcquireRWLockWrite</b> raises the IRQL to <b>DISPATCH_LEVEL</b> by obtaining a spin lock.</p>
-
-<p>NDIS drivers call the 
-    <b>NdisAcquireRWLockWrite</b> function to modify resources that are shared between driver threads.</p>
-
-<p>The driver must allocate a variable of type 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a> with the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561615">NdisAllocateRWLock</a> function before the
-    driver calls the 
-    <b>NdisAcquireRWLockWrite</b> function. The driver must provide a handle to 
-    <b>NdisAllocateRWLock</b> for the resident storage for the locks it uses.</p>
-
-<p>After the driver calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561615">NdisAllocateRWLock</a>, it can call 
-    <b>NdisAcquireRWLockWrite</b> or 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff560697">NdisAcquireRWLockRead</a> to obtain
-    either write or read access to the resource. Only one non-ISR driver thread at a time can obtain write
-    access to the resource. When one non-ISR thread has write access, all read and write accesses by other
-    non-ISR threads must wait until the write-access holder releases the lock. However, if a non-ISR thread
-    has read access, other non-ISR threads can concurrently obtain read access.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a> lock does not support promotion from read to write.  Once a processor has acquired an <b>NDIS_RW_LOCK_EX</b> for read access (by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff560697">NdisAcquireRWLockRead</a>), the same processor must not attempt to acquire write access (by calling <b>NdisAcquireRWLockWrite</b>) until the previous read access is released.</p>
-
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a> write lock  can be acquired recursively on the same processor.  For each call to <b>NdisAcquireRWLockWrite</b>, there must be a corresponding call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564523">NdisReleaseRWLock</a>.  The lock is only released after the last call to <b>NdisReleaseRWLock</b>.</p>
+<p>An <a href="..\ndis\ns-ndis--ndis-rw-lock-ex.md">NDIS_RW_LOCK_EX</a> write lock  can be acquired recursively on the same processor.  For each call to <b>NdisAcquireRWLockWrite</b>, there must be a corresponding call to <a href="..\ndis\nf-ndis-ndisreleaserwlock.md">NdisReleaseRWLock</a>.  The lock is only released after the last call to <b>NdisReleaseRWLock</b>.</p>
 
 <p>A driver thread should never hold a write lock for more than a few microseconds. Holding a write lock
     for a prolonged period of time degrades both operating system and driver performance.</p>
@@ -228,7 +187,7 @@ VOID NdisAcquireRWLockWrite(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557070">LOCK_STATE_EX</a>
+<a href="..\ndis\ns-ndis--lock-state-ex.md">LOCK_STATE_EX</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport-disable-interrupt.md">MiniportDisableInterruptEx</a>
@@ -241,22 +200,22 @@ VOID NdisAcquireRWLockWrite(
    MiniportSynchronizeInterrupt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a>
+<a href="..\ndis\ns-ndis--ndis-rw-lock-ex.md">NDIS_RW_LOCK_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560697">NdisAcquireRWLockRead</a>
+<a href="..\ndis\nf-ndis-ndisacquirerwlockread.md">NdisAcquireRWLockRead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561615">NdisAllocateRWLock</a>
+<a href="..\ndis\nf-ndis-ndisallocaterwlock.md">NdisAllocateRWLock</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
    NdisMSynchronizeWithInterruptEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564523">NdisReleaseRWLock</a>
+<a href="..\ndis\nf-ndis-ndisreleaserwlock.md">NdisReleaseRWLock</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAcquireRWLockWrite function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAcquireRWLockWrite function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

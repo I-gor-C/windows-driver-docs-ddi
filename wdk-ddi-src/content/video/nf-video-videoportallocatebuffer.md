@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>VideoPortAllocateBuffer</b> function is <b>obsolete</b> in Windows 2000 and later. In its place, video miniport drivers should instead use <a href="https://msdn.microsoft.com/library/windows/hardware/ff570180">VideoPortAllocatePool</a>. </p>
+<p>The <b>VideoPortAllocateBuffer</b> function is <b>obsolete</b> in Windows 2000 and later. In its place, video miniport drivers should instead use <a href="..\video\nf-video-videoportallocatepool.md">VideoPortAllocatePool</a>. </p>
 <p><b>VideoPortAllocateBuffer</b> allocates a buffer of paged pool memory.</p>
 
 
@@ -81,8 +81,6 @@ VP_STATUS VideoPortAllocateBuffer(
 <p><b>VideoPortAllocateBuffer</b> returns NO_ERROR when it successfully completes the allocation request, or ERROR_NOT_ENOUGH_MEMORY if it is unable to allocate a buffer of <i>Size</i> bytes. A return value of ERROR_INSUFFICIENT_BUFFER indicates that a miniport driver has exceeded its maximum allowable allocation of memory.</p>
 
 ## -remarks
-<p>A miniport driver can use the return value of this function to determine whether the buffer allocation succeeded.</p>
-
 <p>A miniport driver can use the return value of this function to determine whether the buffer allocation succeeded.</p>
 
 ## -requirements
@@ -148,7 +146,7 @@ VP_STATUS VideoPortAllocateBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570354">VideoPortReleaseBuffer</a>
+<a href="..\video\nf-video-videoportreleasebuffer.md">VideoPortReleaseBuffer</a>
 </dt>
 </dl>
 <p> </p>

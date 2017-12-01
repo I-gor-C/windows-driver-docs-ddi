@@ -57,7 +57,7 @@ NTSTATUS D3DKMTGetContextSchedulingPriority(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548027">D3DKMT_GETCONTEXTSCHEDULINGPRIORITY</a> structure that describes parameters for retrieving the scheduling priority for a device context.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getcontextschedulingpriority.md">D3DKMT_GETCONTEXTSCHEDULINGPRIORITY</a> structure that describes parameters for retrieving the scheduling priority for a device context.</p>
 </dd>
 </dl>
 
@@ -130,7 +130,7 @@ NTSTATUS D3DKMTGetContextSchedulingPriority(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548027">D3DKMT_GETCONTEXTSCHEDULINGPRIORITY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getcontextschedulingpriority.md">D3DKMT_GETCONTEXTSCHEDULINGPRIORITY</a>
 </dt>
 </dl>
 <p> </p>

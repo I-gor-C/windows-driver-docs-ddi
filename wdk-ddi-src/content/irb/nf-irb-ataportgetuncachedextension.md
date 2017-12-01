@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -87,15 +86,7 @@ PVOID AtaPortGetUnCachedExtension(
 
 <p>HBA hardware can safely access an IRB extension.</p>
 
-<p>The miniport driver must not call <b>AtaPortGetUncachedExtension</b> from any routine other than its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a> routine, and only when it is processing a control action of <b>StartChannel</b>. Calls of <b>AtaPortGetUncachedExtension</b> from other miniport driver routines result in incorrect operation or even system failure. The port driver automatically frees the uncached extension after it invokes <b>IdeHwControl</b> with the <b>StopChannel</b> control action.</p>
-
-<p>The miniport driver can use IRB extensions as storage for driver-determined, request-specific information, such as data that is necessary to process a particular request.</p>
-
-<p>The port driver does not initialize IRB extensions, but sets a pointer to an extension in each IRB that it sends to the miniport driver.</p>
-
-<p>HBA hardware can safely access an IRB extension.</p>
-
-<p>The miniport driver must not call <b>AtaPortGetUncachedExtension</b> from any routine other than its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a> routine, and only when it is processing a control action of <b>StartChannel</b>. Calls of <b>AtaPortGetUncachedExtension</b> from other miniport driver routines result in incorrect operation or even system failure. The port driver automatically frees the uncached extension after it invokes <b>IdeHwControl</b> with the <b>StopChannel</b> control action.</p>
+<p>The miniport driver must not call <b>AtaPortGetUncachedExtension</b> from any routine other than its <a href="storage.idehwcontrol">IdeHwControl</a> routine, and only when it is processing a control action of <b>StartChannel</b>. Calls of <b>AtaPortGetUncachedExtension</b> from other miniport driver routines result in incorrect operation or even system failure. The port driver automatically frees the uncached extension after it invokes <b>IdeHwControl</b> with the <b>StopChannel</b> control action.</p>
 
 ## -requirements
 <table>
@@ -135,7 +126,7 @@ PVOID AtaPortGetUnCachedExtension(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
+<a href="storage.idehwcontrol">IdeHwControl</a>
 </dt>
 </dl>
 <p> </p>

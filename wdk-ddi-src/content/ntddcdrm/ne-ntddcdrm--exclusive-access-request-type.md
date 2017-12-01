@@ -76,11 +76,7 @@ typedef enum _EXCLUSIVE_ACCESS_REQUEST_TYPE {
 </dl>
 
 ## -remarks
-<p>The EXCLUSIVE_ACCESS_REQUEST_TYPE enumeration is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559327">IOCTL_CDROM_EXCLUSIVE_ACCESS</a> request to query the access state of a CD-ROM device or to lock or unlock the device for exclusive access.</p>
-
-<p>The EXCLUSIVE_ACCESS_REQUEST_TYPE enumeration is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559327">IOCTL_CDROM_EXCLUSIVE_ACCESS</a> request to query the access state of a CD-ROM device or to lock or unlock the device for exclusive access.</p>
-
-<p>The EXCLUSIVE_ACCESS_REQUEST_TYPE enumeration is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559327">IOCTL_CDROM_EXCLUSIVE_ACCESS</a> request to query the access state of a CD-ROM device or to lock or unlock the device for exclusive access.</p>
+<p>The EXCLUSIVE_ACCESS_REQUEST_TYPE enumeration is used with the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-exclusive-access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a> request to query the access state of a CD-ROM device or to lock or unlock the device for exclusive access.</p>
 
 ## -requirements
 <table>
@@ -99,7 +95,7 @@ typedef enum _EXCLUSIVE_ACCESS_REQUEST_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559327">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-exclusive-access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
 </dt>
 </dl>
 <p> </p>

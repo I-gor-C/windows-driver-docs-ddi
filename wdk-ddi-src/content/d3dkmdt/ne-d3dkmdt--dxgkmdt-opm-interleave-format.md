@@ -117,7 +117,7 @@ typedef enum _DXGKMDT_OPM_INTERLEAVE_FORMAT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560840">DXGKMDT_OPM_ACTUAL_OUTPUT_FORMAT</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-actual-output-format.md">DXGKMDT_OPM_ACTUAL_OUTPUT_FORMAT</a>
 </dt>
 </dl>
 <p> </p>

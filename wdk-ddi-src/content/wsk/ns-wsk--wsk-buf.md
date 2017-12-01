@@ -7,7 +7,7 @@ old-location: netvista\wsk_buf.htm
 old-project: netvista
 ms.assetid: bef653d3-5de3-4af3-8c1f-cff55619e2e9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WSK_BUF, WSK_BUF, *PWSK_BUF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -86,8 +85,8 @@ typedef struct _WSK_BUF {
 <p>When a WSK_BUF structure is used to describe a buffer for receiving data from a socket, this member
      specifies the maximum number of bytes to be received into the MDL (or MDL chain).</p>
 <p>When a WSK_BUF structure is contained within either a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571165">WSK_DATA_INDICATION</a> structure or a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571164">WSK_DATAGRAM_INDICATION</a> structure,
+     <a href="..\wsk\ns-wsk--wsk-data-indication.md">WSK_DATA_INDICATION</a> structure or a 
+     <a href="..\wsk\ns-wsk--wsk-datagram-indication.md">WSK_DATAGRAM_INDICATION</a> structure,
      this member specifies the number of bytes of received data in the MDL (or MDL chain).</p>
 </dd>
 </dl>
@@ -97,7 +96,7 @@ typedef struct _WSK_BUF {
     <b>Mdl</b> member describes memory that is either locked or from non-paged pool.</p>
 
 <p>When a WSK application passes a pointer to a WSK_BUF structure to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571139">WskReceive</a> function, the application can
+    <a href="..\wsk\nc-wsk-pfn-wsk-receive.md">WskReceive</a> function, the application can
     specify zero for the 
     <b>Length</b> member of the structure. In that situation, the 
     <b>Mdl</b> member can be <b>NULL</b> because no data will be copied into the buffer.</p>
@@ -128,27 +127,27 @@ typedef struct _WSK_BUF {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571129">WskDisconnect</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-disconnect.md">WskDisconnect</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571139">WskReceive</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-receive.md">WskReceive</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571141">WskReceiveFrom</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-receive-from.md">WskReceiveFrom</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571146">WskSend</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-send.md">WskSend</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571148">WskSendTo</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-send-to.md">WskSendTo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571165">WSK_DATA_INDICATION</a>
+<a href="..\wsk\ns-wsk--wsk-data-indication.md">WSK_DATA_INDICATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571164">WSK_DATAGRAM_INDICATION</a>
+<a href="..\wsk\ns-wsk--wsk-datagram-indication.md">WSK_DATAGRAM_INDICATION</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_BUF structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_BUF structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

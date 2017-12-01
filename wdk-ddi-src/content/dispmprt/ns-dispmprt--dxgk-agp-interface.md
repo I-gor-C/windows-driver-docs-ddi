@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DXGK_AGP_INTERFACE structure contains pointers to functions in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538228">AGP interface</a>, which is implemented by the display port driver.</p>
+<p>The DXGK_AGP_INTERFACE structure contains pointers to functions in the <a href="display.agp_interface">AGP interface</a>, which is implemented by the display port driver.</p>
 
 
 ## -syntax

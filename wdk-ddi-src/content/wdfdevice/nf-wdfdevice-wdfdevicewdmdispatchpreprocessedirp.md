@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicewdmdispatchpreprocessedirp.htm
 old-project: wdf
 ms.assetid: 83b18680-0b58-4278-87ff-757eb6e76178
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfDeviceWdmDispatchPreprocessedIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ NTSTATUS WdfDeviceWdmDispatchPreprocessedIrp(
 ### -param <i>Irp</i> [in]
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure.</p>
+<p>A pointer to an <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure.</p>
 </dd>
 </dl>
 
@@ -76,10 +76,6 @@ NTSTATUS WdfDeviceWdmDispatchPreprocessedIrp(
 <p>A bug check occurs if the driver supplies an invalid object handle.</p>
 
 ## -remarks
-<p>A framework-based driver that preprocesses or postprocesses WDM IRPs must call <b>WdfDeviceWdmDispatchPreprocessedIrp</b>, typically from within the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdfdevice-wdm-irp-preprocess.md">EvtDeviceWdmIrpPreprocess</a> callback function. For more information about how to call <b>WdfDeviceWdmDispatchPreprocessedIrp</b>, see <a href="wdf.preprocessing_and_postprocessing_irps">Preprocessing and Postprocessing IRPs</a>.</p>
-
-<p>For a code example that uses <b>WdfDeviceWdmDispatchPreprocessedIrp</b>, see <a href="wdf.preprocessing_and_postprocessing_irps">Preprocessing and Postprocessing IRPs</a>.</p>
-
 <p>A framework-based driver that preprocesses or postprocesses WDM IRPs must call <b>WdfDeviceWdmDispatchPreprocessedIrp</b>, typically from within the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdfdevice-wdm-irp-preprocess.md">EvtDeviceWdmIrpPreprocess</a> callback function. For more information about how to call <b>WdfDeviceWdmDispatchPreprocessedIrp</b>, see <a href="wdf.preprocessing_and_postprocessing_irps">Preprocessing and Postprocessing IRPs</a>.</p>
 
 <p>For a code example that uses <b>WdfDeviceWdmDispatchPreprocessedIrp</b>, see <a href="wdf.preprocessing_and_postprocessing_irps">Preprocessing and Postprocessing IRPs</a>.</p>
@@ -137,7 +133,7 @@ NTSTATUS WdfDeviceWdmDispatchPreprocessedIrp(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>

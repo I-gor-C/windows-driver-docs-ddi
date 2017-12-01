@@ -41,15 +41,15 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>Represents a single printer queue. </p>
-<p>This interface extends <a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a> and allows a user to manage print jobs and device maintenance from within a UWP  device app for printers, or from a printer extension.</p>
+<p>This interface extends <a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a> and allows a user to manage print jobs and device maintenance from within a UWP  device app for printers, or from a printer extension.</p>
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrinterQueue2</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>. <b>IPrinterQueue2</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrinterQueue2</b> interface inherits from <a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>. <b>IPrinterQueue2</b> also has these types of members:</p>
 
 <p>The <b>IPrinterQueue2</b> interface has these methods.</p>
 
-<p>Retrieves an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265392">IPrinterQueueView</a> object, and initializes the object with the range of jobs to be monitored.</p>
+<p>Retrieves an <a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a> object, and initializes the object with the range of jobs to be monitored.</p>
 
 <p>Uses an XML string value to send a Bidi Set request as an asynchronous operation.</p>
 
@@ -63,29 +63,27 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265390">GetPrinterQueueView</a>
+<a href="print.iprinterqueue2_getprinterqueueview">GetPrinterQueueView</a>
 </td>
 <td align="left" width="63%">
-<p>Retrieves an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265392">IPrinterQueueView</a> object, and initializes the object with the range of jobs to be monitored.</p>
+<p>Retrieves an <a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a> object, and initializes the object with the range of jobs to be monitored.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265391">SendBidiSetRequestAsync</a>
+<a href="print.iprinterqueue2_sendbidisetrequestasync">SendBidiSetRequestAsync</a>
 </td>
 <td align="left" width="63%">
 <p>Uses an XML string value to send a Bidi Set request as an asynchronous operation.</p>
 </td>
 </tr>
-</table><p>Retrieves an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265392">IPrinterQueueView</a> object, and initializes the object with the range of jobs to be monitored.</p>
+</table><p>Retrieves an <a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a> object, and initializes the object with the range of jobs to be monitored.</p>
 
 <p>Uses an XML string value to send a Bidi Set request as an asynchronous operation.</p>
 
 <p> </p>
 
 ## -remarks
-<p><b>IPrinterQueue2</b> also helps to make it possible to perform device maintenance and job management from a UWP  device app or from a printer extension. For more information, see <a href="NULL">Device Maintenance</a> and <a href="NULL">Job Management</a>.</p>
-
 <p><b>IPrinterQueue2</b> also helps to make it possible to perform device maintenance and job management from a UWP  device app or from a printer extension. For more information, see <a href="NULL">Device Maintenance</a> and <a href="NULL">Job Management</a>.</p>
 
 ## -requirements
@@ -124,7 +122,7 @@ req.product: Windows 10 or later.
 <a href="NULL">Device Maintenance</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>
+<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
 </dt>
 <dt>
 <a href="NULL">Job Management</a>

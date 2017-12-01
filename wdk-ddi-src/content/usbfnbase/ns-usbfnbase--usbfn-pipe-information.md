@@ -59,7 +59,7 @@ typedef struct _USBFN_PIPE_INFORMATION {
 ### -field <b>EpDesc</b>
 
 <dd>
-<p>Describes the endpoint descriptor in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539317">USB_ENDPOINT_DESCRIPTOR</a> structure.</p>
+<p>Describes the endpoint descriptor in a <a href="..\usbspec\ns-usbspec--usb-endpoint-descriptor.md">USB_ENDPOINT_DESCRIPTOR</a> structure.</p>
 </dd>
 
 ### -field <b>PipeId</b>
@@ -89,7 +89,7 @@ typedef struct _USBFN_PIPE_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539317">USB_ENDPOINT_DESCRIPTOR</a>
+<a href="..\usbspec\ns-usbspec--usb-endpoint-descriptor.md">USB_ENDPOINT_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

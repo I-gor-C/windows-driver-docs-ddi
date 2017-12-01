@@ -67,7 +67,7 @@ NTSTATUS* DxgkDdiGetBrightnessCaps(
 ### -param <i>BrightnessCaps</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/jj128359">DXGK_BRIGHTNESS_CAPS</a> structure that represents the brightness control capabilities of the display panel.</p>
+<p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-caps.md">DXGK_BRIGHTNESS_CAPS</a> structure that represents the brightness control capabilities of the display panel.</p>
 </dd>
 </dl>
 
@@ -75,16 +75,6 @@ NTSTATUS* DxgkDdiGetBrightnessCaps(
 <p>Returns <b>STATUS_SUCCESS</b> if it succeeds. Otherwise, it returns one of the error codes that are defined in Ntstatus.h.</p>
 
 ## -remarks
-<p>This function lets the display miniport driver independently indicate its support for adaptive brightness control and/or smooth brightness control.</p>
-
-<p>If the hardware includes an ambient light sensor, it must support smooth brightness control. The display miniport driver, not an embedded controller, must control the smooth brightness functioning of the integrated display panel.</p>
-
-<p>If the driver is started by a Plug and Play (PnP) event, it must  transition smoothly from the initial brightness level set by firmware to the level set by the operating system. If additional devices are connected to the system, they must not affect the driver's ability to perform smooth brightness  control on the integrated display panel.</p>
-
-<p>The driver must continue to support smooth brightness control even if adaptive brightness control is initiated.</p>
-
-<p>This function should be made pageable.</p>
-
 <p>This function lets the display miniport driver independently indicate its support for adaptive brightness control and/or smooth brightness control.</p>
 
 <p>If the hardware includes an ambient light sensor, it must support smooth brightness control. The display miniport driver, not an embedded controller, must control the smooth brightness functioning of the integrated display panel.</p>
@@ -146,7 +136,7 @@ NTSTATUS* DxgkDdiGetBrightnessCaps(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj128359">DXGK_BRIGHTNESS_CAPS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-caps.md">DXGK_BRIGHTNESS_CAPS</a>
 </dt>
 <dt>
 <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a>

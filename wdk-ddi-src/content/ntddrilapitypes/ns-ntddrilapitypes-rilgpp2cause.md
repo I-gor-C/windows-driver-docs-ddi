@@ -7,7 +7,7 @@ old-location: netvista\rilgpp2cause.htm
 old-project: netvista
 ms.assetid: 40981ad1-9a3e-47c5-a3d2-e980659b8ca4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILGPP2CAUSE, RILGPP2CAUSE, *LPRILGPP2CAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices

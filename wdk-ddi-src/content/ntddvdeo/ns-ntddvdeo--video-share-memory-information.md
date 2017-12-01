@@ -76,7 +76,7 @@ typedef struct _VIDEO_SHARE_MEMORY_INFORMATION {
 </dl>
 
 ## -remarks
-<p>When an application must have access to user-mode video memory, the display driver can call into the video miniport driver by sending it an <a href="https://msdn.microsoft.com/library/windows/hardware/ff568149">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a> request. The miniport driver uses a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570548">VIDEO_SHARE_MEMORY</a> structure as an input buffer, and communicates back to the display driver a VIDEO_SHARE_MEMORY_INFORMATION structure. </p>
+<p>When an application must have access to user-mode video memory, the display driver can call into the video miniport driver by sending it an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-share-video-memory.md">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a> request. The miniport driver uses a <a href="..\ntddvdeo\ns-ntddvdeo--video-share-memory.md">VIDEO_SHARE_MEMORY</a> structure as an input buffer, and communicates back to the display driver a VIDEO_SHARE_MEMORY_INFORMATION structure. </p>
 
 <p>The video miniport driver fills out a VIDEO_SHARE_MEMORY_INFORMATION structure based on information in a VIDEO_SHARE_MEMORY structure. The following table summarizes how the information is used:</p>
 
@@ -96,8 +96,6 @@ typedef struct _VIDEO_SHARE_MEMORY_INFORMATION {
 
 <p>If <b>NULL</b>, the miniport driver determines the address of a frame buffer to assign to <b>VirtualAddress</b>. If non-<b>NULL</b>, the miniport driver attempts to assign that value to <b>VirtualAddress</b>.</p>
 
-<p> </p>
-
 ## -requirements
 <table>
 <tr>
@@ -115,10 +113,10 @@ typedef struct _VIDEO_SHARE_MEMORY_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570548">VIDEO_SHARE_MEMORY</a>
+<a href="..\ntddvdeo\ns-ntddvdeo--video-share-memory.md">VIDEO_SHARE_MEMORY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568149">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-share-video-memory.md">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a>
 </dt>
 </dl>
 <p> </p>

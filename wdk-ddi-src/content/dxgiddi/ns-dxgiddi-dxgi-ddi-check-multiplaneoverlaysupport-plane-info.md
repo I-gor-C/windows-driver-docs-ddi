@@ -71,7 +71,7 @@ typedef struct DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO {
 ### -field <b>PlaneAttributes</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh780283">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a> structure that specifies overlay plane attributes.</p>
+<p>A <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-multiplane-overlay-attributes.md">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a> structure that specifies overlay plane attributes.</p>
 </dd>
 </dl>
 

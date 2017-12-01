@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -80,10 +79,6 @@ VOID AtaPortMoveMemory(
 <p>None </p>
 
 ## -remarks
-<p>The miniport driver calls the <b>AtaPortMoveMemory</b> routine to copy data from one system-allocated area to another. </p>
-
-<p>The location pointed to by <i>ReadBuffer</i> and <i>Length</i> can overlap the range of addresses between <i>WriteBuffer</i> and <i>Length</i>. </p>
-
 <p>The miniport driver calls the <b>AtaPortMoveMemory</b> routine to copy data from one system-allocated area to another. </p>
 
 <p>The location pointed to by <i>ReadBuffer</i> and <i>Length</i> can overlap the range of addresses between <i>WriteBuffer</i> and <i>Length</i>. </p>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_capabilities.htm
 old-project: netvista
 ms.assetid: 713c8ecc-e0a5-480a-9c53-e331aeaeb38e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_PM_CAPABILITIES, NDIS_PM_CAPABILITIES, *PNDIS_PM_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,7 +73,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 ### -field <b>Header</b>
 
 <dd>
-<p>The type, revision, and size of the <b>NDIS_PM_CAPABILITIES</b> structure. This member is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.</p>
+<p>The type, revision, and size of the <b>NDIS_PM_CAPABILITIES</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
 <p>The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_PM_CAPABILITIES</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: </p>
 <p></p>
 <dl>
@@ -109,7 +109,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <p>If this flag is set, the miniport driver must be able to do the following with this packet after the network adapter transitions to a full-power state:</p>
 <ul>
 <li>
-<p>The miniport driver must be able to indicate the packet by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff563598">NdisMIndicateReceiveNetBufferLists</a>.
+<p>The miniport driver must be able to indicate the packet by calling <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">NdisMIndicateReceiveNetBufferLists</a>.
 
 </p>
 </li>
@@ -140,7 +140,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
      </p>
 <p>For more information about this member, see the Remarks section. For more information about WOL
      patterns, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566768">NDIS_PM_WOL_PATTERN</a>.</p>
+     <a href="..\ntddndis\ns-ntddndis--ndis-pm-wol-pattern.md">NDIS_PM_WOL_PATTERN</a>.</p>
 <p></p>
 <dl>
 
@@ -253,7 +253,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <div> </div>
 <p>For more information about WOL
      protocol patterns, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566768">NDIS_PM_WOL_PATTERN</a>.</p>
+     <a href="..\ntddndis\ns-ntddndis--ndis-pm-wol-pattern.md">NDIS_PM_WOL_PATTERN</a>.</p>
 </dd>
 
 ### -field <b>MaxWoLPatternSize</b>
@@ -341,7 +341,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
      </p>
 <div class="alert"><b>Note</b>  Device power states are specified by a value of D<i>x</i>, where D0 is the highest device power state and D3 is the lowest device power state.</div>
 <div> </div>
-<p>The device power state is specified as one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/gg602135">NDIS_DEVICE_POWER_STATE</a> values:</p>
+<p>The device power state is specified as one of the following <a href="..\ntddndis\ne-ntddndis--ndis-device-power-state.md">NDIS_DEVICE_POWER_STATE</a> values:</p>
 <p></p>
 <dl>
 
@@ -397,7 +397,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
 <dd>
 <p>Specifies the lowest device power state from which a network adapter can signal a wake-up event on receipt of
      a network frame that contains a pattern that is specified by the protocol driver. The power state is
-     specified as one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/gg602135">NDIS_DEVICE_POWER_STATE</a> values:
+     specified as one of the following <a href="..\ntddndis\ne-ntddndis--ndis-device-power-state.md">NDIS_DEVICE_POWER_STATE</a> values:
      </p>
 <p></p>
 <dl>
@@ -456,7 +456,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
      state changes from media disconnected to media connected. </p>
 <p>Starting with NDIS 6.30, this member specifies the lowest device power state from which a network adapter can signal    wake-up events. These events are specified in the  <b>SupportedWakeUpEvents</b> member.</p>
 <p>The power state is specified as one of the
-     following <a href="https://msdn.microsoft.com/library/windows/hardware/gg602135">NDIS_DEVICE_POWER_STATE</a> values:
+     following <a href="..\ntddndis\ne-ntddndis--ndis-device-power-state.md">NDIS_DEVICE_POWER_STATE</a> values:
      </p>
 <p></p>
 <dl>
@@ -591,7 +591,7 @@ typedef struct _NDIS_PM_CAPABILITIES {
     <b>PowerManagementCapabilitiesEx</b> member of the 
     <a href="..\ndis\ns-ndis--ndis-miniport-adapter-general-attributes.md">
     NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> and 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a> structures and in
+    <a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a> structures and in
     the 
     <a href="netvista.ndis_status_pm_capabilities_change">
     NDIS_STATUS_PM_CAPABILITIES_CHANGE</a> status indication.</p>
@@ -638,23 +638,23 @@ typedef struct _NDIS_PM_CAPABILITIES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-miniport-adapter-general-attributes.md">
    NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563598">NdisMIndicateReceiveNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">NdisMIndicateReceiveNetBufferLists</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563600">NdisMIndicateStatusEx</a>
+<a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566768">NDIS_PM_WOL_PATTERN</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-pm-wol-pattern.md">NDIS_PM_WOL_PATTERN</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_pm_capabilities_change">
@@ -666,4 +666,4 @@ typedef struct _NDIS_PM_CAPABILITIES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_CAPABILITIES structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_CAPABILITIES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

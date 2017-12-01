@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestreuse.htm
 old-project: wdf
 ms.assetid: 3d649cc5-6512-432c-9bd9-60e18507a873
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfRequestReuse
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Wdf01000.sys (KMDF); 
-WUDFx02000.dll (UMDF)
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
 req.iface: 
@@ -67,7 +66,7 @@ NTSTATUS WdfRequestReuse(
 ### -param <i>ReuseParams</i> [in]
 
 <dd>
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552480">WDF_REQUEST_REUSE_PARAMS</a> structure.</p>
+<p>A pointer to a caller-allocated <a href="..\wdfrequest\ns-wdfrequest--wdf-request-reuse-params.md">WDF_REQUEST_REUSE_PARAMS</a> structure.</p>
 </dd>
 </dl>
 
@@ -76,28 +75,18 @@ NTSTATUS WdfRequestReuse(
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl><p>An input parameter is invalid.</p><dl>
 <dt><b>STATUS_WDF_REQUEST_INVALID_STATE</b></dt>
-</dl><p>The driver supplied an IRP in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552480">WDF_REQUEST_REUSE_PARAMS</a> structure, but the specified request object was not obtained from <a href="https://msdn.microsoft.com/library/windows/hardware/ff549953">WdfRequestCreateFromIrp</a>.</p>
+</dl><p>The driver supplied an IRP in the <a href="..\wdfrequest\ns-wdfrequest--wdf-request-reuse-params.md">WDF_REQUEST_REUSE_PARAMS</a> structure, but the specified request object was not obtained from <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreatefromirp.md">WdfRequestCreateFromIrp</a>.</p>
 
 <p> </p>
 
 <p>A bug check occurs if the driver supplies an invalid object handle.</p>
 
 ## -remarks
-<p>A framework-based driver can reuse framework request objects that it created by previous calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549951">WdfRequestCreate</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff549953">WdfRequestCreateFromIrp</a>. Drivers can also reuse request objects that they have <a href="wdf.receiving_i_o_requests">received from the framework</a>, but they cannot set the <a href="wdf.WDF_REQUEST_REUSE_FLAGS">WDF_REQUEST_REUSE_SET_NEW_IRP</a> flag for those request objects.</p>
+<p>A framework-based driver can reuse framework request objects that it created by previous calls to <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a> or <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreatefromirp.md">WdfRequestCreateFromIrp</a>. Drivers can also reuse request objects that they have <a href="wdf.receiving_i_o_requests">received from the framework</a>, but they cannot set the <a href="wdf.WDF_REQUEST_REUSE_FLAGS">WDF_REQUEST_REUSE_SET_NEW_IRP</a> flag for those request objects.</p>
 
-<p>A driver can reuse a request object after the original request has been completed. After a driver has called <b>WdfRequestReuse</b>, the request's contents must be reinitialized. The driver can specify some request parameters in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552480">WDF_REQUEST_REUSE_PARAMS</a> structure. </p>
+<p>A driver can reuse a request object after the original request has been completed. After a driver has called <b>WdfRequestReuse</b>, the request's contents must be reinitialized. The driver can specify some request parameters in the <a href="..\wdfrequest\ns-wdfrequest--wdf-request-reuse-params.md">WDF_REQUEST_REUSE_PARAMS</a> structure. </p>
 
-<p>If you want the reused request to have a <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff550030">WdfRequestSetCompletionRoutine</a> after calling <b>WdfRequestReuse</b>.</p>
-
-<p>For more information about <b>WdfRequestReuse</b>, see <a href="wdf.reusing_framework_request_objects">Reusing Framework Request Objects</a>.</p>
-
-<p>The following code example is part of a <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function that calls <b>WdfRequestReuse</b> so that the driver can reuse a driver-allocated request.</p>
-
-<p>A framework-based driver can reuse framework request objects that it created by previous calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549951">WdfRequestCreate</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff549953">WdfRequestCreateFromIrp</a>. Drivers can also reuse request objects that they have <a href="wdf.receiving_i_o_requests">received from the framework</a>, but they cannot set the <a href="wdf.WDF_REQUEST_REUSE_FLAGS">WDF_REQUEST_REUSE_SET_NEW_IRP</a> flag for those request objects.</p>
-
-<p>A driver can reuse a request object after the original request has been completed. After a driver has called <b>WdfRequestReuse</b>, the request's contents must be reinitialized. The driver can specify some request parameters in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552480">WDF_REQUEST_REUSE_PARAMS</a> structure. </p>
-
-<p>If you want the reused request to have a <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff550030">WdfRequestSetCompletionRoutine</a> after calling <b>WdfRequestReuse</b>.</p>
+<p>If you want the reused request to have a <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a> callback function, the driver must call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a> after calling <b>WdfRequestReuse</b>.</p>
 
 <p>For more information about <b>WdfRequestReuse</b>, see <a href="wdf.reusing_framework_request_objects">Reusing Framework Request Objects</a>.</p>
 
@@ -165,7 +154,7 @@ NTSTATUS WdfRequestReuse(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547261">InvalidReqAccess</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547267">InvalidReqAccessLocal</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff551599">ReqSendFail</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_invalidreqaccess">InvalidReqAccess</a>, <a href="devtest.kmdf_invalidreqaccesslocal">InvalidReqAccessLocal</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_reqsendfail">ReqSendFail</a>
 </td>
 </tr>
 </table>
@@ -173,19 +162,19 @@ NTSTATUS WdfRequestReuse(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549951">WdfRequestCreate</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549953">WdfRequestCreateFromIrp</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreatefromirp.md">WdfRequestCreateFromIrp</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550030">WdfRequestSetCompletionRoutine</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552480">WDF_REQUEST_REUSE_PARAMS</a>
+<a href="..\wdfrequest\ns-wdfrequest--wdf-request-reuse-params.md">WDF_REQUEST_REUSE_PARAMS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552483">WDF_REQUEST_REUSE_PARAMS_INIT</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdf-request-reuse-params-init.md">WDF_REQUEST_REUSE_PARAMS_INIT</a>
 </dt>
 <dt>
 <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-completion-routine.md">CompletionRoutine</a>
@@ -193,4 +182,4 @@ NTSTATUS WdfRequestReuse(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestReuse method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestReuse method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

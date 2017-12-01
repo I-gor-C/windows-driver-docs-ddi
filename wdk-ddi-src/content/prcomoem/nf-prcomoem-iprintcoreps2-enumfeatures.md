@@ -62,7 +62,7 @@ HRESULT EnumFeatures(
 ### -param <i>pdevobj</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>Pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>dwFlags</i> [in]
@@ -115,14 +115,6 @@ HRESULT EnumFeatures(
 
 <p>For more information, see <a href="NULL">Using EnumFeatures</a>.</p>
 
-<p><a href="wdkgloss.p#wdkgloss.printer-sticky#wdkgloss.printer-sticky"><i>printer-sticky</i></a> features (see <a href="NULL">Replacing Driver-Supplied Property Sheet Pages</a>), such as those that determine installable memory and the presence of optional accessories, are included in the feature keyword list, which appears in the output buffer pointed to by <i>pmszFeatureList</i>. For Pscript5, such features have the <b>OpenGroupType</b> feature attribute set to "InstallableOptions". </p>
-
-<p>To reduce the need to make two calls per data access, pass the method an output buffer of a fixed size (1 KB, for example), and then check the function return value. If the method returns S_OK, the buffer already contains the data of interest. If the method returns E_OUTOFMEMORY, the value in *<i>pcbNeeded</i> is the buffer size needed to hold the data of interest. The caller should then allocate a buffer of that larger size and proceed with a second call to the method.</p>
-
-<p>This method is supported for any Pscript5 render plug-in.</p>
-
-<p>For more information, see <a href="NULL">Using EnumFeatures</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -150,10 +142,10 @@ HRESULT EnumFeatures(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a>
+<a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552996">IPrintCorePS2::EnumOptions</a>
+<a href="print.iprintcoreps2_enumoptions">IPrintCorePS2::EnumOptions</a>
 </dt>
 </dl>
 <p> </p>

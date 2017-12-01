@@ -70,10 +70,6 @@ HRESULT PublishPrintTicketHelperInterface(
 
 <p>If <code>IPrintOemPrintTicketProvider::PublishPrintTicketHelperInterface</code>  uses the helper interface, it should cache a pointer to the interface, and increment the reference count (by means of a call to the interface's <b>AddRef</b> method). If this method successfully increments the reference count, it should return S_OK. </p>
 
-<p>If the plug-in maintains a handle to the helper object, the plug-in is responsible for later releasing that handle when it is no longer needed. </p>
-
-<p>If <code>IPrintOemPrintTicketProvider::PublishPrintTicketHelperInterface</code>  uses the helper interface, it should cache a pointer to the interface, and increment the reference count (by means of a call to the interface's <b>AddRef</b> method). If this method successfully increments the reference count, it should return S_OK. </p>
-
 ## -requirements
 <table>
 <tr>

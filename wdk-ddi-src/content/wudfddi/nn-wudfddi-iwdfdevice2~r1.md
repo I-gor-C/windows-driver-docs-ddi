@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice2.htm
 old-project: wdf
 ms.assetid: f4d3d2cf-8877-4071-8e75-f971803beca4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDevice2</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff556917">IWDFDevice</a>. <b>IWDFDevice2</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDevice2</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>. <b>IWDFDevice2</b> also has these types of members:</p>
 
 <p>The <b>IWDFDevice2</b> interface has these methods.</p>
 
@@ -79,7 +79,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>
+<a href="wdf.iwdfdevice2_assigns0idlesettings">IWDFDevice2::AssignS0IdleSettings</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice2_assigns0idlesettings">AssignS0IdleSettings</a> method provides driver-supplied information that the framework uses when a device is idle and the system is in its working (S0) state.</p>
@@ -87,7 +87,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556923">IWDFDevice2::AssignSxWakeSettings</a>
+<a href="wdf.iwdfdevice2_assignsxwakesettings">IWDFDevice2::AssignSxWakeSettings</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice2_assignsxwakesettings">AssignSxWakeSettings</a> method provides driver-supplied information about a device's ability to trigger a wake signal while both the device and the system are in a low-power state.</p>
@@ -95,7 +95,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a>
+<a href="wdf.iwdfdevice2_createremoteinterface">IWDFDevice2::CreateRemoteInterface</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice2_createremoteinterface">CreateRemoteInterface</a> method creates a remote interface object that represents a <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a>.</p>
@@ -103,7 +103,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556928">IWDFDevice2::CreateRemoteTarget</a>
+<a href="wdf.iwdfdevice2_createremotetarget">IWDFDevice2::CreateRemoteTarget</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice2_createremotetarget">CreateRemoteTarget</a> method creates a remote target object that represents a <a href="wdf.general_i_o_targets_in_umdf">remote I/O target</a>.</p>
@@ -111,7 +111,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556932">IWDFDevice2::CreateSymbolicLinkWithReferenceString</a>
+<a href="wdf.iwdfdevice2_createsymboliclinkwithreferencestring">IWDFDevice2::CreateSymbolicLinkWithReferenceString</a>
 </td>
 <td align="left" width="63%">
 <p>The<a href="wdf.iwdfdevice2_createsymboliclinkwithreferencestring">CreateSymbolicLinkWithReferenceString</a> method creates a symbolic link name, and optionally, a reference string, for a device </p>
@@ -119,7 +119,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556934">IWDFDevice2::GetDeviceStackIoTypePreference</a>
+<a href="wdf.iwdfdevice2_getdevicestackiotypepreference">IWDFDevice2::GetDeviceStackIoTypePreference</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice2_getdevicestackiotypepreference">GetDeviceStackIoTypePreference</a> method retrieves the buffer access methods that the framework is using for a device.</p>
@@ -127,7 +127,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>
+<a href="wdf.iwdfdevice2_getsystempoweraction">IWDFDevice2::GetSystemPowerAction</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice2_getsystempoweraction">GetSystemPowerAction</a> method returns the <a href="https://msdn.microsoft.com/e8ab99d4-c18d-4ba8-bfe8-8eebb881c384">system power action</a>, if any, that is currently occurring for the computer. </p>
@@ -135,7 +135,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556939">IWDFDevice2::RegisterRemoteInterfaceNotification</a>
+<a href="wdf.iwdfdevice2_registerremoteinterfacenotification">IWDFDevice2::RegisterRemoteInterfaceNotification</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice2_registerremoteinterfacenotification">RegisterRemoteInterfaceNotification</a> method registers a driver to receive a notification when a specified <a href="wdf.using_device_interfaces_in_umdf_drivers">device interface</a> becomes available.</p>
@@ -143,7 +143,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556943">IWDFDevice2::ResumeIdle</a>
+<a href="wdf.iwdfdevice2_resumeidle">IWDFDevice2::ResumeIdle</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice2_resumeidle">ResumeIdle</a> method informs the framework that the device is not in use and can be placed in a device low-power state if it remains idle.</p>
@@ -151,7 +151,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556948">IWDFDevice2::StopIdle</a>
+<a href="wdf.iwdfdevice2_stopidle">IWDFDevice2::StopIdle</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice2_stopidle">StopIdle</a> method informs the framework that the device must be placed in its working (D0) power state.</p>

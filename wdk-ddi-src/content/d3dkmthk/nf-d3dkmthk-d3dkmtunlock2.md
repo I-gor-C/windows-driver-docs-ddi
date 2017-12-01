@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTUnlock2(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn914462">D3DKMT_UNLOCK2</a> structure that describes a list of allocations to unlock.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-unlock2.md">D3DKMT_UNLOCK2</a> structure that describes a list of allocations to unlock.</p>
 </dd>
 </dl>
 
@@ -138,7 +138,7 @@ NTSTATUS APIENTRY D3DKMTUnlock2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914462">D3DKMT_UNLOCK2</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-unlock2.md">D3DKMT_UNLOCK2</a>
 </dt>
 </dl>
 <p> </p>

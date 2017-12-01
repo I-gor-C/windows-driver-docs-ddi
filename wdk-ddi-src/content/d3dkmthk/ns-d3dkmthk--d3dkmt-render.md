@@ -78,7 +78,7 @@ typedef struct _D3DKMT_RENDER {
 ### -field <b>hDevice</b>
 
 <dd>
-<p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the command buffer is rendered to. A device handle is supplied to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547145">D3DKMTRender</a> function in the union that D3DKMT_RENDER contains for compatibility with Microsoft Direct3D version 10.</p>
+<p>[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the command buffer is rendered to. A device handle is supplied to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function in the union that D3DKMT_RENDER contains for compatibility with Microsoft Direct3D version 10.</p>
 </dd>
 
 ### -field <b>hContext</b>
@@ -114,7 +114,7 @@ typedef struct _D3DKMT_RENDER {
 ### -field <b>pNewCommandBuffer</b>
 
 <dd>
-<p>[out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547145">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.</p>
+<p>[out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.</p>
 <p>Supported in Windows 7 and later versions:</p>
 <p>[in] A pointer to the command buffer to be rendered if the <b>RenderKm</b> flag is set in the <b>Flags</b> member. </p>
 </dd>
@@ -129,7 +129,7 @@ typedef struct _D3DKMT_RENDER {
 ### -field <b>pNewAllocationList</b>
 
 <dd>
-<p>[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544375">D3DDDI_ALLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the allocation list in its next call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547145">D3DKMTRender</a> function. The driver must always update its pointer to the allocation list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.</p>
+<p>[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the allocation list in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the allocation list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.</p>
 <p>Supported in Windows 7 and later versions:</p>
 <p>[in] A pointer to the allocation list to be rendered if the <b>RenderKm</b> flag is set in the <b>Flags</b> member. </p>
 </dd>
@@ -144,7 +144,7 @@ typedef struct _D3DKMT_RENDER {
 ### -field <b>pNewPatchLocationList</b>
 
 <dd>
-<p>[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the patch-location list in its next call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547145">D3DKMTRender</a> function. The driver must always update its pointer to the patch-location list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.</p>
+<p>[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the OpenGL ICD receives to use as the patch-location list in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the patch-location list after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.</p>
 </dd>
 
 ### -field <b>NewPatchLocationListSize</b>
@@ -157,7 +157,7 @@ typedef struct _D3DKMT_RENDER {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548244">D3DKMT_RENDERFLAGS</a> structure that indicates the type of command buffer, in bit-field flags, to be rendered.</p>
+<p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-renderflags.md">D3DKMT_RENDERFLAGS</a> structure that indicates the type of command buffer, in bit-field flags, to be rendered.</p>
 </dd>
 
 ### -field <b>PresentHistoryToken</b>
@@ -189,7 +189,7 @@ typedef struct _D3DKMT_RENDER {
 ### -field <b>NewCommandBuffer</b>
 
 <dd>
-<p>[out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547145">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.</p>
+<p>[out] A pointer to a command buffer that the OpenGL ICD receives to use in its next call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a> function. The driver must always update its pointer to the command buffer after any call to <b>D3DKMTRender</b> regardless of whether the call is successful.</p>
 <p>Supported in Windows 7 and later versions:</p>
 <p>[in] A pointer to the command buffer to be rendered if the <b>RenderKm</b> flag is set in the <b>Flags</b> member. </p>
 </dd>
@@ -237,10 +237,10 @@ typedef struct _D3DKMT_RENDER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548244">D3DKMT_RENDERFLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-renderflags.md">D3DKMT_RENDERFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547145">D3DKMTRender</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtrender.md">D3DKMTRender</a>
 </dt>
 <dt>
 <a href="display.dxgkddipresent">DxgkDdiPresent</a>

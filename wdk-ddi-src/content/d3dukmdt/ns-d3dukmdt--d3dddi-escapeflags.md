@@ -81,7 +81,7 @@ typedef struct _D3DDDI_ESCAPEFLAGS {
 <dd>
 <p>
   
-  If set, when the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-escapecb.md">pfnEscapeCb</a> function is called and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544190">D3DDDICB_ESCAPE</a>.<b>PrivateDriverDataSize</b> member is <code>sizeof(D3DDDI_EXECUTIONSTATEESCAPE)</code>, the Direct3D runtime interprets the <b>D3DDDICB_ESCAPE</b>.<b>pPrivateDriverData</b> member as a pointer to a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/dn482417">D3DDDI_EXECUTIONSTATEESCAPE</a> structure. In addition, the runtime processes the <i>pfnEscapeCb</i> as a status query by writing the requested info into the provided buffer instead of sending a <a href="display.dxgkddiescape">DxgkDdiEscape</a> call to the display miniport driver.</p>
+  If set, when the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-escapecb.md">pfnEscapeCb</a> function is called and the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-escape.md">D3DDDICB_ESCAPE</a>.<b>PrivateDriverDataSize</b> member is <code>sizeof(D3DDDI_EXECUTIONSTATEESCAPE)</code>, the Direct3D runtime interprets the <b>D3DDDICB_ESCAPE</b>.<b>pPrivateDriverData</b> member as a pointer to a buffer that contains a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-executionstateescape.md">D3DDDI_EXECUTIONSTATEESCAPE</a> structure. In addition, the runtime processes the <i>pfnEscapeCb</i> as a status query by writing the requested info into the provided buffer instead of sending a <a href="display.dxgkddiescape">DxgkDdiEscape</a> call to the display miniport driver.</p>
 <p>If this member is set, <b>HardwareAccess</b> and <b>ChangeFrameLatency</b> must be set to zero.</p>
 <p>Supported starting with Windows 8.1.</p>
 <p>The operating system ignores this member if it is prior to Windows 8.1, or if the user-mode driver was initialized with an <i>OpenAdapterXxx</i> call where the <i>pOpenData</i>-&gt;<b>Interface</b> member indicates Direct3D version 8 or earlier.</p>
@@ -93,7 +93,7 @@ typedef struct _D3DDDI_ESCAPEFLAGS {
 <dd>
 <p>
   
-  If set, when the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-escapecb.md">pfnEscapeCb</a> function is called, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544190">D3DDDICB_ESCAPE</a>.<b>PrivateDriverDataSize</b> member is <code>sizeof(D3DDDI_FRAMELATENCYESCAPE)</code> and conditions in Remarks are also met, the Direct3D runtime interprets the <b>D3DDDICB_ESCAPE</b>.<b>pPrivateDriverData</b> member as a pointer to a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/dn482418">D3DDDI_FRAMELATENCYESCAPE</a> structure. In addition, the runtime processes the <i>pfnEscapeCb</i> as a request to change the DirectX graphics kernel subsystem's maximum frame latency by writing the requested info into the provided buffer instead of sending a <a href="display.dxgkddiescape">DxgkDdiEscape</a> call to the display miniport driver.</p>
+  If set, when the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-escapecb.md">pfnEscapeCb</a> function is called, the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-escape.md">D3DDDICB_ESCAPE</a>.<b>PrivateDriverDataSize</b> member is <code>sizeof(D3DDDI_FRAMELATENCYESCAPE)</code> and conditions in Remarks are also met, the Direct3D runtime interprets the <b>D3DDDICB_ESCAPE</b>.<b>pPrivateDriverData</b> member as a pointer to a buffer that contains a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-framelatencyescape.md">D3DDDI_FRAMELATENCYESCAPE</a> structure. In addition, the runtime processes the <i>pfnEscapeCb</i> as a request to change the DirectX graphics kernel subsystem's maximum frame latency by writing the requested info into the provided buffer instead of sending a <a href="display.dxgkddiescape">DxgkDdiEscape</a> call to the display miniport driver.</p>
 <p>If this member is set, <b>HardwareAccess</b> and <b>DeviceStatusQuery</b> must be set to zero.</p>
 <p>Supported starting with Windows 8.1.</p>
 <p>The operating system ignores this member if it is prior to Windows 8.1, or if the user-mode driver was initialized with an <i>OpenAdapterXxx</i> call where the <i>pOpenData</i>-&gt;<b>Interface</b> member indicates Direct3D version 8 or earlier.</p>
@@ -149,16 +149,16 @@ typedef struct _D3DDDI_ESCAPEFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn482417">D3DDDI_EXECUTIONSTATEESCAPE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-executionstateescape.md">D3DDDI_EXECUTIONSTATEESCAPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn482418">D3DDDI_FRAMELATENCYESCAPE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-framelatencyescape.md">D3DDDI_FRAMELATENCYESCAPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544190">D3DDDICB_ESCAPE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-escape.md">D3DDDICB_ESCAPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557588">DXGKARG_ESCAPE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-escape.md">DXGKARG_ESCAPE</a>
 </dt>
 <dt>
 <a href="display.dxgkddiescape">DxgkDdiEscape</a>

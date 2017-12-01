@@ -103,7 +103,7 @@ typedef struct _D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547171">D3DKMTSetDisplayPrivateDriverFormat</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplayprivatedriverformat.md">D3DKMTSetDisplayPrivateDriverFormat</a>
 </dt>
 </dl>
 <p> </p>

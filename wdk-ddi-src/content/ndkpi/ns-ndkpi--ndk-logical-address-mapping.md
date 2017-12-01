@@ -7,7 +7,7 @@ old-location: netvista\ndk_logical_address_mapping.htm
 old-project: netvista
 ms.assetid: 7FB34813-5F89-4B9C-9594-B23E7D4736C6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDK_LOGICAL_ADDRESS_MAPPING, NDK_LOGICAL_ADDRESS_MAPPING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,7 +79,7 @@ The <b>NDK_LOGICAL_ADDRESS</b> datatype is defined as follows:</p>
 </dl>
 
 ## -remarks
-<p><b>NDK_LOGICAL_ADDRESS_MAPPING</b> represents an adapter's view of physical memory. See <a href="https://msdn.microsoft.com/library/windows/hardware/hh439860">NDK_FN_BUILD_LAM</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh439910">NDK_FN_RELEASE_LAM</a> for more information.</p>
+<p><b>NDK_LOGICAL_ADDRESS_MAPPING</b> represents an adapter's view of physical memory. See <a href="..\ndkpi\nc-ndkpi-ndk-fn-build-lam.md">NDK_FN_BUILD_LAM</a> and <a href="..\ndkpi\nc-ndkpi-ndk-fn-release-lam.md">NDK_FN_RELEASE_LAM</a> for more information.</p>
 
 ## -requirements
 <table>
@@ -122,12 +122,12 @@ The <b>NDK_LOGICAL_ADDRESS</b> datatype is defined as follows:</p>
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439860">NDK_FN_BUILD_LAM</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-build-lam.md">NDK_FN_BUILD_LAM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439910">NDK_FN_RELEASE_LAM</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-release-lam.md">NDK_FN_RELEASE_LAM</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_LOGICAL_ADDRESS_MAPPING structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_LOGICAL_ADDRESS_MAPPING structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

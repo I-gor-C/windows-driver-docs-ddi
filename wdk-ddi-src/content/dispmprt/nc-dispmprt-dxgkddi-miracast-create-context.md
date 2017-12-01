@@ -69,7 +69,7 @@ NTSTATUS* DxgkDdiMiracastCreateContext(
 ### -param <i>MiracastCallbacks</i> [in]
 
 <dd>
-<p>A pointer to an operating system-provided buffer that holds a <a href="https://msdn.microsoft.com/library/windows/hardware/dn344648">DXGK_MIRACAST_DISPLAY_CALLBACKS</a> structure that has pointers to callback functions that the driver can call.</p>
+<p>A pointer to an operating system-provided buffer that holds a <a href="..\dispmprt\ns-dispmprt--dxgk-miracast-display-callbacks.md">DXGK_MIRACAST_DISPLAY_CALLBACKS</a> structure that has pointers to callback functions that the driver can call.</p>
 </dd>
 
 ### -param <i>MiracastContext</i> [out]
@@ -93,10 +93,6 @@ NTSTATUS* DxgkDdiMiracastCreateContext(
 <p> </p>
 
 ## -remarks
-<p>When this function is called, the display miniport driver should prepare all kernel-mode resources that it needs to support a Miracast connected session.</p>
-
-<p>The operating system groups the <i>DxgkDdiMiracastCreateContext</i>, <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-destroy-context.md">DxgkDdiMiracastDestroyContext</a>, and <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-handle-io-control.md">DxgkDdiMiracastIoControl</a> functions as a <i>Miracast</i> class. The operating system guarantees that these functions follow the second-level synchronization mode as defined in <a href="https://msdn.microsoft.com/2b7c1eae-6527-469e-a2fa-74d2a1246bd3">Threading and Synchronization Second Level</a>. These functions can be called when other level 0, 1, or other classes of level 2 functions are being called on another thread context. However, only one of these level 2 Miracast-class functions can be called at a time.</p>
-
 <p>When this function is called, the display miniport driver should prepare all kernel-mode resources that it needs to support a Miracast connected session.</p>
 
 <p>The operating system groups the <i>DxgkDdiMiracastCreateContext</i>, <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-destroy-context.md">DxgkDdiMiracastDestroyContext</a>, and <a href="..\dispmprt\nc-dispmprt-dxgkddi-miracast-handle-io-control.md">DxgkDdiMiracastIoControl</a> functions as a <i>Miracast</i> class. The operating system guarantees that these functions follow the second-level synchronization mode as defined in <a href="https://msdn.microsoft.com/2b7c1eae-6527-469e-a2fa-74d2a1246bd3">Threading and Synchronization Second Level</a>. These functions can be called when other level 0, 1, or other classes of level 2 functions are being called on another thread context. However, only one of these level 2 Miracast-class functions can be called at a time.</p>
@@ -152,7 +148,7 @@ NTSTATUS* DxgkDdiMiracastCreateContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn344648">DXGK_MIRACAST_DISPLAY_CALLBACKS</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-miracast-display-callbacks.md">DXGK_MIRACAST_DISPLAY_CALLBACKS</a>
 </dt>
 <dt>
 <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a>

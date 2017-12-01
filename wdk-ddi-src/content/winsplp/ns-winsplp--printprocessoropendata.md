@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The PRINTPROCESSOROPENDATA structure is used as an input parameter to a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559604">OpenPrintProcessor</a> function.</p>
+<p>The PRINTPROCESSOROPENDATA structure is used as an input parameter to a print processor's <a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a> function.</p>
 
 
 ## -syntax
@@ -64,7 +64,7 @@ typedef struct _PRINTPROCESSOROPENDATA {
 ### -field <b>pDevMode</b>
 
 <dd>
-<p>Spooler-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.</p>
+<p>Spooler-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </dd>
 
 ### -field <b>pDatatype</b>
@@ -124,10 +124,10 @@ typedef struct _PRINTPROCESSOROPENDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559604">OpenPrintProcessor</a>
+<a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a>
+<a href="display.devmodew">DEVMODEW</a>
 </dt>
 </dl>
 <p> </p>

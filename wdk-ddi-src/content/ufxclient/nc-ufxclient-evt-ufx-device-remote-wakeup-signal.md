@@ -63,7 +63,7 @@ typedef EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL PFN_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL;
 ### -param <i>UfxDevice</i> [in]
 
 <dd>
-<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187951">UfxDeviceCreate</a>.</p>
+<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.</p>
 </dd>
 </dl>
 
@@ -71,13 +71,9 @@ typedef EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL PFN_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL</i> implementation with the USB function class extension (UFX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187951">UfxDeviceCreate</a> method.</p>
+<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL</i> implementation with the USB function class extension (UFX) by calling the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a> method.</p>
 
-<p>The client driver indicates completion of this event by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187952">UfxDeviceEventComplete</a> method.</p>
-
-<p>The client driver for the function host controller registers its <i>EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL</i> implementation with the USB function class extension (UFX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187951">UfxDeviceCreate</a> method.</p>
-
-<p>The client driver indicates completion of this event by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187952">UfxDeviceEventComplete</a> method.</p>
+<p>The client driver indicates completion of this event by calling the <a href="buses.ufxdeviceeventcomplete">UfxDeviceEventComplete</a> method.</p>
 
 ## -requirements
 <table>
@@ -120,10 +116,10 @@ typedef EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL PFN_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL;
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187951">UfxDeviceCreate</a>
+<a href="buses.ufxdevicecreate">UfxDeviceCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187952">UfxDeviceEventComplete</a>
+<a href="buses.ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
 </dt>
 </dl>
 <p> </p>

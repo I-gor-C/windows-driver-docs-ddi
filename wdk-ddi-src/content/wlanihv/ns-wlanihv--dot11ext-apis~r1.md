@@ -7,7 +7,7 @@ old-location: netvista\dot11ext_apis.htm
 old-project: netvista
 ms.assetid: d533acbb-eb3b-4c49-a057-9a99faaacfc1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11EXT_APIS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -87,7 +86,7 @@ typedef struct _DOT11EXT_APIS {
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547422">Dot11ExtFreeBuffer</a> function.</p>
+     <a href="..\wlanihv\nc-wlanihv-dot11ext-free-buffer.md">Dot11ExtFreeBuffer</a> function.</p>
 </dd>
 
 ### -field <b>Dot11ExtSetProfileCustomUserData</b>
@@ -150,7 +149,7 @@ typedef struct _DOT11EXT_APIS {
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547563">Dot11ExtSendPacket</a> function.</p>
+     <a href="..\wlanihv\nc-wlanihv-dot11ext-send-packet.md">Dot11ExtSendPacket</a> function.</p>
 </dd>
 
 ### -field <b>Dot11ExtSetEtherTypeHandling</b>
@@ -229,14 +228,14 @@ typedef struct _DOT11EXT_APIS {
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547610">Dot11ExtStartOneX</a> function.</p>
+     <a href="..\wlanihv\nc-wlanihv-dot11ext-onex-start.md">Dot11ExtStartOneX</a> function.</p>
 </dd>
 
 ### -field <b>Dot11ExtStopOneX</b>
 
 <dd>
 <p>A pointer to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547614">Dot11ExtStopOneX</a> function.</p>
+     <a href="..\wlanihv\nc-wlanihv-dot11ext-onex-stop.md">Dot11ExtStopOneX</a> function.</p>
 </dd>
 
 ### -field <b>Dot11ExtProcessOneXPacket</b>
@@ -283,10 +282,10 @@ typedef struct _DOT11EXT_APIS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547419">Dot11ExtAllocateBuffer</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-allocate-buffer.md">Dot11ExtAllocateBuffer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547422">Dot11ExtFreeBuffer</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-free-buffer.md">Dot11ExtFreeBuffer</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11ext-get-profile-custom-user-data.md">Dot11ExtGetUserData</a>
@@ -295,13 +294,13 @@ typedef struct _DOT11EXT_APIS {
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-service.md">Dot11ExtIhvInitService</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547526">Dot11ExtNicSpecificExtension</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-nic-specific-extension.md">Dot11ExtNicSpecificExtension</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547610">Dot11ExtStartOneX</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-onex-start.md">Dot11ExtStartOneX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547614">Dot11ExtStopOneX</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-onex-stop.md">Dot11ExtStopOneX</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11ext-post-associate-completion.md">
@@ -312,38 +311,38 @@ typedef struct _DOT11EXT_APIS {
    Dot11ExtPreAssociateCompletion</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547541">Dot11ExtProcessOneXPacket</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-process-onex-packet.md">Dot11ExtProcessOneXPacket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547560">Dot11ExtSendNotification</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-send-notification.md">Dot11ExtSendNotification</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547563">Dot11ExtSendPacket</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-send-packet.md">Dot11ExtSendPacket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547567">Dot11ExtSendUIRequest</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-send-ui-request.md">Dot11ExtSendUIRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547571">Dot11ExtSetAuthAlgorithm</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-set-auth-algorithm.md">Dot11ExtSetAuthAlgorithm</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547574">Dot11ExtSetCurrentProfile</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-set-current-profile.md">Dot11ExtSetCurrentProfile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547578">Dot11ExtSetDefaultKey</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-set-default-key.md">Dot11ExtSetDefaultKey</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547584">Dot11ExtSetDefaultKeyId</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-set-default-key-id.md">Dot11ExtSetDefaultKeyId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547587">Dot11ExtSetEtherTypeHandling</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-set-ethertype-handling.md">Dot11ExtSetEtherTypeHandling</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11ext-set-exclude-unencrypted.md">
    Dot11ExtSetExcludeUnencrypted</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547597">Dot11ExtSetKeyMappingKey</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-set-key-mapping-key.md">Dot11ExtSetKeyMappingKey</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11ext-set-multicast-cipher-algorithm.md">
@@ -368,4 +367,4 @@ typedef struct _DOT11EXT_APIS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_APIS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_APIS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -92,11 +92,6 @@ NTSTATUS FltPropagateActivityIdToThread(
     A minifilter must call <b>IoClearActivityIdThread</b> with the pointer in <i>OriginalId</i> before
     returning control from the worker thread if the call to <b>FltPropagateActivityIdToThread</b> was successful.</p>
 
-<p>The <b>FltPropagateActivityIdToThread</b> routine is  used by trace aware minifilters. A minifilter will use this routine to attach the activity ID from an IRP   to a worker thread processing I/O for the request.
-
-    A minifilter must call <b>IoClearActivityIdThread</b> with the pointer in <i>OriginalId</i> before
-    returning control from the worker thread if the call to <b>FltPropagateActivityIdToThread</b> was successful.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -160,10 +155,10 @@ NTSTATUS FltPropagateActivityIdToThread(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967698">FltGetActivityIdCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetactivityidcallbackdata.md">FltGetActivityIdCallbackData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967702">FltSetActivityIdCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetactivityidcallbackdata.md">FltSetActivityIdCallbackData</a>
 </dt>
 </dl>
 <p> </p>

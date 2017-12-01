@@ -100,7 +100,7 @@ typedef struct _DXGK_PREEMPTCOMMANDFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557616">DXGKARG_PREEMPTCOMMAND</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-preemptcommand.md">DXGKARG_PREEMPTCOMMAND</a>
 </dt>
 </dl>
 <p> </p>

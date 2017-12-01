@@ -57,7 +57,7 @@ VOID KeUnstackDetachProcess(
 ### -param <i>ApcState</i> [in]
 
 <dd>
-<p>Opaque pointer to a KAPC_STATE structure that was returned from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549659">KeStackAttachProcess</a>. </p>
+<p>Opaque pointer to a KAPC_STATE structure that was returned from a previous call to <a href="..\ntifs\nf-ntifs-kestackattachprocess.md">KeStackAttachProcess</a>. </p>
 </dd>
 </dl>
 
@@ -65,24 +65,11 @@ VOID KeUnstackDetachProcess(
 <p>None</p>
 
 ## -remarks
-<p>Every successful call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549659">KeStackAttachProcess</a> must be matched by a subsequent call to <b>KeUnstackDetachProcess</b>. </p>
+<p>Every successful call to <a href="..\ntifs\nf-ntifs-kestackattachprocess.md">KeStackAttachProcess</a> must be matched by a subsequent call to <b>KeUnstackDetachProcess</b>. </p>
 
 <p>
 <div class="alert"><b>Note</b>  Attaching a thread to a different process can prevent asynchronous I/O operations from completing and can potentially cause deadlocks. In general, the lines of code between the call to 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff549659">KeStackAttachProcess</a>
-      and the call to 
-     <b>KeUnstackDetachProcess</b>
-      should be very simple and should not call complex routines or send IRPs to other drivers.</div>
-<div> </div>
-</p>
-
-<p>For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="kernel.driver_threads__dispatcher_objects__and_resources">Driver Threads, Dispatcher Objects, and Resources</a>. </p>
-
-<p>Every successful call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549659">KeStackAttachProcess</a> must be matched by a subsequent call to <b>KeUnstackDetachProcess</b>. </p>
-
-<p>
-<div class="alert"><b>Note</b>  Attaching a thread to a different process can prevent asynchronous I/O operations from completing and can potentially cause deadlocks. In general, the lines of code between the call to 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff549659">KeStackAttachProcess</a>
+     <a href="..\ntifs\nf-ntifs-kestackattachprocess.md">KeStackAttachProcess</a>
       and the call to 
      <b>KeUnstackDetachProcess</b>
       should be very simple and should not call complex routines or send IRPs to other drivers.</div>
@@ -154,28 +141,28 @@ VOID KeUnstackDetachProcess(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549177">IoGetCurrentProcess</a>
+<a href="..\wdm\nf-wdm-iogetcurrentprocess.md">IoGetCurrentProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548385">IoGetRequestorProcess</a>
+<a href="..\ntifs\nf-ntifs-iogetrequestorprocess.md">IoGetRequestorProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548549">IoThreadToProcess</a>
+<a href="..\ntifs\nf-ntifs-iothreadtoprocess.md">IoThreadToProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552054">KeGetCurrentIrql</a>
+<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552084">KeGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549659">KeStackAttachProcess</a>
+<a href="..\ntifs\nf-ntifs-kestackattachprocess.md">KeStackAttachProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
+<a href="kernel.psgetcurrentprocess">PsGetCurrentProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559936">PsGetCurrentThread</a>
+<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 </dl>
 <p> </p>

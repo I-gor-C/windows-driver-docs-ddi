@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY GenerateMipSubLevels(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543135">D3DDDIARG_GENERATEMIPSUBLEVELS</a> structure that describes how to generate the sublevels of a MIP-map texture.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-generatemipsublevels.md">D3DDDIARG_GENERATEMIPSUBLEVELS</a> structure that describes how to generate the sublevels of a MIP-map texture.</p>
 </dd>
 </dl>
 
@@ -75,8 +75,6 @@ __checkReturn HRESULT APIENTRY GenerateMipSubLevels(
 <p><i>GenerateMipSubLevels</i> returns S_OK or an appropriate error result if the sublevels of a MIP-map texture are not successfully generated.</p>
 
 ## -remarks
-<p>After the user-mode display driver performs an operation that accesses only the top level of a MIP-map texture, the Microsoft Direct3D runtime calls the driver's <i>GenerateMipSubLevels</i> function to notify the driver to automatically regenerate the sublevels of the MIP-map texture by using a specific filter type.</p>
-
 <p>After the user-mode display driver performs an operation that accesses only the top level of a MIP-map texture, the Microsoft Direct3D runtime calls the driver's <i>GenerateMipSubLevels</i> function to notify the driver to automatically regenerate the sublevels of the MIP-map texture by using a specific filter type.</p>
 
 ## -requirements
@@ -114,10 +112,10 @@ __checkReturn HRESULT APIENTRY GenerateMipSubLevels(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543135">D3DDDIARG_GENERATEMIPSUBLEVELS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-generatemipsublevels.md">D3DDDIARG_GENERATEMIPSUBLEVELS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

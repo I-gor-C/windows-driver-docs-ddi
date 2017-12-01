@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_service_discovery_type.htm
 old-project: netvista
 ms.assetid: 5CA8F330-7AFE-44C9-BCCA-CA93479B9754
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

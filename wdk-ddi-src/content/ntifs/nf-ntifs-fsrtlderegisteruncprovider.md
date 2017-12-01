@@ -57,7 +57,7 @@ VOID FsRtlDeregisterUncProvider(
 ### -param <i>Handle</i> [in]
 
 <dd>
-<p>MUP handle returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547178">FsRtlRegisterUncProvider</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff547184">FsRtlRegisterUncProviderEx</a>.</p>
+<p>MUP handle returned by <a href="ifsk.fsrtlregisteruncprovider">FsRtlRegisterUncProvider</a> or <a href="ifsk.fsrtlregisteruncproviderex">FsRtlRegisterUncProviderEx</a>.</p>
 </dd>
 </dl>
 
@@ -65,45 +65,13 @@ VOID FsRtlDeregisterUncProvider(
 <p>None</p>
 
 ## -remarks
-<p>To register a UNC provider on Windows Server 2003, Windows XP, or Windows 2000, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff547178">FsRtlRegisterUncProvider</a>. </p>
+<p>To register a UNC provider on Windows Server 2003, Windows XP, or Windows 2000, use <a href="ifsk.fsrtlregisteruncprovider">FsRtlRegisterUncProvider</a>. </p>
 
-<p>To register a UNC provider on Windows Vista, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff547184">FsRtlRegisterUncProviderEx</a>.</p>
+<p>To register a UNC provider on Windows Vista, use <a href="ifsk.fsrtlregisteruncproviderex">FsRtlRegisterUncProviderEx</a>.</p>
 
-<p>For more information, see the following sections in the Design Guide:</p><dl>
-<dd>
-<p>
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
-</p>
-</dd>
-</dl><p>
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
-</p>
+<p>For more information, see the following sections in the Design Guide:</p>
 
 <p>
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
-</p>
-
-<p>To register a UNC provider on Windows Server 2003, Windows XP, or Windows 2000, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff547178">FsRtlRegisterUncProvider</a>. </p>
-
-<p>To register a UNC provider on Windows Vista, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff547184">FsRtlRegisterUncProviderEx</a>.</p>
-
-<p>For more information, see the following sections in the Design Guide:</p><dl>
-<dd>
-<p>
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
-</p>
-</dd>
-</dl><p>
 <a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
 </p>
 
@@ -166,10 +134,10 @@ VOID FsRtlDeregisterUncProvider(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547178">FsRtlRegisterUncProvider</a>
+<a href="ifsk.fsrtlregisteruncprovider">FsRtlRegisterUncProvider</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547184">FsRtlRegisterUncProviderEx</a>
+<a href="ifsk.fsrtlregisteruncproviderex">FsRtlRegisterUncProviderEx</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_register_buffer_ushort.htm
 old-project: wdf
 ms.assetid: EE076D50-8E08-4D98-872F-DA6DBA27B9E5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WRITE_REGISTER_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,8 +88,6 @@ void WDF_WRITE_REGISTER_BUFFER_USHORT(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The size of the buffer must be large enough to contain at least the specified number of bytes.</p>
-
 <p>The size of the buffer must be large enough to contain at least the specified number of bytes.</p>
 
 ## -requirements

@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTRegisterTrimNotification(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906802">D3DKMT_REGISTERTRIMNOTIFICATION</a> structure that describes the operation.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-registertrimnotification.md">D3DKMT_REGISTERTRIMNOTIFICATION</a> structure that describes the operation.</p>
 </dd>
 </dl>
 
@@ -139,10 +139,10 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTRegisterTrimNotification(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906802">D3DKMT_REGISTERTRIMNOTIFICATION</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-registertrimnotification.md">D3DKMT_REGISTERTRIMNOTIFICATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906787">D3DKMTUnregisterTrimNotification</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtunregistertrimnotification.md">D3DKMTUnregisterTrimNotification</a>
 </dt>
 </dl>
 <p> </p>

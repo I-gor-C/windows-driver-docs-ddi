@@ -68,8 +68,6 @@ ULONG ScsiPortReadPortUlong(
 ## -remarks
 <p><b>ScsiPortReadPortUlong</b> ensures that the data is transferred correctly.</p>
 
-<p><b>ScsiPortReadPortUlong</b> ensures that the data is transferred correctly.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -107,7 +105,7 @@ ULONG ScsiPortReadPortUlong(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>
+<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
 </dt>
 </dl>
 <p> </p>

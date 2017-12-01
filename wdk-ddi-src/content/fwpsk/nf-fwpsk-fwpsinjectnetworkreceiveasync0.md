@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjectnetworkreceiveasync0.htm
 old-project: netvista
 ms.assetid: c34b2be1-fe1c-4a99-ac9c-ddd40b97d8d0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsInjectNetworkReceiveAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
 
 <dd>
 <p>An injection handle that was previously created by a call to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551180">FwpsInjectionHandleCreate0</a> function with the 
+     <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function with the 
      <i>flags</i> parameter set to FWPS_INJECTION_TYPE_NETWORK.</p>
 </dd>
 
@@ -75,8 +75,8 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
 
 <dd>
 <p>An optional handle to the injection context. If specified, it can be obtained by calling the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551202">FwpsQueryPacketInjectionState0</a> function when the packet injection state 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552408">FWPS_PACKET_INJECTION_STATE</a> is
+     <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a> function when the packet injection state 
+     <a href="netvista.fwps_packet_injection_state">FWPS_PACKET_INJECTION_STATE</a> is
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.</p>
 </dd>
 
@@ -90,12 +90,12 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
 
 <dd>
 <p>The identifier of the routing compartment into which the packet data is injected, specified as a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff542009">COMPARTMENT_ID</a> type. This identifier is provided
+     <a href="kernel.compartment_id">COMPARTMENT_ID</a> type. This identifier is provided
      to a callout through the 
      <b>compartmentId</b> member of the 
      <a href="netvista.fwps_incoming_metadata_values0">
      FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function. If the 
+     <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function. If the 
      <b>compartmentId</b> member is available to callouts, FWPS_METADATA_FIELD_COMPARTMENT_ID will be set in
      the 
      <b>currentMetadataValues</b> member. Otherwise, set this parameter to UNSPECIFIED_COMPARTMENT_ID.</p>
@@ -106,7 +106,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
 <dd>
 <p>The index of the interface on which the original packet data was received. A callout driver should
      use the value of the interface index that is passed as one of the incoming data values to its 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function for this
+     <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function for this
      parameter if the packet is to be injected into the same interface where the original packet was
      indicated.</p>
 </dd>
@@ -116,7 +116,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
 <dd>
 <p>The index of the subinterface on which the original packet data was received. A callout driver
      should use the value of the subinterface index that is passed as one of the incoming data values to its 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function for this
+     <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function for this
      parameter if the packet is to be injected into the same subinterface where the original packet was
      indicated.</p>
 </dd>
@@ -125,7 +125,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that describes
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure that describes
      the packet data that is being injected. A callout driver allocates a NET_BUFFER_LIST structure to use to
      inject packet data by calling either the 
      <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
@@ -161,7 +161,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
        function after the filter engine has completed injecting the packet data into the network stack, or
        when an error occurred subsequently. In case of an error, the 
        <b>Status</b> member of the completed 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure will indicate
+       <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure will indicate
        the reason for failure.</p><dl>
 <dt><b>STATUS_FWP_TCPIP_NOT_READY</b></dt>
 </dl><p>The TCP/IP network stack is not ready to accept injection of packet data.</p><dl>
@@ -188,7 +188,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
 <p>If the return value is not STATUS_SUCCESS, the completion function will not be called. In this case,
     the net buffer list pointed to by 
     <i>netBufferList</i> must be freed by a call to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551172">FwpsFreeNetBufferList0</a> or 
+    <a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a> or 
     <a href="..\fwpsk\nf-fwpsk-fwpsfreeclonenetbufferlist0.md">
     FwpsFreeCloneNetBufferList0</a>.</p>
 
@@ -196,32 +196,9 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
     driver should first call the 
     <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
     FwpsQueryPacketInjectionState0</a> function before proceeding with a call to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function, and the driver
+    <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function, and the driver
     should permit packets that have the injection state 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552408">FWPS_PACKET_INJECTION_STATE</a> set to
-    <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b> to pass through unaltered.</p>
-
-<p>A callout driver calls the 
-    <b>FwpsInjectNetworkReceiveAsync0</b> function to inject packet data or a packet fragment into the receive
-    data path. This function can execute asynchronously. Callout drivers normally inject data into the
-    network stack when modifying packet data. For more information about how a callout driver can modify
-    packet data, see 
-    <a href="NULL">Callout Driver Operations</a>.</p>
-
-<p>If the return value is not STATUS_SUCCESS, the completion function will not be called. In this case,
-    the net buffer list pointed to by 
-    <i>netBufferList</i> must be freed by a call to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551172">FwpsFreeNetBufferList0</a> or 
-    <a href="..\fwpsk\nf-fwpsk-fwpsfreeclonenetbufferlist0.md">
-    FwpsFreeCloneNetBufferList0</a>.</p>
-
-<p>The injected packet can be indicated to the callout driver again. To prevent infinite looping, the
-    driver should first call the 
-    <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
-    FwpsQueryPacketInjectionState0</a> function before proceeding with a call to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function, and the driver
-    should permit packets that have the injection state 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552408">FWPS_PACKET_INJECTION_STATE</a> set to
+    <a href="netvista.fwps_packet_injection_state">FWPS_PACKET_INJECTION_STATE</a> set to
     <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b> to pass through unaltered.</p>
 
 ## -requirements
@@ -277,7 +254,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps-inject-complete0.md">completionFn</a>
@@ -287,7 +264,7 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
    FWPS_INCOMING_METADATA_VALUES0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552408">FWPS_PACKET_INJECTION_STATE</a>
+<a href="netvista.fwps_packet_injection_state">FWPS_PACKET_INJECTION_STATE</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
@@ -298,25 +275,25 @@ NTSTATUS NTAPI FwpsInjectNetworkReceiveAsync0(
    FwpsAllocateNetBufferAndNetBufferList0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551170">FwpsFreeCloneNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsfreeclonenetbufferlist0.md">FwpsFreeCloneNetBufferList0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551172">FwpsFreeNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551180">FwpsInjectionHandleCreate0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551181">FwpsInjectionHandleDestroy0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandledestroy0.md">FwpsInjectionHandleDestroy0</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
    FwpsQueryPacketInjectionState0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectNetworkReceiveAsync0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectNetworkReceiveAsync0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

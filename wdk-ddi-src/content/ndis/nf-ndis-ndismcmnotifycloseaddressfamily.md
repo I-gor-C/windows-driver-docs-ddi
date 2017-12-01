@@ -7,7 +7,7 @@ old-location: netvista\ndismcmnotifycloseaddressfamily.htm
 old-project: netvista
 ms.assetid: 47b0b1da-e29b-45cc-921b-69d630670b44
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCmNotifyCloseAddressFamily
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -98,25 +98,6 @@ NDIS_STATUS NdisMCmNotifyCloseAddressFamily(
     <a href="..\ndis\nc-ndis-protocol-cm-notify-close-af-complete.md">
     ProtocolCmNotifyCloseAfComplete</a> function after the client completes the AF close operation.</p>
 
-<p>MCMs, which register as NDIS miniport drivers by calling the 
-    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
-    NdisMRegisterMiniportDriver</a> function, can call the 
-    <b>NdisMCmNotifyCloseAddressFamily</b> function. Stand-alone call managers instead call the 
-    <a href="..\ndis\nf-ndis-ndiscmnotifycloseaddressfamily.md">
-    NdisCmNotifyCloseAddressFamily</a> function.</p>
-
-<p>To close an AF for a miniport adapter, the MCM should call 
-    <b>NdisMCmNotifyCloseAddressFamily</b> from its 
-    <a href="..\ndis\nc-ndis-miniport-halt.md">MiniportHaltEx</a> function. NDIS
-    subsequently calls the 
-    <a href="..\ndis\nc-ndis-protocol-cl-notify-close-af.md">
-    ProtocolClNotifyCloseAf</a> function of the client that has the specified AF open.</p>
-
-<p>If 
-    <b>NdisMCmNotifyCloseAddressFamily</b> returns NDIS_STATUS_PENDING, NDIS calls the MCM's 
-    <a href="..\ndis\nc-ndis-protocol-cm-notify-close-af-complete.md">
-    ProtocolCmNotifyCloseAfComplete</a> function after the client completes the AF close operation.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -160,7 +141,7 @@ NDIS_STATUS NdisMCmNotifyCloseAddressFamily(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
+<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -172,7 +153,7 @@ NDIS_STATUS NdisMCmNotifyCloseAddressFamily(
    NdisCmNotifyCloseAddressFamily</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport-halt.md">MiniportHaltEx</a>
@@ -190,4 +171,4 @@ NDIS_STATUS NdisMCmNotifyCloseAddressFamily(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmNotifyCloseAddressFamily function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmNotifyCloseAddressFamily function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: sensors\gnss_geofence_create_response.htm
 old-project: sensors
 ms.assetid: D832B534-34E2-402F-833A-C072007E3106
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE, *PGNSS_GEOFENCE_CREATE_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices

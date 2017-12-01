@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DXGKARG_CONTROLINTERRUPT2 structure is used in <a href="https://msdn.microsoft.com/library/windows/hardware/mt667971">DxgkDdi_ControlInterrupt2</a> calls to describe the state of interrupts. </p>
+<p>The DXGKARG_CONTROLINTERRUPT2 structure is used in <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-controlinterrupt2.md">DxgkDdi_ControlInterrupt2</a> calls to describe the state of interrupts. </p>
 
 
 ## -syntax
@@ -96,7 +96,7 @@ typedef struct _DXGKARG_CONTROLINTERRUPT2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt667971">DxgkDdi_ControlInterrupt2</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-controlinterrupt2.md">DxgkDdi_ControlInterrupt2</a>
 </dt>
 </dl>
 <p> </p>

@@ -59,13 +59,13 @@ FORCEINLINE NTSTATUS UrsDeviceInitialize(
 ### -param <i>Device</i> [in]
 
 <dd>
-<p>A handle to the framework device object that the client driver retrieved in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.</p>
+<p>A handle to the framework device object that the client driver retrieved in the previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.</p>
 </dd>
 
 ### -param <i>Config</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a> structure that the client driver initialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt628021">URS_CONFIG_INIT</a>.</p>
+<p> A pointer to a <a href="buses.urs_config">URS_CONFIG</a> structure that the client driver initialized by calling <a href="buses.urs_config_init">URS_CONFIG_INIT</a>.</p>
 </dd>
 </dl>
 
@@ -73,19 +73,11 @@ FORCEINLINE NTSTATUS UrsDeviceInitialize(
 <p>The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code. </p>
 
 ## -remarks
-<p>The client driver for the USB dual-role controller must call this method after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> call. </p>
+<p>The client driver for the USB dual-role controller must call this method after the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. </p>
 
 <p>The client driver calls this method in its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> implementation.</p>
 
-<p>During this call, the client driver-supplied event callback implementations are also registered by setting appropriate members of <a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a>. </p>
-
-<p>The method creates resource lists for host and function roles and the queues required to handle IOCTL requests that are sent to the controller. With each role switch operation, the current role's child device stack  is torn down and the device stack for the new role is loaded. The  <b>UrsDeviceInitialize</b> method retrieves identifying information that is used to build those device stacks. The method also retrieves information about the device from the underlying bus, such as ACPI.</p>
-
-<p>The client driver for the USB dual-role controller must call this method after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> call. </p>
-
-<p>The client driver calls this method in its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> implementation.</p>
-
-<p>During this call, the client driver-supplied event callback implementations are also registered by setting appropriate members of <a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a>. </p>
+<p>During this call, the client driver-supplied event callback implementations are also registered by setting appropriate members of <a href="buses.urs_config">URS_CONFIG</a>. </p>
 
 <p>The method creates resource lists for host and function roles and the queues required to handle IOCTL requests that are sent to the controller. With each role switch operation, the current role's child device stack  is torn down and the device stack for the new role is loaded. The  <b>UrsDeviceInitialize</b> method retrieves identifying information that is used to build those device stacks. The method also retrieves information about the device from the underlying bus, such as ACPI.</p>
 
@@ -148,10 +140,10 @@ FORCEINLINE NTSTATUS UrsDeviceInitialize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a>
+<a href="buses.urs_config">URS_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt628021">URS_CONFIG_INIT</a>
+<a href="buses.urs_config_init">URS_CONFIG_INIT</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilsmsmodificationinfo_2.htm
 old-project: netvista
 ms.assetid: 64e5ea3d-a002-45df-b3ad-c8f723cbe54d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

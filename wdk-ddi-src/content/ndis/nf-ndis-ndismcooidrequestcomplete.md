@@ -7,7 +7,7 @@ old-location: netvista\ndismcooidrequestcomplete.htm
 old-project: netvista
 ms.assetid: 18242351-3dec-40df-b112-2335253903d2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCoOidRequestComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,7 +86,7 @@ VOID NdisMCoOidRequestComplete(
 
 <dd>
 <p>A pointer to a buffer that is formatted as an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure. The miniport
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure. The miniport
      driver obtained this pointer as an input parameter to its 
      <a href="..\ndis\nc-ndis-miniport-co-oid-request.md">
      MiniportCoOidRequest</a> function.</p>
@@ -114,18 +114,7 @@ VOID NdisMCoOidRequestComplete(
     <b>NdisMCoOidRequestComplete</b> causes a call to the 
     <a href="..\ndis\nc-ndis-protocol-co-oid-request-complete.md">
     ProtocolCoOidRequestComplete</a> function of the overlying driver that called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561711">NdisCoOidRequest</a> function.</p>
-
-<p>A CoNDIS miniport driver that returns NDIS_STATUS_PENDING from its 
-    <a href="..\ndis\nc-ndis-miniport-co-oid-request.md">MiniportCoOidRequest</a> function must
-    call 
-    <b>NdisMCoOidRequestComplete</b> after the miniport driver has finished the request operation.</p>
-
-<p>A call to 
-    <b>NdisMCoOidRequestComplete</b> causes a call to the 
-    <a href="..\ndis\nc-ndis-protocol-co-oid-request-complete.md">
-    ProtocolCoOidRequestComplete</a> function of the overlying driver that called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561711">NdisCoOidRequest</a> function.</p>
+    <a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a> function.</p>
 
 ## -requirements
 <table>
@@ -180,7 +169,7 @@ VOID NdisMCoOidRequestComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547971">Irql_MCO_Function</a>
+<a href="devtest.ndis_irql_mco_function">Irql_MCO_Function</a>
 </td>
 </tr>
 </table>
@@ -197,10 +186,10 @@ VOID NdisMCoOidRequestComplete(
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561711">NdisCoOidRequest</a>
+<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-co-oid-request-complete.md">
@@ -209,4 +198,4 @@ VOID NdisMCoOidRequestComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoOidRequestComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoOidRequestComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

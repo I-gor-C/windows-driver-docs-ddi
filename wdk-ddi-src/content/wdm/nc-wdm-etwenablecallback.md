@@ -100,13 +100,13 @@ VOID EtwEnableCallback(
 ### -param <i>FilterData</i> [in, optional]
 
 <dd>
-<p>The provider-defined data. This parameter is optional. The provider determines the layout of the data and its purpose. For example, the provider can use this data to additionally filter the events that it writes or use it to perform some calculations before writing the events. For detailed information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545684">Event Filter Descriptor</a>.</p>
+<p>The provider-defined data. This parameter is optional. The provider determines the layout of the data and its purpose. For example, the provider can use this data to additionally filter the events that it writes or use it to perform some calculations before writing the events. For detailed information, see <a href="devtest.event_filter_descriptor">Event Filter Descriptor</a>.</p>
 </dd>
 
 ### -param <i>CallbackContext</i> [in, out, optional]
 
 <dd>
-<p>The context of the callback function that is defined when the provider called <a href="https://msdn.microsoft.com/library/windows/hardware/ff545603">EtwRegister</a> to register itself. This parameter is optional.</p>
+<p>The context of the callback function that is defined when the provider called <a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a> to register itself. This parameter is optional.</p>
 </dd>
 </dl>
 
@@ -114,12 +114,6 @@ VOID EtwEnableCallback(
 <p>None</p>
 
 ## -remarks
-<p>Use the EtwRegister function to specify a pointer to the <b>EtwEnableCallback </b>function.</p>
-
-<p>Use the <i>FilterData</i> parameter of the callback function to supply the provider with sophisticated filtering abilities. The <b>EtwEnableCallback </b>function does not replace the enable-status function calls (<b>EtwEventEnabled</b> and <b>EtwProviderEnabled</b>). However, it serves as a supplement to them. However, unless your level and keywords are currently enabled, the event will not be written, regardless of the <i>FilterData</i> that the callback function provides.</p>
-
-<p>Callers of <b>EtwEnableCallback</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.</p>
-
 <p>Use the EtwRegister function to specify a pointer to the <b>EtwEnableCallback </b>function.</p>
 
 <p>Use the <i>FilterData</i> parameter of the callback function to supply the provider with sophisticated filtering abilities. The <b>EtwEnableCallback </b>function does not replace the enable-status function calls (<b>EtwEventEnabled</b> and <b>EtwProviderEnabled</b>). However, it serves as a supplement to them. However, unless your level and keywords are currently enabled, the event will not be written, regardless of the <i>FilterData</i> that the callback function provides.</p>
@@ -169,16 +163,16 @@ VOID EtwEnableCallback(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545603">EtwRegister</a>
+<a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545590">EtwEventEnabled</a>
+<a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545595">EtwProviderEnabled</a>
+<a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545684">Event Filter Descriptor</a>
+<a href="devtest.event_filter_descriptor">Event Filter Descriptor</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=103399">EnableTrace</a></dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=103398">EnableTraceEx</a></dt>

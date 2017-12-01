@@ -74,7 +74,7 @@ SIZE_T APIENTRY CalcPrivateTessellationShaderSize(
 ### -param <i>pSignatures</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542105">D3D11DDIARG_TESSELLATION_IO_SIGNATURES</a> structure that forms the hull or domain shader's signature.</p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-tessellation-io-signatures.md">D3D11DDIARG_TESSELLATION_IO_SIGNATURES</a> structure that forms the hull or domain shader's signature.</p>
 </dd>
 </dl>
 
@@ -82,8 +82,6 @@ SIZE_T APIENTRY CalcPrivateTessellationShaderSize(
 <p><b>CalcPrivateTessellationShaderSize</b> returns the size of the memory region that the driver requires to create a hull or domain shader.</p>
 
 ## -remarks
-<p>The Direct3D runtime calls the driver's <b>CalcPrivateTessellationShaderSize</b> function to calculate the size of the memory region for a hull or domain shader. This is similar to the way that the Direct3D runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivateshadersize.md">CalcPrivateShaderSize</a> function to calculate the size of the memory region for a pixel, vertex, or geometry shader (that is, a geometry shader without stream output).</p>
-
 <p>The Direct3D runtime calls the driver's <b>CalcPrivateTessellationShaderSize</b> function to calculate the size of the memory region for a hull or domain shader. This is similar to the way that the Direct3D runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivateshadersize.md">CalcPrivateShaderSize</a> function to calculate the size of the memory region for a pixel, vertex, or geometry shader (that is, a geometry shader without stream output).</p>
 
 ## -requirements
@@ -124,10 +122,10 @@ SIZE_T APIENTRY CalcPrivateTessellationShaderSize(
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-calcprivateshadersize.md">CalcPrivateShaderSize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542141">D3D11DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-devicefuncs~r1.md">D3D11DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542105">D3D11DDIARG_TESSELLATION_IO_SIGNATURES</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-tessellation-io-signatures.md">D3D11DDIARG_TESSELLATION_IO_SIGNATURES</a>
 </dt>
 </dl>
 <p> </p>

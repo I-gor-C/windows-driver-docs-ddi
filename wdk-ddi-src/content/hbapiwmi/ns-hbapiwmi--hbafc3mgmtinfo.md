@@ -153,7 +153,7 @@ typedef struct _HBAFC3MgmtInfo {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553939">GetFC3MgmtInfo</a>
+<a href="storage.getfc3mgmtinfo">GetFC3MgmtInfo</a>
 </dt>
 </dl>
 <p> </p>

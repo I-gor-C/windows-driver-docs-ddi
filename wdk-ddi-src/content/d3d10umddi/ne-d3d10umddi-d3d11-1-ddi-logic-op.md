@@ -78,11 +78,7 @@ typedef enum D3D11_1_DDI_LOGIC_OP {
 </dl>
 
 ## -remarks
-<p>The <b>D3D11_1_DDI_LOGIC_OP</b> blend state  logic operations are specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451041">D3D11_1_DDI_BLEND_DESC</a>.<b>LogicOp</b> member in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createblendstate.md">CreateBlendState(D3D11_1)</a> function.</p>
-
-<p>The <b>D3D11_1_DDI_LOGIC_OP</b> blend state  logic operations are specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451041">D3D11_1_DDI_BLEND_DESC</a>.<b>LogicOp</b> member in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createblendstate.md">CreateBlendState(D3D11_1)</a> function.</p>
-
-<p>The <b>D3D11_1_DDI_LOGIC_OP</b> blend state  logic operations are specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451041">D3D11_1_DDI_BLEND_DESC</a>.<b>LogicOp</b> member in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createblendstate.md">CreateBlendState(D3D11_1)</a> function.</p>
+<p>The <b>D3D11_1_DDI_LOGIC_OP</b> blend state  logic operations are specified by the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1-ddi-blend-desc.md">D3D11_1_DDI_BLEND_DESC</a>.<b>LogicOp</b> member in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createblendstate.md">CreateBlendState(D3D11_1)</a> function.</p>
 
 ## -requirements
 <table>
@@ -120,7 +116,7 @@ typedef enum D3D11_1_DDI_LOGIC_OP {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createblendstate.md">CreateBlendState(D3D11_1)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451041">D3D11_1_DDI_BLEND_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1-ddi-blend-desc.md">D3D11_1_DDI_BLEND_DESC</a>
 </dt>
 </dl>
 <p> </p>

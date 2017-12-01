@@ -87,8 +87,6 @@ NTSTATUS GetSecurityUserInfo(
 ## -remarks
 <p>This function obtains information about a logon <a href="http://go.microsoft.com/fwlink/p/?linkid=121237">session</a> via  the <a href="http://go.microsoft.com/fwlink/p/?linkid=121238">SecurityUserData</a>  structure.</p>
 
-<p>This function obtains information about a logon <a href="http://go.microsoft.com/fwlink/p/?linkid=121237">session</a> via  the <a href="http://go.microsoft.com/fwlink/p/?linkid=121238">SecurityUserData</a>  structure.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -143,7 +141,7 @@ NTSTATUS GetSecurityUserInfo(
 <dl>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=121239">LsaFreeReturnBuffer</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549736">MapSecurityError</a>
+<a href="..\ntifs\nf-ntifs-mapsecurityerror.md">MapSecurityError</a>
 </dt>
 </dl>
 <p> </p>

@@ -75,8 +75,6 @@ HRESULT CommitAsync(
 ## -remarks
 <p>To perform the commit operation, call the <a href="print.iprintschemaasyncoperation_start">IPrintSchemaAsyncOperation::Start</a> method to validate the given <i>pPrintTicketCommit</i> and then apply the validated PrintTicket settings to the current PrintTicket object. When the commit operation is completed or if an error occurs during the commit operation, the <a href="print.iprintschemaasyncoperationevent_completed">IPrintSchemaAsyncOperationEvent::Completed</a> event is fired.</p>
 
-<p>To perform the commit operation, call the <a href="print.iprintschemaasyncoperation_start">IPrintSchemaAsyncOperation::Start</a> method to validate the given <i>pPrintTicketCommit</i> and then apply the validated PrintTicket settings to the current PrintTicket object. When the commit operation is completed or if an error occurs during the commit operation, the <a href="print.iprintschemaasyncoperationevent_completed">IPrintSchemaAsyncOperationEvent::Completed</a> event is fired.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -104,7 +102,7 @@ HRESULT CommitAsync(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>
+<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
 </dt>
 <dt>
 <a href="print.iprintschemaasyncoperation_start">IPrintSchemaAsyncOperation::Start</a>

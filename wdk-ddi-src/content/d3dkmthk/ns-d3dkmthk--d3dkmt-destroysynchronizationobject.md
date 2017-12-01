@@ -57,7 +57,7 @@ typedef struct _D3DKMT_DESTROYSYNCHRONIZATIONOBJECT {
 ### -field <b>hSyncObject</b>
 
 <dd>
-<p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546869">D3DKMTCreateSynchronizationObject</a> function returns and that identifies the kernel-mode synchronization object to destroy. </p>
+<p>[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatesynchronizationobject.md">D3DKMTCreateSynchronizationObject</a> function returns and that identifies the kernel-mode synchronization object to destroy. </p>
 </dd>
 </dl>
 
@@ -89,10 +89,10 @@ typedef struct _D3DKMT_DESTROYSYNCHRONIZATIONOBJECT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546869">D3DKMTCreateSynchronizationObject</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatesynchronizationobject.md">D3DKMTCreateSynchronizationObject</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546935">D3DKMTDestroySynchronizationObject</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroysynchronizationobject.md">D3DKMTDestroySynchronizationObject</a>
 </dt>
 </dl>
 <p> </p>

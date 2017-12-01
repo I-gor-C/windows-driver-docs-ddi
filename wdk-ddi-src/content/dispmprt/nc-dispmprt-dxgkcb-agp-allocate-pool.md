@@ -76,7 +76,7 @@ NTSTATUS APIENTRY AgpAllocatePool(
 ### -param <i>CacheType</i> [in]
 
 <dd>
-<p>A constant from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554430">MEMORY_CACHING_TYPE</a> enumeration that specifies whether the CPU can use caching or write combining when it accesses the allocated AGP memory.</p>
+<p>A constant from the <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a> enumeration that specifies whether the CPU can use caching or write combining when it accesses the allocated AGP memory.</p>
 </dd>
 
 ### -param <i>PhysicalAddress</i> [out]
@@ -96,8 +96,6 @@ NTSTATUS APIENTRY AgpAllocatePool(
 <p><b>AgpAllocatePool</b> returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in <i>Ntstatus.h</i>.</p>
 
 ## -remarks
-<p>Call <b>AgpAllocatePool</b> in the display miniport driver's <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function. It is likely that <b>AgpAllocatePool</b> will fail if you call it after <b>DxgkDdiStartDevice</b> has executed.</p>
-
 <p>Call <b>AgpAllocatePool</b> in the display miniport driver's <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function. It is likely that <b>AgpAllocatePool</b> will fail if you call it after <b>DxgkDdiStartDevice</b> has executed.</p>
 
 ## -requirements
@@ -149,7 +147,7 @@ NTSTATUS APIENTRY AgpAllocatePool(
 <a href="..\dispmprt\nc-dispmprt-dxgkcb-agp-set-command.md">AgpSetCommand</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560949">DXGK_AGP_INTERFACE</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-agp-interface.md">DXGK_AGP_INTERFACE</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgkcb-query-services.md">DxgkCbQueryServices</a>

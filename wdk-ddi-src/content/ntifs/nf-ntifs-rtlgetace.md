@@ -29,8 +29,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe (kernel mode); 
-Ntdll.dll (user mode)
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql: < DISPATCH_LEVEL
 req.iface: 
 ---
@@ -80,8 +79,6 @@ NTSTATUS RtlGetAce(
 <p><b>RtlGetAce</b> returns STATUS_SUCCESS or an error status code such as STATUS_INVALID_PARAMETER. </p>
 
 ## -remarks
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
-
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
 
 ## -requirements
@@ -148,13 +145,13 @@ NTSTATUS RtlGetAce(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+<a href="ifsk.ace">ACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538866">ACL</a>
+<a href="..\ntifs\ns-ntifs--acl.md">ACL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552151">RtlCreateAcl</a>
+<a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
 </dt>
 </dl>
 <p> </p>

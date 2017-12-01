@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>FltReleaseContextsEx</b> releases each context in a given <a href="https://msdn.microsoft.com/library/windows/hardware/hh967703">FLT_RELATED_CONTEXTS_EX</a> structure.</p>
+<p><b>FltReleaseContextsEx</b> releases each context in a given <a href="..\fltkernel\ns-fltkernel--flt-related-contexts-ex.md">FLT_RELATED_CONTEXTS_EX</a> structure.</p>
 
 
 ## -syntax
@@ -58,13 +58,13 @@ VOID FltReleaseContextsEx(
 ### -param <i>ContextsSize</i> [in]
 
 <dd>
-<p>The size, in bytes, of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967703">FLT_RELATED_CONTEXTS_EX</a> structure pointed to by <i>Contexts</i>. Set to <b>sizeof</b>(FLT_RELATED_CONTEXTS_EX).</p>
+<p>The size, in bytes, of the <a href="..\fltkernel\ns-fltkernel--flt-related-contexts-ex.md">FLT_RELATED_CONTEXTS_EX</a> structure pointed to by <i>Contexts</i>. Set to <b>sizeof</b>(FLT_RELATED_CONTEXTS_EX).</p>
 </dd>
 
 ### -param <i>Contexts</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967703">FLT_RELATED_CONTEXTS_EX</a> structure. </p>
+<p>Pointer to the <a href="..\fltkernel\ns-fltkernel--flt-related-contexts-ex.md">FLT_RELATED_CONTEXTS_EX</a> structure. </p>
 </dd>
 </dl>
 
@@ -72,19 +72,9 @@ VOID FltReleaseContextsEx(
 <p>None </p>
 
 ## -remarks
-<p><b>FltReleaseContextsEx</b> decrements the reference count on all contexts in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967703">FLT_RELATED_CONTEXTS_EX</a> structure and sets all members of the structure to NULL_CONTEXT. </p>
+<p><b>FltReleaseContextsEx</b> decrements the reference count on all contexts in the <a href="..\fltkernel\ns-fltkernel--flt-related-contexts-ex.md">FLT_RELATED_CONTEXTS_EX</a> structure and sets all members of the structure to NULL_CONTEXT. </p>
 
-<p>To get the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967703">FLT_RELATED_CONTEXTS_EX</a> structure for a given minifilter driver for a given I/O request, call <a href="https://msdn.microsoft.com/library/windows/hardware/hh967699">FltGetContextsEx</a>. </p>
-
-<p>For more information about context reference counting, see <a href="ifsk.referencing_contexts">Referencing Contexts</a>. </p>
-
-<p>Callers of <b>FltReleaseContextsEx</b> must be running at IRQL &lt;= DISPATCH_LEVEL if all contexts were allocated from nonpaged pool. If any contexts were allocated from paged pool, callers must be running at IRQL &lt;= APC_LEVEL. </p>
-
-<p>When each context's reference count reaches zero, the context is freed immediately if the caller is running at IRQL &lt;= APC_LEVEL. If the caller is running at IRQL DISPATCH_LEVEL, a work item is scheduled to free the context. </p>
-
-<p><b>FltReleaseContextsEx</b> decrements the reference count on all contexts in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967703">FLT_RELATED_CONTEXTS_EX</a> structure and sets all members of the structure to NULL_CONTEXT. </p>
-
-<p>To get the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967703">FLT_RELATED_CONTEXTS_EX</a> structure for a given minifilter driver for a given I/O request, call <a href="https://msdn.microsoft.com/library/windows/hardware/hh967699">FltGetContextsEx</a>. </p>
+<p>To get the <a href="..\fltkernel\ns-fltkernel--flt-related-contexts-ex.md">FLT_RELATED_CONTEXTS_EX</a> structure for a given minifilter driver for a given I/O request, call <a href="..\fltkernel\nf-fltkernel-fltgetcontextsex.md">FltGetContextsEx</a>. </p>
 
 <p>For more information about context reference counting, see <a href="ifsk.referencing_contexts">Referencing Contexts</a>. </p>
 
@@ -155,19 +145,19 @@ VOID FltReleaseContextsEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544629">FLT_CONTEXT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel--flt-context-registration.md">FLT_CONTEXT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967703">FLT_RELATED_CONTEXTS_EX</a>
+<a href="..\fltkernel\ns-fltkernel--flt-related-contexts-ex.md">FLT_RELATED_CONTEXTS_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541710">FltAllocateContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967699">FltGetContextsEx</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetcontextsex.md">FltGetContextsEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544314">FltReleaseContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 </dt>
 </dl>
 <p> </p>

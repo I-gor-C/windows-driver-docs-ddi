@@ -103,13 +103,13 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL {
 ### -field <b>TransferDirection</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn906830">DXGK_MEMORY_TRANSFER_DIRECTION</a> structure describing the operation.</p>
+<p>The <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-memory-transfer-direction.md">DXGK_MEMORY_TRANSFER_DIRECTION</a> structure describing the operation.</p>
 </dd>
 
 ### -field <b>Flags</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn906843">DXGK_TRANSFERVIRTUALFLAGS</a> structure describing the operation.</p>
+<p>The <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-transfervirtualflags.md">DXGK_TRANSFERVIRTUALFLAGS</a> structure describing the operation.</p>
 </dd>
 
 ### -field <b>DestinationPageTable</b>
@@ -158,13 +158,13 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL {
 <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906830">DXGK_MEMORY_TRANSFER_DIRECTION</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-memory-transfer-direction.md">DXGK_MEMORY_TRANSFER_DIRECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906843">DXGK_TRANSFERVIRTUALFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-transfervirtualflags.md">DXGK_TRANSFERVIRTUALFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557540">DXGKARG_BUILDPAGINGBUFFER</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
 </dt>
 </dl>
 <p> </p>

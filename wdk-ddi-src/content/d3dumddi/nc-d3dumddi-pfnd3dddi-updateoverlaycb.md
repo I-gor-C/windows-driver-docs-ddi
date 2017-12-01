@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnUpdateOverlayCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544282">D3DDDICB_UPDATEOVERLAY</a> structure that describes how to modify the overlay.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-updateoverlay.md">D3DDDICB_UPDATEOVERLAY</a> structure that describes how to modify the overlay.</p>
 </dd>
 </dl>
 
@@ -126,10 +126,10 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnUpdateOverlayCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544512">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544282">D3DDDICB_UPDATEOVERLAY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-updateoverlay.md">D3DDDICB_UPDATEOVERLAY</a>
 </dt>
 </dl>
 <p> </p>

@@ -60,7 +60,7 @@ HRESULT _stdcall wiasQueueEvent(
 ### -param <i>bstrDeviceId</i> [in]
 
 <dd>
-<p>Specifies the device ID. This is the value passed to the minidriver in the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544986">IWiaMiniDrv::drvInitializeWia</a> method.</p>
+<p>Specifies the device ID. This is the value passed to the minidriver in the call to the <a href="image.iwiaminidrv_drvinitializewia">IWiaMiniDrv::drvInitializeWia</a> method.</p>
 </dd>
 
 ### -param <i>pEventGUID</i> [in]
@@ -80,10 +80,6 @@ HRESULT _stdcall wiasQueueEvent(
 <p>On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).</p>
 
 ## -remarks
-<p>This method should be used whenever the device must signal that an event of some type occurred. The device does this by placing the event on the event queue. For example, when a camera takes a new picture, it should generate a WIA_EVENT_ITEM_CREATED event after adding a new driver item to its tree. The camera can place this event on the event queue in this way:</p>
-
-<p>See the Windows SDK documentation for a complete list of WIA event identifiers.</p>
-
 <p>This method should be used whenever the device must signal that an event of some type occurred. The device does this by placing the event on the event queue. For example, when a camera takes a new picture, it should generate a WIA_EVENT_ITEM_CREATED event after adding a new driver item to its tree. The camera can place this event on the event queue in this way:</p>
 
 <p>See the Windows SDK documentation for a complete list of WIA event identifiers.</p>
@@ -143,7 +139,7 @@ HRESULT _stdcall wiasQueueEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544986">IWiaMiniDrv::drvInitializeWia</a>
+<a href="image.iwiaminidrv_drvinitializewia">IWiaMiniDrv::drvInitializeWia</a>
 </dt>
 </dl>
 <p> </p>

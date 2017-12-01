@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ScsiReportLuns_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564918">ScsiReportLuns</a> method.</p>
+<p>The ScsiReportLuns_IN structure holds the input data for the <a href="storage.scsireportluns">ScsiReportLuns</a> method.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _ScsiReportLuns_IN {
 ### -field <b>UniqueSessionId</b>
 
 <dd>
-<p>A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in their <i>UniqueSessionId</i> parameter. </p>
+<p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their <i>UniqueSessionId</i> parameter. </p>
 </dd>
 </dl>
 
@@ -81,16 +81,16 @@ typedef struct _ScsiReportLuns_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564918">ScsiReportLuns</a>
+<a href="storage.scsireportluns">ScsiReportLuns</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564936">ScsiReportLuns_OUT</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--scsireportluns-out.md">ScsiReportLuns_OUT</a>
 </dt>
 </dl>
 <p> </p>

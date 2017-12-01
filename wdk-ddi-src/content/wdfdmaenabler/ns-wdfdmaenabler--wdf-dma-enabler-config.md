@@ -7,7 +7,7 @@ old-location: wdf\wdf_dma_enabler_config.htm
 old-project: wdf
 ms.assetid: 60702ce0-c15b-49ad-b983-af68086710b2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_DMA_ENABLER_CONFIG, WDF_DMA_ENABLER_CONFIG, *PWDF_DMA_ENABLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,13 +76,13 @@ typedef struct _WDF_DMA_ENABLER_CONFIG {
 ### -field <b>Profile</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551295">WDF_DMA_PROFILE</a>-typed value, which identifies the type of bus-master DMA operation that will be associated with the DMA enabler object.</p>
+<p>A <a href="..\wdfdmaenabler\ne-wdfdmaenabler--wdf-dma-profile.md">WDF_DMA_PROFILE</a>-typed value, which identifies the type of bus-master DMA operation that will be associated with the DMA enabler object.</p>
 </dd>
 
 ### -field <b>MaximumLength</b>
 
 <dd>
-<p>The default maximum size, in bytes, that the device can handle in a single <a href="wdf.dma_transactions_and_dma_transfers">DMA transfer</a>. (Drivers can override this default value for individual <a href="wdf.dma_transactions_and_dma_transfers">DMA transactions</a> by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff547127">WdfDmaTransactionSetMaximumLength</a>.) If your driver must run on versions of Microsoft Windows operating systems that support a maximum of 16 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554406">map registers</a>, <b>MaximumLength</b> must be less than 65,536.  </p>
+<p>The default maximum size, in bytes, that the device can handle in a single <a href="wdf.dma_transactions_and_dma_transfers">DMA transfer</a>. (Drivers can override this default value for individual <a href="wdf.dma_transactions_and_dma_transfers">DMA transactions</a> by calling <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetmaximumlength.md">WdfDmaTransactionSetMaximumLength</a>.) If your driver must run on versions of Microsoft Windows operating systems that support a maximum of 16 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554406">map registers</a>, <b>MaximumLength</b> must be less than 65,536.  </p>
 </dd>
 
 ### -field <b>EvtDmaEnablerFill</b>
@@ -136,12 +136,12 @@ typedef struct _WDF_DMA_ENABLER_CONFIG {
 ### -field <b>Flags</b>
 
 <dd>
-<p>A bitwise OR of one or more values from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439491">WDF_DMA_ENABLER_CONFIG_FLAGS</a> enumeration. The <b>Flags</b> member is available in version 1.11 and in later versions of KMDF.</p>
+<p>A bitwise OR of one or more values from the <a href="..\wdfdmaenabler\ne-wdfdmaenabler--wdf-dma-enabler-config-flags.md">WDF_DMA_ENABLER_CONFIG_FLAGS</a> enumeration. The <b>Flags</b> member is available in version 1.11 and in later versions of KMDF.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>WDF_DMA_ENABLER_CONFIG</b> structure is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546983">WdfDmaEnablerCreate</a> method.</p>
+<p>The <b>WDF_DMA_ENABLER_CONFIG</b> structure is used as an input parameter to the <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a> method.</p>
 
 <p>Drivers must call <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf-dma-enabler-config-init.md">WDF_DMA_ENABLER_CONFIG_INIT</a> to initialize the <b>WDF_DMA_ENABLER_CONFIG</b> structure.</p>
 
@@ -192,18 +192,18 @@ typedef struct _WDF_DMA_ENABLER_CONFIG {
 <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt-wdf-dma-enabler-selfmanaged-io-stop.md">EvtDmaEnablerSelfManagedIoStop</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551295">WDF_DMA_PROFILE</a>
+<a href="..\wdfdmaenabler\ne-wdfdmaenabler--wdf-dma-profile.md">WDF_DMA_PROFILE</a>
 </dt>
 <dt>
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf-dma-enabler-config-init.md">WDF_DMA_ENABLER_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546983">WdfDmaEnablerCreate</a>
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547127">WdfDmaTransactionSetMaximumLength</a>
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetmaximumlength.md">WdfDmaTransactionSetMaximumLength</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_ENABLER_CONFIG structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_ENABLER_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

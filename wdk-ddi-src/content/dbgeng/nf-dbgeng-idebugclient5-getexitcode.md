@@ -7,7 +7,7 @@ old-location: debugger\getexitcode.htm
 old-project: debugger
 ms.assetid: faa5cc0f-a99c-42fb-ab8f-a37c31bc4dde
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugClient5, GetExitCode, IDebugClient5::GetExitCode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,8 +71,6 @@ HRESULT GetExitCode(
 <p> </p>
 
 ## -remarks
-<p>This method is available only for live user-mode debugging.</p>
-
 <p>This method is available only for live user-mode debugging.</p>
 
 ## -requirements

@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvqueryuirequest.htm
 old-project: netvista
 ms.assetid: 37c01180-0742-4764-88c3-9ceb807a0086
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -107,9 +106,9 @@ DWORD APIENTRY Dot11ExtIhvQueryUIRequest(
 
 <dd>
 <p>The address of a pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547637">DOT11EXT_IHV_UI_REQUEST</a> structure.
+     <a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-ui-request.md">DOT11EXT_IHV_UI_REQUEST</a> structure.
      The IHV Extensions DLL must allocate a buffer for the DOT11EXT_IHV_UI_REQUEST structure by calling 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547419">Dot11ExtAllocateBuffer</a>.</p>
+     <a href="..\wlanihv\nc-wlanihv-dot11ext-allocate-buffer.md">Dot11ExtAllocateBuffer</a>.</p>
 </dd>
 </dl>
 
@@ -122,41 +121,18 @@ DWORD APIENTRY Dot11ExtIhvQueryUIRequest(
 <p>When 
     <i>Dot11ExtIhvQueryUIRequest</i> is called, the IHV Extensions DLL must allocate and return a buffer
     formatted as a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547637">DOT11EXT_IHV_UI_REQUEST</a> structure.
+    <a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-ui-request.md">DOT11EXT_IHV_UI_REQUEST</a> structure.
     In this situation, the DLL must follow these guidelines:</p>
 
 <p>The IHV Extensions DLL must call 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547419">Dot11ExtAllocateBuffer</a> to
+      <a href="..\wlanihv\nc-wlanihv-dot11ext-allocate-buffer.md">Dot11ExtAllocateBuffer</a> to
       allocate the buffer. After the DLL returns from 
       <i>Dot11ExtIhvQueryUIRequest</i>, the operating system is responsible for calling 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547422">Dot11ExtFreeBuffer</a> to free the
+      <a href="..\wlanihv\nc-wlanihv-dot11ext-free-buffer.md">Dot11ExtFreeBuffer</a> to free the
       buffer.</p>
 
 <p>The IHV Extensions DLL formats the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547637">DOT11EXT_IHV_UI_REQUEST</a> structure
-      for a UI request appropriate for the change in connection status.</p>
-
-<p>For example, if 
-      <i>connectionPhase</i> is set to 
-      <b>connection_phase_initial_connection</b>, the IHV Extensions DLL could set the members of the
-      DOT11EXT_IHV_UI_REQUEST structure to reference a user interface page that notifies the user of the
-      start of the connection operation.</p>
-
-<p>When 
-    <i>Dot11ExtIhvQueryUIRequest</i> is called, the IHV Extensions DLL must allocate and return a buffer
-    formatted as a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547637">DOT11EXT_IHV_UI_REQUEST</a> structure.
-    In this situation, the DLL must follow these guidelines:</p>
-
-<p>The IHV Extensions DLL must call 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547419">Dot11ExtAllocateBuffer</a> to
-      allocate the buffer. After the DLL returns from 
-      <i>Dot11ExtIhvQueryUIRequest</i>, the operating system is responsible for calling 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547422">Dot11ExtFreeBuffer</a> to free the
-      buffer.</p>
-
-<p>The IHV Extensions DLL formats the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547637">DOT11EXT_IHV_UI_REQUEST</a> structure
+      <a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-ui-request.md">DOT11EXT_IHV_UI_REQUEST</a> structure
       for a UI request appropriate for the change in connection status.</p>
 
 <p>For example, if 
@@ -201,13 +177,13 @@ DWORD APIENTRY Dot11ExtIhvQueryUIRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547419">Dot11ExtAllocateBuffer</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-allocate-buffer.md">Dot11ExtAllocateBuffer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547422">Dot11ExtFreeBuffer</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-free-buffer.md">Dot11ExtFreeBuffer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547637">DOT11EXT_IHV_UI_REQUEST</a>
+<a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-ui-request.md">DOT11EXT_IHV_UI_REQUEST</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a>
@@ -215,4 +191,4 @@ DWORD APIENTRY Dot11ExtIhvQueryUIRequest(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_QUERY_UI_REQUEST callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_QUERY_UI_REQUEST callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

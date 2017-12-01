@@ -110,26 +110,6 @@ VOID EvtSpbControllerIoRead(
 
 <p>The EVT_SPB_CONTROLLER_READ function type is defined in the Spbcx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the EVT_SPB_CONTROLLER_READ function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.</p>
 
-<p>SpbCx manages the I/O queue for the SPB controller. SpbCx calls the SPB controller driver's <i>EvtSpbControllerIoRead</i> callback function when a client (peripheral driver) of the SPB controller sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> request to a target device that is attached to the bus. The <i>Request</i> parameter value is a handle that encapsulates this request.</p>
-
-<p>An <i>EvtSpbControllerIoRead</i> callback does not return a status value. Instead, the SPB controller driver indicates the status of the read operation in the completion status for the I/O request.</p>
-
-<p>An <i>EvtSpbControllerIoRead</i> callback is asynchronous.  That is, the callback function should initiate the requested read operation and then return without waiting for the operation to complete. Later, the SPB controller driver completes the read request during an interrupt DPC or a timer DPC.</p>
-
-<p>If the read operation completes in full, the SPB controller driver should set the completion status to  STATUS_SUCCESS. If the target device indicates that it can supply some but not all  of the data requested, the SPB controller driver should retrieve as much data as is available, specify the number of data bytes retrieved, and set the completion status in the I/O request to  STATUS_SUCCESS. Such a partially completed read operation cannot occur on an SPI or I²C bus, but might occur on another type of bus.</p>
-
-<p>If the read operation fails due to line noise, a controller hardware error, or a driver error, then the SPB controller driver should set the completion status in the I/O request to an appropriate error code. Not all buses provide a mechanism for a target device to report a transport error or a partially completed transfer, and not all controllers can detect these conditions.</p>
-
-<p>To register an <i>EvtSpbControllerIoRead</i> callback function, call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a> method.</p>
-
-<p>To define an <i>EvtSpbControllerIoRead</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define an <i>EvtSpbControllerIoRead</i> callback function that is named <code>MyEvtSpbControllerIoRead</code>, use the EVT_SPB_CONTROLLER_READ function type, as shown in this code example:</p>
-
-<p>Then, implement your callback function as follows:</p>
-
-<p>The EVT_SPB_CONTROLLER_READ function type is defined in the Spbcx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the EVT_SPB_CONTROLLER_READ function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.</p>
-
 ## -requirements
 <table>
 <tr>

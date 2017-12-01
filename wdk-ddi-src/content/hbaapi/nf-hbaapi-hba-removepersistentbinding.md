@@ -59,7 +59,7 @@ HBA_STATUS HBA_API HBA_RemovePersistentBinding(
 ### -param <i>Handle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
 ### -param <i>HbaPortWWN</i> [in]
@@ -71,12 +71,12 @@ HBA_STATUS HBA_API HBA_RemovePersistentBinding(
 ### -param <i>Binding</i> [in]
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556057">HBA_FCPBinding2</a> that contains an array of bindings between operating system identifiers, SCSI logical unit ID descriptors (LUIDs) and fibre channel protocol (FCP) identifiers for a set of logical units. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fcpbinding2.md">HBA_FCPBinding2</a> that contains an array of bindings between operating system identifiers, SCSI logical unit ID descriptors (LUIDs) and fibre channel protocol (FCP) identifiers for a set of logical units. </p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_RemovePersistentBinding</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_RemovePersistentBinding</b> returns one of the following values.</p><dl>
+<p>The <b>HBA_RemovePersistentBinding</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_RemovePersistentBinding</b> returns one of the following values.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the indicated persistent bindings were successfully removed for the indicated port. </p><dl>
 <dt><b>HBA_STATUS_ERROR_ILLEGAL_WWN</b></dt>
@@ -89,8 +89,6 @@ HBA_STATUS HBA_API HBA_RemovePersistentBinding(
 <p> </p>
 
 ## -remarks
-<p>The removal of persistent bindings does not change target mappings until the operating system is restarted or HBA and/or fabric is reinitialized. </p>
-
 <p>The removal of persistent bindings does not change target mappings until the operating system is restarted or HBA and/or fabric is reinitialized. </p>
 
 ## -requirements
@@ -140,10 +138,10 @@ HBA_STATUS HBA_API HBA_RemovePersistentBinding(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

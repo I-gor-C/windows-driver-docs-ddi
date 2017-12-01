@@ -7,7 +7,7 @@ old-location: netvista\ndisifregisterprovider.htm
 old-project: netvista
 ms.assetid: 1624426b-9e67-4aa2-83d8-f1e6fa484858
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisIfRegisterProvider
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -105,7 +105,7 @@ NDIS_STATUS NdisIfRegisterProvider(
     <b>NdisIfRegisterProvider</b> function once during initialization to register as an NDIS interface
     provider. For example, the driver can call 
     <b>NdisIfRegisterProvider</b> from its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. An interface provider is a
+    <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. An interface provider is a
     software component that manages network interfaces to support the MIB (
     <a href="netvista.overview_of_ndis_network_interfaces">RFC 2863</a>).</p>
 
@@ -117,45 +117,14 @@ NDIS_STATUS NdisIfRegisterProvider(
     <b>NdisIfRegisterProvider</b>.</p>
 
 <p>NDIS interface providers call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562715">NdisIfRegisterInterface</a> function
+    <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a> function
     to register a network interface. A provider can register multiple interfaces.</p>
 
 <p>If 
     <b>NdisIfRegisterProvider</b> succeeds, it returns a handle at the location that the 
     <i>pNdisProviderHandle</i> parameter points to. The interface provider should retain this handle for use
     in subsequent calls that require an interface provider handle. For example, a driver must call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562703">NdisIfDeregisterProvider</a> before
-    the driver unloads.</p>
-
-<p>A component that is no longer an interface provider can call the 
-    <b>NdisIfDeregisterProvider</b> function at any time to release the interface provider resources that NDIS
-    allocated when the driver called 
-    <b>NdisIfRegisterProvider</b>.</p>
-
-<p>NDIS drivers call the 
-    <b>NdisIfRegisterProvider</b> function once during initialization to register as an NDIS interface
-    provider. For example, the driver can call 
-    <b>NdisIfRegisterProvider</b> from its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. An interface provider is a
-    software component that manages network interfaces to support the MIB (
-    <a href="netvista.overview_of_ndis_network_interfaces">RFC 2863</a>).</p>
-
-<p>To handle interface provider OID requests, interface providers provide entry points for callback
-    functions in the 
-    <a href="..\ndis\ns-ndis--ndis-if-provider-characteristics.md">
-    NDIS_IF_PROVIDER_CHARACTERISTICS</a> structure at the 
-    <i>ProviderCharacteristics</i> parameter of 
-    <b>NdisIfRegisterProvider</b>.</p>
-
-<p>NDIS interface providers call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562715">NdisIfRegisterInterface</a> function
-    to register a network interface. A provider can register multiple interfaces.</p>
-
-<p>If 
-    <b>NdisIfRegisterProvider</b> succeeds, it returns a handle at the location that the 
-    <i>pNdisProviderHandle</i> parameter points to. The interface provider should retain this handle for use
-    in subsequent calls that require an interface provider handle. For example, a driver must call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562703">NdisIfDeregisterProvider</a> before
+    <a href="..\ndis\nf-ndis-ndisifderegisterprovider.md">NdisIfDeregisterProvider</a> before
     the driver unloads.</p>
 
 <p>A component that is no longer an interface provider can call the 
@@ -216,7 +185,7 @@ NDIS_STATUS NdisIfRegisterProvider(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547949">Irql_Interfaces_Function</a>
+<a href="devtest.ndis_irql_interfaces_function">Irql_Interfaces_Function</a>
 </td>
 </tr>
 </table>
@@ -224,19 +193,19 @@ NDIS_STATUS NdisIfRegisterProvider(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>
+<a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-if-provider-characteristics.md">
    NDIS_IF_PROVIDER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562703">NdisIfDeregisterProvider</a>
+<a href="..\ndis\nf-ndis-ndisifderegisterprovider.md">NdisIfDeregisterProvider</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562715">NdisIfRegisterInterface</a>
+<a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfRegisterProvider function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfRegisterProvider function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -78,7 +78,7 @@ typedef struct _D3DDDIENCRYPTED_BLOCK_INFO {
 ## -remarks
 <p>Because the buffer's encrypted portion is specified in bytes, an application must ensure that the encrypted blocks match the GPU's crypto-block alignment. </p>
 
-<p>The runtime can specify a populated D3DDDIENCRYPTED_BLOCK_INFO structure in the block of memory that the <b>pEncryptedBlockInfo</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543011">D3DDDIARG_DECRYPTIONBLT</a> structure points to when the runtime calls the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decryptionblt.md">DecryptionBlt</a> function to write data to a protected surface. </p>
+<p>The runtime can specify a populated D3DDDIENCRYPTED_BLOCK_INFO structure in the block of memory that the <b>pEncryptedBlockInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decryptionblt.md">D3DDDIARG_DECRYPTIONBLT</a> structure points to when the runtime calls the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decryptionblt.md">DecryptionBlt</a> function to write data to a protected surface. </p>
 
 <p>The following examples show how the runtime can partition a buffer's encryption.</p>
 
@@ -107,7 +107,7 @@ typedef struct _D3DDDIENCRYPTED_BLOCK_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543011">D3DDDIARG_DECRYPTIONBLT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decryptionblt.md">D3DDDIARG_DECRYPTIONBLT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decryptionblt.md">DecryptionBlt</a>

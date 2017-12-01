@@ -40,8 +40,8 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p><b>RxDriverEntry</b> is called by a monolithic network mini-redirector driver from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine to initialize the RDBSS static library.</p>
-<p>For non-monolithic drivers, this initialization routine is equivalent to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine of the RDBSS.SYS device driver.</p>
+<p><b>RxDriverEntry</b> is called by a monolithic network mini-redirector driver from its <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine to initialize the RDBSS static library.</p>
+<p>For non-monolithic drivers, this initialization routine is equivalent to the <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine of the RDBSS.SYS device driver.</p>
 
 
 ## -syntax
@@ -60,7 +60,7 @@ NTSTATUS RxDriverEntry(
 ### -param <i>DriverObject</i> [in]
 
 <dd>
-<p>A pointer to the driver object of the network mini-redirector driver. Each driver receives a pointer to its driver object in a parameter to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. This driver object will be used to create the device object for the network mini-redirector driver. </p>
+<p>A pointer to the driver object of the network mini-redirector driver. Each driver receives a pointer to its driver object in a parameter to its <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. This driver object will be used to create the device object for the network mini-redirector driver. </p>
 </dd>
 
 ### -param <i>RegistryPath</i> [in]
@@ -79,78 +79,9 @@ NTSTATUS RxDriverEntry(
 <p> </p>
 
 ## -remarks
-<p>A monolithic network mini-redirector driver which is linked statically with RDBSSLIB.LIB must call <b>RxDriverEntry</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine to initialize the copy of the RDBSSLIB library linked with the driver. <b>RxDriverEntry</b> must be called by a monolithic network mini-redirector driver before any other RDBSS routines are called. </p>
+<p>A monolithic network mini-redirector driver which is linked statically with RDBSSLIB.LIB must call <b>RxDriverEntry</b> from its <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine to initialize the copy of the RDBSSLIB library linked with the driver. <b>RxDriverEntry</b> must be called by a monolithic network mini-redirector driver before any other RDBSS routines are called. </p>
 
-<p>After calling <b>RxDriverEntry</b> to initialize the copy of the RDBSS library near the start of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine, the network mini-redirector driver would usually call <a href="https://msdn.microsoft.com/library/windows/hardware/ff554693">RxRegisterMinirdr</a> later in its <i>DriverEntry</i> routine to register with RDBSS. </p>
-
-<p>If the <b>RxDriverEntry</b> call is successful, internal global RDBBS data structures are initialized. Various spinlocks and mutexes are created to protect these data structures. One of these data structures is the RDBSS_DATA structure which is the top structure in the RDBSS-memory data structure. The <i>DriverObject</i> parameter is stored in the <b>DriverObject</b> member of the RDBSS_DATA structure. <b>RxDriverEntry</b> also initializes tracing, logging, and debugging if this is enabled (a checked build, for example). </p>
-
-<p><b>RxDriverEntry</b> will also try to open the registry path passed as the <i>RegistryPath</i> parameter, treating this object as a case-insensitive string. If this registry key can be successfully opened, then an attempt will be made to open a Parameters registry key below this entry. </p>
-
-<p><b>RxDriverEntry</b> will also attempt to open the following registry key:</p>
-
-<p>
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>HKLM\System\CurrentControlSet\Services\LanmanWorkStation\Parameters</pre>
-</td>
-</tr>
-</table></span></div>
-</p>
-
-<p>If this key can be opened, then an attempt will be made to read some values under this key depending on the version of the operating system.</p>
-
-<p>On Windows XP and later, <b>RxDriverEntry</b> will attempt to open the following value under the LanmanWorkStation\Parameters key:</p>
-
-<p>
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>DisableByteRangeLockingOnReadOnlyFiles</pre>
-</td>
-</tr>
-</table></span></div>
-</p>
-
-<p>This value is a DWORD that is treated as a boolean and stored as the boolean value for DisableByteRangeLockingOnReadOnlyFiles, an RDBSS variable for handling byte range locking on read only files. This variable affects how RDBSS handles a new SRV_OPEN request by the network mini-redirector on an FCB and decides whether it can be collapsed onto an existing SRV_OPEN if the attributes are compatible. If a network mini-redirector driver wants to change this behavior, the driver should set the value of DisableByteRangeLockingOnReadOnlyFiles to the appropriate value after the <b>RxDriverEntry</b> routine has returned. The RDBSSLIB.LIB static library exposes DisableByteRangeLockingOnReadOnlyFiles as an external variable.</p>
-
-<p>On Windows 2000 and Windows XP, <b>RxDriverEntry</b> will attempt to open the following value under the LanmanWorkStation\Parameters key:</p>
-
-<p>
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>ReadAheadGranularity</pre>
-</td>
-</tr>
-</table></span></div>
-</p>
-
-<p>This value is a DWORD that is treated as a number and stored as the value for an internal RDBSS option on the number of PAGE_SIZE pages for read ahead used by the Cache Manager. Any registry value greater than 16 is treated as if this value were limited to 16 (the maximum value currently allowed). This internal option is stored as the number of pages times the PAGE_SIZE on the processor (a maximum of 0x10000 or 64K for a 4K PAGE_SIZE, for example). On Windows 2000 and Windows XP, RDBSS calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff539224">CcSetReadAheadGranularity</a> with this option for various create, read, and write operations. If a network mini-redirector driver wants to change this behavior, the driver should set the value of ReadAheadGranularity to the appropriate value after the <b>RxDriverEntry</b> routine has returned. The RDBSSLIB.LIB static library exposes ReadAheadGranularity as an external variable. </p>
-
-<p>On X86 systems, 64K is the largest write that will be issued by the Memory Manager when issuing a paging write (flushes of the cache will be paging writes through the Memory Manager). For remote file systems, 64K is not the best choice. The most data that can be transferred in a single TDI network request would be less than 64K because of overhead for protocol information. </p>
-
-<p>On Windows Server 2003, a registry value to set ReadAheadGranularity is not exposed and RDBSS defaults to 32K (8 4K PAGE_SIZE pages). This is the same default value adopted for local files systems.</p>
-
-<p><b>RxDriverEntry</b> retrieves a pointer to the kernel process that is running by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a> and stores this value in an internal RDBSS data structure. This kernel process is sometimes called the file system process.</p>
-
-<p><b>RxDriverEntry</b> then copies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554468">RxFsdDispatch</a> routine over all of the entries in the driver dispatch table. So if a monolithic network mini-redirector driver needs to receive specific IRPs for special processing before the RDBSS library, then a copy of its original driver dispatch table should be saved before calling <b>RxDriverEntry</b> and any routine pointers restored after the call to <b>RxDriverEntry</b> has returned. Note that RDBSS will also copy <b>RxFsdDispatch</b> to all the driver dispatch table entries when <a href="https://msdn.microsoft.com/library/windows/hardware/ff554693">RxRegisterMiniRdr</a> is called unless an option is set to prevent this behavior..</p>
-
-<p>For a non-monolithic network mini-redirector driver (the Microsoft SMB redirector), the RDBSS.SYS device driver is initialized in its own <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine when loaded which internally calls <b>RxDriverEntry</b>. On a monolithic driver, the <b>RxDriverEntry</b> routine is exported from the RDBSSLIB.LIB static library and must be called explicitly by the network mini-redirector. </p>
-
-<p>A monolithic network mini-redirector driver which is linked statically with RDBSSLIB.LIB must call <b>RxDriverEntry</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine to initialize the copy of the RDBSSLIB library linked with the driver. <b>RxDriverEntry</b> must be called by a monolithic network mini-redirector driver before any other RDBSS routines are called. </p>
-
-<p>After calling <b>RxDriverEntry</b> to initialize the copy of the RDBSS library near the start of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine, the network mini-redirector driver would usually call <a href="https://msdn.microsoft.com/library/windows/hardware/ff554693">RxRegisterMinirdr</a> later in its <i>DriverEntry</i> routine to register with RDBSS. </p>
+<p>After calling <b>RxDriverEntry</b> to initialize the copy of the RDBSS library near the start of its <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine, the network mini-redirector driver would usually call <a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a> later in its <i>DriverEntry</i> routine to register with RDBSS. </p>
 
 <p>If the <b>RxDriverEntry</b> call is successful, internal global RDBBS data structures are initialized. Various spinlocks and mutexes are created to protect these data structures. One of these data structures is the RDBSS_DATA structure which is the top structure in the RDBSS-memory data structure. The <i>DriverObject</i> parameter is stored in the <b>DriverObject</b> member of the RDBSS_DATA structure. <b>RxDriverEntry</b> also initializes tracing, logging, and debugging if this is enabled (a checked build, for example). </p>
 
@@ -205,17 +136,17 @@ NTSTATUS RxDriverEntry(
 </table></span></div>
 </p>
 
-<p>This value is a DWORD that is treated as a number and stored as the value for an internal RDBSS option on the number of PAGE_SIZE pages for read ahead used by the Cache Manager. Any registry value greater than 16 is treated as if this value were limited to 16 (the maximum value currently allowed). This internal option is stored as the number of pages times the PAGE_SIZE on the processor (a maximum of 0x10000 or 64K for a 4K PAGE_SIZE, for example). On Windows 2000 and Windows XP, RDBSS calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff539224">CcSetReadAheadGranularity</a> with this option for various create, read, and write operations. If a network mini-redirector driver wants to change this behavior, the driver should set the value of ReadAheadGranularity to the appropriate value after the <b>RxDriverEntry</b> routine has returned. The RDBSSLIB.LIB static library exposes ReadAheadGranularity as an external variable. </p>
+<p>This value is a DWORD that is treated as a number and stored as the value for an internal RDBSS option on the number of PAGE_SIZE pages for read ahead used by the Cache Manager. Any registry value greater than 16 is treated as if this value were limited to 16 (the maximum value currently allowed). This internal option is stored as the number of pages times the PAGE_SIZE on the processor (a maximum of 0x10000 or 64K for a 4K PAGE_SIZE, for example). On Windows 2000 and Windows XP, RDBSS calls <a href="..\ntifs\nf-ntifs-ccsetreadaheadgranularity.md">CcSetReadAheadGranularity</a> with this option for various create, read, and write operations. If a network mini-redirector driver wants to change this behavior, the driver should set the value of ReadAheadGranularity to the appropriate value after the <b>RxDriverEntry</b> routine has returned. The RDBSSLIB.LIB static library exposes ReadAheadGranularity as an external variable. </p>
 
 <p>On X86 systems, 64K is the largest write that will be issued by the Memory Manager when issuing a paging write (flushes of the cache will be paging writes through the Memory Manager). For remote file systems, 64K is not the best choice. The most data that can be transferred in a single TDI network request would be less than 64K because of overhead for protocol information. </p>
 
 <p>On Windows Server 2003, a registry value to set ReadAheadGranularity is not exposed and RDBSS defaults to 32K (8 4K PAGE_SIZE pages). This is the same default value adopted for local files systems.</p>
 
-<p><b>RxDriverEntry</b> retrieves a pointer to the kernel process that is running by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a> and stores this value in an internal RDBSS data structure. This kernel process is sometimes called the file system process.</p>
+<p><b>RxDriverEntry</b> retrieves a pointer to the kernel process that is running by calling <a href="kernel.psgetcurrentprocess">PsGetCurrentProcess</a> and stores this value in an internal RDBSS data structure. This kernel process is sometimes called the file system process.</p>
 
-<p><b>RxDriverEntry</b> then copies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554468">RxFsdDispatch</a> routine over all of the entries in the driver dispatch table. So if a monolithic network mini-redirector driver needs to receive specific IRPs for special processing before the RDBSS library, then a copy of its original driver dispatch table should be saved before calling <b>RxDriverEntry</b> and any routine pointers restored after the call to <b>RxDriverEntry</b> has returned. Note that RDBSS will also copy <b>RxFsdDispatch</b> to all the driver dispatch table entries when <a href="https://msdn.microsoft.com/library/windows/hardware/ff554693">RxRegisterMiniRdr</a> is called unless an option is set to prevent this behavior..</p>
+<p><b>RxDriverEntry</b> then copies a pointer to the <a href="..\mrx\nf-mrx-rxfsddispatch.md">RxFsdDispatch</a> routine over all of the entries in the driver dispatch table. So if a monolithic network mini-redirector driver needs to receive specific IRPs for special processing before the RDBSS library, then a copy of its original driver dispatch table should be saved before calling <b>RxDriverEntry</b> and any routine pointers restored after the call to <b>RxDriverEntry</b> has returned. Note that RDBSS will also copy <b>RxFsdDispatch</b> to all the driver dispatch table entries when <a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMiniRdr</a> is called unless an option is set to prevent this behavior..</p>
 
-<p>For a non-monolithic network mini-redirector driver (the Microsoft SMB redirector), the RDBSS.SYS device driver is initialized in its own <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine when loaded which internally calls <b>RxDriverEntry</b>. On a monolithic driver, the <b>RxDriverEntry</b> routine is exported from the RDBSSLIB.LIB static library and must be called explicitly by the network mini-redirector. </p>
+<p>For a non-monolithic network mini-redirector driver (the Microsoft SMB redirector), the RDBSS.SYS device driver is initialized in its own <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine when loaded which internally calls <b>RxDriverEntry</b>. On a monolithic driver, the <b>RxDriverEntry</b> routine is exported from the RDBSSLIB.LIB static library and must be called explicitly by the network mini-redirector. </p>
 
 ## -requirements
 <table>
@@ -252,31 +183,31 @@ NTSTATUS RxDriverEntry(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539224">CcSetReadAheadGranularity</a>
+<a href="..\ntifs\nf-ntifs-ccsetreadaheadgranularity.md">CcSetReadAheadGranularity</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
+<a href="kernel.psgetcurrentprocess">PsGetCurrentProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554693">RxRegisterMinirdr</a>
+<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554718">RxSetDomainForMailslotBroadcast</a>
+<a href="..\mrx\nf-mrx-rxsetdomainformailslotbroadcast.md">RxSetDomainForMailslotBroadcast</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554736">RxStartMinirdr</a>
+<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554743">RxStopMinirdr</a>
+<a href="..\mrx\nf-mrx-rxstopminirdr.md">RxStopMinirdr</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554662">RxpUnregisterMinirdr</a>
+<a href="..\mrx\nf-mrx-rxpunregisterminirdr.md">RxpUnregisterMinirdr</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554744">RxUnregisterMinirdr</a>
+<a href="..\rxstruc\nf-rxstruc-rxunregisterminirdr.md">RxUnregisterMinirdr</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557374">__RxFillAndInstallFastIoDispatch</a>
+<a href="..\mrx\nf-mrx---rxfillandinstallfastiodispatch.md">__RxFillAndInstallFastIoDispatch</a>
 </dt>
 </dl>
 <p> </p>

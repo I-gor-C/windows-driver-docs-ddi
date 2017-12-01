@@ -7,7 +7,7 @@ old-location: wdf\wdfcompanioncreate.htm
 old-project: wdf
 ms.assetid: 78b9eccf-34ef-40ae-b7fc-6fa8400f8c2a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfCompanionCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices

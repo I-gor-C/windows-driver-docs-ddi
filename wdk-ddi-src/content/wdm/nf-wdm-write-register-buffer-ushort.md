@@ -7,7 +7,7 @@ old-location: kernel\write_register_buffer_ushort.htm
 old-project: kernel
 ms.assetid: 070fc2b0-045e-4778-82d4-0850cd2064a5
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WRITE_REGISTER_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,10 +80,6 @@ VOID WRITE_REGISTER_BUFFER_USHORT(
 <p>None</p>
 
 ## -remarks
-<p>The size of the buffer must be large enough to contain at least the specified number of USHORT values.</p>
-
-<p>Callers of <b>WRITE_REGISTER_BUFFER_USHORT</b> can be running at any IRQL, assuming the <i>Buffer</i> is resident and the <i>Register</i> is resident, mapped device memory.</p>
-
 <p>The size of the buffer must be large enough to contain at least the specified number of USHORT values.</p>
 
 <p>Callers of <b>WRITE_REGISTER_BUFFER_USHORT</b> can be running at any IRQL, assuming the <i>Buffer</i> is resident and the <i>Register</i> is resident, mapped device memory.</p>

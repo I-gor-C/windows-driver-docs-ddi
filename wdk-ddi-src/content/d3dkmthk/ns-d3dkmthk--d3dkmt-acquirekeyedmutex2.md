@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Describes a keyed mutex object that the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439340">D3DKMTAcquireKeyedMutex2</a> function acquires that includes private data.</p>
+<p>Describes a keyed mutex object that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex2.md">D3DKMTAcquireKeyedMutex2</a> function acquires that includes private data.</p>
 
 
 ## -syntax
@@ -132,7 +132,7 @@ typedef struct _D3DKMT_ACQUIREKEYEDMUTEX2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439340">D3DKMTAcquireKeyedMutex2</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex2.md">D3DKMTAcquireKeyedMutex2</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: kernel\keleavecriticalregion.htm
 old-project: kernel
 ms.assetid: d3e90c3b-5ead-40d1-9143-a2b1fc8c255d
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: KeLeaveCriticalRegion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,12 +60,6 @@ VOID KeLeaveCriticalRegion(void);
 <p>None</p>
 
 ## -remarks
-<p>Highest-level drivers can call this routine while running in the context of the thread that requested the current I/O operation. </p>
-
-<p>Highest-level drivers can call this routine while running in the context of the thread that requested the current I/O operation. </p>
-
-<p>Highest-level drivers can call this routine while running in the context of the thread that requested the current I/O operation. </p>
-
 <p>Highest-level drivers can call this routine while running in the context of the thread that requested the current I/O operation. </p>
 
 ## -requirements
@@ -131,7 +125,7 @@ VOID KeLeaveCriticalRegion(void);
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543603">CriticalRegions</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547806">IrqlKeApcLte2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh466453">WithinCriticalRegion</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>, <a href="devtest.storport_withincriticalregion">WithinCriticalRegion(storport)</a>
+<a href="devtest.wdm_criticalregions">CriticalRegions</a>, <a href="devtest.wdm_irqlkeapclte2">IrqlKeApcLte2</a>, <a href="devtest.wdm_withincriticalregion">WithinCriticalRegion</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>, <a href="devtest.storport_withincriticalregion">WithinCriticalRegion(storport)</a>
 </td>
 </tr>
 </table>
@@ -139,12 +133,12 @@ VOID KeLeaveCriticalRegion(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551938">KeAreApcsDisabled</a>
+<a href="..\ntddk\nf-ntddk-keareapcsdisabled.md">KeAreApcsDisabled</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552021">KeEnterCriticalRegion</a>
+<a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeLeaveCriticalRegion routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeLeaveCriticalRegion routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

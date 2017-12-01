@@ -118,8 +118,6 @@ HRESULT _stdcall wiasGetPropertyAttributes(
 
 <p>Increment value</p>
 
-<p> </p>
-
 <p>Valid list values are accessed using the following index constants.</p>
 
 <p>WIA_LIST_COUNT</p>
@@ -128,81 +126,17 @@ HRESULT _stdcall wiasGetPropertyAttributes(
 
 <p>WIA_LIST_NOM</p>
 
-<p>Nominal value</p>
-
 <p>WIA_LIST_VALUES</p>
 
 <p>Index to first valid value</p>
-
-<p> </p>
 
 <p>Valid bitwise flag values are accessed using the following index constants.</p>
 
 <p>WIA_FLAG_NOM   </p>
 
-<p>Nominal value</p>
-
 <p>WIA_FLAG_VALUES</p>
 
 <p>All valid flags are joined together by an OR operator</p>
-
-<p> </p>
-
-<p>The PROPSPEC and PROPVARIANT structures are defined in the Microsoft Windows SDK documentation.</p>
-
-<p>This function fills each element of the <i>pPropVar </i>array with a PROPVARIANT structure that specifies the valid values for the corresponding property. Properties with the access rights flag WIA_PROP_NONE have no valid values for that property. The data type for the valid values of these properties is VT_EMPTY.</p>
-
-<p>One or more of the WIA_PROP_Xxx property attributes and access flags can be returned in each element of the <i>pulAccessFlags</i> array. The property attribute constants are described in the Windows SDK documentation.</p>
-
-<p>If the property has a range of valid values, the values can be determined through the <i>pPropVar </i>parameter upon completion of this function. The <i>pPropVar </i>parameter specifies an array of PROPVARIANT structures.</p>
-
-<p>Valid integer and floating-point values in a range are accessed using the following index constants.</p>
-
-<p>WIA_RANGE_MIN  </p>
-
-<p>Minimum value</p>
-
-<p>WIA_RANGE_NOM  </p>
-
-<p>Nominal value</p>
-
-<p>WIA_RANGE_MAX  </p>
-
-<p>Maximum value</p>
-
-<p>WIA_RANGE_STEP</p>
-
-<p>Increment value</p>
-
-<p> </p>
-
-<p>Valid list values are accessed using the following index constants.</p>
-
-<p>WIA_LIST_COUNT</p>
-
-<p>Count of valid list values, not counting the nominal value</p>
-
-<p>WIA_LIST_NOM</p>
-
-<p>Nominal value</p>
-
-<p>WIA_LIST_VALUES</p>
-
-<p>Index to first valid value</p>
-
-<p> </p>
-
-<p>Valid bitwise flag values are accessed using the following index constants.</p>
-
-<p>WIA_FLAG_NOM   </p>
-
-<p>Nominal value</p>
-
-<p>WIA_FLAG_VALUES</p>
-
-<p>All valid flags are joined together by an OR operator</p>
-
-<p> </p>
 
 <p>The PROPSPEC and PROPVARIANT structures are defined in the Microsoft Windows SDK documentation.</p>
 

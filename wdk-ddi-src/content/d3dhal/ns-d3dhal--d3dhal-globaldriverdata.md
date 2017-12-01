@@ -68,7 +68,7 @@ typedef struct _D3DHAL_GLOBALDRIVERDATA {
 ### -field <b>hwCaps</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544689">D3DDEVICEDESC_V1</a> structure where the driver should return its hardware capabilities.</p>
+<p>Specifies a <a href="..\d3dhal\ns-d3dhal--d3ddevicedesc-v1.md">D3DDEVICEDESC_V1</a> structure where the driver should return its hardware capabilities.</p>
 </dd>
 
 ### -field <b>dwNumVertices</b>
@@ -86,7 +86,7 @@ typedef struct _D3DHAL_GLOBALDRIVERDATA {
 ### -field <b>dwNumTextureFormats</b>
 
 <dd>
-<p>Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550339">DDSURFACEDESC</a> structures that <b>lpTextureFormats</b> points to.</p>
+<p>Specifies the number of <a href="display.ddsurfacedesc">DDSURFACEDESC</a> structures that <b>lpTextureFormats</b> points to.</p>
 </dd>
 
 ### -field <b>lpTextureFormats</b>
@@ -97,7 +97,7 @@ typedef struct _D3DHAL_GLOBALDRIVERDATA {
 </dl>
 
 ## -remarks
-<p>The driver is responsible for allocating space for and setting all members of this structure. The driver returns a pointer to this structure in the <b>lpD3DGlobalDriverData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a> structure, which is passed to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a> function during driver initialization.</p>
+<p>The driver is responsible for allocating space for and setting all members of this structure. The driver returns a pointer to this structure in the <b>lpD3DGlobalDriverData</b> member of the <a href="display.dd_halinfo">DD_HALINFO</a> structure, which is passed to the driver's <a href="display.drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a> function during driver initialization.</p>
 
 ## -requirements
 <table>
@@ -116,16 +116,16 @@ typedef struct _D3DHAL_GLOBALDRIVERDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544689">D3DDEVICEDESC_V1</a>
+<a href="..\d3dhal\ns-d3dhal--d3ddevicedesc-v1.md">D3DDEVICEDESC_V1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a>
+<a href="display.dd_halinfo">DD_HALINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550339">DDSURFACEDESC</a>
+<a href="display.ddsurfacedesc">DDSURFACEDESC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a>
+<a href="display.drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a>
 </dt>
 </dl>
 <p> </p>

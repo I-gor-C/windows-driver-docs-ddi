@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetPresharedKeyForId_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565800">SetPresharedKeyForId</a> method.</p>
+<p>The SetPresharedKeyForId_IN structure holds the input data for the <a href="storage.setpresharedkeyforid">SetPresharedKeyForId</a> method.</p>
 
 
 ## -syntax
@@ -68,7 +68,7 @@ typedef struct _SetPresharedKeyForId_IN {
 ### -field <b>SecurityFlags</b>
 
 <dd>
-<p>A bitwise OR of flags that indicate the security requirements of a target.  For a list of possible values for this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>.</p>
+<p>A bitwise OR of flags that indicate the security requirements of a target.  For a list of possible values for this member, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.</p>
 </dd>
 
 ### -field <b>IdType</b>
@@ -155,13 +155,13 @@ typedef struct _SetPresharedKeyForId_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
+<a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565800">SetPresharedKeyForId</a>
+<a href="storage.setpresharedkeyforid">SetPresharedKeyForId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565810">SetPresharedKeyForId_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--setpresharedkeyforid-out.md">SetPresharedKeyForId_OUT</a>
 </dt>
 </dl>
 <p> </p>

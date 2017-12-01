@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookinfoparammask.htm
 old-project: netvista
 ms.assetid: 1aab5008-eb27-4f48-9d87-74959f932883
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

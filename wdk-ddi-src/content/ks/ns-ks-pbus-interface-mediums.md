@@ -7,7 +7,7 @@ old-location: stream\bus_interface_mediums.htm
 old-project: stream
 ms.assetid: 0A2D1D8F-8C82-4335-9FBF-4515A8DC20C1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PBUS_INTERFACE_MEDIUMS, BUS_INTERFACE_MEDIUMS, *PBUS_INTERFACE_MEDIUMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

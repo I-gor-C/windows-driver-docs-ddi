@@ -64,12 +64,12 @@ typedef struct _DXVAHDDDI_STREAM_STATE_FILTER_DATA {
 ### -field <b>Level</b>
 
 <dd>
-<p>[in] An INT value that specifies the filter level. The default value is the value from the <b>Default</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563055">DXVAHDDDI_FILTER_RANGE_DATA</a> structure. </p>
+<p>[in] An INT value that specifies the filter level. The default value is the value from the <b>Default</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-filter-range-data.md">DXVAHDDDI_FILTER_RANGE_DATA</a> structure. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The level that is specified in the <b>Level</b> member must be within the range that the driver supplies in the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563055">DXVAHDDDI_FILTER_RANGE_DATA</a> structure when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPFILTERRANGE value set. </p>
+<p>The level that is specified in the <b>Level</b> member must be within the range that the driver supplies in the members of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-filter-range-data.md">DXVAHDDDI_FILTER_RANGE_DATA</a> structure when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPFILTERRANGE value set. </p>
 
 ## -requirements
 <table>
@@ -96,7 +96,7 @@ typedef struct _DXVAHDDDI_STREAM_STATE_FILTER_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563055">DXVAHDDDI_FILTER_RANGE_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-filter-range-data.md">DXVAHDDDI_FILTER_RANGE_DATA</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a>

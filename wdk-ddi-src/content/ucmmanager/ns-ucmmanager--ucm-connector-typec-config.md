@@ -75,13 +75,13 @@ typedef struct _UCM_CONNECTOR_TYPEC_CONFIG {
 ### -field <b>SupportedOperatingModes</b>
 
 <dd>
-<p>Indicates the supported operating mode of the connector. This value is a bitwise OR of <a href="https://msdn.microsoft.com/library/windows/hardware/mt187946">UCM_TYPEC_OPERATING_MODE</a>-typed flags.</p>
+<p>Indicates the supported operating mode of the connector. This value is a bitwise OR of <a href="buses.ucm_type_c_operating_mode">UCM_TYPEC_OPERATING_MODE</a>-typed flags.</p>
 </dd>
 
 ### -field <b>SupportedPowerSourcingCapabilities</b>
 
 <dd>
-<p>Indicates the supported power source capabilities of the connector. This value is a bitwise OR of <a href="https://msdn.microsoft.com/library/windows/hardware/mt187945">UCM_TYPEC_CURRENT</a>-typed flags.</p>
+<p>Indicates the supported power source capabilities of the connector. This value is a bitwise OR of <a href="buses.ucm_type_c_current">UCM_TYPEC_CURRENT</a>-typed flags.</p>
 </dd>
 
 ### -field <b>AudioAccessoryCapable</b>
@@ -93,12 +93,12 @@ typedef struct _UCM_CONNECTOR_TYPEC_CONFIG {
 ### -field <b>EvtSetDataRole</b>
 
 <dd>
-<p>A pointer to the client driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187818">EVT_UCM_CONNECTOR_SET_DATA_ROLE</a> callback function.</p>
+<p>A pointer to the client driver's implementation of the <a href="buses.evt_ucm_connector_set_data_role">EVT_UCM_CONNECTOR_SET_DATA_ROLE</a> callback function.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Initialize this structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt187931">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>. An initialized <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure is an input parameter value to <a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a> that is used by Policy Manager to create a connector object.</p>
+<p>Initialize this structure by calling <a href="buses.ucm_connector_type_c_config_init">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>. An initialized <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure is an input parameter value to <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a> that is used by Policy Manager to create a connector object.</p>
 
 ## -requirements
 <table>
@@ -149,7 +149,7 @@ typedef struct _UCM_CONNECTOR_TYPEC_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>
+<a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>
 </dt>
 </dl>
 <p> </p>

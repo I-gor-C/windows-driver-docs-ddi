@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongsub.htm
 old-project: kernel
 ms.assetid: A0D35ECE-5B7F-4F60-9178-75673C9A945F
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlLongLongSub
 ms.prod: windows-hardware
 ms.technology: windows-devices

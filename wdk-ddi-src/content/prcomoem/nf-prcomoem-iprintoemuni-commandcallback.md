@@ -62,7 +62,7 @@ HRESULT CommandCallback(
 ### -param <i>pdevobj</i> 
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>dwCallbackID</i> 
@@ -110,25 +110,11 @@ HRESULT CommandCallback(
 
 <p>The method should use the <i>dwCallbackID</i> parameter value to determine which command to process. For each supported command, the method must be aware of which, if any, standard variables have been specified by the *Command entry's *<b>Params</b> attribute, and in which order.</p>
 
-<p>The method is responsible for constructing a printer command, and then sending the command to the print spooler by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553138">IPrintOemDriverUni::DrvWriteSpoolBuf</a> method.</p>
+<p>The method is responsible for constructing a printer command, and then sending the command to the print spooler by calling the <a href="print.iprintoemdriveruni_drvwritespoolbuf">IPrintOemDriverUni::DrvWriteSpoolBuf</a> method.</p>
 
 <p>The value supplied for <i>piResult</i> should always return zero unless the method is processing a cursor command. For <a href="NULL">cursor commands</a> that move the cursor in either the <i>x</i> or <i></i> direction, the method should return the new cursor position.</p>
 
-<p>The <code>IPrintOemUni::CommandCallback</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "CommandCallback" as input.</p>
-
-<p>The <code>IPrintOemUni::CommandCallback</code> method is used by rendering plug-ins to dynamically generate printer commands, for printers that are supported by <a href="wdkgloss.u#wdkgloss.unidrv#wdkgloss.unidrv"><i>Unidrv</i></a>.</p>
-
-<p>If you want to dynamically generate a printer command, you must include a *<b>CallbackID</b> attribute and, optionally, a *<b>Params</b> attribute, within the command's *Command entry in the printer's GPD file. For more information see <a href="NULL">Dynamically Generated Printer Commands</a>.</p>
-
-<p>When Unidrv calls the <code>IPrintOemUni::CommandCallback</code> method, it supplies the *Command entry's *<b>CallbackID</b> attribute value as the <i>dwCallbackID</i> parameter. It also places the *Command entry's *<b>Params</b> attribute value inside a DWORD array and supplies the array's address as the <i>pParams</i> parameter. The array contains set of Unidrv-defined <a href="NULL">standard variables</a> values, and the <i>dwCount</i> parameter specifies the number of parameters contained in the array. For more information about the attributes see <a href="NULL">Command Attributes</a>.</p>
-
-<p>The method should use the <i>dwCallbackID</i> parameter value to determine which command to process. For each supported command, the method must be aware of which, if any, standard variables have been specified by the *Command entry's *<b>Params</b> attribute, and in which order.</p>
-
-<p>The method is responsible for constructing a printer command, and then sending the command to the print spooler by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553138">IPrintOemDriverUni::DrvWriteSpoolBuf</a> method.</p>
-
-<p>The value supplied for <i>piResult</i> should always return zero unless the method is processing a cursor command. For <a href="NULL">cursor commands</a> that move the cursor in either the <i>x</i> or <i></i> direction, the method should return the new cursor position.</p>
-
-<p>The <code>IPrintOemUni::CommandCallback</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "CommandCallback" as input.</p>
+<p>The <code>IPrintOemUni::CommandCallback</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "CommandCallback" as input.</p>
 
 ## -requirements
 <table>

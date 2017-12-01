@@ -7,7 +7,7 @@ old-location: debugger\setdataparameters.htm
 old-project: debugger
 ms.assetid: 66878652-be29-479f-8e00-a9d8ab1b0db7
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugBreakpoint2, SetDataParameters, IDebugBreakpoint2::SetDataParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,15 +73,13 @@ HRESULT SetDataParameters(
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_NOINTERFACE</b></dt>
-</dl><p>The breakpoint is not a processor breakpoint.  For more information about the breakpoint type, see <a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a>.</p>
+</dl><p>The breakpoint is not a processor breakpoint.  For more information about the breakpoint type, see <a href="debugger.gettype">GetType</a>.</p>
 
 <p> </p>
 
 <p>This method can also return other error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
 
 ## -remarks
-<p>For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
-
 <p>For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
 
 ## -requirements

@@ -120,7 +120,7 @@ This parameter is ignored when <b>BaseAddress</b> != NULL.
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906319">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a> structure that specifies the protection on the GPU virtual address that is mapped.</p>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddigpuvirtualaddress-protection-type.md">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a> structure that specifies the protection on the GPU virtual address that is mapped.</p>
 <table>
 <tr>
 <th>Value</th>
@@ -244,7 +244,7 @@ A zero fence value might be returned, meaning that the operation is already comp
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906319">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddigpuvirtualaddress-protection-type.md">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>

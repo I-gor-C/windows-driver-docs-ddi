@@ -7,7 +7,7 @@ old-location: netvista\wdi_packet_filter_type.htm
 old-project: netvista
 ms.assetid: 252CE7F6-2DA7-45F8-97F0-85B51A0181C2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

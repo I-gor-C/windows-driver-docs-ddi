@@ -103,14 +103,6 @@ VP_STATUS VideoPortCreateSecondaryDisplay(
 
 <p>The flags VIDEO_DUALVIEW_PRIMARY and VIDEO_DUALVIEW_SECONDARY, which are defined in <i>ntddvdeo.h</i>, are for internal use only. The video miniport driver must never set these flags. </p>
 
-<p>In Windows XP and later, a removable logical device will never become the <a href="wdkgloss.p#wdkgloss.primary_display#wdkgloss.primary_display"><i>primary display</i></a>.</p>
-
-<p>Note that on some editions of Windows XP, <b>VideoPortCreateSecondaryDisplay</b> can deliberately fail to enable Dualview. In such cases, the display driver should remain in SingleView mode.</p>
-
-<p>When the video minport driver calls <b>VideoPortCreateSecondaryDisplay</b>, the value of the <i>ulFlags</i> parameter must be equal to VIDEO_DUALVIEW_REMOVABLE, which is defined in <i>ntddvdeo.h</i>.</p>
-
-<p>The flags VIDEO_DUALVIEW_PRIMARY and VIDEO_DUALVIEW_SECONDARY, which are defined in <i>ntddvdeo.h</i>, are for internal use only. The video miniport driver must never set these flags. </p>
-
 ## -requirements
 <table>
 <tr>

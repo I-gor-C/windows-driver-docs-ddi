@@ -108,7 +108,7 @@ typedef struct _DXGKARG_RENDERGDI {
 ### -field <b>pAllocationList</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560975">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that the DMA buffer references. Each allocation that is referenced should appear once for optimal performance.</p>
+<p>An array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that the DMA buffer references. Each allocation that is referenced should appear once for optimal performance.</p>
 </dd>
 
 ### -field <b>AllocationListSize</b>

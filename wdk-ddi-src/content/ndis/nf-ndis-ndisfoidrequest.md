@@ -7,7 +7,7 @@ old-location: netvista\ndisfoidrequest.htm
 old-project: netvista
 ms.assetid: 8434bf2c-9c9a-49a1-bf88-b67b1eec721c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,23 +62,23 @@ NDIS_STATUS NdisFOidRequest(
 <dd>
 <p>An NDIS handle that identifies a filter module. NDIS passed the handle to the filter driver in a
      call to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function.</p>
+     <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
 ### -param <i>OidRequest</i> [in]
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure that specifies
      the operation requested with a given OID_<i>XXX</i> code. The structure can specify a query, set, or method request. For more information about
      OIDs, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566707">NDIS OIDs</a>.</p>
+     <a href="netvista.ndis_oids">NDIS OIDs</a>.</p>
 </dd>
 </dl>
 
 ## -returns
 <p>See the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a> function.</p>
+     <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a> function.</p>
 
 ## -remarks
 <p>Filter drivers can originate OID requests to underlying drivers by calling 
@@ -94,7 +94,7 @@ NDIS_STATUS NdisFOidRequest(
 
 <p>If 
     <b>NdisFOidRequest</b> returns <b>NDIS_STATUS_SUCCESS</b>, it returns the results of a query request in the
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure at the 
+    <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure at the 
     <i>OidRequest</i> parameter.</p>
 
 <p><b>NdisFOidRequest</b> can return <b>NDIS_STATUS_INVALID_PARAMETER</b> if the filter driver passes invalid values
@@ -102,37 +102,7 @@ NDIS_STATUS NdisFOidRequest(
     <b>Type</b> and 
     <b>Size</b> fields in the 
     <b>Header</b> field of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure.</p>
-
-<p>A driver can call 
-    <b>NdisFOidRequest</b> when it is in the 
-    <i>Restarting</i>, 
-    <i>Running</i>, 
-    <i>Pausing</i>, or 
-    <i>Paused</i> state.</p>
-
-<p>Filter drivers can originate OID requests to underlying drivers by calling 
-    <b>NdisFOidRequest</b>.</p>
-
-<p>Filter drivers can also filter OID requests that are originated by overlying drivers. NDIS calls the 
-    <a href="..\ndis\nc-ndis-filter-oid-request.md">FilterOidRequest</a> function to process
-    each such request.</p>
-
-<p>If 
-    <b>NdisFOidRequest</b> returns <b>NDIS_STATUS_PENDING</b>, NDIS calls the 
-    <a href="..\ndis\nc-ndis-filter-oid-request-complete.md">FilterOidRequestComplete</a> function after the underlying drivers complete the OID request.</p>
-
-<p>If 
-    <b>NdisFOidRequest</b> returns <b>NDIS_STATUS_SUCCESS</b>, it returns the results of a query request in the
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure at the 
-    <i>OidRequest</i> parameter.</p>
-
-<p><b>NdisFOidRequest</b> can return <b>NDIS_STATUS_INVALID_PARAMETER</b> if the filter driver passes invalid values
-    for the 
-    <b>Type</b> and 
-    <b>Size</b> fields in the 
-    <b>Header</b> field of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure.</p>
+    <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure.</p>
 
 <p>A driver can call 
     <b>NdisFOidRequest</b> when it is in the 
@@ -194,7 +164,7 @@ NDIS_STATUS NdisFOidRequest(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547990">Irql_OID_Function</a>
+<a href="devtest.ndis_irql_oid_function">Irql_OID_Function</a>
 </td>
 </tr>
 </table>
@@ -202,7 +172,7 @@ NDIS_STATUS NdisFOidRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-filter-oid-request.md">FilterOidRequest</a>
@@ -211,12 +181,12 @@ NDIS_STATUS NdisFOidRequest(
 <a href="..\ndis\nc-ndis-filter-oid-request-complete.md">FilterOidRequestComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFOidRequest function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFOidRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

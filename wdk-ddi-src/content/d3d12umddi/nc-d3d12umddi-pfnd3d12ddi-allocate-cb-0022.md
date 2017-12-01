@@ -79,10 +79,6 @@ HRESULT APIENTRY CALLBACK* pfnAllocateCb(
 
 <p>The driver must check the return value of the function.</p>
 
-<p>Access this callback function by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi-corelayer-devicecallbacks-0022~r1.md">D3D12DDI_CORELAYER_DEVICECALLBACKS_0022</a> structure.</p>
-
-<p>The driver must check the return value of the function.</p>
-
 ## -requirements
 <table>
 <tr>

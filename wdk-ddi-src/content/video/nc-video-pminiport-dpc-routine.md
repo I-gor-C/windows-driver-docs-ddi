@@ -76,11 +76,7 @@ VOID HwVidDpcRoutine(
 <p>None</p>
 
 ## -remarks
-<p>The miniport driver queues this DPC by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>.</p>
-
-<p>Because <i>HwVidDpcRoutine </i>is called at DISPATCH_LEVEL, it must not manipulate any pageable code or data. Further, this function must be in nonpaged memory and should complete its operations as quickly as possible.</p>
-
-<p>The miniport driver queues this DPC by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>.</p>
+<p>The miniport driver queues this DPC by calling <a href="..\video\nf-video-videoportqueuedpc.md">VideoPortQueueDpc</a>.</p>
 
 <p>Because <i>HwVidDpcRoutine </i>is called at DISPATCH_LEVEL, it must not manipulate any pageable code or data. Further, this function must be in nonpaged memory and should complete its operations as quickly as possible.</p>
 
@@ -111,7 +107,7 @@ VOID HwVidDpcRoutine(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>
+<a href="..\video\nf-video-videoportqueuedpc.md">VideoPortQueueDpc</a>
 </dt>
 </dl>
 <p> </p>

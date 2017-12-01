@@ -7,7 +7,7 @@ old-location: kernel\zwquerydirectoryfileex.htm
 old-project: kernel
 ms.assetid: A15062C0-E7F2-4C28-84DF-A3A96C83CE13
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: NtQueryDirectoryFileEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ NTSTATUS ZwQueryDirectoryFileEx(
 ### -param <i>FileHandle</i> [in]
 
 <dd>
-<p>A handle returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567011">ZwOpenFile</a> for the file object that represents the directory for which information is being requested. The file object must have been opened for asynchronous I/O if the caller specifies a non-<b>NULL</b> value for <i>Event</i> or <i>ApcRoutine</i>.</p>
+<p>A handle returned by <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a> for the file object that represents the directory for which information is being requested. The file object must have been opened for asynchronous I/O if the caller specifies a non-<b>NULL</b> value for <i>Event</i> or <i>ApcRoutine</i>.</p>
 </dd>
 
 ### -param <i>Event</i> [in, optional]
@@ -92,7 +92,7 @@ NTSTATUS ZwQueryDirectoryFileEx(
 ### -param <i>IoStatusBlock</i> [out]
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation. For successful calls that return data, the number of bytes written to the <i>FileInformation</i> buffer is returned in the structure's <b>Information</b> member.</p>
+<p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation. For successful calls that return data, the number of bytes written to the <i>FileInformation</i> buffer is returned in the structure's <b>Information</b> member.</p>
 </dd>
 
 ### -param <i>FileInformation</i> [out]
@@ -121,7 +121,7 @@ NTSTATUS ZwQueryDirectoryFileEx(
 <p><b>FileBothDirectoryInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540235">FILE_BOTH_DIR_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-both-dir-information.md">FILE_BOTH_DIR_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -129,7 +129,7 @@ NTSTATUS ZwQueryDirectoryFileEx(
 <p><b>FileDirectoryInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540248">FILE_DIRECTORY_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-directory-information.md">FILE_DIRECTORY_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -137,7 +137,7 @@ NTSTATUS ZwQueryDirectoryFileEx(
 <p><b>FileFullDirectoryInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540289">FILE_FULL_DIR_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-full-dir-information.md">FILE_FULL_DIR_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -145,7 +145,7 @@ NTSTATUS ZwQueryDirectoryFileEx(
 <p><b>FileIdBothDirectoryInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540303">FILE_ID_BOTH_DIR_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-id-both-dir-information.md">FILE_ID_BOTH_DIR_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -153,7 +153,7 @@ NTSTATUS ZwQueryDirectoryFileEx(
 <p><b>FileIdFullDirectoryInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540310">FILE_ID_FULL_DIR_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-id-full-dir-information.md">FILE_ID_FULL_DIR_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -161,7 +161,7 @@ NTSTATUS ZwQueryDirectoryFileEx(
 <p><b>FileNamesInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540329">FILE_NAMES_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-names-information.md">FILE_NAMES_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ NTSTATUS ZwQueryDirectoryFileEx(
 <p><b>FileObjectIdInformation</b></p>
 </td>
 <td>
-<p>.Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540335">FILE_OBJECTID_INFORMATION</a> structure for each file on the volume. This information class is valid only for the directory \$Extend\$ObjId:$O:$INDEX_ALLOCATION on NTFS volumes on Windows 2000 and later versions of Windows.</p>
+<p>.Return a <a href="..\ntifs\ns-ntifs--file-objectid-information.md">FILE_OBJECTID_INFORMATION</a> structure for each file on the volume. This information class is valid only for the directory \$Extend\$ObjId:$O:$INDEX_ALLOCATION on NTFS volumes on Windows 2000 and later versions of Windows.</p>
 </td>
 </tr>
 <tr>
@@ -177,7 +177,7 @@ NTSTATUS ZwQueryDirectoryFileEx(
 <p><b>FileReparsePointInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540354">FILE_REPARSE_POINT_INFORMATION</a> structure for each file on the volume. This information class is valid only for the directory \$Extend\$Reparse:$R:$INDEX_ALLOCATION on NTFS volumes on Windows 2000 and later versions of Windows.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-reparse-point-information.md">FILE_REPARSE_POINT_INFORMATION</a> structure for each file on the volume. This information class is valid only for the directory \$Extend\$Reparse:$R:$INDEX_ALLOCATION on NTFS volumes on Windows 2000 and later versions of Windows.</p>
 </td>
 </tr>
 <tr>
@@ -286,42 +286,42 @@ NTSTATUS ZwQueryDirectoryFileEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540235">FILE_BOTH_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-both-dir-information.md">FILE_BOTH_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540248">FILE_DIRECTORY_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-directory-information.md">FILE_DIRECTORY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540289">FILE_FULL_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-full-dir-information.md">FILE_FULL_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540303">FILE_ID_BOTH_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-id-both-dir-information.md">FILE_ID_BOTH_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540310">FILE_ID_FULL_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-id-full-dir-information.md">FILE_ID_FULL_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540329">FILE_NAMES_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-names-information.md">FILE_NAMES_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540335">FILE_OBJECTID_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-objectid-information.md">FILE_OBJECTID_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540354">FILE_REPARSE_POINT_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-reparse-point-information.md">FILE_REPARSE_POINT_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567011">ZwOpenFile</a>
+<a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryDirectoryFileEx routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryDirectoryFileEx routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

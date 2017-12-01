@@ -86,7 +86,7 @@ typedef struct _DXGKARG_ACQUIRESWIZZLINGRANGE {
 ### -field <b>RangeSize</b>
 
 <dd>
-<p>[in] The size, in bytes, of the range to acquire. This range size is identical to the size of the allocation that <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a> acquires a range for. The driver can modify the value in <b>RangeSize</b> when the <b>UseAlternateVA</b> bit-field flag is specified in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544214">D3DDDICB_LOCKFLAGS</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> function. If the <b>UseAlternateVA</b> flag is not specified, the driver cannot change <b>RangeSize</b>.</p>
+<p>[in] The size, in bytes, of the range to acquire. This range size is identical to the size of the allocation that <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a> acquires a range for. The driver can modify the value in <b>RangeSize</b> when the <b>UseAlternateVA</b> bit-field flag is specified in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lockflags.md">D3DDDICB_LOCKFLAGS</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lockcb.md">pfnLockCb</a> function. If the <b>UseAlternateVA</b> flag is not specified, the driver cannot change <b>RangeSize</b>.</p>
 </dd>
 
 ### -field <b>CPUTranslatedAddress</b>
@@ -124,7 +124,7 @@ typedef struct _DXGKARG_ACQUIRESWIZZLINGRANGE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544214">D3DDDICB_LOCKFLAGS</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddicb-lockflags.md">D3DDDICB_LOCKFLAGS</a>
 </dt>
 <dt>
 <a href="display.dxgkddiacquireswizzlingrange">DxgkDdiAcquireSwizzlingRange</a>

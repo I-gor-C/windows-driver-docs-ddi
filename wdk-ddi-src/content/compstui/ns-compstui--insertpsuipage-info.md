@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The INSERTPSUIPAGE_INFO structure is used as an input parameter to CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function, if the function code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff546414">CPSFUNC_INSERT_PSUIPAGE</a>. All member values must be supplied by the <b>ComPropSheet</b> caller.</p>
+<p>The INSERTPSUIPAGE_INFO structure is used as an input parameter to CPSUI's <a href="print.compropsheet">ComPropSheet</a> function, if the function code is <a href="print.cpsfunc_insert_psuipage">CPSFUNC_INSERT_PSUIPAGE</a>. All member values must be supplied by the <b>ComPropSheet</b> caller.</p>
 
 
 ## -syntax
@@ -75,7 +75,7 @@ typedef struct _INSERTPSUIPAGE_INFO {
 ### -field <a id="PSUIPAGEINSERT_DLL"></a><a id="psuipageinsert_dll"></a>PSUIPAGEINSERT_DLL
 
 <dd>
-<p>CPSUI calls the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a> typed function, with a reason value of PROPSHEETUI_REASON_INIT. The function is contained in a separate DLL.</p>
+<p>CPSUI calls the specified <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a> typed function, with a reason value of PROPSHEETUI_REASON_INIT. The function is contained in a separate DLL.</p>
 </dd>
 </dl>
 <p></p>
@@ -84,7 +84,7 @@ typedef struct _INSERTPSUIPAGE_INFO {
 ### -field <a id="PSUIPAGEINSERT_GROUP_PARENT"></a><a id="psuipageinsert_group_parent"></a>PSUIPAGEINSERT_GROUP_PARENT
 
 <dd>
-<p>CPSUI creates a new <a href="NULL">group parent</a>.</p>
+<p>CPSUI creates a new <a href="https://msdn.microsoft.com/b4c40c15-df16-4af0-81c8-9e70d26ba598">group parent</a>.</p>
 </dd>
 </dl>
 <p></p>
@@ -94,7 +94,7 @@ typedef struct _INSERTPSUIPAGE_INFO {
 
 <dd>
 <p>CPSUI inserts a page that has been created by calling <b>CreatePropertySheetPage</b> (see the Microsoft Windows SDK documentation).</p>
-<p>(This is equivalent to calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> with a function code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff546385">CPSFUNC_ADD_HPROPSHEETPAGE</a>.)</p>
+<p>(This is equivalent to calling <a href="print.compropsheet">ComPropSheet</a> with a function code of <a href="print.cpsfunc_add_hpropsheetpage">CPSFUNC_ADD_HPROPSHEETPAGE</a>.)</p>
 </dd>
 </dl>
 <p></p>
@@ -103,8 +103,8 @@ typedef struct _INSERTPSUIPAGE_INFO {
 ### -field <a id="PSUIPAGEINSERT_PCOMPROPSHEETUI"></a><a id="psuipageinsert_pcompropsheetui"></a>PSUIPAGEINSERT_PCOMPROPSHEETUI
 
 <dd>
-<p>CPSUI inserts pages described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546211">COMPROPSHEETUI</a> structure.</p>
-<p>(This is equivalent to calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> with a function code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff546388">CPSFUNC_ADD_PCOMPROPSHEETUI</a>.)</p>
+<p>CPSUI inserts pages described by a <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
+<p>(This is equivalent to calling <a href="print.compropsheet">ComPropSheet</a> with a function code of <a href="print.cpsfunc_add_pcompropsheetui">CPSFUNC_ADD_PCOMPROPSHEETUI</a>.)</p>
 </dd>
 </dl>
 <p></p>
@@ -113,8 +113,8 @@ typedef struct _INSERTPSUIPAGE_INFO {
 ### -field <a id="PSUIPAGEINSERT_PFNPROPSHEETUI"></a><a id="psuipageinsert_pfnpropsheetui"></a>PSUIPAGEINSERT_PFNPROPSHEETUI
 
 <dd>
-<p>CPSUI calls the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a> typed function, with a reason value of PROPSHEETUI_REASON_INIT.</p>
-<p>(This is equivalent to calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> with a function code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff546391">CPSFUNC_ADD_PFNPROPSHEETUI</a>.)</p>
+<p>CPSUI calls the specified <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a> typed function, with a reason value of PROPSHEETUI_REASON_INIT.</p>
+<p>(This is equivalent to calling <a href="print.compropsheet">ComPropSheet</a> with a function code of <a href="print.cpsfunc_add_pfnpropsheetui">CPSFUNC_ADD_PFNPROPSHEETUI</a>.)</p>
 </dd>
 </dl>
 <p></p>
@@ -124,7 +124,7 @@ typedef struct _INSERTPSUIPAGE_INFO {
 
 <dd>
 <p>CPSUI inserts the page described by the specified PROPSHEETPAGE structure.</p>
-<p>(This is equivalent to calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> with a function code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff546394">CPSFUNC_ADD_PROPSHEETPAGE</a>.)</p>
+<p>(This is equivalent to calling <a href="print.compropsheet">ComPropSheet</a> with a function code of <a href="print.cpsfunc_add_propsheetpage">CPSFUNC_ADD_PROPSHEETPAGE</a>.)</p>
 </dd>
 </dl>
 </dd>
@@ -139,7 +139,7 @@ typedef struct _INSERTPSUIPAGE_INFO {
 ### -field <a id="INSPSUIPAGE_MODE_AFTER"></a><a id="inspsuipage_mode_after"></a>INSPSUIPAGE_MODE_AFTER
 
 <dd>
-<p>CPSUI inserts pages after the page identified by the CPSUI page handle that is specified by the <i>lParam1</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a>.</p>
+<p>CPSUI inserts pages after the page identified by the CPSUI page handle that is specified by the <i>lParam1</i> parameter to <a href="print.compropsheet">ComPropSheet</a>.</p>
 </dd>
 </dl>
 <p></p>
@@ -148,7 +148,7 @@ typedef struct _INSERTPSUIPAGE_INFO {
 ### -field <a id="INSPSUIPAGE_MODE_BEFORE"></a><a id="inspsuipage_mode_before"></a>INSPSUIPAGE_MODE_BEFORE
 
 <dd>
-<p>CPSUI inserts pages before the page identified by the CPSUI page handle that is specified by the <i>lParam1</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a>.</p>
+<p>CPSUI inserts pages before the page identified by the CPSUI page handle that is specified by the <i>lParam1</i> parameter to <a href="print.compropsheet">ComPropSheet</a>.</p>
 </dd>
 </dl>
 <p></p>
@@ -157,8 +157,8 @@ typedef struct _INSERTPSUIPAGE_INFO {
 ### -field <a id="INSPSUIPAGE_MODE_FIRST_CHILD"></a><a id="inspsuipage_mode_first_child"></a>INSPSUIPAGE_MODE_FIRST_CHILD
 
 <dd>
-<p>CPSUI inserts pages as the first children of the parent group identified by the <i>hComPropSheet</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a>.</p>
-<p>The <i>lParam1</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> is ignored.</p>
+<p>CPSUI inserts pages as the first children of the parent group identified by the <i>hComPropSheet</i> parameter to <a href="print.compropsheet">ComPropSheet</a>.</p>
+<p>The <i>lParam1</i> parameter to <a href="print.compropsheet">ComPropSheet</a> is ignored.</p>
 </dd>
 </dl>
 <p></p>
@@ -167,8 +167,8 @@ typedef struct _INSERTPSUIPAGE_INFO {
 ### -field <a id="INSPUIPAGE_MODE_INDEX"></a><a id="inspuipage_mode_index"></a>INSPUIPAGE_MODE_INDEX
 
 <dd>
-<p>CPSUI inserts pages as children of the parent group identified by the <i>hComPropSheet</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a>.</p>
-<p>The <i>lParam1</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> specifies a zero-based index identifying where, within the set of children, the specified pages should be inserted. If <i>lParam1</i> is 0, the pages are inserted starting at page 1; if <i>lParam1</i> is 1, the pages are inserted starting at page 2; and so on. If the index is greater than the number of existing children, the new pages are added as the last children. The <i>lParam1</i> value must be specified as HINSPSUIPAGE_INDEX(index).</p>
+<p>CPSUI inserts pages as children of the parent group identified by the <i>hComPropSheet</i> parameter to <a href="print.compropsheet">ComPropSheet</a>.</p>
+<p>The <i>lParam1</i> parameter to <a href="print.compropsheet">ComPropSheet</a> specifies a zero-based index identifying where, within the set of children, the specified pages should be inserted. If <i>lParam1</i> is 0, the pages are inserted starting at page 1; if <i>lParam1</i> is 1, the pages are inserted starting at page 2; and so on. If the index is greater than the number of existing children, the new pages are added as the last children. The <i>lParam1</i> value must be specified as HINSPSUIPAGE_INDEX(index).</p>
 </dd>
 </dl>
 <p></p>
@@ -177,8 +177,8 @@ typedef struct _INSERTPSUIPAGE_INFO {
 ### -field <a id="INSPSUIPAGE_MODE_LAST_CHILD"></a><a id="inspsuipage_mode_last_child"></a>INSPSUIPAGE_MODE_LAST_CHILD
 
 <dd>
-<p>CPSUI inserts pages as the last children of the parent group identified by the <i>hComPropSheet</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a>.</p>
-<p>The <i>lParam1</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> is ignored.</p>
+<p>CPSUI inserts pages as the last children of the parent group identified by the <i>hComPropSheet</i> parameter to <a href="print.compropsheet">ComPropSheet</a>.</p>
+<p>The <i>lParam1</i> parameter to <a href="print.compropsheet">ComPropSheet</a> is ignored.</p>
 </dd>
 </dl>
 </dd>
@@ -202,7 +202,7 @@ typedef struct _INSERTPSUIPAGE_INFO {
 
 <dd>
 <p>dwData1 - Caller-supplied pointer to a NULL-terminated string representing the DLL path name.</p>
-<p>dwData2 - Caller-supplied pointer to a NULL-terminated string representing the name of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a> typed function, contained in the specified DLL.</p>
+<p>dwData2 - Caller-supplied pointer to a NULL-terminated string representing the name of a <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a> typed function, contained in the specified DLL.</p>
 <p>dwData3 - Caller-supplied 32-bit value, passed to the PFNPROPSHEETUI-typed function for its <i>lParam</i> parameter.</p>
 </dd>
 </dl>

@@ -300,7 +300,7 @@ typedef enum _FEATURE_PROFILE_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553816">FEATURE_DATA_PROFILE_LIST</a>
+<a href="..\ntddmmc\ns-ntddmmc--feature-data-profile-list.md">FEATURE_DATA_PROFILE_LIST</a>
 </dt>
 </dl>
 <p> </p>

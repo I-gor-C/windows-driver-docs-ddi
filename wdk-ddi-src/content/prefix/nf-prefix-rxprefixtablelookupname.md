@@ -99,18 +99,6 @@ PVOID RxPrefixTableLookupName(
 
 <p>On checked builds, <b>RxPrefixTableLookupName</b> causes the system to ASSERT if the length of the <i>CanonicalName</i> string is not greater than zero.</p>
 
-<p>This routine is used internally by RDBSS in response to a call from MUP to claim a name or form the create path for a NET_ROOT or V_NET_ROOT structure. The <b>RxPrefixTableLookupName</b> routine can also be used by network mini-redirectors as long as the appropriate lock is acquired before accessing the table, and the lock is released when work is completed. The normal use by a driver would be as follows:</p>
-
-<p>Acquire a shared lock by calling <b>RxpAcquirePrefixTableLockShared</b>.</p>
-
-<p>Look up a name by calling <b>RxPrefixTableLookupName</b>.</p>
-
-<p>Release the shared lock by calling <b>RxpReleasePrefixTableLock</b>.</p>
-
-<p>Note that if a match is found, the reference count on the found node will be incremented. </p>
-
-<p>On checked builds, <b>RxPrefixTableLookupName</b> causes the system to ASSERT if the length of the <i>CanonicalName</i> string is not greater than zero.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -146,13 +134,13 @@ PVOID RxPrefixTableLookupName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554595">RxpAcquirePrefixTableLockExclusive</a>
+<a href="..\prefix\nf-prefix-rxpacquireprefixtablelockexclusive.md">RxpAcquirePrefixTableLockExclusive</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554598">RxpAcquirePrefixTableLockShared</a>
+<a href="..\prefix\nf-prefix-rxpacquireprefixtablelockshared.md">RxpAcquirePrefixTableLockShared</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554637">RxpReleasePrefixTableLock</a>
+<a href="..\prefix\nf-prefix-rxpreleaseprefixtablelock.md">RxpReleasePrefixTableLock</a>
 </dt>
 </dl>
 <p> </p>

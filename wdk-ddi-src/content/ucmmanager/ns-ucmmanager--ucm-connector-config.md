@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Describes the configuration options for a Type-C connector object. An initialized <a href="https://msdn.microsoft.com/library/windows/hardware/mt187932">UCM_MANAGER_CONFIG</a> structure is an input parameter value to   <a href="https://msdn.microsoft.com/library/windows/hardware/mt187920">UcmInitializeDevice</a>.</p>
+<p>Describes the configuration options for a Type-C connector object. An initialized <a href="buses.ucm_manager_config">UCM_MANAGER_CONFIG</a> structure is an input parameter value to   <a href="buses.ucminitializedevice">UcmInitializeDevice</a>.</p>
 
 
 ## -syntax
@@ -73,18 +73,18 @@ typedef struct _UCM_CONNECTOR_CONFIG {
 ### -field <b>TypeCConfig</b>
 
 <dd>
-<p>A pointer to an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/mt187930">UCM_CONNECTOR_TYPEC_CONFIG</a> structure that contains the configuration options for the connector. </p>
+<p>A pointer to an initialized <a href="buses.ucm_connector_type_c_config">UCM_CONNECTOR_TYPEC_CONFIG</a> structure that contains the configuration options for the connector. </p>
 </dd>
 
 ### -field <b>PDConfig</b>
 
 <dd>
-<p>A pointer to an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/mt187924">UCM_CONNECTOR_PD_CONFIG</a> structure that contains the power roles supported by the connector. </p>
+<p>A pointer to an initialized <a href="buses.ucm_connector_pd_config">UCM_CONNECTOR_PD_CONFIG</a> structure that contains the power roles supported by the connector. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Initialize this structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt187923">UCM_CONNECTOR_CONFIG_INIT</a>. An initialized <b>UCM_CONNECTOR_CONFIG</b> structure is an input parameter value to <a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a> that is used by the client driver to create a connector object.</p>
+<p>Initialize this structure by calling <a href="buses.ucm_connector_config_init">UCM_CONNECTOR_CONFIG_INIT</a>. An initialized <b>UCM_CONNECTOR_CONFIG</b> structure is an input parameter value to <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a> that is used by the client driver to create a connector object.</p>
 
 ## -requirements
 <table>
@@ -135,7 +135,7 @@ typedef struct _UCM_CONNECTOR_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>
+<a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>
 </dt>
 </dl>
 <p> </p>

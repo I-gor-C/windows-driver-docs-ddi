@@ -44,12 +44,12 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaPageMediaSizeOption</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a>. <b>IPrintSchemaPageMediaSizeOption</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaPageMediaSizeOption</b> interface inherits from <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>. <b>IPrintSchemaPageMediaSizeOption</b> also has these types of members:</p>
 
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaPageMediaSizeOption</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973235">HeightInMicrons</a>
+<a href="print.iprintschemapagemediasizeoption_heightinmicrons">HeightInMicrons</a>
 </p>
 
 <p>Read-only</p>
@@ -57,7 +57,7 @@ req.product: Windows 10 or later.
 <p>Gets the height of the page in microns.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973236">WidthInMicrons</a>
+<a href="print.iprintschemapagemediasizeoption_widthinmicrons">WidthInMicrons</a>
 </p>
 
 <p>Read-only</p>
@@ -102,7 +102,7 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a>
+<a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>
 </dt>
 </dl>
 <p> </p>

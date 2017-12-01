@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Describes  device temperature data. Returned as part of <a href="https://msdn.microsoft.com/library/windows/hardware/mt651017">STORAGE_TEMPERATURE_DATA_DESCRIPTOR</a> when querying for temperature data with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request. </p>
+<p>Describes  device temperature data. Returned as part of <a href="..\ntddstor\ns-ntddstor--storage-temperature-data-descriptor.md">STORAGE_TEMPERATURE_DATA_DESCRIPTOR</a> when querying for temperature data with an <a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request. </p>
 
 
 ## -syntax
@@ -89,13 +89,13 @@ typedef struct _STORAGE_TEMPERATURE_INFO {
 ### -field <b>OverThresholdChangable</b>
 
 <dd>
-<p>Indicates if <i>OverThreshold</i> can be changed by using <a href="https://msdn.microsoft.com/library/windows/hardware/mt650982">IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD</a>.</p>
+<p>Indicates if <i>OverThreshold</i> can be changed by using <a href="..\ntddstor\ni-ntddstor-ioctl-storage-set-temperature-threshold.md">IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD</a>.</p>
 </dd>
 
 ### -field <b>UnderThresholdChangable</b>
 
 <dd>
-<p>Indicates if <i>UnderThreshold</i> can be changed by using <a href="https://msdn.microsoft.com/library/windows/hardware/mt650982">IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD</a>.</p>
+<p>Indicates if <i>UnderThreshold</i> can be changed by using <a href="..\ntddstor\ni-ntddstor-ioctl-storage-set-temperature-threshold.md">IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD</a>.</p>
 </dd>
 
 ### -field <b>EventGenerated</b>
@@ -153,16 +153,16 @@ typedef struct _STORAGE_TEMPERATURE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566997">STORAGE_PROPERTY_QUERY</a>
+<a href="..\ntddstor\ns-ntddstor--storage-property-query.md">STORAGE_PROPERTY_QUERY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
+<a href="storage.storage_property_id">STORAGE_PROPERTY_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt651018">STORAGE_TEMPERATURE_INFO</a>
+<a href="..\ntddstor\ns-ntddstor--storage-temperature-info.md">STORAGE_TEMPERATURE_INFO</a>
 </dt>
 </dl>
 <p> </p>

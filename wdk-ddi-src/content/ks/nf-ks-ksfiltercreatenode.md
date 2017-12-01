@@ -7,7 +7,7 @@ old-location: stream\ksfiltercreatenode.htm
 old-project: stream
 ms.assetid: 2a796bb9-7d55-47da-9a57-2829cd193e23
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsFilterCreateNode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ KSDDKAPI NTSTATUS NTAPI KsFilterCreateNode(
 ### -param <i>Filter</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure on which to create a new topology node.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure on which to create a new topology node.</p>
 </dd>
 
 ### -param <i>NodeDescriptor</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563473">KSNODE_DESCRIPTOR</a> structure that describes the new node.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksnode-descriptor.md">KSNODE_DESCRIPTOR</a> structure that describes the new node.</p>
 </dd>
 
 ### -param <i>NodeID</i> [out]
@@ -79,8 +79,6 @@ KSDDKAPI NTSTATUS NTAPI KsFilterCreateNode(
 <p><b>KsFilterCreateNode</b>  returns the success or failure of creating the node. The call may fail because of invalid parameters, low memory, or other reasons.</p>
 
 ## -remarks
-<p>Note that the filter control mutex must be held before calling this function. For more information, see <a href="NULL">Filter Control Mutex in AVStream</a>.</p>
-
 <p>Note that the filter control mutex must be held before calling this function. For more information, see <a href="NULL">Filter Control Mutex in AVStream</a>.</p>
 
 ## -requirements
@@ -128,9 +126,9 @@ KSDDKAPI NTSTATUS NTAPI KsFilterCreateNode(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562529">KsFilterCreatePinFactory</a>
+<a href="..\ks\nf-ks-ksfiltercreatepinfactory.md">KsFilterCreatePinFactory</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterCreateNode function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterCreateNode function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

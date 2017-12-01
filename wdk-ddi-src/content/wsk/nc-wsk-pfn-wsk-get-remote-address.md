@@ -7,7 +7,7 @@ old-location: netvista\wskgetremoteaddress.htm
 old-project: netvista
 ms.assetid: a2d65d55-744b-4851-b1fa-7087e0f06452
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -64,7 +63,7 @@ NTSTATUS WSKAPI * WskGetRemoteAddress(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a> structure that specifies the socket
+     <a href="..\wsk\ns-wsk--wsk-socket.md">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being queried.</p>
 </dd>
 
@@ -107,7 +106,7 @@ NTSTATUS WSKAPI * WskGetRemoteAddress(
 <dt><b>STATUS_FILE_FORCED_CLOSED</b></dt>
 </dl><p>The socket is no longer functional. The IRP will be completed with failure status. The WSK
        application must call the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a> function to close the
+       <a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a> function to close the
        socket as soon as possible.</p><dl>
 <dt><b>Other status codes</b></dt>
 </dl><p>An error occurred. The IRP will be completed with failure status.</p>
@@ -117,37 +116,14 @@ NTSTATUS WSKAPI * WskGetRemoteAddress(
 ## -remarks
 <p>A WSK application can call the 
     <b>WskGetRemoteAddress</b> function only on a connection-oriented or stream socket that has been connected to a
-    remote transport address. A stream socket is connected to a remote transport address by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a> function. A connection-oriented socket is connected to a remote transport address in one
+    remote transport address. A stream socket is connected to a remote transport address by calling the <a href="..\wsk\nc-wsk-pfn-wsk-connect.md">WskConnect</a> function. A connection-oriented socket is connected to a remote transport address in one
     of the following ways:</p>
 
 <p>The WSK application calls the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a> function.</p>
+      <a href="..\wsk\nc-wsk-pfn-wsk-connect.md">WskConnect</a> function.</p>
 
 <p>The WSK application creates, binds, and connects the socket by calling the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a> function.</p>
-
-<p>The WSK subsystem connects the socket when the WSK application accepts an incoming connection
-      request on a listening socket.</p>
-
-<p>If the 
-    <b>WskGetRemoteAddress</b> function returns STATUS_PENDING, the buffer that is pointed to by the 
-    <i>RemoteAddress</i> parameter must remain valid until the IRP is completed. If the WSK application
-    allocated the buffer with one of the 
-    <b>ExAllocate<i>Xxx</i></b> functions, it cannot free the memory with the corresponding 
-    <b>ExFree<i>Xxx</i></b> function until after the IRP is completed. If the WSK application allocated the buffer on the
-    stack, it cannot return from the function that calls the 
-    <b>WskGetRemoteAddress</b> function until after the IRP is completed.</p>
-
-<p>A WSK application can call the 
-    <b>WskGetRemoteAddress</b> function only on a connection-oriented or stream socket that has been connected to a
-    remote transport address. A stream socket is connected to a remote transport address by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a> function. A connection-oriented socket is connected to a remote transport address in one
-    of the following ways:</p>
-
-<p>The WSK application calls the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a> function.</p>
-
-<p>The WSK application creates, binds, and connects the socket by calling the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a> function.</p>
+      <a href="..\wsk\nc-wsk-pfn-wsk-socket-connect.md">WskSocketConnect</a> function.</p>
 
 <p>The WSK subsystem connects the socket when the WSK application accepts an incoming connection
       request on a listening socket.</p>
@@ -205,28 +181,28 @@ NTSTATUS WSKAPI * WskGetRemoteAddress(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571109">WskAccept</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-accept.md">WskAccept</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571121">WskBind</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-bind.md">WskBind</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-connect.md">WskConnect</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571133">WskGetLocalAddress</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-get-local-address.md">WskGetLocalAddress</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-socket-connect.md">WskSocketConnect</a>
 </dt>
 <dt>
 <a href="..\wsk\nc-wsk-pfn-wsk-accept-event.md">WskAcceptEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
+<a href="netvista.sockaddr">SOCKADDR</a>
 </dt>
 <dt>
 <a href="..\wsk\ns-wsk--wsk-provider-connection-dispatch.md">
@@ -236,9 +212,9 @@ NTSTATUS WSKAPI * WskGetRemoteAddress(
 <a href="..\wsk\ns-wsk--wsk-provider-stream-dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk--wsk-socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_REMOTE_ADDRESS callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_REMOTE_ADDRESS callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

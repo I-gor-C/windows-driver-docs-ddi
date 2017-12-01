@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Describes   endpoints to enable or disable endpoints. This structure is passed by UCX in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187842">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a>  callback function.</p>
+<p>Describes   endpoints to enable or disable endpoints. This structure is passed by UCX in the <a href="buses.evt_ucx_usbdevice_endpoints_configure">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a>  callback function.</p>
 
 
 ## -syntax
@@ -73,7 +73,7 @@ typedef struct _ENDPOINTS_CONFIGURE {
 ### -field <b>Header</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188075">USBDEVICE_MGMT_HEADER</a> structure that stores handles to the USB hub or device whose endpoints.</p>
+<p>A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that stores handles to the USB hub or device whose endpoints.</p>
 </dd>
 
 ### -field <b>EndpointsToEnableCount</b>
@@ -163,7 +163,7 @@ typedef struct _ENDPOINTS_CONFIGURE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187842">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a>
+<a href="buses.evt_ucx_usbdevice_endpoints_configure">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a>
 </dt>
 </dl>
 <p> </p>

@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -72,7 +71,7 @@ PVOID AtaPortGetDeviceBase(
 ### -param <i>NumberOfBytes</i> [in]
 
 <dd>
-<p>Specifies the size, in bytes, of the range that the mappings should cover. The value for this parameter can be obtained from the <b>IdeAccessRange</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559119">IDE_MINIPORT_RESOURCES</a> structure.</p>
+<p>Specifies the size, in bytes, of the range that the mappings should cover. The value for this parameter can be obtained from the <b>IdeAccessRange</b> member of the <a href="..\irb\ns-irb--ide-miniport-resources.md">IDE_MINIPORT_RESOURCES</a> structure.</p>
 </dd>
 </dl>
 
@@ -80,8 +79,6 @@ PVOID AtaPortGetDeviceBase(
 <p><b>AtaPortGetDeviceBase</b> returns a mapped logical base address if the operation succeeds. Otherwise, it returns <b>NULL</b>. </p>
 
 ## -remarks
-<p>Miniport drivers must use logical addresses that have been mapped into system space by <b>AtaPortGetDeviceBase</b> instead of bus-relative addresses to communicate with its HBA. Calls to the <b>AtaPort...Port/Register</b><i>Xxx</i> routines require mapped logical addresses.</p>
-
 <p>Miniport drivers must use logical addresses that have been mapped into system space by <b>AtaPortGetDeviceBase</b> instead of bus-relative addresses to communicate with its HBA. Calls to the <b>AtaPort...Port/Register</b><i>Xxx</i> routines require mapped logical addresses.</p>
 
 ## -requirements
@@ -122,13 +119,13 @@ PVOID AtaPortGetDeviceBase(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550182">AtaPortReadPortUchar</a>
+<a href="..\irb\nf-irb-ataportreadportuchar.md">AtaPortReadPortUchar</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550185">AtaPortReadPortUshort</a>
+<a href="..\irb\nf-irb-ataportreadportushort.md">AtaPortReadPortUshort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550184">AtaPortReadPortUlong</a>
+<a href="..\irb\nf-irb-ataportreadportulong.md">AtaPortReadPortUlong</a>
 </dt>
 </dl>
 <p> </p>

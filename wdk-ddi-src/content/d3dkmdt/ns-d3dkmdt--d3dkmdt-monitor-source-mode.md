@@ -68,31 +68,31 @@ typedef struct _D3DKMDT_MONITOR_SOURCE_MODE {
 ### -field <b>VideoSignalInfo</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546625">D3DKMDT_VIDEO_SIGNAL_INFO</a> enumerator that indicates the video mode standard (if any) that defines the mode.</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-video-signal-info.md">D3DKMDT_VIDEO_SIGNAL_INFO</a> enumerator that indicates the video mode standard (if any) that defines the mode.</p>
 </dd>
 
 ### -field <b>ColorBasis</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545984">D3DKMDT_COLOR_BASIS</a> enumerator that indicates the color basis of the mode.</p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-color-basis.md">D3DKMDT_COLOR_BASIS</a> enumerator that indicates the color basis of the mode.</p>
 </dd>
 
 ### -field <b>ColorCoeffDynamicRanges</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545986">D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES</a> structure that contains the dynamic ranges for the color channels in the mode's color basis.</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-color-coeff-dynamic-ranges.md">D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES</a> structure that contains the dynamic ranges for the color channels in the mode's color basis.</p>
 </dd>
 
 ### -field <b>Origin</b>
 
 <dd>
-<p>A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546075">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a> enumeration that indicates the source of the mode information. For example the mode information could be from a default monitor profile or it could be from an override in an INF file.</p>
+<p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-capabilities-origin.md">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a> enumeration that indicates the source of the mode information. For example the mode information could be from a default monitor profile or it could be from an override in an INF file.</p>
 </dd>
 
 ### -field <b>Preference</b>
 
 <dd>
-<p>A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546061">D3DKMDT_MODE_PREFERENCE</a> enumeration that indicates whether the mode is the preferred mode in a <a href="display.monitor_source_mode_set_interface">monitor source mode set</a>.</p>
+<p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-mode-preference.md">D3DKMDT_MODE_PREFERENCE</a> enumeration that indicates whether the mode is the preferred mode in a <a href="display.monitor_source_mode_set_interface">monitor source mode set</a>.</p>
 </dd>
 </dl>
 
@@ -124,10 +124,10 @@ typedef struct _D3DKMDT_MONITOR_SOURCE_MODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546724">D3DKMDT_VIDPN_SOURCE_MODE</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-source-mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546729">D3DKMDT_VIDPN_TARGET_MODE</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-target-mode.md">D3DKMDT_VIDPN_TARGET_MODE</a>
 </dt>
 </dl>
 <p> </p>

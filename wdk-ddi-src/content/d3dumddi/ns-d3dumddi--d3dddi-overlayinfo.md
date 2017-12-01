@@ -65,7 +65,7 @@ typedef struct _D3DDDI_OVERLAYINFO {
 ### -field <b>hResource</b>
 
 <dd>
-<p>[in] A handle to the resource that is displayed by using the overlay. The resource is created through a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a> function with the <b>Overlay</b> bit-field flag set in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542963">D3DDDIARG_CREATERESOURCE</a> structure that is pointed to by the <i>pResource</i> parameter.</p>
+<p>[in] A handle to the resource that is displayed by using the overlay. The resource is created through a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a> function with the <b>Overlay</b> bit-field flag set in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt--d3dddiarg-createresource.md">D3DDDIARG_CREATERESOURCE</a> structure that is pointed to by the <i>pResource</i> parameter.</p>
 </dd>
 
 ### -field <b>SubResourceIndex</b>
@@ -77,7 +77,7 @@ typedef struct _D3DDDI_OVERLAYINFO {
 ### -field <b>DstRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the destination rectangle, which contains the output coordinates for the display. </p>
+<p>[in] A <a href="display.rect">RECT</a> structure for the destination rectangle, which contains the output coordinates for the display. </p>
 </dd>
 
 ### -field <b>SrcRect</b>
@@ -113,7 +113,7 @@ typedef struct _D3DDDI_OVERLAYINFO {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544626">D3DDDI_OVERLAYINFOFLAGS</a> structure that identifies the type of overlay operation to perform. Note that some flags are mutually exclusive with other flags. For more information, see the following Remarks section.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlayinfoflags.md">D3DDDI_OVERLAYINFOFLAGS</a> structure that identifies the type of overlay operation to perform. Note that some flags are mutually exclusive with other flags. For more information, see the following Remarks section.</p>
 </dd>
 </dl>
 
@@ -151,13 +151,13 @@ typedef struct _D3DDDI_OVERLAYINFO {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542963">D3DDDIARG_CREATERESOURCE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddiarg-createresource.md">D3DDDIARG_CREATERESOURCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544626">D3DDDI_OVERLAYINFOFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlayinfoflags.md">D3DDDI_OVERLAYINFOFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-updateoverlay.md">UpdateOverlay</a>

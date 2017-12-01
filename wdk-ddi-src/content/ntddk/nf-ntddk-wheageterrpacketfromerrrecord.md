@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>WheaGetErrPacketFromErrRecord</b> function returns a pointer to the hardware error packet that is contained within a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. The hardware error packet is formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure.</p>
+<p>The <b>WheaGetErrPacketFromErrRecord</b> function returns a pointer to the hardware error packet that is contained within a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. The hardware error packet is formatted as a <a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a> structure.</p>
 
 
 ## -syntax
@@ -57,16 +57,14 @@ PWHEA_ERROR_PACKET WheaGetErrPacketFromErrRecord(
 ### -param <i>Record</i> [in]
 
 <dd>
-<p>A pointer to a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a> that is formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560483">WHEA_ERROR_RECORD</a> structure.</p>
+<p>A pointer to a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a> that is formatted as a <a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a> structure.</p>
 </dd>
 </dl>
 
 ## -returns
-<p><b>WheaGetErrPacketFromErrRecord</b> returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560483">WHEA_ERROR_RECORD</a> structure. If the function does not locate the WHEA_ERROR_PACKET structure, it returns <b>NULL</b>.</p>
+<p><b>WheaGetErrPacketFromErrRecord</b> returns a pointer to the <a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a> structure within the <a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a> structure. If the function does not locate the WHEA_ERROR_PACKET structure, it returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>The <b>WheaGetErrPacketFromErrRecord</b> function returns a pointer to the hardware error packet that is contained within an error record.</p>
-
 <p>The <b>WheaGetErrPacketFromErrRecord</b> function returns a pointer to the hardware error packet that is contained within an error record.</p>
 
 ## -requirements
@@ -116,10 +114,10 @@ PWHEA_ERROR_PACKET WheaGetErrPacketFromErrRecord(
 <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">Error record</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+<a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560483">WHEA_ERROR_RECORD</a>
+<a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a>
 </dt>
 </dl>
 <p> </p>

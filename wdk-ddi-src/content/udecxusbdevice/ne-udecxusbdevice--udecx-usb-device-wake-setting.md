@@ -96,7 +96,7 @@ typedef enum _UDECX_USB_DEVICE_WAKE_SETTING {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595911">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
+<a href="buses.evt_udecx_usb_device_d0_exit">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
 </dt>
 </dl>
 <p> </p>

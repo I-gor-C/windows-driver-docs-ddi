@@ -7,7 +7,7 @@ old-location: netvista\rilsmssupportcaps_2.htm
 old-project: netvista
 ms.assetid: 38dac27d-1415-44bb-8dd6-2a6b6bd2a774
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

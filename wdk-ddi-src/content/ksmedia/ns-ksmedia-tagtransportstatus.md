@@ -7,7 +7,7 @@ old-location: stream\transportstatus.htm
 old-project: stream
 ms.assetid: 2896fd39-5c33-4c79-8adb-f6862b7b4314
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagTRANSPORTSTATUS, TRANSPORTSTATUS, *PTRANSPORTSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

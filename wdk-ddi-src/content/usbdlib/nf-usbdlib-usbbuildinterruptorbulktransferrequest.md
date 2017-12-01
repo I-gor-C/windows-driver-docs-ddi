@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>UsbBuildInterruptOrBulkTransferRequest</b> macro formats an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to send or receive data on a bulk pipe, or to receive data from an interrupt pipe.</p>
+<p>The <b>UsbBuildInterruptOrBulkTransferRequest</b> macro formats an <a href="..\usb\ns-usb--urb.md">URB</a> to send or receive data on a bulk pipe, or to receive data from an interrupt pipe.</p>
 
 
 ## -syntax
@@ -65,13 +65,13 @@ void UsbBuildInterruptOrBulkTransferRequest(
 ### -param <i>Urb</i> [in, out]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to be formatted as an interrupt or bulk transfer request.</p>
+<p>Pointer to an <a href="..\usb\ns-usb--urb.md">URB</a> to be formatted as an interrupt or bulk transfer request.</p>
 </dd>
 
 ### -param <i>Length</i> [in]
 
 <dd>
-<p>Specifies the size, in bytes, of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>.</p>
+<p>Specifies the size, in bytes, of the <a href="..\usb\ns-usb--urb.md">URB</a>.</p>
 </dd>
 
 ### -param <i>PipeHandle</i> [in]
@@ -159,10 +159,10 @@ void UsbBuildInterruptOrBulkTransferRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
+<a href="..\usb\ns-usb--urb.md">URB</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a>
+<a href="..\usbspec\ns-usbspec--usb-device-descriptor.md">USB_DEVICE_DESCRIPTOR</a>
 </dt>
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 </dl>

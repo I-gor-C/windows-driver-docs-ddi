@@ -7,7 +7,7 @@ old-location: sensors\sensor_config.htm
 old-project: sensors
 ms.assetid: E21E2FEC-8733-4A8A-A0C4-899F10824F9B
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: SENSOR_CONFIG, SENSOR_CONFIG, *PSENSOR_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct _SENSOR_CONFIG {
 ### -field <b>pEnumerationList</b>
 
 <dd>
-<p>The list of enumerations. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>.</p>
+<p>The list of enumerations. For more information, see <a href="..\sensorsdef\ns-sensorsdef-sensor-collection-list.md">SENSOR_COLLECTION_LIST</a>.</p>
 </dd>
 </dl>
 

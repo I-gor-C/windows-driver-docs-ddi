@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff536429">IOCTL_BIOMETRIC_CAPTURE_DATA</a> IOCTL returns the WINBIO_CAPTURE_DATA structure as output.</p>
+<p>The <a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-capture-data.md">IOCTL_BIOMETRIC_CAPTURE_DATA</a> IOCTL returns the WINBIO_CAPTURE_DATA structure as output.</p>
 
 
 ## -syntax
@@ -251,7 +251,7 @@ typedef struct _WINBIO_CAPTURE_DATA {
 ### -field <b>CaptureData</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536469">WINBIO_DATA</a> that contains data captured by the device, of the format specified. The <b>Data</b> array member of the WINBIO_DATA structure should contain a <a href="https://msdn.microsoft.com/library/windows/hardware/ff536459">WINBIO_BIR</a> structure.</p>
+<p>A structure of type <a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-data.md">WINBIO_DATA</a> that contains data captured by the device, of the format specified. The <b>Data</b> array member of the WINBIO_DATA structure should contain a <a href="..\winbio_types\ns-winbio-types--winbio-bir.md">WINBIO_BIR</a> structure.</p>
 </dd>
 </dl>
 
@@ -283,7 +283,7 @@ typedef struct _WINBIO_CAPTURE_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536429">IOCTL_BIOMETRIC_CAPTURE_DATA</a>
+<a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-capture-data.md">IOCTL_BIOMETRIC_CAPTURE_DATA</a>
 </dt>
 </dl>
 <p> </p>

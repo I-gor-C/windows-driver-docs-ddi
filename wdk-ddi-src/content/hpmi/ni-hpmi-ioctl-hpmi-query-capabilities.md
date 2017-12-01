@@ -135,54 +135,6 @@ I/O Status block
 information in HPMI_QUERY_CAPABILITIES_RESPONSE, as a response to all  
 subsequent IOCTL calls.   </p>
 
-<p>The <b>IOCTL_HPMI_QUERY_CAPABILITIES</b> request queries the HPMI capabilities or asset information of the power meter. The input <a href="..\hpmi\ns-hpmi--hpmi-query-capabilities.md">HPMI_QUERY_CAPABILITIES</a> structure value specifies the type of capability information to be returned. The data type and contents of the output buffer vary based on the data requested.</p>
-
-<p>This IOCTL may be issued multiple times, HPMI must respond with same  
-information in HPMI_QUERY_CAPABILITIES_RESPONSE, as a response to all  
-subsequent IOCTL calls.   </p>
-
-<p>The <b>IOCTL_HPMI_QUERY_CAPABILITIES</b> request queries the HPMI capabilities or asset information of the power meter. The input <a href="..\hpmi\ns-hpmi--hpmi-query-capabilities.md">HPMI_QUERY_CAPABILITIES</a> structure value specifies the type of capability information to be returned. The data type and contents of the output buffer vary based on the data requested.</p>
-
-<p>This IOCTL may be issued multiple times, HPMI must respond with same  
-information in HPMI_QUERY_CAPABILITIES_RESPONSE, as a response to all  
-subsequent IOCTL calls.   </p>
-
-<p>The <b>IOCTL_HPMI_QUERY_CAPABILITIES</b> request queries the HPMI capabilities or asset information of the power meter. The input <a href="..\hpmi\ns-hpmi--hpmi-query-capabilities.md">HPMI_QUERY_CAPABILITIES</a> structure value specifies the type of capability information to be returned. The data type and contents of the output buffer vary based on the data requested.</p>
-
-<p>This IOCTL may be issued multiple times, HPMI must respond with same  
-information in HPMI_QUERY_CAPABILITIES_RESPONSE, as a response to all  
-subsequent IOCTL calls.   </p>
-
-<p>The <b>IOCTL_HPMI_QUERY_CAPABILITIES</b> request queries the HPMI capabilities or asset information of the power meter. The input <a href="..\hpmi\ns-hpmi--hpmi-query-capabilities.md">HPMI_QUERY_CAPABILITIES</a> structure value specifies the type of capability information to be returned. The data type and contents of the output buffer vary based on the data requested.</p>
-
-<p>This IOCTL may be issued multiple times, HPMI must respond with same  
-information in HPMI_QUERY_CAPABILITIES_RESPONSE, as a response to all  
-subsequent IOCTL calls.   </p>
-
-<p>The <b>IOCTL_HPMI_QUERY_CAPABILITIES</b> request queries the HPMI capabilities or asset information of the power meter. The input <a href="..\hpmi\ns-hpmi--hpmi-query-capabilities.md">HPMI_QUERY_CAPABILITIES</a> structure value specifies the type of capability information to be returned. The data type and contents of the output buffer vary based on the data requested.</p>
-
-<p>This IOCTL may be issued multiple times, HPMI must respond with same  
-information in HPMI_QUERY_CAPABILITIES_RESPONSE, as a response to all  
-subsequent IOCTL calls.   </p>
-
-<p>The <b>IOCTL_HPMI_QUERY_CAPABILITIES</b> request queries the HPMI capabilities or asset information of the power meter. The input <a href="..\hpmi\ns-hpmi--hpmi-query-capabilities.md">HPMI_QUERY_CAPABILITIES</a> structure value specifies the type of capability information to be returned. The data type and contents of the output buffer vary based on the data requested.</p>
-
-<p>This IOCTL may be issued multiple times, HPMI must respond with same  
-information in HPMI_QUERY_CAPABILITIES_RESPONSE, as a response to all  
-subsequent IOCTL calls.   </p>
-
-<p>The <b>IOCTL_HPMI_QUERY_CAPABILITIES</b> request queries the HPMI capabilities or asset information of the power meter. The input <a href="..\hpmi\ns-hpmi--hpmi-query-capabilities.md">HPMI_QUERY_CAPABILITIES</a> structure value specifies the type of capability information to be returned. The data type and contents of the output buffer vary based on the data requested.</p>
-
-<p>This IOCTL may be issued multiple times, HPMI must respond with same  
-information in HPMI_QUERY_CAPABILITIES_RESPONSE, as a response to all  
-subsequent IOCTL calls.   </p>
-
-<p>The <b>IOCTL_HPMI_QUERY_CAPABILITIES</b> request queries the HPMI capabilities or asset information of the power meter. The input <a href="..\hpmi\ns-hpmi--hpmi-query-capabilities.md">HPMI_QUERY_CAPABILITIES</a> structure value specifies the type of capability information to be returned. The data type and contents of the output buffer vary based on the data requested.</p>
-
-<p>This IOCTL may be issued multiple times, HPMI must respond with same  
-information in HPMI_QUERY_CAPABILITIES_RESPONSE, as a response to all  
-subsequent IOCTL calls.   </p>
-
 ## -requirements
 <table>
 <tr>
@@ -211,16 +163,16 @@ subsequent IOCTL calls.   </p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548651">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548656">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548660">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>

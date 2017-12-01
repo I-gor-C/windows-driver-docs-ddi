@@ -7,7 +7,7 @@ old-location: bltooth\bthallocatebrb.htm
 old-project: bltooth
 ms.assetid: e1ac9d4c-75e2-4d37-86d7-3c3f1486222e
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: IBidiSpl2, UnbindDevice, IBidiSpl2::UnbindDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ PBRB BthAllocateBrb(
 
 <dd>
 <p>Specifies a value from the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536631">BRB_TYPE</a> enumeration to initialize the BRB
+     <a href="..\bthddi\ne-bthddi--brb-type.md">BRB_TYPE</a> enumeration to initialize the BRB
      with.</p>
 </dd>
 
@@ -73,7 +73,7 @@ PBRB BthAllocateBrb(
 <p>Specifies a 4-byte 
      pool tag that uniquely identifies the driver that does the memory
      allocation. For more information about pool tags, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>.</p>
+     <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>.</p>
 </dd>
 </dl>
 
@@ -82,12 +82,6 @@ PBRB BthAllocateBrb(
      memory.</p>
 
 ## -remarks
-<p>Profile drivers obtain a pointer to the 
-    <i>BthAllocateBrb</i> function when they query the Bluetooth driver stack for an instance of the
-    BTHDDI_PROFILE_DRIVER_INTERFACE driver interface. See 
-    <a href="https://msdn.microsoft.com/56db29cd-26ab-4262-9b9f-40d46372ffe9">Querying for Bluetooth
-    Interfaces</a> for more information about querying the Bluetooth driver stack.</p>
-
 <p>Profile drivers obtain a pointer to the 
     <i>BthAllocateBrb</i> function when they query the Bluetooth driver stack for an instance of the
     BTHDDI_PROFILE_DRIVER_INTERFACE driver interface. See 
@@ -137,13 +131,13 @@ PBRB BthAllocateBrb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536631">BRB_TYPE</a>
+<a href="..\bthddi\ne-bthddi--brb-type.md">BRB_TYPE</a>
 </dt>
 <dt>pool tag</dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20PFNBTH_ALLOCATE_BRB callback function%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20PFNBTH_ALLOCATE_BRB callback function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

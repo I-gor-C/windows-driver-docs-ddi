@@ -72,15 +72,9 @@ BOOLEAN __stdcall HidD_GetPreparsedData(
 <p><b>HidD_GetPreparsedData</b> returns <b>TRUE</b> if it succeeds; otherwise, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Only user-mode applications can call <b>HidD_GetPreparsedData</b>. Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541089">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a> request.</p>
+<p>Only user-mode applications can call <b>HidD_GetPreparsedData</b>. Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl-hid-get-collection-descriptor.md">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a> request.</p>
 
-<p>When an application no longer requires the preparsed data, it should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff538893">HidD_FreePreparsedData</a> to free the preparsed data buffer.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p>Only user-mode applications can call <b>HidD_GetPreparsedData</b>. Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541089">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a> request.</p>
-
-<p>When an application no longer requires the preparsed data, it should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff538893">HidD_FreePreparsedData</a> to free the preparsed data buffer.</p>
+<p>When an application no longer requires the preparsed data, it should call <a href="..\hidsdi\nf-hidsdi-hidd-freepreparseddata.md">HidD_FreePreparsedData</a> to free the preparsed data buffer.</p>
 
 <p>For more information, see <a href="NULL">HID Collections</a>. </p>
 
@@ -142,10 +136,10 @@ BOOLEAN __stdcall HidD_GetPreparsedData(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538893">HidD_FreePreparsedData</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-freepreparseddata.md">HidD_FreePreparsedData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541089">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-collection-descriptor.md">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

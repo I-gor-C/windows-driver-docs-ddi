@@ -7,7 +7,7 @@ old-location: netvista\rilrequestgeolocationdataparammask_2.htm
 old-project: netvista
 ms.assetid: b81cbf26-7164-4082-a505-2a849ec3d1ea
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

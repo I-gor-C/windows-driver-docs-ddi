@@ -66,22 +66,18 @@ typedef enum _INTERRUPT_SYNCHRONIZATION_MODE {
 ### -field <a id="InterruptSynchronizeAll"></a><a id="interruptsynchronizeall"></a><a id="INTERRUPTSYNCHRONIZEALL"></a><b>InterruptSynchronizeAll</b>
 
 <dd>
-<p>The Storport driver serializes all message signaled interrupts using a single interrupt spin lock. When an interrupt occurs, the Storport driver calls the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557268">HwMSInterruptRoutine</a> routine at DIRQL after acquiring the interrupt spin lock.</p>
+<p>The Storport driver serializes all message signaled interrupts using a single interrupt spin lock. When an interrupt occurs, the Storport driver calls the miniport driver's <a href="storage.hwmsinterruptroutine">HwMSInterruptRoutine</a> routine at DIRQL after acquiring the interrupt spin lock.</p>
 </dd>
 
 ### -field <a id="InterruptSynchronizePerMessage"></a><a id="interruptsynchronizepermessage"></a><a id="INTERRUPTSYNCHRONIZEPERMESSAGE"></a><b>InterruptSynchronizePerMessage</b>
 
 <dd>
-<p>The miniport driver serializes message signaled interrupts on a per message basis. In the synchronization per message mode, the Storport driver calls the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557268">HwMSInterruptRoutine</a> routine at DIRQL   holding the interrupt spin lock of the corresponding  message. For more on the behavior of this synchronization mode, see the remarks section for HwMSInterruptRoutine.</p>
+<p>The miniport driver serializes message signaled interrupts on a per message basis. In the synchronization per message mode, the Storport driver calls the miniport driver's <a href="storage.hwmsinterruptroutine">HwMSInterruptRoutine</a> routine at DIRQL   holding the interrupt spin lock of the corresponding  message. For more on the behavior of this synchronization mode, see the remarks section for HwMSInterruptRoutine.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Miniport drivers define the HBA's interrupt synchronization mode by assigning one of the INTERRUPT_SYNCHRONIZATION_MODE enumeration values to the <b>InterruptSynchronizationMode</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structure. </p>
-
-<p>Miniport drivers define the HBA's interrupt synchronization mode by assigning one of the INTERRUPT_SYNCHRONIZATION_MODE enumeration values to the <b>InterruptSynchronizationMode</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structure. </p>
-
-<p>Miniport drivers define the HBA's interrupt synchronization mode by assigning one of the INTERRUPT_SYNCHRONIZATION_MODE enumeration values to the <b>InterruptSynchronizationMode</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structure. </p>
+<p>Miniport drivers define the HBA's interrupt synchronization mode by assigning one of the INTERRUPT_SYNCHRONIZATION_MODE enumeration values to the <b>InterruptSynchronizationMode</b> member of the <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> structure. </p>
 
 ## -requirements
 <table>
@@ -100,16 +96,16 @@ typedef enum _INTERRUPT_SYNCHRONIZATION_MODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557268">HwMSInterruptRoutine</a>
+<a href="storage.hwmsinterruptroutine">HwMSInterruptRoutine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>
+<a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567023">StorPortAcquireMSISpinLock</a>
+<a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567494">StorPortReleaseMSISpinLock</a>
+<a href="..\storport\nf-storport-storportreleasemsispinlock.md">StorPortReleaseMSISpinLock</a>
 </dt>
 </dl>
 <p> </p>

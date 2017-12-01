@@ -7,7 +7,7 @@ old-location: stream\iksclockpropertyset_ksgetstate.htm
 old-project: stream
 ms.assetid: 153e4f47-ae07-4f1e-9ab5-69ef6565ad5d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IKsClockPropertySet, KsGetState, IKsClockPropertySet::KsGetState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ HRESULT KsGetState(
 ### -param <i>State</i> [out]
 
 <dd>
-<p>Pointer to a variable that receives a value that specifies the streaming state of a pin. This value can be one of the following values from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566856">KSSTATE</a> enumerated type:</p>
+<p>Pointer to a variable that receives a value that specifies the streaming state of a pin. This value can be one of the following values from the <a href="stream.ksstate">KSSTATE</a> enumerated type:</p>
 <table>
 <tr>
 <th>Value</th>
@@ -104,12 +104,6 @@ HRESULT KsGetState(
 <p>Returns NOERROR if successful; otherwise, returns an error code.</p>
 
 ## -remarks
-<p>The state of the pin gives gross motor control for pins. Fine motor control is done on a class-by-class basis with custom properties. For instance, in order to make an external laser disc player spin up, you could set a custom Mode property specific to that class. Setting this property may also change the state of the device, though not necessarily, depending on the effect of the mode.</p>
-
-<p>A filter itself can support this state property so that applications can set the entire filter's state. Otherwise, each pin must have its state set. When the state of a pin transitions from KSSTATE_STOP, each connection that forwards IRPs must recalculate stack depth.</p>
-
-<p>The proxy uses the KSPROPERTY_CLOCK_STATE property to retrieve the streaming state of a pin. </p>
-
 <p>The state of the pin gives gross motor control for pins. Fine motor control is done on a class-by-class basis with custom properties. For instance, in order to make an external laser disc player spin up, you could set a custom Mode property specific to that class. Setting this property may also change the state of the device, though not necessarily, depending on the effect of the mode.</p>
 
 <p>A filter itself can support this state property so that applications can set the entire filter's state. Otherwise, each pin must have its state set. When the state of a pin transitions from KSSTATE_STOP, each connection that forwards IRPs must recalculate stack depth.</p>

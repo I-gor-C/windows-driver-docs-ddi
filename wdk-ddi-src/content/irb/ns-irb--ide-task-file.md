@@ -58,13 +58,13 @@ typedef struct _IDE_TASK_FILE {
 ### -field <b>Current</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559011">IDEREGISTERS</a> that holds the current contents of the ATA task file registers.</p>
+<p>Contains a structure of type <a href="..\irb\ns-irb--ideregisters.md">IDEREGISTERS</a> that holds the current contents of the ATA task file registers.</p>
 </dd>
 
 ### -field <b>Previous</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559011">IDEREGISTERS</a> that holds the previous contents of the ATA task file registers in the case of a 48-bit LBA command.</p>
+<p>Contains a structure of type <a href="..\irb\ns-irb--ideregisters.md">IDEREGISTERS</a> that holds the previous contents of the ATA task file registers in the case of a 48-bit LBA command.</p>
 </dd>
 </dl>
 
@@ -88,7 +88,7 @@ typedef struct _IDE_TASK_FILE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559011">IDEREGISTERS</a>
+<a href="..\irb\ns-irb--ideregisters.md">IDEREGISTERS</a>
 </dt>
 </dl>
 <p> </p>

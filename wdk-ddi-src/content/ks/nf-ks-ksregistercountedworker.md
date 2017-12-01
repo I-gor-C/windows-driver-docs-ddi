@@ -7,7 +7,7 @@ old-location: stream\ksregistercountedworker.htm
 old-project: stream
 ms.assetid: acec8050-44bd-4082-9875-d504135e1b9f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsRegisterCountedWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,9 +79,7 @@ NTSTATUS KsRegisterCountedWorker(
 <p>Returns STATUS_SUCCESS if a worker was initialized.</p>
 
 ## -remarks
-<p>This must be matched by a corresponding <a href="https://msdn.microsoft.com/library/windows/hardware/ff567209">KsUnregisterWorker</a> when thread use is completed. This function resembles <a href="https://msdn.microsoft.com/library/windows/hardware/ff566775">KsRegisterWorker</a>, with the addition of passing the work item that will always be queued. This is to be used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff562678">KsIncrementCountedWorker</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561660">KsDecrementCountedWorker</a> in order to minimize the number of work items queued, and reduce mutual exclusion code necessary in a work item needed to serialize access against multiple work item threads. The worker queue can still be used to queue other work items. This may only be called at PASSIVE_LEVEL.</p>
-
-<p>This must be matched by a corresponding <a href="https://msdn.microsoft.com/library/windows/hardware/ff567209">KsUnregisterWorker</a> when thread use is completed. This function resembles <a href="https://msdn.microsoft.com/library/windows/hardware/ff566775">KsRegisterWorker</a>, with the addition of passing the work item that will always be queued. This is to be used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff562678">KsIncrementCountedWorker</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561660">KsDecrementCountedWorker</a> in order to minimize the number of work items queued, and reduce mutual exclusion code necessary in a work item needed to serialize access against multiple work item threads. The worker queue can still be used to queue other work items. This may only be called at PASSIVE_LEVEL.</p>
+<p>This must be matched by a corresponding <a href="..\ks\nf-ks-ksunregisterworker.md">KsUnregisterWorker</a> when thread use is completed. This function resembles <a href="..\ks\nf-ks-ksregisterworker.md">KsRegisterWorker</a>, with the addition of passing the work item that will always be queued. This is to be used with <a href="..\ks\nf-ks-ksincrementcountedworker.md">KsIncrementCountedWorker</a> and <a href="..\ks\nf-ks-ksdecrementcountedworker.md">KsDecrementCountedWorker</a> in order to minimize the number of work items queued, and reduce mutual exclusion code necessary in a work item needed to serialize access against multiple work item threads. The worker queue can still be used to queue other work items. This may only be called at PASSIVE_LEVEL.</p>
 
 ## -requirements
 <table>

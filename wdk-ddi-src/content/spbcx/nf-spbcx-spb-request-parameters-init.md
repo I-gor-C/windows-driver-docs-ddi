@@ -68,8 +68,6 @@ VOID SPB_REQUEST_PARAMETERS_INIT(
 ## -remarks
 <p>Your SPB controller driver must use this function to initialize an <b>SPB_REQUEST_PARAMETERS</b> structure before passing this structure as an output parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a> method. This method writes the SPB-specific parameters from an I/O request to this structure.</p>
 
-<p>Your SPB controller driver must use this function to initialize an <b>SPB_REQUEST_PARAMETERS</b> structure before passing this structure as an output parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a> method. This method writes the SPB-specific parameters from an I/O request to this structure.</p>
-
 ## -requirements
 <table>
 <tr>

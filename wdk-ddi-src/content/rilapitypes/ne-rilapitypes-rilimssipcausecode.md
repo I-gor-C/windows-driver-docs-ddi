@@ -7,7 +7,7 @@ old-location: netvista\rilimssipcausecode_2.htm
 old-project: netvista
 ms.assetid: 4fd18f3b-29ff-47e8-9329-327df8e45b02
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

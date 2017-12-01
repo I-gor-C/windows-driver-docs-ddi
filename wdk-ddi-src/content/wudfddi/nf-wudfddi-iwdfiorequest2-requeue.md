@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest2_requeue.htm
 old-project: wdf
 ms.assetid: 1e33f284-6cb9-426f-a900-76b827341927
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFIoRequest2, Requeue, IWDFIoRequest2::Requeue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -118,19 +118,7 @@ HRESULT Requeue();
 ## -remarks
 <p>A driver can call <b>Requeue</b> only if it uses the <a href="wdf.configuring_dispatch_mode_for_an_i_o_queue">manual dispatching method</a> for the I/O queue.</p>
 
-<p>The following code example shows a segment of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556880">IQueueCallbackStateChange::OnStateChange</a> callback function. The segment obtains an I/O request from the I/O and then returns the request to the queue.</p>
-
-<p>A driver can call <b>Requeue</b> only if it uses the <a href="wdf.configuring_dispatch_mode_for_an_i_o_queue">manual dispatching method</a> for the I/O queue.</p>
-
-<p>The following code example shows a segment of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556880">IQueueCallbackStateChange::OnStateChange</a> callback function. The segment obtains an I/O request from the I/O and then returns the request to the queue.</p>
-
-<p>A driver can call <b>Requeue</b> only if it uses the <a href="wdf.configuring_dispatch_mode_for_an_i_o_queue">manual dispatching method</a> for the I/O queue.</p>
-
-<p>The following code example shows a segment of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556880">IQueueCallbackStateChange::OnStateChange</a> callback function. The segment obtains an I/O request from the I/O and then returns the request to the queue.</p>
-
-<p>A driver can call <b>Requeue</b> only if it uses the <a href="wdf.configuring_dispatch_mode_for_an_i_o_queue">manual dispatching method</a> for the I/O queue.</p>
-
-<p>The following code example shows a segment of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556880">IQueueCallbackStateChange::OnStateChange</a> callback function. The segment obtains an I/O request from the I/O and then returns the request to the queue.</p>
+<p>The following code example shows a segment of an <a href="wdf.iqueuecallbackstatechange_onstatechange">IQueueCallbackStateChange::OnStateChange</a> callback function. The segment obtains an I/O request from the I/O and then returns the request to the queue.</p>
 
 ## -requirements
 <table>
@@ -185,12 +173,12 @@ HRESULT Requeue();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558988">IWDFIoRequest2</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
+<a href="wdf.iwdfioqueue_retrievenextrequest">IWDFIoQueue::RetrieveNextRequest</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest2::Requeue method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest2::Requeue method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: kernel\pocreatepowerrequest.htm
 old-project: kernel
 ms.assetid: 67986bf8-b070-44e9-95a2-eea35100b0e7
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PoCreatePowerRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,13 +66,13 @@ NTSTATUS PoCreatePowerRequest(
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>A pointer to the device object of the caller (a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure).</p>
+<p>A pointer to the device object of the caller (a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure).</p>
 </dd>
 
 ### -param <i>Context</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542081">COUNTED_REASON_CONTEXT</a> structure that describes why the caller is creating the power request object. This parameter is optional and can be set to <b>NULL</b>.</p>
+<p>A pointer to a <a href="..\wdm\ns-wdm--counted-reason-context.md">COUNTED_REASON_CONTEXT</a> structure that describes why the caller is creating the power request object. This parameter is optional and can be set to <b>NULL</b>.</p>
 </dd>
 </dl>
 
@@ -86,17 +86,11 @@ NTSTATUS PoCreatePowerRequest(
 <p> </p>
 
 ## -remarks
-<p>This routine creates a power request object. To enable power requests, the caller should create one power request object and use that object for all calls to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559762">PoSetPowerRequest</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff559658">PoClearPowerRequest</a> routines.</p>
+<p>This routine creates a power request object. To enable power requests, the caller should create one power request object and use that object for all calls to the <a href="..\ntifs\nf-ntifs-posetpowerrequest.md">PoSetPowerRequest</a> and <a href="..\ntifs\nf-ntifs-poclearpowerrequest.md">PoClearPowerRequest</a> routines.</p>
 
 <p>A driver can use power requests to override certain aspects of the computer's default power behavior. For example, a driver for a TV receiver device can use power requests to prevent the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> from automatically blanking the display during extended periods of time in which no user interaction occurs.</p>
 
-<p>When the power request object is no longer needed, the caller must delete the object by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559665">PoDeletePowerRequest</a> routine. The driver must delete the power request object before it deletes the device object that was used to create the power request object.</p>
-
-<p>This routine creates a power request object. To enable power requests, the caller should create one power request object and use that object for all calls to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559762">PoSetPowerRequest</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff559658">PoClearPowerRequest</a> routines.</p>
-
-<p>A driver can use power requests to override certain aspects of the computer's default power behavior. For example, a driver for a TV receiver device can use power requests to prevent the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> from automatically blanking the display during extended periods of time in which no user interaction occurs.</p>
-
-<p>When the power request object is no longer needed, the caller must delete the object by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559665">PoDeletePowerRequest</a> routine. The driver must delete the power request object before it deletes the device object that was used to create the power request object.</p>
+<p>When the power request object is no longer needed, the caller must delete the object by calling the <a href="..\ntifs\nf-ntifs-podeletepowerrequest.md">PoDeletePowerRequest</a> routine. The driver must delete the power request object before it deletes the device object that was used to create the power request object.</p>
 
 ## -requirements
 <table>
@@ -161,15 +155,15 @@ NTSTATUS PoCreatePowerRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559658">PoClearPowerRequest</a>
+<a href="..\ntifs\nf-ntifs-poclearpowerrequest.md">PoClearPowerRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559665">PoDeletePowerRequest</a>
+<a href="..\ntifs\nf-ntifs-podeletepowerrequest.md">PoDeletePowerRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559762">PoSetPowerRequest</a>
+<a href="..\ntifs\nf-ntifs-posetpowerrequest.md">PoSetPowerRequest</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoCreatePowerRequest routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoCreatePowerRequest routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

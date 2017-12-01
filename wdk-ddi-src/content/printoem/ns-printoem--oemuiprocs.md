@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>The OEMUIPROCS structure is obsolete.</p>
-<p>The OEMUIPROCS structure contains the address of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548556">DrvGetDriverSetting</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548641">DrvUpdateUISetting</a> functions that are exported by Microsoft printer drivers.</p>
+<p>The OEMUIPROCS structure contains the address of the <a href="print.drvgetdriversetting">DrvGetDriverSetting</a> and <a href="print.drvupdateuisetting">DrvUpdateUISetting</a> functions that are exported by Microsoft printer drivers.</p>
 
 
 ## -syntax
@@ -60,7 +60,7 @@ typedef struct _OEMUIPROCS {
 ### -field <b>DrvGetDriverSetting</b>
 
 <dd>
-<p>Pointer to the printer driver's <b>DrvGetDriverSetting</b> function. (To obtain this function's address in kernel mode, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548571">DRVPROCS</a>.)</p>
+<p>Pointer to the printer driver's <b>DrvGetDriverSetting</b> function. (To obtain this function's address in kernel mode, see <a href="..\printoem\ns-printoem--drvprocs.md">DRVPROCS</a>.)</p>
 </dd>
 
 ### -field <b>DrvUpdateUISetting</b>
@@ -72,9 +72,9 @@ typedef struct _OEMUIPROCS {
 
 ## -remarks
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548556">DrvGetDriverSetting</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548641">DrvUpdateUISetting</a> have been superseded by COM-based interfaces. </p>
+<a href="print.drvgetdriversetting">DrvGetDriverSetting</a> and <a href="print.drvupdateuisetting">DrvUpdateUISetting</a> have been superseded by COM-based interfaces. </p>
 
-<p>The OEMUIPROCS structure's address is contained in an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559571">OEMUIOBJ</a> structure.</p>
+<p>The OEMUIPROCS structure's address is contained in an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 
 ## -requirements
 <table>

@@ -97,14 +97,6 @@ VOID DxgkCbLogEtwEvent(
 
 <p>The following code example shows how to log an event with the event logger.</p>
 
-<p>If event logging is not enabled, <i>DxgkCbLogEtwEvent</i> returns immediately without logging the event.</p>
-
-<p>To enable or disable event logging, call the <a href="display.dxgkddicontroletwlogging">DxgkDdiControlEtwLogging</a>  function.</p>
-
-<p>If <i>EventBufferSize</i> is less than or equal to 256, <i>DxgkCbLogEtwEvent</i> can be called an any IRQL. If <i>EventBufferSize</i> is greater than 256, <i>DxgkCbLogEtwEvent</i> must be called at IRQL = PASSIVE_LEVEL.</p>
-
-<p>The following code example shows how to log an event with the event logger.</p>
-
 ## -requirements
 <table>
 <tr>

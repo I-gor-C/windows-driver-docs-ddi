@@ -64,12 +64,12 @@ typedef struct _CONNECT_DATA {
 ### -field <b>ClassService</b>
 
 <dd>
-<p>Specifies the class service routine. See  <a href="https://msdn.microsoft.com/library/windows/hardware/ff542274">PSERVICE_CALLBACK_ROUTINE</a>.</p>
+<p>Specifies the class service routine. See  <a href="..\kbdmou\nc-kbdmou-pservice-callback-routine.md">PSERVICE_CALLBACK_ROUTINE</a>.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The keyboard class driver uses this structure with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541273">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request; the mouse class driver uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff541294">IOCTL_INTERNAL_MOUSE_CONNECT</a> .</p>
+<p>The keyboard class driver uses this structure with an <a href="..\kbdmou\ni-kbdmou-ioctl-internal-keyboard-connect.md">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request; the mouse class driver uses <a href="..\kbdmou\ni-kbdmou-ioctl-internal-mouse-connect.md">IOCTL_INTERNAL_MOUSE_CONNECT</a> .</p>
 
 ## -requirements
 <table>

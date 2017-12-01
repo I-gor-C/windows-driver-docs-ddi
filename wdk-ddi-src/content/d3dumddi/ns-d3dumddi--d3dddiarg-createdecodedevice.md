@@ -66,13 +66,13 @@ typedef struct _D3DDDIARG_CREATEDECODEDEVICE {
 ### -field <b>VideoDesc</b>
 
 <dd>
-<p>[in] The <a href="https://msdn.microsoft.com/library/windows/hardware/ff562944">DXVADDI_VIDEODESC</a> structure for the video stream that the decode device should decode.</p>
+<p>[in] The <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videodesc.md">DXVADDI_VIDEODESC</a> structure for the video stream that the decode device should decode.</p>
 </dd>
 
 ### -field <b>pConfig</b>
 
 <dd>
-<p>[in] A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562894">DXVADDI_CONFIGPICTUREDECODE</a> structure that contains the DirectX VA connection configuration data for compressed picture decoding that the decode device requires. The Direct3D runtime calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function to query for the supported configurations.</p>
+<p>[in] A pointer to the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-configpicturedecode.md">DXVADDI_CONFIGPICTUREDECODE</a> structure that contains the DirectX VA connection configuration data for compressed picture decoding that the decode device requires. The Direct3D runtime calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function to query for the supported configurations.</p>
 </dd>
 
 ### -field <b>hDecode</b>
@@ -113,10 +113,10 @@ typedef struct _D3DDDIARG_CREATEDECODEDEVICE {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdecodedevice.md">CreateDecodeDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562894">DXVADDI_CONFIGPICTUREDECODE</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-configpicturedecode.md">DXVADDI_CONFIGPICTUREDECODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562944">DXVADDI_VIDEODESC</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-videodesc.md">DXVADDI_VIDEODESC</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a>

@@ -7,7 +7,7 @@ old-location: netvista\rilsmsreadystatus.htm
 old-project: netvista
 ms.assetid: 0f2d6a06-18af-4e7a-9f88-c81d98575f56
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSMSREADYSTATUS, RILSMSREADYSTATUS, *LPRILSMSREADYSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>LBA_FILTER_TABLE_ENTRY</b> structure contains an individual LBA range for the <a href="https://msdn.microsoft.com/library/windows/hardware/hh463957">LBA_FILTER_TABLE</a> sent in an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406723">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a> request.</p>
+<p>The <b>LBA_FILTER_TABLE_ENTRY</b> structure contains an individual LBA range for the <a href="..\ehstorioctl\ns-ehstorioctl--lba-filter-table.md">LBA_FILTER_TABLE</a> sent in an <a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-driver-update-lba-filter-table.md">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a> request.</p>
 
 
 ## -syntax
@@ -83,7 +83,7 @@ typedef struct _LBA_FILTER_TABLE_ENTRY {
 </dl>
 
 ## -remarks
-<p>An LBA range is valid only if LbaCount is &gt; 0 and it is not overlapping with another entry in <a href="https://msdn.microsoft.com/library/windows/hardware/hh463957">LBA_FILTER_TABLE</a>.</p>
+<p>An LBA range is valid only if LbaCount is &gt; 0 and it is not overlapping with another entry in <a href="..\ehstorioctl\ns-ehstorioctl--lba-filter-table.md">LBA_FILTER_TABLE</a>.</p>
 
 ## -requirements
 <table>
@@ -110,10 +110,10 @@ typedef struct _LBA_FILTER_TABLE_ENTRY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406723">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a>
+<a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-driver-update-lba-filter-table.md">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh463957">LBA_FILTER_TABLE</a>
+<a href="..\ehstorioctl\ns-ehstorioctl--lba-filter-table.md">LBA_FILTER_TABLE</a>
 </dt>
 </dl>
 <p> </p>

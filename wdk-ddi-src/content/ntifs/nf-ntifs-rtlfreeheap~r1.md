@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>RtlFreeHeap</b> routine frees a memory block that was allocated from a heap by <a href="https://msdn.microsoft.com/library/windows/hardware/ff552108">RtlAllocateHeap</a>. </p>
+<p>The <b>RtlFreeHeap</b> routine frees a memory block that was allocated from a heap by <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>. </p>
 
 
 ## -syntax
@@ -59,13 +59,13 @@ BOOLEAN RtlFreeHeap(
 ### -param <i>HeapHandle</i> [in]
 
 <dd>
-<p>A handle for the heap whose memory block is to be freed. This parameter is a handle returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff552159">RtlCreateHeap</a>. </p>
+<p>A handle for the heap whose memory block is to be freed. This parameter is a handle returned by <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>. </p>
 </dd>
 
 ### -param <i>Flags</i> [in, optional]
 
 <dd>
-<p>A set of flags that controls aspects of freeing a memory block. Specifying the following value overrides the corresponding value that was specified in the <i>Flags</i> parameter when the heap was created by <a href="https://msdn.microsoft.com/library/windows/hardware/ff552159">RtlCreateHeap</a>. </p>
+<p>A set of flags that controls aspects of freeing a memory block. Specifying the following value overrides the corresponding value that was specified in the <i>Flags</i> parameter when the heap was created by <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>. </p>
 <table>
 <tr>
 <th>Flag</th>
@@ -86,7 +86,7 @@ BOOLEAN RtlFreeHeap(
 ### -param <i>HeapBase</i> [in]
 
 <dd>
-<p>A pointer to the memory block to free. This pointer is returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff552108">RtlAllocateHeap</a>. </p>
+<p>A pointer to the memory block to free. This pointer is returned by <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>. </p>
 </dd>
 </dl>
 
@@ -164,13 +164,13 @@ BOOLEAN RtlFreeHeap(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552108">RtlAllocateHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552159">RtlCreateHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552233">RtlDestroyHeap</a>
+<a href="..\ntifs\nf-ntifs-rtldestroyheap.md">RtlDestroyHeap</a>
 </dt>
 </dl>
 <p> </p>

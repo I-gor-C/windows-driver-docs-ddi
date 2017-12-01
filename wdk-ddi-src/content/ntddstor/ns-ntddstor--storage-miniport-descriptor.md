@@ -80,7 +80,7 @@ typedef struct _STORAGE_MINIPORT_DESCRIPTOR {
 
 <dd>
 <p>Type of port driver as enumerated by the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/mt668773">STORAGE_PORT_CODE_SET</a> enumeration.</p>
+     <a href="storage.storage_port_code_set">STORAGE_PORT_CODE_SET</a> enumeration.</p>
 </dd>
 
 ### -field <b>LUNResetSupported</b>

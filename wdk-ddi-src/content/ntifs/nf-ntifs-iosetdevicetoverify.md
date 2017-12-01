@@ -76,15 +76,7 @@ VOID IoSetDeviceToVerify(
 
 <p>A file system must verify a volume when it receives notification from an underlying removable-media device driver that the media appears to have changed since the last access to the target device. </p>
 
-<p>Before using <b>IoSetDeviceToVerify</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548559">IoVerifyVolume</a>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample.</p>
-
-<p>For more information about removable-media devices, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563916">Supporting Removable Media</a>.</p>
-
-<p>A file system calls <b>IoSetDeviceToVerify</b> to indicate that a given device object, representing a removable-media device, needs to be verified.</p>
-
-<p>A file system must verify a volume when it receives notification from an underlying removable-media device driver that the media appears to have changed since the last access to the target device. </p>
-
-<p>Before using <b>IoSetDeviceToVerify</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548559">IoVerifyVolume</a>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample.</p>
+<p>Before using <b>IoSetDeviceToVerify</b> and <a href="..\ntifs\nf-ntifs-ioverifyvolume.md">IoVerifyVolume</a>, driver writers are strongly encouraged to study the way these routines are used in the FASTFAT sample.</p>
 
 <p>For more information about removable-media devices, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563916">Supporting Removable Media</a>.</p>
 
@@ -143,7 +135,7 @@ VOID IoSetDeviceToVerify(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj157234">IrqlIoDispatch</a>
+<a href="devtest.wdm_irqliodispatch">IrqlIoDispatch</a>
 </td>
 </tr>
 </table>
@@ -151,16 +143,16 @@ VOID IoSetDeviceToVerify(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549212">IoGetDeviceToVerify</a>
+<a href="..\ntifs\nf-ntifs-iogetdevicetoverify.md">IoGetDeviceToVerify</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559936">PsGetCurrentThread</a>
+<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548559">IoVerifyVolume</a>
+<a href="..\ntifs\nf-ntifs-ioverifyvolume.md">IoVerifyVolume</a>
 </dt>
 </dl>
 <p> </p>

@@ -80,11 +80,7 @@ NTSTATUS RxCancelTimerRequest(
 <p><b>RxCancelTimerRequest</b> returns STATUS_SUCCESS on success. </p>
 
 ## -remarks
-<p>A recurrent timer is initialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff554615">RxPostRecurrentTimerRequest</a>.</p>
-
-<p>If the recurrent timer is not found, this routine will return STATUS_NOT_FOUND.</p>
-
-<p>A recurrent timer is initialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff554615">RxPostRecurrentTimerRequest</a>.</p>
+<p>A recurrent timer is initialized by calling <a href="..\rxtimer\nf-rxtimer-rxpostrecurrenttimerrequest.md">RxPostRecurrentTimerRequest</a>.</p>
 
 <p>If the recurrent timer is not found, this routine will return STATUS_NOT_FOUND.</p>
 
@@ -123,10 +119,10 @@ NTSTATUS RxCancelTimerRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554612">RxPostOneShotTimerRequest</a>
+<a href="..\rxtimer\nf-rxtimer-rxpostoneshottimerrequest.md">RxPostOneShotTimerRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554615">RxPostRecurrentTimerRequest</a>
+<a href="..\rxtimer\nf-rxtimer-rxpostrecurrenttimerrequest.md">RxPostRecurrentTimerRequest</a>
 </dt>
 </dl>
 <p> </p>

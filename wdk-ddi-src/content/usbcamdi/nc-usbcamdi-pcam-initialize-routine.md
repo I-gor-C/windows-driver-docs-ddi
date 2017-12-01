@@ -7,7 +7,7 @@ old-location: stream\caminitialize.htm
 old-project: stream
 ms.assetid: a39f78b7-f749-40b8-952a-5442608b0f1f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: USBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR, *PUSBC_FUNCTION_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,12 +76,6 @@ NTSTATUS CamInitialize(
 <p><b>CamInitialize</b> returns STATUS_SUCCESS or an appropriate error code. </p>
 
 ## -remarks
-<p>USBCAMD calls the camera minidriver's <b>CamInitialize</b> callback function the first time the device is used.</p>
-
-<p><b>CamInitialize</b> is called by both the original USBCAMD and USBCAMD2.</p>
-
-<p>This function is required.</p>
-
 <p>USBCAMD calls the camera minidriver's <b>CamInitialize</b> callback function the first time the device is used.</p>
 
 <p><b>CamInitialize</b> is called by both the original USBCAMD and USBCAMD2.</p>

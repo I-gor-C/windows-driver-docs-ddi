@@ -7,7 +7,7 @@ old-location: sensors\gnss_cp_ni_info.htm
 old-project: sensors
 ms.assetid: FC05C59C-F8B5-4573-A1F0-722A25BDA151
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_CP_NI_INFO, GNSS_CP_NI_INFO, *PGNSS_CP_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

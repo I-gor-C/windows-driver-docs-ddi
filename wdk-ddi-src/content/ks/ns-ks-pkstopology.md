@@ -7,7 +7,7 @@ old-location: stream\kstopology.htm
 old-project: stream
 ms.assetid: 8dbd37ed-5d71-43bd-a3ca-caa5b0d08075
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSTOPOLOGY, KSTOPOLOGY, *PKSTOPOLOGY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,7 +88,7 @@ typedef struct {
 ### -field <b>TopologyConnectionsCount</b>
 
 <dd>
-<p>Specifies the number of entries in the array pointed to by <b>TopologyConnections</b>. The node numbers of each entry must correspond to the array offset of the node within <b>TopologyNodes</b>. When this structure is a part of a streaming minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559690">HW_STREAM_HEADER</a>, the pin numbers must correspond to the offsets within the array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559692">HW_STREAM_INFORMATION</a> structures in the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559686">HW_STREAM_DESCRIPTOR</a> structure.</p>
+<p>Specifies the number of entries in the array pointed to by <b>TopologyConnections</b>. The node numbers of each entry must correspond to the array offset of the node within <b>TopologyNodes</b>. When this structure is a part of a streaming minidriver's <a href="..\strmini\ns-strmini--hw-stream-header.md">HW_STREAM_HEADER</a>, the pin numbers must correspond to the offsets within the array of <a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a> structures in the minidriver's <a href="..\strmini\ns-strmini--hw-stream-descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.</p>
 </dd>
 
 ### -field <b>TopologyConnections</b>
@@ -111,24 +111,11 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>A stream class minidriver creates and passes this structure as part of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff559690">HW_STREAM_HEADER</a> structure. The class driver uses this structure to process topology property requests. The property data that the class driver returns is determined from the KSTOPOLOGY structure as follows:</p>
+<p>A stream class minidriver creates and passes this structure as part of its <a href="..\strmini\ns-strmini--hw-stream-header.md">HW_STREAM_HEADER</a> structure. The class driver uses this structure to process topology property requests. The property data that the class driver returns is determined from the KSTOPOLOGY structure as follows:</p>
 
-<p></p><dl>
-<dt><a id="KSPROPERTY_TOPOLOGY_CATEGORIES"></a><a id="ksproperty_topology_categories"></a>KSPROPERTY_TOPOLOGY_CATEGORIES</dt>
-<dd>
+<p></p>
+
 <p>Returns the array that begins at the <b>Categories</b> member of KSTOPOLOGY.</p>
-</dd>
-<dt><a id="KSPROPERTY_TOPOLOGY_CONNECTIONS"></a><a id="ksproperty_topology_connections"></a>KSPROPERTY_TOPOLOGY_CONNECTIONS</dt>
-<dd>
-<p>Returns the array that begins at the <b>TopologyConnections</b> member of KSTOPOLOGY.</p>
-</dd>
-<dt><a id="KSPROPERTY_TOPOLOGY_NAME"></a><a id="ksproperty_topology_name"></a>KSPROPERTY_TOPOLOGY_NAME</dt>
-<dd></dd>
-<dt><a id="KSPROPERTY_TOPOLOGY_NODES"></a><a id="ksproperty_topology_nodes"></a>KSPROPERTY_TOPOLOGY_NODES</dt>
-<dd>
-<p>Returns the array that begins at the <b>Nodes</b> member of KSTOPOLOGY.</p>
-</dd>
-</dl><p>Returns the array that begins at the <b>Categories</b> member of KSTOPOLOGY.</p>
 
 <p>Returns the array that begins at the <b>TopologyConnections</b> member of KSTOPOLOGY.</p>
 
@@ -151,18 +138,18 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559690">HW_STREAM_HEADER</a>
+<a href="..\strmini\ns-strmini--hw-stream-header.md">HW_STREAM_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559692">HW_STREAM_INFORMATION</a>
+<a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559686">HW_STREAM_DESCRIPTOR</a>
+<a href="..\strmini\ns-strmini--hw-stream-descriptor.md">HW_STREAM_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567148">KSTOPOLOGY_CONNECTION</a>
+<a href="stream.kstopology_connection">KSTOPOLOGY_CONNECTION</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSTOPOLOGY structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSTOPOLOGY structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

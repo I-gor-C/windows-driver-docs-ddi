@@ -77,7 +77,7 @@ typedef struct _USBC_FUNCTION_DESCRIPTOR {
 ### -field <b>InterfaceDescriptorList</b>
 
 <dd>
-<p>An array of pointers to <a href="https://msdn.microsoft.com/library/windows/hardware/ff540065">USB_INTERFACE_DESCRIPTOR</a>-type structures that describe the interfaces in the interface collection.</p>
+<p>An array of pointers to <a href="..\usbspec\ns-usbspec--usb-interface-descriptor.md">USB_INTERFACE_DESCRIPTOR</a>-type structures that describe the interfaces in the interface collection.</p>
 </dd>
 
 ### -field <b>HardwareId</b>
@@ -131,10 +131,10 @@ typedef struct _USBC_FUNCTION_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540065">USB_INTERFACE_DESCRIPTOR</a>
+<a href="..\usbspec\ns-usbspec--usb-interface-descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

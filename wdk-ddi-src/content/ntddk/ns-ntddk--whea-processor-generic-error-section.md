@@ -74,7 +74,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 
 <dd>
 <p>A 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff560610">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a> 
+      <a href="..\ntddk\ns-ntddk--whea-processor-generic-error-section-validbits.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a> 
       union that specifies which members of this structure contain valid data.</p>
 </dd>
 
@@ -373,7 +373,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 <p>The CPU version, which includes the family, model, and stepping information.</p>
 <ul>
 <li>For x86 and x64 processors, this member contains a 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff560605">WHEA_PROCESSOR_FAMILY_INFO</a> union.</li>
+        <a href="..\ntddk\ns-ntddk--whea-processor-family-info.md">WHEA_PROCESSOR_FAMILY_INFO</a> union.</li>
 <li>For Itanium processors, this member contains the data provided in CPUID Register 3.</li>
 </ul>
 <p>This member contains valid data only if the <b>CPUVersion</b> bit of the 
@@ -448,7 +448,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
      structure describes the error data that is contained in a generic processor error section of an 
      <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a generic processor 
      error section only if the <b>SectionType</b> member of one of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff560496">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> 
+     <a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> 
      structures that describe the error record sections for that error record contains 
      <b>PROCESSOR_GENERIC_ERROR_SECTION_GUID</b>.</p>
 
@@ -477,16 +477,16 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+<a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560496">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560610">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a>
+<a href="..\ntddk\ns-ntddk--whea-processor-generic-error-section-validbits.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560605">WHEA_PROCESSOR_FAMILY_INFO</a>
+<a href="..\ntddk\ns-ntddk--whea-processor-family-info.md">WHEA_PROCESSOR_FAMILY_INFO</a>
 </dt>
 </dl>
 <p> </p>

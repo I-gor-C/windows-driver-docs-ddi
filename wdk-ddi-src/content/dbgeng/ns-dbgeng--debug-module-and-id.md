@@ -7,7 +7,7 @@ old-location: debugger\debug_module_and_id.htm
 old-project: debugger
 ms.assetid: d65ad0fa-1dd8-42b4-866b-cb2522080cde
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID, *PDEBUG_MODULE_AND_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices

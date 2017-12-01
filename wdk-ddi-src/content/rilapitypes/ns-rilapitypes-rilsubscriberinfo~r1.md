@@ -7,7 +7,7 @@ old-location: netvista\rilsubscriberinfo_2.htm
 old-project: netvista
 ms.assetid: 4afb3184-0534-43b1-9b88-4aac04d26c4a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSUBSCRIBERINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

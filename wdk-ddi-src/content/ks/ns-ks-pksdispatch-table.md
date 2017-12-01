@@ -7,7 +7,7 @@ old-location: stream\ksdispatch_table.htm
 old-project: stream
 ms.assetid: baa45ce7-3dcd-4383-99f2-aeb664a03190
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSDISPATCH_TABLE, KSDISPATCH_TABLE, *PKSDISPATCH_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,13 +96,13 @@ typedef struct {
 ### -field <b>QuerySecurity</b>
 
 <dd>
-<p>Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff549298">IRP_MJ_QUERY_SECURITY</a> IRPs to.</p>
+<p>Specifies the minidriver's routine to dispatch <a href="ifsk.irp_mj_query_security">IRP_MJ_QUERY_SECURITY</a> IRPs to.</p>
 </dd>
 
 ### -field <b>SetSecurity</b>
 
 <dd>
-<p>Specifies the minidriver's routine to dispatch <a href="https://msdn.microsoft.com/library/windows/hardware/ff549407">IRP_MJ_SET_SECURITY</a> IRPs to.</p>
+<p>Specifies the minidriver's routine to dispatch <a href="ifsk.irp_mj_set_security">IRP_MJ_SET_SECURITY</a> IRPs to.</p>
 </dd>
 
 ### -field <b>FastDeviceIoControl</b>
@@ -127,7 +127,7 @@ typedef struct {
 ## -remarks
 <p>A pointer to a dispatch table is contained in the opaque object header that is the first element of data pointed to by the file object's <b>FsContext</b> field.</p>
 
-<p>For more information about minidriver implemented IRP dispatch routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566840">KsSetMajorFunctionHandler</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>.</p>
+<p>For more information about minidriver implemented IRP dispatch routines, see <a href="..\ks\nf-ks-kssetmajorfunctionhandler.md">KsSetMajorFunctionHandler</a>, and <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>.</p>
 
 ## -requirements
 <table>
@@ -146,12 +146,12 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566840">KsSetMajorFunctionHandler</a>
+<a href="..\ks\nf-ks-kssetmajorfunctionhandler.md">KsSetMajorFunctionHandler</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>
+<a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSDISPATCH_TABLE structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSDISPATCH_TABLE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

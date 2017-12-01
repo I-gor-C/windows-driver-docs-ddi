@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>Contains a range of a file to set to zeros. This structure is used by the 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt668765">FSCTL_SET_ZERO_DATA</a> control code. It's similar to <a href="https://msdn.microsoft.com/library/windows/hardware/mt668763">FILE_ZERO_DATA_INFORMATION</a>, but contains an additional <b>Flags</b> member. </p>
+<a href="ifsk.fsctl_set_zero_data">FSCTL_SET_ZERO_DATA</a> control code. It's similar to <a href="..\ntifs\ns-ntifs--file-zero-data-information.md">FILE_ZERO_DATA_INFORMATION</a>, but contains an additional <b>Flags</b> member. </p>
 
 
 ## -syntax
@@ -123,13 +123,13 @@ typedef struct _FILE_ZERO_DATA_INFORMATION_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542988">FltFsControlFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltfscontrolfile.md">FltFsControlFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt668765">FSCTL_SET_ZERO_DATA</a>
+<a href="ifsk.fsctl_set_zero_data">FSCTL_SET_ZERO_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt668763">FILE_ZERO_DATA_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-zero-data-information.md">FILE_ZERO_DATA_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

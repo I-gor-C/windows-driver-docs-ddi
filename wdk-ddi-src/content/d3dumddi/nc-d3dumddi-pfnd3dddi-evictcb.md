@@ -67,7 +67,7 @@ HRESULT APIENTRY CALLBACK* pfnEvictCb(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906762">D3DDDICB_EVICT</a> structure that describes the memory pages to evict.
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicb-evict.md">D3DDDICB_EVICT</a> structure that describes the memory pages to evict.
 
 </p>
 </dd>
@@ -77,8 +77,6 @@ HRESULT APIENTRY CALLBACK* pfnEvictCb(
 <p>If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.</p>
 
 ## -remarks
-<p>Once the eviction request is queued, it is illegal to access the underlying allocation as the allocation may be evicted at anytime from there on at the operating system discretion.</p>
-
 <p>Once the eviction request is queued, it is illegal to access the underlying allocation as the allocation may be evicted at anytime from there on at the operating system discretion.</p>
 
 ## -requirements
@@ -124,7 +122,7 @@ HRESULT APIENTRY CALLBACK* pfnEvictCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906762">D3DDDICB_EVICT</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddicb-evict.md">D3DDDICB_EVICT</a>
 </dt>
 </dl>
 <p> </p>

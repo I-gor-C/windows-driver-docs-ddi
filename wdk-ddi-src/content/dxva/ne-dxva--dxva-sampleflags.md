@@ -117,13 +117,13 @@ typedef enum _DXVA_SampleFlags {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563927">DXVA_DeinterlaceBobDeviceClass::DeinterlaceBltEx</a>
+<a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DXVA_DeinterlaceBobDeviceClass::DeinterlaceBltEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563915">DXVA_DeinterlaceBltEx</a>
+<a href="..\dxva\ns-dxva--dxva-deinterlacebltex.md">DXVA_DeinterlaceBltEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564092">DXVA_VideoSample2</a>
+<a href="..\dxva\ns-dxva--dxva-videosample2.md">DXVA_VideoSample2</a>
 </dt>
 </dl>
 <p> </p>

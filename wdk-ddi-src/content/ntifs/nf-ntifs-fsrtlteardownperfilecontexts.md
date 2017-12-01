@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>File systems call the<b>FsRtlTeardownPerFileContexts</b> routine to free <a href="https://msdn.microsoft.com/library/windows/hardware/ff547352">FSRTL_PER_FILE_CONTEXT</a> objects that are associated with a <a href="ifsk.the_fcb_structure">file control block (FCB)</a> structure.</p>
+<p>File systems call the<b>FsRtlTeardownPerFileContexts</b> routine to free <a href="..\ntifs\ns-ntifs--fsrtl-per-file-context.md">FSRTL_PER_FILE_CONTEXT</a> objects that are associated with a <a href="ifsk.the_fcb_structure">file control block (FCB)</a> structure.</p>
 
 
 ## -syntax
@@ -65,13 +65,9 @@ VOID FsRtlTeardownPerFileContexts(
 <p>None</p>
 
 ## -remarks
-<p>This routine calls the <i>FreeCallback</i> routine specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547352">FSRTL_PER_FILE_CONTEXT</a> object. The <i>FreeCallback</i> routine has to deallocate the <b>FSRTL_PER_FILE_CONTEXT</b> structure and the associated context.</p>
+<p>This routine calls the <i>FreeCallback</i> routine specified in the <a href="..\ntifs\ns-ntifs--fsrtl-per-file-context.md">FSRTL_PER_FILE_CONTEXT</a> object. The <i>FreeCallback</i> routine has to deallocate the <b>FSRTL_PER_FILE_CONTEXT</b> structure and the associated context.</p>
 
-<p>To avoid conflicts in synchronization, the <b>FsRtlTeardownPerFileContexts</b> routine releases the lock for the per file context objects before calling <i>FreeCallback</i>. This avoids blocking access to the to the per file context objects by the filter for its own list operations, such as removal with <a href="https://msdn.microsoft.com/library/windows/hardware/ff547226">FsRtlRemovePerFileContext</a>.</p>
-
-<p>This routine calls the <i>FreeCallback</i> routine specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547352">FSRTL_PER_FILE_CONTEXT</a> object. The <i>FreeCallback</i> routine has to deallocate the <b>FSRTL_PER_FILE_CONTEXT</b> structure and the associated context.</p>
-
-<p>To avoid conflicts in synchronization, the <b>FsRtlTeardownPerFileContexts</b> routine releases the lock for the per file context objects before calling <i>FreeCallback</i>. This avoids blocking access to the to the per file context objects by the filter for its own list operations, such as removal with <a href="https://msdn.microsoft.com/library/windows/hardware/ff547226">FsRtlRemovePerFileContext</a>.</p>
+<p>To avoid conflicts in synchronization, the <b>FsRtlTeardownPerFileContexts</b> routine releases the lock for the per file context objects before calling <i>FreeCallback</i>. This avoids blocking access to the to the per file context objects by the filter for its own list operations, such as removal with <a href="..\ntifs\nf-ntifs-fsrtlremoveperfilecontext.md">FsRtlRemovePerFileContext</a>.</p>
 
 ## -requirements
 <table>
@@ -136,10 +132,10 @@ VOID FsRtlTeardownPerFileContexts(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547352">FSRTL_PER_FILE_CONTEXT</a>
+<a href="..\ntifs\ns-ntifs--fsrtl-per-file-context.md">FSRTL_PER_FILE_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551123">PFREE_FUNCTION</a>
+<a href="ifsk.pfree_function">PFREE_FUNCTION</a>
 </dt>
 <dt>
 <a href="ifsk.tracking_per_file_context_in_a_legacy_file_system_filter_driver">Tracking Per-File Context in a Legacy File System Filter Driver</a>

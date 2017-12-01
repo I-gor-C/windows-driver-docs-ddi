@@ -7,7 +7,7 @@ old-location: sensors\gnss_fixdata.htm
 old-project: sensors
 ms.assetid: 2939F01A-2F1C-4434-BAE1-59F1F320BD44
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_FIXDATA, GNSS_FIXDATA, *PGNSS_FIXDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

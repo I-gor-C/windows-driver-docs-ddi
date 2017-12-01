@@ -148,13 +148,13 @@ typedef struct _FILE_COMPRESSION_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544756">FLT_PARAMETERS for IRP_MJ_QUERY_INFORMATION</a>
+<a href="ifsk.flt_parameters_for_irp_mj_query_information">FLT_PARAMETERS for IRP_MJ_QUERY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543439">FltQueryInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549283">IRP_MJ_QUERY_INFORMATION</a>
+<a href="ifsk.irp_mj_query_information">IRP_MJ_QUERY_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

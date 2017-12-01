@@ -132,7 +132,7 @@ typedef struct _DXGK_PATCHFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557610">DXGKARG_PATCH</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-patch.md">DXGKARG_PATCH</a>
 </dt>
 <dt>
 <a href="display.dxgkddipatch">DxgkDdiPatch</a>

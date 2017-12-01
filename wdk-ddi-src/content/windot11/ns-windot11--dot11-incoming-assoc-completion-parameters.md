@@ -7,7 +7,7 @@ old-location: netvista\dot11_incoming_assoc_completion_parameters.htm
 old-project: netvista
 ms.assetid: 8f3cfe07-5026-40fb-b832-da5ae048843e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: windot11.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating
-   system.
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   system.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -75,7 +74,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <dd>
 <p>The type, revision, and size of the DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure. This
      member is formatted as an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.
      </p>
 <p>The miniport driver must set the members of 
      <b>Header</b> to the following values:</p>
@@ -102,7 +101,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 </dd>
 </dl>
 <p>For more information about these members, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.</p>
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
 ### -field <b>PeerMacAddr</b>
@@ -206,7 +205,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <p>The authentication algorithm that the 802.11 station resolved with the peer station during the
       association operation. For more information about the data type for the 
       <b>AuthAlgo</b> member, see 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547655">DOT11_AUTH_ALGORITHM</a>.</p>
+      <a href="..\wlantypes\ne-wlantypes--dot11-auth-algorithm.md">DOT11_AUTH_ALGORITHM</a>.</p>
 <div class="alert"><b>Note</b>  The miniport driver must set this member to zero if 
       <b>uStatus</b> is not set to zero.</div>
 <div> </div>
@@ -218,7 +217,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <p>The unicast cipher algorithm that the 802.11 station resolved with the peer station during the
       association operation. For more information about the data type for the 
       <b>UnicastCipher</b> member, see 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>.</p>
+      <a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>.</p>
 <div class="alert"><b>Note</b>  The miniport driver must set this member to zero if 
       <b>uStatus</b> is not set to zero.</div>
 <div> </div>
@@ -230,7 +229,7 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 <p>The multicast cipher algorithm that the 802.11 station resolved with the AP or peer station during
       the association operation. For more information about the data type for the 
       <b>MulticastCipher</b> member, see 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>.</p>
+      <a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>.</p>
 <div class="alert"><b>Note</b>  The miniport driver must set this member to zero if 
       <b>uStatus</b> is not set to zero.</div>
 <div> </div>
@@ -352,13 +351,13 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547655">DOT11_AUTH_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes--dot11-auth-algorithm.md">DOT11_AUTH_ALGORITHM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_dot11_incoming_assoc_completion">
@@ -367,4 +366,4 @@ typedef struct _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

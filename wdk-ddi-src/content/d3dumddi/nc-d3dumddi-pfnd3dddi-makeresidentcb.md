@@ -67,7 +67,7 @@ HRESULT APIENTRY CALLBACK* pfnMakeResidentCb(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906323">D3DDDI_MAKERESIDENT</a> structure that describes the memory pages to make resident.
+<p>A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-makeresident.md">D3DDDI_MAKERESIDENT</a> structure that describes the memory pages to make resident.
 
 </p>
 </dd>
@@ -143,7 +143,7 @@ HRESULT APIENTRY CALLBACK* pfnMakeResidentCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906323">D3DDDI_MAKERESIDENT</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-makeresident.md">D3DDDI_MAKERESIDENT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-evictcb.md">pfnEvictCb</a>

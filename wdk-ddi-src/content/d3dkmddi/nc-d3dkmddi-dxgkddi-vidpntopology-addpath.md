@@ -61,7 +61,7 @@ NTSTATUS APIENTRY pfnAddPath(
 ### -param <i>hVidPnTopology</i> [in]
 
 <dd>
-<p>[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-gettopology.md">pfnGetTopology</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562108">DXGK_VIDPN_INTERFACE</a> interface.</p>
+<p>[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpn-gettopology.md">pfnGetTopology</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpn-interface.md">DXGK_VIDPN_INTERFACE</a> interface.</p>
 </dd>
 
 ### -param <i>pVidPnPresentPath</i> [in]
@@ -85,21 +85,7 @@ NTSTATUS APIENTRY pfnAddPath(
 ## -remarks
 <p>To add a path to a topology, the display miniport driver performs the following steps.</p>
 
-<p>Call <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-createnewpathinfo.md">pfnCreateNewPathInfo</a> to obtain a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a> structure allocated by the VidPN manager.</p>
-
-<p>Populate the D3DKMDT_VIDPN_PRESENT_PATH structure with information about the path, including video present source and target identifiers.</p>
-
-<p>Call <b>pfnAddPath</b> to add the path to a topology. </p>
-
-<p>The VidPN manager allocates a D3DKMDT_VIDPN_PRESENT_PATH structure when you call <b>pfnCreateNewPathInfo</b>. If you add the path described by that structure to a topology, then you do not need to explicitly release the structure; <b>pfnAddPath</b> releases it.</p>
-
-<p>If you obtain a D3DKMDT_VIDPN_PRESENT_PATH structure by calling <b>pfnCreateNewPathInfo</b> and then decide not to add that path to a topology, then you must explicity release the structure by calling <b>pfnReleasePathInfo</b>.</p>
-
-<p>The D3DKMDT_HVIDPNTOPOLOGY data type is defined in<i> D3dkmdt.h</i>.</p>
-
-<p>To add a path to a topology, the display miniport driver performs the following steps.</p>
-
-<p>Call <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-createnewpathinfo.md">pfnCreateNewPathInfo</a> to obtain a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a> structure allocated by the VidPN manager.</p>
+<p>Call <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-createnewpathinfo.md">pfnCreateNewPathInfo</a> to obtain a pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure allocated by the VidPN manager.</p>
 
 <p>Populate the D3DKMDT_VIDPN_PRESENT_PATH structure with information about the path, including video present source and target identifiers.</p>
 
@@ -160,7 +146,7 @@ NTSTATUS APIENTRY pfnAddPath(
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-vidpntopology-releasepathinfo.md">pfnReleasePathInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
 </dt>
 </dl>
 <p> </p>

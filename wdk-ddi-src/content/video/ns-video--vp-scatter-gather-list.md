@@ -98,7 +98,7 @@ typedef struct _VP_SCATTER_GATHER_LIST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570571">VP_SCATTER_GATHER_ELEMENT</a>
+<a href="..\video\ns-video--vp-scatter-gather-element.md">VP_SCATTER_GATHER_ELEMENT</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pexecute-dma.md">HwVidExecuteDma</a>

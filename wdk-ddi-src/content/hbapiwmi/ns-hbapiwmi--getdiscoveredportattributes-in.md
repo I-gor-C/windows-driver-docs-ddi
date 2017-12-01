@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetDiscoveredPortAttributes_IN structure is used to pass input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a> WMI method.</p>
+<p>The GetDiscoveredPortAttributes_IN structure is used to pass input parameter data to the <a href="storage.getdiscoveredportattributes">GetDiscoveredPortAttributes</a> WMI method.</p>
 
 
 ## -syntax
@@ -69,7 +69,7 @@ typedef struct _GetDiscoveredPortAttributes_IN {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the GetDiscoveredPortAttributes_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetDiscoveredPortAttributes_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -88,7 +88,7 @@ typedef struct _GetDiscoveredPortAttributes_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
+<a href="storage.getdiscoveredportattributes">GetDiscoveredPortAttributes</a>
 </dt>
 </dl>
 <p> </p>

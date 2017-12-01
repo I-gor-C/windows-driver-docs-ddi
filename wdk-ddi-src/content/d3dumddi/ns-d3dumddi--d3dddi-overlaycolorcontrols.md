@@ -106,7 +106,7 @@ typedef struct _D3DDDI_OVERLAYCOLORCONTROLS {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544615">D3DDDI_OVERLAYCOLORCONTROLSFLAGS</a> structure that identifies color-control settings that the overlay hardware supports.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlaycolorcontrolsflags.md">D3DDDI_OVERLAYCOLORCONTROLSFLAGS</a> structure that identifies color-control settings that the overlay hardware supports.</p>
 </dd>
 </dl>
 
@@ -138,13 +138,13 @@ typedef struct _D3DDDI_OVERLAYCOLORCONTROLS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543169">D3DDDIARG_GETOVERLAYCOLORCONTROLS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getoverlaycolorcontrols.md">D3DDDIARG_GETOVERLAYCOLORCONTROLS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543323">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544615">D3DDDI_OVERLAYCOLORCONTROLSFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlaycolorcontrolsflags.md">D3DDDI_OVERLAYCOLORCONTROLSFLAGS</a>
 </dt>
 </dl>
 <p> </p>

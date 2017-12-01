@@ -58,7 +58,7 @@ void HBA_API HBA_ResetStatistics(
 ### -param <i>HbaHandle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port is located.  </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located.  </p>
 </dd>
 
 ### -param <i>PortIndex</i> [in]
@@ -72,9 +72,7 @@ void HBA_API HBA_ResetStatistics(
 <p>None</p>
 
 ## -remarks
-<p>The <b>HBA_ResetStatistics</b> routine serves similar purpose to the <b>ResetStatistics</b> method of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562501">MSFC_FibrePortHBAMethods WMI Class</a>. </p>
-
-<p>The <b>HBA_ResetStatistics</b> routine serves similar purpose to the <b>ResetStatistics</b> method of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562501">MSFC_FibrePortHBAMethods WMI Class</a>. </p>
+<p>The <b>HBA_ResetStatistics</b> routine serves similar purpose to the <b>ResetStatistics</b> method of the <a href="storage.msfc_fibreporthbamethods_wmi_class">MSFC_FibrePortHBAMethods WMI Class</a>. </p>
 
 ## -requirements
 <table>
@@ -123,10 +121,10 @@ void HBA_API HBA_ResetStatistics(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562501">MSFC_FibrePortHBAMethods WMI Class</a>
+<a href="storage.msfc_fibreporthbamethods_wmi_class">MSFC_FibrePortHBAMethods WMI Class</a>
 </dt>
 </dl>
 <p> </p>

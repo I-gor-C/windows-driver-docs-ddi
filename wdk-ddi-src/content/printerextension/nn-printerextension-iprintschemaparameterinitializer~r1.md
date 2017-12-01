@@ -45,12 +45,12 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaParameterInitializer</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/hh451270">IPrintSchemaElement</a>. <b>IPrintSchemaParameterInitializer</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaParameterInitializer</b> interface inherits from <a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>. <b>IPrintSchemaParameterInitializer</b> also has these types of members:</p>
 
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaParameterInitializer</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn923306">Value</a>
+<a href="print.iprintschemaparameterinitializer_getvalue">Value</a>
 </p>
 
 <p>Read-only</p>
@@ -58,7 +58,7 @@ req.product: Windows 10 or later.
 <p>The <b>Value</b> (get_Value) property Gets the current value of the <b>IPrintSchemaParameterInitializer</b> object.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn923306">Value</a>
+<a href="print.iprintschemaparameterinitializer_putvalue">Value</a>
 </p>
 
 <p>Write-only</p>
@@ -103,7 +103,7 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451270">IPrintSchemaElement</a>
+<a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>
 </dt>
 <dt>
 <a href="print.iprintschematicket2_getparameterinitializer">IPrintSchematicket2::GetParameterInitializer</a>

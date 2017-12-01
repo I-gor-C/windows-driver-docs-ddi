@@ -99,26 +99,6 @@ NTSTATUS IoCheckQuotaBufferValidity(
 
 <p>To be valid, the quota buffer must meet all of these conditions.</p>
 
-<p><b>IoCheckQuotaBufferValidity</b> checks each FILE_QUOTA_INFORMATION entry in the specified quota buffer to ensure that the following conditions are met:</p>
-
-<p>The entire entry must fall within the buffer.</p>
-
-<p>The value of <b>Sid</b> must be a security identifier (SID).</p>
-
-<p>The value of <b>SidLength</b> must match the length in bytes of the value of <b>Sid</b>.</p>
-
-<p>For all entries except the last, the value of <b>NextEntryOffset</b> must be greater than zero and must fall on a ULONG boundary.</p>
-
-<p>In addition, <b>IoCheckQuotaBufferValidity</b> checks the quota buffer to ensure that the following conditions are met:</p>
-
-<p>The buffer must be ULONG-aligned.</p>
-
-<p>The length passed in <i>QuotaLength</i> matches the actual length of the buffer.</p>
-
-<p>The actual buffer length is nonnegative.</p>
-
-<p>To be valid, the quota buffer must meet all of these conditions.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -182,13 +162,13 @@ NTSTATUS IoCheckQuotaBufferValidity(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540342">FILE_QUOTA_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-quota-information.md">FILE_QUOTA_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
+<a href="ifsk.irp_mj_query_quota">IRP_MJ_QUERY_QUOTA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
+<a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a>
 </dt>
 </dl>
 <p> </p>

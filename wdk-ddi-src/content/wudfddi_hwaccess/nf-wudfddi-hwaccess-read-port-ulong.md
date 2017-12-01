@@ -7,7 +7,7 @@ old-location: wdf\read_port_ulong.htm
 old-project: wdf
 ms.assetid: 2B507B58-8CD0-4D66-93E9-FF67D7246F3C
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: READ_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ ULONG READ_PORT_ULONG(
 ### -param <i>pDevice</i> [in]
 
 <dd>
-<p>Specifies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface for the device object of the device to access.</p>
+<p>Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.</p>
 </dd>
 
 ### -param <i>Port</i> [in]
@@ -74,8 +74,6 @@ ULONG READ_PORT_ULONG(
 <p><b>READ_PORT_ULONG</b> returns the ULONG value that is read from the specified port address.</p>
 
 ## -remarks
-<p>For more information, see <a href="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.</p>
-
 <p>For more information, see <a href="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.</p>
 
 ## -requirements

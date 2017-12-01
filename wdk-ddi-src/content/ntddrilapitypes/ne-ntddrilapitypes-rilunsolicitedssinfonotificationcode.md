@@ -7,7 +7,7 @@ old-location: netvista\rilunsolicitedssinfonotificationcode.htm
 old-project: netvista
 ms.assetid: 03dd4659-29fc-4426-8d30-2bbc0b71f899
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

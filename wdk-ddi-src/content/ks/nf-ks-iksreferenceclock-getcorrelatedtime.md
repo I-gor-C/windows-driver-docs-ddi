@@ -7,7 +7,7 @@ old-location: stream\iksreferenceclock_getcorrelatedtime.htm
 old-project: stream
 ms.assetid: 3f4a47bb-460e-4ca0-9aee-4bcfdb88dd30
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IKsReferenceClock, GetCorrelatedTime, IKsReferenceClock::GetCorrelatedTime
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,17 +69,7 @@ LONGLONG GetCorrelatedTime(
 
 <p>For the most accurate results, call this method only when the stream is in a running state (KSSTATE_RUN) and not during a state transition.</p>
 
-<p>You should use this method when obtaining a time stamp to put in the <b>PresentationTime</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a>.</p>
-
-<p>For more information, see <a href="NULL">AVStream Clocks</a>.</p>
-
-<p>AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564465">KSPROPERTY_CLOCK_CORRELATEDTIME</a> property to retrieve the correlated time.</p>
-
-<p>Use this method to determine the difference between stream time and system time. <b>IKsReferenceClock::GetCorrelatedTime</b> returns the times that both clocks show at the same moment.</p>
-
-<p>For the most accurate results, call this method only when the stream is in a running state (KSSTATE_RUN) and not during a state transition.</p>
-
-<p>You should use this method when obtaining a time stamp to put in the <b>PresentationTime</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a>.</p>
+<p>You should use this method when obtaining a time stamp to put in the <b>PresentationTime</b> member of <a href="stream.ksstream_header">KSSTREAM_HEADER</a>.</p>
 
 <p>For more information, see <a href="NULL">AVStream Clocks</a>.</p>
 
@@ -112,9 +102,9 @@ LONGLONG GetCorrelatedTime(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563517">KsPinGetReferenceClockInterface</a>
+<a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsReferenceClock::GetCorrelatedTime method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsReferenceClock::GetCorrelatedTime method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

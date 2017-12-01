@@ -71,7 +71,7 @@ typedef struct _DXGKARG_QUERYENGINESTATUS {
 ### -field <b>EngineStatus</b>
 
 <dd>
-<p>[out] The progress, of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh464023">DXGK_ENGINESTATUS</a>, of the node and physical adapter that are specified by the <b>NodeOrdinal</b> and <b>EngineOrdinal</b> members.</p>
+<p>[out] The progress, of type <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-enginestatus.md">DXGK_ENGINESTATUS</a>, of the node and physical adapter that are specified by the <b>NodeOrdinal</b> and <b>EngineOrdinal</b> members.</p>
 </dd>
 </dl>
 
@@ -111,7 +111,7 @@ typedef struct _DXGKARG_QUERYENGINESTATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464023">DXGK_ENGINESTATUS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-enginestatus.md">DXGK_ENGINESTATUS</a>
 </dt>
 <dt>
 <a href="display.dxgkddiqueryenginestatus">DxgkDdiQueryEngineStatus</a>

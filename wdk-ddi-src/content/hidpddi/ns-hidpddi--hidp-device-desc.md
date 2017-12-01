@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>Contains the device description block filled in
-                         collection descriptions as linked lists. This structure is used by <a href="https://msdn.microsoft.com/library/windows/hardware/mt740164">HidP_GetCollectionDescription</a>.</p>
+                         collection descriptions as linked lists. This structure is used by <a href="..\hidpddi\nf-hidpddi-hidp-getcollectiondescription.md">HidP_GetCollectionDescription</a>.</p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ typedef struct _HIDP_DEVICE_DESC {
 ### -field <b>CollectionDesc</b>
 
 <dd>
-<p>An array of  <a href="https://msdn.microsoft.com/library/windows/hardware/mt740161">HIDP_COLLECTION_DESC</a> structure that contains the collection descriptors.</p>
+<p>An array of  <a href="..\hidpddi\ns-hidpddi--hidp-collection-desc.md">HIDP_COLLECTION_DESC</a> structure that contains the collection descriptors.</p>
 </dd>
 
 ### -field <b>CollectionDescLength</b>
@@ -74,7 +74,7 @@ typedef struct _HIDP_DEVICE_DESC {
 ### -field <b>ReportIDs</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt740165">HIDP_REPORT_IDS</a> structures report ID information for a report descriptor. 
+<p>An array of <a href="..\hidpddi\ns-hidpddi--hidp-report-ids.md">HIDP_REPORT_IDS</a> structures report ID information for a report descriptor. 
 </p>
 </dd>
 
@@ -87,7 +87,7 @@ typedef struct _HIDP_DEVICE_DESC {
 ### -field <b>Dbg</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt740163">HIDP_GETCOLDESC_DBG</a> structure that contains the error code indicating the failure in parsing the report 
+<p>A <a href="..\hidpddi\ns-hidpddi--hidp-getcoldesc-dbg.md">HIDP_GETCOLDESC_DBG</a> structure that contains the error code indicating the failure in parsing the report 
                                       descriptor.</p>
 </dd>
 </dl>
@@ -112,7 +112,7 @@ typedef struct _HIDP_DEVICE_DESC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt740164">HidP_GetCollectionDescription</a>
+<a href="..\hidpddi\nf-hidpddi-hidp-getcollectiondescription.md">HidP_GetCollectionDescription</a>
 </dt>
 </dl>
 <p> </p>

@@ -81,19 +81,7 @@ NTSTATUS* DxgkDdiSetBrightness(
 
 <p>The preferred way for user-mode clients to control brightness is through Windows Management Instrumentation (WMI). The monitor driver implements the WMI brightness controls that select a brightness level or revert the brightness level to the level that was selected by the currently active DPPE policy. The WMI method to select a brightness level overrides the current DPPE policy level until any change in DPPE policy occurs. When DPPE policy changes, the new DPPE level is set. </p>
 
-<p>For compatibility with the <a href="https://msdn.microsoft.com/24cb232b-e289-45c8-8d55-42614a4dfd54">Windows 2000 Display Driver Model</a>, the monitor driver implements <a href="https://msdn.microsoft.com/library/windows/hardware/ff568140">IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS</a> as an alternative way for user-mode clients to control brightness. A call to IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS is handled the same way as the WMI brightness control that selects a brightness level. </p>
-
-<p>The monitor driver interprets brightness hot-key notifications from the Advanced Configuration and Power Interface (ACPI) driver as user requests to change the current brightness level. As with the WMI and IOCTL user-mode interfaces, a change in brightness level that is triggered by a hot-key notification overrides the current DPPE policy and stays in effect until DPPE policy requests that the brightness value is set again.</p>
-
-<p><i>DxgkDdiSetBrightness</i> should be made pageable. </p>
-
-<p>The <a href="https://msdn.microsoft.com/6352c3fd-1a5f-4137-b76e-35c5b82a56c7">monitor driver</a> calls the display miniport driver's <i>DxgkDdiSetBrightness</i> function to change the brightness level of the integrated display panel for the following reasons:</p>
-
-<p>Notifications from the Device Power Policy Engine (DPPE) indicate that either the current policy is modified or a new policy takes effect. A new DPPE policy takes effect on system start, resume, and user switch, as well as when the power source is changed.</p>
-
-<p>The preferred way for user-mode clients to control brightness is through Windows Management Instrumentation (WMI). The monitor driver implements the WMI brightness controls that select a brightness level or revert the brightness level to the level that was selected by the currently active DPPE policy. The WMI method to select a brightness level overrides the current DPPE policy level until any change in DPPE policy occurs. When DPPE policy changes, the new DPPE level is set. </p>
-
-<p>For compatibility with the <a href="https://msdn.microsoft.com/24cb232b-e289-45c8-8d55-42614a4dfd54">Windows 2000 Display Driver Model</a>, the monitor driver implements <a href="https://msdn.microsoft.com/library/windows/hardware/ff568140">IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS</a> as an alternative way for user-mode clients to control brightness. A call to IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS is handled the same way as the WMI brightness control that selects a brightness level. </p>
+<p>For compatibility with the <a href="https://msdn.microsoft.com/24cb232b-e289-45c8-8d55-42614a4dfd54">Windows 2000 Display Driver Model</a>, the monitor driver implements <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-set-display-brightness.md">IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS</a> as an alternative way for user-mode clients to control brightness. A call to IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS is handled the same way as the WMI brightness control that selects a brightness level. </p>
 
 <p>The monitor driver interprets brightness hot-key notifications from the Advanced Configuration and Power Interface (ACPI) driver as user requests to change the current brightness level. As with the WMI and IOCTL user-mode interfaces, a change in brightness level that is triggered by a hot-key notification overrides the current DPPE policy and stays in effect until DPPE policy requests that the brightness value is set again.</p>
 
@@ -145,7 +133,7 @@ NTSTATUS* DxgkDdiSetBrightness(
 <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568140">IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-set-display-brightness.md">IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS</a>
 </dt>
 </dl>
 <p> </p>

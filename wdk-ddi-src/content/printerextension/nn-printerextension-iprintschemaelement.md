@@ -49,7 +49,7 @@ req.product: Windows 10 or later.
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaElement</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971602">Name</a>
+<a href="print.iprintschemaelement_name">Name</a>
 </p>
 
 <p>Read-only</p>
@@ -57,7 +57,7 @@ req.product: Windows 10 or later.
 <p>Gets the base value of the "name" attribute of this node.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh965536">NamespaceUri</a>
+<a href="print.iprintschemaelement_namespaceuri">NamespaceUri</a>
 </p>
 
 <p>Read-only</p>
@@ -65,7 +65,7 @@ req.product: Windows 10 or later.
 <p>Gets the namespace URI  value of the "name" attribute of this node.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh969196">XmlNode</a>
+<a href="print.iprintschemaelement_xmlnode">XmlNode</a>
 </p>
 
 <p>Read-only</p>

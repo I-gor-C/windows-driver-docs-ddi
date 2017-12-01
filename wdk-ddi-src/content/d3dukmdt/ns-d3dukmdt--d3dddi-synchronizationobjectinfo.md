@@ -69,7 +69,7 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO {
 ### -field <b>Type</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544669">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>-typed value that indicates the type of synchronization object.</p>
+<p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-synchronizationobject-type.md">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>-typed value that indicates the type of synchronization object.</p>
 </dd>
 
 ### -field <b>SynchronizationMutex</b>
@@ -149,10 +149,10 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544669">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-synchronizationobject-type.md">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544157">D3DDDICB_CREATESYNCHRONIZATIONOBJECT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-createsynchronizationobject.md">D3DDDICB_CREATESYNCHRONIZATIONOBJECT</a>
 </dt>
 </dl>
 <p> </p>

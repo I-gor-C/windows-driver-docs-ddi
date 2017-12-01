@@ -65,25 +65,15 @@ VOID FltCloseCommunicationPort(
 <p>None </p>
 
 ## -remarks
-<p><b>FltCloseCommunicationPort</b> closes a communication server port that was created by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541931">FltCreateCommunicationPort</a>. </p>
+<p><b>FltCloseCommunicationPort</b> closes a communication server port that was created by a previous call to <a href="..\fltkernel\nf-fltkernel-fltcreatecommunicationport.md">FltCreateCommunicationPort</a>. </p>
 
-<p>A minifilter driver normally calls <b>FltCloseCommunicationPort</b> from its <i>FilterUnloadCallback</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551085">PFLT_FILTER_UNLOAD_CALLBACK</a>) routine. </p>
-
-<p>After <b>FltCloseCommunicationPort</b> is called, the opaque port handle specified by the <i>ServerPort</i> parameter is no longer valid and cannot safely be used. (The <i>ServerPort</i> handle is for the communication server port that the minifilter driver uses to listen for incoming connections.) </p>
-
-<p>When the communication server port is closed, existing connections are not affected. However, no more incoming connections will be accepted. </p>
-
-<p>This routine closes handle for the minifilter driver's server port, which listens for incoming connections. To disconnect a specific connection from the minifilter driver, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff541867">FltCloseClientPort</a>. </p>
-
-<p><b>FltCloseCommunicationPort</b> closes a communication server port that was created by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541931">FltCreateCommunicationPort</a>. </p>
-
-<p>A minifilter driver normally calls <b>FltCloseCommunicationPort</b> from its <i>FilterUnloadCallback</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551085">PFLT_FILTER_UNLOAD_CALLBACK</a>) routine. </p>
+<p>A minifilter driver normally calls <b>FltCloseCommunicationPort</b> from its <i>FilterUnloadCallback</i> (<a href="..\fltkernel\nc-fltkernel-pflt-filter-unload-callback.md">PFLT_FILTER_UNLOAD_CALLBACK</a>) routine. </p>
 
 <p>After <b>FltCloseCommunicationPort</b> is called, the opaque port handle specified by the <i>ServerPort</i> parameter is no longer valid and cannot safely be used. (The <i>ServerPort</i> handle is for the communication server port that the minifilter driver uses to listen for incoming connections.) </p>
 
 <p>When the communication server port is closed, existing connections are not affected. However, no more incoming connections will be accepted. </p>
 
-<p>This routine closes handle for the minifilter driver's server port, which listens for incoming connections. To disconnect a specific connection from the minifilter driver, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff541867">FltCloseClientPort</a>. </p>
+<p>This routine closes handle for the minifilter driver's server port, which listens for incoming connections. To disconnect a specific connection from the minifilter driver, use <a href="..\fltkernel\nf-fltkernel-fltcloseclientport.md">FltCloseClientPort</a>. </p>
 
 ## -requirements
 <table>
@@ -140,19 +130,19 @@ VOID FltCloseCommunicationPort(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540460">FilterConnectCommunicationPort</a>
+<a href="ifsk.filterconnectcommunicationport">FilterConnectCommunicationPort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541867">FltCloseClientPort</a>
+<a href="..\fltkernel\nf-fltkernel-fltcloseclientport.md">FltCloseClientPort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541931">FltCreateCommunicationPort</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatecommunicationport.md">FltCreateCommunicationPort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544378">FltSendMessage</a>
+<a href="..\fltkernel\nf-fltkernel-fltsendmessage.md">FltSendMessage</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551085">PFLT_FILTER_UNLOAD_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-filter-unload-callback.md">PFLT_FILTER_UNLOAD_CALLBACK</a>
 </dt>
 </dl>
 <p> </p>

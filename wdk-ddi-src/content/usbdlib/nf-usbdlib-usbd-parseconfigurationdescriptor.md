@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The  <b>USBD_ParseConfigurationDescriptor</b> routine has been deprecated. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539102">USBD_ParseConfigurationDescriptorEx</a> instead.</p>
+<p>The  <b>USBD_ParseConfigurationDescriptor</b> routine has been deprecated. Use <a href="..\usbdlib\nf-usbdlib-usbd-parseconfigurationdescriptorex.md">USBD_ParseConfigurationDescriptorEx</a> instead.</p>
 
 
 ## -syntax
@@ -99,7 +99,7 @@ PUSB_INTERFACE_DESCRIPTOR USBD_ParseConfigurationDescriptor(
 <p>Version</p>
 </th>
 <td width="70%">
-<p>Deprecated. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539102">USBD_ParseConfigurationDescriptorEx</a> instead.</p>
+<p>Deprecated. Use <a href="..\usbdlib\nf-usbdlib-usbd-parseconfigurationdescriptorex.md">USBD_ParseConfigurationDescriptorEx</a> instead.</p>
 </td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ PUSB_INTERFACE_DESCRIPTOR USBD_ParseConfigurationDescriptor(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539102">USBD_ParseConfigurationDescriptorEx</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-parseconfigurationdescriptorex.md">USBD_ParseConfigurationDescriptorEx</a>
 </dt>
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 </dl>

@@ -98,7 +98,7 @@ typedef union _CONTROLLER_USB_20_HARDWARE_LPM_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188027">ROOTHUB_20PORT_INFO</a>
+<a href="buses._roothub_20port_info">ROOTHUB_20PORT_INFO</a>
 </dt>
 </dl>
 <p> </p>

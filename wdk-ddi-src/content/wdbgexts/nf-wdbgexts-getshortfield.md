@@ -7,7 +7,7 @@ old-location: debugger\getshortfield.htm
 old-project: debugger
 ms.assetid: f5f00e88-b758-4f37-9fe5-5db8f20835b1
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: GetShortField
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -138,12 +138,6 @@ __inline ULONG64 GetShortField(
 
 <p>The <b>ReadField</b> and <b>ReadFieldStr</b> macros read a field whose size is less than 8 bytes from a structure initialized with <a href="https://msdn.microsoft.com/library/windows/hardware/ff550953">InitTypeRead</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550957">InitTypeReadPhysical</a>. </p>
 
-<p>When <b>GetShortField</b> is called with a nonzero <i>StoreAddress</i> value, it initializes the structure located at the address specified by <i>TypeAddress</i>. Only one structure can be initialized at a time. If <b>GetShortField</b> is called more than once with a nonzero <i>StoreAddress</i> value, only the structure specified in the most recent call is initialized. When <b>GetShortField</b> is called with <i>StoreAddress</i> equal to zero, it accesses the most recently initialized structure, reads in that structure the field specified by <i>Name</i>, and returns the value of that field. </p>
-
-<p>This function does not need to be called directly.  The macros <a href="https://msdn.microsoft.com/library/windows/hardware/ff550953">InitTypeRead</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550957">InitTypeReadPhysical</a> call this function with <i>StoreAddress</i> non-zero to prepare a structure for reading its members.  The macro <a href="https://msdn.microsoft.com/library/windows/hardware/ff553539">ReadField</a> calls this function with <i>StoreAddress</i> (and <i>TypeAddress</i>) equal to zero, to read members from the structure.</p>
-
-<p>The <b>ReadField</b> and <b>ReadFieldStr</b> macros read a field whose size is less than 8 bytes from a structure initialized with <a href="https://msdn.microsoft.com/library/windows/hardware/ff550953">InitTypeRead</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550957">InitTypeReadPhysical</a>. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -182,4 +176,4 @@ __inline ULONG64 GetShortField(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20GetShortField function%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20GetShortField function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -133,51 +133,7 @@ typedef enum _D3DKMDT_MODE_PRUNING_REASON {
 </dl>
 
 ## -remarks
-<p>The setting of the <b>ValidatedAgainstMonitorCaps</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545991">D3DKMDT_DISPLAYMODE_FLAGS</a> structure indicates whether the monitor supports a display mode or not. If the monitor does not support a display mode, the operating system removes the display mode from the list of display modes that are available to the monitor.</p>
-
-<p>When a display mode is supported, the reason type can be one of the following:</p>
-
-<p>D3DKMDT_MPR_DRIVER_RECOMMENDED_MONITOR_SOURCE_MODE</p>
-
-<p>D3DKMDT_MPR_DESCRIPTOR_MONITOR_SOURCE_MODE</p>
-
-<p>D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_SOURCE_MODE</p>
-
-<p>D3DKMDT_MPR_DEFAULT_PROFILE_MONITOR_SOURCE_MODE</p>
-
-<p>D3DKMDT_MPR_MONITOR_FREQUENCY_RANGE_OVERRIDE</p>
-
-<p>When a display mode is not supported, the reason type can be one of the following:</p>
-
-<p>D3DKMDT_MPR_DESCRIPTOR_MONITOR_FREQUENCY_RANGE</p>
-
-<p>D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_FREQUENCY_RANGE</p>
-
-<p>D3DKMDT_MPR_ALLCAPS</p>
-
-<p>The setting of the <b>ValidatedAgainstMonitorCaps</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545991">D3DKMDT_DISPLAYMODE_FLAGS</a> structure indicates whether the monitor supports a display mode or not. If the monitor does not support a display mode, the operating system removes the display mode from the list of display modes that are available to the monitor.</p>
-
-<p>When a display mode is supported, the reason type can be one of the following:</p>
-
-<p>D3DKMDT_MPR_DRIVER_RECOMMENDED_MONITOR_SOURCE_MODE</p>
-
-<p>D3DKMDT_MPR_DESCRIPTOR_MONITOR_SOURCE_MODE</p>
-
-<p>D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_SOURCE_MODE</p>
-
-<p>D3DKMDT_MPR_DEFAULT_PROFILE_MONITOR_SOURCE_MODE</p>
-
-<p>D3DKMDT_MPR_MONITOR_FREQUENCY_RANGE_OVERRIDE</p>
-
-<p>When a display mode is not supported, the reason type can be one of the following:</p>
-
-<p>D3DKMDT_MPR_DESCRIPTOR_MONITOR_FREQUENCY_RANGE</p>
-
-<p>D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_FREQUENCY_RANGE</p>
-
-<p>D3DKMDT_MPR_ALLCAPS</p>
-
-<p>The setting of the <b>ValidatedAgainstMonitorCaps</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545991">D3DKMDT_DISPLAYMODE_FLAGS</a> structure indicates whether the monitor supports a display mode or not. If the monitor does not support a display mode, the operating system removes the display mode from the list of display modes that are available to the monitor.</p>
+<p>The setting of the <b>ValidatedAgainstMonitorCaps</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmdt-displaymode-flags.md">D3DKMDT_DISPLAYMODE_FLAGS</a> structure indicates whether the monitor supports a display mode or not. If the monitor does not support a display mode, the operating system removes the display mode from the list of display modes that are available to the monitor.</p>
 
 <p>When a display mode is supported, the reason type can be one of the following:</p>
 
@@ -224,7 +180,7 @@ typedef enum _D3DKMDT_MODE_PRUNING_REASON {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545991">D3DKMDT_DISPLAYMODE_FLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmdt-displaymode-flags.md">D3DKMDT_DISPLAYMODE_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

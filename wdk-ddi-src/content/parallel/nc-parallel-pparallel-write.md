@@ -99,15 +99,9 @@ typedef NTSTATUS ( *PPARALLEL_WRITE)(
 <p> </p>
 
 ## -remarks
-<p>To obtain a pointer to the system-supplied PPARALLEL_WRITE callback, a kernel-mode driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544040">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request, which returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure. The <b>ParallelWrite</b> member of the PARCLASS_INFORMATION structure is a pointer to this callback.</p>
+<p>To obtain a pointer to the system-supplied PPARALLEL_WRITE callback, a kernel-mode driver uses an <a href="..\parallel\ni-parallel-ioctl-internal-parclass-connect.md">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request, which returns a <a href="..\parallel\ns-parallel--parclass-information.md">PARCLASS_INFORMATION</a> structure. The <b>ParallelWrite</b> member of the PARCLASS_INFORMATION structure is a pointer to this callback.</p>
 
-<p>A client can only use this routine if it has a lock on a parallel port. A client obtains a lock on a parallel port by using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544009">IOCTL_INTERNAL_LOCK_PORT</a> request.</p>
-
-<p>The PPARALLEL_WRITE callback runs in the caller's thread at the IRQL of the caller.</p>
-
-<p>To obtain a pointer to the system-supplied PPARALLEL_WRITE callback, a kernel-mode driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544040">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request, which returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544334">PARCLASS_INFORMATION</a> structure. The <b>ParallelWrite</b> member of the PARCLASS_INFORMATION structure is a pointer to this callback.</p>
-
-<p>A client can only use this routine if it has a lock on a parallel port. A client obtains a lock on a parallel port by using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544009">IOCTL_INTERNAL_LOCK_PORT</a> request.</p>
+<p>A client can only use this routine if it has a lock on a parallel port. A client obtains a lock on a parallel port by using an <a href="..\parallel\ni-parallel-ioctl-internal-lock-port.md">IOCTL_INTERNAL_LOCK_PORT</a> request.</p>
 
 <p>The PPARALLEL_WRITE callback runs in the caller's thread at the IRQL of the caller.</p>
 
@@ -138,10 +132,10 @@ typedef NTSTATUS ( *PPARALLEL_WRITE)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544009">IOCTL_INTERNAL_LOCK_PORT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-lock-port.md">IOCTL_INTERNAL_LOCK_PORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544537">PPARALLEL_READ</a>
+<a href="..\parallel\nc-parallel-pparallel-read.md">PPARALLEL_READ</a>
 </dt>
 </dl>
 <p> </p>

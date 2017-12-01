@@ -62,7 +62,7 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn632442">FSCTL_REMOVE_OVERLAY</a> request contains a <b>WIM_PROVIDER_REMOVE_OVERLAY_INPUT</b>  in the system buffer as input. The value in <b>DataSourceId</b> is the data source identifier returned from a prior  <a href="https://msdn.microsoft.com/library/windows/hardware/dn632437">FSCTL_ADD_OVERLAY</a> control request.</p>
+<p>The <a href="ifsk.fsctl_remove_overlay">FSCTL_REMOVE_OVERLAY</a> request contains a <b>WIM_PROVIDER_REMOVE_OVERLAY_INPUT</b>  in the system buffer as input. The value in <b>DataSourceId</b> is the data source identifier returned from a prior  <a href="ifsk.fsctl_add_overlay">FSCTL_ADD_OVERLAY</a> control request.</p>
 
 ## -requirements
 <table>
@@ -89,16 +89,16 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632442">FSCTL_REMOVE_OVERLAY</a>
+<a href="ifsk.fsctl_remove_overlay">FSCTL_REMOVE_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632437">FSCTL_ADD_OVERLAY</a>
+<a href="ifsk.fsctl_add_overlay">FSCTL_ADD_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426735">FSCTL_SUSPEND_OVERLAY</a>
+<a href="ifsk.fsctl_suspend_overlay">FSCTL_SUSPEND_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632445">FSCTL_UPDATE_OVERLAY</a>
+<a href="ifsk.fsctl_update_overlay">FSCTL_UPDATE_OVERLAY</a>
 </dt>
 </dl>
 <p> </p>

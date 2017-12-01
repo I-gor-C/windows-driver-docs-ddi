@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_port_uchar.htm
 old-project: wdf
 ms.assetid: FC7AB24C-2AE0-4014-82FE-97C285E9558E
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_READ_PORT_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices

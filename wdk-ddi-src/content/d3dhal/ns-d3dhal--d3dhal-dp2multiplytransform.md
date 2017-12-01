@@ -125,7 +125,7 @@ typedef struct _D3DHAL_DP2MULTIPLYTRANSFORM {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545823">D3DHAL_DP2SETTRANSFORM</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2settransform.md">D3DHAL_DP2SETTRANSFORM</a>
 </dt>
 </dl>
 <p> </p>

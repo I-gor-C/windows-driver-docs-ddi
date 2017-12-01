@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The MONITORINIT structure is used as an input parameter to a print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551605">InitializePrintMonitor2</a> function.</p>
+<p>The MONITORINIT structure is used as an input parameter to a print monitor's <a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a> function.</p>
 
 
 ## -syntax
@@ -81,7 +81,7 @@ typedef struct _MONITORINIT {
 ### -field <b>pMonitorReg</b>
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557537">MONITORREG</a> structure.</p>
+<p>Pointer to a <a href="..\winsplp\ns-winsplp--monitorreg.md">MONITORREG</a> structure.</p>
 </dd>
 
 ### -field <b>bLocal</b>
@@ -117,10 +117,10 @@ typedef struct _MONITORINIT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551605">InitializePrintMonitor2</a>
+<a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557537">MONITORREG</a>
+<a href="..\winsplp\ns-winsplp--monitorreg.md">MONITORREG</a>
 </dt>
 </dl>
 <p> </p>

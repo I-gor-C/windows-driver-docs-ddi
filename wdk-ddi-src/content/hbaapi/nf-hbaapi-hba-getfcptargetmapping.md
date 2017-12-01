@@ -58,18 +58,18 @@ HBA_STATUS HBA_API HBA_GetFcpTargetMapping(
 ### -param <i>HbaHandle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA to query for the target mappings. The HBA returns mappings for the targets that it can enumerate. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA to query for the target mappings. The HBA returns mappings for the targets that it can enumerate. </p>
 </dd>
 
 ### -param <i>Mapping</i> [in, out]
 
 <dd>
-<p>Pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556069">HBA_FCPTargetMapping</a> that contains an array of bindings between operating system and FCP identifiers for a set of target devices. These mappings are maintained by the HBA referenced by <i>HbaHandle</i>. On input, the <b>NumberOfEntries</b> member of HBA_FCPTargetMapping should contain a number of mappings that fit in the output buffer. On output, the <b>NumberOfEntries</b> contains the number of mappings requested, or the full set of mappings, whichever is smaller. The value in <b>NumberOfEntries</b> contains the number of mappings returned even when an error occurred due to insufficient buffer space. </p>
+<p>Pointer to a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fcptargetmapping.md">HBA_FCPTargetMapping</a> that contains an array of bindings between operating system and FCP identifiers for a set of target devices. These mappings are maintained by the HBA referenced by <i>HbaHandle</i>. On input, the <b>NumberOfEntries</b> member of HBA_FCPTargetMapping should contain a number of mappings that fit in the output buffer. On output, the <b>NumberOfEntries</b> contains the number of mappings requested, or the full set of mappings, whichever is smaller. The value in <b>NumberOfEntries</b> contains the number of mappings returned even when an error occurred due to insufficient buffer space. </p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_GetFcpTargetMapping</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetFcpTargetMapping</b> returns one of the following qualifiers.</p><dl>
+<p>The <b>HBA_GetFcpTargetMapping</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetFcpTargetMapping</b> returns one of the following qualifiers.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if all the mapping entries were retrieved. </p><dl>
 <dt><b>HBA_STATUS_ERROR_MORE_DATA</b></dt>
@@ -129,13 +129,13 @@ HBA_STATUS HBA_API HBA_GetFcpTargetMapping(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556069">HBA_FCPTargetMapping</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcptargetmapping.md">HBA_FCPTargetMapping</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

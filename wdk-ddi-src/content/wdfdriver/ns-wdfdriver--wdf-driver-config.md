@@ -7,7 +7,7 @@ old-location: wdf\wdf_driver_config.htm
 old-project: wdf
 ms.assetid: 24197846-9664-4fc6-8578-5bcaf0e4a71c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_DRIVER_CONFIG, WDF_DRIVER_CONFIG, *PWDF_DRIVER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]</p>
-<p>The WDF_DRIVER_CONFIG structure is an input parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a>.</p>
+<p>The WDF_DRIVER_CONFIG structure is an input parameter to <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>.</p>
 
 
 ## -syntax
@@ -81,7 +81,7 @@ typedef struct _WDF_DRIVER_CONFIG {
 ### -field <b>DriverInitFlags</b>
 
 <dd>
-<p>A bitwise OR of one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff551303">WDF_DRIVER_INIT_FLAGS</a>-typed values that identify driver initialization flags.</p>
+<p>A bitwise OR of one or more <a href="..\wdfdriver\ne-wdfdriver--wdf-driver-init-flags.md">WDF_DRIVER_INIT_FLAGS</a>-typed values that identify driver initialization flags.</p>
 </dd>
 
 ### -field <b>DriverPoolTag</b>
@@ -96,7 +96,7 @@ typedef struct _WDF_DRIVER_CONFIG {
 
 <p>If <b>DriverPoolTag</b> is zero, the framework creates a default pool tag by using the first four characters of your driver's kernel-mode service name. If the service name begins with "WDF" (the name is not case sensitive and does not include the quotation marks), the next four characters are used. If fewer than four characters are available, "FxDr" is used. </p>
 
-<p>To initialize a WDF_DRIVER_CONFIG structure, drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff551302">WDF_DRIVER_CONFIG_INIT</a>.</p>
+<p>To initialize a WDF_DRIVER_CONFIG structure, drivers must call <a href="..\wdfdriver\nf-wdfdriver-wdf-driver-config-init.md">WDF_DRIVER_CONFIG_INIT</a>.</p>
 
 ## -requirements
 <table>
@@ -137,15 +137,15 @@ typedef struct _WDF_DRIVER_CONFIG {
 <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-unload.md">EvtDriverUnload</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551302">WDF_DRIVER_CONFIG_INIT</a>
+<a href="..\wdfdriver\nf-wdfdriver-wdf-driver-config-init.md">WDF_DRIVER_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551303">WDF_DRIVER_INIT_FLAGS</a>
+<a href="..\wdfdriver\ne-wdfdriver--wdf-driver-init-flags.md">WDF_DRIVER_INIT_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a>
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DRIVER_CONFIG structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DRIVER_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

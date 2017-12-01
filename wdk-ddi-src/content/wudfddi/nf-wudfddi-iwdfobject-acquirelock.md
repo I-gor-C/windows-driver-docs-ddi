@@ -7,7 +7,7 @@ old-location: wdf\iwdfobject_acquirelock.htm
 old-project: wdf
 ms.assetid: f69328fb-356b-4381-ae6e-df39ac60e032
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFObject, AcquireLock, IWDFObject::AcquireLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,37 +62,13 @@ void AcquireLock();
 <p>None</p>
 
 ## -remarks
-<p>If a driver configured itself to use the <b>AcquireLock</b> locking scheme, the framework automatically acquires the "presentation" lock before calling into the driver. (For more information about this locking scheme, see <a href="wdf.specifying_a_callback_synchronization_mode">Specifying a Callback Synchronization Mode</a>.) The <b>AcquireLock</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560214">IWDFObject::ReleaseLock</a> methods acquire and release the presentation lock, respectively. <a href="wdf.framework_device_object">Framework device objects</a> and <a href="wdf.framework_i_o_queue_object">framework I/O queue objects</a> currently support the <b>AcquireLock</b> method.</p>
+<p>If a driver configured itself to use the <b>AcquireLock</b> locking scheme, the framework automatically acquires the "presentation" lock before calling into the driver. (For more information about this locking scheme, see <a href="wdf.specifying_a_callback_synchronization_mode">Specifying a Callback Synchronization Mode</a>.) The <b>AcquireLock</b> and <a href="wdf.iwdfobject_releaselock">IWDFObject::ReleaseLock</a> methods acquire and release the presentation lock, respectively. <a href="wdf.framework_device_object">Framework device objects</a> and <a href="wdf.framework_i_o_queue_object">framework I/O queue objects</a> currently support the <b>AcquireLock</b> method.</p>
 
 <p>The driver calls the <b>AcquireLock</b> method to manipulate its objects that were created from its callback interfaces outside the callback scope in a thread-safe manner. The <b>AcquireLock</b> method represents an advanced feature of the framework that most drivers will not use because improper usage can result in deadlocks.</p>
 
 <p>Unsynchronized code can call <b>AcquireLock</b>. The driver should call on objects that match its synchronization scope.</p>
 
-<p>For a code example of how to use the <b>AcquireLock</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>.</p>
-
-<p>If a driver configured itself to use the <b>AcquireLock</b> locking scheme, the framework automatically acquires the "presentation" lock before calling into the driver. (For more information about this locking scheme, see <a href="wdf.specifying_a_callback_synchronization_mode">Specifying a Callback Synchronization Mode</a>.) The <b>AcquireLock</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560214">IWDFObject::ReleaseLock</a> methods acquire and release the presentation lock, respectively. <a href="wdf.framework_device_object">Framework device objects</a> and <a href="wdf.framework_i_o_queue_object">framework I/O queue objects</a> currently support the <b>AcquireLock</b> method.</p>
-
-<p>The driver calls the <b>AcquireLock</b> method to manipulate its objects that were created from its callback interfaces outside the callback scope in a thread-safe manner. The <b>AcquireLock</b> method represents an advanced feature of the framework that most drivers will not use because improper usage can result in deadlocks.</p>
-
-<p>Unsynchronized code can call <b>AcquireLock</b>. The driver should call on objects that match its synchronization scope.</p>
-
-<p>For a code example of how to use the <b>AcquireLock</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>.</p>
-
-<p>If a driver configured itself to use the <b>AcquireLock</b> locking scheme, the framework automatically acquires the "presentation" lock before calling into the driver. (For more information about this locking scheme, see <a href="wdf.specifying_a_callback_synchronization_mode">Specifying a Callback Synchronization Mode</a>.) The <b>AcquireLock</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560214">IWDFObject::ReleaseLock</a> methods acquire and release the presentation lock, respectively. <a href="wdf.framework_device_object">Framework device objects</a> and <a href="wdf.framework_i_o_queue_object">framework I/O queue objects</a> currently support the <b>AcquireLock</b> method.</p>
-
-<p>The driver calls the <b>AcquireLock</b> method to manipulate its objects that were created from its callback interfaces outside the callback scope in a thread-safe manner. The <b>AcquireLock</b> method represents an advanced feature of the framework that most drivers will not use because improper usage can result in deadlocks.</p>
-
-<p>Unsynchronized code can call <b>AcquireLock</b>. The driver should call on objects that match its synchronization scope.</p>
-
-<p>For a code example of how to use the <b>AcquireLock</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>.</p>
-
-<p>If a driver configured itself to use the <b>AcquireLock</b> locking scheme, the framework automatically acquires the "presentation" lock before calling into the driver. (For more information about this locking scheme, see <a href="wdf.specifying_a_callback_synchronization_mode">Specifying a Callback Synchronization Mode</a>.) The <b>AcquireLock</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560214">IWDFObject::ReleaseLock</a> methods acquire and release the presentation lock, respectively. <a href="wdf.framework_device_object">Framework device objects</a> and <a href="wdf.framework_i_o_queue_object">framework I/O queue objects</a> currently support the <b>AcquireLock</b> method.</p>
-
-<p>The driver calls the <b>AcquireLock</b> method to manipulate its objects that were created from its callback interfaces outside the callback scope in a thread-safe manner. The <b>AcquireLock</b> method represents an advanced feature of the framework that most drivers will not use because improper usage can result in deadlocks.</p>
-
-<p>Unsynchronized code can call <b>AcquireLock</b>. The driver should call on objects that match its synchronization scope.</p>
-
-<p>For a code example of how to use the <b>AcquireLock</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>.</p>
+<p>For a code example of how to use the <b>AcquireLock</b> method, see <a href="wdf.iwdfdevice_setpnpstate">IWDFDevice::SetPnpState</a>.</p>
 
 ## -requirements
 <table>
@@ -147,12 +123,12 @@ void AcquireLock();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560214">IWDFObject::ReleaseLock</a>
+<a href="wdf.iwdfobject_releaselock">IWDFObject::ReleaseLock</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFObject::AcquireLock method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFObject::AcquireLock method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

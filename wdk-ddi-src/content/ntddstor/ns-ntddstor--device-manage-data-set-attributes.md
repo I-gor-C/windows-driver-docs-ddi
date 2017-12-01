@@ -45,7 +45,7 @@ req.iface:
 <p>The management action is specified in the 
     <b>DEVICE_MANAGE_DATA_SET_ATTRIBUTES</b> 
     structure that is contained in the system buffer of an 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
+    <a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
     request.</p>
 
 
@@ -79,7 +79,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 
 <dd>
 <p>The action to be performed as specified by a 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff552520">DEVICE_DATA_MANAGEMENT_SET_ACTION</a> 
+       <a href="storage.device_data_management_set_action">DEVICE_DATA_MANAGEMENT_SET_ACTION</a> 
        enumeration value.</p>
 <p>Starting with Windows 7, this value can be a bitwise OR of one or more of the following flags:</p>
 <table>
@@ -96,10 +96,10 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 </td>
 <td width="60%">
 <p>The specified action is non-destructive. If this flag is set, the driver can safely forward the 
-         <a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
+         <a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
          request to the next lower driver in the stack even if the driver does not handle the specified action.</p>
 <div class="alert"><b>Note</b>  Before it forwards the 
-         <a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
+         <a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
          request, the driver should still perform the normal processing of the data set ranges block that is specified 
          by the <b>DataSetRangesOffset</b> and <b>DataSetRangesLength</b> 
          members.</div>
@@ -141,10 +141,10 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 
 <dd>
 <p>Specifies the start of the parameter block within the system buffer of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
+       <a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
        request. The format of the parameter block depends on the value of the <b>Action</b> 
        member. For more information, see 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff552520">DEVICE_DATA_MANAGEMENT_SET_ACTION</a>.</p>
+       <a href="storage.device_data_management_set_action">DEVICE_DATA_MANAGEMENT_SET_ACTION</a>.</p>
 <div class="alert"><b>Note</b>  The offset of the parameter block must be aligned on the address boundary of the corresponding parameter 
       structure.</div>
 <div> </div>
@@ -155,7 +155,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 
 <dd>
 <p>Specifies the length, in bytes, of the parameter block within the payload of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
+       <a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
        request.</p>
 <p>If set to zero, then the parameter block does not exist.</p>
 </dd>
@@ -164,11 +164,11 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 
 <dd>
 <p>Specifies the start of the block of data set ranges within the system buffer of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
+       <a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
        request. This block consists of one or more contiguous entries that are formatted as 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff552523">DEVICE_DATA_SET_RANGE</a> structures.</p>
+       <a href="..\ntddstor\ns-ntddstor--device-data-set-range.md">DEVICE_DATA_SET_RANGE</a> structures.</p>
 <div class="alert"><b>Note</b>  The offset of the data set range block must be aligned on the address boundary of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff552523">DEVICE_DATA_SET_RANGE</a> structure.</div>
+       <a href="..\ntddstor\ns-ntddstor--device-data-set-range.md">DEVICE_DATA_SET_RANGE</a> structure.</div>
 <div> </div>
 <p>If set to zero, then the block of data set ranges does not exist. </p>
 </dd>
@@ -177,7 +177,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 
 <dd>
 <p>Specifies the length, in bytes, of the block of data set ranges within the payload of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
+       <a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
        request.</p>
 <p>If set to zero, then the block of data set ranges does not exist.</p>
 </dd>
@@ -186,7 +186,7 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 ## -remarks
 <p>The block of data set ranges is specified by the <b>DataSetRangesOffset</b> and 
      <b>DataSetRangesLength</b> members. If this block exists, it contains contiguous 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552523">DEVICE_DATA_SET_RANGE</a> structures. The total 
+     <a href="..\ntddstor\ns-ntddstor--device-data-set-range.md">DEVICE_DATA_SET_RANGE</a> structures. The total 
      size of the buffer should be at least:</p>
 
 <p><code>sizeof(DEVICE_MANAGE_DATA_SET_ATTRIBUTES) + ParameterBlockLength + DataSetRangesLength</code></p>
@@ -208,10 +208,10 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552520">DEVICE_DATA_MANAGEMENT_SET_ACTION</a>
+<a href="storage.device_data_management_set_action">DEVICE_DATA_MANAGEMENT_SET_ACTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a>
 </dt>
 </dl>
 <p> </p>

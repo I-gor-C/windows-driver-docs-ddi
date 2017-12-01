@@ -7,7 +7,7 @@ old-location: netvista\miniportdirectoidrequest.htm
 old-project: netvista
 ms.assetid: 60daba60-3e04-4e98-a458-4dc263f17761
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,7 +72,7 @@ NDIS_STATUS MiniportDirectOidRequest(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure that contains
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure that contains
      both the buffer and the request packet for the miniport driver to handle. Depending on the request, the
      driver returns requested information in the structure that is provided.</p>
 </dd>
@@ -119,8 +119,8 @@ NDIS_STATUS MiniportDirectOidRequest(
        miniport driver cannot return NDIS_STATUS_INDICATION_REQUIRED unless the particular OID allows it. To
        determine if this status is allowed, see the OID reference page.. For more information about
        NDIS_STATUS_INDICATION_REQUIRED, see 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> and 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff567373">NDIS_STATUS_INDICATION</a>.</p>
+       <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> and 
+       <a href="..\ndis\ns-ndis--ndis-status-indication.md">NDIS_STATUS_INDICATION</a>.</p>
 
 <p> </p>
 
@@ -137,48 +137,7 @@ NDIS_STATUS MiniportDirectOidRequest(
 <p>NDIS calls the 
     <i>MiniportDirectOidRequest</i> function either on its own behalf or on behalf of a bound protocol driver
     that called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561746">NdisDirectOidRequest</a> function.
-    Miniport drivers should examine the request that is supplied at the 
-    <i>OidRequest</i> parameter and take the action requested.</p>
-
-<p>Note that NDIS does not validate the OID-specific contents at 
-    <i>OidRequest</i>. Therefore, the driver itself must validate these contents. If the driver determines
-    that the value to be set is out of bounds, it should fail the request and return
-    NDIS_STATUS_INVALID_DATA.</p>
-
-<p>NDIS does not serialize requests that it sends to 
-    <i>MiniportDirectOidRequest</i> with other OID requests. The miniport driver must be able to handle
-    multiple calls to 
-    <i>MiniportDirectOidRequest</i> when other requests that are sent to 
-    <a href="..\ndis\nc-ndis-miniport-oid-request.md">MiniportOidRequest</a> or 
-    <i>MiniportDirectOidRequest</i> are outstanding.</p>
-
-<p>NDIS calls 
-    <i>MiniportDirectOidRequest</i> at IRQL &lt;= DISPATCH_LEVEL.</p>
-
-<p>To define a <i>MiniportDirectOidRequest</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define a <i>MiniportDirectOidRequest</i> function that is named "MyDirectOidRequest", use the <b>MINIPORT_DIRECT_OID_REQUEST</b> type as shown in this code example:</p>
-
-<p>Then, implement your function as follows:</p>
-
-<p>The <b>MINIPORT_DIRECT_OID_REQUEST</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>MINIPORT_DIRECT_OID_REQUEST</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
-
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. </p>
-
-<p><i>MiniportDirectOidRequest</i> is an optional function. A miniport driver registers this function if it
-    handles direct OID requests. A driver specifies the 
-    <i>MiniportDirectOidRequest</i> entry point when it calls the 
-    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
-    NdisMRegisterMiniportDriver</a> function. A miniport driver that registers the 
-    <a href="..\ndis\nc-ndis-miniport-cancel-direct-oid-request.md">
-    MiniportCancelDirectOidRequest</a> function must also register 
-    <i>MiniportDirectOidRequest</i>.</p>
-
-<p>NDIS calls the 
-    <i>MiniportDirectOidRequest</i> function either on its own behalf or on behalf of a bound protocol driver
-    that called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561746">NdisDirectOidRequest</a> function.
+    <a href="..\ndis\nf-ndis-ndisdirectoidrequest.md">NdisDirectOidRequest</a> function.
     Miniport drivers should examine the request that is supplied at the 
     <i>OidRequest</i> parameter and take the action requested.</p>
 
@@ -263,22 +222,22 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 <a href="..\ndis\nc-ndis-miniport-reset.md">MiniportResetEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567373">NDIS_STATUS_INDICATION</a>
+<a href="..\ndis\ns-ndis--ndis-status-indication.md">NDIS_STATUS_INDICATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561746">NdisDirectOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisdirectoidrequest.md">NdisDirectOidRequest</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismdirectoidrequestcomplete.md">
    NdisMDirectOidRequestComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_DIRECT_OID_REQUEST callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_DIRECT_OID_REQUEST callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

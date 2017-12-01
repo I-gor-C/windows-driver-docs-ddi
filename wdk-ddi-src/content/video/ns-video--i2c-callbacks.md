@@ -103,16 +103,16 @@ typedef struct _I2C_CALLBACKS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549272">DDC_CONTROL</a>
+<a href="..\video\ns-video--ddc-control.md">DDC_CONTROL</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
+<a href="display.i2c_functions">I2C Functions</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570290">VideoPortDDCMonitorHelper</a>
+<a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a>
 </dt>
 </dl>
 <p> </p>

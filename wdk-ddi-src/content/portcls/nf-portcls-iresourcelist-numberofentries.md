@@ -7,7 +7,7 @@ old-location: audio\iresourcelist_numberofentries.htm
 old-project: audio
 ms.assetid: cb882170-5c8e-455d-89a6-b09ca77e63fb
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IResourceList, NumberOfEntries, IResourceList::NumberOfEntries
 ms.prod: windows-hardware
 ms.technology: windows-devices

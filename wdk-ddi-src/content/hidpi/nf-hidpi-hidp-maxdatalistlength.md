@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>HidP_MaxDataListLength</b> routine returns the maximum number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539699">HIDP_DATA</a> structures that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539718">HidP_GetData</a> can return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>.</p>
+<p>The <b>HidP_MaxDataListLength</b> routine returns the maximum number of <a href="..\hidpi\ns-hidpi--hidp-data.md">HIDP_DATA</a> structures that <a href="..\hidpi\nf-hidpi-hidp-getdata.md">HidP_GetData</a> can return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ ULONG __stdcall HidP_MaxDataListLength(
 ### -param <i>ReportType</i> [in]
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator value that indicates the report type.</p>
+<p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the report type.</p>
 </dd>
 
 ### -param <i>PreparsedData</i> [in]
@@ -69,14 +69,10 @@ ULONG __stdcall HidP_MaxDataListLength(
 </dl>
 
 ## -returns
-<p>If successful, <b>HidP_MaxDataListLength</b> returns the maximum number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539699">HIDP_DATA</a> structures that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539718">HidP_GetData</a> might return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>. Otherwise, the routine returns zero, which indicates that either the report type or the preparsed data is not valid.</p>
+<p>If successful, <b>HidP_MaxDataListLength</b> returns the maximum number of <a href="..\hidpi\ns-hidpi--hidp-data.md">HIDP_DATA</a> structures that <a href="..\hidpi\nf-hidpi-hidp-getdata.md">HidP_GetData</a> might return for a specified type of HID report and a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>. Otherwise, the routine returns zero, which indicates that either the report type or the preparsed data is not valid.</p>
 
 ## -remarks
-<p>User-mode applications or kernel-mode drivers call <b>HidP_MaxDataListLength</b> to determine the maximum number of  <a href="https://msdn.microsoft.com/library/windows/hardware/ff539699">HIDP_DATA</a> structures that <b>HidP_GetData</b> can return.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p>User-mode applications or kernel-mode drivers call <b>HidP_MaxDataListLength</b> to determine the maximum number of  <a href="https://msdn.microsoft.com/library/windows/hardware/ff539699">HIDP_DATA</a> structures that <b>HidP_GetData</b> can return.</p>
+<p>User-mode applications or kernel-mode drivers call <b>HidP_MaxDataListLength</b> to determine the maximum number of  <a href="..\hidpi\ns-hidpi--hidp-data.md">HIDP_DATA</a> structures that <b>HidP_GetData</b> can return.</p>
 
 <p>For more information, see <a href="NULL">HID Collections</a>. </p>
 
@@ -136,13 +132,13 @@ ULONG __stdcall HidP_MaxDataListLength(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539699">HIDP_DATA</a>
+<a href="..\hidpi\ns-hidpi--hidp-data.md">HIDP_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539718">HidP_GetData</a>
+<a href="..\hidpi\nf-hidpi-hidp-getdata.md">HidP_GetData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539783">HidP_SetData</a>
+<a href="..\hidpi\nf-hidpi-hidp-setdata.md">HidP_SetData</a>
 </dt>
 </dl>
 <p> </p>

@@ -63,13 +63,13 @@ PVOID ScsiPortGetDeviceBase(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
+<p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
 ### -param <i>BusType</i> [in]
 
 <dd>
-<p>Specifies the interface type of the I/O bus on which the HBA is connected. The miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a> routine obtains the value for this parameter from the <b>AdapterInterfaceType</b> member of the input PORT_CONFIGURATION_INFORMATION.</p>
+<p>Specifies the interface type of the I/O bus on which the HBA is connected. The miniport driver's <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> routine obtains the value for this parameter from the <b>AdapterInterfaceType</b> member of the input PORT_CONFIGURATION_INFORMATION.</p>
 </dd>
 
 ### -param <i>SystemIoBusNumber</i> [in]
@@ -109,33 +109,11 @@ PVOID ScsiPortGetDeviceBase(
 
 <p><b>ScsiPortGetDeviceBase</b> can be called several times, depending on how many HBAs the miniport driver supports and how many access ranges each HBA requires. Each mapped range corresponds to a range of bus-relative device addresses specified in an ACCESS_RANGE-type element of the <b>AccessRanges</b> array.</p>
 
-<p><b>ScsiPortGetDeviceBase</b> can be called only from a miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a> routine or from HwScsiAdapterControl when the control type is <b>ScsiSetRunningConfig</b>. Calls from other miniport driver  routines will result in system failure or in incorrect operation for the caller.</p>
+<p><b>ScsiPortGetDeviceBase</b> can be called only from a miniport driver's <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> routine or from HwScsiAdapterControl when the control type is <b>ScsiSetRunningConfig</b>. Calls from other miniport driver  routines will result in system failure or in incorrect operation for the caller.</p>
 
 <p>Follow these guidelines for calling <b>ScsiPortGetDeviceBase</b>:</p>
 
-<p>If <i>HwScsiFindAdapter</i> is using a miniport driver-supplied set of default bus-relative access ranges or values returned by <b>ScsiPortGetBusData</b>, it should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff564761">ScsiPortValidateRange</a> before attempting to call <b>ScsiPortGetDeviceBase</b>.</p>
-
-<p>If <i>HwScsiFindAdapter</i> determines that a particular HBA is not one that the miniport driver supports, it must call <b>ScsiPortFreeDeviceBase</b> to release the mapping(s) it set up to communicate with that HBA.</p>
-
-<p>The logical address returned by <b>ScsiPortGetDeviceBase</b> should be used for all subsequent references made to the hardware but should <i>not</i> be added to any <b>AccessRanges</b> specification in the PORT_CONFIGURATION_INFORMATION. Miniport driver writers should make no assumptions about how many bits are used in the logical base address returned by <b>ScsiPortGetDeviceBase</b>.</p>
-
-<p><b>ScsiPortGetDeviceBase</b> uses <b>SCSI_PHYSICAL_ADDRESS</b> to represent bus-relative addresses.</p>
-
-<p>The <b>SCSI_PHYSICAL_ADDRESS</b> type is an operating system-independent data type that SCSI miniport drivers use to represent either a physical addresses or a bus-relative address. </p>
-
-<p>NT-based operating system platforms can have several types of I/O buses and several I/O buses of the same type. Moreover, the HAL can map I/O space to memory in some platforms.</p>
-
-<p>Consequently, a miniport driver cannot use bus-relative access range addresses to communicate with its HBA. To maintain miniport driver portability across CISC- and RISC-based machines, the addresses they use to access HBAs must be translated with <b>ScsiPortGetDeviceBase</b>.</p>
-
-<p>Every miniport driver must use system-space logical range addresses, mapped by <b>ScsiPortGetDeviceBase</b>, to communicate with its HBA(s). Calls to the <b>ScsiPort...Port/Register</b><i>Xxx</i> routines require these mapped, logical addresses.</p>
-
-<p><b>ScsiPortGetDeviceBase</b> can be called several times, depending on how many HBAs the miniport driver supports and how many access ranges each HBA requires. Each mapped range corresponds to a range of bus-relative device addresses specified in an ACCESS_RANGE-type element of the <b>AccessRanges</b> array.</p>
-
-<p><b>ScsiPortGetDeviceBase</b> can be called only from a miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a> routine or from HwScsiAdapterControl when the control type is <b>ScsiSetRunningConfig</b>. Calls from other miniport driver  routines will result in system failure or in incorrect operation for the caller.</p>
-
-<p>Follow these guidelines for calling <b>ScsiPortGetDeviceBase</b>:</p>
-
-<p>If <i>HwScsiFindAdapter</i> is using a miniport driver-supplied set of default bus-relative access ranges or values returned by <b>ScsiPortGetBusData</b>, it should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff564761">ScsiPortValidateRange</a> before attempting to call <b>ScsiPortGetDeviceBase</b>.</p>
+<p>If <i>HwScsiFindAdapter</i> is using a miniport driver-supplied set of default bus-relative access ranges or values returned by <b>ScsiPortGetBusData</b>, it should call <a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a> before attempting to call <b>ScsiPortGetDeviceBase</b>.</p>
 
 <p>If <i>HwScsiFindAdapter</i> determines that a particular HBA is not one that the miniport driver supports, it must call <b>ScsiPortFreeDeviceBase</b> to release the mapping(s) it set up to communicate with that HBA.</p>
 
@@ -182,22 +160,22 @@ PVOID ScsiPortGetDeviceBase(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550117">ACCESS_RANGE</a>
+<a href="..\srb\ns-srb--access-range.md">ACCESS_RANGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
+<a href="storage.hwscsifindadapter">HwScsiFindAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564623">ScsiPortFreeDeviceBase</a>
+<a href="..\srb\nf-srb-scsiportfreedevicebase.md">ScsiPortFreeDeviceBase</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564624">ScsiPortGetBusData</a>
+<a href="..\srb\nf-srb-scsiportgetbusdata.md">ScsiPortGetBusData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564761">ScsiPortValidateRange</a>
+<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563900">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+<a href="storage.port_configuration_information__scsi_">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 </dt>
 </dl>
 <p> </p>

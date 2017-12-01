@@ -7,7 +7,7 @@ old-location: sensors\gnss_agnss_request_param.htm
 old-project: sensors
 ms.assetid: 67A1DAEF-13D3-4D47-B10C-0CA30C8EB22F
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_AGNSS_REQUEST_PARAM, GNSS_AGNSS_REQUEST_PARAM, *PGNSS_AGNSS_REQUEST_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CHANGER_PRODUCT_DATA structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559402">IOCTL_CHANGER_GET_PRODUCT_DATA</a> request to retrieve product data for a device. </p>
+<p>The CHANGER_PRODUCT_DATA structure is used in conjunction with the <a href="..\ntddchgr\ni-ntddchgr-ioctl-changer-get-product-data.md">IOCTL_CHANGER_GET_PRODUCT_DATA</a> request to retrieve product data for a device. </p>
 
 
 ## -syntax
@@ -79,7 +79,7 @@ typedef struct _CHANGER_PRODUCT_DATA {
 ### -field <b>SerialNumber</b>
 
 <dd>
-<p>Specifies the value defined by the vendor to identify this device. Serial numbers are unique for all changers of a given type, but are not necessarily unique across vendor and product lines. For a SCSI changer, this value might be from Vital Product Data. If <b>SerialNumber</b> is not unique, the miniclass driver should not set the CHANGER_SERIAL_NUMBER_VALID flag in the <b>Features0</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a> structure. </p>
+<p>Specifies the value defined by the vendor to identify this device. Serial numbers are unique for all changers of a given type, but are not necessarily unique across vendor and product lines. For a SCSI changer, this value might be from Vital Product Data. If <b>SerialNumber</b> is not unique, the miniclass driver should not set the CHANGER_SERIAL_NUMBER_VALID flag in the <b>Features0</b> member of the <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> structure. </p>
 </dd>
 
 ### -field <b>DeviceType</b>
@@ -109,13 +109,13 @@ typedef struct _CHANGER_PRODUCT_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559402">IOCTL_CHANGER_GET_PRODUCT_DATA</a>
+<a href="..\ntddchgr\ni-ntddchgr-ioctl-changer-get-product-data.md">IOCTL_CHANGER_GET_PRODUCT_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551427">ChangerGetProductData</a>
+<a href="..\mcd\nf-mcd-changergetproductdata.md">ChangerGetProductData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a>
+<a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

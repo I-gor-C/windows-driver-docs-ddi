@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn914616">WppRecorderLogDelete</a> method deletes the specified recorder log.</p>
+<p>The <a href="..\wpprecorder\nf-wpprecorder-wpprecorderlogdelete.md">WppRecorderLogDelete</a> method deletes the specified recorder log.</p>
 
 
 ## -syntax
@@ -66,8 +66,6 @@ NTSTATUS WppRecorderLogDelete(
 <p>Returns STATUS_SUCCESS if completed successfully.</p>
 
 ## -remarks
-<p>When a thread enters this function, no threads can subsequently  log to this buffer.</p>
-
 <p>When a thread enters this function, no threads can subsequently  log to this buffer.</p>
 
 ## -requirements

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetCHAPSharedSecret_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565585">SetCHAPSharedSecret</a> method.</p>
+<p>The SetCHAPSharedSecret_OUT structure holds the output data for the <a href="storage.setchapsharedsecret">SetCHAPSharedSecret</a> method.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _SetCHAPSharedSecret_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output, the status of the <b>SetCHAPSharedSecret</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.  </p>
+<p>On output, the status of the <b>SetCHAPSharedSecret</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.  </p>
 </dd>
 </dl>
 
@@ -81,13 +81,13 @@ typedef struct _SetCHAPSharedSecret_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565585">SetCHAPSharedSecret</a>
+<a href="storage.setchapsharedsecret">SetCHAPSharedSecret</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565595">SetCHAPSharedSecret_IN</a>
+<a href="..\iscsiop\ns-iscsiop--setchapsharedsecret-in.md">SetCHAPSharedSecret_IN</a>
 </dt>
 </dl>
 <p> </p>

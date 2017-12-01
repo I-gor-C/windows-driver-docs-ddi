@@ -7,7 +7,7 @@ old-location: kernel\rtlushortsub.htm
 old-project: kernel
 ms.assetid: 1C0392AE-F3BD-4F42-9094-87228B7C3E10
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlUShortSub
 ms.prod: windows-hardware
 ms.technology: windows-devices

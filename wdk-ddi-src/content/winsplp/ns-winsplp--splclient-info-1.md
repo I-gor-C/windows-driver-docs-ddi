@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The SPLCLIENT_INFO_1 structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549896">GenerateCopyFilePaths</a> function that is exported by <a href="NULL">Point and Print DLLs</a>.</p>
+<p>The SPLCLIENT_INFO_1 structure is used as input to the <a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a> function that is exported by <a href="NULL">Point and Print DLLs</a>.</p>
 
 
 ## -syntax
@@ -105,7 +105,7 @@ typedef struct _SPLCLIENT_INFO_1 {
 </dl>
 
 ## -remarks
-<p>Values for all structure members are supplied by the print spooler before the spooler calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549896">GenerateCopyFilePaths</a>.</p>
+<p>Values for all structure members are supplied by the print spooler before the spooler calls <a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a>.</p>
 
 ## -requirements
 <table>

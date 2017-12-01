@@ -7,7 +7,7 @@ old-location: stream\stream_data_intersect_info.htm
 old-project: stream
 ms.assetid: 92a37945-4b7c-4d10-a071-ae1584590692
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: STREAM_DATA_INTERSECT_INFO, STREAM_DATA_INTERSECT_INFO, *PSTREAM_DATA_INTERSECT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct _STREAM_DATA_INTERSECT_INFO {
 ### -field <b>StreamNumber</b>
 
 <dd>
-<p>Specifies the stream number. This corresponds to the offset of the stream within the minidriver's array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559692">HW_STREAM_INFORMATION</a> structures. The possible data formats depend on the stream type.</p>
+<p>Specifies the stream number. This corresponds to the offset of the stream within the minidriver's array of <a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a> structures. The possible data formats depend on the stream type.</p>
 </dd>
 
 ### -field <b>DataRange</b>
@@ -84,7 +84,7 @@ typedef struct _STREAM_DATA_INTERSECT_INFO {
 </dl>
 
 ## -remarks
-<p>The class driver passes this data structure when it submits a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568168">SRB_GET_DATA_INTERSECTION</a> request to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568463">StrMiniReceiveDevicePacket</a>.</p>
+<p>The class driver passes this data structure when it submits a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568168">SRB_GET_DATA_INTERSECTION</a> request to the minidriver's <a href="stream.strminireceivedevicepacket">StrMiniReceiveDevicePacket</a>.</p>
 
 ## -requirements
 <table>

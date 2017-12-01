@@ -74,8 +74,6 @@ LARGE_INTEGER CcGetFlushedValidData(
 ## -remarks
 <p>The file system is responsible for ensuring that the value of <i>SectionObjectPointer</i> remains valid while in use. It is impossible for the cache manager to guarantee this.</p>
 
-<p>The file system is responsible for ensuring that the value of <i>SectionObjectPointer</i> remains valid while in use. It is impossible for the cache manager to guarantee this.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -131,10 +129,10 @@ LARGE_INTEGER CcGetFlushedValidData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539082">CcFlushCache</a>
+<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539188">CcPurgeCacheSection</a>
+<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
 </dt>
 </dl>
 <p> </p>

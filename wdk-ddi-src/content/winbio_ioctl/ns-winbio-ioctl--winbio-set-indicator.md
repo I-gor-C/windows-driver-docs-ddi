@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The WINBIO_SET_INDICATOR structure is the IN payload for <a href="https://msdn.microsoft.com/library/windows/hardware/ff536441">IOCTL_BIOMETRIC_SET_INDICATOR</a>.</p>
+<p>The WINBIO_SET_INDICATOR structure is the IN payload for <a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-set-indicator.md">IOCTL_BIOMETRIC_SET_INDICATOR</a>.</p>
 
 
 ## -syntax
@@ -125,10 +125,10 @@ typedef struct _WINBIO_SET_INDICATOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536471">WINBIO_GET_INDICATOR</a>
+<a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-get-indicator.md">WINBIO_GET_INDICATOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536441">IOCTL_BIOMETRIC_SET_INDICATOR</a>
+<a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-set-indicator.md">IOCTL_BIOMETRIC_SET_INDICATOR</a>
 </dt>
 </dl>
 <p> </p>

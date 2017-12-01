@@ -7,7 +7,7 @@ old-location: netvista\rilcalldisconnectdetails_2.htm
 old-project: netvista
 ms.assetid: 57b4d120-e12a-4821-a379-a392b804590c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCALLDISCONNECTDETAILS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

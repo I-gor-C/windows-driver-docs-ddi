@@ -7,7 +7,7 @@ old-location: kernel\io_interrupt_message_info.htm
 old-project: kernel
 ms.assetid: d740d55e-6549-494d-9b2a-39d5c2e670d3
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IO_INTERRUPT_MESSAGE_INFO, IO_INTERRUPT_MESSAGE_INFO, *PIO_INTERRUPT_MESSAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ typedef struct _IO_INTERRUPT_MESSAGE_INFO {
 ### -field <b>UnifiedIrql</b>
 
 <dd>
-<p>Specifies the IRQL at which the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff547940">InterruptMessageService</a> routine runs. If the driver specified an interrupt spin lock for its interrupts, <b>UnifiedIrql</b> also specifies the IRQL at which the interrupt spin lock is acquired. </p>
+<p>Specifies the IRQL at which the driver's <a href="kernel.interruptmessageservice">InterruptMessageService</a> routine runs. If the driver specified an interrupt spin lock for its interrupts, <b>UnifiedIrql</b> also specifies the IRQL at which the interrupt spin lock is acquired. </p>
 </dd>
 
 ### -field <b>MessageCount</b>
@@ -72,12 +72,12 @@ typedef struct _IO_INTERRUPT_MESSAGE_INFO {
 ### -field <b>MessageInfo</b>
 
 <dd>
-<p>Variable-length array that specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550579">IO_INTERRUPT_MESSAGE_INFO_ENTRY</a> structure for each message-signaled interrupt allocated for the driver. The <b>MessageCount</b> member specifies the number of entries in this array. </p>
+<p>Variable-length array that specifies an <a href="..\wdm\ns-wdm--io-interrupt-message-info-entry.md">IO_INTERRUPT_MESSAGE_INFO_ENTRY</a> structure for each message-signaled interrupt allocated for the driver. The <b>MessageCount</b> member specifies the number of entries in this array. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>When a driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548378">IoConnectInterruptEx</a> to register an <a href="https://msdn.microsoft.com/library/windows/hardware/ff547940">InterruptMessageService</a> routine, <b>IoConnectInterruptEx</b> provides a pointer to <b>IO_INTERRUPT_MESSAGE_INFO</b> in <i>Parameters</i>-&gt;<b>MessageBased.ConnectionContext</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550541">IO_CONNECT_INTERRUPT_PARAMETERS</a>.</p>
+<p>When a driver calls <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> to register an <a href="kernel.interruptmessageservice">InterruptMessageService</a> routine, <b>IoConnectInterruptEx</b> provides a pointer to <b>IO_INTERRUPT_MESSAGE_INFO</b> in <i>Parameters</i>-&gt;<b>MessageBased.ConnectionContext</b>. For more information, see <a href="..\wdm\ns-wdm--io-connect-interrupt-parameters.md">IO_CONNECT_INTERRUPT_PARAMETERS</a>.</p>
 
 ## -requirements
 <table>
@@ -96,15 +96,15 @@ typedef struct _IO_INTERRUPT_MESSAGE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550541">IO_CONNECT_INTERRUPT_PARAMETERS</a>
+<a href="..\wdm\ns-wdm--io-connect-interrupt-parameters.md">IO_CONNECT_INTERRUPT_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550579">IO_INTERRUPT_MESSAGE_INFO_ENTRY</a>
+<a href="..\wdm\ns-wdm--io-interrupt-message-info-entry.md">IO_INTERRUPT_MESSAGE_INFO_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548378">IoConnectInterruptEx</a>
+<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_INTERRUPT_MESSAGE_INFO structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_INTERRUPT_MESSAGE_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -77,25 +77,7 @@ NTSTATUS KdDisableDebugger(void);
 
 <p>If the kernel debugger is blocked (that is, the <b>KdBlockEnable</b> system variable is set to a value other than <b>FALSE</b>), <b>KdDisableDebugger</b> returns STATUS_ACCESS_DENIED. </p>
 
-<p>After a caller calls <b>KdDisableDebugger</b> to disable the kernel debugger, the caller can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548085">KdEnableDebugger</a> routine to re-enable the kernel debugger.</p>
-
-<p>If the operating system was booted with no debug controls, <b>KdDisableDebugger</b> returns STATUS_DEBUGGER_INACTIVE.</p>
-
-<p>If the kernel debugger is blocked (that is, the <b>KdBlockEnable</b> system variable is set to a value other than <b>FALSE</b>), <b>KdDisableDebugger</b> returns STATUS_ACCESS_DENIED. </p>
-
-<p>After a caller calls <b>KdDisableDebugger</b> to disable the kernel debugger, the caller can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548085">KdEnableDebugger</a> routine to re-enable the kernel debugger.</p>
-
-<p>If the operating system was booted with no debug controls, <b>KdDisableDebugger</b> returns STATUS_DEBUGGER_INACTIVE.</p>
-
-<p>If the kernel debugger is blocked (that is, the <b>KdBlockEnable</b> system variable is set to a value other than <b>FALSE</b>), <b>KdDisableDebugger</b> returns STATUS_ACCESS_DENIED. </p>
-
-<p>After a caller calls <b>KdDisableDebugger</b> to disable the kernel debugger, the caller can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548085">KdEnableDebugger</a> routine to re-enable the kernel debugger.</p>
-
-<p>If the operating system was booted with no debug controls, <b>KdDisableDebugger</b> returns STATUS_DEBUGGER_INACTIVE.</p>
-
-<p>If the kernel debugger is blocked (that is, the <b>KdBlockEnable</b> system variable is set to a value other than <b>FALSE</b>), <b>KdDisableDebugger</b> returns STATUS_ACCESS_DENIED. </p>
-
-<p>After a caller calls <b>KdDisableDebugger</b> to disable the kernel debugger, the caller can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548085">KdEnableDebugger</a> routine to re-enable the kernel debugger.</p>
+<p>After a caller calls <b>KdDisableDebugger</b> to disable the kernel debugger, the caller can call the <a href="..\wdm\nf-wdm-kdenabledebugger.md">KdEnableDebugger</a> routine to re-enable the kernel debugger.</p>
 
 ## -requirements
 <table>
@@ -160,7 +142,7 @@ NTSTATUS KdDisableDebugger(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548085">KdEnableDebugger</a>
+<a href="..\wdm\nf-wdm-kdenabledebugger.md">KdEnableDebugger</a>
 </dt>
 </dl>
 <p> </p>

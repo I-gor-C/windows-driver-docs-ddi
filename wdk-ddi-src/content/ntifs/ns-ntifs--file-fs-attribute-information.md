@@ -107,7 +107,7 @@ typedef struct _FILE_FS_ATTRIBUTE_INFORMATION {
 </td>
 <td>
 <p>The file system preserves and enforces access control lists 
-          (<a href="https://msdn.microsoft.com/library/windows/hardware/ff538866">ACL</a>).</p>
+          (<a href="..\ntifs\ns-ntifs--acl.md">ACL</a>).</p>
 </td>
 </tr>
 <tr>
@@ -210,8 +210,8 @@ typedef struct _FILE_FS_ATTRIBUTE_INFORMATION {
 ## -remarks
 <p>This information can be queried in either of the following ways:</p>
 
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a> or 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff567070">ZwQueryVolumeInformationFile</a>, passing 
+<p>Call <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> or 
+       <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>, passing 
        <b>FileFsAttributeInformation</b> as the value of 
        <i>FileInformationClass</i> and passing a caller-allocated, 
        <b>FILE_FS_ATTRIBUTE_INFORMATION</b>-structured 
@@ -224,14 +224,14 @@ typedef struct _FILE_FS_ATTRIBUTE_INFORMATION {
        <a href="fs.fsctl_csv_query_down_level_file_system_characteristics">FSCTL_CSV_QUERY_DOWN_LEVEL_FILE_SYSTEM_CHARACTERISTICS</a>.</p>
 
 <p>Create an IRP with major function code 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>.</p>
+       <a href="ifsk.irp_mj_query_volume_information">IRP_MJ_QUERY_VOLUME_INFORMATION</a>.</p>
 
 <p>No specific access rights are required to query this information. Thus this information is available as long as 
      the volume is accessed through an open handle to the volume itself, or to a file or directory on the volume.</p>
 
 <p>The size of the buffer passed in the <i>FileInformation</i> parameter to 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a> or 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567070">ZwQueryVolumeInformationFile</a> must be at 
+     <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> or 
+     <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a> must be at 
      least <code>sizeof(FILE_FS_ATTRIBUTE_INFORMATION)</code>.</p>
 
 <p>This structure must be aligned on a <b>LONG</b> (4-byte) boundary.</p>
@@ -253,16 +253,16 @@ typedef struct _FILE_FS_ATTRIBUTE_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538866">ACL</a>
+<a href="..\ntifs\ns-ntifs--acl.md">ACL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
+<a href="ifsk.irp_mj_query_volume_information">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567070">ZwQueryVolumeInformationFile</a>
+<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
 </dt>
 </dl>
 <p> </p>

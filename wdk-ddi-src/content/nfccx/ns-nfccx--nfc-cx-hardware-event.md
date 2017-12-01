@@ -7,7 +7,7 @@ old-location: nfpdrivers\nfc_cx_hardware_event.htm
 old-project: nfpdrivers
 ms.assetid: FC7566C0-95FD-450C-897E-C57870386512
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: NFC_CX_HARDWARE_EVENT, NFC_CX_HARDWARE_EVENT, *PNFC_CX_HARDWARE_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct _NFC_CX_HARDWARE_EVENT {
 ### -field <b>HostAction</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/dn905544">NFC_CX_HOST_ACTION</a>-typed enumerator.</p>
+<p>An <a href="..\nfccx\ne-nfccx--nfc-cx-host-action.md">NFC_CX_HOST_ACTION</a>-typed enumerator.</p>
 </dd>
 </dl>
 
@@ -109,4 +109,4 @@ typedef struct _NFC_CX_HARDWARE_EVENT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_HARDWARE_EVENT structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_HARDWARE_EVENT structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

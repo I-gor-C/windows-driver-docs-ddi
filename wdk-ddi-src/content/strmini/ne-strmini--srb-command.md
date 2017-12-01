@@ -7,7 +7,7 @@ old-location: stream\srb_command.htm
 old-project: stream
 ms.assetid: 2A72D3B5-286A-4C20-AFEC-77EDCDD56B6A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PST_PARAMETER_DATA, ST_PARAMETER_DATA, *PST_PARAMETER_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt627998">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a> structure.</p>
+<p>Initializes a <a href="buses.udecx_usb_device_plug_in_options">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a> structure.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ FORCEINLINE void UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT(
 ### -param <i>Options</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt627998">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a> structure to initialize.</p>
+<p>A pointer to a <a href="buses.udecx_usb_device_plug_in_options">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a> structure to initialize.</p>
 </dd>
 </dl>
 
@@ -66,8 +66,6 @@ FORCEINLINE void UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The method initializes <b>Usb20PortNumber</b> and <b>Usb30PortNumber</b>  to 0. This indicates a request for  automatic port number selection.</p>
-
 <p>The method initializes <b>Usb20PortNumber</b> and <b>Usb30PortNumber</b>  to 0. This indicates a request for  automatic port number selection.</p>
 
 ## -requirements
@@ -129,7 +127,7 @@ FORCEINLINE void UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627975">UdecxUsbDevicePlugIn</a>
+<a href="buses.udecxusbdeviceplugin">UdecxUsbDevicePlugIn</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\net_if_information.htm
 old-project: netvista
 ms.assetid: 5508650c-473c-4710-869e-053481e83f1b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NET_IF_INFORMATION, NET_IF_INFORMATION, *PNET_IF_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -77,7 +77,7 @@ typedef struct _NET_IF_INFORMATION {
 
 <dd>
 <p>The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
      interface information structure (NET_IF_INFORMATION). The provider sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -153,7 +153,7 @@ typedef struct _NET_IF_INFORMATION {
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a> NDIS network interface
+     <a href="netvista.net_if_access_type">NET_IF_ACCESS_TYPE</a> NDIS network interface
      access type.</p>
 </dd>
 
@@ -161,7 +161,7 @@ typedef struct _NET_IF_INFORMATION {
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a> NDIS network
+     <a href="netvista.net_if_direction_type">NET_IF_DIRECTION_TYPE</a> NDIS network
      interface direction type.</p>
 </dd>
 
@@ -169,7 +169,7 @@ typedef struct _NET_IF_INFORMATION {
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a> NDIS network
+     <a href="netvista.net_if_connection_type">NET_IF_CONNECTION_TYPE</a> NDIS network
      interface connection type.</p>
 </dd>
 
@@ -231,9 +231,9 @@ typedef struct _NET_IF_INFORMATION {
 <dd>
 <p>The GUID that is associated with the interface. The interface provider generates the interface
      GUID for the interface. The provider can call the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff545658">ExUuidCreate</a> routine to create the GUID. The
+     <a href="..\ntddk\nf-ntddk-exuuidcreate.md">ExUuidCreate</a> routine to create the GUID. The
      interface GUID should be associated with the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value that is assigned to the interface.
+     <a href="netvista.net_luid">NET_LUID</a> value that is assigned to the interface.
      If the provider retains information about the interface in persistent storage, it should save the GUID
      and reuse the GUID when it reregisters the interface after the computer restarts.</p>
 </dd>
@@ -260,7 +260,7 @@ typedef struct _NET_IF_INFORMATION {
 <dd>
 <p>The 
      <b>NdisMedium</b><i>Xxx</i> type that the interface supports. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565910">NDIS_MEDIUM</a>.</p>
+     <a href="..\ntddndis\ne-ntddndis--ndis-medium.md">NDIS_MEDIUM</a>.</p>
 </dd>
 
 ### -field <b>PhysicalMediumType</b>
@@ -310,35 +310,35 @@ typedef struct _NET_IF_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545658">ExUuidCreate</a>
+<a href="..\ntddk\nf-ntddk-exuuidcreate.md">ExUuidCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565910">NDIS_MEDIUM</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-medium.md">NDIS_MEDIUM</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-miniport-adapter-general-attributes.md">
    NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562715">NdisIfRegisterInterface</a>
+<a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a>
+<a href="netvista.net_if_access_type">NET_IF_ACCESS_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a>
+<a href="netvista.net_if_connection_type">NET_IF_CONNECTION_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a>
+<a href="netvista.net_if_direction_type">NET_IF_DIRECTION_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
+<a href="netvista.net_luid">NET_LUID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568750">NET_PHYSICAL_LOCATION</a>
+<a href="netvista.net_physical_location">NET_PHYSICAL_LOCATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569069">OID_802_3_CURRENT_ADDRESS</a>
@@ -355,4 +355,4 @@ typedef struct _NET_IF_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_IF_INFORMATION structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_IF_INFORMATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

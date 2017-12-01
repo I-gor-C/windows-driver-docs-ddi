@@ -57,7 +57,7 @@ ULONG MmDoesFileHaveUserWritableReferences(
 ### -param <i>SectionPointer</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563687">SECTION_OBJECT_POINTERS</a> structure that contains the file object's section object pointers.  This parameter is required and cannot be <b>NULL</b>.</p>
+<p>Pointer to a <a href="..\wdm\ns-wdm--section-object-pointers.md">SECTION_OBJECT_POINTERS</a> structure that contains the file object's section object pointers.  This parameter is required and cannot be <b>NULL</b>.</p>
 </dd>
 </dl>
 
@@ -73,7 +73,7 @@ ULONG MmDoesFileHaveUserWritableReferences(
 
 <p> The number of writable views for the associated file object.</p>
 
-<p> The number of outstanding <a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a>s, which are mapping regions for the associated file object.</p>
+<p> The number of outstanding <a href="..\wdm\ns-wdm--mdl.md">MDL</a>s, which are mapping regions for the associated file object.</p>
 
 <p>For transactional file systems, you can use this function to determine if a given transaction is referencing a file object that can change.  If so, the transaction must be rolled back because <a href="https://msdn.microsoft.com/b558ace9-b416-4572-ac94-58a083c9d33b">atomicity</a> cannot be guaranteed.</p>
 
@@ -81,25 +81,7 @@ ULONG MmDoesFileHaveUserWritableReferences(
 
 <p>For more information about transactions, see <a href="https://msdn.microsoft.com/b558ace9-b416-4572-ac94-58a083c9d33b">Kernel Transaction Manager Design Guide</a> and <a href="kernel.kernel_transaction_manager__ktm__routines">Kernel Transaction Manager Routines</a>.</p>
 
-<p>For more information about file objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a>.</p>
-
-<p><b>MmDoesFileHaveUserWritableReferences</b> returns the number of writable references for the file object that is associated with the <i>SectionPointer </i>parameter.  This return value is the sum of the following numbers:</p>
-
-<p> The number of writable file handles for the associated file object.</p>
-
-<p> The number of writable sections for the associated file object.</p>
-
-<p> The number of writable views for the associated file object.</p>
-
-<p> The number of outstanding <a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a>s, which are mapping regions for the associated file object.</p>
-
-<p>For transactional file systems, you can use this function to determine if a given transaction is referencing a file object that can change.  If so, the transaction must be rolled back because <a href="https://msdn.microsoft.com/b558ace9-b416-4572-ac94-58a083c9d33b">atomicity</a> cannot be guaranteed.</p>
-
-<p>Prior to calling <b>MmDoesFileHaveUserWritableReferences</b>, transactional file systems must check and intercept the creation of file objects that specify write access.  Specifically, prior to starting a transaction, transactional file systems must ensure that there are no writable file objects that currently exist for the given file in the transaction.  While the transaction is ongoing, transactional file systems must fail the requests to create file objects with write access for the transacted files.</p>
-
-<p>For more information about transactions, see <a href="https://msdn.microsoft.com/b558ace9-b416-4572-ac94-58a083c9d33b">Kernel Transaction Manager Design Guide</a> and <a href="kernel.kernel_transaction_manager__ktm__routines">Kernel Transaction Manager Routines</a>.</p>
-
-<p>For more information about file objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a>.</p>
+<p>For more information about file objects, see <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a>.</p>
 
 ## -requirements
 <table>
@@ -164,7 +146,7 @@ ULONG MmDoesFileHaveUserWritableReferences(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a>
+<a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a>
 </dt>
 </dl>
 <p> </p>

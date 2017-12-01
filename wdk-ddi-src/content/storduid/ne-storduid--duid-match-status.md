@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The DUID_MATCH_STATUS enumeration lists the status values that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552464">CompareStorageDuids</a> routine returns.</p>
+<p>The DUID_MATCH_STATUS enumeration lists the status values that the <a href="..\storduid\nf-storduid-comparestorageduids.md">CompareStorageDuids</a> routine returns.</p>
 
 
 ## -syntax
@@ -111,13 +111,13 @@ typedef enum _DUID_MATCH_STATUS {
 ### -field <a id="DuidErrorInvalidDeviceIdDescSize"></a><a id="duiderrorinvaliddeviceiddescsize"></a><a id="DUIDERRORINVALIDDEVICEIDDESCSIZE"></a><b>DuidErrorInvalidDeviceIdDescSize</b>
 
 <dd>
-<p>At least one of the two DUIDs to compare contains an invalid device ID descriptor (<a href="https://msdn.microsoft.com/library/windows/hardware/ff566972">STORAGE_DEVICE_ID_DESCRIPTOR</a>). This descriptor reports VPD data.</p>
+<p>At least one of the two DUIDs to compare contains an invalid device ID descriptor (<a href="..\ntddstor\ns-ntddstor--storage-device-id-descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>). This descriptor reports VPD data.</p>
 </dd>
 
 ### -field <a id="DuidErrorInvalidDeviceDescSize"></a><a id="duiderrorinvaliddevicedescsize"></a><a id="DUIDERRORINVALIDDEVICEDESCSIZE"></a><b>DuidErrorInvalidDeviceDescSize</b>
 
 <dd>
-<p>At least one of the two DUIDs to compare contains an invalid device descriptor (<a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a>). This descriptor reports non-VPD inquiry data..</p>
+<p>At least one of the two DUIDs to compare contains an invalid device descriptor (<a href="..\ntddstor\ns-ntddstor--storage-device-descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>). This descriptor reports non-VPD inquiry data..</p>
 </dd>
 
 ### -field <a id="DuidErrorInvalidLayoutSigSize"></a><a id="duiderrorinvalidlayoutsigsize"></a><a id="DUIDERRORINVALIDLAYOUTSIGSIZE"></a><b>DuidErrorInvalidLayoutSigSize</b>
@@ -135,7 +135,7 @@ typedef enum _DUID_MATCH_STATUS {
 ### -field <a id="DuidErrorMaximum"></a><a id="duiderrormaximum"></a><a id="DUIDERRORMAXIMUM"></a><b>DuidErrorMaximum</b>
 
 <dd>
-<p>This value delimits the upper limit of the enumeration values in this enumeration. This value allows a DUID consumer to create a loop that tests for all valid error values that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552464">CompareStorageDuids</a> routine returns. As new identifier data is added to future versions of the DUID, new error values will specify which parts of the DUID are not well-formed.</p>
+<p>This value delimits the upper limit of the enumeration values in this enumeration. This value allows a DUID consumer to create a loop that tests for all valid error values that the <a href="..\storduid\nf-storduid-comparestorageduids.md">CompareStorageDuids</a> routine returns. As new identifier data is added to future versions of the DUID, new error values will specify which parts of the DUID are not well-formed.</p>
 </dd>
 </dl>
 
@@ -159,13 +159,13 @@ typedef enum _DUID_MATCH_STATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552464">CompareStorageDuids</a>
+<a href="..\storduid\nf-storduid-comparestorageduids.md">CompareStorageDuids</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor--storage-device-descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566972">STORAGE_DEVICE_ID_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor--storage-device-id-descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

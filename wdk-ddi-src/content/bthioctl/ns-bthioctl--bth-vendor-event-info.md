@@ -7,7 +7,7 @@ old-location: bltooth\bth_vendor_event_info.htm
 old-project: bltooth
 ms.assetid: 796f9d91-5c75-4a05-a997-0d5beb7d9fca
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: BTH_VENDOR_EVENT_INFO, BTH_VENDOR_EVENT_INFO, *PBTH_VENDOR_EVENT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

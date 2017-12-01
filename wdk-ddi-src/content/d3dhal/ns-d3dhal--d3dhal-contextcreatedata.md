@@ -80,7 +80,7 @@ typedef struct _D3DHAL_CONTEXTCREATEDATA {
 ### -field <b>lpDDLcl</b>
 
 <dd>
-<p>Points to the DirectDraw object that an application must create in order to retrieve the COM Interface to Direct3D. This allows context information to be shared between a DirectDraw application and the driver. <b>lpDDLcl</b> is the common and binding factor between the application's context and the driver's context. It points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff550595">DD_DIRECTDRAW_LOCAL</a> structure that is used to identify the surfaces that belong to a given Direct3D context and is relevant to the current DirectDraw process only. <b>lpDDLcl</b> is necessary because surfaces (for example, depth buffers, rendering buffers, and textures) can be created before a Direct3D context is ever created in the driver. </p>
+<p>Points to the DirectDraw object that an application must create in order to retrieve the COM Interface to Direct3D. This allows context information to be shared between a DirectDraw application and the driver. <b>lpDDLcl</b> is the common and binding factor between the application's context and the driver's context. It points to a <a href="display.dd_directdraw_local">DD_DIRECTDRAW_LOCAL</a> structure that is used to identify the surfaces that belong to a given Direct3D context and is relevant to the current DirectDraw process only. <b>lpDDLcl</b> is necessary because surfaces (for example, depth buffers, rendering buffers, and textures) can be created before a Direct3D context is ever created in the driver. </p>
 </dd>
 
 ### -field <b>lpDDS</b>
@@ -92,7 +92,7 @@ typedef struct _D3DHAL_CONTEXTCREATEDATA {
 ### -field <b>lpDDSLcl</b>
 
 <dd>
-<p>Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a> structure that describes the DirectDraw surface to be used as the rendering target.</p>
+<p>Points to a <a href="display.dd_surface_local">DD_SURFACE_LOCAL</a> structure that describes the DirectDraw surface to be used as the rendering target.</p>
 </dd>
 
 ### -field <b>lpDDSZ</b>
@@ -159,8 +159,6 @@ typedef struct _D3DHAL_CONTEXTCREATEDATA {
 
 <p>3.0</p>
 
-<p> </p>
-
 <p>If the driver successfully creates a context, the driver returns the context ID in <b>dwhContext</b> for the Direct3D runtime to use when communicating with the driver. </p>
 
 ## -requirements
@@ -183,10 +181,10 @@ typedef struct _D3DHAL_CONTEXTCREATEDATA {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-contextcreatecb.md">D3dContextCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550595">DD_DIRECTDRAW_LOCAL</a>
+<a href="display.dd_directdraw_local">DD_DIRECTDRAW_LOCAL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
+<a href="display.dd_surface_local">DD_SURFACE_LOCAL</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: audio\pfndrmaddcontenthandlers.htm
 old-project: audio
 ms.assetid: 762604FC-34EA-41A1-9F2B-B3852AA4D167
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TXRX_TARGET_CONFIGURATION, WDI_TXRX_TARGET_CONFIGURATION, *PWDI_TXRX_TARGET_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

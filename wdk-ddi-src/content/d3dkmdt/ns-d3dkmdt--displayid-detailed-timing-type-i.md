@@ -84,7 +84,7 @@ typedef struct _DISPLAYID_DETAILED_TIMING_TYPE_I {
 ### -field <b>AspectRatio</b>
 
 <dd>
-<p>[in] The display aspect ratio, which must be one of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554017">DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO</a> enumeration.</p>
+<p>[in] The display aspect ratio, which must be one of the values in the <a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-aspect-ratio.md">DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO</a> enumeration.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -96,13 +96,13 @@ typedef struct _DISPLAYID_DETAILED_TIMING_TYPE_I {
 ### -field <b>ScanningType</b>
 
 <dd>
-<p>[in] The frame scanning type. Must be one of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554019">DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE</a> enumeration.</p>
+<p>[in] The frame scanning type. Must be one of the values in the <a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-scanning-mode.md">DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE</a> enumeration.</p>
 </dd>
 
 ### -field <b>StereoMode</b>
 
 <dd>
-<p>[in] The display stereo vision mode. Must be one of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554023">DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE</a> enumeration.</p>
+<p>[in] The display stereo vision mode. Must be one of the values in the <a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-stereo-mode.md">DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE</a> enumeration.</p>
 </dd>
 
 ### -field <b>PreferredTiming</b>
@@ -134,7 +134,7 @@ typedef struct _DISPLAYID_DETAILED_TIMING_TYPE_I {
 ### -field <b>HorizontalSyncPolarity</b>
 
 <dd>
-<p>[in] The horizontal sync polarity, which must be one of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554026">DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY</a> enumeration.</p>
+<p>[in] The horizontal sync polarity, which must be one of the values in the <a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-sync-polarity.md">DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY</a> enumeration.</p>
 </dd>
 
 ### -field <b>HorizontalSyncWidth</b>
@@ -164,7 +164,7 @@ typedef struct _DISPLAYID_DETAILED_TIMING_TYPE_I {
 ### -field <b>VerticalSyncPolarity</b>
 
 <dd>
-<p>[in] The vertical sync polarity. Must be one of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554026">DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY</a> enumeration.</p>
+<p>[in] The vertical sync polarity. Must be one of the values in the <a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-sync-polarity.md">DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY</a> enumeration.</p>
 </dd>
 
 ### -field <b>VerticalSyncWidth</b>
@@ -206,16 +206,16 @@ typedef struct _DISPLAYID_DETAILED_TIMING_TYPE_I {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554017">DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-aspect-ratio.md">DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554019">DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-scanning-mode.md">DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554023">DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-stereo-mode.md">DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554026">DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--displayid-detailed-timing-type-i-sync-polarity.md">DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY</a>
 </dt>
 </dl>
 <p> </p>

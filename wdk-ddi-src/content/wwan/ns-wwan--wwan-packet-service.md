@@ -7,7 +7,7 @@ old-location: netvista\wwan_packet_service.htm
 old-project: netvista
 ms.assetid: 5d444e1c-cbcf-47ab-9c5a-10af1f1915cf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,7 +79,7 @@ typedef struct _WWAN_PACKET_SERVICE {
 <p>A bitmap that represents which data-classes are available to the device in the current network.
      For a detailed list of values, see the 
      <b>WwanDataClass</b> member of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571204">WWAN_DEVICE_CAPS</a>.
+     <a href="..\wwan\ns-wwan--wwan-device-caps.md">WWAN_DEVICE_CAPS</a>.
      </p>
 <p>Miniport drivers must set this member to WWAN_DATA_CLASS_NONE when the device is not registered to a
      network, or when there is no data-class, or when the supported data-class is not available. Miniport
@@ -91,7 +91,7 @@ typedef struct _WWAN_PACKET_SERVICE {
 <dd>
 <p>A single value from the 
      <b>WwanDataClass</b> member in 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571204">WWAN_DEVICE_CAPS</a> that represents which
+     <a href="..\wwan\ns-wwan--wwan-device-caps.md">WWAN_DEVICE_CAPS</a> that represents which
      data-class is currently being used by the device.
      </p>
 <p>For all data services, except HSPA, miniport drivers should set this member to a single
@@ -102,7 +102,7 @@ typedef struct _WWAN_PACKET_SERVICE {
 <p>Miniport drivers should set this member to WWAN_DATA_CLASS_CUSTOM if the data-class is not one of the
      predefined values in the 
      <b>WwanDataClass</b> member of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571204">WWAN_DEVICE_CAPS</a>.</p>
+     <a href="..\wwan\ns-wwan--wwan-device-caps.md">WWAN_DEVICE_CAPS</a>.</p>
 </dd>
 </dl>
 
@@ -115,7 +115,7 @@ typedef struct _WWAN_PACKET_SERVICE {
 
 <p>If a device also supports a data-class that is anything other than the predefined values in the 
     <b>WwanDataClass</b> member of 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571204">WWAN_DEVICE_CAPS</a>, the miniport driver
+    <a href="..\wwan\ns-wwan--wwan-device-caps.md">WWAN_DEVICE_CAPS</a>, the miniport driver
     should set the WWAN_DATA_CLASS_CUSTOM flag along with the appropriate bitmask defined for the data-class
     in this member.</p>
 
@@ -187,7 +187,7 @@ typedef struct _WWAN_PACKET_SERVICE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571212">WWAN_PACKET_SERVICE_STATE</a>
+<a href="..\wwan\ne-wwan--wwan-packet-service-state.md">WWAN_PACKET_SERVICE_STATE</a>
 </dt>
 <dt>
 <a href="..\ndiswwan\ns-ndiswwan--ndis-wwan-packet-service-state.md">
@@ -196,4 +196,4 @@ typedef struct _WWAN_PACKET_SERVICE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PACKET_SERVICE structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PACKET_SERVICE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\ndismcmdroppartycomplete.htm
 old-project: netvista
 ms.assetid: ba0e11d9-3bb1-412c-9b33-9362d774adee
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCmDropPartyComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisMCmDropPartyComplete (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisMCmDropPartyComplete (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDropPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDropPartyComplete (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -88,30 +84,7 @@ VOID NdisMCmDropPartyComplete(
     <i>ProtocolCmDropParty</i> function previously returned NDIS_STATUS_PENDING for the given 
     <i>NdisPartyHandle</i> . Neither NDIS nor the client, which initiated the pended drop-party operation with
     a call to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561629">NdisClDropParty</a>, can release the
-    resources they allocated to maintain per-party state until the MCM driver's call to 
-    <b>NdisMCmDropPartyComplete</b> causes a call to that client's 
-    <a href="..\ndis\nc-ndis-protocol-cl-drop-party-complete.md">
-    ProtocolClDropPartyComplete</a> function.</p>
-
-<p>If it passes NDIS_STATUS_SUCCESS for the 
-    <i>Status</i>, the MCM driver must consider the 
-    <i>NdisPartyHandle</i> invalid when 
-    <b>NdisMCmDropPartyComplete</b> returns control. The MCM driver can release (or reinitialize for reuse)
-    any resources that it allocated to maintain state for this party after 
-    <b>NdisMCmDropPartyComplete</b> returns control.</p>
-
-<p>Only connection-oriented miniport drivers that provide integrated call-management support can call 
-    <b>NdisMCmDropPartyComplete</b>. Stand-alone call managers, which register themselves with NDIS as
-    protocol drivers, call 
-    <b>NdisCmDropPartyComplete</b> instead.</p>
-
-<p>An MCM driver must call 
-    <b>NdisMCmDropPartyComplete</b> if its 
-    <i>ProtocolCmDropParty</i> function previously returned NDIS_STATUS_PENDING for the given 
-    <i>NdisPartyHandle</i> . Neither NDIS nor the client, which initiated the pended drop-party operation with
-    a call to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561629">NdisClDropParty</a>, can release the
+    <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>, can release the
     resources they allocated to maintain per-party state until the MCM driver's call to 
     <b>NdisMCmDropPartyComplete</b> causes a call to that client's 
     <a href="..\ndis\nc-ndis-protocol-cl-drop-party-complete.md">
@@ -176,7 +149,7 @@ VOID NdisMCmDropPartyComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
+<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -184,10 +157,10 @@ VOID NdisMCmDropPartyComplete(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561629">NdisClDropParty</a>
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561674">NdisCmDropPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmdroppartycomplete.md">NdisCmDropPartyComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cl-drop-party-complete.md">ProtocolClDropPartyComplete</a>
@@ -198,4 +171,4 @@ VOID NdisMCmDropPartyComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDropPartyComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDropPartyComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

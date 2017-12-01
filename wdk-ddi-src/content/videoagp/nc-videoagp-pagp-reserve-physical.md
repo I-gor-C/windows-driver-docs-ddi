@@ -131,16 +131,6 @@ PHYSICAL_ADDRESS APIENTRY AgpReservePhysical(
 
 <p>The miniport driver should call <a href="..\videoagp\nc-videoagp-pagp-release-physical.md">AgpReleasePhysical</a> to release the physical address range when it is no longer needed. </p>
 
-<p>Video miniport drivers that run on Microsoft Windows 2000 should always reserve a range whose size is a multiple of 64 kilobytes. Reserving a range that is not a multiple of 64 kilobytes can result in <a href="..\videoagp\nc-videoagp-pagp-reserve-virtual.md">AgpReserveVirtual</a> or <a href="..\videoagp\nc-videoagp-pagp-commit-virtual.md">AgpCommitVirtual</a> returning an invalid virtual address.</p>
-
-<p>On Microsoft Windows XP and later, <b>AgpReservePhysical</b> automatically expands the requested range to a multiple of 64 kilobytes.</p>
-
-<p>Upon successful return, the AGP controller can respond to the reserved physical address range on the bus. However, the video miniport driver must first call <a href="..\videoagp\nc-videoagp-pagp-commit-physical.md">AgpCommitPhysical</a> to cause this memory to be committed before accessing it in order for the accessed results to be defined.</p>
-
-<p>The miniport driver can call <b>AgpReservePhysical</b> several times to reserve many smaller address ranges rather than one big range.</p>
-
-<p>The miniport driver should call <a href="..\videoagp\nc-videoagp-pagp-release-physical.md">AgpReleasePhysical</a> to release the physical address range when it is no longer needed. </p>
-
 ## -requirements
 <table>
 <tr>

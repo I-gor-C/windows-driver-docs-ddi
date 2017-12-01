@@ -66,7 +66,7 @@ NTSTATUS DxgkCbMapMemory(
 ### -param <i>DeviceHandle</i> [in]
 
 <dd>
-<p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
+<p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
 ### -param <i>TranslatedAddress</i> [in]
@@ -96,7 +96,7 @@ NTSTATUS DxgkCbMapMemory(
 ### -param <i>CacheType</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff554430">MEMORY_CACHING_TYPE</a> enumerator that specifies the caching behavior of the mapped range.</p>
+<p>A <a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a> enumerator that specifies the caching behavior of the mapped range.</p>
 </dd>
 
 ### -param <i>VirtualAddress</i> [out]
@@ -128,8 +128,6 @@ NTSTATUS DxgkCbMapMemory(
 <p><b>DxgkCbMapMemory</b> returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in <i>Ntstatus.h</i>.</p>
 
 ## -remarks
-<p>The PHYSICAL_ADDRESS data type is defined in <i>Ntdef.h</i>.</p>
-
 <p>The PHYSICAL_ADDRESS data type is defined in <i>Ntdef.h</i>.</p>
 
 ## -requirements
@@ -175,7 +173,7 @@ NTSTATUS DxgkCbMapMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554430">MEMORY_CACHING_TYPE</a>
+<a href="..\wdm\ne-wdm--memory-caching-type.md">MEMORY_CACHING_TYPE</a>
 </dt>
 </dl>
 <p> </p>

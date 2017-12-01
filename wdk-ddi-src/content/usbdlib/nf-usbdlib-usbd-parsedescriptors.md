@@ -106,13 +106,9 @@ PUSB_COMMON_DESCRIPTOR USBD_ParseDescriptors(
 </dl>
 
 ## -returns
-<p><b>USBD_ParseDescriptors</b> returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539238">USB_COMMON_DESCRIPTOR</a> structure that is the head of the first descriptor that matches the given search criteria, or <b>NULL</b> is returned if no match is found:</p>
+<p><b>USBD_ParseDescriptors</b> returns a pointer to a <a href="..\usbspec\ns-usbspec--usb-common-descriptor.md">USB_COMMON_DESCRIPTOR</a> structure that is the head of the first descriptor that matches the given search criteria, or <b>NULL</b> is returned if no match is found:</p>
 
 ## -remarks
-<p>This structure is used to hold a portion of a descriptor, so that the caller of <b>USBD_ParseDescriptors</b> can determine the correct structure to use to access the remaining data in the descriptor. Every descriptor type has these fields at the beginning of the data and callers can use the <b>bLength</b> and <b>bDescriptorType</b> members to correctly identify the type of this descriptor.</p>
-
-<p>When this routine parses the configuration descriptor looking for the descriptor that matches the search criteria, it returns the first match, terminating the search.</p>
-
 <p>This structure is used to hold a portion of a descriptor, so that the caller of <b>USBD_ParseDescriptors</b> can determine the correct structure to use to access the remaining data in the descriptor. Every descriptor type has these fields at the beginning of the data and callers can use the <b>bLength</b> and <b>bDescriptorType</b> members to correctly identify the type of this descriptor.</p>
 
 <p>When this routine parses the configuration descriptor looking for the descriptor that matches the search criteria, it returns the first match, terminating the search.</p>

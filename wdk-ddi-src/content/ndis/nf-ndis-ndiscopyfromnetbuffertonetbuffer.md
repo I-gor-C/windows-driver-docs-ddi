@@ -7,7 +7,7 @@ old-location: netvista\ndiscopyfromnetbuffertonetbuffer.htm
 old-project: netvista
 ms.assetid: b760e176-3ef7-4495-89c7-ec6b8bb3ed30
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCopyFromNetBufferToNetBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>Call the 
   <b>NdisCopyFromNetBufferToNetBuffer</b> function to copy data from a source 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure to a destination NET_BUFFER
+  <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure to a destination NET_BUFFER
   structure.</p>
 
 
@@ -117,7 +117,7 @@ NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
 ## -remarks
 <p>The caller of 
     <b>NdisCopyFromNetBufferToNetBuffer</b> allocates the destination 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure and possibly the source
+    <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure and possibly the source
     NET_BUFFER structure as well. The MDLs of the destination NET_BUFFER structure should have enough space
     to receive the data.</p>
 
@@ -129,42 +129,7 @@ NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
 <p>The caller must ensure that 
     <b>CurrentMdlOffset</b> and 
     <b>CurrentMdl</b> values are correct in the source and destination 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures. NDIS does not change the
-    members in the destination NET_BUFFER. The caller must update the 
-    <b>DataLength</b>, 
-    <b>DataOffset</b>, and 
-    <b>CurrentMdlOffset</b> values in the destination NET_BUFFER after 
-    <b>NdisCopyFromNetBufferToNetBuffer</b> returns.</p>
-
-<p>NDIS uses the offsets in the 
-    <i>DestionationOffset</i> and 
-    <i>SourceOffset</i> parameters of 
-    <b>NdisCopyFromNetBufferToNetBuffer</b> as offsets from the current data offset. For example, if the 
-    <b>CurrentMdlOffset</b> value in the destination NET_BUFFER is 
-    <i>x</i>, and 
-    <i>DestinationOffset</i> value is 
-    <i>y</i>, NDIS copies the data to the destination NET_BUFFER at an 
-    <i>x</i>+ 
-    <i>y</i> offset in the memory that the 
-    <b>CurrentMdl</b> value describes. Similar rules apply to the 
-    <b>CurrentMdlOffset</b> in the source NET_BUFFER and the 
-    <i>SourceOffset</i> value.</p>
-
-<p>The caller of 
-    <b>NdisCopyFromNetBufferToNetBuffer</b> allocates the destination 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure and possibly the source
-    NET_BUFFER structure as well. The MDLs of the destination NET_BUFFER structure should have enough space
-    to receive the data.</p>
-
-<p>If the source NET_BUFFER structure runs out of data or the destination NET_BUFFER structure runs out
-    of space before the specified number of bytes has been copied, the copy operation stops. In either case, 
-    <b>NdisCopyFromNetBufferToNetBuffer</b> returns the number of bytes successfully copied from the source to
-    the destination NET_BUFFER structure.</p>
-
-<p>The caller must ensure that 
-    <b>CurrentMdlOffset</b> and 
-    <b>CurrentMdl</b> values are correct in the source and destination 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures. NDIS does not change the
+    <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures. NDIS does not change the
     members in the destination NET_BUFFER. The caller must update the 
     <b>DataLength</b>, 
     <b>DataOffset</b>, and 
@@ -238,7 +203,7 @@ NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
+<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -246,9 +211,9 @@ NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCopyFromNetBufferToNetBuffer function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCopyFromNetBufferToNetBuffer function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

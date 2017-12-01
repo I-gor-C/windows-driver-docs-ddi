@@ -7,7 +7,7 @@ old-location: netvista\rilwritemsgparams_2.htm
 old-project: netvista
 ms.assetid: 7221efdc-1751-4539-9dc1-5ba3cd40c5ce
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILWRITEMSGPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

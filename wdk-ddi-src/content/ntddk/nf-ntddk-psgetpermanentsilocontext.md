@@ -7,7 +7,7 @@ old-location: kernel\psgetpermanentsilocontext.htm
 old-project: kernel
 ms.assetid: C1AEFC8F-6488-4582-9835-DAD07D4ACB17
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PsGetPermanentSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ NTSTATUS PsGetPermanentSiloContext(
 ### -param <i>ContextSlot</i> [in]
 
 <dd>
-<p>The read-only slot that was previously allocated by<a href="https://msdn.microsoft.com/library/windows/hardware/mt735056">PsAllocSiloContextSlot</a> and made read-only by <a href="https://msdn.microsoft.com/library/windows/hardware/mt735077">PsMakeSiloContextPermanent</a>.</p>
+<p>The read-only slot that was previously allocated by<a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> and made read-only by <a href="..\ntddk\nf-ntddk-psmakesilocontextpermanent.md">PsMakeSiloContextPermanent</a>.</p>
 </dd>
 
 ### -param <i>ReturnedSiloContext</i> 
@@ -87,8 +87,6 @@ NTSTATUS PsGetPermanentSiloContext(
 <p> </p>
 
 ## -remarks
-<p>A successful call to <b>PsGetPermanentSiloContext</b> does not increment the reference count on the object that the <i>ReturnedSiloContext</i> parameter points to. The returned object pointer is valid as long as there is a valid reference on the silo object.</p>
-
 <p>A successful call to <b>PsGetPermanentSiloContext</b> does not increment the reference count on the object that the <i>ReturnedSiloContext</i> parameter points to. The returned object pointer is valid as long as there is a valid reference on the silo object.</p>
 
 ## -requirements

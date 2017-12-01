@@ -59,24 +59,24 @@ typedef union _SUB_Q_CHANNEL_DATA {
 ### -field <b>CurrentPosition</b>
 
 <dd>
-<p>Contains position information, such as the absolute and relative addresses, in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567596">SUB_Q_CURRENT_POSITION</a> structure. </p>
+<p>Contains position information, such as the absolute and relative addresses, in a <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-current-position.md">SUB_Q_CURRENT_POSITION</a> structure. </p>
 </dd>
 
 ### -field <b>MediaCatalog</b>
 
 <dd>
-<p>Contains the media catalog number in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567600">SUB_Q_MEDIA_CATALOG_NUMBER</a>  structure.</p>
+<p>Contains the media catalog number in a <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-media-catalog-number.md">SUB_Q_MEDIA_CATALOG_NUMBER</a>  structure.</p>
 </dd>
 
 ### -field <b>TrackIsrc</b>
 
 <dd>
-<p>Contains the TrackIsrc code in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567601">SUB_Q_TRACK_ISRC</a> structure. </p>
+<p>Contains the TrackIsrc code in a <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-track-isrc.md">SUB_Q_TRACK_ISRC</a> structure. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The value of the <b>Format </b>member of the CDROM_SUB_Q_DATA_FORMAT structure that is passed as input with IOCTL_CDROM_READ_Q_CHANNEL determines which member of this union is used to return the output data. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff551371">CDROM_SUB_Q_DATA_FORMAT</a> for a detailed explanation. </p>
+<p>The value of the <b>Format </b>member of the CDROM_SUB_Q_DATA_FORMAT structure that is passed as input with IOCTL_CDROM_READ_Q_CHANNEL determines which member of this union is used to return the output data. See <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-sub-q-data-format.md">CDROM_SUB_Q_DATA_FORMAT</a> for a detailed explanation. </p>
 
 ## -requirements
 <table>
@@ -95,19 +95,19 @@ typedef union _SUB_Q_CHANNEL_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559363">IOCTL_CDROM_READ_Q_CHANNEL</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-q-channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551371">CDROM_SUB_Q_DATA_FORMAT</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-sub-q-data-format.md">CDROM_SUB_Q_DATA_FORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567596">SUB_Q_CURRENT_POSITION</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--sub-q-current-position.md">SUB_Q_CURRENT_POSITION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567600">SUB_Q_MEDIA_CATALOG_NUMBER</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--sub-q-media-catalog-number.md">SUB_Q_MEDIA_CATALOG_NUMBER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567601">SUB_Q_TRACK_ISRC</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--sub-q-track-isrc.md">SUB_Q_TRACK_ISRC</a>
 </dt>
 </dl>
 <p> </p>

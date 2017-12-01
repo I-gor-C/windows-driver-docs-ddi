@@ -69,7 +69,7 @@ typedef struct _VERIFY_INFORMATION {
 </dl>
 
 ## -remarks
-<p>VERIFY_INFORMATION is the output buffer for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560420">IOCTL_DISK_VERIFY</a> control code.</p>
+<p>VERIFY_INFORMATION is the output buffer for the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-verify.md">IOCTL_DISK_VERIFY</a> control code.</p>
 
 ## -requirements
 <table>
@@ -88,7 +88,7 @@ typedef struct _VERIFY_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560420">IOCTL_DISK_VERIFY</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-verify.md">IOCTL_DISK_VERIFY</a>
 </dt>
 </dl>
 <p> </p>

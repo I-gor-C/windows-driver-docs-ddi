@@ -7,7 +7,7 @@ old-location: stream\ksisbusenumchilddevice.htm
 old-project: stream
 ms.assetid: 7b9aa600-dd47-4ef1-acc8-02fb1b4f51ce
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsIsBusEnumChildDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices

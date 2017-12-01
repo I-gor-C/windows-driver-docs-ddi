@@ -57,12 +57,12 @@ typedef struct _WOF_EXTERNAL_FILE_ID {
 ### -field <b>FileId</b>
 
 <dd>
-<p>The file ID used with the <b>FILE_OPEN_BY_FILE_ID</b> flag to open a file with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a> functions.</p>
+<p>The file ID used with the <b>FILE_OPEN_BY_FILE_ID</b> flag to open a file with the <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> or <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> functions.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a> function to open a handle to a minifilter driver and use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a> function to open a handle to a driver.</p>
+<p>Use the <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> function to open a handle to a minifilter driver and use the <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> function to open a handle to a driver.</p>
 
 ## -requirements
 <table>
@@ -89,10 +89,10 @@ typedef struct _WOF_EXTERNAL_FILE_ID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632452">WOF_EXTERNAL_INFO</a>
+<a href="..\ntifs\ns-ntifs--wof-external-info.md">WOF_EXTERNAL_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426742">WOF_VERSION_INFO</a>
+<a href="..\ntifs\ns-ntifs--wof-version-info.md">WOF_VERSION_INFO</a>
 </dt>
 </dl>
 <p> </p>

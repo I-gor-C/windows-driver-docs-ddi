@@ -89,13 +89,13 @@ typedef struct _WOF_VERSION_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426734">FSCTL_GET_WOF_VERSION</a>
+<a href="ifsk.fsctl_get_wof_version">FSCTL_GET_WOF_VERSION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426741">WOF_EXTERNAL_FILE_ID</a>
+<a href="..\ntifs\ns-ntifs--wof-external-file-id.md">WOF_EXTERNAL_FILE_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632452">WOF_EXTERNAL_INFO</a>
+<a href="..\ntifs\ns-ntifs--wof-external-info.md">WOF_EXTERNAL_INFO</a>
 </dt>
 </dl>
 <p> </p>

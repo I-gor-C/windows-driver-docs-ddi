@@ -67,8 +67,6 @@ NTSTATUS SEC_ENTRY MapSecurityError(
 ## -remarks
 <p>This function maps a security interface status code of type SECURITY_STATUS to a corresponding NSTATUS status code.</p>
 
-<p>This function maps a security interface status code of type SECURITY_STATUS to a corresponding NSTATUS status code.</p>
-
 ## -requirements
 <table>
 <tr>

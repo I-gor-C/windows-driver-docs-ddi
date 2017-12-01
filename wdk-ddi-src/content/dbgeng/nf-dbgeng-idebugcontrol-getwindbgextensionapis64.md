@@ -7,7 +7,7 @@ old-location: debugger\getwindbgextensionapis64.htm
 old-project: debugger
 ms.assetid: 01b34b26-2835-4a58-abf3-190da63d25eb
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl, GetWindbgExtensionApis64, IDebugControl::GetWindbgExtensionApis64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,21 +71,13 @@ HRESULT GetWindbgExtensionApis64(
 <p> </p>
 
 ## -remarks
-<p>If you are including Wdbgexts.h in your extension code, you should call this method during the initialization of the extension DLL (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540476">DebugExtensionInitialize</a>).</p>
+<p>If you are including Wdbgexts.h in your extension code, you should call this method during the initialization of the extension DLL (see <a href="debugger.debugextensioninitialize">DebugExtensionInitialize</a>).</p>
 
 <p>Many WdbgExts functions are really macros.  To ensure that these macros work correctly, the structure received by the <i>Api</i> parameter should be stored in a global variable named <b>ExtensionApis</b>.  </p>
 
-<p>The WINDBG_EXTENSION_APIS64 structure returned by this method serves the same purpose as the one provided to the callback function <a href="https://msdn.microsoft.com/library/windows/hardware/ff561303">WinDbgExtensionDllInit</a> (used by WdbgExts extensions).</p>
+<p>The WINDBG_EXTENSION_APIS64 structure returned by this method serves the same purpose as the one provided to the callback function <a href="debugger.windbgextensiondllinit">WinDbgExtensionDllInit</a> (used by WdbgExts extensions).</p>
 
-<p>For a list of the functions provided by the WdbgExts API, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561258">WdbgExts Functions</a>.</p>
-
-<p>If you are including Wdbgexts.h in your extension code, you should call this method during the initialization of the extension DLL (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540476">DebugExtensionInitialize</a>).</p>
-
-<p>Many WdbgExts functions are really macros.  To ensure that these macros work correctly, the structure received by the <i>Api</i> parameter should be stored in a global variable named <b>ExtensionApis</b>.  </p>
-
-<p>The WINDBG_EXTENSION_APIS64 structure returned by this method serves the same purpose as the one provided to the callback function <a href="https://msdn.microsoft.com/library/windows/hardware/ff561303">WinDbgExtensionDllInit</a> (used by WdbgExts extensions).</p>
-
-<p>For a list of the functions provided by the WdbgExts API, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561258">WdbgExts Functions</a>.</p>
+<p>For a list of the functions provided by the WdbgExts API, see <a href="debugger.wdbgexts_functions">WdbgExts Functions</a>.</p>
 
 ## -requirements
 <table>

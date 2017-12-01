@@ -74,7 +74,7 @@ NTSTATUS APIENTRY pfnGetTopology(
 ### -param <i>ppVidPnTopologyInterface</i> [out]
 
 <dd>
-<p>[out] A pointer to a variable that receives a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562091">DXGK_VIDPNTOPOLOGY_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the VidPN topology object.</p>
+<p>[out] A pointer to a variable that receives a pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpntopology-interface.md">DXGK_VIDPNTOPOLOGY_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the VidPN topology object.</p>
 </dd>
 </dl>
 
@@ -88,10 +88,6 @@ NTSTATUS APIENTRY pfnGetTopology(
 <p> </p>
 
 ## -remarks
-<p>The display miniport driver does not need to release the handle that it receives in <i>phVidPnTopology</i>.</p>
-
-<p>The lifetime of the DXGK_VIDPNTOPOLOGY_INTERFACE structure returned in <i>ppVidPnTopologyInterface</i> is owned by the operating system. Using this ownership scheme, the operating system can migrate to newer implementations at run time without breaking clients of the interface. </p>
-
 <p>The display miniport driver does not need to release the handle that it receives in <i>phVidPnTopology</i>.</p>
 
 <p>The lifetime of the DXGK_VIDPNTOPOLOGY_INTERFACE structure returned in <i>ppVidPnTopologyInterface</i> is owned by the operating system. Using this ownership scheme, the operating system can migrate to newer implementations at run time without breaking clients of the interface. </p>
@@ -139,10 +135,10 @@ NTSTATUS APIENTRY pfnGetTopology(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570560">VidPN Topology Interface</a>
+<a href="display.vidpn_topology_interface">VidPN Topology Interface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562091">DXGK_VIDPNTOPOLOGY_INTERFACE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidpntopology-interface.md">DXGK_VIDPNTOPOLOGY_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

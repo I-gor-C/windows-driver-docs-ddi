@@ -7,7 +7,7 @@ old-location: stream\ksdispatchfastiodevicecontrolfailure.htm
 old-project: stream
 ms.assetid: 7fb83c8d-e815-46c6-8011-75b25a4c0dd7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsDispatchFastIoDeviceControlFailure
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -121,8 +121,6 @@ BOOLEAN KsDispatchFastIoDeviceControlFailure(
 <p>The <b>KsDispatchFastIoDeviceControlFailure</b> function returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>The <b>KsDispatchFastIoDeviceControlFailure</b> function is needed since the dispatch table for a particular opened instance of a device may not handle a specific major function that another opened instance needs to handle. Therefore, the function pointer in the driver object must always point to a function, such as the <b>KsDispatchFastIoDeviceControlFailure</b> function, that calls a dispatch table entry.</p>
-
 <p>The <b>KsDispatchFastIoDeviceControlFailure</b> function is needed since the dispatch table for a particular opened instance of a device may not handle a specific major function that another opened instance needs to handle. Therefore, the function pointer in the driver object must always point to a function, such as the <b>KsDispatchFastIoDeviceControlFailure</b> function, that calls a dispatch table entry.</p>
 
 ## -requirements

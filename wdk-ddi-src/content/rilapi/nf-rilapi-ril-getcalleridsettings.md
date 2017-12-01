@@ -7,7 +7,7 @@ old-location: netvista\ril_getcalleridsettings.htm
 old-project: netvista
 ms.assetid: c85590bb-6489-4675-9008-8c5606d0b889
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetCallerIdSettings
 ms.prod: windows-hardware
 ms.technology: windows-devices

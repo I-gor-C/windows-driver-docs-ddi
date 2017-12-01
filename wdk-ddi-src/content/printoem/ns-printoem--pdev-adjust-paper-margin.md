@@ -58,14 +58,14 @@ typedef struct _PDEV_ADJUST_PAPER_MARGIN {
 ### -field <b>rcImageableArea</b>
 
 <dd>
-<p>Is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure that specifies the rectangular region that can be printed in. This region is specified in units of 0.001 mm.</p>
+<p>Is a <a href="display.rectl">RECTL</a> structure that specifies the rectangular region that can be printed in. This region is specified in units of 0.001 mm.</p>
 </dd>
 </dl>
 
 ## -remarks
 <p>This structure is available in Windows XP and later. </p>
 
-<p>The <i>pBuf</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553189">IPrintOemPS2::GetPDEVAdjustment</a> method can point to a structure of this type.</p>
+<p>The <i>pBuf</i> parameter of the <a href="print.iprintoemps2_getpdevadjustment">IPrintOemPS2::GetPDEVAdjustment</a> method can point to a structure of this type.</p>
 
 ## -requirements
 <table>
@@ -84,10 +84,10 @@ typedef struct _PDEV_ADJUST_PAPER_MARGIN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553189">IPrintOemPS2::GetPDEVAdjustment</a>
+<a href="print.iprintoemps2_getpdevadjustment">IPrintOemPS2::GetPDEVAdjustment</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a>
+<a href="display.rectl">RECTL</a>
 </dt>
 </dl>
 <p> </p>

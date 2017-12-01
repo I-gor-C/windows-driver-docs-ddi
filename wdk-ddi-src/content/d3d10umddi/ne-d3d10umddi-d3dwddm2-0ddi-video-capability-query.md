@@ -62,7 +62,7 @@ typedef enum D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY {
 <p>Indicates that the driver should return video decoder capabilities.
 
 </p>
-<p>The input structure is of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn894614">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS</a>.
+<p>The input structure is of type <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-capability-decoder-caps.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS</a>.
 </p>
 </dd>
 
@@ -72,7 +72,7 @@ typedef enum D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY {
 <p>Indicates that the driver should return support for the specified down sampling parameters specified.
 
 </p>
-<p>The input structure is of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn894615">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING</a>.</p>
+<p>The input structure is of type <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-capability-decoder-downsampling.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING</a>.</p>
 </dd>
 
 ### -field <a id="D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_RECOMMEND_DECODER_DOWNSAMPLING"></a><a id="d3dwddm2_0ddi_video_capability_query_recommend_decoder_downsampling"></a><b>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_RECOMMEND_DECODER_DOWNSAMPLING</b>
@@ -81,7 +81,7 @@ typedef enum D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY {
 <p>Indicates that the driver should recommend down sampling parameters.
 
 </p>
-<p>The input structure is of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn894617">D3DWDDM2_0DDI_VIDEO_CAPABILITY_RECOMMEND_DECODER_DOWNSAMPLING</a>.</p>
+<p>The input structure is of type <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-capability-recommend-decoder-downsampling.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_RECOMMEND_DECODER_DOWNSAMPLING</a>.</p>
 </dd>
 </dl>
 
@@ -121,13 +121,13 @@ typedef enum D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn894614">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-capability-decoder-caps.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn894615">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-capability-decoder-downsampling.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn894617">D3DWDDM2_0DDI_VIDEO_CAPABILITY_RECOMMEND_DECODER_DOWNSAMPLING</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-capability-recommend-decoder-downsampling.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_RECOMMEND_DECODER_DOWNSAMPLING</a>
 </dt>
 </dl>
 <p> </p>

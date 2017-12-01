@@ -64,7 +64,7 @@ typedef struct _DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA {
 ### -field <b>TargetRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that specifies the target rectangle in the coordinates of the output surface. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is (0,0,0,0).</p>
+<p>[in] A <a href="display.rect">RECT</a> structure that specifies the target rectangle in the coordinates of the output surface. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is (0,0,0,0).</p>
 </dd>
 </dl>
 
@@ -96,7 +96,7 @@ typedef struct _DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

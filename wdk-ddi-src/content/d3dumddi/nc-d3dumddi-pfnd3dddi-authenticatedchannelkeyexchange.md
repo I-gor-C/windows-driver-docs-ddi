@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY AuthenticatedChannelKeyExchange(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542880">D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE</a> structure that describes a buffer that contains the session key, which the  authenticated channel uses. </p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-authenticatedchannelkeyexchange.md">D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE</a> structure that describes a buffer that contains the session key, which the  authenticated channel uses. </p>
 </dd>
 </dl>
 
@@ -82,11 +82,7 @@ __checkReturn HRESULT APIENTRY AuthenticatedChannelKeyExchange(
 <p> </p>
 
 ## -remarks
-<p>The <b>pData</b> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542880">D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE</a> structure points to a buffer that contains a secret key that an application previously RSAES-OAEP-encrypted with the public key from the driver's authenticated channel certificate. The actual size of the buffer is 256 bytes. This exchange is identical to how the <a href="https://msdn.microsoft.com/2c138dbd-55ca-4c71-8c8b-b2efd1ca80f2">Output Protection Manager</a> (OPM) key exchange works, except the OPM buffer contains additional data besides the session key. The same certificate that is used for OPM key exchange can be used for the authenticated channel. </p>
-
-<p>The driver decrypts this secret key and uses the secret key in calls to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryauthenticatedchannel.md">QueryAuthenticatedChannel</a> functions to calculate One-key Cipher Block Chaining (CBC)-mode message authentication codes (OMACs). </p>
-
-<p>The <b>pData</b> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542880">D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE</a> structure points to a buffer that contains a secret key that an application previously RSAES-OAEP-encrypted with the public key from the driver's authenticated channel certificate. The actual size of the buffer is 256 bytes. This exchange is identical to how the <a href="https://msdn.microsoft.com/2c138dbd-55ca-4c71-8c8b-b2efd1ca80f2">Output Protection Manager</a> (OPM) key exchange works, except the OPM buffer contains additional data besides the session key. The same certificate that is used for OPM key exchange can be used for the authenticated channel. </p>
+<p>The <b>pData</b> member in the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-authenticatedchannelkeyexchange.md">D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE</a> structure points to a buffer that contains a secret key that an application previously RSAES-OAEP-encrypted with the public key from the driver's authenticated channel certificate. The actual size of the buffer is 256 bytes. This exchange is identical to how the <a href="https://msdn.microsoft.com/2c138dbd-55ca-4c71-8c8b-b2efd1ca80f2">Output Protection Manager</a> (OPM) key exchange works, except the OPM buffer contains additional data besides the session key. The same certificate that is used for OPM key exchange can be used for the authenticated channel. </p>
 
 <p>The driver decrypts this secret key and uses the secret key in calls to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryauthenticatedchannel.md">QueryAuthenticatedChannel</a> functions to calculate One-key Cipher Block Chaining (CBC)-mode message authentication codes (OMACs). </p>
 
@@ -125,7 +121,7 @@ __checkReturn HRESULT APIENTRY AuthenticatedChannelKeyExchange(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542880">D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-authenticatedchannelkeyexchange.md">D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE</a>
 </dt>
 </dl>
 <p> </p>

@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-                 Contains information about hardware alerts received on the port controller object. This structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt805843">UcmTcpciPortControllerAlert</a> call. Call <a href="https://msdn.microsoft.com/library/windows/hardware/mt805867">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT</a> to initialize this structure.
+                 Contains information about hardware alerts received on the port controller object. This structure is used in the <a href="buses.ucmtcpciportcontrolleralert">UcmTcpciPortControllerAlert</a> call. Call <a href="buses.ucmtcpci_port_controller_alert_data_init">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA_INIT</a> to initialize this structure.
              </p>
 
 
@@ -75,7 +75,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA {
 ### -field <b>AlertType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt805899">UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE</a> value that indicates the type of hardware alert.
+<p>A <a href="buses.ucmtcpci_port_controller_alert_type">UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE</a> value that indicates the type of hardware alert.
                      
                  </p>
 </dd>
@@ -133,7 +133,7 @@ typedef struct _UCMTCPCI_PORT_CONTROLLER_ALERT_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt805843">UcmTcpciPortControllerAlert</a>
+<a href="buses.ucmtcpciportcontrolleralert">UcmTcpciPortControllerAlert</a>
 </dt>
 </dl>
 <p> </p>

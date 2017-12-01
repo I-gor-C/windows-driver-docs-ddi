@@ -112,16 +112,6 @@ NTSTATUS RxPrepareToReparseSymbolicLink(
 
 <p>The value of the <i>ReparseRequired</i> parameter assumes significance only if STATUS_SUCCESS is returned from this routine. If <i>ReparseRequired</i> is <b>FALSE</b>, this implies that no reparse attempt is required and the symbolic link file itself should be manipulated as opposed to the target of the link. If <i>ReparseRequired</i> is <b>TRUE</b>, this implies that a reparse attempt was successfully setup. In such cases, it is imperative that the network mini redirector returns STATUS_REPARSE for the associated <b>MRxCreate</b> call. RDBSS will initiate a check for this condition. </p>
 
-<p>The <b>RxPrepareToReparseSymbolicLink</b> routine would only be used by a network mini-redirector that supports symbolic links and uses reparse points to implement symbolic links. The <b>RxPrepareToReparseSymbolicLink</b> routine would normally be called by a network mini-redirector from its <b>MrxCreate</b> callback routine.</p>
-
-<p>The <i>SymbolicLinkEmbeddedInOldPath</i> parameter passed to this routine is very important. To preserve the correct semantics, it should be carefully used. For example, consider the old path \A\B\C\D where C happens to be a symbolic link. In this case, the symbolic link is embedded in the path and <i>SymbolicLinkEmbeddedInOldPath</i> should be set to <b>TRUE</b>. In contrast, this is very different from the case when D happens to be a symbolic link. In the former case, the reparse constitutes an intermediate step. In the second example, the reparse constitutes the final step of the name resolution and <i>SymbolicLinkEmbeddedInOldPath</i> should be set to <b>FALSE</b>.</p>
-
-<p>If DELETE access is specified, the open or create operation is denied for all cases in which the symbolic link is not embedded. It is possible that if DELETE access were the only one specified, then the open attempt must succeed without reparse. This conforms UNIX symbolic link semantics.</p>
-
-<p>As part of this routine, <i>RxContext</i> is also tagged appropriately. This ensures that the return value can be crosschecked with the invocation of this routine. Once <b>RxPrepareToReparseSymbolicLink</b> is invoked, the network mini redirector has to return STATUS_REPARSE.</p>
-
-<p>The value of the <i>ReparseRequired</i> parameter assumes significance only if STATUS_SUCCESS is returned from this routine. If <i>ReparseRequired</i> is <b>FALSE</b>, this implies that no reparse attempt is required and the symbolic link file itself should be manipulated as opposed to the target of the link. If <i>ReparseRequired</i> is <b>TRUE</b>, this implies that a reparse attempt was successfully setup. In such cases, it is imperative that the network mini redirector returns STATUS_REPARSE for the associated <b>MRxCreate</b> call. RDBSS will initiate a check for this condition. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -157,7 +147,7 @@ NTSTATUS RxPrepareToReparseSymbolicLink(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549862">MRxCreate</a>
+<a href="ifsk.mrxcreate">MRxCreate</a>
 </dt>
 </dl>
 <p> </p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The DEVICE_DESCRIPTOR structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542856">IOCTL_GET_DEVICE_DESCRIPTOR</a>.</p>
+<p>The DEVICE_DESCRIPTOR structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl-get-device-descriptor.md">IOCTL_GET_DEVICE_DESCRIPTOR</a>.</p>
 
 
 ## -syntax

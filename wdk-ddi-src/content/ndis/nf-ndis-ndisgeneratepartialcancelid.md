@@ -7,7 +7,7 @@ old-location: netvista\ndisgeneratepartialcancelid.htm
 old-project: netvista
 ms.assetid: a26e9602-058b-401b-85be-9d80e4ef213b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisGeneratePartialCancelId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisGeneratePartialCancelId
-   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisGeneratePartialCancelId
-   (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGeneratePartialCancelId   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGeneratePartialCancelId   (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -70,73 +66,7 @@ UCHAR NdisGeneratePartialCancelId(void);
 
 ## -remarks
 <p>Before marking send 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures with cancellation
-    IDs by calling the 
-    <a href="netvista.ndis_set_net_buffer_list_cancel_id">
-    NDIS_SET_NET_BUFFER_LIST_CANCEL_ID</a> macro, a driver should call 
-    <b>NdisGeneratePartialCancelId</b> one or more times. 
-    <b>NdisGeneratePartialCancelId</b> returns a value that the calling driver can use as the high-order byte
-    of a cancellation ID. Prefixing a cancellation ID with the value returned by 
-    <b>NdisGeneratePartialCancelId</b> ensures that the cancellation ID will not be a duplicate of a
-    cancellation ID assigned by another driver in the local computer.</p>
-
-<p>Typically, an overlying driver calls 
-    <b>NdisGeneratePartialCancelId</b> one or more times during its initialization sequence and stores the
-    returned value or values for later use. A protocol driver, for example, could call 
-    <b>NdisGeneratePartialCancelId</b> once for each client (such as DHCP or ARC) that it supports. The
-    protocol driver can call the 
-    <a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">
-    NdisCancelSendNetBufferLists</a> function later to cancel a send request. In this case, NDIS calls the
-    cancel send function (for example, 
-    <a href="..\ndis\nc-ndis-miniport-cancel-send.md">MiniportCancelSend</a>) of the
-    underlying drivers.</p>
-
-<p>Before marking send 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures with cancellation
-    IDs by calling the 
-    <a href="netvista.ndis_set_net_buffer_list_cancel_id">
-    NDIS_SET_NET_BUFFER_LIST_CANCEL_ID</a> macro, a driver should call 
-    <b>NdisGeneratePartialCancelId</b> one or more times. 
-    <b>NdisGeneratePartialCancelId</b> returns a value that the calling driver can use as the high-order byte
-    of a cancellation ID. Prefixing a cancellation ID with the value returned by 
-    <b>NdisGeneratePartialCancelId</b> ensures that the cancellation ID will not be a duplicate of a
-    cancellation ID assigned by another driver in the local computer.</p>
-
-<p>Typically, an overlying driver calls 
-    <b>NdisGeneratePartialCancelId</b> one or more times during its initialization sequence and stores the
-    returned value or values for later use. A protocol driver, for example, could call 
-    <b>NdisGeneratePartialCancelId</b> once for each client (such as DHCP or ARC) that it supports. The
-    protocol driver can call the 
-    <a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">
-    NdisCancelSendNetBufferLists</a> function later to cancel a send request. In this case, NDIS calls the
-    cancel send function (for example, 
-    <a href="..\ndis\nc-ndis-miniport-cancel-send.md">MiniportCancelSend</a>) of the
-    underlying drivers.</p>
-
-<p>Before marking send 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures with cancellation
-    IDs by calling the 
-    <a href="netvista.ndis_set_net_buffer_list_cancel_id">
-    NDIS_SET_NET_BUFFER_LIST_CANCEL_ID</a> macro, a driver should call 
-    <b>NdisGeneratePartialCancelId</b> one or more times. 
-    <b>NdisGeneratePartialCancelId</b> returns a value that the calling driver can use as the high-order byte
-    of a cancellation ID. Prefixing a cancellation ID with the value returned by 
-    <b>NdisGeneratePartialCancelId</b> ensures that the cancellation ID will not be a duplicate of a
-    cancellation ID assigned by another driver in the local computer.</p>
-
-<p>Typically, an overlying driver calls 
-    <b>NdisGeneratePartialCancelId</b> one or more times during its initialization sequence and stores the
-    returned value or values for later use. A protocol driver, for example, could call 
-    <b>NdisGeneratePartialCancelId</b> once for each client (such as DHCP or ARC) that it supports. The
-    protocol driver can call the 
-    <a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">
-    NdisCancelSendNetBufferLists</a> function later to cancel a send request. In this case, NDIS calls the
-    cancel send function (for example, 
-    <a href="..\ndis\nc-ndis-miniport-cancel-send.md">MiniportCancelSend</a>) of the
-    underlying drivers.</p>
-
-<p>Before marking send 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures with cancellation
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures with cancellation
     IDs by calling the 
     <a href="netvista.ndis_set_net_buffer_list_cancel_id">
     NDIS_SET_NET_BUFFER_LIST_CANCEL_ID</a> macro, a driver should call 
@@ -214,7 +144,7 @@ UCHAR NdisGeneratePartialCancelId(void);
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -225,16 +155,16 @@ UCHAR NdisGeneratePartialCancelId(void);
 <a href="..\ndis\nc-ndis-miniport-cancel-send.md">MiniportCancelSend</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561623">NdisCancelSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">NdisCancelSendNetBufferLists</a>
 </dt>
 <dt>
 <a href="netvista.ndis_set_net_buffer_list_cancel_id">
    NDIS_SET_NET_BUFFER_LIST_CANCEL_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGeneratePartialCancelId function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGeneratePartialCancelId function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -58,13 +58,13 @@ typedef struct _D3DKMT_SETVIDPNSOURCEOWNER1 {
 ### -field <b>Version0</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548317">D3DKMT_SETVIDPNSOURCEOWNER</a> structure that contains information needed to set or release the video present source.</p>
+<p>A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setvidpnsourceowner.md">D3DKMT_SETVIDPNSOURCEOWNER</a> structure that contains information needed to set or release the video present source.</p>
 </dd>
 
 ### -field <b>Flags</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh406671">D3DKMT_VIDPNSOURCEOWNER_FLAGS</a> structure that specifies output duplication options.</p>
+<p>A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-vidpnsourceowner-flags.md">D3DKMT_VIDPNSOURCEOWNER_FLAGS</a> structure that specifies output duplication options.</p>
 </dd>
 </dl>
 
@@ -104,10 +104,10 @@ typedef struct _D3DKMT_SETVIDPNSOURCEOWNER1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548317">D3DKMT_SETVIDPNSOURCEOWNER</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setvidpnsourceowner.md">D3DKMT_SETVIDPNSOURCEOWNER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406671">D3DKMT_VIDPNSOURCEOWNER_FLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-vidpnsourceowner-flags.md">D3DKMT_VIDPNSOURCEOWNER_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

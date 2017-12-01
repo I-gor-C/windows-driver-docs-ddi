@@ -70,7 +70,7 @@ typedef struct D3D10_DDI_QUERY_DATA_SO_STATISTICS {
 </dl>
 
 ## -remarks
-<p>The driver associates a D3D10_DDI_QUERY_DATA_SO_STATISTICS structure with the D3D10DDI_QUERY_STREAMOUTPUTSTATS query type value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541850">D3D10DDI_QUERY</a> enumeration.</p>
+<p>The driver associates a D3D10_DDI_QUERY_DATA_SO_STATISTICS structure with the D3D10DDI_QUERY_STREAMOUTPUTSTATS query type value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi-query.md">D3D10DDI_QUERY</a> enumeration.</p>
 
 ## -requirements
 <table>
@@ -100,7 +100,7 @@ typedef struct D3D10_DDI_QUERY_DATA_SO_STATISTICS {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createquery.md">CreateQuery(D3D10)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541850">D3D10DDI_QUERY</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi-query.md">D3D10DDI_QUERY</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-querygetdata.md">QueryGetData</a>

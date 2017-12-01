@@ -7,7 +7,7 @@ old-location: netvista\rilsendmsgackparams_v2.htm
 old-project: netvista
 ms.assetid: 3c05c1a0-339e-447f-b0df-18303ee63f98
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS, *LPRILSENDMSGACKPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

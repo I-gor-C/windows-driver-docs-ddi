@@ -70,7 +70,7 @@ HRESULT _stdcall wiasDownSampleBuffer(
 <p>WIAS_GET_DOWNSAMPLED_SIZE_ONLY</p>
 </td>
 <td>
-<p>Do not copy the downsampled data to the destination buffer. Instead, set the following members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549546">WIAS_DOWN_SAMPLE_INFO</a> structure: <b>ulDownSampledHeight</b>, <b>ulDownSampleWidth</b>, <b>ulAlignedHeight</b>, <b>ulAlignedWidth</b>.</p>
+<p>Do not copy the downsampled data to the destination buffer. Instead, set the following members of the <a href="..\wiamindr_lh\ns-wiamindr-lh--wias-down-sample-info.md">WIAS_DOWN_SAMPLE_INFO</a> structure: <b>ulDownSampledHeight</b>, <b>ulDownSampleWidth</b>, <b>ulAlignedHeight</b>, <b>ulAlignedWidth</b>.</p>
 </td>
 </tr>
 </table>
@@ -80,7 +80,7 @@ HRESULT _stdcall wiasDownSampleBuffer(
 ### -param <i>pInfo</i> [in, out]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549546">WIAS_DOWN_SAMPLE_INFO</a> structure that contains all of the information needed for the downsampling operation.</p>
+<p>Pointer to the <a href="..\wiamindr_lh\ns-wiamindr-lh--wias-down-sample-info.md">WIAS_DOWN_SAMPLE_INFO</a> structure that contains all of the information needed for the downsampling operation.</p>
 </dd>
 </dl>
 
@@ -88,48 +88,6 @@ HRESULT _stdcall wiasDownSampleBuffer(
 <p>On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).</p>
 
 ## -remarks
-<p>The <b>wiasDownSampleBuffer</b> function can be used in either of the following two ways:</p>
-
-<p>The caller specifies the downsampled (that is, output) width and height by setting the <b>ulDownSampledWidth</b> and <b>ulDownSampledHeight</b> members of the WIA_DOWN_SAMPLE_INFO structure.</p>
-
-<p>The caller sets the <b>ulDownSampledWidth</b> and <b>ulDownSampledHeight</b> members of the WIA_DOWN_SAMPLE_INFO structure to zero, indicating that the function should choose the output width and height. </p>
-
-<p>To see what output width and height values the function chooses, call this function with the <i>lFlags</i> parameter set to WIAS_GET_DOWNSAMPLED_SIZE_ONLY. On return, the <b>ulDownSampledWidth</b> and <b>ulDownSampledHeight</b> members are set to their new values. No downsampling is performed in this case.</p>
-
-<p>The caller of this function is required to fill in the following members of the WIA_DOWN_SAMPLE_INFO structure:</p>
-
-<p><b>ulOriginalWidth</b></p>
-
-<p><b>ulOriginal Height</b></p>
-
-<p><b>ulBitsPerPixel</b></p>
-
-<p><b>ulXRes</b></p>
-
-<p><b>ulYRes</b></p>
-
-<p><b>pSrcBuffer</b></p>
-
-<p>The caller can also specify the size of the downsampled data by filling in the following WIA_DOWN_SAMPLE_INFO structure members:</p>
-
-<p><b>ulDownSampledWidth</b></p>
-
-<p><b>ulDownSampledHeight</b></p>
-
-<p>If the buffer that receives the downsampled data has already been allocated, the caller should fill in these WIA_DOWN_SAMPLE_INFO structure members:</p>
-
-<p><b>ulDestBufSize</b></p>
-
-<p><b>ulSrcBufSize</b></p>
-
-<p><b>pDestBuffer</b></p>
-
-<p>If the caller sets <b>pDestBuffer</b> to <b>NULL</b>, the destination buffer is allocated by the WIA service. On return from this function, <b>pDestBuffer</b> points to the destination buffer. The caller is responsible for freeing this memory when the operation is finished, and does this by calling <b>CoTaskMemFree</b> (described in the Microsoft Windows SDK documentation) on the buffer.</p>
-
-<p>Because this function is not able to produce partial output lines, the number of scan lines in the input buffer must be an integer multiple of the scaling factor. For example, suppose the input buffer contains an image sampled at 600 dpi, which you intend to downsample to an equivalent 50 dpi image. In this case, you are scaling down the original image by a factor of 12 (because 600 / 50 = 12). This means that the function must receive 12 input lines for each output line that it produces. </p>
-
-<p>More generally, if the original image has a resolution of R<i>in</i> dpi, and is to be scaled down to an image with a resolution of R<i>out</i> dpi, the scale-down factor is R<i>in</i> / R<i>out</i>, and the number of lines in the input buffer should be a multiple of R<i>in</i> / R<i>out</i>. If the scan head reaches the last band of the original image, and there are too few scan lines in the input buffer to produce an output line, pad the input buffer so that it contains the required number of data lines. Failure to do so causes unpredictable results, and can even result in a driver crash.</p>
-
 <p>The <b>wiasDownSampleBuffer</b> function can be used in either of the following two ways:</p>
 
 <p>The caller specifies the downsampled (that is, output) width and height by setting the <b>ulDownSampledWidth</b> and <b>ulDownSampledHeight</b> members of the WIA_DOWN_SAMPLE_INFO structure.</p>
@@ -227,7 +185,7 @@ HRESULT _stdcall wiasDownSampleBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549546">WIAS_DOWN_SAMPLE_INFO</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--wias-down-sample-info.md">WIAS_DOWN_SAMPLE_INFO</a>
 </dt>
 </dl>
 <p> </p>

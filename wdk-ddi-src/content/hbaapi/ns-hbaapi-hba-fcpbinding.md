@@ -64,7 +64,7 @@ typedef struct HBA_FCPBinding {
 ### -field <b>entry</b>
 
 <dd>
-<p>Contains a variable length array of structures of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556058">HBA_FCPBindingEntry</a> each of which defines a binding between a pair of operating system and fibre channel protocol (FCP) identifiers for a logical unit. </p>
+<p>Contains a variable length array of structures of type <a href="..\hbaapi\ns-hbaapi-hba-fcpbindingentry.md">HBA_FCPBindingEntry</a> each of which defines a binding between a pair of operating system and fibre channel protocol (FCP) identifiers for a logical unit. </p>
 </dd>
 </dl>
 
@@ -88,10 +88,10 @@ typedef struct HBA_FCPBinding {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556058">HBA_FCPBindingEntry</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcpbindingentry.md">HBA_FCPBindingEntry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556034">HBAFCPBindingEntry</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--hbafcpbindingentry.md">HBAFCPBindingEntry</a>
 </dt>
 </dl>
 <p> </p>

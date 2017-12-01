@@ -123,9 +123,9 @@ typedef struct _VIDEO_PUBLIC_ACCESS_RANGES {
 </dl>
 
 ## -remarks
-<p>VIDEO_PUBLIC_ACCESS_RANGES is similar to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570498">VIDEO_ACCESS_RANGE</a> in that both are used by miniport drivers to obtain information about display resources. The principal difference is that VIDEO_PUBLIC_ACCESS_RANGES contains information about control and accelerator registers for an adapter, while VIDEO_ACCESS_RANGE is used to hold frame buffer and video RAM addresses.</p>
+<p>VIDEO_PUBLIC_ACCESS_RANGES is similar to <a href="..\video\ns-video--video-access-range.md">VIDEO_ACCESS_RANGE</a> in that both are used by miniport drivers to obtain information about display resources. The principal difference is that VIDEO_PUBLIC_ACCESS_RANGES contains information about control and accelerator registers for an adapter, while VIDEO_ACCESS_RANGE is used to hold frame buffer and video RAM addresses.</p>
 
-<p>VIDEO_PUBLIC_ACCESS_RANGES is used as an input buffer with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567829">IOCTL_VIDEO_QUERY_PUBLIC_ACCESS_RANGES</a> request.</p>
+<p>VIDEO_PUBLIC_ACCESS_RANGES is used as an input buffer with the <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-query-public-access-ranges.md">IOCTL_VIDEO_QUERY_PUBLIC_ACCESS_RANGES</a> request.</p>
 
 ## -requirements
 <table>
@@ -144,10 +144,10 @@ typedef struct _VIDEO_PUBLIC_ACCESS_RANGES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570498">VIDEO_ACCESS_RANGE</a>
+<a href="..\video\ns-video--video-access-range.md">VIDEO_ACCESS_RANGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567829">IOCTL_VIDEO_QUERY_PUBLIC_ACCESS_RANGES</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-query-public-access-ranges.md">IOCTL_VIDEO_QUERY_PUBLIC_ACCESS_RANGES</a>
 </dt>
 </dl>
 <p> </p>

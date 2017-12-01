@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>This routine deallocates any information copied into a create operation by
-    a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt734258">FltCopyOpenReparseList</a>.  </p>
+    a previous call to <a href="..\fltkernel\nf-fltkernel-fltcopyopenreparselist.md">FltCopyOpenReparseList</a>.  </p>
 
 
 ## -syntax

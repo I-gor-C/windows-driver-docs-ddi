@@ -67,8 +67,6 @@ BOOLEAN IoIsSystemThread(
 ## -remarks
 <p>For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="kernel.driver_threads__dispatcher_objects__and_resources">Driver Threads, Dispatcher Objects, and Resources</a>. </p>
 
-<p>For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="kernel.driver_threads__dispatcher_objects__and_resources">Driver Threads, Dispatcher Objects, and Resources</a>. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -124,10 +122,10 @@ BOOLEAN IoIsSystemThread(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559945">PsIsSystemThread</a>
+<a href="..\ntifs\nf-ntifs-psissystemthread.md">PsIsSystemThread</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559936">PsGetCurrentThread</a>
+<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 </dl>
 <p> </p>

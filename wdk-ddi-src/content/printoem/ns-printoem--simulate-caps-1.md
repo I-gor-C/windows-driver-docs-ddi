@@ -141,7 +141,7 @@ typedef struct _SIMULATE_CAPS_1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553074">IPrintCoreUI2::QuerySimulationSupport</a>
+<a href="print.iprintcoreui2_querysimulationsupport">IPrintCoreUI2::QuerySimulationSupport</a>
 </dt>
 </dl>
 <p> </p>

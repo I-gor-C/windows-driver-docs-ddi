@@ -179,7 +179,7 @@ typedef struct _MSFC_HBAPortStatistics {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562513">MSFC_HBAPortStatistics WMI Class</a>
+<a href="storage.msfc_hbaportstatistics_wmi_class">MSFC_HBAPortStatistics WMI Class</a>
 </dt>
 </dl>
 <p> </p>

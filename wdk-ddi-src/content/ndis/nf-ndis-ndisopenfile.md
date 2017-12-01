@@ -7,7 +7,7 @@ old-location: netvista\ndisopenfile.htm
 old-project: netvista
 ms.assetid: 48d54092-d055-449c-a409-829213db2989
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisOpenFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisOpenFile (NDIS 5.1)) in Windows
-   Vista. Supported for NDIS 5.1 drivers (see 
-   NdisOpenFile (NDIS 5.1)) in Windows
-   XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -123,7 +119,7 @@ VOID NdisOpenFile(
 <p>A pointer to an NDIS_STRING type containing an initialized counted string, in the system-default
      character set, naming the file to be opened. For Windows 2000 and later drivers, this string contains
      Unicode characters. That is, for Windows 2000 and later, NDIS defines the NDIS_STRING type as a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> type.</p>
+     <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> type.</p>
 </dd>
 
 ### -param <i>HighestAcceptableAddress</i> [in]
@@ -141,7 +137,7 @@ VOID NdisOpenFile(
 <p><b>NdisOpenFile</b> opens a disk file, typically a file the driver will later download to program an
     intelligent NIC. 
     <b>NdisOpenFile</b> also allocates storage to hold file contents for the driver's subsequent call to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562785">NdisMapFile</a> function.</p>
+    <a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a> function.</p>
 
 <p>A miniport driver should call 
     <b>NdisOpenFile</b> only from the 
@@ -150,31 +146,12 @@ VOID NdisOpenFile(
 <p>When 
     <b>NdisOpenFile</b> returns, the miniport driver can access file data by calling 
     <b>NdisMapFile</b>. It can call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564641">NdisUnmapFile</a> function to page out the file
+    <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a> function to page out the file
     so it does not consume resources unnecessarily while the driver is not accessing the file data. When
     finished using the file, 
     <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> must call the
     
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561645">NdisCloseFile</a> function.</p>
-
-<p><b>NdisOpenFile</b> opens a disk file, typically a file the driver will later download to program an
-    intelligent NIC. 
-    <b>NdisOpenFile</b> also allocates storage to hold file contents for the driver's subsequent call to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562785">NdisMapFile</a> function.</p>
-
-<p>A miniport driver should call 
-    <b>NdisOpenFile</b> only from the 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function.</p>
-
-<p>When 
-    <b>NdisOpenFile</b> returns, the miniport driver can access file data by calling 
-    <b>NdisMapFile</b>. It can call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564641">NdisUnmapFile</a> function to page out the file
-    so it does not consume resources unnecessarily while the driver is not accessing the file data. When
-    finished using the file, 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> must call the
-    
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561645">NdisCloseFile</a> function.</p>
+    <a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a> function.</p>
 
 ## -requirements
 <table>
@@ -233,7 +210,7 @@ VOID NdisOpenFile(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -244,18 +221,18 @@ VOID NdisOpenFile(
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561645">NdisCloseFile</a>
+<a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562785">NdisMapFile</a>
+<a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564641">NdisUnmapFile</a>
+<a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenFile function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOpenFile function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

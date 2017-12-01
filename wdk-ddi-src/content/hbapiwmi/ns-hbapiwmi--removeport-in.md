@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The Remove_IN structure is used by a WMI client to deliver input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564011">RemovePort</a> WMI method.</p>
+<p>The Remove_IN structure is used by a WMI client to deliver input parameter data to the <a href="storage.removeport">RemovePort</a> WMI method.</p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ typedef struct _RemovePort_IN {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the RemovePort_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562490">MSFC_EventControl WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the RemovePort_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_eventcontrol_wmi_class">MSFC_EventControl WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -81,7 +81,7 @@ typedef struct _RemovePort_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564011">RemovePort</a>
+<a href="storage.removeport">RemovePort</a>
 </dt>
 </dl>
 <p> </p>

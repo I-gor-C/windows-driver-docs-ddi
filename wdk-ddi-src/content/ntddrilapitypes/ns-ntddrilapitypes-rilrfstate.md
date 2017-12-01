@@ -7,7 +7,7 @@ old-location: netvista\rilrfstate.htm
 old-project: netvista
 ms.assetid: 7eb78864-d20c-4993-8b33-63096bf971fa
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILRFSTATE, RILRFSTATE, *LPRILRFSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

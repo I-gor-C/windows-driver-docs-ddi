@@ -62,7 +62,7 @@ typedef struct _SERIALPERF_STATS {
 ### -field <b>ReceivedCount</b>
 
 <dd>
-<p>The number of characters received since either the serial port was opened or the last <a href="https://msdn.microsoft.com/library/windows/hardware/ff546538">IOCTL_SERIAL_CLEAR_STATS</a> request was processed.</p>
+<p>The number of characters received since either the serial port was opened or the last <a href="..\ntddser\ni-ntddser-ioctl-serial-clear-stats.md">IOCTL_SERIAL_CLEAR_STATS</a> request was processed.</p>
 </dd>
 
 ### -field <b>TransmittedCount</b>
@@ -97,9 +97,9 @@ typedef struct _SERIALPERF_STATS {
 </dl>
 
 ## -remarks
-<p>This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546600">IOCTL_SERIAL_GET_STATS</a> request.</p>
+<p>This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl-serial-get-stats.md">IOCTL_SERIAL_GET_STATS</a> request.</p>
 
-<p>To reset the performance statistics to zero, send an <a href="https://msdn.microsoft.com/library/windows/hardware/ff546538">IOCTL_SERIAL_CLEAR_STATS</a> request.</p>
+<p>To reset the performance statistics to zero, send an <a href="..\ntddser\ni-ntddser-ioctl-serial-clear-stats.md">IOCTL_SERIAL_CLEAR_STATS</a> request.</p>
 
 ## -requirements
 <table>
@@ -118,10 +118,10 @@ typedef struct _SERIALPERF_STATS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546538">IOCTL_SERIAL_CLEAR_STATS</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-clear-stats.md">IOCTL_SERIAL_CLEAR_STATS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546600">IOCTL_SERIAL_GET_STATS</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-get-stats.md">IOCTL_SERIAL_GET_STATS</a>
 </dt>
 </dl>
 <p> </p>

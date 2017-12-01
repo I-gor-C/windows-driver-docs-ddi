@@ -94,13 +94,7 @@ HRESULT _stdcall wiasSetPropertyAttributes(
 <p>On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).</p>
 
 ## -remarks
-<p>Minidrivers should use the function <a href="https://msdn.microsoft.com/library/windows/hardware/ff549358">wiasSetItemPropAttribs</a> to initialize groups of simple properties.</p>
-
-<p>The minidriver can set the WIA_PROP_CACHEABLE flag on a property that does not change over time. By setting this flag on a property, the minidriver indicates that the WIA service can cache the property value. See the Windows SDK documentation for a list of all property attributes.</p>
-
-<p>The PROPSPEC and PROPVARIANT structures are defined in the Windows SDK documentation.</p>
-
-<p>Minidrivers should use the function <a href="https://msdn.microsoft.com/library/windows/hardware/ff549358">wiasSetItemPropAttribs</a> to initialize groups of simple properties.</p>
+<p>Minidrivers should use the function <a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a> to initialize groups of simple properties.</p>
 
 <p>The minidriver can set the WIA_PROP_CACHEABLE flag on a property that does not change over time. By setting this flag on a property, the minidriver indicates that the WIA service can cache the property value. See the Windows SDK documentation for a list of all property attributes.</p>
 
@@ -161,7 +155,7 @@ HRESULT _stdcall wiasSetPropertyAttributes(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549358">wiasSetItemPropAttribs</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a>
 </dt>
 </dl>
 <p> </p>

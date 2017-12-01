@@ -67,7 +67,7 @@ HBA_STATUS HBA_API HBA_ScsiInquiryV2(
 ### -param <i>HbaHandle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA through which the SCSI inquiry command is sent.</p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA through which the SCSI inquiry command is sent.</p>
 </dd>
 
 ### -param <i>HbaPortWWN</i> [in]
@@ -186,7 +186,7 @@ HBA_STATUS HBA_API HBA_ScsiInquiryV2(
 </dl>
 
 ## -returns
-<p>The <b>HBA_ScsiInquiryV2</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_ScsiInquiryV2</b> returns one of the following values.</p><dl>
+<p>The <b>HBA_ScsiInquiryV2</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_ScsiInquiryV2</b> returns one of the following values.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the complete payload of a reply to the SCSI inquiry command was successfully retrieved. </p><dl>
 <dt><b>HBA_STATUS_ERROR_ILLEGAL_WWN</b></dt>
@@ -252,10 +252,10 @@ HBA_STATUS HBA_API HBA_ScsiInquiryV2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

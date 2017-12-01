@@ -67,13 +67,7 @@ PVOID FltGetRoutineAddress(
 ## -remarks
 <p><b>FltGetRoutineAddress</b> searches the filter manager's export table for the requested routine name. </p>
 
-<p>To get the addresses of other routines that are exported by the kernel or hardware abstraction layer (HAL), use <a href="https://msdn.microsoft.com/library/windows/hardware/ff554563">MmGetSystemRoutineAddress</a>. </p>
-
-<p>Note that in Windows 2000 and Windows XP, before FltGetRoutineAddress is called at least one minifilter on the system must call FltRegisterFilter. The call to FltRegisterFilter is necessary to initialize global data structures.</p>
-
-<p><b>FltGetRoutineAddress</b> searches the filter manager's export table for the requested routine name. </p>
-
-<p>To get the addresses of other routines that are exported by the kernel or hardware abstraction layer (HAL), use <a href="https://msdn.microsoft.com/library/windows/hardware/ff554563">MmGetSystemRoutineAddress</a>. </p>
+<p>To get the addresses of other routines that are exported by the kernel or hardware abstraction layer (HAL), use <a href="..\wdm\nf-wdm-mmgetsystemroutineaddress.md">MmGetSystemRoutineAddress</a>. </p>
 
 <p>Note that in Windows 2000 and Windows XP, before FltGetRoutineAddress is called at least one minifilter on the system must call FltRegisterFilter. The call to FltRegisterFilter is necessary to initialize global data structures.</p>
 
@@ -132,7 +126,7 @@ PVOID FltGetRoutineAddress(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554563">MmGetSystemRoutineAddress</a>
+<a href="..\wdm\nf-wdm-mmgetsystemroutineaddress.md">MmGetSystemRoutineAddress</a>
 </dt>
 </dl>
 <p> </p>

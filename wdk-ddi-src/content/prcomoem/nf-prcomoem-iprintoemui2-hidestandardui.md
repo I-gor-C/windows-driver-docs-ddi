@@ -91,7 +91,7 @@ HRESULT HideStandardUI(
 ## -remarks
 <p>This method is supported in Windows Vista for Pscript 5 and Unidrv plug-ins, and in Windows XP only for Pscript5 plug-ins.</p>
 
-<p>Within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548548">DrvDocumentPropertySheets</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548542">DrvDevicePropertySheets</a> DDIs when pPSUIInfo--&gt;Reason is set to PROPSHEETUI_REASON_INIT, the driver calls the <code>IPrintOemUI2::HideStandardUI</code> method to ask the UI plug-in about user interface requests. This method can respond in any of four ways: </p>
+<p>Within the <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> or <a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a> DDIs when pPSUIInfo--&gt;Reason is set to PROPSHEETUI_REASON_INIT, the driver calls the <code>IPrintOemUI2::HideStandardUI</code> method to ask the UI plug-in about user interface requests. This method can respond in any of four ways: </p>
 
 <p>Hide standard document property sheet UI.</p>
 
@@ -118,44 +118,6 @@ HRESULT HideStandardUI(
 <p>Display all standard property sheet UI.</p>
 
 <p>Return E_NOTIMPL, regardless of the value of <i>dwMode</i>.</p>
-
-<p> </p>
-
-<p>If the <code>IPrintOemUI2::HideStandardUI</code> method indicates to the driver that all standard property sheets should be hidden, the driver omits calls to compstui.dll (see <a href="NULL">Pscript Components</a>) to add the standard property sheets. A UI plug-in must implement at least one custom property sheet UI if <code>IPrintOemUI2::HideStandardUI</code> returns S_OK.</p>
-
-<p>When the printer has multiple UI plug-ins installed, the driver calls UI plug-ins in the order they were installed, until one of them returns S_OK, or until all of the UI plug-ins have been called and none of them returned S_OK. The former case indicates to the driver that the standard property sheet UI should be hidden. The latter case indicates to the driver that the standard property sheet UI should be displayed.</p>
-
-<p>This method is supported in Windows Vista for Pscript 5 and Unidrv plug-ins, and in Windows XP only for Pscript5 plug-ins.</p>
-
-<p>Within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548548">DrvDocumentPropertySheets</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548542">DrvDevicePropertySheets</a> DDIs when pPSUIInfo--&gt;Reason is set to PROPSHEETUI_REASON_INIT, the driver calls the <code>IPrintOemUI2::HideStandardUI</code> method to ask the UI plug-in about user interface requests. This method can respond in any of four ways: </p>
-
-<p>Hide standard document property sheet UI.</p>
-
-<p>Hide standard device property sheet UI.</p>
-
-<p>Hide all standard property sheet UI.</p>
-
-<p>Do not hide any standard property sheet UI.</p>
-
-<p>The following table summarizes how the <code>IPrintOemUI2::HideStandardUI</code> method would respond in each of these situations.</p>
-
-<p>Hide standard document property sheet UI. The plug-in implements its own document property sheet UI.</p>
-
-<p>If <i>dwMode</i> == OEMCUIP_DOCPROP, return S_OK; otherwise return E_NOTIMPL.</p>
-
-<p>Hide standard device property sheet UI. The plug-in implements its own device property sheet UI.</p>
-
-<p>If <i>dwMode</i> == OEMCUIP_PRNPROP, return S_OK; otherwise return E_NOTIMPL.</p>
-
-<p>Hide all standard property sheet UI. The plug-in implements its own document property sheet and device property sheet UI.</p>
-
-<p>Return S_OK, regardless of the value of <i>dwMode</i>.</p>
-
-<p>Display all standard property sheet UI.</p>
-
-<p>Return E_NOTIMPL, regardless of the value of <i>dwMode</i>.</p>
-
-<p> </p>
 
 <p>If the <code>IPrintOemUI2::HideStandardUI</code> method indicates to the driver that all standard property sheets should be hidden, the driver omits calls to compstui.dll (see <a href="NULL">Pscript Components</a>) to add the standard property sheets. A UI plug-in must implement at least one custom property sheet UI if <code>IPrintOemUI2::HideStandardUI</code> returns S_OK.</p>
 
@@ -188,10 +150,10 @@ HRESULT HideStandardUI(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548548">DrvDocumentPropertySheets</a>
+<a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548542">DrvDevicePropertySheets</a>
+<a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a>
 </dt>
 </dl>
 <p> </p>

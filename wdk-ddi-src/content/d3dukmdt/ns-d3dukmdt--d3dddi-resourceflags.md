@@ -264,7 +264,7 @@ typedef struct _D3DDDI_RESOURCEFLAGS {
 
 <dd>
 <p>A UINT value that specifies whether the CPU frequently accesses the resource.</p>
-<p>The driver should place the resource in a memory pool that the CPU can quickly access (for example, AGP memory). The display miniport driver should flag the memory as cacheable by setting the <b>Cached</b> bit-field flag in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a> structure when its <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function is called. </p>
+<p>The driver should place the resource in a memory pool that the CPU can quickly access (for example, AGP memory). The display miniport driver should flag the memory as cacheable by setting the <b>Cached</b> bit-field flag in the <b>Flags</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a> structure when its <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a> function is called. </p>
 <p>The <b>CpuOptimized</b> flag is typically set for render targets (both stand-alone render targets and textures).</p>
 <p>Setting this member is equivalent to setting the twenty-fifth bit of the 32-bit <b>Value</b> member (0x01000000).</p>
 </dd>
@@ -287,7 +287,7 @@ typedef struct _D3DDDI_RESOURCEFLAGS {
 ### -field <b>MatchGdiPrimary</b>
 
 <dd>
-<p>A UINT value that specifies whether the resource is a primary surface that matches all the properties of the current GDI primary surface that was created by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546177">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a> structure. For example, flipping from the matching primary surface to the current GDI primary surface and vice versa is possible.</p>
+<p>A UINT value that specifies whether the resource is a primary surface that matches all the properties of the current GDI primary surface that was created by using the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-sharedprimarysurfacedata.md">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a> structure. For example, flipping from the matching primary surface to the current GDI primary surface and vice versa is possible.</p>
 <p>Setting this member is equivalent to setting the twenty-eighth bit of the 32-bit <b>Value</b> member (0x08000000).</p>
 </dd>
 
@@ -359,7 +359,7 @@ typedef struct _D3DDDI_RESOURCEFLAGS {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542963">D3DDDIARG_CREATERESOURCE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddiarg-createresource.md">D3DDDIARG_CREATERESOURCE</a>
 </dt>
 </dl>
 <p> </p>

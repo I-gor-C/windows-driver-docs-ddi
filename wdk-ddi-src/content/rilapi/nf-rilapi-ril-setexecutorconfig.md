@@ -7,7 +7,7 @@ old-location: netvista\ril_setexecutorconfig.htm
 old-project: netvista
 ms.assetid: 528f5bfb-a84d-48e5-a74d-8f7bcee6d4cb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SetExecutorConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices

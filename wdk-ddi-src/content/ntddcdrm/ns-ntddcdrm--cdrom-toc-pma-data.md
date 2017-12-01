@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Device control IRPs with a control code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559367">IOCTL_CDROM_READ_TOC_EX</a> and a format of CDROM_READ_TOC_EX_FORMAT_PMA return their output data in this structure optionally followed by a series of descriptors of type CDROM_TOC_FULL_TOC_DATA_BLOCK. </p>
+<p>Device control IRPs with a control code of <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-toc-ex.md">IOCTL_CDROM_READ_TOC_EX</a> and a format of CDROM_READ_TOC_EX_FORMAT_PMA return their output data in this structure optionally followed by a series of descriptors of type CDROM_TOC_FULL_TOC_DATA_BLOCK. </p>
 
 
 ## -syntax
@@ -78,7 +78,7 @@ typedef struct _CDROM_TOC_PMA_DATA {
 ### -field <b>Descriptors</b>
 
 <dd>
-<p>Contains zero or more track descriptors. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff551385">CDROM_TOC_FULL_TOC_DATA_BLOCK</a> for a description of the track descriptor. </p>
+<p>Contains zero or more track descriptors. See <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-full-toc-data-block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a> for a description of the track descriptor. </p>
 </dd>
 </dl>
 
@@ -102,13 +102,13 @@ typedef struct _CDROM_TOC_PMA_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559367">IOCTL_CDROM_READ_TOC_EX</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-toc-ex.md">IOCTL_CDROM_READ_TOC_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551366">CDROM_READ_TOC_EX</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-read-toc-ex.md">CDROM_READ_TOC_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551385">CDROM_TOC_FULL_TOC_DATA_BLOCK</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-full-toc-data-block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

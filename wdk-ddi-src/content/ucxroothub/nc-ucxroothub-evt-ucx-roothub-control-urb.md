@@ -70,7 +70,7 @@ typedef EVT_UCX_ROOTHUB_CONTROL_URB PEVT_UCX_ROOTHUB_CONTROL_URB;
 ### -param <i>Request</i> [in]
 
 <dd>
-<p>Contains the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> for the feature request.</p>
+<p>Contains the <a href="..\usb\ns-usb--urb.md">URB</a> for the feature request.</p>
 </dd>
 </dl>
 
@@ -78,19 +78,7 @@ typedef EVT_UCX_ROOTHUB_CONTROL_URB PEVT_UCX_ROOTHUB_CONTROL_URB;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188048">UcxRootHubCreate</a>
- method.</p>
-
-<p>The driver either provides callbacks for all of the individual feature request types, as shown in the first example, or it can provide a single handler of type <i>EVT_UCX_ROOTHUB_CONTROL_URB</i> that UCX calls for all hub and port control transfers.</p>
-
-<p>The client driver returns completion status in <i>Request</i> and in the USBD_STATUS
-    in the URB header.  The driver can complete the WDFREQUEST asynchronously.</p>
-
-<p>This example shows how to register callbacks for individual feature request types.</p>
-
-<p>Here is a sample implementation of one of the URB-specific request handlers.</p>
-
-<p>The client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188048">UcxRootHubCreate</a>
+<p>The client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxroothubcreate">UcxRootHubCreate</a>
  method.</p>
 
 <p>The driver either provides callbacks for all of the individual feature request types, as shown in the first example, or it can provide a single handler of type <i>EVT_UCX_ROOTHUB_CONTROL_URB</i> that UCX calls for all hub and port control transfers.</p>
@@ -143,7 +131,7 @@ typedef EVT_UCX_ROOTHUB_CONTROL_URB PEVT_UCX_ROOTHUB_CONTROL_URB;
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188048">UcxRootHubCreate</a>
+<a href="buses._ucxroothubcreate">UcxRootHubCreate</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\ndisifallocatenetluidindex.htm
 old-project: netvista
 ms.assetid: bc62da04-242a-4d9a-8a85-2342a1b3e628
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisIfAllocateNetLuidIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The 
   <b>NdisIfAllocateNetLuidIndex</b> function allocates a 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> index for an NDIS network interface
+  <a href="netvista.net_luid">NET_LUID</a> index for an NDIS network interface
   provider.</p>
 
 
@@ -71,7 +71,7 @@ NDIS_STATUS NdisIfAllocateNetLuidIndex(
 
 <dd>
 <p>A pointer to a caller-supplied 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> index variable. If allocation is
+     <a href="netvista.net_luid">NET_LUID</a> index variable. If allocation is
      successful, 
      <b>NdisIfAllocateNetLuidIndex</b> sets this variable to the allocated 24-bit NET_LUID index value.</p>
 </dd>
@@ -89,7 +89,7 @@ NDIS_STATUS NdisIfAllocateNetLuidIndex(
 ## -remarks
 <p>NDIS interface providers call the 
     <b>NdisIfAllocateNetLuidIndex</b> function to allocate a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> index. An interface provider must allocate
+    <a href="netvista.net_luid">NET_LUID</a> index. An interface provider must allocate
     a NET_LUID index before the interface provider can register an interface.</p>
 
 <p><b>NdisIfAllocateNetLuidIndex</b> attempts to allocate a 24-bit NET_LUID index that is unique to the local
@@ -98,46 +98,18 @@ NDIS_STATUS NdisIfAllocateNetLuidIndex(
     can remain associated with the same interface even after the computer restarts. NDIS will not allocate
     the same NET_LUID index to future callers of 
     <b>NdisIfAllocateNetLuidIndex</b> until after the interface provider calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562706">NdisIfFreeNetLuidIndex</a> function to
+    <a href="..\ndis\nf-ndis-ndisiffreenetluidindex.md">NdisIfFreeNetLuidIndex</a> function to
     free the index.</p>
 
 <p>To build a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value from the NET_LUID index and the
+    <a href="netvista.net_luid">NET_LUID</a> value from the NET_LUID index and the
     interface type, an interface provider calls the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a> macro.</p>
 
 <p>The interface provider must store the NET_LUID values that it allocates in persistent storage. For
     example, if there is a loss of computer power, the provider should have stored the NET_LUID values in
     persistent storage so it can call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562706">NdisIfFreeNetLuidIndex</a> later to
-    free any indexes that are no longer in use. Also, the provider should use the same NET_LUID value
-    whenever it registers the same interface with the 
-    <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">
-    NdisIfRegisterInterface</a> function.</p>
-
-<p>NDIS interface providers call the 
-    <b>NdisIfAllocateNetLuidIndex</b> function to allocate a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> index. An interface provider must allocate
-    a NET_LUID index before the interface provider can register an interface.</p>
-
-<p><b>NdisIfAllocateNetLuidIndex</b> attempts to allocate a 24-bit NET_LUID index that is unique to the local
-    computer and is associated with the interface type that the 
-    <i>IfType</i> parameter specifies. NDIS records the NET_LUID index in persistent storage so that the index
-    can remain associated with the same interface even after the computer restarts. NDIS will not allocate
-    the same NET_LUID index to future callers of 
-    <b>NdisIfAllocateNetLuidIndex</b> until after the interface provider calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562706">NdisIfFreeNetLuidIndex</a> function to
-    free the index.</p>
-
-<p>To build a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value from the NET_LUID index and the
-    interface type, an interface provider calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a> macro.</p>
-
-<p>The interface provider must store the NET_LUID values that it allocates in persistent storage. For
-    example, if there is a loss of computer power, the provider should have stored the NET_LUID values in
-    persistent storage so it can call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562706">NdisIfFreeNetLuidIndex</a> later to
+    <a href="..\ndis\nf-ndis-ndisiffreenetluidindex.md">NdisIfFreeNetLuidIndex</a> later to
     free any indexes that are no longer in use. Also, the provider should use the same NET_LUID value
     whenever it registers the same interface with the 
     <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">
@@ -196,7 +168,7 @@ NDIS_STATUS NdisIfAllocateNetLuidIndex(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547949">Irql_Interfaces_Function</a>
+<a href="devtest.ndis_irql_interfaces_function">Irql_Interfaces_Function</a>
 </td>
 </tr>
 </table>
@@ -207,15 +179,15 @@ NDIS_STATUS NdisIfAllocateNetLuidIndex(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562706">NdisIfFreeNetLuidIndex</a>
+<a href="..\ndis\nf-ndis-ndisiffreenetluidindex.md">NdisIfFreeNetLuidIndex</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562715">NdisIfRegisterInterface</a>
+<a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
+<a href="netvista.net_luid">NET_LUID</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfAllocateNetLuidIndex function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfAllocateNetLuidIndex function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: sensors\gnss_drivercommand_type.htm
 old-project: sensors
 ms.assetid: 61D7C52C-D8C9-4BBE-9DCA-B5E934A02FAE
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This enumeration indicates the type of driver command or configuration for the GNSS driver provided in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925107">GNSS_DRIVERCOMMAND_PARAM</a> structure.</p>
+<p>This enumeration indicates the type of driver command or configuration for the GNSS driver provided in the <a href="sensors.gnss_drivercommand_param">GNSS_DRIVERCOMMAND_PARAM</a> structure.</p>
 
 
 ## -syntax
@@ -181,7 +181,7 @@ typedef enum  {
 ### -field <a id="GNSS_ClearAgnssData"></a><a id="gnss_clearagnssdata"></a><a id="GNSS_CLEARAGNSSDATA"></a><b>GNSS_ClearAgnssData</b>
 
 <dd>
-<p>This command clears the AGNSS assistance data from the GNSS engine. This is used mainly for testing purpose to ensure that the driver requests for assistance data when a fix is requested. The associated command data contains the specific <a href="https://msdn.microsoft.com/library/windows/hardware/dn925097">GNSS_AGNSS_REQUEST_TYPE</a> enumeration to indicate the specific data element to be cleared:</p>
+<p>This command clears the AGNSS assistance data from the GNSS engine. This is used mainly for testing purpose to ensure that the driver requests for assistance data when a fix is requested. The associated command data contains the specific <a href="..\gnssdriver\ne-gnssdriver-gnss-agnss-request-type.md">GNSS_AGNSS_REQUEST_TYPE</a> enumeration to indicate the specific data element to be cleared:</p>
 <ul>
 <li>
 <p>If <b>GNSS_AGNSS_TimeInjection</b> is specified, the time reference will be deleted in the GNSS engine. This may cause the GNSS engine to request again time injection.</p>
@@ -199,7 +199,7 @@ typedef enum  {
 ### -field <a id="GNSS_SetSuplVersion_"></a><a id="gnss_setsuplversion_"></a><a id="GNSS_SETSUPLVERSION_"></a><b>GNSS_SetSuplVersion </b>
 
 <dd>
-<p>This command sets the SUPL version that the mobile operator wants supported. The command data contains a value of <a href="https://msdn.microsoft.com/library/windows/hardware/dn925233">GNSS_SUPL_VERSION</a> structure which includes both the major and the minor SUPL versions indicated by the mobile operator. The SUPL client should use the SUPL version as specifies in the OMA SUPL standards, summarizing:</p>
+<p>This command sets the SUPL version that the mobile operator wants supported. The command data contains a value of <a href="sensors.gnss_supl_version">GNSS_SUPL_VERSION</a> structure which includes both the major and the minor SUPL versions indicated by the mobile operator. The SUPL client should use the SUPL version as specifies in the OMA SUPL standards, summarizing:</p>
 <ul>
 <li>
 <p>For network initiated scenarios, the SUPL INIT message from the H-SLP or E-SLP to the SET carries the intended SUPL major and minor version M1.m1 (normally the highest version supported by the SLP) in the version parameter. The SUPL INIT message also carries the minimum SUPL major version number M2 for which continuation of the session by the SET is possible in the minimum version parameter. The value of M2 will depend on the intended SUPL service – for example, for a single location fix M2 may be one; for triggered location M2 may be two. A SUPL session can be conducted between the SLP and the SET as long as the SET is using a SUPL major version between M2 and M1. The SET continues the SUPL session normally if it supports a major version M of SUPL between M2 and M1 (for example, M2 ≤ M ≤ M1) – and indicates this major version and a supported minor version m in the next message (for example, implicitly in the version parameter of the message).</p>
@@ -214,7 +214,7 @@ typedef enum  {
 
 <dd>
 <p>This command sets the status for NMEA logging.</p>
-<p>This command causes the GNSS driver to start/stop providing the data fix information via NMEA strings. The GNSS driver must continue providing fixes in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925139">GNSS_FIXDATA</a> structure. The parameter is a <b>DWORD</b> with the following values:</p>
+<p>This command causes the GNSS driver to start/stop providing the data fix information via NMEA strings. The GNSS driver must continue providing fixes in the <a href="sensors.gnss_fixdata">GNSS_FIXDATA</a> structure. The parameter is a <b>DWORD</b> with the following values:</p>
 <pre class="syntax" xml:space="preserve"><code>#define GNSS_NMEALOGGING_NONE         0x00
 #define GNSS_NMEALOGGING_ALL          0xFF
 </code></pre>

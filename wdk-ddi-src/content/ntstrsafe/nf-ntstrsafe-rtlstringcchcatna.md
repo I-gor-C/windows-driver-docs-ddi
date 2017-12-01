@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcchcatn.htm
 old-project: kernel
 ms.assetid: 2cd45c9e-b9dd-47fb-a480-63258b2fccd4
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlStringCchCatNA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -119,42 +119,9 @@ NTSTATUS RtlStringCchCatN(
 
 <p><b>RtlStringCchCatNA</b></p>
 
-<p> </p>
-
 <p>If  <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.</p>
 
-<p>Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562837">RtlStringCchCatNEx</a>.</p>
-
-<p>For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.</p>
-
-<p><b>RtlStringCchCatNW</b> and <b>RtlStringCchCatNA</b> should be used instead of the following functions: </p>
-
-<p><b>strncat</b></p>
-
-<p><b>wcsncat</b></p>
-
-<p>The size, in characters, of the destination buffer is provided to the function to ensure that <b>RtlStringCchCatNW</b> and <b>RtlStringCchCatNA</b> do not write past the end of the buffer.</p>
-
-<p>Use <b>RtlStringCchCatNW</b> to handle Unicode strings and <b>RtlStringCchCatNA</b> to handle ANSI strings. The form you use depends on your data, as shown in the following table.</p>
-
-<p>WCHAR</p>
-
-<p>L"string"</p>
-
-<p><b>RtlStringCchCatNW</b></p>
-
-<p><b>char
-       </b></p>
-
-<p>"string"</p>
-
-<p><b>RtlStringCchCatNA</b></p>
-
-<p> </p>
-
-<p>If  <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.</p>
-
-<p>Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562837">RtlStringCchCatNEx</a>.</p>
+<p>Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="kernel.rtlstringcchcatnex">RtlStringCchCatNEx</a>.</p>
 
 <p>For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.</p>
 
@@ -219,15 +186,15 @@ NTSTATUS RtlStringCchCatN(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562801">RtlStringCbCatN</a>
+<a href="kernel.rtlstringcbcatn">RtlStringCbCatN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562837">RtlStringCchCatNEx</a>
+<a href="kernel.rtlstringcchcatnex">RtlStringCchCatNEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562834">RtlStringCchCat</a>
+<a href="kernel.rtlstringcchcat">RtlStringCchCat</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCchCatN function%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCchCatN function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

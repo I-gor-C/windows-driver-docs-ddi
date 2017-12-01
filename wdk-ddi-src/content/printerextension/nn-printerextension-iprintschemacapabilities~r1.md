@@ -44,7 +44,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaCapabilities</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/hh451270">IPrintSchemaElement</a>. <b>IPrintSchemaCapabilities</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaCapabilities</b> interface inherits from <a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>. <b>IPrintSchemaCapabilities</b> also has these types of members:</p>
 
 <p>The <b>IPrintSchemaCapabilities</b> interface has these methods.</p>
 
@@ -54,14 +54,14 @@ req.product: Windows 10 or later.
 
 <p>Gets all the options of a feature.</p>
 
-<p>Gets the selected option for a feature in <a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>.</p>
+<p>Gets the selected option for a feature in <a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>.</p>
 
 <p> </p>
 
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaCapabilities</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh965533">JobCopiesAllDocumentsMaxValue</a>
+<a href="print.iprintschemacapabilities_get_jobcopiesalldocumentsmaxvalue">JobCopiesAllDocumentsMaxValue</a>
 </p>
 
 <p>Read-only</p>
@@ -69,7 +69,7 @@ req.product: Windows 10 or later.
 <p>Gets the <b>JobCopiesAllDocuments</b> parameter maximum value.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh965534">JobCopiesAllDocumentsMinValue</a>
+<a href="print.iprintschemacapabilities_jobcopiesalldocumentsminvalue">JobCopiesAllDocumentsMinValue</a>
 </p>
 
 <p>Read-only</p>
@@ -77,7 +77,7 @@ req.product: Windows 10 or later.
 <p>Gets the <b>JobCopiesAllDocuments</b> parameter minimum value.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971601">PageImageableSize</a>
+<a href="print.iprintschemacapabilities_pageimageablesize">PageImageableSize</a>
 </p>
 
 <p>Read-only</p>
@@ -94,7 +94,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451385">GetFeature</a>
+<a href="print.iprintschemacapabilities_getfeature">GetFeature</a>
 </td>
 <td align="left" width="63%">
 <p>Gets a named feature from the PrintCapabilities, by name and full namespace URI.</p>
@@ -102,7 +102,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451388">GetFeatureByKeyName</a>
+<a href="print.iprintschemacapabilities_getfeaturebykeyname">GetFeatureByKeyName</a>
 </td>
 <td align="left" width="63%">
 <p>Gets a feature from the PrintCapabilities based on a given key name.</p>
@@ -110,7 +110,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451244">GetOptions</a>
+<a href="print.iprintschemacapabilities_getoptions">GetOptions</a>
 </td>
 <td align="left" width="63%">
 <p>Gets all the options of a feature.</p>
@@ -118,10 +118,10 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451248">GetSelectedOptionInPrintTicket</a>
+<a href="print.iprintschemacapabilities_getselectedoptioninprintticket">GetSelectedOptionInPrintTicket</a>
 </td>
 <td align="left" width="63%">
-<p>Gets the selected option for a feature in <a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>.</p>
+<p>Gets the selected option for a feature in <a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>.</p>
 </td>
 </tr>
 </table><p>Gets a named feature from the PrintCapabilities, by name and full namespace URI.</p>
@@ -130,7 +130,7 @@ req.product: Windows 10 or later.
 
 <p>Gets all the options of a feature.</p>
 
-<p>Gets the selected option for a feature in <a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>.</p>
+<p>Gets the selected option for a feature in <a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>.</p>
 
 <p> </p>
 
@@ -143,7 +143,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh965533">JobCopiesAllDocumentsMaxValue</a>
+<a href="print.iprintschemacapabilities_get_jobcopiesalldocumentsmaxvalue">JobCopiesAllDocumentsMaxValue</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -156,7 +156,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh965534">JobCopiesAllDocumentsMinValue</a>
+<a href="print.iprintschemacapabilities_jobcopiesalldocumentsminvalue">JobCopiesAllDocumentsMinValue</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -169,7 +169,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971601">PageImageableSize</a>
+<a href="print.iprintschemacapabilities_pageimageablesize">PageImageableSize</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -180,7 +180,7 @@ req.product: Windows 10 or later.
 </td>
 </tr>
 </table><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh965533">JobCopiesAllDocumentsMaxValue</a>
+<a href="print.iprintschemacapabilities_get_jobcopiesalldocumentsmaxvalue">JobCopiesAllDocumentsMaxValue</a>
 </p>
 
 <p>Read-only</p>
@@ -188,7 +188,7 @@ req.product: Windows 10 or later.
 <p>Gets the <b>JobCopiesAllDocuments</b> parameter maximum value.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh965534">JobCopiesAllDocumentsMinValue</a>
+<a href="print.iprintschemacapabilities_jobcopiesalldocumentsminvalue">JobCopiesAllDocumentsMinValue</a>
 </p>
 
 <p>Read-only</p>
@@ -196,7 +196,7 @@ req.product: Windows 10 or later.
 <p>Gets the <b>JobCopiesAllDocuments</b> parameter minimum value.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971601">PageImageableSize</a>
+<a href="print.iprintschemacapabilities_pageimageablesize">PageImageableSize</a>
 </p>
 
 <p>Read-only</p>
@@ -206,9 +206,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>To obtain an IXMLDOMDocument2 object for the PrintCapabilities object, you must first dereference the <i>ppXmlNode</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh969196">XmlNode</a> property (using *ppXmlNode ). This retrieves a pointer to an interface of type <b>IUnknown</b>. Use this pointer to  call the <b>QueryInterface</b> method of the PrintCapabilities object to access the underlying  IXMLDOMDocument2 object.</p>
-
-<p>To obtain an IXMLDOMDocument2 object for the PrintCapabilities object, you must first dereference the <i>ppXmlNode</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh969196">XmlNode</a> property (using *ppXmlNode ). This retrieves a pointer to an interface of type <b>IUnknown</b>. Use this pointer to  call the <b>QueryInterface</b> method of the PrintCapabilities object to access the underlying  IXMLDOMDocument2 object.</p>
+<p>To obtain an IXMLDOMDocument2 object for the PrintCapabilities object, you must first dereference the <i>ppXmlNode</i> parameter of the <a href="print.iprintschemaelement_xmlnode">XmlNode</a> property (using *ppXmlNode ). This retrieves a pointer to an interface of type <b>IUnknown</b>. Use this pointer to  call the <b>QueryInterface</b> method of the PrintCapabilities object to access the underlying  IXMLDOMDocument2 object.</p>
 
 ## -requirements
 <table>
@@ -243,14 +241,14 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451270">IPrintSchemaElement</a>
+<a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>
 </dt>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/br259124">Developing v4 print drivers</a></dt>
 <dt>
 <a href="print.iprintschemaelement_xmlnode">IPrintSchemaElement::XmlNode</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>
+<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
 </dt>
 <dt>
 <a href="print.iprintschematicket_getcapabilities">IPrintSchemaTicket_GetCapabilities</a>

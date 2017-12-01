@@ -141,10 +141,10 @@ typedef struct _STOR_ADDRESS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451521">STOR_ADDR_BTL8</a>
+<a href="..\scsi\ns-scsi--stor-addr-btl8.md">STOR_ADDR_BTL8</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj206452">StorPortSetUnitAttributes</a>
+<a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a>
 </dt>
 </dl>
 <p> </p>

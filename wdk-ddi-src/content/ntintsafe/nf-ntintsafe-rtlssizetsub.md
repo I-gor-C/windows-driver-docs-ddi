@@ -7,7 +7,7 @@ old-location: kernel\rtlssizetsub.htm
 old-project: kernel
 ms.assetid: 6EFDD7BF-B347-4E02-905E-01F0F155DB6F
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlSSIZETSub
 ms.prod: windows-hardware
 ms.technology: windows-devices

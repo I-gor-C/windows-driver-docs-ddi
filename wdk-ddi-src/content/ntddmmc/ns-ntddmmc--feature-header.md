@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The FEATURE_HEADER structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559334">IOCTL_CDROM_GET_CONFIGURATION</a> request to report header information for both feature and profile descriptors.</p>
+<p>The FEATURE_HEADER structure is used in conjunction with the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-configuration.md">IOCTL_CDROM_GET_CONFIGURATION</a> request to report header information for both feature and profile descriptors.</p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ typedef struct _FEATURE_HEADER {
 ### -field <b>FeatureCode</b>
 
 <dd>
-<p>Contains a value between zero and 0xffff that indicates a feature. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a> enumeration provides a list of currently supported feature numbers. <b>FeatureCode</b>[0] contains the most significant byte of the feature number. <b>FeatureCode</b>[1] contains the least significant byte. </p>
+<p>Contains a value between zero and 0xffff that indicates a feature. The <a href="..\ntddmmc\ne-ntddmmc--feature-number.md">FEATURE_NUMBER</a> enumeration provides a list of currently supported feature numbers. <b>FeatureCode</b>[0] contains the most significant byte of the feature number. <b>FeatureCode</b>[1] contains the least significant byte. </p>
 </dd>
 
 ### -field <b>Current</b>
@@ -116,13 +116,13 @@ typedef struct _FEATURE_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559334">IOCTL_CDROM_GET_CONFIGURATION</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-configuration.md">IOCTL_CDROM_GET_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554980">GET_CONFIGURATION_HEADER</a>
+<a href="..\ntddmmc\ns-ntddmmc--get-configuration-header.md">GET_CONFIGURATION_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>
+<a href="..\ntddmmc\ne-ntddmmc--feature-number.md">FEATURE_NUMBER</a>
 </dt>
 </dl>
 <p> </p>

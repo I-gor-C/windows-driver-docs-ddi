@@ -91,21 +91,11 @@ NTSTATUS FltAdjustDeviceStackSizeForIoRedirection(
 
 <p>A minifilter can adjust the stack size during instance setup if the filter knows which stack the I/O will be redirected to. </p>
 
-<p>The filter can issue its own create operation down the new stack using <a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a>. Before completing the create operation, the filter can adjust the stack size to account for the target stack. Doing that adjustment ensures that the stack size will be adjusted before the create action is completed. All IRPs allocated for that file object will have a large enough stack to support redirection.</p>
+<p>The filter can issue its own create operation down the new stack using <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>. Before completing the create operation, the filter can adjust the stack size to account for the target stack. Doing that adjustment ensures that the stack size will be adjusted before the create action is completed. All IRPs allocated for that file object will have a large enough stack to support redirection.</p>
 
-<p>During instance-setup or during post-create callback for a redirected file object, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff625874">FltIsIoRedirectionAllowed</a> to determine if redirection is possible without modifying the source stack. If necessary, use <b>FltAdjustDeviceStackSizeForIoRedirection</b> to adjust the source stack.</p>
+<p>During instance-setup or during post-create callback for a redirected file object, use <a href="..\fltkernel\nf-fltkernel-fltisioredirectionallowed.md">FltIsIoRedirectionAllowed</a> to determine if redirection is possible without modifying the source stack. If necessary, use <b>FltAdjustDeviceStackSizeForIoRedirection</b> to adjust the source stack.</p>
 
-<p>In the pre-operation callback for every operation that needs redirection, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff625875">FltIsIoRedirectionAllowedForOperation</a> to determine if redirection is possible without modifying the source stack. If necessary, use <b>FltAdjustDeviceStackSizeForIoRedirection</b> to adjust the source stack.</p>
-
-<p>Using <b>FltAdjustDeviceStackSizeForIoRedirection</b> does not guarantee that every IRP that the minifilter encounters will be sufficient in size to be redirected to the target stack. IRPs that were allocated and issued before the call to <b>FltAdjustDeviceStackSizeForIoRedirection</b> would still have been allocated based on the old stack size. </p>
-
-<p>A minifilter can adjust the stack size during instance setup if the filter knows which stack the I/O will be redirected to. </p>
-
-<p>The filter can issue its own create operation down the new stack using <a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a>. Before completing the create operation, the filter can adjust the stack size to account for the target stack. Doing that adjustment ensures that the stack size will be adjusted before the create action is completed. All IRPs allocated for that file object will have a large enough stack to support redirection.</p>
-
-<p>During instance-setup or during post-create callback for a redirected file object, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff625874">FltIsIoRedirectionAllowed</a> to determine if redirection is possible without modifying the source stack. If necessary, use <b>FltAdjustDeviceStackSizeForIoRedirection</b> to adjust the source stack.</p>
-
-<p>In the pre-operation callback for every operation that needs redirection, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff625875">FltIsIoRedirectionAllowedForOperation</a> to determine if redirection is possible without modifying the source stack. If necessary, use <b>FltAdjustDeviceStackSizeForIoRedirection</b> to adjust the source stack.</p>
+<p>In the pre-operation callback for every operation that needs redirection, use <a href="..\fltkernel\nf-fltkernel-fltisioredirectionallowedforoperation.md">FltIsIoRedirectionAllowedForOperation</a> to determine if redirection is possible without modifying the source stack. If necessary, use <b>FltAdjustDeviceStackSizeForIoRedirection</b> to adjust the source stack.</p>
 
 ## -requirements
 <table>
@@ -160,19 +150,19 @@ NTSTATUS FltAdjustDeviceStackSizeForIoRedirection(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544638">FLT_IO_PARAMETER_BLOCK</a>
+<a href="..\fltkernel\ns-fltkernel--flt-io-parameter-block.md">FLT_IO_PARAMETER_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff625874">FltIsIoRedirectionAllowed</a>
+<a href="..\fltkernel\nf-fltkernel-fltisioredirectionallowed.md">FltIsIoRedirectionAllowed</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff625875">FltIsIoRedirectionAllowedForOperation</a>
+<a href="..\fltkernel\nf-fltkernel-fltisioredirectionallowedforoperation.md">FltIsIoRedirectionAllowedForOperation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551109">PFLT_PRE_OPERATION_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-pre-operation-callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
 </dt>
 </dl>
 <p> </p>

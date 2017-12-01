@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetFC4Statistics_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a> WMI method to the WMI client.</p>
+<p>The GetFC4Statistics_OUT structure is used to report the output parameter data of the <a href="storage.getfc4statistics">GetFC4Statistics</a> WMI method to the WMI client.</p>
 
 
 ## -syntax
@@ -58,20 +58,20 @@ typedef struct _GetFC4Statistics_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.</p>
+<p>Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation.</p>
 </dd>
 
 ### -field <b>FC4Statistics</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562492">MSFC_FC4STATISTICS</a> that holds statistics for the specified FC-4 protocol. </p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--msfc-fc4statistics.md">MSFC_FC4STATISTICS</a> that holds statistics for the specified FC-4 protocol. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a> WMI method reports traffic statistics for a specific FC-4 protocol via a specific local HBA and port of type Nx_Port.</p>
+<p>The <a href="storage.getfc4statistics">GetFC4Statistics</a> WMI method reports traffic statistics for a specific FC-4 protocol via a specific local HBA and port of type Nx_Port.</p>
 
-<p>The WMI tool suite generates a declaration of the GetFC4Statistics_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetFC4Statistics_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -90,7 +90,7 @@ typedef struct _GetFC4Statistics_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a>
+<a href="storage.getfc4statistics">GetFC4Statistics</a>
 </dt>
 </dl>
 <p> </p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure is to retrieve changer elements based on a search criterion specified in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551440">ChangerQueryVolumeTags</a> routine. </p>
+<p>This structure is to retrieve changer elements based on a search criterion specified in a call to the <a href="..\mcd\nf-mcd-changerqueryvolumetags.md">ChangerQueryVolumeTags</a> routine. </p>
 
 
 ## -syntax
@@ -58,13 +58,13 @@ typedef struct _READ_ELEMENT_ADDRESS_INFO {
 ### -field <b>NumberOfElements</b>
 
 <dd>
-<p>Indicates the number of elements that matched the criteria specified by <b>ActionCode</b> and <b>VolumeTemplateID</b> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551479">CHANGER_SEND_VOLUME_TAG_INFORMATION</a> structure passed to the driver. If no element matches the criteria, this member is zero.</p>
+<p>Indicates the number of elements that matched the criteria specified by <b>ActionCode</b> and <b>VolumeTemplateID</b> in the <a href="..\ntddchgr\ns-ntddchgr--changer-send-volume-tag-information.md">CHANGER_SEND_VOLUME_TAG_INFORMATION</a> structure passed to the driver. If no element matches the criteria, this member is zero.</p>
 </dd>
 
 ### -field <b>ElementStatus</b>
 
 <dd>
-<p>Contains an array holding the first <a href="https://msdn.microsoft.com/library/windows/hardware/ff551461">CHANGER_ELEMENT_STATUS</a> structure that matched the criteria in the CHANGER_SEND_VOLUME_TAG_INFORMATION structure passed to the driver. </p>
+<p>Contains an array holding the first <a href="..\ntddchgr\ns-ntddchgr--changer-element-status.md">CHANGER_ELEMENT_STATUS</a> structure that matched the criteria in the CHANGER_SEND_VOLUME_TAG_INFORMATION structure passed to the driver. </p>
 </dd>
 </dl>
 
@@ -88,16 +88,16 @@ typedef struct _READ_ELEMENT_ADDRESS_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551479">CHANGER_SEND_VOLUME_TAG_INFORMATION</a>
+<a href="..\ntddchgr\ns-ntddchgr--changer-send-volume-tag-information.md">CHANGER_SEND_VOLUME_TAG_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a>
+<a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551461">CHANGER_ELEMENT_STATUS</a>
+<a href="..\ntddchgr\ns-ntddchgr--changer-element-status.md">CHANGER_ELEMENT_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551440">ChangerQueryVolumeTags</a>
+<a href="..\mcd\nf-mcd-changerqueryvolumetags.md">ChangerQueryVolumeTags</a>
 </dt>
 </dl>
 <p> </p>

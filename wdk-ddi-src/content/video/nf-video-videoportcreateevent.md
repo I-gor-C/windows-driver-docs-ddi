@@ -114,10 +114,6 @@ VP_STATUS VideoPortCreateEvent(
 
 <p>When a notification event is set to the signaled state, all threads that were waiting for the signaled state are released, and the event remains in the signaled state until it is explicitly reset to the nonsignaled state. </p>
 
-<p>When a synchronization event is set to the signaled state, a single thread that was waiting for the signaled state is released (its dispatch state transitions from waiting to ready, standby, or running), and the event is automatically reset to the nonsignaled state.</p>
-
-<p>When a notification event is set to the signaled state, all threads that were waiting for the signaled state are released, and the event remains in the signaled state until it is explicitly reset to the nonsignaled state. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -181,7 +177,7 @@ VP_STATUS VideoPortCreateEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570292">VideoPortDeleteEvent</a>
+<a href="..\video\nf-video-videoportdeleteevent.md">VideoPortDeleteEvent</a>
 </dt>
 </dl>
 <p> </p>

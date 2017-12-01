@@ -7,7 +7,7 @@ old-location: netvista\fwpsconstructipheaderfortransportpacket0.htm
 old-project: netvista
 ms.assetid: badb7e91-1d5f-42c3-973b-c7d756d24a01
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsConstructIpHeaderForTransportPacket0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,7 +72,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that describes
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure that describes
      the cloned transport layer packet data for which a new IP header is to be constructed or rebuilt. To
      construct a new IP header, locate the offset of the cloned NET_BUFFER_LIST structure at the beginning of
      the transport header. To rebuild a preexisting IP packet header, locate the offset at the beginning of
@@ -90,7 +90,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
      <b>ipHeaderSize</b> member of the 
      <a href="netvista.fwps_incoming_metadata_values0">
      FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function. Note that
+     <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function. Note that
      extension headers for an existing IPv6 header will be removed when this function is called, although
      IPv4 options will be preserved. For more information, see Remarks.</p>
 </dd>
@@ -153,7 +153,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
      <b>transportEndpointHandle</b> member of the 
      <a href="netvista.fwps_incoming_metadata_values0">
      FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function.</p>
+     <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function.</p>
 </dd>
 
 ### -param <i>controlData</i> [in, optional]
@@ -162,16 +162,16 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
 <p>An optional pointer to a buffer that contains socket control data specified by the 
      <b>WSASendMsg</b> function, which is described in the Microsoft Windows SDK documentation. For
      information about the WSACMSGHDR type, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>.
+     <a href="netvista.cmsghdr">CMSGHDR</a>.
      </p>
 <p>If present, socket control data is provided to a callout with the 
      <b>controlData</b> member of the 
      <a href="netvista.fwps_incoming_metadata_values0">
      FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function.</p>
+     <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function.</p>
 <p>If socket control data is not <b>NULL</b>, it must be deep-copied in the callout driver's implementation of
      the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> function, and the 
+     <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> function, and the 
      <b>controlData</b> buffer must be kept valid until the injection completion function is
      called.</p>
 </dd>
@@ -198,7 +198,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
 ### -param <i>interfaceIndex</i> [in, optional]
 
 <dd>
-<p>The index of the interface on which the original packet data was received. A callout driver should use the value of the interface index that is passed as one of the incoming data values to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function for this parameter. This parameter is optional and can be zero.</p>
+<p>The index of the interface on which the original packet data was received. A callout driver should use the value of the interface index that is passed as one of the incoming data values to its <a href="netvista.classifyfn">classifyFn</a> callout function for this parameter. This parameter is optional and can be zero.</p>
 </dd>
 
 ### -param <i>subInterfaceIndex</i> [in, optional]
@@ -206,7 +206,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
 <dd>
 <p>The index of the subinterface on which the original packet data was received. A callout driver
      should use the value of the subinterface index that is passed as one of the incoming data values to its 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function for this
+     <a href="netvista.classifyfn">classifyFn</a> callout function for this
      parameter if the packet is to be injected into the same subinterface where the original packet was
      indicated. This parameter is optional and can be zero.</p>
 </dd>
@@ -253,7 +253,7 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
     processing, packets that have been indicated by WFP and cloned by callouts cannot readily be injected
     into the receive data path. Consequently this function is useful for rebuilding IPsec-processed packets
     that are to be injected into the receive data path with the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551186">FwpsInjectTransportReceiveAsync0</a> function.</p>
+    <a href="..\fwpsk\nf-fwpsk-fwpsinjecttransportreceiveasync0.md">FwpsInjectTransportReceiveAsync0</a> function.</p>
 
 <p>For a header-include session; for example, to filter Generic Routing Encapsulation (GRE) traffic (IP
     protocol 47) sent on a raw socket from outbound transport layers, use the following procedure before you
@@ -267,71 +267,9 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
 <p>If the 
       <b>headerIncludeHeaderLength</b> member of the FWPS_INCOMING_METADATA_VALUES0 structure that is pointed
       to by the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> function's 
+      <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> function's 
       <i>inMetaValues</i> parameter is greater than zero, retreat the cloned net buffer list by that amount; for example, by a call to 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff564529">NdisRetreatNetBufferListDataStart</a>.</p>
-
-<p>Copy the buffer that is pointed to by the 
-      <b>headerIncludeHeader</b> member of FWPS_INCOMING_METADATA_VALUES0 into the newly retreated region of
-      the cloned net buffer list. The size of the buffer must be equal to the value of 
-      <i>headerIncludeHeaderLength</i>.</p>
-
-<p>Call 
-      <b>FwpsConstructIpHeaderForTransportPacket0</b> that has the 
-      <i>NetBufferList</i> parameter pointing to the cloned net buffer list and the 
-      <i>headerIncludeHeaderSize</i> parameter set to the value of 
-      <i>headerIncludeHeaderLength</i>.</p>
-
-<p><b>FwpsConstructIpHeaderForTransportPacket0</b> disables large send offload (LSO) and checksum offload
-    support for the resulting net buffer list. Full checksums are calculated for upper-level protocols (TCP,
-    UDP, and ICMP). The IP checksum is recalculated when the IP header is reconstructed.</p>
-
-<p>From a net buffer list cloned at a WFP outbound transport layer (FWPS_LAYER_OUTBOUND_TRANSPORT_Xxx), 
-    <b>FwpsConstructIpHeaderForTransportPacket0</b> constructs a new header for each net buffer that is part
-    of the net buffer list chain. This function can also be used to rebuild the preexisting IP header of a
-    packet, in which case the net buffer list must contain only one net buffer.</p>
-
-<p>This function is useful when the IP header has not yet been created, but the source IP address or the
-    source port must be modified from the transport layer. Although it would ordinarily be possible to
-    wait to perform such modifications until the packet reaches the Network layer, this cannot be done in an
-    IPsec environment in which IP packets are encrypted or digitally signed before they reach the Network
-    layer.</p>
-
-<p>The source IP address can be modified to be another locally defined IP address or another address that
-    does not exist on the local computer. Packets so modified can then be sent or injected into the receive
-    or forwarding data path.</p>
-
-<p>If a nonzero 
-    <i>endpointHandle</i> parameter is specified, session states (socket options), if any, associated with the
-    socket will be used to construct each new IP header. Similarly, if additional socket options are
-    specified with the 
-    <i>controlData</i> and 
-    <i>controlDataLength</i> parameters, those options will be used to construct each new IP header.</p>
-
-<p>If the input net buffer list was cloned from an inbound WFP transport layer, or if it was created as a
-    result of a raw send operation, the net buffers will already contain an IP header. In this case, when
-    this function is called, IPv4 options will be preserved in the new IP header, but AH/ESP headers and IPv6
-    extension headers will be removed. Because the TCP/IP stack retains AH/ESP headers after IPsec
-    processing, packets that have been indicated by WFP and cloned by callouts cannot readily be injected
-    into the receive data path. Consequently this function is useful for rebuilding IPsec-processed packets
-    that are to be injected into the receive data path with the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551186">FwpsInjectTransportReceiveAsync0</a> function.</p>
-
-<p>For a header-include session; for example, to filter Generic Routing Encapsulation (GRE) traffic (IP
-    protocol 47) sent on a raw socket from outbound transport layers, use the following procedure before you
-    call 
-    <b>FwpsConstructIpHeaderForTransportPacket0</b>:</p>
-
-<p>Clone the net buffer list by calling the 
-      <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
-      FwpsAllocateCloneNetBufferList0</a> function.</p>
-
-<p>If the 
-      <b>headerIncludeHeaderLength</b> member of the FWPS_INCOMING_METADATA_VALUES0 structure that is pointed
-      to by the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> function's 
-      <i>inMetaValues</i> parameter is greater than zero, retreat the cloned net buffer list by that amount; for example, by a call to 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff564529">NdisRetreatNetBufferListDataStart</a>.</p>
+      <a href="..\ndis\nf-ndis-ndisretreatnetbufferlistdatastart.md">NdisRetreatNetBufferListDataStart</a>.</p>
 
 <p>Copy the buffer that is pointed to by the 
       <b>headerIncludeHeader</b> member of FWPS_INCOMING_METADATA_VALUES0 into the newly retreated region of
@@ -407,10 +345,10 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543746">AF_INET6</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
+<a href="netvista.cmsghdr">CMSGHDR</a>
 </dt>
 <dt>
 <a href="netvista.fwps_incoming_metadata_values0">
@@ -421,9 +359,9 @@ NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
    FwpsInjectTransportReceiveAsync0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsConstructIpHeaderForTransportPacket0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsConstructIpHeaderForTransportPacket0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

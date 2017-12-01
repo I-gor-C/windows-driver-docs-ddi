@@ -58,7 +58,7 @@ typedef enum _DXGK_GENERAL_ERROR_CODE {
 ### -field <a id="DXGK_GENERAL_ERROR_PAGE_FAULT"></a><a id="dxgk_general_error_page_fault"></a><b>DXGK_GENERAL_ERROR_PAGE_FAULT</b>
 
 <dd>
-<p>Indicates that the GPU encountered a page fault. The <b>FaultedVirtualAddress</b> and <b>PageTableLevel</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557538">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure should be used to provide further information about the GPU virtual address operation that caused the fault.</p>
+<p>Indicates that the GPU encountered a page fault. The <b>FaultedVirtualAddress</b> and <b>PageTableLevel</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-notify-interrupt-data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure should be used to provide further information about the GPU virtual address operation that caused the fault.</p>
 </dd>
 
 ### -field <a id="DXGK_GENERAL_ERROR_INVALID_INSTRUCTION"></a><a id="dxgk_general_error_invalid_instruction"></a><b>DXGK_GENERAL_ERROR_INVALID_INSTRUCTION</b>
@@ -104,7 +104,7 @@ typedef enum _DXGK_GENERAL_ERROR_CODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557538">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-notify-interrupt-data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
 </dt>
 </dl>
 <p> </p>

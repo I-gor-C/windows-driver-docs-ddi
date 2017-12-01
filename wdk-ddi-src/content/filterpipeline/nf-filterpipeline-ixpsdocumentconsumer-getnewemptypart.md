@@ -70,37 +70,37 @@ HRESULT GetNewEmptyPart(
 <ul>
 <li>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550966">IFixedDocument</a>
+<a href="print.ifixeddocument">IFixedDocument</a>
 </p>
 </li>
 <li>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551019">IFixedPage</a>
+<a href="print.ifixedpage">IFixedPage</a>
 </p>
 </li>
 <li>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551906">IPartImage</a>
+<a href="print.ipartimage">IPartImage</a>
 </p>
 </li>
 <li>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551939">IPartThumbnail</a>
+<a href="print.ipartthumbnail">IPartThumbnail</a>
 </p>
 </li>
 <li>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551887">IPartFont</a>
+<a href="print.ipartfont">IPartFont</a>
 </p>
 </li>
 <li>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551924">IPartPrintTicket</a>
+<a href="print.ipartprintticket">IPartPrintTicket</a>
 </p>
 </li>
 <li>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551874">IPartColorProfile</a>
+<a href="print.ipartcolorprofile">IPartColorProfile</a>
 </p>
 </li>
 </ul>
@@ -123,8 +123,6 @@ HRESULT GetNewEmptyPart(
 <p><code>GetNewEmptyPart</code> returns an <b>HRESULT</b>.</p>
 
 ## -remarks
-<p>A filter can create new XPS parts by using the <code>GetNewEmptyPart</code> method. Typically, the filter receives XPS parts from the inter-filter object.</p>
-
 <p>A filter can create new XPS parts by using the <code>GetNewEmptyPart</code> method. Typically, the filter receives XPS parts from the inter-filter object.</p>
 
 ## -requirements
@@ -164,25 +162,25 @@ HRESULT GetNewEmptyPart(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550966">IFixedDocument</a>
+<a href="print.ifixeddocument">IFixedDocument</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551019">IFixedPage</a>
+<a href="print.ifixedpage">IFixedPage</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551874">IPartColorProfile</a>
+<a href="print.ipartcolorprofile">IPartColorProfile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551887">IPartFont</a>
+<a href="print.ipartfont">IPartFont</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551906">IPartImage</a>
+<a href="print.ipartimage">IPartImage</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551924">IPartPrintTicket</a>
+<a href="print.ipartprintticket">IPartPrintTicket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551939">IPartThumbnail</a>
+<a href="print.ipartthumbnail">IPartThumbnail</a>
 </dt>
 </dl>
 <p> </p>

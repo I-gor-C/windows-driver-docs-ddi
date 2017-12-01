@@ -67,7 +67,7 @@ HRESULT APIENTRY GetCaps(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541887">D3D10_2DDIARG_GETCAPS</a> structure that describes the capabilities to retrieve.</p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-2ddiarg-getcaps.md">D3D10_2DDIARG_GETCAPS</a> structure that describes the capabilities to retrieve.</p>
 </dd>
 </dl>
 
@@ -81,9 +81,7 @@ HRESULT APIENTRY GetCaps(
 <p> </p>
 
 ## -remarks
-<p>The data that is returned by the <i>GetCaps(D3D10_2)</i> function in the <b>pData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541887">D3D10_2DDIARG_GETCAPS</a> structure depends on the type of data that is requested (that is, the data depends on the <b>Type</b> member of D3D10_2DDIARG_GETCAPS and sometimes on the <b>pInfo</b> member). </p>
-
-<p>The data that is returned by the <i>GetCaps(D3D10_2)</i> function in the <b>pData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541887">D3D10_2DDIARG_GETCAPS</a> structure depends on the type of data that is requested (that is, the data depends on the <b>Type</b> member of D3D10_2DDIARG_GETCAPS and sometimes on the <b>pInfo</b> member). </p>
+<p>The data that is returned by the <i>GetCaps(D3D10_2)</i> function in the <b>pData</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-2ddiarg-getcaps.md">D3D10_2DDIARG_GETCAPS</a> structure depends on the type of data that is requested (that is, the data depends on the <b>Type</b> member of D3D10_2DDIARG_GETCAPS and sometimes on the <b>pInfo</b> member). </p>
 
 ## -requirements
 <table>
@@ -120,10 +118,10 @@ HRESULT APIENTRY GetCaps(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541900">D3D10_2DDI_ADAPTERFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-2ddi-adapterfuncs.md">D3D10_2DDI_ADAPTERFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541887">D3D10_2DDIARG_GETCAPS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-2ddiarg-getcaps.md">D3D10_2DDIARG_GETCAPS</a>
 </dt>
 </dl>
 <p> </p>

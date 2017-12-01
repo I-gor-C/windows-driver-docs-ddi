@@ -7,7 +7,7 @@ old-location: netvista\ndissynchronousoidrequest.htm
 old-project: netvista
 ms.assetid: BF539DDA-59ED-4010-88BC-3C7D8DC475EF
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisSynchronousOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,14 +58,14 @@ NDIS_STATUS NdisSynchronousOidRequest(
 ### -param <i>NdisBindingHandle</i> [in]
 
 <dd>
-<p>The handle returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function that identifies the target miniport adapter on the binding.</p>
+<p>The handle returned by the <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function that identifies the target miniport adapter on the binding.</p>
 </dd>
 
 ### -param <i>OidRequest</i> [in]
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure that specifies
      the operation that is requested with a given OID_<i>Xxx</i> code. The structure can specify an OID query, set, or method request.</p>
 </dd>
 </dl>
@@ -78,7 +78,7 @@ NDIS_STATUS NdisSynchronousOidRequest(
 <dt><b>NDIS_STATUS_INVALID_OID</b></dt>
 </dl><p>The OID_<i>Xxx</i> code that was specified in the 
        <b>Oid</b> member of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>-structured buffer at 
+       <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>-structured buffer at 
        <i>OidRequest</i> was invalid or unsupported by the underlying driver.</p><dl>
 <dt><b>NDIS_STATUS_INVALID_LENGTH or NDIS_STATUS_BUFFER_TOO_SHORT</b></dt>
 </dl><p>The value that was specified in the 
@@ -117,14 +117,7 @@ NDIS_STATUS NdisSynchronousOidRequest(
 <p> </p>
 
 ## -remarks
-<p>The <b>NdisSynchronousOidRequest</b> function cannot be used for general OID requests. For general OID requests, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a> function instead. <b>NdisSynchronousOidRequest</b> can be used only for OIDs that NDIS supports for use with the Synchronous OID interface. Most protocol drivers do not need to call <b>NdisSynchronousOidRequest</b></p>
-
-<p>Protocol drivers must not close the adapter binding until any Synchronous OID requests originated by the protocol driver are completed.
-</p>
-
-<p>Protocol drivers are not required to implement <a href="..\ndis\nc-ndis-protocol-oid-request-complete.md">ProtocolOidRequestComplete</a> or <a href="..\ndis\nc-ndis-protocol-direct-oid-request-complete.md">ProtocolDirectOidRequestComplete</a> in order to call <b>NdisSynchronousOidRequest</b>. As its name suggests, a Synchronous OID request always completes synchronously, so there is no asynchronous callback.</p>
-
-<p>The <b>NdisSynchronousOidRequest</b> function cannot be used for general OID requests. For general OID requests, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a> function instead. <b>NdisSynchronousOidRequest</b> can be used only for OIDs that NDIS supports for use with the Synchronous OID interface. Most protocol drivers do not need to call <b>NdisSynchronousOidRequest</b></p>
+<p>The <b>NdisSynchronousOidRequest</b> function cannot be used for general OID requests. For general OID requests, use the <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a> function instead. <b>NdisSynchronousOidRequest</b> can be used only for OIDs that NDIS supports for use with the Synchronous OID interface. Most protocol drivers do not need to call <b>NdisSynchronousOidRequest</b></p>
 
 <p>Protocol drivers must not close the adapter binding until any Synchronous OID requests originated by the protocol driver are completed.
 </p>
@@ -184,13 +177,13 @@ NDIS_STATUS NdisSynchronousOidRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-oid-request-complete.md">ProtocolOidRequestComplete</a>
@@ -204,4 +197,4 @@ NDIS_STATUS NdisSynchronousOidRequest(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSynchronousOidRequest function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisSynchronousOidRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

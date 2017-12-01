@@ -64,7 +64,7 @@ typedef struct _MSiSCSI_PortalInfoClass {
 ### -field <b>PortalInformation</b>
 
 <dd>
-<p>A variable length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561557">ISCSI_PortalInfo</a> structures. The number of elements in the array is specified by the <b>PortalInfoCount</b> field.</p>
+<p>A variable length array of <a href="..\iscsimgt\ns-iscsimgt--iscsi-portalinfo.md">ISCSI_PortalInfo</a> structures. The number of elements in the array is specified by the <b>PortalInfoCount</b> field.</p>
 </dd>
 </dl>
 
@@ -88,10 +88,10 @@ typedef struct _MSiSCSI_PortalInfoClass {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561557">ISCSI_PortalInfo</a>
+<a href="..\iscsimgt\ns-iscsimgt--iscsi-portalinfo.md">ISCSI_PortalInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563100">MSiSCSI_PortalInfoClass WMI Class</a>
+<a href="storage.msiscsi_portalinfoclass_wmi_class">MSiSCSI_PortalInfoClass WMI Class</a>
 </dt>
 </dl>
 <p> </p>

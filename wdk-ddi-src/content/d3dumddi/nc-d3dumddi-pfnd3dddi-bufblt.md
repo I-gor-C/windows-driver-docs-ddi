@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY BufBlt(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542890">D3DDDIARG_BUFFERBLT</a> structure that describes the parameters of the buffer bitblt operation.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-bufferblt.md">D3DDDIARG_BUFFERBLT</a> structure that describes the parameters of the buffer bitblt operation.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ __checkReturn HRESULT APIENTRY BufBlt(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542890">D3DDDIARG_BUFFERBLT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-bufferblt.md">D3DDDIARG_BUFFERBLT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

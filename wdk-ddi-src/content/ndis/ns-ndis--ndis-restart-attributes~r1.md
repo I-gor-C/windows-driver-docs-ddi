@@ -7,7 +7,7 @@ old-location: netvista\ndis_restart_attributes.htm
 old-project: netvista
 ms.assetid: 1f9f4b91-bd1f-4daa-ac98-6372bf55c2ab
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_RESTART_ATTRIBUTES, NDIS_RESTART_ATTRIBUTES, *PNDIS_RESTART_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -123,7 +123,7 @@ typedef struct _NDIS_RESTART_ATTRIBUTES {
     <a href="..\ndis\ns-ndis--net-pnp-event-notification.md">
     NET_PNP_EVENT_NOTIFICATION</a> structure, that NDIS passes to 
     <i>ProtocolNetPnPEvent</i>, contains a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568751">NET_PNP_EVENT</a> structure. The NET_PNP_EVENT
+    <a href="..\ndis\ns-ndis--net-pnp-event.md">NET_PNP_EVENT</a> structure. The NET_PNP_EVENT
     structure specifies 
     <b>NetEventRestart</b> in the 
     <b>NetEvent</b> member and a pointer to the NDIS_PROTOCOL_RESTART_PARAMETERS structure in the 
@@ -186,7 +186,7 @@ typedef struct _NDIS_RESTART_ATTRIBUTES {
    NDIS_RESTART_GENERAL_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568752">NET_PNP_EVENT_NOTIFICATION</a>
+<a href="..\ndis\ns-ndis--net-pnp-event-notification.md">NET_PNP_EVENT_NOTIFICATION</a>
 </dt>
 <dt>
 <a href="netvista.oid_gen_miniport_restart_attributes">
@@ -198,4 +198,4 @@ typedef struct _NDIS_RESTART_ATTRIBUTES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RESTART_ATTRIBUTES structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RESTART_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

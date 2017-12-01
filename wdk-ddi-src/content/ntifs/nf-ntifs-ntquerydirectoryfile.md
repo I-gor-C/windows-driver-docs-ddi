@@ -7,7 +7,7 @@ old-location: kernel\zwquerydirectoryfile.htm
 old-project: kernel
 ms.assetid: 47e88095-fab3-4fa2-814e-db04ce864e7e
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: NtQueryDirectoryFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ NTSTATUS ZwQueryDirectoryFile(
 ### -param <i>FileHandle</i> [in]
 
 <dd>
-<p>A handle returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567011">ZwOpenFile</a> for the file object that represents the directory for which information is being requested. The file object must have been opened for asynchronous I/O if the caller specifies a non-<b>NULL</b> value for <i>Event</i> or <i>ApcRoutine</i>.</p>
+<p>A handle returned by <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a> for the file object that represents the directory for which information is being requested. The file object must have been opened for asynchronous I/O if the caller specifies a non-<b>NULL</b> value for <i>Event</i> or <i>ApcRoutine</i>.</p>
 </dd>
 
 ### -param <i>Event</i> [in, optional]
@@ -92,7 +92,7 @@ NTSTATUS ZwQueryDirectoryFile(
 ### -param <i>IoStatusBlock</i> [out]
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation. For successful calls that return data, the number of bytes written to the <i>FileInformation</i> buffer is returned in the structure's <b>Information</b> member.</p>
+<p>A pointer to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation. For successful calls that return data, the number of bytes written to the <i>FileInformation</i> buffer is returned in the structure's <b>Information</b> member.</p>
 </dd>
 
 ### -param <i>FileInformation</i> [out]
@@ -121,7 +121,7 @@ NTSTATUS ZwQueryDirectoryFile(
 <p><b>FileBothDirectoryInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540235">FILE_BOTH_DIR_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-both-dir-information.md">FILE_BOTH_DIR_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -129,7 +129,7 @@ NTSTATUS ZwQueryDirectoryFile(
 <p><b>FileDirectoryInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540248">FILE_DIRECTORY_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-directory-information.md">FILE_DIRECTORY_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -137,7 +137,7 @@ NTSTATUS ZwQueryDirectoryFile(
 <p><b>FileFullDirectoryInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540289">FILE_FULL_DIR_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-full-dir-information.md">FILE_FULL_DIR_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -145,7 +145,7 @@ NTSTATUS ZwQueryDirectoryFile(
 <p><b>FileIdBothDirectoryInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540303">FILE_ID_BOTH_DIR_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-id-both-dir-information.md">FILE_ID_BOTH_DIR_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -153,7 +153,7 @@ NTSTATUS ZwQueryDirectoryFile(
 <p><b>FileIdFullDirectoryInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540310">FILE_ID_FULL_DIR_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-id-full-dir-information.md">FILE_ID_FULL_DIR_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -161,7 +161,7 @@ NTSTATUS ZwQueryDirectoryFile(
 <p><b>FileNamesInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540329">FILE_NAMES_INFORMATION</a> structure for each file.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-names-information.md">FILE_NAMES_INFORMATION</a> structure for each file.</p>
 </td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ NTSTATUS ZwQueryDirectoryFile(
 <p><b>FileObjectIdInformation</b></p>
 </td>
 <td>
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540335">FILE_OBJECTID_INFORMATION</a> structure for each file. This information class is valid only for NTFS volumes on Windows 2000 and later versions of Windows.</p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-objectid-information.md">FILE_OBJECTID_INFORMATION</a> structure for each file. This information class is valid only for NTFS volumes on Windows 2000 and later versions of Windows.</p>
 </td>
 </tr>
 <tr>
@@ -177,7 +177,7 @@ NTSTATUS ZwQueryDirectoryFile(
 <p><b>FileReparsePointInformation</b></p>
 </td>
 <td>
-<p>Return a single <a href="https://msdn.microsoft.com/library/windows/hardware/ff540354">FILE_REPARSE_POINT_INFORMATION</a> structure for the directory.</p>
+<p>Return a single <a href="..\ntifs\ns-ntifs--file-reparse-point-information.md">FILE_REPARSE_POINT_INFORMATION</a> structure for the directory.</p>
 </td>
 </tr>
 </table>
@@ -240,41 +240,7 @@ NTSTATUS ZwQueryDirectoryFile(
 
 <p>Callers of <b>ZwQueryDirectoryFile</b> must be running at IRQL = PASSIVE_LEVEL and <a href="https://msdn.microsoft.com/0578df31-1467-4bad-ba62-081d61278deb">with special kernel APCs enabled</a>.</p>
 
-<p>For information about other file information query routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545843">File Objects</a>.</p>
-
-<p>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.</p>
-
-<p>The <b>ZwQueryDirectoryFile</b> routine returns information about files that are contained in the directory represented by <i>FileHandle</i>.</p>
-
-<p>If provided, the value of the <i>FileName</i> parameter determines the entries that are included in the directory scan for all subsequent calls to <b>ZwQueryDirectoryFile</b> for a given <i>FileHandle</i>.</p>
-
-<p>If there is at least one matching entry, <b>ZwQueryDirectoryFile</b> creates a <b>FILE_<i>XXX</i>_INFORMATION</b> structure for each entry and stores them in the buffer.</p>
-
-<p>Assuming that at least one matching directory entry is found, the number of entries for which information is returned is the <i>smallest</i> of the following:</p>
-
-<p>One entry, if <i>ReturnSingleEntry</i> is <b>TRUE</b> and <i>FileName</i> is <b>NULL</b>.</p>
-
-<p>The number of entries that match the <i>FileName</i> string, if <i>FileName</i> is not <b>NULL</b>. (Note that if the string contains no wildcards, there can be at most one matching entry.)</p>
-
-<p>The number of entries whose information fits into the specified buffer.</p>
-
-<p>The number of entries contained in the directory.</p>
-
-<p>On the first call to <b>ZwQueryDirectoryFile</b>, if the structure created for the first entry found is too large to fit into the output buffer, the routine writes the fixed portion of the structure to the output buffer. The routine then writes to the output buffer as much of the <i>FileName</i> string as will fit. (The fixed portion of the structure consists of all fields except the final <i>FileName</i> string. On the first call, but not on subsequent calls, the I/O system ensures that the buffer is large enough to hold the fixed portion of the appropriate <b>FILE_<i>XXX</i>_INFORMATION</b> structure.) When this happens, <b>ZwQueryDirectoryFile</b> returns an appropriate status value such as STATUS_BUFFER_OVERFLOW.</p>
-
-<p>On each call, <b>ZwQueryDirectoryFile</b> returns as many <b>FILE_<i>XXX</i>_INFORMATION</b> structures (one per directory entry) as can be contained entirely in the buffer pointed to by <i>FileInformation</i>. On the first call, <b>ZwQueryDirectoryFile</b> returns STATUS_SUCCESS only if the output buffer contains at least one complete structure. On subsequent calls, if the output buffer contains no structures, <b>ZwQueryDirectoryFile</b> returns STATUS_SUCCESS but sets <i>IoStatusBlock</i>-&gt;<b>Information</b> = 0 to notify the caller of this condition. In this case, the caller should allocate a larger buffer and call <b>ZwQueryDirectoryFile</b> again. No information about any remaining entries is reported. Thus, except in the cases listed above where only one entry is returned, <b>ZwQueryDirectoryFile</b> must be called at least twice to enumerate the contents of an entire directory.</p>
-
-<p>When calling <b>ZwQueryDirectoryFile</b>, you may see changes made to the directory that occur in parallel with <b>ZwQueryDirectoryFile</b> calls.  This behavior is dependent on the implementation of the underlying file system.</p>
-
-<p>The final call to <b>ZwQueryDirectoryFile</b> returns an empty output buffer and reports an appropriate status value such as STATUS_NO_MORE_FILES.</p>
-
-<p>If <b>ZwQueryDirectoryFile</b> is called multiple times on the same directory and some other operation changes the contents of that directory, any changes may or may not be seen, depending on the timing of the operations.</p>
-
-<p><b>ZwQueryDirectoryFile</b>returns zero in any member of a <b>FILE_<i>XXX</i>_INFORMATION</b> structure that is not supported by the file system.</p>
-
-<p>Callers of <b>ZwQueryDirectoryFile</b> must be running at IRQL = PASSIVE_LEVEL and <a href="https://msdn.microsoft.com/0578df31-1467-4bad-ba62-081d61278deb">with special kernel APCs enabled</a>.</p>
-
-<p>For information about other file information query routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545843">File Objects</a>.</p>
+<p>For information about other file information query routines, see <a href="kernel.file_objects">File Objects</a>.</p>
 
 <p>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.</p>
 
@@ -341,7 +307,7 @@ NTSTATUS ZwQueryDirectoryFile(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -349,42 +315,42 @@ NTSTATUS ZwQueryDirectoryFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540235">FILE_BOTH_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-both-dir-information.md">FILE_BOTH_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540248">FILE_DIRECTORY_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-directory-information.md">FILE_DIRECTORY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540289">FILE_FULL_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-full-dir-information.md">FILE_FULL_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540303">FILE_ID_BOTH_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-id-both-dir-information.md">FILE_ID_BOTH_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540310">FILE_ID_FULL_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-id-full-dir-information.md">FILE_ID_FULL_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540329">FILE_NAMES_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-names-information.md">FILE_NAMES_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540335">FILE_OBJECTID_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-objectid-information.md">FILE_OBJECTID_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540354">FILE_REPARSE_POINT_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-reparse-point-information.md">FILE_REPARSE_POINT_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567011">ZwOpenFile</a>
+<a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryDirectoryFile routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryDirectoryFile routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

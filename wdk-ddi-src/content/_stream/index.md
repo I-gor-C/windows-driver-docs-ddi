@@ -420,6 +420,7 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [PCOMMAND_COMPLETE_FUNCTION callback](..\usbcamdi\nc-usbcamdi-pcommand-complete-function.md) | A camera minidriver's CommandCompleteFunction callback function allows the camera minidriver to perform any additional tasks necessary to complete certain USBCAMD services |
 | [PFNALLOCATOR_ALLOCATEFRAME callback](..\ks\nc-ks-pfnallocator-allocateframe.md) | The KStrAllocateFrame routine describes a vendor-supplied frame allocation function. |
 | [PFNALLOCATOR_FREEFRAME callback](..\ks\nc-ks-pfnallocator-freeframe.md) | The KStrFreeFrame routine describes a vendor-supplied frame deallocation function. |
+| [PFNAVCINTERSECTHANDLER callback](..\avc\nc-avc-pfnavcintersecthandler.md) | The AV/C intersect handler determines if the data ranges are compatible. |
 | [PFNDEREFERENCEDEVICEOBJECT callback](..\ks\nc-ks-pfndereferencedeviceobject.md) | The driver can use this routine to decrement the reference count of the PDO. |
 | [PFNKSADDEVENT callback](..\ks\nc-ks-pfnksaddevent.md) | An AVStream minidriver's AVStrMiniAddEvent routine is called when a client registers to be notified of an event. This routine is optional. |
 | [PFNKSALLOCATOR callback](..\ks\nc-ks-pfnksallocator.md) | Minidrivers can optionally supply a callback function of type PFNKSALLOCATOR as a parameter in calls to KsEnableEventWithAllocator, KsPropertyHandlerWithAllocator, and KsMethodHandlerWithAllocator. |

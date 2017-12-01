@@ -7,7 +7,7 @@ old-location: kernel\rtllongptrtochar.htm
 old-project: kernel
 ms.assetid: 9DB98A1F-F820-4182-A22D-1C759A0F8F72
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlLongPtrToChar
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -68,7 +68,7 @@ typedef struct _HID_MINIDRIVER_REGISTRATION {
 ### -field <b>DriverObject</b>
 
 <dd>
-<p>Pointer to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>.</p>
+<p>Pointer to the minidriver's <a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>.</p>
 </dd>
 
 ### -field <b>RegistryPath</b>
@@ -97,7 +97,7 @@ typedef struct _HID_MINIDRIVER_REGISTRATION {
 </dl>
 
 ## -remarks
-<p>When a HID minidriver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff539835">HidRegisterMinidriver</a>, it uses this structure to pass information to the HID class driver. The minidriver must must zero-initialize this structure before setting members. A minidriver sets the members <b>DriverObject</b> and <b>RegistryPath</b> to the driver object and registry path parameters that are passed to the minidriver as system-supplied parameters to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. <b>Revision</b> should be set to HID_REVISION.</p>
+<p>When a HID minidriver calls <a href="..\hidport\nf-hidport-hidregisterminidriver.md">HidRegisterMinidriver</a>, it uses this structure to pass information to the HID class driver. The minidriver must must zero-initialize this structure before setting members. A minidriver sets the members <b>DriverObject</b> and <b>RegistryPath</b> to the driver object and registry path parameters that are passed to the minidriver as system-supplied parameters to its <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. <b>Revision</b> should be set to HID_REVISION.</p>
 
 ## -requirements
 <table>
@@ -116,10 +116,10 @@ typedef struct _HID_MINIDRIVER_REGISTRATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>
+<a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539835">HidRegisterMinidriver</a>
+<a href="..\hidport\nf-hidport-hidregisterminidriver.md">HidRegisterMinidriver</a>
 </dt>
 </dl>
 <p> </p>

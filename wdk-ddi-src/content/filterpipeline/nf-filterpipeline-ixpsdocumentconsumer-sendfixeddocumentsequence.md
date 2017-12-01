@@ -65,9 +65,7 @@ HRESULT SendFixedDocumentSequence(
 <p><code>SendFixedDocumentSequence</code> returns an <b>HRESULT</b> value.</p>
 
 ## -remarks
-<p>Only one <a href="https://msdn.microsoft.com/library/windows/hardware/ff550972">IFixedDocumentSequence</a> interface can be sent. The <code>SendFixedDocumentSequence</code> method will fail if a filter submits more than one such interface for the same print job.</p>
-
-<p>Only one <a href="https://msdn.microsoft.com/library/windows/hardware/ff550972">IFixedDocumentSequence</a> interface can be sent. The <code>SendFixedDocumentSequence</code> method will fail if a filter submits more than one such interface for the same print job.</p>
+<p>Only one <a href="print.ifixeddocumentsequence">IFixedDocumentSequence</a> interface can be sent. The <code>SendFixedDocumentSequence</code> method will fail if a filter submits more than one such interface for the same print job.</p>
 
 ## -requirements
 <table>

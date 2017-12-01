@@ -68,8 +68,6 @@ PVOID VideoPortGetAssociatedDeviceExtension(
 ## -remarks
 <p>The miniport driver of a child device can call this function to obtain a description of its parent through the parent's device extension.</p>
 
-<p>The miniport driver of a child device can call this function to obtain a description of its parent through the parent's device extension.</p>
-
 ## -requirements
 <table>
 <tr>

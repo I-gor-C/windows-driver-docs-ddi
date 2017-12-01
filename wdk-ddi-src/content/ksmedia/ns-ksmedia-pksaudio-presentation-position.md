@@ -7,7 +7,7 @@ old-location: audio\ksaudio_presentation_position.htm
 old-project: audio
 ms.assetid: 6C9F2E99-17B4-49AD-A94F-E3EF9282B649
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PKSAUDIO_PRESENTATION_POSITION, KSAUDIO_PRESENTATION_POSITION, *PKSAUDIO_PRESENTATION_POSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -105,7 +105,7 @@ typedef struct _KSAUDIO_PRESENTATION_POSITION {
 <dl>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff553053(v=vs.85).aspx">KeQueryPerformanceCounter</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450865">KSAUDIO_PRESENTATION_POSITION</a>
+<a href="audio.ksaudio_presentation_position">KSAUDIO_PRESENTATION_POSITION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450895">KSPROPERTY_AUDIO_PRESENTATION_POSITION</a>
@@ -113,4 +113,4 @@ typedef struct _KSAUDIO_PRESENTATION_POSITION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSAUDIO_PRESENTATION_POSITION structure%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSAUDIO_PRESENTATION_POSITION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

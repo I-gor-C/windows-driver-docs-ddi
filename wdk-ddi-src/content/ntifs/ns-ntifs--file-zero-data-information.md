@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>Contains a range of a file to set to zeros. This structure is used by the 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt668765">FSCTL_SET_ZERO_DATA</a> control code. </p>
+<a href="ifsk.fsctl_set_zero_data">FSCTL_SET_ZERO_DATA</a> control code. </p>
 
 
 ## -syntax
@@ -105,13 +105,13 @@ typedef struct _FILE_ZERO_DATA_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542988">FltFsControlFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltfscontrolfile.md">FltFsControlFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt668765">FSCTL_SET_ZERO_DATA</a>
+<a href="ifsk.fsctl_set_zero_data">FSCTL_SET_ZERO_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt668764">FILE_ZERO_DATA_INFORMATION_EX</a>
+<a href="..\ntifs\ns-ntifs--file-zero-data-information-ex.md">FILE_ZERO_DATA_INFORMATION_EX</a>
 </dt>
 </dl>
 <p> </p>

@@ -127,7 +127,7 @@ typedef struct D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createshaderresourceview.md">CreateShaderResourceView(D3D11)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542073">D3D11DDIARG_CREATESHADERRESOURCEVIEW</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createshaderresourceview.md">D3D11DDIARG_CREATESHADERRESOURCEVIEW</a>
 </dt>
 </dl>
 <p> </p>

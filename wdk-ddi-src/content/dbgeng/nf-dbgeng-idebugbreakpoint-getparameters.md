@@ -7,7 +7,7 @@ old-location: debugger\getparameters.htm
 old-project: debugger
 ms.assetid: 6b0e2a3d-2a62-4a79-a4e1-03168277caec
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugBreakpoint, GetParameters, IDebugBreakpoint::GetParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ HRESULT GetParameters(
 ### -param <i>Params</i> [out]
 
 <dd>
-<p>The breakpoint's parameters.  For more information about the parameters, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541459">DEBUG_BREAKPOINT_PARAMETERS</a>.</p>
+<p>The breakpoint's parameters.  For more information about the parameters, see <a href="..\dbgeng\ns-dbgeng--debug-breakpoint-parameters.md">DEBUG_BREAKPOINT_PARAMETERS</a>.</p>
 </dd>
 </dl>
 
@@ -71,11 +71,7 @@ HRESULT GetParameters(
 <p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
 
 ## -remarks
-<p>The <b>GetParameters</b> method is a convenience method that returns most of the parameters that the other <a href="https://msdn.microsoft.com/library/windows/hardware/ff549812">IDebugBreakpoint</a> methods return.</p>
-
-<p>For a list of the parameters and flags that this method retrieves, and for other ways to read and write these parameters and flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.</p>
-
-<p>The <b>GetParameters</b> method is a convenience method that returns most of the parameters that the other <a href="https://msdn.microsoft.com/library/windows/hardware/ff549812">IDebugBreakpoint</a> methods return.</p>
+<p>The <b>GetParameters</b> method is a convenience method that returns most of the parameters that the other <a href="..\dbgeng\nn-dbgeng-idebugbreakpoint.md">IDebugBreakpoint</a> methods return.</p>
 
 <p>For a list of the parameters and flags that this method retrieves, and for other ways to read and write these parameters and flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.</p>
 

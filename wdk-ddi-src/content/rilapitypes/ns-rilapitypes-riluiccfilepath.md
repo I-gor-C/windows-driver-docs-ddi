@@ -7,7 +7,7 @@ old-location: netvista\riluiccfilepath_2.htm
 old-project: netvista
 ms.assetid: d0321907-0a3c-43cc-97f1-a3a7e9b84311
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCFILEPATH, RILUICCFILEPATH
 ms.prod: windows-hardware
 ms.technology: windows-devices

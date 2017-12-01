@@ -89,7 +89,7 @@ typedef struct _DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560854">DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-connected-hdcp-device-information.md">DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

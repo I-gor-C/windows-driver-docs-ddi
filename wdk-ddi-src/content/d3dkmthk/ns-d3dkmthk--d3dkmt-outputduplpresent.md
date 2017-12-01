@@ -93,13 +93,13 @@ typedef struct _D3DKMT_OUTPUTDUPLPRESENT {
 ### -field <b>PresentRegions</b>
 
 <dd>
-<p>[in] Dirty and move regions, of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh406550">D3DKMT_PRESENT_RGNS</a>.</p>
+<p>[in] Dirty and move regions, of type <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present-rgns.md">D3DKMT_PRESENT_RGNS</a>.</p>
 </dd>
 
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A bitwise-OR combination of values from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406511">D3DKMT_OUTPUTDUPLPRESENTFLAGS</a> enumeration that describe options for the present operation.</p>
+<p>[in] A bitwise-OR combination of values from the <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-outputduplpresentflags.md">D3DKMT_OUTPUTDUPLPRESENTFLAGS</a> enumeration that describe options for the present operation.</p>
 </dd>
 </dl>
 
@@ -139,10 +139,10 @@ typedef struct _D3DKMT_OUTPUTDUPLPRESENT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406511">D3DKMT_OUTPUTDUPLPRESENTFLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-outputduplpresentflags.md">D3DKMT_OUTPUTDUPLPRESENTFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406550">D3DKMT_PRESENT_RGNS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present-rgns.md">D3DKMT_PRESENT_RGNS</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookemailaddress_2.htm
 old-project: netvista
 ms.assetid: 322939c8-c7c9-405b-9f78-08ae9c642b42
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILPHONEBOOKEMAILADDRESS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

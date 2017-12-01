@@ -7,7 +7,7 @@ old-location: kernel\psinsertsilocontext.htm
 old-project: kernel
 ms.assetid: 31C7A629-3B5E-44BA-AE03-3331E3200FC6
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PsInsertSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,13 +65,13 @@ NTSTATUS PsInsertSiloContext(
 ### -param <i>ContextSlot</i> [in]
 
 <dd>
-<p>A slot allocated by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt735056">PsAllocSiloContextSlot</a> routine. </p>
+<p>A slot allocated by the <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine. </p>
 </dd>
 
 ### -param <i>SiloContext</i> [in]
 
 <dd>
-<p>A pointer to the object created by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt735058">PsCreateSiloContext</a> routine. The object must be created using the same silo pointer as the one specified in this routine. This parameter is required and it cannot be <b>NULL</b>. </p>
+<p>A pointer to the object created by the <a href="..\ntddk\nf-ntddk-pscreatesilocontext.md">PsCreateSiloContext</a> routine. The object must be created using the same silo pointer as the one specified in this routine. This parameter is required and it cannot be <b>NULL</b>. </p>
 </dd>
 </dl>
 

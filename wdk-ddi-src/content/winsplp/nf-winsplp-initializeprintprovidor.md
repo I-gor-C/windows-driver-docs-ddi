@@ -58,7 +58,7 @@ BOOL InitializePrintProvidor(
 ### -param <i>pPrintProvidor</i> [out]
 
 <dd>
-<p>Caller-supplied address of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560993">PRINTPROVIDOR</a> structure, to be filled in by the print provider.</p>
+<p>Caller-supplied address of a <a href="..\winsplp\ns-winsplp--printprovidor.md">PRINTPROVIDOR</a> structure, to be filled in by the print provider.</p>
 </dd>
 
 ### -param <i>cbPrintProvidor</i> [in]
@@ -78,9 +78,7 @@ BOOL InitializePrintProvidor(
 <p>If the operation succeeds, the function should return <b>TRUE</b>. Otherwise the function should return <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Print providers are required to define an <b>InitializePrintProvidor</b> function, which is the first function called by the spooler after the provider has been loaded. The function must fill the supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff560993">PRINTPROVIDOR</a> structure with pointers to the provider's defined functions (see <a href="NULL">Functions Defined by Print Providers</a>). The function can also perform other provider-specific initialization operations.</p>
-
-<p>Print providers are required to define an <b>InitializePrintProvidor</b> function, which is the first function called by the spooler after the provider has been loaded. The function must fill the supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff560993">PRINTPROVIDOR</a> structure with pointers to the provider's defined functions (see <a href="NULL">Functions Defined by Print Providers</a>). The function can also perform other provider-specific initialization operations.</p>
+<p>Print providers are required to define an <b>InitializePrintProvidor</b> function, which is the first function called by the spooler after the provider has been loaded. The function must fill the supplied <a href="..\winsplp\ns-winsplp--printprovidor.md">PRINTPROVIDOR</a> structure with pointers to the provider's defined functions (see <a href="NULL">Functions Defined by Print Providers</a>). The function can also perform other provider-specific initialization operations.</p>
 
 ## -requirements
 <table>
@@ -109,7 +107,7 @@ BOOL InitializePrintProvidor(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560993">PRINTPROVIDOR</a>
+<a href="..\winsplp\ns-winsplp--printprovidor.md">PRINTPROVIDOR</a>
 </dt>
 </dl>
 <p> </p>

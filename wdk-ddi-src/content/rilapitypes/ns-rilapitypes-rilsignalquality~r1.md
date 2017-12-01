@@ -7,7 +7,7 @@ old-location: netvista\rilsignalquality_2.htm
 old-project: netvista
 ms.assetid: cc5bf370-3996-46de-b27d-8a390a6f407e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSIGNALQUALITY,
 ms.prod: windows-hardware
 ms.technology: windows-devices

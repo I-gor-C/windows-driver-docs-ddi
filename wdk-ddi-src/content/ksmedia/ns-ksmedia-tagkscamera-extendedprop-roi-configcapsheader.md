@@ -7,7 +7,7 @@ old-location: stream\kscamera_extendedprop_roi_configcapsheader.htm
 old-project: stream
 ms.assetid: E915BF71-F29C-440B-9A56-50389AA8A9CF
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER {
 ### -field <b>Size</b>
 
 <dd>
-<p>The size of this header and all <a href="https://msdn.microsoft.com/library/windows/hardware/dn925154">KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS</a> structures that follow.</p>
+<p>The size of this header and all <a href="stream.kscamera_extendedprop_roi_configcaps">KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS</a> structures that follow.</p>
 </dd>
 
 ### -field <b>ConfigCapCount</b>

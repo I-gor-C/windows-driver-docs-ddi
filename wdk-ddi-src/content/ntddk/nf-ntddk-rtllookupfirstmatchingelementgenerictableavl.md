@@ -59,7 +59,7 @@ PVOID RtlLookupFirstMatchingElementGenericTableAvl(
 ### -param <i>Table</i> [in]
 
 <dd>
-<p>A pointer to the generic Adelson-Velsky/Landis (AVL) table (<a href="https://msdn.microsoft.com/library/windows/hardware/ff553327">RTL_AVL_TABLE</a>).</p>
+<p>A pointer to the generic Adelson-Velsky/Landis (AVL) table (<a href="..\ntddk\ns-ntddk--rtl-avl-table.md">RTL_AVL_TABLE</a>).</p>
 </dd>
 
 ### -param <i>Buffer</i> [in]
@@ -71,7 +71,7 @@ PVOID RtlLookupFirstMatchingElementGenericTableAvl(
 ### -param <i>RestartKey</i> [out]
 
 <dd>
-<p>On output, contains a search context to use with an enumeration routine, such as <a href="https://msdn.microsoft.com/library/windows/hardware/hh406462">RtlEnumerateGenericTableWithoutSplayingAvl</a>.</p>
+<p>On output, contains a search context to use with an enumeration routine, such as <a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplayingavl.md">RtlEnumerateGenericTableWithoutSplayingAvl</a>.</p>
 </dd>
 </dl>
 
@@ -79,17 +79,7 @@ PVOID RtlLookupFirstMatchingElementGenericTableAvl(
 <p>The <b>RtlLookupFirstMatchingElementGenericTableAvl</b>routine returns a pointer to the matched data, or <b>NULL</b> if no match was found.</p>
 
 ## -remarks
-<p>A tree that implements a generic table might contain several file names that differ only in case. A search algorithm can use this routine to locate the first match, without reference to case, and use an enumeration routine, such as <a href="https://msdn.microsoft.com/library/windows/hardware/hh406462">RtlEnumerateGenericTableWithoutSplayingAvl</a>, to return each subsequent match.</p>
-
-<p>By default, the operating system uses splay trees to implement generic tables, but the <b>RtlLookupFirstMatchingElementGenericTableAvl</b>routine only works with Adelson-Velsky/Landis (AVL) trees. Under some circumstances, operations on a splay tree will make the tree deep and narrow and might even turn it into a straight line. Very deep trees degrade the performance of searches. You can ensure a more balanced, shallower tree implementation of generic tables by using Adelson-Velsky/Landis (AVL) trees. If you want to configure the generic table routines to use AVL trees instead of splay trees in your driver, insert the following define statement in a common header file before including <i>Ntddk.h</i>:</p>
-
-<p>#define RTL_USE_AVL_TABLES 0</p>
-
-<p>If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic table routines. </p>
-
-<p>Callers of <b>RtlLookupFirstMatchingElementGenericTableAvl</b> must be running at &lt;= APC_LEVEL if either of the following conditions holds:</p>
-
-<p>A tree that implements a generic table might contain several file names that differ only in case. A search algorithm can use this routine to locate the first match, without reference to case, and use an enumeration routine, such as <a href="https://msdn.microsoft.com/library/windows/hardware/hh406462">RtlEnumerateGenericTableWithoutSplayingAvl</a>, to return each subsequent match.</p>
+<p>A tree that implements a generic table might contain several file names that differ only in case. A search algorithm can use this routine to locate the first match, without reference to case, and use an enumeration routine, such as <a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplayingavl.md">RtlEnumerateGenericTableWithoutSplayingAvl</a>, to return each subsequent match.</p>
 
 <p>By default, the operating system uses splay trees to implement generic tables, but the <b>RtlLookupFirstMatchingElementGenericTableAvl</b>routine only works with Adelson-Velsky/Landis (AVL) trees. Under some circumstances, operations on a splay tree will make the tree deep and narrow and might even turn it into a straight line. Very deep trees degrade the performance of searches. You can ensure a more balanced, shallower tree implementation of generic tables by using Adelson-Velsky/Landis (AVL) trees. If you want to configure the generic table routines to use AVL trees instead of splay trees in your driver, insert the following define statement in a common header file before including <i>Ntddk.h</i>:</p>
 
@@ -162,7 +152,7 @@ PVOID RtlLookupFirstMatchingElementGenericTableAvl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406462">RtlEnumerateGenericTableWithoutSplayingAvl</a>
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplayingavl.md">RtlEnumerateGenericTableWithoutSplayingAvl</a>
 </dt>
 </dl>
 <p> </p>

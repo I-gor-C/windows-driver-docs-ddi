@@ -72,7 +72,7 @@ typedef struct _D3DHAL_DP2CREATEPIXELSHADER {
 </dl>
 
 ## -remarks
-<p>The runtime generates a handle for this shader before calling the driver. The shader code itself follows the D3DHAL_DP2CREATEPIXELSHADER in the DP2 stream. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552855">Direct3D Driver Shader Codes</a> for information about the format of an individual shader code and the tokens that comprise each shader code. </p>
+<p>The runtime generates a handle for this shader before calling the driver. The shader code itself follows the D3DHAL_DP2CREATEPIXELSHADER in the DP2 stream. See <a href="display.direct3d_driver_shader_codes">Direct3D Driver Shader Codes</a> for information about the format of an individual shader code and the tokens that comprise each shader code. </p>
 
 <p>Before calling the driver, the runtime validates the pixel shader code to ensure that it is legal for the specified shader language version.</p>
 
@@ -99,7 +99,7 @@ typedef struct _D3DHAL_DP2CREATEPIXELSHADER {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545689">D3DHAL_DP2PIXELSHADER</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2pixelshader.md">D3DHAL_DP2PIXELSHADER</a>
 </dt>
 </dl>
 <p> </p>

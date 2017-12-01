@@ -74,19 +74,19 @@ typedef struct _STORAGE_DEVICE_UNIQUE_IDENTIFIER {
 ### -field <b>StorageDeviceIdOffset</b>
 
 <dd>
-<p>The offset, in bytes, from the beginning of the header to the device ID descriptor (<a href="https://msdn.microsoft.com/library/windows/hardware/ff566972">STORAGE_DEVICE_ID_DESCRIPTOR</a>). The device ID descriptor contains the IDs that are extracted from page 0x83 of the device's vital product data (VPD).</p>
+<p>The offset, in bytes, from the beginning of the header to the device ID descriptor (<a href="..\ntddstor\ns-ntddstor--storage-device-id-descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>). The device ID descriptor contains the IDs that are extracted from page 0x83 of the device's vital product data (VPD).</p>
 </dd>
 
 ### -field <b>StorageDeviceOffset</b>
 
 <dd>
-<p>The offset, in bytes, from the beginning of the header to the device descriptor (<a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a>). The device descriptor contains IDs that are extracted from non-VPD inquiry data.</p>
+<p>The offset, in bytes, from the beginning of the header to the device descriptor (<a href="..\ntddstor\ns-ntddstor--storage-device-descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>). The device descriptor contains IDs that are extracted from non-VPD inquiry data.</p>
 </dd>
 
 ### -field <b>DriveLayoutSignatureOffset</b>
 
 <dd>
-<p>The offset, in bytes, to the drive layout signature (<a href="https://msdn.microsoft.com/library/windows/hardware/ff566973">STORAGE_DEVICE_LAYOUT_SIGNATURE</a>).</p>
+<p>The offset, in bytes, to the drive layout signature (<a href="..\storduid\ns-storduid--storage-device-layout-signature.md">STORAGE_DEVICE_LAYOUT_SIGNATURE</a>).</p>
 </dd>
 </dl>
 
@@ -110,10 +110,10 @@ typedef struct _STORAGE_DEVICE_UNIQUE_IDENTIFIER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor--storage-device-descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566972">STORAGE_DEVICE_ID_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor--storage-device-id-descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

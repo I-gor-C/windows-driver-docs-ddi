@@ -66,7 +66,7 @@ typedef struct _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 {
 ### -field <b>pPlanes</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn914479">DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE</a> 
+<p>A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-plane-with-source.md">DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE</a> 
                                                                         structure that specifies support attributes that the hardware
                                                                         provides for multi-plane overlays.</p>
 </dd>
@@ -123,7 +123,7 @@ typedef struct _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 {
 <a href="display.dxgkddicheckmultiplaneoverlaysupport2">DxgkDdiCheckMultiPlaneOverlaySupport2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914479">DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-plane-with-source.md">DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE</a>
 </dt>
 </dl>
 <p> </p>

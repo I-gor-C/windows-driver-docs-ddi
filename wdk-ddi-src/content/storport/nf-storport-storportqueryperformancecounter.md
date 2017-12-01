@@ -131,7 +131,7 @@ ULONG StorPortQueryPerformanceCounter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567465">StorPortQuerySystemTime</a>
+<a href="..\storport\nf-storport-storportquerysystemtime.md">StorPortQuerySystemTime</a>
 </dt>
 </dl>
 <p> </p>

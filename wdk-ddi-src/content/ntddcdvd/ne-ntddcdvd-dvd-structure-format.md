@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DVD_STRUCTURE_FORMAT enumeration type is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560426">IOCTL_DVD_READ_STRUCTURE</a> request and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553738">DVD_READ_STRUCTURE</a> structure to retrieve a DVD descriptor.</p>
+<p>The DVD_STRUCTURE_FORMAT enumeration type is used in conjunction with the <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-dvd-read-structure.md">IOCTL_DVD_READ_STRUCTURE</a> request and the <a href="..\ntddcdvd\ns-ntddcdvd-dvd-read-structure.md">DVD_READ_STRUCTURE</a> structure to retrieve a DVD descriptor.</p>
 
 
 ## -syntax
@@ -116,10 +116,10 @@ typedef enum DVD_STRUCTURE_FORMAT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553738">DVD_READ_STRUCTURE</a>
+<a href="..\ntddcdvd\ns-ntddcdvd-dvd-read-structure.md">DVD_READ_STRUCTURE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560426">IOCTL_DVD_READ_STRUCTURE</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-dvd-read-structure.md">IOCTL_DVD_READ_STRUCTURE</a>
 </dt>
 </dl>
 <p> </p>

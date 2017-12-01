@@ -7,7 +7,7 @@ old-location: netvista\rilcallbarringstatusparamsstatus.htm
 old-project: netvista
 ms.assetid: aff61006-8bc4-4916-9718-a852516fc4d2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

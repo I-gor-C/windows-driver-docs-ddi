@@ -7,7 +7,7 @@ old-location: netvista\net_buffer.htm
 old-project: netvista
 ms.assetid: 66a725f9-ae72-41b4-8840-63c9ff89ace7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NET_BUFFER, NET_BUFFER, *PNET_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ typedef struct _NET_BUFFER {
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568387">NET_BUFFER_HEADER</a> structure.</p>
+     <a href="..\ndis\ns-ndis--net-buffer-header.md">NET_BUFFER_HEADER</a> structure.</p>
 </dd>
 
 ### -field <b>ChecksumBias</b>
@@ -128,7 +128,7 @@ typedef struct _NET_BUFFER {
       NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_HEADER or
       NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_PAYLOAD flag is set in the 
       <b>NblFlags</b> member of the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that is
+      <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure that is
       associated with the NET_BUFFER.</p>
 <div class="alert"><b>Note</b>  A miniport driver can set the 
       <b>DataPhysicalAddress</b> member of the NET_BUFFER structure, even if the structure is not associated
@@ -156,7 +156,7 @@ typedef struct _NET_BUFFER {
 <p>NDIS drivers can call the following functions to allocate and initialize a NET_BUFFER structure:</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561607">NdisAllocateNetBuffer</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
 </p>
 
 <p>
@@ -168,8 +168,8 @@ typedef struct _NET_BUFFER {
     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
     NdisAllocateNetBufferListPool</a> function and then set the 
     <b>fAllocateNetBuffer</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh205394">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure to <b>TRUE</b> when allocating a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure pool. In this
+    <a href="..\ndis\ns-ndis--net-buffer-list-pool-parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure to <b>TRUE</b> when allocating a 
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure pool. In this
     case, a NET_BUFFER structure is preallocated with each NET_BUFFER_LIST structure that the driver
     allocates from the pool.</p>
 
@@ -194,59 +194,9 @@ typedef struct _NET_BUFFER {
     <b>ProtocolReserved</b> members of the NET_BUFFER structure to maintain NET_BUFFER structure context
     information.</p>
 
-<p>To access members of the NET_BUFFER structure, use the following macros and functions:</p><dl>
-<dd>
+<p>To access members of the NET_BUFFER structure, use the following macros and functions:</p>
+
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568416">NET_BUFFER_NEXT_NB</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568386">NET_BUFFER_FIRST_MDL</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568383">NET_BUFFER_DATA_OFFSET</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568382">NET_BUFFER_DATA_LENGTH</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568417">NET_BUFFER_PROTOCOL_RESERVED</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568415">NET_BUFFER_MINIPORT_RESERVED</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568378">NET_BUFFER_CHECKSUM_BIAS</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568379">NET_BUFFER_CURRENT_MDL</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="netvista.net_buffer_current_mdl_offset">
-       NET_BUFFER_CURRENT_MDL_OFFSET</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562657">NdisGetPoolFromNetBuffer</a>
-</p>
-</dd>
-</dl><p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568416">NET_BUFFER_NEXT_NB</a>
 </p>
 
@@ -284,7 +234,7 @@ typedef struct _NET_BUFFER {
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562657">NdisGetPoolFromNetBuffer</a>
+<a href="..\ndis\nf-ndis-ndisgetpoolfromnetbuffer.md">NdisGetPoolFromNetBuffer</a>
 </p>
 
 <p>For more information on how to use net buffers, see 
@@ -315,7 +265,7 @@ typedef struct _NET_BUFFER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561607">NdisAllocateNetBuffer</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
@@ -326,7 +276,7 @@ typedef struct _NET_BUFFER {
    NdisAllocateNetBufferListPool</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562657">NdisGetPoolFromNetBuffer</a>
+<a href="..\ndis\nf-ndis-ndisgetpoolfromnetbuffer.md">NdisGetPoolFromNetBuffer</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
@@ -359,13 +309,13 @@ typedef struct _NET_BUFFER {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568386">NET_BUFFER_FIRST_MDL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568387">NET_BUFFER_HEADER</a>
+<a href="..\ndis\ns-ndis--net-buffer-header.md">NET_BUFFER_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh205394">NET_BUFFER_LIST_POOL_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--net-buffer-list-pool-parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568415">NET_BUFFER_MINIPORT_RESERVED</a>
@@ -377,9 +327,9 @@ typedef struct _NET_BUFFER {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568417">NET_BUFFER_PROTOCOL_RESERVED</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563664">SCATTER_GATHER_LIST</a>
+<a href="..\wdm\ns-wdm--scatter-gather-list.md">SCATTER_GATHER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

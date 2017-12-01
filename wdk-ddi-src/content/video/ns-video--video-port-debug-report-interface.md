@@ -104,19 +104,19 @@ typedef struct _VIDEO_PORT_DEBUG_REPORT_INTERFACE {
 ### -field <b>DbgReportCreate</b>
 
 <dd>
-<p>Pointer to the video port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff549088">DbgReportCreate</a> function. </p>
+<p>Pointer to the video port driver's <a href="display.dbgreportcreate">DbgReportCreate</a> function. </p>
 </dd>
 
 ### -field <b>DbgReportSecondaryData</b>
 
 <dd>
-<p>Pointer to the video port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff549099">DbgReportSecondaryData</a> function. </p>
+<p>Pointer to the video port driver's <a href="display.dbgreportsecondarydata">DbgReportSecondaryData</a> function. </p>
 </dd>
 
 ### -field <b>DbgReportComplete</b>
 
 <dd>
-<p>Pointer to the video port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff549080">DbgReportComplete</a> function. </p>
+<p>Pointer to the video port driver's <a href="display.dbgreportcomplete">DbgReportComplete</a> function. </p>
 </dd>
 </dl>
 
@@ -127,7 +127,7 @@ typedef struct _VIDEO_PORT_DEBUG_REPORT_INTERFACE {
 
 <p>Windows XP SP2 and subsequent service packs</p>
 
-<p>The video miniport driver supplies the <b>Size</b> and <b>Version</b> members of this structure, and then calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff570337">VideoPortQueryServices</a>, which initializes the remaining members of this structure.</p>
+<p>The video miniport driver supplies the <b>Size</b> and <b>Version</b> members of this structure, and then calls <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>, which initializes the remaining members of this structure.</p>
 
 ## -requirements
 <table>
@@ -146,19 +146,19 @@ typedef struct _VIDEO_PORT_DEBUG_REPORT_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549088">DbgReportCreate</a>
+<a href="display.dbgreportcreate">DbgReportCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549099">DbgReportSecondaryData</a>
+<a href="display.dbgreportsecondarydata">DbgReportSecondaryData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549080">DbgReportComplete</a>
+<a href="display.dbgreportcomplete">DbgReportComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570337">VideoPortQueryServices</a>
+<a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a>
+<a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

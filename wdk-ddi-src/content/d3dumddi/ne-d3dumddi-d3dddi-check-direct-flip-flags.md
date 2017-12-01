@@ -100,7 +100,7 @@ typedef enum D3DDDI_CHECK_DIRECT_FLIP_FLAGS {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-checkdirectflipsupport.md">CheckDirectFlipSupport</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451172">D3DDDI_CHECK_DIRECT_FLIP_FLAGS</a>
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi-check-direct-flip-flags.md">D3DDDI_CHECK_DIRECT_FLIP_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

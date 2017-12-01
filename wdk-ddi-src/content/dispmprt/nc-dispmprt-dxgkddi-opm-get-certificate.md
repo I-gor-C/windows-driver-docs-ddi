@@ -69,7 +69,7 @@ NTSTATUS DxgkDdiOPMGetCertificate(
 ### -param <i>CertificateType</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560826">DXGKMDT_CERTIFICATE_TYPE</a>-typed value that identifies the type of certificate to retrieve.</p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--dxgkmdt-certificate-type.md">DXGKMDT_CERTIFICATE_TYPE</a>-typed value that identifies the type of certificate to retrieve.</p>
 </dd>
 
 ### -param <i>CertificateSize</i> [in]
@@ -103,10 +103,6 @@ NTSTATUS DxgkDdiOPMGetCertificate(
 <p>This function might also return other error codes that are defined in Ntstatus.h.</p>
 
 ## -remarks
-<p><i>DxgkDdiOPMGetCertificate</i> can retrieve the display miniport driver's OPM certificate, User Accessible Bus (UAB) certificate, or Certified Output Protection Protocol (COPP) certificate. For information about these certificates, download the Output Content Protection document from the <a href="http://go.microsoft.com/fwlink/p/?linkid=204788">Output Content Protection and Windows Vista</a> website.</p>
-
-<p><i>DxgkDdiOPMGetCertificate</i> should be made pageable.</p>
-
 <p><i>DxgkDdiOPMGetCertificate</i> can retrieve the display miniport driver's OPM certificate, User Accessible Bus (UAB) certificate, or Certified Output Protection Protocol (COPP) certificate. For information about these certificates, download the Output Content Protection document from the <a href="http://go.microsoft.com/fwlink/p/?linkid=204788">Output Content Protection and Windows Vista</a> website.</p>
 
 <p><i>DxgkDdiOPMGetCertificate</i> should be made pageable.</p>
@@ -152,7 +148,7 @@ NTSTATUS DxgkDdiOPMGetCertificate(
 <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-certificate-size.md">DxgkDdiOPMGetCertificateSize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560826">DXGKMDT_CERTIFICATE_TYPE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--dxgkmdt-certificate-type.md">DXGKMDT_CERTIFICATE_TYPE</a>
 </dt>
 </dl>
 <p> </p>

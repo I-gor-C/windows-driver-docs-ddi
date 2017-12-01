@@ -125,13 +125,13 @@ typedef struct _PARALLEL_INTERRUPT_SERVICE_ROUTINE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544020">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-connect-interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544021">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-disconnect-interrupt.md">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a>
+<a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

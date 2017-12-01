@@ -57,7 +57,7 @@ NTSTATUS D3DKMTLock(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548094">D3DKMT_LOCK</a> structure that describes parameters for locking an allocation.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-lock.md">D3DKMT_LOCK</a> structure that describes parameters for locking an allocation.</p>
 </dd>
 </dl>
 
@@ -81,10 +81,6 @@ NTSTATUS D3DKMTLock(
 <p>This function might also return other NTSTATUS values.</p>
 
 ## -remarks
-<p>The <b>D3DKMTLock</b> function is called to access system memory allocations and video memory allocations.</p>
-
-<p>The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTLock</b> to lock an entire allocation.</p>
-
 <p>The <b>D3DKMTLock</b> function is called to access system memory allocations and video memory allocations.</p>
 
 <p>The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTLock</b> to lock an entire allocation.</p>
@@ -144,7 +140,7 @@ NTSTATUS D3DKMTLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548094">D3DKMT_LOCK</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-lock.md">D3DKMT_LOCK</a>
 </dt>
 </dl>
 <p> </p>

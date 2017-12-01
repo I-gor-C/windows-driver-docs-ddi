@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetCHAPSharedSecret_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565585">SetCHAPSharedSecret</a> method.</p>
+<p>The SetCHAPSharedSecret_IN structure holds the input data for the <a href="storage.setchapsharedsecret">SetCHAPSharedSecret</a> method.</p>
 
 
 ## -syntax
@@ -88,10 +88,10 @@ typedef struct _SetCHAPSharedSecret_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565585">SetCHAPSharedSecret</a>
+<a href="storage.setchapsharedsecret">SetCHAPSharedSecret</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565600">SetCHAPSharedSecret_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--setchapsharedsecret-out.md">SetCHAPSharedSecret_OUT</a>
 </dt>
 </dl>
 <p> </p>

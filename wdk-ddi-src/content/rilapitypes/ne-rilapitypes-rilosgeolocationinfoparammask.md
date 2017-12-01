@@ -7,7 +7,7 @@ old-location: netvista\rilosgeolocationinfoparammask_2.htm
 old-project: netvista
 ms.assetid: cee22f5b-e8ae-4d44-90db-d4f5a8e35eec
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

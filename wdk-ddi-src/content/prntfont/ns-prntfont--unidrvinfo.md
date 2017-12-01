@@ -186,7 +186,7 @@ typedef struct _UNIDRVINFO {
 </td>
 <td>
 <p>If set, a single backspace character can move the cursor to the beginning of the overstrike region. If not set, an x-movement cursor command must be sent.</p>
-<p>(Used only if MTYPE_PAIRED is specified for the character's <a href="https://msdn.microsoft.com/library/windows/hardware/ff562816">TRANSDATA</a> structure in <a href="https://msdn.microsoft.com/library/windows/hardware/ff556509">MAPTABLE</a>. Otherwise ignored.)</p>
+<p>(Used only if MTYPE_PAIRED is specified for the character's <a href="..\prntfont\ns-prntfont--transdata.md">TRANSDATA</a> structure in <a href="..\prntfont\ns-prntfont--maptable.md">MAPTABLE</a>. Otherwise ignored.)</p>
 </td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ typedef struct _UNIDRVINFO {
 ### -field <b>SelectFont</b>
 
 <dd>
-<p>Is an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551796">INVOC</a> structure containing the printer's font selection command.</p>
+<p>Is an <a href="..\prntfont\ns-prntfont--invoc.md">INVOC</a> structure containing the printer's font selection command.</p>
 </dd>
 
 ### -field <b>UnSelectFont</b>
@@ -297,7 +297,7 @@ typedef struct _UNIDRVINFO {
 </dl>
 
 ## -remarks
-<p>A .ufm (Unidrv Font Metrics) file's UNIDRVINFO structure is accessed by a pointer in the file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563587">UNIFM_HDR</a> structure.</p>
+<p>A .ufm (Unidrv Font Metrics) file's UNIDRVINFO structure is accessed by a pointer in the file's <a href="..\prntfont\ns-prntfont--unifm-hdr.md">UNIFM_HDR</a> structure.</p>
 
 ## -requirements
 <table>
@@ -316,7 +316,7 @@ typedef struct _UNIDRVINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551796">INVOC</a>
+<a href="..\prntfont\ns-prntfont--invoc.md">INVOC</a>
 </dt>
 </dl>
 <p> </p>

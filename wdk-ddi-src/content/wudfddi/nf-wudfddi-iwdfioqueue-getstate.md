@@ -7,7 +7,7 @@ old-location: wdf\iwdfioqueue_getstate.htm
 old-project: wdf
 ms.assetid: 42dc9bbe-b00d-4187-ab07-0c268a061298
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFIoQueue, GetState, IWDFIoQueue::GetState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,11 +71,9 @@ WDF_IO_QUEUE_STATE GetState(
 </dl>
 
 ## -returns
-<p><b>GetState</b> returns a bitwise OR of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561417">WDF_IO_QUEUE_STATE</a>-typed values that provides the state of the queue.</p>
+<p><b>GetState</b> returns a bitwise OR of <a href="..\wudfddi_types\ne-wudfddi-types--wdf-io-queue-state.md">WDF_IO_QUEUE_STATE</a>-typed values that provides the state of the queue.</p>
 
 ## -remarks
-<p>The total number of requests that are associated with the I/O queue is the sum of the values that the <i>pulNumOfRequestsInQueue</i> and <i>pulNumOfRequestsInDriver</i> parameters point to.</p>
-
 <p>The total number of requests that are associated with the I/O queue is the sum of the values that the <i>pulNumOfRequestsInQueue</i> and <i>pulNumOfRequestsInDriver</i> parameters point to.</p>
 
 ## -requirements
@@ -131,12 +129,12 @@ WDF_IO_QUEUE_STATE GetState(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558943">IWDFIoQueue</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561417">WDF_IO_QUEUE_STATE</a>
+<a href="..\wudfddi_types\ne-wudfddi-types--wdf-io-queue-state.md">WDF_IO_QUEUE_STATE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoQueue::GetState method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoQueue::GetState method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

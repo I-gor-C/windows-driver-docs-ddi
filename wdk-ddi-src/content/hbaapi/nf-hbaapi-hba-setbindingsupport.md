@@ -59,7 +59,7 @@ HBA_STATUS HBA_API HBA_SetBindingSupport(
 ### -param <i>Handle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port referenced by <i>HbaPortWWN </i>is located. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port referenced by <i>HbaPortWWN </i>is located. </p>
 </dd>
 
 ### -param <i>HbaPortWWN</i> [in]
@@ -71,12 +71,12 @@ HBA_STATUS HBA_API HBA_SetBindingSupport(
 ### -param <i>Flags</i> [in]
 
 <dd>
-<p>Contains a bitwise OR of a set of flags that indicate the capabilities to enable on the port referenced by <i>HbaPortWWN</i>. For a description of the flags, see the corresponding values associated with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556046">HBA_BIND_TYPE</a> WMI property qualifier.</p>
+<p>Contains a bitwise OR of a set of flags that indicate the capabilities to enable on the port referenced by <i>HbaPortWWN</i>. For a description of the flags, see the corresponding values associated with the <a href="storage.hba_bind_type">HBA_BIND_TYPE</a> WMI property qualifier.</p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_SetBindingSupport</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SetBindingSupport</b> returns one of the following values.</p><dl>
+<p>The <b>HBA_SetBindingSupport</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SetBindingSupport</b> returns one of the following values.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the binding capabilities were successfully enabled. </p><dl>
 <dt><b>HBA_STATUS_ERROR_ILLEGAL_WWN</b></dt>
@@ -140,10 +140,10 @@ HBA_STATUS HBA_API HBA_SetBindingSupport(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

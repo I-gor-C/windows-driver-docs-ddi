@@ -7,7 +7,7 @@ old-location: stream\stream_method_descriptor.htm
 old-project: stream
 ms.assetid: 2C35EF9F-143C-4DE2-93D0-5BCF8AADF11B
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: STREAM_METHOD_DESCRIPTOR, STREAM_METHOD_DESCRIPTOR, *PSTREAM_METHOD_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices

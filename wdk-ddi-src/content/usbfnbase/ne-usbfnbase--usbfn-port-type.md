@@ -124,7 +124,7 @@ typedef enum _USBFN_PORT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187995">USBFN_GET_ATTACH_ACTION</a>
+<a href="buses.usbfn_get_attach_action">USBFN_GET_ATTACH_ACTION</a>
 </dt>
 </dl>
 <p> </p>

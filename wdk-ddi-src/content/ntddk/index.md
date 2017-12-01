@@ -1,11 +1,11 @@
 # Ntddk.h header
 
 
-This header is used by Windows kernel, Windows Hardware Error Architecture (WHEA), Installable file system, Storage, PCI, Driver test tools. For more information, see
-- [Windows kernel](../_kernel/index.md)
-- [Windows Hardware Error Architecture (WHEA)](../_whea/index.md)
-- [Installable file system](../_ifsk/index.md)
+This header is used by Storage, Windows kernel, Installable file system, Windows Hardware Error Architecture (WHEA), PCI, Driver test tools. For more information, see
 - [Storage](../_storage/index.md)
+- [Windows kernel](../_kernel/index.md)
+- [Installable file system](../_ifsk/index.md)
+- [Windows Hardware Error Architecture (WHEA)](../_whea/index.md)
 - [PCI](../_PCI/index.md)
 - [Driver test tools](../_devtest/index.md)
 

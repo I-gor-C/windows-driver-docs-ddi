@@ -103,8 +103,6 @@ HRESULT RouterCreatePrintAsyncNotificationChannel(
 ## -remarks
 <p>In some cases, you must release the channel that you created with the <code>RouterCreatePrintAsyncNotificationChannel</code> function by calling <b>Release</b> on IPrintAsyncNotifyChannel. For information about when to release a channel, see <a href="NULL">Notification Channel</a>.</p>
 
-<p>In some cases, you must release the channel that you created with the <code>RouterCreatePrintAsyncNotificationChannel</code> function by calling <b>Release</b> on IPrintAsyncNotifyChannel. For information about when to release a channel, see <a href="NULL">Notification Channel</a>.</p>
-
 ## -requirements
 <table>
 <tr>

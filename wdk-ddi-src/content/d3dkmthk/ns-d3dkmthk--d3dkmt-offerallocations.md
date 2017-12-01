@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Defines the video memory allocations that the driver offers for reuse. Used with the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439402">D3DKMTOfferAllocations</a>  function.</p>
+<p>Defines the video memory allocations that the driver offers for reuse. Used with the  <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtofferallocations.md">D3DKMTOfferAllocations</a>  function.</p>
 
 
 ## -syntax
@@ -87,7 +87,7 @@ typedef struct _D3DKMT_OFFERALLOCATIONS {
 ### -field <b>Priority</b>
 
 <dd>
-<p>[in] The priority, of type  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406486">D3DKMT_OFFER_PRIORITY</a>, with which to offer the allocations for reuse.</p>
+<p>[in] The priority, of type  <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-offer-priority.md">D3DKMT_OFFER_PRIORITY</a>, with which to offer the allocations for reuse.</p>
 </dd>
 </dl>
 
@@ -127,10 +127,10 @@ typedef struct _D3DKMT_OFFERALLOCATIONS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406486">D3DKMT_OFFER_PRIORITY</a>
+<a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-offer-priority.md">D3DKMT_OFFER_PRIORITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439402">D3DKMTOfferAllocations</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtofferallocations.md">D3DKMTOfferAllocations</a>
 </dt>
 </dl>
 <p> </p>

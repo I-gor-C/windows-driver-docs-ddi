@@ -7,7 +7,7 @@ old-location: netvista\dot11extfreebuffer.htm
 old-project: netvista
 ms.assetid: a6e49914-29c0-47d2-936b-17c48958cb36
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -77,16 +76,6 @@ VOID WINAPI * Dot11ExtFreeBuffer(
     <a href="netvista.native_802_11_ihv_handler_functions">Native 802.11 IHV Handler
     Functions</a>.</p>
 
-<p>The IHV Extension DLL must not call the 
-    <b>Dot11ExtFreeBuffer</b> function for any variable-length buffer allocated
-    within an IHV handler function and passed to the operating system through a parameter to the function. In
-    this situation, the operating system is responsible for freeing the buffer after the return of the IHV
-    Handler function.</p>
-
-<p>For more information about the IHV Handler functions, see 
-    <a href="netvista.native_802_11_ihv_handler_functions">Native 802.11 IHV Handler
-    Functions</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -123,7 +112,7 @@ VOID WINAPI * Dot11ExtFreeBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547419">Dot11ExtAllocateBuffer</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-allocate-buffer.md">Dot11ExtAllocateBuffer</a>
 </dt>
 <dt>
 <a href="netvista.native_802_11_ihv_handler_functions">Native 802.11 IHV Handler
@@ -132,4 +121,4 @@ VOID WINAPI * Dot11ExtFreeBuffer(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_FREE_BUFFER callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_FREE_BUFFER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

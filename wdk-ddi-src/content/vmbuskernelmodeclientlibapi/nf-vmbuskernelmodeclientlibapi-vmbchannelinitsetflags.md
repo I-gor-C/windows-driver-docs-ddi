@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelinitsetflags.htm
 old-project: netvista
 ms.assetid: 12525F3C-12D6-477E-8C7D-3DE9AAA044AE
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbChannelInitSetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices

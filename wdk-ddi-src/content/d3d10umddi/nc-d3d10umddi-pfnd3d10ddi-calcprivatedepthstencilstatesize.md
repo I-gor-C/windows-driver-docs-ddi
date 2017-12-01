@@ -67,7 +67,7 @@ SIZE_T APIENTRY CalcPrivateDepthStencilStateSize(
 ### -param <i>pDepthStencilDesc</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541944">D3D10_DDI_DEPTH_STENCIL_DESC</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-depth-stencil-desc.md">D3D10_DDI_DEPTH_STENCIL_DESC</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. </p>
 </dd>
 </dl>
 
@@ -75,8 +75,6 @@ SIZE_T APIENTRY CalcPrivateDepthStencilStateSize(
 <p><b>CalcPrivateDepthStencilStateSize</b> returns the size of the memory region that the driver requires for creating a depth stencil state.</p>
 
 ## -remarks
-<p>None.</p>
-
 <p>None.</p>
 
 ## -requirements
@@ -114,10 +112,10 @@ SIZE_T APIENTRY CalcPrivateDepthStencilStateSize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541944">D3D10_DDI_DEPTH_STENCIL_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-depth-stencil-desc.md">D3D10_DDI_DEPTH_STENCIL_DESC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541833">D3D10DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

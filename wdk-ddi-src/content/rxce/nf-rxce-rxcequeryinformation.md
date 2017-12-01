@@ -136,43 +136,9 @@ NTSTATUS RxCeQueryInformation(
 <p> </p>
 
 ## -remarks
-<p><b>RxCeQueryInformation</b> returns information for a given virtual circuit. The  only values for <i>InformationClass</i> that can be specified when calling <b>RxCeQueryInformation</b> are the following:</p><dl>
-<dd>
+<p><b>RxCeQueryInformation</b> returns information for a given virtual circuit. The  only values for <i>InformationClass</i> that can be specified when calling <b>RxCeQueryInformation</b> are the following:</p>
+
 <p>RxCeTransportProviderInformation</p>
-</dd>
-<dd>
-<p>RxCeConnectionInformation</p>
-</dd>
-<dd>
-<p>RxCeConnectionEndpointInformation</p>
-</dd>
-<dd>
-<p>RxCeRemoteAddressInformation</p>
-</dd>
-</dl><p>RxCeTransportProviderInformation</p>
-
-<p>RxCeConnectionInformation</p>
-
-<p>RxCeConnectionEndpointInformation</p>
-
-<p>RxCeRemoteAddressInformation</p>
-
-<p>For some values of <i>InformationClass</i>, <b>RxCeQueryInformation</b> calls <b>TdiBuildQueryInformation</b> and TDI to retrieve the requested information.</p>
-
-<p><b>RxCeQueryInformation</b> returns information for a given virtual circuit. The  only values for <i>InformationClass</i> that can be specified when calling <b>RxCeQueryInformation</b> are the following:</p><dl>
-<dd>
-<p>RxCeTransportProviderInformation</p>
-</dd>
-<dd>
-<p>RxCeConnectionInformation</p>
-</dd>
-<dd>
-<p>RxCeConnectionEndpointInformation</p>
-</dd>
-<dd>
-<p>RxCeRemoteAddressInformation</p>
-</dd>
-</dl><p>RxCeTransportProviderInformation</p>
 
 <p>RxCeConnectionInformation</p>
 
@@ -217,10 +183,10 @@ NTSTATUS RxCeQueryInformation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553456">RxCeQueryAdapterStatus</a>
+<a href="..\rxce\nf-rxce-rxcequeryadapterstatus.md">RxCeQueryAdapterStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553474">RxCeQueryTransportInformation</a>
+<a href="..\rxce\nf-rxce-rxcequerytransportinformation.md">RxCeQueryTransportInformation</a>
 </dt>
 </dl>
 <p> </p>

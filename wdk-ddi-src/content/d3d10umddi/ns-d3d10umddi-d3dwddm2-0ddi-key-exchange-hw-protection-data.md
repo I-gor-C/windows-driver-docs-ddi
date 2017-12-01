@@ -66,13 +66,13 @@ typedef struct D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_DATA {
 ### -field <b>pInputData</b>
 
 <dd>
-<p>Pointer to a buffer containing a <a href="https://msdn.microsoft.com/library/windows/hardware/dn894611">D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_INPUT_DATA</a> structure, reserved memory for IHV use, and the input data for the DRM command.</p>
+<p>Pointer to a buffer containing a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-key-exchange-hw-protection-input-data.md">D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_INPUT_DATA</a> structure, reserved memory for IHV use, and the input data for the DRM command.</p>
 </dd>
 
 ### -field <b>pOutputData</b>
 
 <dd>
-<p>Pointer to a buffer containing a <a href="https://msdn.microsoft.com/library/windows/hardware/dn894612">D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_OUTPUT_DATA</a> structure, reserved memory for IHV use, and the output data for the DRM command.</p>
+<p>Pointer to a buffer containing a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-key-exchange-hw-protection-output-data.md">D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_OUTPUT_DATA</a> structure, reserved memory for IHV use, and the output data for the DRM command.</p>
 </dd>
 
 ### -field <b>Status</b>
@@ -121,10 +121,10 @@ typedef struct D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_DATA {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-negotiatecryptosessionkeyeschange.md">NegotiateCryptoSessionKeyExchange</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn894611">D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_INPUT_DATA</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-key-exchange-hw-protection-input-data.md">D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_INPUT_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn894612">D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_OUTPUT_DATA</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-key-exchange-hw-protection-output-data.md">D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_OUTPUT_DATA</a>
 </dt>
 </dl>
 <p> </p>

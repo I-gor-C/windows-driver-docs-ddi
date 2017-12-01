@@ -7,7 +7,7 @@ old-location: netvista\riluiccrecordstatus_2.htm
 old-project: netvista
 ms.assetid: 5f6ff5b1-cd13-4bf6-b4ef-e9b6f4fd54e0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCRECORDSTATUS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -121,7 +121,7 @@ typedef struct _USBD_INTERFACE_INFORMATION {
 ### -field <b>Pipes</b>
 
 <dd>
-<p>Pointer to the first element in the array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539114">USBD_PIPE_INFORMATION</a> structures. The length of the array depends on the number of endpoints in the interface descriptor.</p>
+<p>Pointer to the first element in the array of <a href="..\usb\ns-usb--usbd-pipe-information.md">USBD_PIPE_INFORMATION</a> structures. The length of the array depends on the number of endpoints in the interface descriptor.</p>
 </dd>
 </dl>
 
@@ -147,10 +147,10 @@ typedef struct _USBD_INTERFACE_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539114">USBD_PIPE_INFORMATION</a>
+<a href="..\usb\ns-usb--usbd-pipe-information.md">USBD_PIPE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

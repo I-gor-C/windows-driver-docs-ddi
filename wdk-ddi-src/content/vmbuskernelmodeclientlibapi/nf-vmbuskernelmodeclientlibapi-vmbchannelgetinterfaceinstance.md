@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelgetinterfaceinstance.htm
 old-project: netvista
 ms.assetid: BEE9581A-5FC4-4C5B-B428-B782E59720C3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbChannelGetInterfaceInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\ndisimcancelinitializedeviceinstance.htm
 old-project: netvista
 ms.assetid: 809ffee1-b087-4bf0-ba8a-1ac0b2d02f2f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisIMCancelInitializeDeviceInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,12 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   
-   NdisIMCancelInitializeDeviceInstance (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers
-   (see 
-   
-   NdisIMCancelInitializeDeviceInstance (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisIMCancelInitializeDeviceInstance (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers   (see       NdisIMCancelInitializeDeviceInstance (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -80,7 +75,7 @@ NDIS_STATUS NdisIMCancelInitializeDeviceInstance(
      stores information about a virtual miniport and, possibly, binding-specific information. For Microsoft
      Windows 2000 and later drivers, this string contains Unicode characters. That is, for Windows 2000 and
      later, NDIS defines the NDIS_STRING type as a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> type.</p>
+     <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> type.</p>
 </dd>
 </dl>
 
@@ -91,17 +86,6 @@ NDIS_STATUS NdisIMCancelInitializeDeviceInstance(
      stop the initialization operation for the virtual miniport.</p>
 
 ## -remarks
-<p>An intermediate driver calls the 
-    <a href="..\ndis\nf-ndis-ndisiminitializedeviceinstanceex.md">
-    NdisIMInitializeDeviceInstanceEx</a> function to initiate the initialization operation for a virtual
-    miniports.Before NDIS calls the driver's 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function, the
-    driver can call 
-    <b>NdisIMCancelInitializeDeviceInstance</b> to cancel the initialization operation. For example, if an
-    underlying driver that the intermediate driver requires for normal operation is removed, the intermediate
-    driver can cancel the initialization for any virtual miniports that are associated with the removed
-    driver.</p>
-
 <p>An intermediate driver calls the 
     <a href="..\ndis\nf-ndis-ndisiminitializedeviceinstanceex.md">
     NdisIMInitializeDeviceInstanceEx</a> function to initiate the initialization operation for a virtual
@@ -171,7 +155,7 @@ NDIS_STATUS NdisIMCancelInitializeDeviceInstance(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547941">Irql_IM_Function</a>
+<a href="devtest.ndis_irql_im_function">Irql_IM_Function</a>
 </td>
 </tr>
 </table>
@@ -186,12 +170,12 @@ NDIS_STATUS NdisIMCancelInitializeDeviceInstance(
    NdisIMInitializeDeviceInstanceEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIMCancelInitializeDeviceInstance function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIMCancelInitializeDeviceInstance function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

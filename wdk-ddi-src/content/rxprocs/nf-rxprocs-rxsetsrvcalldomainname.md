@@ -83,12 +83,6 @@ NTSTATUS RxSetSrvCallDomainName(
 
 <p>If the <i>DomainName</i> parameter is not a <b>NULL</b> pointer, and the <i>DomainName</i> parameter has a length greater than zero, then <b>RxSetSrvCallDomainName</b> allocates space for the <b>pDomainName</b> member of <i>SrvCall</i> from nonpaged pool with a pool tag of RX_SRVCALL_PARAMS_POOLTAG. The <b>RxSetSrvCallDomainName</b> routine sets the <b>buffer</b>, <b>length</b>, and <b>MaximumLength</b> members of the <b>pDomainName</b> structure. </p>
 
-<p>The domain name may not be known at the beginning of a network redirector request. The <b>RxSetSrvCallDomainName</b> routine allows the domain name to be associated with <i>SrvCall</i> once it is known. This routine would normally be used as part of the creation and initialization of a SRV_CALL structure.</p>
-
-<p>If a domain name is already associated with the <i>SrvCall</i> parameter, then this domain name will be removed and the memory associated with this entry in <i>SrvCall</i> will be freed.</p>
-
-<p>If the <i>DomainName</i> parameter is not a <b>NULL</b> pointer, and the <i>DomainName</i> parameter has a length greater than zero, then <b>RxSetSrvCallDomainName</b> allocates space for the <b>pDomainName</b> member of <i>SrvCall</i> from nonpaged pool with a pool tag of RX_SRVCALL_PARAMS_POOLTAG. The <b>RxSetSrvCallDomainName</b> routine sets the <b>buffer</b>, <b>length</b>, and <b>MaximumLength</b> members of the <b>pDomainName</b> structure. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -124,10 +118,10 @@ NTSTATUS RxSetSrvCallDomainName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554370">RxCreateSrvCall</a>
+<a href="..\fcb\nf-fcb-rxcreatesrvcall.md">RxCreateSrvCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554426">RxFinalizeSrvCall</a>
+<a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
 </dt>
 </dl>
 <p> </p>

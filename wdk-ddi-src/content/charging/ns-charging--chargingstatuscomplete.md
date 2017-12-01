@@ -7,7 +7,7 @@ old-location: battery\chargingstatuscomplete.htm
 old-project: battery
 ms.assetid: 5B5BD82A-15A3-40AA-9FE8-191B31CB694A
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/27/2017
 ms.keywords: CHARGINGSTATUSCOMPLETE, CHARGINGSTATUSCOMPLETE, *PCHARGINGSTATUSCOMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices

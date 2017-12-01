@@ -58,7 +58,7 @@ typedef struct _D3DDDICB_CREATESYNCHRONIZATIONOBJECT {
 ### -field <b>Info</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544657">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a> structure that contains information about the kernel-mode synchronization object.</p>
+<p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-synchronizationobjectinfo.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a> structure that contains information about the kernel-mode synchronization object.</p>
 </dd>
 
 ### -field <b>hSyncObject</b>
@@ -96,7 +96,7 @@ typedef struct _D3DDDICB_CREATESYNCHRONIZATIONOBJECT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544657">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-synchronizationobjectinfo.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createsynchronizationobjectcb.md">pfnCreateSynchronizationObjectCb</a>

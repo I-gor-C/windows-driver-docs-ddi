@@ -7,7 +7,7 @@ old-location: netvista\dot11_phy_attributes.htm
 old-project: netvista
 ms.assetid: 9e81144e-e562-4f61-83de-7b7659106de8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_PHY_ATTRIBUTES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: windot11.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -75,7 +74,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 
 <dd>
 <p>The type, revision, and size of the DOT11_PHY_ATTRIBUTES structure. This member is formatted as an 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.</p>
+      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
 <p>The miniport driver must set the members of 
       <b>Header</b> to the following values:</p>
 <p></p>
@@ -101,14 +100,14 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 </dd>
 </dl>
 <p>For more information about these members, see 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.</p>
+      <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
 ### -field <b>PhyType</b>
 
 <dd>
 <p>The type of the PHY as specified by a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff548741">DOT11_PHY_TYPE</a> enumerator value.</p>
+     <a href="..\windot11\ne-windot11--dot11-phy-type.md">DOT11_PHY_TYPE</a> enumerator value.</p>
 </dd>
 
 ### -field <b>bHardwarePhyState</b>
@@ -162,14 +161,14 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 
 <dd>
 <p>The PHY's operating temperature range, defined through a 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff548806">DOT11_TEMP_TYPE</a> enumeration value.</p>
+      <a href="..\windot11\ne-windot11--dot11-temp-type.md">DOT11_TEMP_TYPE</a> enumeration value.</p>
 </dd>
 
 ### -field <b>DiversitySupport</b>
 
 <dd>
 <p>The PHY's type of antenna diversity, defined through a 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547683">DOT11_DIVERSITY_SUPPORT</a> enumeration
+      <a href="..\windot11\ne-windot11--dot11-diversity-support.md">DOT11_DIVERSITY_SUPPORT</a> enumeration
       value.</p>
 </dd>
 
@@ -249,7 +248,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
     <a href="..\ndis\ns-ndis--ndis-miniport-adapter-native-802-11-attributes.md">
     NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a> structure contains a member (<b>pExtPhyAttributes</b>) that specifies the address of an array of DOT11_PHY_ATTRIBUTES structures. When
     the miniport driver calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563672">NdisMSetMiniportAttributes</a>,
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>,
     the driver sets the 
     <i>MiniportAttributes</i> parameter to the address of driver-allocated block of memory which contains an
     NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure along with the array of DOT11_PHY_ATTRIBUTES
@@ -281,25 +280,25 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547683">DOT11_DIVERSITY_SUPPORT</a>
+<a href="..\windot11\ne-windot11--dot11-diversity-support.md">DOT11_DIVERSITY_SUPPORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547686">DOT11_ERP_PHY_ATTRIBUTES</a>
+<a href="..\windot11\ns-windot11-dot11-erp-phy-attributes.md">DOT11_ERP_PHY_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548643">DOT11_HRDSSS_PHY_ATTRIBUTES</a>
+<a href="..\windot11\ns-windot11-dot11-hrdsss-phy-attributes.md">DOT11_HRDSSS_PHY_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548707">DOT11_OFDM_PHY_ATTRIBUTES</a>
+<a href="..\windot11\ns-windot11-dot11-ofdm-phy-attributes.md">DOT11_OFDM_PHY_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548806">DOT11_TEMP_TYPE</a>
+<a href="..\windot11\ne-windot11--dot11-temp-type.md">DOT11_TEMP_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547679">DOT11_DATA_RATE_MAPPING_ENTRY</a>
+<a href="..\windot11\ns-windot11-dot11-data-rate-mapping-entry.md">DOT11_DATA_RATE_MAPPING_ENTRY</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569370">OID_DOT11_HARDWARE_PHY_STATE</a>
@@ -308,7 +307,7 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569392">OID_DOT11_NIC_POWER_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548741">DOT11_PHY_TYPE</a>
+<a href="..\windot11\ne-windot11--dot11-phy-type.md">DOT11_PHY_TYPE</a>
 </dt>
 <dt>
 <a href="..\windot11\ns-windot11--dot11-supported-data-rates-value-v2.md">
@@ -319,9 +318,9 @@ typedef struct DOT11_PHY_ATTRIBUTES {
    NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563672">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_ATTRIBUTES structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

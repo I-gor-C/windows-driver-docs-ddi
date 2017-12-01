@@ -7,7 +7,7 @@ old-location: kernel\iosetactivityidthread.htm
 old-project: kernel
 ms.assetid: 4C7884AB-C763-4FAF-8799-E0113B3F3AE0
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoSetActivityIdThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,8 +65,6 @@ LPGUID IoSetActivityIdThread(
 <p>The activity ID that was previously set on the thread. Drivers must call IoClearActivityIdThread with this pointer when tracing is completed within the same thread context.</p>
 
 ## -remarks
-<p>Drivers that use  I/O work items do not need to call this routine because the I/O subsystem takes care of propagating activity IDs to threads in that case.</p>
-
 <p>Drivers that use  I/O work items do not need to call this routine because the I/O subsystem takes care of propagating activity IDs to threads in that case.</p>
 
 ## -requirements

@@ -7,7 +7,7 @@ old-location: netvista\ndisfsetattributes.htm
 old-project: netvista
 ms.assetid: 66e20ac3-e97d-429d-868e-79c04881702b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFSetAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NDIS_STATUS NdisFSetAttributes(
 <dd>
 <p>The NDIS handle that identifies this filter module. NDIS passed the handle to the filter driver in
      a call to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function.</p>
+     <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
 ### -param <i>FilterModuleContext</i> [in]
@@ -94,18 +94,7 @@ NDIS_STATUS NdisFSetAttributes(
 ## -remarks
 <p>A filter driver calls 
     <b>NdisFSetAttributes</b> from its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function and passes the
-    handle that NDIS passed to 
-    <i>FilterAttach</i> at the 
-    <i>NdisFilterHandle</i> parameter. The 
-    <i>FilterModuleContext</i> parameter of 
-    <b>NdisFSetAttributes</b> specifies the context area for this filter module. NDIS passes the context area
-    back to the filter driver in calls to functions such as 
-    <a href="..\ndis\nc-ndis-filter-send-net-buffer-lists.md">FilterSendNetBufferLists</a>.</p>
-
-<p>A filter driver calls 
-    <b>NdisFSetAttributes</b> from its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function and passes the
+    <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function and passes the
     handle that NDIS passed to 
     <i>FilterAttach</i> at the 
     <i>NdisFilterHandle</i> parameter. The 
@@ -167,7 +156,7 @@ NDIS_STATUS NdisFSetAttributes(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547930">Irql_Filter_Driver_Function</a>
+<a href="devtest.ndis_irql_filter_driver_function">Irql_Filter_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -175,15 +164,15 @@ NDIS_STATUS NdisFSetAttributes(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-filter-send-net-buffer-lists.md">FilterSendNetBufferLists</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565484">NDIS_FILTER_ATTRIBUTES</a>
+<a href="..\ndis\ns-ndis--ndis-filter-attributes.md">NDIS_FILTER_ATTRIBUTES</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFSetAttributes function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFSetAttributes function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

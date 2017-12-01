@@ -7,7 +7,7 @@ old-location: netvista\riluiccapppersocheckstatusstate.htm
 old-project: netvista
 ms.assetid: d41d5559-b9ec-4ae5-b658-8f75e8af13e4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

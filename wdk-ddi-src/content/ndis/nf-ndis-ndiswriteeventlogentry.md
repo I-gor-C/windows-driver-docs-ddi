@@ -7,7 +7,7 @@ old-location: netvista\ndiswriteeventlogentry.htm
 old-project: netvista
 ms.assetid: 1f3fbcf1-e6f4-4117-a795-f4b14ef9fc96
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisWriteEventLogEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisWriteEventLogEntry (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisWriteEventLogEntry (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteEventLogEntry (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteEventLogEntry (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -156,33 +152,6 @@ NDIS_STATUS NdisWriteEventLogEntry(
 <p><b>NdisWriteEventLogEntry</b> is called only by protocol drivers. Miniport drivers should call 
     <b>NdisWriteErrorLogEntry</b> to log events and errors.</p>
 
-<p><b>NdisWriteEventLogEntry</b> allocates an I/O error log record, fills in the record with the supplied
-    information about the event, and then writes the record to the I/O error log file. A user can view the
-    logged event, including an optional description of the event and/or optional binary dump data, with the
-    Win32 event viewer.</p>
-
-<p>The NT error-logging thread uses any strings supplied in the optional 
-    <i>StringsList</i> to fill in messages written into the Win32 event log. Each string must be a
-    NUL-terminated Unicode string. The I/O manager assumes that the initial string is either the name of the
-    driver reporting the error or the name of the device that caused the error.</p>
-
-<p>The Unicode strings supplied by the caller should be read from the registry or should be
-    language-independent (that is, the strings should be the same in any language -- for example, the string
-    could be a file name).</p>
-
-<p>Caller-supplied dump data can be any binary data (such as register values) that is useful in
-    understanding the event. The caller does not have to pad the binary data. If necessary, 
-    <b>NdisWriteEventLogEntry</b> pads the binary dump data so that the final data size is a multiple integral
-    of 
-    <b>sizeof</b>(ULONG).</p>
-
-<p>The system limits the total size of the optional data supplied to 
-    <b>NdisWriteEventLogEntry</b>. The combined size of the strings list and the (possibly padded) binary
-    dump must be less than or equal to MAX_EVENT_LOG_DATA_SIZE.</p>
-
-<p><b>NdisWriteEventLogEntry</b> is called only by protocol drivers. Miniport drivers should call 
-    <b>NdisWriteErrorLogEntry</b> to log events and errors.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -240,7 +209,7 @@ NDIS_STATUS NdisWriteEventLogEntry(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -254,12 +223,12 @@ NDIS_STATUS NdisWriteEventLogEntry(
 <a href="..\ndis\nc-ndis-miniport-reset.md">MiniportResetEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563672">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564663">NdisWriteErrorLogEntry</a>
+<a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisWriteEventLogEntry function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisWriteEventLogEntry function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

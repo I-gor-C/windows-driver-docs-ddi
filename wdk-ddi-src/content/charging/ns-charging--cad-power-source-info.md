@@ -7,7 +7,7 @@ old-location: battery\cad_power_source_info.htm
 old-project: battery
 ms.assetid: FF204AC6-0D01-4C19-A852-0CC12095C43C
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/27/2017
 ms.keywords: CAD_POWER_SOURCE_INFO, CAD_POWER_SOURCE_INFO, *PCAD_POWER_SOURCE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

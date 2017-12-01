@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbackswide_sessionstatus.htm
 old-project: debugger
 ms.assetid: cc3ed4ef-5e2d-4865-8d6f-b140d6b5d7af
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugEventCallbacksWide, SessionStatus, IDebugEventCallbacksWide::SessionStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,7 +76,7 @@ HRESULT SessionStatus(
 <p>DEBUG_SESSION_END_SESSION_ACTIVE_TERMINATE</p>
 </td>
 <td>
-<p>The session was ended by sending DEBUG_END_ACTIVE_TERMINATE to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543004">EndSession</a>.</p>
+<p>The session was ended by sending DEBUG_END_ACTIVE_TERMINATE to <a href="debugger.endsession">EndSession</a>.</p>
 </td>
 </tr>
 <tr>
@@ -136,19 +136,11 @@ HRESULT SessionStatus(
 <p>This method's return value is ignored by the engine.</p>
 
 ## -remarks
-<p>This method is only called by the engine if the DEBUG_EVENT_SESSION_STATUS flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550625">IDebugEventCallbacksWide::GetInterestMask</a>.</p>
+<p>This method is only called by the engine if the DEBUG_EVENT_SESSION_STATUS flag is set in the mask returned by <a href="debugger.idebugeventcallbackswide_getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.</p>
 
-<p>After the engine has notified all the event callbacks of the change in the session status, it will also notify any loaded <a href="debugger.introduction#extensions#extensions">extensions</a> that export the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540478">DebugExtensionNotify</a> callback method.  The value that it passes to the extensions depends on the value of <i>Status</i>.  If <i>Status</i> is DEBUG_SESSION_ACTIVE, it passes DEBUG_SESSION_ACTIVE; otherwise, it passes DEBUG_SESSION_INACTIVE.</p>
+<p>After the engine has notified all the event callbacks of the change in the session status, it will also notify any loaded <a href="debugger.introduction#extensions#extensions">extensions</a> that export the <a href="debugger.debugextensionnotify">DebugExtensionNotify</a> callback method.  The value that it passes to the extensions depends on the value of <i>Status</i>.  If <i>Status</i> is DEBUG_SESSION_ACTIVE, it passes DEBUG_SESSION_ACTIVE; otherwise, it passes DEBUG_SESSION_INACTIVE.</p>
 
-<p>In the DEBUG_SESSION_ACTIVE case, the engine follows the debugger session change notification with a target state change notification by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550573">IDebugEventCallbacksWide::ChangeDebuggeeState</a> on the event callbacks and passing DEBUG_CDS_ALL in the <i>Flags</i> parameter.  In all other cases, the engine precedes this notification with an engine state change notification by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550578">IDebugEventCallbacksWide::ChangeEngineState</a> on the event callbacks and passing DEBUG_CES_EXECUTION_STATUS in the <i>Flags</i> parameter.</p>
-
-<p>For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.  For information about debugger sessions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.</p>
-
-<p>This method is only called by the engine if the DEBUG_EVENT_SESSION_STATUS flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550625">IDebugEventCallbacksWide::GetInterestMask</a>.</p>
-
-<p>After the engine has notified all the event callbacks of the change in the session status, it will also notify any loaded <a href="debugger.introduction#extensions#extensions">extensions</a> that export the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540478">DebugExtensionNotify</a> callback method.  The value that it passes to the extensions depends on the value of <i>Status</i>.  If <i>Status</i> is DEBUG_SESSION_ACTIVE, it passes DEBUG_SESSION_ACTIVE; otherwise, it passes DEBUG_SESSION_INACTIVE.</p>
-
-<p>In the DEBUG_SESSION_ACTIVE case, the engine follows the debugger session change notification with a target state change notification by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550573">IDebugEventCallbacksWide::ChangeDebuggeeState</a> on the event callbacks and passing DEBUG_CDS_ALL in the <i>Flags</i> parameter.  In all other cases, the engine precedes this notification with an engine state change notification by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550578">IDebugEventCallbacksWide::ChangeEngineState</a> on the event callbacks and passing DEBUG_CES_EXECUTION_STATUS in the <i>Flags</i> parameter.</p>
+<p>In the DEBUG_SESSION_ACTIVE case, the engine follows the debugger session change notification with a target state change notification by calling <a href="debugger.idebugeventcallbackswide_changedebuggeestate">IDebugEventCallbacksWide::ChangeDebuggeeState</a> on the event callbacks and passing DEBUG_CDS_ALL in the <i>Flags</i> parameter.  In all other cases, the engine precedes this notification with an engine state change notification by calling <a href="debugger.idebugeventcallbackswide_changeenginestate">IDebugEventCallbacksWide::ChangeEngineState</a> on the event callbacks and passing DEBUG_CES_EXECUTION_STATUS in the <i>Flags</i> parameter.</p>
 
 <p>For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.  For information about debugger sessions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.</p>
 

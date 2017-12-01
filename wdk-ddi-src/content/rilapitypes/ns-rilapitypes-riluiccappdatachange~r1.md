@@ -7,7 +7,7 @@ old-location: netvista\riluiccappdatachange_2.htm
 old-project: netvista
 ms.assetid: b812cd5d-73a1-42bc-a1ae-1c1494369288
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCAPPDATACHANGE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -64,7 +64,7 @@ typedef struct _DXVAHDDDI_STREAM_STATE_ROTATION_DATA {
 ### -field <b>Rotation</b>
 
 <dd>
-<p>The clockwise degrees of rotation as specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/hh464119">DXVAHDDDI_ROTATION</a> enumeration value.</p>
+<p>The clockwise degrees of rotation as specified by a <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-rotation.md">DXVAHDDDI_ROTATION</a> enumeration value.</p>
 </dd>
 </dl>
 
@@ -104,7 +104,7 @@ typedef struct _DXVAHDDDI_STREAM_STATE_ROTATION_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464119">DXVAHDDDI_ROTATION</a>
+<a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-rotation.md">DXVAHDDDI_ROTATION</a>
 </dt>
 </dl>
 <p> </p>

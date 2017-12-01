@@ -7,7 +7,7 @@ old-location: stream\bda_ethernet_address.htm
 old-project: stream
 ms.assetid: F4B9A413-7FB5-4CA3-9731-A143CB0D7346
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_ETHERNET_ADDRESS, BDA_ETHERNET_ADDRESS, *PBDA_ETHERNET_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices

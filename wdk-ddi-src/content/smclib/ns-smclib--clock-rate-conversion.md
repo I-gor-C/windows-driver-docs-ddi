@@ -7,7 +7,7 @@ old-location: smartcrd\clock_rate_conversion.htm
 old-project: smartcrd
 ms.assetid: c3011034-c77c-4699-9c04-b1163faa79fc
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: CLOCK_RATE_CONVERSION, CLOCK_RATE_CONVERSION, *PCLOCK_RATE_CONVERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices

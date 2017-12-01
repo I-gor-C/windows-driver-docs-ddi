@@ -78,8 +78,6 @@ VOID APIENTRY AgpReleasePhysical(
 ## -remarks
 <p>The miniport driver must call <a href="..\videoagp\nc-videoagp-pagp-free-physical.md">AgpFreePhysical</a> to unmap all committed memory within the address range identified by <b>PhysicalReserveContext</b> before calling <b>AgpReleasePhysical</b>.</p>
 
-<p>The miniport driver must call <a href="..\videoagp\nc-videoagp-pagp-free-physical.md">AgpFreePhysical</a> to unmap all committed memory within the address range identified by <b>PhysicalReserveContext</b> before calling <b>AgpReleasePhysical</b>.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -57,7 +57,7 @@ BOOLEAN FltCurrentOplockH(
 ### -param <i>Oplock</i> [in]
 
 <dd>
-<p>An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543289">FltInitializeOplock</a>. </p>
+<p>An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>. </p>
 </dd>
 </dl>
 
@@ -65,10 +65,6 @@ BOOLEAN FltCurrentOplockH(
 <p><b>FltCurrentOplockH</b> returns <b>TRUE</b> if there are CACHE_HANDLE_LEVEL oplocks that are currently being held. Otherwise, it returns <b>FALSE</b>. </p>
 
 ## -remarks
-<p><b>FltCurrentOplockH</b> returns <b>FALSE</b> if no CACHE_HANDLE_LEVEL opportunistic locks are currently held.</p>
-
-<p>For more information about opportunistic locks, see the Microsoft Windows SDK documentation. </p>
-
 <p><b>FltCurrentOplockH</b> returns <b>FALSE</b> if no CACHE_HANDLE_LEVEL opportunistic locks are currently held.</p>
 
 <p>For more information about opportunistic locks, see the Microsoft Windows SDK documentation. </p>
@@ -126,10 +122,10 @@ BOOLEAN FltCurrentOplockH(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543289">FltInitializeOplock</a>
+<a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545837">FsRtlCurrentOplockH</a>
+<a href="ifsk.fsrtlcurrentoplockh">FsRtlCurrentOplockH</a>
 </dt>
 </dl>
 <p> </p>

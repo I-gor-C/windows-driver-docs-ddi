@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SendRNIDV2_IN structure is used to deliver input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565463">SendRNIDV2</a> WMI method.</p>
+<p>The SendRNIDV2_IN structure is used to deliver input parameter data to the <a href="storage.sendrnidv2">SendRNIDV2</a> WMI method.</p>
 
 
 ## -syntax
@@ -83,7 +83,7 @@ typedef struct _SendRNIDV2_IN {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the SendRNIDV2_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the SendRNIDV2_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -102,7 +102,7 @@ typedef struct _SendRNIDV2_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565463">SendRNIDV2</a>
+<a href="storage.sendrnidv2">SendRNIDV2</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_register_ulong64.htm
 old-project: wdf
 ms.assetid: 471B6165-24A0-45E1-AD7F-B7D3468DF573
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WRITE_REGISTER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices

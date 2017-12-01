@@ -124,7 +124,7 @@ typedef struct _D3DKMDT_GRAPHICS_RENDERING_FORMAT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 </dl>
 <p> </p>

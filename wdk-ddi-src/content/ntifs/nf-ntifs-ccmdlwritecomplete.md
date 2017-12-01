@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>CcMdlWriteComplete</b> routine frees the memory descriptor lists (MDL) created by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539181">CcPrepareMdlWrite</a> for a cached file.</p>
+<p>The <b>CcMdlWriteComplete</b> routine frees the memory descriptor lists (MDL) created by <a href="..\ntifs\nf-ntifs-ccpreparemdlwrite.md">CcPrepareMdlWrite</a> for a cached file.</p>
 
 
 ## -syntax
@@ -59,19 +59,19 @@ VOID CcMdlWriteComplete(
 ### -param <i>FileObject</i> [in]
 
 <dd>
-<p>File object pointer that was passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539181">CcPrepareMdlWrite</a>.</p>
+<p>File object pointer that was passed to <a href="..\ntifs\nf-ntifs-ccpreparemdlwrite.md">CcPrepareMdlWrite</a>.</p>
 </dd>
 
 ### -param <i>FileOffset</i> [in]
 
 <dd>
-<p>Value of <i>FileOffset</i> that was passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539181">CcPrepareMdlWrite</a>.</p>
+<p>Value of <i>FileOffset</i> that was passed to <a href="..\ntifs\nf-ntifs-ccpreparemdlwrite.md">CcPrepareMdlWrite</a>.</p>
 </dd>
 
 ### -param <i>MdlChain</i> [in]
 
 <dd>
-<p>Address of the MDL chain returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539181">CcPrepareMdlWrite</a>.</p>
+<p>Address of the MDL chain returned by <a href="..\ntifs\nf-ntifs-ccpreparemdlwrite.md">CcPrepareMdlWrite</a>.</p>
 </dd>
 </dl>
 
@@ -79,7 +79,7 @@ VOID CcMdlWriteComplete(
 <p>None</p>
 
 ## -remarks
-<p>File systems call <b>CcMdlWriteComplete</b> to free the memory descriptor lists (MDL) created by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539181">CcPrepareMdlWrite</a> for a cached file and to mark the specified byte range for write. All physical pages that were locked down are unlocked. Any pages that were mapped are unmapped.</p>
+<p>File systems call <b>CcMdlWriteComplete</b> to free the memory descriptor lists (MDL) created by <a href="..\ntifs\nf-ntifs-ccpreparemdlwrite.md">CcPrepareMdlWrite</a> for a cached file and to mark the specified byte range for write. All physical pages that were locked down are unlocked. Any pages that were mapped are unmapped.</p>
 
 <p>If the FO_WRITE_THROUGH flag is set on the file object pointed to by the <i>FileObject</i> parameter, the file data is immediately flushed to disk. This flush operation re-enters the file system and can cause <b>CcMdlWriteComplete</b> to raise an exception if the flush operation fails. In this case, the MDL has not been freed and the caller may re-try the operation.</p>
 
@@ -87,17 +87,7 @@ VOID CcMdlWriteComplete(
 
 <p>Before using <b>CcMdlWriteComplete</b>, file system developers are strongly encouraged to study the way this routine is used in the FASTFAT sample. </p>
 
-<p>Each call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539181">CcPrepareMdlWrite</a> must be followed by a call to <b>CcMdlWriteComplete</b> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff539166">CcMdlWriteAbort</a>.</p>
-
-<p>File systems call <b>CcMdlWriteComplete</b> to free the memory descriptor lists (MDL) created by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539181">CcPrepareMdlWrite</a> for a cached file and to mark the specified byte range for write. All physical pages that were locked down are unlocked. Any pages that were mapped are unmapped.</p>
-
-<p>If the FO_WRITE_THROUGH flag is set on the file object pointed to by the <i>FileObject</i> parameter, the file data is immediately flushed to disk. This flush operation re-enters the file system and can cause <b>CcMdlWriteComplete</b> to raise an exception if the flush operation fails. In this case, the MDL has not been freed and the caller may re-try the operation.</p>
-
-<p>After <b>CcMdlWriteComplete</b> is called successfully for an IRP_MN_COMPLETE operation, the caller must set the IRP's <b>MdlAddress</b> field to <b>NULL</b>. </p>
-
-<p>Before using <b>CcMdlWriteComplete</b>, file system developers are strongly encouraged to study the way this routine is used in the FASTFAT sample. </p>
-
-<p>Each call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539181">CcPrepareMdlWrite</a> must be followed by a call to <b>CcMdlWriteComplete</b> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff539166">CcMdlWriteAbort</a>.</p>
+<p>Each call to <a href="..\ntifs\nf-ntifs-ccpreparemdlwrite.md">CcPrepareMdlWrite</a> must be followed by a call to <b>CcMdlWriteComplete</b> or <a href="..\ntifs\nf-ntifs-ccmdlwriteabort.md">CcMdlWriteAbort</a>.</p>
 
 ## -requirements
 <table>
@@ -154,10 +144,10 @@ VOID CcMdlWriteComplete(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539166">CcMdlWriteAbort</a>
+<a href="..\ntifs\nf-ntifs-ccmdlwriteabort.md">CcMdlWriteAbort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539181">CcPrepareMdlWrite</a>
+<a href="..\ntifs\nf-ntifs-ccpreparemdlwrite.md">CcPrepareMdlWrite</a>
 </dt>
 </dl>
 <p> </p>

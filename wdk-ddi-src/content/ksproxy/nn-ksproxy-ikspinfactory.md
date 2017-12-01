@@ -7,7 +7,7 @@ old-location: stream\ikspinfactory.htm
 old-project: stream
 ms.assetid: b86f4048-c175-4062-969c-c9c443d6d394
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsSynchronousDeviceControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,10 +78,6 @@ req.iface:
 <p> </p>
 
 ## -remarks
-<p>The IID for this interface is IID_IKsPinFactory.</p>
-
-<p>The IID for this interface is IID_IKsPinFactory.</p>
-
 <p>The IID for this interface is IID_IKsPinFactory.</p>
 
 ## -requirements

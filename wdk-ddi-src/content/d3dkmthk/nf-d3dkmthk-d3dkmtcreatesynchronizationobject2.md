@@ -57,7 +57,7 @@ NTSTATUS D3DKMTCreateSynchronizationObject2(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547854">D3DKMT_CREATESYNCHRONIZATIONOBJECT2</a> structure that describes a synchronization object.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createsynchronizationobject2.md">D3DKMT_CREATESYNCHRONIZATIONOBJECT2</a> structure that describes a synchronization object.</p>
 </dd>
 </dl>
 
@@ -71,7 +71,7 @@ NTSTATUS D3DKMTCreateSynchronizationObject2(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546879">D3DKMTCreateSynchronizationObject2</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatesynchronizationobject2.md">D3DKMTCreateSynchronizationObject2</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
@@ -135,7 +135,7 @@ NTSTATUS D3DKMTCreateSynchronizationObject2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547854">D3DKMT_CREATESYNCHRONIZATIONOBJECT2</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createsynchronizationobject2.md">D3DKMT_CREATESYNCHRONIZATIONOBJECT2</a>
 </dt>
 </dl>
 <p> </p>

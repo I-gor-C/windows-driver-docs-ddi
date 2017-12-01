@@ -72,12 +72,12 @@ typedef struct _WIAS_ENDORSER_INFO {
 ### -field <b>pEndorserValues</b>
 
 <dd>
-<p>Points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff549562">WIAS_ENDORSER_VALUE</a> structures, holding custom token/value pairs. If the value of the <b>ulNumEndorserValues</b> member is 0, this member should be <b>NULL</b>.</p>
+<p>Points to an array of <a href="..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-value.md">WIAS_ENDORSER_VALUE</a> structures, holding custom token/value pairs. If the value of the <b>ulNumEndorserValues</b> member is 0, this member should be <b>NULL</b>.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Currently, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549282">wiasParseEndorserString</a> recognizes three endorser tokens: $DATE$, $TIME$, $PAGE_COUNT$, $DAY$, $MONTH$, and $YEAR$. (See <i>wiamdef.h</i>.) Any other tokens and their values must be specified in the <b>pEndorserValues</b> member of this structure.</p>
+<p>Currently, <a href="..\wiamdef\nf-wiamdef-wiasparseendorserstring.md">wiasParseEndorserString</a> recognizes three endorser tokens: $DATE$, $TIME$, $PAGE_COUNT$, $DAY$, $MONTH$, and $YEAR$. (See <i>wiamdef.h</i>.) Any other tokens and their values must be specified in the <b>pEndorserValues</b> member of this structure.</p>
 
 ## -requirements
 <table>
@@ -104,10 +104,10 @@ typedef struct _WIAS_ENDORSER_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549282">wiasParseEndorserString</a>
+<a href="..\wiamdef\nf-wiamdef-wiasparseendorserstring.md">wiasParseEndorserString</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549562">WIAS_ENDORSER_VALUE</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-value.md">WIAS_ENDORSER_VALUE</a>
 </dt>
 </dl>
 <p> </p>

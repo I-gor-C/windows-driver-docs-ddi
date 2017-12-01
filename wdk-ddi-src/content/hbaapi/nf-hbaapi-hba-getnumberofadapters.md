@@ -62,12 +62,6 @@ HBA_UINT32 HBA_API HBA_GetNumberOfAdapters(void);
 ## -remarks
 <p>The <b>HBA_GetNumberOfAdapters</b> routine allows the caller to dynamically determine the size of the HBA inventory without having to restart the system, the HBA drivers, or the library. </p>
 
-<p>The <b>HBA_GetNumberOfAdapters</b> routine allows the caller to dynamically determine the size of the HBA inventory without having to restart the system, the HBA drivers, or the library. </p>
-
-<p>The <b>HBA_GetNumberOfAdapters</b> routine allows the caller to dynamically determine the size of the HBA inventory without having to restart the system, the HBA drivers, or the library. </p>
-
-<p>The <b>HBA_GetNumberOfAdapters</b> routine allows the caller to dynamically determine the size of the HBA inventory without having to restart the system, the HBA drivers, or the library. </p>
-
 ## -requirements
 <table>
 <tr>

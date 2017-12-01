@@ -7,7 +7,7 @@ old-location: wdf\wdfdpcwdmgetdpc.htm
 old-project: wdf
 ms.assetid: a4ca55f9-0fbd-4969-8807-baa79099cff0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfDpcWdmGetDpc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,21 +71,13 @@ PKDPC WdfDpcWdmGetDpc(
 </p>
 
 ## -remarks
-<p>The framework creates a KDPC structure when a framework-based driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff547140">WdfDpcCreate</a> to create a DPC object. </p>
+<p>The framework creates a KDPC structure when a framework-based driver calls <a href="..\wdfdpc\nf-wdfdpc-wdfdpccreate.md">WdfDpcCreate</a> to create a DPC object. </p>
 
 <p>A driver might call <b>WdfDpcWdmGetDpc</b> from within its <a href="wdf.evtdpcfunc">EvtDpcFunc</a> callback function.</p>
 
 <p>The pointer that <b>WdfDpcWdmGetDpc</b> returns is valid until the framework DPC object is deleted. If the driver provides an <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-cleanup.md">EvtCleanupCallback</a> function for the framework DPC object, the pointer is valid until the callback function returns.</p>
 
-<p>The following code example returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure that is associated with a specified DPC object. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff547140">WdfDpcCreate</a> code example shows how the specified DPC object was created.</p>
-
-<p>The framework creates a KDPC structure when a framework-based driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff547140">WdfDpcCreate</a> to create a DPC object. </p>
-
-<p>A driver might call <b>WdfDpcWdmGetDpc</b> from within its <a href="wdf.evtdpcfunc">EvtDpcFunc</a> callback function.</p>
-
-<p>The pointer that <b>WdfDpcWdmGetDpc</b> returns is valid until the framework DPC object is deleted. If the driver provides an <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-cleanup.md">EvtCleanupCallback</a> function for the framework DPC object, the pointer is valid until the callback function returns.</p>
-
-<p>The following code example returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure that is associated with a specified DPC object. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff547140">WdfDpcCreate</a> code example shows how the specified DPC object was created.</p>
+<p>The following code example returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure that is associated with a specified DPC object. The <a href="..\wdfdpc\nf-wdfdpc-wdfdpccreate.md">WdfDpcCreate</a> code example shows how the specified DPC object was created.</p>
 
 ## -requirements
 <table>
@@ -140,7 +132,7 @@ PKDPC WdfDpcWdmGetDpc(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -148,13 +140,13 @@ PKDPC WdfDpcWdmGetDpc(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547140">WdfDpcCreate</a>
+<a href="..\wdfdpc\nf-wdfdpc-wdfdpccreate.md">WdfDpcCreate</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551296">WDF_DPC_CONFIG</a>
+<a href="..\wdfdpc\ns-wdfdpc--wdf-dpc-config.md">WDF_DPC_CONFIG</a>
 </dt>
 <dt>
 <a href="wdf.evtdpcfunc">EvtDpcFunc</a>
@@ -162,4 +154,4 @@ PKDPC WdfDpcWdmGetDpc(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDpcWdmGetDpc method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDpcWdmGetDpc method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

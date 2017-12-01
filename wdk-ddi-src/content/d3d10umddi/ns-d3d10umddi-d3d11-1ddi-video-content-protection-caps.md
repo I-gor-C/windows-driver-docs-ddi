@@ -60,7 +60,7 @@ typedef struct D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS {
 ### -field <b>Caps</b>
 
 <dd>
-<p>A bitwise <b>OR</b> of zero or more flags from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406439">D3D11_1DDI_CONTENT_PROTECTION_CAPS</a> enumeration.</p>
+<p>A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-content-protection-caps.md">D3D11_1DDI_CONTENT_PROTECTION_CAPS</a> enumeration.</p>
 </dd>
 
 ### -field <b>KeyExchangeTypeCount</b>
@@ -118,7 +118,7 @@ typedef struct D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406439">D3D11_1DDI_CONTENT_PROTECTION_CAPS</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-content-protection-caps.md">D3D11_1DDI_CONTENT_PROTECTION_CAPS</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-getcryptokeyexchangetype.md">GetCryptoKeyExchangeType</a>

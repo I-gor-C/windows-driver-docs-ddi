@@ -7,7 +7,7 @@ old-location: audio\iprefetchoffset_setprefetchoffset.htm
 old-project: audio
 ms.assetid: fef8e8b8-7e79-4d88-b643-9b371e4297fd
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IPreFetchOffset, SetPreFetchOffset, IPreFetchOffset::SetPreFetchOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,19 +73,7 @@ VOID SetPreFetchOffset(
 
 <p>The play cursor specifies the buffer position of the sound sample that is currently being played by the audio device.</p>
 
-<p>For more information about write cursors and play cursors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537091">KSAUDIO_POSITION</a>.</p>
-
-<p>For information about using <code>SetPreFetchOffset</code> to control a DirectSound stream's prefetch offset, see <a href="NULL">Prefetch Offsets</a>.</p>
-
-<p>A WavePci miniport driver calls the <code>SetPreFetchOffset</code> method to specify the prefetch offset of a hardware-accelerated DirectSound output stream.</p>
-
-<p>The prefetch offset is the number of bytes of data separating the write cursor from the play cursor in the audio device's hardware buffer:</p>
-
-<p>The write cursor specifies the buffer position into which a DirectSound application can safely write the next sound sample.</p>
-
-<p>The play cursor specifies the buffer position of the sound sample that is currently being played by the audio device.</p>
-
-<p>For more information about write cursors and play cursors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537091">KSAUDIO_POSITION</a>.</p>
+<p>For more information about write cursors and play cursors, see <a href="audio.ksaudio_position">KSAUDIO_POSITION</a>.</p>
 
 <p>For information about using <code>SetPreFetchOffset</code> to control a DirectSound stream's prefetch offset, see <a href="NULL">Prefetch Offsets</a>.</p>
 
@@ -124,21 +112,21 @@ VOID SetPreFetchOffset(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536951">IPreFetchOffset</a>
+<a href="..\portcls\nn-portcls-iprefetchoffset.md">IPreFetchOffset</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537091">KSAUDIO_POSITION</a>
+<a href="audio.ksaudio_position">KSAUDIO_POSITION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536727">IMiniportWavePciStream::GetPosition</a>
+<a href="audio.iminiportwavepcistream_getposition">IMiniportWavePciStream::GetPosition</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
+<a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IPreFetchOffset::SetPreFetchOffset method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IPreFetchOffset::SetPreFetchOffset method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

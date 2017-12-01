@@ -66,9 +66,7 @@ inline void __stdcall wiauDbgLegacyTrace(
 <p>None</p>
 
 ## -remarks
-<p>The <b>wiauDbgLegacyTrace</b> function is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550161">wiauDbgTrace</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.</p>
-
-<p>The <b>wiauDbgLegacyTrace</b> function is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550161">wiauDbgTrace</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.</p>
+<p>The <b>wiauDbgLegacyTrace</b> function is identical to the <a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.</p>
 
 ## -requirements
 <table>
@@ -105,7 +103,7 @@ inline void __stdcall wiauDbgLegacyTrace(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550161">wiauDbgTrace</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
 </dt>
 </dl>
 <p> </p>

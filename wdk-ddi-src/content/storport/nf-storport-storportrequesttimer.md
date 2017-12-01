@@ -69,7 +69,7 @@ ULONG StorPortRequestTimer(
 ### -param <i>TimerHandle</i> [in]
 
 <dd>
-<p>A pointer to an opaque buffer for the timer context returned by <a href="https://msdn.microsoft.com/library/windows/hardware/hh451483">StorPortInitializeTimer</a>.</p>
+<p>A pointer to an opaque buffer for the timer context returned by <a href="..\storport\nf-storport-storportinitializetimer.md">StorPortInitializeTimer</a>.</p>
 </dd>
 
 ### -param <i>TimerCallback</i> [in]
@@ -130,8 +130,6 @@ VOID
 ## -remarks
 <p>The <b>StorPortRequestTimer</b> routine is callable at any IRQL. However, if the routine is called when IRQL &gt; DISPATCH_LEVEL, the timer's scheduling is deferred until IRQL &lt;= DISPATCH_LEVEL.</p>
 
-<p>The <b>StorPortRequestTimer</b> routine is callable at any IRQL. However, if the routine is called when IRQL &gt; DISPATCH_LEVEL, the timer's scheduling is deferred until IRQL &lt;= DISPATCH_LEVEL.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -175,16 +173,16 @@ VOID
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557426">HwStorTimer</a>
+<a href="storage.hwstortimer">HwStorTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451476">StorPortFreeTimer</a>
+<a href="..\storport\nf-storport-storportfreetimer.md">StorPortFreeTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451483">StorPortInitializeTimer</a>
+<a href="..\storport\nf-storport-storportinitializetimer.md">StorPortInitializeTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567433">StorPortNotification</a>
+<a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>
 </dt>
 </dl>
 <p> </p>

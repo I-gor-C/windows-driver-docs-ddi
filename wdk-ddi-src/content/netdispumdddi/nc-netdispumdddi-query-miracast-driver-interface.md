@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Called by the operating system to query the Miracast user-mode driver interface, <a href="https://msdn.microsoft.com/library/windows/hardware/dn265476">MIRACAST_DRIVER_INTERFACE</a>.</p>
+<p>Called by the operating system to query the Miracast user-mode driver interface, <a href="..\netdispumdddi\ns-netdispumdddi--miracast-driver-interface.md">MIRACAST_DRIVER_INTERFACE</a>.</p>
 
 
 ## -prototype
@@ -75,7 +75,7 @@ NTSTATUS QueryMiracastDriverInterface(
 ### -param <i>pMiracastDriverInterface</i> [out]
 
 <dd>
-<p>A pointer to a buffer, supplied by the operating system, that holds the returned Miracast display driver interface, which is a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn265476">MIRACAST_DRIVER_INTERFACE</a>.</p>
+<p>A pointer to a buffer, supplied by the operating system, that holds the returned Miracast display driver interface, which is a structure of type <a href="..\netdispumdddi\ns-netdispumdddi--miracast-driver-interface.md">MIRACAST_DRIVER_INTERFACE</a>.</p>
 </dd>
 </dl>
 
@@ -83,8 +83,6 @@ NTSTATUS QueryMiracastDriverInterface(
 <p>On success, this function returns <b>STATUS_SUCCESS</b>. Otherwise, the function returns an error code defined in the Ntstatus.h header.</p>
 
 ## -remarks
-<p>When the Miracast user-mode driver is loaded, the operating system calls the <a href="base.getprocaddress">GetProcAddress</a> function with "QueryMiracastDriverInterface" entered as the function name in the <i>lpProcName</i> parameter.</p>
-
 <p>When the Miracast user-mode driver is loaded, the operating system calls the <a href="base.getprocaddress">GetProcAddress</a> function with "QueryMiracastDriverInterface" entered as the function name in the <i>lpProcName</i> parameter.</p>
 
 ## -requirements
@@ -133,7 +131,7 @@ NTSTATUS QueryMiracastDriverInterface(
 <a href="base.getprocaddress">GetProcAddress</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265476">MIRACAST_DRIVER_INTERFACE</a>
+<a href="..\netdispumdddi\ns-netdispumdddi--miracast-driver-interface.md">MIRACAST_DRIVER_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfo.htm
 old-project: netvista
 ms.assetid: 6c28e50c-a76a-4a7c-af29-6e58bcfe3f3b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILDISPLAYINFO, RILDISPLAYINFO, *LPRILDISPLAYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

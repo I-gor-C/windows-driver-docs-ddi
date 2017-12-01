@@ -81,13 +81,6 @@ NTSTATUS APIENTRY DXGKDDI_EXCHANGEPRESTARTINFO(
 This function is always called at PASSIVE level so the supporting code should be made pageable where possible.
 </p>
 
-<p>This DDI will be called after DxgkDdiAddDevice and before DxgkDdiStartDevice so the driver does not have access to its own hardware resources yet however it can use the PhysicalDeviceObject passed to the driver in DxgkDdiAddDevice to call IoGetDeviceProperty, for example to find the hardware id to decide what to return in the output fields of the DXGK_PRE_START_INFO structure.</p>
-
-<p> 
-
-This function is always called at PASSIVE level so the supporting code should be made pageable where possible.
-</p>
-
 ## -requirements
 <table>
 <tr>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetpipe2.htm
 old-project: wdf
 ms.assetid: c3df39cb-17f4-4f68-bde3-f53ba40dde85
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFUsbTargetPipe2, ConfigureContinuousReader, IWDFUsbTargetPipe2::ConfigureContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUsbTargetPipe2</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560391">IWDFUsbTargetPipe</a>. <b>IWDFUsbTargetPipe2</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUsbTargetPipe2</b> interface inherits from <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>. <b>IWDFUsbTargetPipe2</b> also has these types of members:</p>
 
 <p>The <b>IWDFUsbTargetPipe2</b> interface has these methods.</p>
 
@@ -64,7 +64,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560395">IWDFUsbTargetPipe2::ConfigureContinuousReader</a>
+<a href="wdf.iwdfusbtargetpipe2_configurecontinuousreader">IWDFUsbTargetPipe2::ConfigureContinuousReader</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetpipe2_configurecontinuousreader">ConfigureContinuousReader</a> method configures the framework to continuously read from a USB pipe.</p>
@@ -75,8 +75,6 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>Drivers obtain the <b>IWDFUsbTargetPipe2</b> interface by calling <b>IWDFUsbTargetPipe::QueryInterface</b>.</p>
-
 <p>Drivers obtain the <b>IWDFUsbTargetPipe2</b> interface by calling <b>IWDFUsbTargetPipe::QueryInterface</b>.</p>
 
 ## -requirements

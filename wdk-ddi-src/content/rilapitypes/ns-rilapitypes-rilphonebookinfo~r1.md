@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookinfo_2.htm
 old-project: netvista
 ms.assetid: bd302343-c9e3-4d1d-b991-ac19fbdb2da3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILPHONEBOOKINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

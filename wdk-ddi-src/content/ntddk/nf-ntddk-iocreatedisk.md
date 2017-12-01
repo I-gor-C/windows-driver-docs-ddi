@@ -58,13 +58,13 @@ NTSTATUS IoCreateDisk(
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> for the raw disk.</p>
+<p>Specifies the <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> for the raw disk.</p>
 </dd>
 
 ### -param <i>Disk</i> [in, optional]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552484">CREATE_DISK</a> structure that specifies the type and parameters for the partition table. If <i>Disk</i> is <b>NULL</b>, the routine deletes the partition table on the disk.</p>
+<p>Pointer to a <a href="..\ntdddisk\ns-ntdddisk--create-disk.md">CREATE_DISK</a> structure that specifies the type and parameters for the partition table. If <i>Disk</i> is <b>NULL</b>, the routine deletes the partition table on the disk.</p>
 </dd>
 </dl>
 
@@ -72,9 +72,7 @@ NTSTATUS IoCreateDisk(
 <p>Returns STATUS_SUCCESS on success, or the appropriate error code on failure.</p>
 
 ## -remarks
-<p><b>IoCreateDisk</b> must only be used by disk drivers. Other drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559436">IOCTL_DISK_CREATE_DISK</a> I/O request instead.</p>
-
-<p><b>IoCreateDisk</b> must only be used by disk drivers. Other drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559436">IOCTL_DISK_CREATE_DISK</a> I/O request instead.</p>
+<p><b>IoCreateDisk</b> must only be used by disk drivers. Other drivers should use the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-create-disk.md">IOCTL_DISK_CREATE_DISK</a> I/O request instead.</p>
 
 ## -requirements
 <table>
@@ -131,10 +129,10 @@ NTSTATUS IoCreateDisk(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552484">CREATE_DISK</a>
+<a href="..\ntdddisk\ns-ntdddisk--create-disk.md">CREATE_DISK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559436">IOCTL_DISK_CREATE_DISK</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-create-disk.md">IOCTL_DISK_CREATE_DISK</a>
 </dt>
 </dl>
 <p> </p>

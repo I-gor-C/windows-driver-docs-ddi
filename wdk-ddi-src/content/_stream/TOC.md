@@ -21,6 +21,7 @@
 ### [IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO IOCTL](../avc/ni-avc-ioctl-avc-remove-virtual-subunit-info.md)
 ### [IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO IOCTL](../avc/ni-avc-ioctl-avc-update-virtual-subunit-info.md)
 ### [KSPIN_FLAG_AVC enumeration](../avc/ne-avc--kspin-flag-avc.md)
+### [PFNAVCINTERSECTHANDLER callback](../avc/nc-avc-pfnavcintersecthandler.md)
 ## [Avcstrm.h](../avcstrm/index.md)
 ### [AVCSTRM_BUFFER_STRUCT structure](../avcstrm/ns-avcstrm--avcstrm-buffer-struct.md)
 ### [AVCSTRM_FORMAT enumeration](../avcstrm/ne-avcstrm--avcstrm-format.md)

@@ -58,7 +58,7 @@ typedef struct _CHANGER_ELEMENT_LIST {
 ### -field <b>Element</b>
 
 <dd>
-<p>Describes the first element of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551457">CHANGER_ELEMENT</a> in a range <b>NumberOfElements</b> long.</p>
+<p>Describes the first element of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a> in a range <b>NumberOfElements</b> long.</p>
 </dd>
 
 ### -field <b>NumberOfElements</b>
@@ -88,13 +88,13 @@ typedef struct _CHANGER_ELEMENT_LIST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551457">CHANGER_ELEMENT</a>
+<a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551424">ChangerGetElementStatus</a>
+<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551433">ChangerInitializeElementStatus</a>
+<a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
 </dt>
 </dl>
 <p> </p>

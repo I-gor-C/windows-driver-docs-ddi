@@ -119,7 +119,7 @@ typedef struct _DXGK_GPUMMUCAPS {
 ### -field <b>LargePageSupported</b>
 
 <dd>
-<p>When set to 1, all levels of page tables, except the leaf one, support large pages (<b>LargePage</b> bit in <a href="https://msdn.microsoft.com/library/windows/hardware/ff562008">DXGK_PTE</a>).</p>
+<p>When set to 1, all levels of page tables, except the leaf one, support large pages (<b>LargePage</b> bit in <a href="..\d3dukmdt\ns-d3dukmdt--dxgk-pte.md">DXGK_PTE</a>).</p>
 </dd>
 
 ### -field <b>DualPteSupported</b>
@@ -168,7 +168,7 @@ typedef struct _DXGK_GPUMMUCAPS {
 
 <dd>
 <p>The number of page table levels supported. The minimum value is 2 (defined as <b>DXGK_MIN_PAGE_TABLE_LEVEL_COUNT</b>). The maximum value is <b>DXGK_MAX_PAGE_TABLE_LEVEL_COUNT</b>. </p>
-<p>When <b>PageTableLevelCount</b> is 2, the root page table is dynamically resizable and the size of the page table is determined through <a href="display.dxgkddigetrootpagetablesize">DxgkDdiGetRootPageTableSize</a>. When <b>PageTableLevelCount</b> is greater than 2, all page table levels have a fixed size, which is described through <a href="https://msdn.microsoft.com/library/windows/hardware/dn906832">DXGK_PAGE_TABLE_LEVEL_DESC</a><b>::PageTableSizeInBytes</b>.</p>
+<p>When <b>PageTableLevelCount</b> is 2, the root page table is dynamically resizable and the size of the page table is determined through <a href="display.dxgkddigetrootpagetablesize">DxgkDdiGetRootPageTableSize</a>. When <b>PageTableLevelCount</b> is greater than 2, all page table levels have a fixed size, which is described through <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-page-table-level-desc.md">DXGK_PAGE_TABLE_LEVEL_DESC</a><b>::PageTableSizeInBytes</b>.</p>
 </dd>
 
 ### -field <b>LegacyBehaviors</b>

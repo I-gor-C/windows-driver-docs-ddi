@@ -59,7 +59,7 @@ void UMDEtwRegister(
 
 <dd>
 <p>A pointer to a callback function that returns information about the current state of the user-mode driver.</p>
-<p>This callback function should call the <a href="https://msdn.microsoft.com/library/windows/hardware/jj542437">UMDEtwLogMapAllocation</a> function for every current allocation mapping.</p>
+<p>This callback function should call the <a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a> function for every current allocation mapping.</p>
 </dd>
 </dl>
 
@@ -67,12 +67,6 @@ void UMDEtwRegister(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The data type for the <i>CbRundown</i> parameter is defined as:</p>
-
-<p><b>UMDEtwRegister</b> is defined inline in Umdprovider.h as:</p>
-
-<p>The <a href="etw.eventregister_func">EventRegister</a> function and the <b>EVENT_CONTROL_CODE_XXX</b> values are  described in the <a href="events.windows_events">Windows Events</a> documentation.</p>
-
 <p>The data type for the <i>CbRundown</i> parameter is defined as:</p>
 
 <p><b>UMDEtwRegister</b> is defined inline in Umdprovider.h as:</p>
@@ -122,10 +116,10 @@ void UMDEtwRegister(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj542437">UMDEtwLogMapAllocation</a>
+<a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj542440">UMDEtwUnregister</a>
+<a href="..\umdprovider\nf-umdprovider-umdetwunregister.md">UMDEtwUnregister</a>
 </dt>
 </dl>
 <p> </p>

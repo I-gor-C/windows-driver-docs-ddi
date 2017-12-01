@@ -91,10 +91,6 @@ HRESULT GetNextStream(
 
 <p>When the current transfer sequence is cancelled, the <b>GetNextStream</b> method returns S_FALSE.</p>
 
-<p>When the client requests to skip the data transfer, the <b>GetNextStream</b> method returns WIA_STATUS_SKIP_ITEM. The WIA mini-driver must skip the current image transfer and continue with the next image transfer, if any. For example, for a download transfer, finish scanning the current image and then discard the image data.</p>
-
-<p>When the current transfer sequence is cancelled, the <b>GetNextStream</b> method returns S_FALSE.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -136,7 +132,7 @@ HRESULT GetNextStream(
 <a href="NULL">Data Transfer Between Legacy Application and Windows Vista Driver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151550">IWiaMiniDrvTransferCallback</a>
+<a href="..\wiamindr_lh\nn-wiamindr-lh-iwiaminidrvtransfercallback.md">IWiaMiniDrvTransferCallback</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551561">WIA_IPA_FULL_ITEM_NAME</a>

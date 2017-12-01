@@ -7,7 +7,7 @@ old-location: netvista\rilcapstype_2.htm
 old-project: netvista
 ms.assetid: 492436da-9d6f-462b-9c4d-4466cb2f78f6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

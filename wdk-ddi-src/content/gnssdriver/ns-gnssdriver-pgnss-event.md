@@ -7,7 +7,7 @@ old-location: sensors\gnss_event.htm
 old-project: sensors
 ms.assetid: FECF2444-CFF7-4B4D-AC3A-D3DD9B045AFD
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_EVENT, GNSS_EVENT, *PGNSS_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices

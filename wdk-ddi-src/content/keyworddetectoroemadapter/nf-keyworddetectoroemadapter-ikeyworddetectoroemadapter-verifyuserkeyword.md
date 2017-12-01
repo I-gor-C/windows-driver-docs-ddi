@@ -7,7 +7,7 @@ old-location: audio\ikeyworddetectoroemadapter_verifyuserkeyword.htm
 old-project: audio
 ms.assetid: AFF679B6-B389-4EA2-8834-9B1B47412B7D
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IKeywordDetectorOemAdapter, VerifyUserKeyword, IKeywordDetectorOemAdapter::VerifyUserKeyword
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ HRESULT VerifyUserKeyword(
 ### -param <i>KeywordId</i> [in]
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn957510">KEYWORDID</a> in the  <i>UserRecording</i> parameter.</p>
+<p>The <a href="audio.keywordid">KEYWORDID</a> in the  <i>UserRecording</i> parameter.</p>
 </dd>
 
 ### -param <i>LangId</i> [in]
@@ -111,14 +111,6 @@ HRESULT VerifyUserKeyword(
 
 ## -remarks
 <p>Note that audio is processed in a unique way for voice activation training. The following table summarizes the differences between voice activation training and the regular voice recognition usage. </p>
-
-<p> </p>
-
-<p></p>
-
-<p>Note that audio is processed in a unique way for voice activation training. The following table summarizes the differences between voice activation training and the regular voice recognition usage. </p>
-
-<p> </p>
 
 <p></p>
 
@@ -165,10 +157,10 @@ HRESULT VerifyUserKeyword(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn957504">IKeywordDetectorOemAdapter</a>
+<a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn957510">KEYWORDID</a>
+<a href="audio.keywordid">KEYWORDID</a>
 </dt>
 <dt>
 <a href="mf.imfmediatype">IMFMediaType</a>
@@ -176,4 +168,4 @@ HRESULT VerifyUserKeyword(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IKeywordDetectorOemAdapter::VerifyUserKeyword method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IKeywordDetectorOemAdapter::VerifyUserKeyword method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

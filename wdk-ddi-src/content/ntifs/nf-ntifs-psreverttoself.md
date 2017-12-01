@@ -60,13 +60,7 @@ VOID PsRevertToSelf(void);
 <p>None</p>
 
 ## -remarks
-<p>A server thread can impersonate a client by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551907">PsImpersonateClient</a> routine. When the thread is done impersonating the client, it can call the <b>PsRevertToSelf</b> routine to end all impersonations.</p>
-
-<p>A server thread can impersonate a client by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551907">PsImpersonateClient</a> routine. When the thread is done impersonating the client, it can call the <b>PsRevertToSelf</b> routine to end all impersonations.</p>
-
-<p>A server thread can impersonate a client by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551907">PsImpersonateClient</a> routine. When the thread is done impersonating the client, it can call the <b>PsRevertToSelf</b> routine to end all impersonations.</p>
-
-<p>A server thread can impersonate a client by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551907">PsImpersonateClient</a> routine. When the thread is done impersonating the client, it can call the <b>PsRevertToSelf</b> routine to end all impersonations.</p>
+<p>A server thread can impersonate a client by calling the <a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a> routine. When the thread is done impersonating the client, it can call the <b>PsRevertToSelf</b> routine to end all impersonations.</p>
 
 ## -requirements
 <table>
@@ -131,7 +125,7 @@ VOID PsRevertToSelf(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551907">PsImpersonateClient</a>
+<a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
 </dt>
 </dl>
 <p> </p>

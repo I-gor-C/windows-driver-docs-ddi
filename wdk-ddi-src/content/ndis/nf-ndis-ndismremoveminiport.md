@@ -7,7 +7,7 @@ old-location: netvista\ndismremoveminiport.htm
 old-project: netvista
 ms.assetid: 70745b03-f9a3-4398-b41a-dc75bd16ffe0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMRemoveMiniport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,9 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see 
-   NdisMRemoveMiniport (NDIS
-   5.1).
+req.target-min-winverclnt: Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see    NdisMRemoveMiniport (NDIS   5.1).
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -85,15 +83,6 @@ NDIS_STATUS NdisMRemoveMiniport(
     causing the computer to freeze every few seconds, the driver can request NDIS to remove the miniport
     adapter.</p>
 
-<p>If a miniport driver has determined that a particular miniport adapter has failed and is
-    unrecoverable, the miniport driver can call 
-    <b>NdisMRemoveMiniport</b> to remove the miniport adapter from the local computer system. In this call,
-    the miniport driver passes the handle to the miniport adapter to remove.</p>
-
-<p>For example, if a miniport driver detects that a miniport adapter is resetting very frequently and is
-    causing the computer to freeze every few seconds, the driver can request NDIS to remove the miniport
-    adapter.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -149,7 +138,7 @@ NDIS_STATUS NdisMRemoveMiniport(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>
+<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
 </td>
 </tr>
 </table>

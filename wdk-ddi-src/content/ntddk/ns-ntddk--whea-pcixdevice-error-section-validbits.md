@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union describes which members of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560589">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure contain valid data.</p>
+<p>The WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk--whea-pcixdevice-error-section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure contain valid data.</p>
 
 
 ## -syntax
@@ -106,7 +106,7 @@ typedef union _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS {
 </dl>
 
 ## -remarks
-<p>A WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560589">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.</p>
+<p>A WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk--whea-pcixdevice-error-section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.</p>
 
 ## -requirements
 <table>
@@ -134,7 +134,7 @@ typedef union _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560589">WHEA_PCIXDEVICE_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk--whea-pcixdevice-error-section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a>
 </dt>
 </dl>
 <p> </p>

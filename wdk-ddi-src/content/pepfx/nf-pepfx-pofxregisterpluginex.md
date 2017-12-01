@@ -7,7 +7,7 @@ old-location: kernel\pofxregisterpluginex.htm
 old-project: kernel
 ms.assetid: 68753690-A6DC-46BE-9981-F395B98C3245
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PoFxRegisterPluginEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ NTSTATUS PoFxRegisterPluginEx(
 ### -param <i>PepInformation</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt186745">PEP_INFORMATION</a> structure that contains pointers to one or more callback routines that are implemented by the PEP. These routines handle notifications that are sent to the PEP by PoFx.</p>
+<p>A pointer to a <a href="..\pepfx\ns-pepfx--pep-information.md">PEP_INFORMATION</a> structure that contains pointers to one or more callback routines that are implemented by the PEP. These routines handle notifications that are sent to the PEP by PoFx.</p>
 </dd>
 
 ### -param <i>Flags</i> [in]
@@ -82,7 +82,7 @@ NTSTATUS PoFxRegisterPluginEx(
 ### -param <i>KernelInformation</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt629114">PEP_KERNEL_INFORMATION</a> structure.</p>
+<p>A pointer to a <a href="kernel.pep_kernel_information">PEP_KERNEL_INFORMATION</a> structure.</p>
 </dd>
 </dl>
 
@@ -102,15 +102,7 @@ NTSTATUS PoFxRegisterPluginEx(
 
 <p>A PEP cannot unregister, and cannot register twice. If the PEP must be serviced, the operating system must restart.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/mt186873">PoFxRegisterPlugin</a> routine is similar to <b>PoFxRegisterPluginEx</b>, except that it does not take a <i>Flags</i> parameter.</p>
-
-<p>The PEP must call <b>PoFxRegisterPluginEx</b> at IRQL = PASSIVE_LEVEL.</p>
-
-<p>A PEP calls this routine to register itself with PoFx.</p>
-
-<p>A PEP cannot unregister, and cannot register twice. If the PEP must be serviced, the operating system must restart.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/mt186873">PoFxRegisterPlugin</a> routine is similar to <b>PoFxRegisterPluginEx</b>, except that it does not take a <i>Flags</i> parameter.</p>
+<p>The <a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a> routine is similar to <b>PoFxRegisterPluginEx</b>, except that it does not take a <i>Flags</i> parameter.</p>
 
 <p>The PEP must call <b>PoFxRegisterPluginEx</b> at IRQL = PASSIVE_LEVEL.</p>
 
@@ -157,15 +149,15 @@ NTSTATUS PoFxRegisterPluginEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186745">PEP_INFORMATION</a>
+<a href="..\pepfx\ns-pepfx--pep-information.md">PEP_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt629114">PEP_KERNEL_INFORMATION</a>
+<a href="kernel.pep_kernel_information">PEP_KERNEL_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186873">PoFxRegisterPlugin</a>
+<a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxRegisterPluginEx routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxRegisterPluginEx routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

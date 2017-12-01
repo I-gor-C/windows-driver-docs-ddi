@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Indicates the progress of a node within an active physical display adapter (engine) specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451299">DXGKARG_QUERYENGINESTATUS</a> structure.</p>
+<p>Indicates the progress of a node within an active physical display adapter (engine) specified by a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryenginestatus.md">DXGKARG_QUERYENGINESTATUS</a> structure.</p>
 
 
 ## -syntax
@@ -115,7 +115,7 @@ typedef struct _DXGK_ENGINESTATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451299">DXGKARG_QUERYENGINESTATUS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryenginestatus.md">DXGKARG_QUERYENGINESTATUS</a>
 </dt>
 </dl>
 <p> </p>

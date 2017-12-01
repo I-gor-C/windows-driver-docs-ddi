@@ -7,7 +7,7 @@ old-location: audio\iportevents_addeventtoeventlist.htm
 old-project: audio
 ms.assetid: 49b01942-3562-4fb2-907b-8863b2f09f8e
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IPortEvents, AddEventToEventList, IPortEvents::AddEventToEventList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ void AddEventToEventList(
 ### -param <i>EventEntry</i> [in]
 
 <dd>
-<p>Pointer to the event entry that describes the event. This is an opaque system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a>.</p>
+<p>Pointer to the event entry that describes the event. This is an opaque system structure of type <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a>.</p>
 </dd>
 </dl>
 
@@ -65,8 +65,6 @@ void AddEventToEventList(
 <p>None</p>
 
 ## -remarks
-<p>This method is used by a miniport driver's to add events to the event list that is maintained by the associated port object. The miniport driver's event handler typically calls this method in response to a PCEVENT_VERB_ADD request after the handler has validated support for the event being requested.</p>
-
 <p>This method is used by a miniport driver's to add events to the event list that is maintained by the associated port object. The miniport driver's event handler typically calls this method in response to a PCEVENT_VERB_ADD request after the handler has validated support for the event being requested.</p>
 
 ## -requirements
@@ -104,13 +102,13 @@ void AddEventToEventList(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536884">IPortEvents</a>
+<a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a>
+<a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536889">IPortEvents::GenerateEventList</a>
+<a href="audio.iportevents_generateeventlist">IPortEvents::GenerateEventList</a>
 </dt>
 <dt>
 <a href="..\portcls\nc-portcls-pcpfnevent-handler.md">EventHandler</a>
@@ -118,4 +116,4 @@ void AddEventToEventList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IPortEvents::AddEventToEventList method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IPortEvents::AddEventToEventList method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

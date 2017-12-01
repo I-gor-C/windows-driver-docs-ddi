@@ -7,7 +7,7 @@ old-location: audio\iportclspnp.htm
 old-project: audio
 ms.assetid: AC04051E-8412-4B61-B452-C05A9D8D5CD9
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcUnregisterIoTimeout
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt604860">IPortClsPnp::RegisterAdapterPnpManagement</a>
+<a href="audio.iportclspnp_registeradapterpnpmanagement">IPortClsPnp::RegisterAdapterPnpManagement</a>
 </td>
 <td align="left" width="63%">
 <p>The <code>RegisterAdapterPowerManagement</code> method registers the PnP management interface of the adapter with PortCls.</p>
@@ -71,7 +71,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt604861">IPortClsPnp::UnregisterAdapterPnpManagement</a>
+<a href="audio.iportclspnp_unregisteradapterpnpmanagement">IPortClsPnp::UnregisterAdapterPnpManagement</a>
 </td>
 <td align="left" width="63%">
 <p>The <code>UnRegisterAdapterPowerManagement</code> method unregisters the PnP management interface of the adapter from PortCls.</p>

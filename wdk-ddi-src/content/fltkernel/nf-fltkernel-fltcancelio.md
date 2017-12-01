@@ -57,7 +57,7 @@ BOOLEAN FltCancelIo(
 ### -param <i>CallbackData</i> [in]
 
 <dd>
-<p>Pointer to the callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure for the I/O operation. </p>
+<p>Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. </p>
 </dd>
 </dl>
 
@@ -65,7 +65,7 @@ BOOLEAN FltCancelIo(
 <p><b>FltCancelIo</b> returns <b>TRUE</b> if the I/O operation was canceled successfully. Otherwise, it returns <b>FALSE</b>. </p>
 
 ## -remarks
-<p>A minifilter driver that initiates an I/O operation by calling a routine such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a> can cancel the operation by calling <b>FltCancelIo</b>. The operation must be an IRP-based I/O operation, it must not be currently posted to the minifilter driver's own work queue, and it must not have been completed. </p>
+<p>A minifilter driver that initiates an I/O operation by calling a routine such as <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a> can cancel the operation by calling <b>FltCancelIo</b>. The operation must be an IRP-based I/O operation, it must not be currently posted to the minifilter driver's own work queue, and it must not have been completed. </p>
 
 <p>If the IRP has a cancel routine, <b>FltCancelIo</b> sets the IRP's cancel bit and calls the cancel routine. </p>
 
@@ -83,31 +83,9 @@ BOOLEAN FltCancelIo(
 
 <p>To determine whether a given callback data structure represents an IRP-based I/O operation, use the FLT_IS_IRP_OPERATION macro. </p>
 
-<p>To specify a cancel routine for an I/O operation, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544390">FltSetCancelCompletion</a>. </p>
+<p>To specify a cancel routine for an I/O operation, call <a href="..\fltkernel\nf-fltkernel-fltsetcancelcompletion.md">FltSetCancelCompletion</a>. </p>
 
-<p>To clear a cancel routine that was set for an I/O operation, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541857">FltClearCancelCompletion</a>. </p>
-
-<p>A minifilter driver that initiates an I/O operation by calling a routine such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a> can cancel the operation by calling <b>FltCancelIo</b>. The operation must be an IRP-based I/O operation, it must not be currently posted to the minifilter driver's own work queue, and it must not have been completed. </p>
-
-<p>If the IRP has a cancel routine, <b>FltCancelIo</b> sets the IRP's cancel bit and calls the cancel routine. </p>
-
-<p>If the IRP does not have a cancel routine, and therefore the IRP is not cancelable, <b>FltCancelIo</b> sets the IRP's cancel bit and returns <b>FALSE</b>. The IRP should be canceled at a later time when it becomes cancelable. </p>
-
-<p>If a minifilter driver that did not initiate the IRP-based I/O operation calls <b>FltCancelIo</b>, the results are unpredictable. For example, the IRP might be completed with a success NTSTATUS code even though its cancel bit was set. </p>
-
-<p><b>FltCancelIo</b> returns <b>FALSE</b> if any of the following conditions are true: </p>
-
-<p>The operation is not an IRP-based I/O operation. </p>
-
-<p>No cancel routine is specified for the I/O operation. </p>
-
-<p>The I/O operation has already been canceled. </p>
-
-<p>To determine whether a given callback data structure represents an IRP-based I/O operation, use the FLT_IS_IRP_OPERATION macro. </p>
-
-<p>To specify a cancel routine for an I/O operation, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544390">FltSetCancelCompletion</a>. </p>
-
-<p>To clear a cancel routine that was set for an I/O operation, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541857">FltClearCancelCompletion</a>. </p>
+<p>To clear a cancel routine that was set for an I/O operation, call <a href="..\fltkernel\nf-fltkernel-fltclearcancelcompletion.md">FltClearCancelCompletion</a>. </p>
 
 ## -requirements
 <table>
@@ -154,25 +132,25 @@ BOOLEAN FltCancelIo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541857">FltClearCancelCompletion</a>
+<a href="..\fltkernel\nf-fltkernel-fltclearcancelcompletion.md">FltClearCancelCompletion</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544390">FltSetCancelCompletion</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetcancelcompletion.md">FltSetCancelCompletion</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
 </dt>
 </dl>
 <p> </p>

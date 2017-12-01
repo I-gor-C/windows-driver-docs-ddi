@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfo_v3_2.htm
 old-project: netvista
 ms.assetid: 70224c7f-ec63-4d31-b66a-c41208a1b7ba
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCALLINFO_V3,
 ms.prod: windows-hardware
 ms.technology: windows-devices

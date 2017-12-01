@@ -39,7 +39,7 @@ req.iface: IDebugSystemObjects4
 
 
 ## -description
-<p>The <i>DxgkDdiUnload</i> function frees any resources allocated during execution of the display miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function.</p>
+<p>The <i>DxgkDdiUnload</i> function frees any resources allocated during execution of the display miniport driver's <a href="display.driverentry_of_display_miniport_driver">DriverEntry</a> function.</p>
 
 
 ## -prototype
@@ -68,10 +68,6 @@ VOID DxgkDdiUnload(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>Typically, there will be nothing to do in <i>DxgkDdiUnload</i>.</p>
-
-<p><i>DxgkDdiUnload</i> should be made pageable.</p>
-
 <p>Typically, there will be nothing to do in <i>DxgkDdiUnload</i>.</p>
 
 <p><i>DxgkDdiUnload</i> should be made pageable.</p>
@@ -119,7 +115,7 @@ VOID DxgkDdiUnload(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556157">DriverEntry of Display Miniport Driver</a>
+<a href="display.driverentry_of_display_miniport_driver">DriverEntry of Display Miniport Driver</a>
 </dt>
 </dl>
 <p> </p>

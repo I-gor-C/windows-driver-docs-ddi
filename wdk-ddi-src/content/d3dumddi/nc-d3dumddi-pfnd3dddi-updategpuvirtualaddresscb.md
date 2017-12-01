@@ -70,7 +70,7 @@ HRESULT APIENTRY CALLBACK* pfnUpdateGpuVirtualAddressCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906767">D3DDDICB_UPDATEGPUVIRTUALADDRESS</a> structure that describes the operation to perform.
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-updategpuvirtualaddress.md">D3DDDICB_UPDATEGPUVIRTUALADDRESS</a> structure that describes the operation to perform.
 
 </p>
 </dd>
@@ -80,12 +80,6 @@ HRESULT APIENTRY CALLBACK* pfnUpdateGpuVirtualAddressCb(
 <p>If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.</p>
 
 ## -remarks
-<p>The virtual address ranges in the update operations are allowed to intersect. The operations will be applied in the order they are submitted.</p>
-
-<p>In a single <b>pfnUpdateVirtualAddressCb</b> call:</p>
-
-<p>The user mode driver can submit many <b>pfnUpdateGpuVirtualAddressCb</b> calls and operations will be queued behind the rendering fence. When the number of queued update operations exceeds 128, the calling thread will be blocked until the pervious operations are processed by the video memory manager.</p>
-
 <p>The virtual address ranges in the update operations are allowed to intersect. The operations will be applied in the order they are submitted.</p>
 
 <p>In a single <b>pfnUpdateVirtualAddressCb</b> call:</p>
@@ -135,7 +129,7 @@ HRESULT APIENTRY CALLBACK* pfnUpdateGpuVirtualAddressCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906767">D3DDDICB_UPDATEGPUVIRTUALADDRESS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-updategpuvirtualaddress.md">D3DDDICB_UPDATEGPUVIRTUALADDRESS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>

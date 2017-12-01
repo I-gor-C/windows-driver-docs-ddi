@@ -7,7 +7,7 @@ old-location: debugger\psym_dump_field_callback.htm
 old-project: debugger
 ms.assetid: 3a1d9751-194a-4eb7-86f1-f6e812b52f0c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: VPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT, *PVPCI_WRITE_BLOCK_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The PSYM_DUMP_FIELD_CALLBACK callback function is called by the debugger engine during the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a> Ioctl operation with information about a member in the specified symbol.</p>
+<p>The PSYM_DUMP_FIELD_CALLBACK callback function is called by the debugger engine during the <a href="..\wdbgexts\ns-wdbgexts--sym-dump-param.md">IG_DUMP_SYMBOL_INFO</a> Ioctl operation with information about a member in the specified symbol.</p>
 
 
 ## -prototype
@@ -59,7 +59,7 @@ typedef ULONG ( WDBGAPI *PSYM_DUMP_FIELD_CALLBACK)(
 ### -param <i>pField</i> 
 
 <dd>
-<p>Specifies the field for which this callback function is being called.  The debugger engine fills in the contents of this parameter before making the call.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545316">FIELD_INFO</a> for details about the members of this parameter.</p>
+<p>Specifies the field for which this callback function is being called.  The debugger engine fills in the contents of this parameter before making the call.  See <a href="..\wdbgexts\ns-wdbgexts--field-info.md">FIELD_INFO</a> for details about the members of this parameter.</p>
 </dd>
 
 ### -param <i>UserContext</i> 
@@ -73,9 +73,6 @@ typedef ULONG ( WDBGAPI *PSYM_DUMP_FIELD_CALLBACK)(
 <p>If the function is successful, it should return STATUS_SUCCESS.  Otherwise, it should return an appropriate error code.</p>
 
 ## -remarks
-<p>If you are writing a WdbgExts extension, include wdbgexts.h. If you are writing a DbgEng extension that uses this function prototype, include wdbgexts.h before dbgeng.h (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details). STATUS_SUCCESS and other status and error codes are defined in ntstatus.h.
-</p>
-
 <p>If you are writing a WdbgExts extension, include wdbgexts.h. If you are writing a DbgEng extension that uses this function prototype, include wdbgexts.h before dbgeng.h (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details). STATUS_SUCCESS and other status and error codes are defined in ntstatus.h.
 </p>
 
@@ -106,15 +103,15 @@ typedef ULONG ( WDBGAPI *PSYM_DUMP_FIELD_CALLBACK)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a>
+<a href="..\wdbgexts\ns-wdbgexts--sym-dump-param.md">IG_DUMP_SYMBOL_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551084">Ioctl</a>
+<a href="debugger.ioctl">Ioctl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545316">FIELD_INFO</a>
+<a href="..\wdbgexts\ns-wdbgexts--field-info.md">FIELD_INFO</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20PSYM_DUMP_FIELD_CALLBACK function pointer%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20PSYM_DUMP_FIELD_CALLBACK function pointer%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

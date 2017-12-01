@@ -340,14 +340,6 @@ typedef enum  {
 
 <p>The PBMFORMAT and LPBMFORMAT data types are defined as pointers to this enumeration:</p>
 
-<p>The last four values were added to the BMFORMAT enumeration beginning with Windows Vista.</p>
-
-<p>The PBMFORMAT and LPBMFORMAT data types are defined as pointers to this enumeration:</p>
-
-<p>The last four values were added to the BMFORMAT enumeration beginning with Windows Vista.</p>
-
-<p>The PBMFORMAT and LPBMFORMAT data types are defined as pointers to this enumeration:</p>
-
 ## -requirements
 <table>
 <tr>

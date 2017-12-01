@@ -60,7 +60,7 @@ typedef struct D3D10DDIARG_STAGE_IO_SIGNATURES {
 ### -field <b>pInputSignature</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541739">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the input part of a signature. </p>
+<p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-signature-entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the input part of a signature. </p>
 </dd>
 
 ### -field <b>NumInputSignatureEntries</b>
@@ -72,7 +72,7 @@ typedef struct D3D10DDIARG_STAGE_IO_SIGNATURES {
 ### -field <b>pOutputSignature</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541739">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the output part of a signature. </p>
+<p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-signature-entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structures for the output part of a signature. </p>
 </dd>
 
 ### -field <b>NumOutputSignatureEntries</b>
@@ -87,7 +87,7 @@ typedef struct D3D10DDIARG_STAGE_IO_SIGNATURES {
 
 <p>Hardware should determine that the upstream stage in the pipeline might provide some or all of the data in the signature that is laid out as the <b>pInputSignature</b> and <b>NumInputSignatureEntries</b> members specify. Similarly, hardware should determine that the downstream stage in the pipeline might consume some or all of the data in the signature that is laid out as the <b>pOutputSignature</b> and <b>NumOutputSignatureEntries</b> members specify.</p>
 
-<p>To comply with the requirement for the event input and output registers to be reordered during shader compilation, the full signature is passed to the driver. Such reordering might depend on the driver being able to determine all of the registers in the signature, as well as which registers have system names (for example, names that the <b>SystemValue</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541739">D3D10DDIARG_SIGNATURE_ENTRY</a> structure specifies). Such reordering might also depend on the driver being able to determine registers that are not present in the current shader.</p>
+<p>To comply with the requirement for the event input and output registers to be reordered during shader compilation, the full signature is passed to the driver. Such reordering might depend on the driver being able to determine all of the registers in the signature, as well as which registers have system names (for example, names that the <b>SystemValue</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-signature-entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a> structure specifies). Such reordering might also depend on the driver being able to determine registers that are not present in the current shader.</p>
 
 <p>The declarations within the shader code itself also show which registers are actually used by a particular shader. These registers are possibly a subset of the input and output parts of the signature. If some hardware is not required to reorder input and output registers at compile time, the driver for that hardware can completely ignore the full signature that the D3D10DDIARG_STAGE_IO_SIGNATURES structure provides. The reference rasterizer, for example, does not require the information that the D3D10DDIARG_STAGE_IO_SIGNATURES structure provides.</p>
 
@@ -116,7 +116,7 @@ typedef struct D3D10DDIARG_STAGE_IO_SIGNATURES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541739">D3D10DDIARG_SIGNATURE_ENTRY</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-signature-entry.md">D3D10DDIARG_SIGNATURE_ENTRY</a>
 </dt>
 </dl>
 <p> </p>

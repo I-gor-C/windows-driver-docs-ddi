@@ -80,7 +80,7 @@ BOOL FindFirstPrinterChangeNotification(
 ### -param <i>hNotify</i> 
 
 <dd>
-<p>Caller-supplied notification handle. This handle must be saved and used as input to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561959">ReplyPrinterChangeNotification</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff559739">PartialReplyPrinterChangeNotification</a>.</p>
+<p>Caller-supplied notification handle. This handle must be saved and used as input to <a href="..\winsplp\nf-winsplp-replyprinterchangenotification.md">ReplyPrinterChangeNotification</a> and <a href="..\winsplp\nf-winsplp-partialreplyprinterchangenotification.md">PartialReplyPrinterChangeNotification</a>.</p>
 </dd>
 
 ### -param <i>pfdwStatus</i> 
@@ -103,7 +103,7 @@ BOOL FindFirstPrinterChangeNotification(
 
 <dd>
 <p>If set, the print application must poll to detect printer changes.</p>
-<p>If clear, the print provider notifies the spooler of changes by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>.</p>
+<p>If clear, the print provider notifies the spooler of changes by calling <a href="print.refreshprinterchangenotification">RefreshPrinterChangeNotification</a>.</p>
 <p>(See the following Remarks section.)</p>
 </dd>
 </dl>
@@ -139,23 +139,11 @@ BOOL FindFirstPrinterChangeNotification(
 
 <p>For a list of the types of notifications an application can request, and for a list of the types of information that can be used to describe an event, see the Windows SDK documentation's description of <b>FindFirstPrinterChangeNotification</b>. Types of events for which an application might request notification include adding or deleting a print job or form. Types of information an application might request include job or form parameters.</p>
 
-<p>If the print provider does not request polling (that is, it does not set PRINTER_NOTIFY_STATUS_POLL in <i>pfdwStatus</i>), it must notify the spooler when events identified by <i>pfwFlags</i> occur. The print provider must supply the types of information identified by <i>pPrinterNotifyOptions</i>, by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff559739">PartialReplyPrinterChangeNotification</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff561959">ReplyPrinterChangeNotification</a>.</p>
+<p>If the print provider does not request polling (that is, it does not set PRINTER_NOTIFY_STATUS_POLL in <i>pfdwStatus</i>), it must notify the spooler when events identified by <i>pfwFlags</i> occur. The print provider must supply the types of information identified by <i>pPrinterNotifyOptions</i>, by calling <a href="..\winsplp\nf-winsplp-partialreplyprinterchangenotification.md">PartialReplyPrinterChangeNotification</a> or <a href="..\winsplp\nf-winsplp-replyprinterchangenotification.md">ReplyPrinterChangeNotification</a>.</p>
 
 <p>If the provider does request polling (that is, it sets PRINTER_NOTIFY_STATUS_POLL), it should not call <b>ReplyPrinterChangeNotification</b>. Instead, the spooler signals the application at regular intervals.</p>
 
-<p>Both polled and nonpolled print provider must return the current state of all requested information types whenever its <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a> function is called.</p>
-
-<p>For additional information, see <a href="NULL">Supporting Printer Change Notifications</a>.</p>
-
-<p>When the spooler calls a print provider's <b>FindFirstPrinterChangeNotification</b> function, <i>fdwFlags</i> identifies the printer events for which notification is being requested. Additionally, <i>pPrinterNotifyOptions</i> identifies the types of information that the print provider should send to the spooler when one of the specified events occurs.</p>
-
-<p>For a list of the types of notifications an application can request, and for a list of the types of information that can be used to describe an event, see the Windows SDK documentation's description of <b>FindFirstPrinterChangeNotification</b>. Types of events for which an application might request notification include adding or deleting a print job or form. Types of information an application might request include job or form parameters.</p>
-
-<p>If the print provider does not request polling (that is, it does not set PRINTER_NOTIFY_STATUS_POLL in <i>pfdwStatus</i>), it must notify the spooler when events identified by <i>pfwFlags</i> occur. The print provider must supply the types of information identified by <i>pPrinterNotifyOptions</i>, by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff559739">PartialReplyPrinterChangeNotification</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff561959">ReplyPrinterChangeNotification</a>.</p>
-
-<p>If the provider does request polling (that is, it sets PRINTER_NOTIFY_STATUS_POLL), it should not call <b>ReplyPrinterChangeNotification</b>. Instead, the spooler signals the application at regular intervals.</p>
-
-<p>Both polled and nonpolled print provider must return the current state of all requested information types whenever its <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a> function is called.</p>
+<p>Both polled and nonpolled print provider must return the current state of all requested information types whenever its <a href="print.refreshprinterchangenotification">RefreshPrinterChangeNotification</a> function is called.</p>
 
 <p>For additional information, see <a href="NULL">Supporting Printer Change Notifications</a>.</p>
 
@@ -206,13 +194,13 @@ BOOL FindFirstPrinterChangeNotification(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559739">PartialReplyPrinterChangeNotification</a>
+<a href="..\winsplp\nf-winsplp-partialreplyprinterchangenotification.md">PartialReplyPrinterChangeNotification</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561959">ReplyPrinterChangeNotification</a>
+<a href="..\winsplp\nf-winsplp-replyprinterchangenotification.md">ReplyPrinterChangeNotification</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
+<a href="print.refreshprinterchangenotification">RefreshPrinterChangeNotification</a>
 </dt>
 </dl>
 <p> </p>

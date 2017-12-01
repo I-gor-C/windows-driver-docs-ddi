@@ -110,7 +110,7 @@ typedef struct _D3DKMT_GETSCANLINE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547013">D3DKMTGetScanLine</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetscanline.md">D3DKMTGetScanLine</a>
 </dt>
 </dl>
 <p> </p>

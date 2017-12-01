@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>This structure provides failure flags to indicate errors, if any, that might have occurred during a request to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187842">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a> callback function.</p>
+<p>This structure provides failure flags to indicate errors, if any, that might have occurred during a request to an <a href="buses.evt_ucx_usbdevice_endpoints_configure">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a> callback function.</p>
 
 
 ## -syntax
@@ -103,7 +103,7 @@ typedef struct _ENDPOINTS_CONFIGURE_FAILURE_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188019">ENDPOINTS_CONFIGURE</a>
+<a href="buses._endpoints_configure">ENDPOINTS_CONFIGURE</a>
 </dt>
 </dl>
 <p> </p>

@@ -99,9 +99,7 @@ ULONG StorPortAllocatePool(
 <p> </p>
 
 ## -remarks
-<p>A miniport driver calls the <b>StorPortAllocatePool</b> routine to allocate a block of non-contiguous memory from the non-paged pool. To free the block of memory, the miniport driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567065">StorPortFreePool</a> routine. If the request fails, BufferPointer will be set to <b>NULL</b>.</p>
-
-<p>A miniport driver calls the <b>StorPortAllocatePool</b> routine to allocate a block of non-contiguous memory from the non-paged pool. To free the block of memory, the miniport driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567065">StorPortFreePool</a> routine. If the request fails, BufferPointer will be set to <b>NULL</b>.</p>
+<p>A miniport driver calls the <b>StorPortAllocatePool</b> routine to allocate a block of non-contiguous memory from the non-paged pool. To free the block of memory, the miniport driver calls the <a href="..\storport\nf-storport-storportfreepool.md">StorPortFreePool</a> routine. If the request fails, BufferPointer will be set to <b>NULL</b>.</p>
 
 ## -requirements
 <table>
@@ -138,7 +136,7 @@ ULONG StorPortAllocatePool(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454259">StorPortAllocatePool2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
+<a href="devtest.storport_storportallocatepool2">StorPortAllocatePool2</a>, <a href="devtest.storport_storportirql">StorPortIrql</a>
 </td>
 </tr>
 </table>

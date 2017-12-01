@@ -84,18 +84,6 @@ BOOLEAN MmCanFileBeTruncated(
 
 <p>One or more users hold references to the data section for the file, and <i>NewFileSize</i> &lt;= the current file size.</p>
 
-<p><b>MmCanFileBeTruncated</b> must always be called before a file is truncated.</p>
-
-<p>A file cannot be truncated (and <b>MmCanFileBeTruncated</b> will return <b>FALSE</b>) if any of the following are true:</p>
-
-<p>An image section exists for the file.</p>
-
-<p>There are one or more outstanding write probes on the file's data section.</p>
-
-<p>There is a mapped view of file's data section within the truncation range determined by <i>NewFileSize</i>.</p>
-
-<p>One or more users hold references to the data section for the file, and <i>NewFileSize</i> &lt;= the current file size.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -151,10 +139,10 @@ BOOLEAN MmCanFileBeTruncated(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539188">CcPurgeCacheSection</a>
+<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549808">MmFlushImageSection</a>
+<a href="..\ntifs\nf-ntifs-mmflushimagesection.md">MmFlushImageSection</a>
 </dt>
 </dl>
 <p> </p>

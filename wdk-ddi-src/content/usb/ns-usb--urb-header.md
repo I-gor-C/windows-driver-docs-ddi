@@ -77,21 +77,21 @@ struct _URB_HEADER {
 
 
 <dd>
-<p>Indicates to the host controller driver that a configuration is to be selected. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540422">_URB_SELECT_CONFIGURATION</a> as the data structure.</p>
+<p>Indicates to the host controller driver that a configuration is to be selected. If set, the URB is used with <a href="buses._urb_select_configuration">_URB_SELECT_CONFIGURATION</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_SELECT_INTERFACE"></a><a id="urb_function_select_interface"></a><p><a id="URB_FUNCTION_SELECT_INTERFACE"></a><a id="urb_function_select_interface"></a><b>URB_FUNCTION_SELECT_INTERFACE</b></p>
 
 
 <dd>
-<p>Indicates to the host controller driver that an alternate interface setting is being selected for an interface. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540425">_URB_SELECT_INTERFACE</a> as the data structure. </p>
+<p>Indicates to the host controller driver that an alternate interface setting is being selected for an interface. If set, the URB is used with <a href="buses._urb_select_interface">_URB_SELECT_INTERFACE</a> as the data structure. </p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_ABORT_PIPE"></a><a id="urb_function_abort_pipe"></a><p><a id="URB_FUNCTION_ABORT_PIPE"></a><a id="urb_function_abort_pipe"></a><b>URB_FUNCTION_ABORT_PIPE</b></p>
 
 
 <dd>
-<p>Indicates that all outstanding requests for a pipe should be canceled. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540419">_URB_PIPE_REQUEST</a> as the data structure. This general-purpose request enables a client to cancel any pending transfers for the specified pipe. Pipe state and endpoint state are unaffected. The abort request might complete before all outstanding requests have completed. Do <i>not</i> assume that completion of the abort request implies that all other outstanding requests have completed. </p>
+<p>Indicates that all outstanding requests for a pipe should be canceled. If set, the URB is used with <a href="buses._urb_pipe_request">_URB_PIPE_REQUEST</a> as the data structure. This general-purpose request enables a client to cancel any pending transfers for the specified pipe. Pipe state and endpoint state are unaffected. The abort request might complete before all outstanding requests have completed. Do <i>not</i> assume that completion of the abort request implies that all other outstanding requests have completed. </p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL"></a><a id="urb_function_take_frame_length_control"></a><p><a id="URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL"></a><a id="urb_function_take_frame_length_control"></a><b>URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL</b></p>
@@ -126,14 +126,14 @@ struct _URB_HEADER {
 
 
 <dd>
-<p>Requests the current frame number from the host controller driver. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540401">_URB_GET_CURRENT_FRAME_NUMBER</a> as the data structure. </p>
+<p>Requests the current frame number from the host controller driver. If set, the URB is used with <a href="buses._urb_get_current_frame_number">_URB_GET_CURRENT_FRAME_NUMBER</a> as the data structure. </p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_CONTROL_TRANSFER"></a><a id="urb_function_control_transfer"></a><p><a id="URB_FUNCTION_CONTROL_TRANSFER"></a><a id="urb_function_control_transfer"></a><b>URB_FUNCTION_CONTROL_TRANSFER</b></p>
 
 
 <dd>
-<p>Transfers data to or from a control pipe. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540384">_URB_CONTROL_TRANSFER</a> as the data structure. </p>
+<p>Transfers data to or from a control pipe. If set, the URB is used with <a href="buses._urb_control_transfer">_URB_CONTROL_TRANSFER</a> as the data structure. </p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_CONTROL_TRANSFER_EX"></a><a id="urb_function_control_transfer_ex"></a><p><a id="URB_FUNCTION_CONTROL_TRANSFER_EX"></a><a id="urb_function_control_transfer_ex"></a><b>URB_FUNCTION_CONTROL_TRANSFER_EX</b></p>
@@ -149,30 +149,30 @@ struct _URB_HEADER {
 
 
 <dd>
-<p>Transfers data from a bulk pipe or interrupt pipe or to an bulk pipe. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540352">_URB_BULK_OR_INTERRUPT_TRANSFER</a> as the data structure. </p>
+<p>Transfers data from a bulk pipe or interrupt pipe or to an bulk pipe. If set, the URB is used with <a href="buses._urb_bulk_or_interrupt_transfer">_URB_BULK_OR_INTERRUPT_TRANSFER</a> as the data structure. </p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER_USING_CHAINED_MDL"></a><a id="urb_function_bulk_or_interrupt_transfer_using_chained_mdl"></a><p><a id="URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER_USING_CHAINED_MDL"></a><a id="urb_function_bulk_or_interrupt_transfer_using_chained_mdl"></a><b>URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER_USING_CHAINED_MDL</b></p>
 
 
 <dd>
-<p>Transfers data to and from a bulk pipe or interrupt pipe, by using chained MDLs. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540352">_URB_BULK_OR_INTERRUPT_TRANSFER</a> as the data structure. The client driver must set the <b>TransferBufferMDL</b>  member to the first <a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a> structure in the chain that contains the transfer buffer. The USB driver stack ignores the <b>TransferBuffer</b> member when processing this URB.</p>
-<p>Available in Windows 8.  For information about using chained MDLs, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450848">How to Send Chained MDLs</a>.</p>
+<p>Transfers data to and from a bulk pipe or interrupt pipe, by using chained MDLs. If set, the URB is used with <a href="buses._urb_bulk_or_interrupt_transfer">_URB_BULK_OR_INTERRUPT_TRANSFER</a> as the data structure. The client driver must set the <b>TransferBufferMDL</b>  member to the first <a href="..\wdm\ns-wdm--mdl.md">MDL</a> structure in the chain that contains the transfer buffer. The USB driver stack ignores the <b>TransferBuffer</b> member when processing this URB.</p>
+<p>Available in Windows 8.  For information about using chained MDLs, see <a href="buses.how_to_send_chained_mdls">How to Send Chained MDLs</a>.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_ISOCH_TRANSFER"></a><a id="urb_function_isoch_transfer"></a><p><a id="URB_FUNCTION_ISOCH_TRANSFER"></a><a id="urb_function_isoch_transfer"></a><b>URB_FUNCTION_ISOCH_TRANSFER</b></p>
 
 
 <dd>
-<p>Transfers data to or from an isochronous pipe. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540414">_URB_ISOCH_TRANSFER</a> as the data structure.</p>
+<p>Transfers data to or from an isochronous pipe. If set, the URB is used with <a href="buses._urb_isoch_transfer">_URB_ISOCH_TRANSFER</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_ISOCH_TRANSFER_USING_CHAINED_MDL"></a><a id="urb_function_isoch_transfer_using_chained_mdl"></a><p><a id="URB_FUNCTION_ISOCH_TRANSFER_USING_CHAINED_MDL"></a><a id="urb_function_isoch_transfer_using_chained_mdl"></a><b>URB_FUNCTION_ISOCH_TRANSFER_USING_CHAINED_MDL</b></p>
 
 
 <dd>
-<p>Transfers data to or from an isochronous pipe by using chained MDLs. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540414">_URB_ISOCH_TRANSFER</a> as the data structure. The client driver must set the <b>TransferBufferMDL</b>  member to the first <a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a> in the chain that contains the transfer buffer. The USB driver stack ignores the <b>TransferBuffer</b> member when processing this URB.</p>
-<p>Available in Windows 8.  For information about using chained MDLs, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450848">How to Send Chained MDLs</a>.</p>
+<p>Transfers data to or from an isochronous pipe by using chained MDLs. If set, the URB is used with <a href="buses._urb_isoch_transfer">_URB_ISOCH_TRANSFER</a> as the data structure. The client driver must set the <b>TransferBufferMDL</b>  member to the first <a href="..\wdm\ns-wdm--mdl.md">MDL</a> in the chain that contains the transfer buffer. The USB driver stack ignores the <b>TransferBuffer</b> member when processing this URB.</p>
+<p>Available in Windows 8.  For information about using chained MDLs, see <a href="buses.how_to_send_chained_mdls">How to Send Chained MDLs</a>.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_RESET_PIPE"></a><a id="urb_function_reset_pipe"></a><p><a id="URB_FUNCTION_RESET_PIPE"></a><a id="urb_function_reset_pipe"></a><b>URB_FUNCTION_RESET_PIPE</b></p>
@@ -186,7 +186,7 @@ struct _URB_HEADER {
 
 
 <dd>
-<p>Resets the indicated pipe. If set, this URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540419">_URB_PIPE_REQUEST</a>.</p>
+<p>Resets the indicated pipe. If set, this URB is used with <a href="buses._urb_pipe_request">_URB_PIPE_REQUEST</a>.</p>
 <div class="alert"><b>Note</b>  This URB replaces URB_FUNCTION_RESET_PIPE.</div>
 <div> </div>
 <p>The bus driver accomplishes three tasks in response to this URB:</p>
@@ -203,7 +203,7 @@ struct _URB_HEADER {
 
 
 <dd>
-<p>Clears the halt condition on the host side of a pipe. If set, this URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540419">_URB_PIPE_REQUEST</a> as the data structure.</p>
+<p>Clears the halt condition on the host side of a pipe. If set, this URB is used with <a href="buses._urb_pipe_request">_URB_PIPE_REQUEST</a> as the data structure.</p>
 <p>This URB allows a client to clear the halted state of a pipe without resetting the data toggle and without clearing the endpoint stall condition (feature ENDPOINT_HALT). To clear a halt condition on the pipe, reset the host-side data toggle and clear a stall on the device with a single operation, use URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL.</p>
 <p>The following status codes are important and have the indicated meaning:</p>
 <p>    USBD_STATUS_INVALID_PIPE_HANDLE</p>
@@ -221,7 +221,7 @@ struct _URB_HEADER {
 
 <dd>
 <p>Clears the stall condition on the endpoint. For all pipes except isochronous pipes, this URB sends a CLEAR_FEATURE request to clear the device's ENDPOINT_HALT feature. However, unlike the URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL function, this URB function does not reset the data toggle on the host side of the pipe. The USB specification requires devices to reset the device-side data toggle after the client clears the device's ENDPOINT_HALT feature, but some non-compliant devices do not reset their data toggle properly. Client drivers that manage such devices can compensate for this defect by clearing the stall condition directly with URB_FUNCTION_SYNC_CLEAR_STALL instead of resetting the pipe with URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL. URB_FUNCTION_SYNC_CLEAR_STALL clears a stall condition on the device without resetting the host-side data toggle. This prevents a non-compliant device from interpreting the next packet as a retransmission and dropping the packet. </p>
-<p>If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540419">_URB_PIPE_REQUEST</a> as the data structure. </p>
+<p>If set, the URB is used with <a href="buses._urb_pipe_request">_URB_PIPE_REQUEST</a> as the data structure. </p>
 <p>This URB function should be sent at PASSIVE_LEVEL</p>
 <p>Available in Windows XP and later operating systems.</p>
 </dd>
@@ -230,182 +230,182 @@ struct _URB_HEADER {
 
 
 <dd>
-<p>Retrieves the device descriptor from a specific USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure. </p>
+<p>Retrieves the device descriptor from a specific USB device. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure. </p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT"></a><a id="urb_function_get_descriptor_from_endpoint"></a><p><a id="URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT"></a><a id="urb_function_get_descriptor_from_endpoint"></a><b>URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT</b></p>
 
 
 <dd>
-<p>Retrieves the descriptor from an endpoint on an interface for a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
+<p>Retrieves the descriptor from an endpoint on an interface for a USB device. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE"></a><a id="urb_function_set_descriptor_to_device"></a><p><a id="URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE"></a><a id="urb_function_set_descriptor_to_device"></a><b>URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE</b></p>
 
 
 <dd>
-<p>Sets a device descriptor on a device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
+<p>Sets a device descriptor on a device. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT"></a><a id="urb_function_set_descriptor_to_endpoint"></a><p><a id="URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT"></a><a id="urb_function_set_descriptor_to_endpoint"></a><b>URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT</b></p>
 
 
 <dd>
-<p>Sets an endpoint descriptor on an endpoint for an interface. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
+<p>Sets an endpoint descriptor on an endpoint for an interface. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_SET_FEATURE_TO_DEVICE"></a><a id="urb_function_set_feature_to_device"></a><p><a id="URB_FUNCTION_SET_FEATURE_TO_DEVICE"></a><a id="urb_function_set_feature_to_device"></a><b>URB_FUNCTION_SET_FEATURE_TO_DEVICE</b></p>
 
 
 <dd>
-<p>Sets a USB-defined feature on a device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540361">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
+<p>Sets a USB-defined feature on a device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_SET_FEATURE_TO_INTERFACE"></a><a id="urb_function_set_feature_to_interface"></a><p><a id="URB_FUNCTION_SET_FEATURE_TO_INTERFACE"></a><a id="urb_function_set_feature_to_interface"></a><b>URB_FUNCTION_SET_FEATURE_TO_INTERFACE</b></p>
 
 
 <dd>
-<p>Sets a USB-defined feature on an interface for a device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540361">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
+<p>Sets a USB-defined feature on an interface for a device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_SET_FEATURE_TO_ENDPOINT"></a><a id="urb_function_set_feature_to_endpoint"></a><p><a id="URB_FUNCTION_SET_FEATURE_TO_ENDPOINT"></a><a id="urb_function_set_feature_to_endpoint"></a><b>URB_FUNCTION_SET_FEATURE_TO_ENDPOINT</b></p>
 
 
 <dd>
-<p>Sets a USB-defined feature on an endpoint for an interface on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540361">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
+<p>Sets a USB-defined feature on an endpoint for an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_SET_FEATURE_TO_OTHER"></a><a id="urb_function_set_feature_to_other"></a><p><a id="URB_FUNCTION_SET_FEATURE_TO_OTHER"></a><a id="urb_function_set_feature_to_other"></a><b>URB_FUNCTION_SET_FEATURE_TO_OTHER</b></p>
 
 
 <dd>
-<p>Sets a USB-defined feature on a device-defined target on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540361">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
+<p>Sets a USB-defined feature on a device-defined target on a USB device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE"></a><a id="urb_function_clear_feature_to_device"></a><p><a id="URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE"></a><a id="urb_function_clear_feature_to_device"></a><b>URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE</b></p>
 
 
 <dd>
-<p>Clears a USB-defined feature on a device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540361">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
+<p>Clears a USB-defined feature on a device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE"></a><a id="urb_function_clear_feature_to_interface"></a><p><a id="URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE"></a><a id="urb_function_clear_feature_to_interface"></a><b>URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE</b></p>
 
 
 <dd>
-<p>Clears a USB-defined feature on an interface for a device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540361">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
+<p>Clears a USB-defined feature on an interface for a device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT"></a><a id="urb_function_clear_feature_to_endpoint"></a><p><a id="URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT"></a><a id="urb_function_clear_feature_to_endpoint"></a><b>URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT</b></p>
 
 
 <dd>
-<p>Clears a USB-defined feature on an endpoint, for an interface, on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540361">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
+<p>Clears a USB-defined feature on an endpoint, for an interface, on a USB device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_CLEAR_FEATURE_TO_OTHER"></a><a id="urb_function_clear_feature_to_other"></a><p><a id="URB_FUNCTION_CLEAR_FEATURE_TO_OTHER"></a><a id="urb_function_clear_feature_to_other"></a><b>URB_FUNCTION_CLEAR_FEATURE_TO_OTHER</b></p>
 
 
 <dd>
-<p>Clears a USB-defined feature on a device defined target on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540361">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
+<p>Clears a USB-defined feature on a device defined target on a USB device. If set, the URB is used with <a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_GET_STATUS_FROM_DEVICE"></a><a id="urb_function_get_status_from_device"></a><p><a id="URB_FUNCTION_GET_STATUS_FROM_DEVICE"></a><a id="urb_function_get_status_from_device"></a><b>URB_FUNCTION_GET_STATUS_FROM_DEVICE</b></p>
 
 
 <dd>
-<p>Retrieves status from a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540378">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
+<p>Retrieves status from a USB device. If set, the URB is used with <a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_GET_STATUS_FROM_INTERFACE"></a><a id="urb_function_get_status_from_interface"></a><p><a id="URB_FUNCTION_GET_STATUS_FROM_INTERFACE"></a><a id="urb_function_get_status_from_interface"></a><b>URB_FUNCTION_GET_STATUS_FROM_INTERFACE</b></p>
 
 
 <dd>
-<p>Retrieves status from an interface on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540378">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
+<p>Retrieves status from an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_GET_STATUS_FROM_ENDPOINT"></a><a id="urb_function_get_status_from_endpoint"></a><p><a id="URB_FUNCTION_GET_STATUS_FROM_ENDPOINT"></a><a id="urb_function_get_status_from_endpoint"></a><b>URB_FUNCTION_GET_STATUS_FROM_ENDPOINT</b></p>
 
 
 <dd>
-<p>Retrieves status from an endpoint for an interface on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540378">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
+<p>Retrieves status from an endpoint for an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_GET_STATUS_FROM_OTHER"></a><a id="urb_function_get_status_from_other"></a><p><a id="URB_FUNCTION_GET_STATUS_FROM_OTHER"></a><a id="urb_function_get_status_from_other"></a><b>URB_FUNCTION_GET_STATUS_FROM_OTHER</b></p>
 
 
 <dd>
-<p>Retrieves status from a device-defined target on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540378">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
+<p>Retrieves status from a device-defined target on a USB device. If set, the URB is used with <a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_VENDOR_DEVICE"></a><a id="urb_function_vendor_device"></a><p><a id="URB_FUNCTION_VENDOR_DEVICE"></a><a id="urb_function_vendor_device"></a><b>URB_FUNCTION_VENDOR_DEVICE</b></p>
 
 
 <dd>
-<p>Sends a vendor-specific command to a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540393">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
+<p>Sends a vendor-specific command to a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_VENDOR_INTERFACE"></a><a id="urb_function_vendor_interface"></a><p><a id="URB_FUNCTION_VENDOR_INTERFACE"></a><a id="urb_function_vendor_interface"></a><b>URB_FUNCTION_VENDOR_INTERFACE</b></p>
 
 
 <dd>
-<p>Sends a vendor-specific command for an interface on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540393">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
+<p>Sends a vendor-specific command for an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_VENDOR_ENDPOINT"></a><a id="urb_function_vendor_endpoint"></a><p><a id="URB_FUNCTION_VENDOR_ENDPOINT"></a><a id="urb_function_vendor_endpoint"></a><b>URB_FUNCTION_VENDOR_ENDPOINT</b></p>
 
 
 <dd>
-<p>Sends a vendor-specific command for an endpoint on an interface on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540393">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
+<p>Sends a vendor-specific command for an endpoint on an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_VENDOR_OTHER"></a><a id="urb_function_vendor_other"></a><p><a id="URB_FUNCTION_VENDOR_OTHER"></a><a id="urb_function_vendor_other"></a><b>URB_FUNCTION_VENDOR_OTHER</b></p>
 
 
 <dd>
-<p>Sends a vendor-specific command to a device-defined target on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540393">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
+<p>Sends a vendor-specific command to a device-defined target on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_CLASS_DEVICE"></a><a id="urb_function_class_device"></a><p><a id="URB_FUNCTION_CLASS_DEVICE"></a><a id="urb_function_class_device"></a><b>URB_FUNCTION_CLASS_DEVICE</b></p>
 
 
 <dd>
-<p>Sends a USB-defined class-specific command to a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540393">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
+<p>Sends a USB-defined class-specific command to a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_CLASS_INTERFACE"></a><a id="urb_function_class_interface"></a><p><a id="URB_FUNCTION_CLASS_INTERFACE"></a><a id="urb_function_class_interface"></a><b>URB_FUNCTION_CLASS_INTERFACE</b></p>
 
 
 <dd>
-<p>Sends a USB-defined class-specific command to an interface on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540393">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
+<p>Sends a USB-defined class-specific command to an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_CLASS_ENDPOINT"></a><a id="urb_function_class_endpoint"></a><p><a id="URB_FUNCTION_CLASS_ENDPOINT"></a><a id="urb_function_class_endpoint"></a><b>URB_FUNCTION_CLASS_ENDPOINT</b></p>
 
 
 <dd>
-<p>Sends a USB-defined class-specific command to an endpoint, on an interface, on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540393">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
+<p>Sends a USB-defined class-specific command to an endpoint, on an interface, on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_CLASS_OTHER"></a><a id="urb_function_class_other"></a><p><a id="URB_FUNCTION_CLASS_OTHER"></a><a id="urb_function_class_other"></a><b>URB_FUNCTION_CLASS_OTHER</b></p>
 
 
 <dd>
-<p>Sends a USB-defined class-specific command to a device defined target on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540393">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
+<p>Sends a USB-defined class-specific command to a device defined target on a USB device. If set, the URB is used with <a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_GET_CONFIGURATION"></a><a id="urb_function_get_configuration"></a><p><a id="URB_FUNCTION_GET_CONFIGURATION"></a><a id="urb_function_get_configuration"></a><b>URB_FUNCTION_GET_CONFIGURATION</b></p>
 
 
 <dd>
-<p>Retrieves the current configuration on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540365">_URB_CONTROL_GET_CONFIGURATION_REQUEST</a> as the data structure.</p>
+<p>Retrieves the current configuration on a USB device. If set, the URB is used with <a href="buses._urb_control_get_configuration_request">_URB_CONTROL_GET_CONFIGURATION_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_GET_INTERFACE"></a><a id="urb_function_get_interface"></a><p><a id="URB_FUNCTION_GET_INTERFACE"></a><a id="urb_function_get_interface"></a><b>URB_FUNCTION_GET_INTERFACE</b></p>
 
 
 <dd>
-<p>Retrieves the current settings for an interface on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540373">_URB_CONTROL_GET_INTERFACE_REQUEST</a> as the data structure.</p>
+<p>Retrieves the current settings for an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_get_interface_request">_URB_CONTROL_GET_INTERFACE_REQUEST</a> as the data structure.</p>
 <p>Available in Windows 2000, and Windows Vista and later operating systems.  Not available in Windows XP.</p>
 </dd>
 
@@ -413,21 +413,21 @@ struct _URB_HEADER {
 
 
 <dd>
-<p>Retrieves the descriptor from an interface for a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
+<p>Retrieves the descriptor from an interface for a USB device. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE"></a><a id="urb_function_set_descriptor_to_interface"></a><p><a id="URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE"></a><a id="urb_function_set_descriptor_to_interface"></a><b>URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE</b></p>
 
 
 <dd>
-<p>Sets a descriptor for an interface on a USB device. If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
+<p>Sets a descriptor for an interface on a USB device. If set, the URB is used with <a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a> as the data structure.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR"></a><a id="urb_function_get_ms_feature_descriptor"></a><p><a id="URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR"></a><a id="urb_function_get_ms_feature_descriptor"></a><b>URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR</b></p>
 
 
 <dd>
-<p>Retrieves a Microsoft OS feature descriptor from a USB device or an interface on a USB device.  If set, the URB is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff540417">_URB_OS_FEATURE_DESCRIPTOR_REQUEST</a>
+<p>Retrieves a Microsoft OS feature descriptor from a USB device or an interface on a USB device.  If set, the URB is used with <a href="buses._urb_os_feature_descriptor_request">_URB_OS_FEATURE_DESCRIPTOR_REQUEST</a>
 as the data structure. </p>
 <p>Available in Windows XP and later operation systems.
 </p>
@@ -437,16 +437,16 @@ as the data structure. </p>
 
 
 <dd>
-<p>Opens streams in the specified bulk endpoint. If set, the URB is used with  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406294">_URB_OPEN_STATIC_STREAMS</a> as the data structure.</p>
-<p>Available in Windows 8.  For information about formatting an URB for an open-stream request, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.</p>
+<p>Opens streams in the specified bulk endpoint. If set, the URB is used with  <a href="buses._urb_open_basic_streams">_URB_OPEN_STATIC_STREAMS</a> as the data structure.</p>
+<p>Available in Windows 8.  For information about formatting an URB for an open-stream request, see <a href="buses.how_to_open_streams_in_a_usb_endpoint">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.</p>
 </dd>
 
 ### -field <a id="URB_FUNCTION_CLOSE_STATIC_STREAMS__"></a><a id="urb_function_close_static_streams__"></a><p><a id="URB_FUNCTION_CLOSE_STATIC_STREAMS__"></a><a id="urb_function_close_static_streams__"></a><b>URB_FUNCTION_CLOSE_STATIC_STREAMS  </b></p>
 
 
 <dd>
-<p>Closes all opened streams in the specified bulk endpoint. If set, the URB is used with  <a href="https://msdn.microsoft.com/library/windows/hardware/ff540419">_URB_PIPE_REQUEST</a>  as the data structure.</p>
-<p>Available in Windows 8. For information about formatting an URB for a close-stream request, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.</p>
+<p>Closes all opened streams in the specified bulk endpoint. If set, the URB is used with  <a href="buses._urb_pipe_request">_URB_PIPE_REQUEST</a>  as the data structure.</p>
+<p>Available in Windows 8. For information about formatting an URB for a close-stream request, see <a href="buses.how_to_open_streams_in_a_usb_endpoint">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.</p>
 </dd>
 </dl>
 </dd>
@@ -492,52 +492,52 @@ as the data structure. </p>
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
+<a href="..\usb\ns-usb--urb.md">URB</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540425">_URB_SELECT_INTERFACE</a>
+<a href="buses._urb_select_interface">_URB_SELECT_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540422">_URB_SELECT_CONFIGURATION</a>
+<a href="buses._urb_select_configuration">_URB_SELECT_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540419">_URB_PIPE_REQUEST</a>
+<a href="buses._urb_pipe_request">_URB_PIPE_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540401">_URB_GET_CURRENT_FRAME_NUMBER</a>
+<a href="buses._urb_get_current_frame_number">_URB_GET_CURRENT_FRAME_NUMBER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540384">_URB_CONTROL_TRANSFER</a>
+<a href="buses._urb_control_transfer">_URB_CONTROL_TRANSFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540352">_URB_BULK_OR_INTERRUPT_TRANSFER</a>
+<a href="buses._urb_bulk_or_interrupt_transfer">_URB_BULK_OR_INTERRUPT_TRANSFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540414">_URB_ISOCH_TRANSFER</a>
+<a href="buses._urb_isoch_transfer">_URB_ISOCH_TRANSFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a>
+<a href="buses._urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540378">_URB_CONTROL_GET_STATUS_REQUEST</a>
+<a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540361">_URB_CONTROL_FEATURE_REQUEST</a>
+<a href="buses._urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540393">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a>
+<a href="buses._urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540373">_URB_CONTROL_GET_INTERFACE_REQUEST</a>
+<a href="buses._urb_control_get_interface_request">_URB_CONTROL_GET_INTERFACE_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540365">_URB_CONTROL_GET_CONFIGURATION_REQUEST</a>
+<a href="buses._urb_control_get_configuration_request">_URB_CONTROL_GET_CONFIGURATION_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540417">_URB_OS_FEATURE_DESCRIPTOR_REQUEST</a>
+<a href="buses._urb_os_feature_descriptor_request">_URB_OS_FEATURE_DESCRIPTOR_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

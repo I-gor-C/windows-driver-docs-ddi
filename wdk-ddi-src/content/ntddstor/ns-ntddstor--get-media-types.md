@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GET_MEDIA_TYPES structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560563">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> request to retrieve information about the types of media supported by a device. </p>
+<p>The GET_MEDIA_TYPES structure is used in conjunction with the <a href="..\ntddstor\ni-ntddstor-ioctl-storage-get-media-types-ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> request to retrieve information about the types of media supported by a device. </p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct _GET_MEDIA_TYPES {
 ### -field <b>MediaInfoCount</b>
 
 <dd>
-<p>Contains the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552529">DEVICE_MEDIA_INFO</a> structures in the array starting at <b>MediaInfo</b>.</p>
+<p>Contains the number of <a href="..\ntddstor\ns-ntddstor--device-media-info.md">DEVICE_MEDIA_INFO</a> structures in the array starting at <b>MediaInfo</b>.</p>
 </dd>
 
 ### -field <b>MediaInfo</b>
@@ -76,7 +76,7 @@ typedef struct _GET_MEDIA_TYPES {
 </dl>
 
 ## -remarks
-<p>A storage class driver must handle the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560563">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> request to support any device that the Removable Storage Manager (RSM) accesses, whether the device is a stand-alone device or a data transfer element (drive) in a media library or changer. </p>
+<p>A storage class driver must handle the <a href="..\ntddstor\ni-ntddstor-ioctl-storage-get-media-types-ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> request to support any device that the Removable Storage Manager (RSM) accesses, whether the device is a stand-alone device or a data transfer element (drive) in a media library or changer. </p>
 
 ## -requirements
 <table>
@@ -95,10 +95,10 @@ typedef struct _GET_MEDIA_TYPES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560563">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-get-media-types-ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552529">DEVICE_MEDIA_INFO</a>
+<a href="..\ntddstor\ns-ntddstor--device-media-info.md">DEVICE_MEDIA_INFO</a>
 </dt>
 </dl>
 <p> </p>

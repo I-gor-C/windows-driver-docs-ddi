@@ -101,7 +101,7 @@ typedef struct D3D10_DDI_DEPTH_STENCIL_DESC {
 ### -field <b>DepthFunc</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541933">D3D10_DDI_COMPARISON_FUNC</a>-typed value that indicates the depth-comparison function to perform.</p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-comparison-func.md">D3D10_DDI_COMPARISON_FUNC</a>-typed value that indicates the depth-comparison function to perform.</p>
 </dd>
 
 ### -field <b>StencilEnable</b>
@@ -137,13 +137,13 @@ typedef struct D3D10_DDI_DEPTH_STENCIL_DESC {
 ### -field <b>FrontFace</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541938">D3D10_DDI_DEPTH_STENCILOP_DESC</a> structure that describes the stencil operation to perform on forward-facing polygons.</p>
+<p>[in] A <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-depth-stencilop-desc.md">D3D10_DDI_DEPTH_STENCILOP_DESC</a> structure that describes the stencil operation to perform on forward-facing polygons.</p>
 </dd>
 
 ### -field <b>BackFace</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541938">D3D10_DDI_DEPTH_STENCILOP_DESC</a> structure that describes the stencil operation to perform on back-facing polygons.</p>
+<p>[in] A <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-depth-stencilop-desc.md">D3D10_DDI_DEPTH_STENCILOP_DESC</a> structure that describes the stencil operation to perform on back-facing polygons.</p>
 </dd>
 </dl>
 
@@ -181,10 +181,10 @@ typedef struct D3D10_DDI_DEPTH_STENCIL_DESC {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdepthstencilstate.md">CreateDepthStencilState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541933">D3D10_DDI_COMPARISON_FUNC</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-comparison-func.md">D3D10_DDI_COMPARISON_FUNC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541938">D3D10_DDI_DEPTH_STENCILOP_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-depth-stencilop-desc.md">D3D10_DDI_DEPTH_STENCILOP_DESC</a>
 </dt>
 </dl>
 <p> </p>

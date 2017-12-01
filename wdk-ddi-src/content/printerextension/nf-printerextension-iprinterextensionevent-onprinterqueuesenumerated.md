@@ -58,7 +58,7 @@ HRESULT OnPrinterQueuesEnumerated(
 ### -param <i>pContextCollection</i> [in]
 
 <dd>
-<p>Pointer to <a href="https://msdn.microsoft.com/library/windows/hardware/hh846191">IPrinterExtensionContextCollection</a> object.</p>
+<p>Pointer to <a href="..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md">IPrinterExtensionContextCollection</a> object.</p>
 </dd>
 </dl>
 
@@ -66,8 +66,6 @@ HRESULT OnPrinterQueuesEnumerated(
 <p>This method returns an <b>HRESULT</b> value.</p>
 
 ## -remarks
-<p><b>OnPrinterQueuesEnumerated</b> is called every time the set of print queues associated with the printer extension is updated. So it is important for printer extensions to be able to handle multiple calls to this method without causing a catastrophic failure of the printer extension.</p>
-
 <p><b>OnPrinterQueuesEnumerated</b> is called every time the set of print queues associated with the printer extension is updated. So it is important for printer extensions to be able to handle multiple calls to this method without causing a catastrophic failure of the printer extension.</p>
 
 ## -requirements
@@ -116,10 +114,10 @@ HRESULT OnPrinterQueuesEnumerated(
 <a href="print.iprinterextensionevent_interface">IPrinterExtensionEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406649">IPrinterExtensionContext</a>
+<a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh846191">IPrinterExtensionContextCollection</a>
+<a href="..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md">IPrinterExtensionContextCollection</a>
 </dt>
 </dl>
 <p> </p>

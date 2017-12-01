@@ -7,7 +7,7 @@ old-location: stream\ksdevice_profile_info.htm
 old-project: stream
 ms.assetid: 32C894CA-B644-4221-97B6-A21F2A459DE6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KSDEVICE_PROFILE_INFO, KSDEVICE_PROFILE_INFO, *PKSDEVICE_PROFILE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -93,7 +93,7 @@ typedef struct _KSDEVICE_PROFILE_INFO {
 <p><b>Info</b></p>
 <dl>
 <dd>
-<p>Structure of <a href="https://msdn.microsoft.com/library/windows/hardware/dn925214">KSCAMERA_PROFILE_INFO</a> defining the profile information of a camera.</p>
+<p>Structure of <a href="..\ksmedia\ns-ksmedia--kscamera-profile-info.md">KSCAMERA_PROFILE_INFO</a> defining the profile information of a camera.</p>
 </dd>
 </dl>
 </dd>
@@ -109,7 +109,7 @@ typedef struct _KSDEVICE_PROFILE_INFO {
 <p><b>ConcurrencyCount</b></p>
 <dl>
 <dd>
-<p>Number of <a href="https://msdn.microsoft.com/library/windows/hardware/dn925213">KSCAMERA_PROFILE_CONCURRENCYINFO</a> structures in the <b>Concurrency</b> array.</p>
+<p>Number of <a href="..\ksmedia\ns-ksmedia--kscamera-profile-concurrencyinfo.md">KSCAMERA_PROFILE_CONCURRENCYINFO</a> structures in the <b>Concurrency</b> array.</p>
 <p>For Windows 10 this must be less than or equal 1.</p>
 <p>A value of 0 with <b>Concurrency</b> set to <b>NULL</b>, indicates this profile is non-concurrent.</p>
 </dd>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_filter_field_parameters.htm
 old-project: netvista
 ms.assetid: 3d387fe9-a7cc-4034-b31e-ba1359db2ae1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,7 +90,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 
 <dd>
 <p>The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b> structure. The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.</p>
@@ -198,7 +198,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 
 <dd>
 <p>The type of field in a header. The field type (for example,
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565889">NDIS_MAC_HEADER_FIELD</a>) corresponds to the type of header that is specified in the 
+     <a href="..\ntddndis\ne-ntddndis--ndis-mac-header-field.md">NDIS_MAC_HEADER_FIELD</a>) corresponds to the type of header that is specified in the 
      <b>FrameHeader</b> member.
      </p>
 <p>This union contains the following members:</p>
@@ -220,7 +220,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 
 <dd>
 <p>An 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/hh451553">NDIS_IPV4_HEADER_FIELD</a> enumeration
+       <a href="..\ntddndis\ne-ntddndis--ndis-ipv4-header-field.md">NDIS_IPV4_HEADER_FIELD</a> enumeration
        value that specifies the type of field in an IP version 4 (IPv4) header.</p>
 </dd>
 
@@ -228,7 +228,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 
 <dd>
 <p>An 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/hh451554">NDIS_IPV6_HEADER_FIELD</a> enumeration
+       <a href="..\ntddndis\ne-ntddndis--ndis-ipv6-header-field.md">NDIS_IPV6_HEADER_FIELD</a> enumeration
        value that specifies the type of field in an IP version 6 (IPv6) header.</p>
 </dd>
 
@@ -254,7 +254,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 
 <dd>
 <p>A <b>UCHAR</b> value to compare with a field in a network packet.</p>
-<div class="alert"><b>Note</b>  If the <b>MacHeaderField</b> member specifies an <b>NdisMacHeaderFieldPacketType</b> enumeration value, this member contains an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451556">NDIS_MAC_PACKET_TYPE</a> enumeration value.</div>
+<div class="alert"><b>Note</b>  If the <b>MacHeaderField</b> member specifies an <b>NdisMacHeaderFieldPacketType</b> enumeration value, this member contains an <a href="..\ntddndis\ne-ntddndis--ndis-mac-packet-type.md">NDIS_MAC_PACKET_TYPE</a> enumeration value.</div>
 <div> </div>
 </dd>
 
@@ -334,8 +334,6 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 
 <p>The following table describes how the network adapter uses the <b>ReceiveFilterTest</b>, <b>FieldValue</b>, and <b>ResultValue</b> members to perform a filter test on the specified header field value of a received packet.</p>
 
-<p> </p>
-
 <p>If the <b>NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO</b> flag is not set and there is no VLAN identifier filter that was configured by an OID set request of
        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569795">OID_RECEIVE_FILTER_SET_FILTER</a>, the miniport driver must do one of the following:</p>
 
@@ -347,14 +345,14 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 <p>The miniport driver must return a failed status for the
        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569795">OID_RECEIVE_FILTER_SET_FILTER</a> method request.</p>
 
-<p>The miniport driver  must configure the network adapter  to inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566565">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> that is associated with the packet's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+<p>The miniport driver  must configure the network adapter  to inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="..\ndis\ns-ndis--ndis-net-buffer-list-8021q-info.md">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> that is associated with the packet's <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 <p>Starting with NDIS 6.30, if the <b>NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO</b> flag is not set and there is a non-zero VLAN identifier filter that was configured by an OID set request of
        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569795">OID_RECEIVE_FILTER_SET_FILTER</a>, the miniport driver must do the following:</p>
 
 <p>The miniport driver must configure the network adapter  to inspect and filter the specified MAC address and VLAN identifier fields. </p>
 
-<p>If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566565">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> that is associated with the packet's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+<p>If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="..\ndis\ns-ndis--ndis-net-buffer-list-8021q-info.md">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> that is associated with the packet's <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 ## -requirements
 <table>
@@ -381,35 +379,35 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451542">NDIS_ARP_HEADER_FIELD</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-arp-header-field.md">NDIS_ARP_HEADER_FIELD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565581">NDIS_FRAME_HEADER</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-frame-header.md">NDIS_FRAME_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451553">NDIS_IPV4_HEADER_FIELD</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-ipv4-header-field.md">NDIS_IPV4_HEADER_FIELD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451554">NDIS_IPV6_HEADER_FIELD</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-ipv6-header-field.md">NDIS_IPV6_HEADER_FIELD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439829">NDIS_UDP_HEADER_FIELD</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-udp-header-field.md">NDIS_UDP_HEADER_FIELD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565889">NDIS_MAC_HEADER_FIELD</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-mac-header-field.md">NDIS_MAC_HEADER_FIELD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451556">NDIS_MAC_PACKET_TYPE</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-mac-packet-type.md">NDIS_MAC_PACKET_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="..\ntddndis\ns-ntddndis--ndis-receive-filter-parameters.md">
    NDIS_RECEIVE_FILTER_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567183">NDIS_RECEIVE_FILTER_TEST</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-receive-filter-test.md">NDIS_RECEIVE_FILTER_TEST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569795">OID_RECEIVE_FILTER_SET_FILTER</a>
@@ -417,4 +415,4 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

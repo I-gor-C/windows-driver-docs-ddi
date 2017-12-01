@@ -7,7 +7,7 @@ old-location: audio\iminiportstreamaudioenginenode.htm
 old-project: audio
 ms.assetid: B3F7D3AC-C756-47D2-9E7C-7930621753C3
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcUnregisterIoTimeout
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,7 +83,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265091">GetLfxState</a>
+<a href="audio.iminiportstreamaudioenginenode_getlfxstate">GetLfxState</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the state of the local effects (LFX) node that is in the path of the audio stream.</p>
@@ -91,7 +91,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265092">GetStreamAttributeSteppings</a>
+<a href="audio.iminiportstreamaudioenginenode_getstreamattributesteppings">GetStreamAttributeSteppings</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the allowed stepping value for the audio stream attribute.</p>
@@ -99,7 +99,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265093">GetStreamChannelCount</a>
+<a href="audio.iminiportstreamaudioenginenode_getstreamchannelcount">GetStreamChannelCount</a>
 </td>
 <td align="left" width="63%">
 <p>Gets a count of the number of channels available for the stream.</p>
@@ -107,7 +107,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265094">GetStreamChannelMute</a>
+<a href="audio.iminiportstreamaudioenginenode_getstreamchannelmute">GetStreamChannelMute</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the state of the Mute node in the path of the audio stream.</p>
@@ -115,7 +115,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265095">GetStreamChannelPeakMeter</a>
+<a href="audio.iminiportstreamaudioenginenode_getstreamchannelpeakmeter">GetStreamChannelPeakMeter</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the value of the PeakMeter node in the path of the audio stream.</p>
@@ -123,7 +123,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265096">GetStreamChannelVolume</a>
+<a href="audio.iminiportstreamaudioenginenode_getstreamchannelvolume">GetStreamChannelVolume</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the current volume level that is applied to the audio stream.</p>
@@ -131,7 +131,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265097">GetStreamLinearBufferPosition</a>
+<a href="audio.iminiportstreamaudioenginenode_getstreamlinearbufferposition">GetStreamLinearBufferPosition</a>
 </td>
 <td align="left" width="63%">
 <p>	Gets the number of bytes that the DMA has fetched from the audio buffer since the beginning of the stream.</p>
@@ -139,7 +139,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265098">GetStreamPresentationPosition</a>
+<a href="audio.iminiportstreamaudioenginenode_getstreampresentationposition">GetStreamPresentationPosition</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the current cursor position in the audio data stream that is being rendered to the endpoint.</p>
@@ -147,7 +147,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265099">SetLfxState</a>
+<a href="audio.iminiportstreamaudioenginenode_setlfxstate">SetLfxState</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the state of the local effects (LFX) node that is in the path of the audio stream.</p>
@@ -155,7 +155,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265100">SetStreamChannelMute</a>
+<a href="audio.iminiportstreamaudioenginenode_setstreamchannelmute">SetStreamChannelMute</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the state of the Mute node in the path of the audio stream.</p>
@@ -163,7 +163,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265101">SetStreamChannelVolume</a>
+<a href="audio.iminiportstreamaudioenginenode_setstreamchannelvolume">SetStreamChannelVolume</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the volume level to be applied to the audio stream.</p>
@@ -171,7 +171,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265102">SetStreamCurrentWritePosition</a>
+<a href="audio.iminiportstreamaudioenginenode_setstreamcurrentwriteposition">SetStreamCurrentWritePosition</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the current cursor position in the audio data stream that is being captured from the endpoint.</p>
@@ -179,7 +179,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265103">SetStreamLoopbackProtection</a>
+<a href="audio.iminiportstreamaudioenginenode_setstreamloopbackprotection">SetStreamLoopbackProtection</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the loopback protection status of the audio engine node.</p>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_mac_address.htm
 old-project: netvista
 ms.assetid: e170b797-f8bb-4d3c-a3ee-5fd1a817a500
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_MAC_ADDRESS, WDI_MAC_ADDRESS, *PWDI_MAC_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices

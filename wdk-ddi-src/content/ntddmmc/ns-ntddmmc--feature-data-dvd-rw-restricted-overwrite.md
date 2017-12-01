@@ -63,7 +63,7 @@ typedef struct _FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE {
 ### -field <b>Header</b>
 
 <dd>
-<p>Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
+<p>Contains a <a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. </p>
 </dd>
 
 ### -field <b>Blank</b>
@@ -104,7 +104,7 @@ typedef struct _FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE {
 </dl>
 
 ## -remarks
-<p>This structure holds data for the feature named "DVD-RW Restricted Overwrite" by the <i>MMC-3 </i>specification. In the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a> enumeration, this feature is named <b>FeatureRigidRestrictedOverwrite</b>.</p>
+<p>This structure holds data for the feature named "DVD-RW Restricted Overwrite" by the <i>MMC-3 </i>specification. In the <a href="..\ntddmmc\ne-ntddmmc--feature-number.md">FEATURE_NUMBER</a> enumeration, this feature is named <b>FeatureRigidRestrictedOverwrite</b>.</p>
 
 <p>Devices that support this feature can only write on block boundaries. These devices cannot perform read or write operations that transfer less than a block of data. See the <i>MMC-3</i> specification for more information. </p>
 
@@ -125,10 +125,10 @@ typedef struct _FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
+<a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>
+<a href="..\ntddmmc\ne-ntddmmc--feature-number.md">FEATURE_NUMBER</a>
 </dt>
 </dl>
 <p> </p>

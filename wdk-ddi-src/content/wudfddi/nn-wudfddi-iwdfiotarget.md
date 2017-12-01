@@ -7,7 +7,7 @@ old-location: wdf\iwdfiotarget.htm
 old-project: wdf
 ms.assetid: bebe79c8-28d1-4976-b314-b73e6e9b7b9c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoTarget</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>. <b>IWDFIoTarget</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoTarget</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>. <b>IWDFIoTarget</b> also has these types of members:</p>
 
 <p>The <b>IWDFIoTarget</b> interface has these methods.</p>
 
@@ -69,7 +69,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559225">IWDFIoTarget::CancelSentRequestsForFile</a>
+<a href="wdf.iwdfiotarget_cancelsentrequestsforfile">IWDFIoTarget::CancelSentRequestsForFile</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiotarget_cancelsentrequestsforfile">CancelSentRequestsForFile</a> method cancels all I/O requests that have been sent on behalf of the specified file object.</p>
@@ -77,7 +77,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559230">IWDFIoTarget::FormatRequestForIoctl</a>
+<a href="wdf.iwdfiotarget_formatrequestforioctl">IWDFIoTarget::FormatRequestForIoctl</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiotarget_formatrequestforioctl">FormatRequestForIoctl</a> method formats an I/O request object for an I/O control operation.</p>
@@ -85,7 +85,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559233">IWDFIoTarget::FormatRequestForRead</a>
+<a href="wdf.iwdfiotarget_formatrequestforread">IWDFIoTarget::FormatRequestForRead</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiotarget_formatrequestforread">FormatRequestForRead</a> method formats an I/O request object for a read operation.</p>
@@ -93,7 +93,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559236">IWDFIoTarget::FormatRequestForWrite</a>
+<a href="wdf.iwdfiotarget_formatrequestforwrite">IWDFIoTarget::FormatRequestForWrite</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiotarget_formatrequestforwrite">FormatRequestForWrite</a> method formats an I/O request object for a write operation.</p>
@@ -101,7 +101,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559243">IWDFIoTarget::GetTargetFile</a>
+<a href="wdf.iwdfiotarget_gettargetfile">IWDFIoTarget::GetTargetFile</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiotarget_gettargetfile">GetTargetFile</a> method retrieves the framework file object that is associated with the I/O target object.</p>

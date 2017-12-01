@@ -7,7 +7,7 @@ old-location: kernel\pofxsettargetdripsdevicepowerstate.htm
 old-project: kernel
 ms.assetid: 435c0731-101c-498b-9041-904001be3f2c
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PoFxSetTargetDripsDevicePowerState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,13 +61,13 @@ NTSTATUS  PoFxSetTargetDripsDevicePowerState(
 ### -param <i>Handle</i> [in]
 
 <dd>
-<p>A handle that represents the registration of the device with PoFx. The device driver previously received this handle from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439521">PoFxRegisterDevice</a> routine.</p>
+<p>A handle that represents the registration of the device with PoFx. The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.</p>
 </dd>
 
 ### -param <i>TargetState</i> [in]
 
 <dd>
-<p>Specifies the target DRIPS device power state. Possible values are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554628">DEVICE_POWER_STATE</a> enumeration. This value must
+<p>Specifies the target DRIPS device power state. Possible values are defined in the <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a> enumeration. This value must
     be lower than the existing device constraint.  A device power state
     of <b>PowerDeviceUnspecified</b> resets to the PEP provided constraint.</p>
 </dd>

@@ -7,7 +7,7 @@ old-location: netvista\ndismcoindicatestatusex.htm
 old-project: netvista
 ms.assetid: e6d5bd94-d9cb-462f-84e4-bf9d70961e95
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCoIndicateStatusEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -81,7 +81,7 @@ VOID NdisMCoIndicateStatusEx(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567373">NDIS_STATUS_INDICATION</a> structure
+     <a href="..\ndis\ns-ndis--ndis-status-indication.md">NDIS_STATUS_INDICATION</a> structure
      that contains the status information.</p>
 </dd>
 </dl>
@@ -90,25 +90,6 @@ VOID NdisMCoIndicateStatusEx(
 <p>None</p>
 
 ## -remarks
-<p>When a miniport driver calls 
-    <b>NdisMCoIndicateStatusEx</b> with a <b>NULL</b> VC handle for the 
-    <i>NdisVcHandle</i> parameter, NDIS forwards the status-change notification to all of the bound protocol
-    drivers by calling each bound protocol driver's 
-    <a href="..\ndis\nc-ndis-protocol-co-status-ex.md">ProtocolCoStatusEx</a> function. A call
-    to 
-    <b>NdisMCoIndicateStatusEx</b> with a non-<b>NULL</b> VC handle restricts the status notification to clients or
-    call managers that the miniport driver shares this VC handle with.</p>
-
-<p>A miniport driver can call 
-    <b>NdisMCoIndicateStatusEx</b> after setting its registration attributes, by calling the 
-    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
-    NdisMSetMiniportAttributes</a> function from its 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function,
-    even if the driver is still in the context of the 
-    <i>MiniportInitializeEx</i> function. The driver must not call 
-    <b>NdisMCoIndicateStatusEx</b> after it returns from the 
-    <a href="..\ndis\nc-ndis-miniport-halt.md">MiniportHaltEx</a> function.</p>
-
 <p>When a miniport driver calls 
     <b>NdisMCoIndicateStatusEx</b> with a <b>NULL</b> VC handle for the 
     <i>NdisVcHandle</i> parameter, NDIS forwards the status-change notification to all of the bound protocol
@@ -181,7 +162,7 @@ VOID NdisMCoIndicateStatusEx(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547971">Irql_MCO_Function</a>
+<a href="devtest.ndis_irql_mco_function">Irql_MCO_Function</a>
 </td>
 </tr>
 </table>
@@ -198,10 +179,10 @@ VOID NdisMCoIndicateStatusEx(
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567373">NDIS_STATUS_INDICATION</a>
+<a href="..\ndis\ns-ndis--ndis-status-indication.md">NDIS_STATUS_INDICATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563672">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-co-status-ex.md">ProtocolCoStatusEx</a>
@@ -209,4 +190,4 @@ VOID NdisMCoIndicateStatusEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoIndicateStatusEx function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoIndicateStatusEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

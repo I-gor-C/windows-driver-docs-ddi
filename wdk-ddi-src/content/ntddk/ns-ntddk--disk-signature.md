@@ -66,7 +66,7 @@ typedef struct _DISK_SIGNATURE {
 ### -field <b>PartitionStyle</b>
 
 <dd>
-<p>Specifies the type of partition.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a> for a description of the possible values.</p>
+<p>Specifies the type of partition.  See <a href="storage.partition_style">PARTITION_STYLE</a> for a description of the possible values.</p>
 </dd>
 
 ### -field <b>Mbr</b>
@@ -130,7 +130,7 @@ typedef struct _DISK_SIGNATURE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561447">IoReadDiskSignature</a>
+<a href="..\ntddk\nf-ntddk-ioreaddisksignature.md">IoReadDiskSignature</a>
 </dt>
 </dl>
 <p> </p>

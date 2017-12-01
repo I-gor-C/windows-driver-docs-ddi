@@ -67,7 +67,7 @@ _checkReturn HRESULT APIENTRY CALLBACK pfnDestroyOverlayCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544178">D3DDDICB_DESTROYOVERLAY</a> structure that contains a handle to the overlay object to be disabled.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-destroyoverlay.md">D3DDDICB_DESTROYOVERLAY</a> structure that contains a handle to the overlay object to be disabled.</p>
 </dd>
 </dl>
 
@@ -122,10 +122,10 @@ _checkReturn HRESULT APIENTRY CALLBACK pfnDestroyOverlayCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544512">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544178">D3DDDICB_DESTROYOVERLAY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-destroyoverlay.md">D3DDDICB_DESTROYOVERLAY</a>
 </dt>
 </dl>
 <p> </p>

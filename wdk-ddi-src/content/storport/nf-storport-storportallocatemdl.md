@@ -101,9 +101,7 @@ ULONG StorPortAllocateMdl(
 <p> </p>
 
 ## -remarks
-<p>A miniport driver calls the <b>StorPortAllocateMdl</b> routine to allocate an MDL to describe a block of memory from the non-paged pool. To free the MDL, the miniport driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567063">StorPortFreeMdl</a> routine.</p>
-
-<p>A miniport driver calls the <b>StorPortAllocateMdl</b> routine to allocate an MDL to describe a block of memory from the non-paged pool. To free the MDL, the miniport driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567063">StorPortFreeMdl</a> routine.</p>
+<p>A miniport driver calls the <b>StorPortAllocateMdl</b> routine to allocate an MDL to describe a block of memory from the non-paged pool. To free the MDL, the miniport driver calls the <a href="..\storport\nf-storport-storportfreepool.md">StorPortFreeMdl</a> routine.</p>
 
 ## -requirements
 <table>
@@ -140,7 +138,7 @@ ULONG StorPortAllocateMdl(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
+<a href="devtest.storport_storportirql">StorPortIrql</a>
 </td>
 </tr>
 </table>

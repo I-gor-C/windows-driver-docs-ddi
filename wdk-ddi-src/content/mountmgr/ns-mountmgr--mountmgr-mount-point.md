@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The MOUNTMGR_MOUNT_POINT structure is used by mount manager clients in conjunction with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a> request to query the mount manager for all of the mount points (symbolic links) associated with a device. The mount manager responds by sending an array of MOUNTMGR_MOUNT_POINT structures containing the mount points. </p>
+<p>The MOUNTMGR_MOUNT_POINT structure is used by mount manager clients in conjunction with an <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a> request to query the mount manager for all of the mount points (symbolic links) associated with a device. The mount manager responds by sending an array of MOUNTMGR_MOUNT_POINT structures containing the mount points. </p>
 
 
 ## -syntax
@@ -97,11 +97,11 @@ typedef struct _MOUNTMGR_MOUNT_POINT {
 </dl>
 
 ## -remarks
-<p>None of the names returned are <b>NULL</b> terminated, nor do the buffers require terminating <b>NULL</b> characters. The caller of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a> is not required to provide data in all of the members of the MOUNTMGR_MOUNT_POINT structure, but empty members must have an offset of zero.</p>
+<p>None of the names returned are <b>NULL</b> terminated, nor do the buffers require terminating <b>NULL</b> characters. The caller of <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a> is not required to provide data in all of the members of the MOUNTMGR_MOUNT_POINT structure, but empty members must have an offset of zero.</p>
 
-<p>On input, offsets are from the beginning of the MOUNTMGR_MOUNT_POINT structure. On output offsets are from the beginning of the buffer. This is usually the same as the beginning of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562288">MOUNTMGR_MOUNT_POINTS</a> container structure (as opposed to the embedded MOUNTMGR_MOUNT_POINT array instance).</p>
+<p>On input, offsets are from the beginning of the MOUNTMGR_MOUNT_POINT structure. On output offsets are from the beginning of the buffer. This is usually the same as the beginning of the <a href="..\mountmgr\ns-mountmgr--mountmgr-mount-points.md">MOUNTMGR_MOUNT_POINTS</a> container structure (as opposed to the embedded MOUNTMGR_MOUNT_POINT array instance).</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a> request is available in Windows 2000 and later operating systems.</p>
+<p>The <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a> request is available in Windows 2000 and later operating systems.</p>
 
 <p>For a discussion of the different between symbolic links, unique IDs, and nonpersistent device names, see <a href="NULL">Supporting Mount Manager Requests in a Storage Class Driver</a>. </p>
 
@@ -122,7 +122,7 @@ typedef struct _MOUNTMGR_MOUNT_POINT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>
+<a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: kernel\rtlisntddiversionavailable.htm
 old-project: kernel
 ms.assetid: 54017f67-b01f-48bd-a5bb-598902672c4f
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlIsNtDdiVersionAvailable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -131,7 +131,7 @@ BOOLEAN RtlIsNtDdiVersionAvailable(
 </table>
 <p> </p>
 <p>The NTDDI_<i>XXX</i> constants are defined in the Sdkddkver.h header file.</p>
-<p>Additional NTDDI_<i>XXX</i> constants that specify service packs are available for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561956">RtlIsServicePackVersionInstalled</a> routine. Do not use these values for <b>RtlIsNtDdiVersionAvailable</b>. </p>
+<p>Additional NTDDI_<i>XXX</i> constants that specify service packs are available for the <a href="..\wdm\nf-wdm-rtlisservicepackversioninstalled.md">RtlIsServicePackVersionInstalled</a> routine. Do not use these values for <b>RtlIsNtDdiVersionAvailable</b>. </p>
 </dd>
 </dl>
 
@@ -141,15 +141,7 @@ BOOLEAN RtlIsNtDdiVersionAvailable(
 ## -remarks
 <p>The <b>RtlIsNtDdiVersionAvailable</b> routine compares the version that the <i>Version</i> parameter specifies to the version of the Windows operating system that is currently running.</p>
 
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561956">RtlIsServicePackVersionInstalled</a> routine if you want to determine whether a particular service pack is installed.</p>
-
-<p>The Windows kernel implements <b>RtlIsNtDdiVersionAvailable</b> only in Windows Vista and later versions of Windows. However, a compatibility library, Rtlver.lib, implements a version of <b>RtlIsNtDdiVersionAvailable</b> that runs in Windows 2000 and later versions of Windows. For kernel-mode drivers that include the Wdm.h header file, calls to <b>RtlIsNtDdiVersionAvailable</b> go to the version of this routine that is implemented in Rtlver.lib.</p>
-
-<p>For more information about <b>RtlIsNtDdiVersionAvailable</b> and <b>RtlIsServicePackVersionInstalled</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554887">Writing Drivers for Different Versions of Windows</a>.</p>
-
-<p>The <b>RtlIsNtDdiVersionAvailable</b> routine compares the version that the <i>Version</i> parameter specifies to the version of the Windows operating system that is currently running.</p>
-
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561956">RtlIsServicePackVersionInstalled</a> routine if you want to determine whether a particular service pack is installed.</p>
+<p>Use the <a href="..\wdm\nf-wdm-rtlisservicepackversioninstalled.md">RtlIsServicePackVersionInstalled</a> routine if you want to determine whether a particular service pack is installed.</p>
 
 <p>The Windows kernel implements <b>RtlIsNtDdiVersionAvailable</b> only in Windows Vista and later versions of Windows. However, a compatibility library, Rtlver.lib, implements a version of <b>RtlIsNtDdiVersionAvailable</b> that runs in Windows 2000 and later versions of Windows. For kernel-mode drivers that include the Wdm.h header file, calls to <b>RtlIsNtDdiVersionAvailable</b> go to the version of this routine that is implemented in Rtlver.lib.</p>
 
@@ -208,9 +200,9 @@ BOOLEAN RtlIsNtDdiVersionAvailable(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561956">RtlIsServicePackVersionInstalled</a>
+<a href="..\wdm\nf-wdm-rtlisservicepackversioninstalled.md">RtlIsServicePackVersionInstalled</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlIsNtDdiVersionAvailable routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlIsNtDdiVersionAvailable routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

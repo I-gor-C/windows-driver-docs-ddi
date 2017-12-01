@@ -7,7 +7,7 @@ old-location: netvista\rilsignalqualitycaps_2.htm
 old-project: netvista
 ms.assetid: 246af8ed-6657-4999-ab9f-a64958a1225d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

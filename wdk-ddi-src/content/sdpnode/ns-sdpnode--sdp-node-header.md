@@ -7,7 +7,7 @@ old-location: bltooth\sdp_node_header.htm
 old-project: bltooth
 ms.assetid: 2c756db7-b7a9-493a-8fb1-8bbc741f8c63
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: SDP_NODE_HEADER, SDP_NODE_HEADER, *PSDP_NODE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ typedef struct _SDP_NODE_HEADER {
 <dd>
 <p>A linked-list structure that is used to link peer SDP record nodes when this structure is part of
      an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a> structure. This member is used to link the
+     <a href="..\sdpnode\ns-sdpnode--sdp-node.md">SDP_NODE</a> structure. This member is used to link the
      first child of the node when the header is 
      <b>u.sequence</b> or 
      <b>u.alternative</b> part of the individual SDP_NODE structure.</p>
@@ -73,7 +73,7 @@ typedef struct _SDP_NODE_HEADER {
 
 <dd>
 <p>The data type of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536849">SDP_NODE_DATA</a> union held in the 
+     <a href="..\sdpnode\ns-sdpnode--sdp-node-data.md">SDP_NODE_DATA</a> union held in the 
      <b>u</b> member of the SDP_NODE structure.</p>
 </dd>
 
@@ -92,7 +92,7 @@ typedef struct _SDP_NODE_HEADER {
 
 <p>The header specifies the type of data. Driver developers can access links to peer SDP_NODE structures
     by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a> structure of the header. By evaluating 
+    <a href="kernel.list_entry">LIST_ENTRY</a> structure of the header. By evaluating 
     <code>Node.hdr.Link.Flink</code>and 
     <code>Node.hdr.Link.Blink</code>, drivers can obtain the addresses of peer
     nodes in the tree. Keep in mind that 
@@ -126,13 +126,13 @@ typedef struct _SDP_NODE_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a>
+<a href="..\sdpnode\ns-sdpnode--sdp-node.md">SDP_NODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536849">SDP_NODE_DATA</a>
+<a href="..\sdpnode\ns-sdpnode--sdp-node-data.md">SDP_NODE_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
+<a href="kernel.list_entry">LIST_ENTRY</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a>
@@ -140,4 +140,4 @@ typedef struct _SDP_NODE_HEADER {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SDP_NODE_HEADER structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SDP_NODE_HEADER structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

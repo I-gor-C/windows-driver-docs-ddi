@@ -67,13 +67,13 @@ VP_STATUS VideoPortCompleteDma(
 ### -param <i>VpDmaAdapter</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>.</p>
+<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.</p>
 </dd>
 
 ### -param <i>VpScatterGather</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570572">VP_SCATTER_GATHER_LIST</a> structure previously passed to the miniport driver callback routine, <a href="..\video\nc-video-pexecute-dma.md">HwVidExecuteDma</a>.</p>
+<p>Pointer to the <a href="..\video\ns-video--vp-scatter-gather-list.md">VP_SCATTER_GATHER_LIST</a> structure previously passed to the miniport driver callback routine, <a href="..\video\nc-video-pexecute-dma.md">HwVidExecuteDma</a>.</p>
 </dd>
 
 ### -param <i>WriteToDevice</i> [in]
@@ -87,10 +87,6 @@ VP_STATUS VideoPortCompleteDma(
 <p><b>VideoPortCompleteDma</b> returns NO_ERROR.</p>
 
 ## -remarks
-<p>The video miniport driver should call <b>VideoPortCompleteDma</b> immediately to free up system resources after a DMA transfer has been completed. </p>
-
-<p>It is important to note that the scatter/gather list built by <b>VideoPortStartDma</b> becomes invalid when <b>VideoPortCompleteDma</b> is called..</p>
-
 <p>The video miniport driver should call <b>VideoPortCompleteDma</b> immediately to free up system resources after a DMA transfer has been completed. </p>
 
 <p>It is important to note that the scatter/gather list built by <b>VideoPortStartDma</b> becomes invalid when <b>VideoPortCompleteDma</b> is called..</p>
@@ -158,16 +154,16 @@ VP_STATUS VideoPortCompleteDma(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>
+<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570369">VideoPortStartDma</a>
+<a href="..\video\nf-video-videoportstartdma.md">VideoPortStartDma</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570572">VP_SCATTER_GATHER_LIST</a>
+<a href="..\video\ns-video--vp-scatter-gather-list.md">VP_SCATTER_GATHER_LIST</a>
 </dt>
 </dl>
 <p> </p>

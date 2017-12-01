@@ -7,7 +7,7 @@ old-location: bltooth\sco_retransmission_effort.htm
 old-project: bltooth
 ms.assetid: bf466384-bf13-42cc-a02d-ef880cac4c02
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: IBidiSpl2, UnbindDevice, IBidiSpl2::UnbindDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,9 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback
-   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access
-   paged memory)
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
 req.iface: IBidiSpl2
 ---
 

@@ -71,7 +71,7 @@ HRESULT APIENTRY* CreateVideoProcessorEnum(
 ### -param <i>pCreateData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406316">D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM</a> structure. This structure specifies the attributes of the video processor enumeration object to be created.</p>
+<p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createvideoprocessorenum.md">D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM</a> structure. This structure specifies the attributes of the video processor enumeration object to be created.</p>
 </dd>
 
 ### -param <i>hVideoProcessorEnum</i> [in]
@@ -98,10 +98,6 @@ HRESULT APIENTRY* CreateVideoProcessorEnum(
 <p> </p>
 
 ## -remarks
-<p>The Direct3D runtime calls <i>CreateVideoProcessorEnum</i> after it has called the driver's <a href="display.calcprivatevideoprocessorsize">CalcPrivateVideoProcessorEnumSize </a>   to determine the size in bytes for the private data that the driver requires for the video processor enumeration object. The runtime allocates the memory for this private data for the driver. The driver uses this memory to store private data that is related to the video processor enumeration object.</p>
-
-<p>When the runtime  calls <i>CreateVideoProcessorEnum</i>, it passes the handle to the private data memory in the <i>hVideoProcessorEnum</i> parameter. This handle is actually a pointer to the memory. </p>
-
 <p>The Direct3D runtime calls <i>CreateVideoProcessorEnum</i> after it has called the driver's <a href="display.calcprivatevideoprocessorsize">CalcPrivateVideoProcessorEnumSize </a>   to determine the size in bytes for the private data that the driver requires for the video processor enumeration object. The runtime allocates the memory for this private data for the driver. The driver uses this memory to store private data that is related to the video processor enumeration object.</p>
 
 <p>When the runtime  calls <i>CreateVideoProcessorEnum</i>, it passes the handle to the private data memory in the <i>hVideoProcessorEnum</i> parameter. This handle is actually a pointer to the memory. </p>
@@ -152,7 +148,7 @@ HRESULT APIENTRY* CreateVideoProcessorEnum(
 <a href="display.calcprivatevideoprocessorsize">CalcPrivateVideoProcessorEnumSize </a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406316">D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-createvideoprocessorenum.md">D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM</a>
 </dt>
 </dl>
 <p> </p>

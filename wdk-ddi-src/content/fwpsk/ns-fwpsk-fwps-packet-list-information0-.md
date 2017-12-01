@@ -7,7 +7,7 @@ old-location: netvista\fwps_packet_list_information0.htm
 old-project: netvista
 ms.assetid: 1fc6ffb1-c6e9-4bca-9d10-541708fe0086
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FWPS_PACKET_LIST_INFORMATION0_, FWPS_PACKET_LIST_INFORMATION0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct FWPS_PACKET_LIST_INFORMATION0_ {
 
 <dd>
 <p>An 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552414">FWPS_PACKET_LIST_IPSEC_INFORMATION0</a> structure that contains IPsec information associated with the
+     <a href="netvista.fwps_packet_list_ipsec_information0">FWPS_PACKET_LIST_IPSEC_INFORMATION0</a> structure that contains IPsec information associated with the
      packet list.</p>
 </dd>
 
@@ -67,7 +67,7 @@ typedef struct FWPS_PACKET_LIST_INFORMATION0_ {
 
 <dd>
 <p>An 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552410">FWPS_PACKET_LIST_FWP_INFORMATION0</a> structure that contains Windows Filtering Platform information
+     <a href="netvista.fwps_packet_list_fwp_information0">FWPS_PACKET_LIST_FWP_INFORMATION0</a> structure that contains Windows Filtering Platform information
      associated with the packet list.</p>
 </dd>
 </dl>
@@ -117,4 +117,4 @@ typedef struct FWPS_PACKET_LIST_INFORMATION0_ {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_PACKET_LIST_INFORMATION0 structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_PACKET_LIST_INFORMATION0 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

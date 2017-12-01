@@ -88,8 +88,6 @@ typedef struct _SID_IDENTIFIER_AUTHORITY {
 
 <p>5</p>
 
-<p> </p>
-
 ## -requirements
 <table>
 <tr>
@@ -107,10 +105,10 @@ typedef struct _SID_IDENTIFIER_AUTHORITY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552998">RtlInitializeSid</a>
+<a href="..\ntifs\nf-ntifs-rtlinitializesid.md">RtlInitializeSid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 </dl>
 <p> </p>

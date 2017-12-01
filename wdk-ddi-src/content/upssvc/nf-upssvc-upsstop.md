@@ -7,7 +7,7 @@ old-location: battery\upsstop.htm
 old-project: battery
 ms.assetid: 55555e58-eaba-4c39-a771-9924da3fcfc4
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/27/2017
 ms.keywords: UPSStop
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,23 +68,13 @@ void UPSStop(
 ## -remarks
 <p>The <b>UPSStop</b> function must:</p>
 
-<p>Cancel all waiting calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536316">UPSWaitForStateChange</a>.</p>
+<p>Cancel all waiting calls to <a href="..\upssvc\nf-upssvc-upswaitforstatechange.md">UPSWaitForStateChange</a>.</p>
 
 <p>Stop monitoring the UPS unit.</p>
 
 <p>Close and release the UPS unit's COM port.</p>
 
-<p>After <b>UPSStop</b> returns, the only function the UPS service can call is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536313">UPSInit</a>. </p>
-
-<p>The <b>UPSStop</b> function must:</p>
-
-<p>Cancel all waiting calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536316">UPSWaitForStateChange</a>.</p>
-
-<p>Stop monitoring the UPS unit.</p>
-
-<p>Close and release the UPS unit's COM port.</p>
-
-<p>After <b>UPSStop</b> returns, the only function the UPS service can call is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536313">UPSInit</a>. </p>
+<p>After <b>UPSStop</b> returns, the only function the UPS service can call is <a href="..\upssvc\nf-upssvc-upsinit.md">UPSInit</a>. </p>
 
 ## -requirements
 <table>
@@ -113,9 +103,9 @@ void UPSStop(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536313">UPSInit</a>
+<a href="..\upssvc\nf-upssvc-upsinit.md">UPSInit</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [battery\battery]:%20UPSStop function%20 RELEASE:%20(11/16/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [battery\battery]:%20UPSStop function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\ndisfreenetbufferlist.htm
 old-project: netvista
 ms.assetid: fddfe5f8-900a-4f4c-8c78-a106a4a54d88
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFreeNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>Call the 
   <b>NdisFreeNetBufferList</b> function to free a 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that was previously
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure that was previously
   allocated from a NET_BUFFER_LIST structure pool.</p>
 
 
@@ -61,7 +61,7 @@ VOID NdisFreeNetBufferList(
 
 <dd>
 <p>A pointer to a NET_BUFFER_LIST structure that was allocated by calling the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561609">NdisAllocateNetBufferList</a> or 
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a> or 
      <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
      NdisAllocateNetBufferAndNetBufferList</a> function.</p>
 </dd>
@@ -72,36 +72,14 @@ VOID NdisFreeNetBufferList(
 
 ## -remarks
 <p>To allocate a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure from a pool, call
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure from a pool, call
     the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561609">NdisAllocateNetBufferList</a> or 
+    <a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a> or 
     <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
     NdisAllocateNetBufferAndNetBufferList</a> function.</p>
 
 <p>The 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures that are associated with
-    the NET_BUFFER_LIST structure are not freed unless they were preallocated with the NET_BUFFER_LIST
-    structure. You can reuse any NET_BUFFER structures that were not preallocated or you should free such
-    structures separately.</p>
-
-<p>If you allocated context space for a NET_BUFFER_LIST structure with the 
-    <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistcontext.md">
-    NdisAllocateNetBufferListContext</a> function, you must free such context space before you free the
-    NET_BUFFER_LIST structure. You must not attempt to free the context space that you allocated with 
-    <b>NdisAllocateNetBufferList</b> or 
-    <b>NdisAllocateNetBufferAndNetBufferList</b> by specifying the 
-    <i>ContextSize</i> and 
-    <i>ContextBackFill</i> parameters.</p>
-
-<p>To allocate a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure from a pool, call
-    the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561609">NdisAllocateNetBufferList</a> or 
-    <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
-    NdisAllocateNetBufferAndNetBufferList</a> function.</p>
-
-<p>The 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures that are associated with
+    <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures that are associated with
     the NET_BUFFER_LIST structure are not freed unless they were preallocated with the NET_BUFFER_LIST
     structure. You can reuse any NET_BUFFER structures that were not preallocated or you should free such
     structures separately.</p>
@@ -168,7 +146,7 @@ VOID NdisFreeNetBufferList(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
+<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -180,19 +158,19 @@ VOID NdisFreeNetBufferList(
    NdisAllocateNetBufferAndNetBufferList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561609">NdisAllocateNetBufferList</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistcontext.md">
    NdisAllocateNetBufferListContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeNetBufferList function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeNetBufferList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

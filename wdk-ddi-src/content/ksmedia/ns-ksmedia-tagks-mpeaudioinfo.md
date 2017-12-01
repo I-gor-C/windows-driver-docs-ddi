@@ -7,7 +7,7 @@ old-location: stream\ks_mpegaudioinfo.htm
 old-project: stream
 ms.assetid: df8a1e95-211a-47df-a904-4578cd0a7dc9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagKS_MPEAUDIOINFO, KS_MPEGAUDIOINFO, *PKS_MPEGAUDIOINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

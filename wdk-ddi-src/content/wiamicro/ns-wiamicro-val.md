@@ -84,7 +84,7 @@ typedef struct VAL {
 ### -field <b>pScanInfo</b>
 
 <dd>
-<p>Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547361">SCANINFO</a> structure.</p>
+<p>Points to a <a href="..\wiamicro\ns-wiamicro--scaninfo.md">SCANINFO</a> structure.</p>
 </dd>
 
 ### -field <b>handle</b>

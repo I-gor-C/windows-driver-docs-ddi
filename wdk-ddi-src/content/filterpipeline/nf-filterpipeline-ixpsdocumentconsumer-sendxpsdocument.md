@@ -65,11 +65,7 @@ HRESULT SendXpsDocument(
 <p><code>SendXpsDocument</code> returns an <b>HRESULT</b> value.</p>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556287">IXpsDocument</a> interface is the root for a tree view of an XPS document. The tree also contains one fixed document sequence and any number of fixed documents and fixed pages.</p>
-
-<p>Only one XpsDocument interface can be sent. The <code>SendXpsDocument</code> method will fail if a filter submits more than one XpsDocument interface for the same print job.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556287">IXpsDocument</a> interface is the root for a tree view of an XPS document. The tree also contains one fixed document sequence and any number of fixed documents and fixed pages.</p>
+<p>The <a href="print.ixpsdocument">IXpsDocument</a> interface is the root for a tree view of an XPS document. The tree also contains one fixed document sequence and any number of fixed documents and fixed pages.</p>
 
 <p>Only one XpsDocument interface can be sent. The <code>SendXpsDocument</code> method will fail if a filter submits more than one XpsDocument interface for the same print job.</p>
 
@@ -110,7 +106,7 @@ HRESULT SendXpsDocument(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556287">IXpsDocument</a>
+<a href="print.ixpsdocument">IXpsDocument</a>
 </dt>
 </dl>
 <p> </p>

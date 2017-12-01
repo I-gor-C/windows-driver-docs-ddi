@@ -59,7 +59,7 @@ HBA_STATUS HBA_API HBA_GetPortStatistics(
 ### -param <i>HbaHandle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
 ### -param <i>PortIndex</i> [in]
@@ -71,12 +71,12 @@ HBA_STATUS HBA_API HBA_GetPortStatistics(
 ### -param <i>HbaPortStatistics</i> [out]
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557110">HBA_PortStatistics</a> that holds the statistics that were retrieved for the port. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-portstatistics.md">HBA_PortStatistics</a> that holds the statistics that were retrieved for the port. </p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_GetPortStatistics</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetPortStatistics</b> returns one of the following qualifiers.</p><dl>
+<p>The <b>HBA_GetPortStatistics</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetPortStatistics</b> returns one of the following qualifiers.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the statistics for the port were successfully retrieved. </p><dl>
 <dt><b>HBA_STATUS_ERROR</b></dt>
@@ -134,13 +134,13 @@ HBA_STATUS HBA_API HBA_GetPortStatistics(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557110">HBA_PortStatistics</a>
+<a href="..\hbaapi\ns-hbaapi-hba-portstatistics.md">HBA_PortStatistics</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

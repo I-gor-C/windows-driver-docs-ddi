@@ -76,11 +76,7 @@ typedef enum  {
 </dl>
 
 ## -remarks
-<p>The ATA_CHANNEL_STATE enumeration type is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a> routine to determine whether the channel is enabled.</p>
-
-<p>The ATA_CHANNEL_STATE enumeration type is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a> routine to determine whether the channel is enabled.</p>
-
-<p>The ATA_CHANNEL_STATE enumeration type is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a> routine to determine whether the channel is enabled.</p>
+<p>The ATA_CHANNEL_STATE enumeration type is used in conjunction with the <a href="storage.atacontrollerchannelenabled">AtaControllerChannelEnabled</a> routine to determine whether the channel is enabled.</p>
 
 ## -requirements
 <table>
@@ -99,7 +95,7 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a>
+<a href="storage.atacontrollerchannelenabled">AtaControllerChannelEnabled</a>
 </dt>
 </dl>
 <p> </p>

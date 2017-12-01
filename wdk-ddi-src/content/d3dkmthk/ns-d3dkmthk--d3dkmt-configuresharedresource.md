@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DKMT_CONFIGURESHAREDRESOURCE structure describes parameters that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546798">D3DKMTConfigureSharedResource</a> function uses to configure a shared resource. </p>
+<p>The D3DKMT_CONFIGURESHAREDRESOURCE structure describes parameters that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> function uses to configure a shared resource. </p>
 
 
 ## -syntax
@@ -85,7 +85,7 @@ typedef struct _D3DKMT_CONFIGURESHAREDRESOURCE {
 ### -field <b>AllowAccess</b>
 
 <dd>
-<p>[in] A Boolean value that specifies whether the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546798">D3DKMTConfigureSharedResource</a> function should allow the process to access the resource. <b>TRUE</b> indicates to allow access; <b>FALSE</b> indicates to not allow access. </p>
+<p>[in] A Boolean value that specifies whether the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> function should allow the process to access the resource. <b>TRUE</b> indicates to allow access; <b>FALSE</b> indicates to not allow access. </p>
 </dd>
 </dl>
 
@@ -117,7 +117,7 @@ typedef struct _D3DKMT_CONFIGURESHAREDRESOURCE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546798">D3DKMTConfigureSharedResource</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a>
 </dt>
 </dl>
 <p> </p>

@@ -78,38 +78,38 @@ typedef struct D3D10_DDI_BLEND_DESC {
 
 <dd>
 <p>
-      [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541916">D3D10_DDI_BLEND</a>-typed value that indicates the blend mode of the source for all enabled render targets.
+      [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the blend mode of the source for all enabled render targets.
      </p>
 </dd>
 
 ### -field <b>DestBlend</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541916">D3D10_DDI_BLEND</a>-typed value that indicates the blend mode of the destination for all enabled render targets.</p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the blend mode of the destination for all enabled render targets.</p>
 </dd>
 
 ### -field <b>BlendOp</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541923">D3D10_DDI_BLEND_OP</a>-typed value that indicates the blending operation for all enabled render targets.</p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend-op.md">D3D10_DDI_BLEND_OP</a>-typed value that indicates the blending operation for all enabled render targets.</p>
 </dd>
 
 ### -field <b>SrcBlendAlpha</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541916">D3D10_DDI_BLEND</a>-typed value that indicates the transparency blend mode of the source for all enabled render targets.</p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the transparency blend mode of the source for all enabled render targets.</p>
 </dd>
 
 ### -field <b>DestBlendAlpha</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541916">D3D10_DDI_BLEND</a>-typed value that indicates the transparency blend mode of the destination for all enabled render targets.</p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a>-typed value that indicates the transparency blend mode of the destination for all enabled render targets.</p>
 </dd>
 
 ### -field <b>BlendOpAlpha</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541923">D3D10_DDI_BLEND_OP</a>-typed value that indicates the transparency blending operation for all enabled render targets.</p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend-op.md">D3D10_DDI_BLEND_OP</a>-typed value that indicates the transparency blending operation for all enabled render targets.</p>
 </dd>
 
 ### -field <b>RenderTargetWriteMask</b>
@@ -200,10 +200,10 @@ typedef struct D3D10_DDI_BLEND_DESC {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createblendstate.md">CreateBlendState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541916">D3D10_DDI_BLEND</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541923">D3D10_DDI_BLEND_OP</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend-op.md">D3D10_DDI_BLEND_OP</a>
 </dt>
 </dl>
 <p> </p>

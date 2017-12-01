@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USB_CYCLE_PORT_PARAMS</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537340">IOCTL_USB_HUB_CYCLE_PORT</a> I/O control request to power cycle the port that is associated with the PDO that receives the request.<div class="alert"><b>Note</b>  <a href="https://msdn.microsoft.com/library/windows/hardware/ff537340">IOCTL_USB_HUB_CYCLE_PORT</a> has been deprecated in Windows Vista and later operating systems. Do not use. 
+<p>The <b>USB_CYCLE_PORT_PARAMS</b> structure is used with the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-hub-cycle-port.md">IOCTL_USB_HUB_CYCLE_PORT</a> I/O control request to power cycle the port that is associated with the PDO that receives the request.<div class="alert"><b>Note</b>  <a href="..\usbioctl\ni-usbioctl-ioctl-usb-hub-cycle-port.md">IOCTL_USB_HUB_CYCLE_PORT</a> has been deprecated in Windows Vista and later operating systems. Do not use. 
 </div>
 <div> </div>
 </p>
@@ -92,10 +92,10 @@ typedef struct _USB_CYCLE_PORT_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537340">IOCTL_USB_HUB_CYCLE_PORT</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-hub-cycle-port.md">IOCTL_USB_HUB_CYCLE_PORT</a>
 </dt>
 </dl>
 <p> </p>

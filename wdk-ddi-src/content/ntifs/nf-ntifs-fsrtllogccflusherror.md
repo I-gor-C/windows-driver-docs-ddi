@@ -79,7 +79,7 @@ NTSTATUS FsRtlLogCcFlushError(
 ### -param <i>FlushError</i> [in]
 
 <dd>
-<p>The error returned by the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539082">CcFlushCache</a>.</p>
+<p>The error returned by the call to <a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>.</p>
 </dd>
 
 ### -param <i>Flags</i> [in]
@@ -116,15 +116,7 @@ NTSTATUS FsRtlLogCcFlushError(
 <p>The <b>FsRtlLogCcFlushError</b> routine returns STATUS_SUCCESS on success or another NTSTATUS value, such as STATUS_INSUFFICIENT_RESOURCES.</p>
 
 ## -remarks
-<p>Unless the call includes appropriate <i>Flags</i>, the <b>FsRtlLogCcFlushError</b> routine uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff549488">IoRaiseInformationalHardError</a> to display a dialog box to the user, including the specific error and <i>FileName</i>, and uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff550527">IoWriteErrorLogEntry</a> logs the error. </p>
-
-<p>If the entire <i>FileName</i> cannot fit within the log buffer, the routine inserts an ellipsis into the file name.</p>
-
-<p>If the cache still has pages that have been modified, the error is not fatal. The routine returns to the caller without logging an error or displaying the dialog box. </p>
-
-<p>If the error is fatal, the routine increments the lost delayed write counter in the processor control block (<a href="wdkgloss.p#wdkgloss.prcb#wdkgloss.prcb"><i>PRCB</i></a>). This counter can be used in troubleshooting lost delayed write errors.</p>
-
-<p>Unless the call includes appropriate <i>Flags</i>, the <b>FsRtlLogCcFlushError</b> routine uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff549488">IoRaiseInformationalHardError</a> to display a dialog box to the user, including the specific error and <i>FileName</i>, and uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff550527">IoWriteErrorLogEntry</a> logs the error. </p>
+<p>Unless the call includes appropriate <i>Flags</i>, the <b>FsRtlLogCcFlushError</b> routine uses <a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a> to display a dialog box to the user, including the specific error and <i>FileName</i>, and uses <a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> logs the error. </p>
 
 <p>If the entire <i>FileName</i> cannot fit within the log buffer, the routine inserts an ellipsis into the file name.</p>
 
@@ -195,13 +187,13 @@ NTSTATUS FsRtlLogCcFlushError(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539082">CcFlushCache</a>
+<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549488">IoRaiseInformationalHardError</a>
+<a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550527">IoWriteErrorLogEntry</a>
+<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 </dt>
 </dl>
 <p> </p>

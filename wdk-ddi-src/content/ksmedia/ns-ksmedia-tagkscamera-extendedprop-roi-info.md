@@ -7,7 +7,7 @@ old-location: stream\kscamera_extendedprop_roi_info.htm
 old-project: stream
 ms.assetid: DAE013B7-7715-4B03-99F7-807306736C14
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_INFO, KSCAMERA_EXTENDEDPROP_ROI_INFO, *PKSCAMERA_EXTENDEDPROP_ROI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,7 +78,7 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_INFO {
 ### -field <b>RegionOfInterestType</b>
 
 <dd>
-<p>If the region is a face, this value is KSCAMERA_EXTENDEDPROP_ROITYPE_FACE. If the region is anything other than face, this value is KSCAMERA_EXTENDEDPROP_ROITYPE_UNKNOWN. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925151">KSCAMERA_EXTENDEDPROP_ROITYPE</a> enumeration.</p>
+<p>If the region is a face, this value is KSCAMERA_EXTENDEDPROP_ROITYPE_FACE. If the region is anything other than face, this value is KSCAMERA_EXTENDEDPROP_ROITYPE_UNKNOWN. For more information, see the <a href="..\ksmedia\ne-ksmedia-kscamera-extendedprop-roitype.md">KSCAMERA_EXTENDEDPROP_ROITYPE</a> enumeration.</p>
 </dd>
 </dl>
 

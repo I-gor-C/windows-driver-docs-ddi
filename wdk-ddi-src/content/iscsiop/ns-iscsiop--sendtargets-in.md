@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SendTargets_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565526">SendTargets</a> method.</p>
+<p>The SendTargets_IN structure holds the input data for the <a href="storage.sendtargets">SendTargets</a> method.</p>
 
 
 ## -syntax
@@ -88,16 +88,16 @@ typedef struct _SendTargets_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565526">SendTargets</a>
+<a href="storage.sendtargets">SendTargets</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565540">SendTargets_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--sendtargets-out.md">SendTargets_OUT</a>
 </dt>
 </dl>
 <p> </p>

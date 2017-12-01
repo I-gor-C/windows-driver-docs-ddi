@@ -169,105 +169,9 @@ I/O Status block
 
 <p>If a network redirector claims a server name (\\server, for example),all requests for shares on this server will go to this network redirector. This behavior is only acceptable if there is no possibility of another share on the same server being accessed by a different network redirector. For example, a network redirector that claims \\server of a UNC path will prevent access by other network redirectors to other shares on this server (WebDAV access to \\server\web, for example). </p>
 
-<p>For more information, see the following sections in the Design Guide:</p><dl>
-<dd>
-<p>
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
-</p>
-</dd>
-</dl><p>
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
-</p>
+<p>For more information, see the following sections in the Design Guide:</p>
 
 <p>
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
-</p>
-
-<p>Network redirectors should only honor kernel-mode senders of this IOCTL, by verifying that the <b>RequestorMode</b> member of the IRP structure is <b>KernelMode</b>. </p>
-
-<p>Note that IOCTL_REDIR_QUERY_PATH is a METHOD_NEITHER IOCTL. This means that the input and output buffers might not be at the same address. A common mistake by UNC providers is to assume that the input buffer and the output buffer are the same and to use the input buffer pointer to provide the response.</p>
-
-<p>When a UNC provider receives an IOCTL_REDIR_QUERY_PATH request, it has to determine whether it can handle the UNC path specified in the <b>FilePathName</b> member of the <b>QUERY_PATH_REQUEST</b> structure. If so, it has to update the <b>LengthAccepted</b> member of the <b>QUERY_PATH_RESPONSE</b> structure with the length, in bytes, of the prefix it has claimed and complete the IRP with STATUS_SUCCESS. If the provider cannot handle the UNC path specified, it must fail the IOCTL_REDIR_QUERY_PATH request with an appropriate NTSTATUS error code and must not update the <b>LengthAccepted</b> member of the <b>QUERY_PATH_RESPONSE</b> structure. Providers must not modify any of the other members or the <b>FilePathName</b> string under any condition. </p>
-
-<p>The length of the prefix claimed by the provider depends on an individual UNC provider. Most providers claim the \\&lt;servername&gt;\&lt;sharename &gt; part of a path of the form \\&lt;servername&gt;\&lt;sharename&gt;\&lt;path&gt;. For example, if a provider claimed \\server\public given a path \\server\public\dir1\dir2, all name-based operations for the prefix \\server\public (\server\public\file1, for example) will be routed to that provider automatically without any prefix resolution because the prefix is already in the prefix cache. However, a path with the prefix \server\marketing\presentation will go through prefix resolution.</p>
-
-<p>If a network redirector claims a server name (\\server, for example),all requests for shares on this server will go to this network redirector. This behavior is only acceptable if there is no possibility of another share on the same server being accessed by a different network redirector. For example, a network redirector that claims \\server of a UNC path will prevent access by other network redirectors to other shares on this server (WebDAV access to \\server\web, for example). </p>
-
-<p>For more information, see the following sections in the Design Guide:</p><dl>
-<dd>
-<p>
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
-</p>
-</dd>
-</dl><p>
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
-</p>
-
-<p>
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
-</p>
-
-<p>Network redirectors should only honor kernel-mode senders of this IOCTL, by verifying that the <b>RequestorMode</b> member of the IRP structure is <b>KernelMode</b>. </p>
-
-<p>Note that IOCTL_REDIR_QUERY_PATH is a METHOD_NEITHER IOCTL. This means that the input and output buffers might not be at the same address. A common mistake by UNC providers is to assume that the input buffer and the output buffer are the same and to use the input buffer pointer to provide the response.</p>
-
-<p>When a UNC provider receives an IOCTL_REDIR_QUERY_PATH request, it has to determine whether it can handle the UNC path specified in the <b>FilePathName</b> member of the <b>QUERY_PATH_REQUEST</b> structure. If so, it has to update the <b>LengthAccepted</b> member of the <b>QUERY_PATH_RESPONSE</b> structure with the length, in bytes, of the prefix it has claimed and complete the IRP with STATUS_SUCCESS. If the provider cannot handle the UNC path specified, it must fail the IOCTL_REDIR_QUERY_PATH request with an appropriate NTSTATUS error code and must not update the <b>LengthAccepted</b> member of the <b>QUERY_PATH_RESPONSE</b> structure. Providers must not modify any of the other members or the <b>FilePathName</b> string under any condition. </p>
-
-<p>The length of the prefix claimed by the provider depends on an individual UNC provider. Most providers claim the \\&lt;servername&gt;\&lt;sharename &gt; part of a path of the form \\&lt;servername&gt;\&lt;sharename&gt;\&lt;path&gt;. For example, if a provider claimed \\server\public given a path \\server\public\dir1\dir2, all name-based operations for the prefix \\server\public (\server\public\file1, for example) will be routed to that provider automatically without any prefix resolution because the prefix is already in the prefix cache. However, a path with the prefix \server\marketing\presentation will go through prefix resolution.</p>
-
-<p>If a network redirector claims a server name (\\server, for example),all requests for shares on this server will go to this network redirector. This behavior is only acceptable if there is no possibility of another share on the same server being accessed by a different network redirector. For example, a network redirector that claims \\server of a UNC path will prevent access by other network redirectors to other shares on this server (WebDAV access to \\server\web, for example). </p>
-
-<p>For more information, see the following sections in the Design Guide:</p><dl>
-<dd>
-<p>
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
-</p>
-</dd>
-</dl><p>
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
-</p>
-
-<p>
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
-</p>
-
-<p>Network redirectors should only honor kernel-mode senders of this IOCTL, by verifying that the <b>RequestorMode</b> member of the IRP structure is <b>KernelMode</b>. </p>
-
-<p>Note that IOCTL_REDIR_QUERY_PATH is a METHOD_NEITHER IOCTL. This means that the input and output buffers might not be at the same address. A common mistake by UNC providers is to assume that the input buffer and the output buffer are the same and to use the input buffer pointer to provide the response.</p>
-
-<p>When a UNC provider receives an IOCTL_REDIR_QUERY_PATH request, it has to determine whether it can handle the UNC path specified in the <b>FilePathName</b> member of the <b>QUERY_PATH_REQUEST</b> structure. If so, it has to update the <b>LengthAccepted</b> member of the <b>QUERY_PATH_RESPONSE</b> structure with the length, in bytes, of the prefix it has claimed and complete the IRP with STATUS_SUCCESS. If the provider cannot handle the UNC path specified, it must fail the IOCTL_REDIR_QUERY_PATH request with an appropriate NTSTATUS error code and must not update the <b>LengthAccepted</b> member of the <b>QUERY_PATH_RESPONSE</b> structure. Providers must not modify any of the other members or the <b>FilePathName</b> string under any condition. </p>
-
-<p>The length of the prefix claimed by the provider depends on an individual UNC provider. Most providers claim the \\&lt;servername&gt;\&lt;sharename &gt; part of a path of the form \\&lt;servername&gt;\&lt;sharename&gt;\&lt;path&gt;. For example, if a provider claimed \\server\public given a path \\server\public\dir1\dir2, all name-based operations for the prefix \\server\public (\server\public\file1, for example) will be routed to that provider automatically without any prefix resolution because the prefix is already in the prefix cache. However, a path with the prefix \server\marketing\presentation will go through prefix resolution.</p>
-
-<p>If a network redirector claims a server name (\\server, for example),all requests for shares on this server will go to this network redirector. This behavior is only acceptable if there is no possibility of another share on the same server being accessed by a different network redirector. For example, a network redirector that claims \\server of a UNC path will prevent access by other network redirectors to other shares on this server (WebDAV access to \\server\web, for example). </p>
-
-<p>For more information, see the following sections in the Design Guide:</p><dl>
-<dd>
-<p>
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
-</p>
-</dd>
-</dl><p>
 <a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
 </p>
 
@@ -292,13 +196,13 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545865">FsRtlDeregisterUncProvider</a>
+<a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547184">FsRtlRegisterUncProviderEx</a>
+<a href="ifsk.fsrtlregisteruncproviderex">FsRtlRegisterUncProviderEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548320">IOCTL_REDIR_QUERY_PATH_EX</a>
+<a href="..\ntifs\ni-ntifs-ioctl-redir-query-path-ex.md">IOCTL_REDIR_QUERY_PATH_EX</a>
 </dt>
 </dl>
 <p> </p>

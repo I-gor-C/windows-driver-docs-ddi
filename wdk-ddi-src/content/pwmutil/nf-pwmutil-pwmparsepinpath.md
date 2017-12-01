@@ -7,7 +7,7 @@ old-location: kernel\pwmparsepinpath.htm
 old-project: kernel
 ms.assetid: 854A2B6F-A841-4AE4-9E54-68EF048C9504
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PwmParsePinPath
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,8 +83,6 @@ NTSTATUS PwmParsePinPath(
 <p> </p>
 
 ## -remarks
-<p>The pin path must be a Unicode character string that ends in the pin number as follows: <i>...\&lt;PinNumber&gt;</i>.</p>
-
 <p>The pin path must be a Unicode character string that ends in the pin number as follows: <i>...\&lt;PinNumber&gt;</i>.</p>
 
 ## -requirements

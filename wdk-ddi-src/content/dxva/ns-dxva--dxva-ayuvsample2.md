@@ -91,9 +91,9 @@ typedef struct _DXVA_AYUVsample2 {
 
 <p>For a zero value of <b>bSampleAlpha8</b>, the specified blend to use is the picture value without alteration. </p>
 
-<p>The width and height of the AYUV alpha-blending surface are specified in the associated <a href="https://msdn.microsoft.com/7d820491-2df2-4036-8f3d-e6bcff4cd1f6">buffer description list</a> defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563122">DXVA_BufferDescription</a> structure.</p>
+<p>The width and height of the AYUV alpha-blending surface are specified in the associated <a href="https://msdn.microsoft.com/7d820491-2df2-4036-8f3d-e6bcff4cd1f6">buffer description list</a> defined by the <a href="..\dxva\ns-dxva--dxva-bufferdescription.md">DXVA_BufferDescription</a> structure.</p>
 
-<p>The <b>DXVA_AYUVsample2</b> structure is used for each sample in a DirectX VA AYUV blending surface, for <b>OutsideYUVcolor</b> in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563120">DXVA_BlendCombination</a> structure, and for each of the entries in a 16-entry AYUV alpha-blending palette.</p>
+<p>The <b>DXVA_AYUVsample2</b> structure is used for each sample in a DirectX VA AYUV blending surface, for <b>OutsideYUVcolor</b> in a <a href="..\dxva\ns-dxva--dxva-blendcombination.md">DXVA_BlendCombination</a> structure, and for each of the entries in a 16-entry AYUV alpha-blending palette.</p>
 
 ## -requirements
 <table>
@@ -112,10 +112,10 @@ typedef struct _DXVA_AYUVsample2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563122">DXVA_BufferDescription</a>
+<a href="..\dxva\ns-dxva--dxva-bufferdescription.md">DXVA_BufferDescription</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563120">DXVA_BlendCombination</a>
+<a href="..\dxva\ns-dxva--dxva-blendcombination.md">DXVA_BlendCombination</a>
 </dt>
 </dl>
 <p> </p>

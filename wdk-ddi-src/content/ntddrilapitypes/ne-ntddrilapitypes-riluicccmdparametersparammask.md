@@ -7,7 +7,7 @@ old-location: netvista\riluicccmdparametersparammask.htm
 old-project: netvista
 ms.assetid: 721ce7c3-070d-4486-aba8-9a6874721015
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

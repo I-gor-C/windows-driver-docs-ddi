@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>CcRepinBcb</b> routine pins a buffer control block (BCB) an additional time to prevent it from being freed by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539228">CcUnpinData</a>.</p>
+<p>The <b>CcRepinBcb</b> routine pins a buffer control block (BCB) an additional time to prevent it from being freed by a subsequent call to <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ VOID CcRepinBcb(
 ### -param <i>Bcb</i> [in]
 
 <dd>
-<p>Buffer control block (BCB) pointer returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539180">CcPinRead</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff539183">CcPreparePinWrite</a>.</p>
+<p>Buffer control block (BCB) pointer returned by <a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a> or <a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>.</p>
 </dd>
 </dl>
 
@@ -67,11 +67,7 @@ VOID CcRepinBcb(
 ## -remarks
 <p>File systems call <b>CcRepinBcb</b> to preserve a BCB for write-through or error recovery. Typically a file system would do this the first time it marks a BCB as dirty while processing a write-through request, or any time that it determines that a buffer will be required for write-through.</p>
 
-<p>Every call to <b>CcRepinBcb</b> must be matched by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539235">CcUnpinRepinnedBcb</a>.</p>
-
-<p>File systems call <b>CcRepinBcb</b> to preserve a BCB for write-through or error recovery. Typically a file system would do this the first time it marks a BCB as dirty while processing a write-through request, or any time that it determines that a buffer will be required for write-through.</p>
-
-<p>Every call to <b>CcRepinBcb</b> must be matched by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539235">CcUnpinRepinnedBcb</a>.</p>
+<p>Every call to <b>CcRepinBcb</b> must be matched by a subsequent call to <a href="..\ntifs\nf-ntifs-ccunpinrepinnedbcb.md">CcUnpinRepinnedBcb</a>.</p>
 
 ## -requirements
 <table>
@@ -120,16 +116,16 @@ VOID CcRepinBcb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539180">CcPinRead</a>
+<a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539183">CcPreparePinWrite</a>
+<a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539228">CcUnpinData</a>
+<a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539235">CcUnpinRepinnedBcb</a>
+<a href="..\ntifs\nf-ntifs-ccunpinrepinnedbcb.md">CcUnpinRepinnedBcb</a>
 </dt>
 </dl>
 <p> </p>

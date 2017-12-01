@@ -7,7 +7,7 @@ old-location: stream\ksstreampointerlock.htm
 old-project: stream
 ms.assetid: eb960301-2afa-42f7-a2ea-129d85c49db9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsStreamPointerLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ NTSTATUS KsStreamPointerLock(
 ### -param <i>StreamPointer</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a> structure representing the stream pointer to attempt to lock.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer to attempt to lock.</p>
 </dd>
 </dl>
 
@@ -65,12 +65,6 @@ NTSTATUS KsStreamPointerLock(
 <p><b>KsStreamPointerLock </b>returns either STATUS_SUCCESS, indicating that the stream pointer has been locked, or an appropriate error code. STATUS_DEVICE_NOT_READY is the usual error code indicating that the frame could not be locked. This error code frequently means that the frame to which <i>StreamPointer</i> was pointing was canceled.</p>
 
 ## -remarks
-<p>A locked stream pointer guarantees that there is a data frame associated with the stream pointer and that this frame is not canceled as long as the lock is maintained. The minidriver should lock a stream pointer before attempting to access the data to which the stream pointer points.</p>
-
-<p>If the pin that the stream pointer references specifies that DMA scatter/gather mappings should be generated using KSPIN_FLAG_GENERATE_MAPPINGS, AVStream generates the mappings when the stream pointer is locked.</p>
-
-<p>Also see <a href="NULL">Stream Pointers</a>. </p>
-
 <p>A locked stream pointer guarantees that there is a data frame associated with the stream pointer and that this frame is not canceled as long as the lock is maintained. The minidriver should lock a stream pointer before attempting to access the data to which the stream pointer points.</p>
 
 <p>If the pin that the stream pointer references specifies that DMA scatter/gather mappings should be generated using KSPIN_FLAG_GENERATE_MAPPINGS, AVStream generates the mappings when the stream pointer is locked.</p>
@@ -130,9 +124,9 @@ NTSTATUS KsStreamPointerLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567137">KsStreamPointerUnlock</a>
+<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerLock function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerLock function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

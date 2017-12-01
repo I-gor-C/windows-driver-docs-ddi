@@ -122,31 +122,31 @@ typedef struct _DXVAHDDDI_VPDEVCAPS {
 ### -field <a id="DXVAHDDDI_FEATURE_CAPS_ALPHA_FILL__0x1_"></a><a id="dxvahdddi_feature_caps_alpha_fill__0x1_"></a><a id="DXVAHDDDI_FEATURE_CAPS_ALPHA_FILL__0X1_"></a>DXVAHDDDI_FEATURE_CAPS_ALPHA_FILL (0x1)
 
 <dd>
-<p>The driver can set the alpha values inside the target rectangle on the output surface as specified for the alpha-fill mode. For more information about this operation, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff562985">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a>.</p>
+<p>The driver can set the alpha values inside the target rectangle on the output surface as specified for the alpha-fill mode. For more information about this operation, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-alpha-fill-data.md">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a>.</p>
 </dd>
 
 ### -field <a id="DXVAHDDDI_FEATURE_CAPS_CONSTRICTION__0x2_"></a><a id="dxvahdddi_feature_caps_constriction__0x2_"></a><a id="DXVAHDDDI_FEATURE_CAPS_CONSTRICTION__0X2_"></a>DXVAHDDDI_FEATURE_CAPS_CONSTRICTION (0x2)
 
 <dd>
-<p>The driver can down-sample the composed target rectangle. For more information about this operation, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff562997">DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA</a>.</p>
+<p>The driver can down-sample the composed target rectangle. For more information about this operation, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-constriction-data.md">DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA</a>.</p>
 </dd>
 
 ### -field <a id="DXVAHDDDI_FEATURE_CAPS_LUMA_KEY__0x4_"></a><a id="dxvahdddi_feature_caps_luma_key__0x4_"></a><a id="DXVAHDDDI_FEATURE_CAPS_LUMA_KEY__0X4_"></a>DXVAHDDDI_FEATURE_CAPS_LUMA_KEY (0x4)
 
 <dd>
-<p>The driver can make pixels within a luma-key range transparent. For more information about this operation, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563085">DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA</a>.</p>
+<p>The driver can make pixels within a luma-key range transparent. For more information about this operation, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-luma-key-data.md">DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA</a>.</p>
 </dd>
 
 ### -field <a id="DXVAHDDDI_FEATURE_CAPS_ALPHA_PALETTE__0x8_"></a><a id="dxvahdddi_feature_caps_alpha_palette__0x8_"></a><a id="DXVAHDDDI_FEATURE_CAPS_ALPHA_PALETTE__0X8_"></a>DXVAHDDDI_FEATURE_CAPS_ALPHA_PALETTE (0x8)
 
 <dd>
-<p>The driver can apply the alpha value of the palette entry. For more information about alpha blending, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563072">DXVAHDDDI_STREAM_STATE_ALPHA_DATA</a>.</p>
+<p>The driver can apply the alpha value of the palette entry. For more information about alpha blending, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-alpha-data.md">DXVAHDDDI_STREAM_STATE_ALPHA_DATA</a>.</p>
 </dd>
 
 ### -field <a id="DXVAHDDDI_FEATURE_CAPS_ROTATION__0x10_"></a><a id="dxvahdddi_feature_caps_rotation__0x10_"></a><a id="DXVAHDDDI_FEATURE_CAPS_ROTATION__0X10_"></a>DXVAHDDDI_FEATURE_CAPS_ROTATION (0x10)
 
 <dd>
-<p>The driver can apply discrete display rotation values to the display output surface. For more information about this operation, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh464120">DXVAHDDDI_STREAM_STATE_ROTATION_DATA</a>.</p>
+<p>The driver can apply discrete display rotation values to the display output surface. For more information about this operation, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-rotation-data.md">DXVAHDDDI_STREAM_STATE_ROTATION_DATA</a>.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 </dl>
@@ -236,31 +236,31 @@ typedef struct _DXVAHDDDI_VPDEVCAPS {
 </dl>
 <p>The driver can support the preceding capabilities rather than supporting rarely used video processing to the input frames. Because supporting these capabilities requires extra steps in the video processor pipeline, the driver might not support them.</p>
 <p>If the driver supports these capabilities, the driver might require a certain color space to perform the processing to the input stream. For example, ProcAmp and the luma keying are performed in YCbCr color space. The driver refers the color space of the stream state to perform the intermediate color conversion.</p>
-<p>For example, when the driver sets the <b>RGB_Range</b> and <b>YCbCr_Matrix</b> members of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563084">DXVAHDDDI_STREAM_STATE_INPUT_COLOR_SPACE_DATA</a> to 0 and 1 respectively, the driver converts from full range RGB to BT.709 YCbCr before the driver applies ProcAmp, and then converts the input stream back to full range RGB. </p>
+<p>For example, when the driver sets the <b>RGB_Range</b> and <b>YCbCr_Matrix</b> members of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-input-color-space-data.md">DXVAHDDDI_STREAM_STATE_INPUT_COLOR_SPACE_DATA</a> to 0 and 1 respectively, the driver converts from full range RGB to BT.709 YCbCr before the driver applies ProcAmp, and then converts the input stream back to full range RGB. </p>
 </dd>
 
 ### -field <b>InputPool</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544634">D3DDDI_POOL</a>-typed value that indicates the memory pool from which the input surfaces should be allocated. </p>
+<p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-pool.md">D3DDDI_POOL</a>-typed value that indicates the memory pool from which the input surfaces should be allocated. </p>
 </dd>
 
 ### -field <b>OutputFormatCount</b>
 
 <dd>
-<p>[out] The number of supported output formats. The driver returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration types for the output formats that the decode device supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPOUTPUTFORMATS value set. </p>
+<p>[out] The number of supported output formats. The driver returns an array of <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> enumeration types for the output formats that the decode device supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPOUTPUTFORMATS value set. </p>
 </dd>
 
 ### -field <b>InputFormatCount</b>
 
 <dd>
-<p>[out] The number of supported input formats. The driver returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration types for the input formats that the decode device supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPINPUTFORMATS value set. </p>
+<p>[out] The number of supported input formats. The driver returns an array of <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> enumeration types for the input formats that the decode device supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPINPUTFORMATS value set. </p>
 </dd>
 
 ### -field <b>VideoProcessorCount</b>
 
 <dd>
-<p>[out] The number of supported video processors. The driver returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563109">DXVAHDDDI_VPCAPS</a> structures for the capabilities for each video processor that the decode device supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPCAPS value set. </p>
+<p>[out] The number of supported video processors. The driver returns an array of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpcaps.md">DXVAHDDDI_VPCAPS</a> structures for the capabilities for each video processor that the decode device supports when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPCAPS value set. </p>
 </dd>
 
 ### -field <b>MaxInputStreams</b>
@@ -277,7 +277,7 @@ typedef struct _DXVAHDDDI_VPDEVCAPS {
 </dl>
 
 ## -remarks
-<p>The user-mode display driver returns a pointer to a populated DXVAHDDDI_VPDEVCAPS structure in the <b>pData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a> structure when its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPDEVCAPS value set in the <b>Type</b> member of D3DDDIARG_GETCAPS.</p>
+<p>The user-mode display driver returns a pointer to a populated DXVAHDDDI_VPDEVCAPS structure in the <b>pData</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a> structure when its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPDEVCAPS value set in the <b>Type</b> member of D3DDDIARG_GETCAPS.</p>
 
 ## -requirements
 <table>
@@ -304,16 +304,16 @@ typedef struct _DXVAHDDDI_VPDEVCAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544634">D3DDDI_POOL</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-pool.md">D3DDDI_POOL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563109">DXVAHDDDI_VPCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpcaps.md">DXVAHDDDI_VPCAPS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>VideoPortUnlockPages</b> function is <b>obsolete</b> in Windows 2000 and later. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff570373">VideoPortUnlockBuffer</a> in place of this function.</p>
+<p>The <b>VideoPortUnlockPages</b> function is <b>obsolete</b> in Windows 2000 and later. Use <a href="..\video\nf-video-videoportunlockbuffer.md">VideoPortUnlockBuffer</a> in place of this function.</p>
 <p><b>VideoPortUnlockPages</b> releases memory used for packet-based DMA.</p>
 
 
@@ -74,10 +74,6 @@ BOOLEAN VideoPortUnlockPages(
 <p><b>VideoPortUnlockPages</b> always returns <b>TRUE</b>.</p>
 
 ## -remarks
-<p>See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bus-Master DMA in Video Miniport Drivers</a> for information about packet-based and common-buffer DMA transfers.</p>
-
-<p>This function can be called only within the context of a DMA IOCTL. It cannot be called from an ISR or DPC.</p>
-
 <p>See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bus-Master DMA in Video Miniport Drivers</a> for information about packet-based and common-buffer DMA transfers.</p>
 
 <p>This function can be called only within the context of a DMA IOCTL. It cannot be called from an ISR or DPC.</p>
@@ -137,7 +133,7 @@ BOOLEAN VideoPortUnlockPages(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570373">VideoPortUnlockBuffer</a>
+<a href="..\video\nf-video-videoportunlockbuffer.md">VideoPortUnlockBuffer</a>
 </dt>
 </dl>
 <p> </p>

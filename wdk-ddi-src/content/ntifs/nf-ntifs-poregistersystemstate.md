@@ -7,7 +7,7 @@ old-location: kernel\poregistersystemstate.htm
 old-project: kernel
 ms.assetid: 851c694f-6c47-498c-8035-132a63c0fa62
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PoRegisterSystemState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,7 +99,7 @@ PVOID PoRegisterSystemState(
 <p><b>PoRegisterSystemState</b> returns a handle to be used later to change or unregister the system busy state. It returns <b>NULL</b> if the handle could not be allocated.</p>
 
 ## -remarks
-<p><b>PoRegisterSystemState</b> registers the system busy state as indicated by the flags. The registration persists until the caller explicitly changes it with another call to <b>PoRegisterSystemState</b> or cancels it with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff559794">PoUnregisterSystemState</a>.</p>
+<p><b>PoRegisterSystemState</b> registers the system busy state as indicated by the flags. The registration persists until the caller explicitly changes it with another call to <b>PoRegisterSystemState</b> or cancels it with a call to <a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>.</p>
 
 <p>The <i>Flags</i> parameter specifies the type of activity in progress. Drivers can specify any combination of the flags.</p>
 
@@ -107,17 +107,7 @@ PVOID PoRegisterSystemState(
 
 <p>A driver can set the system busy state to request that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> avoid system power state transitions out of the system working state (S0) while driver activity is occurring. Note, however, that under some circumstances (such as a critically low battery) the power manager may override this request and put the system to sleep anyway.</p>
 
-<p>To set the system power state, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559768">PoSetSystemState</a>.</p>
-
-<p><b>PoRegisterSystemState</b> registers the system busy state as indicated by the flags. The registration persists until the caller explicitly changes it with another call to <b>PoRegisterSystemState</b> or cancels it with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff559794">PoUnregisterSystemState</a>.</p>
-
-<p>The <i>Flags</i> parameter specifies the type of activity in progress. Drivers can specify any combination of the flags.</p>
-
-<p>Setting ES_CONTINUOUS makes the busy state persist until a driver explicitly changes or cancels it by calling <b>PoRegisterSystemState</b> or <b>PoUnregisterSystemState</b>.</p>
-
-<p>A driver can set the system busy state to request that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> avoid system power state transitions out of the system working state (S0) while driver activity is occurring. Note, however, that under some circumstances (such as a critically low battery) the power manager may override this request and put the system to sleep anyway.</p>
-
-<p>To set the system power state, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559768">PoSetSystemState</a>.</p>
+<p>To set the system power state, call <a href="..\wdm\nf-wdm-posetsystemstate.md">PoSetSystemState</a>.</p>
 
 ## -requirements
 <table>
@@ -182,12 +172,12 @@ PVOID PoRegisterSystemState(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559768">PoSetSystemState</a>
+<a href="..\wdm\nf-wdm-posetsystemstate.md">PoSetSystemState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559794">PoUnregisterSystemState</a>
+<a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoRegisterSystemState routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoRegisterSystemState routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

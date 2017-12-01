@@ -76,12 +76,6 @@ NTSTATUS RxCeTearDownVC(
 
 <p><b>RxCeTearDownVC</b> calls TDI to disconnect the virtual circuit associated with a connection. If the call to TDI is unsuccessful, <b>RxCeTearDownVC</b> will return the error from the TDI routine call. </p>
 
-<p>When <b>RxCeTearDownVC</b> is successful, the data members in the RXCE_VC structure pointed to by the <i>pVC</i> parameter will be properly uninitialized and the virtual circuit will be disconnected from the associated RDBSS transport, address, and connection. </p>
-
-<p>Note that <b>RxCeTearDownVC</b> will wait for the clean up of connections over other transports to be completed before returning.</p>
-
-<p><b>RxCeTearDownVC</b> calls TDI to disconnect the virtual circuit associated with a connection. If the call to TDI is unsuccessful, <b>RxCeTearDownVC</b> will return the error from the TDI routine call. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -117,7 +111,7 @@ NTSTATUS RxCeTearDownVC(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553439">RxCeBuildVC</a>
+<a href="..\rxce\nf-rxce-rxcebuildvc.md">RxCeBuildVC</a>
 </dt>
 </dl>
 <p> </p>

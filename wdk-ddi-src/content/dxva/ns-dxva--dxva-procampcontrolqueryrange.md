@@ -65,13 +65,13 @@ typedef struct _DXVA_ProcAmpControlQueryRange {
 ### -field <b>ProcAmpControlProp</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564027">DXVA_ProcAmpControlProp</a> structure that indicates the supported ProcAmp control properties.</p>
+<p>Specifies a <a href="..\dxva\ne-dxva--dxva-procampcontrolprop.md">DXVA_ProcAmpControlProp</a> structure that indicates the supported ProcAmp control properties.</p>
 </dd>
 
 ### -field <b>VideoDesc</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564070">DXVA_VideoDesc</a> structure that provides the driver with a description of the video that the ProcAmp adjustment is going to be applied to. Drivers may adjust their ProcAmp feature support for particular video streams.</p>
+<p>Specifies a <a href="..\dxva\ns-dxva--dxva-videodesc.md">DXVA_VideoDesc</a> structure that provides the driver with a description of the video that the ProcAmp adjustment is going to be applied to. Drivers may adjust their ProcAmp feature support for particular video streams.</p>
 </dd>
 </dl>
 
@@ -103,10 +103,10 @@ typedef struct _DXVA_ProcAmpControlQueryRange {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564070">DXVA_VideoDesc</a>
+<a href="..\dxva\ns-dxva--dxva-videodesc.md">DXVA_VideoDesc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564027">DXVA_ProcAmpControlProp</a>
+<a href="..\dxva\ne-dxva--dxva-procampcontrolprop.md">DXVA_ProcAmpControlProp</a>
 </dt>
 </dl>
 <p> </p>

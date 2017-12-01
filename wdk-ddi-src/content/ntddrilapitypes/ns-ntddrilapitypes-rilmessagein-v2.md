@@ -7,7 +7,7 @@ old-location: netvista\rilmessagein_v2.htm
 old-project: netvista
 ms.assetid: 44d4f693-4aab-4023-88b7-19c1bfcc7e5a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMESSAGEIN_V2, RILMESSAGEIN_V2, RILMESSAGEIN, *LPRILMESSAGEIN
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\rilsupservicedatastatus.htm
 old-project: netvista
 ms.assetid: 60cecce7-9085-4cbd-b637-e24af51d1c22
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

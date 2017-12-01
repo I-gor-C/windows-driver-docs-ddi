@@ -7,7 +7,7 @@ old-location: netvista\protocoluninstall.htm
 old-project: netvista
 ms.assetid: 959baf54-849c-4bb1-b4c5-4d5537e1d688
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,141 +82,12 @@ VOID ProtocolUninstall(void)
 <p><i>ProtocolUninstall</i> performs driver-determined cleanup operations. For example, 
     <i>ProtocolUninstall</i> could request clients to close open handles to device objects that the protocol
     driver exported. Until all such handles are closed, the I/O manager will not call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine that the protocol driver registered in
+    <a href="kernel.unload">Unload</a> routine that the protocol driver registered in
     the driver object passed to its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. After all the handles are
+    <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. After all the handles are
     closed, 
     <i>ProtocolUninstall</i> can call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561741">NdisDeregisterDeviceEx</a> to delete
-    any device objects created by the protocol driver.</p>
-
-<p>The protocol lower edge of an intermediate driver might require a 
-    <i>ProtocolUninstall</i> function. The intermediate driver can release its protocol edge resources in 
-    <i>ProtocolUninstall</i> before NDIS calls its 
-    <a href="..\ndis\nc-ndis-miniport-unload.md">MiniportDriverUnload</a> function.</p>
-
-<p>NDIS calls
-    <i>ProtocolUninstall</i> at IRQL = PASSIVE_LEVEL.</p>
-
-<p>To define a <i>ProtocolUninstall</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define a <i>ProtocolUninstall</i> function that is named "MyUninstall", use the <b>PROTOCOL_UNINSTALL</b> type as shown in this code example:</p>
-
-<p>Then, implement your function as follows:</p>
-
-<p>The <b>PROTOCOL_UNINSTALL</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_UNINSTALL</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
-
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. </p>
-
-<p>The 
-    <i>ProtocolUninstall</i> function is optional. The protocol driver registered an entry point, if any, for
-    this function in the 
-    <a href="..\ndis\ns-ndis--ndis-protocol-driver-characteristics.md">
-    NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</a> structure that it passed to the 
-    <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
-    NdisRegisterProtocolDriver</a> function.</p>
-
-<p>In response to a user request to uninstall a protocol driver, NDIS calls a protocol driver's 
-    <i>ProtocolUninstall</i> function. NDIS calls 
-    <i>ProtocolUninstall</i> after calling the protocol driver's 
-    <a href="..\ndis\nc-ndis-protocol-unbind-adapter-ex.md">
-    ProtocolUnbindAdapterEx</a> function once for each bound adapter.</p>
-
-<p><i>ProtocolUninstall</i> performs driver-determined cleanup operations. For example, 
-    <i>ProtocolUninstall</i> could request clients to close open handles to device objects that the protocol
-    driver exported. Until all such handles are closed, the I/O manager will not call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine that the protocol driver registered in
-    the driver object passed to its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. After all the handles are
-    closed, 
-    <i>ProtocolUninstall</i> can call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561741">NdisDeregisterDeviceEx</a> to delete
-    any device objects created by the protocol driver.</p>
-
-<p>The protocol lower edge of an intermediate driver might require a 
-    <i>ProtocolUninstall</i> function. The intermediate driver can release its protocol edge resources in 
-    <i>ProtocolUninstall</i> before NDIS calls its 
-    <a href="..\ndis\nc-ndis-miniport-unload.md">MiniportDriverUnload</a> function.</p>
-
-<p>NDIS calls
-    <i>ProtocolUninstall</i> at IRQL = PASSIVE_LEVEL.</p>
-
-<p>To define a <i>ProtocolUninstall</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define a <i>ProtocolUninstall</i> function that is named "MyUninstall", use the <b>PROTOCOL_UNINSTALL</b> type as shown in this code example:</p>
-
-<p>Then, implement your function as follows:</p>
-
-<p>The <b>PROTOCOL_UNINSTALL</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_UNINSTALL</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
-
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. </p>
-
-<p>The 
-    <i>ProtocolUninstall</i> function is optional. The protocol driver registered an entry point, if any, for
-    this function in the 
-    <a href="..\ndis\ns-ndis--ndis-protocol-driver-characteristics.md">
-    NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</a> structure that it passed to the 
-    <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
-    NdisRegisterProtocolDriver</a> function.</p>
-
-<p>In response to a user request to uninstall a protocol driver, NDIS calls a protocol driver's 
-    <i>ProtocolUninstall</i> function. NDIS calls 
-    <i>ProtocolUninstall</i> after calling the protocol driver's 
-    <a href="..\ndis\nc-ndis-protocol-unbind-adapter-ex.md">
-    ProtocolUnbindAdapterEx</a> function once for each bound adapter.</p>
-
-<p><i>ProtocolUninstall</i> performs driver-determined cleanup operations. For example, 
-    <i>ProtocolUninstall</i> could request clients to close open handles to device objects that the protocol
-    driver exported. Until all such handles are closed, the I/O manager will not call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine that the protocol driver registered in
-    the driver object passed to its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. After all the handles are
-    closed, 
-    <i>ProtocolUninstall</i> can call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561741">NdisDeregisterDeviceEx</a> to delete
-    any device objects created by the protocol driver.</p>
-
-<p>The protocol lower edge of an intermediate driver might require a 
-    <i>ProtocolUninstall</i> function. The intermediate driver can release its protocol edge resources in 
-    <i>ProtocolUninstall</i> before NDIS calls its 
-    <a href="..\ndis\nc-ndis-miniport-unload.md">MiniportDriverUnload</a> function.</p>
-
-<p>NDIS calls
-    <i>ProtocolUninstall</i> at IRQL = PASSIVE_LEVEL.</p>
-
-<p>To define a <i>ProtocolUninstall</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define a <i>ProtocolUninstall</i> function that is named "MyUninstall", use the <b>PROTOCOL_UNINSTALL</b> type as shown in this code example:</p>
-
-<p>Then, implement your function as follows:</p>
-
-<p>The <b>PROTOCOL_UNINSTALL</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_UNINSTALL</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
-
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. </p>
-
-<p>The 
-    <i>ProtocolUninstall</i> function is optional. The protocol driver registered an entry point, if any, for
-    this function in the 
-    <a href="..\ndis\ns-ndis--ndis-protocol-driver-characteristics.md">
-    NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</a> structure that it passed to the 
-    <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
-    NdisRegisterProtocolDriver</a> function.</p>
-
-<p>In response to a user request to uninstall a protocol driver, NDIS calls a protocol driver's 
-    <i>ProtocolUninstall</i> function. NDIS calls 
-    <i>ProtocolUninstall</i> after calling the protocol driver's 
-    <a href="..\ndis\nc-ndis-protocol-unbind-adapter-ex.md">
-    ProtocolUnbindAdapterEx</a> function once for each bound adapter.</p>
-
-<p><i>ProtocolUninstall</i> performs driver-determined cleanup operations. For example, 
-    <i>ProtocolUninstall</i> could request clients to close open handles to device objects that the protocol
-    driver exported. Until all such handles are closed, the I/O manager will not call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine that the protocol driver registered in
-    the driver object passed to its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. After all the handles are
-    closed, 
-    <i>ProtocolUninstall</i> can call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561741">NdisDeregisterDeviceEx</a> to delete
+    <a href="..\ndis\nf-ndis-ndisderegisterdeviceex.md">NdisDeregisterDeviceEx</a> to delete
     any device objects created by the protocol driver.</p>
 
 <p>The protocol lower edge of an intermediate driver might require a 
@@ -270,7 +141,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>
+<a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport-unload.md">MiniportDriverUnload</a>
@@ -283,15 +154,15 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
    NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561741">NdisDeregisterDeviceEx</a>
+<a href="..\ndis\nf-ndis-ndisderegisterdeviceex.md">NdisDeregisterDeviceEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564520">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a>
+<a href="kernel.unload">Unload</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_UNINSTALL callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_UNINSTALL callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

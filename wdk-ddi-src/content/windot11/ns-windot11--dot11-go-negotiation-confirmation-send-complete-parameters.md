@@ -7,7 +7,7 @@ old-location: netvista\dot11_go_negotiation_confirmation_send_complete_parameter
 old-project: netvista
 ms.assetid: CD8427DB-256C-4C34-8D14-2C1AD4C297ED
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

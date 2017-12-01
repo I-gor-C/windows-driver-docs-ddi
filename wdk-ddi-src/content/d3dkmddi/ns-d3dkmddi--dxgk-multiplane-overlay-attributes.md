@@ -77,38 +77,38 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES {
 ### -field <b>Flags</b>
 
 <dd>
-<p>Specifies a flip operation as one of the applicable constant values in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780304">DXGK_MULTIPLANE_OVERLAY_FLAGS</a> enumeration.</p>
+<p>Specifies a flip operation as one of the applicable constant values in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-flags.md">DXGK_MULTIPLANE_OVERLAY_FLAGS</a> enumeration.</p>
 </dd>
 
 ### -field <b>SrcRect</b>
 
 <dd>
-<p>Specifies the source rectangle, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the source resource.</p>
+<p>Specifies the source rectangle, of type <a href="display.rect">RECT</a>, relative to the source resource.</p>
 </dd>
 
 ### -field <b>DstRect</b>
 
 <dd>
-<p>Specifies the destination rectangle, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the monitor resolution.</p>
+<p>Specifies the destination rectangle, of type <a href="display.rect">RECT</a>, relative to the monitor resolution.</p>
 </dd>
 
 ### -field <b>ClipRect</b>
 
 <dd>
-<p>Specifies any additional clipping, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the <b>DstRect</b> rectangle, after the data has been stretched according to the values of <b>SrcRect</b> and <b>DstRect</b>.</p>
+<p>Specifies any additional clipping, of type <a href="display.rect">RECT</a>, relative to the <b>DstRect</b> rectangle, after the data has been stretched according to the values of <b>SrcRect</b> and <b>DstRect</b>.</p>
 <p>The driver and hardware can use the <b>ClipRect</b> member to apply a common stretch factor as the clipping changes when an app occludes part of the <b>DstRect</b> destination rectangle.</p>
 </dd>
 
 ### -field <b>Rotation</b>
 
 <dd>
-<p>Specifies the clockwise rotation of the overlay plane, given as a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544646">D3DDDI_ROTATION</a> enumeration.</p>
+<p>Specifies the clockwise rotation of the overlay plane, given as a value from the <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-rotation.md">D3DDDI_ROTATION</a> enumeration.</p>
 </dd>
 
 ### -field <b>Blend</b>
 
 <dd>
-<p>Specifies the blend mode that applies to this overlay plane and the plane beneath it, given as a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780302">DXGK_MULTIPLANE_OVERLAY_BLEND</a> enumeration.</p>
+<p>Specifies the blend mode that applies to this overlay plane and the plane beneath it, given as a value from the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-blend.md">DXGK_MULTIPLANE_OVERLAY_BLEND</a> enumeration.</p>
 </dd>
 
 ### -field <b>NumFilters</b>
@@ -126,7 +126,7 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES {
 ### -field <b>VideoFrameFormat</b>
 
 <dd>
-<p>Specifies the overlay plane's video frame format, given as a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780308">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a> enumeration.</p>
+<p>Specifies the overlay plane's video frame format, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-video-frame-format.md">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a> enumeration.</p>
 <div class="alert"><b>Note</b>  This value must always be <b>DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE</b>. The operating system does not support the other enumeration values.</div>
 <div> </div>
 </dd>
@@ -134,13 +134,13 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES {
 ### -field <b>YCbCrFlags</b>
 
 <dd>
-<p>Specifies YUV range and conversion info given as a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780310">DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a> enumeration.</p>
+<p>Specifies YUV range and conversion info given as a value from the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-ycbcr-flags.md">DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a> enumeration.</p>
 </dd>
 
 ### -field <b>StereoFormat</b>
 
 <dd>
-<p>Specifies the overlay plane's video frame format, given as a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780307">DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT</a> enumeration.</p>
+<p>Specifies the overlay plane's video frame format, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-stereo-format.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT</a> enumeration.</p>
 <div class="alert"><b>Note</b>  This value must always be <b>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO</b>. The operating system does not support the other enumeration values.</div>
 <div> </div>
 </dd>
@@ -160,7 +160,7 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES {
 ### -field <b>StereoFlipMode</b>
 
 <dd>
-<p>Specifies the overlay plane's stereo flip mode, given as a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780306">DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a> enumeration.</p>
+<p>Specifies the overlay plane's stereo flip mode, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-stereo-flip-mode.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a> enumeration.</p>
 <div class="alert"><b>Note</b>  This value must always be <b>DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE</b>. The operating system does not support the other enumeration values.</div>
 <div> </div>
 </dd>
@@ -168,7 +168,7 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES {
 ### -field <b>StretchQuality</b>
 
 <dd>
-<p>Specifies the overlay plane's stretch quality, given as a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/dn305134">DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a> enumeration.</p>
+<p>Specifies the overlay plane's stretch quality, given as a value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-stretch-quality.md">DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a> enumeration.</p>
 </dd>
 </dl>
 
@@ -208,28 +208,28 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780302">DXGK_MULTIPLANE_OVERLAY_BLEND</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-blend.md">DXGK_MULTIPLANE_OVERLAY_BLEND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780304">DXGK_MULTIPLANE_OVERLAY_FLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-flags.md">DXGK_MULTIPLANE_OVERLAY_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780306">DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-stereo-flip-mode.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780307">DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-stereo-format.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn305134">DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-stretch-quality.md">DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780308">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-multiplane-overlay-video-frame-format.md">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780310">DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-ycbcr-flags.md">DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544646">D3DDDI_ROTATION</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-rotation.md">D3DDDI_ROTATION</a>
 </dt>
 </dl>
 <p> </p>

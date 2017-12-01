@@ -7,7 +7,7 @@ old-location: kernel\masktableentry.htm
 old-project: kernel
 ms.assetid: ADD9AA38-594D-413A-BE8B-BCC6B62EAA8E
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NTSTATUS MaskTableEntry(
 ### -param <i>Context</i> [in]
 
 <dd>
-<p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558787">PCI_MSIX_TABLE_CONFIG_INTERFACE</a> structure for the interface.</p>
+<p>A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm--pci-msix-table-config-interface.md">PCI_MSIX_TABLE_CONFIG_INTERFACE</a> structure for the interface.</p>
 </dd>
 
 ### -param <i>TableEntry</i> [in]
@@ -84,11 +84,7 @@ NTSTATUS MaskTableEntry(
 ## -remarks
 <p>If a table entry is masked, the device does not generate any interrupts that correspond to that table entry.</p>
 
-<p>You can unmask the table entry by calling <a href="https://msdn.microsoft.com/library/windows/hardware/gg604859">UnmaskTableEntry</a>.</p>
-
-<p>If a table entry is masked, the device does not generate any interrupts that correspond to that table entry.</p>
-
-<p>You can unmask the table entry by calling <a href="https://msdn.microsoft.com/library/windows/hardware/gg604859">UnmaskTableEntry</a>.</p>
+<p>You can unmask the table entry by calling <a href="..\wdm\nc-wdm-pci-msix-maskunmask-entry.md">UnmaskTableEntry</a>.</p>
 
 ## -requirements
 <table>
@@ -133,12 +129,12 @@ NTSTATUS MaskTableEntry(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg604859">UnmaskTableEntry</a>
+<a href="..\wdm\nc-wdm-pci-msix-maskunmask-entry.md">UnmaskTableEntry</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558787">PCI_MSIX_TABLE_CONFIG_INTERFACE</a>
+<a href="..\wdm\ns-wdm--pci-msix-table-config-interface.md">PCI_MSIX_TABLE_CONFIG_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PCI_MSIX_MASKUNMASK_ENTRY routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PCI_MSIX_MASKUNMASK_ENTRY routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -67,8 +67,6 @@ HRESULT GetXpsPart(
 ## -remarks
 <p>Use <b>QueryInterface</b> on the value that the <b>GetXpsPart</b> method returns to determine the type of object that it retrieved.</p>
 
-<p>Use <b>QueryInterface</b> on the value that the <b>GetXpsPart</b> method returns to determine the type of object that it retrieved.</p>
-
 ## -requirements
 <table>
 <tr>

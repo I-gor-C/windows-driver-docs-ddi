@@ -7,7 +7,7 @@ old-location: netvista\rilcdmaavoidancerequestype.htm
 old-project: netvista
 ms.assetid: 8c0c641e-6aee-44ef-85a4-6f58ba67f6b3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

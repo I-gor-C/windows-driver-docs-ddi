@@ -7,7 +7,7 @@ old-location: netvista\dot11extsetdefaultkey.htm
 old-project: netvista
 ms.assetid: 7c066a71-502a-4dc2-b117-32597c534cb6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -77,7 +76,7 @@ DWORD WINAPI * Dot11ExtSetDefaultKey(
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547680">DOT11_DIRECTION</a> value that specifies whether
+     <a href="..\windot11\ne-windot11-dot11-direction.md">DOT11_DIRECTION</a> value that specifies whether
      the key can be used only for received packets (DOT11_DIR_INBOUND) or both received and sent packets
      (DOT11_DIR_BOTH).
      </p>
@@ -95,23 +94,6 @@ DWORD WINAPI * Dot11ExtSetDefaultKey(
      Winerror.h.</p>
 
 ## -remarks
-<p>A call to the 
-    <b>Dot11ExtSetDefaultKey</b> function results in a set request of the 
-    <a href="netvista.oid_dot11_cipher_default_key">
-    OID_DOT11_CIPHER_DEFAULT_KEY</a> object identifier to the WLAN adapter.</p>
-
-<p>A default cipher key is defined by setting the 
-    <b>MacAddr</b> member of the 
-    <a href="..\windot11\ns-windot11-dot11-cipher-default-key-value.md">
-    DOT11_CIPHER_DEFAULT_KEY_VALUE</a> structure to a value of 0x000000000000. A per-station default cipher
-    key is defined by setting the 
-    <b>MacAddr</b> member to a valid unicast media access control (MAC) address.</p>
-
-<p>A cipher key is deleted from the adapter's key tables if the 
-    <b>bDelete</b> member of the 
-    <a href="..\windot11\ns-windot11-dot11-cipher-default-key-value.md">
-    DOT11_CIPHER_DEFAULT_KEY_VALUE</a> structure is set to <b>TRUE</b>.</p>
-
 <p>A call to the 
     <b>Dot11ExtSetDefaultKey</b> function results in a set request of the 
     <a href="netvista.oid_dot11_cipher_default_key">
@@ -172,7 +154,7 @@ DWORD WINAPI * Dot11ExtSetDefaultKey(
    DOT11_CIPHER_DEFAULT_KEY_VALUE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547680">DOT11_DIRECTION</a>
+<a href="..\windot11\ne-windot11-dot11-direction.md">DOT11_DIRECTION</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-deinit-adapter.md">Dot11ExtIhvDeinitAdapter</a>
@@ -186,4 +168,4 @@ DWORD WINAPI * Dot11ExtSetDefaultKey(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_DEFAULT_KEY callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_DEFAULT_KEY callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

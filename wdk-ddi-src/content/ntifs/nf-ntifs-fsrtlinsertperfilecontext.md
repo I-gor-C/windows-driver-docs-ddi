@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FsRtlInsertPerFileContext</b> routine associates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547352">FSRTL_PER_FILE_CONTEXT</a> object with a driver-specified context object for a file.</p>
+<p>The <b>FsRtlInsertPerFileContext</b> routine associates a <a href="..\ntifs\ns-ntifs--fsrtl-per-file-context.md">FSRTL_PER_FILE_CONTEXT</a> object with a driver-specified context object for a file.</p>
 
 
 ## -syntax
@@ -78,10 +78,6 @@ NTSTATUS FsRtlInsertPerFileContext(
 <p> </p>
 
 ## -remarks
-<p>The FsRtlGetPerFileContextPointer macro returns a <i>FileContextSupportPointer</i> for an open file. </p>
-
-<p>Parameters</p>
-
 <p>The FsRtlGetPerFileContextPointer macro returns a <i>FileContextSupportPointer</i> for an open file. </p>
 
 <p>Parameters</p>
@@ -149,13 +145,13 @@ NTSTATUS FsRtlInsertPerFileContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547352">FSRTL_PER_FILE_CONTEXT</a>
+<a href="..\ntifs\ns-ntifs--fsrtl-per-file-context.md">FSRTL_PER_FILE_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546930">FsRtlLookupPerFileContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtllookupperfilecontext.md">FsRtlLookupPerFileContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547226">FsRtlRemovePerFileContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtlremoveperfilecontext.md">FsRtlRemovePerFileContext</a>
 </dt>
 <dt>
 <a href="ifsk.tracking_per_file_context_in_a_legacy_file_system_filter_driver">Tracking Per-File Context in a Legacy File System Filter Driver</a>

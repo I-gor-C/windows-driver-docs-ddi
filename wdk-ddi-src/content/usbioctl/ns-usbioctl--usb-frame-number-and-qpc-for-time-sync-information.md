@@ -141,7 +141,7 @@ typedef struct _USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION {
 ### -field <b>CurrentUSBFrameNumber</b>
 
 <dd>
-<p>A 32-bit USB frame number value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff540401">_URB_GET_CURRENT_FRAME_NUMBER</a>.</p>
+<p>A 32-bit USB frame number value returned by <a href="buses._urb_get_current_frame_number">_URB_GET_CURRENT_FRAME_NUMBER</a>.</p>
 </dd>
 </dl>
 

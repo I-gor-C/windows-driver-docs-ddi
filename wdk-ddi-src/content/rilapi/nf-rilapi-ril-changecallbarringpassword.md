@@ -7,7 +7,7 @@ old-location: netvista\ril_changecallbarringpassword.htm
 old-project: netvista
 ms.assetid: f312e955-c8a5-4642-ac8a-a0173f034a63
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_ChangeCallBarringPassword
 ms.prod: windows-hardware
 ms.technology: windows-devices

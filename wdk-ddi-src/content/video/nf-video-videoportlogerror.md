@@ -93,12 +93,6 @@ VOID VideoPortLogError(
 
 <p><b>VideoPortLogError</b> can be called from a miniport driver's <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pminiport-synchronize-routine.md">HwVidSynchronizeExecutionCallback</a> function. </p>
 
-<p>Miniport drivers should call <b>VideoPortLogError</b> to notify the user if the driver encounters unusual hardware errors during normal operations. Posting such errors to the system event log warns the user that the video adapter might be failing so the user can replace (or reconfigure) the adapter before a total hardware failure occurs.</p>
-
-<p>However, miniport drivers should <i>not</i> log errors, such as "failed to detect hardware," that occur frequently during normal operation.</p>
-
-<p><b>VideoPortLogError</b> can be called from a miniport driver's <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pminiport-synchronize-routine.md">HwVidSynchronizeExecutionCallback</a> function. </p>
-
 ## -requirements
 <table>
 <tr>

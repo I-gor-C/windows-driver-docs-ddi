@@ -103,7 +103,7 @@ typedef struct D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541681">D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-creategeometryshaderwithstreamoutput.md">D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
 </dt>
 </dl>
 <p> </p>

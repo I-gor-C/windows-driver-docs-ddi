@@ -42,8 +42,8 @@ req.product: Windows 10 or later.
 ## -description
 <p>The <b>USB_HUB_TYPE</b> enumeration defines constants that indicate the type of USB hub.
 
-The hub type is retrieved by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450860">IOCTL_USB_GET_HUB_INFORMATION_EX</a> I/O control request.</p>
-<p>The request retrieves the hub descriptor associated with the specified hub in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406262">USB_HUB_INFORMATION_EX</a> structure. The   <b>HubType</b> member contains a <b>USB_HUB_TYPE</b> enumerator that the application can use to evaluate the type of hub descriptor retrieved by the request. </p>
+The hub type is retrieved by the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-hub-information-ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a> I/O control request.</p>
+<p>The request retrieves the hub descriptor associated with the specified hub in the <a href="..\usbioctl\ns-usbioctl--usb-hub-information-ex.md">USB_HUB_INFORMATION_EX</a> structure. The   <b>HubType</b> member contains a <b>USB_HUB_TYPE</b> enumerator that the application can use to evaluate the type of hub descriptor retrieved by the request. </p>
 
 
 ## -syntax
@@ -115,13 +115,13 @@ typedef enum _USB_HUB_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406262">USB_HUB_INFORMATION_EX</a>
+<a href="..\usbioctl\ns-usbioctl--usb-hub-information-ex.md">USB_HUB_INFORMATION_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450860">IOCTL_USB_GET_HUB_INFORMATION_EX</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-hub-information-ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+<a href="buses.usb_enumerations">USB Constants and Enumerations</a>
 </dt>
 </dl>
 <p> </p>

@@ -55,26 +55,26 @@ req.product: Windows 10 or later.
 <p>None.</p>
 
 ### -output-buffer
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a> 
+<p>A pointer to a caller-allocated <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
 			structure that UFX populates with the type of bus event and data associated with that event. </p>
 
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a> 
+<p>A pointer to a caller-allocated <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
 			structure that UFX populates with the type of bus event and data associated with that event. </p>
 
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a> 
+<p>A pointer to a caller-allocated <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
 			structure that UFX populates with the type of bus event and data associated with that event. </p>
 
 ### -output-buffer-length
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a> 
+<p>The size of a <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
 			structure.</p>
 
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a> 
+<p>The size of a <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
 			structure.</p>
 
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a> 
+<p>The size of a <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
 			structure.</p>
 
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a> 
+<p>The size of a <a href="buses.usbfn_notification">USBFN_NOTIFICATION</a> 
 			structure.</p>
 
 ### -in-out-buffer
@@ -100,16 +100,6 @@ I/O Status block
 ## -remarks
 <p>UFX completes this request in response to an event on the bus. It is recommended that class drivers send multiple requests at a time to make sure that critical notifications are not missed. </p>
 
-<p>UFX completes this request in response to an event on the bus. It is recommended that class drivers send multiple requests at a time to make sure that critical notifications are not missed. </p>
-
-<p>UFX completes this request in response to an event on the bus. It is recommended that class drivers send multiple requests at a time to make sure that critical notifications are not missed. </p>
-
-<p>UFX completes this request in response to an event on the bus. It is recommended that class drivers send multiple requests at a time to make sure that critical notifications are not missed. </p>
-
-<p>UFX completes this request in response to an event on the bus. It is recommended that class drivers send multiple requests at a time to make sure that critical notifications are not missed. </p>
-
-<p>UFX completes this request in response to an event on the bus. It is recommended that class drivers send multiple requests at a time to make sure that critical notifications are not missed. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -127,10 +117,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187994">USBFN_EVENT</a>
+<a href="buses.usbfn_event">USBFN_EVENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a>
+<a href="buses.usbfn_notification">USBFN_NOTIFICATION</a>
 </dt>
 </dl>
 <p> </p>

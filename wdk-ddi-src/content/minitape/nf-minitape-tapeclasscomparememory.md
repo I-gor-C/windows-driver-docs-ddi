@@ -81,8 +81,6 @@ ULONG TapeClassCompareMemory(
 ## -remarks
 <p>A tape miniclass driver uses <b>TapeClassCompareMemory</b> to compare memory in a portable way. For example, a miniclass driver uses <b>TapeClassCompareMemory</b> in its TapeMiniVerifyInquiry routine to determine whether a given product ID matches one of the devices the driver supports.</p>
 
-<p>A tape miniclass driver uses <b>TapeClassCompareMemory</b> to compare memory in a portable way. For example, a miniclass driver uses <b>TapeClassCompareMemory</b> in its TapeMiniVerifyInquiry routine to determine whether a given product ID matches one of the devices the driver supports.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -120,7 +118,7 @@ ULONG TapeClassCompareMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567956">TapeMiniVerifyInquiry</a>
+<a href="storage.tapeminiverifyinquiry">TapeMiniVerifyInquiry</a>
 </dt>
 </dl>
 <p> </p>

@@ -60,13 +60,13 @@ HRESULT DownloadPattern(
 ### -param <i>pdevobj</i> 
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>A pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>psoPattern</i> 
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569901">SURFOBJ</a> structure that contains the pattern to download.</p>
+<p>A pointer to the <a href="display.surfobj">SURFOBJ</a> structure that contains the pattern to download.</p>
 </dd>
 
 ### -param <i>lPatternID</i> 
@@ -80,10 +80,6 @@ HRESULT DownloadPattern(
 <p>If successful, this method should return S_OK. Otherwise, this method should return an appropriate value in the returned HRESULT.</p>
 
 ## -remarks
-<p>This method is available in Windows Vista and later.</p>
-
-<p>You should implement this method if you want your rendering plug-in, rather than Unidrv, to download a pattern. If implemented, this method is called by <b>DrvRealizeBrush</b> for raster-mode print jobs. This method is not called for vector-mode print jobs.</p>
-
 <p>This method is available in Windows Vista and later.</p>
 
 <p>You should implement this method if you want your rendering plug-in, rather than Unidrv, to download a pattern. If implemented, this method is called by <b>DrvRealizeBrush</b> for raster-mode print jobs. This method is not called for vector-mode print jobs.</p>
@@ -115,7 +111,7 @@ HRESULT DownloadPattern(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556273">DrvRealizeBrush</a>
+<a href="display.drvrealizebrush">DrvRealizeBrush</a>
 </dt>
 </dl>
 <p> </p>

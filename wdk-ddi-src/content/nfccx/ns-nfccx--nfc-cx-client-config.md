@@ -7,7 +7,7 @@ old-location: nfpdrivers\nfc_cx_client_config.htm
 old-project: nfpdrivers
 ms.assetid: 8E005C77-4234-4B32-90F2-E4A8A7CD6305
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: NFC_CX_CLIENT_CONFIG, NFC_CX_CLIENT_CONFIG, *PNFC_CX_CLIENT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,7 +73,7 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 ### -field <b>IsPowerPolicyOwner</b>
 
 <dd>
-<p> A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552533">WDF_TRI_STATE</a>-typed enumerator. </p>
+<p> A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed enumerator. </p>
 </dd>
 
 ### -field <b>PowerIdleTimeout</b>
@@ -87,7 +87,7 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 ### -field <b>PowerIdleType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh706247">WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</a>-typed enumerator.
+<p>A <a href="..\wdfdevice\ne-wdfdevice--wdf-power-policy-idle-timeout-type.md">WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</a>-typed enumerator.
 
 </p>
 </dd>
@@ -95,7 +95,7 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 ### -field <b>BusType</b>
 
 <dd>
-<p> An <a href="https://msdn.microsoft.com/library/windows/hardware/dn905564">NFC_CX_TRANSPORT_TYPE</a>-typed enumerator.
+<p> An <a href="..\nfccx\ne-nfccx--nfc-cx-transport-type.md">NFC_CX_TRANSPORT_TYPE</a>-typed enumerator.
 
 </p>
 </dd>
@@ -103,7 +103,7 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 ### -field <b>DriverFlags</b>
 
 <dd>
-<p> Combination of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905542">NFC_CX_DRIVER_FLAGS</a> values.
+<p> Combination of <a href="..\nfccx\ne-nfccx--nfc-cx-driver-flags.md">NFC_CX_DRIVER_FLAGS</a> values.
 
 </p>
 </dd>
@@ -169,4 +169,4 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_CLIENT_CONFIG structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_CLIENT_CONFIG structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

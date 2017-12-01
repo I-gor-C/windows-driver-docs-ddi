@@ -66,9 +66,7 @@ HRESULT GetNextSiblingItem(
 <p>If the method succeeds, it stores a pointer to the next sibling item in <i>ppISiblingItem</i> and returns S_OK. If there are no more items in the folder, the method returns S_FALSE. If the method fails, it returns a standard COM error code. </p>
 
 ## -remarks
-<p>Minidrivers obtain a pointer to the first child item in a folder by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543878">IWiaDrvItem::GetFirstChildItem</a>. Minidrivers can then obtain the sibling items of this child item in the folder by making successive calls to <b>IWiaDrvItem::GetNextSiblingItem</b>.</p>
-
-<p>Minidrivers obtain a pointer to the first child item in a folder by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543878">IWiaDrvItem::GetFirstChildItem</a>. Minidrivers can then obtain the sibling items of this child item in the folder by making successive calls to <b>IWiaDrvItem::GetNextSiblingItem</b>.</p>
+<p>Minidrivers obtain a pointer to the first child item in a folder by calling <a href="image.iwiadrvitem_getfirstchilditem">IWiaDrvItem::GetFirstChildItem</a>. Minidrivers can then obtain the sibling items of this child item in the folder by making successive calls to <b>IWiaDrvItem::GetNextSiblingItem</b>.</p>
 
 ## -requirements
 <table>
@@ -105,10 +103,10 @@ HRESULT GetNextSiblingItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543878">IWiaDrvItem::GetFirstChildItem</a>
+<a href="image.iwiadrvitem_getfirstchilditem">IWiaDrvItem::GetFirstChildItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543892">IWiaDrvItem::GetParentItem</a>
+<a href="image.iwiadrvitem_getparentitem">IWiaDrvItem::GetParentItem</a>
 </dt>
 </dl>
 <p> </p>

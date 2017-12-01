@@ -61,7 +61,7 @@ void EvtVhfReadyForNextReadReport(
 ### -param <i>VhfClientContext</i> [in]
 
 <dd>
-<p>Pointer to the HID source driver-defined context structure that the driver passed in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/dn925036">VhfCreate</a> to create the virtual HID device.</p>
+<p>Pointer to the HID source driver-defined context structure that the driver passed in the previous call to <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a> to create the virtual HID device.</p>
 </dd>
 </dl>
 
@@ -69,11 +69,7 @@ void EvtVhfReadyForNextReadReport(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>Virtual HID Framework (VHF) invokes this callback function to notify the HID source driver that it can submit a buffer to get the HID Input Report. After the callback is invoked, the HID source driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/dn925040">VhfReadReportSubmit</a>  only once. If a portion of the HID Input Report is still pending, the driver must wait for VHF to invoke <i>EvtVhfReadyForNextReadReport</i> before the driver can call <b>VhfReadReportSubmit</b> again.</p>
-
-<p>If the HID source driver does not implement this callback function, VHF uses a default buffering policy for HID Read (Input) Reports.</p>
-
-<p>Virtual HID Framework (VHF) invokes this callback function to notify the HID source driver that it can submit a buffer to get the HID Input Report. After the callback is invoked, the HID source driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/dn925040">VhfReadReportSubmit</a>  only once. If a portion of the HID Input Report is still pending, the driver must wait for VHF to invoke <i>EvtVhfReadyForNextReadReport</i> before the driver can call <b>VhfReadReportSubmit</b> again.</p>
+<p>Virtual HID Framework (VHF) invokes this callback function to notify the HID source driver that it can submit a buffer to get the HID Input Report. After the callback is invoked, the HID source driver must call <a href="..\vhf\nf-vhf-vhfreadreportsubmit.md">VhfReadReportSubmit</a>  only once. If a portion of the HID Input Report is still pending, the driver must wait for VHF to invoke <i>EvtVhfReadyForNextReadReport</i> before the driver can call <b>VhfReadReportSubmit</b> again.</p>
 
 <p>If the HID source driver does not implement this callback function, VHF uses a default buffering policy for HID Read (Input) Reports.</p>
 

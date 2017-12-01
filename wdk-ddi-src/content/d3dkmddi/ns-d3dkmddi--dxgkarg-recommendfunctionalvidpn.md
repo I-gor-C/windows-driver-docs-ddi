@@ -80,7 +80,7 @@ typedef struct _DXGKARG_RECOMMENDFUNCTIONALVIDPN {
 ### -field <b>RequestReason</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562022">DXGK_RECOMMENDFUNCTIONALVIDPN_REASON</a> value that indicates why the caller is requesting a functional VidPN.</p>
+<p>A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-recommendfunctionalvidpn-reason.md">DXGK_RECOMMENDFUNCTIONALVIDPN_REASON</a> value that indicates why the caller is requesting a functional VidPN.</p>
 </dd>
 
 ### -field <b>pPrivateDriverData</b>

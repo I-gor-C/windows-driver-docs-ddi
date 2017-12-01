@@ -53,7 +53,7 @@ req.iface:
 <text></text>
 
 ### -output-buffer
-<p>The mount manager client returns a variable-length structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562256">MOUNTDEV_NAME</a>, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The device name must be inserted at the address pointed to by the <i>Name</i> member of this structure.</p>
+<p>The mount manager client returns a variable-length structure of type <a href="..\mountmgr\ns-mountmgr--mountdev-name.md">MOUNTDEV_NAME</a>, defined in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The device name must be inserted at the address pointed to by the <i>Name</i> member of this structure.</p>
 
 ### -output-buffer-length
 <p><b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the output buffer, which must be greater than or equal to <b>sizeof</b>(MOUNTDEV_NAME).</p>
@@ -70,23 +70,23 @@ req.iface:
 
 ### -status-block
 I/O Status block
-<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="https://msdn.microsoft.com/library/windows/hardware/ff562256">MOUNTDEV_NAME</a>, Name) + output-&gt;NameLength, or alternatively, output-&gt;NameLength + sizeof(USHORT), where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b></p>
+<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountmgr\ns-mountmgr--mountdev-name.md">MOUNTDEV_NAME</a>, Name) + output-&gt;NameLength, or alternatively, output-&gt;NameLength + sizeof(USHORT), where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b></p>
 
 <p>If the operation is successful, the mount manager client must set the <b>Information</b> field to the length of the <b>NULL</b>-terminated string containing the device name and the <b>Status</b> field to STATUS_SUCCESS. </p>
 
-<p>If the output buffer is too small to hold the device name, the mount manager client must set the <b>Information</b> field to <b>sizeof</b>(MOUNTDEV_NAME) and the <b>Status</b> field to STATUS_BUFFER_OVERFLOW. In addition, the mount manager client fills in the NameLength member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562256">MOUNTDEV_NAME</a> structure.</p>
+<p>If the output buffer is too small to hold the device name, the mount manager client must set the <b>Information</b> field to <b>sizeof</b>(MOUNTDEV_NAME) and the <b>Status</b> field to STATUS_BUFFER_OVERFLOW. In addition, the mount manager client fills in the NameLength member of the <a href="..\mountmgr\ns-mountmgr--mountdev-name.md">MOUNTDEV_NAME</a> structure.</p>
 
-<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="https://msdn.microsoft.com/library/windows/hardware/ff562256">MOUNTDEV_NAME</a>, Name) + output-&gt;NameLength, or alternatively, output-&gt;NameLength + sizeof(USHORT), where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b></p>
-
-<p>If the operation is successful, the mount manager client must set the <b>Information</b> field to the length of the <b>NULL</b>-terminated string containing the device name and the <b>Status</b> field to STATUS_SUCCESS. </p>
-
-<p>If the output buffer is too small to hold the device name, the mount manager client must set the <b>Information</b> field to <b>sizeof</b>(MOUNTDEV_NAME) and the <b>Status</b> field to STATUS_BUFFER_OVERFLOW. In addition, the mount manager client fills in the NameLength member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562256">MOUNTDEV_NAME</a> structure.</p>
-
-<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="https://msdn.microsoft.com/library/windows/hardware/ff562256">MOUNTDEV_NAME</a>, Name) + output-&gt;NameLength, or alternatively, output-&gt;NameLength + sizeof(USHORT), where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b></p>
+<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountmgr\ns-mountmgr--mountdev-name.md">MOUNTDEV_NAME</a>, Name) + output-&gt;NameLength, or alternatively, output-&gt;NameLength + sizeof(USHORT), where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b></p>
 
 <p>If the operation is successful, the mount manager client must set the <b>Information</b> field to the length of the <b>NULL</b>-terminated string containing the device name and the <b>Status</b> field to STATUS_SUCCESS. </p>
 
-<p>If the output buffer is too small to hold the device name, the mount manager client must set the <b>Information</b> field to <b>sizeof</b>(MOUNTDEV_NAME) and the <b>Status</b> field to STATUS_BUFFER_OVERFLOW. In addition, the mount manager client fills in the NameLength member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562256">MOUNTDEV_NAME</a> structure.</p>
+<p>If the output buffer is too small to hold the device name, the mount manager client must set the <b>Information</b> field to <b>sizeof</b>(MOUNTDEV_NAME) and the <b>Status</b> field to STATUS_BUFFER_OVERFLOW. In addition, the mount manager client fills in the NameLength member of the <a href="..\mountmgr\ns-mountmgr--mountdev-name.md">MOUNTDEV_NAME</a> structure.</p>
+
+<p>The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountmgr\ns-mountmgr--mountdev-name.md">MOUNTDEV_NAME</a>, Name) + output-&gt;NameLength, or alternatively, output-&gt;NameLength + sizeof(USHORT), where output points to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b></p>
+
+<p>If the operation is successful, the mount manager client must set the <b>Information</b> field to the length of the <b>NULL</b>-terminated string containing the device name and the <b>Status</b> field to STATUS_SUCCESS. </p>
+
+<p>If the output buffer is too small to hold the device name, the mount manager client must set the <b>Information</b> field to <b>sizeof</b>(MOUNTDEV_NAME) and the <b>Status</b> field to STATUS_BUFFER_OVERFLOW. In addition, the mount manager client fills in the NameLength member of the <a href="..\mountmgr\ns-mountmgr--mountdev-name.md">MOUNTDEV_NAME</a> structure.</p>
 
 ## -remarks
 
@@ -108,7 +108,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562256">MOUNTDEV_NAME</a>
+<a href="..\mountmgr\ns-mountmgr--mountdev-name.md">MOUNTDEV_NAME</a>
 </dt>
 </dl>
 <p> </p>

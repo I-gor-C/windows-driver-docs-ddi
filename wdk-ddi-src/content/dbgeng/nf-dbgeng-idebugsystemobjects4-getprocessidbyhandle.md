@@ -7,7 +7,7 @@ old-location: debugger\getprocessidbyhandle.htm
 old-project: debugger
 ms.assetid: 6920cbd3-0a20-4d38-8538-85f46d0f0d5b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, GetProcessIdByHandle, IDebugSystemObjects4::GetProcessIdByHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,8 +76,6 @@ HRESULT GetProcessIdByHandle(
 <p> </p>
 
 ## -remarks
-<p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on system handles, see <a href="wdkgloss.h#wdkgloss.handle#wdkgloss.handle"><i>Handles</i></a>.</p>
-
 <p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on system handles, see <a href="wdkgloss.h#wdkgloss.handle#wdkgloss.handle"><i>Handles</i></a>.</p>
 
 ## -requirements

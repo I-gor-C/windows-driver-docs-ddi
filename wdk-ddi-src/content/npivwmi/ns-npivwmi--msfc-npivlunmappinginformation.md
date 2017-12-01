@@ -109,7 +109,7 @@ typedef struct _MSFC_NPIVLUNMappingInformation {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh127627">MSFC_NPIVLUNMappingInformation WMI Class</a>
+<a href="storage.msfc_npivlunmappinginformation_wmi_class">MSFC_NPIVLUNMappingInformation WMI Class</a>
 </dt>
 </dl>
 <p> </p>

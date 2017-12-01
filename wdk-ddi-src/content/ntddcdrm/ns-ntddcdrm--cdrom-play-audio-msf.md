@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Device control IRPs with a control code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559359">IOCTL_CDROM_PLAY_AUDIO_MSF</a> use this structure to play an audio CD.</p>
+<p>Device control IRPs with a control code of <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-play-audio-msf.md">IOCTL_CDROM_PLAY_AUDIO_MSF</a> use this structure to play an audio CD.</p>
 
 
 ## -syntax
@@ -116,7 +116,7 @@ typedef struct _CDROM_PLAY_AUDIO_MSF {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559359">IOCTL_CDROM_PLAY_AUDIO_MSF</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-play-audio-msf.md">IOCTL_CDROM_PLAY_AUDIO_MSF</a>
 </dt>
 </dl>
 <p> </p>

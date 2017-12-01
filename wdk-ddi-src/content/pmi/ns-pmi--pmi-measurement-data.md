@@ -69,7 +69,7 @@ typedef struct _PMI_MEASUREMENT_DATA {
 </dl>
 
 ## -remarks
-<p>The PMI_MEASUREMENT_DATA structure is returned through an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543845">IOCTL_PMI_GET_MEASUREMENT</a> I/O control (IOCTL) query request. If the query request completes successfully, the request returns a PMI_MEASUREMENT_DATA structure.</p>
+<p>The PMI_MEASUREMENT_DATA structure is returned through an <a href="..\pmi\ni-pmi-ioctl-pmi-get-measurement.md">IOCTL_PMI_GET_MEASUREMENT</a> I/O control (IOCTL) query request. If the query request completes successfully, the request returns a PMI_MEASUREMENT_DATA structure.</p>
 
 ## -requirements
 <table>
@@ -96,7 +96,7 @@ typedef struct _PMI_MEASUREMENT_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543845">IOCTL_PMI_GET_MEASUREMENT</a>
+<a href="..\pmi\ni-pmi-ioctl-pmi-get-measurement.md">IOCTL_PMI_GET_MEASUREMENT</a>
 </dt>
 </dl>
 <p> </p>

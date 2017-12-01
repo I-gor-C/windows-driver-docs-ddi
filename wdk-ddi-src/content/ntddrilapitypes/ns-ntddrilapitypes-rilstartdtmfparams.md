@@ -7,7 +7,7 @@ old-location: netvista\rilstartdtmfparams.htm
 old-project: netvista
 ms.assetid: 3837fcee-7b94-464f-904c-c6eaa1002620
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSTARTDTMFPARAMS, RILSTARTDTMFPARAMS, *LPRILSTARTDTMFPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

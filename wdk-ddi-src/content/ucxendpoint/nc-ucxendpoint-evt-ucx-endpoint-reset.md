@@ -65,7 +65,7 @@ typedef EVT_UCX_ENDPOINT_RESET PEVT_UCX_ENDPOINT_RESET;
 ### -param <i>UcxController</i> [in]
 
 <dd>
-<p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a> method.</p>
+<p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.</p>
 </dd>
 
 ### -param <i>Endpoint</i> [in]
@@ -85,13 +85,7 @@ typedef EVT_UCX_ENDPOINT_RESET PEVT_UCX_ENDPOINT_RESET;
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>
- method.</p>
-
-<p>The client driver returns completion status in the WDFREQUEST, which it might complete
-    asynchronously.</p>
-
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
  method.</p>
 
 <p>The client driver returns completion status in the WDFREQUEST, which it might complete

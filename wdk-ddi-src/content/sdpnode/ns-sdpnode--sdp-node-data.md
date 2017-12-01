@@ -7,7 +7,7 @@ old-location: bltooth\sdp_node_data.htm
 old-project: bltooth
 ms.assetid: ce1f9f1b-2215-4b39-b5e6-a5076f02af64
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: SDP_NODE_DATA, SDP_NODE_DATA, *PSDP_NODE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -184,7 +184,7 @@ typedef union _SDP_NODE_DATA {
 
 <dd>
 <p>An 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536850">SDP_NODE_HEADER</a> structure that references
+     <a href="..\sdpnode\ns-sdpnode--sdp-node-header.md">SDP_NODE_HEADER</a> structure that references
      the elements of a sequence.</p>
 </dd>
 
@@ -227,12 +227,12 @@ typedef union _SDP_NODE_DATA {
 
 ## -remarks
 <p>Each 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a> structure in the tree representation of an
+    <a href="..\sdpnode\ns-sdpnode--sdp-node.md">SDP_NODE</a> structure in the tree representation of an
     SDP record contains a SDP_NODE_HEADER structure and an SDP_NODE_DATA union.</p>
 
 <p>The header specifies the type of data. Driver developers can access links to peer 
     <b>SDP_NODE</b> structures by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a> structure of the header. By evaluating 
+    <a href="kernel.list_entry">LIST_ENTRY</a> structure of the header. By evaluating 
     <code>Node.hdr.Link.Flink</code>and 
     <code>Node.hdr.Link.Blink</code>, drivers can obtain the addresses of peer
     nodes in the tree. Keep in mind that 
@@ -266,13 +266,13 @@ typedef union _SDP_NODE_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536850">SDP_NODE_HEADER</a>
+<a href="..\sdpnode\ns-sdpnode--sdp-node-header.md">SDP_NODE_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a>
+<a href="..\sdpnode\ns-sdpnode--sdp-node.md">SDP_NODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
+<a href="kernel.list_entry">LIST_ENTRY</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a>
@@ -280,4 +280,4 @@ typedef union _SDP_NODE_DATA {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SDP_NODE_DATA union%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SDP_NODE_DATA union%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -44,24 +44,24 @@ req.product: Windows 10 or later.
 <p>The structure contains the addresses of helper functions that are provided to rendering plug-ins by Microsoft printer drivers.</p>
 <p>All of the functions pointed to by members of this structure are obsolete. For information about each see:</p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548662">DrvWriteSpoolBuf</a>
+<a href="print.drvwritespoolbuf">DrvWriteSpoolBuf</a>
 </p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548665">DrvXMoveTo</a>
+<a href="print.drvxmoveto">DrvXMoveTo</a>
 </p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548673">DrvYMoveTo</a>
+<a href="print.drvymoveto">DrvYMoveTo</a>
 </p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548556">DrvGetDriverSetting</a>
+<a href="print.drvgetdriversetting">DrvGetDriverSetting</a>
 </p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548562">DrvGetStandardVariable</a> (for information about BGetStandardVariable)</p>
+<a href="print.drvgetstandardvariable">DrvGetStandardVariable</a> (for information about BGetStandardVariable)</p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548638">DrvUnidriverTextOut</a>
+<a href="print.drvunidrivertextout">DrvUnidriverTextOut</a>
 </p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548657">DrvWriteAbortBuf</a>
+<a href="print.drvwriteabortbuf">DrvWriteAbortBuf</a>
 </p>
 
 
@@ -84,36 +84,36 @@ typedef struct _DRVPROCS {
 <dl>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548662">DrvWriteSpoolBuf</a>
+<a href="print.drvwritespoolbuf">DrvWriteSpoolBuf</a>
 </p>
 </dd>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548665">DrvXMoveTo</a>
+<a href="print.drvxmoveto">DrvXMoveTo</a>
 </p>
 </dd>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548673">DrvYMoveTo</a>
+<a href="print.drvymoveto">DrvYMoveTo</a>
 </p>
 </dd>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548556">DrvGetDriverSetting</a>
+<a href="print.drvgetdriversetting">DrvGetDriverSetting</a>
 </p>
 </dd>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548562">DrvGetStandardVariable</a> (for information about BGetStandardVariable)</p>
+<a href="print.drvgetstandardvariable">DrvGetStandardVariable</a> (for information about BGetStandardVariable)</p>
 </dd>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548638">DrvUnidriverTextOut</a>
+<a href="print.drvunidrivertextout">DrvUnidriverTextOut</a>
 </p>
 </dd>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548657">DrvWriteAbortBuf</a>
+<a href="print.drvwriteabortbuf">DrvWriteAbortBuf</a>
 </p>
 </dd>
 </dl>

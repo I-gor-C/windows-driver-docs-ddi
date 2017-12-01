@@ -7,7 +7,7 @@ old-location: stream\kscamera_extendedprop_focusstate.htm
 old-project: stream
 ms.assetid: 2B74DB73-1D27-49E6-B1D8-8246FCE2F5E1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices

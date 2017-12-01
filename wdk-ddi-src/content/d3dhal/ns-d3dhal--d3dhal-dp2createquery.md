@@ -42,7 +42,7 @@ req.iface:
 <p>
    DirectX 9.0 and later versions only.
    </p>
-<p>One or more D3DHAL_DP2CREATEQUERY structures are parsed from the command buffer by the <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a> callback when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structure's <b>bCommand</b> member is set to D3DDP2OP_CREATEQUERY, and are used to create resources for queries.</p>
+<p>One or more D3DHAL_DP2CREATEQUERY structures are parsed from the command buffer by the <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a> callback when the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> structure's <b>bCommand</b> member is set to D3DDP2OP_CREATEQUERY, and are used to create resources for queries.</p>
 
 
 ## -syntax
@@ -76,12 +76,12 @@ typedef struct _D3DHAL_DP2CREATEQUERY {
 
 <p>The driver creates resources for the following query types:</p>
 
-<p>BOOL for D3DQUERYTYPE_EVENT. Before responding with D3DDP2OP_RESPONSEQUERY for an event, the driver must ensure that the graphics processing unit (GPU) is finished processing all <a href="https://msdn.microsoft.com/library/windows/hardware/ff545678">D3DHAL_DP2OPERATION</a> operations that are related to the event. That is, the driver only responds after the event's ISSUE_END state occurs. The driver must always set the event's BOOL value to <b>TRUE</b> when responding.</p>
+<p>BOOL for D3DQUERYTYPE_EVENT. Before responding with D3DDP2OP_RESPONSEQUERY for an event, the driver must ensure that the graphics processing unit (GPU) is finished processing all <a href="..\d3dhal\ne-d3dhal--d3dhal-dp2operation.md">D3DHAL_DP2OPERATION</a> operations that are related to the event. That is, the driver only responds after the event's ISSUE_END state occurs. The driver must always set the event's BOOL value to <b>TRUE</b> when responding.</p>
 
 <p>DWORD for D3DQUERYTYPE_OCCLUSION. The driver sets this DWORD to the number of pixels for which the z-test passed for all primitives between the begin and end of the query. If the depth buffer is multisampled, the driver determines the number of pixels from the number of samples. However, if the display device is capable of per-multisample z-test accuracy, the conversion to number of pixels should generally be rounded up. An application can then check the occlusion result against 0, to effectively mean "fully occluded". Drivers that convert multisampled quantities to pixel quantities should detect render target multisampling changes and continue to compute the query results appropriately.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544702">D3DDEVINFO_VCACHE</a> structure for D3DQUERYTYPE_VCACHE.</p>
+<a href="..\d3d9types\ns-d3d9types--d3ddevinfo-vcache.md">D3DDEVINFO_VCACHE</a> structure for D3DQUERYTYPE_VCACHE.</p>
 
 ## -requirements
 <table>
@@ -100,17 +100,17 @@ typedef struct _D3DHAL_DP2CREATEQUERY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544702">D3DDEVINFO_VCACHE</a>
+<a href="..\d3d9types\ns-d3d9types--d3ddevinfo-vcache.md">D3DDEVINFO_VCACHE</a>
 </dt>
 <dt>D3DDP2OP_CREATEQUERY</dt>
 <dt>
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545495">D3DHAL_DP2DELETEQUERY</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2deletequery.md">D3DHAL_DP2DELETEQUERY</a>
 </dt>
 </dl>
 <p> </p>

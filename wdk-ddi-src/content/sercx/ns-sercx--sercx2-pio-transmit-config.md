@@ -66,7 +66,7 @@ typedef struct _SERCX2_PIO_TRANSMIT_CONFIG {
 ### -field <b>Size</b>
 
 <dd>
-<p>The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265269">SerCx2PioTransmitCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
+<p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
 ### -field <b>EvtSerCx2PioTransmitInitializeTransaction</b>
@@ -119,7 +119,7 @@ typedef struct _SERCX2_PIO_TRANSMIT_CONFIG {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265269">SerCx2PioTransmitCreate</a> method accepts a pointer to a <b>SERCX2_PIO_TRANSMIT_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2PioTransmitCreate</b>, call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265335">SERCX2_PIO_TRANSMIT_CONFIG_INIT</a> function to initialize this structure.</p>
+<p>The <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method accepts a pointer to a <b>SERCX2_PIO_TRANSMIT_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2PioTransmitCreate</b>, call the <a href="..\sercx\nf-sercx-sercx2-pio-transmit-config-init.md">SERCX2_PIO_TRANSMIT_CONFIG_INIT</a> function to initialize this structure.</p>
 
 ## -requirements
 <table>
@@ -170,10 +170,10 @@ typedef struct _SERCX2_PIO_TRANSMIT_CONFIG {
 <a href="..\sercx\nc-sercx-evt-sercx2-pio-transmit-write-buffer.md">EvtSerCx2PioTransmitWriteBuffer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265335">SERCX2_PIO_TRANSMIT_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx2-pio-transmit-config-init.md">SERCX2_PIO_TRANSMIT_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265269">SerCx2PioTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
 </dt>
 </dl>
 <p> </p>

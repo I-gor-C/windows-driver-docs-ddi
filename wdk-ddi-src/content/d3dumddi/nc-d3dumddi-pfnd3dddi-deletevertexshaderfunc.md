@@ -77,8 +77,6 @@ __checkReturn HRESULT APIENTRY DeleteVertexShaderFunc(
 ## -remarks
 <p>The <b>DeleteVertexShaderFunc</b> function notifies the driver about the deletion of the vertex shader code object that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createvertexshaderfunc.md">CreateVertexShaderFunc</a> function created. The driver can then clean up any driver-side resources that are associated with the vertex shader code.</p>
 
-<p>The <b>DeleteVertexShaderFunc</b> function notifies the driver about the deletion of the vertex shader code object that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createvertexshaderfunc.md">CreateVertexShaderFunc</a> function created. The driver can then clean up any driver-side resources that are associated with the vertex shader code.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -117,7 +115,7 @@ __checkReturn HRESULT APIENTRY DeleteVertexShaderFunc(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createvertexshaderfunc.md">CreateVertexShaderFunc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

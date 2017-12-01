@@ -69,7 +69,7 @@ VOID ReportStatistic(
 ### -param <i>pStatistics</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265479">MIRACAST_STATISTIC_DATA</a> structure that contains the statistics data.</p>
+<p>A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast-statistic-data.md">MIRACAST_STATISTIC_DATA</a> structure that contains the statistics data.</p>
 </dd>
 </dl>
 
@@ -77,10 +77,6 @@ VOID ReportStatistic(
 <p>Does not return a value.</p>
 
 ## -remarks
-<p>When the operating system calls this function, it logs the data from the <i>pStatistics</i> parameter but takes no other action.</p>
-
-<p>For more info on how to use this function, see these topics:</p>
-
 <p>When the operating system calls this function, it logs the data from the <i>pStatistics</i> parameter but takes no other action.</p>
 
 <p>For more info on how to use this function, see these topics:</p>
@@ -131,7 +127,7 @@ VOID ReportStatistic(
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265479">MIRACAST_STATISTIC_DATA</a>
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast-statistic-data.md">MIRACAST_STATISTIC_DATA</a>
 </dt>
 </dl>
 <p> </p>

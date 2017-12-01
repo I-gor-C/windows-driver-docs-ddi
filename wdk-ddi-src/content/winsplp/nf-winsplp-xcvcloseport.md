@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>A port monitor server DLL's <code>XcvClosePort</code> function closes a printer port that was opened by <a href="https://msdn.microsoft.com/library/windows/hardware/ff564259">XcvOpenPort</a>.</p>
+<p>A port monitor server DLL's <code>XcvClosePort</code> function closes a printer port that was opened by <a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a>.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ BOOL XcvClosePort(
 ### -param <i>hXcv</i> [in]
 
 <dd>
-<p>Caller-supplied printer handle obtained by calling <b>OpenPrinter</b> (described in the Microsoft Windows SDK documentation). This handle is created and returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff564259">XcvOpenPort</a>.</p>
+<p>Caller-supplied printer handle obtained by calling <b>OpenPrinter</b> (described in the Microsoft Windows SDK documentation). This handle is created and returned by <a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a>.</p>
 </dd>
 </dl>
 
@@ -66,15 +66,9 @@ BOOL XcvClosePort(
 <p>If the operation succeeds, the function should return <b>TRUE</b>. Otherwise it should return <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Port monitor server DLLs are required to define an <code>XcvClosePort</code> function and include its address in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557532">MONITOR2</a> structure.</p>
+<p>Port monitor server DLLs are required to define an <code>XcvClosePort</code> function and include its address in a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure.</p>
 
-<p>The spooler's <b>ClosePrinter</b> function calls <code>XcvClosePort</code> if the printer name that was specified with a previous call to the <b>OpenPrinter</b> function included either of the strings "XcvPort" or "XcvMonitor". For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545026">AddPortUI</a>. For more information about the <b>OpenPrinter</b> and <b>ClosePrinter</b> functions, see the Windows SDK documentation.</p>
-
-<p>The function should close the port specified by the handle, and it should make the handle invalid.</p>
-
-<p>Port monitor server DLLs are required to define an <code>XcvClosePort</code> function and include its address in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557532">MONITOR2</a> structure.</p>
-
-<p>The spooler's <b>ClosePrinter</b> function calls <code>XcvClosePort</code> if the printer name that was specified with a previous call to the <b>OpenPrinter</b> function included either of the strings "XcvPort" or "XcvMonitor". For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545026">AddPortUI</a>. For more information about the <b>OpenPrinter</b> and <b>ClosePrinter</b> functions, see the Windows SDK documentation.</p>
+<p>The spooler's <b>ClosePrinter</b> function calls <code>XcvClosePort</code> if the printer name that was specified with a previous call to the <b>OpenPrinter</b> function included either of the strings "XcvPort" or "XcvMonitor". For more information, see <a href="..\winsplp\nf-winsplp-addportui.md">AddPortUI</a>. For more information about the <b>OpenPrinter</b> and <b>ClosePrinter</b> functions, see the Windows SDK documentation.</p>
 
 <p>The function should close the port specified by the handle, and it should make the handle invalid.</p>
 
@@ -105,10 +99,10 @@ BOOL XcvClosePort(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564259">XcvOpenPort</a>
+<a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545026">AddPortUI</a>
+<a href="..\winsplp\nf-winsplp-addportui.md">AddPortUI</a>
 </dt>
 </dl>
 <p> </p>

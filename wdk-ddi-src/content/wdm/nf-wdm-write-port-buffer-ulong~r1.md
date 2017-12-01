@@ -7,7 +7,7 @@ old-location: kernel\write_port_buffer_ulong.htm
 old-project: kernel
 ms.assetid: 6f786456-344a-4fc3-bc13-8d4253f4039a
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WRITE_PORT_BUFFER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,10 +80,6 @@ req.product: Windows 10 or later.
 <p>None</p>
 
 ## -remarks
-<p>The size of the buffer must be large enough to contain at least the specified number of ULONG values.</p>
-
-<p>Callers of <b>WRITE_PORT_BUFFER_ULONG</b> can be running at any IRQL, assuming the <i>Buffer</i> is resident and the <i>Port</i> is resident, mapped device memory.</p>
-
 <p>The size of the buffer must be large enough to contain at least the specified number of ULONG values.</p>
 
 <p>Callers of <b>WRITE_PORT_BUFFER_ULONG</b> can be running at any IRQL, assuming the <i>Buffer</i> is resident and the <i>Port</i> is resident, mapped device memory.</p>

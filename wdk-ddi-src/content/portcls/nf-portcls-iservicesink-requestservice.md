@@ -7,7 +7,7 @@ old-location: audio\iservicesink_requestservice.htm
 old-project: audio
 ms.assetid: c5035dee-3523-4b0d-9baa-e30720115499
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IServiceSink, RequestService, IServiceSink::RequestService
 ms.prod: windows-hardware
 ms.technology: windows-devices

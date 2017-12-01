@@ -78,7 +78,7 @@ VOID FsRtlInitExtraCreateParameterLookasideList(
 ### -param <i>Tag</i> [in]
 
 <dd>
-<p>Specifies the pool tag to use when allocating lookaside list ECP entries. For more information about pool tags, see the <i>Tag</i> parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>. </p>
+<p>Specifies the pool tag to use when allocating lookaside list ECP entries. For more information about pool tags, see the <i>Tag</i> parameter of <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>. </p>
 </dd>
 </dl>
 
@@ -86,17 +86,9 @@ VOID FsRtlInitExtraCreateParameterLookasideList(
 <p>None</p>
 
 ## -remarks
-<p>Use this routine to initialize a paged or nonpaged pool lookaside list. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545616">FsRtlAllocateExtraCreateParameterFromLookasideList</a> routine to allocate an ECP from the lookaside list, and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545989">FsRtlFreeExtraCreateParameter</a> routine to return an ECP buffer to the lookaside list for recycling.</p>
+<p>Use this routine to initialize a paged or nonpaged pool lookaside list. Use the <a href="..\ntifs\nf-ntifs-fsrtlallocateextracreateparameterfromlookasidelist.md">FsRtlAllocateExtraCreateParameterFromLookasideList</a> routine to allocate an ECP from the lookaside list, and the <a href="..\ntifs\nf-ntifs-fsrtlfreeextracreateparameter.md">FsRtlFreeExtraCreateParameter</a> routine to return an ECP buffer to the lookaside list for recycling.</p>
 
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545849">FsRtlDeleteExtraCreateParameterLookasideList</a> routine to free the lookaside list itself.</p>
-
-<p>Drivers must free all ECPs and lookaside lists that they create before they unload.</p>
-
-<p>For more information on using lookaside lists with drivers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565416">Using Lookaside Lists</a>.</p>
-
-<p>Use this routine to initialize a paged or nonpaged pool lookaside list. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545616">FsRtlAllocateExtraCreateParameterFromLookasideList</a> routine to allocate an ECP from the lookaside list, and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545989">FsRtlFreeExtraCreateParameter</a> routine to return an ECP buffer to the lookaside list for recycling.</p>
-
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545849">FsRtlDeleteExtraCreateParameterLookasideList</a> routine to free the lookaside list itself.</p>
+<p>Use the <a href="..\ntifs\nf-ntifs-fsrtldeleteextracreateparameterlookasidelist.md">FsRtlDeleteExtraCreateParameterLookasideList</a> routine to free the lookaside list itself.</p>
 
 <p>Drivers must free all ECPs and lookaside lists that they create before they unload.</p>
 
@@ -165,19 +157,19 @@ VOID FsRtlInitExtraCreateParameterLookasideList(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
+<a href="ifsk.ecp_list">ECP_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545616">FsRtlAllocateExtraCreateParameterFromLookasideList</a>
+<a href="..\ntifs\nf-ntifs-fsrtlallocateextracreateparameterfromlookasidelist.md">FsRtlAllocateExtraCreateParameterFromLookasideList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545849">FsRtlDeleteExtraCreateParameterLookasideList</a>
+<a href="..\ntifs\nf-ntifs-fsrtldeleteextracreateparameterlookasidelist.md">FsRtlDeleteExtraCreateParameterLookasideList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545989">FsRtlFreeExtraCreateParameter</a>
+<a href="..\ntifs\nf-ntifs-fsrtlfreeextracreateparameter.md">FsRtlFreeExtraCreateParameter</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a>

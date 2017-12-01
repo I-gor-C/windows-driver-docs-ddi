@@ -7,7 +7,7 @@ old-location: nfpdrivers\ioctl_smartcard_is_present.htm
 old-project: nfpdrivers
 ms.assetid: 8EF97A77-7A6A-4FDF-82AA-05481AEA7C28
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: GdiStartPageEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,39 +96,6 @@ The driver must support CancelIo on this pended IOCTL.
 </ul>
 </p>
 
-<p>The following actions are required when using this IOCTL:<ul>
-<li>
-
-The driver must support CancelIo on this pended IOCTL.
-
-</li>
-<li>It is a power-managed request. The pended IOCTL will keep the driver in a D0 power state.</li>
-<li>The driver must return STATUS_SUCCESS only for the supported type.</li>
-</ul>
-</p>
-
-<p>The following actions are required when using this IOCTL:<ul>
-<li>
-
-The driver must support CancelIo on this pended IOCTL.
-
-</li>
-<li>It is a power-managed request. The pended IOCTL will keep the driver in a D0 power state.</li>
-<li>The driver must return STATUS_SUCCESS only for the supported type.</li>
-</ul>
-</p>
-
-<p>The following actions are required when using this IOCTL:<ul>
-<li>
-
-The driver must support CancelIo on this pended IOCTL.
-
-</li>
-<li>It is a power-managed request. The pended IOCTL will keep the driver in a D0 power state.</li>
-<li>The driver must return STATUS_SUCCESS only for the supported type.</li>
-</ul>
-</p>
-
 ## -requirements
 <table>
 <tr>
@@ -150,4 +117,4 @@ The driver must support CancelIo on this pended IOCTL.
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20IOCTL_SMARTCARD_IS_PRESENT control code%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20IOCTL_SMARTCARD_IS_PRESENT control code%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

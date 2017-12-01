@@ -67,7 +67,7 @@ BOOLEAN IdeHwStartIo(
 ### -param <i>Irb</i> [in]
 
 <dd>
-<p>A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) to process.</p>
+<p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) to process.</p>
 </dd>
 </dl>
 
@@ -75,13 +75,7 @@ BOOLEAN IdeHwStartIo(
 <p><b><i>IdeHwStartIo</i></b> returns <b>TRUE</b> to acknowledge the receipt of an IRB. The port driver ignores a return value of <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Miniport drivers must provide an <b><i>IdeHwStartIo</i></b> routine to process the aspects of an I/O request that must be handled synchronously. For information about how the miniport driver processes the unsynchronized aspects of an I/O request, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557462">IdeHwBuildIo</a>. </p>
-
-<p>After the miniport driver receives the <b><i>IdeHwStartIo</i></b> call, it owns the request and must complete it.</p>
-
-<p>After this routine returns, the miniport driver should be prepared to receive the next request from the port driver immediately. </p>
-
-<p>Miniport drivers must provide an <b><i>IdeHwStartIo</i></b> routine to process the aspects of an I/O request that must be handled synchronously. For information about how the miniport driver processes the unsynchronized aspects of an I/O request, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557462">IdeHwBuildIo</a>. </p>
+<p>Miniport drivers must provide an <b><i>IdeHwStartIo</i></b> routine to process the aspects of an I/O request that must be handled synchronously. For information about how the miniport driver processes the unsynchronized aspects of an I/O request, see <a href="storage.idehwbuildio">IdeHwBuildIo</a>. </p>
 
 <p>After the miniport driver receives the <b><i>IdeHwStartIo</i></b> call, it owns the request and must complete it.</p>
 
@@ -114,10 +108,10 @@ BOOLEAN IdeHwStartIo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557462">IdeHwBuildIo</a>
+<a href="storage.idehwbuildio">IdeHwBuildIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a>
+<a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

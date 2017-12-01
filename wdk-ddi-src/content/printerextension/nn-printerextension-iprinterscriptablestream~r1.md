@@ -64,7 +64,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439717">Commit</a>
+<a href="print.iprinterscriptablestream__commit">Commit</a>
 </td>
 <td align="left" width="63%">
 <p>Commits the operation.</p>
@@ -72,7 +72,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439723">Seek</a>
+<a href="print.iprinterscriptablestream__seek">Seek</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the seek pointer.</p>
@@ -80,7 +80,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439729">SetSize</a>
+<a href="print.iprinterscriptablestream__setsize">SetSize</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the size of the scriptable stream, in bytes.</p>
@@ -133,7 +133,7 @@ req.product: Windows 10 or later.
 <a href="print.iprinterscriptablesequentialstream_interface">IPrinterScriptableSequentialStream</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973217">IPrinterScriptablePropertyBag</a>
+<a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
 </dt>
 <dt>
 <a href="print.iprinterscriptablepropertybag_getreadstream">IPrinterScriptablePropertyBag::GetReadStream</a>

@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p><b>Do not use the D3DKMT_VIDSCH_ESCAPE structure; it is for testing purposes only.</b></p>
-<p>The D3DKMT_VIDSCH_ESCAPE structure describes how to control the graphics processing unit (GPU) scheduler (which is part of Dxgkrnl.sys) in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546940">D3DKMTEscape</a> function.</p>
+<p>The D3DKMT_VIDSCH_ESCAPE structure describes how to control the graphics processing unit (GPU) scheduler (which is part of Dxgkrnl.sys) in a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function.</p>
 
 
 ## -syntax
@@ -73,7 +73,7 @@ typedef struct _D3DKMT_VIDSCH_ESCAPE {
 ### -field <b>Type</b>
 
 <dd>
-<p>The escape type, of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn914467">D3DKMT_VIDSCHESCAPETYPE</a>, which is reserved and should not be used in your driver.</p>
+<p>The escape type, of type <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-vidschescapetype.md">D3DKMT_VIDSCHESCAPETYPE</a>, which is reserved and should not be used in your driver.</p>
 </dd>
 
 ### -field <b>PreemptionControl</b>
@@ -154,13 +154,13 @@ typedef struct _D3DKMT_VIDSCH_ESCAPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547970">D3DKMT_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-escape.md">D3DKMT_ESCAPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546940">D3DKMTEscape</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914467">D3DKMT_VIDSCHESCAPETYPE</a>
+<a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-vidschescapetype.md">D3DKMT_VIDSCHESCAPETYPE</a>
 </dt>
 </dl>
 <p> </p>

@@ -158,10 +158,10 @@ typedef struct _STORAGE_OFFLOAD_TOKEN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439644">DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</a>
+<a href="..\ntddstor\ns-ntddstor--device-dsm-offload-write-parameters.md">DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451467">STORAGE_OFFLOAD_READ_OUTPUT</a>
+<a href="..\ntddstor\ns-ntddstor--storage-offload-read-output.md">STORAGE_OFFLOAD_READ_OUTPUT</a>
 </dt>
 </dl>
 <p> </p>

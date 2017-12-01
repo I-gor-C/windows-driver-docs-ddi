@@ -7,7 +7,7 @@ old-location: netvista\ril_startdtmf.htm
 old-project: netvista
 ms.assetid: f37c9431-8b60-4caa-863c-81de45ffd457
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_StartDTMF
 ms.prod: windows-hardware
 ms.technology: windows-devices

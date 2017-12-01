@@ -130,7 +130,7 @@ BOOLEAN IoIsFileObjectIgnoringSharing(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj126227">IoSetFileObjectIgnoreSharing</a>
+<a href="..\ntddk\nf-ntddk-iosetfileobjectignoresharing.md">IoSetFileObjectIgnoreSharing</a>
 </dt>
 </dl>
 <p> </p>

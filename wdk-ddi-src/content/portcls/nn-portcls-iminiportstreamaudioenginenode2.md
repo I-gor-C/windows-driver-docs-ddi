@@ -7,7 +7,7 @@ old-location: audio\iminiportstreamaudioenginenode2.htm
 old-project: audio
 ms.assetid: 38888C17-31FC-47F4-A49B-A46A9DF962AF
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcUnregisterIoTimeout
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>IMiniportStreamAudioEngineNode2</b> interface allows an audio miniport driver to extend the capabilities of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265090">IMiniportStreamAudioEngineNode</a> interface.</p>
+<p>The <b>IMiniportStreamAudioEngineNode2</b> interface allows an audio miniport driver to extend the capabilities of the <a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a> interface.</p>
 
 
 ## -inheritance
@@ -59,7 +59,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn338128">SetStreamCurrentWritePositionForLastBuffer</a>
+<a href="audio.iminiportstreamaudioenginenode2_setstreamcurrentwritepositionforlastbuffer">SetStreamCurrentWritePositionForLastBuffer</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the current cursor position in the last audio data stream that was written to the audio buffer.</p>

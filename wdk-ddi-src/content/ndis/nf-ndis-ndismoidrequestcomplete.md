@@ -7,7 +7,7 @@ old-location: netvista\ndismoidrequestcomplete.htm
 old-project: netvista
 ms.assetid: 30d060d0-05a3-42b5-b5ff-2f2b12873ca9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMOidRequestComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,7 +72,7 @@ VOID NdisMOidRequestComplete(
 
 <dd>
 <p>A pointer to a buffer that is formatted as an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure. The miniport
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure. The miniport
      driver obtained this pointer as an input parameter to its 
      <i>MiniportOidRequest</i> function.</p>
 </dd>
@@ -102,21 +102,7 @@ VOID NdisMOidRequestComplete(
     
     <a href="..\ndis\nc-ndis-filter-oid-request-complete.md">FilterOidRequestComplete</a>) of
     the overlying driver that called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a> function.</p>
-
-<p>A miniport driver that returns NDIS_STATUS_PENDING from its 
-    <a href="..\ndis\nc-ndis-miniport-oid-request.md">MiniportOidRequest</a> function must
-    call 
-    <b>NdisMOidRequestComplete</b> after the miniport driver has finished the request operation.</p>
-
-<p>A call to 
-    <b>NdisMOidRequestComplete</b> causes a call to the request complete function (see 
-    <a href="https://msdn.microsoft.com/2c383523-7d9c-4f1b-8df1-5cb4cc3562d6">ProtocolRequestComplete</a>, 
-    <a href="..\ndis\nc-ndis-protocol-oid-request-complete.md">ProtocolOidRequestComplete</a>,
-    
-    <a href="..\ndis\nc-ndis-filter-oid-request-complete.md">FilterOidRequestComplete</a>) of
-    the overlying driver that called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a> function.</p>
+    <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a> function.</p>
 
 ## -requirements
 <table>
@@ -171,7 +157,7 @@ VOID NdisMOidRequestComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544922">DoubleComplete</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544924">DoubleCompleteWorkItem</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547990">Irql_OID_Function</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975120">NdisMNetPnPEventInOIDRequest</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn305115">NdisOidComplete</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn305116">NdisOidDoubleComplete</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn305117">NdisOidDoubleRequest</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn305120">NdisTimedOidComplete</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn305122">WlanAssociation</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn305124">WlanDisassociation</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn305127">WlanTimedConnectRequest</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn305128">WlanTimedLinkQuality</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/dn305129">WlanTimedScan</a>
+<a href="devtest.ndis_doublecomplete">DoubleComplete</a>, <a href="devtest.ndis_doublecompleteworkitem">DoubleCompleteWorkItem</a>, <a href="devtest.ndis_irql_oid_function">Irql_OID_Function</a>, <a href="devtest.ndis_ndismnetpnpeventinoidrequest">NdisMNetPnPEventInOIDRequest</a>, <a href="devtest.ndis_ndisoidcomplete">NdisOidComplete</a>, <a href="devtest.ndis_ndisoiddoublecomplete">NdisOidDoubleComplete</a>, <a href="devtest.ndis_ndisoiddoublerequest">NdisOidDoubleRequest</a>, <a href="devtest.ndis_ndistimedoidcomplete">NdisTimedOidComplete</a>, <a href="devtest.ndis_wlanassociation">WlanAssociation</a>, <a href="devtest.ndis_wlandisassociation">WlanDisassociation</a>, <a href="devtest.ndis_wlantimedconnectrequest">WlanTimedConnectRequest</a>, <a href="devtest.ndis_wlantimedlinkquality">WlanTimedLinkQuality</a>, <a href="devtest.ndis_wlantimedscan">WlanTimedScan</a>
 </td>
 </tr>
 </table>
@@ -185,10 +171,10 @@ VOID NdisMOidRequestComplete(
 <a href="..\ndis\nc-ndis-miniport-oid-request.md">MiniportOidRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/2c383523-7d9c-4f1b-8df1-5cb4cc3562d6">ProtocolRequestComplete</a>
@@ -202,4 +188,4 @@ VOID NdisMOidRequestComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMOidRequestComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMOidRequestComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

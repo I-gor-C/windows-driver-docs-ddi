@@ -76,10 +76,6 @@ VOID RtlCopyLuid(
 
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
 
-<p><b>RtlCopyLuid</b> does not check whether the LUID at <i>SourceLuid</i> is structurally valid. </p>
-
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -135,13 +131,13 @@ VOID RtlCopyLuid(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>
+<a href="ifsk.luid">LUID</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561842">RtlEqualLuid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556688">SeQueryAuthenticationIdToken</a>
+<a href="..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md">SeQueryAuthenticationIdToken</a>
 </dt>
 </dl>
 <p> </p>

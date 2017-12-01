@@ -7,7 +7,7 @@ old-location: netvista\vmbpacketsetpointer.htm
 old-project: netvista
 ms.assetid: FFEBEBD0-1FF2-4F27-B028-051B117CA325
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbPacketSetPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,8 +75,6 @@ VOID VmbPacketSetPointer(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>This function is intended to offer a more efficient way to retrieve the context of a client driver.</p>
-
 <p>This function is intended to offer a more efficient way to retrieve the context of a client driver.</p>
 
 ## -requirements

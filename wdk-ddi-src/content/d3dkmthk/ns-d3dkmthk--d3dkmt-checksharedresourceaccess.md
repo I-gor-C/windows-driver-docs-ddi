@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DKMT_CHECKSHAREDRESOURCEACCESS structure describes parameters that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546769">D3DKMTCheckSharedResourceAccess</a> function uses to determine if a process can access a shared resource. </p>
+<p>The D3DKMT_CHECKSHAREDRESOURCEACCESS structure describes parameters that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtchecksharedresourceaccess.md">D3DKMTCheckSharedResourceAccess</a> function uses to determine if a process can access a shared resource. </p>
 
 
 ## -syntax
@@ -96,7 +96,7 @@ typedef struct _D3DKMT_CHECKSHAREDRESOURCEACCESS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546769">D3DKMTCheckSharedResourceAccess</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtchecksharedresourceaccess.md">D3DKMTCheckSharedResourceAccess</a>
 </dt>
 </dl>
 <p> </p>

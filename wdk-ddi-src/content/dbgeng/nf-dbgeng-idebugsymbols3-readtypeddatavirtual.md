@@ -7,7 +7,7 @@ old-location: debugger\readtypeddatavirtual.htm
 old-project: debugger
 ms.assetid: 526bebd8-95af-4f6f-a381-eb60273d1af5
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols3, ReadTypedDataVirtual, IDebugSymbols3::ReadTypedDataVirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -110,13 +110,7 @@ HRESULT ReadTypedDataVirtual(
 ## -remarks
 <p>The number of bytes this method attempts to read is the smaller of the size of the buffer and the size of the variable.</p>
 
-<p>This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554359">ReadVirtual</a>.</p>
-
-<p>For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.</p>
-
-<p>The number of bytes this method attempts to read is the smaller of the size of the buffer and the size of the variable.</p>
-
-<p>This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554359">ReadVirtual</a>.</p>
+<p>This is a convenience method.  The same result can be obtained by calling <a href="debugger.gettypesize2">GetTypeSize</a> and <a href="debugger.readvirtual">ReadVirtual</a>.</p>
 
 <p>For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.</p>
 

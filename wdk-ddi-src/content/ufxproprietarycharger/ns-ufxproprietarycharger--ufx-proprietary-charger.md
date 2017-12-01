@@ -65,7 +65,7 @@ typedef struct _UFX_PROPRIETARY_CHARGER {
 ### -field <b>DxState</b>
 
 <dd>
-<p>The minimum required device power state when it is connected, indicated by one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554628">DEVICE_POWER_STATE</a>-typed flags.</p>
+<p>The minimum required device power state when it is connected, indicated by one of the <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a>-typed flags.</p>
 </dd>
 </dl>
 

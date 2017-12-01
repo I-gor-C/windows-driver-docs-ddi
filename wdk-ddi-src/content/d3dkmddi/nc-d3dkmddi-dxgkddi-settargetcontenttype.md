@@ -78,10 +78,6 @@ NTSTATUS APIENTRY DXGKDDI_SETTARGETCONTENTTYPE(
 This function is always called at PASSIVE level so the supporting code should be made pageable.
 </p>
 
-<p>This is an optional DDI, so the function pointer in DRIVER_INITIALIZATION_DATA should be set to null if the DDI is not implemented for every adapter supported by the driver.
-This function is always called at PASSIVE level so the supporting code should be made pageable.
-</p>
-
 ## -requirements
 <table>
 <tr>

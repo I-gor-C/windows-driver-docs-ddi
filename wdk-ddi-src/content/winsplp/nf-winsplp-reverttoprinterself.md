@@ -66,11 +66,7 @@ HANDLE RevertToPrinterSelf(
 ## -remarks
 <p><code>RevertToPrinterSelf</code> should be called when a component needs access to resources from the local system context, such as the registry. The local system context is the security context (the collection of settings that define the security behavior of a process or thread) of the system process. The system process is the process that runs in the logon session that is created for the local system account when the operating system boots. </p>
 
-<p>If <code>RevertToPrinterSelf</code> returns a non-<b>NULL</b> value, <a href="https://msdn.microsoft.com/library/windows/hardware/ff551062">ImpersonatePrinterClient</a> must be called with the return value to complete the operation and clean up the thread handle.</p>
-
-<p><code>RevertToPrinterSelf</code> should be called when a component needs access to resources from the local system context, such as the registry. The local system context is the security context (the collection of settings that define the security behavior of a process or thread) of the system process. The system process is the process that runs in the logon session that is created for the local system account when the operating system boots. </p>
-
-<p>If <code>RevertToPrinterSelf</code> returns a non-<b>NULL</b> value, <a href="https://msdn.microsoft.com/library/windows/hardware/ff551062">ImpersonatePrinterClient</a> must be called with the return value to complete the operation and clean up the thread handle.</p>
+<p>If <code>RevertToPrinterSelf</code> returns a non-<b>NULL</b> value, <a href="..\winsplp\nf-winsplp-impersonateprinterclient.md">ImpersonatePrinterClient</a> must be called with the return value to complete the operation and clean up the thread handle.</p>
 
 ## -requirements
 <table>
@@ -119,7 +115,7 @@ HANDLE RevertToPrinterSelf(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551062">ImpersonatePrinterClient</a>
+<a href="..\winsplp\nf-winsplp-impersonateprinterclient.md">ImpersonatePrinterClient</a>
 </dt>
 </dl>
 <p> </p>

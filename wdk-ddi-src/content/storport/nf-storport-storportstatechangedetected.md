@@ -63,7 +63,7 @@ ULONG StorPortStateChangeDetected(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>A pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device.</p>
+<p>A pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.</p>
 </dd>
 
 ### -param <i>ChangedEntity</i> [in]
@@ -182,12 +182,6 @@ ULONG StorPortStateChangeDetected(
 
 <p>If multiple flags are specified in <i>ChangedEntity</i>, the  flag with greater value will have precedence over lesser ones.</p>
 
-<p>A successful call to<b> StorPortStateChangeDetected</b> results in re-enumeration of the changed entity. </p>
-
-<p>Only one state change request can be active at any time. If a miniport needs to make another <b> StorPortStateChangeDetected</b> call, it should provide a <i>HwStateChange</i> callback and make another call to <b> StorPortStateChangeDetected</b> after the callback to <i>HwStateChange</i> occurs. If a miniport wants to indicate multiple state changes at the same time, the miniport can call <b> StorPortStateChangeDetected</b> once, with  changed entities set in <i>ChangedEntity</i> that includes all of the current state changes.</p>
-
-<p>If multiple flags are specified in <i>ChangedEntity</i>, the  flag with greater value will have precedence over lesser ones.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -231,7 +225,7 @@ ULONG StorPortStateChangeDetected(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451310">HwStorStateChange</a>
+<a href="storage.hwstorstatechange">HwStorStateChange</a>
 </dt>
 </dl>
 <p> </p>

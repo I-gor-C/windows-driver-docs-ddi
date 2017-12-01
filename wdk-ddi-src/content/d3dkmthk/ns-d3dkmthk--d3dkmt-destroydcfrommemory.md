@@ -96,7 +96,7 @@ typedef struct _D3DKMT_DESTROYDCFROMMEMORY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546908">D3DKMTDestroyDCFromMemory</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroydcfrommemory.md">D3DKMTDestroyDCFromMemory</a>
 </dt>
 </dl>
 <p> </p>

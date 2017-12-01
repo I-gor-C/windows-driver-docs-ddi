@@ -69,14 +69,14 @@ SIZE_T APIENTRY CalcPrivateGeometryShaderWithStreamOutput(
 
 <dd>
 <p>
-      A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542057">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. 
+      A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-creategeometryshaderwithstreamoutput.md">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region. 
      </p>
 </dd>
 
 ### -param <i>pSignatures</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541746">D3D10DDIARG_STAGE_IO_SIGNATURES</a> structure that forms the shader's signature.</p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-stage-io-signatures.md">D3D10DDIARG_STAGE_IO_SIGNATURES</a> structure that forms the shader's signature.</p>
 </dd>
 </dl>
 
@@ -121,13 +121,13 @@ SIZE_T APIENTRY CalcPrivateGeometryShaderWithStreamOutput(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542141">D3D11DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-devicefuncs~r1.md">D3D11DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542057">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-creategeometryshaderwithstreamoutput.md">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541746">D3D10DDIARG_STAGE_IO_SIGNATURES</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-stage-io-signatures.md">D3D10DDIARG_STAGE_IO_SIGNATURES</a>
 </dt>
 </dl>
 <p> </p>

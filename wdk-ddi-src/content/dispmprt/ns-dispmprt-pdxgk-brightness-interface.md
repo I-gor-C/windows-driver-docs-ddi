@@ -111,7 +111,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>A kernel-mode component that must use the brightness interface initiates a call to the display miniport driver's <a href="display.dxgkddiqueryinterface">DxgkDdiQueryInterface</a> function to retrieve the interface and passes GUID_DEVINTERFACE_BRIGHTNESS in the <b>InterfaceType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569225">QUERY_INTERFACE</a> structure that the <i>QueryInterface</i> parameter points to.</p>
+<p>A kernel-mode component that must use the brightness interface initiates a call to the display miniport driver's <a href="display.dxgkddiqueryinterface">DxgkDdiQueryInterface</a> function to retrieve the interface and passes GUID_DEVINTERFACE_BRIGHTNESS in the <b>InterfaceType</b> member of the <a href="..\video\ns-video--query-interface.md">QUERY_INTERFACE</a> structure that the <i>QueryInterface</i> parameter points to.</p>
 
 ## -requirements
 <table>
@@ -138,7 +138,7 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj128360">DXGK_BRIGHTNESS_INTERFACE_2</a>
+<a href="display.dxgk_brightness_interface_2">DXGK_BRIGHTNESS_INTERFACE_2</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgk-brightness-get.md">DxgkDdiGetBrightness</a>
@@ -153,7 +153,7 @@ typedef struct {
 <a href="..\dispmprt\nc-dispmprt-dxgk-brightness-set.md">DxgkDdiSetBrightness</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569225">QUERY_INTERFACE</a>
+<a href="..\video\ns-video--query-interface.md">QUERY_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

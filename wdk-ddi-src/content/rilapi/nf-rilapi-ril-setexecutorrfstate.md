@@ -7,7 +7,7 @@ old-location: netvista\ril_setexecutorrfstate.htm
 old-project: netvista
 ms.assetid: 4543671c-222f-4913-9f88-682af3e54273
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SetExecutorRFState
 ms.prod: windows-hardware
 ms.technology: windows-devices

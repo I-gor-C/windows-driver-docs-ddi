@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><i>TapeMiniExtensionInit</i> initializes an optional, driver-specific context area. This routine is called by <a href="https://msdn.microsoft.com/library/windows/hardware/ff567619">TapeClassInitialize</a> when the tape miniclass driver is loaded. This routine is optional.</p>
+<p><i>TapeMiniExtensionInit</i> initializes an optional, driver-specific context area. This routine is called by <a href="..\minitape\nf-minitape-tapeclassinitialize.md">TapeClassInitialize</a> when the tape miniclass driver is loaded. This routine is optional.</p>
 
 
 ## -prototype
@@ -82,15 +82,9 @@ VOID TapeMiniExtensionInit(
 <p>None</p>
 
 ## -remarks
-<p>A tape miniclass driver requests a minitape extension by specifying a nonzero value for <b>MinitapeExtensionSize</b> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567968">TAPE_INIT_DATA_EX</a> structure it passes to <a href="https://msdn.microsoft.com/library/windows/hardware/ff567619">TapeClassInitialize</a> from its <b>DriverEntry</b> routine. A miniclass driver defines the structure and contents of the minitape extension and typically uses it to store inquiry data for the devices it supports.</p>
+<p>A tape miniclass driver requests a minitape extension by specifying a nonzero value for <b>MinitapeExtensionSize</b> in the <a href="..\minitape\ns-minitape--tape-init-data-ex.md">TAPE_INIT_DATA_EX</a> structure it passes to <a href="..\minitape\nf-minitape-tapeclassinitialize.md">TapeClassInitialize</a> from its <b>DriverEntry</b> routine. A miniclass driver defines the structure and contents of the minitape extension and typically uses it to store inquiry data for the devices it supports.</p>
 
-<p>The tape class driver allocates the minitape extension and supplies it subsequently in calls to to the tape miniclass driver's routines that handle the device-specific aspects of device-control requests and to the miniclass driver's optional <a href="https://msdn.microsoft.com/library/windows/hardware/ff567955">TapeMiniTapeError</a> routine.</p>
-
-<p><i>TapeMiniExtensionInit</i> initializes the minitape extension, and the miniclass driver uses this area to maintain run-time state for its device. The tape class driver passes <i>InquiryData</i> and a <i>ModeCapabilitiesPage</i> to this routine because those structures contain information that a tape miniclass driver might want to store in the minitape extension.</p>
-
-<p>A tape miniclass driver requests a minitape extension by specifying a nonzero value for <b>MinitapeExtensionSize</b> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567968">TAPE_INIT_DATA_EX</a> structure it passes to <a href="https://msdn.microsoft.com/library/windows/hardware/ff567619">TapeClassInitialize</a> from its <b>DriverEntry</b> routine. A miniclass driver defines the structure and contents of the minitape extension and typically uses it to store inquiry data for the devices it supports.</p>
-
-<p>The tape class driver allocates the minitape extension and supplies it subsequently in calls to to the tape miniclass driver's routines that handle the device-specific aspects of device-control requests and to the miniclass driver's optional <a href="https://msdn.microsoft.com/library/windows/hardware/ff567955">TapeMiniTapeError</a> routine.</p>
+<p>The tape class driver allocates the minitape extension and supplies it subsequently in calls to to the tape miniclass driver's routines that handle the device-specific aspects of device-control requests and to the miniclass driver's optional <a href="storage.tapeminitapeerror">TapeMiniTapeError</a> routine.</p>
 
 <p><i>TapeMiniExtensionInit</i> initializes the minitape extension, and the miniclass driver uses this area to maintain run-time state for its device. The tape class driver passes <i>InquiryData</i> and a <i>ModeCapabilitiesPage</i> to this routine because those structures contain information that a tape miniclass driver might want to store in the minitape extension.</p>
 
@@ -121,19 +115,19 @@ VOID TapeMiniExtensionInit(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
+<a href="storage.driverentry_of_tape_miniclass_driver">DriverEntry of Tape Miniclass Driver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567968">TAPE_INIT_DATA_EX</a>
+<a href="..\minitape\ns-minitape--tape-init-data-ex.md">TAPE_INIT_DATA_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567619">TapeClassInitialize</a>
+<a href="..\minitape\nf-minitape-tapeclassinitialize.md">TapeClassInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567975">TAPE_STATUS</a>
+<a href="..\minitape\ne-minitape--tape-status.md">TAPE_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567955">TapeMiniTapeError</a>
+<a href="storage.tapeminitapeerror">TapeMiniTapeError</a>
 </dt>
 </dl>
 <p> </p>

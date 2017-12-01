@@ -109,7 +109,7 @@ typedef struct HBA_FC4Statistics {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556093">HBA_GetFC4Statistics</a>
+<a href="..\hbaapi\nf-hbaapi-hba-getfc4statistics.md">HBA_GetFC4Statistics</a>
 </dt>
 </dl>
 <p> </p>

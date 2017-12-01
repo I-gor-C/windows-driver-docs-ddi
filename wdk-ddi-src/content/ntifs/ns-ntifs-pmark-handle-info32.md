@@ -321,7 +321,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>When running on a 64-bit system, file system minifilters must interpret the input data sent by a 32-bit process in the system buffer for the <a href="fs.fsctl_mark_handle">FSCTL_MARK_HANDLE</a> control code as a <b>MARK_HANDLE_INFO32</b> structure. A minifilter may check the process word length by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543308">FltIs32bitProcess</a>.</p>
+<p>When running on a 64-bit system, file system minifilters must interpret the input data sent by a 32-bit process in the system buffer for the <a href="fs.fsctl_mark_handle">FSCTL_MARK_HANDLE</a> control code as a <b>MARK_HANDLE_INFO32</b> structure. A minifilter may check the process word length by calling <a href="..\fltkernel\nf-fltkernel-fltis32bitprocess.md">FltIs32bitProcess</a>.</p>
 
 ## -requirements
 <table>
@@ -348,7 +348,7 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543308">FltIs32bitProcess</a>
+<a href="..\fltkernel\nf-fltkernel-fltis32bitprocess.md">FltIs32bitProcess</a>
 </dt>
 <dt>
 <a href="fs.fsctl_mark_handle">FSCTL_MARK_HANDLE</a>

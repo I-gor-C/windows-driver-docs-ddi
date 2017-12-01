@@ -66,7 +66,7 @@ HANDLE GdiGetSpoolFileHandle(
 ### -param <i>pDevmode</i> 
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure. See the following Remarks section.</p>
+<p>Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure. See the following Remarks section.</p>
 </dd>
 
 ### -param <i>pwszDocName</i> 
@@ -80,47 +80,23 @@ HANDLE GdiGetSpoolFileHandle(
 <p>If the operation succeeds, the function returns a spool file handle. Otherwise the function returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>The <b>GdiGetSpoolFileHandle</b> function is exported by gdi32.dll for use within a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p>
+<p>The <b>GdiGetSpoolFileHandle</b> function is exported by gdi32.dll for use within a print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> function.</p>
 
 <p>When a print processor calls <b>GdiGetSpoolFileHandle</b>, it should supply arguments as illustrated in the following table.</p>
 
 <p><i>pwszPrinterName</i></p>
 
-<p>Pointer to the printer name received by the print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559604">OpenPrintProcessor</a> function.</p>
+<p>Pointer to the printer name received by the print processor's <a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a> function.</p>
 
 <p><i>pDevmode</i></p>
 
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560988">PRINTPROCESSOROPENDATA</a> structure, received by the print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559604">OpenPrintProcessor</a> function.</p>
+<p>Pointer to the <a href="display.devmodew">DEVMODEW</a> structure contained in the <a href="..\winsplp\ns-winsplp--printprocessoropendata.md">PRINTPROCESSOROPENDATA</a> structure, received by the print processor's <a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a> function.</p>
 
 <p><i>pwszDocName</i></p>
 
-<p>Document name pointer received by the print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p>
+<p>Document name pointer received by the print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> function.</p>
 
-<p> </p>
-
-<p>A print processor must call the <b>GdiGetSpoolFileHandle</b> function before calling any other GDI printing functions, because the returned handle must be passed to the other functions. The function calls OpenPrinter to open a connection to the printer, and CreateDC to create a device context for drawing. The print processor can obtain the device context's handle by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549470">GdiGetDC</a>.</p>
-
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
-
-<p>The <b>GdiGetSpoolFileHandle</b> function is exported by gdi32.dll for use within a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p>
-
-<p>When a print processor calls <b>GdiGetSpoolFileHandle</b>, it should supply arguments as illustrated in the following table.</p>
-
-<p><i>pwszPrinterName</i></p>
-
-<p>Pointer to the printer name received by the print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559604">OpenPrintProcessor</a> function.</p>
-
-<p><i>pDevmode</i></p>
-
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560988">PRINTPROCESSOROPENDATA</a> structure, received by the print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559604">OpenPrintProcessor</a> function.</p>
-
-<p><i>pwszDocName</i></p>
-
-<p>Document name pointer received by the print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p>
-
-<p> </p>
-
-<p>A print processor must call the <b>GdiGetSpoolFileHandle</b> function before calling any other GDI printing functions, because the returned handle must be passed to the other functions. The function calls OpenPrinter to open a connection to the printer, and CreateDC to create a device context for drawing. The print processor can obtain the device context's handle by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549470">GdiGetDC</a>.</p>
+<p>A print processor must call the <b>GdiGetSpoolFileHandle</b> function before calling any other GDI printing functions, because the returned handle must be passed to the other functions. The function calls OpenPrinter to open a connection to the printer, and CreateDC to create a device context for drawing. The print processor can obtain the device context's handle by calling <a href="..\winppi\nf-winppi-gdigetdc.md">GdiGetDC</a>.</p>
 
 <p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
 
@@ -171,7 +147,7 @@ HANDLE GdiGetSpoolFileHandle(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549449">GdiDeleteSpoolFileHandle</a>
+<a href="..\winppi\nf-winppi-gdideletespoolfilehandle.md">GdiDeleteSpoolFileHandle</a>
 </dt>
 </dl>
 <p> </p>

@@ -103,7 +103,7 @@ HRESULT drvGetCapabilities(
 ### -param <i>ppCapabilities</i> [out, optional]
 
 <dd>
-<p>Points to a memory location that will receive the address of the first element of an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550233">WIA_DEV_CAP_DRV</a> structures that contain the GUIDs of events and commands that the device supports. </p>
+<p>Points to a memory location that will receive the address of the first element of an array of <a href="..\wiamindr_lh\ns-wiamindr-lh--wia-dev-cap-drv.md">WIA_DEV_CAP_DRV</a> structures that contain the GUIDs of events and commands that the device supports. </p>
 </dd>
 
 ### -param <i>plDevErrVal</i> [out]
@@ -116,13 +116,9 @@ HRESULT drvGetCapabilities(
 ## -returns
 <p>On success, the method should return S_OK and clear the device error value pointed to by <i>plDevErrVal</i>. If the method fails, it should return a standard COM error code and place a minidriver-specific error code value in the memory pointed to by <i>plDevErrVal</i>. </p>
 
-<p>The value pointed to by <i>plDevErrVal</i> can be converted to a string by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>.</p>
+<p>The value pointed to by <i>plDevErrVal</i> can be converted to a string by calling <a href="image.iwiaminidrv_drvgetdeviceerrorstr">IWiaMiniDrv::drvGetDeviceErrorStr</a>.</p>
 
 ## -remarks
-<p>The WIA service calls the minidriver method <b>IWiaMiniDrv::drvGetCapabilities</b> to obtain a list of hardware command capabilities and/or device events. In response to this call, a minidriver sets <i>ppCapabilities</i> with the address of an array of pointers to GUID data. Each GUID corresponds to an event notification or a device command supported by the imaging device. When the <i>lFlags</i> parameter is set to WIA_DEVICE_COMMANDS, the array of GUIDs contains device commands. When <i>lFlags</i> is set to WIA_DEVICE_EVENTS, the array of GUIDs contains events. If <i>lFlags</i> is set to WIA_DEVICE_COMMANDS | WIA_DEVICE_EVENTS, the array of GUIDs contains both events and commands, listed in that order.</p>
-
-<p>The <i>Wiadef.h</i> header lists several predefined commands and events.</p>
-
 <p>The WIA service calls the minidriver method <b>IWiaMiniDrv::drvGetCapabilities</b> to obtain a list of hardware command capabilities and/or device events. In response to this call, a minidriver sets <i>ppCapabilities</i> with the address of an array of pointers to GUID data. Each GUID corresponds to an event notification or a device command supported by the imaging device. When the <i>lFlags</i> parameter is set to WIA_DEVICE_COMMANDS, the array of GUIDs contains device commands. When <i>lFlags</i> is set to WIA_DEVICE_EVENTS, the array of GUIDs contains events. If <i>lFlags</i> is set to WIA_DEVICE_COMMANDS | WIA_DEVICE_EVENTS, the array of GUIDs contains both events and commands, listed in that order.</p>
 
 <p>The <i>Wiadef.h</i> header lists several predefined commands and events.</p>
@@ -162,10 +158,10 @@ HRESULT drvGetCapabilities(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
+<a href="image.iwiaminidrv_drvgetdeviceerrorstr">IWiaMiniDrv::drvGetDeviceErrorStr</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550233">WIA_DEV_CAP_DRV</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--wia-dev-cap-drv.md">WIA_DEV_CAP_DRV</a>
 </dt>
 </dl>
 <p> </p>

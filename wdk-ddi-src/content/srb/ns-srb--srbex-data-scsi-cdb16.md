@@ -146,10 +146,10 @@ typedef struct _SRBEX_DATA_SCSI_CDB16 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920415">SRBEX_DATA_SCSI_CDB32</a>
+<a href="..\srb\ns-srb--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451474">STORAGE_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

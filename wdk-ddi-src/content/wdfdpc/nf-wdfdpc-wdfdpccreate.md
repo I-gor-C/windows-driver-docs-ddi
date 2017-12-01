@@ -7,7 +7,7 @@ old-location: wdf\wdfdpccreate.htm
 old-project: wdf
 ms.assetid: 46c6ffd1-4c01-4d1d-b7da-8f97f728ac71
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfDpcCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,13 +61,13 @@ NTSTATUS WdfDpcCreate(
 ### -param <i>Config</i> [in]
 
 <dd>
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff551296">WDF_DPC_CONFIG</a> structure.</p>
+<p>A pointer to a caller-allocated <a href="..\wdfdpc\ns-wdfdpc--wdf-dpc-config.md">WDF_DPC_CONFIG</a> structure.</p>
 </dd>
 
 ### -param <i>Attributes</i> [in]
 
 <dd>
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the new DPC object. </p>
+<p>A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the new DPC object. </p>
 </dd>
 
 ### -param <i>Dpc</i> [out]
@@ -84,11 +84,11 @@ NTSTATUS WdfDpcCreate(
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl><p>A DPC object could not be allocated.</p><dl>
 <dt><b>STATUS_WDF_PARENT_NOT_SPECIFIED</b></dt>
-</dl><p>A parent object was not specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure.</p><dl>
+</dl><p>A parent object was not specified in the <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.</p><dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl><p>The <b>ParentObject</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure does not reference a framework device object or an object whose chain of parents leads to a framework device object.</p><dl>
+</dl><p>The <b>ParentObject</b> member of the <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure does not reference a framework device object or an object whose chain of parents leads to a framework device object.</p><dl>
 <dt><b>STATUS_WDF_INCOMPATIBLE_EXECUTION_LEVEL</b></dt>
-</dl><p>The <b>AutomaticSerialization</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551296">WDF_DPC_CONFIG</a> structure is set to <b>TRUE</b>, but the parent object's <a href="..\wdfobject\ne-wdfobject--wdf-execution-level.md">execution level</a> is set to <b>WdfExecutionLevelPassive</b>.</p>
+</dl><p>The <b>AutomaticSerialization</b> member of the <a href="..\wdfdpc\ns-wdfdpc--wdf-dpc-config.md">WDF_DPC_CONFIG</a> structure is set to <b>TRUE</b>, but the parent object's <a href="..\wdfobject\ne-wdfobject--wdf-execution-level.md">execution level</a> is set to <b>WdfExecutionLevelPassive</b>.</p>
 
 <p> </p>
 
@@ -99,27 +99,15 @@ NTSTATUS WdfDpcCreate(
 ## -remarks
 <p>A driver typically calls <b>WdfDpcCreate</b> from within its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback function.</p>
 
-<p>When a driver creates a DPC object, it must specify a parent object in the <b>ParentObject</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure. The parent object can be a framework device object or any object whose chain of parents leads to a framework device object. The framework will delete the DPC object when it deletes the device object.</p>
+<p>When a driver creates a DPC object, it must specify a parent object in the <b>ParentObject</b> member of the <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure. The parent object can be a framework device object or any object whose chain of parents leads to a framework device object. The framework will delete the DPC object when it deletes the device object.</p>
 
-<p>Calling <b>WdfDpcCreate</b> creates a framework DPC object and registers an <a href="wdf.evtdpcfunc">EvtDpcFunc</a> callback function. To schedule execution of the callback function, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff547148">WdfDpcEnqueue</a>. </p>
-
-<p>If your driver provides <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-cleanup.md">EvtCleanupCallback</a> or <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-destroy.md">EvtDestroyCallback</a> callback functions for the framework timer object, note that the framework calls these callback functions at IRQL = PASSIVE_LEVEL.</p>
-
-<p>For more information about using DPC objects, see <a href="wdf.servicing_an_interrupt">Servicing an Interrupt</a>.</p>
-
-<p>The following code example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551298">WDF_DPC_CONFIG_INIT</a> structure and then creates a DPC object. </p>
-
-<p>A driver typically calls <b>WdfDpcCreate</b> from within its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-device-add.md">EvtDriverDeviceAdd</a> callback function.</p>
-
-<p>When a driver creates a DPC object, it must specify a parent object in the <b>ParentObject</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure. The parent object can be a framework device object or any object whose chain of parents leads to a framework device object. The framework will delete the DPC object when it deletes the device object.</p>
-
-<p>Calling <b>WdfDpcCreate</b> creates a framework DPC object and registers an <a href="wdf.evtdpcfunc">EvtDpcFunc</a> callback function. To schedule execution of the callback function, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff547148">WdfDpcEnqueue</a>. </p>
+<p>Calling <b>WdfDpcCreate</b> creates a framework DPC object and registers an <a href="wdf.evtdpcfunc">EvtDpcFunc</a> callback function. To schedule execution of the callback function, the driver must call <a href="..\wdfdpc\nf-wdfdpc-wdfdpcenqueue.md">WdfDpcEnqueue</a>. </p>
 
 <p>If your driver provides <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-cleanup.md">EvtCleanupCallback</a> or <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-destroy.md">EvtDestroyCallback</a> callback functions for the framework timer object, note that the framework calls these callback functions at IRQL = PASSIVE_LEVEL.</p>
 
 <p>For more information about using DPC objects, see <a href="wdf.servicing_an_interrupt">Servicing an Interrupt</a>.</p>
 
-<p>The following code example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551298">WDF_DPC_CONFIG_INIT</a> structure and then creates a DPC object. </p>
+<p>The following code example initializes a <a href="..\wdfdpc\nf-wdfdpc-wdf-dpc-config-init.md">WDF_DPC_CONFIG_INIT</a> structure and then creates a DPC object. </p>
 
 ## -requirements
 <table>
@@ -174,7 +162,7 @@ NTSTATUS WdfDpcCreate(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -182,19 +170,19 @@ NTSTATUS WdfDpcCreate(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547148">WdfDpcEnqueue</a>
+<a href="..\wdfdpc\nf-wdfdpc-wdfdpcenqueue.md">WdfDpcEnqueue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551296">WDF_DPC_CONFIG</a>
+<a href="..\wdfdpc\ns-wdfdpc--wdf-dpc-config.md">WDF_DPC_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551298">WDF_DPC_CONFIG_INIT</a>
+<a href="..\wdfdpc\nf-wdfdpc-wdf-dpc-config-init.md">WDF_DPC_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552402">WDF_OBJECT_ATTRIBUTES_INIT</a>
+<a href="..\wdfobject\nf-wdfobject-wdf-object-attributes-init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
 </dt>
 <dt>
 <a href="wdf.evtdpcfunc">EvtDpcFunc</a>
@@ -205,4 +193,4 @@ NTSTATUS WdfDpcCreate(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDpcCreate method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDpcCreate method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

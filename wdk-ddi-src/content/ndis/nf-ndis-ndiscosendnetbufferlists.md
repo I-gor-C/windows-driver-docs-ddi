@@ -7,7 +7,7 @@ old-location: netvista\ndiscosendnetbufferlists.htm
 old-project: netvista
 ms.assetid: 8284fdd4-26de-4622-b164-f33aee1d8742
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCoSendNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The 
   <b>NdisCoSendNetBufferLists</b> function sends network data that is contained in a specified list of 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures.</p>
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures.</p>
 
 
 ## -syntax
@@ -68,9 +68,9 @@ VOID NdisCoSendNetBufferLists(
 
 <dd>
 <p>A pointer to a linked list of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures. Each
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures. Each
      NET_BUFFER_LIST structure describes a list of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures.</p>
+     <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures.</p>
 </dd>
 
 ### -param <i>SendFlags</i> [in]
@@ -110,7 +110,7 @@ VOID NdisCoSendNetBufferLists(
 ## -remarks
 <p>After a CoNDIS protocol driver calls 
     <b>NdisCoSendNetBufferLists</b>, NDIS submits the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures that the 
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures that the 
     <i>NetBufferLists</i> parameter specifies to an underlying driver's 
     <a href="..\ndis\nc-ndis-miniport-co-send-net-buffer-lists.md">
     MiniportCoSendNetBufferLists</a> function.</p>
@@ -119,7 +119,7 @@ VOID NdisCoSendNetBufferLists(
     following functions:</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561609">NdisAllocateNetBufferList</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
 </p>
 
 <p>
@@ -133,7 +133,7 @@ VOID NdisCoSendNetBufferLists(
 </p>
 
 <p>The protocol driver can preallocate NET_BUFFER_LIST structures--for example, in its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. Alternatively, the protocol
+    <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. Alternatively, the protocol
     driver can allocate the structures immediately prior to calling 
     <b>NdisCoSendNetBufferLists</b> and then can free them when the send operation is complete. When NDIS
     returns a NET_BUFFER_LIST structure to the 
@@ -145,77 +145,7 @@ VOID NdisCoSendNetBufferLists(
 
 <p>A protocol driver must set the 
     <b>SourceHandle</b> member of each 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure to the same value
-    that it passes at the 
-    <i>NdisVcHandle</i> parameter. The source handle provides the information that NDIS requires to return the
-    NET_BUFFER_LIST structure to the protocol driver after the underlying miniport driver calls the 
-    <a href="..\ndis\nf-ndis-ndismcosendnetbufferlistscomplete.md">
-    NdisMCoSendNetBufferListsComplete</a> function.</p>
-
-<p>Before a protocol driver calls 
-    <b>NdisCoSendNetBufferLists</b>, the driver can set information that accompanies the send request with
-    the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a> macro. The
-    underlying driver can retrieve this information with the NET_BUFFER_LIST_INFO macro.</p>
-
-<p>Before a protocol driver calls 
-    <b>NdisCoSendNetBufferLists</b> with a list of NET_BUFFER_LIST structures, the protocol driver must ensure
-    that the NET_BUFFER_LIST structures are set up in the order that the network data should be sent.</p>
-
-<p>As soon as a protocol driver calls 
-    <b>NdisCoSendNetBufferLists</b>, it no longer owns the NET_BUFFER_LIST structures and all of the
-    associated resources. NDIS calls the 
-    <i>ProtocolCoSendNetBufferListsComplete</i> function to return the structures and data to the protocol
-    driver. NDIS can collect the structures and data from multiple send requests into a single linked list of
-    NET_BUFFER_LIST structures before it passes the list to 
-    <i>ProtocolCoSendNetBufferListsComplete</i>.</p>
-
-<p>Until NDIS calls 
-    <i>ProtocolCoSendNetBufferListsComplete</i>, the current status of a protocol driver-initiated send is
-    not available to the protocol driver. A protocol driver temporarily releases ownership of all of the
-    resources that it allocated for a send request when it calls 
-    <b>NdisCoSendNetBufferLists</b>. A protocol driver should never attempt to examine the NET_BUFFER_LIST
-    structures or any associated data after the driver calls 
-    <b>NdisCoSendNetBufferLists</b>.</p>
-
-<p>After a CoNDIS protocol driver calls 
-    <b>NdisCoSendNetBufferLists</b>, NDIS submits the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures that the 
-    <i>NetBufferLists</i> parameter specifies to an underlying driver's 
-    <a href="..\ndis\nc-ndis-miniport-co-send-net-buffer-lists.md">
-    MiniportCoSendNetBufferLists</a> function.</p>
-
-<p>The protocol driver must allocate each NET_BUFFER_LIST structure from a pool by calling one of the
-    following functions:</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561609">NdisAllocateNetBufferList</a>
-</p>
-
-<p>
-<a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
-       NdisAllocateNetBufferAndNetBufferList</a>
-</p>
-
-<p>
-<a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
-       NdisAllocateCloneNetBufferList</a>
-</p>
-
-<p>The protocol driver can preallocate NET_BUFFER_LIST structures--for example, in its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. Alternatively, the protocol
-    driver can allocate the structures immediately prior to calling 
-    <b>NdisCoSendNetBufferLists</b> and then can free them when the send operation is complete. When NDIS
-    returns a NET_BUFFER_LIST structure to the 
-    <a href="..\ndis\nc-ndis-protocol-co-send-net-buffer-lists-complete.md">
-    ProtocolCoSendNetBufferListsComplete</a> function, the protocol driver can prepare the NET_BUFFER_LIST
-    structure and any associated resources for reuse. If you reuse the NET_BUFFER_LIST structures, you can
-    get better performance than returning the structures to a pool and then reallocating them for another
-    send operation.</p>
-
-<p>A protocol driver must set the 
-    <b>SourceHandle</b> member of each 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure to the same value
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure to the same value
     that it passes at the 
     <i>NdisVcHandle</i> parameter. The source handle provides the information that NDIS requires to return the
     NET_BUFFER_LIST structure to the protocol driver after the underlying miniport driver calls the 
@@ -301,7 +231,7 @@ VOID NdisCoSendNetBufferLists(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547924">Irql_Connection_Function</a>
+<a href="devtest.ndis_irql_connection_function">Irql_Connection_Function</a>
 </td>
 </tr>
 </table>
@@ -309,7 +239,7 @@ VOID NdisCoSendNetBufferLists(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>
+<a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport-co-send-net-buffer-lists.md">
@@ -320,7 +250,7 @@ VOID NdisCoSendNetBufferLists(
    NdisAllocateCloneNetBufferList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561609">NdisAllocateNetBufferList</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
@@ -331,10 +261,10 @@ VOID NdisCoSendNetBufferLists(
    NdisMCoSendNetBufferListsComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
@@ -346,4 +276,4 @@ VOID NdisCoSendNetBufferLists(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoSendNetBufferLists function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoSendNetBufferLists function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

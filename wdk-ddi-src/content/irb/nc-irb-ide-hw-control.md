@@ -68,7 +68,7 @@ BOOLEAN IdeHwControl(
 ### -param <i>ControlAction</i> [in]
 
 <dd>
-<p>Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559082">IDE_CONTROL_ACTION</a> that indicates the control action to perform. </p>
+<p>Contains an enumerator value of type <a href="..\irb\ne-irb-ide-control-action.md">IDE_CONTROL_ACTION</a> that indicates the control action to perform. </p>
 </dd>
 
 ### -param <i>Parameters</i> [in, out]
@@ -114,25 +114,9 @@ BOOLEAN IdeHwControl(
 ## -remarks
 <p>The port driver makes sure that there is no outstanding I/O on the channel before it invokes this routine. The miniport driver can have its own power policy methods when the system enters a different power state. In order to achieve this, the miniport driver needs to do the following:</p>
 
-<p>Add a power policy setting scheme into the miniport driver's INF file. A GUID is needed to present a miniport driver-defined power policy. For more information about the power settings directive, see <a href="NULL">INF AddPowerSetting Directive</a>. More information about the GUIDs can be found at <a href="https://msdn.microsoft.com/library/windows/hardware/mt608265">Disk settings</a>.</p><dl>
-<dd>Check the SupportedAdvances.AdvancedChannelConfigurationSupported field in the ChannelConfiguration structure.</dd>
-<dd>Check the AdvancedChannelConfiguration-&gt;Present.VendorDefinedPower field in the ChannelConfiguration structure.</dd>
-<dd>If the values of the two fields listed previously are both <b>TRUE</b>, this version of the ATA port driver supports vendor-defined power management.</dd>
-<dd>If vendor-defined power management is supported by the ATA port driver, the miniport driver can register for special power management handling by setting the AdvancedChannelConfiguration-&gt;VendorDefinedPower.ValidGuids and AdvancedChannelConfiguration-&gt;VendorDefinedPower.Guid[] fields (the latter should be the GUID of the power policy in the miniport driver's INF file).</dd>
-</dl><p>After vendor-defined power management is registered, the miniport driver will be able to receive calls to its <i>IdeHwControl</i> routine with control action <b>IdeVendorDefined</b> when the system power scheme changes.</p><dl>
-<dd>Compare the <b>SettingGuid</b> field from the parameter field of structure IDE_VENDOR_DEFINED_POWER_INFO with the GUID that the miniport driver registered to make sure that the call is for this channel. If the GUIDs do not match, the miniport driver should complete the call and take no action.</dd>
-<dd>Get the <b>Value</b> field from the parameter field of structure IDE_VENDOR_DEFINED_POWER_INFO and perform the appropriate miniport driver-specific power management action.</dd>
-</dl><p>The port driver makes sure that there is no outstanding I/O on the channel before it invokes this routine. The miniport driver can have its own power policy methods when the system enters a different power state. In order to achieve this, the miniport driver needs to do the following:</p>
+<p>Add a power policy setting scheme into the miniport driver's INF file. A GUID is needed to present a miniport driver-defined power policy. For more information about the power settings directive, see <a href="NULL">INF AddPowerSetting Directive</a>. More information about the GUIDs can be found at <a href="https://msdn.microsoft.com/library/windows/hardware/mt608265">Disk settings</a>.</p>
 
-<p>Add a power policy setting scheme into the miniport driver's INF file. A GUID is needed to present a miniport driver-defined power policy. For more information about the power settings directive, see <a href="NULL">INF AddPowerSetting Directive</a>. More information about the GUIDs can be found at <a href="https://msdn.microsoft.com/library/windows/hardware/mt608265">Disk settings</a>.</p><dl>
-<dd>Check the SupportedAdvances.AdvancedChannelConfigurationSupported field in the ChannelConfiguration structure.</dd>
-<dd>Check the AdvancedChannelConfiguration-&gt;Present.VendorDefinedPower field in the ChannelConfiguration structure.</dd>
-<dd>If the values of the two fields listed previously are both <b>TRUE</b>, this version of the ATA port driver supports vendor-defined power management.</dd>
-<dd>If vendor-defined power management is supported by the ATA port driver, the miniport driver can register for special power management handling by setting the AdvancedChannelConfiguration-&gt;VendorDefinedPower.ValidGuids and AdvancedChannelConfiguration-&gt;VendorDefinedPower.Guid[] fields (the latter should be the GUID of the power policy in the miniport driver's INF file).</dd>
-</dl><p>After vendor-defined power management is registered, the miniport driver will be able to receive calls to its <i>IdeHwControl</i> routine with control action <b>IdeVendorDefined</b> when the system power scheme changes.</p><dl>
-<dd>Compare the <b>SettingGuid</b> field from the parameter field of structure IDE_VENDOR_DEFINED_POWER_INFO with the GUID that the miniport driver registered to make sure that the call is for this channel. If the GUIDs do not match, the miniport driver should complete the call and take no action.</dd>
-<dd>Get the <b>Value</b> field from the parameter field of structure IDE_VENDOR_DEFINED_POWER_INFO and perform the appropriate miniport driver-specific power management action.</dd>
-</dl>
+<p>After vendor-defined power management is registered, the miniport driver will be able to receive calls to its <i>IdeHwControl</i> routine with control action <b>IdeVendorDefined</b> when the system power scheme changes.</p>
 
 ## -requirements
 <table>
@@ -161,7 +145,7 @@ BOOLEAN IdeHwControl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550165">AtaPortGetUncachedExtension</a>
+<a href="..\irb\nf-irb-ataportgetuncachedextension.md">AtaPortGetUncachedExtension</a>
 </dt>
 </dl>
 <p> </p>

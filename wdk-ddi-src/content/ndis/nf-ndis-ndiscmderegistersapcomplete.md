@@ -7,7 +7,7 @@ old-location: netvista\ndiscmderegistersapcomplete.htm
 old-project: netvista
 ms.assetid: 92955e1e-6c5b-4e8e-a365-65ff4d0889a5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCmDeregisterSapComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisCmDeregisterSapComplete
-   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisCmDeregisterSapComplete
-   (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmDeregisterSapComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmDeregisterSapComplete   (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -96,25 +92,6 @@ VOID NdisCmDeregisterSapComplete(
     call-management support call 
     <b>NdisMCmDeregisterSapComplete</b> instead.</p>
 
-<p><b>NdisCmDeregisterSapComplete</b> notifies both NDIS and the client that the call manager has completed
-    the SAP-deregistration request for which its 
-    <a href="..\ndis\nc-ndis-protocol-cm-deregister-sap.md">
-    ProtocolCmDeregisterSap</a> function previously returned NDIS_STATUS_PENDING.</p>
-
-<p>A call to 
-    <b>NdisCmDeregisterSapComplete</b> causes NDIS to call the client's 
-    <a href="..\ndis\nc-ndis-protocol-cl-deregister-sap-complete.md">
-    ProtocolClDeregisterSapComplete</a> function.</p>
-
-<p>The call manager should consider the 
-    <i>NdisSapHandle</i> invalid when 
-    <b>NdisCmDeregisterSapComplete</b> returns control.</p>
-
-<p>Only stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
-    <b>NdisCmDeregisterSapComplete</b>. Connection-oriented miniport drivers that provide integrated
-    call-management support call 
-    <b>NdisMCmDeregisterSapComplete</b> instead.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -172,7 +149,7 @@ VOID NdisCmDeregisterSapComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547917">Irql_CallManager_Function</a>
+<a href="devtest.ndis_irql_callmanager_function">Irql_CallManager_Function</a>
 </td>
 </tr>
 </table>
@@ -180,10 +157,10 @@ VOID NdisCmDeregisterSapComplete(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561628">NdisClDeregisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562821">NdisMCmDeregisterSapComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmderegistersapcomplete.md">NdisMCmDeregisterSapComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cl-deregister-sap-complete.md">
@@ -195,4 +172,4 @@ VOID NdisCmDeregisterSapComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmDeregisterSapComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmDeregisterSapComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

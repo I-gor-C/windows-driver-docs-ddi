@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>HidP_GetCaps</b> routine returns a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.</p>
+<p>The <b>HidP_GetCaps</b> routine returns a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
 
 
 ## -syntax
@@ -78,10 +78,6 @@ NTSTATUS __stdcall HidP_GetCaps(
 <p> </p>
 
 ## -remarks
-<p>For more information about a collection's capability, see <a href="NULL">Obtaining Collection Information</a>.</p>
-
-<p>See also <a href="NULL">HID Collections</a>. </p>
-
 <p>For more information about a collection's capability, see <a href="NULL">Obtaining Collection Information</a>.</p>
 
 <p>See also <a href="NULL">HID Collections</a>. </p>
@@ -142,16 +138,16 @@ NTSTATUS __stdcall HidP_GetCaps(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539679">HidD_GetPreparsedData</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getpreparseddata.md">HidD_GetPreparsedData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a>
+<a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541089">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-collection-descriptor.md">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541092">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-collection-information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

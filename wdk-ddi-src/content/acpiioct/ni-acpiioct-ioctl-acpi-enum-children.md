@@ -38,7 +38,7 @@ req.irql:
 
 
 ## -description
-<p>The IOCTL_ACPI_ENUM_CHILDREN device control request can be used to enumerate the path and name of devices or named child objects in the ACPI namespace of the device to which this request is sent. A driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548318">IoBuildDeviceIoControlRequest</a> and pass the following input and output parameters to build this request. </p>
+<p>The IOCTL_ACPI_ENUM_CHILDREN device control request can be used to enumerate the path and name of devices or named child objects in the ACPI namespace of the device to which this request is sent. A driver should call <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a> and pass the following input and output parameters to build this request. </p>
 
 
 ## -ioctlparameters
@@ -50,7 +50,7 @@ req.irql:
 
 <p><i>DeviceObject</i> is set to a pointer to the physical device object (PDO) of the device.</p>
 
-<p><i>InputBuffer</i> is set to a pointer to a variable-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff536110">ACPI_ENUM_CHILDREN_INPUT_BUFFER</a> structure.</p>
+<p><i>InputBuffer</i> is set to a pointer to a variable-length <a href="..\acpiioct\ns-acpiioct--acpi-enum-children-input-buffer.md">ACPI_ENUM_CHILDREN_INPUT_BUFFER</a> structure.</p>
 
 <p><i>InputBufferLength</i> is set to the size, in bytes, of the input buffer that is supplied by <i>InputBuffer</i>.</p>
 
@@ -68,21 +68,21 @@ req.irql:
 ### -output-buffer
 <p>Set the <b>IoBuildDeviceIoControlRequest</b> output parameters as follows:</p>
 
-<p><i>OutputBuffer</i> supplies a pointer to a variable-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff536112">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a> structure in which the ACPI driver returns the path and name of the enumerated child devices.</p>
+<p><i>OutputBuffer</i> supplies a pointer to a variable-length <a href="..\acpiioct\ns-acpiioct--acpi-enum-children-output-buffer.md">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a> structure in which the ACPI driver returns the path and name of the enumerated child devices.</p>
 
-<p><i>IoStatusBlock</i> is set to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure.</p>
-
-<p>Set the <b>IoBuildDeviceIoControlRequest</b> output parameters as follows:</p>
-
-<p><i>OutputBuffer</i> supplies a pointer to a variable-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff536112">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a> structure in which the ACPI driver returns the path and name of the enumerated child devices.</p>
-
-<p><i>IoStatusBlock</i> is set to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure.</p>
+<p><i>IoStatusBlock</i> is set to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure.</p>
 
 <p>Set the <b>IoBuildDeviceIoControlRequest</b> output parameters as follows:</p>
 
-<p><i>OutputBuffer</i> supplies a pointer to a variable-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff536112">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a> structure in which the ACPI driver returns the path and name of the enumerated child devices.</p>
+<p><i>OutputBuffer</i> supplies a pointer to a variable-length <a href="..\acpiioct\ns-acpiioct--acpi-enum-children-output-buffer.md">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a> structure in which the ACPI driver returns the path and name of the enumerated child devices.</p>
 
-<p><i>IoStatusBlock</i> is set to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure.</p>
+<p><i>IoStatusBlock</i> is set to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure.</p>
+
+<p>Set the <b>IoBuildDeviceIoControlRequest</b> output parameters as follows:</p>
+
+<p><i>OutputBuffer</i> supplies a pointer to a variable-length <a href="..\acpiioct\ns-acpiioct--acpi-enum-children-output-buffer.md">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a> structure in which the ACPI driver returns the path and name of the enumerated child devices.</p>
+
+<p><i>IoStatusBlock</i> is set to an <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure.</p>
 
 ### -output-buffer-length
 <p><i>OutputBufferLength</i> supplies the size, in bytes, of the output buffer that is supplied by <i>OutputBuffer</i>.</p>
@@ -124,167 +124,11 @@ I/O Status block
 <p>If the request succeeds, the <i>IoStatusBlock</i>-&gt;<b>Information</b> member is set to the number of bytes that is returned in the output buffer; otherwise, the <b>Information</b> member is set to zero.</p>
 
 ## -remarks
-<p>IOCTL_ACPI_ENUM_CHILDREN returns a variable-length ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure that contains an array of variable-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff536109">ACPI_ENUM_CHILD</a> structures, each of which returns the fully qualified path and name of an object in the ACPI namespace of the device to which the request was sent. The objects that this request enumerates depends on the setting of the <b>Flags</b> member of the supplied input structure ACPI_ENUM_CHILDREN_INPUT_BUFFER, as follows:</p>
+<p>IOCTL_ACPI_ENUM_CHILDREN returns a variable-length ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure that contains an array of variable-length <a href="..\acpiioct\ns-acpiioct--acpi-enum-child.md">ACPI_ENUM_CHILD</a> structures, each of which returns the fully qualified path and name of an object in the ACPI namespace of the device to which the request was sent. The objects that this request enumerates depends on the setting of the <b>Flags</b> member of the supplied input structure ACPI_ENUM_CHILDREN_INPUT_BUFFER, as follows:</p>
 
-<p></p><dl>
-<dt><a id="ENUM_CHILDREN_IMMEDIATE_ONLY_"></a><a id="enum_children_immediate_only_"></a>ENUM_CHILDREN_IMMEDIATE_ONLY </dt>
-<dd>
+<p></p>
+
 <p>Enumerates the device and enumerates the immediate child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL_"></a><a id="enum_children_multilevel_"></a>ENUM_CHILDREN_MULTILEVEL </dt>
-<dd>
-<p>Enumerates the device and recursively enumerates all child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL____ENUM_CHILDREN_NAME_IS_FILTER_"></a><a id="enum_children_multilevel____enum_children_name_is_filter_"></a>ENUM_CHILDREN_MULTILEVEL || ENUM_CHILDREN_NAME_IS_FILTER </dt>
-<dd>
-<p>A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the <b>Name</b> member.</p>
-</dd>
-</dl><p>Enumerates the device and enumerates the immediate child devices of the device.</p>
-
-<p>Enumerates the device and recursively enumerates all child devices of the device.</p>
-
-<p>A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the <b>Name</b> member.</p>
-
-<p>If the output buffer that the driver allocates is not large enough to return all requested child names, the ACPI driver does not return any child names and sets the <b>Status</b> member of the IO_STATUS_BLOCK for the request to STATUS_BUFFER_OVERFLOW. In this case, if the size, in bytes, of the output buffer is at least <b>sizeof</b>(ACPI_ENUM_CHILDREN_OUTPUT_BUFFER_SIGNATURE), the ACPI driver also sets <i>NumberOfChildren</i> to the size, in bytes, that is required to retrieve the requested paths and names. </p>
-
-<p>A driver typically would use a sequence of two IOCTL_ACPI_ENUM_CHILDREN requests to enumerate the child objects of interest. The driver sends the first request to obtain the size of the output buffer that is required to contain the path and name of all the requested objects. The driver sends the second request to return the path and name of the objects in the output buffer. </p>
-
-<p>For more information about how to enumerate child devices of a device, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/enumerating-child-devices-and-control-methods">Enumerating Child Devices and Control Methods</a>.</p>
-
-<p>IOCTL_ACPI_ENUM_CHILDREN can be used only at IRQL&lt; DISPATCH_LEVEL.</p>
-
-<p>IOCTL_ACPI_ENUM_CHILDREN returns a variable-length ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure that contains an array of variable-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff536109">ACPI_ENUM_CHILD</a> structures, each of which returns the fully qualified path and name of an object in the ACPI namespace of the device to which the request was sent. The objects that this request enumerates depends on the setting of the <b>Flags</b> member of the supplied input structure ACPI_ENUM_CHILDREN_INPUT_BUFFER, as follows:</p>
-
-<p></p><dl>
-<dt><a id="ENUM_CHILDREN_IMMEDIATE_ONLY_"></a><a id="enum_children_immediate_only_"></a>ENUM_CHILDREN_IMMEDIATE_ONLY </dt>
-<dd>
-<p>Enumerates the device and enumerates the immediate child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL_"></a><a id="enum_children_multilevel_"></a>ENUM_CHILDREN_MULTILEVEL </dt>
-<dd>
-<p>Enumerates the device and recursively enumerates all child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL____ENUM_CHILDREN_NAME_IS_FILTER_"></a><a id="enum_children_multilevel____enum_children_name_is_filter_"></a>ENUM_CHILDREN_MULTILEVEL || ENUM_CHILDREN_NAME_IS_FILTER </dt>
-<dd>
-<p>A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the <b>Name</b> member.</p>
-</dd>
-</dl><p>Enumerates the device and enumerates the immediate child devices of the device.</p>
-
-<p>Enumerates the device and recursively enumerates all child devices of the device.</p>
-
-<p>A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the <b>Name</b> member.</p>
-
-<p>If the output buffer that the driver allocates is not large enough to return all requested child names, the ACPI driver does not return any child names and sets the <b>Status</b> member of the IO_STATUS_BLOCK for the request to STATUS_BUFFER_OVERFLOW. In this case, if the size, in bytes, of the output buffer is at least <b>sizeof</b>(ACPI_ENUM_CHILDREN_OUTPUT_BUFFER_SIGNATURE), the ACPI driver also sets <i>NumberOfChildren</i> to the size, in bytes, that is required to retrieve the requested paths and names. </p>
-
-<p>A driver typically would use a sequence of two IOCTL_ACPI_ENUM_CHILDREN requests to enumerate the child objects of interest. The driver sends the first request to obtain the size of the output buffer that is required to contain the path and name of all the requested objects. The driver sends the second request to return the path and name of the objects in the output buffer. </p>
-
-<p>For more information about how to enumerate child devices of a device, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/enumerating-child-devices-and-control-methods">Enumerating Child Devices and Control Methods</a>.</p>
-
-<p>IOCTL_ACPI_ENUM_CHILDREN can be used only at IRQL&lt; DISPATCH_LEVEL.</p>
-
-<p>IOCTL_ACPI_ENUM_CHILDREN returns a variable-length ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure that contains an array of variable-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff536109">ACPI_ENUM_CHILD</a> structures, each of which returns the fully qualified path and name of an object in the ACPI namespace of the device to which the request was sent. The objects that this request enumerates depends on the setting of the <b>Flags</b> member of the supplied input structure ACPI_ENUM_CHILDREN_INPUT_BUFFER, as follows:</p>
-
-<p></p><dl>
-<dt><a id="ENUM_CHILDREN_IMMEDIATE_ONLY_"></a><a id="enum_children_immediate_only_"></a>ENUM_CHILDREN_IMMEDIATE_ONLY </dt>
-<dd>
-<p>Enumerates the device and enumerates the immediate child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL_"></a><a id="enum_children_multilevel_"></a>ENUM_CHILDREN_MULTILEVEL </dt>
-<dd>
-<p>Enumerates the device and recursively enumerates all child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL____ENUM_CHILDREN_NAME_IS_FILTER_"></a><a id="enum_children_multilevel____enum_children_name_is_filter_"></a>ENUM_CHILDREN_MULTILEVEL || ENUM_CHILDREN_NAME_IS_FILTER </dt>
-<dd>
-<p>A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the <b>Name</b> member.</p>
-</dd>
-</dl><p>Enumerates the device and enumerates the immediate child devices of the device.</p>
-
-<p>Enumerates the device and recursively enumerates all child devices of the device.</p>
-
-<p>A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the <b>Name</b> member.</p>
-
-<p>If the output buffer that the driver allocates is not large enough to return all requested child names, the ACPI driver does not return any child names and sets the <b>Status</b> member of the IO_STATUS_BLOCK for the request to STATUS_BUFFER_OVERFLOW. In this case, if the size, in bytes, of the output buffer is at least <b>sizeof</b>(ACPI_ENUM_CHILDREN_OUTPUT_BUFFER_SIGNATURE), the ACPI driver also sets <i>NumberOfChildren</i> to the size, in bytes, that is required to retrieve the requested paths and names. </p>
-
-<p>A driver typically would use a sequence of two IOCTL_ACPI_ENUM_CHILDREN requests to enumerate the child objects of interest. The driver sends the first request to obtain the size of the output buffer that is required to contain the path and name of all the requested objects. The driver sends the second request to return the path and name of the objects in the output buffer. </p>
-
-<p>For more information about how to enumerate child devices of a device, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/enumerating-child-devices-and-control-methods">Enumerating Child Devices and Control Methods</a>.</p>
-
-<p>IOCTL_ACPI_ENUM_CHILDREN can be used only at IRQL&lt; DISPATCH_LEVEL.</p>
-
-<p>IOCTL_ACPI_ENUM_CHILDREN returns a variable-length ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure that contains an array of variable-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff536109">ACPI_ENUM_CHILD</a> structures, each of which returns the fully qualified path and name of an object in the ACPI namespace of the device to which the request was sent. The objects that this request enumerates depends on the setting of the <b>Flags</b> member of the supplied input structure ACPI_ENUM_CHILDREN_INPUT_BUFFER, as follows:</p>
-
-<p></p><dl>
-<dt><a id="ENUM_CHILDREN_IMMEDIATE_ONLY_"></a><a id="enum_children_immediate_only_"></a>ENUM_CHILDREN_IMMEDIATE_ONLY </dt>
-<dd>
-<p>Enumerates the device and enumerates the immediate child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL_"></a><a id="enum_children_multilevel_"></a>ENUM_CHILDREN_MULTILEVEL </dt>
-<dd>
-<p>Enumerates the device and recursively enumerates all child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL____ENUM_CHILDREN_NAME_IS_FILTER_"></a><a id="enum_children_multilevel____enum_children_name_is_filter_"></a>ENUM_CHILDREN_MULTILEVEL || ENUM_CHILDREN_NAME_IS_FILTER </dt>
-<dd>
-<p>A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the <b>Name</b> member.</p>
-</dd>
-</dl><p>Enumerates the device and enumerates the immediate child devices of the device.</p>
-
-<p>Enumerates the device and recursively enumerates all child devices of the device.</p>
-
-<p>A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the <b>Name</b> member.</p>
-
-<p>If the output buffer that the driver allocates is not large enough to return all requested child names, the ACPI driver does not return any child names and sets the <b>Status</b> member of the IO_STATUS_BLOCK for the request to STATUS_BUFFER_OVERFLOW. In this case, if the size, in bytes, of the output buffer is at least <b>sizeof</b>(ACPI_ENUM_CHILDREN_OUTPUT_BUFFER_SIGNATURE), the ACPI driver also sets <i>NumberOfChildren</i> to the size, in bytes, that is required to retrieve the requested paths and names. </p>
-
-<p>A driver typically would use a sequence of two IOCTL_ACPI_ENUM_CHILDREN requests to enumerate the child objects of interest. The driver sends the first request to obtain the size of the output buffer that is required to contain the path and name of all the requested objects. The driver sends the second request to return the path and name of the objects in the output buffer. </p>
-
-<p>For more information about how to enumerate child devices of a device, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/enumerating-child-devices-and-control-methods">Enumerating Child Devices and Control Methods</a>.</p>
-
-<p>IOCTL_ACPI_ENUM_CHILDREN can be used only at IRQL&lt; DISPATCH_LEVEL.</p>
-
-<p>IOCTL_ACPI_ENUM_CHILDREN returns a variable-length ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure that contains an array of variable-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff536109">ACPI_ENUM_CHILD</a> structures, each of which returns the fully qualified path and name of an object in the ACPI namespace of the device to which the request was sent. The objects that this request enumerates depends on the setting of the <b>Flags</b> member of the supplied input structure ACPI_ENUM_CHILDREN_INPUT_BUFFER, as follows:</p>
-
-<p></p><dl>
-<dt><a id="ENUM_CHILDREN_IMMEDIATE_ONLY_"></a><a id="enum_children_immediate_only_"></a>ENUM_CHILDREN_IMMEDIATE_ONLY </dt>
-<dd>
-<p>Enumerates the device and enumerates the immediate child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL_"></a><a id="enum_children_multilevel_"></a>ENUM_CHILDREN_MULTILEVEL </dt>
-<dd>
-<p>Enumerates the device and recursively enumerates all child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL____ENUM_CHILDREN_NAME_IS_FILTER_"></a><a id="enum_children_multilevel____enum_children_name_is_filter_"></a>ENUM_CHILDREN_MULTILEVEL || ENUM_CHILDREN_NAME_IS_FILTER </dt>
-<dd>
-<p>A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the <b>Name</b> member.</p>
-</dd>
-</dl><p>Enumerates the device and enumerates the immediate child devices of the device.</p>
-
-<p>Enumerates the device and recursively enumerates all child devices of the device.</p>
-
-<p>A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the <b>Name</b> member.</p>
-
-<p>If the output buffer that the driver allocates is not large enough to return all requested child names, the ACPI driver does not return any child names and sets the <b>Status</b> member of the IO_STATUS_BLOCK for the request to STATUS_BUFFER_OVERFLOW. In this case, if the size, in bytes, of the output buffer is at least <b>sizeof</b>(ACPI_ENUM_CHILDREN_OUTPUT_BUFFER_SIGNATURE), the ACPI driver also sets <i>NumberOfChildren</i> to the size, in bytes, that is required to retrieve the requested paths and names. </p>
-
-<p>A driver typically would use a sequence of two IOCTL_ACPI_ENUM_CHILDREN requests to enumerate the child objects of interest. The driver sends the first request to obtain the size of the output buffer that is required to contain the path and name of all the requested objects. The driver sends the second request to return the path and name of the objects in the output buffer. </p>
-
-<p>For more information about how to enumerate child devices of a device, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/enumerating-child-devices-and-control-methods">Enumerating Child Devices and Control Methods</a>.</p>
-
-<p>IOCTL_ACPI_ENUM_CHILDREN can be used only at IRQL&lt; DISPATCH_LEVEL.</p>
-
-<p>IOCTL_ACPI_ENUM_CHILDREN returns a variable-length ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure that contains an array of variable-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff536109">ACPI_ENUM_CHILD</a> structures, each of which returns the fully qualified path and name of an object in the ACPI namespace of the device to which the request was sent. The objects that this request enumerates depends on the setting of the <b>Flags</b> member of the supplied input structure ACPI_ENUM_CHILDREN_INPUT_BUFFER, as follows:</p>
-
-<p></p><dl>
-<dt><a id="ENUM_CHILDREN_IMMEDIATE_ONLY_"></a><a id="enum_children_immediate_only_"></a>ENUM_CHILDREN_IMMEDIATE_ONLY </dt>
-<dd>
-<p>Enumerates the device and enumerates the immediate child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL_"></a><a id="enum_children_multilevel_"></a>ENUM_CHILDREN_MULTILEVEL </dt>
-<dd>
-<p>Enumerates the device and recursively enumerates all child devices of the device.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL____ENUM_CHILDREN_NAME_IS_FILTER_"></a><a id="enum_children_multilevel____enum_children_name_is_filter_"></a>ENUM_CHILDREN_MULTILEVEL || ENUM_CHILDREN_NAME_IS_FILTER </dt>
-<dd>
-<p>A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the <b>Name</b> member.</p>
-</dd>
-</dl><p>Enumerates the device and enumerates the immediate child devices of the device.</p>
 
 <p>Enumerates the device and recursively enumerates all child devices of the device.</p>
 
@@ -323,13 +167,13 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536109">ACPI_ENUM_CHILD</a>
+<a href="..\acpiioct\ns-acpiioct--acpi-enum-child.md">ACPI_ENUM_CHILD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536110">ACPI_ENUM_CHILDREN_INPUT_BUFFER</a>
+<a href="..\acpiioct\ns-acpiioct--acpi-enum-children-input-buffer.md">ACPI_ENUM_CHILDREN_INPUT_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536112">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a>
+<a href="..\acpiioct\ns-acpiioct--acpi-enum-children-output-buffer.md">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a>
 </dt>
 </dl>
 <p> </p>

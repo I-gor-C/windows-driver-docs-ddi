@@ -77,8 +77,6 @@ __checkReturn HRESULT APIENTRY DestroyQuery(
 ## -remarks
 <p>The <b>DestroyQuery</b> function notifies the driver to destroy the query handle that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createquery.md">CreateQuery</a> function previously created. The driver can then release resources that are associated with the query handle.</p>
 
-<p>The <b>DestroyQuery</b> function notifies the driver to destroy the query handle that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createquery.md">CreateQuery</a> function previously created. The driver can then release resources that are associated with the query handle.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -117,7 +115,7 @@ __checkReturn HRESULT APIENTRY DestroyQuery(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createquery.md">CreateQuery</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

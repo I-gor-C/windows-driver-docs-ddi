@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTSetDisplayPrivateDriverFormat(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548290">D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT</a> structure that describes how to format a video present source.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setdisplayprivatedriverformat.md">D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT</a> structure that describes how to format a video present source.</p>
 </dd>
 </dl>
 
@@ -70,7 +70,7 @@ NTSTATUS APIENTRY D3DKMTSetDisplayPrivateDriverFormat(
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_GRAPHICS_NOT_EXCLUSIVE_MODE_OWNER</b></dt>
-</dl><p>Before the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547171">D3DKMTSetDisplayPrivateDriverFormat</a>, the device did not acquire exclusive ownership of the view. Therefore, the device could not change the private-format attribute of the video present source.</p><dl>
+</dl><p>Before the call to <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplayprivatedriverformat.md">D3DKMTSetDisplayPrivateDriverFormat</a>, the device did not acquire exclusive ownership of the view. Therefore, the device could not change the private-format attribute of the video present source.</p><dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
 </dl><p>The display miniport driver does not support the <a href="display.dxgkddisetdisplayprivatedriverformat">DxgkDdiSetDisplayPrivateDriverFormat</a> function. </p><dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
@@ -138,7 +138,7 @@ NTSTATUS APIENTRY D3DKMTSetDisplayPrivateDriverFormat(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548290">D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setdisplayprivatedriverformat.md">D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT</a>
 </dt>
 <dt>
 <a href="display.dxgkddisetdisplayprivatedriverformat">DxgkDdiSetDisplayPrivateDriverFormat</a>

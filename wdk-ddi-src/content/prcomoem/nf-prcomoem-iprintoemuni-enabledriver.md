@@ -72,7 +72,7 @@ STDMETHOD EnableDriver(
 ### -param <i>pded</i> 
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556206">DRVENABLEDATA</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="display.drvenabledata">DRVENABLEDATA</a> structure.</p>
 </dd>
 </dl>
 
@@ -88,104 +88,19 @@ STDMETHOD EnableDriver(
 ## -remarks
 <p>A rendering plug-in for Unidrv must implement the <code>IPrintOemUni::EnableDriver</code> method.</p>
 
-<p>The <code>IPrintOemUni::EnableDriver</code> method allows a rendering plug-in to perform the same types of operations as the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556210">DrvEnableDriver</a> function that is exported by printer graphics DLLs.</p>
+<p>The <code>IPrintOemUni::EnableDriver</code> method allows a rendering plug-in to perform the same types of operations as the <a href="display.drvenabledriver">DrvEnableDriver</a> function that is exported by printer graphics DLLs.</p>
 
 <p>Like the <b>DrvEnableDriver</b> function, the <code>IPrintOemUni::EnableDriver</code> method is responsible for providing addresses of internally supported graphics DDI functions, known as hooking functions. It can also perform other one-time initialization operations. Unlike the <b>DrvEnableDriver</b> function, implementation of <code>IPrintOemUni::EnableDriver</code> is optional.</p>
 
-<p>The method should fill the supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556206">DRVENABLEDATA</a> structure and allocate an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff556221">DRVFN</a> structures. It should fill the array with pointers to hooking functions, along with winddi.h-defined index values that identify the hooked out graphics DDI functions.</p>
+<p>The method should fill the supplied <a href="display.drvenabledata">DRVENABLEDATA</a> structure and allocate an array of <a href="display.drvfn">DRVFN</a> structures. It should fill the array with pointers to hooking functions, along with winddi.h-defined index values that identify the hooked out graphics DDI functions.</p>
 
-<p>A rendering plug-in for Unidrv can hook out a graphics DDI function only if the Unidrv driver defines the function. The following graphics DDI functions are defined in Unidrv and/or Pscript5 and can therefore be hooked out:</p><dl>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556176">DrvAlphaBlend</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556180">DrvBitBlt</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556182">DrvCopyBits</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556202">DrvDitherColor</a> (Unidrv only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556215">DrvEndDoc</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556217">DrvEscape</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556220">DrvFillPath</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556223">DrvFontManagement</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556230">DrvGetGlyphMode</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556236">DrvGradientFill</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556239">DrvIcmCreateColorTransform</a> (Pscript only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556241">DrvIcmDeleteColorTransform</a> (Pscript only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556245">DrvLineTo</a> (Unidrv only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556250">DrvNextBand</a> (Unidrv only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556258">DrvPlgBlt</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556259">DrvQueryAdvanceWidths</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556260">DrvQueryDeviceSupport</a> (Pscript only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556262">DrvQueryFont</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556264">DrvQueryFontData</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556266">DrvQueryFontTree</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556273">DrvRealizeBrush</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556281">DrvSendPage</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556292">DrvStartBanding</a> (Unidrv only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556296">DrvStartDoc</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556298">DrvStartPage</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556302">DrvStretchBlt</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556306">DrvStretchBltROP</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556311">DrvStrokeAndFillPath</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556316">DrvStrokePath</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557277">DrvTextOut</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557283">DrvTransparentBlt</a>
-</dd>
-</dl><p>If you provide a customized hooking function, it preempts the driver's equivalent graphics DDI function. Hooking functions can also call back into the driver's graphics DDI functions. For more information see <a href="NULL">Customized Graphics DDI Functions</a>.</p>
+<p>A rendering plug-in for Unidrv can hook out a graphics DDI function only if the Unidrv driver defines the function. The following graphics DDI functions are defined in Unidrv and/or Pscript5 and can therefore be hooked out:</p>
 
-<p>Customized hooking functions have the same input and output parameters as the equivalent graphics DDI function, with one exception - where graphics DDI functions receive PDEV pointers, customized hooking functions receive <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> pointers. There are two ways for graphics DDI functions to receive PDEV pointers:</p>
+<p>If you provide a customized hooking function, it preempts the driver's equivalent graphics DDI function. Hooking functions can also call back into the driver's graphics DDI functions. For more information see <a href="NULL">Customized Graphics DDI Functions</a>.</p>
 
-<p>As the contents of the <b>dhpdev</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569901">SURFOBJ</a> structure for the destination surface.</p>
+<p>Customized hooking functions have the same input and output parameters as the equivalent graphics DDI function, with one exception - where graphics DDI functions receive PDEV pointers, customized hooking functions receive <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> pointers. There are two ways for graphics DDI functions to receive PDEV pointers:</p>
+
+<p>As the contents of the <b>dhpdev</b> member of a <a href="display.surfobj">SURFOBJ</a> structure for the destination surface.</p>
 
 <p>For the equivalent customized hooking function, the destination SURFOBJ structure's <b>dhpdev</b> member points to a DEVOBJ structure, and must be cast to type PDEVOBJ when referenced. An example graphics DDI function is <b>DrvBitBlt</b>.</p>
 
@@ -193,120 +108,7 @@ STDMETHOD EnableDriver(
 
 <p>The equivalent customized hooking function must cast this input parameter to type PDEVOBJ when referencing it. An example graphics DDI function is <b>DrvDitherColor</b>.</p>
 
-<p>Note that while a <a href="NULL">printer graphics DLL</a> includes the addresses of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556198">DrvDisablePDEV</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556276">DrvResetPDEV</a> functions in the DRVENABLEDATA structure, a rendering plug-in explicitly exports <b>EnablePDEV</b>, <b>DisablePDEV</b>, and <b>ResetPDEV</b> as methods of the <b>IPrintOemUni</b> interface and does not place their addresses in the DRVENABLEDATA structure.</p>
-
-<p>If <code>IPrintOemUni::EnableDriver</code> methods are exported by multiple rendering plug-ins, the methods are called in the order that the plug-ins are specified for installation.</p>
-
-<p>For more information about creating and installing rendering plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
-
-<p>A rendering plug-in for Unidrv must implement the <code>IPrintOemUni::EnableDriver</code> method.</p>
-
-<p>The <code>IPrintOemUni::EnableDriver</code> method allows a rendering plug-in to perform the same types of operations as the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556210">DrvEnableDriver</a> function that is exported by printer graphics DLLs.</p>
-
-<p>Like the <b>DrvEnableDriver</b> function, the <code>IPrintOemUni::EnableDriver</code> method is responsible for providing addresses of internally supported graphics DDI functions, known as hooking functions. It can also perform other one-time initialization operations. Unlike the <b>DrvEnableDriver</b> function, implementation of <code>IPrintOemUni::EnableDriver</code> is optional.</p>
-
-<p>The method should fill the supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556206">DRVENABLEDATA</a> structure and allocate an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff556221">DRVFN</a> structures. It should fill the array with pointers to hooking functions, along with winddi.h-defined index values that identify the hooked out graphics DDI functions.</p>
-
-<p>A rendering plug-in for Unidrv can hook out a graphics DDI function only if the Unidrv driver defines the function. The following graphics DDI functions are defined in Unidrv and/or Pscript5 and can therefore be hooked out:</p><dl>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556176">DrvAlphaBlend</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556180">DrvBitBlt</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556182">DrvCopyBits</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556202">DrvDitherColor</a> (Unidrv only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556215">DrvEndDoc</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556217">DrvEscape</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556220">DrvFillPath</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556223">DrvFontManagement</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556230">DrvGetGlyphMode</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556236">DrvGradientFill</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556239">DrvIcmCreateColorTransform</a> (Pscript only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556241">DrvIcmDeleteColorTransform</a> (Pscript only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556245">DrvLineTo</a> (Unidrv only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556250">DrvNextBand</a> (Unidrv only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556258">DrvPlgBlt</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556259">DrvQueryAdvanceWidths</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556260">DrvQueryDeviceSupport</a> (Pscript only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556262">DrvQueryFont</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556264">DrvQueryFontData</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556266">DrvQueryFontTree</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556273">DrvRealizeBrush</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556281">DrvSendPage</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556292">DrvStartBanding</a> (Unidrv only)</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556296">DrvStartDoc</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556298">DrvStartPage</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556302">DrvStretchBlt</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556306">DrvStretchBltROP</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556311">DrvStrokeAndFillPath</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556316">DrvStrokePath</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557277">DrvTextOut</a>
-</dd>
-<dd>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557283">DrvTransparentBlt</a>
-</dd>
-</dl><p>If you provide a customized hooking function, it preempts the driver's equivalent graphics DDI function. Hooking functions can also call back into the driver's graphics DDI functions. For more information see <a href="NULL">Customized Graphics DDI Functions</a>.</p>
-
-<p>Customized hooking functions have the same input and output parameters as the equivalent graphics DDI function, with one exception - where graphics DDI functions receive PDEV pointers, customized hooking functions receive <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> pointers. There are two ways for graphics DDI functions to receive PDEV pointers:</p>
-
-<p>As the contents of the <b>dhpdev</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569901">SURFOBJ</a> structure for the destination surface.</p>
-
-<p>For the equivalent customized hooking function, the destination SURFOBJ structure's <b>dhpdev</b> member points to a DEVOBJ structure, and must be cast to type PDEVOBJ when referenced. An example graphics DDI function is <b>DrvBitBlt</b>.</p>
-
-<p>As an input argument for a <i>dhpdev</i> parameter.</p>
-
-<p>The equivalent customized hooking function must cast this input parameter to type PDEVOBJ when referencing it. An example graphics DDI function is <b>DrvDitherColor</b>.</p>
-
-<p>Note that while a <a href="NULL">printer graphics DLL</a> includes the addresses of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556198">DrvDisablePDEV</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556276">DrvResetPDEV</a> functions in the DRVENABLEDATA structure, a rendering plug-in explicitly exports <b>EnablePDEV</b>, <b>DisablePDEV</b>, and <b>ResetPDEV</b> as methods of the <b>IPrintOemUni</b> interface and does not place their addresses in the DRVENABLEDATA structure.</p>
+<p>Note that while a <a href="NULL">printer graphics DLL</a> includes the addresses of its <a href="display.drvenablepdev">DrvEnablePDEV</a>, <a href="display.drvdisablepdev">DrvDisablePDEV</a>, and <a href="display.drvresetpdev">DrvResetPDEV</a> functions in the DRVENABLEDATA structure, a rendering plug-in explicitly exports <b>EnablePDEV</b>, <b>DisablePDEV</b>, and <b>ResetPDEV</b> as methods of the <b>IPrintOemUni</b> interface and does not place their addresses in the DRVENABLEDATA structure.</p>
 
 <p>If <code>IPrintOemUni::EnableDriver</code> methods are exported by multiple rendering plug-ins, the methods are called in the order that the plug-ins are specified for installation.</p>
 

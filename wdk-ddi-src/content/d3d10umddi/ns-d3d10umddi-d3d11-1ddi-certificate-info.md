@@ -61,13 +61,13 @@ typedef struct D3D11_1DDI_CERTIFICATE_INFO {
 ### -field <b>CertificateType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh406438">D3D11_1DDI_CERTIFICATE_TYPE</a> value that specifies the type of authenticated certificate that is used to establish trust and perform a key exchange.</p>
+<p>A <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-certificate-type.md">D3D11_1DDI_CERTIFICATE_TYPE</a> value that specifies the type of authenticated certificate that is used to establish trust and perform a key exchange.</p>
 </dd>
 
 ### -field <b>ChannelType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh406343">D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE</a> value that specifies the type of Direct3D authenticated channel.</p>
+<p>A <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-authenticated-channel-type.md">D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE</a> value that specifies the type of Direct3D authenticated channel.</p>
 </dd>
 
 ### -field <b>CryptoSessionType</b>
@@ -113,10 +113,10 @@ typedef struct D3D11_1DDI_CERTIFICATE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406343">D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-authenticated-channel-type.md">D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406438">D3D11_1DDI_CERTIFICATE_TYPE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-certificate-type.md">D3D11_1DDI_CERTIFICATE_TYPE</a>
 </dt>
 </dl>
 <p> </p>

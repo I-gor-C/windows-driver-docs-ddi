@@ -7,7 +7,7 @@ old-location: debugger\outputpromptwide.htm
 old-project: debugger
 ms.assetid: c9b2eecf-fa9d-442e-9875-d068add25289
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl4, OutputPromptWide, IDebugControl4::OutputPromptWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ HRESULT OutputPromptWide(
 ### -param <i>OutputControl</i> [in]
 
 <dd>
-<p>Specifies an output control that determines which of the client's output callbacks will receive the output.  For possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.</p>
+<p>Specifies an output control that determines which of the client's output callbacks will receive the output.  For possible values, see <a href="debugger.debug_outctl_xxx">DEBUG_OUTCTL_XXX</a>.</p>
 </dd>
 
 ### -param <i>Format</i> [in, optional]
@@ -224,15 +224,7 @@ HRESULT OutputPromptWide(
 ## -remarks
 <p><b>OutputPrompt</b> and <b>OutputPromptWide</b> can be used to prompt the user for input.</p>
 
-<p>The standard prompt will be sent to the output callbacks before the formatted text described by <i>Format</i>.  The contents of the standard prompt is returned by the method <a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>.</p>
-
-<p>The prompt text is sent to the output callbacks with the <a href="debugger.debug_output_xxx">DEBUG_OUTPUT_PROMPT</a> output mask set.</p>
-
-<p>For more information about prompting the user, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560116">Using Input and Output</a>.</p>
-
-<p><b>OutputPrompt</b> and <b>OutputPromptWide</b> can be used to prompt the user for input.</p>
-
-<p>The standard prompt will be sent to the output callbacks before the formatted text described by <i>Format</i>.  The contents of the standard prompt is returned by the method <a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>.</p>
+<p>The standard prompt will be sent to the output callbacks before the formatted text described by <i>Format</i>.  The contents of the standard prompt is returned by the method <a href="debugger.getprompttext">GetPromptText</a>.</p>
 
 <p>The prompt text is sent to the output callbacks with the <a href="debugger.debug_output_xxx">DEBUG_OUTPUT_PROMPT</a> output mask set.</p>
 
@@ -265,21 +257,21 @@ HRESULT OutputPromptWide(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553231">OutputPromptVaList</a>
+<a href="debugger.outputpromptvalist">OutputPromptVaList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>
+<a href="debugger.getprompttext">GetPromptText</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539248">ControlledOutput</a>
+<a href="debugger.controlledoutput">ControlledOutput</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541518">DEBUG_OUTPUT_XXX</a>
+<a href="debugger.debug_output_xxx">DEBUG_OUTPUT_XXX</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::OutputPromptWide method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::OutputPromptWide method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

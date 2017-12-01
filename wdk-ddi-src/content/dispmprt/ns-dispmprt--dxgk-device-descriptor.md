@@ -106,7 +106,7 @@ typedef struct _DXGK_DEVICE_DESCRIPTOR {
 <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561108">DXGK_GENERIC_DESCRIPTOR</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-generic-descriptor.md">DXGK_GENERIC_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="display.dxgkddiquerydevicedescriptor">DxgkDdiQueryDeviceDescriptor</a>

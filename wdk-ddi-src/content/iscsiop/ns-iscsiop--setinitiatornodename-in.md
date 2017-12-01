@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetInitiatorNodeName_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565706">SetInitiatorNodeName</a> method.</p>
+<p>The SetInitiatorNodeName_IN structure holds the input data for the <a href="storage.setinitiatornodename">SetInitiatorNodeName</a> method.</p>
 
 
 ## -syntax
@@ -81,10 +81,10 @@ typedef struct _SetInitiatorNodeName_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565706">SetInitiatorNodeName</a>
+<a href="storage.setinitiatornodename">SetInitiatorNodeName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565749">SetInitiatorNodeName_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--setinitiatornodename-out.md">SetInitiatorNodeName_OUT</a>
 </dt>
 </dl>
 <p> </p>

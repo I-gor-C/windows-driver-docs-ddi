@@ -1,4 +1,4 @@
-# [gpiobtn](index.md)
+# [Hardware Notifications](index.md)
 ## [Hwnclx.h](../hwnclx/index.md)
 ### [CLIENT_DEVICE_INFORMATION structure](../hwnclx/ns-hwnclx--client-device-information.md)
 ### [HWN_CLIENT_GET_STATE callback](../hwnclx/nc-hwnclx-hwn-client-get-state.md)

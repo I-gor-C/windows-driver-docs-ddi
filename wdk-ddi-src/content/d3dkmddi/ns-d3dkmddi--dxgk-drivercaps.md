@@ -128,7 +128,7 @@ typedef struct _DXGK_DRIVERCAPS {
 ### -field <b>PointerCaps</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561995">DXGK_POINTERFLAGS</a> structure that identifies the mouse pointer capabilities, in bit-field flags, that the driver can support.</p>
+<p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pointerflags.md">DXGK_POINTERFLAGS</a> structure that identifies the mouse pointer capabilities, in bit-field flags, that the driver can support.</p>
 </dd>
 
 ### -field <b>InterruptMessageNumber</b>
@@ -152,7 +152,7 @@ typedef struct _DXGK_DRIVERCAPS {
 ### -field <b>GammaRampCaps</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561071">DXGK_GAMMARAMPCAPS</a> structure that identifies the gamma-ramp capabilities, in bit-field flags, that the driver can support.</p>
+<p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gammarampcaps.md">DXGK_GAMMARAMPCAPS</a> structure that identifies the gamma-ramp capabilities, in bit-field flags, that the driver can support.</p>
 </dd>
 
 ### -field <b>ColorTransformCaps</b>
@@ -166,7 +166,7 @@ typedef struct _DXGK_DRIVERCAPS {
 ### -field <b>PresentationCaps</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562004">DXGK_PRESENTATIONCAPS</a> structure that identifies the presentation capabilities, in bit-field flags, that the driver can support.</p>
+<p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-presentationcaps.md">DXGK_PRESENTATIONCAPS</a> structure that identifies the presentation capabilities, in bit-field flags, that the driver can support.</p>
 </dd>
 
 ### -field <b>MaxQueuedFlipOnVSync</b>
@@ -178,25 +178,25 @@ typedef struct _DXGK_DRIVERCAPS {
 ### -field <b>FlipCaps</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561069">DXGK_FLIPCAPS</a> structure that identifies the flipping capabilities, in bit-field flags, that the driver can support.</p>
+<p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-flipcaps.md">DXGK_FLIPCAPS</a> structure that identifies the flipping capabilities, in bit-field flags, that the driver can support.</p>
 </dd>
 
 ### -field <b>SchedulingCaps</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562863">DXGK_VIDSCHCAPS</a> structure that identifies the graphics processing unit (GPU) scheduling capabilities, in bit-field flags, that the driver can support.</p>
+<p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidschcaps.md">DXGK_VIDSCHCAPS</a> structure that identifies the graphics processing unit (GPU) scheduling capabilities, in bit-field flags, that the driver can support.</p>
 </dd>
 
 ### -field <b>MemoryManagementCaps</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562072">DXGK_VIDMMCAPS</a> structure that identifies the video memory management capabilities that the driver can support.</p>
+<p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidmmcaps.md">DXGK_VIDMMCAPS</a> structure that identifies the video memory management capabilities that the driver can support.</p>
 </dd>
 
 ### -field <b>GpuEngineTopology</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561121">DXGK_GPUENGINETOPOLOGY</a> structure that describes the GPU-engine topology that the driver can support.</p>
+<p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gpuenginetopology.md">DXGK_GPUENGINETOPOLOGY</a> structure that describes the GPU-engine topology that the driver can support.</p>
 </dd>
 
 ### -field <b>WDDMVersion</b>
@@ -229,7 +229,7 @@ with the Windows 8 WDK, set this member to DXGKDDI_WDDMv1_2.</p>
 ### -field <b>PreemptionCaps</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/hh439334">D3DKMDT_PREEMPTION_CAPS</a> structure that describes the capabilities for the preemption of GPU graphics requests that the driver supports.</p>
+<p>[out] A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-preemption-caps.md">D3DKMDT_PREEMPTION_CAPS</a> structure that describes the capabilities for the preemption of GPU graphics requests that the driver supports.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
@@ -362,31 +362,31 @@ with the Windows 8 WDK, set this member to DXGKDDI_WDDMv1_2.</p>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-checkdirectflipsupport.md">CheckDirectFlipSupport</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439334">D3DKMDT_PREEMPTION_CAPS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-preemption-caps.md">D3DKMDT_PREEMPTION_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561069">DXGK_FLIPCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-flipcaps.md">DXGK_FLIPCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561071">DXGK_GAMMARAMPCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gammarampcaps.md">DXGK_GAMMARAMPCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561121">DXGK_GPUENGINETOPOLOGY</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gpuenginetopology.md">DXGK_GPUENGINETOPOLOGY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561995">DXGK_POINTERFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pointerflags.md">DXGK_POINTERFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562004">DXGK_PRESENTATIONCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562072">DXGK_VIDMMCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidmmcaps.md">DXGK_VIDMMCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562863">DXGK_VIDSCHCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-vidschcaps.md">DXGK_VIDSCHCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-interrupt.md">DxgkCbNotifyInterrupt</a>

@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvprocessuiresponse.htm
 old-project: netvista
 ms.assetid: 1483be56-71c5-435b-843d-821f73dc79d7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -65,7 +64,7 @@ DWORD APIENTRY Dot11ExtIhvProcessUIResponse(
 <p>The GUID that identifies the request. This GUID value was created by the IHV Extensions DLL and
      passed through the 
      <i>pIhvUIRequest</i> parameter of the call to 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547567">Dot11ExtSendUIRequest</a>.</p>
+     <a href="..\wlanihv\nc-wlanihv-dot11ext-send-ui-request.md">Dot11ExtSendUIRequest</a>.</p>
 </dd>
 
 ### -param <i>dwByteCount</i> [in]
@@ -95,32 +94,9 @@ DWORD APIENTRY Dot11ExtIhvProcessUIResponse(
     DLL</a>.</p>
 
 <p>The IHV Extensions DLL initiates these requests for user interaction through calls to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547567">Dot11ExtSendUIRequest</a> function. For
+    <a href="..\wlanihv\nc-wlanihv-dot11ext-send-ui-request.md">Dot11ExtSendUIRequest</a> function. For
     each UI request, the DLL must format a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547637">DOT11EXT_IHV_UI_REQUEST</a> structure to
-    define the request, and must set the 
-    <b>guidUIRequest</b> member of this structure to a GUID value that uniquely identifies the UI request. The
-    DLL passes the address of the 
-    <b>DOT11EXT_IHV_UI_REQUEST</b> structure through the 
-    <i>pIhvUIRequest</i> parameter of the 
-    <b>Dot11ExtSendUIRequest</b> function.</p>
-
-<p>After receiving this data from the IHV Extensions DLL, the operating system calls the 
-    <i>Dot11ExtIhvProcessUIResponse</i> function to process the user response, which is referenced through the
-    
-    <i>pvResponseBuffer</i> parameter. The response data is in a format defined by the IHV and has been validated by the IHV UI
-    Extensions DLL.</p>
-
-<p>The IHV Extensions DLL can issue requests to the IHV UI Extensions DLL for interaction with the user,
-    such as the display of notifications during the pre-association operation or the input of credential for
-    the post-association operation. For more information about the IHV UI Extensions DLL, see 
-    <a href="netvista.native_802_11_ihv_ui_extensions_dll">Native 802.11 IHV UI Extensions
-    DLL</a>.</p>
-
-<p>The IHV Extensions DLL initiates these requests for user interaction through calls to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547567">Dot11ExtSendUIRequest</a> function. For
-    each UI request, the DLL must format a 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547637">DOT11EXT_IHV_UI_REQUEST</a> structure to
+    <a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-ui-request.md">DOT11EXT_IHV_UI_REQUEST</a> structure to
     define the request, and must set the 
     <b>guidUIRequest</b> member of this structure to a GUID value that uniquely identifies the UI request. The
     DLL passes the address of the 
@@ -170,12 +146,12 @@ DWORD APIENTRY Dot11ExtIhvProcessUIResponse(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547637">DOT11EXT_IHV_UI_REQUEST</a>
+<a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-ui-request.md">DOT11EXT_IHV_UI_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547567">Dot11ExtSendUIRequest</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-send-ui-request.md">Dot11ExtSendUIRequest</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PROCESS_UI_RESPONSE callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PROCESS_UI_RESPONSE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

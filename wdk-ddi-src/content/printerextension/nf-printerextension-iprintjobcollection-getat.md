@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Gets a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a> object.</p>
+<p>Gets a pointer to an <a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a> object.</p>
 
 
 ## -syntax
@@ -118,10 +118,10 @@ HRESULT GetAt(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a>
+<a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265397">IPrintJobCollection</a>
+<a href="..\printerextension\nn-printerextension-iprintjobcollection.md">IPrintJobCollection</a>
 </dt>
 </dl>
 <p> </p>

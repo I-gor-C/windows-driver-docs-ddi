@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_queue_dispatch_type.htm
 old-project: wdf
 ms.assetid: 90f2f490-ee29-4e20-94b2-65a9bba3e831
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 ### -field <a id="WdfIoQueueDispatchSequential"></a><a id="wdfioqueuedispatchsequential"></a><a id="WDFIOQUEUEDISPATCHSEQUENTIAL"></a><b>WdfIoQueueDispatchSequential</b>
 
 <dd>
-<p>The I/O queue's requests are presented to the driver's <a href="wdf.request_handlers">request handlers</a> one at a time. The framework does not deliver the next request until a driver has called <a href="https://msdn.microsoft.com/library/windows/hardware/ff549945">WdfRequestComplete</a> to complete the current request.</p>
+<p>The I/O queue's requests are presented to the driver's <a href="wdf.request_handlers">request handlers</a> one at a time. The framework does not deliver the next request until a driver has called <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> to complete the current request.</p>
 </dd>
 
 ### -field <a id="WdfIoQueueDispatchParallel"></a><a id="wdfioqueuedispatchparallel"></a><a id="WDFIOQUEUEDISPATCHPARALLEL"></a><b>WdfIoQueueDispatchParallel</b>
@@ -81,7 +81,7 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 ### -field <a id="WdfIoQueueDispatchManual"></a><a id="wdfioqueuedispatchmanual"></a><a id="WDFIOQUEUEDISPATCHMANUAL"></a><b>WdfIoQueueDispatchManual</b>
 
 <dd>
-<p>The framework places requests into the queue but does not deliver them to the driver. The driver must retrieve requests from the queue by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh975100">WdfIoQueueRetrieveNextRequest</a>.</p>
+<p>The framework places requests into the queue but does not deliver them to the driver. The driver must retrieve requests from the queue by calling <a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>.</p>
 </dd>
 
 ### -field <a id="WdfIoQueueDispatchMax"></a><a id="wdfioqueuedispatchmax"></a><a id="WDFIOQUEUEDISPATCHMAX"></a><b>WdfIoQueueDispatchMax</b>
@@ -92,10 +92,6 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 </dl>
 
 ## -remarks
-<p>For more information, see <a href="wdf.dispatching_methods_for_i_o_requests">Dispatching Methods for I/O Requests</a>.</p>
-
-<p>For more information, see <a href="wdf.dispatching_methods_for_i_o_requests">Dispatching Methods for I/O Requests</a>.</p>
-
 <p>For more information, see <a href="wdf.dispatching_methods_for_i_o_requests">Dispatching Methods for I/O Requests</a>.</p>
 
 ## -requirements

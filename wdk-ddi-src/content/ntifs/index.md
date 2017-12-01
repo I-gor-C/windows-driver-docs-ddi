@@ -1,9 +1,9 @@
 # Ntifs.h header
 
 
-This header is used by Installable file system, Windows kernel, Networking drivers for Windows Vista and later. For more information, see
-- [Installable file system](../_ifsk/index.md)
+This header is used by Windows kernel, Installable file system, Networking drivers for Windows Vista and later. For more information, see
 - [Windows kernel](../_kernel/index.md)
+- [Installable file system](../_ifsk/index.md)
 - [Networking drivers for Windows Vista and later](../_netvista/index.md)
 
 Ntifs.h contain these programming interfaces:

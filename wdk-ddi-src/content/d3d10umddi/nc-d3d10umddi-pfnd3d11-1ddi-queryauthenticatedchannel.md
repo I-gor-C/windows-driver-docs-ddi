@@ -87,7 +87,7 @@ HRESULT APIENTRY* QueryAuthenticatedChannel(
 ### -param <i>pInputData</i> [out]
 
 <dd>
-<p>A pointer to a buffer that describes the information to query. The data in this buffer is formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406399">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure.</p>
+<p>A pointer to a buffer that describes the information to query. The data in this buffer is formatted as a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure.</p>
 </dd>
 
 ### -param <i>OutputDataSize</i> [in]
@@ -120,317 +120,79 @@ HRESULT APIENTRY* QueryAuthenticatedChannel(
 <p> </p>
 
 ## -remarks
-<p>The <i>pInputData</i> parameter references a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406399">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure. This structure contains the driver's handle to the authenticated channel, a sequence number, and a GUID that indicates the type of query to perform.  The driver must return  <b>E_INVALIDARG</b> if the sequence number was not previously initialized by using the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-configureauthenticatedchannel.md">ConfigureAuthenticatedChannel(D3D11_1)</a> function.  The driver must  also return  <b>E_INVALIDARG</b> if the sequence number is not greater than the sequence number of the previous query call.
+<p>The <i>pInputData</i> parameter references a buffer that contains a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure. This structure contains the driver's handle to the authenticated channel, a sequence number, and a GUID that indicates the type of query to perform.  The driver must return  <b>E_INVALIDARG</b> if the sequence number was not previously initialized by using the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-configureauthenticatedchannel.md">ConfigureAuthenticatedChannel(D3D11_1)</a> function.  The driver must  also return  <b>E_INVALIDARG</b> if the sequence number is not greater than the sequence number of the previous query call.
 
 </p>
 
-<p>The byte array that is referenced by the <i>pOutputData</i> parameter is in a format that is specified by the <b>QueryType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406399">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure. The following list describes the format of this data based on the <b>QueryType</b> member.</p>
+<p>The byte array that is referenced by the <i>pOutputData</i> parameter is in a format that is specified by the <b>QueryType</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure. The following list describes the format of this data based on the <b>QueryType</b> member.</p>
 
-<p></p><dl>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION"></a><a id="d3d11_1ddi_authenticated_query_protection"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION</b></dt>
-<dd>
+<p></p>
+
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406419">D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE"></a><a id="d3d11_1ddi_authenticated_query_channel_type"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406386">D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE"></a><a id="d3d11_1ddi_authenticated_query_device_handle"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406396">D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION"></a><a id="d3d11_1ddi_authenticated_query_crypto_session"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406390">D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT"></a><a id="d3d11_1ddi_authenticated_query_restricted_shared_resource_process_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406423">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS"></a><a id="d3d11_1ddi_authenticated_query_restricted_shared_resource_process"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406429">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT"></a><a id="d3d11_1ddi_authenticated_query_unrestricted_protected_shared_resource_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406431">D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT"></a><a id="d3d11_1ddi_authenticated_query_output_id_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406409">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID"></a><a id="d3d11_1ddi_authenticated_query_output_id"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406415">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES"></a><a id="d3d11_1ddi_authenticated_query_accessibility_attributes"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406384">D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID_COUNT"></a><a id="d3d11_1ddi_authenticated_query_encryption_when_accessible_guid_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID_COUNT</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406378">D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_COUNT_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID"></a><a id="d3d11_1ddi_authenticated_query_encryption_when_accessible_guid"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406382">D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_CURRENT_ENCRYPTION_WHEN_ACCESSIBLE"></a><a id="d3d11_1ddi_authenticated_current_encryption_when_accessible"></a><b>D3D11_1DDI_AUTHENTICATED_CURRENT_ENCRYPTION_WHEN_ACCESSIBLE</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406393">D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ACCESSIBILITY_ENCRYPTION_OUTPUT</a>
-</p>
-</dd>
-</dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406419">D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-protection-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406386">D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-channel-type-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406396">D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-device-handle-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406390">D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-crypto-session-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406423">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-restricted-shared-resource-process-count-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406429">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-restricted-shared-resource-process-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406431">D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-unrestricted-protected-shared-resource-count-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406409">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output-id-count-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406415">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output-id-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406384">D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-acessibility-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406378">D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_COUNT_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-accessibility-encryption-guid-count-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_COUNT_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406382">D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-accessibility-encryption-guid-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_OUTPUT</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406393">D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ACCESSIBILITY_ENCRYPTION_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-current-accessibility-encryption-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ACCESSIBILITY_ENCRYPTION_OUTPUT</a>
 </p>
 
 <p>The driver prepares the output buffer that is referenced by the <i>pOutputData</i> parameter by following these steps:</p>
 
-<p>Each structure that is returned based on the <b>QueryType</b> member starts with a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406401">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure. The driver must copy the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406399">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> to the <b>D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</b> structure. </p>
+<p>Each structure that is returned based on the <b>QueryType</b> member starts with a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure. The driver must copy the members of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> to the <b>D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</b> structure. </p>
 
 <p>The driver must set the  <b>ReturnCode</b> member to the same return code that it will return for the <i>QueryAuthenticatedChannel(D3D11_1)</i> call. This provides the application with a secure mechanism of accessing the return code. 
 
 </p>
 
-<p>Based on the value of the <b>QueryType</b> member, the driver must initialize the corresponding structure that follows the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406401">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure in the <i>pOutputData</i> buffer.</p>
+<p>Based on the value of the <b>QueryType</b> member, the driver must initialize the corresponding structure that follows the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure in the <i>pOutputData</i> buffer.</p>
 
 <p>The driver must sign the <i>pOutputData</i> buffer in a way that is identical to the way it handles Output Protection Manager (OPM) queries.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406401">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure contains an AES-based one-key CBC message authentication code (OMAC) of the data. The display miniport driver must calculate an OMAC over the data in the output buffer to authenticate the data. The driver does this by first setting the <b>omac</b> member to zero and then calculating an OMAC for the data in the buffer. The driver then sets the <b>omac</b> member to the OMAC that it calculated.</p>
-
-<p>The display miniport driver must return  <b>E_INVALIDARG</b> for the <i>QueryAuthenticatedChannel(D3D11_1)</i> call under the following conditions:</p>
-
-<p>The sequence number is not greater than a sequence number that was specified in a previous configuration call.</p>
-
-<p>The sequence number has not yet been initialized by a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-configureauthenticatedchannel.md">ConfigureAuthenticatedChannel(D3D11_1)</a> function.
-
-</p>
-
-<p>The <i>OutputDataSize</i> parameter is less than size of the structure specified by the  <b>D3D11_1DDI_AUTHENTICATED_CONFIGURE_INPUT.QueryType</b> member.</p>
-
-<p>The <i>pInputData</i> parameter references a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406399">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure. This structure contains the driver's handle to the authenticated channel, a sequence number, and a GUID that indicates the type of query to perform.  The driver must return  <b>E_INVALIDARG</b> if the sequence number was not previously initialized by using the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-configureauthenticatedchannel.md">ConfigureAuthenticatedChannel(D3D11_1)</a> function.  The driver must  also return  <b>E_INVALIDARG</b> if the sequence number is not greater than the sequence number of the previous query call.
-
-</p>
-
-<p>The byte array that is referenced by the <i>pOutputData</i> parameter is in a format that is specified by the <b>QueryType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406399">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> structure. The following list describes the format of this data based on the <b>QueryType</b> member.</p>
-
-<p></p><dl>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION"></a><a id="d3d11_1ddi_authenticated_query_protection"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406419">D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE"></a><a id="d3d11_1ddi_authenticated_query_channel_type"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406386">D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE"></a><a id="d3d11_1ddi_authenticated_query_device_handle"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406396">D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION"></a><a id="d3d11_1ddi_authenticated_query_crypto_session"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406390">D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT"></a><a id="d3d11_1ddi_authenticated_query_restricted_shared_resource_process_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406423">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS"></a><a id="d3d11_1ddi_authenticated_query_restricted_shared_resource_process"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406429">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT"></a><a id="d3d11_1ddi_authenticated_query_unrestricted_protected_shared_resource_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406431">D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT"></a><a id="d3d11_1ddi_authenticated_query_output_id_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406409">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID"></a><a id="d3d11_1ddi_authenticated_query_output_id"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406415">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES"></a><a id="d3d11_1ddi_authenticated_query_accessibility_attributes"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406384">D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID_COUNT"></a><a id="d3d11_1ddi_authenticated_query_encryption_when_accessible_guid_count"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID_COUNT</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406378">D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_COUNT_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID"></a><a id="d3d11_1ddi_authenticated_query_encryption_when_accessible_guid"></a><b>D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406382">D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_OUTPUT</a>
-</p>
-</dd>
-<dt><a id="D3D11_1DDI_AUTHENTICATED_CURRENT_ENCRYPTION_WHEN_ACCESSIBLE"></a><a id="d3d11_1ddi_authenticated_current_encryption_when_accessible"></a><b>D3D11_1DDI_AUTHENTICATED_CURRENT_ENCRYPTION_WHEN_ACCESSIBLE</b></dt>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406393">D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ACCESSIBILITY_ENCRYPTION_OUTPUT</a>
-</p>
-</dd>
-</dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406419">D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406386">D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406396">D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406390">D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406423">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406429">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406431">D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406409">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406415">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406384">D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406378">D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_COUNT_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406382">D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ENCRYPTION_GUID_OUTPUT</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406393">D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ACCESSIBILITY_ENCRYPTION_OUTPUT</a>
-</p>
-
-<p>The driver prepares the output buffer that is referenced by the <i>pOutputData</i> parameter by following these steps:</p>
-
-<p>Each structure that is returned based on the <b>QueryType</b> member starts with a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406401">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure. The driver must copy the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406399">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a> to the <b>D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</b> structure. </p>
-
-<p>The driver must set the  <b>ReturnCode</b> member to the same return code that it will return for the <i>QueryAuthenticatedChannel(D3D11_1)</i> call. This provides the application with a secure mechanism of accessing the return code. 
-
-</p>
-
-<p>Based on the value of the <b>QueryType</b> member, the driver must initialize the corresponding structure that follows the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406401">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure in the <i>pOutputData</i> buffer.</p>
-
-<p>The driver must sign the <i>pOutputData</i> buffer in a way that is identical to the way it handles Output Protection Manager (OPM) queries.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406401">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure contains an AES-based one-key CBC message authentication code (OMAC) of the data. The display miniport driver must calculate an OMAC over the data in the output buffer to authenticate the data. The driver does this by first setting the <b>omac</b> member to zero and then calculating an OMAC for the data in the buffer. The driver then sets the <b>omac</b> member to the OMAC that it calculated.</p>
+<p>The <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure contains an AES-based one-key CBC message authentication code (OMAC) of the data. The display miniport driver must calculate an OMAC over the data in the output buffer to authenticate the data. The driver does this by first setting the <b>omac</b> member to zero and then calculating an OMAC for the data in the buffer. The driver then sets the <b>omac</b> member to the OMAC that it calculated.</p>
 
 <p>The display miniport driver must return  <b>E_INVALIDARG</b> for the <i>QueryAuthenticatedChannel(D3D11_1)</i> call under the following conditions:</p>
 
@@ -491,10 +253,10 @@ HRESULT APIENTRY* QueryAuthenticatedChannel(
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406399">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-input.md">D3D11_1DDI_AUTHENTICATED_QUERY_INPUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406401">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-authenticated-query-output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a>
 </dt>
 </dl>
 <p> </p>

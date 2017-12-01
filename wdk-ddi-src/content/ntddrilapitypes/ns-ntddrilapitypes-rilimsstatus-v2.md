@@ -7,7 +7,7 @@ old-location: netvista\rilimsstatus_v2.htm
 old-project: netvista
 ms.assetid: afc17375-a65d-495d-b68a-b74146cb8f69
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILIMSSTATUS_V2, RILIMSSTATUS_V2, *LPRILIMSSTATUS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices

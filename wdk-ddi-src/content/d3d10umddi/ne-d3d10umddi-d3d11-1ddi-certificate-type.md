@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Specifies the type of authenticated certificate that is used to establish trust and perform a key exchange. This type is used by callers of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451652">GetCertificate</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451654">GetCertificateSize</a> functions.</p>
+<p>Specifies the type of authenticated certificate that is used to establish trust and perform a key exchange. This type is used by callers of the <a href="display.getcertificate">GetCertificate</a> and <a href="display.getcertificatesize">GetCertificateSize</a> functions.</p>
 
 
 ## -syntax
@@ -104,10 +104,10 @@ typedef enum D3D11_1DDI_CERTIFICATE_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451652">GetCertificate</a>
+<a href="display.getcertificate">GetCertificate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451654">GetCertificateSize</a>
+<a href="display.getcertificatesize">GetCertificateSize</a>
 </dt>
 </dl>
 <p> </p>

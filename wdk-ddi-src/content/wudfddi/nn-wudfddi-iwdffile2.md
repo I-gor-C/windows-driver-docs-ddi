@@ -7,7 +7,7 @@ old-location: wdf\iwdffile2.htm
 old-project: wdf
 ms.assetid: 49a3defc-d86c-4d70-8c1c-a5abbadda013
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,11 +45,11 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFFile2</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a>. <b>IWDFFile2</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFFile2</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>. <b>IWDFFile2</b> also has these types of members:</p>
 
 <p>The <b>IWDFFile2</b> interface has these methods.</p>
 
-<p>The <a href="wdf.iwdffile2_getrelatedfileobject">GetRelatedFileObject</a> method retrieves the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a> interface of a <i>related file object</i>, which is a file object that has a technology-specific relationship with another file object.</p>
+<p>The <a href="wdf.iwdffile2_getrelatedfileobject">GetRelatedFileObject</a> method retrieves the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface of a <i>related file object</i>, which is a file object that has a technology-specific relationship with another file object.</p>
 
 <p>The <a href="wdf.iwdffile2_retrievecountedfilename">RetrieveCountedFileName</a> method retrieves the full counted file name for a file that is associated with a device. </p>
 
@@ -63,21 +63,21 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558917">IWDFFile2::GetRelatedFileObject</a>
+<a href="wdf.iwdffile2_getrelatedfileobject">IWDFFile2::GetRelatedFileObject</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="wdf.iwdffile2_getrelatedfileobject">GetRelatedFileObject</a> method retrieves the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a> interface of a <i>related file object</i>, which is a file object that has a technology-specific relationship with another file object.</p>
+<p>The <a href="wdf.iwdffile2_getrelatedfileobject">GetRelatedFileObject</a> method retrieves the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface of a <i>related file object</i>, which is a file object that has a technology-specific relationship with another file object.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558920">IWDFFile2::RetrieveCountedFileName</a>
+<a href="wdf.iwdffile2_retrievecountedfilename">IWDFFile2::RetrieveCountedFileName</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdffile2_retrievecountedfilename">RetrieveCountedFileName</a> method retrieves the full counted file name for a file that is associated with a device. </p>
 </td>
 </tr>
-</table><p>The <a href="wdf.iwdffile2_getrelatedfileobject">GetRelatedFileObject</a> method retrieves the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a> interface of a <i>related file object</i>, which is a file object that has a technology-specific relationship with another file object.</p>
+</table><p>The <a href="wdf.iwdffile2_getrelatedfileobject">GetRelatedFileObject</a> method retrieves the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface of a <i>related file object</i>, which is a file object that has a technology-specific relationship with another file object.</p>
 
 <p>The <a href="wdf.iwdffile2_retrievecountedfilename">RetrieveCountedFileName</a> method retrieves the full counted file name for a file that is associated with a device. </p>
 

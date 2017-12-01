@@ -7,7 +7,7 @@ old-location: netvista\rilhideidsettings_2.htm
 old-project: netvista
 ms.assetid: a633bc30-521f-4fdb-a4c0-4f72e619c28a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILHIDEIDSETTINGS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: kernel\rtllongptradd.htm
 old-project: kernel
 ms.assetid: D0036070-A23D-4525-AE80-E10B20330F97
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlLongPtrAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -70,13 +70,13 @@ typedef struct D3DDDIARG_PRESENTMULTIPLANEOVERLAY {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544639">D3DDDI_PRESENTFLAGS</a> structure that identifies, in bit-field flags, how to display.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-presentflags.md">D3DDDI_PRESENTFLAGS</a> structure that identifies, in bit-field flags, how to display.</p>
 </dd>
 
 ### -field <b>FlipInterval</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff544549">D3DDDI_FLIPINTERVAL_TYPE</a> that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). </p>
+<p>[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-flipinterval-type.md">D3DDDI_FLIPINTERVAL_TYPE</a> that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs). </p>
 </dd>
 
 ### -field <b>PresentPlaneCount</b>
@@ -88,7 +88,7 @@ typedef struct D3DDDIARG_PRESENTMULTIPLANEOVERLAY {
 ### -field <b>pPresentPlanes</b>
 
 <dd>
-<p>[in] A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh780245">D3DDDI_PRESENT_MULTIPLANE_OVERLAY</a> that  describes the overlay plane to display.</p>
+<p>[in] A pointer to a structure of type <a href="..\d3dumddi\ns-d3dumddi--d3dddi-present-multiplane-overlay.md">D3DDDI_PRESENT_MULTIPLANE_OVERLAY</a> that  describes the overlay plane to display.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -134,13 +134,13 @@ typedef struct D3DDDIARG_PRESENTMULTIPLANEOVERLAY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544549">D3DDDI_FLIPINTERVAL_TYPE</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-d3dddi-flipinterval-type.md">D3DDDI_FLIPINTERVAL_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780245">D3DDDI_PRESENT_MULTIPLANE_OVERLAY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-present-multiplane-overlay.md">D3DDDI_PRESENT_MULTIPLANE_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544639">D3DDDI_PRESENTFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-presentflags.md">D3DDDI_PRESENTFLAGS</a>
 </dt>
 </dl>
 <p> </p>

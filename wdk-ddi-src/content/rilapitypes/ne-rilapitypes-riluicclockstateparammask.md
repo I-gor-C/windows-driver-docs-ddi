@@ -7,7 +7,7 @@ old-location: netvista\riluicclockstateparammask_2.htm
 old-project: netvista
 ms.assetid: 88bdeb85-1ce8-43df-8cf1-4563d90a46ad
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

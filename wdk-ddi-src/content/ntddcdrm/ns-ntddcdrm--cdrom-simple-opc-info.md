@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>CDROM_SIMPLE_OPC_INFO</b> structure is the only input for the <a href="https://msdn.microsoft.com/library/windows/hardware/gg441243">IOCTL_CDROM_SEND_OPC_INFORMATION</a> I/O control code. </p>
+<p>The <b>CDROM_SIMPLE_OPC_INFO</b> structure is the only input for the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-send-opc-information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a> I/O control code. </p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ typedef struct _CDROM_SIMPLE_OPC_INFO {
 ### -field <b>RequestType</b>
 
 <dd>
-<p>The request type defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/gg441230">CDROM_OPC_INFO_TYPE</a> enumeration.</p>
+<p>The request type defined in the <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-opc-info-type.md">CDROM_OPC_INFO_TYPE</a> enumeration.</p>
 </dd>
 
 ### -field <b>Exclude0</b>
@@ -76,7 +76,7 @@ typedef struct _CDROM_SIMPLE_OPC_INFO {
 </dl>
 
 ## -remarks
-<p>The  <a href="https://msdn.microsoft.com/library/windows/hardware/gg441243">IOCTL_CDROM_SEND_OPC_INFORMATION</a> IOCTL is a wrapper for the SEND OPC INFORMATION command of the Multimedia Commands (MMC) specification. The <b>Exclude0</b> and <b>Exclude1</b> fields of the <b>CDROM_SIMPLE_OPC_INFO</b> structure map directly to the corresponding SEND OPC INFORMATION fields.</p>
+<p>The  <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-send-opc-information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a> IOCTL is a wrapper for the SEND OPC INFORMATION command of the Multimedia Commands (MMC) specification. The <b>Exclude0</b> and <b>Exclude1</b> fields of the <b>CDROM_SIMPLE_OPC_INFO</b> structure map directly to the corresponding SEND OPC INFORMATION fields.</p>
 
 ## -requirements
 <table>
@@ -95,13 +95,13 @@ typedef struct _CDROM_SIMPLE_OPC_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441243">IOCTL_CDROM_SEND_OPC_INFORMATION</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-send-opc-information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441230">CDROM_OPC_INFO_TYPE</a>
+<a href="..\ntddcdrm\ne-ntddcdrm--cdrom-opc-info-type.md">CDROM_OPC_INFO_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441237">CDROM_SIMPLE_OPC_INFO</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-simple-opc-info.md">CDROM_SIMPLE_OPC_INFO</a>
 </dt>
 </dl>
 <p> </p>

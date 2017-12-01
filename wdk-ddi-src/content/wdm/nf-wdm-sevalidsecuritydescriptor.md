@@ -7,7 +7,7 @@ old-location: kernel\sevalidsecuritydescriptor.htm
 old-project: kernel
 ms.assetid: 14657843-bd48-4cab-b913-c95aeb6a6083
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: SeValidSecurityDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ BOOLEAN SeValidSecurityDescriptor(
 ### -param <i>SecurityDescriptor</i> [in]
 
 <dd>
-<p>Pointer to the self-relative <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>, which must be buffered somewhere in system space.</p>
+<p>Pointer to the self-relative <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>, which must be buffered somewhere in system space.</p>
 </dd>
 </dl>
 
@@ -74,12 +74,6 @@ BOOLEAN SeValidSecurityDescriptor(
 <p><b>SeValidSecurityDescriptor</b> returns <b>TRUE</b> if the buffered security descriptor is structurally valid.</p>
 
 ## -remarks
-<p><b>SeValidSecurityDescriptor</b> does not enforce policy. It simply checks that the given security descriptor data is formatted correctly. In particular, it checks the revision information, self relativity, owner, alignment, and, if available, SID, group, DACL, ACL, and/or SACL do not overflow the given <i>Length</i>. Consequently, callers of <b>SeValidSecurityDescriptor</b> cannot assume that a returned <b>TRUE</b> implies that the given security descriptor necessarily has valid contents.</p>
-
-<p>If <b>SeValidSecurityDescriptor</b> returns <b>TRUE</b>, the given security descriptor can be passed on to another kernel-mode component because it is structurally valid. Otherwise, passing a structurally invalid security descriptor to be manipulated by another kernel-mode component can cause undefined results or even a system bug check.</p>
-
-<p>To validate a security descriptor that was passed in from user mode, call <b>RtlValidSecurityDescriptor</b> rather than <b>SeValidSecurityDescriptor</b>. </p>
-
 <p><b>SeValidSecurityDescriptor</b> does not enforce policy. It simply checks that the given security descriptor data is formatted correctly. In particular, it checks the revision information, self relativity, owner, alignment, and, if available, SID, group, DACL, ACL, and/or SACL do not overflow the given <i>Length</i>. Consequently, callers of <b>SeValidSecurityDescriptor</b> cannot assume that a returned <b>TRUE</b> implies that the given security descriptor necessarily has valid contents.</p>
 
 <p>If <b>SeValidSecurityDescriptor</b> returns <b>TRUE</b>, the given security descriptor can be passed on to another kernel-mode component because it is structurally valid. Otherwise, passing a structurally invalid security descriptor to be manipulated by another kernel-mode component can cause undefined results or even a system bug check.</p>
@@ -149,7 +143,7 @@ BOOLEAN SeValidSecurityDescriptor(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -157,12 +151,12 @@ BOOLEAN SeValidSecurityDescriptor(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563024">RtlValidSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SeValidSecurityDescriptor routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SeValidSecurityDescriptor routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

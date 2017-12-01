@@ -80,11 +80,7 @@ HRESULT RawWriteCommand(
 <p>If the operation succeeds, the method should return S_OK. Otherwise, it should return one of the STIERR-prefixed error codes defined in <i>stierr.h</i>.</p>
 
 ## -remarks
-<p>It is only necessary to call <b>IStiUSD::RawWriteCommand</b> if commands and data are written to a device by different methods. For other devices, <a href="https://msdn.microsoft.com/library/windows/hardware/ff543839">IStiUSD::RawWriteData</a> can be used for both commands and data. If the call is not implemented, it must return STIERR_UNSUPPORTED.</p>
-
-<p>Implementation of this method, along with the meaning of buffer contents, are vendor-defined.</p>
-
-<p>It is only necessary to call <b>IStiUSD::RawWriteCommand</b> if commands and data are written to a device by different methods. For other devices, <a href="https://msdn.microsoft.com/library/windows/hardware/ff543839">IStiUSD::RawWriteData</a> can be used for both commands and data. If the call is not implemented, it must return STIERR_UNSUPPORTED.</p>
+<p>It is only necessary to call <b>IStiUSD::RawWriteCommand</b> if commands and data are written to a device by different methods. For other devices, <a href="image.istiusd_rawwritedata">IStiUSD::RawWriteData</a> can be used for both commands and data. If the call is not implemented, it must return STIERR_UNSUPPORTED.</p>
 
 <p>Implementation of this method, along with the meaning of buffer contents, are vendor-defined.</p>
 
@@ -115,7 +111,7 @@ HRESULT RawWriteCommand(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543762">IStiDevice::RawWriteCommand</a>
+<a href="image.istidevice_rawwritecommand">IStiDevice::RawWriteCommand</a>
 </dt>
 </dl>
 <p> </p>

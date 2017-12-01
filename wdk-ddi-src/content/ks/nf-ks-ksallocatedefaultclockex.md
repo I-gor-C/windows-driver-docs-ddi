@@ -7,7 +7,7 @@ old-location: stream\ksallocatedefaultclockex.htm
 old-project: stream
 ms.assetid: cad04f59-5312-4241-9524-aeabc27df92d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsAllocateDefaultClockEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,19 +75,19 @@ NTSTATUS KsAllocateDefaultClockEx(
 ### -param <i>SetTimer</i> [in, optional]
 
 <dd>
-<p>Optionally contains a pointer to a driver-defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff567203">KStrSetTimer</a> function to use to generate DPC timer callbacks based on a Presentation Time. If this is set, the function will be used to set timers based on deltas to the current Presentation Time in order to generate event notifications. If you supply a <i>KStrSetTimer</i> function to set timers, you must also supply a corresponding <a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a> function. Pass <b>NULL</b> in this parameter if the default <a href="https://msdn.microsoft.com/library/windows/hardware/ff553292">KeSetTimerEx</a> function is to be used to approximate the next notification time. This parameter would normally be set only if a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567167">KStrCorrelatedTime</a> function was also being used. The <i>KStrSetTimer</i> function must have the same characteristics as <b>KeSetTimerEx</b>.</p>
+<p>Optionally contains a pointer to a driver-defined <a href="stream.kstrsettimer">KStrSetTimer</a> function to use to generate DPC timer callbacks based on a Presentation Time. If this is set, the function will be used to set timers based on deltas to the current Presentation Time in order to generate event notifications. If you supply a <i>KStrSetTimer</i> function to set timers, you must also supply a corresponding <a href="stream.kstrcanceltimer">KStrCancelTimer</a> function. Pass <b>NULL</b> in this parameter if the default <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a> function is to be used to approximate the next notification time. This parameter would normally be set only if a <a href="stream.kstrcorrelatedtime">KStrCorrelatedTime</a> function was also being used. The <i>KStrSetTimer</i> function must have the same characteristics as <b>KeSetTimerEx</b>.</p>
 </dd>
 
 ### -param <i>CancelTimer</i> [in, optional]
 
 <dd>
-<p>Optionally contains a pointer to a driver-defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a> function to use to cancel outstanding timer callbacks. If you supply a <i>KStrCancelTimer</i> function to cancel timers, you must also supply a corresponding <a href="https://msdn.microsoft.com/library/windows/hardware/ff567203">KStrSetTimer</a> function. Pass <b>NULL</b> in this parameter if the default <a href="https://msdn.microsoft.com/library/windows/hardware/ff551970">KeCancelTimer</a> function is to be used to cancel timers. The <i>KStrCancelTimer</i> function must have the same characteristics as <b>KeCancelTimer</b>.</p>
+<p>Optionally contains a pointer to a driver-defined <a href="stream.kstrcanceltimer">KStrCancelTimer</a> function to use to cancel outstanding timer callbacks. If you supply a <i>KStrCancelTimer</i> function to cancel timers, you must also supply a corresponding <a href="stream.kstrsettimer">KStrSetTimer</a> function. Pass <b>NULL</b> in this parameter if the default <a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a> function is to be used to cancel timers. The <i>KStrCancelTimer</i> function must have the same characteristics as <b>KeCancelTimer</b>.</p>
 </dd>
 
 ### -param <i>CorrelatedTime</i> [in, optional]
 
 <dd>
-<p>Optionally contains a pointer to a driver-defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff567167">KStrCorrelatedTime</a> function to retrieve both the Presentation and Physical Time in a correlated manner. This allows the clock owner to completely determine the current time. Pass <b>NULL</b> if the default <a href="https://msdn.microsoft.com/library/windows/hardware/ff553053">KeQueryPerformanceCounter</a> function is to be used to regulate time progression.</p>
+<p>Optionally contains a pointer to a driver-defined <a href="stream.kstrcorrelatedtime">KStrCorrelatedTime</a> function to retrieve both the Presentation and Physical Time in a correlated manner. This allows the clock owner to completely determine the current time. Pass <b>NULL</b> if the default <a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a> function is to be used to regulate time progression.</p>
 </dd>
 
 ### -param <i>Resolution</i> [in, optional]
@@ -107,9 +107,7 @@ NTSTATUS KsAllocateDefaultClockEx(
 <p>The <b>KsAllocateDefaultClockEx</b> function returns STATUS_SUCCESS if successful, or a memory error if unsuccessful.</p>
 
 ## -remarks
-<p>The internal DefaultClock.ReferenceCount element is initialized to one by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560952">KsAllocateDefaultClock</a> function. The element is incremented and decremented as each notification DPC is queued and completed. When the structure is to be freed, the element is used to determine if the owner of the clock should free the structure or if a pending DPC should free it asynchronously. </p>
-
-<p>The internal DefaultClock.ReferenceCount element is initialized to one by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560952">KsAllocateDefaultClock</a> function. The element is incremented and decremented as each notification DPC is queued and completed. When the structure is to be freed, the element is used to determine if the owner of the clock should free the structure or if a pending DPC should free it asynchronously. </p>
+<p>The internal DefaultClock.ReferenceCount element is initialized to one by the <a href="..\ks\nf-ks-ksallocatedefaultclock.md">KsAllocateDefaultClock</a> function. The element is incremented and decremented as each notification DPC is queued and completed. When the structure is to be freed, the element is used to determine if the owner of the clock should free the structure or if a pending DPC should free it asynchronously. </p>
 
 ## -requirements
 <table>
@@ -156,21 +154,21 @@ NTSTATUS KsAllocateDefaultClockEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562559">KsFreeDefaultClock</a>
+<a href="..\ks\nf-ks-ksfreedefaultclock.md">KsFreeDefaultClock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560952">KsAllocateDefaultClock</a>
+<a href="..\ks\nf-ks-ksallocatedefaultclock.md">KsAllocateDefaultClock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567203">KStrSetTimer</a>
+<a href="stream.kstrsettimer">KStrSetTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a>
+<a href="stream.kstrcanceltimer">KStrCancelTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567167">KStrCorrelatedTime</a>
+<a href="stream.kstrcorrelatedtime">KStrCorrelatedTime</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsAllocateDefaultClockEx function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsAllocateDefaultClockEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

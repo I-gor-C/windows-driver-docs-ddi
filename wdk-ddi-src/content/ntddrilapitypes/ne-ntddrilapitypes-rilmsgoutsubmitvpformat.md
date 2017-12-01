@@ -7,7 +7,7 @@ old-location: netvista\rilmsgoutsubmitvpformat.htm
 old-project: netvista
 ms.assetid: c0a2646c-aa0a-4946-999f-a78d1c488752
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

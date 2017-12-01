@@ -138,10 +138,10 @@ typedef enum D3D10_DDI_COMPARISON_FUNC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541944">D3D10_DDI_DEPTH_STENCIL_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-depth-stencil-desc.md">D3D10_DDI_DEPTH_STENCIL_DESC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541938">D3D10_DDI_DEPTH_STENCILOP_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-depth-stencilop-desc.md">D3D10_DDI_DEPTH_STENCILOP_DESC</a>
 </dt>
 </dl>
 <p> </p>

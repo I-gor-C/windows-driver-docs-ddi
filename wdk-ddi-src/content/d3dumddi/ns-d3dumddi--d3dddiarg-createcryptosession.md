@@ -59,7 +59,7 @@ typedef struct _D3DDDIARG_CREATECRYPTOSESSION {
 ### -field <b>CryptoType</b>
 
 <dd>
-<p>[in] A GUID that indicates the encryption type, which the driver uses for the encryption session that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function creates. The GUID can be one of the following:</p>
+<p>[in] A GUID that indicates the encryption type, which the driver uses for the encryption session that the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a> function creates. The GUID can be one of the following:</p>
 <p></p>
 <dl>
 
@@ -80,7 +80,7 @@ typedef struct _D3DDDIARG_CREATECRYPTOSESSION {
 ### -field <b>DecodeProfile</b>
 
 <dd>
-<p> [in] A GUID that indicates the DirectX Video Acceleration (DirectX VA) decode profile that the driver uses for the encryption session that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function creates. The driver uses this decode profile in conjunction with the encryption type that the <b>CryptoType</b> member specifies. </p>
+<p> [in] A GUID that indicates the DirectX Video Acceleration (DirectX VA) decode profile that the driver uses for the encryption session that the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a> function creates. The driver uses this decode profile in conjunction with the encryption type that the <b>CryptoType</b> member specifies. </p>
 </dd>
 
 ### -field <b>hCryptoSession</b>
@@ -118,7 +118,7 @@ typedef struct _D3DDDIARG_CREATECRYPTOSESSION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_rx_indication_level.htm
 old-project: netvista
 ms.assetid: 73ad8d04-c245-4a3c-92ff-4729737ede92
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices

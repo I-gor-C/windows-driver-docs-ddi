@@ -71,7 +71,7 @@ typedef struct D3D10_1_DDI_BLEND_DESC {
 ### -field <b>RenderTarget</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541990">D3D10_DDI_RENDER_TARGET_BLEND_DESC1</a> structures that indicate the blend state for each associated render target.</p>
+<p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-render-target-blend-desc1.md">D3D10_DDI_RENDER_TARGET_BLEND_DESC1</a> structures that indicate the blend state for each associated render target.</p>
 </dd>
 </dl>
 
@@ -109,13 +109,13 @@ typedef struct D3D10_1_DDI_BLEND_DESC {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10-1ddi-createblendstate.md">CreateBlendState(D3D10_1)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541916">D3D10_DDI_BLEND</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend.md">D3D10_DDI_BLEND</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541923">D3D10_DDI_BLEND_OP</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-blend-op.md">D3D10_DDI_BLEND_OP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541990">D3D10_DDI_RENDER_TARGET_BLEND_DESC1</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-render-target-blend-desc1.md">D3D10_DDI_RENDER_TARGET_BLEND_DESC1</a>
 </dt>
 </dl>
 <p> </p>

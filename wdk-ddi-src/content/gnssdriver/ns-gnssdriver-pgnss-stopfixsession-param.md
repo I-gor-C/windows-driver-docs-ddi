@@ -7,7 +7,7 @@ old-location: sensors\gnss_stopfixsession_param.htm
 old-project: sensors
 ms.assetid: 37D56DC0-C35B-4651-93E9-28AF76041D5D
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_STOPFIXSESSION_PARAM, GNSS_STOPFIXSESSION_PARAM, *PGNSS_STOPFIXSESSION_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices

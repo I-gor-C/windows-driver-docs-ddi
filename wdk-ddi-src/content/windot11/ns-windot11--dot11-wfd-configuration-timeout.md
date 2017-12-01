@@ -7,7 +7,7 @@ old-location: netvista\dot11_wfd_configuration_timeout.htm
 old-project: netvista
 ms.assetid: 5432EB69-933A-4080-919F-4131DC4044D0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_WFD_CONFIGURATION_TIMEOUT,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -62,7 +62,7 @@ HRESULT GetPDEVAdjustment(
 ### -param <i>pdevobj</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>Pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>dwAdjustType</i> 
@@ -79,7 +79,7 @@ HRESULT GetPDEVAdjustment(
 <p>PDEV_ADJUST_PAPER_MARGIN_TYPE</p>
 </td>
 <td>
-<p>Adjust the paper margin setting that is reported in the PDEV. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559791">PDEV_ADJUST_PAPER_MARGIN</a> structure.</p>
+<p>Adjust the paper margin setting that is reported in the PDEV. See the <a href="..\printoem\ns-printoem--pdev-adjust-paper-margin.md">PDEV_ADJUST_PAPER_MARGIN</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -87,7 +87,7 @@ HRESULT GetPDEVAdjustment(
 <p>PDEV_HOSTFONT_ENABLED_TYPE</p>
 </td>
 <td>
-<p>Enable or disable the Hostfont support feature. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559803">PDEV_HOSTFONT_ENABLED</a> structure.</p>
+<p>Enable or disable the Hostfont support feature. See the <a href="..\printoem\ns-printoem--pdev-hostfont-enabled.md">PDEV_HOSTFONT_ENABLED</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -95,7 +95,7 @@ HRESULT GetPDEVAdjustment(
 <p>PDEV_USE_TRUE_COLOR_TYPE</p>
 </td>
 <td>
-<p>Enable or disable color output for monochrome and color printers. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559806">PDEV_USE_TRUE_COLOR</a> structure.</p>
+<p>Enable or disable color output for monochrome and color printers. See the <a href="..\printoem\ns-printoem--pdev-use-true-color.md">PDEV_USE_TRUE_COLOR</a> structure.</p>
 </td>
 </tr>
 </table>
@@ -129,10 +129,6 @@ HRESULT GetPDEVAdjustment(
 
 <p>Currently, the Pscript5 driver calls <code>IPrintOemPS2::GetPDEVAdjustment</code> to adjust the paper margin setting, as reported in the PDEV, to enable or disable the Hostfont feature, or to turn PostScript color output on or off. </p>
 
-<p>This function is available in Windows XP and later.</p>
-
-<p>Currently, the Pscript5 driver calls <code>IPrintOemPS2::GetPDEVAdjustment</code> to adjust the paper margin setting, as reported in the PDEV, to enable or disable the Hostfont feature, or to turn PostScript color output on or off. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -160,13 +156,13 @@ HRESULT GetPDEVAdjustment(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559791">PDEV_ADJUST_PAPER_MARGIN</a>
+<a href="..\printoem\ns-printoem--pdev-adjust-paper-margin.md">PDEV_ADJUST_PAPER_MARGIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559803">PDEV_HOSTFONT_ENABLED</a>
+<a href="..\printoem\ns-printoem--pdev-hostfont-enabled.md">PDEV_HOSTFONT_ENABLED</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559806">PDEV_USE_TRUE_COLOR</a>
+<a href="..\printoem\ns-printoem--pdev-use-true-color.md">PDEV_USE_TRUE_COLOR</a>
 </dt>
 </dl>
 <p> </p>

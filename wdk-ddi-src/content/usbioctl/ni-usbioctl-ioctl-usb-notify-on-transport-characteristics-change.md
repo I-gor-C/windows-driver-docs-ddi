@@ -82,14 +82,6 @@ I/O Status block
 ## -remarks
 <p>This request is kept pending by the USB driver stack until a there is a change in the transport characteristics for which the caller registered. On completion of this request, the USB driver stack returns the information in the output buffer. </p>
 
-<p>This request is kept pending by the USB driver stack until a there is a change in the transport characteristics for which the caller registered. On completion of this request, the USB driver stack returns the information in the output buffer. </p>
-
-<p>This request is kept pending by the USB driver stack until a there is a change in the transport characteristics for which the caller registered. On completion of this request, the USB driver stack returns the information in the output buffer. </p>
-
-<p>This request is kept pending by the USB driver stack until a there is a change in the transport characteristics for which the caller registered. On completion of this request, the USB driver stack returns the information in the output buffer. </p>
-
-<p>This request is kept pending by the USB driver stack until a there is a change in the transport characteristics for which the caller registered. On completion of this request, the USB driver stack returns the information in the output buffer. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -134,13 +126,13 @@ I/O Status block
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548651">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548656">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548660">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 <dt><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-client-drivers-for-ma-usb">USB client drivers for Media-Agnostic (MA-USB)</a></dt>
 </dl>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetfactory.htm
 old-project: wdf
 ms.assetid: 00f89160-b880-4882-bf2e-28e9ed15f844
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFUsbTargetPipe2, ConfigureContinuousReader, IWDFUsbTargetPipe2::ConfigureContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560390">IWDFUsbTargetFactory::CreateUsbTargetDevice</a>
+<a href="wdf.iwdfusbtargetfactory_createusbtargetdevice">IWDFUsbTargetFactory::CreateUsbTargetDevice</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetfactory_createusbtargetdevice">CreateUsbTargetDevice</a> method creates a USB device object that is also an I/O target.</p>

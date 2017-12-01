@@ -101,10 +101,6 @@ BOOL WcsGetUsePerUserProfiles(
 
 <p>This function is executable in Least-Privileged User Account (LUA) context.</p>
 
-<p>This function will fail if the device pointed to by <i>pDeviceName</i> is not of the class specified by <i>dwDeviceClass</i>.</p>
-
-<p>This function is executable in Least-Privileged User Account (LUA) context.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -160,7 +156,7 @@ BOOL WcsGetUsePerUserProfiles(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563741">WcsSetUsePerUserProfiles</a>
+<a href="..\icm\nf-icm-wcssetuseperuserprofiles.md">WcsSetUsePerUserProfiles</a>
 </dt>
 </dl>
 <p> </p>

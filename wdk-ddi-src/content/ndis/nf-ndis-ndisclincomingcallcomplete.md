@@ -7,7 +7,7 @@ old-location: netvista\ndisclincomingcallcomplete.htm
 old-project: netvista
 ms.assetid: b3931dd7-319e-4ef8-9812-6dc3f2e41b2c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisClIncomingCallComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisClIncomingCallComplete
-   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisClIncomingCallComplete
-   (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClIncomingCallComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClIncomingCallComplete   (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -98,53 +94,13 @@ VOID NdisClIncomingCallComplete(
     <a href="..\ndis\nc-ndis-protocol-cl-incoming-call.md">ProtocolClIncomingCall</a> function
     returns NDIS_STATUS_PENDING for an offered call incoming on a particular SAP, previously registered by
     the client with 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561648">NdisClRegisterSap</a>, the client
+    <a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>, the client
     subsequently must call 
     <b>NdisClIncomingCallComplete</b> to indicate whether it is accepting or rejecting the offered call.</p>
 
 <p>Before it calls 
     <b>NdisClIncomingCallComplete</b>, such a client can negotiate with the call manager by calling 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561636">NdisClModifyCallQoS</a> one or more times
-    until both drivers reach an agreement on an acceptable quality of service for the incoming call or the
-    client determines it should reject the offered call because its attempts to modify the QoS reach some
-    client-determined limit without resulting in an agreement.</p>
-
-<p>If the client has changed the call parameters passed in to its 
-    <a href="https://msdn.microsoft.com/9143a8aa-56e0-40ad-aecb-19a10de64269">ProtocolClIncomingCall</a> function, it must set
-    the 
-    <b>Flags</b> member in the 
-    <b>CO_CALL_PARAMETERS</b> structure with
-    CALL_PARAMETERS_CHANGED when it passes these changes to 
-    <b>NdisClIncomingCallComplete</b>. Depending on whether the call manager accepts or rejects the client's
-    proposed changes to the call parameters, NDIS subsequently calls either the client's
-    <a href="..\ndis\nc-ndis-protocol-cl-call-connected.md">
-    ProtocolClCallConnected</a> function or its 
-    <a href="..\ndis\nc-ndis-protocol-cl-incoming-close-call.md">
-    ProtocolClIncomingCloseCall</a> function, respectively.</p>
-
-<p>A call to 
-    <b>NdisClIncomingCallComplete</b> causes NDIS to call the CM's 
-    <a href="..\ndis\nc-ndis-protocol-cm-incoming-call-complete.md">
-    ProtocolCmIncomingCallComplete</a> function. NDIS passes the client-supplied parameters of 
-    <b>NdisClIncomingCallComplete</b> as input parameters to 
-    <i>ProtocolCmIncomingCallComplete</i>.</p>
-
-<p>If a client rejects an offered call by setting 
-    <i>Status</i> to something other than NDIS_STATUS_SUCCESS, the client must consider the 
-    <i>CallParameters</i> pointer invalid as soon as its call to 
-    <b>NdisClIncomingCallComplete</b> occurs.</p>
-
-<p>If a client's 
-    <a href="..\ndis\nc-ndis-protocol-cl-incoming-call.md">ProtocolClIncomingCall</a> function
-    returns NDIS_STATUS_PENDING for an offered call incoming on a particular SAP, previously registered by
-    the client with 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561648">NdisClRegisterSap</a>, the client
-    subsequently must call 
-    <b>NdisClIncomingCallComplete</b> to indicate whether it is accepting or rejecting the offered call.</p>
-
-<p>Before it calls 
-    <b>NdisClIncomingCallComplete</b>, such a client can negotiate with the call manager by calling 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561636">NdisClModifyCallQoS</a> one or more times
+    <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a> one or more times
     until both drivers reach an agreement on an acceptable quality of service for the incoming call or the
     client determines it should reject the offered call because its attempts to modify the QoS reach some
     client-determined limit without resulting in an agreement.</p>
@@ -231,7 +187,7 @@ VOID NdisClIncomingCallComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547996">Irql_Protocol_Driver_Function</a>
+<a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -242,13 +198,13 @@ VOID NdisClIncomingCallComplete(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561636">NdisClModifyCallQoS</a>
+<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561648">NdisClRegisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561664">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cl-call-connected.md">ProtocolClCallConnected</a>
@@ -266,4 +222,4 @@ VOID NdisClIncomingCallComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClIncomingCallComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClIncomingCallComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

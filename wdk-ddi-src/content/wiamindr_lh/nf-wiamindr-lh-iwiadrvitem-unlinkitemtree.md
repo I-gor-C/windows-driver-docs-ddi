@@ -91,8 +91,6 @@ HRESULT UnlinkItemTree(
 ## -remarks
 <p>Minidrivers must call this method on the root item in the driver item tree when they want to invalidate the tree. This is typically done when the driver is being unloaded or when the minidriver needs to rebuild the driver item tree.</p>
 
-<p>Minidrivers must call this method on the root item in the driver item tree when they want to invalidate the tree. This is typically done when the driver is being unloaded or when the minidriver needs to rebuild the driver item tree.</p>
-
 ## -requirements
 <table>
 <tr>

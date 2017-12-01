@@ -81,7 +81,7 @@ NTSTATUS APIENTRY pfnAssignMultisamplingMethodSet(
 ### -param <i>pSupportedMethodSet</i> [in]
 
 <dd>
-<p>[in] A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544594">D3DDDI_MULTISAMPLINGMETHOD</a> structures, each of which describes a multisampling method.</p>
+<p>[in] A pointer to an array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-multisamplingmethod.md">D3DDDI_MULTISAMPLINGMETHOD</a> structures, each of which describes a multisampling method.</p>
 </dd>
 </dl>
 

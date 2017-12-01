@@ -7,7 +7,7 @@ old-location: netvista\ndismqueuedpcex.htm
 old-project: netvista
 ms.assetid: 22074e51-9032-4ef9-94b9-217daefcab03
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMQueueDpcEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -120,20 +120,7 @@ KAFFINITY NdisMQueueDpcEx(
     MiniportMessageInterruptDPC</a> function to complete the deferred processing of an interrupt.</p>
 
 <p><b>NdisMQueueDpcEx</b> is the same as the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563637">NdisMQueueDpc</a> function except that the 
-    <i>TargetProcessors</i> parameter has a type of KGROUP_AFFINITY. Therefore, 
-    <b>NdisMQueueDpcEx</b> can schedule DPCs on processors in any processor group. To schedule DPCs in more
-    than one processor group, you can use multiple calls to 
-    <b>NdisMQueueDpcEx</b>.</p>
-
-<p>NDIS 6.20 and later miniport drivers call 
-    <b>NdisMQueueDpcEx</b> to request DPC calls for other processors. NDIS calls the 
-    <a href="..\ndis\nc-ndis-miniport-interrupt-dpc.md">MiniportInterruptDPC</a> or 
-    <a href="..\ndis\nc-ndis-miniport-message-interrupt-dpc.md">
-    MiniportMessageInterruptDPC</a> function to complete the deferred processing of an interrupt.</p>
-
-<p><b>NdisMQueueDpcEx</b> is the same as the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563637">NdisMQueueDpc</a> function except that the 
+    <a href="..\ndis\nf-ndis-ndismqueuedpc.md">NdisMQueueDpc</a> function except that the 
     <i>TargetProcessors</i> parameter has a type of KGROUP_AFFINITY. Therefore, 
     <b>NdisMQueueDpcEx</b> can schedule DPCs on processors in any processor group. To schedule DPCs in more
     than one processor group, you can use multiple calls to 
@@ -204,12 +191,12 @@ KAFFINITY NdisMQueueDpcEx(
 <a href="..\ndis\nc-ndis-miniport-message-interrupt-dpc.md">MiniportMessageInterruptDPC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563637">NdisMQueueDpc</a>
+<a href="..\ndis\nf-ndis-ndismqueuedpc.md">NdisMQueueDpc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563649">NdisMRegisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMQueueDpcEx function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMQueueDpcEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

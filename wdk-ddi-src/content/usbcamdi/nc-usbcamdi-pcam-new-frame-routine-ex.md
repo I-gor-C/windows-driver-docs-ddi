@@ -7,7 +7,7 @@ old-location: stream\camnewvideoframeex.htm
 old-project: stream
 ms.assetid: 739e434e-9621-4927-bf1d-2e7c3b2828d7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: USBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR, *PUSBC_FUNCTION_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,12 +90,6 @@ VOID CamNewVideoFrameEx(
 <p><b>CamNewVideoFrameEx</b> does not return a value.</p>
 
 ## -remarks
-<p>USBCAMD calls the camera minidriver's <b>CamNewVideoFrameEx</b> callback function at IRQL = DISPATCH_LEVEL.</p>
-
-<p>The original USBCAMD does not call <b>CamNewVideoFrameEx</b>.</p>
-
-<p>This function is optional.</p>
-
 <p>USBCAMD calls the camera minidriver's <b>CamNewVideoFrameEx</b> callback function at IRQL = DISPATCH_LEVEL.</p>
 
 <p>The original USBCAMD does not call <b>CamNewVideoFrameEx</b>.</p>

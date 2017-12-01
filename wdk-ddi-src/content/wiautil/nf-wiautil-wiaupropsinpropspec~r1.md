@@ -87,9 +87,7 @@ BOOL _stdcall wiauPropsInPropSpec(
 <p>This function returns <b>TRUE</b> as soon as it finds one of the property specification IDs given in the <i>pProps</i> array in the <i>pPropSpecs</i> array. If the function is unable to find any of the listed property specification IDs in that array, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>The <b>wiauPropsInPropSpec</b> function finds one or more property specification IDs within an array of property specification IDs. A related function, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550171">wiauPropInPropSpec</a>, can be used to find a single property specification ID within such an array.</p>
-
-<p>The <b>wiauPropsInPropSpec</b> function finds one or more property specification IDs within an array of property specification IDs. A related function, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550171">wiauPropInPropSpec</a>, can be used to find a single property specification ID within such an array.</p>
+<p>The <b>wiauPropsInPropSpec</b> function finds one or more property specification IDs within an array of property specification IDs. A related function, <a href="..\wiautil\nf-wiautil-wiaupropinpropspec.md">wiauPropInPropSpec</a>, can be used to find a single property specification ID within such an array.</p>
 
 ## -requirements
 <table>
@@ -126,7 +124,7 @@ BOOL _stdcall wiauPropsInPropSpec(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550171">wiauPropInPropSpec</a>
+<a href="..\wiautil\nf-wiautil-wiaupropinpropspec.md">wiauPropInPropSpec</a>
 </dt>
 </dl>
 <p> </p>

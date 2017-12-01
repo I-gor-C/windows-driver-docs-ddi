@@ -7,7 +7,7 @@ old-location: stream\lamp_mode.htm
 old-project: stream
 ms.assetid: B379B6EF-C3AD-4E6F-B32D-F85228DB6A72
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: OPTIMAL_WEIGHT_TOTALS, OPTIMAL_WEIGHT_TOTALS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,11 +69,7 @@ typedef enum _LAMP_MODE {
 </dl>
 
 ## -remarks
-<p>This is the I/O parameter type of <a href="https://msdn.microsoft.com/library/windows/hardware/dn925071">IOCTL_LAMP_GET_MODE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn925081">IOCTL_LAMP_SET_MODE</a>.</p>
-
-<p>This is the I/O parameter type of <a href="https://msdn.microsoft.com/library/windows/hardware/dn925071">IOCTL_LAMP_GET_MODE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn925081">IOCTL_LAMP_SET_MODE</a>.</p>
-
-<p>This is the I/O parameter type of <a href="https://msdn.microsoft.com/library/windows/hardware/dn925071">IOCTL_LAMP_GET_MODE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn925081">IOCTL_LAMP_SET_MODE</a>.</p>
+<p>This is the I/O parameter type of <a href="..\lamp\ni-lamp-ioctl-lamp-get-mode.md">IOCTL_LAMP_GET_MODE</a> and <a href="..\lamp\ni-lamp-ioctl-lamp-set-mode.md">IOCTL_LAMP_SET_MODE</a>.</p>
 
 ## -requirements
 <table>

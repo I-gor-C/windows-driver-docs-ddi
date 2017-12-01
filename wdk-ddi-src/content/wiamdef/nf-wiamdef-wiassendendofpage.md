@@ -72,7 +72,7 @@ HRESULT _stdcall wiasSendEndOfPage(
 ### -param <i>pmdtc</i> [in, out]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a> structure.</p>
+<p>Pointer to a <a href="..\wiamindr_lh\ns-wiamindr-lh--minidrv-transfer-context.md">MINIDRV_TRANSFER_CONTEXT</a> structure.</p>
 </dd>
 </dl>
 
@@ -137,7 +137,7 @@ HRESULT _stdcall wiasSendEndOfPage(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--minidrv-transfer-context.md">MINIDRV_TRANSFER_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>

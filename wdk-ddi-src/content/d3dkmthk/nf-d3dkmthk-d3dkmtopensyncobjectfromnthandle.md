@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenSyncObjectFromNtHandle(
 ### -param <i>pObject</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh780268">D3DKMT_OPENSYNCOBJECTFROMNTHANDLE</a> structure that describes information that is required to perform the mapping.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-opensyncobjectfromnthandle.md">D3DKMT_OPENSYNCOBJECTFROMNTHANDLE</a> structure that describes information that is required to perform the mapping.</p>
 </dd>
 </dl>
 
@@ -139,7 +139,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenSyncObjectFromNtHandle(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780268">D3DKMT_OPENSYNCOBJECTFROMNTHANDLE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-opensyncobjectfromnthandle.md">D3DKMT_OPENSYNCOBJECTFROMNTHANDLE</a>
 </dt>
 </dl>
 <p> </p>

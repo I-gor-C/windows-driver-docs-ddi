@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FltFastIoMdlReadComplete</b> routine completes the read operation that the <a href="https://msdn.microsoft.com/library/windows/hardware/hh706188">FltFastIoMdlRead</a> routine initiated.</p>
+<p>The <b>FltFastIoMdlReadComplete</b> routine completes the read operation that the <a href="..\fltkernel\nf-fltkernel-fltfastiomdlread.md">FltFastIoMdlRead</a> routine initiated.</p>
 
 
 ## -syntax
@@ -79,9 +79,7 @@ BOOLEAN FsRtlMdlReadCompleteDev(
 <p>None</p>
 
 ## -remarks
-<p>The <b>FltFastIoMdlReadComplete</b> routine unlocks the pages in cache memory that the <a href="https://msdn.microsoft.com/library/windows/hardware/hh706188">FltFastIoMdlRead</a> routine allocated.</p>
-
-<p>The <b>FltFastIoMdlReadComplete</b> routine unlocks the pages in cache memory that the <a href="https://msdn.microsoft.com/library/windows/hardware/hh706188">FltFastIoMdlRead</a> routine allocated.</p>
+<p>The <b>FltFastIoMdlReadComplete</b> routine unlocks the pages in cache memory that the <a href="..\fltkernel\nf-fltkernel-fltfastiomdlread.md">FltFastIoMdlRead</a> routine allocated.</p>
 
 ## -requirements
 <table>
@@ -138,7 +136,7 @@ BOOLEAN FsRtlMdlReadCompleteDev(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh706188">FltFastIoMdlRead</a>
+<a href="..\fltkernel\nf-fltkernel-fltfastiomdlread.md">FltFastIoMdlRead</a>
 </dt>
 </dl>
 <p> </p>

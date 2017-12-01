@@ -7,7 +7,7 @@ old-location: debugger\getsetsympath.htm
 old-project: debugger
 ms.assetid: 2c7392c2-49c8-4b27-addc-0200eabbe87e
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: GetSetSympath
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,10 +80,6 @@ __inline VOID GetSetSympath(
 <p>None</p>
 
 ## -remarks
-<p>When the symbol path is changed, a call to <b>ReloadSymbols</b> is made implicitly.</p>
-
-<p>When the symbol path is changed, a call to <b>ReloadSymbols</b> is made implicitly.</p>
-
 <p>When the symbol path is changed, a call to <b>ReloadSymbols</b> is made implicitly.</p>
 
 ## -requirements

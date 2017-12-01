@@ -59,7 +59,7 @@ typedef struct _USB_HUB_INFORMATION {
 ### -field <b>HubDescriptor</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff539331">USB_HUB_DESCRIPTOR</a> structure that contains selected information from the hub descriptor.</p>
+<p>A <a href="..\usbspec\ns-usbspec--usb-hub-descriptor.md">USB_HUB_DESCRIPTOR</a> structure that contains selected information from the hub descriptor.</p>
 </dd>
 
 ### -field <b>HubIsBusPowered</b>
@@ -89,13 +89,13 @@ typedef struct _USB_HUB_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539331">USB_HUB_DESCRIPTOR</a>
+<a href="..\usbspec\ns-usbspec--usb-hub-descriptor.md">USB_HUB_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540110">USB_NODE_INFORMATION</a>
+<a href="..\usbioctl\ns-usbioctl--usb-node-information.md">USB_NODE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

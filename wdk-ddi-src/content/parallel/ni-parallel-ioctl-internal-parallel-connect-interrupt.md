@@ -46,7 +46,7 @@ req.iface:
 ## -ioctlparameters
 
 ### -input-buffer
-<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544295">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a> structure that the client allocates to input interrupt service information. The system-supplied function driver for parallel ports uses the same memory buffer, but casts it to a different data type to output information.</p>
+<p>The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\parallel\ns-parallel--parallel-interrupt-service-routine.md">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a> structure that the client allocates to input interrupt service information. The system-supplied function driver for parallel ports uses the same memory buffer, but casts it to a different data type to output information.</p>
 
 ### -input-buffer-length
 <p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to the size, in bytes, of a PARALLEL_INTERRUPT_SERVICE_ROUTINE structure.</p>
@@ -61,13 +61,13 @@ req.iface:
 <p>The <b>AssociatedIrp.SystemBuffer</b> member points to a PARALLEL_INTERRUPT_INFORMATION structure that the parallel port function driver uses to output parallel interrupt information. </p>
 
 ### -output-buffer-length
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure.</p>
 
-<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure.</p>
 
 ### -in-out-buffer
 
@@ -79,7 +79,7 @@ req.iface:
 
 ### -status-block
 I/O Status block
-<p>If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. </p>
+<p>If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. </p>
 
 <p>The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports or to one of the following values:</p>
 
@@ -91,7 +91,7 @@ I/O Status block
 
 <p>The value of the <b>Parameters.DeviceIoControl.OuputBufferLength</b> member is less than the size, in bytes, of a PARALLEL_INTERRUPT_INFORMATION structure. </p>
 
-<p>If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. </p>
+<p>If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. </p>
 
 <p>The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports or to one of the following values:</p>
 
@@ -103,7 +103,7 @@ I/O Status block
 
 <p>The value of the <b>Parameters.DeviceIoControl.OuputBufferLength</b> member is less than the size, in bytes, of a PARALLEL_INTERRUPT_INFORMATION structure. </p>
 
-<p>If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. </p>
+<p>If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. </p>
 
 <p>The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports or to one of the following values:</p>
 
@@ -115,7 +115,7 @@ I/O Status block
 
 <p>The value of the <b>Parameters.DeviceIoControl.OuputBufferLength</b> member is less than the size, in bytes, of a PARALLEL_INTERRUPT_INFORMATION structure. </p>
 
-<p>If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. </p>
+<p>If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. </p>
 
 <p>The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports or to one of the following values:</p>
 
@@ -127,7 +127,7 @@ I/O Status block
 
 <p>The value of the <b>Parameters.DeviceIoControl.OuputBufferLength</b> member is less than the size, in bytes, of a PARALLEL_INTERRUPT_INFORMATION structure. </p>
 
-<p>If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. </p>
+<p>If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. </p>
 
 <p>The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports or to one of the following values:</p>
 
@@ -159,13 +159,13 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544021">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-disconnect-interrupt.md">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544290">PARALLEL_INTERRUPT_INFORMATION</a>
+<a href="..\parallel\ns-parallel--parallel-interrupt-information.md">PARALLEL_INTERRUPT_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544295">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a>
+<a href="..\parallel\ns-parallel--parallel-interrupt-service-routine.md">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a>
 </dt>
 </dl>
 <p> </p>

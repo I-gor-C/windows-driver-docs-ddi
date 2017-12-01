@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice_createwdffile.htm
 old-project: wdf
 ms.assetid: b356e3ac-451d-4a10-94e2-d03fcf76cb29
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFDevice, CreateWdfFile, IWDFDevice::CreateWdfFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ HRESULT CreateWdfFile(
 ### -param <i>ppFile</i> [out]
 
 <dd>
-<p>A pointer to a buffer that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558895">IWDFDriverCreatedFile</a> interface for the driver-created file object.</p>
+<p>A pointer to a buffer that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdrivercreatedfile.md">IWDFDriverCreatedFile</a> interface for the driver-created file object.</p>
 </dd>
 </dl>
 
@@ -74,10 +74,6 @@ HRESULT CreateWdfFile(
 <p><b>CreateWdfFile</b> returns S_OK if the operation succeeds. Otherwise, this method returns one of the error codes that are defined in Winerror.h.</p>
 
 ## -remarks
-<p>For information about when a UMDF driver uses <b>CreateWdfFile</b> to handle I/O, see <a href="wdf.creating_a_file_object_to_handle_i_o">Creating a File Object to Handle I/O</a>.</p>
-
-<p>For information about when a UMDF driver might use <b>CreateWdfFile</b> to prevent an imbalance of create and close notifications to a driver, see <a href="wdf.preventing_an_imbalance_of_create_and_close_notifications_to_a_driver">Preventing an Imbalance of Create and Close Notifications to a Driver</a>. </p>
-
 <p>For information about when a UMDF driver uses <b>CreateWdfFile</b> to handle I/O, see <a href="wdf.creating_a_file_object_to_handle_i_o">Creating a File Object to Handle I/O</a>.</p>
 
 <p>For information about when a UMDF driver might use <b>CreateWdfFile</b> to prevent an imbalance of create and close notifications to a driver, see <a href="wdf.preventing_an_imbalance_of_create_and_close_notifications_to_a_driver">Preventing an Imbalance of Create and Close Notifications to a Driver</a>. </p>
@@ -135,12 +131,12 @@ HRESULT CreateWdfFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556917">IWDFDevice</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558895">IWDFDriverCreatedFile</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdrivercreatedfile.md">IWDFDriverCreatedFile</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice::CreateWdfFile method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice::CreateWdfFile method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

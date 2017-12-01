@@ -7,7 +7,7 @@ old-location: netvista\ril_getdriverversion.htm
 old-project: netvista
 ms.assetid: 7cf55a17-fbb9-4edc-ae12-23dce450a628
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetDriverVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The  structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a> WMI method to report the attributes for a specified remote fibre channel port.</p>
+<p>The  structure is used by the <a href="storage.getdiscoveredportattributes">GetDiscoveredPortAttributes</a> WMI method to report the attributes for a specified remote fibre channel port.</p>
 
 
 ## -syntax
@@ -386,7 +386,7 @@ typedef struct _MSFC_HBAPortAttributesResults {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
+<a href="storage.getdiscoveredportattributes">GetDiscoveredPortAttributes</a>
 </dt>
 </dl>
 <p> </p>

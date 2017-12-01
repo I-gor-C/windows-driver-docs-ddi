@@ -59,13 +59,13 @@ FORCEINLINE NTSTATUS UdecxWdfDeviceAddUsbDeviceEmulation(
 ### -param <i>Device</i> [in]
 
 <dd>
-<p>A handle to the framework device object that the client driver retrieved in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.</p>
+<p>A handle to the framework device object that the client driver retrieved in the previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.</p>
 </dd>
 
 ### -param <i>Config</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628008">UDECX_WDF_DEVICE_CONFIG</a> structure that the client driver initialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt628010">UDECX_WDF_DEVICE_CONFIG_INIT</a>.</p>
+<p> A pointer to a <a href="buses.udecx_wdf_device_config">UDECX_WDF_DEVICE_CONFIG</a> structure that the client driver initialized by calling <a href="buses.udecx_wdf_device_config_init">UDECX_WDF_DEVICE_CONFIG_INIT</a>.</p>
 </dd>
 </dl>
 
@@ -73,15 +73,9 @@ FORCEINLINE NTSTATUS UdecxWdfDeviceAddUsbDeviceEmulation(
 <p>The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code. </p>
 
 ## -remarks
-<p>The UDE client driver for the emulated host controller and the USB device must call this method after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> call. </p>
+<p>The UDE client driver for the emulated host controller and the USB device must call this method after the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. </p>
 
-<p>During this call, the client driver-supplied event callback implementations are also registered. Supply function  pointers to those functions by call setting appropriate members of <a href="https://msdn.microsoft.com/library/windows/hardware/mt628008">UDECX_WDF_DEVICE_CONFIG</a>. </p>
-
-<p>The method makes the framework device object capable of performing operations related to a controller and its root hub, such as handling various queues required to process IOCTL requests sent to the attached USB device. </p>
-
-<p>The UDE client driver for the emulated host controller and the USB device must call this method after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> call. </p>
-
-<p>During this call, the client driver-supplied event callback implementations are also registered. Supply function  pointers to those functions by call setting appropriate members of <a href="https://msdn.microsoft.com/library/windows/hardware/mt628008">UDECX_WDF_DEVICE_CONFIG</a>. </p>
+<p>During this call, the client driver-supplied event callback implementations are also registered. Supply function  pointers to those functions by call setting appropriate members of <a href="buses.udecx_wdf_device_config">UDECX_WDF_DEVICE_CONFIG</a>. </p>
 
 <p>The method makes the framework device object capable of performing operations related to a controller and its root hub, such as handling various queues required to process IOCTL requests sent to the attached USB device. </p>
 
@@ -144,10 +138,10 @@ FORCEINLINE NTSTATUS UdecxWdfDeviceAddUsbDeviceEmulation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: debugger\getfieldname.htm
 old-project: debugger
 ms.assetid: 3fb9abdd-f2c0-41b4-8df9-2f7f5065f90c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols3, GetFieldName, IDebugSymbols3::GetFieldName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -106,8 +106,6 @@ HRESULT GetFieldName(
 <p> </p>
 
 ## -remarks
-<p>For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
-
 <p>For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
 
 ## -requirements

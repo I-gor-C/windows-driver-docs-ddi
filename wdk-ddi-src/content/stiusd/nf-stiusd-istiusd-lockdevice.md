@@ -63,12 +63,6 @@ STDMETHODIMP LockDevice();
 ## -remarks
 <p>If you are writing a driver for a device connected to a serial port, you might want to call <a href="fs.createfile">CreateFile</a> from within the driver's <b>IStiUSD::LockDevice</b> method if the device was opened in status mode. This will prohibit other applications from using the port (which might be supporting other devices) while status information is being obtained. For more information, see <a href="NULL">Transfer Modes</a>.</p>
 
-<p>If you are writing a driver for a device connected to a serial port, you might want to call <a href="fs.createfile">CreateFile</a> from within the driver's <b>IStiUSD::LockDevice</b> method if the device was opened in status mode. This will prohibit other applications from using the port (which might be supporting other devices) while status information is being obtained. For more information, see <a href="NULL">Transfer Modes</a>.</p>
-
-<p>If you are writing a driver for a device connected to a serial port, you might want to call <a href="fs.createfile">CreateFile</a> from within the driver's <b>IStiUSD::LockDevice</b> method if the device was opened in status mode. This will prohibit other applications from using the port (which might be supporting other devices) while status information is being obtained. For more information, see <a href="NULL">Transfer Modes</a>.</p>
-
-<p>If you are writing a driver for a device connected to a serial port, you might want to call <a href="fs.createfile">CreateFile</a> from within the driver's <b>IStiUSD::LockDevice</b> method if the device was opened in status mode. This will prohibit other applications from using the port (which might be supporting other devices) while status information is being obtained. For more information, see <a href="NULL">Transfer Modes</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -96,7 +90,7 @@ STDMETHODIMP LockDevice();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543756">IStiDevice::LockDevice</a>
+<a href="image.istidevice_lockdevice">IStiDevice::LockDevice</a>
 </dt>
 </dl>
 <p> </p>

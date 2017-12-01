@@ -7,7 +7,7 @@ old-location: netvista\ndis_offload.htm
 old-project: netvista
 ms.assetid: 9d1447f1-aae8-4c27-a27b-e521c0c8ca97
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_OFFLOAD,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,12 +70,12 @@ typedef struct _NDIS_OFFLOAD {
 
 <dd>
 <p>The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_OFFLOAD</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_OFFLOAD.
      </p>
-<p>Set the <b>Revision</b> and <b>Size</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure as follows:<ul>
+<p>Set the <b>Revision</b> and <b>Size</b> members of the <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure as follows:<ul>
 <li>For NDIS 6.30 and later drivers:<ul>
 <li>Set <b>Revision</b> to NDIS_OFFLOAD_REVISION_3 (NDIS 6.30).</li>
 <li>Set <b>Size</b> to NDIS_SIZEOF_NDIS_OFFLOAD_REVISION_3.</li>
@@ -172,21 +172,21 @@ typedef struct _NDIS_OFFLOAD {
 
 <dd>
 <p>Internet protocol security (IPsec) offload version 2 information in an 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff565808">NDIS_IPSEC_OFFLOAD_V2</a> structure.</p>
+      <a href="..\ntddndis\ns-ntddndis--ndis-ipsec-offload-v2.md">NDIS_IPSEC_OFFLOAD_V2</a> structure.</p>
 </dd>
 
 ### -field <b>Rsc</b>
 
 <dd>
 <p>
-<a href="NULL">Receive Segment Coalescing (RSC)</a> offload information in    an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439827">NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD</a> structure.</p>
+<a href="NULL">Receive Segment Coalescing (RSC)</a> offload information in    an <a href="..\ntddndis\ns-ntddndis--ndis-tcp-recv-seg-coalesce-offload.md">NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD</a> structure.</p>
 </dd>
 
 ### -field <b>EncapsulatedPacketTaskOffloadGre</b>
 
 <dd>
 <p>
-<a href="NULL">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a> information in an <a href="https://msdn.microsoft.com/library/windows/hardware/jj991956">NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD</a> structure. This member should only be set by miniport drivers that support task offloads for NVGRE-formatted packets.<div class="alert"><b>Note</b>  This member is available only in NDIS 6.30 and later. </div>
+<a href="NULL">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a> information in an <a href="..\ntddndis\ns-ntddndis--ndis-encapsulated-packet-task-offload.md">NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD</a> structure. This member should only be set by miniport drivers that support task offloads for NVGRE-formatted packets.<div class="alert"><b>Note</b>  This member is available only in NDIS 6.30 and later. </div>
 <div> </div>
 </p>
 </dd>
@@ -194,10 +194,10 @@ typedef struct _NDIS_OFFLOAD {
 
 ## -remarks
 <p>The <b>NDIS_OFFLOAD</b> structure is used in the following places:<ul>
-<li>The <b>DefaultOffloadConfiguration</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565930">NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a> structure</li>
-<li>The <b>DefaultOffloadConfiguration</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a> structure</li>
-<li>The <b>DefaultOffloadConfiguration</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565481">NDIS_FILTER_ATTACH_PARAMETERS</a> structure</li>
-<li>The <b>InformationBuffer</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure (which is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569805">OID_TCP_OFFLOAD_CURRENT_CONFIG</a> OID request)</li>
+<li>The <b>DefaultOffloadConfiguration</b> member of the <a href="..\ndis\ns-ndis--ndis-miniport-adapter-offload-attributes.md">NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a> structure</li>
+<li>The <b>DefaultOffloadConfiguration</b> member of the <a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a> structure</li>
+<li>The <b>DefaultOffloadConfiguration</b> member of the <a href="..\ndis\ns-ndis--ndis-filter-attach-parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a> structure</li>
+<li>The <b>InformationBuffer</b> member of the <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure (which is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569805">OID_TCP_OFFLOAD_CURRENT_CONFIG</a> OID request)</li>
 <li>The <b>StatusBuffer</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567424">NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a> status indication</li>
 </ul>
 </p>
@@ -243,36 +243,36 @@ typedef struct _NDIS_OFFLOAD {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565481">NDIS_FILTER_ATTACH_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-filter-attach-parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565796">NDIS_IPSEC_OFFLOAD_V1</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-ipsec-offload-v1.md">NDIS_IPSEC_OFFLOAD_V1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565808">NDIS_IPSEC_OFFLOAD_V2</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-ipsec-offload-v2.md">NDIS_IPSEC_OFFLOAD_V2</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-miniport-adapter-offload-attributes.md">
    NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567373">NDIS_STATUS_INDICATION</a>
+<a href="..\ndis\ns-ndis--ndis-status-indication.md">NDIS_STATUS_INDICATION</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_task_offload_current_config">
    NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567878">NDIS_TCP_IP_CHECKSUM_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-tcp-ip-checksum-offload.md">NDIS_TCP_IP_CHECKSUM_OFFLOAD</a>
 </dt>
 <dt>
 <a href="..\ntddndis\ns-ntddndis--ndis-tcp-large-send-offload-v1.md">
@@ -303,4 +303,4 @@ typedef struct _NDIS_OFFLOAD {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

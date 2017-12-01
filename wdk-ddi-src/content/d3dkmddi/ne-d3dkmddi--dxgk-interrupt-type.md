@@ -73,7 +73,7 @@ typedef enum _DXGK_INTERRUPT_TYPE {
 ### -field <a id="DXGK_INTERRUPT_DMA_COMPLETED"></a><a id="dxgk_interrupt_dma_completed"></a><b>DXGK_INTERRUPT_DMA_COMPLETED</b>
 
 <dd>
-<p>A direct memory access (DMA) buffer is completed by using a fence identifier. The driver must supply the DMA buffer fence identifier in the <b>SubmissionFenceId</b> member of the <b>DmaCompleted</b> structure in the union that is contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557538">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-interrupt.md">DxgkCbNotifyInterrupt</a> function. This DMA buffer fence identifier was assigned during a call to the driver's <a href="display.dxgkddisubmitcommand">DxgkDdiSubmitCommand</a> function for the latest completed DMA buffer.</p>
+<p>A direct memory access (DMA) buffer is completed by using a fence identifier. The driver must supply the DMA buffer fence identifier in the <b>SubmissionFenceId</b> member of the <b>DmaCompleted</b> structure in the union that is contained in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-notify-interrupt-data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-interrupt.md">DxgkCbNotifyInterrupt</a> function. This DMA buffer fence identifier was assigned during a call to the driver's <a href="display.dxgkddisubmitcommand">DxgkDdiSubmitCommand</a> function for the latest completed DMA buffer.</p>
 </dd>
 
 ### -field <a id="DXGK_INTERRUPT_DMA_PREEMPTED"></a><a id="dxgk_interrupt_dma_preempted"></a><b>DXGK_INTERRUPT_DMA_PREEMPTED</b>
@@ -86,7 +86,7 @@ typedef enum _DXGK_INTERRUPT_TYPE {
 ### -field <a id="DXGK_INTERRUPT_CRTC_VSYNC"></a><a id="dxgk_interrupt_crtc_vsync"></a><b>DXGK_INTERRUPT_CRTC_VSYNC</b>
 
 <dd>
-<p>A scan out is completed. The driver must supply information in the <b>CrtcVsync</b> structure in the union that is contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557538">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-interrupt.md">DxgkCbNotifyInterrupt</a> function. </p>
+<p>A scan out is completed. The driver must supply information in the <b>CrtcVsync</b> structure in the union that is contained in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-notify-interrupt-data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-interrupt.md">DxgkCbNotifyInterrupt</a> function. </p>
 <p>The display miniport driver notifies with this interrupt type after video hardware entered into the vertical retrace period, and the pending flip address was latched into the DAC and scanned out. The display miniport driver is not required to report this interrupt after the operating system calls the driver's <a href="display.dxgkddicontrolinterrupt">DxgkDdiControlInterrupt</a> function to disable the interrupt type; however, the driver must resume reporting after the operating system calls the driver's <i>DxgkDdiControlInterrupt</i> function again to enable the interrupt type. </p>
 </dd>
 
@@ -130,7 +130,7 @@ typedef enum _DXGK_INTERRUPT_TYPE {
 <dd>
 <p>This interrupt type should be raised when a GPU encounters an error condition that requires OS to perform a recovery action, such as putting the running packet device in error or resetting the GPU.
 </p>
-<p>When this interrupt type is set, interrupt data should be provided in the <b>DmaPageFaulted</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff557538">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure.</p>
+<p>When this interrupt type is set, interrupt data should be provided in the <b>DmaPageFaulted</b> member of <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-notify-interrupt-data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
@@ -170,7 +170,7 @@ typedef enum _DXGK_INTERRUPT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557538">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-notify-interrupt-data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-interrupt.md">DxgkCbNotifyInterrupt</a>

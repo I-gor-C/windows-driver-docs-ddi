@@ -60,7 +60,7 @@ NTSTATUS __stdcall HidP_GetButtonCaps(
 ### -param <i>ReportType</i> [in]
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.</p>
+<p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.</p>
 </dd>
 
 ### -param <i>ButtonCaps</i> [out]
@@ -94,19 +94,9 @@ NTSTATUS __stdcall HidP_GetButtonCaps(
 ## -remarks
 <p><b>HidP_GetButtonCaps</b> returns the capability of all buttons in a top level collection for a specified report type. </p>
 
-<p><i>ButtonCapsLength</i> should be set to the value of the <b>Number</b><i>Xxx</i><b>ButtonCaps</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a>, where <i>Xxx</i> specifies the report type.</p>
+<p><i>ButtonCapsLength</i> should be set to the value of the <b>Number</b><i>Xxx</i><b>ButtonCaps</b> member of the <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure returned by <a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a>, where <i>Xxx</i> specifies the report type.</p>
 
-<p>To obtain a subset of button capabilities, selected by <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">usage</a>, <a href="hid.hid_usages#usage_page#usage_page">usage page</a>, or <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f519c8e">link collection</a>, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539733">HidP_GetSpecificButtonCaps</a>.</p>
-
-<p>For more information about a collection's capability, see <a href="NULL">Obtaining Collection Information</a>.</p>
-
-<p>See also <a href="NULL">HID Collections</a>. </p>
-
-<p><b>HidP_GetButtonCaps</b> returns the capability of all buttons in a top level collection for a specified report type. </p>
-
-<p><i>ButtonCapsLength</i> should be set to the value of the <b>Number</b><i>Xxx</i><b>ButtonCaps</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a>, where <i>Xxx</i> specifies the report type.</p>
-
-<p>To obtain a subset of button capabilities, selected by <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">usage</a>, <a href="hid.hid_usages#usage_page#usage_page">usage page</a>, or <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f519c8e">link collection</a>, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539733">HidP_GetSpecificButtonCaps</a>.</p>
+<p>To obtain a subset of button capabilities, selected by <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">usage</a>, <a href="hid.hid_usages#usage_page#usage_page">usage page</a>, or <a href="https://msdn.microsoft.com/3f934661-c33c-4c08-82ac-ee2e0f519c8e">link collection</a>, use <a href="..\hidpi\nf-hidpi-hidp-getspecificbuttoncaps.md">HidP_GetSpecificButtonCaps</a>.</p>
 
 <p>For more information about a collection's capability, see <a href="NULL">Obtaining Collection Information</a>.</p>
 
@@ -168,13 +158,13 @@ NTSTATUS __stdcall HidP_GetButtonCaps(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539693">HIDP_BUTTON_CAPS</a>
+<a href="..\hidpi\ns-hidpi--hidp-button-caps.md">HIDP_BUTTON_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539733">HidP_GetSpecificButtonCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getspecificbuttoncaps.md">HidP_GetSpecificButtonCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a>
 </dt>
 </dl>
 <p> </p>

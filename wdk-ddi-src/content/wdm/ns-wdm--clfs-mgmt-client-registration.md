@@ -7,7 +7,7 @@ old-location: kernel\clfs_mgmt_client_registration.htm
 old-project: kernel
 ms.assetid: 4f4f7ece-efe4-49f7-a6ce-bc131d1c1968
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: CLFS_MGMT_CLIENT_REGISTRATION, CLFS_MGMT_CLIENT_REGISTRATION, *PCLFS_MGMT_CLIENT_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ typedef struct _CLFS_MGMT_CLIENT_REGISTRATION {
 ### -field <b>AdvanceTailCallback</b>
 
 <dd>
-<p>A pointer to the log's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540776">ClfsAdvanceTailCallback</a> function.</p>
+<p>A pointer to the log's <a href="kernel.clfsadvancetailcallback">ClfsAdvanceTailCallback</a> function.</p>
 </dd>
 
 ### -field <b>AdvanceTailCallbackData</b>
@@ -82,7 +82,7 @@ typedef struct _CLFS_MGMT_CLIENT_REGISTRATION {
 ### -field <b>LogGrowthCompleteCallback</b>
 
 <dd>
-<p>A pointer to the log's <a href="https://msdn.microsoft.com/library/windows/hardware/ff541562">ClfsLogGrowthCompleteCallback</a> function.</p>
+<p>A pointer to the log's <a href="kernel.clfsloggrowthcompletecallback">ClfsLogGrowthCompleteCallback</a> function.</p>
 </dd>
 
 ### -field <b>LogGrowthCompleteCallbackData</b>
@@ -94,7 +94,7 @@ typedef struct _CLFS_MGMT_CLIENT_REGISTRATION {
 ### -field <b>LogUnpinnedCallback</b>
 
 <dd>
-<p>A pointer to the log's <a href="https://msdn.microsoft.com/library/windows/hardware/ff541565">ClfsLogUnpinnedCallback</a> function.</p>
+<p>A pointer to the log's <a href="kernel.clfslogunpinnedcallback">ClfsLogUnpinnedCallback</a> function.</p>
 </dd>
 
 ### -field <b>LogUnpinnedCallbackData</b>
@@ -124,15 +124,15 @@ typedef struct _CLFS_MGMT_CLIENT_REGISTRATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540776">ClfsAdvanceTailCallback</a>
+<a href="kernel.clfsadvancetailcallback">ClfsAdvanceTailCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541562">ClfsLogGrowthCompleteCallback</a>
+<a href="kernel.clfsloggrowthcompletecallback">ClfsLogGrowthCompleteCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541565">ClfsLogUnpinnedCallback</a>
+<a href="kernel.clfslogunpinnedcallback">ClfsLogUnpinnedCallback</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLFS_MGMT_CLIENT_REGISTRATION structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLFS_MGMT_CLIENT_REGISTRATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

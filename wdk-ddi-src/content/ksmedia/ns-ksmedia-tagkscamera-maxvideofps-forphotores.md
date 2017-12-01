@@ -7,7 +7,7 @@ old-location: stream\kscamera_maxvideofps_forphotores.htm
 old-project: stream
 ms.assetid: 4230F7E1-DC36-4265-9E82-907EE82E9DFF
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES, KSCAMERA_MAXVIDEOFPS_FORPHOTORES, *PKSCAMERA_MAXVIDEOFPS_FORPHOTORES
 ms.prod: windows-hardware
 ms.technology: windows-devices

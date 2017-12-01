@@ -7,7 +7,7 @@ old-location: netvista\wsk_client_dispatch.htm
 old-project: netvista
 ms.assetid: 6a6116b0-2070-4b46-8359-3c84529cd1c5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WSK_CLIENT_DISPATCH, WSK_CLIENT_DISPATCH, *PWSK_CLIENT_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -85,10 +84,10 @@ typedef struct _WSK_CLIENT_DISPATCH {
 
 ## -remarks
 <p>When a WSK application calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a> function, it provides a pointer to
+    <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> function, it provides a pointer to
     an initialized WSK_CLIENT_DISPATCH structure by means of the 
     <b>Dispatch</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571163">WSK_CLIENT_NPI</a> structure pointed to by the 
+    <a href="..\wsk\ns-wsk--wsk-client-npi.md">WSK_CLIENT_NPI</a> structure pointed to by the 
     <i>WskClientNpi</i> parameter.</p>
 
 <p>The major and minor version numbers that are contained within the 
@@ -130,18 +129,18 @@ typedef struct _WSK_CLIENT_DISPATCH {
 <a href="..\wsk\nc-wsk-pfn-wsk-client-event.md">WskClientEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a>
+<a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571163">WSK_CLIENT_NPI</a>
+<a href="..\wsk\ns-wsk--wsk-client-npi.md">WSK_CLIENT_NPI</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571175">WSK_PROVIDER_DISPATCH</a>
+<a href="..\wsk\ns-wsk--wsk-provider-dispatch.md">WSK_PROVIDER_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571177">WSK_PROVIDER_NPI</a>
+<a href="..\wsk\ns-wsk--wsk-provider-npi.md">WSK_PROVIDER_NPI</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_CLIENT_DISPATCH structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_CLIENT_DISPATCH structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

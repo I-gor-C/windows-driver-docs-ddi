@@ -7,7 +7,7 @@ old-location: stream\ksframetime.htm
 old-project: stream
 ms.assetid: 0e3beb72-2b00-41be-a7b4-341bcf065e92
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSFRAMETIME, KSFRAMETIME, *PKSFRAMETIME
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ typedef struct {
 ### -field <b>FrameFlags</b>
 
 <dd>
-<p>Specifies the flags specific to the next frame, or to all frames. Flags are described on the reference page for <a href="https://msdn.microsoft.com/library/windows/hardware/ff560979">KSALLOCATOR_FRAMING</a>.</p>
+<p>Specifies the flags specific to the next frame, or to all frames. Flags are described on the reference page for <a href="stream.ksallocator_framing">KSALLOCATOR_FRAMING</a>.</p>
 </dd>
 
 ### -field <b>Reserved</b>

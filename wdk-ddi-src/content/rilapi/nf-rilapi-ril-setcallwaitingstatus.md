@@ -7,7 +7,7 @@ old-location: netvista\ril_setcallwaitingstatus.htm
 old-project: netvista
 ms.assetid: e511db5d-3544-45a4-9ed4-72bb3f2572ec
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SetCallWaitingStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices

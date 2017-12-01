@@ -83,15 +83,9 @@ Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriat
 ## -remarks
 <p>This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to get the identifier of a specific virtual function. </p>
 
-<p>The PF driver registers its implementation by setting the <b>QueryLuid</b> member of the <a href="buses._sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552439">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545870">WdfDeviceAddQueryInterface</a>.</p>
+<p>The PF driver registers its implementation by setting the <b>QueryLuid</b> member of the <a href="buses._sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface--wdf-query-interface-config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.</p>
 
-<p>Here is an example implementation of this callback function. The PF driver generates a unique identifier by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff566415">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. </p>
-
-<p>This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to get the identifier of a specific virtual function. </p>
-
-<p>The PF driver registers its implementation by setting the <b>QueryLuid</b> member of the <a href="buses._sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552439">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545870">WdfDeviceAddQueryInterface</a>.</p>
-
-<p>Here is an example implementation of this callback function. The PF driver generates a unique identifier by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff566415">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. </p>
+<p>Here is an example implementation of this callback function. The PF driver generates a unique identifier by calling <a href="..\ntddk\nf-ntddk-zwallocatelocallyuniqueid.md">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. </p>
 
 ## -requirements
 <table>

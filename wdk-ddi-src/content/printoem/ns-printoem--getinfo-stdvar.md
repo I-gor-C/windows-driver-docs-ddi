@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The GETINFO_STDVAR structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.</p>
+<p>The GETINFO_STDVAR structure is used as input to the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function.</p>
 
 
 ## -syntax
@@ -63,7 +63,7 @@ typedef struct _GETINFO_STDVAR {
 ### -field <b>dwSize</b>
 
 <dd>
-<p>Specifies the size, in bytes, of the GETINFO_STDVAR structure. Supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller.</p>
+<p>Specifies the size, in bytes, of the GETINFO_STDVAR structure. Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
 ### -field <b>dwNumOfVariable</b>
@@ -79,7 +79,7 @@ typedef struct _GETINFO_STDVAR {
 ### -field <b>dwStdVarID</b>
 
 <dd>
-<p>Specifies the <a href="NULL">standard variables</a> for which a value should be returned. Supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller. Valid values are contained in the following table.</p>
+<p>Specifies the <a href="NULL">standard variables</a> for which a value should be returned. Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller. Valid values are contained in the following table.</p>
 <table>
 <tr>
 <th>Identifier</th>
@@ -199,20 +199,20 @@ typedef struct _GETINFO_STDVAR {
 </tr>
 </table>
 <p> </p>
-<p>Supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller.</p>
+<p>Supplied by the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> caller.</p>
 </dd>
 
 ### -field <b>lStdVariable</b>
 
 <dd>
-<p>Specifies the current value of the specified standard variable. Supplied by Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.</p>
+<p>Specifies the current value of the specified standard variable. Supplied by Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function.</p>
 </dd>
 </dl>
 </dd>
 </dl>
 
 ## -remarks
-<p>To obtain the current value for one or more of Unidrv's standard variables, a rendering plug-in can supply the address of a GETINFO_STDVAR structure when calling Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.</p>
+<p>To obtain the current value for one or more of Unidrv's standard variables, a rendering plug-in can supply the address of a GETINFO_STDVAR structure when calling Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function.</p>
 
 <p>For more information about <a href="NULL">standard variables</a>, see <a href="NULL">Microsoft Universal Printer Driver</a>.</p>
 
@@ -233,7 +233,7 @@ typedef struct _GETINFO_STDVAR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
+<a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a>
 </dt>
 </dl>
 <p> </p>

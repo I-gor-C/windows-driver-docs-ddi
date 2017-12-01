@@ -7,7 +7,7 @@ old-location: netvista\wdi_channel_mapping_entry.htm
 old-project: netvista
 ms.assetid: F05DAD5F-C0A4-46E0-8069-7CEF5B6C5707
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_CHANNEL_MAPPING_ENTRY,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\rilaccesstechnology_2.htm
 old-project: netvista
 ms.assetid: e0bcbc0c-8783-43b2-a4af-3dad4aaff142
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILACCESSTECHNOLOGY, RILACCESSTECHNOLOGY
 ms.prod: windows-hardware
 ms.technology: windows-devices

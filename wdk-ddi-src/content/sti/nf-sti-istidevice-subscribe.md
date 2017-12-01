@@ -58,7 +58,7 @@ HRESULT Subscribe(
 ### -param <i>lpSubscribe</i> [in, out]
 
 <dd>
-<p>Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548355">STISUBSCRIBE</a> structure containing subscription parameter values.</p>
+<p>Caller-supplied pointer to an <a href="..\sti\ns-sti--stisubscribe.md">STISUBSCRIBE</a> structure containing subscription parameter values.</p>
 </dd>
 </dl>
 
@@ -68,19 +68,11 @@ HRESULT Subscribe(
 ## -remarks
 <p>The<b> IStiDevice::Subscribe</b> method is typically called by applications that intercept events from devices and reroute them. The method allows these applications to be notified of <a href="NULL">Still Image Device Events</a> so they can then dispatch control to appropriate display applications.</p>
 
-<p>Based on contents supplied in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548355">STISUBSCRIBE</a> structure, the caller can request to be notified of device events by Windows messages or by Win32 events (by means of <b>SetEvent</b> calls).</p>
+<p>Based on contents supplied in the <a href="..\sti\ns-sti--stisubscribe.md">STISUBSCRIBE</a> structure, the caller can request to be notified of device events by Windows messages or by Win32 events (by means of <b>SetEvent</b> calls).</p>
 
-<p>When the application receives notification of an event, it can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543751">IStiDevice::GetLastNotificationData</a> to find out which event occurred. </p>
+<p>When the application receives notification of an event, it can call <a href="image.istidevice_getlastnotificationdata">IStiDevice::GetLastNotificationData</a> to find out which event occurred. </p>
 
-<p>Before calling <b>IStiDevice::Subscribe</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.</p>
-
-<p>The<b> IStiDevice::Subscribe</b> method is typically called by applications that intercept events from devices and reroute them. The method allows these applications to be notified of <a href="NULL">Still Image Device Events</a> so they can then dispatch control to appropriate display applications.</p>
-
-<p>Based on contents supplied in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548355">STISUBSCRIBE</a> structure, the caller can request to be notified of device events by Windows messages or by Win32 events (by means of <b>SetEvent</b> calls).</p>
-
-<p>When the application receives notification of an event, it can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543751">IStiDevice::GetLastNotificationData</a> to find out which event occurred. </p>
-
-<p>Before calling <b>IStiDevice::Subscribe</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.</p>
+<p>Before calling <b>IStiDevice::Subscribe</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.</p>
 
 ## -requirements
 <table>
@@ -109,10 +101,10 @@ HRESULT Subscribe(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543773">IStiDevice::UnSubscribe</a>
+<a href="image.istidevice_unsubscribe">IStiDevice::UnSubscribe</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543796">IStillImage::LaunchApplicationForDevice</a>
+<a href="image.istillimage_launchapplicationfordevice">IStillImage::LaunchApplicationForDevice</a>
 </dt>
 </dl>
 <p> </p>

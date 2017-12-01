@@ -7,7 +7,7 @@ old-location: debugger\getcurrentthreadteb.htm
 old-project: debugger
 ms.assetid: f5acd64c-c5a8-4977-8059-cc0bd12ef0c0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects, GetCurrentThreadTeb, IDebugSystemObjects::GetCurrentThreadTeb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,13 +69,7 @@ HRESULT GetCurrentThreadTeb(
 <p> </p>
 
 ## -remarks
-<p>In user-mode debugging, this method provides the same information as <a href="https://msdn.microsoft.com/library/windows/hardware/ff545894">GetCurrentThreadDataOffset</a>.</p>
-
-<p>In kernel-mode debugging, the location returned is of the TEB structure of the system thread that was executing on the processor represented by the current thread when the last event occurred.</p>
-
-<p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on the TEB structure, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.</p>
-
-<p>In user-mode debugging, this method provides the same information as <a href="https://msdn.microsoft.com/library/windows/hardware/ff545894">GetCurrentThreadDataOffset</a>.</p>
+<p>In user-mode debugging, this method provides the same information as <a href="debugger.getcurrentthreaddataoffset">GetCurrentThreadDataOffset</a>.</p>
 
 <p>In kernel-mode debugging, the location returned is of the TEB structure of the system thread that was executing on the processor represented by the current thread when the last event occurred.</p>
 

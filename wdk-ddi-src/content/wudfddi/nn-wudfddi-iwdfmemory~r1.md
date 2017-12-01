@@ -7,7 +7,7 @@ old-location: wdf\iwdfmemory.htm
 old-project: wdf
 ms.assetid: 8746eb43-7a6e-4e1d-b8fb-c8b7891295d6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFMemory</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>. <b>IWDFMemory</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFMemory</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>. <b>IWDFMemory</b> also has these types of members:</p>
 
 <p>The <b>IWDFMemory</b> interface has these methods.</p>
 
@@ -59,7 +59,7 @@ req.product: Windows 10 or later.
 
 <p>The <a href="wdf.iwdfmemory_getsize">GetSize</a> method retrieves the size of the data buffer that is associated with a memory object.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj983423">SetBuffer</a> method assigns a specified buffer to a memory object that a driver created by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff558902">IWDFDriver::CreatePreallocatedWdfMemory</a>. </p>
+<p>The <a href="wdf.iwdfmemory_setbuffer">SetBuffer</a> method assigns a specified buffer to a memory object that a driver created by calling <a href="wdf.iwdfdriver_createpreallocatedwdfmemory">IWDFDriver::CreatePreallocatedWdfMemory</a>. </p>
 
 <p> </p>
 
@@ -71,7 +71,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560142">IWDFMemory::CopyFromBuffer</a>
+<a href="wdf.iwdfmemory_copyfrombuffer">IWDFMemory::CopyFromBuffer</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfmemory_copyfrombuffer">CopyFromBuffer</a> method safely copies data from the specified source buffer to a memory object.</p>
@@ -79,7 +79,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560145">IWDFMemory::CopyFromMemory</a>
+<a href="wdf.iwdfmemory_copyfrommemory">IWDFMemory::CopyFromMemory</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfmemory_copyfrommemory">CopyFromMemory</a> method safely copies data from the specified source buffer and prevents overruns that the copy operation might otherwise cause.</p>
@@ -87,7 +87,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560148">IWDFMemory::CopyToBuffer</a>
+<a href="wdf.iwdfmemory_copytobuffer">IWDFMemory::CopyToBuffer</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfmemory_copytobuffer">CopyToBuffer</a> method safely copies data from a memory object to the specified target buffer.</p>
@@ -95,7 +95,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560152">IWDFMemory::GetDataBuffer</a>
+<a href="wdf.iwdfmemory_getdatabuffer">IWDFMemory::GetDataBuffer</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfmemory_getdatabuffer">GetDataBuffer</a> method retrieves the data buffer that is associated with a memory object.</p>
@@ -103,7 +103,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560156">IWDFMemory::GetSize</a>
+<a href="wdf.iwdfmemory_getsize">IWDFMemory::GetSize</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfmemory_getsize">GetSize</a> method retrieves the size of the data buffer that is associated with a memory object.</p>
@@ -111,10 +111,10 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560162">IWDFMemory::SetBuffer</a>
+<a href="wdf.iwdfmemory_setbuffer">IWDFMemory::SetBuffer</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj983423">SetBuffer</a> method assigns a specified buffer to a memory object that a driver created by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff558902">IWDFDriver::CreatePreallocatedWdfMemory</a>. </p>
+<p>The <a href="wdf.iwdfmemory_setbuffer">SetBuffer</a> method assigns a specified buffer to a memory object that a driver created by calling <a href="wdf.iwdfdriver_createpreallocatedwdfmemory">IWDFDriver::CreatePreallocatedWdfMemory</a>. </p>
 </td>
 </tr>
 </table><p>The <a href="wdf.iwdfmemory_copyfrombuffer">CopyFromBuffer</a> method safely copies data from the specified source buffer to a memory object.</p>
@@ -127,7 +127,7 @@ req.product: Windows 10 or later.
 
 <p>The <a href="wdf.iwdfmemory_getsize">GetSize</a> method retrieves the size of the data buffer that is associated with a memory object.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj983423">SetBuffer</a> method assigns a specified buffer to a memory object that a driver created by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff558902">IWDFDriver::CreatePreallocatedWdfMemory</a>. </p>
+<p>The <a href="wdf.iwdfmemory_setbuffer">SetBuffer</a> method assigns a specified buffer to a memory object that a driver created by calling <a href="wdf.iwdfdriver_createpreallocatedwdfmemory">IWDFDriver::CreatePreallocatedWdfMemory</a>. </p>
 
 <p> </p>
 

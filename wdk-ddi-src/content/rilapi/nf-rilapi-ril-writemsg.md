@@ -7,7 +7,7 @@ old-location: netvista\ril_writemsg.htm
 old-project: netvista
 ms.assetid: 6d8e934a-9f1e-4b65-9491-02cf7f5f9255
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WriteMsg
 ms.prod: windows-hardware
 ms.technology: windows-devices

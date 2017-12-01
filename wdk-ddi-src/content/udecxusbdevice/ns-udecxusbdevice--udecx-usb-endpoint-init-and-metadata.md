@@ -61,7 +61,7 @@ typedef struct _UDECX_USB_ENDPOINT_INIT_AND_METADATA {
 ### -field <b>UdecxUsbEndpointInit</b>
 
 <dd>
-<p>A pointer to a <b>UDECXUSBDEVICE_INIT</b> structure that contains initialization parameters for the virtual USB device. The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627968">UdecxUsbDeviceInitAllocate</a>.</p>
+<p>A pointer to a <b>UDECXUSBDEVICE_INIT</b> structure that contains initialization parameters for the virtual USB device. The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>.</p>
 </dd>
 
 ### -field <b>EndpointDescriptorBufferLength</b>
@@ -73,13 +73,13 @@ typedef struct _UDECX_USB_ENDPOINT_INIT_AND_METADATA {
 ### -field <b>EndpointDescriptor</b>
 
 <dd>
-<p>Required. A buffer containing the endpoint descriptor. The descriptor is described in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539317">USB_ENDPOINT_DESCRIPTOR</a> structure.</p>
+<p>Required. A buffer containing the endpoint descriptor. The descriptor is described in a <a href="..\usbspec\ns-usbspec--usb-endpoint-descriptor.md">USB_ENDPOINT_DESCRIPTOR</a> structure.</p>
 </dd>
 
 ### -field <b>SuperSpeedEndpointCompanionDescriptor</b>
 
 <dd>
-<p>Optional. A USB-defined SuperSpeed Endpoint Companion descriptor. For more information, see section 9.6.7 and Table 9-20 in the official USB 3.0 specification. The descriptor is described in a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406269">USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</a> structure.</p>
+<p>Optional. A USB-defined SuperSpeed Endpoint Companion descriptor. For more information, see section 9.6.7 and Table 9-20 in the official USB 3.0 specification. The descriptor is described in a <a href="..\usbspec\ns-usbspec--usb-superspeed-endpoint-companion-descriptor.md">USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</a> structure.</p>
 </dd>
 </dl>
 
@@ -103,7 +103,7 @@ typedef struct _UDECX_USB_ENDPOINT_INIT_AND_METADATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595914">EVT_UDECX_USB_DEVICE_ENDPOINT_ADD</a>
+<a href="buses.evt_udecx_usb_device_endpoint_add">EVT_UDECX_USB_DEVICE_ENDPOINT_ADD</a>
 </dt>
 </dl>
 <p> </p>

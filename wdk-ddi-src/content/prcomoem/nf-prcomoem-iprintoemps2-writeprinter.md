@@ -61,7 +61,7 @@ HRESULT WritePrinter(
 ### -param <i>pdevobj</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>Pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>pBuf</i> 
@@ -87,11 +87,7 @@ HRESULT WritePrinter(
 <p>If successful, this method returns S_OK. Otherwise, this method should return an appropriate value in the returned HRESULT.</p>
 
 ## -remarks
-<p>At <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a> time, the PostScript driver calls this method with <i>pBuf</i> and <i>pdevobj</i> set to <b>NULL</b>, and <i>cbBuf</i> set to 0, to detect whether the plug-in implements this function. The plug-in should return S_OK to indicate it implements this method, and should return E_NOTIMPL otherwise.</p>
-
-<p>This method should report the number of bytes written to the spooler's <b>WritePrinter</b> function in <i>pcbWritten</i>. A value of zero carries no special meaning; errors must be reported through the returned HRESULT.</p>
-
-<p>At <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a> time, the PostScript driver calls this method with <i>pBuf</i> and <i>pdevobj</i> set to <b>NULL</b>, and <i>cbBuf</i> set to 0, to detect whether the plug-in implements this function. The plug-in should return S_OK to indicate it implements this method, and should return E_NOTIMPL otherwise.</p>
+<p>At <a href="display.drvenablepdev">DrvEnablePDEV</a> time, the PostScript driver calls this method with <i>pBuf</i> and <i>pdevobj</i> set to <b>NULL</b>, and <i>cbBuf</i> set to 0, to detect whether the plug-in implements this function. The plug-in should return S_OK to indicate it implements this method, and should return E_NOTIMPL otherwise.</p>
 
 <p>This method should report the number of bytes written to the spooler's <b>WritePrinter</b> function in <i>pcbWritten</i>. A value of zero carries no special meaning; errors must be reported through the returned HRESULT.</p>
 

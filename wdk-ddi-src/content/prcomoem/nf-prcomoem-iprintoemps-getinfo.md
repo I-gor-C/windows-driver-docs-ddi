@@ -68,7 +68,7 @@ STDMETHOD GetInfo(
 ### -param <a id="OEMGI_GETPUBLISHERINFO"></a><a id="oemgi_getpublisherinfo"></a>OEMGI_GETPUBLISHERINFO
 
 <dd>
-<p>The method must indicate whether the rendering plug-in will be using "publishing mode". The <i>pBuffer</i> parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561851">PUBLISHERINFO</a> structure, to be filled in by the method. For more information, see the following Remarks section.</p>
+<p>The method must indicate whether the rendering plug-in will be using "publishing mode". The <i>pBuffer</i> parameter points to a <a href="..\printoem\ns-printoem--publisherinfo.md">PUBLISHERINFO</a> structure, to be filled in by the method. For more information, see the following Remarks section.</p>
 </dd>
 </dl>
 <p></p>
@@ -77,7 +77,7 @@ STDMETHOD GetInfo(
 ### -param <a id="OEMGI_GETREQUESTEDHELPERINTERFACES"></a><a id="oemgi_getrequestedhelperinterfaces"></a>OEMGI_GETREQUESTEDHELPERINTERFACES
 
 <dd>
-<p>The method must write the bit flag value of OEMPUBLISH_IPRINTCOREHELPER to the buffer <i>pBuffer</i> if the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553228">IPrintOemPS::PublishDriverInterface</a> method should be called with parameter <i>pIUnknown</i> pointing to an object that implements the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552906">IPrintCoreHelperPS Interface</a>.</p>
+<p>The method must write the bit flag value of OEMPUBLISH_IPRINTCOREHELPER to the buffer <i>pBuffer</i> if the <a href="print.iprintoemps_publishdriverinterface">IPrintOemPS::PublishDriverInterface</a> method should be called with parameter <i>pIUnknown</i> pointing to an object that implements the <a href="print.iprintcorehelperps_interface">IPrintCoreHelperPS Interface</a>.</p>
 </dd>
 </dl>
 <p></p>
@@ -86,7 +86,7 @@ STDMETHOD GetInfo(
 ### -param <a id="OEMGI_GETSIGNATURE"></a><a id="oemgi_getsignature"></a>OEMGI_GETSIGNATURE
 
 <dd>
-<p>The method must return a unique four-byte identification signature. The plug-in must also place this signature in <a href="https://msdn.microsoft.com/library/windows/hardware/ff559656">OPTITEM</a> structures, as described in the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557653">OEMCUIPPARAM</a>. structure's <b>pOEMOptItems</b> member.</p>
+<p>The method must return a unique four-byte identification signature. The plug-in must also place this signature in <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structures, as described in the description of the <a href="..\printoem\ns-printoem--oemcuipparam.md">OEMCUIPPARAM</a>. structure's <b>pOEMOptItems</b> member.</p>
 </dd>
 </dl>
 <p></p>
@@ -139,14 +139,6 @@ STDMETHOD GetInfo(
 
 <p>For more information about creating and installing rendering plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
 
-<p>Rendering plug-ins for Pscript5 are required to implement the <code>IPrintOemPS::GetInfo</code> method, which is called immediately after the plug-in is loaded. The method should return the specified information by writing it to the address specified by <i>pBuffer</i> and writing the size, in bytes, of the returned information into the location specified by <i>pcbNeeded</i>.</p>
-
-<p>If <i>pBuffer</i> is <b>NULL</b>, the method should just use <i>pcbNeeded</i> to return the number of bytes required to store the specified information.</p>
-
-<p>In "publishing mode", all font information to be downloaded is placed in the job header. Each font is downloaded only once and can be used for any page, allowing the job to be page-order independent. If <i>dwMode</i> is OEMGI_GETPUBLISHERINFO but the plug-in does not support publishing mode, <code>IPrintOemPS::GetInfo</code> should return E_NOTIMPL.</p>
-
-<p>For more information about creating and installing rendering plug-ins, see <a href="NULL">Customizing Microsoft's Printer Drivers</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -174,10 +166,10 @@ STDMETHOD GetInfo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554178">IPrintOemUI::GetInfo</a>
+<a href="print.iprintoemui_getinfo">IPrintOemUI::GetInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554256">IPrintOemUni::GetInfo</a>
+<a href="print.iprintoemuni_getinfo">IPrintOemUni::GetInfo</a>
 </dt>
 </dl>
 <p> </p>

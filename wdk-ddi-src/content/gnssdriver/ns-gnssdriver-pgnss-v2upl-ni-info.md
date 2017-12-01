@@ -7,7 +7,7 @@ old-location: sensors\gnss_v2upl_ni_info.htm
 old-project: sensors
 ms.assetid: 884C8141-2A15-4BAE-8A5C-73355BD84D53
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

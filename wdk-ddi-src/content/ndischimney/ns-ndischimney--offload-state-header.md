@@ -7,7 +7,7 @@ old-location: netvista\offload_state_header.htm
 old-project: netvista
 ms.assetid: 9becc611-ede9-4285-b2d7-c53747d098a9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: OFFLOAD_STATE_HEADER, OFFLOAD_STATE_HEADER, *POFFLOAD_STATE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,57 +72,9 @@ typedef struct _OFFLOAD_STATE_HEADER {
 </dl>
 
 ## -remarks
-<p>The following offload state structures include an OFFLOAD_STATE_HEADER structure:</p><dl>
-<dd>
+<p>The following offload state structures include an OFFLOAD_STATE_HEADER structure:</p>
+
 <p>
-<a href="..\ndischimney\ns-ndischimney--neighbor-offload-state-const.md">
-       NEIGHBOR_OFFLOAD_STATE_CONST</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndischimney\ns-ndischimney--neighbor-offload-state-cached.md">
-       NEIGHBOR_OFFLOAD_STATE_CACHED</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndischimney\ns-ndischimney--neighbor-offload-state-delegated.md">
-       NEIGHBOR_OFFLOAD_STATE_DELEGATED</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569984">PATH_OFFLOAD_STATE_CONST</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569983">PATH_OFFLOAD_STATE_CACHED</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndischimney\ns-ndischimney--path-offload-state-delegated.md">
-       PATH_OFFLOAD_STATE_DELEGATED</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570938">TCP_OFFLOAD_STATE_CONST</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570937">TCP_OFFLOAD_STATE_CACHED</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570939">TCP_OFFLOAD_STATE_DELEGATED</a>
-</p>
-</dd>
-</dl><p>
 <a href="..\ndischimney\ns-ndischimney--neighbor-offload-state-const.md">
        NEIGHBOR_OFFLOAD_STATE_CONST</a>
 </p>
@@ -138,11 +90,11 @@ typedef struct _OFFLOAD_STATE_HEADER {
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569984">PATH_OFFLOAD_STATE_CONST</a>
+<a href="..\ndischimney\ns-ndischimney--path-offload-state-const.md">PATH_OFFLOAD_STATE_CONST</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569983">PATH_OFFLOAD_STATE_CACHED</a>
+<a href="..\ndischimney\ns-ndischimney--path-offload-state-cached.md">PATH_OFFLOAD_STATE_CACHED</a>
 </p>
 
 <p>
@@ -151,15 +103,15 @@ typedef struct _OFFLOAD_STATE_HEADER {
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570938">TCP_OFFLOAD_STATE_CONST</a>
+<a href="..\ndischimney\ns-ndischimney--tcp-offload-state-const.md">TCP_OFFLOAD_STATE_CONST</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570937">TCP_OFFLOAD_STATE_CACHED</a>
+<a href="..\ndischimney\ns-ndischimney--tcp-offload-state-cached.md">TCP_OFFLOAD_STATE_CACHED</a>
 </p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570939">TCP_OFFLOAD_STATE_DELEGATED</a>
+<a href="..\ndischimney\ns-ndischimney--tcp-offload-state-delegated.md">TCP_OFFLOAD_STATE_DELEGATED</a>
 </p>
 
 ## -requirements

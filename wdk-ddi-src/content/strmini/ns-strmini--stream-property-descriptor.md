@@ -7,7 +7,7 @@ old-location: stream\stream_property_descriptor.htm
 old-project: stream
 ms.assetid: b72265b7-dce3-4688-bee7-2a6f7d7731f9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: STREAM_PROPERTY_DESCRIPTOR, STREAM_PROPERTY_DESCRIPTOR, *PSTREAM_PROPERTY_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ typedef struct _STREAM_PROPERTY_DESCRIPTOR {
 ### -field <b>PropertySetID</b>
 
 <dd>
-<p>Specifies the index of the property set within either the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559690">HW_STREAM_HEADER</a>'s <b>DevicePropertiesArray</b> (for minidriver properties) or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559692">HW_STREAM_INFORMATION</a>'s <b>StreamPropertiesArray</b> (for stream properties).</p>
+<p>Specifies the index of the property set within either the <a href="..\strmini\ns-strmini--hw-stream-header.md">HW_STREAM_HEADER</a>'s <b>DevicePropertiesArray</b> (for minidriver properties) or the <a href="..\strmini\ns-strmini--hw-stream-information.md">HW_STREAM_INFORMATION</a>'s <b>StreamPropertiesArray</b> (for stream properties).</p>
 </dd>
 
 ### -field <b>PropertyInfo</b>

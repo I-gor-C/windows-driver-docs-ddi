@@ -7,7 +7,7 @@ old-location: netvista\rilcallrtt_2.htm
 old-project: netvista
 ms.assetid: e11103c6-665f-4673-8c53-5b35abf0299d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCALLRTT,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -71,7 +71,7 @@ typedef struct _D3DKMT_SETQUEUEDLIMIT {
 ### -field <b>Type</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548225">D3DKMT_QUEUEDLIMIT_TYPE</a>-typed value that indicates the type of operations to set or retrieve the queued limit for. </p>
+<p>[in] A <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-queuedlimit-type.md">D3DKMT_QUEUEDLIMIT_TYPE</a>-typed value that indicates the type of operations to set or retrieve the queued limit for. </p>
 </dd>
 
 ### -field <b>QueuedPresentLimit</b>
@@ -121,10 +121,10 @@ typedef struct _D3DKMT_SETQUEUEDLIMIT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548225">D3DKMT_QUEUEDLIMIT_TYPE</a>
+<a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-queuedlimit-type.md">D3DKMT_QUEUEDLIMIT_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547195">D3DKMTSetQueuedLimit</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetqueuedlimit.md">D3DKMTSetQueuedLimit</a>
 </dt>
 </dl>
 <p> </p>

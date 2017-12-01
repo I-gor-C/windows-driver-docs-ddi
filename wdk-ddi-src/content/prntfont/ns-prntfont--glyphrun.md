@@ -70,9 +70,9 @@ typedef struct _GLYPHRUN {
 </dl>
 
 ## -remarks
-<p>A .gtt (glyph translation table) file contains an array of GLYPHRUN structures. Each structure identifies a set of Unicode values for which the printer provides glyphs. The array is described by the <b>IoRunOffset</b> and <b>dwRunCount</b> members of a .gtt file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563597">UNI_GLYPHSETDATA</a> structure.</p>
+<p>A .gtt (glyph translation table) file contains an array of GLYPHRUN structures. Each structure identifies a set of Unicode values for which the printer provides glyphs. The array is described by the <b>IoRunOffset</b> and <b>dwRunCount</b> members of a .gtt file's <a href="..\prntfont\ns-prntfont--uni-glyphsetdata.md">UNI_GLYPHSETDATA</a> structure.</p>
 
-<p>The GLYPHRUN structures must be defined in ascending order, based on the value of <b>wcLow</b>. Unidrv uses the GLYPHRUN array to generate glyph handles. Unidrv stores these glyph handles in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570578">WCRUN</a> array within an <a href="https://msdn.microsoft.com/library/windows/hardware/ff565625">FD_GLYPHSET</a> structure.</p>
+<p>The GLYPHRUN structures must be defined in ascending order, based on the value of <b>wcLow</b>. Unidrv uses the GLYPHRUN array to generate glyph handles. Unidrv stores these glyph handles in a <a href="display.wcrun">WCRUN</a> array within an <a href="display.fd_glyphset">FD_GLYPHSET</a> structure.</p>
 
 ## -requirements
 <table>
@@ -91,13 +91,13 @@ typedef struct _GLYPHRUN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563597">UNI_GLYPHSETDATA</a>
+<a href="..\prntfont\ns-prntfont--uni-glyphsetdata.md">UNI_GLYPHSETDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570578">WCRUN</a>
+<a href="display.wcrun">WCRUN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565625">FD_GLYPHSET</a>
+<a href="display.fd_glyphset">FD_GLYPHSET</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilradiostateitemflag_2.htm
 old-project: netvista
 ms.assetid: 1cf1ebcb-423e-42ee-97aa-bd5f6516e65b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

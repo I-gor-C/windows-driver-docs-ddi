@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The TRACK_MODE_TYPE enumeration type is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559361">IOCTL_CDROM_RAW_READ</a> request and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563958">RAW_READ_INFO</a> structure to read data from a CD-ROM in raw mode.  </p>
+<p>The TRACK_MODE_TYPE enumeration type is used in conjunction with the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-raw-read.md">IOCTL_CDROM_RAW_READ</a> request and the <a href="..\ntddcdrm\ns-ntddcdrm---raw-read-info.md">RAW_READ_INFO</a> structure to read data from a CD-ROM in raw mode.  </p>
 
 
 ## -syntax
@@ -116,10 +116,10 @@ typedef enum _TRACK_MODE_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559361">IOCTL_CDROM_RAW_READ</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-raw-read.md">IOCTL_CDROM_RAW_READ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563958">RAW_READ_INFO</a>
+<a href="..\ntddcdrm\ns-ntddcdrm---raw-read-info.md">RAW_READ_INFO</a>
 </dt>
 </dl>
 <p> </p>

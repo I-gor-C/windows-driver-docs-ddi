@@ -85,7 +85,7 @@ VOID APIENTRY* DefaultConstantBufferUpdateSubresourceUP(D3D11_1)(
 ### -param <i>pDstBox</i> [in, optional]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541925">D3D10_DDI_BOX</a> structure that specifies the region of the destination subresource to copy data to. If <i>pDstBox</i> is <b>NULL</b>, the driver should copy to the entire destination subresouce. </p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-box.md">D3D10_DDI_BOX</a> structure that specifies the region of the destination subresource to copy data to. If <i>pDstBox</i> is <b>NULL</b>, the driver should copy to the entire destination subresouce. </p>
 </dd>
 
 ### -param <i>pSysMemUP</i> [in]
@@ -109,7 +109,7 @@ VOID APIENTRY* DefaultConstantBufferUpdateSubresourceUP(D3D11_1)(
 ### -param <i>CopyFlags</i> 
 
 <dd>
-<p>A value that specifies characteristics of copy operation as a bitwise <b>OR</b> of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451047">D3D11_1_DDI_COPY_FLAGS</a> enumeration type.</p>
+<p>A value that specifies characteristics of copy operation as a bitwise <b>OR</b> of the values in the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1-ddi-copy-flags.md">D3D11_1_DDI_COPY_FLAGS</a> enumeration type.</p>
 </dd>
 </dl>
 
@@ -119,8 +119,6 @@ VOID APIENTRY* DefaultConstantBufferUpdateSubresourceUP(D3D11_1)(
 <p>The driver can use the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> callback function to set an error code. For more information about setting error codes, see the following Remarks section.</p>
 
 ## -remarks
-<p>The driver should not encounter any error, except for <b>D3DDDIERR_DEVICEREMOVED</b>. Therefore, if the driver passes any error, except for <b>D3DDDIERR_DEVICEREMOVED</b>, in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> function, the Direct3D runtime will determine that the error is critical. Even if the device was removed, the driver is not required to return <b>D3DDDIERR_DEVICEREMOVED</b>; however, if device removal interfered with the operation of <b>DefaultConstantBufferUpdateSubresourceUP(D3D11_1)</b> (which typically should not happen), the driver can return <b>D3DDDIERR_DEVICEREMOVED</b>.</p>
-
 <p>The driver should not encounter any error, except for <b>D3DDDIERR_DEVICEREMOVED</b>. Therefore, if the driver passes any error, except for <b>D3DDDIERR_DEVICEREMOVED</b>, in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> function, the Direct3D runtime will determine that the error is critical. Even if the device was removed, the driver is not required to return <b>D3DDDIERR_DEVICEREMOVED</b>; however, if device removal interfered with the operation of <b>DefaultConstantBufferUpdateSubresourceUP(D3D11_1)</b> (which typically should not happen), the driver can return <b>D3DDDIERR_DEVICEREMOVED</b>.</p>
 
 ## -requirements
@@ -166,10 +164,10 @@ VOID APIENTRY* DefaultConstantBufferUpdateSubresourceUP(D3D11_1)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451047">D3D11_1_DDI_COPY_FLAGS</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1-ddi-copy-flags.md">D3D11_1_DDI_COPY_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406443">D3D11_1DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-devicefuncs~r1.md">D3D11_1DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a>

@@ -58,7 +58,7 @@ VOID USBD_CloseHandle(
 ### -param <i>USBDHandle</i> [in]
 
 <dd>
-<p>USBD handle to be closed. The handle is retrieved by the client driver in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406241">USBD_CreateHandle</a> routine.</p>
+<p>USBD handle to be closed. The handle is retrieved by the client driver in a previous call to  the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>
 </dd>
 </dl>
 
@@ -66,8 +66,6 @@ VOID USBD_CloseHandle(
 <p>This routine does not return a value.</p>
 
 ## -remarks
-<p>A client driver should call <b>USBD_CloseHandle</b> in the driver's routine that handles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a> IRP. The client driver must call the routine before sending the IRP down the USB driver stack. </p>
-
 <p>A client driver should call <b>USBD_CloseHandle</b> in the driver's routine that handles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a> IRP. The client driver must call the routine before sending the IRP down the USB driver stack. </p>
 
 ## -requirements
@@ -123,10 +121,10 @@ VOID USBD_CloseHandle(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406241">USBD_CreateHandle</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
+<a href="buses.how_to_add_xrb_support_for_client_drivers">Allocating and Building URBs</a>
 </dt>
 </dl>
 <p> </p>

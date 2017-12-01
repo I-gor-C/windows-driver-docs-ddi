@@ -87,7 +87,7 @@ typedef struct _DXVAHDDDI_COLOR_RGBA {
 
 <p>R, G, and B values can be out of the [0.0, 1.0] range for wide gamut format (for example, for XR_BIAS, FP16, and FP32 formats).</p>
 
-<p>A DXVAHDDDI_COLOR_YCbCrA structure is specified in the <b>RGB</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563025">DXVAHDDDI_COLOR</a> union to specify the color in RGB terms.</p>
+<p>A DXVAHDDDI_COLOR_YCbCrA structure is specified in the <b>RGB</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-color.md">DXVAHDDDI_COLOR</a> union to specify the color in RGB terms.</p>
 
 ## -requirements
 <table>
@@ -114,7 +114,7 @@ typedef struct _DXVAHDDDI_COLOR_RGBA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563025">DXVAHDDDI_COLOR</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-color.md">DXVAHDDDI_COLOR</a>
 </dt>
 </dl>
 <p> </p>

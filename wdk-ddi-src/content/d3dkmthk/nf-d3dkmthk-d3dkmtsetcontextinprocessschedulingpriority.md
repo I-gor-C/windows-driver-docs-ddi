@@ -57,7 +57,7 @@ _Check_return_ NTSTATUS APIENTRY D3DKMTSetContextInProcessSchedulingPriority(
 ### -param <i>pContextPriority</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh780270">D3DKMT_SETCONTEXTINPROCESSSCHEDULINGPRIORITY</a> structure that describes parameters for setting the scheduling priority for a device context.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setcontextinprocessschedulingpriority.md">D3DKMT_SETCONTEXTINPROCESSSCHEDULINGPRIORITY</a> structure that describes parameters for setting the scheduling priority for a device context.</p>
 </dd>
 </dl>
 
@@ -116,10 +116,10 @@ _Check_return_ NTSTATUS APIENTRY D3DKMTSetContextInProcessSchedulingPriority(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780270">D3DKMT_SETCONTEXTINPROCESSSCHEDULINGPRIORITY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setcontextinprocessschedulingpriority.md">D3DKMT_SETCONTEXTINPROCESSSCHEDULINGPRIORITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780246">D3DKMTGetContextInProcessSchedulingPriority</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetcontextinprocessschedulingpriority.md">D3DKMTGetContextInProcessSchedulingPriority</a>
 </dt>
 </dl>
 <p> </p>

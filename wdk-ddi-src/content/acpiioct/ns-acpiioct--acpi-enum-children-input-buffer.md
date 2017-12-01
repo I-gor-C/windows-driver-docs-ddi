@@ -38,7 +38,7 @@ req.irql:
 
 
 ## -description
-<p>The ACPI_ENUM_CHILDREN_INPUT_BUFFER structure is used as input to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff536147">IOCTL_ACPI_ENUM_CHILDREN</a> request. The structure specifies which child objects to enumerate in the namespace of the device to which the request is sent. </p>
+<p>The ACPI_ENUM_CHILDREN_INPUT_BUFFER structure is used as input to an <a href="..\acpiioct\ni-acpiioct-ioctl-acpi-enum-children.md">IOCTL_ACPI_ENUM_CHILDREN</a> request. The structure specifies which child objects to enumerate in the namespace of the device to which the request is sent. </p>
 
 
 ## -syntax
@@ -83,22 +83,11 @@ typedef struct _ACPI_ENUM_CHILDREN_INPUT_BUFFER {
 
 ## -remarks
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536147">IOCTL_ACPI_ENUM_CHILDREN</a> supports the following types of enumerations, depending on how the <b>Flags</b> member is set in the corresponding ACPI_ENUM_CHILDREN_INPUT_BUFFER structure:</p>
+<a href="..\acpiioct\ni-acpiioct-ioctl-acpi-enum-children.md">IOCTL_ACPI_ENUM_CHILDREN</a> supports the following types of enumerations, depending on how the <b>Flags</b> member is set in the corresponding ACPI_ENUM_CHILDREN_INPUT_BUFFER structure:</p>
 
-<p></p><dl>
-<dt><a id="ENUM_CHILDREN_IMMEDIATE_ONLY"></a><a id="enum_children_immediate_only"></a>ENUM_CHILDREN_IMMEDIATE_ONLY</dt>
-<dd>
+<p></p>
+
 <p>Enumerates the device to which the request is sent and the immediate child devices of the device. This flag cannot be combined with any other flag. An IOCTL_ACPI_ENUM_CHILDREN request returns the path and name of the device and the path and name of all the immediate child devices of the device. The <b>Name</b> member is not used.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL"></a><a id="enum_children_multilevel"></a>ENUM_CHILDREN_MULTILEVEL</dt>
-<dd>
-<p>Enumerates the device to which the request is sent and recursively enumerates all child devices of the device. This flag cannot be combined with the ENUM_CHILDREN_IMMEDIATE_ONLY flag. An IOCTL_ACPI_ENUM_CHILDREN request returns the path and name of the device and the path and name of all child devices in the namespace of the device. The <b>Name</b> member is not used.</p>
-</dd>
-<dt><a id="ENUM_CHILDREN_MULTILEVEL____ENUM_CHILDREN_NAME_IS_FILTER"></a><a id="enum_children_multilevel____enum_children_name_is_filter"></a>ENUM_CHILDREN_MULTILEVEL || ENUM_CHILDREN_NAME_IS_FILTER</dt>
-<dd>
-<p>Restricts a recursive enumeration to only child objects whose name matches the name supplied by the <b>Name</b> member. In this case, the enumeration request returns the path and name of the child objects whose name matches the supplied name. The ENUM_CHILDREN_NAME_IS_FILTER flag cannot be used by itself.</p>
-</dd>
-</dl><p>Enumerates the device to which the request is sent and the immediate child devices of the device. This flag cannot be combined with any other flag. An IOCTL_ACPI_ENUM_CHILDREN request returns the path and name of the device and the path and name of all the immediate child devices of the device. The <b>Name</b> member is not used.</p>
 
 <p>Enumerates the device to which the request is sent and recursively enumerates all child devices of the device. This flag cannot be combined with the ENUM_CHILDREN_IMMEDIATE_ONLY flag. An IOCTL_ACPI_ENUM_CHILDREN request returns the path and name of the device and the path and name of all child devices in the namespace of the device. The <b>Name</b> member is not used.</p>
 
@@ -131,7 +120,7 @@ typedef struct _ACPI_ENUM_CHILDREN_INPUT_BUFFER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536147">IOCTL_ACPI_ENUM_CHILDREN</a>
+<a href="..\acpiioct\ni-acpiioct-ioctl-acpi-enum-children.md">IOCTL_ACPI_ENUM_CHILDREN</a>
 </dt>
 </dl>
 <p> </p>

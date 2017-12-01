@@ -7,7 +7,7 @@ old-location: stream\ksevent_pincaps_changenotifications.htm
 old-project: stream
 ms.assetid: FC46144A-8343-4C1F-8061-4C9DCAB22370
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -75,8 +75,6 @@ HRESULT SetViewRange(
 ## -remarks
 <p>Invoking this method causes the events for status change to the jobs to be fired. The <a href="print.iprinterqueueviewevent_onchanged">IPrinterQueueViewEvent::OnChanged</a> event method returns the live queue in response, using the specified maximum range size.</p>
 
-<p>Invoking this method causes the events for status change to the jobs to be fired. The <a href="print.iprinterqueueviewevent_onchanged">IPrinterQueueViewEvent::OnChanged</a> event method returns the live queue in response, using the specified maximum range size.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -123,7 +121,7 @@ HRESULT SetViewRange(
 <a href="print.iprinterqueue2_getprinterqueueview">IPrinterQueue2::GetPrinterQueueView</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265392">IPrinterQueueView</a>
+<a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a>
 </dt>
 <dt>
 <a href="print.iprinterqueueviewevent_onchanged">IPrinterQueueViewEvent::OnChanged</a>

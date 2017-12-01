@@ -7,7 +7,7 @@ old-location: netvista\ndis_net_buffer_list_info.htm
 old-project: netvista
 ms.assetid: 79327b2b-e97b-42dc-8d15-9d774c424cae
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,8 @@ req.iface:
 
 ## -description
 <p>The <b>NDIS_NET_BUFFER_LIST_INFO</b> enumeration identifies information that is common to all 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures in a 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+  <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures in a 
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 
 ## -syntax
@@ -196,7 +196,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 
 <dd>
 <p>Identifies a <b>ULONG_PTR</b> value that is a cancellation identifier for the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. To cancel the
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure. To cancel the
      pending transmission of a marked <b>NET_BUFFER_LIST</b> structure, a protocol driver passes the packet's
      cancellation identifier to 
      <a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">
@@ -211,8 +211,8 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 <dd>
 <p>Identifies a PVOID value that is the address of a driver-allocated buffer. This buffer contains
      any media-specific out-of-band data that accompanies the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures that are associated with
-     the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. If a protocol driver allocated the out-of-band data, it configured the
+     <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures that are associated with
+     the <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure. If a protocol driver allocated the out-of-band data, it configured the
      data for a send operation. If a miniport driver allocated the data, it configured the data for a receive
      indication.</p>
 </dd>
@@ -266,7 +266,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
      </p>
 <p>On the transmit path, 
      <b>NetBufferListHashValue</b> identifies a <b>ULONG</b> value that is the RSS hash value that TCP/IP calculated,
-     if any. In this case, all <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that TCP/IP submitted
+     if any. In this case, all <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures in a <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure that TCP/IP submitted
      belong to the same UDP or TCP connection. Therefore, this hash value applies to all <b>NET_BUFFER</b>
      structures that are in the <b>NET_BUFFER_LIST</b> structure.</p>
 <p>For more information, see 
@@ -322,7 +322,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
      <b>NetBufferListFilteringInfo</b>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a> returns an 
      <a href="..\ndis\ns-ndis--ndis-net-buffer-list-filtering-info.md">
      NDIS_NET_BUFFER_LIST_FILTERING_INFO</a> structure.</p>
-<p>Starting with NDIS 6.20, receive indications made by miniport drivers that support VMQ, SR-IOV, or packet coalesing must include an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566567">NDIS_NET_BUFFER_LIST_FILTERING_INFO</a> structure. The miniport drivers must set the VMQ queue identifier in the 
+<p>Starting with NDIS 6.20, receive indications made by miniport drivers that support VMQ, SR-IOV, or packet coalesing must include an <a href="..\ndis\ns-ndis--ndis-net-buffer-list-filtering-info.md">NDIS_NET_BUFFER_LIST_FILTERING_INFO</a> structure. The miniport drivers must set the VMQ queue identifier in the 
      <b>QueueId</b> member of the <b>
      NDIS_NET_BUFFER_LIST_FILTERING_INFO</b> structure.  The driver also sets the <b>FilterId</b> member of the <b>NDIS_NET_BUFFER_LIST_FILTERING_INFO</b> structure to zero. </p>
 <div class="alert"><b>Note</b>  Starting with NDIS 6.30, the miniport driver that supports SR-IOV or packet coalescing must set the <b>QueueId</b> to <b>NDIS_DEFAULT_RECEIVE_QUEUE_ID</b> and the <b>FilterId</b> member to zero.</div>
@@ -335,7 +335,7 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 <p>Identifies a pointer to a driver-allocated 
      <a href="..\ndis\ns-ndis--ndis-nbl-media-specific-information-ex.md">
      NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX</a> structure. This structure identifies any media-specific
-     out-of-band data that accompanies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures that are associated with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+     out-of-band data that accompanies the <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures that are associated with the <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
      structure. NDIS 6.20 and later drivers should use the <b>
      NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX</b> structure
      to specify media specific information. Any driver in an NDIS driver stack can allocate and manage
@@ -370,13 +370,13 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 ### -field <a id="SwitchForwardingDetail"></a><a id="switchforwardingdetail"></a><a id="SWITCHFORWARDINGDETAIL"></a><b>SwitchForwardingDetail</b>
 
 <dd>
-<p>Identifies a pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh598211">NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</a> structure. This  structure specifies the information for forwarding a packet to one or more  ports of a Hyper-V extensible switch. The driver allocates this structure by calling <a href="netvista.AllocateNetBufferListForwardingContext">AllocateNetBufferListForwardingContext</a> and frees the structure by calling <a href="netvista.FreeNetBufferListForwardingContext">FreeNetBufferListForwardingContext</a>.</p>
+<p>Identifies a pointer to a driver-allocated <a href="..\ndis\ns-ndis--ndis-switch-forwarding-detail-net-buffer-list-info.md">NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</a> structure. This  structure specifies the information for forwarding a packet to one or more  ports of a Hyper-V extensible switch. The driver allocates this structure by calling <a href="netvista.AllocateNetBufferListForwardingContext">AllocateNetBufferListForwardingContext</a> and frees the structure by calling <a href="netvista.FreeNetBufferListForwardingContext">FreeNetBufferListForwardingContext</a>.</p>
 </dd>
 
 ### -field <a id="VirtualSubnetInfo"></a><a id="virtualsubnetinfo"></a><a id="VIRTUALSUBNETINFO"></a><b>VirtualSubnetInfo</b>
 
 <dd>
-<p>Identifies a pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/jj614359">NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO</a> structure. </p>
+<p>Identifies a pointer to a driver-allocated <a href="..\ndis\ns-ndis--ndis-net-buffer-list-virtual-subnet-info.md">NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO</a> structure. </p>
 </dd>
 
 ### -field <a id="IMReserved"></a><a id="imreserved"></a><a id="IMRESERVED"></a><b>IMReserved</b>
@@ -388,19 +388,19 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 ### -field <a id="TcpRecvSegCoalesceInfo"></a><a id="tcprecvsegcoalesceinfo"></a><a id="TCPRECVSEGCOALESCEINFO"></a><b>TcpRecvSegCoalesceInfo</b>
 
 <dd>
-<p>Identifies a pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh451655">NDIS_RSC_NBL_INFO</a> union containing receive segment coalescing (RSC) counter information. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451655">NDIS_RSC_NBL_INFO</a> documentation.</p>
+<p>Identifies a pointer to a driver-allocated <a href="..\ndis\ns-ndis--ndis-rsc-nbl-info.md">NDIS_RSC_NBL_INFO</a> union containing receive segment coalescing (RSC) counter information. For more information, see the <a href="..\ndis\ns-ndis--ndis-rsc-nbl-info.md">NDIS_RSC_NBL_INFO</a> documentation.</p>
 </dd>
 
 ### -field <a id="RscTcpTimestampDelta"></a><a id="rsctcptimestampdelta"></a><a id="RSCTCPTIMESTAMPDELTA"></a><b>RscTcpTimestampDelta</b>
 
 <dd>
-<p>Identifies a pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh451655">NDIS_RSC_NBL_INFO</a> union containing RSC timestamp information. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451655">NDIS_RSC_NBL_INFO</a> documentation.</p>
+<p>Identifies a pointer to a driver-allocated <a href="..\ndis\ns-ndis--ndis-rsc-nbl-info.md">NDIS_RSC_NBL_INFO</a> union containing RSC timestamp information. For more information, see the <a href="..\ndis\ns-ndis--ndis-rsc-nbl-info.md">NDIS_RSC_NBL_INFO</a> documentation.</p>
 </dd>
 
 ### -field <a id="TcpSendOffloadsSupplementalNetBufferListInfo"></a><a id="tcpsendoffloadssupplementalnetbufferlistinfo"></a><a id="TCPSENDOFFLOADSSUPPLEMENTALNETBUFFERLISTINFO"></a><b>TcpSendOffloadsSupplementalNetBufferListInfo</b>
 
 <dd>
-<p>Identifies a pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/jj991957">NDIS_TCP_SEND_OFFLOADS_SUPPLEMENTAL_NET_BUFFER_LIST_INFO</a> structure containing additional out-of-band information for encapsulated packets.</p>
+<p>Identifies a pointer to a driver-allocated <a href="..\ndis\ns-ndis--ndis-tcp-send-offloads-supplemental-net-buffer-list-info.md">NDIS_TCP_SEND_OFFLOADS_SUPPLEMENTAL_NET_BUFFER_LIST_INFO</a> structure containing additional out-of-band information for encapsulated packets.</p>
 </dd>
 
 ### -field <a id="NetBufferListInfoReserved1"></a><a id="netbufferlistinforeserved1"></a><a id="NETBUFFERLISTINFORESERVED1"></a><b>NetBufferListInfoReserved1</b>
@@ -426,28 +426,12 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 
 ## -remarks
 <p>The <b>NDIS_NET_BUFFER_LIST_INFO</b> enumeration is used in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 <p>Use these enumeration values with the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a> macro to set and
     get values in the 
-    <b>NetBufferListInfo</b> array in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>.</p>
-
-<p>The <b>NDIS_NET_BUFFER_LIST_INFO</b> enumeration is used in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
-
-<p>Use these enumeration values with the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a> macro to set and
-    get values in the 
-    <b>NetBufferListInfo</b> array in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>.</p>
-
-<p>The <b>NDIS_NET_BUFFER_LIST_INFO</b> enumeration is used in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
-
-<p>Use these enumeration values with the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a> macro to set and
-    get values in the 
-    <b>NetBufferListInfo</b> array in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>.</p>
+    <b>NetBufferListInfo</b> array in a <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>.</p>
 
 ## -requirements
 <table>
@@ -502,10 +486,10 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
    NDIS_NET_BUFFER_LIST_FILTERING_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj614359">NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO</a>
+<a href="..\ndis\ns-ndis--ndis-net-buffer-list-virtual-subnet-info.md">NDIS_NET_BUFFER_LIST_VIRTUAL_SUBNET_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598211">NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</a>
+<a href="..\ndis\ns-ndis--ndis-switch-forwarding-detail-net-buffer-list-info.md">NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-tcp-ip-checksum-net-buffer-list-info.md">
@@ -516,16 +500,16 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
    NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561623">NdisCancelSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">NdisCancelSendNetBufferLists</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562623">NdisGeneratePartialCancelId</a>
+<a href="..\ndis\nf-ndis-ndisgeneratepartialcancelid.md">NdisGeneratePartialCancelId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
@@ -533,4 +517,4 @@ typedef enum _NDIS_NET_BUFFER_LIST_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_INFO enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_INFO enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

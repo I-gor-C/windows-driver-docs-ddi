@@ -81,7 +81,7 @@ typedef struct _MOUNTMGR_CHANGE_NOTIFY_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560451">IOCTL_MOUNTMGR_CHANGE_NOTIFY</a>
+<a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-change-notify.md">IOCTL_MOUNTMGR_CHANGE_NOTIFY</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: audio\pfndrmdestroycontent.htm
 old-project: audio
 ms.assetid: 24B98C91-9EB3-4D00-8D58-F6C96610946A
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TXRX_TARGET_CONFIGURATION, WDI_TXRX_TARGET_CONFIGURATION, *PWDI_TXRX_TARGET_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

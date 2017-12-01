@@ -95,7 +95,7 @@ typedef struct _MOUNTDEV_SUGGESTED_LINK_NAME {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560440">IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME</a>
+<a href="..\mountdev\ni-mountdev-ioctl-mountdev-query-suggested-link-name.md">IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME</a>
 </dt>
 </dl>
 <p> </p>

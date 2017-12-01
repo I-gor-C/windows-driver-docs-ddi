@@ -7,7 +7,7 @@ old-location: netvista\net_dma_pnp_notification_code.htm
 old-project: netvista
 ms.assetid: 1c9c09ae-5b7a-4482-8f6b-1ad5ede5b3f5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: MIRACAST_WFD_CONNECTION_STATS, MIRACAST_WFD_CONNECTION_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -112,14 +112,6 @@ typedef enum _NET_DMA_PNP_NOTIFICATION_CODE {
     <a href="..\netdma\ns-netdma--net-dma-pnp-notification.md">
     NET_DMA_PNP_NOTIFICATION</a> structure.</p>
 
-<p>The NET_DMA_PNP_NOTIFICATION_CODE enumeration is used in the 
-    <a href="..\netdma\ns-netdma--net-dma-pnp-notification.md">
-    NET_DMA_PNP_NOTIFICATION</a> structure.</p>
-
-<p>The NET_DMA_PNP_NOTIFICATION_CODE enumeration is used in the 
-    <a href="..\netdma\ns-netdma--net-dma-pnp-notification.md">
-    NET_DMA_PNP_NOTIFICATION</a> structure.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -145,9 +137,9 @@ typedef enum _NET_DMA_PNP_NOTIFICATION_CODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568735">NET_DMA_PNP_NOTIFICATION</a>
+<a href="..\netdma\ns-netdma--net-dma-pnp-notification.md">NET_DMA_PNP_NOTIFICATION</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PNP_NOTIFICATION_CODE enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PNP_NOTIFICATION_CODE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

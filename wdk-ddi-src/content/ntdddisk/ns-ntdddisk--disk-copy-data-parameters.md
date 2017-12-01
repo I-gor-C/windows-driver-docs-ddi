@@ -102,7 +102,7 @@ typedef struct _DISK_COPY_DATA_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559434">IOCTL_DISK_COPY_DATA</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-copy-data.md">IOCTL_DISK_COPY_DATA</a>
 </dt>
 </dl>
 <p> </p>

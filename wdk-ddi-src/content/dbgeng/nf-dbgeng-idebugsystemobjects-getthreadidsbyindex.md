@@ -7,7 +7,7 @@ old-location: debugger\getthreadidsbyindex.htm
 old-project: debugger
 ms.assetid: d671ea6e-19cb-4a90-b345-ea544c9561cd
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects, GetThreadIdsByIndex, IDebugSystemObjects::GetThreadIdsByIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,11 +90,7 @@ HRESULT GetThreadIdsByIndex(
 <p> </p>
 
 ## -remarks
-<p>The index of the first thread is zero.  The index of the last thread is the number of threads returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547992">GetNumberThreads</a> minus one.</p>
-
-<p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
-<p>The index of the first thread is zero.  The index of the last thread is the number of threads returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547992">GetNumberThreads</a> minus one.</p>
+<p>The index of the first thread is zero.  The index of the last thread is the number of threads returned by <a href="debugger.getnumberthreads">GetNumberThreads</a> minus one.</p>
 
 <p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
 

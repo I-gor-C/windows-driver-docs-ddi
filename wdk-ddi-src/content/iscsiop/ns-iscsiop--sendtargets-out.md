@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SendTargets_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565526">SendTargets</a> method.</p>
+<p>The SendTargets_OUT structure holds the output data for the <a href="storage.sendtargets">SendTargets</a> method.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ typedef struct _SendTargets_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>The status of the <b>SendTargets</b> method. This member will contain 0 if the SEND TARGETS operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the SEND TARGETS operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.  </p>
+<p>The status of the <b>SendTargets</b> method. This member will contain 0 if the SEND TARGETS operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the SEND TARGETS operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.  </p>
 </dd>
 
 ### -field <b>ResponseSize</b>
@@ -95,13 +95,13 @@ typedef struct _SendTargets_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565526">SendTargets</a>
+<a href="storage.sendtargets">SendTargets</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565533">SendTargets_IN</a>
+<a href="..\iscsiop\ns-iscsiop--sendtargets-in.md">SendTargets_IN</a>
 </dt>
 </dl>
 <p> </p>

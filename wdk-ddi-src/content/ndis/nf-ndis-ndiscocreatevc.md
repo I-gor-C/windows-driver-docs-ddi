@@ -7,7 +7,7 @@ old-location: netvista\ndiscocreatevc.htm
 old-project: netvista
 ms.assetid: ae9175e5-c1fc-44ae-a7c9-921ac8483e33
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCoCreateVc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisCoCreateVc (NDIS 5.1)) in
-   Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisCoCreateVc (NDIS 5.1)) in
-   Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoCreateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoCreateVc (NDIS 5.1)) in   Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -66,7 +62,7 @@ NDIS_STATUS NdisCoCreateVc(
 
 <dd>
 <p>Specifies the handle returned by 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> that identifies the
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> that identifies the
      target NIC or virtual adapter of the next-lower driver to which the caller is bound.</p>
 </dd>
 
@@ -74,7 +70,7 @@ NDIS_STATUS NdisCoCreateVc(
 
 <dd>
 <p>Specifies the handle returned by 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561639">NdisClOpenAddressFamilyEx</a> if
+     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a> if
      the caller is a client. A call manager sets this parameter to <b>NULL</b> if it is creating a VC for itself,
      such as a VC to a network switch. When it creates a VC for incoming call notifications, a call manager
      passes the AF handle that it saved in its per-AF state designated by the 
@@ -146,7 +142,7 @@ NDIS_STATUS NdisCoCreateVc(
     <b>NdisCoCreateVc</b> returns control. If its call to 
     <b>NdisCoCreateVc</b> succeeds, the client can proceed in making an outgoing call, passing the returned 
     <i>NdisVcHandle</i> to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a>.</p>
+    <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>.</p>
 
 <p>When its 
     <a href="..\ndis\nc-ndis-protocol-co-receive-net-buffer-lists.md">
@@ -165,54 +161,7 @@ NDIS_STATUS NdisCoCreateVc(
 <p>Stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
     <b>NdisCoCreateVc</b>. Connection-oriented miniport drivers that provide integrated call-management
     support call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562812">NdisMCmCreateVc</a>, instead.</p>
-
-<p>A client or stand-alone call manager creates a VC with 
-    <b>NdisCoCreateVc</b>, depending on whether the VC represents an outgoing or incoming call,
-    respectively.</p>
-
-<p>In the process of VC creation, NDIS supplies an 
-    <i>NdisVcHandle</i> to the client, the call manager, and the miniport driver to which both protocol
-    drivers are bound. This handle identifies the virtual circuit for the client, call manager, and miniport
-    driver to which subsequent requests concerning the given VC are directed. Each driver must treat this VC
-    handle as an opaque variable, passing it unmodified and uninterpreted in subsequent calls to certain
-    connection-oriented NDIS library functions.</p>
-
-<p>Usually, callers of 
-    <b>NdisCoCreateVc</b> store the returned 
-    <i>NdisVcHandle</i> in the caller-allocated state area at 
-    <i>ProtocolVcContext</i> . NDIS passes this handle as an input parameter to the 
-    <a href="..\ndis\nc-ndis-protocol-co-create-vc.md">ProtocolCoCreateVc</a> and 
-    <a href="..\ndis\nc-ndis-miniport-co-create-vc.md">MiniportCoCreateVc</a> functions of the
-    other two drivers involved in each creation of a VC.</p>
-
-<p>To make an outgoing call, a client must call 
-    <b>NdisCoCreateVc</b> first. As a synchronous operation, NDIS calls the underlying miniport driver's 
-    <i>MiniportCoCreateVc</i> function and the call manager's 
-    <i>ProtocolCoCreateVc</i> function before 
-    <b>NdisCoCreateVc</b> returns control. If its call to 
-    <b>NdisCoCreateVc</b> succeeds, the client can proceed in making an outgoing call, passing the returned 
-    <i>NdisVcHandle</i> to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a>.</p>
-
-<p>When its 
-    <a href="..\ndis\nc-ndis-protocol-co-receive-net-buffer-lists.md">
-    ProtocolCoReceiveNetBufferLists</a> function processes the offer of an incoming call directed to one of
-    its registered SAPs, a call manager must call 
-    <b>NdisCoCreateVc</b> first. As a synchronous operation, NDIS calls the underlying miniport driver's 
-    <i>MiniportCoCreateVc</i> function and the client's 
-    <i>ProtocolCoCreateVc</i> function before 
-    <b>NdisCoCreateVc</b> returns control. If its call to 
-    <b>NdisCoCreateVc</b> succeeds, the call manager can proceed in notifying the appropriate client, passing
-    the returned value at 
-    <i>NdisVcHandle</i> to 
-    <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">
-    NdisCmDispatchIncomingCall</a>.</p>
-
-<p>Stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
-    <b>NdisCoCreateVc</b>. Connection-oriented miniport drivers that provide integrated call-management
-    support call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562812">NdisMCmCreateVc</a>, instead.</p>
+    <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>, instead.</p>
 
 ## -requirements
 <table>
@@ -271,7 +220,7 @@ NDIS_STATUS NdisCoCreateVc(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547924">Irql_Connection_Function</a>
+<a href="devtest.ndis_irql_connection_function">Irql_Connection_Function</a>
 </td>
 </tr>
 </table>
@@ -286,16 +235,16 @@ NDIS_STATUS NdisCoCreateVc(
    NdisAllocateFromNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561664">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561698">NdisCoDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562812">NdisMCmCreateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cm-reg-sap.md">ProtocolCmRegisterSap</a>
@@ -310,4 +259,4 @@ NDIS_STATUS NdisCoCreateVc(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoCreateVc function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoCreateVc function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

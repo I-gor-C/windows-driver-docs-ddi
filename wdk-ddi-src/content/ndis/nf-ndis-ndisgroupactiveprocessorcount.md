@@ -7,7 +7,7 @@ old-location: netvista\ndisgroupactiveprocessorcount.htm
 old-project: netvista
 ms.assetid: d6631aa7-e3ba-4768-a55a-6a66d1ee84c6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisGroupActiveProcessorCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,22 +89,6 @@ ULONG NdisGroupActiveProcessorCount(
     <a href="..\ndis\nf-ndis-ndisgroupmaxprocessorcount.md">
     NdisGroupMaxProcessorCount</a> function.</p>
 
-<p>An NDIS driver might call the 
-    <b>NdisGroupActiveProcessorCount</b> function during initialization before it allocates resources.</p>
-
-<p>The processor count that 
-    <a href="..\ndis\nf-ndis-ndisgroupactiveprocessormask.md">
-    NdisGroupActiveProcessorMask</a> returns can change at runtime on SKUs that support hot-add
-    functionality for CPUs.</p>
-
-<p>To obtain an active affinity mask, call the 
-    <a href="..\ndis\nf-ndis-ndisgroupactiveprocessormask.md">
-    NdisGroupActiveProcessorMask</a> function.</p>
-
-<p>To obtain the maximum number of processors in a group, call the 
-    <a href="..\ndis\nf-ndis-ndisgroupmaxprocessorcount.md">
-    NdisGroupMaxProcessorCount</a> function.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -158,19 +142,19 @@ ULONG NdisGroupActiveProcessorCount(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562687">NdisGroupActiveProcessorMask</a>
+<a href="..\ndis\nf-ndis-ndisgroupactiveprocessormask.md">NdisGroupActiveProcessorMask</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562689">NdisGroupMaxProcessorCount</a>
+<a href="..\ndis\nf-ndis-ndisgroupmaxprocessorcount.md">NdisGroupMaxProcessorCount</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
    NdisSystemActiveProcessorCount</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564579">NdisSystemProcessorCount</a>
+<a href="..\ndis\nf-ndis-ndissystemprocessorcount.md">NdisSystemProcessorCount</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGroupActiveProcessorCount function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGroupActiveProcessorCount function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

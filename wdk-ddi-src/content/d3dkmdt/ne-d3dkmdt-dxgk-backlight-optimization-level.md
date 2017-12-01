@@ -97,10 +97,6 @@ typedef enum  {
 ## -remarks
 <p>For more information on usage scenarios involving <b>DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</b> enumeration values, see Remarks in the <a href="..\dispmprt\nc-dispmprt-dxgk-brightness-set-backlight-optimization.md">DxgkDdiSetBacklightOptimization</a> function.</p>
 
-<p>For more information on usage scenarios involving <b>DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</b> enumeration values, see Remarks in the <a href="..\dispmprt\nc-dispmprt-dxgk-brightness-set-backlight-optimization.md">DxgkDdiSetBacklightOptimization</a> function.</p>
-
-<p>For more information on usage scenarios involving <b>DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</b> enumeration values, see Remarks in the <a href="..\dispmprt\nc-dispmprt-dxgk-brightness-set-backlight-optimization.md">DxgkDdiSetBacklightOptimization</a> function.</p>
-
 ## -requirements
 <table>
 <tr>

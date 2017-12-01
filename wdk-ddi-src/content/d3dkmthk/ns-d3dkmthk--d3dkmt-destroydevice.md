@@ -57,7 +57,7 @@ typedef struct _D3DKMT_DESTROYDEVICE {
 ### -field <b>hDevice</b>
 
 <dd>
-<p>[in] A handle to the device context that the Microsoft DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>) supplied and that is returned from the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546836">D3DKMTCreateDevice</a> function.</p>
+<p>[in] A handle to the device context that the Microsoft DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>) supplied and that is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatedevice.md">D3DKMTCreateDevice</a> function.</p>
 </dd>
 </dl>
 
@@ -89,10 +89,10 @@ typedef struct _D3DKMT_DESTROYDEVICE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546836">D3DKMTCreateDevice</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatedevice.md">D3DKMTCreateDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546912">D3DKMTDestroyDevice</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroydevice.md">D3DKMTDestroyDevice</a>
 </dt>
 </dl>
 <p> </p>

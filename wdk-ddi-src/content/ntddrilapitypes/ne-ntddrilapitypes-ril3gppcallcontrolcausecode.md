@@ -7,7 +7,7 @@ old-location: netvista\ril3gppcallcontrolcausecode.htm
 old-project: netvista
 ms.assetid: a469e292-a57d-4876-a050-266f57985a50
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

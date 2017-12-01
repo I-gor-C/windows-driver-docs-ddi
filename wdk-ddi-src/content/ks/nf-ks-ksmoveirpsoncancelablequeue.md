@@ -7,7 +7,7 @@ old-location: stream\ksmoveirpsoncancelablequeue.htm
 old-project: stream
 ms.assetid: 1f6b4d93-fca8-40da-b87e-c95169f142ea
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsMoveIrpsOnCancelableQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>KsMoveIrpsOnCancelableQueue</b> function moves the specified IRPs from the <i>SourceList</i> parameter to the <i>DestinationList </i>parameter depending on the value returned from the minidriver-defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff567187">KStrIrpListCallback</a> function.</p>
+<p>The <b>KsMoveIrpsOnCancelableQueue</b> function moves the specified IRPs from the <i>SourceList</i> parameter to the <i>DestinationList </i>parameter depending on the value returned from the minidriver-defined <a href="stream.kstrirplistcallback">KStrIrpListCallback</a> function.</p>
 
 
 ## -syntax
@@ -93,7 +93,7 @@ NTSTATUS KsMoveIrpsOnCancelableQueue(
 ### -param <i>ListCallback </i> [in]
 
 <dd>
-<p>Specifies the minidriver-defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff567187">KStrIrpListCallback</a> function to call to indicate whether a specific IRP should be moved from <i>SourceList</i> to <i>DestinationList</i>, or if enumeration should be terminated.</p>
+<p>Specifies the minidriver-defined <a href="stream.kstrirplistcallback">KStrIrpListCallback</a> function to call to indicate whether a specific IRP should be moved from <i>SourceList</i> to <i>DestinationList</i>, or if enumeration should be terminated.</p>
 </dd>
 
 ### -param <i>Context </i> [in]
@@ -107,13 +107,7 @@ NTSTATUS KsMoveIrpsOnCancelableQueue(
 <p>Returns STATUS_SUCCESS if the list was completely enumerated; otherwise, returns any warning or error returned by the minidriver-defined <i>KStrIrpListCallback</i> callback function that interrupted enumeration.</p>
 
 ## -remarks
-<p>An IRP is moved if the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567187">KStrIrpListCallback</a> function indicates that it should be moved, whether it is currently acquired. If <i>KStrIrpListCallback </i>returns STATUS_SUCCESS, the IRP is moved. If it returns STATUS_NO_MATCH, the IRP is not moved. Any other return warning or error value will terminate enumeration and be returned by the function. The STATUS_NO_MATCH value should not be returned as an error by <i>KStrIrpListCallback</i>. <i>KStrIrpListCallback</i> is called at DISPATCH_LEVEL. <i>KStrIrpListCallback</i> is always called at least once at the end with a <b>NULL</b> IRP value to complete list enumeration.</p>
-
-<p><b>KsMoveIrpsOnCancelableQueue</b> continues through the list until the callback function indicates that the search should be terminated, or the end of the list is reached. <b>KsMoveIrpsOnCancelableQueue</b> minimizes the use of the system-wide Cancel Spin Lock by using the provided spin locks to synchronize access when possible. <b>KsMoveIrpsOnCancelableQueue</b> does not allow the cancel routine to be modified while moving IRPs.</p>
-
-<p>The function can be called at DISPATCH_LEVEL or lower.</p>
-
-<p>An IRP is moved if the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567187">KStrIrpListCallback</a> function indicates that it should be moved, whether it is currently acquired. If <i>KStrIrpListCallback </i>returns STATUS_SUCCESS, the IRP is moved. If it returns STATUS_NO_MATCH, the IRP is not moved. Any other return warning or error value will terminate enumeration and be returned by the function. The STATUS_NO_MATCH value should not be returned as an error by <i>KStrIrpListCallback</i>. <i>KStrIrpListCallback</i> is called at DISPATCH_LEVEL. <i>KStrIrpListCallback</i> is always called at least once at the end with a <b>NULL</b> IRP value to complete list enumeration.</p>
+<p>An IRP is moved if the <a href="stream.kstrirplistcallback">KStrIrpListCallback</a> function indicates that it should be moved, whether it is currently acquired. If <i>KStrIrpListCallback </i>returns STATUS_SUCCESS, the IRP is moved. If it returns STATUS_NO_MATCH, the IRP is not moved. Any other return warning or error value will terminate enumeration and be returned by the function. The STATUS_NO_MATCH value should not be returned as an error by <i>KStrIrpListCallback</i>. <i>KStrIrpListCallback</i> is called at DISPATCH_LEVEL. <i>KStrIrpListCallback</i> is always called at least once at the end with a <b>NULL</b> IRP value to complete list enumeration.</p>
 
 <p><b>KsMoveIrpsOnCancelableQueue</b> continues through the list until the callback function indicates that the search should be terminated, or the end of the list is reached. <b>KsMoveIrpsOnCancelableQueue</b> minimizes the use of the system-wide Cancel Spin Lock by using the provided spin locks to synchronize access when possible. <b>KsMoveIrpsOnCancelableQueue</b> does not allow the cancel routine to be modified while moving IRPs.</p>
 
@@ -156,9 +150,9 @@ NTSTATUS KsMoveIrpsOnCancelableQueue(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567187">KStrIrpListCallback</a>
+<a href="stream.kstrirplistcallback">KStrIrpListCallback</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsMoveIrpsOnCancelableQueue function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsMoveIrpsOnCancelableQueue function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

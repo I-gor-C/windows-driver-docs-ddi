@@ -7,7 +7,7 @@ old-location: sensors\gnss_geofences_trackingstatus_data.htm
 old-project: sensors
 ms.assetid: 65E59305-B1D9-4255-926A-A72F3B4887AF
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, GNSS_GEOFENCES_TRACKINGSTATUS_DATA, *PGNSS_GEOFENCES_TRACKINGSTATUS_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

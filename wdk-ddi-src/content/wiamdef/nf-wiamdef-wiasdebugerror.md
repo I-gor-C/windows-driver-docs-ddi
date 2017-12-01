@@ -73,9 +73,7 @@ VOID __cdecl wiasDebugError(
 <p>On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).</p>
 
 ## -remarks
-<p>The wiasDebugError function is not recommended for Windows XP and later. For Windows XP use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549580">WIAS_LERROR</a> macro instead. For Windows Vista use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549565">WIAS_ERROR</a> macro instead.</p>
-
-<p>The wiasDebugError function is not recommended for Windows XP and later. For Windows XP use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549580">WIAS_LERROR</a> macro instead. For Windows Vista use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549565">WIAS_ERROR</a> macro instead.</p>
+<p>The wiasDebugError function is not recommended for Windows XP and later. For Windows XP use the <a href="..\wiamdef\nf-wiamdef-wias-lerror.md">WIAS_LERROR</a> macro instead. For Windows Vista use the <a href="..\wiamdef\nf-wiamdef-wias-error.md">WIAS_ERROR</a> macro instead.</p>
 
 ## -requirements
 <table>
@@ -132,10 +130,10 @@ VOID __cdecl wiasDebugError(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549580">WIAS_LERROR</a>
+<a href="..\wiamdef\nf-wiamdef-wias-lerror.md">WIAS_LERROR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549565">WIAS_ERROR</a>
+<a href="..\wiamdef\nf-wiamdef-wias-error.md">WIAS_ERROR</a>
 </dt>
 </dl>
 <p> </p>

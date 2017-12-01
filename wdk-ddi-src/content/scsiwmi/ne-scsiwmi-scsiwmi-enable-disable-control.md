@@ -89,10 +89,10 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557338">HwScsiWmiFunctionControl</a>
+<a href="storage.hwscsiwmifunctioncontrol">HwScsiWmiFunctionControl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544094">DpWmiFunctionControl</a>
+<a href="kernel.dpwmifunctioncontrol">DpWmiFunctionControl</a>
 </dt>
 </dl>
 <p> </p>

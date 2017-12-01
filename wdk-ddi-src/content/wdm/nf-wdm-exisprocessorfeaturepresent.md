@@ -7,7 +7,7 @@ old-location: kernel\exisprocessorfeaturepresent.htm
 old-project: kernel
 ms.assetid: d8c4d1d7-3510-48c4-b1a6-062157f4632e
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: ExIsProcessorFeaturePresent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -224,7 +224,7 @@ BOOLEAN ExIsProcessorFeaturePresent(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547756">IrqlExPassive</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_irqlexpassive">IrqlExPassive</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>

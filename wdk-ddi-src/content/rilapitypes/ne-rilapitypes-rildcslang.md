@@ -7,7 +7,7 @@ old-location: netvista\rildcslang_2.htm
 old-project: netvista
 ms.assetid: b6d50c5d-edc5-4037-9223-679fd19f195f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

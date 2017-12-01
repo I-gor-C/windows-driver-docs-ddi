@@ -68,11 +68,7 @@ NTSTATUS MRxDeallocateForFobx(
 <p><i>MRxDeallocateForFobx</i> returns STATUS_SUCCESS.</p>
 
 ## -remarks
-<p><i>MRxDeallocateForFobx</i> is called by <a href="https://msdn.microsoft.com/library/windows/hardware/ff554418">RxFinalizeNetFOBX</a> as part of the process to finalize an FOBX structure. The calls to <b>RxFinalizeNetFOBX</b> and <i>MRxDeallocateForFobx</i> occurs when an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a> request is received.</p>
-
-<p>RDBSS ignores the return value from <i>MRxDeallocateForFobx</i>. </p>
-
-<p><i>MRxDeallocateForFobx</i> is called by <a href="https://msdn.microsoft.com/library/windows/hardware/ff554418">RxFinalizeNetFOBX</a> as part of the process to finalize an FOBX structure. The calls to <b>RxFinalizeNetFOBX</b> and <i>MRxDeallocateForFobx</i> occurs when an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a> request is received.</p>
+<p><i>MRxDeallocateForFobx</i> is called by <a href="..\fcb\nf-fcb-rxfinalizenetfobx.md">RxFinalizeNetFOBX</a> as part of the process to finalize an FOBX structure. The calls to <b>RxFinalizeNetFOBX</b> and <i>MRxDeallocateForFobx</i> occurs when an <a href="ifsk.irp_mj_close">IRP_MJ_CLOSE</a> request is received.</p>
 
 <p>RDBSS ignores the return value from <i>MRxDeallocateForFobx</i>. </p>
 
@@ -103,52 +99,52 @@ NTSTATUS MRxDeallocateForFobx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549838">MRxAreFilesAliased</a>
+<a href="ifsk.mrxarefilesaliased">MRxAreFilesAliased</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549841">MRxCleanupFobx</a>
+<a href="ifsk.mrxcleanupfobx">MRxCleanupFobx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549845">MRxCloseSrvOpen</a>
+<a href="ifsk.mrxclosesrvopen">MRxCloseSrvOpen</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549847">MRxCollapseOpen</a>
+<a href="ifsk.mrxcollapseopen">MRxCollapseOpen</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549862">MRxCreate</a>
+<a href="ifsk.mrxcreate">MRxCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549871">MRxDeallocateForFcb</a>
+<a href="ifsk.mrxdeallocateforfcb">MRxDeallocateForFcb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549872">MRxDeallocateForFobx</a>
+<a href="ifsk.mrxdeallocateforfobx">MRxDeallocateForFobx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549878">MRxExtendForCache</a>
+<a href="ifsk.mrxextendforcache">MRxExtendForCache</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549879">MRxExtendForNonCache</a>
+<a href="ifsk.mrxextendfornoncache">MRxExtendForNonCache</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550669">MRxFlush</a>
+<a href="ifsk.mrxflush">MRxFlush</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550677">MRxForceClosed</a>
+<a href="ifsk.mrxforceclosed">MRxForceClosed</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550691">MRxIsLockRealizable</a>
+<a href="ifsk.mrxislockrealizable">MRxIsLockRealizable</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550817">MRxShouldTryToCollapseThisOpen</a>
+<a href="ifsk.mrxshouldtrytocollapsethisopen">MRxShouldTryToCollapseThisOpen</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550839">MRxTruncate</a>
+<a href="ifsk.mrxtruncate">MRxTruncate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550844">MRxZeroExtend</a>
+<a href="ifsk.mrxzeroextend">MRxZeroExtend</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554418">RxFinalizeNetFOBX</a>
+<a href="..\fcb\nf-fcb-rxfinalizenetfobx.md">RxFinalizeNetFOBX</a>
 </dt>
 </dl>
 <p> </p>

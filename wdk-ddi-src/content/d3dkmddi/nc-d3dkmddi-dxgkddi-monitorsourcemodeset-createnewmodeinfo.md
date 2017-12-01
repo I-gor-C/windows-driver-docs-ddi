@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>pfnCreateNewModeInfo</b> function returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546133">D3DKMDT_MONITOR_SOURCE_MODE</a> structure that the display miniport driver populates before calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-addmode.md">pfnAddMode</a>.</p>
+<p>The <b>pfnCreateNewModeInfo</b> function returns a pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-monitor-source-mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a> structure that the display miniport driver populates before calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-addmode.md">pfnAddMode</a>.</p>
 
 
 ## -prototype
@@ -61,7 +61,7 @@ NTSTATUS APIENTRY pfnCreateNewModeInfo(
 ### -param <i>hMonitorSourceModeSet</i> [in]
 
 <dd>
-<p>[in] A handle to a monitor source mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568433">Monitor interface</a>.</p>
+<p>[in] A handle to a monitor source mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a> function of the <a href="display.monitor_interface">Monitor interface</a>.</p>
 </dd>
 
 ### -param <i>ppNewMonitorSourceModeInfo</i> [out]
@@ -81,12 +81,6 @@ NTSTATUS APIENTRY pfnCreateNewModeInfo(
 <p> </p>
 
 ## -remarks
-<p>After you call <b>pfnCreateNewModeInfo</b> to obtain a D3DKMDT_MONITOR SOURCE_MODE structure, you must do one, but not both, of the following:</p>
-
-<p>Populate the structure and pass it to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-addmode.md">pfnAddMode</a>.</p>
-
-<p>Release the structure by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-releasemodeinfo.md">pfnReleaseModeInfo</a>.</p>
-
 <p>After you call <b>pfnCreateNewModeInfo</b> to obtain a D3DKMDT_MONITOR SOURCE_MODE structure, you must do one, but not both, of the following:</p>
 
 <p>Populate the structure and pass it to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-addmode.md">pfnAddMode</a>.</p>

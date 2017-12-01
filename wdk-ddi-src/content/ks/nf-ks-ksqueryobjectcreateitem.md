@@ -7,7 +7,7 @@ old-location: stream\ksqueryobjectcreateitem.htm
 old-project: stream
 ms.assetid: dd6d436c-6166-4baf-b180-67f7aa7238e3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsQueryObjectCreateItem
 ms.prod: windows-hardware
 ms.technology: windows-devices

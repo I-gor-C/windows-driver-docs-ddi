@@ -90,10 +90,6 @@ ULONG TapeClassPhysicalBlockToLogicalBlock(
 
 <p>If a tape miniclass driver calls this routine with an unsupported tape density code, <b>TapeClassPhysicalBlockToLogicalBlock </b>returns the physical block address in the return value, without performing any translation.</p>
 
-<p>A tape miniclass driver calls <b>TapeClassPhysicalBlockToLogicalBlock</b> to translate a physical block address from a tape device to a logical block address for an application. <b>TapeClassPhysicalBlockToLogicalBlock</b> is not necessary for SCSI-2 or later drivers because devices that comply with SCSI-2 or later standards support logical block addressing.</p>
-
-<p>If a tape miniclass driver calls this routine with an unsupported tape density code, <b>TapeClassPhysicalBlockToLogicalBlock </b>returns the physical block address in the return value, without performing any translation.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -131,7 +127,7 @@ ULONG TapeClassPhysicalBlockToLogicalBlock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567623">TapeClassLogicalBlockToPhysicalBlock</a>
+<a href="..\minitape\nf-minitape-tapeclasslogicalblocktophysicalblock.md">TapeClassLogicalBlockToPhysicalBlock</a>
 </dt>
 </dl>
 <p> </p>

@@ -93,24 +93,6 @@ NTSTATUS CLIENT_QueryActiveInterrupts(
 
 <p>The GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
 
-<p>This callback function is implemented by the GPIO controller driver. The GPIO framework extension (GpioClx) calls this function to query a set of GPIO pins that are configured as interrupt request inputs.</p>
-
-<p>The <i>QueryActiveParameters</i> parameter points to a caller-allocated <b>GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS</b> structure. The caller sets the values of the <b>BankId</b> and <b>EnabledMask</b> members of this structure. The <i>CLIENT_QueryActiveInterrupts</i> function writes to the <b>ActiveMask</b> member of the structure.</p>
-
-<p>On entry, the bits that are set in the <b>EnabledMask</b> member should match the set of currently enabled interrupts in the bank. On return, the bits that are set in the <b>ActiveMask</b> member should correspond to interrupts that are both enabled and active. Thus, if a bit in <b>EnabledMask</b> is zero, the corresponding bit in <b>ActiveMask</b> must be zero.</p>
-
-<p>To register your driver's <i>CLIENT_QueryActiveInterrupts</i> callback function, call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a> method. This method accepts, as an input parameter, a pointer to a <b>GPIO_CLIENT_REGISTRATION_PACKET</b> structure that contains a <i>CLIENT_QueryActiveInterrupts</i> function pointer.</p>
-
-<p>GpioClx calls the <i>CLIENT_QueryActiveInterrupts</i> callback function either at PASSIVE_LEVEL or DIRQL, depending on the device information that the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> callback function supplies to GpioClx. The <i>CLIENT_QueryControllerBasicInformation</i> function provides device information in the form of a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a> structure. If the <b>MemoryMappedController</b> flag bit is set in the <b>Flags</b> member of this structure, GpioClx calls the <i>CLIENT_QueryActiveInterrupts</i> function at DIRQL, which is the IRQL at which the ISR in GpioClx runs. Otherwise, this function is called at PASSIVE_LEVEL. For more information about this flag bit, see <a href="NULL">Optional and Required GPIO Callback Functions</a>.</p>
-
-<p>To define a <i>CLIENT_QueryActiveInterrupts</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define a <i>CLIENT_QueryActiveInterrupts</i> callback function that is named <code>MyEvtGpioQueryActiveInterrupts</code>, use the GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS function type, as shown in this code example:</p>
-
-<p>Then, implement your callback function as follows:</p>
-
-<p>The GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
-
 ## -requirements
 <table>
 <tr>

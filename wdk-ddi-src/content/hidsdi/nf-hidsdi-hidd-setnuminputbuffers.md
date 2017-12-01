@@ -72,13 +72,7 @@ BOOLEAN __stdcall HidD_SetNumInputBuffers(
 <p><b>HidD_SetNumInputBuffers</b> returns <b>TRUE</b> if it succeeds; otherwise, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Only user-mode applications can call <b>HidD_SetNumInputBuffers</b>. Kernel-mode drivers must use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff542087">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a> request.</p>
-
-<p>If <b>HidD_SetNumInputBuffers</b> returns <b>FALSE</b>, and the Microsoft Win32 <b>GetLastError</b> function indicates that an invalid parameter was supplied, the value of <i>NumberBuffers</i> is invalid. The HID class driver requires a minimum of two input buffers. On Windows 2000, the maximum number of input buffers that the HID class driver supports is 200, and on Windows XP and later, the maximum number of input buffers that the HID class driver supports is 512. The default number of input buffers is 32.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p>Only user-mode applications can call <b>HidD_SetNumInputBuffers</b>. Kernel-mode drivers must use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff542087">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a> request.</p>
+<p>Only user-mode applications can call <b>HidD_SetNumInputBuffers</b>. Kernel-mode drivers must use an <a href="..\hidclass\ni-hidclass-ioctl-set-num-device-input-buffers.md">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a> request.</p>
 
 <p>If <b>HidD_SetNumInputBuffers</b> returns <b>FALSE</b>, and the Microsoft Win32 <b>GetLastError</b> function indicates that an invalid parameter was supplied, the value of <i>NumberBuffers</i> is invalid. The HID class driver requires a minimum of two input buffers. On Windows 2000, the maximum number of input buffers that the HID class driver supports is 200, and on Windows XP and later, the maximum number of input buffers that the HID class driver supports is 512. The default number of input buffers is 32.</p>
 
@@ -139,10 +133,10 @@ BOOLEAN __stdcall HidD_SetNumInputBuffers(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539675">HidD_GetNumInputBuffers</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getnuminputbuffers.md">HidD_GetNumInputBuffers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542087">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a>
+<a href="..\hidclass\ni-hidclass-ioctl-set-num-device-input-buffers.md">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a>
 </dt>
 </dl>
 <p> </p>

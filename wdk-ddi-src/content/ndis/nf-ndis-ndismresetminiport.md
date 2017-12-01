@@ -7,7 +7,7 @@ old-location: netvista\ndismresetminiport.htm
 old-project: netvista
 ms.assetid: 614C6E21-00D0-4F57-9E09-D1BAB166BA42
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMResetMiniport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,12 +65,6 @@ void NdisMResetMiniport(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>A miniport driver calls <b>NdisMResetMiniport</b> when it determines that the device requires a hardware reset.</p>
-
-<p>As a result, NDIS schedules a work item for calling the miniport driver's <a href="..\ndis\nc-ndis-miniport-reset.md">MiniportResetEx</a> function asynchronously.</p>
-
-<p><b>NdisMResetMiniport</b> must be called at IRQL &lt;= DISPATCH_LEVEL.</p>
-
 <p>A miniport driver calls <b>NdisMResetMiniport</b> when it determines that the device requires a hardware reset.</p>
 
 <p>As a result, NDIS schedules a work item for calling the miniport driver's <a href="..\ndis\nc-ndis-miniport-reset.md">MiniportResetEx</a> function asynchronously.</p>

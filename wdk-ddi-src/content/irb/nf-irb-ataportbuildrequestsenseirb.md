@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -65,7 +64,7 @@ PIDE_REQUEST_BLOCK AtaPortBuildRequestSenseIrb(
 ### -param <i>Irb</i> [in]
 
 <dd>
-<p>A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a> that defines the failed IDE request block (IRB) for which the request sense will be issued.</p>
+<p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a> that defines the failed IDE request block (IRB) for which the request sense will be issued.</p>
 </dd>
 </dl>
 
@@ -73,12 +72,6 @@ PIDE_REQUEST_BLOCK AtaPortBuildRequestSenseIrb(
 <p>If the operation succeeds, the <b>AtaPortBuildRequestSenseIrb</b> routine returns a pointer to the request sense IRB that it allocated. If the operation fails, <b>AtaPortBuildRequestSenseIrb</b> returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>If the device does not support auto request sense, the miniport driver must build an IRB to gather sense data by using <b>AtaPortBuildRequestSenseIrb</b> and then sending it to the device. The miniport driver must not complete the original IRB until the corresponding request sense IRB has completed. Be aware that no request sense data is required for ATA devices.</p>
-
-<p>For an explanation of the SCSIOP_REQUEST_SENSE command, see the <i>SCSI-3</i> specification.</p>
-
-<p>The miniport driver can have only one outstanding request sense IRB per logical unit.</p>
-
 <p>If the device does not support auto request sense, the miniport driver must build an IRB to gather sense data by using <b>AtaPortBuildRequestSenseIrb</b> and then sending it to the device. The miniport driver must not complete the original IRB until the corresponding request sense IRB has completed. Be aware that no request sense data is required for ATA devices.</p>
 
 <p>For an explanation of the SCSIOP_REQUEST_SENSE command, see the <i>SCSI-3</i> specification.</p>
@@ -123,7 +116,7 @@ PIDE_REQUEST_BLOCK AtaPortBuildRequestSenseIrb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550217">AtaPortReleaseRequestSenseIrb</a>
+<a href="..\irb\nf-irb-ataportreleaserequestsenseirb.md">AtaPortReleaseRequestSenseIrb</a>
 </dt>
 </dl>
 <p> </p>

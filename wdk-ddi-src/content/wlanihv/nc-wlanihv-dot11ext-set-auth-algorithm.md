@@ -7,7 +7,7 @@ old-location: netvista\dot11extsetauthalgorithm.htm
 old-project: netvista
 ms.assetid: 49fbdd9d-4352-48b5-81bc-3092eef2e255
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -68,7 +67,7 @@ DWORD WINAPI * Dot11ExtSetAuthAlgorithm(
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547655">DOT11_AUTH_ALGORITHM</a> enumerator value
+     <a href="..\wlantypes\ne-wlantypes--dot11-auth-algorithm.md">DOT11_AUTH_ALGORITHM</a> enumerator value
      that identifies the authentication algorithm. 
      </p>
 <p>If the value is within the range of <b>DOT11_AUTH_ALGO_IHV_START</b> through DOT11_AUTH_ALGO_IHV_END, the
@@ -79,7 +78,7 @@ DWORD WINAPI * Dot11ExtSetAuthAlgorithm(
 <p>
 <div class="alert"><b>Note</b>  The value of 
       <i>dwAuthAlgo</i> must match the value of an authentication algorithm returned by the Native 802.11
-      miniport driver through setting the appropriate <i>xxx</i><b>AlgoPairs</b> members of the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff547688">DOT11_EXTSTA_ATTRIBUTES</a> structure, which must match the values that would be returned by queries of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569430">OID_DOT11_SUPPORTED_UNICAST_ALGORITHM_PAIR</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff569424">OID_DOT11_SUPPORTED_MULTICAST_ALGORITHM_PAIR</a>.</div>
+      miniport driver through setting the appropriate <i>xxx</i><b>AlgoPairs</b> members of the  <a href="..\windot11\ns-windot11-dot11-extsta-attributes.md">DOT11_EXTSTA_ATTRIBUTES</a> structure, which must match the values that would be returned by queries of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569430">OID_DOT11_SUPPORTED_UNICAST_ALGORITHM_PAIR</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff569424">OID_DOT11_SUPPORTED_MULTICAST_ALGORITHM_PAIR</a>.</div>
 <div> </div>
 </p>
 </dd>
@@ -129,7 +128,7 @@ DWORD WINAPI * Dot11ExtSetAuthAlgorithm(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547655">DOT11_AUTH_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes--dot11-auth-algorithm.md">DOT11_AUTH_ALGORITHM</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a>
@@ -149,4 +148,4 @@ DWORD WINAPI * Dot11ExtSetAuthAlgorithm(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_AUTH_ALGORITHM callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_AUTH_ALGORITHM callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

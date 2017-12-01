@@ -81,7 +81,7 @@ NTSTATUS APIENTRY pfnGetMonitorDescriptorSet(
 ### -param <i>ppMonitorDescriptorSetInterface</i> [out]
 
 <dd>
-<p>[out] A pointer to a variable that receives a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561886">DXGK_MONITORDESCRIPTORSET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the monitor descriptor set object.</p>
+<p>[out] A pointer to a variable that receives a pointer to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitordescriptorset-interface.md">DXGK_MONITORDESCRIPTORSET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the monitor descriptor set object.</p>
 </dd>
 </dl>
 
@@ -101,17 +101,11 @@ NTSTATUS APIENTRY pfnGetMonitorDescriptorSet(
 <p> </p>
 
 ## -remarks
-<p>VidPN target identifiers are assigned by the display miniport driver. The <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a> function, implemented by the display miniport driver, returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561001">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.</p>
+<p>VidPN target identifiers are assigned by the display miniport driver. The <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a> function, implemented by the display miniport driver, returns an array of <a href="..\dispmprt\ns-dispmprt--dxgk-child-descriptor.md">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.</p>
 
 <p>You do not need to release the handle returned in <i>phMonitorDescriptorSet</i>.</p>
 
-<p>This function is also available in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7.</p>
-
-<p>VidPN target identifiers are assigned by the display miniport driver. The <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a> function, implemented by the display miniport driver, returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561001">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.</p>
-
-<p>You do not need to release the handle returned in <i>phMonitorDescriptorSet</i>.</p>
-
-<p>This function is also available in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7.</p>
+<p>This function is also available in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface-v2.md">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7.</p>
 
 ## -requirements
 <table>
@@ -156,7 +150,7 @@ NTSTATUS APIENTRY pfnGetMonitorDescriptorSet(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface-v2.md">DXGK_MONITOR_INTERFACE_V2</a>
 </dt>
 <dt>
 <a href="display.dxgkddienumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>

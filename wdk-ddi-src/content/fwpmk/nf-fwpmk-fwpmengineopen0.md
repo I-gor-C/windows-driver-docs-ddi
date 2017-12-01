@@ -7,7 +7,7 @@ old-location: netvista\fwpmengineopen0.htm
 old-project: netvista
 ms.assetid: 4d805ffe-7cf9-4cbc-9077-e191ddc24ecd
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,7 +87,7 @@ NTSTATUS NTAPI FwpmEngineOpen0(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550083">FWPM_SESSION0</a> structure that defines
+     <a href="netvista.fwpm_session0">FWPM_SESSION0</a> structure that defines
      session-specific parameters for the session being opened. This pointer is optional and can be
      <b>NULL</b>.</p>
 </dd>
@@ -122,33 +122,13 @@ NTSTATUS NTAPI FwpmEngineOpen0(
 <p>For a callout driver to successfully open a session to the filter engine, the filter engine
     must be currently running at the time that the callout driver calls the 
     <b>FwpmEngineOpen0</b> function. A callout driver can call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550061">FwpmBfeStateGet0</a> function to obtain the
+    <a href="..\fwpmk\nf-fwpmk-fwpmbfestateget0.md">FwpmBfeStateGet0</a> function to obtain the
     current state of the filter engine. Before calling <b>FwpmBfeStateGet0</b>, the callout driver must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550062">FwpmBfeStateSubscribeChanges0</a> function to register a callback function that will be called whenever
+    <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">FwpmBfeStateSubscribeChanges0</a> function to register a callback function that will be called whenever
     there is a change in the state of the filter engine.</p>
 
 <p>After a callout driver has finished accessing the filter engine, it calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550072">FwpmEngineClose0</a> function to close the
-    open session to the filter engine.</p>
-
-<p>A callout driver calls the 
-    <b>FwpmEngineOpen0</b> function to open a session to the filter engine. A handle to an open session to the
-    filter engine is a required parameter to most of the <a href="fwp.windows_filtering_platform_start_page">Windows Filtering Platform</a>
-<a href="netvista.management_functions"> management functions</a>.</p>
-
-<p>Callout drivers normally do not need to open a session to the filter engine because callout drivers
-    typically do not call any of the <a href="fwp.windows_filtering_platform_start_page">Windows Filtering Platform</a> management functions.</p>
-
-<p>For a callout driver to successfully open a session to the filter engine, the filter engine
-    must be currently running at the time that the callout driver calls the 
-    <b>FwpmEngineOpen0</b> function. A callout driver can call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550061">FwpmBfeStateGet0</a> function to obtain the
-    current state of the filter engine. Before calling <b>FwpmBfeStateGet0</b>, the callout driver must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550062">FwpmBfeStateSubscribeChanges0</a> function to register a callback function that will be called whenever
-    there is a change in the state of the filter engine.</p>
-
-<p>After a callout driver has finished accessing the filter engine, it calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff550072">FwpmEngineClose0</a> function to close the
+    <a href="..\fwpmk\nf-fwpmk-fwpmengineclose0.md">FwpmEngineClose0</a> function to close the
     open session to the filter engine.</p>
 
 ## -requirements
@@ -204,23 +184,23 @@ NTSTATUS NTAPI FwpmEngineOpen0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550061">FwpmBfeStateGet0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmbfestateget0.md">FwpmBfeStateGet0</a>
 </dt>
 <dt>
 <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
    FwpmBfeStateSubscribeChanges0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550067">FwpmCalloutAdd0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmcalloutadd0.md">FwpmCalloutAdd0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550069">FwpmCalloutDeleteById0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebyid0.md">FwpmCalloutDeleteById0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550071">FwpmCalloutDeleteByKey0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebykey0.md">FwpmCalloutDeleteByKey0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550072">FwpmEngineClose0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmengineclose0.md">FwpmEngineClose0</a>
 </dt>
 <dt>
 <a href="netvista.other_windows_filtering_platform_functions">Other Windows Filtering
@@ -229,4 +209,4 @@ NTSTATUS NTAPI FwpmEngineOpen0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmEngineOpen0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmEngineOpen0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

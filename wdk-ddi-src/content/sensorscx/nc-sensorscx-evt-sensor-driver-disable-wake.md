@@ -7,7 +7,7 @@ old-location: sensors\evt_sensor_driver_disable_wake.htm
 old-project: sensors
 ms.assetid: 15873D33-1423-47D7-8CE6-F2012241B658
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorDriver, OnSetProperties, ISensorDriver::OnSetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,8 +66,6 @@ NTSTATUS CALLBACK EVT_SENSOR_DRIVER_DISABLE_WAKE(
 <p>This function returns STATUS_SUCCESS when completed successfully.</p>
 
 ## -remarks
-<p>This DDSI function does not compulsorily have to be implemented by the driver because it is expected that some sensor drivers do not care about disabling wake on the sensor. If it not implemented the enable call is ignored and a STATUS_SUCCESS is returned. This is primarily because PKEY_Sensor_WakeCapable is implemented today and used by some sensors such as the accelerometer and the proximity sensor, and for backward compatibility, implementing this DDSI is optional.</p>
-
 <p>This DDSI function does not compulsorily have to be implemented by the driver because it is expected that some sensor drivers do not care about disabling wake on the sensor. If it not implemented the enable call is ignored and a STATUS_SUCCESS is returned. This is primarily because PKEY_Sensor_WakeCapable is implemented today and used by some sensors such as the accelerometer and the proximity sensor, and for backward compatibility, implementing this DDSI is optional.</p>
 
 ## -requirements

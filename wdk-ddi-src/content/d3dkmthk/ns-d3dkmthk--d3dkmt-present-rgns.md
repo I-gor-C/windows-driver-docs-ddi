@@ -66,7 +66,7 @@ typedef struct _D3DKMT_PRESENT_RGNS {
 ### -field <b>pDirtyRects</b>
 
 <dd>
-<p>A pointer to an array of dirty rectangles (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>s).</p>
+<p>A pointer to an array of dirty rectangles (<a href="display.rect">RECT</a>s).</p>
 </dd>
 
 ### -field <b>MoveRectCount</b>
@@ -78,7 +78,7 @@ typedef struct _D3DKMT_PRESENT_RGNS {
 ### -field <b>pMoveRects</b>
 
 <dd>
-<p>A pointer to an array of move rectangles (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>s).</p>
+<p>A pointer to an array of move rectangles (<a href="display.rect">RECT</a>s).</p>
 </dd>
 </dl>
 
@@ -118,7 +118,7 @@ typedef struct _D3DKMT_PRESENT_RGNS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

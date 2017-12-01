@@ -7,7 +7,7 @@ old-location: wdf\umdf_version_data.htm
 old-project: wdf
 ms.assetid: b83a786d-0b17-4129-bdd4-86942ad9d3ec
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: UMDF_VERSION_DATA, UMDF_VERSION_DATA, *PUMDF_VERSION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,7 +78,7 @@ typedef struct UMDF_VERSION_DATA {
 </dl>
 
 ## -remarks
-<p>A UMDF driver supplies a pointer to a <b>UMDF_VERSION_DATA</b> structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558909">IWDFDriver::IsVersionAvailable</a> method to describe the minimum version of the framework that the driver supports.</p>
+<p>A UMDF driver supplies a pointer to a <b>UMDF_VERSION_DATA</b> structure to the <a href="wdf.iwdfdriver_isversionavailable">IWDFDriver::IsVersionAvailable</a> method to describe the minimum version of the framework that the driver supports.</p>
 
 <p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh780327">Microsoft_WDF_UMDF_Version</a> is a global variable of type  <b>UMDF_VERSION_DATA</b> that specifies the major version, minor version, and service number for the current release of the framework.
@@ -128,7 +128,7 @@ typedef struct UMDF_VERSION_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558909">IWDFDriver::IsVersionAvailable</a>
+<a href="wdf.iwdfdriver_isversionavailable">IWDFDriver::IsVersionAvailable</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh780327">Microsoft_WDF_UMDF_Version</a>
@@ -136,4 +136,4 @@ typedef struct UMDF_VERSION_DATA {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20UMDF_VERSION_DATA structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20UMDF_VERSION_DATA structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

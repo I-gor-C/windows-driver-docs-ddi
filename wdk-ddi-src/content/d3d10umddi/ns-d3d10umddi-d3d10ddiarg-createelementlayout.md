@@ -58,7 +58,7 @@ typedef struct D3D10DDIARG_CREATEELEMENTLAYOUT {
 ### -field <b>pVertexElements</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541717">D3D10DDIARG_INPUT_ELEMENT_DESC</a> structures that describes each element in the element layout. </p>
+<p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-input-element-desc.md">D3D10DDIARG_INPUT_ELEMENT_DESC</a> structures that describes each element in the element layout. </p>
 </dd>
 
 ### -field <b>NumElements</b>
@@ -102,7 +102,7 @@ typedef struct D3D10DDIARG_CREATEELEMENTLAYOUT {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createelementlayout.md">CreateElementLayout</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541717">D3D10DDIARG_INPUT_ELEMENT_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-input-element-desc.md">D3D10DDIARG_INPUT_ELEMENT_DESC</a>
 </dt>
 </dl>
 <p> </p>

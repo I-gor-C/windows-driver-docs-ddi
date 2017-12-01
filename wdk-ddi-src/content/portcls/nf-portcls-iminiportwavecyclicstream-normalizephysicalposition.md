@@ -7,7 +7,7 @@ old-location: audio\iminiportwavecyclicstream_normalizephysicalposition.htm
 old-project: audio
 ms.assetid: 554cad50-d952-4658-904b-b2a8a8f75b76
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IMiniportWaveCyclicStream, NormalizePhysicalPosition, IMiniportWaveCyclicStream::NormalizePhysicalPosition
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,8 +65,6 @@ NTSTATUS NormalizePhysicalPosition(
 <p><code>NormalizePhysicalPosition</code> returns STATUS_SUCCESS if the call was successful. Otherwise, the method returns an appropriate error code.</p>
 
 ## -remarks
-<p><i>PhysicalPosition</i> is both an input and an output parameter. Given a physical position based on the actual number of bytes transferred, <code>NormalizePhysicalPosition</code> converts the position to a time-based value of 100-nanosecond units.</p>
-
 <p><i>PhysicalPosition</i> is both an input and an output parameter. Given a physical position based on the actual number of bytes transferred, <code>NormalizePhysicalPosition</code> converts the position to a time-based value of 100-nanosecond units.</p>
 
 ## -requirements

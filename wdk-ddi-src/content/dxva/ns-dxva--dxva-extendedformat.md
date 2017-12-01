@@ -63,43 +63,43 @@ typedef struct _DXVA_ExtendedFormat {
 ### -field <b>SampleFormat</b>
 
 <dd>
-<p>Specifies how a video frame is sampled. The 8 bits are defined by one of the enumerators in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564045">DXVA_SampleFormat</a> enumeration type.</p>
+<p>Specifies how a video frame is sampled. The 8 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva--dxva-sampleformat.md">DXVA_SampleFormat</a> enumeration type.</p>
 </dd>
 
 ### -field <b>VideoChromaSubsampling</b>
 
 <dd>
-<p>Specifies the chroma encoding scheme for Y'Cb'Cr' data. The 4 bits are defined by an ORed combination of the enumerators in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564067">DXVA_VideoChromaSubsampling</a> enumeration type. </p>
+<p>Specifies the chroma encoding scheme for Y'Cb'Cr' data. The 4 bits are defined by an ORed combination of the enumerators in the <a href="..\dxva\ne-dxva--dxva-videochromasubsampling.md">DXVA_VideoChromaSubsampling</a> enumeration type. </p>
 </dd>
 
 ### -field <b>NominalRange</b>
 
 <dd>
-<p>Specifies whether sample data includes headroom (values beyond 1.0 white) and toeroom (superblacks below the reference 0.0 black). The 3 bits are defined by one of the enumerators in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564006">DXVA_NominalRange</a> enumeration type. </p>
+<p>Specifies whether sample data includes headroom (values beyond 1.0 white) and toeroom (superblacks below the reference 0.0 black). The 3 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva--dxva-nominalrange.md">DXVA_NominalRange</a> enumeration type. </p>
 </dd>
 
 ### -field <b>VideoTransferMatrix</b>
 
 <dd>
-<p>Specifies the conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The 3 bits are defined by one of the enumerators in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564108">DXVA_VideoTransferMatrix</a> enumeration type. </p>
+<p>Specifies the conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The 3 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva--dxva-videotransfermatrix.md">DXVA_VideoTransferMatrix</a> enumeration type. </p>
 </dd>
 
 ### -field <b>VideoLighting</b>
 
 <dd>
-<p>Specifies lighting conditions for viewing video. The 4 bits are defined by one of the enumerators in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564071">DXVA_VideoLighting</a> enumeration type. </p>
+<p>Specifies lighting conditions for viewing video. The 4 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva--dxva-videolighting.md">DXVA_VideoLighting</a> enumeration type. </p>
 </dd>
 
 ### -field <b>VideoPrimaries</b>
 
 <dd>
-<p>Specifies color primaries, which state which RGB basis functions are used. The 5 bits are defined by one of the enumerators in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564073">DXVA_VideoPrimaries</a> enumeration type. </p>
+<p>Specifies color primaries, which state which RGB basis functions are used. The 5 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva--dxva-videoprimaries.md">DXVA_VideoPrimaries</a> enumeration type. </p>
 </dd>
 
 ### -field <b>VideoTransferFunction</b>
 
 <dd>
-<p>Specifies the conversion function from R'G'B' to RGB. The 5 bits are defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564105">DXVA_VideoTransferFunction</a> enumeration type. </p>
+<p>Specifies the conversion function from R'G'B' to RGB. The 5 bits are defined by the <a href="..\dxva\ne-dxva--dxva-videotransferfunction.md">DXVA_VideoTransferFunction</a> enumeration type. </p>
 </dd>
 </dl>
 
@@ -131,25 +131,25 @@ typedef struct _DXVA_ExtendedFormat {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564006">DXVA_NominalRange</a>
+<a href="..\dxva\ne-dxva--dxva-nominalrange.md">DXVA_NominalRange</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564045">DXVA_SampleFormat</a>
+<a href="..\dxva\ne-dxva--dxva-sampleformat.md">DXVA_SampleFormat</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564067">DXVA_VideoChromaSubsampling</a>
+<a href="..\dxva\ne-dxva--dxva-videochromasubsampling.md">DXVA_VideoChromaSubsampling</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564071">DXVA_VideoLighting</a>
+<a href="..\dxva\ne-dxva--dxva-videolighting.md">DXVA_VideoLighting</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564073">DXVA_VideoPrimaries</a>
+<a href="..\dxva\ne-dxva--dxva-videoprimaries.md">DXVA_VideoPrimaries</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564105">DXVA_VideoTransferFunction</a>
+<a href="..\dxva\ne-dxva--dxva-videotransferfunction.md">DXVA_VideoTransferFunction</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564108">DXVA_VideoTransferMatrix</a>
+<a href="..\dxva\ne-dxva--dxva-videotransfermatrix.md">DXVA_VideoTransferMatrix</a>
 </dt>
 </dl>
 <p> </p>

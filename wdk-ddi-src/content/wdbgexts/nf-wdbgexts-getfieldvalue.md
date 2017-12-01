@@ -7,7 +7,7 @@ old-location: debugger\getfieldvalue.htm
 old-project: debugger
 ms.assetid: 4655bac3-997e-43d9-b628-b4292ae5509d
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: GetFieldValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>GetFieldValue</b> macro is a thin wrapper around the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546743">GetFieldData</a> function.  It is provided as a convenience for reading the value of a member in a structure.</p>
+<p>The <b>GetFieldValue</b> macro is a thin wrapper around the <a href="..\wdbgexts\nf-wdbgexts-getfielddata.md">GetFieldData</a> function.  It is provided as a convenience for reading the value of a member in a structure.</p>
 
 
 ## -syntax
@@ -90,8 +90,6 @@ __inline ULONG GetFieldValue(
 ## -remarks
 <p>The parameters provided to this macro are the same as those provided to the <b>GetFieldData</b> function except that instead of providing a pointer to a buffer and its size, the variable to hold the returned value can be provided directly.</p>
 
-<p>The parameters provided to this macro are the same as those provided to the <b>GetFieldData</b> function except that instead of providing a pointer to a buffer and its size, the variable to hold the returned value can be provided directly.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -119,9 +117,9 @@ __inline ULONG GetFieldValue(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546743">GetFieldData</a>
+<a href="..\wdbgexts\nf-wdbgexts-getfielddata.md">GetFieldData</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20GetFieldValue function%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20GetFieldValue function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

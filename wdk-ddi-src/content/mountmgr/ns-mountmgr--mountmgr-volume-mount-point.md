@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The MOUNTMGR_VOLUME_MOUNT_POINT structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560485">IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED</a> request to inform the mount manager that a volume mount point has been created. </p>
+<p>The MOUNTMGR_VOLUME_MOUNT_POINT structure is used in conjunction with the <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-volume-mount-point-created.md">IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED</a> request to inform the mount manager that a volume mount point has been created. </p>
 
 
 ## -syntax
@@ -102,7 +102,7 @@ typedef struct _MOUNTMGR_VOLUME_MOUNT_POINT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560485">IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED</a>
+<a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-volume-mount-point-created.md">IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED</a>
 </dt>
 </dl>
 <p> </p>

@@ -84,7 +84,7 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 ### -field <b>ModePruningReason</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff546070">D3DKMDT_MODE_PRUNING_REASON</a> that identifies the reason why the monitor either supports the display mode or does not support the display mode. The four bits are defined by one of the values in the <b>D3DKMDT_MODE_PRUNING_REASON</b> enumeration type and depend on the setting of the <b>ValidatedAgainstMonitorCaps</b> member. For more information about how the <b>ModePruningReason</b> value is set, see <b>D3DKMDT_MODE_PRUNING_REASON</b>.</p>
+<p>[in] A value of type <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmdt-mode-pruning-reason.md">D3DKMDT_MODE_PRUNING_REASON</a> that identifies the reason why the monitor either supports the display mode or does not support the display mode. The four bits are defined by one of the values in the <b>D3DKMDT_MODE_PRUNING_REASON</b> enumeration type and depend on the setting of the <b>ValidatedAgainstMonitorCaps</b> member. For more information about how the <b>ModePruningReason</b> value is set, see <b>D3DKMDT_MODE_PRUNING_REASON</b>.</p>
 <p>Setting this member is equivalent to setting bits 4 through 7 of a 32-bit value (0x0000003C).</p>
 </dd>
 
@@ -113,7 +113,7 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 ### -field <b>ModePruningReason</b>
 
 <dd>
-<p>[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff546070">D3DKMDT_MODE_PRUNING_REASON</a> that identifies the reason why the monitor either supports the display mode or does not support the display mode. The four bits are defined by one of the values in the <b>D3DKMDT_MODE_PRUNING_REASON</b> enumeration type and depend on the setting of the <b>ValidatedAgainstMonitorCaps</b> member. For more information about how the <b>ModePruningReason</b> value is set, see <b>D3DKMDT_MODE_PRUNING_REASON</b>.</p>
+<p>[in] A value of type <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmdt-mode-pruning-reason.md">D3DKMDT_MODE_PRUNING_REASON</a> that identifies the reason why the monitor either supports the display mode or does not support the display mode. The four bits are defined by one of the values in the <b>D3DKMDT_MODE_PRUNING_REASON</b> enumeration type and depend on the setting of the <b>ValidatedAgainstMonitorCaps</b> member. For more information about how the <b>ModePruningReason</b> value is set, see <b>D3DKMDT_MODE_PRUNING_REASON</b>.</p>
 <p>This member is equivalent to bits 4 through 7 of a 32-bit value (0x0000003C). </p>
 <p>Supported starting with Windows 8.</p>
 </dd>
@@ -131,7 +131,7 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 
 <dd>
 <p>[in] A UINT value that specifies whether the driver supports the advanced scan capability.</p>
-<p>The driver reports support for this option in the current display mode by setting the <b>Type</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546724">D3DKMDT_VIDPN_SOURCE_MODE</a> structure to <b>D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN</b>.</p>
+<p>The driver reports support for this option in the current display mode by setting the <b>Type</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-source-mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure to <b>D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN</b>.</p>
 <p>Setting this member is equivalent to setting the ninth bit of a 32-bit value (0x00000100).</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
@@ -173,10 +173,10 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547942">D3DKMT_DISPLAYMODE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-displaymode.md">D3DKMT_DISPLAYMODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546070">D3DKMDT_MODE_PRUNING_REASON</a>
+<a href="..\d3dkmthk\ne-d3dkmthk--d3dkmdt-mode-pruning-reason.md">D3DKMDT_MODE_PRUNING_REASON</a>
 </dt>
 </dl>
 <p> </p>

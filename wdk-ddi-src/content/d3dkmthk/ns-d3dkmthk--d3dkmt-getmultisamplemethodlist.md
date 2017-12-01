@@ -87,13 +87,13 @@ typedef struct _D3DKMT_GETMULTISAMPLEMETHODLIST {
 ### -field <b>Format</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.</p>
+<p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.</p>
 </dd>
 
 ### -field <b>pMethodList</b>
 
 <dd>
-<p>[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548098">D3DKMT_MULTISAMPLEMETHOD</a> structures that describe the list of multiple-sampling methods used for the allocation; otherwise, this member is <b>NULL</b>.</p>
+<p>[out] An array of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-multisamplemethod.md">D3DKMT_MULTISAMPLEMETHOD</a> structures that describe the list of multiple-sampling methods used for the allocation; otherwise, this member is <b>NULL</b>.</p>
 </dd>
 
 ### -field <b>MethodCount</b>
@@ -131,13 +131,13 @@ typedef struct _D3DKMT_GETMULTISAMPLEMETHODLIST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548098">D3DKMT_MULTISAMPLEMETHOD</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-multisamplemethod.md">D3DKMT_MULTISAMPLEMETHOD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546975">D3DKMTGetMultisampleMethodList</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetmultisamplemethodlist.md">D3DKMTGetMultisampleMethodList</a>
 </dt>
 </dl>
 <p> </p>

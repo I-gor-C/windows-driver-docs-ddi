@@ -85,7 +85,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439647">GetBool</a>
+<a href="print.iprinterpropertybag_getbool">GetBool</a>
 </td>
 <td align="left" width="63%">
 <p>Reads a specified boolean property.</p>
@@ -93,7 +93,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439653">GetBytes</a>
+<a href="print.iprinterpropertybag_getbytes">GetBytes</a>
 </td>
 <td align="left" width="63%">
 <p>Reads a byte array property.</p>
@@ -101,7 +101,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439658">GetInt32</a>
+<a href="print.iprinterpropertybag_getint32">GetInt32</a>
 </td>
 <td align="left" width="63%">
 <p>Reads an integer property.</p>
@@ -109,7 +109,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439535">GetReadStream</a>
+<a href="print.iprinterpropertybag_getreadstream">GetReadStream</a>
 </td>
 <td align="left" width="63%">
 <p>Gets a stream in order to read from a stream property.</p>
@@ -117,7 +117,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983419">GetString</a>
+<a href="print.iprinterpropertybag_getstring">GetString</a>
 </td>
 <td align="left" width="63%">
 <p>Reads a string property.</p>
@@ -125,7 +125,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439675">GetWriteStream</a>
+<a href="print.iprinterpropertybag_getwritestream">GetWriteStream</a>
 </td>
 <td align="left" width="63%">
 <p>Gets a stream in order to write a stream property.</p>
@@ -133,7 +133,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439552">SetBool</a>
+<a href="print.iprinterpropertybag_setbool">SetBool</a>
 </td>
 <td align="left" width="63%">
 <p>Writes a specified boolean property value.</p>
@@ -141,7 +141,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439606">SetBytes</a>
+<a href="print.iprinterpropertybag_setbytes">SetBytes</a>
 </td>
 <td align="left" width="63%">
 <p>Writes a byte array property.</p>
@@ -149,7 +149,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439610">SetInt32</a>
+<a href="print.iprinterpropertybag_setint32">SetInt32</a>
 </td>
 <td align="left" width="63%">
 <p>Writes an integer property.</p>
@@ -157,7 +157,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983427">SetString</a>
+<a href="print.iprinterpropertybag_setstring">SetString</a>
 </td>
 <td align="left" width="63%">
 <p>Writes a string property.</p>
@@ -233,7 +233,7 @@ req.product: Windows 10 or later.
 <a href="print.iprinterqueue_getproperties">IPrinterQueue::GetProperties</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973217">IPrinterScriptablePropertyBag</a>
+<a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
 </dt>
 <dt>
 <a href="NULL">V4 Printer Driver Property Bags</a>

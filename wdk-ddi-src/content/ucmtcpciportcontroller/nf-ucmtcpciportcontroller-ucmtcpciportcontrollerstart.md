@@ -58,7 +58,7 @@ NTSTATUS UcmTcpciPortControllerStart(
 ### -param <i>PortControllerObject</i> 
 
 <dd>
-<p>Handle to the port controller  object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller  object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 </dl>
 
@@ -69,25 +69,14 @@ NTSTATUS UcmTcpciPortControllerStart(
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl><p>The port controller is already in Start state.</p><dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
-</dl><p>Hardware request queue has not been set by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt805845">UcmTcpciPortControllerSetHardwareRequestQueue</a>.</p>
+</dl><p>Hardware request queue has not been set by calling <a href="buses.ucmtcpciportcontrollersethardwarerequestqueue">UcmTcpciPortControllerSetHardwareRequestQueue</a>.</p>
 
 <p> </p>
 
 ## -remarks
-<p>After the client driver has received the UCMPORTCONTROLLER handle for the port controller object, the driver calls this method to notify the class extension that the driver can start receiving hardware requests. This method call allows the client driver to perform initialization of its framework context space on the port controller object, before the class extension can invoke the driver's callback functions or requests for the port controller object. The driver cannot call <a href="https://msdn.microsoft.com/library/windows/hardware/mt805843">UcmTcpciPortControllerAlert</a> or  <a href="https://msdn.microsoft.com/library/windows/hardware/mt805847">UcmTcpciPortControllerStop</a> until the port controller has been started.</p>
+<p>After the client driver has received the UCMPORTCONTROLLER handle for the port controller object, the driver calls this method to notify the class extension that the driver can start receiving hardware requests. This method call allows the client driver to perform initialization of its framework context space on the port controller object, before the class extension can invoke the driver's callback functions or requests for the port controller object. The driver cannot call <a href="buses.ucmtcpciportcontrolleralert">UcmTcpciPortControllerAlert</a> or  <a href="buses.ucmtcpciportcontrollerstop">UcmTcpciPortControllerStop</a> until the port controller has been started.</p>
 
-<p>The client driver calls this method right after calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a> and initializing its context structure, if it was specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure as the <i>Attributes</i> parameter value.
-The driver must assume that the class extension may submit requests even before <b>UcmTcpciPortControllerStart</b> returns, i.e., from within this DDI call. If the driver is holding a lock while calling <b>UcmTcpciPortControllerStart</b> and also attempts to acquire a lock while handling a hardware request (in its hardware request queue callback), it might result in a deadlock.
-</p>
-
-<p>A call to <b>UcmTcpciPortControllerStart</b> to start a port controller object already in Start state, results in an error. 
-</p>
-
-<p>On boot, if the BIOS had already negotiated a PD contract, UcmTcpciCx starts from an unattached state.</p>
-
-<p>After the client driver has received the UCMPORTCONTROLLER handle for the port controller object, the driver calls this method to notify the class extension that the driver can start receiving hardware requests. This method call allows the client driver to perform initialization of its framework context space on the port controller object, before the class extension can invoke the driver's callback functions or requests for the port controller object. The driver cannot call <a href="https://msdn.microsoft.com/library/windows/hardware/mt805843">UcmTcpciPortControllerAlert</a> or  <a href="https://msdn.microsoft.com/library/windows/hardware/mt805847">UcmTcpciPortControllerStop</a> until the port controller has been started.</p>
-
-<p>The client driver calls this method right after calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a> and initializing its context structure, if it was specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure as the <i>Attributes</i> parameter value.
+<p>The client driver calls this method right after calling <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a> and initializing its context structure, if it was specified in the <a href="..\wdfobject\ns-wdfobject--wdf-object-attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure as the <i>Attributes</i> parameter value.
 The driver must assume that the class extension may submit requests even before <b>UcmTcpciPortControllerStart</b> returns, i.e., from within this DDI call. If the driver is holding a lock while calling <b>UcmTcpciPortControllerStart</b> and also attempts to acquire a lock while handling a hardware request (in its hardware request queue callback), it might result in a deadlock.
 </p>
 
@@ -147,7 +136,7 @@ The driver must assume that the class extension may submit requests even before 
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt805847">UcmTcpciPortControllerStop</a>
+<a href="buses.ucmtcpciportcontrollerstop">UcmTcpciPortControllerStop</a>
 </dt>
 </dl>
 <p> </p>

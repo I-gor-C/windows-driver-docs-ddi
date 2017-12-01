@@ -7,7 +7,7 @@ old-location: netvista\ndis_ipsec_offload_v2.htm
 old-project: netvista
 ms.assetid: 2319fe88-8f32-415c-bea1-4b7e723f6dbb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_IPSEC_OFFLOAD_V2, NDIS_IPSEC_OFFLOAD_V2, *PNDIS_IPSEC_OFFLOAD_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,7 @@ req.iface:
 <p class="CCE_Message">[The IPsec Task Offload feature is deprecated and should not be used.]</p>
 <p>The NDIS_IPSEC_OFFLOAD_V2 structure provides information about Internet protocol security (IPsec)
   version 2 task offload capabilities in the 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff566599">NDIS_OFFLOAD</a> structure.</p>
+  <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> structure.</p>
 
 
 ## -syntax
@@ -160,7 +160,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2 {
      member is <b>FALSE</b>. Note that the LSO capabilities of the NIC are specified in the 
      <b>LsoV1</b> or 
      <b>LsoV2</b> members of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566599">NDIS_OFFLOAD</a> structure. The 
+     <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> structure. The 
      <b>LsoSupported</b> flag indicates that the capabilities that are specified in those members are also
      valid if the connection is secured with IPsec.</p>
 </dd>
@@ -360,14 +360,14 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2 {
 ## -remarks
 <p>In NDIS 6.1 and later versions, the NDIS_IPSEC_OFFLOAD_V2 structure is used in the 
     <b>IPsecV2</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566599">NDIS_OFFLOAD</a> structure. The
+    <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> structure. The
     NDIS_IPSEC_OFFLOAD_V2 structure specifies the current or supported capabilities that a miniport adapter
     provides for IPsec offload processing.</p>
 
 <p>NDIS_OFFLOAD is used in the 
     <a href="..\ndis\ns-ndis--ndis-miniport-adapter-offload-attributes.md">
     NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a> structure, 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a> structure, 
+    <a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a> structure, 
     <a href="..\ndis\ns-ndis--ndis-filter-attach-parameters.md">
     NDIS_FILTER_ATTACH_PARAMETERS</a> structure, 
     <a href="netvista.oid_tcp_offload_current_config">
@@ -402,35 +402,9 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2 {
 <p>The following flags are defined for the 
     <b>Encapsulation</b> member:</p>
 
-<p></p><dl>
-<dt><a id="NDIS_ENCAPSULATION_NOT_SUPPORTED"></a><a id="ndis_encapsulation_not_supported"></a>NDIS_ENCAPSULATION_NOT_SUPPORTED</dt>
-<dd>
+<p></p>
+
 <p>Specifies that no encapsulation offload is supported.</p>
-</dd>
-<dt><a id="NDIS_ENCAPSULATION_NULL"></a><a id="ndis_encapsulation_null"></a>NDIS_ENCAPSULATION_NULL</dt>
-<dd>
-<p>Specifies NULL encapsulation.</p>
-</dd>
-<dt><a id="NDIS_ENCAPSULATION_IEEE_802_3"></a><a id="ndis_encapsulation_ieee_802_3"></a>NDIS_ENCAPSULATION_IEEE_802_3</dt>
-<dd>
-<p>Specifies IEEE 802.3 encapsulation.</p>
-</dd>
-<dt><a id="NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q"></a><a id="ndis_encapsulation_ieee_802_3_p_and_q"></a>NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q</dt>
-<dd>
-<p>Specifies IEEE 802.3p and IEEE 802.3q encapsulation.</p>
-</dd>
-<dt><a id="NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q_IN_OOB"></a><a id="ndis_encapsulation_ieee_802_3_p_and_q_in_oob"></a>NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q_IN_OOB</dt>
-<dd>
-<p>Specifies that IEEE 802.3p and IEEE 802.3q encapsulation settings are specified in the 
-      <b>NetBufferListInfo</b> member of each 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
-</dd>
-<dt><a id="NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED"></a><a id="ndis_encapsulation_ieee_llc_snap_routed"></a>NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED</dt>
-<dd>
-<p>Specifies logical link control (LLC) encapsulation for routed protocols, as described in RFC
-      1483. This flag is also used to indicate Ethernet LLC/SNAP encapsulation.</p>
-</dd>
-</dl><p>Specifies that no encapsulation offload is supported.</p>
 
 <p>Specifies NULL encapsulation.</p>
 
@@ -440,7 +414,7 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2 {
 
 <p>Specifies that IEEE 802.3p and IEEE 802.3q encapsulation settings are specified in the 
       <b>NetBufferListInfo</b> member of each 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+      <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 <p>Specifies logical link control (LLC) encapsulation for routed protocols, as described in RFC
       1483. This flag is also used to indicate Ethernet LLC/SNAP encapsulation.</p>
@@ -470,30 +444,30 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565481">NDIS_FILTER_ATTACH_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-filter-attach-parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565796">NDIS_IPSEC_OFFLOAD_V1</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-ipsec-offload-v1.md">NDIS_IPSEC_OFFLOAD_V1</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-miniport-adapter-offload-attributes.md">
    NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566599">NDIS_OFFLOAD</a>
+<a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_task_offload_current_config">
    NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569805">OID_TCP_OFFLOAD_CURRENT_CONFIG</a>
@@ -501,4 +475,4 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2 {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V2 structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V2 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

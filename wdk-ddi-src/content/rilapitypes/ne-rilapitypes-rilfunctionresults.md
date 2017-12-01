@@ -7,7 +7,7 @@ old-location: netvista\rilfunctionresults_2.htm
 old-project: netvista
 ms.assetid: 4a4a93d5-fe27-4932-a5d0-4aac96a3ae86
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

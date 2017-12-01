@@ -7,7 +7,7 @@ old-location: kernel\pofxregistercomponentperfstates.htm
 old-project: kernel
 ms.assetid: 5A52543B-F0EA-4318-A66F-F9FA60FF94F5
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PoFxRegisterComponentPerfStates
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,13 +63,13 @@ NTSTATUS PoFxRegisterComponentPerfStates(
 ### -param <i>Handle</i> [in]
 
 <dd>
-<p>A handle that represents the registration of the device with PoFx. The device driver previously received this handle from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439521">PoFxRegisterDevice</a> routine.</p>
+<p>A handle that represents the registration of the device with PoFx. The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.</p>
 </dd>
 
 ### -param <i>Component</i> [in]
 
 <dd>
-<p>The index that identifies the component whose performance states will be managed. This parameter is an index into the <b>Components</b> array in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439585">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
+<p>The index that identifies the component whose performance states will be managed. This parameter is an index into the <b>Components</b> array in the <a href="kernel.po_fx_device">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.</p>
 </dd>
 
 ### -param <i>Flags</i> [in]
@@ -130,19 +130,19 @@ NTSTATUS PoFxRegisterComponentPerfStates(
 ### -param <i>ComponentPerfStateCallback</i> [in]
 
 <dd>
-<p>A pointer to a  <a href="https://msdn.microsoft.com/library/windows/hardware/dn939353">ComponentPerfStateCallback</a> routine. This routine is called when PoFx has completed logging and notifying the PEP about a performance state transition that is initiated by the driver’s call to <a href="https://msdn.microsoft.com/library/windows/hardware/dn939769">PoFxIssueComponentPerfStateChange</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/dn939772">PoFxIssueComponentPerfStateChangeMultiple</a>. This callback may be the same for all components and all devices; PoFx provides the device handle and component index in each completion call.</p>
+<p>A pointer to a  <a href="kernel.componentperfstatecallback">ComponentPerfStateCallback</a> routine. This routine is called when PoFx has completed logging and notifying the PEP about a performance state transition that is initiated by the driver’s call to <a href="..\wdm\nf-wdm-pofxissuecomponentperfstatechange.md">PoFxIssueComponentPerfStateChange</a> or <a href="..\wdm\nf-wdm-pofxissuecomponentperfstatechangemultiple.md">PoFxIssueComponentPerfStateChangeMultiple</a>. This callback may be the same for all components and all devices; PoFx provides the device handle and component index in each completion call.</p>
 </dd>
 
 ### -param <i>InputStateInfo</i> [in]
 
 <dd>
-<p>If the driver provides performance state info, this parameter contains a pointer to a driver allocated <a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a> structure that provides performance state information to PoFx. If the driver requires performance state information from the PEP, this parameter must be set to NULL. </p>
+<p>If the driver provides performance state info, this parameter contains a pointer to a driver allocated <a href="..\wdm\ns-wdm--po-fx-component-perf-info.md">PO_FX_COMPONENT_PERF_INFO</a> structure that provides performance state information to PoFx. If the driver requires performance state information from the PEP, this parameter must be set to NULL. </p>
 </dd>
 
 ### -param <i>OutputStateInfo</i> [out]
 
 <dd>
-<p>If the driver requires performance state information from the PEP, after a successful registration this parameter contains a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a> structure that provides performance state information defined by the PEP. If the driver provides performance state info, this parameter must be set to NULL. </p>
+<p>If the driver requires performance state information from the PEP, after a successful registration this parameter contains a pointer to a <a href="..\wdm\ns-wdm--po-fx-component-perf-info.md">PO_FX_COMPONENT_PERF_INFO</a> structure that provides performance state information defined by the PEP. If the driver provides performance state info, this parameter must be set to NULL. </p>
 <p>The memory allocated for this parameter is managed by PoFx, and the driver should not free this memory when the device is removed. The lifetime of this memory is guaranteed to exceed the lifetime of the PoFx component that contains these performance state sets.</p>
 </dd>
 </dl>
@@ -152,28 +152,16 @@ NTSTATUS PoFxRegisterComponentPerfStates(
 <dt><b><b>STATUS_NOT_IMPLEMENTED</b></b></dt>
 </dl><p>The <i>Flags</i> parameter does not include the <b>PO_FX_FLAG_PERF_PEP_OPTIONAL</b> flag and the PEP is not able to provide performance state management for this device.</p><dl>
 <dt><b><b>STATUS_INVALID_PARAMETER</b></b></dt>
-</dl><p>Both <i>InputStateInfo</i> and <i>OutputStateInfo</i> are NULL or both of these parameters are not NULL, or there are no performance state sets in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a> structure that was assigned to the <i>InputStateInfo</i> parameter.</p>
+</dl><p>Both <i>InputStateInfo</i> and <i>OutputStateInfo</i> are NULL or both of these parameters are not NULL, or there are no performance state sets in the <a href="..\wdm\ns-wdm--po-fx-component-perf-info.md">PO_FX_COMPONENT_PERF_INFO</a> structure that was assigned to the <i>InputStateInfo</i> parameter.</p>
 
 <p> </p>
 
 ## -remarks
 <p>Either the driver or the platform extension plug-in (PEP) may provide information about the performance states supported by each component:</p>
 
-<p>If the driver provides performance state information, the driver must set the <i>InputStateInfo</i> parameter to a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a> structure that contains the performance state information. Otherwise, the driver must set this parameter to NULL.</p>
+<p>If the driver provides performance state information, the driver must set the <i>InputStateInfo</i> parameter to a pointer to a <a href="..\wdm\ns-wdm--po-fx-component-perf-info.md">PO_FX_COMPONENT_PERF_INFO</a> structure that contains the performance state information. Otherwise, the driver must set this parameter to NULL.</p>
 
-<p>If the PEP provides performance state information, the driver must set the <i>OutputStateInfo</i> parameter to a valid pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a> structure that receives the performance state information. Otherwise, the driver must set this parameter to NULL.</p>
-
-<p>If the PEP does not support performance states, the driver may register for performance state support with PoFx for logging purposes only. </p>
-
-<p>If the driver registers for performance state support for logging purposes only, or if the driver  can function correctly with or without PEP support for performance state management, the driver must set the <b>PO_FX_FLAG_PERF_PEP_OPTIONAL</b> flag in the <i>Flags</i> parameter. If the flag is set, the registration call will succeed even if the PEP does not provide support for performance states.</p>
-
-<p>If the driver requires the PEP to provide performance state information, the driver cannot set the <b>PO_FX_FLAG_PERF_PEP_OPTIONAL</b> flag in the <i>Flags</i> parameter.</p>
-
-<p>Either the driver or the platform extension plug-in (PEP) may provide information about the performance states supported by each component:</p>
-
-<p>If the driver provides performance state information, the driver must set the <i>InputStateInfo</i> parameter to a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a> structure that contains the performance state information. Otherwise, the driver must set this parameter to NULL.</p>
-
-<p>If the PEP provides performance state information, the driver must set the <i>OutputStateInfo</i> parameter to a valid pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a> structure that receives the performance state information. Otherwise, the driver must set this parameter to NULL.</p>
+<p>If the PEP provides performance state information, the driver must set the <i>OutputStateInfo</i> parameter to a valid pointer to a <a href="..\wdm\ns-wdm--po-fx-component-perf-info.md">PO_FX_COMPONENT_PERF_INFO</a> structure that receives the performance state information. Otherwise, the driver must set this parameter to NULL.</p>
 
 <p>If the PEP does not support performance states, the driver may register for performance state support with PoFx for logging purposes only. </p>
 
@@ -247,15 +235,15 @@ NTSTATUS PoFxRegisterComponentPerfStates(
 <a href="https://msdn.microsoft.com/D5341D6D-7C71-43CB-9C70-7E939B32C33F">Device Performance State Management</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439521">PoFxRegisterDevice</a>
+<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn939353">ComponentPerfStateCallback</a>
+<a href="kernel.componentperfstatecallback">ComponentPerfStateCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a>
+<a href="..\wdm\ns-wdm--po-fx-component-perf-info.md">PO_FX_COMPONENT_PERF_INFO</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxRegisterComponentPerfStates routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxRegisterComponentPerfStates routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

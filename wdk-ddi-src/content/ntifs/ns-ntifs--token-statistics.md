@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>TOKEN_STATISTICS contains information about an access token. A driver can retrieve this information by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff556690">SeQueryInformationToken</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567055">ZwQueryInformationToken</a>. </p>
+<p>TOKEN_STATISTICS contains information about an access token. A driver can retrieve this information by calling <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> or <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>. </p>
 
 
 ## -syntax
@@ -66,7 +66,7 @@ typedef struct _TOKEN_STATISTICS {
 ### -field <b>TokenId</b>
 
 <dd>
-<p>Specifies a locally unique identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>) that identifies this instance of the token object. </p>
+<p>Specifies a locally unique identifier (<a href="ifsk.luid">LUID</a>) that identifies this instance of the token object. </p>
 </dd>
 
 ### -field <b>AuthenticationId</b>
@@ -84,13 +84,13 @@ typedef struct _TOKEN_STATISTICS {
 ### -field <b>TokenType</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556851">TOKEN_TYPE</a> enumerated type indicating whether the token is a primary or impersonation token. </p>
+<p>Specifies a <a href="..\ntifs\ne-ntifs--token-type.md">TOKEN_TYPE</a> enumerated type indicating whether the token is a primary or impersonation token. </p>
 </dd>
 
 ### -field <b>ImpersonationLevel</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556631">SECURITY_IMPERSONATION_LEVEL</a> enumerated type indicating the impersonation level of the token. This member is valid only if the <b>TokenType</b> is TokenImpersonation. </p>
+<p>Specifies a <a href="..\wudfddi\ne-wudfddi--security-impersonation-level.md">SECURITY_IMPERSONATION_LEVEL</a> enumerated type indicating the impersonation level of the token. This member is valid only if the <b>TokenType</b> is TokenImpersonation. </p>
 </dd>
 
 ### -field <b>DynamicCharged</b>
@@ -108,7 +108,7 @@ typedef struct _TOKEN_STATISTICS {
 ### -field <b>GroupCount</b>
 
 <dd>
-<p>Specifies the number of supplemental group security identifiers (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>) included in the token. </p>
+<p>Specifies the number of supplemental group security identifiers (<a href="ifsk.sid">SID</a>) included in the token. </p>
 </dd>
 
 ### -field <b>PrivilegeCount</b>
@@ -144,31 +144,31 @@ typedef struct _TOKEN_STATISTICS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538866">ACL</a>
+<a href="..\ntifs\ns-ntifs--acl.md">ACL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>
+<a href="ifsk.luid">LUID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556631">SECURITY_IMPERSONATION_LEVEL</a>
+<a href="..\wudfddi\ne-wudfddi--security-impersonation-level.md">SECURITY_IMPERSONATION_LEVEL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556690">SeQueryInformationToken</a>
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556838">TOKEN_INFORMATION_CLASS</a>
+<a href="..\ntifs\ne-ntifs--token-information-class.md">TOKEN_INFORMATION_CLASS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556851">TOKEN_TYPE</a>
+<a href="..\ntifs\ne-ntifs--token-type.md">TOKEN_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567055">ZwQueryInformationToken</a>
+<a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567102">ZwSetInformationToken</a>
+<a href="..\ntifs\nf-ntifs-zwsetinformationtoken.md">ZwSetInformationToken</a>
 </dt>
 </dl>
 <p> </p>

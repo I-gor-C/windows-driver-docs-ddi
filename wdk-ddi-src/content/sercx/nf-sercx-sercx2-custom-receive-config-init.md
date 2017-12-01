@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265312">SERCX2_CUSTOM_RECEIVE_CONFIG</a> structure.</p>
+<p>The <b>SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</b> function initializes a <a href="..\sercx\ns-sercx--sercx2-custom-receive-config.md">SERCX2_CUSTOM_RECEIVE_CONFIG</a> structure.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ VOID SERCX2_CUSTOM_RECEIVE_CONFIG_INIT(
 ### -param <i>Config</i> [out]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265312">SERCX2_CUSTOM_RECEIVE_CONFIG</a> structure that is to be initialized.</p>
+<p>A pointer to the <a href="..\sercx\ns-sercx--sercx2-custom-receive-config.md">SERCX2_CUSTOM_RECEIVE_CONFIG</a> structure that is to be initialized.</p>
 </dd>
 </dl>
 
@@ -66,11 +66,7 @@ VOID SERCX2_CUSTOM_RECEIVE_CONFIG_INIT(
 <p>None.</p>
 
 ## -remarks
-<p>Your serial controller driver must use this function to initialize a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265312">SERCX2_CUSTOM_RECEIVE_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265248">SerCx2CustomReceiveCreate</a> method.</p>
-
-<p><b>SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</b> sets the <b>Size</b> member of the structure to <b>sizeof</b>(<b>SERCX2_CUSTOM_RECEIVE_CONFIG</b>), and sets the other members of the structure to zero. The driver can, if necessary, explicitly set these other members to nonzero values after the <b>SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</b> call.</p>
-
-<p>Your serial controller driver must use this function to initialize a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265312">SERCX2_CUSTOM_RECEIVE_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265248">SerCx2CustomReceiveCreate</a> method.</p>
+<p>Your serial controller driver must use this function to initialize a <a href="..\sercx\ns-sercx--sercx2-custom-receive-config.md">SERCX2_CUSTOM_RECEIVE_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceiveCreate</a> method.</p>
 
 <p><b>SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</b> sets the <b>Size</b> member of the structure to <b>sizeof</b>(<b>SERCX2_CUSTOM_RECEIVE_CONFIG</b>), and sets the other members of the structure to zero. The driver can, if necessary, explicitly set these other members to nonzero values after the <b>SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</b> call.</p>
 
@@ -117,10 +113,10 @@ VOID SERCX2_CUSTOM_RECEIVE_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265312">SERCX2_CUSTOM_RECEIVE_CONFIG</a>
+<a href="..\sercx\ns-sercx--sercx2-custom-receive-config.md">SERCX2_CUSTOM_RECEIVE_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265248">SerCx2CustomReceiveCreate</a>
+<a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceiveCreate</a>
 </dt>
 </dl>
 <p> </p>

@@ -57,7 +57,7 @@ typedef struct D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM {
 ### -field <b>Desc</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh450972">D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC</a> structure that describes a video stream for a video processor.</p>
+<p>A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-processor-content-desc.md">D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC</a> structure that describes a video stream for a video processor.</p>
 </dd>
 </dl>
 
@@ -97,7 +97,7 @@ typedef struct D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450972">D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-processor-content-desc.md">D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC</a>
 </dt>
 </dl>
 <p> </p>

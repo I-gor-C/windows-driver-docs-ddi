@@ -7,7 +7,7 @@ old-location: netvista\npdbrokeracquirewithtimeout.htm
 old-project: netvista
 ms.assetid: D2067A72-0FF5-4D77-A1F6-0A6984A1735A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerAcquireWithTimeout
 ms.prod: windows-hardware
 ms.technology: windows-devices

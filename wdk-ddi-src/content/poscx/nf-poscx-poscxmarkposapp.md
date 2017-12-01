@@ -67,7 +67,7 @@ NTSTATUS PosCxMarkPosApp(
 ### -param <i>fileObject</i> [in]
 
 <dd>
-<p>A handle to a framework file object that identifies the caller, usually acquired with <a href="https://msdn.microsoft.com/library/windows/hardware/ff549963">WdfRequestGetFileObject</a>.</p>
+<p>A handle to a framework file object that identifies the caller, usually acquired with <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a>.</p>
 </dd>
 
 ### -param <i>isPosApp</i> [in]

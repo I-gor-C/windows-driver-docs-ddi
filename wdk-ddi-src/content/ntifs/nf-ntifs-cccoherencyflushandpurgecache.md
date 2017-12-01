@@ -116,14 +116,6 @@ VOID CcCoherencyFlushAndPurgeCache(
 
 <p>An <i>IoStatus</i>-&gt;<i>Status </i>value of STATUS_CACHE_PAGE_LOCKED indicates that page invalidation failed. Be aware that page invalidation can fail even if you pass CC_FLUSH_AND_PURGE_NO_PURGE in the <i>Flags</i> parameter.</p>
 
-<p>The file must be acquired exclusively before you call <b>CcCoherencyFlushAndPurgeCache</b>.</p>
-
-<p>You can flush and/or purge any byte range within a file by using the <i>FileOffset</i> and <i>Length</i> parameters. Or you can flush, purge, or both an entire file if you pass a <b>NULL</b> pointer to the <i>FileOffset</i> parameter.</p>
-
-<p>A call to <b>CcCoherencyFlushAndPurgeCache</b> is a synchronous (blocking) operation, not an asynchronous (non-blocking) operation.</p>
-
-<p>An <i>IoStatus</i>-&gt;<i>Status </i>value of STATUS_CACHE_PAGE_LOCKED indicates that page invalidation failed. Be aware that page invalidation can fail even if you pass CC_FLUSH_AND_PURGE_NO_PURGE in the <i>Flags</i> parameter.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -187,10 +179,10 @@ VOID CcCoherencyFlushAndPurgeCache(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539082">CcFlushCache</a>
+<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539188">CcPurgeCacheSection</a>
+<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
 </dt>
 </dl>
 <p> </p>

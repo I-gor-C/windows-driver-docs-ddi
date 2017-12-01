@@ -79,7 +79,7 @@ typedef struct _VP_SCATTER_GATHER_ELEMENT {
 ## -remarks
 <p>This structure is available in Windows XP and later.</p>
 
-<p>A VP_SCATTER_GATHER_ELEMENT structure is one element of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570572">VP_SCATTER_GATHER_LIST</a> structure's array member.</p>
+<p>A VP_SCATTER_GATHER_ELEMENT structure is one element of the <a href="..\video\ns-video--vp-scatter-gather-list.md">VP_SCATTER_GATHER_LIST</a> structure's array member.</p>
 
 ## -requirements
 <table>
@@ -98,7 +98,7 @@ typedef struct _VP_SCATTER_GATHER_ELEMENT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570572">VP_SCATTER_GATHER_LIST</a>
+<a href="..\video\ns-video--vp-scatter-gather-list.md">VP_SCATTER_GATHER_LIST</a>
 </dt>
 </dl>
 <p> </p>

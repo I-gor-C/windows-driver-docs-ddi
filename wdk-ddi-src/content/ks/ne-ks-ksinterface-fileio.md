@@ -7,7 +7,7 @@ old-location: stream\ksinterface_fileio.htm
 old-project: stream
 ms.assetid: B8965A1A-4EF9-4FCA-8ED0-60F720331AC4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

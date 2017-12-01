@@ -65,7 +65,7 @@ PVP_DMA_ADAPTER VideoPortGetDmaAdapter(
 ### -param <i>VpDeviceDescription</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570569">VP_DEVICE_DESCRIPTION</a> structure, which describes the attributes of the physical device.</p>
+<p>Pointer to a <a href="..\video\ns-video--vp-device-description.md">VP_DEVICE_DESCRIPTION</a> structure, which describes the attributes of the physical device.</p>
 </dd>
 </dl>
 
@@ -73,28 +73,6 @@ PVP_DMA_ADAPTER VideoPortGetDmaAdapter(
 <p><b>VideoPortGetDmaAdapter</b> returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure on success; if it is unsuccessful in obtaining information about the DMA adapter, it returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>The <b>VP_DMA_ADAPTER</b> structure contains attribute information about a particular DMA adapter. This structure is an opaque data type that is used internally by the video port driver.</p>
-
-<p>A video miniport driver should call the video port driver's <b>VideoPortGetDmaAdapter</b> to obtain information about a DMA adapter.</p>
-
-<p>
-<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
-<tr>
-<th>C++</th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct __VP_DMA_ADAPTER* PVP_DMA_ADAPTER;
-</pre>
-</td>
-</tr>
-</table></span></div>
-</p>
-
-<p>This structure has no public members.</p>
-
-<p>This structure is available in Windows XP and later.</p>
-
 <p>The <b>VP_DMA_ADAPTER</b> structure contains attribute information about a particular DMA adapter. This structure is an opaque data type that is used internally by the video port driver.</p>
 
 <p>A video miniport driver should call the video port driver's <b>VideoPortGetDmaAdapter</b> to obtain information about a DMA adapter.</p>
@@ -180,16 +158,16 @@ PVP_DMA_ADAPTER VideoPortGetDmaAdapter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570369">VideoPortStartDma</a>
+<a href="..\video\nf-video-videoportstartdma.md">VideoPortStartDma</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570335">VideoPortPutDmaAdapter</a>
+<a href="..\video\nf-video-videoportputdmaadapter.md">VideoPortPutDmaAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570286">VideoPortCompleteDma</a>
+<a href="..\video\nf-video-videoportcompletedma.md">VideoPortCompleteDma</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570569">VP_DEVICE_DESCRIPTION</a>
+<a href="..\video\ns-video--vp-device-description.md">VP_DEVICE_DESCRIPTION</a>
 </dt>
 </dl>
 <p> </p>

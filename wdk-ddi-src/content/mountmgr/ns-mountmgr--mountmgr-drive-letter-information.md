@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The MOUNTMGR_DRIVE_LETTER_INFORMATION structure is used by the mount manager to furnish a drive letter to a client that has requested a driver letter by means of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560473">IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER</a> request. </p>
+<p>The MOUNTMGR_DRIVE_LETTER_INFORMATION structure is used by the mount manager to furnish a drive letter to a client that has requested a driver letter by means of an <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-next-drive-letter.md">IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER</a> request. </p>
 
 
 ## -syntax
@@ -88,7 +88,7 @@ typedef struct _MOUNTMGR_DRIVE_LETTER_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560473">IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER</a>
+<a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-next-drive-letter.md">IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER</a>
 </dt>
 </dl>
 <p> </p>

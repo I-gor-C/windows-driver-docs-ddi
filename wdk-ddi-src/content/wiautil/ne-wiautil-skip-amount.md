@@ -104,7 +104,7 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540369">CWiauFormatConverter::ConvertToBmp</a>
+<a href="image.cwiauformatconverter_converttobmp">CWiauFormatConverter::ConvertToBmp</a>
 </dt>
 </dl>
 <p> </p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetBindingSupport_IN structure is used to deliver input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565565">SetBindingSupport</a> WMI method.</p>
+<p>The SetBindingSupport_IN structure is used to deliver input parameter data to the <a href="storage.setbindingsupport">SetBindingSupport</a> WMI method.</p>
 
 
 ## -syntax
@@ -69,7 +69,7 @@ typedef struct _SetBindingSupport_IN {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the SetBindingSupport_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the SetBindingSupport_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -88,7 +88,7 @@ typedef struct _SetBindingSupport_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565565">SetBindingSupport</a>
+<a href="storage.setbindingsupport">SetBindingSupport</a>
 </dt>
 </dl>
 <p> </p>

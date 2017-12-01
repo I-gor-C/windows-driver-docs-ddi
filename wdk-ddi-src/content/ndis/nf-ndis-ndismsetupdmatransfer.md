@@ -7,7 +7,7 @@ old-location: netvista\ndismsetupdmatransfer.htm
 old-project: netvista
 ms.assetid: 2a7ebedd-0042-4624-9c9b-721cccfb0c4f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMSetupDmaTransfer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisMSetupDmaTransfer (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisMSetupDmaTransfer (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMSetupDmaTransfer (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMSetupDmaTransfer (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -95,7 +91,7 @@ VOID NdisMSetupDmaTransfer(
 
 <dd>
 <p>The DMA handle returned by the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563646">NdisMRegisterDmaChannel</a> function
+     <a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a> function
      during initialization.</p>
 </dd>
 
@@ -135,39 +131,6 @@ VOID NdisMSetupDmaTransfer(
 <p>None</p>
 
 ## -remarks
-<p>Drivers of subordinate-DMA NICs call 
-    <b>NdisMSetupDmaTransfer</b> in response to incoming send requests, for which the driver sets 
-    <i>WriteToDevice</i> to <b>TRUE</b>. They set 
-    <i>WriteToDevice</i> to <b>FALSE</b> when they transfer received data from the NIC to host memory.</p>
-
-<p>The caller of 
-    <b>NdisMSetupDmaTransfer</b> supplies a buffer descriptor mapping the host memory range that is the target
-    of the transfer or that contains data for a download operation from the host to the NIC. To specify a
-    transfer sized to suit the DMA constraints of the NIC, the caller can set up a subrange to be transferred
-    with the 
-    <i>Offset</i> and 
-    <i>Length</i> parameters if necessary.</p>
-
-<p>The caller must supply a buffer descriptor that specifies the host range into which received data will
-    be transferred from the NIC when 
-    <i>WriteToDevice</i> is <b>FALSE</b>. Otherwise, the buffer descriptor at 
-    <i>Buffer</i> was chained to a packet descriptor input to the miniport driver's 
-    <a href="..\ndis\nc-ndis-miniport-send-net-buffer-lists.md">
-    MiniportSendNetBufferLists</a> function.</p>
-
-<p>To improve performance for small transmit requests, such as a send request of less than 256 bytes in
-    length, a miniport driver can copy the packet data into an internal staging buffer and pass a
-    driver-allocated buffer descriptor mapping that buffer to 
-    <b>NdisMSetupDmaTransfer</b>.</p>
-
-<p>On return from 
-    <b>NdisMSetupDmaTransfer</b>, the host DMA controller has been programmed for the transfer. The miniport
-    driver then programs the NIC for the transfer operation.</p>
-
-<p>When the transfer is complete, the miniport driver must call the 
-    <a href="..\ndis\nf-ndis-ndismcompletedmatransfer.md">
-    NdisMCompleteDmaTransfer</a> function.</p>
-
 <p>Drivers of subordinate-DMA NICs call 
     <b>NdisMSetupDmaTransfer</b> in response to incoming send requests, for which the driver sets 
     <i>WriteToDevice</i> to <b>TRUE</b>. They set 
@@ -248,7 +211,7 @@ VOID NdisMSetupDmaTransfer(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>
+<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -259,12 +222,12 @@ VOID NdisMSetupDmaTransfer(
 <a href="..\ndis\nc-ndis-miniport-send-net-buffer-lists.md">MiniportSendNetBufferLists</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563564">NdisMCompleteDmaTransfer</a>
+<a href="..\ndis\nf-ndis-ndismcompletedmatransfer.md">NdisMCompleteDmaTransfer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563646">NdisMRegisterDmaChannel</a>
+<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSetupDmaTransfer function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSetupDmaTransfer function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

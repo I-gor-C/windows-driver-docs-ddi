@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsflags.htm
 old-project: netvista
 ms.assetid: 9c69d290-0cc6-4444-b9cb-a9555526e9ed
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

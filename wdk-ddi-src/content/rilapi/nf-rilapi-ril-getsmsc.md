@@ -7,7 +7,7 @@ old-location: netvista\ril_getsmsc.htm
 old-project: netvista
 ms.assetid: 07181f26-8fcc-4a0d-8ce6-bfaaea785ef6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetSMSC
 ms.prod: windows-hardware
 ms.technology: windows-devices

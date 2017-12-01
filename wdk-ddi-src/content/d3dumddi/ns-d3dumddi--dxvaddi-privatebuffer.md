@@ -110,7 +110,7 @@ typedef struct _DXVADDI_PRIVATEBUFFER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543009">D3DDDIARG_DECODEEXTENSIONEXECUTE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decodeextensionexecute.md">D3DDDIARG_DECODEEXTENSIONEXECUTE</a>
 </dt>
 </dl>
 <p> </p>

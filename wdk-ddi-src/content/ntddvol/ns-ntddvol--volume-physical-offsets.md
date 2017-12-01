@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The VOLUME_PHYSICAL_OFFSETS structure contains an array of physical offsets and accompanying physical disk numbers and is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff561425">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a> to request a series of pairs of physical offsets and disk numbers that correspond to a single logical offset. </p>
+<p>The VOLUME_PHYSICAL_OFFSETS structure contains an array of physical offsets and accompanying physical disk numbers and is used with <a href="..\ntddvol\ni-ntddvol-ioctl-volume-logical-to-physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a> to request a series of pairs of physical offsets and disk numbers that correspond to a single logical offset. </p>
 
 
 ## -syntax
@@ -58,13 +58,13 @@ typedef struct _VOLUME_PHYSICAL_OFFSETS {
 ### -field <b>NumberOfPhysicalOffsets</b>
 
 <dd>
-<p>Contains the number of physical offsets returned by the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561425">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>. </p>
+<p>Contains the number of physical offsets returned by the call to <a href="..\ntddvol\ni-ntddvol-ioctl-volume-logical-to-physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>. </p>
 </dd>
 
 ### -field <b>PhysicalOffset</b>
 
 <dd>
-<p>Contains an array of structures of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff568023">VOLUME_PHYSICAL_OFFSET</a>. Each element of the array contains a pair consisting of a physical disk number and an accompanying physical offset &lt;disk number, disk offset&gt;. </p>
+<p>Contains an array of structures of type <a href="..\ntddvol\ns-ntddvol--volume-physical-offset.md">VOLUME_PHYSICAL_OFFSET</a>. Each element of the array contains a pair consisting of a physical disk number and an accompanying physical offset &lt;disk number, disk offset&gt;. </p>
 </dd>
 </dl>
 
@@ -88,13 +88,13 @@ typedef struct _VOLUME_PHYSICAL_OFFSETS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561425">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>
+<a href="..\ntddvol\ni-ntddvol-ioctl-volume-logical-to-physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561438">IOCTL_VOLUME_PHYSICAL_TO_LOGICAL</a>
+<a href="..\ntddvol\ni-ntddvol-ioctl-volume-physical-to-logical.md">IOCTL_VOLUME_PHYSICAL_TO_LOGICAL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568023">VOLUME_PHYSICAL_OFFSET</a>
+<a href="..\ntddvol\ns-ntddvol--volume-physical-offset.md">VOLUME_PHYSICAL_OFFSET</a>
 </dt>
 </dl>
 <p> </p>

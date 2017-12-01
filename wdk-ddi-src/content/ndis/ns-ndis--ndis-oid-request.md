@@ -7,7 +7,7 @@ old-location: netvista\ndis_oid_request.htm
 old-project: netvista
 ms.assetid: 3a5e151d-2a2d-4477-a736-8a5f3d3820a2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_OID_REQUEST, NDIS_OID_REQUEST, *PNDIS_OID_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,7 +96,7 @@ typedef struct _NDIS_OID_REQUEST {
 
 <dd>
 <p>The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_OID_REQUEST structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_OID_REQUEST, the 
@@ -108,7 +108,7 @@ typedef struct _NDIS_OID_REQUEST {
 
 <dd>
 <p>The request type as one of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567250">NDIS_REQUEST_TYPE</a> enumeration
+     <a href="..\ntddndis\ne-ntddndis--ndis-request-type.md">NDIS_REQUEST_TYPE</a> enumeration
      values.</p>
 </dd>
 
@@ -133,7 +133,7 @@ typedef struct _NDIS_OID_REQUEST {
      completes the request with a status of NDIS_STATUS_INDICATION_REQUIRED, the miniport driver uses this 
      <b>RequestId</b> value to set the 
      <b>RequestId</b> member of the associated 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567373">NDIS_STATUS_INDICATION</a> structure. 
+     <a href="..\ndis\ns-ndis--ndis-status-indication.md">NDIS_STATUS_INDICATION</a> structure. 
      </p>
 <p>NDIS or overlying drivers can also use the 
      <b>RequestId</b> to cancel a request. When a miniport driver receives a
@@ -217,7 +217,7 @@ struct _QUERY
 <dd>
 <p>The number of bytes that the underlying driver or NDIS transfers into the buffer at 
        <b>InformationBuffer</b> for query-information requests. If the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a> function returns
+       <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a> function returns
        NDIS_STATUS_INVALID_LENGTH, the value of this member is meaningless.</p>
 </dd>
 
@@ -387,7 +387,7 @@ struct _METHOD
 <dd>
 <p>The number of bytes that the underlying driver or NDIS transfers into the buffer at 
         <b>InformationBuffer</b> for query-information requests. If the 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a> function returns
+        <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a> function returns
         NDIS_STATUS_INVALID_LENGTH, the value of this member is meaningless.</p>
 <p>For method OIDs, 
         <b>BytesWritten</b> should be less than or equal to the value in the 
@@ -448,7 +448,7 @@ struct _METHOD
 <dd>
 <p>The revision of an NDIS structure that was supported by an NDIS 6.0 or later driver when it
      handled an OID request. A revisioned structure is any NDIS 6.0 structure that has an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure inside it.
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure inside it.
      When the driver succeeds in setting an OID, it must set 
      <b>SupportedRevision</b> to the revision number of the structure that it
      supported. For more information about NDIS version information, see 
@@ -477,7 +477,7 @@ struct _METHOD
 
 <p>NDIS_OID_REQUEST contains a DATA substructure for each type of operation that a protocol driver can
     request of an underlying driver. Before calling 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a>, the protocol driver fills
+    <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>, the protocol driver fills
     in the relevant members of the substructure that represents the query or set operation it specified in
     the 
     <b>Oid</b> member. NDIS or the underlying driver fills in the remaining members
@@ -492,7 +492,7 @@ struct _METHOD
     NDIS_STATUS_INDICATION_REQUIRED, the driver making the status indication must set the 
     <b>DestinationHandle</b> and 
     <b>RequestId</b> members in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff567373">NDIS_STATUS_INDICATION</a> structure.</p>
+    <a href="..\ndis\ns-ndis--ndis-status-indication.md">NDIS_STATUS_INDICATION</a> structure.</p>
 
 <p>In this case, the driver sets the 
     <b>DestinationHandle</b> and 
@@ -534,16 +534,16 @@ struct _METHOD
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567250">NDIS_REQUEST_TYPE</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-request-type.md">NDIS_REQUEST_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567373">NDIS_STATUS_INDICATION</a>
+<a href="..\ndis\ns-ndis--ndis-status-indication.md">NDIS_STATUS_INDICATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569641">OID_GEN_SUPPORTED_GUIDS</a>
@@ -551,4 +551,4 @@ struct _METHOD
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OID_REQUEST structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OID_REQUEST structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

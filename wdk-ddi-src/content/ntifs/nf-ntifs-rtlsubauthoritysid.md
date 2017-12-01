@@ -29,8 +29,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 req.lib: NtosKrnl.lib
-req.dll: NtosKrnl.exe (kernel mode); 
-Ntdll.dll (user mode)
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql: < DISPATCH_LEVEL
 req.iface: 
 ---
@@ -73,8 +72,6 @@ PULONG RtlSubAuthoritySid(
 <p>If the call to <b>RtlSubAuthoritySid</b> succeeds, the return value is a pointer to the specified SID subauthority. The subauthority value is a relative identifier. (The relative identifier, or RID, is the portion of a SID that identifies a user or group in relation to the authority that issued the SID.) </p>
 
 ## -remarks
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.</p>
-
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.</p>
 
 ## -requirements
@@ -141,10 +138,10 @@ PULONG RtlSubAuthoritySid(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552998">RtlInitializeSid</a>
+<a href="..\ntifs\nf-ntifs-rtlinitializesid.md">RtlInitializeSid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 </dl>
 <p> </p>

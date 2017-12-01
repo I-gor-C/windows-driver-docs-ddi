@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_port_ushort.htm
 old-project: wdf
 ms.assetid: F9688E1F-D8A3-432E-8724-2D601946E707
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_READ_PORT_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

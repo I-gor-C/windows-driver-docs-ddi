@@ -101,18 +101,6 @@ NTSTATUS* DxgkDdiGetPossibleBrightness(
 
 <p><i>DxgkDdiGetPossibleBrightness</i> should be made pageable. </p>
 
-<p>The display miniport driver should return brightness levels in the buffer that the <i>BrightnessLevels</i> parameter points to in the following order:</p>
-
-<p>The first brightness level value is the brightness level that the BIOS uses when the computer runs on AC power. </p>
-
-<p>The second brightness level value is the brightness level that the BIOS uses when the computer runs on DC power. </p>
-
-<p>The remaining brightness level values are hardware-supported brightness levels. </p>
-
-<p>To simplify your job of implementing a display miniport driver, the operating system provides the driver with the buffer that the <i>BrightnessLevels</i> parameter points to.</p>
-
-<p><i>DxgkDdiGetPossibleBrightness</i> should be made pageable. </p>
-
 ## -requirements
 <table>
 <tr>

@@ -57,7 +57,7 @@ NTSTATUS D3DKMTDestroyContext(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547869">D3DKMT_DESTROYCONTEXT</a> structure that contains the handle to the kernel-mode device context.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroycontext.md">D3DKMT_DESTROYCONTEXT</a> structure that contains the handle to the kernel-mode device context.</p>
 </dd>
 </dl>
 
@@ -134,7 +134,7 @@ NTSTATUS D3DKMTDestroyContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547869">D3DKMT_DESTROYCONTEXT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroycontext.md">D3DKMT_DESTROYCONTEXT</a>
 </dt>
 </dl>
 <p> </p>

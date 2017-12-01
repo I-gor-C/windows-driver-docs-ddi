@@ -113,7 +113,7 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE {
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914482">DXGK_UPDATEPAGETABLEFLAGS</a> structure describing the update operation.</p>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-updatepagetableflags.md">DXGK_UPDATEPAGETABLEFLAGS</a> structure describing the update operation.</p>
 </dd>
 
 ### -field <b>DriverProtection</b>

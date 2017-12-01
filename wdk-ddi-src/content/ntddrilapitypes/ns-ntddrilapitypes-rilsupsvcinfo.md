@@ -7,7 +7,7 @@ old-location: netvista\rilsupsvcinfo.htm
 old-project: netvista
 ms.assetid: 1f8f7c8c-f09a-4bf5-a15b-42f210122b54
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSUPSVCINFO, RILSUPSVCINFO, *LPRILSUPSVCINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

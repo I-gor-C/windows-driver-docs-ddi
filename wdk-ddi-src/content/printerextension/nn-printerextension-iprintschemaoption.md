@@ -44,7 +44,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaOption</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/hh451262">IPrintSchemaDisplayableElement</a>. <b>IPrintSchemaOption</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaOption</b> interface inherits from <a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>. <b>IPrintSchemaOption</b> also has these types of members:</p>
 
 <p>The <b>IPrintSchemaOption</b> interface has these methods.</p>
 
@@ -55,7 +55,7 @@ req.product: Windows 10 or later.
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaOption</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973227">Constrained</a>
+<a href="print.iprintschemaoption_constrained">Constrained</a>
 </p>
 
 <p>Read-only</p>
@@ -63,7 +63,7 @@ req.product: Windows 10 or later.
 <p>Gets  the constraint setting type for the schema option.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973228">Selected</a>
+<a href="print.iprintschemaoption_selected">Selected</a>
 </p>
 
 <p>Read-only</p>
@@ -80,7 +80,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451321">GetPropertyValue</a>
+<a href="print.iprintschemaoption_getpropertyvalue">GetPropertyValue</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the XML node for the "value" child element of a "Property"  or a "ScoredProperty" element with the given name.</p>
@@ -99,7 +99,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973227">Constrained</a>
+<a href="print.iprintschemaoption_constrained">Constrained</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -112,7 +112,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973228">Selected</a>
+<a href="print.iprintschemaoption_selected">Selected</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -123,7 +123,7 @@ req.product: Windows 10 or later.
 </td>
 </tr>
 </table><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973227">Constrained</a>
+<a href="print.iprintschemaoption_constrained">Constrained</a>
 </p>
 
 <p>Read-only</p>
@@ -131,7 +131,7 @@ req.product: Windows 10 or later.
 <p>Gets  the constraint setting type for the schema option.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973228">Selected</a>
+<a href="print.iprintschemaoption_selected">Selected</a>
 </p>
 
 <p>Read-only</p>
@@ -141,9 +141,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>You must ensure that each Feature or Option in a PrintTicket or PrintCapabilities XML document has a <i>name</i> attribute specified. This attribute is used to build the <b>IPrintSchemaOption</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451284">IPrintSchemaFeature</a> objects. If the <i>name</i> attribute is omitted, the feature or option will not be displayed in the object model, or the Microsoft-provided print preferences experience.</p>
-
-<p>You must ensure that each Feature or Option in a PrintTicket or PrintCapabilities XML document has a <i>name</i> attribute specified. This attribute is used to build the <b>IPrintSchemaOption</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451284">IPrintSchemaFeature</a> objects. If the <i>name</i> attribute is omitted, the feature or option will not be displayed in the object model, or the Microsoft-provided print preferences experience.</p>
+<p>You must ensure that each Feature or Option in a PrintTicket or PrintCapabilities XML document has a <i>name</i> attribute specified. This attribute is used to build the <b>IPrintSchemaOption</b> and <a href="..\printerextension\nn-printerextension-iprintschemafeature.md">IPrintSchemaFeature</a> objects. If the <i>name</i> attribute is omitted, the feature or option will not be displayed in the object model, or the Microsoft-provided print preferences experience.</p>
 
 ## -requirements
 <table>
@@ -178,7 +176,7 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451262">IPrintSchemaDisplayableElement</a>
+<a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
 </dt>
 <dt>
 <a href="print.iprintschemafeature_getoption">IPrintSchemaFeature::GetOption</a>
@@ -187,10 +185,10 @@ req.product: Windows 10 or later.
 <a href="print.iprintschemafeature_selectedoption">IPrintSchemaFeature::SelectedOption</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh846198">IPrintSchemaOptionCollection</a>
+<a href="..\printerextension\nn-printerextension-iprintschemaoptioncollection.md">IPrintSchemaOptionCollection</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451378">IPrintSchemaPageMediaSizeOption</a>
+<a href="..\printerextension\nn-printerextension-iprintschemapagemediasizeoption.md">IPrintSchemaPageMediaSizeOption</a>
 </dt>
 </dl>
 <p> </p>

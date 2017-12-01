@@ -7,7 +7,7 @@ old-location: stream\ksdispatchsetsecurity.htm
 old-project: stream
 ms.assetid: c1af342a-438d-4c83-be2d-a4c4c9f204b5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsDispatchSetSecurity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,8 +72,6 @@ NTSTATUS KsDispatchSetSecurity(
 <p>The <b>KsDispatchSetSecurity</b> function returns the security set status and completes the IRP.</p>
 
 ## -remarks
-<p>This security descriptor must be allocated in its own piece of pool memory, since <b>KsDispatchSetSecurity</b> will replace the existing descriptor with a new allocation. Therefore, it cannot be shared with <b>CreateItem</b>.</p>
-
 <p>This security descriptor must be allocated in its own piece of pool memory, since <b>KsDispatchSetSecurity</b> will replace the existing descriptor with a new allocation. Therefore, it cannot be shared with <b>CreateItem</b>.</p>
 
 ## -requirements

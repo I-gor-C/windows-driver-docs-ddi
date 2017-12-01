@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaParameterDefinition</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/hh451262">IPrintSchemaDisplayableElement</a>. <b>IPrintSchemaParameterDefinition</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaParameterDefinition</b> interface inherits from <a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>. <b>IPrintSchemaParameterDefinition</b> also has these types of members:</p>
 
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaParameterDefinition</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn454563">DataType</a>
+<a href="print._iprintschemaparameterdefinition_datatype">DataType</a>
 </p>
 
 <p>Read-only</p>
 
-<p>The <b>DataType</b> property Gets the <a href="https://msdn.microsoft.com/library/windows/hardware/dn454562">PrintSchemaParameterDataType</a> enumerated value that indicates the expected data type for the Print Schema parameter.</p>
+<p>The <b>DataType</b> property Gets the <a href="print.tagprintschemaparameterdatatype">PrintSchemaParameterDataType</a> enumerated value that indicates the expected data type for the Print Schema parameter.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn454564">RangeMax</a>
+<a href="print._iprintschemaparameterdefinition_rangemax">RangeMax</a>
 </p>
 
 <p>Read-only</p>
@@ -66,7 +66,7 @@ req.product: Windows 10 or later.
 <p>The <b>RangeMax</b> property Gets the maximum value of the allowed data range.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn454565">RangeMin</a>
+<a href="print._iprintschemaparameterdefinition_rangemin">RangeMin</a>
 </p>
 
 <p>Read-only</p>
@@ -74,7 +74,7 @@ req.product: Windows 10 or later.
 <p>The <b>RangeMin</b> property Gets the minimum value of the allowed data range.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn454566">UnitType</a>
+<a href="print._iprintschemaparameterdefinition_unittype">UnitType</a>
 </p>
 
 <p>Read-only</p>
@@ -82,7 +82,7 @@ req.product: Windows 10 or later.
 <p>The <b>UnitType</b> property Gets the unit type.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn454567">UserInputRequired</a>
+<a href="print._iprintschemaparameterdefinition_userinputrequired">UserInputRequired</a>
 </p>
 
 <p>Read-only</p>
@@ -127,7 +127,7 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451262">IPrintSchemaDisplayableElement</a>
+<a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
 </dt>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/gg463385.aspx">Print Schema Specification</a></dt>
 </dl>

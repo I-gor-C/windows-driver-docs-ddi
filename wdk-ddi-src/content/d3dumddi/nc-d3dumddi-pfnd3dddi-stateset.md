@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY StateSet(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543380">D3DDDIARG_STATESET</a> structure that describes how to set the state block.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-stateset.md">D3DDDIARG_STATESET</a> structure that describes how to set the state block.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ __checkReturn HRESULT APIENTRY StateSet(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543380">D3DDDIARG_STATESET</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-stateset.md">D3DDDIARG_STATESET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: kernel\rtlequalmemory.htm
 old-project: kernel
 ms.assetid: 43695fa9-32e1-4bd5-b146-88d6d03fe9fb
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlEqualMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,10 +84,6 @@ LOGICAL RtlEqualMemory(
 
 <p>Callers of <b>RtlEqualMemory</b> can be running at any IRQL if both blocks of memory are resident.</p>
 
-<p><b>RtlEqualMemory</b> begins the comparison with byte zero of each block.</p>
-
-<p>Callers of <b>RtlEqualMemory</b> can be running at any IRQL if both blocks of memory are resident.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -131,9 +127,9 @@ LOGICAL RtlEqualMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561778">RtlCompareMemory</a>
+<a href="..\wdm\nf-wdm-rtlcomparememory.md">RtlCompareMemory</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlEqualMemory routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlEqualMemory routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

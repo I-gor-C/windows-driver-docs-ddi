@@ -7,7 +7,7 @@ old-location: netvista\ril_getnumberofmodems.htm
 old-project: netvista
 ms.assetid: 81747f24-d1ed-412a-b0ae-95b737059b0d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetNumberOfModems
 ms.prod: windows-hardware
 ms.technology: windows-devices

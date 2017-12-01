@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains pointers to event callback functions implemented by the UDE client driver for a USB host controller. Initialize this structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt628010">UDECX_WDF_DEVICE_CONFIG_INIT</a>.</p>
+<p>Contains pointers to event callback functions implemented by the UDE client driver for a USB host controller. Initialize this structure by calling <a href="buses.udecx_wdf_device_config_init">UDECX_WDF_DEVICE_CONFIG_INIT</a>.</p>
 
 
 ## -syntax
@@ -81,19 +81,19 @@ typedef struct _UDECX_WDF_DEVICE_CONFIG {
 ### -field <b>EvtUdecxWdfDeviceQueryUsbCapability</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595919">EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_udecx_wdf_device_query_usb_capability">EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY</a> callback function.</p>
 </dd>
 
 ### -field <b>ResetAction</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt628011">UDECX_WDF_DEVICE_RESET_ACTION</a>-type value that indicates the reset action: each attached device or the host controller.</p>
+<p>A <a href="buses.udecx_wdf_device_reset_action">UDECX_WDF_DEVICE_RESET_ACTION</a>-type value that indicates the reset action: each attached device or the host controller.</p>
 </dd>
 
 ### -field <b>EvtUdecxWdfDeviceReset</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595920">EVT_UDECX_WDF_DEVICE_RESET</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_udecx_wdf_device_reset">EVT_UDECX_WDF_DEVICE_RESET</a> callback function.</p>
 </dd>
 </dl>
 
@@ -117,10 +117,10 @@ typedef struct _UDECX_WDF_DEVICE_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt628010">UDECX_WDF_DEVICE_CONFIG_INIT</a>
+<a href="buses.udecx_wdf_device_config_init">UDECX_WDF_DEVICE_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627990">UdecxWdfDeviceAddUsbDeviceEmulation</a>
+<a href="buses.udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>
 </dt>
 </dl>
 <p> </p>

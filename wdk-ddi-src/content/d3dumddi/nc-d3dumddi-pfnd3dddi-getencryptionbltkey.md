@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY GetEncryptionBltKey(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543164">D3DDDIARG_GETENCRYPTIONBLTKEY</a> structure that describes the key for an encrypted session. </p>
+<p> A pointer to a <a href="display.d3dddiarg_getencryptionbltkey">D3DDDIARG_GETENCRYPTIONBLTKEY</a> structure that describes the key for an encrypted session. </p>
 </dd>
 </dl>
 
@@ -83,11 +83,7 @@ __checkReturn HRESULT APIENTRY GetEncryptionBltKey(
 ## -remarks
 <p>The hardware and driver can optionally support the <i>GetEncryptionBltKey</i> function for all crypto types.  </p>
 
-<p>Each time the Direct3D runtime calls the driver's <i>GetEncryptionBltKey</i> function, the driver should generate a new read-back key. If the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function previously created the encryption session with the <b>CryptoType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542923">D3DDDIARG_CREATECRYPTOSESSION</a> structure set to D3DCRYPTOTYPE_AES128_CTR, the driver and hardware should encrypt the read-back key with the session key.</p>
-
-<p>The hardware and driver can optionally support the <i>GetEncryptionBltKey</i> function for all crypto types.  </p>
-
-<p>Each time the Direct3D runtime calls the driver's <i>GetEncryptionBltKey</i> function, the driver should generate a new read-back key. If the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function previously created the encryption session with the <b>CryptoType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542923">D3DDDIARG_CREATECRYPTOSESSION</a> structure set to D3DCRYPTOTYPE_AES128_CTR, the driver and hardware should encrypt the read-back key with the session key.</p>
+<p>Each time the Direct3D runtime calls the driver's <i>GetEncryptionBltKey</i> function, the driver should generate a new read-back key. If the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a> function previously created the encryption session with the <b>CryptoType</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createcryptosession.md">D3DDDIARG_CREATECRYPTOSESSION</a> structure set to D3DCRYPTOTYPE_AES128_CTR, the driver and hardware should encrypt the read-back key with the session key.</p>
 
 ## -requirements
 <table>
@@ -124,13 +120,13 @@ __checkReturn HRESULT APIENTRY GetEncryptionBltKey(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542923">D3DDDIARG_CREATECRYPTOSESSION</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createcryptosession.md">D3DDDIARG_CREATECRYPTOSESSION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543164">D3DDDIARG_GETENCRYPTIONBLTKEY</a>
+<a href="display.d3dddiarg_getencryptionbltkey">D3DDDIARG_GETENCRYPTIONBLTKEY</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-encryptionblt.md">EncryptionBlt</a>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Do not use the <b>DxApiGetVersion</b> function; use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557364">DxApi</a> function along with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550637">DD_DXAPI_GETVERSIONNUMBER</a> function identifier instead.</p>
+<p>Do not use the <b>DxApiGetVersion</b> function; use the <a href="..\dxapi\nf-dxapi-dxapi.md">DxApi</a> function along with the <a href="display.dd_dxapi_getversionnumber">DD_DXAPI_GETVERSIONNUMBER</a> function identifier instead.</p>
 <p>The <b>DxApiGetVersion</b> function returns a Direct Sound version number of 4.02.</p>
 
 
@@ -100,13 +100,13 @@ ULONG DxApiGetVersion(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550637">DD_DXAPI_GETVERSIONNUMBER</a>
+<a href="display.dd_dxapi_getversionnumber">DD_DXAPI_GETVERSIONNUMBER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549530">DDGETVERSIONNUMBER</a>
+<a href="display.ddgetversionnumber">DDGETVERSIONNUMBER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557364">DxApi</a>
+<a href="..\dxapi\nf-dxapi-dxapi.md">DxApi</a>
 </dt>
 </dl>
 <p> </p>

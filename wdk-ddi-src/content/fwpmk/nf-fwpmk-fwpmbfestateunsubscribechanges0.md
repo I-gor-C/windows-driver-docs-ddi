@@ -7,7 +7,7 @@ old-location: netvista\fwpmbfestateunsubscribechanges0.htm
 old-project: netvista
 ms.assetid: 1a84401a-d7da-43d2-925d-0d6ed370c980
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpmBfeStateUnsubscribeChanges0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ NTSTATUS NTAPI FwpmBfeStateUnsubscribeChanges0(
 <dd>
 <p>A handle associated with the registration of the callback function that is being deregistered.
      This handle was returned to the callout driver when it called the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550062">FwpmBfeStateSubscribeChanges0</a> function to register the callback function.</p>
+     <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">FwpmBfeStateSubscribeChanges0</a> function to register the callback function.</p>
 </dd>
 </dl>
 
@@ -78,20 +78,6 @@ NTSTATUS NTAPI FwpmBfeStateUnsubscribeChanges0(
 <p> </p>
 
 ## -remarks
-<p>A callout driver calls the 
-    <b>FwpmBfeStateUnsubscribeChanges0</b> function to deregister a callback function that was previously
-    registered by calling the 
-    <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
-    FwpmBfeStateSubscribeChanges0</a> function.</p>
-
-<p>If a callout driver registers a callback function by calling the 
-    <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
-    FwpmBfeStateSubscribeChanges0</a> function, it must deregister the callback function before the callout
-    driver can be unloaded.</p>
-
-<p>Do not call <b>FwpmBfeStateUnsubscribeChanges0</b> from a callback function that your driver previously registered by calling <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
-    FwpmBfeStateSubscribeChanges0</a>. Doing so can cause a deadlock.</p>
-
 <p>A callout driver calls the 
     <b>FwpmBfeStateUnsubscribeChanges0</b> function to deregister a callback function that was previously
     registered by calling the 
@@ -165,4 +151,4 @@ NTSTATUS NTAPI FwpmBfeStateUnsubscribeChanges0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmBfeStateUnsubscribeChanges0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmBfeStateUnsubscribeChanges0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

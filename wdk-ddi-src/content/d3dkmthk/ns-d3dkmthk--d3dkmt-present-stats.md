@@ -61,7 +61,7 @@ typedef struct _D3DKMT_PRESENT_STATS {
 ### -field <b>PresentCount</b>
 
 <dd>
-<p>[out] A UINT value that indicates the number of times that the OpenGL installable client driver (ICD) called the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547091">D3DKMTPresent</a> function on a rendering device or swap chain. After the maximum value is reached, <b>PresentCount</b> starts over at zero. When a new rendering device is created, <b>PresentCount</b> is initialized to zero. The operating system maintains a present counter for each swap chain that is created.</p>
+<p>[out] A UINT value that indicates the number of times that the OpenGL installable client driver (ICD) called the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpresent.md">D3DKMTPresent</a> function on a rendering device or swap chain. After the maximum value is reached, <b>PresentCount</b> starts over at zero. When a new rendering device is created, <b>PresentCount</b> is initialized to zero. The operating system maintains a present counter for each swap chain that is created.</p>
 </dd>
 
 ### -field <b>PresentRefreshCount</b>
@@ -121,10 +121,10 @@ typedef struct _D3DKMT_PRESENT_STATS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547905">D3DKMT_DEVICEPRESENT_STATE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-devicepresent-state.md">D3DKMT_DEVICEPRESENT_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547091">D3DKMTPresent</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpresent.md">D3DKMTPresent</a>
 </dt>
 </dl>
 <p> </p>

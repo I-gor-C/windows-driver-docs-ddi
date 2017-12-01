@@ -7,7 +7,7 @@ old-location: sensors\gnss_agnss_inject.htm
 old-project: sensors
 ms.assetid: B81F5D71-9928-412C-8199-787E71CE2638
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT, *PGNSS_AGNSS_INJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -106,21 +106,21 @@ typedef struct {
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn925095">GNSS_AGNSS_INJECTTIME</a> contains the format for AGNSS time injection.</p>
+<a href="sensors.gnss_agnss_injecttime">GNSS_AGNSS_INJECTTIME</a> contains the format for AGNSS time injection.</p>
 </dd>
 
 ### -field <b>Position</b>
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn925094">GNSS_AGNSS_INJECTPOSITION</a> contains  the format for AGNSS position injection.</p>
+<a href="sensors.gnss_agnss_injectposition">GNSS_AGNSS_INJECTPOSITION</a> contains  the format for AGNSS position injection.</p>
 </dd>
 
 ### -field <b>BlobData</b>
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn925093">GNSS_AGNSS_INJECTBLOB</a>  contains the format for AGNSS extended ephemeris injection.</p>
+<a href="sensors.gnss_agnss_injectblob">GNSS_AGNSS_INJECTBLOB</a>  contains the format for AGNSS extended ephemeris injection.</p>
 </dd>
 </dl>
 

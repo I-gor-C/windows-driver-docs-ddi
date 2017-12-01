@@ -87,10 +87,6 @@ NTSTATUS RtlIsPartialPlaceholderFileInfo(
         to <b>NtQueryDirectoryFile</b>, this may point to the first or any subsequent
         subsequent entry in the buffer which is found by walking the buffer.</p>
 
-<p> If <b>InfoBuffer</b> is from a call
-        to <b>NtQueryDirectoryFile</b>, this may point to the first or any subsequent
-        subsequent entry in the buffer which is found by walking the buffer.</p>
-
 ## -requirements
 <table>
 <tr>

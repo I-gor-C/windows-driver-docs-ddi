@@ -7,7 +7,7 @@ old-location: audio\imusictechnology_settechnology.htm
 old-project: audio
 ms.assetid: 7e32b408-930d-4ef4-960e-1a0da5ef6803
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IMusicTechnology, SetTechnology, IMusicTechnology::SetTechnology
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface: IMusicTechnology
 
 
 ## -description
-<p>The <code>SetTechnology</code> method changes the <b>Technology</b> member of each <a href="https://msdn.microsoft.com/library/windows/hardware/ff537097">KSDATARANGE_MUSIC</a> structure in the data ranges for the miniport driver's pins.</p>
+<p>The <code>SetTechnology</code> method changes the <b>Technology</b> member of each <a href="audio.ksdatarange_music">KSDATARANGE_MUSIC</a> structure in the data ranges for the miniport driver's pins.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ NTSTATUS SetTechnology(
 ### -param <i>Technology</i> [in]
 
 <dd>
-<p>Specifies a technology GUID. This parameter should point to one of the GUIDs that are defined for the <b>Technology</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537097">KSDATARANGE_MUSIC</a> structure.</p>
+<p>Specifies a technology GUID. This parameter should point to one of the GUIDs that are defined for the <b>Technology</b> member of the <a href="audio.ksdatarange_music">KSDATARANGE_MUSIC</a> structure.</p>
 </dd>
 </dl>
 
@@ -88,36 +88,6 @@ NTSTATUS SetTechnology(
 <p>KSMUSIC_TECHNOLOGY_SWSYNTH</p>
 
 <p>MOD_SWSYNTH</p>
-
-<p> </p>
-
-<p>For more information, see <a href="NULL">Music Technology GUIDs</a>.</p>
-
-<p>The <code>SetTechology</code> method should be called before the miniport driver's <b>Init</b> method. If <code>SetTechnology</code> is not called, the miniport driver's <b>Technology</b> members are all set to KSMUSIC_TECHNOLOGY_PORT by default.</p>
-
-<p>The following table lists the GUIDs that are defined for the <i>Technology</i> parameter and the corresponding integer value to which the <b>wTechnology</b> member of the MIDIOUTCAPS structure is set during a call to <b>midiOutGetDevCaps</b>.</p>
-
-<p>KSMUSIC_TECHNOLOGY_PORT</p>
-
-<p>MOD_MIDIPORT</p>
-
-<p>KSMUSIC_TECHNOLOGY_SQSYNTH</p>
-
-<p>MOD_SQSYNTH</p>
-
-<p>KSMUSIC_TECHNOLOGY_FMSYNTH </p>
-
-<p>MOD_FMSYNTH</p>
-
-<p>KSMUSIC_TECHNOLOGY_WAVETABLE</p>
-
-<p>MOD_WAVETABLE</p>
-
-<p>KSMUSIC_TECHNOLOGY_SWSYNTH</p>
-
-<p>MOD_SWSYNTH</p>
-
-<p> </p>
 
 <p>For more information, see <a href="NULL">Music Technology GUIDs</a>.</p>
 
@@ -156,12 +126,12 @@ NTSTATUS SetTechnology(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536778">IMusicTechnology</a>
+<a href="..\portcls\nn-portcls-imusictechnology.md">IMusicTechnology</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537097">KSDATARANGE_MUSIC</a>
+<a href="audio.ksdatarange_music">KSDATARANGE_MUSIC</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IMusicTechnology::SetTechnology method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IMusicTechnology::SetTechnology method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

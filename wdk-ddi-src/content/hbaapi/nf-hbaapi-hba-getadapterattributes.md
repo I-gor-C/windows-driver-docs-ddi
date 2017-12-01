@@ -58,18 +58,18 @@ HBA_STATUS HBA_API HBA_GetAdapterAttributes(
 ### -param <i>HbaHandle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port is located.  </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located.  </p>
 </dd>
 
 ### -param <i>HbaAdapterAttributes</i> [out]
 
 <dd>
-<p>Contains, on return, a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556044">HBA_AdapterAttributes</a> that holds the HBA attributes. </p>
+<p>Contains, on return, a structure of type <a href="..\hbaapi\ns-hbaapi-hba-adapterattributes.md">HBA_AdapterAttributes</a> that holds the HBA attributes. </p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_GetAdapterAttributes</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA.</p>
+<p>The <b>HBA_GetAdapterAttributes</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA.</p>
 
 ## -remarks
 
@@ -121,10 +121,10 @@ HBA_STATUS HBA_API HBA_GetAdapterAttributes(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556044">HBA_AdapterAttributes</a>
+<a href="..\hbaapi\ns-hbaapi-hba-adapterattributes.md">HBA_AdapterAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: kernel\rtldwordptrsub.htm
 old-project: kernel
 ms.assetid: B3268640-F256-4B64-AE95-8D30A6A7BF6C
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlDWordPtrSub
 ms.prod: windows-hardware
 ms.technology: windows-devices

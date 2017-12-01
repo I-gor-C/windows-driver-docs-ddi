@@ -73,7 +73,7 @@ HRESULT _stdcall wiasParseEndorserString(
 ### -param <i>pInfo</i> [out, optional]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549556">WIAS_ENDORSER_INFO</a> structure containing the page count and a list of custom token/value pairs. Can be <b>NULL</b>.</p>
+<p>Pointer to a <a href="..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-info.md">WIAS_ENDORSER_INFO</a> structure containing the page count and a list of custom token/value pairs. Can be <b>NULL</b>.</p>
 </dd>
 
 ### -param <i>pOutputString</i> [out]
@@ -91,15 +91,7 @@ HRESULT _stdcall wiasParseEndorserString(
 
 <p>The list of standard WIA endorser tokens can be found in <i>wiadef.h</i>.</p>
 
-<p>Drivers can request that <b>wiasParseEndorserString</b> substitute values for vendor-defined tokens by filling out a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549562">WIAS_ENDORSER_VALUE</a> structure for each token/value pair, and packaging all of these structures in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549556">WIAS_ENDORSER_INFO</a> structure. The following example shows how this function can be used.</p>
-
-<p>Assuming that the WIA_DPS_ENDORSER_STRING property contains "This is $MY_TOKEN$", and that the call to <b>wiasParseEndorserString</b> was successful, <i>bstrResultingEndorser</i> will now contain "This is My value".</p>
-
-<p>An application sets the WIA_DPS_ENDORSER_STRING property to a string that can contain the WIA service-defined tokens $DATE$, $TIME$, $PAGE_COUNT$, $DAY$, $MONTH$, and $YEAR$, as well as vendor-defined tokens. After a driver calls <b>wiasParseEndorserString</b>, the string pointed to by <i>pOutputString</i> contains a copy of the string in WIA_DPS_ENDORSER_STRING property, but with any tokens replaced by the values the tokens represent. For example, if the application set the endorser string to "This page was scanned on $DATE$", and the current date was October 1, 2000, the resulting output string would be "This page was scanned on 2000/10/1".</p>
-
-<p>The list of standard WIA endorser tokens can be found in <i>wiadef.h</i>.</p>
-
-<p>Drivers can request that <b>wiasParseEndorserString</b> substitute values for vendor-defined tokens by filling out a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549562">WIAS_ENDORSER_VALUE</a> structure for each token/value pair, and packaging all of these structures in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549556">WIAS_ENDORSER_INFO</a> structure. The following example shows how this function can be used.</p>
+<p>Drivers can request that <b>wiasParseEndorserString</b> substitute values for vendor-defined tokens by filling out a <a href="..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-value.md">WIAS_ENDORSER_VALUE</a> structure for each token/value pair, and packaging all of these structures in a <a href="..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-info.md">WIAS_ENDORSER_INFO</a> structure. The following example shows how this function can be used.</p>
 
 <p>Assuming that the WIA_DPS_ENDORSER_STRING property contains "This is $MY_TOKEN$", and that the call to <b>wiasParseEndorserString</b> was successful, <i>bstrResultingEndorser</i> will now contain "This is My value".</p>
 
@@ -158,10 +150,10 @@ HRESULT _stdcall wiasParseEndorserString(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549556">WIAS_ENDORSER_INFO</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-info.md">WIAS_ENDORSER_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549562">WIAS_ENDORSER_VALUE</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--wias-endorser-value.md">WIAS_ENDORSER_VALUE</a>
 </dt>
 </dl>
 <p> </p>

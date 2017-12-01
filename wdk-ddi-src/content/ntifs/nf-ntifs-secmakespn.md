@@ -173,10 +173,10 @@ NTSTATUS SecMakeSPN(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556585">SecMakeSPNEx</a>
+<a href="..\ntifs\nf-ntifs-secmakespnex.md">SecMakeSPNEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556592">SecMakeSPNEx2</a>
+<a href="..\ntifs\nf-ntifs-secmakespnex2.md">SecMakeSPNEx2</a>
 </dt>
 </dl>
 <p> </p>

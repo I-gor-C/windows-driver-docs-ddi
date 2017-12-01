@@ -70,7 +70,7 @@ VOID APIENTRY* Discard(D3D11_1)(
 ### -param <i>HandleType</i> 
 
 <dd>
-<p>A value, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff542152">D3D11DDI_HANDLETYPE</a>, that identifies the context handle type.</p>
+<p>A value, of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi-handletype.md">D3D11DDI_HANDLETYPE</a>, that identifies the context handle type.</p>
 </dd>
 
 ### -param <i>hResourceOrView</i> 
@@ -82,7 +82,7 @@ VOID APIENTRY* Discard(D3D11_1)(
 ### -param <i>pRects</i> [in, optional]
 
 <dd>
-<p>An optional array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structures for the rectangles in the resource view to discard. If <b>NULL</b>, the <i>Discard(D3D11_1)</i> function discards the entire surface.</p>
+<p>An optional array of <a href="display.rect">RECT</a> structures for the rectangles in the resource view to discard. If <b>NULL</b>, the <i>Discard(D3D11_1)</i> function discards the entire surface.</p>
 </dd>
 
 ### -param <i>NumRects</i> 
@@ -96,9 +96,7 @@ VOID APIENTRY* Discard(D3D11_1)(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The D3D10_DDI_RECT structure is defined as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure.</p>
-
-<p>The D3D10_DDI_RECT structure is defined as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure.</p>
+<p>The D3D10_DDI_RECT structure is defined as a <a href="display.rect">RECT</a> structure.</p>
 
 ## -requirements
 <table>
@@ -143,10 +141,10 @@ VOID APIENTRY* Discard(D3D11_1)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406443">D3D11_1DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-devicefuncs~r1.md">D3D11_1DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542152">D3D11DDI_HANDLETYPE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi-handletype.md">D3D11DDI_HANDLETYPE</a>
 </dt>
 </dl>
 <p> </p>

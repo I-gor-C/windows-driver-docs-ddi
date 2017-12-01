@@ -67,7 +67,7 @@ SIZE_T APIENTRY* CalcPrivateBlendStateSize(D3D11_1)(
 ### -param <i>pBlendDesc</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451041">D3D11_1_DDI_BLEND_DESC</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region.</p>
+<p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1-ddi-blend-desc.md">D3D11_1_DDI_BLEND_DESC</a> structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region.</p>
 </dd>
 </dl>
 
@@ -120,7 +120,7 @@ SIZE_T APIENTRY* CalcPrivateBlendStateSize(D3D11_1)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451041">D3D11_1_DDI_BLEND_DESC</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1-ddi-blend-desc.md">D3D11_1_DDI_BLEND_DESC</a>
 </dt>
 </dl>
 <p> </p>

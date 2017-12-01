@@ -94,8 +94,6 @@ typedef EVT_IDD_CX_MONITOR_GET_DEFAULT_DESCRIPTION_MODES PFN_IDD_CX_MONITOR_GET_
 ## -remarks
 <p>The driver must create at least one monitor mode for the monitor description.</p>
 
-<p>The driver must create at least one monitor mode for the monitor description.</p>
-
 ## -requirements
 <table>
 <tr>

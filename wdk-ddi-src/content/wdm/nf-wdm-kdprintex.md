@@ -120,18 +120,6 @@ ULONG KdPrintEx(
 
 <p>This routine is defined in ntddk.h and ndis.h; component filter IDs are defined in dpfilter.h, ndis.h, and wdm.h. Include ntddk.h or ndis.h.</p>
 
-<p><b>KdPrintEx</b> is identical to the <b>DbgPrintEx</b> routine in code that is compiled for a debug configuration. This routine has no effect in code that is compiled for a release build. Only kernel-mode drivers can call the <b>KdPrintEx</b> routine.<div class="alert"><b>Note</b>  The Windows Driver Kit (WDK) 8 and WDK 7 manage the <b>DBG</b> preprocessor constant define appropriately for debug (check) and release (free) builds. For more information, see <a href="NULL">Conditional Compilation and the Build Environment</a>.</div>
-<div> </div>
-</p>
-
-<p><b>KdPrintEx</b> either passes the specified string to the kernel debugger or does nothing at all, depending on the values of <i>ComponentId</i>, <i>Level</i>, and the corresponding component filter masks. For details, see <a href="NULL">Reading and Filtering Debugging Messages</a>.</p>
-
-<p>Unless it is absolutely necessary, you should not obtain a string from user input or another process and pass it to <b>KdPrintEx</b>. If you do use a string that you did not create, you must verify that this is a valid format string, and that the format codes match the argument list in type and quantity. The best coding practice is for all <i>Format</i> strings to be static and defined at compile time.</p>
-
-<p>There is no upper limit to the size of the <i>Format</i> string or the number of arguments. However, any single call to <b>KdPrintEx</b> will only transmit 512 bytes of information. There is also a limit to the size of the DbgPrint buffer. See <a href="devtest.reading_and_filtering_debugging_messages#ddk_the_dbgprint_buffer_and_the_debugger_tools#ddk_the_dbgprint_buffer_and_the_debugger_tools">The DbgPrint Buffer and the Debugger</a> for details.</p>
-
-<p>This routine is defined in ntddk.h and ndis.h; component filter IDs are defined in dpfilter.h, ndis.h, and wdm.h. Include ntddk.h or ndis.h.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -168,7 +156,7 @@ ULONG KdPrintEx(
 </th>
 <td width="70%">
 <dl>
-<dt>NtosKrnl.lib (See <a href="https://msdn.microsoft.com/library/windows/hardware/ff543634">DbgPrintEx</a>.)</dt>
+<dt>NtosKrnl.lib (See <a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -187,13 +175,13 @@ ULONG KdPrintEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543632">DbgPrint</a>
+<a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543634">DbgPrintEx</a>
+<a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548092">KdPrint</a>
+<a href="..\wdm\nf-wdm-kdprint.md">KdPrint</a>
 </dt>
 </dl>
 <p> </p>

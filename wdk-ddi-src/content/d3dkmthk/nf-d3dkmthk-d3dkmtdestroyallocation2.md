@@ -57,13 +57,13 @@ NTSTATUS APIENTRY D3DKMTDestroyAllocation2(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906793">D3DKMT_DESTROYALLOCATION2</a> structure that contains information for releasing allocations.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyallocation2.md">D3DKMT_DESTROYALLOCATION2</a> structure that contains information for releasing allocations.</p>
 </dd>
 </dl>
 
 ## -returns
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546891">D3DKMTDestroyAllocation</a> returns one of the following values:</p><dl>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroyallocation.md">D3DKMTDestroyAllocation</a> returns one of the following values:</p><dl>
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl><p>Allocations were successfully released.</p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -139,7 +139,7 @@ NTSTATUS APIENTRY D3DKMTDestroyAllocation2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906793">D3DKMT_DESTROYALLOCATION2</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroyallocation2.md">D3DKMT_DESTROYALLOCATION2</a>
 </dt>
 </dl>
 <p> </p>

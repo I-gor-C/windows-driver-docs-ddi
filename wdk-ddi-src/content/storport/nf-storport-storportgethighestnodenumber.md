@@ -126,7 +126,7 @@ ULONG StorPortGetHighestNodeNumber(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
+<a href="devtest.storport_storportirql">StorPortIrql</a>
 </td>
 </tr>
 </table>

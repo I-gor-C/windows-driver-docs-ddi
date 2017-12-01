@@ -7,7 +7,7 @@ old-location: debugger\writetypeddataphysical.htm
 old-project: debugger
 ms.assetid: 5f29249f-bb62-45d1-aa0e-108db1d7f906
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols3, WriteTypedDataPhysical, IDebugSymbols3::WriteTypedDataPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -110,15 +110,7 @@ HRESULT WriteTypedDataPhysical(
 
 <p>The number of bytes this method attempts to write is the smaller of the size of the buffer and the size of the variable.</p>
 
-<p>This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561432">WritePhysical</a>.</p>
-
-<p>For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.</p>
-
-<p>This method is only available in kernel mode debugging.</p>
-
-<p>The number of bytes this method attempts to write is the smaller of the size of the buffer and the size of the variable.</p>
-
-<p>This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561432">WritePhysical</a>.</p>
+<p>This is a convenience method.  The same result can be obtained by calling <a href="debugger.gettypesize2">GetTypeSize</a> and <a href="..\wdbgexts\nf-wdbgexts-writephysical.md">WritePhysical</a>.</p>
 
 <p>For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.</p>
 

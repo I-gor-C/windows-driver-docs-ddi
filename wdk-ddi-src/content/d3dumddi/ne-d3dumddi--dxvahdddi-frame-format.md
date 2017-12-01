@@ -78,10 +78,6 @@ typedef enum _DXVAHDDDI_FRAME_FORMAT {
 ## -remarks
 <p>The <a href="wdkgloss.f#wdkgloss.fourcc#wdkgloss.fourcc"><i>FOURCC</i></a> format of the surface defines whether the interlaced fields are interleaved or not. For example, NV12 is an interlaced format with interleaved fields whereas NV24 is an interlaced format with non-interleaved fields.</p>
 
-<p>The <a href="wdkgloss.f#wdkgloss.fourcc#wdkgloss.fourcc"><i>FOURCC</i></a> format of the surface defines whether the interlaced fields are interleaved or not. For example, NV12 is an interlaced format with interleaved fields whereas NV24 is an interlaced format with non-interleaved fields.</p>
-
-<p>The <a href="wdkgloss.f#wdkgloss.fourcc#wdkgloss.fourcc"><i>FOURCC</i></a> format of the surface defines whether the interlaced fields are interleaved or not. For example, NV12 is an interlaced format with interleaved fields whereas NV24 is an interlaced format with non-interleaved fields.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -107,7 +103,7 @@ typedef enum _DXVAHDDDI_FRAME_FORMAT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563081">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-frame-format-data.md">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a>
 </dt>
 </dl>
 <p> </p>

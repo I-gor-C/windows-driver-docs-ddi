@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_onprocesswpdmessage.htm
 old-project: sensors
 ms.assetid: 4780d0ea-a54a-4125-b3b6-2210a14eff71
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorDriver, OnProcessWpdMessage, ISensorDriver::OnProcessWpdMessage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545644">ISensorDriver::OnProcessWpdMessage</a> method handles Windows Portable Device (WPD) commands that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545536">ISensorClassExtension::ProcessIoControl</a> method does not handle internally. </p>
+<p>The <a href="sensors.isensordriver_onprocesswpdmessage">ISensorDriver::OnProcessWpdMessage</a> method handles Windows Portable Device (WPD) commands that the <a href="sensors.isensorclassextension_processiocontrol">ISensorClassExtension::ProcessIoControl</a> method does not handle internally. </p>
 
 
 ## -syntax
@@ -73,8 +73,6 @@ HRESULT OnProcessWpdMessage(
 <p>If the operation succeeds, this method returns S_OK. Otherwise, this method returns one of the error codes that are defined in Winerror.h.</p>
 
 ## -remarks
-<p>This method enables you to extend the WPD commands and interfaces in a device-specific way.</p>
-
 <p>This method enables you to extend the WPD commands and interfaces in a device-specific way.</p>
 
 ## -requirements

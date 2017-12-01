@@ -207,7 +207,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 ### -field <b>SupportMirrorStretchBlt</b>
 
 <dd>
-<p>[in] A UINT value that specifies whether the display miniport driver supports Stretch Blt operations (using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561089">DXGK_GDIARG_STRETCHBLT</a> structure) in mirror mode. If <b>SupportMirrorStretchBlt </b>is set, the driver supports such operations.</p>
+<p>[in] A UINT value that specifies whether the display miniport driver supports Stretch Blt operations (using the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-stretchblt.md">DXGK_GDIARG_STRETCHBLT</a> structure) in mirror mode. If <b>SupportMirrorStretchBlt </b>is set, the driver supports such operations.</p>
 <p>Setting this member is equivalent to setting the fifteenth bit of the 32-bit <b>Value</b> member (0x00004000). </p>
 <p>Supported starting with Windows 7.</p>
 </dd>
@@ -215,7 +215,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 ### -field <b>SupportMonoStretchBltModes</b>
 
 <dd>
-<p>[in] A UINT value that specifies whether the display miniport driver supports Stretch Blt operations (using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561089">DXGK_GDIARG_STRETCHBLT</a> structure) in BLACKONWHITE or WHITEONBLACK monochromatic rendering modes. If <b>SupportMonoStretchBltModes</b> is set, the driver supports such operations.</p>
+<p>[in] A UINT value that specifies whether the display miniport driver supports Stretch Blt operations (using the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-gdiarg-stretchblt.md">DXGK_GDIARG_STRETCHBLT</a> structure) in BLACKONWHITE or WHITEONBLACK monochromatic rendering modes. If <b>SupportMonoStretchBltModes</b> is set, the driver supports such operations.</p>
 <p>Setting this member is equivalent to setting the sixteenth bit of the 32-bit <b>Value</b> member (0x00008000). </p>
 <p>Supported starting with Windows 7.</p>
 </dd>
@@ -254,7 +254,7 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 ### -field <b>NoTempSurfaceForClearTypeBlend</b>
 
 <dd>
-<p>[in] A UINT value that specifies whether the driver needs a temporary surface during processing of commands that are specified by the <b>ClearTypeBlend</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562026">DXGK_RENDERKM_COMMAND</a> structure. If <b>NoTempSurfaceForClearTypeBlend</b> is set, the driver does not need a temporary surface. In this case, the driver will use less video memory.</p>
+<p>[in] A UINT value that specifies whether the driver needs a temporary surface during processing of commands that are specified by the <b>ClearTypeBlend</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-renderkm-command.md">DXGK_RENDERKM_COMMAND</a> structure. If <b>NoTempSurfaceForClearTypeBlend</b> is set, the driver does not need a temporary surface. In this case, the driver will use less video memory.</p>
 <p>Setting this member to zero is equivalent to setting the twenty-first bit of the 32-bit <b>Value</b> member (0x00100000).</p>
 <p>Supported starting with Windows 7.</p>
 </dd>
@@ -335,10 +335,10 @@ typedef struct _DXGK_PRESENTATIONCAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546039">D3DKMDT_GDISURFACETYPE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a>
 </dt>
 <dt>
 <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a>

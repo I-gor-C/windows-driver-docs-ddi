@@ -72,7 +72,7 @@ typedef struct _DXGK_CHILD_STATUS {
 ### -field <b>Type</b>
 
 <dd>
-<p>A member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561015">DXGK_CHILD_STATUS_TYPE</a> enumeration that indicates the type of status being requested.</p>
+<p>A member of the <a href="..\dispmprt\ne-dispmprt--dxgk-child-status-type.md">DXGK_CHILD_STATUS_TYPE</a> enumeration that indicates the type of status being requested.</p>
 </dd>
 
 ### -field <b>ChildUid</b>
@@ -89,7 +89,7 @@ typedef struct _DXGK_CHILD_STATUS {
 ### -field <b>Connected</b>
 
 <dd>
-<p>If <b>Type</b> is equal to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561015">DXGK_CHILD_STATUS_TYPE</a>.<b>StatusConnection</b>, indicates whether the child device has external hardware (for example, a monitor) connected to it. A value of <b>TRUE</b> indicates that hardware is connected; <b>FALSE</b> indicates that hardware is not connected.</p>
+<p>If <b>Type</b> is equal to <a href="..\dispmprt\ne-dispmprt--dxgk-child-status-type.md">DXGK_CHILD_STATUS_TYPE</a>.<b>StatusConnection</b>, indicates whether the child device has external hardware (for example, a monitor) connected to it. A value of <b>TRUE</b> indicates that hardware is connected; <b>FALSE</b> indicates that hardware is not connected.</p>
 </dd>
 </dl>
 </dd>
@@ -102,7 +102,7 @@ typedef struct _DXGK_CHILD_STATUS {
 ### -field <b>Angle</b>
 
 <dd>
-<p>If <b>Type</b> is equal to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561015">DXGK_CHILD_STATUS_TYPE</a>.<b>StatusRotation</b>,  indicates the angle of rotation of the display connected to the child device.</p>
+<p>If <b>Type</b> is equal to <a href="..\dispmprt\ne-dispmprt--dxgk-child-status-type.md">DXGK_CHILD_STATUS_TYPE</a>.<b>StatusRotation</b>,  indicates the angle of rotation of the display connected to the child device.</p>
 </dd>
 </dl>
 </dd>
@@ -116,7 +116,7 @@ typedef struct _DXGK_CHILD_STATUS {
 ### -field <b>Connected</b>
 
 <dd>
-<p>If <b>Type</b> is equal to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561015">DXGK_CHILD_STATUS_TYPE</a>.<b>StatusMiracast</b>, indicates whether a Miracast connected session has started. A value of <b>TRUE</b> indicates that a new monitor has been connected to the Miracast sink, or that the Miracast session has started with a monitor connected. <b>FALSE</b> indicates that the monitor that was connected to the Miracast sink has been unplugged, or that the Miracast session has been stopped.</p>
+<p>If <b>Type</b> is equal to <a href="..\dispmprt\ne-dispmprt--dxgk-child-status-type.md">DXGK_CHILD_STATUS_TYPE</a>.<b>StatusMiracast</b>, indicates whether a Miracast connected session has started. A value of <b>TRUE</b> indicates that a new monitor has been connected to the Miracast sink, or that the Miracast session has started with a monitor connected. <b>FALSE</b> indicates that the monitor that was connected to the Miracast sink has been unplugged, or that the Miracast session has been stopped.</p>
 <p>For more info, see <a href="https://msdn.microsoft.com/1645E14A-EC4A-4EB8-9AFA-6DF0466D2B1A">Wireless displays (Miracast)</a>.</p>
 </dd>
 
@@ -125,7 +125,7 @@ typedef struct _DXGK_CHILD_STATUS {
 <dd>
 <p>If the <b>Connected</b> member of the <b>Miracast</b> embedded structure is <b>TRUE</b>, indicates the connector type of the connection between the Miracast sink and the monitor or TV. </p>
 <p>Alternately, if <b>Connected</b> is <b>TRUE</b> and the Miracast sink is embedded in the monitor or TV, the display miniport driver should set this value to <b>D3DKMDT_VOT_MIRACAST</b>.</p>
-<p>If the driver doesn't know the monitor connection state, it should set this value to the last monitor connection state from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546605">D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY</a> enumeration that it reported to the operating system.</p>
+<p>If the driver doesn't know the monitor connection state, it should set this value to the last monitor connection state from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-video-output-technology.md">D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY</a> enumeration that it reported to the operating system.</p>
 <p>For more info, see <a href="https://msdn.microsoft.com/1645E14A-EC4A-4EB8-9AFA-6DF0466D2B1A">Wireless displays (Miracast)</a>.</p>
 </dd>
 </dl>
@@ -169,10 +169,10 @@ typedef struct _DXGK_CHILD_STATUS {
 <a href="..\dispmprt\nc-dispmprt-dxgkcb-indicate-child-status.md">DxgkCbIndicateChildStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561015">DXGK_CHILD_STATUS_TYPE</a>
+<a href="..\dispmprt\ne-dispmprt--dxgk-child-status-type.md">DXGK_CHILD_STATUS_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546605">D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-video-output-technology.md">D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY</a>
 </dt>
 </dl>
 <p> </p>

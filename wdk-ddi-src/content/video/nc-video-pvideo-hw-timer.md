@@ -69,17 +69,7 @@ VOID HwVidTimer(
 <p>None</p>
 
 ## -remarks
-<p><i>HwVidTimer</i> is an optional miniport driver function to which calls are enabled with <a href="https://msdn.microsoft.com/library/windows/hardware/ff570370">VideoPortStartTimer</a> and disabled with <a href="https://msdn.microsoft.com/library/windows/hardware/ff570371">VideoPortStopTimer</a>.</p>
-
-<p>Any miniport driver can have a <i>HwVidTimer</i> function. For example, a <i>HwVidTimer</i> function could be used to read the state of the "VGA" registers on a high-end video adapter so that the miniport driver can emulate VGA-compatible behavior.</p>
-
-<p>After a call to <b>VideoPortStartTimer</b>, the video port driver calls a miniport driver's <i>HwVidTimer</i> function at approximately one-second intervals until the miniport driver calls <b>VideoPortStopTimer</b>.</p>
-
-<p>Note that the <i>HwVidTimer</i> function <i>must not</i> disable the timer with a call to <b>VideoPortStopTimer</b>.</p>
-
-<p><i>HwVidTimer</i> must not be made pageable.</p>
-
-<p><i>HwVidTimer</i> is an optional miniport driver function to which calls are enabled with <a href="https://msdn.microsoft.com/library/windows/hardware/ff570370">VideoPortStartTimer</a> and disabled with <a href="https://msdn.microsoft.com/library/windows/hardware/ff570371">VideoPortStopTimer</a>.</p>
+<p><i>HwVidTimer</i> is an optional miniport driver function to which calls are enabled with <a href="..\video\nf-video-videoportstarttimer.md">VideoPortStartTimer</a> and disabled with <a href="..\video\nf-video-videoportstoptimer.md">VideoPortStopTimer</a>.</p>
 
 <p>Any miniport driver can have a <i>HwVidTimer</i> function. For example, a <i>HwVidTimer</i> function could be used to read the state of the "VGA" registers on a high-end video adapter so that the miniport driver can emulate VGA-compatible behavior.</p>
 
@@ -116,10 +106,10 @@ VOID HwVidTimer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570370">VideoPortStartTimer</a>
+<a href="..\video\nf-video-videoportstarttimer.md">VideoPortStartTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570371">VideoPortStopTimer</a>
+<a href="..\video\nf-video-videoportstoptimer.md">VideoPortStopTimer</a>
 </dt>
 </dl>
 <p> </p>

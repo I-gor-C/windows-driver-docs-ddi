@@ -7,7 +7,7 @@ old-location: stream\ks_videostreaminghints.htm
 old-project: stream
 ms.assetid: 06f26404-c955-4034-8dd3-ad641c7b8010
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices

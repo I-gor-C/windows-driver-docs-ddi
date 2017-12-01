@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTCreatePagingQueue(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906792">D3DKMT_CREATEPAGINGQUEUE</a> structure that describes the operation.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createpagingqueue.md">D3DKMT_CREATEPAGINGQUEUE</a> structure that describes the operation.</p>
 </dd>
 </dl>
 
@@ -139,7 +139,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTCreatePagingQueue(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906792">D3DKMT_CREATEPAGINGQUEUE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createpagingqueue.md">D3DKMT_CREATEPAGINGQUEUE</a>
 </dt>
 </dl>
 <p> </p>

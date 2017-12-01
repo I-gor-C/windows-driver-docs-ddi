@@ -57,7 +57,7 @@ HRESULT IBidiRequestContainer::AddRequest(
 ### -param <i>pRequest</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dd144969">IBidiRequest</a> interface.</p>
+<p>A pointer to the <a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a> interface.</p>
 </dd>
 </dl>
 
@@ -73,9 +73,7 @@ HRESULT IBidiRequestContainer::AddRequest(
 <p> </p>
 
 ## -remarks
-<p>This is similar to adding an item in a link list. In this case, <a href="https://msdn.microsoft.com/library/windows/hardware/dd144970">IBidiRequestContainer</a> will hold a reference to <i>pRequest</i> by calling pRequest-&gt;AddRef.</p>
-
-<p>This is similar to adding an item in a link list. In this case, <a href="https://msdn.microsoft.com/library/windows/hardware/dd144970">IBidiRequestContainer</a> will hold a reference to <i>pRequest</i> by calling pRequest-&gt;AddRef.</p>
+<p>This is similar to adding an item in a link list. In this case, <a href="..\bidispl\nn-bidispl-ibidirequestcontainer.md">IBidiRequestContainer</a> will hold a reference to <i>pRequest</i> by calling pRequest-&gt;AddRef.</p>
 
 ## -requirements
 <table>
@@ -130,16 +128,16 @@ HRESULT IBidiRequestContainer::AddRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+<a href="print.bidirectional_communication_interfaces">Bidirectional Communication Interfaces</a>
 </dt>
 <dt>
-<a href="NULL">Bidirectional Communication Schema</a>
+<a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dd144969">IBidiRequest</a>
+<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dd144970">IBidiRequestContainer</a>
+<a href="..\bidispl\nn-bidispl-ibidirequestcontainer.md">IBidiRequestContainer</a>
 </dt>
 </dl>
 <p> </p>

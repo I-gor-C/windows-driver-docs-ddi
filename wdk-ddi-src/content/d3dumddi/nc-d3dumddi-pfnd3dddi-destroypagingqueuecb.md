@@ -67,7 +67,7 @@ HRESULT APIENTRY CALLBACK* pfnDestroyPagingQueueCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906321">D3DDDI_DESTROYPAGINGQUEUE</a> structure that describes the operation to perform.
+<p>A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-destroypagingqueue.md">D3DDDI_DESTROYPAGINGQUEUE</a> structure that describes the operation to perform.
 
 </p>
 </dd>
@@ -77,8 +77,6 @@ HRESULT APIENTRY CALLBACK* pfnDestroyPagingQueueCb(
 <p>If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.</p>
 
 ## -remarks
-<p>In addition to <b>hPagingQueue</b>, this device driver interface (DDI) invalidates <b>hSyncObject</b> and <b>FenceValueCPUVirtualAddress</b> values returned from <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createpagingqueuecb.md">pfnCreatePagingQueueCb</a>.</p>
-
 <p>In addition to <b>hPagingQueue</b>, this device driver interface (DDI) invalidates <b>hSyncObject</b> and <b>FenceValueCPUVirtualAddress</b> values returned from <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createpagingqueuecb.md">pfnCreatePagingQueueCb</a>.</p>
 
 ## -requirements
@@ -124,7 +122,7 @@ HRESULT APIENTRY CALLBACK* pfnDestroyPagingQueueCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906321">D3DDDI_DESTROYPAGINGQUEUE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-destroypagingqueue.md">D3DDDI_DESTROYPAGINGQUEUE</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createpagingqueuecb.md">pfnCreatePagingQueueCb</a>

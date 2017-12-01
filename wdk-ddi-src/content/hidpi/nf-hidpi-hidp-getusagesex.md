@@ -63,7 +63,7 @@ NTSTATUS __stdcall HidP_GetUsagesEx(
 ### -param <i>ReportType</i> [in]
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.</p>
+<p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.</p>
 </dd>
 
 ### -param <i>LinkCollection</i> [in]
@@ -121,15 +121,9 @@ NTSTATUS __stdcall HidP_GetUsagesEx(
 <p> </p>
 
 ## -remarks
-<p>User-mode applications and kernel-mode drivers call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539770">HidP_MaxUsageListLength</a> to determine the maximum number of buttons that be returned for specified report type. Alternatively, applications or drivers can call <b>HidP_GetUsagesEx</b> and set <i>UsageList </i>to zero to return the required length in <i>UsageLength</i>.</p>
+<p>User-mode applications and kernel-mode drivers call <a href="..\hidpi\nf-hidpi-hidp-maxusagelistlength.md">HidP_MaxUsageListLength</a> to determine the maximum number of buttons that be returned for specified report type. Alternatively, applications or drivers can call <b>HidP_GetUsagesEx</b> and set <i>UsageList </i>to zero to return the required length in <i>UsageLength</i>.</p>
 
-<p>Applications or drivers determine the required report length from the <i>Xxx</i><b>ReportByteLength</b> members in a top-level collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p>User-mode applications and kernel-mode drivers call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539770">HidP_MaxUsageListLength</a> to determine the maximum number of buttons that be returned for specified report type. Alternatively, applications or drivers can call <b>HidP_GetUsagesEx</b> and set <i>UsageList </i>to zero to return the required length in <i>UsageLength</i>.</p>
-
-<p>Applications or drivers determine the required report length from the <i>Xxx</i><b>ReportByteLength</b> members in a top-level collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.</p>
+<p>Applications or drivers determine the required report length from the <i>Xxx</i><b>ReportByteLength</b> members in a top-level collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
 
 <p>For more information, see <a href="NULL">HID Collections</a>. </p>
 
@@ -195,25 +189,25 @@ NTSTATUS __stdcall HidP_GetUsagesEx(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539712">HidP_GetButtonsEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539729">HidP_GetScaledUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp-getscaledusagevalue.md">HidP_GetScaledUsageValue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539745">HidP_GetUsagesEx</a>
+<a href="..\hidpi\nf-hidpi-hidp-getusagesex.md">HidP_GetUsagesEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539748">HidP_GetUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp-getusagevalue.md">HidP_GetUsageValue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539750">HidP_GetUsageValueArray</a>
+<a href="..\hidpi\nf-hidpi-hidp-getusagevaluearray.md">HidP_GetUsageValueArray</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539770">HidP_MaxUsageListLength</a>
+<a href="..\hidpi\nf-hidpi-hidp-maxusagelistlength.md">HidP_MaxUsageListLength</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543483">USAGE_AND_PAGE</a>
+<a href="..\hidpi\ns-hidpi--usage-and-page.md">USAGE_AND_PAGE</a>
 </dt>
 </dl>
 <p> </p>

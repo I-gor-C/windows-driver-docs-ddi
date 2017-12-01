@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY GetVideoProcessBltStatePrivate(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543086">D3DDDIARG_DXVAHD_GETVIDEOPROCESSBLTSTATEPRIVATE</a> structure that describes the private bitblt state data to retrieve. </p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-getvideoprocessbltstateprivate.md">D3DDDIARG_DXVAHD_GETVIDEOPROCESSBLTSTATEPRIVATE</a> structure that describes the private bitblt state data to retrieve. </p>
 </dd>
 </dl>
 
@@ -118,7 +118,7 @@ __checkReturn HRESULT APIENTRY GetVideoProcessBltStatePrivate(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543086">D3DDDIARG_DXVAHD_GETVIDEOPROCESSBLTSTATEPRIVATE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-getvideoprocessbltstateprivate.md">D3DDDIARG_DXVAHD_GETVIDEOPROCESSBLTSTATEPRIVATE</a>
 </dt>
 </dl>
 <p> </p>

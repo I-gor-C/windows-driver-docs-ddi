@@ -74,7 +74,7 @@ NTSTATUS  SRIOV_SET_POWER_STATE(
 ### -param <i>PowerState</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff554628">DEVICE_POWER_STATE</a>-type value that indicates the <b>Dx</b> power state to set.</p>
+<p>A <a href="..\wudfddi\ne-wudfddi--device-power-state.md">DEVICE_POWER_STATE</a>-type value that indicates the <b>Dx</b> power state to set.</p>
 </dd>
 
 ### -param <i>Wake</i> [in]
@@ -90,13 +90,7 @@ NTSTATUS  SRIOV_SET_POWER_STATE(
 ## -remarks
 <p>This callback function is implemented by the physical function (PF) driver. The callback is invoked when the system wants to change the power state of a virtual function. </p>
 
-<p>The PF driver registers its implementation by setting the <b>SetVfPowerState</b> member of the SRIOV_DEVICE_INTERFACE_STANDARD, configuring a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552439">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545870">WdfDeviceAddQueryInterface</a>.</p>
-
-<p>Here is an example implementation of this callback function.</p>
-
-<p>This callback function is implemented by the physical function (PF) driver. The callback is invoked when the system wants to change the power state of a virtual function. </p>
-
-<p>The PF driver registers its implementation by setting the <b>SetVfPowerState</b> member of the SRIOV_DEVICE_INTERFACE_STANDARD, configuring a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552439">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545870">WdfDeviceAddQueryInterface</a>.</p>
+<p>The PF driver registers its implementation by setting the <b>SetVfPowerState</b> member of the SRIOV_DEVICE_INTERFACE_STANDARD, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface--wdf-query-interface-config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.</p>
 
 <p>Here is an example implementation of this callback function.</p>
 

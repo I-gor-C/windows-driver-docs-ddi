@@ -70,7 +70,7 @@ typedef UFX_PROPRIETARY_CHARGER_DETECT PFN_UFX_PROPRIETARY_CHARGER_DETECT;
 ### -param <i>DetectedCharger</i> [out]
 
 <dd>
-<p>A pointer to a     <a href="https://msdn.microsoft.com/library/windows/hardware/mt187979">UFX_PROPRIETARY_CHARGER</a> structure that the driver fills with charger information. </p>
+<p>A pointer to a     <a href="buses.ufx_proprietary_charger">UFX_PROPRIETARY_CHARGER</a> structure that the driver fills with charger information. </p>
 </dd>
 </dl>
 
@@ -78,10 +78,6 @@ typedef UFX_PROPRIETARY_CHARGER_DETECT PFN_UFX_PROPRIETARY_CHARGER_DETECT;
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.</p>
 
 ## -remarks
-<p>To support handling of proprietary chargers, the USB lower filter driver must publish support. During the publishing process, the driver also registers its implementation of this  callback function. For more information, see <a href="buses.usb_filter_driver_for_proprietary_charging">USB filter driver for supporting proprietary chargers</a>.</p>
-
-<p>In this callback function, the driver assigns the charger a GUID and sets the minimum required Dx state when the device is connected for charging. </p>
-
 <p>To support handling of proprietary chargers, the USB lower filter driver must publish support. During the publishing process, the driver also registers its implementation of this  callback function. For more information, see <a href="buses.usb_filter_driver_for_proprietary_charging">USB filter driver for supporting proprietary chargers</a>.</p>
 
 <p>In this callback function, the driver assigns the charger a GUID and sets the minimum required Dx state when the device is connected for charging. </p>

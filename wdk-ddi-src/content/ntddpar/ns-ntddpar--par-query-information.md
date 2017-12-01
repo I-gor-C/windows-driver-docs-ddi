@@ -97,7 +97,7 @@ typedef struct _PAR_QUERY_INFORMATION {
 </dl>
 
 ## -remarks
-<p>This structure is used with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544086">IOCTL_PAR_QUERY_INFORMATION</a> request.</p>
+<p>This structure is used with an <a href="..\ntddpar\ni-ntddpar-ioctl-par-query-information.md">IOCTL_PAR_QUERY_INFORMATION</a> request.</p>
 
 ## -requirements
 <table>
@@ -116,13 +116,13 @@ typedef struct _PAR_QUERY_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544086">IOCTL_PAR_QUERY_INFORMATION</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl-par-query-information.md">IOCTL_PAR_QUERY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544103">IOCTL_PAR_SET_INFORMATION</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl-par-set-information.md">IOCTL_PAR_SET_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544360">PAR_SET_INFORMATION</a>
+<a href="..\ntddpar\ns-ntddpar--par-set-information.md">PAR_SET_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

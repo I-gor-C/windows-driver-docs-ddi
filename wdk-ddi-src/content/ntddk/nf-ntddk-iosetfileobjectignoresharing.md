@@ -136,7 +136,7 @@ NTSTATUS IoSetFileObjectIgnoreSharing(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj126226">IoIsFileObjectIgnoringSharing</a>
+<a href="..\ntddk\nf-ntddk-ioisfileobjectignoringsharing.md">IoIsFileObjectIgnoringSharing</a>
 </dt>
 </dl>
 <p> </p>

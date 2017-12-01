@@ -149,7 +149,7 @@ typedef struct _DXGK_ALLOCATIONUSAGEINFO1 {
 ### -field <b>Format</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation. The <b>PrivateFormat</b> bit-field flag in the <b>Flags</b> member must be set to 0 (FALSE).</p>
+<p>[out] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation. The <b>PrivateFormat</b> bit-field flag in the <b>Flags</b> member must be set to 0 (FALSE).</p>
 </dd>
 
 ### -field <b>PrivateFormat</b>
@@ -232,13 +232,13 @@ typedef struct _DXGK_ALLOCATIONUSAGEINFO1 {
 <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557559">DXGKARG_CREATEALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createallocation.md">DXGKARG_CREATEALLOCATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560981">DXGK_ALLOCATIONUSAGEHINT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationusagehint.md">DXGK_ALLOCATIONUSAGEHINT</a>
 </dt>
 </dl>
 <p> </p>

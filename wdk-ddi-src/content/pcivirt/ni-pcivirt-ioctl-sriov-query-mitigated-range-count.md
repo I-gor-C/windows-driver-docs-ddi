@@ -120,60 +120,6 @@ in which the stack must place
 intercepts  on those pages and send the requests to read and write values
 within those pages to the PF driver.</p>
 
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request is sent to the physical function (PF) driver by the virtualization stack to find out the ranges of memory-mapped I/O space
-in which the stack must place
-intercepts  on those pages and send the requests to read and write values
-within those pages to the PF driver.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request is sent to the physical function (PF) driver by the virtualization stack to find out the ranges of memory-mapped I/O space
-in which the stack must place
-intercepts  on those pages and send the requests to read and write values
-within those pages to the PF driver.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request is sent to the physical function (PF) driver by the virtualization stack to find out the ranges of memory-mapped I/O space
-in which the stack must place
-intercepts  on those pages and send the requests to read and write values
-within those pages to the PF driver.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request is sent to the physical function (PF) driver by the virtualization stack to find out the ranges of memory-mapped I/O space
-in which the stack must place
-intercepts  on those pages and send the requests to read and write values
-within those pages to the PF driver.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request is sent to the physical function (PF) driver by the virtualization stack to find out the ranges of memory-mapped I/O space
-in which the stack must place
-intercepts  on those pages and send the requests to read and write values
-within those pages to the PF driver.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The virtualization stack uses an I/O MMU to differentiate traffic coming from the various interfaces that the device exposes, enforcing policy about which regions of memory a device can access and which interrupts it can generate. </p>
-
-<p>The request is sent to the physical function (PF) driver by the virtualization stack to find out the ranges of memory-mapped I/O space
-in which the stack must place
-intercepts  on those pages and send the requests to read and write values
-within those pages to the PF driver.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -88,8 +88,6 @@ ULONG AtaPortGetBusData(
 ## -remarks
 <p><b>AtaPortGetBusData</b> retrieves data from the specified offset in the device's PCI bus configuration space and returns it in the buffer that is provided.</p>
 
-<p><b>AtaPortGetBusData</b> retrieves data from the specified offset in the device's PCI bus configuration space and returns it in the buffer that is provided.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -127,7 +125,7 @@ ULONG AtaPortGetBusData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550232">AtaPortSetBusData</a>
+<a href="..\irb\nf-irb-ataportsetbusdata.md">AtaPortSetBusData</a>
 </dt>
 </dl>
 <p> </p>

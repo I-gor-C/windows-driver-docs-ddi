@@ -57,7 +57,7 @@ HRESULT SetPartCompression(
 ### -param <i>compression</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548772">ExpsCompressionOptions</a>-typed value that describes the compression option for the part.</p>
+<p>A <a href="print.expscompressionoptions">ExpsCompressionOptions</a>-typed value that describes the compression option for the part.</p>
 </dd>
 </dl>
 

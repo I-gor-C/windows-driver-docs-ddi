@@ -117,14 +117,14 @@ VOID APIENTRY* ResourceCopyRegion(D3D11_1)(
 ### -param <i>pSrcBox</i> [in, optional]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541925">D3D10_DDI_BOX</a> structure that specifies a box that fits on either the source or destination subresource. If <i>pSrcBox</i> is <b>NULL</b>, the driver should copy the entire source subresouce to the destination.</p>
-<p>If the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541925">D3D10_DDI_BOX</a> structure are such that <b>left</b>&gt;=<b>right</b>, <b>top</b>&gt;=<b>bottom</b>, or <b>front</b>&gt;=<b>back</b>, then <i>pSrcBox</i> is considered empty, and <i>ResourceCopyRegion(D3D11_1)</i> must not perform any copy operation.</p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-box.md">D3D10_DDI_BOX</a> structure that specifies a box that fits on either the source or destination subresource. If <i>pSrcBox</i> is <b>NULL</b>, the driver should copy the entire source subresouce to the destination.</p>
+<p>If the members of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-box.md">D3D10_DDI_BOX</a> structure are such that <b>left</b>&gt;=<b>right</b>, <b>top</b>&gt;=<b>bottom</b>, or <b>front</b>&gt;=<b>back</b>, then <i>pSrcBox</i> is considered empty, and <i>ResourceCopyRegion(D3D11_1)</i> must not perform any copy operation.</p>
 </dd>
 
 ### -param <i>	copyFlags</i> 
 
 <dd>
-<p>[in] A value that specifies characteristics of copy operation as a bitwise <b>OR</b> of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451047">D3D11_1_DDI_COPY_FLAGS</a> enumeration type.</p>
+<p>[in] A value that specifies characteristics of copy operation as a bitwise <b>OR</b> of the values in the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1-ddi-copy-flags.md">D3D11_1_DDI_COPY_FLAGS</a> enumeration type.</p>
 </dd>
 </dl>
 
@@ -140,7 +140,7 @@ VOID APIENTRY* ResourceCopyRegion(D3D11_1)(
 
 <p>The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. Therefore, if the driver passes any error, except for D3DDDIERR_DEVICEREMOVED, in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> function, the Direct3D runtime will determine that the error is critical. Even if the device was removed, the driver is not required to return D3DDDIERR_DEVICEREMOVED; however, if device removal interfered with the operation of  (which typically should not happen), the driver can return D3DDDIERR_DEVICEREMOVED.</p>
 
-<p>The driver can implement a <i>ResourceCopyRegion(D3D11_1)</i> function that can contain a <b>switch</b> statement to process copying and conversion. That is, the driver can implement one <i>ResourceCopyRegion(D3D11_1)</i> and can set the <b>pfnResourceConvertRegion</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406443">D3D11_1DDI_DEVICEFUNCS</a> structure to point to <i>ResourceCopyRegion(D3D11_1)</i> along with the <b>pfnResourceCopyRegion</b> member of <b>D3D11_1DDI_DEVICEFUNCS</b>. However, to improve performance, the driver can implement separate <i>ResourceCopyRegion(D3D11_1)</i> and <i>ResourceConvertRegion(D3D11_1)</i> functions.</p>
+<p>The driver can implement a <i>ResourceCopyRegion(D3D11_1)</i> function that can contain a <b>switch</b> statement to process copying and conversion. That is, the driver can implement one <i>ResourceCopyRegion(D3D11_1)</i> and can set the <b>pfnResourceConvertRegion</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-devicefuncs~r1.md">D3D11_1DDI_DEVICEFUNCS</a> structure to point to <i>ResourceCopyRegion(D3D11_1)</i> along with the <b>pfnResourceCopyRegion</b> member of <b>D3D11_1DDI_DEVICEFUNCS</b>. However, to improve performance, the driver can implement separate <i>ResourceCopyRegion(D3D11_1)</i> and <i>ResourceConvertRegion(D3D11_1)</i> functions.</p>
 
 <p>The following sections list conditions for copying and converting:</p>
 
@@ -148,7 +148,7 @@ VOID APIENTRY* ResourceCopyRegion(D3D11_1)(
 
 <p>For copying, <i>ResourceCopyRegion(D3D11_1)</i> ensures that the source and destination resources were created through the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createresource.md">CreateResource(D3D11)</a> function with the following conditions: </p>
 
-<p>The destination resource was not created with the D3D10_DDI_USAGE_IMMUTABLE value set in the <b>Usage</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> structure. </p>
+<p>The destination resource was not created with the D3D10_DDI_USAGE_IMMUTABLE value set in the <b>Usage</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createresource.md">D3D11DDIARG_CREATERESOURCE</a> structure. </p>
 
 <p>If either the source or destination resource has the D3D10_DDI_BIND_DEPTH_STENCIL bit set in the <b>BindFlags</b> member of the D3D10DDIARG_CREATERESOURCE or is a multi-sampled resource, <i>ResourceCopyRegion(D3D11_1)</i> verifies that the <b>pSrcBox</b> parameter is <b>NULL</b>, while the <i>DstX</i>, <i>DstY</i>, and <i>DstZ</i> parameters are 0.</p>
 
@@ -158,7 +158,7 @@ VOID APIENTRY* ResourceCopyRegion(D3D11_1)(
 
 <p>The source and destination resources are not part of the exact same subresource. </p>
 
-<p>Each source and destination resource format that is specified in the <b>Format</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> is in the same typeless group. </p>
+<p>Each source and destination resource format that is specified in the <b>Format</b> member of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createresource.md">D3D11DDIARG_CREATERESOURCE</a> is in the same typeless group. </p>
 
 <p>The source and destination resources must have the same number of samples and quality levels; except for single-sampled resources, which must only have the same number of samples. </p>
 
@@ -168,74 +168,9 @@ VOID APIENTRY* ResourceCopyRegion(D3D11_1)(
 
 <p>For conversion, <i>ResourceCopyRegion(D3D11_1)</i> ensures that the source and destination resources were created through the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createresource.md">CreateResource(D3D11)</a> function with the following conditions:</p>
 
-<p>The destination resource was not created with the D3D10_DDI_USAGE_IMMUTABLE value set in the <b>Usage</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> structure. </p>
+<p>If either the source or destination resource has the D3D10_DDI_BIND_DEPTH_STENCIL bit set in the <b>BindFlags</b> member of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createresource.md">D3D11DDIARG_CREATERESOURCE</a> or is a multi-sampled resource, <i>ResourceCopyRegion(D3D11_1)</i> verifies that the <i>pSrcBox</i> parameter is <b>NULL</b>, while the <i>DstX</i>, <i>DstY</i>, and <i>DstZ</i> parameters are 0.</p>
 
-<p>If either the source or destination resource has the D3D10_DDI_BIND_DEPTH_STENCIL bit set in the <b>BindFlags</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> or is a multi-sampled resource, <i>ResourceCopyRegion(D3D11_1)</i> verifies that the <i>pSrcBox</i> parameter is <b>NULL</b>, while the <i>DstX</i>, <i>DstY</i>, and <i>DstZ</i> parameters are 0.</p>
-
-<p>The subresource indices are in range.</p>
-
-<p>Alignment restrictions apply to coordinates.</p>
-
-<p>The source and destination resources are not part of the exact same subresource. </p>
-
-<p>Each source and destination resource format that is specified in the <b>Format</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> is in the same typeless group. </p>
-
-<p>Each source and destination resource format that is specified in the <b>Format</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> supports the appropriate conversion operation. </p>
-
-<p>The source and destination resources must have the same number of samples and quality levels; except for single-sampled resources, which must only have the same number of samples. </p>
-
-<p><i>ResourceCopyRegion(D3D11_1)</i>
-      does not ensure that no subresources are currently mapped. <i>ResourceCopyRegion(D3D11_1)</i> also does not ensure that the source box that is offset by the destination offsets fits entirely on the resource.</p>
-
-<p>The Microsoft Direct3D runtime calls the user-mode display driver's <i>ResourceCopyRegion(D3D11_1)</i> function to inform the driver to copy from the specified source subresource region to a location on the specified destination subresource. The source and destination subresources can be the same subresource of the same resource. Both source and destination resources must be the same type of resource and must have format types (DXGI_FORMAT-typed values) that are convertible to each other. </p>
-
-<p>For buffers, all the coordinates must be in bytes; whereas for textures, all the coordinates must be in pixels. The box that the <i>pSrcBox</i> parameter points to must not extend over the edges of the source subresource region or the destination subresource. The source and the destination resource must not be currently mapped. In addition, the resource creation flags restrict whether the resource can participate in the copy operation. </p>
-
-<p>The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. Therefore, if the driver passes any error, except for D3DDDIERR_DEVICEREMOVED, in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> function, the Direct3D runtime will determine that the error is critical. Even if the device was removed, the driver is not required to return D3DDDIERR_DEVICEREMOVED; however, if device removal interfered with the operation of  (which typically should not happen), the driver can return D3DDDIERR_DEVICEREMOVED.</p>
-
-<p>The driver can implement a <i>ResourceCopyRegion(D3D11_1)</i> function that can contain a <b>switch</b> statement to process copying and conversion. That is, the driver can implement one <i>ResourceCopyRegion(D3D11_1)</i> and can set the <b>pfnResourceConvertRegion</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406443">D3D11_1DDI_DEVICEFUNCS</a> structure to point to <i>ResourceCopyRegion(D3D11_1)</i> along with the <b>pfnResourceCopyRegion</b> member of <b>D3D11_1DDI_DEVICEFUNCS</b>. However, to improve performance, the driver can implement separate <i>ResourceCopyRegion(D3D11_1)</i> and <i>ResourceConvertRegion(D3D11_1)</i> functions.</p>
-
-<p>The following sections list conditions for copying and converting:</p>
-
-<p><b>Copying</b></p>
-
-<p>For copying, <i>ResourceCopyRegion(D3D11_1)</i> ensures that the source and destination resources were created through the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createresource.md">CreateResource(D3D11)</a> function with the following conditions: </p>
-
-<p>The destination resource was not created with the D3D10_DDI_USAGE_IMMUTABLE value set in the <b>Usage</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> structure. </p>
-
-<p>If either the source or destination resource has the D3D10_DDI_BIND_DEPTH_STENCIL bit set in the <b>BindFlags</b> member of the D3D10DDIARG_CREATERESOURCE or is a multi-sampled resource, <i>ResourceCopyRegion(D3D11_1)</i> verifies that the <b>pSrcBox</b> parameter is <b>NULL</b>, while the <i>DstX</i>, <i>DstY</i>, and <i>DstZ</i> parameters are 0.</p>
-
-<p>The subresource indices are in range.</p>
-
-<p>Alignment restrictions apply to coordinates.</p>
-
-<p>The source and destination resources are not part of the exact same subresource. </p>
-
-<p>Each source and destination resource format that is specified in the <b>Format</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> is in the same typeless group. </p>
-
-<p>The source and destination resources must have the same number of samples and quality levels; except for single-sampled resources, which must only have the same number of samples. </p>
-
-<p><i>ResourceCopyRegion(D3D11_1)</i> does not ensure that the source box that is offset by the destination offsets fits entirely on the resource. <i>ResourceCopyRegion(D3D11_1)</i> also does not ensure that no subresources are currently mapped. </p>
-
-<p><b>Converting</b></p>
-
-<p>For conversion, <i>ResourceCopyRegion(D3D11_1)</i> ensures that the source and destination resources were created through the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createresource.md">CreateResource(D3D11)</a> function with the following conditions:</p>
-
-<p>The destination resource was not created with the D3D10_DDI_USAGE_IMMUTABLE value set in the <b>Usage</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> structure. </p>
-
-<p>If either the source or destination resource has the D3D10_DDI_BIND_DEPTH_STENCIL bit set in the <b>BindFlags</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> or is a multi-sampled resource, <i>ResourceCopyRegion(D3D11_1)</i> verifies that the <i>pSrcBox</i> parameter is <b>NULL</b>, while the <i>DstX</i>, <i>DstY</i>, and <i>DstZ</i> parameters are 0.</p>
-
-<p>The subresource indices are in range.</p>
-
-<p>Alignment restrictions apply to coordinates.</p>
-
-<p>The source and destination resources are not part of the exact same subresource. </p>
-
-<p>Each source and destination resource format that is specified in the <b>Format</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> is in the same typeless group. </p>
-
-<p>Each source and destination resource format that is specified in the <b>Format</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a> supports the appropriate conversion operation. </p>
-
-<p>The source and destination resources must have the same number of samples and quality levels; except for single-sampled resources, which must only have the same number of samples. </p>
+<p>Each source and destination resource format that is specified in the <b>Format</b> member of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createresource.md">D3D11DDIARG_CREATERESOURCE</a> supports the appropriate conversion operation. </p>
 
 <p><i>ResourceCopyRegion(D3D11_1)</i>
       does not ensure that no subresources are currently mapped. <i>ResourceCopyRegion(D3D11_1)</i> also does not ensure that the source box that is offset by the destination offsets fits entirely on the resource.</p>
@@ -286,16 +221,16 @@ VOID APIENTRY* ResourceCopyRegion(D3D11_1)(
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createresource.md">CreateResource(D3D11)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541925">D3D10_DDI_BOX</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-ddi-box.md">D3D10_DDI_BOX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451047">D3D11_1_DDI_COPY_FLAGS</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1-ddi-copy-flags.md">D3D11_1_DDI_COPY_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406443">D3D11_1DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-devicefuncs~r1.md">D3D11_1DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542062">D3D11DDIARG_CREATERESOURCE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createresource.md">D3D11DDIARG_CREATERESOURCE</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a>

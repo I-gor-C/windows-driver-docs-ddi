@@ -7,7 +7,7 @@ old-location: netvista\rilmsgserviceinfo.htm
 old-project: netvista
 ms.assetid: 21b1c6ef-b8f3-4230-bc3f-7ac19c6cb2d1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMSGSERVICEINFO, RILMSGSERVICEINFO, *LPRILMSGSERVICEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

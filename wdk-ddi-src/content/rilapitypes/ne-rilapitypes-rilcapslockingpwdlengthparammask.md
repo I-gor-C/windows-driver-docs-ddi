@@ -7,7 +7,7 @@ old-location: netvista\rilcapslockingpwdlengthparammask_2.htm
 old-project: netvista
 ms.assetid: da244ee1-abb5-4b3f-8b2c-6726fbf32e76
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

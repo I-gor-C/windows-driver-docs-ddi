@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>StorPortEnablePassiveInitialization</b> routine enables  the miniport's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557407">HwStorPassiveInitializeRoutine</a> callback routine to execute at PASSIVE_LEVEL during miniport initialization.</p>
+<p>The <b>StorPortEnablePassiveInitialization</b> routine enables  the miniport's <a href="storage.hwstorpassiveinitializeroutine">HwStorPassiveInitializeRoutine</a> callback routine to execute at PASSIVE_LEVEL during miniport initialization.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ BOOLEAN StorPortEnablePassiveInitialization(
 ### -param <i>HwPassiveInitialization</i> [in]
 
 <dd>
-<p>Pointer to a callback routine that the port driver calls at PASSIVE_LEVEL to initialize the DPCs that the miniport driver will use. For a description of this callback routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557407">HwStorPassiveInitializeRoutine</a>. </p>
+<p>Pointer to a callback routine that the port driver calls at PASSIVE_LEVEL to initialize the DPCs that the miniport driver will use. For a description of this callback routine, see <a href="storage.hwstorpassiveinitializeroutine">HwStorPassiveInitializeRoutine</a>. </p>
 </dd>
 </dl>
 
@@ -73,11 +73,7 @@ BOOLEAN StorPortEnablePassiveInitialization(
 <p>The <b>StorPortEnablePassiveInitialization</b> routine returns <b>TRUE</b> if the operating system supports DPCs, and <b>FALSE</b> if not. </p>
 
 ## -remarks
-<p>A miniport must call the <b>StorPortEnablePassiveInitialization</b> routine only from within <a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a>. Otherwise, <b>StorPortEnablePassiveInitialization</b> will return <b>FALSE</b> and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557407">HwStorPassiveInitializeRoutine</a> routine will not execute.</p>
-
-<p>This routine is implemented using inline function definitions, so that miniport drivers that use this routine will not have to link to libraries that are dependent on the version of the operating system. Miniport drivers can use this routine without sacrificing backward compatibility with versions of the operating system that do not support DPCs in storage miniport drivers. </p>
-
-<p>A miniport must call the <b>StorPortEnablePassiveInitialization</b> routine only from within <a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a>. Otherwise, <b>StorPortEnablePassiveInitialization</b> will return <b>FALSE</b> and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557407">HwStorPassiveInitializeRoutine</a> routine will not execute.</p>
+<p>A miniport must call the <b>StorPortEnablePassiveInitialization</b> routine only from within <a href="storage.hwstorinitialize">HwStorInitialize</a>. Otherwise, <b>StorPortEnablePassiveInitialization</b> will return <b>FALSE</b> and the <a href="storage.hwstorpassiveinitializeroutine">HwStorPassiveInitializeRoutine</a> routine will not execute.</p>
 
 <p>This routine is implemented using inline function definitions, so that miniport drivers that use this routine will not have to link to libraries that are dependent on the version of the operating system. Miniport drivers can use this routine without sacrificing backward compatibility with versions of the operating system that do not support DPCs in storage miniport drivers. </p>
 
@@ -116,7 +112,7 @@ BOOLEAN StorPortEnablePassiveInitialization(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454264">StorPortEnablePassive</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454269">StorPortPassiveFromHwInit</a>
+<a href="devtest.storport_storportenablepassive">StorPortEnablePassive</a>, <a href="devtest.storport_storportpassivefromhwinit">StorPortPassiveFromHwInit</a>
 </td>
 </tr>
 </table>
@@ -124,7 +120,7 @@ BOOLEAN StorPortEnablePassiveInitialization(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557407">HwStorPassiveInitializeRoutine</a>
+<a href="storage.hwstorpassiveinitializeroutine">HwStorPassiveInitializeRoutine</a>
 </dt>
 </dl>
 <p> </p>

@@ -80,14 +80,7 @@ BOOLEAN EtwEventEnabled(
      logging is disabled.</p>
 
 <p>If the event descriptor is not available, use the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff545595">EtwProviderEnabled</a> function instead.</p>
-
-<p>If logging an event requires additional computing, the <b>EtwEventEnabled</b> 
-     function can be used to determine whether the event is going to be logged, which will minimize the overhead when 
-     logging is disabled.</p>
-
-<p>If the event descriptor is not available, use the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff545595">EtwProviderEnabled</a> function instead.</p>
+     <a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a> function instead.</p>
 
 ## -requirements
 <table>
@@ -152,7 +145,7 @@ BOOLEAN EtwEventEnabled(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545595">EtwProviderEnabled</a>
+<a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a>
 </dt>
 </dl>
 <p> </p>

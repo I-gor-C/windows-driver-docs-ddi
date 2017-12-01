@@ -57,12 +57,12 @@ HBA_STATUS HBA_API HBA_RemoveCallback(
 ### -param <i>callbackHandle</i> [in]
 
 <dd>
-<p>Contains an opaque handle specified with the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the callback routine to de-register. </p>
+<p>Contains an opaque handle specified with the call to <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the callback routine to de-register. </p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_RemoveCallback</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_RemoveCallback</b> returns one of the following values.</p><dl>
+<p>The <b>HBA_RemoveCallback</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_RemoveCallback</b> returns one of the following values.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the callback routine was successfully de-registered. </p><dl>
 <dt><b>HBA_STATUS_ERROR</b></dt>
@@ -120,10 +120,10 @@ HBA_STATUS HBA_API HBA_RemoveCallback(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

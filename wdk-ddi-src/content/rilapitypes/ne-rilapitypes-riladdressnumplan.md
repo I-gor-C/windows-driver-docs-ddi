@@ -7,7 +7,7 @@ old-location: netvista\riladdressnumplan_2.htm
 old-project: netvista
 ms.assetid: 14c0f786-4616-49f1-aa9c-0e5c8d4f0197
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

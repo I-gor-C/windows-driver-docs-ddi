@@ -212,7 +212,7 @@ typedef struct _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450790">IOCTL_ACPI_GET_DEVICE_INFORMATION</a>
+<a href="..\acpiioct\ni-acpiioct-ioctl-acpi-get-device-information.md">IOCTL_ACPI_GET_DEVICE_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

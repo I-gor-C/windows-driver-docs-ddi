@@ -7,7 +7,7 @@ old-location: audio\hdaudio_stream_state.htm
 old-project: audio
 ms.assetid: A1029A2D-980F-44F5-B7D6-1C37F97D0368
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,11 +83,7 @@ typedef enum _HDAUDIO_STREAM_STATE {
 </dl>
 
 ## -remarks
-<p>This enumeration is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537889">PSET_DMA_ENGINE_STATE</a>.</p>
-
-<p>This enumeration is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537889">PSET_DMA_ENGINE_STATE</a>.</p>
-
-<p>This enumeration is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537889">PSET_DMA_ENGINE_STATE</a>.</p>
+<p>This enumeration is used by the <a href="..\hdaudio\nc-hdaudio-pset-dma-engine-state.md">PSET_DMA_ENGINE_STATE</a>.</p>
 
 ## -requirements
 <table>

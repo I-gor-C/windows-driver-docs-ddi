@@ -115,7 +115,7 @@ typedef struct _WIA_DEV_CAP_DRV {
 </dl>
 
 ## -remarks
-<p>The WIA service calls the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff543977">IWiaMiniDrv::drvGetCapabilities</a> function to fill in the members of a WIA_DEV_CAP_DRV structure.</p>
+<p>The WIA service calls the minidriver's <a href="image.iwiaminidrv_drvgetcapabilities">IWiaMiniDrv::drvGetCapabilities</a> function to fill in the members of a WIA_DEV_CAP_DRV structure.</p>
 
 <p>When a driver is enumerating event handlers, the only valid value is WIA_IS_DEFAULT_HANDLER; which indicates that the currently registered handler should be used.</p>
 
@@ -144,7 +144,7 @@ typedef struct _WIA_DEV_CAP_DRV {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543977">IWiaMiniDrv::drvGetCapabilities</a>
+<a href="image.iwiaminidrv_drvgetcapabilities">IWiaMiniDrv::drvGetCapabilities</a>
 </dt>
 <dt>
 <a href="NULL">Driver Capabilities</a>

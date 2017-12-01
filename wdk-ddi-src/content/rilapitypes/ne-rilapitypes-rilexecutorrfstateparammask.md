@@ -7,7 +7,7 @@ old-location: netvista\rilexecutorrfstateparammask_2.htm
 old-project: netvista
 ms.assetid: 310cd96f-ad99-4fdb-b49c-e4fee749ff78
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -90,7 +90,7 @@ STDMETHODIMP DeviceReset();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543733">IStiDevice::DeviceReset</a>
+<a href="image.istidevice_devicereset">IStiDevice::DeviceReset</a>
 </dt>
 </dl>
 <p> </p>

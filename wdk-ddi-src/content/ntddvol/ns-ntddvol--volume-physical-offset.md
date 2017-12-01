@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The VOLUME_PHYSICAL_OFFSET structure contains a physical offset into a volume and its accompanying physical disk number and is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff561438">IOCTL_VOLUME_PHYSICAL_TO_LOGICAL</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561425">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a> to request a logical offset equivalent of a physical offset or a physical offset equivalent of a logical offset, respectively.</p>
+<p>The VOLUME_PHYSICAL_OFFSET structure contains a physical offset into a volume and its accompanying physical disk number and is used with <a href="..\ntddvol\ni-ntddvol-ioctl-volume-physical-to-logical.md">IOCTL_VOLUME_PHYSICAL_TO_LOGICAL</a> and <a href="..\ntddvol\ni-ntddvol-ioctl-volume-logical-to-physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a> to request a logical offset equivalent of a physical offset or a physical offset equivalent of a logical offset, respectively.</p>
 
 
 ## -syntax
@@ -88,10 +88,10 @@ typedef struct _VOLUME_PHYSICAL_OFFSET {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561425">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>
+<a href="..\ntddvol\ni-ntddvol-ioctl-volume-logical-to-physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561438">IOCTL_VOLUME_PHYSICAL_TO_LOGICAL</a>
+<a href="..\ntddvol\ni-ntddvol-ioctl-volume-physical-to-logical.md">IOCTL_VOLUME_PHYSICAL_TO_LOGICAL</a>
 </dt>
 </dl>
 <p> </p>

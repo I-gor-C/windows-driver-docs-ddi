@@ -62,7 +62,7 @@ NTSTATUS Dump_Write(
 ### -param <i>FilterExtension</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553862">FILTER_EXTENSION</a> structure.</p>
+<p>A pointer to a <a href="..\ntdddump\ns-ntdddump--filter-extension.md">FILTER_EXTENSION</a> structure.</p>
 </dd>
 
 ### -param <i>DiskByteOffset</i> [in, out]
@@ -74,7 +74,7 @@ NTSTATUS Dump_Write(
 ### -param <i>Mdl</i> [in, out]
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a> structure that describes the data buffer. If the <b>MDL</b> is modified, the size of the write operation cannot change.</p>
+<p>A pointer to an <a href="..\wdm\ns-wdm--mdl.md">MDL</a> structure that describes the data buffer. If the <b>MDL</b> is modified, the size of the write operation cannot change.</p>
 </dd>
 </dl>
 
@@ -84,11 +84,7 @@ NTSTATUS Dump_Write(
 ## -remarks
 <p>Filter drivers can read the data that needs to be written. However, filter drivers cannot write to the buffer, as this could change the contents of the code or data that is being used by the crash dump process. Also, filter drivers are not allowed to change the size of the data.</p>
 
-<p>To safely modify the data for the dump write, a filter driver should allocate a secondary buffer. The buffer's size will be the value of the <b>MaxPagesPerWrite</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff553865">FILTER_INITIALIZATION_DATA</a> multiplied by <b>PAGE_SIZE</b>. The data for the current buffer described by <i>Mdl</i> is copied into the secondary buffer and processed. After the filter is finished handling the dump data in the secondary buffer, the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a> pointed to by <i>Mdl</i> is updated with the address of the secondary buffer. The starting address of the secondary buffer set in the <b>MDL</b> must be page aligned.</p>
-
-<p>Filter drivers can read the data that needs to be written. However, filter drivers cannot write to the buffer, as this could change the contents of the code or data that is being used by the crash dump process. Also, filter drivers are not allowed to change the size of the data.</p>
-
-<p>To safely modify the data for the dump write, a filter driver should allocate a secondary buffer. The buffer's size will be the value of the <b>MaxPagesPerWrite</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff553865">FILTER_INITIALIZATION_DATA</a> multiplied by <b>PAGE_SIZE</b>. The data for the current buffer described by <i>Mdl</i> is copied into the secondary buffer and processed. After the filter is finished handling the dump data in the secondary buffer, the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a> pointed to by <i>Mdl</i> is updated with the address of the secondary buffer. The starting address of the secondary buffer set in the <b>MDL</b> must be page aligned.</p>
+<p>To safely modify the data for the dump write, a filter driver should allocate a secondary buffer. The buffer's size will be the value of the <b>MaxPagesPerWrite</b> member of <a href="..\ntdddump\ns-ntdddump--filter-initialization-data.md">FILTER_INITIALIZATION_DATA</a> multiplied by <b>PAGE_SIZE</b>. The data for the current buffer described by <i>Mdl</i> is copied into the secondary buffer and processed. After the filter is finished handling the dump data in the secondary buffer, the  <a href="..\wdm\ns-wdm--mdl.md">MDL</a> pointed to by <i>Mdl</i> is updated with the address of the secondary buffer. The starting address of the secondary buffer set in the <b>MDL</b> must be page aligned.</p>
 
 ## -requirements
 <table>
@@ -125,13 +121,13 @@ NTSTATUS Dump_Write(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439713">Dump_Read</a>
+<a href="..\ntdddump\nc-ntdddump-dump-read.md">Dump_Read</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553862">FILTER_EXTENSION</a>
+<a href="..\ntdddump\ns-ntdddump--filter-extension.md">FILTER_EXTENSION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553865">FILTER_INITIALIZATION_DATA</a>
+<a href="..\ntdddump\ns-ntdddump--filter-initialization-data.md">FILTER_INITIALIZATION_DATA</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: debugger\getprocessidsbyindex.htm
 old-project: debugger
 ms.assetid: 2ae042c5-9c2a-4de4-817c-c9b97f979684
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, GetProcessIdsByIndex, IDebugSystemObjects4::GetProcessIdsByIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,11 +90,7 @@ HRESULT GetProcessIdsByIndex(
 <p> </p>
 
 ## -remarks
-<p>The index of the first process is zero.  The index of the last process is the number of processes returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547946">GetNumberProcesses</a> minus one.</p>
-
-<p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
-<p>The index of the first process is zero.  The index of the last process is the number of processes returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547946">GetNumberProcesses</a> minus one.</p>
+<p>The index of the first process is zero.  The index of the last process is the number of processes returned by <a href="debugger.getnumberprocesses">GetNumberProcesses</a> minus one.</p>
 
 <p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
 

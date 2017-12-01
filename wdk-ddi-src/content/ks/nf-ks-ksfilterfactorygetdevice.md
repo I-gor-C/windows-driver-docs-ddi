@@ -7,7 +7,7 @@ old-location: stream\ksfilterfactorygetdevice.htm
 old-project: stream
 ms.assetid: e5b7b014-3e06-49f2-8ccd-45d74592e349
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsFilterFactoryGetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,19 +57,15 @@ PKSDEVICE __inline KsFilterFactoryGetDevice(
 ### -param <i>FilterFactory</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a> structure for which to find the corresponding AVStream device.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure for which to find the corresponding AVStream device.</p>
 </dd>
 </dl>
 
 ## -returns
-<p>Returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> structure representing the AVStream device to which <i>FilterFactory</i> belongs.</p>
+<p>Returns a pointer to a <a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a> structure representing the AVStream device to which <i>FilterFactory</i> belongs.</p>
 
 ## -remarks
-<p>This call is an inline function call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562615">KsGetDevice</a>.</p>
-
-<p>For more information about the AVStream object hierarchy, see  <a href="NULL">AVStream Overview</a>.</p>
-
-<p>This call is an inline function call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562615">KsGetDevice</a>.</p>
+<p>This call is an inline function call to <a href="..\ks\nf-ks-ksgetdevice.md">KsGetDevice</a>.</p>
 
 <p>For more information about the AVStream object hierarchy, see  <a href="NULL">AVStream Overview</a>.</p>
 
@@ -116,15 +112,15 @@ PKSDEVICE __inline KsFilterFactoryGetDevice(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a>
+<a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a>
+<a href="..\ks\ns-ks--ksdevice.md">KSDEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562615">KsGetDevice</a>
+<a href="..\ks\nf-ks-ksgetdevice.md">KsGetDevice</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterFactoryGetDevice function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterFactoryGetDevice function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfomultiparty_2.htm
 old-project: netvista
 ms.assetid: 31e3f763-bdf8-403a-bea2-5329db1c5ea7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

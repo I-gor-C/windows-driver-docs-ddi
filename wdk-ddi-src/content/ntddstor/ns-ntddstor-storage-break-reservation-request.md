@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The STORAGE_BREAK_RESERVATION_REQUEST structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560533">IOCTL_STORAGE_BREAK_RESERVATION</a> request to free a disk resource that was previously reserved. </p>
+<p>The STORAGE_BREAK_RESERVATION_REQUEST structure is used in conjunction with the <a href="..\ntddstor\ni-ntddstor-ioctl-storage-break-reservation.md">IOCTL_STORAGE_BREAK_RESERVATION</a> request to free a disk resource that was previously reserved. </p>
 
 
 ## -syntax
@@ -109,7 +109,7 @@ typedef struct STORAGE_BREAK_RESERVATION_REQUEST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560533">IOCTL_STORAGE_BREAK_RESERVATION</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-break-reservation.md">IOCTL_STORAGE_BREAK_RESERVATION</a>
 </dt>
 </dl>
 <p> </p>

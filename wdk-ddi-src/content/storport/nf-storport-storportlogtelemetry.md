@@ -95,11 +95,6 @@ ULONG StorPortLogTelemetry(
 <p>If miniport has no payload to fill in Event-&gt;EventBuffer, it should set Event-&gt;EventBufferLength = 0, as well as Event-&gt;EventBuffer = NULL.
 </p>
 
-<p>If any parameter in Event structure is not named, Event-&gt;ParameterNameX == NULL, the routine will set the corresponding parameter value to 0.</p>
-
-<p>If miniport has no payload to fill in Event-&gt;EventBuffer, it should set Event-&gt;EventBufferLength = 0, as well as Event-&gt;EventBuffer = NULL.
-</p>
-
 ## -requirements
 <table>
 <tr>

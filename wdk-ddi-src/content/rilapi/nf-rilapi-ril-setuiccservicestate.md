@@ -7,7 +7,7 @@ old-location: netvista\ril_setuiccservicestate.htm
 old-project: netvista
 ms.assetid: 96b17a3f-1e69-47f5-aa09-59abfb5c1505
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SetUiccServiceState
 ms.prod: windows-hardware
 ms.technology: windows-devices

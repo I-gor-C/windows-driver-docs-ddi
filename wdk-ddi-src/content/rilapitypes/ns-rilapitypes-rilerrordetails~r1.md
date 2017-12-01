@@ -7,7 +7,7 @@ old-location: netvista\rilerrordetails_2.htm
 old-project: netvista
 ms.assetid: decfcafa-fe8b-44f6-913b-c04cf3b320a3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILERRORDETAILS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

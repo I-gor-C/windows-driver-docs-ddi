@@ -7,7 +7,7 @@ old-location: netvista\ril_writeadditionalnumberstring.htm
 old-project: netvista
 ms.assetid: 9ddf148b-7d36-4a95-a866-57e26220a549
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WriteAdditionalNumberString
 ms.prod: windows-hardware
 ms.technology: windows-devices

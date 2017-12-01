@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Note that the <b>IWiaLog</b> interface is <b>obsolete</b> for Microsoft Windows XP and later, and is no longer supported. Instead, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540599">Diagnostic Log Macros</a>.</p>
+<p>Note that the <b>IWiaLog</b> interface is <b>obsolete</b> for Microsoft Windows XP and later, and is no longer supported. Instead, use the <a href="image.diagnostic_log_macros">Diagnostic Log Macros</a>.</p>
 <p>The <b>IWiaLog::InitializeLog</b> method initializes the <b>lWiaLog</b> interface.</p>
 
 
@@ -67,8 +67,6 @@ HRESULT InitializeLog(
 <p>If the method succeeds, it returns S_OK. If the method fails, it returns a standard COM error code.</p>
 
 ## -remarks
-<p>The minidriver should call <b>CoCreateInstance</b> or <b>CoCreateInstanceEx </b>(which are described in the Microsoft Windows SDK documentation) to obtain the <b>IWiaLog</b> interface.</p>
-
 <p>The minidriver should call <b>CoCreateInstance</b> or <b>CoCreateInstanceEx </b>(which are described in the Microsoft Windows SDK documentation) to obtain the <b>IWiaLog</b> interface.</p>
 
 ## -requirements

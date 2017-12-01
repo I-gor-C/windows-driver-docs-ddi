@@ -7,7 +7,7 @@ old-location: debugger\idebugclient.htm
 old-project: debugger
 ms.assetid: 2e47f7ae-2017-4f05-9a06-6c09bb401e21
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,9 +74,9 @@ req.iface: IDebugSystemObjects4
 
 <p>Ends the current debugger session.</p>
 
-<p>Causes the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541970">DispatchCallbacks</a> method to return.</p>
+<p>Causes the <a href="debugger.dispatchcallbacks">DispatchCallbacks</a> method to return.</p>
 
-<p> Forces any remaining buffered output to be delivered to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550801">IDebugOutputCallbacks</a> object registered with this client.</p>
+<p> Forces any remaining buffered output to be delivered to the <a href="..\dbgeng\nn-dbgeng-idebugoutputcallbacks.md">IDebugOutputCallbacks</a> object registered with this client.</p>
 
 <p>Returns the event callbacks object registered with this client.
 </p>
@@ -167,7 +167,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537917">AddProcessOptions</a>
+<a href="debugger.addprocessoptions">AddProcessOptions</a>
 </td>
 <td align="left" width="63%">
 <p>Adds the process options to those options that affect the current process.
@@ -176,7 +176,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538145">AttachKernel</a>
+<a href="debugger.attachkernel">AttachKernel</a>
 </td>
 <td align="left" width="63%">
 <p>Connects the debugger engine to a kernel target.
@@ -185,7 +185,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538150">AttachProcess</a>
+<a href="debugger.attachprocess">AttachProcess</a>
 </td>
 <td align="left" width="63%">
 <p>Connects the debugger engine to a user-mode process.</p>
@@ -193,7 +193,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539237">ConnectProcessServer</a>
+<a href="debugger.connectprocessserver">ConnectProcessServer</a>
 </td>
 <td align="left" width="63%">
 <p>Connects to a process server.</p>
@@ -201,7 +201,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539245">ConnectSession</a>
+<a href="debugger.connectsession">ConnectSession</a>
 </td>
 <td align="left" width="63%">
 <p>Joins the client to an existing debugger session.</p>
@@ -209,7 +209,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539320">CreateClient</a>
+<a href="debugger.createclient">CreateClient</a>
 </td>
 <td align="left" width="63%">
 <p>Creates a new client object for the current thread.</p>
@@ -217,7 +217,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539321">CreateProcess</a>
+<a href="debugger.createprocess">CreateProcess</a>
 </td>
 <td align="left" width="63%">
 <p>Creates a process from the specified command line.
@@ -226,7 +226,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540048">CreateProcessAndAttach</a>
+<a href="debugger.createprocessandattach">CreateProcessAndAttach</a>
 </td>
 <td align="left" width="63%">
 <p> Create a process from a specified command line, then attaches to another user-mode process.</p>
@@ -234,7 +234,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541851">DetachProcesses</a>
+<a href="debugger.detachprocesses">DetachProcesses</a>
 </td>
 <td align="left" width="63%">
 <p>Detaches the debugger engine from all processes in all targets, resuming all their threads.
@@ -243,7 +243,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541969">DisconnectProcessServer</a>
+<a href="debugger.disconnectprocessserver">DisconnectProcessServer</a>
 </td>
 <td align="left" width="63%">
 <p>Disconnects the debugger engine from a process server.</p>
@@ -251,7 +251,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541970">DispatchCallbacks</a>
+<a href="debugger.dispatchcallbacks">DispatchCallbacks</a>
 </td>
 <td align="left" width="63%">
 <p>Enables the debugger engine to use the current thread for callbacks.
@@ -260,7 +260,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543004">EndSession</a>
+<a href="debugger.endsession">EndSession</a>
 </td>
 <td align="left" width="63%">
 <p>Ends the current debugger session.</p>
@@ -268,23 +268,23 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543265">ExitDispatch</a>
+<a href="debugger.exitdispatch">ExitDispatch</a>
 </td>
 <td align="left" width="63%">
-<p>Causes the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541970">DispatchCallbacks</a> method to return.</p>
+<p>Causes the <a href="debugger.dispatchcallbacks">DispatchCallbacks</a> method to return.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545475">FlushCallbacks</a>
+<a href="debugger.flushcallbacks">FlushCallbacks</a>
 </td>
 <td align="left" width="63%">
-<p> Forces any remaining buffered output to be delivered to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550801">IDebugOutputCallbacks</a> object registered with this client.</p>
+<p> Forces any remaining buffered output to be delivered to the <a href="..\dbgeng\nn-dbgeng-idebugoutputcallbacks.md">IDebugOutputCallbacks</a> object registered with this client.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546601">GetEventCallbacks</a>
+<a href="debugger.geteventcallbacks">GetEventCallbacks</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the event callbacks object registered with this client.
@@ -293,7 +293,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546679">GetExitCode</a>
+<a href="debugger.getexitcode">GetExitCode</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the exit code of the current process if that process has already run through to completion.
@@ -302,7 +302,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546831">GetIdentity</a>
+<a href="debugger.getidentity">GetIdentity</a>
 </td>
 <td align="left" width="63%">
 <p>Returns a string describing the computer and user this client represents.
@@ -311,7 +311,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546892">GetInputCallbacks</a>
+<a href="debugger.getinputcallbacks">GetInputCallbacks</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the input callbacks object registered with this client.</p>
@@ -319,7 +319,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546970">GetKernelConnectionOptions</a>
+<a href="debugger.getkernelconnectionoptions">GetKernelConnectionOptions</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the connection options for the current kernel target.
@@ -328,7 +328,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548066">GetOtherOutputMask</a>
+<a href="debugger.getotheroutputmask">GetOtherOutputMask</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the output mask for another client.
@@ -337,7 +337,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548071">GetOutputCallbacks</a>
+<a href="debugger.getoutputcallbacks">GetOutputCallbacks</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the output callbacks object registered with the client.
@@ -352,7 +352,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548080">GetOutputMask</a>
+<a href="debugger.getoutputmask">GetOutputMask</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the output mask currently set for the client.</p>
@@ -366,7 +366,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548163">GetProcessOptions</a>
+<a href="debugger.getprocessoptions">GetProcessOptions</a>
 </td>
 <td align="left" width="63%">
 <p>Retrieves the process options affecting the current process.
@@ -375,7 +375,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548243">GetRunningProcessDescription</a>
+<a href="debugger.getrunningprocessdescription">GetRunningProcessDescription</a>
 </td>
 <td align="left" width="63%">
 <p>Returns a description of the process that includes the executable image name, the service names, the MTS package names, and the command line.</p>
@@ -383,7 +383,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548254">GetRunningProcessSystemIdByExecutableName</a>
+<a href="debugger.getrunningprocesssystemidbyexecutablename">GetRunningProcessSystemIdByExecutableName</a>
 </td>
 <td align="left" width="63%">
 <p> Searches for a process with a given executable file name and return its process ID.
@@ -392,7 +392,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548265">GetRunningProcessSystemIds</a>
+<a href="debugger.getrunningprocesssystemids">GetRunningProcessSystemIds</a>
 </td>
 <td align="left" width="63%">
 <p> Returns the process IDs for each running process.</p>
@@ -400,7 +400,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552322">OpenDumpFile</a>
+<a href="debugger.opendumpfile">OpenDumpFile</a>
 </td>
 <td align="left" width="63%">
 <p>Opens a dump file as a debugger target.
@@ -409,7 +409,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553219">OutputIdentity</a>
+<a href="debugger.outputidentity">OutputIdentity</a>
 </td>
 <td align="left" width="63%">
 <p> Formats and outputs a string describing the computer and user this client represents.
@@ -418,7 +418,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553247">OutputServers</a>
+<a href="debugger.outputservers">OutputServers</a>
 </td>
 <td align="left" width="63%">
 <p>Lists the servers running on a given computer.
@@ -427,7 +427,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554505">RemoveProcessOptions</a>
+<a href="debugger.removeprocessoptions">RemoveProcessOptions</a>
 </td>
 <td align="left" width="63%">
 <p>Removes process options from those options that affect the current process.
@@ -436,7 +436,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556671">SetEventCallbacks</a>
+<a href="debugger.seteventcallbacks">SetEventCallbacks</a>
 </td>
 <td align="left" width="63%">
 <p>Registers an event callbacks object with this client.
@@ -445,7 +445,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556721">SetInputCallbacks</a>
+<a href="debugger.setinputcallbacks">SetInputCallbacks</a>
 </td>
 <td align="left" width="63%">
 <p>Registers an input callbacks object with the client.</p>
@@ -453,7 +453,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556729">SetKernelConnectionOptions</a>
+<a href="debugger.setkernelconnectionoptions">SetKernelConnectionOptions</a>
 </td>
 <td align="left" width="63%">
 <p>Updates some of the connection options for a live kernel target.
@@ -462,7 +462,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556750">SetOtherOutputMask</a>
+<a href="debugger.setotheroutputmask">SetOtherOutputMask</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the output mask for another client.
@@ -471,7 +471,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556751">SetOutputCallbacks</a>
+<a href="debugger.setoutputcallbacks">SetOutputCallbacks</a>
 </td>
 <td align="left" width="63%">
 <p>Registers an output callbacks object with this client.</p>
@@ -485,7 +485,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556756">SetOutputMask</a>
+<a href="debugger.setoutputmask">SetOutputMask</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the output mask for the client.</p>
@@ -499,7 +499,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556765">SetProcessOptions</a>
+<a href="debugger.setprocessoptions">SetProcessOptions</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the process options affecting the current process.</p>
@@ -507,7 +507,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558810">StartProcessServer</a>
+<a href="debugger.startprocessserver">StartProcessServer</a>
 </td>
 <td align="left" width="63%">
 <p>Starts a process server.</p>
@@ -515,7 +515,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558813">StartServer</a>
+<a href="debugger.startserver">StartServer</a>
 </td>
 <td align="left" width="63%">
 <p> Starts a debugging server.
@@ -524,7 +524,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558867">TerminateProcesses</a>
+<a href="debugger.terminateprocesses">TerminateProcesses</a>
 </td>
 <td align="left" width="63%">
 <p>Attempts to terminate all processes in all targets.</p>
@@ -532,7 +532,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561380">WriteDumpFile</a>
+<a href="debugger.writedumpfile">WriteDumpFile</a>
 </td>
 <td align="left" width="63%">
 <p>Creates a user-mode or kernel-mode crash dump file.
@@ -568,9 +568,9 @@ req.iface: IDebugSystemObjects4
 
 <p>Ends the current debugger session.</p>
 
-<p>Causes the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541970">DispatchCallbacks</a> method to return.</p>
+<p>Causes the <a href="debugger.dispatchcallbacks">DispatchCallbacks</a> method to return.</p>
 
-<p> Forces any remaining buffered output to be delivered to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550801">IDebugOutputCallbacks</a> object registered with this client.</p>
+<p> Forces any remaining buffered output to be delivered to the <a href="..\dbgeng\nn-dbgeng-idebugoutputcallbacks.md">IDebugOutputCallbacks</a> object registered with this client.</p>
 
 <p>Returns the event callbacks object registered with this client.
 </p>
@@ -673,18 +673,18 @@ req.iface: IDebugSystemObjects4
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550481">IDebugClient2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550488">IDebugClient3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550494">IDebugClient4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient interface%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient interface%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -107,7 +107,7 @@ typedef struct _DXVADDI_FIXED32 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562917">DXVADDI_PROCAMPVALUES</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-procampvalues.md">DXVADDI_PROCAMPVALUES</a>
 </dt>
 </dl>
 <p> </p>

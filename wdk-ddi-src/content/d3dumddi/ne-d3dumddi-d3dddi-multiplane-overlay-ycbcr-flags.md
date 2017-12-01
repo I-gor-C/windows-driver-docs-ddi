@@ -78,10 +78,6 @@ typedef enum D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
 ## -remarks
 <p>For more info on how YUV ranges are defined and converted, see <a href="display.yuv_format_ranges">YUV format ranges in Windows 8.1</a>.</p>
 
-<p>For more info on how YUV ranges are defined and converted, see <a href="display.yuv_format_ranges">YUV format ranges in Windows 8.1</a>.</p>
-
-<p>For more info on how YUV ranges are defined and converted, see <a href="display.yuv_format_ranges">YUV format ranges in Windows 8.1</a>.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CREATE_DISK_MBR structure is used with the IOCTL <a href="https://msdn.microsoft.com/library/windows/hardware/ff559436">IOCTL_DISK_CREATE_DISK</a> to initialize a disk with an empty MBR partition table.</p>
+<p>The CREATE_DISK_MBR structure is used with the IOCTL <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-create-disk.md">IOCTL_DISK_CREATE_DISK</a> to initialize a disk with an empty MBR partition table.</p>
 
 
 ## -syntax
@@ -81,10 +81,10 @@ typedef struct _CREATE_DISK_MBR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552484">CREATE_DISK</a>
+<a href="..\ntdddisk\ns-ntdddisk--create-disk.md">CREATE_DISK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559436">IOCTL_DISK_CREATE_DISK</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-create-disk.md">IOCTL_DISK_CREATE_DISK</a>
 </dt>
 </dl>
 <p> </p>

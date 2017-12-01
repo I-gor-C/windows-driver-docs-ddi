@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>IOCTL_INTERNAL_PARALLEL_PORT_FREE</b> request frees a parallel port. After using a parallel port, a client must free it. Microsoft recommends using the system-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff544509">PPARALLEL_FREE_ROUTINE</a> callback to free a parallel port because there is no functional advantage to using an <b>IOCTL_INTERNAL_PARALLEL_PORT_FREE</b> request to free the port.</p>
+<p>The <b>IOCTL_INTERNAL_PARALLEL_PORT_FREE</b> request frees a parallel port. After using a parallel port, a client must free it. Microsoft recommends using the system-supplied <a href="..\parallel\nc-parallel-pparallel-free-routine.md">PPARALLEL_FREE_ROUTINE</a> callback to free a parallel port because there is no functional advantage to using an <b>IOCTL_INTERNAL_PARALLEL_PORT_FREE</b> request to free the port.</p>
 <p>For more information, see <a href="https://msdn.microsoft.com/ea3a1998-9e31-4047-9193-6b402db222c9">Synchronizing the Use of a ParallelPort</a>.</p>
 
 
@@ -119,10 +119,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544023">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-port-allocate.md">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544509">PPARALLEL_FREE_ROUTINE</a>
+<a href="..\parallel\nc-parallel-pparallel-free-routine.md">PPARALLEL_FREE_ROUTINE</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: sensors\gnss_satelliteinfo.htm
 old-project: sensors
 ms.assetid: 27F537D8-45B2-43D9-A614-3558534C9DBA
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_SATELLITEINFO, GNSS_SATELLITEINFO, *PGNSS_SATELLITEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

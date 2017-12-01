@@ -108,7 +108,7 @@ typedef struct _DXGK_DEVICEINFOFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561047">DXGK_DEVICEINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-deviceinfo.md">DXGK_DEVICEINFO</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreatedevice">DxgkDdiCreateDevice</a>

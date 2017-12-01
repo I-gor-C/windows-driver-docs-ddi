@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DDDIARG_DESTROYCRYPTOSESSION structure contains the handle to an encryption session that is destroyed in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451632">DestroyCryptoSession</a> function. </p>
+<p>The D3DDDIARG_DESTROYCRYPTOSESSION structure contains the handle to an encryption session that is destroyed in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroycryptosession.md">DestroyCryptoSession</a> function. </p>
 
 
 ## -syntax
@@ -89,7 +89,7 @@ typedef struct _D3DDDIARG_DESTROYCRYPTOSESSION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451632">DestroyCryptoSession</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroycryptosession.md">DestroyCryptoSession</a>
 </dt>
 </dl>
 <p> </p>

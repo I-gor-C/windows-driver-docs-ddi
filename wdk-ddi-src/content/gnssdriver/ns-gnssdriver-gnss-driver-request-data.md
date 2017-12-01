@@ -7,7 +7,7 @@ old-location: sensors\gnss_driver_request_data.htm
 old-project: sensors
 ms.assetid: 801FBD9D-304A-41AC-AD28-00DE95DEFE63
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: GNSS_DRIVER_REQUEST_DATA, GNSS_DRIVER_REQUEST_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,7 +75,7 @@ typedef struct {
 
 <dd>
 <p>The type of request made by the driver.</p>
-<p>Represented by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925124">GNSS_DRIVER_REQUEST</a> enumeration.</p>
+<p>Represented by the <a href="..\gnssdriver\ne-gnssdriver-gnss-driver-request.md">GNSS_DRIVER_REQUEST</a> enumeration.</p>
 </dd>
 
 ### -field <b>RequestFlag</b>

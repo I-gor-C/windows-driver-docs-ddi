@@ -96,10 +96,10 @@ typedef struct _UCX_CONTROLLER_ACPI_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188057">UCX_CONTROLLER_CONFIG</a>
+<a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188058">UCX_CONTROLLER_CONFIG_SET_ACPI_INFO</a>
+<a href="buses._ucx_controller_config_set_acpi_info">UCX_CONTROLLER_CONFIG_SET_ACPI_INFO</a>
 </dt>
 </dl>
 <p> </p>

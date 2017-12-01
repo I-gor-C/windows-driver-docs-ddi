@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>FltClose</b> closes a file handle that was opened by <a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff541937">FltCreateFileEx</a>. </p>
+<p><b>FltClose</b> closes a file handle that was opened by <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> or <a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>. </p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ NTSTATUS FltClose(
 ### -param <i>FileHandle</i> [in]
 
 <dd>
-<p>Handle created by a successful call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff541937">FltCreateFileEx</a>. </p>
+<p>Handle created by a successful call to <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> or <a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>. </p>
 </dd>
 </dl>
 
@@ -69,9 +69,7 @@ NTSTATUS FltClose(
 <p> </p>
 
 ## -remarks
-<p><b>FltClose</b> is only for closing file handles opened by <a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff541937">FltCreateFileEx</a>. It should not be used to close arbitrary handles. </p>
-
-<p><b>FltClose</b> is only for closing file handles opened by <a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff541937">FltCreateFileEx</a>. It should not be used to close arbitrary handles. </p>
+<p><b>FltClose</b> is only for closing file handles opened by <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> or <a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>. It should not be used to close arbitrary handles. </p>
 
 ## -requirements
 <table>
@@ -128,13 +126,13 @@ NTSTATUS FltClose(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541937">FltCreateFileEx</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 </dt>
 </dl>
 <p> </p>

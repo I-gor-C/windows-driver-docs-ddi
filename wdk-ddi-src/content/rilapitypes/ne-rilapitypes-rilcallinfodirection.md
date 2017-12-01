@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfodirection_2.htm
 old-project: netvista
 ms.assetid: 55db88f4-14a5-4d37-b4e8-be88369f33b7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

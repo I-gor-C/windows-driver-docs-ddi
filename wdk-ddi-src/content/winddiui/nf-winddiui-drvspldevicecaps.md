@@ -120,7 +120,7 @@ DWORD DrvSplDeviceCaps(
 ### -param <i>pDM</i> [in, optional]
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure that describes the current print job characteristics. If <b>NULL</b>, the function should use the driver's internal default DEVMODEW structure. </p>
+<p>Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure that describes the current print job characteristics. If <b>NULL</b>, the function should use the driver's internal default DEVMODEW structure. </p>
 </dd>
 </dl>
 
@@ -130,13 +130,7 @@ DWORD DrvSplDeviceCaps(
 ## -remarks
 <p>The <b>DrvSplDeviceCaps</b> function is available in Microsoft Windows Server 2003 and later.</p>
 
-<p>For descriptions of the DC_<i>XXX</i> flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548539">DrvDeviceCapabilities</a>.</p>
-
-<p>This function must be defined in the .def file as DrvSplDeviceCaps @ 254, because the spooler uses the ordinal number 254 to obtain the driver function pointer.</p>
-
-<p>The <b>DrvSplDeviceCaps</b> function is available in Microsoft Windows Server 2003 and later.</p>
-
-<p>For descriptions of the DC_<i>XXX</i> flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548539">DrvDeviceCapabilities</a>.</p>
+<p>For descriptions of the DC_<i>XXX</i> flags, see <a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a>.</p>
 
 <p>This function must be defined in the .def file as DrvSplDeviceCaps @ 254, because the spooler uses the ordinal number 254 to obtain the driver function pointer.</p>
 
@@ -167,7 +161,7 @@ DWORD DrvSplDeviceCaps(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548539">DrvDeviceCapabilities</a>
+<a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a>
 </dt>
 </dl>
 <p> </p>

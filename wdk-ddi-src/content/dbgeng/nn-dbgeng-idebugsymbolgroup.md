@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbolgroup.htm
 old-project: debugger
 ms.assetid: dd629e4a-938e-4db6-b0f3-6dd12a431486
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,7 +82,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537925">AddSymbol</a>
+<a href="debugger.addsymbol">AddSymbol</a>
 </td>
 <td align="left" width="63%">
 <p>Adds a symbol to a symbol group.</p>
@@ -90,7 +90,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543271">ExpandSymbol</a>
+<a href="debugger.expandsymbol">ExpandSymbol</a>
 </td>
 <td align="left" width="63%">
 <p>Adds or removes the children of a symbol from a symbol group.</p>
@@ -98,7 +98,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
+<a href="debugger.getnumbersymbols">GetNumberSymbols</a>
 </td>
 <td align="left" width="63%">
 <p> Returns the number of symbols that are contained in a symbol group.
@@ -107,7 +107,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549121">GetSymbolName</a>
+<a href="debugger.getsymbolname">GetSymbolName</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the name of a symbol in a symbol group.
@@ -116,7 +116,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549146">GetSymbolParameters</a>
+<a href="debugger.getsymbolparameters">GetSymbolParameters</a>
 </td>
 <td align="left" width="63%">
 <p>Returns the symbol parameters that describe the specified symbols in a symbol group.
@@ -125,7 +125,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553191">OutputAsType</a>
+<a href="debugger.outputastype">OutputAsType</a>
 </td>
 <td align="left" width="63%">
 <p>Changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type. 
@@ -134,7 +134,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553264">OutputSymbols</a>
+<a href="debugger.outputsymbols">OutputSymbols</a>
 </td>
 <td align="left" width="63%">
 <p>Prints the specified symbols to the debugger console.</p>
@@ -142,7 +142,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554510">RemoveSymbolByIndex</a>
+<a href="debugger.removesymbolbyindex">RemoveSymbolByIndex</a>
 </td>
 <td align="left" width="63%">
 <p>Removes the specified symbol from a symbol group.
@@ -151,7 +151,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554518">RemoveSymbolByName</a>
+<a href="debugger.removesymbolbyname">RemoveSymbolByName</a>
 </td>
 <td align="left" width="63%">
 <p> Removes the specified symbol from a symbol group.
@@ -160,7 +160,7 @@ req.iface: IDebugSystemObjects4
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561457">WriteSymbol</a>
+<a href="debugger.writesymbol">WriteSymbol</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the value of the specified symbol.
@@ -216,9 +216,9 @@ req.iface: IDebugSystemObjects4
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550846">IDebugSymbolGroup2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup interface%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup interface%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

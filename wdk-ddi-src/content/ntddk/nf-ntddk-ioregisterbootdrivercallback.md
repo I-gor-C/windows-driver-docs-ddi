@@ -7,7 +7,7 @@ old-location: kernel\ioregisterbootdrivercallback.htm
 old-project: kernel
 ms.assetid: 28BA4B54-F493-4D79-89DF-D890EBCF1E9C
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoRegisterBootDriverCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,54 +69,20 @@ PVOID IoRegisterBootDriverCallback(
 </dl>
 
 ## -returns
-<p>A handle that represents the registration. This handle must be supplied as an input parameter in the call to the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439394">IoUnRegisterBootDriverCallback</a> routine that unregisters the <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine.</p>
+<p>A handle that represents the registration. This handle must be supplied as an input parameter in the call to the  <a href="..\ntddk\nf-ntddk-iounregisterbootdrivercallback.md">IoUnRegisterBootDriverCallback</a> routine that unregisters the <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine.</p>
 
 ## -remarks
-<p>Boot-start drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh439394">IoUnRegisterBootDriverCallback</a> and pass the returned handle to unregister the boot-start driver callback before Windows unloads them.</p>
+<p>Boot-start drivers must call <a href="..\ntddk\nf-ntddk-iounregisterbootdrivercallback.md">IoUnRegisterBootDriverCallback</a> and pass the returned handle to unregister the boot-start driver callback before Windows unloads them.</p>
 
 <p>A boot-start driver's <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine can monitor boot-start driver initialization events and return data to the kernel to enable the kernel to decide whether to initialize each boot-start driver. The function prototype to register a boot-start driver callback routine is as follows.</p>
 
 <p>The boot-start callback parameters are as follows:</p>
 
-<p></p><dl>
-<dt><a id="CallbackContext"></a><a id="callbackcontext"></a><a id="CALLBACKCONTEXT"></a><i>CallbackContext</i></dt>
-<dd>
+<p></p>
+
 <p>The value that the driver passed as the <i>CallbackContext</i> parameter to <b>IoRegisterBootDriverCallback</b> when it registered this <b>BOOT_DRIVER_CALLBACK_FUNCTION</b>  routine.</p>
-</dd>
-<dt><a id="CallbackType"></a><a id="callbacktype"></a><a id="CALLBACKTYPE"></a><i>CallbackType</i></dt>
-<dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh406352">BDCB_CALLBACK_TYPE</a> enumeration value that either identifies the status of boot-start driver initialization or indicates that a boot-start driver is about to be initialized.</p>
-</dd>
-<dt><a id="CallbackTypeContext"></a><a id="callbacktypecontext"></a><a id="CALLBACKTYPECONTEXT"></a><i>CallbackTypeContext</i></dt>
-<dd>
-<p>A pointer to a structure that contains information that is specific to the type of callback. The structure type depends on the value passed for <i>CallbackType</i>, as shown in the following table.</p>
-<table>
-<tr>
-<th>Value of <b>CallbackType</b></th>
-<th>Corresponding structure to use</th>
-</tr>
-<tr>
-<td>
-<p><b>BdCbStatusUpdate</b></p>
-</td>
-<td>
-<p><b>BDCB_STATUS_UPDATE_TYPE</b></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><b>BdCbInitializeImage</b></p>
-</td>
-<td>
-<p><b>BDCB_CLASSIFICATION</b></p>
-</td>
-</tr>
-</table>
-<p> </p>
-</dd>
-</dl><p>The value that the driver passed as the <i>CallbackContext</i> parameter to <b>IoRegisterBootDriverCallback</b> when it registered this <b>BOOT_DRIVER_CALLBACK_FUNCTION</b>  routine.</p>
 
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh406352">BDCB_CALLBACK_TYPE</a> enumeration value that either identifies the status of boot-start driver initialization or indicates that a boot-start driver is about to be initialized.</p>
+<p>A <a href="..\ntddk\ne-ntddk--bdcb-callback-type.md">BDCB_CALLBACK_TYPE</a> enumeration value that either identifies the status of boot-start driver initialization or indicates that a boot-start driver is about to be initialized.</p>
 
 <p>A pointer to a structure that contains information that is specific to the type of callback. The structure type depends on the value passed for <i>CallbackType</i>, as shown in the following table.</p>
 
@@ -127,78 +93,6 @@ PVOID IoRegisterBootDriverCallback(
 <p><b>BdCbInitializeImage</b></p>
 
 <p><b>BDCB_CLASSIFICATION</b></p>
-
-<p> </p>
-
-<p><b>Return Value</b></p>
-
-<p>If the <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine returns STATUS_SUCCESS, the boot-start driver was able to perform all necessary actions in response to the specific callback.</p>
-
-<p>Any error returned from a status update callback is treated as fatal and leads to a system bug check.</p>
-
-<p>If an initialize image callback returns an error,  the driver's image is treated as unknown.</p>
-
-<p><b>Remarks</b></p>
-
-<p>To be notified of boot-start driver initialization operations, an <i>early launch anti-malware</i> (ELAM) driver can call <b>IoRegisterBootDriverCallback</b> to register a <b>BOOT_DRIVER_CALLBACK_FUNCTION</b>  routine.</p>
-
-<p>Boot-start drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh439394">IoUnRegisterBootDriverCallback</a> and pass the returned handle to unregister the boot-start driver callback before Windows unloads them.</p>
-
-<p>A boot-start driver's <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine can monitor boot-start driver initialization events and return data to the kernel to enable the kernel to decide whether to initialize each boot-start driver. The function prototype to register a boot-start driver callback routine is as follows.</p>
-
-<p>The boot-start callback parameters are as follows:</p>
-
-<p></p><dl>
-<dt><a id="CallbackContext"></a><a id="callbackcontext"></a><a id="CALLBACKCONTEXT"></a><i>CallbackContext</i></dt>
-<dd>
-<p>The value that the driver passed as the <i>CallbackContext</i> parameter to <b>IoRegisterBootDriverCallback</b> when it registered this <b>BOOT_DRIVER_CALLBACK_FUNCTION</b>  routine.</p>
-</dd>
-<dt><a id="CallbackType"></a><a id="callbacktype"></a><a id="CALLBACKTYPE"></a><i>CallbackType</i></dt>
-<dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh406352">BDCB_CALLBACK_TYPE</a> enumeration value that either identifies the status of boot-start driver initialization or indicates that a boot-start driver is about to be initialized.</p>
-</dd>
-<dt><a id="CallbackTypeContext"></a><a id="callbacktypecontext"></a><a id="CALLBACKTYPECONTEXT"></a><i>CallbackTypeContext</i></dt>
-<dd>
-<p>A pointer to a structure that contains information that is specific to the type of callback. The structure type depends on the value passed for <i>CallbackType</i>, as shown in the following table.</p>
-<table>
-<tr>
-<th>Value of <b>CallbackType</b></th>
-<th>Corresponding structure to use</th>
-</tr>
-<tr>
-<td>
-<p><b>BdCbStatusUpdate</b></p>
-</td>
-<td>
-<p><b>BDCB_STATUS_UPDATE_TYPE</b></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><b>BdCbInitializeImage</b></p>
-</td>
-<td>
-<p><b>BDCB_CLASSIFICATION</b></p>
-</td>
-</tr>
-</table>
-<p> </p>
-</dd>
-</dl><p>The value that the driver passed as the <i>CallbackContext</i> parameter to <b>IoRegisterBootDriverCallback</b> when it registered this <b>BOOT_DRIVER_CALLBACK_FUNCTION</b>  routine.</p>
-
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh406352">BDCB_CALLBACK_TYPE</a> enumeration value that either identifies the status of boot-start driver initialization or indicates that a boot-start driver is about to be initialized.</p>
-
-<p>A pointer to a structure that contains information that is specific to the type of callback. The structure type depends on the value passed for <i>CallbackType</i>, as shown in the following table.</p>
-
-<p><b>BdCbStatusUpdate</b></p>
-
-<p><b>BDCB_STATUS_UPDATE_TYPE</b></p>
-
-<p><b>BdCbInitializeImage</b></p>
-
-<p><b>BDCB_CLASSIFICATION</b></p>
-
-<p> </p>
 
 <p><b>Return Value</b></p>
 
@@ -275,15 +169,15 @@ PVOID IoRegisterBootDriverCallback(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439394">IoUnRegisterBootDriverCallback</a>
+<a href="..\ntddk\nf-ntddk-iounregisterbootdrivercallback.md">IoUnRegisterBootDriverCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406352">BDCB_CALLBACK_TYPE</a>
+<a href="..\ntddk\ne-ntddk--bdcb-callback-type.md">BDCB_CALLBACK_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406359">BDCB_IMAGE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--bdcb-image-information.md">BDCB_IMAGE_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterBootDriverCallback routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoRegisterBootDriverCallback routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

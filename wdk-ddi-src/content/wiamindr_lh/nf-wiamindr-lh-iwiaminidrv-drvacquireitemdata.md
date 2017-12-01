@@ -73,7 +73,7 @@ HRESULT drvAcquireItemData(
 ### -param <i>pmdtc</i> [in, out]
 
 <dd>
-<p>Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a> structure containing the device transfer context. The MINIDRV_TRANSFER_CONTEXT structure contains parameters that pertain to the data to be transferred.</p>
+<p>Points to a <a href="..\wiamindr_lh\ns-wiamindr-lh--minidrv-transfer-context.md">MINIDRV_TRANSFER_CONTEXT</a> structure containing the device transfer context. The MINIDRV_TRANSFER_CONTEXT structure contains parameters that pertain to the data to be transferred.</p>
 </dd>
 
 ### -param <i>plDevErrVal</i> [out]
@@ -91,47 +91,9 @@ HRESULT drvAcquireItemData(
 
 <p>For memory-based transfers, a buffer may or may not have already been allocated, as indicated by the value in <i>pmdtc</i>--&gt;<b>bClassDrvAllocBuf</b>. The WIA service can pass up to two buffers to the minidriver, but typically passes only one. The number of buffers is specified by the value in <i>pmdtc</i>--&gt;<b>lNumBuffers</b>. If memory for the buffer is not already allocated, the minidriver should allocate it using any of the usual means, such as <b>CoTaskMemAlloc</b>, (described in the Windows SDK documentation), or <b>new</b>. If the minidriver allocates a buffer, it also has the responsibility of freeing the buffer.</p>
 
-<p>For file transfers, the minidriver should first write the data to the buffer passed in the WIA service's call to this method, and then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549484">wiasWritePageBufToFile</a> to write the buffer data to the file involved. The minidriver should not attempt to use the file handle specified in <b>pmdtc</b>--&gt;<b>hFile</b> to write the data to the file.</p>
+<p>For file transfers, the minidriver should first write the data to the buffer passed in the WIA service's call to this method, and then call <a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftofile.md">wiasWritePageBufToFile</a> to write the buffer data to the file involved. The minidriver should not attempt to use the file handle specified in <b>pmdtc</b>--&gt;<b>hFile</b> to write the data to the file.</p>
 
-<p>Periodically, the minidriver should call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543946">IWiaMiniDrvCallBack::MiniDrvCallback</a> method in the COM interface point to by <i>pdmtc</i>--&gt;<b>pIWiaMiniDrvCallBack</b> to update the status of the transfer. For memory-based transfers, this function is used to pass the data back to the application. How often this function should be called is left to the minidriver, but it should be called about ten times, or roughly once per second during the transfer, whichever is more often.</p>
-
-<p>Other transfer parameters that the WIA service provides include the following:</p>
-
-<p><b>pmdtc</b>--&gt;<b>guidFormatID</b> - the data format</p>
-
-<p><b>pmdtc</b>--&gt;<b>lCompression</b> - the type of compression used</p>
-
-<p>A potential problem for ADF-equipped scanners is running out of paper during a scan operation. The HRESULT that your implementation of <b>IWiaMiniDrv::drvAcquireItemData</b> returns depends on the current setting of the scanner's WIA_DPS_PAGES property, and whether all pages were properly scanned. Use the following rules to guide you in determining the appropriate HRESULT to return in this method.</p>
-
-<p>The WIA_DPS_PAGES property was set to 0, and the scanner emptied its ADF with no errors.</p>
-
-<p>The WIA_DPS_PAGES property was set to N (where N &gt; 0), and the scanner processed N pages with no errors.</p>
-
-<p>S_OK</p>
-
-<p>The WIA_DPS_PAGES property was set to N, and the scanner processed at least one page but ran out of paper before processing all N pages.</p>
-
-<p>WIA_STATUS_END_OF_MEDIA</p>
-
-<p>The scanner has unexpectedly detected multiple page feed, stopped scanning, and has set the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551386">WIA_DPS_DOCUMENT_HANDLING_STATUS</a> to MULTIPLE_FEED. </p>
-
-<p>WIA_ERROR_MULTI_FEED </p>
-
-<p>The scanner ran out of paper on the first scan, regardless of the setting of the WIA_DPS_PAGES property.</p>
-
-<p>A paper jam or other error occurred during the scan operation.</p>
-
-<p>Other error code</p>
-
-<p> </p>
-
-<p>There are two main types of transfer: memory-based, and file-based. The WIA service indicates which type is to be performed by the setting of <i>pmdtc</i>--&gt;<b>tymed</b>, which will be TYMED_CALLBACK or TYMED_MULTIPAGE_CALLBACK for memory-based transfers, and TYMED_FILE or TYMED_MULTIPAGE_FILE for file transfers. For more information about these constants, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff551656">WIA_IPA_TYMED</a>.</p>
-
-<p>For memory-based transfers, a buffer may or may not have already been allocated, as indicated by the value in <i>pmdtc</i>--&gt;<b>bClassDrvAllocBuf</b>. The WIA service can pass up to two buffers to the minidriver, but typically passes only one. The number of buffers is specified by the value in <i>pmdtc</i>--&gt;<b>lNumBuffers</b>. If memory for the buffer is not already allocated, the minidriver should allocate it using any of the usual means, such as <b>CoTaskMemAlloc</b>, (described in the Windows SDK documentation), or <b>new</b>. If the minidriver allocates a buffer, it also has the responsibility of freeing the buffer.</p>
-
-<p>For file transfers, the minidriver should first write the data to the buffer passed in the WIA service's call to this method, and then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549484">wiasWritePageBufToFile</a> to write the buffer data to the file involved. The minidriver should not attempt to use the file handle specified in <b>pmdtc</b>--&gt;<b>hFile</b> to write the data to the file.</p>
-
-<p>Periodically, the minidriver should call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543946">IWiaMiniDrvCallBack::MiniDrvCallback</a> method in the COM interface point to by <i>pdmtc</i>--&gt;<b>pIWiaMiniDrvCallBack</b> to update the status of the transfer. For memory-based transfers, this function is used to pass the data back to the application. How often this function should be called is left to the minidriver, but it should be called about ten times, or roughly once per second during the transfer, whichever is more often.</p>
+<p>Periodically, the minidriver should call the <a href="image.iwiaminidrvcallback_minidrvcallback">IWiaMiniDrvCallBack::MiniDrvCallback</a> method in the COM interface point to by <i>pdmtc</i>--&gt;<b>pIWiaMiniDrvCallBack</b> to update the status of the transfer. For memory-based transfers, this function is used to pass the data back to the application. How often this function should be called is left to the minidriver, but it should be called about ten times, or roughly once per second during the transfer, whichever is more often.</p>
 
 <p>Other transfer parameters that the WIA service provides include the following:</p>
 
@@ -160,8 +122,6 @@ HRESULT drvAcquireItemData(
 <p>A paper jam or other error occurred during the scan operation.</p>
 
 <p>Other error code</p>
-
-<p> </p>
 
 ## -requirements
 <table>
@@ -198,13 +158,13 @@ HRESULT drvAcquireItemData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549249">wiasGetImageInformation</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
+<a href="image.iwiaminidrv_drvgetdeviceerrorstr">IWiaMiniDrv::drvGetDeviceErrorStr</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--minidrv-transfer-context.md">MINIDRV_TRANSFER_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>

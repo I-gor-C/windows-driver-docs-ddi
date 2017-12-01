@@ -60,7 +60,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265395">SetViewRange</a>
+<a href="print.iprinterqueueview_setviewrange">SetViewRange</a>
 </td>
 <td align="left" width="63%">
 <p>Sets the range of print jobs being monitored.</p>
@@ -71,13 +71,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>An event is raised whenever the status of the print queue changes. So when a client uses <a href="https://msdn.microsoft.com/library/windows/hardware/dn265395">SetViewRange</a> to specify the range of print jobs (the view) to be monitored, the <a href="print.iprinterqueueviewevent_onchanged">IPrinterQueueViewEvent::OnChanged</a> event method fires, and the live queue is returned in response.</p>
-
-<p>And also, note that job enumeration starts when the first event handler is added and stops when the last event handler is removed.</p>
-
-<p><b>IPrinterQueueView</b> also helps to make it possible to perform job management from a UWP  device app or from a printer extension. For more information, see <a href="NULL">Job Management</a>.</p>
-
-<p>An event is raised whenever the status of the print queue changes. So when a client uses <a href="https://msdn.microsoft.com/library/windows/hardware/dn265395">SetViewRange</a> to specify the range of print jobs (the view) to be monitored, the <a href="print.iprinterqueueviewevent_onchanged">IPrinterQueueViewEvent::OnChanged</a> event method fires, and the live queue is returned in response.</p>
+<p>An event is raised whenever the status of the print queue changes. So when a client uses <a href="print.iprinterqueueview_setviewrange">SetViewRange</a> to specify the range of print jobs (the view) to be monitored, the <a href="print.iprinterqueueviewevent_onchanged">IPrinterQueueViewEvent::OnChanged</a> event method fires, and the live queue is returned in response.</p>
 
 <p>And also, note that job enumeration starts when the first event handler is added and stops when the last event handler is removed.</p>
 

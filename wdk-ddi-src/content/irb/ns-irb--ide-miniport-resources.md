@@ -64,12 +64,12 @@ typedef struct _IDE_MINIPORT_RESOURCES {
 ### -field <b>IdeAccessRange</b>
 
 <dd>
-<p>Pointer to the first address range in a series of contiguous address ranges defined by a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559019">IDE_ACCESS_RANGE</a>. The value in the <b>NumberOfAccessRanges</b> member indicates how many address ranges are provided. The port driver populates each <b>IDE_ACCESS_RANGE</b> structure with the address ranges allocated for the controller.</p>
+<p>Pointer to the first address range in a series of contiguous address ranges defined by a structure of type <a href="..\irb\ns-irb--ide-access-range.md">IDE_ACCESS_RANGE</a>. The value in the <b>NumberOfAccessRanges</b> member indicates how many address ranges are provided. The port driver populates each <b>IDE_ACCESS_RANGE</b> structure with the address ranges allocated for the controller.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The port driver passes this structure to the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a> routine.</p>
+<p>The port driver passes this structure to the miniport driver's <a href="storage.idehwcontrol">IdeHwControl</a> routine.</p>
 
 ## -requirements
 <table>
@@ -88,10 +88,10 @@ typedef struct _IDE_MINIPORT_RESOURCES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559019">IDE_ACCESS_RANGE</a>
+<a href="..\irb\ns-irb--ide-access-range.md">IDE_ACCESS_RANGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
+<a href="storage.idehwcontrol">IdeHwControl</a>
 </dt>
 </dl>
 <p> </p>

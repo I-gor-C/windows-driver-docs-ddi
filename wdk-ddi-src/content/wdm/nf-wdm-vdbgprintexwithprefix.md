@@ -28,10 +28,8 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtDll.lib (user mode); 
-NtosKrnl.lib (kernel mode)
-req.dll: NtDll.dll (user mode); 
-NtosKrnl.exe (kernel mode)
+req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql: <= DIRQL (see Comments section)
 req.iface: 
 req.product: Windows 10 or later.
@@ -131,20 +129,6 @@ ULONG vDbgPrintExWithPrefix(
 
 <p>This routine is defined in Wdm.h. Component filter IDs are defined in Dpfilter.h.</p>
 
-<p>Only kernel-mode drivers can call the <b>vDbgPrintExWithPrefix</b> routine.</p>
-
-<p><b>vDbgPrintExWithPrefix</b> can be called at IRQL &lt;= DIRQL. However, you can use Unicode format codes (<b>%wc</b> and <b>%ws</b>) only at IRQL = PASSIVE_LEVEL. Also, because the debugger uses interprocess interrupts (IPIs) to communicate with other processors, a call to <b>vDbgPrintExWithPrefix</b> at IRQL &gt; DIRQL can cause deadlocks.</p>
-
-<p><b>vDbgPrintExWithPrefix</b> either passes the string that it creates to the kernel debugger or does nothing at all, depending on the values of <i>ComponentId</i>, <i>Level</i>, and the corresponding component filter masks. For more information about what <i>vDbgPrintEx</i> does, see <a href="NULL">Reading and Filtering Debugging Messages</a>.</p>
-
-<p>Unless it is absolutely necessary, you should not obtain a string from user input or another process and pass it to <b>vDbgPrintExWithPrefix</b>. If you do use a string that you did not create, you must verify that this string is a valid format string and that the format codes match the argument list in type and quantity. The best coding practice is for all <i>Format</i> strings to be static and defined at compile time.</p>
-
-<p>There is no upper limit to the size of the <i>Format</i> string or the number of arguments in the <i>arglist</i> list. However, any single call to <b>vDbgPrintExWithPrefix</b> transmits only 512 bytes of information. </p>
-
-<p>There is also a limit to the size of the buffer that the debugger uses. For more information about this limit, see <a href="devtest.reading_and_filtering_debugging_messages#ddk_the_dbgprint_buffer_and_the_debugger_tools#ddk_the_dbgprint_buffer_and_the_debugger_tools">The DbgPrint Buffer and the Debugger</a>.</p>
-
-<p>This routine is defined in Wdm.h. Component filter IDs are defined in Dpfilter.h.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -210,10 +194,10 @@ ULONG vDbgPrintExWithPrefix(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543634">DbgPrintEx</a>
+<a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556075">vDbgPrintEx</a>
+<a href="..\wdm\nf-wdm-vdbgprintex.md">vDbgPrintEx</a>
 </dt>
 </dl>
 <p> </p>

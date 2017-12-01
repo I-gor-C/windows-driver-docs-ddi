@@ -7,7 +7,7 @@ old-location: smartcrd\scard_card_capabilities.htm
 old-project: smartcrd
 ms.assetid: 8cc223be-a692-4141-81f6-4cca9e2fccf1
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: SCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES, *PSCARD_CARD_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -314,7 +314,7 @@ and countries.)</p>
 </dl>
 
 ## -remarks
-<p>The SCARD_CARD_CAPABILITIES structure describes the capabilities of the inserted smart card. If the reader driver uses the smart card driver library, <b>ATR</b> is the only member that the reader driver should populate. The driver library will automatically update all other fields when it receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548909">IOCTL_SMARTCARD_SET_PROTOCOL</a> request. </p>
+<p>The SCARD_CARD_CAPABILITIES structure describes the capabilities of the inserted smart card. If the reader driver uses the smart card driver library, <b>ATR</b> is the only member that the reader driver should populate. The driver library will automatically update all other fields when it receives an <a href="..\winsmcrd\ni-winsmcrd-ioctl-smartcard-set-protocol.md">IOCTL_SMARTCARD_SET_PROTOCOL</a> request. </p>
 
 ## -requirements
 <table>

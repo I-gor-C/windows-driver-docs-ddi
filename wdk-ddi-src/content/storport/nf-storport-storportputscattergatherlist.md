@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>StorPortPutScatterGatherList</b> routine releases any resources associated with a scatter/gather list that was previously created by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567038">StorPortBuildScatterGatherList</a> routine.</p>
+<p>The <b>StorPortPutScatterGatherList</b> routine releases any resources associated with a scatter/gather list that was previously created by a call to the <a href="..\storport\nf-storport-storportbuildscattergatherlist.md">StorPortBuildScatterGatherList</a> routine.</p>
 
 
 ## -syntax
@@ -66,7 +66,7 @@ ULONG StorPortPutScatterGatherList(
 ### -param <i>ScatterGatherList</i> [in]
 
 <dd>
-<p>A pointer to a buffer that contains a scatter/gather list that was previously created by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567038">StorPortBuildScatterGatherList</a> routine.</p>
+<p>A pointer to a buffer that contains a scatter/gather list that was previously created by a call to the <a href="..\storport\nf-storport-storportbuildscattergatherlist.md">StorPortBuildScatterGatherList</a> routine.</p>
 </dd>
 
 ### -param <i>WriteToDevice</i> [in]
@@ -92,11 +92,7 @@ ULONG StorPortPutScatterGatherList(
 ## -remarks
 <p>The <b>StorPortPutScatterGatherList</b> routine does not free the buffer memory for the scatter/gather list, because the miniport driver allocated this memory. </p>
 
-<p>After the <b>StorPortPutScatterGatherList</b> routine returns, the miniport driver can reuse the buffer to create a new scatter/gather list by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567038">StorPortBuildScatterGatherList</a> again. If a miniport driver has finished using the buffer for the scatter/gather list, it should free the memory for the buffer after the <b>StorPortPutScatterGatherList</b> routine returns. If the miniport driver allocates the buffer memory with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567031">StorPortAllocatePool</a> routine, it should free the memory by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567065">StorPortFreePool</a> routine.</p>
-
-<p>The <b>StorPortPutScatterGatherList</b> routine does not free the buffer memory for the scatter/gather list, because the miniport driver allocated this memory. </p>
-
-<p>After the <b>StorPortPutScatterGatherList</b> routine returns, the miniport driver can reuse the buffer to create a new scatter/gather list by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567038">StorPortBuildScatterGatherList</a> again. If a miniport driver has finished using the buffer for the scatter/gather list, it should free the memory for the buffer after the <b>StorPortPutScatterGatherList</b> routine returns. If the miniport driver allocates the buffer memory with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567031">StorPortAllocatePool</a> routine, it should free the memory by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567065">StorPortFreePool</a> routine.</p>
+<p>After the <b>StorPortPutScatterGatherList</b> routine returns, the miniport driver can reuse the buffer to create a new scatter/gather list by calling the <a href="..\storport\nf-storport-storportbuildscattergatherlist.md">StorPortBuildScatterGatherList</a> again. If a miniport driver has finished using the buffer for the scatter/gather list, it should free the memory for the buffer after the <b>StorPortPutScatterGatherList</b> routine returns. If the miniport driver allocates the buffer memory with the <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a> routine, it should free the memory by calling the <a href="..\storport\nf-storport-storportfreepool.md">StorPortFreePool</a> routine.</p>
 
 ## -requirements
 <table>
@@ -133,7 +129,7 @@ ULONG StorPortPutScatterGatherList(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
+<a href="devtest.storport_storportirql">StorPortIrql</a>
 </td>
 </tr>
 </table>
@@ -141,7 +137,7 @@ ULONG StorPortPutScatterGatherList(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567038">StorPortBuildScatterGatherList</a>
+<a href="..\storport\nf-storport-storportbuildscattergatherlist.md">StorPortBuildScatterGatherList</a>
 </dt>
 </dl>
 <p> </p>

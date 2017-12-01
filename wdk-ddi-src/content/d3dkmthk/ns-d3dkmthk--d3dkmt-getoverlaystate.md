@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DKMT_GETOVERLAYSTATE structure describes parameters that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546977">D3DKMTGetOverlayState</a> function uses to retrieve status about an overlay. </p>
+<p>The D3DKMT_GETOVERLAYSTATE structure describes parameters that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetoverlaystate.md">D3DKMTGetOverlayState</a> function uses to retrieve status about an overlay. </p>
 
 
 ## -syntax
@@ -103,7 +103,7 @@ typedef struct _D3DKMT_GETOVERLAYSTATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546977">D3DKMTGetOverlayState</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetoverlaystate.md">D3DKMTGetOverlayState</a>
 </dt>
 </dl>
 <p> </p>

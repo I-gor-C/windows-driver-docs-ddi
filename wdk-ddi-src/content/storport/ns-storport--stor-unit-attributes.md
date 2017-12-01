@@ -84,9 +84,9 @@ typedef struct _STOR_UNIT_ATTRIBUTES {
 </dl>
 
 ## -remarks
-<p>The unit attributes are registered with Storport  using this structure as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/jj206452">StorPortSetUnitAttributes</a> routine.</p>
+<p>The unit attributes are registered with Storport  using this structure as a parameter to the <a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a> routine.</p>
 
-<p>If the miniport driver supports asynchronous notifications, the <b>AsyncNotificationSupported</b> field set to 1, it will send notifications to the Storport driver using the <a href="https://msdn.microsoft.com/library/windows/hardware/hh920419">StorPortAsyncNotificationDetected</a> routine.</p>
+<p>If the miniport driver supports asynchronous notifications, the <b>AsyncNotificationSupported</b> field set to 1, it will send notifications to the Storport driver using the <a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a> routine.</p>
 
 ## -requirements
 <table>
@@ -113,10 +113,10 @@ typedef struct _STOR_UNIT_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920419">StorPortAsyncNotificationDetected</a>
+<a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj206452">StorPortSetUnitAttributes</a>
+<a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a>
 </dt>
 </dl>
 <p> </p>

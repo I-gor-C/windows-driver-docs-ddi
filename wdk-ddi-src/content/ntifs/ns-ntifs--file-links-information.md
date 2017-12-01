@@ -65,20 +65,20 @@ typedef struct _FILE_LINKS_INFORMATION {
 ### -field <b>EntriesReturned</b>
 
 <dd>
-<p>The number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff728842">FILE_LINK_ENTRY_INFORMATION</a> structures that have been returned using the <b>Entry</b> member. </p>
+<p>The number of <a href="..\ntifs\ns-ntifs--file-link-entry-information.md">FILE_LINK_ENTRY_INFORMATION</a> structures that have been returned using the <b>Entry</b> member. </p>
 </dd>
 
 ### -field <b>Entry</b>
 
 <dd>
-<p>A buffer that contains the returned <a href="https://msdn.microsoft.com/library/windows/hardware/ff728842">FILE_LINK_ENTRY_INFORMATION</a> structures. </p>
+<p>A buffer that contains the returned <a href="..\ntifs\ns-ntifs--file-link-entry-information.md">FILE_LINK_ENTRY_INFORMATION</a> structures. </p>
 </dd>
 </dl>
 
 ## -remarks
 <p>If the member <b>EntriesReturned</b> has a value of 0, there is not enough available memory to return an entry. The error STATUS_BUFFER_OVERFLOW (0x80000005) indicates that not all available entries were returned.</p>
 
-<p>The member <b>Entry</b> is the first <a href="https://msdn.microsoft.com/library/windows/hardware/ff728842">FILE_LINK_ENTRY_INFORMATION</a> structure in a list of entries. Each entry is located <b>sizeof</b>(FILE_LINK_ENTRY_INFORMATION) + ((FileNameLength - 1 ) * <b>sizeof</b>(WCHAR)) from the previous entry when the FileNameLength member of <b>FILE_LINK_ENTRY_INFORMATION</b> &gt; 1. Otherwise, each entry is located <b>sizeof</b>(FILE_LINK_ENTRY_INFORMATION) from the previous entry.</p>
+<p>The member <b>Entry</b> is the first <a href="..\ntifs\ns-ntifs--file-link-entry-information.md">FILE_LINK_ENTRY_INFORMATION</a> structure in a list of entries. Each entry is located <b>sizeof</b>(FILE_LINK_ENTRY_INFORMATION) + ((FileNameLength - 1 ) * <b>sizeof</b>(WCHAR)) from the previous entry when the FileNameLength member of <b>FILE_LINK_ENTRY_INFORMATION</b> &gt; 1. Otherwise, each entry is located <b>sizeof</b>(FILE_LINK_ENTRY_INFORMATION) from the previous entry.</p>
 
 ## -requirements
 <table>

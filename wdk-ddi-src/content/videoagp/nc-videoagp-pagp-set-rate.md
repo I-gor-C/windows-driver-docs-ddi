@@ -121,12 +121,6 @@ BOOLEAN APIENTRY AgpSetRate(
 
 <p>The <b>AgpSetRate</b> function can be used to change an AGP chipset's data transfer rate to any of the rates shown in the preceding table, as long as that transfer rate has not been explicitly eliminated in the INF file that loaded the display driver. For more information, see <a href="https://msdn.microsoft.com/2075a10f-a504-4bdc-8112-9c583c5084bb">Display INF File Sections</a>.</p>
 
-<p>This function is available in Microsoft Windows XP and later.</p>
-
-<p>The transfer rate set by the <b>AgpSetRate</b> function is persistent across changes in power state. The video miniport driver does not have to reset the AGP transfer rate when it changes from a low power state to a full power state. For information about change of power state, see <a href="..\video\nc-video-pvideo-hw-power-set.md">HwVidSetPowerState</a>.</p>
-
-<p>The <b>AgpSetRate</b> function can be used to change an AGP chipset's data transfer rate to any of the rates shown in the preceding table, as long as that transfer rate has not been explicitly eliminated in the INF file that loaded the display driver. For more information, see <a href="https://msdn.microsoft.com/2075a10f-a504-4bdc-8112-9c583c5084bb">Display INF File Sections</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -170,7 +164,7 @@ BOOLEAN APIENTRY AgpSetRate(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570528">VIDEO_PORT_AGP_INTERFACE_2</a>
+<a href="..\video\ns-video--video-port-agp-interface-2.md">VIDEO_PORT_AGP_INTERFACE_2</a>
 </dt>
 </dl>
 <p> </p>

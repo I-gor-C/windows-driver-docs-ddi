@@ -81,43 +81,43 @@ typedef struct _PARCLASS_INFORMATION {
 ### -field <b>DetermineIeeeModes</b>
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544365">PDETERMINE_IEEE_MODES</a> callback routine that determines which IEEE protocols a parallel device supports.</p>
+<p>Pointer to the <a href="..\parallel\nc-parallel-pdetermine-ieee-modes.md">PDETERMINE_IEEE_MODES</a> callback routine that determines which IEEE protocols a parallel device supports.</p>
 </dd>
 
 ### -field <b>NegotiateIeeeMode</b>
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544386">PNEGOTIATE_IEEE_MODE</a> callback routine that negotiates the fastest protocol that the system-supplied bus driver for parallel ports supports from among those specified by the caller.</p>
+<p>Pointer to the <a href="..\parallel\nc-parallel-pnegotiate-ieee-mode.md">PNEGOTIATE_IEEE_MODE</a> callback routine that negotiates the fastest protocol that the system-supplied bus driver for parallel ports supports from among those specified by the caller.</p>
 </dd>
 
 ### -field <b>TerminateIeeeMode</b>
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544773">PTERMINATE_IEEE_MODE</a> callback routine that terminates the current IEEE mode and sets the mode to IEEE_COMPATIBILITY.</p>
+<p>Pointer to the <a href="..\parallel\nc-parallel-pterminate-ieee-mode.md">PTERMINATE_IEEE_MODE</a> callback routine that terminates the current IEEE mode and sets the mode to IEEE_COMPATIBILITY.</p>
 </dd>
 
 ### -field <b>IeeeFwdToRevMode</b>
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544524">PPARALLEL_IEEE_FWD_TO_REV</a> callback routine that changes the transfer mode from forward to reverse.</p>
+<p>Pointer to the <a href="..\parallel\nc-parallel-pparallel-ieee-fwd-to-rev.md">PPARALLEL_IEEE_FWD_TO_REV</a> callback routine that changes the transfer mode from forward to reverse.</p>
 </dd>
 
 ### -field <b>IeeeRevToFwdMode</b>
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544528">PPARALLEL_IEEE_REV_TO_FWD</a> callback routine that changes the transfer mode from reverse to forward.</p>
+<p>Pointer to the <a href="..\parallel\nc-parallel-pparallel-ieee-rev-to-fwd.md">PPARALLEL_IEEE_REV_TO_FWD</a> callback routine that changes the transfer mode from reverse to forward.</p>
 </dd>
 
 ### -field <b>ParallelRead</b>
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544537">PPARALLEL_READ</a> callback routine that a client can use to read from a parallel device.</p>
+<p>Pointer to the <a href="..\parallel\nc-parallel-pparallel-read.md">PPARALLEL_READ</a> callback routine that a client can use to read from a parallel device.</p>
 </dd>
 
 ### -field <b>ParallelWrite</b>
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544771">PPARALLEL_WRITE</a> callback routine that a client can use to write to a parallel device.</p>
+<p>Pointer to the <a href="..\parallel\nc-parallel-pparallel-write.md">PPARALLEL_WRITE</a> callback routine that a client can use to write to a parallel device.</p>
 </dd>
 
 ### -field <b>ParclassContext</b>
@@ -179,9 +179,9 @@ typedef struct _PARCLASS_INFORMATION {
 </dl>
 
 ## -remarks
-<p>A kernel-mode driver can obtain this information from the system-supplied bus driver for parallel ports using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544040">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request. The system-supplied bus driver for parallel ports supplies all the callback routines. </p>
+<p>A kernel-mode driver can obtain this information from the system-supplied bus driver for parallel ports using an <a href="..\parallel\ni-parallel-ioctl-internal-parclass-connect.md">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request. The system-supplied bus driver for parallel ports supplies all the callback routines. </p>
 
-<p>A client uses this information to operate a parallel port and to read and write a parallel device. The callback routines can only be used by a driver that holds a lock on the parent parallel port. A driver obtains a lock by using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544009">IOCTL_INTERNAL_LOCK_PORT</a> request.</p>
+<p>A client uses this information to operate a parallel port and to read and write a parallel device. The callback routines can only be used by a driver that holds a lock on the parent parallel port. A driver obtains a lock by using an <a href="..\parallel\ni-parallel-ioctl-internal-lock-port.md">IOCTL_INTERNAL_LOCK_PORT</a> request.</p>
 
 <p>For more information, see <a href="NULL">Connecting to a Parallel Device</a>.</p>
 
@@ -202,31 +202,31 @@ typedef struct _PARCLASS_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544040">IOCTL_INTERNAL_PARCLASS_CONNECT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parclass-connect.md">IOCTL_INTERNAL_PARCLASS_CONNECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544009">IOCTL_INTERNAL_LOCK_PORT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-lock-port.md">IOCTL_INTERNAL_LOCK_PORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544365">PDETERMINE_IEEE_MODES</a>
+<a href="..\parallel\nc-parallel-pdetermine-ieee-modes.md">PDETERMINE_IEEE_MODES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544386">PNEGOTIATE_IEEE_MODE</a>
+<a href="..\parallel\nc-parallel-pnegotiate-ieee-mode.md">PNEGOTIATE_IEEE_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544524">PPARALLEL_IEEE_FWD_TO_REV</a>
+<a href="..\parallel\nc-parallel-pparallel-ieee-fwd-to-rev.md">PPARALLEL_IEEE_FWD_TO_REV</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544528">PPARALLEL_IEEE_REV_TO_FWD</a>
+<a href="..\parallel\nc-parallel-pparallel-ieee-rev-to-fwd.md">PPARALLEL_IEEE_REV_TO_FWD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544537">PPARALLEL_READ</a>
+<a href="..\parallel\nc-parallel-pparallel-read.md">PPARALLEL_READ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544771">PPARALLEL_WRITE</a>
+<a href="..\parallel\nc-parallel-pparallel-write.md">PPARALLEL_WRITE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544773">PTERMINATE_IEEE_MODE</a>
+<a href="..\parallel\nc-parallel-pterminate-ieee-mode.md">PTERMINATE_IEEE_MODE</a>
 </dt>
 </dl>
 <p> </p>

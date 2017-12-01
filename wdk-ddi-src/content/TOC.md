@@ -7,7 +7,7 @@
 # [Driver test tools](_devtest/index.md)
 # [Display](_display/index.md)
 # [General-purpose I/O (GPIO) controllers](_gpio/index.md)
-# [gpiobtn](_gpiobtn/index.md)
+# [Hardware Notifications](_gpiobtn/index.md)
 # [Human Interface Devices (HID)](_hid/index.md)
 # [IEEE 1394 bus](_ieee/index.md)
 # [Installable file system](_ifsk/index.md)

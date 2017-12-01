@@ -69,9 +69,9 @@ typedef struct _DXGK_ENUM_PIVOT {
 </dl>
 
 ## -remarks
-<p>The <b>EnumPivot</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557583">DXGKARG_ENUMVIDPNCOFUNCMODALITY</a> structure is a DXGK_ENUM_PIVOT structure. </p>
+<p>The <b>EnumPivot</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-enumvidpncofuncmodality.md">DXGKARG_ENUMVIDPNCOFUNCMODALITY</a> structure is a DXGK_ENUM_PIVOT structure. </p>
 
-<p>The <b>EnumPivotType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557583">DXGKARG_ENUMVIDPNCOFUNCMODALITY</a> structure is a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546003">D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE</a> enumeration that specifies the pivot type (for example, video present source, video present target, rotation transformation, or scaling transformation).</p>
+<p>The <b>EnumPivotType</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-enumvidpncofuncmodality.md">DXGKARG_ENUMVIDPNCOFUNCMODALITY</a> structure is a value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-enumcofuncmodality-pivot-type.md">D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE</a> enumeration that specifies the pivot type (for example, video present source, video present target, rotation transformation, or scaling transformation).</p>
 
 ## -requirements
 <table>

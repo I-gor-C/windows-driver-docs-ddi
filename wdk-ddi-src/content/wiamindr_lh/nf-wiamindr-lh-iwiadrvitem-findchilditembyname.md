@@ -73,9 +73,7 @@ HRESULT FindChildItemByName(
 <p>If the method succeeds, it stores a pointer to the found child item in <i>ppIChildItem</i> and returns S_OK. If the method fails to find the child item, it returns S_FALSE. If the method fails for another reason, it returns a standard COM error code.</p>
 
 ## -remarks
-<p>Minidrivers typically use this method to search a driver item tree for a specific child item when the child item's name is known. The child item's full name is obtained in the  method <a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>.</p>
-
-<p>Minidrivers typically use this method to search a driver item tree for a specific child item when the child item's name is known. The child item's full name is obtained in the  method <a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>.</p>
+<p>Minidrivers typically use this method to search a driver item tree for a specific child item when the child item's name is known. The child item's full name is obtained in the  method <a href="image.iwiadrvitem_getfullitemname">IWiaDrvItem::GetFullItemName</a>.</p>
 
 ## -requirements
 <table>
@@ -112,10 +110,10 @@ HRESULT FindChildItemByName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>
+<a href="image.iwiadrvitem_getfullitemname">IWiaDrvItem::GetFullItemName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543870">IWiaDrvItem::FindItemByName</a>
+<a href="image.iwiadrvitem_finditembyname">IWiaDrvItem::FindItemByName</a>
 </dt>
 </dl>
 <p> </p>

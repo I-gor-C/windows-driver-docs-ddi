@@ -72,7 +72,7 @@ NTSTATUS FltSetQuotaInformationFile(
 ### -param <i>Buffer</i> [in]
 
 <dd>
-<p>A pointer to a caller-supplied, <a href="https://msdn.microsoft.com/library/windows/hardware/ff540298">FILE_GET_QUOTA_INFORMATION</a>-structured input buffer that contains the quota information entries to be set. </p>
+<p>A pointer to a caller-supplied, <a href="..\ntifs\ns-ntifs--file-get-quota-information.md">FILE_GET_QUOTA_INFORMATION</a>-structured input buffer that contains the quota information entries to be set. </p>
 </dd>
 
 ### -param <i>Length</i> [in]
@@ -155,13 +155,13 @@ NTSTATUS FltSetQuotaInformationFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540298">FILE_GET_QUOTA_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-get-quota-information.md">FILE_GET_QUOTA_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451030">FltQueryQuotaInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryquotainformationfile.md">FltQueryQuotaInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567105">ZwSetQuotaInformationFile</a>
+<a href="..\ntifs\nf-ntifs-zwsetquotainformationfile.md">ZwSetQuotaInformationFile</a>
 </dt>
 </dl>
 <p> </p>

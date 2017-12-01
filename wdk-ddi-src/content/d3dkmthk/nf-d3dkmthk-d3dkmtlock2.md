@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTLock2(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn914439">D3DKMT_LOCK2</a> structure that describes parameters for locking an allocation.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-lock2.md">D3DKMT_LOCK2</a> structure that describes parameters for locking an allocation.</p>
 </dd>
 </dl>
 
@@ -144,7 +144,7 @@ NTSTATUS APIENTRY D3DKMTLock2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914439">D3DKMT_LOCK2</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-lock2.md">D3DKMT_LOCK2</a>
 </dt>
 </dl>
 <p> </p>

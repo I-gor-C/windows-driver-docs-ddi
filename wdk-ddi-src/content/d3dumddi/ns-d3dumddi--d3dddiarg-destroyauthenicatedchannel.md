@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL structure contains the handle to an authenticated channel that is destroyed in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451630">DestroyAuthenticatedChannel</a> function. </p>
+<p>The D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL structure contains the handle to an authenticated channel that is destroyed in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroyauthenticatedchannel.md">DestroyAuthenticatedChannel</a> function. </p>
 
 
 ## -syntax
@@ -89,7 +89,7 @@ typedef struct _D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451630">DestroyAuthenticatedChannel</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroyauthenticatedchannel.md">DestroyAuthenticatedChannel</a>
 </dt>
 </dl>
 <p> </p>

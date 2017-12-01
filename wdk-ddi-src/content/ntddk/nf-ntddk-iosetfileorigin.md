@@ -80,12 +80,6 @@ NTSTATUS IoSetFileOrigin(
 
 <p>File system filter drivers should not call <b>IoSetFileOrigin</b>. </p>
 
-<p>Network file systems call <b>IoSetFileOrigin</b> to set or clear the FO_REMOTE_ORIGIN flag on the file object pointed to by <i>FileObject</i>. This flag is set to indicate that the file object was created to satisfy a remote create request. </p>
-
-<p>Network file systems should call <b>IoSetFileOrigin</b> in their servers for any file objects that are created to satisfy a create request from a network client. </p>
-
-<p>File system filter drivers should not call <b>IoSetFileOrigin</b>. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -149,7 +143,7 @@ NTSTATUS IoSetFileOrigin(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548435">IoIsFileOriginRemote</a>
+<a href="..\ntddk\nf-ntddk-ioisfileoriginremote.md">IoIsFileOriginRemote</a>
 </dt>
 </dl>
 <p> </p>

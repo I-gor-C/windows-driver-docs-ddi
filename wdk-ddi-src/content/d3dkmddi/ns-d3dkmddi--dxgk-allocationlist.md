@@ -70,7 +70,7 @@ typedef struct _DXGK_ALLOCATIONLIST {
 ### -field <b>hDeviceSpecificAllocation</b>
 
 <dd>
-<p>[in/out] An open handle to the allocation that is being referenced (that is, the handle that the driver returned in the <b>hDeviceSpecificAllocation</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561983">DXGK_OPENALLOCATIONINFO</a> structure for the allocation in a call to the driver's <a href="display.dxgkddiopenallocation">DxgkDdiOpenAllocation</a> function).</p>
+<p>[in/out] An open handle to the allocation that is being referenced (that is, the handle that the driver returned in the <b>hDeviceSpecificAllocation</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a> structure for the allocation in a call to the driver's <a href="display.dxgkddiopenallocation">DxgkDdiOpenAllocation</a> function).</p>
 </dd>
 
 ### -field ( <i>unnamed struct</i> )
@@ -151,13 +151,13 @@ typedef struct _DXGK_ALLOCATIONLIST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561983">DXGK_OPENALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557559">DXGKARG_CREATEALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-createallocation.md">DXGKARG_CREATEALLOCATION</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreateallocation">DxgkDdiCreateAllocation</a>

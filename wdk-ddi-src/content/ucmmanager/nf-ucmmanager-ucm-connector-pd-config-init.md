@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187924">UCM_CONNECTOR_PD_CONFIG</a> structure.</p>
+<p>Initializes a <a href="buses.ucm_connector_pd_config">UCM_CONNECTOR_PD_CONFIG</a> structure.</p>
 
 
 ## -syntax
@@ -59,13 +59,13 @@ FORCEINLINE void UCM_CONNECTOR_PD_CONFIG_INIT(
 ### -param <i>Config</i> [out]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt187924">UCM_CONNECTOR_PD_CONFIG</a> structure to initialize.</p>
+<p>Pointer to a caller-allocated <a href="buses.ucm_connector_pd_config">UCM_CONNECTOR_PD_CONFIG</a> structure to initialize.</p>
 </dd>
 
 ### -param <i>SupportedPowerRoles</i> [in]
 
 <dd>
-<p>A bitwise OR of <a href="https://msdn.microsoft.com/library/windows/hardware/mt187944">UCM_POWER_ROLE</a>-typed flags.</p>
+<p>A bitwise OR of <a href="buses.ucm_power_role">UCM_POWER_ROLE</a>-typed flags.</p>
 </dd>
 </dl>
 
@@ -124,7 +124,7 @@ FORCEINLINE void UCM_CONNECTOR_PD_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>
+<a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>
 </dt>
 </dl>
 <p> </p>

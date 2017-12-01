@@ -7,7 +7,7 @@ old-location: netvista\rilcallmodificationcausecode_2.htm
 old-project: netvista
 ms.assetid: 44309e4e-a0a0-4aed-b942-2d15b8ab07dc
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

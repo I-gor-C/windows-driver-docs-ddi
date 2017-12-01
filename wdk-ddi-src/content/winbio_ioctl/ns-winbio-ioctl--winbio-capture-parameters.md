@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff536429">IOCTL_BIOMETRIC_CAPTURE_DATA</a> IOCTL uses the WINBIO_CAPTURE_PARAMETERS structure as input.</p>
+<p>The <a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-capture-data.md">IOCTL_BIOMETRIC_CAPTURE_DATA</a> IOCTL uses the WINBIO_CAPTURE_PARAMETERS structure as input.</p>
 
 
 ## -syntax
@@ -91,7 +91,7 @@ typedef struct _WINBIO_CAPTURE_PARAMETERS {
 ### -field <b>Format</b>
 
 <dd>
-<p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536473">WINBIO_REGISTERED_FORMAT</a> format of the data to be returned.</p>
+<p>Specifies the <a href="..\winbio_types\ns-winbio-types--winbio-registered-format.md">WINBIO_REGISTERED_FORMAT</a> format of the data to be returned.</p>
 </dd>
 
 ### -field <b>VendorFormat</b>
@@ -154,7 +154,7 @@ typedef struct _WINBIO_CAPTURE_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536429">IOCTL_BIOMETRIC_CAPTURE_DATA</a>
+<a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-capture-data.md">IOCTL_BIOMETRIC_CAPTURE_DATA</a>
 </dt>
 </dl>
 <p> </p>

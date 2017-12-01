@@ -7,7 +7,7 @@ old-location: stream\kspingetfirstclonestreampointer.htm
 old-project: stream
 ms.assetid: 9b4880af-d748-4a4e-92ec-8081138d4e27
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsPinGetFirstCloneStreamPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,17 +57,15 @@ PKSSTREAM_POINTER KsPinGetFirstCloneStreamPointer(
 ### -param <i>Pin</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure on which to return the first clone stream pointer.</p>
+<p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure on which to return the first clone stream pointer.</p>
 </dd>
 </dl>
 
 ## -returns
-<p><b>KsPinGetFirstCloneStreamPointer</b> returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a> structure. This pointer points to the first cloned stream pointer on <i>Pin</i>. If no clone stream pointers exist for <i>Pin</i>, <b>KsPinGetFirstCloneStreamPointer</b> returns <b>NULL</b>.</p>
+<p><b>KsPinGetFirstCloneStreamPointer</b> returns a pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure. This pointer points to the first cloned stream pointer on <i>Pin</i>. If no clone stream pointers exist for <i>Pin</i>, <b>KsPinGetFirstCloneStreamPointer</b> returns <b>NULL</b>.</p>
 
 ## -remarks
-<p><b>KsPinGetFirstCloneStreamPointer</b>, along with <a href="https://msdn.microsoft.com/library/windows/hardware/ff567133">KsStreamPointerGetNextClone</a> can be used to enumerate all clone stream pointers on a given pin in the order in which they were cloned. Also see <a href="NULL">Stream Pointers</a>.</p>
-
-<p><b>KsPinGetFirstCloneStreamPointer</b>, along with <a href="https://msdn.microsoft.com/library/windows/hardware/ff567133">KsStreamPointerGetNextClone</a> can be used to enumerate all clone stream pointers on a given pin in the order in which they were cloned. Also see <a href="NULL">Stream Pointers</a>.</p>
+<p><b>KsPinGetFirstCloneStreamPointer</b>, along with <a href="..\ks\nf-ks-ksstreampointergetnextclone.md">KsStreamPointerGetNextClone</a> can be used to enumerate all clone stream pointers on a given pin in the order in which they were cloned. Also see <a href="NULL">Stream Pointers</a>.</p>
 
 ## -requirements
 <table>
@@ -122,15 +120,15 @@ PKSSTREAM_POINTER KsPinGetFirstCloneStreamPointer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567133">KsStreamPointerGetNextClone</a>
+<a href="..\ks\nf-ks-ksstreampointergetnextclone.md">KsStreamPointerGetNextClone</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn892389">KsStreamPointerClone</a>
+<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a>
+<a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetFirstCloneStreamPointer function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetFirstCloneStreamPointer function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

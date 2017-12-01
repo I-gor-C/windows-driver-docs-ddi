@@ -7,7 +7,7 @@ old-location: debugger\getmodulebyindex.htm
 old-project: debugger
 ms.assetid: a33f8a78-4026-4424-af42-2ad359054556
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols2, GetModuleByIndex, IDebugSymbols2::GetModuleByIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,8 +78,6 @@ HRESULT GetModuleByIndex(
 <p> </p>
 
 ## -remarks
-<p>For more information about modules, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552231">Modules</a>.</p>
-
 <p>For more information about modules, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552231">Modules</a>.</p>
 
 ## -requirements

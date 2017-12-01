@@ -7,7 +7,7 @@ old-location: netvista\rilrttdata_2.htm
 old-project: netvista
 ms.assetid: f481a7e7-ef54-4219-a819-5bb102aecaf6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILRTTDATA,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\rilgetoperatorlistparams_2.htm
 old-project: netvista
 ms.assetid: d5836240-81d4-4134-9222-c810cd8f5822
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILGETOPERATORLISTPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

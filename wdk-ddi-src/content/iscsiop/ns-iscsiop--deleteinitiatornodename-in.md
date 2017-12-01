@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DeleteInitiatorNodeName_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552500">DeleteInitiatorNodeName</a> method, which is used to delete an initiator node name.</p>
+<p>The DeleteInitiatorNodeName_IN structure holds the input data for the <a href="storage.deleteinitiatornodename">DeleteInitiatorNodeName</a> method, which is used to delete an initiator node name.</p>
 
 
 ## -syntax
@@ -81,10 +81,10 @@ typedef struct _DeleteInitiatorNodeName_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552500">DeleteInitiatorNodeName</a>
+<a href="storage.deleteinitiatornodename">DeleteInitiatorNodeName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552506">DeleteInitiatorNodeName_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--deleteinitiatornodename-out.md">DeleteInitiatorNodeName_OUT</a>
 </dt>
 </dl>
 <p> </p>

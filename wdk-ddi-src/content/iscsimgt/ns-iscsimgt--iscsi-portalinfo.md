@@ -117,7 +117,7 @@ typedef struct _ISCSI_PortalInfo {
 ### -field <b>IPAddr</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that indicates the portal's network IP address.</p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a> structure that indicates the portal's network IP address.</p>
 </dd>
 
 ### -field <b>Port</b>
@@ -153,10 +153,10 @@ typedef struct _ISCSI_PortalInfo {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561559">ISCSI_PortalInfo WMI Class</a>
+<a href="storage.iscsi_portalinfo_wmi_class">ISCSI_PortalInfo WMI Class</a>
 </dt>
 </dl>
 <p> </p>

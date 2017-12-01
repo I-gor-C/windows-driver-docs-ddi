@@ -78,14 +78,14 @@ typedef struct _ISCSI_DiscoveredTarget2 {
 ### -field <b>TargetDiscoveredPortalGroups</b>
 
 <dd>
-<p>A variable-length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561517">ISCSI_DiscoveredTargetPortalGroup2</a> structures that contains information about the portal groups that the initiator can use to connect to the target.</p>
+<p>A variable-length array of <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportalgroup2.md">ISCSI_DiscoveredTargetPortalGroup2</a> structures that contains information about the portal groups that the initiator can use to connect to the target.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTarget2 structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561505">ISCSI_DiscoveredTarget2 WMI Class</a> in <i>Discover.mof</i>.</p>
+<p>The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTarget2 structure when it compiles the <a href="storage.iscsi_discoveredtarget2_wmi_class">ISCSI_DiscoveredTarget2 WMI Class</a> in <i>Discover.mof</i>.</p>
 
-<p>The only difference between the ISCSI_DiscoveredTarget2 structure and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561501">ISCSI_DiscoveredTarget</a> structure is that the <b>TargetDiscoveredPortalGroups</b> member of ISCSI_DiscoveredTarget2 is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561517">ISCSI_DiscoveredTargetPortalGroup2</a> structure instead of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561515">ISCSI_DiscoveredTargetPortalGroup</a> structure.  </p>
+<p>The only difference between the ISCSI_DiscoveredTarget2 structure and the <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtarget.md">ISCSI_DiscoveredTarget</a> structure is that the <b>TargetDiscoveredPortalGroups</b> member of ISCSI_DiscoveredTarget2 is a <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportalgroup2.md">ISCSI_DiscoveredTargetPortalGroup2</a> structure instead of a <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a> structure.  </p>
 
 ## -requirements
 <table>
@@ -104,16 +104,16 @@ typedef struct _ISCSI_DiscoveredTarget2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561501">ISCSI_DiscoveredTarget</a>
+<a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtarget.md">ISCSI_DiscoveredTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561527">ISCSI_DiscoveredTarget WMI Class</a>
+<a href="storage.iscsi_discoveredtarget_wmi_class">ISCSI_DiscoveredTarget WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561505">ISCSI_DiscoveredTarget2 WMI Class</a>
+<a href="storage.iscsi_discoveredtarget2_wmi_class">ISCSI_DiscoveredTarget2 WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561515">ISCSI_DiscoveredTargetPortalGroup</a>
+<a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a>
 </dt>
 </dl>
 <p> </p>

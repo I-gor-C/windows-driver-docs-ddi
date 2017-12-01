@@ -7,7 +7,7 @@ old-location: stream\ksstream_header.htm
 old-project: stream
 ms.assetid: c1057dcf-2988-460d-b006-f6cf16ec969e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSSTREAM_HEADER, KSSTREAM_HEADER, *PKSSTREAM_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -77,7 +77,7 @@ typedef struct {
 ### -field <b>PresentationTime</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff567145">KSTIME</a> structure that specifies the presentation time for the related stream buffer in 100-nanosecond units. For more information, see the <b>Remarks</b> section.</p>
+<p>A <a href="stream.kstime">KSTIME</a> structure that specifies the presentation time for the related stream buffer in 100-nanosecond units. For more information, see the <b>Remarks</b> section.</p>
 </dd>
 
 ### -field <b>Duration</b>
@@ -95,7 +95,7 @@ typedef struct {
 ### -field <b>DataUsed</b>
 
 <dd>
-<p>For a write operation, this member specifies the number of bytes within the frame that are valid when submitting a frame to a lower-level driver. The headers are not modified on a write operation; however, the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the total number of bytes actually written. For a read operation, this member is not used when submitting a frame to a lower-level driver and must be set to zero. On return, this member contains the number of bytes actually filled in this frame and the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the size of the list of headers actually used. Note that if the minidriver specifies KSPIN_FLAG_GENERATE_MAPPINGS in <a href="https://msdn.microsoft.com/library/windows/hardware/ff563534">KSPIN_DESCRIPTOR_EX</a>, when a stream pointer is advanced past a frame, <b>DataUsed</b> is set to <b>Count</b> minus <b>Remaining</b> (members of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567140">KSSTREAM_POINTER_OFFSET</a>). If the driver does not specify this flag, the minidriver is responsible for setting <b>DataUsed</b>.</p>
+<p>For a write operation, this member specifies the number of bytes within the frame that are valid when submitting a frame to a lower-level driver. The headers are not modified on a write operation; however, the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the total number of bytes actually written. For a read operation, this member is not used when submitting a frame to a lower-level driver and must be set to zero. On return, this member contains the number of bytes actually filled in this frame and the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the size of the list of headers actually used. Note that if the minidriver specifies KSPIN_FLAG_GENERATE_MAPPINGS in <a href="..\ks\ns-ks--kspin-descriptor-ex.md">KSPIN_DESCRIPTOR_EX</a>, when a stream pointer is advanced past a frame, <b>DataUsed</b> is set to <b>Count</b> minus <b>Remaining</b> (members of <a href="..\ks\ns-ks--ksstream-pointer-offset.md">KSSTREAM_POINTER_OFFSET</a>). If the driver does not specify this flag, the minidriver is responsible for setting <b>DataUsed</b>.</p>
 </dd>
 
 ### -field <b>Data</b>
@@ -221,7 +221,7 @@ typedef struct {
 </td>
 <td>
 <p>
-          Signifies that the data format for this stream has changed. If this flag is set, the <b>Data</b> member contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a> structure that contains the new format. This flag is valid only for streams that have previously negotiated dynamic type changing. For a write operation, include the new data format in place of a media sample. If the media-specific extension size is modified, this header must be the last header in a list of headers for the given stream request. During a read request, any further I/O remains pending until the new format is retrieved through KSPROPERTY_CONNECTION_DATAFORMAT. For a write operation, the header must not be extended, and must be the only header in the write operation.
+          Signifies that the data format for this stream has changed. If this flag is set, the <b>Data</b> member contains a <a href="stream.ksdataformat">KSDATAFORMAT</a> structure that contains the new format. This flag is valid only for streams that have previously negotiated dynamic type changing. For a write operation, include the new data format in place of a media sample. If the media-specific extension size is modified, this header must be the last header in a list of headers for the given stream request. During a read request, any further I/O remains pending until the new format is retrieved through KSPROPERTY_CONNECTION_DATAFORMAT. For a write operation, the header must not be extended, and must be the only header in the write operation.
         </p>
 </td>
 </tr>
@@ -231,7 +231,7 @@ typedef struct {
 </td>
 <td>
 <p>
-          Specifies that the stream header's <i>Data</i> member points to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff568783">VRAM_SURFACE_INFO</a>. The system-supplied KS proxy module sets this flag to indicate that it is <a href="https://msdn.microsoft.com/e3ab3a10-42af-488f-9b13-d2c6d5aac615">capturing directly to VRAM</a>.
+          Specifies that the stream header's <i>Data</i> member points to a structure of type <a href="stream.vram_surface_info">VRAM_SURFACE_INFO</a>. The system-supplied KS proxy module sets this flag to indicate that it is <a href="https://msdn.microsoft.com/e3ab3a10-42af-488f-9b13-d2c6d5aac615">capturing directly to VRAM</a>.
         </p>
 </td>
 </tr>
@@ -267,7 +267,7 @@ typedef struct {
 
 <p>On an IOCTL_KS_WRITE_STREAM, the member elements must be initialized, and each KSSTREAM_HEADER.DataUsed element contains the number of bytes to write. The actual number of total bytes written is returned in pIrp-&gt;IoStatus.Information. This is less than or equal to the total of all KSSTREAM_HEADER.DataUsed elements in the headers.</p>
 
-<p>If you are using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560725">IKsReferenceClock</a> interface to obtain timestamps to place in the <b>PresentationTime</b> member of KSSTREAM_HEADER, see <a href="NULL">AVStream Clocks</a> for more information.</p>
+<p>If you are using the <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceClock</a> interface to obtain timestamps to place in the <b>PresentationTime</b> member of KSSTREAM_HEADER, see <a href="NULL">AVStream Clocks</a> for more information.</p>
 
 ## -requirements
 <table>
@@ -286,9 +286,9 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>
+<a href="stream.ksdataformat">KSDATAFORMAT</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSSTREAM_HEADER structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSSTREAM_HEADER structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

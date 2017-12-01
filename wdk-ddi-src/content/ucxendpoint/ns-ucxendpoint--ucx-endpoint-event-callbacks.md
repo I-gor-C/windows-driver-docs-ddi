@@ -75,49 +75,49 @@ typedef struct _UCX_ENDPOINT_EVENT_CALLBACKS {
 ### -field <b>EvtEndpointPurge</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187827">EVT_UCX_ENDPOINT_PURGE</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_endpoint_purge">EVT_UCX_ENDPOINT_PURGE</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtEndpointStart</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187829">EVT_UCX_ENDPOINT_START</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_endpoint_start">EVT_UCX_ENDPOINT_START</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtEndpointAbort</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187825">EVT_UCX_ENDPOINT_ABORT</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_endpoint_abort">EVT_UCX_ENDPOINT_ABORT</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtEndpointReset</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187828">EVT_UCX_ENDPOINT_RESET</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_endpoint_reset">EVT_UCX_ENDPOINT_RESET</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtEndpointOkToCancelTransfers</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187826">EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_endpoint_ok_to_cancel_transfers">EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtEndpointStaticStreamsAdd</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187830">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_endpoint_static_streams_add">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtEndpointStaticStreamsEnable</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187832">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_endpoint_static_streams_enable">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtEndpointStaticStreamsDisable</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt187831">EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE</a> callback function.</p>
+<p>A pointer to an <a href="buses.evt_ucx_endpoint_static_streams_disable">EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE</a> callback function.</p>
 </dd>
 
 ### -field <b>Reserved1</b>
@@ -159,10 +159,10 @@ typedef struct _UCX_ENDPOINT_EVENT_CALLBACKS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188064">UCX_ENDPOINT_EVENT_CALLBACKS_INIT</a>
+<a href="buses._ucx_endpoint_event_callbacks_init">UCX_ENDPOINT_EVENT_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188041">UcxEndpointInitSetEventCallbacks</a>
+<a href="buses._ucxendpointinitseteventcallbacks">UcxEndpointInitSetEventCallbacks</a>
 </dt>
 </dl>
 <p> </p>

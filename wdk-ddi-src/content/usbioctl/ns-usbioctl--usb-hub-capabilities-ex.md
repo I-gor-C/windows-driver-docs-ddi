@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USB_HUB_CAPABILITIES_EX</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537312">IOCTL_USB_GET_HUB_CAPABILITIES</a> I/O control request to retrieve the capabilities of a particular USB hub.</p>
+<p>The <b>USB_HUB_CAPABILITIES_EX</b> structure is used with the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-hub-capabilities.md">IOCTL_USB_GET_HUB_CAPABILITIES</a> I/O control request to retrieve the capabilities of a particular USB hub.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ typedef struct _USB_HUB_CAPABILITIES_EX {
 ### -field <b>CapabilityFlags</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff539330">USB_HUB_CAP_FLAGS</a> structure that reports the hub capabilities.</p>
+<p>A <a href="..\usbioctl\ns-usbioctl--usb-hub-cap-flags.md">USB_HUB_CAP_FLAGS</a> structure that reports the hub capabilities.</p>
 </dd>
 </dl>
 
@@ -90,13 +90,13 @@ typedef struct _USB_HUB_CAPABILITIES_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537312">IOCTL_USB_GET_HUB_CAPABILITIES</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-hub-capabilities.md">IOCTL_USB_GET_HUB_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539330">USB_HUB_CAP_FLAGS</a>
+<a href="..\usbioctl\ns-usbioctl--usb-hub-cap-flags.md">USB_HUB_CAP_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

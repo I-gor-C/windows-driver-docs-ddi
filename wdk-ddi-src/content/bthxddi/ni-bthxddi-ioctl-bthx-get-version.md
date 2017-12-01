@@ -7,7 +7,7 @@ old-location: bltooth\ioctl_bthx_get_version.htm
 old-project: bltooth
 ms.assetid: F4FD760B-551C-4738-A13D-444E08215D59
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: BTHDDI_SDP_PARSE_INTERFACE, BTHDDI_SDP_PARSE_INTERFACE, *PBTHDDI_SDP_PARSE_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,27 +56,27 @@ req.iface:
 <p>None.</p>
 
 ### -output-buffer
-<p>Profile drivers should use KMDF and its <a href="https://msdn.microsoft.com/library/windows/hardware/ff550019">WdfRequestRetrieveOutputMemory</a> method to retrieve output parameters.  For example, to get the output buffer:</p>
+<p>Profile drivers should use KMDF and its <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputmemory.md">WdfRequestRetrieveOutputMemory</a> method to retrieve output parameters.  For example, to get the output buffer:</p>
 
 <p><code>Status = WdfRequestRetrieveOutputMemory(_Request, &amp;ReqOutMemory);</code></p>
 
-<p>The buffer describes a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450838">BTHX_VERSION</a> structure. </p>
+<p>The buffer describes a <a href="..\bthxddi\ns-bthxddi--bthx-version.md">BTHX_VERSION</a> structure. </p>
 
 <p>Refer to the WDK Bluetooth samples for more information.</p>
 
-<p>Profile drivers should use KMDF and its <a href="https://msdn.microsoft.com/library/windows/hardware/ff550019">WdfRequestRetrieveOutputMemory</a> method to retrieve output parameters.  For example, to get the output buffer:</p>
+<p>Profile drivers should use KMDF and its <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputmemory.md">WdfRequestRetrieveOutputMemory</a> method to retrieve output parameters.  For example, to get the output buffer:</p>
 
 <p><code>Status = WdfRequestRetrieveOutputMemory(_Request, &amp;ReqOutMemory);</code></p>
 
-<p>The buffer describes a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450838">BTHX_VERSION</a> structure. </p>
+<p>The buffer describes a <a href="..\bthxddi\ns-bthxddi--bthx-version.md">BTHX_VERSION</a> structure. </p>
 
 <p>Refer to the WDK Bluetooth samples for more information.</p>
 
-<p>Profile drivers should use KMDF and its <a href="https://msdn.microsoft.com/library/windows/hardware/ff550019">WdfRequestRetrieveOutputMemory</a> method to retrieve output parameters.  For example, to get the output buffer:</p>
+<p>Profile drivers should use KMDF and its <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputmemory.md">WdfRequestRetrieveOutputMemory</a> method to retrieve output parameters.  For example, to get the output buffer:</p>
 
 <p><code>Status = WdfRequestRetrieveOutputMemory(_Request, &amp;ReqOutMemory);</code></p>
 
-<p>The buffer describes a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450838">BTHX_VERSION</a> structure. </p>
+<p>The buffer describes a <a href="..\bthxddi\ns-bthxddi--bthx-version.md">BTHX_VERSION</a> structure. </p>
 
 <p>Refer to the WDK Bluetooth samples for more information.</p>
 
@@ -170,26 +170,6 @@ I/O Status block
 <p>Any unsuccessful NT status code prevents the driver from loading.</p>
 
 ## -remarks
-<p>IOCTL_BTHX_GET_VERSION is a synchronous operation.</p>
-
-<p>A transport driver can return one or more versions that it supports in BTHX_VERSION structure.  If no version is set,  Windows unloads the Bluetooth stack.</p>
-
-<p>IOCTL_BTHX_GET_VERSION is a synchronous operation.</p>
-
-<p>A transport driver can return one or more versions that it supports in BTHX_VERSION structure.  If no version is set,  Windows unloads the Bluetooth stack.</p>
-
-<p>IOCTL_BTHX_GET_VERSION is a synchronous operation.</p>
-
-<p>A transport driver can return one or more versions that it supports in BTHX_VERSION structure.  If no version is set,  Windows unloads the Bluetooth stack.</p>
-
-<p>IOCTL_BTHX_GET_VERSION is a synchronous operation.</p>
-
-<p>A transport driver can return one or more versions that it supports in BTHX_VERSION structure.  If no version is set,  Windows unloads the Bluetooth stack.</p>
-
-<p>IOCTL_BTHX_GET_VERSION is a synchronous operation.</p>
-
-<p>A transport driver can return one or more versions that it supports in BTHX_VERSION structure.  If no version is set,  Windows unloads the Bluetooth stack.</p>
-
 <p>IOCTL_BTHX_GET_VERSION is a synchronous operation.</p>
 
 <p>A transport driver can return one or more versions that it supports in BTHX_VERSION structure.  If no version is set,  Windows unloads the Bluetooth stack.</p>

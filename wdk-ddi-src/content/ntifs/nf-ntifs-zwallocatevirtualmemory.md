@@ -7,7 +7,7 @@ old-location: kernel\zwallocatevirtualmemory.htm
 old-project: kernel
 ms.assetid: bb82c90d-9bd3-4a23-b171-06a3208e424b
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: ZwAllocateVirtualMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -271,40 +271,6 @@ NTSTATUS ZwAllocateVirtualMemory(
 
 <p>Physical storage is allocated for the page, and access is controlled by a protection code. The system initializes and loads each committed page into physical memory only at the first attempt to read or write to that page. When the process terminates, the system releases the storage for committed pages. <b>ZwAllocateVirtualMemory</b> can commit an already committed page. This means that you can commit a range of pages, regardless of whether they have already been committed, and the function will not fail. <b>ZwFreeVirtualMemory</b> can decommit a committed page, releasing the page's storage, or it can simultaneously decommit and release a committed page.</p>
 
-<p> </p>
-
-<p>Memory allocated by calling <b>ZwAllocateVirtualMemory</b> must be freed by calling <b>ZwFreeVirtualMemory</b>.</p>
-
-<p>For more information about memory management, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554389">Memory Management for Windows Drivers</a>.</p>
-
-<p>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.</p>
-
-<p><b>ZwAllocateVirtualMemory</b> can perform the following operations:</p>
-
-<p>Commit a region of pages reserved by a previous call to <b>ZwAllocateVirtualMemory</b>.</p>
-
-<p>Reserve a region of free pages.</p>
-
-<p>Reserve and commit a region of free pages.</p>
-
-<p>Kernel-mode drivers can use <b>ZwAllocateVirtualMemory</b> to reserve a range of application-accessible virtual addresses in the specified process and then make additional calls to <b>ZwAllocateVirtualMemory</b> to commit individual pages from the reserved range. This enables a process to reserve a range of its virtual address space without consuming physical storage until it is needed.</p>
-
-<p>Each page in the process's virtual address space is in one of the three states described in the following table.</p>
-
-<p>FREE</p>
-
-<p>The page is not committed or reserved and is not accessible to the process. <b>ZwAllocateVirtualMemory</b> can reserve, or simultaneously reserve and commit, a free page.</p>
-
-<p>RESERVED</p>
-
-<p>The range of addresses cannot be used by other allocation functions, but the page is not accessible to the process and has no physical storage associated with it. <b>ZwAllocateVirtualMemory</b> can commit a reserved page, but it cannot reserve it a second time. <b>ZwFreeVirtualMemory</b> can release a reserved page, making it a free page.</p>
-
-<p>COMMITTED</p>
-
-<p>Physical storage is allocated for the page, and access is controlled by a protection code. The system initializes and loads each committed page into physical memory only at the first attempt to read or write to that page. When the process terminates, the system releases the storage for committed pages. <b>ZwAllocateVirtualMemory</b> can commit an already committed page. This means that you can commit a range of pages, regardless of whether they have already been committed, and the function will not fail. <b>ZwFreeVirtualMemory</b> can decommit a committed page, releasing the page's storage, or it can simultaneously decommit and release a committed page.</p>
-
-<p> </p>
-
 <p>Memory allocated by calling <b>ZwAllocateVirtualMemory</b> must be freed by calling <b>ZwFreeVirtualMemory</b>.</p>
 
 <p>For more information about memory management, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554389">Memory Management for Windows Drivers</a>.</p>
@@ -374,7 +340,7 @@ NTSTATUS ZwAllocateVirtualMemory(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454255">SpNoWait</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454274">StorPortStartIo</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>, <a href="devtest.storport_spnowait">SpNoWait</a>, <a href="devtest.storport_storportstartio">StorPortStartIo</a>
 </td>
 </tr>
 </table>
@@ -385,9 +351,9 @@ NTSTATUS ZwAllocateVirtualMemory(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566460">ZwFreeVirtualMemory</a>
+<a href="..\ntifs\nf-ntifs-zwfreevirtualmemory.md">ZwFreeVirtualMemory</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwAllocateVirtualMemory routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwAllocateVirtualMemory routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

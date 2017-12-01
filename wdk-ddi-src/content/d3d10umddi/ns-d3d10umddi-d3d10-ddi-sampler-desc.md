@@ -66,25 +66,25 @@ typedef struct D3D10_DDI_SAMPLER_DESC {
 ### -field <b>Filter</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541952">D3D10_DDI_FILTER</a>-typed value that indicates the filter property for a sampler. </p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-filter.md">D3D10_DDI_FILTER</a>-typed value that indicates the filter property for a sampler. </p>
 </dd>
 
 ### -field <b>AddressU</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff542017">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the u coordinate.</p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-texture-address-mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the u coordinate.</p>
 </dd>
 
 ### -field <b>AddressV</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff542017">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the v coordinate.</p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-texture-address-mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the v coordinate.</p>
 </dd>
 
 ### -field <b>AddressW</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff542017">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the w coordinate.</p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-texture-address-mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the w coordinate.</p>
 </dd>
 
 ### -field <b>MipLODBias</b>
@@ -102,7 +102,7 @@ typedef struct D3D10_DDI_SAMPLER_DESC {
 ### -field <b>ComparisonFunc</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541933">D3D10_DDI_COMPARISON_FUNC</a>-typed value that indicates the sampler-comparison function to perform.</p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-comparison-func.md">D3D10_DDI_COMPARISON_FUNC</a>-typed value that indicates the sampler-comparison function to perform.</p>
 </dd>
 
 ### -field <b>BorderColor</b>
@@ -158,13 +158,13 @@ typedef struct D3D10_DDI_SAMPLER_DESC {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createsampler.md">CreateSampler</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541933">D3D10_DDI_COMPARISON_FUNC</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-comparison-func.md">D3D10_DDI_COMPARISON_FUNC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541952">D3D10_DDI_FILTER</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-filter.md">D3D10_DDI_FILTER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542017">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-texture-address-mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>
 </dt>
 </dl>
 <p> </p>

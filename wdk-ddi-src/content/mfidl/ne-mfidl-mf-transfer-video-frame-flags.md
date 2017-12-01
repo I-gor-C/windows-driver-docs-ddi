@@ -7,7 +7,7 @@ old-location: stream\mf_transfer_video_frame_flags.htm
 old-project: stream
 ms.assetid: 0F4006D0-11B7-48F3-8ED4-00B09EFA67D1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagMetadataTimeStamps, MetadataTimeStamps
 ms.prod: windows-hardware
 ms.technology: windows-devices

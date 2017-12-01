@@ -72,11 +72,7 @@ BOOLEAN __stdcall HidD_GetNumInputBuffers(
 <p><b>HidD_GetNumInputBuffers</b> returns <b>TRUE</b> if it succeeds; otherwise, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Only user-mode applications can call <b>HidD_GetNumInputBuffers</b>. Kernel-mode drivers can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541058">IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS</a> request.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p>Only user-mode applications can call <b>HidD_GetNumInputBuffers</b>. Kernel-mode drivers can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541058">IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS</a> request.</p>
+<p>Only user-mode applications can call <b>HidD_GetNumInputBuffers</b>. Kernel-mode drivers can use the <a href="..\hidclass\ni-hidclass-ioctl-get-num-device-input-buffers.md">IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS</a> request.</p>
 
 <p>For more information, see <a href="NULL">HID Collections</a>. </p>
 
@@ -135,13 +131,13 @@ BOOLEAN __stdcall HidD_GetNumInputBuffers(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539686">HidD_SetNumInputBuffers</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-setnuminputbuffers.md">HidD_SetNumInputBuffers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541058">IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS</a>
+<a href="..\hidclass\ni-hidclass-ioctl-get-num-device-input-buffers.md">IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542087">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a>
+<a href="..\hidclass\ni-hidclass-ioctl-set-num-device-input-buffers.md">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a>
 </dt>
 </dl>
 <p> </p>

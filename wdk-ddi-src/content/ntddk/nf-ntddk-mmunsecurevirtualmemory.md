@@ -7,7 +7,7 @@ old-location: kernel\mmunsecurevirtualmemory.htm
 old-project: kernel
 ms.assetid: 979eef24-e53b-476c-b9db-e56c43630913
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: MmUnsecureVirtualMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>MmUnsecureVirtualMemory</b> routine unsecures a memory address range secured by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556374">MmSecureVirtualMemory</a> routine. </p>
+<p>The <b>MmUnsecureVirtualMemory</b> routine unsecures a memory address range secured by the <a href="..\ntddk\nf-ntddk-mmsecurevirtualmemory.md">MmSecureVirtualMemory</a> routine. </p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ VOID MmUnsecureVirtualMemory(
 ### -param <i>SecureHandle</i> [in]
 
 <dd>
-<p>Specifies the value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff556374">MmSecureVirtualMemory</a> for the memory address range. </p>
+<p>Specifies the value returned by <a href="..\ntddk\nf-ntddk-mmsecurevirtualmemory.md">MmSecureVirtualMemory</a> for the memory address range. </p>
 </dd>
 </dl>
 
@@ -130,7 +130,7 @@ VOID MmUnsecureVirtualMemory(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqlmmapclte">IrqlMmApcLte</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_irqlmmapclte">IrqlMmApcLte</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -138,9 +138,9 @@ VOID MmUnsecureVirtualMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556374">MmSecureVirtualMemory</a>
+<a href="..\ntddk\nf-ntddk-mmsecurevirtualmemory.md">MmSecureVirtualMemory</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmUnsecureVirtualMemory routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmUnsecureVirtualMemory routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

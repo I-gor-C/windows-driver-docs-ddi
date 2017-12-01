@@ -64,7 +64,7 @@ NTSTATUS D3DKMTGetProcessSchedulingPriorityClass(
 ### -param <i>pPriority</i> [out]
 
 <dd>
-<p>A pointer to a variable that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548248">D3DKMT_SCHEDULINGPRIORITYCLASS</a>-typed value that indicates the priority level for the process.</p>
+<p>A pointer to a variable that receives a <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-schedulingpriorityclass.md">D3DKMT_SCHEDULINGPRIORITYCLASS</a>-typed value that indicates the priority level for the process.</p>
 </dd>
 </dl>
 
@@ -137,10 +137,10 @@ NTSTATUS D3DKMTGetProcessSchedulingPriorityClass(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548248">D3DKMT_SCHEDULINGPRIORITYCLASS</a>
+<a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-schedulingpriorityclass.md">D3DKMT_SCHEDULINGPRIORITYCLASS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547182">D3DKMTSetProcessSchedulingPriorityClass</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetprocessschedulingpriorityclass.md">D3DKMTSetProcessSchedulingPriorityClass</a>
 </dt>
 </dl>
 <p> </p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SendRPS_IN structure is used to deliver input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565505">SendRPS</a> WMI method.</p>
+<p>The SendRPS_IN structure is used to deliver input parameter data to the <a href="storage.sendrps">SendRPS</a> WMI method.</p>
 
 
 ## -syntax
@@ -90,7 +90,7 @@ typedef struct _SendRPS_IN {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the SendRPS_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the SendRPS_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -109,7 +109,7 @@ typedef struct _SendRPS_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565505">SendRPS</a>
+<a href="storage.sendrps">SendRPS</a>
 </dt>
 </dl>
 <p> </p>

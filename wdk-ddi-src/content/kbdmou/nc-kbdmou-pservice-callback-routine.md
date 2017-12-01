@@ -93,7 +93,7 @@ VOID ClassServiceCallback(
 
 <p>Here is the definition of the  keyboard class service callback routine.</p>
 
-<p>Kbdclass uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541273">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request to connect its class service callback to a keyboard device. In this call, the driver sets  its implementation in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538370">CONNECT_DATA</a> structure.</p>
+<p>Kbdclass uses an <a href="..\kbdmou\ni-kbdmou-ioctl-internal-keyboard-connect.md">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request to connect its class service callback to a keyboard device. In this call, the driver sets  its implementation in a <a href="..\kbdmou\ns-kbdmou--connect-data.md">CONNECT_DATA</a> structure.</p>
 
 <p><b>KeyboardClassServiceCallback</b> transfers input data from the input buffer of the device to the class data queue. This routine is called by the ISR dispatch completion routine of the function driver.</p>
 
@@ -101,51 +101,7 @@ VOID ClassServiceCallback(
 
 <p><b>Mouse Class Service Callback</b></p>
 
-<p>Here is the <b>MouseClassServiceCallback</b> routine is the class service callback routine that is provided by Mouclass. The driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541294">IOCTL_INTERNAL_MOUSE_CONNECT</a> request to connect its class service callback to a mouse device. In this call, the driver sets  its implementation in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538370">CONNECT_DATA</a> structure.</p>
-
-<p>
-<pre class="syntax" xml:space="preserve"><code>
-/*
-DeviceObject [in] 
-Pointer to the class device object.
-
-InputDataStart [in] 
-Pointer to the first mouse input data packet in the input buffer of the port device.
-
-InputDataEnd [in] 
-Pointer to the mouse input data packet that immediately follows the last data packet in the input data buffer of the port device.
-
-InputDataConsumed [in, out] 
-Pointer to the number of mouse input data packets that are transferred by the routine.
-
-*/
-VOID MouseClassServiceCallback(
-  _In_    PDEVICE_OBJECT    DeviceObject,
-  _In_    PMOUSE_INPUT_DATA InputDataStart,
-  _In_    PMOUSE_INPUT_DATA InputDataEnd,
-  _Inout_ PULONG            InputDataConsumed
-);
-);
-</code></pre>
-</p>
-
-<p><b>MouseClassServiceCallback</b> transfers input data from the input buffer of the device to the class data queue. This routine is called by the ISR dispatch completion routine of the function driver.</p>
-
-<p><b>MouseClassServiceCallback</b> can be supplemented by a filter service callback that is provided by an upper-level mouse filter driver. A filter service callback can filter the mouse data that is transferred to the class data queue. For example, the filter service callback can delete, transform, or insert data. <a href="http://go.microsoft.com/fwlink/p/?linkid=256135">Moufiltr</a>, the sample filter driver in the WDK, includes <b>MouFilter_ServiceCallback</b>, which is a template for a filter service callback.</p>
-
-<p><b>Keyboard Class Service Callback</b></p>
-
-<p>Here is the definition of the  keyboard class service callback routine.</p>
-
-<p>Kbdclass uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541273">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request to connect its class service callback to a keyboard device. In this call, the driver sets  its implementation in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538370">CONNECT_DATA</a> structure.</p>
-
-<p><b>KeyboardClassServiceCallback</b> transfers input data from the input buffer of the device to the class data queue. This routine is called by the ISR dispatch completion routine of the function driver.</p>
-
-<p><b>KeyboardClassServiceCallback</b> can be supplemented by a filter service callback that is provided by an upper-level keyboard filter driver. A filter service callback filters the keyboard data that is transferred to the class data queue. For example, the filter service callback can delete, transform, or insert data. <a href="http://go.microsoft.com/fwlink/p/?linkid=256125">Kbfiltr</a>, the sample filter driver in code gallery, includes <b>KbFilter_ServiceCallback</b>, which is a template for a keyboard filter service callback.</p>
-
-<p><b>Mouse Class Service Callback</b></p>
-
-<p>Here is the <b>MouseClassServiceCallback</b> routine is the class service callback routine that is provided by Mouclass. The driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541294">IOCTL_INTERNAL_MOUSE_CONNECT</a> request to connect its class service callback to a mouse device. In this call, the driver sets  its implementation in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538370">CONNECT_DATA</a> structure.</p>
+<p>Here is the <b>MouseClassServiceCallback</b> routine is the class service callback routine that is provided by Mouclass. The driver uses an <a href="..\kbdmou\ni-kbdmou-ioctl-internal-mouse-connect.md">IOCTL_INTERNAL_MOUSE_CONNECT</a> request to connect its class service callback to a mouse device. In this call, the driver sets  its implementation in a <a href="..\kbdmou\ns-kbdmou--connect-data.md">CONNECT_DATA</a> structure.</p>
 
 <p>
 <pre class="syntax" xml:space="preserve"><code>
@@ -212,13 +168,13 @@ VOID MouseClassServiceCallback(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542337">KEYBOARD_INPUT_DATA</a>
+<a href="hid.keyboard_input_data">KEYBOARD_INPUT_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542403">MOUSE_INPUT_DATA</a>
+<a href="hid.mouse_input_data">MOUSE_INPUT_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538370">CONNECT_DATA</a>
+<a href="..\kbdmou\ns-kbdmou--connect-data.md">CONNECT_DATA</a>
 </dt>
 </dl>
 <p> </p>

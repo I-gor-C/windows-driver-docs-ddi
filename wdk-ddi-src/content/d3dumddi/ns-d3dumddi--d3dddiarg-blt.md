@@ -76,7 +76,7 @@ typedef struct _D3DDDIARG_BLT {
 ### -field <b>SrcRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the source rectangle. </p>
+<p>[in] A <a href="display.rect">RECT</a> structure for the source rectangle. </p>
 </dd>
 
 ### -field <b>hDstResource</b>
@@ -94,7 +94,7 @@ typedef struct _D3DDDIARG_BLT {
 ### -field <b>DstRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the destination rectangle. </p>
+<p>[in] A <a href="display.rect">RECT</a> structure for the destination rectangle. </p>
 </dd>
 
 ### -field <b>ColorKey</b>
@@ -106,7 +106,7 @@ typedef struct _D3DDDIARG_BLT {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544379">D3DDDI_BLTFLAGS</a> structure that identifies the type of bitblt to perform. Note that some bit-field flags in this structure are mutually exclusive with other flags. For more information about these flags, see the following Remarks section.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-bltflags.md">D3DDDI_BLTFLAGS</a> structure that identifies the type of bitblt to perform. Note that some bit-field flags in this structure are mutually exclusive with other flags. For more information about these flags, see the following Remarks section.</p>
 </dd>
 </dl>
 
@@ -143,10 +143,10 @@ typedef struct _D3DDDIARG_BLT {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-blt.md">Blt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544379">D3DDDI_BLTFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-bltflags.md">D3DDDI_BLTFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

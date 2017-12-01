@@ -7,7 +7,7 @@ old-location: debugger\getthreadidbydataoffset.htm
 old-project: debugger
 ms.assetid: f559e0da-ca5c-4fea-aa17-257abfd45f96
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects, GetThreadIdByDataOffset, IDebugSystemObjects::GetThreadIdByDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,10 +76,6 @@ HRESULT GetThreadIdByDataOffset(
 <p> </p>
 
 ## -remarks
-<p>In kernel-mode debugging, this method returns the engine thread ID for the virtual thread representing the processor on which the specified thread is executing.  If the thread is not executing on a processor, this method will fail. </p>
-
-<p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
 <p>In kernel-mode debugging, this method returns the engine thread ID for the virtual thread representing the processor on which the specified thread is executing.  If the thread is not executing on a processor, this method will fail. </p>
 
 <p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>

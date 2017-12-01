@@ -44,12 +44,12 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaNUpOption</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a>. <b>IPrintSchemaNUpOption</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaNUpOption</b> interface inherits from <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>. <b>IPrintSchemaNUpOption</b> also has these types of members:</p>
 
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintSchemaNUpOption</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973224">PagesPerSheet</a>
+<a href="print.iprintschemanupoption_pagespersheet">PagesPerSheet</a>
 </p>
 
 <p>Read-only</p>

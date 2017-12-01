@@ -78,13 +78,11 @@ NTSTATUS FltIsDirectory(
 ## -returns
 <p><b>FltIsDirectory</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as the following: </p><dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl><p>This error code is returned if the file system does not support stream contexts.  Note that starting with Windows Vista, <a href="https://msdn.microsoft.com/library/windows/hardware/ff543318">FltIsDirectory</a> will return directory information even for file systems that do not support stream contexts.  </p>
+</dl><p>This error code is returned if the file system does not support stream contexts.  Note that starting with Windows Vista, <a href="..\fltkernel\nf-fltkernel-fltisdirectory.md">FltIsDirectory</a> will return directory information even for file systems that do not support stream contexts.  </p>
 
 <p> </p>
 
 ## -remarks
-<p><b>FltIsDirectory</b> retrieves the desired information from the filter manager's internal stream context manager. The filter manager caches this information for future queries on this stream.</p>
-
 <p><b>FltIsDirectory</b> retrieves the desired information from the filter manager's internal stream context manager. The filter manager caches this information for future queries on this stream.</p>
 
 ## -requirements

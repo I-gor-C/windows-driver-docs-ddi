@@ -7,7 +7,7 @@ old-location: netvista\dot11_mac_address.htm
 old-project: netvista
 ms.assetid: 6b2b17fd-3695-4598-8d9a-be28e1bc5b53
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_MAC_ADDRESS, DOT11_MAC_ADDRESS, *PDOT11_MAC_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: windot11.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -111,21 +110,21 @@ typedef struct _DOT11_MAC_ADDRESS {
    DOT11_ASSOCIATION_COMPLETION_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547665">DOT11_BSS_ENTRY</a>
+<a href="..\windot11\ns-windot11-dot11-bss-entry.md">DOT11_BSS_ENTRY</a>
 </dt>
 <dt>
 <a href="..\windot11\ns-windot11-dot11-disassociation-parameters.md">
    DOT11_DISASSOCIATION_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548753">DOT11_PORT_STATE</a>
+<a href="..\wlclient\ns-wlclient--dot11-port-state.md">DOT11_PORT_STATE</a>
 </dt>
 <dt>
 <a href="..\windot11\ns-windot11-dot11-roaming-completion-parameters.md">
    DOT11_ROAMING_COMPLETION_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548767">DOT11_SCAN_REQUEST_V2</a>
+<a href="..\windot11\ns-windot11--dot11-scan-request-v2.md">DOT11_SCAN_REQUEST_V2</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_dot11_association_start">
@@ -188,4 +187,4 @@ typedef struct _DOT11_MAC_ADDRESS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MAC_ADDRESS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MAC_ADDRESS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

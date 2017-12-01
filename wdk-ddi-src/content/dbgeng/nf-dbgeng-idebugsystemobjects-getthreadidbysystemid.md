@@ -7,7 +7,7 @@ old-location: debugger\getthreadidbysystemid.htm
 old-project: debugger
 ms.assetid: 2dcb7703-df66-4795-bf59-d0851c4ccf0f
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects, GetThreadIdBySystemId, IDebugSystemObjects::GetThreadIdBySystemId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,10 +78,6 @@ HRESULT GetThreadIdBySystemId(
 <p> </p>
 
 ## -remarks
-<p>This method is only available in user-mode debugging.</p>
-
-<p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
 <p>This method is only available in user-mode debugging.</p>
 
 <p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>

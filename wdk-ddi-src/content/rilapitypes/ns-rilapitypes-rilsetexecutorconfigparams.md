@@ -7,7 +7,7 @@ old-location: netvista\rilsetexecutorconfigparams_2.htm
 old-project: netvista
 ms.assetid: b8dcfd30-e7fc-45ab-b407-a0719f624c8e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSETEXECUTORCONFIGPARAMS, RILSETEXECUTORCONFIGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

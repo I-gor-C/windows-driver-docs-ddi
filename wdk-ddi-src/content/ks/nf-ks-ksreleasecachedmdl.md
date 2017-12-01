@@ -7,7 +7,7 @@ old-location: stream\ksreleasecachedmdl.htm
 old-project: stream
 ms.assetid: 8EDBD8FF-6417-44C0-87C0-14D71FEFA380
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsReleaseCachedMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>KsReleaseCachedMdl</b> function is used to release the MDL acquired by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186387">KsAcquireCachedMdl</a> call.</p>
+<p>The <b>KsReleaseCachedMdl</b> function is used to release the MDL acquired by the <a href="..\ks\nf-ks-ksacquirecachedmdl.md">KsAcquireCachedMdl</a> call.</p>
 
 
 ## -syntax
@@ -65,13 +65,13 @@ void _Must_inspect_result_ _IRQL_requires_max_(PASSIVE_LEVEL) KSDDKAPI NTSTATUS 
 ### -param <i>MdlAddr</i> [in]
 
 <dd>
-<p>MDL address retrieved in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186387">KsAcquireCachedMdl</a> call. This should not be touched after the <b>KsReleaseCachedMdl</b> call.</p>
+<p>MDL address retrieved in the <a href="..\ks\nf-ks-ksacquirecachedmdl.md">KsAcquireCachedMdl</a> call. This should not be touched after the <b>KsReleaseCachedMdl</b> call.</p>
 </dd>
 
 ### -param <i>ReleaseContext</i> [in]
 
 <dd>
-<p>The context passed as an output in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186387">KsAcquireCachedMdl</a> call.</p>
+<p>The context passed as an output in the <a href="..\ks\nf-ks-ksacquirecachedmdl.md">KsAcquireCachedMdl</a> call.</p>
 </dd>
 </dl>
 

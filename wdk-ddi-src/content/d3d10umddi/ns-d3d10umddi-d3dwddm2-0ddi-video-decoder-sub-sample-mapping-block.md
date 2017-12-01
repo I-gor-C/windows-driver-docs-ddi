@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</b> is used with  <a href="https://msdn.microsoft.com/library/windows/hardware/dn906377">VideoDecoderSubmitBuffers1</a> to describe the decoder buffer sub sample mapping block size.</p>
+<p><b>D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</b> is used with  <a href="display.videodecodersubmitbuffers1">VideoDecoderSubmitBuffers1</a> to describe the decoder buffer sub sample mapping block size.</p>
 
 
 ## -syntax
@@ -104,7 +104,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906377">VideoDecoderSubmitBuffers1</a>
+<a href="display.videodecodersubmitbuffers1">VideoDecoderSubmitBuffers1</a>
 </dt>
 </dl>
 <p> </p>

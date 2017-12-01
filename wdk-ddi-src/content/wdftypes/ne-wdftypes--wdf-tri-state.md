@@ -7,7 +7,7 @@ old-location: wdf\wdf_tri_state.htm
 old-project: wdf
 ms.assetid: 8ea6e373-225d-4fcd-abcf-c19b07f9f5d8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_TIMER_CONFIG, WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,10 +78,6 @@ typedef enum _WDF_TRI_STATE {
 </dl>
 
 ## -remarks
-<p>The WDF_TRI_STATE enumeration type is available in version 1.0 and later versions of KMDF.</p>
-
-<p>The WDF_TRI_STATE enumeration type is available in version 1.0 and later versions of KMDF.</p>
-
 <p>The WDF_TRI_STATE enumeration type is available in version 1.0 and later versions of KMDF.</p>
 
 ## -requirements

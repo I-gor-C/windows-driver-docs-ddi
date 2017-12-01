@@ -113,30 +113,6 @@ NTSTATUS CLIENT_PrepareController(
 
 <p>The GPIO_CLIENT_PREPARE_CONTROLLER function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_PREPARE_CONTROLLER function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
 
-<p>This callback function is implemented by the GPIO controller driver. The GPIO framework extension (GpioClx) calls this function to initialize the hardware resources that the GPIO controller driver needs so that it can access the GPIO controller device.</p>
-
-<p>The <i>ResourcesRaw</i> and <i>ResourcesTranslated</i> parameters are handles to lists of raw and translated resources. These lists describe hardware resources that the PnP manager has assigned to the GPIO controller device that is specified by the <i>Device</i> parameter. For more information, see <a href="kmdf.raw_and_translated_resources">Raw and Translated Resources</a>.</p>
-
-<p>During the <i>CLIENT_PrepareController</i> callback, the GPIO controller driver can acquire the hardware resources that it requires from the <i>ResourcesRaw</i> or <i>ResourcesTranslated</i> list. If the GPIO controller device is memory-mapped, the driver should map the bus-relative memory address range or ranges that are assigned to the device's hardware registers to system virtual addresses. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554399">Mapping Bus-Relative Addresses to Virtual Addresses</a>.</p>
-
-<p>If the GPIO controller is not memory-mapped, the driver's hardware resources contain a connection ID instead of a memory range. The driver uses this ID to open a logical connection to the GPIO controller, and sends I/O requests through this connection to access the controller's registers.</p>
-
-<p>GpioClx connects to (and later disconnects from) any interrupt resource that the PnP manager assigns to the GPIO controller. If GpioClx receives such an interrupt resource, it does not remove this interrupt resource from the resource lists that it passes to the <i>CLIENT_PrepareController</i> callback function. However, the GPIO controller driver should not try to connect to (or later disconnect from) any interrupt resource that it finds in these lists.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439411">CLIENT_ReleaseController</a> event callback function performs operations that are needed when the GPIO controller device is no longer accessible. During this callback, the GPIO controller driver should release any hardware resources that it acquired during the previous <i>CLIENT_PrepareController</i> callback.</p>
-
-<p>To register your driver's <i>CLIENT_PrepareController</i> callback function, call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a> method. This method accepts, as an input parameter, a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439479">GPIO_CLIENT_REGISTRATION_PACKET</a> structure that contains a <i>CLIENT_PrepareController</i> function pointer.</p>
-
-<p>Although the <i>CLIENT_PrepareController</i> callback function is called at IRQL = PASSIVE_LEVEL, you should not make this function pageable. The <i>CLIENT_PrepareController</i> callback is in the critical timing path for restoring power to the devices in the hardware platform and, for performance reasons, it should not be delayed by page faults.</p>
-
-<p>To define a <i>CLIENT_PrepareController</i> callback function, you must first provide a function declaration that identifies the type of callback function you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define a <i>CLIENT_PrepareController</i> callback function that is named <code>MyEvtGpioPrepareController</code>, use the GPIO_CLIENT_PREPARE_CONTROLLER function type, as shown in this code example:</p>
-
-<p>Then, implement your callback function as follows:</p>
-
-<p>The GPIO_CLIENT_PREPARE_CONTROLLER function type is defined in the Gpioclx.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the GPIO_CLIENT_PREPARE_CONTROLLER function type in the header file are used. For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For more information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=286697">Annotating Function Behavior</a>.</p>
-
 ## -requirements
 <table>
 <tr>

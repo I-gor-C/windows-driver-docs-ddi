@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The WINBIO_GET_INDICATOR structure is the OUT payload for <a href="https://msdn.microsoft.com/library/windows/hardware/ff536433">IOCTL_BIOMETRIC_GET_INDICATOR</a>.</p>
+<p>The WINBIO_GET_INDICATOR structure is the OUT payload for <a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-get-indicator.md">IOCTL_BIOMETRIC_GET_INDICATOR</a>.</p>
 
 
 ## -syntax
@@ -66,7 +66,7 @@ typedef struct _WINBIO_GET_INDICATOR {
 ### -field <b>WinBioHresult</b>
 
 <dd>
-<p>Specifies an HRESULT that contains the status of the I/O operation. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff536433">IOCTL_BIOMETRIC_GET_INDICATOR</a> for possible values.</p>
+<p>Specifies an HRESULT that contains the status of the I/O operation. See <a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-get-indicator.md">IOCTL_BIOMETRIC_GET_INDICATOR</a> for possible values.</p>
 </dd>
 
 ### -field <b>IndicatorStatus</b>
@@ -132,10 +132,10 @@ typedef struct _WINBIO_GET_INDICATOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536477">WINBIO_SET_INDICATOR</a>
+<a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-set-indicator.md">WINBIO_SET_INDICATOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536433">IOCTL_BIOMETRIC_GET_INDICATOR</a>
+<a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-get-indicator.md">IOCTL_BIOMETRIC_GET_INDICATOR</a>
 </dt>
 </dl>
 <p> </p>

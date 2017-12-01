@@ -117,7 +117,7 @@ typedef struct _DXGK_OPENALLOCATIONFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557609">DXGKARG_OPENALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-openallocation.md">DXGKARG_OPENALLOCATION</a>
 </dt>
 </dl>
 <p> </p>

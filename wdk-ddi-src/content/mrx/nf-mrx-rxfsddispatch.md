@@ -98,22 +98,6 @@ NTSTATUS RxFsdDispatch(
 
 <p>A few IRPs are treated as special and handled internally by RDBSS. For example, the IRP_MJ_SYSTEM_CONTROL is used internally if WMI is enabled. IRP_MJ_CREATE_MAILSLOT or IRP_MJ_CREATE_NAMED_PIPE requests are treated specially and rejected (a STATUS_OBJECT_NAME_INVALID error is returned). </p>
 
-<p><b>RxFsdDispatch</b> is called by RDBSS to process an I/O request packet (IRP). These IRPs are normally received by RDBSS in response to a user-mode application requesting operations on a file. It is also possible for another kernel driver to issue such an IRP. </p>
-
-<p>A pointer to <b>RxFsdDispatch</b> routine is copied over the driver dispatch table for a network mini-redirector driver when the <b>RxDriverEntry</b> routine is called to initialize RDBSS. </p>
-
-<p>Internally, RDBSS maintains two dispatch vectors:</p>
-
-<p>A common dispatch vector for most operations.</p>
-
-<p>A private dispatch vector for file device FCB operations.</p>
-
-<p>If the IRP is an IRP_MJ_CREATE request, then <b>RxFsdDispatch</b> will use a common dispatch vector. If the IRP is for an operation on an FCB of a file object, <b>RxFsdDispatch</b> will check if a private dispatch vector should be used. Otherwise a common dispatch vector will be used to process the IRP. </p>
-
-<p><b>RxFsdDispatch</b> calls internal routines to process the standard IRPs most of which result in a call to one of the callback routines implemented by the network mini-redirector driver. </p>
-
-<p>A few IRPs are treated as special and handled internally by RDBSS. For example, the IRP_MJ_SYSTEM_CONTROL is used internally if WMI is enabled. IRP_MJ_CREATE_MAILSLOT or IRP_MJ_CREATE_NAMED_PIPE requests are treated specially and rejected (a STATUS_OBJECT_NAME_INVALID error is returned). </p>
-
 ## -requirements
 <table>
 <tr>
@@ -149,7 +133,7 @@ NTSTATUS RxFsdDispatch(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554404">RxDriverEntry</a>
+<a href="..\rxprocs\nf-rxprocs-rxdriverentry.md">RxDriverEntry</a>
 </dt>
 </dl>
 <p> </p>

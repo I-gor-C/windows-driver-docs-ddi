@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -66,8 +65,6 @@ ULONG AtaPortConvertPhysicalAddressToUlong(
 <p><b>AtaPortConvertPhysicalAddressToUlong</b> returns the lower order part of the given IDE_PHYSICAL_ADDRESS value. </p>
 
 ## -remarks
-<p>A miniport driver must not use this routine to truncate a 64-bit physical address. </p>
-
 <p>A miniport driver must not use this routine to truncate a 64-bit physical address. </p>
 
 ## -requirements
@@ -108,7 +105,7 @@ ULONG AtaPortConvertPhysicalAddressToUlong(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550151">AtaPortConvertUlongToPhysicalAddress</a>
+<a href="..\irb\nf-irb-ataportconvertulongtophysicaladdress.md">AtaPortConvertUlongToPhysicalAddress</a>
 </dt>
 </dl>
 <p> </p>

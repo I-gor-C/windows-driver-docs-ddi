@@ -7,7 +7,7 @@ old-location: netvista\fwps_incoming_metadata_values0.htm
 old-project: netvista
 ms.assetid: fba7eb60-0d19-4bfd-b484-2e615d3e9237
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FWPS_INCOMING_METADATA_VALUES0_, FWPS_INCOMING_METADATA_VALUES0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The <b>FWPS_INCOMING_METADATA_VALUES0</b> structure defines metadata values that the filter engine passes to
   a callout's 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function.</p>
+  <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function.</p>
 
 
 ## -syntax
@@ -134,7 +134,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 
 <dd>
 <p>An 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551235">FWPS_DISCARD_METADATA0</a> structure
+     <a href="netvista.fwps_discard_metadata0">FWPS_DISCARD_METADATA0</a> structure
      that describes the reason why the data was discarded. This member contains valid data only if the
      FWPS_METADATA_FIELD_DISCARD_REASON flag is set in the 
      <b>currentMetadataValues</b> member.</p>
@@ -232,7 +232,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552427">FWP_BYTE_BLOB</a> structure that contains the
+     <a href="netvista.fwp_byte_blob">FWP_BYTE_BLOB</a> structure that contains the
      full path to the process that owns the endpoint. This member contains valid data only if the
      FWPS_METADATA_FIELD_PROCESS_PATH flag is set in the 
      <b>currentMetadataValues</b> member.</p>
@@ -332,7 +332,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
      FWPS_METADATA_FIELD_TRANSPORT_CONTROL_DATA flag is set in the 
      <b>currentMetadataValues</b> member. For information about the WSACMSGHDR type,
      see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>.</p>
+     <a href="netvista.cmsghdr">CMSGHDR</a>.</p>
 </dd>
 
 ### -field <b>controlDataLength</b>
@@ -347,7 +347,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <dd>
 <p>The direction of network traffic (inbound or outbound) as specified by one of the constant values of
       
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff552433">FWP_DIRECTION</a>. This member is set at the
+      <a href="netvista.fwp_direction">FWP_DIRECTION</a>. This member is set at the
       application layer enforcement (ALE) connect or receive/accept layers during a reauthorization classify
       operation. For more information, see the Remarks section.</p>
 <div class="alert"><b>Note</b>  This member contains valid data only if the FWPS_METADATA_FIELD_PACKET_DIRECTION
@@ -434,7 +434,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 ### -field <b>redirectRecords</b>
 
 <dd>
-<p>A redirect records handle that can be passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439677">FwpsQueryConnectionRedirectState0</a> function to get the redirect state. </p>
+<p>A redirect records handle that can be passed to the <a href="..\fwpsk\nf-fwpsk-fwpsqueryconnectionredirectstate0.md">FwpsQueryConnectionRedirectState0</a> function to get the redirect state. </p>
 <div class="alert"><b>Note</b>  Available only in <i>Windows 8</i> and later versions of Windows.</div>
 <div> </div>
 </dd>
@@ -586,7 +586,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 ### -field <b>wiFiOperationMode</b>
 
 <dd>
-<p>The  current Native 802.11  operation mode  if the FWPS_L2_METADATA_FIELD_802_11_OPERATION_MODE flag is set. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547678">DOT11_CURRENT_OPERATION_MODE</a>.
+<p>The  current Native 802.11  operation mode  if the FWPS_L2_METADATA_FIELD_802_11_OPERATION_MODE flag is set. For more information, see <a href="..\windot11\ns-windot11--dot11-current-operation-mode.md">DOT11_CURRENT_OPERATION_MODE</a>.
      </p>
 <div class="alert"><b>Note</b>  Available only in <i>Windows 8</i> and later versions of Windows.</div>
 <div> </div>
@@ -675,7 +675,7 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 
 ## -remarks
 <p>The filter engine passes a pointer to an FWPS_INCOMING_METADATA_VALUES0 structure to a callout's 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function. The metadata
+    <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function. The metadata
     values contained in the structure are not processed by the filter engine but are supplied to a callout's 
     <i>classifyFn</i> callout function to provide
     additional information.</p>
@@ -683,18 +683,9 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 <p>A callout driver can use the following macro to test if a specific metadata value is present in an
     FWPS_INCOMING_METADATA_VALUES0 structure:</p>
 
-<p></p><dl>
-<dt><a id="metadataValues"></a><a id="metadatavalues"></a><a id="METADATAVALUES"></a><b>metadataValues</b></dt>
-<dd>
+<p></p>
+
 <p>A pointer to an FWPS_INCOMING_METADATA_VALUES0 structure.</p>
-</dd>
-<dt><a id="metadataField"></a><a id="metadatafield"></a><a id="METADATAFIELD"></a><b>metadataField</b></dt>
-<dd>
-<p>The metadata field identifier for the metadata value being tested. See 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff559186">Metadata Field Identifiers</a> for a
-      list of the metadata field identifiers.</p>
-</dd>
-</dl><p>A pointer to an FWPS_INCOMING_METADATA_VALUES0 structure.</p>
 
 <p>The metadata field identifier for the metadata value being tested. See 
       <a href="https://msdn.microsoft.com/library/windows/hardware/ff559186">Metadata Field Identifiers</a> for a
@@ -733,31 +724,31 @@ typedef struct FWPS_INCOMING_METADATA_VALUES0_ {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+<a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
+<a href="netvista.cmsghdr">CMSGHDR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552427">FWP_BYTE_BLOB</a>
+<a href="netvista.fwp_byte_blob">FWP_BYTE_BLOB</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552433">FWP_DIRECTION</a>
+<a href="netvista.fwp_direction">FWP_DIRECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551235">FWPS_DISCARD_METADATA0</a>
+<a href="netvista.fwps_discard_metadata0">FWPS_DISCARD_METADATA0</a>
 </dt>
 <dt>
 <a href="netvista.fwps_inbound_fragment_metadata0">
    FWPS_INBOUND_FRAGMENT_METADATA0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439677">FwpsQueryConnectionRedirectState0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsqueryconnectionredirectstate0.md">FwpsQueryConnectionRedirectState0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_INCOMING_METADATA_VALUES0 structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_INCOMING_METADATA_VALUES0 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Contains the information of a top-level-collection. This structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt740164">HidP_GetCollectionDescription</a> call.</p>
+<p>Contains the information of a top-level-collection. This structure is used in the <a href="..\hidpddi\nf-hidpddi-hidp-getcollectiondescription.md">HidP_GetCollectionDescription</a> call.</p>
 
 
 ## -syntax
@@ -137,7 +137,7 @@ typedef struct _HIDP_COLLECTION_DESC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt740164">HidP_GetCollectionDescription</a>
+<a href="..\hidpddi\nf-hidpddi-hidp-getcollectiondescription.md">HidP_GetCollectionDescription</a>
 </dt>
 </dl>
 <p> </p>

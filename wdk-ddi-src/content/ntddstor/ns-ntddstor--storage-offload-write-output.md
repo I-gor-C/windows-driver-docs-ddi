@@ -39,8 +39,8 @@ req.iface:
 
 
 ## -description
-<p>The <b>STORAGE_OFFLOAD_WRITE_OUTPUT</b> structure is the output of  an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> control code request when the <b>Action</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552527">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> is set to <b>DeviceDsmAction_OffloadWrite</b>.</p>
-<p>On input, a token value in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439644">DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</a> uniquely identifies the data set ranges requested for writing in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552527">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> structure. The <b>STORAGE_OFFLOAD_WRITE_OUTPUT</b> structure contains the results of the write operation.</p>
+<p>The <b>STORAGE_OFFLOAD_WRITE_OUTPUT</b> structure is the output of  an <a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> control code request when the <b>Action</b> member of <a href="..\ntddstor\ns-ntddstor--device-manage-data-set-attributes.md">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> is set to <b>DeviceDsmAction_OffloadWrite</b>.</p>
+<p>On input, a token value in <a href="..\ntddstor\ns-ntddstor--device-dsm-offload-write-parameters.md">DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</a> uniquely identifies the data set ranges requested for writing in the <a href="..\ntddstor\ns-ntddstor--device-manage-data-set-attributes.md">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> structure. The <b>STORAGE_OFFLOAD_WRITE_OUTPUT</b> structure contains the results of the write operation.</p>
 
 
 ## -syntax
@@ -101,7 +101,7 @@ typedef struct _STORAGE_OFFLOAD_WRITE_OUTPUT {
 ### -field <b>LengthCopied</b>
 
 <dd>
-<p>Bytes copied for the write request in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439644">DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</a>.</p>
+<p>Bytes copied for the write request in <a href="..\ntddstor\ns-ntddstor--device-dsm-offload-write-parameters.md">DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</a>.</p>
 </dd>
 </dl>
 
@@ -133,13 +133,13 @@ typedef struct _STORAGE_OFFLOAD_WRITE_OUTPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439644">DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</a>
+<a href="..\ntddstor\ns-ntddstor--device-dsm-offload-write-parameters.md">DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552527">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a>
+<a href="..\ntddstor\ns-ntddstor--device-manage-data-set-attributes.md">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560573">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-manage-data-set-attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a>
 </dt>
 </dl>
 <p> </p>

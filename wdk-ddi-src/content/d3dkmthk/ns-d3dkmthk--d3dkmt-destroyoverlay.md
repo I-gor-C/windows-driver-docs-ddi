@@ -96,7 +96,7 @@ typedef struct _D3DKMT_DESTROYOVERLAY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546925">D3DKMTDestroyOverlay</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroyoverlay.md">D3DKMTDestroyOverlay</a>
 </dt>
 </dl>
 <p> </p>

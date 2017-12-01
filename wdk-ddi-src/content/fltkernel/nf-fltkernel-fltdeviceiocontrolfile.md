@@ -116,8 +116,6 @@ NTSTATUS FltDeviceIoControlFile(
 ## -remarks
 <p>For more information about the system-defined IOCTL_<i>XXX</i> codes, see the Remarks section of the reference entry for <b>DeviceIoControl</b> in the Microsoft Windows SDK documentation. </p>
 
-<p>For more information about the system-defined IOCTL_<i>XXX</i> codes, see the Remarks section of the reference entry for <b>DeviceIoControl</b> in the Microsoft Windows SDK documentation. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -163,7 +161,7 @@ NTSTATUS FltDeviceIoControlFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542988">FltFsControlFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltfscontrolfile.md">FltFsControlFile</a>
 </dt>
 </dl>
 <p> </p>

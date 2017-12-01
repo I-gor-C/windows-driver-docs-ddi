@@ -81,10 +81,10 @@ typedef struct _PAR_DEVICE_ID_SIZE_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544076">IOCTL_PAR_QUERY_DEVICE_ID</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl-par-query-device-id.md">IOCTL_PAR_QUERY_DEVICE_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544080">IOCTL_PAR_QUERY_DEVICE_ID_SIZE</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl-par-query-device-id-size.md">IOCTL_PAR_QUERY_DEVICE_ID_SIZE</a>
 </dt>
 </dl>
 <p> </p>

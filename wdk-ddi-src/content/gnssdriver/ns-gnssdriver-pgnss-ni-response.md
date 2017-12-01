@@ -7,7 +7,7 @@ old-location: sensors\gnss_ni_response.htm
 old-project: sensors
 ms.assetid: D2F7C90E-BAF4-419D-94CF-5FC39E7B6A58
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_NI_RESPONSE, GNSS_NI_RESPONSE, *PGNSS_NI_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices

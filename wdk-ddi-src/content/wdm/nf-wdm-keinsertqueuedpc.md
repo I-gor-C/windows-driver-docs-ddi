@@ -7,7 +7,7 @@ old-location: kernel\keinsertqueuedpc.htm
 old-project: kernel
 ms.assetid: f1fc6880-23d1-4154-9305-4a918efd4a1d
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: KeInsertQueueDpc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,19 +60,19 @@ BOOLEAN KeInsertQueueDpc(
 ### -param <i>Dpc</i> [in, out]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure for the DPC object. This structure must have been initialized by either <a href="https://msdn.microsoft.com/library/windows/hardware/ff552130">KeInitializeDpc</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552166">KeInitializeThreadedDpc</a>.</p>
+<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure for the DPC object. This structure must have been initialized by either <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a> or <a href="..\wdm\nf-wdm-keinitializethreadeddpc.md">KeInitializeThreadedDpc</a>.</p>
 </dd>
 
 ### -param <i>SystemArgument1</i> [in, optional]
 
 <dd>
-<p>Specifies driver-determined context data. This value is passed as the <i>SystemArgument1</i> parameter to the DPC object's <a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff542976">CustomThreadedDpc</a> routine. </p>
+<p>Specifies driver-determined context data. This value is passed as the <i>SystemArgument1</i> parameter to the DPC object's <a href="kernel.customdpc">CustomDpc</a> or <a href="kernel.customthreadeddpc">CustomThreadedDpc</a> routine. </p>
 </dd>
 
 ### -param <i>SystemArgument2</i> [in, optional]
 
 <dd>
-<p>Specifies driver-determined context data. This value is passed as the <i>SystemArgument2</i> parameter to the DPC object's <a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff542976">CustomThreadedDpc</a> routine. </p>
+<p>Specifies driver-determined context data. This value is passed as the <i>SystemArgument2</i> parameter to the DPC object's <a href="kernel.customdpc">CustomDpc</a> or <a href="kernel.customthreadeddpc">CustomThreadedDpc</a> routine. </p>
 </dd>
 </dl>
 
@@ -80,10 +80,6 @@ BOOLEAN KeInsertQueueDpc(
 <p>If the specified DPC object is not currently in a DPC queue, <b>KeInsertQueueDpc</b> queues the DPC and returns <b>TRUE</b>.</p>
 
 ## -remarks
-<p>If the specified DPC object has already been queued, no operation is performed except to return <b>FALSE</b>. Otherwise, the DPC object is inserted in a DPC queue. For more information about DPC queues, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558754">Organization of DPC Queues</a>.</p>
-
-<p>Note that a particular DPC object and the function that it represents can each be queued for execution only once at any particular time. </p>
-
 <p>If the specified DPC object has already been queued, no operation is performed except to return <b>FALSE</b>. Otherwise, the DPC object is inserted in a DPC queue. For more information about DPC queues, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558754">Organization of DPC Queues</a>.</p>
 
 <p>Note that a particular DPC object and the function that it represents can each be queued for execution only once at any particular time. </p>
@@ -151,7 +147,7 @@ BOOLEAN KeInsertQueueDpc(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549016">MarkingQueuedIrps</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_markingqueuedirps">MarkingQueuedIrps</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -159,18 +155,18 @@ BOOLEAN KeInsertQueueDpc(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a>
+<a href="kernel.customdpc">CustomDpc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542976">CustomThreadedDpc</a>
+<a href="kernel.customthreadeddpc">CustomThreadedDpc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552130">KeInitializeDpc</a>
+<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553169">KeRemoveQueueDpc</a>
+<a href="..\wdm\nf-wdm-keremovequeuedpc.md">KeRemoveQueueDpc</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeInsertQueueDpc routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeInsertQueueDpc routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

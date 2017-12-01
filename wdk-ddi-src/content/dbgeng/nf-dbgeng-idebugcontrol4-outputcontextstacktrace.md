@@ -7,7 +7,7 @@ old-location: debugger\outputcontextstacktrace.htm
 old-project: debugger
 ms.assetid: da3d19ab-258d-4214-8674-b35fec06534b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl4, OutputContextStackTrace, IDebugControl4::OutputContextStackTrace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ HRESULT OutputContextStackTrace(
 ### -param <i>OutputControl</i> [in]
 
 <dd>
-<p>Specifies where to send the output.  For possible values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.</p>
+<p>Specifies where to send the output.  For possible values, see <a href="debugger.debug_outctl_xxx">DEBUG_OUTCTL_XXX</a>.</p>
 </dd>
 
 ### -param <i>Frames</i> [in]
@@ -206,9 +206,7 @@ HRESULT OutputContextStackTrace(
 <p> </p>
 
 ## -remarks
-<p>The array of stack frames can be obtained using <a href="https://msdn.microsoft.com/library/windows/hardware/ff545748">GetContextStackTrace</a>.</p>
-
-<p>The array of stack frames can be obtained using <a href="https://msdn.microsoft.com/library/windows/hardware/ff545748">GetContextStackTrace</a>.</p>
+<p>The array of stack frames can be obtained using <a href="debugger.getcontextstacktrace">GetContextStackTrace</a>.</p>
 
 ## -requirements
 <table>
@@ -237,18 +235,18 @@ HRESULT OutputContextStackTrace(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545748">GetContextStackTrace</a>
+<a href="debugger.getcontextstacktrace">GetContextStackTrace</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/1061015f-cb0c-490b-b256-e0dedb659f22">k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553252">OutputStackTrace</a>
+<a href="debugger.outputstacktrace">OutputStackTrace</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::OutputContextStackTrace method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::OutputContextStackTrace method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

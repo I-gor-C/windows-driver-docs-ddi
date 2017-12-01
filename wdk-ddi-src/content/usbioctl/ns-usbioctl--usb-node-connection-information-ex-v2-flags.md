@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>The <b>USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS</b> union is used to indicate the speed at which a USB 3.0  device is currently operating and whether it can operate at higher speed, when attached to a particular port. </p>
-<p>Device speed information is obtained in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406295">USB_NODE_CONNECTION_INFORMATION_EX_V2</a> structure by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450861">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a> I/O control request.</p>
+<p>Device speed information is obtained in the <a href="..\usbioctl\ns-usbioctl--usb-node-connection-information-ex-v2.md">USB_NODE_CONNECTION_INFORMATION_EX_V2</a> structure by the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-information-ex-v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a> I/O control request.</p>
 <p>Or: the speed in which a device attached to a port is currently operating and at what speeds it is capable of operating.</p>
 
 
@@ -123,10 +123,10 @@ typedef union _USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406264">USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS</a>
+<a href="..\usbioctl\ns-usbioctl--usb-node-connection-information-ex-v2-flags.md">USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450861">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-information-ex-v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
 </dt>
 </dl>
 <p> </p>

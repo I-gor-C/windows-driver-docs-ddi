@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>BAND_MANAGEMENT_CAPABILITIES</b> structure contains the security capabilities available for a storage device. This structure is returned in the system buffer by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451390">IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES</a> request.</p>
+<p>The <b>BAND_MANAGEMENT_CAPABILITIES</b> structure contains the security capabilities available for a storage device. This structure is returned in the system buffer by the <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-query-capabilities.md">IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES</a> request.</p>
 
 
 ## -syntax
@@ -191,7 +191,7 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 </dl>
 
 ## -remarks
-<p>If <b>CAPS_ACTIVATED</b> is not set in <b>Capabilities</b>, security functionality can be activated with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451367">IOCTL_EHSTOR_BANDMGMT_ACTIVATE</a> request.</p>
+<p>If <b>CAPS_ACTIVATED</b> is not set in <b>Capabilities</b>, security functionality can be activated with the <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-activate.md">IOCTL_EHSTOR_BANDMGMT_ACTIVATE</a> request.</p>
 
 ## -requirements
 <table>
@@ -218,10 +218,10 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451367">IOCTL_EHSTOR_BANDMGMT_ACTIVATE</a>
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-activate.md">IOCTL_EHSTOR_BANDMGMT_ACTIVATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451390">IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES</a>
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl-ehstor-bandmgmt-query-capabilities.md">IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES</a>
 </dt>
 </dl>
 <p> </p>

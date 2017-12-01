@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The STREAMING_CONTROL_REQUEST_TYPE enumeration defines the CDROM streaming modes. This enumeration is a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/gg441238">CDROM_STREAMING_CONTROL</a> structure, the input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/gg441241">IOCTL_CDROM_ENABLE_STREAMING</a> I/O control code, which is used to enable or disable CDROM streaming. </p>
+<p>The STREAMING_CONTROL_REQUEST_TYPE enumeration defines the CDROM streaming modes. This enumeration is a member of the <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-streaming-control.md">CDROM_STREAMING_CONTROL</a> structure, the input parameter to the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-enable-streaming.md">IOCTL_CDROM_ENABLE_STREAMING</a> I/O control code, which is used to enable or disable CDROM streaming. </p>
 
 
 ## -syntax
@@ -102,10 +102,10 @@ typedef enum _STREAMING_CONTROL_REQUEST_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441238">CDROM_STREAMING_CONTROL</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-streaming-control.md">CDROM_STREAMING_CONTROL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441241">IOCTL_CDROM_ENABLE_STREAMING</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-enable-streaming.md">IOCTL_CDROM_ENABLE_STREAMING</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: sensors\gnss_breadcrumbing_alert_data.htm
 old-project: sensors
 ms.assetid: 5B8C1264-336C-438F-89AC-82B6FCBAE931
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_BREADCRUMBING_ALERT_DATA, GNSS_BREADCRUMBING_ALERT_DATA, *PGNSS_BREADCRUMBING_ALERT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

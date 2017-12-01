@@ -7,7 +7,7 @@ old-location: stream\facecharacterization.htm
 old-project: stream
 ms.assetid: 8A8F6E06-DA09-4595-BF42-8B905453CCCA
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagFaceCharacterization, FaceCharacterization
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,7 +87,7 @@ typedef struct tagFaceCharacterization {
 
 <p>The facial expressions that can be detected are defined as follows:</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn927643">FaceCharacterizationBlobHeader</a> and <b>FaceCharacterization</b> structures only describe the blob format for the <b>MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS</b> attribute.  The metadata item structure for the face characterizations (<a href="https://msdn.microsoft.com/library/windows/hardware/dn925184">KSCAMERA_METADATA_ITEMHEADER</a> + face characterizations metadata payload) is up to driver and must be 8-byte aligned. </p>
+<p>The <a href="stream.facecharacterizationblobheader">FaceCharacterizationBlobHeader</a> and <b>FaceCharacterization</b> structures only describe the blob format for the <b>MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS</b> attribute.  The metadata item structure for the face characterizations (<a href="stream.kscamera_metadata_itemheader">KSCAMERA_METADATA_ITEMHEADER</a> + face characterizations metadata payload) is up to driver and must be 8-byte aligned. </p>
 
 ## -requirements
 <table>

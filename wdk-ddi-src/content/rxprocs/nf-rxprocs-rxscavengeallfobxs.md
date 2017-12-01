@@ -76,16 +76,6 @@ VOID RxScavengeAllFobxs(
 
 <p>The <b>NodeTypeCode</b> member of an FOBX structure is not RDBSS_NTC_FOBX.</p>
 
-<p>At cleanup, there are no more user handles associated with the file object. In such cases, the time window between close and cleanup is dictated by the additional references maintained by the memory manager and cache manager. RDBSS uses a scavenger process running on a separate thread to scavenge and purge unneeded FOBX and other structures.</p>
-
-<p>A network mini-redirectors might call <b>RxPurgeAllFobxs</b> and <b>RxScavengeAllFobsx</b> in response to a PnP power change event. </p>
-
-<p>The <b>RxScavengeAllFobxs</b> routine acquires the scavenger mutex, traverses the <b>FobxFinalizationList</b> member on the scavenger object, and inserts any entries found at the tail of the <b>ScavengerFinalizationList </b>member, and then releases the scavenger mutex. </p>
-
-<p>On checked builds, <b>RxScavengeAllFobxs</b> causes the system to ASSERT for the following condition:</p>
-
-<p>The <b>NodeTypeCode</b> member of an FOBX structure is not RDBSS_NTC_FOBX.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -121,13 +111,13 @@ VOID RxScavengeAllFobxs(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554673">RxPurgeAllFobxs</a>
+<a href="..\rxprocs\nf-rxprocs-rxpurgeallfobxs.md">RxPurgeAllFobxs</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554679">RxPurgeRelatedFobxs</a>
+<a href="..\scavengr\nf-scavengr-rxpurgerelatedfobxs.md">RxPurgeRelatedFobxs</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554713">RxScavengeFobxsForNetRoot</a>
+<a href="..\scavengr\nf-scavengr-rxscavengefobxsfornetroot.md">RxScavengeFobxsForNetRoot</a>
 </dt>
 </dl>
 <p> </p>

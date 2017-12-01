@@ -7,7 +7,7 @@ old-location: debugger\getbreakpointbyindex2.htm
 old-project: debugger
 ms.assetid: 3487addb-e196-4295-95fc-0590802e766a
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl4, GetBreakpointByIndex2, IDebugControl4::GetBreakpointByIndex2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ HRESULT GetBreakpointByIndex2(
 ### -param <i>Index</i> [in]
 
 <dd>
-<p>Specifies the zero-based index of the breakpoint to return.  This is specific to the current process.  The value of <i>Index</i> should be between zero and the total number of breakpoints minus one. The total number of breakpoints can be determined by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff547880">GetNumberBreakpoints</a>.</p>
+<p>Specifies the zero-based index of the breakpoint to return.  This is specific to the current process.  The value of <i>Index</i> should be between zero and the total number of breakpoints minus one. The total number of breakpoints can be determined by calling <a href="debugger.getnumberbreakpoints">GetNumberBreakpoints</a>.</p>
 </dd>
 
 ### -param <i>Bp</i> [out]
@@ -78,8 +78,6 @@ HRESULT GetBreakpointByIndex2(
 <p> </p>
 
 ## -remarks
-<p>The index and returned breakpoint are specific to the current process.  The same index will return a different breakpoint if the current process is changed.</p>
-
 <p>The index and returned breakpoint are specific to the current process.  The same index will return a different breakpoint if the current process is changed.</p>
 
 ## -requirements
@@ -109,12 +107,12 @@ HRESULT GetBreakpointByIndex2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547880">GetNumberBreakpoints</a>
+<a href="debugger.getnumberbreakpoints">GetNumberBreakpoints</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::GetBreakpointByIndex2 method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::GetBreakpointByIndex2 method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

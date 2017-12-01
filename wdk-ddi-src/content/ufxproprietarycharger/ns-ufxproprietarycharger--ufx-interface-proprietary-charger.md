@@ -68,25 +68,25 @@ typedef struct _UFX_INTERFACE_PROPRIETARY_CHARGER {
 ### -field <b>ProprietaryChargerDetect</b>
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187981">UFX_PROPRIETARY_CHARGER_DETECT</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="buses.ufx_proprietary_charger_detect">UFX_PROPRIETARY_CHARGER_DETECT</a> callback function.</p>
 </dd>
 
 ### -field <b>ProprietaryChargerSetProperty</b>
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187983">UFX_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="buses.ufx_proprietary_charger_set_property">UFX_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback function.</p>
 </dd>
 
 ### -field <b>ProprietaryChargerAbortOperation</b>
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187980">UFX_PROPRIETARY_CHARGER_ABORT_OPERATION</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="buses.ufx_proprietary_charger_abort_operation">UFX_PROPRIETARY_CHARGER_ABORT_OPERATION</a> callback function.</p>
 </dd>
 
 ### -field <b>ProprietaryChargerResetOperation</b>
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187982">UFX_PROPRIETARY_CHARGER_RESET_OPERATION</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="buses.ufx_proprietary_charger_reset_operation">UFX_PROPRIETARY_CHARGER_RESET_OPERATION</a> callback function.</p>
 </dd>
 </dl>
 

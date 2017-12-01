@@ -98,7 +98,7 @@ HRESULT OnDriverEvent(
 <a href="print.iprinterextensionevent_interface">IPrinterExtensionEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973207">IPrinterExtensionEventArgs</a>
+<a href="..\printerextension\nn-printerextension-iprinterextensioneventargs.md">IPrinterExtensionEventArgs</a>
 </dt>
 </dl>
 <p> </p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The MOUNTMGR_CREATE_POINT_INPUT structure is used by the mount manager to send a symbolic link name to a client that has requested symbolic link name by means of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560457">IOCTL_MOUNTMGR_CREATE_POINT</a> request. </p>
+<p>The MOUNTMGR_CREATE_POINT_INPUT structure is used by the mount manager to send a symbolic link name to a client that has requested symbolic link name by means of an <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-create-point.md">IOCTL_MOUNTMGR_CREATE_POINT</a> request. </p>
 
 
 ## -syntax
@@ -102,7 +102,7 @@ typedef struct _MOUNTMGR_CREATE_POINT_INPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560457">IOCTL_MOUNTMGR_CREATE_POINT</a>
+<a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-create-point.md">IOCTL_MOUNTMGR_CREATE_POINT</a>
 </dt>
 </dl>
 <p> </p>

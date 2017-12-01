@@ -685,6 +685,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [NtRecoverEnlistment function](..\wdm\nf-wdm-ntrecoverenlistment.md) | The ZwRecoverEnlistment routine initiates a recovery operation for the transaction that is associated with a specified enlistment. |
 | [NtRecoverResourceManager function](..\wdm\nf-wdm-ntrecoverresourcemanager.md) | The ZwRecoverResourceManager routine tries to recover the transaction that is associated with each enlistment of a specified resource manager object. |
 | [NtRecoverTransactionManager function](..\wdm\nf-wdm-ntrecovertransactionmanager.md) | The ZwRecoverTransactionManager routine reconstructs the state of the transaction manager object (including all transactions, enlistments, and resource managers) from the recovery information that is in the log stream. |
+| [NtRenameTransactionManager function](..\wdm\nf-wdm-ntrenametransactionmanager.md) | The NtRenameTransactionManager routine changes the identity of the transaction manager object that is stored in the CLFS log file stream contained in the log file name. |
 | [NtRollbackComplete function](..\wdm\nf-wdm-ntrollbackcomplete.md) | The ZwRollbackComplete routine notifies KTM that the calling resource manager has finished rolling back a transaction's data. |
 | [NtRollbackEnlistment function](..\wdm\nf-wdm-ntrollbackenlistment.md) | The ZwRollbackEnlistment routine rolls back the transaction that is associated with a specified enlistment. |
 | [NtRollbackTransaction function](..\wdm\nf-wdm-ntrollbacktransaction.md) | The ZwRollbackTransaction routine initiates a rollback operation for a specified transaction. |
@@ -1530,6 +1531,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [GET_D3COLD_CAPABILITY callback](..\wdm\nc-wdm-get-d3cold-capability.md) | The GetBusDriverD3ColdSupport routine enables the driver for a device to query whether the enumerating bus driver supports the D3cold device power state. |
 | [GET_D3COLD_LAST_TRANSITION_STATUS callback](..\wdm\nc-wdm-get-d3cold-last-transition-status.md) | The GetLastTransitionStatus routine enables the driver for a device to query whether the most recent transition to the D3hot substate was followed by a transition to the D3cold substate. |
 | [GET_IDLE_WAKE_INFO callback](..\wdm\nc-wdm-get-idle-wake-info.md) | The GetIdleWakeInfo routine enables the driver for a device to discover the device power states from which the device can signal a wake event. |
+| [GET_SET_DEVICE_DATA callback](..\wdm\nc-wdm-get-set-device-data.md) | The GetBusData routine reads data from the device's configuration space. |
 | [GET_VIRTUAL_DEVICE_DATA callback](..\wdm\nc-wdm-get-virtual-device-data.md) | The GetVirtualFunctionData routine reads data from the PCI Express (PCIe) configuration space of a virtual function (VF) on a device that supports the single root I/O virtualization (SR-IOV) interface. |
 | [GET_VIRTUAL_DEVICE_LOCATION callback](..\wdm\nc-wdm-get-virtual-device-location.md) | The GetLocation routine returns the device location of a PCI Express (PCIe) virtual function (VF) on a PCI bus. A device that supports the single root I/O virtualization (SR-IOV) interface can expose one or more VFs on the PCI bus. |
 | [GET_VIRTUAL_DEVICE_RESOURCES callback](..\wdm\nc-wdm-get-virtual-device-resources.md) | The GetResources routine returns the resources that the PCI Express (PCIe) physical function (PF) requires in order to enable virtualization on a device that supports the single root I/O virtualization (SR-IOV) interface. |
@@ -1576,6 +1578,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [PO_FX_POWER_CONTROL_CALLBACK callback](..\wdm\nc-wdm-po-fx-power-control-callback.md) | The PowerControlCallback callback routine performs a power control operation that is requested by the power management framework (PoFx). |
 | [PPO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK callback](..\pepfx\nc-pepfx-ppo-enumerate-interrupt-source-callback.md) | An EnumerateInterruptSource callback routine supplies a platform extension plug-in (PEP) with information about an interrupt source. |
 | [PREENUMERATE_SELF callback](..\wdm\nc-wdm-preenumerate-self.md) | A ReenumerateSelf routine requests that a bus driver reenumerate a child device. |
+| [PROCESSOR_HALT_ROUTINE callback](..\wdm\nc-wdm-processor-halt-routine.md) | A Halt callback routine transitions the processor to an idle state. |
 | [REQUEST_POWER_COMPLETE callback](..\wdm\nc-wdm-request-power-complete.md) | The PowerCompletion callback routine completes the processing of a power IRP. |
 | [RTL_QUERY_REGISTRY_ROUTINE callback](..\wdm\nc-wdm-rtl-query-registry-routine.md) | The QueryRoutine routine provides information about a registry value that was requested in a preceding call to the RtlQueryRegistryValues routine. |
 | [RTL_RUN_ONCE_INIT_FN callback](..\ntddk\nc-ntddk-rtl-run-once-init-fn.md) | The RunOnceInitialization routine performs a one-time initialization operation. |
@@ -1584,6 +1587,9 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [SILO_CONTEXT_CLEANUP_CALLBACK callback](..\ntddk\nc-ntddk-silo-context-cleanup-callback.md) | This callback is invoked when the context object reaches a reference count of zero. |
 | [SILO_MONITOR_CREATE_CALLBACK callback](..\ntddk\nc-ntddk-silo-monitor-create-callback.md) | This is callback is invoked when a new silo is created. |
 | [SILO_MONITOR_TERMINATE_CALLBACK callback](..\ntddk\nc-ntddk-silo-monitor-terminate-callback.md) | This callback is invoked when a silo is terminated. |
+| [TRANSLATE_BUS_ADDRESS callback](..\wdm\nc-wdm-translate-bus-address.md) | The TranslateBusAddress routine translates addresses on the parent bus to logical addresses. |
+| [VPCI_READ_BLOCK callback](..\vpci\nc-vpci-vpci-read-block.md) | The ReadVfConfigBlock routine reads a block of configuration data for a PCI Express (PCIe) virtual function (VF). This routine is called by the driver of a PCIe VF on a device that supports the single root I/O virtualization (SR-IOV) interface. |
+| [VPCI_WRITE_BLOCK callback](..\vpci\nc-vpci-vpci-write-block.md) | The WriteVfConfigBlock routine writes a block of configuration data for a PCI Express virtual function (VF). This routine is called by the driver of a PCIe VF on a device that supports the single root I/O virtualization (SR-IOV) interface. |
 
 ## Structures
 
@@ -1938,6 +1944,7 @@ For the programming guide, see [Windows kernel](https://docs.microsoft.com/en-us
 | [TRANSACTION_ENLISTMENT_PAIR structure](..\wdm\ns-wdm--transaction-enlistment-pair.md) | The TRANSACTION_ENLISTMENT_PAIR structure contains information about an enlistment that is associated with a transaction object. |
 | [TRANSACTION_PROPERTIES_INFORMATION structure](..\wdm\ns-wdm--transaction-properties-information.md) | The TRANSACTION_PROPERTIES_INFORMATION structure contains a transaction object's properties. |
 | [UNICODE_STRING structure](..\wudfwdm\ns-wudfwdm--unicode-string.md) | The UNICODE_STRING structure is used to define Unicode strings. |
+| [VPCI_INTERFACE_STANDARD structure](..\vpci\ns-vpci--vpci-interface-standard.md) | The VPCI_INTERFACE_STANDARD interface structure enables device drivers to access blocks of configuration data that is specific to a PCI Express (PCIe) virtual function (VF) of devices that support the single root I/O virtualization (SR-IOV) interface. |
 | [VPCI_INVALIDATE_BLOCK_OUTPUT structure](..\vpci\ns-vpci--vpci-invalidate-block-output.md) | The VPCI_INVALIDATE_BLOCK_OUTPUT structure is used in an IOCTL_VPCI_INVALIDATE_BLOCK IOCTL request. |
 | [VPCI_READ_BLOCK_INPUT structure](..\vpci\ns-vpci--vpci-read-block-input.md) | The VPCI_READ_BLOCK_INPUT structure is used in an IOCTL_VPCI_READ_BLOCK IOCTL request to read data from a specified configuration block of data for a PCI Express (PCIe) virtual function (VF). |
 | [VPCI_WRITE_BLOCK_INPUT structure](..\vpci\ns-vpci--vpci-write-block-input.md) | The VPCI_WRITE_BLOCK_INPUT structure is used in an IOCTL_VPCI_WRITE_BLOCK IOCTL request to write data to a specified configuration block for a PCI Express (PCIe) virtual function (VF). |

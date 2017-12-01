@@ -76,11 +76,7 @@ typedef enum  {
 </dl>
 
 ## -remarks
-<p>The IDE_POWER_STATE enumeration type is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550220">AtaPortRequestPowerStateChange</a> routine to request a power state transition for a device.</p>
-
-<p>The IDE_POWER_STATE enumeration type is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550220">AtaPortRequestPowerStateChange</a> routine to request a power state transition for a device.</p>
-
-<p>The IDE_POWER_STATE enumeration type is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550220">AtaPortRequestPowerStateChange</a> routine to request a power state transition for a device.</p>
+<p>The IDE_POWER_STATE enumeration type is used in conjunction with the <a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a> routine to request a power state transition for a device.</p>
 
 ## -requirements
 <table>
@@ -99,7 +95,7 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550220">AtaPortRequestPowerStateChange</a>
+<a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a>
 </dt>
 </dl>
 <p> </p>

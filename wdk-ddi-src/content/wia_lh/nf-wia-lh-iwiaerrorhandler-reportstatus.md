@@ -108,14 +108,6 @@ HRESULT ReportStatus(
 
 <p>If <i>hrStatus</i> is S_OK, the data transfer has resumed and no delay or error is currently in effect.</p>
 
-<p>The COM proxy callback object (described in the Windows SDK documentation) calls the <b>WiaErrorHandler::ReportStatus</b> method when the driver sends an IT_MSG_DEVICE_STATUS message to the <b>IWiaDataCallback::BandedDataCallback</b> method (described in the Windows SDK documentation). The dialog box that this method displays provides the user with error or status information and possibly gives an opportunity to recover from the error and continue the transfer. The UI should provide only an informational dialog box and a chance to cancel the transfer if the HRESULT is SEVERITY_SUCCESS.</p>
-
-<p>A driver that implements this method, should display a modal dialog box, owned by <i>hwndParent</i>, in response to a value of <i>hrStatus</i> for which <b>FAILED</b>(<i>hrStatus</i>) evaluates to <b>TRUE</b>. If <b>FAILED</b>(<i>hrStatus</i>) evaluates to <b>FALSE</b>, the value in <i>hrStatus</i> represents a nonfatal delay, and the dialog box displayed should be modeless. The dialog box should be removed when the status of the transfer changes. An error handler should return S_FALSE for unknown values of <i>hrStatus</i>.</p>
-
-<p>The <i>hrStatus</i> parameter is set to WIA_STATUS_TRANSFER_BEGIN to inform the handler that a transfer has started. It is set to WIA_STATUS_TRANSFER_END when the transfer is complete.</p>
-
-<p>If <i>hrStatus</i> is S_OK, the data transfer has resumed and no delay or error is currently in effect.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -151,7 +143,7 @@ HRESULT ReportStatus(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543904">IWiaErrorHandler::GetStatusDescription</a>
+<a href="image.iwiaerrorhandler_getstatusdescription">IWiaErrorHandler::GetStatusDescription</a>
 </dt>
 </dl>
 <p> </p>

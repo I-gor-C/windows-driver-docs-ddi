@@ -67,8 +67,6 @@ BOOLEAN PsIsThreadTerminating(
 ## -remarks
 <p>For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="kernel.driver_threads__dispatcher_objects__and_resources">Driver Threads, Dispatcher Objects, and Resources</a>. </p>
 
-<p>For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="kernel.driver_threads__dispatcher_objects__and_resources">Driver Threads, Dispatcher Objects, and Resources</a>. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -132,7 +130,7 @@ BOOLEAN PsIsThreadTerminating(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551902">PsGetProcessExitTime</a>
+<a href="..\ntifs\nf-ntifs-psgetprocessexittime.md">PsGetProcessExitTime</a>
 </dt>
 </dl>
 <p> </p>

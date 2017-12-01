@@ -72,7 +72,7 @@ typedef struct D3D11DDI_SHADER_CAPS {
 
 <dd>
 <p>The display device supports compute shaders as well as raw and structured buffers. The runtime can successfully call the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createcomputeshader.md">CreateComputeShader</a> function to create a compute shader and the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createshaderresourceview.md">CreateShaderResourceView(D3D11)</a> and <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createunorderedaccessview.md">CreateUnorderedAccessView</a> functions to create raw and structured buffers. </p>
-<p>Drivers that run the <a href="https://msdn.microsoft.com/7d724751-761e-409c-8398-d1b5d58c057c">Direct3D version 11 pipeline</a> (the D3D11DDI_3DPIPELINELEVEL_11_0 value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542126">D3D11DDI_3DPIPELINELEVEL</a> enumeration) and greater must report this shader capability.</p>
+<p>Drivers that run the <a href="https://msdn.microsoft.com/7d724751-761e-409c-8398-d1b5d58c057c">Direct3D version 11 pipeline</a> (the D3D11DDI_3DPIPELINELEVEL_11_0 value of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi-3dpipelinelevel.md">D3D11DDI_3DPIPELINELEVEL</a> enumeration) and greater must report this shader capability.</p>
 </dd>
 </dl>
 </dd>
@@ -115,7 +115,7 @@ typedef struct D3D11DDI_SHADER_CAPS {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createunorderedaccessview.md">CreateUnorderedAccessView</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541894">D3D10_2DDICAPS_TYPE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-2ddicaps-type.md">D3D10_2DDICAPS_TYPE</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10-2ddi-getcaps.md">GetCaps(D3D10_2)</a>

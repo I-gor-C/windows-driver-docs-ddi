@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The HBAFCPScsiEntry structure is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> method of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a> to define a binding between the operating system information that uniquely identifies a logical unit and the fibre channel protocol (FCP) identifier that identifies the logical unit.  </p>
+<p>The HBAFCPScsiEntry structure is used with <a href="storage.getfcptargetmapping">GetFcpTargetMapping</a> method of the <a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a> to define a binding between the operating system information that uniquely identifies a logical unit and the fibre channel protocol (FCP) identifier that identifies the logical unit.  </p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ typedef struct _HBAFCPScsiEntry {
 ### -field <b>FCPId</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556038">HBAFCPID</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.</p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpid.md">HBAFCPID</a> that contains the FCP identifier for the logical unit and information about the port to be queried for information about the device.</p>
 </dd>
 
 ### -field <b>Luid</b>
@@ -71,7 +71,7 @@ typedef struct _HBAFCPScsiEntry {
 ### -field <b>ScsiId</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556042">HBAScsiID</a> that contains the information that uniquely identifies a logical unit for the operating system. </p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbascsiid.md">HBAScsiID</a> that contains the information that uniquely identifies a logical unit for the operating system. </p>
 </dd>
 </dl>
 
@@ -95,7 +95,7 @@ typedef struct _HBAFCPScsiEntry {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a>
+<a href="storage.getfcptargetmapping">GetFcpTargetMapping</a>
 </dt>
 </dl>
 <p> </p>

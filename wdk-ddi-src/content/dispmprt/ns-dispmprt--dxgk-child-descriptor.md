@@ -60,13 +60,13 @@ typedef struct _DXGK_CHILD_DESCRIPTOR {
 ### -field <b>ChildDeviceType</b>
 
 <dd>
-<p>A member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561008">DXGK_CHILD_DEVICE_TYPE</a> enumeration that indicates the type of the child device.</p>
+<p>A member of the <a href="..\dispmprt\ne-dispmprt--dxgk-child-device-type.md">DXGK_CHILD_DEVICE_TYPE</a> enumeration that indicates the type of the child device.</p>
 </dd>
 
 ### -field <b>ChildCapabilities</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560995">DXGK_CHILD_CAPABILITIES</a> structure that describes the capabilities of the child device.</p>
+<p>A <a href="..\dispmprt\ns-dispmprt--dxgk-child-capabilities.md">DXGK_CHILD_CAPABILITIES</a> structure that describes the capabilities of the child device.</p>
 </dd>
 
 ### -field <b>AcpiUid</b>
@@ -112,10 +112,10 @@ typedef struct _DXGK_CHILD_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561008">DXGK_CHILD_DEVICE_TYPE</a>
+<a href="..\dispmprt\ne-dispmprt--dxgk-child-device-type.md">DXGK_CHILD_DEVICE_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560995">DXGK_CHILD_CAPABILITIES</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-child-capabilities.md">DXGK_CHILD_CAPABILITIES</a>
 </dt>
 <dt>
 <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a>

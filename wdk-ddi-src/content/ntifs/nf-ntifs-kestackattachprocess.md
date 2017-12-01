@@ -58,7 +58,7 @@ VOID KeStackAttachProcess(
 ### -param <i>Process</i> [in, out]
 
 <dd>
-<p>Pointer to the target process object. This parameter can be a PEPROCESS pointer returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff549177">IoGetCurrentProcess</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>. </p>
+<p>Pointer to the target process object. This parameter can be a PEPROCESS pointer returned by <a href="..\wdm\nf-wdm-iogetcurrentprocess.md">IoGetCurrentProcess</a> or <a href="kernel.psgetcurrentprocess">PsGetCurrentProcess</a>. </p>
 </dd>
 
 ### -param <i>ApcState</i> [out]
@@ -74,31 +74,14 @@ VOID KeStackAttachProcess(
 ## -remarks
 <p><b>KeStackAttachProcess</b> attaches the current thread to the address space of the process pointed to by the <i>Process</i> parameter. If the current thread was already attached to another process, the <i>ApcState</i> parameter receives the current APC state before <b>KeStackAttachProcess</b> attaches to the new process. </p>
 
-<p>Every call to <b>KeStackAttachProcess</b> must be matched by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549677">KeUnstackDetachProcess</a>. </p>
+<p>Every call to <b>KeStackAttachProcess</b> must be matched by a subsequent call to <a href="..\ntifs\nf-ntifs-keunstackdetachprocess.md">KeUnstackDetachProcess</a>. </p>
 
 <p>
 <div class="alert"><b>Note</b>  
      Attaching a thread to a different process can prevent asynchronous I/O operations from completing and can potentially cause deadlocks. In general, the lines of code between the call to 
      <b>KeStackAttachProcess</b>
       and the call to 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff549677">KeUnstackDetachProcess</a>
-      should be very simple and should not call complex routines or send IRPs to other drivers. 
-    </div>
-<div> </div>
-</p>
-
-<p>For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="kernel.driver_threads__dispatcher_objects__and_resources">Driver Threads, Dispatcher Objects, and Resources</a>. </p>
-
-<p><b>KeStackAttachProcess</b> attaches the current thread to the address space of the process pointed to by the <i>Process</i> parameter. If the current thread was already attached to another process, the <i>ApcState</i> parameter receives the current APC state before <b>KeStackAttachProcess</b> attaches to the new process. </p>
-
-<p>Every call to <b>KeStackAttachProcess</b> must be matched by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549677">KeUnstackDetachProcess</a>. </p>
-
-<p>
-<div class="alert"><b>Note</b>  
-     Attaching a thread to a different process can prevent asynchronous I/O operations from completing and can potentially cause deadlocks. In general, the lines of code between the call to 
-     <b>KeStackAttachProcess</b>
-      and the call to 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff549677">KeUnstackDetachProcess</a>
+     <a href="..\ntifs\nf-ntifs-keunstackdetachprocess.md">KeUnstackDetachProcess</a>
       should be very simple and should not call complex routines or send IRPs to other drivers. 
     </div>
 <div> </div>
@@ -169,28 +152,28 @@ VOID KeStackAttachProcess(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549177">IoGetCurrentProcess</a>
+<a href="..\wdm\nf-wdm-iogetcurrentprocess.md">IoGetCurrentProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548385">IoGetRequestorProcess</a>
+<a href="..\ntifs\nf-ntifs-iogetrequestorprocess.md">IoGetRequestorProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548549">IoThreadToProcess</a>
+<a href="..\ntifs\nf-ntifs-iothreadtoprocess.md">IoThreadToProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552054">KeGetCurrentIrql</a>
+<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552084">KeGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549677">KeUnstackDetachProcess</a>
+<a href="..\ntifs\nf-ntifs-keunstackdetachprocess.md">KeUnstackDetachProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
+<a href="kernel.psgetcurrentprocess">PsGetCurrentProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559936">PsGetCurrentThread</a>
+<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
 </dt>
 </dl>
 <p> </p>

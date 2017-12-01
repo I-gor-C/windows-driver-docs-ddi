@@ -7,7 +7,7 @@ old-location: audio\bthhfp_descriptor.htm
 old-project: audio
 ms.assetid: A3C1E53B-2E41-437A-8613-C43DCD4768B5
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: BTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR, *PBTHHFP_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The BTHHFP_DESCRIPTOR  data structure stores information describing a paired Handsfree profile (HFP) device.</p>
-<p>The HFP driver returns this data structure in the output buffer for the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265108">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a> request.</p>
+<p>The HFP driver returns this data structure in the output buffer for the <a href="..\bthhfpddi\ni-bthhfpddi-ioctl-bthhfp-device-get-descriptor.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a> request.</p>
 
 
 ## -syntax
@@ -87,7 +87,7 @@ typedef struct _BTHHFP_DESCRIPTOR {
 ### -field <b>VolumePropertyValuesSize</b>
 
 <dd>
-<p>If remote volume control is supported, this member contains the size of the data returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265113">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a> request.</p>
+<p>If remote volume control is supported, this member contains the size of the data returned by the <a href="..\bthhfpddi\ni-bthhfpddi-ioctl-bthhfp-device-get-volumepropertyvalues.md">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a> request.</p>
 </dd>
 
 ### -field <b>FriendlyName</b>
@@ -106,7 +106,7 @@ typedef struct _BTHHFP_DESCRIPTOR {
 
 <p>The audio driver uses the string returned in <i>FriendlyName</i> to set the DEVPKEY_DeviceInterface_FriendlyName property on the KS filter’s KSCATEGORY_AUDIO device interface. To do this, the audio driver calls IoSetDeviceInterfacePropertyData and sets the property type to DEVPROP_TYPE_STRING_INDIRECT. An example string is "@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0..;(SomeDeviceName)”. Note that this is an indirect string and therefore not necessarily the human readable string that is directly displayed in a user interface. The audio system uses this string to generate localized strings used for display to the user, such as in the Sounds control panel.</p>
 
-<p>For information about the IOCTLs that work with this structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>.</p>
+<p>For information about the IOCTLs that work with this structure, see <a href="audio.bluetooth_hfp_ddi_ioctls">Bluetooth HFP DDI IOCTLs</a>.</p>
 
 ## -requirements
 <table>
@@ -141,16 +141,16 @@ typedef struct _BTHHFP_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
+<a href="audio.bluetooth_hfp_ddi_ioctls">Bluetooth HFP DDI IOCTLs</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn302029">Bluetooth HFP DDI Structures</a>
+<a href="audio.bluetooth_hfp_ddi_structures">Bluetooth HFP DDI Structures</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265108">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a>
+<a href="..\bthhfpddi\ni-bthhfpddi-ioctl-bthhfp-device-get-descriptor.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265113">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a>
+<a href="..\bthhfpddi\ni-bthhfpddi-ioctl-bthhfp-device-get-volumepropertyvalues.md">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a>
 </dt>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff563533(v=vs.85).aspx">KSPIN_DESCRIPTOR.Category</a></dt>
 <dt>
@@ -159,4 +159,4 @@ typedef struct _BTHHFP_DESCRIPTOR {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20BTHHFP_DESCRIPTOR structure%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20BTHHFP_DESCRIPTOR structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallwaitinginfo_2.htm
 old-project: netvista
 ms.assetid: a634355a-c508-4f1b-9b8b-9325cb34cde0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCALLWAITINGINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

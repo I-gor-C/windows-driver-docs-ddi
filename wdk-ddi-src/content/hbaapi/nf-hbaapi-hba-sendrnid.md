@@ -61,7 +61,7 @@ HBA_STATUS HBA_API HBA_SendRNID(
 ### -param <i>HbaHandle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA that will route the command. The HBA routes this command to the appropriate fabric configuration server. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA that will route the command. The HBA routes this command to the appropriate fabric configuration server. </p>
 </dd>
 
 ### -param <i>Wwn</i> [in]
@@ -73,7 +73,7 @@ HBA_STATUS HBA_API HBA_SendRNID(
 ### -param <i>WwnType</i> [in]
 
 <dd>
-<p>Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557245">HBA_wwntype</a> that indicates whether the WWN specified by <i>Wwn </i>is a port or a node:</p>
+<p>Contains an enumerator value of type <a href="..\hbaapi\ne-hbaapi-hba-wwntype.md">HBA_wwntype</a> that indicates whether the WWN specified by <i>Wwn </i>is a port or a node:</p>
 </dd>
 
 ### -param <i>pRspBuffer</i> [out]
@@ -90,16 +90,12 @@ HBA_STATUS HBA_API HBA_SendRNID(
 </dl>
 
 ## -returns
-<p>The <b>HBA_SendRNID</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA.</p>
+<p>The <b>HBA_SendRNID</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA.</p>
 
 ## -remarks
 <p>The node identification data request is a common transport (CT) command that queries a fabric configuration server for node identification data. For a complete description of this command, see the sections dealing with node identification requests in the <i>Fibre Channel Generic Services - 4 (FC-GS-4)</i> specification published by the ANSI committee.</p>
 
-<p>The <b>HBA_SendRNID</b> library routine serves a purpose very similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a> WMI method. </p>
-
-<p>The node identification data request is a common transport (CT) command that queries a fabric configuration server for node identification data. For a complete description of this command, see the sections dealing with node identification requests in the <i>Fibre Channel Generic Services - 4 (FC-GS-4)</i> specification published by the ANSI committee.</p>
-
-<p>The <b>HBA_SendRNID</b> library routine serves a purpose very similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a> WMI method. </p>
+<p>The <b>HBA_SendRNID</b> library routine serves a purpose very similar to the <a href="storage.sendrnid">SendRNID</a> WMI method. </p>
 
 ## -requirements
 <table>
@@ -148,10 +144,10 @@ HBA_STATUS HBA_API HBA_SendRNID(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557216">HBA_SendRNID</a>
+<a href="..\hbaapi\nf-hbaapi-hba-sendrnid.md">HBA_SendRNID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a>
+<a href="storage.sendrnid">SendRNID</a>
 </dt>
 </dl>
 <p> </p>

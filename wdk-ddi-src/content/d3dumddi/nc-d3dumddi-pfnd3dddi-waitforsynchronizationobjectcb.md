@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnWaitForSynchronizationObjectCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544287">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT</a> structure that describes the synchronization objects and context DMA stream that are required to set up the wait. </p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-waitforsynchronizationobject.md">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT</a> structure that describes the synchronization objects and context DMA stream that are required to set up the wait. </p>
 </dd>
 </dl>
 
@@ -83,14 +83,6 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnWaitForSynchronizationObjectCb(
 <p>This function might also return other HRESULT values.</p>
 
 ## -remarks
-<p>
-<p><b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnWaitForSynchronizationObjectCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.</p>
-</p>
-
-<p><b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnWaitForSynchronizationObjectCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.</p>
-
-<p>For a code example of how to use the <b>pfnWaitForSynchronizationObjectCb</b> function, see <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-signalsynchronizationobjectcb.md">pfnSignalSynchronizationObjectCb</a>.</p>
-
 <p>
 <p><b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnWaitForSynchronizationObjectCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.</p>
 </p>
@@ -134,7 +126,7 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnWaitForSynchronizationObjectCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544287">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-waitforsynchronizationobject.md">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT</a>
 </dt>
 </dl>
 <p> </p>

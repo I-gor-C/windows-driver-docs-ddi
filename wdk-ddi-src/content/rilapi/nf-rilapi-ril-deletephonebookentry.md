@@ -7,7 +7,7 @@ old-location: netvista\ril_deletephonebookentry.htm
 old-project: netvista
 ms.assetid: 110c542a-c98a-450d-b943-d8449dcac668
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_DeletePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

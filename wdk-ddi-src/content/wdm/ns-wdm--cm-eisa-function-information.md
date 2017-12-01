@@ -7,7 +7,7 @@ old-location: kernel\cm_eisa_function_information.htm
 old-project: kernel
 ms.assetid: 06034776-4faf-4918-b9ec-bc095455cf14
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: CM_EISA_FUNCTION_INFORMATION, CM_EISA_FUNCTION_INFORMATION, *PCM_EISA_FUNCTION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 ### -field <b>CompressedId</b>
 
 <dd>
-<p>The EISA compressed identification of the device at this slot. The value is identical to the <b>CompressedId</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541941">CM_EISA_SLOT_INFORMATION</a> structure.</p>
+<p>The EISA compressed identification of the device at this slot. The value is identical to the <b>CompressedId</b> member of the <a href="..\wdm\ns-wdm--cm-eisa-slot-information.md">CM_EISA_SLOT_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <b>IdSlotFlags1</b>
@@ -249,7 +249,7 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 </dl>
 
 ## -remarks
-<p>The information returned by <b>HalGetBusData</b> or <b>HalGetBusDataByOffset</b> in <b>CM_EISA_FUNCTION_INFORMATION</b> and/or in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541941">CM_EISA_SLOT_INFORMATION</a> header immediately preceding it is read-only.</p>
+<p>The information returned by <b>HalGetBusData</b> or <b>HalGetBusDataByOffset</b> in <b>CM_EISA_FUNCTION_INFORMATION</b> and/or in the <a href="..\wdm\ns-wdm--cm-eisa-slot-information.md">CM_EISA_SLOT_INFORMATION</a> header immediately preceding it is read-only.</p>
 
 ## -requirements
 <table>
@@ -268,7 +268,7 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541941">CM_EISA_SLOT_INFORMATION</a>
+<a href="..\wdm\ns-wdm--cm-eisa-slot-information.md">CM_EISA_SLOT_INFORMATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
@@ -279,4 +279,4 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_EISA_FUNCTION_INFORMATION structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_EISA_FUNCTION_INFORMATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

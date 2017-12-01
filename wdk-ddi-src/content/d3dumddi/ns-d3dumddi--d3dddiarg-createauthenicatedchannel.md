@@ -58,7 +58,7 @@ typedef struct _D3DDDIARG_CREATEAUTHENTICATEDCHANNEL {
 ### -field <b>ChannelType</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff549536">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the channel type to create. This member can be one of the following values.</p>
+<p>[in] A <a href="..\d3dumddi\ne-d3dumddi--ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the channel type to create. This member can be one of the following values.</p>
 <table>
 <tr>
 <th>Value</th>
@@ -122,7 +122,7 @@ typedef struct _D3DDDIARG_CREATEAUTHENTICATEDCHANNEL {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createauthenticatedchannel.md">CreateAuthenticatedChannel</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549536">DDIAUTHENTICATEDCHANNELTYPE</a>
+<a href="..\d3dumddi\ne-d3dumddi--ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>
 </dt>
 </dl>
 <p> </p>

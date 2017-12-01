@@ -58,7 +58,7 @@ typedef struct _DXGK_HISTORY_BUFFER {
 ### -field <b>Header</b>
 
 <dd>
-<p>A pointer to  a <a href="https://msdn.microsoft.com/library/windows/hardware/dn439362">DXGK_HISTORY_BUFFER_HEADER</a> structure that contains history buffer header info.</p>
+<p>A pointer to  a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-history-buffer-header.md">DXGK_HISTORY_BUFFER_HEADER</a> structure that contains history buffer header info.</p>
 </dd>
 
 ### -field <b>DriverPrivateData</b>
@@ -69,13 +69,13 @@ typedef struct _DXGK_HISTORY_BUFFER {
 </dl>
 
 ## -remarks
-<p>You can calculate the address of the first time stamp in the history buffer by adding the value of <a href="https://msdn.microsoft.com/library/windows/hardware/dn439362">DXGK_HISTORY_BUFFER_HEADER</a>.<b>PrivateDataSize</b> to the address of <b>DriverPrivateData</b>.</p>
+<p>You can calculate the address of the first time stamp in the history buffer by adding the value of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-history-buffer-header.md">DXGK_HISTORY_BUFFER_HEADER</a>.<b>PrivateDataSize</b> to the address of <b>DriverPrivateData</b>.</p>
 
 <p>The beginnings of the time stamps should be aligned to a 64-bit boundary.</p>
 
 <p>The first and last time stamps in the <b>DriverPrivateData</b> array must be respectively the start and end times of the DMA buffer. Time stamps that are used to log marker times begin after this end time. This is the case for both formatted and unformatted buffers.</p>
 
-<p>The driver specifies the precision of time stamps with the <a href="https://msdn.microsoft.com/library/windows/hardware/dn439359">DXGKARG_HISTORYBUFFERPRECISION</a> structure.</p>
+<p>The driver specifies the precision of time stamps with the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a> structure.</p>
 
 ## -requirements
 <table>
@@ -118,10 +118,10 @@ typedef struct _DXGK_HISTORY_BUFFER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn439362">DXGK_HISTORY_BUFFER_HEADER</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-history-buffer-header.md">DXGK_HISTORY_BUFFER_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn439359">DXGKARG_HISTORYBUFFERPRECISION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a>
 </dt>
 </dl>
 <p> </p>

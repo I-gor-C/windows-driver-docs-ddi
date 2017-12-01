@@ -7,7 +7,7 @@ old-location: netvista\ndismregisterinterruptex.htm
 old-project: netvista
 ms.assetid: db0b3d51-5bbb-45fb-8c45-dda8c2212b5f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMRegisterInterruptEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -118,29 +118,9 @@ NDIS_STATUS NdisMRegisterInterruptEx(
     NdisMSetMiniportAttributes</a> function before calling 
     <b>NdisMRegisterInterruptEx</b>.</p>
 
-<p>The miniport driver must specify entry points for the following interrupt service functions:</p><dl>
-<dd>
+<p>The miniport driver must specify entry points for the following interrupt service functions:</p>
+
 <p>
-<a href="..\ndis\nc-ndis-miniport-isr.md">MiniportInterrupt</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-interrupt-dpc.md">MiniportInterruptDPC</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-disable-interrupt.md">
-       MiniportDisableInterruptEx</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-enable-interrupt.md">MiniportEnableInterruptEx</a>
-</p>
-</dd>
-</dl><p>
 <a href="..\ndis\nc-ndis-miniport-isr.md">MiniportInterrupt</a>
 </p>
 
@@ -158,144 +138,9 @@ NDIS_STATUS NdisMRegisterInterruptEx(
 </p>
 
 <p>If the NIC supports message-signaled interrupts (MSI), the miniport driver should specify entry points
-    for the following MSI service functions:</p><dl>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-message-interrupt.md">MiniportMessageInterrupt</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-message-interrupt-dpc.md">
-       MiniportMessageInterruptDPC</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-disable-message-interrupt.md">
-       MiniportDisableMessageInterrupt</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-enable-message-interrupt.md">
-       MiniportEnableMessageInterrupt</a>
-</p>
-</dd>
-</dl><p>
-<a href="..\ndis\nc-ndis-miniport-message-interrupt.md">MiniportMessageInterrupt</a>
-</p>
+    for the following MSI service functions:</p>
 
 <p>
-<a href="..\ndis\nc-ndis-miniport-message-interrupt-dpc.md">
-       MiniportMessageInterruptDPC</a>
-</p>
-
-<p>
-<a href="..\ndis\nc-ndis-miniport-disable-message-interrupt.md">
-       MiniportDisableMessageInterrupt</a>
-</p>
-
-<p>
-<a href="..\ndis\nc-ndis-miniport-enable-message-interrupt.md">
-       MiniportEnableMessageInterrupt</a>
-</p>
-
-<p>If a driver specifies entry points for MSI, it must also specify entry points for the non-MSI
-    interrupt service functions. Also, if 
-    <b>NdisMRegisterInterruptEx</b> returns NDIS_STATUS_SUCCESS, the driver must examine the value of the 
-    <b>InterruptType</b> member of the 
-    <a href="..\ndis\ns-ndis--ndis-miniport-interrupt-characteristics.md">
-    NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</a> structure to determine the type of interrupts NDIS granted.
-    If NDIS cannot grant MSI support, it will grant support for line based interrupts.</p>
-
-<p>When interrupts are enabled on the NIC, a driver's 
-    <i>MiniportInterrupt</i>(or 
-    <i>MiniportMessageInterrupt</i>) function can be called at any time after the driver calls 
-    <b>NdisMRegisterInterruptEx</b>, even before 
-    <b>NdisMRegisterInterruptEx</b> returns. Therefore, a driver should not call 
-    <b>NdisMRegisterInterruptEx</b> until it is ready to handle an interrupt.</p>
-
-<p>Drivers call the 
-    <a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">
-    NdisMDeregisterInterruptEx</a> function to release resources that were previously allocated with 
-    <b>NdisMRegisterInterruptEx</b>.</p>
-
-<p>A miniport driver must call 
-    <b>NdisMRegisterInterruptEx</b> from its 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function if
-    it manages a NIC that generates interrupts.</p>
-
-<p><i>MiniportInitializeEx</i> must call the 
-    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
-    NdisMSetMiniportAttributes</a> function before calling 
-    <b>NdisMRegisterInterruptEx</b>.</p>
-
-<p>The miniport driver must specify entry points for the following interrupt service functions:</p><dl>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-isr.md">MiniportInterrupt</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-interrupt-dpc.md">MiniportInterruptDPC</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-disable-interrupt.md">
-       MiniportDisableInterruptEx</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-enable-interrupt.md">MiniportEnableInterruptEx</a>
-</p>
-</dd>
-</dl><p>
-<a href="..\ndis\nc-ndis-miniport-isr.md">MiniportInterrupt</a>
-</p>
-
-<p>
-<a href="..\ndis\nc-ndis-miniport-interrupt-dpc.md">MiniportInterruptDPC</a>
-</p>
-
-<p>
-<a href="..\ndis\nc-ndis-miniport-disable-interrupt.md">
-       MiniportDisableInterruptEx</a>
-</p>
-
-<p>
-<a href="..\ndis\nc-ndis-miniport-enable-interrupt.md">MiniportEnableInterruptEx</a>
-</p>
-
-<p>If the NIC supports message-signaled interrupts (MSI), the miniport driver should specify entry points
-    for the following MSI service functions:</p><dl>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-message-interrupt.md">MiniportMessageInterrupt</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-message-interrupt-dpc.md">
-       MiniportMessageInterruptDPC</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-disable-message-interrupt.md">
-       MiniportDisableMessageInterrupt</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nc-ndis-miniport-enable-message-interrupt.md">
-       MiniportEnableMessageInterrupt</a>
-</p>
-</dd>
-</dl><p>
 <a href="..\ndis\nc-ndis-miniport-message-interrupt.md">MiniportMessageInterrupt</a>
 </p>
 
@@ -387,7 +232,7 @@ NDIS_STATUS NdisMRegisterInterruptEx(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975102">Init_DeRegisterInterrupt</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547143">Init_RegisterInterrupt</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547955">Irql_Interrupt_Function</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff563575">NdisMDeregisterInterruptEx</a>
+<a href="devtest.ndis_init_deregisterinterrupt">Init_DeRegisterInterrupt</a>, <a href="devtest.ndis_init_registerinterrupt">Init_RegisterInterrupt</a>, <a href="devtest.ndis_irql_interrupt_function">Irql_Interrupt_Function</a>, <a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">NdisMDeregisterInterruptEx</a>
 </td>
 </tr>
 </table>
@@ -428,12 +273,12 @@ NDIS_STATUS NdisMRegisterInterruptEx(
    NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563575">NdisMDeregisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">NdisMDeregisterInterruptEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563672">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterInterruptEx function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterInterruptEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

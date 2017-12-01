@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure describes a single entry in a result set of Physical Device Objects (PDOs) that are enumerated with <a href="https://msdn.microsoft.com/library/windows/hardware/hh451409">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>.</p>
+<p>This structure describes a single entry in a result set of Physical Device Objects (PDOs) that are enumerated with <a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-device-enumerate-pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>.</p>
 
 
 ## -syntax
@@ -129,7 +129,7 @@ typedef struct _ENUM_PDO_ENTRY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451409">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
+<a href="..\ehstorioctl\ni-ehstorioctl-ioctl-ehstor-device-enumerate-pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
 </dt>
 </dl>
 <p> </p>

@@ -22,3 +22,10 @@ Keyworddetectoroemadapter.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [MIDL_IKeywordDetectorOemAdapter_0003 structure](ns-keyworddetectoroemadapter---midl-ikeyworddetectoroemadapter-0003.md) | The KEYWORDSELECTOR struct is a triplet of IDs that uniquely select a particular keyword, language, and user combination. |
+
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [IKeywordDetectorOemAdapter interface](nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md) | IKeywordDetectorOemAdapter is a Component Object Model (COM) interface for interacting with the Voice Activation Driver Interface. The IKeywordDetectorOemAdapter interface is supported in Windows 10 and later versions of Windows. |
+| [IKeywordDetectorOemAdapter interface](nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter~r1.md) | IKeywordDetectorOemAdapter is a Component Object Model (COM) interface for interacting with the Voice Activation Driver Interface. The IKeywordDetectorOemAdapter interface is supported in Windows 10 and later versions of Windows. |

@@ -75,7 +75,7 @@ VP_STATUS HwVidSetPowerState(
 ### -param <i>VideoPowerControl</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570542">VIDEO_POWER_MANAGEMENT</a> structure that specifies the power state to be set.</p>
+<p>Pointer to a <a href="..\ntddvdeo\ns-ntddvdeo--video-power-management.md">VIDEO_POWER_MANAGEMENT</a> structure that specifies the power state to be set.</p>
 </dd>
 </dl>
 
@@ -83,12 +83,6 @@ VP_STATUS HwVidSetPowerState(
 <p><i>HwVidSetPowerState</i> should always return NO_ERROR.</p>
 
 ## -remarks
-<p><i>HwVidSetPowerState</i> is a required function in a video miniport driver.</p>
-
-<p>The driver should check the ID specified in <i>HwId</i> to determine the device on which to set the power state. The driver should then set that device's power state to the level specified in the <b>PowerState</b> member of the VIDEO_POWER_MANAGEMENT structure to which <i>VideoPowerControl</i> points.</p>
-
-<p><i>HwVidSetPowerState</i> should be made pageable.</p>
-
 <p><i>HwVidSetPowerState</i> is a required function in a video miniport driver.</p>
 
 <p>The driver should check the ID specified in <i>HwId</i> to determine the device on which to set the power state. The driver should then set that device's power state to the level specified in the <b>PowerState</b> member of the VIDEO_POWER_MANAGEMENT structure to which <i>VideoPowerControl</i> points.</p>
@@ -128,7 +122,7 @@ VP_STATUS HwVidSetPowerState(
 <a href="..\video\nc-video-pvideo-hw-power-get.md">HwVidGetPowerState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570542">VIDEO_POWER_MANAGEMENT</a>
+<a href="..\ntddvdeo\ns-ntddvdeo--video-power-management.md">VIDEO_POWER_MANAGEMENT</a>
 </dt>
 </dl>
 <p> </p>

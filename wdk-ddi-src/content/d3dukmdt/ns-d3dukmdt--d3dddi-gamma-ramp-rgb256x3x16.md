@@ -103,7 +103,7 @@ typedef struct _D3DDDI_GAMMA_RAMP_RGB256x3x16 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544565">D3DDDI_GAMMARAMP_TYPE</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-gammaramp-type.md">D3DDDI_GAMMARAMP_TYPE</a>
 </dt>
 </dl>
 <p> </p>

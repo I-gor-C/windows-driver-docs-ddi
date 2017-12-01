@@ -7,7 +7,7 @@ old-location: wdf\wdfioresourcerequirementslistsetinterfacetype.htm
 old-project: wdf
 ms.assetid: c229eb9e-cf1f-43ea-b701-fb8fb6196b40
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfIoResourceRequirementsListSetInterfaceType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,7 +66,7 @@ VOID WdfIoResourceRequirementsListSetInterfaceType(
 ### -param <i>InterfaceType</i> [in]
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff547839">INTERFACE_TYPE</a>-typed value that identifies the type of bus that the device is connected to. </p>
+<p>An <a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a>-typed value that identifies the type of bus that the device is connected to. </p>
 </dd>
 </dl>
 
@@ -76,12 +76,6 @@ VOID WdfIoResourceRequirementsListSetInterfaceType(
 <p>A system bug check occurs if the driver supplies an invalid object handle.</p>
 
 ## -remarks
-<p>Your driver must provide a bus type if your device does not support Plug and Play (PnP). </p>
-
-<p>For more information about resource requirements lists, see <a href="wdf.hardware_resources_for_kmdf_drivers">Hardware Resources for Framework-Based Drivers</a>.</p>
-
-<p>The following code example shows how an <a href="..\wdfpdo\nc-wdfpdo-evt-wdf-device-resource-requirements-query.md">EvtDeviceResourceRequirementsQuery</a> callback function for a nonPnP device calls <b>WdfIoResourceRequirementsListSetInterfaceType</b> to assign a bus type to a device.</p>
-
 <p>Your driver must provide a bus type if your device does not support Plug and Play (PnP). </p>
 
 <p>For more information about resource requirements lists, see <a href="wdf.hardware_resources_for_kmdf_drivers">Hardware Resources for Framework-Based Drivers</a>.</p>
@@ -141,7 +135,7 @@ VOID WdfIoResourceRequirementsListSetInterfaceType(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -149,9 +143,9 @@ VOID WdfIoResourceRequirementsListSetInterfaceType(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547839">INTERFACE_TYPE</a>
+<a href="..\wdm\ne-wdm--interface-type.md">INTERFACE_TYPE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoResourceRequirementsListSetInterfaceType method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoResourceRequirementsListSetInterfaceType method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

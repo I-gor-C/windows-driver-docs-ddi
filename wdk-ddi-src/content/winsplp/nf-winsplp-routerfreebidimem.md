@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p><code>RouterFreeBidiMem</code> frees a block of memory that was previously allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff561996">RouterAllocBidiMem</a>.</p>
+<p><code>RouterFreeBidiMem</code> frees a block of memory that was previously allocated by <a href="..\winsplp\nf-winsplp-routerallocbidimem.md">RouterAllocBidiMem</a>.</p>
 
 
 ## -syntax
@@ -123,7 +123,7 @@ VOID RouterFreeBidiMem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561996">RouterAllocBidiMem</a>
+<a href="..\winsplp\nf-winsplp-routerallocbidimem.md">RouterAllocBidiMem</a>
 </dt>
 </dl>
 <p> </p>

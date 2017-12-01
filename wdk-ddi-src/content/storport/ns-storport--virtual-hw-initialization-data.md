@@ -104,13 +104,13 @@ typedef struct _VIRTUAL_HW_INITIALIZATION_DATA {
 ### -field <b>HwInitialize</b>
 
 <dd>
-<p>A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a> routine, which is a required entry point for all virtual miniport drivers.</p>
+<p>A pointer to the virtual miniport driver's <a href="storage.hwstorinitialize">HwStorInitialize</a> routine, which is a required entry point for all virtual miniport drivers.</p>
 </dd>
 
 ### -field <b>HwStartIo</b>
 
 <dd>
-<p>A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557423">HwStorStartIo</a> routine, which is a required entry point for all virtual miniport drivers.</p>
+<p>A pointer to the virtual miniport driver's <a href="storage.hwstorstartio">HwStorStartIo</a> routine, which is a required entry point for all virtual miniport drivers.</p>
 </dd>
 
 ### -field <b>HwInterrupt</b>
@@ -122,13 +122,13 @@ typedef struct _VIRTUAL_HW_INITIALIZATION_DATA {
 ### -field <b>HwFindAdapter</b>
 
 <dd>
-<p>A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568008">VirtualHwStorFindAdapter</a> routine, which is a required entry point for all virtual miniport drivers.</p>
+<p>A pointer to the virtual miniport driver's <a href="storage.virtualhwstorfindadapter">VirtualHwStorFindAdapter</a> routine, which is a required entry point for all virtual miniport drivers.</p>
 </dd>
 
 ### -field <b>HwResetBus</b>
 
 <dd>
-<p>A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557415">HwStorResetBus</a> routine, which is a required entry point for all virtual miniport drivers.</p>
+<p>A pointer to the virtual miniport driver's <a href="storage.hwstorresetbus">HwStorResetBus</a> routine, which is a required entry point for all virtual miniport drivers.</p>
 </dd>
 
 ### -field <b>HwDmaStarted</b>
@@ -248,7 +248,7 @@ typedef struct _VIRTUAL_HW_INITIALIZATION_DATA {
 ### -field <b>HwAdapterControl</b>
 
 <dd>
-<p>A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a> routine. </p>
+<p>A pointer to the virtual miniport driver's <a href="storage.hwstoradaptercontrol">HwStorAdapterControl</a> routine. </p>
 </dd>
 
 ### -field <b>HwBuildIo</b>
@@ -261,36 +261,36 @@ typedef struct _VIRTUAL_HW_INITIALIZATION_DATA {
 ### -field <b>HwFreeAdapterResources</b>
 
 <dd>
-<p>A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557392">HwStorFreeAdapterResources</a> routine, which is a required entry point for all virtual miniport drivers.</p>
+<p>A pointer to the virtual miniport driver's <a href="storage.hwstorfreeadapterresources">HwStorFreeAdapterResources</a> routine, which is a required entry point for all virtual miniport drivers.</p>
 </dd>
 
 ### -field <b>HwProcessServiceRequest</b>
 
 <dd>
-<p>A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a> routine.</p>
+<p>A pointer to the virtual miniport driver's <a href="storage.hwstorprocessservicerequest">HwStorProcessServiceRequest</a> routine.</p>
 </dd>
 
 ### -field <b>HwCompleteServiceIrp</b>
 
 <dd>
-<p>A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557379">HwStorCompleteServiceIrp</a> routine.</p>
+<p>A pointer to the virtual miniport driver's <a href="storage.hwstorcompleteserviceirp">HwStorCompleteServiceIrp</a> routine.</p>
 </dd>
 
 ### -field <b>HwInitializeTracing</b>
 
 <dd>
-<p>A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557402">HwStorInitializeTracing</a> routine.</p>
+<p>A pointer to the virtual miniport driver's <a href="storage.hwstorinitializetracing">HwStorInitializeTracing</a> routine.</p>
 </dd>
 
 ### -field <b>HwCleanupTracing</b>
 
 <dd>
-<p>A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557372">HwStorCleanupTracing</a> routine.</p>
+<p>A pointer to the virtual miniport driver's <a href="storage.hwstorcleanuptracing">HwStorCleanupTracing</a> routine.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>If a virtual miniport driver will execute only on Windows 8 or later, the driver should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a> structure instead of <b>VIRTUAL_HW_INITIALIZATION_DATA</b>.</p>
+<p>If a virtual miniport driver will execute only on Windows 8 or later, the driver should use the <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a> structure instead of <b>VIRTUAL_HW_INITIALIZATION_DATA</b>.</p>
 
 ## -requirements
 <table>
@@ -309,34 +309,34 @@ typedef struct _VIRTUAL_HW_INITIALIZATION_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a>
+<a href="storage.hwstoradaptercontrol">HwStorAdapterControl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557372">HwStorCleanupTracing</a>
+<a href="storage.hwstorcleanuptracing">HwStorCleanupTracing</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557379">HwStorCompleteServiceIrp</a>
+<a href="storage.hwstorcompleteserviceirp">HwStorCompleteServiceIrp</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557392">HwStorFreeAdapterResources</a>
+<a href="storage.hwstorfreeadapterresources">HwStorFreeAdapterResources</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a>
+<a href="storage.hwstorinitialize">HwStorInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557402">HwStorInitializeTracing</a>
+<a href="storage.hwstorinitializetracing">HwStorInitializeTracing</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a>
+<a href="storage.hwstorprocessservicerequest">HwStorProcessServiceRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557415">HwStorResetBus</a>
+<a href="storage.hwstorresetbus">HwStorResetBus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557423">HwStorStartIo</a>
+<a href="storage.hwstorstartio">HwStorStartIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568008">VirtualHwStorFindAdapter</a>
+<a href="storage.virtualhwstorfindadapter">VirtualHwStorFindAdapter</a>
 </dt>
 </dl>
 <p> </p>

@@ -98,10 +98,10 @@ typedef struct _PRINTER_EVENT_ATTRIBUTES_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548564">DrvPrinterEvent</a>
+<a href="..\winddiui\nf-winddiui-drvprinterevent.md">DrvPrinterEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554182">IPrintOemUI::PrinterEvent</a>
+<a href="print.iprintoemui_printerevent">IPrintOemUI::PrinterEvent</a>
 </dt>
 </dl>
 <p> </p>

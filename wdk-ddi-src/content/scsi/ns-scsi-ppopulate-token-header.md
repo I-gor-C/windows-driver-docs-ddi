@@ -101,18 +101,18 @@ typedef struct _POPULATE_TOKEN_HEADER {
 ### -field <b>BlockDeviceRangeDescriptorListLength</b>
 
 <dd>
-<p>The length, in bytes, for all  of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967727">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.</p>
+<p>The length, in bytes, for all  of the <a href="storage.block_device_range_descriptor">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.</p>
 </dd>
 
 ### -field <b>BlockDeviceRangeDescriptor</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh967727">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the logical blocks representing the file being read from the LUN.</p>
+<p>An array of <a href="storage.block_device_range_descriptor">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the logical blocks representing the file being read from the LUN.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>POPULATE_TOKEN_HEADER</b> structure contains a series of <a href="https://msdn.microsoft.com/library/windows/hardware/hh967727">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the token ROD.</p>
+<p>The <b>POPULATE_TOKEN_HEADER</b> structure contains a series of <a href="storage.block_device_range_descriptor">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the token ROD.</p>
 
 <p>All multibyte values are in big endian format. Prior to setting, these values must be converted from the endian format of the current platform.</p>
 
@@ -141,7 +141,7 @@ typedef struct _POPULATE_TOKEN_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967727">BLOCK_DEVICE_RANGE_DESCRIPTOR</a>
+<a href="storage.block_device_range_descriptor">BLOCK_DEVICE_RANGE_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

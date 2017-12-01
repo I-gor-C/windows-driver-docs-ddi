@@ -7,7 +7,7 @@ old-location: nfpdrivers\ioctl_nfcserm_set_radio_state.htm
 old-project: nfpdrivers
 ms.assetid: 721AE7FE-927C-4EBA-B33D-C5A5A986951C
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: NFCCX_DRIVER_GLOBALS, NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS
 ms.prod: windows-hardware
 ms.technology: windows-devices

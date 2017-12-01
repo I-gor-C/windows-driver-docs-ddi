@@ -7,7 +7,7 @@ old-location: netvista\rilradioconfigurations.htm
 old-project: netvista
 ms.assetid: 28908305-69aa-4bf0-98a1-6cee4aa1c349
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILRADIOCONFIGURATIONS, RILRADIOCONFIGURATIONS, *LPRILRADIOCONFIGURATIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices

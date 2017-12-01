@@ -86,25 +86,15 @@ typedef EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD PEVT_UCX_ENDPOINT_STATIC_STREAMS_ADD
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.</p>
 
 ## -remarks
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>
+<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>
  method.</p>
 
-<p>This callback function creates a UCX static streams object by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188050">UcxStaticStreamsCreate</a>
- method. Only one UCX static streams object can be associated with a single endpoint.  The driver then calls <a href="https://msdn.microsoft.com/library/windows/hardware/mt188051">UcxStaticStreamsSetStreamInfo</a>
+<p>This callback function creates a UCX static streams object by calling the <a href="buses._ucxstaticstreamscreate">UcxStaticStreamsCreate</a>
+ method. Only one UCX static streams object can be associated with a single endpoint.  The driver then calls <a href="buses._ucxstaticstreamssetstreaminfo">UcxStaticStreamsSetStreamInfo</a>
  once per stream to create a queue for each stream.</p>
 
 <p>A static streams object is not enabled
-    until UCX calls the client driver's <a href="https://msdn.microsoft.com/library/windows/hardware/mt187832">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.</p>
-
-<p>The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>
- method.</p>
-
-<p>This callback function creates a UCX static streams object by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188050">UcxStaticStreamsCreate</a>
- method. Only one UCX static streams object can be associated with a single endpoint.  The driver then calls <a href="https://msdn.microsoft.com/library/windows/hardware/mt188051">UcxStaticStreamsSetStreamInfo</a>
- once per stream to create a queue for each stream.</p>
-
-<p>A static streams object is not enabled
-    until UCX calls the client driver's <a href="https://msdn.microsoft.com/library/windows/hardware/mt187832">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.</p>
+    until UCX calls the client driver's <a href="buses.evt_ucx_endpoint_static_streams_enable">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.</p>
 
 ## -requirements
 <table>

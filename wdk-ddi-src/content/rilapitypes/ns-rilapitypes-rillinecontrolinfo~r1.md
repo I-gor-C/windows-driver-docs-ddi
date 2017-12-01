@@ -7,7 +7,7 @@ old-location: netvista\rillinecontrolinfo_2.htm
 old-project: netvista
 ms.assetid: 490ef6ed-c5df-450f-acd1-36091ac8999e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILLINECONTROLINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

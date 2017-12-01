@@ -63,7 +63,7 @@ typedef struct _DXGK_DESTROYALLOCATIONFLAGS {
 ### -field <b>DestroyResource</b>
 
 <dd>
-<p>A UINT value that specifies whether the resource that the <b>hResource</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557581">DXGKARG_DESTROYALLOCATION</a> structure specifies should be released along with allocations. </p>
+<p>A UINT value that specifies whether the resource that the <b>hResource</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-destroyallocation.md">DXGKARG_DESTROYALLOCATION</a> structure specifies should be released along with allocations. </p>
 <p>Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).</p>
 </dd>
 
@@ -108,7 +108,7 @@ typedef struct _DXGK_DESTROYALLOCATIONFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557581">DXGKARG_DESTROYALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-destroyallocation.md">DXGKARG_DESTROYALLOCATION</a>
 </dt>
 </dl>
 <p> </p>

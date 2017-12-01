@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmabroadcastserviceid_2.htm
 old-project: netvista
 ms.assetid: d991a0f6-54ba-4951-8bdb-865a537d797a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

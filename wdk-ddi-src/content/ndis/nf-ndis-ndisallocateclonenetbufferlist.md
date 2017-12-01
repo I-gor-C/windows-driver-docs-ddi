@@ -7,7 +7,7 @@ old-location: netvista\ndisallocateclonenetbufferlist.htm
 old-project: netvista
 ms.assetid: 357605a1-5c57-44ed-97b3-f466f9a7182c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisAllocateCloneNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>Call the 
   <b>NdisAllocateCloneNetBufferList</b> function to create a new clone 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ PNET_BUFFER_LIST NdisAllocateCloneNetBufferList(
 ### -param <i>OriginalNetBufferList</i> [in]
 
 <dd>
-<p>A pointer to an existing <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+<p>A pointer to an existing <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 </dd>
 
 ### -param <i>NetBufferListPoolHandle</i> [in, optional]
@@ -77,7 +77,7 @@ PNET_BUFFER_LIST NdisAllocateCloneNetBufferList(
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure pool handle that was
+     <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure pool handle that was
      previously returned from a call to 
      <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">
      NdisAllocateNetBufferPool</a>.</p>
@@ -100,7 +100,7 @@ PNET_BUFFER_LIST NdisAllocateCloneNetBufferList(
 ### -param <a id="NDIS_CLONE_FLAGS_USE_ORIGINAL_MDLS"></a><a id="ndis_clone_flags_use_original_mdls"></a>NDIS_CLONE_FLAGS_USE_ORIGINAL_MDLS
 
 <dd>
-<p>If this flag is set, NDIS does not allocate new MDLs for the cloned <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>. Instead,
+<p>If this flag is set, NDIS does not allocate new MDLs for the cloned <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>. Instead,
        the cloned <b>NET_BUFFER_LIST</b> uses the same MDL chain as the original <b>NET_BUFFER_LIST</b>. If
        NDIS_CLONE_FLAGS_USE_ORIGINAL_MDLS is cleared, NDIS allocates new MDLs to reference the original data
        buffers.</p>
@@ -110,24 +110,24 @@ PNET_BUFFER_LIST NdisAllocateCloneNetBufferList(
 </dl>
 
 ## -returns
-<p><b>NdisAllocateCloneNetBufferList</b> returns a pointer to the new clone <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. If
+<p><b>NdisAllocateCloneNetBufferList</b> returns a pointer to the new clone <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure. If
      the allocation was unsuccessful, this pointer is <b>NULL</b>.</p>
 
 ## -remarks
 <p>Call 
     <b>NdisAllocateCloneNetBufferList</b> to create a clone 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that you can use
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure that you can use
     to send duplicate data on a separate data path.</p>
 
-<p>Each <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure in the original <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure is only cloned from the start of the used data space, not the start of the entire data space. To get the offset from the beginning of the data space to the start of the used data space, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568383">NET_BUFFER_DATA_OFFSET</a>  macro.</p>
+<p>Each <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure in the original <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure is only cloned from the start of the used data space, not the start of the entire data space. To get the offset from the beginning of the data space to the start of the used data space, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568383">NET_BUFFER_DATA_OFFSET</a>  macro.</p>
 
-<p>If the cloned <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure should have attributes that are associated with a given pool,
+<p>If the cloned <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure should have attributes that are associated with a given pool,
     the caller must specify the pool handle in the 
     <i>NetBufferListPoolHandle</i> or 
     <i>NetBufferPoolHandle</i> parameter. For example, the 
     <b>ProtocolType</b> member of the <b>NET_BUFFER_LIST</b> structure is associated with the pool.</p>
 
-<p>The clone <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure describes the same data that is described by the <b>NET_BUFFER_LIST</b>
+<p>The clone <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure describes the same data that is described by the <b>NET_BUFFER_LIST</b>
     structure at 
     <i>OriginalNetBufferList</i>. NDIS does not copy the data that is described by the original MDLs to new
     data buffers. Instead, the cloned structures reference the original data buffers. The clone
@@ -137,34 +137,7 @@ PNET_BUFFER_LIST NdisAllocateCloneNetBufferList(
 
 <p>Call the 
     <a href="..\ndis\nf-ndis-ndisfreeclonenetbufferlist.md">
-    NdisFreeCloneNetBufferList</a> function to free a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure and all of the associated
-    structures and MDL chains that were allocated by calling 
-    <b>NdisAllocateCloneNetBufferList</b>.</p>
-
-<p>Call 
-    <b>NdisAllocateCloneNetBufferList</b> to create a clone 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that you can use
-    to send duplicate data on a separate data path.</p>
-
-<p>Each <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure in the original <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure is only cloned from the start of the used data space, not the start of the entire data space. To get the offset from the beginning of the data space to the start of the used data space, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568383">NET_BUFFER_DATA_OFFSET</a>  macro.</p>
-
-<p>If the cloned <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure should have attributes that are associated with a given pool,
-    the caller must specify the pool handle in the 
-    <i>NetBufferListPoolHandle</i> or 
-    <i>NetBufferPoolHandle</i> parameter. For example, the 
-    <b>ProtocolType</b> member of the <b>NET_BUFFER_LIST</b> structure is associated with the pool.</p>
-
-<p>The clone <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure describes the same data that is described by the <b>NET_BUFFER_LIST</b>
-    structure at 
-    <i>OriginalNetBufferList</i>. NDIS does not copy the data that is described by the original MDLs to new
-    data buffers. Instead, the cloned structures reference the original data buffers. The clone
-    <b>NET_BUFFER_LIST</b> structure does not include an initial 
-    <a href="..\ndis\ns-ndis--net-buffer-list-context.md">
-    NET_BUFFER_LIST_CONTEXT</a> structure.</p>
-
-<p>Call the 
-    <a href="..\ndis\nf-ndis-ndisfreeclonenetbufferlist.md">
-    NdisFreeCloneNetBufferList</a> function to free a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure and all of the associated
+    NdisFreeCloneNetBufferList</a> function to free a <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure and all of the associated
     structures and MDL chains that were allocated by calling 
     <b>NdisAllocateCloneNetBufferList</b>.</p>
 
@@ -221,7 +194,7 @@ PNET_BUFFER_LIST NdisAllocateCloneNetBufferList(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
+<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -233,21 +206,21 @@ PNET_BUFFER_LIST NdisAllocateCloneNetBufferList(
    NdisAllocateNetBufferListPool</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561613">NdisAllocateNetBufferPool</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">NdisAllocateNetBufferPool</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561841">NdisFreeCloneNetBufferList</a>
+<a href="..\ndis\nf-ndis-ndisfreeclonenetbufferlist.md">NdisFreeCloneNetBufferList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568389">NET_BUFFER_LIST_CONTEXT</a>
+<a href="..\ndis\ns-ndis--net-buffer-list-context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateCloneNetBufferList function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateCloneNetBufferList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

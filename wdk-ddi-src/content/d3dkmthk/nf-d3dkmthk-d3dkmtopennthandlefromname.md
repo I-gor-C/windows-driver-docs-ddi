@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenNtHandleFromName(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406493">D3DKMT_OPENNTHANDLEFROMNAME</a> structure that describes information required to open an NT handle.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-opennthandlefromname.md">D3DKMT_OPENNTHANDLEFROMNAME</a> structure that describes information required to open an NT handle.</p>
 </dd>
 </dl>
 

@@ -72,7 +72,7 @@ ULONG StorPortGetMSIInfo(
 ### -param <i>InterruptInfo</i> [out]
 
 <dd>
-<p>A pointer to a miniport driver-provided <a href="https://msdn.microsoft.com/library/windows/hardware/ff562240">MESSAGE_INTERRUPT_INFORMATION</a> structure that receives the information for the message specified by the <i>MessageId</i> parameter.</p>
+<p>A pointer to a miniport driver-provided <a href="..\storport\ns-storport--message-interrupt-information.md">MESSAGE_INTERRUPT_INFORMATION</a> structure that receives the information for the message specified by the <i>MessageId</i> parameter.</p>
 </dd>
 </dl>
 
@@ -143,7 +143,7 @@ ULONG StorPortGetMSIInfo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562240">MESSAGE_INTERRUPT_INFORMATION</a>
+<a href="..\storport\ns-storport--message-interrupt-information.md">MESSAGE_INTERRUPT_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

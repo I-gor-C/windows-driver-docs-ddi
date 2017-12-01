@@ -69,8 +69,6 @@ PVOID RtlDestroyHeap(
 ## -remarks
 <p>Processes can call <b>RtlDestroyHeap</b> without first calling <b>RtlFreeHeap</b> to free memory that was allocated from the heap. </p>
 
-<p>Processes can call <b>RtlDestroyHeap</b> without first calling <b>RtlFreeHeap</b> to free memory that was allocated from the heap. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -134,13 +132,13 @@ PVOID RtlDestroyHeap(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552108">RtlAllocateHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552159">RtlCreateHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552276">RtlFreeHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlfreeheap.md">RtlFreeHeap</a>
 </dt>
 </dl>
 <p> </p>

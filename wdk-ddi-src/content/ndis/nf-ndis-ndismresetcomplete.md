@@ -7,7 +7,7 @@ old-location: netvista\ndismresetcomplete.htm
 old-project: netvista
 ms.assetid: 3da12a14-a90a-46a6-b67e-55044fdc3ca1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMResetComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see 
-   NdisMResetComplete (NDIS 5.1).
+req.target-min-winverclnt: Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see    NdisMResetComplete (NDIS 5.1).
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -115,28 +114,6 @@ VOID NdisMResetComplete(
     <b>NdisMResetComplete</b> must run at IRQL &lt;= DISPATCH_LEVEL. Otherwise, callers of 
     <b>NdisMResetComplete</b> must run at IRQL = DISPATCH_LEVEL.</p>
 
-<p>If the 
-    <a href="..\ndis\nc-ndis-miniport-reset.md">MiniportResetEx</a> function returns
-    NDIS_STATUS_PENDING, the miniport driver must call 
-    <b>NdisMResetComplete</b> when it completes the reset operation.</p>
-
-<p>Protocol drivers cannot initiate a reset operation in NDIS 6.0 and later versions.</p>
-
-<p>Some NICs lose all multicast address, packet filter, or functional address information when a soft
-    reset is issued. The driver of such a NIC sets 
-    <i>AddressingReset</i> to <b>TRUE</b> when it calls 
-    <b>NdisMResetComplete</b>, causing NDIS to call its 
-    <a href="..\ndis\nc-ndis-miniport-oid-request.md">MiniportOidRequest</a> function to
-    restore the addressing state. For more information, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff546572">Hardware Reset</a>.</p>
-
-<p>A miniport driver must release any spin lock that it is holding before calling 
-    <b>NdisMResetComplete</b>.</p>
-
-<p>In NDIS 6.0 and later, callers of 
-    <b>NdisMResetComplete</b> must run at IRQL &lt;= DISPATCH_LEVEL. Otherwise, callers of 
-    <b>NdisMResetComplete</b> must run at IRQL = DISPATCH_LEVEL.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -191,7 +168,7 @@ VOID NdisMResetComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>
+<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -210,4 +187,4 @@ VOID NdisMResetComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMResetComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMResetComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

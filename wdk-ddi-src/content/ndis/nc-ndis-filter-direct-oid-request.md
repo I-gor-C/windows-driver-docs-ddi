@@ -7,7 +7,7 @@ old-location: netvista\filterdirectoidrequest.htm
 old-project: netvista
 ms.assetid: a39f4b50-0183-4f92-82f2-3c8e2e2d0632
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,14 +65,14 @@ NDIS_STATUS FilterDirectOidRequest(
 <dd>
 <p>A handle to the context area for the filter module that is the target of this request. The filter
      driver created and initialized this context area in the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function.</p>
+     <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
 ### -param <i>OidRequest</i> [in]
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure that specifies
      the operation requested, including the OID_
      <i>Xx</i> code. The structure can specify either a query request or a set
      request</p>
@@ -100,7 +100,7 @@ NDIS_STATUS FilterDirectOidRequest(
 <dt><b>NDIS_STATUS_INVALID_LENGTH</b></dt>
 </dl><p>For a query operation, the 
        <b>InformationBufferLength</b> member of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure does not
+       <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure does not
        match the length that the given OID requires. 
        <i>FilterDirectOidRequest</i> returned the required buffer size, in bytes, in the 
        <b>BytesNeeded</b> member of the NDIS_OID_REQUEST structure.</p><dl>
@@ -115,7 +115,7 @@ NDIS_STATUS FilterDirectOidRequest(
 <dt><b>NDIS_STATUS_FAILURE</b></dt>
 </dl><p><i>N</i> one of the preceding return values applies. The filter driver should call
        the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff564663">NdisWriteErrorLogEntry</a> function
+       <a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a> function
        with parameters that specify the reason for the failure.</p>
 
 <p> </p>
@@ -132,74 +132,12 @@ NDIS_STATUS FilterDirectOidRequest(
     <i>FilterDirectOidRequest</i> function to process direct OID requests that are
     originated by overlying drivers. Filter drivers can forward such requests to underlying drivers by
     calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561809">NdisFDirectOidRequest</a> function. As
+    <a href="..\ndis\nf-ndis-ndisfdirectoidrequest.md">NdisFDirectOidRequest</a> function. As
     an option, a filter driver can also complete a request immediately without forwarding the request.</p>
 
 <p>Before the driver calls 
     <b>NdisFDirectOidRequest</b>, the driver must allocate an 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure and transfer the
-    request information to the new structure by calling the 
-    <a href="..\ndis\nf-ndis-ndisallocatecloneoidrequest.md">
-    NdisAllocateCloneOidRequest</a> function.</p>
-
-<p>To complete a request synchronously, the filter driver returns NDIS_STATUS_SUCCESS or a failure
-    status. If the driver returns NDIS_STATUS_PENDING, it must call the 
-    <a href="..\ndis\nf-ndis-ndisfdirectoidrequestcomplete.md">
-    NdisFDirectOidRequestComplete</a> function to inform NDIS that the request is complete.</p>
-
-<p>For a query operation, 
-    <i>FilterDirectOidRequest</i> returns the requested information in the 
-    <b>InformationBuffer</b> member and sets the variable in the 
-    <b>BytesWritten</b> member of the NDIS_OID_REQUEST structure to the amount of information it returned. The
-    underlying drivers do this if the filter driver passed the request on with 
-    <b>NdisFDirectOidRequest</b>.</p>
-
-<p>For a set operation
-    <i>, FilterDirectOidRequest</i> can use the data in the 
-    <b>InformationBuffer</b> member of the NDIS_OID_REQUEST structure to set the information that the given
-    OID requires. In this case, 
-    <i>FilterDirectOidRequest</i> sets the variable at 
-    <b>BytesRead</b> to the amount of the supplied data that it used. The underlying drivers set 
-    <b>BytesRead</b> in this way if the filter driver passed the request on with 
-    <b>NdisFDirectOidRequest</b>.</p>
-
-<p>NDIS does not serialize requests that it sends to 
-    <i>FilterDirectOidRequest</i> with other OID requests. The filter driver must be able
-    to handle multiple calls to 
-    <i>FilterDirectOidRequest</i> when other requests that are sent to 
-    <a href="..\ndis\nc-ndis-filter-oid-request.md">FilterOidRequest</a> or 
-    <i>FilterDirectOidRequest</i> are outstanding.</p>
-
-<p>NDIS calls 
-    <i>FilterDirectOidRequest</i> at IRQL &lt;= DISPATCH_LEVEL.</p>
-
-<p>To define a <i>FilterDirectOidRequest</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define a <i>FilterDirectOidRequest</i> function that is named "MyDirectOidRequest", use the <b>FILTER_DIRECT_OID_REQUEST</b> type as shown in this code example:</p>
-
-<p>Then, implement your function as follows:</p>
-
-<p>The <b>FILTER_DIRECT_OID_REQUEST</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>FILTER_DIRECT_OID_REQUEST</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
-
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. </p>
-
-<p><i>FilterDirectOidRequest</i> is an optional function. If a filter driver does not use
-    direct OID requests, it can set the entry point for this function to <b>NULL</b> when it calls the 
-    <b>NdisFRegisterFilterDriver</b> function. If a filter driver defines a 
-    <a href="..\ndis\nc-ndis-filter-direct-oid-request-complete.md">
-    FilterDirectOidRequestComplete</a> function, it must provide the 
-    <i>FilterDirectOidRequest</i> function.</p>
-
-<p>NDIS calls the filter driver's 
-    <i>FilterDirectOidRequest</i> function to process direct OID requests that are
-    originated by overlying drivers. Filter drivers can forward such requests to underlying drivers by
-    calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561809">NdisFDirectOidRequest</a> function. As
-    an option, a filter driver can also complete a request immediately without forwarding the request.</p>
-
-<p>Before the driver calls 
-    <b>NdisFDirectOidRequest</b>, the driver must allocate an 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure and transfer the
+    <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure and transfer the
     request information to the new structure by calling the 
     <a href="..\ndis\nf-ndis-ndisallocatecloneoidrequest.md">
     NdisAllocateCloneOidRequest</a> function.</p>
@@ -278,7 +216,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-filter-oid-request.md">FilterOidRequest</a>
@@ -288,22 +226,22 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
    FilterDirectOidRequestComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560706">NdisAllocateCloneOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisallocatecloneoidrequest.md">NdisAllocateCloneOidRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561809">NdisFDirectOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisfdirectoidrequest.md">NdisFDirectOidRequest</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndisfdirectoidrequestcomplete.md">
    NdisFDirectOidRequestComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564663">NdisWriteErrorLogEntry</a>
+<a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_DIRECT_OID_REQUEST callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_DIRECT_OID_REQUEST callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

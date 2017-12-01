@@ -7,7 +7,7 @@ old-location: kernel\read_port_ushort.htm
 old-project: kernel
 ms.assetid: 55f759dc-8fc7-4d47-9b3d-55d8902ed805
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: READ_PORT_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,8 +66,6 @@ USHORT READ_PORT_USHORT(
 <p><b>READ_PORT_USHORT</b> returns the USHORT value that is read from the specified port address.</p>
 
 ## -remarks
-<p>Callers of <b>READ_PORT_USHORT</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
-
 <p>Callers of <b>READ_PORT_USHORT</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
 
 ## -requirements

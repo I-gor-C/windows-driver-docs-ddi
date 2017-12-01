@@ -62,19 +62,19 @@ BOOL GdiPlayPageEMF(
 ### -param <i>SpoolFileHandle</i> 
 
 <dd>
-<p>Caller-supplied spool file handle, obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549517">GdiGetSpoolFileHandle</a>.</p>
+<p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
 </dd>
 
 ### -param <i>hemf</i> 
 
 <dd>
-<p>Caller-supplied page handle, obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549505">GdiGetPageHandle</a>, identifying the page for which records are to be played.</p>
+<p>Caller-supplied page handle, obtained by calling <a href="..\winppi\nf-winppi-gdigetpagehandle.md">GdiGetPageHandle</a>, identifying the page for which records are to be played.</p>
 </dd>
 
 ### -param <i>prectDocument</i> 
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure specifying the rectangle into which the page is to be drawn.</p>
+<p>Caller-supplied pointer to a <a href="display.rect">RECT</a> structure specifying the rectangle into which the page is to be drawn.</p>
 </dd>
 
 ### -param <i>prectBorder</i> 
@@ -94,19 +94,9 @@ BOOL GdiPlayPageEMF(
 <p>If the operation succeeds, the function returns <b>TRUE</b>. Otherwise the function returns <b>FALSE</b>, and an error code can be obtained by calling <b>GetLastError</b>.</p>
 
 ## -remarks
-<p>The <b>GdiPlayPageEMF</b> function is exported by gdi32.dll for use within a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p>
+<p>The <b>GdiPlayPageEMF</b> function is exported by gdi32.dll for use within a print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> function.</p>
 
-<p>The <b>GdiPlayPageEMF</b> function is the means by which a print processor positions a document page or a specified rectangular region of a document page on a physical page. Note that <b>GdiPlayPageEMF</b> does not actually print on the device context, but instead prepares a data structure that describes the text and graphics that are to be printed on the physical page(s). The text and graphics are printed to the device context when <a href="https://msdn.microsoft.com/library/windows/hardware/ff549468">GdiEndPageEMF</a> is called.</p>
-
-<p>The print processor uses <i>prectClip</i> to describe the rectangular region to be printed, and <i>prectDocument</i> to describe a rectangle into which the document page (or clipped region) must fit. If<i> prectClip</i> is <b>NULL</b>, the entire document page will be printed. For non-<b>NULL</b> values of <i>prectClip</i>, only the portion of the document page within the clip region will be printed. The <b>GdiPlayPageEMF</b> function then performs the scaling and translation operations required to make the document page (or selected portion) fit into the rectangle.</p>
-
-<p>The <i>prectBorder</i> parameter, if it is non-<b>NULL</b>, describes a solid-line border rectangle to be drawn around the document page. If <i>prectBorder</i> is <b>NULL</b>, no such border will be drawn.</p>
-
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
-
-<p>The <b>GdiPlayPageEMF</b> function is exported by gdi32.dll for use within a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p>
-
-<p>The <b>GdiPlayPageEMF</b> function is the means by which a print processor positions a document page or a specified rectangular region of a document page on a physical page. Note that <b>GdiPlayPageEMF</b> does not actually print on the device context, but instead prepares a data structure that describes the text and graphics that are to be printed on the physical page(s). The text and graphics are printed to the device context when <a href="https://msdn.microsoft.com/library/windows/hardware/ff549468">GdiEndPageEMF</a> is called.</p>
+<p>The <b>GdiPlayPageEMF</b> function is the means by which a print processor positions a document page or a specified rectangular region of a document page on a physical page. Note that <b>GdiPlayPageEMF</b> does not actually print on the device context, but instead prepares a data structure that describes the text and graphics that are to be printed on the physical page(s). The text and graphics are printed to the device context when <a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a> is called.</p>
 
 <p>The print processor uses <i>prectClip</i> to describe the rectangular region to be printed, and <i>prectDocument</i> to describe a rectangle into which the document page (or clipped region) must fit. If<i> prectClip</i> is <b>NULL</b>, the entire document page will be printed. For non-<b>NULL</b> values of <i>prectClip</i>, only the portion of the document page within the clip region will be printed. The <b>GdiPlayPageEMF</b> function then performs the scaling and translation operations required to make the document page (or selected portion) fit into the rectangle.</p>
 
@@ -161,7 +151,7 @@ BOOL GdiPlayPageEMF(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549468">GdiEndPageEMF</a>
+<a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a>
 </dt>
 </dl>
 <p> </p>

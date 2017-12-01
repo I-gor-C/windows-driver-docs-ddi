@@ -7,7 +7,7 @@ old-location: netvista\ndis_qos_parameters.htm
 old-project: netvista
 ms.assetid: 83eb72a8-d35b-445d-a207-c14a3bedd308
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_QOS_PARAMETERS, NDIS_QOS_PARAMETERS, *PNDIS_QOS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ typedef struct _NDIS_QOS_PARAMETERS {
 ### -field <b>Header</b>
 
 <dd>
-<p>The type, revision, and size of the <b>NDIS_QOS_PARAMETERS</b> structure. This member is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.</p>
+<p>The type, revision, and size of the <b>NDIS_QOS_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
 <p>The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_QOS_PARAMETERS. To specify the version of the <b>NDIS_QOS_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: </p>
 <p></p>
 <dl>
@@ -93,7 +93,7 @@ typedef struct _NDIS_QOS_PARAMETERS {
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the number of NDIS QoS traffic classes that are enabled on the network adapter.  Each traffic class is referenced through an identifier in the range from zero to (<b>NumTrafficClasses</b>–1).</p>
-<div class="alert"><b>Note</b>  The value of the <b>NumTrafficClasses</b> member must be less than or equal to <b>min</b>(<b>NDIS_QOS_MAXIMUM_TRAFFIC_CLASSES</b>, <i>MaxNumTrafficClasses</i>), where <i>MaxNumTrafficClasses</i> is the value of the <b>MaxNumTrafficClasses</b> member that was specified  in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451629">NDIS_QOS_CAPABILITIES</a> structure.</div>
+<div class="alert"><b>Note</b>  The value of the <b>NumTrafficClasses</b> member must be less than or equal to <b>min</b>(<b>NDIS_QOS_MAXIMUM_TRAFFIC_CLASSES</b>, <i>MaxNumTrafficClasses</i>), where <i>MaxNumTrafficClasses</i> is the value of the <b>MaxNumTrafficClasses</b> member that was specified  in the <a href="..\ntddndis\ns-ntddndis--ndis-qos-capabilities.md">NDIS_QOS_CAPABILITIES</a> structure.</div>
 <div> </div>
 </dd>
 
@@ -101,7 +101,7 @@ typedef struct _NDIS_QOS_PARAMETERS {
 
 <dd>
 <p>An array of <b>UCHAR</b> elements that specifies an IEEE 802.1p priority level for each traffic class. The <b>PriorityAssignmentTable</b> array is indexed  by the  802.1p priority level (0–7). </p>
-<p>Each element contains the traffic class identifier. This identifier is the index of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451631">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure for the traffic class within the classification array.</p>
+<p>Each element contains the traffic class identifier. This identifier is the index of the <a href="..\ntddndis\ns-ntddndis--ndis-qos-classification-element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure for the traffic class within the classification array.</p>
 <div class="alert"><b>Note</b>  Each element in the <b>PriorityAssignmentTable</b> array must be assigned a valid traffic class identifier. A traffic class identifier can be assigned to more than one element in the <b>PriorityAssignmentTable</b> array.</div>
 <div> </div>
 </dd>
@@ -193,7 +193,7 @@ is enabled on the IEEE 802.1p priority level. If the bit is set to one, PFC is e
 </tr>
 </table>
 <p> </p>
-<div class="alert"><b>Note</b>  The total number of 802.1p priority levels that have PFC enabled must be less than or equal to the value of the <b>MaxNumPfcEnabledTrafficClasses</b> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451629">NDIS_QOS_CAPABILITIES</a> structure.</div>
+<div class="alert"><b>Note</b>  The total number of 802.1p priority levels that have PFC enabled must be less than or equal to the value of the <b>MaxNumPfcEnabledTrafficClasses</b> member in the <a href="..\ntddndis\ns-ntddndis--ndis-qos-capabilities.md">NDIS_QOS_CAPABILITIES</a> structure.</div>
 <div> </div>
 <p>For more information about priority levels, see <a href="NULL">IEEE 802.1p Priority Levels</a>.</p>
 </dd>
@@ -202,7 +202,7 @@ is enabled on the IEEE 802.1p priority level. If the bit is set to one, PFC is e
 
 <dd>
 <p>A <b>ULONG</b> value that specifies the number of elements in the traffic classification array. The offset to the first element in this array is specified  by the <b>FirstClassificationElementOffset</b> member.</p>
-<div class="alert"><b>Note</b>  Each element in the array is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451631">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure.</div>
+<div class="alert"><b>Note</b>  Each element in the array is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-qos-classification-element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure.</div>
 <div> </div>
 </dd>
 
@@ -217,7 +217,7 @@ is enabled on the IEEE 802.1p priority level. If the bit is set to one, PFC is e
 ### -field <b>FirstClassificationElementOffset</b>
 
 <dd>
-<p>A <b>ULONG</b> value that specifies the offset, in bytes, to the first element in an array of traffic classification elements that follow this structure. The offset is measured from the start of the <b>NDIS_QOS_PARAMETERS</b> structure up to the beginning of the first element. Each element in the array is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451631">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure.
+<p>A <b>ULONG</b> value that specifies the offset, in bytes, to the first element in an array of traffic classification elements that follow this structure. The offset is measured from the start of the <b>NDIS_QOS_PARAMETERS</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis--ndis-qos-classification-element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure.
 
 </p>
 <div class="alert"><b>Note</b>  If <b>NumClassificationElements</b> is set to zero, this member is ignored.  </div>
@@ -260,108 +260,9 @@ is enabled on the IEEE 802.1p priority level. If the bit is set to one, PFC is e
 
 <p>The following flags are defined for the <b>Flags</b> member.</p>
 
-<p></p><dl>
-<dt><a id="NDIS_QOS_PARAMETERS_ETS_CONFIGURED"></a><a id="ndis_qos_parameters_ets_configured"></a><b>NDIS_QOS_PARAMETERS_ETS_CONFIGURED</b></dt>
-<dd>
+<p></p>
+
 <p>If this flag is set, the miniport driver has configured the network adapter with the ETS parameters contained in the following members:</p>
-<ul>
-<li>
-<p><b>NumTrafficClasses</b></p>
-</li>
-<li>
-<p><b>PriorityAssignmentTable</b></p>
-</li>
-<li>
-<p><b>TcBandwidthAssignmentTable</b></p>
-</li>
-<li>
-<p><b>TsaAssignmentTable</b></p>
-</li>
-</ul>
-<div class="alert"><b>Note</b>  The miniport driver must support ETS in order to support NDIS QoS for DCB. However, the setting of this flag does not specify whether the network adapter supports ETS. Instead, the setting of this flag specifies only whether ETS parameters are configured on the network adapter.</div>
-<div> </div>
-</dd>
-<dt><a id="NDIS_QOS_PARAMETERS_ETS_CHANGED"></a><a id="ndis_qos_parameters_ets_changed"></a><b>NDIS_QOS_PARAMETERS_ETS_CHANGED</b></dt>
-<dd>
-<p>If this flag is set, one or more ETS parameters have changed in the following members:</p>
-<ul>
-<li>
-<p><b>NumTrafficClasses</b></p>
-</li>
-<li>
-<p><b>PriorityAssignmentTable</b></p>
-</li>
-<li>
-<p><b>TcBandwidthAssignmentTable</b></p>
-</li>
-<li>
-<p><b>TsaAssignmentTable</b></p>
-</li>
-</ul>
-</dd>
-<dt><a id="NDIS_QOS_PARAMETERS_PFC_CONFIGURED"></a><a id="ndis_qos_parameters_pfc_configured"></a><b>NDIS_QOS_PARAMETERS_PFC_CONFIGURED</b></dt>
-<dd>
-<p>If this flag is set, the miniport driver has configured the network adapter with the   PFC settings contained in the  <b>PfcEnable</b> member.</p>
-<div class="alert"><b>Note</b>  The miniport driver must support PFC in order to support NDIS QoS for DCB. The setting of this flag does not specify whether the network adapter supports PFC. Instead, the setting of this flag specifies only whether PFC parameters are enabled on the network adapter.</div>
-<div> </div>
-</dd>
-<dt><a id="NDIS_QOS_PARAMETERS_PFC_CHANGED"></a><a id="ndis_qos_parameters_pfc_changed"></a><b>NDIS_QOS_PARAMETERS_PFC_CHANGED</b></dt>
-<dd>
-<p>If this flag is set, one or more PFC settings have changed in the  <b>PfcEnable</b> member.</p>
-</dd>
-<dt><a id="NDIS_QOS_PARAMETERS_CLASSIFICATION_CONFIGURED"></a><a id="ndis_qos_parameters_classification_configured"></a><b>NDIS_QOS_PARAMETERS_CLASSIFICATION_CONFIGURED</b></dt>
-<dd>
-<p>If this flag is set, the miniport driver has configured the network adapter with the QoS traffic classification parameters specified in the following members:</p>
-<ul>
-<li>
-<p><b>NumClassificationElements</b></p>
-</li>
-<li>
-<p><b>ClassificationElementSize</b></p>
-</li>
-<li>
-<p><b>FirstClassificationElementOffset</b></p>
-</li>
-</ul>
-<div class="alert"><b>Note</b>  It is possible for the <b>NDIS_QOS_PARAMETERS_CLASSIFICATION_CONFIGURED</b> not to be set even if the <b>NDIS_QOS_PARAMETERS_ETS_CONFIGURED</b> and <b>NDIS_QOS_PARAMETERS_PFC_CONFIGURED</b> flags are set. In this case, the miniport driver must not configure QoS traffic classifications by using its proprietary settings that are defined by the independent hardware vendor (IHV).</div>
-<div> </div>
-</dd>
-<dt><a id="NDIS_QOS_PARAMETERS_CLASSIFICATION_CHANGED"></a><a id="ndis_qos_parameters_classification_changed"></a><b>NDIS_QOS_PARAMETERS_CLASSIFICATION_CHANGED</b></dt>
-<dd>
-<p>If this flag is set, one or more QoS traffic classification parameters have changed in the following members:</p>
-<ul>
-<li>
-<p><b>NumClassificationElements</b></p>
-</li>
-<li>
-<p><b>ClassificationElementSize</b></p>
-</li>
-<li>
-<p><b>FirstClassificationElementOffset</b></p>
-</li>
-</ul>
-</dd>
-<dt><a id="NDIS_QOS_PARAMETERS_WILLING"></a><a id="ndis_qos_parameters_willing"></a><b>NDIS_QOS_PARAMETERS_WILLING</b></dt>
-<dd>
-<p>This flag specifies whether the miniport driver enables or disables the  local Data Center Bridging Exchange (DCBX) Willing state. The driver handles this flag in the following way:</p>
-<ul>
-<li>
-<p>If this flag is set, the miniport driver must enable the local DCBX Willing state. This allows the driver to be remotely configured with QoS settings. In this case, the driver resolves its operational QoS parameters based on the remote QoS parameters.
-The miniport driver can also resolve its operational QoS parameters based on any proprietary QoS settings that are defined by the IHV.</p>
-</li>
-<li>
-<p>If this flag is not set, the miniport driver must disable the local DCBX Willing state. This allows the driver to resolve its operational QoS parameters from its local QoS parameters instead of remote QoS parameters.
-The miniport driver must also disable or override any local QoS parameter for which the related <b>NDIS_QOS_PARAMETERS_<i>Xxx</i>_CONFIGURED</b> flag is not set. </p>
-<p>For example, the miniport driver can override an unconfigured local QoS parameter with its proprietary settings for the QoS parameters that are defined by the IHV. If there are no proprietary settings for  local QoS parameters that are not specified with an  <b>NDIS_QOS_PARAMETERS_<i>Xxx</i>_CONFIGURED</b> flag, the driver must disable the use of these QoS parameters on the network adapter.</p>
-</li>
-</ul>
-<p>For more information about the local DCBX Willing state, see <a href="NULL">Managing the Local DCBX Willing State</a>.
-
-</p>
-<div class="alert"><b>Note</b>  This flag is reserved for NDIS. The miniport driver must not set this flag when it issues <b>NDIS_STATUS_QOS_<i>Xxx</i></b> status indications.</div>
-<div> </div>
-</dd>
-</dl><p>If this flag is set, the miniport driver has configured the network adapter with the ETS parameters contained in the following members:</p>
 
 <p><b>NumTrafficClasses</b></p>
 
@@ -372,14 +273,6 @@ The miniport driver must also disable or override any local QoS parameter for wh
 <p><b>TsaAssignmentTable</b></p>
 
 <p>If this flag is set, one or more ETS parameters have changed in the following members:</p>
-
-<p><b>NumTrafficClasses</b></p>
-
-<p><b>PriorityAssignmentTable</b></p>
-
-<p><b>TcBandwidthAssignmentTable</b></p>
-
-<p><b>TsaAssignmentTable</b></p>
 
 <p>If this flag is set, the miniport driver has configured the network adapter with the   PFC settings contained in the  <b>PfcEnable</b> member.</p>
 
@@ -394,12 +287,6 @@ The miniport driver must also disable or override any local QoS parameter for wh
 <p><b>FirstClassificationElementOffset</b></p>
 
 <p>If this flag is set, one or more QoS traffic classification parameters have changed in the following members:</p>
-
-<p><b>NumClassificationElements</b></p>
-
-<p><b>ClassificationElementSize</b></p>
-
-<p><b>FirstClassificationElementOffset</b></p>
 
 <p>This flag specifies whether the miniport driver enables or disables the  local Data Center Bridging Exchange (DCBX) Willing state. The driver handles this flag in the following way:</p>
 
@@ -443,20 +330,20 @@ The miniport driver must also disable or override any local QoS parameter for wh
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565924">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
+<a href="..\ndis\ns-ndis--ndis-miniport-adapter-hardware-assist-attributes.md">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
     NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451629">NDIS_QOS_CAPABILITIES</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-qos-capabilities.md">NDIS_QOS_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451631">NDIS_QOS_CLASSIFICATION_ELEMENT</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-qos-classification-element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439810">NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE</a>
@@ -473,4 +360,4 @@ The miniport driver must also disable or override any local QoS parameter for wh
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_QOS_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_QOS_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

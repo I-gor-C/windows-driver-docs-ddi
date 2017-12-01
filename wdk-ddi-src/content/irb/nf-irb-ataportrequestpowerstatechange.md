@@ -78,7 +78,7 @@ VOID AtaPortRequestPowerStateChange(
 ### -param <i>DesiredPowerState</i> 
 
 <dd>
-<p>Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559129">IDE_POWER_STATE</a> that indicates the power state to which the indicated device should be changed. </p>
+<p>Contains an enumerator value of type <a href="..\irb\ne-irb-ide-power-state.md">IDE_POWER_STATE</a> that indicates the power state to which the indicated device should be changed. </p>
 </dd>
 </dl>
 
@@ -86,8 +86,6 @@ VOID AtaPortRequestPowerStateChange(
 <p>None </p>
 
 ## -remarks
-<p>The <b>AtaPortRequestPowerStateChange</b> routine is used when a miniport driver might have to initiate a power state change, such as when a hot-plug operation occurs. </p>
-
 <p>The <b>AtaPortRequestPowerStateChange</b> routine is used when a miniport driver might have to initiate a power state change, such as when a hot-plug operation occurs. </p>
 
 ## -requirements
@@ -117,7 +115,7 @@ VOID AtaPortRequestPowerStateChange(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559129">IDE_POWER_STATE</a>
+<a href="..\irb\ne-irb-ide-power-state.md">IDE_POWER_STATE</a>
 </dt>
 </dl>
 <p> </p>

@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetMaterial(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543319">D3DDDIARG_SETMATERIAL</a> structure that describes the material properties that are used for rendering.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setmaterial.md">D3DDDIARG_SETMATERIAL</a> structure that describes the material properties that are used for rendering.</p>
 </dd>
 </dl>
 
@@ -75,9 +75,7 @@ __checkReturn HRESULT APIENTRY SetMaterial(
 <p><i>SetMaterial</i> returns S_OK or an appropriate error result if the material properties are not successfully set.</p>
 
 ## -remarks
-<p>Material properties detail a material's diffuse reflection, ambient reflection, light emission, and specular highlighting characteristics. The Microsoft Direct3D runtime uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543319">D3DDDIARG_SETMATERIAL</a> structure to pass all of the material property information to the user-mode display driver. Material properties affect the colors that the Direct3D runtime uses to rasterize polygons that use the material. With the exception of the specular property, each of the properties is described as an RGBA color that represents how much of the red, green, and blue parts of a given type of light it reflects and an alpha blending factor (the alpha component of the RGBA color). The material's specular property is described in two parts: color and power. For more information about material properties, see the Microsoft Windows SDK documentation.</p>
-
-<p>Material properties detail a material's diffuse reflection, ambient reflection, light emission, and specular highlighting characteristics. The Microsoft Direct3D runtime uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543319">D3DDDIARG_SETMATERIAL</a> structure to pass all of the material property information to the user-mode display driver. Material properties affect the colors that the Direct3D runtime uses to rasterize polygons that use the material. With the exception of the specular property, each of the properties is described as an RGBA color that represents how much of the red, green, and blue parts of a given type of light it reflects and an alpha blending factor (the alpha component of the RGBA color). The material's specular property is described in two parts: color and power. For more information about material properties, see the Microsoft Windows SDK documentation.</p>
+<p>Material properties detail a material's diffuse reflection, ambient reflection, light emission, and specular highlighting characteristics. The Microsoft Direct3D runtime uses the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setmaterial.md">D3DDDIARG_SETMATERIAL</a> structure to pass all of the material property information to the user-mode display driver. Material properties affect the colors that the Direct3D runtime uses to rasterize polygons that use the material. With the exception of the specular property, each of the properties is described as an RGBA color that represents how much of the red, green, and blue parts of a given type of light it reflects and an alpha blending factor (the alpha component of the RGBA color). The material's specular property is described in two parts: color and power. For more information about material properties, see the Microsoft Windows SDK documentation.</p>
 
 ## -requirements
 <table>
@@ -114,10 +112,10 @@ __checkReturn HRESULT APIENTRY SetMaterial(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543319">D3DDDIARG_SETMATERIAL</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setmaterial.md">D3DDDIARG_SETMATERIAL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

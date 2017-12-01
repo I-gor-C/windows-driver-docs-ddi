@@ -57,7 +57,7 @@ typedef struct _SET_PARTITION_INFORMATION {
 ### -field <b>PartitionType</b>
 
 <dd>
-<p>Indicates the partition type. IOCTL_DISK_SET_PARTITION_INFO uses this value to set the partition type. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff563751">PARTITION_INFORMATION</a> for a list of system-defined GPT partition types.</p>
+<p>Indicates the partition type. IOCTL_DISK_SET_PARTITION_INFO uses this value to set the partition type. See <a href="..\ntdddisk\ns-ntdddisk--partition-information.md">PARTITION_INFORMATION</a> for a list of system-defined GPT partition types.</p>
 </dd>
 </dl>
 
@@ -81,19 +81,19 @@ typedef struct _SET_PARTITION_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566194">SET_PARTITION_INFORMATION_EX</a>
+<a href="..\ntdddisk\ns-ntdddisk--set-partition-information-ex.md">SET_PARTITION_INFORMATION_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566198">SET_PARTITION_INFORMATION_MBR</a>
+<a href="storage.set_partition_information_mbr">SET_PARTITION_INFORMATION_MBR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566196">SET_PARTITION_INFORMATION_GPT</a>
+<a href="storage.set_partition_information_gpt">SET_PARTITION_INFORMATION_GPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560413">IOCTL_DISK_SET_PARTITION_INFO</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-set-partition-info.md">IOCTL_DISK_SET_PARTITION_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561452">IoReadPartitionTable</a>
+<a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>
 </dt>
 </dl>
 <p> </p>

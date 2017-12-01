@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The STORAGE_MEDIA_TYPE enumeration is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560563">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> request to query the class driver for the types of media that a device supports.</p>
+<p>The STORAGE_MEDIA_TYPE enumeration is used in conjunction with the <a href="..\ntddstor\ni-ntddstor-ioctl-storage-get-media-types-ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> request to query the class driver for the types of media that a device supports.</p>
 
 
 ## -syntax
@@ -515,13 +515,13 @@ typedef enum _STORAGE_MEDIA_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552529">DEVICE_MEDIA_INFO</a>
+<a href="..\ntddstor\ns-ntddstor--device-media-info.md">DEVICE_MEDIA_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554987">GET_MEDIA_TYPES</a>
+<a href="..\ntddstor\ns-ntddstor--get-media-types.md">GET_MEDIA_TYPES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560563">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-get-media-types-ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
 </dt>
 </dl>
 <p> </p>

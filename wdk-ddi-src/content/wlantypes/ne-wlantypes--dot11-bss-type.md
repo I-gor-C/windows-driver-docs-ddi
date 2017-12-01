@@ -7,7 +7,7 @@ old-location: netvista\dot11_bss_type.htm
 old-project: netvista
 ms.assetid: 5cb263e2-e5b7-456f-9fef-deaf5434c404
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11EXT_IHV_SSID_LIST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: enum
 req.header: wlantypes.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -82,18 +81,6 @@ typedef enum _DOT11_BSS_TYPE {
     <b>dot11_BSS_type_any</b> is used to request a scan for all types of BSSs that are visible to the 802.11
     station.</p>
 
-<p>The 
-    <b>dot11_BSS_type_any</b> enumerator is valid only if it is specified when 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a> is set. 
-    <b>dot11_BSS_type_any</b> is used to request a scan for all types of BSSs that are visible to the 802.11
-    station.</p>
-
-<p>The 
-    <b>dot11_BSS_type_any</b> enumerator is valid only if it is specified when 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a> is set. 
-    <b>dot11_BSS_type_any</b> is used to request a scan for all types of BSSs that are visible to the 802.11
-    station.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -120,10 +107,10 @@ typedef enum _DOT11_BSS_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547630">DOT11EXT_IHV_PROFILE_PARAMS</a>
+<a href="..\wlanihvtypes\ns-wlanihvtypes--dot11ext-ihv-profile-params.md">DOT11EXT_IHV_PROFILE_PARAMS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547665">DOT11_BSS_ENTRY</a>
+<a href="..\windot11\ns-windot11-dot11-bss-entry.md">DOT11_BSS_ENTRY</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_dot11_connection_start">
@@ -141,4 +128,4 @@ typedef enum _DOT11_BSS_TYPE {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_TYPE enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

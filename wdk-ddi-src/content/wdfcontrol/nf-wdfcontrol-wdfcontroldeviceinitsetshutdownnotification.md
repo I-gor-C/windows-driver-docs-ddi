@@ -7,7 +7,7 @@ old-location: wdf\wdfcontroldeviceinitsetshutdownnotification.htm
 old-project: wdf
 ms.assetid: 43a5a017-f5de-4906-acbb-96419b4a3f1c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfControlDeviceInitSetShutdownNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ VOID WdfControlDeviceInitSetShutdownNotification(
 ### -param <i>DeviceInit</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure that the driver obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545841">WdfControlDeviceInitAllocate</a>.</p>
+<p>A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure that the driver obtained by calling <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitallocate.md">WdfControlDeviceInitAllocate</a>.</p>
 </dd>
 
 ### -param <i>Notification</i> [in]
@@ -73,7 +73,7 @@ VOID WdfControlDeviceInitSetShutdownNotification(
 ### -param <i>Flags</i> [in]
 
 <dd>
-<p>One or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff551282">WDF_DEVICE_SHUTDOWN_FLAGS</a>-typed flags that indicate when the <a href="wdf.evtdeviceshutdownnotification">EvtDeviceShutdownNotification</a> callback function will be called.</p>
+<p>One or more <a href="..\wdfcontrol\ne-wdfcontrol--wdf-device-shutdown-flags.md">WDF_DEVICE_SHUTDOWN_FLAGS</a>-typed flags that indicate when the <a href="wdf.evtdeviceshutdownnotification">EvtDeviceShutdownNotification</a> callback function will be called.</p>
 </dd>
 </dl>
 
@@ -81,13 +81,9 @@ VOID WdfControlDeviceInitSetShutdownNotification(
 <p>None</p>
 
 ## -remarks
-<p>The driver must call <b>WdfControlDeviceInitSetShutdownNotification</b> before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>. For more information about calling <b>WdfControlDeviceInitSetShutdownNotification</b>, see <a href="wdf.using_control_device_objects">Using Control Device Objects</a>.</p>
+<p>The driver must call <b>WdfControlDeviceInitSetShutdownNotification</b> before calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information about calling <b>WdfControlDeviceInitSetShutdownNotification</b>, see <a href="wdf.using_control_device_objects">Using Control Device Objects</a>.</p>
 
-<p>For a code example that uses <b>WdfControlDeviceInitSetShutdownNotification</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545841">WdfControlDeviceInitAllocate</a>.</p>
-
-<p>The driver must call <b>WdfControlDeviceInitSetShutdownNotification</b> before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>. For more information about calling <b>WdfControlDeviceInitSetShutdownNotification</b>, see <a href="wdf.using_control_device_objects">Using Control Device Objects</a>.</p>
-
-<p>For a code example that uses <b>WdfControlDeviceInitSetShutdownNotification</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545841">WdfControlDeviceInitAllocate</a>.</p>
+<p>For a code example that uses <b>WdfControlDeviceInitSetShutdownNotification</b>, see <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitallocate.md">WdfControlDeviceInitAllocate</a>.</p>
 
 ## -requirements
 <table>
@@ -142,7 +138,7 @@ VOID WdfControlDeviceInitSetShutdownNotification(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543531">ControlDeviceInitAPI</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_controldeviceinitapi">ControlDeviceInitAPI</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -153,15 +149,15 @@ VOID WdfControlDeviceInitSetShutdownNotification(
 <a href="wdf.evtdeviceshutdownnotification">EvtDeviceShutdownNotification</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551282">WDF_DEVICE_SHUTDOWN_FLAGS</a>
+<a href="..\wdfcontrol\ne-wdfcontrol--wdf-device-shutdown-flags.md">WDF_DEVICE_SHUTDOWN_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
+<a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfControlDeviceInitSetShutdownNotification method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfControlDeviceInitSetShutdownNotification method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

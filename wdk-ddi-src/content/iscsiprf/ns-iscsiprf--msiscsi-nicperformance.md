@@ -102,7 +102,7 @@ typedef struct _MSiSCSI_NICPerformance {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563089">MSiSCSI_NICPerformance WMI Class</a>
+<a href="storage.msiscsi_nicperformance_wmi_class">MSiSCSI_NICPerformance WMI Class</a>
 </dt>
 </dl>
 <p> </p>

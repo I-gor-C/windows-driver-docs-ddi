@@ -58,7 +58,7 @@ HBA_STATUS HBA_API HBA_RemoveAllPersistentBindings(
 ### -param <i>Handle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
 ### -param <i>HbaPortWWN</i> [in]
@@ -69,7 +69,7 @@ HBA_STATUS HBA_API HBA_RemoveAllPersistentBindings(
 </dl>
 
 ## -returns
-<p>The <b>HBA_RemoveAllPersistentBindings</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_RemoveAllPersistentBindings</b> returns one of the following values.</p><dl>
+<p>The <b>HBA_RemoveAllPersistentBindings</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_RemoveAllPersistentBindings</b> returns one of the following values.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if all persistent bindings were successfully removed for the indicated port. </p><dl>
 <dt><b>HBA_STATUS_ERROR_ILLEGAL_WWN</b></dt>
@@ -82,8 +82,6 @@ HBA_STATUS HBA_API HBA_RemoveAllPersistentBindings(
 <p> </p>
 
 ## -remarks
-<p>The removal of persistent bindings does not change target mappings until the operating system is restarted or HBA and/or fabric is reinitialized. </p>
-
 <p>The removal of persistent bindings does not change target mappings until the operating system is restarted or HBA and/or fabric is reinitialized. </p>
 
 ## -requirements
@@ -133,10 +131,10 @@ HBA_STATUS HBA_API HBA_RemoveAllPersistentBindings(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

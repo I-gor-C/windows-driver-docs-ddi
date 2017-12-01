@@ -69,19 +69,19 @@ typedef struct _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS {
 ### -field <b>EvtUsbDeviceLinkPowerEntry</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595910">EVT_UDECX_USB_DEVICE_D0_ENTRY</a> callback function implemented by a UDE client driver.</p>
+<p>A pointer to an <a href="buses.evt_udecx_usb_device_d0_entry">EVT_UDECX_USB_DEVICE_D0_ENTRY</a> callback function implemented by a UDE client driver.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceLinkPowerExit</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595911">EVT_UDECX_USB_DEVICE_D0_EXIT</a> callback function implemented by a UDE client driver.</p>
+<p>A pointer to an <a href="buses.evt_udecx_usb_device_d0_exit">EVT_UDECX_USB_DEVICE_D0_EXIT</a> callback function implemented by a UDE client driver.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceDefaultEndpointAdd</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595912">EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD</a> callback function implemented by a UDE client driver.</p>
+<p>A pointer to an <a href="buses.evt_udecx_usb_device_default_endpoint_add">EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD</a> callback function implemented by a UDE client driver.</p>
 </dd>
 
 ### -field <b>EvtUsbDeviceEndpointAdd</b>
@@ -93,7 +93,7 @@ typedef struct _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS {
 ### -field <b>EvtUsbDeviceEndpointsConfigure</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595913">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a> callback function implemented by a UDE client driver.</p>
+<p>A pointer to an <a href="buses.evt_udecx_usb_device_endpoints_configure">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a> callback function implemented by a UDE client driver.</p>
 </dd>
 </dl>
 
@@ -117,7 +117,7 @@ typedef struct _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627972">UdecxUsbDeviceInitSetStateChangeCallbacks</a>
+<a href="buses.udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a>
 </dt>
 </dl>
 <p> </p>

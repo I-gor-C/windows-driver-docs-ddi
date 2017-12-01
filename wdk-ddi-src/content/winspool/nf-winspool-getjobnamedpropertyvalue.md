@@ -29,8 +29,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 req.lib: WinSpool.lib
-req.dll: Spoolss.dll; 
-WinSpool.drv
+req.dll: Spoolss.dll; WinSpool.drv
 req.irql: 
 req.iface: 
 req.product: Windows 10 or later.
@@ -84,7 +83,7 @@ DWORD WINAPI GetJobNamedPropertyValue(
 ### -param <i>pValue</i> [out]
 
 <dd>
-<p>Value of the named property. The caller needs to free this using the <a href="https://msdn.microsoft.com/library/windows/hardware/mt299058">FreePrintPropertyValue</a> function. 
+<p>Value of the named property. The caller needs to free this using the <a href="..\winspool\nf-winspool-freeprintpropertyvalue.md">FreePrintPropertyValue</a> function. 
 </p>
 </dd>
 </dl>

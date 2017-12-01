@@ -119,7 +119,7 @@ typedef struct _SRBEX_DATA_SCSI_CDB_VAR {
 </dl>
 
 ## -remarks
-<p>For CDB data sizes less than 32 bytes, the <a href="https://msdn.microsoft.com/library/windows/hardware/hh920415">SRBEX_DATA_SCSI_CDB32</a> structure, and possibly the <a href="https://msdn.microsoft.com/library/windows/hardware/hh920414">SRBEX_DATA_SCSI_CDB16</a> structure, may be used instead. The maximum CDB data allowed in the <b>Cdb</b> array is SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MAX - SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MIN + 1. The length specified in <b>CdbLength</b> must be less than or equal to this value.</p>
+<p>For CDB data sizes less than 32 bytes, the <a href="..\srb\ns-srb--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a> structure, and possibly the <a href="..\srb\ns-srb--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a> structure, may be used instead. The maximum CDB data allowed in the <b>Cdb</b> array is SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MAX - SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MIN + 1. The length specified in <b>CdbLength</b> must be less than or equal to this value.</p>
 
 ## -requirements
 <table>
@@ -146,13 +146,13 @@ typedef struct _SRBEX_DATA_SCSI_CDB_VAR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920414">SRBEX_DATA_SCSI_CDB16</a>
+<a href="..\srb\ns-srb--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920415">SRBEX_DATA_SCSI_CDB32</a>
+<a href="..\srb\ns-srb--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451474">STORAGE_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

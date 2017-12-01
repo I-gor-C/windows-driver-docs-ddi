@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTSetAllocationPriority(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548262">D3DKMT_SETALLOCATIONPRIORITY</a> structure that contains information for setting the priority level of a resource or list of allocations.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setallocationpriority.md">D3DKMT_SETALLOCATIONPRIORITY</a> structure that contains information for setting the priority level of a resource or list of allocations.</p>
 </dd>
 </dl>
 
@@ -75,8 +75,6 @@ NTSTATUS APIENTRY D3DKMTSetAllocationPriority(
 <p>This function might also return other NTSTATUS values.</p>
 
 ## -remarks
-<p>The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTSetAllocationPriority</b> to set the priority level of a resource (and therefore all of the allocations that are associated with the resource).</p>
-
 <p>The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTSetAllocationPriority</b> to set the priority level of a resource (and therefore all of the allocations that are associated with the resource).</p>
 
 ## -requirements
@@ -134,7 +132,7 @@ NTSTATUS APIENTRY D3DKMTSetAllocationPriority(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548262">D3DKMT_SETALLOCATIONPRIORITY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-setallocationpriority.md">D3DKMT_SETALLOCATIONPRIORITY</a>
 </dt>
 </dl>
 <p> </p>

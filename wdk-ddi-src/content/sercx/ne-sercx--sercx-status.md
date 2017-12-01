@@ -72,16 +72,12 @@ typedef enum _SERCX_STATUS {
 ### -field <a id="SerCxStatusTimeout"></a><a id="sercxstatustimeout"></a><a id="SERCXSTATUSTIMEOUT"></a><b>SerCxStatusTimeout</b>
 
 <dd>
-<p>The operation timed out. This enumeration value applies only to read interval time-outs for receive operations. For more information, see the description of the <b>ReadIntervalTimeout</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439614">SERIAL_TIMEOUTS</a>.</p>
+<p>The operation timed out. This enumeration value applies only to read interval time-outs for receive operations. For more information, see the description of the <b>ReadIntervalTimeout</b> member in <a href="..\ntddser\ns-ntddser--serial-timeouts.md">SERIAL_TIMEOUTS</a>.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406713">SerCxProgressReceive</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh406715">SerCxProgressTransmit</a> methods have parameters that are <b>SERCX_STATUS</b> enumeration values.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406713">SerCxProgressReceive</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh406715">SerCxProgressTransmit</a> methods have parameters that are <b>SERCX_STATUS</b> enumeration values.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406713">SerCxProgressReceive</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh406715">SerCxProgressTransmit</a> methods have parameters that are <b>SERCX_STATUS</b> enumeration values.</p>
+<p>The <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a> and <a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a> methods have parameters that are <b>SERCX_STATUS</b> enumeration values.</p>
 
 ## -requirements
 <table>
@@ -108,13 +104,13 @@ typedef enum _SERCX_STATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406713">SerCxProgressReceive</a>
+<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406715">SerCxProgressTransmit</a>
+<a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439614">SERIAL_TIMEOUTS</a>
+<a href="..\ntddser\ns-ntddser--serial-timeouts.md">SERIAL_TIMEOUTS</a>
 </dt>
 </dl>
 <p> </p>

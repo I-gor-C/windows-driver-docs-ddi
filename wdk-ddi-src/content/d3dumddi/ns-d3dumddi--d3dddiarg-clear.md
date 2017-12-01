@@ -60,7 +60,7 @@ typedef struct _D3DDDIARG_CLEAR {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A UINT value that specifies which buffers the driver should clear and how the clear operation should be performed. This member can be a bitwise OR of the following values. For more information, see the Remarks section in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406339">Clear</a> reference page.</p>
+<p>[in] A UINT value that specifies which buffers the driver should clear and how the clear operation should be performed. This member can be a bitwise OR of the following values. For more information, see the Remarks section in the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-clear.md">Clear</a> reference page.</p>
 <table>
 <tr>
 <th>Value</th>
@@ -122,7 +122,7 @@ typedef struct _D3DDDIARG_CLEAR {
 </dl>
 
 ## -remarks
-<p>In a call to the user-mode display driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh406339">Clear</a> function, a pointer to a D3DDDIARG_CLEAR structure is passed in the <i>pData</i> parameter. The Microsoft Direct3D runtime passes information to the <i>NumRect</i> and <i>pRect</i> parameters in a call to the user-mode display driver's <b>Clear</b> function to specify the rectangular areas of the buffer that the driver should clear.</p>
+<p>In a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-clear.md">Clear</a> function, a pointer to a D3DDDIARG_CLEAR structure is passed in the <i>pData</i> parameter. The Microsoft Direct3D runtime passes information to the <i>NumRect</i> and <i>pRect</i> parameters in a call to the user-mode display driver's <b>Clear</b> function to specify the rectangular areas of the buffer that the driver should clear.</p>
 
 ## -requirements
 <table>
@@ -149,7 +149,7 @@ typedef struct _D3DDDIARG_CLEAR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406339">Clear</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-clear.md">Clear</a>
 </dt>
 </dl>
 <p> </p>

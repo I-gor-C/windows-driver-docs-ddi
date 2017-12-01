@@ -39,35 +39,35 @@ req.iface:
 
 
 ## -description
-<p>This IOCTL is identical in input and output to <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>. The difference is that <b>IOCTL_MOUNTMGR_DELETE_POINTS_DBONLY</b> has the side effect of deleting the mount manager database entries for the triples returned. However, the mount manager does not delete the symbolic links corresponding to the database entries.</p>
+<p>This IOCTL is identical in input and output to <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>. The difference is that <b>IOCTL_MOUNTMGR_DELETE_POINTS_DBONLY</b> has the side effect of deleting the mount manager database entries for the triples returned. However, the mount manager does not delete the symbolic links corresponding to the database entries.</p>
 <p>If the input to this IOCTL is ("\DosDevices\X:", <b>NULL</b>, <b>NULL</b>), where X is the current drive letter for the volume indicated in the input triple, the mount manager adds a special entry to its database indicating that the client does not require a drive letter. On subsequent reboots, the mount manager will not assign a default drive letter to the volume.</p>
 
 
 ## -ioctlparameters
 
 ### -input-buffer
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
 ### -input-buffer-length
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
 ### -output-buffer
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
 ### -output-buffer-length
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
 ### -in-out-buffer
 
@@ -79,15 +79,15 @@ req.iface:
 
 ### -status-block
 I/O Status block
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
+<p>See <a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>.</p>
 
 ## -remarks
 
@@ -109,7 +109,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>
+<a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>
 </dt>
 </dl>
 <p> </p>

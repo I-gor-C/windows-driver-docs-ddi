@@ -7,7 +7,7 @@ old-location: netvista\filtercanceloidrequest.htm
 old-project: netvista
 ms.assetid: e7e3f67e-5353-4355-bf19-8a8041cafc84
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,14 +64,14 @@ VOID FilterCancelOidRequest(
 <dd>
 <p>A handle to the context area for the filter module that is the target of this request. The filter
      driver created and initialized this context area in the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function.</p>
+     <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
 ### -param <i>RequestId</i> [in]
 
 <dd>
 <p>A cancellation identifier for the request. This identifier specifies the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structures that are being
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structures that are being
      canceled.</p>
 </dd>
 </dl>
@@ -87,11 +87,11 @@ VOID FilterCancelOidRequest(
 
 <p>When NDIS calls 
     <i>FilterCancelOidRequest</i>, the filter driver should attempt to call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561833">NdisFOidRequestComplete</a> function
+    <a href="..\ndis\nf-ndis-ndisfoidrequestcomplete.md">NdisFOidRequestComplete</a> function
     as soon as possible.</p>
 
 <p>The request parameters are defined in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure at 
+    <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure at 
     <i>OidRequest</i> .</p>
 
 <p>If a filter driver does not queue OID requests, the driver is not required to provide a 
@@ -109,53 +109,7 @@ VOID FilterCancelOidRequest(
 
 <p>If the filter driver forwarded the request to an underlying driver and the processing is still not
     complete, the filter driver calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561792">NdisFCancelOidRequest</a> function with
-    the 
-    <i>OidRequest</i> parameter set to the value that it sent to the underlying driver.</p>
-
-<p>NDIS calls
-    <i>FilterCancelOidRequest</i> at IRQL &lt;= DISPATCH_LEVEL.</p>
-
-<p>To define a <i>FilterCancelOidRequest</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define a <i>FilterCancelOidRequest</i> function that is named "MyCancelOidRequest", use the <b>FILTER_CANCEL_OID_REQUEST</b> type as shown in this code example:</p>
-
-<p>Then, implement your function as follows:</p>
-
-<p>The <b>FILTER_CANCEL_OID_REQUEST</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>FILTER_CANCEL_OID_REQUEST</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
-
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. </p>
-
-<p><i>FilterCancelOidRequest</i> is an optional function. If a filter driver does not use OID requests, it
-    can set the entry point for this function to <b>NULL</b> when it calls the 
-    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
-    NdisFRegisterFilterDriver</a> function.</p>
-
-<p>When NDIS calls 
-    <i>FilterCancelOidRequest</i>, the filter driver should attempt to call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561833">NdisFOidRequestComplete</a> function
-    as soon as possible.</p>
-
-<p>The request parameters are defined in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure at 
-    <i>OidRequest</i> .</p>
-
-<p>If a filter driver does not queue OID requests, the driver is not required to provide a 
-    <i>FilterCancelOidRequest</i> function. If the filter driver does not specify a 
-    <i>FilterCancelOidRequest</i> entry point, NDIS calls the cancel OID request function of the underlying
-    driver.</p>
-
-<p>NDIS calls the 
-    <i>FilterCancelOidRequest</i> function either when the originator of the request cancels the request or
-    when the time-out specified at the 
-    <b>Timeout</b> member expires.</p>
-
-<p>If the request processing is still not complete in a filter driver, the driver calls the 
-    <b>NdisFOidRequestComplete</b> function with the status set to NDIS_STATUS_REQUEST_ABORTED.</p>
-
-<p>If the filter driver forwarded the request to an underlying driver and the processing is still not
-    complete, the filter driver calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561792">NdisFCancelOidRequest</a> function with
+    <a href="..\ndis\nf-ndis-ndisfcanceloidrequest.md">NdisFCancelOidRequest</a> function with
     the 
     <i>OidRequest</i> parameter set to the value that it sent to the underlying driver.</p>
 
@@ -205,21 +159,21 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561792">NdisFCancelOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisfcanceloidrequest.md">NdisFCancelOidRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562608">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561833">NdisFOidRequestComplete</a>
+<a href="..\ndis\nf-ndis-ndisfoidrequestcomplete.md">NdisFOidRequestComplete</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_CANCEL_OID_REQUEST callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FILTER_CANCEL_OID_REQUEST callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetpipe.htm
 old-project: wdf
 ms.assetid: 16364b13-d902-4ba3-8d0a-c044946afa1e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFUsbTargetPipe2, ConfigureContinuousReader, IWDFUsbTargetPipe2::ConfigureContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,23 +48,23 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUsbTargetPipe</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559170">IWDFIoTarget</a>. <b>IWDFUsbTargetPipe</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUsbTargetPipe</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>. <b>IWDFUsbTargetPipe</b> also has these types of members:</p>
 
 <p>The <b>IWDFUsbTargetPipe</b> interface has these methods.</p>
 
 <p>The <a href="wdf.iwdfusbtargetpipe_abort">Abort</a> method aborts all pending transfers on a USB pipe.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a> method discards any data that WinUsb saved when the device returned more data than the client requested.</p>
+<p>The <a href="wdf.iwdfusbtargetpipe_flush">Flush</a> method discards any data that WinUsb saved when the device returned more data than the client requested.</p>
 
 <p>The <a href="wdf.iwdfusbtargetpipe_getinformation">GetInformation</a> method retrieves information about a USB pipe (endpoint).</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a> method retrieves the type of a USB pipe.</p>
+<p>The <a href="wdf.iwdfusbtargetpipe_gettype">GetType</a> method retrieves the type of a USB pipe.</p>
 
 <p>The <a href="wdf.iwdfusbtargetpipe_isinendpoint">IsInEndPoint</a> method determines whether a USB pipe (endpoint) is an IN pipe.</p>
 
 <p>The <a href="wdf.iwdfusbtargetpipe_isoutendpoint">IsOutEndPoint</a> method determines whether a USB pipe (endpoint) is an OUT pipe.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn926942">Reset</a> method resets the data toggle and clears the stall condition on a USB pipe.</p>
+<p>The <a href="wdf.iwdfusbtargetpipe_reset">Reset</a> method resets the data toggle and clears the stall condition on a USB pipe.</p>
 
 <p>The <a href="wdf.iwdfusbtargetpipe_retrievepipepolicy">RetrievePipePolicy</a> method retrieves a WinUsb pipe policy.</p>
 
@@ -80,7 +80,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560397">IWDFUsbTargetPipe::Abort</a>
+<a href="wdf.iwdfusbtargetpipe_abort">IWDFUsbTargetPipe::Abort</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetpipe_abort">Abort</a> method aborts all pending transfers on a USB pipe.</p>
@@ -88,15 +88,15 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560400">IWDFUsbTargetPipe::Flush</a>
+<a href="wdf.iwdfusbtargetpipe_flush">IWDFUsbTargetPipe::Flush</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a> method discards any data that WinUsb saved when the device returned more data than the client requested.</p>
+<p>The <a href="wdf.iwdfusbtargetpipe_flush">Flush</a> method discards any data that WinUsb saved when the device returned more data than the client requested.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560403">IWDFUsbTargetPipe::GetInformation</a>
+<a href="wdf.iwdfusbtargetpipe_getinformation">IWDFUsbTargetPipe::GetInformation</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetpipe_getinformation">GetInformation</a> method retrieves information about a USB pipe (endpoint).</p>
@@ -104,15 +104,15 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560406">IWDFUsbTargetPipe::GetType</a>
+<a href="wdf.iwdfusbtargetpipe_gettype">IWDFUsbTargetPipe::GetType</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a> method retrieves the type of a USB pipe.</p>
+<p>The <a href="wdf.iwdfusbtargetpipe_gettype">GetType</a> method retrieves the type of a USB pipe.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560410">IWDFUsbTargetPipe::IsInEndPoint</a>
+<a href="wdf.iwdfusbtargetpipe_isinendpoint">IWDFUsbTargetPipe::IsInEndPoint</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetpipe_isinendpoint">IsInEndPoint</a> method determines whether a USB pipe (endpoint) is an IN pipe.</p>
@@ -120,7 +120,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560414">IWDFUsbTargetPipe::IsOutEndPoint</a>
+<a href="wdf.iwdfusbtargetpipe_isoutendpoint">IWDFUsbTargetPipe::IsOutEndPoint</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetpipe_isoutendpoint">IsOutEndPoint</a> method determines whether a USB pipe (endpoint) is an OUT pipe.</p>
@@ -128,15 +128,15 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560416">IWDFUsbTargetPipe::Reset</a>
+<a href="wdf.iwdfusbtargetpipe_reset">IWDFUsbTargetPipe::Reset</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn926942">Reset</a> method resets the data toggle and clears the stall condition on a USB pipe.</p>
+<p>The <a href="wdf.iwdfusbtargetpipe_reset">Reset</a> method resets the data toggle and clears the stall condition on a USB pipe.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560418">IWDFUsbTargetPipe::RetrievePipePolicy</a>
+<a href="wdf.iwdfusbtargetpipe_retrievepipepolicy">IWDFUsbTargetPipe::RetrievePipePolicy</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetpipe_retrievepipepolicy">RetrievePipePolicy</a> method retrieves a WinUsb pipe policy.</p>
@@ -144,7 +144,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560421">IWDFUsbTargetPipe::SetPipePolicy</a>
+<a href="wdf.iwdfusbtargetpipe_setpipepolicy">IWDFUsbTargetPipe::SetPipePolicy</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfusbtargetpipe_setpipepolicy">SetPipePolicy</a> method sets the WinUsb pipe policy.</p>
@@ -152,17 +152,17 @@ req.product: Windows 10 or later.
 </tr>
 </table><p>The <a href="wdf.iwdfusbtargetpipe_abort">Abort</a> method aborts all pending transfers on a USB pipe.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a> method discards any data that WinUsb saved when the device returned more data than the client requested.</p>
+<p>The <a href="wdf.iwdfusbtargetpipe_flush">Flush</a> method discards any data that WinUsb saved when the device returned more data than the client requested.</p>
 
 <p>The <a href="wdf.iwdfusbtargetpipe_getinformation">GetInformation</a> method retrieves information about a USB pipe (endpoint).</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a> method retrieves the type of a USB pipe.</p>
+<p>The <a href="wdf.iwdfusbtargetpipe_gettype">GetType</a> method retrieves the type of a USB pipe.</p>
 
 <p>The <a href="wdf.iwdfusbtargetpipe_isinendpoint">IsInEndPoint</a> method determines whether a USB pipe (endpoint) is an IN pipe.</p>
 
 <p>The <a href="wdf.iwdfusbtargetpipe_isoutendpoint">IsOutEndPoint</a> method determines whether a USB pipe (endpoint) is an OUT pipe.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn926942">Reset</a> method resets the data toggle and clears the stall condition on a USB pipe.</p>
+<p>The <a href="wdf.iwdfusbtargetpipe_reset">Reset</a> method resets the data toggle and clears the stall condition on a USB pipe.</p>
 
 <p>The <a href="wdf.iwdfusbtargetpipe_retrievepipepolicy">RetrievePipePolicy</a> method retrieves a WinUsb pipe policy.</p>
 

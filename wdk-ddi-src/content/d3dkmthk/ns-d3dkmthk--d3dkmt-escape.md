@@ -95,7 +95,7 @@ typedef struct _D3DKMT_ESCAPE {
 </td>
 <td>
 <p><b>Do not use. For testing purposes only.</b></p>
-<p>The OpenGL ICD controls the video memory manager (which is part of <i>Dxgkrnl.sys</i>). The buffer that <b>pPrivateDriverData</b> points to contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548410">D3DKMT_VIDMM_ESCAPE</a> structure that supports various types of control of the video memory manager.</p>
+<p>The OpenGL ICD controls the video memory manager (which is part of <i>Dxgkrnl.sys</i>). The buffer that <b>pPrivateDriverData</b> points to contains a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-vidmm-escape.md">D3DKMT_VIDMM_ESCAPE</a> structure that supports various types of control of the video memory manager.</p>
 </td>
 </tr>
 <tr>
@@ -106,7 +106,7 @@ typedef struct _D3DKMT_ESCAPE {
 <p><b>Do not use. For testing purposes only.</b></p>
 <p>The escape operation lets the user control the behavior of the operating system's Timeout Detection and Recovery (TDR) process. </p>
 <p>This functionality is disabled by default. To enable this functionality, the TdrTestMode<b></b> = TdrTestMode DWORD registry value, which is stored in the HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers key, must be set to 1.</p>
-<p>The <b>PrivateDriverDataSize</b> member is set to <b>sizeof</b>(int). The <b>pPrivateDriverData</b> member is set to an integer with a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548373">D3DKMT_TDRDBGCTRLTYPE</a> enumeration type.</p>
+<p>The <b>PrivateDriverDataSize</b> member is set to <b>sizeof</b>(int). The <b>pPrivateDriverData</b> member is set to an integer with a value from the <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-tdrdbgctrltype.md">D3DKMT_TDRDBGCTRLTYPE</a> enumeration type.</p>
 </td>
 </tr>
 <tr>
@@ -115,7 +115,7 @@ typedef struct _D3DKMT_ESCAPE {
 </td>
 <td>
 <p><b>Do not use. For testing purposes only.</b></p>
-<p>The OpenGL ICD controls the graphics processing unit (GPU) scheduler (which is part of <i>Dxgkrnl.sys</i>). The buffer that <b>pPrivateDriverData</b> points to contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548413">D3DKMT_VIDSCH_ESCAPE</a> structure that supports preemption control and suspending or resuming the scheduler.</p>
+<p>The OpenGL ICD controls the graphics processing unit (GPU) scheduler (which is part of <i>Dxgkrnl.sys</i>). The buffer that <b>pPrivateDriverData</b> points to contains a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-vidsch-escape.md">D3DKMT_VIDSCH_ESCAPE</a> structure that supports preemption control and suspending or resuming the scheduler.</p>
 </td>
 </tr>
 <tr>
@@ -124,7 +124,7 @@ typedef struct _D3DKMT_ESCAPE {
 </td>
 <td>
 <p><b>Do not use. For testing purposes only.</b></p>
-<p>The OpenGL ICD controls the display device. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547926">D3DKMT_DEVICE_ESCAPE</a> structure that supports obtaining the video present source from the primary allocation.</p>
+<p>The OpenGL ICD controls the display device. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-device-escape.md">D3DKMT_DEVICE_ESCAPE</a> structure that supports obtaining the video present source from the primary allocation.</p>
 </td>
 </tr>
 <tr>
@@ -133,7 +133,7 @@ typedef struct _D3DKMT_ESCAPE {
 </td>
 <td>
 <p><b>Do not use. For testing purposes only.</b></p>
-<p>The OpenGL ICD controls the display mode manager. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547953">D3DKMT_DMM_ESCAPE</a> structure.</p>
+<p>The OpenGL ICD controls the display mode manager. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-dmm-escape.md">D3DKMT_DMM_ESCAPE</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -142,7 +142,7 @@ typedef struct _D3DKMT_ESCAPE {
 </td>
 <td>
 <p><b>Do not use. For testing purposes only.</b></p>
-<p>The OpenGL ICD retrieves a debug snapshot buffer. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547865">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a> structure.</p>
+<p>The OpenGL ICD retrieves a debug snapshot buffer. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-debug-snapshot-escape.md">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -349,7 +349,7 @@ typedef struct _D3DKMT_ESCAPE {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544541">D3DDDI_ESCAPEFLAGS</a> structure that indicates, in bit-field flags, how to share information. The OpenGL ICD should specify the <b>HardwareAccess</b> bit-field flag to indicate that the display miniport driver must access graphics hardware in such a way that the operating system must perform the <a href="https://msdn.microsoft.com/2b7c1eae-6527-469e-a2fa-74d2a1246bd3">second level of synchronization</a> into the display miniport driver for the <a href="display.dxgkddiescape">DxgkDdiEscape</a> call. </p>
+<p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-escapeflags.md">D3DDDI_ESCAPEFLAGS</a> structure that indicates, in bit-field flags, how to share information. The OpenGL ICD should specify the <b>HardwareAccess</b> bit-field flag to indicate that the display miniport driver must access graphics hardware in such a way that the operating system must perform the <a href="https://msdn.microsoft.com/2b7c1eae-6527-469e-a2fa-74d2a1246bd3">second level of synchronization</a> into the display miniport driver for the <a href="display.dxgkddiescape">DxgkDdiEscape</a> call. </p>
 </dd>
 
 ### -field <b>pPrivateDriverData</b>
@@ -375,7 +375,7 @@ typedef struct _D3DKMT_ESCAPE {
 </td>
 <td>
 <p><b>Do not use. For testing purposes only.</b></p>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548410">D3DKMT_VIDMM_ESCAPE</a> structure.</p>
+<p>A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-vidmm-escape.md">D3DKMT_VIDMM_ESCAPE</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -384,7 +384,7 @@ typedef struct _D3DKMT_ESCAPE {
 </td>
 <td>
 <p><b>Do not use. For testing purposes only.</b></p>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548373">D3DKMT_TDRDBGCTRLTYPE</a> enumeration type.</p>
+<p>A <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-tdrdbgctrltype.md">D3DKMT_TDRDBGCTRLTYPE</a> enumeration type.</p>
 </td>
 </tr>
 <tr>
@@ -393,7 +393,7 @@ typedef struct _D3DKMT_ESCAPE {
 </td>
 <td>
 <p><b>Do not use. For testing purposes only.</b></p>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548413">D3DKMT_VIDSCH_ESCAPE</a> structure.</p>
+<p>A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-vidsch-escape.md">D3DKMT_VIDSCH_ESCAPE</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -402,7 +402,7 @@ typedef struct _D3DKMT_ESCAPE {
 </td>
 <td>
 <p><b>Do not use. For testing purposes only.</b></p>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547926">D3DKMT_DEVICE_ESCAPE</a> structure.</p>
+<p>A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-device-escape.md">D3DKMT_DEVICE_ESCAPE</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -411,7 +411,7 @@ typedef struct _D3DKMT_ESCAPE {
 </td>
 <td>
 <p><b>Do not use. For testing purposes only.</b></p>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547953">D3DKMT_DMM_ESCAPE</a> structure.</p>
+<p>A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-dmm-escape.md">D3DKMT_DMM_ESCAPE</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ typedef struct _D3DKMT_ESCAPE {
 </td>
 <td>
 <p><b>Do not use. For testing purposes only.</b></p>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547865">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a> structure.</p>
+<p>A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-debug-snapshot-escape.md">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a> structure.</p>
 </td>
 </tr>
 </table>
@@ -430,7 +430,7 @@ typedef struct _D3DKMT_ESCAPE {
 ### -field <b>PrivateDriverDataSize</b>
 
 <dd>
-<p>[in] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to. The OpenGL ICD must specify the size of the buffer when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546940">D3DKMTEscape</a> function.</p>
+<p>[in] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to. The OpenGL ICD must specify the size of the buffer when it calls the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function.</p>
 </dd>
 
 ### -field <b>hContext</b>
@@ -441,7 +441,7 @@ typedef struct _D3DKMT_ESCAPE {
 </dl>
 
 ## -remarks
-<p>For testing purposes, the OpenGL ICD can pass a pointer to a D3DKMT_ESCAPE structure in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546940">D3DKMTEscape</a> function to control the video memory manager and GPU scheduler (which are part of <i>Dxgkrnl.sys</i>) and the behavior of the operating system's TDR process. </p>
+<p>For testing purposes, the OpenGL ICD can pass a pointer to a D3DKMT_ESCAPE structure in a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function to control the video memory manager and GPU scheduler (which are part of <i>Dxgkrnl.sys</i>) and the behavior of the operating system's TDR process. </p>
 
 ## -requirements
 <table>
@@ -468,25 +468,25 @@ typedef struct _D3DKMT_ESCAPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547865">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-debug-snapshot-escape.md">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547926">D3DKMT_DEVICE_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-device-escape.md">D3DKMT_DEVICE_ESCAPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547953">D3DKMT_DMM_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-dmm-escape.md">D3DKMT_DMM_ESCAPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548373">D3DKMT_TDRDBGCTRLTYPE</a>
+<a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-tdrdbgctrltype.md">D3DKMT_TDRDBGCTRLTYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548410">D3DKMT_VIDMM_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-vidmm-escape.md">D3DKMT_VIDMM_ESCAPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548413">D3DKMT_VIDSCH_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-vidsch-escape.md">D3DKMT_VIDSCH_ESCAPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546940">D3DKMTEscape</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
 </dt>
 </dl>
 <p> </p>

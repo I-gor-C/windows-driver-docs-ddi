@@ -59,24 +59,24 @@ HBA_STATUS HBA_API HBA_GetFCPStatistics(
 ### -param <i>handle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
 ### -param <i>lunit</i> [in]
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557191">HBA_ScsiId</a> that contains information used by the operating system to identify a SCSI logical unit. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a> that contains information used by the operating system to identify a SCSI logical unit. </p>
 </dd>
 
 ### -param <i>statistics</i> [out]
 
 <dd>
-<p>Contains, on return, a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556051">HBA_FC4Statistics</a> that holds the traffic statistics that the FCP protocol has collected for the indicated logical unit. </p>
+<p>Contains, on return, a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fc4statistics.md">HBA_FC4Statistics</a> that holds the traffic statistics that the FCP protocol has collected for the indicated logical unit. </p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_GetFCPStatistics</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetFCPStatistics</b> returns one of the following qualifiers.</p><dl>
+<p>The <b>HBA_GetFCPStatistics</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetFCPStatistics</b> returns one of the following qualifiers.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the FCP statistics were successfully retrieved for the HBA referenced by <i>handle</i>.</p><dl>
 <dt><b>HBA_STATUS_ERROR_INVALID_LUN</b></dt>
@@ -89,8 +89,6 @@ HBA_STATUS HBA_API HBA_GetFCPStatistics(
 <p> </p>
 
 ## -remarks
-<p>Statistics counters in HBA_FC4Statistics are 64-bit signed integers that wrap to zero on exceeding 2**63-1. If an HBA does not support a specific statistic, it returns a value with every bit set to 1 for that statistic. For an explanation of how the counter values are determined, see the T11 committee's <i>Fibre Channel Generic Services - 4 </i>specification. </p>
-
 <p>Statistics counters in HBA_FC4Statistics are 64-bit signed integers that wrap to zero on exceeding 2**63-1. If an HBA does not support a specific statistic, it returns a value with every bit set to 1 for that statistic. For an explanation of how the counter values are determined, see the T11 committee's <i>Fibre Channel Generic Services - 4 </i>specification. </p>
 
 ## -requirements
@@ -140,16 +138,16 @@ HBA_STATUS HBA_API HBA_GetFCPStatistics(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556051">HBA_FC4Statistics</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fc4statistics.md">HBA_FC4Statistics</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557191">HBA_ScsiId</a>
+<a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

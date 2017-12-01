@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <i>pfnGetAdditionalMonitorModeSet</i> function, available in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7, returns a handle to an additional monitor source mode set object that is associated with a specified monitor.</p>
+<p>The <i>pfnGetAdditionalMonitorModeSet</i> function, available in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface-v2.md">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7, returns a handle to an additional monitor source mode set object that is associated with a specified monitor.</p>
 
 
 ## -prototype
@@ -81,7 +81,7 @@ NTSTATUS APIENTRY pfnGetAdditionalMonitorModeSet(
 ### -param <i>ppAdditionalModesSet</i> [out]
 
 <dd>
-<p>[out] A pointer to a variable that receives a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562060">DXGK_TARGETMODE_DETAIL_TIMING</a> structure. The structure describes a video present target's additional timing modes that are compatible with the display device.</p>
+<p>[out] A pointer to a variable that receives a pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-targetmode-detail-timing.md">DXGK_TARGETMODE_DETAIL_TIMING</a> structure. The structure describes a video present target's additional timing modes that are compatible with the display device.</p>
 </dd>
 </dl>
 
@@ -101,11 +101,7 @@ NTSTATUS APIENTRY pfnGetAdditionalMonitorModeSet(
 <p> </p>
 
 ## -remarks
-<p>VidPN target identifiers are assigned by the display miniport driver. The <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a> function, implemented by the display miniport driver, returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561001">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.</p>
-
-<p>This function is available beginning with Windows 7.</p>
-
-<p>VidPN target identifiers are assigned by the display miniport driver. The <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a> function, implemented by the display miniport driver, returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561001">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.</p>
+<p>VidPN target identifiers are assigned by the display miniport driver. The <a href="display.dxgkddiquerychildrelations">DxgkDdiQueryChildRelations</a> function, implemented by the display miniport driver, returns an array of <a href="..\dispmprt\ns-dispmprt--dxgk-child-descriptor.md">DXGK_CHILD_DESCRIPTOR</a> structures, each of which contains an identifier.</p>
 
 <p>This function is available beginning with Windows 7.</p>
 
@@ -152,13 +148,13 @@ NTSTATUS APIENTRY pfnGetAdditionalMonitorModeSet(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561001">DXGK_CHILD_DESCRIPTOR</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-child-descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface-v2.md">DXGK_MONITOR_INTERFACE_V2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562060">DXGK_TARGETMODE_DETAIL_TIMING</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgk-targetmode-detail-timing.md">DXGK_TARGETMODE_DETAIL_TIMING</a>
 </dt>
 <dt>
 <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>

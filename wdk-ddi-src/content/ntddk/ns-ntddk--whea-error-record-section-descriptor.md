@@ -78,13 +78,13 @@ typedef struct _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR {
 ### -field <b>Revision</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560623">WHEA_REVISION</a> union that describes the revision level of the WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure.</p>
 </dd>
 
 ### -field <b>ValidBits</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560498">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor-validbits.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -181,13 +181,13 @@ typedef struct _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR {
 ### -field <a id="WHEA_PACKET_SECTION_GUID"></a><a id="whea_packet_section_guid"></a>WHEA_PACKET_SECTION_GUID
 
 <dd>
-<p>The error record section contains the hardware error packet that was passed to the operating system by the low-level hardware error handler (LLHEH) that reported the error. This data is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure.</p>
+<p>The error record section contains the hardware error packet that was passed to the operating system by the low-level hardware error handler (LLHEH) that reported the error. This data is described by a <a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a> structure.</p>
 </dd>
 
 ### -field <a id="PROCESSOR_GENERIC_ERROR_SECTION_GUID"></a><a id="processor_generic_error_section_guid"></a>PROCESSOR_GENERIC_ERROR_SECTION_GUID
 
 <dd>
-<p>The error record section contains processor error data that is not specific to a particular processor architecture. This data is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560607">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.</p>
+<p>The error record section contains processor error data that is not specific to a particular processor architecture. This data is described by a <a href="..\ntddk\ns-ntddk--whea-processor-generic-error-section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.</p>
 </dd>
 
 ### -field <a id="IPF_PROCESSOR_ERROR_SECTION_GUID"></a><a id="ipf_processor_error_section_guid"></a>IPF_PROCESSOR_ERROR_SECTION_GUID
@@ -199,43 +199,43 @@ typedef struct _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR {
 ### -field <a id="FIRMWARE_ERROR_RECORD_REFERENCE_GUID"></a><a id="firmware_error_record_reference_guid"></a>FIRMWARE_ERROR_RECORD_REFERENCE_GUID
 
 <dd>
-<p>The error record section contains a reference to a firmware error record that is specific to the Itanium processor architecture. This data is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560520">WHEA_FIRMWARE_ERROR_RECORD_REFERENCE</a> structure.</p>
+<p>The error record section contains a reference to a firmware error record that is specific to the Itanium processor architecture. This data is described by a <a href="..\ntddk\ns-ntddk--whea-firmware-error-record-reference.md">WHEA_FIRMWARE_ERROR_RECORD_REFERENCE</a> structure.</p>
 </dd>
 
 ### -field <a id="MEMORY_ERROR_SECTION_GUID"></a><a id="memory_error_section_guid"></a>MEMORY_ERROR_SECTION_GUID
 
 <dd>
-<p>The error record section contains platform memory error data. This data is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560565">WHEA_MEMORY_ERROR_SECTION</a> structure.</p>
+<p>The error record section contains platform memory error data. This data is described by a <a href="..\ntddk\ns-ntddk--whea-memory-error-section.md">WHEA_MEMORY_ERROR_SECTION</a> structure.</p>
 </dd>
 
 ### -field <a id="NMI_SECTION_GUID"></a><a id="nmi_section_guid"></a>NMI_SECTION_GUID
 
 <dd>
-<p>The error record section contains nonmaskable interrupt (NMI) error data. This data is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560571">WHEA_NMI_ERROR_SECTION</a> structure.</p>
+<p>The error record section contains nonmaskable interrupt (NMI) error data. This data is described by a <a href="..\ntddk\ns-ntddk--whea-nmi-error-section.md">WHEA_NMI_ERROR_SECTION</a> structure.</p>
 </dd>
 
 ### -field <a id="PCIEXPRESS_ERROR_SECTION_GUID"></a><a id="pciexpress_error_section_guid"></a>PCIEXPRESS_ERROR_SECTION_GUID
 
 <dd>
-<p>The error record section contains PCI Express (PCIe) error data. This data is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560576">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure.</p>
+<p>The error record section contains PCI Express (PCIe) error data. This data is described by a <a href="..\ntddk\ns-ntddk--whea-pciexpress-error-section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure.</p>
 </dd>
 
 ### -field <a id="PCIXBUS_ERROR_SECTION_GUID"></a><a id="pcixbus_error_section_guid"></a>PCIXBUS_ERROR_SECTION_GUID
 
 <dd>
-<p>The error record section contains PCI/PCI-X bus error data. This data is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560583">WHEA_PCIXBUS_ERROR_SECTION</a> structure.</p>
+<p>The error record section contains PCI/PCI-X bus error data. This data is described by a <a href="..\ntddk\ns-ntddk--whea-pcixbus-error-section.md">WHEA_PCIXBUS_ERROR_SECTION</a> structure.</p>
 </dd>
 
 ### -field <a id="PCIXBUS_ERROR_SECTION_GUID"></a><a id="pcixbus_error_section_guid"></a>PCIXBUS_ERROR_SECTION_GUID
 
 <dd>
-<p>The error record section contains PCI/PCI-X device error data. This data is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560589">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.</p>
+<p>The error record section contains PCI/PCI-X device error data. This data is described by a <a href="..\ntddk\ns-ntddk--whea-pcixdevice-error-section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.</p>
 </dd>
 
 ### -field <a id="XPF_PROCESSOR_ERROR_SECTION_GUID"></a><a id="xpf_processor_error_section_guid"></a>XPF_PROCESSOR_ERROR_SECTION_GUID
 
 <dd>
-<p>The error record section contains processor error data that is specific to the x86 or x64 processor architecture. This data is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560655">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure.</p>
+<p>The error record section contains processor error data that is specific to the x86 or x64 processor architecture. This data is described by a <a href="..\ntddk\ns-ntddk--whea-xpf-processor-error-section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure.</p>
 </dd>
 </dl>
 <p>For error record sections that do not conform to one of the standard section types, this member contains a platform-specific GUID that identifies the type of error data that is contained in the error record section. If a platform-specific GUID is not defined for the type of error data that is contained in the error record section, this member contains GENERIC_SECTION_GUID.</p>
@@ -250,7 +250,7 @@ typedef struct _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR {
 ### -field <b>SectionSeverity</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560503">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition that is described by the error record section.</p>
+<p>A <a href="..\ntddk\ne-ntddk--whea-error-severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition that is described by the error record section.</p>
 </dd>
 
 ### -field <b>FRUText</b>
@@ -261,7 +261,7 @@ typedef struct _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560483">WHEA_ERROR_RECORD</a> structure contains an array of WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structures. Each descriptor describes a section of error information that is part of the error record.</p>
+<p>The <a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a> structure contains an array of WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structures. Each descriptor describes a section of error information that is part of the error record.</p>
 
 ## -requirements
 <table>
@@ -289,43 +289,43 @@ typedef struct _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+<a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560483">WHEA_ERROR_RECORD</a>
+<a href="..\ntddk\ns-ntddk--whea-error-record.md">WHEA_ERROR_RECORD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560498">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS</a>
+<a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor-validbits.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560503">WHEA_ERROR_SEVERITY</a>
+<a href="..\ntddk\ne-ntddk--whea-error-severity.md">WHEA_ERROR_SEVERITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560520">WHEA_FIRMWARE_ERROR_RECORD_REFERENCE</a>
+<a href="..\ntddk\ns-ntddk--whea-firmware-error-record-reference.md">WHEA_FIRMWARE_ERROR_RECORD_REFERENCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560607">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk--whea-processor-generic-error-section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560565">WHEA_MEMORY_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk--whea-memory-error-section.md">WHEA_MEMORY_ERROR_SECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560571">WHEA_NMI_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk--whea-nmi-error-section.md">WHEA_NMI_ERROR_SECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560576">WHEA_PCIEXPRESS_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk--whea-pciexpress-error-section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560583">WHEA_PCIXBUS_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk--whea-pcixbus-error-section.md">WHEA_PCIXBUS_ERROR_SECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560589">WHEA_PCIXDEVICE_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk--whea-pcixdevice-error-section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560623">WHEA_REVISION</a>
+<a href="..\ntddk\ns-ntddk--whea-revision.md">WHEA_REVISION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560655">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-processor-error-section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>
 </dt>
 </dl>
 <p> </p>

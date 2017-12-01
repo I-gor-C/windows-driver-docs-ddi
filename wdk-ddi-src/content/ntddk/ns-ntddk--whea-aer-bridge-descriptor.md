@@ -94,7 +94,7 @@ typedef struct _WHEA_AER_BRIDGE_DESCRIPTOR {
 ### -field <b>Slot</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560595">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the bridge is located in the system.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-pci-slot-number.md">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the bridge is located in the system.</p>
 </dd>
 
 ### -field <b>DeviceControl</b>
@@ -232,7 +232,7 @@ typedef struct _WHEA_AER_BRIDGE_DESCRIPTOR {
 </dl>
 
 ## -remarks
-<p>A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.</p>
+<p>A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk--whea-error-source-descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.</p>
 
 ## -requirements
 <table>
@@ -260,10 +260,10 @@ typedef struct _WHEA_AER_BRIDGE_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk--whea-error-source-descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560595">WHEA_PCI_SLOT_NUMBER</a>
+<a href="..\ntddk\ns-ntddk--whea-pci-slot-number.md">WHEA_PCI_SLOT_NUMBER</a>
 </dt>
 </dl>
 <p> </p>

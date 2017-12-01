@@ -90,19 +90,19 @@ typedef struct _WHEA_ERROR_PACKET_V2 {
 ### -field <b>Flags</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560472">WHEA_ERROR_PACKET_FLAGS</a> union that specifies the format of the hardware error data. </p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-error-packet-flags.md">WHEA_ERROR_PACKET_FLAGS</a> union that specifies the format of the hardware error data. </p>
 </dd>
 
 ### -field <b>ErrorType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560515">WHEA_ERROR_TYPE</a> value that specifies the type of hardware component that reported the hardware error.</p>
+<p>A <a href="..\ntddk\ne-ntddk--whea-error-type.md">WHEA_ERROR_TYPE</a> value that specifies the type of hardware component that reported the hardware error.</p>
 </dd>
 
 ### -field <b>ErrorSeverity</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560503">WHEA_ERROR_SEVERITY</a> value that specifies the severity of the error condition.</p>
+<p>A <a href="..\ntddk\ne-ntddk--whea-error-severity.md">WHEA_ERROR_SEVERITY</a> value that specifies the severity of the error condition.</p>
 </dd>
 
 ### -field <b>ErrorSourceId</b>
@@ -114,7 +114,7 @@ typedef struct _WHEA_ERROR_PACKET_V2 {
 ### -field <b>ErrorSourceType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560511">WHEA_ERROR_SOURCE_TYPE</a> value that indicates the type of the error source that reported the hardware error.</p>
+<p>A <a href="..\ntddk\ne-ntddk--whea-error-source-type.md">WHEA_ERROR_SOURCE_TYPE</a> value that indicates the type of the error source that reported the hardware error.</p>
 </dd>
 
 ### -field <b>NotifyType</b>
@@ -178,7 +178,7 @@ typedef struct _WHEA_ERROR_PACKET_V2 {
 ### -field <b>DataFormat</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560469">WHEA_ERROR_PACKET_DATA_FORMAT</a> value  that indicates the format of the hardware error information that is contained in the data that is referenced through the <b>DataOffset </b>and <b>DataLength</b> members.</p>
+<p>A <a href="..\ntddk\ne-ntddk--whea-error-packet-data-format.md">WHEA_ERROR_PACKET_DATA_FORMAT</a> value  that indicates the format of the hardware error information that is contained in the data that is referenced through the <b>DataOffset </b>and <b>DataLength</b> members.</p>
 </dd>
 
 ### -field <b>Reserved1</b>
@@ -215,7 +215,7 @@ typedef struct _WHEA_ERROR_PACKET_V2 {
 ## -remarks
 <p>The WHEA_ERROR_PACKET_V2 structure is used to report a hardware error in Windows 7 and later versions of Windows. If your <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">platform-specific hardware error driver (PSHED) plug-ins</a> run on any WHEA-compatible Windows version, You can inspect the version of WHEA_ERROR_PACKET by following these steps:</p>
 
-<p>If the <b>Signature</b> member for the WHEA_ERROR_PACKET equals WHEA_ERROR_PACKET_V1, the code is running on an early version of Windows, and the error packet is formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560476">WHEA_ERROR_PACKET_V1</a> structure.</p>
+<p>If the <b>Signature</b> member for the WHEA_ERROR_PACKET equals WHEA_ERROR_PACKET_V1, the code is running on an early version of Windows, and the error packet is formatted as a <a href="..\ntddk\ns-ntddk--whea-error-packet-v1.md">WHEA_ERROR_PACKET_V1</a> structure.</p>
 
 <p>If the <b>Signature</b> member for the WHEA_ERROR_PACKET equals WHEA_ERROR_PACKET_V2, the code is running on a later version of Windows, and the error packet is formatted as a <b>WHEA_ERROR_PACKET_V2</b> structure.</p>
 
@@ -254,22 +254,22 @@ typedef struct _WHEA_ERROR_PACKET_V2 {
 <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">Platform-Specific Hardware Error Driver (PSHED) Plug-Ins</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560469">WHEA_ERROR_PACKET_DATA_FORMAT</a>
+<a href="..\ntddk\ne-ntddk--whea-error-packet-data-format.md">WHEA_ERROR_PACKET_DATA_FORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560472">WHEA_ERROR_PACKET_FLAGS</a>
+<a href="..\ntddk\ns-ntddk--whea-error-packet-flags.md">WHEA_ERROR_PACKET_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560476">WHEA_ERROR_PACKET_V1</a>
+<a href="..\ntddk\ns-ntddk--whea-error-packet-v1.md">WHEA_ERROR_PACKET_V1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560503">WHEA_ERROR_SEVERITY</a>
+<a href="..\ntddk\ne-ntddk--whea-error-severity.md">WHEA_ERROR_SEVERITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560511">WHEA_ERROR_SOURCE_TYPE</a>
+<a href="..\ntddk\ne-ntddk--whea-error-source-type.md">WHEA_ERROR_SOURCE_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560515">WHEA_ERROR_TYPE</a>
+<a href="..\ntddk\ne-ntddk--whea-error-type.md">WHEA_ERROR_TYPE</a>
 </dt>
 </dl>
 <p> </p>

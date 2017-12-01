@@ -60,7 +60,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406716">Cancel</a>
+<a href="print.iprinterextensionasyncoperation_cancel">Cancel</a>
 </td>
 <td align="left" width="63%">
 <p>Cancels the asynchronous operation.</p>
@@ -71,8 +71,6 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p><b>IPrinterExtensionAsyncOperation</b> also helps to make it possible to perform device maintenance from a UWP device app or from a printer extension. For more information, see <a href="NULL">Device Maintenance</a>.</p>
-
 <p><b>IPrinterExtensionAsyncOperation</b> also helps to make it possible to perform device maintenance from a UWP device app or from a printer extension. For more information, see <a href="NULL">Device Maintenance</a>.</p>
 
 ## -requirements
@@ -111,7 +109,7 @@ req.product: Windows 10 or later.
 <a href="NULL">Device Maintenance</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265391">SendBidiSetRequestAsync</a>
+<a href="print.iprinterqueue2_sendbidisetrequestasync">SendBidiSetRequestAsync</a>
 </dt>
 </dl>
 <p> </p>

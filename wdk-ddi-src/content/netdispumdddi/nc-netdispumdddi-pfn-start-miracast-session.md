@@ -78,13 +78,13 @@ NTSTATUS StartMiracastSession(
 ### -param <i>pWfdConnectionStats</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265482">MIRACAST_WFD_CONNECTION_STATS</a> structure that indicates the Wi-Fi Direct connection statistics.</p>
+<p>A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast-wfd-connection-stats.md">MIRACAST_WFD_CONNECTION_STATS</a> structure that indicates the Wi-Fi Direct connection statistics.</p>
 </dd>
 
 ### -param <i>pSessionInfo</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265478">MIRACAST_SESSION_INFO</a> structure that the Miracast user-mode driver should complete after it has obtained the capabilities of the Miracast sink.</p>
+<p>A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast-session-info.md">MIRACAST_SESSION_INFO</a> structure that the Miracast user-mode driver should complete after it has obtained the capabilities of the Miracast sink.</p>
 </dd>
 </dl>
 
@@ -98,40 +98,11 @@ NTSTATUS StartMiracastSession(
 ## -remarks
 <p>When this function is called, the Miracast user-mode driver should start communicating with the Miracast sink using the Miracast protocol. The driver should  gather the capabilities of the sink and the attributes of the monitor that's connected to the sink.  The driver should perform enough of the negotiation with the sink to determine whether a monitor is connected to the sink or not. If the driver determines that a monitor is connected to the sink, it should also determine whether the current suggested bit rate is high enough to at least support the lowest sink supported mode of 1024 x 768 pixels.</p>
 
-<p>The driver should also set the value of these members of <a href="https://msdn.microsoft.com/library/windows/hardware/dn265478">MIRACAST_SESSION_INFO</a> pointed to by <i>pSessionInfo</i> in these cases:</p>
+<p>The driver should also set the value of these members of <a href="..\netdispumdddi\ns-netdispumdddi-miracast-session-info.md">MIRACAST_SESSION_INFO</a> pointed to by <i>pSessionInfo</i> in these cases:</p>
 
-<p></p><dl>
-<dt><a id="MonitorConnected"></a><a id="monitorconnected"></a><a id="MONITORCONNECTED"></a><b>MonitorConnected</b></dt>
-<dd>
+<p></p>
+
 <p>The driver should set this member to indicate that the sink reported that a monitor connected to the sink during an M3 message exchange.</p>
-</dd>
-<dt><a id="ReducedModeListDueToBandwidth"></a><a id="reducedmodelistduetobandwidth"></a><a id="REDUCEDMODELISTDUETOBANDWIDTH"></a><b>ReducedModeListDueToBandwidth</b></dt>
-<dd>
-<p> The driver should set this member to indicate that the driver will reduce the modes exposed to the operating system based on the current suggested encode rate.
-In the case that a monitor is connected to the sink, the driver should return from <i>StartMiracastSession</i> before it calls the display miniport driver to send a monitor hot-plug detection (HPD) awareness value. This procedure should avoid any deadlocks that could arise due to messages from kernel- to user-mode not being delivered while this thread is in the control of the user-mode function.</p>
-</dd>
-</dl><p>The driver should set this member to indicate that the sink reported that a monitor connected to the sink during an M3 message exchange.</p>
-
-<p> The driver should set this member to indicate that the driver will reduce the modes exposed to the operating system based on the current suggested encode rate.
-In the case that a monitor is connected to the sink, the driver should return from <i>StartMiracastSession</i> before it calls the display miniport driver to send a monitor hot-plug detection (HPD) awareness value. This procedure should avoid any deadlocks that could arise due to messages from kernel- to user-mode not being delivered while this thread is in the control of the user-mode function.</p>
-
-<p>The operating system guarantees that only one of the <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a>, <a href="..\netdispumdddi\nc-netdispumdddi-pfn-destroy-miracast-context.md">DestroyMiracastContext</a>, <i>StartMiracastSession</i>, and <a href="..\netdispumdddi\nc-netdispumdddi-pfn-stop-miracast-session.md">StopMiracastSession</a> functions is called at a time.</p>
-
-<p>When this function is called, the Miracast user-mode driver should start communicating with the Miracast sink using the Miracast protocol. The driver should  gather the capabilities of the sink and the attributes of the monitor that's connected to the sink.  The driver should perform enough of the negotiation with the sink to determine whether a monitor is connected to the sink or not. If the driver determines that a monitor is connected to the sink, it should also determine whether the current suggested bit rate is high enough to at least support the lowest sink supported mode of 1024 x 768 pixels.</p>
-
-<p>The driver should also set the value of these members of <a href="https://msdn.microsoft.com/library/windows/hardware/dn265478">MIRACAST_SESSION_INFO</a> pointed to by <i>pSessionInfo</i> in these cases:</p>
-
-<p></p><dl>
-<dt><a id="MonitorConnected"></a><a id="monitorconnected"></a><a id="MONITORCONNECTED"></a><b>MonitorConnected</b></dt>
-<dd>
-<p>The driver should set this member to indicate that the sink reported that a monitor connected to the sink during an M3 message exchange.</p>
-</dd>
-<dt><a id="ReducedModeListDueToBandwidth"></a><a id="reducedmodelistduetobandwidth"></a><a id="REDUCEDMODELISTDUETOBANDWIDTH"></a><b>ReducedModeListDueToBandwidth</b></dt>
-<dd>
-<p> The driver should set this member to indicate that the driver will reduce the modes exposed to the operating system based on the current suggested encode rate.
-In the case that a monitor is connected to the sink, the driver should return from <i>StartMiracastSession</i> before it calls the display miniport driver to send a monitor hot-plug detection (HPD) awareness value. This procedure should avoid any deadlocks that could arise due to messages from kernel- to user-mode not being delivered while this thread is in the control of the user-mode function.</p>
-</dd>
-</dl><p>The driver should set this member to indicate that the sink reported that a monitor connected to the sink during an M3 message exchange.</p>
 
 <p> The driver should set this member to indicate that the driver will reduce the modes exposed to the operating system based on the current suggested encode rate.
 In the case that a monitor is connected to the sink, the driver should return from <i>StartMiracastSession</i> before it calls the display miniport driver to send a monitor hot-plug detection (HPD) awareness value. This procedure should avoid any deadlocks that could arise due to messages from kernel- to user-mode not being delivered while this thread is in the control of the user-mode function.</p>
@@ -187,10 +158,10 @@ In the case that a monitor is connected to the sink, the driver should return fr
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn-destroy-miracast-context.md">DestroyMiracastContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265478">MIRACAST_SESSION_INFO</a>
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast-session-info.md">MIRACAST_SESSION_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265482">MIRACAST_WFD_CONNECTION_STATS</a>
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast-wfd-connection-stats.md">MIRACAST_WFD_CONNECTION_STATS</a>
 </dt>
 <dt>
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn-stop-miracast-session.md">StopMiracastSession</a>

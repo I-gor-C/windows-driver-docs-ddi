@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Describes a keyed mutex that the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439345">D3DKMTCreateKeyedMutex2</a> function creates that includes private data.</p>
+<p>Describes a keyed mutex that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatekeyedmutex2.md">D3DKMTCreateKeyedMutex2</a> function creates that includes private data.</p>
 
 
 ## -syntax
@@ -92,7 +92,7 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/hh780254">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a> structure that indicates how to specify a handle to a keyed mutex object.</p>
+<p>[in] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createkeyedmutex2-flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a> structure that indicates how to specify a handle to a keyed mutex object.</p>
 </dd>
 </dl>
 
@@ -132,10 +132,10 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780254">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createkeyedmutex2-flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439345">D3DKMTCreateKeyedMutex2</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatekeyedmutex2.md">D3DKMTCreateKeyedMutex2</a>
 </dt>
 </dl>
 <p> </p>

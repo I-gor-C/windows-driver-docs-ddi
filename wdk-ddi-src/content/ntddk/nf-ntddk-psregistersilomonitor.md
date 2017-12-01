@@ -7,7 +7,7 @@ old-location: kernel\psregistersilomonitor.htm
 old-project: kernel
 ms.assetid: C04F29FF-972C-44CC-8557-28C23827ADF0
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PsRegisterSiloMonitor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>This routine registers a server silo monitor that can receive notifications about server silo events.</p>
 <p>
-<div class="alert"><b>Note</b>  To start receiving notifications, call the <a href="https://msdn.microsoft.com/library/windows/hardware/mt735082">PsStartSiloMonitor</a> routine.</div>
+<div class="alert"><b>Note</b>  To start receiving notifications, call the <a href="..\ntddk\nf-ntddk-psstartsilomonitor.md">PsStartSiloMonitor</a> routine.</div>
 <div> </div>
 </p>
 
@@ -62,7 +62,7 @@ NTSTATUS PsRegisterSiloMonitor(
 ### -param <i>Registration</i> [in]
 
 <dd>
-<p>Specifies the server silo monitor to be registered, of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt735088">SILO_MONITOR_REGISTRATION</a>. </p>
+<p>Specifies the server silo monitor to be registered, of type <a href="..\ntddk\ns-ntddk--silo-monitor-registration.md">SILO_MONITOR_REGISTRATION</a>. </p>
 </dd>
 
 ### -param <i>ReturnedMonitor</i> [out]

@@ -7,7 +7,7 @@ old-location: battery\powersourceupdate.htm
 old-project: battery
 ms.assetid: A1BFCCE4-14F0-4F41-A062-71B001CE14AA
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/27/2017
 ms.keywords: POWERSOURCEUPDATE, POWERSOURCEUPDATE, *PPOWERSOURCEUPDATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

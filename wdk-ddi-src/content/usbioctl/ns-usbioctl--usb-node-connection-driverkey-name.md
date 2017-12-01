@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USB_NODE_CONNECTION_DRIVERKEY_NAME</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537317">IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</a> I/O control request to retrieve the driver key name for the device that is connected to the indicated port.</p>
+<p>The <b>USB_NODE_CONNECTION_DRIVERKEY_NAME</b> structure is used with the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-driverkey-name.md">IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</a> I/O control request to retrieve the driver key name for the device that is connected to the indicated port.</p>
 
 
 ## -syntax
@@ -96,10 +96,10 @@ typedef struct _USB_NODE_CONNECTION_DRIVERKEY_NAME {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537317">IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-driverkey-name.md">IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

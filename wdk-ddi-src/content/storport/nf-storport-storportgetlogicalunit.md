@@ -61,7 +61,7 @@ STORPORT_API PVOID StorPortGetLogicalUnit(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver as soon as the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine is called. The port driver frees this memory when it removes the device. </p>
+<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver as soon as the miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine is called. The port driver frees this memory when it removes the device. </p>
 </dd>
 
 ### -param <i>PathId</i> [in]
@@ -87,13 +87,7 @@ STORPORT_API PVOID StorPortGetLogicalUnit(
 <p><b>StorPortGetLogicalUnit</b> returns a pointer to the miniport driver's storage area for the requested logical unit. If the logical unit does not exist, it returns <b>NULL</b>.</p>
 
 ## -remarks
-<p><b>StorPortGetLogicalUnit</b> is irrelevant if the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine specified zero for the <b>LuExtensionSize</b> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a> when it called <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. Otherwise, the operating system-specific port driver allocates and initializes with zeros a set of LU extensions of the specified size for the miniport driver to use.</p>
-
-<p>Per-LU storage can be used to store data relevant to a particular peripheral, such as saved data pointers. To access this area, the miniport driver calls <b>StorPortGetLogicalUnit</b> when the driver is maintaining information about the state of or current operation for any particular peripheral.</p>
-
-<p>The operating system-specific port driver can consider a logical unit to be nonexistent if there is no active request for that logical unit and the device has never been successfully selected.</p>
-
-<p><b>StorPortGetLogicalUnit</b> is irrelevant if the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine specified zero for the <b>LuExtensionSize</b> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a> when it called <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. Otherwise, the operating system-specific port driver allocates and initializes with zeros a set of LU extensions of the specified size for the miniport driver to use.</p>
+<p><b>StorPortGetLogicalUnit</b> is irrelevant if the miniport driver's <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine specified zero for the <b>LuExtensionSize</b> in the <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a> when it called <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. Otherwise, the operating system-specific port driver allocates and initializes with zeros a set of LU extensions of the specified size for the miniport driver to use.</p>
 
 <p>Per-LU storage can be used to store data relevant to a particular peripheral, such as saved data pointers. To access this area, the miniport driver calls <b>StorPortGetLogicalUnit</b> when the driver is maintaining information about the state of or current operation for any particular peripheral.</p>
 
@@ -144,10 +138,10 @@ STORPORT_API PVOID StorPortGetLogicalUnit(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a>
+<a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>
+<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
 </dt>
 </dl>
 <p> </p>

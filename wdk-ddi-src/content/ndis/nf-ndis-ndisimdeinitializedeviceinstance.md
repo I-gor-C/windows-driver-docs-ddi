@@ -7,7 +7,7 @@ old-location: netvista\ndisimdeinitializedeviceinstance.htm
 old-project: netvista
 ms.assetid: badfab43-ba58-4711-a181-af87dcfeba4d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisIMDeInitializeDeviceInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   
-   NdisIMDeInitializeDeviceInstance (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   
-   NdisIMDeInitializeDeviceInstance (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisIMDeInitializeDeviceInstance (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisIMDeInitializeDeviceInstance (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -76,21 +72,6 @@ NDIS_STATUS NdisIMDeInitializeDeviceInstance(
      <i>NdisMiniportHandle</i> is invalid.</p>
 
 ## -remarks
-<p>For NDIS intermediate drivers, 
-    <b>NdisIMDeInitializeDeviceInstance</b> is the reciprocal of the 
-    <a href="..\ndis\nf-ndis-ndisiminitializedeviceinstanceex.md">
-    NdisIMInitializeDeviceInstanceEx</a> function. Such a driver usually calls 
-    <b>NdisIMDeInitializeDeviceInstance</b> from its 
-    <a href="..\ndis\nc-ndis-protocol-unbind-adapter-ex.md">
-    ProtocolUnbindAdapterEx</a> function, when the underlying miniport adapter to which it was bound is
-    being removed from the system, possibly because it is being reconfigured.</p>
-
-<p>The call to 
-    <b>NdisIMDeInitializeDeviceInstance</b> causes an NDIS call to the intermediate driver's 
-    <a href="..\ndis\nc-ndis-miniport-halt.md">MiniportHaltEx</a> function after NDIS has
-    told all higher level protocol drivers that had bound themselves to the intermediate's virtual miniport
-    that they must unbind.</p>
-
 <p>For NDIS intermediate drivers, 
     <b>NdisIMDeInitializeDeviceInstance</b> is the reciprocal of the 
     <a href="..\ndis\nf-ndis-ndisiminitializedeviceinstanceex.md">
@@ -163,7 +144,7 @@ NDIS_STATUS NdisIMDeInitializeDeviceInstance(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547941">Irql_IM_Function</a>
+<a href="devtest.ndis_irql_im_function">Irql_IM_Function</a>
 </td>
 </tr>
 </table>
@@ -183,4 +164,4 @@ NDIS_STATUS NdisIMDeInitializeDeviceInstance(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIMDeInitializeDeviceInstance function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIMDeInitializeDeviceInstance function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

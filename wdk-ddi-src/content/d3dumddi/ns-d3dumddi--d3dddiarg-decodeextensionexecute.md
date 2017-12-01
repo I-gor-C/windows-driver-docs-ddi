@@ -74,7 +74,7 @@ typedef struct _D3DDDIARG_DECODEEXTENSIONEXECUTE {
 ### -field <b>pPrivateInput</b>
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562916">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the decode operation.</p>
+<p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatedata.md">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the decode operation.</p>
 </dd>
 
 ### -field <b>pPrivateOutput</b>
@@ -93,7 +93,7 @@ typedef struct _D3DDDIARG_DECODEEXTENSIONEXECUTE {
 
 <dd>
 <p>
-      [in] A pointer to a list of <a href="https://msdn.microsoft.com/library/windows/hardware/ff562914">DXVADDI_PRIVATEBUFFER</a> structures that describe private buffers that a nonstandard decoder uses to perform a decode operation.
+      [in] A pointer to a list of <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatebuffer.md">DXVADDI_PRIVATEBUFFER</a> structures that describe private buffers that a nonstandard decoder uses to perform a decode operation.
      </p>
 </dd>
 </dl>
@@ -132,10 +132,10 @@ typedef struct _D3DDDIARG_DECODEEXTENSIONEXECUTE {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decodeextensionexecute.md">DecodeExtensionExecute</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562914">DXVADDI_PRIVATEBUFFER</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatebuffer.md">DXVADDI_PRIVATEBUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562916">DXVADDI_PRIVATEDATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-privatedata.md">DXVADDI_PRIVATEDATA</a>
 </dt>
 </dl>
 <p> </p>

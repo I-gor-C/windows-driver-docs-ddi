@@ -99,7 +99,7 @@ NTSTATUS FltQueryVolumeInformation(
 </dl>
 </td>
 <td width="60%">
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540251">FILE_FS_ATTRIBUTE_INFORMATION</a> structure containing attribute information about the file system responsible for the volume. </p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-fs-attribute-information.md">FILE_FS_ATTRIBUTE_INFORMATION</a> structure containing attribute information about the file system responsible for the volume. </p>
 </td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ NTSTATUS FltQueryVolumeInformation(
 </dl>
 </td>
 <td width="60%">
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540258">FILE_FS_CONTROL_INFORMATION</a> structure containing file system control information about the volume. </p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-fs-control-information.md">FILE_FS_CONTROL_INFORMATION</a> structure containing file system control information about the volume. </p>
 </td>
 </tr>
 <tr>
@@ -121,7 +121,7 @@ NTSTATUS FltQueryVolumeInformation(
 </dl>
 </td>
 <td width="60%">
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545788">FILE_FS_DEVICE_INFORMATION</a> structure containing device information for the volume. </p>
+<p>Return a <a href="..\wdm\ns-wdm--file-fs-device-information.md">FILE_FS_DEVICE_INFORMATION</a> structure containing device information for the volume. </p>
 </td>
 </tr>
 <tr>
@@ -132,7 +132,7 @@ NTSTATUS FltQueryVolumeInformation(
 </dl>
 </td>
 <td width="60%">
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540262">FILE_FS_DRIVER_PATH_INFORMATION</a> structure containing information about whether a specified driver is in the I/O path for the volume. The caller must store the name of the driver into the <b>FILE_FS_DRIVER_PATH_INFORMATION</b> structure before calling <b>FltQueryVolumeInformation</b>. </p>
+<p>Return a <a href="..\ntifs\ns-ntifs--file-fs-driver-path-information.md">FILE_FS_DRIVER_PATH_INFORMATION</a> structure containing information about whether a specified driver is in the I/O path for the volume. The caller must store the name of the driver into the <b>FILE_FS_DRIVER_PATH_INFORMATION</b> structure before calling <b>FltQueryVolumeInformation</b>. </p>
 </td>
 </tr>
 <tr>
@@ -143,7 +143,7 @@ NTSTATUS FltQueryVolumeInformation(
 </dl>
 </td>
 <td width="60%">
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540267">FILE_FS_FULL_SIZE_INFORMATION</a> structure containing information about the total amount of space available on the volume. </p>
+<p>Return a <a href="..\ntddk\ns-ntddk--file-fs-full-size-information.md">FILE_FS_FULL_SIZE_INFORMATION</a> structure containing information about the total amount of space available on the volume. </p>
 </td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ NTSTATUS FltQueryVolumeInformation(
 </dl>
 </td>
 <td width="60%">
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540274">FILE_FS_OBJECTID_INFORMATION</a> structure containing file system-specific object ID information for the volume. Be aware that this is not the same as the (GUID-based) unique volume name assigned by the operating system. <div class="alert"><b>Note</b>  This value is not valid for snapshot volumes.</div>
+<p>Return a <a href="..\ntddk\ns-ntddk--file-fs-objectid-information.md">FILE_FS_OBJECTID_INFORMATION</a> structure containing file system-specific object ID information for the volume. Be aware that this is not the same as the (GUID-based) unique volume name assigned by the operating system. <div class="alert"><b>Note</b>  This value is not valid for snapshot volumes.</div>
 <div> </div>
 </p>
 </td>
@@ -167,7 +167,7 @@ NTSTATUS FltQueryVolumeInformation(
 </dl>
 </td>
 <td width="60%">
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540282">FILE_FS_SIZE_INFORMATION</a> structure containing information about the amount of space on the volume that is available to the user associated with the calling thread. </p>
+<p>Return a <a href="..\ntddk\ns-ntddk--file-fs-size-information.md">FILE_FS_SIZE_INFORMATION</a> structure containing information about the amount of space on the volume that is available to the user associated with the calling thread. </p>
 </td>
 </tr>
 <tr>
@@ -178,7 +178,7 @@ NTSTATUS FltQueryVolumeInformation(
 </dl>
 </td>
 <td width="60%">
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540287">FILE_FS_VOLUME_INFORMATION</a> containing information about the volume such as the volume label, serial number, and creation time. </p>
+<p>Return a <a href="..\ntddk\ns-ntddk--file-fs-volume-information.md">FILE_FS_VOLUME_INFORMATION</a> containing information about the volume such as the volume label, serial number, and creation time. </p>
 </td>
 </tr>
 <tr>
@@ -189,7 +189,7 @@ NTSTATUS FltQueryVolumeInformation(
 </dl>
 </td>
 <td width="60%">
-<p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406395">FILE_FS_SECTOR_SIZE_INFORMATION</a> structure that contains information about the physical and logical sector sizes of a volume.</p>
+<p>Return a <a href="..\ntddk\ns-ntddk--file-fs-sector-size-information.md">FILE_FS_SECTOR_SIZE_INFORMATION</a> structure that contains information about the physical and logical sector sizes of a volume.</p>
 </td>
 </tr>
 </table>
@@ -201,34 +201,24 @@ NTSTATUS FltQueryVolumeInformation(
 <p>The <b>FltQueryVolumeInformation</b> routine returns <b>STATUS_SUCCESS</b> or an appropriate <b>NTSTATUS</b> value such as one of the following: </p><dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a> encountered a pool allocation failure. This is an error code. </p><dl>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> encountered a pool allocation failure. This is an error code. </p><dl>
 <dt><b>STATUS_INVALID_INFO_CLASS</b></dt>
 </dl><p>An invalid value was specified for <i>FsInformationClass</i>. This is an error code. </p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl><p>The <i>Instance</i> is attached to a network volume. <a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a> cannot be used to query network volume information. This is an error code. </p>
+</dl><p>The <i>Instance</i> is attached to a network volume. <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> cannot be used to query network volume information. This is an error code. </p>
 
 <p> </p>
 
 ## -remarks
 <p>Fields in the FILE_<i>XXX</i>_INFORMATION structure that are not supported by the underlying file system are set to zero. </p>
 
-<p>To change information about a volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544564">FltSetVolumeInformation</a>. </p>
+<p>To change information about a volume, call <a href="..\fltkernel\nf-fltkernel-fltsetvolumeinformation.md">FltSetVolumeInformation</a>. </p>
 
-<p>To get volume property information for the given volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543254">FltGetVolumeProperties</a>. </p>
+<p>To get volume property information for the given volume, call <a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>. </p>
 
-<p>To get the volume name for a given volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543249">FltGetVolumeName</a>. </p>
+<p>To get the volume name for a given volume, call <a href="..\fltkernel\nf-fltkernel-fltgetvolumename.md">FltGetVolumeName</a>. </p>
 
-<p>To get the volume GUID name for a given volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543230">FltGetVolumeGuidName</a>. </p>
-
-<p>Fields in the FILE_<i>XXX</i>_INFORMATION structure that are not supported by the underlying file system are set to zero. </p>
-
-<p>To change information about a volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544564">FltSetVolumeInformation</a>. </p>
-
-<p>To get volume property information for the given volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543254">FltGetVolumeProperties</a>. </p>
-
-<p>To get the volume name for a given volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543249">FltGetVolumeName</a>. </p>
-
-<p>To get the volume GUID name for a given volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543230">FltGetVolumeGuidName</a>. </p>
+<p>To get the volume GUID name for a given volume, call <a href="..\fltkernel\nf-fltkernel-fltgetvolumeguidname.md">FltGetVolumeGuidName</a>. </p>
 
 ## -requirements
 <table>
@@ -293,41 +283,41 @@ NTSTATUS FltQueryVolumeInformation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540251">FILE_FS_ATTRIBUTE_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-fs-attribute-information.md">FILE_FS_ATTRIBUTE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540258">FILE_FS_CONTROL_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-fs-control-information.md">FILE_FS_CONTROL_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545788">FILE_FS_DEVICE_INFORMATION</a>
+<a href="..\wdm\ns-wdm--file-fs-device-information.md">FILE_FS_DEVICE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540262">FILE_FS_DRIVER_PATH_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-fs-driver-path-information.md">FILE_FS_DRIVER_PATH_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540267">FILE_FS_FULL_SIZE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-fs-full-size-information.md">FILE_FS_FULL_SIZE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540274">FILE_FS_OBJECTID_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-fs-objectid-information.md">FILE_FS_OBJECTID_INFORMATION</a>
 </dt>
 <dt><b>FILE_FS_SECTOR_SIZE_INFORMATION</b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540282">FILE_FS_SIZE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-fs-size-information.md">FILE_FS_SIZE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540287">FILE_FS_VOLUME_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk--file-fs-volume-information.md">FILE_FS_VOLUME_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543230">FltGetVolumeGuidName</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeguidname.md">FltGetVolumeGuidName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543249">FltGetVolumeName</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumename.md">FltGetVolumeName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543254">FltGetVolumeProperties</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544564">FltSetVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetvolumeinformation.md">FltSetVolumeInformation</a>
 </dt>
 </dl>
 <p> </p>

@@ -60,13 +60,7 @@ BOOLEAN PshedIsSystemWheaEnabled(void);
 <p>A Boolean value that indicates whether the system is WHEA-enabled.</p>
 
 ## -remarks
-<p>A PSHED plug-in can call the <b>PshedIsSystemWheaEnabled</b> function before it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559466">PshedRegisterPlugin</a> function to verify that the system is WHEA-enabled.</p>
-
-<p>A PSHED plug-in can call the <b>PshedIsSystemWheaEnabled</b> function before it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559466">PshedRegisterPlugin</a> function to verify that the system is WHEA-enabled.</p>
-
-<p>A PSHED plug-in can call the <b>PshedIsSystemWheaEnabled</b> function before it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559466">PshedRegisterPlugin</a> function to verify that the system is WHEA-enabled.</p>
-
-<p>A PSHED plug-in can call the <b>PshedIsSystemWheaEnabled</b> function before it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559466">PshedRegisterPlugin</a> function to verify that the system is WHEA-enabled.</p>
+<p>A PSHED plug-in can call the <b>PshedIsSystemWheaEnabled</b> function before it calls the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function to verify that the system is WHEA-enabled.</p>
 
 ## -requirements
 <table>
@@ -132,7 +126,7 @@ BOOLEAN PshedIsSystemWheaEnabled(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559466">PshedRegisterPlugin</a>
+<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
 </dt>
 </dl>
 <p> </p>

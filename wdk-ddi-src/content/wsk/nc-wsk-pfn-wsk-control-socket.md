@@ -7,7 +7,7 @@ old-location: netvista\wskcontrolsocket.htm
 old-project: netvista
 ms.assetid: d65fd2ab-ffca-4e13-b0f1-42d6a89f4b4a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -70,7 +69,7 @@ NTSTATUS WSKAPI * WskControlSocket(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a> structure that specifies the socket
+     <a href="..\wsk\ns-wsk--wsk-socket.md">WSK_SOCKET</a> structure that specifies the socket
      object for the socket on which the control operation is being performed.</p>
 </dd>
 
@@ -247,7 +246,7 @@ NTSTATUS WSKAPI * WskControlSocket(
 <dt><b>STATUS_FILE_FORCED_CLOSED</b></dt>
 </dl><p>The socket is no longer functional. The IRP will be completed with failure status. The WSK
        application must call the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a> function to close the
+       <a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a> function to close the
        socket as soon as possible.</p><dl>
 <dt><b>Other status codes</b></dt>
 </dl><p>An error occurred. The IRP will be completed with failure status.</p>
@@ -255,37 +254,6 @@ NTSTATUS WSKAPI * WskControlSocket(
 <p> </p>
 
 ## -remarks
-<p>If a WSK application specifies 
-    <b>WskSetOption</b> or 
-    <b>WskGetOption</b> in the 
-    <i>RequestType</i> parameter, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571186">WSK Socket Options</a> for more information
-    about how the input and output buffers are used for each socket option.</p>
-
-<p>If a WSK application specifies 
-    <b>WskIoctl</b> in the 
-    <i>RequestType</i> parameter, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571183">WSK Socket IOCTL Operations</a> for
-    more information about how the input and output buffers are used for each I/O control operation.</p>
-
-<p>If the 
-    <b>WskControlSocket</b> function returns STATUS_PENDING, any buffers that are pointed to by the 
-    <i>InputBuffer</i> parameter or the 
-    <i>OutputBuffer</i> parameter must remain valid until the IRP is completed. If the WSK application
-    allocated the buffers with one of the 
-    <b>ExAllocate<i>Xxx</i></b> functions, it cannot free the memory with the corresponding 
-    <b>ExFree<i>Xxx</i></b> function until after the IRP is completed. If the WSK application allocated the buffers on the
-    stack, it cannot return from the function that calls the 
-    <b>WskControlSocket</b> function until after the IRP is completed.</p>
-
-<p>Callers of the 
-    <b>WskControlSocket</b> function must be running at IRQL &lt;= DISPATCH_LEVEL except when the 
-    <i>RequestType</i> parameter is set to 
-    <b>WskIoctl</b> and the 
-    <i>ControlCode</i> parameter is set to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570815">SIO_ADDRESS_LIST_QUERY</a>, 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff570814">SIO_ADDRESS_LIST_CHANGE</a>, or <a href="winsock.using_sio_address_list_sort">SIO_ADDRESS_LIST_SORT</a>. In this
-    situation, callers must be running at IRQL = PASSIVE_LEVEL.</p>
-
 <p>If a WSK application specifies 
     <b>WskSetOption</b> or 
     <b>WskGetOption</b> in the 
@@ -361,13 +329,13 @@ NTSTATUS WSKAPI * WskControlSocket(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-socket.md">WskSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571171">WSK_PROVIDER_BASIC_DISPATCH</a>
+<a href="..\wsk\ns-wsk--wsk-provider-basic-dispatch.md">WSK_PROVIDER_BASIC_DISPATCH</a>
 </dt>
 <dt>
 <a href="..\wsk\ns-wsk--wsk-provider-connection-dispatch.md">
@@ -378,7 +346,7 @@ NTSTATUS WSKAPI * WskControlSocket(
    WSK_PROVIDER_DATAGRAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571176">WSK_PROVIDER_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk--wsk-provider-listen-dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571183">WSK Socket IOCTL Operations</a>
@@ -389,4 +357,4 @@ NTSTATUS WSKAPI * WskControlSocket(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_SOCKET callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONTROL_SOCKET callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

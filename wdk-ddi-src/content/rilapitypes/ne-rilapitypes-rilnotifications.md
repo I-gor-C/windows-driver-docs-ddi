@@ -7,7 +7,7 @@ old-location: netvista\rilnotifications_2.htm
 old-project: netvista
 ms.assetid: 90a46631-b365-46ee-8c66-085ec8d55f57
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

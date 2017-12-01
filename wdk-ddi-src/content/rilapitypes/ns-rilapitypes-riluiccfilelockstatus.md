@@ -7,7 +7,7 @@ old-location: netvista\riluiccfilelockstatus_2.htm
 old-project: netvista
 ms.assetid: a06cba0a-9ab6-4125-a506-5cc1d0c1055c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCFILELOCKSTATUS, RILUICCFILELOCKSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

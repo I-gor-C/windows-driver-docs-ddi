@@ -67,7 +67,7 @@ _Check_return_ HRESULT APIENTRY CALLBACK* pfnLogUMDMarkerCb(
 ### -param <i>pLogUMDMarker</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn535965">D3DDDICB_LOGUMDMARKER</a> structure that indicates the location of an ETW marker event that is defined by the user-mode display driver.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicb-logumdmarker.md">D3DDDICB_LOGUMDMARKER</a> structure that indicates the location of an ETW marker event that is defined by the user-mode display driver.</p>
 </dd>
 </dl>
 

@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest2_isfromusermodedriver.htm
 old-project: wdf
 ms.assetid: 17a1e4d8-5438-42b6-b4a5-335e7bd57b1b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFIoRequest2, IsFromUserModeDriver, IWDFIoRequest2::IsFromUserModeDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,29 +62,11 @@ BOOL IsFromUserModeDriver();
 <p>A Boolean value that, if <b>TRUE</b>, indicates that the current I/O request is from a user-mode driver. If this value is <b>FALSE</b>, the current I/O request came from an application.</p>
 
 ## -remarks
-<p>If your driver supports <a href="wdf.supporting_kernel_mode_clients">kernel-mode clients</a>, it should call <b>IsFromUserModeDriver</b> only if <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a> returns <b>WdfUserMode</b>.</p>
+<p>If your driver supports <a href="wdf.supporting_kernel_mode_clients">kernel-mode clients</a>, it should call <b>IsFromUserModeDriver</b> only if <a href="wdf.iwdfiorequest2_getrequestormode">IWDFIoRequest2::GetRequestorMode</a> returns <b>WdfUserMode</b>.</p>
 
-<p>The UMDF 2 equivalent of this method is <a href="https://msdn.microsoft.com/library/windows/hardware/dn265620">WdfRequestIsFromUserModeDriver</a>.</p>
+<p>The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdfrequestisfromusermodedriver.md">WdfRequestIsFromUserModeDriver</a>.</p>
 
-<p>For a code example that uses <b>IsFromUserModeDriver</b>, see the example at <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>.</p>
-
-<p>If your driver supports <a href="wdf.supporting_kernel_mode_clients">kernel-mode clients</a>, it should call <b>IsFromUserModeDriver</b> only if <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a> returns <b>WdfUserMode</b>.</p>
-
-<p>The UMDF 2 equivalent of this method is <a href="https://msdn.microsoft.com/library/windows/hardware/dn265620">WdfRequestIsFromUserModeDriver</a>.</p>
-
-<p>For a code example that uses <b>IsFromUserModeDriver</b>, see the example at <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>.</p>
-
-<p>If your driver supports <a href="wdf.supporting_kernel_mode_clients">kernel-mode clients</a>, it should call <b>IsFromUserModeDriver</b> only if <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a> returns <b>WdfUserMode</b>.</p>
-
-<p>The UMDF 2 equivalent of this method is <a href="https://msdn.microsoft.com/library/windows/hardware/dn265620">WdfRequestIsFromUserModeDriver</a>.</p>
-
-<p>For a code example that uses <b>IsFromUserModeDriver</b>, see the example at <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>.</p>
-
-<p>If your driver supports <a href="wdf.supporting_kernel_mode_clients">kernel-mode clients</a>, it should call <b>IsFromUserModeDriver</b> only if <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a> returns <b>WdfUserMode</b>.</p>
-
-<p>The UMDF 2 equivalent of this method is <a href="https://msdn.microsoft.com/library/windows/hardware/dn265620">WdfRequestIsFromUserModeDriver</a>.</p>
-
-<p>For a code example that uses <b>IsFromUserModeDriver</b>, see the example at <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>.</p>
+<p>For a code example that uses <b>IsFromUserModeDriver</b>, see the example at <a href="wdf.iwdfiorequest2_getrequestormode">IWDFIoRequest2::GetRequestorMode</a>.</p>
 
 ## -requirements
 <table>
@@ -139,15 +121,15 @@ BOOL IsFromUserModeDriver();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558988">IWDFIoRequest2</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>
+<a href="wdf.iwdfiorequest2_getrequestormode">IWDFIoRequest2::GetRequestorMode</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265620">WdfRequestIsFromUserModeDriver</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestisfromusermodedriver.md">WdfRequestIsFromUserModeDriver</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest2::IsFromUserModeDriver method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest2::IsFromUserModeDriver method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

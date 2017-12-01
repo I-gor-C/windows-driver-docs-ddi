@@ -95,7 +95,7 @@ HRESULT GetLastError(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543747">IStiDevice::GetLastError</a>
+<a href="image.istidevice_getlasterror">IStiDevice::GetLastError</a>
 </dt>
 </dl>
 <p> </p>

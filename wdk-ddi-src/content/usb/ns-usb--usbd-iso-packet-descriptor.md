@@ -77,7 +77,7 @@ typedef struct _USBD_ISO_PACKET_DESCRIPTOR {
 </dl>
 
 ## -remarks
-<p>This structure is used as part of an isochronous transfer request to the host controller driver using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540414">_URB_ISOCH_TRANSFER</a> structure. The <b>Offset</b> member contains the offset from the beginning of the <b>TransferBuffer</b> or <b>TransferBufferMDL</b> members of  <b>_URB_ISOCH_TRANSFER</b>.</p>
+<p>This structure is used as part of an isochronous transfer request to the host controller driver using the <a href="buses._urb_isoch_transfer">_URB_ISOCH_TRANSFER</a> structure. The <b>Offset</b> member contains the offset from the beginning of the <b>TransferBuffer</b> or <b>TransferBufferMDL</b> members of  <b>_URB_ISOCH_TRANSFER</b>.</p>
 
 ## -requirements
 <table>
@@ -96,16 +96,16 @@ typedef struct _USBD_ISO_PACKET_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406231">USBD_IsochUrbAllocate</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-isochurballocate.md">USBD_IsochUrbAllocate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540414">_URB_ISOCH_TRANSFER</a>
+<a href="buses._urb_isoch_transfer">_URB_ISOCH_TRANSFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406225">How to Transfer Data to USB Isochronous Endpoints</a>
+<a href="buses.transfer_data_to_isochronous_endpoints">How to Transfer Data to USB Isochronous Endpoints</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

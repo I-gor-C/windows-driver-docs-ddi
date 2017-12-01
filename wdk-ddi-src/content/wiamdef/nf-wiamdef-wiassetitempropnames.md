@@ -89,8 +89,6 @@ HRESULT _stdcall wiasSetItemPropNames(
 ## -remarks
 <p>Minidrivers typically use this function when initializing item properties. The order of property identifiers in <i>ppId</i> must match the order of property names in <i>ppSzNames</i>.</p>
 
-<p>Minidrivers typically use this function when initializing item properties. The order of property identifiers in <i>ppId</i> must match the order of property names in <i>ppSzNames</i>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -146,7 +144,7 @@ HRESULT _stdcall wiasSetItemPropNames(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549358">wiasSetItemPropAttribs</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a>
 </dt>
 </dl>
 <p> </p>

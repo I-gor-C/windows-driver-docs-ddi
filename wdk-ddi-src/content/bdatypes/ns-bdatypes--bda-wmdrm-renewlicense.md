@@ -7,7 +7,7 @@ old-location: stream\bda_wmdrm_renewlicense.htm
 old-project: stream
 ms.assetid: 73AB73F1-CB9B-46A3-8ECC-19E93210D30E
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_WMDRM_RENEWLICENSE, BDA_WMDRM_RENEWLICENSE, *PBDA_WMDRM_RENEWLICENSE
 ms.prod: windows-hardware
 ms.technology: windows-devices

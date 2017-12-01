@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DKMT_WAITFORSYNCHRONIZATIONOBJECT structure contains information about the synchronization events that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547255">D3DKMTWaitForSynchronizationObject</a> function waits for to occur. </p>
+<p>The D3DKMT_WAITFORSYNCHRONIZATIONOBJECT structure contains information about the synchronization events that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforsynchronizationobject.md">D3DKMTWaitForSynchronizationObject</a> function waits for to occur. </p>
 
 
 ## -syntax
@@ -103,7 +103,7 @@ typedef struct _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547255">D3DKMTWaitForSynchronizationObject</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforsynchronizationobject.md">D3DKMTWaitForSynchronizationObject</a>
 </dt>
 </dl>
 <p> </p>

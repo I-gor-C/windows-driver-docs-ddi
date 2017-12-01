@@ -82,8 +82,6 @@ VOID ScsiPortReadPortBufferUchar(
 ## -remarks
 <p><b>ScsiPortReadPortBufferUchar</b> ensures that the data is transferred correctly.</p>
 
-<p><b>ScsiPortReadPortBufferUchar</b> ensures that the data is transferred correctly.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -121,7 +119,7 @@ VOID ScsiPortReadPortBufferUchar(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>
+<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
 </dt>
 </dl>
 <p> </p>

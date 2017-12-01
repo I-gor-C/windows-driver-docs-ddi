@@ -7,7 +7,7 @@ old-location: stream\ksqueueworkitem.htm
 old-project: stream
 ms.assetid: a700979e-aee4-4bce-8f98-b44b864fbb43
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsQueueWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>KsQueueWorkItem</b> function queues the specified work item with a worker previous created by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566775">KsRegisterWorker</a> function.</p>
+<p>The <b>KsQueueWorkItem</b> function queues the specified work item with a worker previous created by the <a href="..\ks\nf-ks-ksregisterworker.md">KsRegisterWorker</a> function.</p>
 
 
 ## -syntax
@@ -64,7 +64,7 @@ NTSTATUS KsQueueWorkItem(
 ### -param <i>WorkItem</i> [in]
 
 <dd>
-<p>Specifies the initialized work item to queue. This work item is only associated with the worker as long as the worker is on a queue. The work item must have been initialized by <a href="https://msdn.microsoft.com/library/windows/hardware/ff548276">IoAllocateWorkItem</a>.</p>
+<p>Specifies the initialized work item to queue. This work item is only associated with the worker as long as the worker is on a queue. The work item must have been initialized by <a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>.</p>
 </dd>
 </dl>
 
@@ -72,8 +72,6 @@ NTSTATUS KsQueueWorkItem(
 <p>The <b>KsQueueWorkItem</b> function returns STATUS_SUCCESS if the work item was queued, or if unsuccessful the function returns an error when attempting to create a new worker if no threads are currently available.</p>
 
 ## -remarks
-<p>The worker can only be on a queue in one place, so subsequent queuing of the worker must wait until the work item has begun executing. This function may be called at <b>DISPATCH_LEVEL</b>.</p>
-
 <p>The worker can only be on a queue in one place, so subsequent queuing of the worker must wait until the work item has begun executing. This function may be called at <b>DISPATCH_LEVEL</b>.</p>
 
 ## -requirements

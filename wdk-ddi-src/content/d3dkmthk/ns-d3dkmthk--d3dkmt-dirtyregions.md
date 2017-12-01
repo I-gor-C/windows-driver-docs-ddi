@@ -64,7 +64,7 @@ typedef struct _D3DKMT_DIRTYREGIONS {
 ### -field <b>Rects</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structures that specifies the dirty regions of a surface.</p>
+<p>[in] An array of <a href="display.rect">RECT</a> structures that specifies the dirty regions of a surface.</p>
 </dd>
 </dl>
 
@@ -96,7 +96,7 @@ typedef struct _D3DKMT_DIRTYREGIONS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

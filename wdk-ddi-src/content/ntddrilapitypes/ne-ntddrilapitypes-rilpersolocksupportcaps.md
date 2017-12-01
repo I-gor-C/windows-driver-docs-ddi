@@ -7,7 +7,7 @@ old-location: netvista\rilpersolocksupportcaps.htm
 old-project: netvista
 ms.assetid: 1aeb5eef-c334-4e27-8ce9-1c8efc85e82c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -58,7 +58,7 @@ PVOID ChangerClassAllocatePool(
 ### -param <i>PoolType</i> [in]
 
 <dd>
-<p>Indicates the type of pool memory to allocate. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a> for a list of types.</p>
+<p>Indicates the type of pool memory to allocate. See <a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a> for a list of types.</p>
 </dd>
 
 ### -param <i>NumberOfBytes</i> [in]
@@ -111,7 +111,7 @@ PVOID ChangerClassAllocatePool(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a>
+<a href="..\wdm\ne-wdm--pool-type.md">POOL_TYPE</a>
 </dt>
 </dl>
 <p> </p>

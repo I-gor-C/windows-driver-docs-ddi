@@ -67,7 +67,7 @@ typedef struct _D3DKMDT_MONITOR_DESCRIPTOR {
 ### -field <b>Type</b>
 
 <dd>
-<p>A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546099">D3DKMDT_MONITOR_DESCRIPTOR_TYPE</a> enumeration that indicates the descriptor type.</p>
+<p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-descriptor-type.md">D3DKMDT_MONITOR_DESCRIPTOR_TYPE</a> enumeration that indicates the descriptor type.</p>
 </dd>
 
 ### -field <b>DataSize</b>
@@ -85,7 +85,7 @@ typedef struct _D3DKMDT_MONITOR_DESCRIPTOR {
 ### -field <b>Origin</b>
 
 <dd>
-<p>A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff546075">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a> that indicates the source of the mode information for the monitor. For example, the mode information could be from a default monitor profile or it could be from an override in an INF file.</p>
+<p>A value of type <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-capabilities-origin.md">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a> that indicates the source of the mode information for the monitor. For example, the mode information could be from a default monitor profile or it could be from an override in an INF file.</p>
 </dd>
 </dl>
 
@@ -117,13 +117,13 @@ typedef struct _D3DKMDT_MONITOR_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546075">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-capabilities-origin.md">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546099">D3DKMDT_MONITOR_DESCRIPTOR_TYPE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-descriptor-type.md">D3DKMDT_MONITOR_DESCRIPTOR_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568427">Monitor Descriptor Set Interface</a>
+<a href="display.monitor_descriptor_set_interface">Monitor Descriptor Set Interface</a>
 </dt>
 </dl>
 <p> </p>

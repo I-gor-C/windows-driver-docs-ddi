@@ -7,7 +7,7 @@ old-location: stream\ikstopology.htm
 old-project: stream
 ms.assetid: 418a415c-b4db-41a1-825e-66704c45e134
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsSynchronousDeviceControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,14 +78,6 @@ req.iface:
 <p> </p>
 
 ## -remarks
-<p>The IID for this interface is IID_IKsTopology.</p>
-
-<p>The <b>IKsTopology</b> interface is supported by filters. </p>
-
-<p>The IID for this interface is IID_IKsTopology.</p>
-
-<p>The <b>IKsTopology</b> interface is supported by filters. </p>
-
 <p>The IID for this interface is IID_IKsTopology.</p>
 
 <p>The <b>IKsTopology</b> interface is supported by filters. </p>

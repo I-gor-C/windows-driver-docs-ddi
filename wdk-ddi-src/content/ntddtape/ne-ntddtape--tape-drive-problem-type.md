@@ -172,10 +172,10 @@ typedef enum _TAPE_DRIVE_PROBLEM_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567977">TAPE_WMI_OPERATIONS</a>
+<a href="..\ntddtape\ns-ntddtape--tape-wmi-operations.md">TAPE_WMI_OPERATIONS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567957">TapeMiniWMIControl</a>
+<a href="storage.tapeminiwmicontrol">TapeMiniWMIControl</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: debugger\idebugoutputcallbackswide_output.htm
 old-project: debugger
 ms.assetid: b57661c3-a18f-45ed-b7fc-f6471753566e
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugOutputCallbacksWide, Output, IDebugOutputCallbacksWide::Output
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ HRESULT Output(
 ### -param <i>Mask</i> [in]
 
 <dd>
-<p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541518">DEBUG_OUTPUT_XXX</a> bit flags that indicate the nature of the output.</p>
+<p>Specifies the <a href="debugger.debug_output_xxx">DEBUG_OUTPUT_XXX</a> bit flags that indicate the nature of the output.</p>
 </dd>
 
 ### -param <i>Text</i> [in]
@@ -72,10 +72,6 @@ HRESULT Output(
 <p>The return value is ignored by the engine unless it indicates a remote procedure call error; in this case the client, with which this <b>IDebugEventCallbacksWide</b> object is registered, is disabled.</p>
 
 ## -remarks
-<p>The engine calls this method only if the supplied value of <i>Mask</i> is allowed by the client's output control.</p>
-
-<p>For more information about debugger engine output, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>
-
 <p>The engine calls this method only if the supplied value of <i>Mask</i> is allowed by the client's output control.</p>
 
 <p>For more information about debugger engine output, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndisfindicatestatus.htm
 old-project: netvista
 ms.assetid: fd81d777-8479-41e3-8f71-e5f4134b60a0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFIndicateStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,14 +62,14 @@ VOID NdisFIndicateStatus(
 <dd>
 <p>The NDIS handle that identifies this filter module. NDIS passed the handle to the filter driver in
      a call to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function.</p>
+     <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
 ### -param <i>StatusIndication</i> [in]
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567373">NDIS_STATUS_INDICATION</a> structure
+     <a href="..\ndis\ns-ndis--ndis-status-indication.md">NDIS_STATUS_INDICATION</a> structure
      that contains the status information.</p>
 </dd>
 </dl>
@@ -89,26 +89,10 @@ VOID NdisFIndicateStatus(
 
 <p>A filter driver can call 
     <b>NdisFIndicateStatus</b> after setting its registration attributes and the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562619">NdisFSetAttributes</a> function returns.
+    <a href="..\ndis\nf-ndis-ndisfsetattributes.md">NdisFSetAttributes</a> function returns.
     The driver must not call 
     <b>NdisFIndicateStatus</b> after it returns from the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff540475">FilterDetach</a> function.</p>
-
-<p>Filter drivers can call 
-    <b>NdisFIndicateStatus</b> from the 
-    <a href="..\ndis\nc-ndis-filter-status.md">FilterStatus</a> function, to pass on a
-    filtered status indication to overlying drivers.</p>
-
-<p>To originate status indications, filter drivers call 
-    <b>NdisFIndicateStatus</b> without a prior NDIS call to 
-    <i>FilterStatus</i>.</p>
-
-<p>A filter driver can call 
-    <b>NdisFIndicateStatus</b> after setting its registration attributes and the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562619">NdisFSetAttributes</a> function returns.
-    The driver must not call 
-    <b>NdisFIndicateStatus</b> after it returns from the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff540475">FilterDetach</a> function.</p>
+    <a href="..\ndis\nc-ndis-filter-detach.md">FilterDetach</a> function.</p>
 
 ## -requirements
 <table>
@@ -163,7 +147,7 @@ VOID NdisFIndicateStatus(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548011">Irql_StatusIndication_Function</a>
+<a href="devtest.ndis_irql_statusindication_function">Irql_StatusIndication_Function</a>
 </td>
 </tr>
 </table>
@@ -171,21 +155,21 @@ VOID NdisFIndicateStatus(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540475">FilterDetach</a>
+<a href="..\ndis\nc-ndis-filter-detach.md">FilterDetach</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-filter-status.md">FilterStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567373">NDIS_STATUS_INDICATION</a>
+<a href="..\ndis\ns-ndis--ndis-status-indication.md">NDIS_STATUS_INDICATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562619">NdisFSetAttributes</a>
+<a href="..\ndis\nf-ndis-ndisfsetattributes.md">NdisFSetAttributes</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFIndicateStatus function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFIndicateStatus function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

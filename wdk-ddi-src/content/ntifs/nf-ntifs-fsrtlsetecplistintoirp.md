@@ -82,11 +82,7 @@ NTSTATUS FsRtlSetEcpListIntoIrp(
 ## -remarks
 <p>The <b>FsRtlSetEcpListIntoIrp</b> routine provides a mechanism for passing extra create parameters down the file system filter stack to underlying filter drivers.</p>
 
-<p>To retrieve an ECP list that is associated with a given IRP_MJ_CREATE operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546015">FsRtlGetEcpListFromIrp</a> routine.</p>
-
-<p>The <b>FsRtlSetEcpListIntoIrp</b> routine provides a mechanism for passing extra create parameters down the file system filter stack to underlying filter drivers.</p>
-
-<p>To retrieve an ECP list that is associated with a given IRP_MJ_CREATE operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546015">FsRtlGetEcpListFromIrp</a> routine.</p>
+<p>To retrieve an ECP list that is associated with a given IRP_MJ_CREATE operation, use the <a href="..\ntifs\nf-ntifs-fsrtlgetecplistfromirp.md">FsRtlGetEcpListFromIrp</a> routine.</p>
 
 ## -requirements
 <table>
@@ -151,10 +147,10 @@ NTSTATUS FsRtlSetEcpListIntoIrp(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
+<a href="ifsk.ecp_list">ECP_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546015">FsRtlGetEcpListFromIrp</a>
+<a href="..\ntifs\nf-ntifs-fsrtlgetecplistfromirp.md">FsRtlGetEcpListFromIrp</a>
 </dt>
 </dl>
 <p> </p>

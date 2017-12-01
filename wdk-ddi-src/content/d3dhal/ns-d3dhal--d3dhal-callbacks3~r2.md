@@ -103,7 +103,7 @@ typedef struct _D3DHAL_CALLBACKS3 {
 <p>D3DHAL3_CB32_VALIDATETEXTURESTAGESTATE</p>
 </td>
 <td>
-<p>The <b>ValidateTextureStageState</b> member points to a driver-implemented <a href="https://msdn.microsoft.com/library/windows/hardware/ff549064">D3dValidateTextureStageState</a> callback.</p>
+<p>The <b>ValidateTextureStageState</b> member points to a driver-implemented <a href="display.d3dvalidatetexturestagestate">D3dValidateTextureStageState</a> callback.</p>
 </td>
 </tr>
 </table>
@@ -125,7 +125,7 @@ typedef struct _D3DHAL_CALLBACKS3 {
 ### -field <b>ValidateTextureStageState</b>
 
 <dd>
-<p>Points to the driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff549064">D3dValidateTextureStageState</a> callback, or <b>NULL</b>. Drivers that support multitexturing must implement the callback that this member points to.</p>
+<p>Points to the driver-supplied <a href="display.d3dvalidatetexturestagestate">D3dValidateTextureStageState</a> callback, or <b>NULL</b>. Drivers that support multitexturing must implement the callback that this member points to.</p>
 </dd>
 
 ### -field <b>DrawPrimitives2</b>
@@ -159,10 +159,10 @@ typedef struct _D3DHAL_CALLBACKS3 {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544716">D3DHAL_CALLBACKS</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-callbacks.md">D3DHAL_CALLBACKS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549064">D3dValidateTextureStageState</a>
+<a href="display.d3dvalidatetexturestagestate">D3dValidateTextureStageState</a>
 </dt>
 <dt>
 <a href="display.ddgetdriverinfo">DdGetDriverInfo</a>

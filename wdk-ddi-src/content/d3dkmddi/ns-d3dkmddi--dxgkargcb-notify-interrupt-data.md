@@ -129,7 +129,7 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 ### -field <b>InterruptType</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561136">DXGK_INTERRUPT_TYPE</a>-typed value that indicates the type of interrupt that the display miniport driver notifies the GPU scheduler about.</p>
+<p>[in] A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-interrupt-type.md">DXGK_INTERRUPT_TYPE</a>-typed value that indicates the type of interrupt that the display miniport driver notifies the GPU scheduler about.</p>
 </dd>
 
 ### -field <b>DmaCompleted</b>
@@ -288,7 +288,7 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 ### -field <b>pMultiPlaneOverlayVsyncInfo</b>
 
 <dd>
-<p>[in] A pointer to  a <a href="https://msdn.microsoft.com/library/windows/hardware/hh780309">DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO</a> structure that specifies an overlay plane to display during a VSync interval.</p>
+<p>[in] A pointer to  a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-vsync-info.md">DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO</a> structure that specifies an overlay plane to display during a VSync interval.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 </dl>
@@ -297,7 +297,7 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 ### -field <b>DisplayOnlyPresentProgress</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/hh451245">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a> structure that provides the progress of a kernel mode display-only driver's (KMDOD) present operation.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-present-displayonly-progress.md">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a> structure that provides the progress of a kernel mode display-only driver's (KMDOD) present operation.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
@@ -317,7 +317,7 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 ### -field <b>ChunkInfo</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn322056">DXGK_MIRACAST_CHUNK_INFO</a> encode chunk information structure that the display miniport driver wants to report.</p>
+<p>A <a href="..\d3dukmdt\ns-d3dukmdt-dxgk-miracast-chunk-info.md">DXGK_MIRACAST_CHUNK_INFO</a> encode chunk information structure that the display miniport driver wants to report.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
@@ -332,7 +332,7 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 
 <dd>
 <p>The size, in bytes, of the block of private data in <b>pPrivateDriverData</b>.
-This value must not be larger than the <b>MaxChunkPrivateDriverDataSize</b> value that the driver reported in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn322054">DXGK_MIRACAST_CAPS</a> structure.</p>
+This value must not be larger than the <b>MaxChunkPrivateDriverDataSize</b> value that the driver reported in the <a href="..\dispmprt\ns-dispmprt--dxgk-miracast-caps.md">DXGK_MIRACAST_CAPS</a> structure.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
@@ -425,7 +425,7 @@ If the faulted fence cannot be determined reliably, <b>PageFaultFlags</b> should
 ### -field <b>PageFaultFlags</b>
 
 <dd>
-<p>Flags described in <a href="https://msdn.microsoft.com/library/windows/hardware/dn906831">DXGK_PAGE_FAULT_FLAGS</a> enumeration specifying the nature of the fault.</p>
+<p>Flags described in <a href="..\d3dkmdt\ne-d3dkmdt--dxgk-page-fault-flags.md">DXGK_PAGE_FAULT_FLAGS</a> enumeration specifying the nature of the fault.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
@@ -461,7 +461,7 @@ If the faulted fence cannot be determined reliably, <b>PageFaultFlags</b> should
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906346">DXGK_FAULT_ERROR_CODE</a> structure describing the error.</p>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgk-fault-error-code.md">DXGK_FAULT_ERROR_CODE</a> structure describing the error.</p>
 <p>Supported starting with Windows 10.</p>
 </dd>
 
@@ -526,7 +526,7 @@ If the faulted fence cannot be determined reliably, <b>PageFaultFlags</b> should
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff559579">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a> structure that indicates if the display miniport driver provides a physical adapter mask in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-interrupt.md">DxgkCbNotifyInterrupt</a> function.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgkcb-notify-interrupt-data-flags.md">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a> structure that indicates if the display miniport driver provides a physical adapter mask in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-interrupt.md">DxgkCbNotifyInterrupt</a> function.</p>
 </dd>
 </dl>
 
@@ -558,22 +558,22 @@ If the faulted fence cannot be determined reliably, <b>PageFaultFlags</b> should
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561136">DXGK_INTERRUPT_TYPE</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-interrupt-type.md">DXGK_INTERRUPT_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn322054">DXGK_MIRACAST_CAPS</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-miracast-caps.md">DXGK_MIRACAST_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn322056">DXGK_MIRACAST_CHUNK_INFO</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-dxgk-miracast-chunk-info.md">DXGK_MIRACAST_CHUNK_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780309">DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-multiplane-overlay-vsync-info.md">DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451245">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-present-displayonly-progress.md">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559579">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkcb-notify-interrupt-data-flags.md">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-notify-interrupt.md">DxgkCbNotifyInterrupt</a>
@@ -582,7 +582,7 @@ If the faulted fence cannot be determined reliably, <b>PageFaultFlags</b> should
 <a href="display.dxgkddisubmitcommand">DxgkDdiSubmitCommand</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906831">DXGK_PAGE_FAULT_FLAGS</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--dxgk-page-fault-flags.md">DXGK_PAGE_FAULT_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

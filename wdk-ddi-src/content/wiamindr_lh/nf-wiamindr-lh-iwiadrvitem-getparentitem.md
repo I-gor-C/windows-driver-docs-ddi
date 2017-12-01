@@ -68,8 +68,6 @@ HRESULT GetParentItem(
 ## -remarks
 <p>Minidrivers typically use this method to obtain a pointer to the nonroot parent item of the current item.</p>
 
-<p>Minidrivers typically use this method to obtain a pointer to the nonroot parent item of the current item.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -105,10 +103,10 @@ HRESULT GetParentItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543878">IWiaDrvItem::GetFirstChildItem</a>
+<a href="image.iwiadrvitem_getfirstchilditem">IWiaDrvItem::GetFirstChildItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543889">IWiaDrvItem::GetNextSiblingItem</a>
+<a href="image.iwiadrvitem_getnextsiblingitem">IWiaDrvItem::GetNextSiblingItem</a>
 </dt>
 </dl>
 <p> </p>

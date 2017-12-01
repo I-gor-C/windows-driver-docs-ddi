@@ -7,7 +7,7 @@ old-location: netvista\ndisgetshareddataalignment.htm
 old-project: netvista
 ms.assetid: 561315b4-8866-4f48-8138-12b1a38f743e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisGetSharedDataAlignment
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisGetSharedDataAlignment
-   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisGetSharedDataAlignment
-   (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetSharedDataAlignment   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetSharedDataAlignment   (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -68,30 +64,6 @@ ULONG NdisGetSharedDataAlignment(void);
      than one processor.</p>
 
 ## -remarks
-<p>Use 
-    <b>NdisGetSharedDataAlignment</b> to determine the best alignment for data structures that will be shared
-    between processors. Using the returned value when allocating such structures minimizes cache effects that
-    reduce the performance of multiprocessor systems.</p>
-
-<p>System support for 
-    <b>NdisGetSharedDataAlignment</b> is available in Windows XP and later versions.</p>
-
-<p>Use 
-    <b>NdisGetSharedDataAlignment</b> to determine the best alignment for data structures that will be shared
-    between processors. Using the returned value when allocating such structures minimizes cache effects that
-    reduce the performance of multiprocessor systems.</p>
-
-<p>System support for 
-    <b>NdisGetSharedDataAlignment</b> is available in Windows XP and later versions.</p>
-
-<p>Use 
-    <b>NdisGetSharedDataAlignment</b> to determine the best alignment for data structures that will be shared
-    between processors. Using the returned value when allocating such structures minimizes cache effects that
-    reduce the performance of multiprocessor systems.</p>
-
-<p>System support for 
-    <b>NdisGetSharedDataAlignment</b> is available in Windows XP and later versions.</p>
-
 <p>Use 
     <b>NdisGetSharedDataAlignment</b> to determine the best alignment for data structures that will be shared
     between processors. Using the returned value when allocating such structures minimizes cache effects that
@@ -157,7 +129,7 @@ ULONG NdisGetSharedDataAlignment(void);
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>

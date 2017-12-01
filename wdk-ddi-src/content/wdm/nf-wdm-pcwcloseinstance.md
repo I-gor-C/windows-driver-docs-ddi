@@ -66,9 +66,7 @@ VOID PcwCloseInstance(
 <p>None</p>
 
 ## -remarks
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550318">PcwCreateInstance</a> function to create an instance of a registered counter set. You cannot call <b>PcwCloseInstance</b> if you have already called <a href="https://msdn.microsoft.com/library/windows/hardware/ff550326">PcwUnregister</a>. When you unregister the counter set, the instances are closed for you.</p>
-
-<p>Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550318">PcwCreateInstance</a> function to create an instance of a registered counter set. You cannot call <b>PcwCloseInstance</b> if you have already called <a href="https://msdn.microsoft.com/library/windows/hardware/ff550326">PcwUnregister</a>. When you unregister the counter set, the instances are closed for you.</p>
+<p>Use the <a href="..\wdm\nf-wdm-pcwcreateinstance.md">PcwCreateInstance</a> function to create an instance of a registered counter set. You cannot call <b>PcwCloseInstance</b> if you have already called <a href="..\wdm\nf-wdm-pcwunregister.md">PcwUnregister</a>. When you unregister the counter set, the instances are closed for you.</p>
 
 ## -requirements
 <table>
@@ -133,7 +131,7 @@ VOID PcwCloseInstance(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550318">PcwCreateInstance</a>
+<a href="..\wdm\nf-wdm-pcwcreateinstance.md">PcwCreateInstance</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfiotarget_gettargetfile.htm
 old-project: wdf
 ms.assetid: d38ede60-9bcf-4c90-8c41-8f1edf1a1d23
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFIoTarget, GetTargetFile, IWDFIoTarget::GetTargetFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ void GetTargetFile(
 ### -param <i>ppFileObject</i> [out]
 
 <dd>
-<p>Pointer to a buffer that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a> interface for the I/O target's file object.</p>
+<p>Pointer to a buffer that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface for the I/O target's file object.</p>
 </dd>
 </dl>
 
@@ -75,17 +75,7 @@ void GetTargetFile(
 
 <p>For more information about I/O targets, see <a href="wdf.using_i_o_targets_in_umdf">Using I/O Targets in UMDF</a>.</p>
 
-<p>For a code example of how to use the <b>GetTargetFile</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559236">IWDFIoTarget::FormatRequestForWrite</a>.</p>
-
-<p>If  a framework file object is associated with an I/O target object, the framework includes the file object  with I/O requests that  the driver sends to the I/O target object. </p>
-
-<p>When a driver formats an I/O request, an I/O target object enables the driver to use either the same file that the request started with or a new file.</p>
-
-<p>The default I/O target has no file object, so a call to <b>GetTargetFile</b> for the default I/O target retrieves <b>NULL</b>. </p>
-
-<p>For more information about I/O targets, see <a href="wdf.using_i_o_targets_in_umdf">Using I/O Targets in UMDF</a>.</p>
-
-<p>For a code example of how to use the <b>GetTargetFile</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559236">IWDFIoTarget::FormatRequestForWrite</a>.</p>
+<p>For a code example of how to use the <b>GetTargetFile</b> method, see <a href="wdf.iwdfiotarget_formatrequestforwrite">IWDFIoTarget::FormatRequestForWrite</a>.</p>
 
 ## -requirements
 <table>
@@ -140,12 +130,12 @@ void GetTargetFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559170">IWDFIoTarget</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a>
+<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoTarget::GetTargetFile method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoTarget::GetTargetFile method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

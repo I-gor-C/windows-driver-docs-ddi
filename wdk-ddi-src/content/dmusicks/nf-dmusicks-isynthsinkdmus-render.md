@@ -7,7 +7,7 @@ old-location: audio\isynthsinkdmus_render.htm
 old-project: audio
 ms.assetid: 731abdaf-f84b-4d4b-a6e0-ee11899fba27
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: ISynthSinkDMus, Render, ISynthSinkDMus::Render
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,8 +79,6 @@ void Render(
 <p>None</p>
 
 ## -remarks
-<p>The port driver's synth-sink object calls this method when the miniport driver needs to render more wave data into the destination buffer.</p>
-
 <p>The port driver's synth-sink object calls this method when the miniport driver needs to render more wave data into the destination buffer.</p>
 
 ## -requirements

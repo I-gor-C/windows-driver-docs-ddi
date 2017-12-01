@@ -67,7 +67,7 @@ typedef struct _UCM_CONNECTOR_TYPEC_ATTACH_PARAMS {
 ### -field <b>PortPartnerType</b>
 
 <dd>
-<p>The type of partner attached to the connector, indicated by a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187947">UCM_TYPEC_PARTNER</a> value.</p>
+<p>The type of partner attached to the connector, indicated by a <a href="buses.ucm_type_c_port_state">UCM_TYPEC_PARTNER</a> value.</p>
 </dd>
 
 ### -field <b>CurrentAdvertisement</b>
@@ -79,12 +79,12 @@ typedef struct _UCM_CONNECTOR_TYPEC_ATTACH_PARAMS {
 ### -field <b>ChargingState</b>
 
 <dd>
-<p>Optional. Charging state of the port indicated by one of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187921">UCM_CHARGING_STATE</a>-typed flags. </p>
+<p>Optional. Charging state of the port indicated by one of the <a href="buses.ucm_charging_state">UCM_CHARGING_STATE</a>-typed flags. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Initialize this structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt187929">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT</a>. An initialized <b>UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</b> structure is an input parameter value to <a href="https://msdn.microsoft.com/library/windows/hardware/mt187915">UcmConnectorTypeCAttach</a> that is used by the client driver to notify UcmCx about the Attached state of the port.</p>
+<p>Initialize this structure by calling <a href="buses.ucm_connector_typec_attach_params_init">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT</a>. An initialized <b>UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</b> structure is an input parameter value to <a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a> that is used by the client driver to notify UcmCx about the Attached state of the port.</p>
 
 ## -requirements
 <table>
@@ -135,7 +135,7 @@ typedef struct _UCM_CONNECTOR_TYPEC_ATTACH_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187915">UcmConnectorTypeCAttach</a>
+<a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestrequeue.htm
 old-project: wdf
 ms.assetid: 955859d2-7c4f-454c-8621-84bacf0b9770
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfRequestRequeue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Wdf01000.sys (KMDF); 
-WUDFx02000.dll (UMDF)
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
 req.iface: 
@@ -91,16 +90,7 @@ NTSTATUS WdfRequestRequeue(
 ## -remarks
 <p>A driver can call <b>WdfRequestRequeue</b> only if it using the manual dispatching method for the I/O queue.</p>
 
-<p>If the driver calls <b>WdfRequestRequeue</b> after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548442">WdfIoQueuePurge</a>, the requeue attempt may succeed before the purge is complete. In versions 1.9 and earlier of KMDF, this 
-sequence causes the operating system to crash.  This problem is fixed in KMDF version 1.11 and later.</p>
-
-<p>For more information about <b>WdfRequestRequeue</b>, see <a href="wdf.requeuing_i_o_requests">Requeuing I/O Requests</a>.</p>
-
-<p>The following code example returns a specified I/O request to the queue from which the driver received the request.</p>
-
-<p>A driver can call <b>WdfRequestRequeue</b> only if it using the manual dispatching method for the I/O queue.</p>
-
-<p>If the driver calls <b>WdfRequestRequeue</b> after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548442">WdfIoQueuePurge</a>, the requeue attempt may succeed before the purge is complete. In versions 1.9 and earlier of KMDF, this 
+<p>If the driver calls <b>WdfRequestRequeue</b> after calling <a href="..\wdfio\nf-wdfio-wdfioqueuepurge.md">WdfIoQueuePurge</a>, the requeue attempt may succeed before the purge is complete. In versions 1.9 and earlier of KMDF, this 
 sequence causes the operating system to crash.  This problem is fixed in KMDF version 1.11 and later.</p>
 
 <p>For more information about <b>WdfRequestRequeue</b>, see <a href="wdf.requeuing_i_o_requests">Requeuing I/O Requests</a>.</p>
@@ -169,7 +159,7 @@ sequence causes the operating system to crash.  This problem is fixed in KMDF ve
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547261">InvalidReqAccess</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547267">InvalidReqAccessLocal</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_invalidreqaccess">InvalidReqAccess</a>, <a href="devtest.kmdf_invalidreqaccesslocal">InvalidReqAccessLocal</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
 </td>
 </tr>
 </table>

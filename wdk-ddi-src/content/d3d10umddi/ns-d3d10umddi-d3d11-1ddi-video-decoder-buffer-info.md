@@ -59,8 +59,8 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO {
 ### -field <b>Type</b>
 
 <dd>
-<p>The type of buffer, specified as a constant value of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451066">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> enumeration.</p>
-<p>In D3d10umddi.h, <a href="https://msdn.microsoft.com/library/windows/hardware/hh451066">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> and <b>D3D11_1DDI_VIDEO_DECODER_BUFFER_TYPE</b> are defined as the same type.</p>
+<p>The type of buffer, specified as a constant value of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-ddi-video-decoder-buffer-type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> enumeration.</p>
+<p>In D3d10umddi.h, <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-ddi-video-decoder-buffer-type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> and <b>D3D11_1DDI_VIDEO_DECODER_BUFFER_TYPE</b> are defined as the same type.</p>
 </dd>
 
 ### -field <b>Size</b>
@@ -72,7 +72,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO {
 ### -field <b>Usage</b>
 
 <dd>
-<p>A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451037">D3D11_1DDI_VIDEO_USAGE</a> enumeration that identifies how the decode device plays video.</p>
+<p>A value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-usage.md">D3D11_1DDI_VIDEO_USAGE</a> enumeration that identifies how the decode device plays video.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451037">D3D11_1DDI_VIDEO_USAGE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-video-usage.md">D3D11_1DDI_VIDEO_USAGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451066">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-ddi-video-decoder-buffer-type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a>
 </dt>
 </dl>
 <p> </p>

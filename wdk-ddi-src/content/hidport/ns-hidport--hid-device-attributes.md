@@ -61,7 +61,7 @@ typedef struct _HID_DEVICE_ATTRIBUTES {
 ### -field <b>Size</b>
 
 <dd>
-<p>Specifies the size of the structure. This member should be treated as read-only when a HID minidriver uses this structure to complete an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541093">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request.</p>
+<p>Specifies the size of the structure. This member should be treated as read-only when a HID minidriver uses this structure to complete an <a href="..\hidport\ni-hidport-ioctl-hid-get-device-attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request.</p>
 </dd>
 
 ### -field <b>VendorID</b>
@@ -90,7 +90,7 @@ typedef struct _HID_DEVICE_ATTRIBUTES {
 </dl>
 
 ## -remarks
-<p>The HID class driver uses this structure to obtain device attributes when it sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541093">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request to a HID minidriver.</p>
+<p>The HID class driver uses this structure to obtain device attributes when it sends an <a href="..\hidport\ni-hidport-ioctl-hid-get-device-attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request to a HID minidriver.</p>
 
 ## -requirements
 <table>
@@ -109,7 +109,7 @@ typedef struct _HID_DEVICE_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541093">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a>
+<a href="..\hidport\ni-hidport-ioctl-hid-get-device-attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a>
 </dt>
 </dl>
 <p> </p>

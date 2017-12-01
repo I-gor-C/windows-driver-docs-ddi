@@ -75,8 +75,6 @@ VOID StorPortDebugPrint(
 ## -remarks
 <p>To see these debug strings, the driver writer must set nt!Kd_STORMINIPORT_Mask. This follows the new system-wide debug print mechanism.</p>
 
-<p>To see these debug strings, the driver writer must set nt!Kd_STORMINIPORT_Mask. This follows the new system-wide debug print mechanism.</p>
-
 ## -requirements
 <table>
 <tr>

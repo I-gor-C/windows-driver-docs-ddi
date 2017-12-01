@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The GETINFO_FONTOBJ structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.</p>
+<p>The GETINFO_FONTOBJ structure is used as input to the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function.</p>
 
 
 ## -syntax
@@ -65,12 +65,12 @@ typedef struct _GETINFO_FONTOBJ {
 ### -field <b>pFontObj</b>
 
 <dd>
-<p>Pointer to an empty <a href="https://msdn.microsoft.com/library/windows/hardware/ff565974">FONTOBJ</a> structure. The structure is filled in by Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function. The pointer is supplied by the UNIFONTOBJ_GetInfo caller.</p>
+<p>Pointer to an empty <a href="display.fontobj">FONTOBJ</a> structure. The structure is filled in by Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function. The pointer is supplied by the UNIFONTOBJ_GetInfo caller.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>To obtain a font's FONTOBJ structure contents, a rendering plug-in can supply the address of a GETINFO_FONTOBJ structure when calling Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.</p>
+<p>To obtain a font's FONTOBJ structure contents, a rendering plug-in can supply the address of a GETINFO_FONTOBJ structure when calling Unidrv's <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> callback function.</p>
 
 ## -requirements
 <table>
@@ -89,10 +89,10 @@ typedef struct _GETINFO_FONTOBJ {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
+<a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565974">FONTOBJ</a>
+<a href="display.fontobj">FONTOBJ</a>
 </dt>
 </dl>
 <p> </p>

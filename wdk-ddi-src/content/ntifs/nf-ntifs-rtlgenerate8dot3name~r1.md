@@ -104,27 +104,7 @@ NTSTATUS RtlGenerate8dot3Name(
 
 <p>Square brackets </p>
 
-<p>For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. </p>
-
-<p><b>RtlGenerate8dot3Name</b> returns a generated short name with at most eight characters, followed immediately by a period and up to three more characters. </p>
-
-<p><b>RtlGenerate8dot3Name</b> can be called repeatedly. For example, if the initially generated short name is a duplicate of an existing file name, the caller can pass the same parameters to <b>RtlGenerate8dot3Name</b> again. In this case, the buffer at <i>Context</i> should not be reinitialized with zeros. This buffer should be zeroed only for the initial call to translate a given long name. On repeated calls for the same long name, <b>RtlGenerate8dot3Name</b> stores private context information in this buffer to prevent name collisions. </p>
-
-<p>Two calls to <b>RtlGenerate8dot3Name</b> with the same <i>Name</i> and <i>Context</i> are not guaranteed to return the same result. Callers should assume that the mapping of long name to short name is nondeterministic. </p>
-
-<p><b>RtlGenerate8dot3Name</b> translates the given long name using the current system code page, discarding any invalid or superfluous characters in the input long name. When <i>AllowExtendedCharacters</i> is set to <b>TRUE</b>, ANSI or double-byte character set (DBCS) characters that map to uppercase OEM characters can become part of a returned short name. </p>
-
-<p><b>RtlGenerate8dot3Name</b> returns a short file name with uppercase alphabetic characters. It returns underscores in the generated short name for any of the following characters that it encounters in the given long name:</p>
-
-<p>Colons and semicolons </p>
-
-<p>Commas </p>
-
-<p>Plus and equal signs </p>
-
-<p>Square brackets </p>
-
-<p>For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. </p>
+<p>For information about other string-handling routines, see <a href="kernel.strings">Strings</a>. </p>
 
 ## -requirements
 <table>
@@ -181,13 +161,13 @@ NTSTATUS RtlGenerate8dot3Name(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553060">RtlIsNameLegalDOS8Dot3</a>
+<a href="..\ntifs\nf-ntifs-rtlisnamelegaldos8dot3.md">RtlIsNameLegalDOS8Dot3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553076">RtlIsValidOemCharacter</a>
+<a href="..\ntifs\nf-ntifs-rtlisvalidoemcharacter.md">RtlIsValidOemCharacter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>

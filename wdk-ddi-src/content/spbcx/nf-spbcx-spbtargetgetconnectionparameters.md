@@ -81,14 +81,6 @@ VOID SpbTargetGetConnectionParameters(
 
 <p><b>SpbTargetGetConnectionParameters</b> will not fail if it is called with a valid SPBTARGET handle.</p>
 
-<p>This method retrieves a set of connection parameters that the SPB controller driver requires to access the specified target device on the bus. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406204">SPB_CONNECTION_PARAMETERS</a>.</p>
-
-<p>A client (peripheral driver) that successfully opens a connection to a target has exclusive use of that target.</p>
-
-<p>The SPB framework extension (SpbCx) calls your controller driver's <a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a> and <a href="https://msdn.microsoft.com/02756C35-E76C-42C0-80FA-359CADE224A1">EvtSpbTargetDisconnect</a> callback functions to open and close a connection.</p>
-
-<p><b>SpbTargetGetConnectionParameters</b> will not fail if it is called with a valid SPBTARGET handle.</p>
-
 ## -requirements
 <table>
 <tr>

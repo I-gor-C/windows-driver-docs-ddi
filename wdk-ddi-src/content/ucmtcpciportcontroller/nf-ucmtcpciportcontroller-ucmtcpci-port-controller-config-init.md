@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-                        Initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/mt805900">UCMTCPCI_PORT_CONTROLLER_CONFIG</a> structure.
+                        Initializes the <a href="buses.ucmtcpci_port_controller_config">UCMTCPCI_PORT_CONTROLLER_CONFIG</a> structure.
                 </p>
 
 
@@ -62,20 +62,20 @@ VOID UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT(
 ### -param <i>Config</i> [out]
 
 <dd>
-<p>A pointer to the driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt805900">UCMTCPCI_PORT_CONTROLLER_CONFIG</a> structure.</p>
+<p>A pointer to the driver-allocated <a href="buses.ucmtcpci_port_controller_config">UCMTCPCI_PORT_CONTROLLER_CONFIG</a> structure.</p>
 </dd>
 
 ### -param <i>Identification</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/mt805879">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.</p>
+<p>A pointer to the <a href="buses.ucmtcpci_port_controller_identification">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.</p>
 </dd>
 
 ### -param <i>Capabilities</i> [in]
 
 <dd>
 <p> A pointer to the 
-                 <a href="https://msdn.microsoft.com/library/windows/hardware/mt805870">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.</p>
+                 <a href="buses.ucmtcpci_port_controller_capabilities">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.</p>
 </dd>
 </dl>
 
@@ -126,7 +126,7 @@ VOID UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>
+<a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>
 </dt>
 </dl>
 <p> </p>

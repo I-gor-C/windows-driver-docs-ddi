@@ -7,7 +7,7 @@ old-location: bltooth\bth_sdp_service_attribute_search_request.htm
 old-project: bltooth
 ms.assetid: 28255569-57ce-44b7-9d53-9e8797b914c5
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ typedef struct _BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST {
 
 <dd>
 <p>A handle to the remote SDP server that is returned by the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536688">IOCTL_BTH_SDP_CONNECT</a> IOCTL.</p>
+     <a href="..\bthioctl\ni-bthioctl-ioctl-bth-sdp-connect.md">IOCTL_BTH_SDP_CONNECT</a> IOCTL.</p>
 </dd>
 
 ### -field <b>searchFlags</b>
@@ -129,10 +129,10 @@ typedef struct _BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST {
    IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536688">IOCTL_BTH_SDP_CONNECT</a>
+<a href="..\bthioctl\ni-bthioctl-ioctl-bth-sdp-connect.md">IOCTL_BTH_SDP_CONNECT</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=50714">SdpAttributeRange</a></dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

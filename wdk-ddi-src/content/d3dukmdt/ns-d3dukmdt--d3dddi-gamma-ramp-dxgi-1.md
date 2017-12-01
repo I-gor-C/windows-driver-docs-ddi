@@ -59,19 +59,19 @@ typedef struct _D3DDDI_GAMMA_RAMP_DXGI_1 {
 ### -field <b>Scale</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544533">D3DDDI_DXGI_RGB</a> structure that holds the scale for the gamma function.</p>
+<p>A <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-dxgi-rgb.md">D3DDDI_DXGI_RGB</a> structure that holds the scale for the gamma function.</p>
 </dd>
 
 ### -field <b>Offset</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544533">D3DDDI_DXGI_RGB</a> structure that holds the offset for the gamma function.</p>
+<p>A <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-dxgi-rgb.md">D3DDDI_DXGI_RGB</a> structure that holds the offset for the gamma function.</p>
 </dd>
 
 ### -field <b>GammaCurve</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544533">D3DDDI_DXGI_RGB</a> structures that describe the curve of the gamma function.</p>
+<p>An array of <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-dxgi-rgb.md">D3DDDI_DXGI_RGB</a> structures that describe the curve of the gamma function.</p>
 </dd>
 </dl>
 
@@ -103,7 +103,7 @@ typedef struct _D3DDDI_GAMMA_RAMP_DXGI_1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544533">D3DDDI_DXGI_RGB</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-dxgi-rgb.md">D3DDDI_DXGI_RGB</a>
 </dt>
 </dl>
 <p> </p>

@@ -62,7 +62,7 @@ typedef struct _SetLoadBalancePolicy_OUT {
 </dl>
 
 ## -remarks
-<p>You must implement this class. For a list of possible status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.</p>
+<p>You must implement this class. For a list of possible status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 
 ## -requirements
 <table>
@@ -81,10 +81,10 @@ typedef struct _SetLoadBalancePolicy_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563062">MSiSCSI_LB_Operations WMI Class</a>
+<a href="storage.msiscsi_lb_operations_wmi_class">MSiSCSI_LB_Operations WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 </dl>
 <p> </p>

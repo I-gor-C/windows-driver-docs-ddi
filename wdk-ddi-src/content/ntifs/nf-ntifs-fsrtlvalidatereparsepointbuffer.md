@@ -84,10 +84,6 @@ NTSTATUS FsRtlValidateReparsePointBuffer(
 
 <p>Reparse tags contain several bits that cannot be set except by system components. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=179582">Reparse Point Tags</a>.</p>
 
-<p>For more information about reparse points, see <a href="ifsk.reparse_points_in_a_file_system_filter_driver">Reparse Points in a File System Filter Driver</a>.</p>
-
-<p>Reparse tags contain several bits that cannot be set except by system components. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=179582">Reparse Point Tags</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -151,10 +147,10 @@ NTSTATUS FsRtlValidateReparsePointBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552012">REPARSE_DATA_BUFFER</a>
+<a href="..\ntifs\ns-ntifs--reparse-data-buffer.md">REPARSE_DATA_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552014">REPARSE_GUID_DATA_BUFFER</a>
+<a href="..\ntifs\ns-ntifs--reparse-guid-data-buffer.md">REPARSE_GUID_DATA_BUFFER</a>
 </dt>
 </dl>
 <p> </p>

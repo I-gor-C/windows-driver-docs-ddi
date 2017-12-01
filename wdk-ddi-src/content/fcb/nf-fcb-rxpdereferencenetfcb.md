@@ -71,12 +71,6 @@ LONG RxpDereferenceNetFcb(
 
 <p>On checked builds, <b>RxpDereferenceNetFcb</b> causes the system to ASSERT if the node type for the structure is not an FCB or if the final reference count is less than 0. </p>
 
-<p>The referencing and dereferencing of FCBs is different from those of the other data structures because of the embedded resource in the FCB. This implies that the caller requires information regarding the status of the FCB (whether it was finalized or not ). To finalize the FCB, two locks need to be held, the NET_ROOT name table lock as well as the FCB resource. These considerations lead to a different approach in dereferencing FCBs. Consequently, <b>RxpDereferenceNetFcb</b> does not attempt to finalize the FCB.</p>
-
-<p>A number of macros are defined in <i>fcb.h</i> for debugging that are the preferred way to call this routine. These macros provide a wrapper around the <b>RxpReferenceNetFcb</b>  or <b>RxpDereferenceNetFcb</b> routines used for file structure management operations on FCB structures. The <b>RxDereferenceNetFcb</b> macro is the preferred way to call this routine. This macro first calls the <b>RxpTrackDereference</b> routine to log diagnostic information about the request before calling the <b>RxpDereferenceNetFcb</b> routine.</p>
-
-<p>On checked builds, <b>RxpDereferenceNetFcb</b> causes the system to ASSERT if the node type for the structure is not an FCB or if the final reference count is less than 0. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -115,13 +109,13 @@ LONG RxpDereferenceNetFcb(
 <a href="ifsk.the_fcb_structure">The FCB Structure</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554627">RxpReferenceNetFcb</a>
+<a href="..\fcb\nf-fcb-rxpreferencenetfcb.md">RxpReferenceNetFcb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554655">RxpTrackDereference</a>
+<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554659">RxpTrackReference</a>
+<a href="..\fcb\nf-fcb-rxptrackreference.md">RxpTrackReference</a>
 </dt>
 </dl>
 <p> </p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The RemoveTarget_OUT structure is used by an HBA miniport driver to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564030">RemoveTarget</a> WMI method to the WMI client.</p>
+<p>The RemoveTarget_OUT structure is used by an HBA miniport driver to report the output parameter data of the <a href="storage.removetarget">RemoveTarget</a> WMI method to the WMI client.</p>
 
 
 ## -syntax
@@ -57,12 +57,12 @@ typedef struct _RemoveTarget_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.</p>
+<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the RemoveTarget_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562490">MSFC_EventControl WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the RemoveTarget_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_eventcontrol_wmi_class">MSFC_EventControl WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -81,7 +81,7 @@ typedef struct _RemoveTarget_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564030">RemoveTarget</a>
+<a href="storage.removetarget">RemoveTarget</a>
 </dt>
 </dl>
 <p> </p>

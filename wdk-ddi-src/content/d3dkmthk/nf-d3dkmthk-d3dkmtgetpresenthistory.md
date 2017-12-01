@@ -57,7 +57,7 @@ NTSTATUS D3DKMTGetPresentHistory(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>Supplies a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548052">D3DKMT_GETPRESENTHISTORY</a> structure that describes the copying history.</p>
+<p>Supplies a pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getpresenthistory.md">D3DKMT_GETPRESENTHISTORY</a> structure that describes the copying history.</p>
 </dd>
 </dl>
 
@@ -122,7 +122,7 @@ NTSTATUS D3DKMTGetPresentHistory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548052">D3DKMT_GETPRESENTHISTORY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getpresenthistory.md">D3DKMT_GETPRESENTHISTORY</a>
 </dt>
 </dl>
 <p> </p>

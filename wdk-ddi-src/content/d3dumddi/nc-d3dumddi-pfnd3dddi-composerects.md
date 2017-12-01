@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY ComposeRects(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542912">D3DDDIARG_COMPOSERECTS</a> structure that specifies the parameters that are used to compose rectangular areas.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-composerects.md">D3DDDIARG_COMPOSERECTS</a> structure that specifies the parameters that are used to compose rectangular areas.</p>
 </dd>
 </dl>
 
@@ -82,28 +82,6 @@ __checkReturn HRESULT APIENTRY ComposeRects(
 <p> </p>
 
 ## -remarks
-<p>The following constraints and validations apply to the <b>ComposeRects</b> function:</p>
-
-<p>The driver should ignore the source rectangular areas that are not completely inside the source surface. </p>
-
-<p>The destination rectangular areas--after applying offsets--can be partially or completely outside the destination surface. The destination rectangular areas are clipped if partially outside and rejected or completely clipped if completely outside. </p>
-
-<p>The same surface cannot be specified for the source and the destination. </p>
-
-<p>Surfaces and vertex buffers that are used with <b>ComposeRects</b> should not be locked. </p>
-
-<p>The source and destination surfaces are formatted as one bit per pixel (D3DDDIFMT_A1) when they are created.</p>
-
-<p>In the debug build, the Microsoft Direct3D runtime validates that a source rectangular area description exists for each index in the destination rectangular area description. In the retail build, <b>ComposeRects</b> returns an error if an invalid index exists. </p>
-
-<p>The number of rectangular areas should be less than 0xFFFF to prevent internal overflow during math operations.</p>
-
-<p>Surfaces and vertex buffers should be created by using the same display device (graphics context). </p>
-
-<p>Local display memory should be specified for the destination surface.</p>
-
-<p>The following example code shows an operation that <b>ComposeRects</b> performs:</p>
-
 <p>The following constraints and validations apply to the <b>ComposeRects</b> function:</p>
 
 <p>The driver should ignore the source rectangular areas that are not completely inside the source surface. </p>
@@ -161,10 +139,10 @@ __checkReturn HRESULT APIENTRY ComposeRects(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542912">D3DDDIARG_COMPOSERECTS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-composerects.md">D3DDDIARG_COMPOSERECTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

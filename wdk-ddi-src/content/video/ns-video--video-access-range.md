@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>The VIDEO_ACCESS_RANGE structure defines a device I/O port or memory range for the video adapter. Every miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function must set up an array of VIDEO_ACCESS_RANGE-type elements, called the <i>access ranges array</i>, for each video adapter the miniport driver supports.</p>
-<p>For VGA-compatible miniport drivers, VIDEO_ACCESS_RANGE also defines an element in an array passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570366">VideoPortSetTrappedEmulatorPorts</a> to enable or disable direct access to I/O ports by full-screen MS-DOS applications.</p>
+<p>For VGA-compatible miniport drivers, VIDEO_ACCESS_RANGE also defines an element in an array passed to <a href="..\video\nf-video-videoportsettrappedemulatorports.md">VideoPortSetTrappedEmulatorPorts</a> to enable or disable direct access to I/O ports by full-screen MS-DOS applications.</p>
 
 
 ## -syntax
@@ -64,8 +64,8 @@ typedef struct _VIDEO_ACCESS_RANGE {
 ### -field <b>RangeStart</b>
 
 <dd>
-<p>Specifies the bus-relative base address of a memory or I/O port range for an element in the access ranges array passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570377">VideoPortVerifyAccessRanges</a> or returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570302">VideoPortGetAccessRanges</a>.</p>
-<p>Specifies the bus-relative base address of an I/O port range for an array to be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570366">VideoPortSetTrappedEmulatorPorts</a>.</p>
+<p>Specifies the bus-relative base address of a memory or I/O port range for an element in the access ranges array passed to <a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a> or returned by <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>.</p>
+<p>Specifies the bus-relative base address of an I/O port range for an array to be passed to <a href="..\video\nf-video-videoportsettrappedemulatorports.md">VideoPortSetTrappedEmulatorPorts</a>.</p>
 </dd>
 
 ### -field <b>RangeLength</b>
@@ -125,19 +125,19 @@ typedef struct _VIDEO_ACCESS_RANGE {
 </dl>
 
 ## -remarks
-<p>The miniport driver must claim legacy resources in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> or <a href="..\video\nc-video-pvideo-hw-legacyresources.md">HwVidLegacyResources</a> function.</p>
+<p>The miniport driver must claim legacy resources in its <a href="display.driverentry_of_video_miniport_driver">DriverEntry</a> or <a href="..\video\nc-video-pvideo-hw-legacyresources.md">HwVidLegacyResources</a> function.</p>
 
-<p>Otherwise, a miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function sets up the access ranges array for an adapter's PCI resources. It can use information returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570302">VideoPortGetAccessRanges</a>. As an alternative, it can use information retrieved from the registry by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff570311">VideoPortGetDeviceData</a> with a miniport driver-supplied <a href="..\video\nc-video-pminiport-query-device-routine.md">HwVidQueryDeviceCallback</a> function or <a href="https://msdn.microsoft.com/library/windows/hardware/ff570316">VideoPortGetRegistryParameters</a> with a miniport driver-supplied <a href="..\video\nc-video-pminiport-get-registry-routine.md">HwVidQueryNamedValueCallback</a> function. If calling these <b>VideoPort</b><i>Xxx</i> does not supply the bus-relative access range values, <i>HwVidFindAdapter</i> can set up access ranges elements using driver-supplied bus-relative default values.</p>
+<p>Otherwise, a miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function sets up the access ranges array for an adapter's PCI resources. It can use information returned by <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>. As an alternative, it can use information retrieved from the registry by calling <a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a> with a miniport driver-supplied <a href="..\video\nc-video-pminiport-query-device-routine.md">HwVidQueryDeviceCallback</a> function or <a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a> with a miniport driver-supplied <a href="..\video\nc-video-pminiport-get-registry-routine.md">HwVidQueryNamedValueCallback</a> function. If calling these <b>VideoPort</b><i>Xxx</i> does not supply the bus-relative access range values, <i>HwVidFindAdapter</i> can set up access ranges elements using driver-supplied bus-relative default values.</p>
 
-<p>The miniport driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff570377">VideoPortVerifyAccessRanges</a> with any access ranges obtained from <b>VideoPortGetDeviceData</b>, <b>VideoPortGetAccessRanges</b>, or supplied as defaults by the miniport driver. If <b>VideoPortVerifyAccessRanges</b> returns NO_ERROR for such an array of access ranges, the <i>HwVidFindAdapter</i> or <i>HwVidQueryDeviceCallback</i> function can then map the ranges with <a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a> and use the returned mapped logical addresses to access the adapter.</p>
+<p>The miniport driver should call <a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a> with any access ranges obtained from <b>VideoPortGetDeviceData</b>, <b>VideoPortGetAccessRanges</b>, or supplied as defaults by the miniport driver. If <b>VideoPortVerifyAccessRanges</b> returns NO_ERROR for such an array of access ranges, the <i>HwVidFindAdapter</i> or <i>HwVidQueryDeviceCallback</i> function can then map the ranges with <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a> and use the returned mapped logical addresses to access the adapter.</p>
 
-<p>A successful call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570302">VideoPortGetAccessRanges</a> also claims the returned bus-relative access ranges in the registry for the caller. If the miniport driver modifies any of the returned values, it must call <b>VideoPortVerifyAccessRanges</b> with the full access range, including any unmodified elements. Each call to <b>VideoPortGetAccessRanges</b> or <b>VideoPortVerifyAccessRanges</b> for a particular video adapter overwrites the caller's claimed hardware resources in the registry.</p>
+<p>A successful call to <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a> also claims the returned bus-relative access ranges in the registry for the caller. If the miniport driver modifies any of the returned values, it must call <b>VideoPortVerifyAccessRanges</b> with the full access range, including any unmodified elements. Each call to <b>VideoPortGetAccessRanges</b> or <b>VideoPortVerifyAccessRanges</b> for a particular video adapter overwrites the caller's claimed hardware resources in the registry.</p>
 
 <p>A miniport driver must not attempt to use a range for which <b>VideoPortVerifyAccessRanges</b> or <b>VideoPortGetAccessRanges</b> does not return NO_ERROR.</p>
 
 <p>After a miniport driver has claimed resources in the registry for an adapter, it cannot use bus-relative addresses to access or configure the adapter, because the HAL can remap all bus-relative device addresses to <a href="wdkgloss.s#wdkgloss.system_space#wdkgloss.system_space"><i>system space</i></a>.</p>
 
-<p>The miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a> to get mapped logical addresses for its access ranges. Only then can the miniport driver communicate with the video adapter by passing the returned mapped logical range addresses to <b>VideoPortRead/WritePort</b><i>Xxx</i> to access device memory in I/O space and/or <b>VideoPortRead/WriteRegister</b><i>Xxx</i> to access device memory in memory space.</p>
+<p>The miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function must call <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a> to get mapped logical addresses for its access ranges. Only then can the miniport driver communicate with the video adapter by passing the returned mapped logical range addresses to <b>VideoPortRead/WritePort</b><i>Xxx</i> to access device memory in I/O space and/or <b>VideoPortRead/WriteRegister</b><i>Xxx</i> to access device memory in memory space.</p>
 
 <p>Follow these guidelines to determine whether an access range can be shared:</p>
 
@@ -149,7 +149,7 @@ typedef struct _VIDEO_ACCESS_RANGE {
 
 <p>However, miniport drivers for cards that work with a pass-through IOCTL and that can be connected to any VGA or SVGA card should not be using any system VGA ports or memory ranges. If they do, such a driver should not attempt to claim any of the VGA access ranges in the registry. Attempts to claim VGA resources by such a miniport driver are likely to cause a resource conflict because the driver of any SVGA card in the machine will have claimed these access ranges as unsharable.</p>
 
-<p>All VIDEO_ACCESS_RANGE-type array elements describing I/O port ranges are assumed to be invisible, unless a VGA-compatible miniport driver in an x86-based machine explicitly resets the <b>RangeVisible</b> member(s) to <b>TRUE</b> and calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff570366">VideoPortSetTrappedEmulatorPorts</a> to enable one or more I/O port ranges. <b>VideoPortSetTrappedEmulatorPorts</b> ignores the <b>RangeSharable</b> members of the input array.</p>
+<p>All VIDEO_ACCESS_RANGE-type array elements describing I/O port ranges are assumed to be invisible, unless a VGA-compatible miniport driver in an x86-based machine explicitly resets the <b>RangeVisible</b> member(s) to <b>TRUE</b> and calls <a href="..\video\nf-video-videoportsettrappedemulatorports.md">VideoPortSetTrappedEmulatorPorts</a> to enable one or more I/O port ranges. <b>VideoPortSetTrappedEmulatorPorts</b> ignores the <b>RangeSharable</b> members of the input array.</p>
 
 <p>In an array of VIDEO_ACCESS_RANGE-type elements passed to <b>VideoPortSetTrappedEmulatorPorts</b>, the value of each element's <b>RangeVisible</b> member determines whether the given I/O port(s) can be accessed directly by the VDM (MS-DOS application running in full-screen on an x86-based machine) or whether such an application-issued I/O stream is trapped and forwarded to a miniport driver-supplied <i>SvgaHwIoPortXxx</i> function for validation first.</p>
 
@@ -170,10 +170,10 @@ typedef struct _VIDEO_ACCESS_RANGE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556159">DriverEntry of Video Miniport Driver</a>
+<a href="display.driverentry_of_video_miniport_driver">DriverEntry of Video Miniport Driver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564131">EMULATOR_ACCESS_ENTRY</a>
+<a href="..\miniport\ns-miniport--emulator-access-entry.md">EMULATOR_ACCESS_ENTRY</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a>
@@ -185,28 +185,28 @@ typedef struct _VIDEO_ACCESS_RANGE {
 <a href="..\video\nc-video-pminiport-get-registry-routine.md">HwVidQueryNamedValueCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570505">VIDEO_HW_INITIALIZATION_DATA</a>
+<a href="..\video\ns-video--video-hw-initialization-data.md">VIDEO_HW_INITIALIZATION_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570302">VideoPortGetAccessRanges</a>
+<a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a>
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570311">VideoPortGetDeviceData</a>
+<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570316">VideoPortGetRegistryParameters</a>
+<a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570320">VideoPortInitialize</a>
+<a href="..\video\nf-video-videoportinitialize.md">VideoPortInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570366">VideoPortSetTrappedEmulatorPorts</a>
+<a href="..\video\nf-video-videoportsettrappedemulatorports.md">VideoPortSetTrappedEmulatorPorts</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570377">VideoPortVerifyAccessRanges</a>
+<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
 </dt>
 </dl>
 <p> </p>

@@ -66,9 +66,7 @@ inline void __stdcall wiauDbgLegacyWarning(
 <p>None</p>
 
 ## -remarks
-<p>The <b>wiauDbgLegacyWarning</b> function is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550163">wiauDbgWarning</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.</p>
-
-<p>The <b>wiauDbgLegacyWarning</b> function is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550163">wiauDbgWarning</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.</p>
+<p>The <b>wiauDbgLegacyWarning</b> function is identical to the <a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.</p>
 
 ## -requirements
 <table>
@@ -105,7 +103,7 @@ inline void __stdcall wiauDbgLegacyWarning(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550163">wiauDbgWarning</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
 </dt>
 </dl>
 <p> </p>

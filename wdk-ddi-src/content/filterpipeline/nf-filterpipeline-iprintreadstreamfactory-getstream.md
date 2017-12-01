@@ -57,7 +57,7 @@ HRESULT GetStream(
 ### -param <i>ppStream</i> [out]
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff554337">IPrintReadStream</a> interface. The filter can use this interface to read the contents of the print ticket.</p>
+<p>A pointer to an <a href="print.iprintreadstream">IPrintReadStream</a> interface. The filter can use this interface to read the contents of the print ticket.</p>
 </dd>
 </dl>
 
@@ -65,8 +65,6 @@ HRESULT GetStream(
 <p><code>GetStream</code> returns an <b>HRESULT</b> value.</p>
 
 ## -remarks
-<p>The following code example shows how a filter can use <b>IPrintReadStreamFactory</b> to access the per-user print ticket.</p>
-
 <p>The following code example shows how a filter can use <b>IPrintReadStreamFactory</b> to access the per-user print ticket.</p>
 
 ## -requirements

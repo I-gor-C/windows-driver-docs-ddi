@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Contains pointers to functions in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn344650">Wireless display (Miracast) display callback interface</a> that the display miniport driver can call to send messages and report encode chunk info.</p>
+<p>Contains pointers to functions in the <a href="display.wireless_display__miracast__display_callback_interface">Wireless display (Miracast) display callback interface</a> that the display miniport driver can call to send messages and report encode chunk info.</p>
 
 
 ## -syntax

@@ -65,13 +65,13 @@ typedef struct _D3DKMT_OPENADAPTERFROMDEVICENAME {
 ### -field <b>hAdapter</b>
 
 <dd>
-<p>[out] A handle to the graphics adapter for the device that <b>pDeviceName</b> specifies. The adapter handle is returned from the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547033">D3DKMTOpenAdapterFromDeviceName</a> function.</p>
+<p>[out] A handle to the graphics adapter for the device that <b>pDeviceName</b> specifies. The adapter handle is returned from the call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromdevicename.md">D3DKMTOpenAdapterFromDeviceName</a> function.</p>
 </dd>
 
 ### -field <b>AdapterLuid</b>
 
 <dd>
-<p>[out] The locally unique identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>) of the graphics adapter for the device that <b>pDeviceName</b> specifies. The LUID is returned from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547033">D3DKMTOpenAdapterFromDeviceName</a> call.</p>
+<p>[out] The locally unique identifier (<a href="kernel.luid">LUID</a>) of the graphics adapter for the device that <b>pDeviceName</b> specifies. The LUID is returned from the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromdevicename.md">D3DKMTOpenAdapterFromDeviceName</a> call.</p>
 </dd>
 </dl>
 
@@ -103,7 +103,7 @@ typedef struct _D3DKMT_OPENADAPTERFROMDEVICENAME {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547033">D3DKMTOpenAdapterFromDeviceName</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromdevicename.md">D3DKMTOpenAdapterFromDeviceName</a>
 </dt>
 </dl>
 <p> </p>

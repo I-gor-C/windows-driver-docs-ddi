@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The MOUNTDEV_UNIQUE_ID structure contains a unique volume ID that a mount manager client provides to the mount manager in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560441">IOCTL_MOUNTDEV_QUERY_UNIQUE_ID</a> request. </p>
+<p>The MOUNTDEV_UNIQUE_ID structure contains a unique volume ID that a mount manager client provides to the mount manager in response to an <a href="..\mountdev\ni-mountdev-ioctl-mountdev-query-unique-id.md">IOCTL_MOUNTDEV_QUERY_UNIQUE_ID</a> request. </p>
 
 
 ## -syntax
@@ -88,7 +88,7 @@ typedef struct _MOUNTDEV_UNIQUE_ID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560443">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>
+<a href="storage.ioctl_mountdev_unique_id_change_notify">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>
 </dt>
 </dl>
 <p> </p>

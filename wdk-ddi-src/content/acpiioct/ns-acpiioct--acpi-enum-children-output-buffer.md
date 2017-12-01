@@ -64,7 +64,7 @@ typedef struct _ACPI_ENUM_CHILDREN_OUTPUT_BUFFER {
 ### -field <b>NumberOfChildren</b>
 
 <dd>
-<p>The number of elements of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536109">ACPI_ENUM_CHILD</a> in the <b>Children</b> array.</p>
+<p>The number of elements of type <a href="..\acpiioct\ns-acpiioct--acpi-enum-child.md">ACPI_ENUM_CHILD</a> in the <b>Children</b> array.</p>
 </dd>
 
 ### -field <b>Children</b>
@@ -75,7 +75,7 @@ typedef struct _ACPI_ENUM_CHILDREN_OUTPUT_BUFFER {
 </dl>
 
 ## -remarks
-<p>A driver for a device uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff536147">IOCTL_ACPI_ENUM_CHILDREN</a> request to enumerate the child objects of the device. The enumerated child objects can be devices or any object of a supplied name. This request returns an ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure, which includes the <b>Children</b> member that contains an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff536109">ACPI_ENUM_CHILD</a> structures. </p>
+<p>A driver for a device uses an <a href="..\acpiioct\ni-acpiioct-ioctl-acpi-enum-children.md">IOCTL_ACPI_ENUM_CHILDREN</a> request to enumerate the child objects of the device. The enumerated child objects can be devices or any object of a supplied name. This request returns an ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure, which includes the <b>Children</b> member that contains an array of <a href="..\acpiioct\ns-acpiioct--acpi-enum-child.md">ACPI_ENUM_CHILD</a> structures. </p>
 
 <p>For information about how to enumerate child objects of a device, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/enumerating-child-devices-and-control-methods">Enumerating Child Devices and Control Methods</a>.</p>
 
@@ -104,10 +104,10 @@ typedef struct _ACPI_ENUM_CHILDREN_OUTPUT_BUFFER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536109">ACPI_ENUM_CHILD</a>
+<a href="..\acpiioct\ns-acpiioct--acpi-enum-child.md">ACPI_ENUM_CHILD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536147">IOCTL_ACPI_ENUM_CHILDREN</a>
+<a href="..\acpiioct\ni-acpiioct-ioctl-acpi-enum-children.md">IOCTL_ACPI_ENUM_CHILDREN</a>
 </dt>
 </dl>
 <p> </p>

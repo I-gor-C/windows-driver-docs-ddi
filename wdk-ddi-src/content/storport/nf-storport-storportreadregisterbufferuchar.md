@@ -87,9 +87,7 @@ STORPORT_API VOID StorPortReadRegisterBufferUchar(
 <p>None</p>
 
 ## -remarks
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564734">ScsiPortReadRegisterBufferUchar</a>. For a nonbuffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567483">StorPortReadRegisterUchar</a>.</p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564734">ScsiPortReadRegisterBufferUchar</a>. For a nonbuffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567483">StorPortReadRegisterUchar</a>.</p>
+<p>For more information, see <a href="..\srb\nf-srb-scsiportreadregisterbufferuchar.md">ScsiPortReadRegisterBufferUchar</a>. For a nonbuffered version of this routine, see <a href="..\storport\nf-storport-storportreadregisteruchar.md">StorPortReadRegisterUchar</a>.</p>
 
 ## -requirements
 <table>
@@ -128,10 +126,10 @@ STORPORT_API VOID StorPortReadRegisterBufferUchar(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564734">ScsiPortReadRegisterBufferUchar</a>
+<a href="..\srb\nf-srb-scsiportreadregisterbufferuchar.md">ScsiPortReadRegisterBufferUchar</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567483">StorPortReadRegisterUchar</a>
+<a href="..\storport\nf-storport-storportreadregisteruchar.md">StorPortReadRegisterUchar</a>
 </dt>
 </dl>
 <p> </p>

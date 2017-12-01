@@ -177,23 +177,9 @@ VOID (*PRELEASE_FROM_READ_AHEAD) (
 
 <p>File systems must call <b>CcInitializeCacheMap</b> to cache a file before using any other cache manager routines on the file, unless the file was created with data caching disabled. In most file systems, file caching is enabled by default, but can be disabled by setting the FILE_NO_INTERMEDIATE_BUFFERING flag to <b>TRUE</b> in the file create options.</p>
 
-<p>After calling <b>CcInitializeCacheMap</b>, the file system can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539203">CcSetAdditionalCacheAttributes</a> to disable read-ahead or write-behind, if desired.</p>
+<p>After calling <b>CcInitializeCacheMap</b>, the file system can call <a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a> to disable read-ahead or write-behind, if desired.</p>
 
-<p>When closing a file, every file system that supports file caching must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539225">CcUninitializeCacheMap</a> on that file, whether the file is cached or not. Even if the file was created with caching disabled, the file system still must call <b>CcUninitializeCacheMap</b>.</p>
-
-<p>The <b>CcIsFileCached</b> macro determines whether a file is cached or not.</p>
-
-<p>Parameters</p>
-
-<p><b>CcInitializeCacheMap</b> creates the data structures required for file data caching.</p>
-
-<p>If any failure occurs, <b>CcInitializeCacheMap</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcInitializeCacheMap</b> raises a STATUS_INSUFFICIENT_RESOURCES exception. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcInitializeCacheMap</b> in a <b>try-except</b> or <b>try-finally</b> statement.</p>
-
-<p>File systems must call <b>CcInitializeCacheMap</b> to cache a file before using any other cache manager routines on the file, unless the file was created with data caching disabled. In most file systems, file caching is enabled by default, but can be disabled by setting the FILE_NO_INTERMEDIATE_BUFFERING flag to <b>TRUE</b> in the file create options.</p>
-
-<p>After calling <b>CcInitializeCacheMap</b>, the file system can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539203">CcSetAdditionalCacheAttributes</a> to disable read-ahead or write-behind, if desired.</p>
-
-<p>When closing a file, every file system that supports file caching must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539225">CcUninitializeCacheMap</a> on that file, whether the file is cached or not. Even if the file was created with caching disabled, the file system still must call <b>CcUninitializeCacheMap</b>.</p>
+<p>When closing a file, every file system that supports file caching must call <a href="..\ntifs\nf-ntifs-ccuninitializecachemap.md">CcUninitializeCacheMap</a> on that file, whether the file is cached or not. Even if the file was created with caching disabled, the file system still must call <b>CcUninitializeCacheMap</b>.</p>
 
 <p>The <b>CcIsFileCached</b> macro determines whether a file is cached or not.</p>
 
@@ -246,10 +232,10 @@ VOID (*PRELEASE_FROM_READ_AHEAD) (
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539203">CcSetAdditionalCacheAttributes</a>
+<a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539225">CcUninitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccuninitializecachemap.md">CcUninitializeCacheMap</a>
 </dt>
 </dl>
 <p> </p>

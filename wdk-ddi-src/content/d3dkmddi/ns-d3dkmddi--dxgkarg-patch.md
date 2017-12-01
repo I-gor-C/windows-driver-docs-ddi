@@ -94,7 +94,7 @@ typedef struct _DXGKARG_PATCH {
 
 <dd>
 <p>[in] The identifier of the memory segment that the DMA buffer was paged in. </p>
-<p>The identifier can be zero if the driver indicated not to map the DMA buffer into the segment by setting the <b>DmaBufferSegmentSet</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561019">DXGK_CONTEXTINFO</a> structure to 0 in a call to the driver's <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function. If <b>DmaBufferSegmentId</b> is zero, the DMA buffer was allocated as a contiguous block of system memory. </p>
+<p>The identifier can be zero if the driver indicated not to map the DMA buffer into the segment by setting the <b>DmaBufferSegmentSet</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-contextinfo.md">DXGK_CONTEXTINFO</a> structure to 0 in a call to the driver's <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a> function. If <b>DmaBufferSegmentId</b> is zero, the DMA buffer was allocated as a contiguous block of system memory. </p>
 </dd>
 
 ### -field <b>DmaBufferPhysicalAddress</b>
@@ -160,7 +160,7 @@ typedef struct _DXGKARG_PATCH {
 ### -field <b>pAllocationList</b>
 
 <dd>
-<p>[in] A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560975">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to. </p>
+<p>[in] A pointer to an array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to. </p>
 <p>For paging operations, <b>pAllocationList</b> is <b>NULL</b> because paging buffers are not associated with allocation lists. </p>
 </dd>
 
@@ -175,7 +175,7 @@ typedef struct _DXGKARG_PATCH {
 ### -field <b>pPatchLocationList</b>
 
 <dd>
-<p>[in] A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a> structures for the list of patch locations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to.</p>
+<p>[in] A pointer to an array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures for the list of patch locations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to.</p>
 <p>Note that the array can begin with an element that is before the range that is used to patch the DMA buffer.</p>
 <p>For paging operations, <b>pPatchLocationList</b> is <b>NULL</b> because paging buffers are not associated with patch-location lists.</p>
 </dd>
@@ -211,7 +211,7 @@ typedef struct _DXGKARG_PATCH {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561992">DXGK_PATCHFLAGS</a> structure that identifies information about the DMA buffer that requires patching.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-patchflags.md">DXGK_PATCHFLAGS</a> structure that identifies information about the DMA buffer that requires patching.</p>
 </dd>
 
 ### -field <b>EngineOrdinal</b>
@@ -222,7 +222,7 @@ typedef struct _DXGKARG_PATCH {
 </dl>
 
 ## -remarks
-<p>The display miniport driver returns an array in the <b>pAllocationList</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557618">DXGKARG_PRESENT</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff557648">DXGKARG_RENDER</a> structure from its <a href="display.dxgkddipresent">DxgkDdiPresent</a> or <a href="display.dxgkddirender">DxgkDdiRender</a> function after it translates the command buffer to a direct memory access (DMA) buffer. The video memory manager assigns physical addresses to the <b>PhysicalAddress</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560975">DXGK_ALLOCATIONLIST</a> structures in the array and passes this array to the driver's <a href="display.dxgkddipatch">DxgkDdiPatch</a> function. <b>DxgkDdiPatch</b> patches places in the DMA buffer with these physical addresses.</p>
+<p>The display miniport driver returns an array in the <b>pAllocationList</b> member of a <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-present.md">DXGKARG_PRESENT</a> or <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-render.md">DXGKARG_RENDER</a> structure from its <a href="display.dxgkddipresent">DxgkDdiPresent</a> or <a href="display.dxgkddirender">DxgkDdiRender</a> function after it translates the command buffer to a direct memory access (DMA) buffer. The video memory manager assigns physical addresses to the <b>PhysicalAddress</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a> structures in the array and passes this array to the driver's <a href="display.dxgkddipatch">DxgkDdiPatch</a> function. <b>DxgkDdiPatch</b> patches places in the DMA buffer with these physical addresses.</p>
 
 ## -requirements
 <table>
@@ -249,22 +249,22 @@ typedef struct _DXGKARG_PATCH {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560975">DXGK_ALLOCATIONLIST</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557618">DXGKARG_PRESENT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-present.md">DXGKARG_PRESENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557648">DXGKARG_RENDER</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-render.md">DXGKARG_RENDER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561019">DXGK_CONTEXTINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-contextinfo.md">DXGK_CONTEXTINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561992">DXGK_PATCHFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-patchflags.md">DXGK_PATCHFLAGS</a>
 </dt>
 <dt>
 <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a>

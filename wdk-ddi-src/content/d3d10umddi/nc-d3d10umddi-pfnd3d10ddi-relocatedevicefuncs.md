@@ -67,7 +67,7 @@ VOID APIENTRY RelocateDeviceFuncs(
 ### -param <i>pDeviceFunctions</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541833">D3D10DDI_DEVICEFUNCS</a> structure that contains pointers to the functions of the user-mode display driver. </p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-devicefuncs.md">D3D10DDI_DEVICEFUNCS</a> structure that contains pointers to the functions of the user-mode display driver. </p>
 </dd>
 </dl>
 
@@ -77,8 +77,6 @@ VOID APIENTRY RelocateDeviceFuncs(
 <p>The driver can use the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> callback function to set an error code.</p>
 
 ## -remarks
-<p>A user-mode display driver can use the <i>RelocateDeviceFuncs</i> function to replace function pointers in the driver function table. </p>
-
 <p>A user-mode display driver can use the <i>RelocateDeviceFuncs</i> function to replace function pointers in the driver function table. </p>
 
 ## -requirements
@@ -116,7 +114,7 @@ VOID APIENTRY RelocateDeviceFuncs(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541833">D3D10DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a>

@@ -7,7 +7,7 @@ old-location: netvista\rilphonebooklocation_2.htm
 old-project: netvista
 ms.assetid: 1878109a-f70c-4e4b-8735-7fbb972f4416
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILPHONEBOOKLOCATION, RILPHONEBOOKLOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

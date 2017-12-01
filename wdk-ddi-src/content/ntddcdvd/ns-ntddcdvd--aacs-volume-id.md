@@ -69,7 +69,7 @@ typedef struct _AACS_VOLUME_ID {
 </dl>
 
 ## -remarks
-<p>Clients retrieve an AACS volume ID with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559293">IOCTL_AACS_READ_VOLUME_ID</a> request.</p>
+<p>Clients retrieve an AACS volume ID with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-read-volume-id.md">IOCTL_AACS_READ_VOLUME_ID</a> request.</p>
 
 ## -requirements
 <table>
@@ -88,7 +88,7 @@ typedef struct _AACS_VOLUME_ID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559293">IOCTL_AACS_READ_VOLUME_ID</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-read-volume-id.md">IOCTL_AACS_READ_VOLUME_ID</a>
 </dt>
 </dl>
 <p> </p>

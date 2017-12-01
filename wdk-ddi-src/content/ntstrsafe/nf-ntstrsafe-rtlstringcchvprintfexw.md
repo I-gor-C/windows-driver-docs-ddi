@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcchvprintfex.htm
 old-project: kernel
 ms.assetid: e28dd810-d86f-479f-b049-63a626ed432f
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlStringCchVPrintfExW
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -191,7 +191,7 @@ NTSTATUS RtlStringCchVPrintfEx(
 
 <p>All of these functions accept a format string and its arguments, provided as a <b>va_list</b>-typed argument list, and return a formatted string. <b>RtlStringCchVPrintfExW</b> and <b>RtlStringCchVPrintfExA</b> receive the size, in characters, of the destination buffer to ensure that they do not write past the end of the buffer.</p>
 
-<p><b>RtlStringCchVPrintfExW</b> and <b>RtlStringCchVPrintfExA</b> add to the functionality of <a href="https://msdn.microsoft.com/library/windows/hardware/ff562865">RtlStringCchVPrintf</a> by returning a pointer to the end of the destination string, as well as the number of characters left unused in that string. Flags can be passed to the function for additional control.</p>
+<p><b>RtlStringCchVPrintfExW</b> and <b>RtlStringCchVPrintfExA</b> add to the functionality of <a href="kernel.rtlstringcchvprintf">RtlStringCchVPrintf</a> by returning a pointer to the end of the destination string, as well as the number of characters left unused in that string. Flags can be passed to the function for additional control.</p>
 
 <p>For more information about <b>va_list</b>-typed argument lists, see the Microsoft Windows SDK documentation.</p>
 
@@ -208,46 +208,6 @@ NTSTATUS RtlStringCchVPrintfEx(
 <p>"string"</p>
 
 <p><b>RtlStringCchVPrintfExA</b></p>
-
-<p> </p>
-
-<p>If  <i>pszDest</i> and <i>pszFormat</i> point to overlapping strings or if any argument strings overlap, the behavior of the function is undefined.</p>
-
-<p>Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b> unless the STRSAFE_IGNORE_NULLS flag is set, in which case either or both can be <b>NULL</b>. If <i>pszDest</i> is <b>NULL</b>, <i>pszSrc</i> must either be <b>NULL</b> or point to an empty string.</p>
-
-<p>For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.</p>
-
-<p><b>RtlStringCchVPrintfExW</b> and <b>RtlStringCchVPrintfExA</b> should be used instead of the following functions: </p>
-
-<p><b>vsprintf</b></p>
-
-<p><b>vswprintf</b></p>
-
-<p>_<b>vsnprintf</b></p>
-
-<p>_<b>vsnwprintf</b></p>
-
-<p>All of these functions accept a format string and its arguments, provided as a <b>va_list</b>-typed argument list, and return a formatted string. <b>RtlStringCchVPrintfExW</b> and <b>RtlStringCchVPrintfExA</b> receive the size, in characters, of the destination buffer to ensure that they do not write past the end of the buffer.</p>
-
-<p><b>RtlStringCchVPrintfExW</b> and <b>RtlStringCchVPrintfExA</b> add to the functionality of <a href="https://msdn.microsoft.com/library/windows/hardware/ff562865">RtlStringCchVPrintf</a> by returning a pointer to the end of the destination string, as well as the number of characters left unused in that string. Flags can be passed to the function for additional control.</p>
-
-<p>For more information about <b>va_list</b>-typed argument lists, see the Microsoft Windows SDK documentation.</p>
-
-<p>Use <b>RtlStringCchVPrintfExW</b> to handle Unicode strings and <b>RtlStringCchVPrintfExA</b> to handle ANSI strings. The form you use depends on your data.</p>
-
-<p>WCHAR</p>
-
-<p>L"string"</p>
-
-<p><b>RtlStringCchVPrintfExW</b></p>
-
-<p><b>char</b></p>
-
-<p>"string"</p>
-
-<p><b>RtlStringCchVPrintfExA</b></p>
-
-<p> </p>
 
 <p>If  <i>pszDest</i> and <i>pszFormat</i> point to overlapping strings or if any argument strings overlap, the behavior of the function is undefined.</p>
 
@@ -316,15 +276,15 @@ NTSTATUS RtlStringCchVPrintfEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562832">RtlStringCbVPrintfEx</a>
+<a href="kernel.rtlstringcbvprintfex">RtlStringCbVPrintfEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562864">RtlStringCchPrintfEx</a>
+<a href="kernel.rtlstringcchprintfex">RtlStringCchPrintfEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562865">RtlStringCchVPrintf</a>
+<a href="kernel.rtlstringcchvprintf">RtlStringCchVPrintf</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCchVPrintfEx function%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCchVPrintfEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

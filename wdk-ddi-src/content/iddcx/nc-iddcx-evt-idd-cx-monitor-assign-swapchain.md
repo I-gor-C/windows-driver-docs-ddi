@@ -85,8 +85,6 @@ typedef EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN PFN_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN;
 ## -remarks
 <p class="note">The resolution of the surfaces in the swapchain will always be the same resolution as the target mode set.
         The format of the surfaces will be one of the formats supported by the driver, but the format of each acquired buffer may
-        change between the formats supported from frame to frame. The driver should check the format of each buffer acquired.</p><p class="note">The resolution of the surfaces in the swapchain will always be the same resolution as the target mode set.
-        The format of the surfaces will be one of the formats supported by the driver, but the format of each acquired buffer may
         change between the formats supported from frame to frame. The driver should check the format of each buffer acquired.</p>
 
 ## -requirements

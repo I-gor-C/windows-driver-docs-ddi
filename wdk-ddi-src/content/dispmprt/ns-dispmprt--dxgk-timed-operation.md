@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DXGK_TIMED_OPERATION structure describes a timed operation, which is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>.</p>
+<p>The DXGK_TIMED_OPERATION structure describes a timed operation, which is used in the <a href="display.timed_operation_interface">Timed Operation Interface</a>.</p>
 
 
 ## -syntax
@@ -124,7 +124,7 @@ typedef struct _DXGK_TIMED_OPERATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>
+<a href="display.timed_operation_interface">Timed Operation Interface</a>
 </dt>
 </dl>
 <p> </p>

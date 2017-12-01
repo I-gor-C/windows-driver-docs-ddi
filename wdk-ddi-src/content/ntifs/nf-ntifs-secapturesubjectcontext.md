@@ -57,7 +57,7 @@ VOID SeCaptureSubjectContext(
 ### -param <i>SubjectContext</i> [out]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a> structure.</p>
+<p>Pointer to a caller-allocated <a href="ifsk.security_subject_context">SECURITY_SUBJECT_CONTEXT</a> structure.</p>
 </dd>
 </dl>
 
@@ -65,23 +65,13 @@ VOID SeCaptureSubjectContext(
 <p>None</p>
 
 ## -remarks
-<p>The <b>SeCaptureSubjectContext</b> routine returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a> structure, which contains references to access tokens. The contents of that structure can change. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556675">SeLockSubjectContext</a> routine locks the primary access token and any impersonation tokens associated with the structure.
+<p>The <b>SeCaptureSubjectContext</b> routine returns a pointer to a <a href="ifsk.security_subject_context">SECURITY_SUBJECT_CONTEXT</a> structure, which contains references to access tokens. The contents of that structure can change. The <a href="..\ntifs\nf-ntifs-selocksubjectcontext.md">SeLockSubjectContext</a> routine locks the primary access token and any impersonation tokens associated with the structure.
 
 </p>
 
-<p>When using routines that query token information, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff556688">SeQueryAuthenticationIdToken</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556698">SeQuerySubjectContextToken</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556690">SeQueryInformationToken</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556686">SePrivilegeCheck</a>, more than once in the same security context, lock the subject context with <a href="https://msdn.microsoft.com/library/windows/hardware/ff556675">SeLockSubjectContext</a> to obtain consistent results.</p>
+<p>When using routines that query token information, such as <a href="..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md">SeQueryAuthenticationIdToken</a>, <a href="..\ntifs\nf-ntifs-sequerysubjectcontexttoken.md">SeQuerySubjectContextToken</a>, <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>, and <a href="..\ntifs\nf-ntifs-seprivilegecheck.md">SePrivilegeCheck</a>, more than once in the same security context, lock the subject context with <a href="..\ntifs\nf-ntifs-selocksubjectcontext.md">SeLockSubjectContext</a> to obtain consistent results.</p>
 
-<p>File systems must call <b>SeCaptureSubjectContext</b> before performing access validation or generating audit messages. This is necessary to provide a consistent security context to routines such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff556688">SeQueryAuthenticationIdToken</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556698">SeQuerySubjectContextToken</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556686">SePrivilegeCheck</a>. After these operations have been performed, the captured context should be released as soon as possible by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff556704">SeReleaseSubjectContext</a>.</p>
-
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
-
-<p>The <b>SeCaptureSubjectContext</b> routine returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a> structure, which contains references to access tokens. The contents of that structure can change. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556675">SeLockSubjectContext</a> routine locks the primary access token and any impersonation tokens associated with the structure.
-
-</p>
-
-<p>When using routines that query token information, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff556688">SeQueryAuthenticationIdToken</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556698">SeQuerySubjectContextToken</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556690">SeQueryInformationToken</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556686">SePrivilegeCheck</a>, more than once in the same security context, lock the subject context with <a href="https://msdn.microsoft.com/library/windows/hardware/ff556675">SeLockSubjectContext</a> to obtain consistent results.</p>
-
-<p>File systems must call <b>SeCaptureSubjectContext</b> before performing access validation or generating audit messages. This is necessary to provide a consistent security context to routines such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff556688">SeQueryAuthenticationIdToken</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556698">SeQuerySubjectContextToken</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556686">SePrivilegeCheck</a>. After these operations have been performed, the captured context should be released as soon as possible by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff556704">SeReleaseSubjectContext</a>.</p>
+<p>File systems must call <b>SeCaptureSubjectContext</b> before performing access validation or generating audit messages. This is necessary to provide a consistent security context to routines such as <a href="..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md">SeQueryAuthenticationIdToken</a>, <a href="..\ntifs\nf-ntifs-sequerysubjectcontexttoken.md">SeQuerySubjectContextToken</a>, and <a href="..\ntifs\nf-ntifs-seprivilegecheck.md">SePrivilegeCheck</a>. After these operations have been performed, the captured context should be released as soon as possible by calling <a href="..\ntifs\nf-ntifs-sereleasesubjectcontext.md">SeReleaseSubjectContext</a>.</p>
 
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
 
@@ -140,25 +130,25 @@ VOID SeCaptureSubjectContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a>
+<a href="ifsk.security_subject_context">SECURITY_SUBJECT_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556675">SeLockSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-selocksubjectcontext.md">SeLockSubjectContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556686">SePrivilegeCheck</a>
+<a href="..\ntifs\nf-ntifs-seprivilegecheck.md">SePrivilegeCheck</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556688">SeQueryAuthenticationIdToken</a>
+<a href="..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md">SeQueryAuthenticationIdToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556698">SeQuerySubjectContextToken</a>
+<a href="..\ntifs\nf-ntifs-sequerysubjectcontexttoken.md">SeQuerySubjectContextToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556704">SeReleaseSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-sereleasesubjectcontext.md">SeReleaseSubjectContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556736">SeUnlockSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-seunlocksubjectcontext.md">SeUnlockSubjectContext</a>
 </dt>
 </dl>
 <p> </p>

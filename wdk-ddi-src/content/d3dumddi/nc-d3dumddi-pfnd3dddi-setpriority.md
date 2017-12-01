@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetPriority(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543345">D3DDDIARG_SETPRIORITY</a> structure that specifies the priority level to set for the managed texture.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setpriority.md">D3DDDIARG_SETPRIORITY</a> structure that specifies the priority level to set for the managed texture.</p>
 </dd>
 </dl>
 
@@ -81,9 +81,7 @@ __checkReturn HRESULT APIENTRY SetPriority(
 <p> </p>
 
 ## -remarks
-<p>The Microsoft Direct3D runtime calls <i>SetPriority</i> to set the priority level for a resource. The user-mode display driver should translate the resource handle that is supplied in the <b>hResource</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543345">D3DDDIARG_SETPRIORITY</a> structure that is pointed to by <i>pData</i> to an allocation handle. After the driver makes this translation, the driver should pass the resulting handle in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setprioritycb.md">pfnSetPriorityCb</a> function.</p>
-
-<p>The Microsoft Direct3D runtime calls <i>SetPriority</i> to set the priority level for a resource. The user-mode display driver should translate the resource handle that is supplied in the <b>hResource</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543345">D3DDDIARG_SETPRIORITY</a> structure that is pointed to by <i>pData</i> to an allocation handle. After the driver makes this translation, the driver should pass the resulting handle in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setprioritycb.md">pfnSetPriorityCb</a> function.</p>
+<p>The Microsoft Direct3D runtime calls <i>SetPriority</i> to set the priority level for a resource. The user-mode display driver should translate the resource handle that is supplied in the <b>hResource</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setpriority.md">D3DDDIARG_SETPRIORITY</a> structure that is pointed to by <i>pData</i> to an allocation handle. After the driver makes this translation, the driver should pass the resulting handle in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setprioritycb.md">pfnSetPriorityCb</a> function.</p>
 
 ## -requirements
 <table>
@@ -120,10 +118,10 @@ __checkReturn HRESULT APIENTRY SetPriority(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543345">D3DDDIARG_SETPRIORITY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setpriority.md">D3DDDIARG_SETPRIORITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setprioritycb.md">pfnSetPriorityCb</a>

@@ -7,7 +7,7 @@ old-location: netvista\rilcalleridsettingsparammask_2.htm
 old-project: netvista
 ms.assetid: 579165ca-94e7-433c-91c6-3112c4b75f64
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

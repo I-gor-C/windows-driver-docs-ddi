@@ -73,13 +73,13 @@ ULONG StorPortFreeContiguousMemorySpecifyCache(
 ### -param <i>NumberOfBytes</i> [in]
 
 <dd>
-<p>The number of bytes that are allocated to the request. This must be the same number that was supplied as a parameter when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567027">StorPortAllocateContiguousMemorySpecifyCacheNode</a> routine was previously called.</p>
+<p>The number of bytes that are allocated to the request. This must be the same number that was supplied as a parameter when the <a href="..\storport\nf-storport-storportallocatecontiguousmemoryspecifycachenode.md">StorPortAllocateContiguousMemorySpecifyCacheNode</a> routine was previously called.</p>
 </dd>
 
 ### -param <i>CacheType</i> [in]
 
 <dd>
-<p>The cache type that is used in the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567027">StorPortAllocateContiguousMemorySpecifyCacheNode</a> routine.</p>
+<p>The cache type that is used in the call to the <a href="..\storport\nf-storport-storportallocatecontiguousmemoryspecifycachenode.md">StorPortAllocateContiguousMemorySpecifyCacheNode</a> routine.</p>
 </dd>
 </dl>
 
@@ -138,7 +138,7 @@ ULONG StorPortFreeContiguousMemorySpecifyCache(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
+<a href="devtest.storport_storportirql">StorPortIrql</a>
 </td>
 </tr>
 </table>
@@ -146,7 +146,7 @@ ULONG StorPortFreeContiguousMemorySpecifyCache(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567027">StorPortAllocateContiguousMemorySpecifyCacheNode</a>
+<a href="..\storport\nf-storport-storportallocatecontiguousmemoryspecifycachenode.md">StorPortAllocateContiguousMemorySpecifyCacheNode</a>
 </dt>
 </dl>
 <p> </p>

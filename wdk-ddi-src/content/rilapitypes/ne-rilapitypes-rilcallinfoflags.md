@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfoflags_2.htm
 old-project: netvista
 ms.assetid: 7b701e86-ee0b-4a46-a6bf-4a4fe18c371f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

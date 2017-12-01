@@ -75,7 +75,7 @@ typedef struct _D3DDDIARG_SETLIGHT {
 <p>D3DDDISETLIGHT_DATA</p>
 </td>
 <td>
-<p>Specifies that a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544579">D3DDDI_LIGHT</a> structure that defines light properties is supplied in the <i>pLightProperties</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setlight.md">SetLight</a> function.</p>
+<p>Specifies that a pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-light.md">D3DDDI_LIGHT</a> structure that defines light properties is supplied in the <i>pLightProperties</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setlight.md">SetLight</a> function.</p>
 </td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ typedef struct _D3DDDIARG_SETLIGHT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544579">D3DDDI_LIGHT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-light.md">D3DDDI_LIGHT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-setlight.md">SetLight</a>

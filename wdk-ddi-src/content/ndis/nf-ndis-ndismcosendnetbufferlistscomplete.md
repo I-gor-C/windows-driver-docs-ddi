@@ -7,7 +7,7 @@ old-location: netvista\ndismcosendnetbufferlistscomplete.htm
 old-project: netvista
 ms.assetid: c4978122-6d13-4e9b-8eb7-d06cd7372268
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCoSendNetBufferListsComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The 
   <b>NdisMCoSendNetBufferListsComplete</b> function returns a linked list of 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures to an overlying
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures to an overlying
   driver and returns the final status of a CoNDIS send request.</p>
 
 
@@ -73,7 +73,7 @@ VOID NdisMCoSendNetBufferListsComplete(
 
 <dd>
 <p>A pointer to a linked list of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures. The miniport
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures. The miniport
      driver received the NET_BUFFER_LIST structures in previous calls to its 
      <a href="..\ndis\nc-ndis-miniport-co-send-net-buffer-lists.md">
      MiniportCoSendNetBufferLists</a> function.</p>
@@ -99,7 +99,7 @@ VOID NdisMCoSendNetBufferListsComplete(
     <b>NdisMCoSendNetBufferListsComplete</b> to complete send requests that NDIS made to the driver's 
     <a href="..\ndis\nc-ndis-miniport-co-send-net-buffer-lists.md">
     MiniportCoSendNetBufferLists</a> function. The miniport driver specifies a linked list of 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures that are
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures that are
     associated with the completed send requests.</p>
 
 <p>While the status of the send requests is pending, the miniport driver retains ownership of the
@@ -120,116 +120,9 @@ VOID NdisMCoSendNetBufferListsComplete(
     <b>Status</b> member of each NET_BUFFER_LIST structure that the 
     <i>NetBufferLists</i> parameter specifies:</p>
 
-<p></p><dl>
-<dt><a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS</dt>
-<dd>
+<p></p>
+
 <p>All of the network data that is described by NET_BUFFER structures that are associated with this
-      NET_BUFFER_LIST structure was successfully transmitted over the network.</p>
-</dd>
-<dt><a id="NDIS_STATUS_INVALID_LENGTH"></a><a id="ndis_status_invalid_length"></a>NDIS_STATUS_INVALID_LENGTH</dt>
-<dd>
-<p>The size of the data in some NET_BUFFER structures that are associated with this NET_BUFFER_LIST
-      structure was too large for the underlying network interface card (NIC).</p>
-</dd>
-<dt><a id="NDIS_STATUS_RESOURCES"></a><a id="ndis_status_resources"></a>NDIS_STATUS_RESOURCES</dt>
-<dd>
-<p>The send request for this NET_BUFFER_LIST structure failed because of insufficient
-      resources.</p>
-</dd>
-<dt><a id="NDIS_STATUS_SEND_ABORTED"></a><a id="ndis_status_send_aborted"></a>NDIS_STATUS_SEND_ABORTED</dt>
-<dd>
-<p>NDIS called the 
-      <a href="..\ndis\nc-ndis-miniport-cancel-send.md">MiniportCancelSend</a> function to
-      cancel the send operation for this NET_BUFFER_LIST structure.</p>
-</dd>
-<dt><a id="NDIS_STATUS_RESET_IN_PROGRESS"></a><a id="ndis_status_reset_in_progress"></a>NDIS_STATUS_RESET_IN_PROGRESS</dt>
-<dd>
-<p>The miniport driver aborted the send request because of a reset.</p>
-</dd>
-<dt><a id="NDIS_STATUS_FAILURE"></a><a id="ndis_status_failure"></a>NDIS_STATUS_FAILURE</dt>
-<dd>
-<p>The miniport driver failed the send request because of some reason other than those previously
-      described. For example, the miniport driver can fail the send request due to a hardware failure.</p>
-</dd>
-</dl><p>All of the network data that is described by NET_BUFFER structures that are associated with this
-      NET_BUFFER_LIST structure was successfully transmitted over the network.</p>
-
-<p>The size of the data in some NET_BUFFER structures that are associated with this NET_BUFFER_LIST
-      structure was too large for the underlying network interface card (NIC).</p>
-
-<p>The send request for this NET_BUFFER_LIST structure failed because of insufficient
-      resources.</p>
-
-<p>NDIS called the 
-      <a href="..\ndis\nc-ndis-miniport-cancel-send.md">MiniportCancelSend</a> function to
-      cancel the send operation for this NET_BUFFER_LIST structure.</p>
-
-<p>The miniport driver aborted the send request because of a reset.</p>
-
-<p>The miniport driver failed the send request because of some reason other than those previously
-      described. For example, the miniport driver can fail the send request due to a hardware failure.</p>
-
-<p>A miniport driver's call to 
-    <b>NdisMCoSendNetBufferListsComplete</b> does not necessarily indicate that the data for a send request
-    has been transmitted over the network. For example, the data might be queued in the NIC hardware.</p>
-
-<p>A miniport driver calls 
-    <b>NdisMCoSendNetBufferListsComplete</b> to complete send requests that NDIS made to the driver's 
-    <a href="..\ndis\nc-ndis-miniport-co-send-net-buffer-lists.md">
-    MiniportCoSendNetBufferLists</a> function. The miniport driver specifies a linked list of 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures that are
-    associated with the completed send requests.</p>
-
-<p>While the status of the send requests is pending, the miniport driver retains ownership of the
-    NET_BUFFER_LIST structures and all of the resources that are associated with the NET_BUFFER_LIST
-    structures.</p>
-
-<p>After a miniport driver calls 
-    <b>NdisMCoSendNetBufferListsComplete</b>, NDIS returns the NET_BUFFER_LIST structures and associated data
-    to the overlying driver that originated the send request.</p>
-
-<p>The miniport driver can complete send requests in any order. For example, the miniport driver could
-    concatenate the NET_BUFFER_LIST structure lists from multiple 
-    <i>MiniportCoSendNetBufferLists</i> calls or split up a list from a 
-    <i>MiniportCoSendNetBufferLists</i> call. However, the miniport driver must not modify the list of
-    NET_BUFFER structures that are associated with a NET_BUFFER_LIST structure.</p>
-
-<p>The miniport driver must set one of the following status codes in the 
-    <b>Status</b> member of each NET_BUFFER_LIST structure that the 
-    <i>NetBufferLists</i> parameter specifies:</p>
-
-<p></p><dl>
-<dt><a id="NDIS_STATUS_SUCCESS"></a><a id="ndis_status_success"></a>NDIS_STATUS_SUCCESS</dt>
-<dd>
-<p>All of the network data that is described by NET_BUFFER structures that are associated with this
-      NET_BUFFER_LIST structure was successfully transmitted over the network.</p>
-</dd>
-<dt><a id="NDIS_STATUS_INVALID_LENGTH"></a><a id="ndis_status_invalid_length"></a>NDIS_STATUS_INVALID_LENGTH</dt>
-<dd>
-<p>The size of the data in some NET_BUFFER structures that are associated with this NET_BUFFER_LIST
-      structure was too large for the underlying network interface card (NIC).</p>
-</dd>
-<dt><a id="NDIS_STATUS_RESOURCES"></a><a id="ndis_status_resources"></a>NDIS_STATUS_RESOURCES</dt>
-<dd>
-<p>The send request for this NET_BUFFER_LIST structure failed because of insufficient
-      resources.</p>
-</dd>
-<dt><a id="NDIS_STATUS_SEND_ABORTED"></a><a id="ndis_status_send_aborted"></a>NDIS_STATUS_SEND_ABORTED</dt>
-<dd>
-<p>NDIS called the 
-      <a href="..\ndis\nc-ndis-miniport-cancel-send.md">MiniportCancelSend</a> function to
-      cancel the send operation for this NET_BUFFER_LIST structure.</p>
-</dd>
-<dt><a id="NDIS_STATUS_RESET_IN_PROGRESS"></a><a id="ndis_status_reset_in_progress"></a>NDIS_STATUS_RESET_IN_PROGRESS</dt>
-<dd>
-<p>The miniport driver aborted the send request because of a reset.</p>
-</dd>
-<dt><a id="NDIS_STATUS_FAILURE"></a><a id="ndis_status_failure"></a>NDIS_STATUS_FAILURE</dt>
-<dd>
-<p>The miniport driver failed the send request because of some reason other than those previously
-      described. For example, the miniport driver can fail the send request due to a hardware failure.</p>
-</dd>
-</dl><p>All of the network data that is described by NET_BUFFER structures that are associated with this
       NET_BUFFER_LIST structure was successfully transmitted over the network.</p>
 
 <p>The size of the data in some NET_BUFFER structures that are associated with this NET_BUFFER_LIST
@@ -304,7 +197,7 @@ VOID NdisMCoSendNetBufferListsComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547971">Irql_MCO_Function</a>
+<a href="devtest.ndis_irql_mco_function">Irql_MCO_Function</a>
 </td>
 </tr>
 </table>
@@ -322,12 +215,12 @@ VOID NdisMCoSendNetBufferListsComplete(
    MiniportCoSendNetBufferLists</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoSendNetBufferListsComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCoSendNetBufferListsComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

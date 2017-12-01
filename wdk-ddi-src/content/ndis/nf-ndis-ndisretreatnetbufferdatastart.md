@@ -7,7 +7,7 @@ old-location: netvista\ndisretreatnetbufferdatastart.htm
 old-project: netvista
 ms.assetid: 4b58a1dc-8a5a-464b-a2a2-deb952febe25
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisRetreatNetBufferDataStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,7 @@ req.iface:
 <p>Call the 
   <b>NdisRetreatNetBufferDataStart</b> function to access more 
   <i>used data space</i> in the MDL chain of a 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure.</p>
+  <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure.</p>
 
 
 ## -syntax
@@ -110,25 +110,7 @@ NDIS_STATUS NdisRetreatNetBufferDataStart(
 ## -remarks
 <p><b>NdisRetreatNetBufferDataStart</b> attempts to satisfy the request by reducing the value of the 
     <b>DataOffset</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure.</p>
-
-<p>If there isn't enough 
-    <i>unused data space</i>, this function allocates a new buffer and an MDL to describe the new buffer and
-    chains the new MDL to the beginning of the MDL chain. NDIS calls the 
-    <a href="..\ndis\nc-ndis-net-buffer-allocate-mdl-handler.md">NetAllocateMdl</a> function specified at 
-    <i>AllocateMdl</i> to allocate the MDL and memory. The 
-    <i>NetAllocateMdl</i> function can use any allocation method that meets the
-    driver's design requirements.</p>
-
-<p>Call the 
-    <a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
-    NdisAdvanceNetBufferDataStart</a> function to release the 
-    <i>used data space</i> that was added with 
-    <b>NdisRetreatNetBufferDataStart</b>.</p>
-
-<p><b>NdisRetreatNetBufferDataStart</b> attempts to satisfy the request by reducing the value of the 
-    <b>DataOffset</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure.</p>
+    <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure.</p>
 
 <p>If there isn't enough 
     <i>unused data space</i>, this function allocates a new buffer and an MDL to describe the new buffer and
@@ -197,7 +179,7 @@ NDIS_STATUS NdisRetreatNetBufferDataStart(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
+<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -212,9 +194,9 @@ NDIS_STATUS NdisRetreatNetBufferDataStart(
 <a href="..\ndis\nc-ndis-net-buffer-allocate-mdl-handler.md">NetAllocateMdl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRetreatNetBufferDataStart function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRetreatNetBufferDataStart function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

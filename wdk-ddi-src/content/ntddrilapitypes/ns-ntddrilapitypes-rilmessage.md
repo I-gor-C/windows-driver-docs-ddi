@@ -7,7 +7,7 @@ old-location: netvista\rilmessage.htm
 old-project: netvista
 ms.assetid: b776b060-79bf-4848-807d-1999d38075ad
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMESSAGE, RILMESSAGE, *LPRILMESSAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices

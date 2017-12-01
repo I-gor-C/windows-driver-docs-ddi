@@ -7,7 +7,7 @@ old-location: netvista\rilemergencynumbercategory.htm
 old-project: netvista
 ms.assetid: f1ad9a15-70c8-4331-b350-f681aa216aaf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

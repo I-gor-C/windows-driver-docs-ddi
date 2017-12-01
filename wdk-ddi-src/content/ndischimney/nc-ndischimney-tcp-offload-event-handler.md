@@ -7,7 +7,7 @@ old-location: netvista\protocoltcpoffloadevent.htm
 old-project: netvista
 ms.assetid: b64c0f9e-aa3d-43c5-bdf5-c40cae3929e3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BINARY_DATA, BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,10 +68,10 @@ VOID ProtocolTcpOffloadEvent(
 
 <dd>
 <p>A pointer to the protocol or intermediate driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566705">NDIS_OFFLOAD_HANDLE</a> structure for the
+     <a href="..\ndischimney\ns-ndischimney--ndis-offload-handle.md">NDIS_OFFLOAD_HANDLE</a> structure for the
      TCP connection on which the indication is being made. The protocol or intermediate driver supplied this
      pointer as an input parameter to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff562743">NdisInitiateOffload</a> function when
+     <a href="..\ndischimney\nf-ndischimney-ndisinitiateoffload.md">NdisInitiateOffload</a> function when
      offloading the connection.</p>
 </dd>
 
@@ -174,25 +174,6 @@ VOID ProtocolTcpOffloadEvent(
       <i>EventSpecificInformation</i> that NDIS passed to the intermediate driver's 
       <i>ProtocolTcpOffloadEvent</i> function.</p>
 
-<p>To propagate the indication to the overlying driver or host stack, the intermediate driver calls the 
-    <b>NdisTcpOffloadEventHandler</b> function. The intermediate driver passes the following parameters to the
-    
-    <b>NdisTcpOffloadEventHandler</b> function:</p>
-
-<p>The 
-      <b>NdisOffloadHandle</b> that the offload target stored in its context for the offloaded TCP connection.
-      For more information, see 
-      <a href="netvista.referencing_offloaded_state_through_an_intermediate_driver">
-      Referencing Offloaded State Through an Intermediate Driver</a>.</p>
-
-<p>The 
-      <i>EventType</i> that NDIS passed to the intermediate driver's 
-      <i>ProtocolTcpOffloadEvent</i> function.</p>
-
-<p>The 
-      <i>EventSpecificInformation</i> that NDIS passed to the intermediate driver's 
-      <i>ProtocolTcpOffloadEvent</i> function.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -210,9 +191,9 @@ VOID ProtocolTcpOffloadEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564595">NdisTcpOffloadEventHandler</a>
+<a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-event-indicate.md">NdisTcpOffloadEventHandler</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_EVENT_HANDLER callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_EVENT_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

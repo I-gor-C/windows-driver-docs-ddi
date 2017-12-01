@@ -73,7 +73,7 @@ typedef struct IDDCX_METADATA {
 
 <dd>
 <p>
-                     Presentation frame number of this surface. If the frame number is the same as the previous frame, then it indicates that there has not been any image updates from the previous frame. This is an opportunity for the driver to re-encode the desktop image again to increase the visual quality. Once there are no more updates, the OS presents the same frame as many times indicated by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt761932">IDDCX_ADAPTER_CAPS</a> value <b>StaticDesktopReencodeFrameCount</b> , then stops presenting until the next update
+                     Presentation frame number of this surface. If the frame number is the same as the previous frame, then it indicates that there has not been any image updates from the previous frame. This is an opportunity for the driver to re-encode the desktop image again to increase the visual quality. Once there are no more updates, the OS presents the same frame as many times indicated by the <a href="..\iddcx\ns-iddcx-iddcx-adapter-caps.md">IDDCX_ADAPTER_CAPS</a> value <b>StaticDesktopReencodeFrameCount</b> , then stops presenting until the next update
                  </p>
 </dd>
 
@@ -81,7 +81,7 @@ typedef struct IDDCX_METADATA {
 
 <dd>
 <p>
-                      Number of dirty rects for this frame. Call <a href="https://msdn.microsoft.com/library/windows/hardware/mt761927">IddCxSwapChainGetDirtyRects</a> to get the dirty rects
+                      Number of dirty rects for this frame. Call <a href="..\iddcx\nf-iddcx-iddcxswapchaingetdirtyrects.md">IddCxSwapChainGetDirtyRects</a> to get the dirty rects
                  </p>
 <div class="alert"><b>Note</b>   A zero <b>DirtyRectCount</b> and <b>MoveRegionCount</b> value indicates there were no desktop updates and the
     PresentationFrameNumber is the same as last frame</div>
@@ -92,7 +92,7 @@ typedef struct IDDCX_METADATA {
 
 <dd>
 <p>
-                     Number of move regions in this frame, call <a href="https://msdn.microsoft.com/library/windows/hardware/mt761928">IddCxSwapChainGetMoveRegions</a> to get the move regions
+                     Number of move regions in this frame, call <a href="..\iddcx\nf-iddcx-iddcxswapchaingetmoveregions.md">IddCxSwapChainGetMoveRegions</a> to get the move regions
                  </p>
 <div class="alert"><b>Note</b>   A zero <b>DirtyRectCount</b> and <b>MoveRegionCount</b> value indicates there were no desktop updates and the
     PresentationFrameNumber is the same as last frame</div>

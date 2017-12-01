@@ -114,7 +114,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541142">IOCTL_HID_GET_POLL_FREQUENCY_MSEC</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-poll-frequency-msec.md">IOCTL_HID_GET_POLL_FREQUENCY_MSEC</a>
 </dt>
 </dl>
 <p> </p>

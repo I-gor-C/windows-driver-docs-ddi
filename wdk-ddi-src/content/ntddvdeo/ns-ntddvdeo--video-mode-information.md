@@ -365,25 +365,21 @@ typedef struct _VIDEO_MODE_INFORMATION {
 </dl>
 
 ## -remarks
-<p>The video miniport driver returns an array of VIDEO_MODE_INFORMATION structures in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff567816">IOCTL_VIDEO_QUERY_AVAIL_MODES</a> request, with each structure containing information about one mode of the adapter. The miniport driver returns one VIDEO_MODE_INFORMATION structure that contains information about the adapter's current mode in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff567819">IOCTL_VIDEO_QUERY_CURRENT_MODE</a> request.</p>
+<p>The video miniport driver returns an array of VIDEO_MODE_INFORMATION structures in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-query-avail-modes.md">IOCTL_VIDEO_QUERY_AVAIL_MODES</a> request, with each structure containing information about one mode of the adapter. The miniport driver returns one VIDEO_MODE_INFORMATION structure that contains information about the adapter's current mode in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-query-current-mode.md">IOCTL_VIDEO_QUERY_CURRENT_MODE</a> request.</p>
 
 <p>
 <dl>
 <dt>Three members of VIDEO_MODE_INFORMATION, <b>VisScreenWidth</b>, <b>VideoMemoryBitmapWidth</b>, and <b>ScreenStride</b>, are associated with horizontal screen width. For displays that use one or more bytes per pixel, these members satisfy the inequality </dt>
 <dt><b>VisScreenWidth</b> &lt;= <b>VideoMemoryBitmapWidth</b> &lt;= <b>ScreenStride</b>.</dt>
 </dl>
-</p><dl>
-<dt>Three members of VIDEO_MODE_INFORMATION, <b>VisScreenWidth</b>, <b>VideoMemoryBitmapWidth</b>, and <b>ScreenStride</b>, are associated with horizontal screen width. For displays that use one or more bytes per pixel, these members satisfy the inequality </dt>
-<dt><b>VisScreenWidth</b> &lt;= <b>VideoMemoryBitmapWidth</b> &lt;= <b>ScreenStride</b>.</dt>
-</dl><p>
+</p>
+
+<p>
 <dl>
 <dt>In a similar relationship for vertical screen height, <b>VisScreenHeight</b> and <b>VideoMemoryBitmapHeight</b> satisfy the inequality</dt>
 <dt><b>VisScreenHeight</b> &lt;= <b>VideoMemoryBitmapHeight</b>.</dt>
 </dl>
-</p><dl>
-<dt>In a similar relationship for vertical screen height, <b>VisScreenHeight</b> and <b>VideoMemoryBitmapHeight</b> satisfy the inequality</dt>
-<dt><b>VisScreenHeight</b> &lt;= <b>VideoMemoryBitmapHeight</b>.</dt>
-</dl>
+</p>
 
 ## -requirements
 <table>
@@ -402,13 +398,13 @@ typedef struct _VIDEO_MODE_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570507">VIDEO_MEMORY_INFORMATION</a>
+<a href="..\ntddvdeo\ns-ntddvdeo--video-memory-information.md">VIDEO_MEMORY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567816">IOCTL_VIDEO_QUERY_AVAIL_MODES</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-query-avail-modes.md">IOCTL_VIDEO_QUERY_AVAIL_MODES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567819">IOCTL_VIDEO_QUERY_CURRENT_MODE</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-query-current-mode.md">IOCTL_VIDEO_QUERY_CURRENT_MODE</a>
 </dt>
 </dl>
 <p> </p>

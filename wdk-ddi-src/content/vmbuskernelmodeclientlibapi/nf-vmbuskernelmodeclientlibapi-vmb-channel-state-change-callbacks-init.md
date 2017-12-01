@@ -7,7 +7,7 @@ old-location: netvista\vmb_channel_state_change_callbacks_init.htm
 old-project: netvista
 ms.assetid: 2255C8A2-85FB-4B96-8AE9-66FAFD73EE73
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices

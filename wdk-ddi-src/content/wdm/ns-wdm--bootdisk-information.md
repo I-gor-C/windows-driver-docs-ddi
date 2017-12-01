@@ -7,7 +7,7 @@ old-location: kernel\bootdisk_information.htm
 old-project: kernel
 ms.assetid: dd2a525d-fb9d-4fea-b9d7-64b1f498550c
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: BOOTDISK_INFORMATION, BOOTDISK_INFORMATION, *PBOOTDISK_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,7 +85,7 @@ typedef struct _BOOTDISK_INFORMATION {
 
 ## -remarks
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549153">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.</p>
+<a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.</p>
 
 ## -requirements
 <table>
@@ -94,7 +94,7 @@ typedef struct _BOOTDISK_INFORMATION {
 <p>Version</p>
 </th>
 <td width="70%">
-<p>Drivers on Microsoft Windows XP and later versions of the Windows operating system should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540653">BOOTDISK_INFORMATION_EX</a> structure instead.</p>
+<p>Drivers on Microsoft Windows XP and later versions of the Windows operating system should use the <a href="..\wdm\ns-wdm--bootdisk-information-ex.md">BOOTDISK_INFORMATION_EX</a> structure instead.</p>
 </td>
 </tr>
 <tr>
@@ -112,12 +112,12 @@ typedef struct _BOOTDISK_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549153">IoGetBootDiskInformation</a>
+<a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540653">BOOTDISK_INFORMATION_EX</a>
+<a href="..\wdm\ns-wdm--bootdisk-information-ex.md">BOOTDISK_INFORMATION_EX</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BOOTDISK_INFORMATION structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BOOTDISK_INFORMATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

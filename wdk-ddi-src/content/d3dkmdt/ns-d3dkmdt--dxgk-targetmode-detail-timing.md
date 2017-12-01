@@ -59,7 +59,7 @@ typedef struct _DXGK_TARGETMODE_DETAIL_TIMING {
 ### -field <b>VideoStandard</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546632">D3DKMDT_VIDEO_SIGNAL_STANDARD</a>-typed value that indicates the supported video signal standard.</p>
+<p>[in] A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-video-signal-standard.md">D3DKMDT_VIDEO_SIGNAL_STANDARD</a>-typed value that indicates the supported video signal standard.</p>
 </dd>
 
 ### -field <b>TimingId</b>
@@ -71,7 +71,7 @@ typedef struct _DXGK_TARGETMODE_DETAIL_TIMING {
 ### -field <b>DetailTiming</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff554014">DISPLAYID_DETAILED_TIMING_TYPE_I</a>-typed value that indicates the target mode data for a video present target.</p>
+<p>[in] A <a href="..\d3dkmdt\ns-d3dkmdt--displayid-detailed-timing-type-i.md">DISPLAYID_DETAILED_TIMING_TYPE_I</a>-typed value that indicates the target mode data for a video present target.</p>
 </dd>
 </dl>
 
@@ -103,10 +103,10 @@ typedef struct _DXGK_TARGETMODE_DETAIL_TIMING {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546632">D3DKMDT_VIDEO_SIGNAL_STANDARD</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-video-signal-standard.md">D3DKMDT_VIDEO_SIGNAL_STANDARD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554014">DISPLAYID_DETAILED_TIMING_TYPE_I</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--displayid-detailed-timing-type-i.md">DISPLAYID_DETAILED_TIMING_TYPE_I</a>
 </dt>
 </dl>
 <p> </p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USB_NODE_CONNECTION_ATTRIBUTES</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537316">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a> I/O control request to retrieve the attributes of a connection.</p>
+<p>The <b>USB_NODE_CONNECTION_ATTRIBUTES</b> structure is used with the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-attributes.md">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a> I/O control request to retrieve the attributes of a connection.</p>
 
 
 ## -syntax
@@ -60,19 +60,19 @@ typedef struct _USB_NODE_CONNECTION_ATTRIBUTES {
 ### -field <b>ConnectionIndex</b>
 
 <dd>
-<p>On input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537316">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a> I/O control request, this member contains the number of the port.</p>
+<p>On input to the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-attributes.md">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a> I/O control request, this member contains the number of the port.</p>
 </dd>
 
 ### -field <b>ConnectionStatus</b>
 
 <dd>
-<p>On output from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537316">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a> I/O control request, this member contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539247">USB_CONNECTION_STATUS</a> enumerator that indicates the connection status.</p>
+<p>On output from the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-attributes.md">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a> I/O control request, this member contains a <a href="..\usbioctl\ne-usbioctl--usb-connection-status.md">USB_CONNECTION_STATUS</a> enumerator that indicates the connection status.</p>
 </dd>
 
 ### -field <b>PortAttributes</b>
 
 <dd>
-<p>On output from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537316">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a> I/O control request, this member contains the Microsoft-extended port attributes.</p>
+<p>On output from the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-attributes.md">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a> I/O control request, this member contains the Microsoft-extended port attributes.</p>
 <p>For Windows Vista, Windows Server 2008, and Windows 7 the Microsoft-extended port attributes field will always be zero.  </p>
 <p>For Windows XP and Windows Server 2003, <b>PortAttributes</b> value might be set to the  Microsoft-extended port attributes, USB_PORTATTR_NO_OVERCURRENT_UI. This attribute indicates that no user-visible interface will be displayed when overcurrent occurs on the port.
 	
@@ -100,13 +100,13 @@ typedef struct _USB_NODE_CONNECTION_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537316">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-attributes.md">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539247">USB_CONNECTION_STATUS</a>
+<a href="..\usbioctl\ne-usbioctl--usb-connection-status.md">USB_CONNECTION_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

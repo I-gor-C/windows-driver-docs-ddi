@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetGenerationalGuid_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565678">SetGenerationalGuid</a> method.</p>
+<p>The SetGenerationalGuid_IN structure holds the input data for the <a href="storage.setgenerationalguid">SetGenerationalGuid</a> method.</p>
 
 
 ## -syntax
@@ -81,10 +81,10 @@ typedef struct _SetGenerationalGuid_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565678">SetGenerationalGuid</a>
+<a href="storage.setgenerationalguid">SetGenerationalGuid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565687">SetGenerationalGuid_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--setgenerationalguid-out.md">SetGenerationalGuid_OUT</a>
 </dt>
 </dl>
 <p> </p>

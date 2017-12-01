@@ -66,9 +66,7 @@ VOID VideoPortQuerySystemTime(
 <p>None</p>
 
 ## -remarks
-<p>System time is a count of 100-nanosecond intervals since January 1, 1601. System time is typically updated approximately every ten milliseconds. This value is computed for the GMT time zone. To adjust this value for the local time zone use <a href="https://msdn.microsoft.com/library/windows/hardware/ff545622">ExSystemTimeToLocalTime</a>. </p>
-
-<p>System time is a count of 100-nanosecond intervals since January 1, 1601. System time is typically updated approximately every ten milliseconds. This value is computed for the GMT time zone. To adjust this value for the local time zone use <a href="https://msdn.microsoft.com/library/windows/hardware/ff545622">ExSystemTimeToLocalTime</a>. </p>
+<p>System time is a count of 100-nanosecond intervals since January 1, 1601. System time is typically updated approximately every ten milliseconds. This value is computed for the GMT time zone. To adjust this value for the local time zone use <a href="..\wdm\nf-wdm-exsystemtimetolocaltime.md">ExSystemTimeToLocalTime</a>. </p>
 
 ## -requirements
 <table>
@@ -133,7 +131,7 @@ VOID VideoPortQuerySystemTime(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570336">VideoPortQueryPerformanceCounter</a>
+<a href="..\video\nf-video-videoportqueryperformancecounter.md">VideoPortQueryPerformanceCounter</a>
 </dt>
 </dl>
 <p> </p>

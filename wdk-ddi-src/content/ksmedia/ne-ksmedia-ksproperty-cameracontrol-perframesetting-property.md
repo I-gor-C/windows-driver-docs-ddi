@@ -7,7 +7,7 @@ old-location: stream\ksproperty_cameracontrol_perframesetting_property.htm
 old-project: stream
 ms.assetid: 59328DD6-3E7B-43C3-A1FF-E02DC24228BA
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices

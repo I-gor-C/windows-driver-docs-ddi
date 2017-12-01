@@ -7,7 +7,7 @@ old-location: kernel\rtlprefetchmemorynontemporal.htm
 old-project: kernel
 ms.assetid: d11c3414-86c8-4b68-829e-4523519c5299
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlPrefetchMemoryNonTemporal
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,8 +73,6 @@ VOID RtlPrefetchMemoryNonTemporal(
 <p>None.</p>
 
 ## -remarks
-<p>You should use this routine only for a buffer that will be written to or read from exactly once. Note that <b>RtlPrefetchMemoryNonTemporal</b> is only a hint to the processor: the buffer is not guaranteed to be moved into the cache. On x86-based and x64-based systems, this routine uses the <b>prefetchnta</b> instruction.</p>
-
 <p>You should use this routine only for a buffer that will be written to or read from exactly once. Note that <b>RtlPrefetchMemoryNonTemporal</b> is only a hint to the processor: the buffer is not guaranteed to be moved into the cache. On x86-based and x64-based systems, this routine uses the <b>prefetchnta</b> instruction.</p>
 
 ## -requirements

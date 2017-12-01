@@ -7,7 +7,7 @@ old-location: netvista\rilnotificationfiltermask.htm
 old-project: netvista
 ms.assetid: 5dc72657-00ae-4fde-b9a7-a63616d934c0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

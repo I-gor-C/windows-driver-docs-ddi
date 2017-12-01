@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>VideoPortGetAgpServices</b> function is <b>obsolete</b> and is supported only for backward compatibility with existing drivers. In its place, driver writers should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff570337">VideoPortQueryServices</a>.</p>
+<p>The <b>VideoPortGetAgpServices</b> function is <b>obsolete</b> and is supported only for backward compatibility with existing drivers. In its place, driver writers should use <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>.</p>
 <p><b>VideoPortGetAgpServices</b> returns a list of video port driver-implemented AGP service functions.</p>
 
 
@@ -66,7 +66,7 @@ BOOLEAN VideoPortGetAgpServices(
 ### -param <i>AgpServices</i> [in]
 
 <dd>
-<p>Pointer to an uninitialized, miniport driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff570529">VIDEO_PORT_AGP_SERVICES</a> structure.</p>
+<p>Pointer to an uninitialized, miniport driver-allocated <a href="display.video_port_agp_services">VIDEO_PORT_AGP_SERVICES</a> structure.</p>
 </dd>
 </dl>
 
@@ -76,15 +76,7 @@ BOOLEAN VideoPortGetAgpServices(
 ## -remarks
 <p>PnP video miniport drivers that can use AGP should call <b>VideoPortGetAgpServices</b>.</p>
 
-<p>The video port driver initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570529">VIDEO_PORT_AGP_SERVICES</a> structure as follows:</p>
-
-<p>All function pointers are initialized to point to the corresponding video port driver-implemented AGP service functions.</p>
-
-<p>The <b>AllocationLimit</b> field is initialized to the maximum amount of AGP memory that a miniport driver is allowed to commit, in bytes.</p>
-
-<p>PnP video miniport drivers that can use AGP should call <b>VideoPortGetAgpServices</b>.</p>
-
-<p>The video port driver initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570529">VIDEO_PORT_AGP_SERVICES</a> structure as follows:</p>
+<p>The video port driver initializes the <a href="display.video_port_agp_services">VIDEO_PORT_AGP_SERVICES</a> structure as follows:</p>
 
 <p>All function pointers are initialized to point to the corresponding video port driver-implemented AGP service functions.</p>
 
@@ -153,7 +145,7 @@ BOOLEAN VideoPortGetAgpServices(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570337">VideoPortQueryServices</a>
+<a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
 </dt>
 <dt>
 <a href="..\videoagp\nc-videoagp-pagp-commit-physical.md">AgpCommitPhysical</a>
@@ -178,7 +170,7 @@ BOOLEAN VideoPortGetAgpServices(
 </dt>
 <dt><b>AgpReleasePhysical</b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570529">VIDEO_PORT_AGP_SERVICES</a>
+<a href="display.video_port_agp_services">VIDEO_PORT_AGP_SERVICES</a>
 </dt>
 </dl>
 <p> </p>

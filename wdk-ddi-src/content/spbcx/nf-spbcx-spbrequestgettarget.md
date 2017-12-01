@@ -68,8 +68,6 @@ SPBTARGET SpbRequestGetTarget(
 ## -remarks
 <p>The returned SPBTARGET handle is guaranteed to remain valid until the corresponding I/O request is completed.</p>
 
-<p>The returned SPBTARGET handle is guaranteed to remain valid until the corresponding I/O request is completed.</p>
-
 ## -requirements
 <table>
 <tr>

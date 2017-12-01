@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>A Storport miniport driver uses this structure to support the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> (SRB) function code SRB_FUNCTION_DUMP_POINTERS. When a miniport driver receives this kind of SRB, the <b>DataBuffer</b> SRB member points to a <b>MINIPORT_DUMP_POINTERS</b> structure. This SRB is sent to the miniport driver that is used to control the disk that holds the crash dump data after the SRB was returned from the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a> routine. Virtual miniport drivers are required to support SRB_FUNCTION_DUMP_POINTERS.</p>
+<p>A Storport miniport driver uses this structure to support the <a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a> (SRB) function code SRB_FUNCTION_DUMP_POINTERS. When a miniport driver receives this kind of SRB, the <b>DataBuffer</b> SRB member points to a <b>MINIPORT_DUMP_POINTERS</b> structure. This SRB is sent to the miniport driver that is used to control the disk that holds the crash dump data after the SRB was returned from the miniport driver's <a href="storage.hwstorinitialize">HwStorInitialize</a> routine. Virtual miniport drivers are required to support SRB_FUNCTION_DUMP_POINTERS.</p>
 
 
 ## -syntax
@@ -111,78 +111,78 @@ typedef struct _MINIPORT_DUMP_POINTERS {
 ### -field <b>MiniportPrivateDumpData</b>
 
 <dd>
-<p>The context that is to be passed to the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine during the crash dump. The context is passed in the <b>Reserved</b> member or, starting with Windows 8, the <b>MiniportDumpData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structure.</p>
+<p>The context that is to be passed to the miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine during the crash dump. The context is passed in the <b>Reserved</b> member or, starting with Windows 8, the <b>MiniportDumpData</b> member of the <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> structure.</p>
 </dd>
 
 ### -field <b>SystemIoBusNumber</b>
 
 <dd>
-<p>Specifies the system-assigned number of the I/O bus to which the HBA is connected. The Storport driver initializes this member. Miniport drivers that work with the Storport driver must not change this member. For more information, see the <b>SystemIoBusNumber</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>. </p>
+<p>Specifies the system-assigned number of the I/O bus to which the HBA is connected. The Storport driver initializes this member. Miniport drivers that work with the Storport driver must not change this member. For more information, see the <b>SystemIoBusNumber</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
 ### -field <b>AdapterInterfaceType</b>
 
 <dd>
-<p>Identifies the I/O bus interface. The Storport driver initializes this member. Miniport drivers that work with the Storport driver must not modify this member. For more information, see the <b>AdapterInterfaceType</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>. </p>
+<p>Identifies the I/O bus interface. The Storport driver initializes this member. Miniport drivers that work with the Storport driver must not modify this member. For more information, see the <b>AdapterInterfaceType</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
 ### -field <b>MaximumTransferLength</b>
 
 <dd>
-<p>Specifies the maximum number of bytes the HBA can transfer in a single transfer operation in crashdump mode. By default, the value of this member is SP_UNINITIALIZED_VALUE, which indicates an unlimited maximum transfer size. This value is specific to the dump operation of the miniport and may differ from the value in the <b>MaximumTransferLength</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>. </p>
+<p>Specifies the maximum number of bytes the HBA can transfer in a single transfer operation in crashdump mode. By default, the value of this member is SP_UNINITIALIZED_VALUE, which indicates an unlimited maximum transfer size. This value is specific to the dump operation of the miniport and may differ from the value in the <b>MaximumTransferLength</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
 ### -field <b>NumberOfPhysicalBreaks</b>
 
 <dd>
-<p>Specifies the maximum number of breaks between address ranges that a data buffer can have to create scatter/gather lists. In other words, the number of scatter/gather list entries that the adapter can support minus one. For more information, see the <b>NumberOfPhysicalBreaks</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>. </p>
+<p>Specifies the maximum number of breaks between address ranges that a data buffer can have to create scatter/gather lists. In other words, the number of scatter/gather list entries that the adapter can support minus one. For more information, see the <b>NumberOfPhysicalBreaks</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
 ### -field <b>AlignmentMask</b>
 
 <dd>
-<p>Contains a mask that indicates the alignment restrictions for buffers that are required by the HBA for transfer operations. Valid mask values are also restricted by characteristics of the memory managers on different versions of the Microsoft Windows operating systems. The valid mask values are 0 (byte aligned), 0x1 (word aligned), 0x3 (DWORD aligned), and 0x7 (double DWORD aligned). The miniport driver should set this mask if the HBA supports scatter/gather. The same considerations apply to the <b>AlignmentMask</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>. </p>
+<p>Contains a mask that indicates the alignment restrictions for buffers that are required by the HBA for transfer operations. Valid mask values are also restricted by characteristics of the memory managers on different versions of the Microsoft Windows operating systems. The valid mask values are 0 (byte aligned), 0x1 (word aligned), 0x3 (DWORD aligned), and 0x7 (double DWORD aligned). The miniport driver should set this mask if the HBA supports scatter/gather. The same considerations apply to the <b>AlignmentMask</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
 ### -field <b>NumberOfAccessRanges</b>
 
 <dd>
-<p>Specifies the number of <b>AccessRanges</b> elements in the array. For more information, see the <b>NumberOfAccessRanges</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>. </p>
+<p>Specifies the number of <b>AccessRanges</b> elements in the array. For more information, see the <b>NumberOfAccessRanges</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
 ### -field <b>(*AccessRanges)</b>
 
 <dd>
-<p>A pointer to an array of ACCESS_RANGE-type elements. The Storport driver initializes this member. Miniport drivers that work with the Storport driver must not change this member. For more information, see the <b>AccessRanges</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>.</p>
+<p>A pointer to an array of ACCESS_RANGE-type elements. The Storport driver initializes this member. Miniport drivers that work with the Storport driver must not change this member. For more information, see the <b>AccessRanges</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>.</p>
 </dd>
 
 ### -field <b>NumberOfBuses</b>
 
 <dd>
-<p>Specifies the number of buses that are controlled by the adapter. By default, the value of this member is zero. For more information, see the <b>NumberOfBuses</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>. </p>
+<p>Specifies the number of buses that are controlled by the adapter. By default, the value of this member is zero. For more information, see the <b>NumberOfBuses</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
 ### -field <b>Master</b>
 
 <dd>
-<p>Indicates, when <b>TRUE</b>, that the HBA is a bus master. The Storport driver initializes this member to <b>TRUE</b>, because its miniport drivers must support bus-mastering DMA. Miniport drivers that work with the Storport driver must not change this value. For more information, see the <b>Master</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>. </p>
+<p>Indicates, when <b>TRUE</b>, that the HBA is a bus master. The Storport driver initializes this member to <b>TRUE</b>, because its miniport drivers must support bus-mastering DMA. Miniport drivers that work with the Storport driver must not change this value. For more information, see the <b>Master</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 
 ### -field <b>MapBuffers</b>
 
 <dd>
-<p>Indicates whether the Storport driver maps SRB data buffer addresses to system virtual addresses. For more information, see the <b>MapBuffers</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a>.</p>
+<p>Indicates whether the Storport driver maps SRB data buffer addresses to system virtual addresses. For more information, see the <b>MapBuffers</b> member of <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a>.</p>
 </dd>
 
 ### -field <b>MaximumNumberOfTargets</b>
 
 <dd>
-<p>Specifies the number of target peripherals that the adapter can control. For more information, see the <b>MaximumNumberOfTargets</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>. </p>
+<p>Specifies the number of target peripherals that the adapter can control. For more information, see the <b>MaximumNumberOfTargets</b> member of <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Starting with Windows 8, physical minport drivers can optionally support SRB_FUNCTION_DUMP_POINTERS. If a physical miniport supports this function, it must set the STOR_FEATURE_DUMP_POINTERS flag in the <b>FeatureSupport</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a> structure before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. Physical miniports are required to set at least the <b>Version</b> and <b>Size</b> members of <b>MINIPORT_DUMP_POINTERS</b>. Also, if different from the value given in <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>, the <b>MaximumTransferLength</b> member is required for a physical miniport.</p>
+<p>Starting with Windows 8, physical minport drivers can optionally support SRB_FUNCTION_DUMP_POINTERS. If a physical miniport supports this function, it must set the STOR_FEATURE_DUMP_POINTERS flag in the <b>FeatureSupport</b> member of the <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a> structure before calling <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. Physical miniports are required to set at least the <b>Version</b> and <b>Size</b> members of <b>MINIPORT_DUMP_POINTERS</b>. Also, if different from the value given in <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>, the <b>MaximumTransferLength</b> member is required for a physical miniport.</p>
 
 ## -requirements
 <table>
@@ -201,16 +201,16 @@ typedef struct _MINIPORT_DUMP_POINTERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a>
+<a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb--scsi-request-block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a>
+<a href="storage.hwstorinitialize">HwStorInitialize</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>
+<a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

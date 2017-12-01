@@ -7,7 +7,7 @@ old-location: wdf\wdf_fileobject_config.htm
 old-project: wdf
 ms.assetid: 6fefc35f-fbbd-4c5e-bb8f-25ad3b6cdb67
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_FILEOBJECT_CONFIG, WDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,24 +88,24 @@ typedef struct _WDF_FILEOBJECT_CONFIG {
 ### -field <b>AutoForwardCleanupClose</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552533">WDF_TRI_STATE</a>-typed value. For more information about this member, see the following Comments section.</p>
+<p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-tri-state.md">WDF_TRI_STATE</a>-typed value. For more information about this member, see the following Comments section.</p>
 </dd>
 
 ### -field <b>FileObjectClass</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551315">WDF_FILEOBJECT_CLASS</a>-typed value that identifies whether the driver requires a framework file object to represent each file that an application or another driver creates or opens. Additionally, this value specifies where the framework can store the object's handle. </p>
+<p>A <a href="..\wdfdevice\ne-wdfdevice--wdf-fileobject-class.md">WDF_FILEOBJECT_CLASS</a>-typed value that identifies whether the driver requires a framework file object to represent each file that an application or another driver creates or opens. Additionally, this value specifies where the framework can store the object's handle. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>WDF_FILEOBJECT_CONFIG</b> structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546107">WdfDeviceInitSetFileObjectConfig</a> method.</p>
+<p>The <b>WDF_FILEOBJECT_CONFIG</b> structure is used as input to the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfileobjectconfig.md">WdfDeviceInitSetFileObjectConfig</a> method.</p>
 
-<p><b>WDF_FILEOBJECT_CONFIG</b> must be initialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff551321">WDF_FILEOBJECT_CONFIG_INIT</a>.</p>
+<p><b>WDF_FILEOBJECT_CONFIG</b> must be initialized by calling <a href="..\wdfdevice\nf-wdfdevice-wdf-fileobject-config-init.md">WDF_FILEOBJECT_CONFIG_INIT</a>.</p>
 
 <p>If <b>AutoForwardCleanupClose</b> is set to <b>WdfTrue</b>, the framework does the following:</p>
 
-<p>The framework forwards file creation requests to the next-lower driver if the driver does not provide an <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-file-create.md">EvtDeviceFileCreate</a> callback function and has not called <a href="https://msdn.microsoft.com/library/windows/hardware/ff545920">WdfDeviceConfigureRequestDispatching</a> to set an I/O queue to receive file creation requests. The framework does not forward file creation requests if the driver provides a callback function or a queue to handle the requests, so the driver must <a href="wdf.forwarding_i_o_requests">forward</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406719">complete</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/hh406716">cancel</a> the requests.</p>
+<p>The framework forwards file creation requests to the next-lower driver if the driver does not provide an <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-file-create.md">EvtDeviceFileCreate</a> callback function and has not called <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceconfigurerequestdispatching.md">WdfDeviceConfigureRequestDispatching</a> to set an I/O queue to receive file creation requests. The framework does not forward file creation requests if the driver provides a callback function or a queue to handle the requests, so the driver must <a href="wdf.forwarding_i_o_requests">forward</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406719">complete</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/hh406716">cancel</a> the requests.</p>
 
 <p>The framework sends file cleanup and close requests to the next-lower driver after calling the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-file-cleanup.md">EvtFileCleanup</a> and <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-file-close.md">EvtFileClose</a> callback functions.</p>
 

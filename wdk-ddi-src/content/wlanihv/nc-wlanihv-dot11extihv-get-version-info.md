@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvgetversioninfo.htm
 old-project: netvista
 ms.assetid: af75e59d-c4af-43ca-a160-ddc8a7a4a88e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -61,7 +60,7 @@ DWORD APIENTRY Dot11ExtIhvGetVersionInfo(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff548645">DOT11_IHV_VERSION_INFO</a> structure,
+     <a href="..\wlanihv\ns-wlanihv--dot11-ihv-version-info.md">DOT11_IHV_VERSION_INFO</a> structure,
      which contains the interface version numbers.</p>
 </dd>
 </dl>
@@ -72,31 +71,6 @@ DWORD APIENTRY Dot11ExtIhvGetVersionInfo(
      Winerror.h.</p>
 
 ## -remarks
-<p>The operating system calls the 
-    <i>Dot11ExtIhvGetVersionInfo</i> function to determine what version of the interface to use with the IHV
-    Extension DLL. The operating system makes this call immediately after loading the DLL, and this call is
-    the first that the operating system makes into the DLL.</p>
-
-<p>Unlike other IHV Extensibility and Handler functions, whose addresses are resolved through a table of
-    function pointers that are exchanged through a call to 
-    <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-service.md">Dot11ExtIhvInitService</a>, the
-    address of the 
-    <i>Dot11ExtIhvGetVersionInfo</i> function is resolved by the operating system by the operating system
-    calling the 
-    <b>GetProcAddress</b> function. As a result, the developer of the IHV Extensions DLL must follow these
-    guidelines.</p>
-
-<p>The DLL must implement a function named Dot11ExtIhvGetVersionInfo, which has the format that is
-      described in this topic.</p>
-
-<p>The 
-      <b>EXPORTS</b> statement of the source module-definition (.def) file, which is used to build the IHV
-      Extensions DLL, must contain a function name entry for the 
-      <i>Dot11ExtIhvGetVersionInfo</i> function.</p>
-
-<p>For more information about 
-    <b>GetProcAddress</b>, refer to the Microsoft Windows SDK documentation.</p>
-
 <p>The operating system calls the 
     <i>Dot11ExtIhvGetVersionInfo</i> function to determine what version of the interface to use with the IHV
     Extension DLL. The operating system makes this call immediately after loading the DLL, and this call is
@@ -158,7 +132,7 @@ DWORD APIENTRY Dot11ExtIhvGetVersionInfo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548645">DOT11_IHV_VERSION_INFO</a>
+<a href="..\wlanihv\ns-wlanihv--dot11-ihv-version-info.md">DOT11_IHV_VERSION_INFO</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-service.md">Dot11ExtIhvInitService</a>
@@ -166,4 +140,4 @@ DWORD APIENTRY Dot11ExtIhvGetVersionInfo(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_GET_VERSION_INFO callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_GET_VERSION_INFO callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

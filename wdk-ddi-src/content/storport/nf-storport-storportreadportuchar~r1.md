@@ -73,9 +73,7 @@ STORPORT_API UCHAR StorPortReadPortUchar(
 <p><b>StorPortReadPortUchar</b> returns an unsigned character of data. </p>
 
 ## -remarks
-<p>For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564715">ScsiPortReadPortBufferUchar</a> routine. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567468">StorPortReadPortBufferUchar</a>. </p>
-
-<p>For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564715">ScsiPortReadPortBufferUchar</a> routine. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567468">StorPortReadPortBufferUchar</a>. </p>
+<p>For more information, see the <a href="..\srb\nf-srb-scsiportreadportbufferuchar.md">ScsiPortReadPortBufferUchar</a> routine. For a buffered version of this routine, see <a href="..\storport\nf-storport-storportreadportbufferuchar.md">StorPortReadPortBufferUchar</a>. </p>
 
 ## -requirements
 <table>
@@ -114,10 +112,10 @@ STORPORT_API UCHAR StorPortReadPortUchar(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564715">ScsiPortReadPortBufferUchar</a>
+<a href="..\srb\nf-srb-scsiportreadportbufferuchar.md">ScsiPortReadPortBufferUchar</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567468">StorPortReadPortBufferUchar</a>
+<a href="..\storport\nf-storport-storportreadportbufferuchar.md">StorPortReadPortBufferUchar</a>
 </dt>
 </dl>
 <p> </p>

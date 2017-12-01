@@ -7,7 +7,7 @@ old-location: kernel\wnode_header.htm
 old-project: kernel
 ms.assetid: a895f048-b111-4ccc-8466-fe9b169a2f95
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WNODE_HEADER, WNODE_HEADER, *PWNODE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,7 +80,7 @@ typedef struct _WNODE_HEADER {
 ### -field <b>ProviderId</b>
 
 <dd>
-<p>If <b>Flags</b> is set to WNODE_FLAG_EVENT_ITEM or WNODE_FLAG_EVENT_REFERENCE, <b>ProviderId</b> should contain the ID of the WMI provider associated with the device object. You can obtain the <b>ProviderId</b> value by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550433">IoWMIDeviceObjectToProviderId</a>. If <b>Flags</b> is set to any other value, this member is reserved.</p>
+<p>If <b>Flags</b> is set to WNODE_FLAG_EVENT_ITEM or WNODE_FLAG_EVENT_REFERENCE, <b>ProviderId</b> should contain the ID of the WMI provider associated with the device object. You can obtain the <b>ProviderId</b> value by calling <a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWMIDeviceObjectToProviderId</a>. If <b>Flags</b> is set to any other value, this member is reserved.</p>
 </dd>
 
 ### -field <b>HistoricalContext</b>
@@ -172,7 +172,7 @@ typedef struct _WNODE_HEADER {
 ### -field <a id="WNODE_FLAG_ALL_DATA"></a><a id="wnode_flag_all_data"></a>WNODE_FLAG_ALL_DATA
 
 <dd>
-<p>The rest of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer. </p>
+<p>The rest of a <a href="kernel.wnode_all_data">WNODE_ALL_DATA</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer. </p>
 <p>WMI sets this flag in the <b>WNODE_HEADER</b> structure that it passes with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551650">IRP_MN_QUERY_ALL_DATA</a> request.</p>
 <p>A driver sets this flag in the <b>WNODE_HEADER</b> structure of an event that consists of all instances of a data block. If the data block size is identical for all instances, a driver also sets WNODE_FLAG_FIXED_INSTANCE_SIZE.</p>
 </dd>
@@ -186,21 +186,21 @@ typedef struct _WNODE_HEADER {
 ### -field <a id="WNODE_FLAG_EVENT_REFERENCE_"></a><a id="wnode_flag_event_reference_"></a>WNODE_FLAG_EVENT_REFERENCE 
 
 <dd>
-<p>The rest of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566374">WNODE_EVENT_REFERENCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer. </p>
+<p>The rest of a <a href="kernel.wnode_event_reference">WNODE_EVENT_REFERENCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer. </p>
 <p>A driver sets this flag when it generates an event that is larger than the maximum size specified in the registry for an event. WMI uses the information in the <b>WNODE_EVENT_REFERENCE</b> structure to request the event data and schedules such a request according to the value of WNODE_FLAG_SEVERITY_MASK.</p>
 </dd>
 
 ### -field <a id="WNODE_FLAG_METHOD_ITEM"></a><a id="wnode_flag_method_item"></a>WNODE_FLAG_METHOD_ITEM
 
 <dd>
-<p>The rest of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566376">WNODE_METHOD_ITEM</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.</p>
+<p>The rest of a <a href="kernel.wnode_method_item">WNODE_METHOD_ITEM</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.</p>
 <p>WMI sets this flag in the <b>WNODE_HEADER</b> structure that it passes with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550868">IRP_MN_EXECUTE_METHOD</a> request. </p>
 </dd>
 
 ### -field <a id="WNODE_FLAG_SINGLE_INSTANCE"></a><a id="wnode_flag_single_instance"></a>WNODE_FLAG_SINGLE_INSTANCE
 
 <dd>
-<p>The rest of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.</p>
+<p>The rest of a <a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.</p>
 <p>WMI sets this flag in the <b>WNODE_HEADER</b> structure that it passes with a request to query or change an instance.</p>
 <p>A driver sets this flag in the <b>WNODE_HEADER</b> structure of an event that consists of a single instance of a data block. </p>
 </dd>
@@ -208,7 +208,7 @@ typedef struct _WNODE_HEADER {
 ### -field <a id="WNODE_FLAG_SINGLE_ITEM"></a><a id="wnode_flag_single_item"></a>WNODE_FLAG_SINGLE_ITEM
 
 <dd>
-<p>The rest of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.</p>
+<p>The rest of a <a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.</p>
 <p>WMI sets this flag in the <b>WNODE_HEADER</b> structure that it passes with a request to change an item.</p>
 <p>A driver sets this flag in the <b>WNODE_HEADER</b> structure of an event that consists of a single data item.</p>
 </dd>
@@ -216,7 +216,7 @@ typedef struct _WNODE_HEADER {
 ### -field <a id="WNODE_FLAG_TOO_SMALL"></a><a id="wnode_flag_too_small"></a>WNODE_FLAG_TOO_SMALL
 
 <dd>
-<p>The rest of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566379">WNODE_TOO_SMALL</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.</p>
+<p>The rest of a <a href="kernel.wnode_too_small">WNODE_TOO_SMALL</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.</p>
 <p>A driver sets this flag when it passes a <b>WNODE_TOO_SMALL</b> structure, indicating that the buffer is too small for all of the <b>WNODE_<i>XXX</i></b> data to be returned.</p>
 </dd>
 </dl>
@@ -247,14 +247,14 @@ typedef struct _WNODE_HEADER {
 ### -field <a id="WNODE_FLAG_PDO_INSTANCE_NAMES__"></a><a id="wnode_flag_pdo_instance_names__"></a>WNODE_FLAG_PDO_INSTANCE_NAMES  
 
 <dd>
-<p>Static instance names are based on the device instance ID of the PDO for the device. A driver requests such names by setting WMIREG_FLAG_INSTANCE_PDO in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565827">WMIREGGUID</a> it uses to register the block.</p>
+<p>Static instance names are based on the device instance ID of the PDO for the device. A driver requests such names by setting WMIREG_FLAG_INSTANCE_PDO in the <a href="kernel.wmiregguid">WMIREGGUID</a> it uses to register the block.</p>
 <p>WMI sets this flag before requesting <b>WNODE_<i>XXX</i></b> data for data blocks registered with PDO-based instance names.</p>
 </dd>
 
 ### -field <a id="WNODE_FLAG_SEVERITY_MASK_"></a><a id="wnode_flag_severity_mask_"></a>WNODE_FLAG_SEVERITY_MASK 
 
 <dd>
-<p>The driver-determined severity level of the event associated with a returned <a href="https://msdn.microsoft.com/library/windows/hardware/ff566374">WNODE_EVENT_REFERENCE</a>, with 0x00 indicating the least severe and 0xff indicating the most severe level.</p>
+<p>The driver-determined severity level of the event associated with a returned <a href="kernel.wnode_event_reference">WNODE_EVENT_REFERENCE</a>, with 0x00 indicating the least severe and 0xff indicating the most severe level.</p>
 <p>WMI uses the value of this flag to prioritize its requests for the event data.</p>
 </dd>
 
@@ -277,7 +277,7 @@ typedef struct _WNODE_HEADER {
 ### -field <a id="WNODE_FLAG_TRACED_GUID"></a><a id="wnode_flag_traced_guid"></a>WNODE_FLAG_TRACED_GUID
 
 <dd>
-<p>An event block is to be sent only to the system logger. It does not get sent to WMI data consumers. The event header is an <b>EVENT_TRACE_HEADER</b> structure, declared in <i>Evntrace.h</i>, instead of a <b>WNODE_HEADER</b>. The driver must allocate memory for the <b>WNODE_<i>XXX</i></b> and free it after <a href="https://msdn.microsoft.com/library/windows/hardware/ff550520">IoWMIWriteEvent</a> returns. The driver can allocate such memory either from the stack or, to minimize the overhead of allocating and freeing the memory, from the driver's thread local storage if the driver creates and maintains its own thread pool.</p>
+<p>An event block is to be sent only to the system logger. It does not get sent to WMI data consumers. The event header is an <b>EVENT_TRACE_HEADER</b> structure, declared in <i>Evntrace.h</i>, instead of a <b>WNODE_HEADER</b>. The driver must allocate memory for the <b>WNODE_<i>XXX</i></b> and free it after <a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWMIWriteEvent</a> returns. The driver can allocate such memory either from the stack or, to minimize the overhead of allocating and freeing the memory, from the driver's thread local storage if the driver creates and maintains its own thread pool.</p>
 </dd>
 
 ### -field <a id="WNODE_FLAG_USE_GUID_PTR"></a><a id="wnode_flag_use_guid_ptr"></a>WNODE_FLAG_USE_GUID_PTR
@@ -315,36 +315,36 @@ typedef struct _WNODE_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550520">IoWMIWriteEvent</a>
+<a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWMIWriteEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550433">IoWMIDeviceObjectToProviderId</a>
+<a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWMIDeviceObjectToProviderId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553068">KeQuerySystemTime</a>
+<a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a>
+<a href="kernel.wnode_all_data">WNODE_ALL_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566373">WNODE_EVENT_ITEM</a>
+<a href="kernel.wnode_event_item">WNODE_EVENT_ITEM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566374">WNODE_EVENT_REFERENCE</a>
+<a href="kernel.wnode_event_reference">WNODE_EVENT_REFERENCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566376">WNODE_METHOD_ITEM</a>
+<a href="kernel.wnode_method_item">WNODE_METHOD_ITEM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a>
+<a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566378">WNODE_SINGLE_ITEM</a>
+<a href="kernel.wnode_single_item">WNODE_SINGLE_ITEM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566379">WNODE_TOO_SMALL</a>
+<a href="kernel.wnode_too_small">WNODE_TOO_SMALL</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_HEADER structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_HEADER structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -60,7 +60,7 @@ typedef struct _PARTITION_INFORMATION_MBR {
 ### -field <b>PartitionType</b>
 
 <dd>
-<p>Specifies the partition type. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff563751">PARTITION_INFORMATION</a> for a list of system-defined partition types.</p>
+<p>Specifies the partition type. See <a href="..\ntdddisk\ns-ntdddisk--partition-information.md">PARTITION_INFORMATION</a> for a list of system-defined partition types.</p>
 </dd>
 
 ### -field <b>BootIndicator</b>
@@ -102,13 +102,13 @@ typedef struct _PARTITION_INFORMATION_MBR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563754">PARTITION_INFORMATION_EX</a>
+<a href="..\ntdddisk\ns-ntdddisk--partition-information-ex.md">PARTITION_INFORMATION_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563763">PARTITION_INFORMATION_GPT</a>
+<a href="..\ntdddisk\ns-ntdddisk--partition-information-gpt.md">PARTITION_INFORMATION_GPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561452">IoReadPartitionTable</a>
+<a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>
 </dt>
 </dl>
 <p> </p>

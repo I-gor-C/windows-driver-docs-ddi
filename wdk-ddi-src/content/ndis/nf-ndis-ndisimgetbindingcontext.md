@@ -7,7 +7,7 @@ old-location: netvista\ndisimgetbindingcontext.htm
 old-project: netvista
 ms.assetid: fc0668b3-9242-4d30-9dc9-820f6d596d6c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisIMGetBindingContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisIMGetBindingContext (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisIMGetBindingContext (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisIMGetBindingContext (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisIMGetBindingContext (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -65,7 +61,7 @@ NDIS_HANDLE NdisIMGetBindingContext(
 
 <dd>
 <p>The binding handle that the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function returned at
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function returned at
      the 
      <i>NdisBindingHandle</i> parameter that identifies the virtual miniport of the next lower intermediate
      driver to which the caller is bound.</p>
@@ -77,23 +73,6 @@ NDIS_HANDLE NdisIMGetBindingContext(
      miniport, or it returns <b>NULL</b> if no such context area exists.</p>
 
 ## -remarks
-<p>A protocol driver or intermediate driver can call 
-    <b>NdisIMGetBindingContext</b> from its 
-    <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a> function to
-    access the device context for a virtual miniport to which it is bound. The device context provides a
-    common context area for all overlying protocol drivers that are bound to the same underlying intermediate
-    driver.</p>
-
-<p>Such a device context area was allocated and defined by the lower level NDIS intermediate driver and
-    passed to NDIS in a call to the 
-    <a href="..\ndis\nf-ndis-ndisiminitializedeviceinstanceex.md">
-    NdisIMInitializeDeviceInstanceEx</a> function.</p>
-
-<p>All protocol drivers that call 
-    <b>NdisIMGetBindingContext</b> can safely assume that the underlying intermediate driver allocated its
-    context area from nonpaged pool. They should treat the returned context area as read-only, preserving the
-    state set up by the underlying NDIS intermediate driver that defined it.</p>
-
 <p>A protocol driver or intermediate driver can call 
     <b>NdisIMGetBindingContext</b> from its 
     <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a> function to
@@ -168,7 +147,7 @@ NDIS_HANDLE NdisIMGetBindingContext(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547941">Irql_IM_Function</a>
+<a href="devtest.ndis_irql_im_function">Irql_IM_Function</a>
 </td>
 </tr>
 </table>
@@ -180,7 +159,7 @@ NDIS_HANDLE NdisIMGetBindingContext(
    NdisIMInitializeDeviceInstanceEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
@@ -188,4 +167,4 @@ NDIS_HANDLE NdisIMGetBindingContext(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIMGetBindingContext function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIMGetBindingContext function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

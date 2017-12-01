@@ -100,7 +100,7 @@ VOID CcFastCopyRead(
 <p>None</p>
 
 ## -remarks
-<p><b>CcFastCopyRead</b> is a faster version of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539038">CcCopyRead</a>. It differs from <b>CcCopyRead</b> in the following respects:</p>
+<p><b>CcFastCopyRead</b> is a faster version of <a href="..\ntifs\nf-ntifs-cccopyread.md">CcCopyRead</a>. It differs from <b>CcCopyRead</b> in the following respects:</p>
 
 <p><i>FileOffset</i> is a ULONG, not a PLARGE_INTEGER.</p>
 
@@ -112,21 +112,7 @@ VOID CcFastCopyRead(
 
 <p>If any failure occurs, <b>CcFastCopyRead</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcFastCopyRead</b> raises a STATUS_INSUFFICIENT_RESOURCES exception; if an I/O error occurs, <b>CcFastCopyRead</b> raises the status exception of the I/O error. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcFastCopyRead</b> in a <b>try-except</b> or <b>try-finally</b> statement.</p>
 
-<p>To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.</p>
-
-<p><b>CcFastCopyRead</b> is a faster version of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539038">CcCopyRead</a>. It differs from <b>CcCopyRead</b> in the following respects:</p>
-
-<p><i>FileOffset</i> is a ULONG, not a PLARGE_INTEGER.</p>
-
-<p>There is no <i>Wait</i> parameter. The caller must be able to enter a wait state until all the data has been copied.</p>
-
-<p><b>CcFastCopyRead</b> does not return a BOOLEAN to indicate whether the read operation was successful.</p>
-
-<p><i>FileOffset</i> plus <i>Length</i> must be less than or equal to the size of the cached file, or an assertion failure will occur.</p>
-
-<p>If any failure occurs, <b>CcFastCopyRead</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcFastCopyRead</b> raises a STATUS_INSUFFICIENT_RESOURCES exception; if an I/O error occurs, <b>CcFastCopyRead</b> raises the status exception of the I/O error. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcFastCopyRead</b> in a <b>try-except</b> or <b>try-finally</b> statement.</p>
-
-<p>To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.</p>
+<p>To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.</p>
 
 ## -requirements
 <table>
@@ -183,22 +169,22 @@ VOID CcFastCopyRead(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539038">CcCopyRead</a>
+<a href="..\ntifs\nf-ntifs-cccopyread.md">CcCopyRead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539200">CcScheduleReadAhead</a>
+<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539203">CcSetAdditionalCacheAttributes</a>
+<a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539224">CcSetReadAheadGranularity</a>
+<a href="..\ntifs\nf-ntifs-ccsetreadaheadgranularity.md">CcSetReadAheadGranularity</a>
 </dt>
 </dl>
 <p> </p>

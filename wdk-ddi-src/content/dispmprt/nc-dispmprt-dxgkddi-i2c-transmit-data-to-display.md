@@ -120,20 +120,6 @@ NTSTATUS DxgkDdiI2CTransmitDataToDisplay(
 
 <p><i>DxgkDdiI2CTransmitDataToDisplay</i> should be made pageable.</p>
 
-<p>The video present target identified by <i>VidPnTargetId</i> is associated with one of the video outputs on the display adapter. The data is transmitted to an I2C device in the monitor that is connected to that video output. </p>
-
-<p><i>DxgkDdiI2CTransmitDataToDisplay</i> is responsible for signaling the I2C start condition, sending the I2C address, sending the data in the buffer, checking for acknowledgments from the receiver, and signaling the stop condition. For details about the I2C bus, see the <i>I2C Bus Specification</i>, published by Philips Semiconductors. The specification defines a protocol for initiating I2C communication, reading and writing bytes over the I2C data line, and terminating I2C communication. </p>
-
-<p><i>DxgkDdiI2CTransmitDataToDisplay</i> is required to transmit data to an I2C device that has address 0x6E but is permitted to refuse to transmit data to any I2C device that has a different address.</p>
-
-<p><i>DxgkDdiI2CTransmitDataToDisplay</i> is permitted to block if another part of the display miniport driver or graphics hardware is using the specified monitor's I2C bus. It is also permitted to block if the display miniport driver is using the I2C bus to send or receive High-bandwidth Digital Content Protection (HDCP) data.</p>
-
-<p>If the display adapter supports HDCP, the <i>DxgkDdiI2CTransmitDataToDisplay</i> function must refuse to send data to an I2C device if the device has an I2C address that is used by HDCP.</p>
-
-<p><i>DxgkDdiI2CTransmitDataToDisplay</i> must never transmit data to an I2C device on the display adapter. That is, this function can transmit data to an I2C device in a monitor that is connected to the display adapter, but not to an I2C device that is on the display adapter itself.</p>
-
-<p><i>DxgkDdiI2CTransmitDataToDisplay</i> should be made pageable.</p>
-
 ## -requirements
 <table>
 <tr>

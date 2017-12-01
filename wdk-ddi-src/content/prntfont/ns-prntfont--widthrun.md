@@ -72,33 +72,18 @@ typedef struct _WIDTHRUN {
 ### -field <b>loCharWidthOffset</b>
 
 <dd>
-<p>Specifies the offset from the beginning of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563774">WIDTHTABLE</a> structure to the location containing the width of the set of glyphs contained in the width run.</p>
+<p>Specifies the offset from the beginning of a <a href="..\prntfont\ns-prntfont--widthtable.md">WIDTHTABLE</a> structure to the location containing the width of the set of glyphs contained in the width run.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>A width run describes the widths of a set of adjacent glyphs. Sets of width runs are described by an array of WIDTHRUN elements. The array is contained in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563774">WIDTHTABLE</a> structure.</p>
+<p>A width run describes the widths of a set of adjacent glyphs. Sets of width runs are described by an array of WIDTHRUN elements. The array is contained in a <a href="..\prntfont\ns-prntfont--widthtable.md">WIDTHTABLE</a> structure.</p>
 
 <p>Index values contained in <b>dwStartGlyph</b> are integers, starting with 1, with each glyph in the font having an index. That is, the first glyph in the font is assigned an index value of 1, the next glyph's index is 2, and so on.</p>
 
-<p>For example, suppose the first three elements of a WIDTHRUN array contain the following values:</p><dl>
-<dd>WIDTHRUN[0]</dd>
-<dd><b>wStartGlyph</b>=1</dd>
-<dd><b>wGlyphCount</b>=3</dd>
-<dd>
+<p>For example, suppose the first three elements of a WIDTHRUN array contain the following values:</p>
+
 <p><b>IoCharWidthOffset</b>=<i>xxx</i></p>
-</dd>
-<dd>WIDTHRUN[1]</dd>
-<dd><b>wStartGlyph</b>=4</dd>
-<dd><b>wGlyphCount</b>=2</dd>
-<dd>
-<p><b>IoCharWidthOffset</b>=<i>yyy</i></p>
-</dd>
-<dd>WIDTHRUN[2]</dd>
-<dd><b>wStartGlyph</b>=7</dd>
-<dd><b>wGlyphCount</b>=4</dd>
-<dd><b>IoCharWidthOffset</b>=<i>zzz</i></dd>
-</dl><p><b>IoCharWidthOffset</b>=<i>xxx</i></p>
 
 <p><b>IoCharWidthOffset</b>=<i>yyy</i></p>
 
@@ -112,7 +97,7 @@ typedef struct _WIDTHRUN {
 
 <p>If a device font is proportional and has variable pitch characters, the WIDTHTABLE structure's <b>WidthRun</b> array contains only one WIDTHRUN element, and WIDTHTABLE+<b>loCharWidthOffset</b> points to a character width array for all characters in the font.</p>
 
-<p>For Western device fonts, the <b>fwdAveCharWidth</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a> structure is used for determining single-byte character widths, if the character widths are not specified using a WIDTHTABLE structure.</p>
+<p>For Western device fonts, the <b>fwdAveCharWidth</b> member of the <a href="display.ifimetrics">IFIMETRICS</a> structure is used for determining single-byte character widths, if the character widths are not specified using a WIDTHTABLE structure.</p>
 
 <p>For East Asian device fonts, the <b>fwdAveCharWidth</b> and <b>fwdMaxCharInc</b> members of the IFIMETRICS structure are used for determining single-byte and double-byte character widths. If the font is proportional, the font's .ufm file should contain a WIDTHTABLE structure for the proportional glyphs.</p>
 
@@ -133,10 +118,10 @@ typedef struct _WIDTHRUN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563774">WIDTHTABLE</a>
+<a href="..\prntfont\ns-prntfont--widthtable.md">WIDTHTABLE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a>
+<a href="display.ifimetrics">IFIMETRICS</a>
 </dt>
 </dl>
 <p> </p>

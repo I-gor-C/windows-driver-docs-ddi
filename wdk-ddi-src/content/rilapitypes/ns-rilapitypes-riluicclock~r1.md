@@ -7,7 +7,7 @@ old-location: netvista\riluicclock_2.htm
 old-project: netvista
 ms.assetid: 01a39c94-987c-498c-8890-423b762f09fd
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCLOCK,
 ms.prod: windows-hardware
 ms.technology: windows-devices

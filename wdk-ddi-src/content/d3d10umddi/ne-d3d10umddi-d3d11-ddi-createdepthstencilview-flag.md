@@ -76,11 +76,7 @@ typedef enum D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG {
 </dl>
 
 ## -remarks
-<p>D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG values are specified in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542048">D3D11DDIARG_CREATEDEPTHSTENCILVIEW</a> structure to indicate the type of depth-stencil view to create.  </p>
-
-<p>D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG values are specified in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542048">D3D11DDIARG_CREATEDEPTHSTENCILVIEW</a> structure to indicate the type of depth-stencil view to create.  </p>
-
-<p>D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG values are specified in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542048">D3D11DDIARG_CREATEDEPTHSTENCILVIEW</a> structure to indicate the type of depth-stencil view to create.  </p>
+<p>D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG values are specified in the <b>Flags</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createdepthstencilview.md">D3D11DDIARG_CREATEDEPTHSTENCILVIEW</a> structure to indicate the type of depth-stencil view to create.  </p>
 
 ## -requirements
 <table>
@@ -110,7 +106,7 @@ typedef enum D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createdepthstencilview.md">CreateDepthStencilView(D3D11)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542048">D3D11DDIARG_CREATEDEPTHSTENCILVIEW</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-createdepthstencilview.md">D3D11DDIARG_CREATEDEPTHSTENCILVIEW</a>
 </dt>
 </dl>
 <p> </p>

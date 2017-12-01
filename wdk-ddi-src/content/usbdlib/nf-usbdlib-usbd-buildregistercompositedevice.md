@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USBD_BuildRegisterCompositeDevice</b> routine is called by the driver of a USB  multi-function device (composite driver) to  initialize a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450898">REGISTER_COMPOSITE_DEVICE</a> structure with the information required for registering the driver with the USB driver stack. </p>
+<p>The <b>USBD_BuildRegisterCompositeDevice</b> routine is called by the driver of a USB  multi-function device (composite driver) to  initialize a <a href="..\usbdlib\ns-usbdlib--register-composite-device.md">REGISTER_COMPOSITE_DEVICE</a> structure with the information required for registering the driver with the USB driver stack. </p>
 <p>The routine is called by a driver that replaces the Microsoft-provided composite driver, Usbccgp.sys.</p>
 
 
@@ -62,7 +62,7 @@ void  USBD_BuildRegisterCompositeDevice(
 ### -param <i>USBDHandle</i> [in]
 
 <dd>
-<p>A USBD handle that is retrieved in a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406241">USBD_CreateHandle</a> routine.</p>
+<p>A USBD handle that is retrieved in a previous call to the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>
 </dd>
 
 ### -param <i>CapabilityFlags</i> [in]
@@ -80,7 +80,7 @@ void  USBD_BuildRegisterCompositeDevice(
 ### -param <i>RegisterCompositeDevice</i> [out]
 
 <dd>
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh450898">REGISTER_COMPOSITE_DEVICE</a> structure. Upon completion, the structure is populated with the specified registration  information. To register the composite driver, send the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450854">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> I/O request and pass the populated structure. </p>
+<p>A pointer to a caller-allocated <a href="..\usbdlib\ns-usbdlib--register-composite-device.md">REGISTER_COMPOSITE_DEVICE</a> structure. Upon completion, the structure is populated with the specified registration  information. To register the composite driver, send the <a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-register-composite-device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> I/O request and pass the populated structure. </p>
 </dd>
 </dl>
 
@@ -143,10 +143,10 @@ void  USBD_BuildRegisterCompositeDevice(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450898">REGISTER_COMPOSITE_DEVICE</a>
+<a href="..\usbdlib\ns-usbdlib--register-composite-device.md">REGISTER_COMPOSITE_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450854">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-register-composite-device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
 </dt>
 </dl>
 <p> </p>

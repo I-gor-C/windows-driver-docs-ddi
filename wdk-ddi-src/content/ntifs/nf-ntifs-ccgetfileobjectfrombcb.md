@@ -67,8 +67,6 @@ PFILE_OBJECT CcGetFileObjectFromBcb(
 ## -remarks
 <p>The file object pointer is guaranteed to remain valid as long as the BCB exists.</p>
 
-<p>The file object pointer is guaranteed to remain valid as long as the BCB exists.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -116,16 +114,16 @@ PFILE_OBJECT CcGetFileObjectFromBcb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539155">CcMapData</a>
+<a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539176">CcPinMappedData</a>
+<a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539180">CcPinRead</a>
+<a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539183">CcPreparePinWrite</a>
+<a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
 </dt>
 </dl>
 <p> </p>

@@ -70,7 +70,7 @@ typedef struct _BINARY_CONTAINER {
 </dl>
 
 ## -remarks
-<p>The BINARY_CONTAINER structure is used in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545177">BIDI_DATA</a> structure when the bidi data consists of binary data, as opposed to integer, float, or string data.</p>
+<p>The BINARY_CONTAINER structure is used in a <a href="..\winspool\ns-winspool--bidi-data.md">BIDI_DATA</a> structure when the bidi data consists of binary data, as opposed to integer, float, or string data.</p>
 
 ## -requirements
 <table>
@@ -97,7 +97,7 @@ typedef struct _BINARY_CONTAINER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545177">BIDI_DATA</a>
+<a href="..\winspool\ns-winspool--bidi-data.md">BIDI_DATA</a>
 </dt>
 </dl>
 <p> </p>

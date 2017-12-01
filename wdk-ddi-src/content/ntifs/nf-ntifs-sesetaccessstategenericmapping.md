@@ -78,12 +78,6 @@ VOID SeSetAccessStateGenericMapping(
 
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.</p>
 
-<p><b>SeSetAccessStateGenericMapping</b> sets the <b>GenericMapping</b> field in the <b>AuxData</b> member of an ACCESS_STATE structure. If this field is not set when the ACCESS_STATE structure is created, <b>SeSetAccessStateGenericMapping</b> must be called to set this field before the structure is used to perform access validation.</p>
-
-<p>The generic mapping structure defines the mapping of generic access rights to specific and standard access rights for an object. When a client requests generic access rights to an object, the desired access mask is mapped to one of the access masks defined in this structure.</p>
-
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -139,13 +133,13 @@ VOID SeSetAccessStateGenericMapping(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538840">ACCESS_STATE</a>
+<a href="..\wdm\ns-wdm--access-state.md">ACCESS_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a>
+<a href="..\wdm\ns-wdm--generic-mapping.md">GENERIC_MAPPING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554762">SeAppendPrivileges</a>
+<a href="..\ntifs\nf-ntifs-seappendprivileges.md">SeAppendPrivileges</a>
 </dt>
 </dl>
 <p> </p>

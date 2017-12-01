@@ -7,7 +7,7 @@ old-location: kernel\ioctl_vpci_write_block.htm
 old-project: kernel
 ms.assetid: 5214053E-28AB-4728-9F4F-6705F8F56AC7
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: VMB_CHANNEL_STATE_CHANGE_CALLBACKS, VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -81,23 +81,21 @@ Otherwise, Status to the appropriate error condition as a NTSTATUS code.
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## -remarks
-<p>The driver must first allocate or reuse an I/O request packet (<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>). You can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548318">IoBuildDeviceIoControlRequest</a> routine to specifically allocate an IOCTL IRP. You can also use general-purpose IRP creation and initialization routines, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff548257">IoAllocateIrp</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549661">IoReuseIrp</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff549315">IoInitializeIrp</a>. For more information about IRP allocation, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542899">Creating IRPs for Lower-Level Drivers</a>.</p>
+<p>The driver must first allocate or reuse an I/O request packet (<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>). You can use the <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a> routine to specifically allocate an IOCTL IRP. You can also use general-purpose IRP creation and initialization routines, such as <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>, <a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>, or <a href="..\wdm\nf-wdm-ioinitializeirp.md">IoInitializeIrp</a>. For more information about IRP allocation, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542899">Creating IRPs for Lower-Level Drivers</a>.</p>
 
-<p>The driver must then set the  members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure as described in the following table.</p>
+<p>The driver must then set the  members of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure as described in the following table.</p>
 
 <p><b>NULL</b></p>
 
-<p>The address of the event object that was initialized in the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552137">KeInitializeEvent</a> routine.<div class="alert"><b>Note</b>  If asynchronous completion of the IOCTL request is not required, this member should be set to <b>NULL</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>.</div>
+<p>The address of the event object that was initialized in the call to the <a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a> routine.<div class="alert"><b>Note</b>  If asynchronous completion of the IOCTL request is not required, this member should be set to <b>NULL</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>.</div>
 <div> </div>
 </p>
 
-<p>The address of a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure. This structure is updated by the lower driver to indicate the final status of the I/O request.</p>
+<p>The address of a caller-allocated <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure. This structure is updated by the lower driver to indicate the final status of the I/O request.</p>
 
-<p> </p>
+<p>The driver calls the <a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a> routine to access the lower driver's I/O stack location. This function returns a pointer to an <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structure that contains the parameters for the I/O stack location.</p>
 
-<p>The driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549266">IoGetNextIrpStackLocation</a> routine to access the lower driver's I/O stack location. This function returns a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550659">IO_STACK_LOCATION</a> structure that contains the parameters for the I/O stack location.</p>
-
-<p>The driver must then set the members in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550659">IO_STACK_LOCATION</a> structure as described in the following table:</p>
+<p>The driver must then set the members in the <a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a> structure as described in the following table:</p>
 
 <p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>
@@ -105,24 +103,20 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 
 <p><b>IOCTL_VPCI_WRITE_BLOCK</b></p>
 
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451590">VPCI_WRITE_BLOCK_INPUT</a> structure. The driver formats this structure with the parameters for the <b>IOCTL_VPCI_WRITE_BLOCK</b> 
+<p>A pointer to a <a href="..\vpci\ns-vpci--vpci-write-block-input.md">VPCI_WRITE_BLOCK_INPUT</a> structure. The driver formats this structure with the parameters for the <b>IOCTL_VPCI_WRITE_BLOCK</b> 
    I/O request.</p>
 
-<p>The size, in bytes, of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451590">VPCI_WRITE_BLOCK_INPUT</a> structure.</p>
+<p>The size, in bytes, of the <a href="..\vpci\ns-vpci--vpci-write-block-input.md">VPCI_WRITE_BLOCK_INPUT</a> structure.</p>
 
 <p>Zero</p>
 
-<p> </p>
-
-<p>To issue this IOCTL request, the driver  calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a> routine to pass the request on to the next-lower driver  in the driver stack. The driver sets the parameters of <b>IoCallDriver</b> as described in the following table.</p>
+<p>To issue this IOCTL request, the driver  calls the <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a> routine to pass the request on to the next-lower driver  in the driver stack. The driver sets the parameters of <b>IoCallDriver</b> as described in the following table.</p>
 
 <p>The device object of the lower driver.</p>
 
-<p>The address of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> that was previously allocated and initialized. For more information, see <a href="#preparing_an_i_o_request_packet_structure">Preparing an I/O Request Packet (IRP) Structure</a>.</p>
+<p>The address of the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> that was previously allocated and initialized. For more information, see <a href="#preparing_an_i_o_request_packet_structure">Preparing an I/O Request Packet (IRP) Structure</a>.</p>
 
-<p> </p>
-
-<p>      When the <b>IOCTL_VPCI_WRITE_BLOCK</b> IOCTL request is completed, the <b>Status</b> member of the caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure is set to one of the values in the following table.:</p>
+<p>      When the <b>IOCTL_VPCI_WRITE_BLOCK</b> IOCTL request is completed, the <b>Status</b> member of the caller-allocated <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure is set to one of the values in the following table.:</p>
 
 <p><b>STATUS_SUCCESS</b></p>
 
@@ -130,18 +124,16 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 
 <p><b>STATUS_PENDING</b></p>
 
-<p>The IOCTL has not completed. The driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553350">KeWaitForSingleObject</a> routine in order to put the current thread into a wait state. The driver sets the <i>Object</i> parameter to the address of an event object that was initialized in the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552137">KeInitializeEvent</a> routine. </p>
+<p>The IOCTL has not completed. The driver must call the <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a> routine in order to put the current thread into a wait state. The driver sets the <i>Object</i> parameter to the address of an event object that was initialized in the call to the <a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a> routine. </p>
 
 <p>The event is signaled when the IOCTL request is completed. Once the event is signaled, the thread resumes execution.</p>
 
 <p><b>STATUS_BUFFER_TOO_SMALL</b></p>
 
-<p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member was set to a value less than the size, in bytes, of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451590">VPCI_WRITE_BLOCK_INPUT</a> structure.</p>
-
-<p> </p>
+<p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member was set to a value less than the size, in bytes, of the <a href="..\vpci\ns-vpci--vpci-write-block-input.md">VPCI_WRITE_BLOCK_INPUT</a> structure.</p>
 
 <p>If the request completed successfully, the 
-      <b>Information</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure is set to the number of bytes written. Otherwise, the 
+      <b>Information</b> member of the <a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a> structure is set to the number of bytes written. Otherwise, the 
       <b>Information</b> member is set to zero.</p>
 
 <p>When the <b>IOCTL_VPCI_WRITE_BLOCK</b> IOCTL is issued, the driver of the PCIe physical function (PF) is notified to write the data to the specified VF configuration block.</p>
@@ -199,27 +191,27 @@ This operating system runs within the Hyper-V parent partition.</p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a>
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a>
+<a href="..\wdm\ns-wdm--io-status-block.md">IO_STATUS_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550659">IO_STACK_LOCATION</a>
+<a href="..\wdm\ns-wdm--io-stack-location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451609">WriteVfConfigBlock</a>
+<a href="..\vpci\nc-vpci-vpci-write-block.md">WriteVfConfigBlock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451590">VPCI_WRITE_BLOCK_INPUT</a>
+<a href="..\vpci\ns-vpci--vpci-write-block-input.md">VPCI_WRITE_BLOCK_INPUT</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IOCTL_VPCI_WRITE_BLOCK control code%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IOCTL_VPCI_WRITE_BLOCK control code%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

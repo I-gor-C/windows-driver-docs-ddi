@@ -64,7 +64,7 @@ NTSTATUS __stdcall HidP_SetUsages(
 ### -param <i>ReportType</i> [in]
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of report located at <i>Report</i>.</p>
+<p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of report located at <i>Report</i>.</p>
 </dd>
 
 ### -param <i>UsagePage</i> [in]
@@ -106,7 +106,7 @@ NTSTATUS __stdcall HidP_SetUsages(
 ### -param <i>ReportLength</i> [in]
 
 <dd>
-<p>Specifies the size, in bytes, of the report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a> returns in a collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.</p>
+<p>Specifies the size, in bytes, of the report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a> returns in a collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
 </dd>
 </dl>
 
@@ -130,10 +130,6 @@ NTSTATUS __stdcall HidP_SetUsages(
 <p> </p>
 
 ## -remarks
-<p>If <b>HidP_SetUsages</b> cannot set a usage in <i>UsageList</i>, the routine sets <i>UsageLength</i> to the index of the usage that could not be set, and returns a status value that indicates the error.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
 <p>If <b>HidP_SetUsages</b> cannot set a usage in <i>UsageList</i>, the routine sets <i>UsageLength</i> to the index of the usage that could not be set, and returns a status value that indicates the error.</p>
 
 <p>For more information, see <a href="NULL">HID Collections</a>. </p>
@@ -197,7 +193,7 @@ NTSTATUS __stdcall HidP_SetUsages(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539742">HidP_GetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp-getusages.md">HidP_GetUsages</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
@@ -206,7 +202,7 @@ NTSTATUS __stdcall HidP_SetUsages(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539819">HidP_UnsetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp-unsetusages.md">HidP_UnsetUsages</a>
 </dt>
 </dl>
 <p> </p>

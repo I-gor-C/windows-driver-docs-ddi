@@ -7,7 +7,7 @@ old-location: wdf\write_register_ulong64.htm
 old-project: wdf
 ms.assetid: 50C407F2-657F-451F-8A6B-BEEB533D89DE
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WRITE_REGISTER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ void WRITE_REGISTER_ULONG64(
 ### -param <i>pDevice</i> [in]
 
 <dd>
-<p>Specifies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface for the device object of the device to access.</p>
+<p>Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.</p>
 </dd>
 
 ### -param <i>Register</i> [in]
@@ -81,8 +81,6 @@ void WRITE_REGISTER_ULONG64(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>For more information, see <a href="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.</p>
-
 <p>For more information, see <a href="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.</p>
 
 ## -requirements

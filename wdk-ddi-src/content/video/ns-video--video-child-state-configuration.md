@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The VIDEO_CHILD_STATE_CONFIGURATION structure contains an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff570500">VIDEO_CHILD_STATE</a> structures, each holding the state of a particular child device.</p>
+<p>The VIDEO_CHILD_STATE_CONFIGURATION structure contains an array of <a href="..\video\ns-video--video-child-state.md">VIDEO_CHILD_STATE</a> structures, each holding the state of a particular child device.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct _VIDEO_CHILD_STATE_CONFIGURATION {
 ### -field <b>ChildStateArray</b>
 
 <dd>
-<p>Is an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff570500">VIDEO_CHILD_STATE</a> structures. Each element of this array contains the ID and state for a particular child device.</p>
+<p>Is an array of <a href="..\video\ns-video--video-child-state.md">VIDEO_CHILD_STATE</a> structures. Each element of this array contains the ID and state for a particular child device.</p>
 </dd>
 </dl>
 
@@ -73,10 +73,10 @@ typedef struct _VIDEO_CHILD_STATE_CONFIGURATION {
 <p>The video port driver sends a VIDEO_CHILD_STATE_CONFIGURATION structure to the miniport driver for the following IOCTLs:</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568156">IOCTL_VIDEO_VALIDATE_CHILD_STATE_CONFIGURATION</a>, in which the video port driver queries the miniport driver to determine whether the specified state for each child device in <b>ChildStateArray</b> is valid.</p>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-validate-child-state-configuration.md">IOCTL_VIDEO_VALIDATE_CHILD_STATE_CONFIGURATION</a>, in which the video port driver queries the miniport driver to determine whether the specified state for each child device in <b>ChildStateArray</b> is valid.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567840">IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION</a>, in which the video port driver requests the miniport driver to make the specified state change for each child device in <b>ChildStateArray</b>.</p>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-set-child-state-configuration.md">IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION</a>, in which the video port driver requests the miniport driver to make the specified state change for each child device in <b>ChildStateArray</b>.</p>
 
 ## -requirements
 <table>
@@ -95,16 +95,16 @@ typedef struct _VIDEO_CHILD_STATE_CONFIGURATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570500">VIDEO_CHILD_STATE</a>
+<a href="..\video\ns-video--video-child-state.md">VIDEO_CHILD_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570547">VIDEO_REQUEST_PACKET</a>
+<a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568156">IOCTL_VIDEO_VALIDATE_CHILD_STATE_CONFIGURATION</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-validate-child-state-configuration.md">IOCTL_VIDEO_VALIDATE_CHILD_STATE_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567840">IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl-video-set-child-state-configuration.md">IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION</a>
 </dt>
 </dl>
 <p> </p>

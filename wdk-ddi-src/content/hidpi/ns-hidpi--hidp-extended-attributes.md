@@ -60,7 +60,7 @@ typedef struct _HIDP_EXTENDED_ATTRIBUTES {
 ### -field <b>NumGlobalUnknowns</b>
 
 <dd>
-<p>Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539808">HIDP_UNKNOWN_TOKEN</a> structures in the list specified by <b>Data</b>.</p>
+<p>Specifies the number of <a href="..\hidpi\ns-hidpi--hidp-unknown-token.md">HIDP_UNKNOWN_TOKEN</a> structures in the list specified by <b>Data</b>.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -78,7 +78,7 @@ typedef struct _HIDP_EXTENDED_ATTRIBUTES {
 ### -field <b>Data</b>
 
 <dd>
-<p>Specifies the memory location where <a href="https://msdn.microsoft.com/library/windows/hardware/ff539721">HidP_GetExtendedAttributes</a> returns a variable length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539808">HIDP_UNKNOWN_TOKEN</a> structures.</p>
+<p>Specifies the memory location where <a href="..\hidpi\nf-hidpi-hidp-getextendedattributes.md">HidP_GetExtendedAttributes</a> returns a variable length array of <a href="..\hidpi\ns-hidpi--hidp-unknown-token.md">HIDP_UNKNOWN_TOKEN</a> structures.</p>
 </dd>
 </dl>
 
@@ -102,10 +102,10 @@ typedef struct _HIDP_EXTENDED_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539721">HidP_GetExtendedAttributes</a>
+<a href="..\hidpi\nf-hidpi-hidp-getextendedattributes.md">HidP_GetExtendedAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539808">HIDP_UNKNOWN_TOKEN</a>
+<a href="..\hidpi\ns-hidpi--hidp-unknown-token.md">HIDP_UNKNOWN_TOKEN</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11_extap_attributes.htm
 old-project: netvista
 ms.assetid: 0460357c-7180-45f0-a7ab-83c46c24ba68
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_EXTAP_ATTRIBUTES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: windot11.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -72,7 +71,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
 <dd>
 <p>The type, revision, and size of the DOT11_EXTAP_ATTRIBUTES structure. This member is formatted as
      an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.
      </p>
 <p>The miniport driver must set the members of 
      <b>Header</b> to the following values:</p>
@@ -99,7 +98,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
 </dd>
 </dl>
 <p>For more information about these members, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.</p>
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
 ### -field <b>uScanSSIDListSize</b>
@@ -165,7 +164,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      </p>
 <p>The following table lists the minimum and maximum key lengths, in bytes, for the various WEP cipher
      values defined through 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>.</p>
+     <a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>.</p>
 <table>
 <tr>
 <th>
@@ -255,7 +254,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      receiving unicast packets when configured for operation in an infrastructure basic service set (BSS)
      network. The 
      <b>uInfraNumSupportedUcastAlgoPairs</b> member must be the number of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547659">DOT11_AUTH_CIPHER_PAIR</a> structures in
+     <a href="..\wlantypes\ns-wlantypes-dot11-auth-cipher-pair.md">DOT11_AUTH_CIPHER_PAIR</a> structures in
      the array referenced by the 
      <b>pInfraSupportedUcastAlgoPairs</b> member.</p>
 </dd>
@@ -277,7 +276,7 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
      receiving multicast and broadcast packets when configured for operation in an infrastructure basic
      service set (BSS) network. The 
      <b>uInfraNumSupportedMcastAlgoPairs</b> member must be the number of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547659">DOT11_AUTH_CIPHER_PAIR</a> structures in
+     <a href="..\wlantypes\ns-wlantypes-dot11-auth-cipher-pair.md">DOT11_AUTH_CIPHER_PAIR</a> structures in
      the array referenced by the 
      <b>pInfraSupportedMcastAlgoPairs</b> member.</p>
 </dd>
@@ -322,20 +321,20 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547659">DOT11_AUTH_CIPHER_PAIR</a>
+<a href="..\wlantypes\ns-wlantypes-dot11-auth-cipher-pair.md">DOT11_AUTH_CIPHER_PAIR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 </dt>
 <dt>
 <a href="netvista.dot11_country_or_region_string">
    DOT11_COUNTRY_OR_REGION_STRING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547687">DOT11_EXTAP_ATTRIBUTES</a>
+<a href="..\windot11\ns-windot11--dot11-extap-attributes.md">DOT11_EXTAP_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569141">OID_DOT11_DESIRED_BSSID_LIST</a>
@@ -350,4 +349,4 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTAP_ATTRIBUTES structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTAP_ATTRIBUTES structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

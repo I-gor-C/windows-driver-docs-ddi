@@ -7,7 +7,7 @@ old-location: sensors\gnss_ni_plane_type.htm
 old-project: sensors
 ms.assetid: F06FFABA-D7AB-4301-9F73-CE4BBB0B8AA6
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This enumeration indicates the plane type of a network initiated (NI) request represented by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925191">GNSS_NI_REQUEST_PARAM</a> structure.</p>
+<p>This enumeration indicates the plane type of a network initiated (NI) request represented by the <a href="sensors.gnss_ni_request_param">GNSS_NI_REQUEST_PARAM</a> structure.</p>
 
 
 ## -syntax

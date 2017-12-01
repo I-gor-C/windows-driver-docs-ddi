@@ -74,10 +74,6 @@ NTSTATUS RxCeTearDownTransport(
 
 <p>If a transport that has not been bound to is specified in the <i>pTransport</i> parameter, no error is returned and the operation returns STATUS_SUCCESS. </p>
 
-<p>When <b>RxCeTearDownTransport</b> is successful, the data members in the RXCE_TRANSPORT structure pointed to by the <i>pTransport</i> parameter will be properly uninitialized, the RDBSS transport will be released from the specified TDI transport, and allocated memory for name buffers and provider information will be freed.</p>
-
-<p>If a transport that has not been bound to is specified in the <i>pTransport</i> parameter, no error is returned and the operation returns STATUS_SUCCESS. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -113,7 +109,7 @@ NTSTATUS RxCeTearDownTransport(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553434">RxCeBuildTransport</a>
+<a href="..\rxce\nf-rxce-rxcebuildtransport.md">RxCeBuildTransport</a>
 </dt>
 </dl>
 <p> </p>

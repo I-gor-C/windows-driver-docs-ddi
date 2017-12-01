@@ -206,7 +206,7 @@ typedef struct _DXVADDI_CONFIGPICTUREDECODE {
 ### -field <b>Config4GroupedCoefs</b>
 
 <dd>
-<p>[in] A UINT value that specifies how transform coefficients for off-host IDCT are sent. A value of 1 in this member indicates that transform coefficients for off-host IDCT are sent by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564053">DXVA_TCoef4Group</a> structure rather than the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564060">DXVA_TCoefSingle</a> structure. <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is zero or if <b>ConfigHostInverseScan</b> is 1.</p>
+<p>[in] A UINT value that specifies how transform coefficients for off-host IDCT are sent. A value of 1 in this member indicates that transform coefficients for off-host IDCT are sent by using the <a href="..\dxva\ns-dxva--dxva-tcoef4group.md">DXVA_TCoef4Group</a> structure rather than the <a href="..\dxva\ns-dxva--dxva-tcoefsingle.md">DXVA_TCoefSingle</a> structure. <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is zero or if <b>ConfigHostInverseScan</b> is 1.</p>
 <p>The preferred value for <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is 1.</p>
 </dd>
 
@@ -251,10 +251,10 @@ typedef struct _DXVADDI_CONFIGPICTUREDECODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543148">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getcaps.md">D3DDDIARG_GETCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544132">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ne-d3dumddi--d3dddicaps-type.md">D3DDDICAPS_TYPE</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a>

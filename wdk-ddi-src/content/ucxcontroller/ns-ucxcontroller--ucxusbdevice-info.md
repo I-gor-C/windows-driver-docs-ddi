@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains information about the USB device. This structure is passed by UCX in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187823">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a> event callback function.</p>
+<p>Contains information about the USB device. This structure is passed by UCX in the <a href="buses.evt_ucx_controller_usbdevice_add">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a> event callback function.</p>
 
 
 ## -syntax
@@ -103,7 +103,7 @@ typedef struct _UCXUSBDEVICE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187823">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a>
+<a href="buses.evt_ucx_controller_usbdevice_add">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaaudioflags_2.htm
 old-project: netvista
 ms.assetid: da09298f-88be-44ef-8072-d11cf91401c7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

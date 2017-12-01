@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>RtlAddAccessAllowedAceEx</b> routine adds an access-allowed access control entry (<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>) with inheritance ACE flags to an access control list (<a href="https://msdn.microsoft.com/library/windows/hardware/ff538866">ACL</a>). The access is granted to the specified security identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>). </p>
+<p>The <b>RtlAddAccessAllowedAceEx</b> routine adds an access-allowed access control entry (<a href="ifsk.ace">ACE</a>) with inheritance ACE flags to an access control list (<a href="..\ntifs\ns-ntifs--acl.md">ACL</a>). The access is granted to the specified security identifier (<a href="ifsk.sid">SID</a>). </p>
 
 
 ## -syntax
@@ -61,7 +61,7 @@ NTSTATUS RtlAddAccessAllowedAceEx(
 ### -param <i>Acl</i> [in, out]
 
 <dd>
-<p>A pointer to a caller-allocated buffer that contains the ACL to be modified. <b>RtlAddAccessAllowedAceEx</b> adds an access-allowed ACE to the end of this ACL. The ACE is in the form of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538796">ACCESS_ALLOWED_ACE</a> structure.</p>
+<p>A pointer to a caller-allocated buffer that contains the ACL to be modified. <b>RtlAddAccessAllowedAceEx</b> adds an access-allowed ACE to the end of this ACL. The ACE is in the form of an <a href="..\ntifs\ns-ntifs--access-allowed-ace.md">ACCESS_ALLOWED_ACE</a> structure.</p>
 </dd>
 
 ### -param <i>AceRevision</i> [in]
@@ -79,7 +79,7 @@ NTSTATUS RtlAddAccessAllowedAceEx(
 ### -param <i>AccessMask</i> [in]
 
 <dd>
-<p>A bitmask of one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags that specify the access rights to be granted to the specified SID. For more information, see the description of the <i>DesiredAccess</i> parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a>. </p>
+<p>A bitmask of one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags that specify the access rights to be granted to the specified SID. For more information, see the description of the <i>DesiredAccess</i> parameter of <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>. </p>
 </dd>
 
 ### -param <i>Sid</i> [in]
@@ -94,7 +94,7 @@ NTSTATUS RtlAddAccessAllowedAceEx(
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl><p>The ACE was successfully added.</p><dl>
 <dt><b>STATUS_ALLOTTED_SPACE_EXCEEDED</b></dt>
-</dl><p>A new ACE does not fit into the ACL. A larger ACL buffer is required. For more information about how to calculate the size of an ACL, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552151">RtlCreateAcl</a>. </p><dl>
+</dl><p>A new ACE does not fit into the ACL. A larger ACL buffer is required. For more information about how to calculate the size of an ACL, see <a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>. </p><dl>
 <dt><b>STATUS_INVALID_ACL</b></dt>
 </dl><p>The specified ACL is not correctly formed.</p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
@@ -107,17 +107,7 @@ NTSTATUS RtlAddAccessAllowedAceEx(
 <p> </p>
 
 ## -remarks
-<p>Unlike <a href="https://msdn.microsoft.com/library/windows/hardware/ff552092">RtlAddAccessAllowedAce</a>, this routine sets the inheritance ACE flags.  </p>
-
-<p>For more information about security and access control, see the documentation about these topics in the Microsoft Windows SDK, such as:</p>
-
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=140858">Access Control Lists</a></p>
-
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=140859">Creating or Modifying an ACL</a></p>
-
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=140860">Getting Information from an ACL</a></p>
-
-<p>Unlike <a href="https://msdn.microsoft.com/library/windows/hardware/ff552092">RtlAddAccessAllowedAce</a>, this routine sets the inheritance ACE flags.  </p>
+<p>Unlike <a href="..\ntifs\nf-ntifs-rtladdaccessallowedace.md">RtlAddAccessAllowedAce</a>, this routine sets the inheritance ACE flags.  </p>
 
 <p>For more information about security and access control, see the documentation about these topics in the Microsoft Windows SDK, such as:</p>
 
@@ -190,46 +180,46 @@ NTSTATUS RtlAddAccessAllowedAceEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538796">ACCESS_ALLOWED_ACE</a>
+<a href="..\ntifs\ns-ntifs--access-allowed-ace.md">ACCESS_ALLOWED_ACE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+<a href="ifsk.ace">ACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538866">ACL</a>
+<a href="..\ntifs\ns-ntifs--acl.md">ACL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552151">RtlCreateAcl</a>
+<a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561827">RtlCreateSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552165">RtlCreateSecurityDescriptorRelative</a>
+<a href="..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md">RtlCreateSecurityDescriptorRelative</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562025">RtlLengthSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562781">RtlSetDaclSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553220">RtlSetOwnerSecurityDescriptor</a>
+<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563024">RtlValidSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563676">SeAssignSecurity</a>
+<a href="..\wdm\nf-wdm-seassignsecurity.md">SeAssignSecurity</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 </dl>
 <p> </p>

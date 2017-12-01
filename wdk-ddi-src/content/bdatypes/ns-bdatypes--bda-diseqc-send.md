@@ -7,7 +7,7 @@ old-location: stream\bda_diseqc_send.htm
 old-project: stream
 ms.assetid: C40EAB5C-61AA-45FB-856E-07AB4D0228A6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_DISEQC_SEND, BDA_DISEQC_SEND, *PBDA_DISEQC_SEND
 ms.prod: windows-hardware
 ms.technology: windows-devices

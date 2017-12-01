@@ -7,7 +7,7 @@ old-location: netvista\ndisretreatnetbufferlistdatastart.htm
 old-project: netvista
 ms.assetid: 76a1294f-d098-4751-9b59-923993379c6e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisRetreatNetBufferListDataStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,8 +42,8 @@ req.iface:
 <p>Call the 
   <b>NdisRetreatNetBufferListDataStart</b> function to increase the 
   <i>used data space</i> in all the 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures in a 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+  <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures in a 
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 
 ## -syntax
@@ -123,28 +123,8 @@ NDIS_STATUS NdisRetreatNetBufferListDataStart(
     <b>NdisRetreatNetBufferListDataStart</b> is the equivalent of calling the 
     <a href="..\ndis\nf-ndis-ndisretreatnetbufferdatastart.md">
     NdisRetreatNetBufferDataStart</a> function for every 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure on the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. 
-    <b>NdisRetreatNetBufferListDataStart</b> attempts to satisfy the request by reducing the value of the 
-    <b>DataOffset</b> member in every NET_BUFFER structure. If there is not enough 
-    <i>unused data space</i> available, this function allocates a new buffer and MDL, and then chains the new
-    MDL to the beginning of the MDL chain on the NET_BUFFER structure.</p>
-
-<p>Call the 
-    <a href="..\ndis\nf-ndis-ndisadvancenetbufferlistdatastart.md">
-    NdisAdvanceNetBufferListDataStart</a> function to release data space that was claimed in a previous 
-    <b>NdisRetreatNetBufferListDataStart</b> call. Alternatively, the driver can call the 
-    <a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
-    NdisAdvanceNetBufferDataStart</a> function for each NET_BUFFER structure on the NET_BUFFER_LIST
-    structure. Calling 
-    <b>NdisAdvanceNetBufferListDataStart</b> is more efficient.</p>
-
-<p>Calling 
-    <b>NdisRetreatNetBufferListDataStart</b> is the equivalent of calling the 
-    <a href="..\ndis\nf-ndis-ndisretreatnetbufferdatastart.md">
-    NdisRetreatNetBufferDataStart</a> function for every 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure on the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. 
+    <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure on the 
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure. 
     <b>NdisRetreatNetBufferListDataStart</b> attempts to satisfy the request by reducing the value of the 
     <b>DataOffset</b> member in every NET_BUFFER structure. If there is not enough 
     <i>unused data space</i> available, this function allocates a new buffer and MDL, and then chains the new
@@ -212,7 +192,7 @@ NDIS_STATUS NdisRetreatNetBufferListDataStart(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
+<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -220,10 +200,10 @@ NDIS_STATUS NdisRetreatNetBufferListDataStart(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-net-buffer-allocate-mdl-handler.md">NetAllocateMdl</a>
@@ -246,4 +226,4 @@ NDIS_STATUS NdisRetreatNetBufferListDataStart(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRetreatNetBufferListDataStart function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRetreatNetBufferListDataStart function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

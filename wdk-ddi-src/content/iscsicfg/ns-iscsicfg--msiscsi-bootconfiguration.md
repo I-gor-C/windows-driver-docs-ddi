@@ -72,7 +72,7 @@ typedef struct _MSiSCSI_BootConfiguration {
 ### -field <b>SecurityFlags</b>
 
 <dd>
-<p>A bitwise OR of security flags that indicate the security requirements of the boot device. For a list of possible flags for this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>.</p>
+<p>A bitwise OR of security flags that indicate the security requirements of the boot device. For a list of possible flags for this member, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.</p>
 </dd>
 
 ### -field <b>UsernameSize</b>
@@ -108,13 +108,13 @@ typedef struct _MSiSCSI_BootConfiguration {
 ### -field <b>TargetPortal</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561574">ISCSI_TargetPortal</a> structure that specifies the portal to use for the connection.</p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a> structure that specifies the portal to use for the connection.</p>
 </dd>
 
 ### -field <b>LoginOptions</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561541">ISCSI_LoginOptions</a> structure that specifies the characteristics of the logon session to establish with the boot device.</p>
+<p>A <a href="..\iscsidef\ns-iscsidef--iscsi-loginoptions.md">ISCSI_LoginOptions</a> structure that specifies the characteristics of the logon session to establish with the boot device.</p>
 </dd>
 
 ### -field <b>Username</b>
@@ -125,7 +125,7 @@ typedef struct _MSiSCSI_BootConfiguration {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite automatically generates a declaration of the MSiSCSI_BootConfiguration structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562979">MSiSCSI_BootConfiguration WMI Class</a> in <i>Config.mof</i>.It is optional that you implement this class.</p>
+<p>The WMI tool suite automatically generates a declaration of the MSiSCSI_BootConfiguration structure when it compiles the <a href="storage.msiscsi_bootconfiguration_wmi_class">MSiSCSI_BootConfiguration WMI Class</a> in <i>Config.mof</i>.It is optional that you implement this class.</p>
 
 ## -requirements
 <table>
@@ -144,16 +144,16 @@ typedef struct _MSiSCSI_BootConfiguration {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561541">ISCSI_LoginOptions</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-loginoptions.md">ISCSI_LoginOptions</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561574">ISCSI_TargetPortal</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562979">MSiSCSI_BootConfiguration WMI Class</a>
+<a href="storage.msiscsi_bootconfiguration_wmi_class">MSiSCSI_BootConfiguration WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
+<a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>
 </dt>
 </dl>
 <p> </p>

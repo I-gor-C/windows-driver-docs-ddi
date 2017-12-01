@@ -7,7 +7,7 @@ old-location: audio\iminiportaudiosignalprocessing.htm
 old-project: audio
 ms.assetid: 6C520509-347F-4E01-95C4-0D3306031E51
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcUnregisterIoTimeout
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn457660">GetModes</a>
+<a href="audio.iminiportaudiosignalprocessing_getmodes">GetModes</a>
 </td>
 <td align="left" width="63%">
 <p>The GetModes method, Gets the audio signal processing modes supported by an audio pin.</p>
@@ -70,8 +70,6 @@ req.iface:
 <p> </p>
 
 ## -remarks
-<p>Any of the Portcls miniport drivers can also implement the <b>GetModes</b> method.</p>
-
 <p>Any of the Portcls miniport drivers can also implement the <b>GetModes</b> method.</p>
 
 ## -requirements

@@ -94,26 +94,6 @@ HRESULT _stdcall wiasValidateItemProperties(
 
 <p>VT_UI1, VT_UI2, VT_UI4, VT_UI8, VT_I1, VT_I2, VT_I4, VT_R4, VT_R8, VT_BSTR</p>
 
-<p> </p>
-
-<p>The PROPSPEC structure is defined in the Windows SDK documentation.</p>
-
-<p>This function validates simple property values of the following types grouped by attribute.</p>
-
-<p>WIA_PROP_FLAG</p>
-
-<p>VT_UI1, VT_UI2, VT_UI4, VT_UI8, VT_I1, VT_I2, VT_I4</p>
-
-<p>WIA_PROP_RANGE</p>
-
-<p>VT_UI1, VT_UI2, VT_UI4, VT_UI8, VT_I1, VT_I2, VT_I4, VT_R4, VT_R8</p>
-
-<p>WIA_PROP_LIST</p>
-
-<p>VT_UI1, VT_UI2, VT_UI4, VT_UI8, VT_I1, VT_I2, VT_I4, VT_R4, VT_R8, VT_BSTR</p>
-
-<p> </p>
-
 <p>The PROPSPEC structure is defined in the Windows SDK documentation.</p>
 
 ## -requirements

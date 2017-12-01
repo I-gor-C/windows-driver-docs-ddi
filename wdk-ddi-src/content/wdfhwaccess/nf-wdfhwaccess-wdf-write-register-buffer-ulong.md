@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_register_buffer_ulong.htm
 old-project: wdf
 ms.assetid: D52888A2-4CC1-4C5A-890E-5585424339E0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WRITE_REGISTER_BUFFER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,8 +88,6 @@ void WDF_WRITE_REGISTER_BUFFER_ULONG(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The size of the buffer must be large enough to contain at least the specified number of bytes.</p>
-
 <p>The size of the buffer must be large enough to contain at least the specified number of bytes.</p>
 
 ## -requirements

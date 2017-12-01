@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY FlipOverlay(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543124">D3DDDIARG_FLIPOVERLAY</a> structure that describes the new allocation to display by using the overlay.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-flipoverlay.md">D3DDDIARG_FLIPOVERLAY</a> structure that describes the new allocation to display by using the overlay.</p>
 </dd>
 </dl>
 
@@ -75,8 +75,6 @@ __checkReturn HRESULT APIENTRY FlipOverlay(
 <p><i>FlipOverlay</i> returns S_OK or an appropriate error result if the new allocation is not successfully displayed.</p>
 
 ## -remarks
-<p>Overlays are independent from the resources that are displayed by using the overlays.</p>
-
 <p>Overlays are independent from the resources that are displayed by using the overlays.</p>
 
 ## -requirements
@@ -114,10 +112,10 @@ __checkReturn HRESULT APIENTRY FlipOverlay(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543124">D3DDDIARG_FLIPOVERLAY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-flipoverlay.md">D3DDDIARG_FLIPOVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

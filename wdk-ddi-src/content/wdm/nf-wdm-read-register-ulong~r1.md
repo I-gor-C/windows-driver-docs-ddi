@@ -7,7 +7,7 @@ old-location: kernel\read_register_ulong.htm
 old-project: kernel
 ms.assetid: a462734c-cac6-4de0-95c1-810766ef1644
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: READ_REGISTER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,8 +66,6 @@ ULONG READ_REGISTER_ULONG(
 <p><b>READ_REGISTER_ULONG</b> returns the ULONG value read from the specified register address.</p>
 
 ## -remarks
-<p>Callers of <b>READ_REGISTER_ULONG</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.</p>
-
 <p>Callers of <b>READ_REGISTER_ULONG</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.</p>
 
 ## -requirements

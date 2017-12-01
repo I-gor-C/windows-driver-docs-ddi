@@ -7,7 +7,7 @@ old-location: netvista\rilcallaudioquality_2.htm
 old-project: netvista
 ms.assetid: c5d80767-a533-49da-8cf6-28084dd695e1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

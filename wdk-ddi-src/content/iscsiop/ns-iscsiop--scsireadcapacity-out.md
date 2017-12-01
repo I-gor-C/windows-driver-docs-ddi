@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ScsiReadCapacity_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564890">ScsiReadCapacity</a> method.</p>
+<p>The ScsiReadCapacity_OUT structure holds the output data for the <a href="storage.scsireadcapacity">ScsiReadCapacity</a> method.</p>
 
 
 ## -syntax
@@ -61,7 +61,7 @@ typedef struct _ScsiReadCapacity_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>The status of the <b>ScsiReadCapacity</b> method. This member will contain 0 if the READ CAPACITY operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the READ CAPACITY operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.    </p>
+<p>The status of the <b>ScsiReadCapacity</b> method. This member will contain 0 if the READ CAPACITY operation succeeds and ISDSC_SCSI_REQUEST_FAILED if the operation fails. If the READ CAPACITY operation fails, <b>ScsiStatus</b> will contain the SCSI status of the SCSI command. SCSI status qualifiers are documented in the <i>SCSI Primary Commands</i> specification. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.    </p>
 </dd>
 
 ### -field <b>ResponseBufferSize</b>
@@ -109,13 +109,13 @@ typedef struct _ScsiReadCapacity_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564890">ScsiReadCapacity</a>
+<a href="storage.scsireadcapacity">ScsiReadCapacity</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564897">ScsiReadCapacity_IN</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--scsireadcapacity-in.md">ScsiReadCapacity_IN</a>
 </dt>
 </dl>
 <p> </p>

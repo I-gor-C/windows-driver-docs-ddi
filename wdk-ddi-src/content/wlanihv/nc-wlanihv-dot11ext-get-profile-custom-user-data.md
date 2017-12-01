@@ -7,7 +7,7 @@ old-location: netvista\dot11extgetprofilecustomuserdata.htm
 old-project: netvista
 ms.assetid: 1a88138f-aada-410a-a985-249de793aa51
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -123,28 +122,7 @@ DWORD WINAPI * Dot11ExtGetProfileCustomUserData(
 
 <p>The caller is responsible for freeing the memory allocated for the buffer pointed to by the 
     <i>ppvData</i> parameter using the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547422">Dot11ExtFreeBuffer</a> function.</p>
-
-<p>The operating system does not decrypt the data referenced by the 
-    <i>ppvData</i> parameter after reading it from the system registry. The IHV Extensions DLL should use its
-    own decryption algorithm to decrypt the data after calling 
-    <b>Dot11ExtGetProfileCustomUserData</b>.</p>
-
-<p>For every wireless WLAN profile used by the Native Wifi AutoConfig service, Windows maintains the
-    concept of custom user data. This custom user data is initially non-existent, but can be set by calling
-    the 
-    <a href="..\wlanihv\nc-wlanihv-dot11ext-set-profile-custom-user-data.md">
-    Dot11ExtSetProfileCustomUserData</a> function. The custom user data gets reset to empty any time the
-    profile is modified by calling the 
-    <a href="..\wlanihv\nc-wlanihv-dot11ext-set-current-profile.md">
-    Dot11ExtSetCurrentProfile</a> function.</p>
-
-<p>After custom user data has been set, this data can be accessed using the 
-    <b>Dot11ExtGetProfileCustomUserData</b> function.</p>
-
-<p>The caller is responsible for freeing the memory allocated for the buffer pointed to by the 
-    <i>ppvData</i> parameter using the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547422">Dot11ExtFreeBuffer</a> function.</p>
+    <a href="..\wlanihv\nc-wlanihv-dot11ext-free-buffer.md">Dot11ExtFreeBuffer</a> function.</p>
 
 ## -requirements
 <table>
@@ -182,7 +160,7 @@ DWORD WINAPI * Dot11ExtGetProfileCustomUserData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547422">Dot11ExtFreeBuffer</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-free-buffer.md">Dot11ExtFreeBuffer</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a>
@@ -192,7 +170,7 @@ DWORD WINAPI * Dot11ExtGetProfileCustomUserData(
    Dot11ExtIhvPerformPreAssociate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547574">Dot11ExtSetCurrentProfile</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-set-current-profile.md">Dot11ExtSetCurrentProfile</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11ext-set-profile-custom-user-data.md">
@@ -201,4 +179,4 @@ DWORD WINAPI * Dot11ExtGetProfileCustomUserData(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

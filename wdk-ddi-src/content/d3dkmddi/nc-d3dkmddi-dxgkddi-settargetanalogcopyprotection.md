@@ -81,15 +81,6 @@ NTSTATUS APIENTRY DXGKDDI_SETTARGETANALOGCOPYPROTECTION(
 
 <p>This function is always called at PASSIVE level so the supporting code should be made pageable.</p>
 
-<p>This is an optional DDI so the function pointer in the DRIVER_INITIALIZATION_DATA should be set to null if the DDI is not implemented for every adapter supported by the driver.  Since analog content protection is only supported on analog targets and may not be supported through dongles it is increasingly likely over time that drivers will have no need to support this DDI.
-</p>
-
-<p>The OEMCopyProtection byte array which is part of the D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure used in the old DDI has been dropped as it was reserved and never defined so always contained zeroes.  
-
-</p>
-
-<p>This function is always called at PASSIVE level so the supporting code should be made pageable.</p>
-
 ## -requirements
 <table>
 <tr>

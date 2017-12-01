@@ -58,7 +58,7 @@ typedef struct D3D11DDI_HANDLESIZE {
 ### -field <b>HandleType</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff542152">D3D11DDI_HANDLETYPE</a>-typed value that identifies the handle type. </p>
+<p>[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi-handletype.md">D3D11DDI_HANDLETYPE</a>-typed value that identifies the handle type. </p>
 </dd>
 
 ### -field <b>DriverPrivateSize</b>
@@ -99,7 +99,7 @@ typedef struct D3D11DDI_HANDLESIZE {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-checkdeferredcontexthandlesizes.md">CheckDeferredContextHandleSizes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542152">D3D11DDI_HANDLETYPE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi-handletype.md">D3D11DDI_HANDLETYPE</a>
 </dt>
 </dl>
 <p> </p>

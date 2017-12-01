@@ -57,7 +57,7 @@ req.product: Windows 10 or later.
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrinterQueue</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973215">Handle</a>
+<a href="print.iprinterqueue_handle">Handle</a>
 </p>
 
 <p>Read-only</p>
@@ -65,7 +65,7 @@ req.product: Windows 10 or later.
 <p>Gets the underlying native handle for this print queue.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971602">Name</a>
+<a href="print.iprinterqueue_name">Name</a>
 </p>
 
 <p>Read-only</p>
@@ -82,7 +82,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj991811">GetProperties</a>
+<a href="print.iprinterqueue_getproperties">GetProperties</a>
 </td>
 <td align="left" width="63%">
 <p>Gets the properties in the property bag for the queue.</p>
@@ -90,7 +90,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh846197">SendBidiQuery</a>
+<a href="print.iprinterqueue_sendbidiquery">SendBidiQuery</a>
 </td>
 <td align="left" width="63%">
 <p>Performs an asynchronous refresh operation with the specified query, and invokes the <a href="print.iprinterqueueevent_onbidiresponsereceived">IPrinterQueueEvent::OnBidiResponseReceived</a> method.</p>
@@ -111,7 +111,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973215">Handle</a>
+<a href="print.iprinterqueue_handle">Handle</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -124,7 +124,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971602">Name</a>
+<a href="print.iprinterqueue_name">Name</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -135,7 +135,7 @@ req.product: Windows 10 or later.
 </td>
 </tr>
 </table><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973215">Handle</a>
+<a href="print.iprinterqueue_handle">Handle</a>
 </p>
 
 <p>Read-only</p>
@@ -143,7 +143,7 @@ req.product: Windows 10 or later.
 <p>Gets the underlying native handle for this print queue.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971602">Name</a>
+<a href="print.iprinterqueue_name">Name</a>
 </p>
 
 <p>Read-only</p>
@@ -153,9 +153,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>Any event sink that implements <a href="https://msdn.microsoft.com/library/windows/hardware/hh439618">IPrinterQueueEvent</a> is connected to the associated event source, <b>IPrinterQueue</b>, via the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a> mechanism. You must retrieve a pointer to the <b>IConnectionPoint</b> interface by invoking <b>QueryInterface</b> on the <b>IPrinterQueue</b> object.</p>
-
-<p>Any event sink that implements <a href="https://msdn.microsoft.com/library/windows/hardware/hh439618">IPrinterQueueEvent</a> is connected to the associated event source, <b>IPrinterQueue</b>, via the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a> mechanism. You must retrieve a pointer to the <b>IConnectionPoint</b> interface by invoking <b>QueryInterface</b> on the <b>IPrinterQueue</b> object.</p>
+<p>Any event sink that implements <a href="..\printerextension\nn-printerextension-iprinterqueueevent.md">IPrinterQueueEvent</a> is connected to the associated event source, <b>IPrinterQueue</b>, via the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a> mechanism. You must retrieve a pointer to the <b>IConnectionPoint</b> interface by invoking <b>QueryInterface</b> on the <b>IPrinterQueue</b> object.</p>
 
 ## -requirements
 <table>
@@ -191,7 +189,7 @@ req.product: Windows 10 or later.
 <dl>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439618">IPrinterQueueEvent</a>
+<a href="..\printerextension\nn-printerextension-iprinterqueueevent.md">IPrinterQueueEvent</a>
 </dt>
 </dl>
 <p> </p>

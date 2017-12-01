@@ -7,7 +7,7 @@ old-location: battery\upsgetstate.htm
 old-project: battery
 ms.assetid: c60284ff-ebbd-455d-949c-e6d31ce65d5d
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/27/2017
 ms.keywords: UPSGetState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,8 +76,6 @@ DWORD UPSGetState(
 <p> </p>
 
 ## -remarks
-<p>This is a nonblocking call. </p>
-
 <p>This is a nonblocking call. </p>
 
 ## -requirements

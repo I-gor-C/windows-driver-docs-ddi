@@ -7,7 +7,7 @@ old-location: stream\usbcamd_pipe_config_descriptor.htm
 old-project: stream
 ms.assetid: 8554a5d1-07ea-4ad5-83a4-f0c15386b3d1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: pipe_config_descriptor, USBCAMD_Pipe_Config_Descriptor, *PUSBCAMD_Pipe_Config_Descriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -142,7 +142,7 @@ typedef struct _pipe_config_descriptor {
 ## -remarks
 <p>The camera minidriver indicates pipe stream associations by identifying all streams associated with a particular pipe. If there is more than one stream association, USBCAMD creates a virtual still pin. The still stream pin always follows the video stream pin (that is, the video stream pin is the first stream pin). </p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557605">CamConfigureEx</a> routine uses the <b>USBCAMD_Pipe_Config_Descriptor</b> structure to establish a connection between pipes and streams. An array of USBCAMD_Pipe_Config_Descriptor structures is passed into <b>CamConfigureEx</b>, along with the array size, which is equal to the number of pipes found.</p>
+<p>The <a href="stream.camconfigureex">CamConfigureEx</a> routine uses the <b>USBCAMD_Pipe_Config_Descriptor</b> structure to establish a connection between pipes and streams. An array of USBCAMD_Pipe_Config_Descriptor structures is passed into <b>CamConfigureEx</b>, along with the array size, which is equal to the number of pipes found.</p>
 
 <p>The camera minidriver must set the <b>PipeConfigFlags</b> member to the value USBCAMD_DONT_CARE_PIPE if a particular pipe should not be used by USBCAMD. For example, when using an audio and video isochronous pipe, and a camera device that supports stills and video, the <b>PipeConfigFlags</b> member in the first structure should be set to USBCAMD_DONT_CARE_PIPE. The second <b>USBCAMD_Pipe_Config_Descriptor</b> structure should have its <b>StreamAssociation</b> member value set to USBCAMD_VIDEO_STILL_STREAM and its <b>PipeConfigFlags</b> member value set to USBCAMD_MULTIPLEX_PIPE.</p>
 
@@ -167,9 +167,9 @@ typedef struct _pipe_config_descriptor {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557605">CamConfigureEx</a>
+<a href="stream.camconfigureex">CamConfigureEx</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_Pipe_Config_Descriptor structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_Pipe_Config_Descriptor structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

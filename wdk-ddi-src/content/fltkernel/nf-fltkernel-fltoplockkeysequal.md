@@ -74,8 +74,6 @@ BOOLEAN FltOplockKeysEqual(
 ## -remarks
 <p>If no oplock key was provided when the file objects were created, the file objects are considered to match if the file object pointers are the same (that is, they are the same file object). If the file object pointers are different and either or both of the file objects do not have an associated oplock key, the file objects are considered to not match.</p>
 
-<p>If no oplock key was provided when the file objects were created, the file objects are considered to match if the file object pointers are the same (that is, they are the same file object). If the file object pointers are different and either or both of the file objects do not have an associated oplock key, the file objects are considered to not match.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -139,7 +137,7 @@ BOOLEAN FltOplockKeysEqual(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547141">FsRtlOplockKeysEqual</a>
+<a href="ifsk.fsrtloplockkeysequal">FsRtlOplockKeysEqual</a>
 </dt>
 </dl>
 <p> </p>

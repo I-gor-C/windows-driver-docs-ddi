@@ -7,7 +7,7 @@ old-location: kernel\ioverifypartitiontable.htm
 old-project: kernel
 ms.assetid: dc7b543b-1fb5-477c-a612-c8e7381e637e
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoVerifyPartitionTable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,8 +80,6 @@ NTSTATUS IoVerifyPartitionTable(
 <p>The routine might also return other NT status error codes.</p>
 
 ## -remarks
-<p><b>IoVerifyPartitionTable</b> must be used only by disk drivers.</p>
-
 <p><b>IoVerifyPartitionTable</b> must be used only by disk drivers.</p>
 
 ## -requirements

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DDDIARG_FINISHSESSIONKEYREFRESH structure contains the handle to an encryption session to end in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451648">FinishSessionKeyRefresh</a> function. </p>
+<p>The D3DDDIARG_FINISHSESSIONKEYREFRESH structure contains the handle to an encryption session to end in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-finishsessionkeyrefresh.md">FinishSessionKeyRefresh</a> function. </p>
 
 
 ## -syntax
@@ -89,7 +89,7 @@ typedef struct _D3DDDIARG_FINISHSESSIONKEYREFRESH {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451648">FinishSessionKeyRefresh</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-finishsessionkeyrefresh.md">FinishSessionKeyRefresh</a>
 </dt>
 </dl>
 <p> </p>

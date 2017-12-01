@@ -88,11 +88,7 @@ NTSTATUS SynchReadPort(
 <p> </p>
 
 ## -remarks
-<p>The PI8042_SYNCH_READ_PORT callback can only be used in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543243">PI8042_KEYBOARD_INITIALIZATION_ROUTINE</a> callback. I8042prt specifies the read port callback in the <i>ReadPort</i> parameter that I8042prt inputs to a keyboard initialization routine.</p>
-
-<p>The routine polls the hardware until a read is returned by the hardware or an internal time-out occurs.</p>
-
-<p>The PI8042_SYNCH_READ_PORT callback can only be used in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543243">PI8042_KEYBOARD_INITIALIZATION_ROUTINE</a> callback. I8042prt specifies the read port callback in the <i>ReadPort</i> parameter that I8042prt inputs to a keyboard initialization routine.</p>
+<p>The PI8042_SYNCH_READ_PORT callback can only be used in a <a href="..\ntdd8042\nc-ntdd8042-pi8042-keyboard-initialization-routine.md">PI8042_KEYBOARD_INITIALIZATION_ROUTINE</a> callback. I8042prt specifies the read port callback in the <i>ReadPort</i> parameter that I8042prt inputs to a keyboard initialization routine.</p>
 
 <p>The routine polls the hardware until a read is returned by the hardware or an internal time-out occurs.</p>
 
@@ -131,10 +127,10 @@ NTSTATUS SynchReadPort(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543243">PI8042_KEYBOARD_INITIALIZATION_ROUTINE</a>
+<a href="..\ntdd8042\nc-ntdd8042-pi8042-keyboard-initialization-routine.md">PI8042_KEYBOARD_INITIALIZATION_ROUTINE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543276">PI8042_SYNCH_WRITE_PORT</a>
+<a href="..\ntdd8042\nc-ntdd8042-pi8042-synch-write-port.md">PI8042_SYNCH_WRITE_PORT</a>
 </dt>
 </dl>
 <p> </p>

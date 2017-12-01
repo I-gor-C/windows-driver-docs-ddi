@@ -7,7 +7,7 @@ old-location: netvista\netdmaregisterprovider.htm
 old-project: netvista
 ms.assetid: 35d70d0b-c1b9-433f-941d-6cb61ddf0b62
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NetDmaRegisterProvider
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,11 +96,11 @@ NTSTATUS NetDmaRegisterProvider(
 <p>DMA provider drivers call the 
     <b>NetDmaRegisterProvider</b> function to register a DMA provider. DMA provider drivers call 
     <b>NetDmaRegisterProvider</b> in their 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.</p>
+    <a href="kernel.adddevice">AddDevice</a> routine.</p>
 
 <p>In the 
     <b>AddDevice</b> routine, the DMA provider driver calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a> function to create a functional
+    <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> function to create a functional
     device object (FDO) and inserts it at the top of the device stack. The DMA provider driver then calls 
     <b>NetDmaRegisterProvider</b> to register the associated DMA provider.</p>
 
@@ -134,58 +134,7 @@ NTSTATUS NetDmaRegisterProvider(
     the 
     <a href="https://msdn.microsoft.com/f43dc60e-de88-4af0-ad83-3ce3a414d880">
     IRP_MN_FILTER_RESOURCE_REQUIREMENTS</a> IRP. After the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine successfully returns, the Plug
-    and Play (PnP) manager sends the IRP_MN_FILTER_RESOURCE_REQUIREMENTS IRP for the DMA provider. The DMA
-    provider driver must attempt to allocate MSI-X interrupt resources according to affinity parameters that
-    the NetDMA interface passed to 
-    <i>ProviderSetDmaChannelCpuAffinity</i>.</p>
-
-<p>To deregister a DMA provider, a DMA provider driver calls the 
-    <a href="..\netdma\nf-netdma-netdmaderegisterprovider.md">
-    NetDmaDeregisterProvider</a> function.</p>
-
-<p>DMA provider drivers call the 
-    <b>NetDmaRegisterProvider</b> function to register a DMA provider. DMA provider drivers call 
-    <b>NetDmaRegisterProvider</b> in their 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.</p>
-
-<p>In the 
-    <b>AddDevice</b> routine, the DMA provider driver calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a> function to create a functional
-    device object (FDO) and inserts it at the top of the device stack. The DMA provider driver then calls 
-    <b>NetDmaRegisterProvider</b> to register the associated DMA provider.</p>
-
-<p>The DMA provider driver supplies a 
-    <a href="..\netdma\ns-netdma--net-dma-provider-characteristics.md">
-    NET_DMA_PROVIDER_CHARACTERISTICS</a> structure at the 
-    <i>ProviderCharacteristics</i> parameter of 
-    <b>NetDmaRegisterProvider</b>. The NET_DMA_PROVIDER_CHARACTERISTICS structure specifies the
-    characteristics for a NetDMA provider, including the entry points for the 
-    <i>ProviderXxx</i> functions.</p>
-
-<p>The DMA provider driver provides a pointer to a block of driver-allocated context information at the 
-    <i>ProviderContext</i> parameter of 
-    <b>NetDmaRegisterProvider</b>. This context area stores information about the DMA provider. The NetDMA
-    interface passes the context information in subsequent calls to 
-    <i>ProviderXxx</i> functions that require a DMA provider context.</p>
-
-<p>When 
-    <b>NetDmaRegisterProvider</b> returns, it provides a handle at the location that the 
-    <i>pNetDmaProviderHandle</i> parameter specifies. The NetDMA interface assigns this handle to identify the
-    DMA provider. The DMA provider driver uses this handle in all subsequent calls to 
-    <b>NetDma<i>Xxx</i></b> functions that are associated with the DMA provider.</p>
-
-<p>If a computer supports MSI-X, the NetDMA interface, while in the context of the 
-    <b>NetDmaRegisterProvider</b> function, calls the DMA provider driver's 
-    <a href="..\netdma\nc-netdma-dma-channels-cpu-affinity-handler.md">
-    ProviderSetDmaChannelCpuAffinity</a> function to specify the CPU affinity of the interrupt for each DMA
-    channel.</p>
-
-<p>If a computer supports MSI-X, the DMA provider driver can specify interrupt affinities while handling
-    the 
-    <a href="https://msdn.microsoft.com/f43dc60e-de88-4af0-ad83-3ce3a414d880">
-    IRP_MN_FILTER_RESOURCE_REQUIREMENTS</a> IRP. After the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine successfully returns, the Plug
+    <a href="kernel.adddevice">AddDevice</a> routine successfully returns, the Plug
     and Play (PnP) manager sends the IRP_MN_FILTER_RESOURCE_REQUIREMENTS IRP for the DMA provider. The DMA
     provider driver must attempt to allocate MSI-X interrupt resources according to affinity parameters that
     the NetDMA interface passed to 
@@ -238,10 +187,10 @@ NTSTATUS NetDmaRegisterProvider(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
+<a href="kernel.adddevice">AddDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a>
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/f43dc60e-de88-4af0-ad83-3ce3a414d880">
@@ -252,7 +201,7 @@ NTSTATUS NetDmaRegisterProvider(
    NET_DMA_PROVIDER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568328">NetDmaDeregisterProvider</a>
+<a href="..\netdma\nf-netdma-netdmaderegisterprovider.md">NetDmaDeregisterProvider</a>
 </dt>
 <dt>
 <a href="..\netdma\nc-netdma-dma-channels-cpu-affinity-handler.md">
@@ -261,4 +210,4 @@ NTSTATUS NetDmaRegisterProvider(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaRegisterProvider function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaRegisterProvider function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: audio\pc_rebalance_type.htm
 old-project: audio
 ms.assetid: CE700126-8C29-4218-9248-F722523A4DA3
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: BarcodeSymbologyAttributesData, BarcodeSymbologyAttributesData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,18 +69,6 @@ typedef enum _PC_REBALANCE_TYPE {
 </dl>
 
 ## -remarks
-<p> Rebalancing is used in certain PCI scenarios. For example when additional devices are added to the PCI chain and the use of memory resources needs to be rearranged and consolidated.</p>
-
-<p>For more information,  see <a href="NULL">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
-
-<p>Available in Windows 10, version 1511 and later versions of Windows. </p>
-
-<p> Rebalancing is used in certain PCI scenarios. For example when additional devices are added to the PCI chain and the use of memory resources needs to be rearranged and consolidated.</p>
-
-<p>For more information,  see <a href="NULL">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
-
-<p>Available in Windows 10, version 1511 and later versions of Windows. </p>
-
 <p> Rebalancing is used in certain PCI scenarios. For example when additional devices are added to the PCI chain and the use of memory resources needs to be rearranged and consolidated.</p>
 
 <p>For more information,  see <a href="NULL">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>

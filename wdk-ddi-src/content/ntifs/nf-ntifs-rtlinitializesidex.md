@@ -66,7 +66,7 @@ NTSTATUS RtlInitializeSidEx(
 ### -param <i>IdentifierAuthority</i> [in]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556743">SID_IDENTIFIER_AUTHORITY</a> structure to set in the SID structure. </p>
+<p>Pointer to an <a href="..\ntifs\ns-ntifs--sid-identifier-authority.md">SID_IDENTIFIER_AUTHORITY</a> structure to set in the SID structure. </p>
 </dd>
 
 ### -param <i>SubAuthorityCount</i> [in]
@@ -92,8 +92,6 @@ NTSTATUS RtlInitializeSidEx(
 <p> </p>
 
 ## -remarks
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
-
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK. </p>
 
 ## -requirements
@@ -159,13 +157,13 @@ NTSTATUS RtlInitializeSidEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553236">RtlSubAuthoritySid</a>
+<a href="..\ntifs\nf-ntifs-rtlsubauthoritysid.md">RtlSubAuthoritySid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
+<a href="ifsk.sid">SID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556743">SID_IDENTIFIER_AUTHORITY</a>
+<a href="..\ntifs\ns-ntifs--sid-identifier-authority.md">SID_IDENTIFIER_AUTHORITY</a>
 </dt>
 </dl>
 <p> </p>

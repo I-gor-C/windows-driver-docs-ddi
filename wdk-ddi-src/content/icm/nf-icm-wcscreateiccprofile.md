@@ -80,8 +80,6 @@ HPROFILE WcsCreateIccProfile(
 ## -remarks
 <p>The WCS profile that is to be translated must be a Device Model Profile (DMP) in combination with a Color Appearance Model Profile (CAMP) and a Gamut Map Model Profile (GMMP).</p>
 
-<p>The WCS profile that is to be translated must be a Device Model Profile (DMP) in combination with a Color Appearance Model Profile (CAMP) and a Gamut Map Model Profile (GMMP).</p>
-
 ## -requirements
 <table>
 <tr>

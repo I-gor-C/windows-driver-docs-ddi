@@ -69,7 +69,7 @@ typedef struct _CDROM_EXCLUSIVE_LOCK_STATE {
 </dl>
 
 ## -remarks
-<p>The CD-ROM class driver reports the exclusive access state of a CD-ROM device in response to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559327">IOCTL_CDROM_EXCLUSIVE_ACCESS</a> request.</p>
+<p>The CD-ROM class driver reports the exclusive access state of a CD-ROM device in response to the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-exclusive-access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a> request.</p>
 
 ## -requirements
 <table>
@@ -88,7 +88,7 @@ typedef struct _CDROM_EXCLUSIVE_LOCK_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559327">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-exclusive-access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
 </dt>
 </dl>
 <p> </p>

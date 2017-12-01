@@ -7,7 +7,7 @@ old-location: netvista\rilhideidsettingsparammask.htm
 old-project: netvista
 ms.assetid: 3ac34302-f56f-424d-b627-f977c4aabfba
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

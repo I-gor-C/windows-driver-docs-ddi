@@ -139,7 +139,7 @@ typedef struct _BUS_RESET_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="NULL">Device Driver Interface (DDI) Changes in Windows 7</a>
+<a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">Device Driver Interface (DDI) Changes in Windows 7</a>
 </dt>
 </dl>
 <p> </p>

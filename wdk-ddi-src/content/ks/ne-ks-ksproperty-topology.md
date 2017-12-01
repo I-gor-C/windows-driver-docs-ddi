@@ -7,7 +7,7 @@ old-location: stream\ksproperty_topology.htm
 old-project: stream
 ms.assetid: 9C000B4B-DB21-41E1-9AF0-D3B92EAC070B
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -75,7 +75,7 @@ VP_STATUS HwVidGetPowerState(
 ### -param <i>VideoPowerControl</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570542">VIDEO_POWER_MANAGEMENT</a> structure that specifies the power state for which support is being queried.</p>
+<p>Pointer to a <a href="..\ntddvdeo\ns-ntddvdeo--video-power-management.md">VIDEO_POWER_MANAGEMENT</a> structure that specifies the power state for which support is being queried.</p>
 </dd>
 </dl>
 
@@ -91,15 +91,7 @@ VP_STATUS HwVidGetPowerState(
 ## -remarks
 <p><i>HwVidGetPowerState</i> is a required function in a video miniport driver.</p>
 
-<p>The driver should check the ID specified in <i>HwId</i> to determine which device to query. The driver should then determine whether that device supports the power state specified in the <b>PowerState</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570542">VIDEO_POWER_MANAGEMENT</a> structure to which <i>VideoPowerControl</i> points.</p>
-
-<p>This function must not return the current power state of the device.</p>
-
-<p><i>HwVidGetPowerState</i> should be made pageable.</p>
-
-<p><i>HwVidGetPowerState</i> is a required function in a video miniport driver.</p>
-
-<p>The driver should check the ID specified in <i>HwId</i> to determine which device to query. The driver should then determine whether that device supports the power state specified in the <b>PowerState</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570542">VIDEO_POWER_MANAGEMENT</a> structure to which <i>VideoPowerControl</i> points.</p>
+<p>The driver should check the ID specified in <i>HwId</i> to determine which device to query. The driver should then determine whether that device supports the power state specified in the <b>PowerState</b> member of the <a href="..\ntddvdeo\ns-ntddvdeo--video-power-management.md">VIDEO_POWER_MANAGEMENT</a> structure to which <i>VideoPowerControl</i> points.</p>
 
 <p>This function must not return the current power state of the device.</p>
 
@@ -138,7 +130,7 @@ VP_STATUS HwVidGetPowerState(
 <a href="..\video\nc-video-pvideo-hw-power-set.md">HwVidSetPowerState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570542">VIDEO_POWER_MANAGEMENT</a>
+<a href="..\ntddvdeo\ns-ntddvdeo--video-power-management.md">VIDEO_POWER_MANAGEMENT</a>
 </dt>
 </dl>
 <p> </p>

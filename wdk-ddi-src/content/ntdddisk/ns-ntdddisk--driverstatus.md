@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DRIVERSTATUS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565405">SENDCMDOUTPARAMS</a> structure and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a> request to retrieve data returned by a Self-Monitoring Analysis and Reporting Technology (SMART) command.</p>
+<p>The DRIVERSTATUS structure is used in conjunction with the <a href="..\ntdddisk\ns-ntdddisk--sendcmdoutparams.md">SENDCMDOUTPARAMS</a> structure and the <a href="storage.smart_send_drive_command">SMART_SEND_DRIVE_COMMAND</a> request to retrieve data returned by a Self-Monitoring Analysis and Reporting Technology (SMART) command.</p>
 
 
 ## -syntax
@@ -102,10 +102,10 @@ typedef struct _DRIVERSTATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565405">SENDCMDOUTPARAMS</a>
+<a href="..\ntdddisk\ns-ntdddisk--sendcmdoutparams.md">SENDCMDOUTPARAMS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a>
+<a href="storage.smart_send_drive_command">SMART_SEND_DRIVE_COMMAND</a>
 </dt>
 </dl>
 <p> </p>

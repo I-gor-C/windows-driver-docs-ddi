@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The IOCTL_HID_ENABLE_SECURE_READ request enables a secure read for open files of a <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID collection</a>. Only a "trusted" user-mode application (an application with SeTcbPrivilege privileges) can successfully use this request. Kernel-mode drivers have SeTcbPrivilege privileges by default, but user-mode applications do not.</p>
-<p>A client uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541077">IOCTL_HID_DISABLE_SECURE_READ</a> request to cancel an enable secure read request.</p>
+<p>A client uses an <a href="..\hidclass\ni-hidclass-ioctl-hid-disable-secure-read.md">IOCTL_HID_DISABLE_SECURE_READ</a> request to cancel an enable secure read request.</p>
 <p>For information about how to use enable and disable secure read requests to enforce a secure read for a collection, see <a href="NULL">Enforcing a Secure Read For a HID Collection</a>.</p>
 
 
@@ -114,7 +114,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541077">IOCTL_HID_DISABLE_SECURE_READ</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-disable-secure-read.md">IOCTL_HID_DISABLE_SECURE_READ</a>
 </dt>
 </dl>
 <p> </p>

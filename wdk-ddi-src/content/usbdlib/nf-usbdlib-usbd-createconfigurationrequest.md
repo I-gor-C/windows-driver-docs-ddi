@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The  <b>USBD_CreateConfigurationRequest</b> routine has been deprecated. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539029">USBD_CreateConfigurationRequestEx</a> instead.</p>
+<p>The  <b>USBD_CreateConfigurationRequest</b> routine has been deprecated. Use <a href="..\usbdlib\nf-usbdlib-usbd-createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a> instead.</p>
 
 
 ## -syntax
@@ -60,19 +60,19 @@ PURB USBD_CreateConfigurationRequest(
 ### -param <i>ConfigurationDescriptor</i> [in]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff539241">USB_CONFIGURATION_DESCRIPTOR</a> structure that contains the configuration descriptor for the configuration to be selected.</p>
+<p>Pointer to a caller-allocated <a href="..\usbspec\ns-usbspec--usb-configuration-descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> structure that contains the configuration descriptor for the configuration to be selected.</p>
 </dd>
 
 ### -param <i>Siz
     </i> [in, out]
 
 <dd>
-<p>Size of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure.</p>
+<p>Size of the <a href="..\usb\ns-usb--urb.md">URB</a> structure.</p>
 </dd>
 </dl>
 
 ## -returns
-<p><b>USBD_CreateConfigurationRequest</b> allocates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure, formats it for the URB_FUNCTION_SELECT_CONFIGURATION request (select-configuration request), and returns a pointer to the <b>URB</b>. </p>
+<p><b>USBD_CreateConfigurationRequest</b> allocates a <a href="..\usb\ns-usb--urb.md">URB</a> structure, formats it for the URB_FUNCTION_SELECT_CONFIGURATION request (select-configuration request), and returns a pointer to the <b>URB</b>. </p>
 
 ## -remarks
 
@@ -94,7 +94,7 @@ PURB USBD_CreateConfigurationRequest(
 <p>Version</p>
 </th>
 <td width="70%">
-<p>Deprecated. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539029">USBD_CreateConfigurationRequestEx</a> instead.</p>
+<p>Deprecated. Use <a href="..\usbdlib\nf-usbdlib-usbd-createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a> instead.</p>
 </td>
 </tr>
 <tr>
@@ -122,7 +122,7 @@ PURB USBD_CreateConfigurationRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539029">USBD_CreateConfigurationRequestEx</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a>
 </dt>
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 </dl>

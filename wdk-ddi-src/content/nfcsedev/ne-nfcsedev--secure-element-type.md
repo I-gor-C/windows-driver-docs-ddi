@@ -7,7 +7,7 @@ old-location: nfpdrivers\_secure_element_type.htm
 old-project: nfpdrivers
 ms.assetid: 118B63D1-713A-4F8C-B97A-53BB6D0B819E
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: NFCRM_SET_RADIO_STATE, NFCRM_SET_RADIO_STATE, *PNFCRM_SET_RADIO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

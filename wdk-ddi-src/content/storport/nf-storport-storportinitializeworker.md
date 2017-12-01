@@ -83,13 +83,9 @@ ULONG StorPortInitializeWorker(
 <p> </p>
 
 ## -remarks
-<p>The work item context returned in the <i>Worker</i> parameter by <b>StorPortInitializeWorker</b> is used in future calls to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451509">StorPortQueueWorkItem</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/hh451478">StorPortFreeWorker</a>.</p>
+<p>The work item context returned in the <i>Worker</i> parameter by <b>StorPortInitializeWorker</b> is used in future calls to <a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a> or <a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>.</p>
 
-<p>If the miniport uses the work item during IO processing, we recommended that <b>StorPortInitializeWorker</b> be called during the miniport's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> function to ensure that resources are available when needed.</p>
-
-<p>The work item context returned in the <i>Worker</i> parameter by <b>StorPortInitializeWorker</b> is used in future calls to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451509">StorPortQueueWorkItem</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/hh451478">StorPortFreeWorker</a>.</p>
-
-<p>If the miniport uses the work item during IO processing, we recommended that <b>StorPortInitializeWorker</b> be called during the miniport's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> function to ensure that resources are available when needed.</p>
+<p>If the miniport uses the work item during IO processing, we recommended that <b>StorPortInitializeWorker</b> be called during the miniport's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> function to ensure that resources are available when needed.</p>
 
 ## -requirements
 <table>
@@ -134,13 +130,13 @@ ULONG StorPortInitializeWorker(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a>
+<a href="storage.hwstorfindadapter">HwStorFindAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451478">StorPortFreeWorker</a>
+<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451509">StorPortQueueWorkItem</a>
+<a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a>
 </dt>
 </dl>
 <p> </p>

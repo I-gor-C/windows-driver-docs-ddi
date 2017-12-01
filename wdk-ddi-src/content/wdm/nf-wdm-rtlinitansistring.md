@@ -7,7 +7,7 @@ old-location: kernel\rtlinitansistring.htm
 old-project: kernel
 ms.assetid: 7b535ea0-091f-4a1b-bfb7-db3cfabbe846
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlInitAnsiString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ VOID RtlInitAnsiString(
 ### -param <i>DestinationString</i> [out]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a> structure to be initialized.</p>
+<p>A pointer to the <a href="kernel.ansi_string">ANSI_STRING</a> structure to be initialized.</p>
 </dd>
 
 ### -param <i>SourceString</i> [in, optional]
@@ -75,7 +75,7 @@ VOID RtlInitAnsiString(
 ## -remarks
 <p>This routine initializes a counted character string.</p>
 
-<p>The routine copies the <i>SourceString</i> pointer value to the <b>Buffer</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a> structure pointed to by <i>DestinationString</i>. The <b>Length</b> member of this structure is set to the length, in bytes, of the source string, excluding the terminating null. The <b>MaximumLength</b> member of the structure is set to the length, in bytes, of the source string, including the terminating null. If <i>SourceString</i> is <b>NULL</b>, <b>Length</b> and <b>MaximumLength</b> are both set to zero.</p>
+<p>The routine copies the <i>SourceString</i> pointer value to the <b>Buffer</b> member of the <a href="kernel.ansi_string">ANSI_STRING</a> structure pointed to by <i>DestinationString</i>. The <b>Length</b> member of this structure is set to the length, in bytes, of the source string, excluding the terminating null. The <b>MaximumLength</b> member of the structure is set to the length, in bytes, of the source string, including the terminating null. If <i>SourceString</i> is <b>NULL</b>, <b>Length</b> and <b>MaximumLength</b> are both set to zero.</p>
 
 <p><b>RtlInitAnsiString</b> does not alter the source string pointed to by <i>SourceString</i>.</p>
 
@@ -93,49 +93,13 @@ UNICODE_STRING RTL_CONSTANT_STRING(
 );</pre>
 </p>
 
-<p></p><dl>
-<dt><a id="SourceString__in_"></a><a id="sourcestring__in_"></a><a id="SOURCESTRING__IN_"></a><i>SourceString</i> [in]</dt>
-<dd>
+<p></p>
+
 <p>Pointer to a null-terminated string to initialize the counted string with.</p>
-</dd>
-</dl><p>Pointer to a null-terminated string to initialize the counted string with.</p>
 
 <p><b>RTL_CONSTANT_STRING</b> returns either a string structure or Unicode string structure.</p>
 
-<p>The <b>RTL_CONSTANT_STRING</b> macro replaces the <b>RtlInitAnsiString</b>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff561929">RtlInitString</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561934">RtlInitUnicodeString</a> routines when passing a constant string.</p>
-
-<p>You can use <b>RTL_CONSTANT_STRING</b> to initialize global variables.</p>
-
-<p>This routine initializes a counted character string.</p>
-
-<p>The routine copies the <i>SourceString</i> pointer value to the <b>Buffer</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a> structure pointed to by <i>DestinationString</i>. The <b>Length</b> member of this structure is set to the length, in bytes, of the source string, excluding the terminating null. The <b>MaximumLength</b> member of the structure is set to the length, in bytes, of the source string, including the terminating null. If <i>SourceString</i> is <b>NULL</b>, <b>Length</b> and <b>MaximumLength</b> are both set to zero.</p>
-
-<p><b>RtlInitAnsiString</b> does not alter the source string pointed to by <i>SourceString</i>.</p>
-
-<p>Callers of <b>RtlInitAnsiString</b> can be running at IRQL &lt;= DISPATCH_LEVEL if the <i>DestinationString</i> buffer is nonpageable. Usually, callers run at IRQL = PASSIVE_LEVEL because most other <b>Rtl<i>Xxx</i>String</b> routines cannot be called at IRQL &gt; PASSIVE_LEVEL.</p>
-
-<p>The <b>RTL_CONSTANT_STRING</b> macro creates a string or Unicode string structure to hold a counted string.</p>
-
-<p>
-<pre class="syntax">STRING RTL_CONSTANT_STRING(
-  [in]  PCSZ SourceString
-);
-
-UNICODE_STRING RTL_CONSTANT_STRING(
-  [in]  PCWSTR SourceString
-);</pre>
-</p>
-
-<p></p><dl>
-<dt><a id="SourceString__in_"></a><a id="sourcestring__in_"></a><a id="SOURCESTRING__IN_"></a><i>SourceString</i> [in]</dt>
-<dd>
-<p>Pointer to a null-terminated string to initialize the counted string with.</p>
-</dd>
-</dl><p>Pointer to a null-terminated string to initialize the counted string with.</p>
-
-<p><b>RTL_CONSTANT_STRING</b> returns either a string structure or Unicode string structure.</p>
-
-<p>The <b>RTL_CONSTANT_STRING</b> macro replaces the <b>RtlInitAnsiString</b>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff561929">RtlInitString</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561934">RtlInitUnicodeString</a> routines when passing a constant string.</p>
+<p>The <b>RTL_CONSTANT_STRING</b> macro replaces the <b>RtlInitAnsiString</b>, <a href="..\wdm\nf-wdm-rtlinitstring.md">RtlInitString</a>, and <a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a> routines when passing a constant string.</p>
 
 <p>You can use <b>RTL_CONSTANT_STRING</b> to initialize global variables.</p>
 
@@ -202,9 +166,9 @@ UNICODE_STRING RTL_CONSTANT_STRING(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
+<a href="kernel.ansi_string">ANSI_STRING</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlInitAnsiString routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlInitAnsiString routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

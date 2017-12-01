@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetInitiatorNodeName_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565706">SetInitiatorNodeName</a> method.</p>
+<p>The SetInitiatorNodeName_OUT structure holds the output data for the <a href="storage.setinitiatornodename">SetInitiatorNodeName</a> method.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _SetInitiatorNodeName_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output, the status of the <b>SetInitiatorNodeName</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.</p>
+<p>On output, the status of the <b>SetInitiatorNodeName</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 </dd>
 </dl>
 
@@ -81,13 +81,13 @@ typedef struct _SetInitiatorNodeName_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565706">SetInitiatorNodeName</a>
+<a href="storage.setinitiatornodename">SetInitiatorNodeName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565729">SetInitiatorNodeName_IN</a>
+<a href="..\iscsiop\ns-iscsiop--setinitiatornodename-in.md">SetInitiatorNodeName_IN</a>
 </dt>
 </dl>
 <p> </p>

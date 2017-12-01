@@ -85,10 +85,6 @@ void NTKERNELAPI SeTokenSetNoChildProcessRestricted(
     and it is possible to upgrade from audit-only mode to enforcement
     mode but not vice-versa.</p>
 
-<p>Note that both flags cannot be set at the same time
-    and it is possible to upgrade from audit-only mode to enforcement
-    mode but not vice-versa.</p>
-
 ## -requirements
 <table>
 <tr>

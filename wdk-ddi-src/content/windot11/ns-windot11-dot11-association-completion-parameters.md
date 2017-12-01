@@ -7,7 +7,7 @@ old-location: netvista\dot11_association_completion_parameters.htm
 old-project: netvista
 ms.assetid: 770962e3-0339-46f8-a789-7c9bbf9e058f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: windot11.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 8 and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows 8 and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -84,7 +83,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 <dd>
 <p>The type, revision, and size of the DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure. This member
      is formatted as an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.
      </p>
 <p>The miniport driver must set the members of 
      <i>Header</i> to the following values:</p>
@@ -111,7 +110,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 </dd>
 </dl>
 <p>For more information about these members, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.</p>
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
 ### -field <b>MacAddr</b>
@@ -126,7 +125,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 
 <dd>
 <p>The completion status of the association operation, as specified by a value defined for 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>.</p>
+     <a href="netvista.dot11_assoc_status">DOT11_ASSOC_STATUS</a>.</p>
 </dd>
 
 ### -field <b>bReAssocReq</b>
@@ -303,7 +302,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 <p>The authentication algorithm that the 802.11 station resolved with the AP or peer station during
      the association operation. For more information about the data type for the 
      <b>AuthAlgo</b> member, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547655">DOT11_AUTH_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes--dot11-auth-algorithm.md">DOT11_AUTH_ALGORITHM</a>.
      </p>
 <p>The miniport driver must set this member to zero if 
      <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.</p>
@@ -315,7 +314,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 <p>The unicast cipher algorithm that the 802.11 station resolved with the AP or peer station during
      the association operation. For more information about the data type for the 
      <b>UnicastCipher</b> member, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
      </p>
 <p>The miniport driver must set this member to zero if 
      <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.</p>
@@ -327,7 +326,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 <p>The multicast cipher algorithm that the 802.11 station resolved with the AP or peer station during
      the association operation. For more information about the data type for the 
      <b>MulticastCipher</b> member, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
      </p>
 <p>The miniport driver must set this member to zero if 
      <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.</p>
@@ -494,7 +493,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
       DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure. The value of 
       <b>uEncapTableOffset</b> must be aligned on a 4-byte boundary.</p>
 <p>The miniport driver formats each entry in this list as a 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547685">DOT11_ENCAP_ENTRY</a> structure.</p>
+      <a href="..\windot11\ns-windot11-dot11-encap-entry.md">DOT11_ENCAP_ENTRY</a> structure.</p>
 <p>For more information about the EtherType encapsulation list, see 
       <a href="netvista.802_11_payload_encapsulation">802.11 Payload
       Encapsulation</a>.</p>
@@ -570,25 +569,25 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>
+<a href="netvista.dot11_assoc_status">DOT11_ASSOC_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547655">DOT11_AUTH_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes--dot11-auth-algorithm.md">DOT11_AUTH_ALGORITHM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547672">DOT11_CIPHER_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes--dot11-cipher-algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547685">DOT11_ENCAP_ENTRY</a>
+<a href="..\windot11\ns-windot11-dot11-encap-entry.md">DOT11_ENCAP_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548681">DOT11_MAC_ADDRESS</a>
+<a href="..\windot11\ns-windot11--dot11-mac-address.md">DOT11_MAC_ADDRESS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563600">NdisMIndicateStatusEx</a>
+<a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_dot11_association_completion">
@@ -607,4 +606,4 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

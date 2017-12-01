@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DKMT_WORKINGSETINFO structure describes information about the graphics adapter's working set that the OpenGL installable client driver (ICD) obtains by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547100">D3DKMTQueryAdapterInfo</a> function.</p>
+<p>The D3DKMT_WORKINGSETINFO structure describes information about the graphics adapter's working set that the OpenGL installable client driver (ICD) obtains by calling the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a> function.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ typedef struct _D3DKMT_WORKINGSETINFO {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548448">D3DKMT_WORKINGSETFLAGS</a> structure that indicates, in bit-field flags, working-set properties.</p>
+<p>[out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-workingsetflags.md">D3DKMT_WORKINGSETFLAGS</a> structure that indicates, in bit-field flags, working-set properties.</p>
 </dd>
 
 ### -field <b>MinimumWorkingSetPercentile</b>
@@ -103,13 +103,13 @@ typedef struct _D3DKMT_WORKINGSETINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548203">D3DKMT_QUERYADAPTERINFO</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548448">D3DKMT_WORKINGSETFLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-workingsetflags.md">D3DKMT_WORKINGSETFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547100">D3DKMTQueryAdapterInfo</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
 </dt>
 </dl>
 <p> </p>

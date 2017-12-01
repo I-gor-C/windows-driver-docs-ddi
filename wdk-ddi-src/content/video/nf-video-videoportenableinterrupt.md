@@ -69,19 +69,7 @@ VP_STATUS VideoPortEnableInterrupt(
 ## -remarks
 <p>If you need to disable interrupts for the display adapter, write hardware-specific code to prevent the display adapter from generating interrupts. To subsequently enable interrupts, write hardware-specific code to allow the display adapter to resume generating interrupts.</p>
 
-<p>You should not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff570294">VideoPortDisableInterrupt</a> or <b>VideoPortEnableInterrupt</b> for the following reasons:</p>
-
-<p>Can disable interrupts for other devices that share an interrupt vector with the display adapter.</p>
-
-<p>Disables interrupts only on the processor where the current thread is running. On a multiprocessor computer, the display adapter can still interrupt another processor.</p>
-
-<p>On a multiprocessor machine, a call to <b>VideoPortEnableInterrupt</b> might run on a different processor than the previous corresponding call to <b>VideoPortDisableInterrupt</b>. In that case, interrupts will remain disabled for the processor on which <b>VideoPortDisableInterrupt</b> ran.</p>
-
-<p>If the video miniport driver has not registered an <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> routine for the display adapter, <b>VideoPortEnableInterrupt</b> returns ERROR_INVALID_FUNCTION. </p>
-
-<p>If you need to disable interrupts for the display adapter, write hardware-specific code to prevent the display adapter from generating interrupts. To subsequently enable interrupts, write hardware-specific code to allow the display adapter to resume generating interrupts.</p>
-
-<p>You should not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff570294">VideoPortDisableInterrupt</a> or <b>VideoPortEnableInterrupt</b> for the following reasons:</p>
+<p>You should not call <a href="..\video\nf-video-videoportdisableinterrupt.md">VideoPortDisableInterrupt</a> or <b>VideoPortEnableInterrupt</b> for the following reasons:</p>
 
 <p>Can disable interrupts for other devices that share an interrupt vector with the display adapter.</p>
 
@@ -160,10 +148,10 @@ VP_STATUS VideoPortEnableInterrupt(
 <a href="..\video\nc-video-pminiport-synchronize-routine.md">HwVidSynchronizeExecutionCallback</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570505">VIDEO_HW_INITIALIZATION_DATA</a>
+<a href="..\video\ns-video--video-hw-initialization-data.md">VIDEO_HW_INITIALIZATION_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570294">VideoPortDisableInterrupt</a>
+<a href="..\video\nf-video-videoportdisableinterrupt.md">VideoPortDisableInterrupt</a>
 </dt>
 </dl>
 <p> </p>

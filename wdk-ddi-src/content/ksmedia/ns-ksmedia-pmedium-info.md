@@ -7,7 +7,7 @@ old-location: stream\medium_info.htm
 old-project: stream
 ms.assetid: 1dd7415d-bfbc-4dea-bac9-bc5b8531a47f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PMEDIUM_INFO, MEDIUM_INFO, *PMEDIUM_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

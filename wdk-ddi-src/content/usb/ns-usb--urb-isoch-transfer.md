@@ -69,7 +69,7 @@ struct _URB_ISOCH_TRANSFER {
 ### -field <b>Hdr</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_ISOCH_TRANSFER, and <b>Hdr.Length</b> must be the size of this variable-length data structure.</p>
+<p>A pointer to a <a href="buses._urb_header">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_ISOCH_TRANSFER, and <b>Hdr.Length</b> must be the size of this variable-length data structure.</p>
 </dd>
 
 ### -field <b>PipeHandle</b>
@@ -178,7 +178,7 @@ struct _URB_ISOCH_TRANSFER {
 ### -field <b>IsoPacket</b>
 
 <dd>
-<p>Contains a variable-length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539084">USBD_ISO_PACKET_DESCRIPTOR</a> structures that describe the isochronous transfer packets to be transferred on the USB bus.  For more information about this member see the Remarks section.</p>
+<p>Contains a variable-length array of <a href="..\usb\ns-usb--usbd-iso-packet-descriptor.md">USBD_ISO_PACKET_DESCRIPTOR</a> structures that describe the isochronous transfer packets to be transferred on the USB bus.  For more information about this member see the Remarks section.</p>
 </dd>
 </dl>
 
@@ -201,10 +201,8 @@ struct _URB_ISOCH_TRANSFER {
 
 <p>Indicates that one of the URB parameters was incorrect. </p>
 
-<p> </p>
-
-<p>Before the host controller sends an isochronous request to a USB device, it requires information about the device's endpoint to which it must send or receive data. This information is stored in endpoint descriptors (<a href="https://msdn.microsoft.com/library/windows/hardware/ff539317">USB_ENDPOINT_DESCRIPTOR</a>) that are retrieved from the selected configuration descriptor. 
-After the bus driver gets the endpoint descriptor, it creates an isochronous transfer pipe to set up the data transfer. The pipe's attributes are stored in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539114">USBD_PIPE_INFORMATION</a> structure. For isochronous transfers, the members are set as follows:<ul>
+<p>Before the host controller sends an isochronous request to a USB device, it requires information about the device's endpoint to which it must send or receive data. This information is stored in endpoint descriptors (<a href="..\usbspec\ns-usbspec--usb-endpoint-descriptor.md">USB_ENDPOINT_DESCRIPTOR</a>) that are retrieved from the selected configuration descriptor. 
+After the bus driver gets the endpoint descriptor, it creates an isochronous transfer pipe to set up the data transfer. The pipe's attributes are stored in the <a href="..\usb\ns-usb--usbd-pipe-information.md">USBD_PIPE_INFORMATION</a> structure. For isochronous transfers, the members are set as follows:<ul>
 <li>The  <b>PipeType</b> member specifies the type of transfer and is set to UsbdPipeTypeIsochronous.</li>
 <li>The <b>MaximumPacketSize</b> member specifies the amount of data, in bytes, that constitutes one packet. For isochronous transfers, the packet size is fixed and can be a value from 0-1024. The packet size either equals or is less than the <b>wMaxPacketSize</b> value of the endpoint descriptor.</li>
 <li>The <b>Interval</b> member is derived from the <b>bInterval</b> value of the endpoint descriptor. This value is used to calculate the polling period that indicates the frequency at which data is sent on the bus. For full speed devices, the period is measured in units of 1 millisecond frames; for high speed devices, the period is measured in microframes.</li>
@@ -216,7 +214,7 @@ After the bus driver gets the endpoint descriptor, it creates an isochronous tra
 If bits <b>12.. 11</b> are set to <i>n</i>,  you can transfer <code>(n+1)*MaximumPacketSize</code> bytes per microframe. Bits <b>12.. 11</b> set to zero indicate that only one packet can be transferred in a microframe. If bits <b>12.. 11</b> are set to 1,  the host controller can transfer two packets in a microframe.</p>
 
 <p>
-The <b>IsoPacket</b> member of <b>_URB_ISOCH_TRANSFER</b> is an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539084">USBD_ISO_PACKET_DESCRIPTOR</a> that describes the transfer buffer layout. Each element in the array correlates to data that is transferred in one microframe. If <b>IsoPacket</b> has <i>n</i> elements,  the host controller transfers use <i>n</i> frames (for full speed devices) or microframes (for high speed devices) to transfer data. The <b>IsoPacket[</b>i<b>].Offset</b> member is used to track the amount of data to send or receive. This is done  by setting a byte offset from the start of the entire transfer buffer for the request. </p>
+The <b>IsoPacket</b> member of <b>_URB_ISOCH_TRANSFER</b> is an array of <a href="..\usb\ns-usb--usbd-iso-packet-descriptor.md">USBD_ISO_PACKET_DESCRIPTOR</a> that describes the transfer buffer layout. Each element in the array correlates to data that is transferred in one microframe. If <b>IsoPacket</b> has <i>n</i> elements,  the host controller transfers use <i>n</i> frames (for full speed devices) or microframes (for high speed devices) to transfer data. The <b>IsoPacket[</b>i<b>].Offset</b> member is used to track the amount of data to send or receive. This is done  by setting a byte offset from the start of the entire transfer buffer for the request. </p>
 
 <p>For example, there are five microframes available to transfer 1024 byte-sized packets.</p>
 
@@ -234,8 +232,6 @@ The <b>IsoPacket</b> member of <b>_URB_ISOCH_TRANSFER</b> is an array of <a href
 
 <p>If bits <b>12.. 11</b> are set to 1 (indicating two packets per microframe),  <b>IsoPacket</b> contains the following entries:</p>
 
-<p>Microframe 1<code> IsoPacket.Element[0].Offset = 0</code> (start address) </p>
-
 <p>Microframe 2<code> IsoPacket.Element[1].Offset = 2048</code></p>
 
 <p>Microframe 3<code> IsoPacket.Element[2].Offset = 4096</code></p>
@@ -248,7 +244,7 @@ The <b>IsoPacket</b> member of <b>_URB_ISOCH_TRANSFER</b> is an array of <a href
 
 <p>The <b>IsoPacket[</b>i<b>].Length</b> member is updated by the host controller to indicate the actual number of bytes  that are received from the device for isochronous IN transfers. <b>IsoPacket[</b>i<b>].Length</b> is not used for isochronous OUT transfers.</p>
 
-<p>Drivers can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537144">GET_ISO_URB_SIZE</a> macro to determine the size that is needed to hold the entire URB. If the length is too small to fill the space set aside for this packet, the bus driver leaves a gap from the end of the retrieved data to the offset for the next packet. The bus driver will not adjust the offsets to avoid wasting buffer space. </p>
+<p>Drivers can use the <a href="..\usbdlib\nf-usbdlib-get-iso-urb-size.md">GET_ISO_URB_SIZE</a> macro to determine the size that is needed to hold the entire URB. If the length is too small to fill the space set aside for this packet, the bus driver leaves a gap from the end of the retrieved data to the offset for the next packet. The bus driver will not adjust the offsets to avoid wasting buffer space. </p>
 
 <p>The <b>TransferBuffer</b> or <b>TransferBufferMDL</b> members must specify a virtually contiguous buffer.</p>
 
@@ -271,22 +267,22 @@ The <b>IsoPacket</b> member of <b>_URB_ISOCH_TRANSFER</b> is an array of <a href
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406231">USBD_IsochUrbAllocate</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-isochurballocate.md">USBD_IsochUrbAllocate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539084">USBD_ISO_PACKET_DESCRIPTOR</a>
+<a href="..\usb\ns-usb--usbd-iso-packet-descriptor.md">USBD_ISO_PACKET_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
+<a href="..\usb\ns-usb--urb.md">URB</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a>
+<a href="buses._urb_header">_URB_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406225">How to Transfer Data to USB Isochronous Endpoints</a>
+<a href="buses.transfer_data_to_isochronous_endpoints">How to Transfer Data to USB Isochronous Endpoints</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

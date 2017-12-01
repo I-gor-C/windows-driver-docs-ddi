@@ -7,7 +7,7 @@ old-location: netvista\ril_getuiccservicelock.htm
 old-project: netvista
 ms.assetid: cebef749-f7f1-4a33-81fd-1d42da7afafe
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetUiccServiceLock
 ms.prod: windows-hardware
 ms.technology: windows-devices

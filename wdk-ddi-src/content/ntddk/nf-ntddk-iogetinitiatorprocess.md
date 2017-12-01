@@ -7,7 +7,7 @@ old-location: kernel\iogetinitiatorprocess.htm
 old-project: kernel
 ms.assetid: 653B4FD5-4C07-420A-BE8A-CC8C46BC6F0F
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoGetInitiatorProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,8 +65,6 @@ PEPROCESS WINAPI IoGetInitiatorProcess(
 <p>NULL if there is no initiator process. Otherwise, a pointer to which process initiated the creation of the file object.</p>
 
 ## -remarks
-<p>A driver normally uses IoGetInitiatorProcess to determine which process has issued a request.  However, there are situations where a system component may issue a create on behalf of another process (after a successful create the component will duplicate the handle to the process).  This routine can be used if the driver must know which process the create operation is ultimately intended for. </p>
-
 <p>A driver normally uses IoGetInitiatorProcess to determine which process has issued a request.  However, there are situations where a system component may issue a create on behalf of another process (after a successful create the component will duplicate the handle to the process).  This routine can be used if the driver must know which process the create operation is ultimately intended for. </p>
 
 ## -requirements

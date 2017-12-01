@@ -7,7 +7,7 @@ old-location: netvista\riluiccappinfo.htm
 old-project: netvista
 ms.assetid: b3a688fe-928c-458e-ac47-59a9ae61bc5e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCAPPINFO, RILUICCAPPINFO, *LPRILUICCAPPINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

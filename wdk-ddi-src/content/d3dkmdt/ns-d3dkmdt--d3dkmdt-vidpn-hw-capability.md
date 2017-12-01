@@ -88,7 +88,7 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 
 <dd>
 <p>A UINT value that describes the capability of the display miniport driver to display a color-convert bit-block transfer (bitblt).</p>
-<p>If set to a nonzero value, the driver uses software or the system-supplied graphics engine to generate the color-convert bitblt and then uses display pipeline hardware to display the color-converted image. For example, if the display pipeline hardware cannot color-convert from an 8-bit palletized surface format (defined by the D3DDDIFMT_P8 value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration), the driver can use the graphics engine to perform a color-convert bitblt from the D3DDDIFMT_ P8 format to the D3DDDIFMT_R8G8B8 format and then render the new D3DDDIFMT_R8G8B8 image using the display pipeline hardware.</p>
+<p>If set to a nonzero value, the driver uses software or the system-supplied graphics engine to generate the color-convert bitblt and then uses display pipeline hardware to display the color-converted image. For example, if the display pipeline hardware cannot color-convert from an 8-bit palletized surface format (defined by the D3DDDIFMT_P8 value of the <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> enumeration), the driver can use the graphics engine to perform a color-convert bitblt from the D3DDDIFMT_ P8 format to the D3DDDIFMT_R8G8B8 format and then render the new D3DDDIFMT_R8G8B8 image using the display pipeline hardware.</p>
 <p>If set to 0, the driver uses display pipeline hardware to directly generate the color-converted image.</p>
 </dd>
 
@@ -118,16 +118,9 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 ## -remarks
 <p>The following definitions of terms are used in this topic.</p>
 
-<p></p><dl>
-<dt><a id="display_pipeline_hardware"></a><a id="DISPLAY_PIPELINE_HARDWARE"></a><b>display pipeline hardware</b></dt>
-<dd>
+<p></p>
+
 <p>Describes the components on the display device that generate the video signal from the image.</p>
-</dd>
-<dt><a id="GPU_graphics_rendering_pipeline"></a><a id="gpu_graphics_rendering_pipeline"></a><a id="GPU_GRAPHICS_RENDERING_PIPELINE"></a><b>GPU graphics rendering pipeline</b></dt>
-<dd>
-<p>Describes the components on the display device that perform 3-D image rendering.</p>
-</dd>
-</dl><p>Describes the components on the display device that generate the video signal from the image.</p>
 
 <p>Describes the components on the display device that perform 3-D image rendering.</p>
 
@@ -156,7 +149,7 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 </dl>
 <p> </p>

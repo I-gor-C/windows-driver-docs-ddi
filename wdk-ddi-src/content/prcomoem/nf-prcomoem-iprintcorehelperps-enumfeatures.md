@@ -102,7 +102,7 @@ STDMETHOD EnumFeatures(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551987">IPrintCoreHelperPS::EnumOptions</a>
+<a href="print.iprintcorehelperps_enumoptions">IPrintCoreHelperPS::EnumOptions</a>
 </dt>
 </dl>
 <p> </p>

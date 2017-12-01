@@ -79,13 +79,13 @@ typedef struct _DXVAHDDDI_STREAM_STATE_ALPHA_DATA {
 
 <p>Ap = per-plane alpha value [0.0, 1.0]</p>
 
-<p>Ae = per-entry palette alpha value [0.0, 1.0] or 1.0 if the driver did not set the DXVAHDDDI_FEATURE_CAPS_ALPHA_PALETTE value in the <b>FeatureCaps</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563113">DXVAHDDDI_VPDEVCAPS</a> structure when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPDEVCAPS value set.</p>
+<p>Ae = per-entry palette alpha value [0.0, 1.0] or 1.0 if the driver did not set the DXVAHDDDI_FEATURE_CAPS_ALPHA_PALETTE value in the <b>FeatureCaps</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPDEVCAPS value set.</p>
 
 <p>Cd = Cs * (As * Ap * Ae) + Cd * (1.0 - As * Ap * Ae)</p>
 
 <p>Ad = per-pixel destination alpha value [0.0, 1.0]</p>
 
-<p>The Ad parameter is set with values from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562974">DXVAHDDDI_ALPHA_FILL_MODE</a> enumeration.</p>
+<p>The Ad parameter is set with values from the <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-alpha-fill-mode.md">DXVAHDDDI_ALPHA_FILL_MODE</a> enumeration.</p>
 
 ## -requirements
 <table>
@@ -112,7 +112,7 @@ typedef struct _DXVAHDDDI_STREAM_STATE_ALPHA_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562974">DXVAHDDDI_ALPHA_FILL_MODE</a>
+<a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-alpha-fill-mode.md">DXVAHDDDI_ALPHA_FILL_MODE</a>
 </dt>
 </dl>
 <p> </p>

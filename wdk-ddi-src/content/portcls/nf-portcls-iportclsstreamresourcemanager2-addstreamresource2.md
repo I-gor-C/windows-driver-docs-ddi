@@ -7,7 +7,7 @@ old-location: audio\iportclsstreamresourcemanager2_addstreamresource2.htm
 old-project: audio
 ms.assetid: C140D11C-41D6-4812-AD95-990CBFA06FE8
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IPortClsStreamResourceManager2, AddStreamResource2, IPortClsStreamResourceManager2::AddStreamResource2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS  AddStreamResource2(
 ### -param <i>PhysicalDeviceObject</i> [in]
 
 <dd>
-<p>Pointer to the device object. The device object is a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.</p>
+<p>Pointer to the device object. The device object is a system structure of type <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>.</p>
 </dd>
 
 ### -param <i>ResourceSet</i> [in]
@@ -73,7 +73,7 @@ NTSTATUS  AddStreamResource2(
 ### -param <i>ResourceDescriptor</i> [in]
 
 <dd>
-<p>PPCSTREAMRESOURCE_DESCRIPTOR - The resource to add. For more information see, <a href="https://msdn.microsoft.com/library/windows/hardware/mt298191">PCSTREAMRESOURCE_DESCRIPTOR</a>. 
+<p>PPCSTREAMRESOURCE_DESCRIPTOR - The resource to add. For more information see, <a href="..\portcls\ns-portcls--pcstreamresource-descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>. 
 </p>
 </dd>
 
@@ -154,15 +154,15 @@ NTSTATUS  AddStreamResource2(
 <a href="audio.iportclsstreamresourcemanager_removestreamresource">RemoveStreamResource</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt298191">PCSTREAMRESOURCE_DESCRIPTOR</a>
+<a href="..\portcls\ns-portcls--pcstreamresource-descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt270106">IPortClsStreamResourceManager</a>
+<a href="..\portcls\nn-portcls-iportclsstreamresourcemanager.md">IPortClsStreamResourceManager</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt604862">IPortClsStreamResourceManager2</a>
+<a href="..\portcls\nn-portcls-iportclsstreamresourcemanager2.md">IPortClsStreamResourceManager2</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IPortClsStreamResourceManager2::AddStreamResource2 method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IPortClsStreamResourceManager2::AddStreamResource2 method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -66,13 +66,13 @@ HRESULT _stdcall wiasUpdateValidFormat(
 ### -param <i>pContext</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure containing a property context.</p>
+<p>Pointer to a <a href="..\wiamindr_lh\ns-wiamindr-lh--wia-property-context.md">WIA_PROPERTY_CONTEXT</a> structure containing a property context.</p>
 </dd>
 
 ### -param <i>pIMiniDrv</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545027">IWiaMiniDrv Interface</a> of the current minidriver.</p>
+<p>Pointer to the <a href="image.iwiaminidrv_interface">IWiaMiniDrv Interface</a> of the current minidriver.</p>
 </dd>
 </dl>
 
@@ -137,7 +137,7 @@ HRESULT _stdcall wiasUpdateValidFormat(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--wia-property-context.md">WIA_PROPERTY_CONTEXT</a>
 </dt>
 </dl>
 <p> </p>

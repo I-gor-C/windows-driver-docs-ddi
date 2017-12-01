@@ -7,7 +7,7 @@ old-location: netvista\dot11_offload_network_status_parameters.htm
 old-project: netvista
 ms.assetid: 4A911BFF-5515-4E51-953D-86CECA123DA0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

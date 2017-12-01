@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DXGK_MONITOR_INTERFACE_V2 structure, available beginning with Windows 7, contains pointers to functions that belong to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568433">Monitor Interface</a>, which is implemented by the video present network (VidPN) manager.</p>
+<p>The DXGK_MONITOR_INTERFACE_V2 structure, available beginning with Windows 7, contains pointers to functions that belong to the <a href="display.monitor_interface">Monitor Interface</a>, which is implemented by the video present network (VidPN) manager.</p>
 
 
 ## -syntax
@@ -63,7 +63,7 @@ typedef struct _DXGK_MONITOR_INTERFACE_V2 {
 ### -field <b>Version</b>
 
 <dd>
-<p>A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561979">DXGK_MONITOR_INTERFACE_VERSION</a> enumeration that indicates the monitor interface version. Must be set to 2.</p>
+<p>A value from the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-monitor-interface-version.md">DXGK_MONITOR_INTERFACE_VERSION</a> enumeration that indicates the monitor interface version. Must be set to 2.</p>
 </dd>
 
 ### -field <b>pfnAcquireMonitorSourceModeSet</b>
@@ -133,7 +133,7 @@ typedef struct _DXGK_MONITOR_INTERFACE_V2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561949">DXGK_MONITOR_INTERFACE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface.md">DXGK_MONITOR_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

@@ -65,7 +65,7 @@ typedef struct _ROOTHUB_30PORT_INFO_EX {
 ### -field <b>Info</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188029">ROOTHUB_30PORT_INFO</a> structure.</p>
+<p>A <a href="buses._roothub_30port_info">ROOTHUB_30PORT_INFO</a> structure.</p>
 </dd>
 
 ### -field <b>MaxSpeedsCount</b>

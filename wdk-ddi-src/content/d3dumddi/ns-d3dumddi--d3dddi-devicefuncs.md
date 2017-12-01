@@ -328,7 +328,7 @@ typedef struct _D3DDDI_DEVICEFUNCS {
 ### -field <b>pfnClear</b>
 
 <dd>
-<p>A pointer to the driver <a href="https://msdn.microsoft.com/library/windows/hardware/hh406339">Clear</a> function that performs hardware-assisted clearing on the rendering target, depth buffer, or stencil buffer.</p>
+<p>A pointer to the driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-clear.md">Clear</a> function that performs hardware-assisted clearing on the rendering target, depth buffer, or stencil buffer.</p>
 </dd>
 
 ### -field <b>pfnUpdatePalette</b>
@@ -406,7 +406,7 @@ typedef struct _D3DDDI_DEVICEFUNCS {
 ### -field <b>pfnGetInfo</b>
 
 <dd>
-<p>A pointer to the driver <a href="https://msdn.microsoft.com/library/windows/hardware/hh451309">GetInfo</a> function that retrieves information about the device.</p>
+<p>A pointer to the driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getinfo.md">GetInfo</a> function that retrieves information about the device.</p>
 </dd>
 
 ### -field <b>pfnLock</b>
@@ -448,7 +448,7 @@ typedef struct _D3DDDI_DEVICEFUNCS {
 ### -field <b>pfnFlush</b>
 
 <dd>
-<p>A pointer to the user-mode display driver <a href="https://msdn.microsoft.com/library/windows/hardware/hh463886">Flush</a> function that submits outstanding hardware commands that are in the hardware command buffer to the display miniport driver.</p>
+<p>A pointer to the user-mode display driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-flush.md">Flush</a> function that submits outstanding hardware commands that are in the hardware command buffer to the display miniport driver.</p>
 </dd>
 
 ### -field <b>pfnCreateVertexShaderFunc</b>
@@ -832,7 +832,7 @@ typedef struct _D3DDDI_DEVICEFUNCS {
 ### -field <b>pfnDestroyVideoProcessor</b>
 
 <dd>
-<p>A pointer to the driver <a href="https://msdn.microsoft.com/library/windows/hardware/hh451638">DestroyVideoProcessor</a> function that releases resources for a previously created video processor. </p>
+<p>A pointer to the driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-destroyvideoprocessor.md">DestroyVideoProcessor</a> function that releases resources for a previously created video processor. </p>
 </dd>
 
 ### -field <b>pfnCreateAuthenticatedChannel</b>
@@ -862,13 +862,13 @@ typedef struct _D3DDDI_DEVICEFUNCS {
 ### -field <b>pfnDestroyAuthenticatedChannel</b>
 
 <dd>
-<p>A pointer to the driver <a href="https://msdn.microsoft.com/library/windows/hardware/hh451630">DestroyAuthenticatedChannel</a> function that releases resources for an authenticated channel. </p>
+<p>A pointer to the driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroyauthenticatedchannel.md">DestroyAuthenticatedChannel</a> function that releases resources for an authenticated channel. </p>
 </dd>
 
 ### -field <b>pfnCreateCryptoSession</b>
 
 <dd>
-<p>A pointer to the driver <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function that creates an encryption session. </p>
+<p>A pointer to the driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a> function that creates an encryption session. </p>
 </dd>
 
 ### -field <b>pfnCryptoSessionKeyExchange</b>
@@ -880,7 +880,7 @@ typedef struct _D3DDDI_DEVICEFUNCS {
 ### -field <b>pfnDestroyCryptoSession</b>
 
 <dd>
-<p>A pointer to the driver <a href="https://msdn.microsoft.com/library/windows/hardware/hh451632">DestroyCryptoSession</a> function that releases resources for an encryption session. </p>
+<p>A pointer to the driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroycryptosession.md">DestroyCryptoSession</a> function that releases resources for an encryption session. </p>
 </dd>
 
 ### -field <b>pfnEncryptionBlt</b>
@@ -898,19 +898,19 @@ typedef struct _D3DDDI_DEVICEFUNCS {
 ### -field <b>pfnStartSessionKeyRefresh</b>
 
 <dd>
-<p>A pointer to the driver <a href="https://msdn.microsoft.com/library/windows/hardware/hh451696">StartSessionKeyRefresh</a> function that sets the current video session to protected mode. </p>
+<p>A pointer to the driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-startsessionkeyrefresh.md">StartSessionKeyRefresh</a> function that sets the current video session to protected mode. </p>
 </dd>
 
 ### -field <b>pfnFinishSessionKeyRefresh</b>
 
 <dd>
-<p>A pointer to the driver <a href="https://msdn.microsoft.com/library/windows/hardware/hh451648">FinishSessionKeyRefresh</a> function that sets the current video session to unprotected mode. </p>
+<p>A pointer to the driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-finishsessionkeyrefresh.md">FinishSessionKeyRefresh</a> function that sets the current video session to unprotected mode. </p>
 </dd>
 
 ### -field <b>pfnGetEncryptionBltKey</b>
 
 <dd>
-<p>A pointer to the driver <a href="https://msdn.microsoft.com/library/windows/hardware/hh451660">GetEncryptionBltKey</a> function that retrieves the key of an encrypted bitblt session. </p>
+<p>A pointer to the driver <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getencryptionbltkey.md">GetEncryptionBltKey</a> function that retrieves the key of an encrypted bitblt session. </p>
 </dd>
 
 ### -field <b>pfnDecryptionBlt</b>
@@ -1090,7 +1090,7 @@ typedef struct _D3DDDI_DEVICEFUNCS {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createdevice.md">CreateDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542931">D3DDDIARG_CREATEDEVICE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createdevice.md">D3DDDIARG_CREATEDEVICE</a>
 </dt>
 </dl>
 <p> </p>

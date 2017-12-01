@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_device_service_supported_commands.htm
 old-project: netvista
 ms.assetid: 5F619FBF-4152-447E-B228-D4147687E929
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, *PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -97,7 +97,7 @@ typedef struct _NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS {
 </table>
 <p> </p>
 <p>For more information about these members, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.</p>
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>.</p>
 </dd>
 
 ### -field <b>uStatus</b>

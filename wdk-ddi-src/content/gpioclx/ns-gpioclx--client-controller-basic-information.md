@@ -111,9 +111,9 @@ typedef struct _CLIENT_CONTROLLER_BASIC_INFORMATION {
 
 <p>A GPIO controller driver can partition the pins in a GPIO controller device into some number of banks. If N is the number of banks in the controller, the banks are numbered 0 to N–1. All except the last bank (that is, bank number N–1) must contain the number of pins specified in the <b>NumberOfPinsPerBank</b> member. The last bank can have any number of pins from one to <b>NumberOfPinsPerBank</b>.</p>
 
-<p>GpioClx determines the total number of banks in the GPIO controller from the values of the <b>TotalPins</b> and <b>NumberOfPinsPerBank</b> members. GpioClx uses the following integer formula to calculate the total number of banks:</p><dl>
-<dd>(<b>TotalPins</b> + <b>NumberOfPinsPerBank </b>– 1) / <b>NumberOfPinsPerBank</b></dd>
-</dl><p>Typically, a bank in a GPIO controller device can be turned on and off independently of the other banks in the same device. Thus, power can be saved by turning off a bank that is idle.</p>
+<p>GpioClx determines the total number of banks in the GPIO controller from the values of the <b>TotalPins</b> and <b>NumberOfPinsPerBank</b> members. GpioClx uses the following integer formula to calculate the total number of banks:</p>
+
+<p>Typically, a bank in a GPIO controller device can be turned on and off independently of the other banks in the same device. Thus, power can be saved by turning off a bank that is idle.</p>
 
 ## -requirements
 <table>

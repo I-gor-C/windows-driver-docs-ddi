@@ -61,13 +61,13 @@ NTSTATUS APIENTRY pfnAcquireFirstDescriptorInfo(
 ### -param <i>hMonitorDescriptorSet</i> [in]
 
 <dd>
-<p>[in] A handle to a monitor descriptor set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-getmonitordescriptorset.md">pfnGetMonitorDescriptorSet</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568433">Monitor interface</a>.</p>
+<p>[in] A handle to a monitor descriptor set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-getmonitordescriptorset.md">pfnGetMonitorDescriptorSet</a> function of the <a href="display.monitor_interface">Monitor interface</a>.</p>
 </dd>
 
 ### -param <i>ppFirstMonitorDescriptorInfo</i> [out]
 
 <dd>
-<p>[out] A pointer to a variable that receives a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546087">D3DKMDT_MONITOR_DESCRIPTOR</a> structure. The structure is the first descriptor in the set.</p>
+<p>[out] A pointer to a variable that receives a pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-monitor-descriptor.md">D3DKMDT_MONITOR_DESCRIPTOR</a> structure. The structure is the first descriptor in the set.</p>
 </dd>
 </dl>
 
@@ -85,10 +85,6 @@ NTSTATUS APIENTRY pfnAcquireFirstDescriptorInfo(
 <p> </p>
 
 ## -remarks
-<p>When you have finished using the D3DKMDT_MONITOR_DESCRIPTOR structure, you must release the structure by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitordescriptorset-releasedescriptorinfo.md">pfnReleaseDescriptorInfo</a>.</p>
-
-<p>You can obtain all the descriptors in a monitor descriptor set by calling <b>pfnAcquireFirstDescriptorInfo</b> and then making a sequence of calls to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitordescriptorset-acquirenextdescriptorinfo.md">pfnAcquireNextDescriptorInfo</a>.</p>
-
 <p>When you have finished using the D3DKMDT_MONITOR_DESCRIPTOR structure, you must release the structure by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitordescriptorset-releasedescriptorinfo.md">pfnReleaseDescriptorInfo</a>.</p>
 
 <p>You can obtain all the descriptors in a monitor descriptor set by calling <b>pfnAcquireFirstDescriptorInfo</b> and then making a sequence of calls to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitordescriptorset-acquirenextdescriptorinfo.md">pfnAcquireNextDescriptorInfo</a>.</p>

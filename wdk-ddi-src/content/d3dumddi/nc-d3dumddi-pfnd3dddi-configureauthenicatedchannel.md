@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY ConfigureAuthenticatedChannel(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542913">D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL</a> structure that describes how to configure an authenticated channel. This structure contains an input buffer that describes how to configure the authenticated channel and an output buffer with configuration information. </p>
+<p> A pointer to a <a href="display.d3dddiarg_configureauthenticatedchannel">D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL</a> structure that describes how to configure an authenticated channel. This structure contains an input buffer that describes how to configure the authenticated channel and an output buffer with configuration information. </p>
 </dd>
 </dl>
 
@@ -92,45 +92,15 @@ __checkReturn HRESULT APIENTRY ConfigureAuthenticatedChannel(
 
 <p><b>ConfigureAuthenticatedChannel</b> performs different operations depending on each of following GUIDs that is specified in the input structure. The driver should fail if the input buffer size does not match the size that is defined for the specified GUID. </p>
 
-<p></p><dl>
-<dt><a id="D3DAUTHETICATEDCONFIGURE_INITIALIZE"></a><a id="d3dautheticatedconfigure_initialize"></a>D3DAUTHETICATEDCONFIGURE_INITIALIZE</dt>
-<dd>
+<p></p>
+
 <p>The driver initializes the sequence numbers for the query and the configuration calls. This command can only be sent once per authenticated channel. The driver's <b>ConfigureAuthenticatedChannel</b> function with D3DAUTHETICATEDCONFIGURE_INITIALIZE set should fail if it is called multiple times. The driver can ignore the input sequence number. </p>
-<p>This configuration can be made for all channel types. </p>
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGUREINITIALIZE structure. </p>
-</dd>
-<dt><a id="D3DAUTHETICATEDCONFIGURE_PROTECTION"></a><a id="d3dautheticatedconfigure_protection"></a>D3DAUTHETICATEDCONFIGURE_PROTECTION</dt>
-<dd>
-<p>The driver enables or disables protection for a device. </p>
-<p>This configuration can be made for all channel types. </p>
-<p>The driver should not allow protections that are set by one authenticated channel to be disabled by a different authenticated channel. </p>
-<p>If an application specified the <b>OverlayOrFullscreenRequired</b> protection, the driver should prevent the protected content from ever being rendered to a swap chain unless the protected content is either an overlay swap chain or unless the swapchain is using full-screen flipping mode.</p>
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION  structure.</p>
-</dd>
-<dt><a id="D3DAUTHETICATEDCONFIGURE_CRYPTOSESSION"></a><a id="d3dautheticatedconfigure_cryptosession"></a>D3DAUTHETICATEDCONFIGURE_CRYPTOSESSION</dt>
-<dd>
-<p>The driver associates a crypto session with a DirectX Video Acceleration (VA) decode device and a display device. The runtime can later query this crypto session to determine which outputs are associated with the crypto session. For more information about associating a crypto session with a DirectX VA decode device, see <a href="https://msdn.microsoft.com/2a3577f5-bc44-4e0d-a5fa-217dc6c6f5f3">Using Crypto Session with DirectX Video Accelerator 2.0 Decoder</a>.</p>
-<p>The driver's <b>ConfigureAuthenticatedChannel</b> function with D3DAUTHETICATEDCONFIGURE_CRYPTOSESSION set should fail if the display device that is specified is not the same device that is used to create the authenticated channel, the crypto session, or the DirectX VA decode device. </p>
-<p>This configuration can be made for all channel types. </p>
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGURECRYPTOSESSION structure. </p>
-</dd>
-<dt><a id="D3DAUTHETICATEDCONFIGURE_SHAREDRESOURCE"></a><a id="d3dautheticatedconfigure_sharedresource"></a>D3DAUTHETICATEDCONFIGURE_SHAREDRESOURCE</dt>
-<dd>
-<p>The driver adds and removes processes that can open the shared resources that were created with restricted access. The Desktop Windows Manager (DWM) process is identified by type rather than by process handle because other applications cannot obtain a process handle to the DWM process. </p>
-<p>This configuration can only be made for channel type D3DDDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE. </p>
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGURESHAREDRESOURCE structure. </p>
-</dd>
-<dt><a id="D3DAUTHENTICATEDCONFIGURE_ENCRYPTIONWHENACCESIBLE"></a><a id="d3dauthenticatedconfigure_encryptionwhenaccesible"></a>D3DAUTHENTICATEDCONFIGURE_ENCRYPTIONWHENACCESIBLE</dt>
-<dd></dd>
-</dl><p>The driver initializes the sequence numbers for the query and the configuration calls. This command can only be sent once per authenticated channel. The driver's <b>ConfigureAuthenticatedChannel</b> function with D3DAUTHETICATEDCONFIGURE_INITIALIZE set should fail if it is called multiple times. The driver can ignore the input sequence number. </p>
 
 <p>This configuration can be made for all channel types. </p>
 
 <p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGUREINITIALIZE structure. </p>
 
 <p>The driver enables or disables protection for a device. </p>
-
-<p>This configuration can be made for all channel types. </p>
 
 <p>The driver should not allow protections that are set by one authenticated channel to be disabled by a different authenticated channel. </p>
 
@@ -141,78 +111,6 @@ __checkReturn HRESULT APIENTRY ConfigureAuthenticatedChannel(
 <p>The driver associates a crypto session with a DirectX Video Acceleration (VA) decode device and a display device. The runtime can later query this crypto session to determine which outputs are associated with the crypto session. For more information about associating a crypto session with a DirectX VA decode device, see <a href="https://msdn.microsoft.com/2a3577f5-bc44-4e0d-a5fa-217dc6c6f5f3">Using Crypto Session with DirectX Video Accelerator 2.0 Decoder</a>.</p>
 
 <p>The driver's <b>ConfigureAuthenticatedChannel</b> function with D3DAUTHETICATEDCONFIGURE_CRYPTOSESSION set should fail if the display device that is specified is not the same device that is used to create the authenticated channel, the crypto session, or the DirectX VA decode device. </p>
-
-<p>This configuration can be made for all channel types. </p>
-
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGURECRYPTOSESSION structure. </p>
-
-<p>The driver adds and removes processes that can open the shared resources that were created with restricted access. The Desktop Windows Manager (DWM) process is identified by type rather than by process handle because other applications cannot obtain a process handle to the DWM process. </p>
-
-<p>This configuration can only be made for channel type D3DDDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE. </p>
-
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGURESHAREDRESOURCE structure. </p>
-
-<p>The input buffer contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) that the driver must authenticate. The input buffer also contains the driver's handle to the authenticated channel, a sequence number, and a GUID that indicates the configuration type.</p>
-
-<p>The driver should fail <b>ConfigureAuthenticatedChannel</b> if the input OMAC does not match, if the sequence number is not greater than a sequence number that was specified in a previous call, or if the sequence number has not yet been initialized (the exception to this last rule is for the initialization call itself). </p>
-
-<p>The driver should duplicate the input data in the structure of the output buffer and should sign the output structure identically to how it currently handles <a href="https://msdn.microsoft.com/2c138dbd-55ca-4c71-8c8b-b2efd1ca80f2">Output Protection Manager</a> (OPM) queries.</p>
-
-<p>Except for those situations in which the application incorrectly specifies an output buffer that is too small, the driver should always place the return code in the output structure. Therefore, the application has a secure mechanism to determine the return code. </p>
-
-<p><b>ConfigureAuthenticatedChannel</b> performs different operations depending on each of following GUIDs that is specified in the input structure. The driver should fail if the input buffer size does not match the size that is defined for the specified GUID. </p>
-
-<p></p><dl>
-<dt><a id="D3DAUTHETICATEDCONFIGURE_INITIALIZE"></a><a id="d3dautheticatedconfigure_initialize"></a>D3DAUTHETICATEDCONFIGURE_INITIALIZE</dt>
-<dd>
-<p>The driver initializes the sequence numbers for the query and the configuration calls. This command can only be sent once per authenticated channel. The driver's <b>ConfigureAuthenticatedChannel</b> function with D3DAUTHETICATEDCONFIGURE_INITIALIZE set should fail if it is called multiple times. The driver can ignore the input sequence number. </p>
-<p>This configuration can be made for all channel types. </p>
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGUREINITIALIZE structure. </p>
-</dd>
-<dt><a id="D3DAUTHETICATEDCONFIGURE_PROTECTION"></a><a id="d3dautheticatedconfigure_protection"></a>D3DAUTHETICATEDCONFIGURE_PROTECTION</dt>
-<dd>
-<p>The driver enables or disables protection for a device. </p>
-<p>This configuration can be made for all channel types. </p>
-<p>The driver should not allow protections that are set by one authenticated channel to be disabled by a different authenticated channel. </p>
-<p>If an application specified the <b>OverlayOrFullscreenRequired</b> protection, the driver should prevent the protected content from ever being rendered to a swap chain unless the protected content is either an overlay swap chain or unless the swapchain is using full-screen flipping mode.</p>
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION  structure.</p>
-</dd>
-<dt><a id="D3DAUTHETICATEDCONFIGURE_CRYPTOSESSION"></a><a id="d3dautheticatedconfigure_cryptosession"></a>D3DAUTHETICATEDCONFIGURE_CRYPTOSESSION</dt>
-<dd>
-<p>The driver associates a crypto session with a DirectX Video Acceleration (VA) decode device and a display device. The runtime can later query this crypto session to determine which outputs are associated with the crypto session. For more information about associating a crypto session with a DirectX VA decode device, see <a href="https://msdn.microsoft.com/2a3577f5-bc44-4e0d-a5fa-217dc6c6f5f3">Using Crypto Session with DirectX Video Accelerator 2.0 Decoder</a>.</p>
-<p>The driver's <b>ConfigureAuthenticatedChannel</b> function with D3DAUTHETICATEDCONFIGURE_CRYPTOSESSION set should fail if the display device that is specified is not the same device that is used to create the authenticated channel, the crypto session, or the DirectX VA decode device. </p>
-<p>This configuration can be made for all channel types. </p>
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGURECRYPTOSESSION structure. </p>
-</dd>
-<dt><a id="D3DAUTHETICATEDCONFIGURE_SHAREDRESOURCE"></a><a id="d3dautheticatedconfigure_sharedresource"></a>D3DAUTHETICATEDCONFIGURE_SHAREDRESOURCE</dt>
-<dd>
-<p>The driver adds and removes processes that can open the shared resources that were created with restricted access. The Desktop Windows Manager (DWM) process is identified by type rather than by process handle because other applications cannot obtain a process handle to the DWM process. </p>
-<p>This configuration can only be made for channel type D3DDDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE. </p>
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGURESHAREDRESOURCE structure. </p>
-</dd>
-<dt><a id="D3DAUTHENTICATEDCONFIGURE_ENCRYPTIONWHENACCESIBLE"></a><a id="d3dauthenticatedconfigure_encryptionwhenaccesible"></a>D3DAUTHENTICATEDCONFIGURE_ENCRYPTIONWHENACCESIBLE</dt>
-<dd></dd>
-</dl><p>The driver initializes the sequence numbers for the query and the configuration calls. This command can only be sent once per authenticated channel. The driver's <b>ConfigureAuthenticatedChannel</b> function with D3DAUTHETICATEDCONFIGURE_INITIALIZE set should fail if it is called multiple times. The driver can ignore the input sequence number. </p>
-
-<p>This configuration can be made for all channel types. </p>
-
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGUREINITIALIZE structure. </p>
-
-<p>The driver enables or disables protection for a device. </p>
-
-<p>This configuration can be made for all channel types. </p>
-
-<p>The driver should not allow protections that are set by one authenticated channel to be disabled by a different authenticated channel. </p>
-
-<p>If an application specified the <b>OverlayOrFullscreenRequired</b> protection, the driver should prevent the protected content from ever being rendered to a swap chain unless the protected content is either an overlay swap chain or unless the swapchain is using full-screen flipping mode.</p>
-
-<p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION  structure.</p>
-
-<p>The driver associates a crypto session with a DirectX Video Acceleration (VA) decode device and a display device. The runtime can later query this crypto session to determine which outputs are associated with the crypto session. For more information about associating a crypto session with a DirectX VA decode device, see <a href="https://msdn.microsoft.com/2a3577f5-bc44-4e0d-a5fa-217dc6c6f5f3">Using Crypto Session with DirectX Video Accelerator 2.0 Decoder</a>.</p>
-
-<p>The driver's <b>ConfigureAuthenticatedChannel</b> function with D3DAUTHETICATEDCONFIGURE_CRYPTOSESSION set should fail if the display device that is specified is not the same device that is used to create the authenticated channel, the crypto session, or the DirectX VA decode device. </p>
-
-<p>This configuration can be made for all channel types. </p>
 
 <p>The input buffer points to a D3DAUTHENTICATEDCHANNEL_CONFIGURECRYPTOSESSION structure. </p>
 
@@ -257,7 +155,7 @@ __checkReturn HRESULT APIENTRY ConfigureAuthenticatedChannel(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542913">D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL</a>
+<a href="display.d3dddiarg_configureauthenticatedchannel">D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL</a>
 </dt>
 </dl>
 <p> </p>

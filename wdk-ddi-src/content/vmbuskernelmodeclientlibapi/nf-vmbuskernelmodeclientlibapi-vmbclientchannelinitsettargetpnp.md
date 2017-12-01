@@ -7,7 +7,7 @@ old-location: netvista\vmbclientchannelinitsettargetpnp.htm
 old-project: netvista
 ms.assetid: 5525FD48-BE65-48CA-B3D5-C96AFD4ECF56
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbClientChannelInitSetTargetPnp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -102,10 +102,6 @@ located.</p>
 <p> </p>
 
 ## -remarks
-<p>If you 
-have two paravirtual network interfaces, they will have the 
-same <i>InterfaceType</i> but different <i>InterfaceInstance</i> values. </p>
-
 <p>If you 
 have two paravirtual network interfaces, they will have the 
 same <i>InterfaceType</i> but different <i>InterfaceInstance</i> values. </p>

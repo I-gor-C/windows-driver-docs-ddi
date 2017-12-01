@@ -91,8 +91,6 @@ HRESULT RemoveItemFromFolder(
 ## -remarks
 <p>After the item has been removed from the folder, it can no longer be used for device access.</p>
 
-<p>After the item has been removed from the folder, it can no longer be used for device access.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -128,7 +126,7 @@ HRESULT RemoveItemFromFolder(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543856">IWiaDrvItem::AddItemToFolder</a>
+<a href="image.iwiadrvitem_additemtofolder">IWiaDrvItem::AddItemToFolder</a>
 </dt>
 </dl>
 <p> </p>

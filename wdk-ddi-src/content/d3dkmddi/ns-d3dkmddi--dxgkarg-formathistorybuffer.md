@@ -63,7 +63,7 @@ typedef struct _DXGKARG_FORMATHISTORYBUFFER {
 ### -field <b>pHistoryBuffer</b>
 
 <dd>
-<p>A pointer to the unformatted <a href="https://msdn.microsoft.com/library/windows/hardware/dn439361">DXGK_HISTORY_BUFFER</a> history buffer that was populated by the GPU.</p>
+<p>A pointer to the unformatted <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-history-buffer.md">DXGK_HISTORY_BUFFER</a> history buffer that was populated by the GPU.</p>
 </dd>
 
 ### -field <b>HistoryBufferSize</b>
@@ -95,8 +95,8 @@ typedef struct _DXGKARG_FORMATHISTORYBUFFER {
 ### -field <b>Precision</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn439359">DXGKARG_HISTORYBUFFERPRECISION</a> structure that the driver fills with info on the precision of the time stamps that will be logged to the Event Tracing for Windows (ETW) facility.</p>
-<p>The value of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn439359">DXGKARG_HISTORYBUFFERPRECISION</a>.<b>PrecisionBits</b> member cannot be zero.</p>
+<p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a> structure that the driver fills with info on the precision of the time stamps that will be logged to the Event Tracing for Windows (ETW) facility.</p>
+<p>The value of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a>.<b>PrecisionBits</b> member cannot be zero.</p>
 </dd>
 
 ### -field <b>Offset</b>
@@ -151,10 +151,10 @@ typedef struct _DXGKARG_FORMATHISTORYBUFFER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn439361">DXGK_HISTORY_BUFFER</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-history-buffer.md">DXGK_HISTORY_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn439359">DXGKARG_HISTORYBUFFERPRECISION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a>
 </dt>
 <dt>
 <a href="display.dxgkddiformathistorybuffer">DxgkDdiFormatHistoryBuffer</a>

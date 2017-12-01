@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>ScsiPortWmiSetInstanceCount</b> specifies the number of instances for which data buffers must be set aside within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a> structure in the request context. </p>
+<p>The <b>ScsiPortWmiSetInstanceCount</b> specifies the number of instances for which data buffers must be set aside within the <a href="kernel.wnode_all_data">WNODE_ALL_DATA</a> structure in the request context. </p>
 
 
 ## -syntax
@@ -61,7 +61,7 @@ BOOLEAN ScsiPortWmiSetInstanceCount(
 ### -param <i>RequestContext</i> [in]
 
 <dd>
-<p>Pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff564946">SCSIWMI_REQUEST_CONTEXT</a> that contains the request context for a WMI SRB. </p>
+<p>Pointer to a structure of type <a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a> that contains the request context for a WMI SRB. </p>
 </dd>
 
 ### -param <i>InstanceCount</i> [in]
@@ -73,7 +73,7 @@ BOOLEAN ScsiPortWmiSetInstanceCount(
 ### -param <i>BufferAvail</i> [out]
 
 <dd>
-<p>Contains, on return, the number of bytes of buffer space available for describing instance names and data. The value that is returned in this member can be passed to routines <a href="https://msdn.microsoft.com/library/windows/hardware/ff564799">ScsiPortWmiSetData</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff564810">ScsiPortWmiSetInstanceName</a> in the <i>BufferAvail </i>parameter of those routines. </p>
+<p>Contains, on return, the number of bytes of buffer space available for describing instance names and data. The value that is returned in this member can be passed to routines <a href="..\scsiwmi\nf-scsiwmi-scsiportwmisetdata.md">ScsiPortWmiSetData</a> and <a href="..\scsiwmi\nf-scsiwmi-scsiportwmisetinstancename.md">ScsiPortWmiSetInstanceName</a> in the <i>BufferAvail </i>parameter of those routines. </p>
 <p>The <b>ScsiPortWmiSetInstanceCount</b> routine initializes an array of pointers to data buffers, with one array element for each instance. If there is not enough memory available in the WNODE to initialize an array of size <i>InstanceCount</i>, a zero will be returned in this member. </p>
 </dd>
 
@@ -85,22 +85,14 @@ BOOLEAN ScsiPortWmiSetInstanceCount(
 </dl>
 
 ## -returns
-<p>The <b>ScsiPortWmiSetInstanceCount</b> routine returns <b>TRUE</b> if the operation succeeds and <b>FALSE</b> if the WNODE contained within the request context is not of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a>.</p>
+<p>The <b>ScsiPortWmiSetInstanceCount</b> routine returns <b>TRUE</b> if the operation succeeds and <b>FALSE</b> if the WNODE contained within the request context is not of type <a href="kernel.wnode_all_data">WNODE_ALL_DATA</a>.</p>
 
 ## -remarks
-<p>The minidriver must call <b>ScsiPortWmiSetInstanceCount</b> before calling either <a href="https://msdn.microsoft.com/library/windows/hardware/ff564799">ScsiPortWmiSetData</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff564810">ScsiPortWmiSetInstanceName</a>. The minidriver should only call <b>ScsiPortWmiSetInstanceCount</b> once. </p>
+<p>The minidriver must call <b>ScsiPortWmiSetInstanceCount</b> before calling either <a href="..\scsiwmi\nf-scsiwmi-scsiportwmisetdata.md">ScsiPortWmiSetData</a> or <a href="..\scsiwmi\nf-scsiwmi-scsiportwmisetinstancename.md">ScsiPortWmiSetInstanceName</a>. The minidriver should only call <b>ScsiPortWmiSetInstanceCount</b> once. </p>
 
-<p>The parameter <b>RequestContext</b> points to a request context structure, <a href="https://msdn.microsoft.com/library/windows/hardware/ff564946">SCSIWMI_REQUEST_CONTEXT</a>, that contains information associated with a <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a> (WMI) SCSI request block (SRB). The request context structure, in turn, contains one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566371">WMI WNODE_XXX Structures</a> used by the WMI system to pass data between user-mode data consumers and kernel-mode data providers such as drivers. </p>
+<p>The parameter <b>RequestContext</b> points to a request context structure, <a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a>, that contains information associated with a <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a> (WMI) SCSI request block (SRB). The request context structure, in turn, contains one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566371">WMI WNODE_XXX Structures</a> used by the WMI system to pass data between user-mode data consumers and kernel-mode data providers such as drivers. </p>
 
-<p>The <b>ScsiPortWmiSetInstanceCount</b> routine requires the WNODE structure that is defined within the request context to be of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a>. This is because <b>ScsiPortWmiSetInstanceCount</b> sets aside a data area that will hold information for multiple instances associated with a WMI data block. Unlike the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a> structure which contains information about a single instance, the WNODE_ALL_DATA structure contains an array of pointers to buffer areas for different instances, and <b>ScsiPortWmiSetInstanceCount</b> initializes this array, so that each buffer of instance data can be accessed individually using an instance index.</p>
-
-<p>The memory allocated for the request context must remain valid until after the miniport driver calls <b>ScsiPortWmiPostProcess</b>, and <b>ScsiPortWmiPostProcess</b> returns the final SRB status and buffer size. If the SRB can pend, the memory for the request context should be allocated from the SRB extension. If the SRB cannot pend, the memory can be allocated from a stack frame that does not go out of scope.</p>
-
-<p>The minidriver must call <b>ScsiPortWmiSetInstanceCount</b> before calling either <a href="https://msdn.microsoft.com/library/windows/hardware/ff564799">ScsiPortWmiSetData</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff564810">ScsiPortWmiSetInstanceName</a>. The minidriver should only call <b>ScsiPortWmiSetInstanceCount</b> once. </p>
-
-<p>The parameter <b>RequestContext</b> points to a request context structure, <a href="https://msdn.microsoft.com/library/windows/hardware/ff564946">SCSIWMI_REQUEST_CONTEXT</a>, that contains information associated with a <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a> (WMI) SCSI request block (SRB). The request context structure, in turn, contains one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566371">WMI WNODE_XXX Structures</a> used by the WMI system to pass data between user-mode data consumers and kernel-mode data providers such as drivers. </p>
-
-<p>The <b>ScsiPortWmiSetInstanceCount</b> routine requires the WNODE structure that is defined within the request context to be of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a>. This is because <b>ScsiPortWmiSetInstanceCount</b> sets aside a data area that will hold information for multiple instances associated with a WMI data block. Unlike the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a> structure which contains information about a single instance, the WNODE_ALL_DATA structure contains an array of pointers to buffer areas for different instances, and <b>ScsiPortWmiSetInstanceCount</b> initializes this array, so that each buffer of instance data can be accessed individually using an instance index.</p>
+<p>The <b>ScsiPortWmiSetInstanceCount</b> routine requires the WNODE structure that is defined within the request context to be of type <a href="kernel.wnode_all_data">WNODE_ALL_DATA</a>. This is because <b>ScsiPortWmiSetInstanceCount</b> sets aside a data area that will hold information for multiple instances associated with a WMI data block. Unlike the <a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a> structure which contains information about a single instance, the WNODE_ALL_DATA structure contains an array of pointers to buffer areas for different instances, and <b>ScsiPortWmiSetInstanceCount</b> initializes this array, so that each buffer of instance data can be accessed individually using an instance index.</p>
 
 <p>The memory allocated for the request context must remain valid until after the miniport driver calls <b>ScsiPortWmiPostProcess</b>, and <b>ScsiPortWmiPostProcess</b> returns the final SRB status and buffer size. If the SRB can pend, the memory for the request context should be allocated from the SRB extension. If the SRB cannot pend, the memory can be allocated from a stack frame that does not go out of scope.</p>
 
@@ -131,13 +123,13 @@ BOOLEAN ScsiPortWmiSetInstanceCount(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564946">SCSIWMI_REQUEST_CONTEXT</a>
+<a href="storage.scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a>
+<a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a>
+<a href="kernel.wnode_all_data">WNODE_ALL_DATA</a>
 </dt>
 </dl>
 <p> </p>

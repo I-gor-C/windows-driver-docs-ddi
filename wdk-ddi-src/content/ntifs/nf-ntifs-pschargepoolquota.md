@@ -93,12 +93,6 @@ VOID PsChargePoolQuota(
 
 <p>For more information about memory management, see <a href="https://msdn.microsoft.com/e030a37c-26ab-4177-9980-4336928975e1">Memory Management</a>. </p>
 
-<p>If insufficient quota exists for the process, quota is not charged, and <b>PsChargePoolQuota</b> raises an exception with the status value STATUS_QUOTA_EXCEEDED. Callers are responsible for handling this exception. Thus calls to <b>PsChargePoolQuota</b> must be wrapped within a driver-supplied exception handler.</p>
-
-<p>Every successful call to <b>PsChargePoolQuota</b> must be matched by a subsequent call to <b>PsReturnPoolQuota</b>.</p>
-
-<p>For more information about memory management, see <a href="https://msdn.microsoft.com/e030a37c-26ab-4177-9980-4336928975e1">Memory Management</a>. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -154,7 +148,7 @@ VOID PsChargePoolQuota(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551936">PsReturnPoolQuota</a>
+<a href="..\ntifs\nf-ntifs-psreturnpoolquota.md">PsReturnPoolQuota</a>
 </dt>
 </dl>
 <p> </p>

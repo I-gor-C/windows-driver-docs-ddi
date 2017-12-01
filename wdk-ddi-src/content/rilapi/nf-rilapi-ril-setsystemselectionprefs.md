@@ -7,7 +7,7 @@ old-location: netvista\ril_setsystemselectionprefs.htm
 old-project: netvista
 ms.assetid: 57384690-9fe0-4fee-a578-5451e57cfc6b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SetSystemSelectionPrefs
 ms.prod: windows-hardware
 ms.technology: windows-devices

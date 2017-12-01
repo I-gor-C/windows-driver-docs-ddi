@@ -7,7 +7,7 @@ old-location: debugger\getfieldnamewide.htm
 old-project: debugger
 ms.assetid: e27c6af5-c9fa-4fe6-ad39-82ea59a0f27b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols3, GetFieldNameWide, IDebugSymbols3::GetFieldNameWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -106,8 +106,6 @@ HRESULT GetFieldNameWide(
 <p> </p>
 
 ## -remarks
-<p>For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
-
 <p>For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
 
 ## -requirements

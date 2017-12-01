@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -70,13 +69,7 @@ VOID AtaPortStallExecution(
 
 <p>Typically, a miniport driver should call <b>AtaPortStallExecution</b> only if the driver must wait for some sort of state change on the HBA that is unable to cause an interrupt, or if the driver must delay for a very short interval between accesses to the HBA.</p>
 
-<p>Miniport drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550227">AtaPortRequestTimer</a> routine for delays longer than 1 millisecond.</p>
-
-<p>Miniport drivers should rarely call the <b>AtaPortStallExecution</b> routine. The total stall time in any miniport driver routine must always be less than one millisecond. Because this call ties up a processor, the processor does no useful work while it stalls in the driver.</p>
-
-<p>Typically, a miniport driver should call <b>AtaPortStallExecution</b> only if the driver must wait for some sort of state change on the HBA that is unable to cause an interrupt, or if the driver must delay for a very short interval between accesses to the HBA.</p>
-
-<p>Miniport drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550227">AtaPortRequestTimer</a> routine for delays longer than 1 millisecond.</p>
+<p>Miniport drivers should use the <a href="..\irb\nf-irb-ataportrequesttimer.md">AtaPortRequestTimer</a> routine for delays longer than 1 millisecond.</p>
 
 ## -requirements
 <table>
@@ -116,7 +109,7 @@ VOID AtaPortStallExecution(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550227">AtaPortRequestTimer</a>
+<a href="..\irb\nf-irb-ataportrequesttimer.md">AtaPortRequestTimer</a>
 </dt>
 </dl>
 <p> </p>

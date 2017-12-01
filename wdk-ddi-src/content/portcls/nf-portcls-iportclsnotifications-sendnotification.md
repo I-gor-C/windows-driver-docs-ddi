@@ -7,7 +7,7 @@ old-location: audio\iportclsnotifications_sendnotification.htm
 old-project: audio
 ms.assetid: 0683C30D-0AAD-4859-BA30-908FA747CC35
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: IPortClsNotifications, SendNotification, IPortClsNotifications::SendNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -81,14 +81,6 @@ The expected format of the payload is a <a href="..\ksmedia\ns-ksmedia--ksaudiom
 
 <p>For more information about audio modules, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/audio/implementing-audio-module-communication">Implementing Audio Module Discovery</a>. </p>
 
-<p>Pointer to the PCNOTIFICATION structure to send to Audio Module clients.
-
-The expected format of the payload is a <a href="..\ksmedia\ns-ksmedia--ksaudiomodule-notification.md">KSAUDIOMODULE_NOTIFICATION</a> structure. The miniport driver can optionally send additional information immediately following the <b>KSAUDIOMODULE_NOTIFICATION</b> structure that will be untouched and sent to the Audio Module clients.
-
-</p>
-
-<p>For more information about audio modules, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/audio/implementing-audio-module-communication">Implementing Audio Module Discovery</a>. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -142,9 +134,9 @@ The expected format of the payload is a <a href="..\ksmedia\ns-ksmedia--ksaudiom
 ## -see-also
 <dl>
 <dt>
-<a href="audio.iportclsnotifications">IPortClsNotifications</a>
+<a href="..\portcls\nn-portcls-iportclsnotifications.md">IPortClsNotifications</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IPortClsNotifications::SendNotification method%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20IPortClsNotifications::SendNotification method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

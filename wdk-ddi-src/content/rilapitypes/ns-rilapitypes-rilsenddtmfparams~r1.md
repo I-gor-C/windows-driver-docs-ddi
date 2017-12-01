@@ -7,7 +7,7 @@ old-location: netvista\rilsenddtmfparams_2.htm
 old-project: netvista
 ms.assetid: 0e8c8fa7-35e8-429c-b6e5-c01aba3c6746
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSENDDTMFPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

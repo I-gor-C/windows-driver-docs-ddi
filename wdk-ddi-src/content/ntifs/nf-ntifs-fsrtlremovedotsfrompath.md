@@ -85,12 +85,6 @@ NTSTATUS FsRtlRemoveDotsFromPath(
 
 <p>The routine will fail with STATUS_IO_REPARSE_DATA_INVALID if any of the following strings are passed as <i>OriginalString</i>:</p>
 
-<p>This routine would take a path as <i>OriginalString</i> like the following example:</p>
-
-<p>The routine would modify <i>OriginalString</i> as follows:</p>
-
-<p>The routine will fail with STATUS_IO_REPARSE_DATA_INVALID if any of the following strings are passed as <i>OriginalString</i>:</p>
-
 ## -requirements
 <table>
 <tr>

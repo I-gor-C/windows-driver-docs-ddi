@@ -91,7 +91,7 @@ typedef struct _D3DKMT_OPENRESOURCE {
 ### -field <b>pOpenAllocationInfo</b>
 
 <dd>
-<p>[in/out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544599">D3DDDI_OPENALLOCATIONINFO</a> structures that describe each allocation to update.</p>
+<p>[in/out] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structures that describe each allocation to update.</p>
 </dd>
 
 ### -field <b>pOpenAllocationInfo2</b>
@@ -172,10 +172,10 @@ typedef struct _D3DKMT_OPENRESOURCE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544599">D3DDDI_OPENALLOCATIONINFO</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547065">D3DKMTOpenResource</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenresource.md">D3DKMTOpenResource</a>
 </dt>
 </dl>
 <p> </p>

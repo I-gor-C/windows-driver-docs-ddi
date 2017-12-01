@@ -139,9 +139,9 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>This structure provides additional members, beyond those in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560989">DXGK_BRIGHTNESS_INTERFACE</a> interface, that point to driver-implemented functions that control, measure, and optimize display panel brightness and allow smooth brightness control.</p>
+<p>This structure provides additional members, beyond those in the <a href="display.dxgk_brightness_interface">DXGK_BRIGHTNESS_INTERFACE</a> interface, that point to driver-implemented functions that control, measure, and optimize display panel brightness and allow smooth brightness control.</p>
 
-<p>For more information on this interface, see <a href="https://msdn.microsoft.com/library/windows/hardware/jj647485">Brightness Control Interface V. 2 (Adaptive and Smooth Brightness Control)</a>.</p>
+<p>For more information on this interface, see <a href="display.brightness_control_interface_v__2__adaptive_and_smooth_brightness_control_">Brightness Control Interface V. 2 (Adaptive and Smooth Brightness Control)</a>.</p>
 
 ## -requirements
 <table>
@@ -176,7 +176,7 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560989">DXGK_BRIGHTNESS_INTERFACE</a>
+<a href="display.dxgk_brightness_interface">DXGK_BRIGHTNESS_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

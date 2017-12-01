@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetFC3MgmtInfo_IN structure is used to deliver input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565657">SetFC3MgmtInfo</a> WMI method.</p>
+<p>The SetFC3MgmtInfo_IN structure is used to deliver input parameter data to the <a href="storage.setfc3mgmtinfo">SetFC3MgmtInfo</a> WMI method.</p>
 
 
 ## -syntax
@@ -57,12 +57,12 @@ typedef struct _SetFC3MgmtInfo_IN {
 ### -field <b>MgmtInfo</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556032">HBAFC3MgmtInfo</a> that holds FC3 management information that will be used to configure the fibre channel adapter. </p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafc3mgmtinfo.md">HBAFC3MgmtInfo</a> that holds FC3 management information that will be used to configure the fibre channel adapter. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the SetFC3MgmtInfo_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the SetFC3MgmtInfo_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -81,7 +81,7 @@ typedef struct _SetFC3MgmtInfo_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565657">SetFC3MgmtInfo</a>
+<a href="storage.setfc3mgmtinfo">SetFC3MgmtInfo</a>
 </dt>
 </dl>
 <p> </p>

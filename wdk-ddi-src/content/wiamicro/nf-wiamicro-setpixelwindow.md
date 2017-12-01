@@ -62,7 +62,7 @@ WIAMICRO_API HRESULT SetPixelWindow(
 ### -param <i>pScanInfo</i> [in, out]
 
 <dd>
-<p>Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547361">SCANINFO</a> structure that represents the current state of the device. This is stored by the WIA Flatbed driver to guarantee synchronized settings between the microdriver and the WIA Flatbed driver.</p>
+<p>Points to a <a href="..\wiamicro\ns-wiamicro--scaninfo.md">SCANINFO</a> structure that represents the current state of the device. This is stored by the WIA Flatbed driver to guarantee synchronized settings between the microdriver and the WIA Flatbed driver.</p>
 </dd>
 
 ### -param <i>x</i> 
@@ -94,9 +94,7 @@ WIAMICRO_API HRESULT SetPixelWindow(
 <p>If the function succeeds, it returns S_OK. If the function fails, it returns a standard COM error code.</p>
 
 ## -remarks
-<p>In this function, the microdriver should set up the <b>Window</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547361">SCANINFO</a> structure, making any device-specific adjustments that are necessary. </p>
-
-<p>In this function, the microdriver should set up the <b>Window</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547361">SCANINFO</a> structure, making any device-specific adjustments that are necessary. </p>
+<p>In this function, the microdriver should set up the <b>Window</b> member of the <a href="..\wiamicro\ns-wiamicro--scaninfo.md">SCANINFO</a> structure, making any device-specific adjustments that are necessary. </p>
 
 ## -requirements
 <table>
@@ -133,10 +131,10 @@ WIAMICRO_API HRESULT SetPixelWindow(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547361">SCANINFO</a>
+<a href="..\wiamicro\ns-wiamicro--scaninfo.md">SCANINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552722">WIA Microdriver Structures</a>
+<a href="image.wia_microdriver_structures">WIA Microdriver Structures</a>
 </dt>
 </dl>
 <p> </p>

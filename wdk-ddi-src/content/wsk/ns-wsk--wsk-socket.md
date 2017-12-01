@@ -7,7 +7,7 @@ old-location: netvista\wsk_socket.htm
 old-project: netvista
 ms.assetid: dce4a087-a14b-400b-bdc1-944c1d4d492a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WSK_SOCKET, WSK_SOCKET, *PWSK_SOCKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -135,14 +134,14 @@ typedef struct _WSK_SOCKET {
     of the following ways:</p>
 
 <p>The WSK application calls the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a> function to create a socket.</p>
+      <a href="..\wsk\nc-wsk-pfn-wsk-socket.md">WskSocket</a> function to create a socket.</p>
 
 <p>The WSK application calls the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a> function to create,
+      <a href="..\wsk\nc-wsk-pfn-wsk-socket-connect.md">WskSocketConnect</a> function to create,
       bind, and connect a connection-oriented socket.</p>
 
 <p>The WSK application calls the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571109">WskAccept</a> function to accept an incoming
+      <a href="..\wsk\nc-wsk-pfn-wsk-accept.md">WskAccept</a> function to accept an incoming
       connection-oriented socket on a listening socket.</p>
 
 <p>The WSK subsystem calls the WSK application's 
@@ -154,7 +153,7 @@ typedef struct _WSK_SOCKET {
     socket's functions.</p>
 
 <p>The WSK subsystem frees the memory for the WSK_SOCKET structure when the WSK application calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a> function to close the
+    <a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a> function to close the
     socket.</p>
 
 ## -requirements
@@ -183,22 +182,22 @@ typedef struct _WSK_SOCKET {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571109">WskAccept</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-accept.md">WskAccept</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-socket.md">WskSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-socket-connect.md">WskSocketConnect</a>
 </dt>
 <dt>
 <a href="..\wsk\nc-wsk-pfn-wsk-accept-event.md">WskAcceptEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571171">WSK_PROVIDER_BASIC_DISPATCH</a>
+<a href="..\wsk\ns-wsk--wsk-provider-basic-dispatch.md">WSK_PROVIDER_BASIC_DISPATCH</a>
 </dt>
 <dt>
 <a href="..\wsk\ns-wsk--wsk-provider-connection-dispatch.md">
@@ -209,7 +208,7 @@ typedef struct _WSK_SOCKET {
    WSK_PROVIDER_DATAGRAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571176">WSK_PROVIDER_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk--wsk-provider-listen-dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
 </dt>
 <dt>
 <a href="..\wsk\ns-wsk--wsk-provider-stream-dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
@@ -217,4 +216,4 @@ typedef struct _WSK_SOCKET {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_SOCKET structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_SOCKET structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

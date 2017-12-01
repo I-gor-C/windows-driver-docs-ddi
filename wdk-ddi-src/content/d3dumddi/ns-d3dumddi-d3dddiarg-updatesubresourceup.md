@@ -75,7 +75,7 @@ typedef struct D3DDDIARG_UPDATESUBRESOURCEUP {
 ### -field <b>DstBox</b>
 
 <dd>
-<p>A destination region, of type  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451148">D3DDDIBOX</a>, of the subresource to which data is to be copied. If <b>Flags</b>-&gt;<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-copyflags.md">BoxValid</a> is not set, the entire subresource must be updated.</p>
+<p>A destination region, of type  <a href="..\d3dumddi\ns-d3dumddi--d3dddibox.md">D3DDDIBOX</a>, of the subresource to which data is to be copied. If <b>Flags</b>-&gt;<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-copyflags.md">BoxValid</a> is not set, the entire subresource must be updated.</p>
 </dd>
 
 ### -field <b>pSysMemUP</b>
@@ -99,7 +99,7 @@ typedef struct D3DDDIARG_UPDATESUBRESOURCEUP {
 ### -field <b>Flags</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn449151">D3DDDIARG_COPYFLAGS</a> structure that specifies additional characteristics of the subresource update operation.</p>
+<p>A <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-copyflags.md">D3DDDIARG_COPYFLAGS</a> structure that specifies additional characteristics of the subresource update operation.</p>
 </dd>
 </dl>
 
@@ -139,10 +139,10 @@ typedef struct D3DDDIARG_UPDATESUBRESOURCEUP {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn449151">D3DDDIARG_COPYFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-copyflags.md">D3DDDIARG_COPYFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451148">D3DDDIBOX</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddibox.md">D3DDDIBOX</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-updatesubresourceup.md">pfnUpdateSubresourceUP</a>

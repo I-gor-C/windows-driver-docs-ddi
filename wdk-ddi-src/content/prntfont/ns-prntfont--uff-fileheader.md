@@ -84,7 +84,7 @@ typedef struct _UFF_FILEHEADER {
 ### -field <b>nFonts</b>
 
 <dd>
-<p>Specifies the number of fonts specified within the .uff file and identified by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547364">DATA_HEADER</a> structures. This is also the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff562866">UFF_FONTDIRECTORY</a> structures within the .uff file.</p>
+<p>Specifies the number of fonts specified within the .uff file and identified by <a href="..\prntfont\ns-prntfont--data-header.md">DATA_HEADER</a> structures. This is also the number of <a href="..\prntfont\ns-prntfont--uff-fontdirectory.md">UFF_FONTDIRECTORY</a> structures within the .uff file.</p>
 </dd>
 
 ### -field <b>nGlyphSets</b>
@@ -102,7 +102,7 @@ typedef struct _UFF_FILEHEADER {
 ### -field <b>offFontDir</b>
 
 <dd>
-<p>Specifies the offset, in bytes, from the beginning of the .uff file to the beginning of the first <a href="https://msdn.microsoft.com/library/windows/hardware/ff562866">UFF_FONTDIRECTORY</a> structure.</p>
+<p>Specifies the offset, in bytes, from the beginning of the .uff file to the beginning of the first <a href="..\prntfont\ns-prntfont--uff-fontdirectory.md">UFF_FONTDIRECTORY</a> structure.</p>
 </dd>
 
 ### -field <b>dwFlags</b>
@@ -153,10 +153,10 @@ typedef struct _UFF_FILEHEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562866">UFF_FONTDIRECTORY</a>
+<a href="..\prntfont\ns-prntfont--uff-fontdirectory.md">UFF_FONTDIRECTORY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547364">DATA_HEADER</a>
+<a href="..\prntfont\ns-prntfont--data-header.md">DATA_HEADER</a>
 </dt>
 </dl>
 <p> </p>

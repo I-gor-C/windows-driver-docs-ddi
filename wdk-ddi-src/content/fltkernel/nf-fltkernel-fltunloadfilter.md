@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>A minifilter driver that has loaded a supporting minifilter driver by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543366">FltLoadFilter</a> can unload the minifilter driver by calling <b>FltUnloadFilter</b>. </p>
+<p>A minifilter driver that has loaded a supporting minifilter driver by calling <a href="..\fltkernel\nf-fltkernel-fltloadfilter.md">FltLoadFilter</a> can unload the minifilter driver by calling <b>FltUnloadFilter</b>. </p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ NTSTATUS FltUnloadFilter(
 ### -param <i>FilterName</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure containing the minifilter driver service name that was passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543366">FltLoadFilter</a>. </p>
+<p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure containing the minifilter driver service name that was passed to <a href="..\fltkernel\nf-fltkernel-fltloadfilter.md">FltLoadFilter</a>. </p>
 </dd>
 </dl>
 
@@ -71,13 +71,7 @@ NTSTATUS FltUnloadFilter(
 <p> </p>
 
 ## -remarks
-<p>A minifilter driver that has a dependency on another minifilter driver can unload that minifilter driver by calling <b>FltUnloadFilter</b>. This routine searches for a registered minifilter driver whose service name matches the given <i>FilterName</i> and calls that minifilter driver's <i>FilterUnloadCallback</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551085">PFLT_FILTER_UNLOAD_CALLBACK</a>) routine. </p>
-
-<p>If the supporting minifilter driver did not register a <i>FilterUnloadCallback</i> routine, the call to <b>FltUnloadFilter</b> fails. </p>
-
-<p>A minifilter driver cannot call <b>FltUnloadFilter</b> to unload itself. </p>
-
-<p>A minifilter driver that has a dependency on another minifilter driver can unload that minifilter driver by calling <b>FltUnloadFilter</b>. This routine searches for a registered minifilter driver whose service name matches the given <i>FilterName</i> and calls that minifilter driver's <i>FilterUnloadCallback</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551085">PFLT_FILTER_UNLOAD_CALLBACK</a>) routine. </p>
+<p>A minifilter driver that has a dependency on another minifilter driver can unload that minifilter driver by calling <b>FltUnloadFilter</b>. This routine searches for a registered minifilter driver whose service name matches the given <i>FilterName</i> and calls that minifilter driver's <i>FilterUnloadCallback</i> (<a href="..\fltkernel\nc-fltkernel-pflt-filter-unload-callback.md">PFLT_FILTER_UNLOAD_CALLBACK</a>) routine. </p>
 
 <p>If the supporting minifilter driver did not register a <i>FilterUnloadCallback</i> routine, the call to <b>FltUnloadFilter</b> fails. </p>
 
@@ -138,13 +132,13 @@ NTSTATUS FltUnloadFilter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543366">FltLoadFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltloadfilter.md">FltLoadFilter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551085">PFLT_FILTER_UNLOAD_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-filter-unload-callback.md">PFLT_FILTER_UNLOAD_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>

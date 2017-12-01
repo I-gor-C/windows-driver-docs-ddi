@@ -7,7 +7,7 @@ old-location: stream\bda_scan_state.htm
 old-project: stream
 ms.assetid: C80506D2-AAB6-4A37-A62F-CDDD3DCBC7F1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_SCAN_STATE, BDA_SCAN_STATE, *PBDA_SCAN_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

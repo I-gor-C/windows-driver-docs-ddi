@@ -82,28 +82,28 @@ typedef struct _DXGK_DEVICEINFO {
 ### -field <b>AllocationListSize</b>
 
 <dd>
-<p>[out] The starting number of elements in an array of allocations (that is, an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560975">DXGK_ALLOCATIONLIST</a> structures). This number is the starting number of allocations that the driver requests to be in the <b>pAllocationList</b> members of <a href="https://msdn.microsoft.com/library/windows/hardware/ff557618">DXGKARG_PRESENT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff557648">DXGKARG_RENDER</a> structures in calls to the driver's <a href="display.dxgkddipresent">DxgkDdiPresent</a> and <a href="display.dxgkddirender">DxgkDdiRender</a> functions. </p>
+<p>[out] The starting number of elements in an array of allocations (that is, an array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a> structures). This number is the starting number of allocations that the driver requests to be in the <b>pAllocationList</b> members of <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-present.md">DXGKARG_PRESENT</a> and <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-render.md">DXGKARG_RENDER</a> structures in calls to the driver's <a href="display.dxgkddipresent">DxgkDdiPresent</a> and <a href="display.dxgkddirender">DxgkDdiRender</a> functions. </p>
 <p>The allocation list can grow and shrink after the device is created; however, the allocation list can never shrink smaller than the starting size that <b>AllocationListSize</b> specifies. </p>
 </dd>
 
 ### -field <b>PatchLocationListSize</b>
 
 <dd>
-<p>[out] The starting number of elements in an array of patch locations (that is, an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a> structures) for the device in user mode and kernel mode. This number is the starting number of patch locations that the driver requests to be in the <b>pPatchLocationListIn</b> members of <a href="https://msdn.microsoft.com/library/windows/hardware/ff557648">DXGKARG_RENDER</a> structures in calls to its <a href="display.dxgkddirender">DxgkDdiRender</a> function. </p>
+<p>[out] The starting number of elements in an array of patch locations (that is, an array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures) for the device in user mode and kernel mode. This number is the starting number of patch locations that the driver requests to be in the <b>pPatchLocationListIn</b> members of <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-render.md">DXGKARG_RENDER</a> structures in calls to its <a href="display.dxgkddirender">DxgkDdiRender</a> function. </p>
 <p>The patch-location list can grow and shrink after the device is created; however, the patch-location list can never shrink smaller than the starting size that <b>PatchLocationListSize</b> specifies. </p>
 </dd>
 
 ### -field <b>Flags</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561049">DXGK_DEVICEINFOFLAGS</a> structure that identifies, in bit-field flags, information about the device.</p>
+<p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-deviceinfoflags.md">DXGK_DEVICEINFOFLAGS</a> structure that identifies, in bit-field flags, information about the device.</p>
 </dd>
 </dl>
 
 ## -remarks
 <p>The display miniport driver specifies values for the <b>DmaBufferSize</b> and <b>AllocationListSize</b> members to guarantee the following:</p>
 
-<p>The DirectX graphics subsystem can use only one DMA buffer to display (by using the display miniport driver's <a href="display.dxgkddipresent">DxgkDdiPresent</a> function) at least one <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for all scenarios.</p>
+<p>The DirectX graphics subsystem can use only one DMA buffer to display (by using the display miniport driver's <a href="display.dxgkddipresent">DxgkDdiPresent</a> function) at least one <a href="display.rect">RECT</a> structure for all scenarios.</p>
 
 <p>The sizes of DMA and allocation-list buffers are large enough to hold at least one command that cannot be split across multiple buffers.</p>
 
@@ -138,19 +138,19 @@ typedef struct _DXGK_DEVICEINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560975">DXGK_ALLOCATIONLIST</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-allocationlist.md">DXGK_ALLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561049">DXGK_DEVICEINFOFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-deviceinfoflags.md">DXGK_DEVICEINFOFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557618">DXGKARG_PRESENT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-present.md">DXGKARG_PRESENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557648">DXGKARG_RENDER</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-render.md">DXGKARG_RENDER</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreatedevice">DxgkDdiCreateDevice</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_protocol_offload_type.htm
 old-project: netvista
 ms.assetid: ab9f98d3-1792-43be-b838-f9dd3953889c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,7 +79,7 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
 <dd>
 <p>An IPv6 Neighbor Solicitation (NS) protocol offload. The parameters for this protocol offload type
      are specified in the 
-     <b>IPv6NSParameters</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566760">NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</p>
+     <b>IPv6NSParameters</b> member of the <a href="..\ntddndis\ns-ntddndis--ndis-pm-protocol-offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</p>
 </dd>
 
 ### -field <a id="NdisPMProtocolOffload80211RSNRekey"></a><a id="ndispmprotocoloffload80211rsnrekey"></a><a id="NDISPMPROTOCOLOFFLOAD80211RSNREKEY"></a><b>NdisPMProtocolOffload80211RSNRekey</b>
@@ -87,7 +87,7 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
 <dd>
 <p>An IEEE 802.11i Robust Security Network (RSN) 4-way and 2-way handshake protocol offload. This
      protocol offload type is specified in the 
-     <b>Dot11RSNRekeyParameters</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566760">NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</p>
+     <b>Dot11RSNRekeyParameters</b> member of the <a href="..\ntddndis\ns-ntddndis--ndis-pm-protocol-offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</p>
 </dd>
 
 ### -field <a id="NdisPMProtocolOffloadIdMaximum"></a><a id="ndispmprotocoloffloadidmaximum"></a><a id="NDISPMPROTOCOLOFFLOADIDMAXIMUM"></a><b>NdisPMProtocolOffloadIdMaximum</b>
@@ -99,16 +99,6 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
 </dl>
 
 ## -remarks
-<p>The <b>NDIS_PM_PROTOCOL_OFFLOAD_TYPE</b> enumeration is used in the 
-    <b>ProtocolOffloadType</b> member of the 
-    <a href="..\ntddndis\ns-ntddndis--ndis-pm-protocol-offload.md">
-    NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</p>
-
-<p>The <b>NDIS_PM_PROTOCOL_OFFLOAD_TYPE</b> enumeration is used in the 
-    <b>ProtocolOffloadType</b> member of the 
-    <a href="..\ntddndis\ns-ntddndis--ndis-pm-protocol-offload.md">
-    NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</p>
-
 <p>The <b>NDIS_PM_PROTOCOL_OFFLOAD_TYPE</b> enumeration is used in the 
     <b>ProtocolOffloadType</b> member of the 
     <a href="..\ntddndis\ns-ntddndis--ndis-pm-protocol-offload.md">
@@ -139,9 +129,9 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566760">NDIS_PM_PROTOCOL_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-pm-protocol-offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD_TYPE enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -60,7 +60,7 @@ NTSTATUS APIENTRY D3DKMTMapGpuVirtualAddress(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906325">D3DDDI_MAPGPUVIRTUALADDRESS</a> structure that describes the operation.</p>
+<p>A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-mapgpuvirtualaddress.md">D3DDDI_MAPGPUVIRTUALADDRESS</a> structure that describes the operation.</p>
 </dd>
 </dl>
 

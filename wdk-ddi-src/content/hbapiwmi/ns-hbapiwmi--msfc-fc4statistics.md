@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The MSFC_FC4STATISTICS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a> WMI method to report traffic statistics on a port of type Nx_Port for the indicated FC-4 protocol.</p>
+<p>The MSFC_FC4STATISTICS structure is used in conjunction with the <a href="storage.getfc4statistics">GetFC4Statistics</a> WMI method to report traffic statistics on a port of type Nx_Port for the indicated FC-4 protocol.</p>
 
 
 ## -syntax
@@ -111,13 +111,13 @@ typedef struct _MSFC_FC4STATISTICS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553949">GetFC4Statistics</a>
+<a href="storage.getfc4statistics">GetFC4Statistics</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553958">GetFC4Statistics_IN</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--getfc4statistics-in.md">GetFC4Statistics_IN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553960">GetFC4Statistics_OUT</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--getfc4statistics-out.md">GetFC4Statistics_OUT</a>
 </dt>
 </dl>
 <p> </p>

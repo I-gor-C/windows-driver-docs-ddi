@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The AddRADIUSServer_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550133">AddRADIUSServer</a> method.</p>
+<p>The AddRADIUSServer_OUT structure holds the output data for the <a href="storage.addradiusserver">AddRADIUSServer</a> method.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _AddRADIUSServer_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output from <b>AddRADIUSServer</b>, the status of the <b>AddRADIUSServer</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.</p>
+<p>On output from <b>AddRADIUSServer</b>, the status of the <b>AddRADIUSServer</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 </dd>
 </dl>
 
@@ -81,16 +81,16 @@ typedef struct _AddRADIUSServer_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550133">AddRADIUSServer</a>
+<a href="storage.addradiusserver">AddRADIUSServer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550134">AddRADIUSServer_IN</a>
+<a href="..\iscsiop\ns-iscsiop--addradiusserver-in.md">AddRADIUSServer_IN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
+<a href="storage.msiscsi_operations_wmi_class">MSiSCSI_Operations WMI Class</a>
 </dt>
 </dl>
 <p> </p>

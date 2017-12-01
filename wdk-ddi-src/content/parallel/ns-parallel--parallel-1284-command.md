@@ -112,16 +112,16 @@ typedef struct _PARALLEL_1284_COMMAND {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543987">IOCTL_INTERNAL_DESELECT_DEVICE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-deselect-device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544052">IOCTL_INTERNAL_SELECT_DEVICE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-select-device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544504">PPARALLEL_DESELECT_ROUTINE</a>
+<a href="..\parallel\nc-parallel-pparallel-deselect-routine.md">PPARALLEL_DESELECT_ROUTINE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544767">PPARALLEL_TRY_SELECT_ROUTINE</a>
+<a href="..\parallel\nc-parallel-pparallel-try-select-routine.md">PPARALLEL_TRY_SELECT_ROUTINE</a>
 </dt>
 </dl>
 <p> </p>

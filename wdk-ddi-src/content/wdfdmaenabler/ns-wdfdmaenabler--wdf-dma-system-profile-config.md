@@ -7,7 +7,7 @@ old-location: wdf\wdf_dma_system_profile_config.htm
 old-project: wdf
 ms.assetid: 80131AB6-4A2B-4D99-9289-CE9FE26E0695
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,7 +89,7 @@ typedef struct _WDF_DMA_SYSTEM_PROFILE_CONFIG {
 ### -field <b>DeviceAddress</b>
 
 <dd>
-<p>The translated address to or from which the DMA controller transfers. The driver can specify an offset from this base address on each transaction by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh451188">WdfDmaTransactionSetDeviceAddressOffset</a>.</p>
+<p>The translated address to or from which the DMA controller transfers. The driver can specify an offset from this base address on each transaction by calling <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetdeviceaddressoffset.md">WdfDmaTransactionSetDeviceAddressOffset</a>.</p>
 </dd>
 
 ### -field <b>DmaDescriptor</b>
@@ -101,7 +101,7 @@ typedef struct _WDF_DMA_SYSTEM_PROFILE_CONFIG {
 </dl>
 
 ## -remarks
-<p>The driver provides this structure to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451108">WdfDmaEnablerConfigureSystemProfile</a> after creating a system-profile DMA enabler.</p>
+<p>The driver provides this structure to <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablerconfiguresystemprofile.md">WdfDmaEnablerConfigureSystemProfile</a> after creating a system-profile DMA enabler.</p>
 
 <p>Typically, drivers set <b>DemandMode</b> to TRUE.   The driver's <a href="wdf.evtprogramdma">EvtProgramDma</a> callback function then programs the device to assert its DMA request line and initiate the transfer.  In this case, the transfer might begin while <i>EvtProgramDma</i> is still running.</p>
 
@@ -143,12 +143,12 @@ typedef struct _WDF_DMA_SYSTEM_PROFILE_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439499">WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT</a>
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf-dma-system-profile-config-init.md">WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451108">WdfDmaEnablerConfigureSystemProfile</a>
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablerconfiguresystemprofile.md">WdfDmaEnablerConfigureSystemProfile</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_SYSTEM_PROFILE_CONFIG structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_SYSTEM_PROFILE_CONFIG structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

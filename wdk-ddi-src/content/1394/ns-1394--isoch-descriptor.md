@@ -262,8 +262,6 @@ typedef struct _ISOCH_DESCRIPTOR {
 
 <p>HOST_INFO_SUPPORTS_ISO_HDR_INSERTION</p>
 
-<p> </p>
-
 <p>If the driver sets the DESCRIPTOR_HEADER_SCATTER_GATHER flag, the host controller combines the data of the buffer specified in <b>Mdl</b> with the data of the next buffer attached. (Subsequent buffers are unaffected.) Each frame of the buffer is prepended to a frame of the next buffer (in the order the data in the buffer is split into frames), and sent as the data of the next isochronous packet. The number of frames of each buffer must match, or the bus driver returns STATUS_INVALID_PARAMETER for the next REQUEST_ISOCH_ATTACH_BUFFER request.</p>
 
 <p>The DESCRIPTOR_HEADER_SCATTER_GATHER flag is not supported on Windows 98/Me. It is supported on Windows 2000 and later operating systems.</p>

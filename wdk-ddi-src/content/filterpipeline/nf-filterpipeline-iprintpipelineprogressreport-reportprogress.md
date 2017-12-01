@@ -57,7 +57,7 @@ HRESULT ReportProgress(
 ### -param <i>update</i> [in]
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff548778">EXpsJobConsumption</a>-typed value that describes the progress to the pipeline manager.</p>
+<p>An <a href="print.expsjobconsumption">EXpsJobConsumption</a>-typed value that describes the progress to the pipeline manager.</p>
 </dd>
 </dl>
 
@@ -104,7 +104,7 @@ HRESULT ReportProgress(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548778">EXpsJobConsumption</a>
+<a href="print.expsjobconsumption">EXpsJobConsumption</a>
 </dt>
 </dl>
 <p> </p>

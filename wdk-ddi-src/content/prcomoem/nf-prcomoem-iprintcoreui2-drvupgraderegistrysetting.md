@@ -88,13 +88,9 @@ STDMETHOD DrvUpgradeRegistrySetting(
 <p> </p>
 
 ## -remarks
-<p>This method is inherited from the <a href="NULL">IPrintOemDriverUI COM Interface</a>, which includes a <code>DrvUpgradeRegistrySetting</code> method. The behavior of this method is exactly the same as that of <a href="https://msdn.microsoft.com/library/windows/hardware/ff553118">IPrintOemDriverUI::DrvUpgradeRegistrySetting</a>. </p>
+<p>This method is inherited from the <a href="NULL">IPrintOemDriverUI COM Interface</a>, which includes a <code>DrvUpgradeRegistrySetting</code> method. The behavior of this method is exactly the same as that of <a href="print.iprintoemdriverui_drvupgraderegistrysetting">IPrintOemDriverUI::DrvUpgradeRegistrySetting</a>. </p>
 
-<p>This method should be called only by the OEM's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554189">IPrintOemUI::UpgradePrinter</a> method.</p>
-
-<p>This method is inherited from the <a href="NULL">IPrintOemDriverUI COM Interface</a>, which includes a <code>DrvUpgradeRegistrySetting</code> method. The behavior of this method is exactly the same as that of <a href="https://msdn.microsoft.com/library/windows/hardware/ff553118">IPrintOemDriverUI::DrvUpgradeRegistrySetting</a>. </p>
-
-<p>This method should be called only by the OEM's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554189">IPrintOemUI::UpgradePrinter</a> method.</p>
+<p>This method should be called only by the OEM's <a href="print.iprintoemui_upgradeprinter">IPrintOemUI::UpgradePrinter</a> method.</p>
 
 ## -requirements
 <table>
@@ -123,7 +119,7 @@ STDMETHOD DrvUpgradeRegistrySetting(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553118">IPrintOemDriverUI::DrvUpgradeRegistrySetting</a>
+<a href="print.iprintoemdriverui_drvupgraderegistrysetting">IPrintOemDriverUI::DrvUpgradeRegistrySetting</a>
 </dt>
 </dl>
 <p> </p>

@@ -73,13 +73,13 @@ BOOLEAN MouseIsr(
 ### -param <i>CurrentInput</i> [in]
 
 <dd>
-<p>Pointer to the input <a href="https://msdn.microsoft.com/library/windows/hardware/ff542403">MOUSE_INPUT_DATA</a> structure being constructed by the ISR.</p>
+<p>Pointer to the input <a href="hid.mouse_input_data">MOUSE_INPUT_DATA</a> structure being constructed by the ISR.</p>
 </dd>
 
 ### -param <i>CurrentOutput</i> [in]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543218">OUTPUT_PACKET</a> structure, which specifies an array of bytes being written to the hardware device.</p>
+<p>Pointer to an <a href="..\ntdd8042\ns-ntdd8042--output-packet.md">OUTPUT_PACKET</a> structure, which specifies an array of bytes being written to the hardware device.</p>
 </dd>
 
 ### -param <i>StatusByte</i> [in]
@@ -103,7 +103,7 @@ BOOLEAN MouseIsr(
 ### -param <i>MouseState</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542405">MOUSE_STATE</a> enumeration value, which identifies the state of mouse input.</p>
+<p>Pointer to a <a href="..\ntdd8042\ne-ntdd8042--mouse-state.md">MOUSE_STATE</a> enumeration value, which identifies the state of mouse input.</p>
 </dd>
 
 ### -param <i>ResetSubState</i> [in]
@@ -117,14 +117,6 @@ BOOLEAN MouseIsr(
 <p>A PI8042_MOUSE_ISR callback returns <b>TRUE</b> if the I8042prt mouse ISR should continue; otherwise it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>A PI8042_MOUSE_ISR callback is not needed if the default operation of the I8042prt mouse ISR is sufficient.</p>
-
-<p>An upper-level keyboard filter driver can provide a mouse ISR callback. After the I8042prt mouse ISR validates the interrupt, it calls the mouse ISR callback.</p>
-
-<p>To reset a mouse, I8042prt goes through a sequence of operational substates, each one of which is identified by a MOUSE_RESET_SUBSTATE enumeration value. For more information about how I8042prt resets a mouse and the corresponding mouse reset substates, see the documentation of MOUSE_RESET_SUBSTATE in ntdd8042.h.</p>
-
-<p>A PI8042_MOUSE_ISR callback runs in kernel mode at the IRQL of the I8042prt mouse ISR.</p>
-
 <p>A PI8042_MOUSE_ISR callback is not needed if the default operation of the I8042prt mouse ISR is sufficient.</p>
 
 <p>An upper-level keyboard filter driver can provide a mouse ISR callback. After the I8042prt mouse ISR validates the interrupt, it calls the mouse ISR callback.</p>
@@ -171,13 +163,13 @@ BOOLEAN MouseIsr(
 <a href="https://msdn.microsoft.com/34d0a7e9-4a1e-43ba-a643-800ebaadc360">MouFilter_IsrHook</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542403">MOUSE_INPUT_DATA</a>
+<a href="hid.mouse_input_data">MOUSE_INPUT_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542405">MOUSE_STATE</a>
+<a href="..\ntdd8042\ne-ntdd8042--mouse-state.md">MOUSE_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543218">OUTPUT_PACKET</a>
+<a href="..\ntdd8042\ns-ntdd8042--output-packet.md">OUTPUT_PACKET</a>
 </dt>
 </dl>
 <p> </p>

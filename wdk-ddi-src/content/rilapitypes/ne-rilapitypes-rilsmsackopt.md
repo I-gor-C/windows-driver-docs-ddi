@@ -7,7 +7,7 @@ old-location: netvista\rilsmsackopt_2.htm
 old-project: netvista
 ms.assetid: a8430f5f-000f-4dea-acd9-2f0df2c6e67d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

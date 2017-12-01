@@ -7,7 +7,7 @@ old-location: netvista\ndiscopyreceivenetbufferlistinfo.htm
 old-project: netvista
 ms.assetid: 94dc33f4-06ad-4b36-9150-6fb7d491a247
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCopyReceiveNetBufferListInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>Intermediate drivers call the 
   <b>NdisCopyReceiveNetBufferListInfo</b> function to copy the 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> information in a received
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> information in a received
   <b>NET_BUFFER_LIST</b> structure.</p>
 
 
@@ -61,13 +61,13 @@ VOID NdisCopyReceiveNetBufferListInfo(
 ### -param <i>DestNetBufferList</i> [in]
 
 <dd>
-<p>A pointer to the destination <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+<p>A pointer to the destination <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 </dd>
 
 ### -param <i>SrcNetBufferList</i> [in]
 
 <dd>
-<p>A pointer to the source <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+<p>A pointer to the source <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 </dd>
 </dl>
 
@@ -77,33 +77,16 @@ VOID NdisCopyReceiveNetBufferListInfo(
 ## -remarks
 <p>When an intermediate driver or filter driver gets receive indications from an underlying driver, it
     can, for example, clone the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure or allocate a new
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure or allocate a new
     structure to propagate the request to overlying drivers. The driver should use 
     <b>NdisCopyReceiveNetBufferListInfo</b> to copy the <b>NET_BUFFER_LIST</b> information, including private NDIS
     information, to the new structure.</p>
 
-<p>To copy the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> information on the send path, use the 
+<p>To copy the <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> information on the send path, use the 
     <a href="..\ndis\nf-ndis-ndiscopysendnetbufferlistinfo.md">
     NdisCopySendNetBufferListInfo</a> function.</p>
 
-<p>The following <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> items are copied in a call to <b>NdisCopyReceiveNetBufferListInfo</b>:</p>
-
-<p> </p>
-
-<p>When an intermediate driver or filter driver gets receive indications from an underlying driver, it
-    can, for example, clone the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure or allocate a new
-    structure to propagate the request to overlying drivers. The driver should use 
-    <b>NdisCopyReceiveNetBufferListInfo</b> to copy the <b>NET_BUFFER_LIST</b> information, including private NDIS
-    information, to the new structure.</p>
-
-<p>To copy the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> information on the send path, use the 
-    <a href="..\ndis\nf-ndis-ndiscopysendnetbufferlistinfo.md">
-    NdisCopySendNetBufferListInfo</a> function.</p>
-
-<p>The following <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> items are copied in a call to <b>NdisCopyReceiveNetBufferListInfo</b>:</p>
-
-<p> </p>
+<p>The following <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> items are copied in a call to <b>NdisCopyReceiveNetBufferListInfo</b>:</p>
 
 ## -requirements
 <table>
@@ -158,7 +141,7 @@ VOID NdisCopyReceiveNetBufferListInfo(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
+<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -166,7 +149,7 @@ VOID NdisCopyReceiveNetBufferListInfo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="netvista.net_buffer_list_structure">NET_BUFFER_LIST Structure</a>
@@ -178,4 +161,4 @@ VOID NdisCopyReceiveNetBufferListInfo(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCopyReceiveNetBufferListInfo function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCopyReceiveNetBufferListInfo function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

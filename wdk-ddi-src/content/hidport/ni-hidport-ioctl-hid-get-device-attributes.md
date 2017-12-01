@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The IOCTL_HID_GET_DEVICE_ATTRIBUTES request obtains a HIDClass device's attributes in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539893">HID_DEVICE_ATTRIBUTES</a> structure.</p>
+<p>The IOCTL_HID_GET_DEVICE_ATTRIBUTES request obtains a HIDClass device's attributes in a <a href="..\hidport\ns-hidport--hid-device-attributes.md">HID_DEVICE_ATTRIBUTES</a> structure.</p>
 <p>For general information about HIDClass devices, see <a href="NULL">HID Collections</a>. </p>
 
 
@@ -129,10 +129,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539893">HID_DEVICE_ATTRIBUTES</a>
+<a href="..\hidport\ns-hidport--hid-device-attributes.md">HID_DEVICE_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439622">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
+<a href="..\hidport\ni-hidport-ioctl-hid-get-device-descriptor.md">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

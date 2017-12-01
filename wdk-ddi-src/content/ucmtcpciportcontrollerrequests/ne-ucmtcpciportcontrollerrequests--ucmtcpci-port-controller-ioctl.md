@@ -73,7 +73,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_IOCTL {
 <dd>
 <p>
                         
-                    The <a href="https://msdn.microsoft.com/library/windows/hardware/mt805833">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS</a> request.</p>
+                    The <a href="buses.ioctl_ucmtcpci_port_controller_get_status">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL"></a><a id="_ioctl_ucmtcpci_port_controller_get_control"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL</b>
@@ -81,7 +81,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_IOCTL {
 <dd>
 <p>
                         
-                    The <a href="https://msdn.microsoft.com/library/windows/hardware/mt805832">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL</a> request.</p>
+                    The <a href="buses.ioctl_ucmtcpci_port_controller_get_control">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL"></a><a id="_ioctl_ucmtcpci_port_controller_set_control"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL</b>
@@ -89,7 +89,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_IOCTL {
 <dd>
 <p>
                         
-                    The <a href="https://msdn.microsoft.com/library/windows/hardware/mt805836">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL</a> request.</p>
+                    The <a href="buses.ioctl_ucmtcpci_port_controller_set_control">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT"></a><a id="_ioctl_ucmtcpci_port_controller_set_transmit"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT</b>
@@ -97,7 +97,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_IOCTL {
 <dd>
 <p>
                         
-                    The <a href="https://msdn.microsoft.com/library/windows/hardware/mt805839">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT</a> request.</p>
+                    The <a href="buses.ioctl_ucmtcpci_port_controller_set_transmit">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT_BUFFER"></a><a id="_ioctl_ucmtcpci_port_controller_set_transmit_buffer"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT_BUFFER</b>
@@ -105,7 +105,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_IOCTL {
 <dd>
 <p>
                         
-                    The  <a href="https://msdn.microsoft.com/library/windows/hardware/mt805840">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT_BUFFER</a> request.</p>
+                    The  <a href="buses.ioctl_ucmtcpci_port_controller_set_transmit_buffer">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT_BUFFER</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT"></a><a id="_ioctl_ucmtcpci_port_controller_set_receive_detect"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT</b>
@@ -113,7 +113,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_IOCTL {
 <dd>
 <p>
                         
-                    The <a href="https://msdn.microsoft.com/library/windows/hardware/mt805838">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT</a> request.</p>
+                    The <a href="buses.ioctl_ucmtcpci_port_controller_set_receive_detect">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONFIG_STANDARD_OUTPUT"></a><a id="_ioctl_ucmtcpci_port_controller_set_config_standard_output"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONFIG_STANDARD_OUTPUT</b>
@@ -121,7 +121,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_IOCTL {
 <dd>
 <p>
                         
-                    The <a href="https://msdn.microsoft.com/library/windows/hardware/mt805835">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONFIG_STANDARD_OUTPUT</a> request.</p>
+                    The <a href="buses.ioctl_ucmtcpci_port_controller_set_config_standard_output">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONFIG_STANDARD_OUTPUT</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND"></a><a id="_ioctl_ucmtcpci_port_controller_set_command"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</b>
@@ -129,7 +129,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_IOCTL {
 <dd>
 <p>
                         
-                    The <a href="https://msdn.microsoft.com/library/windows/hardware/mt805834">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</a> request.</p>
+                    The <a href="buses.ioctl_ucmtcpci_port_controller_set_command">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO"></a><a id="_ioctl_ucmtcpci_port_controller_set_message_header_info"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO</b>
@@ -137,31 +137,31 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_IOCTL {
 <dd>
 <p>
                         
-                    The <a href="https://msdn.microsoft.com/library/windows/hardware/mt805837">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO</a> request.</p>
+                    The <a href="buses.ioctl_ucmtcpci_port_controller_set_message_header_info">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_ALTERNATE_MODE_ENTERED"></a><a id="_ioctl_ucmtcpci_port_controller_alternate_mode_entered"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_ALTERNATE_MODE_ENTERED</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/mt805828">IOCTL_UCMTCPCI_PORT_CONTROLLER_ALTERNATE_MODE_ENTERED</a> request.</p>
+<p>The <a href="buses.ioctl_ucmtcpci_port_controller_alternate_mode_entered">IOCTL_UCMTCPCI_PORT_CONTROLLER_ALTERNATE_MODE_ENTERED</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_ALTERNATE_MODE_EXITED"></a><a id="_ioctl_ucmtcpci_port_controller_alternate_mode_exited"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_ALTERNATE_MODE_EXITED</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/mt805829">IOCTL_UCMTCPCI_PORT_CONTROLLER_ALTERNATE_MODE_EXITED</a> request.</p>
+<p>The <a href="buses.ioctl_ucmtcpci_port_controller_alternate_mode_exited">IOCTL_UCMTCPCI_PORT_CONTROLLER_ALTERNATE_MODE_EXITED</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_CONFIGURED"></a><a id="_ioctl_ucmtcpci_port_controller_displayport_configured"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_CONFIGURED</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/mt805830">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_CONFIGURED</a> request.</p>
+<p>The <a href="buses.ioctl_ucmtcpci_port_controller_displayport_configured">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_CONFIGURED</a> request.</p>
 </dd>
 
 ### -field <a id="_IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED"></a><a id="_ioctl_ucmtcpci_port_controller_displayport_hpd_status_changed"></a><b>_IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</b>
 
 <dd>
-<p>The  <a href="https://msdn.microsoft.com/library/windows/hardware/mt805831">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</a> request.</p>
+<p>The  <a href="buses.ioctl_ucmtcpci_port_controller_displayport_hpd_status_changed">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</a> request.</p>
 </dd>
 </dl>
 

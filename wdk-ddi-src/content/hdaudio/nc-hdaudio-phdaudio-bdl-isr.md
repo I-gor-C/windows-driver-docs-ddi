@@ -7,7 +7,7 @@ old-location: audio\phdaudio_bdl_isr.htm
 old-project: audio
 ms.assetid: 9DC36C2E-6609-46C8-870E-44845020A4B2
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ VOID HDAudioBdlIsr(
 ### -param <i>Context</i> [in]
 
 <dd>
-<p>The HD Audio bus driver calls the ISR with the same context value that the client specified in the context parameter of the preceding SetupDmaEngineWithBdl call. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537894">PSETUP_DMA_ENGINE_WITH_BDL</a>.</p>
+<p>The HD Audio bus driver calls the ISR with the same context value that the client specified in the context parameter of the preceding SetupDmaEngineWithBdl call. For more information, see <a href="..\hdaudio\nc-hdaudio-psetup-dma-engine-with-bdl.md">PSETUP_DMA_ENGINE_WITH_BDL</a>.</p>
 </dd>
 
 ### -param <i>InterruptBitMask</i> [in]
@@ -140,10 +140,6 @@ VOID HDAudioBdlIsr(
 
 The caller must allocate the buffer memory and BDL from the nonpaged pool.</p>
 
-<p>
-
-The caller must allocate the buffer memory and BDL from the nonpaged pool.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -179,9 +175,9 @@ The caller must allocate the buffer memory and BDL from the nonpaged pool.</p>
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537894">PSETUP_DMA_ENGINE_WITH_BDL</a>
+<a href="..\hdaudio\nc-hdaudio-psetup-dma-engine-with-bdl.md">PSETUP_DMA_ENGINE_WITH_BDL</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PHDAUDIO_BDL_ISR callback function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PHDAUDIO_BDL_ISR callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

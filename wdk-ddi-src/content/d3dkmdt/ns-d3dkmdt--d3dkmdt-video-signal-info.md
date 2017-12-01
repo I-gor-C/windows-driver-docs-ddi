@@ -72,13 +72,13 @@ typedef struct _D3DKMDT_VIDEO_SIGNAL_INFO {
 ### -field <b>VideoStandard</b>
 
 <dd>
-<p>A constant from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546632">D3DKMDT_VIDEO_SIGNAL_STANDARD</a> enumeration that indicates the video standard (if any) that defines the video signal.</p>
+<p>A constant from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-video-signal-standard.md">D3DKMDT_VIDEO_SIGNAL_STANDARD</a> enumeration that indicates the video standard (if any) that defines the video signal.</p>
 </dd>
 
 ### -field <b>TotalSize</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff545977">D3DKMDT_2DREGION</a> structure that specifies the width and height (in pixels) of the entire video signal.</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-2dregion.md">D3DKMDT_2DREGION</a> structure that specifies the width and height (in pixels) of the entire video signal.</p>
 </dd>
 
 ### -field <b>ActiveSize</b>
@@ -90,7 +90,7 @@ typedef struct _D3DKMDT_VIDEO_SIGNAL_INFO {
 ### -field <b>VSyncFreq</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544641">D3DDDI_RATIONAL</a> structure that specifies the vertical refresh rate in Hz.</p>
+<p>A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-rational.md">D3DDDI_RATIONAL</a> structure that specifies the vertical refresh rate in Hz.</p>
 </dd>
 
 ### -field <b>HSyncFreq</b>
@@ -114,7 +114,7 @@ typedef struct _D3DKMDT_VIDEO_SIGNAL_INFO {
 ### -field <b>ScanLineOrdering</b>
 
 <dd>
-<p>A constant from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544682">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a> enumeration that indicates the scanline ordering (for example, progressive or interlaced) of the video signal.</p>
+<p>A constant from the <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-video-signal-scanline-ordering.md">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a> enumeration that indicates the scanline ordering (for example, progressive or interlaced) of the video signal.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
@@ -141,7 +141,7 @@ typedef struct _D3DKMDT_VIDEO_SIGNAL_INFO {
 ### -field <b>ScanLineOrdering</b>
 
 <dd>
-<p>A constant from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544682">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a> enumeration that indicates the scanline ordering (for example, progressive or interlaced) of the video signal.</p>
+<p>A constant from the <a href="..\d3dukmdt\ne-d3dukmdt--d3dddi-video-signal-scanline-ordering.md">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a> enumeration that indicates the scanline ordering (for example, progressive or interlaced) of the video signal.</p>
 </dd>
 </dl>
 
@@ -173,10 +173,10 @@ typedef struct _D3DKMDT_VIDEO_SIGNAL_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546729">D3DKMDT_VIDPN_TARGET_MODE</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-target-mode.md">D3DKMDT_VIDPN_TARGET_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546617">D3DKMDT_VIDEO_PRESENT_TARGET</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-video-present-target.md">D3DKMDT_VIDEO_PRESENT_TARGET</a>
 </dt>
 </dl>
 <p> </p>

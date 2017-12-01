@@ -81,7 +81,7 @@ typedef struct _RemoveiSNSServer_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563982">RemoveiSNSServer_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--removeisnsserver-out.md">RemoveiSNSServer_OUT</a>
 </dt>
 </dl>
 <p> </p>

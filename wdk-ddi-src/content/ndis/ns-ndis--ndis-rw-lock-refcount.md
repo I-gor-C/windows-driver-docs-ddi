@@ -7,7 +7,7 @@ old-location: netvista\ndis_rw_lock_refcount.htm
 old-project: netvista
 ms.assetid: 1b2c93dd-a80e-4197-bc4f-cad12f6d6c77
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_RW_LOCK_REFCOUNT, NDIS_RW_LOCK_REFCOUNT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Obsolete in NDIS 6.20 and later. Supported for NDIS 6.0 and NDIS 5.1 in
-   Windows Vista and Windows 7. Supported for NDIS 5.1 drivers in Windows XP.
+req.target-min-winverclnt: Obsolete in NDIS 6.20 and later. Supported for NDIS 6.0 and NDIS 5.1 in   Windows Vista and Windows 7. Supported for NDIS 5.1 drivers in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

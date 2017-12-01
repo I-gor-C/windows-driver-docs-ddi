@@ -7,7 +7,7 @@ old-location: netvista\rilpositioninfogsmparammask_2.htm
 old-project: netvista
 ms.assetid: 7c5fc8bc-6d0c-429c-944f-5f26b7582fa7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

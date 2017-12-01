@@ -43,17 +43,17 @@ req.product: Windows 10 or later.
 <p>Passed to all third-party constraints JavaScript functions, and provides access to relevant objects.</p>
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrinterScriptContext</b> interface has these properties.</p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973203">DriverProperties</a>
+<a href="print.iprinterscriptcontext_driverproperties">DriverProperties</a>
 </p>
 <p>Read-only</p>
 <p>Provides access to the driver property bag, if the property bag is present.</p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973220">QueueProperties</a>
+<a href="print.iprinterscriptcontext_queueproperties">QueueProperties</a>
 </p>
 <p>Read-only</p>
 <p>Provides access to the queue property bag, if the property bag is present.</p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973206">UserProperties</a>
+<a href="print.iprinterscriptcontext_userproperties">UserProperties</a>
 </p>
 <p>Read-only</p>
 <p>Provides access to the user property bag, if the property bag is present.</p>

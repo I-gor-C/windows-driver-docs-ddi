@@ -70,7 +70,7 @@ BOOLEAN I2CWrite(
 ### -param <i>I2CCallbacks</i> [in]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff567382">I2C_CALLBACKS</a> structure, containing pointers to miniport driver-defined functions that read and write data and clock lines.</p>
+<p>Pointer to an <a href="..\video\ns-video--i2c-callbacks.md">I2C_CALLBACKS</a> structure, containing pointers to miniport driver-defined functions that read and write data and clock lines.</p>
 </dd>
 
 ### -param <i>Buffer</i> [in]
@@ -90,9 +90,7 @@ BOOLEAN I2CWrite(
 <p><i>I2CWrite</i> returns <b>TRUE</b> if the data was successfully written, and <b>FALSE</b> otherwise.</p>
 
 ## -remarks
-<p>The video port implements this function, which can be accessed through a pointer in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570538">VIDEO_PORT_I2C_INTERFACE</a> structure. </p>
-
-<p>The video port implements this function, which can be accessed through a pointer in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570538">VIDEO_PORT_I2C_INTERFACE</a> structure. </p>
+<p>The video port implements this function, which can be accessed through a pointer in the <a href="..\video\ns-video--video-port-i2c-interface.md">VIDEO_PORT_I2C_INTERFACE</a> structure. </p>
 
 ## -requirements
 <table>
@@ -137,7 +135,7 @@ BOOLEAN I2CWrite(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570538">VIDEO_PORT_I2C_INTERFACE</a>
+<a href="..\video\ns-video--video-port-i2c-interface.md">VIDEO_PORT_I2C_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

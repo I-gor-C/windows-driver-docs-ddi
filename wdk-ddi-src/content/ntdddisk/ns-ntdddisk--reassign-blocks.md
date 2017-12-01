@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>REASSIGN_BLOCKS</b> structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560398">IOCTL_DISK_REASSIGN_BLOCKS</a> request to instruct a disk device to reassign the block numbers of the indicated bad blocks to good blocks.</p>
+<p>The <b>REASSIGN_BLOCKS</b> structure is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-reassign-blocks.md">IOCTL_DISK_REASSIGN_BLOCKS</a> request to instruct a disk device to reassign the block numbers of the indicated bad blocks to good blocks.</p>
 
 
 ## -syntax
@@ -95,7 +95,7 @@ typedef struct _REASSIGN_BLOCKS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560398">IOCTL_DISK_REASSIGN_BLOCKS</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-reassign-blocks.md">IOCTL_DISK_REASSIGN_BLOCKS</a>
 </dt>
 </dl>
 <p> </p>

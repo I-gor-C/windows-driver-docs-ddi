@@ -7,7 +7,7 @@ old-location: sensors\gnss_errorinfo.htm
 old-project: sensors
 ms.assetid: 754CD1DD-88E6-4E02-8E24-1939222FE326
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_ERRORINFO, GNSS_ERRORINFO, *PGNSS_ERRORINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

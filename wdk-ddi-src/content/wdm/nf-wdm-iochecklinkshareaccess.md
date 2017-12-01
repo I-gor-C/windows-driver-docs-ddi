@@ -7,7 +7,7 @@ old-location: kernel\iochecklinkshareaccess.htm
 old-project: kernel
 ms.assetid: 1C34237E-D4AF-4F12-9FF2-9382BADCC9D3
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoCheckLinkShareAccess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -120,10 +120,6 @@ is updated.</p>
     from other threads while this routine is executing.  Otherwise the counts
     can be synchronization.</p>
 
-<p>    The <i>ShareAccess</i> parameter must be locked against other accesses
-    from other threads while this routine is executing.  Otherwise the counts
-    can be synchronization.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -177,7 +173,7 @@ is updated.</p>
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549503">I/O Manager Routines</a>
+<a href="kernel.i_o_manager_routines">I/O Manager Routines</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-iosetlinkshareaccess.md">IoSetLinkShareAccess</a>
@@ -191,4 +187,4 @@ is updated.</p>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoCheckLinkShareAccess function%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoCheckLinkShareAccess function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

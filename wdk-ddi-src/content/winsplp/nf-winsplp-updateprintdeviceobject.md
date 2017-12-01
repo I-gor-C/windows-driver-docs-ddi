@@ -63,7 +63,7 @@ HRESULT WINAPI UpdatePrintDeviceObject(
 ### -param <i>hDeviceObject</i> [in]
 
 <dd>
-<p>The HANDLE to the device object to be updated. This should be a device object that was created with <a href="https://msdn.microsoft.com/library/windows/hardware/dn917890">AddPrintDeviceObject</a>.</p>
+<p>The HANDLE to the device object to be updated. This should be a device object that was created with <a href="..\winsplp\nf-winsplp-addprintdeviceobject.md">AddPrintDeviceObject</a>.</p>
 </dd>
 </dl>
 
@@ -73,8 +73,6 @@ HRESULT WINAPI UpdatePrintDeviceObject(
 <p>For example, this function can return HRESULT_FROM_WIN32(ERROR_INVALID_HANDLE), if the function call was made with an invalid HANDLE, or the device object was removed before the function call was made.</p>
 
 ## -remarks
-<p>The <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd162845(v=vs.85).aspx">PRINTER_INFO_2</a>  structure is a good example of the kind of properties that <b>UpdatePrintDeviceObject</b> can update.</p>
-
 <p>The <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd162845(v=vs.85).aspx">PRINTER_INFO_2</a>  structure is a good example of the kind of properties that <b>UpdatePrintDeviceObject</b> can update.</p>
 
 ## -requirements
@@ -124,7 +122,7 @@ HRESULT WINAPI UpdatePrintDeviceObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn917890">AddPrintDeviceObject</a>
+<a href="..\winsplp\nf-winsplp-addprintdeviceobject.md">AddPrintDeviceObject</a>
 </dt>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd162845(v=vs.85).aspx">PRINTER_INFO_2</a></dt>
 </dl>

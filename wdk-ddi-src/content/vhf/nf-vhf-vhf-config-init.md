@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Use the <b>VHF_CONFIG_INIT</b> function to initialize the required members of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925044">VHF_CONFIG</a> structure allocated by the HID source driver.</p>
+<p>Use the <b>VHF_CONFIG_INIT</b> function to initialize the required members of the <a href="..\vhf\ns-vhf--vhf-config.md">VHF_CONFIG</a> structure allocated by the HID source driver.</p>
 
 
 ## -syntax
@@ -61,13 +61,13 @@ FORCEINLINE void VHF_CONFIG_INIT(
 ### -param <i>Config</i> [out]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925044">VHF_CONFIG</a> structure to initialize.</p>
+<p>A pointer to the <a href="..\vhf\ns-vhf--vhf-config.md">VHF_CONFIG</a> structure to initialize.</p>
 </dd>
 
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="https://msdn.microsoft.com/library/windows/hardware/ff546942">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> call. </p>
+<p>A pointer to the <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetdeviceobject.md">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. </p>
 </dd>
 
 ### -param <i>ReportDescriptorLength</i> [in]

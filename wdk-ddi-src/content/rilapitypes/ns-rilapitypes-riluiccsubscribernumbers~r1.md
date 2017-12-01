@@ -7,7 +7,7 @@ old-location: netvista\riluiccsubscribernumbers_2.htm
 old-project: netvista
 ms.assetid: e1a097b5-ce13-4070-a6f6-4b461ac086de
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCSUBSCRIBERNUMBERS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

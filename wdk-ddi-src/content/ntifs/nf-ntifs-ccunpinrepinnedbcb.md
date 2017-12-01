@@ -81,19 +81,11 @@ VOID CcUnpinRepinnedBcb(
 ## -remarks
 <p>File systems call <b>CcUnpinRepinnedBcb</b> to write a previously pinned buffer through to disk.</p>
 
-<p>Every call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539196">CcRepinBcb</a> must be matched by a subsequent call to <b>CcUnpinRepinnedBcb</b>.</p>
+<p>Every call to <a href="..\ntifs\nf-ntifs-ccrepinbcb.md">CcRepinBcb</a> must be matched by a subsequent call to <b>CcUnpinRepinnedBcb</b>.</p>
 
 <p>Because <b>CcUnpinRepinnedBcb</b> acquires the BCB resource exclusively, the caller must be extremely careful to avoid deadlocks. If possible, the caller should own no resources. Otherwise the caller must guarantee that it has nothing else pinned in the same cached file. Normally <b>CcUnpinRepinnedBcb</b> is called during request completion, after all other resources have been released.</p>
 
-<p><b>CcUnpinRepinnedBcb</b> synchronously writes the buffer (for write-through requests) and unpins the BCB repinned by the earlier call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539196">CcRepinBcb</a>.</p>
-
-<p>File systems call <b>CcUnpinRepinnedBcb</b> to write a previously pinned buffer through to disk.</p>
-
-<p>Every call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539196">CcRepinBcb</a> must be matched by a subsequent call to <b>CcUnpinRepinnedBcb</b>.</p>
-
-<p>Because <b>CcUnpinRepinnedBcb</b> acquires the BCB resource exclusively, the caller must be extremely careful to avoid deadlocks. If possible, the caller should own no resources. Otherwise the caller must guarantee that it has nothing else pinned in the same cached file. Normally <b>CcUnpinRepinnedBcb</b> is called during request completion, after all other resources have been released.</p>
-
-<p><b>CcUnpinRepinnedBcb</b> synchronously writes the buffer (for write-through requests) and unpins the BCB repinned by the earlier call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539196">CcRepinBcb</a>.</p>
+<p><b>CcUnpinRepinnedBcb</b> synchronously writes the buffer (for write-through requests) and unpins the BCB repinned by the earlier call to <a href="..\ntifs\nf-ntifs-ccrepinbcb.md">CcRepinBcb</a>.</p>
 
 ## -requirements
 <table>
@@ -142,7 +134,7 @@ VOID CcUnpinRepinnedBcb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539196">CcRepinBcb</a>
+<a href="..\ntifs\nf-ntifs-ccrepinbcb.md">CcRepinBcb</a>
 </dt>
 </dl>
 <p> </p>

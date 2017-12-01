@@ -53,11 +53,11 @@ HBA_STATUS HBA_API HBA_FreeLibrary(void);
 
 
 ## -returns
-<p>The <b>HBA_FreeLibrary</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA.</p>
+<p>The <b>HBA_FreeLibrary</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA.</p>
 
-<p>The <b>HBA_FreeLibrary</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA.</p>
+<p>The <b>HBA_FreeLibrary</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA.</p>
 
-<p>The <b>HBA_FreeLibrary</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA.</p>
+<p>The <b>HBA_FreeLibrary</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA.</p>
 
 ## -remarks
 
@@ -109,7 +109,7 @@ HBA_STATUS HBA_API HBA_FreeLibrary(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: audio\ksaudio_packetsize_constraints2.htm
 old-project: audio
 ms.assetid: E87C7AA7-A48A-4569-ADD5-9DC143F919B6
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: KSAUDIO_PACKETSIZE_CONSTRAINTS2, KSAUDIO_PACKETSIZE_CONSTRAINTS2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,8 +39,8 @@ req.iface:
 
 
 ## -description
-<p>The <b>KSAUDIO_PACKETSIZE_CONSTRAINTS2</b> structure describes the physical hardware constraints. It includes an array of 0 or more <a href="https://msdn.microsoft.com/library/windows/hardware/dn965562">KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT</a> structures describing constraints specific to any signal processing modes.
-The driver sets this property before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff537731">PcRegisterSubdevice</a> or otherwise enabling its KS filter interface for its streaming pins.</p>
+<p>The <b>KSAUDIO_PACKETSIZE_CONSTRAINTS2</b> structure describes the physical hardware constraints. It includes an array of 0 or more <a href="audio.ksaudio_packetsize_processingmode_constraint">KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT</a> structures describing constraints specific to any signal processing modes.
+The driver sets this property before calling <a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a> or otherwise enabling its KS filter interface for its streaming pins.</p>
 
 
 ## -syntax

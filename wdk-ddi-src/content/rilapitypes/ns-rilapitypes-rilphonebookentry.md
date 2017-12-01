@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookentry_2.htm
 old-project: netvista
 ms.assetid: 848afbe3-be29-4c20-b9d0-33db98dab7bb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILPHONEBOOKENTRY, RILPHONEBOOKENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices

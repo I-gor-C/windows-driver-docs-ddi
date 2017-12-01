@@ -250,14 +250,14 @@ typedef struct _D3DDDI_DEVICECALLBACKS {
 ### -field <b>pfnOfferAllocationsCb</b>
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451693">pfnOfferAllocationsCb</a> function, which a WDDM 1.2 and later user-mode display driver   calls to offer  video memory allocations for reuse.</p>
+<p>A pointer to the <a href="display.pfnofferallocationscb">pfnOfferAllocationsCb</a> function, which a WDDM 1.2 and later user-mode display driver   calls to offer  video memory allocations for reuse.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
 ### -field <b>pfnReclaimAllocationsCb</b>
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a> function, which a WDDM 1.2 and later user-mode display driver   calls to reclaim access to video memory allocations that were previously offered  for reuse.</p>
+<p>A pointer to the <a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a> function, which a WDDM 1.2 and later user-mode display driver   calls to reclaim access to video memory allocations that were previously offered  for reuse.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
@@ -285,7 +285,7 @@ typedef struct _D3DDDI_DEVICECALLBACKS {
 ### -field <b>pfnPresentMultiPlaneOverlayCb</b>
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780323">pfnPresentMultiPlaneOverlayCb (D3D)</a> function, which a WDDM 1.3 and later user-mode display driver uses to copy content from a source multiplane overlay allocation to a destination allocation.</p>
+<p>A pointer to the <a href="display.pfnpresentmultiplaneoverlaycb_d3d">pfnPresentMultiPlaneOverlayCb (D3D)</a> function, which a WDDM 1.3 and later user-mode display driver uses to copy content from a source multiplane overlay allocation to a destination allocation.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 
@@ -413,7 +413,7 @@ typedef struct _D3DDDI_DEVICECALLBACKS {
 ### -field <b>pfnReclaimAllocations2Cb</b>
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn903528">pfnReclaimAllocations2Cb</a> function.</p>
+<p>A pointer to the <a href="display.pfnreclaimallocations2cb">pfnReclaimAllocations2Cb</a> function.</p>
 </dd>
 
 ### -field <b>pfnGetResourcePresentPrivateDriverDataCb</b>
@@ -553,7 +553,7 @@ typedef struct _D3DDDI_DEVICECALLBACKS {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-waitforsynchronizationobject2cb.md">pfnWaitForSynchronizationObject2Cb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780323">pfnPresentMultiPlaneOverlayCb (D3D)</a>
+<a href="display.pfnpresentmultiplaneoverlaycb_d3d">pfnPresentMultiPlaneOverlayCb (D3D)</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-offerallocations2cb.md">pfnOfferAllocations2Cb</a>

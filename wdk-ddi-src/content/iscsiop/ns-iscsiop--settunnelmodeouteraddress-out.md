@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetTunnelModeOuterAddress_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566186">SetTunnelModeOuterAddress</a> method.</p>
+<p>The SetTunnelModeOuterAddress_OUT structure holds the output data for the <a href="storage.settunnelmodeouteraddress">SetTunnelModeOuterAddress</a> method.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _SetTunnelModeOuterAddress_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output, the status of the <b>SetTunnelModeOuterAddress</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>. </p>
+<p>On output, the status of the <b>SetTunnelModeOuterAddress</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>. </p>
 </dd>
 </dl>
 
@@ -81,13 +81,13 @@ typedef struct _SetTunnelModeOuterAddress_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566186">SetTunnelModeOuterAddress</a>
+<a href="storage.settunnelmodeouteraddress">SetTunnelModeOuterAddress</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566187">SetTunnelModeOuterAddress_IN</a>
+<a href="..\iscsiop\ns-iscsiop--settunnelmodeouteraddress-in.md">SetTunnelModeOuterAddress_IN</a>
 </dt>
 </dl>
 <p> </p>

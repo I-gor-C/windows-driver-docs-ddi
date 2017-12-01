@@ -833,7 +833,7 @@ typedef struct _PRINTPROVIDOR {
 ### -field <b>fpFindFirstPrinterChangeNotification</b>
 
 <dd>
-<p>(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548837">FindFirstPrinterChangeNotification</a> function (described in the Windows SDK documentation).</p>
+<p>(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a> function (described in the Windows SDK documentation).</p>
 </dd>
 
 ### -field <b>fpFindClosePrinterChangeNotification</b>
@@ -857,7 +857,7 @@ typedef struct _PRINTPROVIDOR {
 ### -field <b>fpRefreshPrinterChangeNotification</b>
 
 <dd>
-<p>(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a> function.</p>
+<p>(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="print.refreshprinterchangenotification">RefreshPrinterChangeNotification</a> function.</p>
 </dd>
 
 ### -field <b>fpOpenPrinterEx</b>
@@ -977,7 +977,7 @@ typedef struct _PRINTPROVIDOR {
 ### -field <b>fpXcvData</b>
 
 <dd>
-<p>(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> function.</p>
+<p>(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="print.xcvdata">XcvData</a> function.</p>
 </dd>
 
 ### -field <b>fpAddPrinterDriverEx</b>
@@ -1049,19 +1049,19 @@ typedef struct _PRINTPROVIDOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551614">InitializePrintProvidor</a>
+<a href="..\winsplp\nf-winsplp-initializeprintprovidor.md">InitializePrintProvidor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548837">FindFirstPrinterChangeNotification</a>
+<a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
+<a href="print.refreshprinterchangenotification">RefreshPrinterChangeNotification</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>
+<a href="print.xcvdata">XcvData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562068">SendRecvBidiData</a>
+<a href="print.sendrecvbididata">SendRecvBidiData</a>
 </dt>
 </dl>
 <p> </p>

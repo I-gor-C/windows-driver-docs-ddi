@@ -81,12 +81,6 @@ NTSTATUS MRxPreparseName(
 
 <p>RDBSS ignores the return value from <i>MRxPreparseName</i>. </p>
 
-<p><i>MRxPreparseName</i> is called by RDBSS after parsing a name to give a network mini-redirector a final opportunity to preparse the name. </p>
-
-<p>RDBSS tries to convert the name to its canonical form, removing a dot (".") and two dots (".."), before calling <i>MRxPreparseName</i>. RDBSS will also parse the format used by NTFS streams. </p>
-
-<p>RDBSS ignores the return value from <i>MRxPreparseName</i>. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -114,25 +108,25 @@ NTSTATUS MRxPreparseName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549864">MRxCreateSrvCall</a>
+<a href="ifsk.mrxcreatesrvcall">MRxCreateSrvCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549869">MRxCreateVNetRoot</a>
+<a href="ifsk.mrxcreatevnetroot">MRxCreateVNetRoot</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550649">MRxExtractNetRootName</a>
+<a href="ifsk.mrxextractnetrootname">MRxExtractNetRootName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550653">MRxFinalizeNetRoot</a>
+<a href="ifsk.mrxfinalizenetroot">MRxFinalizeNetRoot</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550663">MRxFinalizeVNetRoot</a>
+<a href="ifsk.mrxfinalizevnetroot">MRxFinalizeVNetRoot</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554426">RxFinalizeSrvCall</a>
+<a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550824">MRxSrvCallWinnerNotify</a>
+<a href="ifsk.mrxsrvcallwinnernotify">MRxSrvCallWinnerNotify</a>
 </dt>
 </dl>
 <p> </p>

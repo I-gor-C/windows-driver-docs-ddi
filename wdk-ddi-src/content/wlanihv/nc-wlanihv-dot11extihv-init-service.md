@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvinitservice.htm
 old-project: netvista
 ms.assetid: ba803eab-74ae-4998-b013-9f4470da8382
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -74,7 +73,7 @@ DWORD APIENTRY Dot11ExtIhvInitService(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547617">DOT11EXT_APIS</a> structure, which contains the
+     <a href="..\wlanihv\ns-wlanihv--dot11ext-apis.md">DOT11EXT_APIS</a> structure, which contains the
      addresses of the IHV Extensibility functions that are supported by the operating system. The operating
      system formats this parameter with the function addresses before making the call to the 
      <i>Dot11ExtIhvInitService</i> function.</p>
@@ -90,7 +89,7 @@ DWORD APIENTRY Dot11ExtIhvInitService(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547625">DOT11EXT_IHV_HANDLERS</a> structure,
+     <a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-handlers.md">DOT11EXT_IHV_HANDLERS</a> structure,
      which contains the addresses of the IHV Handler functions supported by the IHV Extensions DLL. The DLL
      formats this parameter with the function addresses before returning from the call to the 
      <i>Dot11ExtIhvInitService</i> function.</p>
@@ -103,31 +102,6 @@ DWORD APIENTRY Dot11ExtIhvInitService(
      Winerror.h.</p>
 
 ## -remarks
-<p>The operating system calls the 
-    <i>Dot11ExtIhvInitService</i> function immediately after the call to the 
-    <a href="..\wlanihv\nc-wlanihv-dot11extihv-get-version-info.md">
-    Dot11ExtIhvGetVersionInfo</a> function. When called, 
-    <i>Dot11ExtIhvInitService</i> must initialize the IHV Extensions DLL as necessary. When the function
-    returns, the DLL must be prepared to accept additional calls to the IHV Handler function.</p>
-
-<p>Unlike how it treats other IHV Extension and Handler functions whose addresses are resolved through
-    the 
-    <i>pDot11IHVHandlers</i> parameter, the operating system resolves the address of the 
-    <i>Dot11ExtIhvInitService</i> function by calling the 
-    <b>GetProcAddress</b> function. As a result, the developer of the IHV Extensions DLL must follow these
-    guidelines.</p>
-
-<p>The DLL must implement a function named Dot11ExtIhvInitService, which has the format that is
-      described in this topic.</p>
-
-<p>The 
-      <b>EXPORTS</b> statement of the source module-definition (.def) file, which is used to build the IHV
-      Extensions DLL, must contain a function name entry for the 
-      <i>Dot11ExtIhvInitService</i> function.</p>
-
-<p>For more information about 
-    <b>GetProcAddress</b>, refer to the Microsoft Windows SDK documentation.</p>
-
 <p>The operating system calls the 
     <i>Dot11ExtIhvInitService</i> function immediately after the call to the 
     <a href="..\wlanihv\nc-wlanihv-dot11extihv-get-version-info.md">
@@ -189,10 +163,10 @@ DWORD APIENTRY Dot11ExtIhvInitService(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547617">DOT11EXT_APIS</a>
+<a href="..\wlanihv\ns-wlanihv--dot11ext-apis.md">DOT11EXT_APIS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547625">DOT11EXT_IHV_HANDLERS</a>
+<a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-handlers.md">DOT11EXT_IHV_HANDLERS</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-get-version-info.md">Dot11ExtIhvGetVersionInfo</a>
@@ -200,4 +174,4 @@ DWORD APIENTRY Dot11ExtIhvInitService(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_INIT_SERVICE callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_INIT_SERVICE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

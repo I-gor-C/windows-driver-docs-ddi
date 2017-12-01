@@ -7,7 +7,7 @@ old-location: netvista\rilmsgoutsubmit_2.htm
 old-project: netvista
 ms.assetid: 1e310fc1-383c-4dbc-9c72-3eb8aa8db285
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMSGOUTSUBMIT,
 ms.prod: windows-hardware
 ms.technology: windows-devices

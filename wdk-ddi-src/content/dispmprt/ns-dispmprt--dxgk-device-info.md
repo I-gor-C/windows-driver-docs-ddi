@@ -83,7 +83,7 @@ typedef struct _DXGK_DEVICE_INFO {
 ### -field <b>TranslatedResourceList</b>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541994">CM_RESOURCE_LIST</a> structure that holds the translated resources assigned to the display adapter.</p>
+<p>A pointer to a <a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a> structure that holds the translated resources assigned to the display adapter.</p>
 </dd>
 
 ### -field <b>SystemMemorySize</b>
@@ -145,7 +145,7 @@ typedef struct _DXGK_DEVICE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541994">CM_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm--cm-resource-list.md">CM_RESOURCE_LIST</a>
 </dt>
 <dt>
 <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>

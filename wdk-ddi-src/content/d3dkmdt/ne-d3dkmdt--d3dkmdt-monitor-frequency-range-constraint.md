@@ -76,11 +76,7 @@ typedef enum _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT {
 </dl>
 
 ## -remarks
-<p>The <b>ConstraintType</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546103">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a value from the D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration.</p>
-
-<p>The <b>ConstraintType</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546103">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a value from the D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration.</p>
-
-<p>The <b>ConstraintType</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546103">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a value from the D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration.</p>
+<p>The <b>ConstraintType</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-monitor-frequency-range.md">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a value from the D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration.</p>
 
 ## -requirements
 <table>

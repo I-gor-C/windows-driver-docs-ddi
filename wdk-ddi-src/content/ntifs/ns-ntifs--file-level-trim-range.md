@@ -88,7 +88,7 @@ typedef struct _FILE_LEVEL_TRIM_RANGE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406398">FILE_LEVEL_TRIM</a>
+<a href="..\ntifs\ns-ntifs--file-level-trim.md">FILE_LEVEL_TRIM</a>
 </dt>
 </dl>
 <p> </p>

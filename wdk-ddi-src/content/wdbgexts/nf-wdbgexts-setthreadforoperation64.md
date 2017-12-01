@@ -7,7 +7,7 @@ old-location: debugger\setthreadforoperation64.htm
 old-project: debugger
 ms.assetid: 0c8f7113-0866-454a-9596-8733dd78b282
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: SetThreadForOperation64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>SetThreadForOperation64</b> function sets the thread to use for the next <a href="https://msdn.microsoft.com/library/windows/hardware/ff558794">StackTrace</a> call.</p>
+<p>The <b>SetThreadForOperation64</b> function sets the thread to use for the next <a href="debugger.stacktrace">StackTrace</a> call.</p>
 
 
 ## -syntax
@@ -66,11 +66,7 @@ __inline VOID SetThreadForOperation64(
 <p>None</p>
 
 ## -remarks
-<p>If you are writing 32-bit code, you should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff556830">SetThreadForOperation</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.</p>
-
-<p>For a WdbgExts extension, include Wdbgexts.h. For a DbgEng extension, include Wdbgexts.h before Dbgeng.h. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details.</p>
-
-<p>If you are writing 32-bit code, you should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff556830">SetThreadForOperation</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.</p>
+<p>If you are writing 32-bit code, you should use <a href="..\wdbgexts\nf-wdbgexts-setthreadforoperation.md">SetThreadForOperation</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.</p>
 
 <p>For a WdbgExts extension, include Wdbgexts.h. For a DbgEng extension, include Wdbgexts.h before Dbgeng.h. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details.</p>
 

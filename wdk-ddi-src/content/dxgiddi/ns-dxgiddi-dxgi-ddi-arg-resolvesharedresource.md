@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DXGI_DDI_ARG_RESOLVESHAREDRESOURCE structure describes the parameters that the user-mode display driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569488">ResolveSharedResourceDXGI</a> function uses to synchronize a shared surface or a GDI interoperable surface. </p>
+<p>The DXGI_DDI_ARG_RESOLVESHAREDRESOURCE structure describes the parameters that the user-mode display driver's <a href="display.resolvesharedresourcedxgi">ResolveSharedResourceDXGI</a> function uses to synchronize a shared surface or a GDI interoperable surface. </p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ typedef struct DXGI_DDI_ARG_RESOLVESHAREDRESOURCE {
 ### -field <b>hDevice</b>
 
 <dd>
-<p>[in] A handle to the display device (graphics context) that is associated with the shared surface or GDI interoperable surface. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541664">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
+<p>[in] A handle to the display device (graphics context) that is associated with the shared surface or GDI interoperable surface. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a> function to create the display device. </p>
 </dd>
 
 ### -field <b>hResource</b>
@@ -96,7 +96,7 @@ typedef struct DXGI_DDI_ARG_RESOLVESHAREDRESOURCE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569488">ResolveSharedResourceDXGI</a>
+<a href="display.resolvesharedresourcedxgi">ResolveSharedResourceDXGI</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: kernel\rtlintadd.htm
 old-project: kernel
 ms.assetid: DF556961-D5BA-4A50-9E6A-DACE96D13B50
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlIntAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices

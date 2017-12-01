@@ -57,7 +57,7 @@ typedef struct _SM_GetLUNStatistics_IN {
 ### -field <b>Lunit</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557191">HBA_ScsiId</a> that contains information that is used by the operating system to identify a SCSI logical unit.</p>
+<p>A structure of type <a href="..\hbaapi\ns-hbaapi-hba-scsiid.md">HBA_ScsiId</a> that contains information that is used by the operating system to identify a SCSI logical unit.</p>
 </dd>
 </dl>
 

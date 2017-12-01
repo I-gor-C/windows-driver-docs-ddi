@@ -65,9 +65,7 @@ HRESULT RequestReader(
 <p><b>RequestReader </b>returns an <b>HRESULT</b> value.</p>
 
 ## -remarks
-<p>The <b>IInterFilterCommunicator</b> object is passed to each filter in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554291">IPrintPipelineFilter::InitializeFilter</a> method. The filter uses the <b>RequestReader</b> method to get the reader interface for the object. The universally unique identifier (UUID) for the object is declared in the <a href="NULL">filter pipeline configuration file</a>. The filter uses the <b>IInterFilterCommunicator</b> interface to receive input data.</p>
-
-<p>The <b>IInterFilterCommunicator</b> object is passed to each filter in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554291">IPrintPipelineFilter::InitializeFilter</a> method. The filter uses the <b>RequestReader</b> method to get the reader interface for the object. The universally unique identifier (UUID) for the object is declared in the <a href="NULL">filter pipeline configuration file</a>. The filter uses the <b>IInterFilterCommunicator</b> interface to receive input data.</p>
+<p>The <b>IInterFilterCommunicator</b> object is passed to each filter in the <a href="print.iprintpipelinefilter_initializefilter">IPrintPipelineFilter::InitializeFilter</a> method. The filter uses the <b>RequestReader</b> method to get the reader interface for the object. The universally unique identifier (UUID) for the object is declared in the <a href="NULL">filter pipeline configuration file</a>. The filter uses the <b>IInterFilterCommunicator</b> interface to receive input data.</p>
 
 ## -requirements
 <table>
@@ -106,7 +104,7 @@ HRESULT RequestReader(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554291">IPrintPipelineFilter::InitializeFilter</a>
+<a href="print.iprintpipelinefilter_initializefilter">IPrintPipelineFilter::InitializeFilter</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\ndisifgetnetluidfrominterfaceindex.htm
 old-project: netvista
 ms.assetid: 3cfb7f31-93ae-47a2-8da8-becfbe045f5e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisIfGetNetLuidFromInterfaceIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The 
   <b>NdisIfGetNetLuidFromInterfaceIndex</b> function gets the 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value that is associated with a network
+  <a href="netvista.net_luid">NET_LUID</a> value that is associated with a network
   interface index.</p>
 
 
@@ -62,7 +62,7 @@ NDIS_STATUS NdisIfGetNetLuidFromInterfaceIndex(
 
 <dd>
 <p>A network interface index that NDIS assigned to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value in the 
+     <a href="netvista.net_luid">NET_LUID</a> value in the 
      <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">
      NdisIfRegisterInterface</a> function.</p>
 </dd>
@@ -89,7 +89,7 @@ NDIS_STATUS NdisIfGetNetLuidFromInterfaceIndex(
 ## -remarks
 <p>NDIS drivers can call the 
     <b>NdisIfGetNetLuidFromInterfaceIndex</b> function to get the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value that is associated with a network
+    <a href="netvista.net_luid">NET_LUID</a> value that is associated with a network
     interface index.</p>
 
 <p>For the interfaces that the NDIS proxy provider service manages, NDIS provides the interface index and
@@ -105,45 +105,10 @@ NDIS_STATUS NdisIfGetNetLuidFromInterfaceIndex(
 
 <p>Protocol drivers can obtain the interface index and NET_LUID of the highest and the lower interfaces
       on a driver stack in the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a> structure.</p>
+      <a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a> structure.</p>
 
 <p>NDIS assigns an interface index to a network interface when the interface provider calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562715">NdisIfRegisterInterface</a> function.
-    An interface provider calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a> macro to create the
-    NET_LUID value before it registers an interface.</p>
-
-<p>The interface index value can change without a computer restart. Deregistering and re-registering an
-    interface that is associated with a NET_LUID value might result in different interface index values. Do
-    not confuse the interface index with the NET_LUID index that persists after a computer restarts.</p>
-
-<p>NDIS provides the 
-    <a href="..\ndis\nf-ndis-ndisifgetinterfaceindexfromnetluid.md">
-    NdisIfGetInterfaceIndexFromNetLuid</a> function to obtain the interface index for a specified
-    NET_LUID.</p>
-
-<p>NDIS drivers can call the 
-    <b>NdisIfGetNetLuidFromInterfaceIndex</b> function to get the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value that is associated with a network
-    interface index.</p>
-
-<p>For the interfaces that the NDIS proxy provider service manages, NDIS provides the interface index and
-    NET_LUID in various driver initialization structures:</p>
-
-<p>Miniport drivers can obtain the interface index and NET_LUID for a miniport adapter in the 
-      <a href="..\ndis\ns-ndis--ndis-miniport-init-parameters.md">
-      NDIS_MINIPORT_INIT_PARAMETERS</a> structure.</p>
-
-<p>Filter drivers can obtain the interface index and NET_LUID for a filter module in the 
-      <a href="..\ndis\ns-ndis--ndis-filter-attach-parameters.md">
-      NDIS_FILTER_ATTACH_PARAMETERS</a> structure.</p>
-
-<p>Protocol drivers can obtain the interface index and NET_LUID of the highest and the lower interfaces
-      on a driver stack in the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a> structure.</p>
-
-<p>NDIS assigns an interface index to a network interface when the interface provider calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562715">NdisIfRegisterInterface</a> function.
+    <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a> function.
     An interface provider calls the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a> macro to create the
     NET_LUID value before it registers an interface.</p>
@@ -210,7 +175,7 @@ NDIS_STATUS NdisIfGetNetLuidFromInterfaceIndex(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547949">Irql_Interfaces_Function</a>
+<a href="devtest.ndis_irql_interfaces_function">Irql_Interfaces_Function</a>
 </td>
 </tr>
 </table>
@@ -218,28 +183,28 @@ NDIS_STATUS NdisIfGetNetLuidFromInterfaceIndex(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565481">NDIS_FILTER_ATTACH_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-filter-attach-parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565972">NDIS_MINIPORT_INIT_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-miniport-init-parameters.md">NDIS_MINIPORT_INIT_PARAMETERS</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndisifgetinterfaceindexfromnetluid.md">
    NdisIfGetInterfaceIndexFromNetLuid</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562715">NdisIfRegisterInterface</a>
+<a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
+<a href="netvista.net_luid">NET_LUID</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfGetNetLuidFromInterfaceIndex function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfGetNetLuidFromInterfaceIndex function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

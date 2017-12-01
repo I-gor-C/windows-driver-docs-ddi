@@ -7,7 +7,7 @@ old-location: debugger\readmsr2.htm
 old-project: debugger
 ms.assetid: 3ffe53d9-ea57-4561-a889-e6369ef0d5d3
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces, ReadMsr, IDebugDataSpaces::ReadMsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,10 +78,6 @@ HRESULT ReadMsr(
 <p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
-<p>For details on the addresses and values of MSRs, see the processor documentation.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 <p>For details on the addresses and values of MSRs, see the processor documentation.</p>

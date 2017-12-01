@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>D3DDDI_MAKERESIDENT</b> is used with <b>MakeResident</b> (<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-makeresidentcb.md">pfnMakeResidentCb</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/dn906775">D3DKMTMakeResident</a>) to instruct the OS to add a resource to the device residency list and increment the residency reference count on this allocation.</p>
+<p><b>D3DDDI_MAKERESIDENT</b> is used with <b>MakeResident</b> (<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-makeresidentcb.md">pfnMakeResidentCb</a> or <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtmakeresident.md">D3DKMTMakeResident</a>) to instruct the OS to add a resource to the device residency list and increment the residency reference count on this allocation.</p>
 
 
 ## -syntax
@@ -88,7 +88,7 @@ typedef struct D3DDDI_MAKERESIDENT {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] Specifies memory residency behavior as documented in <a href="https://msdn.microsoft.com/library/windows/hardware/dn906324">D3DDDI_MAKERESIDENT_FLAGS</a>.</p>
+<p>[in] Specifies memory residency behavior as documented in <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-makeresident-flags.md">D3DDDI_MAKERESIDENT_FLAGS</a>.</p>
 </dd>
 
 ### -field <b>PagingFenceValue</b>
@@ -143,10 +143,10 @@ typedef struct D3DDDI_MAKERESIDENT {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-makeresidentcb.md">pfnMakeResidentCb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906775">D3DKMTMakeResident</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtmakeresident.md">D3DKMTMakeResident</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906324">D3DDDI_MAKERESIDENT_FLAGS</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi-makeresident-flags.md">D3DDDI_MAKERESIDENT_FLAGS</a>
 </dt>
 </dl>
 <p> </p>

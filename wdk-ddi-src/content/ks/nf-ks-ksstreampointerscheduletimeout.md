@@ -7,7 +7,7 @@ old-location: stream\ksstreampointerscheduletimeout.htm
 old-project: stream
 ms.assetid: 143c4ca2-91ae-49c3-80e0-e7959e4bd297
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsStreamPointerScheduleTimeout
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ void KsStreamPointerScheduleTimeout(
 ### -param <i>StreamPointer</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a> structure representing the stream pointer for which to register a timeout.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer for which to register a timeout.</p>
 </dd>
 
 ### -param <i>Callback</i> [in]
 
 <dd>
-<p>A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556362">AVStrMiniTimeoutCallback</a> routine. If the stream pointer has not been deleted or the timeout canceled before the interval expires, AVStream calls this routine immediately following expiration of the interval.</p>
+<p>A pointer to a minidriver-supplied <a href="stream.avstrminitimeoutcallback">AVStrMiniTimeoutCallback</a> routine. If the stream pointer has not been deleted or the timeout canceled before the interval expires, AVStream calls this routine immediately following expiration of the interval.</p>
 </dd>
 
 ### -param <i>Interval</i> [in]
@@ -79,8 +79,6 @@ void KsStreamPointerScheduleTimeout(
 <p>None</p>
 
 ## -remarks
-<p>It is safe to call <b>KsStreamPointerScheduleTimeout</b> on a stream pointer that already has a timeout scheduled. In this case, AVStream cancels the previous timeout and replaces it with the new timeout.</p><p class="note">Also see <a href="NULL">Stream Pointers</a>.</p>
-
 <p>It is safe to call <b>KsStreamPointerScheduleTimeout</b> on a stream pointer that already has a timeout scheduled. In this case, AVStream cancels the previous timeout and replaces it with the new timeout.</p><p class="note">Also see <a href="NULL">Stream Pointers</a>.</p>
 
 ## -requirements
@@ -128,15 +126,15 @@ void KsStreamPointerScheduleTimeout(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567128">KsStreamPointerCancelTimeout</a>
+<a href="..\ks\nf-ks-ksstreampointercanceltimeout.md">KsStreamPointerCancelTimeout</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567130">KsStreamPointerDelete</a>
+<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a>
+<a href="..\ks\ns-ks--ksstream-pointer.md">KSSTREAM_POINTER</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerScheduleTimeout function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerScheduleTimeout function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -78,7 +78,7 @@ typedef struct _HUB_INFO_FROM_PARENT {
 ### -field <b>DeviceDescriptor</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.</p>
+<p>A <a href="..\usbspec\ns-usbspec--usb-device-descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.</p>
 </dd>
 
 ### -field <b>U1ExitLatency</b>
@@ -146,7 +146,7 @@ typedef struct _HUB_INFO_FROM_PARENT {
 ### -field <b>HubFlags</b>
 
 <dd>
-<p>A bitwise-OR of <a href="https://msdn.microsoft.com/library/windows/hardware/mt188025">PARENT_HUB_FLAGS</a> flags.</p>
+<p>A bitwise-OR of <a href="buses._parent_hub_flags">PARENT_HUB_FLAGS</a> flags.</p>
 </dd>
 
 ### -field <b>SublinkSpeedAttr</b>

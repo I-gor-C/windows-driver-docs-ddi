@@ -71,15 +71,9 @@ typedef BOOLEAN (*PPARALLEL_TRY_ALLOCATE_ROUTINE)(
 <p> </p>
 
 ## -remarks
-<p>To obtain a pointer to the system-supplied <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> callback, a kernel-mode driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544002">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a> request, which returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544322">PARALLEL_PORT_INFORMATION</a> structure. The <b>TryAllocatePort</b> member of the PARALLEL_PORT_INFORMATION structure is a pointer to this callback.</p>
+<p>To obtain a pointer to the system-supplied <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> callback, a kernel-mode driver uses an <a href="..\parallel\ni-parallel-ioctl-internal-get-parallel-port-info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a> request, which returns a <a href="..\parallel\ns-parallel--parallel-port-information.md">PARALLEL_PORT_INFORMATION</a> structure. The <b>TryAllocatePort</b> member of the PARALLEL_PORT_INFORMATION structure is a pointer to this callback.</p>
 
-<p>A driver can use the <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> callback to allocate a parallel port instead of using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544023">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a> request. This callback is nonblocking, does not queue a port allocate request, and returns immediately.</p>
-
-<p>For more information about allocating a parallel port, see <a href="https://msdn.microsoft.com/ea3a1998-9e31-4047-9193-6b402db222c9">Synchronizing the Use of a ParallelPort</a>.</p>
-
-<p>To obtain a pointer to the system-supplied <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> callback, a kernel-mode driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544002">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a> request, which returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544322">PARALLEL_PORT_INFORMATION</a> structure. The <b>TryAllocatePort</b> member of the PARALLEL_PORT_INFORMATION structure is a pointer to this callback.</p>
-
-<p>A driver can use the <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> callback to allocate a parallel port instead of using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544023">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a> request. This callback is nonblocking, does not queue a port allocate request, and returns immediately.</p>
+<p>A driver can use the <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> callback to allocate a parallel port instead of using an <a href="..\parallel\ni-parallel-ioctl-internal-parallel-port-allocate.md">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a> request. This callback is nonblocking, does not queue a port allocate request, and returns immediately.</p>
 
 <p>For more information about allocating a parallel port, see <a href="https://msdn.microsoft.com/ea3a1998-9e31-4047-9193-6b402db222c9">Synchronizing the Use of a ParallelPort</a>.</p>
 
@@ -118,22 +112,22 @@ typedef BOOLEAN (*PPARALLEL_TRY_ALLOCATE_ROUTINE)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544002">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-get-parallel-port-info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544023">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-port-allocate.md">IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544026">IOCTL_INTERNAL_PARALLEL_PORT_FREE</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-port-free.md">IOCTL_INTERNAL_PARALLEL_PORT_FREE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544322">PARALLEL_PORT_INFORMATION</a>
+<a href="..\parallel\ns-parallel--parallel-port-information.md">PARALLEL_PORT_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544509">PPARALLEL_FREE_ROUTINE</a>
+<a href="..\parallel\nc-parallel-pparallel-free-routine.md">PPARALLEL_FREE_ROUTINE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544532">PPARALLEL_QUERY_WAITERS_ROUTINE</a>
+<a href="..\parallel\nc-parallel-pparallel-query-waiters-routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a>
 </dt>
 </dl>
 <p> </p>

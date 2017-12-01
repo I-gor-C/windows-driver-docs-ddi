@@ -73,11 +73,7 @@ VOID __cdecl wiasDebugTrace(
 <p>On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).</p>
 
 ## -remarks
-<p>The wiasDebugTrace function is not recommended for Windows XP and later. For Windows XP use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549600">WIAS_LTRACE</a> macro instead. For Windows Vista use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549619">WIAS_TRACE</a> macro instead.</p>
-
-<p>To enable tracing in free builds, drivers must define the WIAS_DEBUG macro. Tracing is enabled by default in checked and debug builds of the operating system.</p>
-
-<p>The wiasDebugTrace function is not recommended for Windows XP and later. For Windows XP use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549600">WIAS_LTRACE</a> macro instead. For Windows Vista use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549619">WIAS_TRACE</a> macro instead.</p>
+<p>The wiasDebugTrace function is not recommended for Windows XP and later. For Windows XP use the <a href="..\wiamdef\nf-wiamdef-wias-ltrace.md">WIAS_LTRACE</a> macro instead. For Windows Vista use the <a href="..\wiamdef\nf-wiamdef-wias-trace.md">WIAS_TRACE</a> macro instead.</p>
 
 <p>To enable tracing in free builds, drivers must define the WIAS_DEBUG macro. Tracing is enabled by default in checked and debug builds of the operating system.</p>
 
@@ -136,10 +132,10 @@ VOID __cdecl wiasDebugTrace(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549600">WIAS_LTRACE</a>
+<a href="..\wiamdef\nf-wiamdef-wias-ltrace.md">WIAS_LTRACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549619">WIAS_TRACE</a>
+<a href="..\wiamdef\nf-wiamdef-wias-trace.md">WIAS_TRACE</a>
 </dt>
 </dl>
 <p> </p>

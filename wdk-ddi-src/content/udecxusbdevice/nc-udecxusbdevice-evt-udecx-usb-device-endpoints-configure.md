@@ -63,7 +63,7 @@ void EvtUsbDeviceEndpointsConfigure(
 ### -param <i>UdecxUsbDevice</i> [in]
 
 <dd>
-<p>A handle to UDE device object. The client driver created this object in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>.</p>
+<p>A handle to UDE device object. The client driver created this object in a previous call to <a href="buses.udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.</p>
 </dd>
 
 ### -param <i>Request</i> [in]
@@ -75,7 +75,7 @@ void EvtUsbDeviceEndpointsConfigure(
 ### -param <i>Params</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt627993">UDECX_ENDPOINTS_CONFIGURE_PARAMS</a> structure that describes the configuration options.</p>
+<p>A pointer to a <a href="buses.udecx_endpoints_configure_params">UDECX_ENDPOINTS_CONFIGURE_PARAMS</a> structure that describes the configuration options.</p>
 </dd>
 </dl>
 
@@ -83,26 +83,11 @@ void EvtUsbDeviceEndpointsConfigure(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>The client driver registered this callback function in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627972">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
+<p>The client driver registered this callback function in a previous call to <a href="buses.udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
 
 <p>The class extension invokes this  callback function to request the client driver to configure one or more new endpoints into hardware, and/or informs the driver when one or more existing endpoints is no longer being used. </p>
 
-<p>After creating endpoints, for each new endpoint, the client driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/mt627988">UdecxUsbEndpointSetWdfIoQueue</a> before completing the request.
-</p>
-
-<p>After releasing endpoints, the client driver should not use framework queue objects associated with the endpoints. The class extension considers those queues as purged to prevent future requests.
-</p>
-
-<p>The class extension  can also request a new configuration value or an alternate setting through this callback.</p>
-
-<p>This call is asynchronous. The client driver must signals completion with status by completing the request passed by the class extension. 
-</p>
-
-<p>The client driver registered this callback function in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627972">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.</p>
-
-<p>The class extension invokes this  callback function to request the client driver to configure one or more new endpoints into hardware, and/or informs the driver when one or more existing endpoints is no longer being used. </p>
-
-<p>After creating endpoints, for each new endpoint, the client driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/mt627988">UdecxUsbEndpointSetWdfIoQueue</a> before completing the request.
+<p>After creating endpoints, for each new endpoint, the client driver must call <a href="buses.udecxusbendpointsetwdfioqueue">UdecxUsbEndpointSetWdfIoQueue</a> before completing the request.
 </p>
 
 <p>After releasing endpoints, the client driver should not use framework queue objects associated with the endpoints. The class extension considers those queues as purged to prevent future requests.
@@ -162,13 +147,13 @@ void EvtUsbDeviceEndpointsConfigure(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627988">UdecxUsbEndpointSetWdfIoQueue</a>
+<a href="buses.udecxusbendpointsetwdfioqueue">UdecxUsbEndpointSetWdfIoQueue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

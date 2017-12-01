@@ -813,10 +813,6 @@ typedef enum _D3DDDIFORMAT {
 ## -remarks
 <p>Note that formats are supplied by hardware vendors and many FOURCC codes are not listed in the D3DDDIFORMAT enumeration type. The formats in D3DDDIFORMAT are unique because they are sanctioned by the Microsoft Direct3D runtime; that is, the reference rasterizer operates on all of them. Vendors support vendor-supplied formats on a card-by-card basis.</p>
 
-<p>Note that formats are supplied by hardware vendors and many FOURCC codes are not listed in the D3DDDIFORMAT enumeration type. The formats in D3DDDIFORMAT are unique because they are sanctioned by the Microsoft Direct3D runtime; that is, the reference rasterizer operates on all of them. Vendors support vendor-supplied formats on a card-by-card basis.</p>
-
-<p>Note that formats are supplied by hardware vendors and many FOURCC codes are not listed in the D3DDDIFORMAT enumeration type. The formats in D3DDDIFORMAT are unique because they are sanctioned by the Microsoft Direct3D runtime; that is, the reference rasterizer operates on all of them. Vendors support vendor-supplied formats on a card-by-card basis.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -842,7 +838,7 @@ typedef enum _D3DDDIFORMAT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542963">D3DDDIARG_CREATERESOURCE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddiarg-createresource.md">D3DDDIARG_CREATERESOURCE</a>
 </dt>
 <dt>
 <a href="direct3ddxgi.dxgi_format">DXGI_FORMAT</a>

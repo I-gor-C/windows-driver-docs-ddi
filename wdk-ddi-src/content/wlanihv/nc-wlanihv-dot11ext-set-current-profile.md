@@ -7,7 +7,7 @@ old-location: netvista\dot11extsetcurrentprofile.htm
 old-project: netvista
 ms.assetid: 2fcf4f93-8d50-44e1-a657-d98b7b00bcfc
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -127,33 +126,6 @@ DWORD WINAPI * Dot11ExtSetCurrentProfile(
       the one which is processing the call to 
       <i>Dot11ExtIhvPerformPreAssociate</i>.</p>
 
-<p>The 
-    <b>Dot11ExtSetCurrentProfile</b> function allows the IHV to add custom
-    connectivity and security profile fragments to the current network profile used for the basic service set
-    (BSS) network connection. The profile fragments are IHV-specific and are applicable to connectivity or
-    security extensions available to the user through the 
-    <a href="netvista.native_802_11_ihv_ui_extensions_dll">Native 802.11 IHV UI Extensions
-    DLL</a>.</p>
-
-<p>The IHV Extensions DLL must follow these guidelines when calling the 
-    <b>Dot11ExtSetCurrentProfile</b> function:</p>
-
-<p>The IHV Extensions DLL must only call 
-      <b>Dot11ExtSetCurrentProfile</b> when performing a pre-association operation
-      initiated through a call to the 
-      <a href="..\wlanihv\nc-wlanihv-dot11extihv-perform-pre-associate.md">
-      Dot11ExtIhvPerformPreAssociate</a> IHV Handler function. For more information about the
-      pre-association operation, see 
-      <a href="netvista.pre_association_operations">Pre-Association Operation</a>.</p>
-
-<p>The IHV Extensions DLL must not call 
-      <b>Dot11ExtSetCurrentProfile</b> from within the call to the 
-      <a href="..\wlanihv\nc-wlanihv-dot11extihv-perform-pre-associate.md">
-      Dot11ExtIhvPerformPreAssociate</a> IHV Handler function. 
-      <b>Dot11ExtSetCurrentProfile</b> must be called from a different thread than
-      the one which is processing the call to 
-      <i>Dot11ExtIhvPerformPreAssociate</i>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -194,7 +166,7 @@ DWORD WINAPI * Dot11ExtSetCurrentProfile(
    DOT11EXT_IHV_CONNECTIVITY_PROFILE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547632">DOT11EXT_IHV_SECURITY_PROFILE</a>
+<a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-security-profile.md">DOT11EXT_IHV_SECURITY_PROFILE</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a>
@@ -206,4 +178,4 @@ DWORD WINAPI * Dot11ExtSetCurrentProfile(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_CURRENT_PROFILE callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_CURRENT_PROFILE callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

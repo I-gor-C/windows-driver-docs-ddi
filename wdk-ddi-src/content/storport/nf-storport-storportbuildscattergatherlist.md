@@ -126,7 +126,7 @@ ExecutionRoutine (
 ### -param <a id="ScatterGather"></a><a id="scattergather"></a><a id="SCATTERGATHER"></a><i>ScatterGather</i>
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567590">STOR_SCATTER_GATHER_LIST</a> structure that contains the scatter/gather list for the specified data buffer.</p>
+<p>A pointer to a <a href="..\storport\ns-storport--stor-scatter-gather-list.md">STOR_SCATTER_GATHER_LIST</a> structure that contains the scatter/gather list for the specified data buffer.</p>
 </dd>
 
 ### -param <a id="Context"></a><a id="context"></a><a id="CONTEXT"></a><i>Context</i>
@@ -153,7 +153,7 @@ ExecutionRoutine (
 ### -param <i>ScatterGatherBuffer</i> [in, out]
 
 <dd>
-<p>A pointer to a miniport-supplied buffer that receives the scatter/gather list. A miniport driver can allocate memory for this buffer by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567031">StorPortAllocatePool</a> routine.</p>
+<p>A pointer to a miniport-supplied buffer that receives the scatter/gather list. A miniport driver can allocate memory for this buffer by calling the <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a> routine.</p>
 </dd>
 
 ### -param <i>ScatterGatherBufferLength</i> [in]
@@ -181,13 +181,9 @@ ExecutionRoutine (
 <p> </p>
 
 ## -remarks
-<p>The miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567463">StorPortPutScatterGatherList</a> to release the resources that <b>StorPortBuildScatterGatherList</b> allocated while constructing the scatter/gather list. </p>
+<p>The miniport driver calls <a href="..\storport\nf-storport-storportputscattergatherlist.md">StorPortPutScatterGatherList</a> to release the resources that <b>StorPortBuildScatterGatherList</b> allocated while constructing the scatter/gather list. </p>
 
-<p>The miniport driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567463">StorPortPutScatterGatherList</a> before freeing or reusing the memory it allocated for the scatter/gather list.</p>
-
-<p>The miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567463">StorPortPutScatterGatherList</a> to release the resources that <b>StorPortBuildScatterGatherList</b> allocated while constructing the scatter/gather list. </p>
-
-<p>The miniport driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567463">StorPortPutScatterGatherList</a> before freeing or reusing the memory it allocated for the scatter/gather list.</p>
+<p>The miniport driver must call <a href="..\storport\nf-storport-storportputscattergatherlist.md">StorPortPutScatterGatherList</a> before freeing or reusing the memory it allocated for the scatter/gather list.</p>
 
 ## -requirements
 <table>
@@ -224,13 +220,13 @@ ExecutionRoutine (
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567031">StorPortAllocatePool</a>
+<a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567463">StorPortPutScatterGatherList</a>
+<a href="..\storport\nf-storport-storportputscattergatherlist.md">StorPortPutScatterGatherList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567590">STOR_SCATTER_GATHER_LIST</a>
+<a href="..\storport\ns-storport--stor-scatter-gather-list.md">STOR_SCATTER_GATHER_LIST</a>
 </dt>
 </dl>
 <p> </p>

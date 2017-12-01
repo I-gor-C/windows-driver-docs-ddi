@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvperformcapabilitymatch.htm
 old-project: netvista
 ms.assetid: c49b23c0-4707-4626-8035-a83ccf7638eb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h, Winclient.h, L2cmn.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -102,7 +101,7 @@ DWORD APIENTRY Dot11ExtIhvPerformCapabilityMatch(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547668">DOT11_BSS_LIST</a> structure, which contains one
+     <a href="..\wlclient\ns-wlclient--dot11-bss-list.md">DOT11_BSS_LIST</a> structure, which contains one
      or more 802.11 Beacon or Probe Response frames received from a BSS network. This list is derived from
      the results of the last scan operation performed by the WLAN adapter. For more information about the
      scan operation, see 
@@ -158,46 +157,6 @@ DWORD APIENTRY Dot11ExtIhvPerformCapabilityMatch(
 
 <p>An appropriate L2_REASON_CODE_xxxx error value.</p>
 
-<p>An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_CODE_IHV_BASE+
-        L2_REASON_CODE_GROUP_SIZE-1).</p>
-
-<p>In this situation, the 
-      <i>Dot11ExtIhvPerformCapabilityMatch</i> function must not return ERROR_SUCCESS.</p>
-
-<p>For more information about the Native 802.11 XML schema, refer to the Microsoft Windows SDK
-    documentation.</p>
-
-<p>After the WLAN adapter has completed a scan operation to detect the BSS networks within range, the
-    operating system might call the 
-    <i>Dot11ExtIhvPerformCapabilityMatch</i> function to determine whether any of the detected BSS networks
-    matches the connectivity or security profile extensions defined by the IHV.</p>
-
-<p>When the 
-    <i>Dot11ExtIhvPerformCapabilityMatch</i> function is called, the IHV Extensions DLL must follow these
-    guidelines.</p>
-
-<p>If the IHV Extensions DLL finds at least one IEEE 802.11 Beacon or Probe Response frame that matches
-      the profile fragments, it must set *
-      <i>pdwReasonCode</i> to one of the following:</p>
-
-<p>L2_REASON_CODE_SUCCESS.</p>
-
-<p>An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_CODE_IHV_BASE+
-        L2_REASON_CODE_GROUP_SIZE-1).</p>
-
-<p>In this situation, the 
-      <i>Dot11ExtIhvPerformCapabilityMatch</i> function must return ERROR_SUCCESS.</p>
-
-<p>If the IHV Extensions DLL does not find an IEEE 802.11 Beacon or Probe Response frame that matches
-      the profile fragments, it must not set 
-      <i>*pdwReasonCode</i> to L2_REASON_CODE_SUCCESS. Instead, the DLL must set *
-      <i>pdwReasonCode</i> to one of the following:</p>
-
-<p>An appropriate L2_REASON_CODE_xxxx error value.</p>
-
-<p>An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_CODE_IHV_BASE+
-        L2_REASON_CODE_GROUP_SIZE-1).</p>
-
 <p>In this situation, the 
       <i>Dot11ExtIhvPerformCapabilityMatch</i> function must not return ERROR_SUCCESS.</p>
 
@@ -240,17 +199,17 @@ DWORD APIENTRY Dot11ExtIhvPerformCapabilityMatch(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547668">DOT11_BSS_LIST</a>
+<a href="..\wlclient\ns-wlclient--dot11-bss-list.md">DOT11_BSS_LIST</a>
 </dt>
 <dt>
 <a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-connectivity-profile.md">
    DOT11EXT_IHV_CONNECTIVITY_PROFILE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547630">DOT11EXT_IHV_PROFILE_PARAMS</a>
+<a href="..\wlanihvtypes\ns-wlanihvtypes--dot11ext-ihv-profile-params.md">DOT11EXT_IHV_PROFILE_PARAMS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547632">DOT11EXT_IHV_SECURITY_PROFILE</a>
+<a href="..\wlanihv\ns-wlanihv--dot11ext-ihv-security-profile.md">DOT11EXT_IHV_SECURITY_PROFILE</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a>
@@ -258,4 +217,4 @@ DWORD APIENTRY Dot11ExtIhvPerformCapabilityMatch(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PERFORM_CAPABILITY_MATCH callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PERFORM_CAPABILITY_MATCH callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_power_mode_reason_code.htm
 old-project: netvista
 ms.assetid: F9FAA622-A844-4D9F-A0E6-D919C1FAD3AB
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

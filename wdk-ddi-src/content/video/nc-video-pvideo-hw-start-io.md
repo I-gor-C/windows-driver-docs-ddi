@@ -68,7 +68,7 @@ BOOLEAN HwVidStartIO(
 ### -param <i>RequestPacket</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570547">VIDEO_REQUEST_PACKET</a> structure, which contains all the parameters originally passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564838">EngDeviceIoControl</a>.</p>
+<p>Pointer to a <a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a> structure, which contains all the parameters originally passed to <a href="display.engdeviceiocontrol">EngDeviceIoControl</a>.</p>
 </dd>
 </dl>
 
@@ -78,25 +78,7 @@ BOOLEAN HwVidStartIO(
 ## -remarks
 <p>Every video miniport driver must have a <i>HwVidStartIO</i> function.</p>
 
-<p>The video port driver calls <i>HwVidStartIO</i> in response to each GDI <a href="https://msdn.microsoft.com/library/windows/hardware/ff564838">EngDeviceIoControl</a> request, which originates in the corresponding display driver. When <i>HwVidStartIO</i> is called, the miniport driver owns the input video request packet until it completes the requested operation. <i>HwVidStartIO</i> must do the following:</p>
-
-<p>Look at the <b>IoControlCode</b> member of the <a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> to determine the operation being requested by the display driver.</p>
-
-<p>Check that the VRP <b>InputBufferLength</b> and/or <b>OutputBufferLength</b> indicates a buffer that is large enough to satisfy the request. The miniport driver should return an error if either buffer is too small.</p>
-
-<p>Satisfy the request.</p>
-
-<p>Set the <b>Status</b> and <b>Information</b> members in the <a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> and return <b>TRUE</b>.</p>
-
-<p>The system video port driver serializes all requests. A miniport driver need not perform any serialization of its own unless it has a <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> function.</p>
-
-<p>However, every miniport driver's <i>HwVidStartIO</i> function must complete each requested operation or set an appropriate error in the VRP's <b>StatusBlock</b> before it returns control.</p>
-
-<p><i>HwVidStartIO</i> should be made pageable.</p>
-
-<p>Every video miniport driver must have a <i>HwVidStartIO</i> function.</p>
-
-<p>The video port driver calls <i>HwVidStartIO</i> in response to each GDI <a href="https://msdn.microsoft.com/library/windows/hardware/ff564838">EngDeviceIoControl</a> request, which originates in the corresponding display driver. When <i>HwVidStartIO</i> is called, the miniport driver owns the input video request packet until it completes the requested operation. <i>HwVidStartIO</i> must do the following:</p>
+<p>The video port driver calls <i>HwVidStartIO</i> in response to each GDI <a href="display.engdeviceiocontrol">EngDeviceIoControl</a> request, which originates in the corresponding display driver. When <i>HwVidStartIO</i> is called, the miniport driver owns the input video request packet until it completes the requested operation. <i>HwVidStartIO</i> must do the following:</p>
 
 <p>Look at the <b>IoControlCode</b> member of the <a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> to determine the operation being requested by the display driver.</p>
 
@@ -139,13 +121,13 @@ BOOLEAN HwVidStartIO(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570515">Video Miniport Driver I/O Control Codes</a>
+<a href="display.video_miniport_driver_i_o_control_codes">Video Miniport Driver I/O Control Codes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570547">VIDEO_REQUEST_PACKET</a>
+<a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570372">VideoPortSynchronizeExecution</a>
+<a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>
 </dt>
 </dl>
 <p> </p>

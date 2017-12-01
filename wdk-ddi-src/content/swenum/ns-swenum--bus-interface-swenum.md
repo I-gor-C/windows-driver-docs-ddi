@@ -7,7 +7,7 @@ old-location: stream\bus_interface_swenum.htm
 old-project: stream
 ms.assetid: 7e667dd9-8ed1-49ef-a6ef-0d079d41db86
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BUS_INTERFACE_SWENUM, BUS_INTERFACE_SWENUM, *PBUS_INTERFACE_SWENUM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,25 +61,25 @@ typedef struct _BUS_INTERFACE_SWENUM {
 ### -field <b>Interface</b>
 
 <dd>
-<p>Specifies the exported <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a>.</p>
+<p>Specifies the exported <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a>.</p>
 </dd>
 
 ### -field <b>ReferenceDeviceObject</b>
 
 <dd>
-<p>Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff566763">KsReferenceSoftwareBusObject</a> routine.</p>
+<p>Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksreferencesoftwarebusobject.md">KsReferenceSoftwareBusObject</a> routine.</p>
 </dd>
 
 ### -field <b>DereferenceDeviceObject</b>
 
 <dd>
-<p>Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff561678">KsDereferenceSoftwareBusObject</a> routine.</p>
+<p>Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksdereferencesoftwarebusobject.md">KsDereferenceSoftwareBusObject</a> routine.</p>
 </dd>
 
 ### -field <b>QueryReferenceString</b>
 
 <dd>
-<p>Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff566749">KsQuerySoftwareBusInterface</a> routine.</p>
+<p>Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksquerysoftwarebusinterface.md">KsQuerySoftwareBusInterface</a> routine.</p>
 </dd>
 </dl>
 

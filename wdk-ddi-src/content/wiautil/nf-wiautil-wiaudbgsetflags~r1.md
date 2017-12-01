@@ -198,7 +198,7 @@ inline DWORD __stdcall wiauDbgSetFlags(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549643">wiauDbgFlags</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgflags.md">wiauDbgFlags</a>
 </dt>
 </dl>
 <p> </p>

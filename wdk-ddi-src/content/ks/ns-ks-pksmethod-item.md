@@ -7,7 +7,7 @@ old-location: stream\ksmethod_item.htm
 old-project: stream
 ms.assetid: 79119458-a6a7-433e-9306-d7a56ca056c2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSMETHOD_ITEM, KSMETHOD_ITEM, *PKSMETHOD_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ typedef struct {
 ### -field <b>MethodHandler</b>
 
 <dd>
-<p>Pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567191">KStrMethodHandler</a> callback routine.</p>
+<p>Pointer to a minidriver-supplied <a href="stream.kstrmethodhandler">KStrMethodHandler</a> callback routine.</p>
 </dd>
 
 ### -field <b>MethodSupported</b>
@@ -95,7 +95,7 @@ typedef struct {
 ### -field <b>SupportHandler</b>
 
 <dd>
-<p>Pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567206">KStrSupportHandler</a> callback routine.</p>
+<p>Pointer to a minidriver-supplied <a href="stream.kstrsupporthandler">KStrSupportHandler</a> callback routine.</p>
 </dd>
 
 ### -field <b>Flags</b>
@@ -172,15 +172,15 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567206">KStrSupportHandler</a>
+<a href="stream.kstrsupporthandler">KStrSupportHandler</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561944">KSFASTMETHOD_ITEM</a>
+<a href="stream.ksfastmethod_item">KSFASTMETHOD_ITEM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563398">KSMETHOD</a>
+<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSMETHOD_ITEM structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSMETHOD_ITEM structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

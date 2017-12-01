@@ -69,7 +69,7 @@ HRESULT GetOptionAttribute(
 ### -param <i>pszOptionKeyword</i> [in]
 
 <dd>
-<p>A pointer to a caller-supplied buffer that contains an ANSI string that specifies the option keyword to query for. This value can be obtained from a prior call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff551987">IPrintCoreHelperPS::EnumOptions</a>.</p>
+<p>A pointer to a caller-supplied buffer that contains an ANSI string that specifies the option keyword to query for. This value can be obtained from a prior call to <a href="print.iprintcorehelperps_enumoptions">IPrintCoreHelperPS::EnumOptions</a>.</p>
 </dd>
 
 ### -param <i>pszAttribute</i> [in]
@@ -81,7 +81,7 @@ HRESULT GetOptionAttribute(
 ### -param <i>pdwDataType</i> [out]
 
 <dd>
-<p>A pointer to a variable that receives a value that specifies the data type of the requested attribute. This value is an enumerator of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548692">EATTRIBUTE_DATATYPE</a> enumeration type, which is defined in printoem.h.</p>
+<p>A pointer to a variable that receives a value that specifies the data type of the requested attribute. This value is an enumerator of the <a href="..\printoem\ne-printoem--eattribute-datatype.md">EATTRIBUTE_DATATYPE</a> enumeration type, which is defined in printoem.h.</p>
 </dd>
 
 ### -param <i>pbData</i> [out]
@@ -113,11 +113,7 @@ HRESULT GetOptionAttribute(
 <p> </p>
 
 ## -remarks
-<p>If <b>IPrintCoreHelperPS::GetOptionAttribute </b>is called with its <i>pszAttribute</i> and <i>pbData</i> parameters set to <b>NULL</b>, the method returns with *<i>pcbSize</i> set to the number of bytes that are needed for the list of all of the supported attribute names for the option. If this method is called a second time, with <i>pszAttribute</i> set to <b>NULL</b> and <i>pbData</i> pointing to a buffer of the size that was specified in *<i>pcbSize</i> in the previous call, the method returns with *<i>pdwDataType</i> set to kADT_ASCII (an enumerator of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548692">EATTRIBUTE_DATATYPE</a> enumeration type) and <i>pbData</i> pointing to a NULL-delimited list of all of the supported attribute names for the option. This list is terminated with two null characters.</p>
-
-<p>For more information about <b>IPrintCoreHelperPS::GetOptionAttribute</b>, see <a href="NULL">Using GetOptionAttribute</a>.</p>
-
-<p>If <b>IPrintCoreHelperPS::GetOptionAttribute </b>is called with its <i>pszAttribute</i> and <i>pbData</i> parameters set to <b>NULL</b>, the method returns with *<i>pcbSize</i> set to the number of bytes that are needed for the list of all of the supported attribute names for the option. If this method is called a second time, with <i>pszAttribute</i> set to <b>NULL</b> and <i>pbData</i> pointing to a buffer of the size that was specified in *<i>pcbSize</i> in the previous call, the method returns with *<i>pdwDataType</i> set to kADT_ASCII (an enumerator of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548692">EATTRIBUTE_DATATYPE</a> enumeration type) and <i>pbData</i> pointing to a NULL-delimited list of all of the supported attribute names for the option. This list is terminated with two null characters.</p>
+<p>If <b>IPrintCoreHelperPS::GetOptionAttribute </b>is called with its <i>pszAttribute</i> and <i>pbData</i> parameters set to <b>NULL</b>, the method returns with *<i>pcbSize</i> set to the number of bytes that are needed for the list of all of the supported attribute names for the option. If this method is called a second time, with <i>pszAttribute</i> set to <b>NULL</b> and <i>pbData</i> pointing to a buffer of the size that was specified in *<i>pcbSize</i> in the previous call, the method returns with *<i>pdwDataType</i> set to kADT_ASCII (an enumerator of the <a href="..\printoem\ne-printoem--eattribute-datatype.md">EATTRIBUTE_DATATYPE</a> enumeration type) and <i>pbData</i> pointing to a NULL-delimited list of all of the supported attribute names for the option. This list is terminated with two null characters.</p>
 
 <p>For more information about <b>IPrintCoreHelperPS::GetOptionAttribute</b>, see <a href="NULL">Using GetOptionAttribute</a>.</p>
 
@@ -148,10 +144,10 @@ HRESULT GetOptionAttribute(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551998">IPrintCoreHelperPS::GetFeatureAttribute</a>
+<a href="print.iprintcorehelperps_getfeatureattribute">IPrintCoreHelperPS::GetFeatureAttribute</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552899">IPrintCoreHelperPS::GetGlobalAttribute</a>
+<a href="print.iprintcorehelperps_getglobalattribute">IPrintCoreHelperPS::GetGlobalAttribute</a>
 </dt>
 </dl>
 <p> </p>

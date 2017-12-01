@@ -57,7 +57,7 @@ NTSTATUS D3DKMTOpenAdapterFromHdc(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548121">D3DKMT_OPENADAPTERFROMHDC</a> structure that describes the parameters that are required to perform the mapping.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openadapterfromhdc.md">D3DKMT_OPENADAPTERFROMHDC</a> structure that describes the parameters that are required to perform the mapping.</p>
 </dd>
 </dl>
 
@@ -75,10 +75,6 @@ NTSTATUS D3DKMTOpenAdapterFromHdc(
 <p>This function might also return other <b>NTSTATUS</b> values.</p>
 
 ## -remarks
-<p>A graphics adapter corresponds to a video card. A monitor output corresponds to a head on a video card. A system with a single video card contains only one adapter. However, if the video card supports multiple heads, it supports outputting to multiple monitors.</p>
-
-<p>The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTOpenAdapterFromHdc</b> to retrieve the graphics adapter handle and the output for the primary monitor from the HDC.</p>
-
 <p>A graphics adapter corresponds to a video card. A monitor output corresponds to a head on a video card. A system with a single video card contains only one adapter. However, if the video card supports multiple heads, it supports outputting to multiple monitors.</p>
 
 <p>The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTOpenAdapterFromHdc</b> to retrieve the graphics adapter handle and the output for the primary monitor from the HDC.</p>
@@ -138,7 +134,7 @@ NTSTATUS D3DKMTOpenAdapterFromHdc(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548121">D3DKMT_OPENADAPTERFROMHDC</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openadapterfromhdc.md">D3DKMT_OPENADAPTERFROMHDC</a>
 </dt>
 </dl>
 <p> </p>

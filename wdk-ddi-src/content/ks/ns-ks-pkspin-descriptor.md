@@ -7,7 +7,7 @@ old-location: stream\kspin_descriptor.htm
 old-project: stream
 ms.assetid: 0e7fccd1-1ced-41e7-8e75-8f4fa496ea06
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR, *PKSPIN_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,7 +79,7 @@ typedef struct {
 ### -field <b>Interfaces</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a> structures specifying the interfaces supported by this pin type.</p>
+<p>An array of <a href="stream.kspin_interface">KSPIN_INTERFACE</a> structures specifying the interfaces supported by this pin type.</p>
 </dd>
 
 ### -field <b>MediumsCount</b>
@@ -91,7 +91,7 @@ typedef struct {
 ### -field <b>Mediums</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a> structures specifying the mediums supported by this pin type.</p>
+<p>An array of <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structures specifying the mediums supported by this pin type.</p>
 </dd>
 
 ### -field <b>DataRangesCount</b>
@@ -103,7 +103,7 @@ typedef struct {
 ### -field <b>DataRanges</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a> structures specifying the data ranges supported by this pin type.</p>
+<p>An array of <a href="stream.ksdatarange">KSDATARANGE</a> structures specifying the data ranges supported by this pin type.</p>
 </dd>
 
 ### -field <b>DataFlow</b>
@@ -145,7 +145,7 @@ typedef struct {
 ### -field <b>ConstrainedDataRanges</b>
 
 <dd>
-<p>Points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a> structures. Indicates the set of data ranges the pin type currently supports, based on the driver's internal state.</p>
+<p>Points to an array of <a href="stream.ksdatarange">KSDATARANGE</a> structures. Indicates the set of data ranges the pin type currently supports, based on the driver's internal state.</p>
 </dd>
 </dl>
 
@@ -172,7 +172,7 @@ typedef struct {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566584">KSPROPSETID_Pin</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a>
+<a href="stream.kspin_medium">KSPIN_MEDIUM</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>
@@ -181,9 +181,9 @@ typedef struct {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565194">KSPROPERTY_PIN_COMMUNICATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
+<a href="stream.ksdatarange">KSDATARANGE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_DESCRIPTOR structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_DESCRIPTOR structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

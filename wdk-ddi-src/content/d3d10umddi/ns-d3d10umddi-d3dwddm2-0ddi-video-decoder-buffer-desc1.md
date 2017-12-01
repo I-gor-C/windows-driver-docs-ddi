@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1</b> is used with  <a href="https://msdn.microsoft.com/library/windows/hardware/dn906377">VideoDecoderSubmitBuffers1</a> to submit one or more buffer for decoding.</p>
+<p><b>D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1</b> is used with  <a href="display.videodecodersubmitbuffers1">VideoDecoderSubmitBuffers1</a> to submit one or more buffer for decoding.</p>
 
 
 ## -syntax
@@ -102,7 +102,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1 {
 ### -field <b>pSubSampleMappingBlock</b>
 
 <dd>
-<p>A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/dn894621">D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</a> structures, which indicate exactly which bytes in the decode buffer are encrypted and which are in the clear.  If the decode buffer does not contain encrypted data, set this member to <b>NULL</b>.
+<p>A pointer to an array of <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-decoder-sub-sample-mapping-block.md">D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</a> structures, which indicate exactly which bytes in the decode buffer are encrypted and which are in the clear.  If the decode buffer does not contain encrypted data, set this member to <b>NULL</b>.
 
 </p>
 <p>Values in the sub sample mapping blocks are relative to the start of the decode buffer.
@@ -112,7 +112,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1 {
 ### -field <b>SubSampleMappingCount</b>
 
 <dd>
-<p>The number of <a href="https://msdn.microsoft.com/library/windows/hardware/dn894621">D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</a> structures specified in the <b>pSubSampleMappingBlocks</b> member. If <b>pSubSampleMappingBLocks</b> is <b>NULL</b>, set this member to zero.</p>
+<p>The number of <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-decoder-sub-sample-mapping-block.md">D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</a> structures specified in the <b>pSubSampleMappingBlocks</b> member. If <b>pSubSampleMappingBLocks</b> is <b>NULL</b>, set this member to zero.</p>
 </dd>
 </dl>
 
@@ -155,7 +155,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1 {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createresource.md">CreateResource</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn894621">D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-video-decoder-sub-sample-mapping-block.md">D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

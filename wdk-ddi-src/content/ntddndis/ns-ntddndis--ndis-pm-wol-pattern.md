@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_wol_pattern.htm
 old-project: netvista
 ms.assetid: 2ca1fdbe-efd3-4607-aab1-751e6d5d025b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_PM_WOL_PATTERN, NDIS_PM_WOL_PATTERN, *PNDIS_PM_WOL_PATTERN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,7 +89,7 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 ### -field <b>Header</b>
 
 <dd>
-<p>The type, revision, and size of the <b>NDIS_PM_WOL_PATTERN</b> structure. This member is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.</p>
+<p>The type, revision, and size of the <b>NDIS_PM_WOL_PATTERN</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
 <p>The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_PM_WOL_PATTERN</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: </p>
 <p></p>
 <dl>
@@ -97,7 +97,7 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 ### -field <a id="NDIS_PM_WOL_PATTERN_REVISION_2"></a><a id="ndis_pm_wol_pattern_revision_2"></a>NDIS_PM_WOL_PATTERN_REVISION_2
 
 <dd>
-<p>Revisions made to  the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566766">NDIS_PM_WOL_PACKET</a> enumeration for NDIS 6.30.</p>
+<p>Revisions made to  the <a href="..\ntddndis\ne-ntddndis--ndis-pm-wol-packet.md">NDIS_PM_WOL_PACKET</a> enumeration for NDIS 6.30.</p>
 <p>Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_WOL_PATTERN_REVISION_2.</p>
 </dd>
 
@@ -152,7 +152,7 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 
 <dd>
 <p>An 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566766">NDIS_PM_WOL_PACKET</a> enumeration value that
+     <a href="..\ntddndis\ne-ntddndis--ndis-pm-wol-packet.md">NDIS_PM_WOL_PACKET</a> enumeration value that
      specifies the type of the WOL packet.</p>
 </dd>
 
@@ -160,7 +160,7 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 
 <dd>
 <p>An 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566753">NDIS_PM_COUNTED_STRING</a> structure
+     <a href="..\ntddndis\ns-ntddndis--ndis-pm-counted-string.md">NDIS_PM_COUNTED_STRING</a> structure
      that contains the user-readable description of the WOL packet.</p>
 </dd>
 
@@ -389,10 +389,10 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566766">NDIS_PM_WOL_PACKET</a>
+<a href="..\ntddndis\ne-ntddndis--ndis-pm-wol-packet.md">NDIS_PM_WOL_PACKET</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569764">OID_PM_ADD_WOL_PATTERN</a>
@@ -401,9 +401,9 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569772">OID_PM_WOL_PATTERN_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566753">NDIS_PM_COUNTED_STRING</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-pm-counted-string.md">NDIS_PM_COUNTED_STRING</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WOL_PATTERN structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WOL_PATTERN structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -77,7 +77,7 @@ typedef struct _MEMORY_REGION {
 </dl>
 
 ## -remarks
-<p>The <b>DumpRegion</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structure holds a MEMORY_REGION structure that describes a region of physically contiguous memory that a miniport driver can use during a crash dump. </p>
+<p>The <b>DumpRegion</b> member of the <a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a> structure holds a MEMORY_REGION structure that describes a region of physically contiguous memory that a miniport driver can use during a crash dump. </p>
 
 ## -requirements
 <table>
@@ -96,7 +96,7 @@ typedef struct _MEMORY_REGION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>
+<a href="..\strmini\ns-strmini--port-configuration-information~r1.md">PORT_CONFIGURATION_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

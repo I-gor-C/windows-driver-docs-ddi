@@ -7,7 +7,7 @@ old-location: debugger\readio.htm
 old-project: debugger
 ms.assetid: d690cf53-63a6-487c-a952-07035786d19c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces, ReadIo, IDebugDataSpaces::ReadIo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -113,8 +113,6 @@ HRESULT ReadIo(
 <p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 ## -requirements

@@ -92,7 +92,7 @@ typedef struct _FILE_STREAM_INFORMATION {
 ## -remarks
 <p>The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file. This operation can be performed in either of the following ways: </p>
 
-<p>By calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543439">FltQueryInformationFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567052">ZwQueryInformationFile</a> and specifying FileStreamInformation for the <i>FileInformationClass</i> parameter. On return, the <i>FileInformation</i> buffer contains a FILE_STREAM_INFORMATION structure for each file stream. </p>
+<p>By calling <a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a> or <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> and specifying FileStreamInformation for the <i>FileInformationClass</i> parameter. On return, the <i>FileInformation</i> buffer contains a FILE_STREAM_INFORMATION structure for each file stream. </p>
 
 <p>By sending an IRP_MJ_QUERY_INFORMATION request to the file system and specifying FileStreamInformation for the <i>FileInformationClass</i> parameter. On return, <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a FILE_STREAM_INFORMATION structure for each file stream. </p>
 
@@ -106,13 +106,13 @@ typedef struct _FILE_STREAM_INFORMATION {
 
 <p>For a named data stream, NTFS appends ":$DATA" to the stream name. For example, for a user data stream with the name "Authors," NTFS returns ":Authors:$DATA" as the <b>StreamName</b>. </p>
 
-<p>When calling a routine such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a> to open a named file stream, the ":$DATA" portion of the name can be omitted. For example, to open the "Authors" stream of a file named "Book," the caller can specify "Book:Authors" or "Book:Authors:$DATA" as the stream name. Both names are equivalent. </p>
+<p>When calling a routine such as <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> to open a named file stream, the ":$DATA" portion of the name can be omitted. For example, to open the "Authors" stream of a file named "Book," the caller can specify "Book:Authors" or "Book:Authors:$DATA" as the stream name. Both names are equivalent. </p>
 
-<p>The size of the buffer passed in the <i>FileInformation</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543439">FltQueryInformationFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567052">ZwQueryInformationFile</a> must be at least <b>sizeof</b> (FILE_STREAM_INFORMATION). If this buffer is not large enough to hold a FILE_STREAM_INFORMATION structure for each file stream, <b>FltQueryInformationFile</b> or <b>ZwQueryInformationFile</b> returns STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. Because such an unsuccessful call to <b>FltQueryInformationFile</b> or <b>ZwQueryInformationFile</b> does not return the required buffer size, filter drivers must make one or more additional calls to <b>FltQueryInformationFile</b> or <b>ZwQueryInformationFile</b>, passing a larger buffer in each call, until the buffer is large enough. </p>
+<p>The size of the buffer passed in the <i>FileInformation</i> parameter to <a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a> or <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> must be at least <b>sizeof</b> (FILE_STREAM_INFORMATION). If this buffer is not large enough to hold a FILE_STREAM_INFORMATION structure for each file stream, <b>FltQueryInformationFile</b> or <b>ZwQueryInformationFile</b> returns STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. Because such an unsuccessful call to <b>FltQueryInformationFile</b> or <b>ZwQueryInformationFile</b> does not return the required buffer size, filter drivers must make one or more additional calls to <b>FltQueryInformationFile</b> or <b>ZwQueryInformationFile</b>, passing a larger buffer in each call, until the buffer is large enough. </p>
 
 <p>Support for named data streams is file-system-specific. File system filter drivers can determine whether a file system supports named streams in either of the following ways: </p>
 
-<p>By calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567070">ZwQueryVolumeInformationFile</a> and specifying FileFsAttributeInformation for the <i>FsInformationClass</i> parameter. On return, the <i>FsInformation</i> buffer contains a FILE_FS_ATTRIBUTE_INFORMATION structure. If the FILE_NAMED_STREAMS bit is set in the <b>FileSystemAttributes</b> member of this structure, the file system supports named streams. </p>
+<p>By calling <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> or <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a> and specifying FileFsAttributeInformation for the <i>FsInformationClass</i> parameter. On return, the <i>FsInformation</i> buffer contains a FILE_FS_ATTRIBUTE_INFORMATION structure. If the FILE_NAMED_STREAMS bit is set in the <b>FileSystemAttributes</b> member of this structure, the file system supports named streams. </p>
 
 <p>By sending an IRP_MJ_QUERY_VOLUME_INFORMATION request to the file system and specifying FileFsAttributeInformation for the <i>FsInformationClass</i> parameter. On return, <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a FILE_FS_ATTRIBUTE_INFORMATION structure. If the FILE_NAMED_STREAMS bit is set in the <b>FileSystemAttributes</b> member of this structure, the file system supports named streams. </p>
 
@@ -135,25 +135,25 @@ typedef struct _FILE_STREAM_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543439">FltQueryInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549283">IRP_MJ_QUERY_INFORMATION</a>
+<a href="ifsk.irp_mj_query_information">IRP_MJ_QUERY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
+<a href="ifsk.irp_mj_query_volume_information">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567052">ZwQueryInformationFile</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567070">ZwQueryVolumeInformationFile</a>
+<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
 </dt>
 </dl>
 <p> </p>

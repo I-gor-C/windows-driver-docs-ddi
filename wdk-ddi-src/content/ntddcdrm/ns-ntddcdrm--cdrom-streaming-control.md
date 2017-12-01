@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>CDROM_STREAMING_CONTROL</b> structure is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/gg441241">IOCTL_CDROM_ENABLE_STREAMING</a> IOCTL.</p>
+<p>The <b>CDROM_STREAMING_CONTROL</b> structure is used as an input parameter to the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-enable-streaming.md">IOCTL_CDROM_ENABLE_STREAMING</a> IOCTL.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _CDROM_STREAMING_CONTROL {
 ### -field <b>RequestType</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/gg441244">STREAMING_CONTROL_REQUEST_TYPE</a>   enumeration specifies the type of request.</p>
+<p>The <a href="..\ntddcdrm\ne-ntddcdrm--streaming-control-request-type.md">STREAMING_CONTROL_REQUEST_TYPE</a>   enumeration specifies the type of request.</p>
 </dd>
 </dl>
 
@@ -81,10 +81,10 @@ typedef struct _CDROM_STREAMING_CONTROL {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441244">STREAMING_CONTROL_REQUEST_TYPE</a>
+<a href="..\ntddcdrm\ne-ntddcdrm--streaming-control-request-type.md">STREAMING_CONTROL_REQUEST_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441241">IOCTL_CDROM_ENABLE_STREAMING</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-enable-streaming.md">IOCTL_CDROM_ENABLE_STREAMING</a>
 </dt>
 </dl>
 <p> </p>

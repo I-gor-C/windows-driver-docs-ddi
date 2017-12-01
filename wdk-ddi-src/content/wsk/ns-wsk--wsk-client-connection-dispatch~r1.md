@@ -7,7 +7,7 @@ old-location: netvista\wsk_client_connection_dispatch.htm
 old-project: netvista
 ms.assetid: 960eee8a-2950-4baf-b32d-be13b3d65951
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WSK_CLIENT_CONNECTION_DISPATCH, WSK_CLIENT_CONNECTION_DISPATCH, *PWSK_CLIENT_CONNECTION_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -92,15 +91,15 @@ typedef struct _WSK_CLIENT_CONNECTION_DISPATCH {
     in one of the following ways:</p>
 
 <p>When calling the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a> function to create a
+      <a href="..\wsk\nc-wsk-pfn-wsk-socket.md">WskSocket</a> function to create a
       connection-oriented socket.</p>
 
 <p>When calling the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a> function to create,
+      <a href="..\wsk\nc-wsk-pfn-wsk-socket-connect.md">WskSocketConnect</a> function to create,
       bind, and connect a connection-oriented socket.</p>
 
 <p>When calling the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571109">WskAccept</a> function to accept an incoming
+      <a href="..\wsk\nc-wsk-pfn-wsk-accept.md">WskAccept</a> function to accept an incoming
       connection-oriented socket on a listening socket.</p>
 
 <p>As a returned parameter when the WSK subsystem calls the WSK application's 
@@ -135,13 +134,13 @@ typedef struct _WSK_CLIENT_CONNECTION_DISPATCH {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571109">WskAccept</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-accept.md">WskAccept</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-socket.md">WskSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-socket-connect.md">WskSocketConnect</a>
 </dt>
 <dt>
 <a href="..\wsk\nc-wsk-pfn-wsk-accept-event.md">WskAcceptEvent</a>
@@ -162,4 +161,4 @@ typedef struct _WSK_CLIENT_CONNECTION_DISPATCH {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_CLIENT_CONNECTION_DISPATCH structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_CLIENT_CONNECTION_DISPATCH structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: stream\ksremovespecificirpfromcancelablequeue.htm
 old-project: stream
 ms.assetid: 2d3550c3-4a06-410e-9ec9-fed8b2786092
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsRemoveSpecificIrpFromCancelableQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>KsRemoveSpecificIrpFromCancelableQueue</b> function removes the specified IRP from the specified queue. This is performed on an IRP that was previously acquired using <a href="https://msdn.microsoft.com/library/windows/hardware/ff566795">KsRemoveIrpFromCancelableQueue</a>, but that was not actually removed from the queue. </p>
+<p>The <b>KsRemoveSpecificIrpFromCancelableQueue</b> function removes the specified IRP from the specified queue. This is performed on an IRP that was previously acquired using <a href="..\ks\nf-ks-ksremoveirpfromcancelablequeue.md">KsRemoveIrpFromCancelableQueue</a>, but that was not actually removed from the queue. </p>
 
 
 ## -syntax

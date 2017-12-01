@@ -7,7 +7,7 @@ old-location: kernel\ext_delete_parameters.htm
 old-project: kernel
 ms.assetid: B2EADC0E-837A-4231-8794-43933DAA69E7
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: EXT_DELETE_PARAMETERS, EXT_DELETE_PARAMETERS, *PEXT_DELETE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>EXT_DELETE_PARAMETERS</b> structure contains an extended set of parameters for the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265181">ExDeleteTimer</a> routine.</p>
+<p>The <b>EXT_DELETE_PARAMETERS</b> structure contains an extended set of parameters for the <a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a> routine.</p>
 
 
 ## -syntax
@@ -61,7 +61,7 @@ typedef struct _EXT_DELETE_PARAMETERS {
 ### -field <b>Version</b>
 
 <dd>
-<p>The version number of this <b>EXT_DELETE_PARAMETERS</b> structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265182">ExInitializeDeleteTimerParameters</a> routine sets this member to the correct version number.</p>
+<p>The version number of this <b>EXT_DELETE_PARAMETERS</b> structure. The <a href="..\wdm\nf-wdm-exinitializedeletetimerparameters.md">ExInitializeDeleteTimerParameters</a> routine sets this member to the correct version number.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -73,7 +73,7 @@ typedef struct _EXT_DELETE_PARAMETERS {
 ### -field <b>DeleteCallback</b>
 
 <dd>
-<p>A pointer to a driver-implemented <a href="https://msdn.microsoft.com/library/windows/hardware/dn265192">ExTimerDeleteCallback</a> callback routine. The operating system calls this routine when the timer is deleted. This parameter is optional and can be <b>NULL</b> if no timer-deletion callback routine is needed.
+<p>A pointer to a driver-implemented <a href="kernel.extimerdeletecallback">ExTimerDeleteCallback</a> callback routine. The operating system calls this routine when the timer is deleted. This parameter is optional and can be <b>NULL</b> if no timer-deletion callback routine is needed.
 
 The <b>ExInitializeDeleteTimerParameters</b> routine sets this member to <b>NULL</b>. For more information, see Remarks.</p>
 </dd>
@@ -88,7 +88,7 @@ The <b>ExInitializeDeleteTimerParameters</b> routine sets this member to <b>NULL
 </dl>
 
 ## -remarks
-<p>The <i>Parameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265181">ExDeleteTimer</a> routine is a pointer to an <b>EXT_DELETE_PARAMETERS</b> structure. Before passing an <b>EXT_DELETE_PARAMETERS</b> structure to this routine, call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265182">ExInitializeDeleteTimerParameters</a> routine to initialize the structure.</p>
+<p>The <i>Parameters</i> parameter of the <a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a> routine is a pointer to an <b>EXT_DELETE_PARAMETERS</b> structure. Before passing an <b>EXT_DELETE_PARAMETERS</b> structure to this routine, call the <a href="..\wdm\nf-wdm-exinitializedeletetimerparameters.md">ExInitializeDeleteTimerParameters</a> routine to initialize the structure.</p>
 
 ## -requirements
 <table>
@@ -115,15 +115,15 @@ The <b>ExInitializeDeleteTimerParameters</b> routine sets this member to <b>NULL
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265181">ExDeleteTimer</a>
+<a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265182">ExInitializeDeleteTimerParameters</a>
+<a href="..\wdm\nf-wdm-exinitializedeletetimerparameters.md">ExInitializeDeleteTimerParameters</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265192">ExTimerDeleteCallback</a>
+<a href="kernel.extimerdeletecallback">ExTimerDeleteCallback</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20EXT_DELETE_PARAMETERS structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20EXT_DELETE_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

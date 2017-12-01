@@ -7,7 +7,7 @@ old-location: kernel\ioopendeviceregistrykey.htm
 old-project: kernel
 ms.assetid: c3b67c73-446b-42a8-bc41-2ca42fde3513
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoOpenDeviceRegistryKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -95,7 +95,7 @@ NTSTATUS IoOpenDeviceRegistryKey(
 ### -param <i>DesiredAccess</i> [in]
 
 <dd>
-<p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the access the caller needs to the key. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566425">ZwCreateKey</a> routine for a description of each KEY_<i>XXX</i> access right.</p>
+<p>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the access the caller needs to the key. See the <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> routine for a description of each KEY_<i>XXX</i> access right.</p>
 </dd>
 
 ### -param <i>DevInstRegKey</i> [out]
@@ -115,17 +115,7 @@ NTSTATUS IoOpenDeviceRegistryKey(
 <p> </p>
 
 ## -remarks
-<p>The driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a> to close the handle returned from this routine when access is no longer required.</p>
-
-<p>The registry keys opened by this routine are nonvolatile.</p>
-
-<p>User-mode setup applications, such as <a href="wdkgloss.c#wdkgloss.class_installer#wdkgloss.class_installer"><i>class installers</i></a>, can access these registry keys using <a href="https://msdn.microsoft.com/library/windows/hardware/ff541299">device installation functions</a> such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff552079">SetupDiOpenDevRegKey</a>.</p>
-
-<p>To create registry keys, use <a href="devinst.inf_addreg_directive">INF AddReg directives</a> in an INF file or use <a href="https://msdn.microsoft.com/library/windows/hardware/ff550973">SetupDiCreateDevRegKey</a> in a setup application.</p>
-
-<p>Callers of <b>IoOpenDeviceRegistryKey</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread. </p>
-
-<p>The driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a> to close the handle returned from this routine when access is no longer required.</p>
+<p>The driver must call <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> to close the handle returned from this routine when access is no longer required.</p>
 
 <p>The registry keys opened by this routine are nonvolatile.</p>
 
@@ -198,7 +188,7 @@ NTSTATUS IoOpenDeviceRegistryKey(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -209,9 +199,9 @@ NTSTATUS IoOpenDeviceRegistryKey(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoOpenDeviceRegistryKey routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoOpenDeviceRegistryKey routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

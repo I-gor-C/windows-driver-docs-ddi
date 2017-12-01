@@ -7,7 +7,7 @@ old-location: netvista\ndismconfigmsixtableentry.htm
 old-project: netvista
 ms.assetid: 93f94a42-bffb-4e4d-a560-b0da5d7d0019
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMConfigMSIXTableEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -120,38 +120,6 @@ NDIS_STATUS NdisMConfigMSIXTableEntry(
     <b>NdisMSIXTableConfigUnmaskTableEntry</b> operations, callers of 
     <b>NdisMConfigMSIXTableEntry</b> can be running at any IRQL.</p>
 
-<p>NDIS miniport drivers that support MSI-X call the 
-    <b>NdisMConfigMSIXTableEntry</b> function to mask, unmask, or map MSI-X table entries to device-assigned
-    MSI-X messages. Miniport drivers that support RSS use 
-    <b>NdisMConfigMSIXTableEntry</b> to change the CPU affinity of MSI-X table entries at run time.</p>
-
-<p><b>NdisMConfigMSIXTableEntry</b> is a wrapper around the 
-    <a href="kernel.guid_msix_table_config_interface">
-    GUID_MSIX_TABLE_CONFIG_INTERFACE</a> query. Miniport drivers can call 
-    <b>NdisMConfigMSIXTableEntry</b> after NDIS calls the 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function and
-    before the driver returns from the 
-    <a href="..\ndis\nc-ndis-miniport-halt.md">MiniportHaltEx</a> function.</p>
-
-<p>The miniport driver can set the CPU affinity of MSI-X interrupt resources so that the device has at
-    least one MSI-X message for each RSS processor. Note that the PCI bus driver initially maps the 
-    <i>n</i> MSI-X table entries (where 
-    <i>n</i> is the number of MSI-X table entries that the NIC hadware reported to the bus) to the first 
-    <i>n</i> MSI-X messages in modified resources. After NDIS calls 
-    <i>MiniportInitializeEx</i>, when the miniport driver changes the target processor of a particular MSI-X
-    table entry, the driver calls 
-    <b>NdisMConfigMSIXTableEntry</b> to map that table entry to an MSI-X message that already has the affinity
-    set to the desired processor.</p>
-
-<p>For the 
-    <b>NdisMSIXTableConfigSetTableEntry</b> operation, callers of 
-    <b>NdisMConfigMSIXTableEntry</b> must run at IRQL &lt;= DISPATCH_LEVEL.</p>
-
-<p>For the 
-    <b>NdisMSIXTableConfigMaskTableEntry</b> or 
-    <b>NdisMSIXTableConfigUnmaskTableEntry</b> operations, callers of 
-    <b>NdisMConfigMSIXTableEntry</b> can be running at any IRQL.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -211,9 +179,9 @@ NDIS_STATUS NdisMConfigMSIXTableEntry(
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566486">NDIS_MSIX_CONFIG_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-msix-config-parameters.md">NDIS_MSIX_CONFIG_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMConfigMSIXTableEntry function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMConfigMSIXTableEntry function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

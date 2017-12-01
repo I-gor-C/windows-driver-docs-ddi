@@ -7,7 +7,7 @@ old-location: netvista\wskgetaddressinfo.htm
 old-project: netvista
 ms.assetid: 688619b9-ab0b-4459-8f1b-74815043a190
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -82,7 +81,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
 
 <dd>
 <p>[in] An optional pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains a
+     <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a
      Unicode string that represents a host (node) name or a numeric host address string. For the Internet
      protocol, the numeric host address string is a dotted-decimal IPv4 address or an IPv6 hexadecimal
      address.</p>
@@ -92,7 +91,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
 
 <dd>
 <p>[in] An optional pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains a
+     <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a
      Unicode string that represents a service name or a port number.</p>
 </dd>
 
@@ -132,7 +131,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
      <a href="winsock.addrinfoex">ADDRINFOEXW</a> structures that represent response information about the host.
      </p>
 <div class="alert"><b>Note</b>  The caller must call the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571131">WskFreeAddressInfo</a> function to free
+     <a href="..\wsk\nc-wsk-pfn-wsk-free-address-info.md">WskFreeAddressInfo</a> function to free
      this pointer.</div>
 <div> </div>
 <p>The <a href="winsock.addrinfoex">ADDRINFOEXW</a> structure is defined in the 
@@ -206,12 +205,6 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
     that is indicated by the security context indicates the context for the function's name resolution
     request.</p>
 
-<p>The process to which the 
-    <i>OwningProcess</i> parameter points, or the thread to which the 
-    <i>OwningThread</i> process points, indicates the security context for this function. The user account
-    that is indicated by the security context indicates the context for the function's name resolution
-    request.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -259,15 +252,15 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571122">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571131">WskFreeAddressInfo</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-free-address-info.md">WskFreeAddressInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_ADDRESS_INFO callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_ADDRESS_INFO callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

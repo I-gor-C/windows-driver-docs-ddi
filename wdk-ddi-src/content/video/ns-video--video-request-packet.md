@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>A pointer to a VIDEO_REQUEST_PACKET structure is passed to the miniport driver's <a href="..\video\nc-video-pvideo-hw-start-io.md">HwVidStartIO</a> function by the video port driver. The video port driver sets up the <a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> from the IRP code (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550710">IRP Major Function Codes</a>) sent in response to a GDI call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564838">EngDeviceIoControl</a>. Usually, the corresponding display driver makes the call to <b>EngDeviceIoControl</b> when it needs support from the video port-miniport driver pair. The video port driver calls the miniport driver with the <i>VRP</i> to process the given IOCTL_VIDEO_<i>XXX</i> request.</p>
+<p>A pointer to a VIDEO_REQUEST_PACKET structure is passed to the miniport driver's <a href="..\video\nc-video-pvideo-hw-start-io.md">HwVidStartIO</a> function by the video port driver. The video port driver sets up the <a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> from the IRP code (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550710">IRP Major Function Codes</a>) sent in response to a GDI call to <a href="display.engdeviceiocontrol">EngDeviceIoControl</a>. Usually, the corresponding display driver makes the call to <b>EngDeviceIoControl</b> when it needs support from the video port-miniport driver pair. The video port driver calls the miniport driver with the <i>VRP</i> to process the given IOCTL_VIDEO_<i>XXX</i> request.</p>
 
 
 ## -syntax
@@ -63,7 +63,7 @@ typedef struct _VIDEO_REQUEST_PACKET {
 ### -field <b>IoControlCode</b>
 
 <dd>
-<p>Specifies an IOCTL_VIDEO_<i>XXX</i> value passed to the <b>EngDeviceIoControl</b> function by the caller and sent to the video port driver in an IRP code. For more information about the set of system-defined IOCTL_VIDEO_<i>XXX</i> that miniport drivers must support, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff570515">Video Miniport Driver I/O Control Codes</a>.</p>
+<p>Specifies an IOCTL_VIDEO_<i>XXX</i> value passed to the <b>EngDeviceIoControl</b> function by the caller and sent to the video port driver in an IRP code. For more information about the set of system-defined IOCTL_VIDEO_<i>XXX</i> that miniport drivers must support, see <a href="display.video_miniport_driver_i_o_control_codes">Video Miniport Driver I/O Control Codes</a>.</p>
 </dd>
 
 ### -field <b>StatusBlock</b>
@@ -120,10 +120,10 @@ typedef struct _VIDEO_REQUEST_PACKET {
 <a href="..\video\nc-video-pvideo-hw-start-io.md">HwVidStartIO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570515">Video Miniport Driver I/O Control Codes</a>
+<a href="display.video_miniport_driver_i_o_control_codes">Video Miniport Driver I/O Control Codes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569732">STATUS_BLOCK</a>
+<a href="..\video\ns-video--status-block.md">STATUS_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

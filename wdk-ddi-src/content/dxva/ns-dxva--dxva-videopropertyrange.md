@@ -110,7 +110,7 @@ typedef struct _DXVA_VideoPropertyRange {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564070">DXVA_VideoDesc</a>
+<a href="..\dxva\ns-dxva--dxva-videodesc.md">DXVA_VideoDesc</a>
 </dt>
 </dl>
 <p> </p>

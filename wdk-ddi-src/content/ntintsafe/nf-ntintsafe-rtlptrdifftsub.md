@@ -7,7 +7,7 @@ old-location: kernel\rtlptrdifftsub.htm
 old-project: kernel
 ms.assetid: C87E3BD5-8CA7-443E-8CC3-F863CD4F321A
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlPtrdiffTSub
 ms.prod: windows-hardware
 ms.technology: windows-devices

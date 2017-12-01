@@ -7,7 +7,7 @@ old-location: stream\ikspin_ksgetcurrentcommunication.htm
 old-project: stream
 ms.assetid: 3fca9bf5-5430-4877-846e-e796e54991a2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IKsPin, KsGetCurrentCommunication, IKsPin::KsGetCurrentCommunication
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -112,13 +112,13 @@ HRESULT KsGetCurrentCommunication(
 ### -param <i>Interface</i> [out, optional]
 
 <dd>
-<p>Pointer to a variable that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a> structure that describes the current interface for a pin. </p>
+<p>Pointer to a variable that receives a <a href="stream.kspin_interface">KSPIN_INTERFACE</a> structure that describes the current interface for a pin. </p>
 </dd>
 
 ### -param <i>Medium</i> [out, optional]
 
 <dd>
-<p>Pointer to a variable that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a> structure that describes the current medium for a pin. </p>
+<p>Pointer to a variable that receives a <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structure that describes the current medium for a pin. </p>
 </dd>
 </dl>
 
@@ -126,10 +126,6 @@ HRESULT KsGetCurrentCommunication(
 <p>Returns NOERROR if successful; otherwise, returns an error code.</p>
 
 ## -remarks
-<p>Source pins send IRPs to sink pins. Do not confuse the communication direction with data flow direction. (See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>.) A source pin may read or write data, and a sink pin may have data read to it or written from it.</p>
-
-<p>The current communication direction, interface, and medium of a pin are a subset of those available to the pin, and are selected when the pin handle is created.</p>
-
 <p>Source pins send IRPs to sink pins. Do not confuse the communication direction with data flow direction. (See <a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>.) A source pin may read or write data, and a sink pin may have data read to it or written from it.</p>
 
 <p>The current communication direction, interface, and medium of a pin are a subset of those available to the pin, and are selected when the pin handle is created.</p>
@@ -161,10 +157,10 @@ HRESULT KsGetCurrentCommunication(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a>
+<a href="stream.kspin_interface">KSPIN_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a>
+<a href="stream.kspin_medium">KSPIN_MEDIUM</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>
@@ -172,4 +168,4 @@ HRESULT KsGetCurrentCommunication(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsPin::KsGetCurrentCommunication method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsPin::KsGetCurrentCommunication method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjectionhandlecreate0.htm
 old-project: netvista
 ms.assetid: 61cee8ef-1070-46d4-a541-94a9f09b593b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsInjectionHandleCreate0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,7 +43,7 @@ req.iface:
   <b>FwpsInjectionHandleCreate0</b> function creates a handle that can be used by 
   <a href="NULL">packet injection functions</a> to inject
   packet or stream data into the TCP/IP network stack and by the 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff551202">FwpsQueryPacketInjectionState0</a> function to query the packet injection state.</p>
+  <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a> function to query the packet injection state.</p>
 
 
 ## -syntax
@@ -156,7 +156,7 @@ NTSTATUS NTAPI FwpsInjectionHandleCreate0(
 </dl><p>The injection handle was successfully created.</p><dl>
 <dt><b>STATUS_FWP_TCPIP_NOT_READY</b></dt>
 </dl><p>The TCP/IP network stack is not ready. A callout driver should call the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff551180">FwpsInjectionHandleCreate0</a> function again at a later time to create an injection handle.</p><dl>
+       <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function again at a later time to create an injection handle.</p><dl>
 <dt><b>Other status codes</b></dt>
 </dl><p>An error occurred.</p>
 
@@ -173,26 +173,7 @@ NTSTATUS NTAPI FwpsInjectionHandleCreate0(
     FwpsQueryPacketInjectionState0</a>.</p>
 
 <p>After a callout driver has finished using an injection handle, it must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551181">FwpsInjectionHandleDestroy0</a> function to destroy the handle. If pending injections have not yet
-    completed, this function will wait for their completion before returning.</p>
-
-<p>When injections are being made to the network layer and both IPv4 and IPv6 address families are being
-    filtered, the callout driver must create two injection handles by calling the 
-    <b>FwpsInjectionHandleCreate0</b> function twice: one call with 
-    <i>addressFamily</i> set to AF_INET, and a second call with 
-    <i>addressFamily</i> set to AF_INET6.</p>
-
-<p>A callout driver calls the 
-    <b>FwpsInjectionHandleCreate0</b> function to create a handle that can be used for injecting packet or
-    stream data into the TCP/IP network stack and to query the packet injection state. A callout driver
-    passes the created handle to the 
-    <a href="netvista.packet_injection_functions">packet injection
-    functions</a> and 
-    <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
-    FwpsQueryPacketInjectionState0</a>.</p>
-
-<p>After a callout driver has finished using an injection handle, it must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551181">FwpsInjectionHandleDestroy0</a> function to destroy the handle. If pending injections have not yet
+    <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandledestroy0.md">FwpsInjectionHandleDestroy0</a> function to destroy the handle. If pending injections have not yet
     completed, this function will wait for their completion before returning.</p>
 
 <p>When injections are being made to the network layer and both IPv4 and IPv6 address families are being
@@ -254,7 +235,7 @@ NTSTATUS NTAPI FwpsInjectionHandleCreate0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551181">FwpsInjectionHandleDestroy0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandledestroy0.md">FwpsInjectionHandleDestroy0</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
@@ -266,4 +247,4 @@ NTSTATUS NTAPI FwpsInjectionHandleCreate0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectionHandleCreate0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectionHandleCreate0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

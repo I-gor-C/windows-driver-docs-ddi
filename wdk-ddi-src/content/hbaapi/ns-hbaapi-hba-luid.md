@@ -81,10 +81,10 @@ typedef struct HBA_LUID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556060">HBA_FCPBindingEntry2</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcpbindingentry2.md">HBA_FCPBindingEntry2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556068">HBA_FcpScsiEntryV2</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcpscsientryv2.md">HBA_FcpScsiEntryV2</a>
 </dt>
 </dl>
 <p> </p>

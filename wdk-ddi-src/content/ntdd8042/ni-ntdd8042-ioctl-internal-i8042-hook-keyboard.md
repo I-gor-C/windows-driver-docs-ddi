@@ -50,7 +50,7 @@ req.iface:
 </li>
 </ul>
 <p>The initialization and ISR callbacks are optional and are provided by an upper-level filter driver for a PS/2-style keyboard device.</p>
-<p>After I8042prt receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541273">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request, it sends a synchronous IOCTL_INTERNAL_I8042_HOOK_KEYBOARD request to the top of the keyboard device stack.</p>
+<p>After I8042prt receives an <a href="..\kbdmou\ni-kbdmou-ioctl-internal-keyboard-connect.md">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request, it sends a synchronous IOCTL_INTERNAL_I8042_HOOK_KEYBOARD request to the top of the keyboard device stack.</p>
 <p>After Kbfiltr receives the hook keyboard request, Kbfiltr filters the request in the following way:</p>
 <ul>
 <li>
@@ -67,7 +67,7 @@ req.iface:
 <dl>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539965">I8042prt Callback Routines</a>
+<a href="hid.i8042prt_callback_routines">I8042prt Callback Routines</a>
 </p>
 </dd>
 <dd>
@@ -81,14 +81,14 @@ req.iface:
 <p>Adds an initialization callback routine to the I8042prt keyboard initialization routine</p>
 <p>Adds an ISR callback routine to the I8042prt keyboard ISR</p>
 <p>The initialization and ISR callbacks are optional and are provided by an upper-level filter driver for a PS/2-style keyboard device.</p>
-<p>After I8042prt receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541273">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request, it sends a synchronous IOCTL_INTERNAL_I8042_HOOK_KEYBOARD request to the top of the keyboard device stack.</p>
+<p>After I8042prt receives an <a href="..\kbdmou\ni-kbdmou-ioctl-internal-keyboard-connect.md">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request, it sends a synchronous IOCTL_INTERNAL_I8042_HOOK_KEYBOARD request to the top of the keyboard device stack.</p>
 <p>After Kbfiltr receives the hook keyboard request, Kbfiltr filters the request in the following way:</p>
 <p>Saves the upper-level information passed to Kbfiltr, which includes the context of an upper-level device object, a pointer to an initialization callback, and a pointer to an ISR callback</p>
 <p>Replaces the upper-level information with its own</p>
 <p>Saves the context of I8042prt and pointers to callbacks that the Kbfiltr ISR callback can use</p>
 <p>For more information about this request and the callbacks, see the following topics:</p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539965">I8042prt Callback Routines</a>
+<a href="hid.i8042prt_callback_routines">I8042prt Callback Routines</a>
 </p>
 <p>
 <a href="https://msdn.microsoft.com/a939a2f1-740d-4d6e-a908-cfbefc0808a2">Kbfiltr Callback Routines</a>
@@ -107,9 +107,9 @@ req.iface:
 <p>Pointer to an optional callback that is called by the I8042prt keyboard ISR.</p>
 
 ### -input-buffer-length
-<p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to a value that is greater than or equal to the size, in bytes, of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541039">INTERNAL_I8042_HOOK_KEYBOARD</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to a value that is greater than or equal to the size, in bytes, of an <a href="..\ntdd8042\ns-ntdd8042--internal-i8042-hook-keyboard.md">INTERNAL_I8042_HOOK_KEYBOARD</a> structure.</p>
 
-<p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to a value that is greater than or equal to the size, in bytes, of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541039">INTERNAL_I8042_HOOK_KEYBOARD</a> structure.</p>
+<p>The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to a value that is greater than or equal to the size, in bytes, of an <a href="..\ntdd8042\ns-ntdd8042--internal-i8042-hook-keyboard.md">INTERNAL_I8042_HOOK_KEYBOARD</a> structure.</p>
 
 ### -output-buffer
 <p>None</p>
@@ -197,10 +197,10 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541039">INTERNAL_I8042_HOOK_KEYBOARD</a>
+<a href="..\ntdd8042\ns-ntdd8042--internal-i8042-hook-keyboard.md">INTERNAL_I8042_HOOK_KEYBOARD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541273">IOCTL_INTERNAL_KEYBOARD_CONNECT</a>
+<a href="..\kbdmou\ni-kbdmou-ioctl-internal-keyboard-connect.md">IOCTL_INTERNAL_KEYBOARD_CONNECT</a>
 </dt>
 </dl>
 <p> </p>

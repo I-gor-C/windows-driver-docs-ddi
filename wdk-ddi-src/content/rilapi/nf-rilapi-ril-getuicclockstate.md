@@ -7,7 +7,7 @@ old-location: netvista\ril_getuicclockstate.htm
 old-project: netvista
 ms.assetid: a831f49b-203e-4672-aced-679f0835dabb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetUiccLockState
 ms.prod: windows-hardware
 ms.technology: windows-devices

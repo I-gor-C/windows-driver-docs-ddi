@@ -77,14 +77,6 @@ BOOLEAN HwVidInitialize(
 
 <p><i>HwVidInitialize</i> should be made pageable.</p>
 
-<p>Every video miniport driver must have a <i>HwVidInitialize</i> function.</p>
-
-<p>The video port driver calls <i>HwVidInitialize</i> in response to an open request by the corresponding display driver. As soon as <i>HwVidInitialize</i> is called, the miniport driver can change the state of the adapter, unlike the miniport driver's <a href="..\video\nc-video-pvideo-hw-find-adapter.md">HwVidFindAdapter</a> function, which must leave the adapter in VGA mode. On return from <i>HwVidInitialize</i>, the adapter must be initialized to a state equivalent to that set up by the miniport driver's <a href="..\video\nc-video-pvideo-hw-reset-hw.md">HwVidResetHw</a> function. This feature is used by autodetection to get mode information from the miniport driver.</p>
-
-<p>If at all possible, <i>HwVidInitialize</i> should avoid programming the device hardware. The miniport driver will initialize the device later, when it is instructed to switch display modes.</p>
-
-<p><i>HwVidInitialize</i> should be made pageable.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -118,7 +110,7 @@ BOOLEAN HwVidInitialize(
 <a href="..\video\nc-video-pvideo-hw-reset-hw.md">HwVidResetHw</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556178">DrvAssertMode</a>
+<a href="display.drvassertmode">DrvAssertMode</a>
 </dt>
 </dl>
 <p> </p>

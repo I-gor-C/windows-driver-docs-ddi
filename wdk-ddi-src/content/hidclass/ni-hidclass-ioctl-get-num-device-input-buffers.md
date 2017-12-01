@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS request obtains the size of the input report queue for a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>. </p>
-<p>The input report queue is implemented as a ring buffer. If a collection transmits data to the HID class driver faster than the input reports are read, reports can be lost. The size of the input report queue can be adjusted using <a href="https://msdn.microsoft.com/library/windows/hardware/ff542087">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a>. </p>
+<p>The input report queue is implemented as a ring buffer. If a collection transmits data to the HID class driver faster than the input reports are read, reports can be lost. The size of the input report queue can be adjusted using <a href="..\hidclass\ni-hidclass-ioctl-set-num-device-input-buffers.md">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a>. </p>
 <p>For general information about HIDClass devices, see <a href="NULL">HID Collections</a>. </p>
 
 
@@ -130,7 +130,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539686">HidD_SetNumInputBuffers</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-setnuminputbuffers.md">HidD_SetNumInputBuffers</a>
 </dt>
 </dl>
 <p> </p>

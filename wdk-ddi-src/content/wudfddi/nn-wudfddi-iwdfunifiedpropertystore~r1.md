@@ -7,7 +7,7 @@ old-location: wdf\iwdfunifiedpropertystore.htm
 old-project: wdf
 ms.assetid: F039450D-3B66-4891-9078-7058E889C2F0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,10 +49,10 @@ req.product: Windows 10 or later.
 
 <p>The <b>IWDFUnifiedPropertyStore</b> interface has these methods.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451410">GetPropertyData</a> method retrieves the current setting for a device property.
+<p>The <a href="wdf.iwdfunifiedpropertystore_getpropertydata">GetPropertyData</a> method retrieves the current setting for a device property.
 </p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451414">SetPropertyData</a> method modifies the current setting of a device property.</p>
+<p>The <a href="wdf.iwdfunifiedpropertystore_setpropertydata">SetPropertyData</a> method modifies the current setting of a device property.</p>
 
 <p> </p>
 
@@ -64,31 +64,29 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451410">GetPropertyData</a>
+<a href="wdf.iwdfunifiedpropertystore_getpropertydata">GetPropertyData</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451410">GetPropertyData</a> method retrieves the current setting for a device property.
+<p>The <a href="wdf.iwdfunifiedpropertystore_getpropertydata">GetPropertyData</a> method retrieves the current setting for a device property.
 </p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451414">SetPropertyData</a>
+<a href="wdf.iwdfunifiedpropertystore_setpropertydata">SetPropertyData</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451414">SetPropertyData</a> method modifies the current setting of a device property.</p>
+<p>The <a href="wdf.iwdfunifiedpropertystore_setpropertydata">SetPropertyData</a> method modifies the current setting of a device property.</p>
 </td>
 </tr>
-</table><p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451410">GetPropertyData</a> method retrieves the current setting for a device property.
+</table><p>The <a href="wdf.iwdfunifiedpropertystore_getpropertydata">GetPropertyData</a> method retrieves the current setting for a device property.
 </p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451414">SetPropertyData</a> method modifies the current setting of a device property.</p>
+<p>The <a href="wdf.iwdfunifiedpropertystore_setpropertydata">SetPropertyData</a> method modifies the current setting of a device property.</p>
 
 <p> </p>
 
 ## -remarks
-<p>Drivers can use the  <b>IWDFUnifiedPropertyStore</b> interface to access device properties that are defined as part of the unified device property model.</p>
-
 <p>Drivers can use the  <b>IWDFUnifiedPropertyStore</b> interface to access device properties that are defined as part of the unified device property model.</p>
 
 ## -requirements
@@ -144,9 +142,9 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451403">IWDFUnifiedPropertyStoreFactory</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystorefactory.md">IWDFUnifiedPropertyStoreFactory</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUnifiedPropertyStore interface%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUnifiedPropertyStore interface%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

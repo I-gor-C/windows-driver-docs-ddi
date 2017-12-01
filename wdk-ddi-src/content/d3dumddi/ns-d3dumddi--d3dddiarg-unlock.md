@@ -71,7 +71,7 @@ typedef struct _D3DDDIARG_UNLOCK {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544680">D3DDDI_UNLOCKFLAGS</a> structure that indicates, in bit-field flags, how to unlock the resource.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-unlockflags.md">D3DDDI_UNLOCKFLAGS</a> structure that indicates, in bit-field flags, how to unlock the resource.</p>
 </dd>
 </dl>
 
@@ -103,7 +103,7 @@ typedef struct _D3DDDIARG_UNLOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544680">D3DDDI_UNLOCKFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-unlockflags.md">D3DDDI_UNLOCKFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-unlock.md">Unlock</a>

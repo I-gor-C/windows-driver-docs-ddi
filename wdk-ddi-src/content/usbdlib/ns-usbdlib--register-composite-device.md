@@ -40,8 +40,8 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>REGISTER_COMPOSITE_DEVICE</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450854">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> I/O control request to register a  parent driver of a Universal Serial Bus (USB) multi-function device (composite driver)  with the USB driver stack. </p>
-<p>To initialize the <b>REGISTER_COMPOSITE_DEVICE</b> structure, the composite driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406229">USBD_BuildRegisterCompositeDevice</a> routine.</p>
+<p>The <b>REGISTER_COMPOSITE_DEVICE</b> structure is used with the <a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-register-composite-device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> I/O control request to register a  parent driver of a Universal Serial Bus (USB) multi-function device (composite driver)  with the USB driver stack. </p>
+<p>To initialize the <b>REGISTER_COMPOSITE_DEVICE</b> structure, the composite driver must call the <a href="..\usbdlib\nf-usbdlib-usbd-buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> routine.</p>
 
 
 ## -syntax
@@ -63,27 +63,27 @@ typedef struct _REGISTER_COMPOSITE_DEVICE {
 ### -field <b>Version</b>
 
 <dd>
-<p>The version of this structure. <a href="https://msdn.microsoft.com/library/windows/hardware/hh406229">USBD_BuildRegisterCompositeDevice</a> sets this  member.</p>
+<p>The version of this structure. <a href="..\usbdlib\nf-usbdlib-usbd-buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.</p>
 </dd>
 
 ### -field <b>Size</b>
 
 <dd>
-<p>The size of this structure. <a href="https://msdn.microsoft.com/library/windows/hardware/hh406229">USBD_BuildRegisterCompositeDevice</a> sets this  member.</p>
+<p>The size of this structure. <a href="..\usbdlib\nf-usbdlib-usbd-buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.</p>
 </dd>
 
 ### -field <b>Reserved</b>
 
 <dd>
-<p>Reserved. <a href="https://msdn.microsoft.com/library/windows/hardware/hh406229">USBD_BuildRegisterCompositeDevice</a> sets this  member.</p>
+<p>Reserved. <a href="..\usbdlib\nf-usbdlib-usbd-buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.</p>
 </dd>
 
 ### -field <b>CapabilityFlags</b>
 
 <dd>
 <p>The capabilities that are supported by the composite driver.
-To specify that function suspend is supported by the composite driver, first initialize the <a href="..\usbdlib\ns-usbdlib--composite-device-capabilities.md">COMPOSITE_DEVICE_CAPABILITIES</a> structure by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450803">COMPOSITE_DEVICE_CAPABILITIES_INIT</a> macro. Then, set the <b>CompositeDeviceCapabilityFunctionSuspend</b>
-member of <b>COMPOSITE_DEVICE_CAPABILITIES</b> to 1. Finally, call <a href="https://msdn.microsoft.com/library/windows/hardware/hh406229">USBD_BuildRegisterCompositeDevice</a> and pass the initialized structure in the  <i>CapabilityFlags</i> parameter.</p>
+To specify that function suspend is supported by the composite driver, first initialize the <a href="..\usbdlib\ns-usbdlib--composite-device-capabilities.md">COMPOSITE_DEVICE_CAPABILITIES</a> structure by calling the <a href="..\usbdlib\nf-usbdlib-composite-device-capabilities-init.md">COMPOSITE_DEVICE_CAPABILITIES_INIT</a> macro. Then, set the <b>CompositeDeviceCapabilityFunctionSuspend</b>
+member of <b>COMPOSITE_DEVICE_CAPABILITIES</b> to 1. Finally, call <a href="..\usbdlib\nf-usbdlib-usbd-buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> and pass the initialized structure in the  <i>CapabilityFlags</i> parameter.</p>
 </dd>
 
 ### -field <b>FunctionCount</b>
@@ -121,16 +121,16 @@ member of <b>COMPOSITE_DEVICE_CAPABILITIES</b> to 1. Finally, call <a href="http
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450854">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-register-composite-device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406229">USBD_BuildRegisterCompositeDevice</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a>
 </dt>
 <dt>
 <a href="..\usbdlib\ns-usbdlib--composite-device-capabilities.md">COMPOSITE_DEVICE_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450803">COMPOSITE_DEVICE_CAPABILITIES_INIT</a>
+<a href="..\usbdlib\nf-usbdlib-composite-device-capabilities-init.md">COMPOSITE_DEVICE_CAPABILITIES_INIT</a>
 </dt>
 </dl>
 <p> </p>

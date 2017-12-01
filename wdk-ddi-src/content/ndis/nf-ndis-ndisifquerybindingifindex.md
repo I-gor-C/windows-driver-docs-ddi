@@ -7,7 +7,7 @@ old-location: netvista\ndisifquerybindingifindex.htm
 old-project: netvista
 ms.assetid: 08f31584-b3ea-4e6e-b8ce-17813ca7c06b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisIfQueryBindingIfIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The 
   <b>NdisIfQueryBindingIfIndex</b> function retrieves the network interface indexes and 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> values for the highest and lowest layered
+  <a href="netvista.net_luid">NET_LUID</a> values for the highest and lowest layered
   network interfaces that are associated with a specified protocol binding.</p>
 
 
@@ -65,10 +65,10 @@ NDIS_STATUS NdisIfQueryBindingIfIndex(
 
 <dd>
 <p>A handle that identifies the binding for which NDIS should obtain the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> values and network interface indexes.
+     <a href="netvista.net_luid">NET_LUID</a> values and network interface indexes.
      NDIS provided this handle at the 
      <i>NdisBindingHandle</i> parameter of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function.</p>
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.</p>
 </dd>
 
 ### -param <i>pBoundIfIndex</i> [out]
@@ -119,7 +119,7 @@ NDIS_STATUS NdisIfQueryBindingIfIndex(
 ## -remarks
 <p>NDIS protocol drivers can call the 
     <b>NdisIfQueryBindingIfIndex</b> function to retrieve the network interface indexes and 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> values that are associated with a
+    <a href="netvista.net_luid">NET_LUID</a> values that are associated with a
     binding.</p>
 
 <p><b>NdisIfQueryBindingIfIndex</b> provides the NET_LUID value and the interface index for the highest
@@ -130,22 +130,7 @@ NDIS_STATUS NdisIfQueryBindingIfIndex(
 
 <p>Protocol drivers can also obtain the interface index and NET_LUID of the highest and the lowest
     interfaces in a driver stack in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a> structure.</p>
-
-<p>NDIS protocol drivers can call the 
-    <b>NdisIfQueryBindingIfIndex</b> function to retrieve the network interface indexes and 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> values that are associated with a
-    binding.</p>
-
-<p><b>NdisIfQueryBindingIfIndex</b> provides the NET_LUID value and the interface index for the highest
-    interface and lowest interface that are associated with the binding. These values are different, for
-    example, if the miniport adapter that is directly associated with the specified binding is the virtual
-    miniport of a filter intermediate driver or if there is a filter module that is configured over the
-    miniport adapter.</p>
-
-<p>Protocol drivers can also obtain the interface index and NET_LUID of the highest and the lowest
-    interfaces in a driver stack in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a> structure.</p>
+    <a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a> structure.</p>
 
 ## -requirements
 <table>
@@ -200,7 +185,7 @@ NDIS_STATUS NdisIfQueryBindingIfIndex(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547949">Irql_Interfaces_Function</a>
+<a href="devtest.ndis_irql_interfaces_function">Irql_Interfaces_Function</a>
 </td>
 </tr>
 </table>
@@ -208,15 +193,15 @@ NDIS_STATUS NdisIfQueryBindingIfIndex(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
+<a href="netvista.net_luid">NET_LUID</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfQueryBindingIfIndex function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfQueryBindingIfIndex function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

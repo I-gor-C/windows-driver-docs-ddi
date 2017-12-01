@@ -7,7 +7,7 @@ old-location: netvista\riluiccserviceparams.htm
 old-project: netvista
 ms.assetid: 0f43b2be-d371-42d8-825b-56362de05c5e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

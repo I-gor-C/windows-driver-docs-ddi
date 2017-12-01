@@ -7,7 +7,7 @@ old-location: netvista\ril_getuiccrecordstatus.htm
 old-project: netvista
 ms.assetid: f4834b37-7269-47e3-9af4-81d17fa79179
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetUiccRecordStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices

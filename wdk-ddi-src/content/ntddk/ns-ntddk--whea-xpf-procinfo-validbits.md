@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The WHEA_XPF_PROCINFO_VALIDBITS union describes which members of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560661">WHEA_XPF_PROCINFO</a> structure contain valid data.</p>
+<p>The WHEA_XPF_PROCINFO_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk--whea-xpf-procinfo.md">WHEA_XPF_PROCINFO</a> structure contain valid data.</p>
 
 
 ## -syntax
@@ -106,7 +106,7 @@ typedef union _WHEA_XPF_PROCINFO_VALIDBITS {
 </dl>
 
 ## -remarks
-<p>A WHEA_XPF_PROCINFO_VALIDBITS union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560661">WHEA_XPF_PROCINFO</a> structure.</p>
+<p>A WHEA_XPF_PROCINFO_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk--whea-xpf-procinfo.md">WHEA_XPF_PROCINFO</a> structure.</p>
 
 ## -requirements
 <table>
@@ -134,7 +134,7 @@ typedef union _WHEA_XPF_PROCINFO_VALIDBITS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560661">WHEA_XPF_PROCINFO</a>
+<a href="..\ntddk\ns-ntddk--whea-xpf-procinfo.md">WHEA_XPF_PROCINFO</a>
 </dt>
 </dl>
 <p> </p>

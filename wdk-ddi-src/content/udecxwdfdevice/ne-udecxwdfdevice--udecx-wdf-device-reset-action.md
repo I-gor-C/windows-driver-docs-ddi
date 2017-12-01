@@ -89,10 +89,10 @@ typedef enum _UDECX_WDF_DEVICE_RESET_ACTION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595920">EVT_UDECX_WDF_DEVICE_RESET</a>
+<a href="buses.evt_udecx_wdf_device_reset">EVT_UDECX_WDF_DEVICE_RESET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt628008">UDECX_WDF_DEVICE_CONFIG</a>
+<a href="buses.udecx_wdf_device_config">UDECX_WDF_DEVICE_CONFIG</a>
 </dt>
 </dl>
 <p> </p>

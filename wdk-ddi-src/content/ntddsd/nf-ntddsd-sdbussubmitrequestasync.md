@@ -79,7 +79,7 @@ NTSTATUS SdBusSubmitRequestAsync(
 ### -param <i>CompletionRoutine</i> [in]
 
 <dd>
-<p>Pointer to a completion routine of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff548354">IoCompletion</a> that <b>SdBusSubmitRequestAsync</b> registers for the IRP specified in the <i>Irp </i>parameter.</p>
+<p>Pointer to a completion routine of type <a href="..\wdm\nc-wdm-io-completion-routine.md">IoCompletion</a> that <b>SdBusSubmitRequestAsync</b> registers for the IRP specified in the <i>Irp </i>parameter.</p>
 </dd>
 
 ### -param <i>UserContext</i> [in]
@@ -93,12 +93,6 @@ NTSTATUS SdBusSubmitRequestAsync(
 <p>Returns STATUS_SUCCESS or STATUS_PENDING if the operation succeeds, or the appropriate error message if the operation fails.</p>
 
 ## -remarks
-<p>Callers of <b>SdBusSubmitRequestAsync</b> must be running at IRQL &lt;= DISPATCH_LEVEL.</p>
-
-<p>Callers of <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a> must be running at IRQL &lt; DISPATCH_LEVEL.</p>
-
-<p>This request is handled asynchronously and might return STATUS_PENDING. </p>
-
 <p>Callers of <b>SdBusSubmitRequestAsync</b> must be running at IRQL &lt;= DISPATCH_LEVEL.</p>
 
 <p>Callers of <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a> must be running at IRQL &lt; DISPATCH_LEVEL.</p>

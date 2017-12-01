@@ -7,7 +7,7 @@ old-location: debugger\setmatchthreadid.htm
 old-project: debugger
 ms.assetid: 66170e28-24db-4125-bd4e-ef07e8e82e79
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugBreakpoint2, SetMatchThreadId, IDebugBreakpoint2::SetMatchThreadId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,12 +75,6 @@ HRESULT SetMatchThreadId(
 <p>This method can also return other error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
 
 ## -remarks
-<p>If you have set a thread for the breakpoint, the breakpoint can be triggered only if that thread hits the breakpoint.  If you have not set a thread, any thread can trigger the breakpoint.</p>
-
-<p>If you have set a thread, you can remove the setting by setting <i>Id</i> to DEBUG_ANY_ID.</p>
-
-<p>For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
-
 <p>If you have set a thread for the breakpoint, the breakpoint can be triggered only if that thread hits the breakpoint.  If you have not set a thread, any thread can trigger the breakpoint.</p>
 
 <p>If you have set a thread, you can remove the setting by setting <i>Id</i> to DEBUG_ANY_ID.</p>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetdevice_retrievepowerpolicy.htm
 old-project: wdf
 ms.assetid: e15561e3-ba3d-4c65-bb6e-d90f3fab22af
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFUsbTargetDevice, RetrievePowerPolicy, IWDFUsbTargetDevice::RetrievePowerPolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -93,17 +93,9 @@ HRESULT RetrievePowerPolicy(
 ## -remarks
 <p>Power policy controls the power management that WinUsb for the device performs.</p>
 
-<p>For information about valid policy types that a UMDF driver can pass for the <i>PolicyType</i> parameter and values that the framework returns, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540275">WinUsb_GetPowerPolicy</a> function.</p>
+<p>For information about valid policy types that a UMDF driver can pass for the <i>PolicyType</i> parameter and values that the framework returns, see the <a href="buses.winusb_getpowerpolicy">WinUsb_GetPowerPolicy</a> function.</p>
 
-<p>For more information about the power behavior of WinUSB, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff728834">WinUSB Power Management</a>.</p>
-
-<p>The <b>RetrievePowerPolicy</b> method generates a UMDF request and synchronously sends the request to the I/O target.</p>
-
-<p>Power policy controls the power management that WinUsb for the device performs.</p>
-
-<p>For information about valid policy types that a UMDF driver can pass for the <i>PolicyType</i> parameter and values that the framework returns, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540275">WinUsb_GetPowerPolicy</a> function.</p>
-
-<p>For more information about the power behavior of WinUSB, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff728834">WinUSB Power Management</a>.</p>
+<p>For more information about the power behavior of WinUSB, see <a href="buses.winusb_power_management">WinUSB Power Management</a>.</p>
 
 <p>The <b>RetrievePowerPolicy</b> method generates a UMDF request and synchronously sends the request to the I/O target.</p>
 
@@ -160,15 +152,15 @@ HRESULT RetrievePowerPolicy(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560362">IWDFUsbTargetDevice</a>
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540275">WinUsb_GetPowerPolicy</a>
+<a href="buses.winusb_getpowerpolicy">WinUsb_GetPowerPolicy</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560385">IWDFUsbTargetDevice::SetPowerPolicy</a>
+<a href="wdf.iwdfusbtargetdevice_setpowerpolicy">IWDFUsbTargetDevice::SetPowerPolicy</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetDevice::RetrievePowerPolicy method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetDevice::RetrievePowerPolicy method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

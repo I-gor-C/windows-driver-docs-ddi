@@ -61,7 +61,7 @@ NTSTATUS IddCxMonitorQueryHardwareCursor(
 ### -param <i>MonitorObject</i> [in]
 
 <dd>
-<p>This is the OS context handle for this monitor returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt761920">IddCxMonitorArrival</a> call</p>
+<p>This is the OS context handle for this monitor returned by the <a href="..\iddcx\nf-iddcx-iddcxmonitorarrival.md">IddCxMonitorArrival</a> call</p>
 </dd>
 
 ### -param <i>pInArgs</i> [in]

@@ -103,7 +103,7 @@ HRESULT DisableEvents(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406706">EnableEvents</a>
+<a href="print.iprinterextensionmanager_enableevents">EnableEvents</a>
 </dt>
 <dt>
 <a href="print.iprinterextensionmanager_interface">IPrinterExtensionManager</a>

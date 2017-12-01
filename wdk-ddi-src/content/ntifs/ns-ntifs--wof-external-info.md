@@ -96,10 +96,10 @@ typedef struct _WOF_EXTERNAL_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426741">WOF_EXTERNAL_FILE_ID</a>
+<a href="..\ntifs\ns-ntifs--wof-external-file-id.md">WOF_EXTERNAL_FILE_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426742">WOF_VERSION_INFO</a>
+<a href="..\ntifs\ns-ntifs--wof-version-info.md">WOF_VERSION_INFO</a>
 </dt>
 </dl>
 <p> </p>

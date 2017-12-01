@@ -169,7 +169,7 @@ NTSTATUS FsRtlIssueDeviceIoControl(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542046">FltDeviceIoControlFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeviceiocontrolfile.md">FltDeviceIoControlFile</a>
 </dt>
 </dl>
 <p> </p>

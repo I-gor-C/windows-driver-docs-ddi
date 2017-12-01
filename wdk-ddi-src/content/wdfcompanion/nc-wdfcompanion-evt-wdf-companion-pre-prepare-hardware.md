@@ -7,7 +7,7 @@ old-location: wdf\evt_wdf_companion_pre_prepare_hardware.htm
 old-project: wdf
 ms.assetid: 36076a28-d3f7-4463-b538-59794a18c4f9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

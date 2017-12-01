@@ -7,7 +7,7 @@ old-location: kernel\rtllongptrmult.htm
 old-project: kernel
 ms.assetid: AF602DBE-E106-4105-B56B-DE9EE7691A05
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlLongPtrMult
 ms.prod: windows-hardware
 ms.technology: windows-devices

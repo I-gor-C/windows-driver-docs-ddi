@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The HBA_FcpId structure is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556038">HBAFCPID</a> structure.</p>
+<p>The HBA_FcpId structure is identical to the <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpid.md">HBAFCPID</a> structure.</p>
 
 
 ## -struct-fields

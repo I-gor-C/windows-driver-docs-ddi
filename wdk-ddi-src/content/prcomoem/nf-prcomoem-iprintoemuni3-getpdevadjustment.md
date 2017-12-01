@@ -62,7 +62,7 @@ HRESULT GetPDEVAdjustment(
 ### -param <i>pdevobj</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>Pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>dwAdjustType</i> 
@@ -87,7 +87,7 @@ HRESULT GetPDEVAdjustment(
 <p>PDEV_IMAGEABLE_ORIGIN_AREA_TYPE</p>
 </td>
 <td>
-<p>Adjust the imageable origin area that is reported in the PDEV structure. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559787">PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA</a> structure.</p>
+<p>Adjust the imageable origin area that is reported in the PDEV structure. For more information, see the <a href="..\printoem\ns-printoem--pdev-adjust-imageable-origin-area.md">PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -95,7 +95,7 @@ HRESULT GetPDEVAdjustment(
 <p>PDEV_ADJUST_PHYSICAL_PAPER_SIZE_TYPE</p>
 </td>
 <td>
-<p>Adjust the physical paper size that is reported in the PDEV structure. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559796">PDEV_ADJUST_PAPER_PHYSICAL_SIZE</a> structure.</p>
+<p>Adjust the physical paper size that is reported in the PDEV structure. For more information, see the <a href="print.pdev_adjust_paper_physical_size">PDEV_ADJUST_PAPER_PHYSICAL_SIZE</a> structure.</p>
 </td>
 </tr>
 </table>
@@ -125,10 +125,6 @@ HRESULT GetPDEVAdjustment(
 <p>The <code>IPrintOemUni3::GetPDEVAdjustment</code> method should return S_OK if it recognizes the adjustment type, and S_FALSE if it does not. If the method fails, it should return E_FAIL. The chain of plug-ins is called until either S_OK or a failure code other than E_NOTIMPL is returned. That is, the chain of plug-ins is called until the first plug-in that is capable of handling the adjustment is found.</p>
 
 ## -remarks
-<p>This function is available in Windows Vista and later.</p>
-
-<p>Currently, the Unidrv driver calls <code>IPrintOemUni3::GetPDEVAdjustment</code> to adjust the graphics resolution setting, as reported in the PDEV, to adjust the imageable origin area, or to adjust the physical paper size.</p>
-
 <p>This function is available in Windows Vista and later.</p>
 
 <p>Currently, the Unidrv driver calls <code>IPrintOemUni3::GetPDEVAdjustment</code> to adjust the graphics resolution setting, as reported in the PDEV, to adjust the imageable origin area, or to adjust the physical paper size.</p>
@@ -163,19 +159,19 @@ HRESULT GetPDEVAdjustment(
 <a href="..\printoem\ns-printoem--pdev-adjust-graphics-resolution.md">PDEV_ADJUST_GRAPHICS RESOLUTION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559787">PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA</a>
+<a href="..\printoem\ns-printoem--pdev-adjust-imageable-origin-area.md">PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559791">PDEV_ADJUST_PAPER_MARGIN</a>
+<a href="..\printoem\ns-printoem--pdev-adjust-paper-margin.md">PDEV_ADJUST_PAPER_MARGIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559796">PDEV_ADJUST_PAPER_PHYSICAL_SIZE</a>
+<a href="print.pdev_adjust_paper_physical_size">PDEV_ADJUST_PAPER_PHYSICAL_SIZE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559803">PDEV_HOSTFONT_ENABLED</a>
+<a href="..\printoem\ns-printoem--pdev-hostfont-enabled.md">PDEV_HOSTFONT_ENABLED</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559806">PDEV_USE_TRUE_COLOR</a>
+<a href="..\printoem\ns-printoem--pdev-use-true-color.md">PDEV_USE_TRUE_COLOR</a>
 </dt>
 </dl>
 <p> </p>

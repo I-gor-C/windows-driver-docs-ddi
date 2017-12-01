@@ -7,7 +7,7 @@ old-location: netvista\rilc2kmrl_2.htm
 old-project: netvista
 ms.assetid: a06d81d1-9ecc-41da-b0ad-fa878fac382b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILC2KMRL, RILC2KMRL
 ms.prod: windows-hardware
 ms.technology: windows-devices

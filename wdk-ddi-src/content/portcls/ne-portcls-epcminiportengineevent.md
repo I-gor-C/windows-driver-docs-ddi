@@ -7,7 +7,7 @@ old-location: audio\epcminiportengineevent.htm
 old-project: audio
 ms.assetid: 6B282CA4-2EE8-48BB-99E2-1A16A92E57A5
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: BarcodeSymbologyAttributesData, BarcodeSymbologyAttributesData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -222,16 +222,7 @@ typedef enum _EPcMiniportEngineEvent {
 </tr>
 </table>
 <p> </p>
-</p><dl>
-<dd>0 - KS_STOP</dd>
-<dd>1 - KS_ACQUIRE</dd>
-<dd>2 - KS_PAUSE</dd>
-<dd>3 - KS_RUN</dd>
-</dl><dl>
-<dd>1 - WaveRT buffer under run</dd>
-<dd>2 - Decoder errors</dd>
-<dd>3 - Receive the same WaveRT buffer write position twice in a row.</dd>
-</dl><p> </p>
+</p>
 
 <p>The following table shows the members of the  EPcMiniportEngineEvent enum that were introduced with Windows 8.1. The table shows the events associated with the enum's members, and the meanings of their parameters.</p>
 
@@ -275,284 +266,6 @@ typedef enum _EPcMiniportEngineEvent {
 </table>
 <p> </p>
 </p>
-
-<p> </p>
-
-<p>The following table shows the members of the  EPcMiniportEngineEvent enum that were introduced with Windows 8. The table shows the events associated with the enum's members, and the meanings of their parameters.</p>
-
-<p>
-<table>
-<tr>
-<th>Event type</th>
-<th>Parameter 1</th>
-<th>Parameter  2</th>
-<th>Parameter  3</th>
-<th>Parameter  4</th>
-</tr>
-<tr>
-<td>IHV-specific event type.</td>
-<td>Defined and used by IHVs.</td>
-<td>Defined and used by IHVs.</td>
-<td>Defined and used by IHVs.</td>
-<td>Defined and used by IHVs.</td>
-</tr>
-<tr>
-<td>Buffer complete. </td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>Data length completed.</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Pin state.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>
-<dl>
-<dd>0 - KS_STOP</dd>
-<dd>1 - KS_ACQUIRE</dd>
-<dd>2 - KS_PAUSE</dd>
-<dd>3 - KS_RUN</dd>
-</dl>
-</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Get stream position.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Set WaveRT buffer write position.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position that was received from PortCls.</td>
-<td>Target WaveRTBuffer write position that was received from PortCls.</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Get presentation position.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>Presentation position.</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Program DMA.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>Starting WaveRtBuffer offset</td>
-<td>Data length.</td>
-</tr>
-<tr>
-<td>Glitch detection.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>
-<dl>
-<dd>1 - WaveRT buffer under run</dd>
-<dd>2 - Decoder errors</dd>
-<dd>3 - Receive the same WaveRT buffer write position twice in a row.</dd>
-</dl>
-</td>
-<td>When Parameter 3 = '3' then Parameter 4 is the offending write position.</td>
-</tr>
-</table>
-<p> </p>
-</p><dl>
-<dd>0 - KS_STOP</dd>
-<dd>1 - KS_ACQUIRE</dd>
-<dd>2 - KS_PAUSE</dd>
-<dd>3 - KS_RUN</dd>
-</dl><dl>
-<dd>1 - WaveRT buffer under run</dd>
-<dd>2 - Decoder errors</dd>
-<dd>3 - Receive the same WaveRT buffer write position twice in a row.</dd>
-</dl><p> </p>
-
-<p>The following table shows the members of the  EPcMiniportEngineEvent enum that were introduced with Windows 8.1. The table shows the events associated with the enum's members, and the meanings of their parameters.</p>
-
-<p>
-<table>
-<tr>
-<th>Event type</th>
-<th>Parameter 1</th>
-<th>Parameter  2</th>
-<th>Parameter  3</th>
-<th>Parameter  4</th>
-</tr>
-<tr>
-<td>Last buffer rendered.</td>
-<td>Current linear buffer position.</td>
-<td>The very last WaveRtBuffer write position that the driver received.</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Processing mode.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>First 8 bytes of GUID.</td>
-<td>Second 8 bytes of GUID.</td>
-</tr>
-<tr>
-<td>FX class ID.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>First 8 bytes of FX CLSID.            </td>
-<td>Second 8 bytes of FX CLSID.            </td>
-</tr>
-<tr>
-<td>Max value.</td>
-<td>ID for enumerated value.</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</table>
-<p> </p>
-</p>
-
-<p> </p>
-
-<p>The following table shows the members of the  EPcMiniportEngineEvent enum that were introduced with Windows 8. The table shows the events associated with the enum's members, and the meanings of their parameters.</p>
-
-<p>
-<table>
-<tr>
-<th>Event type</th>
-<th>Parameter 1</th>
-<th>Parameter  2</th>
-<th>Parameter  3</th>
-<th>Parameter  4</th>
-</tr>
-<tr>
-<td>IHV-specific event type.</td>
-<td>Defined and used by IHVs.</td>
-<td>Defined and used by IHVs.</td>
-<td>Defined and used by IHVs.</td>
-<td>Defined and used by IHVs.</td>
-</tr>
-<tr>
-<td>Buffer complete. </td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>Data length completed.</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Pin state.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>
-<dl>
-<dd>0 - KS_STOP</dd>
-<dd>1 - KS_ACQUIRE</dd>
-<dd>2 - KS_PAUSE</dd>
-<dd>3 - KS_RUN</dd>
-</dl>
-</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Get stream position.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Set WaveRT buffer write position.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position that was received from PortCls.</td>
-<td>Target WaveRTBuffer write position that was received from PortCls.</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Get presentation position.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>Presentation position.</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Program DMA.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>Starting WaveRtBuffer offset</td>
-<td>Data length.</td>
-</tr>
-<tr>
-<td>Glitch detection.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>
-<dl>
-<dd>1 - WaveRT buffer under run</dd>
-<dd>2 - Decoder errors</dd>
-<dd>3 - Receive the same WaveRT buffer write position twice in a row.</dd>
-</dl>
-</td>
-<td>When Parameter 3 = '3' then Parameter 4 is the offending write position.</td>
-</tr>
-</table>
-<p> </p>
-</p><dl>
-<dd>0 - KS_STOP</dd>
-<dd>1 - KS_ACQUIRE</dd>
-<dd>2 - KS_PAUSE</dd>
-<dd>3 - KS_RUN</dd>
-</dl><dl>
-<dd>1 - WaveRT buffer under run</dd>
-<dd>2 - Decoder errors</dd>
-<dd>3 - Receive the same WaveRT buffer write position twice in a row.</dd>
-</dl><p> </p>
-
-<p>The following table shows the members of the  EPcMiniportEngineEvent enum that were introduced with Windows 8.1. The table shows the events associated with the enum's members, and the meanings of their parameters.</p>
-
-<p>
-<table>
-<tr>
-<th>Event type</th>
-<th>Parameter 1</th>
-<th>Parameter  2</th>
-<th>Parameter  3</th>
-<th>Parameter  4</th>
-</tr>
-<tr>
-<td>Last buffer rendered.</td>
-<td>Current linear buffer position.</td>
-<td>The very last WaveRtBuffer write position that the driver received.</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Processing mode.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>First 8 bytes of GUID.</td>
-<td>Second 8 bytes of GUID.</td>
-</tr>
-<tr>
-<td>FX class ID.</td>
-<td>Current linear buffer position.</td>
-<td>Current WaveRTBuffer write position.</td>
-<td>First 8 bytes of FX CLSID.            </td>
-<td>Second 8 bytes of FX CLSID.            </td>
-</tr>
-<tr>
-<td>Max value.</td>
-<td>ID for enumerated value.</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</table>
-<p> </p>
-</p>
-
-<p> </p>
 
 ## -requirements
 <table>
@@ -590,9 +303,9 @@ typedef enum _EPcMiniportEngineEvent {
 <a href="NULL">Glitch Reporting for Offloaded Audio</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265124">MiniportWriteEtwEvent</a>
+<a href="audio.iportclsetwhelper_miniportwriteetwevent">MiniportWriteEtwEvent</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20EPcMiniportEngineEvent enumeration%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20EPcMiniportEngineEvent enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

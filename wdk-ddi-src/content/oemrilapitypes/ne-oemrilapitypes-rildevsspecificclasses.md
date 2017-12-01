@@ -7,7 +7,7 @@ old-location: netvista\rildevsspecificclasses.htm
 old-project: netvista
 ms.assetid: 21fcd199-b2bb-4ba0-9a22-33ef6579cd7a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RtlUnicodeStringVPrintfEx
 ms.prod: windows-hardware
 ms.technology: windows-devices

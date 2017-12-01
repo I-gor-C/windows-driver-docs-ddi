@@ -110,7 +110,7 @@ typedef struct _D3DKMT_DESTROYALLOCATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546891">D3DKMTDestroyAllocation</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroyallocation.md">D3DKMTDestroyAllocation</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\ndisfillmemory.htm
 old-project: netvista
 ms.assetid: 6d974c56-5925-4ad5-a3c0-0c17e8488431
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFillMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,11 +85,6 @@ VOID NdisFillMemory(
     <i>Destination</i> buffer is resident. If the buffer is pageable, a caller must be running at IRQL &lt;
     DISPATCH_LEVEL.</p>
 
-<p>Callers of 
-    <b>NdisFillMemory</b> can be running at any IRQL, provided that the 
-    <i>Destination</i> buffer is resident. If the buffer is pageable, a caller must be running at IRQL &lt;
-    DISPATCH_LEVEL.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -107,7 +102,7 @@ VOID NdisFillMemory(
 <p>Version</p>
 </th>
 <td width="70%">
-<p>Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561870">RtlFillMemory</a> instead.</p>
+<p>Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use <a href="..\wdm\nf-wdm-rtlfillmemory.md">RtlFillMemory</a> instead.</p>
 </td>
 </tr>
 <tr>
@@ -133,12 +128,12 @@ VOID NdisFillMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561846">RtlEqualMemory</a>
+<a href="..\wdm\nf-wdm-rtlequalmemory.md">RtlEqualMemory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563610">RtlZeroMemory</a>
+<a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFillMemory function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFillMemory function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

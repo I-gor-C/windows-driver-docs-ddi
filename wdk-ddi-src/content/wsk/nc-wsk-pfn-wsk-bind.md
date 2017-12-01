@@ -7,7 +7,7 @@ old-location: netvista\wskbind.htm
 old-project: netvista
 ms.assetid: 520b02d0-a078-4af9-93a3-4fee5bbfee99
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -64,7 +63,7 @@ NTSTATUS WSKAPI * WskBind(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a> structure that specifies the socket
+     <a href="..\wsk\ns-wsk--wsk-socket.md">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being bound.</p>
 </dd>
 
@@ -106,7 +105,7 @@ NTSTATUS WSKAPI * WskBind(
 <dt><b>STATUS_FILE_FORCED_CLOSED</b></dt>
 </dl><p>The socket is no longer functional. The IRP will be completed with failure status. The WSK
        application must call the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a> function to close the
+       <a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a> function to close the
        socket as soon as possible.</p><dl>
 <dt><b>Other status codes</b></dt>
 </dl><p>An error occurred. The IRP will be completed with failure status.</p>
@@ -128,35 +127,13 @@ NTSTATUS WSKAPI * WskBind(
 <p>For a connection-oriented socket, calling the 
     <b>WskBind</b> function binds the socket to the specified local transport address. 
     <b>WskBind</b> must be called prior to calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a> function. If a WSK application
+    <a href="..\wsk\nc-wsk-pfn-wsk-connect.md">WskConnect</a> function. If a WSK application
     specifies a local wildcard address, the network stack binds the socket to the appropriate local transport
     address when the application calls 
     <b>WskConnect</b> to connect the socket to a remote transport address. In such a situation, the local
     transport address is determined by the system's routing information.</p>
 
-<p>For a stream socket, calling the <b>WskBind</b> function binds the socket to the specified local transport address. If a WSK application specifies a local wildcard address, the network stack binds the socket to an available local transport address. <b>WskBind</b> must be called prior to calling the <a href="..\wsk\nc-wsk-pfn-wsk-listen.md">WskListen</a> or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a> functions.</p>
-
-<p>For a listening socket, calling the 
-    <b>WskBind</b> function prepares the socket to listen for incoming connection requests on the specified
-    local transport address. If a WSK application specifies a local wildcard address, the socket will listen
-    for incoming connection requests on all local transport addresses.</p>
-
-<p>For a datagram socket, calling the 
-    <b>WskBind</b> function prepares the socket to send and receive datagrams on the specified local transport
-    address. If a WSK application specifies a local wildcard address, the socket will receive datagrams on
-    all local transport addresses and will send datagrams from the appropriate local transport address that
-    is determined by the system's routing information.</p>
-
-<p>For a connection-oriented socket, calling the 
-    <b>WskBind</b> function binds the socket to the specified local transport address. 
-    <b>WskBind</b> must be called prior to calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a> function. If a WSK application
-    specifies a local wildcard address, the network stack binds the socket to the appropriate local transport
-    address when the application calls 
-    <b>WskConnect</b> to connect the socket to a remote transport address. In such a situation, the local
-    transport address is determined by the system's routing information.</p>
-
-<p>For a stream socket, calling the <b>WskBind</b> function binds the socket to the specified local transport address. If a WSK application specifies a local wildcard address, the network stack binds the socket to an available local transport address. <b>WskBind</b> must be called prior to calling the <a href="..\wsk\nc-wsk-pfn-wsk-listen.md">WskListen</a> or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a> functions.</p>
+<p>For a stream socket, calling the <b>WskBind</b> function binds the socket to the specified local transport address. If a WSK application specifies a local wildcard address, the network stack binds the socket to an available local transport address. <b>WskBind</b> must be called prior to calling the <a href="..\wsk\nc-wsk-pfn-wsk-listen.md">WskListen</a> or the <a href="..\wsk\nc-wsk-pfn-wsk-connect.md">WskConnect</a> functions.</p>
 
 ## -requirements
 <table>
@@ -202,16 +179,16 @@ NTSTATUS WSKAPI * WskBind(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-connect.md">WskConnect</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-socket.md">WskSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
+<a href="netvista.sockaddr">SOCKADDR</a>
 </dt>
 <dt>
 <a href="..\wsk\ns-wsk--wsk-provider-datagram-dispatch.md">
@@ -222,15 +199,15 @@ NTSTATUS WSKAPI * WskBind(
    WSK_PROVIDER_CONNECTION_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571176">WSK_PROVIDER_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk--wsk-provider-listen-dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
 </dt>
 <dt>
 <a href="..\wsk\ns-wsk--wsk-provider-stream-dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk--wsk-socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_BIND callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_BIND callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

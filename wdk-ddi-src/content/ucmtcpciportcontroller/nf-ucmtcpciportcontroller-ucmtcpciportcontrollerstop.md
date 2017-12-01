@@ -58,7 +58,7 @@ VOID UcmTcpciPortControllerStop(
 ### -param <i>PortControllerObject</i> 
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 </dl>
 
@@ -68,24 +68,11 @@ VOID UcmTcpciPortControllerStop(
 ## -remarks
 <p>After calling <b>UcmTcpciPortControllerStop</b>, the client driver stops processing all requests on the port controller object. This call is synchronous, so it is guaranteed that the class extension will not invoke callback functions or send requests after it returns. The driver must not call this method within a port controller callback, or while any non-cancelable hardware requests are pending.</p>
 
-<p>A client driver calls this method from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540890">EVT_WDF_DEVICE_RELEASE_HARDWARE</a> callback implementation. After doing so, it should also call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548734">WdfObjectDelete</a>, in case <i>EVT_WDF_DEVICE_RELEASE_HARDWARE</i> is invoked to resource rebalancing. Failure to do so causes the driver to leak objects associated with the port controller object when a resource rebalance occurs. Parenting the UCMPORTCONTROLLER handle to the WDFDEVICE handle is not sufficient, because a WDFDEVICE is not deleted across a resource rebalance.</p>
+<p>A client driver calls this method from its <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-release-hardware.md">EVT_WDF_DEVICE_RELEASE_HARDWARE</a> callback implementation. After doing so, it should also call <a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a>, in case <i>EVT_WDF_DEVICE_RELEASE_HARDWARE</i> is invoked to resource rebalancing. Failure to do so causes the driver to leak objects associated with the port controller object when a resource rebalance occurs. Parenting the UCMPORTCONTROLLER handle to the WDFDEVICE handle is not sufficient, because a WDFDEVICE is not deleted across a resource rebalance.</p>
 
-<p>If the driver is transitioning to a Dx state due to S0-Idle, the driver must not call this method from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540855">EVT_WDF_DEVICE_D0_EXIT</a> callback function.  Synchronization with the driver's power state can be achieved by using a power-managed queue to receive hardware requests.</p>
+<p>If the driver is transitioning to a Dx state due to S0-Idle, the driver must not call this method from its <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-device-d0-exit.md">EVT_WDF_DEVICE_D0_EXIT</a> callback function.  Synchronization with the driver's power state can be achieved by using a power-managed queue to receive hardware requests.</p>
 
-<p>It is safe to call <b>UcmTcpciPortControllerStop</b> on a port controller that has already been stopped. After this method returns, no other method except for <a href="https://msdn.microsoft.com/library/windows/hardware/mt805846">UcmTcpciPortControllerStart</a> can be called on the port controller.</p>
-
-<p>The client driver must call this method if it needs to stop all actions on the port controller so that it can perform error recovery if it detected any issues during its operation. After the recovery process has been completed, the driver must restart the port controller.
-</p>
-
-<p>Stopping the controller ends any active PD contract and the Type-C connection. </p>
-
-<p>After calling <b>UcmTcpciPortControllerStop</b>, the client driver stops processing all requests on the port controller object. This call is synchronous, so it is guaranteed that the class extension will not invoke callback functions or send requests after it returns. The driver must not call this method within a port controller callback, or while any non-cancelable hardware requests are pending.</p>
-
-<p>A client driver calls this method from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540890">EVT_WDF_DEVICE_RELEASE_HARDWARE</a> callback implementation. After doing so, it should also call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548734">WdfObjectDelete</a>, in case <i>EVT_WDF_DEVICE_RELEASE_HARDWARE</i> is invoked to resource rebalancing. Failure to do so causes the driver to leak objects associated with the port controller object when a resource rebalance occurs. Parenting the UCMPORTCONTROLLER handle to the WDFDEVICE handle is not sufficient, because a WDFDEVICE is not deleted across a resource rebalance.</p>
-
-<p>If the driver is transitioning to a Dx state due to S0-Idle, the driver must not call this method from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540855">EVT_WDF_DEVICE_D0_EXIT</a> callback function.  Synchronization with the driver's power state can be achieved by using a power-managed queue to receive hardware requests.</p>
-
-<p>It is safe to call <b>UcmTcpciPortControllerStop</b> on a port controller that has already been stopped. After this method returns, no other method except for <a href="https://msdn.microsoft.com/library/windows/hardware/mt805846">UcmTcpciPortControllerStart</a> can be called on the port controller.</p>
+<p>It is safe to call <b>UcmTcpciPortControllerStop</b> on a port controller that has already been stopped. After this method returns, no other method except for <a href="buses.ucmtcpciportcontrollerstart">UcmTcpciPortControllerStart</a> can be called on the port controller.</p>
 
 <p>The client driver must call this method if it needs to stop all actions on the port controller so that it can perform error recovery if it detected any issues during its operation. After the recovery process has been completed, the driver must restart the port controller.
 </p>
@@ -143,7 +130,7 @@ VOID UcmTcpciPortControllerStop(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt805846">UcmTcpciPortControllerStart</a>
+<a href="buses.ucmtcpciportcontrollerstart">UcmTcpciPortControllerStart</a>
 </dt>
 </dl>
 <p> </p>

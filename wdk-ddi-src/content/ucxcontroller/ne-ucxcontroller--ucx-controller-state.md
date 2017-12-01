@@ -89,7 +89,7 @@ typedef enum _UCX_CONTROLLER_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188061">UCX_CONTROLLER_RESET_COMPLETE_INFO</a>
+<a href="buses._ucx_controller_reset_complete_info">UCX_CONTROLLER_RESET_COMPLETE_INFO</a>
 </dt>
 </dl>
 <p> </p>

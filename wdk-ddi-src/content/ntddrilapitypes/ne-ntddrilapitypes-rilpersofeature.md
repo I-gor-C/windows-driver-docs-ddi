@@ -7,7 +7,7 @@ old-location: netvista\rilpersofeature.htm
 old-project: netvista
 ms.assetid: e212ab20-e9b4-4ccc-b0db-a82ca5b59573
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -86,25 +86,9 @@ NTSTATUS RxCeQueryTransportInformation(
 <p> </p>
 
 ## -remarks
-<p><b>RxCeQueryTransportInformation</b> returns information for a given transport. The <b>RXCE_TRANSPORT_INFORMATION</b> data structure contains two data elements that are filled in by <b>RxCeQueryTransportInformation</b>:</p><dl>
-<dd>
-<p>ConnectionCount</p>
-</dd>
-<dd>
-<p>QualityOfService</p>
-</dd>
-</dl><p>ConnectionCount</p>
+<p><b>RxCeQueryTransportInformation</b> returns information for a given transport. The <b>RXCE_TRANSPORT_INFORMATION</b> data structure contains two data elements that are filled in by <b>RxCeQueryTransportInformation</b>:</p>
 
-<p>QualityOfService</p>
-
-<p><b>RxCeQueryTransportInformation</b> returns information for a given transport. The <b>RXCE_TRANSPORT_INFORMATION</b> data structure contains two data elements that are filled in by <b>RxCeQueryTransportInformation</b>:</p><dl>
-<dd>
 <p>ConnectionCount</p>
-</dd>
-<dd>
-<p>QualityOfService</p>
-</dd>
-</dl><p>ConnectionCount</p>
 
 <p>QualityOfService</p>
 
@@ -143,10 +127,10 @@ NTSTATUS RxCeQueryTransportInformation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553456">RxCeQueryAdapterStatus</a>
+<a href="..\rxce\nf-rxce-rxcequeryadapterstatus.md">RxCeQueryAdapterStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553461">RxCeQueryInformation</a>
+<a href="..\rxce\nf-rxce-rxcequeryinformation.md">RxCeQueryInformation</a>
 </dt>
 </dl>
 <p> </p>

@@ -85,7 +85,7 @@ typedef struct _SRBEX_DATA {
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh920410">SRBEX_DATA_BIDIRECTIONAL</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-bidirectional.md">SRBEX_DATA_BIDIRECTIONAL</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -96,7 +96,7 @@ typedef struct _SRBEX_DATA {
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh920414">SRBEX_DATA_SCSI_CDB16</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -107,7 +107,7 @@ typedef struct _SRBEX_DATA {
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh920415">SRBEX_DATA_SCSI_CDB32</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -118,7 +118,7 @@ typedef struct _SRBEX_DATA {
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh920416">SRBEX_DATA_SCSI_CDB_VAR</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-scsi-cdb-var.md">SRBEX_DATA_SCSI_CDB_VAR</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -129,7 +129,7 @@ typedef struct _SRBEX_DATA {
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh920417">SRBEX_DATA_WMI</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-wmi.md">SRBEX_DATA_WMI</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ typedef struct _SRBEX_DATA {
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh920413">SRBEX_DATA_POWER</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-power.md">SRBEX_DATA_POWER</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -151,7 +151,7 @@ typedef struct _SRBEX_DATA {
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh920412">SRBEX_DATA_PNP</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-pnp.md">SRBEX_DATA_PNP</a> structure.</p>
 </td>
 </tr>
 <tr>
@@ -162,7 +162,7 @@ typedef struct _SRBEX_DATA {
 </dl>
 </td>
 <td width="60%">
-<p>The SRB extended data is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh920411">SRBEX_DATA_IO_INFO</a> structure.</p>
+<p>The SRB extended data is formatted as an <a href="..\srb\ns-srb--srbex-data-io-info.md">SRBEX_DATA_IO_INFO</a> structure.</p>
 </td>
 </tr>
 </table>
@@ -183,7 +183,7 @@ typedef struct _SRBEX_DATA {
 </dl>
 
 ## -remarks
-<p>The SRB extended data is present when the <b>SrbExDataOffset</b> array in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451474">STORAGE_REQUEST_BLOCK</a> structure contains valid offset locations.  A storage driver initially references a memory offset location contained in <b>SrbExDataOffset</b> as an <b>SRBEX_DATA</b> structure. A pointer to the data block is then cast to the appropriate structure type based on the data type value in the <b>Type</b> member.</p>
+<p>The SRB extended data is present when the <b>SrbExDataOffset</b> array in the <a href="..\srb\ns-srb--storage-request-block.md">STORAGE_REQUEST_BLOCK</a> structure contains valid offset locations.  A storage driver initially references a memory offset location contained in <b>SrbExDataOffset</b> as an <b>SRBEX_DATA</b> structure. A pointer to the data block is then cast to the appropriate structure type based on the data type value in the <b>Type</b> member.</p>
 
 <p>The following example code fragment shows how to access the extended data for the an SRB function of SRB_FUNCTION_PNP.</p>
 
@@ -212,28 +212,28 @@ typedef struct _SRBEX_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920410">SRBEX_DATA_BIDIRECTIONAL</a>
+<a href="..\srb\ns-srb--srbex-data-bidirectional.md">SRBEX_DATA_BIDIRECTIONAL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920411">SRBEX_DATA_IO_INFO</a>
+<a href="..\srb\ns-srb--srbex-data-io-info.md">SRBEX_DATA_IO_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920412">SRBEX_DATA_PNP</a>
+<a href="..\srb\ns-srb--srbex-data-pnp.md">SRBEX_DATA_PNP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920413">SRBEX_DATA_POWER</a>
+<a href="..\srb\ns-srb--srbex-data-power.md">SRBEX_DATA_POWER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920414">SRBEX_DATA_SCSI_CDB16</a>
+<a href="..\srb\ns-srb--srbex-data-scsi-cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920415">SRBEX_DATA_SCSI_CDB32</a>
+<a href="..\srb\ns-srb--srbex-data-scsi-cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920416">SRBEX_DATA_SCSI_CDB_VAR</a>
+<a href="..\srb\ns-srb--srbex-data-scsi-cdb-var.md">SRBEX_DATA_SCSI_CDB_VAR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920417">SRBEX_DATA_WMI</a>
+<a href="..\srb\ns-srb--srbex-data-wmi.md">SRBEX_DATA_WMI</a>
 </dt>
 </dl>
 <p> </p>

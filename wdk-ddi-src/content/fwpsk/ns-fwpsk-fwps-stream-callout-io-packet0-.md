@@ -7,7 +7,7 @@ old-location: netvista\fwps_stream_callout_io_packet0.htm
 old-project: netvista
 ms.assetid: 2c0539f0-116e-4344-9584-db7416d258e0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FWPS_STREAM_CALLOUT_IO_PACKET0_, FWPS_STREAM_CALLOUT_IO_PACKET0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The <b>FWPS_STREAM_CALLOUT_IO_PACKET0</b> structure describes the data passed by the filter engine to a
   callout's 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function when filtering a
+  <a href="netvista.classifyfn">classifyFn</a> callout function when filtering a
   data stream.</p>
 
 
@@ -65,16 +65,16 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552419">FWPS_STREAM_DATA0</a> structure that
+     <a href="netvista.fwps_stream_data0">FWPS_STREAM_DATA0</a> structure that
      describes the portion of the data stream available to the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function for processing.</p>
+     <a href="netvista.classifyfn">classifyFn</a> callout function for processing.</p>
 </dd>
 
 ### -field <b>missedBytes</b>
 
 <dd>
 <p>The number of bytes in the data stream that are missing since the last time the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function was called. This
+     <a href="netvista.classifyfn">classifyFn</a> callout function was called. This
      member is nonzero if a higher weight filter in the filter engine prevented the callout driver's 
      classifyFn callout function from processing a
      portion of the data stream.</p>
@@ -84,14 +84,14 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 
 <dd>
 <p>A value set by a callout's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function. This value
+     <a href="netvista.classifyfn">classifyFn</a> callout function. This value
      specifies how many additional bytes of stream data are required by the callout function if it sets the 
      <b>streamAction</b> member to <b>FWPS_STREAM_ACTION_NEED_MORE_DATA</b>. The filter engine waits until it
      receives at least this many additional bytes of stream data before calling the callout driver's 
      classifyFn callout function again.
      </p>
 <p>If a callout's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function sets the 
+     <a href="netvista.classifyfn">classifyFn</a> callout function sets the 
      <b>streamAction</b> member to a value other than <b>FWPS_STREAM_ACTION_NEED_MORE_DATA</b>, then it should set
      this member to zero.</p>
 </dd>
@@ -100,7 +100,7 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 
 <dd>
 <p>A value set by a callout's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function. This value
+     <a href="netvista.classifyfn">classifyFn</a> callout function. This value
      specifies the number of leading bytes of data in the portion of the data stream being processed to which
      the action specified by the 
      <b>streamAction</b> member or by the action returned by the callout function applies. Any remaining data
@@ -113,7 +113,7 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 
 <dd>
 <p>An <b>FWPS_STREAM_ACTION_TYPE</b> value set by a callout's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function that specifies
+     <a href="netvista.classifyfn">classifyFn</a> callout function that specifies
      the action to be applied to the data stream. This action is independent of the action returned by the
      callout function. A callout's 
      classifyFn callout function sets this member
@@ -144,11 +144,11 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 
 <dd>
 <p>The stream connection should be dropped. A callout's 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function should only set
+       <a href="netvista.classifyfn">classifyFn</a> callout function should only set
        the 
        <b>streamAction</b> member to this value if the 
        <b>action.type</b> member of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff552387">FWPS_FILTER0</a> structure that the filter
+       <a href="netvista.fwps_filter0">FWPS_FILTER0</a> structure that the filter
        engine passed to the callout driver's 
        classifyFn callout function contains the value <b>FWP_ACTION_CALLOUT_UNKNOWN</b>. If a callout's 
        classifyFn callout function sets the 
@@ -161,7 +161,7 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 
 <dd>
 <p>Processing of the stream data will be deferred until the callout driver calls the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff551210">FwpsStreamContinue0</a> function. This
+       <a href="..\fwpsk\nf-fwpsk-fwpsstreamcontinue0.md">FwpsStreamContinue0</a> function. This
        action can only be set for an inbound data stream.
        </p>
 <p>Deferring an inbound data stream will cause the network stack to stop acknowledging data received
@@ -171,7 +171,7 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 </dl>
 <p>The <b>FWPS_STREAM_ACTION_TYPE_MAX</b> value is a maximum value for testing purposes.</p>
 <p>If a callout's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function sets this member
+     <a href="netvista.classifyfn">classifyFn</a> callout function sets this member
      to a value other than <b>FWPS_STREAM_ACTION_NONE</b>, then the action returned by the callout function is
      ignored by the filter engine.</p>
 </dd>
@@ -179,7 +179,7 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 
 ## -remarks
 <p>The filter engine passes a pointer to an <b>FWPS_STREAM_CALLOUT_IO_PACKET0</b> structure to a callout's 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function as the 
+    <a href="..\fwpsk\nc-fwpsk-fwps-callout-classify-fn0.md">classifyFn</a> callout function as the 
     <i>layerData</i> parameter when filtering a data stream.</p>
 
 ## -requirements
@@ -207,13 +207,13 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+<a href="netvista.classifyfn">classifyFn</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552419">FWPS_STREAM_DATA0</a>
+<a href="netvista.fwps_stream_data0">FWPS_STREAM_DATA0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551210">FwpsStreamContinue0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsstreamcontinue0.md">FwpsStreamContinue0</a>
 </dt>
 <dt>
 <a href="NULL">Types of Callouts</a>
@@ -221,4 +221,4 @@ typedef struct FWPS_STREAM_CALLOUT_IO_PACKET0_ {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_STREAM_CALLOUT_IO_PACKET0 structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_STREAM_CALLOUT_IO_PACKET0 structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

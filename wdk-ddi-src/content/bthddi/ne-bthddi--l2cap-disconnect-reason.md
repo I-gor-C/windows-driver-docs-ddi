@@ -7,7 +7,7 @@ old-location: bltooth\l2cap_disconnect_reason.htm
 old-project: bltooth
 ms.assetid: 34a37d29-c517-45dc-b94d-abffaa91cb31
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: IBidiSpl2, UnbindDevice, IBidiSpl2::UnbindDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,9 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback
-   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access
-   paged memory)
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
 req.iface: IBidiSpl2
 ---
 
@@ -91,33 +89,7 @@ typedef enum _L2CAP_DISCONNECT_REASON {
 ## -remarks
 <p>A value from this enumeration is used as the 
     <b>Reason</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536680">INDICATION_PARAMETERS</a> structure.</p>
-
-<p>Hardware limitations may prevent the Bluetooth driver stack from distinguishing between 
-    <b>RadioPoweredDown</b> and 
-    <b>HardwareRemoval</b> events.</p>
-
-<p>Currently, 
-    <i>HciDisconnect</i> and 
-    <i>L2capDisconnectRequest</i> are the only values the Bluetooth driver stack passes to the 
-    <a href="..\bthddi\nc-bthddi-pfnbthport-indication-callback.md">L2CAP Callback Function</a>.</p>
-
-<p>A value from this enumeration is used as the 
-    <b>Reason</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536680">INDICATION_PARAMETERS</a> structure.</p>
-
-<p>Hardware limitations may prevent the Bluetooth driver stack from distinguishing between 
-    <b>RadioPoweredDown</b> and 
-    <b>HardwareRemoval</b> events.</p>
-
-<p>Currently, 
-    <i>HciDisconnect</i> and 
-    <i>L2capDisconnectRequest</i> are the only values the Bluetooth driver stack passes to the 
-    <a href="..\bthddi\nc-bthddi-pfnbthport-indication-callback.md">L2CAP Callback Function</a>.</p>
-
-<p>A value from this enumeration is used as the 
-    <b>Reason</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536680">INDICATION_PARAMETERS</a> structure.</p>
+    <a href="..\bthddi\ns-bthddi--indication-parameters.md">INDICATION_PARAMETERS</a> structure.</p>
 
 <p>Hardware limitations may prevent the Bluetooth driver stack from distinguishing between 
     <b>RadioPoweredDown</b> and 
@@ -153,9 +125,9 @@ typedef enum _L2CAP_DISCONNECT_REASON {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536680">INDICATION_PARAMETERS</a>
+<a href="..\bthddi\ns-bthddi--indication-parameters.md">INDICATION_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20L2CAP_DISCONNECT_REASON enumeration%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20L2CAP_DISCONNECT_REASON enumeration%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

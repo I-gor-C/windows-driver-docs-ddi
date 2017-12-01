@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>pfnReleaseAdditionalMonitorModeSet</b> function, available in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7, releases a handle to an additional monitor source mode set object that is associated with a specified monitor.</p>
+<p>The <b>pfnReleaseAdditionalMonitorModeSet</b> function, available in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface-v2.md">DXGK_MONITOR_INTERFACE_V2</a> interface beginning with Windows 7, releases a handle to an additional monitor source mode set object that is associated with a specified monitor.</p>
 
 
 ## -prototype
@@ -74,7 +74,7 @@ NTSTATUS APIENTRY pfnReleaseAdditionalMonitorModeSet(
 ### -param <i>pAdditionalModesSet</i> [in]
 
 <dd>
-<p>[in] A pointer to a variable that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562060">DXGK_TARGETMODE_DETAIL_TIMING</a> structure that describes a video present target's additional timing modes that are compatible with the display device. This structure was initially obtained in a call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-getadditionalmonitormodeset.md">pfnGetAdditionalMonitorModeSet</a>.</p>
+<p>[in] A pointer to a variable that receives a <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-targetmode-detail-timing.md">DXGK_TARGETMODE_DETAIL_TIMING</a> structure that describes a video present target's additional timing modes that are compatible with the display device. This structure was initially obtained in a call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-getadditionalmonitormodeset.md">pfnGetAdditionalMonitorModeSet</a>.</p>
 </dd>
 </dl>
 
@@ -90,8 +90,6 @@ NTSTATUS APIENTRY pfnReleaseAdditionalMonitorModeSet(
 <p> </p>
 
 ## -remarks
-<p>This function is available beginning with Windows 7.</p>
-
 <p>This function is available beginning with Windows 7.</p>
 
 ## -requirements
@@ -137,7 +135,7 @@ NTSTATUS APIENTRY pfnReleaseAdditionalMonitorModeSet(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561968">DXGK_MONITOR_INTERFACE_V2</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-monitor-interface-v2.md">DXGK_MONITOR_INTERFACE_V2</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-getadditionalmonitormodeset.md">DXGK_MONITOR_INTERFACE_V2::pfnGetAdditionalMonitorModeSet</a>

@@ -7,7 +7,7 @@ old-location: audio\pcgetdeviceproperty.htm
 old-project: audio
 ms.assetid: 75d66965-ab97-4f67-b62f-e7fedbf524a6
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcGetDeviceProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS PcGetDeviceProperty(
 ### -param <i>DeviceObject</i> [in]
 
 <dd>
-<p>Pointer to the device object for the device. This parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> system structure but is cast to type PVOID.</p>
+<p>Pointer to the device object for the device. This parameter points to a <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> system structure but is cast to type PVOID.</p>
 </dd>
 
 ### -param <i>DeviceProperty</i> [in]
@@ -93,68 +93,9 @@ NTSTATUS PcGetDeviceProperty(
 <p><b>PcGetDeviceProperty</b> returns STATUS_SUCCESS if the call was successful. Otherwise, it returns an appropriate error code. The routine returns STATUS_BUFFER_TOO_SMALL if the buffer size specified in <i>BufferLength</i> was not large enough to contain the requested property data.</p>
 
 ## -remarks
-<p>Set the <b>DeviceProperty</b> parameter to one of the following DEVICE_REGISTRY_PROPERTY enumeration values from header file wdm.h:</p><dl>
-<dd>
+<p>Set the <b>DeviceProperty</b> parameter to one of the following DEVICE_REGISTRY_PROPERTY enumeration values from header file wdm.h:</p>
+
 <p><b>DevicePropertyAddress</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyBootConfiguration</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyBootConfigurationTranslated</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyBusNumber</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyBusTypeGuid</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyClassGuid</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyClassName</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyCompatibleIDs</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyDetachability</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyDeviceDescription</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyDriverKeyName</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyEnumeratorName</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyFriendlyName</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyHardwareID</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyInstallState</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyLegacyBusType</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyLocationInformation</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyManufacturer</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyPhysicalDeviceObjectName</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyUINumber</b></p>
-</dd>
-</dl><p><b>DevicePropertyAddress</b></p>
 
 <p><b>DevicePropertyBootConfiguration</b></p>
 
@@ -194,112 +135,7 @@ NTSTATUS PcGetDeviceProperty(
 
 <p><b>DevicePropertyUINumber</b></p>
 
-<p>For a description of the preceding DeviceProperty<i>Xxx</i> values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549203">IoGetDeviceProperty</a>.</p>
-
-<p>Two calls to <b>PcGetDeviceProperty</b> might be necessary to determine the required <i>BufferLength</i>. In the first call, <i>BufferLength</i> can either be zero or a best-guess estimate of the required buffer size. If the return status is STATUS_BUFFER_TOO_SMALL, this means that the caller should allocate a buffer of the size that was output through <i>ResultLength</i> and call <b>PcGetDeviceProperty</b> again. </p>
-
-<p>Set the <b>DeviceProperty</b> parameter to one of the following DEVICE_REGISTRY_PROPERTY enumeration values from header file wdm.h:</p><dl>
-<dd>
-<p><b>DevicePropertyAddress</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyBootConfiguration</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyBootConfigurationTranslated</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyBusNumber</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyBusTypeGuid</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyClassGuid</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyClassName</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyCompatibleIDs</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyDetachability</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyDeviceDescription</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyDriverKeyName</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyEnumeratorName</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyFriendlyName</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyHardwareID</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyInstallState</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyLegacyBusType</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyLocationInformation</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyManufacturer</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyPhysicalDeviceObjectName</b></p>
-</dd>
-<dd>
-<p><b>DevicePropertyUINumber</b></p>
-</dd>
-</dl><p><b>DevicePropertyAddress</b></p>
-
-<p><b>DevicePropertyBootConfiguration</b></p>
-
-<p><b>DevicePropertyBootConfigurationTranslated</b></p>
-
-<p><b>DevicePropertyBusNumber</b></p>
-
-<p><b>DevicePropertyBusTypeGuid</b></p>
-
-<p><b>DevicePropertyClassGuid</b></p>
-
-<p><b>DevicePropertyClassName</b></p>
-
-<p><b>DevicePropertyCompatibleIDs</b></p>
-
-<p><b>DevicePropertyDetachability</b></p>
-
-<p><b>DevicePropertyDeviceDescription</b></p>
-
-<p><b>DevicePropertyDriverKeyName</b></p>
-
-<p><b>DevicePropertyEnumeratorName</b></p>
-
-<p><b>DevicePropertyFriendlyName</b></p>
-
-<p><b>DevicePropertyHardwareID</b></p>
-
-<p><b>DevicePropertyInstallState</b></p>
-
-<p><b>DevicePropertyLegacyBusType</b></p>
-
-<p><b>DevicePropertyLocationInformation</b></p>
-
-<p><b>DevicePropertyManufacturer</b></p>
-
-<p><b>DevicePropertyPhysicalDeviceObjectName</b></p>
-
-<p><b>DevicePropertyUINumber</b></p>
-
-<p>For a description of the preceding DeviceProperty<i>Xxx</i> values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549203">IoGetDeviceProperty</a>.</p>
+<p>For a description of the preceding DeviceProperty<i>Xxx</i> values, see <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>.</p>
 
 <p>Two calls to <b>PcGetDeviceProperty</b> might be necessary to determine the required <i>BufferLength</i>. In the first call, <i>BufferLength</i> can either be zero or a best-guess estimate of the required buffer size. If the return status is STATUS_BUFFER_TOO_SMALL, this means that the caller should allocate a buffer of the size that was output through <i>ResultLength</i> and call <b>PcGetDeviceProperty</b> again. </p>
 
@@ -356,12 +192,12 @@ NTSTATUS PcGetDeviceProperty(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549203">IoGetDeviceProperty</a>
+<a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcGetDeviceProperty function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcGetDeviceProperty function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

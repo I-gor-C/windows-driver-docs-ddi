@@ -7,7 +7,7 @@ old-location: netvista\net_dma_channel_parameters.htm
 old-project: netvista
 ms.assetid: 0d09a9e9-06c5-4026-9053-ac74a59509cc
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NET_DMA_CHANNEL_PARAMETERS, NET_DMA_CHANNEL_PARAMETERS, *PNET_DMA_CHANNEL_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -101,7 +101,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 <p>The physical address of the memory location where the DMA engine can write the DMA transfer
      completion status. If the <b>NET_DMA_STATUS_UPDATE_ON_COMPLETION</b> flag is not set in the 
      <b>ControlFlags</b> member of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568734">NET_DMA_DESCRIPTOR</a> structure, 
+     <a href="..\netdma\ns-netdma--net-dma-descriptor.md">NET_DMA_DESCRIPTOR</a> structure, 
      <b>CompletionPhysicalAddress</b> is not used. Otherwise, the completion status value at the specified
      address is a 64-bit wide combination of the physical address of the most recent DMA descriptor that the
      DMA engine processed and additional status information. 
@@ -261,7 +261,7 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568734">NET_DMA_DESCRIPTOR</a>
+<a href="..\netdma\ns-netdma--net-dma-descriptor.md">NET_DMA_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="..\netdma\nc-netdma-dma-abort-handler.md">ProviderAbortDma</a>
@@ -278,4 +278,4 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_CHANNEL_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_CHANNEL_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

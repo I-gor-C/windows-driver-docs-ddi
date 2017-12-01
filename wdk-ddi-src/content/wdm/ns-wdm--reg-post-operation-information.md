@@ -7,7 +7,7 @@ old-location: kernel\reg_post_operation_information.htm
 old-project: kernel
 ms.assetid: 2266e816-2060-4071-bf9f-319daefbfc50
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: REG_POST_OPERATION_INFORMATION, REG_POST_OPERATION_INFORMATION, *PREG_POST_OPERATION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>REG_POST_OPERATION_INFORMATION</b> structure contains information about a completed registry operation that a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can use.</p>
+<p>The <b>REG_POST_OPERATION_INFORMATION</b> structure contains information about a completed registry operation that a <a href="kernel.registrycallback">RegistryCallback</a> routine can use.</p>
 
 
 ## -syntax
@@ -76,7 +76,7 @@ typedef struct _REG_POST_OPERATION_INFORMATION {
 ### -field <b>PreInformation</b>
 
 <dd>
-<p>A pointer to the structure that contains preprocessing information for the registry operation that has completed. For example, if the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine is processing a <b>RegNtPostQueryValueKey</b> operation, the <b>PreInformation</b> member points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560991">REG_QUERY_VALUE_KEY_INFORMATION</a> structure. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
+<p>A pointer to the structure that contains preprocessing information for the registry operation that has completed. For example, if the <a href="kernel.registrycallback">RegistryCallback</a> routine is processing a <b>RegNtPostQueryValueKey</b> operation, the <b>PreInformation</b> member points to a <a href="..\wdm\ns-wdm--reg-query-value-key-information.md">REG_QUERY_VALUE_KEY_INFORMATION</a> structure. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
 ### -field <b>ReturnStatus</b>
@@ -88,13 +88,13 @@ typedef struct _REG_POST_OPERATION_INFORMATION {
 ### -field <b>CallContext</b>
 
 <dd>
-<p>Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
+<p>Optional driver-defined context information that the driver's <a href="kernel.registrycallback">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
 ### -field <b>ObjectContext</b>
 
 <dd>
-<p>A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541924">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
+<p>A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.</p>
 </dd>
 
 ### -field <b>Reserved</b>
@@ -134,15 +134,15 @@ typedef struct _REG_POST_OPERATION_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541924">CmSetCallbackObjectContext</a>
+<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560991">REG_QUERY_VALUE_KEY_INFORMATION</a>
+<a href="..\wdm\ns-wdm--reg-query-value-key-information.md">REG_QUERY_VALUE_KEY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
+<a href="kernel.registrycallback">RegistryCallback</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20REG_POST_OPERATION_INFORMATION structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20REG_POST_OPERATION_INFORMATION structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

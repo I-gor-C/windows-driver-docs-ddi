@@ -7,7 +7,7 @@ old-location: stream\transportaudioparms.htm
 old-project: stream
 ms.assetid: 591ef01a-1a89-454a-ab58-a76813a9d4c2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagTRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS, *PTRANSPORTAUDIOPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

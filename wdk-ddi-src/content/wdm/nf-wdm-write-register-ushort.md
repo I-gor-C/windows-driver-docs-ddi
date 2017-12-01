@@ -7,7 +7,7 @@ old-location: kernel\write_register_ushort.htm
 old-project: kernel
 ms.assetid: ebcbec0c-c5ee-4af1-be3c-36c730f82f4e
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,8 +73,6 @@ VOID WRITE_REGISTER_USHORT(
 <p>None</p>
 
 ## -remarks
-<p>Callers of <b>WRITE_REGISTER_USHORT</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory. </p>
-
 <p>Callers of <b>WRITE_REGISTER_USHORT</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory. </p>
 
 ## -requirements

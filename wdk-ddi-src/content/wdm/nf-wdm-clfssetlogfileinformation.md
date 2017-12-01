@@ -7,7 +7,7 @@ old-location: kernel\clfssetlogfileinformation.htm
 old-project: kernel
 ms.assetid: 9f44b1ce-25d4-438f-b4eb-cff7bbfb5e0a
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: ClfsSetLogFileInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,13 +61,13 @@ NTSTATUS ClfsSetLogFileInformation(
 ### -param <i>plfoLog</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554316">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The caller previously obtained this pointer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff540792">ClfsCreateLogFile</a>.</p>
+<p>A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.</p>
 </dd>
 
 ### -param <i>eInformationClass</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541812">CLFS_LOG_INFORMATION_CLASS</a> value that specifies the class of information being set.</p>
+<p>A <a href="kernel.clfs_log_information_class">CLFS_LOG_INFORMATION_CLASS</a> value that specifies the class of information being set.</p>
 </dd>
 
 ### -param <i>pinfoBuffer</i> [in]
@@ -85,7 +85,7 @@ NTSTATUS ClfsSetLogFileInformation(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541790">CLFS_INFORMATION</a>
+<a href="kernel.clfs_information">CLFS_INFORMATION</a>
 </p>
 </td>
 </tr>
@@ -95,7 +95,7 @@ NTSTATUS ClfsSetLogFileInformation(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541790">CLFS_INFORMATION</a>
+<a href="kernel.clfs_information">CLFS_INFORMATION</a>
 </p>
 </td>
 </tr>
@@ -105,7 +105,7 @@ NTSTATUS ClfsSetLogFileInformation(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541814">CLFS_LOG_NAME_INFORMATION</a>
+<a href="..\wdm\ns-wdm--clfs-log-name-information.md">CLFS_LOG_NAME_INFORMATION</a>
 </p>
 </td>
 </tr>
@@ -115,7 +115,7 @@ NTSTATUS ClfsSetLogFileInformation(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541814">CLFS_LOG_NAME_INFORMATION</a>
+<a href="..\wdm\ns-wdm--clfs-log-name-information.md">CLFS_LOG_NAME_INFORMATION</a>
 </p>
 </td>
 </tr>
@@ -125,7 +125,7 @@ NTSTATUS ClfsSetLogFileInformation(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541869">CLFS_STREAM_ID_INFORMATION</a>
+<a href="..\wdm\ns-wdm--clfs-stream-id-information.md">CLFS_STREAM_ID_INFORMATION</a>
 </p>
 </td>
 </tr>
@@ -144,8 +144,6 @@ NTSTATUS ClfsSetLogFileInformation(
 <p><b>ClfsSetLogFileInformation</b> returns STATUS_SUCCESS if it succeeds; otherwise, it returns one of the error codes defined in Ntstatus.h.</p>
 
 ## -remarks
-<p>For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>.</p>
-
 <p>For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>.</p>
 
 ## -requirements
@@ -211,24 +209,24 @@ NTSTATUS ClfsSetLogFileInformation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541790">CLFS_INFORMATION</a>
+<a href="kernel.clfs_information">CLFS_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541812">CLFS_LOG_INFORMATION_CLASS</a>
+<a href="kernel.clfs_log_information_class">CLFS_LOG_INFORMATION_CLASS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541869">CLFS_STREAM_ID_INFORMATION</a>
+<a href="..\wdm\ns-wdm--clfs-stream-id-information.md">CLFS_STREAM_ID_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554316">LOG_FILE_OBJECT</a>
+<a href="kernel.log_file_object">LOG_FILE_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540792">ClfsCreateLogFile</a>
+<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541679">ClfsQueryLogFileInformation</a>
+<a href="..\wdm\nf-wdm-clfsquerylogfileinformation.md">ClfsQueryLogFileInformation</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsSetLogFileInformation routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsSetLogFileInformation routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetPersistentEntry_IN structure is used by a WMI client to deliver the input parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565783">SetPersistentEntry</a> WMI method to the HBA miniport driver.</p>
+<p>The SetPersistentEntry_IN structure is used by a WMI client to deliver the input parameter data of the <a href="storage.setpersistententry">SetPersistentEntry</a> WMI method to the HBA miniport driver.</p>
 
 
 ## -syntax
@@ -64,12 +64,12 @@ typedef struct _SetPersistentEntry_IN {
 ### -field <b>Binding</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556035">HBAFCPBindingEntry2</a> that indicates the binding to be removed from the indicated port's list of bindings. </p>
+<p>Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi--hbafcpbindingentry2.md">HBAFCPBindingEntry2</a> that indicates the binding to be removed from the indicated port's list of bindings. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the SetPersistentEntry_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the SetPersistentEntry_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -88,7 +88,7 @@ typedef struct _SetPersistentEntry_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565783">SetPersistentEntry</a>
+<a href="storage.setpersistententry">SetPersistentEntry</a>
 </dt>
 </dl>
 <p> </p>

@@ -93,13 +93,13 @@ typedef struct _D3DDDIARG_VOLUMEBLT1 {
 ### -field <b>SrcBox</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/hh451148">D3DDDIBOX</a> structure that describes the source volume texture to copy to the destination.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddibox.md">D3DDDIBOX</a> structure that describes the source volume texture to copy to the destination.</p>
 </dd>
 
 ### -field <b>CopyFlags</b>
 
 <dd>
-<p>A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451175">D3DDDI_COPY_FLAGS</a> enumeration type.</p>
+<p>A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi-d3dddi-copy-flags.md">D3DDDI_COPY_FLAGS</a> enumeration type.</p>
 </dd>
 </dl>
 
@@ -139,10 +139,10 @@ typedef struct _D3DDDIARG_VOLUMEBLT1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451175">D3DDDI_COPY_FLAGS</a>
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi-copy-flags.md">D3DDDI_COPY_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451148">D3DDDIBOX</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddibox.md">D3DDDIBOX</a>
 </dt>
 </dl>
 <p> </p>

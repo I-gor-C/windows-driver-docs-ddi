@@ -7,7 +7,7 @@ old-location: wdf\iwdfobject.htm
 old-project: wdf
 ms.assetid: d2668856-a25d-4329-b230-f36992f8f9a4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,9 +55,9 @@ req.product: Windows 10 or later.
 
 <p>The <a href="wdf.iwdfobject_deletewdfobject">DeleteWdfObject</a> method deletes a previously created Microsoft Windows Driver Frameworks (WDF) object.</p>
 
-<p>The <a href="wdf.iwdfobject_releaselock">ReleaseLock</a> method allows the framework to call methods of interfaces that are registered by the driver that the framework previously prevented from calling because the driver called the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560204">IWDFObject::AcquireLock</a> method.</p>
+<p>The <a href="wdf.iwdfobject_releaselock">ReleaseLock</a> method allows the framework to call methods of interfaces that are registered by the driver that the framework previously prevented from calling because the driver called the <a href="wdf.iwdfobject_acquirelock">IWDFObject::AcquireLock</a> method.</p>
 
-<p>The <a href="wdf.iwdfobject_retrievecontext">RetrieveContext</a> method retrieves a context that was previously registered through the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560208">IWDFObject::AssignContext</a> method.</p>
+<p>The <a href="wdf.iwdfobject_retrievecontext">RetrieveContext</a> method retrieves a context that was previously registered through the <a href="wdf.iwdfobject_assigncontext">IWDFObject::AssignContext</a> method.</p>
 
 <p> </p>
 
@@ -69,7 +69,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560204">IWDFObject::AcquireLock</a>
+<a href="wdf.iwdfobject_acquirelock">IWDFObject::AcquireLock</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfobject_acquirelock">AcquireLock</a> method prevents the framework from calling methods of interfaces that a driver registered.</p>
@@ -77,7 +77,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560208">IWDFObject::AssignContext</a>
+<a href="wdf.iwdfobject_assigncontext">IWDFObject::AssignContext</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfobject_assigncontext">AssignContext</a> method registers a context and a driver-supplied cleanup callback function for the object.</p>
@@ -85,7 +85,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a>
+<a href="wdf.iwdfobject_deletewdfobject">IWDFObject::DeleteWdfObject</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfobject_deletewdfobject">DeleteWdfObject</a> method deletes a previously created Microsoft Windows Driver Frameworks (WDF) object.</p>
@@ -93,18 +93,18 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560214">IWDFObject::ReleaseLock</a>
+<a href="wdf.iwdfobject_releaselock">IWDFObject::ReleaseLock</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="wdf.iwdfobject_releaselock">ReleaseLock</a> method allows the framework to call methods of interfaces that are registered by the driver that the framework previously prevented from calling because the driver called the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560204">IWDFObject::AcquireLock</a> method.</p>
+<p>The <a href="wdf.iwdfobject_releaselock">ReleaseLock</a> method allows the framework to call methods of interfaces that are registered by the driver that the framework previously prevented from calling because the driver called the <a href="wdf.iwdfobject_acquirelock">IWDFObject::AcquireLock</a> method.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560218">IWDFObject::RetrieveContext</a>
+<a href="wdf.iwdfobject_retrievecontext">IWDFObject::RetrieveContext</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="wdf.iwdfobject_retrievecontext">RetrieveContext</a> method retrieves a context that was previously registered through the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560208">IWDFObject::AssignContext</a> method.</p>
+<p>The <a href="wdf.iwdfobject_retrievecontext">RetrieveContext</a> method retrieves a context that was previously registered through the <a href="wdf.iwdfobject_assigncontext">IWDFObject::AssignContext</a> method.</p>
 </td>
 </tr>
 </table><p>The <a href="wdf.iwdfobject_acquirelock">AcquireLock</a> method prevents the framework from calling methods of interfaces that a driver registered.</p>
@@ -113,9 +113,9 @@ req.product: Windows 10 or later.
 
 <p>The <a href="wdf.iwdfobject_deletewdfobject">DeleteWdfObject</a> method deletes a previously created Microsoft Windows Driver Frameworks (WDF) object.</p>
 
-<p>The <a href="wdf.iwdfobject_releaselock">ReleaseLock</a> method allows the framework to call methods of interfaces that are registered by the driver that the framework previously prevented from calling because the driver called the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560204">IWDFObject::AcquireLock</a> method.</p>
+<p>The <a href="wdf.iwdfobject_releaselock">ReleaseLock</a> method allows the framework to call methods of interfaces that are registered by the driver that the framework previously prevented from calling because the driver called the <a href="wdf.iwdfobject_acquirelock">IWDFObject::AcquireLock</a> method.</p>
 
-<p>The <a href="wdf.iwdfobject_retrievecontext">RetrieveContext</a> method retrieves a context that was previously registered through the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560208">IWDFObject::AssignContext</a> method.</p>
+<p>The <a href="wdf.iwdfobject_retrievecontext">RetrieveContext</a> method retrieves a context that was previously registered through the <a href="wdf.iwdfobject_assigncontext">IWDFObject::AssignContext</a> method.</p>
 
 <p> </p>
 

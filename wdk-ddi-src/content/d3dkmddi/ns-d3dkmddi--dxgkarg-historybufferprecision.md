@@ -110,7 +110,7 @@ typedef struct _DXGKARG_HISTORYBUFFERPRECISION {
 </dl>
 
 ## -remarks
-<p>In a call to the <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function, the output data size,  <a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a>.<b>OutputDataSize</b>, is:</p>
+<p>In a call to the <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function, the output data size,  <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>.<b>OutputDataSize</b>, is:</p>
 
 ## -requirements
 <table>
@@ -153,7 +153,7 @@ typedef struct _DXGKARG_HISTORYBUFFERPRECISION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 </dt>
 <dt>
 <a href="display.dxgkddiformathistorybuffer">DxgkDdiFormatHistoryBuffer</a>

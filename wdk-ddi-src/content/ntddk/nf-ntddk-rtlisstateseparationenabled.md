@@ -7,7 +7,7 @@ old-location: kernel\rtlisstateseparationenabled.htm
 old-project: kernel
 ms.assetid: 7c28a82c-e039-4045-94cd-b47a45d15e28
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlIsStateSeparationEnabled
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: stream\ksloadresource.htm
 old-project: stream
 ms.assetid: a7b9dcca-ce89-4fde-9e58-3c4a675227bc
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsLoadResource
 ms.prod: windows-hardware
 ms.technology: windows-devices

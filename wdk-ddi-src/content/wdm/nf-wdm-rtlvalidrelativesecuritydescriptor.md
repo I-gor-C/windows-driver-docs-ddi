@@ -7,7 +7,7 @@ old-location: kernel\rtlvalidrelativesecuritydescriptor.htm
 old-project: kernel
 ms.assetid: 1fb993f0-4289-4406-8a56-47b12c73f4e6
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlValidRelativeSecurityDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ BOOLEAN RtlValidRelativeSecurityDescriptor(
 ### -param <i>SecurityDescriptorInput</i> [in]
 
 <dd>
-<p>A pointer to the buffer that contains the security descriptor in self-relative format. The buffer must begin with a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> structure, which is followed by the rest of the security descriptor data.</p>
+<p>A pointer to the buffer that contains the security descriptor in self-relative format. The buffer must begin with a <a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a> structure, which is followed by the rest of the security descriptor data.</p>
 </dd>
 
 ### -param <i>SecurityDescriptorLength</i> [in]
@@ -72,7 +72,7 @@ BOOLEAN RtlValidRelativeSecurityDescriptor(
 ### -param <i>RequiredInformation</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a> value that specifies the information that is required to be contained in the security descriptor. </p>
+<p>A <a href="ifsk.security_information">SECURITY_INFORMATION</a> value that specifies the information that is required to be contained in the security descriptor. </p>
 </dd>
 </dl>
 
@@ -80,9 +80,7 @@ BOOLEAN RtlValidRelativeSecurityDescriptor(
 <p><b>RtlValidRelativeSecurityDescriptor</b> returns <b>TRUE</b> if the security descriptor is valid and includes the information that the <i>RequiredInformation</i> parameter specifies. Otherwise, this routine returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>To check the validity of a security descriptor in absolute format, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff563024">RtlValidSecurityDescriptor</a> instead.</p>
-
-<p>To check the validity of a security descriptor in absolute format, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff563024">RtlValidSecurityDescriptor</a> instead.</p>
+<p>To check the validity of a security descriptor in absolute format, use <a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a> instead.</p>
 
 ## -requirements
 <table>
@@ -147,15 +145,15 @@ BOOLEAN RtlValidRelativeSecurityDescriptor(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563024">RtlValidSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
+<a href="ifsk.security_information">SECURITY_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlValidRelativeSecurityDescriptor routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlValidRelativeSecurityDescriptor routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

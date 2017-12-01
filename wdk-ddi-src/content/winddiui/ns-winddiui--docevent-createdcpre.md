@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The DOCEVENT_CREATEDCPRE structure contains a set of values used in certain calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548544">DrvDocumentEvent</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>.</p>
+<p>The DOCEVENT_CREATEDCPRE structure contains a set of values used in certain calls to <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a> and <a href="print.iprintoemui2_documentevent">IPrintOemUI2::DocumentEvent</a>.</p>
 
 
 ## -syntax
@@ -73,7 +73,7 @@ typedef struct _DOCEVENT_CREATEDCPRE {
 ### -field <b>pdm</b>
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure passed to either CreateIC or CreateDC (both described in the Microsoft Windows SDK documentation). This member can be <b>NULL</b>.</p>
+<p>Pointer to a <a href="display.devmodew">DEVMODEW</a> structure passed to either CreateIC or CreateDC (both described in the Microsoft Windows SDK documentation). This member can be <b>NULL</b>.</p>
 </dd>
 
 ### -field <b>bIC</b>
@@ -86,7 +86,7 @@ typedef struct _DOCEVENT_CREATEDCPRE {
 ## -remarks
 <p>The DOCEVENT_CREATEDCPRE structure is defined for Windows XP and later.</p>
 
-<p>This structure is used in conjunction with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548544">DrvDocumentEvent</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>, in which the <i>iEsc</i> parameter is set to DOCUMENTEVENT_CREATEDCPRE. Before calling either of these functions, the caller must fill in the members of this structure.</p>
+<p>This structure is used in conjunction with a call to <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a> or <a href="print.iprintoemui2_documentevent">IPrintOemUI2::DocumentEvent</a>, in which the <i>iEsc</i> parameter is set to DOCUMENTEVENT_CREATEDCPRE. Before calling either of these functions, the caller must fill in the members of this structure.</p>
 
 ## -requirements
 <table>
@@ -105,10 +105,10 @@ typedef struct _DOCEVENT_CREATEDCPRE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548544">DrvDocumentEvent</a>
+<a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>
+<a href="print.iprintoemui2_documentevent">IPrintOemUI2::DocumentEvent</a>
 </dt>
 </dl>
 <p> </p>

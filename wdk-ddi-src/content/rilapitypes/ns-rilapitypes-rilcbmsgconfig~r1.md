@@ -7,7 +7,7 @@ old-location: netvista\rilcbmsgconfig_2.htm
 old-project: netvista
 ms.assetid: 7cdab678-5c83-4590-b911-5961db89e7ce
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCBMSGCONFIG,
 ms.prod: windows-hardware
 ms.technology: windows-devices

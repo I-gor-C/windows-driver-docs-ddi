@@ -48,7 +48,7 @@ req.iface:
 <p>Moufiltr provides a template for a filter service callback routine that can supplement the operation of <a href="https://msdn.microsoft.com/949955c1-a1c7-4b0b-a74e-593dd7885135">MouseClassServiceCallback</a>, the Mouclass service callback routine. The filter service callback can filter the input data that is transferred from the device input buffer to the class driver data queue. </p>
 <p>For more information about the connection of the Mouclass service, see the following topics:</p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539965">I8042prt Callback Routines</a>
+<a href="hid.i8042prt_callback_routines">I8042prt Callback Routines</a>
 </p>
 <p>
 <a href="https://msdn.microsoft.com/c6b60905-edd0-496e-a4e7-5ca271a51bce">Moufiltr Callback Routines</a>

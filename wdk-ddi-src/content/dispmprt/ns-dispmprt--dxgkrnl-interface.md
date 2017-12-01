@@ -388,13 +388,13 @@ typedef struct _DXGKRNL_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560940">Dxgkrnl Interface</a>
+<a href="display.dxgkrnl_interface">Dxgkrnl Interface</a>
 </dt>
 <dt>
 <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556157">DriverEntry of Display Miniport Driver</a>
+<a href="display.driverentry_of_display_miniport_driver">DriverEntry of Display Miniport Driver</a>
 </dt>
 </dl>
 <p> </p>

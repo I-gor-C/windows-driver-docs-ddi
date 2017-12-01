@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>DXGK_PAGETABLEUPDATEMODE</b> is used as part of a <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a> operation to indicate which member of the related <a href="https://msdn.microsoft.com/library/windows/hardware/dn914480">DXGK_PAGETABLEUPDATEADDRESS</a> structure contains the address of the page table to update. </p>
+<p><b>DXGK_PAGETABLEUPDATEMODE</b> is used as part of a <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a> operation to indicate which member of the related <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a> structure contains the address of the page table to update. </p>
 
 
 ## -syntax
@@ -59,19 +59,19 @@ typedef enum _DXGK_PAGETABLEUPDATEMODE {
 ### -field <a id="DXGK_PAGETABLEUPDATE_CPU_VIRTUAL"></a><a id="dxgk_pagetableupdate_cpu_virtual"></a><b>DXGK_PAGETABLEUPDATE_CPU_VIRTUAL</b>
 
 <dd>
-<p>Indicates that the address of the page table to update is in the <b>CpuVirtual</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914480">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</p>
+<p>Indicates that the address of the page table to update is in the <b>CpuVirtual</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</p>
 </dd>
 
 ### -field <a id="DXGK_PAGETABLEUPDATE_GPU_VIRTUAL"></a><a id="dxgk_pagetableupdate_gpu_virtual"></a><b>DXGK_PAGETABLEUPDATE_GPU_VIRTUAL</b>
 
 <dd>
-<p>Indicates that the address of the page table to update is in the <b>GpuVirtual</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914480">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</p>
+<p>Indicates that the address of the page table to update is in the <b>GpuVirtual</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</p>
 </dd>
 
 ### -field <a id="DXGK_PAGETABLEUPDATE_GPU_PHYSICAL"></a><a id="dxgk_pagetableupdate_gpu_physical"></a><b>DXGK_PAGETABLEUPDATE_GPU_PHYSICAL</b>
 
 <dd>
-<p>Indicates that the address of the page table to update is in the <b>GpuPhysical</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914480">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</p>
+<p>Indicates that the address of the page table to update is in the <b>GpuPhysical</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</p>
 </dd>
 </dl>
 
@@ -114,7 +114,7 @@ typedef enum _DXGK_PAGETABLEUPDATEMODE {
 <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914480">DXGK_PAGETABLEUPDATEADDRESS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a>
 </dt>
 </dl>
 <p> </p>

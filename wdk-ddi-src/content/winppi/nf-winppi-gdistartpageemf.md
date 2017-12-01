@@ -58,7 +58,7 @@ BOOL GdiStartPageEMF(
 ### -param <i>SpoolFileHandle</i> 
 
 <dd>
-<p>Caller-supplied spool file handle, obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549517">GdiGetSpoolFileHandle</a>.</p>
+<p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
 </dd>
 </dl>
 
@@ -66,15 +66,9 @@ BOOL GdiStartPageEMF(
 <p>If the operation succeeds, the function returns <b>TRUE</b>. Otherwise the function returns <b>FALSE</b>, and an error code can be obtained by calling <b>GetLastError</b>.</p>
 
 ## -remarks
-<p>The <b>GdiStartPageEMF</b> function is exported by gdi32.dll for use within a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p>
+<p>The <b>GdiStartPageEMF</b> function is exported by gdi32.dll for use within a print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> function.</p>
 
-<p>A print processor must call the <b>GdiStartPageEMF</b> function each time a new physical page is to be created. It can then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549524">GdiPlayPageEMF</a> for each document page that is to be placed on the physical page.</p>
-
-<p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
-
-<p>The <b>GdiStartPageEMF</b> function is exported by gdi32.dll for use within a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p>
-
-<p>A print processor must call the <b>GdiStartPageEMF</b> function each time a new physical page is to be created. It can then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549524">GdiPlayPageEMF</a> for each document page that is to be placed on the physical page.</p>
+<p>A print processor must call the <b>GdiStartPageEMF</b> function each time a new physical page is to be created. It can then call <a href="..\winppi\nf-winppi-gdiplaypageemf.md">GdiPlayPageEMF</a> for each document page that is to be placed on the physical page.</p>
 
 <p>For additional information, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
 
@@ -125,7 +119,7 @@ BOOL GdiStartPageEMF(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549468">GdiEndPageEMF</a>
+<a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a>
 </dt>
 </dl>
 <p> </p>

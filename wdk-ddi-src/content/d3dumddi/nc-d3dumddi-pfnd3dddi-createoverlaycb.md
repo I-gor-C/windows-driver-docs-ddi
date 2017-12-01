@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnCreateOverlayCb(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544150">D3DDDICB_CREATEOVERLAY</a> structure that describes the overlay to create.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-createoverlay.md">D3DDDICB_CREATEOVERLAY</a> structure that describes the overlay to create.</p>
 </dd>
 </dl>
 
@@ -87,23 +87,7 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnCreateOverlayCb(
 <p>This function might also return other HRESULT values.</p>
 
 ## -remarks
-<p>The <b>pfnCreateOverlayCb</b> function returns a handle to the newly created kernel-mode overlay object in the <b>hKernelOverlay</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544150">D3DDDICB_CREATEOVERLAY</a> structure that is pointed to by <i>pData</i>. The user-mode display driver passes this handle in calls to the following functions:</p>
-
-<p>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroyoverlaycb.md">pfnDestroyOverlayCb</a>
-</p>
-
-<p>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-flipoverlaycb.md">pfnFlipOverlayCb</a>
-</p>
-
-<p>
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-updateoverlaycb.md">pfnUpdateOverlayCb</a>
-</p>
-
-<p>The following code example shows how to create an overlay object.</p>
-
-<p>The <b>pfnCreateOverlayCb</b> function returns a handle to the newly created kernel-mode overlay object in the <b>hKernelOverlay</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544150">D3DDDICB_CREATEOVERLAY</a> structure that is pointed to by <i>pData</i>. The user-mode display driver passes this handle in calls to the following functions:</p>
+<p>The <b>pfnCreateOverlayCb</b> function returns a handle to the newly created kernel-mode overlay object in the <b>hKernelOverlay</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-createoverlay.md">D3DDDICB_CREATEOVERLAY</a> structure that is pointed to by <i>pData</i>. The user-mode display driver passes this handle in calls to the following functions:</p>
 
 <p>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroyoverlaycb.md">pfnDestroyOverlayCb</a>
@@ -154,10 +138,10 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnCreateOverlayCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544150">D3DDDICB_CREATEOVERLAY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-createoverlay.md">D3DDDICB_CREATEOVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544512">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroyoverlaycb.md">pfnDestroyOverlayCb</a>

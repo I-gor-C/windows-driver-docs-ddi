@@ -7,7 +7,7 @@ old-location: netvista\rilcallrttmode_2.htm
 old-project: netvista
 ms.assetid: 89eaa5c2-2178-4181-bf3b-b10d179bc0eb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

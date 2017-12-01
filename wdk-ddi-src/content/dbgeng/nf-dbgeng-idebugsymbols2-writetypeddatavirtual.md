@@ -7,7 +7,7 @@ old-location: debugger\writetypeddatavirtual.htm
 old-project: debugger
 ms.assetid: c7a3854b-2405-4e20-8c6c-4e0c0d43987e
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols2, WriteTypedDataVirtual, IDebugSymbols2::WriteTypedDataVirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -106,11 +106,7 @@ HRESULT WriteTypedDataVirtual(
 <p> </p>
 
 ## -remarks
-<p>This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561468">WriteVirtual</a>.</p>
-
-<p>For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.</p>
-
-<p>This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561468">WriteVirtual</a>.</p>
+<p>This is a convenience method.  The same result can be obtained by calling <a href="debugger.gettypesize2">GetTypeSize</a> and <a href="debugger.writevirtual">WriteVirtual</a>.</p>
 
 <p>For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.</p>
 

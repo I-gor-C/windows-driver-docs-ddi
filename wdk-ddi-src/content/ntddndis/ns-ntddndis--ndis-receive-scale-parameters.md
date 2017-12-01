@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_scale_parameters.htm
 old-project: netvista
 ms.assetid: 0d51042e-06b4-4105-889f-84a368e5735a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_RECEIVE_SCALE_PARAMETERS, NDIS_RECEIVE_SCALE_PARAMETERS, *PNDIS_RECEIVE_SCALE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,7 +76,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 
 <dd>
 <p>The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RECEIVE_SCALE_PARAMETERS</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_RSS_PARAMETERS</b>. </p>
@@ -235,7 +235,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 ### -field <b>NumberOfProcessorMasks</b>
 
 <dd>
-<p>The number of elements in an array of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff546539">GROUP_AFFINITY</a> representing the processors used in the indirection table</p>
+<p>The number of elements in an array of type <a href="..\miniport\ns-miniport--group-affinity.md">GROUP_AFFINITY</a> representing the processors used in the indirection table</p>
 </dd>
 
 ### -field <b>ProcessorMasksEntrySize</b>
@@ -252,34 +252,6 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 </dl>
 
 ## -remarks
-<p>The <b>NDIS_RECEIVE_SCALE_PARAMETERS</b> structure defines the <a href="netvista.ndis_receive_side_scaling2">receive side scaling (RSS)</a> parameters for the 
-    <a href="netvista.oid_gen_receive_scale_parameters">
-    OID_GEN_RECEIVE_SCALE_PARAMETERS</a> OID.</p>
-
-<p>For NDIS 6.20 and later versions, the indirection table has the following format:</p>
-
-<p>For drivers earlier than NDIS 6.20, the indirection table has the following format:</p>
-
-<p>NDIS automatically translates the indirection table if there are older and newer drivers in a driver stack.</p>
-
-<p>The miniport driver must examine the indirection table to determine the CPU numbers to associate with
-    hardware queues. If the total number of different CPU numbers that appear in the indirection table is
-    more than the number of hardware queues that the NIC supports, the miniport driver must pick a subset of
-    the CPU numbers from the indirection table. The subset is equal in number to the number of hardware
-    queues.</p>
-
-<p>The miniport driver specified the number of receive queues value in response to 
-    <a href="netvista.oid_gen_receive_scale_capabilities">
-    OID_GEN_RECEIVE_SCALE_CAPABILITIES</a>.</p>
-
-<p>To clear the RSS parameters and disable RSS, NDIS sets the hash function that is specified
-    within the 
-    <b>HashInformation</b> member is zero. NDIS can also disable RSS by setting the
-    <b>NDIS_RSS_PARAM_FLAG_DISABLE_RSS</b> flag in the <b>NDIS_RECEIVE_SCALE_PARAMETERS</b> structure.</p>
-
-<p>If RSS is disabled, the miniport driver should handle receive operations without performing RSS
-    operations.</p>
-
 <p>The <b>NDIS_RECEIVE_SCALE_PARAMETERS</b> structure defines the <a href="netvista.ndis_receive_side_scaling2">receive side scaling (RSS)</a> parameters for the 
     <a href="netvista.oid_gen_receive_scale_parameters">
     OID_GEN_RECEIVE_SCALE_PARAMETERS</a> OID.</p>
@@ -333,7 +305,7 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="netvista.ndis_rss_hash_info_from_type_and_func">
@@ -361,4 +333,4 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_SCALE_PARAMETERS structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_SCALE_PARAMETERS structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

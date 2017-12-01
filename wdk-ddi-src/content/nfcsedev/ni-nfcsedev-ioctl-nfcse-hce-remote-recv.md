@@ -7,7 +7,7 @@ old-location: nfpdrivers\ioctl_nfcse_hce_remote_recv.htm
 old-project: nfpdrivers
 ms.assetid: 398AFAEF-D0A9-4BBE-8884-1854C95AA878
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: NFCRM_SET_RADIO_STATE, NFCRM_SET_RADIO_STATE, *PNFCRM_SET_RADIO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,13 +54,13 @@ req.iface:
 
 ### -output-buffer
 <p>
-                A <b>DWORD</b> indicating the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn905624">SECURE_ELEMENT_HCE_DATA_PACKET</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_HCE_DATA_PACKET</b> structure itself. </p>
+                A <b>DWORD</b> indicating the size of the <a href="..\nfcsedev\ns-nfcsedev--secure-element-hce-data-packet.md">SECURE_ELEMENT_HCE_DATA_PACKET</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_HCE_DATA_PACKET</b> structure itself. </p>
 
 <p>
-                A <b>DWORD</b> indicating the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn905624">SECURE_ELEMENT_HCE_DATA_PACKET</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_HCE_DATA_PACKET</b> structure itself. </p>
+                A <b>DWORD</b> indicating the size of the <a href="..\nfcsedev\ns-nfcsedev--secure-element-hce-data-packet.md">SECURE_ELEMENT_HCE_DATA_PACKET</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_HCE_DATA_PACKET</b> structure itself. </p>
 
 <p>
-                A <b>DWORD</b> indicating the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn905624">SECURE_ELEMENT_HCE_DATA_PACKET</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_HCE_DATA_PACKET</b> structure itself. </p>
+                A <b>DWORD</b> indicating the size of the <a href="..\nfcsedev\ns-nfcsedev--secure-element-hce-data-packet.md">SECURE_ELEMENT_HCE_DATA_PACKET</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_HCE_DATA_PACKET</b> structure itself. </p>
 
 ### -output-buffer-length
 
@@ -93,78 +93,6 @@ I/O Status block
 <p> </p>
 
 ## -remarks
-<p>The following are requirements that the driver must adhere to.
-
-<ul>
-<li>This IOCTL is sent on an existing connection after HCE Activated event is triggered.</li>
-<li>The driver must support CancelIo on this pended IOCTL.</li>
-<li>The driver must maintain a “Received” queue of the received APDU for the current connection.
-
-</li>
-<li>When this IOCTL is received in the driver:<ul>
-<li>If the “Received” queue is empty, then the driver MUST pend the IOCTL for later completion.</li>
-<li>If the “Received” queue is non-empty, then the driver MUST de-queue one APDU, copy the APDU buffer to the IOCTL’s output buffer, and complete the IOCTL with STATUS_SUCCESS immediately.</li>
-</ul>
-</li>
-<li>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer MUST contain the size of the SECURE_ELEMENT_HCE_DATA_PACKET structure plus its payload.</li>
-<li>If a received APDU data is too large to be copied into this IOCTL's output buffer, the driver MUST copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL's information field to sizeof(DWORD), and complete the IOCTL with STATUS_BUFFER_OVERFLOW. The APDU data must be left in the "Received" queue.</li>
-</ul>
-</p>
-
-<p>The following are requirements that the driver must adhere to.
-
-<ul>
-<li>This IOCTL is sent on an existing connection after HCE Activated event is triggered.</li>
-<li>The driver must support CancelIo on this pended IOCTL.</li>
-<li>The driver must maintain a “Received” queue of the received APDU for the current connection.
-
-</li>
-<li>When this IOCTL is received in the driver:<ul>
-<li>If the “Received” queue is empty, then the driver MUST pend the IOCTL for later completion.</li>
-<li>If the “Received” queue is non-empty, then the driver MUST de-queue one APDU, copy the APDU buffer to the IOCTL’s output buffer, and complete the IOCTL with STATUS_SUCCESS immediately.</li>
-</ul>
-</li>
-<li>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer MUST contain the size of the SECURE_ELEMENT_HCE_DATA_PACKET structure plus its payload.</li>
-<li>If a received APDU data is too large to be copied into this IOCTL's output buffer, the driver MUST copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL's information field to sizeof(DWORD), and complete the IOCTL with STATUS_BUFFER_OVERFLOW. The APDU data must be left in the "Received" queue.</li>
-</ul>
-</p>
-
-<p>The following are requirements that the driver must adhere to.
-
-<ul>
-<li>This IOCTL is sent on an existing connection after HCE Activated event is triggered.</li>
-<li>The driver must support CancelIo on this pended IOCTL.</li>
-<li>The driver must maintain a “Received” queue of the received APDU for the current connection.
-
-</li>
-<li>When this IOCTL is received in the driver:<ul>
-<li>If the “Received” queue is empty, then the driver MUST pend the IOCTL for later completion.</li>
-<li>If the “Received” queue is non-empty, then the driver MUST de-queue one APDU, copy the APDU buffer to the IOCTL’s output buffer, and complete the IOCTL with STATUS_SUCCESS immediately.</li>
-</ul>
-</li>
-<li>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer MUST contain the size of the SECURE_ELEMENT_HCE_DATA_PACKET structure plus its payload.</li>
-<li>If a received APDU data is too large to be copied into this IOCTL's output buffer, the driver MUST copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL's information field to sizeof(DWORD), and complete the IOCTL with STATUS_BUFFER_OVERFLOW. The APDU data must be left in the "Received" queue.</li>
-</ul>
-</p>
-
-<p>The following are requirements that the driver must adhere to.
-
-<ul>
-<li>This IOCTL is sent on an existing connection after HCE Activated event is triggered.</li>
-<li>The driver must support CancelIo on this pended IOCTL.</li>
-<li>The driver must maintain a “Received” queue of the received APDU for the current connection.
-
-</li>
-<li>When this IOCTL is received in the driver:<ul>
-<li>If the “Received” queue is empty, then the driver MUST pend the IOCTL for later completion.</li>
-<li>If the “Received” queue is non-empty, then the driver MUST de-queue one APDU, copy the APDU buffer to the IOCTL’s output buffer, and complete the IOCTL with STATUS_SUCCESS immediately.</li>
-</ul>
-</li>
-<li>If the driver completes this IOCTL with STATUS_SUCCESS, the first DWORD [4 bytes] of the output buffer MUST contain the size of the SECURE_ELEMENT_HCE_DATA_PACKET structure plus its payload.</li>
-<li>If a received APDU data is too large to be copied into this IOCTL's output buffer, the driver MUST copy the required buffer size into the first 4 bytes of the output buffer, set the IOCTL's information field to sizeof(DWORD), and complete the IOCTL with STATUS_BUFFER_OVERFLOW. The APDU data must be left in the "Received" queue.</li>
-</ul>
-</p>
-
 <p>The following are requirements that the driver must adhere to.
 
 <ul>

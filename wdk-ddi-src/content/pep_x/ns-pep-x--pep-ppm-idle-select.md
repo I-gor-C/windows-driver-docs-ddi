@@ -7,7 +7,7 @@ old-location: kernel\pep_ppm_idle_select.htm
 old-project: kernel
 ms.assetid: 4783CB44-3A55-4C7C-8EA2-1A72317CC955
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PEP_PPM_IDLE_SELECT, PEP_PPM_IDLE_SELECT, *PPEP_PPM_IDLE_SELECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ typedef struct _PEP_PPM_IDLE_SELECT {
 ### -field <b>Constraints</b>
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt629124">PEP_PROCESSOR_IDLE_CONSTRAINTS</a> structure that specifies the constraints that the selected processor idle state must satisfy. The operating system sets the values in this structure. The platform extension plug-in (PEP) must select a processor idle state that satisfies these constraints.</p>
+<p>[in] A pointer to a <a href="..\pep_x\ns-pep-x--pep-processor-idle-constraints.md">PEP_PROCESSOR_IDLE_CONSTRAINTS</a> structure that specifies the constraints that the selected processor idle state must satisfy. The operating system sets the values in this structure. The platform extension plug-in (PEP) must select a processor idle state that satisfies these constraints.</p>
 </dd>
 
 ### -field <b>AbortTransition</b>
@@ -93,7 +93,7 @@ typedef struct _PEP_PPM_IDLE_SELECT {
 ### -field <b>DependencyArray</b>
 
 <dd>
-<p>[in] A pointer to an output buffer to which the PEP writes an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt186834">PEP_PROCESSOR_IDLE_DEPENDENCY</a> structures. The elements of this array specify processor idle dependencies or wake dependencies that must be met for this idle transition to succeed. The PEP sets the <b>DependencyArrayUsed</b> member to the actual number of array elements that the PEP writes to the buffer. The output buffer is allocated by the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) and is guaranteed to be large enough to contain the number of array elements specified by the <b>DependencyArrayCount</b> member.</p>
+<p>[in] A pointer to an output buffer to which the PEP writes an array of <a href="..\pepfx\ns-pepfx--pep-processor-idle-dependency.md">PEP_PROCESSOR_IDLE_DEPENDENCY</a> structures. The elements of this array specify processor idle dependencies or wake dependencies that must be met for this idle transition to succeed. The PEP sets the <b>DependencyArrayUsed</b> member to the actual number of array elements that the PEP writes to the buffer. The output buffer is allocated by the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) and is guaranteed to be large enough to contain the number of array elements specified by the <b>DependencyArrayCount</b> member.</p>
 </dd>
 
 ### -field <b>PlatformIdleStateIndex</b>
@@ -137,12 +137,12 @@ typedef struct _PEP_PPM_IDLE_SELECT {
 <a href="kernel.pep_notify_ppm_idle_select">PEP_NOTIFY_PPM_IDLE_SELECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt629124">PEP_PROCESSOR_IDLE_CONSTRAINTS</a>
+<a href="..\pep_x\ns-pep-x--pep-processor-idle-constraints.md">PEP_PROCESSOR_IDLE_CONSTRAINTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186834">PEP_PROCESSOR_IDLE_DEPENDENCY</a>
+<a href="..\pepfx\ns-pepfx--pep-processor-idle-dependency.md">PEP_PROCESSOR_IDLE_DEPENDENCY</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_IDLE_SELECT structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_IDLE_SELECT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

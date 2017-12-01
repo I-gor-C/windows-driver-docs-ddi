@@ -66,7 +66,7 @@ NTSTATUS PosCxInit(
 ### -param <i>posCxAttrPtr</i> [in]
 
 <dd>
-<p>A pointer to a caller-allocated and initialized <a href="https://msdn.microsoft.com/library/windows/hardware/mt593140">POS_CX_ATTRIBUTES</a> structure. The structure should be initialized with <a href="https://msdn.microsoft.com/library/windows/hardware/mt593141">POS_CX_ATTRIBUTES_INIT</a>.</p>
+<p>A pointer to a caller-allocated and initialized <a href="..\poscx\ns-poscx--pos-cx-attributes.md">POS_CX_ATTRIBUTES</a> structure. The structure should be initialized with <a href="..\poscx\nf-poscx-pos-cx-attributes-init.md">POS_CX_ATTRIBUTES_INIT</a>.</p>
 </dd>
 </dl>
 
@@ -101,10 +101,10 @@ NTSTATUS PosCxInit(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt593140">POS_CX_ATTRIBUTES</a>
+<a href="..\poscx\ns-poscx--pos-cx-attributes.md">POS_CX_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt593141">POS_CX_ATTRIBUTES_INIT</a>
+<a href="..\poscx\nf-poscx-pos-cx-attributes-init.md">POS_CX_ATTRIBUTES_INIT</a>
 </dt>
 </dl>
 <p> </p>

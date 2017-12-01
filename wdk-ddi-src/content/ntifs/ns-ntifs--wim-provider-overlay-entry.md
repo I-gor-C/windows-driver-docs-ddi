@@ -189,7 +189,7 @@ typedef struct _WIM_PROVIDER_OVERLAY_ENTRY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632440">FSCTL_ENUM_OVERLAY</a>
+<a href="ifsk.fsctl_enum_overlay">FSCTL_ENUM_OVERLAY</a>
 </dt>
 </dl>
 <p> </p>

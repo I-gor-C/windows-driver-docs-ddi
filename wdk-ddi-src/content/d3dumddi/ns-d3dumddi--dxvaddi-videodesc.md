@@ -76,19 +76,19 @@ typedef struct _DXVADDI_VIDEODESC {
 ### -field <b>SampleFormat</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a> structure that describes the extended format of the video sample.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure that describes the extended format of the video sample.</p>
 </dd>
 
 ### -field <b>Format</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> structure that describes the extended format of the video sample.</p>
+<p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> structure that describes the extended format of the video sample.</p>
 </dd>
 
 ### -field <b>InputSampleFreq</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562911">DXVADDI_FREQUENCY</a> structure that defines the frequency of incoming video.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-frequency.md">DXVADDI_FREQUENCY</a> structure that defines the frequency of incoming video.</p>
 </dd>
 
 ### -field <b>OutputFrameFreq</b>
@@ -138,13 +138,13 @@ typedef struct _DXVADDI_VIDEODESC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562911">DXVADDI_FREQUENCY</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-frequency.md">DXVADDI_FREQUENCY</a>
 </dt>
 </dl>
 <p> </p>

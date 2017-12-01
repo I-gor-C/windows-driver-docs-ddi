@@ -7,7 +7,7 @@ old-location: netvista\ndisresetevent.htm
 old-project: netvista
 ms.assetid: fba29b92-5735-4050-b690-3c25e4f57cd1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisResetEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisResetEvent (NDIS 5.1)) in
-   Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisResetEvent (NDIS 5.1)) in
-   Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisResetEvent (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisResetEvent (NDIS 5.1)) in   Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -75,23 +71,11 @@ VOID NdisResetEvent(
 
 <p>When an event is set to the 
     <i>signaled</i> state with the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564539">NdisSetEvent</a> function, it remains in that
+    <a href="..\ndis\nf-ndis-ndissetevent.md">NdisSetEvent</a> function, it remains in that
     state until an explicit call to 
     <b>NdisResetEvent</b> occurs. While an event remains in the 
     <i>signaled</i> state, callers of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564651">NdisWaitEvent</a> function on that event are
-    dispatched for execution without waiting.</p>
-
-<p><b>NdisResetEvent</b> explicitly sets the state of the given event to 
-    <i>not-signaled</i>.</p>
-
-<p>When an event is set to the 
-    <i>signaled</i> state with the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564539">NdisSetEvent</a> function, it remains in that
-    state until an explicit call to 
-    <b>NdisResetEvent</b> occurs. While an event remains in the 
-    <i>signaled</i> state, callers of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564651">NdisWaitEvent</a> function on that event are
+    <a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a> function on that event are
     dispatched for execution without waiting.</p>
 
 ## -requirements
@@ -151,7 +135,7 @@ VOID NdisResetEvent(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548015">Irql_Synch_Function</a>
+<a href="devtest.ndis_irql_synch_function">Irql_Synch_Function</a>
 </td>
 </tr>
 </table>
@@ -159,15 +143,15 @@ VOID NdisResetEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562732">NdisInitializeEvent</a>
+<a href="..\ndis\nf-ndis-ndisinitializeevent.md">NdisInitializeEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564539">NdisSetEvent</a>
+<a href="..\ndis\nf-ndis-ndissetevent.md">NdisSetEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564651">NdisWaitEvent</a>
+<a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisResetEvent function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisResetEvent function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

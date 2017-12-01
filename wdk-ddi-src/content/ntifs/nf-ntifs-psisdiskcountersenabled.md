@@ -60,13 +60,7 @@ BOOLEAN PsIsDiskCountersEnabled(void);
 <p>If TRUE, the disk</p>
 
 ## -remarks
-<p>A file system driver uses the <b>PsIsDiskCountersEnabled</b> routine to query the system enabled  state of the disk I/O  counters. A file system driver will use this routine prior to accounting for process disk I/O using <a href="https://msdn.microsoft.com/library/windows/hardware/hh971609">PsUpdateDiskCounters</a>.</p>
-
-<p>A file system driver uses the <b>PsIsDiskCountersEnabled</b> routine to query the system enabled  state of the disk I/O  counters. A file system driver will use this routine prior to accounting for process disk I/O using <a href="https://msdn.microsoft.com/library/windows/hardware/hh971609">PsUpdateDiskCounters</a>.</p>
-
-<p>A file system driver uses the <b>PsIsDiskCountersEnabled</b> routine to query the system enabled  state of the disk I/O  counters. A file system driver will use this routine prior to accounting for process disk I/O using <a href="https://msdn.microsoft.com/library/windows/hardware/hh971609">PsUpdateDiskCounters</a>.</p>
-
-<p>A file system driver uses the <b>PsIsDiskCountersEnabled</b> routine to query the system enabled  state of the disk I/O  counters. A file system driver will use this routine prior to accounting for process disk I/O using <a href="https://msdn.microsoft.com/library/windows/hardware/hh971609">PsUpdateDiskCounters</a>.</p>
+<p>A file system driver uses the <b>PsIsDiskCountersEnabled</b> routine to query the system enabled  state of the disk I/O  counters. A file system driver will use this routine prior to accounting for process disk I/O using <a href="..\ntifs\nf-ntifs-psupdatediskcounters.md">PsUpdateDiskCounters</a>.</p>
 
 ## -requirements
 <table>
@@ -131,7 +125,7 @@ BOOLEAN PsIsDiskCountersEnabled(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971609">PsUpdateDiskCounters</a>
+<a href="..\ntifs\nf-ntifs-psupdatediskcounters.md">PsUpdateDiskCounters</a>
 </dt>
 </dl>
 <p> </p>

@@ -70,7 +70,7 @@ HRESULT APIENTRY CALLBACK* pfnSubmitCommandCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn914419">D3DDDICB_SUBMITCOMMAND</a> structure that describes the operation to perform.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-submitcommand.md">D3DDDICB_SUBMITCOMMAND</a> structure that describes the operation to perform.</p>
 </dd>
 </dl>
 
@@ -126,7 +126,7 @@ HRESULT APIENTRY CALLBACK* pfnSubmitCommandCb(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn914419">D3DDDICB_SUBMITCOMMAND</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-submitcommand.md">D3DDDICB_SUBMITCOMMAND</a>
 </dt>
 </dl>
 <p> </p>

@@ -156,7 +156,7 @@ typedef struct _D3DDDI_OVERLAYCOLORCONTROLSFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544612">D3DDDI_OVERLAYCOLORCONTROLS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-overlaycolorcontrols.md">D3DDDI_OVERLAYCOLORCONTROLS</a>
 </dt>
 </dl>
 <p> </p>

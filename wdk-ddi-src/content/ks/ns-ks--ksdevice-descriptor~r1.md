@@ -7,7 +7,7 @@ old-location: stream\ksdevice_descriptor.htm
 old-project: stream
 ms.assetid: dc68f6d8-a2d5-4940-a708-fe761c3a8a0d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KSDEVICE_DESCRIPTOR,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,19 +61,19 @@ typedef struct _KSDEVICE_DESCRIPTOR {
 ### -field <b>Dispatch</b>
 
 <dd>
-<p>A pointer to the client dispatch table for this device. This dispatch table contains client dispatch functions for PNP messages such as <b>Add</b>, <b>Start</b>, <b>Stop</b>, <b>Remove</b>. Clients are not required to supply a dispatch table unless they want to receive callbacks for the PNP messages described in the dispatch table. Any member of the dispatch table can be <b>NULL</b> to indicate that the client does not want to receive notification for that particular message. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561693">KSDEVICE_DISPATCH</a>.</p>
+<p>A pointer to the client dispatch table for this device. This dispatch table contains client dispatch functions for PNP messages such as <b>Add</b>, <b>Start</b>, <b>Stop</b>, <b>Remove</b>. Clients are not required to supply a dispatch table unless they want to receive callbacks for the PNP messages described in the dispatch table. Any member of the dispatch table can be <b>NULL</b> to indicate that the client does not want to receive notification for that particular message. For more information, see <a href="..\ks\ns-ks--ksdevice-dispatch.md">KSDEVICE_DISPATCH</a>.</p>
 </dd>
 
 ### -field <b>FilterDescriptorsCount</b>
 
 <dd>
-<p>This member contains the number of filter descriptors for this device that will be provided in the <b>FilterDescriptors</b> member. Zero is a legal value for this member; clients can create filter factories dynamically with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561650">KsCreateFilterFactory</a> function instead of statically describing them in the device descriptor.</p>
+<p>This member contains the number of filter descriptors for this device that will be provided in the <b>FilterDescriptors</b> member. Zero is a legal value for this member; clients can create filter factories dynamically with the <a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a> function instead of statically describing them in the device descriptor.</p>
 </dd>
 
 ### -field <b>FilterDescriptors</b>
 
 <dd>
-<p>A pointer to an array of filter descriptors that describe filters that can be created by this device. This member may be <b>NULL</b> if <b>FilterDescriptorsCount</b> is zero. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff562553">KSFILTER_DESCRIPTOR</a>.</p>
+<p>A pointer to an array of filter descriptors that describe filters that can be created by this device. This member may be <b>NULL</b> if <b>FilterDescriptorsCount</b> is zero. For more information, see <a href="..\ks\ns-ks--ksfilter-descriptor.md">KSFILTER_DESCRIPTOR</a>.</p>
 </dd>
 
 ### -field <b>Version</b>
@@ -90,7 +90,7 @@ typedef struct _KSDEVICE_DESCRIPTOR {
 <p>KSDEVICE_DESCRIPTOR_VERSION</p>
 </td>
 <td>
-<p>Indicates support of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554290">AVStrMiniDeviceQueryInterface</a> dispatch of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561693">KSDEVICE_DISPATCH</a>.</p>
+<p>Indicates support of the <a href="stream.avstrminidevicequeryinterface">AVStrMiniDeviceQueryInterface</a> dispatch of <a href="..\ks\ns-ks--ksdevice-dispatch.md">KSDEVICE_DISPATCH</a>.</p>
 </td>
 </tr>
 <tr>
@@ -128,7 +128,7 @@ typedef struct _KSDEVICE_DESCRIPTOR {
 </dl>
 
 ## -remarks
-<p>Most often, this structure is used in conjunction with <a href="https://msdn.microsoft.com/library/windows/hardware/ff562683">KsInitializeDriver</a> in the client's <b>DriverEntry</b> function to initialize the device. This structure is also used to manually initialize or create devices with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562682">KsInitializeDevice</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561647">KsCreateDevice</a> functions.</p>
+<p>Most often, this structure is used in conjunction with <a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a> in the client's <b>DriverEntry</b> function to initialize the device. This structure is also used to manually initialize or create devices with the <a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a> and <a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a> functions.</p>
 
 <p>If you set <b>Version</b> to KSDEVICE_DESCRIPTOR_VERSION_2 and run your driver on an early version of AVStream that does not support <b>Flags</b>, all flags will be considered to be zero.</p>
 
@@ -159,21 +159,21 @@ typedef struct _KSDEVICE_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561693">KSDEVICE_DISPATCH</a>
+<a href="..\ks\ns-ks--ksdevice-dispatch.md">KSDEVICE_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562553">KSFILTER_DESCRIPTOR</a>
+<a href="..\ks\ns-ks--ksfilter-descriptor.md">KSFILTER_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562683">KsInitializeDriver</a>
+<a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562682">KsInitializeDevice</a>
+<a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561647">KsCreateDevice</a>
+<a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSDEVICE_DESCRIPTOR structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSDEVICE_DESCRIPTOR structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: kernel\psterminateserversilo.htm
 old-project: kernel
 ms.assetid: C19190A3-57F9-4482-A550-045805734909
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PsTerminateServerSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,10 +72,6 @@ void PsTerminateServerSilo(
 <p>This routine does not return a value.</p>
 
 ## -remarks
-<p>This routine can be called within or from outside a silo context.
-    Note that this is different from a BugCheck; this routine will return to
-    the caller.</p>
-
 <p>This routine can be called within or from outside a silo context.
     Note that this is different from a BugCheck; this routine will return to
     the caller.</p>

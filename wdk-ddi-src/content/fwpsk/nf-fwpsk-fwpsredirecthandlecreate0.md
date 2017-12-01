@@ -7,7 +7,7 @@ old-location: netvista\fwpsredirecthandlecreate0.htm
 old-project: netvista
 ms.assetid: 841f3885-509a-457e-854d-e8ead657de54
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsRedirectHandleCreate0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -95,21 +95,10 @@ NTSTATUS NTAPI FwpsRedirectHandleCreate0(
 
 <p>Your callout driver should call <b>FwpsRedirectHandleCreate0</b> once and cache the handle so that it can reuse the handle.</p>
 
-<p>Before an Application Layer Enforcement (ALE) connect redirection callout can redirect connections to a local process, it must  obtain a redirect handle with the <b>FwpsRedirectHandleCreate0</b> function and put the handle in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551231">FWPS_CONNECT_REQUEST0</a> structure. The callout modifies the structure in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> for the ALE connect redirect layers.
+<p>Before an Application Layer Enforcement (ALE) connect redirection callout can redirect connections to a local process, it must  obtain a redirect handle with the <b>FwpsRedirectHandleCreate0</b> function and put the handle in the <a href="..\fwpsk\ns-fwpsk--fwps-connect-request0.md">FWPS_CONNECT_REQUEST0</a> structure. The callout modifies the structure in the <a href="netvista.classifyfn">classifyFn</a> for the ALE connect redirect layers.
 </p>
 
-<p>After a callout driver has finished using a redirect handle, it must call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439684">FwpsRedirectHandleDestroy0</a> function to destroy the handle. </p>
-
-<p>A callout driver calls the <b>FwpsRedirectHandleCreate0</b> function to create a handle that can be used to redirect connections.</p>
-
-<p>For more information about redirection, see <a href="NULL">Using Bind or Connect Redirection</a>.</p>
-
-<p>Your callout driver should call <b>FwpsRedirectHandleCreate0</b> once and cache the handle so that it can reuse the handle.</p>
-
-<p>Before an Application Layer Enforcement (ALE) connect redirection callout can redirect connections to a local process, it must  obtain a redirect handle with the <b>FwpsRedirectHandleCreate0</b> function and put the handle in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551231">FWPS_CONNECT_REQUEST0</a> structure. The callout modifies the structure in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> for the ALE connect redirect layers.
-</p>
-
-<p>After a callout driver has finished using a redirect handle, it must call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439684">FwpsRedirectHandleDestroy0</a> function to destroy the handle. </p>
+<p>After a callout driver has finished using a redirect handle, it must call the <a href="..\fwpsk\nf-fwpsk-fwpsredirecthandledestroy0.md">FwpsRedirectHandleDestroy0</a> function to destroy the handle. </p>
 
 ## -requirements
 <table>
@@ -172,15 +161,15 @@ NTSTATUS NTAPI FwpsRedirectHandleCreate0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+<a href="netvista.classifyfn">classifyFn</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551231">FWPS_CONNECT_REQUEST0</a>
+<a href="..\fwpsk\ns-fwpsk--fwps-connect-request0.md">FWPS_CONNECT_REQUEST0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439684">FwpsRedirectHandleDestroy0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsredirecthandledestroy0.md">FwpsRedirectHandleDestroy0</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsRedirectHandleCreate0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsRedirectHandleCreate0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

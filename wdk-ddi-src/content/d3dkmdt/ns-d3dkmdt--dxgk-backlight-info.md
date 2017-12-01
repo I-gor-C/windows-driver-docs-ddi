@@ -73,7 +73,7 @@ typedef struct _DXGK_BACKLIGHT_INFO {
 ### -field <b>GammaRamp</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544571">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> structure that contains a description of a gamma lookup table.
+<p>[out] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> structure that contains a description of a gamma lookup table.
 This lookup table represents the gamma ramp that has been optimized for backlight display by the display miniport driver from a gamma ramp set by an application.</p>
 </dd>
 </dl>
@@ -114,7 +114,7 @@ This lookup table represents the gamma ramp that has been optimized for backligh
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544571">D3DDDI_GAMMA_RAMP_RGB256x3x16</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-gamma-ramp-rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgk-brightness-get-backlight-reduction.md">DxgkDdiGetBacklightReduction</a>

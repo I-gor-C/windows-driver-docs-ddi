@@ -61,7 +61,7 @@ BOOL ReplyPrinterChangeNotification(
 ### -param <i>hNotify</i> [in]
 
 <dd>
-<p>Caller-supplied handle. This handle must have been previously received as the <i>hNotify</i> input to the print provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548837">FindFirstPrinterChangeNotification</a> function.</p>
+<p>Caller-supplied handle. This handle must have been previously received as the <i>hNotify</i> input to the print provider's <a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a> function.</p>
 </dd>
 
 ### -param <i>fdwFlags</i> 
@@ -87,19 +87,11 @@ BOOL ReplyPrinterChangeNotification(
 <p>If the operation succeeds, the function returns <b>TRUE</b>. Otherwise the function returns <b>FALSE</b>. The caller can obtain an error code by calling <b>GetLastError</b>.</p>
 
 ## -remarks
-<p>Print providers that do not support polling (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548837">FindFirstPrinterChangeNotification</a>) must notify the spooler of the occurrence of any events represented by the PRINTER_CHANGE_-prefixed flags received by the provider's <b>FindFirstPrinterChangeNotification</b> function. When an event occurs, the print provider can call <code>ReplyPrinterChangeNotification</code> to inform the spooler of the event and to supply information associated with the event. The spooler keeps track of this event information, for each notification handle, and delivers the information to an application when the application calls <b>FindNextPrinterChangeNotification</b> (described in the Windows SDK documentation).</p>
+<p>Print providers that do not support polling (see <a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a>) must notify the spooler of the occurrence of any events represented by the PRINTER_CHANGE_-prefixed flags received by the provider's <b>FindFirstPrinterChangeNotification</b> function. When an event occurs, the print provider can call <code>ReplyPrinterChangeNotification</code> to inform the spooler of the event and to supply information associated with the event. The spooler keeps track of this event information, for each notification handle, and delivers the information to an application when the application calls <b>FindNextPrinterChangeNotification</b> (described in the Windows SDK documentation).</p>
 
 <p>When a print provider calls <code>ReplyPrinterChangeNotification</code>, it must identify the event that has occurred by setting a PRINTER_CHANGE_-prefixed flag in <i>fwdFlags</i> or by using <i>pPrinterNotifyInfo</i> to return a PRINTER_NOTIFY_INFO structure. (Use the flags listed in the Windows SDK documentation's description of <b>FindNextPrinterChangeNotification</b>--not the flags listed in the Windows SDK documentation's description of <b>FindFirstPrinterChangeNotification</b>.)</p>
 
-<p>Calling <code>ReplyPrinterChangeNotification</code> causes the spooler to signal the client application that a print queue event has occurred. This happens even if the provider supplies <b>NULL</b> for <i>pPrinterNotifyInfo</i>. To update the spooler's record of print queue changes without causing the client to be notified, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff559739">PartialReplyPrinterChangeNotification</a>. It is common to call <b>PartialReplyPrinterChangeNotification</b> several times to update the spooler's database, then to call <code>ReplyPrinterChangeNotification</code> to notify the client that changes have occurred.</p>
-
-<p>For additional information, see <a href="NULL">Supporting Printer Change Notifications</a>.</p>
-
-<p>Print providers that do not support polling (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548837">FindFirstPrinterChangeNotification</a>) must notify the spooler of the occurrence of any events represented by the PRINTER_CHANGE_-prefixed flags received by the provider's <b>FindFirstPrinterChangeNotification</b> function. When an event occurs, the print provider can call <code>ReplyPrinterChangeNotification</code> to inform the spooler of the event and to supply information associated with the event. The spooler keeps track of this event information, for each notification handle, and delivers the information to an application when the application calls <b>FindNextPrinterChangeNotification</b> (described in the Windows SDK documentation).</p>
-
-<p>When a print provider calls <code>ReplyPrinterChangeNotification</code>, it must identify the event that has occurred by setting a PRINTER_CHANGE_-prefixed flag in <i>fwdFlags</i> or by using <i>pPrinterNotifyInfo</i> to return a PRINTER_NOTIFY_INFO structure. (Use the flags listed in the Windows SDK documentation's description of <b>FindNextPrinterChangeNotification</b>--not the flags listed in the Windows SDK documentation's description of <b>FindFirstPrinterChangeNotification</b>.)</p>
-
-<p>Calling <code>ReplyPrinterChangeNotification</code> causes the spooler to signal the client application that a print queue event has occurred. This happens even if the provider supplies <b>NULL</b> for <i>pPrinterNotifyInfo</i>. To update the spooler's record of print queue changes without causing the client to be notified, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff559739">PartialReplyPrinterChangeNotification</a>. It is common to call <b>PartialReplyPrinterChangeNotification</b> several times to update the spooler's database, then to call <code>ReplyPrinterChangeNotification</code> to notify the client that changes have occurred.</p>
+<p>Calling <code>ReplyPrinterChangeNotification</code> causes the spooler to signal the client application that a print queue event has occurred. This happens even if the provider supplies <b>NULL</b> for <i>pPrinterNotifyInfo</i>. To update the spooler's record of print queue changes without causing the client to be notified, use <a href="..\winsplp\nf-winsplp-partialreplyprinterchangenotification.md">PartialReplyPrinterChangeNotification</a>. It is common to call <b>PartialReplyPrinterChangeNotification</b> several times to update the spooler's database, then to call <code>ReplyPrinterChangeNotification</code> to notify the client that changes have occurred.</p>
 
 <p>For additional information, see <a href="NULL">Supporting Printer Change Notifications</a>.</p>
 
@@ -150,10 +142,10 @@ BOOL ReplyPrinterChangeNotification(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548837">FindFirstPrinterChangeNotification</a>
+<a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559739">PartialReplyPrinterChangeNotification</a>
+<a href="..\winsplp\nf-winsplp-partialreplyprinterchangenotification.md">PartialReplyPrinterChangeNotification</a>
 </dt>
 </dl>
 <p> </p>

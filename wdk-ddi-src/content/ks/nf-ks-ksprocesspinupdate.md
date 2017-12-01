@@ -7,7 +7,7 @@ old-location: stream\ksprocesspinupdate.htm
 old-project: stream
 ms.assetid: 9f6c28ad-d3dd-4be4-a637-10958a9cbd20
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsProcessPinUpdate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>KsProcessPinUpdate</b> function is called from within a filter-centric filter's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556315">AVStrMiniFilterProcess</a> dispatch to update a process pin.</p>
+<p>The <b>KsProcessPinUpdate</b> function is called from within a filter-centric filter's <a href="stream.avstrminifilterprocess">AVStrMiniFilterProcess</a> dispatch to update a process pin.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ BOOLEAN KsProcessPinUpdate(
 ### -param <i>ProcessPin</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564256">KSPROCESSPIN</a> structure that represents the process pin to update.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksprocesspin.md">KSPROCESSPIN</a> structure that represents the process pin to update.</p>
 </dd>
 </dl>
 
@@ -65,8 +65,6 @@ BOOLEAN KsProcessPinUpdate(
 <p><b>KsProcessPinUpdate</b> returns <b>TRUE</b> if <i>ProcessPin</i>'s conditions for processing are met; otherwise, it returns <b>FALSE</b>. (These conditions are set in the pin descriptor within the <b>Pin</b> member of <i>ProcessPin</i>.) If the minidriver's dispatch calls this routine while the filter is in the STOP state, <b>KsProcessPinUpdate</b> returns <b>FALSE</b> since no pipe exists.</p>
 
 ## -remarks
-<p>For more information, see <a href="NULL">Filter-Centric Processing</a>.</p>
-
 <p>For more information, see <a href="NULL">Filter-Centric Processing</a>.</p>
 
 ## -requirements
@@ -114,12 +112,12 @@ BOOLEAN KsProcessPinUpdate(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564256">KSPROCESSPIN</a>
+<a href="..\ks\ns-ks--ksprocesspin.md">KSPROCESSPIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564260">KSPROCESSPIN_INDEXENTRY</a>
+<a href="..\ks\ns-ks--ksprocesspin-indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsProcessPinUpdate function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsProcessPinUpdate function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

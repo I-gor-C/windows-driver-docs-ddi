@@ -70,7 +70,7 @@ typedef struct _DXVA_ProcAmpControlBlt {
 ### -field <b>DstRect</b>
 
 <dd>
-<p>Specifies the destination rectangle as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure. The destination rectangle is required for subrectangle stretching. Support for stretching is optional and is reported by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564019">DXVA_ProcAmpControlCaps</a> structure. Support for subrectangles is optional.</p>
+<p>Specifies the destination rectangle as a <a href="display.rect">RECT</a> structure. The destination rectangle is required for subrectangle stretching. Support for stretching is optional and is reported by the <a href="..\dxva\ns-dxva--dxva-procampcontrolcaps.md">DXVA_ProcAmpControlCaps</a> structure. Support for subrectangles is optional.</p>
 </dd>
 
 ### -field <b>SrcRect</b>
@@ -138,10 +138,10 @@ typedef struct _DXVA_ProcAmpControlBlt {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564019">DXVA_ProcAmpControlCaps</a>
+<a href="..\dxva\ns-dxva--dxva-procampcontrolcaps.md">DXVA_ProcAmpControlCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564032">DXVA_ProcAmpControlQueryRange</a>
+<a href="..\dxva\ns-dxva--dxva-procampcontrolqueryrange.md">DXVA_ProcAmpControlQueryRange</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: debugger\debug_read_user_minidump_stream.htm
 old-project: debugger
 ms.assetid: 07005D52-E851-4AE8-95D8-ED8E26C43DC6
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_READ_USER_MINIDUMP_STREAM, DEBUG_READ_USER_MINIDUMP_STREAM, *PDEBUG_READ_USER_MINIDUMP_STREAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -97,7 +97,7 @@ typedef struct _DEBUG_READ_USER_MINIDUMP_STREAM {
 </dl>
 
 ## -remarks
-<p>The DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM <a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a> operation reads a stream from a user-mode minidump target.</p>
+<p>The DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM <a href="debugger.request">Request</a> operation reads a stream from a user-mode minidump target.</p>
 
 ## -requirements
 <table>

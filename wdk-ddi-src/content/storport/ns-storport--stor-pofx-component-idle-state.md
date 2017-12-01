@@ -91,9 +91,9 @@ typedef struct _STOR_POFX_COMPONENT_IDLE_STATE {
 </dl>
 
 ## -remarks
-<p> The <a href="https://msdn.microsoft.com/library/windows/hardware/hh920427">STOR_POFX_COMPONENT</a> structure contains an array of <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structures. Each array element specifies the attributes of an F-state. Element 0 describes F0, element 1 describes F1, and so on.</p>
+<p> The <a href="..\storport\ns-storport--stor-pofx-component.md">STOR_POFX_COMPONENT</a> structure contains an array of <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structures. Each array element specifies the attributes of an F-state. Element 0 describes F0, element 1 describes F1, and so on.</p>
 
-<p>When the miniport driver registers a device with the Storport power management framework, the driver supplies an array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh920427">STOR_POFX_COMPONENT</a> structures. Each array element describes the power attributes of a component in the device.</p>
+<p>When the miniport driver registers a device with the Storport power management framework, the driver supplies an array of <a href="..\storport\ns-storport--stor-pofx-component.md">STOR_POFX_COMPONENT</a> structures. Each array element describes the power attributes of a component in the device.</p>
 
 ## -requirements
 <table>
@@ -120,7 +120,7 @@ typedef struct _STOR_POFX_COMPONENT_IDLE_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh920427">STOR_POFX_COMPONENT</a>
+<a href="..\storport\ns-storport--stor-pofx-component.md">STOR_POFX_COMPONENT</a>
 </dt>
 </dl>
 <p> </p>

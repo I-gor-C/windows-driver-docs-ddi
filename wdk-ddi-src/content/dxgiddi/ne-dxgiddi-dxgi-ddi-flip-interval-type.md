@@ -117,7 +117,7 @@ typedef enum DXGI_DDI_FLIP_INTERVAL_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557464">DXGI_DDI_ARG_PRESENT</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-arg-present.md">DXGI_DDI_ARG_PRESENT</a>
 </dt>
 </dl>
 <p> </p>

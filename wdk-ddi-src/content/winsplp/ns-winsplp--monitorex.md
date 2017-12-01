@@ -40,8 +40,8 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The MONITOREX structure is obsolete and supported for compatibility purposes only. New print monitors should implement <a href="https://msdn.microsoft.com/library/windows/hardware/ff551605">InitializePrintMonitor2</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff557532">MONITOR2</a> so that they can be used with print server clusters.</p>
-<p>The MONITOREX structure is used as the return value for a print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551600">InitializePrintMonitor</a> function.</p>
+<p>The MONITOREX structure is obsolete and supported for compatibility purposes only. New print monitors should implement <a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a> and <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> so that they can be used with print server clusters.</p>
+<p>The MONITOREX structure is used as the return value for a print monitor's <a href="..\winsplp\nf-winsplp-initializeprintmonitor.md">InitializePrintMonitor</a> function.</p>
 
 
 ## -syntax
@@ -66,7 +66,7 @@ typedef struct _MONITOREX {
 ### -field <b>Monitor</b>
 
 <dd>
-<p>Is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542552">MONITOR</a> structure.</p>
+<p>Is a <a href="..\winsplp\ns-winsplp--monitor.md">MONITOR</a> structure.</p>
 </dd>
 </dl>
 
@@ -90,7 +90,7 @@ typedef struct _MONITOREX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542552">MONITOR</a>
+<a href="..\winsplp\ns-winsplp--monitor.md">MONITOR</a>
 </dt>
 </dl>
 <p> </p>

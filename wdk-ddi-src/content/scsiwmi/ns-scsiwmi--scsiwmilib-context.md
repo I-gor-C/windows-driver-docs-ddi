@@ -77,44 +77,44 @@ typedef struct _SCSIWMILIB_CONTEXT {
 ### -field <b>QueryWmiRegInfo</b>
 
 <dd>
-<p>Points to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557344">HwScsiWmiQueryReginfo</a> routine, which is a required entry point for miniport drivers that support WMI.</p>
+<p>Points to the driver's <a href="storage.hwscsiwmiqueryreginfo">HwScsiWmiQueryReginfo</a> routine, which is a required entry point for miniport drivers that support WMI.</p>
 </dd>
 
 ### -field <b>QueryWmiDataBlock</b>
 
 <dd>
-<p>Points to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557340">HwScsiWmiQueryDataBlock</a> routine, which is a required entry point for miniport drivers that support WMI.</p>
+<p>Points to the driver's <a href="storage.hwscsiwmiquerydatablock">HwScsiWmiQueryDataBlock</a> routine, which is a required entry point for miniport drivers that support WMI.</p>
 </dd>
 
 ### -field <b>SetWmiDataBlock</b>
 
 <dd>
-<p>Points to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557349">HwScsiWmiSetDataBlock</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b></p>
+<p>Points to the driver's <a href="storage.hwscsiwmisetdatablock">HwScsiWmiSetDataBlock</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b></p>
 </dd>
 
 ### -field <b>SetWmiDataItem</b>
 
 <dd>
-<p>Points to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557357">HwScsiWmiSetDataItem</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b>.</p>
+<p>Points to the driver's <a href="storage.hwscsiwmisetdataitem">HwScsiWmiSetDataItem</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b>.</p>
 </dd>
 
 ### -field <b>ExecuteWmiMethod</b>
 
 <dd>
-<p>Points to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557332">HwScsiWmiExecuteMethod</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b></p>
+<p>Points to the driver's <a href="storage.hwscsiwmiexecutemethod">HwScsiWmiExecuteMethod</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b></p>
 </dd>
 
 ### -field <b>WmiFunctionControl</b>
 
 <dd>
-<p>Points to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557338">HwScsiWmiFunctionControl</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b>. </p>
+<p>Points to the driver's <a href="storage.hwscsiwmifunctioncontrol">HwScsiWmiFunctionControl</a> routine, which is an optional entry point for miniport drivers that support WMI. If the miniport driver does not implement this routine, it must set this member to <b>NULL</b>. </p>
 </dd>
 </dl>
 
 ## -remarks
 <p>A SCSI miniport driver that supports WMI stores an initialized SCSI_WMILIB_CONTEXT structure (or a pointer to such a structure) in its device extension. A miniport driver can use the same SCSI_WMILIB_CONTEXT structure for multiple device objects if each device object supplies the same set of data blocks. </p>
 
-<p>When the miniport driver receives an SRB in which the <b>Function</b> member is set to SRB_FUNCTION_WMI, it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff564766">ScsiPortWmiDispatchFunction</a> with request parameters, including a pointer to an initialized SCSI_WMILIB_CONTEXT structure. <b>ScsiPortWmiDispatchFunction</b> handles the request by calling the miniport driver's appropriate HwScsiWmiXxx routine.</p>
+<p>When the miniport driver receives an SRB in which the <b>Function</b> member is set to SRB_FUNCTION_WMI, it calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a> with request parameters, including a pointer to an initialized SCSI_WMILIB_CONTEXT structure. <b>ScsiPortWmiDispatchFunction</b> handles the request by calling the miniport driver's appropriate HwScsiWmiXxx routine.</p>
 
 <p>If the miniport driver does not implement an optional HwScsiWmiXxx routine, the port driver returns an appropriate status to the caller.</p>
 
@@ -135,28 +135,28 @@ typedef struct _SCSIWMILIB_CONTEXT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557332">HwScsiWmiExecuteMethod</a>
+<a href="storage.hwscsiwmiexecutemethod">HwScsiWmiExecuteMethod</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557338">HwScsiWmiFunctionControl</a>
+<a href="storage.hwscsiwmifunctioncontrol">HwScsiWmiFunctionControl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557340">HwScsiWmiQueryDataBlock</a>
+<a href="storage.hwscsiwmiquerydatablock">HwScsiWmiQueryDataBlock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557344">HwScsiWmiQueryReginfo</a>
+<a href="storage.hwscsiwmiqueryreginfo">HwScsiWmiQueryReginfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557349">HwScsiWmiSetDataBlock</a>
+<a href="storage.hwscsiwmisetdatablock">HwScsiWmiSetDataBlock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557357">HwScsiWmiSetDataItem</a>
+<a href="storage.hwscsiwmisetdataitem">HwScsiWmiSetDataItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564766">ScsiPortWmiDispatchFunction</a>
+<a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564941">SCSIWMIGUIDREGINFO</a>
+<a href="storage.scsiwmiguidreginfo">SCSIWMIGUIDREGINFO</a>
 </dt>
 </dl>
 <p> </p>

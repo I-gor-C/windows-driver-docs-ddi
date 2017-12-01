@@ -7,7 +7,7 @@ old-location: debugger\getmatchthreadid.htm
 old-project: debugger
 ms.assetid: 0f0f7248-de85-4757-8006-48444af8edac
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugBreakpoint2, GetMatchThreadId, IDebugBreakpoint2::GetMatchThreadId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,13 +75,7 @@ HRESULT GetMatchThreadId(
 ## -remarks
 <p>If you have set a thread for the breakpoint, the breakpoint can be triggered only if that thread hits the breakpoint.  If you have not set a thread , any thread can trigger the breakpoint and <i>Id</i> receives <b>NULL</b>.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the engine thread ID of the thread that can trigger the breakpoint.</p>
-
-<p>For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
-
-<p>If you have set a thread for the breakpoint, the breakpoint can be triggered only if that thread hits the breakpoint.  If you have not set a thread , any thread can trigger the breakpoint and <i>Id</i> receives <b>NULL</b>.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the engine thread ID of the thread that can trigger the breakpoint.</p>
+<p>The <a href="debugger.getparameters">GetParameters</a> method also returns the engine thread ID of the thread that can trigger the breakpoint.</p>
 
 <p>For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
 

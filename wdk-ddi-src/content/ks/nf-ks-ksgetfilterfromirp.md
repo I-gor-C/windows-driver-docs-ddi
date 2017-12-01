@@ -7,7 +7,7 @@ old-location: stream\ksgetfilterfromirp.htm
 old-project: stream
 ms.assetid: 00c90dbf-bb44-4cba-97b3-170765a2eba7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsGetFilterFromIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,16 +57,14 @@ PKSFILTER KsGetFilterFromIrp(
 ### -param <i>Irp</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure for which to return the associated filter.</p>
+<p>A pointer to the <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure for which to return the associated filter.</p>
 </dd>
 </dl>
 
 ## -returns
-<p><b>KsGetFilterFromIrp</b> returns either a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure associated with <i>Irp</i> or <b>NULL</b>. <b>NULL</b> indicates that <i>Irp</i> is not associated with an AVStream object.</p>
+<p><b>KsGetFilterFromIrp</b> returns either a pointer to the <a href="..\ks\ns-ks--ksfilter.md">KSFILTER</a> structure associated with <i>Irp</i> or <b>NULL</b>. <b>NULL</b> indicates that <i>Irp</i> is not associated with an AVStream object.</p>
 
 ## -remarks
-<p><b>KsGetFilterFromIrp</b> is valid for filters, pins, and nodes.</p>
-
 <p><b>KsGetFilterFromIrp</b> is valid for filters, pins, and nodes.</p>
 
 ## -requirements
@@ -114,12 +112,12 @@ PKSFILTER KsGetFilterFromIrp(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562668">KsGetPinFromIrp</a>
+<a href="..\ks\nf-ks-ksgetpinfromirp.md">KsGetPinFromIrp</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\ntifs\ns-ntifs--irp.md">IRP</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGetFilterFromIrp function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGetFilterFromIrp function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

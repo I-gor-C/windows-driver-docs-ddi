@@ -7,7 +7,7 @@ old-location: debugger\writemsr2.htm
 old-project: debugger
 ms.assetid: c9838b9e-b390-455d-98d6-249a49c9165d
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces, WriteMsr, IDebugDataSpaces::WriteMsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,10 +78,6 @@ HRESULT WriteMsr(
 <p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
-<p>For details on the addresses and values of MSRs, see the processor documentation.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 <p>For details on the addresses and values of MSRs, see the processor documentation.</p>

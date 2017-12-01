@@ -7,7 +7,7 @@ old-location: debugger\getfielddata.htm
 old-project: debugger
 ms.assetid: e60c2288-fe25-4da5-9b17-6e95a30e7c1c
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: GetFieldData
 ms.prod: windows-hardware
 ms.technology: windows-devices

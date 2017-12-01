@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>STOR_DEVICE_CAPABILITIES</b> structure reports device capabilities to the Storport driver in response to a capabilities query in a SCSI request block (SRB) with a function of SRB_FUNCTION_PNP.<b> STOR_DEVICE_CAPABILITIES</b> is a subset of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543095">DEVICE_CAPABILITIES</a> structure containing the members relevant to storage devices.</p>
+<p>The <b>STOR_DEVICE_CAPABILITIES</b> structure reports device capabilities to the Storport driver in response to a capabilities query in a SCSI request block (SRB) with a function of SRB_FUNCTION_PNP.<b> STOR_DEVICE_CAPABILITIES</b> is a subset of the <a href="..\wdm\ns-wdm--device-capabilities.md">DEVICE_CAPABILITIES</a> structure containing the members relevant to storage devices.</p>
 
 
 ## -syntax
@@ -130,7 +130,7 @@ typedef struct _STOR_DEVICE_CAPABILITIES {
 ### -field <b>SurpriseRemovalOK</b>
 
 <dd>
-<p>Specifies whether the miniport driver for the device can handle the case where the device is removed before Storport can send SRB_FUNCTION_PNP with <b>StorRemoveDevice</b> as the <b>PnPAction</b> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565352">SCSI_PNP_REQUEST_BLOCK</a> structure. If <b>SurpriseRemovalOK</b> is set to <b>TRUE</b>, the device can be safely removed from its immediate parent regardless of the state that its driver is in. </p>
+<p>Specifies whether the miniport driver for the device can handle the case where the device is removed before Storport can send SRB_FUNCTION_PNP with <b>StorRemoveDevice</b> as the <b>PnPAction</b> in the <a href="..\storport\ns-storport--scsi-pnp-request-block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If <b>SurpriseRemovalOK</b> is set to <b>TRUE</b>, the device can be safely removed from its immediate parent regardless of the state that its driver is in. </p>
 </dd>
 
 ### -field <b>NoDisplayInUI</b>
@@ -141,11 +141,11 @@ typedef struct _STOR_DEVICE_CAPABILITIES {
 </dl>
 
 ## -remarks
-<p>When a miniport driver receives an SRB in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557423">HwStorStartIo</a> routine where the SRB function is SRB_FUNCTION_PNP, the SRB is formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565352">SCSI_PNP_REQUEST_BLOCK</a> structure. If the <b>PnPAction</b> member of the SRB is <b>StorQueryCapabilities</b>, the miniport can return a <b>STOR_DEVICE_CAPABILITIES</b> structure in the <b>DataBuffer</b> member of the SRB.</p>
+<p>When a miniport driver receives an SRB in its <a href="storage.hwstorstartio">HwStorStartIo</a> routine where the SRB function is SRB_FUNCTION_PNP, the SRB is formatted as a <a href="..\storport\ns-storport--scsi-pnp-request-block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If the <b>PnPAction</b> member of the SRB is <b>StorQueryCapabilities</b>, the miniport can return a <b>STOR_DEVICE_CAPABILITIES</b> structure in the <b>DataBuffer</b> member of the SRB.</p>
 
 <p>Storport sends this structure to the miniport with all members initialized to 0. On return, only the <b>Removable</b> field is used from this structure.</p>
 
-<p>Starting with Windows 8, miniports should use the <a href="https://msdn.microsoft.com/library/windows/hardware/jj159882">STOR_DEVICE_CAPABILITIES_EX</a> structure to indicate support for additional capabilities.</p>
+<p>Starting with Windows 8, miniports should use the <a href="..\storport\ns-storport--stor-device-capabilities-ex.md">STOR_DEVICE_CAPABILITIES_EX</a> structure to indicate support for additional capabilities.</p>
 
 ## -requirements
 <table>
@@ -172,13 +172,13 @@ typedef struct _STOR_DEVICE_CAPABILITIES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543095">DEVICE_CAPABILITIES</a>
+<a href="..\wdm\ns-wdm--device-capabilities.md">DEVICE_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565352">SCSI_PNP_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport--scsi-pnp-request-block.md">SCSI_PNP_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj159882">STOR_DEVICE_CAPABILITIES_EX</a>
+<a href="..\storport\ns-storport--stor-device-capabilities-ex.md">STOR_DEVICE_CAPABILITIES_EX</a>
 </dt>
 </dl>
 <p> </p>

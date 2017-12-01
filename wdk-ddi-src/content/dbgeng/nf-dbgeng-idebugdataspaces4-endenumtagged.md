@@ -7,7 +7,7 @@ old-location: debugger\endenumtagged.htm
 old-project: debugger
 ms.assetid: 6a456b8c-aec6-443d-8db4-21e7715ab818
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces4, EndEnumTagged, IDebugDataSpaces4::EndEnumTagged
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ HRESULT EndEnumTagged(
 ### -param <i>Handle</i> [in]
 
 <dd>
-<p>Specifies the handle identifying the enumeration.  This is the handle returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff558801">StartEnumTagged</a>.</p>
+<p>Specifies the handle identifying the enumeration.  This is the handle returned by <a href="debugger.startenumtagged">StartEnumTagged</a>.</p>
 </dd>
 </dl>
 
@@ -69,8 +69,6 @@ HRESULT EndEnumTagged(
 <p> </p>
 
 ## -remarks
-<p>After a handle has been passed to this method it is no longer valid and must not be used again.</p>
-
 <p>After a handle has been passed to this method it is no longer valid and must not be used again.</p>
 
 ## -requirements

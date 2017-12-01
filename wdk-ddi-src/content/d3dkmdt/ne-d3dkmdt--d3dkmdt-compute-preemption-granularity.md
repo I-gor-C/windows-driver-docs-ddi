@@ -103,14 +103,6 @@ typedef enum _D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY {
 
 <p>For example, if one engine supports the preemption of primitive level graphics requests, and another engine supports the preemption of triangle level graphics requests, the driver should report primitive level graphics preemption capability for that adapter.</p>
 
-<p>Starting with Windows 8, display miniport drivers need to specify the level of preemption granularity supported by the GPU when executing compute shader operations. Because  engines on the same adapter may potentially support different preemption levels, the driver should report the coarsest granularity among all engines capable of executing a particular type of compute shader requests. </p>
-
-<p>For example, if one engine supports the preemption of primitive level graphics requests, and another engine supports the preemption of triangle level graphics requests, the driver should report primitive level graphics preemption capability for that adapter.</p>
-
-<p>Starting with Windows 8, display miniport drivers need to specify the level of preemption granularity supported by the GPU when executing compute shader operations. Because  engines on the same adapter may potentially support different preemption levels, the driver should report the coarsest granularity among all engines capable of executing a particular type of compute shader requests. </p>
-
-<p>For example, if one engine supports the preemption of primitive level graphics requests, and another engine supports the preemption of triangle level graphics requests, the driver should report primitive level graphics preemption capability for that adapter.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -144,10 +136,10 @@ typedef enum _D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439329">D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-graphics-preemption-granularity.md">D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439334">D3DKMDT_PREEMPTION_CAPS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-preemption-caps.md">D3DKMDT_PREEMPTION_CAPS</a>
 </dt>
 </dl>
 <p> </p>

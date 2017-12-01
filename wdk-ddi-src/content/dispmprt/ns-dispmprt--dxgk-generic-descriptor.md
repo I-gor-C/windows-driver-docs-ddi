@@ -110,7 +110,7 @@ typedef struct _DXGK_GENERIC_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561050">DXGK_DEVICE_DESCRIPTOR</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-device-descriptor.md">DXGK_DEVICE_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

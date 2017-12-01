@@ -7,7 +7,7 @@ old-location: netvista\ndiscmregistersapcomplete.htm
 old-project: netvista
 ms.assetid: 0419bbf5-02aa-482f-9e2c-a435302751c4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCmRegisterSapComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisCmRegisterSapComplete (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisCmRegisterSapComplete (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmRegisterSapComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmRegisterSapComplete (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -113,28 +109,6 @@ VOID NdisCmRegisterSapComplete(
     call-management support call 
     <b>NdisMCmRegisterSapComplete</b>.</p>
 
-<p>A stand-alone call manager must call 
-    <b>NdisCmRegisterSapComplete</b> if its 
-    <a href="..\ndis\nc-ndis-protocol-cm-reg-sap.md">ProtocolCmRegisterSap</a> function
-    returned NDIS_STATUS_PENDING when it was called with the given 
-    <i>NdisSapHandle</i> . The call to 
-    <b>NdisCmRegisterSapComplete</b> causes NDIS to call the client's 
-    <a href="..\ndis\nc-ndis-protocol-cl-register-sap-complete.md">
-    ProtocolClRegisterSapComplete</a> function.</p>
-
-<p>If the call manager sets 
-    <i>Status</i> to anything other than NDIS_STATUS_SUCCESS, it should consider the 
-    <i>NdisSapHandle</i> invalid as soon as it calls 
-    <b>NdisCmRegisterSapComplete</b>. After failing a SAP registration, the CM can release or reuse the
-    per-SAP context area that it allocated when 
-    <b>NdisCmRegisterSapComplete</b> returns control. NDIS also releases its context for the SAP if the call
-    manager fails the registration.</p>
-
-<p>Only stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
-    <b>NdisCmRegisterSapComplete</b>. Connection-oriented miniport drivers that provide integrated
-    call-management support call 
-    <b>NdisMCmRegisterSapComplete</b>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -192,7 +166,7 @@ VOID NdisCmRegisterSapComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547917">Irql_CallManager_Function</a>
+<a href="devtest.ndis_irql_callmanager_function">Irql_CallManager_Function</a>
 </td>
 </tr>
 </table>
@@ -204,10 +178,10 @@ VOID NdisCmRegisterSapComplete(
    NdisAllocateFromNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561648">NdisClRegisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563557">NdisMCmRegisterSapComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmregistersapcomplete.md">NdisMCmRegisterSapComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cl-register-sap-complete.md">
@@ -219,4 +193,4 @@ VOID NdisCmRegisterSapComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmRegisterSapComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmRegisterSapComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

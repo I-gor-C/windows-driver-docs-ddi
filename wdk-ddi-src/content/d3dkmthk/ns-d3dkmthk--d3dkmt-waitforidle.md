@@ -89,7 +89,7 @@ typedef struct _D3DKMT_WAITFORIDLE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547244">D3DKMTWaitForIdle</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforidle.md">D3DKMTWaitForIdle</a>
 </dt>
 </dl>
 <p> </p>

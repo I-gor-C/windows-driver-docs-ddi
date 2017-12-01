@@ -67,7 +67,7 @@ typedef struct _D3DDDIARG_CAPTURETOSYSMEM {
 ### -field <b>SrcRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the source rectangle. </p>
+<p>[in] A <a href="display.rect">RECT</a> structure for the source rectangle. </p>
 </dd>
 
 ### -field <b>hDstResource</b>
@@ -85,7 +85,7 @@ typedef struct _D3DDDIARG_CAPTURETOSYSMEM {
 ### -field <b>DstRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure for the destination rectangle. </p>
+<p>[in] A <a href="display.rect">RECT</a> structure for the destination rectangle. </p>
 </dd>
 </dl>
 
@@ -123,7 +123,7 @@ typedef struct _D3DDDIARG_CAPTURETOSYSMEM {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-capturetosysmem.md">CaptureToSysMem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

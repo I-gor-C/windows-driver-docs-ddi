@@ -79,7 +79,7 @@ typedef struct _BIDI_REQUEST_CONTAINER {
 ### -field <b>aData</b>
 
 <dd>
-<p>Is an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff545196">BIDI_REQUEST_DATA</a> structures, each holding a single bidi request. </p>
+<p>Is an array of <a href="..\winspool\ns-winspool--bidi-request-data.md">BIDI_REQUEST_DATA</a> structures, each holding a single bidi request. </p>
 </dd>
 </dl>
 
@@ -111,7 +111,7 @@ typedef struct _BIDI_REQUEST_CONTAINER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545196">BIDI_REQUEST_DATA</a>
+<a href="..\winspool\ns-winspool--bidi-request-data.md">BIDI_REQUEST_DATA</a>
 </dt>
 </dl>
 <p> </p>

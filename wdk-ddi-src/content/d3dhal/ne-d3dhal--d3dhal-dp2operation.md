@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The D3DHAL_DP2OPERATION enumerated type specifies the <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a> operation in the <b>bCommand</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structure. The enumerators of D3DHAL_DP2OPERATION can specify either primitive-rendering or nonprimitive-rendering operations. The enumerators of D3DHAL_DP2OPERATION can also specify that the driver returned responses to previously issued queries. </p>
+<p>The D3DHAL_DP2OPERATION enumerated type specifies the <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a> operation in the <b>bCommand</b> member of the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> structure. The enumerators of D3DHAL_DP2OPERATION can specify either primitive-rendering or nonprimitive-rendering operations. The enumerators of D3DHAL_DP2OPERATION can also specify that the driver returned responses to previously issued queries. </p>
 
 
 ## -syntax
@@ -146,133 +146,133 @@ typedef enum _D3DHAL_DP2OPERATION {
 ### -field <a id="D3DDP2OP_POINTS"></a><a id="d3ddp2op_points"></a><b>D3DDP2OP_POINTS</b>
 
 <dd>
-<p>Draws a list of indexed or nonindexed points. Each list is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545696">D3DHAL_DP2POINTS</a> structures.</p>
+<p>Draws a list of indexed or nonindexed points. Each list is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2points.md">D3DHAL_DP2POINTS</a> structures.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_INDEXEDLINELIST"></a><a id="d3ddp2op_indexedlinelist"></a><b>D3DDP2OP_INDEXEDLINELIST</b>
 
 <dd>
-<p>Draws a list of lines, with each line specified by a pair of vertex indexes. The indexed line list is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545579">D3DHAL_DP2INDEXEDLINELIST</a> structures.</p>
+<p>Draws a list of lines, with each line specified by a pair of vertex indexes. The indexed line list is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2indexedlinelist.md">D3DHAL_DP2INDEXEDLINELIST</a> structures.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_INDEXEDTRIANGLELIST"></a><a id="d3ddp2op_indexedtrianglelist"></a><b>D3DDP2OP_INDEXEDTRIANGLELIST</b>
 
 <dd>
-<p>Draws a list of triangles. Each triangle is specified by three indexes into the vertex buffer, one index per triangle vertex. The triangle list is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545612">D3DHAL_DP2INDEXEDTRIANGLELIST</a> structures.</p>
+<p>Draws a list of triangles. Each triangle is specified by three indexes into the vertex buffer, one index per triangle vertex. The triangle list is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2indexedtrianglelist.md">D3DHAL_DP2INDEXEDTRIANGLELIST</a> structures.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_RENDERSTATE"></a><a id="d3ddp2op_renderstate"></a><b>D3DDP2OP_RENDERSTATE</b>
 
 <dd>
-<p>Specifies a render state change that requires processing. The rendering state to change is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545705">D3DHAL_DP2RENDERSTATE</a> structures.</p>
+<p>Specifies a render state change that requires processing. The rendering state to change is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2renderstate.md">D3DHAL_DP2RENDERSTATE</a> structures.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_LINELIST"></a><a id="d3ddp2op_linelist"></a><b>D3DDP2OP_LINELIST</b>
 
 <dd>
-<p>Draws a list of lines. Each line is specified by a pair of vertices. The vertices are processed in sequential order starting at an initial specified vertex index. The line list is specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545646">D3DHAL_DP2LINELIST</a> structure.</p>
+<p>Draws a list of lines. Each line is specified by a pair of vertices. The vertices are processed in sequential order starting at an initial specified vertex index. The line list is specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2linelist.md">D3DHAL_DP2LINELIST</a> structure.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_LINESTRIP"></a><a id="d3ddp2op_linestrip"></a><b>D3DDP2OP_LINESTRIP</b>
 
 <dd>
-<p>Draws a connected strip of lines defined by a sequence of vertices starting at an initial specified vertex index. The line strip is specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545660">D3DHAL_DP2LINESTRIP</a> structure.</p>
+<p>Draws a connected strip of lines defined by a sequence of vertices starting at an initial specified vertex index. The line strip is specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2linestrip.md">D3DHAL_DP2LINESTRIP</a> structure.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_INDEXEDLINESTRIP"></a><a id="d3ddp2op_indexedlinestrip"></a><b>D3DDP2OP_INDEXEDLINESTRIP</b>
 
 <dd>
-<p>Draws a connected strip of lines defined by a sequence of vertex indexes. Each line in the connected strip is specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545593">D3DHAL_DP2INDEXEDLINESTRIP</a> structure.</p>
+<p>Draws a connected strip of lines defined by a sequence of vertex indexes. Each line in the connected strip is specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2indexedlinestrip.md">D3DHAL_DP2INDEXEDLINESTRIP</a> structure.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_TRIANGLELIST"></a><a id="d3ddp2op_trianglelist"></a><b>D3DDP2OP_TRIANGLELIST</b>
 
 <dd>
-<p>Draws a list of triangles. Each triangle is specified by three vertices that are processed starting at an initial specified vertex index. The triangles are processed in sequential order. The triangle list is specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545911">D3DHAL_DP2TRIANGLELIST</a> structure.</p>
+<p>Draws a list of triangles. Each triangle is specified by three vertices that are processed starting at an initial specified vertex index. The triangles are processed in sequential order. The triangle list is specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2trianglelist.md">D3DHAL_DP2TRIANGLELIST</a> structure.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_TRIANGLESTRIP"></a><a id="d3ddp2op_trianglestrip"></a><b>D3DDP2OP_TRIANGLESTRIP</b>
 
 <dd>
-<p>Draws a connected strip of triangles. Each triangle is specified by a sequence of vertices starting at an initial specified vertex index. The three most current vertices are used to draw each triangle. The triangle strip is specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545916">D3DHAL_DP2TRIANGLESTRIP</a> structure.</p>
+<p>Draws a connected strip of triangles. Each triangle is specified by a sequence of vertices starting at an initial specified vertex index. The three most current vertices are used to draw each triangle. The triangle strip is specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2trianglestrip.md">D3DHAL_DP2TRIANGLESTRIP</a> structure.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_INDEXEDTRIANGLESTRIP"></a><a id="d3ddp2op_indexedtrianglestrip"></a><b>D3DDP2OP_INDEXEDTRIANGLESTRIP</b>
 
 <dd>
-<p>Draws a connected strip of triangles that are specified by a sequence of vertex indexes. The three most current vertex indexes are used to draw each triangle. Each triangle in the connected strip is specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545628">D3DHAL_DP2INDEXEDTRIANGLESTRIP</a> structure.</p>
+<p>Draws a connected strip of triangles that are specified by a sequence of vertex indexes. The three most current vertex indexes are used to draw each triangle. Each triangle in the connected strip is specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2indexedtrianglestrip.md">D3DHAL_DP2INDEXEDTRIANGLESTRIP</a> structure.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_TRIANGLEFAN"></a><a id="d3ddp2op_trianglefan"></a><b>D3DDP2OP_TRIANGLEFAN</b>
 
 <dd>
-<p>Draws a triangle fan. The fan is specified by a sequence of vertices that start at an initial specified vertex index. The triangle fan is specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545896">D3DHAL_DP2TRIANGLEFAN</a> structure.</p>
+<p>Draws a triangle fan. The fan is specified by a sequence of vertices that start at an initial specified vertex index. The triangle fan is specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2trianglefan.md">D3DHAL_DP2TRIANGLEFAN</a> structure.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_INDEXEDTRIANGLEFAN"></a><a id="d3ddp2op_indexedtrianglefan"></a><b>D3DDP2OP_INDEXEDTRIANGLEFAN</b>
 
 <dd>
-<p>Draws a triangle fan. The triangle fan is specified by a sequence of vertex indexes. Each triangle in the fan is specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545602">D3DHAL_DP2INDEXEDTRIANGLEFAN</a> structure.</p>
+<p>Draws a triangle fan. The triangle fan is specified by a sequence of vertex indexes. Each triangle in the fan is specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2indexedtrianglefan.md">D3DHAL_DP2INDEXEDTRIANGLEFAN</a> structure.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_TRIANGLEFAN_IMM"></a><a id="d3ddp2op_trianglefan_imm"></a><b>D3DDP2OP_TRIANGLEFAN_IMM</b>
 
 <dd>
-<p>Draws a triangle fan. The fan is specified by a sequence of vertices stored in the command stream (immediate data). The <b>wPrimitiveCount</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structure specifies the number of triangles to render. The type and size of the vertices are specified by the <b>dwVertexType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545957">D3DHAL_DRAWPRIMITIVES2DATA</a> structure.</p>
+<p>Draws a triangle fan. The fan is specified by a sequence of vertices stored in the command stream (immediate data). The <b>wPrimitiveCount</b> member of the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> structure specifies the number of triangles to render. The type and size of the vertices are specified by the <b>dwVertexType</b> member of the <a href="..\d3dhal\ns-d3dhal--d3dhal-drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a> structure.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_LINELIST_IMM"></a><a id="d3ddp2op_linelist_imm"></a><b>D3DDP2OP_LINELIST_IMM</b>
 
 <dd>
-<p>Draws a set of lines. Each line is specified by a pair of vertices stored in the command stream (immediate data). The <b>wPrimitiveCount</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structure specifies how many pairs of vertices follow. The type and size of the vertices are determined by the <b>dwVertexType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545957">D3DHAL_DRAWPRIMITIVES2DATA</a> structure.</p>
+<p>Draws a set of lines. Each line is specified by a pair of vertices stored in the command stream (immediate data). The <b>wPrimitiveCount</b> member of the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2command.md">D3DHAL_DP2COMMAND</a> structure specifies how many pairs of vertices follow. The type and size of the vertices are determined by the <b>dwVertexType</b> member of the <a href="..\d3dhal\ns-d3dhal--d3dhal-drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a> structure.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_TEXTURESTAGESTATE"></a><a id="d3ddp2op_texturestagestate"></a><b>D3DDP2OP_TEXTURESTAGESTATE</b>
 
 <dd>
-<p>Specifies a texture render state change that requires processing. The render state to change is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545878">D3DHAL_DP2TEXTURESTAGESTATE</a> structures. The value in the <b>TSState</b> member specifies the texture state to be updated.</p>
+<p>Specifies a texture render state change that requires processing. The render state to change is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2texturestagestate.md">D3DHAL_DP2TEXTURESTAGESTATE</a> structures. The value in the <b>TSState</b> member specifies the texture state to be updated.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_INDEXEDTRIANGLELIST2"></a><a id="d3ddp2op_indexedtrianglelist2"></a><b>D3DDP2OP_INDEXEDTRIANGLELIST2</b>
 
 <dd>
-<p>Draws a list of triangles. Each triangle is specified by three indexes into the vertex buffer, one index per triangle vertex. The triangle list is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545619">D3DHAL_DP2INDEXEDTRIANGLELIST2</a> structures.</p>
+<p>Draws a list of triangles. Each triangle is specified by three indexes into the vertex buffer, one index per triangle vertex. The triangle list is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2indexedtrianglelist2.md">D3DHAL_DP2INDEXEDTRIANGLELIST2</a> structures.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_INDEXEDLINELIST2"></a><a id="d3ddp2op_indexedlinelist2"></a><b>D3DDP2OP_INDEXEDLINELIST2</b>
 
 <dd>
-<p>Draws a list of lines. Each line is specified by a pair of vertex indexes, with each offset from the beginning of the vertex buffer by a fixed amount. The indexed line list is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545579">D3DHAL_DP2INDEXEDLINELIST</a> structures.</p>
+<p>Draws a list of lines. Each line is specified by a pair of vertex indexes, with each offset from the beginning of the vertex buffer by a fixed amount. The indexed line list is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2indexedlinelist.md">D3DHAL_DP2INDEXEDLINELIST</a> structures.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_VIEWPORTINFO"></a><a id="d3ddp2op_viewportinfo"></a><b>D3DDP2OP_VIEWPORTINFO</b>
 
 <dd>
-<p>Specifies the clipping rectangle that is used for guard-band clipping by guard-band aware drivers. The clipping rectangle (that is, the viewing rectangle) is specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545936">D3DHAL_DP2VIEWPORTINFO</a> structure.</p>
+<p>Specifies the clipping rectangle that is used for guard-band clipping by guard-band aware drivers. The clipping rectangle (that is, the viewing rectangle) is specified by the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2viewportinfo.md">D3DHAL_DP2VIEWPORTINFO</a> structure.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_WINFO"></a><a id="d3ddp2op_winfo"></a><b>D3DDP2OP_WINFO</b>
 
 <dd>
-<p>Specifies the w range for w buffering. This range is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545944">D3DHAL_DP2WINFO</a> structures.</p>
+<p>Specifies the w range for w buffering. This range is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2winfo.md">D3DHAL_DP2WINFO</a> structures.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_SETPALETTE"></a><a id="d3ddp2op_setpalette"></a><b>D3DDP2OP_SETPALETTE</b>
 
 <dd>
-<p>Specifies that the palette is being set for a texture. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545744">D3DHAL_DP2SETPALETTE</a>.</p>
+<p>Specifies that the palette is being set for a texture. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setpalette.md">D3DHAL_DP2SETPALETTE</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_UPDATEPALETTE"></a><a id="d3ddp2op_updatepalette"></a><b>D3DDP2OP_UPDATEPALETTE</b>
 
 <dd>
-<p>Specifies that a texture palette is to be updated. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545923">D3DHAL_DP2UPDATEPALETTE</a>.</p>
+<p>Specifies that a texture palette is to be updated. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2updatepalette.md">D3DHAL_DP2UPDATEPALETTE</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_ZRANGE"></a><a id="d3ddp2op_zrange"></a><b>D3DDP2OP_ZRANGE</b>
 
 <dd>
-<p>Specifies the range of z values. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545948">D3DHAL_DP2ZRANGE</a>.</p>
+<p>Specifies the range of z values. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2zrange.md">D3DHAL_DP2ZRANGE</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_SETMATERIAL"></a><a id="d3ddp2op_setmaterial"></a><b>D3DDP2OP_SETMATERIAL</b>
@@ -284,61 +284,61 @@ typedef enum _D3DHAL_DP2OPERATION {
 ### -field <a id="D3DDP2OP_SETLIGHT"></a><a id="d3ddp2op_setlight"></a><b>D3DDP2OP_SETLIGHT</b>
 
 <dd>
-<p>Specifies that a light is being set. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545737">D3DHAL_DP2SETLIGHT</a>.</p>
+<p>Specifies that a light is being set. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setlight.md">D3DHAL_DP2SETLIGHT</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_CREATELIGHT"></a><a id="d3ddp2op_createlight"></a><b>D3DDP2OP_CREATELIGHT</b>
 
 <dd>
-<p>Creates a light. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545461">D3DHAL_DP2CREATELIGHT</a>.</p>
+<p>Creates a light. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2createlight.md">D3DHAL_DP2CREATELIGHT</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_SETTRANSFORM"></a><a id="d3ddp2op_settransform"></a><b>D3DDP2OP_SETTRANSFORM</b>
 
 <dd>
-<p>Sets up a transform. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545823">D3DHAL_DP2SETTRANSFORM</a>.</p>
+<p>Sets up a transform. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2settransform.md">D3DHAL_DP2SETTRANSFORM</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_TEXBLT"></a><a id="d3ddp2op_texblt"></a><b>D3DDP2OP_TEXBLT</b>
 
 <dd>
-<p>Specifies a blt operation from a source texture to a destination texture. It is used as a more efficient alternative to the DirectDraw <a href="display.ddblt">DdBlt</a> DDI. It is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545869">D3DHAL_DP2TEXBLT</a> structures. Because Direct3D drivers maintain all the state necessary to do a blt (for example, texture handles and blending modes), a blt can be accomplished with just the information in the D3DDP2OP_TEXBLT opcode. This new token signals the driver that a texture has to be transferred from system memory into local or nonlocal video memory.</p>
+<p>Specifies a blt operation from a source texture to a destination texture. It is used as a more efficient alternative to the DirectDraw <a href="display.ddblt">DdBlt</a> DDI. It is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2texblt.md">D3DHAL_DP2TEXBLT</a> structures. Because Direct3D drivers maintain all the state necessary to do a blt (for example, texture handles and blending modes), a blt can be accomplished with just the information in the D3DDP2OP_TEXBLT opcode. This new token signals the driver that a texture has to be transferred from system memory into local or nonlocal video memory.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_STATESET"></a><a id="d3ddp2op_stateset"></a><b>D3DDP2OP_STATESET</b>
 
 <dd>
-<p>Specifies a state-set operation to perform. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545844">D3DHAL_DP2STATESET</a>.</p>
+<p>Specifies a state-set operation to perform. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2stateset.md">D3DHAL_DP2STATESET</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_SETPRIORITY"></a><a id="d3ddp2op_setpriority"></a><b>D3DDP2OP_SETPRIORITY</b>
 
 <dd>
-<p>Sets the priority of a managed texture. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545761">D3DHAL_DP2SETPRIORITY</a>.</p>
+<p>Sets the priority of a managed texture. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setpriority.md">D3DHAL_DP2SETPRIORITY</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_SETRENDERTARGET"></a><a id="d3ddp2op_setrendertarget"></a><b>D3DDP2OP_SETRENDERTARGET</b>
 
 <dd>
-<p>Sets the render target. Direct3D drivers must respond to this opcode exactly the same as with the older <i>SetRenderTarget</i> callback. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545772">D3DHAL_DP2SETRENDERTARGET</a>.</p>
+<p>Sets the render target. Direct3D drivers must respond to this opcode exactly the same as with the older <i>SetRenderTarget</i> callback. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setrendertarget.md">D3DHAL_DP2SETRENDERTARGET</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_CLEAR"></a><a id="d3ddp2op_clear"></a><b>D3DDP2OP_CLEAR</b>
 
 <dd>
-<p>Specifies a clear operation. Replaces the <i>Clear</i> and <i>Clear2</i> callbacks. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545441">D3DHAL_DP2CLEAR</a>.</p>
+<p>Specifies a clear operation. Replaces the <i>Clear</i> and <i>Clear2</i> callbacks. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2clear.md">D3DHAL_DP2CLEAR</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_SETTEXLOD"></a><a id="d3ddp2op_settexlod"></a><b>D3DDP2OP_SETTEXLOD</b>
 
 <dd>
-<p>Indicates that the level of detail (LOD) for MIP maps is being set. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545815">D3DHAL_DP2SETTEXLOD</a>.</p>
+<p>Indicates that the level of detail (LOD) for MIP maps is being set. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2settexlod.md">D3DHAL_DP2SETTEXLOD</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_SETCLIPPLANE"></a><a id="d3ddp2op_setclipplane"></a><b>D3DDP2OP_SETCLIPPLANE</b>
 
 <dd>
-<p>Specifies that a user-defined clip plane is being used. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545719">D3DHAL_DP2SETCLIPPLANE</a>.</p>
+<p>Specifies that a user-defined clip plane is being used. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setclipplane.md">D3DHAL_DP2SETCLIPPLANE</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_CREATEVERTEXSHADER"></a><a id="d3ddp2op_createvertexshader"></a><b>D3DDP2OP_CREATEVERTEXSHADER</b>
@@ -351,7 +351,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver when a vertex shader is created. This token gives the driver the opportunity to convert the vertex shader declaration and code into a hardware specific format and associate this information with the given shader handle. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545478">D3DHAL_DP2CREATEVERTEXSHADER</a>.
+### -field This token is sent to the driver when a vertex shader is created. This token gives the driver the opportunity to convert the vertex shader declaration and code into a hardware specific format and associate this information with the given shader handle. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2createvertexshader.md">D3DHAL_DP2CREATEVERTEXSHADER</a>.
 
 </dl>
 </dd>
@@ -366,7 +366,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to notify the driver of the deletion of a vertex shader and to give the driver an opportunity to clean up any driver side resources associated with the given vertex shader. Note that this uses the same structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff545925">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_SETVERTEXSHADER.
+### -field This token is sent to the driver to notify the driver of the deletion of a vertex shader and to give the driver an opportunity to clean up any driver side resources associated with the given vertex shader. Note that this uses the same structure (<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_SETVERTEXSHADER.
 
 </dl>
 </dd>
@@ -381,7 +381,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is passed to the driver to set the current vertex shader. All subsequent drawing operations should use the given shader until another is selected. Note that this uses the same structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff545925">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_DELETEVERTEXSHADER.
+### -field This token is passed to the driver to set the current vertex shader. All subsequent drawing operations should use the given shader until another is selected. Note that this uses the same structure (<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_DELETEVERTEXSHADER.
 
 </dl>
 </dd>
@@ -396,7 +396,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is passed to the driver to set one or more vertex shader constant registers with float values. The constant registers are specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545826">D3DHAL_DP2SETVERTEXSHADERCONST</a> structure. One or more vectors of four single precision floating-point values immediately follow the D3DHAL_DP2SETVERTEXSHADERCONST data structure in the DP2 stream. 
+### -field This token is passed to the driver to set one or more vertex shader constant registers with float values. The constant registers are specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setvertexshaderconst.md">D3DHAL_DP2SETVERTEXSHADERCONST</a> structure. One or more vectors of four single precision floating-point values immediately follow the D3DHAL_DP2SETVERTEXSHADERCONST data structure in the DP2 stream. 
 
 </dl>
 </dd>
@@ -411,7 +411,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Binds a vertex stream source to a vertex buffer. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545798">D3DHAL_DP2SETSTREAMSOURCE</a>.
+### -field Binds a vertex stream source to a vertex buffer. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setstreamsource.md">D3DHAL_DP2SETSTREAMSOURCE</a>.
 
 </dl>
 </dd>
@@ -426,7 +426,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Binds a vertex stream source to a user memory buffer. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545811">D3DHAL_DP2SETSTREAMSOURCEUM</a>.
+### -field Binds a vertex stream source to a user memory buffer. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setstreamsourceum.md">D3DHAL_DP2SETSTREAMSOURCEUM</a>.
 
 </dl>
 </dd>
@@ -441,7 +441,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Sets the current index buffer. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545730">D3DHAL_DP2SETINDICES</a>.
+### -field Sets the current index buffer. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setindices.md">D3DHAL_DP2SETINDICES</a>.
 
 </dl>
 </dd>
@@ -456,7 +456,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to draw nonindexed primitives. D3DDP2OP_DRAWPRIMITIVE2 is used if the vertex data has been transformed by the runtime. The primitives are specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545526">D3DHAL_DP2DRAWPRIMITIVE</a> structures.
+### -field This token is sent to the driver to draw nonindexed primitives. D3DDP2OP_DRAWPRIMITIVE2 is used if the vertex data has been transformed by the runtime. The primitives are specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2drawprimitive.md">D3DHAL_DP2DRAWPRIMITIVE</a> structures.
 
 </dl>
 </dd>
@@ -471,7 +471,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to draw indexed primitives. D3DDP2OP_DRAWINDEXEDPRIMITIVE2 is used if the vertex data has been transformed by the runtime. The indexed primitives are specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545501">D3DHAL_DP2DRAWINDEXEDPRIMITIVE</a> structures.
+### -field This token is sent to the driver to draw indexed primitives. D3DDP2OP_DRAWINDEXEDPRIMITIVE2 is used if the vertex data has been transformed by the runtime. The indexed primitives are specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2drawindexedprimitive.md">D3DHAL_DP2DRAWINDEXEDPRIMITIVE</a> structures.
 
 </dl>
 </dd>
@@ -486,7 +486,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver when a pixel shader is created. This token gives the driver the opportunity to convert the pixel shader code into a hardware specific format and associate this information with the given shader handle. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545467">D3DHAL_DP2CREATEPIXELSHADER</a>.
+### -field This token is sent to the driver when a pixel shader is created. This token gives the driver the opportunity to convert the pixel shader code into a hardware specific format and associate this information with the given shader handle. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2createpixelshader.md">D3DHAL_DP2CREATEPIXELSHADER</a>.
 
 </dl>
 </dd>
@@ -501,7 +501,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to notify the driver of the deletion of a pixel shader and to give the driver an opportunity to clean up any driver side resources associated with the given pixel shader. Note that this uses the same structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff545689">D3DHAL_DP2PIXELSHADER</a>) as D3DDP2OP_SETVPIXELSHADER.
+### -field This token is sent to the driver to notify the driver of the deletion of a pixel shader and to give the driver an opportunity to clean up any driver side resources associated with the given pixel shader. Note that this uses the same structure (<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2pixelshader.md">D3DHAL_DP2PIXELSHADER</a>) as D3DDP2OP_SETVPIXELSHADER.
 
 </dl>
 </dd>
@@ -531,7 +531,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is passed to the driver to set one or more pixel shader constant registers. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545752">D3DHAL_DP2SETPIXELSHADERCONST</a>.
+### -field This token is passed to the driver to set one or more pixel shader constant registers. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setpixelshaderconst.md">D3DHAL_DP2SETPIXELSHADERCONST</a>.
 
 </dl>
 </dd>
@@ -540,7 +540,7 @@ typedef enum _D3DHAL_DP2OPERATION {
 
 <dd>
 <p>
-      DirectX 8.0 and later versions only.This token is sent to the driver to draw transformed, clipped triangle fans. This token is a replacement for the DirectX 7.0 tokens that used inline vertices in the command stream. The triangle fans are specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff544733">D3DHAL_CLIPPEDTRIANGLEFAN</a> structures.</p>
+      DirectX 8.0 and later versions only.This token is sent to the driver to draw transformed, clipped triangle fans. This token is a replacement for the DirectX 7.0 tokens that used inline vertices in the command stream. The triangle fans are specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-clippedtrianglefan.md">D3DHAL_CLIPPEDTRIANGLEFAN</a> structures.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_DRAWPRIMITIVE2"></a><a id="d3ddp2op_drawprimitive2"></a><b>D3DDP2OP_DRAWPRIMITIVE2</b>
@@ -553,7 +553,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to draw nonindexed primitives where the vertex data has been transformed by the runtime. Stream zero contains transform and lit vertices and is the only stream that should be accessed. The primitives are specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545535">D3DHAL_DP2DRAWPRIMITIVE2</a> structures.
+### -field This token is sent to the driver to draw nonindexed primitives where the vertex data has been transformed by the runtime. Stream zero contains transform and lit vertices and is the only stream that should be accessed. The primitives are specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2drawprimitive2.md">D3DHAL_DP2DRAWPRIMITIVE2</a> structures.
 
 </dl>
 </dd>
@@ -568,7 +568,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to draw indexed primitives if the vertex data has been transformed by the runtime. Stream zero contains transform and lit vertices and is the only stream that should be accessed. The indexed primitives are specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545517">D3DHAL_DP2DRAWINDEXEDPRIMITIVE2</a> structures.
+### -field This token is sent to the driver to draw indexed primitives if the vertex data has been transformed by the runtime. Stream zero contains transform and lit vertices and is the only stream that should be accessed. The indexed primitives are specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2drawindexedprimitive2.md">D3DHAL_DP2DRAWINDEXEDPRIMITIVE2</a> structures.
 
 </dl>
 </dd>
@@ -583,7 +583,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to draw a new rectangular patch, to draw a cached rectangular patch, or to update the specification of a previously defined patch. The patches are specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545539">D3DHAL_DP2DRAWRECTPATCH</a> structures.
+### -field This token is sent to the driver to draw a new rectangular patch, to draw a cached rectangular patch, or to update the specification of a previously defined patch. The patches are specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2drawrectpatch.md">D3DHAL_DP2DRAWRECTPATCH</a> structures.
 
 </dl>
 </dd>
@@ -598,7 +598,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to draw a new triangular patch, to draw a cached triangular patch, or to update the specification of a previously defined patch. The patches are specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545543">D3DHAL_DP2DRAWTRIPATCH</a> structures.
+### -field This token is sent to the driver to draw a new triangular patch, to draw a cached triangular patch, or to update the specification of a previously defined patch. The patches are specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2drawtripatch.md">D3DHAL_DP2DRAWTRIPATCH</a> structures.
 
 </dl>
 </dd>
@@ -613,7 +613,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Specifies a blt operation from a source volume texture to a destination volume texture. It is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545937">D3DHAL_DP2VOLUMEBLT</a> structures.
+### -field Specifies a blt operation from a source volume texture to a destination volume texture. It is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2volumeblt.md">D3DHAL_DP2VOLUMEBLT</a> structures.
 
 </dl>
 </dd>
@@ -628,7 +628,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Specifies a blt operation from a source vertex or index buffer to a destination vertex or index buffer. It is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545434">D3DHAL_DP2BUFFERBLT</a> structures.
+### -field Specifies a blt operation from a source vertex or index buffer to a destination vertex or index buffer. It is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2bufferblt.md">D3DHAL_DP2BUFFERBLT</a> structures.
 
 </dl>
 </dd>
@@ -637,7 +637,7 @@ typedef enum _D3DHAL_DP2OPERATION {
 
 <dd>
 <p>
-      DirectX 8.0 and later versions only. Multiplies a current transform. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545664">D3DHAL_DP2MULTIPLYTRANSFORM</a>.</p>
+      DirectX 8.0 and later versions only. Multiplies a current transform. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2multiplytransform.md">D3DHAL_DP2MULTIPLYTRANSFORM</a>.</p>
 </dd>
 
 ### -field <a id="D3DDP2OP_ADDDIRTYRECT"></a><a id="d3ddp2op_adddirtyrect"></a><b>D3DDP2OP_ADDDIRTYRECT</b>
@@ -650,7 +650,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Specifies that a portion of a 2D resource--a 2D texture or cube texture--was dirtied in system memory. This 2D texture is specified in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545419">D3DHAL_DP2ADDDIRTYRECT</a> structure. This 2D texture must be reloaded into video memory before being used.
+### -field Specifies that a portion of a 2D resource--a 2D texture or cube texture--was dirtied in system memory. This 2D texture is specified in a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2adddirtyrect.md">D3DHAL_DP2ADDDIRTYRECT</a> structure. This 2D texture must be reloaded into video memory before being used.
 
 </dl>
 </dd>
@@ -665,7 +665,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Specifies that a portion of a 3D resource--a volume texture--was dirtied in system memory. This volume texture is specified in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544760">D3DHAL_DP2ADDDIRTYBOX</a> structure. This volume must be reloaded into video memory before being used.
+### -field Specifies that a portion of a 3D resource--a volume texture--was dirtied in system memory. This volume texture is specified in a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2adddirtybox.md">D3DHAL_DP2ADDDIRTYBOX</a> structure. This volume must be reloaded into video memory before being used.
 
 </dl>
 </dd>
@@ -680,7 +680,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver when a vertex shader declaration is created. This token gives the driver the opportunity to convert the vertex shader declaration into a hardware specific format and associate this information with the given shader handle. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545480">D3DHAL_DP2CREATEVERTEXSHADERDECL</a>.
+### -field This token is sent to the driver when a vertex shader declaration is created. This token gives the driver the opportunity to convert the vertex shader declaration into a hardware specific format and associate this information with the given shader handle. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2createvertexshaderdecl.md">D3DHAL_DP2CREATEVERTEXSHADERDECL</a>.
 
 </dl>
 </dd>
@@ -695,7 +695,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to notify the driver of the deletion of a vertex shader declaration and to give the driver an opportunity to clean up any driver side resources associated with the given vertex shader declaration. Note that this uses the same structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff545925">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_DELETEVERTEXSHADER and D3DDP2OP_SETVERTEXSHADERDECL.
+### -field This token is sent to the driver to notify the driver of the deletion of a vertex shader declaration and to give the driver an opportunity to clean up any driver side resources associated with the given vertex shader declaration. Note that this uses the same structure (<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_DELETEVERTEXSHADER and D3DDP2OP_SETVERTEXSHADERDECL.
 
 </dl>
 </dd>
@@ -710,7 +710,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is passed to the driver to set the current vertex shader declaration. All subsequent drawing operations should use the given shader declaration until another is selected. Note that this uses the same structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff545925">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_SETVERTEXSHADER and D3DDP2OP_DELETEVERTEXSHADERDECL.
+### -field This token is passed to the driver to set the current vertex shader declaration. All subsequent drawing operations should use the given shader declaration until another is selected. Note that this uses the same structure (<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_SETVERTEXSHADER and D3DDP2OP_DELETEVERTEXSHADERDECL.
 
 </dl>
 </dd>
@@ -725,7 +725,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver when a vertex shader function is created. This token gives the driver the opportunity to convert the vertex shader code into a hardware specific format and associate this information with the given shader handle. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545490">D3DHAL_DP2CREATEVERTEXSHADERFUNC</a>.
+### -field This token is sent to the driver when a vertex shader function is created. This token gives the driver the opportunity to convert the vertex shader code into a hardware specific format and associate this information with the given shader handle. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2createvertexshaderfunc.md">D3DHAL_DP2CREATEVERTEXSHADERFUNC</a>.
 
 </dl>
 </dd>
@@ -740,7 +740,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to notify the driver of the deletion of a vertex shader function and to give the driver an opportunity to clean up any driver side resources associated with the given vertex shader function. Note that this uses the same structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff545925">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_DELETEVERTEXSHADER and D3DDP2OP_SETVERTEXSHADERFUNC.
+### -field This token is sent to the driver to notify the driver of the deletion of a vertex shader function and to give the driver an opportunity to clean up any driver side resources associated with the given vertex shader function. Note that this uses the same structure (<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_DELETEVERTEXSHADER and D3DDP2OP_SETVERTEXSHADERFUNC.
 
 </dl>
 </dd>
@@ -755,7 +755,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is passed to the driver to set the current vertex shader function. All subsequent drawing operations should use the given shader function until another is selected. Note that this uses the same structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff545925">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_SETVERTEXSHADER and D3DDP2OP_DELETEVERTEXSHADERFUNC.
+### -field This token is passed to the driver to set the current vertex shader function. All subsequent drawing operations should use the given shader function until another is selected. Note that this uses the same structure (<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>) as D3DDP2OP_SETVERTEXSHADER and D3DDP2OP_DELETEVERTEXSHADERFUNC.
 
 </dl>
 </dd>
@@ -770,7 +770,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is passed to the driver to set one or more vertex shader constant registers with integer values. The constant registers are specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545826">D3DHAL_DP2SETVERTEXSHADERCONST</a> structure. One or more vectors of four integer values immediately follow the D3DHAL_DP2SETVERTEXSHADERCONST data structure in the DP2 stream. 
+### -field This token is passed to the driver to set one or more vertex shader constant registers with integer values. The constant registers are specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setvertexshaderconst.md">D3DHAL_DP2SETVERTEXSHADERCONST</a> structure. One or more vectors of four integer values immediately follow the D3DHAL_DP2SETVERTEXSHADERCONST data structure in the DP2 stream. 
 
 </dl>
 </dd>
@@ -800,7 +800,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Binds a portion of a vertex stream source to a vertex buffer. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545801">D3DHAL_DP2SETSTREAMSOURCE2</a>.
+### -field Binds a portion of a vertex stream source to a vertex buffer. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setstreamsource2.md">D3DHAL_DP2SETSTREAMSOURCE2</a>.
 
 </dl>
 </dd>
@@ -815,7 +815,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Specifies a blt operation from a source surface to a destination surface. It is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545426">D3DHAL_DP2BLT</a> structures.
+### -field Specifies a blt operation from a source surface to a destination surface. It is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2blt.md">D3DHAL_DP2BLT</a> structures.
 
 </dl>
 </dd>
@@ -830,7 +830,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Specifies a color-fill operation. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545450">D3DHAL_DP2COLORFILL</a>.
+### -field Specifies a color-fill operation. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2colorfill.md">D3DHAL_DP2COLORFILL</a>.
 
 </dl>
 </dd>
@@ -845,7 +845,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is passed to the driver to set one or more vertex shader constant registers with Boolean values. The constant registers are specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545826">D3DHAL_DP2SETVERTEXSHADERCONST</a> structure. An array of one or more Boolean values immediately follow the D3DHAL_DP2SETVERTEXSHADERCONST data structure in the DP2 stream. 
+### -field This token is passed to the driver to set one or more vertex shader constant registers with Boolean values. The constant registers are specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setvertexshaderconst.md">D3DHAL_DP2SETVERTEXSHADERCONST</a> structure. An array of one or more Boolean values immediately follow the D3DHAL_DP2SETVERTEXSHADERCONST data structure in the DP2 stream. 
 
 </dl>
 </dd>
@@ -860,7 +860,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to create driver-side resources for queries that the runtime subsequently issues for processing. The queries are specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545469">D3DHAL_DP2CREATEQUERY</a> structures. Before the runtime can request to create queries, the runtime must first send D3DGDI2_TYPE_GETD3DQUERYCOUNT and D3DGDI2_TYPE_GETD3DQUERYGetDriverInfo2 requests to determine if the driver supports any query types. For more information about GetDriverInfo2, see <a href="https://msdn.microsoft.com/5e2dd363-9e72-4674-940e-8b4f06f6eb14">Supporting GetDriverInfo2</a>.
+### -field This token is sent to the driver to create driver-side resources for queries that the runtime subsequently issues for processing. The queries are specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2createquery.md">D3DHAL_DP2CREATEQUERY</a> structures. Before the runtime can request to create queries, the runtime must first send D3DGDI2_TYPE_GETD3DQUERYCOUNT and D3DGDI2_TYPE_GETD3DQUERYGetDriverInfo2 requests to determine if the driver supports any query types. For more information about GetDriverInfo2, see <a href="https://msdn.microsoft.com/5e2dd363-9e72-4674-940e-8b4f06f6eb14">Supporting GetDriverInfo2</a>.
 
 </dl>
 </dd>
@@ -875,7 +875,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Sets a portion of the render target. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545785">D3DHAL_DP2SETRENDERTARGET2</a>.
+### -field Sets a portion of the render target. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setrendertarget2.md">D3DHAL_DP2SETRENDERTARGET2</a>.
 
 </dl>
 </dd>
@@ -890,7 +890,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Sets a new depth buffer in the driver's current context. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545724">D3DHAL_DP2SETDEPTHSTENCIL</a> structure.
+### -field Sets a new depth buffer in the driver's current context. See the <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setdepthstencil.md">D3DHAL_DP2SETDEPTHSTENCIL</a> structure.
 
 </dl>
 </dd>
@@ -920,7 +920,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is returned by the driver in a response buffer and indicates the presence of query data in the response buffer. The driver specifies one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545714">D3DHAL_DP2RESPONSEQUERY</a> structures that identify previously issued queries and specify the size of the data related to the queries. Each D3DHAL_DP2RESPONSEQUERY is followed by its query data. 
+### -field This token is returned by the driver in a response buffer and indicates the presence of query data in the response buffer. The driver specifies one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2responsequery.md">D3DHAL_DP2RESPONSEQUERY</a> structures that identify previously issued queries and specify the size of the data related to the queries. Each D3DHAL_DP2RESPONSEQUERY is followed by its query data. 
 
 </dl>
 </dd>
@@ -935,7 +935,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Notifies the driver to automatically regenerate the sublevels of a mipmap texture using a specific filter type. This notification is specified with a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545570">D3DHAL_DP2GENERATEMIPSUBLEVELS</a> structure. The driver receives this notification after performing some other operation that only accesses the top level of the mipmap texture. For example, a blit operation.
+### -field Notifies the driver to automatically regenerate the sublevels of a mipmap texture using a specific filter type. This notification is specified with a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2generatemipsublevels.md">D3DHAL_DP2GENERATEMIPSUBLEVELS</a> structure. The driver receives this notification after performing some other operation that only accesses the top level of the mipmap texture. For example, a blit operation.
 
 </dl>
 </dd>
@@ -950,7 +950,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is sent to the driver to notify the driver of the deletion of queries and to give the driver an opportunity to clean up any driver-side resources associated with those queries. This notification is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545495">D3DHAL_DP2DELETEQUERY</a> structures. 
+### -field This token is sent to the driver to notify the driver of the deletion of queries and to give the driver an opportunity to clean up any driver-side resources associated with those queries. This notification is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2deletequery.md">D3DHAL_DP2DELETEQUERY</a> structures. 
 
 </dl>
 </dd>
@@ -965,7 +965,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token requests that the driver process previously created queries. This request is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545638">D3DHAL_DP2ISSUEQUERY</a> structures.
+### -field This token requests that the driver process previously created queries. This request is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2issuequery.md">D3DHAL_DP2ISSUEQUERY</a> structures.
 
 </dl>
 </dd>
@@ -980,7 +980,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is passed to the driver to set one or more pixel shader constant registers with integer values. The constant registers are specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545752">D3DHAL_DP2SETPIXELSHADERCONST</a> structure. One or more vectors of four integer values immediately follow the D3DHAL_DP2SETPIXELSHADERCONST data structure in the DP2 stream. 
+### -field This token is passed to the driver to set one or more pixel shader constant registers with integer values. The constant registers are specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setpixelshaderconst.md">D3DHAL_DP2SETPIXELSHADERCONST</a> structure. One or more vectors of four integer values immediately follow the D3DHAL_DP2SETPIXELSHADERCONST data structure in the DP2 stream. 
 
 </dl>
 </dd>
@@ -995,7 +995,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field This token is passed to the driver to set one or more pixel shader constant registers with Boolean values. The constant registers are specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545752">D3DHAL_DP2SETPIXELSHADERCONST</a> structure. An array of one or more Boolean values immediately follow the D3DHAL_DP2SETPIXELSHADERCONST data structure in the DP2 stream. 
+### -field This token is passed to the driver to set one or more pixel shader constant registers with Boolean values. The constant registers are specified by a <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setpixelshaderconst.md">D3DHAL_DP2SETPIXELSHADERCONST</a> structure. An array of one or more Boolean values immediately follow the D3DHAL_DP2SETPIXELSHADERCONST data structure in the DP2 stream. 
 
 </dl>
 </dd>
@@ -1010,7 +1010,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Sets the frequency divisor of a stream source that is bound to a vertex buffer. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545807">D3DHAL_DP2SETSTREAMSOURCEFREQ</a>.
+### -field Sets the frequency divisor of a stream source that is bound to a vertex buffer. See <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setstreamsourcefreq.md">D3DHAL_DP2SETSTREAMSOURCEFREQ</a>.
 
 </dl>
 </dd>
@@ -1025,7 +1025,7 @@ typedef enum _D3DHAL_DP2OPERATION {
       
 
 
-### -field Specifies a blt operation from a source system memory surface to a destination video memory surface. It is specified by one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff545858">D3DHAL_DP2SURFACEBLT</a> structures.
+### -field Specifies a blt operation from a source system memory surface to a destination video memory surface. It is specified by one or more <a href="..\d3dhal\ns-d3dhal--d3dhal-dp2surfaceblt.md">D3DHAL_DP2SURFACEBLT</a> structures.
 
 </dl>
 </dd>
@@ -1062,10 +1062,6 @@ typedef enum _D3DHAL_DP2OPERATION {
 </dl>
 
 ## -remarks
-<p>Note that because the D3DNTDP2OP_<i>XXX</i> enumerators are type defined as D3DDP2OP_<i>XXX</i> internally in the <i>Dx95type.h</i> file of the Windows Driver Kit (WDK), the shorter form is used here for clarity. Either form is valid on Windows 2000 and later implementations, but only the shorter form can be used on Windows 98/Me.</p>
-
-<p>Note that because the D3DNTDP2OP_<i>XXX</i> enumerators are type defined as D3DDP2OP_<i>XXX</i> internally in the <i>Dx95type.h</i> file of the Windows Driver Kit (WDK), the shorter form is used here for clarity. Either form is valid on Windows 2000 and later implementations, but only the shorter form can be used on Windows 98/Me.</p>
-
 <p>Note that because the D3DNTDP2OP_<i>XXX</i> enumerators are type defined as D3DDP2OP_<i>XXX</i> internally in the <i>Dx95type.h</i> file of the Windows Driver Kit (WDK), the shorter form is used here for clarity. Either form is valid on Windows 2000 and later implementations, but only the shorter form can be used on Windows 98/Me.</p>
 
 ## -requirements

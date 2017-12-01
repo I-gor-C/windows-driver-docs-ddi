@@ -7,7 +7,7 @@ old-location: debugger\debug_last_event_info_exception.htm
 old-project: debugger
 ms.assetid: FB4EBA71-5144-440A-AFD1-7460903C9189
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_LAST_EVENT_INFO_EXCEPTION, DEBUG_LAST_EVENT_INFO_EXCEPTION, *PDEBUG_LAST_EVENT_INFO_EXCEPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices

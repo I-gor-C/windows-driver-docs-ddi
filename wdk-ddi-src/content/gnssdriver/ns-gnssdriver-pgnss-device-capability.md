@@ -7,7 +7,7 @@ old-location: sensors\gnss_device_capability.htm
 old-project: sensors
 ms.assetid: F8FA91AC-9085-4C25-8798-CEB9ADB34320
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_DEVICE_CAPABILITY, GNSS_DEVICE_CAPABILITY, *PGNSS_DEVICE_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices

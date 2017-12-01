@@ -82,11 +82,7 @@ HRESULT RawReadData(
 ## -remarks
 <p>A still image minidriver typically implements this method by calling <b>ReadFile</b> (described in the Windows SDK documentation).</p>
 
-<p>For USB devices, better performance can be achieved if read requests are aligned to maximum packet size boundaries. Maximum packet sizes can be obtained by calling <a href="base.deviceiocontrol">DeviceIoControl</a>, specifying the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542849">IOCTL_GET_CHANNEL_ALIGN_RQST</a> I/O control code.</p>
-
-<p>A still image minidriver typically implements this method by calling <b>ReadFile</b> (described in the Windows SDK documentation).</p>
-
-<p>For USB devices, better performance can be achieved if read requests are aligned to maximum packet size boundaries. Maximum packet sizes can be obtained by calling <a href="base.deviceiocontrol">DeviceIoControl</a>, specifying the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542849">IOCTL_GET_CHANNEL_ALIGN_RQST</a> I/O control code.</p>
+<p>For USB devices, better performance can be achieved if read requests are aligned to maximum packet size boundaries. Maximum packet sizes can be obtained by calling <a href="base.deviceiocontrol">DeviceIoControl</a>, specifying the <a href="..\usbscan\ni-usbscan-ioctl-get-channel-align-rqst.md">IOCTL_GET_CHANNEL_ALIGN_RQST</a> I/O control code.</p>
 
 ## -requirements
 <table>
@@ -115,7 +111,7 @@ HRESULT RawReadData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543760">IStiDevice::RawReadData</a>
+<a href="image.istidevice_rawreaddata">IStiDevice::RawReadData</a>
 </dt>
 </dl>
 <p> </p>

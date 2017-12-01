@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff562679">SplPromptUIInUsersSession</a> function uses the SHOWUIPARAMS structure to hold information about the appearance and behavior of a message box.</p>
+<p>The <a href="..\winsplp\nf-winsplp-splpromptuiinuserssession.md">SplPromptUIInUsersSession</a> function uses the SHOWUIPARAMS structure to hold information about the appearance and behavior of a message box.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct {
 ### -field <b>MessageBoxParams</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556545">MESSAGEBOX_PARAMS</a> structure that contains the information about the message box.</p>
+<p>Specifies a <a href="print.messagebox_params">MESSAGEBOX_PARAMS</a> structure that contains the information about the message box.</p>
 </dd>
 </dl>
 
@@ -97,10 +97,10 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562679">SplPromptUIInUsersSession</a>
+<a href="..\winsplp\nf-winsplp-splpromptuiinuserssession.md">SplPromptUIInUsersSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556545">MESSAGEBOX_PARAMS</a>
+<a href="print.messagebox_params">MESSAGEBOX_PARAMS</a>
 </dt>
 </dl>
 <p> </p>

@@ -61,7 +61,7 @@ NTSTATUS __stdcall HidP_InitializeReportForID(
 ### -param <i>ReportType</i> [in]
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator that indicates the type of HID report located at <i>Report</i>.</p>
+<p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator that indicates the type of HID report located at <i>Report</i>.</p>
 </dd>
 
 ### -param <i>ReportID</i> [in]
@@ -85,7 +85,7 @@ NTSTATUS __stdcall HidP_InitializeReportForID(
 ### -param <i>ReportLength</i> [in]
 
 <dd>
-<p>Specifies the size, in bytes, of the HID report located at <i>Report</i>. <i>ReportLength</i> must be equal to the collection's report length for the specified report type, as specified by the <i>Xxx</i><b>ReportByteLength</b> members of a collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.</p>
+<p>Specifies the size, in bytes, of the HID report located at <i>Report</i>. <i>ReportLength</i> must be equal to the collection's report length for the specified report type, as specified by the <i>Xxx</i><b>ReportByteLength</b> members of a collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
 </dd>
 </dl>
 
@@ -105,16 +105,6 @@ NTSTATUS __stdcall HidP_InitializeReportForID(
 <p> </p>
 
 ## -remarks
-<p>Initializing a HID report sets all control data to zero or a control's <i>null value</i>, as defined by the USB HID standard. (Sending or receiving a null value indicates that the current value of a control should not be modified.)</p>
-
-<p><b>HidP_InitializeReportForID</b> does the following:</p>
-
-<p>Sets to zero the bitfields of all buttons and values without null values.</p>
-
-<p>Sets the bitfield of all controls with null values to their corresponding null value.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
 <p>Initializing a HID report sets all control data to zero or a control's <i>null value</i>, as defined by the USB HID standard. (Sending or receiving a null value indicates that the current value of a control should not be modified.)</p>
 
 <p><b>HidP_InitializeReportForID</b> does the following:</p>
@@ -181,13 +171,13 @@ NTSTATUS __stdcall HidP_InitializeReportForID(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a>
+<a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a>
+<a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a>
 </dt>
 </dl>
 <p> </p>

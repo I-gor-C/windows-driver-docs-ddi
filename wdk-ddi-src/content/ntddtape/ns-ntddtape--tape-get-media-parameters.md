@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The TAPE_GET_MEDIA_PARAMETERS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567937">TapeMiniGetMediaParameters</a> routine to retrieve tape media parameters. </p>
+<p>The TAPE_GET_MEDIA_PARAMETERS structure is used in conjunction with the <a href="storage.tapeminigetmediaparameters">TapeMiniGetMediaParameters</a> routine to retrieve tape media parameters. </p>
 
 
 ## -syntax
@@ -109,7 +109,7 @@ typedef struct _TAPE_GET_MEDIA_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567937">TapeMiniGetMediaParameters</a>
+<a href="storage.tapeminigetmediaparameters">TapeMiniGetMediaParameters</a>
 </dt>
 </dl>
 <p> </p>

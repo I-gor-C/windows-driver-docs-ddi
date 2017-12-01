@@ -7,7 +7,7 @@ old-location: netvista\ndisallocateioworkitem.htm
 old-project: netvista
 ms.assetid: 54977838-381e-4c86-a6ca-646202fdc619
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisAllocateIoWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,69 +78,24 @@ NDIS_HANDLE NdisAllocateIoWorkItem(
 
 <p>NDIS filter drivers can pass 
     <b>NdisAllocateIoWorkItem</b> the filter driver handle that NDIS returned when the filter driver called 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562608">NdisFRegisterFilterDriver</a>.</p>
+    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>.</p>
 
 <p>NDIS miniport drivers and filter drivers can also pass 
     <b>NdisAllocateIoWorkItem</b> the NDIS device handle that NDIS returned when the driver called 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564518">NdisRegisterDeviceEx</a>. 
+    <a href="..\ndis\nf-ndis-ndisregisterdeviceex.md">NdisRegisterDeviceEx</a>. 
     <b>NdisAllocateIoWorkItem</b> gets the device object or driver object that is associated with the handle
     and passes the device object or driver object to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff548276">IoAllocateWorkItem</a> function.</p>
+    <a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a> function.</p>
 
 <p>NDIS drivers call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563775">NdisQueueIoWorkItem</a> function to queue
+    <a href="..\ndis\nf-ndis-ndisqueueioworkitem.md">NdisQueueIoWorkItem</a> function to queue
     work items. After a driver calls 
     <b>NdisQueueIoWorkItem</b>, NDIS calls the driver-specified callback function at IRQL = PASSIVE_LEVEL.
     This can improve system performance by allowing the current function to end immediately and the driver to
     do work later at a lower IRQL.</p>
 
 <p>NDIS drivers must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561855">NdisFreeIoWorkItem</a> function to free the
-    resources associated with a work item that 
-    <b>NdisAllocateIoWorkItem</b> allocated.</p>
-
-<p>Drivers can call
-    <b>NdisFreeIoWorkItem</b> in the callback routine that is passed to 
-    <b>NdisQueueIoWorkItem</b>.</p>
-
-<p>If a miniport driver used the handle that NDIS passed to 
-    <i>MiniportInitializeEx</i> when it called 
-    <b>NdisAllocateIoWorkItem</b>, the work item must be freed before or in the call to the drivers 
-    <a href="..\ndis\nc-ndis-miniport-halt.md">MiniportHaltEx</a> function.</p>
-
-<p>If a miniport driver used the handle that 
-    <b>NdisMRegisterMiniportDriver</b> returned when the driver called 
-    <b>NdisAllocateIoWorkItem</b>, the driver must free the work item before the driver unloads.</p>
-
-<p>In general, a driver must free the work item before the driver unloads.</p>
-
-<p>NDIS miniport drivers pass 
-    <b>NdisAllocateIoWorkItem</b> either of two handles: the adapter handle that NDIS passed to the 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function or
-    the miniport driver handle that NDIS returned when the miniport driver called 
-    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
-    NdisMRegisterMiniportDriver</a>.</p>
-
-<p>NDIS filter drivers can pass 
-    <b>NdisAllocateIoWorkItem</b> the filter driver handle that NDIS returned when the filter driver called 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562608">NdisFRegisterFilterDriver</a>.</p>
-
-<p>NDIS miniport drivers and filter drivers can also pass 
-    <b>NdisAllocateIoWorkItem</b> the NDIS device handle that NDIS returned when the driver called 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564518">NdisRegisterDeviceEx</a>. 
-    <b>NdisAllocateIoWorkItem</b> gets the device object or driver object that is associated with the handle
-    and passes the device object or driver object to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff548276">IoAllocateWorkItem</a> function.</p>
-
-<p>NDIS drivers call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563775">NdisQueueIoWorkItem</a> function to queue
-    work items. After a driver calls 
-    <b>NdisQueueIoWorkItem</b>, NDIS calls the driver-specified callback function at IRQL = PASSIVE_LEVEL.
-    This can improve system performance by allowing the current function to end immediately and the driver to
-    do work later at a lower IRQL.</p>
-
-<p>NDIS drivers must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561855">NdisFreeIoWorkItem</a> function to free the
+    <a href="..\ndis\nf-ndis-ndisfreeioworkitem.md">NdisFreeIoWorkItem</a> function to free the
     resources associated with a work item that 
     <b>NdisAllocateIoWorkItem</b> allocated.</p>
 
@@ -212,7 +167,7 @@ NDIS_HANDLE NdisAllocateIoWorkItem(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975103">Init_NdisAllocateIoWorkItem</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
+<a href="devtest.ndis_init_ndisallocateioworkitem">Init_NdisAllocateIoWorkItem</a>, <a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -220,7 +175,7 @@ NDIS_HANDLE NdisAllocateIoWorkItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548276">IoAllocateWorkItem</a>
+<a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
@@ -229,19 +184,19 @@ NDIS_HANDLE NdisAllocateIoWorkItem(
 <a href="..\ndis\nc-ndis-miniport-halt.md">MiniportHaltEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561855">NdisFreeIoWorkItem</a>
+<a href="..\ndis\nf-ndis-ndisfreeioworkitem.md">NdisFreeIoWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562608">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563775">NdisQueueIoWorkItem</a>
+<a href="..\ndis\nf-ndis-ndisqueueioworkitem.md">NdisQueueIoWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564518">NdisRegisterDeviceEx</a>
+<a href="..\ndis\nf-ndis-ndisregisterdeviceex.md">NdisRegisterDeviceEx</a>
 </dt>
 <dt>
 <a href="NULL">NDIS I/O Work Items</a>
@@ -249,4 +204,4 @@ NDIS_HANDLE NdisAllocateIoWorkItem(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateIoWorkItem function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateIoWorkItem function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

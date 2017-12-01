@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>StorPortFreePool</b> routine frees a block of memory that was previously allocated by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567031">StorPortAllocatePool</a> routine.</p>
+<p>The <b>StorPortFreePool</b> routine frees a block of memory that was previously allocated by a call to the <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a> routine.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ ULONG StorPortFreePool(
 ### -param <i>BufferPointer</i> [in]
 
 <dd>
-<p>A pointer to the block of memory to free. This must be a pointer that was returned by a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567031">StorPortAllocatePool</a> routine.</p>
+<p>A pointer to the block of memory to free. This must be a pointer that was returned by a previous call to the <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a> routine.</p>
 </dd>
 </dl>
 
@@ -120,7 +120,7 @@ ULONG StorPortFreePool(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454259">StorPortAllocatePool2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
+<a href="devtest.storport_storportallocatepool2">StorPortAllocatePool2</a>, <a href="devtest.storport_storportirql">StorPortIrql</a>
 </td>
 </tr>
 </table>
@@ -128,7 +128,7 @@ ULONG StorPortFreePool(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567031">StorPortAllocatePool</a>
+<a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a>
 </dt>
 </dl>
 <p> </p>

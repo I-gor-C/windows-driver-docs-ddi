@@ -68,11 +68,7 @@ VOID VideoPortAcquireDeviceLock(
 ## -remarks
 <p>Typically, the video port driver guarantees threaded synchronization into the miniport driver through the use of a device lock. However, a miniport driver must perform its own synchronization when being accessed by a child device. That is, a miniport driver must perform synchronization in routines that it exposes through <a href="..\video\nc-video-pvideo-hw-query-interface.md">HwVidQueryInterface</a> by acquiring the device lock maintained by the video port driver.</p>
 
-<p>The miniport driver should release the device lock as quickly as possible by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff570356">VideoPortReleaseDeviceLock</a>.</p>
-
-<p>Typically, the video port driver guarantees threaded synchronization into the miniport driver through the use of a device lock. However, a miniport driver must perform its own synchronization when being accessed by a child device. That is, a miniport driver must perform synchronization in routines that it exposes through <a href="..\video\nc-video-pvideo-hw-query-interface.md">HwVidQueryInterface</a> by acquiring the device lock maintained by the video port driver.</p>
-
-<p>The miniport driver should release the device lock as quickly as possible by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff570356">VideoPortReleaseDeviceLock</a>.</p>
+<p>The miniport driver should release the device lock as quickly as possible by calling <a href="..\video\nf-video-videoportreleasedevicelock.md">VideoPortReleaseDeviceLock</a>.</p>
 
 ## -requirements
 <table>
@@ -140,7 +136,7 @@ VOID VideoPortAcquireDeviceLock(
 <a href="..\video\nc-video-pvideo-hw-query-interface.md">HwVidQueryInterface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570356">VideoPortReleaseDeviceLock</a>
+<a href="..\video\nf-video-videoportreleasedevicelock.md">VideoPortReleaseDeviceLock</a>
 </dt>
 </dl>
 <p> </p>

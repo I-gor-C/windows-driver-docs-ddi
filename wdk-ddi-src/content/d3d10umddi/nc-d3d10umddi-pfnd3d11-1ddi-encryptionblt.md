@@ -73,7 +73,7 @@ VOID APIENTRY* EncryptionBlt(
 ### -param <i>hCryptoSession</i> [in]
 
 <dd>
-<p>A handle to the driver's private data for the cryptographic session. This handle was created by the Direct3D runtime and passed to the driver in the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function.</p>
+<p>A handle to the driver's private data for the cryptographic session. This handle was created by the Direct3D runtime and passed to the driver in the call to the <a href="display.createcryptosession1">CreateCryptoSession</a> function.</p>
 </dd>
 
 ### -param <i>hSrcResource</i> [in]
@@ -132,36 +132,7 @@ VOID APIENTRY* EncryptionBlt(
 <p>The function does not support stretching or color space conversion. 
 </p>
 
-<p>For 128-bit AES-CTR encryption, the <i>pIV</i> parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406334">D3D11_1DDI_AES_CTR_IV</a> structure that is allocated by the application. However, the actual contents of this structure are filled in by the driver or graphics adapter.  When the first IV is generated, the driver or adapter  initializes the <b>IV</b> member of this structure to a random number. For each subsequent IV, the caller increments the <b>IV</b> member, ensuring that the value always increases. This procedure enables the application to validate that the same IV is never used more than once with the same key pair.
-
-</p>
-
-<p>For other encryption types, a different structure might be used, or the encryption might not use an IV.
-
-</p>
-
-<p>This function has the following limitations:
-
-</p>
-
-<p>The function cannot read back subrectangles or partially encrypted surfaces. 
-</p>
-
-<p>The function cannot read back partially encrypted buffers. Many hardware-based encryption solutions will not allow nonencrypted reads from protected memory.</p>
-
-<p>The protected surface must be either an off-screen plain surface or a render target. 
-</p>
-
-<p>The destination surface must be a system-memory surface that was created by using the proper alignment, as described earlier. 
-</p>
-
-<p>The protected surface cannot be multisampled. 
-</p>
-
-<p>The function does not support stretching or color space conversion. 
-</p>
-
-<p>For 128-bit AES-CTR encryption, the <i>pIV</i> parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406334">D3D11_1DDI_AES_CTR_IV</a> structure that is allocated by the application. However, the actual contents of this structure are filled in by the driver or graphics adapter.  When the first IV is generated, the driver or adapter  initializes the <b>IV</b> member of this structure to a random number. For each subsequent IV, the caller increments the <b>IV</b> member, ensuring that the value always increases. This procedure enables the application to validate that the same IV is never used more than once with the same key pair.
+<p>For 128-bit AES-CTR encryption, the <i>pIV</i> parameter points to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-aes-ctr-iv.md">D3D11_1DDI_AES_CTR_IV</a> structure that is allocated by the application. However, the actual contents of this structure are filled in by the driver or graphics adapter.  When the first IV is generated, the driver or adapter  initializes the <b>IV</b> member of this structure to a random number. For each subsequent IV, the caller increments the <b>IV</b> member, ensuring that the value always increases. This procedure enables the application to validate that the same IV is never used more than once with the same key pair.
 
 </p>
 
@@ -212,10 +183,10 @@ VOID APIENTRY* EncryptionBlt(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406334">D3D11_1DDI_AES_CTR_IV</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-aes-ctr-iv.md">D3D11_1DDI_AES_CTR_IV</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a>
+<a href="display.createcryptosession1">CreateCryptoSession</a>
 </dt>
 </dl>
 <p> </p>

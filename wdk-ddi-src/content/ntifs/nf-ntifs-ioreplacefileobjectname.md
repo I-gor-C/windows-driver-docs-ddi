@@ -89,10 +89,6 @@ NTSTATUS IoReplaceFileObjectName(
 
 <p>This routine should be used to replace the file object name instead of doing so manually to allow the kernel to manage the lifetime of the name correctly.</p>
 
-<p>Drivers should use <b>IoReplaceFileObjectName</b> to safely replace the name in a file object. This allows the I/O manager to control the lifetime of the buffer associated with the file object. Replacing a file object name directly without using <b>IoReplaceFileObjectName</b> may conflict with other uses of the name and should be avoided when possible.</p>
-
-<p>This routine should be used to replace the file object name instead of doing so manually to allow the kernel to manage the lifetime of the name correctly.</p>
-
 ## -requirements
 <table>
 <tr>

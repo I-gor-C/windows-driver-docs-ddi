@@ -79,7 +79,7 @@ typedef struct _USBSCAN_TIMEOUT {
 ## -remarks
 <p>A value of zero means to wait forever for the read or write operation or interrupt.</p>
 
-<p>The USBSCAN_TIMEOUT structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542908">IOCTL_SET_TIMEOUT</a>.</p>
+<p>The USBSCAN_TIMEOUT structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl-set-timeout.md">IOCTL_SET_TIMEOUT</a>.</p>
 
 ## -requirements
 <table>
@@ -98,7 +98,7 @@ typedef struct _USBSCAN_TIMEOUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542908">IOCTL_SET_TIMEOUT</a>
+<a href="..\usbscan\ni-usbscan-ioctl-set-timeout.md">IOCTL_SET_TIMEOUT</a>
 </dt>
 </dl>
 <p> </p>

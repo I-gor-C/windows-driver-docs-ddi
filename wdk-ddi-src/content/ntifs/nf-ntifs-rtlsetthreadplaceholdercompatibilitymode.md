@@ -75,11 +75,6 @@ CHAR RtlSetThreadPlaceholderCompatibilityMode(
 Most Windows applications see exposed placeholders by default.  For compatibility reasons, Windows may decide that certain applications see disguised placeholders by default.
 </p>
 
-<p>When placeholders are exposed, characteristics such as the presence of a reparse point, the sparse bit, and the offline bit are plainly visible through directory enumeration and other types of file information queries.  When placeholders are disguised, these details are completely hidden, making the file look like a normal file.
-
-Most Windows applications see exposed placeholders by default.  For compatibility reasons, Windows may decide that certain applications see disguised placeholders by default.
-</p>
-
 ## -requirements
 <table>
 <tr>

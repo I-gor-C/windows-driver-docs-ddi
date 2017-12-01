@@ -59,13 +59,13 @@ NTSTATUS USBD_UrbAllocate(
 ### -param <i>USBDHandle</i> [in]
 
 <dd>
-<p>USBD handle that is retrieved by the client driver in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406241">USBD_CreateHandle</a> routine.</p>
+<p>USBD handle that is retrieved by the client driver in a previous call to  the <a href="..\usbdlib\nf-usbdlib-usbd-createhandle.md">USBD_CreateHandle</a> routine.</p>
 </dd>
 
 ### -param <i>Urb</i> [out]
 
 <dd>
-<p>Pointer to the newly allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure. All members of the structure are set to zero. The client driver must free the URB when the driver has finished using it by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh406252">USBD_UrbFree</a>.</p>
+<p>Pointer to the newly allocated <a href="..\usb\ns-usb--urb.md">URB</a> structure. All members of the structure are set to zero. The client driver must free the URB when the driver has finished using it by calling <a href="..\usbdlib\nf-usbdlib-usbd-urbfree.md">USBD_UrbFree</a>.</p>
 </dd>
 </dl>
 
@@ -77,25 +77,13 @@ NTSTATUS USBD_UrbAllocate(
 ## -remarks
 <p>The <b>USBD_UrbAllocate</b> routine enables the underlying USB driver stack to allocate an opaque URB context for the URB. By using the URB context, the USB driver stack can process requests more efficiently and reliably. Those optimizations are provided by the USB 3.0 driver stack that is included in Windows 8. The client driver cannot access the URB context; the context is used internally by the bus driver. </p>
 
-<p>Regardless of the USB protocol version of the host controller, the underlying USB driver stack, the target operating system, the client driver must always call <b>USBD_UrbAllocate</b> to allocate an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure.  <b>USBD_UrbAllocate</b> replaces earlier allocation mechanisms, such as  <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>, or allocating them on the stack. </p>
+<p>Regardless of the USB protocol version of the host controller, the underlying USB driver stack, the target operating system, the client driver must always call <b>USBD_UrbAllocate</b> to allocate an <a href="..\usb\ns-usb--urb.md">URB</a> structure.  <b>USBD_UrbAllocate</b> replaces earlier allocation mechanisms, such as  <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>, or allocating them on the stack. </p>
 
 <p>The client driver must <i>not</i> use <b>USBD_UrbAllocate</b>, </p>
 
-<p>For more information about replacement routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>.</p>
+<p>For more information about replacement routines, see <a href="buses.how_to_add_xrb_support_for_client_drivers">Allocating and Building URBs</a>.</p>
 
-<p>You must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh406252">USBD_UrbFree</a> to release the URB allocated by <b>USBD_UrbAllocate</b>. </p>
-
-<p>The following code example shows how to allocate, submit, and release a URB. The example submits the URB synchronously.</p>
-
-<p>The <b>USBD_UrbAllocate</b> routine enables the underlying USB driver stack to allocate an opaque URB context for the URB. By using the URB context, the USB driver stack can process requests more efficiently and reliably. Those optimizations are provided by the USB 3.0 driver stack that is included in Windows 8. The client driver cannot access the URB context; the context is used internally by the bus driver. </p>
-
-<p>Regardless of the USB protocol version of the host controller, the underlying USB driver stack, the target operating system, the client driver must always call <b>USBD_UrbAllocate</b> to allocate an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure.  <b>USBD_UrbAllocate</b> replaces earlier allocation mechanisms, such as  <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>, or allocating them on the stack. </p>
-
-<p>The client driver must <i>not</i> use <b>USBD_UrbAllocate</b>, </p>
-
-<p>For more information about replacement routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>.</p>
-
-<p>You must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh406252">USBD_UrbFree</a> to release the URB allocated by <b>USBD_UrbAllocate</b>. </p>
+<p>You must call <a href="..\usbdlib\nf-usbdlib-usbd-urbfree.md">USBD_UrbFree</a> to release the URB allocated by <b>USBD_UrbAllocate</b>. </p>
 
 <p>The following code example shows how to allocate, submit, and release a URB. The example submits the URB synchronously.</p>
 
@@ -152,10 +140,10 @@ NTSTATUS USBD_UrbAllocate(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406252">USBD_UrbFree</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-urbfree.md">USBD_UrbFree</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
+<a href="buses.how_to_add_xrb_support_for_client_drivers">Allocating and Building URBs</a>
 </dt>
 <dt>
 <a href="buses.communicating_with_a_usb_device">Sending Requests to a USB Device</a>

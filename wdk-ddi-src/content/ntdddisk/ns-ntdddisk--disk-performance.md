@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DISK_PERFORMANCE structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560388">IOCTL_DISK_PERFORMANCE</a> request to collect summary disk statistics for purposes of measuring disk performance. </p>
+<p>The DISK_PERFORMANCE structure is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-performance.md">IOCTL_DISK_PERFORMANCE</a> request to collect summary disk statistics for purposes of measuring disk performance. </p>
 
 
 ## -syntax
@@ -122,7 +122,7 @@ typedef struct _DISK_PERFORMANCE {
 ### -field <b>QueryTime</b>
 
 <dd>
-<p>Contains a timestamp indicating the system time at the moment that the query took place. System time is a count of 100-nanosecond intervals since January 1, 1601. System time is typically updated approximately every ten milliseconds. For more information about system time, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff553068">KeQuerySystemTime</a>.</p>
+<p>Contains a timestamp indicating the system time at the moment that the query took place. System time is a count of 100-nanosecond intervals since January 1, 1601. System time is typically updated approximately every ten milliseconds. For more information about system time, see <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>.</p>
 </dd>
 
 ### -field <b>StorageDeviceNumber</b>
@@ -158,10 +158,10 @@ typedef struct _DISK_PERFORMANCE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560388">IOCTL_DISK_PERFORMANCE</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-performance.md">IOCTL_DISK_PERFORMANCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560393">IOCTL_DISK_PERFORMANCE_OFF</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-performance-off.md">IOCTL_DISK_PERFORMANCE_OFF</a>
 </dt>
 </dl>
 <p> </p>

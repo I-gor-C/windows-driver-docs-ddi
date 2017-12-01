@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatenetbufferpool.htm
 old-project: netvista
 ms.assetid: bc27758a-a793-48a1-a6ab-bd193aa9c61a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisAllocateNetBufferPool
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>Call the
   <b>NdisAllocateNetBufferPool</b> function to allocate a pool of 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures.</p>
+  <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures.</p>
 
 
 ## -syntax
@@ -91,7 +91,7 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
 
 <dd>
 <p>The 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+       <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
        NET_BUFFER_POOL_PARAMETERS structure. Set the 
        <b>Type</b> member of the structure that 
        <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -103,7 +103,7 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
 
 <dd>
 <p>A kernel pool tag that the caller uses when it allocates 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures from this pool. The tag
+       <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures from this pool. The tag
        is a string, delimited by single quotation marks, with up to four characters, usually specified in
        reverse order. The kernel pool tag helps NDIS to identify the owner of the NET_BUFFER structures that
        are allocated from this pool.</p>
@@ -130,21 +130,11 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
 
 ## -remarks
 <p>Call the following functions to allocate 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures from the NET_BUFFER
-    structure pool.</p><dl>
-<dd>
+    <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structures from the NET_BUFFER
+    structure pool.</p>
+
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561607">NdisAllocateNetBuffer</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nf-ndis-ndisallocatenetbuffermdlanddata.md">
-       NdisAllocateNetBufferMdlAndData</a>
-</p>
-</dd>
-</dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561607">NdisAllocateNetBuffer</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
 </p>
 
 <p>
@@ -161,49 +151,10 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
 <p>MDL and data buffers that are allocated with 
     <b>NdisAllocateNetBufferMdlAndData</b> should not be freed separate from the NET_BUFFER structure. Such
     structures are freed with the NET_BUFFER structure when you call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562582">NdisFreeNetBuffer</a> function.</p>
+    <a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a> function.</p>
 
 <p>Call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562592">NdisFreeNetBufferPool</a> function to
-    free NET_BUFFER structure pools that are created with 
-    <b>NdisAllocateNetBufferPool</b>.</p>
-
-<p>Call the following functions to allocate 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures from the NET_BUFFER
-    structure pool.</p><dl>
-<dd>
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561607">NdisAllocateNetBuffer</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="..\ndis\nf-ndis-ndisallocatenetbuffermdlanddata.md">
-       NdisAllocateNetBufferMdlAndData</a>
-</p>
-</dd>
-</dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561607">NdisAllocateNetBuffer</a>
-</p>
-
-<p>
-<a href="..\ndis\nf-ndis-ndisallocatenetbuffermdlanddata.md">
-       NdisAllocateNetBufferMdlAndData</a>
-</p>
-
-<p>You can call 
-    <b>NdisAllocateNetBufferPool</b> and set the 
-    <b>DataSize</b> value when creating a NET_BUFFER structure pool. In this case, MDL and data are
-    preallocated with each NET_BUFFER structure that the caller allocates from the pool. You must call the 
-    <b>NdisAllocateNetBufferMdlAndData</b> function to allocate NET_BUFFER structures from such a pool.</p>
-
-<p>MDL and data buffers that are allocated with 
-    <b>NdisAllocateNetBufferMdlAndData</b> should not be freed separate from the NET_BUFFER structure. Such
-    structures are freed with the NET_BUFFER structure when you call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562582">NdisFreeNetBuffer</a> function.</p>
-
-<p>Call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562592">NdisFreeNetBufferPool</a> function to
+    <a href="..\ndis\nf-ndis-ndisfreenetbufferpool.md">NdisFreeNetBufferPool</a> function to
     free NET_BUFFER structure pools that are created with 
     <b>NdisAllocateNetBufferPool</b>.</p>
 
@@ -260,7 +211,7 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
+<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -268,25 +219,25 @@ NDIS_HANDLE NdisAllocateNetBufferPool(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561607">NdisAllocateNetBuffer</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbuffermdlanddata.md">
    NdisAllocateNetBufferMdlAndData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562582">NdisFreeNetBuffer</a>
+<a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562592">NdisFreeNetBufferPool</a>
+<a href="..\ndis\nf-ndis-ndisfreenetbufferpool.md">NdisFreeNetBufferPool</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferPool function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBufferPool function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

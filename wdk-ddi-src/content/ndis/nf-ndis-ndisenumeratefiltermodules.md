@@ -7,7 +7,7 @@ old-location: netvista\ndisenumeratefiltermodules.htm
 old-project: netvista
 ms.assetid: cab7609e-cf87-46f6-af23-891e19ef1b80
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisEnumerateFilterModules
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,9 +82,9 @@ NDIS_STATUS NdisEnumerateFilterModules(
 <dd>
 <p>A pointer to a caller-allocated memory block in which NDIS returns the information for all the
      filter modules in a filter stack, starting with top-most filter. This buffer contains an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565457">NDIS_ENUM_FILTERS</a> structure that is
+     <a href="..\ndis\ns-ndis--ndis-enum-filters.md">NDIS_ENUM_FILTERS</a> structure that is
      followed by zero or more 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565532">NDIS_FILTER_INTERFACE</a> structures, one
+     <a href="..\ndis\ns-ndis--ndis-filter-interface.md">NDIS_FILTER_INTERFACE</a> structures, one
      for each filter module in the stack.</p>
 </dd>
 
@@ -130,17 +130,6 @@ NDIS_STATUS NdisEnumerateFilterModules(
 <p> </p>
 
 ## -remarks
-<p>An NDIS miniport driver, protocol driver, or filter driver can call the 
-    <b>NdisEnumerateFilterModules</b> function to enumerate all the filters in a filter stack.</p>
-
-<p><b>NdisEnumerateFilterModules</b> returns the list of filter modules and filter intermediate drivers from
-    the top to the bottom of the driver stack. For example, if filter modules (F1 and F2) are attached to
-    miniport adapter (M1) and if F2 is above F1,
-    <b>NdisEnumerateFilterModules</b> returns the list in the following order: F2, F1. If there is also a
-    filter intermediate driver (M2) that is bound to M1, if M2 is above F2, and if another filter (F3) is
-    attached to M2, 
-    <b>NdisEnumerateFilterModules</b> returns the filter list in the following order: F3, M2, F2, F1.</p>
-
 <p>An NDIS miniport driver, protocol driver, or filter driver can call the 
     <b>NdisEnumerateFilterModules</b> function to enumerate all the filters in a filter stack.</p>
 
@@ -205,7 +194,7 @@ NDIS_STATUS NdisEnumerateFilterModules(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547930">Irql_Filter_Driver_Function</a>
+<a href="devtest.ndis_irql_filter_driver_function">Irql_Filter_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -213,12 +202,12 @@ NDIS_STATUS NdisEnumerateFilterModules(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565457">NDIS_ENUM_FILTERS</a>
+<a href="..\ndis\ns-ndis--ndis-enum-filters.md">NDIS_ENUM_FILTERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565532">NDIS_FILTER_INTERFACE</a>
+<a href="..\ndis\ns-ndis--ndis-filter-interface.md">NDIS_FILTER_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisEnumerateFilterModules function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisEnumerateFilterModules function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

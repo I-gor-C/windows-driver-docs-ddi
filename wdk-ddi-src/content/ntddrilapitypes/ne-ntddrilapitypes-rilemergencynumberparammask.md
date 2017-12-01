@@ -7,7 +7,7 @@ old-location: netvista\rilemergencynumberparammask.htm
 old-project: netvista
 ms.assetid: e8365373-130b-485c-9117-89be6153be52
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -132,7 +132,7 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
 ### -field <a id="D3D10_DDI_BIND_PRESENT"></a><a id="d3d10_ddi_bind_present"></a><b>D3D10_DDI_BIND_PRESENT</b>
 
 <dd>
-<p>The resource can be used in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function (that is, the resource can be used as a back buffer).</p>
+<p>The resource can be used in a call to the <a href="display.presentdxgi">PresentDXGI</a> function (that is, the resource can be used as a back buffer).</p>
 </dd>
 
 ### -field <a id="D3D10_DDI_BIND_MASK"></a><a id="d3d10_ddi_bind_mask"></a><b>D3D10_DDI_BIND_MASK</b>
@@ -252,7 +252,7 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541697">D3D10DDIARG_CREATERESOURCE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createresource.md">D3D10DDIARG_CREATERESOURCE</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setshaderresources.md">GsSetShaderResources</a>
@@ -264,7 +264,7 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-ia-setvertexbuffers.md">IaSetVertexBuffers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a>
+<a href="display.presentdxgi">PresentDXGI</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-setshaderresources.md">PsSetShaderResources</a>

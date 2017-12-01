@@ -7,7 +7,7 @@ old-location: netvista\wskgetnameinfo.htm
 old-project: netvista
 ms.assetid: 99e10a70-90a7-4d96-ae5f-ba82d8c4c1a8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -81,7 +80,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
 
 <dd>
 <p>[in] A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a> structure that contains the IP address
+     <a href="netvista.sockaddr">SOCKADDR</a> structure that contains the IP address
      and port number of the socket.</p>
 </dd>
 
@@ -91,14 +90,14 @@ NTSTATUS WSKAPI * WskGetNameInfo(
 <p>[in] Specifies the length, in bytes, of the buffer pointed to by the 
      <i>SockAddr</i> parameter. The value of 
      <i>SockAddrLength</i> should not exceed the size of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a> structure.</p>
+     <a href="..\ntifs\ns-ntifs-sockaddr-storage.md">SOCKADDR_STORAGE</a> structure.</p>
 </dd>
 
 ### -param <i>NodeName</i> [out, optional]
 
 <dd>
 <p>[out] An optional pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains a
+     <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a
      Unicode string that represents a host (node) name. On success, the Unicode host name is written as a
      Fully Qualified Domain Name (FQDN) by default. The caller must provide a UNICODE_STRING buffer large
      enough to hold the Unicode host name, which includes the terminating NULL character. If the 
@@ -111,7 +110,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
 
 <dd>
 <p>[out] An optional pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains a
+     <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure that contains a
      Unicode string that represents a service name associated with the port number. The caller must provide a
      UNICODE_STRING buffer large enough to hold the Unicode service name, which includes the terminating NULL
      character. If the 
@@ -228,12 +227,6 @@ NTSTATUS WSKAPI * WskGetNameInfo(
     that is indicated by the security context indicates the context for the function's name resolution
     request.</p>
 
-<p>The process to which the 
-    <i>OwningProcess</i> parameter points, or the thread to which the 
-    <i>OwningThread</i> process points, indicates the security context for this function. The user account
-    that is indicated by the security context indicates the context for the function's name resolution
-    request.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -278,24 +271,24 @@ NTSTATUS WSKAPI * WskGetNameInfo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
+<a href="netvista.sockaddr">SOCKADDR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a>
+<a href="..\ntifs\ns-ntifs-sockaddr-storage.md">SOCKADDR_STORAGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571122">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571132">WskGetAddressInfo</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-get-address-info.md">WskGetAddressInfo</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_NAME_INFO callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_NAME_INFO callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

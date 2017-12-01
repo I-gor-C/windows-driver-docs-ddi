@@ -7,7 +7,7 @@ old-location: netvista\ndisoidrequest.htm
 old-project: netvista
 ms.assetid: a3ddeec4-0414-48ed-ab3b-5df252682655
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NDIS_STATUS NdisOidRequest(
 
 <dd>
 <p>The handle returned by the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function that
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function that
      identifies the target adapter on the binding.</p>
 </dd>
 
@@ -69,7 +69,7 @@ NDIS_STATUS NdisOidRequest(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure that specifies
      the operation requested with a given OID_<i>XXX</i> code to either query the status of an adapter or to set the state of an adapter.</p>
 </dd>
 </dl>
@@ -86,7 +86,7 @@ NDIS_STATUS NdisOidRequest(
 <dt><b>NDIS_STATUS_INVALID_OID</b></dt>
 </dl><p>The OID_<i>XXX</i> code specified in the 
        <b>Oid</b> member of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>-structured buffer at 
+       <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>-structured buffer at 
        <i>OidRequest</i> is invalid or unsupported by the underlying driver.</p><dl>
 <dt><b>NDIS_STATUS_INVALID_LENGTH or NDIS_STATUS_BUFFER_TOO_SHORT</b></dt>
 </dl><p>The value specified in the 
@@ -136,14 +136,9 @@ NDIS_STATUS NdisOidRequest(
     <b>NdisOidRequest</b> with an OID-specific request of its own before completing the request originally
     submitted by the higher-level driver.</p>
 
-<p>Some errors returned are recoverable, including the following:</p><dl>
-<dd>NDIS_STATUS_INVALID_OID</dd>
-<dd>NDIS_STATUS_INVALID_LENGTH</dd>
-<dd>NDIS_STATUS_BUFFER_TOO_SHORT</dd>
-<dd>NDIS_STATUS_INVALID_DATA</dd>
-<dd>NDIS_STATUS_RESOURCES</dd>
-<dd>NDIS_STATUS_RESET_IN_PROGRESS</dd>
-</dl><p>That is, a driver can modify the packet at 
+<p>Some errors returned are recoverable, including the following:</p>
+
+<p>That is, a driver can modify the packet at 
     <i>OidRequest</i> appropriately to correct the OID_<i>XXX</i> code or the size or contents of the buffer at 
     <b>InformationBuffer</b> and resubmit the request packet to 
     <b>NdisOidRequest</b>. The same packet might be satisfied on resubmission to 
@@ -156,40 +151,7 @@ NDIS_STATUS NdisOidRequest(
 
 <p>For more information about the general and media-specific OIDs and their respective associated
     information buffers, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566707">NDIS OIDs</a>.</p>
-
-<p>A protocol driver must allocate sufficient memory to hold the information buffer that is associated
-    with the specified OID. The driver must also allocate and set up the buffer at 
-    <i>OidRequest</i> before it calls 
-    <b>NdisOidRequest</b>. Both buffers must be allocated from nonpaged pool because the underlying driver
-    runs at raised IRQL while processing the request.</p>
-
-<p><b>NdisOidRequest</b> forwards a request to underlying drivers or handles the request itself.. If the
-    next-lower driver is an NDIS intermediate driver, it can call 
-    <b>NdisOidRequest</b> with an OID-specific request of its own before completing the request originally
-    submitted by the higher-level driver.</p>
-
-<p>Some errors returned are recoverable, including the following:</p><dl>
-<dd>NDIS_STATUS_INVALID_OID</dd>
-<dd>NDIS_STATUS_INVALID_LENGTH</dd>
-<dd>NDIS_STATUS_BUFFER_TOO_SHORT</dd>
-<dd>NDIS_STATUS_INVALID_DATA</dd>
-<dd>NDIS_STATUS_RESOURCES</dd>
-<dd>NDIS_STATUS_RESET_IN_PROGRESS</dd>
-</dl><p>That is, a driver can modify the packet at 
-    <i>OidRequest</i> appropriately to correct the OID_<i>XXX</i> code or the size or contents of the buffer at 
-    <b>InformationBuffer</b> and resubmit the request packet to 
-    <b>NdisOidRequest</b>. The same packet might be satisfied on resubmission to 
-    <b>NdisOidRequest</b> if the original call indicated a reset in progress or that a resource shortage,
-    which might be temporary, prevented that request from being carried out.</p>
-
-<p>The NDIS library maintains bindings for underlying miniport drivers. NDIS can return information for
-    binding-specific queries if a given OID is associated with a system-defined medium type for which the
-    system provides a filter library.</p>
-
-<p>For more information about the general and media-specific OIDs and their respective associated
-    information buffers, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566707">NDIS OIDs</a>.</p>
+    <a href="netvista.ndis_oids">NDIS OIDs</a>.</p>
 
 ## -requirements
 <table>
@@ -244,7 +206,7 @@ NDIS_STATUS NdisOidRequest(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547990">Irql_OID_Function</a>
+<a href="devtest.ndis_irql_oid_function">Irql_OID_Function</a>
 </td>
 </tr>
 </table>
@@ -252,10 +214,10 @@ NDIS_STATUS NdisOidRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-oid-request-complete.md">ProtocolOidRequestComplete</a>
@@ -266,4 +228,4 @@ NDIS_STATUS NdisOidRequest(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOidRequest function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOidRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

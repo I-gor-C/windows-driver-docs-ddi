@@ -73,7 +73,7 @@ typedef struct _D3DDDIARG_COLORFILL {
 ### -field <b>DstRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure that indicates the upper-left and lower-right points of a rectangle on the surface to color fill. </p>
+<p>[in] A <a href="display.rectl">RECTL</a> structure that indicates the upper-left and lower-right points of a rectangle on the surface to color fill. </p>
 </dd>
 
 ### -field <b>Color</b>
@@ -85,7 +85,7 @@ typedef struct _D3DDDIARG_COLORFILL {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544394">D3DDDI_COLORFILLFLAGS</a> structure that identifies the type of color-fill operation to perform. </p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-colorfillflags.md">D3DDDI_COLORFILLFLAGS</a> structure that identifies the type of color-fill operation to perform. </p>
 </dd>
 </dl>
 
@@ -120,10 +120,10 @@ typedef struct _D3DDDIARG_COLORFILL {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-colorfill.md">ColorFill</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544394">D3DDDI_COLORFILLFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-colorfillflags.md">D3DDDI_COLORFILLFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a>
+<a href="display.rectl">RECTL</a>
 </dt>
 </dl>
 <p> </p>

@@ -59,7 +59,7 @@ typedef struct {
 ### -field <b>ChunkInfo</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265473">MIRACAST_CHUNK_INFO</a> encode chunk information structure that the user-mode display driver wants to report.</p>
+<p>A <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-info.md">MIRACAST_CHUNK_INFO</a> encode chunk information structure that the user-mode display driver wants to report.</p>
 </dd>
 
 ### -field <b>PrivateDriverDataSize</b>
@@ -114,7 +114,7 @@ typedef struct {
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn-get-next-chunk-data.md">GetNextChunkData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265473">MIRACAST_CHUNK_INFO</a>
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-info.md">MIRACAST_CHUNK_INFO</a>
 </dt>
 </dl>
 <p> </p>

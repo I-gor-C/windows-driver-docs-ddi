@@ -7,7 +7,7 @@ old-location: netvista\riltonesignalinfo_v1.htm
 old-project: netvista
 ms.assetid: 3434112f-54b4-4494-8514-fd3d8dc33329
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILTONESIGNALINFO_V1, RILTONESIGNALINFO_V1, *LPRILTONESIGNALINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices

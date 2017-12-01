@@ -7,7 +7,7 @@ old-location: kernel\exreleasespinlockexclusive_.htm
 old-project: kernel
 ms.assetid: D10C65A6-96E7-4BE0-BDD5-EFD129DC424C
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: ExReleaseSpinLockExclusive
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ VOID ExReleaseSpinLockExclusive (
 ### -param <i>OldIrql</i> [in]
 
 <dd>
-<p>The interrupt request level (IRQL) to restore. Set this parameter to the KIRQL value that was returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451007">ExAcquireSpinLockExclusive</a> call that acquired the spin lock.</p>
+<p>The interrupt request level (IRQL) to restore. Set this parameter to the KIRQL value that was returned by the <a href="kernel.exacquirespinlockexclusive">ExAcquireSpinLockExclusive</a> call that acquired the spin lock.</p>
 </dd>
 </dl>
 
@@ -73,12 +73,6 @@ VOID ExReleaseSpinLockExclusive (
 <p>None.</p>
 
 ## -remarks
-<p>This routine must be called only for a spin lock that is owned by the caller.</p>
-
-<p>On entry to this routine, the caller must be running at IRQL = DISPATCH_LEVEL. Before exiting, <b>ExReleaseSpinLockExclusive</b> restores the IRQL to the value specified by the <i>OldIrql</i> parameter.</p>
-
-<p>The caller should hold the spin lock only briefly before releasing it. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548114">Introduction to Spin Locks</a>.</p>
-
 <p>This routine must be called only for a spin lock that is owned by the caller.</p>
 
 <p>On entry to this routine, the caller must be running at IRQL = DISPATCH_LEVEL. Before exiting, <b>ExReleaseSpinLockExclusive</b> restores the IRQL to the value specified by the <i>OldIrql</i> parameter.</p>
@@ -128,9 +122,9 @@ VOID ExReleaseSpinLockExclusive (
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451007">ExAcquireSpinLockExclusive</a>
+<a href="kernel.exacquirespinlockexclusive">ExAcquireSpinLockExclusive</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExReleaseSpinLockExclusive  routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExReleaseSpinLockExclusive  routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

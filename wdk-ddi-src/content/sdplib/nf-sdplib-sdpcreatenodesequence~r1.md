@@ -7,7 +7,7 @@ old-location: bltooth\sdpcreatenodesequence.htm
 old-project: bltooth
 ms.assetid: 9e02f32b-cd39-4953-9698-a1800bedf0e2
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: SdpCreateNodeSequence
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ PSDP_NODE SdpCreateNodeSequence(
 
 ## -returns
 <p>If successful, this function returns a pointer to the newly allocated 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a> structure. If not successful, this
+     <a href="..\sdpnode\ns-sdpnode--sdp-node.md">SDP_NODE</a> structure. If not successful, this
      function returns <b>NULL</b>.</p>
 
 ## -remarks
@@ -76,16 +76,7 @@ PSDP_NODE SdpCreateNodeSequence(
     new sequence node to another sequence node.</p>
 
 <p>A sequence node can be added as a top-level attribute of an SDP record by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536784">SdpAddAttributeToTree</a> function.</p>
-
-<p>After a sequence node is created by calling the 
-    <b>SdpCreateNodeSequence</b> function, Bluetooth drivers can call the 
-    <a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">
-    SdpAppendNodeToContainerNode</a> function to insert other nodes into the sequence node or to add the
-    new sequence node to another sequence node.</p>
-
-<p>A sequence node can be added as a top-level attribute of an SDP record by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536784">SdpAddAttributeToTree</a> function.</p>
+    <a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a> function.</p>
 
 ## -requirements
 <table>
@@ -130,15 +121,15 @@ PSDP_NODE SdpCreateNodeSequence(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a>
+<a href="..\sdpnode\ns-sdpnode--sdp-node.md">SDP_NODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536786">SdpAppendNodeToContainerNode</a>
+<a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">SdpAppendNodeToContainerNode</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536784">SdpAddAttributeToTree</a>
+<a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SdpCreateNodeSequence function%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SdpCreateNodeSequence function%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

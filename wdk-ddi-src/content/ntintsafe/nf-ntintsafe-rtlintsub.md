@@ -7,7 +7,7 @@ old-location: kernel\rtlintsub.htm
 old-project: kernel
 ms.assetid: 68BBD6B8-5C7C-4FE5-97F7-473A9510400F
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlIntSub
 ms.prod: windows-hardware
 ms.technology: windows-devices

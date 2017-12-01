@@ -7,7 +7,7 @@ old-location: debugger\writeio.htm
 old-project: debugger
 ms.assetid: 3bc84b15-7c13-4ad9-b9a1-6abd5a7389eb
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces3, WriteIo, IDebugDataSpaces3::WriteIo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -111,8 +111,6 @@ HRESULT WriteIo(
 <p> </p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 ## -requirements

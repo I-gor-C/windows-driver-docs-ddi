@@ -135,7 +135,7 @@ typedef enum _UCM_TYPEC_OPERATING_MODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187931">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>
+<a href="buses.ucm_connector_type_c_config_init">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>
 </dt>
 </dl>
 <p> </p>

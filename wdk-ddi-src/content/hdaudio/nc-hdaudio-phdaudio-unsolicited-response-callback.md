@@ -7,7 +7,7 @@ old-location: audio\phdaudio_unsolicited_response_callback.htm
 old-project: audio
 ms.assetid: B98F669D-D0DE-4FF2-903C-D51E0FEEE840
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>HDAudio codec unsolicited response callback function. <b>PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK</b> is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537803">PREGISTER_EVENT_CALLBACK</a> callback function. </p>
+<p>HDAudio codec unsolicited response callback function. <b>PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK</b> is used by the <a href="..\hdaudio\nc-hdaudio-pregister-event-callback.md">PREGISTER_EVENT_CALLBACK</a> callback function. </p>
 
 
 ## -prototype
@@ -63,13 +63,13 @@ typedef PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK HDAudioUnsolicitedResponseCallbac
 ### -param <i>HDAudioCodecResponse</i> 
 
 <dd>
-<p>This is a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536422">HDAUDIO_CODEC_RESPONSE</a> that specifies the codec's response to the command. This structure is passed by value.  </p>
+<p>This is a structure of type <a href="..\hdaudio\ns-hdaudio--hdaudio-codec-response.md">HDAUDIO_CODEC_RESPONSE</a> that specifies the codec's response to the command. This structure is passed by value.  </p>
 </dd>
 
 ### -param <i>Context</i> 
 
 <dd>
-<p>This is the callbackContext value that was passed previously to <a href="https://msdn.microsoft.com/library/windows/hardware/ff537803">PREGISTER_EVENT_CALLBACK</a>.</p>
+<p>This is the callbackContext value that was passed previously to <a href="..\hdaudio\nc-hdaudio-pregister-event-callback.md">PREGISTER_EVENT_CALLBACK</a>.</p>
 </dd>
 </dl>
 
@@ -77,8 +77,6 @@ typedef PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK HDAudioUnsolicitedResponseCallbac
 <p>Void</p>
 
 ## -remarks
-<p>The HD Audio bus driver calls the callback routine at PASSIVE_LEVEL.</p>
-
 <p>The HD Audio bus driver calls the callback routine at PASSIVE_LEVEL.</p>
 
 ## -requirements

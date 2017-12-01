@@ -7,7 +7,7 @@ old-location: stream\kscamera_perframesetting_custom_item.htm
 old-project: stream
 ms.assetid: 7BB23F25-6E39-40B3-A158-5EE69370B1FD
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSCAMERA_PERFRAMESETTING_CUSTOM_ITEM, KSCAMERA_PERFRAMESETTING_CUSTOM_ITEM, *PKSCAMERA_PERFRAMESETTING_CUSTOM_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices

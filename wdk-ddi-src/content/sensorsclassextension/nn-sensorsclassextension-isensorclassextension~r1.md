@@ -7,7 +7,7 @@ old-location: sensors\isensorclassextension.htm
 old-project: sensors
 ms.assetid: db455be3-3aec-47c4-81a8-992aa4926138
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorDriver, OnSetProperties, ISensorDriver::OnSetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,19 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545512">ISensorClassExtension::CleanupFile</a>
+<a href="sensors.isensorclassextension_cleanupfile">ISensorClassExtension::CleanupFile</a>
 </td>
 <td align="left" width="63%"></td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545514">ISensorClassExtension::Initialize</a>
+<a href="sensors.isensorclassextension_initialize">ISensorClassExtension::Initialize</a>
 </td>
 <td align="left" width="63%"></td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545519">ISensorClassExtension::PostEvent</a>
+<a href="sensors.isensorclassextension_postevent">ISensorClassExtension::PostEvent</a>
 </td>
 <td align="left" width="63%"></td>
 </tr>
@@ -82,13 +82,13 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545536">ISensorClassExtension::ProcessIoControl</a>
+<a href="sensors.isensorclassextension_processiocontrol">ISensorClassExtension::ProcessIoControl</a>
 </td>
 <td align="left" width="63%"></td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545547">ISensorClassExtension::Uninitialize</a>
+<a href="sensors.isensorclassextension_uninitialize">ISensorClassExtension::Uninitialize</a>
 </td>
 <td align="left" width="63%"></td>
 </tr>

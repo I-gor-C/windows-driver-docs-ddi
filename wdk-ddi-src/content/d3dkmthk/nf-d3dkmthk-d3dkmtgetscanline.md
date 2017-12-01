@@ -57,7 +57,7 @@ NTSTATUS D3DKMTGetScanLine(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548064">D3DKMT_GETSCANLINE</a> structure that contains the vertical blanking status of a video present source.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getscanline.md">D3DKMT_GETSCANLINE</a> structure that contains the vertical blanking status of a video present source.</p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS D3DKMTGetScanLine(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548064">D3DKMT_GETSCANLINE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getscanline.md">D3DKMT_GETSCANLINE</a>
 </dt>
 </dl>
 <p> </p>

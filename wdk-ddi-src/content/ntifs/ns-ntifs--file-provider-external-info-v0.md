@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure may be altered or unavailable. Instead, use <a href="https://msdn.microsoft.com/library/windows/hardware/mt426732">FILE_PROVIDER_EXTERNAL_INFO_V1</a>.</p>
+<p>This structure may be altered or unavailable. Instead, use <a href="..\ntifs\ns-ntifs--file-provider-external-info-v1.md">FILE_PROVIDER_EXTERNAL_INFO_V1</a>.</p>
 
 
 ## -syntax
@@ -102,7 +102,7 @@ typedef struct _FILE_PROVIDER_EXTERNAL_INFO_V0 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426732">FILE_PROVIDER_EXTERNAL_INFO_V1</a>
+<a href="..\ntifs\ns-ntifs--file-provider-external-info-v1.md">FILE_PROVIDER_EXTERNAL_INFO_V1</a>
 </dt>
 </dl>
 <p> </p>

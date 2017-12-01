@@ -7,7 +7,7 @@ old-location: netvista\rillocationinfo.htm
 old-project: netvista
 ms.assetid: 56d35556-1e1b-422f-acbf-f52708fbf7bf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILLOCATIONINFO, RILLOCATIONINFO, *LPRILLOCATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

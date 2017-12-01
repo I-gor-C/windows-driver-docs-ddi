@@ -7,7 +7,7 @@ old-location: netvista\rilmessageparammask.htm
 old-project: netvista
 ms.assetid: 718c9d10-fd89-4d31-815e-da4dea0a3f34
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

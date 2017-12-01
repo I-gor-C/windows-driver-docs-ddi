@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ScsiReadCapacity_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564890">ScsiReadCapacity</a> method, which is used to send a SCSI read Ccapacity command.</p>
+<p>The ScsiReadCapacity_IN structure holds the input data for the <a href="storage.scsireadcapacity">ScsiReadCapacity</a> method, which is used to send a SCSI read Ccapacity command.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ typedef struct _ScsiReadCapacity_IN {
 ### -field <b>UniqueSessionId</b>
 
 <dd>
-<p>A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
+<p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
 ### -field <b>Lun</b>
@@ -88,16 +88,16 @@ typedef struct _ScsiReadCapacity_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564890">ScsiReadCapacity</a>
+<a href="storage.scsireadcapacity">ScsiReadCapacity</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564906">ScsiReadCapacity_OUT</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--scsireadcapacity-out.md">ScsiReadCapacity_OUT</a>
 </dt>
 </dl>
 <p> </p>

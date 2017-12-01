@@ -73,7 +73,7 @@ HRESULT APIENTRY CALLBACK* pfnFreeGpuVirtualAddressCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906763">D3DDDICB_FREEGPUVIRTUALADDRESS</a> structure that describes the operation to perform.
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-freegpuvirtualaddress.md">D3DDDICB_FREEGPUVIRTUALADDRESS</a> structure that describes the operation to perform.
 
 </p>
 </dd>
@@ -128,7 +128,7 @@ HRESULT APIENTRY CALLBACK* pfnFreeGpuVirtualAddressCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906763">D3DDDICB_FREEGPUVIRTUALADDRESS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-freegpuvirtualaddress.md">D3DDDICB_FREEGPUVIRTUALADDRESS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a>

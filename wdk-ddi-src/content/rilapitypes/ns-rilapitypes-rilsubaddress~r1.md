@@ -7,7 +7,7 @@ old-location: netvista\rilsubaddress_2.htm
 old-project: netvista
 ms.assetid: fa8f7b01-a767-4713-b1e3-7417efb7db47
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSUBADDRESS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

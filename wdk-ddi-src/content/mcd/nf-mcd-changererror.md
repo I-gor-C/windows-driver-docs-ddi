@@ -92,12 +92,6 @@ VOID ChangerError(
 
 <p><b>ChangerError</b> first checks <i>Srb</i><b>-&gt;SrbStatus</b> with SRB_STATUS_AUTOSENSE_VALID to make sure the sense data buffer is valid. If so, it checks the sense data in <i>Srb</i><b>-&gt;SenseInfoBuffer</b> to determine whether to update <i>*Status</i> with a more accurate STATUS_<i>XXX</i> code and/or set the <i>Retry</i> flag before returning to the changer class driver. The changer class driver's retry count determines whether the SRB is actually retried. </p>
 
-<p>This routine is required.</p>
-
-<p>If an SRB fails with a SCSI status of CHECK CONDITION, the SCSI class driver calls the changer class driver's <b>ChangerClassError</b> routine. <b>ChangerClassError</b> performs device-independent error handling and calls the changer miniclass driver's <b>ChangerError</b> routine.</p>
-
-<p><b>ChangerError</b> first checks <i>Srb</i><b>-&gt;SrbStatus</b> with SRB_STATUS_AUTOSENSE_VALID to make sure the sense data buffer is valid. If so, it checks the sense data in <i>Srb</i><b>-&gt;SenseInfoBuffer</b> to determine whether to update <i>*Status</i> with a more accurate STATUS_<i>XXX</i> code and/or set the <i>Retry</i> flag before returning to the changer class driver. The changer class driver's retry count determines whether the SRB is actually retried. </p>
-
 ## -requirements
 <table>
 <tr>

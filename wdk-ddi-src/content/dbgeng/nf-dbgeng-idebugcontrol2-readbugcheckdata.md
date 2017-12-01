@@ -7,7 +7,7 @@ old-location: debugger\readbugcheckdata.htm
 old-project: debugger
 ms.assetid: 3ede32f5-9671-4f38-a33f-96536300267b
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl2, ReadBugCheckData, IDebugControl2::ReadBugCheckData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,10 +99,6 @@ HRESULT ReadBugCheckData(
 <p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
-<p>For more information about bug checks, including a list of bug check codes and their interpretations, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450912">Bug Checks (Blue Screens)</a>.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 <p>For more information about bug checks, including a list of bug check codes and their interpretations, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450912">Bug Checks (Blue Screens)</a>.</p>

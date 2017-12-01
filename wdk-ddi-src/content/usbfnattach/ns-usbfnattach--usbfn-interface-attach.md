@@ -67,19 +67,19 @@ typedef struct _USBFN_INTERFACE_ATTACH {
 ### -field <b>GetAttachAction</b>
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187995">USBFN_GET_ATTACH_ACTION</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="buses.usbfn_get_attach_action">USBFN_GET_ATTACH_ACTION</a> callback function.</p>
 </dd>
 
 ### -field <b>GetAttachActionAbortOperation</b>
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187996">USBFN_GET_ATTACH_ACTION_ABORT</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="buses.usbfn_get_attach_action_abort">USBFN_GET_ATTACH_ACTION_ABORT</a> callback function.</p>
 </dd>
 
 ### -field <b>SetDeviceState</b>
 
 <dd>
-<p>A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188006">USBFN_SET_DEVICE_STATE</a> callback function.</p>
+<p>A pointer to the driver's implementation of the <a href="buses.usbfn_set_device_state">USBFN_SET_DEVICE_STATE</a> callback function.</p>
 </dd>
 </dl>
 

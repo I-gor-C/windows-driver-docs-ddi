@@ -7,7 +7,7 @@ old-location: stream\ksdispatchfastreadfailure.htm
 old-project: stream
 ms.assetid: 7e0c72ce-0959-4835-ac1a-3f37869cc81f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsDispatchFastReadFailure
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -114,8 +114,6 @@ BOOLEAN KsDispatchFastReadFailure(
 <p>The <b>KsDispatchFastReadFailure</b> function returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>The <b>KsDispatchFastReadFailure</b> function is needed since the dispatch table for a particular opened instance of a device may not handle a specific major function that another opened instance needs to handle. Therefore, the function pointer in the driver object must always point to a function, such as the <b>KsDispatchFastReadFailure</b> function, that calls a dispatch table entry.</p>
-
 <p>The <b>KsDispatchFastReadFailure</b> function is needed since the dispatch table for a particular opened instance of a device may not handle a specific major function that another opened instance needs to handle. Therefore, the function pointer in the driver object must always point to a function, such as the <b>KsDispatchFastReadFailure</b> function, that calls a dispatch table entry.</p>
 
 ## -requirements

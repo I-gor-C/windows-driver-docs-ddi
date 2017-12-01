@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatereassemblednetbufferlist.htm
 old-project: netvista
 ms.assetid: 6a7fcb43-93bf-4351-8198-1d788b1bcc8c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisAllocateReassembledNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>Call the 
   <b>NdisAllocateReassembledNetBufferList</b> function to reassemble a fragmented 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 
 ## -syntax
@@ -74,7 +74,7 @@ PNET_BUFFER_LIST NdisAllocateReassembledNetBufferList(
      <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
      NdisAllocateNetBufferListPool</a> function. The 
      <b>fAllocateNetBuffer</b> member of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/hh205394">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure that the caller passed to 
+     <a href="..\ndis\ns-ndis--net-buffer-list-pool-parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure that the caller passed to 
      <b>NdisAllocateNetBufferListPool</b> must have been set to <b>TRUE</b>, and the 
      <b>DataSize</b> member set to zero. If this parameter is <b>NULL</b>, NDIS uses an internal pool.</p>
 </dd>
@@ -83,7 +83,7 @@ PNET_BUFFER_LIST NdisAllocateReassembledNetBufferList(
 
 <dd>
 <p>The amount of data to skip at the beginning of each source 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure. This amount is in addition
+     <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure. This amount is in addition
      to the value that is specified in the 
      <b>DataOffset</b> member of the NET_BUFFER structure.</p>
 </dd>
@@ -119,25 +119,8 @@ PNET_BUFFER_LIST NdisAllocateReassembledNetBufferList(
 
 ## -remarks
 <p><b>NdisAllocateReassembledNetBufferList</b> allocates, initializes, and returns a new 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that includes one 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure and one MDL chain. The new
-    NET_BUFFER_LIST structure describes the same data as the fragmented source NET_BUFFER_LIST structure that
-    the driver passed at 
-    <i>FragmentedNetBufferList</i>. After skipping the number of bytes specified in 
-    <i>StartOffset</i> in every fragmented NET_BUFFER structure, NDIS concatenates the remaining data in each
-    fragmented NET_BUFFER structure into one reassembled NET_BUFFER structure. Reassembled NET_BUFFER_LIST
-    structures do not include an initial 
-    <a href="..\ndis\ns-ndis--net-buffer-list-context.md">
-    NET_BUFFER_LIST_CONTEXT</a> structure.</p>
-
-<p>Call the 
-    <a href="..\ndis\nf-ndis-ndisfreereassemblednetbufferlist.md">
-    NdisFreeReassembledNetBufferList</a> function to free a reassembled NET_BUFFER_LIST structure and all
-    of the associated NET_BUFFER structures and MDL chains.</p>
-
-<p><b>NdisAllocateReassembledNetBufferList</b> allocates, initializes, and returns a new 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that includes one 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure and one MDL chain. The new
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure that includes one 
+    <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure and one MDL chain. The new
     NET_BUFFER_LIST structure describes the same data as the fragmented source NET_BUFFER_LIST structure that
     the driver passed at 
     <i>FragmentedNetBufferList</i>. After skipping the number of bytes specified in 
@@ -205,7 +188,7 @@ PNET_BUFFER_LIST NdisAllocateReassembledNetBufferList(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
+<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -221,18 +204,18 @@ PNET_BUFFER_LIST NdisAllocateReassembledNetBufferList(
    NdisFreeReassembledNetBufferList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568389">NET_BUFFER_LIST_CONTEXT</a>
+<a href="..\ndis\ns-ndis--net-buffer-list-context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh205394">NET_BUFFER_LIST_POOL_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--net-buffer-list-pool-parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateReassembledNetBufferList function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateReassembledNetBufferList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

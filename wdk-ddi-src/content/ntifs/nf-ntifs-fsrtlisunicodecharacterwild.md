@@ -65,9 +65,7 @@ BOOLEAN FsRtlIsUnicodeCharacterWild(
 <p><b>FsRtlIsUnicodeCharacterWild</b> returns <b>TRUE</b> if the character is a wildcard character, <b>FALSE</b> otherwise.</p>
 
 ## -remarks
-<p>For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. </p>
-
-<p>For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. </p>
+<p>For information about other string-handling routines, see <a href="kernel.strings">Strings</a>. </p>
 
 ## -requirements
 <table>
@@ -104,7 +102,7 @@ BOOLEAN FsRtlIsUnicodeCharacterWild(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546797">FsRtlIsAnsiCharacterWild</a>
+<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterwild.md">FsRtlIsAnsiCharacterWild</a>
 </dt>
 </dl>
 <p> </p>

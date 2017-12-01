@@ -67,7 +67,7 @@ _Check_return_ HRESULT APIENTRY* pfnPresentMultiPlaneOverlay(
 ### -param <i>pPresent</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh780230">D3DDDIARG_PRESENTMULTIPLANEOVERLAY</a> structure that describes how to display to the destination surface. </p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-presentmultiplaneoverlay.md">D3DDDIARG_PRESENTMULTIPLANEOVERLAY</a> structure that describes how to display to the destination surface. </p>
 </dd>
 </dl>
 
@@ -75,9 +75,7 @@ _Check_return_ HRESULT APIENTRY* pfnPresentMultiPlaneOverlay(
 <p>If this routine succeeds, it returns <b>S_OK</b>. Otherwise, it returns an <b>HRESULT</b> error code.</p>
 
 ## -remarks
-<p>When the user-mode display driver successfully completes its processing of a call to this function, it presents the source surface to the display by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780323">pfnPresentMultiPlaneOverlayCb (D3D)</a> function.</p>
-
-<p>When the user-mode display driver successfully completes its processing of a call to this function, it presents the source surface to the display by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780323">pfnPresentMultiPlaneOverlayCb (D3D)</a> function.</p>
+<p>When the user-mode display driver successfully completes its processing of a call to this function, it presents the source surface to the display by calling the <a href="display.pfnpresentmultiplaneoverlaycb_d3d">pfnPresentMultiPlaneOverlayCb (D3D)</a> function.</p>
 
 ## -requirements
 <table>
@@ -122,10 +120,10 @@ _Check_return_ HRESULT APIENTRY* pfnPresentMultiPlaneOverlay(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780230">D3DDDIARG_PRESENTMULTIPLANEOVERLAY</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-presentmultiplaneoverlay.md">D3DDDIARG_PRESENTMULTIPLANEOVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780323">pfnPresentMultiPlaneOverlayCb (D3D)</a>
+<a href="display.pfnpresentmultiplaneoverlaycb_d3d">pfnPresentMultiPlaneOverlayCb (D3D)</a>
 </dt>
 </dl>
 <p> </p>

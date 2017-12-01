@@ -7,7 +7,7 @@ old-location: netvista\protocolnetpnpevent.htm
 old-project: netvista
 ms.assetid: 3f50bcba-c7d2-4d81-bd8b-6080e08fbe74
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ NDIS_STATUS ProtocolNetPnPEvent(
 <dd>
 <p>The handle to a protocol-driver-allocated context area in which this driver maintains per-binding
      run-time state information. The protocol driver supplied this handle when it called the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function. A 
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function. A 
      <b>NetEvent</b><i>Xxx</i> event that is indicated with a <b>NULL</b><i>ProtocolBindingContext</i> applies to all bindings. 
      <b>NetEventBindList</b> and 
      <b>NetEventBindsComplete</b> are always indicated with a <b>NULL</b><i>ProtocolBindingContext</i>. 
@@ -256,18 +256,18 @@ NDIS_STATUS ProtocolNetPnPEvent(
 
 <p>The protocol driver should save the 
     <i>NetPnPEvent</i> pointer. This pointer is a required input parameter to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561705">NdisCompleteNetPnPEvent</a> function,
+    <a href="..\ndis\nf-ndis-ndiscompletenetpnpevent.md">NdisCompleteNetPnPEvent</a> function,
     which the protocol driver must subsequently call if 
     <i>ProtocolNetPnPEvent</i> returns NDIS_STATUS_PENDING.</p>
 
 <p>A protocol driver should always succeed a 
     <b>NetEventQueryPower</b> event. After establishing an active connection, a
     protocol driver can call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff559731">PoRegisterSystemState</a> function to
+    <a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a> function to
     register a continuously busy state. As long as the state registration is in effect, the power manager
     does not attempt to put the system to sleep. After the connection becomes inactive, the protocol driver
     cancels the state registration by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff559794">PoUnregisterSystemState</a> function. A
+    <a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a> function. A
     protocol driver should never try to prevent the system from transitioning to the sleeping state by
     failing a 
     <b>NetEventQueryPower</b> event. Note that a 
@@ -293,83 +293,7 @@ NDIS_STATUS ProtocolNetPnPEvent(
     <b>NetEventReconfigure</b> or a 
     <b>NetEventBindList</b>, a protocol driver should validate the data associated
     with the event. For more information about such data, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568752">NET_PNP_EVENT_NOTIFICATION</a>.</p>
-
-<p>NDIS calls 
-    <i>ProtocolNetPnPEvent</i> at IRQL = PASSIVE_LEVEL.</p>
-
-<p>To define a <i>ProtocolNetPnPEvent</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define a <i>ProtocolNetPnPEvent</i> function that is named "MyNetPnPEvent", use the <b>PROTOCOL_NET_PNP_EVENT</b> type as shown in this code example:</p>
-
-<p>Then, implement your function as follows:</p>
-
-<p>The <b>PROTOCOL_NET_PNP_EVENT</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>PROTOCOL_NET_PNP_EVENT</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
-
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. </p>
-
-<p>The 
-    <i>ProtocolNetPnPEvent</i> function is required in protocol drivers to support Plug
-    and Play and Power Management. NDIS calls 
-    <i>ProtocolNetPnPEvent</i> to notify a protocol driver that a network Plug and Play
-    event, an NDIS PnP event, or Power Management event has occurred.</p>
-
-<p>The 
-    <a href="..\ndis\ns-ndis--net-pnp-event-notification.md">
-    NET_PNP_EVENT_NOTIFICATION</a> structure that is passed to 
-    <i>ProtocolNetPnPEvent</i> describes the event. 
-    <i>ProtocolNetPnPEvent</i> interprets two basic pieces of information in the
-    NET_PNP_EVENT_NOTIFICATION structure:</p>
-
-<p>A code in the 
-      <b>NetEvent</b> member that identifies the type of Plug and Play or Power
-      Management event.</p>
-
-<p>Event-specific information. For example, with a 
-      <b>NetEventSetPower</b> event the 
-      <b>Buffer</b> member contains the device power state to which the device is
-      transitioning.</p>
-
-<p>The protocol driver should save the 
-    <i>NetPnPEvent</i> pointer. This pointer is a required input parameter to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561705">NdisCompleteNetPnPEvent</a> function,
-    which the protocol driver must subsequently call if 
-    <i>ProtocolNetPnPEvent</i> returns NDIS_STATUS_PENDING.</p>
-
-<p>A protocol driver should always succeed a 
-    <b>NetEventQueryPower</b> event. After establishing an active connection, a
-    protocol driver can call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff559731">PoRegisterSystemState</a> function to
-    register a continuously busy state. As long as the state registration is in effect, the power manager
-    does not attempt to put the system to sleep. After the connection becomes inactive, the protocol driver
-    cancels the state registration by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff559794">PoUnregisterSystemState</a> function. A
-    protocol driver should never try to prevent the system from transitioning to the sleeping state by
-    failing a 
-    <b>NetEventQueryPower</b> event. Note that a 
-    <b>NetEventQueryPower</b> event is always followed by a 
-    <b>NetEventSetPower</b> event. A 
-    <b>NetEventSetPower</b> event that specifies the underlying device's current power
-    state in effect cancels the 
-    <b>NetEventQueryPower</b> event.</p>
-
-<p>If a protocol driver cannot release a device (for example, because the device is in use) it must fail
-    a 
-    <b>NetEventQueryRemoveDevice</b> event by returning NDIS_STATUS_FAILURE.</p>
-
-<p>A protocol driver should always succeed a 
-    <b>NetEventCancelRemoveDevice</b>, a 
-    <b>NetEventReconfigure</b>, 
-    <b>NetEventBindList, NetEventBindsComplete</b>, 
-    <b>NetEventPnPCapabilities</b>, 
-    <b>NetEventPause</b>, or 
-    <b>NetEventPortDeactivation</b> by returning NDIS_STATUS_SUCCESS.</p>
-
-<p>When handling a 
-    <b>NetEventReconfigure</b> or a 
-    <b>NetEventBindList</b>, a protocol driver should validate the data associated
-    with the event. For more information about such data, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568752">NET_PNP_EVENT_NOTIFICATION</a>.</p>
+    <a href="..\ndis\ns-ndis--net-pnp-event-notification.md">NET_PNP_EVENT_NOTIFICATION</a>.</p>
 
 <p>NDIS calls 
     <i>ProtocolNetPnPEvent</i> at IRQL = PASSIVE_LEVEL.</p>
@@ -417,21 +341,21 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568752">NET_PNP_EVENT_NOTIFICATION</a>
+<a href="..\ndis\ns-ndis--net-pnp-event-notification.md">NET_PNP_EVENT_NOTIFICATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561705">NdisCompleteNetPnPEvent</a>
+<a href="..\ndis\nf-ndis-ndiscompletenetpnpevent.md">NdisCompleteNetPnPEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559731">PoRegisterSystemState</a>
+<a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559794">PoUnregisterSystemState</a>
+<a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_NET_PNP_EVENT callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PROTOCOL_NET_PNP_EVENT callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

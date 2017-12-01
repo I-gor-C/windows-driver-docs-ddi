@@ -135,10 +135,10 @@ typedef enum _UCM_TYPE_C_CURRENT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187915">UcmConnectorTypeCAttach</a>
+<a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187916">UcmConnectorTypeCCurrentAdChanged</a>
+<a href="buses.ucmconnectortypeccurrentadchanged">UcmConnectorTypeCCurrentAdChanged</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: stream\usbcamd_debug_logentry.htm
 old-project: stream
 ms.assetid: a718cf3e-8359-4560-a88e-dd7789b61be6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: USBCAMD_Debug_LogEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,8 +87,6 @@ VOID USBCAMD_Debug_LogEntry(
 <p><b>USBCAMD_Debug_LogEntry </b>does not return a value.</p>
 
 ## -remarks
-<p>The original USBCAMD does not call <b>USBCAMD_Debug_LogEntry</b>.</p>
-
 <p>The original USBCAMD does not call <b>USBCAMD_Debug_LogEntry</b>.</p>
 
 ## -requirements

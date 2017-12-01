@@ -60,7 +60,7 @@ NTSTATUS SdBusOpenInterface(
 ### -param <i>Pdo</i> [in]
 
 <dd>
-<p>Pointer to the physical device object that the SD bus driver created for the SD device that the device driver manages. The system passes this pointer to the device driver when it calls the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.</p>
+<p>Pointer to the physical device object that the SD bus driver created for the SD device that the device driver manages. The system passes this pointer to the device driver when it calls the driver's <a href="kernel.adddevice">AddDevice</a> routine.</p>
 </dd>
 
 ### -param <i>InterfaceStandard</i> [out]
@@ -86,11 +86,7 @@ NTSTATUS SdBusOpenInterface(
 <p>Returns STATUS_SUCCESS if the operation succeeds, or the appropriate error code if the operation fails. </p>
 
 ## -remarks
-<p>An SD card driver should call this routine from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.</p>
-
-<p>SD card drivers must call this routine to establish communication with the bus driver. On successful completion of this call, the <b>Context</b> member of the structure pointed to by <i>InterfaceStandard</i> will contain a handle that the driver must pass in when calling methods that belong to the retrieved interface. </p>
-
-<p>An SD card driver should call this routine from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.</p>
+<p>An SD card driver should call this routine from its <a href="kernel.adddevice">AddDevice</a> routine.</p>
 
 <p>SD card drivers must call this routine to establish communication with the bus driver. On successful completion of this call, the <b>Context</b> member of the structure pointed to by <i>InterfaceStandard</i> will contain a handle that the driver must pass in when calling methods that belong to the retrieved interface. </p>
 
@@ -129,7 +125,7 @@ NTSTATUS SdBusOpenInterface(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
+<a href="kernel.adddevice">AddDevice</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/92b8762d-8af3-493c-aa1d-bc245b0cbd83">SDBUS_INTERFACE_STANDARD</a>

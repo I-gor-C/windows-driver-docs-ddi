@@ -60,7 +60,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh846196">OnBidiResponseReceived</a>
+<a href="print.iprinterqueueevent_onbidiresponsereceived">OnBidiResponseReceived</a>
 </td>
 <td align="left" width="63%">
 <p>Called when a bidi response  is received.</p>
@@ -71,9 +71,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>An event sink that implements <b>IPrinterQueueEvent</b> and the event source, <a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a> are connected via the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a> mechanism. You must retrieve a pointer to the <b>IConnectionPoint</b> interface by invoking <b>QueryInterface</b> on the <b>IPrinterQueue</b> object.</p>
-
-<p>An event sink that implements <b>IPrinterQueueEvent</b> and the event source, <a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a> are connected via the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a> mechanism. You must retrieve a pointer to the <b>IConnectionPoint</b> interface by invoking <b>QueryInterface</b> on the <b>IPrinterQueue</b> object.</p>
+<p>An event sink that implements <b>IPrinterQueueEvent</b> and the event source, <a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a> are connected via the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a> mechanism. You must retrieve a pointer to the <b>IConnectionPoint</b> interface by invoking <b>QueryInterface</b> on the <b>IPrinterQueue</b> object.</p>
 
 ## -requirements
 <table>
@@ -109,7 +107,7 @@ req.product: Windows 10 or later.
 <dl>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>
+<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
 </dt>
 </dl>
 <p> </p>

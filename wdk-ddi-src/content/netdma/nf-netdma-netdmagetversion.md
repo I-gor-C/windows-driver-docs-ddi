@@ -7,7 +7,7 @@ old-location: netvista\netdmagetversion.htm
 old-project: netvista
 ms.assetid: eec8ba30-0f9e-4487-ba0d-99587d97b44a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NetDmaGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -94,51 +94,6 @@ UINT NetDmaGetVersion(void);
 <p>NetDMA provider drivers call 
     <b>NetDmaGetVersion</b> at IRQL = PASSIVE_LEVEL.</p>
 
-<p>NetDMA provider drivers can call the 
-    <b>NetDmaGetVersion</b> function to obtain the version of the NetDMA interface. A NetDMA provider must
-    register as a NetDMA provider with a version equal to or lower than the NetDMA provider interface version
-    that the local computer supports. The NetDMA provider driver specifies the major and minor version of the
-    NetDMA provider in the 
-    <b>MajorVersion</b> and 
-    <b>MinorVersion</b> members of the 
-    <a href="..\netdma\ns-netdma--net-dma-provider-characteristics.md">
-    NET_DMA_PROVIDER_CHARACTERISTICS</a> structure that it passes to the 
-    <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">
-    NetDmaRegisterProvider</a> function.</p>
-
-<p>NetDMA provider drivers call 
-    <b>NetDmaGetVersion</b> at IRQL = PASSIVE_LEVEL.</p>
-
-<p>NetDMA provider drivers can call the 
-    <b>NetDmaGetVersion</b> function to obtain the version of the NetDMA interface. A NetDMA provider must
-    register as a NetDMA provider with a version equal to or lower than the NetDMA provider interface version
-    that the local computer supports. The NetDMA provider driver specifies the major and minor version of the
-    NetDMA provider in the 
-    <b>MajorVersion</b> and 
-    <b>MinorVersion</b> members of the 
-    <a href="..\netdma\ns-netdma--net-dma-provider-characteristics.md">
-    NET_DMA_PROVIDER_CHARACTERISTICS</a> structure that it passes to the 
-    <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">
-    NetDmaRegisterProvider</a> function.</p>
-
-<p>NetDMA provider drivers call 
-    <b>NetDmaGetVersion</b> at IRQL = PASSIVE_LEVEL.</p>
-
-<p>NetDMA provider drivers can call the 
-    <b>NetDmaGetVersion</b> function to obtain the version of the NetDMA interface. A NetDMA provider must
-    register as a NetDMA provider with a version equal to or lower than the NetDMA provider interface version
-    that the local computer supports. The NetDMA provider driver specifies the major and minor version of the
-    NetDMA provider in the 
-    <b>MajorVersion</b> and 
-    <b>MinorVersion</b> members of the 
-    <a href="..\netdma\ns-netdma--net-dma-provider-characteristics.md">
-    NET_DMA_PROVIDER_CHARACTERISTICS</a> structure that it passes to the 
-    <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">
-    NetDmaRegisterProvider</a> function.</p>
-
-<p>NetDMA provider drivers call 
-    <b>NetDmaGetVersion</b> at IRQL = PASSIVE_LEVEL.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -182,16 +137,16 @@ UINT NetDmaGetVersion(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562665">NdisGetRoutineAddress</a>
+<a href="..\ndis\nf-ndis-ndisgetroutineaddress.md">NdisGetRoutineAddress</a>
 </dt>
 <dt>
 <a href="..\netdma\ns-netdma--net-dma-provider-characteristics.md">
    NET_DMA_PROVIDER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568336">NetDmaRegisterProvider</a>
+<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaGetVersion function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaGetVersion function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

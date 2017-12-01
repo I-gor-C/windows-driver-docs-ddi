@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY QueryResourceResidency(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543251">D3DDDIARG_QUERYRESOURCERESIDENCY</a> structure that describes a list of resources on which residency is verified.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-queryresourceresidency.md">D3DDDIARG_QUERYRESOURCERESIDENCY</a> structure that describes a list of resources on which residency is verified.</p>
 </dd>
 </dl>
 
@@ -89,13 +89,7 @@ __checkReturn HRESULT APIENTRY QueryResourceResidency(
 ## -remarks
 <p>The Microsoft Direct3D runtime calls the user-mode display driver's <i>QueryResourceResidency</i> function for applications to determine if the operating system will incur a significant stall at draw time if the system must make resources GPU-accessible. The information that is returned from <i>QueryResourceResidency</i> is an approximation of the residency of resources because the resources might become demoted before applications use the resources.</p>
 
-<p>The user-mode display driver's <i>QueryResourceResidency</i> function must make calls to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryresidencycb.md">pfnQueryResidencyCb</a> function. The <b>pfnQueryResidencyCb</b> function returns the residency status of a resource in the elements of the array that is specified by the <b>pResidencyStatus</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544232">D3DDDICB_QUERYRESIDENCY</a> structure. If <b>pfnQueryResidencyCb</b> returns D3DDDI_RESIDENCYSTATUS_NOTRESIDENT for any query, <i>QueryResourceResidency</i> must return S_NOT_RESIDENT. If <b>pfnQueryResidencyCb</b> returns D3DDDI_RESIDENCYSTATUS_RESIDENTINSHAREDMEMORY for any query and does not return D3DDDI_RESIDENCYSTATUS_NOTRESIDENT for any query, <i>QueryResourceResidency</i> must return S_RESIDENT_IN_SHARED_MEMORY. <i>QueryResourceResidency</i> must return S_OK only if all calls to <b>pfnQueryResidencyCb</b> for all queries return D3DDDI_RESIDENCYSTATUS_RESIDENTINGPUMEMORY.</p>
-
-<p>For each resource that the runtime queries through a call to <i>QueryResourceResidency</i>, the user-mode display driver must determine which allocations that belong to the resource to query through a call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryresidencycb.md">pfnQueryResidencyCb</a>. For a resource that owns a single allocation, the determination is simple--the driver will query that allocation. However, if a resource owns multiple allocations, the determination is more difficult. The driver must determine which allocations that an application will likely use for rendering, and the driver must query only those allocations. For example, if a resource owns an allocation that is used for rendering and a scratch allocation that handles a lock operation, the driver should query only for the residency of the first allocation, because an application will most likely not use the second allocation for rendering.</p>
-
-<p>The Microsoft Direct3D runtime calls the user-mode display driver's <i>QueryResourceResidency</i> function for applications to determine if the operating system will incur a significant stall at draw time if the system must make resources GPU-accessible. The information that is returned from <i>QueryResourceResidency</i> is an approximation of the residency of resources because the resources might become demoted before applications use the resources.</p>
-
-<p>The user-mode display driver's <i>QueryResourceResidency</i> function must make calls to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryresidencycb.md">pfnQueryResidencyCb</a> function. The <b>pfnQueryResidencyCb</b> function returns the residency status of a resource in the elements of the array that is specified by the <b>pResidencyStatus</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544232">D3DDDICB_QUERYRESIDENCY</a> structure. If <b>pfnQueryResidencyCb</b> returns D3DDDI_RESIDENCYSTATUS_NOTRESIDENT for any query, <i>QueryResourceResidency</i> must return S_NOT_RESIDENT. If <b>pfnQueryResidencyCb</b> returns D3DDDI_RESIDENCYSTATUS_RESIDENTINSHAREDMEMORY for any query and does not return D3DDDI_RESIDENCYSTATUS_NOTRESIDENT for any query, <i>QueryResourceResidency</i> must return S_RESIDENT_IN_SHARED_MEMORY. <i>QueryResourceResidency</i> must return S_OK only if all calls to <b>pfnQueryResidencyCb</b> for all queries return D3DDDI_RESIDENCYSTATUS_RESIDENTINGPUMEMORY.</p>
+<p>The user-mode display driver's <i>QueryResourceResidency</i> function must make calls to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryresidencycb.md">pfnQueryResidencyCb</a> function. The <b>pfnQueryResidencyCb</b> function returns the residency status of a resource in the elements of the array that is specified by the <b>pResidencyStatus</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-queryresidency.md">D3DDDICB_QUERYRESIDENCY</a> structure. If <b>pfnQueryResidencyCb</b> returns D3DDDI_RESIDENCYSTATUS_NOTRESIDENT for any query, <i>QueryResourceResidency</i> must return S_NOT_RESIDENT. If <b>pfnQueryResidencyCb</b> returns D3DDDI_RESIDENCYSTATUS_RESIDENTINSHAREDMEMORY for any query and does not return D3DDDI_RESIDENCYSTATUS_NOTRESIDENT for any query, <i>QueryResourceResidency</i> must return S_RESIDENT_IN_SHARED_MEMORY. <i>QueryResourceResidency</i> must return S_OK only if all calls to <b>pfnQueryResidencyCb</b> for all queries return D3DDDI_RESIDENCYSTATUS_RESIDENTINGPUMEMORY.</p>
 
 <p>For each resource that the runtime queries through a call to <i>QueryResourceResidency</i>, the user-mode display driver must determine which allocations that belong to the resource to query through a call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryresidencycb.md">pfnQueryResidencyCb</a>. For a resource that owns a single allocation, the determination is simple--the driver will query that allocation. However, if a resource owns multiple allocations, the determination is more difficult. The driver must determine which allocations that an application will likely use for rendering, and the driver must query only those allocations. For example, if a resource owns an allocation that is used for rendering and a scratch allocation that handles a lock operation, the driver should query only for the residency of the first allocation, because an application will most likely not use the second allocation for rendering.</p>
 
@@ -134,13 +128,13 @@ __checkReturn HRESULT APIENTRY QueryResourceResidency(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544232">D3DDDICB_QUERYRESIDENCY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-queryresidency.md">D3DDDICB_QUERYRESIDENCY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543251">D3DDDIARG_QUERYRESOURCERESIDENCY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-queryresourceresidency.md">D3DDDIARG_QUERYRESOURCERESIDENCY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-queryresidencycb.md">pfnQueryResidencyCb</a>

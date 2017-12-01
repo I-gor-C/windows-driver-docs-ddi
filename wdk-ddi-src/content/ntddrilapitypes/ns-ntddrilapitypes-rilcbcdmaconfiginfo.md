@@ -7,7 +7,7 @@ old-location: netvista\rilcbcdmaconfiginfo.htm
 old-project: netvista
 ms.assetid: 6f8b19ee-a079-4408-8567-39ad832879f2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCBCDMACONFIGINFO, RILCBCDMACONFIGINFO, *LPRILCBCDMACONFIGINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

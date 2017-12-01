@@ -73,7 +73,7 @@ typedef struct _ISCSI_SessionStaticInfo {
 ### -field <b>UniqueSessionId</b>
 
 <dd>
-<p>A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the <b>ISID</b> and <b>TSID</b> members.</p>
+<p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the <b>ISID</b> and <b>TSID</b> members.</p>
 </dd>
 
 ### -field <b>InitiatoriSCSIName</b>
@@ -115,7 +115,7 @@ typedef struct _ISCSI_SessionStaticInfo {
 ### -field <b>Type</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/ff561567">ISCSI_SESSION_TYPE_QUALIFIERS</a> enumeration value that specifies the type of logon session.</p>
+<p>An <a href="storage.iscsi_session_type_qualifiers">ISCSI_SESSION_TYPE_QUALIFIERS</a> enumeration value that specifies the type of logon session.</p>
 <table>
 <tr>
 <th>Type</th>
@@ -209,7 +209,7 @@ typedef struct _ISCSI_SessionStaticInfo {
 ### -field <b>ConnectionsList</b>
 
 <dd>
-<p>A variable length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561489">ISCSI_ConnectionStaticInfo</a> structures that specifies the static configuration data for each connection that is associated with this session. <b>ConnectionCount</b> indicates the number of elements in the array.</p>
+<p>A variable length array of <a href="..\iscsimgt\ns-iscsimgt--iscsi-connectionstaticinfo.md">ISCSI_ConnectionStaticInfo</a> structures that specifies the static configuration data for each connection that is associated with this session. <b>ConnectionCount</b> indicates the number of elements in the array.</p>
 </dd>
 </dl>
 
@@ -233,16 +233,16 @@ typedef struct _ISCSI_SessionStaticInfo {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561489">ISCSI_ConnectionStaticInfo</a>
+<a href="..\iscsimgt\ns-iscsimgt--iscsi-connectionstaticinfo.md">ISCSI_ConnectionStaticInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561598">LOGINSESSIONTYPE</a>
+<a href="storage.loginsessiontype">LOGINSESSIONTYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 </dl>
 <p> </p>

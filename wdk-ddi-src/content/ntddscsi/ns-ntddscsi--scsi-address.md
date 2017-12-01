@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SCSI_ADDRESS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560500">IOCTL_SCSI_GET_ADDRESS</a> request to retrieve the address information, such as the target ID (TID) and the logical unit number (LUN) of a particular SCSI target. </p>
+<p>The SCSI_ADDRESS structure is used in conjunction with the <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-get-address.md">IOCTL_SCSI_GET_ADDRESS</a> request to retrieve the address information, such as the target ID (TID) and the logical unit number (LUN) of a particular SCSI target. </p>
 
 
 ## -syntax
@@ -90,7 +90,7 @@ typedef struct _SCSI_ADDRESS {
 </dl>
 
 ## -remarks
-<p>Legacy class drivers issue the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560500">IOCTL_SCSI_GET_ADDRESS</a> request to the port driver to obtain the address of their devices. </p>
+<p>Legacy class drivers issue the <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-get-address.md">IOCTL_SCSI_GET_ADDRESS</a> request to the port driver to obtain the address of their devices. </p>
 
 ## -requirements
 <table>
@@ -109,7 +109,7 @@ typedef struct _SCSI_ADDRESS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560500">IOCTL_SCSI_GET_ADDRESS</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-get-address.md">IOCTL_SCSI_GET_ADDRESS</a>
 </dt>
 </dl>
 <p> </p>

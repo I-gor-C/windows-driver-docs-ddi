@@ -103,56 +103,9 @@ NTSTATUS MRxCompleteBufferingStateChangeRequest(
 <p><b>pFobx</b> is set to the FOBX structure.</p>
 </dd>
 </dl>
-</p><dl>
-<dd>
+</p>
+
 <p><b>pRelevantSrvOpen</b> is set to the SRV_OPEN structure.</p>
-</dd>
-<dd>
-<p><b>pFcb</b> is set to the FCB structure.</p>
-</dd>
-<dd>
-<p><b>pFobx</b> is set to the FOBX structure.</p>
-</dd>
-</dl><p><b>pRelevantSrvOpen</b> is set to the SRV_OPEN structure.</p>
-
-<p><b>pFcb</b> is set to the FCB structure.</p>
-
-<p><b>pFobx</b> is set to the FOBX structure.</p>
-
-<p>If lock buffering is enabled, <i>MRxCompleteBufferingStateChangeRequest</i> will need to flush out the byte-range locks to the server. The list of locked regions is passed to the network mini-redirector in the <b>LowIoContext.ParamsFor.Locks.LockList</b> member of the RX_CONTEXT structure.</p>
-
-<p>The Server Message Block (SMB) redirector uses <i>MRxCompleteBufferingStateChangeRequest</i> to send an oplock break response or to close the handle on an oplock break if the file is no longer in use. Byte range locks that need to be flushed out to the server are passed to the network mini-redirector in the <b>LowIoContext.ParamsFor.Locks.LockList</b> member of the RX_CONTEXT structure. The new oplock level is passed in the <i>MrxContext</i> parameter.</p>
-
-<p>RDBSS ignores the return value from <i>MRxCompleteBufferingStateChangeRequest</i>. </p>
-
-<p>Before calling <i>MRxCompleteBufferingStateChangeRequest</i>, RDBSS:</p>
-
-<p>Acquires an exclusive lock on the FCB structure. </p>
-
-<p>Sets the <b>FcbState</b> member of <b>SrvOpen-&gt;Fcb</b> to FCB_STATE_BUFFERSTATE_CHANGING. </p>
-
-<p>Modifies the following members in the RX_CONTEXT structure pointed to by the <i>RxContext</i> parameter:<dl>
-<dd>
-<p><b>pRelevantSrvOpen</b> is set to the SRV_OPEN structure.</p>
-</dd>
-<dd>
-<p><b>pFcb</b> is set to the FCB structure.</p>
-</dd>
-<dd>
-<p><b>pFobx</b> is set to the FOBX structure.</p>
-</dd>
-</dl>
-</p><dl>
-<dd>
-<p><b>pRelevantSrvOpen</b> is set to the SRV_OPEN structure.</p>
-</dd>
-<dd>
-<p><b>pFcb</b> is set to the FCB structure.</p>
-</dd>
-<dd>
-<p><b>pFobx</b> is set to the FOBX structure.</p>
-</dd>
-</dl><p><b>pRelevantSrvOpen</b> is set to the SRV_OPEN structure.</p>
 
 <p><b>pFcb</b> is set to the FCB structure.</p>
 
@@ -191,10 +144,10 @@ NTSTATUS MRxCompleteBufferingStateChangeRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549856">MRxComputeNewBufferingState</a>
+<a href="ifsk.mrxcomputenewbufferingstate">MRxComputeNewBufferingState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550687">MRxGetConnectionId</a>
+<a href="ifsk.mrxgetconnectionid">MRxGetConnectionId</a>
 </dt>
 </dl>
 <p> </p>

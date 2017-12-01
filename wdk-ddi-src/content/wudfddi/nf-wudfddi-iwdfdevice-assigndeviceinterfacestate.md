@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice_assigndeviceinterfacestate.htm
 old-project: wdf
 ms.assetid: 466af310-f2a7-4bd7-b927-df644e2e9c24
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFDevice, AssignDeviceInterfaceState, IWDFDevice::AssignDeviceInterfaceState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -81,7 +81,7 @@ HRESULT AssignDeviceInterfaceState(
 <p><b>AssignDeviceInterfaceState</b> returns S_OK if the operation succeeds. Otherwise, this method returns one of the error codes that are defined in Winerror.h.</p>
 
 ## -remarks
-<p>If <a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a> succeeds, the framework automatically enables and disables the interface based on the device's PnP state.
+<p>If <a href="wdf.iwdfdevice_createdeviceinterface">IWDFDevice::CreateDeviceInterface</a> succeeds, the framework automatically enables and disables the interface based on the device's PnP state.
 
 Use the <b>AssignDeviceInterfaceState</b> method to disable and re-enable a device interface manually.</p>
 
@@ -89,17 +89,7 @@ Use the <b>AssignDeviceInterfaceState</b> method to disable and re-enable a devi
 
 For more information about device interfaces, see <a href="wdf.using_device_interfaces_in_umdf_drivers">Using Device Interfaces in UMDF Drivers</a>.</p>
 
-<p>For a code example of how to use the <b>AssignDeviceInterfaceState</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a>.</p>
-
-<p>If <a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a> succeeds, the framework automatically enables and disables the interface based on the device's PnP state.
-
-Use the <b>AssignDeviceInterfaceState</b> method to disable and re-enable a device interface manually.</p>
-
-<p>
-
-For more information about device interfaces, see <a href="wdf.using_device_interfaces_in_umdf_drivers">Using Device Interfaces in UMDF Drivers</a>.</p>
-
-<p>For a code example of how to use the <b>AssignDeviceInterfaceState</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a>.</p>
+<p>For a code example of how to use the <b>AssignDeviceInterfaceState</b> method, see <a href="wdf.iwdfdevice_createdeviceinterface">IWDFDevice::CreateDeviceInterface</a>.</p>
 
 ## -requirements
 <table>
@@ -154,12 +144,12 @@ For more information about device interfaces, see <a href="wdf.using_device_inte
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556917">IWDFDevice</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a>
+<a href="wdf.iwdfdevice_createdeviceinterface">IWDFDevice::CreateDeviceInterface</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice::AssignDeviceInterfaceState method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice::AssignDeviceInterfaceState method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

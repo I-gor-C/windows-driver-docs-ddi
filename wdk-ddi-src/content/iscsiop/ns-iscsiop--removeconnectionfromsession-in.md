@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The RemoveConnectionFromSession_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563973">RemoveConnectionFromSession</a> method, which is used to remove a connection from a session.</p>
+<p>The RemoveConnectionFromSession_IN structure holds the input data for the <a href="storage.removeconnectionfromsession">RemoveConnectionFromSession</a> method, which is used to remove a connection from a session.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ typedef struct _RemoveConnectionFromSession_IN {
 ### -field <b>UniqueSessionId</b>
 
 <dd>
-<p>A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in their <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
+<p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
 ### -field <b>UniqueConnectionId</b>
@@ -88,13 +88,13 @@ typedef struct _RemoveConnectionFromSession_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563973">RemoveConnectionFromSession</a>
+<a href="storage.removeconnectionfromsession">RemoveConnectionFromSession</a>
 </dt>
 </dl>
 <p> </p>

@@ -66,51 +66,9 @@ VOID RxReference(
 <p>None </p>
 
 ## -remarks
-<p>The <b>RxReference</b> routine can be used to reference (increment by one) the <b>NodeReferenceCount</b> member on the following data structures used by RDBSS:</p><dl>
-<dd>
+<p>The <b>RxReference</b> routine can be used to reference (increment by one) the <b>NodeReferenceCount</b> member on the following data structures used by RDBSS:</p>
+
 <p>SRV_CALL</p>
-</dd>
-<dd>
-<p>NET_ROOT</p>
-</dd>
-<dd>
-<p>V_NET_ROOT</p>
-</dd>
-<dd>
-<p>SRV_OPEN</p>
-</dd>
-<dd>
-<p>FOBX</p>
-</dd>
-</dl><p>SRV_CALL</p>
-
-<p>NET_ROOT</p>
-
-<p>V_NET_ROOT</p>
-
-<p>SRV_OPEN</p>
-
-<p>FOBX</p>
-
-<p>If <b>RxReference</b> is called with any other type of RDBSS data structure, the routine causes the system to ASSERT on checked builds. </p>
-
-<p>The <b>RxReference</b> routine can be used to reference (increment by one) the <b>NodeReferenceCount</b> member on the following data structures used by RDBSS:</p><dl>
-<dd>
-<p>SRV_CALL</p>
-</dd>
-<dd>
-<p>NET_ROOT</p>
-</dd>
-<dd>
-<p>V_NET_ROOT</p>
-</dd>
-<dd>
-<p>SRV_OPEN</p>
-</dd>
-<dd>
-<p>FOBX</p>
-</dd>
-</dl><p>SRV_CALL</p>
 
 <p>NET_ROOT</p>
 
@@ -157,7 +115,7 @@ VOID RxReference(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554388">RxDereference</a>
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
 </dt>
 </dl>
 <p> </p>

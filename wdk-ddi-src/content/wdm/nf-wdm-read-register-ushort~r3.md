@@ -7,7 +7,7 @@ old-location: kernel\read_register_ushort.htm
 old-project: kernel
 ms.assetid: d1160b0a-9969-44ba-82e7-14048e1554c2
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: READ_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,8 +66,6 @@ USHORT READ_REGISTER_USHORT(
 <p><b>READ_REGISTER_USHORT</b> returns the USHORT value read from the specified register address.</p>
 
 ## -remarks
-<p>Callers of <b>READ_REGISTER_USHORT</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.</p>
-
 <p>Callers of <b>READ_REGISTER_USHORT</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.</p>
 
 ## -requirements

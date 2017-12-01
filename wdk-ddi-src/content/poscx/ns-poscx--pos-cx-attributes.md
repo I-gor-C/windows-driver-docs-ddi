@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>The POS_CX_ATTRIBUTES structure contains pointers to event callback functions implemented by the client driver.</p>
-<p>Use <a href="https://msdn.microsoft.com/library/windows/hardware/mt593141">POS_CX_ATTRIBUTES_INIT</a> to initialize this structure.</p>
+<p>Use <a href="..\poscx\nf-poscx-pos-cx-attributes-init.md">POS_CX_ATTRIBUTES_INIT</a> to initialize this structure.</p>
 
 
 ## -syntax
@@ -62,25 +62,25 @@ typedef struct _POS_CX_ATTRIBUTES {
 ### -field <b>EvtDeviceOwnershipChange</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt593115">EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE</a> callback function.</p>
+<p>A pointer to an <a href="..\poscx\nc-poscx-evt-pos-cx-device-ownership-change.md">EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtDeviceRemoteClaim</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt593116">EVT_POS_CX_DEVICE_REMOTE_CLAIM</a> callback function.</p>
+<p>A pointer to an <a href="..\poscx\nc-poscx-evt-pos-cx-device-remote-claim.md">EVT_POS_CX_DEVICE_REMOTE_CLAIM</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtDeviceRemoteRelease</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt593117">EVT_POS_CX_DEVICE_REMOTE_RELEASE</a> callback function.</p>
+<p>A pointer to an <a href="..\poscx\nc-poscx-evt-pos-cx-device-remote-release.md">EVT_POS_CX_DEVICE_REMOTE_RELEASE</a> callback function.</p>
 </dd>
 
 ### -field <b>EvtDeviceRemoteRetain</b>
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt593118">EVT_POS_CX_DEVICE_REMOTE_RETAIN</a> callback function.</p>
+<p>A pointer to an <a href="..\poscx\nc-poscx-evt-pos-cx-device-remote-retain.md">EVT_POS_CX_DEVICE_REMOTE_RETAIN</a> callback function.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ typedef struct _POS_CX_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt593141">POS_CX_ATTRIBUTES_INIT</a>
+<a href="..\poscx\nf-poscx-pos-cx-attributes-init.md">POS_CX_ATTRIBUTES_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt593125">PosCxInit</a>
+<a href="..\poscx\nf-poscx-poscxinit.md">PosCxInit</a>
 </dt>
 </dl>
 <p> </p>

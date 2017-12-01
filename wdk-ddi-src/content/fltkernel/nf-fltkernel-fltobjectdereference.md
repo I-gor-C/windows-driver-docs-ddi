@@ -65,9 +65,7 @@ VOID FltObjectDereference(
 <p>None </p>
 
 ## -remarks
-<p>To add a rundown reference to an opaque filter, instance, or volume pointer, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543382">FltObjectReference</a>. </p>
-
-<p>To add a rundown reference to an opaque filter, instance, or volume pointer, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543382">FltObjectReference</a>. </p>
+<p>To add a rundown reference to an opaque filter, instance, or volume pointer, call <a href="..\fltkernel\nf-fltkernel-fltobjectreference.md">FltObjectReference</a>. </p>
 
 ## -requirements
 <table>
@@ -124,7 +122,7 @@ VOID FltObjectDereference(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543382">FltObjectReference</a>
+<a href="..\fltkernel\nf-fltkernel-fltobjectreference.md">FltObjectReference</a>
 </dt>
 </dl>
 <p> </p>

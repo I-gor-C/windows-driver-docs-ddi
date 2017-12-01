@@ -78,8 +78,6 @@ VOID APIENTRY AgpReleaseVirtual(
 ## -remarks
 <p>The miniport driver must call <a href="..\videoagp\nc-videoagp-pagp-free-virtual.md">AgpFreeVirtual</a> to unmap all committed memory within the range identified by <b>VirtualReserveContext</b> before calling <b>AgpReleaseVirtual</b> to release it.</p>
 
-<p>The miniport driver must call <a href="..\videoagp\nc-videoagp-pagp-free-virtual.md">AgpFreeVirtual</a> to unmap all committed memory within the range identified by <b>VirtualReserveContext</b> before calling <b>AgpReleaseVirtual</b> to release it.</p>
-
 ## -requirements
 <table>
 <tr>

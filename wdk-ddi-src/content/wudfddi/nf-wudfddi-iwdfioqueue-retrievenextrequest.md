@@ -7,7 +7,7 @@ old-location: wdf\iwdfioqueue_retrievenextrequest.htm
 old-project: wdf
 ms.assetid: 2d9dbfc8-7563-4c47-9b34-27cce2b847b2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFIoQueue, RetrieveNextRequest, IWDFIoQueue::RetrieveNextRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ HRESULT  RetrieveNextRequest(
 ### -param <i>ppRequest</i> [out]
 
 <dd>
-<p>A pointer to a buffer that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558985">IWDFIoRequest</a> interface for the next request object, or receives <b>NULL</b> if the queue is empty or if the next request is not found.</p>
+<p>A pointer to a buffer that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a> interface for the next request object, or receives <b>NULL</b> if the queue is empty or if the next request is not found.</p>
 </dd>
 </dl>
 
@@ -68,7 +68,7 @@ HRESULT  RetrieveNextRequest(
 <dt><b>S_OK</b></dt>
 </dl><p>The next I/O request was successfully retrieved from the I/O queue.</p><dl>
 <dt><b>HRESULT_FROM_NT (STATUS_WDF_PAUSED)</b></dt>
-</dl><p>The queue is not dispatching requests. This situation occurs if the device undergoes a power state transition and all of the queues are stopped from dispatching requests or if the driver explicitly called <a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a> to stop dispatching requests. This situation can also occur if the driver attempts to remove a request from a manual queue that is power managed and that is powered down or if the queue is paused.</p><dl>
+</dl><p>The queue is not dispatching requests. This situation occurs if the device undergoes a power state transition and all of the queues are stopped from dispatching requests or if the driver explicitly called <a href="wdf.iwdfioqueue_stop">IWDFIoQueue::Stop</a> to stop dispatching requests. This situation can also occur if the driver attempts to remove a request from a manual queue that is power managed and that is powered down or if the queue is paused.</p><dl>
 <dt><b>HRESULT_FROM_WIN32 (ERROR_NO_MORE_ITEMS)</b></dt>
 </dl><p>No requests were in the queue.</p><dl>
 <dt><b>HRESULT_FROM_NT (STATUS_INVALID_DEVICE_STATE)</b></dt>
@@ -79,12 +79,6 @@ HRESULT  RetrieveNextRequest(
 <p><b>RetrieveNextRequest</b> might also return other HRESULT values.</p>
 
 ## -remarks
-<p>If a driver configures an I/O queue for manual dispatching of I/O requests, the driver can call the <b>RetrieveNextRequest</b> method to obtain the next request from the queue. For more information about manually dispatching I/O requests, see <a href="wdf.configuring_dispatch_mode_for_an_i_o_queue">Configuring Dispatch Mode for an I/O Queue</a>.</p>
-
-<p>If a driver configures an I/O queue for sequential dispatching of I/O requests, the driver can still call the <b>RetrieveNextRequest</b> method to obtain the next request from the queue without receiving an error. Although the framework permits the driver to call <b>RetrieveNextRequest</b> to retrieve a request from a sequential queue, the driver should only call <b>RetrieveNextRequest</b> before the driver completes the current request. Otherwise, if the driver attempts to call <b>RetrieveNextRequest</b> after the driver completes the current request, a race condition might occur. This race condition occurs between the framework's automatic dispatching of the next request from the sequential queue and the driver's call to <b>RetrieveNextRequest</b> to retrieve the next request. </p>
-
-<p>The following code example, which is from the <a href="http://go.microsoft.com/fwlink/p/?linkid=256202">umdf_fx2</a> sample driver, polls the queue for requests for as long as requests can be retrieved. The code first verifies if requests are associated with a specific file object.</p>
-
 <p>If a driver configures an I/O queue for manual dispatching of I/O requests, the driver can call the <b>RetrieveNextRequest</b> method to obtain the next request from the queue. For more information about manually dispatching I/O requests, see <a href="wdf.configuring_dispatch_mode_for_an_i_o_queue">Configuring Dispatch Mode for an I/O Queue</a>.</p>
 
 <p>If a driver configures an I/O queue for sequential dispatching of I/O requests, the driver can still call the <b>RetrieveNextRequest</b> method to obtain the next request from the queue without receiving an error. Although the framework permits the driver to call <b>RetrieveNextRequest</b> to retrieve a request from a sequential queue, the driver should only call <b>RetrieveNextRequest</b> before the driver completes the current request. Otherwise, if the driver attempts to call <b>RetrieveNextRequest</b> after the driver completes the current request, a race condition might occur. This race condition occurs between the framework's automatic dispatching of the next request from the sequential queue and the driver's call to <b>RetrieveNextRequest</b> to retrieve the next request. </p>
@@ -144,15 +138,15 @@ HRESULT  RetrieveNextRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558943">IWDFIoQueue</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
+<a href="wdf.iwdfioqueue_stop">IWDFIoQueue::Stop</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558985">IWDFIoRequest</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoQueue::RetrieveNextRequest method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoQueue::RetrieveNextRequest method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

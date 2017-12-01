@@ -7,7 +7,7 @@ old-location: netvista\rilphoneentrystorelocation_2.htm
 old-project: netvista
 ms.assetid: f9166dfa-e895-4aca-8080-af3cfe9c143f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

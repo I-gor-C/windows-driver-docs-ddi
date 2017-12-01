@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>CcUnpinDataForThread</b> routine releases pages of a cached file whose buffer control block (BCB) was modified by an earlier call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539207">CcSetBcbOwnerPointer</a>.</p>
+<p>The <b>CcUnpinDataForThread</b> routine releases pages of a cached file whose buffer control block (BCB) was modified by an earlier call to <a href="..\ntifs\nf-ntifs-ccsetbcbownerpointer.md">CcSetBcbOwnerPointer</a>.</p>
 
 
 ## -syntax
@@ -64,7 +64,7 @@ VOID CcUnpinDataForThread(
 ### -param <i>ResourceThreadId</i> [in]
 
 <dd>
-<p>Identifies the thread that originally acquired the BCB. Must match the owner pointer used in the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539207">CcSetBcbOwnerPointer</a>.</p>
+<p>Identifies the thread that originally acquired the BCB. Must match the owner pointer used in the call to <a href="..\ntifs\nf-ntifs-ccsetbcbownerpointer.md">CcSetBcbOwnerPointer</a>.</p>
 </dd>
 </dl>
 
@@ -74,15 +74,9 @@ VOID CcUnpinDataForThread(
 ## -remarks
 <p><b>CcUnpinDataForThread</b> releases the BCB for the indicated thread and performs any other necessary cleanup.</p>
 
-<p>Each call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539207">CcSetBcbOwnerPointer</a> must be matched by a subsequent call to <b>CcUnpinDataForThread</b>.</p>
+<p>Each call to <a href="..\ntifs\nf-ntifs-ccsetbcbownerpointer.md">CcSetBcbOwnerPointer</a> must be matched by a subsequent call to <b>CcUnpinDataForThread</b>.</p>
 
-<p><b>CcUnpinDataForThread</b> is functionally equivalent to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539228">CcUnpinData</a>, except that it also releases the BCB resource for the indicated thread.</p>
-
-<p><b>CcUnpinDataForThread</b> releases the BCB for the indicated thread and performs any other necessary cleanup.</p>
-
-<p>Each call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539207">CcSetBcbOwnerPointer</a> must be matched by a subsequent call to <b>CcUnpinDataForThread</b>.</p>
-
-<p><b>CcUnpinDataForThread</b> is functionally equivalent to <a href="https://msdn.microsoft.com/library/windows/hardware/ff539228">CcUnpinData</a>, except that it also releases the BCB resource for the indicated thread.</p>
+<p><b>CcUnpinDataForThread</b> is functionally equivalent to <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>, except that it also releases the BCB resource for the indicated thread.</p>
 
 ## -requirements
 <table>
@@ -139,10 +133,10 @@ VOID CcUnpinDataForThread(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539207">CcSetBcbOwnerPointer</a>
+<a href="..\ntifs\nf-ntifs-ccsetbcbownerpointer.md">CcSetBcbOwnerPointer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539228">CcUnpinData</a>
+<a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
 </dt>
 </dl>
 <p> </p>

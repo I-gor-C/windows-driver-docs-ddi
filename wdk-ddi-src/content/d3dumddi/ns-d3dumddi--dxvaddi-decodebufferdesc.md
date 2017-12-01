@@ -74,7 +74,7 @@ typedef struct _DXVADDI_DECODEBUFFERDESC {
 ### -field <b>CompressedBufferType</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the buffer.</p>
+<p>[in] A <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the buffer.</p>
 </dd>
 
 ### -field <b>BufferIndex</b>
@@ -98,7 +98,7 @@ typedef struct _DXVADDI_DECODEBUFFERDESC {
 ### -field <b>FirstMBaddress</b>
 
 <dd>
-<p>[in] The macroblock address of the first macroblock in the buffer that is passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564012">DXVA_PictureParameters</a> structure. The following table shows examples of macroblock addresses.</p>
+<p>[in] The macroblock address of the first macroblock in the buffer that is passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of the <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a> structure. The following table shows examples of macroblock addresses.</p>
 <table>
 <tr>
 <th>Macroblock</th>
@@ -173,7 +173,7 @@ typedef struct _DXVADDI_DECODEBUFFERDESC {
 <p>Slice-control command</p>
 </td>
 <td>
-<p>The value of the <b>wNumberMBsInSlice</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564049">DXVA_SliceInfo</a> structure in the slice-control buffer.</p>
+<p>The value of the <b>wNumberMBsInSlice</b> member of the <a href="..\dxva\ns-dxva--dxva-sliceinfo.md">DXVA_SliceInfo</a> structure in the slice-control buffer.</p>
 </td>
 </tr>
 <tr>
@@ -215,12 +215,12 @@ typedef struct _DXVADDI_DECODEBUFFERDESC {
 ### -field <b>pCipherCounter</b>
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562920">DXVADDI_PVP_HW_IV</a> structure that contains a 128-bit protected video path (PVP) value. </p>
+<p>[in] A pointer to a <a href="display.dxvaddi_pvp_hw_iv">DXVADDI_PVP_HW_IV</a> structure that contains a 128-bit protected video path (PVP) value. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>An array of DXVADDI_DECODEBUFFERDESC structures is referred to as a <i>buffer description list</i>. When a set of buffers is sent from the host decoder to the hardware accelerator, a buffer description list is sent to describe the buffers. The buffer description list contains one DXVADDI_DECODEBUFFERDESC structure for each buffer in this set. The buffer description list starts with a DXVADDI_DECODEBUFFERDESC structure for the first buffer of the first type, followed by a DXVADDI_DECODEBUFFERDESC structure for the next buffer of the same type, and so on. The buffer description list then continues with a DXVADDI_DECODEBUFFERDESC structure for the first buffer of the next type, and so on. This entire list is contained in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543001">D3DDDIARG_DECODEEXECUTE</a> structure.</p>
+<p>An array of DXVADDI_DECODEBUFFERDESC structures is referred to as a <i>buffer description list</i>. When a set of buffers is sent from the host decoder to the hardware accelerator, a buffer description list is sent to describe the buffers. The buffer description list contains one DXVADDI_DECODEBUFFERDESC structure for each buffer in this set. The buffer description list starts with a DXVADDI_DECODEBUFFERDESC structure for the first buffer of the first type, followed by a DXVADDI_DECODEBUFFERDESC structure for the next buffer of the same type, and so on. The buffer description list then continues with a DXVADDI_DECODEBUFFERDESC structure for the first buffer of the next type, and so on. This entire list is contained in a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a> structure.</p>
 
 <p>Because Microsoft DirectX Video Acceleration (VA) version 2.0 uses Microsoft Direct3D surfaces rather than the private surfaces that DirectX VA 1.0 uses, the user-mode display driver obtains values for the index, width, height, and stride from the given compressed buffer type rather than from the values in the <b>BufferIndex</b>, <b>Width</b>, <b>Height</b>, and <b>Stride</b> members. In fact, the Microsoft Direct3D runtime sets these members to zero.</p>
 
@@ -249,16 +249,16 @@ typedef struct _DXVADDI_DECODEBUFFERDESC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543001">D3DDDIARG_DECODEEXECUTE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564012">DXVA_PictureParameters</a>
+<a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564049">DXVA_SliceInfo</a>
+<a href="..\dxva\ns-dxva--dxva-sliceinfo.md">DXVA_SliceInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562920">DXVADDI_PVP_HW_IV</a>
+<a href="display.dxvaddi_pvp_hw_iv">DXVADDI_PVP_HW_IV</a>
 </dt>
 </dl>
 <p> </p>

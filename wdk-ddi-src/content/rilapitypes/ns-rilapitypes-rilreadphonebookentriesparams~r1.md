@@ -7,7 +7,7 @@ old-location: netvista\rilreadphonebookentriesparams_2.htm
 old-project: netvista
 ms.assetid: 4cf1b9ab-0082-4ad3-9fd5-a29b51ca6bc0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILREADPHONEBOOKENTRIESPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

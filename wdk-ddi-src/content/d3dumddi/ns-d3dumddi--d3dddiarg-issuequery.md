@@ -64,8 +64,8 @@ typedef struct _D3DDDIARG_ISSUEQUERY {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544575">D3DDDI_ISSUEQUERYFLAGS</a> structure that identifies the type of query to issue. The driver can ignore query requests with <b>Flags</b> set to 0. </p>
-<p>For many query types, start query is never specified (that is, the <b>Begin</b> bit-field flag is never set for many query types). For more information about whether the <b>Begin</b> bit-field flag is set for a query type, see the <b>QueryType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542958">D3DDDIARG_CREATEQUERY</a> structure.</p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--d3dddi-issuequeryflags.md">D3DDDI_ISSUEQUERYFLAGS</a> structure that identifies the type of query to issue. The driver can ignore query requests with <b>Flags</b> set to 0. </p>
+<p>For many query types, start query is never specified (that is, the <b>Begin</b> bit-field flag is never set for many query types). For more information about whether the <b>Begin</b> bit-field flag is set for a query type, see the <b>QueryType</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createquery.md">D3DDDIARG_CREATEQUERY</a> structure.</p>
 </dd>
 </dl>
 
@@ -100,7 +100,7 @@ typedef struct _D3DDDIARG_ISSUEQUERY {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createquery.md">CreateQuery</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544575">D3DDDI_ISSUEQUERYFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-issuequeryflags.md">D3DDDI_ISSUEQUERYFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-issuequery.md">IssueQuery</a>

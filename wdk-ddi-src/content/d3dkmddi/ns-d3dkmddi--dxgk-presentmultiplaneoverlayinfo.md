@@ -71,7 +71,7 @@ typedef struct _DXGK_PRESENTMULTIPLANEOVERLAYINFO {
 ### -field <b>pPlaneList</b>
 
 <dd>
-<p>[in] A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh780312">DXGK_PRESENTMULTIPLANEOVERLAYLIST</a> that describes the overlay plane to display.</p>
+<p>[in] A pointer to a structure of type <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-presentmultiplaneoverlaylist.md">DXGK_PRESENTMULTIPLANEOVERLAYLIST</a> that describes the overlay plane to display.</p>
 </dd>
 </dl>
 
@@ -111,7 +111,7 @@ typedef struct _DXGK_PRESENTMULTIPLANEOVERLAYINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780312">DXGK_PRESENTMULTIPLANEOVERLAYLIST</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-presentmultiplaneoverlaylist.md">DXGK_PRESENTMULTIPLANEOVERLAYLIST</a>
 </dt>
 </dl>
 <p> </p>

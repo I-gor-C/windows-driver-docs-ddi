@@ -7,7 +7,7 @@ old-location: netvista\ndismfreesharedmemory.htm
 old-project: netvista
 ms.assetid: 6ab11b97-e422-4ce9-b98b-51496974cb47
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMFreeSharedMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisMFreeSharedMemory (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisMFreeSharedMemory (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMFreeSharedMemory (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMFreeSharedMemory (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -44,7 +40,7 @@ req.iface:
 
 ## -description
 <p><b>NdisMFreeSharedMemory</b> frees memory that was previously allocated by 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff562782">NdisMAllocateSharedMemory</a> or 
+  <a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a> or 
   <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
   NdisMAllocateSharedMemoryAsyncEx</a> by the driver of a DMA NIC.</p>
 
@@ -106,41 +102,7 @@ VOID NdisMFreeSharedMemory(
 
 ## -remarks
 <p>If it has already made a successful call to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562782">NdisMAllocateSharedMemory</a> or 
-    <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
-    NdisMAllocateSharedMemoryAsyncEx</a>, the miniport driver of a DMA device calls 
-    <b>NdisMFreeSharedMemory</b> if any of the following occurs:</p>
-
-<p>Its 
-      <i>MiniportInitializeEx</i> function is unable to initialize the NIC, so this function must release all
-      existing claims on hardware resources for that NIC before it returns control.</p>
-
-<p>The NIC for which the miniport driver allocated the memory is being removed.</p>
-
-<p>The driver is being unloaded, whether because the system is shutting down or because the user
-      reconfigured the network components used in the machine.</p>
-
-<p>The driver allocated additional shared memory with 
-      <b>NdisMAllocateSharedMemoryAsyncEx</b> when I/O demand on a NIC was high but network traffic has now
-      subsided to an average level.</p>
-
-<p>A miniport driver cannot call 
-    <b>NdisMFreeSharedMemory</b> to free a subrange within an allocated shared memory range. The parameters
-    passed to 
-    <b>NdisMFreeSharedMemory</b> must match exactly those that were passed to 
-    <b>NdisMAllocateSharedMemory</b> or 
-    <b>NdisMAllocateSharedMemoryAsyncEx</b>.</p>
-
-<p><b>NdisMFreeSharedMemory</b> cannot be called from a 
-    <a href="..\ndis\nc-ndis-miniport-shutdown.md">MiniportShutdownEx</a> function.</p>
-
-<p>Microsoft Windows Server 2003, Windows XP Service Pack 1, and later versions of Windows allow both
-    bus-master DMA NICs and subordinate DMA NICs to call 
-    <b>NdisMFreeSharedMemory</b>. Prior releases allow only bus-master DMA NICs to call 
-    <b>NdisMFreeSharedMemory</b>.</p>
-
-<p>If it has already made a successful call to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562782">NdisMAllocateSharedMemory</a> or 
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a> or 
     <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
     NdisMAllocateSharedMemoryAsyncEx</a>, the miniport driver of a DMA device calls 
     <b>NdisMFreeSharedMemory</b> if any of the following occurs:</p>
@@ -230,7 +192,7 @@ VOID NdisMFreeSharedMemory(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff563589">NdisMFreeSharedMemory</a>
+<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>, <a href="..\ndis\nf-ndis-ndismfreesharedmemory.md">NdisMFreeSharedMemory</a>
 </td>
 </tr>
 </table>
@@ -251,7 +213,7 @@ VOID NdisMFreeSharedMemory(
 <a href="..\ndis\nc-ndis-miniport-shutdown.md">MiniportShutdownEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562782">NdisMAllocateSharedMemory</a>
+<a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
@@ -260,4 +222,4 @@ VOID NdisMFreeSharedMemory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMFreeSharedMemory function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMFreeSharedMemory function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

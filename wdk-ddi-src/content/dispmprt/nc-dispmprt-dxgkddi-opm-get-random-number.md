@@ -74,7 +74,7 @@ NTSTATUS DxgkDdiOPMGetRandomNumber(
 ### -param <i>RandomNumber</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560906">DXGKMDT_OPM_RANDOM_NUMBER</a> structure that receives the protected output object's 128-bit cryptographically secure random number if <i>DxgkDdiOPMGetRandomNumber</i> returns successfully.</p>
+<p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-random-number.md">DXGKMDT_OPM_RANDOM_NUMBER</a> structure that receives the protected output object's 128-bit cryptographically secure random number if <i>DxgkDdiOPMGetRandomNumber</i> returns successfully.</p>
 <p>If <i>DxgkDdiOPMGetRandomNumber</i> fails, the value that <i>RandomNumber</i> points to is unchanged.</p>
 <p>Each protected output object must have a different 128-bit cryptographically secure random number associated with it. </p>
 </dd>
@@ -84,12 +84,6 @@ NTSTATUS DxgkDdiOPMGetRandomNumber(
 <p><i>DxgkDdiOPMGetRandomNumber</i> returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes that are defined in <i>Ntstatus.h</i>. </p>
 
 ## -remarks
-<p><i>DxgkDdiOPMGetRandomNumber</i> is called only once for each protected output and is never called after the call to the <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-set-signing-key-and-sequence-numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> function occurs.</p>
-
-<p>For more information about cryptographically secure random numbers, see section 2.8 in <i>Applied Cryptography</i>, Second Edition.</p>
-
-<p><i>DxgkDdiOPMGetRandomNumber</i> should be made pageable.</p>
-
 <p><i>DxgkDdiOPMGetRandomNumber</i> is called only once for each protected output and is never called after the call to the <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-set-signing-key-and-sequence-numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> function occurs.</p>
 
 <p>For more information about cryptographically secure random numbers, see section 2.8 in <i>Applied Cryptography</i>, Second Edition.</p>
@@ -140,7 +134,7 @@ NTSTATUS DxgkDdiOPMGetRandomNumber(
 <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-set-signing-key-and-sequence-numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560906">DXGKMDT_OPM_RANDOM_NUMBER</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-random-number.md">DXGKMDT_OPM_RANDOM_NUMBER</a>
 </dt>
 </dl>
 <p> </p>

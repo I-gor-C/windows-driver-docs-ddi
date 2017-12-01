@@ -7,7 +7,7 @@ old-location: kernel\rtlbytetoint8.htm
 old-project: kernel
 ms.assetid: 865E62CA-0D73-4957-88AA-EEF5910AD916
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlByteToInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices

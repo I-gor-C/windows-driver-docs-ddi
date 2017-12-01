@@ -7,7 +7,7 @@ old-location: netvista\rilcallbarringstatusparamstype_2.htm
 old-project: netvista
 ms.assetid: ed54bc8d-0cf2-4d6a-935c-b5b2a539eea0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

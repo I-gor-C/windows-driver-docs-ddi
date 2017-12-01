@@ -91,18 +91,7 @@ HRESULT GetNextStream(
 
 <p>An image processing filter's implementation of <b>IWiaTransferCallback::GetNextStream</b> must delegate to the application's <b>IWiaTransferCallback::GetNextStream</b> method. The image processing filter then uses the stream returned by the application callback's <b>IWiaTransferCallback::GetNextStream</b> implementation to create its own stream (the "filtering stream") that it passes back to the WIA service. </p>
 
-<p>In its <b>IWiaTransferCallback::GetNextStream</b> implementation, the image processing filter should read which properties are needed for its image processing from the item for which the image is being acquired. The filter must not read the properties directly from the <i>pWiaItem2</i> passed into <a href="https://msdn.microsoft.com/library/windows/hardware/ff543916">IWiaImageFilter::InitializeFilter</a>; rather it must call <b>IWiaItem2::FindItemByName </b>(described in the Windows SDK documentation) on this WIA item to obtain the actual WIA item. The reason is that during a folder transfer the images acquired correspond to the child items of <i>pWiaItem2</i> rather than to <i>pWiaItem2</i> itself. </p>
-
-<p>
-<div class="alert"><b>Note</b>    This method is not called by the preview component during <b>IWiaPreview::UpdatePreview</b>.</div>
-<div> </div>
-</p>
-
-<p>An image processing filter's implementation of <b>IWiaTransferCallback::GetNextStream</b> and <b>IWiaTransferCallback::TransferCallback</b> are called during image acquisition, when the WIA mini-driver asks for the destination stream from the client and when the mini-driver sends progress messages back to the application.</p>
-
-<p>An image processing filter's implementation of <b>IWiaTransferCallback::GetNextStream</b> must delegate to the application's <b>IWiaTransferCallback::GetNextStream</b> method. The image processing filter then uses the stream returned by the application callback's <b>IWiaTransferCallback::GetNextStream</b> implementation to create its own stream (the "filtering stream") that it passes back to the WIA service. </p>
-
-<p>In its <b>IWiaTransferCallback::GetNextStream</b> implementation, the image processing filter should read which properties are needed for its image processing from the item for which the image is being acquired. The filter must not read the properties directly from the <i>pWiaItem2</i> passed into <a href="https://msdn.microsoft.com/library/windows/hardware/ff543916">IWiaImageFilter::InitializeFilter</a>; rather it must call <b>IWiaItem2::FindItemByName </b>(described in the Windows SDK documentation) on this WIA item to obtain the actual WIA item. The reason is that during a folder transfer the images acquired correspond to the child items of <i>pWiaItem2</i> rather than to <i>pWiaItem2</i> itself. </p>
+<p>In its <b>IWiaTransferCallback::GetNextStream</b> implementation, the image processing filter should read which properties are needed for its image processing from the item for which the image is being acquired. The filter must not read the properties directly from the <i>pWiaItem2</i> passed into <a href="image.iwiaimagefilter_initializefilter">IWiaImageFilter::InitializeFilter</a>; rather it must call <b>IWiaItem2::FindItemByName </b>(described in the Windows SDK documentation) on this WIA item to obtain the actual WIA item. The reason is that during a folder transfer the images acquired correspond to the child items of <i>pWiaItem2</i> rather than to <i>pWiaItem2</i> itself. </p>
 
 <p>
 <div class="alert"><b>Note</b>    This method is not called by the preview component during <b>IWiaPreview::UpdatePreview</b>.</div>
@@ -136,7 +125,7 @@ HRESULT GetNextStream(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543916">IWiaImageFilter::InitializeFilter</a>
+<a href="image.iwiaimagefilter_initializefilter">IWiaImageFilter::InitializeFilter</a>
 </dt>
 </dl>
 <p> </p>

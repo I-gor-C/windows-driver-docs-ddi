@@ -7,7 +7,7 @@ old-location: netvista\rilpositioninfolteparammask_2.htm
 old-project: netvista
 ms.assetid: 9c71420f-8b85-4f31-9a08-7f363be75cc0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

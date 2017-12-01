@@ -108,10 +108,6 @@ BOOL WcsCheckColors(
 
 <p>This function will fail if an ICC transform is used.</p>
 
-<p>If the input and the output color data types are not compatible with the color transform, this function will convert the input color data as required.</p>
-
-<p>This function will fail if an ICC transform is used.</p>
-
 ## -requirements
 <table>
 <tr>

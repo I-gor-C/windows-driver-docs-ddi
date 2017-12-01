@@ -7,7 +7,7 @@ old-location: kernel\cptableinfo.htm
 old-project: kernel
 ms.assetid: 20EE0017-760E-48A1-8658-2A0278843074
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: CPTABLEINFO, CPTABLEINFO, *PCPTABLEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

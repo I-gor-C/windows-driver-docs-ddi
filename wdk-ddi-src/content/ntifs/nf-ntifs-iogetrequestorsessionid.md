@@ -64,13 +64,13 @@ NTSTATUS IoGetRequestorSessionId(
 ### -param <i>pSessionId</i> [out]
 
 <dd>
-<p>A pointer to a caller-allocated variable that receives the session ID for the process that requested the I/O operation. If the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548391">IoGetRequestorProcessId</a> fails, this variable is set to -1.</p>
+<p>A pointer to a caller-allocated variable that receives the session ID for the process that requested the I/O operation. If the call to <a href="..\ntifs\nf-ntifs-iogetrequestorprocessid.md">IoGetRequestorProcessId</a> fails, this variable is set to -1.</p>
 </dd>
 </dl>
 
 ## -returns
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548391">IoGetRequestorProcessId</a> returns STATUS_SUCCESS if the session ID is successfully returned, STATUS_UNSUCCESSFUL otherwise. STATUS_UNSUCCESSFUL is an error NTSTATUS value. </p>
+<a href="..\ntifs\nf-ntifs-iogetrequestorprocessid.md">IoGetRequestorProcessId</a> returns STATUS_SUCCESS if the session ID is successfully returned, STATUS_UNSUCCESSFUL otherwise. STATUS_UNSUCCESSFUL is an error NTSTATUS value. </p>
 
 ## -remarks
 
@@ -138,10 +138,10 @@ NTSTATUS IoGetRequestorSessionId(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548385">IoGetRequestorProcess</a>
+<a href="..\ntifs\nf-ntifs-iogetrequestorprocess.md">IoGetRequestorProcess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548391">IoGetRequestorProcessId</a>
+<a href="..\ntifs\nf-ntifs-iogetrequestorprocessid.md">IoGetRequestorProcessId</a>
 </dt>
 </dl>
 <p> </p>

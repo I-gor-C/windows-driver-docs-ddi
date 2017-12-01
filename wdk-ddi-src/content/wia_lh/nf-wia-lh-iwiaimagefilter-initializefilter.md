@@ -86,16 +86,6 @@ HRESULT InitializeFilter(
 
 <p>The <b>IWiaItem2, IWiaPreview</b> and <b>IWiaTransfer</b> interfaces are described in the Windows SDK documentation.</p>
 
-<p>This method is called by the COM proxy object (described in the Microsoft Windows SDK documentation) before the download call reaches the WIA service. This happens in two cases: when an application calls <b>IWiaTransfer::Download</b> method and when an application calls the <b>IWiaPreview::GetNewPreview</b> method. </p>
-
-<p>All that <b>IWiaImageFilter::InitializeFilter</b> is required to do is to store the references to <i>pWiaItem2</i> and <i>pWiaTransferCallback</i> that are passed into it. These interface pointers should be stored as member variables in this method and <b>AddRef</b> should be called for each interface pointer. These two interface pointers are needed in the filter's implementation of <b>IWiaTransferCallback::TransferCallback</b> and <b>IWiaTransferCallback::GetNextStream</b> methods.</p>
-
-<p>The <b>IWiaTransferCallback</b> and <b>IWiaPreview</b> interfaces are described in the Windows SDK documentation.</p>
-
-<p>This method cannot be invoked directly by the application.</p>
-
-<p>The <b>IWiaItem2, IWiaPreview</b> and <b>IWiaTransfer</b> interfaces are described in the Windows SDK documentation.</p>
-
 ## -requirements
 <table>
 <tr>

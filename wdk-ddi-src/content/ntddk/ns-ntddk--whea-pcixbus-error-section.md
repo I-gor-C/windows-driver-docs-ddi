@@ -67,13 +67,13 @@ typedef struct _WHEA_PCIXBUS_ERROR_SECTION {
 ### -field <b>ValidBits</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560585">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-pcixbus-error-section-validbits.md">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.</p>
 </dd>
 
 ### -field <b>ErrorStatus</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560514">WHEA_ERROR_STATUS</a> structure that contains PCI or PCI-X bus error status data.</p>
+<p>A <a href="..\ntddk\ns-ntddk--whea-error-status.md">WHEA_ERROR_STATUS</a> structure that contains PCI or PCI-X bus error status data.</p>
 <p>This member contains valid data only if the <b>ValidBits.ErrorStatus</b> bit is set.</p>
 </dd>
 
@@ -273,7 +273,7 @@ typedef struct _WHEA_PCIXBUS_ERROR_SECTION {
 </dl>
 
 ## -remarks
-<p>The WHEA_PCIXBUS_ERROR_SECTION structure describes the error data that is contained in a PCI/PCI-X bus error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a PCI/PCI-X bus error section only if the <b>SectionType </b>member of one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560496">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains PCIXBUS_ERROR_SECTION_GUID.</p>
+<p>The WHEA_PCIXBUS_ERROR_SECTION structure describes the error data that is contained in a PCI/PCI-X bus error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a PCI/PCI-X bus error section only if the <b>SectionType </b>member of one of the <a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains PCIXBUS_ERROR_SECTION_GUID.</p>
 
 ## -requirements
 <table>
@@ -301,16 +301,16 @@ typedef struct _WHEA_PCIXBUS_ERROR_SECTION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+<a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560496">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk--whea-error-record-section-descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560514">WHEA_ERROR_STATUS</a>
+<a href="..\ntddk\ns-ntddk--whea-error-status.md">WHEA_ERROR_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560585">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a>
+<a href="..\ntddk\ns-ntddk--whea-pcixbus-error-section-validbits.md">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a>
 </dt>
 </dl>
 <p> </p>

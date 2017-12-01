@@ -7,7 +7,7 @@ old-location: netvista\miniportcooidrequest.htm
 old-project: netvista
 ms.assetid: 903bcdc5-9d42-4067-a054-057edc95ccf7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,7 +83,7 @@ NDIS_STATUS MiniportCoOidRequest(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure that contains
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure that contains
      both the buffer and the request packet for the miniport driver to handle. Depending on the request, the
      driver returns requested information in the structure that this parameter points to.</p>
 </dd>
@@ -110,7 +110,7 @@ NDIS_STATUS MiniportCoOidRequest(
 <dt><b>NDIS_STATUS_INVALID_LENGTH</b></dt>
 </dl><p>The value that was specified in the 
        <b>InformationBufferLength</b> member of the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure at 
+       <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure at 
        <i>OidRequest</i> is incorrect for the specified OID_<i>XXX</i> code.</p><dl>
 <dt><b>NDIS_STATUS_INVALID_DATA</b></dt>
 </dl><p>One or more of the parameters that were specified for the request at 
@@ -138,7 +138,7 @@ NDIS_STATUS MiniportCoOidRequest(
 
 <p>To register 
     <i>MiniportCoOidRequest</i>, miniport drivers call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564550">NdisSetOptionalHandlers</a> function
+    <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function
     from the 
     <a href="netvista.miniportsetoptions">MiniportSetOptions</a> function. In 
     <i>MiniportSetOptions</i>, the miniport driver initializes an 
@@ -150,56 +150,11 @@ NDIS_STATUS MiniportCoOidRequest(
 <p>NDIS calls the 
     <i>MiniportCoOidRequest</i> function either on its own behalf or on behalf of a bound protocol driver that
     called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561711">NdisCoOidRequest</a> function. Miniport
+    <a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a> function. Miniport
     drivers should examine the request supplied at 
     <i>OidRequest</i> and take the action requested. For more information about the OIDs that miniport drivers
     handle, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566707">NDIS OIDs</a>.</p>
-
-<p>Note that NDIS does not validate the OID-specific contents at 
-    <i>OidRequest</i> . Therefore, the driver itself must validate these contents. If the driver determines
-    that the value to be set is out of bounds, it should fail the request and return
-    NDIS_STATUS_INVALID_DATA.</p>
-
-<p>If 
-    <i>MiniportCoOidRequest</i> returns NDIS_STATUS_PENDING, NDIS can call 
-    <i>MiniportCoOidRequest</i> with another request, for the miniport adapter specified at 
-    <i>MiniportAdapterContext</i>, before the pending request is completed. NDIS does not serialize connection
-    oriented OID requests.</p>
-
-<p>To define a <i>MiniportCoOidRequest</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="NULL">Code Analysis for Drivers</a>, <a href="NULL">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.</p>
-
-<p>For example, to define a <i>MiniportCoOidRequest</i> function that is named "MyCoOidRequest", use the <b>MINIPORT_CO_OID_REQUEST</b> type as shown in this code example:</p>
-
-<p>Then, implement your function as follows:</p>
-
-<p>The <b>MINIPORT_CO_OID_REQUEST</b> function type is defined in the Ndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>MINIPORT_CO_OID_REQUEST</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="NULL">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
-
-For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>. </p>
-
-<p>NDIS calls the 
-    <i>MiniportCoOidRequest</i> function to handle an OID request to query or set information in a CoNDIS
-    miniport driver.</p>
-
-<p>To register 
-    <i>MiniportCoOidRequest</i>, miniport drivers call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564550">NdisSetOptionalHandlers</a> function
-    from the 
-    <a href="netvista.miniportsetoptions">MiniportSetOptions</a> function. In 
-    <i>MiniportSetOptions</i>, the miniport driver initializes an 
-    <a href="..\ndis\ns-ndis--ndis-miniport-co-characteristics.md">
-    NDIS_MINIPORT_CO_CHARACTERISTICS</a> structure and passes it at the 
-    <i>OptionalHandlers</i> parameter of 
-    <b>NdisSetOptionalHandlers</b>.</p>
-
-<p>NDIS calls the 
-    <i>MiniportCoOidRequest</i> function either on its own behalf or on behalf of a bound protocol driver that
-    called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561711">NdisCoOidRequest</a> function. Miniport
-    drivers should examine the request supplied at 
-    <i>OidRequest</i> and take the action requested. For more information about the OIDs that miniport drivers
-    handle, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566707">NDIS OIDs</a>.</p>
+    <a href="netvista.ndis_oids">NDIS OIDs</a>.</p>
 
 <p>Note that NDIS does not validate the OID-specific contents at 
     <i>OidRequest</i> . Therefore, the driver itself must validate these contents. If the driver determines
@@ -281,18 +236,18 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
    NDIS_MINIPORT_CO_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561711">NdisCoOidRequest</a>
+<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563568">NdisMCoOidRequestComplete</a>
+<a href="..\ndis\nf-ndis-ndismcooidrequestcomplete.md">NdisMCoOidRequestComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564550">NdisSetOptionalHandlers</a>
+<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_CO_OID_REQUEST callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_CO_OID_REQUEST callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

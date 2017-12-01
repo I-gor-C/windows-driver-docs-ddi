@@ -67,8 +67,6 @@ HRESULT WINAPI DrvPopulateFilterServices(
 ## -remarks
 <p>The <a href="https://msdn.microsoft.com/7567c514-3034-4db0-9622-31d14eb3772e">XPSDrv printer driver</a> can specify filter service provider module using the &lt;<i>FilterServiceProvider</i>&gt;  or &lt;<i>OptionalFilterServiceProvider</i>&gt; element in the <a href="NULL">filter pipeline configuration file</a>.   The service provider module must export the <b>DrvPopulateFilterServices</b> function.</p>
 
-<p>The <a href="https://msdn.microsoft.com/7567c514-3034-4db0-9622-31d14eb3772e">XPSDrv printer driver</a> can specify filter service provider module using the &lt;<i>FilterServiceProvider</i>&gt;  or &lt;<i>OptionalFilterServiceProvider</i>&gt; element in the <a href="NULL">filter pipeline configuration file</a>.   The service provider module must export the <b>DrvPopulateFilterServices</b> function.</p>
-
 ## -requirements
 <table>
 <tr>

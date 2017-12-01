@@ -7,7 +7,7 @@ old-location: audio\iportclsruntimepower.htm
 old-project: audio
 ms.assetid: 8D03B2A0-6C8C-4EBE-86F4-70C8DE179947
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcUnregisterIoTimeout
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265126">RegisterPowerControlCallback</a>
+<a href="audio.iportclsruntimepower_registerpowercontrolcallback">RegisterPowerControlCallback</a>
 </td>
 <td align="left" width="63%">
 <p>The port class driver (PortCls) uses the <code>RegisterPowerControlCallback</code>  method to register a power control callback.</p>
@@ -71,7 +71,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265127">SendPowerControl</a>
+<a href="audio.iportclsruntimepower_sendpowercontrol">SendPowerControl</a>
 </td>
 <td align="left" width="63%">
 <p>The port class driver (PortCls) uses the <code>SendPowerControl</code>  method to send power control codes to the audio adapter.</p>
@@ -79,7 +79,7 @@ req.iface:
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265128">UnregisterPowerControlCallback</a>
+<a href="audio.iportclsruntimepower_unregisterpowercontrolcallback">UnregisterPowerControlCallback</a>
 </td>
 <td align="left" width="63%">
 <p>The port class driver (PortCls) uses the <code>UnregisterPowerControlCallback</code>  method to unregister a power control callback.</p>

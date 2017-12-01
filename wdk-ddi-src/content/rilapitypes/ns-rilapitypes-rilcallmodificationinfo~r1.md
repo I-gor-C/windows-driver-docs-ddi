@@ -7,7 +7,7 @@ old-location: netvista\rilcallmodificationinfo_2.htm
 old-project: netvista
 ms.assetid: 2e17e480-325a-4a7c-84b8-07775ddd52bc
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCALLMODIFICATIONINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

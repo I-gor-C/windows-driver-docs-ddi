@@ -73,17 +73,11 @@ VOID VideoPortAcquireSpinLockAtDpcLevel(
 <p>None</p>
 
 ## -remarks
-<p>Miniport drivers call <b>VideoPortAcquireSpinLockAtDpcLevel</b> instead of <a href="https://msdn.microsoft.com/library/windows/hardware/ff570175">VideoPortAcquireSpinLock</a> for better driver performance if and only if they are already running at IRQL = DISPATCH_LEVEL.</p>
+<p>Miniport drivers call <b>VideoPortAcquireSpinLockAtDpcLevel</b> instead of <a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a> for better driver performance if and only if they are already running at IRQL = DISPATCH_LEVEL.</p>
 
 <p>If a miniport driver is running at IRQL &lt; DISPATCH_LEVEL, it should call <b>VideoPortAcquireSpinLock</b> to have IRQL raised by that routine. <b>VideoPortAcquireSpinLockAtDpcLevel</b> requires the caller to be running already at IRQL = DISPATCH_LEVEL, so no raise is necessary.</p>
 
-<p>The caller should release the spin lock with <a href="https://msdn.microsoft.com/library/windows/hardware/ff570358">VideoPortReleaseSpinLockFromDpcLevel</a> as quickly as possible.</p>
-
-<p>Miniport drivers call <b>VideoPortAcquireSpinLockAtDpcLevel</b> instead of <a href="https://msdn.microsoft.com/library/windows/hardware/ff570175">VideoPortAcquireSpinLock</a> for better driver performance if and only if they are already running at IRQL = DISPATCH_LEVEL.</p>
-
-<p>If a miniport driver is running at IRQL &lt; DISPATCH_LEVEL, it should call <b>VideoPortAcquireSpinLock</b> to have IRQL raised by that routine. <b>VideoPortAcquireSpinLockAtDpcLevel</b> requires the caller to be running already at IRQL = DISPATCH_LEVEL, so no raise is necessary.</p>
-
-<p>The caller should release the spin lock with <a href="https://msdn.microsoft.com/library/windows/hardware/ff570358">VideoPortReleaseSpinLockFromDpcLevel</a> as quickly as possible.</p>
+<p>The caller should release the spin lock with <a href="..\video\nf-video-videoportreleasespinlockfromdpclevel.md">VideoPortReleaseSpinLockFromDpcLevel</a> as quickly as possible.</p>
 
 ## -requirements
 <table>
@@ -148,10 +142,10 @@ VOID VideoPortAcquireSpinLockAtDpcLevel(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570175">VideoPortAcquireSpinLock</a>
+<a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570358">VideoPortReleaseSpinLockFromDpcLevel</a>
+<a href="..\video\nf-video-videoportreleasespinlockfromdpclevel.md">VideoPortReleaseSpinLockFromDpcLevel</a>
 </dt>
 </dl>
 <p> </p>

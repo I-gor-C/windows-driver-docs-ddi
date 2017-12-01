@@ -65,14 +65,14 @@ typedef struct _DXVA_TCoefSingle {
 ### -field <a id="TCoefIDX"></a><a id="tcoefidx"></a><a id="TCOEFIDX"></a><i>TCoefIDX</i>
 
 <dd>
-<p>Specifies the scan index of the coefficient in the block, as determined from the <b>bConfigHostInverseScan</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> structure. This field is in the 15 most significant bits of the <b>wIndexWithEOB </b>member.</p>
+<p>Specifies the scan index of the coefficient in the block, as determined from the <b>bConfigHostInverseScan</b> member of the <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure. This field is in the 15 most significant bits of the <b>wIndexWithEOB </b>member.</p>
 <p>There are two ways that <i>TCoefIDX</i> can be used:</p>
 <ol>
 <li>
-<p>Run-length ordering: When <b>bConfigHostInverseScan</b> is zero, the <i>MBscanMethod</i> element of the macroblock control command indicates a zigzag, alternate-vertical, or alternate-horizontal inverse scan. These macroblock control commands are defined in the following structures: <a href="https://msdn.microsoft.com/library/windows/hardware/ff563989">DXVA_MBctrl_I_OffHostIDCT_1</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff563997">DXVA_MBctrl_P_OffHostIDCT_1</a>. In this case, <i>TCoefIDX</i> contains the number of zero-valued coefficients that precede the current coefficient in the specified scan order, subsequent to the last transmitted coefficient for the block (or relative to the start of the block if none precede it). Any remaining coefficients after the last sent coefficient in the inverse-scan order are implied to have the value zero.</p>
+<p>Run-length ordering: When <b>bConfigHostInverseScan</b> is zero, the <i>MBscanMethod</i> element of the macroblock control command indicates a zigzag, alternate-vertical, or alternate-horizontal inverse scan. These macroblock control commands are defined in the following structures: <a href="..\dxva\ns-dxva--dxva-mbctrl-i-offhostidct-1.md">DXVA_MBctrl_I_OffHostIDCT_1</a> or <a href="..\dxva\ns-dxva--dxva-mbctrl-p-offhostidct-1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>. In this case, <i>TCoefIDX</i> contains the number of zero-valued coefficients that precede the current coefficient in the specified scan order, subsequent to the last transmitted coefficient for the block (or relative to the start of the block if none precede it). Any remaining coefficients after the last sent coefficient in the inverse-scan order are implied to have the value zero.</p>
 </li>
 <li>
-<p>Arbitrary ordering: When <b>bConfigHostInverseScan</b> is 1, the <i>MBscanMethod</i> element of the macroblock control command indicates arbitrary ordering. These macroblock control commands are defined in the following structures: <a href="https://msdn.microsoft.com/library/windows/hardware/ff563989">DXVA_MBctrl_I_OffHostIDCT_1</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff563997">DXVA_MBctrl_P_OffHostIDCT_1</a>. In this case, <i>TCoefIDX</i> simply contains the raster index of the coefficient within the block (TCoefIDX = u + 8 * v, where u and v are the transform-domain horizontal and vertical frequency coordinates), and any coefficients that are not sent are implied to have the value 0.</p>
+<p>Arbitrary ordering: When <b>bConfigHostInverseScan</b> is 1, the <i>MBscanMethod</i> element of the macroblock control command indicates arbitrary ordering. These macroblock control commands are defined in the following structures: <a href="..\dxva\ns-dxva--dxva-mbctrl-i-offhostidct-1.md">DXVA_MBctrl_I_OffHostIDCT_1</a> and <a href="..\dxva\ns-dxva--dxva-mbctrl-p-offhostidct-1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>. In this case, <i>TCoefIDX</i> simply contains the raster index of the coefficient within the block (TCoefIDX = u + 8 * v, where u and v are the transform-domain horizontal and vertical frequency coordinates), and any coefficients that are not sent are implied to have the value 0.</p>
 </li>
 </ol>
 <p><i>TCoefIDX</i> must always be less than 64.</p>
@@ -94,7 +94,7 @@ typedef struct _DXVA_TCoefSingle {
 </dl>
 
 ## -remarks
-<p>The DXVA_TCoefSingle structure is used whenever the <i>HostResidDiff</i> flag (bit 10 in the <b>wMBtype</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563997">DXVA_MBctrl_P_OffHostIDCT_1</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff563989">DXVA_MBctrl_I_OffHostIDCT_1</a> structure) is 1 and the <b>bConfig4GroupedCoefs</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> structure is zero.</p>
+<p>The DXVA_TCoefSingle structure is used whenever the <i>HostResidDiff</i> flag (bit 10 in the <b>wMBtype</b> member of the <a href="..\dxva\ns-dxva--dxva-mbctrl-p-offhostidct-1.md">DXVA_MBctrl_P_OffHostIDCT_1</a> or <a href="..\dxva\ns-dxva--dxva-mbctrl-i-offhostidct-1.md">DXVA_MBctrl_I_OffHostIDCT_1</a> structure) is 1 and the <b>bConfig4GroupedCoefs</b> member of the <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure is zero.</p>
 
 ## -requirements
 <table>
@@ -113,13 +113,13 @@ typedef struct _DXVA_TCoefSingle {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563997">DXVA_MBctrl_P_OffHostIDCT_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-p-offhostidct-1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563989">DXVA_MBctrl_I_OffHostIDCT_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-i-offhostidct-1.md">DXVA_MBctrl_I_OffHostIDCT_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a>
+<a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a>
 </dt>
 </dl>
 <p> </p>

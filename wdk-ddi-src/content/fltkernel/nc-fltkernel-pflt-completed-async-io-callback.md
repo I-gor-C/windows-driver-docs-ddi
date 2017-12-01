@@ -64,7 +64,7 @@ typedef VOID ( *PFLT_COMPLETED_ASYNC_IO_CALLBACK)(
 ### -param <i>Context</i> [in]
 
 <dd>
-<p>Context pointer that the minifilter driver passed as a parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a>. </p>
+<p>Context pointer that the minifilter driver passed as a parameter to <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>, <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>, or <a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>. </p>
 </dd>
 </dl>
 
@@ -72,21 +72,7 @@ typedef VOID ( *PFLT_COMPLETED_ASYNC_IO_CALLBACK)(
 <p>None </p>
 
 ## -remarks
-<p>When a minifilter driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a> to initiate an asynchronous I/O operation, the minifilter driver can optionally specify a callback routine to be called when the I/O operation is completed. This is done by specifying a routine of type PFLT_COMPLETED_ASYNC_IO_CALLBACK for the <i>CallbackRoutine</i> parameter. </p>
-
-<p>When the I/O operation is completed, this callback routine is called in an arbitrary thread context, at IRQL &lt;= DISPATCH_LEVEL. </p>
-
-<p>Because the PFLT_COMPLETED_ASYNC_IO_CALLBACK routine can be called at IRQL DISPATCH_LEVEL, it is subject to the following constraints: </p>
-
-<p>It cannot safely call any kernel-mode routines that require a lower IRQL. </p>
-
-<p>Any data structures used in this routine must be allocated from nonpaged pool. </p>
-
-<p>It cannot be made pageable. </p>
-
-<p>It cannot acquire resources, mutexes, or fast mutexes. However, it can acquire spin locks. </p>
-
-<p>When a minifilter driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a> to initiate an asynchronous I/O operation, the minifilter driver can optionally specify a callback routine to be called when the I/O operation is completed. This is done by specifying a routine of type PFLT_COMPLETED_ASYNC_IO_CALLBACK for the <i>CallbackRoutine</i> parameter. </p>
+<p>When a minifilter driver calls <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>, <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a> or <a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a> to initiate an asynchronous I/O operation, the minifilter driver can optionally specify a callback routine to be called when the I/O operation is completed. This is done by specifying a routine of type PFLT_COMPLETED_ASYNC_IO_CALLBACK for the <i>CallbackRoutine</i> parameter. </p>
 
 <p>When the I/O operation is completed, this callback routine is called in an arbitrary thread context, at IRQL &lt;= DISPATCH_LEVEL. </p>
 
@@ -135,16 +121,16 @@ typedef VOID ( *PFLT_COMPLETED_ASYNC_IO_CALLBACK)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
 </dt>
 </dl>
 <p> </p>

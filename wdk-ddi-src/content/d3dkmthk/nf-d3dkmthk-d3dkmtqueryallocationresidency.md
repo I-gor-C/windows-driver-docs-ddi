@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTQueryAllocationResidency(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548212">D3DKMT_QUERYALLOCATIONRESIDENCY</a> structure that contains information for retrieving the residency status of a resource or list of allocations.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-queryallocationresidency.md">D3DKMT_QUERYALLOCATIONRESIDENCY</a> structure that contains information for retrieving the residency status of a resource or list of allocations.</p>
 </dd>
 </dl>
 
@@ -134,7 +134,7 @@ NTSTATUS APIENTRY D3DKMTQueryAllocationResidency(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548212">D3DKMT_QUERYALLOCATIONRESIDENCY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-queryallocationresidency.md">D3DKMT_QUERYALLOCATIONRESIDENCY</a>
 </dt>
 </dl>
 <p> </p>

@@ -89,7 +89,7 @@ typedef struct _D3DKMT_CHECKOCCLUSION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546757">D3DKMTCheckOcclusion</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcheckocclusion.md">D3DKMTCheckOcclusion</a>
 </dt>
 </dl>
 <p> </p>

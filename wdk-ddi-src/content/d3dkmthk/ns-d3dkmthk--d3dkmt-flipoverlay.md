@@ -117,7 +117,7 @@ typedef struct _D3DKMT_FLIPOVERLAY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546949">D3DKMTFlipOverlay</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtflipoverlay.md">D3DKMTFlipOverlay</a>
 </dt>
 </dl>
 <p> </p>

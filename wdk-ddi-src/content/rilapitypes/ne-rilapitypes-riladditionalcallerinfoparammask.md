@@ -7,7 +7,7 @@ old-location: netvista\riladditionalcallerinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 1de91e12-1f8c-48fa-85e4-c3cb061fce78
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

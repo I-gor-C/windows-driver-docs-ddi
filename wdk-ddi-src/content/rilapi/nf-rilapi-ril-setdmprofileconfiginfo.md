@@ -7,7 +7,7 @@ old-location: netvista\ril_setdmprofileconfiginfo.htm
 old-project: netvista
 ms.assetid: 4d2ab950-a045-4b5a-be9b-0b80c442e63d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_SetDMProfileConfigInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\ril_managecalls_v2.htm
 old-project: netvista
 ms.assetid: d0fd4af9-e97e-4c2b-aea3-87d45b192568
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_ManageCalls_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices

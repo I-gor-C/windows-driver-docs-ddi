@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure is used in conjunction with <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> to return temperature data from a storage device or adapter. </p>
+<p>This structure is used in conjunction with <a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to return temperature data from a storage device or adapter. </p>
 
 
 ## -syntax
@@ -88,7 +88,7 @@ typedef struct _STORAGE_TEMPERATURE_DATA_DESCRIPTOR {
 ### -field <b>InfoCount</b>
 
 <dd>
-<p>Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/mt651018">STORAGE_TEMPERATURE_INFO</a> structures reported in <b>TemperatureInfo</b>. More than one set of temperature data may be returned when there are multiple sensors in the drive.</p>
+<p>Specifies the number of <a href="..\ntddstor\ns-ntddstor--storage-temperature-info.md">STORAGE_TEMPERATURE_INFO</a> structures reported in <b>TemperatureInfo</b>. More than one set of temperature data may be returned when there are multiple sensors in the drive.</p>
 </dd>
 
 ### -field <b>Reserved0</b>
@@ -106,7 +106,7 @@ typedef struct _STORAGE_TEMPERATURE_DATA_DESCRIPTOR {
 ### -field <b>TemperatureInfo[ANYSIZE_ARRAY]</b>
 
 <dd>
-<p>Device temperature data, of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt651018">STORAGE_TEMPERATURE_INFO</a>.</p>
+<p>Device temperature data, of type <a href="..\ntddstor\ns-ntddstor--storage-temperature-info.md">STORAGE_TEMPERATURE_INFO</a>.</p>
 </dd>
 </dl>
 
@@ -146,16 +146,16 @@ typedef struct _STORAGE_TEMPERATURE_DATA_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566997">STORAGE_PROPERTY_QUERY</a>
+<a href="..\ntddstor\ns-ntddstor--storage-property-query.md">STORAGE_PROPERTY_QUERY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
+<a href="storage.storage_property_id">STORAGE_PROPERTY_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt651018">STORAGE_TEMPERATURE_INFO</a>
+<a href="..\ntddstor\ns-ntddstor--storage-temperature-info.md">STORAGE_TEMPERATURE_INFO</a>
 </dt>
 </dl>
 <p> </p>

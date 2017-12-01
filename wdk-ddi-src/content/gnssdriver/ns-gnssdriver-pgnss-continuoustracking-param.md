@@ -7,7 +7,7 @@ old-location: sensors\gnss_continuoustracking_param.htm
 old-project: sensors
 ms.assetid: D69D317C-5B42-4709-87AF-4323DF2EBE2D
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_CONTINUOUSTRACKING_PARAM, GNSS_CONTINUOUSTRACKING_PARAM, *PGNSS_CONTINUOUSTRACKING_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices

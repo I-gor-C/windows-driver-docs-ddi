@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>For the disk represented by <i>DeviceObject</i>, the <b>IoSetPartitionInformationEx</b> routine initializes a partition table entry with the information specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566194">SET_PARTITION_INFORMATION_EX</a> structure.</p>
+<p>For the disk represented by <i>DeviceObject</i>, the <b>IoSetPartitionInformationEx</b> routine initializes a partition table entry with the information specified in the <a href="..\ntdddisk\ns-ntdddisk--set-partition-information-ex.md">SET_PARTITION_INFORMATION_EX</a> structure.</p>
 
 
 ## -syntax
@@ -71,7 +71,7 @@ NTSTATUS IoSetPartitionInformationEx(
 ### -param <i>PartitionInfo</i> [in]
 
 <dd>
-<p>A structure whose <i>PartitionType</i> member specifies the type for the partition. For the currently defined <i>PartitionType</i> values <a href="https://msdn.microsoft.com/library/windows/hardware/ff563751">PARTITION_INFORMATION</a>.</p>
+<p>A structure whose <i>PartitionType</i> member specifies the type for the partition. For the currently defined <i>PartitionType</i> values <a href="..\ntdddisk\ns-ntdddisk--partition-information.md">PARTITION_INFORMATION</a>.</p>
 </dd>
 </dl>
 
@@ -79,27 +79,13 @@ NTSTATUS IoSetPartitionInformationEx(
 <p>If <b>IoSetPartitionInformationEx</b> returns STATUS_SUCCESS, the disk driver updates its notion of the partition type for this partition in its device extension.</p>
 
 ## -remarks
-<p><b>IoSetPartitionInformationEx</b> must only be used by disk drivers. Other drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560417">IOCTL_DISK_SET_PARTITION_INFO_EX</a> disk I/O request instead.</p>
+<p><b>IoSetPartitionInformationEx</b> must only be used by disk drivers. Other drivers should use the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-set-partition-info-ex.md">IOCTL_DISK_SET_PARTITION_INFO_EX</a> disk I/O request instead.</p>
 
 <p>This routine is called when a disk device driver is requested to set partition information in a partition table entry by an IRP_MJ_DEVICE_CONTROL request. This request is generally issued by the format utility, which performs I/O control functions on the partition. The driver passes a pointer to the device object representing the physical disk and the number of the partition associated with the device object that the format utility has open. Since the HAL routines that underlie <b>IoSetPartitionInformationEx</b> were developed before support for dynamic partitioning was implemented, they do not distinguish between the <i>partitionordinal</i> (that is the order of a partition on a disk) and the <i>partition number</i> (the partition number assigned to a partition in order to identify it to the system). Drivers must call <b>IoSetPartitionInformationEx</b> using the <i>ordinal</i> number of the partition and not the actual partition number.</p>
 
 <p>If the partition is a Master Boot Record (MBR) type partition, <b>IoSetPartitionInformationEx</b> is limited to setting the partition style, and the partition style, which is represented as an unsigned character. See SET_PARTITION_INFORMATION_MBR for further information about these values.</p>
 
-<p>If the partition is a GUID Partition Table (GPT) partition, <b>IoSetPartitionInformationEx</b> sets the following values: the partition style, the partition type, represented by a GUID instead of an integer as was the case with MBR partitions; a partition ID, also represented by a GUID; a set of attributes (see the Extensible Firmware Interface for a description of these attributes); and a Unicode name for the partition. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff566196">SET_PARTITION_INFORMATION_GPT</a> for further information about these values.</p>
-
-<p>This routine is synchronous and must be called by the disk driver's Dispatch routine or by a driver thread. Thus, all user and file system threads must be prepared to enter a wait state when issuing the device control request to set the partition type for the device.</p>
-
-<p>This routine operates under the assumption that the partition number passed in by the disk driver actually exists.</p>
-
-<p>This routine must be called at IRQL = PASSIVE_LEVEL because it uses a kernel event object to synchronize I/O completion on the device. The event cannot be set to the Signaled state without queuing and executing the I/O system's special kernel APC routine for I/O completion.</p>
-
-<p><b>IoSetPartitionInformationEx</b> must only be used by disk drivers. Other drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560417">IOCTL_DISK_SET_PARTITION_INFO_EX</a> disk I/O request instead.</p>
-
-<p>This routine is called when a disk device driver is requested to set partition information in a partition table entry by an IRP_MJ_DEVICE_CONTROL request. This request is generally issued by the format utility, which performs I/O control functions on the partition. The driver passes a pointer to the device object representing the physical disk and the number of the partition associated with the device object that the format utility has open. Since the HAL routines that underlie <b>IoSetPartitionInformationEx</b> were developed before support for dynamic partitioning was implemented, they do not distinguish between the <i>partitionordinal</i> (that is the order of a partition on a disk) and the <i>partition number</i> (the partition number assigned to a partition in order to identify it to the system). Drivers must call <b>IoSetPartitionInformationEx</b> using the <i>ordinal</i> number of the partition and not the actual partition number.</p>
-
-<p>If the partition is a Master Boot Record (MBR) type partition, <b>IoSetPartitionInformationEx</b> is limited to setting the partition style, and the partition style, which is represented as an unsigned character. See SET_PARTITION_INFORMATION_MBR for further information about these values.</p>
-
-<p>If the partition is a GUID Partition Table (GPT) partition, <b>IoSetPartitionInformationEx</b> sets the following values: the partition style, the partition type, represented by a GUID instead of an integer as was the case with MBR partitions; a partition ID, also represented by a GUID; a set of attributes (see the Extensible Firmware Interface for a description of these attributes); and a Unicode name for the partition. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff566196">SET_PARTITION_INFORMATION_GPT</a> for further information about these values.</p>
+<p>If the partition is a GUID Partition Table (GPT) partition, <b>IoSetPartitionInformationEx</b> sets the following values: the partition style, the partition type, represented by a GUID instead of an integer as was the case with MBR partitions; a partition ID, also represented by a GUID; a set of attributes (see the Extensible Firmware Interface for a description of these attributes); and a Unicode name for the partition. See <a href="storage.set_partition_information_gpt">SET_PARTITION_INFORMATION_GPT</a> for further information about these values.</p>
 
 <p>This routine is synchronous and must be called by the disk driver's Dispatch routine or by a driver thread. Thus, all user and file system threads must be prepared to enter a wait state when issuing the device control request to set the partition type for the device.</p>
 
@@ -162,7 +148,7 @@ NTSTATUS IoSetPartitionInformationEx(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -170,19 +156,19 @@ NTSTATUS IoSetPartitionInformationEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561452">IoReadPartitionTable</a>
+<a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561464">IoWritePartitionTable</a>
+<a href="..\ntddk\nf-ntddk-iowritepartitiontable.md">IoWritePartitionTable</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561456">IoSetPartitionInformation</a>
+<a href="..\ntddk\nf-ntddk-iosetpartitioninformation.md">IoSetPartitionInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566192">SET_PARTITION_INFORMATION</a>
+<a href="..\ntdddisk\ns-ntdddisk--set-partition-information.md">SET_PARTITION_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566194">SET_PARTITION_INFORMATION_EX</a>
+<a href="..\ntdddisk\ns-ntdddisk--set-partition-information-ex.md">SET_PARTITION_INFORMATION_EX</a>
 </dt>
 </dl>
 <p> </p>

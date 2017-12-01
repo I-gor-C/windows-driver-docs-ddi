@@ -7,7 +7,7 @@ old-location: netvista\rilemergencymodecontrolparamscontrol.htm
 old-project: netvista
 ms.assetid: ac5a2ae3-3fdc-463f-96df-22b441e38724
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

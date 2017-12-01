@@ -71,7 +71,7 @@ BOOL DrvUpgradePrinter(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548522">DRIVER_UPGRADE_INFO_1</a>
+<a href="..\winddiui\ns-winddiui--driver-upgrade-info-1.md">DRIVER_UPGRADE_INFO_1</a>
 </p>
 </td>
 </tr>
@@ -81,7 +81,7 @@ BOOL DrvUpgradePrinter(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548527">DRIVER_UPGRADE_INFO_2</a>
+<a href="..\winddiui\ns-winddiui--driver-upgrade-info-2.md">DRIVER_UPGRADE_INFO_2</a>
 </p>
 </td>
 </tr>
@@ -102,15 +102,7 @@ BOOL DrvUpgradePrinter(
 ## -remarks
 <p>A <a href="NULL">printer interface DLL</a> can optionally provide a <b>DrvUpgradePrinter</b> function. If it does, the spooler calls it for every printer when the printer driver is copied onto the system. This occurs when a system is upgraded from one operating system release to the next, or when an application updates a printer driver by calling the Win32 <b>AddPrinterDriver</b> function.</p>
 
-<p>Often, a new driver version requires registry settings that are different from those of the old version. The <b>DrvUpgradePrinter</b> function's purpose is to update the registry so it is compatible with the driver. For more information about storing printer information in the registry, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548564">DrvPrinterEvent</a>.</p>
-
-<p>For Windows 2000 and later, when the spooler calls <b>DrvUpgradePrinter</b>, it supplies a DRIVER_UPGRADE_INFO_2 structure pointer for <i>pDriverUpgradeInfo</i>. If the function returns <b>FALSE</b>, the spooler calls the function again, this time specifying a DRIVER_UPGRADE_INFO_1 structure pointer. If this call returns <b>FALSE</b>, the spooler writes an entry in the event log.</p>
-
-<p>For Windows NT 4.0 and previous, when the spooler calls <b>DrvUpgradePrinter</b>, it supplies a DRIVER_UPGRADE_INFO_1 structure pointer for <i>pDriverUpgradeInfo</i>. If the function returns <b>FALSE</b>, the spooler writes an entry in the event log.</p>
-
-<p>A <a href="NULL">printer interface DLL</a> can optionally provide a <b>DrvUpgradePrinter</b> function. If it does, the spooler calls it for every printer when the printer driver is copied onto the system. This occurs when a system is upgraded from one operating system release to the next, or when an application updates a printer driver by calling the Win32 <b>AddPrinterDriver</b> function.</p>
-
-<p>Often, a new driver version requires registry settings that are different from those of the old version. The <b>DrvUpgradePrinter</b> function's purpose is to update the registry so it is compatible with the driver. For more information about storing printer information in the registry, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548564">DrvPrinterEvent</a>.</p>
+<p>Often, a new driver version requires registry settings that are different from those of the old version. The <b>DrvUpgradePrinter</b> function's purpose is to update the registry so it is compatible with the driver. For more information about storing printer information in the registry, see <a href="..\winddiui\nf-winddiui-drvprinterevent.md">DrvPrinterEvent</a>.</p>
 
 <p>For Windows 2000 and later, when the spooler calls <b>DrvUpgradePrinter</b>, it supplies a DRIVER_UPGRADE_INFO_2 structure pointer for <i>pDriverUpgradeInfo</i>. If the function returns <b>FALSE</b>, the spooler calls the function again, this time specifying a DRIVER_UPGRADE_INFO_1 structure pointer. If this call returns <b>FALSE</b>, the spooler writes an entry in the event log.</p>
 
@@ -143,13 +135,13 @@ BOOL DrvUpgradePrinter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548564">DrvPrinterEvent</a>
+<a href="..\winddiui\nf-winddiui-drvprinterevent.md">DrvPrinterEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548522">DRIVER_UPGRADE_INFO_1</a>
+<a href="..\winddiui\ns-winddiui--driver-upgrade-info-1.md">DRIVER_UPGRADE_INFO_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548527">DRIVER_UPGRADE_INFO_2</a>
+<a href="..\winddiui\ns-winddiui--driver-upgrade-info-2.md">DRIVER_UPGRADE_INFO_2</a>
 </dt>
 </dl>
 <p> </p>

@@ -99,13 +99,7 @@ HRESULT FontInstallerDlgProc(
 
 <p>The <code>IPrintOemUI::FontInstallerDlgProc</code> method is used by Unidrv as a dialog box procedure, and its address is passed to <b>DialogBoxParam</b> (described in the Microsoft Windows SDK documentation) when a user invokes the font installer from Unidrv's user interface.</p>
 
-<p>If the message received for <i>usMsg</i> is WM_INIT or WM_USER+WM_FI_NAME, <i>lParam</i> points to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff557731">OEMFONTINSTPARAM</a> structure.</p>
-
-<p>A user interface plug-in can implement the <code>IPrintOemUI::FontInstallerDlgProc</code> method as a means of replacing Unidrv's font installer. For more information, see <a href="NULL">Customized Font Installers for Unidrv</a>.</p>
-
-<p>The <code>IPrintOemUI::FontInstallerDlgProc</code> method is used by Unidrv as a dialog box procedure, and its address is passed to <b>DialogBoxParam</b> (described in the Microsoft Windows SDK documentation) when a user invokes the font installer from Unidrv's user interface.</p>
-
-<p>If the message received for <i>usMsg</i> is WM_INIT or WM_USER+WM_FI_NAME, <i>lParam</i> points to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff557731">OEMFONTINSTPARAM</a> structure.</p>
+<p>If the message received for <i>usMsg</i> is WM_INIT or WM_USER+WM_FI_NAME, <i>lParam</i> points to an <a href="..\prntfont\ns-prntfont--oemfontinstparam.md">OEMFONTINSTPARAM</a> structure.</p>
 
 ## -requirements
 <table>
@@ -134,7 +128,7 @@ HRESULT FontInstallerDlgProc(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554188">IPrintOemUI::UpdateExternalFonts</a>
+<a href="print.iprintoemui_updateexternalfonts">IPrintOemUI::UpdateExternalFonts</a>
 </dt>
 </dl>
 <p> </p>

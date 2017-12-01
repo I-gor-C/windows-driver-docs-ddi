@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTReclaimAllocations2(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906801">D3DKMT_RECLAIMALLOCATIONS2</a> structure that defines memory allocations to reclaim.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-reclaimallocations2.md">D3DKMT_RECLAIMALLOCATIONS2</a> structure that defines memory allocations to reclaim.</p>
 </dd>
 </dl>
 
@@ -139,7 +139,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTReclaimAllocations2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906801">D3DKMT_RECLAIMALLOCATIONS2</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-reclaimallocations2.md">D3DKMT_RECLAIMALLOCATIONS2</a>
 </dt>
 </dl>
 <p> </p>

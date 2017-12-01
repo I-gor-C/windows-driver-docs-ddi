@@ -7,7 +7,7 @@ old-location: kernel\read_port_ulong.htm
 old-project: kernel
 ms.assetid: 8a2f4429-b805-4a36-afdf-8b9c9a886951
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: READ_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,8 +66,6 @@ ULONG READ_PORT_ULONG(
 <p><b>READ_PORT_ULONG</b> returns the ULONG value that is read from the specified port address.</p>
 
 ## -remarks
-<p>Callers of <b>READ_PORT_ULONG</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
-
 <p>Callers of <b>READ_PORT_ULONG</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
 
 ## -requirements

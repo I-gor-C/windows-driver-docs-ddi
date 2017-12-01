@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USB_PIPE_INFO</b> structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540094">USB_NODE_CONNECTION_INFORMATION_EX</a> structure and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537321">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> request to obtain information about a connection and its associated pipes.</p>
+<p>The <b>USB_PIPE_INFO</b> structure is used in conjunction with the <a href="..\usbioctl\ns-usbioctl--usb-node-connection-information-ex.md">USB_NODE_CONNECTION_INFORMATION_EX</a> structure and the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-information-ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> request to obtain information about a connection and its associated pipes.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ typedef struct _USB_PIPE_INFO {
 ### -field <b>EndpointDescriptor</b>
 
 <dd>
-<p>Describes the endpoint descriptor. For more information about the endpoint descriptor, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539317">USB_ENDPOINT_DESCRIPTOR</a>.</p>
+<p>Describes the endpoint descriptor. For more information about the endpoint descriptor, see <a href="..\usbspec\ns-usbspec--usb-endpoint-descriptor.md">USB_ENDPOINT_DESCRIPTOR</a>.</p>
 </dd>
 
 ### -field <b>ScheduleOffset</b>
@@ -97,8 +97,6 @@ typedef struct _USB_PIPE_INFO {
 
 <p>0 to 31</p>
 
-<p> </p>
-
 ## -requirements
 <table>
 <tr>
@@ -116,13 +114,13 @@ typedef struct _USB_PIPE_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537321">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-connection-information-ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539317">USB_ENDPOINT_DESCRIPTOR</a>
+<a href="..\usbspec\ns-usbspec--usb-endpoint-descriptor.md">USB_ENDPOINT_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

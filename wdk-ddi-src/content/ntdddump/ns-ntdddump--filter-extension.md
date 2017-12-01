@@ -74,7 +74,7 @@ typedef struct _FILTER_EXTENSION {
 ### -field <b>Geometry</b>
 
 <dd>
-<p>The disk geometry of the dump device in <a href="https://msdn.microsoft.com/library/windows/hardware/ff552613">DISK_GEOMETRY</a> format.</p>
+<p>The disk geometry of the dump device in <a href="..\ntdddisk\ns-ntdddisk--disk-geometry.md">DISK_GEOMETRY</a> format.</p>
 </dd>
 
 ### -field <b>DiskSize</b>
@@ -86,13 +86,13 @@ typedef struct _FILTER_EXTENSION {
 ### -field <b>PartitionInfo</b>
 
 <dd>
-<p>The partition information in <a href="https://msdn.microsoft.com/library/windows/hardware/ff552629">DISK_PARTITION_INFO</a> format.</p>
+<p>The partition information in <a href="..\ntdddisk\ns-ntdddisk--disk-partition-info.md">DISK_PARTITION_INFO</a> format.</p>
 </dd>
 
 ### -field <b>DumpData</b>
 
 <dd>
-<p>A pointer to the context data that is provided by the filter driver in <a href="https://msdn.microsoft.com/library/windows/hardware/ff553865">FILTER_INITIALIZATION_DATA</a>.</p>
+<p>A pointer to the context data that is provided by the filter driver in <a href="..\ntdddump\ns-ntdddump--filter-initialization-data.md">FILTER_INITIALIZATION_DATA</a>.</p>
 </dd>
 </dl>
 
@@ -124,13 +124,13 @@ typedef struct _FILTER_EXTENSION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552613">DISK_GEOMETRY</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-geometry.md">DISK_GEOMETRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552629">DISK_PARTITION_INFO</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-partition-info.md">DISK_PARTITION_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553865">FILTER_INITIALIZATION_DATA</a>
+<a href="..\ntdddump\ns-ntdddump--filter-initialization-data.md">FILTER_INITIALIZATION_DATA</a>
 </dt>
 </dl>
 <p> </p>

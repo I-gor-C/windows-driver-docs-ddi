@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Track descriptor is used in conjunction with <a href="https://msdn.microsoft.com/library/windows/hardware/ff551373">CDROM_TOC</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff551389">CDROM_TOC_SESSION_DATA</a>. </p>
+<p>Track descriptor is used in conjunction with <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc.md">CDROM_TOC</a> and <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-session-data.md">CDROM_TOC_SESSION_DATA</a>. </p>
 
 
 ## -syntax
@@ -116,10 +116,10 @@ typedef struct _TRACK_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551373">CDROM_TOC</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc.md">CDROM_TOC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551389">CDROM_TOC_SESSION_DATA</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-session-data.md">CDROM_TOC_SESSION_DATA</a>
 </dt>
 </dl>
 <p> </p>

@@ -220,38 +220,7 @@ NTSTATUS FltQueryDirectoryFile(
 
 <p><b>FltQueryDirectoryFile </b>returns zero in any member of a FILE_<i>XXX</i>_INFORMATION structure that is not supported by the file system. </p>
 
-<p>For information about other file information query routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545843">File Objects</a>. </p>
-
-<p>Callers of <b>FltQueryDirectoryFile</b> must be running at IRQL = PASSIVE_LEVEL and with APCs enabled. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.</p>
-
-<p><b>FltQueryDirectoryFile </b>returns information about files that are contained in the directory that is represented by <i>FileObject</i>. </p>
-
-<p>The first call to <b>FltQueryDirectoryFile</b> determines the set of entries to be included in the directory scan for all subsequent calls, based on the values of <i>ReturnSingleEntry</i>, <i>FileName</i>, and <i>RestartScan</i>. If there is at least one matching entry, <b>FltQueryDirectoryFile</b> creates a FILE_<i>XXX</i>_INFORMATION structure (see the above table) for each entry in turn and stores the structure into the buffer. </p>
-
-<p>Assuming that at least one matching directory entry is found, the number of entries for which information is returned is the smallest of the following: </p>
-
-<p> One entry, if <i>ReturnSingleEntry</i> is <b>TRUE</b> and <i>FileName</i> is <b>NULL</b>.  </p>
-
-<p> The number of entries that match the <i>FileName</i> string, if <i>FileName</i> is not <b>NULL</b>. (Note that if the string contains no wildcards, there can be at most one matching entry.)</p>
-
-<p> The number of entries whose information fits into the specified buffer.</p>
-
-<p> The number of entries contained in the directory.</p>
-
-<p>On the first call to <b>FltQueryDirectoryFile</b>, if the structure created for the first entry found too large to fit into the output buffer, only the fixed portion of the structure is returned. The fixed portion consists of all fields of the structure except the final <i>FileName</i> string. On the first call, but not on subsequent ones, the I/O system ensures that the buffer is large enough to hold the fixed portion of the appropriate FILE_<i>XXX</i>_INFORMATION structure. When this happens, <b>FltQueryDirectoryFile</b> returns an appropriate status value such as STATUS_BUFFER_OVERFLOW.  Also on the first call to <b>FltQueryDirectoryFile</b>, if there is no file in the <i>FileObject</i> directory that matches the <i>FileName</i> parameter, <b>FltQueryDirectoryFile</b> returns an appropriate status value such as STATUS_NO_SUCH_FILE.</p>
-
-<p>On each call, <b>FltQueryDirectoryFile</b> returns as many FILE_<i>XXX</i>_INFORMATION structures (one per directory entry) as can be contained entirely in the buffer pointed to by <i>FileInformation</i>. As long as the output buffer contains at least one complete structure, the status value returned is STATUS_SUCCESS. No information about any remaining entries is reported. Thus, except in the cases listed above where only one entry is returned, <b>FltQueryDirectoryFile</b> must be called at least twice to enumerate the contents of an entire directory (for example, when the <i>FileName</i> parameter contains one or more wildcard characters or is <b>NULL</b>). </p>
-
-<p>The final call to <b>FltQueryDirectoryFile</b> returns an empty output buffer and reports an appropriate status value such as STATUS_NO_MORE_FILES. </p>
-
-<p>
-<div class="alert"><b>Note</b>    When <b>FltQueryDirectoryFile</b> is called multiple times on the same directory, it is possible that the number of entries for which information is returned will be less than expected. This is because the set of entries to be included in the directory scan is fixed on the first call to <b>FltQueryDirectoryFile</b>. In subsequent calls, <b>FltQueryDirectoryFile</b> resumes the directory scan wherever it left off in this same enumeration. However, between calls to <b>FltQueryDirectoryFile</b>, the actual directory entries can change so that they are no longer in sync with the original enumeration.</div>
-<div> </div>
-</p>
-
-<p><b>FltQueryDirectoryFile </b>returns zero in any member of a FILE_<i>XXX</i>_INFORMATION structure that is not supported by the file system. </p>
-
-<p>For information about other file information query routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545843">File Objects</a>. </p>
+<p>For information about other file information query routines, see <a href="kernel.file_objects">File Objects</a>. </p>
 
 <p>Callers of <b>FltQueryDirectoryFile</b> must be running at IRQL = PASSIVE_LEVEL and with APCs enabled. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.</p>
 
@@ -318,40 +287,40 @@ NTSTATUS FltQueryDirectoryFile(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540235">FILE_BOTH_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-both-dir-information.md">FILE_BOTH_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540248">FILE_DIRECTORY_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-directory-information.md">FILE_DIRECTORY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540289">FILE_FULL_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-full-dir-information.md">FILE_FULL_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540303">FILE_ID_BOTH_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-id-both-dir-information.md">FILE_ID_BOTH_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540310">FILE_ID_FULL_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-id-full-dir-information.md">FILE_ID_FULL_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540329">FILE_NAMES_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-names-information.md">FILE_NAMES_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540335">FILE_OBJECTID_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-objectid-information.md">FILE_OBJECTID_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540354">FILE_REPARSE_POINT_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs--file-reparse-point-information.md">FILE_REPARSE_POINT_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541937">FltCreateFileEx</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567047">ZwQueryDirectoryFile</a>
+<a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>
 </dt>
 </dl>
 <p> </p>

@@ -83,7 +83,7 @@ typedef struct _HBAFCPID {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration for this structure in <i>hbapiwm.h</i> after compiling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556039">HBAFCPID WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration for this structure in <i>hbapiwm.h</i> after compiling the <a href="storage.hbafcpid_wmi_class">HBAFCPID WMI Class</a>.</p>
 
 <p>For more information about the fibre channel protocol (FCP), see the T11 committee's <i>dpANS Fibre Channel Protocol for SCSI</i> and <i>Fibre Channel HBA API</i> specifications.</p>
 
@@ -104,10 +104,10 @@ typedef struct _HBAFCPID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fcpid.md">HBA_FcpId</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556034">HBAFCPBindingEntry</a>
+<a href="..\hbapiwmi\ns-hbapiwmi--hbafcpbindingentry.md">HBAFCPBindingEntry</a>
 </dt>
 </dl>
 <p> </p>

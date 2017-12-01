@@ -7,7 +7,7 @@ old-location: nfpdrivers\secure_element_hce_activation_payload.htm
 old-project: nfpdrivers
 ms.assetid: 2FFEB2DB-7506-4CDB-BD5F-41D2E4212017
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/27/2017
 ms.keywords: SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, *PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices

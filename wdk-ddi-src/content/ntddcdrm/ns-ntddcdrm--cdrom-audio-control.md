@@ -88,7 +88,7 @@ typedef struct _CDROM_AUDIO_CONTROL {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559336">IOCTL_CDROM_GET_CONTROL</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-control.md">IOCTL_CDROM_GET_CONTROL</a>
 </dt>
 </dl>
 <p> </p>

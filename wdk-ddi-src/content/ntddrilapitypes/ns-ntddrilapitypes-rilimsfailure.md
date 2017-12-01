@@ -7,7 +7,7 @@ old-location: netvista\rilimsfailure.htm
 old-project: netvista
 ms.assetid: 8be10470-3761-4120-8987-00d6fcc9a989
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILIMSFAILURE, RILIMSFAILURE, *LPRILIMSFAILURE
 ms.prod: windows-hardware
 ms.technology: windows-devices

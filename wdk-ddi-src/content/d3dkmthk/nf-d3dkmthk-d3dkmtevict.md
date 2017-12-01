@@ -57,7 +57,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTEvict(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906794">D3DKMT_EVICT</a> structure that describes the operation.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-evict.md">D3DKMT_EVICT</a> structure that describes the operation.</p>
 </dd>
 </dl>
 
@@ -74,8 +74,6 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTEvict(
 <p>This function might also return other <b>NTSTATUS</b> values.</p>
 
 ## -remarks
-<p>Once the eviction request is queued, it is illegal to access the underlying allocation as the allocation may be evicted at anytime from there on at the operating system discretion.</p>
-
 <p>Once the eviction request is queued, it is illegal to access the underlying allocation as the allocation may be evicted at anytime from there on at the operating system discretion.</p>
 
 ## -requirements
@@ -141,7 +139,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTEvict(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906794">D3DKMT_EVICT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-evict.md">D3DKMT_EVICT</a>
 </dt>
 </dl>
 <p> </p>

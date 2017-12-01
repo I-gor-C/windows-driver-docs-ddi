@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetEventBuffer_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553935">GetEventBuffer</a> WMI method to the WMI client.</p>
+<p>The GetEventBuffer_OUT structure is used to report the output parameter data of the <a href="storage.geteventbuffer">GetEventBuffer</a> WMI method to the WMI client.</p>
 
 
 ## -syntax
@@ -59,26 +59,26 @@ typedef struct _GetEventBuffer_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains a value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation. </p>
+<p>Contains a value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation. </p>
 </dd>
 
 ### -field <b>EventCount</b>
 
 <dd>
-<p>Indicates the number of events in <b>Events</b> that were retrieved by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553935">GetEventBuffer</a> WMI method.</p>
+<p>Indicates the number of events in <b>Events</b> that were retrieved by the <a href="storage.geteventbuffer">GetEventBuffer</a> WMI method.</p>
 </dd>
 
 ### -field <b>Events</b>
 
 <dd>
-<p>Contains an array of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562480">MSFC_EventBuffer</a> that contains the next events in the HBA's event queue.</p>
+<p>Contains an array of type <a href="..\hbapiwmi\ns-hbapiwmi--msfc-eventbuffer.md">MSFC_EventBuffer</a> that contains the next events in the HBA's event queue.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553935">GetEventBuffer</a> method retrieves the next events in the HBA's event queue. </p>
+<p>The <a href="storage.geteventbuffer">GetEventBuffer</a> method retrieves the next events in the HBA's event queue. </p>
 
-<p>The WMI tool suite generates a declaration of the GetEventBuffer_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetEventBuffer_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -97,7 +97,7 @@ typedef struct _GetEventBuffer_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553935">GetEventBuffer</a>
+<a href="storage.geteventbuffer">GetEventBuffer</a>
 </dt>
 </dl>
 <p> </p>

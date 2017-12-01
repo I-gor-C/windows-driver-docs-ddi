@@ -7,7 +7,7 @@ old-location: stream\ksproperty_videoprocamp_node_s2.htm
 old-project: stream
 ms.assetid: 767ea5d2-4c11-4ba8-bb1f-c5f6038244f5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSPROPERTY_VIDEOPROCAMP_NODE_S2, KSPROPERTY_VIDEOPROCAMP_NODE_S2, *PKSPROPERTY_VIDEOPROCAMP_NODE_S2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ typedef struct {
 ### -field <b>NodeProperty</b>
 
 <dd>
-<p>Specifies an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff566720">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.</p>
+<p>Specifies an initialized <a href="stream.ksp_node">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.</p>
 </dd>
 
 ### -field <b>Value1</b>

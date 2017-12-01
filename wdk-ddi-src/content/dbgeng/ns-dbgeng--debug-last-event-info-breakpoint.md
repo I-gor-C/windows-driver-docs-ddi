@@ -7,7 +7,7 @@ old-location: debugger\debug_last_event_info_breakpoint.htm
 old-project: debugger
 ms.assetid: DAE22E2C-E8A9-4FF0-B9E9-D652C4E7B0B8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_LAST_EVENT_INFO_BREAKPOINT, DEBUG_LAST_EVENT_INFO_BREAKPOINT, *PDEBUG_LAST_EVENT_INFO_BREAKPOINT
 ms.prod: windows-hardware
 ms.technology: windows-devices

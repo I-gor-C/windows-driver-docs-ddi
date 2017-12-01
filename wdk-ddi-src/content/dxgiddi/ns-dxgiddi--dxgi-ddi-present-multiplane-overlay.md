@@ -85,7 +85,7 @@ typedef struct _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY {
 ### -field <b>PlaneAttributes</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh780283">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>  that specifies overlay plane attributes.</p>
+<p>A structure of type <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-multiplane-overlay-attributes.md">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>  that specifies overlay plane attributes.</p>
 </dd>
 </dl>
 
@@ -125,7 +125,7 @@ typedef struct _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780283">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-multiplane-overlay-attributes.md">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>
 </dt>
 </dl>
 <p> </p>

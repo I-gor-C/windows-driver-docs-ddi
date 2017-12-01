@@ -108,7 +108,7 @@ typedef struct _DXGKCB_GETHANDLEDATAFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557534">DXGKARGCB_GETHANDLEDATA</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkargcb-gethandledata.md">DXGKARGCB_GETHANDLEDATA</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,6 +7,12 @@ This header is used by Streaming media devices. For more information, see
 Avc.h contain these programming interfaces:
 
 
+## Callback functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [PFNAVCINTERSECTHANDLER callback](nc-avc-pfnavcintersecthandler.md) | The AV/C intersect handler determines if the data ranges are compatible. |
+
 ## Structures
 
 | Title   | Description   |

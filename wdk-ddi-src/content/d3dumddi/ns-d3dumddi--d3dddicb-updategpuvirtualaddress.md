@@ -90,7 +90,7 @@ typedef struct _D3DDDICB_UPDATEGPUVIRTUALADDRESS {
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906329">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a> array of operations to perform on the GPU virtual address space.</p>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-updategpuvirtualaddress-operation.md">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a> array of operations to perform on the GPU virtual address space.</p>
 </dd>
 
 ### -field <b>Reserved0</b>
@@ -173,7 +173,7 @@ typedef struct _D3DDDICB_UPDATEGPUVIRTUALADDRESS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906329">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-updategpuvirtualaddress-operation.md">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-updategpuvirtualaddresscb.md">pfnUpdateGpuVirtualAddressCb</a>

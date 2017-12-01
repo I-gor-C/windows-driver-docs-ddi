@@ -112,9 +112,9 @@ typedef struct _WIM_PROVIDER_EXTERNAL_INFO {
 </dl>
 
 ## -remarks
-<p>The backing source for a file is set with a <a href="https://msdn.microsoft.com/library/windows/hardware/dn632443">FSCTL_SET_EXTERNAL_BACKING</a> control code request. The WIM file backing the file specified in the request is set in the <b>DataSourceId</b> member of <b>WIM_PROVIDER_EXTERNAL_INFO</b>.</p>
+<p>The backing source for a file is set with a <a href="ifsk.fsctl_set_external_backing">FSCTL_SET_EXTERNAL_BACKING</a> control code request. The WIM file backing the file specified in the request is set in the <b>DataSourceId</b> member of <b>WIM_PROVIDER_EXTERNAL_INFO</b>.</p>
 
-<p>The <b>Flags</b> and <b>ResourceHash</b> members are valid when the provider info is returned from a <a href="https://msdn.microsoft.com/library/windows/hardware/dn632441">FSCTL_GET_EXTERNAL_BACKING</a> request.</p>
+<p>The <b>Flags</b> and <b>ResourceHash</b> members are valid when the provider info is returned from a <a href="ifsk.fsctl_get_external_backing">FSCTL_GET_EXTERNAL_BACKING</a> request.</p>
 
 ## -requirements
 <table>
@@ -141,10 +141,10 @@ typedef struct _WIM_PROVIDER_EXTERNAL_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632441">FSCTL_GET_EXTERNAL_BACKING</a>
+<a href="ifsk.fsctl_get_external_backing">FSCTL_GET_EXTERNAL_BACKING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632443">FSCTL_SET_EXTERNAL_BACKING</a>
+<a href="ifsk.fsctl_set_external_backing">FSCTL_SET_EXTERNAL_BACKING</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: sensors\ioctl_gnss_config_supl_cert.htm
 old-project: sensors
 ms.assetid: 34095934-26C1-4855-9ED9-71627E88A903
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.iface:
 ## -ioctlparameters
 
 ### -input-buffer
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn925227">GNSS_SUPL_CERT_CONFIG</a> structure.</p>
+<p>Pointer to a <a href="sensors.gnss_supl_cert_config">GNSS_SUPL_CERT_CONFIG</a> structure.</p>
 
 ### -input-buffer-length
 <p>Set to sizeof(<b>GNSS_SUPL_CERT_CONFIG</b>).</p>
@@ -109,158 +109,6 @@ I/O Status block
 
 <p>The GNSS driver needs to pass this certificate information to the SUPL component which should use the certificate to set up secure connection with H-SLP.</p>
 
-<p>For GNSS DDI version 2 and later:</p>
-
-<p>The GNSS driver must support receiving multiple calls of the <b>IOCTL_GNSS_CONFIG_SUPL_CERT</b>. The GNSS adapter will call this IOCTL multiple times, each time to inject a different root certificate. Different root certificates are identified by having a different <b>SuplCertName</b>, which provides the name of the certificate being injected.</p>
-
-<p>If the name is the same as a previously configured certificate, then the certificate will be replaced.</p>
-
-<p>If the name is different from certificate, then the new certificate will be added.</p>
-
-<p>If a certificate with the same name as an existing certificate is injected again, the GNSS driver should overwrite the previous certificate with the same name.</p>
-
-<p>The driver sets one of the following NTSTATUS values to indicate result.</p>
-
-<p>STATUS_SUCCESS, when the driver processes the SUPL certificate information successfully. If the IOCTL tries to delete or purge certificates that don’t exist, it still returns STATUS_SUCCESS.</p>
-
-<p>Failed, when the driver does not process the SUPL certificate information successfully.</p>
-
-<p>Ignored, when the driver ignores the SUPL certificate information.</p>
-
-<p>For GNSS DDI version 1:</p>
-
-<p>The GNSS adapter does not  need to do anything special.</p>
-
-<p>For GNSS DDI version 2 and later:</p>
-
-<p>The GNSS adapter will only refer to certificates by name. It will be up to the GNSS driver to map the certificate names internally to any other representation or reference to the certificates, if needed.</p>
-
-<p>The GNSS adapter will do a full purge or all previously injected certificates if needed before injecting a new set.</p>
-
-<p>The GNSS driver needs to pass this certificate information to the SUPL component which should use the certificate to set up secure connection with H-SLP.</p>
-
-<p>For GNSS DDI version 2 and later:</p>
-
-<p>The GNSS driver must support receiving multiple calls of the <b>IOCTL_GNSS_CONFIG_SUPL_CERT</b>. The GNSS adapter will call this IOCTL multiple times, each time to inject a different root certificate. Different root certificates are identified by having a different <b>SuplCertName</b>, which provides the name of the certificate being injected.</p>
-
-<p>If the name is the same as a previously configured certificate, then the certificate will be replaced.</p>
-
-<p>If the name is different from certificate, then the new certificate will be added.</p>
-
-<p>If a certificate with the same name as an existing certificate is injected again, the GNSS driver should overwrite the previous certificate with the same name.</p>
-
-<p>The driver sets one of the following NTSTATUS values to indicate result.</p>
-
-<p>STATUS_SUCCESS, when the driver processes the SUPL certificate information successfully. If the IOCTL tries to delete or purge certificates that don’t exist, it still returns STATUS_SUCCESS.</p>
-
-<p>Failed, when the driver does not process the SUPL certificate information successfully.</p>
-
-<p>Ignored, when the driver ignores the SUPL certificate information.</p>
-
-<p>For GNSS DDI version 1:</p>
-
-<p>The GNSS adapter does not  need to do anything special.</p>
-
-<p>For GNSS DDI version 2 and later:</p>
-
-<p>The GNSS adapter will only refer to certificates by name. It will be up to the GNSS driver to map the certificate names internally to any other representation or reference to the certificates, if needed.</p>
-
-<p>The GNSS adapter will do a full purge or all previously injected certificates if needed before injecting a new set.</p>
-
-<p>The GNSS driver needs to pass this certificate information to the SUPL component which should use the certificate to set up secure connection with H-SLP.</p>
-
-<p>For GNSS DDI version 2 and later:</p>
-
-<p>The GNSS driver must support receiving multiple calls of the <b>IOCTL_GNSS_CONFIG_SUPL_CERT</b>. The GNSS adapter will call this IOCTL multiple times, each time to inject a different root certificate. Different root certificates are identified by having a different <b>SuplCertName</b>, which provides the name of the certificate being injected.</p>
-
-<p>If the name is the same as a previously configured certificate, then the certificate will be replaced.</p>
-
-<p>If the name is different from certificate, then the new certificate will be added.</p>
-
-<p>If a certificate with the same name as an existing certificate is injected again, the GNSS driver should overwrite the previous certificate with the same name.</p>
-
-<p>The driver sets one of the following NTSTATUS values to indicate result.</p>
-
-<p>STATUS_SUCCESS, when the driver processes the SUPL certificate information successfully. If the IOCTL tries to delete or purge certificates that don’t exist, it still returns STATUS_SUCCESS.</p>
-
-<p>Failed, when the driver does not process the SUPL certificate information successfully.</p>
-
-<p>Ignored, when the driver ignores the SUPL certificate information.</p>
-
-<p>For GNSS DDI version 1:</p>
-
-<p>The GNSS adapter does not  need to do anything special.</p>
-
-<p>For GNSS DDI version 2 and later:</p>
-
-<p>The GNSS adapter will only refer to certificates by name. It will be up to the GNSS driver to map the certificate names internally to any other representation or reference to the certificates, if needed.</p>
-
-<p>The GNSS adapter will do a full purge or all previously injected certificates if needed before injecting a new set.</p>
-
-<p>The GNSS driver needs to pass this certificate information to the SUPL component which should use the certificate to set up secure connection with H-SLP.</p>
-
-<p>For GNSS DDI version 2 and later:</p>
-
-<p>The GNSS driver must support receiving multiple calls of the <b>IOCTL_GNSS_CONFIG_SUPL_CERT</b>. The GNSS adapter will call this IOCTL multiple times, each time to inject a different root certificate. Different root certificates are identified by having a different <b>SuplCertName</b>, which provides the name of the certificate being injected.</p>
-
-<p>If the name is the same as a previously configured certificate, then the certificate will be replaced.</p>
-
-<p>If the name is different from certificate, then the new certificate will be added.</p>
-
-<p>If a certificate with the same name as an existing certificate is injected again, the GNSS driver should overwrite the previous certificate with the same name.</p>
-
-<p>The driver sets one of the following NTSTATUS values to indicate result.</p>
-
-<p>STATUS_SUCCESS, when the driver processes the SUPL certificate information successfully. If the IOCTL tries to delete or purge certificates that don’t exist, it still returns STATUS_SUCCESS.</p>
-
-<p>Failed, when the driver does not process the SUPL certificate information successfully.</p>
-
-<p>Ignored, when the driver ignores the SUPL certificate information.</p>
-
-<p>For GNSS DDI version 1:</p>
-
-<p>The GNSS adapter does not  need to do anything special.</p>
-
-<p>For GNSS DDI version 2 and later:</p>
-
-<p>The GNSS adapter will only refer to certificates by name. It will be up to the GNSS driver to map the certificate names internally to any other representation or reference to the certificates, if needed.</p>
-
-<p>The GNSS adapter will do a full purge or all previously injected certificates if needed before injecting a new set.</p>
-
-<p>The GNSS driver needs to pass this certificate information to the SUPL component which should use the certificate to set up secure connection with H-SLP.</p>
-
-<p>For GNSS DDI version 2 and later:</p>
-
-<p>The GNSS driver must support receiving multiple calls of the <b>IOCTL_GNSS_CONFIG_SUPL_CERT</b>. The GNSS adapter will call this IOCTL multiple times, each time to inject a different root certificate. Different root certificates are identified by having a different <b>SuplCertName</b>, which provides the name of the certificate being injected.</p>
-
-<p>If the name is the same as a previously configured certificate, then the certificate will be replaced.</p>
-
-<p>If the name is different from certificate, then the new certificate will be added.</p>
-
-<p>If a certificate with the same name as an existing certificate is injected again, the GNSS driver should overwrite the previous certificate with the same name.</p>
-
-<p>The driver sets one of the following NTSTATUS values to indicate result.</p>
-
-<p>STATUS_SUCCESS, when the driver processes the SUPL certificate information successfully. If the IOCTL tries to delete or purge certificates that don’t exist, it still returns STATUS_SUCCESS.</p>
-
-<p>Failed, when the driver does not process the SUPL certificate information successfully.</p>
-
-<p>Ignored, when the driver ignores the SUPL certificate information.</p>
-
-<p>For GNSS DDI version 1:</p>
-
-<p>The GNSS adapter does not  need to do anything special.</p>
-
-<p>For GNSS DDI version 2 and later:</p>
-
-<p>The GNSS adapter will only refer to certificates by name. It will be up to the GNSS driver to map the certificate names internally to any other representation or reference to the certificates, if needed.</p>
-
-<p>The GNSS adapter will do a full purge or all previously injected certificates if needed before injecting a new set.</p>
-
-<p>The GNSS driver needs to pass this certificate information to the SUPL component which should use the certificate to set up secure connection with H-SLP.</p>
-
-<p>For GNSS DDI version 2 and later:</p>
-
 <p>The GNSS driver must support receiving multiple calls of the <b>IOCTL_GNSS_CONFIG_SUPL_CERT</b>. The GNSS adapter will call this IOCTL multiple times, each time to inject a different root certificate. Different root certificates are identified by having a different <b>SuplCertName</b>, which provides the name of the certificate being injected.</p>
 
 <p>If the name is the same as a previously configured certificate, then the certificate will be replaced.</p>
@@ -289,15 +137,15 @@ I/O Status block
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548651">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548656">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548660">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_CONFIG_SUPL_CERT control code%20 RELEASE:%20(11/26/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_CONFIG_SUPL_CERT control code%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

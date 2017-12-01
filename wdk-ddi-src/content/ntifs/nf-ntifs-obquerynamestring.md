@@ -109,12 +109,6 @@ NTSTATUS ObQueryNameString(
 
 <p>The storage for <i>ObjectNameInfo</i> can be allocated from paged or nonpaged pool. </p>
 
-<p>If the given object is named and the object name was successfully acquired, the returned string is the name of the given object including as much of the object's full path as possible. In this case, <b>ObQueryNameString</b> sets <b>Name.Buffer</b> to the address of the NULL-terminated name of the specified object. The value of <b>Name.MaximumLength</b> is the length of the object name including the <b>NULL</b> termination. The value of <b>Name.Length</b> is length of the only the object name.</p>
-
-<p>If the given object is unnamed, or if the object name was not successfully acquired, <b>ObQueryNameString</b> sets <b>Name.Buffer</b> to <b>NULL</b> and sets <b>Name.Length</b> and <b>Name.MaximumLength</b> to zero.</p>
-
-<p>The storage for <i>ObjectNameInfo</i> can be allocated from paged or nonpaged pool. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -178,7 +172,7 @@ NTSTATUS ObQueryNameString(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>

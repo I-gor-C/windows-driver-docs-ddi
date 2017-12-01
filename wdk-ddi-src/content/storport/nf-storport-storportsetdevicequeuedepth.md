@@ -94,17 +94,9 @@ STORPORT_API BOOLEAN StorPortSetDeviceQueueDepth(
 <p><b>StorPortSetDeviceQueueDepth</b> returns <b>TRUE</b> if the queue depth was successfully set, or <b>FALSE</b> if the operation failed. </p>
 
 ## -remarks
-<p>Before the first call to <b>StorPortSetDeviceQueueDepth</b>, the device queue depth is set to the default value. The following conditional description determines the default queue depth.</p><dl>
-<dd>If the <b>InitialQueueDepth</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structure is non-zero, the default depth will be the value of <b>InitialQueueDepth</b>.</dd>
-<dd>Otherwise, if the  <b>MaxIOsPerLun</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structure is  non-zero, the default depth will be the value of <b>MaxIOsPerLun</b>.</dd>
-<dd>Otherwise, the default depth is 250 for virtual miniports and 20 for physical miniports. Unless a device supports extended SRBs, the maximum queue depth is 255.</dd>
-</dl><p>The <b>StorPortSetDeviceQueueDepth</b> routine should be called when the miniport driver receives the first SCSI Inquiry command for the specified LUN, or at any time thereafter (but not before), as long as the LUN is valid.</p>
+<p>Before the first call to <b>StorPortSetDeviceQueueDepth</b>, the device queue depth is set to the default value. The following conditional description determines the default queue depth.</p>
 
-<p>Before the first call to <b>StorPortSetDeviceQueueDepth</b>, the device queue depth is set to the default value. The following conditional description determines the default queue depth.</p><dl>
-<dd>If the <b>InitialQueueDepth</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structure is non-zero, the default depth will be the value of <b>InitialQueueDepth</b>.</dd>
-<dd>Otherwise, if the  <b>MaxIOsPerLun</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structure is  non-zero, the default depth will be the value of <b>MaxIOsPerLun</b>.</dd>
-<dd>Otherwise, the default depth is 250 for virtual miniports and 20 for physical miniports. Unless a device supports extended SRBs, the maximum queue depth is 255.</dd>
-</dl><p>The <b>StorPortSetDeviceQueueDepth</b> routine should be called when the miniport driver receives the first SCSI Inquiry command for the specified LUN, or at any time thereafter (but not before), as long as the LUN is valid.</p>
+<p>The <b>StorPortSetDeviceQueueDepth</b> routine should be called when the miniport driver receives the first SCSI Inquiry command for the specified LUN, or at any time thereafter (but not before), as long as the LUN is valid.</p>
 
 ## -requirements
 <table>

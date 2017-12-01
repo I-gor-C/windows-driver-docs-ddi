@@ -7,7 +7,7 @@ old-location: debugger\getcurrentprocesspeb.htm
 old-project: debugger
 ms.assetid: fa1e2915-3cb5-4634-a8fb-0d2d565c1c00
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects, GetCurrentProcessPeb, IDebugSystemObjects::GetCurrentProcessPeb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,13 +69,7 @@ HRESULT GetCurrentProcessPeb(
 <p> </p>
 
 ## -remarks
-<p>In user-mode debugging, this method provides the same information as <a href="https://msdn.microsoft.com/library/windows/hardware/ff545787">GetCurrentProcessDataOffset</a>.</p>
-
-<p>In kernel-mode debugging, the location returned is that of the PEB structure for the system process in which the last event occurred.</p>
-
-<p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
-<p>In user-mode debugging, this method provides the same information as <a href="https://msdn.microsoft.com/library/windows/hardware/ff545787">GetCurrentProcessDataOffset</a>.</p>
+<p>In user-mode debugging, this method provides the same information as <a href="debugger.getcurrentprocessdataoffset">GetCurrentProcessDataOffset</a>.</p>
 
 <p>In kernel-mode debugging, the location returned is that of the PEB structure for the system process in which the last event occurred.</p>
 

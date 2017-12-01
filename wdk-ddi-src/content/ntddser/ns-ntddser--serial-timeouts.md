@@ -90,23 +90,19 @@ typedef struct _SERIAL_TIMEOUTS {
 </dl>
 
 ## -remarks
-<p>The <b>SERIAL_TIMEOUTS</b> structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544126">IOCTL_SERIAL_SET_TIMEOUTS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff544120">IOCTL_SERIAL_GET_TIMEOUTS</a> I/O control requests. An <b>IOCTL_SERIAL_SET_TIMEOUTS</b> I/O control request uses this structure to specify a set of time-out parameters for the serial port to use for read and write operations. An <b>IOCTL_SERIAL_GET_TIMEOUTS</b> I/O control request uses this structure to retrieve the time-out parameters that were set by the previous <b>IOCTL_SERIAL_SET_TIMEOUTS</b> request.</p>
+<p>The <b>SERIAL_TIMEOUTS</b> structure is used by the <a href="..\ntddser\ni-ntddser-ioctl-serial-set-timeouts.md">IOCTL_SERIAL_SET_TIMEOUTS</a> and <a href="..\ntddser\ni-ntddser-ioctl-serial-get-timeouts.md">IOCTL_SERIAL_GET_TIMEOUTS</a> I/O control requests. An <b>IOCTL_SERIAL_SET_TIMEOUTS</b> I/O control request uses this structure to specify a set of time-out parameters for the serial port to use for read and write operations. An <b>IOCTL_SERIAL_GET_TIMEOUTS</b> I/O control request uses this structure to retrieve the time-out parameters that were set by the previous <b>IOCTL_SERIAL_SET_TIMEOUTS</b> request.</p>
 
 <p>A read or write request successfully completes when either the specified number of bytes is transferred or the requested read or write operation times out. The request returns the STATUS_SUCCESS status code to indicate that the specified number of bytes was transferred. The request returns the STATUS_TIMEOUT status code to indicate that the operation timed out.</p>
 
-<p>If an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> request specifies a read operation that is Nₜₒₜₐₗ bytes in length, the maximum amount of time, Tₘₐₓ, that the serial port allows for the operation to complete is calculated as follows:</p><dl>
-<dd>
+<p>If an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> request specifies a read operation that is Nₜₒₜₐₗ bytes in length, the maximum amount of time, Tₘₐₓ, that the serial port allows for the operation to complete is calculated as follows:</p>
+
 <p>Tₘₐₓ = Nₜₒₜₐₗ * <b>ReadTotalTimeoutMultiplier</b> + <b>ReadTotalTimeoutConstant</b></p>
-</dd>
-</dl><p>Tₘₐₓ = Nₜₒₜₐₗ * <b>ReadTotalTimeoutMultiplier</b> + <b>ReadTotalTimeoutConstant</b></p>
 
 <p>A read request that exceeds this maximum completes when the time-out occurs, and returns the STATUS_TIMEOUT status code. The <b>Information</b> field of the I/O status block indicates the number of bytes successfully read before the time-out occurred.</p>
 
-<p>If an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a> request specifies a write operation that is Nₜₒₜₐₗ bytes in length, the maximum amount of time, Tₘₐₓ, that the serial port allows for the operation to complete is calculated as follows:</p><dl>
-<dd>
+<p>If an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a> request specifies a write operation that is Nₜₒₜₐₗ bytes in length, the maximum amount of time, Tₘₐₓ, that the serial port allows for the operation to complete is calculated as follows:</p>
+
 <p>Tₘₐₓ = Nₜₒₜₐₗ * <b>WriteTotalTimeoutMultiplier</b> + <b>WriteTotalTimeoutConstant</b></p>
-</dd>
-</dl><p>Tₘₐₓ = Nₜₒₜₐₗ * <b>WriteTotalTimeoutMultiplier</b> + <b>WriteTotalTimeoutConstant</b></p>
 
 <p>A write request that exceeds this maximum completes when the time-out occurs, and returns the STATUS_TIMEOUT status code. The <b>Information</b> field of the I/O status block indicates the number of bytes successfully written before the time-out occurred.</p>
 
@@ -171,7 +167,7 @@ typedef struct _SERIAL_TIMEOUTS {
 <a href="base.getcommtimeouts">GetCommTimeouts</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544126">IOCTL_SERIAL_SET_TIMEOUTS</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-set-timeouts.md">IOCTL_SERIAL_SET_TIMEOUTS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
@@ -180,7 +176,7 @@ typedef struct _SERIAL_TIMEOUTS {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406702">SerCxGetReadIntervalTimeout</a>
+<a href="..\sercx\nf-sercx-sercxgetreadintervaltimeout.md">SerCxGetReadIntervalTimeout</a>
 </dt>
 <dt>
 <a href="base.setcommtimeouts">SetCommTimeouts</a>

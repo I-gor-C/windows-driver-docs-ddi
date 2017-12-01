@@ -83,7 +83,7 @@ typedef struct _D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES {
 </dl>
 
 ## -remarks
-<p>The <b>VidPnTargetColorCoeffDynamicRanges</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546647">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES structure.</p>
+<p>The <b>VidPnTargetColorCoeffDynamicRanges</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-present-path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES structure.</p>
 
 ## -requirements
 <table>
@@ -110,7 +110,7 @@ typedef struct _D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545984">D3DKMDT_COLOR_BASIS</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-color-basis.md">D3DKMDT_COLOR_BASIS</a>
 </dt>
 </dl>
 <p> </p>

@@ -117,13 +117,13 @@ typedef struct _UCX_CONTROLLER_PCI_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188057">UCX_CONTROLLER_CONFIG</a>
+<a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187948">UCX_CONTROLLER_PARENT_BUS_TYPE</a>
+<a href="buses.ucx_controller_parent_bus_type">UCX_CONTROLLER_PARENT_BUS_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188059">UCX_CONTROLLER_CONFIG_SET_PCI_INFO</a>
+<a href="buses._ucx_controller_config_set_pci_info">UCX_CONTROLLER_CONFIG_SET_PCI_INFO</a>
 </dt>
 </dl>
 <p> </p>

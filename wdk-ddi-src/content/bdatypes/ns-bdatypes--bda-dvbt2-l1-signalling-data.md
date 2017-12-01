@@ -7,7 +7,7 @@ old-location: stream\bda_dvbt2_l1_signalling_data.htm
 old-project: stream
 ms.assetid: 34BD68C3-446A-4074-8F5C-E670BE09083A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_DVBT2_L1_SIGNALLING_DATA, BDA_DVBT2_L1_SIGNALLING_DATA, *PBDA_DVBT2_L1_SIGNALLING_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

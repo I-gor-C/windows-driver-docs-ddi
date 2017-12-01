@@ -7,7 +7,7 @@ old-location: netvista\ndis_tcp_ip_checksum_offload.htm
 old-project: netvista
 ms.assetid: bf5369c5-8656-41a4-a23f-79e40a60d111
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_TCP_IP_CHECKSUM_OFFLOAD, NDIS_TCP_IP_CHECKSUM_OFFLOAD, *PNDIS_TCP_IP_CHECKSUM_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The NDIS_TCP_IP_CHECKSUM_OFFLOAD structure provides checksum task offload information in the 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff566599">NDIS_OFFLOAD</a> structure.</p>
+  <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> structure.</p>
 
 
 ## -syntax
@@ -294,7 +294,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 ## -remarks
 <p>The NDIS_TCP_IP_CHECKSUM_OFFLOAD structure is used in the 
     <b>Checksum</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566599">NDIS_OFFLOAD</a> structure. The
+    <a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a> structure. The
     NDIS_TCP_IP_CHECKSUM_OFFLOAD structure specifies the current or supported services that a miniport
     adapter provides for calculating IP, TCP, or UDP checksums (or all of them) for send packets and
     validating such checksums for receive packets.</p>
@@ -302,7 +302,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 <p>NDIS_OFFLOAD is used in the 
     <a href="..\ndis\ns-ndis--ndis-miniport-adapter-offload-attributes.md">
     NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a> structure, 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a> structure, 
+    <a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a> structure, 
     <a href="..\ndis\ns-ndis--ndis-filter-attach-parameters.md">
     NDIS_FILTER_ATTACH_PARAMETERS</a> structure, 
     <a href="netvista.oid_tcp_offload_current_config">
@@ -337,35 +337,9 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 <p>The following flags are defined for the 
     <b>Encapsulation</b> members:</p>
 
-<p></p><dl>
-<dt><a id="NDIS_ENCAPSULATION_NOT_SUPPORTED"></a><a id="ndis_encapsulation_not_supported"></a>NDIS_ENCAPSULATION_NOT_SUPPORTED</dt>
-<dd>
+<p></p>
+
 <p>Specifies that no encapsulation offload is supported.</p>
-</dd>
-<dt><a id="NDIS_ENCAPSULATION_NULL"></a><a id="ndis_encapsulation_null"></a>NDIS_ENCAPSULATION_NULL</dt>
-<dd>
-<p>Specifies NULL encapsulation.</p>
-</dd>
-<dt><a id="NDIS_ENCAPSULATION_IEEE_802_3"></a><a id="ndis_encapsulation_ieee_802_3"></a>NDIS_ENCAPSULATION_IEEE_802_3</dt>
-<dd>
-<p>Specifies IEEE 802.3 encapsulation.</p>
-</dd>
-<dt><a id="NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q"></a><a id="ndis_encapsulation_ieee_802_3_p_and_q"></a>NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q</dt>
-<dd>
-<p>Specifies IEEE 802.3p and IEEE 802.3q encapsulation.</p>
-</dd>
-<dt><a id="NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q_IN_OOB"></a><a id="ndis_encapsulation_ieee_802_3_p_and_q_in_oob"></a>NDIS_ENCAPSULATION_IEEE_802_3_P_AND_Q_IN_OOB</dt>
-<dd>
-<p>Specifies that IEEE 802.3p and IEEE 802.3q encapsulation settings are specified in the 
-      <b>NetBufferListInfo</b> member of each 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
-</dd>
-<dt><a id="NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED"></a><a id="ndis_encapsulation_ieee_llc_snap_routed"></a>NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED</dt>
-<dd>
-<p>Specifies logical link control (LLC) encapsulation for routed protocols, as described in RFC
-      1483. This flag is also used to indicate Ethernet LLC/SNAP encapsulation.</p>
-</dd>
-</dl><p>Specifies that no encapsulation offload is supported.</p>
 
 <p>Specifies NULL encapsulation.</p>
 
@@ -375,7 +349,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 
 <p>Specifies that IEEE 802.3p and IEEE 802.3q encapsulation settings are specified in the 
       <b>NetBufferListInfo</b> member of each 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+      <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 <p>Specifies logical link control (LLC) encapsulation for routed protocols, as described in RFC
       1483. This flag is also used to indicate Ethernet LLC/SNAP encapsulation.</p>
@@ -389,32 +363,7 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
     <b>IpChecksum</b> members of <b>NDIS_TCP_IP_CHECKSUM_OFFLOAD</b> depends on which OID or status indication
     includes the task offload structure: These members can have one of the following values:</p>
 
-<p></p><dl>
-<dt><a id="NDIS_OFFLOAD_NOT_SUPPORTED"></a><a id="ndis_offload_not_supported"></a>NDIS_OFFLOAD_NOT_SUPPORTED</dt>
-<dd>
 <p>In 
-      <a href="netvista.oid_tcp_offload_current_config">
-      OID_TCP_OFFLOAD_CURRENT_CONFIG</a>, this value specifies that the miniport adapter does not support
-      the feature that the member specifies.</p>
-</dd>
-<dt><a id="NDIS_OFFLOAD_SUPPORTED"></a><a id="ndis_offload_supported"></a>NDIS_OFFLOAD_SUPPORTED</dt>
-<dd>
-<p>In <a href="https://msdn.microsoft.com/library/windows/hardware/ff569805">OID_TCP_OFFLOAD_CURRENT_CONFIG</a>, this value specifies that the miniport adapter supports the
-      feature that the member specifies.</p>
-</dd>
-<dt><a id="NDIS_OFFLOAD_SET_OFF"></a><a id="ndis_offload_set_off"></a>NDIS_OFFLOAD_SET_OFF</dt>
-<dd>
-<p>In the 
-      <a href="netvista.ndis_status_task_offload_current_config">
-      NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a> status indication, this value specifies that the feature
-      that the member specifies is disabled.</p>
-</dd>
-<dt><a id="NDIS_OFFLOAD_SET_ON"></a><a id="ndis_offload_set_on"></a>NDIS_OFFLOAD_SET_ON</dt>
-<dd>
-<p>In the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567424">NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a> status indication, this value specifies that the
-      feature that the member specifies is enabled.</p>
-</dd>
-</dl><p>In 
       <a href="netvista.oid_tcp_offload_current_config">
       OID_TCP_OFFLOAD_CURRENT_CONFIG</a>, this value specifies that the miniport adapter does not support
       the feature that the member specifies.</p>
@@ -455,27 +404,27 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-bind-parameters.md">NDIS_BIND_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565481">NDIS_FILTER_ATTACH_PARAMETERS</a>
+<a href="..\ndis\ns-ndis--ndis-filter-attach-parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-miniport-adapter-offload-attributes.md">
    NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566599">NDIS_OFFLOAD</a>
+<a href="..\ndis\ns-ndis--ndis-offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_task_offload_current_config">
    NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569805">OID_TCP_OFFLOAD_CURRENT_CONFIG</a>
@@ -483,4 +432,4 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_OFFLOAD {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_IP_CHECKSUM_OFFLOAD structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_IP_CHECKSUM_OFFLOAD structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

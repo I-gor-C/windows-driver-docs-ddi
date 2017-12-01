@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>DsmSetLoadBalancePolicy_OUT</b> structure reports the output parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552670">DsmSetLoadBalancePolicy</a> method.</p>
+<p>The <b>DsmSetLoadBalancePolicy_OUT</b> structure reports the output parameter of the <a href="storage.dsmsetloadbalancepolicy">DsmSetLoadBalancePolicy</a> method.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _DsmSetLoadBalancePolicy_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>The status of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552670">DsmSetLoadBalancePolicy</a> operation.</p>
+<p>The status of the <a href="storage.dsmsetloadbalancepolicy">DsmSetLoadBalancePolicy</a> operation.</p>
 </dd>
 </dl>
 

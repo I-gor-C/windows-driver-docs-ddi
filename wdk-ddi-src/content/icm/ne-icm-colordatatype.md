@@ -106,10 +106,6 @@ typedef enum  {
 ## -remarks
 <p>The PCOLORDATATYPE and LPCOLORDATATYPE data types are defined as pointers to this enumeration:</p>
 
-<p>The PCOLORDATATYPE and LPCOLORDATATYPE data types are defined as pointers to this enumeration:</p>
-
-<p>The PCOLORDATATYPE and LPCOLORDATATYPE data types are defined as pointers to this enumeration:</p>
-
 ## -requirements
 <table>
 <tr>

@@ -7,7 +7,7 @@ old-location: kernel\pscreatesilocontext.htm
 old-project: kernel
 ms.assetid: 54FD0308-7E40-40C7-BA3A-FF1EFFBE0DB6
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PsCreateSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,7 +79,7 @@ NTSTATUS PsCreateSiloContext(
 ### -param <i>ContextCleanupCallback</i> [in, optional]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt735085">SILO_CONTEXT_CLEANUP_CALLBACK</a> callback function. The function will be called when the returned object has zero references to it. This parameter is optional and can be <b>NULL</b>. </p>
+<p>A pointer to a <a href="..\ntddk\nc-ntddk-silo-context-cleanup-callback.md">SILO_CONTEXT_CLEANUP_CALLBACK</a> callback function. The function will be called when the returned object has zero references to it. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
 ### -param <i>ReturnedSiloContext</i> 

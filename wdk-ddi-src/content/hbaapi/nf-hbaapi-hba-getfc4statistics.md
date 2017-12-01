@@ -60,7 +60,7 @@ HBA_STATUS HBA_API HBA_GetFC4Statistics(
 ### -param <i>handle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
 ### -param <i>portWWN</i> [in]
@@ -78,12 +78,12 @@ HBA_STATUS HBA_API HBA_GetFC4Statistics(
 ### -param <i>statistics</i> [out]
 
 <dd>
-<p>Pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556051">HBA_FC4Statistics</a> that contains statistics for the specified port and FC-4 protocol. </p>
+<p>Pointer to a structure of type <a href="..\hbaapi\ns-hbaapi-hba-fc4statistics.md">HBA_FC4Statistics</a> that contains statistics for the specified port and FC-4 protocol. </p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_GetFC4Statistics</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetFC4Statistics</b> returns one of the following qualifiers.</p><dl>
+<p>The <b>HBA_GetFC4Statistics</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetFC4Statistics</b> returns one of the following qualifiers.</p><dl>
 <dt><b>HBA_STATUS_ERROR_ILLEGAL_WWN</b></dt>
 </dl><p>Returned if the adapter does not contain a port with the name <i>HbaPortWWN</i>. </p><dl>
 <dt><b>HBA_STATUS_ERROR_NOT_SUPPORTED</b></dt>
@@ -94,9 +94,7 @@ HBA_STATUS HBA_API HBA_GetFC4Statistics(
 <p> </p>
 
 ## -remarks
-<p>Statistics counters in <a href="https://msdn.microsoft.com/library/windows/hardware/ff556051">HBA_FC4Statistics</a> are 64-bit signed integers that wrap to zero on exceeding 2**63-1. If an HBA does not support a specific statistic, it returns a value with every bit set to 1 for that statistic. For an explanation of how the counter values are determined, see the T11 committee's <i>Fibre Channel Generic Services - 4 </i>specification. </p>
-
-<p>Statistics counters in <a href="https://msdn.microsoft.com/library/windows/hardware/ff556051">HBA_FC4Statistics</a> are 64-bit signed integers that wrap to zero on exceeding 2**63-1. If an HBA does not support a specific statistic, it returns a value with every bit set to 1 for that statistic. For an explanation of how the counter values are determined, see the T11 committee's <i>Fibre Channel Generic Services - 4 </i>specification. </p>
+<p>Statistics counters in <a href="..\hbaapi\ns-hbaapi-hba-fc4statistics.md">HBA_FC4Statistics</a> are 64-bit signed integers that wrap to zero on exceeding 2**63-1. If an HBA does not support a specific statistic, it returns a value with every bit set to 1 for that statistic. For an explanation of how the counter values are determined, see the T11 committee's <i>Fibre Channel Generic Services - 4 </i>specification. </p>
 
 ## -requirements
 <table>
@@ -145,13 +143,13 @@ HBA_STATUS HBA_API HBA_GetFC4Statistics(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556051">HBA_FC4Statistics</a>
+<a href="..\hbaapi\ns-hbaapi-hba-fc4statistics.md">HBA_FC4Statistics</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

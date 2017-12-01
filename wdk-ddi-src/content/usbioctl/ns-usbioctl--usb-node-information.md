@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>USB_NODE_INFORMATION</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537324">IOCTL_USB_GET_NODE_INFORMATION</a> I/O control request to retrieve information about a parent device.</p>
+<p>The <b>USB_NODE_INFORMATION</b> structure is used with the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-information.md">IOCTL_USB_GET_NODE_INFORMATION</a> I/O control request to retrieve information about a parent device.</p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ typedef struct _USB_NODE_INFORMATION {
 ### -field <b>NodeType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540028">USB_HUB_NODE</a> enumerator that indicates whether the parent device is a hub or a non-hub composite device.</p>
+<p>A <a href="..\usbioctl\ne-usbioctl--usb-hub-node.md">USB_HUB_NODE</a> enumerator that indicates whether the parent device is a hub or a non-hub composite device.</p>
 </dd>
 
 ### -field <b>u</b>
@@ -74,13 +74,13 @@ typedef struct _USB_NODE_INFORMATION {
 ### -field <b>HubInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540020">USB_HUB_INFORMATION</a> structure that contains information about a parent hub device.</p>
+<p>A <a href="..\usbioctl\ns-usbioctl--usb-hub-information.md">USB_HUB_INFORMATION</a> structure that contains information about a parent hub device.</p>
 </dd>
 
 ### -field <b>MiParentInformation</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff540075">USB_MI_PARENT_INFORMATION</a> structure that contains information about a parent non-hub, composite device.</p>
+<p>A <a href="..\usbioctl\ns-usbioctl--usb-mi-parent-information.md">USB_MI_PARENT_INFORMATION</a> structure that contains information about a parent non-hub, composite device.</p>
 </dd>
 </dl>
 </dd>
@@ -106,19 +106,19 @@ typedef struct _USB_NODE_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537324">IOCTL_USB_GET_NODE_INFORMATION</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-node-information.md">IOCTL_USB_GET_NODE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540020">USB_HUB_INFORMATION</a>
+<a href="..\usbioctl\ns-usbioctl--usb-hub-information.md">USB_HUB_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540075">USB_MI_PARENT_INFORMATION</a>
+<a href="..\usbioctl\ns-usbioctl--usb-mi-parent-information.md">USB_MI_PARENT_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540028">USB_HUB_NODE</a>
+<a href="..\usbioctl\ne-usbioctl--usb-hub-node.md">USB_HUB_NODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

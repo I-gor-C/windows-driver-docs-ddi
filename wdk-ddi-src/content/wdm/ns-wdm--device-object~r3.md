@@ -7,7 +7,7 @@ old-location: kernel\device_object.htm
 old-project: kernel
 ms.assetid: f3522315-cf15-41f7-ac87-c625c7dc8040
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: DEVICE_OBJECT,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -103,13 +103,13 @@ typedef struct _DEVICE_OBJECT {
 ### -field <b>DriverObject</b>
 
 <dd>
-<p>A pointer to the driver object (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>), that represents the loaded image of the driver that was input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routines. This member is set by the I/O manager upon a successful call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548407">IoCreateDeviceSecure</a>. This is a read-only member.</p>
+<p>A pointer to the driver object (<a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>), that represents the loaded image of the driver that was input to the <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> and <a href="kernel.adddevice">AddDevice</a> routines. This member is set by the I/O manager upon a successful call to <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> or <a href="kernel.iocreatedevicesecure">IoCreateDeviceSecure</a>. This is a read-only member.</p>
 </dd>
 
 ### -field <b>NextDevice</b>
 
 <dd>
-<p>A pointer to the next device object, if any, that was created by the same driver. The I/O manager updates this list at each successful call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548407">IoCreateDeviceSecure</a>.</p>
+<p>A pointer to the next device object, if any, that was created by the same driver. The I/O manager updates this list at each successful call to <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> or <a href="kernel.iocreatedevicesecure">IoCreateDeviceSecure</a>.</p>
 <p>A non- Plug and Play (PnP) driver that is being unloaded must traverse ("walk") the list of its device objects and delete them. A PnP driver does not have to walk this list of device objects. Instead, PnP drivers perform their cleanup during the device removal PnP operation (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>).</p>
 <p>A driver that recreates its device objects dynamically also uses this member. This is a read/write member.</p>
 </dd>
@@ -117,19 +117,19 @@ typedef struct _DEVICE_OBJECT {
 ### -field <b>AttachedDevice</b>
 
 <dd>
-<p>A pointer to the attached device object. If there is no attached device object, this member is <b>NULL</b>. The device object that is pointed to by the <b>AttachedDevice</b> member typically is the device object of a filter driver, which intercepts I/O requests originally targeted to the device represent by the device object. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548294">IoAttachDevice</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548298">IoAttachDeviceByPointer</a> topics. This is an opaque member.</p>
+<p>A pointer to the attached device object. If there is no attached device object, this member is <b>NULL</b>. The device object that is pointed to by the <b>AttachedDevice</b> member typically is the device object of a filter driver, which intercepts I/O requests originally targeted to the device represent by the device object. For more information, see the <a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548298">IoAttachDeviceByPointer</a> topics. This is an opaque member.</p>
 </dd>
 
 ### -field <b>CurrentIrp</b>
 
 <dd>
-<p>A pointer to the current IRP if the driver has a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563858">StartIo</a> routine whose entry point was set in the driver object and if the driver is currently processing IRP(s). Otherwise, this member is <b>NULL</b>. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550370">IoStartPacket</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550358">IoStartNextPacket</a> topics. This is a read-only member.</p>
+<p>A pointer to the current IRP if the driver has a <a href="kernel.startio">StartIo</a> routine whose entry point was set in the driver object and if the driver is currently processing IRP(s). Otherwise, this member is <b>NULL</b>. For more information, see the <a href="..\ntifs\nf-ntifs-iostartpacket.md">IoStartPacket</a> and <a href="..\ntifs\nf-ntifs-iostartnextpacket.md">IoStartNextPacket</a> topics. This is a read-only member.</p>
 </dd>
 
 ### -field <b>Timer</b>
 
 <dd>
-<p>A pointer to a timer object. This allows the I/O manager to call a driver-supplied timer routine every second. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549344">IoInitializeTimer</a>. This is a read/write member.</p>
+<p>A pointer to a timer object. This allows the I/O manager to call a driver-supplied timer routine every second. For more information, see <a href="..\wdm\nf-wdm-ioinitializetimer.md">IoInitializeTimer</a>. This is a read/write member.</p>
 </dd>
 
 ### -field <b>Flags</b>
@@ -154,13 +154,13 @@ typedef struct _DEVICE_OBJECT {
 ### -field <a id="DO_DEVICE_INITIALIZING"></a><a id="do_device_initializing"></a>DO_DEVICE_INITIALIZING
 
 <dd>
-<p>The I/O manager sets this flag when it creates the device object. A device function driver or filter driver clears the flag in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine, after it does the following:</p>
+<p>The I/O manager sets this flag when it creates the device object. A device function driver or filter driver clears the flag in its <a href="kernel.adddevice">AddDevice</a> routine, after it does the following:</p>
 <ul>
 <li>Attaches the device object to the device stack.</li>
 <li>Establishes the device power state.</li>
 <li>Performs a bitwise OR operation on the member with one of the power flags (if it is necessary).</li>
 </ul>
-<p>The Plug and Play (PnP) manager checks that the flag is clear after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine returns.</p>
+<p>The Plug and Play (PnP) manager checks that the flag is clear after the <a href="kernel.adddevice">AddDevice</a> routine returns.</p>
 </dd>
 
 ### -field <a id="DO_EXCLUSIVE"></a><a id="do_exclusive"></a>DO_EXCLUSIVE
@@ -310,19 +310,19 @@ typedef struct _DEVICE_OBJECT {
 ### -field <b>DeviceExtension</b>
 
 <dd>
-<p>A pointer to the device extension. The structure and contents of the device extension are driver-defined. The size is driver-determined, specified in the driver's call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548407">IoCreateDeviceSecure</a>. For more information about device extensions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>. This is a read-only member. However, the object that the member points to can be modified by the driver.</p>
+<p>A pointer to the device extension. The structure and contents of the device extension are driver-defined. The size is driver-determined, specified in the driver's call to <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> or <a href="kernel.iocreatedevicesecure">IoCreateDeviceSecure</a>. For more information about device extensions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543119">Device Extensions</a>. This is a read-only member. However, the object that the member points to can be modified by the driver.</p>
 </dd>
 
 ### -field <b>DeviceType</b>
 
 <dd>
-<p>Set by <a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548407">IoCreateDeviceSecure</a> by using the value that is specified for that routine's <i>DeviceType</i> parameter. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a> topic.</p>
+<p>Set by <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> and <a href="kernel.iocreatedevicesecure">IoCreateDeviceSecure</a> by using the value that is specified for that routine's <i>DeviceType</i> parameter. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563821">Specifying Device Types</a> topic.</p>
 </dd>
 
 ### -field <b>StackSize</b>
 
 <dd>
-<p>Specifies the minimum number of stack locations in IRPs to be sent to this driver. <a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548407">IoCreateDeviceSecure</a> set this member to 1 in newly created device objects; lowest-level drivers can therefore ignore this member. The I/O manager automatically sets the <b>StackSize</b> member in a higher-level driver's device object to the appropriate value if the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548294">IoAttachDevice</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548300">IoAttachDeviceToDeviceStack</a>. Only a higher-level driver that chains itself over another driver with <b>IoGetDeviceObjectPointer</b> must explicitly set the value of <b>StackSize</b> in its own device object(s) to 1 + the <b>StackSize</b> value of the next-lower driver's device object.</p>
+<p>Specifies the minimum number of stack locations in IRPs to be sent to this driver. <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> and <a href="kernel.iocreatedevicesecure">IoCreateDeviceSecure</a> set this member to 1 in newly created device objects; lowest-level drivers can therefore ignore this member. The I/O manager automatically sets the <b>StackSize</b> member in a higher-level driver's device object to the appropriate value if the driver calls <a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a> or <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>. Only a higher-level driver that chains itself over another driver with <b>IoGetDeviceObjectPointer</b> must explicitly set the value of <b>StackSize</b> in its own device object(s) to 1 + the <b>StackSize</b> value of the next-lower driver's device object.</p>
 </dd>
 
 ### -field <b>Queue</b>
@@ -334,7 +334,7 @@ typedef struct _DEVICE_OBJECT {
 ### -field <b>ListEntry</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a> structure that contains forward and backward pointers for a doubly linked list.</p>
+<p>A <a href="kernel.list_entry">LIST_ENTRY</a> structure that contains forward and backward pointers for a doubly linked list.</p>
 </dd>
 
 ### -field <b>Wcb</b>
@@ -348,7 +348,7 @@ typedef struct _DEVICE_OBJECT {
 ### -field <b>AlignmentRequirement</b>
 
 <dd>
-<p>Specifies the device's address alignment requirement for data transfers. The value must be one of the FILE_<i>XXX</i>_ALIGNMENT values that are defined in Wdm.h. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff546530">GetDmaAlignment</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567052">ZwQueryInformationFile</a> topics.</p>
+<p>Specifies the device's address alignment requirement for data transfers. The value must be one of the FILE_<i>XXX</i>_ALIGNMENT values that are defined in Wdm.h. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>, <a href="kernel.getdmaalignment">GetDmaAlignment</a>, and <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> topics.</p>
 </dd>
 
 ### -field <b>DeviceQueue</b>
@@ -372,7 +372,7 @@ typedef struct _DEVICE_OBJECT {
 ### -field <b>SecurityDescriptor</b>
 
 <dd>
-<p>Specifies a security descriptor (<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>) for the device object when the device object is created. If this member is <b>NULL</b>, the device object receives default security settings. This is a read-only member, although the member can be modified through the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567106">ZwSetSecurityObject</a>function.</p>
+<p>Specifies a security descriptor (<a href="..\ntifs\ns-ntifs--security-descriptor.md">SECURITY_DESCRIPTOR</a>) for the device object when the device object is created. If this member is <b>NULL</b>, the device object receives default security settings. This is a read-only member, although the member can be modified through the <a href="..\ntifs\nf-ntifs-zwsetsecurityobject.md">ZwSetSecurityObject</a>function.</p>
 </dd>
 
 ### -field <b>DeviceLock</b>
@@ -409,7 +409,7 @@ typedef struct _DEVICE_OBJECT {
 ## -remarks
 <p>The operating system represents devices by device objects. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543153">Device Objects and Device Stacks</a> topic.</p>
 
-<p>Drivers create device objects by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548407">IoCreateDeviceSecure</a> routines. For more information about how to create device objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542862">Creating a Device Object</a>.</p>
+<p>Drivers create device objects by using the <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> and <a href="kernel.iocreatedevicesecure">IoCreateDeviceSecure</a> routines. For more information about how to create device objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542862">Creating a Device Object</a>.</p>
 
 <p>A device object is partially opaque. Drivers do not set members of the device object directly, unless otherwise documented. For more information about the members that drivers can modify directly, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>. For information about other device object properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559925">Properties of Device Objects</a>.</p>
 
@@ -438,24 +438,24 @@ typedef struct _DEVICE_OBJECT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>
+<a href="..\wdm\ns-wdm--driver-object.md">DRIVER_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548294">IoAttachDevice</a>
+<a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548300">IoAttachDeviceToDeviceStack</a>
+<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a>
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549083">IoDeleteDevice</a>
+<a href="..\wdm\nf-wdm-iodeletedevice.md">IoDeleteDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549198">IoGetDeviceObjectPointer</a>
+<a href="..\wdm\nf-wdm-iogetdeviceobjectpointer.md">IoGetDeviceObjectPointer</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DEVICE_OBJECT structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DEVICE_OBJECT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

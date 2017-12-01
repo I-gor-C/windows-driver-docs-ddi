@@ -76,11 +76,7 @@ typedef enum D3D11_1DDI_VIDEO_USAGE {
 </dl>
 
 ## -remarks
-<p>A value of type <b>D3D11_1DDI_VIDEO_USAGE</b> is specified in the <b>Usage</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450943">D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO</a> structure to help describe a decode device.</p>
-
-<p>A value of type <b>D3D11_1DDI_VIDEO_USAGE</b> is specified in the <b>Usage</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450943">D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO</a> structure to help describe a decode device.</p>
-
-<p>A value of type <b>D3D11_1DDI_VIDEO_USAGE</b> is specified in the <b>Usage</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450943">D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO</a> structure to help describe a decode device.</p>
+<p>A value of type <b>D3D11_1DDI_VIDEO_USAGE</b> is specified in the <b>Usage</b> member of a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-decoder-buffer-info.md">D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO</a> structure to help describe a decode device.</p>
 
 ## -requirements
 <table>
@@ -115,7 +111,7 @@ typedef enum D3D11_1DDI_VIDEO_USAGE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450943">D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-decoder-buffer-info.md">D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO</a>
 </dt>
 </dl>
 <p> </p>

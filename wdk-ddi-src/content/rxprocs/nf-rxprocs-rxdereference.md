@@ -94,55 +94,9 @@ VOID RxDereference(
 <p>None </p>
 
 ## -remarks
-<p><b>RxDereference</b> can be used to dereference (decrement by one) the <b>NodeReferenceCount</b> member on the following data structures used by RDBSS:</p><dl>
-<dd>
+<p><b>RxDereference</b> can be used to dereference (decrement by one) the <b>NodeReferenceCount</b> member on the following data structures used by RDBSS:</p>
+
 <p>SRV_CALL</p>
-</dd>
-<dd>
-<p>NET_ROOT</p>
-</dd>
-<dd>
-<p>V_NET_ROOT</p>
-</dd>
-<dd>
-<p>SRV_OPEN</p>
-</dd>
-<dd>
-<p>FOBX</p>
-</dd>
-</dl><p>SRV_CALL</p>
-
-<p>NET_ROOT</p>
-
-<p>V_NET_ROOT</p>
-
-<p>SRV_OPEN</p>
-
-<p>FOBX</p>
-
-<p>If <b>RxDereference</b> is called with any other type of RDBSS data structure, the routine causes the system to ASSERT on checked builds.</p>
-
-<p>If the <b>NodeReferenceCount</b> member is less than 0 after being derefenced (decremented) by <b>RxDereference</b>, then <b>RxDereference</b> causes the system to ASSERT on checked builds. </p>
-
-<p>If the <b>NodeReferenceCount</b> member decrements to 1 and the <i>LockHoldingState</i> parameter was LHS_ExclusiveLockHeld, the instance of the data structure can be finalized immediately. Otherwise, the instance of the data structure is tagged to be scavenged and finalized later. </p>
-
-<p><b>RxDereference</b> can be used to dereference (decrement by one) the <b>NodeReferenceCount</b> member on the following data structures used by RDBSS:</p><dl>
-<dd>
-<p>SRV_CALL</p>
-</dd>
-<dd>
-<p>NET_ROOT</p>
-</dd>
-<dd>
-<p>V_NET_ROOT</p>
-</dd>
-<dd>
-<p>SRV_OPEN</p>
-</dd>
-<dd>
-<p>FOBX</p>
-</dd>
-</dl><p>SRV_CALL</p>
 
 <p>NET_ROOT</p>
 
@@ -199,7 +153,7 @@ VOID RxDereference(
 <a href="ifsk.the_net_root_structure">The NET_ROOT Structure</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554688">RxReference</a>
+<a href="..\rxprocs\nf-rxprocs-rxreference.md">RxReference</a>
 </dt>
 <dt>
 <a href="ifsk.the_srv_call_structure">The SRV_CALL Structure</a>

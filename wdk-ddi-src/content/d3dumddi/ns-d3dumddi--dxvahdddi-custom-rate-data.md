@@ -61,7 +61,7 @@ typedef struct _DXVAHDDDI_CUSTOM_RATE_DATA {
 
 <dd>
 <p>
-      [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563064">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the input and output frame rate. 
+      [in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the input and output frame rate. 
      </p>
 </dd>
 
@@ -87,22 +87,9 @@ typedef struct _DXVAHDDDI_CUSTOM_RATE_DATA {
 ## -remarks
 <p>The driver can expose custom rates for the frame rate conversion or the inverse telecine. For example, the driver can provide the following information in the members of DXVAHDDDI_CUSTOM_RATE_DATA for the indicated operation:</p>
 
-<p></p><dl>
-<dt><a id="Double_frame_rate_conversion_from_60p_to_120p_requires_the_driver_to_provide_the_following_information_"></a><a id="double_frame_rate_conversion_from_60p_to_120p_requires_the_driver_to_provide_the_following_information_"></a><a id="DOUBLE_FRAME_RATE_CONVERSION_FROM_60P_TO_120P_REQUIRES_THE_DRIVER_TO_PROVIDE_THE_FOLLOWING_INFORMATION_"></a>Double frame rate conversion from 60p to 120p requires the driver to provide the following information:</dt>
-<dd>
+<p></p>
+
 <p><b>CustomRate</b> = 2/1</p>
-<p><b>OutputFrames</b> = 2</p>
-<p><b>InputInterlaced</b> = <b>FALSE</b></p>
-<p><b>InputFramesOrFields</b> = 1</p>
-</dd>
-<dt><a id="3_2_inverse_telecine_from_60i_to_24p_requires_the_driver_to_provide_the_following_information_"></a><a id="3_2_INVERSE_TELECINE_FROM_60I_TO_24P_REQUIRES_THE_DRIVER_TO_PROVIDE_THE_FOLLOWING_INFORMATION_"></a>3:2 inverse telecine from 60i to 24p requires the driver to provide the following information:</dt>
-<dd>
-<p><b>CustomRate</b> = 4/5</p>
-<p><b>OutputFrames</b> = 4</p>
-<p><b>InputInterlaced</b> = <b>TRUE</b></p>
-<p><b>InputFramesOrFields</b> = 10</p>
-</dd>
-</dl><p><b>CustomRate</b> = 2/1</p>
 
 <p><b>OutputFrames</b> = 2</p>
 
@@ -143,7 +130,7 @@ typedef struct _DXVAHDDDI_CUSTOM_RATE_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563064">DXVAHDDDI_RATIONAL</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-rational.md">DXVAHDDDI_RATIONAL</a>
 </dt>
 </dl>
 <p> </p>

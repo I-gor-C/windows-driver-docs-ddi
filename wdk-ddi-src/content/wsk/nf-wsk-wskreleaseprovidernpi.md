@@ -7,7 +7,7 @@ old-location: netvista\wskreleaseprovidernpi.htm
 old-project: netvista
 ms.assetid: 6b0b995a-61db-4bdf-a896-74d91bd192e7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WskReleaseProviderNPI
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: function
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -45,7 +44,7 @@ req.product: Windows 10 or later.
   <b>WskReleaseProviderNPI</b> function releases a 
   <a href="netvista.network_programming_interface">Network Programming Interface
   (NPI)</a> that was captured with 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff571122">WskCaptureProviderNPI</a>.</p>
+  <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>.</p>
 
 
 ## -syntax
@@ -64,7 +63,7 @@ VOID WskReleaseProviderNPI(
 
 <dd>
 <p>A pointer to the memory location initialized by 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a> that identifies a WSK
+     <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> that identifies a WSK
      application's registration instance.</p>
 </dd>
 </dl>
@@ -73,13 +72,6 @@ VOID WskReleaseProviderNPI(
 <p>None</p>
 
 ## -remarks
-<p>For each call to
-    <b>WskCaptureProviderNPI</b> that returns a success code, there must be exactly one corresponding 
-    <b>WskReleaseProviderNPI</b> call that uses
-    the same 
-    <i>WskRegistration</i> parameter that was passed to 
-    <b>WskCaptureProviderNPI</b>.</p>
-
 <p>For each call to
     <b>WskCaptureProviderNPI</b> that returns a success code, there must be exactly one corresponding 
     <b>WskReleaseProviderNPI</b> call that uses
@@ -141,12 +133,12 @@ VOID WskReleaseProviderNPI(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571122">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571178">WSK_REGISTRATION</a>
+<a href="..\wsk\ns-wsk--wsk-registration.md">WSK_REGISTRATION</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WskReleaseProviderNPI function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WskReleaseProviderNPI function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -61,14 +61,14 @@ typedef struct _DXGKARG_QUERYADAPTERINFO {
 ### -field <b>Type</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562010">DXGK_QUERYADAPTERINFOTYPE</a>-typed value that indicates the type of information to retrieve.</p>
+<p>[in] A <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-queryadapterinfotype.md">DXGK_QUERYADAPTERINFOTYPE</a>-typed value that indicates the type of information to retrieve.</p>
 </dd>
 
 ### -field <b>pInputData</b>
 
 <dd>
 <p>[in] A pointer to input information for the query. </p>
-<p>When <b>Type</b> specifies DXGKQAITYPE_UMDRIVERPRIVATE, <b>pInputData</b> points to a proprietary buffer that contains information about the query. When <b>Type</b> specifies DXGKQAITYPE_QUERYSEGMENT, <b>pInputData</b> points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562015">DXGK_QUERYSEGMENTIN</a> structure. When <b>Type</b> specifies <b>DXGKQAITYPE_POWERCOMPONENTINFO</b>, <b>pInputData</b> points to an input buffer that contains the power component index.</p>
+<p>When <b>Type</b> specifies DXGKQAITYPE_UMDRIVERPRIVATE, <b>pInputData</b> points to a proprietary buffer that contains information about the query. When <b>Type</b> specifies DXGKQAITYPE_QUERYSEGMENT, <b>pInputData</b> points to a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentin.md">DXGK_QUERYSEGMENTIN</a> structure. When <b>Type</b> specifies <b>DXGKQAITYPE_POWERCOMPONENTINFO</b>, <b>pInputData</b> points to an input buffer that contains the power component index.</p>
 <p>An input buffer is not required when <b>Type</b> specifies the DXGKQAITYPE_DRIVERCAPS value.</p>
 </dd>
 
@@ -93,15 +93,15 @@ typedef struct _DXGKARG_QUERYADAPTERINFO {
 </tr>
 <tr>
 <td><b>DXGKQAITYPE_DRIVERCAPS</b></td>
-<td>Populated <a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a> structure</td>
+<td>Populated <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a> structure</td>
 </tr>
 <tr>
 <td><b>DXGKQAITYPE_QUERYSEGMENT</b></td>
-<td>Populated <a href="https://msdn.microsoft.com/library/windows/hardware/ff562018">DXGK_QUERYSEGMENTOUT</a> structure</td>
+<td>Populated <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentout.md">DXGK_QUERYSEGMENTOUT</a> structure</td>
 </tr>
 <tr>
 <td><b>DXGKQAITYPE_QUERYSEGMENT3</b></td>
-<td>Populated <a href="https://msdn.microsoft.com/library/windows/hardware/hh464082">DXGK_QUERYSEGMENTOUT3</a> structure</td>
+<td>Populated <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentout3.md">DXGK_QUERYSEGMENTOUT3</a> structure</td>
 </tr>
 <tr>
 <td><b>DXGKQAITYPE_NUMPOWERCOMPONENTS</b></td>
@@ -109,7 +109,7 @@ typedef struct _DXGKARG_QUERYADAPTERINFO {
 </tr>
 <tr>
 <td><b>DXGKQAITYPE_POWERCOMPONENTINFO</b></td>
-<td>Populated <a href="https://msdn.microsoft.com/library/windows/hardware/hh464073">DXGK_POWER_RUNTIME_COMPONENT</a> structure that provides information about the <i>n</i>th power component, where <i>n</i> is the component index specified by  <b>pInputData</b> in a call to the <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function</td>
+<td>Populated <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-runtime-component.md">DXGK_POWER_RUNTIME_COMPONENT</a> structure that provides information about the <i>n</i>th power component, where <i>n</i> is the component index specified by  <b>pInputData</b> in a call to the <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function</td>
 </tr>
 </table>
 <p> </p>
@@ -150,25 +150,25 @@ typedef struct _DXGKARG_QUERYADAPTERINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn268634">DXGK_POWER_P_COMPONENT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-p-component.md">DXGK_POWER_P_COMPONENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464073">DXGK_POWER_RUNTIME_COMPONENT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-runtime-component.md">DXGK_POWER_RUNTIME_COMPONENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562010">DXGK_QUERYADAPTERINFOTYPE</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-queryadapterinfotype.md">DXGK_QUERYADAPTERINFOTYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562015">DXGK_QUERYSEGMENTIN</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentin.md">DXGK_QUERYSEGMENTIN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562018">DXGK_QUERYSEGMENTOUT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentout.md">DXGK_QUERYSEGMENTOUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464082">DXGK_QUERYSEGMENTOUT3</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentout3.md">DXGK_QUERYSEGMENTOUT3</a>
 </dt>
 <dt>
 <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a>

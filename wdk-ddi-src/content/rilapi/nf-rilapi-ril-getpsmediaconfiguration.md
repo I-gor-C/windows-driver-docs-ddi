@@ -7,7 +7,7 @@ old-location: netvista\ril_getpsmediaconfiguration.htm
 old-project: netvista
 ms.assetid: f7b1f2a6-d57a-44ec-b14b-8b41b020935e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetPSMediaConfiguration
 ms.prod: windows-hardware
 ms.technology: windows-devices

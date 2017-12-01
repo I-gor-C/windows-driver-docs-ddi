@@ -57,7 +57,7 @@ typedef struct _SM_AddLink_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>A value associated with the WMI class qualifier <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the result of an HBA query operation.</p>
+<p>A value associated with the WMI class qualifier <a href="storage.hba_status">HBA_STATUS</a> that indicates the result of an HBA query operation.</p>
 </dd>
 </dl>
 

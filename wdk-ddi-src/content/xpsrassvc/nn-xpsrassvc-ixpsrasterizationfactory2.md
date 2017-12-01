@@ -61,7 +61,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn937113">CreateRasterizer</a>
+<a href="print.ixpsrasterizationfactory2_createrasterizer">CreateRasterizer</a>
 </td>
 <td align="left" width="63%">
 <p>The <b>CreateRasterizer</b> method creates an XPS rasterizer object that can convert content from XPS to PWG Raster using the <a href="print.xps_rasterization_service_reference">XPS Rasterization Service</a>. PWG Raster supports non-square DPIs.

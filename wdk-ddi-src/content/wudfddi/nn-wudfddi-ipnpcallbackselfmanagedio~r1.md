@@ -7,7 +7,7 @@ old-location: wdf\ipnpcallbackselfmanagedio.htm
 old-project: wdf
 ms.assetid: 34971df0-4abc-41a1-8d2f-6e36df1daf20
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556780">IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup</a>
+<a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup">IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup">OnSelfManagedIoCleanup</a> method releases memory for a device's self-managed I/O operations, after the device is removed.</p>
@@ -79,7 +79,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556783">IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush</a>
+<a href="wdf.ipnpcallbackselfmanagedio_onselfmanagedioflush">IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagedioflush">OnSelfManagedIoFlush</a> method flushes the device for a device's self-managed I/O operations.</p>
@@ -87,7 +87,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556784">IPnpCallbackSelfManagedIo::OnSelfManagedIoInit</a>
+<a href="wdf.ipnpcallbackselfmanagedio_onselfmanagedioinit">IPnpCallbackSelfManagedIo::OnSelfManagedIoInit</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagedioinit">OnSelfManagedIoInit</a> method initializes a device's self-managed I/O operations.</p>
@@ -95,7 +95,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556785">IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart</a>
+<a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediorestart">IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediorestart">OnSelfManagedIoRestart</a> method restarts a device's self-managed I/O operations.</p>
@@ -103,7 +103,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556787">IPnpCallbackSelfManagedIo::OnSelfManagedIoStop</a>
+<a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediostop">IPnpCallbackSelfManagedIo::OnSelfManagedIoStop</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediostop">OnSelfManagedIoStop</a> method is not used in the current version of the UMDF.</p>
@@ -111,7 +111,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556790">IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend</a>
+<a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend">IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend">OnSelfManagedIoSuspend</a> method suspends a device's self-managed I/O operations.</p>
@@ -132,9 +132,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>A driver registers the <b>IPnpCallbackSelfManagedIo</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. </p>
-
-<p>A driver registers the <b>IPnpCallbackSelfManagedIo</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. </p>
+<p>A driver registers the <b>IPnpCallbackSelfManagedIo</b> interface when the driver calls the <a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a> method to create a device object. </p>
 
 ## -requirements
 <table>

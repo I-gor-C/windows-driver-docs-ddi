@@ -7,7 +7,7 @@ old-location: kernel\psgetjobserversilo.htm
 old-project: kernel
 ms.assetid: 8EBCBC06-8373-43EA-91F5-6C8A439C0EAD
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PsGetJobServerSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>This routine returns the effective <i>ServerSilo</i> for the job. The returned pointer is valid as long as the supplied <i>Job</i> object remains referenced.</p>
 <p>
-<div class="alert"><b>Note</b>  This returns a <i>ServerSilo</i> or a value indicating the host silo. Unlike <a href="https://msdn.microsoft.com/library/windows/hardware/mt735068">PsGetJobSilo</a>, it will not return an app silo, even if one is present.</div>
+<div class="alert"><b>Note</b>  This returns a <i>ServerSilo</i> or a value indicating the host silo. Unlike <a href="..\ntddk\nf-ntddk-psgetjobsilo.md">PsGetJobSilo</a>, it will not return an app silo, even if one is present.</div>
 <div> </div>
 </p>
 
@@ -82,8 +82,6 @@ NTSTATUS PsGetJobServerSilo(
 <p> </p>
 
 ## -remarks
-<p><b>STATUS_SUCCESS</b> is returned even if a server silo is not in effect for the job. In that case, it will return the default host silo.</p>
-
 <p><b>STATUS_SUCCESS</b> is returned even if a server silo is not in effect for the job. In that case, it will return the default host silo.</p>
 
 ## -requirements

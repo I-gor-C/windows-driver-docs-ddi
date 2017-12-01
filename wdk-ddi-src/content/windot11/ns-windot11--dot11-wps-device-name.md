@@ -7,7 +7,7 @@ old-location: netvista\dot11_wps_device_name.htm
 old-project: netvista
 ms.assetid: 6C2B8E87-A88F-4244-81B2-0241E2DAE756
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices

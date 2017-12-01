@@ -56,7 +56,7 @@ req.product: Windows 10 or later.
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrintJob</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn895599">Id</a>
+<a href="print.iprintjob_id">Id</a>
 </p>
 
 <p>Read-only</p>
@@ -64,7 +64,7 @@ req.product: Windows 10 or later.
 <p>Gets the print job identifier (ID).</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971602">Name</a>
+<a href="print.iprintjob_name">Name</a>
 </p>
 
 <p>Read-only</p>
@@ -72,7 +72,7 @@ req.product: Windows 10 or later.
 <p>Gets the name of the print job.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265403">PrintedPages</a>
+<a href="print.iprintjob_printedpages">PrintedPages</a>
 </p>
 
 <p>Read-only</p>
@@ -80,7 +80,7 @@ req.product: Windows 10 or later.
 <p>Gets the number of pages that have been printed.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265407">Status</a>
+<a href="print.iprintjob_status">Status</a>
 </p>
 
 <p>Read-only</p>
@@ -88,7 +88,7 @@ req.product: Windows 10 or later.
 <p>Gets the current status of the print job.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265410">SubmissionTime</a>
+<a href="print.iprintjob_submissiontime">SubmissionTime</a>
 </p>
 
 <p>Read-only</p>
@@ -96,7 +96,7 @@ req.product: Windows 10 or later.
 <p>Gets the submission time, in the “DATE” format, provided in the user’s local time (not in the UTC format that is provided by the spooler).</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265411">TotalPages</a>
+<a href="print.iprintjob_totalpages">TotalPages</a>
 </p>
 
 <p>Read-only</p>
@@ -113,7 +113,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265404">RequestCancel</a>
+<a href="print.iprintjob_requestcancel">RequestCancel</a>
 </td>
 <td align="left" width="63%">
 <p>Requests the cancellation of a print job.</p>
@@ -132,7 +132,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn895599">Id</a>
+<a href="print.iprintjob_id">Id</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -145,7 +145,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971602">Name</a>
+<a href="print.iprintjob_name">Name</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -158,7 +158,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265403">PrintedPages</a>
+<a href="print.iprintjob_printedpages">PrintedPages</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -171,7 +171,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265407">Status</a>
+<a href="print.iprintjob_status">Status</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -184,7 +184,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265410">SubmissionTime</a>
+<a href="print.iprintjob_submissiontime">SubmissionTime</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -197,7 +197,7 @@ req.product: Windows 10 or later.
 <tr data="declared;">
 <td align="left" width="27%" xml:space="preserve">
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265411">TotalPages</a>
+<a href="print.iprintjob_totalpages">TotalPages</a>
 </p>
 </td>
 <td align="left" width="10%">
@@ -208,7 +208,7 @@ req.product: Windows 10 or later.
 </td>
 </tr>
 </table><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn895599">Id</a>
+<a href="print.iprintjob_id">Id</a>
 </p>
 
 <p>Read-only</p>
@@ -216,7 +216,7 @@ req.product: Windows 10 or later.
 <p>Gets the print job identifier (ID).</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh971602">Name</a>
+<a href="print.iprintjob_name">Name</a>
 </p>
 
 <p>Read-only</p>
@@ -224,7 +224,7 @@ req.product: Windows 10 or later.
 <p>Gets the name of the print job.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265403">PrintedPages</a>
+<a href="print.iprintjob_printedpages">PrintedPages</a>
 </p>
 
 <p>Read-only</p>
@@ -232,7 +232,7 @@ req.product: Windows 10 or later.
 <p>Gets the number of pages that have been printed.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265407">Status</a>
+<a href="print.iprintjob_status">Status</a>
 </p>
 
 <p>Read-only</p>
@@ -240,7 +240,7 @@ req.product: Windows 10 or later.
 <p>Gets the current status of the print job.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265410">SubmissionTime</a>
+<a href="print.iprintjob_submissiontime">SubmissionTime</a>
 </p>
 
 <p>Read-only</p>
@@ -248,7 +248,7 @@ req.product: Windows 10 or later.
 <p>Gets the submission time, in the “DATE” format, provided in the user’s local time (not in the UTC format that is provided by the spooler).</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265411">TotalPages</a>
+<a href="print.iprintjob_totalpages">TotalPages</a>
 </p>
 
 <p>Read-only</p>
@@ -258,10 +258,6 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>The <b>IPrintJob</b> interface provides a wrapper around select properties of the spooler’s <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd145019(v=vs.85).aspx">JOB_INFO_1</a> structure.</p>
-
-<p><b>IPrintJob</b> also helps to make it possible to perform job management from a UWP device app or from a printer extension. For more information, see <a href="NULL">Job Management</a>.</p>
-
 <p>The <b>IPrintJob</b> interface provides a wrapper around select properties of the spooler’s <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd145019(v=vs.85).aspx">JOB_INFO_1</a> structure.</p>
 
 <p><b>IPrintJob</b> also helps to make it possible to perform job management from a UWP device app or from a printer extension. For more information, see <a href="NULL">Job Management</a>.</p>

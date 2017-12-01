@@ -7,7 +7,7 @@ old-location: netvista\ndisgetdatabuffer.htm
 old-project: netvista
 ms.assetid: 784d4c32-a517-4219-8e22-a998e0e66d69
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisGetDataBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>Call the 
   <b>NdisGetDataBuffer</b> function to gain access to a contiguous block of data from a 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure.</p>
+  <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure.</p>
 
 
 ## -syntax
@@ -101,7 +101,7 @@ PVOID NdisGetDataBuffer(
 
 <p>If the 
       <b>DataLength</b> member of the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568381">NET_BUFFER_DATA</a> structure in the 
+      <a href="..\ndis\ns-ndis--net-buffer-data.md">NET_BUFFER_DATA</a> structure in the 
       <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure that the <i>NetBuffer</i>
       parameter points to is less than the value in the 
       <i>BytesNeeded</i> parameter, the return value is <b>NULL</b>.</p>
@@ -114,17 +114,7 @@ PVOID NdisGetDataBuffer(
 
 ## -remarks
 <p>Call this function to get a pointer to a network data header contained in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure. You can easily parse the
-    header stored in the contiguous data block that this function returns.</p>
-
-<p>The requested alignment requirement is expressed as a power-of-two multiple plus an offset. For
-    example, if 
-    <i>AlignMultiple</i> is 4 and 
-    <i>AlignOffset</i> is 3 then the data address should be a multiple of 4 plus 3. If necessary, NDIS will
-    allocate memory to satisfy the alignment requirement.</p>
-
-<p>Call this function to get a pointer to a network data header contained in the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure. You can easily parse the
+    <a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a> structure. You can easily parse the
     header stored in the contiguous data block that this function returns.</p>
 
 <p>The requested alignment requirement is expressed as a power-of-two multiple plus an offset. For
@@ -186,7 +176,7 @@ PVOID NdisGetDataBuffer(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
+<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -194,12 +184,12 @@ PVOID NdisGetDataBuffer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis--net-buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568381">NET_BUFFER_DATA</a>
+<a href="..\ndis\ns-ndis--net-buffer-data.md">NET_BUFFER_DATA</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetDataBuffer function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetDataBuffer function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

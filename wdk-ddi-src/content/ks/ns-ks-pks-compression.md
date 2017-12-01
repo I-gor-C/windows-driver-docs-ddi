@@ -7,7 +7,7 @@ old-location: stream\ks_compression.htm
 old-project: stream
 ms.assetid: 065f51c3-f476-4f04-880a-5c42e493d458
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKS_COMPRESSION, KS_COMPRESSION, *PKS_COMPRESSION
 ms.prod: windows-hardware
 ms.technology: windows-devices

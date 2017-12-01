@@ -80,19 +80,19 @@ typedef struct _D3DDDIARG_TEXBLT1 {
 ### -field <b>DstPoint</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a> structure that describes the destination point where the source texture is copied.</p>
+<p>A <a href="display.point">POINT</a> structure that describes the destination point where the source texture is copied.</p>
 </dd>
 
 ### -field <b>SrcRect</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the source texture to copy to the destination point.</p>
+<p>A <a href="display.rect">RECT</a> structure that describes the source texture to copy to the destination point.</p>
 </dd>
 
 ### -field <b>CopyFlags</b>
 
 <dd>
-<p>A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451175">D3DDDI_COPY_FLAGS</a> enumeration type.</p>
+<p>A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi-d3dddi-copy-flags.md">D3DDDI_COPY_FLAGS</a> enumeration type.</p>
 </dd>
 </dl>
 
@@ -132,13 +132,13 @@ typedef struct _D3DDDIARG_TEXBLT1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451175">D3DDDI_COPY_FLAGS</a>
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi-copy-flags.md">D3DDDI_COPY_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a>
+<a href="display.point">POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

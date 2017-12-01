@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure contains CD text descriptor data used in conjunction with the data in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551380">CDROM_TOC_CD_TEXT_DATA</a> structure. </p>
+<p>This structure contains CD text descriptor data used in conjunction with the data in the <a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-cd-text-data.md">CDROM_TOC_CD_TEXT_DATA</a> structure. </p>
 
 
 ## -syntax
@@ -254,13 +254,13 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559367">IOCTL_CDROM_READ_TOC_EX</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-toc-ex.md">IOCTL_CDROM_READ_TOC_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551366">CDROM_READ_TOC_EX</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-read-toc-ex.md">CDROM_READ_TOC_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551380">CDROM_TOC_CD_TEXT_DATA</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--cdrom-toc-cd-text-data.md">CDROM_TOC_CD_TEXT_DATA</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: audio\ksaudiomodule_notification.htm
 old-project: audio
 ms.assetid: 92A9462C-0E8C-4012-9374-3437BB220502
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: KSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION, *PKSAUDIOMODULE_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ typedef struct _KSAUDIOMODULE_NOTIFICATION {
 ### -field <b>DeviceId</b>
 
 <dd>
-<p>Specifies the DeviceId of the audio module notification. The DeviceId matches the value returned in <a href="audio.ksproperty_audiomodule_notification_device_id">KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID</a>.</p>
+<p>Specifies the DeviceId of the audio module notification. The DeviceId matches the value returned in <a href="https://msdn.microsoft.com/CD9C5FCD-FB2A-4B21-A15E-BA520C3311A7">KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID</a>.</p>
 </dd>
 
 ### -field <b>ClassId</b>

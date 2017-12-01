@@ -64,7 +64,7 @@ typedef struct _ISCSI_TargetPortalGroup {
 ### -field <b>Portals</b>
 
 <dd>
-<p>A variable-length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561574">ISCSI_TargetPortal</a> structures, which describe portals in the target portal group. The number of elements in the array is specified by the PortalCount field.</p>
+<p>A variable-length array of <a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a> structures, which describe portals in the target portal group. The number of elements in the array is specified by the PortalCount field.</p>
 </dd>
 </dl>
 
@@ -88,10 +88,10 @@ typedef struct _ISCSI_TargetPortalGroup {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561574">ISCSI_TargetPortal</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-targetportal.md">ISCSI_TargetPortal</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561576">ISCSI_TargetPortalGroup WMI Class</a>
+<a href="storage.iscsi_targetportalgroup_wmi_class">ISCSI_TargetPortalGroup WMI Class</a>
 </dt>
 </dl>
 <p> </p>

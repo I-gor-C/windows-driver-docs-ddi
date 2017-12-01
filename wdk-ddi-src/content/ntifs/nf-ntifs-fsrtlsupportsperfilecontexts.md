@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FsRtlSupportsPerFileContexts</b> macro checks if per file context information is supported by the file system that is associated with a specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a>.</p>
+<p>The <b>FsRtlSupportsPerFileContexts</b> macro checks if per file context information is supported by the file system that is associated with a specified <a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a>.</p>
 
 
 ## -syntax
@@ -65,8 +65,6 @@ BOOLEAN FsRtlSupportsPerFileContexts(
 <p>The macro returns <b>TRUE</b> if the associated file system does support per file context objects. The macro returns <b>FALSE</b> if the file system does not support per file context objects.</p>
 
 ## -remarks
-<p>None</p>
-
 <p>None</p>
 
 ## -requirements
@@ -112,7 +110,7 @@ BOOLEAN FsRtlSupportsPerFileContexts(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a>
+<a href="..\wdm\ns-wdm--file-object.md">FILE_OBJECT</a>
 </dt>
 <dt>
 <a href="ifsk.tracking_per_file_context_in_a_legacy_file_system_filter_driver">Tracking Per-File Context in a Legacy File System Filter Driver</a>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>DXGK_PAGETABLEUPDATEADDRESS</b> contains the address of a page table to update. The member containing the address is defined as part of a <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a> operation in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn894171">DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE</a> structure.</p>
+<p><b>DXGK_PAGETABLEUPDATEADDRESS</b> contains the address of a page table to update. The member containing the address is defined as part of a <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a> operation in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-buildpagingbuffer-updatepagetable.md">DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE</a> structure.</p>
 
 
 ## -syntax
@@ -116,7 +116,7 @@ typedef struct _DXGK_PAGETABLEUPDATEADDRESS {
 <a href="display.dxgkddibuildpagingbuffer">DxgkDdiBuildPagingBuffer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn894171">DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-buildpagingbuffer-updatepagetable.md">DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE</a>
 </dt>
 </dl>
 <p> </p>

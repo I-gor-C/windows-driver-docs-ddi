@@ -154,14 +154,6 @@ BOOL DrvDriverEvent(
 
 <p>Because the <b>DrvDriverEvent</b> function is called in the context of the print spooler, it cannot display a user interface.</p>
 
-<p>The optional <b>DrvDriverEvent</b> function is called by the spooler's <b>AddPrinterDriverEx</b> and <b>DeletePrinterDriverEx</b> functions, which are described in the Windows SDK documentation.</p>
-
-<p>The function's purpose is to allow a printer driver's <a href="NULL">printer interface DLL</a> to perform operations needed when the driver is installed or removed. A typical operation for this function to perform is to create or remove extra driver-specific files that are not specified as dependent files in a <a href="https://msdn.microsoft.com/33f1c836-0846-49d5-8ab5-baadf9e0678c">printer INF file</a>.</p>
-
-<p>If <i>dwDriverEvent</i> is DRIVER_EVENT_DELETE, the <i>lparam</i> parameter contains the flags that were specified for the <b>DeletePrinterDriverEx</b> function's <i>dwDeleteFlag</i> parameter. The <i>lparam</i> parameter is not used if <i>dwDriverEvent</i> is DRIVER_EVENT_INITIALIZE.</p>
-
-<p>Because the <b>DrvDriverEvent</b> function is called in the context of the print spooler, it cannot display a user interface.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -7,7 +7,7 @@ old-location: debugger\readcontrol.htm
 old-project: debugger
 ms.assetid: 52f65e2a-97a7-4c1c-a021-208bc2520b7d
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces3, ReadControl, IDebugDataSpaces3::ReadControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,8 +99,6 @@ HRESULT ReadControl(
 <p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 ## -requirements

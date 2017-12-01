@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CHANGER_READ_ELEMENT_STATUS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559396">IOCTL_CHANGER_GET_ELEMENT_STATUS</a> request to retrieve the status of all elements or the status of a specified number of elements of a particular type. </p>
+<p>The CHANGER_READ_ELEMENT_STATUS structure is used in conjunction with the <a href="..\ntddchgr\ni-ntddchgr-ioctl-changer-get-element-status.md">IOCTL_CHANGER_GET_ELEMENT_STATUS</a> request to retrieve the status of all elements or the status of a specified number of elements of a particular type. </p>
 
 
 ## -syntax
@@ -58,13 +58,13 @@ typedef struct _CHANGER_READ_ELEMENT_STATUS {
 ### -field <b>ElementList</b>
 
 <dd>
-<p>Specifies the element type and the number of elements of that type for which to report status in a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551459">CHANGER_ELEMENT_LIST</a>. This member contains a list of structures of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551457">CHANGER_ELEMENT</a>. The <b>ElementType</b> member of each CHANGER_ELEMENT structure in this list can be assigned a value of <b>ChangerDrive</b>, <b>ChangerSlot</b>, <b>ChangerTransport</b>, <b>ChangerIEPort</b>, or <b>AllElements</b>. </p>
+<p>Specifies the element type and the number of elements of that type for which to report status in a structure of type <a href="..\ntddchgr\ns-ntddchgr--changer-element-list.md">CHANGER_ELEMENT_LIST</a>. This member contains a list of structures of type <a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a>. The <b>ElementType</b> member of each CHANGER_ELEMENT structure in this list can be assigned a value of <b>ChangerDrive</b>, <b>ChangerSlot</b>, <b>ChangerTransport</b>, <b>ChangerIEPort</b>, or <b>AllElements</b>. </p>
 </dd>
 
 ### -field <b>VolumeTagInfo</b>
 
 <dd>
-<p>Indicates, when <b>TRUE</b>, that volume tag information should be reported in addition to element status. When <b>FALSE</b>, it indicates that only element status should be reported. A volume tag can be a bar code or an application-defined value assigned using <a href="https://msdn.microsoft.com/library/windows/hardware/ff551440">ChangerQueryVolumeTags</a>. This member is applicable only if either CHANGER_BAR_CODE_SCANNER_INSTALLED or CHANGER_VOLUME_IDENTIFICATION is set in the <b>Features0</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a> structure.</p>
+<p>Indicates, when <b>TRUE</b>, that volume tag information should be reported in addition to element status. When <b>FALSE</b>, it indicates that only element status should be reported. A volume tag can be a bar code or an application-defined value assigned using <a href="..\mcd\nf-mcd-changerqueryvolumetags.md">ChangerQueryVolumeTags</a>. This member is applicable only if either CHANGER_BAR_CODE_SCANNER_INSTALLED or CHANGER_VOLUME_IDENTIFICATION is set in the <b>Features0</b> member of the <a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a> structure.</p>
 </dd>
 </dl>
 
@@ -88,19 +88,19 @@ typedef struct _CHANGER_READ_ELEMENT_STATUS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559396">IOCTL_CHANGER_GET_ELEMENT_STATUS</a>
+<a href="..\ntddchgr\ni-ntddchgr-ioctl-changer-get-element-status.md">IOCTL_CHANGER_GET_ELEMENT_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551424">ChangerGetElementStatus</a>
+<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a>
+<a href="..\ntddchgr\ns-ntddchgr--get-changer-parameters.md">GET_CHANGER_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551457">CHANGER_ELEMENT</a>
+<a href="..\ntddchgr\ns-ntddchgr--changer-element.md">CHANGER_ELEMENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551459">CHANGER_ELEMENT_LIST</a>
+<a href="..\ntddchgr\ns-ntddchgr--changer-element-list.md">CHANGER_ELEMENT_LIST</a>
 </dt>
 </dl>
 <p> </p>

@@ -80,7 +80,7 @@ typedef struct _UFF_FONTDIRECTORY {
 ### -field <b>wFontID</b>
 
 <dd>
-<p>Specifies the font identifier. This value must match the <b>wDataID</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547364">DATA_HEADER</a> structure that specifies font metrics information within the .uff file.</p>
+<p>Specifies the font identifier. This value must match the <b>wDataID</b> member of a <a href="..\prntfont\ns-prntfont--data-header.md">DATA_HEADER</a> structure that specifies font metrics information within the .uff file.</p>
 </dd>
 
 ### -field <b>sGlyphID</b>
@@ -179,7 +179,7 @@ typedef struct _UFF_FONTDIRECTORY {
 ### -field <b>offFontData</b>
 
 <dd>
-<p>Specifies the offset, in bytes, from the beginning of the .uff file to a DWORD-aligned <a href="https://msdn.microsoft.com/library/windows/hardware/ff547364">DATA_HEADER</a> structure specifying a font metrics section.</p>
+<p>Specifies the offset, in bytes, from the beginning of the .uff file to a DWORD-aligned <a href="..\prntfont\ns-prntfont--data-header.md">DATA_HEADER</a> structure specifying a font metrics section.</p>
 </dd>
 
 ### -field <b>offGlyphData</b>
@@ -191,12 +191,12 @@ typedef struct _UFF_FONTDIRECTORY {
 ### -field <b>offVarData</b>
 
 <dd>
-<p>Specifies the offset, in bytes, from the beginning of the .uff file to a DWORD-aligned <a href="https://msdn.microsoft.com/library/windows/hardware/ff547364">DATA_HEADER</a> structure specifying a data section. If the FONT_FL_PERMANENT_SF flag is set in <b>wFlags</b>, <b>offVarData</b> must be zero.</p>
+<p>Specifies the offset, in bytes, from the beginning of the .uff file to a DWORD-aligned <a href="..\prntfont\ns-prntfont--data-header.md">DATA_HEADER</a> structure specifying a data section. If the FONT_FL_PERMANENT_SF flag is set in <b>wFlags</b>, <b>offVarData</b> must be zero.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>If <b>sGlyphID</b> is a greater than zero, it must match the <b>wDataID</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547364">DATA_HEADER</a> structure that specifies a glyph set within the .uff file.</p>
+<p>If <b>sGlyphID</b> is a greater than zero, it must match the <b>wDataID</b> member of a <a href="..\prntfont\ns-prntfont--data-header.md">DATA_HEADER</a> structure that specifies a glyph set within the .uff file.</p>
 
 <p>If <b>sGlyphID</b> is less than zero, it must be one of the CC_-prefixed constants defined in prntfont.h, which identify predefined glyph sets.</p>
 
@@ -219,7 +219,7 @@ typedef struct _UFF_FONTDIRECTORY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547364">DATA_HEADER</a>
+<a href="..\prntfont\ns-prntfont--data-header.md">DATA_HEADER</a>
 </dt>
 </dl>
 <p> </p>

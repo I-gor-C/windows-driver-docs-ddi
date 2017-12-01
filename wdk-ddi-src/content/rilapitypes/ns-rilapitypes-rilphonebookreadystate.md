@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookreadystate_2.htm
 old-project: netvista
 ms.assetid: 2193f73d-c21c-430d-8535-790fdea86366
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

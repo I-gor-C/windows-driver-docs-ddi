@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_register_ushort.htm
 old-project: wdf
 ms.assetid: E098794F-9A32-409E-9B44-04FDCEF75341
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

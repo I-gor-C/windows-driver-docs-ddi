@@ -7,7 +7,7 @@ old-location: netvista\ril_getpositioninfo.htm
 old-project: netvista
 ms.assetid: a34ed9ad-13b6-4f09-88c1-c5462a421ad8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetPositionInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices

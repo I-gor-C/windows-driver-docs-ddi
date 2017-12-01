@@ -69,7 +69,7 @@ typedef struct _QUERY_INTERFACE {
 ### -field <b>Size</b>
 
 <dd>
-<p>Specifies the size in bytes of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a> structure to which <b>Interface</b> points. The miniport driver must not return an INTERFACE structure larger than <b>Size</b> bytes.</p>
+<p>Specifies the size in bytes of the <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure to which <b>Interface</b> points. The miniport driver must not return an INTERFACE structure larger than <b>Size</b> bytes.</p>
 </dd>
 
 ### -field <b>Version</b>
@@ -82,7 +82,7 @@ typedef struct _QUERY_INTERFACE {
 ### -field <b>Interface</b>
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a> structure in which the miniport driver returns the requested interface information. The querying driver is responsible for allocating this structure before calling <a href="..\video\nc-video-pvideo-hw-query-interface.md">HwVidQueryInterface</a>.</p>
+<p>Pointer to an <a href="..\wdm\ns-wdm--interface.md">INTERFACE</a> structure in which the miniport driver returns the requested interface information. The querying driver is responsible for allocating this structure before calling <a href="..\video\nc-video-pvideo-hw-query-interface.md">HwVidQueryInterface</a>.</p>
 </dd>
 
 ### -field <b>InterfaceSpecificData</b>

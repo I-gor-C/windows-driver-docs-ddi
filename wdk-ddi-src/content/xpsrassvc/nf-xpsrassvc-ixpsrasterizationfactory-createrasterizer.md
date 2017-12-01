@@ -74,7 +74,7 @@ HRESULT CreateRasterizer(
 ### -param <i>nonTextRenderingMode</i> [in]
 
 <dd>
-<p>Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/ff564291">XPSRAS_RENDERING_MODE</a> enumeration values:</p>
+<p>Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following <a href="print.xpsras_rendering_mode_enumeration">XPSRAS_RENDERING_MODE</a> enumeration values:</p>
 <ul>
 <li>
 <p>XPSRAS_RENDERING_MODE_ANTIALIASED</p>
@@ -124,19 +124,7 @@ HRESULT CreateRasterizer(
 
 <p>Typically, an XPSDrv filter in an XPS pipeline calls this method to obtain an XPS rasterizer. It then uses the rasterizer to rasterize the XPS fixed page encapsulated by the object to which the parameter <i>xpsPage</i> points .</p>
 
-<p>The parameter <i>DPI</i> specifies the printer resolution, which is assumed to be the same in both the horizontal and vertical dimensions. The width and height of the XPS fixed page, which can be obtained from the <b>IXpsOMPage::GetPageDimensions</b> method, are expressed in 1/96-inch units. Multiply these width and height values by <i>DPI</i>/96 to determine the width and height, in pixels, of the rasterized page. For more information about <b>IXpsOMPage::GetPageDimensions</b>, see <a href="http://go.microsoft.com/fwlink/p/?linkid=146350">IXpsOMPage</a>. For more information about how the XPS rasterizer object uses the DPI value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff556365">IXpsRasterizer::RasterizeRect</a>.</p>
-
-<p>If successful, the method creates an XPS rasterizer object and passes to the caller a counted reference to the object's <b>IXpsRasterizer</b> interface. When the object is no longer needed, the caller is responsible for releasing the object by calling the <a href="http://go.microsoft.com/fwlink/p/?linkid=98433">Release</a> method on the object's <b>IXpsRasterizer</b> interface.</p>
-
-<p>If the method fails and <i>ppIXPSRasterizer</i> is non-<b>NULL</b>, the method sets *<i>ppIXPSRasterizer</i> = <b>NULL</b>.</p>
-
-<p>For a code example that calls the <code>CreateRasterizer</code> method, see the XPSRasFilter sample in the WDK. This sample is located in the Src\Print\Xpsrasfilter folder in your WDK installation.</p>
-
-<p>This method is supported in Windows 7 and later. It is not supported in versions of the Windows operating system before Windows 7.</p>
-
-<p>Typically, an XPSDrv filter in an XPS pipeline calls this method to obtain an XPS rasterizer. It then uses the rasterizer to rasterize the XPS fixed page encapsulated by the object to which the parameter <i>xpsPage</i> points .</p>
-
-<p>The parameter <i>DPI</i> specifies the printer resolution, which is assumed to be the same in both the horizontal and vertical dimensions. The width and height of the XPS fixed page, which can be obtained from the <b>IXpsOMPage::GetPageDimensions</b> method, are expressed in 1/96-inch units. Multiply these width and height values by <i>DPI</i>/96 to determine the width and height, in pixels, of the rasterized page. For more information about <b>IXpsOMPage::GetPageDimensions</b>, see <a href="http://go.microsoft.com/fwlink/p/?linkid=146350">IXpsOMPage</a>. For more information about how the XPS rasterizer object uses the DPI value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff556365">IXpsRasterizer::RasterizeRect</a>.</p>
+<p>The parameter <i>DPI</i> specifies the printer resolution, which is assumed to be the same in both the horizontal and vertical dimensions. The width and height of the XPS fixed page, which can be obtained from the <b>IXpsOMPage::GetPageDimensions</b> method, are expressed in 1/96-inch units. Multiply these width and height values by <i>DPI</i>/96 to determine the width and height, in pixels, of the rasterized page. For more information about <b>IXpsOMPage::GetPageDimensions</b>, see <a href="http://go.microsoft.com/fwlink/p/?linkid=146350">IXpsOMPage</a>. For more information about how the XPS rasterizer object uses the DPI value, see <a href="print.ixpsrasterizer_rasterizerect">IXpsRasterizer::RasterizeRect</a>.</p>
 
 <p>If successful, the method creates an XPS rasterizer object and passes to the caller a counted reference to the object's <b>IXpsRasterizer</b> interface. When the object is no longer needed, the caller is responsible for releasing the object by calling the <a href="http://go.microsoft.com/fwlink/p/?linkid=98433">Release</a> method on the object's <b>IXpsRasterizer</b> interface.</p>
 
@@ -182,10 +170,10 @@ HRESULT CreateRasterizer(
 <a href="print.ixpsrasterizer_interface">IXpsRasterizer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556365">IXpsRasterizer::RasterizeRect</a>
+<a href="print.ixpsrasterizer_rasterizerect">IXpsRasterizer::RasterizeRect</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564291">XPSRAS_RENDERING_MODE</a>
+<a href="print.xpsras_rendering_mode_enumeration">XPSRAS_RENDERING_MODE</a>
 </dt>
 </dl>
 <p> </p>

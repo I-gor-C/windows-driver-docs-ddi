@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The STORAGE_WRITE_CACHE_PROPERTY structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request to retrieve information about a device's write cache property.</p>
+<p>The STORAGE_WRITE_CACHE_PROPERTY structure is used with the <a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request to retrieve information about a device's write cache property.</p>
 
 
 ## -syntax
@@ -77,25 +77,25 @@ typedef struct _STORAGE_WRITE_CACHE_PROPERTY {
 ### -field <b>WriteCacheType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff568044">WRITE_CACHE_TYPE</a>-typed value that indicates the current write cache type</p>
+<p>A <a href="storage.write_cache_type">WRITE_CACHE_TYPE</a>-typed value that indicates the current write cache type</p>
 </dd>
 
 ### -field <b>WriteCacheEnabled</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff568042">WRITE_CACHE_ENABLE</a>-typed value that indicates whether the write cache is enabled.</p>
+<p>A <a href="storage.write_cache_enable">WRITE_CACHE_ENABLE</a>-typed value that indicates whether the write cache is enabled.</p>
 </dd>
 
 ### -field <b>WriteCacheChangeable</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff568039">WRITE_CACHE_CHANGE</a>-typed value that indicates whether if the host can change the write cache characteristics.</p>
+<p>A <a href="storage.write_cache_change">WRITE_CACHE_CHANGE</a>-typed value that indicates whether if the host can change the write cache characteristics.</p>
 </dd>
 
 ### -field <b>WriteThroughSupported</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff568047">WRITE_THROUGH</a>-typed value that indicates whether the device supports write-through caching.</p>
+<p>A <a href="storage.write_through">WRITE_THROUGH</a>-typed value that indicates whether the device supports write-through caching.</p>
 </dd>
 
 ### -field <b>FlushCacheSupported</b>
@@ -118,7 +118,7 @@ typedef struct _STORAGE_WRITE_CACHE_PROPERTY {
 </dl>
 
 ## -remarks
-<p>All of the parameter values that are described in this topic refer to the output of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request.</p>
+<p>All of the parameter values that are described in this topic refer to the output of the <a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request.</p>
 
 ## -requirements
 <table>
@@ -137,7 +137,7 @@ typedef struct _STORAGE_WRITE_CACHE_PROPERTY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: stream\iksqualityforwarder.htm
 old-project: stream
 ms.assetid: 1f0ebadc-4a6c-4d57-ba96-936ce138142b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsSynchronousDeviceControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,11 +39,11 @@ req.iface:
 
 
 ## -description
-<p>The <b>IKsQualityForwarder</b> interface inherits the method of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559883">IKsObject</a> interface and extends <b>IKsObject</b> to provide a method that flushes information from a pin. </p>
+<p>The <b>IKsQualityForwarder</b> interface inherits the method of the <a href="..\ksproxy\nn-ksproxy-iksobject.md">IKsObject</a> interface and extends <b>IKsObject</b> to provide a method that flushes information from a pin. </p>
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsQualityForwarder</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559883">IKsObject</a>. <b>IKsQualityForwarder</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsQualityForwarder</b> interface inherits from <a href="..\ksproxy\nn-ksproxy-iksobject.md">IKsObject</a>. <b>IKsQualityForwarder</b> also has these types of members:</p>
 
 <p>The <b>IKsQualityForwarder</b> interface has these methods.</p>
 
@@ -51,7 +51,7 @@ req.iface:
 
 <p> </p>
 
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsQualityForwarder</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559883">IKsObject</a>. <b>IKsQualityForwarder</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsQualityForwarder</b> interface inherits from <a href="..\ksproxy\nn-ksproxy-iksobject.md">IKsObject</a>. <b>IKsQualityForwarder</b> also has these types of members:</p>
 
 <p>The <b>IKsQualityForwarder</b> interface has these methods.</p>
 
@@ -59,7 +59,7 @@ req.iface:
 
 <p> </p>
 
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsQualityForwarder</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559883">IKsObject</a>. <b>IKsQualityForwarder</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsQualityForwarder</b> interface inherits from <a href="..\ksproxy\nn-ksproxy-iksobject.md">IKsObject</a>. <b>IKsQualityForwarder</b> also has these types of members:</p>
 
 <p>The <b>IKsQualityForwarder</b> interface has these methods.</p>
 
@@ -86,12 +86,6 @@ req.iface:
 <p> </p>
 
 ## -remarks
-<p>The IID for this interface is IID_IKsQualityForwarder.</p>
-
-<p>The IID for this interface is IID_IKsQualityForwarder.</p>
-
-<p>The IID for this interface is IID_IKsQualityForwarder.</p>
-
 <p>The IID for this interface is IID_IKsQualityForwarder.</p>
 
 ## -requirements

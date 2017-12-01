@@ -57,7 +57,7 @@ PEPROCESS FltGetRequestorProcess(
 ### -param <i>CallbackData</i> [in]
 
 <dd>
-<p>Pointer to the callback data structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) for the I/O operation. </p>
+<p>Pointer to the callback data structure (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) for the I/O operation. </p>
 </dd>
 </dl>
 
@@ -65,8 +65,6 @@ PEPROCESS FltGetRequestorProcess(
 <p><b>FltGetRequestorProcess</b> returns a process pointer for the thread that requested the I/O operation. If the operation is not associated with any thread, <b>FltGetRequestorProcess</b> returns <b>NULL</b>. </p>
 
 ## -remarks
-<p><b>FltGetRequestorProcess</b> returns a pointer to the process that the requesting thread is currently attached to. This process may or may not be the same process that created the thread. </p>
-
 <p><b>FltGetRequestorProcess</b> returns a pointer to the process that the requesting thread is currently attached to. This process may or may not be the same process that created the thread. </p>
 
 ## -requirements
@@ -124,10 +122,10 @@ PEPROCESS FltGetRequestorProcess(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543118">FltGetRequestorProcessId</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetrequestorprocessid.md">FltGetRequestorProcessId</a>
 </dt>
 </dl>
 <p> </p>

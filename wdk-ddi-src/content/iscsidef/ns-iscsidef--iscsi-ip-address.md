@@ -62,7 +62,7 @@ typedef struct _ISCSI_IP_Address {
 ### -field <b>Type</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561482">ISCSIIPADDRESSTYPE</a> value that indicates the type of IP address. </p>
+<p>A <a href="storage.iscsiipaddresstype">ISCSIIPADDRESSTYPE</a> value that indicates the type of IP address. </p>
 </dd>
 
 ### -field <b>IpV4Address</b>
@@ -116,10 +116,10 @@ typedef struct _ISCSI_IP_Address {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef--iscsi-ip-address.md">ISCSI_IP_Address</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561482">ISCSIIPADDRESSTYPE</a>
+<a href="storage.iscsiipaddresstype">ISCSIIPADDRESSTYPE</a>
 </dt>
 </dl>
 <p> </p>

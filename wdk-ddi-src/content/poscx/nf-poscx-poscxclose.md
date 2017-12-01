@@ -44,7 +44,7 @@ req.product: Windows 10 or later.
 
       and cancels pending requests. It should be called from 
 
-      the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff541702">EVT_WDF_FILE_CLOSE</a> callback.</p>
+      the driver's <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-file-close.md">EVT_WDF_FILE_CLOSE</a> callback.</p>
 
 
 ## -syntax

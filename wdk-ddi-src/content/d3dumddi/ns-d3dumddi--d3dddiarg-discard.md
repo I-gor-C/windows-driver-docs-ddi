@@ -79,7 +79,7 @@ typedef struct _D3DDDIARG_DISCARD {
 ### -field <b>pRects</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structures for the rectangles in the resource view to discard. If <b>NULL</b>, the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-discard.md">Discard</a> function discards the entire surface.</p>
+<p>An array of <a href="display.rect">RECT</a> structures for the rectangles in the resource view to discard. If <b>NULL</b>, the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-discard.md">Discard</a> function discards the entire surface.</p>
 </dd>
 
 ### -field <b>NumRects</b>
@@ -128,7 +128,7 @@ typedef struct _D3DDDIARG_DISCARD {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-discard.md">Discard</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

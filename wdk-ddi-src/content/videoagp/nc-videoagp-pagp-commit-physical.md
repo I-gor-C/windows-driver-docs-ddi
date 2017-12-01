@@ -100,16 +100,6 @@ BOOLEAN APIENTRY AgpCommitPhysical(
 
 <p>When a video miniport driver calls <b>AgpCommitPhysical</b>, a portion of the physical address range identified by <b>PhysicalReserveContext</b> is mapped to locked pages of physical memory. The mapped portion begins <b>Offset</b> pages into the range identified by <b>PhysicalReserveContext</b>. The video miniport driver can access committed physical memory as if it were contiguous.</p>
 
-<p>A video miniport driver must first reserve physical addresses by calling <a href="..\videoagp\nc-videoagp-pagp-reserve-physical.md">AgpReservePhysical</a> before it calls this function.</p>
-
-<p>Do not call <b>AgpCommitPhysical</b> to commit addresses that have already been committed. If the range of pages that is specified by <b>PhysicalReserveContext</b>, <b>Pages</b>, and <b>Offset</b> includes any pages that were previously committed, <b>AgpCommitPhysical</b> might fail.</p>
-
-<p>Video miniport drivers that run on Microsoft Windows 2000 should always reserve and commit a physical range whose size is a multiple of 64 kilobytes. Reserving or committing a physical range that is not a multiple of 64 kilobytes can result in <a href="..\videoagp\nc-videoagp-pagp-reserve-virtual.md">AgpReserveVirtual</a> or <a href="..\videoagp\nc-videoagp-pagp-commit-virtual.md">AgpCommitVirtual</a> returning an invalid virtual address.</p>
-
-<p>On Windows XP and later, <b>AgpCommitPhysical</b> automatically expands the committed range so that it is a multiple of 64 kilobytes.</p>
-
-<p>When a video miniport driver calls <b>AgpCommitPhysical</b>, a portion of the physical address range identified by <b>PhysicalReserveContext</b> is mapped to locked pages of physical memory. The mapped portion begins <b>Offset</b> pages into the range identified by <b>PhysicalReserveContext</b>. The video miniport driver can access committed physical memory as if it were contiguous.</p>
-
 ## -requirements
 <table>
 <tr>

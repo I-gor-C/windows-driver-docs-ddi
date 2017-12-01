@@ -75,9 +75,7 @@ HRESULT IBidiRequest::GetEnumCount(
 <p> </p>
 
 ## -remarks
-<p>A single bidi request can have multiple results. After calling <b>GetEnumCount</b>, the application can call <a href="https://msdn.microsoft.com/library/windows/hardware/dd144975">IBidiRequest::GetOutputData</a> to select a particular result.</p>
-
-<p>A single bidi request can have multiple results. After calling <b>GetEnumCount</b>, the application can call <a href="https://msdn.microsoft.com/library/windows/hardware/dd144975">IBidiRequest::GetOutputData</a> to select a particular result.</p>
+<p>A single bidi request can have multiple results. After calling <b>GetEnumCount</b>, the application can call <a href="print.ibidirequest_ibidirequest__getoutputdata">IBidiRequest::GetOutputData</a> to select a particular result.</p>
 
 ## -requirements
 <table>
@@ -132,16 +130,16 @@ HRESULT IBidiRequest::GetEnumCount(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+<a href="print.bidirectional_communication_interfaces">Bidirectional Communication Interfaces</a>
 </dt>
 <dt>
-<a href="NULL">Bidirectional Communication Schema</a>
+<a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dd144969">IBidiRequest</a>
+<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dd144975">IBidiRequest::GetOutputData</a>
+<a href="print.ibidirequest_ibidirequest__getoutputdata">IBidiRequest::GetOutputData</a>
 </dt>
 </dl>
 <p> </p>

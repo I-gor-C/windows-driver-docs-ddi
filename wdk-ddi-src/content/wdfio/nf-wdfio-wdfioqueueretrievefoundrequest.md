@@ -7,7 +7,7 @@ old-location: wdf\wdfioqueueretrievefoundrequest.htm
 old-project: wdf
 ms.assetid: 34447879-1a2e-45de-b754-121a5956330a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfIoQueueRetrieveFoundRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Wdf01000.sys (KMDF); 
-WUDFx02000.dll (UMDF)
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
 req.iface: 
@@ -68,7 +67,7 @@ NTSTATUS WdfIoQueueRetrieveFoundRequest(
 ### -param <i>FoundRequest</i> [in]
 
 <dd>
-<p>A handle to a framework request object that was obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff547415">WdfIoQueueFindRequest</a>.</p>
+<p>A handle to a framework request object that was obtained by calling <a href="..\wdfio\nf-wdfio-wdfioqueuefindrequest.md">WdfIoQueueFindRequest</a>.</p>
 </dd>
 
 ### -param <i>OutRequest</i> [out]
@@ -98,27 +97,15 @@ NTSTATUS WdfIoQueueRetrieveFoundRequest(
 ## -remarks
 <p>After calling <b>WdfIoQueueRetrieveFoundRequest</b> to obtain an I/O request, the driver <a href="wdf.request_ownership">owns</a> the request and must <a href="wdf.accessing_data_buffers_in_kmdf_drivers">process the I/O request</a> in some manner.</p>
 
-<p>Before calling <b>WdfIoQueueRetrieveFoundRequest</b>, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff547415">WdfIoQueueFindRequest</a>, which retrieves a handle that the driver can use as the <i>FoundRequest</i> parameter to <b>WdfIoQueueRetrieveFoundRequest</b>.</p>
+<p>Before calling <b>WdfIoQueueRetrieveFoundRequest</b>, the driver must call <a href="..\wdfio\nf-wdfio-wdfioqueuefindrequest.md">WdfIoQueueFindRequest</a>, which retrieves a handle that the driver can use as the <i>FoundRequest</i> parameter to <b>WdfIoQueueRetrieveFoundRequest</b>.</p>
 
-<p>If your driver was built with KMDF version 1.11 or later, the driver can call <b>WdfIoQueueRetrieveFoundRequest</b> without first calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff547415">WdfIoQueueFindRequest</a>. In this case, the driver must ensure that the request object is still valid and in the queue.</p>
-
-<p>If a call to <b>WdfIoQueueRetrieveFoundRequest</b> returns STATUS_NOT_FOUND, a request that was previously in the queue has been removed. The request might have been canceled. </p>
-
-<p>For more information about the <b>WdfIoQueueRetrieveFoundRequest</b> method, see <a href="wdf.managing_i_o_queues">Managing I/O Queues</a>.</p>
-
-<p>For a code example that uses <b>WdfIoQueueRetrieveFoundRequest</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547415">WdfIoQueueFindRequest</a>.</p>
-
-<p>After calling <b>WdfIoQueueRetrieveFoundRequest</b> to obtain an I/O request, the driver <a href="wdf.request_ownership">owns</a> the request and must <a href="wdf.accessing_data_buffers_in_kmdf_drivers">process the I/O request</a> in some manner.</p>
-
-<p>Before calling <b>WdfIoQueueRetrieveFoundRequest</b>, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff547415">WdfIoQueueFindRequest</a>, which retrieves a handle that the driver can use as the <i>FoundRequest</i> parameter to <b>WdfIoQueueRetrieveFoundRequest</b>.</p>
-
-<p>If your driver was built with KMDF version 1.11 or later, the driver can call <b>WdfIoQueueRetrieveFoundRequest</b> without first calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff547415">WdfIoQueueFindRequest</a>. In this case, the driver must ensure that the request object is still valid and in the queue.</p>
+<p>If your driver was built with KMDF version 1.11 or later, the driver can call <b>WdfIoQueueRetrieveFoundRequest</b> without first calling <a href="..\wdfio\nf-wdfio-wdfioqueuefindrequest.md">WdfIoQueueFindRequest</a>. In this case, the driver must ensure that the request object is still valid and in the queue.</p>
 
 <p>If a call to <b>WdfIoQueueRetrieveFoundRequest</b> returns STATUS_NOT_FOUND, a request that was previously in the queue has been removed. The request might have been canceled. </p>
 
 <p>For more information about the <b>WdfIoQueueRetrieveFoundRequest</b> method, see <a href="wdf.managing_i_o_queues">Managing I/O Queues</a>.</p>
 
-<p>For a code example that uses <b>WdfIoQueueRetrieveFoundRequest</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547415">WdfIoQueueFindRequest</a>.</p>
+<p>For a code example that uses <b>WdfIoQueueRetrieveFoundRequest</b>, see <a href="..\wdfio\nf-wdfio-wdfioqueuefindrequest.md">WdfIoQueueFindRequest</a>.</p>
 
 ## -requirements
 <table>
@@ -182,7 +169,7 @@ NTSTATUS WdfIoQueueRetrieveFoundRequest(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff819059">DoubleCompletion</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975098">wdfioqueuefindrequestfailed</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975099">wdfioqueueretrievefoundrequest</a>
+<a href="devtest.kmdf_doublecompletion">DoubleCompletion</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_wdfioqueuefindrequestfailed">wdfioqueuefindrequestfailed</a>, <a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">wdfioqueueretrievefoundrequest</a>
 </td>
 </tr>
 </table>
@@ -190,15 +177,15 @@ NTSTATUS WdfIoQueueRetrieveFoundRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547415">WdfIoQueueFindRequest</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueuefindrequest.md">WdfIoQueueFindRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975100">WdfIoQueueRetrieveNextRequest</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548470">WdfIoQueueRetrieveRequestByFileObject</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueueretrieverequestbyfileobject.md">WdfIoQueueRetrieveRequestByFileObject</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueRetrieveFoundRequest method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueRetrieveFoundRequest method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

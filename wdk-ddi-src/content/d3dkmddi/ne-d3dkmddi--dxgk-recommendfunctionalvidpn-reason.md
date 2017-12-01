@@ -83,11 +83,7 @@ typedef enum _DXGK_RECOMMENDFUNCTIONALVIDPN_REASON {
 </dl>
 
 ## -remarks
-<p>The <b>RequestReason</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557632">DXGKARG_RECOMMENDFUNCTIONALVIDPN</a> structure is a DXGK_RECOMMENDFUNCTIONALVIDPN_REASON value.</p>
-
-<p>The <b>RequestReason</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557632">DXGKARG_RECOMMENDFUNCTIONALVIDPN</a> structure is a DXGK_RECOMMENDFUNCTIONALVIDPN_REASON value.</p>
-
-<p>The <b>RequestReason</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557632">DXGKARG_RECOMMENDFUNCTIONALVIDPN</a> structure is a DXGK_RECOMMENDFUNCTIONALVIDPN_REASON value.</p>
+<p>The <b>RequestReason</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-recommendfunctionalvidpn.md">DXGKARG_RECOMMENDFUNCTIONALVIDPN</a> structure is a DXGK_RECOMMENDFUNCTIONALVIDPN_REASON value.</p>
 
 ## -requirements
 <table>

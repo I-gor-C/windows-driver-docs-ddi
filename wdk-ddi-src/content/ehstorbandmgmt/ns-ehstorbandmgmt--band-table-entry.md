@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Banding information entries in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439573">BAND_TABLE</a> are represented as <b>BAND_TABLE_ENTRY</b> structures. These entries contain location and security properties for a band configuration.</p>
+<p>Banding information entries in <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-table.md">BAND_TABLE</a> are represented as <b>BAND_TABLE_ENTRY</b> structures. These entries contain location and security properties for a band configuration.</p>
 
 
 ## -syntax
@@ -71,7 +71,7 @@ typedef struct _BAND_TABLE_ENTRY {
 ### -field <b>SecurityInfo</b>
 
 <dd>
-<p>The band security information. This includes encryption algorithm information when selected in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439719">ENUMERATE_BANDS_PARAMETERS</a>.</p>
+<p>The band security information. This includes encryption algorithm information when selected in <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--enumerate-bands-parameters.md">ENUMERATE_BANDS_PARAMETERS</a>.</p>
 </dd>
 </dl>
 
@@ -103,16 +103,16 @@ typedef struct _BAND_TABLE_ENTRY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439557">BAND_LOCATION_INFO</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-location-info.md">BAND_LOCATION_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439568">BAND_SECURITY_INFO</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-security-info.md">BAND_SECURITY_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439573">BAND_TABLE</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--band-table.md">BAND_TABLE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439719">ENUMERATE_BANDS_PARAMETERS</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt--enumerate-bands-parameters.md">ENUMERATE_BANDS_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

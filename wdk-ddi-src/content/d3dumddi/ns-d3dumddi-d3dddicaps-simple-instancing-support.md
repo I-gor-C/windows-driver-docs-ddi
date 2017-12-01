@@ -64,7 +64,7 @@ typedef struct D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT {
 </dl>
 
 ## -remarks
-<p>Instancing capabilities are exposed through the <b>D3DDDICAPS_GET_SIMPLE_INSTANCING_SUPPORT</b> constant value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544132">D3DDDICAPS_TYPE</a> enumeration.</p>
+<p>Instancing capabilities are exposed through the <b>D3DDDICAPS_GET_SIMPLE_INSTANCING_SUPPORT</b> constant value of the <a href="..\d3dumddi\ne-d3dumddi--d3dddicaps-type.md">D3DDDICAPS_TYPE</a> enumeration.</p>
 
 <p>For more info on simple instancing, see The Microsoft Direct3D 11 topic, <a href="direct3d11.d3d11_feature_data_d3d9_simple_instancing_support">D3D11_FEATURE_DATA_D3D9_SIMPLE_INSTANCING_SUPPORT</a>.</p>
 
@@ -104,7 +104,7 @@ typedef struct D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT {
 <a href="direct3d11.d3d11_feature_data_d3d9_simple_instancing_support">D3D11_FEATURE_DATA_D3D9_SIMPLE_INSTANCING_SUPPORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544132">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ne-d3dumddi--d3dddicaps-type.md">D3DDDICAPS_TYPE</a>
 </dt>
 </dl>
 <p> </p>

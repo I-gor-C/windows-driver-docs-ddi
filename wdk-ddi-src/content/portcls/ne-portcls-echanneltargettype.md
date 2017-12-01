@@ -7,7 +7,7 @@ old-location: audio\echanneltargettype.htm
 old-project: audio
 ms.assetid: 44C5BE49-E8D5-4E6C-BDC5-494F180D580A
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: BarcodeSymbologyAttributesData, BarcodeSymbologyAttributesData
 ms.prod: windows-hardware
 ms.technology: windows-devices

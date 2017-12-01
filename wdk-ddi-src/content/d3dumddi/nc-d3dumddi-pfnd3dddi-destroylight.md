@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY DestroyLight(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543034">D3DDDIARG_DESTROYLIGHT</a> structure that describes how to set the light source.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-destroylight.md">D3DDDIARG_DESTROYLIGHT</a> structure that describes how to set the light source.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ __checkReturn HRESULT APIENTRY DestroyLight(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543034">D3DDDIARG_DESTROYLIGHT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-destroylight.md">D3DDDIARG_DESTROYLIGHT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn895241">WppRecorderLogSetIdentifier</a> method sets a string identifier for the recorder log.</p>
+<p>The <a href="..\wpprecorder\nf-wpprecorder-wpprecorderlogsetidentifier.md">WppRecorderLogSetIdentifier</a> method sets a string identifier for the recorder log.</p>
 
 
 ## -syntax
@@ -73,9 +73,7 @@ NTSTATUS WppRecorderLogSetIdentifier(
 <p>Returns STATUS_SUCCESS if completed successfully.</p>
 
 ## -remarks
-<p>Do not call <a href="https://msdn.microsoft.com/library/windows/hardware/dn895241">WppRecorderLogSetIdentifier</a> on the default log handle returned by <a href="https://msdn.microsoft.com/library/windows/hardware/dn895240">WppRecorderLogGetDefault</a>.</p>
-
-<p>Do not call <a href="https://msdn.microsoft.com/library/windows/hardware/dn895241">WppRecorderLogSetIdentifier</a> on the default log handle returned by <a href="https://msdn.microsoft.com/library/windows/hardware/dn895240">WppRecorderLogGetDefault</a>.</p>
+<p>Do not call <a href="..\wpprecorder\nf-wpprecorder-wpprecorderlogsetidentifier.md">WppRecorderLogSetIdentifier</a> on the default log handle returned by <a href="devtest.wpprecorderloggetdefault">WppRecorderLogGetDefault</a>.</p>
 
 ## -requirements
 <table>

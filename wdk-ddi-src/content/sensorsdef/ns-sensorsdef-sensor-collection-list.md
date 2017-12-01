@@ -7,7 +7,7 @@ old-location: sensors\sensor_collection_list.htm
 old-project: sensors
 ms.assetid: B842C707-C6E0-4C56-986E-35BFD32F265D
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: SENSOR_COLLECTION_LIST, SENSOR_COLLECTION_LIST, *PSENSOR_COLLECTION_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>This structure contains a list of all <a href="https://msdn.microsoft.com/library/windows/hardware/dn946708">SENSOR_VALUE_PAIR</a> structures for each sensor. This structure is returned by calling ReadFile.</p>
+<p>This structure contains a list of all <a href="..\sensorsdef\ns-sensorsdef-sensor-value-pair.md">SENSOR_VALUE_PAIR</a> structures for each sensor. This structure is returned by calling ReadFile.</p>
 
 
 ## -syntax
@@ -72,7 +72,7 @@ typedef struct _SENSOR_COLLECTION_LIST {
 ### -field <b>List</b>
 
 <dd>
-<p>A list of <a href="https://msdn.microsoft.com/library/windows/hardware/dn946708">SENSOR_VALUE_PAIR</a> structures.</p>
+<p>A list of <a href="..\sensorsdef\ns-sensorsdef-sensor-value-pair.md">SENSOR_VALUE_PAIR</a> structures.</p>
 </dd>
 </dl>
 

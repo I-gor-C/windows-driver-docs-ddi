@@ -7,7 +7,7 @@ old-location: debugger\outputcurrentstate.htm
 old-project: debugger
 ms.assetid: 3d176438-5551-48a4-b757-81c14d84c075
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl3, OutputCurrentState, IDebugControl3::OutputCurrentState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ HRESULT OutputCurrentState(
 ### -param <i>OutputControl</i> [in]
 
 <dd>
-<p>Specifies which clients to send the output to.  For possible values see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a>.</p>
+<p>Specifies which clients to send the output to.  For possible values see <a href="debugger.debug_outctl_xxx">DEBUG_OUTCTL_XXX</a>.</p>
 </dd>
 
 ### -param <i>Flags</i> [in]
@@ -116,12 +116,6 @@ HRESULT OutputCurrentState(
 <p> </p>
 
 ## -remarks
-<p>Setting the flags contained in <i>Flags</i> merely allows the information to be printed.  The information will not always be printed (for example, it will not be printed if it is not available).</p>
-
-<p>This is the same status information that is printed when breaking into the debugger.</p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558860">Target Information</a>.</p>
-
 <p>Setting the flags contained in <i>Flags</i> merely allows the information to be printed.  The information will not always be printed (for example, it will not be printed if it is not available).</p>
 
 <p>This is the same status information that is printed when breaking into the debugger.</p>

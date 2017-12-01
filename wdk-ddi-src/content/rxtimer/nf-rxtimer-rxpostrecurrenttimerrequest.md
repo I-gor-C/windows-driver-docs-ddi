@@ -93,8 +93,6 @@ NTSTATUS RxPostRecurrentTimerRequest(
 ## -remarks
 <p>A recurrent timer can be canceled by calling <b>RxCancelTimerRequest</b>.</p>
 
-<p>A recurrent timer can be canceled by calling <b>RxCancelTimerRequest</b>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -130,10 +128,10 @@ NTSTATUS RxPostRecurrentTimerRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553395">RxCancelTimerRequest</a>
+<a href="..\rxtimer\nf-rxtimer-rxcanceltimerrequest.md">RxCancelTimerRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554612">RxPostOneShotTimerRequest</a>
+<a href="..\rxtimer\nf-rxtimer-rxpostoneshottimerrequest.md">RxPostOneShotTimerRequest</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilmessageinfo.htm
 old-project: netvista
 ms.assetid: 689b4abc-13ee-4d4a-8b2e-bb0be7cc6672
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMESSAGEINFO, RILMESSAGEINFO, *LPRILMESSAGEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

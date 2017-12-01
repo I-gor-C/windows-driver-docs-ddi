@@ -63,7 +63,7 @@ typedef struct _SOC_SUBSYSTEM_FAILURE_DETAILS {
 ### -field <b>SubsysType</b>
 
 <dd>
-<p>A value in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn376405">SOC_SYBSYSTEM_TYPE</a> enumeration or a vendor-defined subsystem type. Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors. </p>
+<p>A value in the <a href="whea.soc_sybsystem_type">SOC_SYBSYSTEM_TYPE</a> enumeration or a vendor-defined subsystem type. Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors. </p>
 </dd>
 
 ### -field <b>FirmwareVersion</b>

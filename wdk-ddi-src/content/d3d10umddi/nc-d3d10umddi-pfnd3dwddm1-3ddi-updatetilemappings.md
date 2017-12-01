@@ -88,13 +88,13 @@ VOID APIENTRY* UpdateTileMappings(
 ### -param <i>pTiledResourceRegionStartCoords</i> [in]
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/dn440996">D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE</a> structures that describe the starting coordinates of the tiled resource regions. The <i>NumTiledResourceRegions</i> parameter specifies the number of <b>D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE</b> structures in the array.</p>
+<p>An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-tiled-resource-coordinate.md">D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE</a> structures that describe the starting coordinates of the tiled resource regions. The <i>NumTiledResourceRegions</i> parameter specifies the number of <b>D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE</b> structures in the array.</p>
 </dd>
 
 ### -param <i>pTiledResourceRegionSizes</i> [in, optional]
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/dn440997">D3DWDDM1_3DDI_TILE_REGION_SIZE</a> structures that describe the sizes of the tiled resource regions. The <i>NumTiledResourceRegions</i> parameter specifies the number of <b>D3DWDDM1_3DDI_TILE_REGION_SIZE</b> structures in the array.</p>
+<p>An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-tile-region-size.md">D3DWDDM1_3DDI_TILE_REGION_SIZE</a> structures that describe the sizes of the tiled resource regions. The <i>NumTiledResourceRegions</i> parameter specifies the number of <b>D3DWDDM1_3DDI_TILE_REGION_SIZE</b> structures in the array.</p>
 </dd>
 
 ### -param <i>hTilePool</i> 
@@ -112,7 +112,7 @@ VOID APIENTRY* UpdateTileMappings(
 ### -param <i>pRangeFlags</i> [in, optional]
 
 <dd>
-<p>An array of values that describe each tile-pool range. The <i>NumRanges</i> parameter specifies the number of values in the array. Each value can be a combination of values of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn458991">D3DWDDM1_3DDI_TILE_RANGE_FLAG</a> combined by using a bitwise <b>OR</b> operation.</p>
+<p>An array of values that describe each tile-pool range. The <i>NumRanges</i> parameter specifies the number of values in the array. Each value can be a combination of values of type <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1-3ddi-tile-range-flag.md">D3DWDDM1_3DDI_TILE_RANGE_FLAG</a> combined by using a bitwise <b>OR</b> operation.</p>
 </dd>
 
 ### -param <i>pTilePoolStartOffsets</i> [in, optional]
@@ -130,7 +130,7 @@ VOID APIENTRY* UpdateTileMappings(
 ### -param <i>Flags</i> 
 
 <dd>
-<p>A combination of <a href="https://msdn.microsoft.com/library/windows/hardware/dn458990">D3DWDDM1_3DDI_TILE_MAPPING_FLAG</a> values that are combined by using a bitwise <b>OR</b> operation.</p>
+<p>A combination of <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1-3ddi-tile-mapping-flag.md">D3DWDDM1_3DDI_TILE_MAPPING_FLAG</a> values that are combined by using a bitwise <b>OR</b> operation.</p>
 </dd>
 </dl>
 
@@ -193,16 +193,16 @@ VOID APIENTRY* UpdateTileMappings(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn458990">D3DWDDM1_3DDI_TILE_MAPPING_FLAG</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1-3ddi-tile-mapping-flag.md">D3DWDDM1_3DDI_TILE_MAPPING_FLAG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn458991">D3DWDDM1_3DDI_TILE_RANGE_FLAG</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1-3ddi-tile-range-flag.md">D3DWDDM1_3DDI_TILE_RANGE_FLAG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn440997">D3DWDDM1_3DDI_TILE_REGION_SIZE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-tile-region-size.md">D3DWDDM1_3DDI_TILE_REGION_SIZE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn440996">D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-tiled-resource-coordinate.md">D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE</a>
 </dt>
 </dl>
 <p> </p>

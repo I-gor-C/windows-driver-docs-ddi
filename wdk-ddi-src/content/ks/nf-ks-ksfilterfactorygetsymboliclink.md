@@ -7,7 +7,7 @@ old-location: stream\ksfilterfactorygetsymboliclink.htm
 old-project: stream
 ms.assetid: db657820-75b7-49fe-904d-05f8bc45b8c5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsFilterFactoryGetSymbolicLink
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ PUNICODE_STRING KsFilterFactoryGetSymbolicLink(
 ### -param <i>FilterFactory</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a> structure for which to acquire the symbolic link.</p>
+<p>A pointer to a <a href="..\ks\ns-ks--ksfilterfactory.md">KSFILTERFACTORY</a> structure for which to acquire the symbolic link.</p>
 </dd>
 </dl>
 
@@ -65,8 +65,6 @@ PUNICODE_STRING KsFilterFactoryGetSymbolicLink(
 <p><b>KsFilterFactoryGetSymbolicLink</b> returns a pointer to a Unicode string containing the <a href="wdkgloss.s#wdkgloss.symbolic_link#wdkgloss.symbolic_link"><i>symbolic link</i></a> for the filter factory if the call is successful, and <b>NULL</b> if unsuccessful. <b>NULL</b> indicates that no device interfaces have been registered for <i>FilterFactory</i>.</p>
 
 ## -remarks
-<p>If <i>FilterFactory</i> has no registered device interfaces, <b>KsFilterFactoryGetSymbolicLink</b> returns <b>NULL</b>.</p>
-
 <p>If <i>FilterFactory</i> has no registered device interfaces, <b>KsFilterFactoryGetSymbolicLink</b> returns <b>NULL</b>.</p>
 
 ## -requirements

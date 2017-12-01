@@ -7,7 +7,7 @@ old-location: netvista\ndiscompletebindadapterex.htm
 old-project: netvista
 ms.assetid: e52c7aeb-bbd8-402e-94af-f74df6deb23c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCompleteBindAdapterEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -108,16 +108,6 @@ VOID NdisCompleteBindAdapterEx(
     <b>NdisCompleteBindAdapterEx</b> with an error status, the binding attempt failed and the driver has
     released any resources it allocated to establish the binding.</p>
 
-<p>If a protocol driver returns NDIS_STATUS_PENDING from its 
-    <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a> function,
-    that driver must call 
-    <b>NdisCompleteBindAdapterEx</b> after the binding operation is completed.</p>
-
-<p>If the open operation was successful, the protocol driver is ready to accept receive indications from
-    underlying drivers and to initiate send requests and OID requests on the binding. If the driver calls 
-    <b>NdisCompleteBindAdapterEx</b> with an error status, the binding attempt failed and the driver has
-    released any resources it allocated to establish the binding.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -171,7 +161,7 @@ VOID NdisCompleteBindAdapterEx(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547996">Irql_Protocol_Driver_Function</a>
+<a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -179,7 +169,7 @@ VOID NdisCompleteBindAdapterEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
@@ -187,4 +177,4 @@ VOID NdisCompleteBindAdapterEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCompleteBindAdapterEx function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCompleteBindAdapterEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

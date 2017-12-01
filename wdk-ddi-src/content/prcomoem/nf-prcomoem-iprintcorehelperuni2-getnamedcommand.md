@@ -104,8 +104,6 @@ HRESULT GetNamedCommand(
 ## -remarks
 <p>The <b>GetNamedCommand</b> method will not return commands containing references to Standard Variables.</p>
 
-<p>The <b>GetNamedCommand</b> method will not return commands containing references to Standard Variables.</p>
-
 ## -requirements
 <table>
 <tr>

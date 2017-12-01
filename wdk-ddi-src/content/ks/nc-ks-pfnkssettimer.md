@@ -7,7 +7,7 @@ old-location: stream\kstrsettimer.htm
 old-project: stream
 ms.assetid: c9150c02-a53e-4ffc-8cf1-ca668680cdd9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ BOOLEAN KStrSetTimer(
 ### -param <i>Context</i> [in]
 
 <dd>
-<p>Pointer to the minidriver-supplied information context. The minidriver passes the information context to <a href="https://msdn.microsoft.com/library/windows/hardware/ff560955">KsAllocateDefaultClockEx</a> in the function's <i>DeferredContext</i> parameter when the minidriver allocates a custom DPC timer object.</p>
+<p>Pointer to the minidriver-supplied information context. The minidriver passes the information context to <a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a> in the function's <i>DeferredContext</i> parameter when the minidriver allocates a custom DPC timer object.</p>
 </dd>
 
 ### -param <i>Timer</i> [in]
@@ -81,7 +81,7 @@ BOOLEAN KStrSetTimer(
 ### -param <i>Dpc</i> [in]
 
 <dd>
-<p>Pointer to a DPC object that the minidriver initialized using <a href="https://msdn.microsoft.com/library/windows/hardware/ff552130">KeInitializeDpc</a>. This parameter is optional.</p>
+<p>Pointer to a DPC object that the minidriver initialized using <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>. This parameter is optional.</p>
 </dd>
 </dl>
 
@@ -89,25 +89,15 @@ BOOLEAN KStrSetTimer(
 <p>Returns <b>TRUE</b> if the timer object was already in the system timer queue. Otherwise, returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Minidrivers can optionally supply a <i>KStrSetTimer</i> callback function as an argument to <a href="https://msdn.microsoft.com/library/windows/hardware/ff560955">KsAllocateDefaultClockEx</a>.</p>
+<p>Minidrivers can optionally supply a <i>KStrSetTimer</i> callback function as an argument to <a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>.</p>
 
 <p>Typically, if a minidriver supplies a <i>KStrCorrelatedTime</i> callback function, then the minidriver also supplies a <i>KStrSetTimer</i> callback function.</p>
 
 <p>If minidrivers supply a <i>KStrSetTimer</i> callback function, the function must set timers, based on deltas, to the current presentation time in order to generate event notifications.</p>
 
-<p>If a minidriver supplies a <i>KStrSetTimer</i> callback function, the minidriver must also supply a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a> callback function to cancel the timer.</p>
+<p>If a minidriver supplies a <i>KStrSetTimer</i> callback function, the minidriver must also supply a <a href="stream.kstrcanceltimer">KStrCancelTimer</a> callback function to cancel the timer.</p>
 
-<p>The minidriver supplied <i>KStrSetTimer</i> must have the same characteristics as <a href="https://msdn.microsoft.com/library/windows/hardware/ff553292">KeSetTimerEx</a>.</p>
-
-<p>Minidrivers can optionally supply a <i>KStrSetTimer</i> callback function as an argument to <a href="https://msdn.microsoft.com/library/windows/hardware/ff560955">KsAllocateDefaultClockEx</a>.</p>
-
-<p>Typically, if a minidriver supplies a <i>KStrCorrelatedTime</i> callback function, then the minidriver also supplies a <i>KStrSetTimer</i> callback function.</p>
-
-<p>If minidrivers supply a <i>KStrSetTimer</i> callback function, the function must set timers, based on deltas, to the current presentation time in order to generate event notifications.</p>
-
-<p>If a minidriver supplies a <i>KStrSetTimer</i> callback function, the minidriver must also supply a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a> callback function to cancel the timer.</p>
-
-<p>The minidriver supplied <i>KStrSetTimer</i> must have the same characteristics as <a href="https://msdn.microsoft.com/library/windows/hardware/ff553292">KeSetTimerEx</a>.</p>
+<p>The minidriver supplied <i>KStrSetTimer</i> must have the same characteristics as <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>.</p>
 
 ## -requirements
 <table>
@@ -136,18 +126,18 @@ BOOLEAN KStrSetTimer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560955">KsAllocateDefaultClockEx</a>
+<a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552130">KeInitializeDpc</a>
+<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553292">KeSetTimerEx</a>
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a>
+<a href="stream.kstrcanceltimer">KStrCancelTimer</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrSetTimer routine%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrSetTimer routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

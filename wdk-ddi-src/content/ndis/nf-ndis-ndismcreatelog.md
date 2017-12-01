@@ -7,7 +7,7 @@ old-location: netvista\ndismcreatelog.htm
 old-project: netvista
 ms.assetid: 804112cf-fc59-4a04-b848-4239b32e35d7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMCreateLog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisMCreateLog (NDIS 5.1)) in
-   Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisMCreateLog (NDIS 5.1)) in
-   Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCreateLog (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCreateLog (NDIS 5.1)) in   Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -112,25 +108,7 @@ NDIS_STATUS NdisMCreateLog(
     <b>NdisMCreateLog</b> to create more than one log file after a call succeeds.</p>
 
 <p>Whatever size of log file is allocated, subsequent calls to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563695">NdisMWriteLogData</a> store data in this
-    file, which is treated as a circular buffer. That is, a sequence of calls to 
-    <b>NdisMWriteLogData</b> eventually overwrites the data originally written to the log file.</p>
-
-<p>A miniport driver can call the 
-    <b>NdisM..Log</b> functions to provide any information the driver writer chooses. Whatever the miniport
-    driver logs can be displayed by a driver-dedicated Win32 application. Such an application calls the Win32
-    function 
-    <a href="base.deviceiocontrol">DeviceIoControl</a> with IOCTL_NDIS_GET_LOG_DATA periodically to retrieve whatever the miniport driver
-    has written to the log file. For example, an under-development miniport driver might write test data to
-    be displayed by its corresponding application.</p>
-
-<p>If 
-    <b>NdisMCreateLog</b> returns NDIS_STATUS_RESOURCES, the driver can adjust the original 
-    <i>Size</i> down and try calling this function again. However, a miniport driver cannot call 
-    <b>NdisMCreateLog</b> to create more than one log file after a call succeeds.</p>
-
-<p>Whatever size of log file is allocated, subsequent calls to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563695">NdisMWriteLogData</a> store data in this
+    <a href="..\ndis\nf-ndis-ndismwritelogdata.md">NdisMWriteLogData</a> store data in this
     file, which is treated as a circular buffer. That is, a sequence of calls to 
     <b>NdisMWriteLogData</b> eventually overwrites the data originally written to the log file.</p>
 
@@ -191,7 +169,7 @@ NDIS_STATUS NdisMCreateLog(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>
+<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -202,15 +180,15 @@ NDIS_STATUS NdisMCreateLog(
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562790">NdisMCloseLog</a>
+<a href="..\ndis\nf-ndis-ndismcloselog.md">NdisMCloseLog</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563584">NdisMFlushLog</a>
+<a href="..\ndis\nf-ndis-ndismflushlog.md">NdisMFlushLog</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563695">NdisMWriteLogData</a>
+<a href="..\ndis\nf-ndis-ndismwritelogdata.md">NdisMWriteLogData</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCreateLog function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCreateLog function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

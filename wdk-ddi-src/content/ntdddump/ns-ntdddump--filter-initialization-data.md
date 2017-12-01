@@ -110,7 +110,7 @@ typedef struct _FILTER_INITIALIZATION_DATA {
 ### -field <b>DumpData</b>
 
 <dd>
-<p>The filter driver can pass a pointer to internal context data in this member. This pointer is passed back to the filter driver in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553862">FILTER_EXTENSION</a> structure during each callback.</p>
+<p>The filter driver can pass a pointer to internal context data in this member. This pointer is passed back to the filter driver in a <a href="..\ntdddump\ns-ntdddump--filter-extension.md">FILTER_EXTENSION</a> structure during each callback.</p>
 </dd>
 
 ### -field <b>MaxPagesPerWrite</b>
@@ -191,22 +191,22 @@ typedef struct _FILTER_INITIALIZATION_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552764">Dump_Finish</a>
+<a href="..\ntdddump\nc-ntdddump-dump-finish.md">Dump_Finish</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439713">Dump_Read</a>
+<a href="..\ntdddump\nc-ntdddump-dump-read.md">Dump_Read</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552767">Dump_Start</a>
+<a href="..\ntdddump\nc-ntdddump-dump-start.md">Dump_Start</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553709">Dump_Write</a>
+<a href="..\ntdddump\nc-ntdddump-dump-write.md">Dump_Write</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552773">Dump_Unload</a>
+<a href="..\ntdddump\nc-ntdddump-dump-unload.md">Dump_Unload</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553862">FILTER_EXTENSION</a>
+<a href="..\ntdddump\ns-ntdddump--filter-extension.md">FILTER_EXTENSION</a>
 </dt>
 </dl>
 <p> </p>

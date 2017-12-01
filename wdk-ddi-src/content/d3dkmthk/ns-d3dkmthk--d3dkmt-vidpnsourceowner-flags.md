@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Specifies output duplication options for use with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439459">D3DKMTSetVidPnSourceOwner1</a> function.</p>
+<p>Specifies output duplication options for use with the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetvidpnsourceowner1.md">D3DKMTSetVidPnSourceOwner1</a> function.</p>
 
 
 ## -syntax
@@ -115,7 +115,7 @@ typedef struct _D3DKMT_VIDPNSOURCEOWNER_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439459">D3DKMTSetVidPnSourceOwner1</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetvidpnsourceowner1.md">D3DKMTSetVidPnSourceOwner1</a>
 </dt>
 </dl>
 <p> </p>

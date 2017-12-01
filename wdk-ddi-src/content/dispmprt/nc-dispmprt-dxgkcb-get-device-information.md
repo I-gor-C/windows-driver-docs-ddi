@@ -61,13 +61,13 @@ NTSTATUS DxgkCbGetDeviceInformation(
 ### -param <i>DeviceHandle</i> [in]
 
 <dd>
-<p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure that was passed to the <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
+<p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to the <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 
 ### -param <i>DeviceInfo</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561053">DXGK_DEVICE_INFO</a> structure that receives information about the display adapter.</p>
+<p>A pointer to a <a href="..\dispmprt\ns-dispmprt--dxgk-device-info.md">DXGK_DEVICE_INFO</a> structure that receives information about the display adapter.</p>
 </dd>
 </dl>
 
@@ -122,7 +122,7 @@ NTSTATUS DxgkCbGetDeviceInformation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561053">DXGK_DEVICE_INFO</a>
+<a href="..\dispmprt\ns-dispmprt--dxgk-device-info.md">DXGK_DEVICE_INFO</a>
 </dt>
 <dt>
 <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>

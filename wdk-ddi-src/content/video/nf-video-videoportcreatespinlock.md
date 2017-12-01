@@ -73,9 +73,7 @@ VP_STATUS VideoPortCreateSpinLock(
 <p>On success the function returns NO_ERROR. If an error occurs, the function returns an appropriate error code.</p>
 
 ## -remarks
-<p>This routine must be called before an initial call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570175">VideoPortAcquireSpinLock</a> or to any other support routine that requires a spin lock as an argument. </p>
-
-<p>This routine must be called before an initial call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570175">VideoPortAcquireSpinLock</a> or to any other support routine that requires a spin lock as an argument. </p>
+<p>This routine must be called before an initial call to <a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a> or to any other support routine that requires a spin lock as an argument. </p>
 
 ## -requirements
 <table>
@@ -140,10 +138,10 @@ VP_STATUS VideoPortCreateSpinLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570293">VideoPortDeleteSpinLock</a>
+<a href="..\video\nf-video-videoportdeletespinlock.md">VideoPortDeleteSpinLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570175">VideoPortAcquireSpinLock</a>
+<a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a>
 </dt>
 </dl>
 <p> </p>

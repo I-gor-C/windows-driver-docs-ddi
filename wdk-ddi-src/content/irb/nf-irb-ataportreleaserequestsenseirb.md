@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -40,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>AtaPortReleaseRequestSenseIrb</b> routine frees the request sense IRB tha is allocated by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550145">AtaPortBuildRequestSenseIrb</a>. </p>
+<p>The <b>AtaPortReleaseRequestSenseIrb</b> routine frees the request sense IRB tha is allocated by using <a href="..\irb\nf-irb-ataportbuildrequestsenseirb.md">AtaPortBuildRequestSenseIrb</a>. </p>
 
 
 ## -syntax
@@ -65,7 +64,7 @@ VOID AtaPortReleaseRequestSenseIrb(
 ### -param <i>Irb</i> [in]
 
 <dd>
-<p>A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a> that defines the request sense IRB.</p>
+<p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a> that defines the request sense IRB.</p>
 </dd>
 </dl>
 
@@ -73,13 +72,9 @@ VOID AtaPortReleaseRequestSenseIrb(
 <p>None</p>
 
 ## -remarks
-<p>The <b>AtaPortReleaseRequestSenseIrb</b> routine releases the IRB to the port driver and copies the sense data to the buffer that is pointed to by the <b>SenseInfoBuffer</b> member of the original (failed) request's IRB. The miniport driver can then complete the original request by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550147">AtaPortCompleteRequest</a>. The miniport driver must not touch the request sense IRB after it has been released to the port driver.</p>
+<p>The <b>AtaPortReleaseRequestSenseIrb</b> routine releases the IRB to the port driver and copies the sense data to the buffer that is pointed to by the <b>SenseInfoBuffer</b> member of the original (failed) request's IRB. The miniport driver can then complete the original request by using <a href="..\irb\nf-irb-ataportcompleterequest.md">AtaPortCompleteRequest</a>. The miniport driver must not touch the request sense IRB after it has been released to the port driver.</p>
 
-<p>The miniport driver must call <b>AtaPortReleaseRequestSenseIrb</b> for every allocated IRB that is allocated by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550145">AtaPortBuildRequestSenseIrb</a>. </p>
-
-<p>The <b>AtaPortReleaseRequestSenseIrb</b> routine releases the IRB to the port driver and copies the sense data to the buffer that is pointed to by the <b>SenseInfoBuffer</b> member of the original (failed) request's IRB. The miniport driver can then complete the original request by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550147">AtaPortCompleteRequest</a>. The miniport driver must not touch the request sense IRB after it has been released to the port driver.</p>
-
-<p>The miniport driver must call <b>AtaPortReleaseRequestSenseIrb</b> for every allocated IRB that is allocated by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550145">AtaPortBuildRequestSenseIrb</a>. </p>
+<p>The miniport driver must call <b>AtaPortReleaseRequestSenseIrb</b> for every allocated IRB that is allocated by using <a href="..\irb\nf-irb-ataportbuildrequestsenseirb.md">AtaPortBuildRequestSenseIrb</a>. </p>
 
 ## -requirements
 <table>
@@ -119,10 +114,10 @@ VOID AtaPortReleaseRequestSenseIrb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550145">AtaPortBuildRequestSenseIrb</a>
+<a href="..\irb\nf-irb-ataportbuildrequestsenseirb.md">AtaPortBuildRequestSenseIrb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550147">AtaPortCompleteRequest</a>
+<a href="..\irb\nf-irb-ataportcompleterequest.md">AtaPortCompleteRequest</a>
 </dt>
 </dl>
 <p> </p>

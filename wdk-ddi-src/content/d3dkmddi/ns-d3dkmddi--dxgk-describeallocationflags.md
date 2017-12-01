@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557575">DXGKARG_DESCRIBEALLOCATION</a>.<b>Flags</b> member to describe whether an existing allocation is being queried for its display mode.</p>
+<p>Used in the <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-describeallocation.md">DXGKARG_DESCRIBEALLOCATION</a>.<b>Flags</b> member to describe whether an existing allocation is being queried for its display mode.</p>
 
 
 ## -syntax
@@ -117,7 +117,7 @@ typedef struct _DXGK_DESCRIBEALLOCATIONFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557575">DXGKARG_DESCRIBEALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-describeallocation.md">DXGKARG_DESCRIBEALLOCATION</a>
 </dt>
 </dl>
 <p> </p>

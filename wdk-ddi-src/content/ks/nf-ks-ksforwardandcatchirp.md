@@ -7,7 +7,7 @@ old-location: stream\ksforwardandcatchirp.htm
 old-project: stream
 ms.assetid: 87a873c2-07d3-4f76-bc26-5fcae4b960e7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsForwardAndCatchIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -100,24 +100,6 @@ NTSTATUS KsForwardAndCatchIrp(
 <p>KsStackUseNewLocation</p>
 
 <p>Indicates that the next stack location is to be used without modification.</p>
-
-<p> </p>
-
-<p>The type KSSTACK_USE enumeration specifies how the IRP stack is used when forwarding the IRP to the next driver.</p>
-
-<p>KsStackCopyToNewLocation</p>
-
-<p>Indicates that the parameters are to be copied to the next stack location.</p>
-
-<p>KsStackReuseCurrentLocation</p>
-
-<p>Indicates that the current stack location is to be reused.</p>
-
-<p>KsStackUseNewLocation</p>
-
-<p>Indicates that the next stack location is to be used without modification.</p>
-
-<p> </p>
 
 ## -requirements
 <table>

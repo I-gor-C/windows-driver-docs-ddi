@@ -7,7 +7,7 @@ old-location: stream\kssetmajorfunctionhandler.htm
 old-project: stream
 ms.assetid: 22c1957d-089a-4504-b92c-9268a37ac265
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsSetMajorFunctionHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -151,10 +151,6 @@ NTSTATUS KsSetMajorFunctionHandler(
 <p>Returns STATUS_SUCCESS if the MajorFunction identifier is valid.</p>
 
 ## -remarks
-<p>If a major function handler is set for a driver object, all file objects must handle that major function, even if the entry just points to <b>KsDispatchInvalidDeviceRequest</b>.</p>
-
-<p>This flag may be used to specify that the fast I/O entry should be set rather than the IRP-based entry.</p>
-
 <p>If a major function handler is set for a driver object, all file objects must handle that major function, even if the entry just points to <b>KsDispatchInvalidDeviceRequest</b>.</p>
 
 <p>This flag may be used to specify that the fast I/O entry should be set rather than the IRP-based entry.</p>

@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY VideoProcessBltHD(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543101">D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD</a> structure that describes the DirectX VA video processing operation to perform. </p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-videoprocessblthd.md">D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD</a> structure that describes the DirectX VA video processing operation to perform. </p>
 </dd>
 </dl>
 
@@ -118,7 +118,7 @@ __checkReturn HRESULT APIENTRY VideoProcessBltHD(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543101">D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-videoprocessblthd.md">D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD</a>
 </dt>
 </dl>
 <p> </p>

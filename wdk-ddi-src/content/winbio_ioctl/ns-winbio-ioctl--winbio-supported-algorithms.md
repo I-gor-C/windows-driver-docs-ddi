@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The WINBIO_SUPPORTED_ALGORITHMS structure is the OUT payload for <a href="https://msdn.microsoft.com/library/windows/hardware/ff536438">IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS</a>.</p>
+<p>The WINBIO_SUPPORTED_ALGORITHMS structure is the OUT payload for <a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-get-supported-algorithms.md">IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS</a>.</p>
 
 
 ## -syntax
@@ -79,7 +79,7 @@ typedef struct _WINBIO_SUPPORTED_ALGORITHMS {
 ### -field <b>AlgorithmData</b>
 
 <dd>
-<p>Specifies a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536469">WINBIO_DATA</a> that contains NULL-terminated UTF-8 OID strings that represent the algorithms supported by the device.</p>
+<p>Specifies a structure of type <a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-data.md">WINBIO_DATA</a> that contains NULL-terminated UTF-8 OID strings that represent the algorithms supported by the device.</p>
 </dd>
 </dl>
 
@@ -111,7 +111,7 @@ typedef struct _WINBIO_SUPPORTED_ALGORITHMS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536438">IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS</a>
+<a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-get-supported-algorithms.md">IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS</a>
 </dt>
 </dl>
 <p> </p>

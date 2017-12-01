@@ -62,7 +62,7 @@ HBA_STATUS HBA_API HBA_SendCTPassThruV2(
 ### -param <i>HbaHandle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA that will route the CT command. The HBA routes the CT command to the server that runs the service requested by the CT command. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA that will route the CT command. The HBA routes the CT command to the server that runs the service requested by the CT command. </p>
 </dd>
 
 ### -param <i>HbaPortWWN</i> [in]
@@ -97,18 +97,12 @@ HBA_STATUS HBA_API HBA_SendCTPassThruV2(
 </dl>
 
 ## -returns
-<p>The <b>HBA_SendCTPassThruV2</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. If the HBA successfully delivers the command to the destination service, and the service executes the command and successfully returns the results, the HBA_SendCTPassThru routine returns a value of HBA_STATUS_OK. If the command does not succeed, this routine returns an appropriate error code of type HBA_STATUS.</p>
+<p>The <b>HBA_SendCTPassThruV2</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. If the HBA successfully delivers the command to the destination service, and the service executes the command and successfully returns the results, the HBA_SendCTPassThru routine returns a value of HBA_STATUS_OK. If the command does not succeed, this routine returns an appropriate error code of type HBA_STATUS.</p>
 
 ## -remarks
-<p>The <b>HBA_SendCTPassThruV2</b> library routine is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557207">HBA_SendCTPassThru</a> routine, except that <b>HBA_SendCTPassThruV2</b> allows the caller to specify the port through which the CT command will be issued. </p>
+<p>The <b>HBA_SendCTPassThruV2</b> library routine is identical to the <a href="..\hbaapi\nf-hbaapi-hba-sendctpassthru.md">HBA_SendCTPassThru</a> routine, except that <b>HBA_SendCTPassThruV2</b> allows the caller to specify the port through which the CT command will be issued. </p>
 
-<p>The <b>HBA_SendCTPassThruV2</b> library routine serves a purpose very similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565409">SendCTPassThru</a> WMI method. </p>
-
-<p>A CT command can request services that distribute encryption keys, IP addresses, time stamps, names, aliases, fabric configuration, and security policies. For a complete list of the service types that can be specified in a CT command, see the <i>Fibre Channel Generic Services - 4 (FC-GS-4)</i> specification published by the ANSI committee. </p>
-
-<p>The <b>HBA_SendCTPassThruV2</b> library routine is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557207">HBA_SendCTPassThru</a> routine, except that <b>HBA_SendCTPassThruV2</b> allows the caller to specify the port through which the CT command will be issued. </p>
-
-<p>The <b>HBA_SendCTPassThruV2</b> library routine serves a purpose very similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565409">SendCTPassThru</a> WMI method. </p>
+<p>The <b>HBA_SendCTPassThruV2</b> library routine serves a purpose very similar to the <a href="storage.sendctpassthru">SendCTPassThru</a> WMI method. </p>
 
 <p>A CT command can request services that distribute encryption keys, IP addresses, time stamps, names, aliases, fabric configuration, and security policies. For a complete list of the service types that can be specified in a CT command, see the <i>Fibre Channel Generic Services - 4 (FC-GS-4)</i> specification published by the ANSI committee. </p>
 
@@ -159,16 +153,16 @@ HBA_STATUS HBA_API HBA_SendCTPassThruV2(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557207">HBA_SendCTPassThru</a>
+<a href="..\hbaapi\nf-hbaapi-hba-sendctpassthru.md">HBA_SendCTPassThru</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565409">SendCTPassThru</a>
+<a href="storage.sendctpassthru">SendCTPassThru</a>
 </dt>
 </dl>
 <p> </p>

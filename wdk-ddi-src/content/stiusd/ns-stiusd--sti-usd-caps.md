@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The STI_USD_CAPS structure is used as a parameter for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543817">IStiUSD::GetCapabilities</a> method.</p>
+<p>The STI_USD_CAPS structure is used as a parameter for the <a href="image.istiusd_getcapabilities">IStiUSD::GetCapabilities</a> method.</p>
 
 
 ## -syntax

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The OEMUIPSPARAM structure is passed to a user interface plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554165">IPrintOemUI::DevicePropertySheets</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554173">IPrintOemUI::DocumentPropertySheets</a> methods.</p>
+<p>The OEMUIPSPARAM structure is passed to a user interface plug-in's <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> and <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> methods.</p>
 
 
 ## -syntax
@@ -144,7 +144,7 @@ typedef struct _OEMUIPSPARAM {
 ### -field <b>pOEMUserData</b>
 
 <dd>
-<p>Pointer, supplied by user interface plug-in, to a location containing private information. This pointer is returned to the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564313">_CPSUICALLBACK</a>-typed callback function when a property sheet item has changed.</p>
+<p>Pointer, supplied by user interface plug-in, to a location containing private information. This pointer is returned to the plug-in's <a href="..\compstui\nc-compstui--cpsuicallback.md">_CPSUICALLBACK</a>-typed callback function when a property sheet item has changed.</p>
 </dd>
 
 ### -field <b>dwFlags</b>
@@ -156,13 +156,13 @@ typedef struct _OEMUIPSPARAM {
 ### -field <a id="For_calls_to_IPrintOemUI__DocumentPropertySheets_"></a><a id="for_calls_to_iprintoemui__documentpropertysheets_"></a><a id="FOR_CALLS_TO_IPRINTOEMUI__DOCUMENTPROPERTYSHEETS_"></a>For calls to <b>IPrintOemUI::DocumentPropertySheets</b>:
 
 <dd>
-<p>Contains the contents of the <b>fMode</b> member of the DOCUMENTPROPERTYHEADER structure received by the printer driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548548">DrvDocumentPropertySheets</a> function.</p>
+<p>Contains the contents of the <b>fMode</b> member of the DOCUMENTPROPERTYHEADER structure received by the printer driver's <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> function.</p>
 </dd>
 
 ### -field <a id="For_calls_to_IPrintOemUI__DevicePropertySheets_"></a><a id="for_calls_to_iprintoemui__devicepropertysheets_"></a><a id="FOR_CALLS_TO_IPRINTOEMUI__DEVICEPROPERTYSHEETS_"></a>For calls to <b>IPrintOemUI::DevicePropertySheets</b>:
 
 <dd>
-<p>Contains the contents of the <b>Flags</b> member of the DEVICEPROPERTYHEADER structure received by the printer driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548542">DrvDevicePropertySheets</a> function.</p>
+<p>Contains the contents of the <b>Flags</b> member of the DEVICEPROPERTYHEADER structure received by the printer driver's <a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a> function.</p>
 </dd>
 </dl>
 </dd>
@@ -194,19 +194,19 @@ typedef struct _OEMUIPSPARAM {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554165">IPrintOemUI::DevicePropertySheets</a>
+<a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554173">IPrintOemUI::DocumentPropertySheets</a>
+<a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564313">_CPSUICALLBACK</a>
+<a href="..\compstui\nc-compstui--cpsuicallback.md">_CPSUICALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548548">DrvDocumentPropertySheets</a>
+<a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548542">DrvDevicePropertySheets</a>
+<a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a>
 </dt>
 </dl>
 <p> </p>

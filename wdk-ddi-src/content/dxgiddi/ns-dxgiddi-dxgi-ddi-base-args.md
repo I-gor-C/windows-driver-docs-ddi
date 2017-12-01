@@ -67,34 +67,34 @@ typedef struct DXGI_DDI_BASE_ARGS {
 ### -field <b>pDXGIBaseCallbacks</b>
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557487">DXGI_DDI_BASE_CALLBACKS</a> structure that contains a table of Microsoft Direct3D runtime callback functions that the driver can use to access kernel services.</p>
+<p>[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-base-callbacks.md">DXGI_DDI_BASE_CALLBACKS</a> structure that contains a table of Microsoft Direct3D runtime callback functions that the driver can use to access kernel services.</p>
 </dd>
 
 ### -field <b>pDXGIDDIBaseFunctions4</b>
 
 <dd>
-<p>[in/out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn465883">DXGI1_3_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
+<p>[in/out] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi1-3-ddi-base-functions.md">DXGI1_3_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
 <p> Supported starting with Windows 8.1.</p>
 </dd>
 
 ### -field <b>pDXGIDDIBaseFunctions3</b>
 
 <dd>
-<p>[in/out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451215">DXGI1_2_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
+<p>[in/out] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi1-2-ddi-base-functions.md">DXGI1_2_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
 ### -field <b>pDXGIDDIBaseFunctions2</b>
 
 <dd>
-<p>[in/out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557439">DXGI1_1_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
+<p>[in/out] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi1-1-ddi-base-functions.md">DXGI1_1_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
 <p> Supported starting with Windows 7.</p>
 </dd>
 
 ### -field <b>pDXGIDDIBaseFunctions</b>
 
 <dd>
-<p>[in/out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557492">DXGI_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
+<p>[in/out] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-base-functions.md">DXGI_DDI_BASE_FUNCTIONS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.</p>
 </dd>
 </dl>
 
@@ -129,22 +129,22 @@ typedef struct DXGI_DDI_BASE_ARGS {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createdevice.md">CreateDevice(D3D10)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541664">D3D10DDIARG_CREATEDEVICE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createdevice.md">D3D10DDIARG_CREATEDEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557487">DXGI_DDI_BASE_CALLBACKS</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-base-callbacks.md">DXGI_DDI_BASE_CALLBACKS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557492">DXGI_DDI_BASE_FUNCTIONS</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-base-functions.md">DXGI_DDI_BASE_FUNCTIONS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557439">DXGI1_1_DDI_BASE_FUNCTIONS</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi1-1-ddi-base-functions.md">DXGI1_1_DDI_BASE_FUNCTIONS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451215">DXGI1_2_DDI_BASE_FUNCTIONS</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi1-2-ddi-base-functions.md">DXGI1_2_DDI_BASE_FUNCTIONS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn465883">DXGI1_3_DDI_BASE_FUNCTIONS</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi1-3-ddi-base-functions.md">DXGI1_3_DDI_BASE_FUNCTIONS</a>
 </dt>
 </dl>
 <p> </p>

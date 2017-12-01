@@ -7,7 +7,7 @@ old-location: netvista\netfreesharedmemory.htm
 old-project: netvista
 ms.assetid: fdc3dfe7-6980-493d-ad41-aed501db3a6b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,16 +87,7 @@ VOID NetFreeSharedMemory(
 ## -remarks
 <p>NDIS calls the 
     <i>NetFreeSharedMemory</i> function of a shared memory provider when a driver calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562601">NdisFreeSharedMemory</a> function.</p>
-
-<p>The shared memory provider specified the entry point (FREE_SHARED_MEMORY_HANDLER) for 
-    <i>NetFreeSharedMemory</i> in the 
-    <a href="..\ndis\ns-ndis--ndis-shared-memory-provider-characteristics.md">
-    NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a> structure.</p>
-
-<p>NDIS calls the 
-    <i>NetFreeSharedMemory</i> function of a shared memory provider when a driver calls the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562601">NdisFreeSharedMemory</a> function.</p>
+    <a href="..\ndis\nf-ndis-ndisfreesharedmemory.md">NdisFreeSharedMemory</a> function.</p>
 
 <p>The shared memory provider specified the entry point (FREE_SHARED_MEMORY_HANDLER) for 
     <i>NetFreeSharedMemory</i> in the 
@@ -150,7 +141,7 @@ VOID NetFreeSharedMemory(
    NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562601">NdisFreeSharedMemory</a>
+<a href="..\ndis\nf-ndis-ndisfreesharedmemory.md">NdisFreeSharedMemory</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-allocate-shared-memory-handler.md">NetAllocateSharedMemory</a>
@@ -158,4 +149,4 @@ VOID NetFreeSharedMemory(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FREE_SHARED_MEMORY_HANDLER callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FREE_SHARED_MEMORY_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

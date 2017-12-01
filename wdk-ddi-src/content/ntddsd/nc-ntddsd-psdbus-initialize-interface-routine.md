@@ -79,10 +79,6 @@ NTSTATUS InitializeInterface(
 
 <p>An SD card driver must call its initialization routine before attempting to send requests to the bus driver.</p>
 
-<p>An SD card driver typically calls its initialization routine immediately after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537906">SdBusOpenInterface</a> routine returns with a value of STATUS_SUCCESS. </p>
-
-<p>An SD card driver must call its initialization routine before attempting to send requests to the bus driver.</p>
-
 ## -requirements
 <table>
 <tr>

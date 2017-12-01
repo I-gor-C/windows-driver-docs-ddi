@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmalanguage_2.htm
 old-project: netvista
 ms.assetid: d1ad512e-10ba-4266-9688-2fc8e63bb4c4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

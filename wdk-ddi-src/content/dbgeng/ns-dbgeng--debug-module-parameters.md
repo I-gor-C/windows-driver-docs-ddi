@@ -7,7 +7,7 @@ old-location: debugger\debug_module_parameters.htm
 old-project: debugger
 ms.assetid: 3f10997f-263f-4d1b-ab0a-d44201aaaf37
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_MODULE_PARAMETERS, DEBUG_MODULE_PARAMETERS, *PDEBUG_MODULE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -241,11 +241,11 @@ typedef struct _DEBUG_MODULE_PARAMETERS {
 </dl>
 
 ## -remarks
-<p>This structure is returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547161">GetModuleParameters</a>.</p>
+<p>This structure is returned by <a href="debugger.getmoduleparameters">GetModuleParameters</a>.</p>
 
-<p>To locate the different names for the module, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff547149">GetModuleNameString</a>.</p>
+<p>To locate the different names for the module, use <a href="debugger.getmodulenamestring">GetModuleNameString</a>.</p>
 
-<p>For more information about modules, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552231">Modules</a>.  For details about the different names for the module, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547149">GetModuleNameString</a>.</p>
+<p>For more information about modules, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552231">Modules</a>.  For details about the different names for the module, see <a href="debugger.getmodulenamestring">GetModuleNameString</a>.</p>
 
 ## -requirements
 <table>

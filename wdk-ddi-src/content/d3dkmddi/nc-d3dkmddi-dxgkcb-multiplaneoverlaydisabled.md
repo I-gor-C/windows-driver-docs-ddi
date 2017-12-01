@@ -85,15 +85,6 @@ This callback can only be called at passive level.
 
 </p>
 
-<p>This callback will notify the DWM that the current MPO configuration is no longer supported, allowing the DWM to fall back to composition. 
-
-This callback can only be called at passive level.
-</p>
-
-<p>This callback can be used in the following scenarios:
-
-</p>
-
 ## -requirements
 <table>
 <tr>

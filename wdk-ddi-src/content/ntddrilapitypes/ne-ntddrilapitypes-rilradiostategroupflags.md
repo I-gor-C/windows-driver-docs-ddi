@@ -7,7 +7,7 @@ old-location: netvista\rilradiostategroupflags.htm
 old-project: netvista
 ms.assetid: b44debf9-4f44-44fc-9857-e4725edc888f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

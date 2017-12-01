@@ -7,7 +7,7 @@ old-location: netvista\ndisgethypervisorinfo.htm
 old-project: netvista
 ms.assetid: 5469c6aa-90df-4379-b670-23aaa6919055
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisGetHypervisorInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ NDIS_STATUS NdisGetHypervisorInfo(
 ### -param <i>HypervisorInfo</i> [in, out]
 
 <dd>
-<p>A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff565708">NDIS_HYPERVISOR_INFO</a> structure that
+<p>A pointer to a caller-allocated <a href="..\ntddndis\ns-ntddndis--ndis-hypervisor-info.md">NDIS_HYPERVISOR_INFO</a> structure that
      contains information about the hypervisor that is present on the system.</p>
 </dd>
 </dl>
@@ -73,23 +73,7 @@ NDIS_STATUS NdisGetHypervisorInfo(
 <p>NDIS miniport drivers call the 
     <b>NdisGetHypervisorInfo</b> function to determine whether a hypervisor is present on the system.</p>
 
-<p>When the <b>NdisGetHypervisorInfo</b> function returns, the <i>HypervisorInfo</i> parameter contains a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff565708">NDIS_HYPERVISOR_INFO</a> structure. This structure contains information about whether a hypervisor is present, along with the partition type from which this function was called. The <b>NDIS_HYPERVISOR_INFO</b> structure provides this information in the following way:</p>
-
-<p>If a hypervisor is present, the <b>NDIS_HYPERVISOR_INFO_FLAG_HYPERVISOR_PRESENT</b> 
-flag is set in the <b>Flags</b> member.</p>
-
-<p>If the Microsoft hypervisor is present, the <b>PartitionType</b> member is set to one of the following values: </p>
-
-<p>If the <b>NdisGetHypervisorInfo</b> function was called from the management operating system that runs in the Hyper-V parent partition, the <b>PartitionType</b> member is set to <b>NdisHypervisorPartitionTypeMsHvParent</b>.</p>
-
-<p>If the <b>NdisGetHypervisorInfo</b> function was called from the guest operating system that runs in the Hyper-V child partition, the <b>PartitionType</b> member is set to <b>NdisHypervisorPartitionMsHvChild</b>.</p>
-
-<p>If another vendor's hypervisor is present, the <b>PartitionType</b> member is set to  <b>NdisHypervisorPartitionTypeUnknown</b>.</p>
-
-<p>NDIS miniport drivers call the 
-    <b>NdisGetHypervisorInfo</b> function to determine whether a hypervisor is present on the system.</p>
-
-<p>When the <b>NdisGetHypervisorInfo</b> function returns, the <i>HypervisorInfo</i> parameter contains a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff565708">NDIS_HYPERVISOR_INFO</a> structure. This structure contains information about whether a hypervisor is present, along with the partition type from which this function was called. The <b>NDIS_HYPERVISOR_INFO</b> structure provides this information in the following way:</p>
+<p>When the <b>NdisGetHypervisorInfo</b> function returns, the <i>HypervisorInfo</i> parameter contains a pointer to an <a href="..\ntddndis\ns-ntddndis--ndis-hypervisor-info.md">NDIS_HYPERVISOR_INFO</a> structure. This structure contains information about whether a hypervisor is present, along with the partition type from which this function was called. The <b>NDIS_HYPERVISOR_INFO</b> structure provides this information in the following way:</p>
 
 <p>If a hypervisor is present, the <b>NDIS_HYPERVISOR_INFO_FLAG_HYPERVISOR_PRESENT</b> 
 flag is set in the <b>Flags</b> member.</p>
@@ -155,9 +139,9 @@ flag is set in the <b>Flags</b> member.</p>
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565708">NDIS_HYPERVISOR_INFO</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-hypervisor-info.md">NDIS_HYPERVISOR_INFO</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetHypervisorInfo function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetHypervisorInfo function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

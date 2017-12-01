@@ -7,7 +7,7 @@ old-location: kernel\write_port_ushort.htm
 old-project: kernel
 ms.assetid: 60145cf3-62cb-4165-8536-f1546b9623dd
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: WRITE_PORT_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,8 +73,6 @@ req.product: Windows 10 or later.
 <p>None</p>
 
 ## -remarks
-<p>Callers of <b>WRITE_PORT_USHORT</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
-
 <p>Callers of <b>WRITE_PORT_USHORT</b> can be running at any IRQL, assuming the <i>Port</i> is resident, mapped device memory.</p>
 
 ## -requirements

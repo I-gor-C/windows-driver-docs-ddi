@@ -7,7 +7,7 @@ old-location: netvista\rilsystemselectionprefsparammask.htm
 old-project: netvista
 ms.assetid: 69560c05-8a54-4a67-a441-2b3c2ec4c332
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

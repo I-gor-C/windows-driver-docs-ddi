@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_queue_dispatch_type_umdf.htm
 old-project: wdf
 ms.assetid: 40f4cd91-ba84-426c-b248-6027d1e8d1a4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]</p>
 <p>
-      The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552362">WDF_IO_QUEUE_DISPATCH_TYPE</a> enumeration contains values that identify how a driver must receive requests from an I/O queue.</p>
+      The <a href="..\wudfddi_types\ne-wudfddi-types--wdf-io-queue-dispatch-type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a> enumeration contains values that identify how a driver must receive requests from an I/O queue.</p>
 
 
 ## -syntax
@@ -63,7 +63,7 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 ### -field <a id="WdfIoQueueDispatchSequential"></a><a id="wdfioqueuedispatchsequential"></a><a id="WDFIOQUEUEDISPATCHSEQUENTIAL"></a><b>WdfIoQueueDispatchSequential</b>
 
 <dd>
-<p>The I/O queue's requests are presented to the driver's I/O queue callback functions one at a time. The framework delivers the next request after the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a> method to complete the current request.</p>
+<p>The I/O queue's requests are presented to the driver's I/O queue callback functions one at a time. The framework delivers the next request after the driver calls the <a href="wdf.iwdfiorequest_complete">IWDFIoRequest::Complete</a> method to complete the current request.</p>
 </dd>
 
 ### -field <a id="WdfIoQueueDispatchParallel"></a><a id="wdfioqueuedispatchparallel"></a><a id="WDFIOQUEUEDISPATCHPARALLEL"></a><b>WdfIoQueueDispatchParallel</b>
@@ -75,7 +75,7 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 ### -field <a id="WdfIoQueueDispatchManual"></a><a id="wdfioqueuedispatchmanual"></a><a id="WDFIOQUEUEDISPATCHMANUAL"></a><b>WdfIoQueueDispatchManual</b>
 
 <dd>
-<p>The framework places requests into the queue but does not deliver them to the driver. The driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a> method to retrieve a request from the queue.</p>
+<p>The framework places requests into the queue but does not deliver them to the driver. The driver must call the <a href="wdf.iwdfioqueue_retrievenextrequest">IWDFIoQueue::RetrieveNextRequest</a> method to retrieve a request from the queue.</p>
 </dd>
 
 ### -field <a id="WdfIoQueueDispatchMaximum"></a><a id="wdfioqueuedispatchmaximum"></a><a id="WDFIOQUEUEDISPATCHMAXIMUM"></a><b>WdfIoQueueDispatchMaximum</b>
@@ -105,12 +105,12 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
+<a href="wdf.iwdfioqueue_retrievenextrequest">IWDFIoQueue::RetrieveNextRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
+<a href="wdf.iwdfiorequest_complete">IWDFIoRequest::Complete</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_DISPATCH_TYPE enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_DISPATCH_TYPE enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

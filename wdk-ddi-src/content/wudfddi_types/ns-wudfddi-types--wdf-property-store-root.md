@@ -7,7 +7,7 @@ old-location: wdf\wdf_property_store_root.htm
 old-project: wdf
 ms.assetid: 431ae991-35e0-4cf7-a3e0-57591abfe5c5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT, *PWDF_PROPERTY_STORE_ROOT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,7 +78,7 @@ typedef struct _WDF_PROPERTY_STORE_ROOT {
 ### -field <b>RootClass</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561458">WDF_PROPERTY_STORE_ROOT_CLASS</a>-typed value that identifies a property store.</p>
+<p>A <a href="..\wudfddi_types\ne-wudfddi-types--wdf-property-store-root-class.md">WDF_PROPERTY_STORE_ROOT_CLASS</a>-typed value that identifies a property store.</p>
 </dd>
 
 ### -field <b>Qualifier</b>
@@ -107,13 +107,13 @@ typedef struct _WDF_PROPERTY_STORE_ROOT {
 ### -field <b>InterfaceGUID</b>
 
 <dd>
-<p>A pointer to a GUID that identifies a device interface. The driver must have previously called <a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a> to register the device interface.</p>
+<p>A pointer to a GUID that identifies a device interface. The driver must have previously called <a href="wdf.iwdfdevice_createdeviceinterface">IWDFDevice::CreateDeviceInterface</a> to register the device interface.</p>
 </dd>
 
 ### -field <b>ReferenceString</b>
 
 <dd>
-<p>A pointer to a <b>NULL</b>-terminated character string that identifies a reference string for a device interface. The driver must specify this member if it specified a reference string when it called <a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a>. Otherwise, this member must be <b>NULL</b>.</p>
+<p>A pointer to a <b>NULL</b>-terminated character string that identifies a reference string for a device interface. The driver must specify this member if it specified a reference string when it called <a href="wdf.iwdfdevice_createdeviceinterface">IWDFDevice::CreateDeviceInterface</a>. Otherwise, this member must be <b>NULL</b>.</p>
 </dd>
 </dl>
 </dd>
@@ -135,7 +135,7 @@ typedef struct _WDF_PROPERTY_STORE_ROOT {
 </dl>
 
 ## -remarks
-<p>The <b>WDF_PROPERTY_STORE_ROOT</b> structure is used as input to <a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a> and <a href="wdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore">IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore</a>.</p>
+<p>The <b>WDF_PROPERTY_STORE_ROOT</b> structure is used as input to <a href="wdf.iwdfpropertystorefactory_retrievedevicepropertystore">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a> and <a href="wdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore">IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore</a>.</p>
 
 <p>UMDF property stores represent registry keys that drivers can access. Before your driver calls one of the above methods, it must initialize the <b>WDF_PROPERTY_STORE_ROOT</b> structure. The driver must zero the structure and then set the <b>LengthCb</b> member to the structure's length.</p>
 
@@ -146,8 +146,6 @@ typedef struct _WDF_PROPERTY_STORE_ROOT {
 <p>Set the structure's <b>RootClass</b> member to <b>WdfPropertyStoreRootClassSoftwareKey</b>.</p>
 
 <p>To open a device's <a href="wdf.using_the_registry_in_umdf_drivers">hardware key</a>, your driver must:</p>
-
-<p>Set the structure's <b>LengthCb</b> member to the structure size.</p>
 
 <p>Set the structure's <b>RootClass</b> member to <b>WdfPropertyStoreRootClassHardwareKey</b>.</p>
 
@@ -174,19 +172,15 @@ typedef struct _WDF_PROPERTY_STORE_ROOT {
 
 <p>To open a <a href="wdf.using_the_registry_in_umdf_drivers">device interface key</a>, your driver must:</p>
 
-<p>Set the structure's <b>LengthCb</b> member to the structure size.</p>
-
 <p>Set the structure's <b>RootClass</b> member to <b>WdfPropertyStoreRootClassDeviceInterfaceKey</b>.</p>
 
-<p>Set the <b>Qualifier.DeviceInterfaceKey.InterfaceGUID</b> member to the GUID that the driver specified to a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a>.</p>
+<p>Set the <b>Qualifier.DeviceInterfaceKey.InterfaceGUID</b> member to the GUID that the driver specified to a previous call to <a href="wdf.iwdfdevice_createdeviceinterface">IWDFDevice::CreateDeviceInterface</a>.</p>
 
-<p>Set the <b>Qualifier.DeviceInterfaceKey.ReferenceString</b> member to the reference string that the driver specified to a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a>, or <b>NULL</b> if the driver did not specify a reference string.</p>
+<p>Set the <b>Qualifier.DeviceInterfaceKey.ReferenceString</b> member to the reference string that the driver specified to a previous call to <a href="wdf.iwdfdevice_createdeviceinterface">IWDFDevice::CreateDeviceInterface</a>, or <b>NULL</b> if the driver did not specify a reference string.</p>
 
 <p>The driver can obtain read or write access to the device interface key. </p>
 
 <p>To open the <a href="wdf.using_the_registry_in_umdf_drivers">DEVICEMAP key</a>, your driver must:</p>
-
-<p>Set the structure's <b>LengthCb</b> member to the structure size.</p>
 
 <p>Set the structure's <b>RootClass</b> member to <b>WdfPropertyStoreRootClassLegacyHardwareKey</b>.</p>
 
@@ -229,9 +223,9 @@ typedef struct _WDF_PROPERTY_STORE_ROOT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
+<a href="wdf.iwdfpropertystorefactory_retrievedevicepropertystore">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PROPERTY_STORE_ROOT structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PROPERTY_STORE_ROOT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

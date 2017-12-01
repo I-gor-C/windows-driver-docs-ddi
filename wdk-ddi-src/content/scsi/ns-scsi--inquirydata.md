@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The INQUIRYDATA structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567934">TapeMiniExtensionInit</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567956">TapeMiniVerifyInquiry</a> routines to report SCSI inquiry data associated with a tape device. </p>
+<p>The INQUIRYDATA structure is used in conjunction with the <a href="storage.tapeminiextensioninit">TapeMiniExtensionInit</a> and <a href="storage.tapeminiverifyinquiry">TapeMiniVerifyInquiry</a> routines to report SCSI inquiry data associated with a tape device. </p>
 
 
 ## -syntax
@@ -362,10 +362,10 @@ typedef struct _INQUIRYDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567934">TapeMiniExtensionInit</a>
+<a href="storage.tapeminiextensioninit">TapeMiniExtensionInit</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567956">TapeMiniVerifyInquiry</a>
+<a href="storage.tapeminiverifyinquiry">TapeMiniVerifyInquiry</a>
 </dt>
 </dl>
 <p> </p>

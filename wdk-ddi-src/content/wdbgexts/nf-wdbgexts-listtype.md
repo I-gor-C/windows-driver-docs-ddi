@@ -7,7 +7,7 @@ old-location: debugger\listtype.htm
 old-project: debugger
 ms.assetid: 5c250438-8805-4f45-b08f-65ec87b3e61a
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: ListType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -107,7 +107,7 @@ __inline ULONG ListType(
 ### -param <i>CallbackRoutine</i> [in]
 
 <dd>
-<p>Specifies a function that is called for each entry in the linked list.  The parameters passed to the function are the <i>Context</i> pointer and a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545316">FIELD_INFO</a> structure; the address of the entry is found in the <b>address</b> member of this structure.</p>
+<p>Specifies a function that is called for each entry in the linked list.  The parameters passed to the function are the <i>Context</i> pointer and a <a href="..\wdbgexts\ns-wdbgexts--field-info.md">FIELD_INFO</a> structure; the address of the entry is found in the <b>address</b> member of this structure.</p>
 </dd>
 </dl>
 

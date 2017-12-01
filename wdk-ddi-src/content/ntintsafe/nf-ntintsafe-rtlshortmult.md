@@ -7,7 +7,7 @@ old-location: kernel\rtlshortmult.htm
 old-project: kernel
 ms.assetid: 15DCCCF1-72B1-4944-9BF0-ACAF1DEB9243
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlShortMult
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -63,19 +63,19 @@ typedef struct _D3DKMDT_MONITOR_FREQUENCY_RANGE {
 ### -field <b>Origin</b>
 
 <dd>
-<p>A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546075">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a> enumeration that indicates the source of the frequency range information.</p>
+<p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-capabilities-origin.md">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a> enumeration that indicates the source of the frequency range information.</p>
 </dd>
 
 ### -field <b>RangeLimits</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546008">D3DKMDT_FREQUENCY_RANGE</a> structure that contains the minimum and maximum refresh rates supported by the monitor.</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-frequency-range.md">D3DKMDT_FREQUENCY_RANGE</a> structure that contains the minimum and maximum refresh rates supported by the monitor.</p>
 </dd>
 
 ### -field <b>ConstraintType</b>
 
 <dd>
-<p>A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546109">D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT</a> enumeration that specifies the type of constraint under which the frequency range is supported.</p>
+<p>A value from the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-monitor-frequency-range-constraint.md">D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT</a> enumeration that specifies the type of constraint under which the frequency range is supported.</p>
 </dd>
 
 ### -field <b>Constraint</b>
@@ -127,7 +127,7 @@ typedef struct _D3DKMDT_MONITOR_FREQUENCY_RANGE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568430">Monitor Frequency Range Set Interface</a>
+<a href="display.monitor_frequency_range_set_interface">Monitor Frequency Range Set Interface</a>
 </dt>
 </dl>
 <p> </p>

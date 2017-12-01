@@ -194,11 +194,11 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 </dl>
 
 ## -remarks
-<p>The <b>FILE_FS_PERSISTENT_VOLUME_INFORMATION</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545564">FSCTL_SET_PERSISTENT_VOLUME_STATE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff545496">FSCTL_QUERY_PERSISTENT_VOLUME_STATE</a> control codes.</p>
+<p>The <b>FILE_FS_PERSISTENT_VOLUME_INFORMATION</b> structure is used with the <a href="ifsk.fsctl_set_persistent_volume_state">FSCTL_SET_PERSISTENT_VOLUME_STATE</a> and <a href="ifsk.fsctl_query_persistent_volume_state">FSCTL_QUERY_PERSISTENT_VOLUME_STATE</a> control codes.</p>
 
 <p>To query the state flags, <b>FlagMask</b> is set to a combination of flags to check for. For example, if the only the seek penalty flags are of interest, <b>FlagMask</b> = PERSISTENT_VOLUME_STATE_GLOBAL_METADATA_NO_SEEK_PENALTY | PERSISTENT_VOLUME_STATE_LOCAL_METADATA_NO_SEEK_PENALTY. Also, if only short name support is queried, then set <b>FlagMask</b> = PERSISTENT_VOLUME_STATE_SHORT_NAME_CREATION_DISABLED.</p>
 
-<p>When setting or clearing the persistent volume state flags, using <a href="https://msdn.microsoft.com/library/windows/hardware/ff545564">FSCTL_SET_PERSISTENT_VOLUME_STATE</a>, <b>FlagMask</b> is set to all of the flags in <b>VolumeFlags</b> that will be affected for the volume. <b>VolumeFlags</b> contains the actual persistent state flags to set for the volume. The following example shows how to set the members of <b>FILE_FS_PERSISTENT_VOLUME_INFORMATION</b> to enable short name creation for a volume.</p>
+<p>When setting or clearing the persistent volume state flags, using <a href="ifsk.fsctl_set_persistent_volume_state">FSCTL_SET_PERSISTENT_VOLUME_STATE</a>, <b>FlagMask</b> is set to all of the flags in <b>VolumeFlags</b> that will be affected for the volume. <b>VolumeFlags</b> contains the actual persistent state flags to set for the volume. The following example shows how to set the members of <b>FILE_FS_PERSISTENT_VOLUME_INFORMATION</b> to enable short name creation for a volume.</p>
 
 <p>The <b>Version</b> member must be set to the current version of 1 for both a query and  a set  request.</p>
 
@@ -227,10 +227,10 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545496">FSCTL_QUERY_PERSISTENT_VOLUME_STATE</a>
+<a href="ifsk.fsctl_query_persistent_volume_state">FSCTL_QUERY_PERSISTENT_VOLUME_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545564">FSCTL_SET_PERSISTENT_VOLUME_STATE</a>
+<a href="ifsk.fsctl_set_persistent_volume_state">FSCTL_SET_PERSISTENT_VOLUME_STATE</a>
 </dt>
 </dl>
 <p> </p>

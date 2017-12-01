@@ -103,7 +103,7 @@ typedef struct _USB_DEVICE_PORT_PATH {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188055">UCXUSBDEVICE_INFO</a>
+<a href="buses._ucxusbdevice_info">UCXUSBDEVICE_INFO</a>
 </dt>
 </dl>
 <p> </p>

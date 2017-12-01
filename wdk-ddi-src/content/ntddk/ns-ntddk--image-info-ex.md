@@ -7,7 +7,7 @@ old-location: kernel\image_info_ex.htm
 old-project: kernel
 ms.assetid: 97F3D9BE-9069-4A4A-B114-FC9331510512
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IMAGE_INFO_EX, IMAGE_INFO_EX, *PIMAGE_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Extended version of the image information structure (see <a href="https://msdn.microsoft.com/library/windows/hardware/mt764083">IMAGE_INFO</a>).</p>
+<p>Extended version of the image information structure (see <a href="..\ntddk\ns-ntddk--image-info.md">IMAGE_INFO</a>).</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct _IMAGE_INFO_EX {
 ### -field <b>ImageInfo</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/mt764083">IMAGE_INFO</a> structure that specifies image information.</p>
+<p>An <a href="..\ntddk\ns-ntddk--image-info.md">IMAGE_INFO</a> structure that specifies image information.</p>
 </dd>
 
 ### -field <b>FileObject</b>
@@ -95,15 +95,15 @@ typedef struct _IMAGE_INFO_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt764088">PLOAD_IMAGE_NOTIFY_ROUTINE</a>
+<a href="..\ntddk\nc-ntddk-pload-image-notify-routine.md">PLOAD_IMAGE_NOTIFY_ROUTINE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559957">PsSetLoadImageNotifyRoutine</a>
+<a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt764083">IMAGE_INFO</a>
+<a href="..\ntddk\ns-ntddk--image-info.md">IMAGE_INFO</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IMAGE_INFO_EX structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IMAGE_INFO_EX structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

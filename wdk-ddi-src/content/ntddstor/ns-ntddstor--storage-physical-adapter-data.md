@@ -73,19 +73,19 @@ typedef struct _STORAGE_PHYSICAL_ADAPTER_DATA {
 ### -field <b>HealthStatus</b>
 
 <dd>
-<p>Indicates the health status of a storage adapter, of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt653957">STORAGE_COMPONENT_HEALTH_STATUS</a>.</p>
+<p>Indicates the health status of a storage adapter, of type <a href="..\ntddstor\ne-ntddstor--storage-component-health-status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.</p>
 </dd>
 
 ### -field <b>CommandProtocol</b>
 
 <dd>
-<p>Specifies the storage command protocols that are used between software and hardware, of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn931818">STORAGE_PROTOCOL_TYPE</a>.</p>
+<p>Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor--storage-protocol-type.md">STORAGE_PROTOCOL_TYPE</a>.</p>
 </dd>
 
 ### -field <b>SpecVersion</b>
 
 <dd>
-<p>Indicates the specification of the storage adapter, of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt653963">STORAGE_SPEC_VERSION</a>.</p>
+<p>Indicates the specification of the storage adapter, of type <a href="..\ntddstor\ns-ntddstor--storage-spec-version.md">STORAGE_SPEC_VERSION</a>.</p>
 </dd>
 
 ### -field <b>Vendor[8]</b>

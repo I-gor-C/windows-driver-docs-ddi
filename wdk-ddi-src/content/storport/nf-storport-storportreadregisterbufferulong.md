@@ -87,9 +87,7 @@ STORPORT_API VOID StorPortReadRegisterBufferUlong(
 <p>None </p>
 
 ## -remarks
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564735">ScsiPortReadRegisterBufferUlong</a>. For a nonbuffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567485">StorPortReadRegisterUlong</a>.</p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564735">ScsiPortReadRegisterBufferUlong</a>. For a nonbuffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567485">StorPortReadRegisterUlong</a>.</p>
+<p>For more information, see <a href="..\srb\nf-srb-scsiportreadregisterbufferulong.md">ScsiPortReadRegisterBufferUlong</a>. For a nonbuffered version of this routine, see <a href="..\storport\nf-storport-storportreadregisterulong.md">StorPortReadRegisterUlong</a>.</p>
 
 ## -requirements
 <table>
@@ -128,10 +126,10 @@ STORPORT_API VOID StorPortReadRegisterBufferUlong(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564735">ScsiPortReadRegisterBufferUlong</a>
+<a href="..\srb\nf-srb-scsiportreadregisterbufferulong.md">ScsiPortReadRegisterBufferUlong</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567485">StorPortReadRegisterUlong</a>
+<a href="..\storport\nf-storport-storportreadregisterulong.md">StorPortReadRegisterUlong</a>
 </dt>
 </dl>
 <p> </p>

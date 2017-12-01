@@ -7,7 +7,7 @@ old-location: netvista\ndisfdirectoidrequest.htm
 old-project: netvista
 ms.assetid: dec5415b-6903-416e-819b-007ea6f7e7b5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFDirectOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,48 +62,31 @@ NDIS_STATUS NdisFDirectOidRequest(
 <dd>
 <p>An NDIS handle that identifies a filter module. NDIS passed the handle to the filter driver in a
      call to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function.</p>
+     <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
 ### -param <i>OidRequest</i> [in]
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure that specifies
      the operation that is requested with a given OID_<i>Xxx</i> code. The structure can specify an OID query, set, or method request.</p>
 </dd>
 </dl>
 
 ## -returns
 <p>For a list of possible return values, see the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561746">NdisDirectOidRequest</a> function.</p>
+     <a href="..\ndis\nf-ndis-ndisdirectoidrequest.md">NdisDirectOidRequest</a> function.</p>
 
 ## -remarks
 <p>The 
     <b>NdisFDirectOidRequest</b> function cannot be used for general OID requests. For general OID requests,
     use the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561830">NdisFOidRequest</a> function instead. 
+    <a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a> function instead. 
     <b>NdisFDirectOidRequest</b> can be used only for OIDs that NDIS supports for use with the direct OID
-    interface. For example, the following OIDs can be used:</p><dl>
-<dd>
+    interface. For example, the following OIDs can be used:</p>
+
 <p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_update_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</a>
-</p>
-</dd>
-</dl><p>
 <a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
        OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
 </p>
@@ -142,72 +125,7 @@ NDIS_STATUS NdisFDirectOidRequest(
 
 <p>The direct OID request interface is similar to the general OID request interface. For more information
     about issuing general requests, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561830">NdisFOidRequest</a>.</p>
-
-<p>The 
-    <b>NdisFDirectOidRequest</b> function cannot be used for general OID requests. For general OID requests,
-    use the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561830">NdisFOidRequest</a> function instead. 
-    <b>NdisFDirectOidRequest</b> can be used only for OIDs that NDIS supports for use with the direct OID
-    interface. For example, the following OIDs can be used:</p><dl>
-<dd>
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
-</p>
-</dd>
-<dd>
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_update_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</a>
-</p>
-</dd>
-</dl><p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
-</p>
-
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
-</p>
-
-<p>
-<a href="netvista.oid_tcp_task_ipsec_offload_v2_update_sa">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</a>
-</p>
-
-<p>Filter drivers can originate direct OID requests to underlying drivers by calling 
-    <b>NdisFDirectOidRequest</b>.</p>
-
-<p>Filter drivers can also filter direct OID requests that are originated by overlying drivers. NDIS
-    calls the 
-    <a href="..\ndis\nc-ndis-filter-direct-oid-request.md">FilterDirectOidRequest</a> function
-    to process each such request.</p>
-
-<p>If 
-    <b>NdisFDirectOidRequest</b> returns <b>NDIS_STATUS_PENDING</b>, NDIS calls the 
-    <a href="..\ndis\nc-ndis-filter-direct-oid-request-complete.md">FilterDirectOidRequestComplete</a> function after the underlying drivers complete the OID request. A
-    driver that calls 
-    <b>NdisFDirectOidRequest</b> must register the 
-    <i>FilterDirectOidRequestComplete</i> function.</p>
-
-<p>A driver can call 
-    <b>NdisFDirectOidRequest</b> when it is in the 
-    <i>Restarting</i>, 
-    <i>Running</i>, 
-    <i>Pausing</i>, or 
-    <i>Paused</i> state.</p>
-
-<p>The direct OID request interface is similar to the general OID request interface. For more information
-    about issuing general requests, see 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561830">NdisFOidRequest</a>.</p>
+    <a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a>.</p>
 
 ## -requirements
 <table>
@@ -262,7 +180,7 @@ NDIS_STATUS NdisFDirectOidRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-filter-direct-oid-request.md">FilterDirectOidRequest</a>
@@ -272,13 +190,13 @@ NDIS_STATUS NdisFDirectOidRequest(
    FilterDirectOidRequestComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561746">NdisDirectOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisdirectoidrequest.md">NdisDirectOidRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561830">NdisFOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a>
 </dt>
 <dt>
 <a href="netvista.oid_tcp_task_ipsec_offload_v2_add_sa">
@@ -295,4 +213,4 @@ NDIS_STATUS NdisFDirectOidRequest(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFDirectOidRequest function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFDirectOidRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

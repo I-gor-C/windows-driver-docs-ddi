@@ -7,7 +7,7 @@ old-location: stream\usbcamd_adapterreceivepacket.htm
 old-project: stream
 ms.assetid: 12a5ca64-7187-4a70-83ca-0ade6a8b1343
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: USBCAMD_AdapterReceivePacket
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,13 +61,13 @@ PVOID USBCAMD_AdapterReceivePacket(
 ### -param <i>Srb</i> [in]
 
 <dd>
-<p>Pointer to the SRB passed to the camera minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554080">AdapterReceivePacket</a> callback function.</p>
+<p>Pointer to the SRB passed to the camera minidriver's <a href="stream.adapterreceivepacket">AdapterReceivePacket</a> callback function.</p>
 </dd>
 
 ### -param <i>DeviceData</i> [in]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568585">USBCAMD_DEVICE_DATA</a> structure that contains entry points to the camera minidriver's callback functions.</p>
+<p>Pointer to the <a href="..\usbcamdi\ns-usbcamdi--usbcamd-device-data.md">USBCAMD_DEVICE_DATA</a> structure that contains entry points to the camera minidriver's callback functions.</p>
 </dd>
 
 ### -param <i>DeviceObject</i> [in]
@@ -87,11 +87,7 @@ PVOID USBCAMD_AdapterReceivePacket(
 <p><b>USBCAMD_AdapterReceivePacket</b> returns a pointer to the device-specific context for this instance of the camera.</p>
 
 ## -remarks
-<p>Typically, this function is called by the camera minidriver from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554080">AdapterReceivePacket</a> routine. </p>
-
-<p>This function can also be used by the minidriver to retrieve the device context by setting the <i>NeedsCompletion</i> parameter to <b>FALSE</b>. In this case, the <i>DeviceData</i> and <i>DeviceObject</i> parameters are ignored.</p>
-
-<p>Typically, this function is called by the camera minidriver from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554080">AdapterReceivePacket</a> routine. </p>
+<p>Typically, this function is called by the camera minidriver from its <a href="stream.adapterreceivepacket">AdapterReceivePacket</a> routine. </p>
 
 <p>This function can also be used by the minidriver to retrieve the device context by setting the <i>NeedsCompletion</i> parameter to <b>FALSE</b>. In this case, the <i>DeviceData</i> and <i>DeviceObject</i> parameters are ignored.</p>
 
@@ -132,12 +128,12 @@ PVOID USBCAMD_AdapterReceivePacket(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568585">USBCAMD_DEVICE_DATA</a>
+<a href="..\usbcamdi\ns-usbcamdi--usbcamd-device-data.md">USBCAMD_DEVICE_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554080">AdapterReceivePacket</a>
+<a href="stream.adapterreceivepacket">AdapterReceivePacket</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_AdapterReceivePacket function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_AdapterReceivePacket function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_task_queue_config.htm
 old-project: wdf
 ms.assetid: a58dd106-dec8-4444-9783-eb16e969ea42
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_TASK_QUEUE_CONFIG, WDF_TASK_QUEUE_CONFIG, *PWDF_TASK_QUEUE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -108,7 +108,7 @@ typedef struct _D3DKMT_DEVICERESET_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548030">D3DKMT_GETDEVICESTATE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
 </dt>
 </dl>
 <p> </p>

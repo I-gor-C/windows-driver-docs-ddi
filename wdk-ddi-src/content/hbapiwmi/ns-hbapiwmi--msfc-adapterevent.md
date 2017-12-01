@@ -69,7 +69,7 @@ typedef struct _MSFC_AdapterEvent {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration for this structure in <i>Hbapiwm.h </i>after compiling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562477">MSFC_AdapterEvent WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration for this structure in <i>Hbapiwm.h </i>after compiling the <a href="storage.msfc_adapterevent_wmi_class">MSFC_AdapterEvent WMI Class</a>.</p>
 
 <p>For more information about event types and worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.</p>
 
@@ -93,7 +93,7 @@ typedef struct _MSFC_AdapterEvent {
 <a href="storage.event_types_qualifiers">EVENT_TYPE_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562477">MSFC_AdapterEvent WMI Class</a>
+<a href="storage.msfc_adapterevent_wmi_class">MSFC_AdapterEvent WMI Class</a>
 </dt>
 </dl>
 <p> </p>

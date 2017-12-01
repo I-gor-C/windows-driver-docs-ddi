@@ -7,7 +7,7 @@ old-location: kernel\rtlutf8tounicoden.htm
 old-project: kernel
 ms.assetid: 0b5f791a-9814-4058-8ee0-8f113ca3ade2
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlUTF8ToUnicodeN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -112,21 +112,7 @@ NTSTATUS RtlUTF8ToUnicodeN(
 
 <p><b>RtlUTF8ToUnicodeN</b> continues to convert the input string to an output string until it reaches the end of the source buffer or the end of the destination buffer, whichever occurs first. The routine converts any null characters in the input string to null characters in the output string. If the input string contains a terminating null character, but the null character is not located at the end of the source buffer, the routine continues past the terminating null character until it reaches the end of the available buffer space.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff562992">RtlUnicodeToUTF8N</a> routine converts a Unicode string to a UTF-8 string.</p>
-
-<p>You can use the <b>RtlUTF8ToUnicode</b> and <b>RtlUnicodeToUTF8N</b> routines to perform a lossless conversion of valid text strings between the UTF-8 and Unicode formats. However, strings that have arbitrary data values are likely to violate the Unicode rules for encoding surrogate pairs, and any information that is contained in the invalid values in an input string is lost and cannot be recovered from the resulting output string. </p>
-
-<p>The Unicode output string is null-terminated only if the UTF-8 input string is null-terminated.</p>
-
-<p>The routine returns STATUS_BUFFER_TOO_SMALL if the <i>UnicodeStringMaxByteCount</i> parameter specifies a buffer size that is too small to contain the entire output string. In this case, the routine writes as many Unicode characters as will fit in the buffer, and the *<i>UnicodeStringActualByteCount</i> value specifies the number of valid bytes that the routine has written to the buffer. The partial string that is contained in the output buffer might not include a terminating null character.</p>
-
-<p>You can make an initial call to <b>RtlUTF8ToUnicodeN</b> to obtain the required output buffer size, and then call <b>RtlUTF8ToUnicodeN</b> again to obtain the Unicode output string. In the initial call, set <i>UnicodeStringDestination</i> = <b>NULL</b> and <i>UnicodeStringMaxByteCount</i> = 0, and the routine will write the required buffer size to *<i>UnicodeStringActualByteCount</i>. Next, allocate a buffer of the required size and call <b>RtlUTF8ToUnicodeN</b> a second time to obtain the Unicode output string.</p>
-
-<p><b>RtlUTF8ToUnicodeN</b> supports Unicode surrogate pairs. However, a surrogate leading word value that is not followed by a trailing word value, or a trailing word value that is not preceded by a leading word value, is not recognized as a valid character and is replaced by the Unicode replacement character, U+FFFD.</p>
-
-<p><b>RtlUTF8ToUnicodeN</b> continues to convert the input string to an output string until it reaches the end of the source buffer or the end of the destination buffer, whichever occurs first. The routine converts any null characters in the input string to null characters in the output string. If the input string contains a terminating null character, but the null character is not located at the end of the source buffer, the routine continues past the terminating null character until it reaches the end of the available buffer space.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff562992">RtlUnicodeToUTF8N</a> routine converts a Unicode string to a UTF-8 string.</p>
+<p>The <a href="..\ntifs\nf-ntifs-rtlunicodetoutf8n.md">RtlUnicodeToUTF8N</a> routine converts a Unicode string to a UTF-8 string.</p>
 
 <p>You can use the <b>RtlUTF8ToUnicode</b> and <b>RtlUnicodeToUTF8N</b> routines to perform a lossless conversion of valid text strings between the UTF-8 and Unicode formats. However, strings that have arbitrary data values are likely to violate the Unicode rules for encoding surrogate pairs, and any information that is contained in the invalid values in an input string is lost and cannot be recovered from the resulting output string. </p>
 
@@ -193,9 +179,9 @@ NTSTATUS RtlUTF8ToUnicodeN(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562992">RtlUnicodeToUTF8N</a>
+<a href="..\ntifs\nf-ntifs-rtlunicodetoutf8n.md">RtlUnicodeToUTF8N</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlUTF8ToUnicodeN routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlUTF8ToUnicodeN routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

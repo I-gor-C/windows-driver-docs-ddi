@@ -74,7 +74,7 @@ typedef struct D3D10DDIARG_OPENRESOURCE {
 ### -field <b>pOpenAllocationInfo</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544599">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.</p>
+<p>[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.</p>
 </dd>
 
 ### -field <b>pOpenAllocationInfo2</b>
@@ -87,7 +87,7 @@ typedef struct D3D10DDIARG_OPENRESOURCE {
 ### -field <b>pOpenAllocationInfo</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544599">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.</p>
+<p>[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.</p>
 </dd>
 
 ### -field <b>hKMResource</b>
@@ -101,7 +101,7 @@ typedef struct D3D10DDIARG_OPENRESOURCE {
 ### -field <b>pPrivateDriverData</b>
 
 <dd>
-<p>[in] A pointer to private data that was passed to the display miniport driver when the resource was created. This data is per resource and not per allocation like the private data in each allocation's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544599">D3DDDI_OPENALLOCATIONINFO</a> structure. </p>
+<p>[in] A pointer to private data that was passed to the display miniport driver when the resource was created. This data is per resource and not per allocation like the private data in each allocation's <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a> structure. </p>
 </dd>
 
 ### -field <b>PrivateDriverDataSize</b>
@@ -142,7 +142,7 @@ typedef struct D3D10DDIARG_OPENRESOURCE {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-createresource.md">CreateResource(D3D10)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544599">D3DDDI_OPENALLOCATIONINFO</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a>
 </dt>
 </dl>
 <p> </p>

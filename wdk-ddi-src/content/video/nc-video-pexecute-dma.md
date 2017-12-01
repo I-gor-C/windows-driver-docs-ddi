@@ -70,13 +70,13 @@ VOID HwVidExecuteDma(
 ### -param <i>VpDmaAdapter</i> 
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>.</p>
+<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.</p>
 </dd>
 
 ### -param <i>SGList</i> 
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570572">VP_SCATTER_GATHER_LIST</a> structure. The video port driver fills in the information in this structure, and passes this structure to the miniport driver.</p>
+<p>Pointer to a <a href="..\video\ns-video--vp-scatter-gather-list.md">VP_SCATTER_GATHER_LIST</a> structure. The video port driver fills in the information in this structure, and passes this structure to the miniport driver.</p>
 </dd>
 
 ### -param <i>Context</i> 
@@ -92,15 +92,7 @@ VOID HwVidExecuteDma(
 ## -remarks
 <p>This function is available in Windows XP and later.</p>
 
-<p>If the miniport driver reports that the device does not support scatter/gather, there will be only a single element in the scatter/gather list passed to this routine. The scatter/gather list is valid until <a href="https://msdn.microsoft.com/library/windows/hardware/ff570286">VideoPortCompleteDma</a> is called.</p>
-
-<p>The last task that the video port driver's <b>VideoPortStartDma</b> function performs is to call the miniport driver's <i>HwVidExecuteDma</i> callback routine. It is this callback that actually carries out the DMA transfer operation.</p>
-
-<p><i>HwVidExecuteDma</i> must be in nonpaged memory and must not access any pageable code or data.</p>
-
-<p>This function is available in Windows XP and later.</p>
-
-<p>If the miniport driver reports that the device does not support scatter/gather, there will be only a single element in the scatter/gather list passed to this routine. The scatter/gather list is valid until <a href="https://msdn.microsoft.com/library/windows/hardware/ff570286">VideoPortCompleteDma</a> is called.</p>
+<p>If the miniport driver reports that the device does not support scatter/gather, there will be only a single element in the scatter/gather list passed to this routine. The scatter/gather list is valid until <a href="..\video\nf-video-videoportcompletedma.md">VideoPortCompleteDma</a> is called.</p>
 
 <p>The last task that the video port driver's <b>VideoPortStartDma</b> function performs is to call the miniport driver's <i>HwVidExecuteDma</i> callback routine. It is this callback that actually carries out the DMA transfer operation.</p>
 
@@ -133,19 +125,19 @@ VOID HwVidExecuteDma(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>
+<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570369">VideoPortStartDma</a>
+<a href="..\video\nf-video-videoportstartdma.md">VideoPortStartDma</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570286">VideoPortCompleteDma</a>
+<a href="..\video\nf-video-videoportcompletedma.md">VideoPortCompleteDma</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570572">VP_SCATTER_GATHER_LIST</a>
+<a href="..\video\ns-video--vp-scatter-gather-list.md">VP_SCATTER_GATHER_LIST</a>
 </dt>
 </dl>
 <p> </p>

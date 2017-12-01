@@ -61,7 +61,7 @@ inline void __stdcall wiauDbgFlags(
 ### -param <i>flags</i> 
 
 <dd>
-<p>Is a set of flags that control which information is placed in the log file or displayed in the debugger. See the <i>flags</i> parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550159">wiauDbgSetFlags</a> for a list of the flag values.</p>
+<p>Is a set of flags that control which information is placed in the log file or displayed in the debugger. See the <i>flags</i> parameter of <a href="..\wiautil\nf-wiautil-wiaudbgsetflags.md">wiauDbgSetFlags</a> for a list of the flag values.</p>
 </dd>
 
 ### -param <i>prefix</i> 
@@ -87,8 +87,6 @@ inline void __stdcall wiauDbgFlags(
 <p>None</p>
 
 ## -remarks
-<p>If message logging to log file, or debugger, or both is enabled and the particular flag in the <i>flags</i> parameter is enabled, this function logs a message containing the strings pointed to by the <i>prefix</i>, <i>fname</i>, and <i>fmt</i> parameters.</p>
-
 <p>If message logging to log file, or debugger, or both is enabled and the particular flag in the <i>flags</i> parameter is enabled, this function logs a message containing the strings pointed to by the <i>prefix</i>, <i>fname</i>, and <i>fmt</i> parameters.</p>
 
 ## -requirements
@@ -126,7 +124,7 @@ inline void __stdcall wiauDbgFlags(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550159">wiauDbgSetFlags</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgsetflags.md">wiauDbgSetFlags</a>
 </dt>
 </dl>
 <p> </p>

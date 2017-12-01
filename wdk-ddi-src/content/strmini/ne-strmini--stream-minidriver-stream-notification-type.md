@@ -7,7 +7,7 @@ old-location: stream\stream_minidriver_stream_notification_type.htm
 old-project: stream
 ms.assetid: 13D8152C-FE7E-46EB-9C7F-9CA0135A4B76
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PST_PARAMETER_DATA, ST_PARAMETER_DATA, *PST_PARAMETER_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

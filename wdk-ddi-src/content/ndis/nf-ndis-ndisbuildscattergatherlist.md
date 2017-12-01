@@ -7,7 +7,7 @@ old-location: netvista\ndisbuildscattergatherlist.htm
 old-project: netvista
 ms.assetid: 439d68ec-9d27-484b-b6a3-9bae732d142e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisBuildScatterGatherList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,12 +70,12 @@ NDIS_STATUS NdisBuildScatterGatherList(
 <dl>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564520">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </p>
 </dd>
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </p>
 </dd>
 </dl>
@@ -106,30 +106,6 @@ NDIS_STATUS NdisBuildScatterGatherList(
 <p> </p>
 
 ## -remarks
-<p>NDIS drivers call the 
-    <b>NdisBuildScatterGatherList</b> function to build a scatter/gather list for a buffer. To call this
-    function, a miniport driver specifies a miniport adapter handle or a protocol driver specifies an NDIS
-    binding handle.</p>
-
-<p>The underlying miniport adapter must have called 
-    <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
-    NdisMRegisterScatterGatherDma</a> before a driver can call 
-    <b>NdisBuildScatterGatherList</b>.</p>
-
-<p>NDIS calls the 
-    <a href="..\ndis\nc-ndis-ndis-process-sg-list.md">NetProcessSGList</a> function that is
-    specified at the 
-    <b>ProcessSGListHandler</b> member of the 
-    <a href="..\ndis\ns-ndis--ndis-scatter-gather-list-parameters.md">
-    NDIS_SCATTER_GATHER_LIST_PARAMETERS</a> structure within the context of 
-    <b>NdisBuildScatterGatherList</b>.</p>
-
-<p>The drivers must call the 
-    <a href="..\ndis\nf-ndis-ndisfreescattergatherlist.md">
-    NdisFreeScatterGatherList</a> function to free a scatter/gather list that was created with the 
-    <b>
-    NdisBuildScatterGatherList</b> function.</p>
-
 <p>NDIS drivers call the 
     <b>NdisBuildScatterGatherList</b> function to build a scatter/gather list for a buffer. To call this
     function, a miniport driver specifies a miniport adapter handle or a protocol driver specifies an NDIS
@@ -207,7 +183,7 @@ NDIS_STATUS NdisBuildScatterGatherList(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
@@ -217,20 +193,20 @@ NDIS_STATUS NdisBuildScatterGatherList(
    NDIS_SCATTER_GATHER_LIST_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562608">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
    NdisMRegisterScatterGatherDma</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564520">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-ndis-process-sg-list.md">NetProcessSGList</a>
@@ -238,4 +214,4 @@ NDIS_STATUS NdisBuildScatterGatherList(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisBuildScatterGatherList function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisBuildScatterGatherList function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

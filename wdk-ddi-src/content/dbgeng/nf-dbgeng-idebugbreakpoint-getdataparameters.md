@@ -7,7 +7,7 @@ old-location: debugger\getdataparameters.htm
 old-project: debugger
 ms.assetid: e281c67a-df97-464e-9996-b15c18172dc4
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugBreakpoint, GetDataParameters, IDebugBreakpoint::GetDataParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,18 +73,14 @@ HRESULT GetDataParameters(
 <dt><b>S_OK</b></dt>
 </dl><p>The method was successful.</p><dl>
 <dt><b>E_NOINTERFACE</b></dt>
-</dl><p>The breakpoint is not a processor breakpoint.  For more information about the breakpoint type, see <a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a>.</p>
+</dl><p>The breakpoint is not a processor breakpoint.  For more information about the breakpoint type, see <a href="debugger.gettype">GetType</a>.</p>
 
 <p> </p>
 
 <p>This method can also return other error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the information that is returned in <i>Size</i> and <i>AccessType</i>.</p>
-
-<p>For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the information that is returned in <i>Size</i> and <i>AccessType</i>.</p>
+<p>The <a href="debugger.getparameters">GetParameters</a> method also returns the information that is returned in <i>Size</i> and <i>AccessType</i>.</p>
 
 <p>For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>
 

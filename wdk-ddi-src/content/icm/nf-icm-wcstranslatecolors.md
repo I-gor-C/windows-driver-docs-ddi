@@ -84,7 +84,7 @@ BOOL WcsTranslateColors(
 ### -param <i>cdtInput</i> [in]
 
 <dd>
-<p>The input <a href="https://msdn.microsoft.com/library/windows/hardware/ff546006">COLORDATATYPE</a> color data type.</p>
+<p>The input <a href="..\icm\ne-icm-colordatatype.md">COLORDATATYPE</a> color data type.</p>
 </dd>
 
 ### -param <i>cbInput</i> [in]
@@ -108,7 +108,7 @@ BOOL WcsTranslateColors(
 ### -param <i>cdtOutput</i> [in]
 
 <dd>
-<p>The output <a href="https://msdn.microsoft.com/library/windows/hardware/ff546006">COLORDATATYPE</a> color data type.</p>
+<p>The output <a href="..\icm\ne-icm-colordatatype.md">COLORDATATYPE</a> color data type.</p>
 </dd>
 
 ### -param <i>cbOutput</i> [in]
@@ -125,8 +125,6 @@ BOOL WcsTranslateColors(
 </dl>
 
 ## -remarks
-<p>If the input and the output color data types are not compatible with the color transform, this function will fail.</p>
-
 <p>If the input and the output color data types are not compatible with the color transform, this function will fail.</p>
 
 ## -requirements
@@ -184,7 +182,7 @@ BOOL WcsTranslateColors(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546006">COLORDATATYPE</a>
+<a href="..\icm\ne-icm-colordatatype.md">COLORDATATYPE</a>
 </dt>
 </dl>
 <p> </p>

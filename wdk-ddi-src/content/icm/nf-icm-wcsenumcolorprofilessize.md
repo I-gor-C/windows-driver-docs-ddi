@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <code>WcsEnumColorProfilesSize</code> function returns the size, in bytes, of the buffer required by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563720">WcsEnumColorProfiles</a> function to enumerate color profiles.</p>
+<p>The <code>WcsEnumColorProfilesSize</code> function returns the size, in bytes, of the buffer required by the <a href="..\icm\nf-icm-wcsenumcolorprofiles.md">WcsEnumColorProfiles</a> function to enumerate color profiles.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ BOOL WcsEnumColorProfilesSize(
 ### -param <i>profileManagementScope</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563752">WCS_PROFILE_MANAGEMENT_SCOPE</a> value that specifies the scope of the profile management operation performed by this function.</p>
+<p>A <a href="..\icm\ne-icm-wcs-profile-management-scope.md">WCS_PROFILE_MANAGEMENT_SCOPE</a> value that specifies the scope of the profile management operation performed by this function.</p>
 </dd>
 
 ### -param <i>pEnumRecord</i> [in]
@@ -71,13 +71,11 @@ BOOL WcsEnumColorProfilesSize(
 ### -param <i>pdwSize</i> [out]
 
 <dd>
-<p>A pointer to a variable that receives the size of the buffer that is required to receive all enumerated profile names. This value is used by the <i>dwSize</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563720">WcsEnumColorProfiles</a> function.</p>
+<p>A pointer to a variable that receives the size of the buffer that is required to receive all enumerated profile names. This value is used by the <i>dwSize</i> parameter of the <a href="..\icm\nf-icm-wcsenumcolorprofiles.md">WcsEnumColorProfiles</a> function.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>This function is executable in Least-Privileged User Account (LUA) context.</p>
-
 <p>This function is executable in Least-Privileged User Account (LUA) context.</p>
 
 ## -requirements
@@ -135,10 +133,10 @@ BOOL WcsEnumColorProfilesSize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563720">WcsEnumColorProfiles</a>
+<a href="..\icm\nf-icm-wcsenumcolorprofiles.md">WcsEnumColorProfiles</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563752">WCS_PROFILE_MANAGEMENT_SCOPE</a>
+<a href="..\icm\ne-icm-wcs-profile-management-scope.md">WCS_PROFILE_MANAGEMENT_SCOPE</a>
 </dt>
 </dl>
 <p> </p>

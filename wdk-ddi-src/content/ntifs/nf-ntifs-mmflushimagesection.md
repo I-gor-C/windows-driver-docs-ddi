@@ -105,16 +105,6 @@ BOOLEAN MmFlushImageSection(
 
 <p>Before using <b>MmFlushImageSection</b>, file system writers are strongly encouraged to study the way this routine is used in the FASTFAT sample. </p>
 
-<p>A file system must call the <b>MmFlushImageSection</b> routine before deleting a file or opening a file for write access. </p>
-
-<p>Before deleting a file, the file system should call <b>MmFlushImageSection</b> from its IRP_MJ_SET_INFORMATION or IRP_MJ_CLEANUP dispatch routine, passing <b>MmFlushForDelete</b> for the <i>FlushType</i> parameter. </p>
-
-<p>When opening a file for write access, the file system should call <b>MmFlushImageSection</b> from its IRP_MJ_CREATE dispatch routine, passing <b>MmFlushForWrite</b> for the <i>FlushType</i> parameter. </p>
-
-<p>If there are no mapped views of the image section, <b>MmFlushImageSection</b> destroys the image section and returns any used pages to the free list. </p>
-
-<p>Before using <b>MmFlushImageSection</b>, file system writers are strongly encouraged to study the way this routine is used in the FASTFAT sample. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -170,7 +160,7 @@ BOOLEAN MmFlushImageSection(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539188">CcPurgeCacheSection</a>
+<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
 </dt>
 </dl>
 <p> </p>

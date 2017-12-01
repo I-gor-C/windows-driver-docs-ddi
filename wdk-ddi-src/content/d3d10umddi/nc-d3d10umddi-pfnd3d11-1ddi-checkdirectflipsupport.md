@@ -102,12 +102,6 @@ VOID APIENTRY* CheckDirectFlipSupport(D3D11_1)(
 
 <p>The user-mode driver might need to call the kernel-mode driver to perform these validations. To do this, call the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-escapecb.md">pfnEscapeCb</a> callback function and then call the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-gethandledata.md">DxgkCbGetHandleData</a> function to access the kernel-mode driver's resource allocation data.</p>
 
-<p>This function is called at least once before the DWM attempts to present to a Direct Flip swapchain. It is also called after each mode change occurs, or after the DWM re-creates its own swapchain for any reason.</p>
-
-<p>The user-mode driver should ensure that the managed primary allocations of the application and the DWM have the following compatible resources:</p>
-
-<p>The user-mode driver might need to call the kernel-mode driver to perform these validations. To do this, call the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-escapecb.md">pfnEscapeCb</a> callback function and then call the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-gethandledata.md">DxgkCbGetHandleData</a> function to access the kernel-mode driver's resource allocation data.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -151,10 +145,10 @@ VOID APIENTRY* CheckDirectFlipSupport(D3D11_1)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451044">D3D11_1_DDI_CHECK_DIRECT_FLIP_FLAGS</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1-ddi-check-direct-flip-flags.md">D3D11_1_DDI_CHECK_DIRECT_FLIP_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544364">D3DDDI_ALLOCATIONINFO</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-allocationinfo.md">D3DDDI_ALLOCATIONINFO</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-gethandledata.md">DxgkCbGetHandleData</a>

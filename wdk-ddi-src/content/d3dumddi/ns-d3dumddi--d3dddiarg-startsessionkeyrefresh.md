@@ -59,7 +59,7 @@ typedef struct _D3DDDIARG_STARTSESSIONKEYREFRESH {
 ### -field <b>hCryptoSession</b>
 
 <dd>
-<p>[in] A handle to the encryption session that is created in a call to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function. </p>
+<p>[in] A handle to the encryption session that is created in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a> function. </p>
 </dd>
 
 ### -field <b>pRandomNumber</b>
@@ -103,7 +103,7 @@ typedef struct _D3DDDIARG_STARTSESSIONKEYREFRESH {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a>
 </dt>
 </dl>
 <p> </p>

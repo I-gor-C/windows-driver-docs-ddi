@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_onclientunsubscribefromevents.htm
 old-project: sensors
 ms.assetid: f51f1091-232f-4e41-9cc2-9938870aeef8
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorDriver, OnClientUnsubscribeFromEvents, ISensorDriver::OnClientUnsubscribeFromEvents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545598">ISensorDriver::OnClientUnsubscribeFromEvents</a> method notifies the sensor driver that a client application no longer requests event notifications.</p>
+<p>The <a href="sensors.isensordriver_onclientunsubscribefromevents">ISensorDriver::OnClientUnsubscribeFromEvents</a> method notifies the sensor driver that a client application no longer requests event notifications.</p>
 
 
 ## -syntax
@@ -83,25 +83,7 @@ HRESULT OnClientUnsubscribeFromEvents(
 
 <p>The sensor class extension is shutting down.</p>
 
-<p>The cleanup work from a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545512">ISensorClassExtension::CleanupFile</a> has completed.</p>
-
-<p>You can use this call as a signal to update the reference count of applications requesting events for the specified sensor.</p>
-
-<p>For more information about how to use this method, see <a href="NULL">Filtering data</a>.</p>
-
-<p>The ClientData structure is defined as follows.</p>
-
-<p>The sensor class extension calls this method in the following instances:</p>
-
-<p>An application unsubscribes from events.</p>
-
-<p>An application closes normally.</p>
-
-<p>The user revokes permission for an application to access the device that contains the specified sensor.</p>
-
-<p>The sensor class extension is shutting down.</p>
-
-<p>The cleanup work from a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545512">ISensorClassExtension::CleanupFile</a> has completed.</p>
+<p>The cleanup work from a call to <a href="sensors.isensorclassextension_cleanupfile">ISensorClassExtension::CleanupFile</a> has completed.</p>
 
 <p>You can use this call as a signal to update the reference count of applications requesting events for the specified sensor.</p>
 

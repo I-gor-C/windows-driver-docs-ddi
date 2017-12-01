@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The PUBLISHERINFO structure is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553221">IPrintOemPS::GetInfo</a> method.</p>
+<p>The PUBLISHERINFO structure is used as an input parameter to the <a href="print.iprintoemps_getinfo">IPrintOemPS::GetInfo</a> method.</p>
 
 
 ## -syntax
@@ -96,7 +96,7 @@ typedef struct _PUBLISHERINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553221">IPrintOemPS::GetInfo</a>
+<a href="print.iprintoemps_getinfo">IPrintOemPS::GetInfo</a>
 </dt>
 </dl>
 <p> </p>

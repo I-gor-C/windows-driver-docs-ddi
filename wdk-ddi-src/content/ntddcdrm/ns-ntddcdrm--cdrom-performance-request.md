@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>CDROM_PERFORMANCE_REQUEST</b> structure is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/gg441242">IOCTL_CDROM_GET_PERFORMANCE</a> I/O control request and describes the performance data requested.</p>
+<p>The <b>CDROM_PERFORMANCE_REQUEST</b> structure is used as an input parameter to the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-performance.md">IOCTL_CDROM_GET_PERFORMANCE</a> I/O control request and describes the performance data requested.</p>
 
 
 ## -syntax
@@ -61,25 +61,25 @@ typedef struct _CDROM_PERFORMANCE_REQUEST {
 ### -field <b>RequestType</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/gg441234">CDROM_PERFORMANCE_REQUEST_TYPE</a> enumeration specifies the request type, <b>CdromPerformanceRequest</b>, or <b>CdromWriteSpeedRequest</b>.</p>
+<p>The <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-performance-request-type.md">CDROM_PERFORMANCE_REQUEST_TYPE</a> enumeration specifies the request type, <b>CdromPerformanceRequest</b>, or <b>CdromWriteSpeedRequest</b>.</p>
 </dd>
 
 ### -field <b>PerformanceType</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/gg441236">CDROM_PERFORMANCE_TYPE</a> enumeration specifies the type of performance data.</p>
+<p>The <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-performance-type.md">CDROM_PERFORMANCE_TYPE</a> enumeration specifies the type of performance data.</p>
 </dd>
 
 ### -field <b>Exceptions</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/gg441231">CDROM_PERFORMANCE_EXCEPTION_TYPE</a>    enumeration specifies the type of exception. </p>
+<p>The <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-performance-exception-type.md">CDROM_PERFORMANCE_EXCEPTION_TYPE</a>    enumeration specifies the type of exception. </p>
 </dd>
 
 ### -field <b>Tolerance</b>
 
 <dd>
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/gg441235">CDROM_PERFORMANCE_TOLERANCE_TYPE</a> enumeration specifies the performance tolerance for the nominal performance and the time tolerance (seek delay) for the exception list.</p>
+<p>The <a href="..\ntddcdrm\ne-ntddcdrm--cdrom-performance-tolerance-type.md">CDROM_PERFORMANCE_TOLERANCE_TYPE</a> enumeration specifies the performance tolerance for the nominal performance and the time tolerance (seek delay) for the exception list.</p>
 </dd>
 
 ### -field <b>StartingLba</b>
@@ -109,7 +109,7 @@ typedef struct _CDROM_PERFORMANCE_REQUEST {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/gg441242">IOCTL_CDROM_GET_PERFORMANCE</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
 </dt>
 </dl>
 <p> </p>

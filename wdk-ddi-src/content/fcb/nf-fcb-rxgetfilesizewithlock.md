@@ -78,12 +78,6 @@ VOID RxGetFileSizeWithLock(
 
 <p><b>RxGetFileSizeWithLock</b> acquires a lock on the FCB structure and then reads the file size, and then frees the lock. This lock assures that the file size is protected during this operation, since file size is a 64-bit quantity that requires at least two instructions to read on 32-bit processors. </p>
 
-<p>The <b>RxGetFileSizeWithLock</b> routine is not normally called by network mini-redirector drivers directly. RDBSS calls this routine internally when an I/O request packet is received for IRP_MJ_QUERY_INFORMATION, IRP_MJ_SET_INFORMATION, IRP_MJ_READ, or IRP_MJ_WRITE. These IRPs are normally received by RDBSS in response to a user-mode application requesting operations on a file. It is also possible for another kernel driver to issue such an IRP. </p>
-
-<p>These IRPs will normally result in a call to one of the <b>MRxQueryFileInfo, MRxQuerySdInfo</b>, <b>MRxLowIORead</b>, or <b>MRxLowIOWrite</b> routines provided by the network mini-redirector. </p>
-
-<p><b>RxGetFileSizeWithLock</b> acquires a lock on the FCB structure and then reads the file size, and then frees the lock. This lock assures that the file size is protected during this operation, since file size is a 64-bit quantity that requires at least two instructions to read on 32-bit processors. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -122,10 +116,10 @@ VOID RxGetFileSizeWithLock(
 <a href="ifsk.the_fcb_structure">The FCB Structure</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550770">MRxQueryFileInfo</a>
+<a href="ifsk.mrxqueryfileinfo">MRxQueryFileInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550776">MRxQuerySdInfo</a>
+<a href="ifsk.mrxquerysdinfo">MRxQuerySdInfo</a>
 </dt>
 </dl>
 <p> </p>

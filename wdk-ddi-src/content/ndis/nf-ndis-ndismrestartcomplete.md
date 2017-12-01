@@ -7,7 +7,7 @@ old-location: netvista\ndismrestartcomplete.htm
 old-project: netvista
 ms.assetid: f43137ed-2ea3-4b7c-8d61-bda76bcb5f34
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMRestartComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -92,7 +92,7 @@ VOID NdisMRestartComplete(
 <dd>
 <p>The driver indicates NDIS_STATUS_FAILURE if none of the preceding values applies. The driver
        should call the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff564663">NdisWriteErrorLogEntry</a> function
+       <a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a> function
        with parameters that specify the reason for the failure.</p>
 </dd>
 </dl>
@@ -103,22 +103,6 @@ VOID NdisMRestartComplete(
 <p>None</p>
 
 ## -remarks
-<p>The miniport adapter specified at 
-    <i>MiniportAdapterHandle</i> enters the 
-    <i>Restarting</i> state when NDIS calls the 
-    <a href="..\ndis\nc-ndis-miniport-restart.md">MiniportRestart</a> function.</p>
-
-<p>After the miniport driver successfully restarts the send and receive operations for the miniport
-    adapter, the driver must complete the pending restart operation. The pending restart operation is
-    complete after the driver calls 
-    <b>NdisMRestartComplete</b>. The miniport adapter is in the 
-    <i>Running</i> state after the restart operation is complete.</p>
-
-<p>A miniport driver can resume indicating received packets immediately after NDIS calls 
-    <a href="..\ndis\nc-ndis-miniport-restart.md">MiniportRestart</a> and before the driver calls 
-    <b>NdisMRestartComplete</b>. The driver should be ready to accept send requests after it completes the
-    restart request.</p>
-
 <p>The miniport adapter specified at 
     <i>MiniportAdapterHandle</i> enters the 
     <i>Restarting</i> state when NDIS calls the 
@@ -188,7 +172,7 @@ VOID NdisMRestartComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>
+<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -202,9 +186,9 @@ VOID NdisMRestartComplete(
 <a href="..\ndis\nc-ndis-miniport-restart.md">MiniportRestart</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564663">NdisWriteErrorLogEntry</a>
+<a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRestartComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRestartComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

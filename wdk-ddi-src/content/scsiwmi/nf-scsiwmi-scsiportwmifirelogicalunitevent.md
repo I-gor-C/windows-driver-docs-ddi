@@ -65,7 +65,7 @@ VOID ScsiPortWmiFireLogicalUnitEvent(
 ### -param <i>HwDeviceExtension</i> [in]
 
 <dd>
-<p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
+<p>Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
 ### -param <i>PathId</i> [in]
@@ -117,13 +117,7 @@ VOID ScsiPortWmiFireLogicalUnitEvent(
 ## -remarks
 <p>A miniport driver calls <b>ScsiPortWmiFireLogicalUnitEvent</b> to send an event associated with an adapter or logical unit to all data consumers that have requested notification of the event. </p>
 
-<p>The miniport driver sends an event only if it has been previously enabled by the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557338">HwScsiWmiFunctionControl</a> routine. </p>
-
-<p>The driver should write event data to the buffer pointed to by <i>EventData</i> at offset 0x40. The first 0x40 bytes are used by SCSI WMI. If no data is passed back with the event then <i>EventData</i> should be 0x40 bytes in length.</p>
-
-<p>A miniport driver calls <b>ScsiPortWmiFireLogicalUnitEvent</b> to send an event associated with an adapter or logical unit to all data consumers that have requested notification of the event. </p>
-
-<p>The miniport driver sends an event only if it has been previously enabled by the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557338">HwScsiWmiFunctionControl</a> routine. </p>
+<p>The miniport driver sends an event only if it has been previously enabled by the miniport driver's <a href="storage.hwscsiwmifunctioncontrol">HwScsiWmiFunctionControl</a> routine. </p>
 
 <p>The driver should write event data to the buffer pointed to by <i>EventData</i> at offset 0x40. The first 0x40 bytes are used by SCSI WMI. If no data is passed back with the event then <i>EventData</i> should be 0x40 bytes in length.</p>
 
@@ -154,7 +148,7 @@ VOID ScsiPortWmiFireLogicalUnitEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557338">HwScsiWmiFunctionControl</a>
+<a href="storage.hwscsiwmifunctioncontrol">HwScsiWmiFunctionControl</a>
 </dt>
 </dl>
 <p> </p>

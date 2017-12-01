@@ -7,7 +7,7 @@ old-location: audio\pcgettimeinterval.htm
 old-project: audio
 ms.assetid: 22afd9b9-9bed-45b0-afd8-1a5a34b9e6ad
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcGetTimeInterval
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,41 +65,11 @@ ULONGLONG PcGetTimeInterval(
 <p><b>PcGetTimeInterval</b> returns the current time minus <i>Since</i>.</p>
 
 ## -remarks
-<p>The value that is specified in parameter <i>Since</i> is measured in 100-nanosecond units. If <i>Since</i> is zero, the time returned is the number of 100-nanosecond ticks since January 1, 1601. The time units are the same as those used to specify the system time in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553068">KeQuerySystemTime</a> function.</p>
+<p>The value that is specified in parameter <i>Since</i> is measured in 100-nanosecond units. If <i>Since</i> is zero, the time returned is the number of 100-nanosecond ticks since January 1, 1601. The time units are the same as those used to specify the system time in the <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a> function.</p>
 
-<p>The following macros from portcls.h are useful for converting seconds, milliseconds, and microseconds to 100-millisecond units:</p><dl>
-<dd>
+<p>The following macros from portcls.h are useful for converting seconds, milliseconds, and microseconds to 100-millisecond units:</p>
+
 <p>GTI_SECONDS</p>
-</dd>
-<dd>
-<p>GTI_MILLISECONDS</p>
-</dd>
-<dd>
-<p>GTI_MICROSECONDS</p>
-</dd>
-</dl><p>GTI_SECONDS</p>
-
-<p>GTI_MILLISECONDS</p>
-
-<p>GTI_MICROSECONDS</p>
-
-<p>This function can be used for timing purposes by first saving the current time,</p>
-
-<p>and then checking to see whether the required interval has passed</p>
-
-<p>The value that is specified in parameter <i>Since</i> is measured in 100-nanosecond units. If <i>Since</i> is zero, the time returned is the number of 100-nanosecond ticks since January 1, 1601. The time units are the same as those used to specify the system time in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553068">KeQuerySystemTime</a> function.</p>
-
-<p>The following macros from portcls.h are useful for converting seconds, milliseconds, and microseconds to 100-millisecond units:</p><dl>
-<dd>
-<p>GTI_SECONDS</p>
-</dd>
-<dd>
-<p>GTI_MILLISECONDS</p>
-</dd>
-<dd>
-<p>GTI_MICROSECONDS</p>
-</dd>
-</dl><p>GTI_SECONDS</p>
 
 <p>GTI_MILLISECONDS</p>
 
@@ -162,9 +132,9 @@ ULONGLONG PcGetTimeInterval(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553068">KeQuerySystemTime</a>
+<a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcGetTimeInterval function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcGetTimeInterval function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

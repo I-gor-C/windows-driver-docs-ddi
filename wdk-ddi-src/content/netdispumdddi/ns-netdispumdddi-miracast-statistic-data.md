@@ -68,7 +68,7 @@ typedef struct {
 ### -field <b>StatisticType</b>
 
 <dd>
-<p>The type of statistics data from the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265480">MIRACAST_STATISTIC_TYPE</a> enumeration.</p>
+<p>The type of statistics data from the <a href="..\netdispumdddi\ne-netdispumdddi-miracast-statistic-type.md">MIRACAST_STATISTIC_TYPE</a> enumeration.</p>
 </dd>
 
 ### -field <b>EncodeComplete</b>
@@ -79,7 +79,7 @@ typedef struct {
 ### -field <b>ChunkInfo</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265473">MIRACAST_CHUNK_INFO</a> structure that provides info about an encode chunk that is identified by the <b>ChunkId</b> member.</p>
+<p>A <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-info.md">MIRACAST_CHUNK_INFO</a> structure that provides info about an encode chunk that is identified by the <b>ChunkId</b> member.</p>
 </dd>
 </dl>
 </dd>
@@ -92,7 +92,7 @@ typedef struct {
 ### -field <b>ChunkId</b>
 
 <dd>
-<p>The identifier for this chunk, of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn265472">MIRACAST_CHUNK_ID</a>.</p>
+<p>The identifier for this chunk, of type <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-id.md">MIRACAST_CHUNK_ID</a>.</p>
 </dd>
 </dl>
 </dd>
@@ -105,7 +105,7 @@ typedef struct {
 ### -field <b>Event</b>
 
 <dd>
-<p>The type of protocol event, given as a value of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265477">MIRACAST_PROTOCOL_EVENT</a> enumeration.</p>
+<p>The type of protocol event, given as a value of the <a href="..\netdispumdddi\ne-netdispumdddi-miracast-protocol-event.md">MIRACAST_PROTOCOL_EVENT</a> enumeration.</p>
 </dd>
 </dl>
 </dd>
@@ -147,16 +147,16 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265472">MIRACAST_CHUNK_ID</a>
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-id.md">MIRACAST_CHUNK_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265473">MIRACAST_CHUNK_INFO</a>
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-info.md">MIRACAST_CHUNK_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265477">MIRACAST_PROTOCOL_EVENT</a>
+<a href="..\netdispumdddi\ne-netdispumdddi-miracast-protocol-event.md">MIRACAST_PROTOCOL_EVENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265480">MIRACAST_STATISTIC_TYPE</a>
+<a href="..\netdispumdddi\ne-netdispumdddi-miracast-statistic-type.md">MIRACAST_STATISTIC_TYPE</a>
 </dt>
 </dl>
 <p> </p>

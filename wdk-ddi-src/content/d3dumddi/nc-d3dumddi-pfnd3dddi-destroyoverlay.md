@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY DestroyOverlay(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543042">D3DDDIARG_DESTROYOVERLAY</a> structure that contains the overlay handle.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-destroyoverlay.md">D3DDDIARG_DESTROYOVERLAY</a> structure that contains the overlay handle.</p>
 </dd>
 </dl>
 
@@ -75,8 +75,6 @@ __checkReturn HRESULT APIENTRY DestroyOverlay(
 <p><b>DestroyOverlay</b> returns S_OK or an appropriate error result if the overlay hardware is not disabled.</p>
 
 ## -remarks
-<p>Overlays are independent from the resources that are displayed by using the overlays.</p>
-
 <p>Overlays are independent from the resources that are displayed by using the overlays.</p>
 
 ## -requirements
@@ -114,10 +112,10 @@ __checkReturn HRESULT APIENTRY DestroyOverlay(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543042">D3DDDIARG_DESTROYOVERLAY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-destroyoverlay.md">D3DDDIARG_DESTROYOVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

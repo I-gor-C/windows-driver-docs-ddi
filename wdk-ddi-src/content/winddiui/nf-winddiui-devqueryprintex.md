@@ -58,7 +58,7 @@ BOOL DevQueryPrintEx(
 ### -param <i>pDQPInfo</i> [in, out]
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547580">DEVQUERYPRINT_INFO</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="..\winddiui\ns-winddiui--devqueryprint-info.md">DEVQUERYPRINT_INFO</a> structure.</p>
 </dd>
 </dl>
 
@@ -68,15 +68,7 @@ BOOL DevQueryPrintEx(
 ## -remarks
 <p>Printer interface DLLs must define a <b>DevQueryPrintEx</b> function. The function is called by the print spooler if the <b>Hold Mismatched Documents</b> option is checked on the <b>Advanced</b> page of the printer's property sheet. If the function returns <b>TRUE</b>, the spooler queues the print job for printing. Otherwise, the job is held, under the assumption that the printer will eventually be reconfigured so the job can print.</p>
 
-<p>The received <a href="https://msdn.microsoft.com/library/windows/hardware/ff547580">DEVQUERYPRINT_INFO</a> structure points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure describing the printer characteristics required by the print job. The <b>DevQueryPrintEx</b> function should first verify that the size and version members of the received DEVMODEW structure are compatible with the driver. Then it should determine if the supplied DEVMODEW contents are compatible with the current printer configuration.</p>
-
-<p>If the job can be printed, the function should just return <b>TRUE</b>. If the job should be held until later, the function should return <b>FALSE</b> after supplying a displayable text string (in the buffer pointed to by the DEVQUERYPRINT_INFO structure's <b>pszErrorStr</b> member) describing the reason the job cannot be printed.</p>
-
-<p>Displayable text strings should be defined as string resources in a resource file.</p>
-
-<p>Printer interface DLLs must define a <b>DevQueryPrintEx</b> function. The function is called by the print spooler if the <b>Hold Mismatched Documents</b> option is checked on the <b>Advanced</b> page of the printer's property sheet. If the function returns <b>TRUE</b>, the spooler queues the print job for printing. Otherwise, the job is held, under the assumption that the printer will eventually be reconfigured so the job can print.</p>
-
-<p>The received <a href="https://msdn.microsoft.com/library/windows/hardware/ff547580">DEVQUERYPRINT_INFO</a> structure points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure describing the printer characteristics required by the print job. The <b>DevQueryPrintEx</b> function should first verify that the size and version members of the received DEVMODEW structure are compatible with the driver. Then it should determine if the supplied DEVMODEW contents are compatible with the current printer configuration.</p>
+<p>The received <a href="..\winddiui\ns-winddiui--devqueryprint-info.md">DEVQUERYPRINT_INFO</a> structure points to a <a href="display.devmodew">DEVMODEW</a> structure describing the printer characteristics required by the print job. The <b>DevQueryPrintEx</b> function should first verify that the size and version members of the received DEVMODEW structure are compatible with the driver. Then it should determine if the supplied DEVMODEW contents are compatible with the current printer configuration.</p>
 
 <p>If the job can be printed, the function should just return <b>TRUE</b>. If the job should be held until later, the function should return <b>FALSE</b> after supplying a displayable text string (in the buffer pointed to by the DEVQUERYPRINT_INFO structure's <b>pszErrorStr</b> member) describing the reason the job cannot be printed.</p>
 

@@ -137,7 +137,7 @@ typedef enum _DXVA_DeinterlaceTech {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563939">DXVA_DeinterlaceCaps</a>
+<a href="..\dxva\ns-dxva--dxva-deinterlacecaps.md">DXVA_DeinterlaceCaps</a>
 </dt>
 </dl>
 <p> </p>

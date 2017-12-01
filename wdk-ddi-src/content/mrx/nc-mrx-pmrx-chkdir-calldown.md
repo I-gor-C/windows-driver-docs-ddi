@@ -81,8 +81,6 @@ NTSTATUS MRxIsValidDirectory(
 ## -remarks
 <p><i>MRxIsValidDirectory</i> is called as part of create or open request processing for the remaining name string beyond the V_NET_ROOT structure, if the <b>IrpSp-&gt;Parameters.Create.Options</b> member has the FILE_CREATE_TREE_CONNECTION bit set on. </p>
 
-<p><i>MRxIsValidDirectory</i> is called as part of create or open request processing for the remaining name string beyond the V_NET_ROOT structure, if the <b>IrpSp-&gt;Parameters.Create.Options</b> member has the FILE_CREATE_TREE_CONNECTION bit set on. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -110,40 +108,40 @@ NTSTATUS MRxIsValidDirectory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550755">MRxQueryDirectory</a>
+<a href="ifsk.mrxquerydirectory">MRxQueryDirectory</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550759">MRxQueryEaInfo</a>
+<a href="ifsk.mrxqueryeainfo">MRxQueryEaInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550770">MRxQueryFileInfo</a>
+<a href="ifsk.mrxqueryfileinfo">MRxQueryFileInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550773">MRxQueryQuotaInfo</a>
+<a href="ifsk.mrxqueryquotainfo">MRxQueryQuotaInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550776">MRxQuerySdInfo</a>
+<a href="ifsk.mrxquerysdinfo">MRxQuerySdInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550782">MRxQueryVolumeInfo</a>
+<a href="ifsk.mrxqueryvolumeinfo">MRxQueryVolumeInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550786">MRxSetEaInfo</a>
+<a href="ifsk.mrxseteainfo">MRxSetEaInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550790">MRxSetFileInfo</a>
+<a href="ifsk.mrxsetfileinfo">MRxSetFileInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550796">MRxSetFileInfoAtCleanup</a>
+<a href="ifsk.mrxsetfileinfoatcleanup">MRxSetFileInfoAtCleanup</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550800">MRxSetQuotaInfo</a>
+<a href="ifsk.mrxsetquotainfo">MRxSetQuotaInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550805">MRxSetSdInfo</a>
+<a href="ifsk.mrxsetsdinfo">MRxSetSdInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550810">MRxSetVolumeInfo</a>
+<a href="ifsk.mrxsetvolumeinfo">MRxSetVolumeInfo</a>
 </dt>
 </dl>
 <p> </p>

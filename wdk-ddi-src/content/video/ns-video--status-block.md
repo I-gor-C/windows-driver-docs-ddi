@@ -164,7 +164,7 @@ typedef struct _STATUS_BLOCK {
 <a href="..\video\nc-video-pvideo-hw-start-io.md">HwVidStartIO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570547">VIDEO_REQUEST_PACKET</a>
+<a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a>
 </dt>
 </dl>
 <p> </p>

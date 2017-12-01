@@ -86,7 +86,7 @@ HRESULT _stdcall wiasCreatePropContext(
 ### -param <i>pContext</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure that contains a property context.</p>
+<p>Pointer to a <a href="..\wiamindr_lh\ns-wiamindr-lh--wia-property-context.md">WIA_PROPERTY_CONTEXT</a> structure that contains a property context.</p>
 </dd>
 </dl>
 
@@ -94,121 +94,13 @@ HRESULT _stdcall wiasCreatePropContext(
 <p>On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Microsoft Windows SDK documentation).</p>
 
 ## -remarks
-<p>This function allocates a property context and fills in its values. This function is generally used in <a href="https://msdn.microsoft.com/library/windows/hardware/ff549454">wiasValidateItemProperties</a> where the properties written by the application are validated.</p>
+<p>This function allocates a property context and fills in its values. This function is generally used in <a href="..\wiamdef\nf-wiamdef-wiasvalidateitemproperties.md">wiasValidateItemProperties</a> where the properties written by the application are validated.</p>
 
-<p>Entries in the property context are identifiers for properties that either have dependents, or are themselves dependent on other properties. A context is used to mark which properties are being changed. When the property context is no longer needed, it should be freed by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549195">wiasFreePropContext</a>.</p>
+<p>Entries in the property context are identifiers for properties that either have dependents, or are themselves dependent on other properties. A context is used to mark which properties are being changed. When the property context is no longer needed, it should be freed by a call to <a href="..\wiamdef\nf-wiamdef-wiasfreepropcontext.md">wiasFreePropContext</a>.</p>
 
-<p>The properties to which an application writes are specified by the <i>pPropSpec </i>array. The properties that were changed by the application, as well as any properties dependent on the changed properties, are specified by the <i>pProps</i> array. Only properties that have been changed by the application (and any dependent properties) can be specified in <i>pProps</i>. The PROPSPEC structure is defined in the Windows SDK documentation.</p><dl>
-<dd>
+<p>The properties to which an application writes are specified by the <i>pPropSpec </i>array. The properties that were changed by the application, as well as any properties dependent on the changed properties, are specified by the <i>pProps</i> array. Only properties that have been changed by the application (and any dependent properties) can be specified in <i>pProps</i>. The PROPSPEC structure is defined in the Windows SDK documentation.</p>
+
 <p>WIA_IPA_DATATYPE</p>
-</dd>
-<dd>
-<p>WIA_IPA_DEPTH</p>
-</dd>
-<dd>
-<p>WIA_IPS_XRES</p>
-</dd>
-<dd>
-<p>WIA_IPS_XPOS</p>
-</dd>
-<dd>
-<p>WIA_IPS_XEXTENT</p>
-</dd>
-<dd>
-<p>WIA_IPA_PIXELS_PER_LINE</p>
-</dd>
-<dd>
-<p>WIA_IPS_YRES</p>
-</dd>
-<dd>
-<p>WIA_IPS_YPOS</p>
-</dd>
-<dd>
-<p>WIA_IPS_YEXTENT</p>
-</dd>
-<dd>
-<p>WIA_IPA_NUMBER_OF_LINES</p>
-</dd>
-<dd>
-<p>WIA_IPS_CUR_INTENT</p>
-</dd>
-<dd>
-<p>WIA_IPA_TYMED</p>
-</dd>
-<dd>
-<p>WIA_IPA_FORMAT</p>
-</dd>
-</dl><p>WIA_IPA_DATATYPE</p>
-
-<p>WIA_IPA_DEPTH</p>
-
-<p>WIA_IPS_XRES</p>
-
-<p>WIA_IPS_XPOS</p>
-
-<p>WIA_IPS_XEXTENT</p>
-
-<p>WIA_IPA_PIXELS_PER_LINE</p>
-
-<p>WIA_IPS_YRES</p>
-
-<p>WIA_IPS_YPOS</p>
-
-<p>WIA_IPS_YEXTENT</p>
-
-<p>WIA_IPA_NUMBER_OF_LINES</p>
-
-<p>WIA_IPS_CUR_INTENT</p>
-
-<p>WIA_IPA_TYMED</p>
-
-<p>WIA_IPA_FORMAT</p>
-
-<p>This function allocates a property context and fills in its values. This function is generally used in <a href="https://msdn.microsoft.com/library/windows/hardware/ff549454">wiasValidateItemProperties</a> where the properties written by the application are validated.</p>
-
-<p>Entries in the property context are identifiers for properties that either have dependents, or are themselves dependent on other properties. A context is used to mark which properties are being changed. When the property context is no longer needed, it should be freed by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549195">wiasFreePropContext</a>.</p>
-
-<p>The properties to which an application writes are specified by the <i>pPropSpec </i>array. The properties that were changed by the application, as well as any properties dependent on the changed properties, are specified by the <i>pProps</i> array. Only properties that have been changed by the application (and any dependent properties) can be specified in <i>pProps</i>. The PROPSPEC structure is defined in the Windows SDK documentation.</p><dl>
-<dd>
-<p>WIA_IPA_DATATYPE</p>
-</dd>
-<dd>
-<p>WIA_IPA_DEPTH</p>
-</dd>
-<dd>
-<p>WIA_IPS_XRES</p>
-</dd>
-<dd>
-<p>WIA_IPS_XPOS</p>
-</dd>
-<dd>
-<p>WIA_IPS_XEXTENT</p>
-</dd>
-<dd>
-<p>WIA_IPA_PIXELS_PER_LINE</p>
-</dd>
-<dd>
-<p>WIA_IPS_YRES</p>
-</dd>
-<dd>
-<p>WIA_IPS_YPOS</p>
-</dd>
-<dd>
-<p>WIA_IPS_YEXTENT</p>
-</dd>
-<dd>
-<p>WIA_IPA_NUMBER_OF_LINES</p>
-</dd>
-<dd>
-<p>WIA_IPS_CUR_INTENT</p>
-</dd>
-<dd>
-<p>WIA_IPA_TYMED</p>
-</dd>
-<dd>
-<p>WIA_IPA_FORMAT</p>
-</dd>
-</dl><p>WIA_IPA_DATATYPE</p>
 
 <p>WIA_IPA_DEPTH</p>
 
@@ -289,13 +181,13 @@ HRESULT _stdcall wiasCreatePropContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a>
+<a href="..\wiamindr_lh\ns-wiamindr-lh--wia-property-context.md">WIA_PROPERTY_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549454">wiasValidateItemProperties</a>
+<a href="..\wiamdef\nf-wiamdef-wiasvalidateitemproperties.md">wiasValidateItemProperties</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549195">wiasFreePropContext</a>
+<a href="..\wiamdef\nf-wiamdef-wiasfreepropcontext.md">wiasFreePropContext</a>
 </dt>
 </dl>
 <p> </p>

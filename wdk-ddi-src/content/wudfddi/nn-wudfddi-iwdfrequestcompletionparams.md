@@ -7,7 +7,7 @@ old-location: wdf\iwdfrequestcompletionparams.htm
 old-project: wdf
 ms.assetid: f297c6e0-927a-4fb3-bab4-00fdd610a684
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560296">IWDFRequestCompletionParams::GetCompletedRequestType</a>
+<a href="wdf.iwdfrequestcompletionparams_getcompletedrequesttype">IWDFRequestCompletionParams::GetCompletedRequestType</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfrequestcompletionparams_getcompletedrequesttype">GetCompletedRequestType</a> method retrieves the type of operation that the request to be completed contains.</p>
@@ -73,7 +73,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560301">IWDFRequestCompletionParams::GetCompletionStatus</a>
+<a href="wdf.iwdfrequestcompletionparams_getcompletionstatus">IWDFRequestCompletionParams::GetCompletionStatus</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfrequestcompletionparams_getcompletionstatus">GetCompletionStatus</a> method retrieves the completion status of an I/O request.</p>
@@ -81,7 +81,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560305">IWDFRequestCompletionParams::GetInformation</a>
+<a href="wdf.iwdfrequestcompletionparams_getinformation">IWDFRequestCompletionParams::GetInformation</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfrequestcompletionparams_getinformation">GetInformation</a> method retrieves information that is associated with the completion of an I/O request.</p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Provides info about the next Miracast encode chunk that was reported to the Microsoft DirectX graphics kernel subsystem when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561136">DXGK_INTERRUPT_TYPE</a> interrupt type is  <b>DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE</b>.<p>The data type of this function is <b>PFN_GET_NEXT_CHUNK_DATA</b>.</p>
+<p>Provides info about the next Miracast encode chunk that was reported to the Microsoft DirectX graphics kernel subsystem when the <a href="..\d3dkmddi\ne-d3dkmddi--dxgk-interrupt-type.md">DXGK_INTERRUPT_TYPE</a> interrupt type is  <b>DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE</b>.<p>The data type of this function is <b>PFN_GET_NEXT_CHUNK_DATA</b>.</p>
 </p>
 <p>The data type of this function is <b>PFN_GET_NEXT_CHUNK_DATA</b>.</p>
 
@@ -103,7 +103,7 @@ NTSTATUS GetNextChunkData(
 ### -param <i>pChunkDataBuffer</i> [out]
 
 <dd>
-<p>A pointer to a buffer of type  <a href="https://msdn.microsoft.com/library/windows/hardware/dn265471">MIRACAST_CHUNK_DATA</a> that the operating system provides to store information about the next encode chunk. This parameter is provided only if the call to <b>GetNextChunkData</b> is successful.</p>
+<p>A pointer to a buffer of type  <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-data.md">MIRACAST_CHUNK_DATA</a> that the operating system provides to store information about the next encode chunk. This parameter is provided only if the call to <b>GetNextChunkData</b> is successful.</p>
 </dd>
 
 ### -param <i>pOutstandingChunksToProcess</i> [out]
@@ -155,17 +155,9 @@ NTSTATUS GetNextChunkData(
 <p><b>STATUS_WAIT_0</b> has the same value as <b>STATUS_SUCCESS</b>, so check *<i>pChunkDataBufferSize</i> to determine if the return value was <b>STATUS_WAIT_0</b> (a user event signaled the event) or <b>STATUS_SUCCESS</b> (a new chunk is ready).</p>
 
 ## -remarks
-<p>This function is optional. The user-mode display driver should only call it if the display miniport driver responds to  interrupts from the GPU when the GPU completes the encoding of a chunk by passing data in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265471">MIRACAST_CHUNK_DATA</a>.<b>PrivateDriverData</b> member at that interrupt time.</p>
+<p>This function is optional. The user-mode display driver should only call it if the display miniport driver responds to  interrupts from the GPU when the GPU completes the encoding of a chunk by passing data in the <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-data.md">MIRACAST_CHUNK_DATA</a>.<b>PrivateDriverData</b> member at that interrupt time.</p>
 
-<p>The user-mode display driver can use the sizes of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265471">MIRACAST_CHUNK_DATA</a> structure and the <b>MIRACAST_CHUNK_DATA</b>.<b>PrivateDriverData</b> member to compute the size of a chunk and hence how to move from chunk to chunk in the returned buffer.</p>
-
-<p>In a call to this function, as many available packets as can fit will be placed sequentially in the supplied buffer. This code snippet shows how to calculate the size of each packet:</p>
-
-<p>Only one thread should call this function at a time. Otherwise it's unpredictable which call would receive chunk info and which call would fail.</p>
-
-<p>This function is optional. The user-mode display driver should only call it if the display miniport driver responds to  interrupts from the GPU when the GPU completes the encoding of a chunk by passing data in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265471">MIRACAST_CHUNK_DATA</a>.<b>PrivateDriverData</b> member at that interrupt time.</p>
-
-<p>The user-mode display driver can use the sizes of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265471">MIRACAST_CHUNK_DATA</a> structure and the <b>MIRACAST_CHUNK_DATA</b>.<b>PrivateDriverData</b> member to compute the size of a chunk and hence how to move from chunk to chunk in the returned buffer.</p>
+<p>The user-mode display driver can use the sizes of the <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-data.md">MIRACAST_CHUNK_DATA</a> structure and the <b>MIRACAST_CHUNK_DATA</b>.<b>PrivateDriverData</b> member to compute the size of a chunk and hence how to move from chunk to chunk in the returned buffer.</p>
 
 <p>In a call to this function, as many available packets as can fit will be placed sequentially in the supplied buffer. This code snippet shows how to calculate the size of each packet:</p>
 
@@ -217,10 +209,10 @@ NTSTATUS GetNextChunkData(
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn-create-miracast-context.md">CreateMiracastContext</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561136">DXGK_INTERRUPT_TYPE</a>
+<a href="..\d3dkmddi\ne-d3dkmddi--dxgk-interrupt-type.md">DXGK_INTERRUPT_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265471">MIRACAST_CHUNK_DATA</a>
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-data.md">MIRACAST_CHUNK_DATA</a>
 </dt>
 </dl>
 <p> </p>

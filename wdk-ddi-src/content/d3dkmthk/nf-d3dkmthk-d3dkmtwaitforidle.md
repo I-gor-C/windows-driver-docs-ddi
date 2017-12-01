@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTWaitForIdle(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548423">D3DKMT_WAITFORIDLE</a> structure that specifies the display device to wait for. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-waitforidle.md">D3DKMT_WAITFORIDLE</a> structure that specifies the display device to wait for. </p>
 </dd>
 </dl>
 
@@ -130,7 +130,7 @@ NTSTATUS APIENTRY D3DKMTWaitForIdle(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548423">D3DKMT_WAITFORIDLE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-waitforidle.md">D3DKMT_WAITFORIDLE</a>
 </dt>
 </dl>
 <p> </p>

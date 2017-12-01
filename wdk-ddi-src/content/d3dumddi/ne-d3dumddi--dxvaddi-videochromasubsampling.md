@@ -96,7 +96,7 @@ typedef enum _DXVADDI_VIDEOCHROMASUBSAMPLING {
 ### -field <a id="DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes"></a><a id="dxvaddi_videochromasubsampling_vertically_alignedchromaplanes"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLING_VERTICALLY_ALIGNEDCHROMAPLANES"></a><b>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b>
 
 <dd>
-<p>The Pb and Pr (or Cb and Cr) planes have the same phase alignment. This value can be set only to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a> structure if the data is vertically cosited.</p>
+<p>The Pb and Pr (or Cb and Cr) planes have the same phase alignment. This value can be set only to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure if the data is vertically cosited.</p>
 </dd>
 
 ### -field <a id="DXVADDI_VideoChromaSubsampling_MPEG2"></a><a id="dxvaddi_videochromasubsampling_mpeg2"></a><a id="DXVADDI_VIDEOCHROMASUBSAMPLING_MPEG2"></a><b>DXVADDI_VideoChromaSubsampling_MPEG2</b>
@@ -125,15 +125,7 @@ typedef enum _DXVADDI_VIDEOCHROMASUBSAMPLING {
 </dl>
 
 ## -remarks
-<p>A bitwise OR of the values of DXVADDI_VIDEOCHROMASUBSAMPLING can be used to create a value in the <b>VideoChromaSubsampling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a> structure.</p>
-
-<p>Cosite variations indicate that the chroma samples are aligned with the luma samples. Typically, 4:2:0 data with chroma is aligned in one or more directions with the luma data. Note that 4:4:4, 4:2:2, and 4:1:1 data are always cosited in both directions. </p>
-
-<p>A bitwise OR of the values of DXVADDI_VIDEOCHROMASUBSAMPLING can be used to create a value in the <b>VideoChromaSubsampling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a> structure.</p>
-
-<p>Cosite variations indicate that the chroma samples are aligned with the luma samples. Typically, 4:2:0 data with chroma is aligned in one or more directions with the luma data. Note that 4:4:4, 4:2:2, and 4:1:1 data are always cosited in both directions. </p>
-
-<p>A bitwise OR of the values of DXVADDI_VIDEOCHROMASUBSAMPLING can be used to create a value in the <b>VideoChromaSubsampling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a> structure.</p>
+<p>A bitwise OR of the values of DXVADDI_VIDEOCHROMASUBSAMPLING can be used to create a value in the <b>VideoChromaSubsampling</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure.</p>
 
 <p>Cosite variations indicate that the chroma samples are aligned with the luma samples. Typically, 4:2:0 data with chroma is aligned in one or more directions with the luma data. Note that 4:4:4, 4:2:2, and 4:1:1 data are always cosited in both directions. </p>
 
@@ -162,7 +154,7 @@ typedef enum _DXVADDI_VIDEOCHROMASUBSAMPLING {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
 </dt>
 </dl>
 <p> </p>

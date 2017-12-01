@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The ClearCache_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552442">ClearCache</a> method.</p>
+<p>The ClearCache_OUT structure holds the output data for the <a href="storage.clearcache">ClearCache</a> method.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _ClearCache_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output from <b>ClearCache</b>, the status of the <b>ClearCache</b> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.</p>
+<p>On output from <b>ClearCache</b>, the status of the <b>ClearCache</b> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 </dd>
 </dl>
 
@@ -81,13 +81,13 @@ typedef struct _ClearCache_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552442">ClearCache</a>
+<a href="storage.clearcache">ClearCache</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563135">MSiSCSI_SecurityConfigOperations WMI Class</a>
+<a href="storage.msiscsi_securityconfigoperations_wmi_class">MSiSCSI_SecurityConfigOperations WMI Class</a>
 </dt>
 </dl>
 <p> </p>

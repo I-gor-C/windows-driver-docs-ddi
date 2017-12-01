@@ -7,7 +7,7 @@ old-location: wdf\iwdfiotargetstatemanagement.htm
 old-project: wdf
 ms.assetid: 6870b6fa-1a90-4a7a-935a-4ce8eda940a1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,11 +51,11 @@ req.product: Windows 10 or later.
 
 <p>The <a href="wdf.iwdfiotargetstatemanagement_getstate">GetState</a> method returns the current state of a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439492">Remove</a> method removes a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
+<p>The <a href="wdf.iwdfiotargetstatemanagement_remove">Remove</a> method removes a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh973223">Start</a> method starts sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
+<p>The <a href="wdf.iwdfiotargetstatemanagement_start">Start</a> method starts sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn927275">Stop</a> method stops sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
+<p>The <a href="wdf.iwdfiotargetstatemanagement_stop">Stop</a> method stops sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
 
 <p> </p>
 
@@ -67,7 +67,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559202">IWDFIoTargetStateManagement::GetState</a>
+<a href="wdf.iwdfiotargetstatemanagement_getstate">IWDFIoTargetStateManagement::GetState</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiotargetstatemanagement_getstate">GetState</a> method returns the current state of a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
@@ -75,41 +75,39 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559208">IWDFIoTargetStateManagement::Remove</a>
+<a href="wdf.iwdfiotargetstatemanagement_remove">IWDFIoTargetStateManagement::Remove</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439492">Remove</a> method removes a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
+<p>The <a href="wdf.iwdfiotargetstatemanagement_remove">Remove</a> method removes a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559213">IWDFIoTargetStateManagement::Start</a>
+<a href="wdf.iwdfiotargetstatemanagement_start">IWDFIoTargetStateManagement::Start</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh973223">Start</a> method starts sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
+<p>The <a href="wdf.iwdfiotargetstatemanagement_start">Start</a> method starts sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559217">IWDFIoTargetStateManagement::Stop</a>
+<a href="wdf.iwdfiotargetstatemanagement_stop">IWDFIoTargetStateManagement::Stop</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn927275">Stop</a> method stops sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
+<p>The <a href="wdf.iwdfiotargetstatemanagement_stop">Stop</a> method stops sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
 </td>
 </tr>
 </table><p>The <a href="wdf.iwdfiotargetstatemanagement_getstate">GetState</a> method returns the current state of a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439492">Remove</a> method removes a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
+<p>The <a href="wdf.iwdfiotargetstatemanagement_remove">Remove</a> method removes a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh973223">Start</a> method starts sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
+<p>The <a href="wdf.iwdfiotargetstatemanagement_start">Start</a> method starts sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn927275">Stop</a> method stops sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
+<p>The <a href="wdf.iwdfiotargetstatemanagement_stop">Stop</a> method stops sending queued requests to a <a href="wdf.general_i_o_targets_in_umdf">local  I/O target</a>.</p>
 
 <p> </p>
 
 ## -remarks
-<p>Drivers obtain the <b>IWDFIoTargetStateManagement</b> interface by calling <b>IWDFIoTarget::QueryInterface</b>, <b>IWDFUsbTargetPipe::QueryInterface</b>, or <b>IWDFUsbTargetPipe2::QueryInterface</b>.</p>
-
 <p>Drivers obtain the <b>IWDFIoTargetStateManagement</b> interface by calling <b>IWDFIoTarget::QueryInterface</b>, <b>IWDFUsbTargetPipe::QueryInterface</b>, or <b>IWDFUsbTargetPipe2::QueryInterface</b>.</p>
 
 ## -requirements

@@ -72,20 +72,20 @@ typedef struct _INVOC {
 ### -field <a id="For_.ufm_files_"></a><a id="for_.ufm_files_"></a><a id="FOR_.UFM_FILES_"></a>For .ufm files:
 
 <dd>
-<p>Specifies the byte offset from the beginning of the .ufm file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff562872">UNIDRVINFO</a> structure to beginning of the command string.</p>
+<p>Specifies the byte offset from the beginning of the .ufm file's <a href="..\prntfont\ns-prntfont--unidrvinfo.md">UNIDRVINFO</a> structure to beginning of the command string.</p>
 </dd>
 
 ### -field <a id="For_.gtt_files_"></a><a id="for_.gtt_files_"></a><a id="FOR_.GTT_FILES_"></a>For .gtt files:
 
 <dd>
-<p>Specifies the byte offset from the beginning of the .gtt file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a> structure to beginning of the command string.</p>
+<p>Specifies the byte offset from the beginning of the .gtt file's <a href="..\prntfont\ns-prntfont--uni-codepageinfo.md">UNI_CODEPAGEINFO</a> structure to beginning of the command string.</p>
 </dd>
 </dl>
 </dd>
 </dl>
 
 ## -remarks
-<p>INVOC structures are used within <a href="https://msdn.microsoft.com/library/windows/hardware/ff562872">UNIDRVINFO</a> structures.</p>
+<p>INVOC structures are used within <a href="..\prntfont\ns-prntfont--unidrvinfo.md">UNIDRVINFO</a> structures.</p>
 
 ## -requirements
 <table>
@@ -104,7 +104,7 @@ typedef struct _INVOC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562872">UNIDRVINFO</a>
+<a href="..\prntfont\ns-prntfont--unidrvinfo.md">UNIDRVINFO</a>
 </dt>
 </dl>
 <p> </p>

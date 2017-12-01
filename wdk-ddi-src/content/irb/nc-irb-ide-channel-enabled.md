@@ -72,7 +72,7 @@ ATA_CHANNEL_STATE AtaControllerChannelEnabled(
 </dl>
 
 ## -returns
-<p><b><i>AtaControllerChannelEnabled</i></b> returns an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551308">ATA_CHANNEL_STATE</a>, which can have any of the following values:</p><dl>
+<p><b><i>AtaControllerChannelEnabled</i></b> returns an enumerator value of type <a href="..\irb\ne-irb-ata-channel-state.md">ATA_CHANNEL_STATE</a>, which can have any of the following values:</p><dl>
 <dt><b>ChannelStateEnabled</b></dt>
 </dl><p>Indicates that the specified channel is enabled. </p><dl>
 <dt><b>ChannelStateDisabled</b></dt>
@@ -87,25 +87,13 @@ ATA_CHANNEL_STATE AtaControllerChannelEnabled(
 
 <p>The port driver calls the miniport driver's <b><i>AtaAdapterControl</i></b> routine with control action <b>IdeStart</b>. </p>
 
-<p>While the miniport driver processes the <b><i>AtaAdapterControl</i></b> routine with control action <b>IdeStart</b>, it initializes the <b>NumberOfChannels</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559036">IDE_CONTROLLER_CONFIGURATION</a> to indicate the number of channels that are enabled. </p>
+<p>While the miniport driver processes the <b><i>AtaAdapterControl</i></b> routine with control action <b>IdeStart</b>, it initializes the <b>NumberOfChannels</b> member of <a href="..\irb\ns-irb--ide-controller-configuration.md">IDE_CONTROLLER_CONFIGURATION</a> to indicate the number of channels that are enabled. </p>
 
 <p>After the <b><i>AtaAdapterControl</i></b> routine returns, the port driver calls <b>AtaControllerChannelEnabled</b> one time for every NumberOfChannels specified in the ControllerConfiguration structure that are returned by <b><i>AtaAdapterControl</i></b>.</p>
 
 <p>This routine should not have steps that are critical to the operation of the controller. There are situations, such as during a crashdump operation, where this function will not be called at all.  Additionally, this function is not called when a channel is restarted, only when PCIIDEx responds to a QueryDeviceRelations IRP.</p>
 
-<p><b>AtaControllerChannelEnabled</b> is an optional routine. If the miniport driver does not implement this routine, the port driver will load a default handler. If the port driver loads a default handler, all channels that are specified by NumberOfChannels in the ControllerConfiguration structure that is returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550140">AtaAdapterControl</a> when handling an IdeStart action are assumed to be enabled. This routine enables PCIIDEx to load the ATA port driver for only the channels enabled. Doing this allows for sparse channel support (for example, channel 0, channel 1, channel 3, channel 4, and channel 6, but not channel 2 and channel 5).</p>
-
-<p>The following sequence describes how the miniport driver and the port driver interact to determine which controller channels are enabled:</p>
-
-<p>The port driver calls the miniport driver's <b><i>AtaAdapterControl</i></b> routine with control action <b>IdeStart</b>. </p>
-
-<p>While the miniport driver processes the <b><i>AtaAdapterControl</i></b> routine with control action <b>IdeStart</b>, it initializes the <b>NumberOfChannels</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559036">IDE_CONTROLLER_CONFIGURATION</a> to indicate the number of channels that are enabled. </p>
-
-<p>After the <b><i>AtaAdapterControl</i></b> routine returns, the port driver calls <b>AtaControllerChannelEnabled</b> one time for every NumberOfChannels specified in the ControllerConfiguration structure that are returned by <b><i>AtaAdapterControl</i></b>.</p>
-
-<p>This routine should not have steps that are critical to the operation of the controller. There are situations, such as during a crashdump operation, where this function will not be called at all.  Additionally, this function is not called when a channel is restarted, only when PCIIDEx responds to a QueryDeviceRelations IRP.</p>
-
-<p><b>AtaControllerChannelEnabled</b> is an optional routine. If the miniport driver does not implement this routine, the port driver will load a default handler. If the port driver loads a default handler, all channels that are specified by NumberOfChannels in the ControllerConfiguration structure that is returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550140">AtaAdapterControl</a> when handling an IdeStart action are assumed to be enabled. This routine enables PCIIDEx to load the ATA port driver for only the channels enabled. Doing this allows for sparse channel support (for example, channel 0, channel 1, channel 3, channel 4, and channel 6, but not channel 2 and channel 5).</p>
+<p><b>AtaControllerChannelEnabled</b> is an optional routine. If the miniport driver does not implement this routine, the port driver will load a default handler. If the port driver loads a default handler, all channels that are specified by NumberOfChannels in the ControllerConfiguration structure that is returned by <a href="storage.ataadaptercontrol">AtaAdapterControl</a> when handling an IdeStart action are assumed to be enabled. This routine enables PCIIDEx to load the ATA port driver for only the channels enabled. Doing this allows for sparse channel support (for example, channel 0, channel 1, channel 3, channel 4, and channel 6, but not channel 2 and channel 5).</p>
 
 ## -requirements
 <table>
@@ -134,7 +122,7 @@ ATA_CHANNEL_STATE AtaControllerChannelEnabled(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559036">IDE_CONTROLLER_CONFIGURATION</a>
+<a href="..\irb\ns-irb--ide-controller-configuration.md">IDE_CONTROLLER_CONFIGURATION</a>
 </dt>
 </dl>
 <p> </p>

@@ -62,13 +62,13 @@ BOOLEAN FltDoCompletionProcessingWhenSafe(
 ### -param <i>Data</i> [in]
 
 <dd>
-<p>Pointer to the callback data structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) for the I/O operation. Usually this is the same as the <i>Data</i> pointer that was passed to the postoperation callback routine (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>) that called <b>FltDoCompletionProcessingWhenSafe</b>. </p>
+<p>Pointer to the callback data structure (<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>) for the I/O operation. Usually this is the same as the <i>Data</i> pointer that was passed to the postoperation callback routine (<a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>) that called <b>FltDoCompletionProcessingWhenSafe</b>. </p>
 </dd>
 
 ### -param <i>FltObjects</i> [in]
 
 <dd>
-<p>Pointer to the related objects structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544816">FLT_RELATED_OBJECTS</a>) for the I/O operation. Usually this is the same as the <i>FltObjects</i> pointer that was passed to the postoperation callback routine that called <b>FltDoCompletionProcessingWhenSafe</b>. </p>
+<p>Pointer to the related objects structure (<a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a>) for the I/O operation. Usually this is the same as the <i>FltObjects</i> pointer that was passed to the postoperation callback routine that called <b>FltDoCompletionProcessingWhenSafe</b>. </p>
 </dd>
 
 ### -param <i>CompletionContext</i> [in, optional]
@@ -86,7 +86,7 @@ BOOLEAN FltDoCompletionProcessingWhenSafe(
 ### -param <i>SafePostCallback</i> [in]
 
 <dd>
-<p>Pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>-typed callback routine that the operating system calls when it is safe to do so. </p>
+<p>Pointer to a caller-supplied <a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>-typed callback routine that the operating system calls when it is safe to do so. </p>
 </dd>
 
 ### -param <i>RetPostOperationStatus</i> [out]
@@ -110,73 +110,17 @@ BOOLEAN FltDoCompletionProcessingWhenSafe(
 
 <p><b>FltDoCompletionProcessingWhenSafe</b> returns <b>TRUE</b>.</p>
 
-<p>If IRQL &gt;= DISPATCH_LEVEL, <b>FltDoCompletionProcessingWhenSafe</b> attempts to post the I/O operation to a worker thread. </p><dl>
-<dd>If the I/O operation was successfully posted:<ul>
-<li><b>FltDoCompletionProcessingWhenSafe </b>calls the <i>SafePostCallback</i> routine from the worker thread.</li>
-<li> Filter manager sets <i>RetPostOperationStatus</i> to FLT_POSTOP_MORE_PROCESSING_REQUIRED.</li>
-<li><b>FltDoCompletionProcessingWhenSafe</b> returns <b>TRUE</b>.</li>
-</ul>
-</dd>
-<dd>If the I/O operation could not be safely posted:<ul>
-<li>Filter manager sets <i>RetPostOperationStatus</i> to FLT_POSTOP_FINISHED_PROCESSING.</li>
-<li><b>FltDoCompletionProcessingWhenSafe</b> returns <b>FALSE</b>.</li>
-</ul>
-</dd>
-</dl><p><b>FltDoCompletionProcessingWhenSafe</b> can only be called for IRP-based operations. To determine whether the operation is an IRP-based operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. </p>
+<p>If IRQL &gt;= DISPATCH_LEVEL, <b>FltDoCompletionProcessingWhenSafe</b> attempts to post the I/O operation to a worker thread. </p>
+
+<p><b>FltDoCompletionProcessingWhenSafe</b> can only be called for IRP-based operations. To determine whether the operation is an IRP-based operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. </p>
 
 <p><b>FltDoCompletionProcessingWhenSafe</b> cannot be used to post completion of a paging I/O operation to a worker thread.</p>
 
-<p><b>FltDoCompletionProcessingWhenSafe</b> can only be called from a minifilter driver's postoperation callback routine (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>). Note that <b>FltDoCompletionProcessingWhenSafe</b> should never be called if the <i>Flags</i> parameter of the postoperation callback has the FLTFL_POST_OPERATION_DRAINING bit set. </p>
+<p><b>FltDoCompletionProcessingWhenSafe</b> can only be called from a minifilter driver's postoperation callback routine (<a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>). Note that <b>FltDoCompletionProcessingWhenSafe</b> should never be called if the <i>Flags</i> parameter of the postoperation callback has the FLTFL_POST_OPERATION_DRAINING bit set. </p>
 
 <p>If a minifilter calls <b>FltDoCompletionProcessingWhenSafe</b> and the <i>SafePostCallback</i> is invoked in a worker thread because it is not safe to invoke it in the current thread context, the filter manager will resume completion processing as long as the minifilter does not return FLT_POSTOP_MORE_PROCESSING_REQUIRED from the <i>SafePostCallback</i>.</p>
 
-<p>If the minifilter does return FLT_POSTOP_MORE_PROCESSING_REQUIRED from the <i>SafePostCallback</i>, the minifilter must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541897">FltCompletePendedPostOperation</a> to resume completion processing.</p><dl>
-<dd>
-<ul>
-<li> IRP_MJ_READ</li>
-<li> IRP_MJ_WRITE</li>
-<li> IRP_MJ_FLUSH_BUFFERS</li>
-</ul>
-</dd>
-</dl><p><b>FltDoCompletionProcessingWhenSafe</b> executes the <i>SafePostCallback</i> immediately if the caller is running at IRQL &lt;= APC_LEVEL. Otherwise, if it is safe to post the operation to a worker thread, the <i>SafePostCallback</i> processing is deferred until it can be called in a thread context where IRQL &lt;= APC_LEVEL.</p>
-
-<p>If IRQL &lt; DISPATCH_LEVEL:</p>
-
-<p><b>FltDoCompletionProcessingWhenSafe </b>calls the callback routine specified in <i>SafePostCallback</i>.</p>
-
-<p>The <i>RetPostOperationStatus</i> parameter receives a FLT_POSTOP_CALLBACK_STATUS value returned by <i>SafePostCallback</i>.</p>
-
-<p><b>FltDoCompletionProcessingWhenSafe</b> returns <b>TRUE</b>.</p>
-
-<p>If IRQL &gt;= DISPATCH_LEVEL, <b>FltDoCompletionProcessingWhenSafe</b> attempts to post the I/O operation to a worker thread. </p><dl>
-<dd>If the I/O operation was successfully posted:<ul>
-<li><b>FltDoCompletionProcessingWhenSafe </b>calls the <i>SafePostCallback</i> routine from the worker thread.</li>
-<li> Filter manager sets <i>RetPostOperationStatus</i> to FLT_POSTOP_MORE_PROCESSING_REQUIRED.</li>
-<li><b>FltDoCompletionProcessingWhenSafe</b> returns <b>TRUE</b>.</li>
-</ul>
-</dd>
-<dd>If the I/O operation could not be safely posted:<ul>
-<li>Filter manager sets <i>RetPostOperationStatus</i> to FLT_POSTOP_FINISHED_PROCESSING.</li>
-<li><b>FltDoCompletionProcessingWhenSafe</b> returns <b>FALSE</b>.</li>
-</ul>
-</dd>
-</dl><p><b>FltDoCompletionProcessingWhenSafe</b> can only be called for IRP-based operations. To determine whether the operation is an IRP-based operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. </p>
-
-<p><b>FltDoCompletionProcessingWhenSafe</b> cannot be used to post completion of a paging I/O operation to a worker thread.</p>
-
-<p><b>FltDoCompletionProcessingWhenSafe</b> can only be called from a minifilter driver's postoperation callback routine (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>). Note that <b>FltDoCompletionProcessingWhenSafe</b> should never be called if the <i>Flags</i> parameter of the postoperation callback has the FLTFL_POST_OPERATION_DRAINING bit set. </p>
-
-<p>If a minifilter calls <b>FltDoCompletionProcessingWhenSafe</b> and the <i>SafePostCallback</i> is invoked in a worker thread because it is not safe to invoke it in the current thread context, the filter manager will resume completion processing as long as the minifilter does not return FLT_POSTOP_MORE_PROCESSING_REQUIRED from the <i>SafePostCallback</i>.</p>
-
-<p>If the minifilter does return FLT_POSTOP_MORE_PROCESSING_REQUIRED from the <i>SafePostCallback</i>, the minifilter must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541897">FltCompletePendedPostOperation</a> to resume completion processing.</p><dl>
-<dd>
-<ul>
-<li> IRP_MJ_READ</li>
-<li> IRP_MJ_WRITE</li>
-<li> IRP_MJ_FLUSH_BUFFERS</li>
-</ul>
-</dd>
-</dl>
+<p>If the minifilter does return FLT_POSTOP_MORE_PROCESSING_REQUIRED from the <i>SafePostCallback</i>, the minifilter must call <a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a> to resume completion processing.</p>
 
 ## -requirements
 <table>
@@ -231,22 +175,22 @@ BOOLEAN FltDoCompletionProcessingWhenSafe(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel--flt-callback-data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544816">FLT_RELATED_OBJECTS</a>
+<a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541785">FltCancelIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551107">PFLT_POST_OPERATION_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-post-operation-callback.md">PFLT_POST_OPERATION_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541897">FltCompletePendedPostOperation</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a>
 </dt>
 </dl>
 <p> </p>

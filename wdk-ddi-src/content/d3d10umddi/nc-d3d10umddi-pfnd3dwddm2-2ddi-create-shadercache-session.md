@@ -86,10 +86,6 @@ VOID APIENTRY* pfnCreateShaderCacheSession(
 
 <p>Access this callback function by using the <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-2ddi-devicefuncs~r1.md">D3DWDDM2_2DDI_DEVICEFUNCS</a> structure. </p>
 
-<p>The runtime uses the object that is created to inform the driver of different caching contexts. It can be used to direct the caching callbacks towards a process-local cache or a per-component cache which is shared by multiple processes.</p>
-
-<p>Access this callback function by using the <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-2ddi-devicefuncs~r1.md">D3DWDDM2_2DDI_DEVICEFUNCS</a> structure. </p>
-
 ## -requirements
 <table>
 <tr>

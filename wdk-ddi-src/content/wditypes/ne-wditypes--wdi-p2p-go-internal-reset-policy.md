@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_go_internal_reset_policy.htm
 old-project: netvista
 ms.assetid: 7932A2BB-DD6D-4DF7-BDF9-4E476B06B0B5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

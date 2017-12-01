@@ -69,10 +69,6 @@ ULONG RtlRandomEx(
 
 <p>The <b>RtlRandomEx</b> function is an improved version of the <b>RtlRandom</b> function. Compared with the <b>RtlRandom</b> function, <b>RtlRandomEx</b> is twice as fast and produces better random numbers since the period of the random numbers generated is comparatively higher. </p>
 
-<p><b>RtlRandomEx</b> returns values that are uniformly distributed over the range from zero to the maximum possible LONG value less 1 if it is called repeatedly with the same <i>Seed</i>.</p>
-
-<p>The <b>RtlRandomEx</b> function is an improved version of the <b>RtlRandom</b> function. Compared with the <b>RtlRandom</b> function, <b>RtlRandomEx</b> is twice as fast and produces better random numbers since the period of the random numbers generated is comparatively higher. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -136,7 +132,7 @@ ULONG RtlRandomEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553177">RtlRandom</a>
+<a href="..\ntifs\nf-ntifs-rtlrandom.md">RtlRandom</a>
 </dt>
 </dl>
 <p> </p>

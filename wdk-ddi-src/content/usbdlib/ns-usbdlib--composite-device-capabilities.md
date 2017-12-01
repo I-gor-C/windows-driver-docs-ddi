@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>COMPOSITE_DEVICE_CAPABILITIES</b> structure specifies the capabilities of the  driver of a USB multi-function device (composite driver). To initialize the structure, use the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450803">COMPOSITE_DEVICE_CAPABILITIES_INIT</a> macro.</p>
+<p>The <b>COMPOSITE_DEVICE_CAPABILITIES</b> structure specifies the capabilities of the  driver of a USB multi-function device (composite driver). To initialize the structure, use the <a href="..\usbdlib\nf-usbdlib-composite-device-capabilities-init.md">COMPOSITE_DEVICE_CAPABILITIES_INIT</a> macro.</p>
 
 
 ## -syntax
@@ -97,19 +97,19 @@ typedef struct _COMPOSITE_DEVICE_CAPABILITIES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450854">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-internal-usb-register-composite-device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450803">COMPOSITE_DEVICE_CAPABILITIES_INIT</a>
+<a href="..\usbdlib\nf-usbdlib-composite-device-capabilities-init.md">COMPOSITE_DEVICE_CAPABILITIES_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450898">REGISTER_COMPOSITE_DEVICE</a>
+<a href="..\usbdlib\ns-usbdlib--register-composite-device.md">REGISTER_COMPOSITE_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406229">USBD_BuildRegisterCompositeDevice</a>
+<a href="..\usbdlib\nf-usbdlib-usbd-buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450897">How to Register a Composite Device</a>
+<a href="buses.register_a_composite_driver">How to Register a Composite Device</a>
 </dt>
 </dl>
 <p> </p>

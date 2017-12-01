@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_onclientconnect.htm
 old-project: sensors
 ms.assetid: 0f64288b-5100-4529-af2f-3e867375da39
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorDriver, OnClientConnect, ISensorDriver::OnClientConnect
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545573">ISensorDriver::OnClientConnect</a> method notifies the sensor driver that a client application has connected.</p>
+<p>The <a href="sensors.isensordriver_onclientconnect">ISensorDriver::OnClientConnect</a> method notifies the sensor driver that a client application has connected.</p>
 
 
 ## -syntax
@@ -75,15 +75,7 @@ HRESULT OnClientConnect(
 ## -remarks
 <p>The sensor class extension calls this method only if the specified client application has been given permission by the user to access the driver. If the user revokes this permission, the class extension immediately calls <a href="sensors.isensordriver_onclientdisconnect">ISensorDriver::OnClientDisconnect</a> for the same application/sensor pair.</p>
 
-<p>The class extension always calls this method before calling <a href="sensors.isensordriver_onsetproperties">ISensorDriver::OnSetProperties</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545607">ISensorDriver::OnGetDataFields</a> for a particular sensor. We recommend that you maintain a reference count of connected applications to help to anticipate when calls to these three methods are possible. If no client applications are connected, you may want to change the behavior of the driver, for example, by taking steps to reduce power consumption.</p>
-
-<p>You can use the pointer value (the address pointed to) provided by <i>pClientFile</i> as a kind of ID to keep track of connected applications. However, you must track these IDs separately for each sensor, not for each device, because the class extension may provide the same pointer value to multiple sensors on the same device.</p>
-
-<p>For more information about how to use this method, see <a href="NULL">Filtering data</a>.</p>
-
-<p>The sensor class extension calls this method only if the specified client application has been given permission by the user to access the driver. If the user revokes this permission, the class extension immediately calls <a href="sensors.isensordriver_onclientdisconnect">ISensorDriver::OnClientDisconnect</a> for the same application/sensor pair.</p>
-
-<p>The class extension always calls this method before calling <a href="sensors.isensordriver_onsetproperties">ISensorDriver::OnSetProperties</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545607">ISensorDriver::OnGetDataFields</a> for a particular sensor. We recommend that you maintain a reference count of connected applications to help to anticipate when calls to these three methods are possible. If no client applications are connected, you may want to change the behavior of the driver, for example, by taking steps to reduce power consumption.</p>
+<p>The class extension always calls this method before calling <a href="sensors.isensordriver_onsetproperties">ISensorDriver::OnSetProperties</a> or <a href="sensors.isensordriver_ongetdatafields">ISensorDriver::OnGetDataFields</a> for a particular sensor. We recommend that you maintain a reference count of connected applications to help to anticipate when calls to these three methods are possible. If no client applications are connected, you may want to change the behavior of the driver, for example, by taking steps to reduce power consumption.</p>
 
 <p>You can use the pointer value (the address pointed to) provided by <i>pClientFile</i> as a kind of ID to keep track of connected applications. However, you must track these IDs separately for each sensor, not for each device, because the class extension may provide the same pointer value to multiple sensors on the same device.</p>
 

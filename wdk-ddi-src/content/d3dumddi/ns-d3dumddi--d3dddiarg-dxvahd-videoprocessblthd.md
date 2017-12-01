@@ -67,7 +67,7 @@ typedef struct _D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD {
 ### -field <b>OutputSurface</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563106">DXVAHDDDI_SURFACE</a> structure that describes the output surface to which the video processor composes. </p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-surface.md">DXVAHDDDI_SURFACE</a> structure that describes the output surface to which the video processor composes. </p>
 </dd>
 
 ### -field <b>OutputFrame</b>
@@ -79,13 +79,13 @@ typedef struct _D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD {
 ### -field <b>StreamCount</b>
 
 <dd>
-<p>[in] The number of streams to process. This number must be less than the number that the driver set in the <b>MaxStreamStates</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563113">DXVAHDDDI_VPDEVCAPS</a> structure. </p>
+<p>[in] The number of streams to process. This number must be less than the number that the driver set in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure. </p>
 </dd>
 
 ### -field <b>pStreams</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563066">DXVAHDDDI_STREAM_DATA</a> structures that describe the input streams to process. </p>
+<p>[in] An array of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-data.md">DXVAHDDDI_STREAM_DATA</a> structures that describe the input streams to process. </p>
 </dd>
 </dl>
 
@@ -104,7 +104,7 @@ typedef struct _D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD {
 
 <p>The driver also uses the frame that the <b>OutputFrame</b> member specifies for tagging the command, which the driver submits to the graphics processing unit (GPU).</p>
 
-<p>Input streams are indexed from zero to less than the number that the driver sets in the <b>MaxStreamStates</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563113">DXVAHDDDI_VPDEVCAPS</a> structure. Each stream has its own stream states associated with the stream index number. The driver processes each stream from zero index and blends on the destination surface one after another. For example, if a video stream is at index zero and a graphics stream is at index one, the driver blends the video stream on the background color and then blends the graphics stream over them.</p>
+<p>Input streams are indexed from zero to less than the number that the driver sets in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure. Each stream has its own stream states associated with the stream index number. The driver processes each stream from zero index and blends on the destination surface one after another. For example, if a video stream is at index zero and a graphics stream is at index one, the driver blends the video stream on the background color and then blends the graphics stream over them.</p>
 
 ## -requirements
 <table>
@@ -134,13 +134,13 @@ typedef struct _D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-createvideoprocessor.md">CreateVideoProcessor</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563066">DXVAHDDDI_STREAM_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-data.md">DXVAHDDDI_STREAM_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563106">DXVAHDDDI_SURFACE</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-surface.md">DXVAHDDDI_SURFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563113">DXVAHDDDI_VPDEVCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a>
 </dt>
 </dl>
 <p> </p>

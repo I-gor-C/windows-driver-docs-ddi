@@ -7,7 +7,7 @@ old-location: wdf\idriverentry.htm
 old-project: wdf
 ms.assetid: eae6f032-2f31-43e1-9ac0-38ccc4840580
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554890">IDriverEntry::OnDeinitialize</a>
+<a href="wdf.idriverentry_ondeinitialize">IDriverEntry::OnDeinitialize</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.idriverentry_ondeinitialize">OnDeinitialize</a> method performs any operations that are necessary before a system unloads a driver.</p>
@@ -73,7 +73,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554896">IDriverEntry::OnDeviceAdd</a>
+<a href="wdf.idriverentry_ondeviceadd">IDriverEntry::OnDeviceAdd</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.idriverentry_ondeviceadd">OnDeviceAdd</a> method adds a new device to a system.</p>
@@ -81,7 +81,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554900">IDriverEntry::OnInitialize</a>
+<a href="wdf.idriverentry_oninitialize">IDriverEntry::OnInitialize</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.idriverentry_oninitialize">OnInitialize</a> method performs any operations that are necessary to initialize a driver.</p>

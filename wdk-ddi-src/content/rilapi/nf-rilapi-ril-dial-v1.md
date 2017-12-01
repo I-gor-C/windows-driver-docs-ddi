@@ -7,7 +7,7 @@ old-location: netvista\ril_dial_v1.htm
 old-project: netvista
 ms.assetid: 8d4967fc-bcb7-4770-92a8-aac9ef13085b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_Dial_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices

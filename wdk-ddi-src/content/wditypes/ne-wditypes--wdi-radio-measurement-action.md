@@ -7,7 +7,7 @@ old-location: netvista\wdi_radio_measurement_action.htm
 old-project: netvista
 ms.assetid: AA17E666-5934-453D-B55D-98F8616F6369
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, *PWDF_WORKITEM_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices

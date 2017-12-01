@@ -7,7 +7,7 @@ old-location: netvista\fwpsnetbufferlistremovecontext0.htm
 old-project: netvista
 ms.assetid: bd3aa1a2-3ff5-47e4-93f6-5cb2022ec630
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsNetBufferListRemoveContext0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ NTSTATUS NTAPI FwpsNetBufferListRemoveContext0(
 
 <dd>
 <p>The context tag that was passed in the <i>contextTag</i> parameter to 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551191">FwpsNetBufferListAssociateContext0</a>.</p>
+     <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">FwpsNetBufferListAssociateContext0</a>.</p>
 </dd>
 
 ### -param <i>flags</i> [in]
@@ -96,18 +96,7 @@ NTSTATUS NTAPI FwpsNetBufferListRemoveContext0(
 
 <p>To associate a context with a network buffer list, call 
     <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">
-    FwpsNetBufferListAssociateContext0</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/hh439674">FwpsNetBufferListAssociateContext1</a>.</p>
-
-<p>Usually a callout driver will not need to use this function, because the tagged context
-    is removed automatically when the packets move through the stack. This function is provided so that
-    a callout driver can stop processing in situations where contexts aren't removed automatically. For example, in the case of an NDIS filter driver, the packets never enter the TCP/IP stack, and the contexts will need to be removed manually by calling <b>FwpsNetBufferListRemoveContext0</b> with the <i>netBufferList</i> parameter set to <b>NULL</b>.</p>
-
-<p>The 
-    <b>FwpsNetBufferListRemoveContext0</b> function asynchronously removes the tagged context associated with a network buffer list.</p>
-
-<p>To associate a context with a network buffer list, call 
-    <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">
-    FwpsNetBufferListAssociateContext0</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/hh439674">FwpsNetBufferListAssociateContext1</a>.</p>
+    FwpsNetBufferListAssociateContext0</a> or <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext1.md">FwpsNetBufferListAssociateContext1</a>.</p>
 
 <p>Usually a callout driver will not need to use this function, because the tagged context
     is removed automatically when the packets move through the stack. This function is provided so that
@@ -166,14 +155,14 @@ NTSTATUS NTAPI FwpsNetBufferListRemoveContext0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">
    FwpsNetBufferListAssociateContext0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439674">FwpsNetBufferListAssociateContext1</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext1.md">FwpsNetBufferListAssociateContext1</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistgettagforcontext0.md">
@@ -189,4 +178,4 @@ NTSTATUS NTAPI FwpsNetBufferListRemoveContext0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListRemoveContext0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListRemoveContext0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

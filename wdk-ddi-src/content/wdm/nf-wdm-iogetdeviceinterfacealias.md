@@ -7,7 +7,7 @@ old-location: kernel\iogetdeviceinterfacealias.htm
 old-project: kernel
 ms.assetid: 667c9524-be12-4f02-b921-6067abfb1dde
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoGetDeviceInterfaceAlias
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ NTSTATUS IoGetDeviceInterfaceAlias(
 ### -param <i>SymbolicLinkName</i> [in]
 
 <dd>
-<p>Pointer to the name of the device interface instance for which to retrieve an alias. The caller typically received this string from a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549186">IoGetDeviceInterfaces</a> or in a PnP notification structure.</p>
+<p>Pointer to the name of the device interface instance for which to retrieve an alias. The caller typically received this string from a call to <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a> or in a PnP notification structure.</p>
 </dd>
 
 ### -param <i>AliasInterfaceClassGuid</i> [in]
@@ -72,7 +72,7 @@ NTSTATUS IoGetDeviceInterfaceAlias(
 ### -param <i>AliasSymbolicLinkName</i> [out]
 
 <dd>
-<p>Specifies a pointer to a <b>NULL</b> Unicode string. On successful return, <i>AliasSymbolicLinkName</i>.<b>Buffer</b> points to a string containing the name of the alias. The caller must free the Unicode string with <a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a> when it is no longer needed.</p>
+<p>Specifies a pointer to a <b>NULL</b> Unicode string. On successful return, <i>AliasSymbolicLinkName</i>.<b>Buffer</b> points to a string containing the name of the alias. The caller must free the Unicode string with <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a> when it is no longer needed.</p>
 </dd>
 </dl>
 
@@ -88,16 +88,6 @@ NTSTATUS IoGetDeviceInterfaceAlias(
 <p> </p>
 
 ## -remarks
-<p>Device interfaces are considered aliases if they are exposed by the same underlying device and have identical interface reference strings, but are of different interface classes.</p>
-
-<p>The <i>SymbolicLinkName</i> parameter specifies a device interface instance for a particular device, belonging to a particular interface class, with a particular reference string. <b>IoGetDeviceInterfaceAlias</b> returns another device interface instance for the same device and reference string, but of a different interface class, if it exists.</p>
-
-<p>For example, the function driver for a fault-tolerant volume could register and set two device interfaces, one of the fault-tolerant-volume interface class and one of the volume interface class. Another driver could call <b>IoGetDeviceInterfaceAlias</b> with the symbolic link for one of the interfaces and ask whether the other interface exists by specifying its interface class.</p>
-
-<p>Two device interfaces with <b>NULL</b> reference strings are aliases if they are exposed by the same underlying device and have different interface class GUIDs.</p>
-
-<p>Callers of <b>IoGetDeviceInterfaceAlias</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.</p>
-
 <p>Device interfaces are considered aliases if they are exposed by the same underlying device and have identical interface reference strings, but are of different interface classes.</p>
 
 <p>The <i>SymbolicLinkName</i> parameter specifies a device interface instance for a particular device, belonging to a particular interface class, with a particular reference string. <b>IoGetDeviceInterfaceAlias</b> returns another device interface instance for the same device and reference string, but of a different interface class, if it exists.</p>
@@ -171,7 +161,7 @@ NTSTATUS IoGetDeviceInterfaceAlias(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -179,12 +169,12 @@ NTSTATUS IoGetDeviceInterfaceAlias(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549506">IoRegisterDeviceInterface</a>
+<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a>
+<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetDeviceInterfaceAlias routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetDeviceInterfaceAlias routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

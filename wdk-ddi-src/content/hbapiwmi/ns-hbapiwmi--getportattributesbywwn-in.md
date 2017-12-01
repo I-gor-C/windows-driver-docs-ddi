@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetPortAttributesByWWN_IN structure is used by a WMI client to deliver input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554965">GetPortAttributesByWWN</a> WMI method. </p>
+<p>The GetPortAttributesByWWN_IN structure is used by a WMI client to deliver input parameter data to the <a href="storage.getportattributesbywwn">GetPortAttributesByWWN</a> WMI method. </p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ typedef struct _GetPortAttributesByWWN_IN {
 </dl>
 
 ## -remarks
-<p>The WMI tool suite generates a declaration of the GetPortAttributesByWWN_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetPortAttributesByWWN_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.</p>
 
 <p>For a definition of FC_Port and a discussion of worldwide names, see the T11 committee's specification for <i>Fibre Channel HBA API</i> (FC-HBA).</p>
 
@@ -83,7 +83,7 @@ typedef struct _GetPortAttributesByWWN_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554965">GetPortAttributesByWWN</a>
+<a href="storage.getportattributesbywwn">GetPortAttributesByWWN</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: stream\kscreatedefaultsecurity.htm
 old-project: stream
 ms.assetid: 2992a62b-7c3c-4bf5-ba3a-26c26c419f98
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsCreateDefaultSecurity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,8 +72,6 @@ NTSTATUS KsCreateDefaultSecurity(
 <p><b>KsCreateDefaultSecurity</b> returns STATUS_SUCCESS if the operation is successful, else a resource or assignment error.</p>
 
 ## -remarks
-<p><b>KsCreateDefaultSecurity</b> is used to initialize subobjects that do not have any stored security. </p>
-
 <p><b>KsCreateDefaultSecurity</b> is used to initialize subobjects that do not have any stored security. </p>
 
 ## -requirements

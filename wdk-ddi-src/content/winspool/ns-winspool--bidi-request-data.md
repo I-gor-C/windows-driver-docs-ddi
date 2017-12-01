@@ -72,7 +72,7 @@ typedef struct _BIDI_REQUEST_DATA {
 ### -field <b>data</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545177">BIDI_DATA</a> structure containing the data associated with the schema.</p>
+<p>Specifies a <a href="..\winspool\ns-winspool--bidi-data.md">BIDI_DATA</a> structure containing the data associated with the schema.</p>
 </dd>
 </dl>
 
@@ -104,10 +104,10 @@ typedef struct _BIDI_REQUEST_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545177">BIDI_DATA</a>
+<a href="..\winspool\ns-winspool--bidi-data.md">BIDI_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545193">BIDI_REQUEST_CONTAINER</a>
+<a href="..\winspool\ns-winspool--bidi-request-container.md">BIDI_REQUEST_CONTAINER</a>
 </dt>
 </dl>
 <p> </p>

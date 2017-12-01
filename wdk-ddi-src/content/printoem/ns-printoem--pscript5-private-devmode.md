@@ -65,7 +65,7 @@ typedef struct _PSCRIPT5_PRIVATE_DEVMODE {
 ### -field <b>wSize</b>
 
 <dd>
-<p>The size, in bytes, of the private portion of Pscript5's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.</p>
+<p>The size, in bytes, of the private portion of Pscript5's <a href="display.devmodew">DEVMODEW</a> structure.</p>
 </dd>
 </dl>
 
@@ -84,7 +84,7 @@ typedef struct _PSCRIPT5_PRIVATE_DEVMODE {
 
 <p>The preceding example starts with the address of the public DEVMODEW structure (<i>pdm</i>), adds the number of bytes of this structure (<i>pdm-</i>&gt;<b>dmSize</b>), and then adds the size in bytes of the Pscript5 private DEVMODEW structure (<b>wSize</b>). A plug-in's private DEVMODEW data begins at this memory address. If there are multiple plug-ins chained together, the address returned by this example is that of the first plug-in's private DEVMODEW data. The second plug-in's private DEVMODEW data follows the first plug-in's private DEVMODEW data, the third plug-in's private DEVMODEW data follows that of the second plug-in's private DEVMODEW data, and so on. A plug-in developer who needs to determine the address of the <i>n</i>-th plug-in's private DEVMODEW data must know the sizes of the private DEVMODEW data for the first <i>n</i> - 1 plug-ins.</p>
 
-<p>Verify that the private portion of your plug-in's DEVMODEW structure begins with a valid <a href="https://msdn.microsoft.com/library/windows/hardware/ff559588">OEM_DMEXTRAHEADER</a> structure.</p>
+<p>Verify that the private portion of your plug-in's DEVMODEW structure begins with a valid <a href="..\printoem\ns-printoem--oem-dmextraheader.md">OEM_DMEXTRAHEADER</a> structure.</p>
 
 ## -requirements
 <table>
@@ -103,7 +103,7 @@ typedef struct _PSCRIPT5_PRIVATE_DEVMODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563565">UNIDRV_PRIVATE_DEVMODE</a>
+<a href="..\printoem\ns-printoem--unidrv-private-devmode.md">UNIDRV_PRIVATE_DEVMODE</a>
 </dt>
 </dl>
 <p> </p>

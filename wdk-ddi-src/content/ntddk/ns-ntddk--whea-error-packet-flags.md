@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The WHEA_ERROR_PACKET_FLAGS union defines the error condition reported through a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure.</p>
+<p>The WHEA_ERROR_PACKET_FLAGS union defines the error condition reported through a <a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a> structure.</p>
 
 
 ## -syntax
@@ -126,7 +126,7 @@ typedef union _WHEA_ERROR_PACKET_FLAGS {
 </dl>
 
 ## -remarks
-<p>The WHEA_ERROR_PACKET_FLAGS union describes the error condition reported by using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure.</p>
+<p>The WHEA_ERROR_PACKET_FLAGS union describes the error condition reported by using a <a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a> structure.</p>
 
 ## -requirements
 <table>
@@ -157,7 +157,7 @@ typedef union _WHEA_ERROR_PACKET_FLAGS {
 <a href="NULL">Predictive Failure Analysis (PFA)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+<a href="whea.whea_error_packet">WHEA_ERROR_PACKET</a>
 </dt>
 </dl>
 <p> </p>

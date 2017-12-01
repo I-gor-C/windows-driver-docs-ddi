@@ -83,10 +83,6 @@ BOOLEAN __inline AtaPortRequestTimer(
 
 <p>The ATA port driver passes a pointer to the channel extension to the timer routine.</p>
 
-<p>The <b>AtaPortRequestTimer</b> routine informs the ATA port driver that it must call the timer routine that is pointed to by <i>TimerRoutine</i> in the number of microseconds indicated by <i>TimerValue</i>. </p>
-
-<p>The ATA port driver passes a pointer to the channel extension to the timer routine.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -114,7 +110,7 @@ BOOLEAN __inline AtaPortRequestTimer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550234">AtaPortStallExecution</a>
+<a href="..\irb\nf-irb-ataportstallexecution.md">AtaPortStallExecution</a>
 </dt>
 </dl>
 <p> </p>

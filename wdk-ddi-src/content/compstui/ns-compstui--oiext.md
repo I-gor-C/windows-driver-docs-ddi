@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The OIEXT structure supplies additional, optional information about a property sheet page option that is described by an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559656">OPTITEM</a> structure.</p>
+<p>The OIEXT structure supplies additional, optional information about a property sheet page option that is described by an <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structure.</p>
 
 
 ## -syntax
@@ -90,13 +90,13 @@ typedef struct _OIEXT {
 ### -field <b>hInstCaller</b>
 
 <dd>
-<p>Instance handle to a DLL containing string and icon resources belonging to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559656">OPTITEM</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559670">OPTTYPE</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff559660">OPTPARAM</a> structures associated with the OIEXT structure. If <b>NULL</b>, CPSUI obtains resources from the DLL identified by the <b>hInstCaller</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546211">COMPROPSHEETUI</a> structure.</p>
+<p>Instance handle to a DLL containing string and icon resources belonging to the <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a>, <a href="..\compstui\ns-compstui--opttype.md">OPTTYPE</a>, and <a href="..\compstui\ns-compstui--optparam.md">OPTPARAM</a> structures associated with the OIEXT structure. If <b>NULL</b>, CPSUI obtains resources from the DLL identified by the <b>hInstCaller</b> member of a <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
 </dd>
 
 ### -field <b>pHelpFile</b>
 
 <dd>
-<p>Pointer to a NULL-terminated string representing a path to a help file containing help information for the option. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. If <b>NULL</b>, CPSUI uses the help file identified by the <b>pHelpFile</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546211">COMPROPSHEETUI</a> structure.</p>
+<p>Pointer to a NULL-terminated string representing a path to a help file containing help information for the option. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. If <b>NULL</b>, CPSUI uses the help file identified by the <b>pHelpFile</b> member of a <a href="..\compstui\ns-compstui--compropsheetui.md">COMPROPSHEETUI</a> structure.</p>
 </dd>
 
 ### -field <b>dwReserved</b>

@@ -7,7 +7,7 @@ old-location: battery\powersourceid.htm
 old-project: battery
 ms.assetid: AC6E3447-2E7E-41EC-AC04-CAB46F826095
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/27/2017
 ms.keywords: BTHX_VERSION, BTHX_VERSION, *PBTHX_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices

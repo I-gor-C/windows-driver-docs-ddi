@@ -67,7 +67,7 @@ HRESULT APIENTRY CALLBACK* pfnCreateContextVirtualCb(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn914418">D3DDDICB_CREATECONTEXTVIRTUAL</a> structure that describes the context to create.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-createcontextvirtual.md">D3DDDICB_CREATECONTEXTVIRTUAL</a> structure that describes the context to create.</p>
 </dd>
 </dl>
 

@@ -7,7 +7,7 @@ old-location: netvista\wwan_ready_info.htm
 old-project: netvista
 ms.assetid: 6db8730e-a1da-428b-9938-fd9f3f71283a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WWAN_READY_INFO, WWAN_READY_INFO, *PWWAN_READY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ typedef struct _WWAN_READY_INFO {
 ### -field <b>EmergencyMode</b>
 
 <dd>
-<p>The emergency mode of the device. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff571207">WWAN_EMERGENCY_MODE</a>.</p>
+<p>The emergency mode of the device. For more information, see <a href="..\wwan\ne-wwan--wwan-emergency-mode.md">WWAN_EMERGENCY_MODE</a>.</p>
 </dd>
 
 ### -field <b>SubscriberId</b>
@@ -137,18 +137,18 @@ typedef struct _WWAN_READY_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571227">WWAN_READY_STATE</a>
+<a href="..\wwan\ne-wwan--wwan-ready-state.md">WWAN_READY_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571207">WWAN_EMERGENCY_MODE</a>
+<a href="..\wwan\ne-wwan--wwan-emergency-mode.md">WWAN_EMERGENCY_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571208">WWAN_LIST_HEADER</a>
+<a href="..\wwan\ns-wwan--wwan-list-header.md">WWAN_LIST_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567916">NDIS_WWAN_READY_INFO</a>
+<a href="..\ndiswwan\ns-ndiswwan--ndis-wwan-ready-info.md">NDIS_WWAN_READY_INFO</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_READY_INFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_READY_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

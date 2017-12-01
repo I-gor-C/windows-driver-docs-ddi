@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTReleaseKeyedMutex(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548234">D3DKMT_RELEASEKEYEDMUTEX</a> structure that specifies the keyed mutex object to release. </p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-releasekeyedmutex.md">D3DKMT_RELEASEKEYEDMUTEX</a> structure that specifies the keyed mutex object to release. </p>
 </dd>
 </dl>
 
@@ -71,7 +71,7 @@ NTSTATUS APIENTRY D3DKMTReleaseKeyedMutex(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547129">D3DKMTReleaseKeyedMutex</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex.md">D3DKMTReleaseKeyedMutex</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
@@ -135,7 +135,7 @@ NTSTATUS APIENTRY D3DKMTReleaseKeyedMutex(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548234">D3DKMT_RELEASEKEYEDMUTEX</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-releasekeyedmutex.md">D3DKMT_RELEASEKEYEDMUTEX</a>
 </dt>
 </dl>
 <p> </p>

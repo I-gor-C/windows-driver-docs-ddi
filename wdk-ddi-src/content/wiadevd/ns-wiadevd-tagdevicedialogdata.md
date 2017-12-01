@@ -105,7 +105,7 @@ typedef struct tagDEVICEDIALOGDATA {
 </dl>
 
 ## -remarks
-<p>The DEVICEDIALOGDATA structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545069">IWiaUIExtension::DeviceDialog</a> method.</p>
+<p>The DEVICEDIALOGDATA structure is used by the <a href="image.iwiauiextension_devicedialog">IWiaUIExtension::DeviceDialog</a> method.</p>
 
 <p>The array specified in <i>ppIWiaItems</i> must be allocated using <b>CoTaskMemAlloc</b>. All interface pointers indicated in the array must be initialized using the <b>AddRef</b> COM method. See the Windows SDK documentation for descriptions of these functions.</p>
 
@@ -136,7 +136,7 @@ typedef struct tagDEVICEDIALOGDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545069">IWiaUIExtension::DeviceDialog</a>
+<a href="image.iwiauiextension_devicedialog">IWiaUIExtension::DeviceDialog</a>
 </dt>
 </dl>
 <p> </p>

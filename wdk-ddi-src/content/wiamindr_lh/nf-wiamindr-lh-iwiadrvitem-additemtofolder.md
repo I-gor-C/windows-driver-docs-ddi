@@ -68,8 +68,6 @@ HRESULT AddItemToFolder(
 ## -remarks
 <p>Minidrivers typically use the <b>IWiaDrvItem::AddItemToFolder</b> method to add an item to a parent folder item in a driver item tree. The parent folder item is pointed to by the parameter <i>pIParent</i>. The item pointed to by <i>pIParent</i> must be a folder.</p>
 
-<p>Minidrivers typically use the <b>IWiaDrvItem::AddItemToFolder</b> method to add an item to a parent folder item in a driver item tree. The parent folder item is pointed to by the parameter <i>pIParent</i>. The item pointed to by <i>pIParent</i> must be a folder.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -105,7 +103,7 @@ HRESULT AddItemToFolder(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543899">IWiaDrvItem::RemoveItemFromFolder</a>
+<a href="image.iwiadrvitem_removeitemfromfolder">IWiaDrvItem::RemoveItemFromFolder</a>
 </dt>
 </dl>
 <p> </p>

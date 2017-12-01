@@ -98,7 +98,7 @@ typedef struct _PCW_REGISTRATION_INFORMATION {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a> function takes, as a parameter, a pointer to this structure to serve as the registration handle.</p>
+<p>The <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a> function takes, as a parameter, a pointer to this structure to serve as the registration handle.</p>
 
 ## -requirements
 <table>
@@ -125,10 +125,10 @@ typedef struct _PCW_REGISTRATION_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a>
+<a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550338">PCW_COUNTER_DESCRIPTOR</a>
+<a href="..\wdm\ns-wdm--pcw-counter-descriptor.md">PCW_COUNTER_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-pcw-callback.md">PcwCallback</a>

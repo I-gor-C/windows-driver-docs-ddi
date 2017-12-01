@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-   The <b>UsbBuildGetStatusRequest</b> macro formats an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to obtain status from a device, interface, endpoint, or other device-defined target on a USB device.</p>
+   The <b>UsbBuildGetStatusRequest</b> macro formats an <a href="..\usb\ns-usb--urb.md">URB</a> to obtain status from a device, interface, endpoint, or other device-defined target on a USB device.</p>
 
 
 ## -syntax
@@ -64,7 +64,7 @@ void UsbBuildGetStatusRequest(
 ### -param <i>Urb</i> [in, out]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to be formatted as an status request.</p>
+<p>Pointer to an <a href="..\usb\ns-usb--urb.md">URB</a> to be formatted as an status request.</p>
 </dd>
 
 ### -param <i>Op</i> [in]
@@ -158,10 +158,10 @@ void UsbBuildGetStatusRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
+<a href="..\usb\ns-usb--urb.md">URB</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540378">_URB_CONTROL_GET_STATUS_REQUEST</a>
+<a href="buses._urb_control_get_status_request">_URB_CONTROL_GET_STATUS_REQUEST</a>
 </dt>
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 </dl>

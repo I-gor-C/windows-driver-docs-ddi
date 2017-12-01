@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_additional_ie.htm
 old-project: netvista
 ms.assetid: F381C8DB-DC69-4820-BDCE-2F1DF3482FDD
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_WFD_ADDITIONAL_IE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

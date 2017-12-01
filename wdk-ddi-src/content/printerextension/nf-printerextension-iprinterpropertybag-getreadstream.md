@@ -75,8 +75,6 @@ HRESULT GetReadStream(
 ## -remarks
 <p>This method does not work with non-stream properties.</p>
 
-<p>This method does not work with non-stream properties.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -104,7 +102,7 @@ HRESULT GetReadStream(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>
+<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
 </dt>
 </dl>
 <p> </p>

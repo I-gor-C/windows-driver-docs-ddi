@@ -58,7 +58,7 @@ DWORD GdiGetPageCount(
 ### -param <i>SpoolFileHandle</i> 
 
 <dd>
-<p>Caller-supplied spool file handle, obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549517">GdiGetSpoolFileHandle</a>.</p>
+<p>Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.</p>
 </dd>
 </dl>
 
@@ -66,11 +66,7 @@ DWORD GdiGetPageCount(
 <p>If the operation succeeds, the function returns the number of pages in the current print job. Otherwise the function returns zero.</p>
 
 ## -remarks
-<p>The <b>GdiGetPageCount</b> function is exported by gdi32.dll for use within a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p><p class="note">Usually, a better method for determining the page count is to count the number of calls made to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549505">GdiGetPageHandle</a>.</p>
-
-<p>For additional information about this set of functions, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
-
-<p>The <b>GdiGetPageCount</b> function is exported by gdi32.dll for use within a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.</p><p class="note">Usually, a better method for determining the page count is to count the number of calls made to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549505">GdiGetPageHandle</a>.</p>
+<p>The <b>GdiGetPageCount</b> function is exported by gdi32.dll for use within a print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> function.</p><p class="note">Usually, a better method for determining the page count is to count the number of calls made to <a href="..\winppi\nf-winppi-gdigetpagehandle.md">GdiGetPageHandle</a>.</p>
 
 <p>For additional information about this set of functions, see <a href="NULL">Using GDI Functions in Print Processors</a>.</p>
 

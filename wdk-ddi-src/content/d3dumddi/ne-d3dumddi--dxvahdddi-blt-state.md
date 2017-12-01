@@ -62,46 +62,42 @@ typedef enum _DXVAHDDDI_BLT_STATE {
 ### -field <a id="DXVAHDDDI_BLT_STATE_TARGET_RECT"></a><a id="dxvahdddi_blt_state_target_rect"></a><b>DXVAHDDDI_BLT_STATE_TARGET_RECT</b>
 
 <dd>
-<p>The bitblt state data specifies the target rectangle of the output in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563015">DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA</a> structure. </p>
+<p>The bitblt state data specifies the target rectangle of the output in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-target-rect-data.md">DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA</a> structure. </p>
 </dd>
 
 ### -field <a id="DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR"></a><a id="dxvahdddi_blt_state_background_color"></a><b>DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR</b>
 
 <dd>
-<p>The bitblt state data specifies the background color to fill in the target rectangle of the output in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562993">DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA</a> structure. </p>
+<p>The bitblt state data specifies the background color to fill in the target rectangle of the output in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-background-color-data.md">DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA</a> structure. </p>
 </dd>
 
 ### -field <a id="DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE"></a><a id="dxvahdddi_blt_state_output_color_space"></a><b>DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE</b>
 
 <dd>
-<p>The bitblt state data specifies the color space of the output in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563002">DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA</a> structure. </p>
+<p>The bitblt state data specifies the color space of the output in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-output-color-space-data.md">DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA</a> structure. </p>
 </dd>
 
 ### -field <a id="DXVAHDDDI_BLT_STATE_ALPHA_FILL"></a><a id="dxvahdddi_blt_state_alpha_fill"></a><b>DXVAHDDDI_BLT_STATE_ALPHA_FILL</b>
 
 <dd>
-<p>The bitblt state data specifies the alpha-fill mode of the output in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562985">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a> structure. </p>
+<p>The bitblt state data specifies the alpha-fill mode of the output in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-alpha-fill-data.md">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a> structure. </p>
 </dd>
 
 ### -field <a id="DXVAHDDDI_BLT_STATE_CONSTRICTION"></a><a id="dxvahdddi_blt_state_constriction"></a><b>DXVAHDDDI_BLT_STATE_CONSTRICTION</b>
 
 <dd>
-<p>The bitblt state data specifies the down sampling of the output in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562997">DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA</a> structure. </p>
+<p>The bitblt state data specifies the down sampling of the output in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-constriction-data.md">DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA</a> structure. </p>
 </dd>
 
 ### -field <a id="DXVAHDDDI_BLT_STATE_PRIVATE"></a><a id="dxvahdddi_blt_state_private"></a><b>DXVAHDDDI_BLT_STATE_PRIVATE</b>
 
 <dd>
-<p>The bitblt state data specifies the private parameters in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563004">DXVAHDDDI_BLT_STATE_PRIVATE_DATA</a> structure. </p>
+<p>The bitblt state data specifies the private parameters in a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-private-data.md">DXVAHDDDI_BLT_STATE_PRIVATE_DATA</a> structure. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>A DXVAHDDDI_BLT_STATE-typed value, which is specified in the <b>State</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543093">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-setvideoprocessbltstate.md">SetVideoProcessBltState</a> function, sets the state of a bitblt for a video processor. Bitblt data that corresponds to the supplied DXVAHDDDI_BLT_STATE-typed value is pointed to by the <b>pData</b> member of D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE. </p>
-
-<p>A DXVAHDDDI_BLT_STATE-typed value, which is specified in the <b>State</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543093">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-setvideoprocessbltstate.md">SetVideoProcessBltState</a> function, sets the state of a bitblt for a video processor. Bitblt data that corresponds to the supplied DXVAHDDDI_BLT_STATE-typed value is pointed to by the <b>pData</b> member of D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE. </p>
-
-<p>A DXVAHDDDI_BLT_STATE-typed value, which is specified in the <b>State</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543093">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-setvideoprocessbltstate.md">SetVideoProcessBltState</a> function, sets the state of a bitblt for a video processor. Bitblt data that corresponds to the supplied DXVAHDDDI_BLT_STATE-typed value is pointed to by the <b>pData</b> member of D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE. </p>
+<p>A DXVAHDDDI_BLT_STATE-typed value, which is specified in the <b>State</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-setvideoprocessbltstate.md">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-setvideoprocessbltstate.md">SetVideoProcessBltState</a> function, sets the state of a bitblt for a video processor. Bitblt data that corresponds to the supplied DXVAHDDDI_BLT_STATE-typed value is pointed to by the <b>pData</b> member of D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE. </p>
 
 ## -requirements
 <table>
@@ -128,25 +124,25 @@ typedef enum _DXVAHDDDI_BLT_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543093">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-dxvahd-setvideoprocessbltstate.md">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562985">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-alpha-fill-data.md">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562993">DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-background-color-data.md">DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562997">DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-constriction-data.md">DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563002">DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-output-color-space-data.md">DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563004">DXVAHDDDI_BLT_STATE_PRIVATE_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-private-data.md">DXVAHDDDI_BLT_STATE_PRIVATE_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563015">DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-blt-state-target-rect-data.md">DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-setvideoprocessbltstate.md">SetVideoProcessBltState</a>

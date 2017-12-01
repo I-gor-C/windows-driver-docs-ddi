@@ -83,19 +83,19 @@ VOID APIENTRY ResourceMap(
 ### -param <i>DDIMap</i> [in]
 
 <dd>
-<p> A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541957">D3D10_DDI_MAP</a>-typed value that indicates the access level to map the subresource to. </p>
+<p> A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-map.md">D3D10_DDI_MAP</a>-typed value that indicates the access level to map the subresource to. </p>
 </dd>
 
 ### -param <i>Flags</i> [in]
 
 <dd>
-<p> A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541959">D3D10_DDI_MAP_FLAG</a>-typed value that indicates how to map the subresource. </p>
+<p> A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-map-flag.md">D3D10_DDI_MAP_FLAG</a>-typed value that indicates how to map the subresource. </p>
 </dd>
 
 ### -param <i>pMappedSubResource</i> [out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541839">D3D10DDI_MAPPED_SUBRESOURCE</a> structure that receives the information about the mapped subresource.</p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-mapped-subresource.md">D3D10DDI_MAPPED_SUBRESOURCE</a> structure that receives the information about the mapped subresource.</p>
 </dd>
 </dl>
 
@@ -113,7 +113,7 @@ VOID APIENTRY ResourceMap(
 
 <p>If the runtime passed the D3D10_DDI_MAP_FLAG_DONOTWAIT flag in the <i>Flags</i> parameter, the driver can call <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> to set the DXGI_DDI_ERR_WASSTILLDRAWING error code.</p>
 
-<p>The driver can implement one pair of <i>ResourceMap</i> and <i>ResourceUnmap</i> functions that can contain <b>switch</b> statements to process various functionalities. That is, the driver can implement one <i>ResourceMap</i>-<i>ResourceUnmap</i> pair and can set the following members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541833">D3D10DDI_DEVICEFUNCS</a> structure to point to this implementation pair:</p>
+<p>The driver can implement one pair of <i>ResourceMap</i> and <i>ResourceUnmap</i> functions that can contain <b>switch</b> statements to process various functionalities. That is, the driver can implement one <i>ResourceMap</i>-<i>ResourceUnmap</i> pair and can set the following members of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-devicefuncs.md">D3D10DDI_DEVICEFUNCS</a> structure to point to this implementation pair:</p>
 
 <p><b>pfnDynamicIABufferMapDiscard</b>-<b>pfnDynamicIABufferUnmap</b></p>
 
@@ -125,33 +125,7 @@ VOID APIENTRY ResourceMap(
 
 <p><b>pfnStagingResourceMap</b>-<b>pfnStagingResourceUnmap</b></p>
 
-<p>However, to improve performance, the driver can implement separate map-unmap function pairs. The Microsoft Direct3D runtime calls the appropriate map-unmap function pair depending on the resource type (for example, a buffer or texture) and the type of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542008">D3D10_DDI_RESOURCE_USAGE</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff541995">D3D10_DDI_RESOURCE_BIND_FLAG</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff541957">D3D10_DDI_MAP</a> values that are specified when the resource is created and mapped.</p>
-
-<p>The following example code shows the values that are set when the Direct3D runtime calls specific map or unmap function:</p>
-
-<p>For Windows Display Driver Model (WDDM) 1.3 and later drivers, the Microsoft Direct3D runtime supplies a restricted set of input values used by this function. For a list of all restricted values, see <a href="https://msdn.microsoft.com/F9AAE489-EC45-4EE6-875E-E084BB3054EE">Direct3D rendering performance improvements</a>.</p>
-
-<p>The driver can call <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> to set the D3DDDIERR_DEVICEREMOVED error code.</p>
-
-<p>Typically, immediately after the runtime receives the D3DDDIERR_DEVICEREMOVED error code, the runtime will no longer call into the user-mode display driver for much (other than for unbinding, destruction, and other cleanup operations).  </p>
-
-<p>Typically, each call to the user-mode display driver's <i>ResourceMap</i> function is accompanied with a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-resourceunmap.md">ResourceUnmap</a> function; however, after the runtime receives the D3DDDIERR_DEVICEREMOVED error code, it will not call <i>ResourceUnmap</i>.</p>
-
-<p>If the runtime passed the D3D10_DDI_MAP_FLAG_DONOTWAIT flag in the <i>Flags</i> parameter, the driver can call <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a> to set the DXGI_DDI_ERR_WASSTILLDRAWING error code.</p>
-
-<p>The driver can implement one pair of <i>ResourceMap</i> and <i>ResourceUnmap</i> functions that can contain <b>switch</b> statements to process various functionalities. That is, the driver can implement one <i>ResourceMap</i>-<i>ResourceUnmap</i> pair and can set the following members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541833">D3D10DDI_DEVICEFUNCS</a> structure to point to this implementation pair:</p>
-
-<p><b>pfnDynamicIABufferMapDiscard</b>-<b>pfnDynamicIABufferUnmap</b></p>
-
-<p><b>pfnDynamicIABufferMapNoOverwrite</b>-<b>pfnDynamicIABufferUnmap</b></p>
-
-<p><b>pfnDynamicConstantBufferMapDiscard</b>-<b>pfnDynamicConstantBufferUnmap</b></p>
-
-<p><b>pfnDynamicResourceMapDiscard</b>-<b>pfnDynamicResourceUnmap</b></p>
-
-<p><b>pfnStagingResourceMap</b>-<b>pfnStagingResourceUnmap</b></p>
-
-<p>However, to improve performance, the driver can implement separate map-unmap function pairs. The Microsoft Direct3D runtime calls the appropriate map-unmap function pair depending on the resource type (for example, a buffer or texture) and the type of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542008">D3D10_DDI_RESOURCE_USAGE</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff541995">D3D10_DDI_RESOURCE_BIND_FLAG</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff541957">D3D10_DDI_MAP</a> values that are specified when the resource is created and mapped.</p>
+<p>However, to improve performance, the driver can implement separate map-unmap function pairs. The Microsoft Direct3D runtime calls the appropriate map-unmap function pair depending on the resource type (for example, a buffer or texture) and the type of <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-usage.md">D3D10_DDI_RESOURCE_USAGE</a>, <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-bind-flag.md">D3D10_DDI_RESOURCE_BIND_FLAG</a>, and <a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-map.md">D3D10_DDI_MAP</a> values that are specified when the resource is created and mapped.</p>
 
 <p>The following example code shows the values that are set when the Direct3D runtime calls specific map or unmap function:</p>
 
@@ -192,22 +166,22 @@ VOID APIENTRY ResourceMap(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541957">D3D10_DDI_MAP</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-map.md">D3D10_DDI_MAP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541959">D3D10_DDI_MAP_FLAG</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-map-flag.md">D3D10_DDI_MAP_FLAG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541995">D3D10_DDI_RESOURCE_BIND_FLAG</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-bind-flag.md">D3D10_DDI_RESOURCE_BIND_FLAG</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542008">D3D10_DDI_RESOURCE_USAGE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d10-ddi-resource-usage.md">D3D10_DDI_RESOURCE_USAGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541833">D3D10DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541839">D3D10DDI_MAPPED_SUBRESOURCE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-mapped-subresource.md">D3D10DDI_MAPPED_SUBRESOURCE</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a>

@@ -7,7 +7,7 @@ old-location: netvista\rilmsgindeliver.htm
 old-project: netvista
 ms.assetid: a4bfdc26-46a9-404e-9cd0-10dabba01dc2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMSGINDELIVER, RILMSGINDELIVER, *LPRILMSGINDELIVER
 ms.prod: windows-hardware
 ms.technology: windows-devices

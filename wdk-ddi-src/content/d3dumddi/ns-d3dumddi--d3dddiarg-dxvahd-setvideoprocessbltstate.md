@@ -66,7 +66,7 @@ typedef struct _D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE {
 ### -field <b>State</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562978">DXVAHDDDI_BLT_STATE</a>-typed value that indicates the type of bitblt to set.</p>
+<p>[in] A <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-blt-state.md">DXVAHDDDI_BLT_STATE</a>-typed value that indicates the type of bitblt to set.</p>
 </dd>
 
 ### -field <b>DataSize</b>
@@ -78,7 +78,7 @@ typedef struct _D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE {
 ### -field <b>pData</b>
 
 <dd>
-<p>[in] A pointer to the data that is used to change the bitblt state. For more information about the types of data that <b>pData</b> can point to, see the values of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562978">DXVAHDDDI_BLT_STATE</a> enumeration. </p>
+<p>[in] A pointer to the data that is used to change the bitblt state. For more information about the types of data that <b>pData</b> can point to, see the values of the <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-blt-state.md">DXVAHDDDI_BLT_STATE</a> enumeration. </p>
 </dd>
 </dl>
 
@@ -110,7 +110,7 @@ typedef struct _D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562978">DXVAHDDDI_BLT_STATE</a>
+<a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-blt-state.md">DXVAHDDDI_BLT_STATE</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-setvideoprocessbltstate.md">SetVideoProcessBltState</a>

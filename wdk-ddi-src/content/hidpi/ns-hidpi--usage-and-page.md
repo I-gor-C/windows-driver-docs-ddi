@@ -77,58 +77,23 @@ typedef struct _USAGE_AND_PAGE {
    USAGE_AND_PAGE u2
 );
 </pre>
-</p><dl>
-<dd>
+</p>
+
 <p><i>u1</i></p>
+
 <p><b>USAGE_AND_PAGE</b></p>
+
 <p>Specifies an extended usage</p>
-</dd>
-<dd>
+
 <p><i>u2</i></p>
-<p><b>USAGE_AND_PAGE</b></p>
-<p>Specifies an extended usage</p>
-</dd>
-<dd>
+
 <p><b>Return Value</b></p>
+
 <p><b>BOOLEAN</b></p>
+
 <p><b>HidP_IsSameUsageAndPage</b> returns one of the following status values:</p>
-<dl>
-<dd>
+
 <p><b>TRUE</b></p>
-<p>Usage <i>u1</i> is the same as usage <i>u2</i>.</p>
-</dd>
-<dd>
-<p><b>FALSE</b></p>
-<p>Usage <i>u1</i> is different than usage <i>u2</i>.</p>
-</dd>
-</dl>
-</dd>
-</dl><p><i>u1</i></p>
-
-<p><b>USAGE_AND_PAGE</b></p>
-
-<p>Specifies an extended usage</p>
-
-<p><i>u2</i></p>
-
-<p><b>USAGE_AND_PAGE</b></p>
-
-<p>Specifies an extended usage</p>
-
-<p><b>Return Value</b></p>
-
-<p><b>BOOLEAN</b></p>
-
-<p><b>HidP_IsSameUsageAndPage</b> returns one of the following status values:</p><dl>
-<dd>
-<p><b>TRUE</b></p>
-<p>Usage <i>u1</i> is the same as usage <i>u2</i>.</p>
-</dd>
-<dd>
-<p><b>FALSE</b></p>
-<p>Usage <i>u1</i> is different than usage <i>u2</i>.</p>
-</dd>
-</dl><p><b>TRUE</b></p>
 
 <p>Usage <i>u1</i> is the same as usage <i>u2</i>.</p>
 

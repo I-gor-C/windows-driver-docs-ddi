@@ -63,7 +63,7 @@ typedef struct _DRIVE_LAYOUT_INFORMATION_EX {
 ### -field <b>PartitionStyle</b>
 
 <dd>
-<p>Takes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a> enumerated value that specifies the type of partition table the disk contains.</p>
+<p>Takes a <a href="storage.partition_style">PARTITION_STYLE</a> enumerated value that specifies the type of partition table the disk contains.</p>
 </dd>
 
 ### -field <b>PartitionCount</b>
@@ -75,24 +75,24 @@ typedef struct _DRIVE_LAYOUT_INFORMATION_EX {
 ### -field <b>Mbr</b>
 
 <dd>
-<p>Indicates the drive layout information for a disk with a Master Boot Record. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_MBR.  See the definition of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552668">DRIVE_LAYOUT_INFORMATION_MBR</a> for more information.</p>
+<p>Indicates the drive layout information for a disk with a Master Boot Record. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_MBR.  See the definition of <a href="..\ntdddisk\ns-ntdddisk--drive-layout-information-mbr.md">DRIVE_LAYOUT_INFORMATION_MBR</a> for more information.</p>
 </dd>
 
 ### -field <b>Gpt</b>
 
 <dd>
-<p>Indicates the drive layout information for a disk with a GUID Partition Table. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_GPT. See definition of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552664">DRIVE_LAYOUT_INFORMATION_GPT</a> for more information. </p>
+<p>Indicates the drive layout information for a disk with a GUID Partition Table. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_GPT. See definition of <a href="..\ntdddisk\ns-ntdddisk--drive-layout-information-gpt.md">DRIVE_LAYOUT_INFORMATION_GPT</a> for more information. </p>
 </dd>
 
 ### -field <b>PartitionEntry</b>
 
 <dd>
-<p>Contains a variable-length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563754">PARTITION_INFORMATION_EX</a> structures, one for each partition on the drive. </p>
+<p>Contains a variable-length array of <a href="..\ntdddisk\ns-ntdddisk--partition-information-ex.md">PARTITION_INFORMATION_EX</a> structures, one for each partition on the drive. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>This structure is used for both reading and writing disk partition information. It is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff561454">IoReadPartitionTableEx</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561470">IoWritePartitionTableEx</a> and replaces the obsolete structure DRIVE_LAYOUT_INFORMATION that was used with <b>IoReadPartitionTable</b> and <b>IoWritePartitionTable</b>. The principal difference is that the new structures and routines support both Master Boot Record (MBR) partitions and GUID Partition Table (GPT) partitions, whereas the older routines and structures are only used with MBR partitions. </p>
+<p>This structure is used for both reading and writing disk partition information. It is used with <a href="..\ntddk\nf-ntddk-ioreadpartitiontableex.md">IoReadPartitionTableEx</a> and <a href="..\ntddk\nf-ntddk-iowritepartitiontableex.md">IoWritePartitionTableEx</a> and replaces the obsolete structure DRIVE_LAYOUT_INFORMATION that was used with <b>IoReadPartitionTable</b> and <b>IoWritePartitionTable</b>. The principal difference is that the new structures and routines support both Master Boot Record (MBR) partitions and GUID Partition Table (GPT) partitions, whereas the older routines and structures are only used with MBR partitions. </p>
 
 ## -requirements
 <table>
@@ -111,19 +111,19 @@ typedef struct _DRIVE_LAYOUT_INFORMATION_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561454">IoReadPartitionTableEx</a>
+<a href="..\ntddk\nf-ntddk-ioreadpartitiontableex.md">IoReadPartitionTableEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561470">IoWritePartitionTableEx</a>
+<a href="..\ntddk\nf-ntddk-iowritepartitiontableex.md">IoWritePartitionTableEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552668">DRIVE_LAYOUT_INFORMATION_MBR</a>
+<a href="..\ntdddisk\ns-ntdddisk--drive-layout-information-mbr.md">DRIVE_LAYOUT_INFORMATION_MBR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552664">DRIVE_LAYOUT_INFORMATION_GPT</a>
+<a href="..\ntdddisk\ns-ntdddisk--drive-layout-information-gpt.md">DRIVE_LAYOUT_INFORMATION_GPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a>
+<a href="storage.partition_style">PARTITION_STYLE</a>
 </dt>
 </dl>
 <p> </p>

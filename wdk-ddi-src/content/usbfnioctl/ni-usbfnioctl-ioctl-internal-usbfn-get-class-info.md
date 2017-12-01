@@ -54,20 +54,20 @@ req.product: Windows 10 or later.
 <p>None.</p>
 
 ### -output-buffer
-<p>A pointer to a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187988">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
+<p>A pointer to a buffer that contains a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
 
-<p>A pointer to a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187988">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
+<p>A pointer to a buffer that contains a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
 
-<p>A pointer to a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187988">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
+<p>A pointer to a buffer that contains a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.</p>
 
 ### -output-buffer-length
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187988">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
+<p>The size of a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
 
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187988">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
+<p>The size of a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
 
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187988">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
+<p>The size of a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
 
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187988">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
+<p>The size of a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure.</p>
 
 ### -in-out-buffer
 
@@ -90,16 +90,6 @@ I/O Status block
 <p>If the request is successful, the USB function class extension (UFX) returns STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it returns a status value for which NT_SUCCESS(status) equals FALSE. </p>
 
 ## -remarks
-<p>The class driver should send this IOCTL request during initialization so that it can enumerate the endpoints and attributes.</p>
-
-<p>The class driver should send this IOCTL request during initialization so that it can enumerate the endpoints and attributes.</p>
-
-<p>The class driver should send this IOCTL request during initialization so that it can enumerate the endpoints and attributes.</p>
-
-<p>The class driver should send this IOCTL request during initialization so that it can enumerate the endpoints and attributes.</p>
-
-<p>The class driver should send this IOCTL request during initialization so that it can enumerate the endpoints and attributes.</p>
-
 <p>The class driver should send this IOCTL request during initialization so that it can enumerate the endpoints and attributes.</p>
 
 ## -requirements

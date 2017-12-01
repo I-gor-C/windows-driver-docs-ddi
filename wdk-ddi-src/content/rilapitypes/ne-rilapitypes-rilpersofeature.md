@@ -7,7 +7,7 @@ old-location: netvista\rilpersofeature_2.htm
 old-project: netvista
 ms.assetid: 6969c6bd-6f8c-4f78-af99-48b18542a5bf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

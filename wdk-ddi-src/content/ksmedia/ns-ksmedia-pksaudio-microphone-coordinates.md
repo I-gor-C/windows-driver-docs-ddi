@@ -7,7 +7,7 @@ old-location: audio\ksaudio_microphone_coordinates.htm
 old-project: audio
 ms.assetid: 443fb3c0-0e75-4abc-b44f-047752b3cab7
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PKSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES, *PKSAUDIO_MICROPHONE_COORDINATES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -173,14 +173,9 @@ typedef struct {
 
 <p>If one of the microphones, for example <b>Mic 1</b>, happens to be dipped downward, or raised up, then this microphone would also have a vertical angle between its center line and the projection of its center line onto the x-y plane. This angle is represented by <i>wVericalAngle</i>.</p>
 
-<p>For more information about how to process a microphone array in Windows, see <a href="http://go.microsoft.com/fwlink/p/?linkid=8751">Audio Technologies for Windows </a> and refer to the following white papers:</p><dl>
-<dd>
+<p>For more information about how to process a microphone array in Windows, see <a href="http://go.microsoft.com/fwlink/p/?linkid=8751">Audio Technologies for Windows </a> and refer to the following white papers:</p>
+
 <p><a href="http://go.microsoft.com/fwlink/p/?linkid=120592">Microphone Array Support in Windows Vista</a></p>
-</dd>
-<dd>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=120593">How to Build and Use Microphone Arrays for Windows Vista</a></p>
-</dd>
-</dl><p><a href="http://go.microsoft.com/fwlink/p/?linkid=120592">Microphone Array Support in Windows Vista</a></p>
 
 <p><a href="http://go.microsoft.com/fwlink/p/?linkid=120593">How to Build and Use Microphone Arrays for Windows Vista</a></p>
 

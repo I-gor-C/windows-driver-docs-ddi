@@ -67,23 +67,13 @@ PLIST_ENTRY KeRundownQueue(
 ## -remarks
 <p>File systems call <b>KeRundownQueue</b> to discard all entries from a queue before freeing or reusing the queue object.</p>
 
-<p>If the queue object is to be reused, the caller must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549547">KeInitializeQueue</a> after calling <b>KeRundownQueue</b>, in order to reinitialize the queue object before reusing it. </p>
+<p>If the queue object is to be reused, the caller must call <a href="..\ntifs\nf-ntifs-keinitializequeue.md">KeInitializeQueue</a> after calling <b>KeRundownQueue</b>, in order to reinitialize the queue object before reusing it. </p>
 
 <p><b>KeRundownQueue</b> returns no information about how many queued entries are discarded. </p>
 
 <p><b>KeRundownQueue</b> should never be called for a queue if any threads are waiting on the queue object.</p>
 
-<p>For more information about using driver-managed internal queues, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544165">Driver-Managed Queues</a>. </p>
-
-<p>File systems call <b>KeRundownQueue</b> to discard all entries from a queue before freeing or reusing the queue object.</p>
-
-<p>If the queue object is to be reused, the caller must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549547">KeInitializeQueue</a> after calling <b>KeRundownQueue</b>, in order to reinitialize the queue object before reusing it. </p>
-
-<p><b>KeRundownQueue</b> returns no information about how many queued entries are discarded. </p>
-
-<p><b>KeRundownQueue</b> should never be called for a queue if any threads are waiting on the queue object.</p>
-
-<p>For more information about using driver-managed internal queues, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544165">Driver-Managed Queues</a>. </p>
+<p>For more information about using driver-managed internal queues, see <a href="kernel.driver_managed_queues">Driver-Managed Queues</a>. </p>
 
 ## -requirements
 <table>
@@ -140,7 +130,7 @@ PLIST_ENTRY KeRundownQueue(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549547">KeInitializeQueue</a>
+<a href="..\ntifs\nf-ntifs-keinitializequeue.md">KeInitializeQueue</a>
 </dt>
 </dl>
 <p> </p>

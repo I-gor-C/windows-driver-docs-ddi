@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The RemoveConnectionFromSession_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563973">RemoveConnectionFromSession</a> method, which is used to remove a connection from a session.</p>
+<p>The RemoveConnectionFromSession_OUT structure holds the output data for the <a href="storage.removeconnectionfromsession">RemoveConnectionFromSession</a> method, which is used to remove a connection from a session.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _RemoveConnectionFromSession_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>This specifies the status of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563973">RemoveConnectionFromSession</a> operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.</p>
+<p>This specifies the status of the <a href="storage.removeconnectionfromsession">RemoveConnectionFromSession</a> operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 </dd>
 </dl>
 
@@ -81,7 +81,7 @@ typedef struct _RemoveConnectionFromSession_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563973">RemoveConnectionFromSession</a>
+<a href="storage.removeconnectionfromsession">RemoveConnectionFromSession</a>
 </dt>
 </dl>
 <p> </p>

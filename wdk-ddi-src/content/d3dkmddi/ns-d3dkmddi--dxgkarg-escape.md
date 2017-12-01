@@ -67,7 +67,7 @@ typedef struct _DXGKARG_ESCAPE {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544541">D3DDDI_ESCAPEFLAGS</a> structure that indicates, in bit-field flags, how to share information.</p>
+<p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-escapeflags.md">D3DDDI_ESCAPEFLAGS</a> structure that indicates, in bit-field flags, how to share information.</p>
 </dd>
 
 ### -field <b>pPrivateDriverData</b>
@@ -117,7 +117,7 @@ typedef struct _DXGKARG_ESCAPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544541">D3DDDI_ESCAPEFLAGS</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-escapeflags.md">D3DDDI_ESCAPEFLAGS</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a>

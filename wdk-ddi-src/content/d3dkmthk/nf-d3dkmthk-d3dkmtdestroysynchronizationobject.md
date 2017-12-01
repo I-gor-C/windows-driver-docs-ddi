@@ -57,7 +57,7 @@ NTSTATUS D3DKMTDestroySynchronizationObject(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547898">D3DKMT_DESTROYSYNCHRONIZATIONOBJECT</a> structure that contains the handle to the synchronization object to destroy.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroysynchronizationobject.md">D3DKMT_DESTROYSYNCHRONIZATIONOBJECT</a> structure that contains the handle to the synchronization object to destroy.</p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS D3DKMTDestroySynchronizationObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547898">D3DKMT_DESTROYSYNCHRONIZATIONOBJECT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-destroysynchronizationobject.md">D3DKMT_DESTROYSYNCHRONIZATIONOBJECT</a>
 </dt>
 </dl>
 <p> </p>

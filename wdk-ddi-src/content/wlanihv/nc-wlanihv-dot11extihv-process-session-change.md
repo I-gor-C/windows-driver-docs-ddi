@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvprocesssessionchange.htm
 old-project: netvista
 ms.assetid: 17d5ab30-141a-4b7b-93f1-113fb1a39ba6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -161,14 +160,6 @@ DWORD APIENTRY Dot11ExtIhvProcessSessionChange(
      Winerror.h.</p>
 
 ## -remarks
-<p>The operating system calls the function to notify the IHV Extensions DLL whenever a switch in a user
-    session occurs.</p>
-
-<p>If the 
-    <i>uEventType</i> parameter is set to WTS_SESSION_LOGOFF, the IHV Extensions DLL must cancel all pending
-    user interface requests internally and must release any allocated resources for the user interface
-    requests.</p>
-
 <p>The operating system calls the function to notify the IHV Extensions DLL whenever a switch in a user
     session occurs.</p>
 

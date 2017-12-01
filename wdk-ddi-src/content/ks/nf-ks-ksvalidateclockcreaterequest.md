@@ -7,7 +7,7 @@ old-location: stream\ksvalidateclockcreaterequest.htm
 old-project: stream
 ms.assetid: ec10c10e-4604-47fc-a2e7-4df9d90acf0b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsValidateClockCreateRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices

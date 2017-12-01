@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Describes operations that the video processor can perform more efficiently than <a href="https://msdn.microsoft.com/library/windows/hardware/hh451703">VideoProcessorBlt</a>.</p>
+<p>Describes operations that the video processor can perform more efficiently than <a href="display.videoprocessorblt">VideoProcessorBlt</a>.</p>
 
 
 ## -syntax
@@ -59,19 +59,19 @@ typedef enum D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINTS {
 ### -field <a id="D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_ROTATION"></a><a id="d3dwddm2_0ddi_video_processor_behavior_hint_multiplane_overlay_rotation"></a><b>D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_ROTATION</b>
 
 <dd>
-<p>Indicates that multi-plane overlay hardware can perform the rotation operation more efficiently than <a href="https://msdn.microsoft.com/library/windows/hardware/hh451703">VideoProcessorBlt</a>. </p>
+<p>Indicates that multi-plane overlay hardware can perform the rotation operation more efficiently than <a href="display.videoprocessorblt">VideoProcessorBlt</a>. </p>
 </dd>
 
 ### -field <a id="D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_RESIZE"></a><a id="d3dwddm2_0ddi_video_processor_behavior_hint_multiplane_overlay_resize"></a><b>D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_RESIZE</b>
 
 <dd>
-<p>Indicates that the multi-plane overlay hardware can perform the scaling operation more efficiently than <a href="https://msdn.microsoft.com/library/windows/hardware/hh451703">VideoProcessorBlt</a>. </p>
+<p>Indicates that the multi-plane overlay hardware can perform the scaling operation more efficiently than <a href="display.videoprocessorblt">VideoProcessorBlt</a>. </p>
 </dd>
 
 ### -field <a id="D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_COLOR_SPACE_CONVERSION"></a><a id="d3dwddm2_0ddi_video_processor_behavior_hint_multiplane_overlay_color_space_conversion"></a><b>D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINT_MULTIPLANE_OVERLAY_COLOR_SPACE_CONVERSION</b>
 
 <dd>
-<p>Indicates that the multi-plane overlay hardware can perform the colorspace conversion operation more efficiently than <a href="https://msdn.microsoft.com/library/windows/hardware/hh451703">VideoProcessorBlt</a>. </p>
+<p>Indicates that the multi-plane overlay hardware can perform the colorspace conversion operation more efficiently than <a href="display.videoprocessorblt">VideoProcessorBlt</a>. </p>
 </dd>
 </dl>
 
@@ -111,7 +111,7 @@ typedef enum D3DWDDM2_0DDI_VIDEO_PROCESSOR_BEHAVIOR_HINTS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451703">VideoProcessorBlt</a>
+<a href="display.videoprocessorblt">VideoProcessorBlt</a>
 </dt>
 </dl>
 <p> </p>

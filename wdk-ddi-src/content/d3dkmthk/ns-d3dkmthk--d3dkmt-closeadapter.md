@@ -89,7 +89,7 @@ typedef struct _D3DKMT_CLOSEADAPTER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546787">D3DKMTCloseAdapter</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcloseadapter.md">D3DKMTCloseAdapter</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediastate_2.htm
 old-project: netvista
 ms.assetid: d3b89502-667c-45dd-af1c-05b7c8613d6c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILCALLMEDIASTATE,
 ms.prod: windows-hardware
 ms.technology: windows-devices

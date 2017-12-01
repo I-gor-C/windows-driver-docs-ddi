@@ -7,7 +7,7 @@ old-location: netvista\ndis_rss_processor_info.htm
 old-project: netvista
 ms.assetid: 7f40a815-0247-428c-a46f-d3cdbf7e8058
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_RSS_PROCESSOR_INFO, NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
 
 <dd>
 <p>The 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RSS_PROCESSOR_INFO</b> structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_RSS_PROCESSOR_INFO</b>. NDIS also sets the 
@@ -132,7 +132,7 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
 
 <dd>
 <p>The offset, in bytes, from the start of the structure to an array of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567271">NDIS_RSS_PROCESSOR</a> structures, with each
+     <a href="..\ntddndis\ns-ntddndis--ndis-rss-processor.md">NDIS_RSS_PROCESSOR</a> structures, with each
      entry describing an RSS processor on the system. The 
      <b>RssProcessorCount</b> member contains the number of <b>NDIS_RSS_PROCESSOR</b> structures in the array. The 
      <b>RssProcessorEntrySize</b> member contains the size of the <b>NDIS_RSS_PROCESSOR</b> structures in the
@@ -142,14 +142,14 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
 ### -field <b>RssProcessorCount</b>
 
 <dd>
-<p>The number of elements in the array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567271">NDIS_RSS_PROCESSOR</a> structures that follows this
+<p>The number of elements in the array of <a href="..\ntddndis\ns-ntddndis--ndis-rss-processor.md">NDIS_RSS_PROCESSOR</a> structures that follows this
      structure.</p>
 </dd>
 
 ### -field <b>RssProcessorEntrySize</b>
 
 <dd>
-<p>The size, in bytes, of elements in the array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567271">NDIS_RSS_PROCESSOR</a> structures that follows this
+<p>The size, in bytes, of elements in the array of <a href="..\ntddndis\ns-ntddndis--ndis-rss-processor.md">NDIS_RSS_PROCESSOR</a> structures that follows this
      structure.</p>
 </dd>
 
@@ -198,13 +198,13 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567271">NDIS_RSS_PROCESSOR</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-rss-processor.md">NDIS_RSS_PROCESSOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj849980">NDIS_RSS_PROFILE</a>
+<a href="netvista.ndis_rss_profile">NDIS_RSS_PROFILE</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndisgetrssprocessorinformation.md">
@@ -213,4 +213,4 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_PROCESSOR_INFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_PROCESSOR_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

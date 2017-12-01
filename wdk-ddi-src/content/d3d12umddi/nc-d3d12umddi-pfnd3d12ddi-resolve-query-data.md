@@ -112,8 +112,6 @@ VOID APIENTRY* pfnResolveQueryData(
 ## -remarks
 <p>Resolve functionality is used by applications to transform a query result previously stored in a query heap into the API defined format.  The resolved data is stored in a buffer.  The results can then be consumed by a shader, predication, or mapped and read on the CPU.</p>
 
-<p>Resolve functionality is used by applications to transform a query result previously stored in a query heap into the API defined format.  The resolved data is stored in a buffer.  The results can then be consumed by a shader, predication, or mapped and read on the CPU.</p>
-
 ## -requirements
 <table>
 <tr>

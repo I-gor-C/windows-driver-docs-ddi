@@ -7,7 +7,7 @@ old-location: netvista\wdi_txrx_capabilities.htm
 old-project: netvista
 ms.assetid: 7a1d3ffd-6f5e-429d-8c2f-a141f98ccad8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TXRX_TARGET_CAPABILITIES, WDI_TXRX_CAPABILITIES, *PWDI_TXRX_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices

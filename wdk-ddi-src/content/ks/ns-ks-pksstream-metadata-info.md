@@ -7,7 +7,7 @@ old-location: stream\ksstream_metadata_info.htm
 old-project: stream
 ms.assetid: 40C09BCD-407F-4F2D-8780-4DEC1C9246E8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSSTREAM_METADATA_INFO, KSSTREAM_METADATA_INFO, *PKSSTREAM_METADATA_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\rilunsolicitedssinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 772b2ab3-6ce6-4303-8b1e-145e4e28ee44
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -109,7 +109,7 @@ HBA_UINT32 HBA_API HBA_GetVersion(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556112">HBA_GetVendorLibraryAttributes</a>
+<a href="..\hbaapi\nf-hbaapi-hba-getvendorlibraryattributes.md">HBA_GetVendorLibraryAttributes</a>
 </dt>
 </dl>
 <p> </p>

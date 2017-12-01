@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY* VolBlt1(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451145">D3DDDIARG_VOLUMEBLT1</a> structure that defines the parameters for the volume bitblt operation.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-volumeblt1.md">D3DDDIARG_VOLUMEBLT1</a> structure that defines the parameters for the volume bitblt operation.</p>
 </dd>
 </dl>
 
@@ -121,10 +121,10 @@ __checkReturn HRESULT APIENTRY* VolBlt1(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451145">D3DDDIARG_VOLUMEBLT1</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-volumeblt1.md">D3DDDIARG_VOLUMEBLT1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

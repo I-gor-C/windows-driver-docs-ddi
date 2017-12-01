@@ -64,7 +64,7 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 ### -field <b>Enable</b>
 
 <dd>
-<p>[in] A Boolean value that specifies whether the input stream is enabled. The number of input streams that the runtime enables must not be more than the number, which the driver sets in the <b>MaxStreamStates</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563113">DXVAHDDDI_VPDEVCAPS</a> structure.  </p>
+<p>[in] A Boolean value that specifies whether the input stream is enabled. The number of input streams that the runtime enables must not be more than the number, which the driver sets in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure.  </p>
 </dd>
 
 ### -field <b>OutputIndex</b>
@@ -82,36 +82,36 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 ### -field <b>PastFrames</b>
 
 <dd>
-<p>[in] The number of past reference frames. This number must not be more than the number that the driver sets in the <b>PastFrames</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563109">DXVAHDDDI_VPCAPS</a> structure.  </p>
+<p>[in] The number of past reference frames. This number must not be more than the number that the driver sets in the <b>PastFrames</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpcaps.md">DXVAHDDDI_VPCAPS</a> structure.  </p>
 </dd>
 
 ### -field <b>FutureFrames</b>
 
 <dd>
-<p>[in] The number of future reference frames. This number must not be more than the number that the driver sets in the <b>FutureFrames</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563109">DXVAHDDDI_VPCAPS</a> structure.  </p>
+<p>[in] The number of future reference frames. This number must not be more than the number that the driver sets in the <b>FutureFrames</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpcaps.md">DXVAHDDDI_VPCAPS</a> structure.  </p>
 </dd>
 
 ### -field <b>pPastSurfaces</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563106">DXVAHDDDI_SURFACE</a> structures that describe the past reference surfaces. </p>
+<p>[in] An array of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-surface.md">DXVAHDDDI_SURFACE</a> structures that describe the past reference surfaces. </p>
 </dd>
 
 ### -field <b>InputSurface</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563106">DXVAHDDDI_SURFACE</a> structure that describes the input surface. </p>
+<p>[in] A <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-surface.md">DXVAHDDDI_SURFACE</a> structure that describes the input surface. </p>
 </dd>
 
 ### -field <b>pFutureSurfaces</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563106">DXVAHDDDI_SURFACE</a> structures that describe the future reference surfaces. </p>
+<p>[in] An array of <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-surface.md">DXVAHDDDI_SURFACE</a> structures that describe the future reference surfaces. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The driver must allocate the surfaces that the <b>pPastSurfaces</b>, <b>InputSurface</b>, and <b>pFutureSurfaces</b> members specify in the pool type, which the driver sets in the <b>InputPool</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563113">DXVAHDDDI_VPDEVCAPS</a> structure, and with one of the following surface types; otherwise, the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-videoprocessblthd.md">VideoProcessBltHD</a> function returns an error.</p>
+<p>The driver must allocate the surfaces that the <b>pPastSurfaces</b>, <b>InputSurface</b>, and <b>pFutureSurfaces</b> members specify in the pool type, which the driver sets in the <b>InputPool</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure, and with one of the following surface types; otherwise, the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-videoprocessblthd.md">VideoProcessBltHD</a> function returns an error.</p>
 
 <p>A video surface that is created with the DXVAHD_SURFACE_TYPE_VIDEO_INPUT or DXVAHD_SURFACE_TYPE_VIDEO_INPUT_PRIVATE type. </p>
 
@@ -159,9 +159,9 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 
 <p>InputFrameOrField = 0, 0, 15, 15, 30, 30,...</p>
 
-<p>The application should cause both the <b>OutputIndex</b> and <b>InputFrameOrField</b> members to reset when either the frame format or the output rate is changed so that the driver can reset its internal processing state. For more information about changing frame format or output rate, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563081">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff563092">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>.</p>
+<p>The application should cause both the <b>OutputIndex</b> and <b>InputFrameOrField</b> members to reset when either the frame format or the output rate is changed so that the driver can reset its internal processing state. For more information about changing frame format or output rate, see <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-frame-format-data.md">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a> and <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-output-rate-data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>.</p>
 
-<p>However, if the driver switches between normal and half rate (values from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563061">DXVAHDDDI_OUTPUT_RATE</a> enumeration), the driver should not require the reset. </p>
+<p>However, if the driver switches between normal and half rate (values from the <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-output-rate.md">DXVAHDDDI_OUTPUT_RATE</a> enumeration), the driver should not require the reset. </p>
 
 <p>If both the <b>OutputIndex</b> and <b>InputFrameOrField</b> members remain unchanged at the next process time, the driver determines that the frame is unchanged (for example, paused) in the stream processing. Therefore, the driver can optimize the frame by using cached data.</p>
 
@@ -181,17 +181,9 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 
 <p>Frame dropping from the input (for example, frame drops in the decoder). </p>
 
-<p>Both the past and the future reference frames are provided in the  <b>pPastSurfaces</b> and <b>pFutureSurfaces</b> array members in temporal order from older to newer frames continuously. For example, the order of the elements in the arrays are as shown in the following example:</p><dl>
-<dd>
+<p>Both the past and the future reference frames are provided in the  <b>pPastSurfaces</b> and <b>pFutureSurfaces</b> array members in temporal order from older to newer frames continuously. For example, the order of the elements in the arrays are as shown in the following example:</p>
+
 <p><b>pPastSurfaces</b> [] = {..., T-3, T-2, T-1}</p>
-</dd>
-<dd>
-<p><b>InputSurface</b> = T</p>
-</dd>
-<dd>
-<p><b>pFutureSurfaces</b> [] = {T+1, T+2, T+3,...}</p>
-</dd>
-</dl><p><b>pPastSurfaces</b> [] = {..., T-3, T-2, T-1}</p>
 
 <p><b>InputSurface</b> = T</p>
 
@@ -203,11 +195,7 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 
 <p>OutputIndex = 0, 0, 0,... </p>
 
-<p>InputFrameOrField = 0, 1, 2,...</p>
-
 <p>InputSurface = T, T+1, T+2,...</p>
-
-<p>Interlaced format at normal rate:  </p>
 
 <p>OutputIndex = 0, 1, 0, 1, 0, 1,... </p>
 
@@ -215,27 +203,9 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 
 <p>InputSurface = T, T, T+1, T+1, T+2, T+2,...</p>
 
-<p>Interlaced format at half rate:  </p>
-
-<p>OutputIndex = 0, 0, 0,... </p>
-
-<p>InputFrameOrField = 0, 2, 4,...</p>
-
-<p>InputSurface = T, T+1, T+2,...</p>
-
-<p>Interlaced format at 4/5 custom rate (3:2 inverse telecine, OutputFrames=4 and InputFrameOrField=10):  </p>
-
 <p>OutputIndex = 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3,... </p>
 
-<p>InputFrameOrField = 0, 0, 0, 0, 10, 10, 10, 10, 20, 20, 20, 20,...</p>
-
 <p>InputSurface = T, T, T, T, T+5, T+5, T+5, T+5, T+10, T+10, T+10, T+10,... </p>
-
-<p>Interlaced format at 4/15 custom rate (8:7 inverse telecine, OutputFrames=2 and InputFrameOrField=15):  </p>
-
-<p>OutputIndex = 0, 1, 0, 1, 0, 1,... </p>
-
-<p>InputFrameOrField = 0, 0, 15, 15, 30, 30,...</p>
 
 <p>InputSurface = T, T, T+7, T+7, T+15, T+15,...  (note that T+7 frame contains 15th field) </p>
 
@@ -266,22 +236,22 @@ typedef struct _DXVAHDDDI_STREAM_DATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563061">DXVAHDDDI_OUTPUT_RATE</a>
+<a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-output-rate.md">DXVAHDDDI_OUTPUT_RATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563081">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-frame-format-data.md">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563092">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-stream-state-output-rate-data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563106">DXVAHDDDI_SURFACE</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-surface.md">DXVAHDDDI_SURFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563109">DXVAHDDDI_VPCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpcaps.md">DXVAHDDDI_VPCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563113">DXVAHDDDI_VPDEVCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-dxvahd-videoprocessblthd.md">VideoProcessBltHD</a>

@@ -111,7 +111,7 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 <p>Its pitch must be returned by the display miniport driver.</p>
 </li>
 <li>
-<p>Its pitch value and surface address must be aligned to the value of the <b>AlignmentShift</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562004">DXGK_PRESENTATIONCAPS</a> structure (that is, <a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>-&gt;PresentationCaps.AlignmentShift).</p>
+<p>Its pitch value and surface address must be aligned to the value of the <b>AlignmentShift</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-presentationcaps.md">DXGK_PRESENTATIONCAPS</a> structure (that is, <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a>-&gt;PresentationCaps.AlignmentShift).</p>
 </li>
 </ul>
 </dd>
@@ -142,13 +142,13 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 <p>It is not visible to the CPU.</p>
 </li>
 <li>
-<p>It is used only during processing of commands that are specified by the <b>ClearTypeBlend</b> and <b>OpCode</b>.DXGK_GDIOP_BITBLT (copy-only) members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562026">DXGK_RENDERKM_COMMAND</a> structure.</p>
+<p>It is used only during processing of commands that are specified by the <b>ClearTypeBlend</b> and <b>OpCode</b>.DXGK_GDIOP_BITBLT (copy-only) members of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-renderkm-command.md">DXGK_RENDERKM_COMMAND</a> structure.</p>
 </li>
 <li>
-<p>The format is defined by the D3DDDIFMT_A8 value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration.</p>
+<p>The format is defined by the D3DDDIFMT_A8 value of the <a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a> enumeration.</p>
 </li>
 <li>
-<p>The gamma lookup allocation is created one time and never changes after it is initialized. The allocation is initialized in D3DDDIFMT_A8 format by issuing a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562026">DXGK_RENDERKM_COMMAND</a>-&gt;Opcode.DXGK_GDIOP_BITBLT command from a D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE surface.</p>
+<p>The gamma lookup allocation is created one time and never changes after it is initialized. The allocation is initialized in D3DDDIFMT_A8 format by issuing a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-renderkm-command.md">DXGK_RENDERKM_COMMAND</a>-&gt;Opcode.DXGK_GDIOP_BITBLT command from a D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE surface.</p>
 </li>
 </ul>
 </dd>
@@ -162,7 +162,7 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 <p>It is visible to the CPU. The allocation must be a linear format and in a cache-coherent GPU aperture segment.</p>
 </li>
 <li>
-<p>Its pitch value and surface address must be aligned to the value of the <b>AlignmentShift</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562004">DXGK_PRESENTATIONCAPS</a> structure (that is, <a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>-&gt;PresentationCaps.AlignmentShift).</p>
+<p>Its pitch value and surface address must be aligned to the value of the <b>AlignmentShift</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-presentationcaps.md">DXGK_PRESENTATIONCAPS</a> structure (that is, <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a>-&gt;PresentationCaps.AlignmentShift).</p>
 </li>
 <li>
 <p>The surface address is passed to the driver.</p>
@@ -189,7 +189,7 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 <p>It is not visible to the CPU, and the video memory manager will create it as a shared cross-adapter surface.</p>
 </li>
 <li>
-<p>Its pitch must be returned by the display miniport driver in the <b>Pitch</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546021">D3DKMDT_GDISURFACEDATA</a> structure.</p>
+<p>Its pitch must be returned by the display miniport driver in the <b>Pitch</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-gdisurfacedata.md">D3DKMDT_GDISURFACEDATA</a> structure.</p>
 </li>
 <li>
 <p>The pitch and height must have the required alignment for the cross-adapter resource. You can use the <b>D3DKMT_CROSS_ADAPTER_RESOURCE_PITCH_ALIGNMENT</b> and <b>D3DKMT_CROSS_ADAPTER_RESOURCE_HEIGHT_ALIGNMENT</b> constants to validate that the driver returns the correct pitch and height for the cross-adapter resource. These constants are defined in D3dukmdt.h.</p>
@@ -234,19 +234,19 @@ typedef enum _D3DKMDT_GDISURFACETYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546021">D3DKMDT_GDISURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-gdisurfacedata.md">D3DKMDT_GDISURFACEDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562004">DXGK_PRESENTATIONCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562026">DXGK_RENDERKM_COMMAND</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-renderkm-command.md">DXGK_RENDERKM_COMMAND</a>
 </dt>
 </dl>
 <p> </p>

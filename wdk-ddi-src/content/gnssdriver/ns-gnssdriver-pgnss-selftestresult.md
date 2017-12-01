@@ -7,7 +7,7 @@ old-location: sensors\gnss_selftestresult.htm
 old-project: sensors
 ms.assetid: 572A2C38-A990-4225-A3FC-6E899A248B1C
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT, *PGNSS_SELFTESTRESULT
 ms.prod: windows-hardware
 ms.technology: windows-devices

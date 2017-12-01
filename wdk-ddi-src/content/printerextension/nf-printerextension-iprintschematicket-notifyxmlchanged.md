@@ -68,8 +68,6 @@ HRESULT NotifyXmlChanged(
 ## -remarks
 <p>If the client retrieves the XML DOM object of the PrintTicket by calling <a href="print.iprintschemaelement_xmlnode">IPrintSchemaElement::XmlNode</a>, and makes direct modifications to the PrintTicket using XMLDOM APIs, then it is the responsibility of the client to call <b>IPrintSchemaTicket::NotifyXmlChanged</b> to notify the system that the PrintTicket content has been modified.</p>
 
-<p>If the client retrieves the XML DOM object of the PrintTicket by calling <a href="print.iprintschemaelement_xmlnode">IPrintSchemaElement::XmlNode</a>, and makes direct modifications to the PrintTicket using XMLDOM APIs, then it is the responsibility of the client to call <b>IPrintSchemaTicket::NotifyXmlChanged</b> to notify the system that the PrintTicket content has been modified.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -105,7 +103,7 @@ HRESULT NotifyXmlChanged(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>
+<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
 </dt>
 <dt>
 <a href="print.iprintschemaelement_xmlnode">IPrintSchemaElement::XmlNode</a>

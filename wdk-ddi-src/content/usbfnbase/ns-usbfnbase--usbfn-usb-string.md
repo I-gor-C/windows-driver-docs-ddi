@@ -89,7 +89,7 @@ typedef struct _USBFN_USB_STRING {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187899">IOCTL_INTERNAL_USBFN_REGISTER_USB_STRING</a>
+<a href="buses.ioctl_internal_usbfn_register_usb_string">IOCTL_INTERNAL_USBFN_REGISTER_USB_STRING</a>
 </dt>
 </dl>
 <p> </p>

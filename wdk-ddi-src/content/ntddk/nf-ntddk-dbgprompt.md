@@ -28,10 +28,8 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtDll.lib (user mode); 
-NtosKrnl.lib (kernel mode)
-req.dll: NtDll.dll (user mode); 
-NtosKrnl.exe (kernel mode)
+req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql: <= DIRQL
 req.iface: 
 ---
@@ -81,12 +79,6 @@ ULONG DbgPrompt(
 <p><b>DbgPrompt</b> returns the number of characters that the <i>Response</i> buffer received, including the terminating newline character. <b>DbgPrompt</b> returns zero if it receives no characters.</p>
 
 ## -remarks
-<p>The <b>DbgPrompt</b> routine displays the specified prompt string on the kernel debugger's display device and then reads a line of user input text. </p>
-
-<p>After <b>DbgPrompt</b> returns, the <i>Response</i> buffer contains the user's response, including the terminating newline character. The user response string is not NULL-terminated.</p>
-
-<p>The following code example asks if the user wants to continue and accepts the letter "y" for yes and the letter "n" for no.</p>
-
 <p>The <b>DbgPrompt</b> routine displays the specified prompt string on the kernel debugger's display device and then reads a line of user input text. </p>
 
 <p>After <b>DbgPrompt</b> returns, the <i>Response</i> buffer contains the user's response, including the terminating newline character. The user response string is not NULL-terminated.</p>

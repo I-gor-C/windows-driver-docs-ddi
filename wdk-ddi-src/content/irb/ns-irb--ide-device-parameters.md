@@ -167,7 +167,7 @@ typedef struct _IDE_DEVICE_PARAMETERS {
 ### -field <b>AddressTranslation</b>
 
 <dd>
-<p>Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff550290">ATA_ADDRESS_TRANSLATION</a> that specifies the sort of address translation used during data transfers.</p>
+<p>Contains an enumeration value of type <a href="..\irb\ne-irb-ata-address-translation.md">ATA_ADDRESS_TRANSLATION</a> that specifies the sort of address translation used during data transfers.</p>
 </dd>
 
 ### -field <b>MaxLba</b>
@@ -214,7 +214,7 @@ typedef struct _IDE_DEVICE_PARAMETERS {
 </dl>
 
 ## -remarks
-<p>The port driver passes a IDE_DEVICE_PARAMETERS structure to the miniport driver when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>.</p>
+<p>The port driver passes a IDE_DEVICE_PARAMETERS structure to the miniport driver when it calls <a href="storage.idehwinitialize">IdeHwInitialize</a>.</p>
 
 ## -requirements
 <table>
@@ -233,13 +233,13 @@ typedef struct _IDE_DEVICE_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559096">IDE_DEVICE_TYPE</a>
+<a href="..\irb\ne-irb-ide-device-type.md">IDE_DEVICE_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550290">ATA_ADDRESS_TRANSLATION</a>
+<a href="..\irb\ne-irb-ata-address-translation.md">ATA_ADDRESS_TRANSLATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>
+<a href="storage.idehwinitialize">IdeHwInitialize</a>
 </dt>
 </dl>
 <p> </p>

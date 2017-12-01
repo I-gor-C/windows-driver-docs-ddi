@@ -7,7 +7,7 @@ old-location: netvista\ndisdpracquirereadwritelock.htm
 old-project: netvista
 ms.assetid: 09B574FA-BCBA-4370-8F9F-BF30CE0BE52D
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisDprAcquireReadWriteLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>The 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a> function acquires a lock that the caller uses for either write or read
+  <a href="..\ndis\nf-ndis-ndisacquirereadwritelock.md">NdisDprAcquireReadWriteLock</a> function acquires a lock that the caller uses for either write or read
   access to the resources that are shared among driver threads.</p>
 
 
@@ -77,7 +77,7 @@ VOID NdisDprAcquireReadWriteLock(
 <dd>
 <p>A pointer to an opaque variable that tracks the state of the lock. This variable exists in the
      interval between the time the caller acquires and releases the lock. The caller must use a different
-     variable of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557067">LOCK_STATE</a> for each attempt that it makes to acquire the lock from the same non-ISR
+     variable of type <a href="..\ndis\ns-ndis--lock-state.md">LOCK_STATE</a> for each attempt that it makes to acquire the lock from the same non-ISR
      driver thread.</p>
 </dd>
 </dl>
@@ -86,21 +86,21 @@ VOID NdisDprAcquireReadWriteLock(
 <p>None</p>
 
 ## -remarks
-<p>The driver must initialize a variable of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff567277">NDIS_RW_LOCK</a> using the 
+<p>The driver must initialize a variable of type <a href="..\ndis\ns-ndis--ndis-rw-lock.md">NDIS_RW_LOCK</a> using the 
     <a href="..\ndis\nf-ndis-ndisinitializereadwritelock.md">
     NdisInitializeReadWriteLock</a> function before the driver calls any other 
     Ndis<i>Xxx</i>ReadWriteLock function. The driver must provide resident storage for the locks it uses.</p>
 
 <p>After acquiring a lock by using 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a>, the caller must release that lock by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh205389">NdisDprReleaseReadWriteLock</a> function. To decrement the reference count of the lock, a driver must call
+    <a href="..\ndis\nf-ndis-ndisacquirereadwritelock.md">NdisDprAcquireReadWriteLock</a>, the caller must release that lock by calling the 
+    <a href="..\ndis\nf-ndis-ndisreleasereadwritelock.md">NdisDprReleaseReadWriteLock</a> function. To decrement the reference count of the lock, a driver must call
     
     <b>NdisDprReleaseReadWriteLock</b> once for each call to 
     <b>NdisDprAcquireReadWriteLock</b>.</p>
 
-<p>It is safe to use both <a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a> and <b>NdisDprAcquireReadWriteLock</b> on the same lock.  However, calls must be balanced so that if the lock is acquired with <b>NdisDprAcquireReadWriteLock</b>, it must be released with <a href="https://msdn.microsoft.com/library/windows/hardware/hh205389">NdisDprReleaseReadWriteLock</a>.  Likewise, if the lock is acquired with <b>NdisAcquireReadWriteLock</b>, it must be released with <b>NdisReleaseReadWriteLock</b>.</p>
+<p>It is safe to use both <a href="..\ndis\nf-ndis-ndisacquirereadwritelock.md">NdisDprAcquireReadWriteLock</a> and <b>NdisDprAcquireReadWriteLock</b> on the same lock.  However, calls must be balanced so that if the lock is acquired with <b>NdisDprAcquireReadWriteLock</b>, it must be released with <a href="..\ndis\nf-ndis-ndisreleasereadwritelock.md">NdisDprReleaseReadWriteLock</a>.  Likewise, if the lock is acquired with <b>NdisAcquireReadWriteLock</b>, it must be released with <b>NdisReleaseReadWriteLock</b>.</p>
 
-<p>With some architectures, <a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a>     performs faster than <b>NdisAcquireReadWriteLock</b>.  Drivers can use <b>NdisDprAcquireReadWriteLock</b>  rather than  <b>NdisAcquireReadWriteLock</b> when it is certain that the current IRQL is already <b>DISPATCH_LEVEL</b>.  However, it is not required.  The overhead of calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552054">KeGetCurrentIrql</a> function is greater than the performance advantage of calling <b>NdisDprAcquireReadWriteLock</b> rather than <b>NdisAcquireReadWriteLock</b>.</p>
+<p>With some architectures, <a href="..\ndis\nf-ndis-ndisacquirereadwritelock.md">NdisDprAcquireReadWriteLock</a>     performs faster than <b>NdisAcquireReadWriteLock</b>.  Drivers can use <b>NdisDprAcquireReadWriteLock</b>  rather than  <b>NdisAcquireReadWriteLock</b> when it is certain that the current IRQL is already <b>DISPATCH_LEVEL</b>.  However, it is not required.  The overhead of calling the <a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a> function is greater than the performance advantage of calling <b>NdisDprAcquireReadWriteLock</b> rather than <b>NdisAcquireReadWriteLock</b>.</p>
 
 <p>To modify resources that are shared among driver threads, a driver thread must acquire a write lock.
     To simply monitor those resources, a driver thread must acquire a read-only lock. Read access does not
@@ -115,48 +115,7 @@ VOID NdisDprAcquireReadWriteLock(
     <a href="..\ndis\nc-ndis-miniport-isr.md">MiniportInterrupt</a> and/or 
     <a href="..\ndis\nc-ndis-miniport-disable-interrupt.md">
     MiniportDisableInterruptEx</a> functions. Instead, the driver must call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563681">NdisMSynchronizeWithInterruptEx</a> so that its 
-    <a href="..\ndis\nc-ndis-miniport-synchronize-interrupt.md">
-    MiniportSynchronizeInterrupt</a> function accesses such shared resources at the same DIRQL at which its
-    
-    <i>MiniportInterrupt</i> and/or 
-    <i>
-    MiniportDisableInterruptEx</i> functions do.</p>
-
-<p>For more information about acquiring and releasing NDIS spin locks, see 
-    <a href="netvista.synchronization_and_notification_in_network_drivers">Synchronization
-    and Notification in Network Drivers</a>.</p>
-
-<p>The driver must initialize a variable of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff567277">NDIS_RW_LOCK</a> using the 
-    <a href="..\ndis\nf-ndis-ndisinitializereadwritelock.md">
-    NdisInitializeReadWriteLock</a> function before the driver calls any other 
-    Ndis<i>Xxx</i>ReadWriteLock function. The driver must provide resident storage for the locks it uses.</p>
-
-<p>After acquiring a lock by using 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a>, the caller must release that lock by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh205389">NdisDprReleaseReadWriteLock</a> function. To decrement the reference count of the lock, a driver must call
-    
-    <b>NdisDprReleaseReadWriteLock</b> once for each call to 
-    <b>NdisDprAcquireReadWriteLock</b>.</p>
-
-<p>It is safe to use both <a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a> and <b>NdisDprAcquireReadWriteLock</b> on the same lock.  However, calls must be balanced so that if the lock is acquired with <b>NdisDprAcquireReadWriteLock</b>, it must be released with <a href="https://msdn.microsoft.com/library/windows/hardware/hh205389">NdisDprReleaseReadWriteLock</a>.  Likewise, if the lock is acquired with <b>NdisAcquireReadWriteLock</b>, it must be released with <b>NdisReleaseReadWriteLock</b>.</p>
-
-<p>With some architectures, <a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a>     performs faster than <b>NdisAcquireReadWriteLock</b>.  Drivers can use <b>NdisDprAcquireReadWriteLock</b>  rather than  <b>NdisAcquireReadWriteLock</b> when it is certain that the current IRQL is already <b>DISPATCH_LEVEL</b>.  However, it is not required.  The overhead of calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552054">KeGetCurrentIrql</a> function is greater than the performance advantage of calling <b>NdisDprAcquireReadWriteLock</b> rather than <b>NdisAcquireReadWriteLock</b>.</p>
-
-<p>To modify resources that are shared among driver threads, a driver thread must acquire a write lock.
-    To simply monitor those resources, a driver thread must acquire a read-only lock. Read access does not
-    require interlocked operations or contention for spin locks. Using read-only access helps to maintain
-    good operating system and driver performance.</p>
-
-<p>A driver thread should never hold a write lock for more than 25 microseconds. Holding a write lock for
-    a prolonged period degrades both operating system and driver performance.</p>
-
-<p>The driver cannot use a lock to protect resources from read or write access that its other functions
-    share with the 
-    <a href="..\ndis\nc-ndis-miniport-isr.md">MiniportInterrupt</a> and/or 
-    <a href="..\ndis\nc-ndis-miniport-disable-interrupt.md">
-    MiniportDisableInterruptEx</a> functions. Instead, the driver must call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563681">NdisMSynchronizeWithInterruptEx</a> so that its 
+    <a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">NdisMSynchronizeWithInterruptEx</a> so that its 
     <a href="..\ndis\nc-ndis-miniport-synchronize-interrupt.md">
     MiniportSynchronizeInterrupt</a> function accesses such shared resources at the same DIRQL at which its
     
@@ -185,7 +144,7 @@ VOID NdisDprAcquireReadWriteLock(
 <p>Version</p>
 </th>
 <td width="70%">
-<p>Deprecated for NDIS 6.20 and later drivers, which should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff560697">NdisAcquireRWLockRead</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff560698">NdisAcquireRWLockWrite</a> instead of <a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a>. Supported in NDIS 6.0 and 6.1.</p>
+<p>Deprecated for NDIS 6.20 and later drivers, which should use <a href="..\ndis\nf-ndis-ndisacquirerwlockread.md">NdisAcquireRWLockRead</a> or <a href="..\ndis\nf-ndis-ndisacquirerwlockwrite.md">NdisAcquireRWLockWrite</a> instead of <a href="..\ndis\nf-ndis-ndisacquirereadwritelock.md">NdisDprAcquireReadWriteLock</a>. Supported in NDIS 6.0 and 6.1.</p>
 </td>
 </tr>
 <tr>
@@ -221,7 +180,7 @@ VOID NdisDprAcquireReadWriteLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557067">LOCK_STATE</a>
+<a href="..\ndis\ns-ndis--lock-state.md">LOCK_STATE</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport-disable-interrupt.md">MiniportDisableInterruptEx</a>
@@ -234,22 +193,22 @@ VOID NdisDprAcquireReadWriteLock(
    MiniportSynchronizeInterrupt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560697">NdisAcquireRWLockRead</a>
+<a href="..\ndis\nf-ndis-ndisacquirerwlockread.md">NdisAcquireRWLockRead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560698">NdisAcquireRWLockWrite</a>
+<a href="..\ndis\nf-ndis-ndisacquirerwlockwrite.md">NdisAcquireRWLockWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562738">NdisInitializeReadWriteLock</a>
+<a href="..\ndis\nf-ndis-ndisinitializereadwritelock.md">NdisInitializeReadWriteLock</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
    NdisMSynchronizeWithInterruptEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh205389">NdisDprReleaseReadWriteLock</a>
+<a href="..\ndis\nf-ndis-ndisreleasereadwritelock.md">NdisDprReleaseReadWriteLock</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDprAcquireReadWriteLock function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDprAcquireReadWriteLock function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

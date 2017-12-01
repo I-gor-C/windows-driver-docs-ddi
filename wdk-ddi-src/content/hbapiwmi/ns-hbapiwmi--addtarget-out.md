@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The AddTarget_OUT structure is used by a WMI provider to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550136">AddTarget</a> WMI method to the WMI client.</p>
+<p>The AddTarget_OUT structure is used by a WMI provider to report the output parameter data of the <a href="storage.addtarget">AddTarget</a> WMI method to the WMI client.</p>
 
 
 ## -syntax
@@ -57,7 +57,7 @@ typedef struct _AddTarget_OUT {
 ### -field <b>HBAStatus</b>
 
 <dd>
-<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.</p>
+<p>Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.</p>
 </dd>
 </dl>
 
@@ -81,7 +81,7 @@ typedef struct _AddTarget_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550136">AddTarget</a>
+<a href="storage.addtarget">AddTarget</a>
 </dt>
 </dl>
 <p> </p>

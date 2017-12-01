@@ -94,19 +94,7 @@ VOID HwVidBugcheckCallback(
 
 <p>This function is called when a bug check occurs. The miniport driver can collect data that is to be appended to the dump file and write this data to the buffer. The driver must not write more than <i>BufferSize</i> bytes to the buffer.</p>
 
-<p>A video miniport driver registers the <i>HwVidBugcheckCallback</i> function by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570353">VideoPortRegisterBugcheckCallback</a> function. The <b>VideoPortRegisterBugcheckCallback</b> function exposes this video miniport driver-supplied callback to the system.</p>
-
-<p>To facilitate system recovery after a bug check, any registers that are accessed by this function must not impede the ability of the hardware to transfer to fallback mode, regardless of the state of the device. Also, the function <i>must</i> return control to its caller.</p>
-
-<p>Because a system can consist of multiple video miniport drivers, venders should add an identifying string to the data that this function appends to the dump file. </p>
-
-<p>The function is called at raised IRQL and must not attempt to access pageable code or data.</p>
-
-<p>This function is available in Windows XP SP1 and later. </p>
-
-<p>This function is called when a bug check occurs. The miniport driver can collect data that is to be appended to the dump file and write this data to the buffer. The driver must not write more than <i>BufferSize</i> bytes to the buffer.</p>
-
-<p>A video miniport driver registers the <i>HwVidBugcheckCallback</i> function by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570353">VideoPortRegisterBugcheckCallback</a> function. The <b>VideoPortRegisterBugcheckCallback</b> function exposes this video miniport driver-supplied callback to the system.</p>
+<p>A video miniport driver registers the <i>HwVidBugcheckCallback</i> function by calling the <a href="..\video\nf-video-videoportregisterbugcheckcallback.md">VideoPortRegisterBugcheckCallback</a> function. The <b>VideoPortRegisterBugcheckCallback</b> function exposes this video miniport driver-supplied callback to the system.</p>
 
 <p>To facilitate system recovery after a bug check, any registers that are accessed by this function must not impede the ability of the hardware to transfer to fallback mode, regardless of the state of the device. Also, the function <i>must</i> return control to its caller.</p>
 
@@ -141,7 +129,7 @@ VOID HwVidBugcheckCallback(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570353">VideoPortRegisterBugcheckCallback</a>
+<a href="..\video\nf-video-videoportregisterbugcheckcallback.md">VideoPortRegisterBugcheckCallback</a>
 </dt>
 </dl>
 <p> </p>

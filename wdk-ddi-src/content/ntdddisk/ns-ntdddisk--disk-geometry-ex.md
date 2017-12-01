@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>DISK_GEOMETRY_EX</b> structure is a variable-length structure composed of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552613">DISK_GEOMETRY</a> structure followed by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552629">DISK_PARTITION_INFO</a> structure followed, in turn, by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552601">DISK_DETECTION_INFO</a> structure. </p>
+<p>The <b>DISK_GEOMETRY_EX</b> structure is a variable-length structure composed of a <a href="..\ntdddisk\ns-ntdddisk--disk-geometry.md">DISK_GEOMETRY</a> structure followed by a <a href="..\ntdddisk\ns-ntdddisk--disk-partition-info.md">DISK_PARTITION_INFO</a> structure followed, in turn, by a <a href="..\ntdddisk\ns-ntdddisk--disk-detection-info.md">DISK_DETECTION_INFO</a> structure. </p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ typedef struct _DISK_GEOMETRY_EX {
 ### -field <b>Geometry</b>
 
 <dd>
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552613">DISK_GEOMETRY</a> for a description of this member. </p>
+<p>See <a href="..\ntdddisk\ns-ntdddisk--disk-geometry.md">DISK_GEOMETRY</a> for a description of this member. </p>
 </dd>
 
 ### -field <b>DiskSize</b>
@@ -71,12 +71,12 @@ typedef struct _DISK_GEOMETRY_EX {
 ### -field <b>Data</b>
 
 <dd>
-<p>Pointer to a variable length area containing a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552629">DISK_PARTITION_INFO</a> structure followed by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552601">DISK_DETECTION_INFO</a> structure.</p>
+<p>Pointer to a variable length area containing a <a href="..\ntdddisk\ns-ntdddisk--disk-partition-info.md">DISK_PARTITION_INFO</a> structure followed by a <a href="..\ntdddisk\ns-ntdddisk--disk-detection-info.md">DISK_DETECTION_INFO</a> structure.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>DISK_GEOMETRY_EX is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560359">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a> and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560371">IOCTL_DISK_GET_MEDIA_TYPES</a> IOCTLs, in order to retrieve information about the geometry of a physical disk (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).</p>
+<p>DISK_GEOMETRY_EX is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-drive-geometry-ex.md">IOCTL_DISK_GET_DRIVE_GEOMETRY_EX</a> and the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-media-types.md">IOCTL_DISK_GET_MEDIA_TYPES</a> IOCTLs, in order to retrieve information about the geometry of a physical disk (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).</p>
 
 <p>Because the partition and detect information are not at fixed locations within the <b>DISK_GEOMETRY_EX</b> structure, <i>ntdddisk.h</i> provides two macros for accessing this information. Both macros take a pointer to a structure of type <b>DISK_GEOMETRY_EX</b> as an argument:</p>
 
@@ -97,19 +97,19 @@ typedef struct _DISK_GEOMETRY_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552613">DISK_GEOMETRY</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-geometry.md">DISK_GEOMETRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552629">DISK_PARTITION_INFO</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-partition-info.md">DISK_PARTITION_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552601">DISK_DETECTION_INFO</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-detection-info.md">DISK_DETECTION_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560357">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-drive-geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560371">IOCTL_DISK_GET_MEDIA_TYPES</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-media-types.md">IOCTL_DISK_GET_MEDIA_TYPES</a>
 </dt>
 </dl>
 <p> </p>

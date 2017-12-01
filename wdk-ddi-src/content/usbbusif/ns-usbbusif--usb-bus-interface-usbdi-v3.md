@@ -127,13 +127,13 @@ typedef struct _USB_BUS_INTERFACE_USBDI_V3 {
 ### -field <b>InterfaceReference</b>
 
 <dd>
-<p>Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547833">InterfaceReference</a>. </p>
+<p>Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="kernel.interfacereference">InterfaceReference</a>. </p>
 </dd>
 
 ### -field <b>InterfaceDereference</b>
 
 <dd>
-<p>Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547829">InterfaceDereference</a>. </p>
+<p>Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="kernel.interfacedereference">InterfaceDereference</a>. </p>
 </dd>
 
 ### -field <b>GetUSBDIVersion</b>
@@ -145,7 +145,7 @@ typedef struct _USB_BUS_INTERFACE_USBDI_V3 {
 ### -field <b>QueryBusTime</b>
 
 <dd>
-<p>Pointer to a routine that returns the current 32-bit USB frame number. This routine replaces the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539128">USBD_QueryBusTime</a> function provided by usbd.sys. For more information about this routine, see <a href="buses.querybustime">QueryBusTime</a>.</p>
+<p>Pointer to a routine that returns the current 32-bit USB frame number. This routine replaces the <a href="..\usbdlib\nf-usbdlib-usbd-querybustime.md">USBD_QueryBusTime</a> function provided by usbd.sys. For more information about this routine, see <a href="buses.querybustime">QueryBusTime</a>.</p>
 </dd>
 
 ### -field <b>SubmitIsoOutUrb</b>
@@ -218,7 +218,7 @@ typedef struct _USB_BUS_INTERFACE_USBDI_V3 {
 <a href="buses.usb_interfaces">Bus Driver Interface Routines for USB Client Drivers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

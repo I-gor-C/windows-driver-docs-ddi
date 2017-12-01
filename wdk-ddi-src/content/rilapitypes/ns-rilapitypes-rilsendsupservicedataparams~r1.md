@@ -7,7 +7,7 @@ old-location: netvista\rilsendsupservicedataparams_2.htm
 old-project: netvista
 ms.assetid: de9c7d56-5b57-4809-b5cf-93234c934d55
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSENDSUPSERVICEDATAPARAMS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The STORAGE_DEVICE_NUMBER structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560551">IOCTL_STORAGE_GET_DEVICE_NUMBER</a> request to retrieve the FILE_DEVICE_<i>XXX</i> device type, the device number, and, for a device that can be partitioned, the partition number assigned to a device by the driver when the device is started. </p>
+<p>The STORAGE_DEVICE_NUMBER structure is used in conjunction with the <a href="..\ntddstor\ni-ntddstor-ioctl-storage-get-device-number.md">IOCTL_STORAGE_GET_DEVICE_NUMBER</a> request to retrieve the FILE_DEVICE_<i>XXX</i> device type, the device number, and, for a device that can be partitioned, the partition number assigned to a device by the driver when the device is started. </p>
 
 
 ## -syntax
@@ -76,7 +76,7 @@ typedef struct _STORAGE_DEVICE_NUMBER {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560551">IOCTL_STORAGE_GET_DEVICE_NUMBER</a> request is usually issued by a fault-tolerant disk driver.</p>
+<p>The <a href="..\ntddstor\ni-ntddstor-ioctl-storage-get-device-number.md">IOCTL_STORAGE_GET_DEVICE_NUMBER</a> request is usually issued by a fault-tolerant disk driver.</p>
 
 <p>The values in the STORAGE_DEVICE_NUMBER structure are guaranteed to remain unchanged until the system is rebooted. They are not guaranteed to be persistent across boots.</p>
 
@@ -97,7 +97,7 @@ typedef struct _STORAGE_DEVICE_NUMBER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560551">IOCTL_STORAGE_GET_DEVICE_NUMBER</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-get-device-number.md">IOCTL_STORAGE_GET_DEVICE_NUMBER</a>
 </dt>
 </dl>
 <p> </p>

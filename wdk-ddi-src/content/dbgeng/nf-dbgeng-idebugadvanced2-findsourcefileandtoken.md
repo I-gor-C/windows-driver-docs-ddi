@@ -7,7 +7,7 @@ old-location: debugger\findsourcefileandtoken.htm
 old-project: debugger
 ms.assetid: 92748e47-c536-4bf2-be10-91b8c5f1206d
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugAdvanced2, FindSourceFileAndToken, IDebugAdvanced2::FindSourceFileAndToken
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -94,7 +94,7 @@ HRESULT FindSourceFileAndToken(
 ### -param <i>FileToken</i> [in, optional]
 
 <dd>
-<p>Specifies a file token representing a file on a source server.  A file token can be obtained by setting <i>Which</i> to DEBUG_SRCFILE_SYMBOL_TOKEN in the method <a href="https://msdn.microsoft.com/library/windows/hardware/ff548321">GetSourceFileInformation</a>.</p>
+<p>Specifies a file token representing a file on a source server.  A file token can be obtained by setting <i>Which</i> to DEBUG_SRCFILE_SYMBOL_TOKEN in the method <a href="debugger.getsourcefileinformation">GetSourceFileInformation</a>.</p>
 <p>If the flag DEBUG_FIND_SOURCE_TOKEN_LOOKUP is set, <i>FileToken</i> must not be <b>NULL</b>.</p>
 </dd>
 
@@ -141,7 +141,7 @@ HRESULT FindSourceFileAndToken(
 <p> </p>
 
 ## -remarks
-<p>When the flag DEBUG_SRCFILE_SYMBOL_TOKEN is set in <i>Flags</i>, this method does not search for a file on the source path.  Instead, it looks up a variable associated with the file token provided in <i>FileToken</i>.  These variables are documented in the topic <a href="https://msdn.microsoft.com/library/windows/hardware/ff551958">Language Specification 1</a>.  For example, to retrieve the value of the variable SRCSRVCMD--the command to extract the source file from source control (also returned by the DEBUG_SRCFILE_SYMBOL_TOKEN_SOURCE_COMMAND_WIDE function of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548321">GetSourceFileInformation</a>)--set <i>File</i> to <b>%SRCSRVCMD%</b>.</p>
+<p>When the flag DEBUG_SRCFILE_SYMBOL_TOKEN is set in <i>Flags</i>, this method does not search for a file on the source path.  Instead, it looks up a variable associated with the file token provided in <i>FileToken</i>.  These variables are documented in the topic <a href="https://msdn.microsoft.com/library/windows/hardware/ff551958">Language Specification 1</a>.  For example, to retrieve the value of the variable SRCSRVCMD--the command to extract the source file from source control (also returned by the DEBUG_SRCFILE_SYMBOL_TOKEN_SOURCE_COMMAND_WIDE function of <a href="debugger.getsourcefileinformation">GetSourceFileInformation</a>)--set <i>File</i> to <b>%SRCSRVCMD%</b>.</p>
 
 <p>The engine uses the following steps--in order--to search for the file:  </p>
 
@@ -155,13 +155,11 @@ HRESULT FindSourceFileAndToken(
 
 <p>For each directory in the source path, <i>File</i> is appended to the directory.  If no match is found, this process is repeated and each time the first directory is removed from the beginning of the file path.  For example, if the source path contains a directory C:\a\b and <i>File</i> is c\d\e\foo.c, the file C:\a\b\e\foo.c is a match.</p>
 
-<p>The first match found is returned.</p>
-
 <p>The file <i>File</i> is looked up directly on the filing system.</p>
 
 <p>For more information about source files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560141">Using Source Files</a>.  For an overview of the source path and its syntax, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff556906">Source Path</a>.</p>
 
-<p>The DEBUG_FIND_SOURCE_<i>XXX</i> bit-flags are used to control the behavior of the methods <a href="https://msdn.microsoft.com/library/windows/hardware/ff545423">FindSourceFile</a> and <b>FindSourceFileAndToken</b> when searching for source files.</p>
+<p>The DEBUG_FIND_SOURCE_<i>XXX</i> bit-flags are used to control the behavior of the methods <a href="debugger.findsourcefile">FindSourceFile</a> and <b>FindSourceFileAndToken</b> when searching for source files.</p>
 
 <p>The flags can be any combination of values from the following table.</p>
 
@@ -183,57 +181,7 @@ HRESULT FindSourceFileAndToken(
 
 <p>Return a variable associated with a file token.</p>
 
-<p>If this flag is set, the other flags are ignored. This flag cannot be used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545423">FindSourceFile</a> method.</p>
-
-<p> </p>
-
-<p>The value DEBUG_FIND_SOURCE_DEFULT defines the default set of flags, which means that all of the flags in the previous table are turned off.</p>
-
-<p>When the flag DEBUG_SRCFILE_SYMBOL_TOKEN is set in <i>Flags</i>, this method does not search for a file on the source path.  Instead, it looks up a variable associated with the file token provided in <i>FileToken</i>.  These variables are documented in the topic <a href="https://msdn.microsoft.com/library/windows/hardware/ff551958">Language Specification 1</a>.  For example, to retrieve the value of the variable SRCSRVCMD--the command to extract the source file from source control (also returned by the DEBUG_SRCFILE_SYMBOL_TOKEN_SOURCE_COMMAND_WIDE function of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548321">GetSourceFileInformation</a>)--set <i>File</i> to <b>%SRCSRVCMD%</b>.</p>
-
-<p>The engine uses the following steps--in order--to search for the file:  </p>
-
-<p>If the source path contains any source servers and the flag DEBUG_FIND_SOURCE_NO_SRCSRV is not set, the source server in the source path is searched first.</p>
-
-<p>The first match found is returned.</p>
-
-<p>For each directory in the source path, an attempt is made to find an overlap between the end of the directory path and the beginning of the file path.  For example, if the source path contains a directory C:\a\b\c\d and <i>File</i> is c\d\e\foo.c, the file C:\a\b\c\d\e\foo.c is a match.</p>
-
-<p>If the flag DEBUG_FIND_SOURCE_BEST_MATCH is set, the match with the longest overlap is returned; otherwise, the first match is returned.</p>
-
-<p>For each directory in the source path, <i>File</i> is appended to the directory.  If no match is found, this process is repeated and each time the first directory is removed from the beginning of the file path.  For example, if the source path contains a directory C:\a\b and <i>File</i> is c\d\e\foo.c, the file C:\a\b\e\foo.c is a match.</p>
-
-<p>The first match found is returned.</p>
-
-<p>The file <i>File</i> is looked up directly on the filing system.</p>
-
-<p>For more information about source files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560141">Using Source Files</a>.  For an overview of the source path and its syntax, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff556906">Source Path</a>.</p>
-
-<p>The DEBUG_FIND_SOURCE_<i>XXX</i> bit-flags are used to control the behavior of the methods <a href="https://msdn.microsoft.com/library/windows/hardware/ff545423">FindSourceFile</a> and <b>FindSourceFileAndToken</b> when searching for source files.</p>
-
-<p>The flags can be any combination of values from the following table.</p>
-
-<p><b>DEBUG_FIND_SOURCE_FULL_PATH</b></p>
-
-<p>Always return the full canonical path name for the found file.</p>
-
-<p>If not set and the source path contains relative directories, relative path names can be returned.</p>
-
-<p><b>DEBUG_FIND_SOURCE_BEST_MATCH</b></p>
-
-<p>Continue searching after a match has been found to look for a better match.</p>
-
-<p><b>DEBUG_FIND_SOURCE_NO_SRCSRV</b></p>
-
-<p>Do not include source servers in the search.</p>
-
-<p><b>DEBUG_FIND_SOURCE_TOKEN_LOOKUP</b></p>
-
-<p>Return a variable associated with a file token.</p>
-
-<p>If this flag is set, the other flags are ignored. This flag cannot be used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545423">FindSourceFile</a> method.</p>
-
-<p> </p>
+<p>If this flag is set, the other flags are ignored. This flag cannot be used in the <a href="debugger.findsourcefile">FindSourceFile</a> method.</p>
 
 <p>The value DEBUG_FIND_SOURCE_DEFULT defines the default set of flags, which means that all of the flags in the previous table are turned off.</p>
 
@@ -264,24 +212,24 @@ HRESULT FindSourceFileAndToken(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549803">IDebugAdvanced2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugadvanced2.md">IDebugAdvanced2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549807">IDebugAdvanced3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545423">FindSourceFile</a>
+<a href="debugger.findsourcefile">FindSourceFile</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541495">DEBUG_FIND_SOURCE_XXX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548321">GetSourceFileInformation</a>
+<a href="debugger.getsourcefileinformation">GetSourceFileInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548367">GetSourcePathElement</a>
+<a href="debugger.getsourcepathelement">GetSourcePathElement</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugAdvanced2::FindSourceFileAndToken method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugAdvanced2::FindSourceFileAndToken method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: kernel\rtlulongtoshort.htm
 old-project: kernel
 ms.assetid: CF44513A-8BFE-453F-A3C1-BF50C86A663E
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlULongToShort
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: kernel\zwcreateenlistment.htm
 old-project: kernel
 ms.assetid: 5ffd8262-10b3-4c40-bd3e-050271338508
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: ZwCreateEnlistment
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,7 +82,7 @@ NTSTATUS ZwCreateEnlistment(
 <p>ENLISTMENT_QUERY_INFORMATION</p>
 </td>
 <td>
-<p>Query information about the enlistment (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567051">ZwQueryInformationEnlistment</a>). </p>
+<p>Query information about the enlistment (see <a href="..\wdm\nf-wdm-zwqueryinformationenlistment.md">ZwQueryInformationEnlistment</a>). </p>
 </td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ NTSTATUS ZwCreateEnlistment(
 <p>ENLISTMENT_SET_INFORMATION</p>
 </td>
 <td>
-<p>Set information for the enlistment (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567094">ZwSetInformationEnlistment</a>). </p>
+<p>Set information for the enlistment (see <a href="..\wdm\nf-wdm-zwsetinformationenlistment.md">ZwSetInformationEnlistment</a>). </p>
 </td>
 </tr>
 <tr>
@@ -98,7 +98,7 @@ NTSTATUS ZwCreateEnlistment(
 <p>ENLISTMENT_RECOVER</p>
 </td>
 <td>
-<p>Recover the enlistment (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567075">ZwRecoverEnlistment</a>). </p>
+<p>Recover the enlistment (see <a href="..\wdm\nf-wdm-zwrecoverenlistment.md">ZwRecoverEnlistment</a>). </p>
 </td>
 </tr>
 <tr>
@@ -106,7 +106,7 @@ NTSTATUS ZwCreateEnlistment(
 <p>ENLISTMENT_SUBORDINATE_RIGHTS</p>
 </td>
 <td>
-<p>Perform operations that a resource manager that is not superior performs (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567083">ZwRollbackEnlistment</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567040">ZwPrePrepareComplete</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567037">ZwPrepareComplete</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff566418">ZwCommitComplete</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567081">ZwRollbackComplete</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567113">ZwSinglePhaseReject</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567074">ZwReadOnlyEnlistment</a>). </p>
+<p>Perform operations that a resource manager that is not superior performs (see <a href="..\wdm\nf-wdm-zwrollbackenlistment.md">ZwRollbackEnlistment</a>, <a href="..\wdm\nf-wdm-zwprepreparecomplete.md">ZwPrePrepareComplete</a>, <a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a>, <a href="..\wdm\nf-wdm-zwcommitcomplete.md">ZwCommitComplete</a>, <a href="..\wdm\nf-wdm-zwrollbackcomplete.md">ZwRollbackComplete</a>, <a href="..\wdm\nf-wdm-zwsinglephasereject.md">ZwSinglePhaseReject</a>, <a href="..\wdm\nf-wdm-zwreadonlyenlistment.md">ZwReadOnlyEnlistment</a>). </p>
 </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ NTSTATUS ZwCreateEnlistment(
 <p>ENLISTMENT_SUPERIOR_RIGHTS</p>
 </td>
 <td>
-<p>Perform operations that a <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior transaction manager</a> must perform (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567039">ZwPrepareEnlistment</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567044">ZwPrePrepareEnlistment</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff566419">ZwCommitEnlistment</a>). </p>
+<p>Perform operations that a <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior transaction manager</a> must perform (see <a href="..\wdm\nf-wdm-zwprepareenlistment.md">ZwPrepareEnlistment</a>, <a href="..\wdm\nf-wdm-zwpreprepareenlistment.md">ZwPrePrepareEnlistment</a>, <a href="..\wdm\nf-wdm-zwcommitenlistment.md">ZwCommitEnlistment</a>). </p>
 </td>
 </tr>
 </table>
@@ -164,19 +164,19 @@ NTSTATUS ZwCreateEnlistment(
 ### -param <i>ResourceManagerHandle</i> [in]
 
 <dd>
-<p>A handle to the caller's <a href="https://msdn.microsoft.com/b44f2035-ee9f-453b-b12d-89ca36a8b280">resource manager object</a> that was obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff566427">ZwCreateResourceManager</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567026">ZwOpenResourceManager</a>.</p>
+<p>A handle to the caller's <a href="https://msdn.microsoft.com/b44f2035-ee9f-453b-b12d-89ca36a8b280">resource manager object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a> or <a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>.</p>
 </dd>
 
 ### -param <i>TransactionHandle</i> [in]
 
 <dd>
-<p>A handle to a <a href="https://msdn.microsoft.com/124105bd-70be-49b1-8ea4-af6ba1f3cf16">transaction object</a> that was obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff566429">ZwCreateTransaction</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567033">ZwOpenTransaction</a>. KTM adds this transaction to the list of transactions that the calling resource manager is handling.</p>
+<p>A handle to a <a href="https://msdn.microsoft.com/124105bd-70be-49b1-8ea4-af6ba1f3cf16">transaction object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a> or <a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>. KTM adds this transaction to the list of transactions that the calling resource manager is handling.</p>
 </dd>
 
 ### -param <i>ObjectAttributes</i> [in, optional]
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff557749">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547804">InitializeObjectAttributes</a> routine to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. This parameter is optional and can be <b>NULL</b>. </p>
+<p>A pointer to an <a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 
 ### -param <i>CreateOptions</i> [in, optional]
@@ -210,7 +210,7 @@ NTSTATUS ZwCreateEnlistment(
 ### -param <i>EnlistmentKey</i> [in, optional]
 
 <dd>
-<p>A pointer to caller-defined information that uniquely identifies the enlistment. The resource manager receives this pointer when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff566467">ZwGetNotificationResourceManager</a> or when KTM calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a> callback routine. The resource manager can maintain a reference count for this key by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff564726">TmReferenceEnlistmentKey</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff564671">TmDereferenceEnlistmentKey</a>. This parameter is optional and can be <b>NULL</b>. </p>
+<p>A pointer to caller-defined information that uniquely identifies the enlistment. The resource manager receives this pointer when it calls <a href="..\wdm\nf-wdm-zwgetnotificationresourcemanager.md">ZwGetNotificationResourceManager</a> or when KTM calls the <a href="kernel.resourcemanagernotification">ResourceManagerNotification</a> callback routine. The resource manager can maintain a reference count for this key by calling <a href="..\wdm\nf-wdm-tmreferenceenlistmentkey.md">TmReferenceEnlistmentKey</a> and <a href="..\wdm\nf-wdm-tmdereferenceenlistmentkey.md">TmDereferenceEnlistmentKey</a>. This parameter is optional and can be <b>NULL</b>. </p>
 </dd>
 </dl>
 
@@ -243,42 +243,19 @@ NTSTATUS ZwCreateEnlistment(
 <p>Resource managers that are not superior must include the ENLISTMENT_SUBORDINATE_RIGHTS flag in their access mask. </p>
 
 <p>
-<a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">Superior transaction managers</a> must include the ENLISTMENT_SUPERIOR_RIGHTS flag in their access masks. Typically, a superior transaction manager includes code that calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567083">ZwRollbackEnlistment</a>, so it must also include the ENLISTMENT_SUBORDINATE_RIGHTS flag.</p>
+<a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">Superior transaction managers</a> must include the ENLISTMENT_SUPERIOR_RIGHTS flag in their access masks. Typically, a superior transaction manager includes code that calls <a href="..\wdm\nf-wdm-zwrollbackenlistment.md">ZwRollbackEnlistment</a>, so it must also include the ENLISTMENT_SUBORDINATE_RIGHTS flag.</p>
 
-<p>A resource manager that calls <b>ZwCreateEnlistment</b> must eventually call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a> to close the object handle.</p>
-
-<p>Your resource manager can use the <i>EnlistmentKey</i> parameter to assign a unique value to each enlistment, such as a pointer to a data structure that contains information about the enlistment. For example, if the resource manager stores the enlistment object's handle in the structure, the resource manager can do the following:</p>
-
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566467">ZwGetNotificationResourceManager</a> to obtain a notification.</p>
-
-<p>Obtain the enlistment key value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a> structure.</p>
-
-<p>Use the enlistment key to find the stored enlistment object handle.</p>
-
-<p>Call routines that require the enlistment handle as input, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff566418">ZwCommitComplete</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567081">ZwRollbackComplete</a>.</p>
-
-<p>For more information about <b>ZwCreateEnlistment</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542865">Creating a Resource Manager</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff542870">Creating a Superior Transaction Manager</a>.</p>
-
-<p>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.</p>
-
-<p>A resource manager calls <b>ZwCreateEnlistment</b> to enlist in a transaction. </p>
-
-<p>Resource managers that are not superior must include the ENLISTMENT_SUBORDINATE_RIGHTS flag in their access mask. </p>
-
-<p>
-<a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">Superior transaction managers</a> must include the ENLISTMENT_SUPERIOR_RIGHTS flag in their access masks. Typically, a superior transaction manager includes code that calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567083">ZwRollbackEnlistment</a>, so it must also include the ENLISTMENT_SUBORDINATE_RIGHTS flag.</p>
-
-<p>A resource manager that calls <b>ZwCreateEnlistment</b> must eventually call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a> to close the object handle.</p>
+<p>A resource manager that calls <b>ZwCreateEnlistment</b> must eventually call <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> to close the object handle.</p>
 
 <p>Your resource manager can use the <i>EnlistmentKey</i> parameter to assign a unique value to each enlistment, such as a pointer to a data structure that contains information about the enlistment. For example, if the resource manager stores the enlistment object's handle in the structure, the resource manager can do the following:</p>
 
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566467">ZwGetNotificationResourceManager</a> to obtain a notification.</p>
+<p>Call <a href="..\wdm\nf-wdm-zwgetnotificationresourcemanager.md">ZwGetNotificationResourceManager</a> to obtain a notification.</p>
 
-<p>Obtain the enlistment key value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a> structure.</p>
+<p>Obtain the enlistment key value from the <a href="kernel.transaction_notification">TRANSACTION_NOTIFICATION</a> structure.</p>
 
 <p>Use the enlistment key to find the stored enlistment object handle.</p>
 
-<p>Call routines that require the enlistment handle as input, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff566418">ZwCommitComplete</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567081">ZwRollbackComplete</a>.</p>
+<p>Call routines that require the enlistment handle as input, such as <a href="..\wdm\nf-wdm-zwcommitcomplete.md">ZwCommitComplete</a> or <a href="..\wdm\nf-wdm-zwrollbackcomplete.md">ZwRollbackComplete</a>.</p>
 
 <p>For more information about <b>ZwCreateEnlistment</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542865">Creating a Resource Manager</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff542870">Creating a Superior Transaction Manager</a>.</p>
 
@@ -347,7 +324,7 @@ NTSTATUS ZwCreateEnlistment(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -358,78 +335,78 @@ NTSTATUS ZwCreateEnlistment(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547804">InitializeObjectAttributes</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557749">OBJECT_ATTRIBUTES</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--object-attributes.md">OBJECT_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a>
+<a href="kernel.transaction_notification">TRANSACTION_NOTIFICATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566418">ZwCommitComplete</a>
+<a href="..\wdm\nf-wdm-zwcommitcomplete.md">ZwCommitComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566419">ZwCommitEnlistment</a>
+<a href="..\wdm\nf-wdm-zwcommitenlistment.md">ZwCommitEnlistment</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566427">ZwCreateResourceManager</a>
+<a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566429">ZwCreateTransaction</a>
+<a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566467">ZwGetNotificationResourceManager</a>
+<a href="..\wdm\nf-wdm-zwgetnotificationresourcemanager.md">ZwGetNotificationResourceManager</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567008">ZwOpenEnlistment</a>
+<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567026">ZwOpenResourceManager</a>
+<a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567033">ZwOpenTransaction</a>
+<a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567037">ZwPrepareComplete</a>
+<a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567039">ZwPrepareEnlistment</a>
+<a href="..\wdm\nf-wdm-zwprepareenlistment.md">ZwPrepareEnlistment</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567040">ZwPrePrepareComplete</a>
+<a href="..\wdm\nf-wdm-zwprepreparecomplete.md">ZwPrePrepareComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567044">ZwPrePrepareEnlistment</a>
+<a href="..\wdm\nf-wdm-zwpreprepareenlistment.md">ZwPrePrepareEnlistment</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567051">ZwQueryInformationEnlistment</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationenlistment.md">ZwQueryInformationEnlistment</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567074">ZwReadOnlyEnlistment</a>
+<a href="..\wdm\nf-wdm-zwreadonlyenlistment.md">ZwReadOnlyEnlistment</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567075">ZwRecoverEnlistment</a>
+<a href="..\wdm\nf-wdm-zwrecoverenlistment.md">ZwRecoverEnlistment</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567081">ZwRollbackComplete</a>
+<a href="..\wdm\nf-wdm-zwrollbackcomplete.md">ZwRollbackComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567083">ZwRollbackEnlistment</a>
+<a href="..\wdm\nf-wdm-zwrollbackenlistment.md">ZwRollbackEnlistment</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567094">ZwSetInformationEnlistment</a>
+<a href="..\wdm\nf-wdm-zwsetinformationenlistment.md">ZwSetInformationEnlistment</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567113">ZwSinglePhaseReject</a>
+<a href="..\wdm\nf-wdm-zwsinglephasereject.md">ZwSinglePhaseReject</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateEnlistment routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateEnlistment routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

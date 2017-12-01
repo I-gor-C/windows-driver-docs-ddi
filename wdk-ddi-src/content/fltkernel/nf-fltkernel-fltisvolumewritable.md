@@ -78,11 +78,7 @@ NTSTATUS FltIsVolumeWritable(
 <p> </p>
 
 ## -remarks
-<p><b>FltIsVolumeWritable</b> sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560384">IOCTL_DISK_IS_WRITABLE</a> request to the underlying storage device that is associated with the given volume or instance. </p>
-
-<p>In versions of Windows prior to Windows Vista, the <b>FltIsVolumeWritable</b> routine accepted only volumes, not instances. </p>
-
-<p><b>FltIsVolumeWritable</b> sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560384">IOCTL_DISK_IS_WRITABLE</a> request to the underlying storage device that is associated with the given volume or instance. </p>
+<p><b>FltIsVolumeWritable</b> sends an <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-is-writable.md">IOCTL_DISK_IS_WRITABLE</a> request to the underlying storage device that is associated with the given volume or instance. </p>
 
 <p>In versions of Windows prior to Windows Vista, the <b>FltIsVolumeWritable</b> routine accepted only volumes, not instances. </p>
 
@@ -149,7 +145,7 @@ NTSTATUS FltIsVolumeWritable(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560384">IOCTL_DISK_IS_WRITABLE</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-is-writable.md">IOCTL_DISK_IS_WRITABLE</a>
 </dt>
 </dl>
 <p> </p>

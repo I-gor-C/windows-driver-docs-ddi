@@ -76,13 +76,13 @@ NTSTATUS KeyboardInitializationRoutine(
 ### -param <i>ReadPort</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543272">PI8042_SYNCH_READ_PORT</a> callback that reads from the port.</p>
+<p>Pointer to a <a href="..\ntdd8042\nc-ntdd8042-pi8042-synch-read-port.md">PI8042_SYNCH_READ_PORT</a> callback that reads from the port.</p>
 </dd>
 
 ### -param <i>WritePort</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543276">PI8042_SYNCH_WRITE_PORT</a> callback that writes to the port.</p>
+<p>Pointer to a <a href="..\ntdd8042\nc-ntdd8042-pi8042-synch-write-port.md">PI8042_SYNCH_WRITE_PORT</a> callback that writes to the port.</p>
 </dd>
 
 ### -param <i>TurnTranslationOn</i> [out]
@@ -96,10 +96,6 @@ NTSTATUS KeyboardInitializationRoutine(
 <p>A PI8042_KEYBOARD_INITIALIZATION_ROUTINE callback returns an appropriate NTSTATUS code.</p>
 
 ## -remarks
-<p>An upper-level keyboard filter driver can provide a PI8042_KEYBOARD_INITIALIZATION_ROUTINE callback.</p>
-
-<p>If an upper-level keyboard filter driver supplies an initialization callback, I8042prt calls the filter initialization callback when I8042prt initializes the keyboard. Default keyboard initialization includes the following operations: reset the keyboard, set the typematic rate and delay, and set the light-emitting diodes (LED).</p>
-
 <p>An upper-level keyboard filter driver can provide a PI8042_KEYBOARD_INITIALIZATION_ROUTINE callback.</p>
 
 <p>If an upper-level keyboard filter driver supplies an initialization callback, I8042prt calls the filter initialization callback when I8042prt initializes the keyboard. Default keyboard initialization includes the following operations: reset the keyboard, set the typematic rate and delay, and set the light-emitting diodes (LED).</p>
@@ -139,10 +135,10 @@ NTSTATUS KeyboardInitializationRoutine(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543272">PI8042_SYNCH_READ_PORT</a>
+<a href="..\ntdd8042\nc-ntdd8042-pi8042-synch-read-port.md">PI8042_SYNCH_READ_PORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543276">PI8042_SYNCH_WRITE_PORT</a>
+<a href="..\ntdd8042\nc-ntdd8042-pi8042-synch-write-port.md">PI8042_SYNCH_WRITE_PORT</a>
 </dt>
 </dl>
 <p> </p>

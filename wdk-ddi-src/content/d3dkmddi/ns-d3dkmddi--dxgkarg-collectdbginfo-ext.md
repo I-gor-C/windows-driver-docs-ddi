@@ -138,7 +138,7 @@ typedef struct _DXGKARG_COLLECTDBGINFO_EXT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557545">DXGKARG_COLLECTDBGINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-collectdbginfo.md">DXGKARG_COLLECTDBGINFO</a>
 </dt>
 <dt>
 <a href="display.dxgkddicollectdbginfo">DxgkDdiCollectDbgInfo</a>

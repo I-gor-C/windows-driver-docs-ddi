@@ -69,7 +69,7 @@ VOID APIENTRY* GetCaptureHandle(
 ### -param <i>pHandleData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406448">D3D11_1DDI_GETCAPTUREHANDLEDATA</a> structure that defines the resource allocation. </p>
+<p>A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi--d3d11-1ddi-getcapturehandledata.md">D3D11_1DDI_GETCAPTUREHANDLEDATA</a> structure that defines the resource allocation. </p>
 </dd>
 </dl>
 
@@ -77,9 +77,7 @@ VOID APIENTRY* GetCaptureHandle(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>Before the Microsoft Direct3D runtime calls the <i>GetCaptureHandle</i> function, it sets the <b>hResource</b>  and <b>ArrayIndex</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406448">D3D11_1DDI_GETCAPTUREHANDLEDATA</a> structure to specify a resource. When this function is called, the driver updates the structure with the kernel mode allocation handle associated with the specified resource, as well as the size of the resource data and its offset within an allocated block of memory.</p>
-
-<p>Before the Microsoft Direct3D runtime calls the <i>GetCaptureHandle</i> function, it sets the <b>hResource</b>  and <b>ArrayIndex</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406448">D3D11_1DDI_GETCAPTUREHANDLEDATA</a> structure to specify a resource. When this function is called, the driver updates the structure with the kernel mode allocation handle associated with the specified resource, as well as the size of the resource data and its offset within an allocated block of memory.</p>
+<p>Before the Microsoft Direct3D runtime calls the <i>GetCaptureHandle</i> function, it sets the <b>hResource</b>  and <b>ArrayIndex</b> members of the <a href="..\d3d10umddi\ns-d3d10umddi--d3d11-1ddi-getcapturehandledata.md">D3D11_1DDI_GETCAPTUREHANDLEDATA</a> structure to specify a resource. When this function is called, the driver updates the structure with the kernel mode allocation handle associated with the specified resource, as well as the size of the resource data and its offset within an allocated block of memory.</p>
 
 ## -requirements
 <table>
@@ -124,7 +122,7 @@ VOID APIENTRY* GetCaptureHandle(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406448">D3D11_1DDI_GETCAPTUREHANDLEDATA</a>
+<a href="..\d3d10umddi\ns-d3d10umddi--d3d11-1ddi-getcapturehandledata.md">D3D11_1DDI_GETCAPTUREHANDLEDATA</a>
 </dt>
 </dl>
 <p> </p>

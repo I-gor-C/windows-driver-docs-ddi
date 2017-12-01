@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <i>MRxCleanupFobx</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to request the network mini-redirector to close a file system object extension. RDBSS issues this call in response to receiving an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a> request on a file object.</p>
+<p>The <i>MRxCleanupFobx</i> routine is called by <a href="ifsk.the_rdbss_driver_and_library">RDBSS</a> to request the network mini-redirector to close a file system object extension. RDBSS issues this call in response to receiving an <a href="ifsk.irp_mj_cleanup">IRP_MJ_CLEANUP</a> request on a file object.</p>
 
 
 ## -prototype
@@ -76,10 +76,6 @@ NTSTATUS MRxCleanupFobx(
 
 <p><i>MRxCleanupFobx</i> cannot return a value of STATUS_RETRY indicating that the call should be retried. If a retry loop is necessary, it must be handled internally in the <i>MRxCleanupFobx</i> routine by the network mini-redirector.</p>
 
-<p><i>MRxCleanupFobx</i> is called by RDBSS as part of cleanup and close operations on a file object. </p>
-
-<p><i>MRxCleanupFobx</i> cannot return a value of STATUS_RETRY indicating that the call should be retried. If a retry loop is necessary, it must be handled internally in the <i>MRxCleanupFobx</i> routine by the network mini-redirector.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -107,46 +103,46 @@ NTSTATUS MRxCleanupFobx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549838">MRxAreFilesAliased</a>
+<a href="ifsk.mrxarefilesaliased">MRxAreFilesAliased</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549845">MRxCloseSrvOpen</a>
+<a href="ifsk.mrxclosesrvopen">MRxCloseSrvOpen</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549847">MRxCollapseOpen</a>
+<a href="ifsk.mrxcollapseopen">MRxCollapseOpen</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549862">MRxCreate</a>
+<a href="ifsk.mrxcreate">MRxCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549871">MRxDeallocateForFcb</a>
+<a href="ifsk.mrxdeallocateforfcb">MRxDeallocateForFcb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549872">MRxDeallocateForFobx</a>
+<a href="ifsk.mrxdeallocateforfobx">MRxDeallocateForFobx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549878">MRxExtendForCache</a>
+<a href="ifsk.mrxextendforcache">MRxExtendForCache</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549879">MRxExtendForNonCache</a>
+<a href="ifsk.mrxextendfornoncache">MRxExtendForNonCache</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550669">MRxFlush</a>
+<a href="ifsk.mrxflush">MRxFlush</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550677">MRxForceClosed</a>
+<a href="ifsk.mrxforceclosed">MRxForceClosed</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550691">MRxIsLockRealizable</a>
+<a href="ifsk.mrxislockrealizable">MRxIsLockRealizable</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550817">MRxShouldTryToCollapseThisOpen</a>
+<a href="ifsk.mrxshouldtrytocollapsethisopen">MRxShouldTryToCollapseThisOpen</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550839">MRxTruncate</a>
+<a href="ifsk.mrxtruncate">MRxTruncate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550844">MRxZeroExtend</a>
+<a href="ifsk.mrxzeroextend">MRxZeroExtend</a>
 </dt>
 </dl>
 <p> </p>

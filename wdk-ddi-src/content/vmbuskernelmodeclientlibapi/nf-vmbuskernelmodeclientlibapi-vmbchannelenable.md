@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelenable.htm
 old-project: netvista
 ms.assetid: A0256B3F-C35C-45AB-A825-0A82189F08DC
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbChannelEnable
 ms.prod: windows-hardware
 ms.technology: windows-devices

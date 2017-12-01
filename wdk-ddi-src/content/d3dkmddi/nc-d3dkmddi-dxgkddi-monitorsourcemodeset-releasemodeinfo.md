@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>pfnReleaseModeInfo</b> function releases a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546133">D3DKMDT_MONITOR_SOURCE_MODE</a> structure that the VidPN manager previously provided to the display miniport driver.</p>
+<p>The <b>pfnReleaseModeInfo</b> function releases a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-monitor-source-mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a> structure that the VidPN manager previously provided to the display miniport driver.</p>
 
 
 ## -prototype
@@ -61,7 +61,7 @@ NTSTATUS APIENTRY pfnReleaseModeInfo(
 ### -param <i>hMonitorSourceModeSet</i> [in]
 
 <dd>
-<p>[in] A handle to a monitor source mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568433">Monitor interface</a>.</p>
+<p>[in] A handle to a monitor source mode set object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitor-acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a> function of the <a href="display.monitor_interface">Monitor interface</a>.</p>
 </dd>
 
 ### -param <i>pMonitorSourceModeInfo</i> [in]
@@ -83,11 +83,7 @@ NTSTATUS APIENTRY pfnReleaseModeInfo(
 <p> </p>
 
 ## -remarks
-<p>When you have finished using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546133">D3DKMDT_MONITOR_SOURCE_MODE</a> structure that you obtained by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a> or <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a>, you must release the structure by calling <b>pfnReleaseModeInfo</b>.</p>
-
-<p>The D3DKMDT_HMONITORSOURCEMODESET data type is defined in <i>D3dkmdt.h</i>. </p>
-
-<p>When you have finished using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546133">D3DKMDT_MONITOR_SOURCE_MODE</a> structure that you obtained by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a> or <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a>, you must release the structure by calling <b>pfnReleaseModeInfo</b>.</p>
+<p>When you have finished using a <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-monitor-source-mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a> structure that you obtained by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a> or <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a>, you must release the structure by calling <b>pfnReleaseModeInfo</b>.</p>
 
 <p>The D3DKMDT_HMONITORSOURCEMODESET data type is defined in <i>D3dkmdt.h</i>. </p>
 
@@ -140,7 +136,7 @@ NTSTATUS APIENTRY pfnReleaseModeInfo(
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi-monitorsourcemodeset-acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546133">D3DKMDT_MONITOR_SOURCE_MODE</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-monitor-source-mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a>
 </dt>
 </dl>
 <p> </p>

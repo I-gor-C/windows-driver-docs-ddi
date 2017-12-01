@@ -57,7 +57,7 @@ NTSTATUS D3DKMTOpenResource(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548145">D3DKMT_OPENRESOURCE</a> structure that contains parameters for opening a shared resource.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openresource.md">D3DKMT_OPENRESOURCE</a> structure that contains parameters for opening a shared resource.</p>
 </dd>
 </dl>
 
@@ -74,7 +74,7 @@ NTSTATUS D3DKMTOpenResource(
 
 <p>This function might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a> values.</p>
 
-<p>The following code example demonstrates how an OpenGL ICD can use <a href="https://msdn.microsoft.com/library/windows/hardware/ff547124">D3DKMTQueryResourceInfo</a> and <b>D3DKMTOpenResource</b> to open a shared resource.</p>
+<p>The following code example demonstrates how an OpenGL ICD can use <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfo.md">D3DKMTQueryResourceInfo</a> and <b>D3DKMTOpenResource</b> to open a shared resource.</p>
 
 ## -remarks
 
@@ -134,10 +134,10 @@ NTSTATUS D3DKMTOpenResource(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548145">D3DKMT_OPENRESOURCE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openresource.md">D3DKMT_OPENRESOURCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547124">D3DKMTQueryResourceInfo</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfo.md">D3DKMTQueryResourceInfo</a>
 </dt>
 </dl>
 <p> </p>

@@ -86,12 +86,6 @@ VOID ScsiPortMoveMemory(
 
 <p>Each of the given buffer areas must be at least <b>sizeof</b>(<i>Length</i>).</p>
 
-<p><b>ScsiPortMoveMemory</b> can be called if a miniport driver needs to copy data from one system-allocated area to another. For example, a miniport driver might call <b>ScsiPortMoveMemory</b> to copy pertinent SRB values into the driver's SRB extension.</p>
-
-<p>The (<i>ReadBuffer</i> + <i>Length</i>) can overlap the area pointed to by <i>WriteBuffer</i>. </p>
-
-<p>Each of the given buffer areas must be at least <b>sizeof</b>(<i>Length</i>).</p>
-
 ## -requirements
 <table>
 <tr>

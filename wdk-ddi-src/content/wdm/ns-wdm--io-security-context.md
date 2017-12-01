@@ -7,7 +7,7 @@ old-location: kernel\io_security_context.htm
 old-project: kernel
 ms.assetid: 6500c46b-ae39-4c91-8b84-14df0a7046a1
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IO_SECURITY_CONTEXT, IO_SECURITY_CONTEXT, *PIO_SECURITY_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ typedef struct _IO_SECURITY_CONTEXT {
 ### -field <b>AccessState</b>
 
 <dd>
-<p>Reserved for use by file systems and file system filter drivers. This member is a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538840">ACCESS_STATE</a> structure that contains the object's subject context, granted access types, and remaining desired access types. </p>
+<p>Reserved for use by file systems and file system filter drivers. This member is a pointer to an <a href="..\wdm\ns-wdm--access-state.md">ACCESS_STATE</a> structure that contains the object's subject context, granted access types, and remaining desired access types. </p>
 </dd>
 
 ### -field <b>DesiredAccess</b>
@@ -106,7 +106,7 @@ typedef struct _IO_SECURITY_CONTEXT {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538840">ACCESS_STATE</a>
+<a href="..\wdm\ns-wdm--access-state.md">ACCESS_STATE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
@@ -114,4 +114,4 @@ typedef struct _IO_SECURITY_CONTEXT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_SECURITY_CONTEXT structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_SECURITY_CONTEXT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

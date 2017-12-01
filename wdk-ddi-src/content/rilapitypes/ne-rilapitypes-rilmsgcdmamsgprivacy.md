@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgprivacy_2.htm
 old-project: netvista
 ms.assetid: 1a143103-a952-410c-a143-153685f022dd
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

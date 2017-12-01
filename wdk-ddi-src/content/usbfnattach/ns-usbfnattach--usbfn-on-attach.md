@@ -59,13 +59,13 @@ typedef struct _USBFN_ON_ATTACH {
 ### -field <b>PortType</b>
 
 <dd>
-<p>Detected port type defined by one of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188004">USBFN_PORT_TYPE</a>-typed values.</p>
+<p>Detected port type defined by one of the <a href="buses.usbfn_port_type">USBFN_PORT_TYPE</a>-typed values.</p>
 </dd>
 
 ### -field <b>AttachAction</b>
 
 <dd>
-<p>The operation that must be performed depending on the port type. This value is defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187985">USBFN_ATTACH_ACTION</a> enumeration.</p>
+<p>The operation that must be performed depending on the port type. This value is defined in the <a href="buses.usbfn_attach_action">USBFN_ATTACH_ACTION</a> enumeration.</p>
 </dd>
 </dl>
 
@@ -89,7 +89,7 @@ typedef struct _USBFN_ON_ATTACH {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187995">USBFN_GET_ATTACH_ACTION</a>
+<a href="buses.usbfn_get_attach_action">USBFN_GET_ATTACH_ACTION</a>
 </dt>
 </dl>
 <p> </p>

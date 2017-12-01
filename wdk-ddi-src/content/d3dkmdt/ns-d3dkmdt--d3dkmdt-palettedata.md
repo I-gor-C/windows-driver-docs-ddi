@@ -110,7 +110,7 @@ typedef struct _D3DKMDT_PALETTEDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557655">DXGKARG_SETPALETTE</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkarg-setpalette.md">DXGKARG_SETPALETTE</a>
 </dt>
 <dt>
 <a href="display.dxgkddisetpalette">DxgkDdiSetPalette</a>

@@ -124,7 +124,7 @@ typedef struct _D3DDDI_PRESENTFLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543240">D3DDDIARG_PRESENT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-present.md">D3DDDIARG_PRESENT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-present.md">Present</a>

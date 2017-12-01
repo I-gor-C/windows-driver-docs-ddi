@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Describes video memory resources that are to be reclaimed and that the user-mode display driver  previously offered  for reuse. Used with the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a> function.</p>
+<p>Describes video memory resources that are to be reclaimed and that the user-mode display driver  previously offered  for reuse. Used with the  <a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a> function.</p>
 
 
 ## -syntax
@@ -128,10 +128,10 @@ typedef struct _D3DDDICB_RECLAIMALLOCATIONS {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-createresource.md">CreateResource(D3D11)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541697">D3D10DDIARG_CREATERESOURCE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg-createresource.md">D3D10DDIARG_CREATERESOURCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a>
+<a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a>
 </dt>
 </dl>
 <p> </p>

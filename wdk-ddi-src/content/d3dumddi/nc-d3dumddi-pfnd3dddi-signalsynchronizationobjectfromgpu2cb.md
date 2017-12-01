@@ -67,7 +67,7 @@ HRESULT APIENTRY CALLBACK* pfnSignalSynchronizationObjectFromGpu2Cb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn701956">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2</a> structure that provides the details of the requested operation.
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicb-signalsynchronizationobjectfromgpu2.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2</a> structure that provides the details of the requested operation.
 
 </p>
 </dd>
@@ -131,7 +131,7 @@ HRESULT APIENTRY CALLBACK* pfnSignalSynchronizationObjectFromGpu2Cb(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-signalsynchronizationobjectfromgpucb.md">pfnSignalSynchronizationObjectFromGpuCb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn701956">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddicb-signalsynchronizationobjectfromgpu2.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2</a>
 </dt>
 </dl>
 <p> </p>

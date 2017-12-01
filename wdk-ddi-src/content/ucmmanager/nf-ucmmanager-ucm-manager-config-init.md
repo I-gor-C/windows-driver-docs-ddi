@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187932">UCM_MANAGER_CONFIG</a> structure.</p>
+<p>Initializes a <a href="buses.ucm_manager_config">UCM_MANAGER_CONFIG</a> structure.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ FORCEINLINE void UCM_MANAGER_CONFIG_INIT(
 ### -param <i> Config</i> [out]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt187932">UCM_MANAGER_CONFIG</a> structure to initialize.</p>
+<p>Pointer to a caller-allocated <a href="buses.ucm_manager_config">UCM_MANAGER_CONFIG</a> structure to initialize.</p>
 </dd>
 </dl>
 
@@ -117,7 +117,7 @@ FORCEINLINE void UCM_MANAGER_CONFIG_INIT(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187932">UCM_MANAGER_CONFIG</a>
+<a href="buses.ucm_manager_config">UCM_MANAGER_CONFIG</a>
 </dt>
 </dl>
 <p> </p>

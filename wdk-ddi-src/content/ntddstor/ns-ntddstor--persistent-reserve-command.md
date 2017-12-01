@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The PERSISTENT_RESERVE_COMMAND structure is used together with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560582">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560586">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> requests to obtain and control information about persistent reservations and reservation keys that are active within a device server.</p>
+<p>The PERSISTENT_RESERVE_COMMAND structure is used together with the <a href="..\ntddstor\ni-ntddstor-ioctl-storage-persistent-reserve-in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> and <a href="..\ntddstor\ni-ntddstor-ioctl-storage-persistent-reserve-out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> requests to obtain and control information about persistent reservations and reservation keys that are active within a device server.</p>
 
 
 ## -syntax
@@ -183,10 +183,10 @@ RESERVATION_SCOPE_ELEMENT
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560582">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-persistent-reserve-in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560586">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-persistent-reserve-out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a>
 </dt>
 </dl>
 <p> </p>

@@ -65,7 +65,7 @@ typedef struct _PDEV_USE_TRUE_COLOR {
 ## -remarks
 <p>This structure is available in Windows XP and later. </p>
 
-<p>The <i>pBuf</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553189">IPrintOemPS2::GetPDEVAdjustment</a> method can point to a structure of this type.</p>
+<p>The <i>pBuf</i> parameter of the <a href="print.iprintoemps2_getpdevadjustment">IPrintOemPS2::GetPDEVAdjustment</a> method can point to a structure of this type.</p>
 
 <p>A plug-in can use this flag to turn color output on or off for Pscript5 printer output data. If the plug-in chooses to not change the current setting, it can simply return S_FALSE.</p>
 
@@ -86,7 +86,7 @@ typedef struct _PDEV_USE_TRUE_COLOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553189">IPrintOemPS2::GetPDEVAdjustment</a>
+<a href="print.iprintoemps2_getpdevadjustment">IPrintOemPS2::GetPDEVAdjustment</a>
 </dt>
 </dl>
 <p> </p>

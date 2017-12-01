@@ -7,7 +7,7 @@ old-location: netvista\dot11extstartonex.htm
 old-project: netvista
 ms.assetid: d4117da4-349a-4143-b2a8-d4edf6c02e7b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -104,7 +103,7 @@ DWORD WINAPI * Dot11ExtStartOneX(
       DLL receives an EAPOL packet through a call to the 
       <a href="..\wlanihv\nc-wlanihv-dot11extihv-receive-packet.md">Dot11ExtIhvReceivePacket</a> IHV
       Handler function, the DLL must call 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547541">Dot11ExtProcessOneXPacket</a> to
+      <a href="..\wlanihv\nc-wlanihv-dot11ext-process-onex-packet.md">Dot11ExtProcessOneXPacket</a> to
       forward the packet to the operating system.</p>
 
 <p>For more information about EAPOL packets, refer to Clause 7 of the IEEE 802.1X-2001 standard.</p>
@@ -115,49 +114,7 @@ DWORD WINAPI * Dot11ExtStartOneX(
       progress.</p>
 
 <p>The IHV Extensions DLL can cancel the 802.1X authentication operation by calling 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547614">Dot11ExtStopOneX</a>.</p>
-
-<p>For more information about using the 802.1X module for authentication, see 
-    <a href="netvista.interface_to_the_native_802_11_802_1x_module">Interface to the Native
-    802.11 802.1X Module</a>.</p>
-
-<p>The IHV Extensions DLL can initiate an 802.1X authentication operation by using the 802.1X module of
-    the Native 802.11 framework. This allows the DLL to use the standard extensible authentication protocol
-    (EAP) algorithms that are supported by the operating system.</p>
-
-<p>The IHV Extensions DLL initiates the 802.1X authentication operation by calling the 
-    <b>Dot11ExtStartOneX</b> function. 
-    <b>Dot11ExtStartOneX</b> can only be called either during a post-association
-    operation or after the operation has completed. For more information about this operation, see 
-    <a href="NULL">Post-Association Operations</a>.</p>
-
-<p>When the 
-    <b>Dot11ExtStartOneX</b> function is called, the operating system sends an EAP
-    over LAN (EAPOL) Start packet to the AP. If the AP fails to respond after three transmissions of the
-    EAPOL-Start packet, the operating system fails the 802.1X authentication operation and calls the 
-    <a href="..\wlanihv\nc-wlanihv-dot11extihv-onex-indicate-result.md">
-    Dot11ExtIhvOneXIndicateResult</a> IHV Handler function. For more information about the EAPOL-Start
-    packet, refer to Clause 7.5 and Clause 8.4.2 of the IEEE 802.1X-1999 standard.</p>
-
-<p>After the 802.1X authentication operation is initiated, the IHV Extensions DLL must follow these
-    guidelines.</p>
-
-<p>The IHV Extensions must forward all EAPOL packets to the operating system for processing. When the
-      DLL receives an EAPOL packet through a call to the 
-      <a href="..\wlanihv\nc-wlanihv-dot11extihv-receive-packet.md">Dot11ExtIhvReceivePacket</a> IHV
-      Handler function, the DLL must call 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547541">Dot11ExtProcessOneXPacket</a> to
-      forward the packet to the operating system.</p>
-
-<p>For more information about EAPOL packets, refer to Clause 7 of the IEEE 802.1X-2001 standard.</p>
-
-<p>When the 802.1X authentication operation is completed, the operating system calls the 
-      <a href="..\wlanihv\nc-wlanihv-dot11extihv-onex-indicate-result.md">
-      Dot11ExtIhvOneXIndicateResult</a> IHV Handler function to indicate that authorization is in
-      progress.</p>
-
-<p>The IHV Extensions DLL can cancel the 802.1X authentication operation by calling 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff547614">Dot11ExtStopOneX</a>.</p>
+      <a href="..\wlanihv\nc-wlanihv-dot11ext-onex-stop.md">Dot11ExtStopOneX</a>.</p>
 
 <p>For more information about using the 802.1X module for authentication, see 
     <a href="netvista.interface_to_the_native_802_11_802_1x_module">Interface to the Native
@@ -213,16 +170,16 @@ DWORD WINAPI * Dot11ExtStartOneX(
 <a href="..\wlanihv\nc-wlanihv-dot11extihv-receive-packet.md">Dot11ExtIhvReceivePacket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547614">Dot11ExtStopOneX</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-onex-stop.md">Dot11ExtStopOneX</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11ext-post-associate-completion.md">
    Dot11ExtPostAssociateCompletion</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547541">Dot11ExtProcessOneXPacket</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-process-onex-packet.md">Dot11ExtProcessOneXPacket</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_ONEX_START callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_ONEX_START callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

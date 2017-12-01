@@ -73,10 +73,6 @@ NTSTATUS GPIO_CLX_UnregisterClient(
 
 <p>Typically, the GPIO controller driver calls this method from its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-unload.md">EvtDriverUnload</a> event callback function, which runs shortly before the driver unloads.</p>
 
-<p>A GPIO controller driver calls this method to cancel its registration. The driver registered in a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a> method.</p>
-
-<p>Typically, the GPIO controller driver calls this method from its <a href="..\wdfdriver\nc-wdfdriver-evt-wdf-driver-unload.md">EvtDriverUnload</a> event callback function, which runs shortly before the driver unloads.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -86,7 +86,7 @@ typedef struct _VPD_THIRD_PARTY_COPY_PAGE {
 ### -field <b>ThirdPartyCopyDescriptors</b>
 
 <dd>
-<p>Support descriptors for copy operations. On Windows systems, <b>ThirdPartyCopyDescriptors</b>  will contain one descriptor formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/hh967745">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a> structure.</p>
+<p>Support descriptors for copy operations. On Windows systems, <b>ThirdPartyCopyDescriptors</b>  will contain one descriptor formatted as a <a href="..\scsi\ns-scsi--windows-block-device-token-limits-descriptor.md">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a> structure.</p>
 </dd>
 </dl>
 
@@ -118,7 +118,7 @@ typedef struct _VPD_THIRD_PARTY_COPY_PAGE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967745">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a>
+<a href="..\scsi\ns-scsi--windows-block-device-token-limits-descriptor.md">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a>
 </dt>
 </dl>
 <p> </p>

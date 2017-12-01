@@ -62,13 +62,13 @@ NTSTATUS APIENTRY* DxgkCbAcquirePostDisplayOwnership(
 ### -param <i>DeviceHandle</i> [in]
 
 <dd>
-<p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
+<p>A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>.</p>
 </dd>
 
 ### -param <i>DisplayInfo</i> [out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh464017">DXGK_DISPLAY_INFORMATION</a> structure that is allocated by the display miniport driver. If <i>DxgkCbAcquirePostDisplayOwnership</i> returns STATUS_SUCCESS, this structure contains display information for the current display device that is used for POST operations.</p>
+<p>A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-display-information.md">DXGK_DISPLAY_INFORMATION</a> structure that is allocated by the display miniport driver. If <i>DxgkCbAcquirePostDisplayOwnership</i> returns STATUS_SUCCESS, this structure contains display information for the current display device that is used for POST operations.</p>
 </dd>
 </dl>
 
@@ -88,33 +88,13 @@ NTSTATUS APIENTRY* DxgkCbAcquirePostDisplayOwnership(
 
 <p>Starting with WDDM 1.2, the display miniport driver must follow these guidelines when it calls <i>DxgkCbAcquirePostDisplayOwnership</i>:</p>
 
-<p>The entry point for the <i>DxgkCbAcquirePostDisplayOwnership</i> function is part of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure. This structure is returned to the driver through the  <i>DxgkInterface</i> parameter when the driver's <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function is called.</p>
+<p>The entry point for the <i>DxgkCbAcquirePostDisplayOwnership</i> function is part of the <a href="..\dispmprt\ns-dispmprt--dxgkrnl-interface.md">DXGKRNL_INTERFACE</a> structure. This structure is returned to the driver through the  <i>DxgkInterface</i> parameter when the driver's <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function is called.</p>
 
 <p>	It is optional for the display miniport driver to call <i>DxgkCbAcquirePostDisplayOwnership</i>. However, the operating system might still call the <a href="display.dxgkddireleasepostdisplayownership">DxgkDdiStopDeviceAndReleasePostDisplayOwnership</a> function of the device driver if the driver did not previously call <i>DxgkCbAcquirePostDisplayOwnership</i>.</p>
 
 <p>The display miniport driver must only call the <i>DxgkCbAcquirePostDisplayOwnership</i> function if the driver is running under Windows 8 or a later version of the Windows operating system.</p>
 
-<p><i>DxgkCbAcquirePostDisplayOwnership</i> may return a <a href="https://msdn.microsoft.com/library/windows/hardware/hh464017">DXGK_DISPLAY_INFORMATION</a> structure with the <b>Width</b> member set to zero. This indicates that either the  current display device is not capable of POST operations or the operating system does not have the current display information for the current POST device.</p>
-
-<p>The <i>DisplayInfo</i>-&gt;<b>ColorFormat</b> member must include a bitwise-OR combination of the following two formats:</p>
-
-<p>If the operating system reports back the <b>D3DDDIFMT_R8G8B8</b> format, the display miniport driver should ignore it.</p>
-
-<p>It is possible that the <i>DisplayInfo</i>-&gt;<b>TargetId</b> member is not initialized. In this case, the identifier of the video present target is <b>D3DDDI_ID_UNINITIALIZED</b>. Typically, this occurs after a system boot.</p>
-
-<p>Similarly, it is possible that the <i>DisplayInfo</i>-&gt;<b>AcpiId</b> member is not initialized. In this case, the ACPI identifier <b>AcpiId</b> has a value of zero.</p>
-
-<p>In the case of a driver-to-driver upgrade, the previous driver will have provided the target identifier and the ACPI identifier.</p>
-
-<p>Starting with WDDM 1.2, the display miniport driver must follow these guidelines when it calls <i>DxgkCbAcquirePostDisplayOwnership</i>:</p>
-
-<p>The entry point for the <i>DxgkCbAcquirePostDisplayOwnership</i> function is part of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure. This structure is returned to the driver through the  <i>DxgkInterface</i> parameter when the driver's <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function is called.</p>
-
-<p>	It is optional for the display miniport driver to call <i>DxgkCbAcquirePostDisplayOwnership</i>. However, the operating system might still call the <a href="display.dxgkddireleasepostdisplayownership">DxgkDdiStopDeviceAndReleasePostDisplayOwnership</a> function of the device driver if the driver did not previously call <i>DxgkCbAcquirePostDisplayOwnership</i>.</p>
-
-<p>The display miniport driver must only call the <i>DxgkCbAcquirePostDisplayOwnership</i> function if the driver is running under Windows 8 or a later version of the Windows operating system.</p>
-
-<p><i>DxgkCbAcquirePostDisplayOwnership</i> may return a <a href="https://msdn.microsoft.com/library/windows/hardware/hh464017">DXGK_DISPLAY_INFORMATION</a> structure with the <b>Width</b> member set to zero. This indicates that either the  current display device is not capable of POST operations or the operating system does not have the current display information for the current POST device.</p>
+<p><i>DxgkCbAcquirePostDisplayOwnership</i> may return a <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-display-information.md">DXGK_DISPLAY_INFORMATION</a> structure with the <b>Width</b> member set to zero. This indicates that either the  current display device is not capable of POST operations or the operating system does not have the current display information for the current POST device.</p>
 
 ## -requirements
 <table>
@@ -167,10 +147,10 @@ NTSTATUS APIENTRY* DxgkCbAcquirePostDisplayOwnership(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464017">DXGK_DISPLAY_INFORMATION</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgk-display-information.md">DXGK_DISPLAY_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a>
+<a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a>
 </dt>
 <dt>
 <a href="display.dxgkddisetpowerstate">DxgkDdiSetPowerState</a>
@@ -182,7 +162,7 @@ NTSTATUS APIENTRY* DxgkCbAcquirePostDisplayOwnership(
 <a href="display.dxgkddireleasepostdisplayownership">DxgkDdiStopDeviceAndReleasePostDisplayOwnership</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561910">RtlGetVersion</a>
+<a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>
 </dt>
 </dl>
 <p> </p>

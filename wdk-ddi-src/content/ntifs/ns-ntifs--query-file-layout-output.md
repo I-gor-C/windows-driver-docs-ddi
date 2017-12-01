@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>QUERY_FILE_LAYOUT_OUTPUT</b> structure serves as a header for the file layout entries that are returned from a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a> request.</p>
+<p>The <b>QUERY_FILE_LAYOUT_OUTPUT</b> structure serves as a header for the file layout entries that are returned from a <a href="ifsk.fsctl_query_file_layout">FSCTL_QUERY_FILE_LAYOUT</a> request.</p>
 
 
 ## -syntax
@@ -101,9 +101,9 @@ typedef struct _QUERY_FILE_LAYOUT_OUTPUT {
 </dl>
 
 ## -remarks
-<p>The file layout entries that follow the <b>QUERY_FILE_LAYOUT_OUTPUT</b> structure are determined by the flags set in the <b>Flags</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh439457">QUERY_FILE_LAYOUT_INPUT</a> provided as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a> request. A number of <b>FILE_LAYOUT_ENTRY</b> structures follow <b>QUERY_FILE_LAYOUT_OUTPUT</b>. Depending on the entries selected to return from a query, offsets in <b>FILE_LAYOUT_ENTRY</b> indicate where the additional informational entries are located in the user buffer. </p>
+<p>The file layout entries that follow the <b>QUERY_FILE_LAYOUT_OUTPUT</b> structure are determined by the flags set in the <b>Flags</b> member of <a href="..\ntifs\ns-ntifs--query-file-layout-input.md">QUERY_FILE_LAYOUT_INPUT</a> provided as input to the <a href="ifsk.fsctl_query_file_layout">FSCTL_QUERY_FILE_LAYOUT</a> request. A number of <b>FILE_LAYOUT_ENTRY</b> structures follow <b>QUERY_FILE_LAYOUT_OUTPUT</b>. Depending on the entries selected to return from a query, offsets in <b>FILE_LAYOUT_ENTRY</b> indicate where the additional informational entries are located in the user buffer. </p>
 
-<p>The following entry structures are returned when their corresponding inclusion flag is set in the <b>Flags</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh439457">QUERY_FILE_LAYOUT_INPUT</a>.<table>
+<p>The following entry structures are returned when their corresponding inclusion flag is set in the <b>Flags</b> member of <a href="..\ntifs\ns-ntifs--query-file-layout-input.md">QUERY_FILE_LAYOUT_INPUT</a>.<table>
 <tr>
 <th>Entry</th>
 <th>Inclusion flag</th>
@@ -127,8 +127,6 @@ typedef struct _QUERY_FILE_LAYOUT_OUTPUT {
 </table>
 <p> </p>
 </p>
-
-<p> </p>
 
 <p>When multiple entries of the same type exist for a single <b>FILE_LAYOUT_ENTRY</b> structure, each informational entry structure has an offset member that indicates the location of the next entry. The chain of entry structures continues until the value of the offset member is 0.</p>
 
@@ -157,10 +155,10 @@ typedef struct _QUERY_FILE_LAYOUT_OUTPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a>
+<a href="ifsk.fsctl_query_file_layout">FSCTL_QUERY_FILE_LAYOUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439457">QUERY_FILE_LAYOUT_INPUT</a>
+<a href="..\ntifs\ns-ntifs--query-file-layout-input.md">QUERY_FILE_LAYOUT_INPUT</a>
 </dt>
 </dl>
 <p> </p>

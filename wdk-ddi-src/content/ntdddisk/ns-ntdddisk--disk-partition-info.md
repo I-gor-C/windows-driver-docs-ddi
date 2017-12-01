@@ -73,7 +73,7 @@ typedef struct _DISK_PARTITION_INFO {
 ### -field <b>PartitionStyle</b>
 
 <dd>
-<p>Takes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a> enumerated value that specifies the type of partition table the disk contains.</p>
+<p>Takes a <a href="storage.partition_style">PARTITION_STYLE</a> enumerated value that specifies the type of partition table the disk contains.</p>
 </dd>
 
 ### -field <b>Mbr</b>
@@ -131,10 +131,10 @@ typedef struct _DISK_PARTITION_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552618">DISK_GEOMETRY_EX</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-geometry-ex.md">DISK_GEOMETRY_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a>
+<a href="storage.partition_style">PARTITION_STYLE</a>
 </dt>
 </dl>
 <p> </p>

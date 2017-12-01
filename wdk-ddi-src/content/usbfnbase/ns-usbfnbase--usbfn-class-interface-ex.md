@@ -79,7 +79,7 @@ typedef struct _USBFN_CLASS_INTERFACE_EX {
 ### -field <b>PipeArr</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt188003">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.</p>
+<p>An array of <a href="buses.usbfn_pipe_information">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.</p>
 </dd>
 </dl>
 

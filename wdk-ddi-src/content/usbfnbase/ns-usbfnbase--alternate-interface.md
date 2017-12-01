@@ -89,7 +89,7 @@ typedef struct _ALTERNATE_INTERFACE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a>
+<a href="buses.usbfn_notification">USBFN_NOTIFICATION</a>
 </dt>
 </dl>
 <p> </p>

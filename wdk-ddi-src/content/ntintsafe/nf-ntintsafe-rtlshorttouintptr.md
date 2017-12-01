@@ -7,7 +7,7 @@ old-location: kernel\rtlshorttouintptr.htm
 old-project: kernel
 ms.assetid: C9E81C1A-56F2-414F-8FE5-847E291A022A
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlShortToUIntPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -70,20 +70,20 @@ typedef struct _DXGK_POWER_RUNTIME_COMPONENT {
 ### -field <b>States</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh464076">DXGK_POWER_RUNTIME_STATE</a> structure that defines information about every idle state. </p>
+<p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-runtime-state.md">DXGK_POWER_RUNTIME_STATE</a> structure that defines information about every idle state. </p>
 <p><b>DXGK_MAX_F_STATES</b> is the maximum number of F-states that a power component can have. In Windows 8, <b>DXGK_MAX_F_STATES</b> is defined to have a value of 8.</p>
 </dd>
 
 ### -field <b>ComponentMapping</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh464067">DXGK_POWER_COMPONENT_MAPPING</a> structure that defines the standard component types of the DirectX graphics kernel subsystem (Dxgkrnl.sys) that describe the power component.</p>
+<p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-component-mapping.md">DXGK_POWER_COMPONENT_MAPPING</a> structure that defines the standard component types of the DirectX graphics kernel subsystem (Dxgkrnl.sys) that describe the power component.</p>
 </dd>
 
 ### -field <b>Flags</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh464063">DXGK_POWER_COMPONENT_FLAGS</a> structure that specifies power state transition information.</p>
+<p>A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-component-flags.md">DXGK_POWER_COMPONENT_FLAGS</a> structure that specifies power state transition information.</p>
 </dd>
 
 ### -field <b>ComponentGuid</b>
@@ -149,13 +149,13 @@ typedef struct _DXGK_POWER_RUNTIME_COMPONENT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464063">DXGK_POWER_COMPONENT_FLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-component-flags.md">DXGK_POWER_COMPONENT_FLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464067">DXGK_POWER_COMPONENT_MAPPING</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-component-mapping.md">DXGK_POWER_COMPONENT_MAPPING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh464076">DXGK_POWER_RUNTIME_STATE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-power-runtime-state.md">DXGK_POWER_RUNTIME_STATE</a>
 </dt>
 </dl>
 <p> </p>

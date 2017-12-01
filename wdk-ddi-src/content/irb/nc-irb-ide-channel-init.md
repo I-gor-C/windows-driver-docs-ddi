@@ -68,7 +68,7 @@ BOOLEAN AtaChannelInitRoutine(
 ### -param <i>ChannelInterface</i> [in, out]
 
 <dd>
-<p>A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559034">IDE_CHANNEL_INTERFACE</a>. </p>
+<p>A pointer to a structure of type <a href="..\irb\ns-irb--ide-channel-interface.md">IDE_CHANNEL_INTERFACE</a>. </p>
 </dd>
 
 ### -param <i>Context</i> [in, out]
@@ -82,19 +82,11 @@ BOOLEAN AtaChannelInitRoutine(
 <p><b><i>AtaChannelInitRoutine</i></b> returns <b>TRUE</b> if the initialization succeeded. It returns <b>FALSE</b> if the initialization failed. </p>
 
 ## -remarks
-<p>A vendor-supplied miniport driver that supports the channel interface must implement an <b><i>AtaChannelInitRoutine</i></b> routine to initialize the controller's channels. In particular, the <b><i>AtaChannelInitRoutine</i></b> routine must complete the initialization of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559034">IDE_CHANNEL_INTERFACE</a> structure. The following sequence describes how the miniport driver and the port driver interact to initialize a channel: </p>
+<p>A vendor-supplied miniport driver that supports the channel interface must implement an <b><i>AtaChannelInitRoutine</i></b> routine to initialize the controller's channels. In particular, the <b><i>AtaChannelInitRoutine</i></b> routine must complete the initialization of the <a href="..\irb\ns-irb--ide-channel-interface.md">IDE_CHANNEL_INTERFACE</a> structure. The following sequence describes how the miniport driver and the port driver interact to initialize a channel: </p>
 
-<p>While in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine, the miniport driver calls the port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550167">AtaPortInitializeEx</a> library routine to launch the initialization of the controller and the miniport driver. </p>
+<p>While in its <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine, the miniport driver calls the port driver's <a href="..\irb\nf-irb-ataportinitializeex.md">AtaPortInitializeEx</a> library routine to launch the initialization of the controller and the miniport driver. </p>
 
-<p>If the miniport driver supports the channel interface, the <b><i>DriverEntry</i></b> routine must initialize the <b>AtaChannelInitRoutine</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559039">IDE_CONTROLLER_INTERFACE</a> to point to the miniport driver's <b><i>AtaChannelInitRoutine</i></b> routine.</p>
-
-<p>The port driver calls the <b><i>AtaAdapterControl</i></b> routine by using control action IdeStart. <b><i>AtaChannelInitRoutine</i></b> is called one time for every NumberOfChannels specified in the ControllerConfiguration structure that is returned by the <b><i>AtaAdapterControl</i></b> routine when <b><i>AtaAdapterControl</i></b> handles an <b>IdeStart</b> action.</p>
-
-<p>A vendor-supplied miniport driver that supports the channel interface must implement an <b><i>AtaChannelInitRoutine</i></b> routine to initialize the controller's channels. In particular, the <b><i>AtaChannelInitRoutine</i></b> routine must complete the initialization of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559034">IDE_CHANNEL_INTERFACE</a> structure. The following sequence describes how the miniport driver and the port driver interact to initialize a channel: </p>
-
-<p>While in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine, the miniport driver calls the port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550167">AtaPortInitializeEx</a> library routine to launch the initialization of the controller and the miniport driver. </p>
-
-<p>If the miniport driver supports the channel interface, the <b><i>DriverEntry</i></b> routine must initialize the <b>AtaChannelInitRoutine</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559039">IDE_CONTROLLER_INTERFACE</a> to point to the miniport driver's <b><i>AtaChannelInitRoutine</i></b> routine.</p>
+<p>If the miniport driver supports the channel interface, the <b><i>DriverEntry</i></b> routine must initialize the <b>AtaChannelInitRoutine</b> member of <a href="..\irb\ns-irb--ide-controller-interface.md">IDE_CONTROLLER_INTERFACE</a> to point to the miniport driver's <b><i>AtaChannelInitRoutine</i></b> routine.</p>
 
 <p>The port driver calls the <b><i>AtaAdapterControl</i></b> routine by using control action IdeStart. <b><i>AtaChannelInitRoutine</i></b> is called one time for every NumberOfChannels specified in the ControllerConfiguration structure that is returned by the <b><i>AtaAdapterControl</i></b> routine when <b><i>AtaAdapterControl</i></b> handles an <b>IdeStart</b> action.</p>
 
@@ -125,13 +117,13 @@ BOOLEAN AtaChannelInitRoutine(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550167">AtaPortInitializeEx</a>
+<a href="..\irb\nf-irb-ataportinitializeex.md">AtaPortInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559034">IDE_CHANNEL_INTERFACE</a>
+<a href="..\irb\ns-irb--ide-channel-interface.md">IDE_CHANNEL_INTERFACE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559039">IDE_CONTROLLER_INTERFACE</a>
+<a href="..\irb\ns-irb--ide-controller-interface.md">IDE_CONTROLLER_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

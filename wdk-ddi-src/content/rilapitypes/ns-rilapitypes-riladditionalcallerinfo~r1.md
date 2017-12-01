@@ -7,7 +7,7 @@ old-location: netvista\riladditionalcallerinfo_2.htm
 old-project: netvista
 ms.assetid: e29f6710-0ca1-4420-b0e7-957ba020254b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILADDITIONALCALLERINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>ChangerGetStatus</b> handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="https://msdn.microsoft.com/library/windows/hardware/ff559405">IOCTL_CHANGER_GET_STATUS</a>. </p>
+<p><b>ChangerGetStatus</b> handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl-changer-get-status.md">IOCTL_CHANGER_GET_STATUS</a>. </p>
 
 
 ## -syntax
@@ -72,12 +72,6 @@ NTSTATUS ChangerGetStatus(
 <p><b>ChangerGetStatus</b> returns the STATUS_<i>XXX</i> value returned by the system port driver. If there is not enough memory to process the request or to process the STATUS_<i>XXX</i> value returned by the system port driver <b>ChangerGetStatus</b> returns STATUS_INSUFFICIENT_RESOURCES.</p>
 
 ## -remarks
-<p>This routine is required.</p>
-
-<p><b>ChangerGetStatus</b> indicates whether the changer is able to accept requests. </p>
-
-<p><b>ChangerGetStatus</b> builds an SRB with a CDB to get the changer's status (using the SCSI command TEST UNIT READY or non-SCSI equivalent) and sends it to the system port driver to obtain status of the changer.</p>
-
 <p>This routine is required.</p>
 
 <p><b>ChangerGetStatus</b> indicates whether the changer is able to accept requests. </p>
@@ -119,10 +113,10 @@ NTSTATUS ChangerGetStatus(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551424">ChangerGetElementStatus</a>
+<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559405">IOCTL_CHANGER_GET_STATUS</a>
+<a href="..\ntddchgr\ni-ntddchgr-ioctl-changer-get-status.md">IOCTL_CHANGER_GET_STATUS</a>
 </dt>
 </dl>
 <p> </p>

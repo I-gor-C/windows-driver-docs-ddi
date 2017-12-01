@@ -125,8 +125,6 @@ ULONG StorPortAllocateContiguousMemorySpecifyCacheNode(
 ## -remarks
 <p>If the request fails, <i>BufferPointer</i> will be set to <b>NULL</b>.</p>
 
-<p>If the request fails, <i>BufferPointer</i> will be set to <b>NULL</b>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -170,7 +168,7 @@ ULONG StorPortAllocateContiguousMemorySpecifyCacheNode(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
+<a href="devtest.storport_storportirql">StorPortIrql</a>
 </td>
 </tr>
 </table>

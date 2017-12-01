@@ -7,7 +7,7 @@ old-location: sensors\gnss_singleshot_param.htm
 old-project: sensors
 ms.assetid: BD1CB6CE-4196-4B85-AED0-A7B8ED957ADF
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_SINGLESHOT_PARAM, GNSS_SINGLESHOT_PARAM, *PGNSS_SINGLESHOT_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices

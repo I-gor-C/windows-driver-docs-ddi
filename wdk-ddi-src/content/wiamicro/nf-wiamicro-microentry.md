@@ -65,7 +65,7 @@ WIAMICRO_API HRESULT MicroEntry(
 ### -param <i>pValue</i> [in, out]
 
 <dd>
-<p>Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548627">VAL</a> structure that is used to pass information between the WIA Flatbed driver and the microdriver.</p>
+<p>Points to a <a href="..\wiamicro\ns-wiamicro-val.md">VAL</a> structure that is used to pass information between the WIA Flatbed driver and the microdriver.</p>
 </dd>
 </dl>
 
@@ -75,11 +75,7 @@ WIAMICRO_API HRESULT MicroEntry(
 ## -remarks
 <p>This function performs many different tasks, depending on the command passed in the <i>lCommand</i> parameter. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a> reference section for a list of these commands.</p>
 
-<p>Two structures are passed to the function. A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548627">VAL</a> structure is passed in the <i>pValue</i> pointer, and the <b>pScanInfo</b> member of the VAL structure points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547361">SCANINFO</a> structure. The VAL structure is used to pass information between the WIA Flatbed Driver and the microdriver. The SCANINFO structure is used to store and communicate parameters of a scan data acquisition. Many of the commands passed to this function set values in the SCANINFO structure.</p>
-
-<p>This function performs many different tasks, depending on the command passed in the <i>lCommand</i> parameter. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a> reference section for a list of these commands.</p>
-
-<p>Two structures are passed to the function. A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548627">VAL</a> structure is passed in the <i>pValue</i> pointer, and the <b>pScanInfo</b> member of the VAL structure points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547361">SCANINFO</a> structure. The VAL structure is used to pass information between the WIA Flatbed Driver and the microdriver. The SCANINFO structure is used to store and communicate parameters of a scan data acquisition. Many of the commands passed to this function set values in the SCANINFO structure.</p>
+<p>Two structures are passed to the function. A <a href="..\wiamicro\ns-wiamicro-val.md">VAL</a> structure is passed in the <i>pValue</i> pointer, and the <b>pScanInfo</b> member of the VAL structure points to a <a href="..\wiamicro\ns-wiamicro--scaninfo.md">SCANINFO</a> structure. The VAL structure is used to pass information between the WIA Flatbed Driver and the microdriver. The SCANINFO structure is used to store and communicate parameters of a scan data acquisition. Many of the commands passed to this function set values in the SCANINFO structure.</p>
 
 ## -requirements
 <table>
@@ -116,16 +112,16 @@ WIAMICRO_API HRESULT MicroEntry(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548627">VAL</a>
+<a href="..\wiamicro\ns-wiamicro-val.md">VAL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547361">SCANINFO</a>
+<a href="..\wiamicro\ns-wiamicro--scaninfo.md">SCANINFO</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552722">WIA Microdriver Structures</a>
+<a href="image.wia_microdriver_structures">WIA Microdriver Structures</a>
 </dt>
 </dl>
 <p> </p>

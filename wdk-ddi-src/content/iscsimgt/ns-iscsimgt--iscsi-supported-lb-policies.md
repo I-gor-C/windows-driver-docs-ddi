@@ -60,7 +60,7 @@ typedef struct _ISCSI_Supported_LB_Policies {
 ### -field <b>UniqueSessionId</b>
 
 <dd>
-<p>A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
+<p>A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the ISID and TSID members.</p>
 </dd>
 
 ### -field <b>LoadBalancePolicy</b>
@@ -133,7 +133,7 @@ typedef struct _ISCSI_Supported_LB_Policies {
 ### -field <b>iSCSI_Paths</b>
 
 <dd>
-<p>Path information as shown in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561550">ISCSI_Path</a> structure.</p>
+<p>Path information as shown in the <a href="..\iscsimgt\ns-iscsimgt--iscsi-path.md">ISCSI_Path</a> structure.</p>
 </dd>
 </dl>
 
@@ -157,10 +157,10 @@ typedef struct _ISCSI_Supported_LB_Policies {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="storage.addconnectiontosession">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="storage.logintotarget">LoginToTarget</a>
 </dt>
 </dl>
 <p> </p>

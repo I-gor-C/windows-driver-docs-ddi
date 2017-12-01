@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>      PosCxReleaseDevice is called to release a device that was previously claimed with
-      <a href="https://msdn.microsoft.com/library/windows/hardware/mt593119">PosCxClaimDevice</a>.
+      <a href="..\poscx\nf-poscx-poscxclaimdevice.md">PosCxClaimDevice</a>.
       Once the device is released, the next pending claim requester is promoted.</p>
 
 
@@ -104,7 +104,7 @@ NTSTATUS PosCxReleaseDevice(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt593119">PosCxClaimDevice</a>
+<a href="..\poscx\nf-poscx-poscxclaimdevice.md">PosCxClaimDevice</a>
 </dt>
 </dl>
 <p> </p>

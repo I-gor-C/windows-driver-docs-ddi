@@ -28,10 +28,8 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.lib; 
-OneCoreUAP.lib on Windows 10
-req.dll: NtDll.dll (user mode); 
-NtosKrnl.exe (kernel mode)
+req.lib: NtosKrnl.lib; OneCoreUAP.lib on Windows 10
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql: <= DISPATCH_LEVEL
 req.iface: 
 ---
@@ -67,10 +65,6 @@ VOID RtlCaptureContext(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The <i>ContextRecord</i> that is captured contains processor-specific register data.  </p>
-
-<p>For kernel-mode code, the CONTEXT structure is defined in <i>Ntddk.h</i>. For more information, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=132119">CONTEXT</a> Structure topic in the SDK documentation.</p>
-
 <p>The <i>ContextRecord</i> that is captured contains processor-specific register data.  </p>
 
 <p>For kernel-mode code, the CONTEXT structure is defined in <i>Ntddk.h</i>. For more information, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=132119">CONTEXT</a> Structure topic in the SDK documentation.</p>

@@ -127,7 +127,7 @@ typedef struct {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560586">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> request is used to control information about persistent reservations and reservation keys that are active within a device server.</p>
+<p>The <a href="..\ntddstor\ni-ntddstor-ioctl-storage-persistent-reserve-out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> request is used to control information about persistent reservations and reservation keys that are active within a device server.</p>
 
 ## -requirements
 <table>
@@ -146,7 +146,7 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560586">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-persistent-reserve-out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a>
 </dt>
 </dl>
 <p> </p>

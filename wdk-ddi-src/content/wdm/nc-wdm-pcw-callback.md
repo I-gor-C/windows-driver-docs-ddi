@@ -75,7 +75,7 @@ NTSTATUS PcwCallback(
 ### -param <i>Context</i> [in, optional]
 
 <dd>
-<p>A pointer to the callback context. This value is supplied by the provider when calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a>.</p>
+<p>A pointer to the callback context. This value is supplied by the provider when calling <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>.</p>
 </dd>
 </dl>
 
@@ -83,14 +83,6 @@ NTSTATUS PcwCallback(
 <p>The <i>PCW_CALLBACK</i> callback function must return STATUS_SUCCESS if the callback was successfully executed. Otherwise, this callback function must return STATUS_UNSUCCESSFUL.</p>
 
 ## -remarks
-<p>Providers that do not want to, or are unable to, create and destroy instances can register a callback function that is called when data is requested. For example, the following code examples show how the provider can use the <i>PCW_CALLBACK</i> callback function to enumerate and collect data.</p>
-
-<p>The following code, from KcsCounters.h shows the inline function <b>KcsRegisterGeometricWave</b> that Ctrpp.exe generates from the manifest for the KCS sample in the WDK, Kcs.man. This function registers the counter set and takes a parameter to an optional custom <i>Callback</i> function. </p>
-
-<p>The provider can implement the <i>Callback</i> function to handle the requests. The following code example shows a <i>PCW_CALLBACK</i> function that enumerates and collects data. The function is named <i>KcsGeometricWaveCallback</i>. This function is then passed to the <i>KcsRegisterGeometricWave</i> in the <i>Callback</i> parameter.</p>
-
-<p>In the <i>DriverEntry</i> routine of the KCS example, the <i>KcsGeometricWaveCallback</i> function is specified as the <i>Callback</i> when <i>KcsRegisterGeometricWave</i> registers the counter set. </p>
-
 <p>Providers that do not want to, or are unable to, create and destroy instances can register a callback function that is called when data is requested. For example, the following code examples show how the provider can use the <i>PCW_CALLBACK</i> callback function to enumerate and collect data.</p>
 
 <p>The following code, from KcsCounters.h shows the inline function <b>KcsRegisterGeometricWave</b> that Ctrpp.exe generates from the manifest for the KCS sample in the WDK, Kcs.man. This function registers the counter set and takes a parameter to an optional custom <i>Callback</i> function. </p>
@@ -142,7 +134,7 @@ NTSTATUS PcwCallback(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a>
+<a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=144623">Performance Counter Library (PERFLIB)</a></dt>
 </dl>

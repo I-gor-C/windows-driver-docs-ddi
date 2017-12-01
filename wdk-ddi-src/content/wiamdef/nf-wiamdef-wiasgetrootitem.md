@@ -130,7 +130,7 @@ HRESULT _stdcall wiasGetRootItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549243">wiasGetDrvItem</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetdrvitem.md">wiasGetDrvItem</a>
 </dt>
 </dl>
 <p> </p>

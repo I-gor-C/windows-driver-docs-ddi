@@ -73,7 +73,7 @@ typedef struct _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG {
 ### -field <b>Size</b>
 
 <dd>
-<p>The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265288">SerCx2SystemDmaTransmitCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
+<p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
 ### -field <b>MaximumTransferLength</b>
@@ -109,7 +109,7 @@ typedef struct _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG {
 ### -field <b>DeviceAddress</b>
 
 <dd>
-<p>The translated device address to which the DMA controller transfers data to be transmitted. For more information, see the description of the <b>DeviceAddress</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439495">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>.</p>
+<p>The translated device address to which the DMA controller transfers data to be transmitted. For more information, see the description of the <b>DeviceAddress</b> member in <a href="..\wdfdmaenabler\ns-wdfdmaenabler--wdf-dma-system-profile-config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>.</p>
 </dd>
 
 ### -field <b>DmaDescriptor</b>
@@ -121,7 +121,7 @@ typedef struct _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG {
 ### -field <b>MinimumTransferUnitOverride</b>
 
 <dd>
-<p>An override value to use in place of the default minimum transfer unit. The number of bytes specified by an element in a scatter/gather list must be an integer multiple of the minimum transfer unit. A value of  zero indicates that the default minimum transfer unit should be used.  For more information about the default minimum transfer unit, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450995">DMA_ADAPTER_INFO_V1</a>.</p>
+<p>An override value to use in place of the default minimum transfer unit. The number of bytes specified by an element in a scatter/gather list must be an integer multiple of the minimum transfer unit. A value of  zero indicates that the default minimum transfer unit should be used.  For more information about the default minimum transfer unit, see <a href="..\wdm\ns-wdm--dma-adapter-info-v1.md">DMA_ADAPTER_INFO_V1</a>.</p>
 </dd>
 
 ### -field <b>Exclusive</b>
@@ -170,7 +170,7 @@ typedef struct _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265288">SerCx2SystemDmaTransmitCreate</a> method accepts a pointer to a <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2SystemDmaTransmitCreate</b>, call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265345">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT</a> function to initialize this structure.</p>
+<p>The <a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a> method accepts a pointer to a <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2SystemDmaTransmitCreate</b>, call the <a href="..\sercx\nf-sercx-sercx2-system-dma-transmit-config-init.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT</a> function to initialize this structure.</p>
 
 ## -requirements
 <table>
@@ -197,7 +197,7 @@ typedef struct _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450995">DMA_ADAPTER_INFO_V1</a>
+<a href="..\wdm\ns-wdm--dma-adapter-info-v1.md">DMA_ADAPTER_INFO_V1</a>
 </dt>
 <dt>
 <a href="..\sercx\nc-sercx-evt-sercx2-system-dma-transmit-cancel-drain-fifo.md">EvtSerCx2SystemDmaTransmitCancelDrainFifo</a>
@@ -221,13 +221,13 @@ typedef struct _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG {
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265345">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx2-system-dma-transmit-config-init.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265288">SerCx2SystemDmaTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547014">WdfDmaEnablerSetMaximumScatterGatherElements</a>
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablersetmaximumscattergatherelements.md">WdfDmaEnablerSetMaximumScatterGatherElements</a>
 </dt>
 </dl>
 <p> </p>

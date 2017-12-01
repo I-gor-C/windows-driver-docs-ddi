@@ -70,10 +70,6 @@ LONG FASTCALL VideoPortInterlockedIncrement(
 
 <p>This function is atomic only with respect to other <b>VideoPortInterlocked</b><i>Xxx</i> calls. </p>
 
-<p>When possible and whenever appropriate, <b>VideoPortInterlockedIncrement</b> is implemented inline by the compiler. It can be safely used on pageable data.</p>
-
-<p>This function is atomic only with respect to other <b>VideoPortInterlocked</b><i>Xxx</i> calls. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -137,10 +133,10 @@ LONG FASTCALL VideoPortInterlockedIncrement(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570322">VideoPortInterlockedDecrement</a>
+<a href="..\video\nf-video-videoportinterlockeddecrement.md">VideoPortInterlockedDecrement</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570323">VideoPortInterlockedExchange</a>
+<a href="..\video\nf-video-videoportinterlockedexchange.md">VideoPortInterlockedExchange</a>
 </dt>
 </dl>
 <p> </p>

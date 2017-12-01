@@ -88,7 +88,7 @@ VOID APIENTRY* CreateHullShader(D3D11_1)(
 ### -param <i>pSignatures</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406326">D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES</a> structure that forms the tessellation-shader's signature.</p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-tessellation-io-signatures.md">D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES</a> structure that forms the tessellation-shader's signature.</p>
 </dd>
 </dl>
 
@@ -144,7 +144,7 @@ VOID APIENTRY* CreateHullShader(D3D11_1)(
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi-calcprivatetessellationshadersize.md">CalcPrivateTessellationShaderSize(D3D11_1)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406326">D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-tessellation-io-signatures.md">D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES</a>
 </dt>
 </dl>
 <p> </p>

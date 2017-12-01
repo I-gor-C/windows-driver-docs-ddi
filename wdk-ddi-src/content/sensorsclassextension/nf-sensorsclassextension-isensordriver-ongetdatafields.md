@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_ongetdatafields.htm
 old-project: sensors
 ms.assetid: a9233a0f-ac80-46be-9abe-7b87d25736f9
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorDriver, OnGetDataFields, ISensorDriver::OnGetDataFields
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545607">ISensorDriver::OnGetDataFields</a> method retrieves current sensor data.</p>
+<p>The <a href="sensors.isensordriver_ongetdatafields">ISensorDriver::OnGetDataFields</a> method retrieves current sensor data.</p>
 
 
 ## -syntax
@@ -93,16 +93,6 @@ HRESULT OnGetDataFields(
 <p> </p>
 
 ## -remarks
-<p>Data fields contain sensor-generated data, as opposed to properties, which describe the sensor device. Platform-defined data fields are defined in sensors.h.</p>
-
-<p>Each <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> object returned by this method must contain a time stamp, as described in <a href="https://msdn.microsoft.com/library/windows/hardware/ff545725">SENSOR_CATEGORY_ALL</a>. </p>
-
-<p>The sensor class extension is responsibile for freeing any <b>PROPVARIANT</b> structures returned by this method.</p>
-
-<p>The sensor class extension calls this method only for sensors for which the user has granted permission through Control Panel.</p>
-
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> are documented in Windows Portable Devices.</p>
-
 <p>Data fields contain sensor-generated data, as opposed to properties, which describe the sensor device. Platform-defined data fields are defined in sensors.h.</p>
 
 <p>Each <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> object returned by this method must contain a time stamp, as described in <a href="https://msdn.microsoft.com/library/windows/hardware/ff545725">SENSOR_CATEGORY_ALL</a>. </p>

@@ -99,7 +99,7 @@ typedef enum _USBFN_EVENT {
 <dd>
 <p>    There have been no SOF packets on the bus for 3ms.
     If a class driver wants to issue a remote wake up,
-     the driver must use <a href="https://msdn.microsoft.com/library/windows/hardware/mt187906">IOCTL_INTERNAL_USBFN_SIGNAL_REMOTE_WAKEUP</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/mt188024">IOCTL_INTERNAL_USBFN_TRANSFER_IN</a>.</p>
+     the driver must use <a href="buses.ioctl_usbfn_internal_signal_remote_wakeup">IOCTL_INTERNAL_USBFN_SIGNAL_REMOTE_WAKEUP</a> or <a href="buses._ioctl_internal_usbfn_transfer_in">IOCTL_INTERNAL_USBFN_TRANSFER_IN</a>.</p>
 </dd>
 
 ### -field <a id="UsbfnEventResume"></a><a id="usbfneventresume"></a><a id="USBFNEVENTRESUME"></a><b>UsbfnEventResume</b>
@@ -119,10 +119,10 @@ typedef enum _USBFN_EVENT {
 <p> The setup packet is available in the <b>SetupPacket</b> field of the
     event. If the control transfer does not require a data stage,
      class drivers should respond with
-    <a href="https://msdn.microsoft.com/library/windows/hardware/mt187893">IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT</a>.
+    <a href="buses.ioctl_internal_usbfn_control_status_handshake_out">IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT</a>.
     If a data stage is required, class drivers should respond with
-    one or more <a href="https://msdn.microsoft.com/library/windows/hardware/mt188024">IOCTL_INTERNAL_USBFN_TRANSFER_IN</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/mt187905">IOCTL_INTERNAL_USBFN_TRANSFER_OUT</a>, followed by
-    <a href="https://msdn.microsoft.com/library/windows/hardware/mt188023">IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_IN</a> or <b>IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT</b> in the opposite
+    one or more <a href="buses._ioctl_internal_usbfn_transfer_in">IOCTL_INTERNAL_USBFN_TRANSFER_IN</a> or <a href="buses.ioctl_internal_usbfn_transfer_out">IOCTL_INTERNAL_USBFN_TRANSFER_OUT</a>, followed by
+    <a href="buses._ioctl_internal_usbfn_control_status_handshake_in">IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_IN</a> or <b>IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_OUT</b> in the opposite
     direction.</p>
 </dd>
 

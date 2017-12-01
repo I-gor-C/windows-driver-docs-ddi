@@ -7,7 +7,7 @@ old-location: stream\avstrminiremoveevent.htm
 old-project: stream
 ms.assetid: dee4ce19-9dc8-4728-855b-eadb5bca0fc2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ VOID AVStrMiniRemoveEvent(
 ### -param <i>EventEntry</i> [in]
 
 <dd>
-<p>Pointer to an AVStream-generated <a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a> structure.</p>
+<p>Pointer to an AVStream-generated <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure.</p>
 </dd>
 </dl>
 
@@ -75,7 +75,7 @@ VOID AVStrMiniRemoveEvent(
 <p><i>AVStrMiniRemoveEvent</i> must return STATUS_SUCCESS.</p>
 
 ## -remarks
-<p>The minidriver specifies this routine's address in the <b>RemoveHandler</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561862">KSEVENT_ITEM</a> structure. <a href="NULL">Event Handling in AVStream</a> describes how the minidriver provides this structure to the class driver.</p>
+<p>The minidriver specifies this routine's address in the <b>RemoveHandler</b> member of a <a href="stream.ksevent_item">KSEVENT_ITEM</a> structure. <a href="NULL">Event Handling in AVStream</a> describes how the minidriver provides this structure to the class driver.</p>
 
 <p>If the minidriver provides <i>AVStrMiniRemoveEvent</i> and either:</p>
 
@@ -83,19 +83,7 @@ VOID AVStrMiniRemoveEvent(
 
 <p>Specifies an <b>AddHandler</b> that calls <b>Ks</b><i>Xxx</i><b>AddEvent</b></p>
 
-<p>then the minidriver's <i>AVStrMiniRemoveEvent</i> must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff561029">RemoveEntryList</a> with a pointer to the LIST_ENTRY structure in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a> structure:</p>
-
-<p>Otherwise, your <i>AVStrMiniRemoveEvent</i> should reverse the steps taken in the <b>AddHandler</b>.</p>
-
-<p>The minidriver specifies this routine's address in the <b>RemoveHandler</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561862">KSEVENT_ITEM</a> structure. <a href="NULL">Event Handling in AVStream</a> describes how the minidriver provides this structure to the class driver.</p>
-
-<p>If the minidriver provides <i>AVStrMiniRemoveEvent</i> and either:</p>
-
-<p>Does not specify an <b>AddHandler </b><i>or</i></p>
-
-<p>Specifies an <b>AddHandler</b> that calls <b>Ks</b><i>Xxx</i><b>AddEvent</b></p>
-
-<p>then the minidriver's <i>AVStrMiniRemoveEvent</i> must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff561029">RemoveEntryList</a> with a pointer to the LIST_ENTRY structure in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a> structure:</p>
+<p>then the minidriver's <i>AVStrMiniRemoveEvent</i> must call <a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a> with a pointer to the LIST_ENTRY structure in the <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure:</p>
 
 <p>Otherwise, your <i>AVStrMiniRemoveEvent</i> should reverse the steps taken in the <b>AddHandler</b>.</p>
 
@@ -134,33 +122,33 @@ VOID AVStrMiniRemoveEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a>
+<a href="stream.kseventdata">KSEVENTDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a>
+<a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561862">KSEVENT_ITEM</a>
+<a href="stream.ksevent_item">KSEVENT_ITEM</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560990">KSAUTOMATION_TABLE</a>
+<a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562525">KsFilterAddEvent</a>
+<a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563490">KsPinAddEvent</a>
+<a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562541">KsFilterGenerateEvents</a>
+<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563500">KsPinGenerateEvents</a>
+<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554260">AVStrMiniAddEvent</a>
+<a href="stream.avstrminiaddevent">AVStrMiniAddEvent</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniRemoveEvent routine%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniRemoveEvent routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

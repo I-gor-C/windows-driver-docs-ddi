@@ -7,7 +7,7 @@ old-location: wdf\read_register_uchar.htm
 old-project: wdf
 ms.assetid: 149DE843-937C-4A6F-AB2D-ACC8895D5E91
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: READ_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ UCHAR READ_REGISTER_UCHAR(
 ### -param <i>pDevice</i> [in]
 
 <dd>
-<p>Specifies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface for the device object of the device to access.</p>
+<p>Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.</p>
 </dd>
 
 ### -param <i>Register</i> [in]
@@ -74,8 +74,6 @@ UCHAR READ_REGISTER_UCHAR(
 <p><b>READ_REGISTER_UCHAR</b> returns the byte that is read from the specified port address.</p>
 
 ## -remarks
-<p>For more information, see <a href="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.</p>
-
 <p>For more information, see <a href="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.</p>
 
 ## -requirements

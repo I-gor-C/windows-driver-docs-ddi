@@ -69,10 +69,6 @@ void __stdcall HidD_GetHidGuid(
 
 <p>For more information, see <a href="NULL">HID Collections</a>.</p>
 
-<p>Only user-mode applications can call <b>HidD_GetHidGuid</b>.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -128,7 +124,7 @@ void __stdcall HidD_GetHidGuid(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549186">IoGetDeviceInterfaces</a>
+<a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
 </dt>
 </dl>
 <p> </p>

@@ -72,7 +72,7 @@ typedef struct {
 ### -field <b>Mdl</b>
 
 <dd>
-<p>If non-<b>NULL</b>, points to the MDL that describes the application's buffer where asynchronous operations are to be read, written, or locked. The memory for the MDL must be allocated from nonpaged pool or locked down by means of a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff554664">MmProbeAndLockPages</a>. If the driver specifies <b>u.AllocateAddressRange.Mdl</b>, then <b>u.AllocateAddressRange.FifoSListHead</b> and <b>u.AllocateAddressRange.FifoSpinLock</b> must be <b>NULL</b>.</p>
+<p>If non-<b>NULL</b>, points to the MDL that describes the application's buffer where asynchronous operations are to be read, written, or locked. The memory for the MDL must be allocated from nonpaged pool or locked down by means of a call to <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>. If the driver specifies <b>u.AllocateAddressRange.Mdl</b>, then <b>u.AllocateAddressRange.FifoSListHead</b> and <b>u.AllocateAddressRange.FifoSpinLock</b> must be <b>NULL</b>.</p>
 </dd>
 
 ### -field <b>fulFlags</b>

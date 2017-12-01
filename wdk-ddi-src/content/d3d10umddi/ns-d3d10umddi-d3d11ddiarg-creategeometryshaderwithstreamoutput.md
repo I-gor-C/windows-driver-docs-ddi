@@ -68,7 +68,7 @@ typedef struct D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT {
 ### -field <b>pOutputStreamDecl</b>
 
 <dd>
-<p>[in] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542097">D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY</a> structures that describes the stream output for the geometry shader. </p>
+<p>[in] An array of <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-stream-output-declaration-entry.md">D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY</a> structures that describes the stream output for the geometry shader. </p>
 </dd>
 
 ### -field <b>NumEntries</b>
@@ -130,7 +130,7 @@ typedef struct D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-creategeometryshaderwithstreamoutput.md">CreateGeometryShaderWithStreamOutput</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542097">D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-stream-output-declaration-entry.md">D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY</a>
 </dt>
 </dl>
 <p> </p>

@@ -69,7 +69,7 @@ typedef struct _AACS_CHALLENGE_KEY {
 </dl>
 
 ## -remarks
-<p>Clients retrieve the Advanced Access Content System (AACS) challenge key with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559256">IOCTL_AACS_GET_CHALLENGE_KEY</a> request. Clients send an AACS challenge key to the logical unit in an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550114">AACS_SEND_CHALLENGE_KEY</a> structure with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559302">IOCTL_AACS_SEND_CHALLENGE_KEY</a>. </p>
+<p>Clients retrieve the Advanced Access Content System (AACS) challenge key with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-get-challenge-key.md">IOCTL_AACS_GET_CHALLENGE_KEY</a> request. Clients send an AACS challenge key to the logical unit in an <a href="..\ntddcdvd\ns-ntddcdvd--aacs-send-challenge-key.md">AACS_SEND_CHALLENGE_KEY</a> structure with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-send-challenge-key.md">IOCTL_AACS_SEND_CHALLENGE_KEY</a>. </p>
 
 ## -requirements
 <table>
@@ -88,13 +88,13 @@ typedef struct _AACS_CHALLENGE_KEY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550114">AACS_SEND_CHALLENGE_KEY</a>
+<a href="..\ntddcdvd\ns-ntddcdvd--aacs-send-challenge-key.md">AACS_SEND_CHALLENGE_KEY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559256">IOCTL_AACS_GET_CHALLENGE_KEY</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-get-challenge-key.md">IOCTL_AACS_GET_CHALLENGE_KEY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559302">IOCTL_AACS_SEND_CHALLENGE_KEY</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-send-challenge-key.md">IOCTL_AACS_SEND_CHALLENGE_KEY</a>
 </dt>
 </dl>
 <p> </p>

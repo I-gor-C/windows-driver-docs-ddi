@@ -7,7 +7,7 @@ old-location: wdf\wdfdmatransactionstopsystemtransfer.htm
 old-project: wdf
 ms.assetid: 55674946-A2DA-4695-8673-6BF3123FB5FC
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfDmaTransactionStopSystemTransfer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,7 +75,7 @@ void WdfDmaTransactionStopSystemTransfer(
 
 <p>In contrast, a driver using system-mode DMA must rely on the hardware abstraction layer (HAL) to program the shared DMA controller.  When a driver calls <b>WdfDmaTransactionStopSystemTransfer</b>, the framework notifies the HAL that the transfer must be stopped and returns immediately.</p>
 
-<p>The framework next calls the driver's <a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt-wdf-dma-transaction-dma-transfer-complete.md">EvtDmaTransactionDmaTransferComplete</a> callback function, if the driver has provided one.  If not, the framework returns FALSE when the driver next calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff547039">WdfDmaTransactionDmaCompleted</a>.</p>
+<p>The framework next calls the driver's <a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt-wdf-dma-transaction-dma-transfer-complete.md">EvtDmaTransactionDmaTransferComplete</a> callback function, if the driver has provided one.  If not, the framework returns FALSE when the driver next calls <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompleted.md">WdfDmaTransactionDmaCompleted</a>.</p>
 
 <p>If your driver calls this method on an operating system earlier than Windows 8, <a href="wdf.using_kmdf_verifier">the framework's verifier</a> reports an error.</p>
 
@@ -85,25 +85,7 @@ void WdfDmaTransactionStopSystemTransfer(
 
 <p>The following code example shows how a driver might call <b>WdfDmaTransactionStopSystemTransfer</b> from an <a href="wdf.evttimerfunc">EvtTimerFunc</a> event callback function that it registers to be called if an I/O request times out.</p>
 
-<p>The following code example shows how a driver might call <b>WdfDmaTransactionStopSystemTransfer</b> from an <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-cancel.md">EvtRequestCancel</a> callback function. The driver previously called <a href="https://msdn.microsoft.com/library/windows/hardware/ff549984">WdfRequestMarkCancelableEx</a> from its I/O request handler to register the callback.</p>
-
-<p>Only a driver that uses system-mode DMA should call  <b>WdfDmaTransactionStopSystemTransfer</b>.</p>
-
-<p>A driver using bus-mastering  DMA is responsible for programming its own dedicated DMA controller. In the event of a request cancellation, timeout, or device error, the driver can program the DMA controller to stop transferring data.</p>
-
-<p>In contrast, a driver using system-mode DMA must rely on the hardware abstraction layer (HAL) to program the shared DMA controller.  When a driver calls <b>WdfDmaTransactionStopSystemTransfer</b>, the framework notifies the HAL that the transfer must be stopped and returns immediately.</p>
-
-<p>The framework next calls the driver's <a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt-wdf-dma-transaction-dma-transfer-complete.md">EvtDmaTransactionDmaTransferComplete</a> callback function, if the driver has provided one.  If not, the framework returns FALSE when the driver next calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff547039">WdfDmaTransactionDmaCompleted</a>.</p>
-
-<p>If your driver calls this method on an operating system earlier than Windows 8, <a href="wdf.using_kmdf_verifier">the framework's verifier</a> reports an error.</p>
-
-<p> For more information about system-mode DMA, see <a href="wdf.supporting_system-mode_dma">Supporting System-Mode DMA</a>.</p>
-
-<p> For more information about canceling DMA transactions, see <a href="wdf.canceling_dma_transactions">Canceling DMA Transactions</a>.</p>
-
-<p>The following code example shows how a driver might call <b>WdfDmaTransactionStopSystemTransfer</b> from an <a href="wdf.evttimerfunc">EvtTimerFunc</a> event callback function that it registers to be called if an I/O request times out.</p>
-
-<p>The following code example shows how a driver might call <b>WdfDmaTransactionStopSystemTransfer</b> from an <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-cancel.md">EvtRequestCancel</a> callback function. The driver previously called <a href="https://msdn.microsoft.com/library/windows/hardware/ff549984">WdfRequestMarkCancelableEx</a> from its I/O request handler to register the callback.</p>
+<p>The following code example shows how a driver might call <b>WdfDmaTransactionStopSystemTransfer</b> from an <a href="..\wdfrequest\nc-wdfrequest-evt-wdf-request-cancel.md">EvtRequestCancel</a> callback function. The driver previously called <a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelableex.md">WdfRequestMarkCancelableEx</a> from its I/O request handler to register the callback.</p>
 
 ## -requirements
 <table>
@@ -166,7 +148,7 @@ void WdfDmaTransactionStopSystemTransfer(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>
 </td>
 </tr>
 </table>
@@ -174,12 +156,12 @@ void WdfDmaTransactionStopSystemTransfer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451127">WdfDmaTransactionCancel</a>
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncancel.md">WdfDmaTransactionCancel</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547027">WdfDmaTransactionCreate</a>
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionStopSystemTransfer method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionStopSystemTransfer method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The flags that are set by the client driver in the  <a href="https://msdn.microsoft.com/library/windows/hardware/mt187841">EVT_UCX_USBDEVICE_ENABLE</a> callback function. Indicate errors, if any, that might have occurred while enabling the device.</p>
+<p>The flags that are set by the client driver in the  <a href="buses.evt_ucx_usbdevice_enable">EVT_UCX_USBDEVICE_ENABLE</a> callback function. Indicate errors, if any, that might have occurred while enabling the device.</p>
 
 
 ## -syntax
@@ -96,10 +96,10 @@ typedef struct _USBDEVICE_ENABLE_FAILURE_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188072">USBDEVICE_ENABLE</a>
+<a href="buses._usbdevice_enable">USBDEVICE_ENABLE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187841">EVT_UCX_USBDEVICE_ENABLE</a>
+<a href="buses.evt_ucx_usbdevice_enable">EVT_UCX_USBDEVICE_ENABLE</a>
 </dt>
 </dl>
 <p> </p>

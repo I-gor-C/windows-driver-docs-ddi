@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>OPLOCK_KEY_CONTEXT</b> structure is returned from <a href="https://msdn.microsoft.com/library/windows/hardware/hh439325">IoGetOplockKeyContextEx</a>. This structure contains oplock keys for a specific file object.</p>
+<p>The <b>OPLOCK_KEY_CONTEXT</b> structure is returned from <a href="..\ntddk\nf-ntddk-iogetoplockkeycontextex.md">IoGetOplockKeyContextEx</a>. This structure contains oplock keys for a specific file object.</p>
 
 
 ## -syntax
@@ -141,7 +141,7 @@ typedef struct _OPLOCK_KEY_CONTEXT {
 </dl>
 
 ## -remarks
-<p>If an oplock is requested for a file during an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> request, a file system that supports oplocks   will attach an oplock key context to the file object created. The oplock key  context is later available through a pointer to an <b>OPLOCK_KEY_CONTEXT</b> structure.  The <b>OPLOCK_KEY_CONTEXT</b> structure is returned from a call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh439325">IoGetOplockKeyContextEx</a>.</p>
+<p>If an oplock is requested for a file during an <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a> request, a file system that supports oplocks   will attach an oplock key context to the file object created. The oplock key  context is later available through a pointer to an <b>OPLOCK_KEY_CONTEXT</b> structure.  The <b>OPLOCK_KEY_CONTEXT</b> structure is returned from a call to <a href="..\ntddk\nf-ntddk-iogetoplockkeycontextex.md">IoGetOplockKeyContextEx</a>.</p>
 
 ## -requirements
 <table>
@@ -168,10 +168,10 @@ typedef struct _OPLOCK_KEY_CONTEXT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406392">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>
+<a href="ifsk.dual_oplock_key_ecp_context">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439325">IoGetOplockKeyContextEx</a>
+<a href="..\ntddk\nf-ntddk-iogetoplockkeycontextex.md">IoGetOplockKeyContextEx</a>
 </dt>
 <dt>
 <a href="ifsk.oplock_semantics">Oplock Semantics</a>

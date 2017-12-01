@@ -75,8 +75,6 @@ LONG VideoPortReadStateEvent(
 ## -remarks
 <p>This function is available in Windows XP and later. </p>
 
-<p>This function is available in Windows XP and later. </p>
-
 ## -requirements
 <table>
 <tr>

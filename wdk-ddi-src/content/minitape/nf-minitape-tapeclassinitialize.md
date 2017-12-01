@@ -85,12 +85,6 @@ ULONG TapeClassInitialize(
 
 <p>A tape miniclass driver allocates a TAPE_INIT_DATA_EX structure on the stack, clears it with <b>TapeClassZeroMemory</b>, fills in all the appropriate members, and passes it to <b>TapeClassInitialize</b>.</p>
 
-<p>A tape miniclass driver calls <b>TapeClassInitialize</b> from its <b>DriverEntry</b> routine and passes driver-specific information in <i>TapeInitData</i>. <b>TapeClassInitialize</b> performs a large part of the driver initialization on behalf of the miniclass driver and insulates the miniclass driver from operating system-specific details.</p>
-
-<p><b>TapeClassInitialize</b> calls the tape miniclass driver for driver-specific activities required during initialization. For example, <b>TapeClassInitialize</b> calls the tape miniclass driver's TapeMiniVerifyInquiry routine to determine whether the driver supports a given tape device. <b>TapeClassInitialize</b> also calls the tape miniclass driver's TapeMiniExtensionInit routine to initialize the minitape extension, if the miniclass driver requested one.</p>
-
-<p>A tape miniclass driver allocates a TAPE_INIT_DATA_EX structure on the stack, clears it with <b>TapeClassZeroMemory</b>, fills in all the appropriate members, and passes it to <b>TapeClassInitialize</b>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -128,10 +122,10 @@ ULONG TapeClassInitialize(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567968">TAPE_INIT_DATA_EX</a>
+<a href="..\minitape\ns-minitape--tape-init-data-ex.md">TAPE_INIT_DATA_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
+<a href="storage.driverentry_of_tape_miniclass_driver">DriverEntry of Tape Miniclass Driver</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: kernel\rtl_osversioninfoexw.htm
 old-project: kernel
 ms.assetid: 88471e00-4913-44fd-b9f4-960ec46fb75a
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: OSVERSIONINFOEXW, OSVERSIONINFOEXW, *POSVERSIONINFOEXW, *LPOSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ typedef struct _OSVERSIONINFOEXW {
 ### -field <b>dwOSVersionInfoSize</b>
 
 <dd>
-<p>The size, in bytes, of an <b>RTL_OSVERSIONINFOEXW</b> structure. This member must be set before the structure is used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff561910">RtlGetVersion</a>.</p>
+<p>The size, in bytes, of an <b>RTL_OSVERSIONINFOEXW</b> structure. This member must be set before the structure is used with <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>.</p>
 </dd>
 
 ### -field <b>dwMajorVersion</b>
@@ -278,7 +278,7 @@ typedef struct _OSVERSIONINFOEXW {
 </dl>
 
 ## -remarks
-<p>The information in this structure includes the major and minor version numbers, the build number, the platform identifier, the installed product suites, and the latest service pack that is installed on the system. This structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561910">RtlGetVersion</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff563026">RtlVerifyVersionInfo</a> routines.</p>
+<p>The information in this structure includes the major and minor version numbers, the build number, the platform identifier, the installed product suites, and the latest service pack that is installed on the system. This structure is used with the <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a> and <a href="..\wdm\nf-wdm-rtlverifyversioninfo.md">RtlVerifyVersionInfo</a> routines.</p>
 
 <p>Relying on version information is not always the best way to test whether a feature is available. For guidance, refer to the documentation for the feature you are interested in.</p>
 
@@ -300,19 +300,9 @@ typedef struct _OSVERSIONINFOEXW {
 
 <p>6.2</p>
 
-<p>6</p>
-
 <p>2</p>
-
-<p><b>wProductType</b> == VER_NT_WORKSTATION</p>
 
 <p>Windows Server 2012</p>
-
-<p>6.2</p>
-
-<p>6</p>
-
-<p>2</p>
 
 <p><b>wProductType</b> != VER_NT_WORKSTATION</p>
 
@@ -320,41 +310,17 @@ typedef struct _OSVERSIONINFOEXW {
 
 <p>6.1</p>
 
-<p>6</p>
-
 <p>1</p>
-
-<p><b>wProductType</b> == VER_NT_WORKSTATION</p>
 
 <p>Windows Server 2008 R2</p>
-
-<p>6.1</p>
-
-<p>6</p>
-
-<p>1</p>
-
-<p><b>wProductType</b> != VER_NT_WORKSTATION</p>
 
 <p>Windows Server 2008</p>
 
 <p>6.0</p>
 
-<p>6</p>
-
 <p>0</p>
-
-<p><b>wProductType</b> != VER_NT_WORKSTATION</p>
 
 <p>Windows Vista</p>
-
-<p>6.0</p>
-
-<p>6</p>
-
-<p>0</p>
-
-<p><b>wProductType</b> == VER_NT_WORKSTATION</p>
 
 <p>Windows Home Server</p>
 
@@ -362,27 +328,13 @@ typedef struct _OSVERSIONINFOEXW {
 
 <p>5</p>
 
-<p>2</p>
-
 <p><b>wSuiteMask</b> == VER_SUITE_WH_SERVER</p>
 
 <p>Windows Server 2003</p>
 
-<p>5.2</p>
-
-<p>5</p>
-
-<p>2</p>
-
 <p>Not applicable</p>
 
 <p>Windows XP Professional x64 Edition (see note)</p>
-
-<p>5.2</p>
-
-<p>5</p>
-
-<p>2</p>
 
 <p><b>wProductType</b> == VER_NT_WORKSTATION </p>
 
@@ -390,23 +342,9 @@ typedef struct _OSVERSIONINFOEXW {
 
 <p>5.1</p>
 
-<p>5</p>
-
-<p>1</p>
-
-<p>Not applicable</p>
-
 <p>Windows 2000</p>
 
 <p>5.0</p>
-
-<p>5</p>
-
-<p>0</p>
-
-<p>Not applicable</p>
-
-<p> </p>
 
 ## -requirements
 <table>
@@ -425,15 +363,15 @@ typedef struct _OSVERSIONINFOEXW {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563624">RTL_OSVERSIONINFOW</a>
+<a href="kernel.rtl_osversioninfow">RTL_OSVERSIONINFOW</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561910">RtlGetVersion</a>
+<a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563026">RtlVerifyVersionInfo</a>
+<a href="..\wdm\nf-wdm-rtlverifyversioninfo.md">RtlVerifyVersionInfo</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RTL_OSVERSIONINFOEXW structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RTL_OSVERSIONINFOEXW structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -75,8 +75,6 @@ NTSTATUS RtlDrainNonVolatileFlush(
 ## -remarks
 <p> This routine <b>RtlDrainNonVolatileFlush</b> can also add more context to <b>NvToken</b> to help verifiers. This routine is currently not supported for Windows Server until the next major release of Windows Server.</p>
 
-<p> This routine <b>RtlDrainNonVolatileFlush</b> can also add more context to <b>NvToken</b> to help verifiers. This routine is currently not supported for Windows Server until the next major release of Windows Server.</p>
-
 ## -requirements
 <table>
 <tr>

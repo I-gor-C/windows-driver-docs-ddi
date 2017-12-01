@@ -7,7 +7,7 @@ old-location: netvista\_dot11_wfd_secondary_device_type_list.htm
 old-project: netvista
 ms.assetid: ABD61A6C-EE0A-49AF-AE8C-75014C2A09D4
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST,
 ms.prod: windows-hardware
 ms.technology: windows-devices

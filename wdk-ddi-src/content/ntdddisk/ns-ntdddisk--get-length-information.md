@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GET_LENGTH_INFORMATION structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560370">IOCTL_DISK_GET_LENGTH_INFO</a> to obtain the length, in bytes, of a disk, partition, or volume. </p>
+<p>The GET_LENGTH_INFORMATION structure is used with the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-length-info.md">IOCTL_DISK_GET_LENGTH_INFO</a> to obtain the length, in bytes, of a disk, partition, or volume. </p>
 
 
 ## -syntax
@@ -81,7 +81,7 @@ typedef struct _GET_LENGTH_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560370">IOCTL_DISK_GET_LENGTH_INFO</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-length-info.md">IOCTL_DISK_GET_LENGTH_INFO</a>
 </dt>
 </dl>
 <p> </p>

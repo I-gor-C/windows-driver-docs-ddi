@@ -7,7 +7,7 @@ old-location: kernel\silo_monitor_registration.htm
 old-project: kernel
 ms.assetid: F99F6346-3FEE-4889-A058-C7540A4CBFC8
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: SILO_MONITOR_REGISTRATION, SILO_MONITOR_REGISTRATION, *PSILO_MONITOR_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices

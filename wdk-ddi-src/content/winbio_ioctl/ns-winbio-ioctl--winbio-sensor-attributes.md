@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff536431">IOCTL_BIOMETRIC_GET_ATTRIBUTES</a> structure returns the WINBIO_SENSOR_ATTRIBUTES structure as output.</p>
+<p>The <a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-get-attributes.md">IOCTL_BIOMETRIC_GET_ATTRIBUTES</a> structure returns the WINBIO_SENSOR_ATTRIBUTES structure as output.</p>
 
 
 ## -syntax
@@ -104,7 +104,7 @@ typedef struct _WINBIO_SENSOR_ATTRIBUTES {
 ### -field <b>WinBioVersion</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536481">WINBIO_VERSION</a> that contains a WinBio WBDI version that is supported by the driver. To be compatible with the WinBio service, <b>WinBioVersion</b> must contain the same major version as the current major version of the WinBio service, in addition to a minor version that is less than or equal to the current minor version of the WinBio service. </p>
+<p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-version.md">WINBIO_VERSION</a> that contains a WinBio WBDI version that is supported by the driver. To be compatible with the WinBio service, <b>WinBioVersion</b> must contain the same major version as the current major version of the WinBio service, in addition to a minor version that is less than or equal to the current minor version of the WinBio service. </p>
 </dd>
 
 ### -field <b>SensorType</b>
@@ -286,7 +286,7 @@ typedef struct _WINBIO_SENSOR_ATTRIBUTES {
 ### -field <b>FirmwareVersion</b>
 
 <dd>
-<p> A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536481">WINBIO_VERSION</a> that contains the version of the firmware that is loaded on the device.</p>
+<p> A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-version.md">WINBIO_VERSION</a> that contains the version of the firmware that is loaded on the device.</p>
 </dd>
 
 ### -field <b>SupportedFormatEntries</b>
@@ -298,7 +298,7 @@ typedef struct _WINBIO_SENSOR_ATTRIBUTES {
 ### -field <b>SupportedFormat</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536473">WINBIO_REGISTERED_FORMAT</a> that contains a list of the formats supported by the driver and device. </p>
+<p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-registered-format.md">WINBIO_REGISTERED_FORMAT</a> that contains a list of the formats supported by the driver and device. </p>
 </dd>
 </dl>
 
@@ -330,7 +330,7 @@ typedef struct _WINBIO_SENSOR_ATTRIBUTES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536431">IOCTL_BIOMETRIC_GET_ATTRIBUTES</a>
+<a href="..\winbio_ioctl\ni-winbio-ioctl-ioctl-biometric-get-attributes.md">IOCTL_BIOMETRIC_GET_ATTRIBUTES</a>
 </dt>
 </dl>
 <p> </p>

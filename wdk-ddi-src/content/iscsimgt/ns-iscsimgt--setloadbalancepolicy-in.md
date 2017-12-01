@@ -81,7 +81,7 @@ typedef struct _SetLoadBalancePolicy_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563062">MSiSCSI_LB_Operations WMI Class</a>
+<a href="storage.msiscsi_lb_operations_wmi_class">MSiSCSI_LB_Operations WMI Class</a>
 </dt>
 </dl>
 <p> </p>

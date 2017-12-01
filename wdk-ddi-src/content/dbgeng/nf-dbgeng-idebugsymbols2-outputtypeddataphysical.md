@@ -7,7 +7,7 @@ old-location: debugger\outputtypeddataphysical.htm
 old-project: debugger
 ms.assetid: 0c2ae1ff-bbf1-462f-b9ab-49f74cf12fae
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols2, OutputTypedDataPhysical, IDebugSymbols2::OutputTypedDataPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ HRESULT OutputTypedDataPhysical(
 ### -param <i>OutputControl</i> [in]
 
 <dd>
-<p>Specifies the output control used to determine which output callbacks can receive the output.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541517">DEBUG_OUTCTL_XXX</a> for possible values.</p>
+<p>Specifies the output control used to determine which output callbacks can receive the output.  See <a href="debugger.debug_outctl_xxx">DEBUG_OUTCTL_XXX</a> for possible values.</p>
 </dd>
 
 ### -param <i>Offset</i> [in]
@@ -85,7 +85,7 @@ HRESULT OutputTypedDataPhysical(
 ### -param <i>Flags</i> [in]
 
 <dd>
-<p>Specifies the bit-set containing the formatting options.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541712">DEBUG_TYPEOPTS_XXX</a> for possible values.</p>
+<p>Specifies the bit-set containing the formatting options.  See <a href="debugger.debug_typeopts_xxx">DEBUG_TYPEOPTS_XXX</a> for possible values.</p>
 </dd>
 </dl>
 
@@ -97,12 +97,6 @@ HRESULT OutputTypedDataPhysical(
 <p> </p>
 
 ## -remarks
-<p>This method is only available in kernel mode debugging.</p>
-
-<p>The output produced by this method is the same as for the debugger command <b>DT</b>.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff542772">dt (Display Type)</a>.</p>
-
-<p>For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.  For information about output, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>
-
 <p>This method is only available in kernel mode debugging.</p>
 
 <p>The output produced by this method is the same as for the debugger command <b>DT</b>.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff542772">dt (Display Type)</a>.</p>

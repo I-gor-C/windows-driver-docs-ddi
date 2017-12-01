@@ -80,67 +80,67 @@ typedef struct _UFX_DEVICE_CALLBACKS {
 ### -field <b>EvtDeviceHostConnect</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187852">EVT_UFX_DEVICE_HOST_CONNECT</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_host_connect">EVT_UFX_DEVICE_HOST_CONNECT</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDeviceHostDisconnect</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187853">EVT_UFX_DEVICE_HOST_DISCONNECT</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_host_disconnect">EVT_UFX_DEVICE_HOST_DISCONNECT</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDeviceAddressed</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187847">EVT_UFX_DEVICE_ADDRESSED</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_addressed">EVT_UFX_DEVICE_ADDRESSED</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDeviceEndpointAdd</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187851">EVT_UFX_DEVICE_ENDPOINT_ADD</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_endpoint_add">EVT_UFX_DEVICE_ENDPOINT_ADD</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDeviceDefaultEndpointAdd</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187849">EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_default_endpoint_add">EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDeviceUsbStateChange</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187863">EVT_UFX_DEVICE_USB_STATE_CHANGE</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_usb_state_change">EVT_UFX_DEVICE_USB_STATE_CHANGE</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDevicePortChange</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187854">EVT_UFX_DEVICE_PORT_CHANGE</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_port_change">EVT_UFX_DEVICE_PORT_CHANGE</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDevicePortDetect</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187855">EVT_UFX_DEVICE_PORT_DETECT</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_port_detect">EVT_UFX_DEVICE_PORT_DETECT</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDeviceRemoteWakeupSignal</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187859">EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL</a> callback routine.  </p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_remote_wakeup_signal">EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL</a> callback routine.  </p>
 </dd>
 
 ### -field <b>EvtDeviceControllerReset</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187848">EVT_UFX_DEVICE_CONTROLLER_RESET</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_controller_reset">EVT_UFX_DEVICE_CONTROLLER_RESET</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDeviceTestModeSet</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187862">EVT_UFX_DEVICE_TEST_MODE_SET</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_test_mode_set">EVT_UFX_DEVICE_TEST_MODE_SET</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDeviceTestHook</b>
@@ -152,30 +152,30 @@ typedef struct _UFX_DEVICE_CALLBACKS {
 ### -field <b>EvtDeviceSuperSpeedPowerFeature</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187860">EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_super_speed_power_feature">EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDeviceProprietaryChargerDetect</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187850">EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_detect_proprietary_charger">EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDeviceProprietaryChargerSetProperty</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187858">EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_proprietary_charger_set_property">EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback routine.</p>
 </dd>
 
 ### -field <b>EvtDeviceProprietaryChargerReset</b>
 
 <dd>
-<p>A pointer to the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187857">EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET</a> callback routine.</p>
+<p>A pointer to the client driver’s <a href="buses.evt_ufx_device_proprietary_charger_reset">EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET</a> callback routine.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The client driver shall use the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187972">UFX_DEVICE_CALLBACKS_INIT</a> macro to initialize the <b>UFX_DEVICE_CALLBACKS</b> structure, and then shall set fields of structure to the appropriate event callback routines prior to calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187951">UfxDeviceCreate</a> export function.</p>
+<p>The client driver shall use the <a href="buses.ufx_device_callbacks_init">UFX_DEVICE_CALLBACKS_INIT</a> macro to initialize the <b>UFX_DEVICE_CALLBACKS</b> structure, and then shall set fields of structure to the appropriate event callback routines prior to calling the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a> export function.</p>
 
 ## -requirements
 <table>

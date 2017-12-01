@@ -91,8 +91,6 @@ HRESULT APIENTRY* pfnCreatePipelineState(
 ## -remarks
 <p>Access this function by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi-device-funcs-core-0021.md">D3D12DDI_DEVICE_FUNCS_CORE_0021</a> structure.</p>
 
-<p>Access this function by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi-device-funcs-core-0021.md">D3D12DDI_DEVICE_FUNCS_CORE_0021</a> structure.</p>
-
 ## -requirements
 <table>
 <tr>

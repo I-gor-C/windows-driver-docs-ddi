@@ -7,7 +7,7 @@ old-location: stream\ks_videoinfo.htm
 old-project: stream
 ms.assetid: e588a844-0b20-418c-9c65-e85f3a992d5c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagKS_VIDEOINFO, KS_VIDEOINFO, *PKS_VIDEOINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -97,7 +97,7 @@ typedef struct tagKS_VIDEOINFO {
 ### -field <b>bmiHeader</b>
 
 <dd>
-<p>Describes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.</p>
+<p>Describes a <a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.</p>
 </dd>
 
 ### -field <b>bmiColors</b>
@@ -116,7 +116,7 @@ typedef struct tagKS_VIDEOINFO {
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567685">KS_TRUECOLORINFO</a> structure that contains both a color palette and an array of color bitmasks.</p>
+<a href="stream.ks_truecolorinfo">KS_TRUECOLORINFO</a> structure that contains both a color palette and an array of color bitmasks.</p>
 </dd>
 </dl>
 
@@ -146,15 +146,15 @@ typedef struct tagKS_VIDEOINFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a>
+<a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567675">KS_RGBQUAD</a>
+<a href="stream.ks_rgbquad">KS_RGBQUAD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567685">KS_TRUECOLORINFO</a>
+<a href="stream.ks_truecolorinfo">KS_TRUECOLORINFO</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEOINFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEOINFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

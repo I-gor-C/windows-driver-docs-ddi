@@ -64,7 +64,7 @@ typedef struct _D3DDDIARG_DECODEBEGINFRAME {
 ### -field <b>pPVPSetKey</b>
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562925">DXVADDI_PVP_SETKEY</a> structure that contains a key that the driver requires for the decode device to start operating. </p>
+<p>A pointer to the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-pvp-setkey.md">DXVADDI_PVP_SETKEY</a> structure that contains a key that the driver requires for the decode device to start operating. </p>
 </dd>
 </dl>
 
@@ -102,7 +102,7 @@ typedef struct _D3DDDIARG_DECODEBEGINFRAME {
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decodebeginframe.md">DecodeBeginFrame</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562925">DXVADDI_PVP_SETKEY</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-pvp-setkey.md">DXVADDI_PVP_SETKEY</a>
 </dt>
 </dl>
 <p> </p>

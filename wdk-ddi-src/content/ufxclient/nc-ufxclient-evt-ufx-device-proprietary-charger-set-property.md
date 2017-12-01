@@ -66,13 +66,13 @@ typedef EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY PFN_UFX_DEVICE_PROPRIETA
 ### -param <i>UfxDevice</i> [in]
 
 <dd>
-<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187951">UfxDeviceCreate</a>.</p>
+<p>The handle to a  USB device object that the client driver received in a previous call to  the <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.</p>
 </dd>
 
 ### -param <i>WdfRequest</i> [in]
 
 <dd>
-<p>The handle framework request object that for an <a href="https://msdn.microsoft.com/library/windows/hardware/mt186650">IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY</a> request from the battery minidriver. </p>
+<p>The handle framework request object that for an <a href="..\charging\ni-charging-ioctl-internal-configure-charger-property.md">IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY</a> request from the battery minidriver. </p>
 </dd>
 </dl>
 
@@ -82,11 +82,7 @@ typedef EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY PFN_UFX_DEVICE_PROPRIETA
 ## -remarks
 <p><i>EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY</i> is an optional event callback.</p>
 
-<p><i>WdfRequest</i> is contains a request for <a href="https://msdn.microsoft.com/library/windows/hardware/mt186650">IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY</a>, which specifies a charger ID that is known by the client driver and battery miniclass driver, and a voltage value in millivolts.  The client driver can use this information to enable charging over the USB port at an appropriate current/voltage level.</p>
-
-<p><i>EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY</i> is an optional event callback.</p>
-
-<p><i>WdfRequest</i> is contains a request for <a href="https://msdn.microsoft.com/library/windows/hardware/mt186650">IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY</a>, which specifies a charger ID that is known by the client driver and battery miniclass driver, and a voltage value in millivolts.  The client driver can use this information to enable charging over the USB port at an appropriate current/voltage level.</p>
+<p><i>WdfRequest</i> is contains a request for <a href="..\charging\ni-charging-ioctl-internal-configure-charger-property.md">IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY</a>, which specifies a charger ID that is known by the client driver and battery miniclass driver, and a voltage value in millivolts.  The client driver can use this information to enable charging over the USB port at an appropriate current/voltage level.</p>
 
 ## -requirements
 <table>
@@ -129,10 +125,10 @@ typedef EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY PFN_UFX_DEVICE_PROPRIETA
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187951">UfxDeviceCreate</a>
+<a href="buses.ufxdevicecreate">UfxDeviceCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187964">UfxDeviceProprietaryChargerDetectComplete</a>
+<a href="buses.ufxdeviceproprietarychargerdetectcomplete">UfxDeviceProprietaryChargerDetectComplete</a>
 </dt>
 </dl>
 <p> </p>

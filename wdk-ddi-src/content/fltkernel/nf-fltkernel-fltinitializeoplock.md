@@ -65,15 +65,9 @@ VOID FltInitializeOplock(
 <p>None </p>
 
 ## -remarks
-<p>When the oplock pointer is no longer needed, it can be uninitialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544598">FltUninitializeOplock</a>. The uninitialized oplock pointer can then be initialized for reuse by calling <b>FltInitializeOplock</b>. </p>
+<p>When the oplock pointer is no longer needed, it can be uninitialized by calling <a href="..\fltkernel\nf-fltkernel-fltuninitializeoplock.md">FltUninitializeOplock</a>. The uninitialized oplock pointer can then be initialized for reuse by calling <b>FltInitializeOplock</b>. </p>
 
-<p>To request an oplock or respond to an oplock break notification, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543398">FltOplockFsctrl</a>. </p>
-
-<p>For detailed information about opportunistic locks, see the Microsoft Windows SDK documentation. </p>
-
-<p>When the oplock pointer is no longer needed, it can be uninitialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544598">FltUninitializeOplock</a>. The uninitialized oplock pointer can then be initialized for reuse by calling <b>FltInitializeOplock</b>. </p>
-
-<p>To request an oplock or respond to an oplock break notification, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543398">FltOplockFsctrl</a>. </p>
+<p>To request an oplock or respond to an oplock break notification, call <a href="..\fltkernel\nf-fltkernel-fltoplockfsctrl.md">FltOplockFsctrl</a>. </p>
 
 <p>For detailed information about opportunistic locks, see the Microsoft Windows SDK documentation. </p>
 
@@ -132,22 +126,22 @@ VOID FltInitializeOplock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541844">FltCheckOplock</a>
+<a href="..\fltkernel\nf-fltkernel-fltcheckoplock.md">FltCheckOplock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541946">FltCurrentBatchOplock</a>
+<a href="..\fltkernel\nf-fltkernel-fltcurrentbatchoplock.md">FltCurrentBatchOplock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543398">FltOplockFsctrl</a>
+<a href="..\fltkernel\nf-fltkernel-fltoplockfsctrl.md">FltOplockFsctrl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543404">FltOplockIsFastIoPossible</a>
+<a href="..\fltkernel\nf-fltkernel-fltoplockisfastiopossible.md">FltOplockIsFastIoPossible</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544598">FltUninitializeOplock</a>
+<a href="..\fltkernel\nf-fltkernel-fltuninitializeoplock.md">FltUninitializeOplock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546150">FsRtlInitializeOplock</a>
+<a href="ifsk.fsrtlinitializeoplock">FsRtlInitializeOplock</a>
 </dt>
 </dl>
 <p> </p>

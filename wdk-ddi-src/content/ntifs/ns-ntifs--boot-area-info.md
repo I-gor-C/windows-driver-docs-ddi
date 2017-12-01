@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>BOOT_AREA_INFO</b> structure contains the output for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff728858">FSCTL_GET_BOOT_AREA_INFO</a> control code.</p>
+<p>The <b>BOOT_AREA_INFO</b> structure contains the output for the <a href="ifsk.fsctl_get_boot_area_info">FSCTL_GET_BOOT_AREA_INFO</a> control code.</p>
 
 
 ## -syntax
@@ -106,7 +106,7 @@ typedef struct _BOOT_AREA_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff728858">FSCTL_GET_BOOT_AREA_INFO</a>
+<a href="ifsk.fsctl_get_boot_area_info">FSCTL_GET_BOOT_AREA_INFO</a>
 </dt>
 </dl>
 <p> </p>

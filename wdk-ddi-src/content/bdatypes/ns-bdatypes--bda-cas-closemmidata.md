@@ -7,7 +7,7 @@ old-location: stream\bda_cas_closemmidata.htm
 old-project: stream
 ms.assetid: D1AA47FB-A419-4B25-89A8-7481630B108A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_CAS_CLOSEMMIDATA, BDA_CAS_CLOSEMMIDATA, *PBDA_CAS_CLOSEMMIDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

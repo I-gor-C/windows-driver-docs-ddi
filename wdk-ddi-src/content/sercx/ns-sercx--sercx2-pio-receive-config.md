@@ -63,7 +63,7 @@ typedef struct _SERCX2_PIO_RECEIVE_CONFIG {
 ### -field <b>Size</b>
 
 <dd>
-<p>The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265264">SerCx2PioReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
+<p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
 ### -field <b>EvtSerCx2PioReceiveInitializeTransaction</b>
@@ -98,7 +98,7 @@ typedef struct _SERCX2_PIO_RECEIVE_CONFIG {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265264">SerCx2PioReceiveCreate</a> method accepts a pointer to a <b>SERCX2_PIO_RECEIVE_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2PioReceiveCreate</b>, call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265331">SERCX2_PIO_RECEIVE_CONFIG_INIT</a> function to initialize this structure.</p>
+<p>The <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method accepts a pointer to a <b>SERCX2_PIO_RECEIVE_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2PioReceiveCreate</b>, call the <a href="..\sercx\nf-sercx-sercx2-pio-receive-config-init.md">SERCX2_PIO_RECEIVE_CONFIG_INIT</a> function to initialize this structure.</p>
 
 ## -requirements
 <table>
@@ -131,10 +131,10 @@ typedef struct _SERCX2_PIO_RECEIVE_CONFIG {
 <a href="..\sercx\nc-sercx-evt-sercx2-pio-receive-cleanup-transaction.md">EvtSerCx2PioReceiveCleanupTransaction</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265331">SERCX2_PIO_RECEIVE_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx2-pio-receive-config-init.md">SERCX2_PIO_RECEIVE_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265264">SerCx2PioReceiveCreate</a>
+<a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a>
 </dt>
 <dt>
 <a href="..\sercx\nc-sercx-evt-sercx2-pio-receive-enable-ready-notification.md">EvtSerCx2PioReceiveEnableReadyNotification</a>

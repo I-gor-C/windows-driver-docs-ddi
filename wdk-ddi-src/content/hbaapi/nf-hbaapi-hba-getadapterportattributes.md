@@ -59,7 +59,7 @@ HBA_STATUS HBA_API HBA_GetAdapterPortAttributes(
 ### -param <i>HbaHandle</i> [in]
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located. </p>
 </dd>
 
 ### -param <i>PortIndex</i> [in]
@@ -71,16 +71,14 @@ HBA_STATUS HBA_API HBA_GetAdapterPortAttributes(
 ### -param <i>PortAttributes</i> [out]
 
 <dd>
-<p>Pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557107">HBA_PortAttributes</a> that, on return, contains the attributes of the remote port with an index of <i>PortIndex </i>on the HBA specified by <i>HbaHandle. </i></p>
+<p>Pointer to a structure of type <a href="..\hbaapi\ns-hbaapi-hba-portattributes.md">HBA_PortAttributes</a> that, on return, contains the attributes of the remote port with an index of <i>PortIndex </i>on the HBA specified by <i>HbaHandle. </i></p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_GetAdapterPortAttributes</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. A value of HBA_STATUS_OK indicates that the operation succeeded. A value of HBA_STATUS_ERROR indicates that an unspecified error occurred that prevented the retrieval of the port attributes. </p>
+<p>The <b>HBA_GetAdapterPortAttributes</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. A value of HBA_STATUS_OK indicates that the operation succeeded. A value of HBA_STATUS_ERROR indicates that an unspecified error occurred that prevented the retrieval of the port attributes. </p>
 
 ## -remarks
-<p>The <b>HBA_GetAdapterPortAttributes</b> routine retrieves attributes for remote ports of type Nx_Port. For a definition of Nx_Port, see the T11 committee's specification for <i>Fibre Channel HBA API</i>.</p>
-
 <p>The <b>HBA_GetAdapterPortAttributes</b> routine retrieves attributes for remote ports of type Nx_Port. For a definition of Nx_Port, see the T11 committee's specification for <i>Fibre Channel HBA API</i>.</p>
 
 ## -requirements
@@ -130,13 +128,13 @@ HBA_STATUS HBA_API HBA_GetAdapterPortAttributes(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557107">HBA_PortAttributes</a>
+<a href="..\hbaapi\ns-hbaapi-hba-portattributes.md">HBA_PortAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

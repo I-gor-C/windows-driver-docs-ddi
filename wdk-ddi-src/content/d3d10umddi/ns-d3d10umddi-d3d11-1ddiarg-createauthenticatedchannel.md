@@ -58,7 +58,7 @@ typedef struct D3D11_1DDIARG_CREATEAUTHENTICATEDCHANNEL {
 ### -field <b>ChannelType</b>
 
 <dd>
-<p>Specifies the type of channel, as a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406343">D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE</a> enumeration.</p>
+<p>Specifies the type of channel, as a member of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-authenticated-channel-type.md">D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE</a> enumeration.</p>
 </dd>
 
 ### -field <b>hChannel</b>
@@ -107,7 +107,7 @@ typedef struct D3D11_1DDIARG_CREATEAUTHENTICATEDCHANNEL {
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-createauthenticatedchannel.md">CreateAuthenticatedChannel(D3D11_1)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406343">D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11-1ddi-authenticated-channel-type.md">D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE</a>
 </dt>
 </dl>
 <p> </p>

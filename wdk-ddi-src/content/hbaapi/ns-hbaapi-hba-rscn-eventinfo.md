@@ -95,13 +95,13 @@ typedef struct HBA_RSCN_EventInfo {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556048">HBA_EventInfo</a>
+<a href="..\hbaapi\ns-hbaapi-hba-eventinfo.md">HBA_EventInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556124">HBA_Link_EventInfo</a>
+<a href="..\hbaapi\ns-hbaapi-hba-link-eventinfo.md">HBA_Link_EventInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557125">HBA_Pty_EventInfo</a>
+<a href="..\hbaapi\ns-hbaapi-hba-pty-eventinfo.md">HBA_Pty_EventInfo</a>
 </dt>
 </dl>
 <p> </p>

@@ -57,7 +57,7 @@ NTSTATUS D3DKMTOpenAdapterFromDeviceName(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548106">D3DKMT_OPENADAPTERFROMDEVICENAME</a> structure that describes the parameters that are required to perform the mapping.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openadapterfromdevicename.md">D3DKMT_OPENADAPTERFROMDEVICENAME</a> structure that describes the parameters that are required to perform the mapping.</p>
 </dd>
 </dl>
 
@@ -73,8 +73,6 @@ NTSTATUS D3DKMTOpenAdapterFromDeviceName(
 <p>This function might also return other NTSTATUS values.</p>
 
 ## -remarks
-<p>A graphics adapter corresponds to a video card. A monitor output corresponds to a head on a video card. A system with a single video card contains only one adapter. However, if the video card supports multiple heads, it supports outputting to multiple monitors.</p>
-
 <p>A graphics adapter corresponds to a video card. A monitor output corresponds to a head on a video card. A system with a single video card contains only one adapter. However, if the video card supports multiple heads, it supports outputting to multiple monitors.</p>
 
 ## -requirements
@@ -132,7 +130,7 @@ NTSTATUS D3DKMTOpenAdapterFromDeviceName(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548106">D3DKMT_OPENADAPTERFROMDEVICENAME</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openadapterfromdevicename.md">D3DKMT_OPENADAPTERFROMDEVICENAME</a>
 </dt>
 </dl>
 <p> </p>

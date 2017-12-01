@@ -69,46 +69,46 @@ enum D3D10_2DDICAPS_TYPE {
 ### -field <a id="D3D11DDICAPS_THREADING"></a><a id="d3d11ddicaps_threading"></a><b>D3D11DDICAPS_THREADING</b>
 
 <dd>
-<p>The driver retrieves a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542163">D3D11DDI_THREADING_CAPS</a> structure that describes the threading capabilities that the driver supports. </p>
+<p>The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-threading-caps.md">D3D11DDI_THREADING_CAPS</a> structure that describes the threading capabilities that the driver supports. </p>
 </dd>
 
 ### -field <a id="D3D11DDICAPS_SHADER"></a><a id="d3d11ddicaps_shader"></a><b>D3D11DDICAPS_SHADER</b>
 
 <dd>
-<p>The driver retrieves a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542153">D3D11DDI_SHADER_CAPS</a> structure that describes the shader capabilities that the driver supports. </p>
+<p>The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-shader-caps.md">D3D11DDI_SHADER_CAPS</a> structure that describes the shader capabilities that the driver supports. </p>
 </dd>
 
 ### -field <a id="D3D11DDICAPS_3DPIPELINESUPPORT"></a><a id="d3d11ddicaps_3dpipelinesupport"></a><b>D3D11DDICAPS_3DPIPELINESUPPORT</b>
 
 <dd>
-<p>The driver retrieves a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542134">D3D11DDI_3DPIPELINESUPPORT_CAPS</a> structure that describes the pipeline capabilities that the driver supports. </p>
+<p>The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-3dpipelinesupport-caps.md">D3D11DDI_3DPIPELINESUPPORT_CAPS</a> structure that describes the pipeline capabilities that the driver supports. </p>
 </dd>
 
 ### -field <a id="D3D11_1DDICAPS_D3D11_OPTIONS"></a><a id="d3d11_1ddicaps_d3d11_options"></a><b>D3D11_1DDICAPS_D3D11_OPTIONS</b>
 
 <dd>
-<p>The driver retrieves a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406442">D3D11_1DDI_D3D11_OPTIONS_DATA</a>  structure that specifies options to provide data to the user-mode driver.</p>
+<p>The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-d3d11-options-data.md">D3D11_1DDI_D3D11_OPTIONS_DATA</a>  structure that specifies options to provide data to the user-mode driver.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDICAPS_ARCHITECTURE_INFO"></a><a id="d3d11_1ddicaps_architecture_info"></a><b>D3D11_1DDICAPS_ARCHITECTURE_INFO</b>
 
 <dd>
-<p>The driver retrieves a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451150">D3DDDICAPS_ARCHITECTURE_INFO</a> structure that describes information about Direct3D 11.1 adapter architecture.</p>
+<p>The driver retrieves a pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicaps-architecture-info.md">D3DDDICAPS_ARCHITECTURE_INFO</a> structure that describes information about Direct3D 11.1 adapter architecture.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
 ### -field <a id="D3D11_1DDICAPS_SHADER_MIN_PRECISION_SUPPORT"></a><a id="d3d11_1ddicaps_shader_min_precision_support"></a><b>D3D11_1DDICAPS_SHADER_MIN_PRECISION_SUPPORT</b>
 
 <dd>
-<p>The driver retrieves a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451154">D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT</a> structure that describes the precision support options for shaders in the user-mode display driver.</p>
+<p>The driver retrieves a pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddicaps-shader-min-precision-support.md">D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT</a> structure that describes the precision support options for shaders in the user-mode display driver.</p>
 <p>Supported starting with Windows 8.</p>
 </dd>
 
 ### -field <a id="D3DWDDM1_3DDICAPS_D3D11_OPTIONS1"></a><a id="d3dwddm1_3ddicaps_d3d11_options1"></a><b>D3DWDDM1_3DDICAPS_D3D11_OPTIONS1</b>
 
 <dd>
-<p>The driver retrieves a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn475744">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a> structure that describes the tiled resource support options in the user-mode display driver.</p>
+<p>The driver retrieves a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-d3d11-options-data1.md">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a> structure that describes the tiled resource support options in the user-mode display driver.</p>
 <p>Supported starting with Windows 8. Used by WDDM 1.3 and later drivers.</p>
 </dd>
 
@@ -120,11 +120,7 @@ enum D3D10_2DDICAPS_TYPE {
 </dl>
 
 ## -remarks
-<p>To allow a driver to unify capability concepts, the values in the D3D10_2DDICAPS_TYPE enumeration are set up so they do not overlap with the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544132">D3DDDICAPS_TYPE</a> enumeration. </p>
-
-<p>To allow a driver to unify capability concepts, the values in the D3D10_2DDICAPS_TYPE enumeration are set up so they do not overlap with the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544132">D3DDDICAPS_TYPE</a> enumeration. </p>
-
-<p>To allow a driver to unify capability concepts, the values in the D3D10_2DDICAPS_TYPE enumeration are set up so they do not overlap with the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544132">D3DDDICAPS_TYPE</a> enumeration. </p>
+<p>To allow a driver to unify capability concepts, the values in the D3D10_2DDICAPS_TYPE enumeration are set up so they do not overlap with the values in the <a href="..\d3dumddi\ne-d3dumddi--d3dddicaps-type.md">D3DDDICAPS_TYPE</a> enumeration. </p>
 
 ## -requirements
 <table>
@@ -151,25 +147,25 @@ enum D3D10_2DDICAPS_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406442">D3D11_1DDI_D3D11_OPTIONS_DATA</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-d3d11-options-data.md">D3D11_1DDI_D3D11_OPTIONS_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542134">D3D11DDI_3DPIPELINESUPPORT_CAPS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-3dpipelinesupport-caps.md">D3D11DDI_3DPIPELINESUPPORT_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542153">D3D11DDI_SHADER_CAPS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-shader-caps.md">D3D11DDI_SHADER_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542163">D3D11DDI_THREADING_CAPS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi-threading-caps.md">D3D11DDI_THREADING_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451154">D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddicaps-shader-min-precision-support.md">D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544132">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ne-d3dumddi--d3dddicaps-type.md">D3DDDICAPS_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn475744">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-d3d11-options-data1.md">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a>
 </dt>
 </dl>
 <p> </p>

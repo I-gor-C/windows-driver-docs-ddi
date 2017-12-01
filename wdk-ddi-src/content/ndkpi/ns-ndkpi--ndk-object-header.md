@@ -7,7 +7,7 @@ old-location: netvista\ndk_object_header.htm
 old-project: netvista
 ms.assetid: 12E3ED4A-F078-4489-BC84-69EE735CAEF8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDK_OBJECT_HEADER, NDK_OBJECT_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,13 +61,13 @@ typedef struct _NDK_OBJECT_HEADER {
 ### -field <b>Version</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/hh439942">NDK_VERSION</a> structure that contains the revision number of the NDK object.</p>
+<p>An <a href="netvista.ndk_version">NDK_VERSION</a> structure that contains the revision number of the NDK object.</p>
 </dd>
 
 ### -field <b>ObjectType</b>
 
 <dd>
-<p>An <a href="https://msdn.microsoft.com/library/windows/hardware/hh439930">NDK_OBJECT_TYPE</a> enumeration value that specifies the NDK object type. You can use this member to identify an NDK object's type in a memory dump.
+<p>An <a href="..\ndkpi\ne-ndkpi--ndk-object-type.md">NDK_OBJECT_TYPE</a> enumeration value that specifies the NDK object type. You can use this member to identify an NDK object's type in a memory dump.
 
 This member is required and cannot be zero.</p>
 </dd>
@@ -75,18 +75,18 @@ This member is required and cannot be zero.</p>
 ### -field <b>NdkReserved</b>
 
 <dd>
-<p>A reserved block in an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439929">NDK_OBJECT_HEADER_RESERVED_BLOCK</a> structure.</p>
+<p>A reserved block in an <a href="..\ndkpi\ns-ndkpi--ndk-object-header-reserved-block.md">NDK_OBJECT_HEADER_RESERVED_BLOCK</a> structure.</p>
 </dd>
 </dl>
 
 ## -remarks
 <p>When an NDK provider creates an NDK object instance, the <b>Header</b> member must be initialized as follows:</p>
 
-<p>For Windows Server 2012, set the <b>Version</b> member to 1.1. To do this, set both the <b>Major</b> and <b>Minor</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439942">NDK_VERSION</a> structure to 1.</p>
+<p>For Windows Server 2012, set the <b>Version</b> member to 1.1. To do this, set both the <b>Major</b> and <b>Minor</b> members of the <a href="netvista.ndk_version">NDK_VERSION</a> structure to 1.</p>
 
-<p>For Windows Server 2012 R2, set the <b>Version</b> member to 1.2. To do this, set the <b>Major</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439942">NDK_VERSION</a> structure to 1 and the <b>Minor</b> member to 2.</p>
+<p>For Windows Server 2012 R2, set the <b>Version</b> member to 1.2. To do this, set the <b>Major</b> member of the <a href="netvista.ndk_version">NDK_VERSION</a> structure to 1 and the <b>Minor</b> member to 2.</p>
 
-<p>Set the <b>ObjectType</b>  member to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439930">NDK_OBJECT_TYPE</a> value.</p>
+<p>Set the <b>ObjectType</b>  member to an <a href="..\ndkpi\ne-ndkpi--ndk-object-type.md">NDK_OBJECT_TYPE</a> value.</p>
 
 <p>Set the  <b>NdkReserved</b> member to zero. The NDK provider must not modify this member until the object is closed.</p>
 
@@ -131,57 +131,57 @@ This member is required and cannot be zero.</p>
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439848">NDK_ADAPTER</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-adapter.md">NDK_ADAPTER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439852">NDK_CONNECTOR</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-connector.md">NDK_CONNECTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439854">NDK_CQ</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-cq.md">NDK_CQ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439918">NDK_LISTENER</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-listener.md">NDK_LISTENER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439922">NDK_MR</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-mr.md">NDK_MR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439926">NDK_MW</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-mw.md">NDK_MW</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439929">NDK_OBJECT_HEADER_RESERVED_BLOCK</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-object-header-reserved-block.md">NDK_OBJECT_HEADER_RESERVED_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439930">NDK_OBJECT_TYPE</a>
+<a href="..\ndkpi\ne-ndkpi--ndk-object-type.md">NDK_OBJECT_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439931">NDK_PD</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-pd.md">NDK_PD</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439933">NDK_QP</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-qp.md">NDK_QP</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439937">NDK_SHARED_ENDPOINT</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-shared-endpoint.md">NDK_SHARED_ENDPOINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439939">NDK_SRQ</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-srq.md">NDK_SRQ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439942">NDK_VERSION</a>
+<a href="netvista.ndk_version">NDK_VERSION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439863">NDK_FN_CLOSE_OBJECT</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-close-object.md">NDK_FN_CLOSE_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439871">NDK_FN_CREATE_COMPLETION</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-create-completion.md">NDK_FN_CREATE_COMPLETION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439901">NDK_FN_INVALIDATE</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-invalidate.md">NDK_FN_INVALIDATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439905">NDK_FN_QUERY_EXTENSION_INTERFACE</a>
+<a href="..\ndkpi\nc-ndkpi-ndk-fn-query-extension-interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_OBJECT_HEADER structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_OBJECT_HEADER structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

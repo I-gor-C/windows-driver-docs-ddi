@@ -58,7 +58,7 @@ typedef struct _D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION {
 ### -field <b>AdapterLuid</b>
 
 <dd>
-<p>[in] The locally unique identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>) of the graphics adapter on which the GDI shared primary surface exists.</p>
+<p>[in] The locally unique identifier (<a href="kernel.luid">LUID</a>) of the graphics adapter on which the GDI shared primary surface exists.</p>
 </dd>
 
 ### -field <b>VidPnSourceId</b>
@@ -96,7 +96,7 @@ typedef struct _D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547214">D3DKMTSharedPrimaryUnLockNotification</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsharedprimaryunlocknotification.md">D3DKMTSharedPrimaryUnLockNotification</a>
 </dt>
 </dl>
 <p> </p>

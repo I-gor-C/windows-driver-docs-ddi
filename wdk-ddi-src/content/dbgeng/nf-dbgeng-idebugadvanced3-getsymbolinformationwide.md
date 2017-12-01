@@ -7,7 +7,7 @@ old-location: debugger\getsymbolinformationwide.htm
 old-project: debugger
 ms.assetid: 8fa6a00d-ad4e-47e2-bffe-4d9d70846fd6
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugAdvanced3, GetSymbolInformationWide, IDebugAdvanced3::GetSymbolInformationWide
 ms.prod: windows-hardware
 ms.technology: windows-devices

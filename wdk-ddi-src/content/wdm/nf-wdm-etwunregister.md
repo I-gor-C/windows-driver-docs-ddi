@@ -70,10 +70,6 @@ NTSTATUS EtwUnregister(
 
 <p>Callers of <b>EtwRegister</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.</p>
 
-<p>After tracing is complete, a driver must call the <b>EtwUnregister</b> function to unregister the provider. For every call to <b>EtwRegister</b> there must be a corresponding call to <b>EtwUnregister</b>. Failure to unregister the event provider can cause errors when the process is unloaded because the callbacks associated with the process are no longer valid. No tracing calls should be made that fall outside of the code bounded by the <b>EtwRegister</b> and <b>EtwUnregister</b> functions. For the best performance, you can call the <b>EtwRegister</b> function in your <b>DriverEntry</b> routine and the <b>EtwUnregister</b> function in your <b>DriverUnload</b> routine. </p>
-
-<p>Callers of <b>EtwRegister</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -137,7 +133,7 @@ NTSTATUS EtwUnregister(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>
 </td>
 </tr>
 </table>
@@ -145,7 +141,7 @@ NTSTATUS EtwUnregister(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545603">EtwRegister</a>
+<a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a>
 </dt>
 </dl>
 <p> </p>

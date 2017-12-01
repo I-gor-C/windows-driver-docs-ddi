@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>DVD_COPY_PROTECT_KEY</b> structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560425">IOCTL_DVD_READ_KEY</a> request to execute a report key command of the specified type. </p>
+<p>The <b>DVD_COPY_PROTECT_KEY</b> structure is used in conjunction with the <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-dvd-read-key.md">IOCTL_DVD_READ_KEY</a> request to execute a report key command of the specified type. </p>
 
 
 ## -syntax
@@ -238,10 +238,10 @@ typedef struct _DVD_COPY_PROTECT_KEY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553731">DVD_KEY_TYPE</a>
+<a href="..\ntddcdvd\ne-ntddcdvd-dvd-key-type.md">DVD_KEY_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560425">IOCTL_DVD_READ_KEY</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-dvd-read-key.md">IOCTL_DVD_READ_KEY</a>
 </dt>
 </dl>
 <p> </p>

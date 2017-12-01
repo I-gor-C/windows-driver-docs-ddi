@@ -7,7 +7,7 @@ old-location: stream\ksenableeventwithallocator.htm
 old-project: stream
 ms.assetid: ec017e5c-1c26-426d-935f-7a554d3db915
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsEnableEventWithAllocator
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,7 +89,7 @@ NTSTATUS KsEnableEventWithAllocator(
 ### -param <i>EventsFlags</i> [in, optional]
 
 <dd>
-<p>Specifies <a href="https://msdn.microsoft.com/library/windows/hardware/ff561784">KSEVENTS_LOCKTYPE</a> flags specifying the type of exclusion lock to be used in accessing the event list, if any. If no flag is set, then no lock is taken. If a handler is specified already, this parameter is ignored.</p>
+<p>Specifies <a href="..\ks\ne-ks-ksevents-locktype.md">KSEVENTS_LOCKTYPE</a> flags specifying the type of exclusion lock to be used in accessing the event list, if any. If no flag is set, then no lock is taken. If a handler is specified already, this parameter is ignored.</p>
 </dd>
 
 ### -param <i>EventsLock</i> [in, optional]
@@ -115,8 +115,6 @@ NTSTATUS KsEnableEventWithAllocator(
 <p>Same as <b>KsEnableEvent</b>, which returns STATUS_SUCCESS if successful, or an error specific to the event being enabled if unsuccessful. The function always sets the IO_STATUS_BLOCK.Information field of the PIRP.IoStatus element within the IRP to zero. It does not set the IO_STATUS_BLOCK.Status field, nor does it complete the IRP.</p>
 
 ## -remarks
-<p>If the optional allocator callback is used, the filter may need to free the buffer in some nonconventional manner. Note that the IRP_BUFFERED_IO and IRP_DEALLOCATE_BUFFER flags are not set when using a custom allocator.</p>
-
 <p>If the optional allocator callback is used, the filter may need to free the buffer in some nonconventional manner. Note that the IRP_BUFFERED_IO and IRP_DEALLOCATE_BUFFER flags are not set when using a custom allocator.</p>
 
 ## -requirements

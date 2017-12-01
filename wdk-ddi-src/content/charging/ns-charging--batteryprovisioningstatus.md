@@ -7,7 +7,7 @@ old-location: battery\batteryprovisioningstatus.htm
 old-project: battery
 ms.assetid: 4CDDBBC4-2462-41B3-B425-D635B4F1F0C4
 ms.author: windowsdriverdev
-ms.date: 11/16/2017
+ms.date: 11/27/2017
 ms.keywords: BATTERYPROVISIONINGSTATUS, BATTERYPROVISIONINGSTATUS, *PBATTERYPROVISIONINGSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

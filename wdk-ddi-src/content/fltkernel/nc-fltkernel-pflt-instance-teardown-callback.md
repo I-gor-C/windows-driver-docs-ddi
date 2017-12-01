@@ -58,7 +58,7 @@ typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
 ### -param <i>FltObjects</i> [in]
 
 <dd>
-<p>Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544816">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current I/O operation. </p>
+<p>Pointer to an <a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current I/O operation. </p>
 </dd>
 
 ### -param <i>Reason</i> [in]
@@ -99,7 +99,7 @@ typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
 <p>FLTFL_INSTANCE_TEARDOWN_MANUAL</p>
 </td>
 <td>
-<p>The instance is being detached because a user-mode application has called <a href="https://msdn.microsoft.com/library/windows/hardware/ff540475">FilterDetach</a> or a kernel-mode component has called <a href="https://msdn.microsoft.com/library/windows/hardware/ff542041">FltDetachVolume</a>. </p>
+<p>The instance is being detached because a user-mode application has called <a href="ifsk.filterdetach">FilterDetach</a> or a kernel-mode component has called <a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>. </p>
 </td>
 </tr>
 <tr>
@@ -119,9 +119,9 @@ typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
 <p>None </p>
 
 ## -remarks
-<p>When a minifilter driver registers itself by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine, it can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines. </p>
+<p>When a minifilter driver registers itself by calling <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a> from its <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine, it can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines. </p>
 
-<p>To register these callback routines, the minifilter driver stores the addresses of the two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK in the <b>InstanceTeardownStartCallback</b> and <b>InstanceTeardownCompleteCallback</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544811">FLT_REGISTRATION</a> structure that the minifilter driver passes as the <i>Registration</i> parameter of <b>FltRegisterFilter</b>. </p>
+<p>To register these callback routines, the minifilter driver stores the addresses of the two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK in the <b>InstanceTeardownStartCallback</b> and <b>InstanceTeardownCompleteCallback</b> members of the <a href="..\fltkernel\ns-fltkernel--flt-registration.md">FLT_REGISTRATION</a> structure that the minifilter driver passes as the <i>Registration</i> parameter of <b>FltRegisterFilter</b>. </p>
 
 <p>The <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines are optional and can be <b>NULL</b>. If the minifilter driver specifies <b>NULL</b> for the <i>InstanceTeardownStartCallback</i> or <i>InstanceTeardownCompleteCallback</i> routine, the instance is still torn down. </p>
 
@@ -129,11 +129,11 @@ typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
 
 <p>The <i>InstanceTeardownStartCallback</i> routine must: </p>
 
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541913">FltCompletePendedPreOperation</a> for each I/O operation that was pended in the minifilter driver's preoperation callback routine to complete the operation or return control of the operation to the filter manager. </p>
+<p>Call <a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a> for each I/O operation that was pended in the minifilter driver's preoperation callback routine to complete the operation or return control of the operation to the filter manager. </p>
 
-<p>Not pend any new I/O operations. If the minifilter driver uses a callback data queue, it must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541796">FltCbdqDisable</a> to disable it. </p>
+<p>Not pend any new I/O operations. If the minifilter driver uses a callback data queue, it must call <a href="..\fltkernel\nf-fltkernel-fltcbdqdisable.md">FltCbdqDisable</a> to disable it. </p>
 
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541897">FltCompletePendedPostOperation</a> for each I/O operation that was pended in the minifilter driver's postoperation callback routine to return control of the operation to the filter manager. </p>
+<p>Call <a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a> for each I/O operation that was pended in the minifilter driver's postoperation callback routine to return control of the operation to the filter manager. </p>
 
 <p>The <i>InstanceTeardownStartCallback</i> routine can optionally do the following to allow the minifilter driver to unload as quickly as possible: </p>
 
@@ -141,7 +141,7 @@ typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
 
 <p>Ensure that worker threads perform only the minimum necessary to complete processing of outstanding work items. </p>
 
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541785">FltCancelIo</a> to cancel any I/O operations that were initiated by the minifilter driver. </p>
+<p>Call <a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a> to cancel any I/O operations that were initiated by the minifilter driver. </p>
 
 <p>Stop queuing new work items. </p>
 
@@ -161,53 +161,7 @@ typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
 
 <p>If the minifilter driver instance is being torn down because the minifilter driver is being unloaded, the unload operation appears to hang until the <i>InstanceTeardownCompleteCallback</i> routine returns. To debug these kinds of problems, you should enable the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> on your minifilter driver. The Filter Verifier <a href="NULL">I/O Verification</a> option can help identify possible causes, such as unreleased references, that would prevent the minifilter driver from unloading. For more information, see <a href="ifsk.development_and_testing_tools#filter_verifier#filter_verifier">Filter Verifier</a>. </p>
 
-<p>Note that referencing the instance (by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543382">FltObjectReference</a>) does not prevent the <i>InstanceTeardownCompleteCallback</i> routine from being called. </p>
-
-<p>The filter manager calls the <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines at IRQL PASSIVE_LEVEL. </p>
-
-<p>When a minifilter driver registers itself by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine, it can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines. </p>
-
-<p>To register these callback routines, the minifilter driver stores the addresses of the two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK in the <b>InstanceTeardownStartCallback</b> and <b>InstanceTeardownCompleteCallback</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544811">FLT_REGISTRATION</a> structure that the minifilter driver passes as the <i>Registration</i> parameter of <b>FltRegisterFilter</b>. </p>
-
-<p>The <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines are optional and can be <b>NULL</b>. If the minifilter driver specifies <b>NULL</b> for the <i>InstanceTeardownStartCallback</i> or <i>InstanceTeardownCompleteCallback</i> routine, the instance is still torn down. </p>
-
-<p>The <i>InstanceTeardownStartCallback</i> routine is called when the filter manager starts tearing down a minifilter driver instance to allow the minifilter driver to complete any pended I/O operations and save state information. </p>
-
-<p>The <i>InstanceTeardownStartCallback</i> routine must: </p>
-
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541913">FltCompletePendedPreOperation</a> for each I/O operation that was pended in the minifilter driver's preoperation callback routine to complete the operation or return control of the operation to the filter manager. </p>
-
-<p>Not pend any new I/O operations. If the minifilter driver uses a callback data queue, it must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541796">FltCbdqDisable</a> to disable it. </p>
-
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541897">FltCompletePendedPostOperation</a> for each I/O operation that was pended in the minifilter driver's postoperation callback routine to return control of the operation to the filter manager. </p>
-
-<p>The <i>InstanceTeardownStartCallback</i> routine can optionally do the following to allow the minifilter driver to unload as quickly as possible: </p>
-
-<p>Close any opened files. </p>
-
-<p>Ensure that worker threads perform only the minimum necessary to complete processing of outstanding work items. </p>
-
-<p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541785">FltCancelIo</a> to cancel any I/O operations that were initiated by the minifilter driver. </p>
-
-<p>Stop queuing new work items. </p>
-
-<p>Once the minifilter driver's <i>InstanceTeardownStartCallback</i> routine is called, the minifilter driver's preoperation and postoperation callback routines are not called for any new I/O operations. However, they may be called for I/O operations that were started before instance teardown was initiated. </p>
-
-<p>The <i>InstanceTeardownCompleteCallback</i> routine is called when the teardown process is complete to allow the minifilter driver to close open files and perform any other necessary cleanup processing. </p>
-
-<p>The <i>InstanceTeardownCompleteCallback</i> routine must close any files that were opened by the minifilter driver. </p>
-
-<p>The filter manager calls the minifilter driver's <i>InstanceTeardownCompleteCallback</i> routine only after all outstanding I/O operations have been completed or drained. </p>
-
-<p><b>Warning</b>: The <i>InstanceTeardownCompleteCallback</i> routine will not be called if any of the following conditions are true: </p>
-
-<p>There are outstanding pended I/O operations. </p>
-
-<p>There are any outstanding I/O operations that were initiated by the minifilter driver. </p>
-
-<p>If the minifilter driver instance is being torn down because the minifilter driver is being unloaded, the unload operation appears to hang until the <i>InstanceTeardownCompleteCallback</i> routine returns. To debug these kinds of problems, you should enable the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> on your minifilter driver. The Filter Verifier <a href="NULL">I/O Verification</a> option can help identify possible causes, such as unreleased references, that would prevent the minifilter driver from unloading. For more information, see <a href="ifsk.development_and_testing_tools#filter_verifier#filter_verifier">Filter Verifier</a>. </p>
-
-<p>Note that referencing the instance (by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543382">FltObjectReference</a>) does not prevent the <i>InstanceTeardownCompleteCallback</i> routine from being called. </p>
+<p>Note that referencing the instance (by calling <a href="..\fltkernel\nf-fltkernel-fltobjectreference.md">FltObjectReference</a>) does not prevent the <i>InstanceTeardownCompleteCallback</i> routine from being called. </p>
 
 <p>The filter manager calls the <i>InstanceTeardownStartCallback</i> and <i>InstanceTeardownCompleteCallback</i> routines at IRQL PASSIVE_LEVEL. </p>
 
@@ -246,37 +200,37 @@ typedef VOID ( *PFLT_INSTANCE_TEARDOWN_CALLBACK)(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540475">FilterDetach</a>
+<a href="ifsk.filterdetach">FilterDetach</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544811">FLT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel--flt-registration.md">FLT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544816">FLT_RELATED_OBJECTS</a>
+<a href="..\fltkernel\ns-fltkernel--flt-related-objects.md">FLT_RELATED_OBJECTS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541785">FltCancelIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541796">FltCbdqDisable</a>
+<a href="..\fltkernel\nf-fltkernel-fltcbdqdisable.md">FltCbdqDisable</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541897">FltCompletePendedPostOperation</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541913">FltCompletePendedPreOperation</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542041">FltDetachVolume</a>
+<a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551095">PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-instance-query-teardown-callback.md">PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551096">PFLT_INSTANCE_SETUP_CALLBACK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt-instance-setup-callback.md">PFLT_INSTANCE_SETUP_CALLBACK</a>
 </dt>
 </dl>
 <p> </p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The IO_SCSI_CAPABILITIES structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560502">IOCTL_SCSI_GET_CAPABILITIES</a> request to retrieve the capabilities and limitations of the underlying SCSI host adapter.</p>
+<p>The IO_SCSI_CAPABILITIES structure is used in conjunction with the <a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-get-capabilities.md">IOCTL_SCSI_GET_CAPABILITIES</a> request to retrieve the capabilities and limitations of the underlying SCSI host adapter.</p>
 
 
 ## -syntax
@@ -130,7 +130,7 @@ typedef struct _IO_SCSI_CAPABILITIES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560502">IOCTL_SCSI_GET_CAPABILITIES</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl-scsi-get-capabilities.md">IOCTL_SCSI_GET_CAPABILITIES</a>
 </dt>
 </dl>
 <p> </p>

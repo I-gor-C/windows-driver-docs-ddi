@@ -71,7 +71,7 @@ typedef struct _DXVA_COPPStatusOutput {
 ### -field <b>COPPStatus</b>
 
 <dd>
-<p>Specifies an array that contains the status data. The display driver should return status data in one of the following ways, depending on the input value that was specified in the <b>guidStatusRequestID</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563899">DXVA_COPPStatusInput</a> structure: </p>
+<p>Specifies an array that contains the status data. The display driver should return status data in one of the following ways, depending on the input value that was specified in the <b>guidStatusRequestID</b> member of the <a href="..\dxva\ns-dxva--dxva-coppstatusinput.md">DXVA_COPPStatusInput</a> structure: </p>
 <table>
 <tr>
 <th>Input value</th>
@@ -82,7 +82,7 @@ typedef struct _DXVA_COPPStatusOutput {
 <p>DXVA_COPPQueryDisplayData</p>
 </td>
 <td>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563157">DXVA_COPPStatusDisplayData</a> structure</p>
+<p>Pointer to a <a href="..\dxva\ns-dxva--dxva-coppstatusdisplaydata.md">DXVA_COPPStatusDisplayData</a> structure</p>
 </td>
 </tr>
 <tr>
@@ -108,7 +108,7 @@ typedef struct _DXVA_COPPStatusOutput {
 </p>
 </td>
 <td>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563154">DXVA_COPPStatusData</a> structure</p>
+<p>Pointer to a <a href="..\dxva\ns-dxva--dxva-coppstatusdata.md">DXVA_COPPStatusData</a> structure</p>
 </td>
 </tr>
 <tr>
@@ -116,7 +116,7 @@ typedef struct _DXVA_COPPStatusOutput {
 <p>DXVA_COPPQueryHDCPKeyData</p>
 </td>
 <td>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563896">DXVA_COPPStatusHDCPKeyData</a> structure</p>
+<p>Pointer to a <a href="..\dxva\ns-dxva--dxva-coppstatushdcpkeydata.md">DXVA_COPPStatusHDCPKeyData</a> structure</p>
 </td>
 </tr>
 <tr>
@@ -124,7 +124,7 @@ typedef struct _DXVA_COPPStatusOutput {
 <p>DXVA_COPPQuerySignaling</p>
 </td>
 <td>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563905">DXVA_COPPStatusSignalingCmdData</a> structure</p>
+<p>Pointer to a <a href="..\dxva\ns-dxva--dxva-coppstatussignalingcmddata.md">DXVA_COPPStatusSignalingCmdData</a> structure</p>
 </td>
 </tr>
 </table>
@@ -133,7 +133,7 @@ typedef struct _DXVA_COPPStatusOutput {
 </dl>
 
 ## -remarks
-<p>Status requests are passed in the <i>pInput</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539652">COPPQueryStatus</a> function. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff563899">DXVA_COPPStatusInput</a> structure describes a request for status. Status information is returned through the <i>pOutput</i> parameter of <i>COPPQueryStatus</i>. </p>
+<p>Status requests are passed in the <i>pInput</i> parameter of the <a href="display.coppquerystatus">COPPQueryStatus</a> function. The <a href="..\dxva\ns-dxva--dxva-coppstatusinput.md">DXVA_COPPStatusInput</a> structure describes a request for status. Status information is returned through the <i>pOutput</i> parameter of <i>COPPQueryStatus</i>. </p>
 
 ## -requirements
 <table>
@@ -160,25 +160,25 @@ typedef struct _DXVA_COPPStatusOutput {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539652">COPPQueryStatus</a>
+<a href="display.coppquerystatus">COPPQueryStatus</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563143">DXVA_COPPSetProtectionLevelCmdData</a>
+<a href="..\dxva\ns-dxva--dxva-coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563154">DXVA_COPPStatusData</a>
+<a href="..\dxva\ns-dxva--dxva-coppstatusdata.md">DXVA_COPPStatusData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563157">DXVA_COPPStatusDisplayData</a>
+<a href="..\dxva\ns-dxva--dxva-coppstatusdisplaydata.md">DXVA_COPPStatusDisplayData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563896">DXVA_COPPStatusHDCPKeyData</a>
+<a href="..\dxva\ns-dxva--dxva-coppstatushdcpkeydata.md">DXVA_COPPStatusHDCPKeyData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563899">DXVA_COPPStatusInput</a>
+<a href="..\dxva\ns-dxva--dxva-coppstatusinput.md">DXVA_COPPStatusInput</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563905">DXVA_COPPStatusSignalingCmdData</a>
+<a href="..\dxva\ns-dxva--dxva-coppstatussignalingcmddata.md">DXVA_COPPStatusSignalingCmdData</a>
 </dt>
 </dl>
 <p> </p>

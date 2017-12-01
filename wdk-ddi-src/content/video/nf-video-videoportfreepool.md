@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>VideoPortFreePool</b> function deallocates a block of pool memory previously allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570180">VideoPortAllocatePool</a>.</p>
+<p>The <b>VideoPortFreePool</b> function deallocates a block of pool memory previously allocated by <a href="..\video\nf-video-videoportallocatepool.md">VideoPortAllocatePool</a>.</p>
 
 
 ## -syntax
@@ -73,10 +73,6 @@ VOID VideoPortFreePool(
 <p>None</p>
 
 ## -remarks
-<p><b>VideoPortFreePool</b> is intended to replace <b>VideoPortReleaseBuffer</b>, which is obsolete.</p>
-
-<p>Callers of <b>VideoPortFreePool</b> must be running at IRQL &lt;= DISPATCH_LEVEL. A caller at DISPATCH_LEVEL must have specified a <b>VpNonPaged </b><i>XxxPoolType</i> when the memory was allocated. Otherwise, the caller must be running at IRQL &lt; DISPATCH_LEVEL.</p>
-
 <p><b>VideoPortFreePool</b> is intended to replace <b>VideoPortReleaseBuffer</b>, which is obsolete.</p>
 
 <p>Callers of <b>VideoPortFreePool</b> must be running at IRQL &lt;= DISPATCH_LEVEL. A caller at DISPATCH_LEVEL must have specified a <b>VpNonPaged </b><i>XxxPoolType</i> when the memory was allocated. Otherwise, the caller must be running at IRQL &lt; DISPATCH_LEVEL.</p>
@@ -144,10 +140,10 @@ VOID VideoPortFreePool(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570180">VideoPortAllocatePool</a>
+<a href="..\video\nf-video-videoportallocatepool.md">VideoPortAllocatePool</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570178">VideoPortAllocateCommonBuffer</a>
+<a href="..\video\nf-video-videoportallocatecommonbuffer.md">VideoPortAllocateCommonBuffer</a>
 </dt>
 </dl>
 <p> </p>

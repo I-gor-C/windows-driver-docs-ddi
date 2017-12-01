@@ -75,8 +75,6 @@ STDMETHOD EnumFeatures(
 ## -remarks
 <p>For Unidrv features, the feature list is based on the GPD view of the configuration file, so features that are surrounded by *<b>Ifdef GDL_ENABLED</b>/*<b>Endif</b> directives are not visible and will not be reported by <b>IPrintCoreHelper::EnumFeatures</b>.</p>
 
-<p>For Unidrv features, the feature list is based on the GPD view of the configuration file, so features that are surrounded by *<b>Ifdef GDL_ENABLED</b>/*<b>Endif</b> directives are not visible and will not be reported by <b>IPrintCoreHelper::EnumFeatures</b>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -104,7 +102,7 @@ STDMETHOD EnumFeatures(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552955">IPrintCoreHelper::EnumOptions</a>
+<a href="print.iprintcorehelper_enumoptions">IPrintCoreHelper::EnumOptions</a>
 </dt>
 </dl>
 <p> </p>

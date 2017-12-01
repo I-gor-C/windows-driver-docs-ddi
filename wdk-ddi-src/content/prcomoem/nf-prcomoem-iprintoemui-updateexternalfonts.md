@@ -94,12 +94,6 @@ HRESULT UpdateExternalFonts(
 
 <p>Descriptions of cartridge fonts can be copied from the .uff file specified by the "ExtFontCartFile" registry value. For more information, see <a href="print.customized_font_management#ddk_unidrv_font_format_files_gg#ddk_unidrv_font_format_files_gg">Unidrv Font Format Files</a>.</p>
 
-<p>A user interface plug-in must implement the <code>IPrintOemUI::UpdateExternalFonts</code> method if the plug-in is replacing Unidrv's default font installer. For more information, see <a href="NULL">Customized Font Installers for Unidrv</a>.</p>
-
-<p>The <code>IPrintOemUI::UpdateExternalFonts</code> method's purpose is to examine the list of installed cartridges (supplied by <i>pwstrCartridges</i>) and ensure that the .uff file specified by the "ExternalFontFile" registry value contains font descriptions for only the cartridge fonts contained in the installed cartridges. (This .uff file can also contain descriptions of <a href="wdkgloss.p#wdkgloss.pcl#wdkgloss.pcl"><i>PCL</i></a>-downloadable soft fonts.)</p>
-
-<p>Descriptions of cartridge fonts can be copied from the .uff file specified by the "ExtFontCartFile" registry value. For more information, see <a href="print.customized_font_management#ddk_unidrv_font_format_files_gg#ddk_unidrv_font_format_files_gg">Unidrv Font Format Files</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -127,7 +121,7 @@ HRESULT UpdateExternalFonts(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554176">IPrintOemUI::FontInstallerDlgProc</a>
+<a href="print.iprintoemui_fontinstallerdlgproc">IPrintOemUI::FontInstallerDlgProc</a>
 </dt>
 </dl>
 <p> </p>

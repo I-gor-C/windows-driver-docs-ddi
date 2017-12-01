@@ -7,7 +7,7 @@ old-location: debugger\debugcommandexception.htm
 old-project: debugger
 ms.assetid: 6DC67840-B985-45D0-8E81-671C3DC1EBC2
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DebugCommandException
 ms.prod: windows-hardware
 ms.technology: windows-devices

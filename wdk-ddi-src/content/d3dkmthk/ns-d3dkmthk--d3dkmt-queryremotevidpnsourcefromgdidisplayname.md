@@ -104,7 +104,7 @@ typedef struct _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439442">D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryremotevidpnsourcefromgdidisplayname.md">D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName</a>
 </dt>
 </dl>
 <p> </p>

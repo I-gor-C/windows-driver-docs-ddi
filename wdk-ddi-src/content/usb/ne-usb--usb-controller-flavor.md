@@ -257,10 +257,10 @@ typedef enum _USB_CONTROLLER_FLAVOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539256">USB_CONTROLLER_INFO_0</a>
+<a href="buses.usb_controller_info_0">USB_CONTROLLER_INFO_0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+<a href="buses.usb_enumerations">USB Constants and Enumerations</a>
 </dt>
 </dl>
 <p> </p>

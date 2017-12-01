@@ -68,8 +68,6 @@ VOID SPB_CONNECTION_PARAMETERS_INIT(
 ## -remarks
 <p>Your SPB controller driver must use this function to initialize an <b>SPB_CONNECTION_PARAMETERS</b> structure before passing this structure as an output parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450926">SpbTargetGetConnectionParameters</a> method. This method writes the connection parameters for a target device on the bus to this structure.</p>
 
-<p>Your SPB controller driver must use this function to initialize an <b>SPB_CONNECTION_PARAMETERS</b> structure before passing this structure as an output parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450926">SpbTargetGetConnectionParameters</a> method. This method writes the connection parameters for a target device on the bus to this structure.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -57,7 +57,7 @@ NTSTATUS D3DKMTGetDeviceState(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>[in/out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548030">D3DKMT_GETDEVICESTATE</a> structure that describes parameters for retrieving the state of a device.</p>
+<p>[in/out] A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getdevicestate.md">D3DKMT_GETDEVICESTATE</a> structure that describes parameters for retrieving the state of a device.</p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS D3DKMTGetDeviceState(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548030">D3DKMT_GETDEVICESTATE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
 </dt>
 </dl>
 <p> </p>

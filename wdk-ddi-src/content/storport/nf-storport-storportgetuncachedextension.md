@@ -60,7 +60,7 @@ PVOID StorPortGetUncachedExtension(
 ### -param <i>HwDeviceExtension</i> 
 
 <dd>
-<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
+<p>A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. </p>
 </dd>
 
 ### -param <i>ConfigInfo</i> 
@@ -81,8 +81,6 @@ PVOID StorPortGetUncachedExtension(
 <p><b>StorPortGetUncachedExtension</b> returns a virtual address pointer to the uncached extension. If it cannot allocate the requested memory, it returns <b>NULL</b>. If the memory was previously allocated, the  virtual address pointer to the current uncached extension is returned.</p>
 
 ## -remarks
-<p>Bus-master devices use common buffer space for DMA transfers.</p>
-
 <p>Bus-master devices use common buffer space for DMA transfers.</p>
 
 ## -requirements
@@ -122,7 +120,7 @@ PVOID StorPortGetUncachedExtension(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564639">ScsiPortGetUncachedExtension</a>
+<a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
 </dt>
 </dl>
 <p> </p>

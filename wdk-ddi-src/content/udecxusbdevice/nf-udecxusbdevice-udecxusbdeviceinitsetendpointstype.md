@@ -59,13 +59,13 @@ void UdecxUsbDeviceInitSetEndpointsType(
 ### -param <i>UdecxUsbDeviceInit</i> [in, out]
 
 <dd>
-<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627968">UdecxUsbDeviceInitAllocate</a>. </p>
+<p>A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>. </p>
 </dd>
 
 ### -param <i>UdecxEndpointType</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt627995">UDECX_ENDPOINT_TYPE</a>-type value that indicates the type of USB endpoint.</p>
+<p>A <a href="buses.udecx_endpoint_type">UDECX_ENDPOINT_TYPE</a>-type value that indicates the type of USB endpoint.</p>
 </dd>
 </dl>
 
@@ -73,17 +73,11 @@ void UdecxUsbDeviceInitSetEndpointsType(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>Before creating the virtual USB device, the client driver must indicate the type of endpoint it supports. It can support one of two types (defined in <a href="https://msdn.microsoft.com/library/windows/hardware/mt627995">UDECX_ENDPOINT_TYPE</a>): </p>
+<p>Before creating the virtual USB device, the client driver must indicate the type of endpoint it supports. It can support one of two types (defined in <a href="buses.udecx_endpoint_type">UDECX_ENDPOINT_TYPE</a>): </p>
 
 <p>The <i>UdecxUsbDeviceInit</i> is an opaque structure that contains pointers to callback functions related to endpoints. If the client driver supports dynamic endpoints, then these callback functions must be implemented by the driver:</p>
 
-<p>Before calling this method, the client driver must have set those pointers by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627972">UdecxUsbDeviceInitSetStateChangeCallbacks</a>.</p>
-
-<p>Before creating the virtual USB device, the client driver must indicate the type of endpoint it supports. It can support one of two types (defined in <a href="https://msdn.microsoft.com/library/windows/hardware/mt627995">UDECX_ENDPOINT_TYPE</a>): </p>
-
-<p>The <i>UdecxUsbDeviceInit</i> is an opaque structure that contains pointers to callback functions related to endpoints. If the client driver supports dynamic endpoints, then these callback functions must be implemented by the driver:</p>
-
-<p>Before calling this method, the client driver must have set those pointers by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627972">UdecxUsbDeviceInitSetStateChangeCallbacks</a>.</p>
+<p>Before calling this method, the client driver must have set those pointers by calling <a href="buses.udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a>.</p>
 
 ## -requirements
 <table>
@@ -147,19 +141,19 @@ void UdecxUsbDeviceInitSetEndpointsType(
 <a href="buses.usb_endpoints_and_their_pipes">USB endpoints</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627968">UdecxUsbDeviceInitAllocate</a>
+<a href="buses.udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627972">UdecxUsbDeviceInitSetStateChangeCallbacks</a>
+<a href="buses.udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595913">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
+<a href="buses.evt_udecx_usb_device_endpoints_configure">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="buses.usb_emulated_device__ude__architecture">Architecture: USB Device Emulation (UDE)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="buses.writing_a_ude_client_driver">Write a UDE client driver</a>
 </dt>
 </dl>
 <p> </p>

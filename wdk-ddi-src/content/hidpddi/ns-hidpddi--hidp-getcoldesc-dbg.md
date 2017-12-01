@@ -40,7 +40,7 @@ req.iface:
 
 ## -description
 <p>Contains the error code indicating the failure in parsing the report 
-                                      descriptor. This structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt740164">HidP_GetCollectionDescription</a> call.</p>
+                                      descriptor. This structure is used in the <a href="..\hidpddi\nf-hidpddi-hidp-getcollectiondescription.md">HidP_GetCollectionDescription</a> call.</p>
 
 
 ## -syntax
@@ -99,7 +99,7 @@ All possible values are defined in hidpddi.h, from HIDP_GETCOLDESC_SUCCESS to th
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt740164">HidP_GetCollectionDescription</a>
+<a href="..\hidpddi\nf-hidpddi-hidp-getcollectiondescription.md">HidP_GetCollectionDescription</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: sensors\ioctl_gnss_listen_agnss.htm
 old-project: sensors
 ms.assetid: B065CDE1-BB6D-4209-881B-50743A38EDBE
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>IOCTL_GNSS_LISTEN_AGNSS</b> control code is used by the GNSS adapter to start listening for AGNSS requests issued by the GNSS driver. This IOCTL effectively provides the GNSS driver with a pending I/O request, the asynchronous resolution of which notifies the adapter, through the overlapped structures GnssEvent member, that the driver requires an AGNSS injection. The GnssEvent member is a <a href="https://msdn.microsoft.com/library/windows/hardware/dn925134">GNSS_EVENT</a> structure. The GNSS adapter ensures that this request is always pending and will issue a new request as soon as the pending one is resolved. When the I/O request is resolved the GNSS adapter will issue a corresponding <a href="https://msdn.microsoft.com/library/windows/hardware/dn917732">IOCTL_GNSS_INJECT_AGNSS</a> with the appropriate injection data.</p>
+<p>The <b>IOCTL_GNSS_LISTEN_AGNSS</b> control code is used by the GNSS adapter to start listening for AGNSS requests issued by the GNSS driver. This IOCTL effectively provides the GNSS driver with a pending I/O request, the asynchronous resolution of which notifies the adapter, through the overlapped structures GnssEvent member, that the driver requires an AGNSS injection. The GnssEvent member is a <a href="..\gnssdriver\ne-gnssdriver-gnss-event-type.md">GNSS_EVENT</a> structure. The GNSS adapter ensures that this request is always pending and will issue a new request as soon as the pending one is resolved. When the I/O request is resolved the GNSS adapter will issue a corresponding <a href="..\gnssdriver\ni-gnssdriver-ioctl-gnss-inject-agnss.md">IOCTL_GNSS_INJECT_AGNSS</a> with the appropriate injection data.</p>
 
 
 ## -ioctlparameters
@@ -90,7 +90,7 @@ I/O Status block
 
 ## -remarks
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn925134">GNSS_EVENT</a>
+<a href="sensors.gnss_event">GNSS_EVENT</a>
 </p>
 
 <p>The EventType must be set to <b>GNSS_Event_RequireAGNSS</b> and the <b>AGNSSRequest</b> member filled in.</p>
@@ -99,82 +99,7 @@ I/O Status block
 
 <p>When the driver completes the I/O call, the adapter issues another IOCTL to continue waiting for further AGNSS requests.</p>
 
-<p>Depending on the <b>AGNSSRequest.RequestType</b> element, the driver issues <a href="https://msdn.microsoft.com/library/windows/hardware/dn917732">IOCTL_GNSS_INJECT_AGNSS</a> with the appropriate injection data.</p>
-
-<p>Whenever the GNSS driver requires assistance data, it completes the I/O operation to seek injection data from the adapter
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn925134">GNSS_EVENT</a>
-</p>
-
-<p>The EventType must be set to <b>GNSS_Event_RequireAGNSS</b> and the <b>AGNSSRequest</b> member filled in.</p>
-
-<p>The GNSS adapter ensures that this request is always pending, so that the driver can indicate that it requires AGNSS injection.</p>
-
-<p>When the driver completes the I/O call, the adapter issues another IOCTL to continue waiting for further AGNSS requests.</p>
-
-<p>Depending on the <b>AGNSSRequest.RequestType</b> element, the driver issues <a href="https://msdn.microsoft.com/library/windows/hardware/dn917732">IOCTL_GNSS_INJECT_AGNSS</a> with the appropriate injection data.</p>
-
-<p>Whenever the GNSS driver requires assistance data, it completes the I/O operation to seek injection data from the adapter
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn925134">GNSS_EVENT</a>
-</p>
-
-<p>The EventType must be set to <b>GNSS_Event_RequireAGNSS</b> and the <b>AGNSSRequest</b> member filled in.</p>
-
-<p>The GNSS adapter ensures that this request is always pending, so that the driver can indicate that it requires AGNSS injection.</p>
-
-<p>When the driver completes the I/O call, the adapter issues another IOCTL to continue waiting for further AGNSS requests.</p>
-
-<p>Depending on the <b>AGNSSRequest.RequestType</b> element, the driver issues <a href="https://msdn.microsoft.com/library/windows/hardware/dn917732">IOCTL_GNSS_INJECT_AGNSS</a> with the appropriate injection data.</p>
-
-<p>Whenever the GNSS driver requires assistance data, it completes the I/O operation to seek injection data from the adapter
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn925134">GNSS_EVENT</a>
-</p>
-
-<p>The EventType must be set to <b>GNSS_Event_RequireAGNSS</b> and the <b>AGNSSRequest</b> member filled in.</p>
-
-<p>The GNSS adapter ensures that this request is always pending, so that the driver can indicate that it requires AGNSS injection.</p>
-
-<p>When the driver completes the I/O call, the adapter issues another IOCTL to continue waiting for further AGNSS requests.</p>
-
-<p>Depending on the <b>AGNSSRequest.RequestType</b> element, the driver issues <a href="https://msdn.microsoft.com/library/windows/hardware/dn917732">IOCTL_GNSS_INJECT_AGNSS</a> with the appropriate injection data.</p>
-
-<p>Whenever the GNSS driver requires assistance data, it completes the I/O operation to seek injection data from the adapter
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn925134">GNSS_EVENT</a>
-</p>
-
-<p>The EventType must be set to <b>GNSS_Event_RequireAGNSS</b> and the <b>AGNSSRequest</b> member filled in.</p>
-
-<p>The GNSS adapter ensures that this request is always pending, so that the driver can indicate that it requires AGNSS injection.</p>
-
-<p>When the driver completes the I/O call, the adapter issues another IOCTL to continue waiting for further AGNSS requests.</p>
-
-<p>Depending on the <b>AGNSSRequest.RequestType</b> element, the driver issues <a href="https://msdn.microsoft.com/library/windows/hardware/dn917732">IOCTL_GNSS_INJECT_AGNSS</a> with the appropriate injection data.</p>
-
-<p>Whenever the GNSS driver requires assistance data, it completes the I/O operation to seek injection data from the adapter
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn925134">GNSS_EVENT</a>
-</p>
-
-<p>The EventType must be set to <b>GNSS_Event_RequireAGNSS</b> and the <b>AGNSSRequest</b> member filled in.</p>
-
-<p>The GNSS adapter ensures that this request is always pending, so that the driver can indicate that it requires AGNSS injection.</p>
-
-<p>When the driver completes the I/O call, the adapter issues another IOCTL to continue waiting for further AGNSS requests.</p>
-
-<p>Depending on the <b>AGNSSRequest.RequestType</b> element, the driver issues <a href="https://msdn.microsoft.com/library/windows/hardware/dn917732">IOCTL_GNSS_INJECT_AGNSS</a> with the appropriate injection data.</p>
+<p>Depending on the <b>AGNSSRequest.RequestType</b> element, the driver issues <a href="..\gnssdriver\ni-gnssdriver-ioctl-gnss-inject-agnss.md">IOCTL_GNSS_INJECT_AGNSS</a> with the appropriate injection data.</p>
 
 <p>Whenever the GNSS driver requires assistance data, it completes the I/O operation to seek injection data from the adapter
 </p>
@@ -199,15 +124,15 @@ I/O Status block
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548651">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548656">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548660">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_LISTEN_AGNSS control code%20 RELEASE:%20(11/26/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20IOCTL_GNSS_LISTEN_AGNSS control code%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

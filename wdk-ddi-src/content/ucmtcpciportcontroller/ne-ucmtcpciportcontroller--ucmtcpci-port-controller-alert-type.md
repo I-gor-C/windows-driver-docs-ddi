@@ -196,7 +196,7 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt805898">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a>
+<a href="buses.ucmtcpci_port_controller_alert_data">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a>
 </dt>
 </dl>
 <p> </p>

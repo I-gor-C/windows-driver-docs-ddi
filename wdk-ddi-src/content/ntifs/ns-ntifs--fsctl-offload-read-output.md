@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FSCTL_OFFLOAD_READ_OUTPUT</b> structure contains the output for the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a> control code request.</p>
+<p>The <b>FSCTL_OFFLOAD_READ_OUTPUT</b> structure contains the output for the <a href="ifsk.fsctl_offload_read">FSCTL_OFFLOAD_READ</a> control code request.</p>
 
 
 ## -syntax
@@ -127,18 +127,18 @@ typedef struct _FSCTL_OFFLOAD_READ_OUTPUT {
 ### -field <b>Token</b>
 
 <dd>
-<p>A byte array that contains a token structure, <a href="https://msdn.microsoft.com/library/windows/hardware/hh451469">STORAGE_OFFLOAD_TOKEN</a>, representing a file data within a range specified in <a href="https://msdn.microsoft.com/library/windows/hardware/hh451104">FSCTL_OFFLOAD_READ_INPUT</a>. The contents of <b>Token</b>  must remain unmodified between offload operations.</p>
+<p>A byte array that contains a token structure, <a href="..\ntddstor\ns-ntddstor--storage-offload-token.md">STORAGE_OFFLOAD_TOKEN</a>, representing a file data within a range specified in <a href="..\ntifs\ns-ntifs--fsctl-offload-read-input.md">FSCTL_OFFLOAD_READ_INPUT</a>. The contents of <b>Token</b>  must remain unmodified between offload operations.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>If the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a> operation is successful, the storage device's copy provider returns, in <b>FSCTL_OFFLOAD_READ_OUTPUT</b>, a unique token value identifying the portion of file data read. </p>
+<p>If the <a href="ifsk.fsctl_offload_read">FSCTL_OFFLOAD_READ</a> operation is successful, the storage device's copy provider returns, in <b>FSCTL_OFFLOAD_READ_OUTPUT</b>, a unique token value identifying the portion of file data read. </p>
 
-<p>The  copy provider retains the data read for the duration in the <b>TokenTimeToLive</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451104">FSCTL_OFFLOAD_READ_INPUT</a> structure.</p>
+<p>The  copy provider retains the data read for the duration in the <b>TokenTimeToLive</b> member of the <a href="..\ntifs\ns-ntifs--fsctl-offload-read-input.md">FSCTL_OFFLOAD_READ_INPUT</a> structure.</p>
 
-<p><b>Token</b> represents  a contiguous region of the file beginning with the requested offset in the <b>FileOffset</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451104">FSCTL_OFFLOAD_READ_INPUT</a>. The resulting length copied, <b>TransferLength</b>, may be smaller than what was originally specified in <b>CopyLength</b> member of <b>FSCTL_OFFLOAD_READ_INPUT</b>. A smaller value indicates that  <b>Token</b> was able to logically represent less data than was requested.</p>
+<p><b>Token</b> represents  a contiguous region of the file beginning with the requested offset in the <b>FileOffset</b> member of <a href="..\ntifs\ns-ntifs--fsctl-offload-read-input.md">FSCTL_OFFLOAD_READ_INPUT</a>. The resulting length copied, <b>TransferLength</b>, may be smaller than what was originally specified in <b>CopyLength</b> member of <b>FSCTL_OFFLOAD_READ_INPUT</b>. A smaller value indicates that  <b>Token</b> was able to logically represent less data than was requested.</p>
 
-<p> If less data than requested was transferred, the read operation  may be completed by performing another <a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a> request. The next request uses updated <b>FileOffset</b> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451104">FSCTL_OFFLOAD_READ_INPUT</a> structure with the value in <b>TransferLength</b> and an adjusted read length of the previous length minus the value in <b>TransferLength</b>. Also, an incomplete read operation can be completed through a non-offloaded read method, using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567072">ZwReadFile</a> routine, for example.</p>
+<p> If less data than requested was transferred, the read operation  may be completed by performing another <a href="ifsk.fsctl_offload_read">FSCTL_OFFLOAD_READ</a> request. The next request uses updated <b>FileOffset</b> member in the <a href="..\ntifs\ns-ntifs--fsctl-offload-read-input.md">FSCTL_OFFLOAD_READ_INPUT</a> structure with the value in <b>TransferLength</b> and an adjusted read length of the previous length minus the value in <b>TransferLength</b>. Also, an incomplete read operation can be completed through a non-offloaded read method, using the <a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a> routine, for example.</p>
 
 ## -requirements
 <table>
@@ -165,13 +165,13 @@ typedef struct _FSCTL_OFFLOAD_READ_OUTPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a>
+<a href="ifsk.fsctl_offload_read">FSCTL_OFFLOAD_READ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451104">FSCTL_OFFLOAD_READ_INPUT</a>
+<a href="..\ntifs\ns-ntifs--fsctl-offload-read-input.md">FSCTL_OFFLOAD_READ_INPUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451469">STORAGE_OFFLOAD_TOKEN</a>
+<a href="..\ntddstor\ns-ntddstor--storage-offload-token.md">STORAGE_OFFLOAD_TOKEN</a>
 </dt>
 </dl>
 <p> </p>

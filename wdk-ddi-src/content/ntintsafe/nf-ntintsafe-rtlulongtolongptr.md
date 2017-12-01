@@ -7,7 +7,7 @@ old-location: kernel\rtlulongtolongptr.htm
 old-project: kernel
 ms.assetid: 707C2392-D78F-42E1-A9F8-9F502BF5227E
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: RtlULongToLongPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices

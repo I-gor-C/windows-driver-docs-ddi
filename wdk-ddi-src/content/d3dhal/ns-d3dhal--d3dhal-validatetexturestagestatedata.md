@@ -85,7 +85,7 @@ typedef struct _D3DHAL_VALIDATETEXTURESTAGESTATEDATA {
 ### -field <b>ddrval</b>
 
 <dd>
-<p>Specifies the location where the driver writes the return value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549064">D3dValidateTextureStageState</a> function. A return code of D3D_OK indicates success. For more information, see <a href="https://msdn.microsoft.com/033beb6e-5872-4cb3-8f39-459e2fff82cd">Return Codes for Direct3D Driver Callbacks</a>.</p>
+<p>Specifies the location where the driver writes the return value of the <a href="display.d3dvalidatetexturestagestate">D3dValidateTextureStageState</a> function. A return code of D3D_OK indicates success. For more information, see <a href="https://msdn.microsoft.com/033beb6e-5872-4cb3-8f39-459e2fff82cd">Return Codes for Direct3D Driver Callbacks</a>.</p>
 </dd>
 </dl>
 
@@ -109,7 +109,7 @@ typedef struct _D3DHAL_VALIDATETEXTURESTAGESTATEDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549064">D3dValidateTextureStageState</a>
+<a href="display.d3dvalidatetexturestagestate">D3dValidateTextureStageState</a>
 </dt>
 </dl>
 <p> </p>

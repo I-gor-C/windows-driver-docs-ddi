@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>DXGK_PTE_PAGE_SIZE </b>enumeration is used by <a href="https://msdn.microsoft.com/library/windows/hardware/ff562008">DXGK_PTE</a> to indicate the size of lower page level pages. </p>
+<p>The <b>DXGK_PTE_PAGE_SIZE </b>enumeration is used by <a href="..\d3dukmdt\ns-d3dukmdt--dxgk-pte.md">DXGK_PTE</a> to indicate the size of lower page level pages. </p>
 
 
 ## -syntax
@@ -104,7 +104,7 @@ typedef enum _DXGK_PTE_PAGE_SIZE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562008">DXGK_PTE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--dxgk-pte.md">DXGK_PTE</a>
 </dt>
 </dl>
 <p> </p>

@@ -96,7 +96,7 @@ typedef struct _D3DKMT_CHECKMONITORPOWERSTATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546750">D3DKMTCheckMonitorPowerState</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcheckmonitorpowerstate.md">D3DKMTCheckMonitorPowerState</a>
 </dt>
 </dl>
 <p> </p>

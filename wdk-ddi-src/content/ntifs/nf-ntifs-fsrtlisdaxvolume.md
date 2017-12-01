@@ -69,10 +69,6 @@ BOOLEAN FsRtlIsDaxVolume(
     are mapped directly to the persistent memory device.  Files are
     then accessed using the memory bus, to help boost system performance.</p>
 
-<p>In DAX volumes,  user files
-    are mapped directly to the persistent memory device.  Files are
-    then accessed using the memory bus, to help boost system performance.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest3.htm
 old-project: wdf
 ms.assetid: 12F4CDB7-EEA5-49D1-AD41-6F5F0C9ED6C3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,23 +45,23 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoRequest3</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff558988">IWDFIoRequest2</a>. <b>IWDFIoRequest3</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoRequest3</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>. <b>IWDFIoRequest3</b> also has these types of members:</p>
 
 <p>The <b>IWDFIoRequest3</b> interface has these methods.</p>
 
 <p>
    The 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451341">GetUserModeDriverInitiatedIo</a> method determines whether an I/O request is marked as initiated by a UMDF driver.</p>
+  <a href="wdf.iwdfiorequest3_getusermodedriverinitiatedio">GetUserModeDriverInitiatedIo</a> method determines whether an I/O request is marked as initiated by a UMDF driver.</p>
 
 <p>
    The 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451345">RetrieveActivityId</a> method retrieves the current activity identifier associated with an I/O request.</p>
+  <a href="wdf.iwdfiorequest3_retrieveactivityid">RetrieveActivityId</a> method retrieves the current activity identifier associated with an I/O request.</p>
 
 <p>
    The 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451350">SetActivityId</a> method associates an activity identifier with an I/O request.</p>
+  <a href="wdf.iwdfiorequest3_setactivityid">SetActivityId</a> method associates an activity identifier with an I/O request.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451354">SetUserModeDriverInitiatedIo</a> method 
+<p>The <a href="wdf.iwdfiorequest3_setusermodedriverinitiatedio">SetUserModeDriverInitiatedIo</a> method 
    
   indicates to kernel-mode drivers that sit below the UMDF driver in the same device stack that a particular request should be treated as though it came from a UMDF driver.</p>
 
@@ -75,57 +75,57 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451341">GetUserModeDriverInitiatedIo</a>
+<a href="wdf.iwdfiorequest3_getusermodedriverinitiatedio">GetUserModeDriverInitiatedIo</a>
 </td>
 <td align="left" width="63%">
 <p>
    The 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451341">GetUserModeDriverInitiatedIo</a> method determines whether an I/O request is marked as initiated by a UMDF driver.</p>
+  <a href="wdf.iwdfiorequest3_getusermodedriverinitiatedio">GetUserModeDriverInitiatedIo</a> method determines whether an I/O request is marked as initiated by a UMDF driver.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451345">RetrieveActivityId</a>
+<a href="wdf.iwdfiorequest3_retrieveactivityid">RetrieveActivityId</a>
 </td>
 <td align="left" width="63%">
 <p>
    The 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451345">RetrieveActivityId</a> method retrieves the current activity identifier associated with an I/O request.</p>
+  <a href="wdf.iwdfiorequest3_retrieveactivityid">RetrieveActivityId</a> method retrieves the current activity identifier associated with an I/O request.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451350">SetActivityId</a>
+<a href="wdf.iwdfiorequest3_setactivityid">SetActivityId</a>
 </td>
 <td align="left" width="63%">
 <p>
    The 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451350">SetActivityId</a> method associates an activity identifier with an I/O request.</p>
+  <a href="wdf.iwdfiorequest3_setactivityid">SetActivityId</a> method associates an activity identifier with an I/O request.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451354">SetUserModeDriverInitiatedIo</a>
+<a href="wdf.iwdfiorequest3_setusermodedriverinitiatedio">SetUserModeDriverInitiatedIo</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451354">SetUserModeDriverInitiatedIo</a> method 
+<p>The <a href="wdf.iwdfiorequest3_setusermodedriverinitiatedio">SetUserModeDriverInitiatedIo</a> method 
    
   indicates to kernel-mode drivers that sit below the UMDF driver in the same device stack that a particular request should be treated as though it came from a UMDF driver.</p>
 </td>
 </tr>
 </table><p>
    The 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451341">GetUserModeDriverInitiatedIo</a> method determines whether an I/O request is marked as initiated by a UMDF driver.</p>
+  <a href="wdf.iwdfiorequest3_getusermodedriverinitiatedio">GetUserModeDriverInitiatedIo</a> method determines whether an I/O request is marked as initiated by a UMDF driver.</p>
 
 <p>
    The 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451345">RetrieveActivityId</a> method retrieves the current activity identifier associated with an I/O request.</p>
+  <a href="wdf.iwdfiorequest3_retrieveactivityid">RetrieveActivityId</a> method retrieves the current activity identifier associated with an I/O request.</p>
 
 <p>
    The 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451350">SetActivityId</a> method associates an activity identifier with an I/O request.</p>
+  <a href="wdf.iwdfiorequest3_setactivityid">SetActivityId</a> method associates an activity identifier with an I/O request.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451354">SetUserModeDriverInitiatedIo</a> method 
+<p>The <a href="wdf.iwdfiorequest3_setusermodedriverinitiatedio">SetUserModeDriverInitiatedIo</a> method 
    
   indicates to kernel-mode drivers that sit below the UMDF driver in the same device stack that a particular request should be treated as though it came from a UMDF driver.</p>
 
@@ -187,9 +187,9 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558988">IWDFIoRequest2</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest3 interface%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest3 interface%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

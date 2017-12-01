@@ -119,7 +119,7 @@ typedef struct _SERIAL_HANDFLOW {
 </tr>
 <tr>
 <td>SERIAL_ERROR_CHAR</td>
-<td>Insert the error character into the received data when an error occurs. For more information, see the description of the <b>ErrorChar</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/jj673020">SERIAL_CHARS</a>.</td>
+<td>Insert the error character into the received data when an error occurs. For more information, see the description of the <b>ErrorChar</b> member in <a href="..\ntddser\ns-ntddser--serial-chars.md">SERIAL_CHARS</a>.</td>
 </tr>
 <tr>
 <td>SERIAL_NULL_STRIPPING</td>
@@ -127,7 +127,7 @@ typedef struct _SERIAL_HANDFLOW {
 </tr>
 <tr>
 <td>SERIAL_BREAK_CHAR</td>
-<td>Insert the break character into the received data when a break occurs. For more information, see the description of the <b>BreakChar</b> member in <a href="https://msdn.microsoft.com/library/windows/hardware/jj673020">SERIAL_CHARS</a>.</td>
+<td>Insert the break character into the received data when a break occurs. For more information, see the description of the <b>BreakChar</b> member in <a href="..\ntddser\ns-ntddser--serial-chars.md">SERIAL_CHARS</a>.</td>
 </tr>
 <tr>
 <td>SERIAL_RTS_CONTROL</td>
@@ -163,7 +163,7 @@ typedef struct _SERIAL_HANDFLOW {
 </dl>
 
 ## -remarks
-<p>This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546574">IOCTL_SERIAL_GET_HANDFLOW</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff546736">IOCTL_SERIAL_SET_HANDFLOW</a> requests.</p>
+<p>This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl-serial-get-handflow.md">IOCTL_SERIAL_GET_HANDFLOW</a> and <a href="..\ntddser\ni-ntddser-ioctl-serial-set-handflow.md">IOCTL_SERIAL_SET_HANDFLOW</a> requests.</p>
 
 <p>After sending an XOFF (transmit off) character, the serial port stops transmitting immediately, without sending any more characters. This behavior supports serial ports that interpret any character that follows an XOFF as an implied XON (transmit on).</p>
 
@@ -186,10 +186,10 @@ typedef struct _SERIAL_HANDFLOW {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546574">IOCTL_SERIAL_GET_HANDFLOW</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-get-handflow.md">IOCTL_SERIAL_GET_HANDFLOW</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546736">IOCTL_SERIAL_SET_HANDFLOW</a>
+<a href="..\ntddser\ni-ntddser-ioctl-serial-set-handflow.md">IOCTL_SERIAL_SET_HANDFLOW</a>
 </dt>
 </dl>
 <p> </p>

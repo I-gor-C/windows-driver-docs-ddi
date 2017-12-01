@@ -92,18 +92,6 @@ VOID SpbControllerSetIoOtherCallback(
 
 <p>The SPB controller driver must call this method before it <i>commits</i> the device object—that is, before it returns from the <i>EvtDriverDeviceAdd</i> callback or adds the PDO to the controller's child list. The child list represents the devices that are attached to the bus. For more information, see <a href="kmdf.enumerating_the_devices_on_a_bus">Enumerating the Devices on a Bus</a>.</p>
 
-<p>This method provides a way for your SPB controller driver to declare its support for custom I/O control codes (IOCTLs) that are bus-specific or driver-specific. If the SPB controller driver does not call this method, SpbCx rejects all such I/O control requests, and the SPB controller driver never sees them.</p>
-
-<p>SpbCx manages the I/O queue for the SPB controller. By default, if SpbCx receives an I/O control request that has an IOCTL that it does not support, SpbCx completes the request with error status code STATUS_INVALID_DEVICE_REQUEST.</p>
-
-<p>However, by calling <b>SpbControllerSetIoOtherCallback</b>, the SPB controller driver declares its support for I/O control requests that the SPB framework extension (SpbCx) does not support. In this case, when SpbCx receives an I/O control request that has an IOCTL code that it does not support, SpbCx calls the <i>EvtSpbControllerIoOther</i> function to pass the request to the SPB controller driver for processing. The SPB controller driver is responsible for completing the request.</p>
-
-<p>For a list of the IOCTLs that SpbCx supports, see <a href="https://msdn.microsoft.com/EED1CBA4-8691-4BEA-89CB-F93DD7E1874F">SpbCx I/O Control Codes</a>.</p>
-
-<p>The optional <a href="..\wdfdevice\nc-wdfdevice-evt-wdf-io-in-caller-context.md">EvtIoInCallerContext</a> callback function runs in the process context of the request originator, and can preprocess context-dependent request parameters, such as buffer pointers, before the request is passed to the <a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a> callback function.  When the <i>EvtIoInCallerContext</i> function is called, any per-request context that the SPB controller driver requested in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh450908">SpbControllerSetRequestAttributes</a> will already be allocated and assigned to the request.</p>
-
-<p>The SPB controller driver must call this method before it <i>commits</i> the device object—that is, before it returns from the <i>EvtDriverDeviceAdd</i> callback or adds the PDO to the controller's child list. The child list represents the devices that are attached to the bus. For more information, see <a href="kmdf.enumerating_the_devices_on_a_bus">Enumerating the Devices on a Bus</a>.</p>
-
 ## -requirements
 <table>
 <tr>

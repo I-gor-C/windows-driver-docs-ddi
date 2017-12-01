@@ -7,7 +7,7 @@ old-location: kernel\auxklibinitialize.htm
 old-project: kernel
 ms.assetid: 7e15cbe1-17f7-4df7-9273-9a365d309d03
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: AuxKlibInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,12 +60,6 @@ NTSTATUS AuxKlibInitialize(void);
 <p><b>AuxKlibInitialize</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, the routine returns an appropriate NTSTATUS value.</p>
 
 ## -remarks
-<p>Drivers that use the Auxiliary Kernel-Mode Library must call <b>AuxKlibInitialize</b> before calling any of the library's other routines.</p>
-
-<p>Drivers that use the Auxiliary Kernel-Mode Library must call <b>AuxKlibInitialize</b> before calling any of the library's other routines.</p>
-
-<p>Drivers that use the Auxiliary Kernel-Mode Library must call <b>AuxKlibInitialize</b> before calling any of the library's other routines.</p>
-
 <p>Drivers that use the Auxiliary Kernel-Mode Library must call <b>AuxKlibInitialize</b> before calling any of the library's other routines.</p>
 
 ## -requirements

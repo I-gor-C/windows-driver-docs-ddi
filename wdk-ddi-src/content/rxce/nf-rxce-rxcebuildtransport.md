@@ -90,10 +90,6 @@ NTSTATUS RxCeBuildTransport(
 
 <p>The connection engine routines in RDBSS do not participate in the computation of quality of service. RDBSS essentially uses the <i>QualityOfService</i> parameter as a magic number that is passed to the underlying transport provider. </p>
 
-<p>When <b>RxCeBuildTransport</b> is successful, the data members in the RXCE_TRANSPORT structure pointed to by the <i>pTransport</i> parameter will be properly initialized and the RDBSS transport will be bound to the specified TDI transport.</p>
-
-<p>The connection engine routines in RDBSS do not participate in the computation of quality of service. RDBSS essentially uses the <i>QualityOfService</i> parameter as a magic number that is passed to the underlying transport provider. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -129,7 +125,7 @@ NTSTATUS RxCeBuildTransport(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554328">RxCeTearDownTransport</a>
+<a href="..\rxce\nf-rxce-rxceteardowntransport.md">RxCeTearDownTransport</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: stream\framing_cache_ops.htm
 old-project: stream
 ms.assetid: EA496897-7D5A-43A8-A61E-34E986288E8B
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS, *PTRANSPORTVIDEOPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

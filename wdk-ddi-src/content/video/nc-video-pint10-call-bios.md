@@ -62,13 +62,13 @@ VP_STATUS Int10CallBios(
 ### -param <i>Context</i> 
 
 <dd>
-<p>Pointer to a video port driver-defined context for the interface. This should be the same as the value in the <b>Context</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570539">VIDEO_PORT_INT10_INTERFACE</a> structure after <a href="https://msdn.microsoft.com/library/windows/hardware/ff570337">VideoPortQueryServices</a> returns.</p>
+<p>Pointer to a video port driver-defined context for the interface. This should be the same as the value in the <b>Context</b> member of the <a href="..\video\ns-video--video-port-int10-interface.md">VIDEO_PORT_INT10_INTERFACE</a> structure after <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a> returns.</p>
 </dd>
 
 ### -param <i>BiosArguments</i> 
 
 <dd>
-<p>Pointer to a video miniport driver-initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff567731">INT10_BIOS_ARGUMENTS</a> structure containing the values of the x86 registers. Any registers that are not needed in the INT10 BIOS call should be set to 0. When the function returns, some members of the INT10_BIOS_ARGUMENTS structures can have different values than before the call.</p>
+<p>Pointer to a video miniport driver-initialized <a href="..\video\ns-video--int10-bios-arguments.md">INT10_BIOS_ARGUMENTS</a> structure containing the values of the x86 registers. Any registers that are not needed in the INT10 BIOS call should be set to 0. When the function returns, some members of the INT10_BIOS_ARGUMENTS structures can have different values than before the call.</p>
 </dd>
 </dl>
 
@@ -76,9 +76,7 @@ VP_STATUS Int10CallBios(
 <p>The <b>Int10CallBios</b> function returns NO_ERROR upon success. Otherwise it returns an appropriate error code.</p>
 
 ## -remarks
-<p>The video port implements this function, which can be accessed through a pointer in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570539">VIDEO_PORT_INT10_INTERFACE</a> structure. </p>
-
-<p>The video port implements this function, which can be accessed through a pointer in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570539">VIDEO_PORT_INT10_INTERFACE</a> structure. </p>
+<p>The video port implements this function, which can be accessed through a pointer in the <a href="..\video\ns-video--video-port-int10-interface.md">VIDEO_PORT_INT10_INTERFACE</a> structure. </p>
 
 ## -requirements
 <table>
@@ -123,7 +121,7 @@ VP_STATUS Int10CallBios(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570539">VIDEO_PORT_INT10_INTERFACE</a>
+<a href="..\video\ns-video--video-port-int10-interface.md">VIDEO_PORT_INT10_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

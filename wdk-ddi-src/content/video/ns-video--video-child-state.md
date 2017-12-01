@@ -70,7 +70,7 @@ typedef struct _VIDEO_CHILD_STATE {
 </dl>
 
 ## -remarks
-<p>One member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570501">VIDEO_CHILD_STATE_CONFIGURATION</a> structure is an array of VIDEO_CHILD_STATE structures. Each of these structures maintains state information for one of an adapter's child devices.</p>
+<p>One member of the <a href="..\video\ns-video--video-child-state-configuration.md">VIDEO_CHILD_STATE_CONFIGURATION</a> structure is an array of VIDEO_CHILD_STATE structures. Each of these structures maintains state information for one of an adapter's child devices.</p>
 
 ## -requirements
 <table>
@@ -89,7 +89,7 @@ typedef struct _VIDEO_CHILD_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570501">VIDEO_CHILD_STATE_CONFIGURATION</a>
+<a href="..\video\ns-video--video-child-state-configuration.md">VIDEO_CHILD_STATE_CONFIGURATION</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo-hw-get-child-descriptor.md">HwVidGetVideoChildDescriptor</a>

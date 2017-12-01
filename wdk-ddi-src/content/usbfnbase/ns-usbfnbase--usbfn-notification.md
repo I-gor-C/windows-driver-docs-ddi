@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>Describes information about a Universal Serial Bus (USB)  event notification that was 
-		received by using <a href="https://msdn.microsoft.com/library/windows/hardware/mt187892">IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION</a>.
+		received by using <a href="buses.ioctl_internal_usbfn_bus_event_notification">IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION</a>.
 		</p>
 
 
@@ -67,7 +67,7 @@ typedef struct _USBFN_NOTIFICATION {
 ### -field <b>Event</b>
 
 <dd>
-<p>Bus notification indicated by a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187994">USBFN_EVENT</a>-typed flag.</p>
+<p>Bus notification indicated by a <a href="buses.usbfn_event">USBFN_EVENT</a>-typed flag.</p>
 </dd>
 
 ### -field <b>u</b>
@@ -78,7 +78,7 @@ typedef struct _USBFN_NOTIFICATION {
 ### -field <b>BusSpeed</b>
 
 <dd>
-<p>The operating bus speed indicated by <a href="https://msdn.microsoft.com/library/windows/hardware/mt187987">USBFN_BUS_SPEED</a>-typed flags.</p>
+<p>The operating bus speed indicated by <a href="buses.usbfn_bus_speed">USBFN_BUS_SPEED</a>-typed flags.</p>
 </dd>
 
 ### -field <b>SetupPacket</b>
@@ -96,13 +96,13 @@ typedef struct _USBFN_NOTIFICATION {
 ### -field <b>PortType</b>
 
 <dd>
-<p>Possible port types supported by a function controller indicated by a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188004">USBFN_PORT_TYPE</a>-typed flag.</p>
+<p>Possible port types supported by a function controller indicated by a <a href="buses.usbfn_port_type">USBFN_PORT_TYPE</a>-typed flag.</p>
 </dd>
 
 ### -field <b>AlternateInterface</b>
 
 <dd>
-<p>Alternate setting of the interface indicated by <a href="https://msdn.microsoft.com/library/windows/hardware/mt187816">ALTERNATE_INTERFACE</a>.</p>
+<p>Alternate setting of the interface indicated by <a href="buses.alternate_interface">ALTERNATE_INTERFACE</a>.</p>
 </dd>
 </dl>
 </dd>

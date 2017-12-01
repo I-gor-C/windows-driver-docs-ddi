@@ -95,7 +95,7 @@ typedef enum _FSRTL_CHANGE_BACKING_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545749">FsRtlChangeBackingFileObject</a>
+<a href="..\ntifs\nf-ntifs-fsrtlchangebackingfileobject.md">FsRtlChangeBackingFileObject</a>
 </dt>
 </dl>
 <p> </p>

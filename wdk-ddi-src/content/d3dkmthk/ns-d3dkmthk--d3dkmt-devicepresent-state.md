@@ -64,7 +64,7 @@ typedef struct _D3DKMT_DEVICEPRESENT_STATE {
 ### -field <b>PresentStats</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548200">D3DKMT_PRESENT_STATS</a> structure that describes status of present operations that is retrieved for the device.</p>
+<p>[out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present-stats.md">D3DKMT_PRESENT_STATS</a> structure that describes status of present operations that is retrieved for the device.</p>
 </dd>
 </dl>
 
@@ -96,10 +96,10 @@ typedef struct _D3DKMT_DEVICEPRESENT_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548030">D3DKMT_GETDEVICESTATE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548200">D3DKMT_PRESENT_STATS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-present-stats.md">D3DKMT_PRESENT_STATS</a>
 </dt>
 </dl>
 <p> </p>

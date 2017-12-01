@@ -61,7 +61,7 @@ HRESULT  FilterPreviewImage(
 ### -param <i>pWiaChildItem2</i> [in]
 
 <dd>
-<p>Pointer to the item that the image process is to process. This item must be a child item of the item specified in the pWiaItem2 parameter, which was passed into the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543916">IWiaImageFilter::InitializeFilter</a> method. 
+<p>Pointer to the item that the image process is to process. This item must be a child item of the item specified in the pWiaItem2 parameter, which was passed into the <a href="image.iwiaimagefilter_initializefilter">IWiaImageFilter::InitializeFilter</a> method. 
 </p>
 </dd>
 
@@ -83,10 +83,6 @@ HRESULT  FilterPreviewImage(
 <p>Returns S_OK on success, or a standard COM error code on failure.</p>
 
 ## -remarks
-<p>This method cannot be invoked directly by the application.</p>
-
-<p>The <b>IStream </b>and <b>IWiaPreview</b> interfaces are described in the Microsoft Windows SDK documentation.</p>
-
 <p>This method cannot be invoked directly by the application.</p>
 
 <p>The <b>IStream </b>and <b>IWiaPreview</b> interfaces are described in the Microsoft Windows SDK documentation.</p>

@@ -7,7 +7,7 @@ old-location: netvista\ndisdprreleasereadwritelock.htm
 old-project: netvista
 ms.assetid: BD9B13A7-5F5F-437a-BEB7-56DE6D03A29B
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisDprReleaseReadWriteLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,8 +40,8 @@ req.iface:
 
 ## -description
 <p>The 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh205389">NdisDprReleaseReadWriteLock</a> function releases a lock that was acquired in a preceding call to 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a>.</p>
+  <a href="..\ndis\nf-ndis-ndisreleasereadwritelock.md">NdisDprReleaseReadWriteLock</a> function releases a lock that was acquired in a preceding call to 
+  <a href="..\ndis\nf-ndis-ndisacquirereadwritelock.md">NdisDprAcquireReadWriteLock</a>.</p>
 
 
 ## -syntax
@@ -60,13 +60,13 @@ VOID NdisDprReleaseReadWriteLock(
 ### -param <i>Lock</i> [in, out]
 
 <dd>
-<p>A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff567277">NDIS_RW_LOCK</a> variable for the acquired lock to be released.</p>
+<p>A pointer to an <a href="..\ndis\ns-ndis--ndis-rw-lock.md">NDIS_RW_LOCK</a> variable for the acquired lock to be released.</p>
 </dd>
 
 ### -param <i>LockState</i> [in]
 
 <dd>
-<p>A pointer to an opaque <a href="https://msdn.microsoft.com/library/windows/hardware/ff557067">LOCK_STATE</a> variable that tracks the state of the lock. This variable exists
+<p>A pointer to an opaque <a href="..\ndis\ns-ndis--lock-state.md">LOCK_STATE</a> variable that tracks the state of the lock. This variable exists
      in the interval between the time the caller acquires and releases the lock.</p>
 </dd>
 </dl>
@@ -78,24 +78,12 @@ VOID NdisDprReleaseReadWriteLock(
 <p>A driver must initialize a lock before calling any other 
     Ndis<i>Xxx</i>ReadWriteLock function that is used to acquire or release read or write access to the
     resources that are protected by that lock. The 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562738">NdisInitializeReadWriteLock</a> function is used to initialize a lock.</p>
+    <a href="..\ndis\nf-ndis-ndisinitializereadwritelock.md">NdisInitializeReadWriteLock</a> function is used to initialize a lock.</p>
 
 <p>A driver must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a> function
+    <a href="..\ndis\nf-ndis-ndisacquirereadwritelock.md">NdisDprAcquireReadWriteLock</a> function
     to acquire a lock before the driver can call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh205389">NdisDprReleaseReadWriteLock</a>. Each call to 
-    <b>NdisDprAcquireReadWriteLock</b> requires a reciprocal call to 
-    <b>NdisDprReleaseReadWriteLock</b>.</p>
-
-<p>A driver must initialize a lock before calling any other 
-    Ndis<i>Xxx</i>ReadWriteLock function that is used to acquire or release read or write access to the
-    resources that are protected by that lock. The 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562738">NdisInitializeReadWriteLock</a> function is used to initialize a lock.</p>
-
-<p>A driver must call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a> function
-    to acquire a lock before the driver can call 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh205389">NdisDprReleaseReadWriteLock</a>. Each call to 
+    <a href="..\ndis\nf-ndis-ndisreleasereadwritelock.md">NdisDprReleaseReadWriteLock</a>. Each call to 
     <b>NdisDprAcquireReadWriteLock</b> requires a reciprocal call to 
     <b>NdisDprReleaseReadWriteLock</b>.</p>
 
@@ -152,15 +140,15 @@ VOID NdisDprReleaseReadWriteLock(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh205388">NdisDprAcquireReadWriteLock</a>
+<a href="..\ndis\nf-ndis-ndisacquirereadwritelock.md">NdisDprAcquireReadWriteLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562738">NdisInitializeReadWriteLock</a>
+<a href="..\ndis\nf-ndis-ndisinitializereadwritelock.md">NdisInitializeReadWriteLock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564523">NdisReleaseRWLock</a>
+<a href="..\ndis\nf-ndis-ndisreleaserwlock.md">NdisReleaseRWLock</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDprReleaseReadWriteLock function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisDprReleaseReadWriteLock function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

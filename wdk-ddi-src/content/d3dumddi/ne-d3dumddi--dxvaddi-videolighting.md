@@ -97,15 +97,7 @@ typedef enum _DXVADDI_VIDEOLIGHTING {
 </dl>
 
 ## -remarks
-<p>One of the values of DXVADDI_VIDEOLIGHTING can be specified in the <b>VideoLighting</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a>.</p>
-
-<p>The video lighting values can be used to alter the gamma to generate a comparable experience in a different lighting condition. </p>
-
-<p>One of the values of DXVADDI_VIDEOLIGHTING can be specified in the <b>VideoLighting</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a>.</p>
-
-<p>The video lighting values can be used to alter the gamma to generate a comparable experience in a different lighting condition. </p>
-
-<p>One of the values of DXVADDI_VIDEOLIGHTING can be specified in the <b>VideoLighting</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a>.</p>
+<p>One of the values of DXVADDI_VIDEOLIGHTING can be specified in the <b>VideoLighting</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>.</p>
 
 <p>The video lighting values can be used to alter the gamma to generate a comparable experience in a different lighting condition. </p>
 
@@ -134,7 +126,7 @@ typedef enum _DXVADDI_VIDEOLIGHTING {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
 </dt>
 </dl>
 <p> </p>

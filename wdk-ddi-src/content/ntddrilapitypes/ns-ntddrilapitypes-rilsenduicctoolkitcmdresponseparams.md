@@ -7,7 +7,7 @@ old-location: netvista\rilsenduicctoolkitcmdresponseparams.htm
 old-project: netvista
 ms.assetid: 9006d542-0f83-4cd4-ab81-d2e4cce67406
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSENDUICCTOOLKITCMDRESPONSEPARAMS, RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

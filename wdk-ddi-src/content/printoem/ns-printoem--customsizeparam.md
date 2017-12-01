@@ -96,7 +96,7 @@ typedef struct _CUSTOMSIZEPARAM {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548692">EATTRIBUTE_DATATYPE</a>
+<a href="..\printoem\ne-printoem--eattribute-datatype.md">EATTRIBUTE_DATATYPE</a>
 </dt>
 </dl>
 <p> </p>

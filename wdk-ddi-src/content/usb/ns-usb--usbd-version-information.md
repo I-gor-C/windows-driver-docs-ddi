@@ -128,7 +128,7 @@ typedef struct _USBD_VERSION_INFORMATION {
 
 ## -remarks
 <p>
-<a href="buses.getusbdiversion">GetUSBDIVersion</a> is deprecated in Windows 8 and later versions of the operating system. To determine whether a particular  version is supported by the underlying USB driver stack, the client driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh406233">USBD_IsInterfaceVersionSupported</a>.  </p>
+<a href="buses.getusbdiversion">GetUSBDIVersion</a> is deprecated in Windows 8 and later versions of the operating system. To determine whether a particular  version is supported by the underlying USB driver stack, the client driver must call <a href="..\usbdlib\nf-usbdlib-usbd-isinterfaceversionsupported.md">USBD_IsInterfaceVersionSupported</a>.  </p>
 
 ## -requirements
 <table>
@@ -153,7 +153,7 @@ typedef struct _USBD_VERSION_INFORMATION {
 <a href="buses.usb_interfaces">USB Bus Driver Interface (USBDI) Routines</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="buses.usb_structures_and_enumerations">USB Structures</a>
 </dt>
 </dl>
 <p> </p>

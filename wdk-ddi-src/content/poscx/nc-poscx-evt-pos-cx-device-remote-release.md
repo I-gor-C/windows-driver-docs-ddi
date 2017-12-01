@@ -44,7 +44,7 @@ req.product: Windows 10 or later.
   EVT_POS_CX_DEVICE_REMOTE_RELEASE callback is called whenever the device is released and left
 with no owner and allows the driver to do additional work. This callback is typically only used with network connected devices that require additional logic for handling ownership transitions.</p>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt593116">EVT_POS_CX_DEVICE_REMOTE_CLAIM</a> and <i>EVT_POS_CX_DEVICE_REMOTE_RELEASE</i> add support for remote devices that handle their own claim
+<a href="..\poscx\nc-poscx-evt-pos-cx-device-remote-claim.md">EVT_POS_CX_DEVICE_REMOTE_CLAIM</a> and <i>EVT_POS_CX_DEVICE_REMOTE_RELEASE</i> add support for remote devices that handle their own claim
 semantics.</p>
 
 
@@ -120,7 +120,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt593116">EVT_POS_CX_DEVICE_REMOTE_CLAIM</a>
+<a href="..\poscx\nc-poscx-evt-pos-cx-device-remote-claim.md">EVT_POS_CX_DEVICE_REMOTE_CLAIM</a>
 </dt>
 </dl>
 <p> </p>

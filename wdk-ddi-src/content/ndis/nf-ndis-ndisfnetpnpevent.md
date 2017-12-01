@@ -7,7 +7,7 @@ old-location: netvista\ndisfnetpnpevent.htm
 old-project: netvista
 ms.assetid: 383f9dcb-68ba-4323-b25f-668169043f35
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFNetPnPEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NDIS_STATUS NdisFNetPnPEvent(
 <dd>
 <p>A handle to the context area for the filter module. The filter driver created and initialized this
      context area in the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function.</p>
+     <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
 ### -param <i>NetPnPEvent</i> [in]
@@ -85,14 +85,6 @@ NDIS_STATUS NdisFNetPnPEvent(
 <p> </p>
 
 ## -remarks
-<p>NDIS calls a filter driver's 
-    <a href="..\ndis\nc-ndis-filter-net-pnp-event.md">FilterNetPnPEvent</a> function to notify
-    the filter driver of network PnP and Power Management events.</p>
-
-<p>Filter drivers can forward these notifications to overlying drivers. To forward a request, call the 
-    <b>NdisFNetPnPEvent</b> function from 
-    <i>FilterNetPnPEvent</i>.</p>
-
 <p>NDIS calls a filter driver's 
     <a href="..\ndis\nc-ndis-filter-net-pnp-event.md">FilterNetPnPEvent</a> function to notify
     the filter driver of network PnP and Power Management events.</p>
@@ -154,7 +146,7 @@ NDIS_STATUS NdisFNetPnPEvent(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547930">Irql_Filter_Driver_Function</a>
+<a href="devtest.ndis_irql_filter_driver_function">Irql_Filter_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -162,7 +154,7 @@ NDIS_STATUS NdisFNetPnPEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-filter-net-pnp-event.md">FilterNetPnPEvent</a>
@@ -171,9 +163,9 @@ NDIS_STATUS NdisFNetPnPEvent(
 <a href="..\ndis\nc-ndis-filter-oid-request.md">FilterOidRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568752">NET_PNP_EVENT_NOTIFICATION</a>
+<a href="..\ndis\ns-ndis--net-pnp-event-notification.md">NET_PNP_EVENT_NOTIFICATION</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFNetPnPEvent function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFNetPnPEvent function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

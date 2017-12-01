@@ -7,7 +7,7 @@ old-location: stream\ksservicebusenumpnprequest.htm
 old-project: stream
 ms.assetid: cdf0017f-e8c0-4e95-bea6-8bc2509c090c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsServiceBusEnumPnpRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -96,66 +96,6 @@ NTSTATUS KsServiceBusEnumPnpRequest(
 
 <p><b>KsServiceBusEnumPnpRequest</b> services the following Plug and Play IRPs for a PDO or child device:</p>
 
-<p>IRP_MN_START_DEVICE</p>
-
-<p>IRP_MN_QUERY_STOP_DEVICE</p>
-
-<p>IRP_MN_QUERY_REMOVE_DEVICE</p>
-
-<p>IRP_MN_STOP_DEVICE</p>
-
-<p>IRP_MN_REMOVE_DEVICE</p>
-
-<p>IRP_MN_QUERY_DEVICE_RELATIONS (TargetDeviceRelations)</p>
-
-<p>IRP_MN_QUERY_PNP_DEVICE_STATE</p>
-
-<p>IRP_MN_QUERY_ID</p>
-
-<p>IRP_MN_QUERY_INTERFACE</p>
-
-<p>IRP_MN_QUERY_RESOURCES</p>
-
-<p>IRP_MN_QUERY_RESOURCE_REQUIREMENTS</p>
-
-<p>IRP_MN_READ_CONFIG</p>
-
-<p>IRP_MN_WRITE_CONFIG</p>
-
-<p>IRP_MN_QUERY_CAPABILITIES</p>
-
-<p><b>KsServiceBusEnumPnpRequest</b> services the following Plug and Play IRPs for an FDO or parent device:</p>
-
-<p>IRP_MN_START_DEVICE</p>
-
-<p>IRP_MN_QUERY_BUS_INFORMATION</p>
-
-<p>IRP_MN_QUERY_DEVICE_RELATIONS</p>
-
-<p>IRP_MN_QUERY_STOP_DEVICE</p>
-
-<p>IRP_MN_QUERY_REMOVE_DEVICE</p>
-
-<p>IRP_MN_CANCEL_STOP_DEVICE</p>
-
-<p>IRP_MN_CANCEL_REMOVE_DEVICE</p>
-
-<p>IRP_MN_STOP_DEVICE</p>
-
-<p>IRP_MN_REMOVE_DEVICE</p>
-
-<p><b>KsServiceBusEnumPnpRequest</b> services the following Plug and Play IRPs for a PDO or child device:</p>
-
-<p>IRP_MN_START_DEVICE</p>
-
-<p>IRP_MN_QUERY_STOP_DEVICE</p>
-
-<p>IRP_MN_QUERY_REMOVE_DEVICE</p>
-
-<p>IRP_MN_STOP_DEVICE</p>
-
-<p>IRP_MN_REMOVE_DEVICE</p>
-
 <p>IRP_MN_QUERY_DEVICE_RELATIONS (TargetDeviceRelations)</p>
 
 <p>IRP_MN_QUERY_PNP_DEVICE_STATE</p>
@@ -211,15 +151,15 @@ NTSTATUS KsServiceBusEnumPnpRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561634">KsCreateBusEnumObject</a>
+<a href="..\swenum\nf-swenum-kscreatebusenumobject.md">KsCreateBusEnumObject</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563389">KsIsBusEnumChildDevice</a>
+<a href="..\swenum\nf-swenum-ksisbusenumchilddevice.md">KsIsBusEnumChildDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566814">KsServiceBusEnumCreateRequest</a>
+<a href="..\swenum\nf-swenum-ksservicebusenumcreaterequest.md">KsServiceBusEnumCreateRequest</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsServiceBusEnumPnpRequest function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsServiceBusEnumPnpRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

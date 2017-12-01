@@ -231,7 +231,7 @@ typedef struct _MSiSCSI_HBAInformation {
 ### -field <b>GenerationalGuid</b>
 
 <dd>
-<p>The generational GUID. This GUID is the GUID value that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565678">SetGenerationalGuid</a> method in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a> last set.</p>
+<p>The generational GUID. This GUID is the GUID value that the <a href="storage.setgenerationalguid">SetGenerationalGuid</a> method in the <a href="storage.msiscsi_operations_wmi_class">MSiSCSI_Operations WMI Class</a> last set.</p>
 </dd>
 
 ### -field <b>MaxCDBLength</b>
@@ -315,13 +315,13 @@ typedef struct _MSiSCSI_HBAInformation {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563017">MSiSCSI_HBAInformation WMI Class</a>
+<a href="storage.msiscsi_hbainformation_wmi_class">MSiSCSI_HBAInformation WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
+<a href="storage.msiscsi_operations_wmi_class">MSiSCSI_Operations WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565678">SetGenerationalGuid</a>
+<a href="storage.setgenerationalguid">SetGenerationalGuid</a>
 </dt>
 </dl>
 <p> </p>

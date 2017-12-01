@@ -61,7 +61,7 @@ HRESULT DrvWriteSpoolBuf(
 ### -param <i>pdevobj </i> [in]
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.</p>
+<p>Caller-supplied pointer to a <a href="..\printoem\ns-printoem--devobj.md">DEVOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>pBuffer </i> [in]
@@ -95,9 +95,7 @@ HRESULT DrvWriteSpoolBuf(
 <p> </p>
 
 ## -remarks
-<p>This method has the same behavior as <a href="https://msdn.microsoft.com/library/windows/hardware/ff553103">IPrintOemDriverPS::DrvWriteSpoolBuf</a>. This method is supported for any Pscript5 render plug-ins.</p>
-
-<p>This method has the same behavior as <a href="https://msdn.microsoft.com/library/windows/hardware/ff553103">IPrintOemDriverPS::DrvWriteSpoolBuf</a>. This method is supported for any Pscript5 render plug-ins.</p>
+<p>This method has the same behavior as <a href="print.iprintoemdriverps_drvwritespoolbuf">IPrintOemDriverPS::DrvWriteSpoolBuf</a>. This method is supported for any Pscript5 render plug-ins.</p>
 
 ## -requirements
 <table>
@@ -126,7 +124,7 @@ HRESULT DrvWriteSpoolBuf(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553103">IPrintOemDriverPS::DrvWriteSpoolBuf</a>
+<a href="print.iprintoemdriverps_drvwritespoolbuf">IPrintOemDriverPS::DrvWriteSpoolBuf</a>
 </dt>
 </dl>
 <p> </p>

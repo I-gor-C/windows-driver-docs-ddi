@@ -7,7 +7,7 @@ old-location: kernel\pep_ppm_idle_complete_v2.htm
 old-project: kernel
 ms.assetid: 2807D1D7-DCAF-446C-8DAD-CAF244B52CD2
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PEP_PPM_IDLE_COMPLETE_V2, PEP_PPM_IDLE_COMPLETE_V2, *PPEP_PPM_IDLE_COMPLETE_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices

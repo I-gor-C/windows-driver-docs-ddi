@@ -7,7 +7,7 @@ old-location: stream\iksdevicefunctions.htm
 old-project: stream
 ms.assetid: d29e7b39-5fcf-4543-9363-6f8ac6a9c7dc
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsWriteFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,7 +47,7 @@ req.iface:
 
 <p>The <b>IKsDeviceFunctions</b> interface has these methods.</p>
 
-<p>Registers a DMA adapter object with AVStream. All drivers compiled for Win64 should use this method instead of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561687">KsDeviceRegisterAdapterObject</a>.</p>
+<p>Registers a DMA adapter object with AVStream. All drivers compiled for Win64 should use this method instead of <a href="..\ks\nf-ks-ksdeviceregisteradapterobject.md">KsDeviceRegisterAdapterObject</a>.</p>
 
 <p> </p>
 
@@ -62,10 +62,10 @@ req.iface:
 <a href="stream.iksdevicefunctions_registeradapterobjectex">RegisterAdapterObjectEx</a>
 </td>
 <td align="left" width="63%">
-<p>Registers a DMA adapter object with AVStream. All drivers compiled for Win64 should use this method instead of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561687">KsDeviceRegisterAdapterObject</a>.</p>
+<p>Registers a DMA adapter object with AVStream. All drivers compiled for Win64 should use this method instead of <a href="..\ks\nf-ks-ksdeviceregisteradapterobject.md">KsDeviceRegisterAdapterObject</a>.</p>
 </td>
 </tr>
-</table><p>Registers a DMA adapter object with AVStream. All drivers compiled for Win64 should use this method instead of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561687">KsDeviceRegisterAdapterObject</a>.</p>
+</table><p>Registers a DMA adapter object with AVStream. All drivers compiled for Win64 should use this method instead of <a href="..\ks\nf-ks-ksdeviceregisteradapterobject.md">KsDeviceRegisterAdapterObject</a>.</p>
 
 <p> </p>
 

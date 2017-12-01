@@ -7,7 +7,7 @@ old-location: stream\ksevent_volumelimit.htm
 old-project: stream
 ms.assetid: B03477A0-B7ED-491F-9D6F-B32A0E719475
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

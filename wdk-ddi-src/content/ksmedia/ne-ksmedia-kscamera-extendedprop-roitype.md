@@ -7,7 +7,7 @@ old-location: stream\kscamera_extendedprop_roitype.htm
 old-project: stream
 ms.assetid: 29458793-35DA-4CE4-AAD9-E1DD90C28E5C
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices

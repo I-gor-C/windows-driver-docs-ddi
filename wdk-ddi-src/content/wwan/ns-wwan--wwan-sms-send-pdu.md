@@ -7,7 +7,7 @@ old-location: netvista\wwan_sms_send_pdu.htm
 old-project: netvista
 ms.assetid: 94d19d5b-8fa5-437d-9359-e35ef103f380
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU, *PWWAN_SMS_SEND_PDU
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ typedef struct _WWAN_SMS_SEND_PDU {
      <b>PduData</b> .</p>
 <p>The following table lists the different values for the 
      <b>SmsFormat</b> member of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571250">WWAN_SMS_SEND</a> structure and their
+     <a href="..\wwan\ns-wwan--wwan-sms-send.md">WWAN_SMS_SEND</a> structure and their
      corresponding range that is allowed in this member.</p>
 <table>
 <tr>
@@ -123,7 +123,7 @@ typedef struct _WWAN_SMS_SEND_PDU {
 <p>For CDMA-based devices that support sending SMS messages in binary format (that is, miniport drivers
      that return WWAN_SMS_CAPS_PDU_SEND in the 
      <b>WwanSmsCaps</b> member of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571204">WWAN_DEVICE_CAPS</a>), 
+     <a href="..\wwan\ns-wwan--wwan-device-caps.md">WWAN_DEVICE_CAPS</a>), 
      <b>PduData</b> contains the SMS message as a byte array, as defined in section 3.4.2.1 SMS Point-to-Point
      Message in the 3GPP2 specification C.S0015-A "Short Message Service (SMS) for Wideband Spread Spectrum
      Systems". SMS will only support Wireless Messaging Teleservice (WMT) format. Miniport drivers should
@@ -160,9 +160,9 @@ typedef struct _WWAN_SMS_SEND_PDU {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571250">WWAN_SMS_SEND</a>
+<a href="..\wwan\ns-wwan--wwan-sms-send.md">WWAN_SMS_SEND</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND_PDU structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND_PDU structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

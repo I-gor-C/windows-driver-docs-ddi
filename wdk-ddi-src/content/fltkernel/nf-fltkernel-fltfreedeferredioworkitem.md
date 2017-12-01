@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>FltFreeDeferredIoWorkItem</b> routine frees a work item allocated by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541720">FltAllocateDeferredIoWorkItem</a> routine. </p>
+<p>The <b>FltFreeDeferredIoWorkItem</b> routine frees a work item allocated by the <a href="..\fltkernel\nf-fltkernel-fltallocatedeferredioworkitem.md">FltAllocateDeferredIoWorkItem</a> routine. </p>
 
 
 ## -syntax
@@ -65,11 +65,7 @@ VOID FltFreeDeferredIoWorkItem(
 <p>None </p>
 
 ## -remarks
-<p><b>FltFreeDeferredIoWorkItem</b> frees an opaque FLT_DEFERRED_IO_WORKITEM structure that was allocated by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541720">FltAllocateDeferredIoWorkItem</a>. The freed memory is returned to nonpaged pool. </p>
-
-<p>The FLT_DEFERRED_IO_WORKITEM structure is opaque: that is, its members are reserved for system use. </p>
-
-<p><b>FltFreeDeferredIoWorkItem</b> frees an opaque FLT_DEFERRED_IO_WORKITEM structure that was allocated by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541720">FltAllocateDeferredIoWorkItem</a>. The freed memory is returned to nonpaged pool. </p>
+<p><b>FltFreeDeferredIoWorkItem</b> frees an opaque FLT_DEFERRED_IO_WORKITEM structure that was allocated by a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatedeferredioworkitem.md">FltAllocateDeferredIoWorkItem</a>. The freed memory is returned to nonpaged pool. </p>
 
 <p>The FLT_DEFERRED_IO_WORKITEM structure is opaque: that is, its members are reserved for system use. </p>
 
@@ -118,10 +114,10 @@ VOID FltFreeDeferredIoWorkItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541720">FltAllocateDeferredIoWorkItem</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatedeferredioworkitem.md">FltAllocateDeferredIoWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543449">FltQueueDeferredIoWorkItem</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueuedeferredioworkitem.md">FltQueueDeferredIoWorkItem</a>
 </dt>
 </dl>
 <p> </p>

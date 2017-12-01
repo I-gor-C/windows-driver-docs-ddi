@@ -7,7 +7,7 @@ old-location: wdf\iwdfnamedpropertystore.htm
 old-project: wdf
 ms.assetid: f31a88c1-468f-4756-a5fa-b4aa0b8fe51d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560182">IWDFNamedPropertyStore::GetNameAt</a>
+<a href="wdf.iwdfnamedpropertystore_getnameat">IWDFNamedPropertyStore::GetNameAt</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfnamedpropertystore_getnameat">GetNameAt</a> method retrieves the name of a property.</p>
@@ -75,7 +75,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560188">IWDFNamedPropertyStore::GetNameCount</a>
+<a href="wdf.iwdfnamedpropertystore_getnamecount">IWDFNamedPropertyStore::GetNameCount</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfnamedpropertystore_getnamecount">GetNameCount</a> method retrieves the number of properties in a property store.</p>
@@ -83,7 +83,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560190">IWDFNamedPropertyStore::GetNamedValue</a>
+<a href="wdf.iwdfnamedpropertystore_getnamedvalue">IWDFNamedPropertyStore::GetNamedValue</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfnamedpropertystore_getnamedvalue">GetNamedValue</a> method retrieves the value of a property.</p>
@@ -91,7 +91,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560195">IWDFNamedPropertyStore::SetNamedValue</a>
+<a href="wdf.iwdfnamedpropertystore_setnamedvalue">IWDFNamedPropertyStore::SetNamedValue</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfnamedpropertystore_setnamedvalue">SetNamedValue</a> method sets the value of a property.</p>

@@ -7,7 +7,7 @@ old-location: kernel\pep_component_perf_info.htm
 old-project: kernel
 ms.assetid: F05D67A0-6583-4C3E-B9AA-B99381A18047
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PEP_COMPONENT_PERF_INFO, PEP_COMPONENT_PERF_INFO, *PPEP_COMPONENT_PERF_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,12 +64,12 @@ typedef struct _PEP_COMPONENT_PERF_INFO {
 ### -field <b>PerfStateSets</b>
 
 <dd>
-<p>The first element in an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt186702">PEP_COMPONENT_PERF_SET</a> structures. Each array element describes a P-state of the component. If the array contains more than one element, the additional elements immediately follow the end of the <b>PEP_COMPONENT_PERF_INFO</b> structure.</p>
+<p>The first element in an array of <a href="..\pepfx\ns-pepfx--pep-component-perf-set.md">PEP_COMPONENT_PERF_SET</a> structures. Each array element describes a P-state of the component. If the array contains more than one element, the additional elements immediately follow the end of the <b>PEP_COMPONENT_PERF_INFO</b> structure.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>This structure is used in conjunction with the <a href="kernel.pep_dpm_register_component_perf_states">PEP_DPM_REGISTER_COMPONENT_PERF_STATES</a> notification. The <b>PerfStateSets</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186848">PEP_REGISTER_COMPONENT_PERF_STATES</a> structure is a <b>PEP_COMPONENT_PERF_INFO</b> structure.</p>
+<p>This structure is used in conjunction with the <a href="kernel.pep_dpm_register_component_perf_states">PEP_DPM_REGISTER_COMPONENT_PERF_STATES</a> notification. The <b>PerfStateSets</b> member of the <a href="..\pepfx\ns-pepfx--pep-register-component-perf-states.md">PEP_REGISTER_COMPONENT_PERF_STATES</a> structure is a <b>PEP_COMPONENT_PERF_INFO</b> structure.</p>
 
 <p>The <b>PEP_COMPONENT_PERF_INFO</b> structure contains input values that are supplied by the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx). The platform extension plug-in (PEP) must not write to this structure.</p>
 
@@ -98,18 +98,18 @@ typedef struct _PEP_COMPONENT_PERF_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186701">PEP_COMPONENT_PERF_INFO</a>
+<a href="..\pepfx\ns-pepfx--pep-component-perf-info.md">PEP_COMPONENT_PERF_INFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186702">PEP_COMPONENT_PERF_SET</a>
+<a href="..\pepfx\ns-pepfx--pep-component-perf-set.md">PEP_COMPONENT_PERF_SET</a>
 </dt>
 <dt>
 <a href="kernel.pep_dpm_register_component_perf_states">PEP_DPM_REGISTER_COMPONENT_PERF_STATES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186848">PEP_REGISTER_COMPONENT_PERF_STATES</a>
+<a href="..\pepfx\ns-pepfx--pep-register-component-perf-states.md">PEP_REGISTER_COMPONENT_PERF_STATES</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_COMPONENT_PERF_INFO structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_COMPONENT_PERF_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

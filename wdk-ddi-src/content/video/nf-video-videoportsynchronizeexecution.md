@@ -108,16 +108,6 @@ BOOLEAN VideoPortSynchronizeExecution(
 
 <p>Callers of <b>VideoPortSynchronizeExecution</b> must be running at IRQL </p>
 
-<p>Miniport drivers seldom call this routine unless either of the following conditions hold:</p>
-
-<p>The miniport driver's <a href="..\video\nc-video-pvideo-hw-interrupt.md">HwVidInterrupt</a> function shares memory with other miniport driver functions. In order to access the shared memory in a multiprocessor-safe way, such miniport driver functions must call <b>VideoPortSynchronizeExecution</b> with <a href="..\video\nc-video-pminiport-synchronize-routine.md">HwVidSynchronizeExecutionCallback</a>. This miniport driver function can safely access the shared memory because the video port driver prevents the <i>HwVidInterrupt</i> function from accessing the same memory concurrently.</p>
-
-<p>The adapter must be programmed with a sequence of commands without being subject to a context switch. For example, a miniport driver's <i>SvgaHwIoPortXxx</i> function that has buffered a sequence of I/O instructions and validated the sequence might call <b>VideoPortSynchronizeExecution</b> with <i>HwVidSynchronizeExecutionCallback</i>. This miniport driver function can transfer the buffered and validated I/O stream to the adapter very quickly.</p>
-
-<p>A caller should specify the lowest practical <i>Priority</i> value for the work <a href="..\video\nc-video-pminiport-synchronize-routine.md">HwVidSynchronizeExecutionCallback</a> must do. Any <i>CallbackRoutine</i> that is run at a high hardware priority (<b>VpMediumPriority</b> or <b>VpHighPriority</b>) should return control as quickly as possible. A driver with such a high-priority <i>HwVidSynchronizeExecutionCallback</i> function should be designed to do as much work as possible in every other driver function except one of both of its <i>HwVidSynchronizeExecutionCallback</i> and <i>HwVidInterrupt</i> functions.</p>
-
-<p>Callers of <b>VideoPortSynchronizeExecution</b> must be running at IRQL </p>
-
 ## -requirements
 <table>
 <tr>

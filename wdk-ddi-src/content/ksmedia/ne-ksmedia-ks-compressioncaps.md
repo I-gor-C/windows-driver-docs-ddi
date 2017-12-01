@@ -7,7 +7,7 @@ old-location: stream\ks_compressioncaps.htm
 old-project: stream
 ms.assetid: 47781af6-bf14-4b95-bef2-506aadb2d1fb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ typedef enum  {
 ### -field <a id="KS_CompressionCaps_CanCrunch"></a><a id="ks_compressioncaps_cancrunch"></a><a id="KS_COMPRESSIONCAPS_CANCRUNCH"></a><b>KS_CompressionCaps_CanCrunch</b>
 
 <dd>
-<p>The video compressor can compress the video to a specified data rate. If a minidriver supports this capability, the <b>dwBitRate</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a> structure specifies the default data rate.</p>
+<p>The video compressor can compress the video to a specified data rate. If a minidriver supports this capability, the <b>dwBitRate</b> member of the <a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a> structure specifies the default data rate.</p>
 </dd>
 
 ### -field <a id="KS_CompressionCaps_CanKeyFrame"></a><a id="ks_compressioncaps_cankeyframe"></a><a id="KS_COMPRESSIONCAPS_CANKEYFRAME"></a><b>KS_CompressionCaps_CanKeyFrame</b>
@@ -109,12 +109,12 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a>
+<a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565979">KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S</a>
+<a href="stream.ksproperty_videocompression_getinfo_s">KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_CompressionCaps enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_CompressionCaps enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

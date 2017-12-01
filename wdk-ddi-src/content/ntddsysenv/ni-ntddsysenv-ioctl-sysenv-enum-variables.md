@@ -7,7 +7,7 @@ old-location: kernel\ioctl_ioctl_sysenv_enum_variables.htm
 old-project: kernel
 ms.assetid: 605CA19C-048A-4FBA-8568-7B1867C99210
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: STORAGE_BREAK_RESERVATION_REQUEST, STORAGE_BREAK_RESERVATION_REQUEST, *PSTORAGE_BREAK_RESERVATION_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,21 +64,21 @@ req.iface:
 <p>Size of BOOLEAN.</p>
 
 ### -output-buffer
-<p>A pointer to a buffer that contains the system environment variable information. If values have been requested, the buffer points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt791536">XVARIABLE_NAME_AND_VALUE</a> structures. Otherwise, returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt791535">XVARIABLE_NAME</a>  structures. </p>
+<p>A pointer to a buffer that contains the system environment variable information. If values have been requested, the buffer points to an array of <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name-and-value.md">XVARIABLE_NAME_AND_VALUE</a> structures. Otherwise, returns an array of <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name.md">XVARIABLE_NAME</a>  structures. </p>
 
-<p>The location of the next entry is determined by <b>NextEntryOffset</b> of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt791536">XVARIABLE_NAME_AND_VALUE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt791535">XVARIABLE_NAME</a>.</p>
+<p>The location of the next entry is determined by <b>NextEntryOffset</b> of the <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name-and-value.md">XVARIABLE_NAME_AND_VALUE</a> and <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name.md">XVARIABLE_NAME</a>.</p>
 
-<p>A pointer to a buffer that contains the system environment variable information. If values have been requested, the buffer points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt791536">XVARIABLE_NAME_AND_VALUE</a> structures. Otherwise, returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt791535">XVARIABLE_NAME</a>  structures. </p>
+<p>A pointer to a buffer that contains the system environment variable information. If values have been requested, the buffer points to an array of <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name-and-value.md">XVARIABLE_NAME_AND_VALUE</a> structures. Otherwise, returns an array of <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name.md">XVARIABLE_NAME</a>  structures. </p>
 
-<p>The location of the next entry is determined by <b>NextEntryOffset</b> of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt791536">XVARIABLE_NAME_AND_VALUE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt791535">XVARIABLE_NAME</a>.</p>
+<p>The location of the next entry is determined by <b>NextEntryOffset</b> of the <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name-and-value.md">XVARIABLE_NAME_AND_VALUE</a> and <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name.md">XVARIABLE_NAME</a>.</p>
 
-<p>A pointer to a buffer that contains the system environment variable information. If values have been requested, the buffer points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt791536">XVARIABLE_NAME_AND_VALUE</a> structures. Otherwise, returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt791535">XVARIABLE_NAME</a>  structures. </p>
+<p>A pointer to a buffer that contains the system environment variable information. If values have been requested, the buffer points to an array of <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name-and-value.md">XVARIABLE_NAME_AND_VALUE</a> structures. Otherwise, returns an array of <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name.md">XVARIABLE_NAME</a>  structures. </p>
 
-<p>The location of the next entry is determined by <b>NextEntryOffset</b> of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt791536">XVARIABLE_NAME_AND_VALUE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt791535">XVARIABLE_NAME</a>.</p>
+<p>The location of the next entry is determined by <b>NextEntryOffset</b> of the <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name-and-value.md">XVARIABLE_NAME_AND_VALUE</a> and <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name.md">XVARIABLE_NAME</a>.</p>
 
-<p>A pointer to a buffer that contains the system environment variable information. If values have been requested, the buffer points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt791536">XVARIABLE_NAME_AND_VALUE</a> structures. Otherwise, returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt791535">XVARIABLE_NAME</a>  structures. </p>
+<p>A pointer to a buffer that contains the system environment variable information. If values have been requested, the buffer points to an array of <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name-and-value.md">XVARIABLE_NAME_AND_VALUE</a> structures. Otherwise, returns an array of <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name.md">XVARIABLE_NAME</a>  structures. </p>
 
-<p>The location of the next entry is determined by <b>NextEntryOffset</b> of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt791536">XVARIABLE_NAME_AND_VALUE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt791535">XVARIABLE_NAME</a>.</p>
+<p>The location of the next entry is determined by <b>NextEntryOffset</b> of the <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name-and-value.md">XVARIABLE_NAME_AND_VALUE</a> and <a href="..\ntddsysenv\ns-ntddsysenv--xvariable-name.md">XVARIABLE_NAME</a>.</p>
 
 ### -output-buffer-length
 <p>On input, the length in bytes of the output buffer. On output,
@@ -161,15 +161,15 @@ I/O Status block
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548651">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548656">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548660">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IOCTL_SYSENV_ENUM_VARIABLES control code%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IOCTL_SYSENV_ENUM_VARIABLES control code%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ntdll.lib (user mode); 
-NtosKrnl.lib (kernel mode)
+req.lib: Ntdll.lib (user mode); NtosKrnl.lib (kernel mode)
 req.dll: NtosKrnl.exe
 req.irql: 
 req.iface: 
@@ -67,14 +66,6 @@ NTSYSAPI VOID DbgBreakPointWithStatus(
 <p>None</p>
 
 ## -remarks
-<p><b>DbgBreakPointWithStatus</b> is identical to <b>DbgBreakPoint</b>, except for the <i>Status</i> message.</p>
-
-<p>On x86 computers, the <i>Status</i> parameter is stored in the <b>eax</b> register. On machines that have register calling conventions, <i>Status</i> is stored in the first argument register.</p>
-
-<p>This routine raises an exception that is handled by the kernel debugger if one is installed; otherwise it is handled by the debug system. If a debugger is not connected to the system, the exception can be handled in the standard way.</p>
-
-<p>In kernel mode, a break exception that is not handled will cause a bug check. You can, however, connect a kernel-mode debugger to a target computer that has stopped responding and has kernel debugging enabled. For more information, see <a href="https://msdn.microsoft.com/938ef180-84de-442f-9b6c-1138c2fc8d5a">Windows Debugging</a>.</p>
-
 <p><b>DbgBreakPointWithStatus</b> is identical to <b>DbgBreakPoint</b>, except for the <i>Status</i> message.</p>
 
 <p>On x86 computers, the <i>Status</i> parameter is stored in the <b>eax</b> register. On machines that have register calling conventions, <i>Status</i> is stored in the first argument register.</p>
@@ -139,7 +130,7 @@ NTSYSAPI VOID DbgBreakPointWithStatus(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543670">DebugBreakUsage</a>
+<a href="devtest.wdm_debugbreakusage">DebugBreakUsage</a>
 </td>
 </tr>
 </table>
@@ -147,13 +138,13 @@ NTSYSAPI VOID DbgBreakPointWithStatus(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543626">DbgBreakPoint</a>
+<a href="..\wdm\nf-wdm-dbgbreakpoint.md">DbgBreakPoint</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548063">KdBreakPoint</a>
+<a href="devtest.kdbreakpoint">KdBreakPoint</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548065">KdBreakPointWithStatus</a>
+<a href="..\wdm\nf-wdm-kdbreakpointwithstatus.md">KdBreakPointWithStatus</a>
 </dt>
 </dl>
 <p> </p>

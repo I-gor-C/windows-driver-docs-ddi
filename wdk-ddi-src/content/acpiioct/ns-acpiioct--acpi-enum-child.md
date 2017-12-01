@@ -38,7 +38,7 @@ req.irql:
 
 
 ## -description
-<p>The ACPI_ENUM_CHILD structure is a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536112">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a> structure and contains the full path and name of an object in an ACPI namespace.</p>
+<p>The ACPI_ENUM_CHILD structure is a member of the <a href="..\acpiioct\ns-acpiioct--acpi-enum-children-output-buffer.md">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a> structure and contains the full path and name of an object in an ACPI namespace.</p>
 
 
 ## -syntax
@@ -75,7 +75,7 @@ typedef struct _ACPI_ENUM_CHILD {
 </dl>
 
 ## -remarks
-<p>A driver for a device uses an <a href="https://msdn.microsoft.com/library/windows/hardware/ff536147">IOCTL_ACPI_ENUM_CHILDREN</a> request to enumerate the child objects of the device. The enumerated child objects can be devices or any object of a supplied name. This request returns an ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure, which includes the <b>Children</b> member that contains an array of ACPI_ENUM_CHILD structures. </p>
+<p>A driver for a device uses an <a href="..\acpiioct\ni-acpiioct-ioctl-acpi-enum-children.md">IOCTL_ACPI_ENUM_CHILDREN</a> request to enumerate the child objects of the device. The enumerated child objects can be devices or any object of a supplied name. This request returns an ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure, which includes the <b>Children</b> member that contains an array of ACPI_ENUM_CHILD structures. </p>
 
 <p>The path and name that are contained in a <b>Name</b> member are in the standard format for a fully qualified path and name of an object in an ACPI namespace. For example, assume that a device named 'ABCD' is an immediate child of the root of an ACPI namespace, that device 'ABCD' has a child device named 'CHLD,' and that child device 'CHLD' has an immediate child object named '_FOO.' In this case, <b>Name</b> would contain '\ABCD.CHLD._FOO.'</p>
 
@@ -106,10 +106,10 @@ typedef struct _ACPI_ENUM_CHILD {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536112">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a>
+<a href="..\acpiioct\ns-acpiioct--acpi-enum-children-output-buffer.md">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536147">IOCTL_ACPI_ENUM_CHILDREN</a>
+<a href="..\acpiioct\ni-acpiioct-ioctl-acpi-enum-children.md">IOCTL_ACPI_ENUM_CHILDREN</a>
 </dt>
 </dl>
 <p> </p>

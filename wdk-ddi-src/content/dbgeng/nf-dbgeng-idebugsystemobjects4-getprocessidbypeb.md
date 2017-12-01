@@ -7,7 +7,7 @@ old-location: debugger\getprocessidbypeb.htm
 old-project: debugger
 ms.assetid: 2ee2b610-30c7-4932-b8f6-df5040a5bad8
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, GetProcessIdByPeb, IDebugSystemObjects4::GetProcessIdByPeb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,10 +78,6 @@ HRESULT GetProcessIdByPeb(
 <p> </p>
 
 ## -remarks
-<p>This method is not available in kernel-mode debugging.</p>
-
-<p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
 <p>This method is not available in kernel-mode debugging.</p>
 
 <p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>

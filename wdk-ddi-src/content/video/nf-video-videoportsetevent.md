@@ -138,7 +138,7 @@ LONG VideoPortSetEvent(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570284">VideoPortClearEvent</a>
+<a href="..\video\nf-video-videoportclearevent.md">VideoPortClearEvent</a>
 </dt>
 </dl>
 <p> </p>

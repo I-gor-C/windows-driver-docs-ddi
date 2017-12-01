@@ -7,7 +7,7 @@ old-location: netvista\ndisallocatecloneoidrequest.htm
 old-project: netvista
 ms.assetid: 426ff4f4-7924-4115-9f66-b4152e2ba5bb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisAllocateCloneOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The 
   <b>NdisAllocateCloneOidRequest</b> function allocates memory for a new 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure and copies all the
+  <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure and copies all the
   information from an existing NDIS_OID_REQUEST structure to the newly allocated structure.</p>
 
 
@@ -71,7 +71,7 @@ NDIS_STATUS NdisAllocateCloneOidRequest(
 
 <dd>
 <p>A pointer to an existing 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure from which NDIS
+     <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure from which NDIS
      copies the information to the newly allocated structure.</p>
 </dd>
 
@@ -112,7 +112,7 @@ NDIS_STATUS NdisAllocateCloneOidRequest(
 <p>To forward a request down to the underlying drivers, an NDIS intermediate driver or filter driver must
     call 
     <b>NdisAllocateCloneOidRequest</b> to allocate a cloned 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure. A filter driver
+    <a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a> structure. A filter driver
     or intermediate driver should not forward the original NDIS_OID_REQUEST structure to underlying
     drivers.</p>
 
@@ -120,21 +120,7 @@ NDIS_STATUS NdisAllocateCloneOidRequest(
     NDIS_OID_REQUEST structure to the new structure.</p>
 
 <p>The driver must subsequently call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561845">NdisFreeCloneOidRequest</a> function
-    to free the NDIS_OID_REQUEST structure.</p>
-
-<p>To forward a request down to the underlying drivers, an NDIS intermediate driver or filter driver must
-    call 
-    <b>NdisAllocateCloneOidRequest</b> to allocate a cloned 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure. A filter driver
-    or intermediate driver should not forward the original NDIS_OID_REQUEST structure to underlying
-    drivers.</p>
-
-<p><b>NdisAllocateCloneOidRequest</b> allocates new memory and copies the data from an existing
-    NDIS_OID_REQUEST structure to the new structure.</p>
-
-<p>The driver must subsequently call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561845">NdisFreeCloneOidRequest</a> function
+    <a href="..\ndis\nf-ndis-ndisfreecloneoidrequest.md">NdisFreeCloneOidRequest</a> function
     to free the NDIS_OID_REQUEST structure.</p>
 
 ## -requirements
@@ -190,7 +176,7 @@ NDIS_STATUS NdisAllocateCloneOidRequest(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547990">Irql_OID_Function</a>
+<a href="devtest.ndis_irql_oid_function">Irql_OID_Function</a>
 </td>
 </tr>
 </table>
@@ -198,12 +184,12 @@ NDIS_STATUS NdisAllocateCloneOidRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis--ndis-oid-request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561845">NdisFreeCloneOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisfreecloneoidrequest.md">NdisFreeCloneOidRequest</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateCloneOidRequest function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateCloneOidRequest function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

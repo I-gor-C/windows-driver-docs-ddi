@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>A current Windows Image File (WIM) data source is updated with a new WIM file using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn632445">FSCTL_UPDATE_OVERLAY</a> control request with a <b>WIM_PROVIDER_UPDATE_OVERLAY_INPUT</b> structure.</p>
+<p>A current Windows Image File (WIM) data source is updated with a new WIM file using the <a href="ifsk.fsctl_update_overlay">FSCTL_UPDATE_OVERLAY</a> control request with a <b>WIM_PROVIDER_UPDATE_OVERLAY_INPUT</b> structure.</p>
 
 
 ## -syntax
@@ -76,7 +76,7 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 </dl>
 
 ## -remarks
-<p>The WIM file name is included immediately following <b>WIM_PROVIDER_UPDATE_OVERLAY_INPUT</b> in the system buffer for a <a href="https://msdn.microsoft.com/library/windows/hardware/dn632445">FSCTL_UPDATE_OVERLAY</a> control request. The <b>WimFileNameOffset</b> member is set to <b>sizeof</b>(<b>WIM_PROVIDER_UPDATE_OVERLAY_INPUT</b>).</p>
+<p>The WIM file name is included immediately following <b>WIM_PROVIDER_UPDATE_OVERLAY_INPUT</b> in the system buffer for a <a href="ifsk.fsctl_update_overlay">FSCTL_UPDATE_OVERLAY</a> control request. The <b>WimFileNameOffset</b> member is set to <b>sizeof</b>(<b>WIM_PROVIDER_UPDATE_OVERLAY_INPUT</b>).</p>
 
 <p>The WIM file name includes a terminating NULL character. <b>WimFileNameLength</b> contains the length of the file name excluding the terminating NULL.</p>
 
@@ -105,16 +105,16 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632445">FSCTL_UPDATE_OVERLAY</a>
+<a href="ifsk.fsctl_update_overlay">FSCTL_UPDATE_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632437">FSCTL_ADD_OVERLAY</a>
+<a href="ifsk.fsctl_add_overlay">FSCTL_ADD_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632442">FSCTL_REMOVE_OVERLAY</a>
+<a href="ifsk.fsctl_remove_overlay">FSCTL_REMOVE_OVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426735">FSCTL_SUSPEND_OVERLAY</a>
+<a href="ifsk.fsctl_suspend_overlay">FSCTL_SUSPEND_OVERLAY</a>
 </dt>
 </dl>
 <p> </p>

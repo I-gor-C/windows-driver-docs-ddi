@@ -210,10 +210,10 @@ typedef enum _DXGKMDT_OPM_PROTECTION_STANDARD {
 <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-get-information.md">DxgkDdiOPMGetInformation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560830">DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-acp-and-cgmsa-signaling.md">DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560913">DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-set-acp-and-cgmsa-signaling-parameters.md">DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

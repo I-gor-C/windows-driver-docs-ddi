@@ -132,7 +132,7 @@ typedef struct DXGI_DDI_ARG_BLT_FLAGS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557447">DXGI_DDI_ARG_BLT</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi-ddi-arg-blt.md">DXGI_DDI_ARG_BLT</a>
 </dt>
 </dl>
 <p> </p>

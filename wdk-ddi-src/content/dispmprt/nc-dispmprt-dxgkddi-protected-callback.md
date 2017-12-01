@@ -98,20 +98,6 @@ VOID DxgkProtectedCallback(
 
 <p>The adapter, including its registers and display mode, is maintained in the proper state to handle the DMA buffer that occurs on the return from the <i>DxgkProtectedCallback</i> routine. The driver should not change the visible state or capabilities of any application.</p>
 
-<p><i>DxgkProtectedCallback</i> must be called only when all access to the display adapter has been halted, as indicated by the status parameter <i>ProtectionStatus.</i></p>
-
-<p>The driver must ensure that following conditions are met during the callback routine:</p>
-
-<p>All interrupts on the device are disabled, and any remaining pending interrupts are handled, including any DPCs that may have been queued on any CPU but not yet serviced.</p>
-
-<p>All write-combined memory and any other cache-related states have been flushed.</p>
-
-<p>Any ACPI or BIOS/SMI events that occur do not access the hardware.</p>
-
-<p>Coherency is achieved between all adapters in a linked-adapter state configuration.</p>
-
-<p>The adapter, including its registers and display mode, is maintained in the proper state to handle the DMA buffer that occurs on the return from the <i>DxgkProtectedCallback</i> routine. The driver should not change the visible state or capabilities of any application.</p>
-
 ## -requirements
 <table>
 <tr>

@@ -107,16 +107,6 @@ DWORD GetPrintProcessorCapabilities(
 
 <p>The specified return value becomes the return value that the spooler provides for <b>GetPrinterData</b>.</p>
 
-<p>Print processors can optionally export a <b>GetPrintProcessorCapabilities</b> function. The function's purpose is to return a filled-in PRINTPROCESSOR_CAPS_1 or PRINTPROCESSOR_CAPS_2 structure for every input data type that the print processor supports.</p>
-
-<p>The spooler calls a print processor's <b>GetPrintProcessorCapabilities</b> function when an application calls <b>GetPrinterData</b> (described in the Windows SDK documentation), specifying a value name with a format of PrintProcCaps_<i>datatype</i>, where <i>datatype</i> is the name of an input data type. Before calling <b>GetPrintProcessorCapabilities,</b> the spooler removes the PrintProcCaps_ prefix from the value name string.</p>
-
-<p>The function should determine if the received buffer is large enough and, if it is, should fill in either the PRINTPROCESSOR_CAPS_1 or PRINTPROCESSOR_CAPS_2 structure (defined in the Windows SDK documentation) and return. The value of <i>nSize</i> determines whether PRINTPROCESSOR_CAPS_1 or PRINTPROCESSOR_CAPS_2 will be used.</p>
-
-<p>The function should always use the location pointed to by <i>pcbNeeded</i> to return the required buffer size, whether or not the actual buffer is large enough.</p>
-
-<p>The specified return value becomes the return value that the spooler provides for <b>GetPrinterData</b>.</p>
-
 ## -requirements
 <table>
 <tr>

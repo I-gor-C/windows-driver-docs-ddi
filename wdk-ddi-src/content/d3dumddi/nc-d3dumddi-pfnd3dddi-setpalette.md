@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetPalette(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543327">D3DDDIARG_SETPALETTE</a> structure that describes the parameters for the set-palette operation.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setpalette.md">D3DDDIARG_SETPALETTE</a> structure that describes the parameters for the set-palette operation.</p>
 </dd>
 </dl>
 
@@ -75,9 +75,7 @@ __checkReturn HRESULT APIENTRY SetPalette(
 <p><i>SetPalette</i> returns S_OK or an appropriate error result if the palette is not successfully associated with the texture.</p>
 
 ## -remarks
-<p>The user-mode display driver uses the members in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543327">D3DDDIARG_SETPALETTE</a> structure that is pointed to by <i>pData</i> to map an association between a palette handle and a surface handle and to specify the characteristics of the palette.</p>
-
-<p>The user-mode display driver uses the members in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543327">D3DDDIARG_SETPALETTE</a> structure that is pointed to by <i>pData</i> to map an association between a palette handle and a surface handle and to specify the characteristics of the palette.</p>
+<p>The user-mode display driver uses the members in the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setpalette.md">D3DDDIARG_SETPALETTE</a> structure that is pointed to by <i>pData</i> to map an association between a palette handle and a surface handle and to specify the characteristics of the palette.</p>
 
 ## -requirements
 <table>
@@ -114,10 +112,10 @@ __checkReturn HRESULT APIENTRY SetPalette(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543327">D3DDDIARG_SETPALETTE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-setpalette.md">D3DDDIARG_SETPALETTE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

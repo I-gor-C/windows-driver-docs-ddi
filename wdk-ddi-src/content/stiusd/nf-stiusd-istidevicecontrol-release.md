@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>IStiDeviceControl::Release</b> method closes the instance of the COM object that was created when a minidriver client called <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a>.</p>
+<p>The <b>IStiDeviceControl::Release</b> method closes the instance of the COM object that was created when a minidriver client called <a href="image.istiusd_initialize">IStiUSD::Initialize</a>.</p>
 
 
 ## -syntax
@@ -63,19 +63,7 @@ HRESULT Release();
 ## -remarks
 <p>The <b>IStiDeviceControl::Release</b> method should be called from within the destructor function of a user-mode still image minidriver's <b>IStiUSD</b> interface. (For more information, see <a href="NULL">Creating a User-Mode Still Image Minidriver</a>.)</p>
 
-<p>A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as input to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a> method.</p>
-
-<p>The <b>IStiDeviceControl::Release</b> method should be called from within the destructor function of a user-mode still image minidriver's <b>IStiUSD</b> interface. (For more information, see <a href="NULL">Creating a User-Mode Still Image Minidriver</a>.)</p>
-
-<p>A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as input to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a> method.</p>
-
-<p>The <b>IStiDeviceControl::Release</b> method should be called from within the destructor function of a user-mode still image minidriver's <b>IStiUSD</b> interface. (For more information, see <a href="NULL">Creating a User-Mode Still Image Minidriver</a>.)</p>
-
-<p>A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as input to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a> method.</p>
-
-<p>The <b>IStiDeviceControl::Release</b> method should be called from within the destructor function of a user-mode still image minidriver's <b>IStiUSD</b> interface. (For more information, see <a href="NULL">Creating a User-Mode Still Image Minidriver</a>.)</p>
-
-<p>A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as input to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a> method.</p>
+<p>A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as input to its <a href="image.istiusd_initialize">IStiUSD::Initialize</a> method.</p>
 
 ## -requirements
 <table>
@@ -104,7 +92,7 @@ HRESULT Release();
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542933">IStiDeviceControl::AddRef</a>
+<a href="image.istidevicecontrol_addref">IStiDeviceControl::AddRef</a>
 </dt>
 </dl>
 <p> </p>

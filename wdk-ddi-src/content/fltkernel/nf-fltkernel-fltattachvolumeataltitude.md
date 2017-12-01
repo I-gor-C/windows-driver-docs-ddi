@@ -73,13 +73,13 @@ NTSTATUS FltAttachVolumeAtAltitude(
 ### -param <i>Altitude</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure containing the altitude string for the instance. This parameter is required and cannot be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) </p>
+<p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure containing the altitude string for the instance. This parameter is required and cannot be <b>NULL</b>. (For more information about this parameter, see the following Remarks section.) </p>
 </dd>
 
 ### -param <i>InstanceName</i> [in, optional]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure containing the instance name for the new instance. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltAttachVolumeAtAltitude</b> generates an instance name from the minifilter driver name and the altitude string that <i>Altitude </i>points to. The generated name is truncated, if necessary, to INSTANCE_NAME_MAX_CHARS characters. </p>
+<p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure containing the instance name for the new instance. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltAttachVolumeAtAltitude</b> generates an instance name from the minifilter driver name and the altitude string that <i>Altitude </i>points to. The generated name is truncated, if necessary, to INSTANCE_NAME_MAX_CHARS characters. </p>
 </dd>
 
 ### -param <i>RetInstance</i> [out, optional]
@@ -94,7 +94,7 @@ NTSTATUS FltAttachVolumeAtAltitude(
 <dt><b>STATUS_FLT_DELETING_OBJECT</b></dt>
 </dl><p>The specified <i>Filter</i> or <i>Volume</i> is being torn down. This is an error code. </p><dl>
 <dt><b>STATUS_FLT_FILTER_NOT_READY</b></dt>
-</dl><p>The minifilter driver has not started filtering. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544569">FltStartFiltering</a>. This is an error code. </p><dl>
+</dl><p>The minifilter driver has not started filtering. For more information, see <a href="..\fltkernel\nf-fltkernel-fltstartfiltering.md">FltStartFiltering</a>. This is an error code. </p><dl>
 <dt><b>STATUS_FLT_INSTANCE_ALTITUDE_COLLISION</b></dt>
 </dl><p>An instance already exists at this altitude on the volume specified. This is an error code. </p><dl>
 <dt><b>STATUS_FLT_INSTANCE_NAME_COLLISION</b></dt>
@@ -109,7 +109,7 @@ NTSTATUS FltAttachVolumeAtAltitude(
 ## -remarks
 <p>A minifilter driver should only use <b>FltAttachVolumeAtAltitude</b> for debugging. It should not call this routine in a retail version of the minifilter driver. </p>
 
-<p><b>FltAttachVolumeAtAltitude</b> is the kernel equivalent of the Win32 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540448">FilterAttachAtAltitude</a> function. </p>
+<p><b>FltAttachVolumeAtAltitude</b> is the kernel equivalent of the Win32 <a href="ifsk.filterattachataltitude">FilterAttachAtAltitude</a> function. </p>
 
 <p>The term "altitude" refers to the position that an instance occupies (or should occupy) in the minifilter driver instance stack for a volume. The higher the altitude, the farther the instance is from the base file system in the stack. Only one instance can be attached at a given altitude on a given volume. </p>
 
@@ -121,31 +121,11 @@ NTSTATUS FltAttachVolumeAtAltitude(
 
 <p><b>FltAttachVolumeAtAltitude</b> returns an opaque instance pointer for the new instance in <i>*RetInstance</i>. This pointer value uniquely identifies the minifilter driver instance and remains constant as long as the instance is attached to the volume. </p>
 
-<p><b>FltAttachVolumeAtAltitude</b> adds a rundown reference to the opaque instance pointer returned in <i>*RetInstance</i>. When this pointer is no longer needed, the caller must release it by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543378">FltObjectDereference</a>. Thus every successful call to <b>FltAttachVolumeAtAltitude</b> must be matched by a subsequent call to <b>FltObjectDereference</b>. </p>
+<p><b>FltAttachVolumeAtAltitude</b> adds a rundown reference to the opaque instance pointer returned in <i>*RetInstance</i>. When this pointer is no longer needed, the caller must release it by calling <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>. Thus every successful call to <b>FltAttachVolumeAtAltitude</b> must be matched by a subsequent call to <b>FltObjectDereference</b>. </p>
 
-<p>To compare the altitudes of two minifilter driver instances attached to the same volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541889">FltCompareInstanceAltitudes</a>. </p>
+<p>To compare the altitudes of two minifilter driver instances attached to the same volume, call <a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>. </p>
 
-<p>To detach a minifilter driver instance from a volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff542041">FltDetachVolume</a>. </p>
-
-<p>A minifilter driver should only use <b>FltAttachVolumeAtAltitude</b> for debugging. It should not call this routine in a retail version of the minifilter driver. </p>
-
-<p><b>FltAttachVolumeAtAltitude</b> is the kernel equivalent of the Win32 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540448">FilterAttachAtAltitude</a> function. </p>
-
-<p>The term "altitude" refers to the position that an instance occupies (or should occupy) in the minifilter driver instance stack for a volume. The higher the altitude, the farther the instance is from the base file system in the stack. Only one instance can be attached at a given altitude on a given volume. </p>
-
-<p>Altitude is specified by an <i>altitude string</i>, which is a wide-character array containing one or more decimal digits from 0 through 9; the array can include a single decimal point. For example, "100.123456" and "03333" are valid altitude strings. </p>
-
-<p>The string "03333" represents a higher altitude than "100.123456" (Leading and trailing zeros are ignored.) In other words, an instance whose altitude is "03333" is farther from the base file system than an instance whose altitude is "100.123456". However, this comparison is only meaningful if both instances are attached to the same volume. </p>
-
-<p>The instance name specified in the <i>InstanceName</i> parameter is required to be unique across the system. </p>
-
-<p><b>FltAttachVolumeAtAltitude</b> returns an opaque instance pointer for the new instance in <i>*RetInstance</i>. This pointer value uniquely identifies the minifilter driver instance and remains constant as long as the instance is attached to the volume. </p>
-
-<p><b>FltAttachVolumeAtAltitude</b> adds a rundown reference to the opaque instance pointer returned in <i>*RetInstance</i>. When this pointer is no longer needed, the caller must release it by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543378">FltObjectDereference</a>. Thus every successful call to <b>FltAttachVolumeAtAltitude</b> must be matched by a subsequent call to <b>FltObjectDereference</b>. </p>
-
-<p>To compare the altitudes of two minifilter driver instances attached to the same volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541889">FltCompareInstanceAltitudes</a>. </p>
-
-<p>To detach a minifilter driver instance from a volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff542041">FltDetachVolume</a>. </p>
+<p>To detach a minifilter driver instance from a volume, call <a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>. </p>
 
 ## -requirements
 <table>
@@ -192,28 +172,28 @@ NTSTATUS FltAttachVolumeAtAltitude(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540448">FilterAttachAtAltitude</a>
+<a href="ifsk.filterattachataltitude">FilterAttachAtAltitude</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541772">FltAttachVolume</a>
+<a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541889">FltCompareInstanceAltitudes</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542041">FltDetachVolume</a>
+<a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543239">FltGetVolumeInstanceFromName</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeinstancefromname.md">FltGetVolumeInstanceFromName</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543378">FltObjectDereference</a>
+<a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544569">FltStartFiltering</a>
+<a href="..\fltkernel\nf-fltkernel-fltstartfiltering.md">FltStartFiltering</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>

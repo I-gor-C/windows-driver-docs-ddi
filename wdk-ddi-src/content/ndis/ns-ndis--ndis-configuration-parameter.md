@@ -7,7 +7,7 @@ old-location: netvista\ndis_configuration_parameter.htm
 old-project: netvista
 ms.assetid: 80250799-4263-43c0-85d5-f1c1c1fb0bae
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_CONFIGURATION_PARAMETER, NDIS_CONFIGURATION_PARAMETER, *PNDIS_CONFIGURATION_PARAMETER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Windows
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers in Windows Vista. Supported for NDIS
-   5.1 drivers in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers in Windows Vista. Supported for NDIS   5.1 drivers in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -65,10 +64,10 @@ typedef struct _NDIS_CONFIGURATION_PARAMETER {
 
 <dd>
 <p>The type of the parameter specified as one of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566740">NDIS_PARAMETER_TYPE</a> enumeration values. 
+     <a href="..\ndis\ne-ndis--ndis-parameter-type.md">NDIS_PARAMETER_TYPE</a> enumeration values. 
      </p>
 <p>For successful calls to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564511">NdisReadConfiguration</a> function, the
+     <a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a> function, the
      
      <b>ParameterType</b> value matches the value at the 
      <i>ParameterType</i> parameter. However, when the 
@@ -85,7 +84,7 @@ typedef struct _NDIS_CONFIGURATION_PARAMETER {
       member is an NDIS_STRING type describing a counted string in the system-default character set. For
       Microsoft Windows 2000 and later drivers, such a string contains Unicode characters. That is, for
       Windows 2000 and later, NDIS defines the NDIS_STRING type as a 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> type.</p>
+      <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> type.</p>
 <p>This union contains the following members:</p>
 <dl>
 
@@ -111,7 +110,7 @@ typedef struct _NDIS_CONFIGURATION_PARAMETER {
 
 <dd>
 <p>A 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff543838">BINARY_DATA</a> structure that is used when the 
+      <a href="..\ndis\ns-ndis-binary-data.md">BINARY_DATA</a> structure that is used when the 
       <b>ParameterType</b> member is set to 
       <b>NdisParameterBinary</b>.</p>
 </dd>
@@ -121,13 +120,13 @@ typedef struct _NDIS_CONFIGURATION_PARAMETER {
 
 ## -remarks
 <p>To read parameters in the registry, an NDIS driver can call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564511">NdisReadConfiguration</a> function. If
+    <a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a> function. If
     the call is successful, NDIS returns a pointer to an NDIS_CONFIGURATION_PARAMETER structure at the 
     <i>ParameterValue</i> parameter of 
     <b>NdisReadConfiguration</b>.</p>
 
 <p>To write parameters to the registry, an NDIS driver can call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564659">NdisWriteConfiguration</a> function. In
+    <a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a> function. In
     this case, the driver initializes an NDIS_CONFIGURATION_PARAMETER structure and passes it at the 
     <i>ParameterValue</i> parameter of 
     <b>NdisWriteConfiguration</b>.</p>
@@ -158,21 +157,21 @@ typedef struct _NDIS_CONFIGURATION_PARAMETER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543838">BINARY_DATA</a>
+<a href="..\ndis\ns-ndis-binary-data.md">BINARY_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566740">NDIS_PARAMETER_TYPE</a>
+<a href="..\ndis\ne-ndis--ndis-parameter-type.md">NDIS_PARAMETER_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564511">NdisReadConfiguration</a>
+<a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564659">NdisWriteConfiguration</a>
+<a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CONFIGURATION_PARAMETER structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CONFIGURATION_PARAMETER structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

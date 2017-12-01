@@ -7,7 +7,7 @@ old-location: audio\pcdestroycontent.htm
 old-project: audio
 ms.assetid: 742ee83c-3db4-4d77-a79d-28bcc405746d
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PcDestroyContent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>PcDestroyContent</b> function deletes a DRM content ID that was created by <a href="https://msdn.microsoft.com/library/windows/hardware/ff537689">PcCreateContentMixed</a>. Note that this function call is identical in operation to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536349">DrmDestroyContent</a> function, and its parameter definitions and return value are also identical.</p>
+<p>The <b>PcDestroyContent</b> function deletes a DRM content ID that was created by <a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a>. Note that this function call is identical in operation to the <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a> function, and its parameter definitions and return value are also identical.</p>
 
 
 ## -syntax
@@ -53,20 +53,14 @@ PORTCLASSAPI NTSTATUS NTAPI  PcDestroyContent(void);
 
 
 ## -returns
-<p>See return value definition in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536349">DrmDestroyContent</a>.</p>
+<p>See return value definition in <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>.</p>
 
-<p>See return value definition in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536349">DrmDestroyContent</a>.</p>
+<p>See return value definition in <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>.</p>
 
-<p>See return value definition in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536349">DrmDestroyContent</a>.</p>
+<p>See return value definition in <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>.</p>
 
 ## -remarks
-<p>For more information, see the comments in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536349">DrmDestroyContent</a>.</p>
-
-<p>For more information, see the comments in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536349">DrmDestroyContent</a>.</p>
-
-<p>For more information, see the comments in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536349">DrmDestroyContent</a>.</p>
-
-<p>For more information, see the comments in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536349">DrmDestroyContent</a>.</p>
+<p>For more information, see the comments in <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>.</p>
 
 ## -requirements
 <table>
@@ -113,12 +107,12 @@ PORTCLASSAPI NTSTATUS NTAPI  PcDestroyContent(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537689">PcCreateContentMixed</a>
+<a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536349">DrmDestroyContent</a>
+<a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcDestroyContent function%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PcDestroyContent function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

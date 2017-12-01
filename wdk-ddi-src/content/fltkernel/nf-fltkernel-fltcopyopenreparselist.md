@@ -131,7 +131,7 @@ NTSTATUS FltAddOpenReparseEntry(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt734259">FltFreeOpenReparseList</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeopenreparselist.md">FltFreeOpenReparseList</a>
 </dt>
 </dl>
 <p> </p>

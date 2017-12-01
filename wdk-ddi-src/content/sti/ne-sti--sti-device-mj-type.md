@@ -87,10 +87,6 @@ typedef enum _STI_DEVICE_MJ_TYPE {
 ## -remarks
 <p>The following macros are used to extract the major device type and subtype:</p>
 
-<p>The following macros are used to extract the major device type and subtype:</p>
-
-<p>The following macros are used to extract the major device type and subtype:</p>
-
 ## -requirements
 <table>
 <tr>

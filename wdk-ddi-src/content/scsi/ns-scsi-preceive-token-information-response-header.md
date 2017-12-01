@@ -70,7 +70,7 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER {
 </dl>
 
 ## -remarks
-<p>The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure is included with a <a href="https://msdn.microsoft.com/library/windows/hardware/hh967731">RECEIVE_TOKEN_INFORMATION_HEADER</a>structure  as a response to a POPULATE TOKEN command. The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure follows the <b>SenseData</b> member of <b>RECEIVE_TOKEN_INFORMATION_HEADER</b>.</p>
+<p>The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure is included with a <a href="storage.receive_token_information_header">RECEIVE_TOKEN_INFORMATION_HEADER</a>structure  as a response to a POPULATE TOKEN command. The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure follows the <b>SenseData</b> member of <b>RECEIVE_TOKEN_INFORMATION_HEADER</b>.</p>
 
 <p>All multibyte values are in big endian format. Prior to evaluation, these values must be converted to match the endian format of the current platform.</p>
 
@@ -99,10 +99,10 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967730">POPULATE_TOKEN_HEADER</a>
+<a href="storage.populate_token_header">POPULATE_TOKEN_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967731">RECEIVE_TOKEN_INFORMATION_HEADER</a>
+<a href="storage.receive_token_information_header">RECEIVE_TOKEN_INFORMATION_HEADER</a>
 </dt>
 </dl>
 <p> </p>

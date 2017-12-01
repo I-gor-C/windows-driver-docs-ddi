@@ -7,7 +7,7 @@ old-location: netvista\rilimshandoverattempt_2.htm
 old-project: netvista
 ms.assetid: de56a241-10a3-4f9c-970c-433ab997612d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILIMSHANDOVERATTEMPT,
 ms.prod: windows-hardware
 ms.technology: windows-devices

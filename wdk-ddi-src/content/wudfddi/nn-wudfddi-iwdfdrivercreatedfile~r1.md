@@ -7,7 +7,7 @@ old-location: wdf\iwdfdrivercreatedfile.htm
 old-project: wdf
 ms.assetid: ea74a539-d0a0-41ea-9fe1-8d7880a4187d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,11 +45,11 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDriverCreatedFile</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a>. <b>IWDFDriverCreatedFile</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDriverCreatedFile</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>. <b>IWDFDriverCreatedFile</b> also has these types of members:</p>
 
 <p>The <b>IWDFDriverCreatedFile</b> interface has these methods.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451151">Close</a> method closes an instance of a UMDF driver-created-file object that was created by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558828">IWDFDevice::CreateWdfFile</a> method.</p>
+<p>The <a href="wdf.iwdfdrivercreatedfile_close">Close</a> method closes an instance of a UMDF driver-created-file object that was created by calling the <a href="wdf.iwdfdevice_createwdffile">IWDFDevice::CreateWdfFile</a> method.</p>
 
 <p> </p>
 
@@ -61,20 +61,18 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558897">IWDFDriverCreatedFile::Close</a>
+<a href="wdf.iwdfdrivercreatedfile_close">IWDFDriverCreatedFile::Close</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451151">Close</a> method closes an instance of a UMDF driver-created-file object that was created by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558828">IWDFDevice::CreateWdfFile</a> method.</p>
+<p>The <a href="wdf.iwdfdrivercreatedfile_close">Close</a> method closes an instance of a UMDF driver-created-file object that was created by calling the <a href="wdf.iwdfdevice_createwdffile">IWDFDevice::CreateWdfFile</a> method.</p>
 </td>
 </tr>
-</table><p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451151">Close</a> method closes an instance of a UMDF driver-created-file object that was created by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558828">IWDFDevice::CreateWdfFile</a> method.</p>
+</table><p>The <a href="wdf.iwdfdrivercreatedfile_close">Close</a> method closes an instance of a UMDF driver-created-file object that was created by calling the <a href="wdf.iwdfdevice_createwdffile">IWDFDevice::CreateWdfFile</a> method.</p>
 
 <p> </p>
 
 ## -remarks
-<p>The driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558828">IWDFDevice::CreateWdfFile</a> method to receive a pointer to a <b>IWDFDriverCreatedFile</b> interface.</p>
-
-<p>The driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558828">IWDFDevice::CreateWdfFile</a> method to receive a pointer to a <b>IWDFDriverCreatedFile</b> interface.</p>
+<p>The driver can call the <a href="wdf.iwdfdevice_createwdffile">IWDFDevice::CreateWdfFile</a> method to receive a pointer to a <b>IWDFDriverCreatedFile</b> interface.</p>
 
 ## -requirements
 <table>

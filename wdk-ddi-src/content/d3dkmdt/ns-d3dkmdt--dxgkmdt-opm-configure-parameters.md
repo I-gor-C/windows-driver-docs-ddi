@@ -61,7 +61,7 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 ### -field <b>omac</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560887">DXGKMDT_OPM_OMAC</a> structure that contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity. For more information about OMAC, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70417">OMAC-1 algorithm</a>. The OMAC-1 parameters that OPM and COPP use are:</p>
+<p>A <a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-omac.md">DXGKMDT_OPM_OMAC</a> structure that contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity. For more information about OMAC, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70417">OMAC-1 algorithm</a>. The OMAC-1 parameters that OPM and COPP use are:</p>
 <p><i>E</i> = AES (Advanced Encryption Standard)</p>
 <p><i>t</i> = 128 bits</p>
 <p><i>K</i> = The 128-bit key the display miniport driver receives when <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-set-signing-key-and-sequence-numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> is called.</p>
@@ -117,7 +117,7 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560921">DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-set-protection-level-parameters.md">DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS</a>
 </p>
 </dd>
 
@@ -126,7 +126,7 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560913">DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-set-acp-and-cgmsa-signaling-parameters.md">DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS</a>
 </p>
 </dd>
 
@@ -135,7 +135,7 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 
 <dd>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560915">DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-set-hdcp-srm-parameters.md">DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS</a>
 </p>
 </dd>
 </dl>
@@ -176,16 +176,16 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-set-signing-key-and-sequence-numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560913">DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-set-acp-and-cgmsa-signaling-parameters.md">DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560915">DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-set-hdcp-srm-parameters.md">DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560921">DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-set-protection-level-parameters.md">DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560887">DXGKMDT_OPM_OMAC</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgkmdt-opm-omac.md">DXGKMDT_OPM_OMAC</a>
 </dt>
 </dl>
 <p> </p>

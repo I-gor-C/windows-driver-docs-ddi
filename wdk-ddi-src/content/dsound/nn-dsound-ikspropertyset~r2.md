@@ -7,7 +7,7 @@ old-location: stream\ikspropertyset.htm
 old-project: stream
 ms.assetid: 9999d6ec-977c-4425-ad38-0c5478272c76
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IKsPropertySet, Set, IKsPropertySet::Set
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,7 +88,7 @@ req.iface: IKsPropertySet
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983411">Get</a>
+<a href="stream.ikspropertyset_get">Get</a>
 </td>
 <td align="left" width="63%">
 <p>Retrieves a property.</p>
@@ -104,7 +104,7 @@ req.iface: IKsPropertySet
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544503">Set</a>
+<a href="stream.ikspropertyset_set">Set</a>
 </td>
 <td align="left" width="63%">
 <p>Sets a property.</p>
@@ -119,18 +119,6 @@ req.iface: IKsPropertySet
 <p> </p>
 
 ## -remarks
-<p>The <b>IKsPropertySet</b> interface methods translate user-mode property requests into kernel-mode property sets that are used by KS minidrivers. </p>
-
-<p>KS objects include, for example, KS filters, KS pins, and KS clocks. </p>
-
-<p>The <b>IKsPropertySet</b> interface methods translate user-mode property requests into kernel-mode property sets that are used by KS minidrivers. </p>
-
-<p>KS objects include, for example, KS filters, KS pins, and KS clocks. </p>
-
-<p>The <b>IKsPropertySet</b> interface methods translate user-mode property requests into kernel-mode property sets that are used by KS minidrivers. </p>
-
-<p>KS objects include, for example, KS filters, KS pins, and KS clocks. </p>
-
 <p>The <b>IKsPropertySet</b> interface methods translate user-mode property requests into kernel-mode property sets that are used by KS minidrivers. </p>
 
 <p>KS objects include, for example, KS filters, KS pins, and KS clocks. </p>

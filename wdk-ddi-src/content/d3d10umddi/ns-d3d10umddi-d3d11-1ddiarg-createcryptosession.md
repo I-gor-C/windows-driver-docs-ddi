@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Specifies the attributes of the cryptographic session to be created by the user-mode driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function.</p>
+<p>Specifies the attributes of the cryptographic session to be created by the user-mode driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function.</p>
 
 
 ## -syntax
@@ -59,7 +59,7 @@ typedef struct D3D11_1DDIARG_CREATECRYPTOSESSION {
 ### -field <b>CryptoType</b>
 
 <dd>
-<p>a GUID that indicates the encryption type, which the driver uses for the encryption session that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function creates. The GUID can be one of the following:</p>
+<p>a GUID that indicates the encryption type, which the driver uses for the encryption session that the driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function creates. The GUID can be one of the following:</p>
 <table>
 <tr>
 <th>Value</th>
@@ -94,7 +94,7 @@ typedef struct D3D11_1DDIARG_CREATECRYPTOSESSION {
 ### -field <b>DecodeProfile</b>
 
 <dd>
-<p>A GUID that specifies the DirectX Video Acceleration (DXVA) decode profile that the driver uses for the encryption session that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function creates. For a list of possible values, see <b>CreateCryptoSession</b>. If DXVA decoding will not be used, set this parameter to <b>NULL_GUID</b>.</p>
+<p>A GUID that specifies the DirectX Video Acceleration (DXVA) decode profile that the driver uses for the encryption session that the driver's <a href="display.createcryptosession1">CreateCryptoSession</a> function creates. For a list of possible values, see <b>CreateCryptoSession</b>. If DXVA decoding will not be used, set this parameter to <b>NULL_GUID</b>.</p>
 </dd>
 
 ### -field <b>KeyExchangeType</b>
@@ -132,10 +132,10 @@ The following GUID is defined.</p>
 <p>When this GUID is specified, the following DDIs should not be called for the crypto session:</p>
 <ul>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451654">GetCertificateSize</a>
+<a href="display.getcertificatesize">GetCertificateSize</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451652">GetCertificate</a>
+<a href="display.getcertificate">GetCertificate</a>
 </li>
 <li>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-encryptionblt.md">EncryptionBlt</a>
@@ -144,17 +144,17 @@ The following GUID is defined.</p>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decryptionblt.md">DecryptionBlt</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451696">StartSessionKeyRefresh</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-startsessionkeyrefresh.md">StartSessionKeyRefresh</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451648">FinishSessionKeyRefresh</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-finishsessionkeyrefresh.md">FinishSessionKeyRefresh</a>
 </li>
 <li>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451660">GetEncryptionBltKey</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-getencryptionbltkey.md">GetEncryptionBltKey</a>
 </li>
 </ul>
 <p>
-The DRM commands are sent to the user mode driver by calling the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-negotiatecryptosessionkeyeschange.md">NegotiateCryptoSessionKeyExchange</a> function where the data passed is a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn894610">D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_DATA</a> structure.
+The DRM commands are sent to the user mode driver by calling the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-negotiatecryptosessionkeyeschange.md">NegotiateCryptoSessionKeyExchange</a> function where the data passed is a pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2-0ddi-key-exchange-hw-protection-data.md">D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION_DATA</a> structure.
 </p>
 </td>
 </tr>

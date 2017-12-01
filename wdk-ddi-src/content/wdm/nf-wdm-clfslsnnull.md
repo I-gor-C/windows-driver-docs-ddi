@@ -7,7 +7,7 @@ old-location: kernel\clfslsnnull.htm
 old-project: kernel
 ms.assetid: 858fb84a-8df8-4748-ab09-3f7c4aca905c
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: ClfsLsnNull
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ BOOLEAN ClfsLsnNull(
 ### -param <i>plsn</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a> structure that supplies the LSN to be tested.</p>
+<p>A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that supplies the LSN to be tested.</p>
 </dd>
 </dl>
 
@@ -66,8 +66,6 @@ BOOLEAN ClfsLsnNull(
 <p><b>ClfsLsnNull</b> returns <b>TRUE</b> if the LSN supplied by the caller is equal to CLFS_LSN_NULL; otherwise, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>. </p>
-
 <p>For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>. </p>
 
 ## -requirements
@@ -133,15 +131,15 @@ BOOLEAN ClfsLsnNull(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541595">ClfsLsnGreater</a>
+<a href="..\wdm\nf-wdm-clfslsngreater.md">ClfsLsnGreater</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541608">ClfsLsnLess</a>
+<a href="..\wdm\nf-wdm-clfslsnless.md">ClfsLsnLess</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541590">ClfsLsnEqual</a>
+<a href="..\wdm\nf-wdm-clfslsnequal.md">ClfsLsnEqual</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsLsnNull routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsLsnNull routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

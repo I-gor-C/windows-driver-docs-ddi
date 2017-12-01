@@ -129,7 +129,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541216">IOCTL_HID_SET_POLL_FREQUENCY_MSEC</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-set-poll-frequency-msec.md">IOCTL_HID_SET_POLL_FREQUENCY_MSEC</a>
 </dt>
 </dl>
 <p> </p>

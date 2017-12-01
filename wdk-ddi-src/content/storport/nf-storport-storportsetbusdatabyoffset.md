@@ -70,13 +70,13 @@ STORPORT_API ULONG StorPortSetBusDataByOffset(
 ### -param <i>BusDataType</i> [in]
 
 <dd>
-<p>Contains a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff540700">BUS_DATA_TYPE</a> that specifies the type of the bus for which configuration information is to be written. Currently, its value can be <b>PCIConfiguration</b>. However, additional types of standardized, dynamically configurable buses will be supported in future. The upper bound on the bus types supported is always <b>MaximumBusDataType</b>. </p>
+<p>Contains a value of type <a href="..\ntddk\ne-ntddk--bus-data-type.md">BUS_DATA_TYPE</a> that specifies the type of the bus for which configuration information is to be written. Currently, its value can be <b>PCIConfiguration</b>. However, additional types of standardized, dynamically configurable buses will be supported in future. The upper bound on the bus types supported is always <b>MaximumBusDataType</b>. </p>
 </dd>
 
 ### -param <i>SystemIoBusNumber</i> [in]
 
 <dd>
-<p>Specifies the system-assigned number of the I/O bus on which the HBA is connected. The miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine obtains this value from the input <b>PORT_CONFIGURATION_INFORMATION</b><b>SystemIoBusNumber</b> member. </p>
+<p>Specifies the system-assigned number of the I/O bus on which the HBA is connected. The miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine obtains this value from the input <b>PORT_CONFIGURATION_INFORMATION</b><b>SystemIoBusNumber</b> member. </p>
 </dd>
 
 ### -param <i>SlotNumber</i> [in]
@@ -149,7 +149,7 @@ STORPORT_API ULONG StorPortSetBusDataByOffset(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564751">ScsiPortSetBusDataByOffset</a>
+<a href="..\srb\nf-srb-scsiportsetbusdatabyoffset.md">ScsiPortSetBusDataByOffset</a>
 </dt>
 </dl>
 <p> </p>

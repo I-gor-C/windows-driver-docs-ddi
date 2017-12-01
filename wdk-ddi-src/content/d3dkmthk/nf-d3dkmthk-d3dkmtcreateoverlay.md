@@ -57,7 +57,7 @@ NTSTATUS D3DKMTCreateOverlay(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547840">D3DKMT_CREATEOVERLAY</a> structure that describes overlay hardware.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createoverlay.md">D3DKMT_CREATEOVERLAY</a> structure that describes overlay hardware.</p>
 </dd>
 </dl>
 
@@ -71,7 +71,7 @@ NTSTATUS D3DKMTCreateOverlay(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546852">D3DKMTCreateOverlay</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateoverlay.md">D3DKMTCreateOverlay</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
@@ -135,7 +135,7 @@ NTSTATUS D3DKMTCreateOverlay(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547840">D3DKMT_CREATEOVERLAY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createoverlay.md">D3DKMT_CREATEOVERLAY</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: wdf\wdfpredeviceremove.htm
 old-project: wdf
 ms.assetid: 8cde623d-a255-45ff-ab1e-bdd0c14a02a0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfPreDeviceRemove
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,14 +82,6 @@ ULONG WdfPreDeviceRemove(
 
 <p>For a code example that uses the <b>WdfPreDeviceRemove</b> function, see the installer for the <a href="wdf.sample_kmdf_drivers">NONPNP</a> sample.</p>
 
-<p>The installer for the framework-based drivers of a non-PnP device must call <b>WdfPreDeviceRemove</b> before the installer calls <a href="base.deleteservice">DeleteService</a>.</p>
-
-<p>To obtain the address of the co-installer's <b>WdfPreDeviceRemove</b> function, the installer must call <a href="base.getprocaddress">GetProcAddress</a> after the installer has called <a href="base.loadlibrary">LoadLibrary</a> to load the co-installer.</p>
-
-<p>For more information about the <b>WdfPreDeviceRemove</b> function and installers for framework-based drivers of non-PnP devices, see <a href="wdf.installing_a_non_pnp_driver">Installing a Non-PnP Driver</a>. For more information about <a href="base.deleteservice">DeleteService</a>, <a href="base.getprocaddress">GetProcAddress</a>, and <a href="base.loadlibrary">LoadLibrary</a>, see the Microsoft Windows SDK documentation.</p>
-
-<p>For a code example that uses the <b>WdfPreDeviceRemove</b> function, see the installer for the <a href="wdf.sample_kmdf_drivers">NONPNP</a> sample.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -135,9 +127,9 @@ ULONG WdfPreDeviceRemove(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548833">WdfPostDeviceRemove</a>
+<a href="..\wdfinstaller\nf-wdfinstaller-wdfpostdeviceremove.md">WdfPostDeviceRemove</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPreDeviceRemove function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPreDeviceRemove function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

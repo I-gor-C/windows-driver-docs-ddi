@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Contains initial configuration information that is provided by the HID source driver when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/dn925036">VhfCreate</a> to create a virtual HID device.</p>
+<p>Contains initial configuration information that is provided by the HID source driver when it calls <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a> to create a virtual HID device.</p>
 
 
 ## -syntax
@@ -73,7 +73,7 @@ typedef struct _VHF_CONFIG {
 ### -field <b>Size</b>
 
 <dd>
-<p>Required. Size of this structure initialized by <a href="https://msdn.microsoft.com/library/windows/hardware/dn925046">VHF_CONFIG_INIT</a>.</p>
+<p>Required. Size of this structure initialized by <a href="..\vhf\nf-vhf-vhf-config-init.md">VHF_CONFIG_INIT</a>.</p>
 </dd>
 
 ### -field <b>VhfClientContext</b>
@@ -91,7 +91,7 @@ typedef struct _VHF_CONFIG {
 ### -field <b>DeviceObject</b>
 
 <dd>
-<p>Required. A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="https://msdn.microsoft.com/library/windows/hardware/ff546942">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> call. </p>
+<p>Required. A pointer to the <a href="..\wdm\ns-wdm--device-object.md">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetdeviceobject.md">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. </p>
 </dd>
 
 ### -field <b>VendorID</b>
@@ -133,7 +133,7 @@ typedef struct _VHF_CONFIG {
 ### -field <b>EvtVhfReadyForNextReadReport</b>
 
 <dd>
-<p>Optional. A pointer to an <a href="..\vhf\nc-vhf-evt-vhf-ready-for-next-read-report.md">EvtVhfReadyForNextReadReport</a> callback. The HID source driver must implement and register this callback function if it wants to handle the buffering policy for submitting HID Input Reports. If this callback is specified, VHF does not buffer those reports. The HID source driver should submit one report by calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn925040">VhfReadReportSubmit</a>, each time VHF invokes   <i>EvtVhfReadyForNextReadReport</i>.</p>
+<p>Optional. A pointer to an <a href="..\vhf\nc-vhf-evt-vhf-ready-for-next-read-report.md">EvtVhfReadyForNextReadReport</a> callback. The HID source driver must implement and register this callback function if it wants to handle the buffering policy for submitting HID Input Reports. If this callback is specified, VHF does not buffer those reports. The HID source driver should submit one report by calling <a href="..\vhf\nf-vhf-vhfreadreportsubmit.md">VhfReadReportSubmit</a>, each time VHF invokes   <i>EvtVhfReadyForNextReadReport</i>.</p>
 </dd>
 
 ### -field <b>EvtVhfAsyncOperationGetFeature</b>

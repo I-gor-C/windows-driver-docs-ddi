@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvinitadapter.htm
 old-project: netvista
 ms.assetid: 96dc1718-ee35-440a-94e8-eba4a41c9559
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -63,7 +62,7 @@ DWORD APIENTRY Dot11ExtIhvInitAdapter(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547643">DOT11_ADAPTER</a> structure, which identifies the
+     <a href="..\wlclient\ns-wlclient--dot11-adapter.md">DOT11_ADAPTER</a> structure, which identifies the
      adapter to be initialized.</p>
 </dd>
 
@@ -99,13 +98,6 @@ DWORD APIENTRY Dot11ExtIhvInitAdapter(
      Winerror.h.</p>
 
 ## -remarks
-<p>The operating system calls the 
-    <i>Dot11ExtIhvInitAdapter</i> function whenever a WLAN adapter becomes available and enabled for use, such
-    as when a PCMCIA adapter is inserted.</p>
-
-<p>For more information about WLAN adapter initialization, see 
-    <a href="NULL">802.11 WLAN Adapter Arrival</a>.</p>
-
 <p>The operating system calls the 
     <i>Dot11ExtIhvInitAdapter</i> function whenever a WLAN adapter becomes available and enabled for use, such
     as when a PCMCIA adapter is inserted.</p>
@@ -149,7 +141,7 @@ DWORD APIENTRY Dot11ExtIhvInitAdapter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547643">DOT11_ADAPTER</a>
+<a href="..\wlclient\ns-wlclient--dot11-adapter.md">DOT11_ADAPTER</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11ext-pre-associate-completion.md">
@@ -166,4 +158,4 @@ DWORD APIENTRY Dot11ExtIhvInitAdapter(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_INIT_ADAPTER callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_INIT_ADAPTER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

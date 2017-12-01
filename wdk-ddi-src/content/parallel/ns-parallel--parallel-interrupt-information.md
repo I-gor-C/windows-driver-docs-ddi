@@ -72,7 +72,7 @@ typedef struct _PARALLEL_INTERRUPT_INFORMATION {
 ### -field <b>FreePortFromInterruptLevel</b>
 
 <dd>
-<p>Pointer to the system-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff544515">PPARALLEL_FREE_ROUTINE (ISR)</a> callback routine that a kernel-mode driver can use to free the parallel port at IRQL = DIRQL.</p>
+<p>Pointer to the system-supplied <a href="parports.pparallel_free_routine__isr_">PPARALLEL_FREE_ROUTINE (ISR)</a> callback routine that a kernel-mode driver can use to free the parallel port at IRQL = DIRQL.</p>
 </dd>
 
 ### -field <b>Context</b>
@@ -83,7 +83,7 @@ typedef struct _PARALLEL_INTERRUPT_INFORMATION {
 </dl>
 
 ## -remarks
-<p>A kernel-mode driver can use the parallel interrupt information in the context of an interrupt service routine (ISR). A driver connects an ISR using an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544020">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a> request.</p>
+<p>A kernel-mode driver can use the parallel interrupt information in the context of an interrupt service routine (ISR). A driver connects an ISR using an <a href="..\parallel\ni-parallel-ioctl-internal-parallel-connect-interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a> request.</p>
 
 ## -requirements
 <table>
@@ -102,16 +102,16 @@ typedef struct _PARALLEL_INTERRUPT_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544020">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-connect-interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544021">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
+<a href="..\parallel\ni-parallel-ioctl-internal-parallel-disconnect-interrupt.md">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544295">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a>
+<a href="..\parallel\ns-parallel--parallel-interrupt-service-routine.md">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544515">PPARALLEL_FREE_ROUTINE (ISR)</a>
+<a href="parports.pparallel_free_routine__isr_">PPARALLEL_FREE_ROUTINE (ISR)</a>
 </dt>
 <dt>
 <a href="parports.parallel_try_allocate_routine__isr_">PPARALLEL_TRY_ALLOCATE_ROUTINE (ISR)</a>

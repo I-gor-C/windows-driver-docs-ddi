@@ -120,16 +120,6 @@ Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriat
 
 <p>If <i>OutputBuffer</i> is not large enough to contain all of the settings requested, this function should not write anything to <i>OutputBuffer</i>. Additionally, it should set <i>BytesRead</i> to 0 and return an error.</p>
 
-<p>Register your implementation of this callback function by setting the appropriate member of <a href="gpiobtn.hwn_client_registration_packet">HWN_CLIENT_REGISTRATION_PACKET</a> and then calling <a href="..\hwnclx\nf-hwnclx-hwnregisterclient.md">HwNRegisterClient</a>.</p>
-
-<p>If <i>InputBuffer</i> is NULL, the output buffer will be used to store a <a href="gpiobtn.hwn_header">HWN_HEADER</a> structure that contains all of the settings for the hardware notifications implemented by the driver. </p>
-
-<p>The Settings for a hardware notification component are stored in a <a href="gpiobtn.hwn_settings">HWN_SETTINGS</a> structure. The <b>HwNSettingsInfo</b> field of the <a href="gpiobtn.hwn_header">HWN_HEADER</a> structure contains an array of <b>HWN_SETTINGS</b> structures.</p>
-
-<p>If <i>InputBuffer</i> is not null and is correctly formatted, it will contain a <a href="gpiobtn.hwn_header">HWN_HEADER</a> with one or more <a href="gpiobtn.hwn_settings">HWN_SETTINGS</a> structures. The IDs for the requested hardware notification components are stored in the <b>HwNId</b> field of the <b>HWN_SETTINGS</b> structure. The remaining settings should be valid settings or zero.</p>
-
-<p>If <i>OutputBuffer</i> is not large enough to contain all of the settings requested, this function should not write anything to <i>OutputBuffer</i>. Additionally, it should set <i>BytesRead</i> to 0 and return an error.</p>
-
 ## -requirements
 <table>
 <tr>

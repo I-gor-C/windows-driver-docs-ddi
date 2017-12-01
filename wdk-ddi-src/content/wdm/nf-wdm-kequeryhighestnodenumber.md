@@ -7,7 +7,7 @@ old-location: kernel\kequeryhighestnodenumber.htm
 old-project: kernel
 ms.assetid: e92387db-0c35-40c8-8342-4b1bf498aa1a
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: KeQueryHighestNodeNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,36 +61,6 @@ USHORT KeQueryHighestNodeNumber(void);
 <p><b>KeQueryHighestNodeNumber</b> returns the highest node number.</p>
 
 ## -remarks
-<p>In a non-uniform memory access (NUMA) multiprocessor architecture, a node is a collection of processors that share fast access to a region of memory. Memory access is non-uniform because a processor can access the memory in its node faster than it can access the memory in other nodes.</p>
-
-<p>If a NUMA multiprocessor system contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1, and <b>KeQueryHighestNodeNumber</b> returns <i>n</i>-1. If a system contains one node, <b>KeQueryHighestNodeNumber</b> returns zero.</p>
-
-<p>If a system does not have a NUMA architecture, <b>KeQueryHighestNodeNumber</b> returns zero. An example of non-NUMA architecture is a symmetric multiprocessor system (SMP).</p>
-
-<p>When Windows initializes a NUMA multiprocessor system, it assigns logical processors to nodes and counts the number of resulting nodes. Windows defines the capacity of a node as the number of processors that are present when the system starts in addition to any other logical processors that can be added to the node while the system is running. If, during initialization, Windows encounters a NUMA hardware node that contains more logical processors than will fit into a group, Windows splits the node into smaller, logical nodes. Each of these nodes does not exceed the maximum group size. The value that is returned by <b>KeQueryHighestNodeNumber</b> indicates the number of logical nodes in the system.</p>
-
-<p>After the system has been initialized, the node count remains fixed while the system continues to run. This count might include memory-only nodes, which are nodes that contain memory but no active logical processors.</p>
-
-<p>In a non-uniform memory access (NUMA) multiprocessor architecture, a node is a collection of processors that share fast access to a region of memory. Memory access is non-uniform because a processor can access the memory in its node faster than it can access the memory in other nodes.</p>
-
-<p>If a NUMA multiprocessor system contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1, and <b>KeQueryHighestNodeNumber</b> returns <i>n</i>-1. If a system contains one node, <b>KeQueryHighestNodeNumber</b> returns zero.</p>
-
-<p>If a system does not have a NUMA architecture, <b>KeQueryHighestNodeNumber</b> returns zero. An example of non-NUMA architecture is a symmetric multiprocessor system (SMP).</p>
-
-<p>When Windows initializes a NUMA multiprocessor system, it assigns logical processors to nodes and counts the number of resulting nodes. Windows defines the capacity of a node as the number of processors that are present when the system starts in addition to any other logical processors that can be added to the node while the system is running. If, during initialization, Windows encounters a NUMA hardware node that contains more logical processors than will fit into a group, Windows splits the node into smaller, logical nodes. Each of these nodes does not exceed the maximum group size. The value that is returned by <b>KeQueryHighestNodeNumber</b> indicates the number of logical nodes in the system.</p>
-
-<p>After the system has been initialized, the node count remains fixed while the system continues to run. This count might include memory-only nodes, which are nodes that contain memory but no active logical processors.</p>
-
-<p>In a non-uniform memory access (NUMA) multiprocessor architecture, a node is a collection of processors that share fast access to a region of memory. Memory access is non-uniform because a processor can access the memory in its node faster than it can access the memory in other nodes.</p>
-
-<p>If a NUMA multiprocessor system contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1, and <b>KeQueryHighestNodeNumber</b> returns <i>n</i>-1. If a system contains one node, <b>KeQueryHighestNodeNumber</b> returns zero.</p>
-
-<p>If a system does not have a NUMA architecture, <b>KeQueryHighestNodeNumber</b> returns zero. An example of non-NUMA architecture is a symmetric multiprocessor system (SMP).</p>
-
-<p>When Windows initializes a NUMA multiprocessor system, it assigns logical processors to nodes and counts the number of resulting nodes. Windows defines the capacity of a node as the number of processors that are present when the system starts in addition to any other logical processors that can be added to the node while the system is running. If, during initialization, Windows encounters a NUMA hardware node that contains more logical processors than will fit into a group, Windows splits the node into smaller, logical nodes. Each of these nodes does not exceed the maximum group size. The value that is returned by <b>KeQueryHighestNodeNumber</b> indicates the number of logical nodes in the system.</p>
-
-<p>After the system has been initialized, the node count remains fixed while the system continues to run. This count might include memory-only nodes, which are nodes that contain memory but no active logical processors.</p>
-
 <p>In a non-uniform memory access (NUMA) multiprocessor architecture, a node is a collection of processors that share fast access to a region of memory. Memory access is non-uniform because a processor can access the memory in its node faster than it can access the memory in other nodes.</p>
 
 <p>If a NUMA multiprocessor system contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1, and <b>KeQueryHighestNodeNumber</b> returns <i>n</i>-1. If a system contains one node, <b>KeQueryHighestNodeNumber</b> returns zero.</p>

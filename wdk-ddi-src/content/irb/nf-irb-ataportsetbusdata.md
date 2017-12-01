@@ -95,8 +95,6 @@ ULONG AtaPortSetBusData(
 ## -remarks
 <p><b>AtaPortSetBusData</b> completes a bitwise OR, one byte at a time, of the current PCI configuration space data with the new data in <i>Buffer</i>. Only those bits not indicated by <i>DataMask</i> are left untouched. The byte of data that follows <i>ConfigDataOffset</i>, therefore, is updated as follows:</p>
 
-<p><b>AtaPortSetBusData</b> completes a bitwise OR, one byte at a time, of the current PCI configuration space data with the new data in <i>Buffer</i>. Only those bits not indicated by <i>DataMask</i> are left untouched. The byte of data that follows <i>ConfigDataOffset</i>, therefore, is updated as follows:</p>
-
 ## -requirements
 <table>
 <tr>
@@ -134,7 +132,7 @@ ULONG AtaPortSetBusData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550158">AtaPortGetBusData</a>
+<a href="..\irb\nf-irb-ataportgetbusdata.md">AtaPortGetBusData</a>
 </dt>
 </dl>
 <p> </p>

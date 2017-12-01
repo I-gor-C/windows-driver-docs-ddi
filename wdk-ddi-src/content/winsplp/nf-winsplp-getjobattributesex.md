@@ -67,7 +67,7 @@ BOOL GetJobAttributesEx(
 ### -param <i>pDevmode</i> [in]
 
 <dd>
-<p>Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure that is passed to the print processor or printer driver.</p>
+<p>Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure that is passed to the print processor or printer driver.</p>
 </dd>
 
 ### -param <i>dwLevel</i> [in]
@@ -85,7 +85,7 @@ BOOL GetJobAttributesEx(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545090">ATTRIBUTE_INFO_1</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-1.md">ATTRIBUTE_INFO_1</a>
 </p>
 </td>
 </tr>
@@ -95,7 +95,7 @@ BOOL GetJobAttributesEx(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545091">ATTRIBUTE_INFO_2</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-2.md">ATTRIBUTE_INFO_2</a>
 </p>
 </td>
 </tr>
@@ -105,7 +105,7 @@ BOOL GetJobAttributesEx(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-3.md">ATTRIBUTE_INFO_3</a>
 </p>
 </td>
 </tr>
@@ -115,7 +115,7 @@ BOOL GetJobAttributesEx(
 </td>
 <td>
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-4.md">ATTRIBUTE_INFO_4</a>
 </p>
 </td>
 </tr>
@@ -126,7 +126,7 @@ BOOL GetJobAttributesEx(
 ### -param <i>pAttributeInfo</i> [out]
 
 <dd>
-<p>Caller-supplied pointer to an attribute information structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff545090">ATTRIBUTE_INFO_1</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545091">ATTRIBUTE_INFO_2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>) that receives information about the print job.</p>
+<p>Caller-supplied pointer to an attribute information structure (<a href="..\winddiui\ns-winddiui--attribute-info-1.md">ATTRIBUTE_INFO_1</a>, <a href="..\winddiui\ns-winddiui--attribute-info-2.md">ATTRIBUTE_INFO_2</a>, <a href="..\winddiui\ns-winddiui--attribute-info-3.md">ATTRIBUTE_INFO_3</a>, or <a href="..\winddiui\ns-winddiui--attribute-info-4.md">ATTRIBUTE_INFO_4</a>) that receives information about the print job.</p>
 </dd>
 
 ### -param <i>nSize</i> [in]
@@ -139,13 +139,13 @@ BOOL GetJobAttributesEx(
 
 <dd>
 <p>If set by the caller to FILL_WITH_DEFAULTS, then the spooler will fill <i>pAttributeInfo</i> with default values from level 1 up to the level specified by <i>dwLevel</i>.</p>
-<p>For example, if <i>dwLevel</i> is 4 and FILL_WITH_DEFAULTS is specified, <i>pAttributeInfo</i> will be filled with the following default member values of <a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>:</p>
+<p>For example, if <i>dwLevel</i> is 4 and FILL_WITH_DEFAULTS is specified, <i>pAttributeInfo</i> will be filled with the following default member values of <a href="..\winddiui\ns-winddiui--attribute-info-4.md">ATTRIBUTE_INFO_4</a>:</p>
 <p><b>dwJobNumberOfPagesPerSide</b> = 1</p>
 <p><b>dwDrvNumberOfPagesPerSide</b> = 1</p>
 <p><b>dwNupBorderFlags</b> = 0</p>
 <p><b>dwJobPageOrderFlags</b> = 0</p>
 <p><b>dwDrvPageOrderFlags</b> = 0</p>
-<p><b>dwJobNumberOfCopies</b> = <b>dmCopies</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a>
+<p><b>dwJobNumberOfCopies</b> = <b>dmCopies</b> member of <a href="display.devmodew">DEVMODEW</a>
 </p>
 <p><b>dwDrvNumberOfCopies</b>  = <b>dmCopies</b> member of DEVMODEW</p>
 <p><b>dwColorOptimization</b> = 0</p>
@@ -165,8 +165,6 @@ BOOL GetJobAttributesEx(
 <p><b>GetJobAttributesEx</b> returns <b>TRUE</b> if it is successful in obtaining the print job attributes; otherwise, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>This function first checks whether the driver supports the attribute level that is indicated by <i>dwLevel</i>. If the driver does not support that attribute level, then the function queries the driver for support for the next lower level, (<i>dwLevel</i> - 1), and continues to query for progressively lower levels of support until it obtains the level of support provided by the driver. If <i>dwFlags</i> is set to FILL_WITH_DEFAULTS, then the function fills in the default values for the unsupported levels.</p>
-
 <p>This function first checks whether the driver supports the attribute level that is indicated by <i>dwLevel</i>. If the driver does not support that attribute level, then the function queries the driver for support for the next lower level, (<i>dwLevel</i> - 1), and continues to query for progressively lower levels of support until it obtains the level of support provided by the driver. If <i>dwFlags</i> is set to FILL_WITH_DEFAULTS, then the function fills in the default values for the unsupported levels.</p>
 
 ## -requirements
@@ -224,16 +222,16 @@ BOOL GetJobAttributesEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-3.md">ATTRIBUTE_INFO_3</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>
+<a href="..\winddiui\ns-winddiui--attribute-info-4.md">ATTRIBUTE_INFO_4</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a>
+<a href="display.devmodew">DEVMODEW</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550456">GetJobAttributes</a>
+<a href="..\winsplp\nf-winsplp-getjobattributes.md">GetJobAttributes</a>
 </dt>
 </dl>
 <p> </p>

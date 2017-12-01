@@ -75,21 +75,21 @@ typedef struct _D3DKMT_GETPRESENTHISTORY {
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
-<p>[out] The size, in bytes, that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546987">D3DKMTGetPresentHistory</a> function copies to the buffer that the <b>pTokens</b> member points to or the required size for first token. </p>
+<p>[out] The size, in bytes, that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetpresenthistory.md">D3DKMTGetPresentHistory</a> function copies to the buffer that the <b>pTokens</b> member points to or the required size for first token. </p>
 </dd>
 
 ### -field <b>pTokens</b>
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
-<p>[in/out] A pointer to the buffer that receives the tokens. Each token is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548188">D3DKMT_PRESENTHISTORYTOKEN</a> structure. </p>
+<p>[in/out] A pointer to the buffer that receives the tokens. Each token is described by a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a> structure. </p>
 </dd>
 
 ### -field <b>NumTokens</b>
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
-<p>[out] The number of tokens that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546987">D3DKMTGetPresentHistory</a> function copies to the buffer that the <b>pTokens</b> member points to. </p>
+<p>[out] The number of tokens that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetpresenthistory.md">D3DKMTGetPresentHistory</a> function copies to the buffer that the <b>pTokens</b> member points to. </p>
 </dd>
 </dl>
 
@@ -121,10 +121,10 @@ typedef struct _D3DKMT_GETPRESENTHISTORY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548188">D3DKMT_PRESENTHISTORYTOKEN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546987">D3DKMTGetPresentHistory</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetpresenthistory.md">D3DKMTGetPresentHistory</a>
 </dt>
 </dl>
 <p> </p>

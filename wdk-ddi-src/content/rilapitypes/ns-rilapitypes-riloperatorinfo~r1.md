@@ -7,7 +7,7 @@ old-location: netvista\riloperatorinfo_2.htm
 old-project: netvista
 ms.assetid: cf189a5a-8281-4d9a-bad8-a25a1294aec9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILOPERATORINFO,
 ms.prod: windows-hardware
 ms.technology: windows-devices

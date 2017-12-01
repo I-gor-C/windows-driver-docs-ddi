@@ -7,7 +7,7 @@ old-location: netvista\fwpmbfestatesubscribechanges0.htm
 old-project: netvista
 ms.assetid: 375af8a1-9e05-4830-9074-6313b4e082d9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpmBfeStateSubscribeChanges0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -148,7 +148,7 @@ callback(
 <dd>
 <p>A pointer to a variable that receives a handle that is associated with the registration of the
      callback function. A callout driver passes this handle to the
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550064">FwpmBfeStateUnsubscribeChanges0</a> function to deregister the callback function.</p>
+     <a href="..\fwpmk\nf-fwpmk-fwpmbfestateunsubscribechanges0.md">FwpmBfeStateUnsubscribeChanges0</a> function to deregister the callback function.</p>
 </dd>
 </dl>
 
@@ -168,38 +168,19 @@ callback(
     there is a change to the state of the filter engine. </p>
 
 <p>For example, a callout driver cannot open a session to the filter
-    engine by calling  the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550075">FwpmEngineOpen0</a> function unless the filter engine is currently running. A callout driver can use the <b>FWPM_SERVICE_RUNNING</b>
+    engine by calling  the <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a> function unless the filter engine is currently running. A callout driver can use the <b>FWPM_SERVICE_RUNNING</b>
     notification to open a session to the filter engine so that it can make calls to the other Windows
     Filtering Platform 
     <a href="netvista.management_functions">management functions</a>. Similarly, a
     callout driver can use the <b>FWPM_SERVICE_STOP_PENDING</b> notification to perform any cleanup before the
     filter engine is stopped.</p>
 
-<p>A callout driver must call <b>FwpmBfeStateSubscribeChanges0</b> before calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550061">FwpmBfeStateGet0</a> function to retrieve the current state of the filter engine. After  the call to <b>FwpmBfeStateSubscribeChanges0</b> returns, the callout driver can call 
+<p>A callout driver must call <b>FwpmBfeStateSubscribeChanges0</b> before calling the <a href="..\fwpmk\nf-fwpmk-fwpmbfestateget0.md">FwpmBfeStateGet0</a> function to retrieve the current state of the filter engine. After  the call to <b>FwpmBfeStateSubscribeChanges0</b> returns, the callout driver can call 
     <b>FwpmBfeStateGet0</b> at any time.</p>
 
 <p>A callout driver must deregister the callback function by calling the 
     <a href="..\fwpmk\nf-fwpmk-fwpmbfestateunsubscribechanges0.md">
-    FwpmBfeStateUnsubscribeChanges0</a> function before the callout driver can be unloaded.</p><p class="note">Do not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff550064">FwpmBfeStateUnsubscribeChanges0</a> from the callback function that you passed in the <i>callback</i> parameter. Doing so can cause a deadlock.</p>
-
-<p>A callout driver calls the 
-    <b>FwpmBfeStateSubscribeChanges0</b> function to register a callback function that is called whenever
-    there is a change to the state of the filter engine. </p>
-
-<p>For example, a callout driver cannot open a session to the filter
-    engine by calling  the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550075">FwpmEngineOpen0</a> function unless the filter engine is currently running. A callout driver can use the <b>FWPM_SERVICE_RUNNING</b>
-    notification to open a session to the filter engine so that it can make calls to the other Windows
-    Filtering Platform 
-    <a href="netvista.management_functions">management functions</a>. Similarly, a
-    callout driver can use the <b>FWPM_SERVICE_STOP_PENDING</b> notification to perform any cleanup before the
-    filter engine is stopped.</p>
-
-<p>A callout driver must call <b>FwpmBfeStateSubscribeChanges0</b> before calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550061">FwpmBfeStateGet0</a> function to retrieve the current state of the filter engine. After  the call to <b>FwpmBfeStateSubscribeChanges0</b> returns, the callout driver can call 
-    <b>FwpmBfeStateGet0</b> at any time.</p>
-
-<p>A callout driver must deregister the callback function by calling the 
-    <a href="..\fwpmk\nf-fwpmk-fwpmbfestateunsubscribechanges0.md">
-    FwpmBfeStateUnsubscribeChanges0</a> function before the callout driver can be unloaded.</p><p class="note">Do not call <a href="https://msdn.microsoft.com/library/windows/hardware/ff550064">FwpmBfeStateUnsubscribeChanges0</a> from the callback function that you passed in the <i>callback</i> parameter. Doing so can cause a deadlock.</p>
+    FwpmBfeStateUnsubscribeChanges0</a> function before the callout driver can be unloaded.</p><p class="note">Do not call <a href="..\fwpmk\nf-fwpmk-fwpmbfestateunsubscribechanges0.md">FwpmBfeStateUnsubscribeChanges0</a> from the callback function that you passed in the <i>callback</i> parameter. Doing so can cause a deadlock.</p>
 
 ## -requirements
 <table>
@@ -254,16 +235,16 @@ callback(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550061">FwpmBfeStateGet0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmbfestateget0.md">FwpmBfeStateGet0</a>
 </dt>
 <dt>
 <a href="..\fwpmk\nf-fwpmk-fwpmbfestateunsubscribechanges0.md">
    FwpmBfeStateUnsubscribeChanges0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550075">FwpmEngineOpen0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmBfeStateSubscribeChanges0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpmBfeStateSubscribeChanges0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

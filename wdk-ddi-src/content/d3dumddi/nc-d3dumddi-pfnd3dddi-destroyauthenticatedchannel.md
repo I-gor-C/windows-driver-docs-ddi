@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY DestroyAuthenticatedChannel(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543022">D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL</a> structure that contains one member that specifies the handle to the authenticated channel to destroy. </p>
+<p> A pointer to a <a href="display.d3dddiarg_destroyauthenticatedchannel">D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL</a> structure that contains one member that specifies the handle to the authenticated channel to destroy. </p>
 </dd>
 </dl>
 
@@ -77,13 +77,11 @@ __checkReturn HRESULT APIENTRY DestroyAuthenticatedChannel(
 </dl><p>The authenticated channel is successfully destroyed. </p><dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451630">DestroyAuthenticatedChannel</a> could not allocate the required memory for it to complete.</p>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroyauthenticatedchannel.md">DestroyAuthenticatedChannel</a> could not allocate the required memory for it to complete.</p>
 
 <p> </p>
 
 ## -remarks
-<p>The driver's <b>DestroyAuthenticatedChannel</b> function should disable any protections that were set through calls to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a> function with the D3DAUTHETICATEDCONFIGURE_PROTECTION and D3DAUTHENTICATEDCONFIGURE_ENCRYPTIONWHENACCESIBLE GUIDs set. However, the driver should not disable shared surface protection (D3DAUTHETICATEDCONFIGURE_SHAREDRESOURCE).</p>
-
 <p>The driver's <b>DestroyAuthenticatedChannel</b> function should disable any protections that were set through calls to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a> function with the D3DAUTHETICATEDCONFIGURE_PROTECTION and D3DAUTHENTICATEDCONFIGURE_ENCRYPTIONWHENACCESIBLE GUIDs set. However, the driver should not disable shared surface protection (D3DAUTHETICATEDCONFIGURE_SHAREDRESOURCE).</p>
 
 ## -requirements
@@ -127,7 +125,7 @@ __checkReturn HRESULT APIENTRY DestroyAuthenticatedChannel(
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createauthenticatedchannel.md">CreateAuthenticatedChannel</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543022">D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL</a>
+<a href="display.d3dddiarg_destroyauthenticatedchannel">D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL</a>
 </dt>
 </dl>
 <p> </p>

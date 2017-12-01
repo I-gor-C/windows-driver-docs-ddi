@@ -7,7 +7,7 @@ old-location: debugger\getconstantname.htm
 old-project: debugger
 ms.assetid: bb308ee7-e8bc-49c0-b1f9-199af7dca289
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols3, GetConstantName, IDebugSymbols3::GetConstantName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -108,8 +108,6 @@ HRESULT GetConstantName(
 <p>This method can also return error values.  For more information, see <a href="debugger.hresult_values">Return Values</a>.</p>
 
 ## -remarks
-<p>For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
-
 <p>For more information about symbols, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">Symbols</a>.</p>
 
 ## -requirements

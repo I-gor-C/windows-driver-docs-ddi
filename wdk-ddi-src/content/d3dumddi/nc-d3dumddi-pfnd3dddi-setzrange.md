@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY SetZRange(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544127">D3DDDIARG_ZRANGE</a> structure that specifies minimum and maximum values for the range of z values.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-zrange.md">D3DDDIARG_ZRANGE</a> structure that specifies minimum and maximum values for the range of z values.</p>
 </dd>
 </dl>
 
@@ -112,10 +112,10 @@ __checkReturn HRESULT APIENTRY SetZRange(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544127">D3DDDIARG_ZRANGE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-zrange.md">D3DDDIARG_ZRANGE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

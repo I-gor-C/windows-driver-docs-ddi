@@ -95,7 +95,7 @@ typedef struct _MOUNTMGR_MOUNT_POINTS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>
+<a href="..\mountmgr\ni-mountmgr-ioctl-mountmgr-query-points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>
 </dt>
 </dl>
 <p> </p>

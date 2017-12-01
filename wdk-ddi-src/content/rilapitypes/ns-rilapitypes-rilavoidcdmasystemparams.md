@@ -7,7 +7,7 @@ old-location: netvista\rilavoidcdmasystemparams_2.htm
 old-project: netvista
 ms.assetid: bd938bd9-479a-434c-91d6-93ec76ebe5d6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILAVOIDCDMASYSTEMPARAMS, RILAVOIDCDMASYSTEMPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

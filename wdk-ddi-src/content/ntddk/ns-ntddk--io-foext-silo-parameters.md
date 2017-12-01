@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure describes the Container context that's identified by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt734262">IoGetSiloParameters</a> routine.</p>
+<p>This structure describes the Container context that's identified by the <a href="..\ntddk\nf-ntddk-iogetsiloparameters.md">IoGetSiloParameters</a> routine.</p>
 
 
 ## -syntax

@@ -7,7 +7,7 @@ old-location: netvista\providersuspenddma.htm
 old-project: netvista
 ms.assetid: b020b0c6-eb69-44d0-a374-b39eb2f536f1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: MIRACAST_WFD_CONNECTION_STATS, MIRACAST_WFD_CONNECTION_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -110,31 +110,6 @@ NTSTATUS ProviderSuspendDma(
 <p>NetDMA calls 
     <i>ProviderSuspendDma</i> at IRQL &lt;= DISPATCH_LEVEL.</p>
 
-<p>The 
-    <i>ProviderSuspendDma</i> function is an optional function for NetDMA providers. The NetDMA interface can
-    call the 
-    <i>ProviderSuspendDma</i> function, if any, to temporarily suspend any DMA transfers that are in progress
-    on a DMA channel.</p>
-
-<p>The DMA provider completes the transfer of the current DMA descriptor before it returns from 
-    <i>ProviderSuspendDma</i>. If completion status reporting is enabled, the DMA engine writes the 
-    <b>NetDmaTransferStatusSuspend</b> status in the address that is specified in the 
-    <b>CompletionVirtualAddress</b> and 
-    <b>CompletionPhysicalAddress</b> members in the 
-    <a href="..\netdma\ns-netdma--net-dma-channel-parameters.md">
-    NET_DMA_CHANNEL_PARAMETERS</a> structure.</p>
-
-<p>While the DMA transfers are suspended, the NetDMA interface can modify the DMA descriptor linked list
-    (for example, to insert or delete descriptors).</p>
-
-<p>The NetDMA interface calls the 
-    <a href="..\netdma\nc-netdma-dma-resume-handler.md">ProviderResumeDma</a> function to resume DMA
-    operations that were suspended by calling 
-    <i>ProviderSuspendDma</i>.</p>
-
-<p>NetDMA calls 
-    <i>ProviderSuspendDma</i> at IRQL &lt;= DISPATCH_LEVEL.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -168,7 +143,7 @@ NTSTATUS ProviderSuspendDma(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568732">NET_DMA_CHANNEL_PARAMETERS</a>
+<a href="..\netdma\ns-netdma--net-dma-channel-parameters.md">NET_DMA_CHANNEL_PARAMETERS</a>
 </dt>
 <dt>
 <a href="..\netdma\nc-netdma-dma-channel-allocate-handler.md">ProviderAllocateDmaChannel</a>
@@ -179,4 +154,4 @@ NTSTATUS ProviderSuspendDma(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_SUSPEND_HANDLER callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_SUSPEND_HANDLER callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

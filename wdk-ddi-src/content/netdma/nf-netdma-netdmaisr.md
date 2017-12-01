@@ -7,7 +7,7 @@ old-location: netvista\netdmaisr.htm
 old-project: netvista
 ms.assetid: 81aa5707-b614-429b-bd8e-0204eec74e0f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NetDmaIsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,19 +87,7 @@ VOID NetDmaIsr(
 
 <p>If the NET_DMA_INTERRUPT_ON_COMPLETION flag in the 
     <b>ControlFlags</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568734">NET_DMA_DESCRIPTOR</a> structure is set, the
-    DMA engine should generate an interrupt for the DMA channel after it processes the DMA descriptor. When
-    this flag is cleared, the DMA engine does not generate an interrupt.</p>
-
-<p>A DMA provider driver should do as little work as possible in its ISR handler. The driver should defer
-    I/O operations to the interrupt DPC handler.</p>
-
-<p>DMA provider drivers call the 
-    <b>NetDmaIsr</b> function in their interrupt service routine (ISR).</p>
-
-<p>If the NET_DMA_INTERRUPT_ON_COMPLETION flag in the 
-    <b>ControlFlags</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568734">NET_DMA_DESCRIPTOR</a> structure is set, the
+    <a href="..\netdma\ns-netdma--net-dma-descriptor.md">NET_DMA_DESCRIPTOR</a> structure is set, the
     DMA engine should generate an interrupt for the DMA channel after it processes the DMA descriptor. When
     this flag is cleared, the DMA engine does not generate an interrupt.</p>
 
@@ -149,7 +137,7 @@ VOID NetDmaIsr(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568734">NET_DMA_DESCRIPTOR</a>
+<a href="..\netdma\ns-netdma--net-dma-descriptor.md">NET_DMA_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="..\netdma\nc-netdma-dma-channel-allocate-handler.md">ProviderAllocateDmaChannel</a>
@@ -157,4 +145,4 @@ VOID NetDmaIsr(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaIsr function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaIsr function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

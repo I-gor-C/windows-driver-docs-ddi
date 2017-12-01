@@ -7,7 +7,7 @@ old-location: netvista\wdi_interconnect_type.htm
 old-project: netvista
 ms.assetid: 58cb1ead-94a1-4587-bb2a-7b8e23f42eeb
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices

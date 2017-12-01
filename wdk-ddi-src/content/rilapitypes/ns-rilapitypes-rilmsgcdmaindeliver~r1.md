@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmaindeliver_2.htm
 old-project: netvista
 ms.assetid: 0729c3e5-c95d-44fb-9aa4-079833b94619
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILMSGCDMAINDELIVER,
 ms.prod: windows-hardware
 ms.technology: windows-devices

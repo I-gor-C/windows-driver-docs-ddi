@@ -49,7 +49,7 @@ req.product: Windows 10 or later.
 <p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrinterExtensionContext</b> interface has these properties.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973203">DriverProperties</a>
+<a href="print.iprinterextensioncontext_driverproperties">DriverProperties</a>
 </p>
 
 <p>Read-only</p>
@@ -57,7 +57,7 @@ req.product: Windows 10 or later.
 <p>Gets the driver property bag.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973204">PrinterQueue</a>
+<a href="..\printerextension\ns-printerextension-printerqueue.md">PrinterQueue</a>
 </p>
 
 <p>Read-only</p>
@@ -65,7 +65,7 @@ req.product: Windows 10 or later.
 <p>Gets the queue for the printer.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973205">PrintSchemaTicket</a>
+<a href="print.iprinterextensioncontext_printschematicket">PrintSchemaTicket</a>
 </p>
 
 <p>Read-only</p>
@@ -73,7 +73,7 @@ req.product: Windows 10 or later.
 <p>Gets the print ticket that is appropriate for the queue and the activation.</p>
 
 <p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh973206">UserProperties</a>
+<a href="print.iprinterextensioncontext_userproperties">UserProperties</a>
 </p>
 
 <p>Read-only</p>
@@ -118,7 +118,7 @@ req.product: Windows 10 or later.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh846191">IPrinterExtensionContextCollection</a>
+<a href="..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md">IPrinterExtensionContextCollection</a>
 </dt>
 <dt>
 <a href="print.iprinterextensioncontextcollection_count">IPrinterExtensionContextCollection::Count</a>

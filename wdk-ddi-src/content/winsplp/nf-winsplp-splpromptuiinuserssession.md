@@ -73,7 +73,7 @@ BOOL SplPromptUIInUsersSession(
 ### -param <i>pUIParams</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562645">SHOWUIPARAMS</a> structure that contains values that determine the appearance and behavior of the message box.</p>
+<p>Pointer to a <a href="print.showuiparams">SHOWUIPARAMS</a> structure that contains values that determine the appearance and behavior of the message box.</p>
 </dd>
 
 ### -param <i>pResponse</i> [out]
@@ -87,10 +87,6 @@ BOOL SplPromptUIInUsersSession(
 <p>On success, the <code>SplPromptUIInUsersSession</code> function returns <b>TRUE</b>; otherwise it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>If <i>pUIParams</i> -&gt;<b>bWait</b> is <b>FALSE</b>, this function returns immediately without waiting for the user's response. In that case, *<i>pResponse</i> is set to IDASYNC. </p>
-
-<p>If you plan to use this function in a driver intended to run under Windows 2000, you must load spoolss.dll by a call to the <b>LoadLibrary</b> function, and then find the address of this function within that DLL by a call to the <b>GetProcAddress</b> function. (<b>LoadLibrary</b> and <b>GetProcAddress</b> are described in the Microsoft Windows SDK documentation.) If the call to <b>GetProcAddress</b> fails, you must use an alternative mechanism to display user interface elements.</p>
-
 <p>If <i>pUIParams</i> -&gt;<b>bWait</b> is <b>FALSE</b>, this function returns immediately without waiting for the user's response. In that case, *<i>pResponse</i> is set to IDASYNC. </p>
 
 <p>If you plan to use this function in a driver intended to run under Windows 2000, you must load spoolss.dll by a call to the <b>LoadLibrary</b> function, and then find the address of this function within that DLL by a call to the <b>GetProcAddress</b> function. (<b>LoadLibrary</b> and <b>GetProcAddress</b> are described in the Microsoft Windows SDK documentation.) If the call to <b>GetProcAddress</b> fails, you must use an alternative mechanism to display user interface elements.</p>
@@ -150,10 +146,10 @@ BOOL SplPromptUIInUsersSession(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562645">SHOWUIPARAMS</a>
+<a href="print.showuiparams">SHOWUIPARAMS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562677">SplIsSessionZero</a>
+<a href="..\winsplp\nf-winsplp-splissessionzero.md">SplIsSessionZero</a>
 </dt>
 </dl>
 <p> </p>

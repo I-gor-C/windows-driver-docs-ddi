@@ -7,7 +7,7 @@ old-location: stream\ksgetbusenumparentfdofromchildpdo.htm
 old-project: stream
 ms.assetid: 5d860c5c-e29e-4ea2-b6f7-bcaab0d4584d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsGetBusEnumParentFDOFromChildPDO
 ms.prod: windows-hardware
 ms.technology: windows-devices

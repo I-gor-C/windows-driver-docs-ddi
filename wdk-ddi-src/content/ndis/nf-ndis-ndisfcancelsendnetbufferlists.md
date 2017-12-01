@@ -7,7 +7,7 @@ old-location: netvista\ndisfcancelsendnetbufferlists.htm
 old-project: netvista
 ms.assetid: 358b1aa9-4bfd-4bed-94f7-1b021c732a02
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFCancelSendNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ VOID NdisFCancelSendNetBufferLists(
 <dd>
 <p>The NDIS handle that identifies this filter module. NDIS passed the handle to the filter driver in
      a call to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function.</p>
+     <a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a> function.</p>
 </dd>
 
 ### -param <i>CancelId</i> [in]
@@ -76,25 +76,6 @@ VOID NdisFCancelSendNetBufferLists(
 <p>None</p>
 
 ## -remarks
-<p>A filter driver can cancel the send requests that it originates or pass on the cancellation requests
-    from overlying drivers. To cancel a send request from an overlying driver, NDIS calls the filter drivers 
-    <a href="netvista.filtercancelsendnetbufferlists">
-    FilterCancelSendNetBufferLists</a> function.</p>
-
-<p>A filter driver can call the 
-    <a href="netvista.ndis_set_net_buffer_list_cancel_id">
-    NDIS_SET_NET_BUFFER_LIST_CANCEL_ID</a> macro to mark NET_BUFFER_LIST structures that it originates and
-    passes down to lower-level drivers for transmission. The NDIS_SET_NET_BUFFER_LIST_CANCEL_ID macro marks
-    the specified packet with a cancellation identifier.</p>
-
-<p><b>NdisFCancelSendNetBufferLists</b> cancels the transmission of all data that is marked with the
-    specified cancellation identifier.</p>
-
-<p>NDIS returns canceled send data that the filter driver originated to the 
-    <a href="..\ndis\nc-ndis-filter-send-net-buffer-lists-complete.md">
-    FilterSendNetBufferListsComplete</a> function. The completion status of canceled requests is
-    NDIS_STATUS_SEND_ABORTED.</p>
-
 <p>A filter driver can cancel the send requests that it originates or pass on the cancellation requests
     from overlying drivers. To cancel a send request from an overlying driver, NDIS calls the filter drivers 
     <a href="netvista.filtercancelsendnetbufferlists">
@@ -167,7 +148,7 @@ VOID NdisFCancelSendNetBufferLists(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547930">Irql_Filter_Driver_Function</a>
+<a href="devtest.ndis_irql_filter_driver_function">Irql_Filter_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -175,7 +156,7 @@ VOID NdisFCancelSendNetBufferLists(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
 <a href="netvista.filtercancelsendnetbufferlists">
@@ -190,9 +171,9 @@ VOID NdisFCancelSendNetBufferLists(
    NDIS_SET_NET_BUFFER_LIST_CANCEL_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFCancelSendNetBufferLists function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFCancelSendNetBufferLists function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

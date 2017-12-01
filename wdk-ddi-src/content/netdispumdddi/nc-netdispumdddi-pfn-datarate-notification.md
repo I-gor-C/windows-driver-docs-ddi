@@ -68,7 +68,7 @@ void NTAPI* pfnDataRateNotify(
 ### -param <i>pDataRateStats</i> [in, optional]
 
 <dd>
-<p>An optional pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265475">MIRACAST_DATARATE_STATS</a> structure that contains info on the audio/video encoder bit rate and failed or retried Wi-Fi frames.</p>
+<p>An optional pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast-datarate-stats.md">MIRACAST_DATARATE_STATS</a> structure that contains info on the audio/video encoder bit rate and failed or retried Wi-Fi frames.</p>
 <p>Can be <b>NULL</b> if the network has an error. For more info, see Remarks.</p>
 </dd>
 </dl>
@@ -77,8 +77,6 @@ void NTAPI* pfnDataRateNotify(
 <p>Does not return a value.</p>
 
 ## -remarks
-<p>If data on the quality of service (QoS) of the network connection becomes unavailable, the <i>pDataRateStats</i> parameter will be set to <b>NULL</b>, and this function will not be called again.</p>
-
 <p>If data on the quality of service (QoS) of the network connection becomes unavailable, the <i>pDataRateStats</i> parameter will be set to <b>NULL</b>, and this function will not be called again.</p>
 
 ## -requirements
@@ -127,7 +125,7 @@ void NTAPI* pfnDataRateNotify(
 <a href="display.dxgkddiadddevice">DxgkDdiAddDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265475">MIRACAST_DATARATE_STATS</a>
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast-datarate-stats.md">MIRACAST_DATARATE_STATS</a>
 </dt>
 <dt>
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn-register-datarate-notifications.md">RegisterForDataRateNotifications</a>

@@ -56,7 +56,7 @@ HRESULT WINAPI RemovePrintDeviceObject(
 ### -param <i>hDeviceObject</i> [in]
 
 <dd>
-<p>The HANDLE to the device object to be removed. This should be a device object that was  created with <a href="https://msdn.microsoft.com/library/windows/hardware/dn917890">AddPrintDeviceObject</a>.</p>
+<p>The HANDLE to the device object to be removed. This should be a device object that was  created with <a href="..\winsplp\nf-winsplp-addprintdeviceobject.md">AddPrintDeviceObject</a>.</p>
 </dd>
 </dl>
 
@@ -66,8 +66,6 @@ HRESULT WINAPI RemovePrintDeviceObject(
 <p>For example, this function can return HRESULT_FROM_WIN32(ERROR_INVALID_HANDLE), if an invalid device object handle was used to call the function. And note that, regardless of the return value, the device object HANDLE becomes invalid after a call to <b>RemovePrintDeviceObject</b> has completed.</p>
 
 ## -remarks
-<p>Call <b>RemovePrintDeviceObject</b> to remove the device object for a printer that has been deleted. When the spooler services stops, all the device objects are automatically deleted, so it is not required to call <b>RemovePrintDeviceObject</b> for each printer device object.</p>
-
 <p>Call <b>RemovePrintDeviceObject</b> to remove the device object for a printer that has been deleted. When the spooler services stops, all the device objects are automatically deleted, so it is not required to call <b>RemovePrintDeviceObject</b> for each printer device object.</p>
 
 ## -requirements
@@ -117,7 +115,7 @@ HRESULT WINAPI RemovePrintDeviceObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn917890">AddPrintDeviceObject</a>
+<a href="..\winsplp\nf-winsplp-addprintdeviceobject.md">AddPrintDeviceObject</a>
 </dt>
 </dl>
 <p> </p>

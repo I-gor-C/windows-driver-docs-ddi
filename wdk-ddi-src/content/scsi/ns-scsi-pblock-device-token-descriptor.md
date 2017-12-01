@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p><b>BLOCK_DEVICE_TOKEN_DESCRIPTOR</b> contains the token returned from a the POPULATE TOKEN command for an offload read data operation. The token information is included as part of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967732">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a> structure.</p>
+<p><b>BLOCK_DEVICE_TOKEN_DESCRIPTOR</b> contains the token returned from a the POPULATE TOKEN command for an offload read data operation. The token information is included as part of the <a href="storage.receive_token_information_response_header">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a> structure.</p>
 
 
 ## -syntax
@@ -97,7 +97,7 @@ typedef struct _BLOCK_DEVICE_TOKEN_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967732">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a>
+<a href="storage.receive_token_information_response_header">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a>
 </dt>
 </dl>
 <p> </p>

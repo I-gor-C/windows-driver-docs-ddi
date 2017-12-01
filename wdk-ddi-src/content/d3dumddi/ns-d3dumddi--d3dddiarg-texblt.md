@@ -79,13 +79,13 @@ typedef struct _D3DDDIARG_TEXBLT {
 ### -field <b>DstPoint</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a> structure that describes the destination point where the source texture is copied.</p>
+<p>[in] A <a href="display.point">POINT</a> structure that describes the destination point where the source texture is copied.</p>
 </dd>
 
 ### -field <b>SrcRect</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the source texture to copy to the destination point.</p>
+<p>[in] A <a href="display.rect">RECT</a> structure that describes the source texture to copy to the destination point.</p>
 </dd>
 </dl>
 
@@ -117,10 +117,10 @@ typedef struct _D3DDDIARG_TEXBLT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a>
+<a href="display.point">POINT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-texblt.md">TexBlt</a>

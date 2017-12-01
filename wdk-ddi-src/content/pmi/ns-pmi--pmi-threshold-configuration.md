@@ -71,7 +71,7 @@ typedef struct _PMI_THRESHOLD_CONFIGURATION {
 ## -remarks
 <p>The PMI_THRESHOLD_CONFIGURATION structure specifies the current configuration of the power meter's thresholds.  The <b>LowerThreshold</b> and <b>UpperThreshold</b> members specify the lower and upper range of the threshold respectively.  </p>
 
-<p>A Power Meter Interface (PMI) event is signaled when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543847">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a> I/O control (IOCTL) request completes when one of the following occurs:</p>
+<p>A Power Meter Interface (PMI) event is signaled when the <a href="..\pmi\ni-pmi-ioctl-pmi-register-event-notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a> I/O control (IOCTL) request completes when one of the following occurs:</p>
 
 <p>Power levels that are monitored by the power meter drop below the <b>LowerThreshold</b> value.</p>
 
@@ -102,7 +102,7 @@ typedef struct _PMI_THRESHOLD_CONFIGURATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543847">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a>
+<a href="..\pmi\ni-pmi-ioctl-pmi-register-event-notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a>
 </dt>
 </dl>
 <p> </p>

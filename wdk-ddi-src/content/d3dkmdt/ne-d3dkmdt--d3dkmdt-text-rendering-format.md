@@ -62,11 +62,7 @@ typedef enum _D3DKMDT_TEXT_RENDERING_FORMAT {
 </dl>
 
 ## -remarks
-<p>The <b>Format.Text</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546724">D3DKMDT_VIDPN_SOURCE_MODE</a> structure is a D3DKMDT_TEXT_RENDERING_FORMAT value.</p>
-
-<p>The <b>Format.Text</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546724">D3DKMDT_VIDPN_SOURCE_MODE</a> structure is a D3DKMDT_TEXT_RENDERING_FORMAT value.</p>
-
-<p>The <b>Format.Text</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546724">D3DKMDT_VIDPN_SOURCE_MODE</a> structure is a D3DKMDT_TEXT_RENDERING_FORMAT value.</p>
+<p>The <b>Format.Text</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt--d3dkmdt-vidpn-source-mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure is a D3DKMDT_TEXT_RENDERING_FORMAT value.</p>
 
 ## -requirements
 <table>
@@ -93,7 +89,7 @@ typedef enum _D3DKMDT_TEXT_RENDERING_FORMAT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPn Source Mode Set Interface</a>
+<a href="display.vidpn_source_mode_set_interface">VidPn Source Mode Set Interface</a>
 </dt>
 </dl>
 <p> </p>

@@ -134,7 +134,7 @@ typedef struct _STOR_ADDR_BTL8 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451518">STOR_ADDRESS</a>
+<a href="..\scsi\ns-scsi--stor-address.md">STOR_ADDRESS</a>
 </dt>
 </dl>
 <p> </p>

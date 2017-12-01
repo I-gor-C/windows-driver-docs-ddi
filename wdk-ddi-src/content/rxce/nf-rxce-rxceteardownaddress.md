@@ -72,8 +72,6 @@ NTSTATUS RxCeTearDownAddress(
 ## -remarks
 <p>When <b>RxCeTearDownAddress</b> is successful, the data members in the RXCE_ADDRESS structure pointed to by the <i>pAddress</i> parameter will be properly uninitialized, TDI addresses will be closed, and allocated memory for handlers and transport addresses will be freed.</p>
 
-<p>When <b>RxCeTearDownAddress</b> is successful, the data members in the RXCE_ADDRESS structure pointed to by the <i>pAddress</i> parameter will be properly uninitialized, TDI addresses will be closed, and allocated memory for handlers and transport addresses will be freed.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -109,7 +107,7 @@ NTSTATUS RxCeTearDownAddress(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553414">RxCeBuildAddress</a>
+<a href="..\rxce\nf-rxce-rxcebuildaddress.md">RxCeBuildAddress</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: stream\ksacquireresetvalue.htm
 old-project: stream
 ms.assetid: 80a990e3-3637-4837-8800-42d5848e01cf
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsAcquireResetValue
 ms.prod: windows-hardware
 ms.technology: windows-devices

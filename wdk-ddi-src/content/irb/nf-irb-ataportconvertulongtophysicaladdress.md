@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Ataport.lib; 
-Pciidex.lib
+req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
 req.iface: 
@@ -106,7 +105,7 @@ IDE_PHYSICAL_ADDRESS AtaPortConvertUlongToPhysicalAddress(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550149">AtaPortConvertPhysicalAddressToUlong</a>
+<a href="..\irb\nf-irb-ataportconvertphysicaladdresstoulong.md">AtaPortConvertPhysicalAddressToUlong</a>
 </dt>
 </dl>
 <p> </p>

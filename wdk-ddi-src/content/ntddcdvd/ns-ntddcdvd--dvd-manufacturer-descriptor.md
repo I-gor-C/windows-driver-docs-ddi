@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DVD_MANUFACTURER_DESCRIPTOR structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560426">IOCTL_DVD_READ_STRUCTURE</a> request to retrieve a DVD manufacturer descriptor. </p>
+<p>The DVD_MANUFACTURER_DESCRIPTOR structure is used in conjunction with the <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-dvd-read-structure.md">IOCTL_DVD_READ_STRUCTURE</a> request to retrieve a DVD manufacturer descriptor. </p>
 
 
 ## -syntax
@@ -81,7 +81,7 @@ typedef struct _DVD_MANUFACTURER_DESCRIPTOR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560426">IOCTL_DVD_READ_STRUCTURE</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-dvd-read-structure.md">IOCTL_DVD_READ_STRUCTURE</a>
 </dt>
 </dl>
 <p> </p>

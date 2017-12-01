@@ -57,7 +57,7 @@ typedef struct _RemoveiSNSServer_OUT {
 ### -field <b>Status</b>
 
 <dd>
-<p>On output from <b>RemoveISNSServer</b>, the status of the operation. For a list of status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.</p>
+<p>On output from <b>RemoveISNSServer</b>, the status of the operation. For a list of status qualifiers, see <a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>.</p>
 </dd>
 </dl>
 
@@ -81,10 +81,10 @@ typedef struct _RemoveiSNSServer_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="storage.iscsi_status_qualifiers">ISCSI_STATUS_QUALIFIERS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563981">RemoveiSNSServer_IN</a>
+<a href="..\iscsiop\ns-iscsiop--removeisnsserver-in.md">RemoveiSNSServer_IN</a>
 </dt>
 </dl>
 <p> </p>

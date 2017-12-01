@@ -7,7 +7,7 @@ old-location: stream\kshandlesizedlistquery.htm
 old-project: stream
 ms.assetid: 014ca1bd-6e18-4110-aefb-ec36e816f013
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsHandleSizedListQuery
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,8 +86,6 @@ NTSTATUS KsHandleSizedListQuery(
 <p>The <b>KsHandleSizedListQuery</b> function returns STATUS_SUCCESS if the number of entries and the data can be copied. If the buffer is larger than the size to store just the size and the count of entries but too small to contain all the entries, the function returns status STATUS_BUFFER_TOO_SMALL.</p>
 
 ## -remarks
-<p>Use the <b>KsHandleSizedListQuery</b> function when implementing properties that are to return information in the multiple item format.</p>
-
 <p>Use the <b>KsHandleSizedListQuery</b> function when implementing properties that are to return information in the multiple item format.</p>
 
 ## -requirements

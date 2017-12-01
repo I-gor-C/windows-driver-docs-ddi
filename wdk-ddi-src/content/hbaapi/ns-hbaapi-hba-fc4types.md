@@ -81,7 +81,7 @@ typedef struct HBA_fc4types {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557107">HBA_PortAttributes</a>
+<a href="..\hbaapi\ns-hbaapi-hba-portattributes.md">HBA_PortAttributes</a>
 </dt>
 </dl>
 <p> </p>

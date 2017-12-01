@@ -63,7 +63,7 @@ typedef struct _SERCX2_CUSTOM_TRANSMIT_CONFIG {
 ### -field <b>Size</b>
 
 <dd>
-<p>The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265256">SerCx2CustomTransmitCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
+<p>The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customtransmitcreate.md">SerCx2CustomTransmitCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.</p>
 </dd>
 
 ### -field <b>Alignment</b>
@@ -87,7 +87,7 @@ typedef struct _SERCX2_CUSTOM_TRANSMIT_CONFIG {
 ### -field <b>MinimumTransferUnit</b>
 
 <dd>
-<p>The minimum transfer unit. The number of bytes to transfer in a custom-transmit transaction must be an integer multiple of the minimum transfer unit. To indicate that the default minimum transfer unit should be used, set this member to zero. For more information about the default minimum transfer unit, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450995">DMA_ADAPTER_INFO_V1</a>.</p>
+<p>The minimum transfer unit. The number of bytes to transfer in a custom-transmit transaction must be an integer multiple of the minimum transfer unit. To indicate that the default minimum transfer unit should be used, set this member to zero. For more information about the default minimum transfer unit, see <a href="..\wdm\ns-wdm--dma-adapter-info-v1.md">DMA_ADAPTER_INFO_V1</a>.</p>
 </dd>
 
 ### -field <b>Exclusive</b>
@@ -100,7 +100,7 @@ typedef struct _SERCX2_CUSTOM_TRANSMIT_CONFIG {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265256">SerCx2CustomTransmitCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_TRANSMIT_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomTransmitCreate</b>, call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265319">SERCX2_CUSTOM_TRANSMIT_CONFIG_INIT</a> function to initialize this structure.</p>
+<p>The <a href="..\sercx\nf-sercx-sercx2customtransmitcreate.md">SerCx2CustomTransmitCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_TRANSMIT_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomTransmitCreate</b>, call the <a href="..\sercx\nf-sercx-sercx2-custom-transmit-config-init.md">SERCX2_CUSTOM_TRANSMIT_CONFIG_INIT</a> function to initialize this structure.</p>
 
 ## -requirements
 <table>
@@ -127,16 +127,16 @@ typedef struct _SERCX2_CUSTOM_TRANSMIT_CONFIG {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450995">DMA_ADAPTER_INFO_V1</a>
+<a href="..\wdm\ns-wdm--dma-adapter-info-v1.md">DMA_ADAPTER_INFO_V1</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265319">SERCX2_CUSTOM_TRANSMIT_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx2-custom-transmit-config-init.md">SERCX2_CUSTOM_TRANSMIT_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265256">SerCx2CustomTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2customtransmitcreate.md">SerCx2CustomTransmitCreate</a>
 </dt>
 </dl>
 <p> </p>

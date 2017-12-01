@@ -7,7 +7,7 @@ old-location: stream\ksscatter_gather.htm
 old-project: stream
 ms.assetid: 10AFDC4B-75E5-4E88-A614-60043848C570
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSSCATTER_GATHER, KSSCATTER_GATHER, *PKSSCATTER_GATHER
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: stream\ksevent_connection.htm
 old-project: stream
 ms.assetid: E85946B3-90B6-41CA-9F69-47B33AE8D851
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

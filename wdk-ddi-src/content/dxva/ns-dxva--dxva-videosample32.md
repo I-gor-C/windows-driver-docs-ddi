@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DXVA_VideoSample32 structure is used for forwarding  32-bit <a href="https://msdn.microsoft.com/library/windows/hardware/ff563915">DXVA_DeinterlaceBltEx</a> calls on 64-bit drivers.</p>
+<p>The DXVA_VideoSample32 structure is used for forwarding  32-bit <a href="..\dxva\ns-dxva--dxva-deinterlacebltex.md">DXVA_DeinterlaceBltEx</a> calls on 64-bit drivers.</p>
 
 
 ## -syntax
@@ -76,25 +76,25 @@ typedef struct _DXVA_VideoSample32 {
 ### -field <b>SampleFormat</b>
 
 <dd>
-<p>Specifies the format of the sample as defined by values of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> enumeration type. </p>
+<p>Specifies the format of the sample as defined by values of the <a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a> enumeration type. </p>
 </dd>
 
 ### -field <b>SampleFlags</b>
 
 <dd>
-<p>Specifies a collection of flags that indicate changes in the current sample frame from the previous sample frame. This member is a bitwise-OR of one or more of the flags in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564037">DXVA_SampleFlags</a> enumeration type.</p>
+<p>Specifies a collection of flags that indicate changes in the current sample frame from the previous sample frame. This member is a bitwise-OR of one or more of the flags in the <a href="..\dxva\ne-dxva--dxva-sampleflags.md">DXVA_SampleFlags</a> enumeration type.</p>
 </dd>
 
 ### -field <b>lpDDSSrcSurface</b>
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a> structure that represents the sample.</p>
+<p>Pointer to a <a href="display.dd_surface_local">DD_SURFACE_LOCAL</a> structure that represents the sample.</p>
 </dd>
 
 ### -field <b>rcSrc</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the upper-left and lower-right points of a rectangle on the source surface. These points define the area of the source data for the bit-block transfer and its position on the source surface.</p>
+<p>Specifies a <a href="display.rect">RECT</a> structure that describes the upper-left and lower-right points of a rectangle on the source surface. These points define the area of the source data for the bit-block transfer and its position on the source surface.</p>
 </dd>
 
 ### -field <b>rcDst</b>
@@ -106,7 +106,7 @@ typedef struct _DXVA_VideoSample32 {
 ### -field <b>Palette</b>
 
 <dd>
-<p>Specifies an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563116">DXVA_AYUVsample2</a> structures that represent a complete 16-color palette for palletized video substream pixel formats. The driver uses this palette to composite the substream sample. For nonpalletized pixel formats, the palette is zero and can be ignored.</p>
+<p>Specifies an array of <a href="..\dxva\ns-dxva--dxva-ayuvsample2.md">DXVA_AYUVsample2</a> structures that represent a complete 16-color palette for palletized video substream pixel formats. The driver uses this palette to composite the substream sample. For nonpalletized pixel formats, the palette is zero and can be ignored.</p>
 </dd>
 </dl>
 
@@ -138,25 +138,25 @@ typedef struct _DXVA_VideoSample32 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563116">DXVA_AYUVsample2</a>
+<a href="..\dxva\ns-dxva--dxva-ayuvsample2.md">DXVA_AYUVsample2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563915">DXVA_DeinterlaceBltEx</a>
+<a href="..\dxva\ns-dxva--dxva-deinterlacebltex.md">DXVA_DeinterlaceBltEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a>
+<a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564037">DXVA_SampleFlags</a>
+<a href="..\dxva\ne-dxva--dxva-sampleflags.md">DXVA_SampleFlags</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564045">DXVA_SampleFormat</a>
+<a href="..\dxva\ne-dxva--dxva-sampleformat.md">DXVA_SampleFormat</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
+<a href="display.dd_surface_local">DD_SURFACE_LOCAL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="display.rect">RECT</a>
 </dt>
 </dl>
 <p> </p>

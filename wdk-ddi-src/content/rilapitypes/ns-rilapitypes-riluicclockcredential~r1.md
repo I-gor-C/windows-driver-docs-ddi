@@ -7,7 +7,7 @@ old-location: netvista\riluicclockcredential_2.htm
 old-project: netvista
 ms.assetid: bb7b3075-c424-4a8b-bff9-64cdb85218a2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCLOCKCREDENTIAL,
 ms.prod: windows-hardware
 ms.technology: windows-devices

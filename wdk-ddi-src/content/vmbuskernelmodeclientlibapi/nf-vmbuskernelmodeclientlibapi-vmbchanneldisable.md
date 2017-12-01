@@ -7,7 +7,7 @@ old-location: netvista\vmbchanneldisable.htm
 old-project: netvista
 ms.assetid: 688A1DF3-F801-47C3-8403-9FA5D96BD428
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbChannelDisable
 ms.prod: windows-hardware
 ms.technology: windows-devices

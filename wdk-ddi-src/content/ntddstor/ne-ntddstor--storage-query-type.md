@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The STORAGE_QUERY_TYPE enumeration is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request to retrieve the properties of a storage device or adapter.</p>
+<p>The STORAGE_QUERY_TYPE enumeration is used in conjunction with the <a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request to retrieve the properties of a storage device or adapter.</p>
 
 
 ## -syntax
@@ -85,15 +85,7 @@ typedef enum _STORAGE_QUERY_TYPE {
 ## -remarks
 <p>Caller specifies the type of query by choosing one of the enumeration values.</p>
 
-<p>Caller defines the exact nature of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request by specifying the query type together with the property ID. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff566997">STORAGE_PROPERTY_QUERY</a> for an explanation of how these two values are combined to define the query. </p>
-
-<p>Caller specifies the type of query by choosing one of the enumeration values.</p>
-
-<p>Caller defines the exact nature of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request by specifying the query type together with the property ID. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff566997">STORAGE_PROPERTY_QUERY</a> for an explanation of how these two values are combined to define the query. </p>
-
-<p>Caller specifies the type of query by choosing one of the enumeration values.</p>
-
-<p>Caller defines the exact nature of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request by specifying the query type together with the property ID. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff566997">STORAGE_PROPERTY_QUERY</a> for an explanation of how these two values are combined to define the query. </p>
+<p>Caller defines the exact nature of an <a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request by specifying the query type together with the property ID. See <a href="..\ntddstor\ns-ntddstor--storage-property-query.md">STORAGE_PROPERTY_QUERY</a> for an explanation of how these two values are combined to define the query. </p>
 
 ## -requirements
 <table>
@@ -112,13 +104,13 @@ typedef enum _STORAGE_QUERY_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566997">STORAGE_PROPERTY_QUERY</a>
+<a href="..\ntddstor\ns-ntddstor--storage-property-query.md">STORAGE_PROPERTY_QUERY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
+<a href="storage.storage_property_id">STORAGE_PROPERTY_ID</a>
 </dt>
 </dl>
 <p> </p>

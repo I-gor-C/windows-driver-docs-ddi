@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsflags_2.htm
 old-project: netvista
 ms.assetid: 1bb5a365-1f8f-41d4-a3f5-6a4a7238de03
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

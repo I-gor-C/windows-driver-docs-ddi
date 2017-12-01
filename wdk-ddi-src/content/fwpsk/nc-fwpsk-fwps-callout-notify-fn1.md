@@ -7,7 +7,7 @@ old-location: netvista\notifyfn1.htm
 old-project: netvista
 ms.assetid: 3f377049-cc5f-427d-9b09-5e49e4b305c5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -104,7 +104,7 @@ NTSTATUS NTAPI notifyFn1(
 
 <dd>
 <p>A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a> structure. This structure
+     <a href="netvista.fwps_filter1">FWPS_FILTER1</a> structure. This structure
      describes the filter that is being added to or deleted from the filter engine.
      </p>
 <p>A callout driver's 
@@ -138,39 +138,7 @@ NTSTATUS NTAPI notifyFn1(
 
 ## -remarks
 <p>A callout driver registers a callout's callout functions with the filter engine by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a> function.</p>
-
-<p>The filter engine calls a callout driver's 
-    <i>notifyFn1</i> function to notify the callout driver about events that are associated with the callout.
-    If the callout driver's 
-    <i>notifyFn1</i> function does not recognize the type of notification that is passed in the 
-    <i>notifyType</i> parameter, it should ignore the notification and return STATUS_SUCCESS.</p>
-
-<p>If a callout driver registers a callout with the filter engine after filters that specify the callout
-    for the filter's action have already been added to the filter engine, the filter engine does not call the
-    callout driver's 
-    <i>notifyFn1</i> function to notify the callout about any of the existing filters. The filter engine calls
-    the callout driver's 
-    <i>notifyFn1</i> function to notify the callout when new filters that specify the callout for the filter's
-    action are added to the filter engine. In this situation, a callout's 
-    <i>notifyFn1</i> function might not get called for every filter in the filter engine that specifies the
-    callout for the filter's action. If a callout driver registers a callout after the filter engine is
-    started and the callout needs to know about every filter in the filter engine that specifies the callout
-    for the filter's action, the callout driver must call the appropriate management functions to enumerate
-    all the filters in the filter engine and sort through the resulting list of filters to find those that
-    specify the callout for the filter's action. See 
-    <a href="netvista.calling_other_windows_filtering_platform_functions">Calling Other
-    Windows Filtering Platform Functions</a> for more information about calling these functions.</p>
-
-<p>When a filter that specifies a callout for the filter's action is deleted from the filter engine, the
-    filter engine calls the callout driver's 
-    <i>notifyFn1</i> function and passes FWP_CALLOUT_NOTIFY_DELETE_FILTER in the 
-    <i>notifyType</i> parameter and <b>NULL</b> in the 
-    <i>filterKey</i> parameter. For more information, see 
-    <a href="NULL">Processing Notify Callouts</a>.</p>
-
-<p>A callout driver registers a callout's callout functions with the filter engine by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a> function.</p>
+    <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a> function.</p>
 
 <p>The filter engine calls a callout driver's 
     <i>notifyFn1</i> function to notify the callout driver about events that are associated with the callout.
@@ -234,16 +202,16 @@ NTSTATUS NTAPI notifyFn1(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551224">FWPS_CALLOUT0</a>
+<a href="netvista.fwps_callout0">FWPS_CALLOUT0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>
+<a href="netvista.fwps_filter1">FWPS_FILTER1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568802">notifyFn</a>
+<a href="netvista.notifyfn">notifyFn</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps-callout-notify-fn0.md">notifyFn0</a>
@@ -252,9 +220,9 @@ NTSTATUS NTAPI notifyFn1(
 <a href="..\fwpsk\nc-fwpsk-fwps-callout-notify-fn2.md">notifyFn2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
+<a href="netvista.callout_driver_callout_functions">Callout Driver Callout Functions</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_NOTIFY_FN1 callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_NOTIFY_FN1 callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -92,20 +92,20 @@ typedef struct D3D10DDIARG_OPENADAPTER {
 ### -field <b>pAdapterCallbacks</b>
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544350">D3DDDI_ADAPTERCALLBACKS</a> structure that contains the Direct3D runtime-supplied <b>pfnQueryAdapterInfoCb</b> callback function that the driver can use.</p>
+<p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddi-adaptercallbacks.md">D3DDDI_ADAPTERCALLBACKS</a> structure that contains the Direct3D runtime-supplied <b>pfnQueryAdapterInfoCb</b> callback function that the driver can use.</p>
 </dd>
 
 ### -field <b>pAdapterFuncs</b>
 
 <dd>
-<p>[out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541811">D3D10DDI_ADAPTERFUNCS</a> structure that contains a table of user-mode display driver adapter-specific functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver about operations that are specific to the graphics adapter.</p>
+<p>[out] A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-adapterfuncs.md">D3D10DDI_ADAPTERFUNCS</a> structure that contains a table of user-mode display driver adapter-specific functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver about operations that are specific to the graphics adapter.</p>
 </dd>
 
 ### -field <b>pAdapterFuncs_2</b>
 
 <dd>
 <p>Supported in Windows 7 and later versions.</p>
-<p>[out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541900">D3D10_2DDI_ADAPTERFUNCS</a> structure that contains a table of user-mode display driver adapter-specific functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver about operations that are specific to the graphics adapter.</p>
+<p>[out] A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10-2ddi-adapterfuncs.md">D3D10_2DDI_ADAPTERFUNCS</a> structure that contains a table of user-mode display driver adapter-specific functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver about operations that are specific to the graphics adapter.</p>
 </dd>
 </dl>
 
@@ -137,13 +137,13 @@ typedef struct D3D10DDIARG_OPENADAPTER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541811">D3D10DDI_ADAPTERFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi-adapterfuncs.md">D3D10DDI_ADAPTERFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541900">D3D10_2DDI_ADAPTERFUNCS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10-2ddi-adapterfuncs.md">D3D10_2DDI_ADAPTERFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544350">D3DDDI_ADAPTERCALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-adaptercallbacks.md">D3DDDI_ADAPTERCALLBACKS</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-openadapter.md">OpenAdapter10</a>

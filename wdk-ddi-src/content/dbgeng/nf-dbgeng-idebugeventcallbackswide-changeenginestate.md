@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbackswide_changeenginestate.htm
 old-project: debugger
 ms.assetid: 14205476-3f58-4105-99a7-a3baa2eba033
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugEventCallbacksWide, ChangeEngineState, IDebugEventCallbacksWide::ChangeEngineState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -222,7 +222,7 @@ HRESULT ChangeEngineState(
 ### -param <a id="DEBUG_CES_EXECUTION_STATUS"></a><a id="debug_ces_execution_status"></a>DEBUG_CES_EXECUTION_STATUS
 
 <dd>
-<p>The value of <i>Argument</i> is the execution status (as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> topic) possibly combined with the bit flag DEBUG_STATUS_INSIDE_WAIT. DEBUG_STATUS_INSIDE_WAIT is set when a <b>WaitForEvent</b> call is pending. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.</p>
+<p>The value of <i>Argument</i> is the execution status (as described in the <a href="debugger.debug_status_xxx">DEBUG_STATUS_XXX</a> topic) possibly combined with the bit flag DEBUG_STATUS_INSIDE_WAIT. DEBUG_STATUS_INSIDE_WAIT is set when a <b>WaitForEvent</b> call is pending. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.</p>
 </dd>
 
 ### -param <a id="DEBUG_CES_ENGINE_OPTIONS"></a><a id="debug_ces_engine_options"></a>DEBUG_CES_ENGINE_OPTIONS
@@ -292,11 +292,7 @@ HRESULT ChangeEngineState(
 <p>The return value is ignored by the engine unless it indicates a remote procedure call error; in this case the client, with which this <b>IDebugEventCallbacksWide</b> object is registered, is disabled.</p>
 
 ## -remarks
-<p>This method is only called by the engine if the DEBUG_EVENT_CHANGE_ENGINE_STATE flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550625">IDebugEventCallbacksWide::GetInterestMask</a>.</p>
-
-<p>For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>. </p>
-
-<p>This method is only called by the engine if the DEBUG_EVENT_CHANGE_ENGINE_STATE flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550625">IDebugEventCallbacksWide::GetInterestMask</a>.</p>
+<p>This method is only called by the engine if the DEBUG_EVENT_CHANGE_ENGINE_STATE flag is set in the mask returned by <a href="debugger.idebugeventcallbackswide_getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.</p>
 
 <p>For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>. </p>
 

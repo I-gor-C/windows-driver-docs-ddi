@@ -7,7 +7,7 @@ old-location: stream\iksclockpropertyset.htm
 old-project: stream
 ms.assetid: bf50d4b1-782f-4d15-b6ef-23fa13da68ff
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsSynchronousDeviceControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -230,12 +230,6 @@ req.iface:
 <p> </p>
 
 ## -remarks
-<p>The IID for this interface is IID_IKsClockPropertySet.</p>
-
-<p>The IID for this interface is IID_IKsClockPropertySet.</p>
-
-<p>The IID for this interface is IID_IKsClockPropertySet.</p>
-
 <p>The IID for this interface is IID_IKsClockPropertySet.</p>
 
 ## -requirements

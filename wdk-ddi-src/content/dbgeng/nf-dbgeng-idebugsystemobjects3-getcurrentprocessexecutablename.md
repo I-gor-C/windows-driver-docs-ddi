@@ -7,7 +7,7 @@ old-location: debugger\getcurrentprocessexecutablename.htm
 old-project: debugger
 ms.assetid: ea968316-a53d-4ab1-966a-5c699ffb8f2a
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects3, GetCurrentProcessExecutableName, IDebugSystemObjects3::GetCurrentProcessExecutableName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,12 +85,6 @@ HRESULT GetCurrentProcessExecutableName(
 <p> </p>
 
 ## -remarks
-<p>These methods are only available in user-mode debugging.</p>
-
-<p>If the engine cannot determine the name of the executable file, it writes the string "?NoImage?" to the buffer.</p>
-
-<p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
 <p>These methods are only available in user-mode debugging.</p>
 
 <p>If the engine cannot determine the name of the executable file, it writes the string "?NoImage?" to the buffer.</p>

@@ -7,7 +7,7 @@ old-location: stream\ksstreamio.htm
 old-project: stream
 ms.assetid: 74c62a30-42b9-4ea7-b52a-014e263d886e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsStreamIo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -149,8 +149,6 @@ NTSTATUS KsStreamIo(
 
 <p>Invokes the completion routine on cancellation.</p>
 
-<p> </p>
-
 <p>The following defined values are used for the <i>Flags</i> variable:</p>
 
 <p>KSSTREAM_READ</p>
@@ -172,52 +170,6 @@ NTSTATUS KsStreamIo(
 <p>KSSTREAM_SYNCHRONOUS</p>
 
 <p>Specifies that the IRP is synchronous. This means that if the <i>Event</i> parameter is passed, it is not treated as an object manager event and is not referenced or dereferenced.</p>
-
-<p> </p>
-
-<p>KSSTREAM_READ is equivalent to KSPROBE_STREAMREAD.</p>
-
-<p>Similarly, KSSTREAM_WRITE is equivalent to KSPROBE_STREAMWRITE.</p>
-
-<p>The following enumerated values are used for the <i>CompletionInvocationFlags</i> variable and are of type KSCOMPLETION_INVOCATION:</p>
-
-<p>KsInvokeOnSuccess</p>
-
-<p>Invokes the completion routine on success.</p>
-
-<p>KsInvokeOnError</p>
-
-<p>Invokes the completion routine on error.</p>
-
-<p>KsInvokeOnCancel</p>
-
-<p>Invokes the completion routine on cancellation.</p>
-
-<p> </p>
-
-<p>The following defined values are used for the <i>Flags</i> variable:</p>
-
-<p>KSSTREAM_READ</p>
-
-<p>Specifies that an IOCTL_KS_STREAMREAD IRP is to be built. This is the default.</p>
-
-<p>KSSTREAM_WRITE</p>
-
-<p>Specifies that an IOCTL_KS_STREAMWRITE IRP is to be built.</p>
-
-<p>KSSTREAM_PAGED_DATA</p>
-
-<p>Specifies that the data is pageable. This is the default and can be used at all times.</p>
-
-<p>KSSTREAM_NONPAGED_DATA</p>
-
-<p>Specifies that the data is nonpaged and can be used as a performance enhancement.</p>
-
-<p>KSSTREAM_SYNCHRONOUS</p>
-
-<p>Specifies that the IRP is synchronous. This means that if the <i>Event</i> parameter is passed, it is not treated as an object manager event and is not referenced or dereferenced.</p>
-
-<p> </p>
 
 <p>KSSTREAM_READ is equivalent to KSPROBE_STREAMREAD.</p>
 

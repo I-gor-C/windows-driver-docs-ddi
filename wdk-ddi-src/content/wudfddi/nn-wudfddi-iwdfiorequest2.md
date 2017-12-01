@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest2.htm
 old-project: wdf
 ms.assetid: 6a6285c9-8366-4487-a1c5-38aa24d172a9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoRequest2</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff558985">IWDFIoRequest</a>. <b>IWDFIoRequest2</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoRequest2</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>. <b>IWDFIoRequest2</b> also has these types of members:</p>
 
 <p>The <b>IWDFIoRequest2</b> interface has these methods.</p>
 
@@ -57,9 +57,9 @@ req.product: Windows 10 or later.
 
 <p>The <a href="wdf.iwdfiorequest2_getrequestormode">GetRequestorMode</a> method indicates whether an I/O request came from a kernel-mode driver or a user-mode component (either an application or a user-mode driver).</p>
 
-<p>The <a href="wdf.iwdfiorequest2_getsetinformationparameters">GetSetInformationParameters</a> method retrieves parameters that are associated with a <a href="https://msdn.microsoft.com/library/windows/hardware/ff550032">WdfRequestSetInformation</a>-typed I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest2_getsetinformationparameters">GetSetInformationParameters</a> method retrieves parameters that are associated with a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-type.md">WdfRequestSetInformation</a>-typed I/O request.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406321">GetStatus</a> method returns the status of an I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest2_getstatus">GetStatus</a> method returns the status of an I/O request.</p>
 
 <p>The <a href="wdf.iwdfiorequest2_iscanceled">IsCanceled</a> method determines whether the I/O manager has attempted to cancel an I/O request.</p>
 
@@ -69,11 +69,11 @@ req.product: Windows 10 or later.
 
 <p>The <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveinputbuffer.md">RequestRetrieveInputBuffer</a> method retrieves an I/O request's input buffer.</p>
 
-<p>The <a href="wdf.iwdfiorequest2_retrieveinputmemory">RetrieveInputMemory</a> method retrieves the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a> interface of a framework memory object that represents an I/O request's input buffer.</p>
+<p>The <a href="wdf.iwdfiorequest2_retrieveinputmemory">RetrieveInputMemory</a> method retrieves the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface of a framework memory object that represents an I/O request's input buffer.</p>
 
 <p>The <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputbuffer.md">RequestRetrieveOutputBuffer</a> method retrieves an I/O request's output buffer.</p>
 
-<p>The <a href="wdf.iwdfiorequest2_retrieveoutputmemory">RetrieveOutputMemory</a> method retrieves the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a> interface of a framework memory object that represents an I/O request's output buffer.</p>
+<p>The <a href="wdf.iwdfiorequest2_retrieveoutputmemory">RetrieveOutputMemory</a> method retrieves the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface of a framework memory object that represents an I/O request's output buffer.</p>
 
 <p>The <a href="wdf.iwdfiorequest2_reuse">Reuse</a> method reinitializes a framework request object so that it can be reused.</p>
 
@@ -89,7 +89,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558989">IWDFIoRequest2::GetCreateParametersEx</a>
+<a href="wdf.iwdfiorequest2_getcreateparametersex">IWDFIoRequest2::GetCreateParametersEx</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest2_getcreateparametersex">GetCreateParametersEx</a> method retrieves file creation parameters that are associated with a file that is being created or opened.</p>
@@ -97,7 +97,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558994">IWDFIoRequest2::GetEffectiveIoType</a>
+<a href="wdf.iwdfiorequest2_geteffectiveiotype">IWDFIoRequest2::GetEffectiveIoType</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest2_geteffectiveiotype">GetEffectiveIoType</a> method returns the buffer access method that UMDF is using for the data buffers of the I/O request that the <b>IWDFIoRequest2</b> interface represents.</p>
@@ -105,7 +105,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558997">IWDFIoRequest2::GetQueryInformationParameters</a>
+<a href="wdf.iwdfiorequest2_getqueryinformationparameters">IWDFIoRequest2::GetQueryInformationParameters</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest2_getqueryinformationparameters">GetQueryInformationParameters</a> method retrieves parameters that are associated with a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-type.md">WdfRequestQueryInformation</a>-typed I/O request.</p>
@@ -113,7 +113,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>
+<a href="wdf.iwdfiorequest2_getrequestormode">IWDFIoRequest2::GetRequestorMode</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest2_getrequestormode">GetRequestorMode</a> method indicates whether an I/O request came from a kernel-mode driver or a user-mode component (either an application or a user-mode driver).</p>
@@ -121,23 +121,23 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559009">IWDFIoRequest2::GetSetInformationParameters</a>
+<a href="wdf.iwdfiorequest2_getsetinformationparameters">IWDFIoRequest2::GetSetInformationParameters</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="wdf.iwdfiorequest2_getsetinformationparameters">GetSetInformationParameters</a> method retrieves parameters that are associated with a <a href="https://msdn.microsoft.com/library/windows/hardware/ff550032">WdfRequestSetInformation</a>-typed I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest2_getsetinformationparameters">GetSetInformationParameters</a> method retrieves parameters that are associated with a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-type.md">WdfRequestSetInformation</a>-typed I/O request.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559013">IWDFIoRequest2::GetStatus</a>
+<a href="wdf.iwdfiorequest2_getstatus">IWDFIoRequest2::GetStatus</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406321">GetStatus</a> method returns the status of an I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest2_getstatus">GetStatus</a> method returns the status of an I/O request.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559018">IWDFIoRequest2::IsCanceled</a>
+<a href="wdf.iwdfiorequest2_iscanceled">IWDFIoRequest2::IsCanceled</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest2_iscanceled">IsCanceled</a> method determines whether the I/O manager has attempted to cancel an I/O request.</p>
@@ -145,7 +145,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559021">IWDFIoRequest2::IsFromUserModeDriver</a>
+<a href="wdf.iwdfiorequest2_isfromusermodedriver">IWDFIoRequest2::IsFromUserModeDriver</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest2_isfromusermodedriver">IsFromUserModeDriver</a> method indicates whether an I/O request came from a user-mode driver or an application.</p>
@@ -153,7 +153,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559028">IWDFIoRequest2::Requeue</a>
+<a href="wdf.iwdfiorequest2_requeue">IWDFIoRequest2::Requeue</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest2_requeue">Requeue</a> method returns an I/O request to the head of the I/O queue from which it was delivered to the driver.</p>
@@ -161,7 +161,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559033">IWDFIoRequest2::RetrieveInputBuffer</a>
+<a href="wdf.iwdfiorequest2_retrieveinputbuffer">IWDFIoRequest2::RetrieveInputBuffer</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveinputbuffer.md">RequestRetrieveInputBuffer</a> method retrieves an I/O request's input buffer.</p>
@@ -169,15 +169,15 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559037">IWDFIoRequest2::RetrieveInputMemory</a>
+<a href="wdf.iwdfiorequest2_retrieveinputmemory">IWDFIoRequest2::RetrieveInputMemory</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="wdf.iwdfiorequest2_retrieveinputmemory">RetrieveInputMemory</a> method retrieves the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a> interface of a framework memory object that represents an I/O request's input buffer.</p>
+<p>The <a href="wdf.iwdfiorequest2_retrieveinputmemory">RetrieveInputMemory</a> method retrieves the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface of a framework memory object that represents an I/O request's input buffer.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559041">IWDFIoRequest2::RetrieveOutputBuffer</a>
+<a href="wdf.iwdfiorequest2_retrieveoutputbuffer">IWDFIoRequest2::RetrieveOutputBuffer</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputbuffer.md">RequestRetrieveOutputBuffer</a> method retrieves an I/O request's output buffer.</p>
@@ -185,15 +185,15 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559046">IWDFIoRequest2::RetrieveOutputMemory</a>
+<a href="wdf.iwdfiorequest2_retrieveoutputmemory">IWDFIoRequest2::RetrieveOutputMemory</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="wdf.iwdfiorequest2_retrieveoutputmemory">RetrieveOutputMemory</a> method retrieves the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a> interface of a framework memory object that represents an I/O request's output buffer.</p>
+<p>The <a href="wdf.iwdfiorequest2_retrieveoutputmemory">RetrieveOutputMemory</a> method retrieves the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface of a framework memory object that represents an I/O request's output buffer.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559048">IWDFIoRequest2::Reuse</a>
+<a href="wdf.iwdfiorequest2_reuse">IWDFIoRequest2::Reuse</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest2_reuse">Reuse</a> method reinitializes a framework request object so that it can be reused.</p>
@@ -201,7 +201,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559051">IWDFIoRequest2::StopAcknowledge</a>
+<a href="wdf.iwdfiorequest2_stopacknowledge">IWDFIoRequest2::StopAcknowledge</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfiorequest2_stopacknowledge">StopAcknowledge</a> method informs the framework that the driver has stopped processing a specified I/O request.</p>
@@ -215,9 +215,9 @@ req.product: Windows 10 or later.
 
 <p>The <a href="wdf.iwdfiorequest2_getrequestormode">GetRequestorMode</a> method indicates whether an I/O request came from a kernel-mode driver or a user-mode component (either an application or a user-mode driver).</p>
 
-<p>The <a href="wdf.iwdfiorequest2_getsetinformationparameters">GetSetInformationParameters</a> method retrieves parameters that are associated with a <a href="https://msdn.microsoft.com/library/windows/hardware/ff550032">WdfRequestSetInformation</a>-typed I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest2_getsetinformationparameters">GetSetInformationParameters</a> method retrieves parameters that are associated with a <a href="..\wudfddi_types\ne-wudfddi-types--wdf-request-type.md">WdfRequestSetInformation</a>-typed I/O request.</p>
 
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh406321">GetStatus</a> method returns the status of an I/O request.</p>
+<p>The <a href="wdf.iwdfiorequest2_getstatus">GetStatus</a> method returns the status of an I/O request.</p>
 
 <p>The <a href="wdf.iwdfiorequest2_iscanceled">IsCanceled</a> method determines whether the I/O manager has attempted to cancel an I/O request.</p>
 
@@ -227,11 +227,11 @@ req.product: Windows 10 or later.
 
 <p>The <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveinputbuffer.md">RequestRetrieveInputBuffer</a> method retrieves an I/O request's input buffer.</p>
 
-<p>The <a href="wdf.iwdfiorequest2_retrieveinputmemory">RetrieveInputMemory</a> method retrieves the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a> interface of a framework memory object that represents an I/O request's input buffer.</p>
+<p>The <a href="wdf.iwdfiorequest2_retrieveinputmemory">RetrieveInputMemory</a> method retrieves the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface of a framework memory object that represents an I/O request's input buffer.</p>
 
 <p>The <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputbuffer.md">RequestRetrieveOutputBuffer</a> method retrieves an I/O request's output buffer.</p>
 
-<p>The <a href="wdf.iwdfiorequest2_retrieveoutputmemory">RetrieveOutputMemory</a> method retrieves the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a> interface of a framework memory object that represents an I/O request's output buffer.</p>
+<p>The <a href="wdf.iwdfiorequest2_retrieveoutputmemory">RetrieveOutputMemory</a> method retrieves the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface of a framework memory object that represents an I/O request's output buffer.</p>
 
 <p>The <a href="wdf.iwdfiorequest2_reuse">Reuse</a> method reinitializes a framework request object so that it can be reused.</p>
 

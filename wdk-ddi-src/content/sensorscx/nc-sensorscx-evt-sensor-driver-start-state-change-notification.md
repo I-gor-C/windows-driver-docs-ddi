@@ -7,7 +7,7 @@ old-location: sensors\evt_sensor_driver_start_state_change_notification.htm
 old-project: sensors
 ms.assetid: 93C2ABCE-15C9-4EE4-A9B5-A81788DB608C
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorDriver, OnSetProperties, ISensorDriver::OnSetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices

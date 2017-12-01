@@ -131,7 +131,7 @@ typedef enum  {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565389">SCSI_POWER_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport--scsi-power-request-block.md">SCSI_POWER_REQUEST_BLOCK</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: stream\kspinregisterpowercallbacks.htm
 old-project: stream
 ms.assetid: e498a907-8d20-4d00-9411-8e82030af223
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsPinRegisterPowerCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,19 @@ void KsPinRegisterPowerCallbacks(
 ### -param <i>Pin</i> [in]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure for which to register power callbacks. Note that the pin must actually process (be pin-centric) in order to receive power notification messages.</p>
+<p>A pointer to the <a href="..\ks\ns-ks--kspin.md">KSPIN</a> structure for which to register power callbacks. Note that the pin must actually process (be pin-centric) in order to receive power notification messages.</p>
 </dd>
 
 ### -param <i>Sleep</i> [in, optional]
 
 <dd>
-<p>This parameter supplies the address of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556345">AVStrMiniPinPower</a>  function that handles sleep requests for the device. Optional.</p>
+<p>This parameter supplies the address of a <a href="stream.avstrminipinpower">AVStrMiniPinPower</a>  function that handles sleep requests for the device. Optional.</p>
 </dd>
 
 ### -param <i>Wake</i> [in, optional]
 
 <dd>
-<p>This parameter supplies the address of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556345">AVStrMiniPinPower</a>  function that handles wake requests for the device. Optional.</p>
+<p>This parameter supplies the address of a <a href="stream.avstrminipinpower">AVStrMiniPinPower</a>  function that handles wake requests for the device. Optional.</p>
 </dd>
 </dl>
 
@@ -79,8 +79,6 @@ void KsPinRegisterPowerCallbacks(
 <p>None</p>
 
 ## -remarks
-<p>At least one of the callbacks must be specified when calling <b>KsPinRegisterPowerCallbacks</b>.</p>
-
 <p>At least one of the callbacks must be specified when calling <b>KsPinRegisterPowerCallbacks</b>.</p>
 
 ## -requirements
@@ -128,12 +126,12 @@ void KsPinRegisterPowerCallbacks(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562550">KsFilterRegisterPowerCallbacks</a>
+<a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556345">AVStrMiniPinPower</a>
+<a href="stream.avstrminipinpower">AVStrMiniPinPower</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinRegisterPowerCallbacks function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinRegisterPowerCallbacks function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

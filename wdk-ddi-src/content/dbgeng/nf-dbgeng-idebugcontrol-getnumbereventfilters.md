@@ -7,7 +7,7 @@ old-location: debugger\getnumbereventfilters.htm
 old-project: debugger
 ms.assetid: 6bb80c64-bb2e-4388-b1a8-479bdaa8b635
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl, GetNumberEventFilters, IDebugControl::GetNumberEventFilters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,13 +59,13 @@ HRESULT GetNumberEventFilters(
 ### -param <i>SpecificEvents</i> [out]
 
 <dd>
-<p>Receives the number of <a href="debugger.events#events#events">events</a> that can be controlled using the specific event filters.  These events are enumerated using some of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541490">DEBUG_FILTER_XXX</a> constants.</p>
+<p>Receives the number of <a href="debugger.events#events#events">events</a> that can be controlled using the specific event filters.  These events are enumerated using some of the <a href="debugger.debug_filter_xxx">DEBUG_FILTER_XXX</a> constants.</p>
 </dd>
 
 ### -param <i>SpecificExceptions</i> [out]
 
 <dd>
-<p>Receives the number of <a href="wdkgloss.e#wdkgloss.exception#wdkgloss.exception"><i>exceptions</i></a> that can be controlled using the specific exception filters.  The first specific exception filter is the default exception filter.  The exceptions controlled by the other specific exception filters will always have their own filter and will not inherit their behavior from the default specific exception filter.  These exception filters are identified by their exception code.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff558784">Specific Exceptions</a> for a list of the specific exception filters.</p>
+<p>Receives the number of <a href="wdkgloss.e#wdkgloss.exception#wdkgloss.exception"><i>exceptions</i></a> that can be controlled using the specific exception filters.  The first specific exception filter is the default exception filter.  The exceptions controlled by the other specific exception filters will always have their own filter and will not inherit their behavior from the default specific exception filter.  These exception filters are identified by their exception code.  See <a href="debugger.specific_exceptions">Specific Exceptions</a> for a list of the specific exception filters.</p>
 </dd>
 
 ### -param <i>ArbitraryExceptions</i> [out]
@@ -83,8 +83,6 @@ HRESULT GetNumberEventFilters(
 <p> </p>
 
 ## -remarks
-<p>For more information about event filters, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543071">Event Filters</a>.</p>
-
 <p>For more information about event filters, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543071">Event Filters</a>.</p>
 
 ## -requirements

@@ -7,7 +7,7 @@ old-location: stream\ksevent_item.htm
 old-project: stream
 ms.assetid: a501a693-bea1-43eb-af8c-5512c8ee9d50
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PKSEVENT_ITEM, KSEVENT_ITEM, *PKSEVENT_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,25 +68,25 @@ typedef struct {
 ### -field <b>DataInput</b>
 
 <dd>
-<p>Specifies the size in bytes of event data. The event data begins with a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a> structure that describes how the client should be notified when the event occurs, optionally followed by any additional parameters that specify when the event occurs. Must be at least <b>sizeof</b>(KSEVENTDATA).</p>
+<p>Specifies the size in bytes of event data. The event data begins with a <a href="stream.kseventdata">KSEVENTDATA</a> structure that describes how the client should be notified when the event occurs, optionally followed by any additional parameters that specify when the event occurs. Must be at least <b>sizeof</b>(KSEVENTDATA).</p>
 </dd>
 
 ### -field <b>ExtraEntryData</b>
 
 <dd>
-<p>Specifies the size in bytes of any additional memory that the system should allocate for each enable request for this event. The driver uses this memory to store any data it needs to keep track of the event request. The memory is allocated directly after the event enable request's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a> structure.</p>
+<p>Specifies the size in bytes of any additional memory that the system should allocate for each enable request for this event. The driver uses this memory to store any data it needs to keep track of the event request. The memory is allocated directly after the event enable request's <a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a> structure.</p>
 </dd>
 
 ### -field <b>AddHandler</b>
 
 <dd>
-<p>Pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff554260">AVStrMiniAddEvent</a> callback routine. Not used by the stream class driver. For AVStream minidrivers only.</p>
+<p>Pointer to a minidriver-supplied <a href="stream.avstrminiaddevent">AVStrMiniAddEvent</a> callback routine. Not used by the stream class driver. For AVStream minidrivers only.</p>
 </dd>
 
 ### -field <b>RemoveHandler</b>
 
 <dd>
-<p>Pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556361">AVStrMiniRemoveEvent</a> callback routine. Not used by the stream class driver. For AVStream minidrivers only.</p>
+<p>Pointer to a minidriver-supplied <a href="stream.avstrminiremoveevent">AVStrMiniRemoveEvent</a> callback routine. Not used by the stream class driver. For AVStream minidrivers only.</p>
 </dd>
 
 ### -field <b>SupportHandler</b>
@@ -116,18 +116,18 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a>
+<a href="stream.kseventdata">KSEVENTDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a>
+<a href="..\ks\ns-ks--ksevent-entry.md">KSEVENT_ENTRY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561662">KsDefaultAddEventHandler</a>
+<a href="..\ks\nf-ks-ksdefaultaddeventhandler.md">KsDefaultAddEventHandler</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560802">IOCTL_KS_DISABLE_EVENT</a>
+<a href="..\ks\ni-ks-ioctl-ks-disable-event.md">IOCTL_KS_DISABLE_EVENT</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSEVENT_ITEM structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSEVENT_ITEM structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

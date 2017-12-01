@@ -420,22 +420,6 @@ microcode activation event occurs.</p>
 
 <p><b>UFS_bMaxDataInSize</b> is equal to <b>bMaxInBufferSize</b> when a UFS device is shipped. </p>
 
-<p><b>UFS_bCurrentPowerMode</b> is the only attribute the device is required to return in any power mode. If the device
-is not in Active power mode or Idle power mode, a <b>QUERY REQUEST UPIU</b> to access descriptors, flags, or attributes other than <b>bCurrentPowerMode</b> may fail.</p>
-
-<p><b>UFS_bDeviceFFUStatu</b>s value is kept after power cycle, hardware reset or any other type of reset. This attribute may change value when a
-microcode activation event occurs.</p>
-
-<p><b>UFS_bMaxDataInSize</b> is equal to <b>bMaxInBufferSize</b> when a UFS device is shipped. </p>
-
-<p><b>UFS_bCurrentPowerMode</b> is the only attribute the device is required to return in any power mode. If the device
-is not in Active power mode or Idle power mode, a <b>QUERY REQUEST UPIU</b> to access descriptors, flags, or attributes other than <b>bCurrentPowerMode</b> may fail.</p>
-
-<p><b>UFS_bDeviceFFUStatu</b>s value is kept after power cycle, hardware reset or any other type of reset. This attribute may change value when a
-microcode activation event occurs.</p>
-
-<p><b>UFS_bMaxDataInSize</b> is equal to <b>bMaxInBufferSize</b> when a UFS device is shipped. </p>
-
 ## -requirements
 <table>
 <tr>

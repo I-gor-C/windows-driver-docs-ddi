@@ -231,10 +231,10 @@ typedef struct _DXVA_COPPSetSignalingCmdData {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539642">COPPCommand</a>
+<a href="display.coppcommand">COPPCommand</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563141">DXVA_COPPCommand</a>
+<a href="..\dxva\ns-dxva--dxva-coppcommand.md">DXVA_COPPCommand</a>
 </dt>
 </dl>
 <p> </p>

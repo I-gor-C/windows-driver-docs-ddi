@@ -7,7 +7,7 @@ old-location: wdf\ipnpcallback.htm
 old-project: wdf
 ms.assetid: b6ab28e1-08d5-49ee-931a-8e2fe68bd75e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556799">IPnpCallback::OnD0Entry</a>
+<a href="wdf.ipnpcallback_ond0entry">IPnpCallback::OnD0Entry</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.ipnpcallback_ond0entry">OnD0Entry</a> method notifies a driver when a device enters the D0 power state so that the driver can perform necessary operations, such as enabling the device. </p>
@@ -77,7 +77,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556803">IPnpCallback::OnD0Exit</a>
+<a href="wdf.ipnpcallback_ond0exit">IPnpCallback::OnD0Exit</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.ipnpcallback_ond0exit">OnD0Exit</a> method notifies a driver when a device exits the D0 power state so that the driver can perform necessary operations,  such as disabling the device. </p>
@@ -85,7 +85,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556808">IPnpCallback::OnQueryRemove</a>
+<a href="wdf.ipnpcallback_onqueryremove">IPnpCallback::OnQueryRemove</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.ipnpcallback_onqueryremove">OnQueryRemove</a> method notifies a driver before a device is removed from a computer. </p>
@@ -93,7 +93,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556811">IPnpCallback::OnQueryStop</a>
+<a href="wdf.ipnpcallback_onquerystop">IPnpCallback::OnQueryStop</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.ipnpcallback_onquerystop">OnQueryStop</a> method notifies a driver before a device is stopped. </p>
@@ -101,7 +101,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556812">IPnpCallback::OnSurpriseRemoval</a>
+<a href="wdf.ipnpcallback_onsurpriseremoval">IPnpCallback::OnSurpriseRemoval</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.ipnpcallback_onsurpriseremoval">OnSurpriseRemoval</a> method notifies a driver after a device is removed from a computer unexpectedly so that the driver can perform necessary operations.</p>
@@ -120,9 +120,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>A driver registers the <b>IPnpCallback</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. </p>
-
-<p>A driver registers the <b>IPnpCallback</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. </p>
+<p>A driver registers the <b>IPnpCallback</b> interface when the driver calls the <a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a> method to create a device object. </p>
 
 ## -requirements
 <table>

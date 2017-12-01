@@ -7,7 +7,7 @@ old-location: netvista\rilrequestgeolocationdataparammask.htm
 old-project: netvista
 ms.assetid: 86b89336-56f9-4665-a0d3-37dc6ec6c377
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -226,7 +226,7 @@ typedef struct _WIA_PROPERTY_INFO {
 
 <p>A property whose valid values are defined by a bitset of the values 0x01, 0x02, 0x04, and 0x08 would have the WIA_PROP_FLAG bit set in <b>lAccessFlags</b>, and <b>vt</b> would be set to VT_UI4. For such a property, the value stored in <b>Flag.ValidBits</b> would be 0x0F, the bitwise OR of the four flag values previously mentioned.</p>
 
-<p>The following examples show how to use array data with WIA_PROPERTY_INFO and how to call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549475">wiasWriteMultiple</a> to set your property values.</p>
+<p>The following examples show how to use array data with WIA_PROPERTY_INFO and how to call <a href="..\wiamdef\nf-wiamdef-wiaswritemultiple.md">wiasWriteMultiple</a> to set your property values.</p>
 
 <p>Initialization might look like the following example:</p>
 
@@ -259,7 +259,7 @@ typedef struct _WIA_PROPERTY_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549358">wiasSetItemPropAttribs</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a>
 </dt>
 </dl>
 <p> </p>

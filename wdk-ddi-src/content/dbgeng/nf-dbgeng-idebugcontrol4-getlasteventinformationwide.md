@@ -7,7 +7,7 @@ old-location: debugger\getlasteventinformationwide.htm
 old-project: debugger
 ms.assetid: 9ec4ae29-7c9f-4da6-ae5d-57de9423cb30
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl4, GetLastEventInformationWide, IDebugControl4::GetLastEventInformationWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -132,10 +132,6 @@ HRESULT GetLastEventInformationWide(
 
 <p>For more information about the last event, see the topic <a href="https://msdn.microsoft.com/library/windows/hardware/ff543075">Event Information</a>.</p>
 
-<p>For thread and process creation events, the thread ID and process ID returned to <i>ThreadId</i> and <i>ProcessId</i> are for the newly created thread or process.</p>
-
-<p>For more information about the last event, see the topic <a href="https://msdn.microsoft.com/library/windows/hardware/ff543075">Event Information</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -163,12 +159,12 @@ HRESULT GetLastEventInformationWide(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548431">GetStoredEventInformation</a>
+<a href="debugger.getstoredeventinformation">GetStoredEventInformation</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::GetLastEventInformationWide method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::GetLastEventInformationWide method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

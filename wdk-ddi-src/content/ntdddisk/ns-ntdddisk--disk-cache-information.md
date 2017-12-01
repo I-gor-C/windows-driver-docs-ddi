@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The DISK_CACHE_INFORMATION structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559451">IOCTL_DISK_GET_CACHE_INFORMATION</a> request to retrieve cache information.</p>
+<p>The DISK_CACHE_INFORMATION structure is used with the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-cache-information.md">IOCTL_DISK_GET_CACHE_INFORMATION</a> request to retrieve cache information.</p>
 
 
 ## -syntax
@@ -92,7 +92,7 @@ typedef struct _DISK_CACHE_INFORMATION {
 ### -field <b>ReadRetentionPriority</b>
 
 <dd>
-<p>Determines the likelihood of various types of data remaining in the cache. By means of this value, for instance, data cached from a READ or WRITE operation might be given a different priority than data cached under other circumstances, such as prefetch operations. Thus a value of <b>EqualPriority</b> indicates that no data is held in the cache on a preferential basis. When <b>ReadRetentionPriority</b> is set to <b>EqualPriority</b>, all types of data have equal access to cache memory. On the other hand, a value of <b>KeepPrefetchedData</b> indicates that a preference is to be given to prefetched data while a value of <b>KeepReadData</b> indicates that a preference is to be given to data cached from a READ operation. For more information about the values that can be assigned to this member see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552583">DISK_CACHE_RETENTION_PRIORITY</a> enumeration. </p>
+<p>Determines the likelihood of various types of data remaining in the cache. By means of this value, for instance, data cached from a READ or WRITE operation might be given a different priority than data cached under other circumstances, such as prefetch operations. Thus a value of <b>EqualPriority</b> indicates that no data is held in the cache on a preferential basis. When <b>ReadRetentionPriority</b> is set to <b>EqualPriority</b>, all types of data have equal access to cache memory. On the other hand, a value of <b>KeepPrefetchedData</b> indicates that a preference is to be given to prefetched data while a value of <b>KeepReadData</b> indicates that a preference is to be given to data cached from a READ operation. For more information about the values that can be assigned to this member see the <a href="..\ntdddisk\ne-ntdddisk-disk-cache-retention-priority.md">DISK_CACHE_RETENTION_PRIORITY</a> enumeration. </p>
 </dd>
 
 ### -field <b>WriteRetentionPriority</b>
@@ -178,10 +178,10 @@ typedef struct _DISK_CACHE_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559451">IOCTL_DISK_GET_CACHE_INFORMATION</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-get-cache-information.md">IOCTL_DISK_GET_CACHE_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552580">DISK_CACHE_INFORMATION</a>
+<a href="..\ntdddisk\ns-ntdddisk--disk-cache-information.md">DISK_CACHE_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

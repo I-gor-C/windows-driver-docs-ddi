@@ -57,7 +57,7 @@ NTSTATUS D3DKMTOpenKeyedMutex(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548135">D3DKMT_OPENKEYEDMUTEX</a> structure that describes a keyed mutex object.</p>
+<p> A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openkeyedmutex.md">D3DKMT_OPENKEYEDMUTEX</a> structure that describes a keyed mutex object.</p>
 </dd>
 </dl>
 
@@ -72,7 +72,7 @@ NTSTATUS D3DKMTOpenKeyedMutex(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547054">D3DKMTOpenKeyedMutex</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenkeyedmutex.md">D3DKMTOpenKeyedMutex</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
@@ -136,7 +136,7 @@ NTSTATUS D3DKMTOpenKeyedMutex(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548135">D3DKMT_OPENKEYEDMUTEX</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-openkeyedmutex.md">D3DKMT_OPENKEYEDMUTEX</a>
 </dt>
 </dl>
 <p> </p>

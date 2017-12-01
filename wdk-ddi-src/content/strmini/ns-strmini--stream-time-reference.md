@@ -7,7 +7,7 @@ old-location: stream\stream_time_reference.htm
 old-project: stream
 ms.assetid: BC3839C0-AED6-470D-9C2B-B1529B2B3D1A
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: STREAM_TIME_REFERENCE, STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\fwpsinjecttransportsendasync1.htm
 old-project: netvista
 ms.assetid: 74d91e43-d58a-4c2c-bfc9-4b0829a5f9f8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsInjectTransportSendAsync1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,7 @@ req.iface:
 <p>The 
   <b>FwpsInjectTransportSendAsync1</b> function injects packet data from the transport, datagram data, or ICMP
   error layers into the send data path. This function differs from the previous version
-  (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551188">FwpsInjectTransportSendAsync0</a>) in that it takes an updated parameters structure as an argument.</p>
+  (<a href="..\fwpsk\nf-fwpsk-fwpsinjecttransportsendasync0.md">FwpsInjectTransportSendAsync0</a>) in that it takes an updated parameters structure as an argument.</p>
 
 
 ## -syntax
@@ -78,8 +78,8 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 
 <dd>
 <p>An optional handle to the injection context. If specified, it can be obtained by calling the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551202">FwpsQueryPacketInjectionState0</a> function when the packet injection state 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552408">FWPS_PACKET_INJECTION_STATE</a> is
+     <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a> function when the packet injection state 
+     <a href="netvista.fwps_packet_injection_state">FWPS_PACKET_INJECTION_STATE</a> is
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.</p>
 </dd>
 
@@ -91,7 +91,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
      <b>transportEndpointHandle</b> member of the 
      <a href="netvista.fwps_incoming_metadata_values0">
      FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function. Callout
+     <a href="netvista.classifyfn">classifyFn</a> callout function. Callout
      drivers should use the provided handle to inject cloned packets back into the data path as soon as
      possible, before the socket associated with the stack endpoint is closed and the handle becomes no
      longer valid.</p>
@@ -139,12 +139,12 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 
 <dd>
 <p>The identifier of the routing compartment into which the packet data is injected, specified as a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff542009">COMPARTMENT_ID</a> type. This identifier is provided
+     <a href="kernel.compartment_id">COMPARTMENT_ID</a> type. This identifier is provided
      to a callout through the 
      <b>compartmentId</b> member of the 
      <a href="netvista.fwps_incoming_metadata_values0">
      FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function. If the 
+     <a href="netvista.classifyfn">classifyFn</a> callout function. If the 
      <b>compartmentId</b> member is available to callouts, FWPS_METADATA_FIELD_COMPARTMENT_ID will be set in
      the 
      <b>currentMetadataValues</b> member. Otherwise, set this parameter to UNSPECIFIED_COMPARTMENT_ID.</p>
@@ -154,7 +154,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that describes
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure that describes
      the packet data that is being injected. A callout driver allocates a <b>NET_BUFFER_LIST</b> structure to use to
      inject packet data by calling either the 
      <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
@@ -189,7 +189,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
        function after the filter engine has completed injecting the packet data into the network stack, or
        when an error occurred subsequently. In case of an error, the 
        <b>Status</b> member of the completed 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure will indicate
+       <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure will indicate
        the reason for failure.</p><dl>
 <dt><b>STATUS_FWP_TCPIP_NOT_READY</b></dt>
 </dl><p>The TCP/IP network stack is not ready to accept injection of packet data.</p><dl>
@@ -212,8 +212,8 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 <p>If the return value is not <b>STATUS_SUCCESS</b>, the completion function will not be called. In this case,
     the net buffer list pointed to by 
     <i>netBufferList</i> must be freed by a call to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551172">FwpsFreeNetBufferList0</a> or 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551170">FwpsFreeCloneNetBufferList0</a>.</p>
+    <a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a> or 
+    <a href="..\fwpsk\nf-fwpsk-fwpsfreeclonenetbufferlist0.md">FwpsFreeCloneNetBufferList0</a>.</p>
 
 <p>Callout drivers normally inject data into the network stack when they modify packet data. For more
     information about how a callout driver can modify packet data, see 
@@ -223,15 +223,15 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
     driver should first call the 
     <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
     FwpsQueryPacketInjectionState0</a> function before calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function, and permit
+    <a href="netvista.classifyfn">classifyFn</a> callout function, and permit
     packets that have the injection state 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552408">FWPS_PACKET_INJECTION_STATE</a> set to
+    <a href="netvista.fwps_packet_injection_state">FWPS_PACKET_INJECTION_STATE</a> set to
     <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.</p>
 
 <p>The 
     <i>endpointHandle</i> parameter and members declared in the 
     
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552423">FWPS_TRANSPORT_SEND_PARAMS1</a> structure pointed to by the 
+    <a href="netvista.fwps_transport_send_params1">FWPS_TRANSPORT_SEND_PARAMS1</a> structure pointed to by the 
     <i>sendArgs</i> parameter are provided to callouts from the following network layers:</p>
 
 <p>
@@ -255,26 +255,9 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 <p>FWPS_LAYER_OUTBOUND_ICMP_ERROR_V6</p>
 </dd>
 </dl>
-</p><dl>
-<dd>
+</p>
+
 <p>FWPS_LAYER_OUTBOUND_TRANSPORT_V4</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_OUTBOUND_TRANSPORT_V6</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_DATAGRAM_DATA_V4 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_DATAGRAM_DATA_V6 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_OUTBOUND_ICMP_ERROR_V4</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_OUTBOUND_ICMP_ERROR_V6</p>
-</dd>
-</dl><p>FWPS_LAYER_OUTBOUND_TRANSPORT_V4</p>
 
 <p>FWPS_LAYER_OUTBOUND_TRANSPORT_V6</p>
 
@@ -287,12 +270,12 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 <p>FWPS_LAYER_OUTBOUND_ICMP_ERROR_V6</p>
 
 <p>The datagram belongs to a raw socket if both of the following are true: <ul>
-<li>The <b>currentMetadataValues</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552397">FWPS_INCOMING_METADATA_VALUES0</a> structure has the <b>FWPS_METADATA_FIELD_IP_HEADER_SIZE</b> flag set.</li>
-<li>The <b>ipHeaderSize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552397">FWPS_INCOMING_METADATA_VALUES0</a> structure is greater than zero.</li>
+<li>The <b>currentMetadataValues</b> member of the <a href="netvista.fwps_incoming_metadata_values0">FWPS_INCOMING_METADATA_VALUES0</a> structure has the <b>FWPS_METADATA_FIELD_IP_HEADER_SIZE</b> flag set.</li>
+<li>The <b>ipHeaderSize</b> member of the <a href="netvista.fwps_incoming_metadata_values0">FWPS_INCOMING_METADATA_VALUES0</a> structure is greater than zero.</li>
 </ul>
 </p>
 
-<p>At the following network layers, if the datagram belongs to a raw socket, you'll need to copy the <b>headerIncludeHeader</b> and <b>headerIncludeHeaderLength</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552397">FWPS_INCOMING_METADATA_VALUES0</a> structure into the corresponding member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552423">FWPS_TRANSPORT_SEND_PARAMS1</a> structure that the <i>sendArgs</i> parameter points to:<ul>
+<p>At the following network layers, if the datagram belongs to a raw socket, you'll need to copy the <b>headerIncludeHeader</b> and <b>headerIncludeHeaderLength</b> members of the <a href="netvista.fwps_incoming_metadata_values0">FWPS_INCOMING_METADATA_VALUES0</a> structure into the corresponding member of the <a href="netvista.fwps_transport_send_params1">FWPS_TRANSPORT_SEND_PARAMS1</a> structure that the <i>sendArgs</i> parameter points to:<ul>
 <li>
 <p>FWPS_LAYER_DATAGRAM_DATA_V4 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
 </li>
@@ -301,115 +284,6 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 </li>
 </ul>
 </p>
-
-<p>FWPS_LAYER_DATAGRAM_DATA_V4 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-
-<p>FWPS_LAYER_DATAGRAM_DATA_V6 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-
-<p>A callout driver calls the 
-     function to inject packet data from the transport, datagram data, or
-    ICMP error layers into the send data path. At these layers, the IP header might no<b>FwpsInjectTransportSendAsync1</b>t yet be formed, and
-    when IPsec policy is active, the packet data is not encrypted or signed. Therefore, this function is
-    ideal to use for packet inspection in an IPsec-enabled environment.</p>
-
-<p>This function can execute asynchronously.</p>
-
-<p>If the return value is not <b>STATUS_SUCCESS</b>, the completion function will not be called. In this case,
-    the net buffer list pointed to by 
-    <i>netBufferList</i> must be freed by a call to 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551172">FwpsFreeNetBufferList0</a> or 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551170">FwpsFreeCloneNetBufferList0</a>.</p>
-
-<p>Callout drivers normally inject data into the network stack when they modify packet data. For more
-    information about how a callout driver can modify packet data, see 
-    <a href="NULL">Callout Driver Operations</a>.</p>
-
-<p>The injected packet can be indicated to the callout driver again. To prevent infinite looping, the
-    driver should first call the 
-    <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
-    FwpsQueryPacketInjectionState0</a> function before calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function, and permit
-    packets that have the injection state 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552408">FWPS_PACKET_INJECTION_STATE</a> set to
-    <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.</p>
-
-<p>The 
-    <i>endpointHandle</i> parameter and members declared in the 
-    
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552423">FWPS_TRANSPORT_SEND_PARAMS1</a> structure pointed to by the 
-    <i>sendArgs</i> parameter are provided to callouts from the following network layers:</p>
-
-<p>
-<dl>
-<dd>
-<p>FWPS_LAYER_OUTBOUND_TRANSPORT_V4</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_OUTBOUND_TRANSPORT_V6</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_DATAGRAM_DATA_V4 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_DATAGRAM_DATA_V6 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_OUTBOUND_ICMP_ERROR_V4</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_OUTBOUND_ICMP_ERROR_V6</p>
-</dd>
-</dl>
-</p><dl>
-<dd>
-<p>FWPS_LAYER_OUTBOUND_TRANSPORT_V4</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_OUTBOUND_TRANSPORT_V6</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_DATAGRAM_DATA_V4 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_DATAGRAM_DATA_V6 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_OUTBOUND_ICMP_ERROR_V4</p>
-</dd>
-<dd>
-<p>FWPS_LAYER_OUTBOUND_ICMP_ERROR_V6</p>
-</dd>
-</dl><p>FWPS_LAYER_OUTBOUND_TRANSPORT_V4</p>
-
-<p>FWPS_LAYER_OUTBOUND_TRANSPORT_V6</p>
-
-<p>FWPS_LAYER_DATAGRAM_DATA_V4 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-
-<p>FWPS_LAYER_DATAGRAM_DATA_V6 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-
-<p>FWPS_LAYER_OUTBOUND_ICMP_ERROR_V4</p>
-
-<p>FWPS_LAYER_OUTBOUND_ICMP_ERROR_V6</p>
-
-<p>The datagram belongs to a raw socket if both of the following are true: <ul>
-<li>The <b>currentMetadataValues</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552397">FWPS_INCOMING_METADATA_VALUES0</a> structure has the <b>FWPS_METADATA_FIELD_IP_HEADER_SIZE</b> flag set.</li>
-<li>The <b>ipHeaderSize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552397">FWPS_INCOMING_METADATA_VALUES0</a> structure is greater than zero.</li>
-</ul>
-</p>
-
-<p>At the following network layers, if the datagram belongs to a raw socket, you'll need to copy the <b>headerIncludeHeader</b> and <b>headerIncludeHeaderLength</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552397">FWPS_INCOMING_METADATA_VALUES0</a> structure into the corresponding member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552423">FWPS_TRANSPORT_SEND_PARAMS1</a> structure that the <i>sendArgs</i> parameter points to:<ul>
-<li>
-<p>FWPS_LAYER_DATAGRAM_DATA_V4 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-</li>
-<li>
-<p>FWPS_LAYER_DATAGRAM_DATA_V6 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-</li>
-</ul>
-</p>
-
-<p>FWPS_LAYER_DATAGRAM_DATA_V4 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
-
-<p>FWPS_LAYER_DATAGRAM_DATA_V6 (when outbound direction is specified with FWP_DIRECTION_OUTBOUND)</p>
 
 ## -requirements
 <table>
@@ -464,7 +338,7 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+<a href="netvista.classifyfn">classifyFn</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps-inject-complete0.md">completionFn</a>
@@ -474,10 +348,10 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
    FWPS_INCOMING_METADATA_VALUES0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552408">FWPS_PACKET_INJECTION_STATE</a>
+<a href="netvista.fwps_packet_injection_state">FWPS_PACKET_INJECTION_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552423">FWPS_TRANSPORT_SEND_PARAMS1</a>
+<a href="netvista.fwps_transport_send_params1">FWPS_TRANSPORT_SEND_PARAMS1</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
@@ -488,28 +362,28 @@ NTSTATUS NTAPI FwpsInjectTransportSendAsync1(
    FwpsAllocateNetBufferAndNetBufferList0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551170">FwpsFreeCloneNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsfreeclonenetbufferlist0.md">FwpsFreeCloneNetBufferList0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551172">FwpsFreeNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551180">FwpsInjectionHandleCreate0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551181">FwpsInjectionHandleDestroy0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandledestroy0.md">FwpsInjectionHandleDestroy0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551188">FwpsInjectTransportSendAsync0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjecttransportsendasync0.md">FwpsInjectTransportSendAsync0</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
    FwpsQueryPacketInjectionState0</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectTransportSendAsync1 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectTransportSendAsync1 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

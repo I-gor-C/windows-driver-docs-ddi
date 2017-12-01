@@ -7,7 +7,7 @@ old-location: stream\bda_wmdrm_status.htm
 old-project: stream
 ms.assetid: FEE7B3B2-2433-4772-8E79-C325ECC343FF
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: BDA_WMDRM_STATUS, BDA_WMDRM_STATUS, *PBDA_WMDRM_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

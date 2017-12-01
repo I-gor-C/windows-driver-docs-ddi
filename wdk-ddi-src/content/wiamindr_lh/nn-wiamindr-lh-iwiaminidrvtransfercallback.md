@@ -62,7 +62,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151551">GetNextStream</a>
+<a href="image.iwiaminidrvtransfercallback_getnextstream">GetNextStream</a>
 </td>
 <td align="left" width="63%">
 <p>Called by the WIA mini-driver to obtain a stream for the current data transfer (download or upload).</p>
@@ -70,7 +70,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj151552">SendMessage</a>
+<a href="image.iwiaminidrvtransfercallback_sendmessage">SendMessage</a>
 </td>
 <td align="left" width="63%">
 <p>Periodically called by the WIA mini-driver during a data transfer, to update the WIA application client about the progress and status of the transfer.</p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The USBSCAN_PIPE_INFORMATION structure is used to describe a USB transfer pipe for a still image device. An array of USBSCAN_PIPE_INFORMATION structures is supplied within a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548541">USBSCAN_PIPE_CONFIGURATION</a> structure.</p>
+<p>The USBSCAN_PIPE_INFORMATION structure is used to describe a USB transfer pipe for a still image device. An array of USBSCAN_PIPE_INFORMATION structures is supplied within a <a href="..\usbscan\ns-usbscan--usbscan-pipe-configuration.md">USBSCAN_PIPE_CONFIGURATION</a> structure.</p>
 
 
 ## -syntax
@@ -113,7 +113,7 @@ typedef struct _USBSCAN_PIPE_INFORMATION {
 ### -field <b>PipeType</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547001">RAW_PIPE_TYPE</a>-typed value identifying the pipe type.</p>
+<p>A <a href="..\usbscan\ne-usbscan--raw-pipe-type.md">RAW_PIPE_TYPE</a>-typed value identifying the pipe type.</p>
 </dd>
 </dl>
 
@@ -137,10 +137,10 @@ typedef struct _USBSCAN_PIPE_INFORMATION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548541">USBSCAN_PIPE_CONFIGURATION</a>
+<a href="..\usbscan\ns-usbscan--usbscan-pipe-configuration.md">USBSCAN_PIPE_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547001">RAW_PIPE_TYPE</a>
+<a href="..\usbscan\ne-usbscan--raw-pipe-type.md">RAW_PIPE_TYPE</a>
 </dt>
 </dl>
 <p> </p>

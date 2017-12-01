@@ -81,7 +81,7 @@ typedef struct _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT {
 ### -field <b>F1IdleStateParameters</b>
 
 <dd>
-<p>A <b>PO_FX_COMPONENT_IDLE_STATE</b> structure that describes the parameters (transition latency, residency requirement, and so on) for the F1 power state of the GPIO bank. For more information about these parameters, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439581">PO_FX_COMPONENT_IDLE_STATE</a>.</p>
+<p>A <b>PO_FX_COMPONENT_IDLE_STATE</b> structure that describes the parameters (transition latency, residency requirement, and so on) for the F1 power state of the GPIO bank. For more information about these parameters, see <a href="..\wdm\ns-wdm--po-fx-component-idle-state.md">PO_FX_COMPONENT_IDLE_STATE</a>.</p>
 </dd>
 </dl>
 
@@ -118,7 +118,7 @@ typedef struct _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT {
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439581">PO_FX_COMPONENT_IDLE_STATE</a>
+<a href="..\wdm\ns-wdm--po-fx-component-idle-state.md">PO_FX_COMPONENT_IDLE_STATE</a>
 </dt>
 </dl>
 <p> </p>

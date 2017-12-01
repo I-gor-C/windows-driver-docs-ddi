@@ -7,7 +7,7 @@ old-location: debugger\debug_value.htm
 old-project: debugger
 ms.assetid: 568469ad-79c4-4437-aefe-a29e77e5143a
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_VALUE, DEBUG_VALUE, *PDEBUG_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -257,8 +257,6 @@ typedef struct _DEBUG_VALUE {
 
 ## -remarks
 <p>The <b>Type</b> field specifies the value type that is being held by the structure. This also specifies which field in the structure is valid. The possible values of the <b>Type</b> field, and the corresponding field specified as valid in the structure, include the following.</p>
-
-<p> </p>
 
 ## -requirements
 <table>

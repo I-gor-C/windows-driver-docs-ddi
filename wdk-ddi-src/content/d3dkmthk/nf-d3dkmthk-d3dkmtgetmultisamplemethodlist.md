@@ -57,7 +57,7 @@ NTSTATUS D3DKMTGetMultisampleMethodList(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548039">D3DKMT_GETMULTISAMPLEMETHODLIST</a> structure that describes the list of multiple-sample methods for an allocation.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getmultisamplemethodlist.md">D3DKMT_GETMULTISAMPLEMETHODLIST</a> structure that describes the list of multiple-sample methods for an allocation.</p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS D3DKMTGetMultisampleMethodList(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548039">D3DKMT_GETMULTISAMPLEMETHODLIST</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getmultisamplemethodlist.md">D3DKMT_GETMULTISAMPLEMETHODLIST</a>
 </dt>
 </dl>
 <p> </p>

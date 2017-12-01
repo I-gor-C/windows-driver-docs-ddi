@@ -7,7 +7,7 @@ old-location: netvista\rilgetimsparams.htm
 old-project: netvista
 ms.assetid: 4e8f01af-9279-483a-90f9-d0391122ba5b
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILGETIMSPARAMS, RILGETIMSPARAMS, *LPRILGETIMSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

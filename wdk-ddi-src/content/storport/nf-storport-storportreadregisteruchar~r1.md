@@ -73,9 +73,7 @@ STORPORT_API UCHAR StorPortReadRegisterUchar(
 <p><b>StorPortReadRegisterUchar</b> returns an unsigned character of data read from the indicated register address. </p>
 
 ## -remarks
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564740">ScsiPortReadRegisterUchar</a>. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567479">StorPortReadRegisterBufferUchar</a>.</p>
-
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564740">ScsiPortReadRegisterUchar</a>. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567479">StorPortReadRegisterBufferUchar</a>.</p>
+<p>For more information, see <a href="..\srb\nf-srb-scsiportreadregisteruchar.md">ScsiPortReadRegisterUchar</a>. For a buffered version of this routine, see <a href="..\storport\nf-storport-storportreadregisterbufferuchar.md">StorPortReadRegisterBufferUchar</a>.</p>
 
 ## -requirements
 <table>
@@ -114,10 +112,10 @@ STORPORT_API UCHAR StorPortReadRegisterUchar(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564740">ScsiPortReadRegisterUchar</a>
+<a href="..\srb\nf-srb-scsiportreadregisteruchar.md">ScsiPortReadRegisterUchar</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567479">StorPortReadRegisterBufferUchar</a>
+<a href="..\storport\nf-storport-storportreadregisterbufferuchar.md">StorPortReadRegisterBufferUchar</a>
 </dt>
 </dl>
 <p> </p>

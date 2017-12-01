@@ -7,7 +7,7 @@ old-location: netvista\rilcallaudioquality.htm
 old-project: netvista
 ms.assetid: bdd9879a-ec9b-431a-be95-4a1844e6238f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

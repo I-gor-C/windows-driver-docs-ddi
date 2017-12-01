@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CDROM_SUB_Q_DATA_FORMAT structure is used with device control IRPs of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559363">IOCTL_CDROM_READ_Q_CHANNEL</a>. </p>
+<p>The CDROM_SUB_Q_DATA_FORMAT structure is used with device control IRPs of type <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-q-channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>. </p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ typedef struct _CDROM_SUB_Q_DATA_FORMAT {
 ### -field <a id="IOCTL_CDROM_CURRENT_POSITION_"></a><a id="ioctl_cdrom_current_position_"></a>IOCTL_CDROM_CURRENT_POSITION 
 
 <dd>
-<p>Indicates that the read operation should return position information such as the track number, the index number, the absolute address, and the track relative address. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567596">SUB_Q_CURRENT_POSITION</a> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567595">SUB_Q_CHANNEL_DATA</a> structure.</p>
+<p>Indicates that the read operation should return position information such as the track number, the index number, the absolute address, and the track relative address. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-current-position.md">SUB_Q_CURRENT_POSITION</a> member of the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-channel-data.md">SUB_Q_CHANNEL_DATA</a> structure.</p>
 </dd>
 </dl>
 <p></p>
@@ -74,7 +74,7 @@ typedef struct _CDROM_SUB_Q_DATA_FORMAT {
 ### -field <a id="IOCTL_CDROM_MEDIA_CATALOG"></a><a id="ioctl_cdrom_media_catalog"></a>IOCTL_CDROM_MEDIA_CATALOG
 
 <dd>
-<p>Indicates that the read operation should return the media catalog number. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567600">SUB_Q_MEDIA_CATALOG_NUMBER</a> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567595">SUB_Q_CHANNEL_DATA</a> structure.</p>
+<p>Indicates that the read operation should return the media catalog number. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-media-catalog-number.md">SUB_Q_MEDIA_CATALOG_NUMBER</a> member of the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-channel-data.md">SUB_Q_CHANNEL_DATA</a> structure.</p>
 </dd>
 </dl>
 <p></p>
@@ -83,7 +83,7 @@ typedef struct _CDROM_SUB_Q_DATA_FORMAT {
 ### -field <a id="IOCTL_CDROM_TRACK_ISRC"></a><a id="ioctl_cdrom_track_isrc"></a>IOCTL_CDROM_TRACK_ISRC
 
 <dd>
-<p>Indicates that the read operation should return the ISO/IEC 3901 Track International Standard Recording Code (ISRC). This code gives a unique number to an audio track. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567601">SUB_Q_TRACK_ISRC</a> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567595">SUB_Q_CHANNEL_DATA</a> structure.</p>
+<p>Indicates that the read operation should return the ISO/IEC 3901 Track International Standard Recording Code (ISRC). This code gives a unique number to an audio track. If the IOCTL_CDROM_Q_CHANNEL device control IRP specifies this format, the information is returned in the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-track-isrc.md">SUB_Q_TRACK_ISRC</a> member of the <a href="..\ntddcdrm\ns-ntddcdrm--sub-q-channel-data.md">SUB_Q_CHANNEL_DATA</a> structure.</p>
 </dd>
 </dl>
 </dd>
@@ -115,19 +115,19 @@ typedef struct _CDROM_SUB_Q_DATA_FORMAT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559363">IOCTL_CDROM_READ_Q_CHANNEL</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-read-q-channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567595">SUB_Q_CHANNEL_DATA</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--sub-q-channel-data.md">SUB_Q_CHANNEL_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567596">SUB_Q_CURRENT_POSITION</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--sub-q-current-position.md">SUB_Q_CURRENT_POSITION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567600">SUB_Q_MEDIA_CATALOG_NUMBER</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--sub-q-media-catalog-number.md">SUB_Q_MEDIA_CATALOG_NUMBER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567601">SUB_Q_TRACK_ISRC</a>
+<a href="..\ntddcdrm\ns-ntddcdrm--sub-q-track-isrc.md">SUB_Q_TRACK_ISRC</a>
 </dt>
 </dl>
 <p> </p>

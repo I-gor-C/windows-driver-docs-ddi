@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_register_ushort.htm
 old-project: wdf
 ms.assetid: EC3D7812-4EAB-419D-B736-47AE148FC61C
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_READ_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices

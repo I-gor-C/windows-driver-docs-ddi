@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Specifies driver-specific data for the extended Microsoft DirectX Video Acceleration (DXVA) decoding function that is provided by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451699">VideoDecoderExtension</a> function.</p>
+<p>Specifies driver-specific data for the extended Microsoft DirectX Video Acceleration (DXVA) decoding function that is provided by a call to the <a href="display.videodecoderextension">VideoDecoderExtension</a> function.</p>
 
 
 ## -syntax
@@ -139,7 +139,7 @@ typedef struct D3D11_1DDIARG_VIDEODECODEREXTENSION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451699">VideoDecoderExtension</a>
+<a href="display.videodecoderextension">VideoDecoderExtension</a>
 </dt>
 </dl>
 <p> </p>

@@ -135,8 +135,6 @@ NTSTATUS SecMakeSPNEx(
 ## -remarks
 <p><b>SecMakeSPNEx</b> is an enhanced version of <b>SecMakeSPN</b>. </p>
 
-<p><b>SecMakeSPNEx</b> is an enhanced version of <b>SecMakeSPN</b>. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -190,10 +188,10 @@ NTSTATUS SecMakeSPNEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556584">SecMakeSPN</a>
+<a href="..\ntifs\nf-ntifs-secmakespn.md">SecMakeSPN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556592">SecMakeSPNEx2</a>
+<a href="..\ntifs\nf-ntifs-secmakespnex2.md">SecMakeSPNEx2</a>
 </dt>
 </dl>
 <p> </p>

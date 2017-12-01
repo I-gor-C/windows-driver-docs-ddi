@@ -128,7 +128,7 @@ typedef enum _UCM_PD_POWER_DATA_OBJECT_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187936">UCM_PD_POWER_DATA_OBJECT_GET_TYPE</a>
+<a href="buses.ucm_pd_power_data_object_get_type">UCM_PD_POWER_DATA_OBJECT_GET_TYPE</a>
 </dt>
 </dl>
 <p> </p>

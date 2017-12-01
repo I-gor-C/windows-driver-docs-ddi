@@ -101,7 +101,7 @@ typedef struct _D3DDDIARG_DECRYPTIONBLT {
 ### -field <b>pEncryptedBlockInfo</b>
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544298">D3DDDIENCRYPTED_BLOCK_INFO</a> structure that describes the portions of the buffer that are encrypted. </p>
+<p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiencrypted-block-info.md">D3DDDIENCRYPTED_BLOCK_INFO</a> structure that describes the portions of the buffer that are encrypted. </p>
 </dd>
 
 ### -field <b>pContentKey</b>
@@ -145,7 +145,7 @@ typedef struct _D3DDDIARG_DECRYPTIONBLT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544298">D3DDDIENCRYPTED_BLOCK_INFO</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiencrypted-block-info.md">D3DDDIENCRYPTED_BLOCK_INFO</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decryptionblt.md">DecryptionBlt</a>

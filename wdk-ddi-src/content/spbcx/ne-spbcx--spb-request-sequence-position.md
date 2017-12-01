@@ -124,46 +124,6 @@ typedef enum  {
 
 <p>For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbRequestSequencePositionLast</b>, the transfer direction might have changed from the previous transfer and the SPB controller driver might need to indicate this possible direction change on the bus (for example, an I²C controller issues a new START condition). For more information about transfer directions, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>.</p>
 
-<p>A client (peripheral driver) of the SPB controller can perform an I/O transfer sequence by sending a series of read and write requests to a target device on the bus. Each read or write request in the series occupies a position in the list of transfers for the sequence. The values in the <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration indicate the relative positions of the read and write requests in this list.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a> method retrieves the SPB-specific parameter values from an I/O request and writes them to an <a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a> structure. Included in these parameters is an <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration value that indicates the position of the I/O request in the I/O transfer sequence that it is part of.</p>
-
-<p>If <b>SpbRequestGetParameters</b> is called to retrieve the position value of an I/O request that is not a part of a sequence, this method assigns an appropriate <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration value to the request.</p>
-
-<p>For read and write requests, the position value is set to one of the following values: <b>SpbRequestSequencePositionSingle</b>, <b>SpbRequestSequencePositionFirst</b>, <b>SpbRequestSequencePositionContinue</b>, or <b>SpbRequestSequencePositionLast</b>.</p>
-
-<p>If the client sends a simple read or write (<b>IRP_MJ_READ</b> or <b>IRP_MJ_WRITE</b>) request that is not part of a sequence, the position value is set to <b>SpbRequestSequencePositionSingle</b>.</p>
-
-<p>If the client sends a lock (<b>IOCTL_SPB_LOCK_CONTROLLER</b>) request to signal the start of a sequence, the position value for the first transfer (read or write request) in the sequence is <b>SpbRequestSequencePositionFirst</b>, and the position value for the remaining transfers in the sequence is <b>SpbRequestSequencePositionContinue</b>. In this case, SpbCx cannot assign <b>SpbRequestSequencePositionLast</b> to the last transfer because it does not know that the client has sent the last read or write request until the client sends the unlock (<b>IOCTL_SPB_UNLOCK_CONTROLLER</b>) request that ends the sequence.</p>
-
-<p>For lock requests, the position value is set to <b>SpbRequestSequencePositionFirst</b>. For unlock requests, the position value is set to <b>SpbRequestSequencePositionLast</b>.</p>
-
-<p>Some controllers might support special operations, such as full-duplex bus transfers that simultaneously read from and write to a target device. A client can perform a custom sequence operation by locking the controller and sending a series of custom I/O requests, which SpbCx passes to the SPB controller driver's <a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a> callback function. In this case, the position value for the first custom I/O request in the sequence is <b>SpbRequestSequencePositionFirst</b>, and the position value for the remaining custom I/O requests in the sequence is <b>SpbRequestSequencePositionContinue</b>. The sequence ends when the client unlocks the controller. If the <i>EvtSpbControllerIoOther</i> callback function receives a custom I/O request that is not part of a sequence, the position value for this request is <b>SpbRequestSequencePositionSingle</b>.</p>
-
-<p>For a position value of <b>SpbRequestSequencePositionLast</b>, the <b>Length</b> member of the <b>SPB_REQUEST_PARAMETERS</b> structure can be 0 to indicate that the target should simply be released and that no I/O data should be transferred (or, equivalently, to indicate that a 0-byte transfer should occur, if the controller cannot release the device without running the clock).</p>
-
-<p>For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbRequestSequencePositionLast</b>, the transfer direction might have changed from the previous transfer and the SPB controller driver might need to indicate this possible direction change on the bus (for example, an I²C controller issues a new START condition). For more information about transfer directions, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>.</p>
-
-<p>A client (peripheral driver) of the SPB controller can perform an I/O transfer sequence by sending a series of read and write requests to a target device on the bus. Each read or write request in the series occupies a position in the list of transfers for the sequence. The values in the <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration indicate the relative positions of the read and write requests in this list.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a> method retrieves the SPB-specific parameter values from an I/O request and writes them to an <a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a> structure. Included in these parameters is an <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration value that indicates the position of the I/O request in the I/O transfer sequence that it is part of.</p>
-
-<p>If <b>SpbRequestGetParameters</b> is called to retrieve the position value of an I/O request that is not a part of a sequence, this method assigns an appropriate <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration value to the request.</p>
-
-<p>For read and write requests, the position value is set to one of the following values: <b>SpbRequestSequencePositionSingle</b>, <b>SpbRequestSequencePositionFirst</b>, <b>SpbRequestSequencePositionContinue</b>, or <b>SpbRequestSequencePositionLast</b>.</p>
-
-<p>If the client sends a simple read or write (<b>IRP_MJ_READ</b> or <b>IRP_MJ_WRITE</b>) request that is not part of a sequence, the position value is set to <b>SpbRequestSequencePositionSingle</b>.</p>
-
-<p>If the client sends a lock (<b>IOCTL_SPB_LOCK_CONTROLLER</b>) request to signal the start of a sequence, the position value for the first transfer (read or write request) in the sequence is <b>SpbRequestSequencePositionFirst</b>, and the position value for the remaining transfers in the sequence is <b>SpbRequestSequencePositionContinue</b>. In this case, SpbCx cannot assign <b>SpbRequestSequencePositionLast</b> to the last transfer because it does not know that the client has sent the last read or write request until the client sends the unlock (<b>IOCTL_SPB_UNLOCK_CONTROLLER</b>) request that ends the sequence.</p>
-
-<p>For lock requests, the position value is set to <b>SpbRequestSequencePositionFirst</b>. For unlock requests, the position value is set to <b>SpbRequestSequencePositionLast</b>.</p>
-
-<p>Some controllers might support special operations, such as full-duplex bus transfers that simultaneously read from and write to a target device. A client can perform a custom sequence operation by locking the controller and sending a series of custom I/O requests, which SpbCx passes to the SPB controller driver's <a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a> callback function. In this case, the position value for the first custom I/O request in the sequence is <b>SpbRequestSequencePositionFirst</b>, and the position value for the remaining custom I/O requests in the sequence is <b>SpbRequestSequencePositionContinue</b>. The sequence ends when the client unlocks the controller. If the <i>EvtSpbControllerIoOther</i> callback function receives a custom I/O request that is not part of a sequence, the position value for this request is <b>SpbRequestSequencePositionSingle</b>.</p>
-
-<p>For a position value of <b>SpbRequestSequencePositionLast</b>, the <b>Length</b> member of the <b>SPB_REQUEST_PARAMETERS</b> structure can be 0 to indicate that the target should simply be released and that no I/O data should be transferred (or, equivalently, to indicate that a 0-byte transfer should occur, if the controller cannot release the device without running the clock).</p>
-
-<p>For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbRequestSequencePositionLast</b>, the transfer direction might have changed from the previous transfer and the SPB controller driver might need to indicate this possible direction change on the bus (for example, an I²C controller issues a new START condition). For more information about transfer directions, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>.</p>
-
 ## -requirements
 <table>
 <tr>

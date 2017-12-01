@@ -7,7 +7,7 @@ old-location: debugger\getpagesize.htm
 old-project: debugger
 ms.assetid: 26f11dfb-3fc3-4804-a294-2dfc674b4a73
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl2, GetPageSize, IDebugControl2::GetPageSize
 ms.prod: windows-hardware
 ms.technology: windows-devices

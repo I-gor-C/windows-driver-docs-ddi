@@ -7,7 +7,7 @@ old-location: bltooth\brb_type.htm
 old-project: bltooth
 ms.assetid: 590e13cf-6cbc-4a7f-a68e-ada4a5027ed2
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: IBidiSpl2, UnbindDevice, IBidiSpl2::UnbindDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,9 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback
-   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access
-   paged memory)
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
 req.iface: IBidiSpl2
 ---
 
@@ -316,23 +314,7 @@ typedef enum _BRB_TYPE {
 ## -remarks
 <p>The type of BRB is specified in the 
     <b>Type</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure. The 
-    <a href="..\bthddi\nc-bthddi-pfnbth-allocate-brb.md">BthAllocateBrb</a> and 
-    <a href="..\bthddi\nc-bthddi-pfnbth-initialize-brb.md">BthInitializeBrb</a> functions automatically
-    set the 
-    <b>Type</b> member.</p>
-
-<p>The type of BRB is specified in the 
-    <b>Type</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure. The 
-    <a href="..\bthddi\nc-bthddi-pfnbth-allocate-brb.md">BthAllocateBrb</a> and 
-    <a href="..\bthddi\nc-bthddi-pfnbth-initialize-brb.md">BthInitializeBrb</a> functions automatically
-    set the 
-    <b>Type</b> member.</p>
-
-<p>The type of BRB is specified in the 
-    <b>Type</b> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure. The 
+    <a href="..\bthddi\ns-bthddi--brb-header.md">BRB_HEADER</a> structure. The 
     <a href="..\bthddi\nc-bthddi-pfnbth-allocate-brb.md">BthAllocateBrb</a> and 
     <a href="..\bthddi\nc-bthddi-pfnbth-initialize-brb.md">BthInitializeBrb</a> functions automatically
     set the 
@@ -363,10 +345,10 @@ typedef enum _BRB_TYPE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a>
+<a href="..\bthddi\ns-bthddi--brb.md">BRB</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a>
+<a href="..\bthddi\ns-bthddi--brb-header.md">BRB_HEADER</a>
 </dt>
 <dt>
 <a href="..\bthddi\nc-bthddi-pfnbth-allocate-brb.md">BthAllocateBrb</a>
@@ -375,9 +357,9 @@ typedef enum _BRB_TYPE {
 <a href="..\bthddi\nc-bthddi-pfnbth-initialize-brb.md">BthInitializeBrb</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536751">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
+<a href="..\bthioctl\ni-bthioctl-ioctl-internal-bth-submit-brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BRB_TYPE enumeration%20 RELEASE:%20(10/23/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BRB_TYPE enumeration%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: kernel\pep_acpi_evaluate_control_method.htm
 old-project: kernel
 ms.assetid: FFCC5947-1DD5-4AD5-A414-94BDC013D1A7
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PEP_ACPI_EVALUATE_CONTROL_METHOD, PEP_ACPI_EVALUATE_CONTROL_METHOD, *PPEP_ACPI_EVALUATE_CONTROL_METHOD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -117,7 +117,7 @@ typedef struct _PEP_ACPI_EVALUATE_CONTROL_METHOD {
 ### -field <b>MethodNameString</b>
 
 <dd>
-<p>[in] An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a> structure that contains the fully qualified name of the ACPI control method. This name specifies the the path and name of the method in the ACPI namespace. For more information, see <a href="NULL">Enumerating Child Devices and Control Methods</a>.</p>
+<p>[in] An <a href="kernel.ansi_string">ANSI_STRING</a> structure that contains the fully qualified name of the ACPI control method. This name specifies the the path and name of the method in the ACPI namespace. For more information, see <a href="NULL">Enumerating Child Devices and Control Methods</a>.</p>
 </dd>
 </dl>
 </dd>
@@ -126,19 +126,19 @@ typedef struct _PEP_ACPI_EVALUATE_CONTROL_METHOD {
 
 <dd>
 <p>[out] An NTSTATUS value that indicates the status of the evaluation of the ACPI control method. Set this member to STATUS_SUCCESS to indicate that the platform extension plug-in (PEP) successfully completed its evaluation of the method. Set to STATUS_NOT_SUPPORTED to indicate that the PEP does not recognize the control method. Set to STATUS_BUFFER_TOO_SMALL to indicate that the output buffer size specified by the <b>InputArgumentSize</b> member is not large enough to contain the method results.</p>
-<p>If the PEP is to evaluate the method asychronously, set this member to STATUS_PENDING and return from the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186625">AcceptAcpiNotification</a> callback. Later, when the evaluation is completed, the PEP calls the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186629">CompleteWork</a> routine to notify the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) that the evaluation of the control method is complete.</p>
+<p>If the PEP is to evaluate the method asychronously, set this member to STATUS_PENDING and return from the <a href="kernel.acceptacpinotification">AcceptAcpiNotification</a> callback. Later, when the evaluation is completed, the PEP calls the <a href="kernel.completework">CompleteWork</a> routine to notify the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) that the evaluation of the control method is complete.</p>
 </dd>
 
 ### -field <b>CompletionContext</b>
 
 <dd>
-<p>[in] A pointer to a completion context value. The PEP uses this member only if the control method is evaluated asynchronously. In this case, the PEP supplies this completion context pointer in the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186629">CompleteWork</a> routine that notifies the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) that the evaluation of the control method is complete. Included in the input parameters to this call is a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt186860">PEP_WORK_ACPI_EVALUATE_CONTROL_METHOD_COMPLETE</a> structure to which the PEP has written the completion context pointer. The context is opaque to the PEP and contains data used internally by PoFx.</p>
+<p>[in] A pointer to a completion context value. The PEP uses this member only if the control method is evaluated asynchronously. In this case, the PEP supplies this completion context pointer in the call to the <a href="kernel.completework">CompleteWork</a> routine that notifies the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) that the evaluation of the control method is complete. Included in the input parameters to this call is a pointer to a <a href="..\pepfx\ns-pepfx--pep-work-acpi-evaluate-control-method-complete.md">PEP_WORK_ACPI_EVALUATE_CONTROL_METHOD_COMPLETE</a> structure to which the PEP has written the completion context pointer. The context is opaque to the PEP and contains data used internally by PoFx.</p>
 </dd>
 
 ### -field <b>InputArgumentCount</b>
 
 <dd>
-<p>[in] The number of input arguments in the input buffer pointed to by the <b>InputArguments</b> member. Each argument starts with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff536125">ACPI_METHOD_ARGUMENT</a> structure that specifies the size of the argument. Currently, the maximum <b>InputArgumentCount</b> value is one.</p>
+<p>[in] The number of input arguments in the input buffer pointed to by the <b>InputArguments</b> member. Each argument starts with an <a href="acpi.acpi_method_argument">ACPI_METHOD_ARGUMENT</a> structure that specifies the size of the argument. Currently, the maximum <b>InputArgumentCount</b> value is one.</p>
 </dd>
 
 ### -field <b>InputArgumentSize</b>
@@ -150,13 +150,13 @@ typedef struct _PEP_ACPI_EVALUATE_CONTROL_METHOD {
 ### -field <b>InputArguments</b>
 
 <dd>
-<p>[in] A pointer to an input buffer that contains an <a href="https://msdn.microsoft.com/library/windows/hardware/ff536125">ACPI_METHOD_ARGUMENT</a> structure that specifies the input argument for the specified ACPI control method.</p>
+<p>[in] A pointer to an input buffer that contains an <a href="acpi.acpi_method_argument">ACPI_METHOD_ARGUMENT</a> structure that specifies the input argument for the specified ACPI control method.</p>
 </dd>
 
 ### -field <b>OutputArgumentCount</b>
 
 <dd>
-<p>[in] The number of output arguments in the output buffer pointed to by the <b>OutputArguments</b> member. Each argument starts with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff536125">ACPI_METHOD_ARGUMENT</a> structure that specifies the size of the argument. Currently, the maximum allowed <b>OutputArgumentCount</b> value is one.</p>
+<p>[in] The number of output arguments in the output buffer pointed to by the <b>OutputArguments</b> member. Each argument starts with an <a href="acpi.acpi_method_argument">ACPI_METHOD_ARGUMENT</a> structure that specifies the size of the argument. Currently, the maximum allowed <b>OutputArgumentCount</b> value is one.</p>
 </dd>
 
 ### -field <b>OutputArgumentSize</b>
@@ -168,7 +168,7 @@ typedef struct _PEP_ACPI_EVALUATE_CONTROL_METHOD {
 ### -field <b>OutputArguments</b>
 
 <dd>
-<p>[in] A pointer to an output buffer to which the PEP writes an <a href="https://msdn.microsoft.com/library/windows/hardware/ff536125">ACPI_METHOD_ARGUMENT</a> structure that contains the result of evaluating the specified ACPI control method.</p>
+<p>[in] A pointer to an output buffer to which the PEP writes an <a href="acpi.acpi_method_argument">ACPI_METHOD_ARGUMENT</a> structure that contains the result of evaluating the specified ACPI control method.</p>
 </dd>
 </dl>
 
@@ -200,10 +200,10 @@ typedef struct _PEP_ACPI_EVALUATE_CONTROL_METHOD {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536125">ACPI_METHOD_ARGUMENT</a>
+<a href="acpi.acpi_method_argument">ACPI_METHOD_ARGUMENT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
+<a href="kernel.ansi_string">ANSI_STRING</a>
 </dt>
 <dt>
 <a href="kernel.pep_notify_acpi_evaluate_control_method">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
@@ -214,4 +214,4 @@ typedef struct _PEP_ACPI_EVALUATE_CONTROL_METHOD {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_EVALUATE_CONTROL_METHOD structure%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_EVALUATE_CONTROL_METHOD structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SetGroupPresharedKey_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565693">SetGroupPresharedKey</a> method.</p>
+<p>The SetGroupPresharedKey_IN structure holds the input data for the <a href="storage.setgrouppresharedkey">SetGroupPresharedKey</a> method.</p>
 
 
 ## -syntax
@@ -88,10 +88,10 @@ typedef struct _SetGroupPresharedKey_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565693">SetGroupPresharedKey</a>
+<a href="storage.setgrouppresharedkey">SetGroupPresharedKey</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565697">SetGroupPresharedKey_OUT</a>
+<a href="..\iscsiop\ns-iscsiop--setgrouppresharedkey-out.md">SetGroupPresharedKey_OUT</a>
 </dt>
 </dl>
 <p> </p>

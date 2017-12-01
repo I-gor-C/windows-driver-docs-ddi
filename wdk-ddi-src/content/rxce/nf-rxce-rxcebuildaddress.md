@@ -102,8 +102,6 @@ NTSTATUS RxCeBuildAddress(
 ## -remarks
 <p>When <b>RxCeBuildAddress</b> is successful, the data members in the RXCE_ADDRESS structure pointed to by the <i>pAddress</i> parameter will be properly initialized. </p>
 
-<p>When <b>RxCeBuildAddress</b> is successful, the data members in the RXCE_ADDRESS structure pointed to by the <i>pAddress</i> parameter will be properly initialized. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -139,7 +137,7 @@ NTSTATUS RxCeBuildAddress(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553488">RxCeTearDownAddress</a>
+<a href="..\rxce\nf-rxce-rxceteardownaddress.md">RxCeTearDownAddress</a>
 </dt>
 </dl>
 <p> </p>

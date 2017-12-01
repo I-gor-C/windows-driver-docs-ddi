@@ -7,7 +7,7 @@ old-location: netvista\rilsetsmscparams.htm
 old-project: netvista
 ms.assetid: ebfb768a-fa6b-4781-96e1-787278237d5f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILSETSMSCPARAMS, RILSETSMSCPARAMS, *LPRILSETSMSCPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices

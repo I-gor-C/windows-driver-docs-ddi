@@ -7,7 +7,7 @@ old-location: sensors\gnss_cwtestdata.htm
 old-project: sensors
 ms.assetid: 7F1C8574-8891-4ACB-BB25-2666148E3D02
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_CWTESTDATA, GNSS_CWTESTDATA, *PGNSS_CWTESTDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices

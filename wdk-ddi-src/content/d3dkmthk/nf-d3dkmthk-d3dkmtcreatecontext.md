@@ -57,7 +57,7 @@ NTSTATUS D3DKMTCreateContext(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547810">D3DKMT_CREATECONTEXT</a> structure that describes the kernel-mode device context.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createcontext.md">D3DKMT_CREATECONTEXT</a> structure that describes the kernel-mode device context.</p>
 </dd>
 </dl>
 
@@ -71,7 +71,7 @@ NTSTATUS D3DKMTCreateContext(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546814">D3DKMTCreateContext</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontext.md">D3DKMTCreateContext</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
@@ -137,7 +137,7 @@ NTSTATUS D3DKMTCreateContext(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547810">D3DKMT_CREATECONTEXT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createcontext.md">D3DKMT_CREATECONTEXT</a>
 </dt>
 </dl>
 <p> </p>

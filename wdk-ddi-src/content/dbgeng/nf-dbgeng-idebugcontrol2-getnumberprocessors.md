@@ -7,7 +7,7 @@ old-location: debugger\getnumberprocessors.htm
 old-project: debugger
 ms.assetid: b3f4af4e-dbba-4f14-8935-f894865cbe7d
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugControl2, GetNumberProcessors, IDebugControl2::GetNumberProcessors
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,8 +69,6 @@ HRESULT GetNumberProcessors(
 <p> </p>
 
 ## -remarks
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558860">Target Information</a>.</p>
-
 <p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558860">Target Information</a>.</p>
 
 ## -requirements

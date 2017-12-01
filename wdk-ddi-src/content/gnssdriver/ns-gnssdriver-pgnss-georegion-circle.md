@@ -7,7 +7,7 @@ old-location: sensors\gnss_georegion_circle.htm
 old-project: sensors
 ms.assetid: 498F8325-C887-4FDE-8BCF-A713639E3B35
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: PGNSS_GEOREGION_CIRCLE, GNSS_GEOREGION_CIRCLE, *PGNSS_GEOREGION_CIRCLE
 ms.prod: windows-hardware
 ms.technology: windows-devices

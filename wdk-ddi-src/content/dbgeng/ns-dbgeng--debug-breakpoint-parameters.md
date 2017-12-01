@@ -7,7 +7,7 @@ old-location: debugger\debug_breakpoint_parameters.htm
 old-project: debugger
 ms.assetid: e5c87c1c-8195-4476-84bc-5f18ad83d149
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_BREAKPOINT_PARAMETERS, DEBUG_BREAKPOINT_PARAMETERS, *PDEBUG_BREAKPOINT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,73 +68,73 @@ typedef struct _DEBUG_BREAKPOINT_PARAMETERS {
 ### -field <b>Offset</b>
 
 <dd>
-<p>The location in the target's memory address space that will trigger the breakpoint.  If the breakpoint is deferred (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546791">GetFlags</a>), <b>Offset</b> is DEBUG_INVALID_OFFSET.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff548008">GetOffset</a>.</p>
+<p>The location in the target's memory address space that will trigger the breakpoint.  If the breakpoint is deferred (see <a href="debugger.getflags">GetFlags</a>), <b>Offset</b> is DEBUG_INVALID_OFFSET.  See <a href="debugger.getoffset">GetOffset</a>.</p>
 </dd>
 
 ### -field <b>Id</b>
 
 <dd>
-<p>The breakpoint ID.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff546827">GetId</a>.</p>
+<p>The breakpoint ID.  See <a href="debugger.getid">GetId</a>.</p>
 </dd>
 
 ### -field <b>BreakType</b>
 
 <dd>
-<p>Specifies if the breakpoint is a software breakpoint or a processor breakpoint.  See <a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a>.</p>
+<p>Specifies if the breakpoint is a software breakpoint or a processor breakpoint.  See <a href="debugger.gettype">GetType</a>.</p>
 </dd>
 
 ### -field <b>ProcType</b>
 
 <dd>
-<p>The processor type for which the breakpoint is set.  See <a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a>.</p>
+<p>The processor type for which the breakpoint is set.  See <a href="debugger.gettype">GetType</a>.</p>
 </dd>
 
 ### -field <b>Flags</b>
 
 <dd>
-<p>The flags for the breakpoint.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff546791">GetFlags</a>.</p>
+<p>The flags for the breakpoint.  See <a href="debugger.getflags">GetFlags</a>.</p>
 </dd>
 
 ### -field <b>DataSize</b>
 
 <dd>
-<p>The size, in bytes, of the memory block whose access will trigger the breakpoint.  If the type of the breakpoint is not a data breakpoint, this is zero.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff546557">GetDataParameters</a>.</p>
+<p>The size, in bytes, of the memory block whose access will trigger the breakpoint.  If the type of the breakpoint is not a data breakpoint, this is zero.  See <a href="debugger.getdataparameters">GetDataParameters</a>.</p>
 </dd>
 
 ### -field <b>DataAccessType</b>
 
 <dd>
-<p>The type of access that will trigger the breakpoint.  If the type of the breakpoint is not a data breakpoint, this is zero.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff546557">GetDataParameters</a>.</p>
+<p>The type of access that will trigger the breakpoint.  If the type of the breakpoint is not a data breakpoint, this is zero.  See <a href="debugger.getdataparameters">GetDataParameters</a>.</p>
 </dd>
 
 ### -field <b>PassCount</b>
 
 <dd>
-<p>The number of times the target will hit the breakpoint before it is triggered.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff548104">GetPassCount</a>.</p>
+<p>The number of times the target will hit the breakpoint before it is triggered.  See <a href="debugger.getpasscount">GetPassCount</a>.</p>
 </dd>
 
 ### -field <b>CurrentPassCount</b>
 
 <dd>
-<p>The remaining number of times that the target will hit the breakpoint before it is triggered.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545769">GetCurrentPassCount</a>.</p>
+<p>The remaining number of times that the target will hit the breakpoint before it is triggered.  See <a href="debugger.getcurrentpasscount">GetCurrentPassCount</a>.</p>
 </dd>
 
 ### -field <b>MatchThread</b>
 
 <dd>
-<p>The engine thread ID of the thread that can trigger this breakpoint.  If any thread can trigger this breakpoint, <b>MatchThread</b> is DEBUG_ANY_ID.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff547074">GetMatchThreadId</a>.</p>
+<p>The engine thread ID of the thread that can trigger this breakpoint.  If any thread can trigger this breakpoint, <b>MatchThread</b> is DEBUG_ANY_ID.  See <a href="debugger.getmatchthreadid">GetMatchThreadId</a>.</p>
 </dd>
 
 ### -field <b>CommandSize</b>
 
 <dd>
-<p>The size, in characters, of the command string that will be executed when the breakpoint is triggered.  If no command is set, <b>CommandSize</b> is zero.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545677">GetCommand</a>.</p>
+<p>The size, in characters, of the command string that will be executed when the breakpoint is triggered.  If no command is set, <b>CommandSize</b> is zero.  See <a href="debugger.getcommand">GetCommand</a>.</p>
 </dd>
 
 ### -field <b>OffsetExpressionSize</b>
 
 <dd>
-<p>The size, in characters, of the expression string that evaluates to the location in the target's memory address space where the breakpoint is triggered.  If no expression string is set, <b>OffsetExpressionSize</b> is zero.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff548048">GetOffsetExpression</a>.</p>
+<p>The size, in characters, of the expression string that evaluates to the location in the target's memory address space where the breakpoint is triggered.  If no expression string is set, <b>OffsetExpressionSize</b> is zero.  See <a href="debugger.getoffsetexpression">GetOffsetExpression</a>.</p>
 </dd>
 </dl>
 

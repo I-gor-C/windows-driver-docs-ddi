@@ -7,7 +7,7 @@ old-location: netvista\ndisfregisterfilterdriver.htm
 old-project: netvista
 ms.assetid: 14381de2-36d9-4ec8-9d4e-7af3e6d8ecf3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisFRegisterFilterDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ NDIS_STATUS NdisFRegisterFilterDriver(
 
 <dd>
 <p>A pointer to an opaque driver object that the filter driver received in its 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine at the 
+     <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine at the 
      <i>Argument1</i> parameter. (For more information, see 
      <a href="netvista.driverentry_of_ndis_filter_drivers">DriverEntry of NDIS Filter
      Drivers</a>.)</p>
@@ -94,7 +94,7 @@ NDIS_STATUS NdisFRegisterFilterDriver(
      <b>
     NdisFRegisterFilterDriver</b> succeeds, NDIS fills this variable with a filter driver handle. The
      filter driver saves this handle and later passes this handle to NDIS functions, such as 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561800">NdisFDeregisterFilterDriver</a>,
+     <a href="..\ndis\nf-ndis-ndisfderegisterfilterdriver.md">NdisFDeregisterFilterDriver</a>,
      that require a filter driver handle as an input parameter.</p>
 </dd>
 </dl>
@@ -134,7 +134,7 @@ NDIS_STATUS NdisFRegisterFilterDriver(
 <p>A filter driver calls the 
     <b>
     NdisFRegisterFilterDriver</b> function from its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. For more information about 
+    <a href="..\wdm\nc-wdm-driver-initialize.md">DriverEntry</a> routine. For more information about 
     <b>DriverEntry</b>, see 
     <a href="netvista.driverentry_of_ndis_filter_drivers">DriverEntry of NDIS Filter
     Drivers</a>.</p>
@@ -156,42 +156,7 @@ NDIS_STATUS NdisFRegisterFilterDriver(
     NdisFRegisterFilterDriver</b>.</p>
 
 <p>After it has registered, a filter driver can later call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564550">NdisSetOptionalHandlers</a> function
-    to change the entry points for optional 
-    <i>FilterXxx</i> functions.</p>
-
-<p>Filter drivers call the 
-    <a href="..\ndis\nf-ndis-ndisfderegisterfilterdriver.md">
-    NdisFDeregisterFilterDriver</a> function to release resources that were previously allocated with 
-    <b>
-    NdisFRegisterFilterDriver</b>.</p>
-
-<p>A filter driver calls the 
-    <b>
-    NdisFRegisterFilterDriver</b> function from its 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. For more information about 
-    <b>DriverEntry</b>, see 
-    <a href="netvista.driverentry_of_ndis_filter_drivers">DriverEntry of NDIS Filter
-    Drivers</a>.</p>
-
-<p>Drivers that call <b>
-    NdisFRegisterFilterDriver</b> must be prepared for an immediate call to any of their <i>FilterXxx</i> functions. For more information see <a href="NULL">Initializing a Filter Driver</a>.</p>
-
-<p>Every filter driver exports a set of 
-    <i>FilterXxx</i> functions by setting up the 
-    <a href="..\ndis\ns-ndis--ndis-filter-driver-characteristics.md">
-    NDIS_FILTER_DRIVER_CHARACTERISTICS</a> structure and calling 
-    <b>
-    NdisFRegisterFilterDriver</b>. NDIS copies this structure to the NDIS library's internal storage.</p>
-
-<p>To allow filter drivers to register optional services, NDIS calls the 
-    <a href="netvista.filtersetoptions">FilterSetOptions</a> function within the
-    context of 
-    <b>
-    NdisFRegisterFilterDriver</b>.</p>
-
-<p>After it has registered, a filter driver can later call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564550">NdisSetOptionalHandlers</a> function
+    <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function
     to change the entry points for optional 
     <i>FilterXxx</i> functions.</p>
 
@@ -254,7 +219,7 @@ NDIS_STATUS NdisFRegisterFilterDriver(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547930">Irql_Filter_Driver_Function</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff561800">NdisFDeregisterFilterDriver</a>
+<a href="devtest.ndis_irql_filter_driver_function">Irql_Filter_Driver_Function</a>, <a href="..\ndis\nf-ndis-ndisfderegisterfilterdriver.md">NdisFDeregisterFilterDriver</a>
 </td>
 </tr>
 </table>
@@ -266,17 +231,17 @@ NDIS_STATUS NdisFRegisterFilterDriver(
    Drivers</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
+<a href="..\ndis\nc-ndis-filter-attach.md">FilterAttach</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-filter-driver-characteristics.md">
    NDIS_FILTER_DRIVER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561800">NdisFDeregisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfderegisterfilterdriver.md">NdisFDeregisterFilterDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564550">NdisSetOptionalHandlers</a>
+<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 </dt>
 <dt>
 <a href="NULL">Initializing a Filter Driver</a>
@@ -284,4 +249,4 @@ NDIS_STATUS NdisFRegisterFilterDriver(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFRegisterFilterDriver function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFRegisterFilterDriver function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\dot11extihvadapterreset.htm
 old-project: netvista
 ms.assetid: c1e8cce7-6fa4-45d3-a8c8-9f2ef0a8e846
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: callback
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -91,24 +90,6 @@ DWORD APIENTRY Dot11ExtIhvAdapterReset(
 <p>For more information about the reset operation for WLAN adapters, see 
     <a href="NULL">802.11 WLAN Adapter Reset</a>.</p>
 
-<p>The operating system calls 
-    <i>Dot11ExtIhvAdapterReset</i> whenever one of the following events occurs.</p>
-
-<p>The WLAN adapter performs a disconnection operation. For more information about this operation, see 
-      <a href="NULL">Disconnection Operations</a>.</p>
-
-<p>The operating system resets the Native 802.11 miniport driver, which manages the adapter, through a
-      set request of 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569409">OID_DOT11_RESET_REQUEST</a>.</p>
-
-<p>The 
-    <i>Dot11ExtIhvAdapterReset</i> function must restore the WLAN adapter to the same state as when the DLL's 
-    <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a> function
-    was called.</p>
-
-<p>For more information about the reset operation for WLAN adapters, see 
-    <a href="NULL">802.11 WLAN Adapter Reset</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -153,4 +134,4 @@ DWORD APIENTRY Dot11ExtIhvAdapterReset(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_ADAPTER_RESET callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_ADAPTER_RESET callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

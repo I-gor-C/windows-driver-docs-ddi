@@ -7,7 +7,7 @@ old-location: wdf\iwdfnamedpropertystore_setnamedvalue.htm
 old-project: wdf
 ms.assetid: 1fd075c9-7d0e-4670-bac0-b7b8ba0a714f
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFNamedPropertyStore, SetNamedValue, IWDFNamedPropertyStore::SetNamedValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -108,46 +108,6 @@ HRESULT SetNamedValue(
 
 <p>Writes a string array.</p>
 
-<p> </p>
-
-<p>For more information, see <a href="wdf.using_the_registry_in_umdf_drivers">Using the Registry in UMDF-based Drivers</a>.</p>
-
-<p>The following variant types are supported for property values. The following table shows the types of values that the framework writes for particular variant types.</p>
-
-<p>VT_BSTR</p>
-
-<p>Writes a string value.</p>
-
-<p>VT_LPWSTR</p>
-
-<p>VT_LPSTR</p>
-
-<p>VT_I1</p>
-
-<p>Writes an integer value.</p>
-
-<p>VT_UI1</p>
-
-<p>VT_I2</p>
-
-<p>VT_UI2</p>
-
-<p>VT_I4</p>
-
-<p>VT_UI4</p>
-
-<p>VT_UINT</p>
-
-<p>VT_BLOB</p>
-
-<p>Writes a binary value.</p>
-
-<p>VT_VECTOR | VT_LPWSTR</p>
-
-<p>Writes a string array.</p>
-
-<p> </p>
-
 <p>For more information, see <a href="wdf.using_the_registry_in_umdf_drivers">Using the Registry in UMDF-based Drivers</a>.</p>
 
 ## -requirements
@@ -203,9 +163,9 @@ HRESULT SetNamedValue(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560164">IWDFNamedPropertyStore</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfnamedpropertystore.md">IWDFNamedPropertyStore</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFNamedPropertyStore::SetNamedValue method%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFNamedPropertyStore::SetNamedValue method%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

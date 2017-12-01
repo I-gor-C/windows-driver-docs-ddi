@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>UFX_DEVICE_CALLBACKS_INIT</b> macro initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187971">UFX_DEVICE_CALLBACKS</a> structure.</p>
+<p>The <b>UFX_DEVICE_CALLBACKS_INIT</b> macro initializes the <a href="buses.ufx_device_callbacks">UFX_DEVICE_CALLBACKS</a> structure.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ FORCEINLINE void UFX_DEVICE_CALLBACKS_INIT(
 ### -param <i>Callbacks</i> [out]
 
 <dd>
-<p>A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187971">UFX_DEVICE_CALLBACKS</a> structure.</p>
+<p>A pointer to the <a href="buses.ufx_device_callbacks">UFX_DEVICE_CALLBACKS</a> structure.</p>
 </dd>
 </dl>
 
@@ -66,13 +66,9 @@ FORCEINLINE void UFX_DEVICE_CALLBACKS_INIT(
 <p>This function does not return a value.</p>
 
 ## -remarks
-<p>The <b>UFX_DEVICE_CALLBACKS_INIT</b> macro will set all fields of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187971">UFX_DEVICE_CALLBACKS</a> structure to zero and set the <b>Size</b> field appropriately.</p>
+<p>The <b>UFX_DEVICE_CALLBACKS_INIT</b> macro will set all fields of the <a href="buses.ufx_device_callbacks">UFX_DEVICE_CALLBACKS</a> structure to zero and set the <b>Size</b> field appropriately.</p>
 
-<p>The client driver uses the <b>UFX_DEVICE_CALLBACKS_INIT</b> macro the initialize the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187971">UFX_DEVICE_CALLBACKS</a> structure prior to calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt187951">UfxDeviceCreate</a>.</p>
-
-<p>The <b>UFX_DEVICE_CALLBACKS_INIT</b> macro will set all fields of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187971">UFX_DEVICE_CALLBACKS</a> structure to zero and set the <b>Size</b> field appropriately.</p>
-
-<p>The client driver uses the <b>UFX_DEVICE_CALLBACKS_INIT</b> macro the initialize the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187971">UFX_DEVICE_CALLBACKS</a> structure prior to calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt187951">UfxDeviceCreate</a>.</p>
+<p>The client driver uses the <b>UFX_DEVICE_CALLBACKS_INIT</b> macro the initialize the <a href="buses.ufx_device_callbacks">UFX_DEVICE_CALLBACKS</a> structure prior to calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.</p>
 
 ## -requirements
 <table>

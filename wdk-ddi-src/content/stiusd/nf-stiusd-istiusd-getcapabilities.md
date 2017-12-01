@@ -58,7 +58,7 @@ HRESULT GetCapabilities(
 ### -param <i>pUsdCaps</i> 
 
 <dd>
-<p>Caller-supplied pointer to an empty <a href="https://msdn.microsoft.com/library/windows/hardware/ff548404">STI_USD_CAPS</a> structure.</p>
+<p>Caller-supplied pointer to an empty <a href="..\stiusd\ns-stiusd--sti-usd-caps.md">STI_USD_CAPS</a> structure.</p>
 </dd>
 </dl>
 
@@ -66,9 +66,7 @@ HRESULT GetCapabilities(
 <p>If the operation succeeds, the method should return S_OK. Otherwise, it should return one of the STIERR-prefixed error codes defined in <i>stierr.h</i>.</p>
 
 ## -remarks
-<p>The <b>IStiUSD::GetCapabilities</b> method should set appropriate device capability flags in the caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff548404">STI_USD_CAPS</a> structure. It should also set the version number to STI_VERSION.</p>
-
-<p>The <b>IStiUSD::GetCapabilities</b> method should set appropriate device capability flags in the caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff548404">STI_USD_CAPS</a> structure. It should also set the version number to STI_VERSION.</p>
+<p>The <b>IStiUSD::GetCapabilities</b> method should set appropriate device capability flags in the caller-supplied <a href="..\stiusd\ns-stiusd--sti-usd-caps.md">STI_USD_CAPS</a> structure. It should also set the version number to STI_VERSION.</p>
 
 ## -requirements
 <table>
@@ -97,7 +95,7 @@ HRESULT GetCapabilities(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543745">IStiDevice::GetCapabilities</a>
+<a href="image.istidevice_getcapabilities">IStiDevice::GetCapabilities</a>
 </dt>
 </dl>
 <p> </p>

@@ -121,7 +121,7 @@ NTSTATUS PosCxPutPendingEventMemory(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt593142">POS_CX_EVENT_ATTRIBUTES</a>
+<a href="..\poscx\ne-poscx--pos-cx-event-attributes.md">POS_CX_EVENT_ATTRIBUTES</a>
 </dt>
 </dl>
 <p> </p>

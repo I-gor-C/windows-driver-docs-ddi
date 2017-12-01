@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p><b>D3DKMT_CREATECONTEXTVIRTUAL</b> is used with <a href="https://msdn.microsoft.com/library/windows/hardware/dn906770">D3DKMTCreateContextVirtual</a> to create a kernel mode device context that supports virtual addressing.
+<p><b>D3DKMT_CREATECONTEXTVIRTUAL</b> is used with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontextvirtual.md">D3DKMTCreateContextVirtual</a> to create a kernel mode device context that supports virtual addressing.
 
 </p>
 
@@ -84,7 +84,7 @@ typedef struct _D3DKMT_CREATECONTEXTVIRTUAL {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544502">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context. </p>
+<p>[in] A <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context. </p>
 </dd>
 
 ### -field <b>pPrivateDriverData</b>
@@ -108,7 +108,7 @@ typedef struct _D3DKMT_CREATECONTEXTVIRTUAL {
 ### -field <b>hContext</b>
 
 <dd>
-<p>[out] A handle to the context that the <a href="https://msdn.microsoft.com/library/windows/hardware/dn906770">D3DKMTCreateContextVirtual</a> function creates. </p>
+<p>[out] A handle to the context that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontextvirtual.md">D3DKMTCreateContextVirtual</a> function creates. </p>
 </dd>
 </dl>
 
@@ -148,10 +148,10 @@ typedef struct _D3DKMT_CREATECONTEXTVIRTUAL {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906770">D3DKMTCreateContextVirtual</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatecontextvirtual.md">D3DKMTCreateContextVirtual</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544502">D3DDDI_CREATECONTEXTFLAGS</a>
+<a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a>
 </dt>
 </dl>
 <p> </p>

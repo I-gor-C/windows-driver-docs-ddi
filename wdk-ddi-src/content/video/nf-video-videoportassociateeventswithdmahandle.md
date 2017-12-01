@@ -68,7 +68,7 @@ PDMA VideoPortAssociateEventsWithDmaHandle(
 ### -param <i>pVrp</i> [in, out]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570547">VIDEO_REQUEST_PACKET</a>. </p>
+<p>Pointer to a <a href="..\video\ns-video--video-request-packet.md">VIDEO_REQUEST_PACKET</a>. </p>
 </dd>
 
 ### -param <i>MappedUserEvent</i> [in]
@@ -88,8 +88,6 @@ PDMA VideoPortAssociateEventsWithDmaHandle(
 <p><b>VideoPortAssociateEventsWithDmaHandle</b> always returns <b>NULL</b>.</p>
 
 ## -remarks
-<p>See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bus-Master DMA in Video Miniport Drivers</a> for information about packet-based and common-buffer DMA transfers.</p>
-
 <p>See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bus-Master DMA in Video Miniport Drivers</a> for information about packet-based and common-buffer DMA transfers.</p>
 
 ## -requirements

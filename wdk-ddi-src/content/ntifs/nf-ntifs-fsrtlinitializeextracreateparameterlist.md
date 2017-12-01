@@ -57,12 +57,12 @@ NTSTATUS FsRtlInitializeExtraCreateParameterList(
 ### -param <i>EcpList</i> [in, out]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a> structure to initialize. </p>
+<p>Pointer to the <a href="ifsk.ecp_list">ECP_LIST</a> structure to initialize. </p>
 </dd>
 </dl>
 
 ## -returns
-<p><b>FsRtlInitializeExtraCreateParameterList</b> returns STATUS_SUCCESS if it successfully initialized the given <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a> structure, and returns an error if it did not. </p>
+<p><b>FsRtlInitializeExtraCreateParameterList</b> returns STATUS_SUCCESS if it successfully initialized the given <a href="ifsk.ecp_list">ECP_LIST</a> structure, and returns an error if it did not. </p>
 
 ## -remarks
 
@@ -130,7 +130,7 @@ NTSTATUS FsRtlInitializeExtraCreateParameterList(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
+<a href="ifsk.ecp_list">ECP_LIST</a>
 </dt>
 </dl>
 <p> </p>

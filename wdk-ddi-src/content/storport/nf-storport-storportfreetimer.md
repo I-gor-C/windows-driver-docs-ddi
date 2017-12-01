@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Frees a Storport timer context object previously created by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451483">StorPortInitializeTimer</a> routine.</p>
+<p>Frees a Storport timer context object previously created by the <a href="..\storport\nf-storport-storportinitializetimer.md">StorPortInitializeTimer</a> routine.</p>
 
 
 ## -syntax
@@ -65,7 +65,7 @@ ULONG StorPortFreeTimer(
 ### -param <i>TimerHandle</i> [in]
 
 <dd>
-<p>A pointer to an opaque buffer for the timer context returned by <a href="https://msdn.microsoft.com/library/windows/hardware/hh451483">StorPortInitializeTimer</a>.</p>
+<p>A pointer to an opaque buffer for the timer context returned by <a href="..\storport\nf-storport-storportinitializetimer.md">StorPortInitializeTimer</a>.</p>
 </dd>
 </dl>
 
@@ -85,8 +85,6 @@ ULONG StorPortFreeTimer(
 <p> </p>
 
 ## -remarks
-<p>Miniports should call <b>StorPortFreeTimer</b> whenever a work item is no longer needed or when the miniport receives a PnP SRB notification  that the adapter is removed.</p>
-
 <p>Miniports should call <b>StorPortFreeTimer</b> whenever a work item is no longer needed or when the miniport receives a PnP SRB notification  that the adapter is removed.</p>
 
 ## -requirements
@@ -132,13 +130,13 @@ ULONG StorPortFreeTimer(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a>
+<a href="storage.hwstoradaptercontrol">HwStorAdapterControl</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451483">StorPortInitializeTimer</a>
+<a href="..\storport\nf-storport-storportinitializetimer.md">StorPortInitializeTimer</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451511">StorPortRequestTimer</a>
+<a href="..\storport\nf-storport-storportrequesttimer.md">StorPortRequestTimer</a>
 </dt>
 </dl>
 <p> </p>

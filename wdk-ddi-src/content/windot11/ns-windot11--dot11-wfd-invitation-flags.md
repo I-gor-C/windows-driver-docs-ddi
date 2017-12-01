@@ -7,7 +7,7 @@ old-location: netvista\dot11_wfd_invitation_flags.htm
 old-project: netvista
 ms.assetid: 9743FF37-0E8A-499F-AADB-9CD7BDC381E0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: DOT11_WFD_INVITATION_FLAGS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

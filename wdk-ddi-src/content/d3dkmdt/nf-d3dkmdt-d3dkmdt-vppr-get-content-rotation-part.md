@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>A helper function that extracts the rotation angle from a given value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546700">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration. Only drivers that support path-independent rotation (DXGKDDI_INTERFACE_VERSION &gt;= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION) should call this function.</p>
+<p>A helper function that extracts the rotation angle from a given value of the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration. Only drivers that support path-independent rotation (DXGKDDI_INTERFACE_VERSION &gt;= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION) should call this function.</p>
 
 
 ## -syntax
@@ -59,8 +59,8 @@ D3DKMDT_VIDPN_PRESENT_PATH_ROTATION
 ### -param <i>Rotation</i> 
 
 <dd>
-<p>On input, a value from  the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546700">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration.</p>
-<p>On output, a value between 1 and 4, inclusive, that corresponds to the <b>ROTATION</b> portion of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546700">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> constant values. An output value of 1 (identity) represents 0 degrees of rotation, 2 represents 90 degrees, and so on. An output value of 0 indicates that the VidPN path is not initialized.</p>
+<p>On input, a value from  the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> enumeration.</p>
+<p>On output, a value between 1 and 4, inclusive, that corresponds to the <b>ROTATION</b> portion of the <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a> constant values. An output value of 1 (identity) represents 0 degrees of rotation, 2 represents 90 degrees, and so on. An output value of 0 indicates that the VidPN path is not initialized.</p>
 </dd>
 </dl>
 
@@ -185,10 +185,6 @@ D3DKMDT_VIDPN_PRESENT_PATH_ROTATION
 
 <p>Your driver typically won't need to call this function.</p>
 
-<p>This function is declared inline in D3dkmdt.h as:</p>
-
-<p>Your driver typically won't need to call this function.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -240,7 +236,7 @@ D3DKMDT_VIDPN_PRESENT_PATH_ROTATION
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546700">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-vidpn-present-path-rotation.md">D3DKMDT_VIDPN_PRESENT_PATH_ROTATION</a>
 </dt>
 </dl>
 <p> </p>

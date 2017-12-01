@@ -76,9 +76,7 @@ NTSTATUS FsRtlGetEcpListFromIrp(
 <p> </p>
 
 ## -remarks
-<p>To attach an ECP context structure list to an IRP, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547250">FsRtlSetEcpListIntoIrp</a> routine.</p>
-
-<p>To attach an ECP context structure list to an IRP, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547250">FsRtlSetEcpListIntoIrp</a> routine.</p>
+<p>To attach an ECP context structure list to an IRP, use the <a href="..\ntifs\nf-ntifs-fsrtlsetecplistintoirp.md">FsRtlSetEcpListIntoIrp</a> routine.</p>
 
 ## -requirements
 <table>
@@ -143,7 +141,7 @@ NTSTATUS FsRtlGetEcpListFromIrp(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547250">FsRtlSetEcpListIntoIrp</a>
+<a href="..\ntifs\nf-ntifs-fsrtlsetecplistintoirp.md">FsRtlSetEcpListIntoIrp</a>
 </dt>
 </dl>
 <p> </p>

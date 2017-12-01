@@ -85,10 +85,6 @@ typedef enum _DXGKMDT_CERTIFICATE_TYPE {
 ## -remarks
 <p>For more information about certificates that are used with OPM, download the Output Content Protection document at the <a href="http://go.microsoft.com/fwlink/p/?linkid=204788">Output Content Protection and Windows Vista</a> website.</p>
 
-<p>For more information about certificates that are used with OPM, download the Output Content Protection document at the <a href="http://go.microsoft.com/fwlink/p/?linkid=204788">Output Content Protection and Windows Vista</a> website.</p>
-
-<p>For more information about certificates that are used with OPM, download the Output Content Protection document at the <a href="http://go.microsoft.com/fwlink/p/?linkid=204788">Output Content Protection and Windows Vista</a> website.</p>
-
 ## -requirements
 <table>
 <tr>

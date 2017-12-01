@@ -7,7 +7,7 @@ old-location: netvista\wsk_tdi_map_info.htm
 old-project: netvista
 ms.assetid: b0b4fab4-1a3c-4075-8881-f2aa38fba15e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WSK_TDI_MAP_INFO, WSK_TDI_MAP_INFO, *PWSK_TDI_MAP_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -70,7 +69,7 @@ typedef struct _WSK_TDI_MAP_INFO {
 
 <dd>
 <p>A pointer to an array of 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571191">WSK_TDI_MAP</a> structures. Each WSK_TDI_MAP
+     <a href="..\wsk\ns-wsk--wsk-tdi-map.md">WSK_TDI_MAP</a> structures. Each WSK_TDI_MAP
      structure in the array contains a mapping of a particular address family, socket type, and protocol to
      the device name of a 
      <a href="https://msdn.microsoft.com/3878053c-388a-4bbc-a30e-feb16eda2f99">TDI</a> transport.</p>
@@ -79,7 +78,7 @@ typedef struct _WSK_TDI_MAP_INFO {
 
 ## -remarks
 <p>A WSK application passes a pointer to a WSK_TDI_MAP_INFO structure to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571126">WskControlClient</a> function when specifying
+    <a href="..\wsk\nc-wsk-pfn-wsk-control-client.md">WskControlClient</a> function when specifying
     
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571190">WSK_TDI_DEVICENAME_MAPPING</a> for
     the control code.</p>
@@ -118,12 +117,12 @@ typedef struct _WSK_TDI_MAP_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571126">WskControlClient</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-control-client.md">WskControlClient</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571191">WSK_TDI_MAP</a>
+<a href="..\wsk\ns-wsk--wsk-tdi-map.md">WSK_TDI_MAP</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_TDI_MAP_INFO structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_TDI_MAP_INFO structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

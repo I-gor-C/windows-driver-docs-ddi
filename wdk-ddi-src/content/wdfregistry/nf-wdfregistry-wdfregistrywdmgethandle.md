@@ -7,7 +7,7 @@ old-location: wdf\wdfregistrywdmgethandle.htm
 old-project: wdf
 ms.assetid: 60638048-9009-4943-ba61-b724612852df
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfRegistryWdmGetHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,8 +28,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Wdf01000.sys (KMDF); 
-WUDFx02000.dll (UMDF)
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
 req.iface: 
@@ -72,17 +71,7 @@ HANDLE WdfRegistryWdmGetHandle(
 </p>
 
 ## -remarks
-<p>A KMDF driver can pass the returned WDM handle to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557342">ZwXxx routines</a> that accept a WDM handle as input.</p>
-
-<p>A UMDF driver can pass the returned handle to APIs that require an HKEY, such as <a href="base.regenumkeyex">RegEnumKeyEx</a>.</p>
-
-<p>The handle that the <b>WdfRegistryWdmGetHandle</b> method returns is valid until the registry-key object is deleted. If the driver provides an <a href="..\wdfobject\nc-wdfobject-evt-wdf-object-context-cleanup.md">EvtCleanupCallback</a> function for the registry-key object, the pointer is valid until the callback function returns.</p>
-
-<p>For more information about registry-key objects, see <a href="wdf.using_the_registry_in_kmdf_drivers">Using the Registry in Framework-Based Drivers</a>.</p>
-
-<p>The following code example obtains a WDM handle to the registry key that a specified framework registry-key object represents.</p>
-
-<p>A KMDF driver can pass the returned WDM handle to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557342">ZwXxx routines</a> that accept a WDM handle as input.</p>
+<p>A KMDF driver can pass the returned WDM handle to the <a href="kernel.zwxxx_routines">ZwXxx routines</a> that accept a WDM handle as input.</p>
 
 <p>A UMDF driver can pass the returned handle to APIs that require an HKEY, such as <a href="base.regenumkeyex">RegEnumKeyEx</a>.</p>
 
@@ -154,7 +143,7 @@ HANDLE WdfRegistryWdmGetHandle(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
+<a href="devtest.kmdf_drivercreate">DriverCreate</a>
 </td>
 </tr>
 </table>

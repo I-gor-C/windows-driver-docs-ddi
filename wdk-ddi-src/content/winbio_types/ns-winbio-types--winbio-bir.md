@@ -61,30 +61,30 @@ typedef struct _WINBIO_BIR {
 ### -field <b>HeaderBlock</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536460">WINBIO_BIR_DATA</a> that contains size and offset information for a standard biometric header. This member is required.</p>
+<p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-bir-data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a standard biometric header. This member is required.</p>
 </dd>
 
 ### -field <b>StandardDataBlock</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536460">WINBIO_BIR_DATA</a> that contains size and offset information for a standard data block based on the ANSI 381 format. This member is optional. Set this member to 0,0 if you do not use it.</p>
+<p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-bir-data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a standard data block based on the ANSI 381 format. This member is optional. Set this member to 0,0 if you do not use it.</p>
 </dd>
 
 ### -field <b>VendorDataBlock</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536460">WINBIO_BIR_DATA</a> that contains size and offset information for a vendor-specific data block.  This member is optional. Set this member to 0,0 if you do not use it.</p>
+<p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-bir-data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a vendor-specific data block.  This member is optional. Set this member to 0,0 if you do not use it.</p>
 </dd>
 
 ### -field <b>SignatureBlock</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff536460">WINBIO_BIR_DATA</a> that contains size and offset information for a signature block. This member is optional. Set this member to 0,0 if you do not use it.</p>
+<p>A structure of type <a href="..\winbio_types\ns-winbio-types--winbio-bir-data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a signature block. This member is optional. Set this member to 0,0 if you do not use it.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The four WINBIO_BIR_DATA structures are contiguous and should be immediately followed by the actual data for each block.  Thus, the offset for the <i>HeaderBlock</i> will always be 4*(sizeof (WINBIO_BIR_DATA).  You can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536462">WINBIO_BIR_HEADER</a> structure to provide the actual data of the header block.  </p>
+<p>The four WINBIO_BIR_DATA structures are contiguous and should be immediately followed by the actual data for each block.  Thus, the offset for the <i>HeaderBlock</i> will always be 4*(sizeof (WINBIO_BIR_DATA).  You can use the <a href="..\winbio_types\ns-winbio-types--winbio-bir-header.md">WINBIO_BIR_HEADER</a> structure to provide the actual data of the header block.  </p>
 
 <p>The offset of where the <i>StandardDataBlock</i> starts should be the offset of the HeaderBlock plus the size of the HeaderBlock.</p>
 
@@ -113,16 +113,16 @@ typedef struct _WINBIO_BIR {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536467">WINBIO_CAPTURE_DATA</a>
+<a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-capture-data.md">WINBIO_CAPTURE_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536469">WINBIO_DATA</a>
+<a href="..\winbio_ioctl\ns-winbio-ioctl--winbio-data.md">WINBIO_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536460">WINBIO_BIR_DATA</a>
+<a href="..\winbio_types\ns-winbio-types--winbio-bir-data.md">WINBIO_BIR_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536462">WINBIO_BIR_HEADER</a>
+<a href="..\winbio_types\ns-winbio-types--winbio-bir-header.md">WINBIO_BIR_HEADER</a>
 </dt>
 </dl>
 <p> </p>

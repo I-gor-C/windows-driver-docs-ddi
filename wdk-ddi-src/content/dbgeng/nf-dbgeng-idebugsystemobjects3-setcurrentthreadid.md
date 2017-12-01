@@ -7,7 +7,7 @@ old-location: debugger\setcurrentthreadid.htm
 old-project: debugger
 ms.assetid: 965c2fe0-5be5-4036-b649-a25fcc6e2dc2
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects3, SetCurrentThreadId, IDebugSystemObjects3::SetCurrentThreadId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,13 +73,7 @@ HRESULT SetCurrentThreadId(
 ## -remarks
 <p>This method may also change the current process, current target, and current computer.</p>
 
-<p>If the thread is changed, the callback <a href="https://msdn.microsoft.com/library/windows/hardware/ff550683">IDebugEventCallbacks::ChangeEngineState</a> will be called with the DEBUG_CES_CURRENT_THREAD bit set.</p>
-
-<p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on monitoring events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
-
-<p>This method may also change the current process, current target, and current computer.</p>
-
-<p>If the thread is changed, the callback <a href="https://msdn.microsoft.com/library/windows/hardware/ff550683">IDebugEventCallbacks::ChangeEngineState</a> will be called with the DEBUG_CES_CURRENT_THREAD bit set.</p>
+<p>If the thread is changed, the callback <a href="debugger.idebugeventcallbacks_changeenginestate">IDebugEventCallbacks::ChangeEngineState</a> will be called with the DEBUG_CES_CURRENT_THREAD bit set.</p>
 
 <p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on monitoring events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
 

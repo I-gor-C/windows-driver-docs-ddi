@@ -96,10 +96,10 @@ typedef struct _D3DDDI_MULTISAMPLINGMETHOD {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt--d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557575">DXGKARG_DESCRIBEALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-describeallocation.md">DXGKARG_DESCRIBEALLOCATION</a>
 </dt>
 <dt>
 <a href="display.dxgkddidescribeallocation">DxgkDdiDescribeAllocation</a>

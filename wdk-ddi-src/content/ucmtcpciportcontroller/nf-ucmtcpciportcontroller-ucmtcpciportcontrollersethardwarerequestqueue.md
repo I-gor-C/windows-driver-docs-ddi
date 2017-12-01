@@ -61,7 +61,7 @@ VOID UcmTcpciPortControllerSetHardwareRequestQueue(
 ### -param <i>PortControllerObject</i> 
 
 <dd>
-<p>Handle to the port controller object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>.</p>
+<p>Handle to the port controller object that the client driver received in the previous call to <a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>.</p>
 </dd>
 
 ### -param <i>HardwareRequestQueue</i> 
@@ -75,14 +75,7 @@ VOID UcmTcpciPortControllerSetHardwareRequestQueue(
 <p>This method does not return a value.</p>
 
 ## -remarks
-<p>The client driver must call <b>UcmTcpciPortControllerSetHardwareRequestQueue</b> after creating the port controller object. The driver must call this method only once before calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt805846">UcmTcpciPortControllerStart</a>.</p>
-
-<p>The parent of the queue object is the port controller object. 
-</p>
-
-<p>A client driver may choose to use the same queue across multiple port controller objects. However, in that case the driver must make sure that the port controller objects do not outlive the queue object. The queue object must be deleted only after all the port controllers have been stopped. UcmTcpciCx guarantees  that only one request is processed in the queue at a time per port controller object.</p>
-
-<p>The client driver must call <b>UcmTcpciPortControllerSetHardwareRequestQueue</b> after creating the port controller object. The driver must call this method only once before calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt805846">UcmTcpciPortControllerStart</a>.</p>
+<p>The client driver must call <b>UcmTcpciPortControllerSetHardwareRequestQueue</b> after creating the port controller object. The driver must call this method only once before calling <a href="buses.ucmtcpciportcontrollerstart">UcmTcpciPortControllerStart</a>.</p>
 
 <p>The parent of the queue object is the port controller object. 
 </p>
@@ -130,7 +123,7 @@ VOID UcmTcpciPortControllerSetHardwareRequestQueue(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>
+<a href="buses.ucmtcpciportcontrollercreate">UcmTcpciPortControllerCreate</a>
 </dt>
 </dl>
 <p> </p>

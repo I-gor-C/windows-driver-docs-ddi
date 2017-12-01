@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The TAPE_PREPARE structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560630">IOCTL_TAPE_PREPARE</a> request to load or unload tape, reset the tape's tension, lock or unlock the ejection mechanism, or format the tape.</p>
+<p>The TAPE_PREPARE structure is used in conjunction with the <a href="..\ntddtape\ni-ntddtape-ioctl-tape-prepare.md">IOCTL_TAPE_PREPARE</a> request to load or unload tape, reset the tape's tension, lock or unlock the ejection mechanism, or format the tape.</p>
 
 
 ## -syntax
@@ -143,10 +143,10 @@ typedef struct _TAPE_PREPARE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560630">IOCTL_TAPE_PREPARE</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl-tape-prepare.md">IOCTL_TAPE_PREPARE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567950">TapeMiniPrepare</a>
+<a href="storage.tapeminiprepare">TapeMiniPrepare</a>
 </dt>
 </dl>
 <p> </p>

@@ -74,9 +74,7 @@ BOOLEAN MmForceSectionClosed(
 <p><b>MmForceSectionClosed</b> returns <b>TRUE</b> if the sections were successfully deleted or no sections were found, <b>FALSE</b> otherwise.</p>
 
 ## -remarks
-<p>For more information about creating mapped sections and views of memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563682">Sections and Views</a>.</p>
-
-<p>For more information about creating mapped sections and views of memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563682">Sections and Views</a>.</p>
+<p>For more information about creating mapped sections and views of memory, see <a href="kernel.sections_and_views">Sections and Views</a>.</p>
 
 ## -requirements
 <table>
@@ -133,10 +131,10 @@ BOOLEAN MmForceSectionClosed(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539188">CcPurgeCacheSection</a>
+<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549808">MmFlushImageSection</a>
+<a href="..\ntifs\nf-ntifs-mmflushimagesection.md">MmFlushImageSection</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: kernel\posetsystemstate.htm
 old-project: kernel
 ms.assetid: b62db582-381a-457f-9755-d8667c7561af
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: PoSetSystemState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,13 +87,7 @@ VOID PoSetSystemState(
 <p>None</p>
 
 ## -remarks
-<p>A driver calls <b>PoSetSystemState</b> to set flags indicating that system activity is occurring. Unlike <a href="https://msdn.microsoft.com/library/windows/hardware/ff559731">PoRegisterSystemState</a>, this routine does not allow the driver to set a persistent busy state. </p>
-
-<p>The <i>Flags</i> parameter specifies the type of activity occurring. Drivers can specify any combination of the flags.</p>
-
-<p>Drivers can set the system busy state to request that the system avoid leaving of the working state while driver activity is occurring. Note, however, that under some circumstances (such as a critically low battery) the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> may override this request and put the system to sleep anyway. </p>
-
-<p>A driver calls <b>PoSetSystemState</b> to set flags indicating that system activity is occurring. Unlike <a href="https://msdn.microsoft.com/library/windows/hardware/ff559731">PoRegisterSystemState</a>, this routine does not allow the driver to set a persistent busy state. </p>
+<p>A driver calls <b>PoSetSystemState</b> to set flags indicating that system activity is occurring. Unlike <a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>, this routine does not allow the driver to set a persistent busy state. </p>
 
 <p>The <i>Flags</i> parameter specifies the type of activity occurring. Drivers can specify any combination of the flags.</p>
 
@@ -162,12 +156,12 @@ VOID PoSetSystemState(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559731">PoRegisterSystemState</a>
+<a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559794">PoUnregisterSystemState</a>
+<a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoSetSystemState routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoSetSystemState routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

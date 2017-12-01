@@ -46,7 +46,7 @@ req.iface:
 ## -ioctlparameters
 
 ### -input-buffer
-<p><b>Irp-&gt;UserBuffer </b> points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539949">HID_XFER_PACKET</a> structure the contains the parameters and report to be transmitted to the device. The following members are used:</p>
+<p><b>Irp-&gt;UserBuffer </b> points to a <a href="..\hidclass\ns-hidclass--hid-xfer-packet.md">HID_XFER_PACKET</a> structure the contains the parameters and report to be transmitted to the device. The following members are used:</p>
 
 <p></p>
 
@@ -57,9 +57,9 @@ req.iface:
 <p>Specifies the report identifier, for this collection, of the report data to be written to the device.</p>
 
 ### -input-buffer-length
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539949">HID_XFER_PACKET</a> structure.</p>
+<p>The size of a <a href="..\hidclass\ns-hidclass--hid-xfer-packet.md">HID_XFER_PACKET</a> structure.</p>
 
-<p>The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539949">HID_XFER_PACKET</a> structure.</p>
+<p>The size of a <a href="..\hidclass\ns-hidclass--hid-xfer-packet.md">HID_XFER_PACKET</a> structure.</p>
 
 ### -output-buffer
 <p>None.</p>
@@ -152,34 +152,34 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538910">HidD_GetFeature</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getfeature.md">HidD_GetFeature</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538945">HidD_GetInputReport</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-getinputreport.md">HidD_GetInputReport</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539684">HidD_SetFeature</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-setfeature.md">HidD_SetFeature</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539690">HidD_SetOutputReport</a>
+<a href="..\hidsdi\nf-hidsdi-hidd-setoutputreport.md">HidD_SetOutputReport</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539949">HID_XFER_PACKET</a>
+<a href="..\hidclass\ns-hidclass--hid-xfer-packet.md">HID_XFER_PACKET</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541100">IOCTL_HID_GET_FEATURE</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-feature.md">IOCTL_HID_GET_FEATURE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541126">IOCTL_HID_GET_INPUT_REPORT</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-input-report.md">IOCTL_HID_GET_INPUT_REPORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541172">IOCTL_HID_READ_REPORT</a>
+<a href="..\hidport\ni-hidport-ioctl-hid-read-report.md">IOCTL_HID_READ_REPORT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541176">IOCTL_HID_SET_FEATURE</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-set-feature.md">IOCTL_HID_SET_FEATURE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541196">IOCTL_HID_SET_OUTPUT_REPORT</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-set-output-report.md">IOCTL_HID_SET_OUTPUT_REPORT</a>
 </dt>
 </dl>
 <p> </p>

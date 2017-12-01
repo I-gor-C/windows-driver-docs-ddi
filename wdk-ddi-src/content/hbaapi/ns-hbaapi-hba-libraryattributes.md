@@ -85,7 +85,7 @@ typedef struct HBA_LibraryAttributes {
 ### -field <b>build_date</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff567981">tm</a> that holds a timestamp that indicates when the library was built. </p>
+<p>Contains a structure of type <a href="storage.tm">tm</a> that holds a timestamp that indicates when the library was built. </p>
 </dd>
 </dl>
 
@@ -109,7 +109,7 @@ typedef struct HBA_LibraryAttributes {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567981">tm</a>
+<a href="storage.tm">tm</a>
 </dt>
 </dl>
 <p> </p>

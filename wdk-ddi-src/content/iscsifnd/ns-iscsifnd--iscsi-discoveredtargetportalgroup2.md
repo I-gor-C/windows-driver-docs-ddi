@@ -71,12 +71,12 @@ typedef struct _ISCSI_DiscoveredTargetPortalGroup2 {
 ### -field <b>Portals</b>
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561509">ISCSI_DiscoveredTargetPortal</a> structures, which describe target portals. </p>
+<p>An array of <a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportal.md">ISCSI_DiscoveredTargetPortal</a> structures, which describe target portals. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTargetPortalGroup2 structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561520">ISCSI_DiscoveredTargetPortalGroup2 WMI Class</a> in <i>Discover.mof</i>. </p>
+<p>The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTargetPortalGroup2 structure when it compiles the <a href="storage.iscsi_discoveredtargetportalgroup2_wmi_class">ISCSI_DiscoveredTargetPortalGroup2 WMI Class</a> in <i>Discover.mof</i>. </p>
 
 ## -requirements
 <table>
@@ -95,16 +95,16 @@ typedef struct _ISCSI_DiscoveredTargetPortalGroup2 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561509">ISCSI_DiscoveredTargetPortal</a>
+<a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportal.md">ISCSI_DiscoveredTargetPortal</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561515">ISCSI_DiscoveredTargetPortalGroup</a>
+<a href="..\iscsifnd\ns-iscsifnd--iscsi-discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561523">ISCSI_DiscoveredTargetPortalGroup WMI Class</a>
+<a href="storage.iscsi_discoveredtargetportalgroup_wmi_class">ISCSI_DiscoveredTargetPortalGroup WMI Class</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561520">ISCSI_DiscoveredTargetPortalGroup2 WMI Class</a>
+<a href="storage.iscsi_discoveredtargetportalgroup2_wmi_class">ISCSI_DiscoveredTargetPortalGroup2 WMI Class</a>
 </dt>
 </dl>
 <p> </p>

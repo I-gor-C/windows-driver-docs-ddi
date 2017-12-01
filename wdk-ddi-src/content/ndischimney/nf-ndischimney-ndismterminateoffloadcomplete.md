@@ -7,7 +7,7 @@ old-location: netvista\ndismterminateoffloadcomplete.htm
 old-project: netvista
 ms.assetid: d444eae5-2e7c-41f2-9fb2-55e172505cf6
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMTerminateOffloadComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -120,96 +120,16 @@ VOID NdisMTerminateOffloadComplete(
       MiniportUpdateOffload</a> functions.</p>
 
 <p>Ensure that any outstanding calls to the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff563600">NdisMIndicateStatusEx</a>, 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff563619">NdisMOffloadEventIndicate</a>, 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff564595">NdisTcpOffloadEventHandler</a>,
+      <a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>, 
+      <a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>, 
+      <a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-event-indicate.md">NdisTcpOffloadEventHandler</a>,
       and 
       <a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-receive-indicate.md">
       NdisTcpOffloadReceiveHandler</a> functions have returned.</p>
 
 <p>If there is outstanding send data on a TCP connection that is being terminated, the offload target
     packages such data in net buffers and passes the packaged data to the host stack in a linked list of 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures. In this case,
-    the offload target specifies a non-<b>NULL</b> value for the 
-    <b>NetBufferListChain</b> member of the NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure for that connection.
-    (The NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure is in the linked list pointed to by the 
-    <i>OffloadBlockList</i> pointer.) The 
-    <b>NetBufferListChain</b> member points to the linked list of 
-    <b>NET_BUFFER_LIST</b> structures with which the
-    send data is associated.</p>
-
-<p>When passing outstanding send data to the host stack, the offload target must also specify non-<b>NULL</b>
-    values for the following delegated TCP variables for the connection that is being terminated:</p>
-
-<p>SndUna</p>
-
-<p>SndNxt</p>
-
-<p>SndMax</p>
-
-<p>For more information about passing outstanding send data, see 
-    <a href="netvista.handling_outstanding_send_data_during_and_after_an_offload_operation">
-    Handling Outstanding Send Data During and After an Offload Operation</a>.</p>
-
-<p>If there is no outstanding send data on a TCP connection that is being terminated, the offload target
-    must specify a <b>NULL</b> value for the 
-    <b>NetBufferListChain</b> member.</p>
-
-<p>There might be outstanding receive data on a TCP connection that is being uploaded. This is data that
-    the offload target has received off the wire, processed, and acknowledged. For more information about
-    processing such data, see 
-    <a href="netvista.handling_buffered_receive_data_during_a_terminate_offload_operation">
-    Handling Buffered Receive Data During a Terminate Offload Operation</a>.</p>
-
-<p>The offload target frees all resources, such as memory, that are associated with the terminated state
-    objects.</p>
-
-<p>Before calling the 
-    <b>NdisMTerminateOffloadComplete</b> function, the offload target must write either of the following
-    NDIS_STATUS values to the 
-    <b>Status</b> member of each NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure in the state tree:</p>
-
-<p>NDIS_STATUS_SUCCESS</p>
-
-<p>The offload target successfully terminated the offload of the state object referenced by the
-      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure. If the NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure is
-      followed by a delegated state structure (<i>XXX</i>_OFFLOAD_STATE_DELEGATED), the offload target successfully wrote the delegated variable
-      values for that state object to the delegated state structure.</p>
-
-<p>NDIS_STATUS_FAILURE</p>
-
-<p>The terminate operation did not succeed. Such a failure is caused by a catastrophic failure that
-      resulted in the loss of the state object that was to be terminated. In this case, the offload target
-      hardware might not be responding. The host stack might have to abort the connection.</p>
-
-<p>Before calling the 
-    <b>NdisMTerminateOffloadComplete</b> function, the offload target must also:</p>
-
-<p>Complete any oustanding calls to the 
-      <a href="..\ndischimney\nc-ndischimney-w-invalidate-offload-handler.md">MiniportInvalidateOffload</a>,
-      
-      <a href="..\ndischimney\nc-ndischimney-w-query-offload-handler.md">MiniportQueryOffload</a>, 
-      <a href="..\ndischimney\nc-ndischimney-w-tcp-offload-receive-handler.md">MiniportTcpOffloadReceive</a>,
-      
-      <a href="..\ndischimney\nc-ndischimney-w-tcp-offload-disconnect-handler.md">
-      MiniportTcpOffloadDisconnect</a>, 
-      <a href="..\ndischimney\nc-ndischimney-w-tcp-offload-forward-handler.md">MiniportTcpOffloadForward</a>,
-      
-      <a href="..\ndischimney\nc-ndischimney-w-tcp-offload-send-handler.md">MiniportTcpOffloadSend</a>, and 
-      <a href="..\ndischimney\nc-ndischimney-w-update-offload-handler.md">
-      MiniportUpdateOffload</a> functions.</p>
-
-<p>Ensure that any outstanding calls to the 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff563600">NdisMIndicateStatusEx</a>, 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff563619">NdisMOffloadEventIndicate</a>, 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff564595">NdisTcpOffloadEventHandler</a>,
-      and 
-      <a href="..\ndischimney\nc-ndischimney-ndis-tcp-offload-receive-indicate.md">
-      NdisTcpOffloadReceiveHandler</a> functions have returned.</p>
-
-<p>If there is outstanding send data on a TCP connection that is being terminated, the offload target
-    packages such data in net buffers and passes the packaged data to the host stack in a linked list of 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures. In this case,
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structures. In this case,
     the offload target specifies a non-<b>NULL</b> value for the 
     <b>NetBufferListChain</b> member of the NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure for that connection.
     (The NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure is in the linked list pointed to by the 
@@ -286,12 +206,12 @@ VOID NdisMTerminateOffloadComplete(
    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563654">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570939">TCP_OFFLOAD_STATE_DELEGATED</a>
+<a href="..\ndischimney\ns-ndischimney--tcp-offload-state-delegated.md">TCP_OFFLOAD_STATE_DELEGATED</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMTerminateOffloadComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMTerminateOffloadComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

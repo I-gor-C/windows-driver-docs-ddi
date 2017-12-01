@@ -7,7 +7,7 @@ old-location: netvista\wwan_set_context.htm
 old-project: netvista
 ms.assetid: 00772a37-ef1b-446b-b7bd-1a6aa27d1dad
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WWAN_SET_CONTEXT, WWAN_SET_CONTEXT, *PWWAN_SET_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\ndis_qos_classification_element.htm
 old-project: netvista
 ms.assetid: 2677dc3a-7685-40bf-94c3-2efecf21e9a8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_QOS_CLASSIFICATION_ELEMENT, NDIS_QOS_CLASSIFICATION_ELEMENT, *PNDIS_QOS_CLASSIFICATION_ELEMENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,7 +83,7 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 ### -field <b>Header</b>
 
 <dd>
-<p>The type, revision, and size of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure. This member is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.</p>
+<p>The type, revision, and size of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a> structure.</p>
 <p>The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_QOS_CLASSIFICATION_ELEMENT. To specify the version of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: </p>
 <p></p>
 <dl>
@@ -147,13 +147,13 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 ## -remarks
 <p>A traffic classification specifies a <i>condition</i> and an <i>action</i> that the network adapter applies to egress packet data. When the adapter inspects the egress packet data and finds a matching classification condition, it applies the corresponding action to the egress packet.</p>
 
-<p>The <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure specifies each traffic classification element within the array that is specified by the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451640">NDIS_QOS_PARAMETERS</a> structure. This structure is used in the following OID requests:</p>
+<p>The <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure specifies each traffic classification element within the array that is specified by the  <a href="..\ntddndis\ns-ntddndis--ndis-qos-parameters.md">NDIS_QOS_PARAMETERS</a> structure. This structure is used in the following OID requests:</p>
 
 <p>OID query requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451832">OID_QOS_OPERATIONAL_PARAMETERS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451841">OID_QOS_REMOTE_PARAMETERS</a>.</p>
 
 <p>OID method requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451835">OID_QOS_PARAMETERS</a>.</p>
 
-<p>The miniport driver also returns an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451640">NDIS_QOS_PARAMETERS</a> structure that contains an array of <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structures in the following NDIS status indications:</p>
+<p>The miniport driver also returns an <a href="..\ntddndis\ns-ntddndis--ndis-qos-parameters.md">NDIS_QOS_PARAMETERS</a> structure that contains an array of <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structures in the following NDIS status indications:</p>
 
 <p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439810">NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE</a>
@@ -181,9 +181,7 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 
 <p>The <b>ConditionField</b> member contains a 16-bit NetworkDirect port value.</p>
 
-<p> </p>
-
-<p>If the <b>ConditionSelector</b> member contains a value of NDIS_QOS_CONDITION_DEFAULT, the associated classification action must be applied to all egress packets that did not match any other classification conditions. When the DCB component issues an OID method request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451835">OID_QOS_PARAMETERS</a>, it may set the  <b>ConditionSelector</b> to NDIS_QOS_CONDITION_DEFAULT in only the first <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451640">NDIS_QOS_PARAMETERS</a> array.</p>
+<p>If the <b>ConditionSelector</b> member contains a value of NDIS_QOS_CONDITION_DEFAULT, the associated classification action must be applied to all egress packets that did not match any other classification conditions. When the DCB component issues an OID method request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451835">OID_QOS_PARAMETERS</a>, it may set the  <b>ConditionSelector</b> to NDIS_QOS_CONDITION_DEFAULT in only the first <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure in the <a href="..\ntddndis\ns-ntddndis--ndis-qos-parameters.md">NDIS_QOS_PARAMETERS</a> array.</p>
 
 <p>If the <b>ConditionSelector</b> member contains a value of NDIS_QOS_CONDITION_NETDIRECT_PORT, the miniport driver must match the <b>ConditionField</b> member against either the source or destination port of a NetworkDirect connection. If the miniport driver accepts a NetDirect connection, the driver must match the <b>ConditionField</b> member against the source port of any packet it sends over that connection. If the miniport driver initiates a NetDirect connection, it must match the <b>ConditionField</b> member against the destination port of any packet it sends over that connection.</p>
 
@@ -192,8 +190,6 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 <p>The following table defines the range of values for the <b>ActionSelector</b> and <b>ActionField</b> members.</p>
 
 <p>The <b>ActionField</b> member contains a 3-bit IEEE 802.1p priority level value. For more information on these priority levels, see <a href="NULL">IEEE 802.1p Priority Levels</a>.</p>
-
-<p> </p>
 
 <p>Starting with NDIS 6.30, traffic classification actions define an IEEE 802.1p priority level to which the egress packet is assigned. When the network adapter assigns a priority level to an egress packet, the adapter also applies the parameters for the NDIS QoS traffic class associated with the specified priority level. These parameters determine how the network adapter transmits the packet, and include bandwidth allocation  and transmission selection algorithm (TSA). </p>
 
@@ -225,10 +221,10 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-object-header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451640">NDIS_QOS_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis--ndis-qos-parameters.md">NDIS_QOS_PARAMETERS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439810">NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE</a>
@@ -248,4 +244,4 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_QOS_CLASSIFICATION_ELEMENT structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_QOS_CLASSIFICATION_ELEMENT structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

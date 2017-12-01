@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnFlipOverlayCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544198">D3DDDICB_FLIPOVERLAY</a> structure that describes how to change the display on the overlay.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-flipoverlay.md">D3DDDICB_FLIPOVERLAY</a> structure that describes how to change the display on the overlay.</p>
 </dd>
 </dl>
 
@@ -124,10 +124,10 @@ __checkReturn HRESULT APIENTRY CALLBACK pfnFlipOverlayCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544512">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544198">D3DDDICB_FLIPOVERLAY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-flipoverlay.md">D3DDDICB_FLIPOVERLAY</a>
 </dt>
 </dl>
 <p> </p>

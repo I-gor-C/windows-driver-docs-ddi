@@ -7,7 +7,7 @@ old-location: netvista\wdi_txrx_peer_cfg.htm
 old-project: netvista
 ms.assetid: 5d2a97a3-3214-4f23-bf9d-d0ed292a46f0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDI_TXRX_PEER_CFG, WDI_TXRX_PEER_CFG, *PWDI_TXRX_PEER_CFG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ typedef struct _WDI_TXRX_PEER_CFG {
 ### -field <b>PeerQoSConfig</b>
 
 <dd>
-<p>The peer's QoS capability as defined in <a href="https://msdn.microsoft.com/library/windows/hardware/dn898191">WDI_TXRX_PEER_QOS_CAPS</a>.</p>
+<p>The peer's QoS capability as defined in <a href="..\dot11wdi\ne-dot11wdi--wdi-txrx-peer-qos-caps.md">WDI_TXRX_PEER_QOS_CAPS</a>.</p>
 </dd>
 </dl>
 

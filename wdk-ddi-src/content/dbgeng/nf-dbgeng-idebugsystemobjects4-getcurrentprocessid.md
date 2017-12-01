@@ -7,7 +7,7 @@ old-location: debugger\getcurrentprocessid.htm
 old-project: debugger
 ms.assetid: 5b256ccb-8f03-4936-8e03-9955c81384a5
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects4, GetCurrentProcessId, IDebugSystemObjects4::GetCurrentProcessId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,8 +69,6 @@ HRESULT GetCurrentProcessId(
 <p> </p>
 
 ## -remarks
-<p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
 <p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
 
 ## -requirements

@@ -7,7 +7,7 @@ old-location: netvista\ril_radiostatepasswordcompare.htm
 old-project: netvista
 ms.assetid: f984bb4f-ecc8-4e6c-bb2c-a721395f1958
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_RadioStatePasswordCompare
 ms.prod: windows-hardware
 ms.technology: windows-devices

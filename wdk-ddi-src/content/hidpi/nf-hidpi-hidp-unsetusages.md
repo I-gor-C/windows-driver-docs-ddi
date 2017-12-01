@@ -64,7 +64,7 @@ NTSTATUS __stdcall HidP_UnsetUsages(
 ### -param <i>ReportType</i> [in]
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of report located at <i>Report</i>.</p>
+<p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of report located at <i>Report</i>.</p>
 </dd>
 
 ### -param <i>UsagePage</i> [in]
@@ -106,7 +106,7 @@ NTSTATUS __stdcall HidP_UnsetUsages(
 ### -param <i>ReportLength</i> [in]
 
 <dd>
-<p>Specifies the size, in bytes, of the report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a> returns in a collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.</p>
+<p>Specifies the size, in bytes, of the report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a> returns in a collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
 </dd>
 </dl>
 
@@ -143,43 +143,7 @@ The routine did not find a usage in any report of the specified type.</p>
 ## -remarks
 <p><b>HidP_UnsetUsages</b> sets <i>UsageLength</i> as follows:</p>
 
-<p></p><dl>
-<dt><a id="ReportType__PreparsedData__Report__or_ReportLength_is_not_valid."></a><a id="reporttype__preparseddata__report__or_reportlength_is_not_valid."></a><a id="REPORTTYPE__PREPARSEDDATA__REPORT__OR_REPORTLENGTH_IS_NOT_VALID."></a>ReportType, PreparsedData, Report, or ReportLength is not valid.</dt>
-<dd>
-<p>The input value is unchanged.</p>
-</dd>
-<dt><a id="All_usages_are_successfully_set_to_OFF."></a><a id="all_usages_are_successfully_set_to_off."></a><a id="ALL_USAGES_ARE_SUCCESSFULLY_SET_TO_OFF."></a>All usages are successfully set to OFF.</dt>
-<dd>
-<p>The input value is unchanged.</p>
-</dd>
-<dt><a id="A_usage_could_not_be_set_to_OFF."></a><a id="a_usage_could_not_be_set_to_off."></a><a id="A_USAGE_COULD_NOT_BE_SET_TO_OFF."></a>A usage could not be set to OFF.</dt>
-<dd>
-<p>Set to the index of the usage in <i>UsageList</i> that caused the error.</p>
-</dd>
-</dl><p>The input value is unchanged.</p>
-
-<p>The input value is unchanged.</p>
-
-<p>Set to the index of the usage in <i>UsageList</i> that caused the error.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p><b>HidP_UnsetUsages</b> sets <i>UsageLength</i> as follows:</p>
-
-<p></p><dl>
-<dt><a id="ReportType__PreparsedData__Report__or_ReportLength_is_not_valid."></a><a id="reporttype__preparseddata__report__or_reportlength_is_not_valid."></a><a id="REPORTTYPE__PREPARSEDDATA__REPORT__OR_REPORTLENGTH_IS_NOT_VALID."></a>ReportType, PreparsedData, Report, or ReportLength is not valid.</dt>
-<dd>
-<p>The input value is unchanged.</p>
-</dd>
-<dt><a id="All_usages_are_successfully_set_to_OFF."></a><a id="all_usages_are_successfully_set_to_off."></a><a id="ALL_USAGES_ARE_SUCCESSFULLY_SET_TO_OFF."></a>All usages are successfully set to OFF.</dt>
-<dd>
-<p>The input value is unchanged.</p>
-</dd>
-<dt><a id="A_usage_could_not_be_set_to_OFF."></a><a id="a_usage_could_not_be_set_to_off."></a><a id="A_USAGE_COULD_NOT_BE_SET_TO_OFF."></a>A usage could not be set to OFF.</dt>
-<dd>
-<p>Set to the index of the usage in <i>UsageList</i> that caused the error.</p>
-</dd>
-</dl><p>The input value is unchanged.</p>
+<p></p>
 
 <p>The input value is unchanged.</p>
 
@@ -246,10 +210,10 @@ The routine did not find a usage in any report of the specified type.</p>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539783">HidP_SetData</a>
+<a href="..\hidpi\nf-hidpi-hidp-setdata.md">HidP_SetData</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539792">HidP_SetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp-setusages.md">HidP_SetUsages</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>

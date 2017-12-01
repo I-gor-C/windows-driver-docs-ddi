@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The FORMAT_EX_PARAMETERS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559448">IOCTL_DISK_FORMAT_TRACKS_EX</a> request to format the specified set of contiguous tracks on the disk. </p>
+<p>The FORMAT_EX_PARAMETERS structure is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-format-tracks-ex.md">IOCTL_DISK_FORMAT_TRACKS_EX</a> request to format the specified set of contiguous tracks on the disk. </p>
 
 
 ## -syntax
@@ -64,7 +64,7 @@ typedef struct _FORMAT_EX_PARAMETERS {
 ### -field <b>MediaType</b>
 
 <dd>
-<p>Indicates format information, such as the disk size and the number of bytes per sector. For a list of the values that can be assigned to this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff562216">MEDIA_TYPE</a>. </p>
+<p>Indicates format information, such as the disk size and the number of bytes per sector. For a list of the values that can be assigned to this member, see <a href="storage.media_type">MEDIA_TYPE</a>. </p>
 </dd>
 
 ### -field <b>StartCylinderNumber</b>
@@ -130,13 +130,13 @@ typedef struct _FORMAT_EX_PARAMETERS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559448">IOCTL_DISK_FORMAT_TRACKS_EX</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-format-tracks-ex.md">IOCTL_DISK_FORMAT_TRACKS_EX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559447">IOCTL_DISK_FORMAT_TRACKS</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-format-tracks.md">IOCTL_DISK_FORMAT_TRACKS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553878">FORMAT_PARAMETERS</a>
+<a href="..\ntdddisk\ns-ntdddisk--format-parameters.md">FORMAT_PARAMETERS</a>
 </dt>
 </dl>
 <p> </p>

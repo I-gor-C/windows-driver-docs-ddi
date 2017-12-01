@@ -67,8 +67,6 @@ BOOLEAN CcIsThereDirtyData(
 ## -remarks
 <p><b>CcIsThereDirtyData</b> ignores temporary files.</p>
 
-<p><b>CcIsThereDirtyData</b> ignores temporary files.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -116,10 +114,10 @@ BOOLEAN CcIsThereDirtyData(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539082">CcFlushCache</a>
+<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539188">CcPurgeCacheSection</a>
+<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
 </dt>
 </dl>
 <p> </p>

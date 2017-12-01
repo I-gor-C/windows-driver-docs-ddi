@@ -7,7 +7,7 @@ old-location: netvista\dot11_msonex_result.htm
 old-project: netvista
 ms.assetid: d5870125-2c0f-4cb9-ad2a-dc4939745504
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: enum
 req.header: wlanihv.h
 req.include-header: Wlanihv.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -83,20 +82,6 @@ typedef enum _DOT11_MSONEX_RESULT {
     function, the operating system passes a DOT11_MSONEX_RESULT value to the 
     <i>OneXResult</i> parameter to specify the result of the authentication operation.</p>
 
-<p>After the IHV Extensions DLL initiates an 802.1X authentication operation, the operating system calls
-    the 
-    <a href="..\wlanihv\nc-wlanihv-dot11extihv-onex-indicate-result.md">
-    Dot11ExtIhvOneXIndicateResult</a> IHV handler function to complete the operation. When it calls this
-    function, the operating system passes a DOT11_MSONEX_RESULT value to the 
-    <i>OneXResult</i> parameter to specify the result of the authentication operation.</p>
-
-<p>After the IHV Extensions DLL initiates an 802.1X authentication operation, the operating system calls
-    the 
-    <a href="..\wlanihv\nc-wlanihv-dot11extihv-onex-indicate-result.md">
-    Dot11ExtIhvOneXIndicateResult</a> IHV handler function to complete the operation. When it calls this
-    function, the operating system passes a DOT11_MSONEX_RESULT value to the 
-    <i>OneXResult</i> parameter to specify the result of the authentication operation.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -127,9 +112,9 @@ typedef enum _DOT11_MSONEX_RESULT {
    Dot11ExtIhvOneXIndicateResult</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547610">Dot11ExtStartOneX</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-onex-start.md">Dot11ExtStartOneX</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MSONEX_RESULT enumeration%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MSONEX_RESULT enumeration%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

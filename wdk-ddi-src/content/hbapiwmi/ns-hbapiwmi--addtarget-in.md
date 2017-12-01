@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The AddPort_IN structure is used by a WMI client to deliver the input parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550136">AddTarget</a> WMI method to the HBA miniport driver.</p>
+<p>The AddPort_IN structure is used by a WMI client to deliver the input parameter data of the <a href="storage.addtarget">AddTarget</a> WMI method to the HBA miniport driver.</p>
 
 
 ## -syntax
@@ -95,7 +95,7 @@ typedef struct _AddTarget_IN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550136">AddTarget</a>
+<a href="storage.addtarget">AddTarget</a>
 </dt>
 </dl>
 <p> </p>

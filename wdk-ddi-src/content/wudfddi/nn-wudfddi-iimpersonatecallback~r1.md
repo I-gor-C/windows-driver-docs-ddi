@@ -7,7 +7,7 @@ old-location: wdf\iimpersonatecallback.htm
 old-project: wdf
 ms.assetid: 811cb070-9cbe-4906-9db0-ee8316cc18c9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]</p>
 <p>The <b>IImpersonateCallback</b> interface contains a method that handles impersonation.</p>
-<p>A driver registers the <b>IImpersonateCallback</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a> method. </p>
+<p>A driver registers the <b>IImpersonateCallback</b> interface when the driver calls the <a href="wdf.iwdfiorequest_impersonate">IWDFIoRequest::Impersonate</a> method. </p>
 
 
 ## -inheritance
@@ -62,7 +62,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554916">IImpersonateCallback::OnImpersonate</a>
+<a href="wdf.iimpersonatecallback_onimpersonate">IImpersonateCallback::OnImpersonate</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iimpersonatecallback_onimpersonate">OnImpersonate</a> method handles impersonation.</p>

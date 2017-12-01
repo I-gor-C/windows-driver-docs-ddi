@@ -67,13 +67,13 @@ typedef struct _DXGK_FAULT_ERROR_CODE {
 
 <dd>
 <p>When set, this indicates that the GPU error code is specific to the particular vendor. In this case, <b>DeviceSpecificCode</b> should be set to a vendor specific error code.</p>
-<p>When not set, this indicates that the GPU error can be described via a set of predefined values in <a href="https://msdn.microsoft.com/library/windows/hardware/dn906347">DXGK_GENERAL_ERROR_CODE</a> enumeration. <b>GeneralErrorCode</b> value should be set to the corresponding error code.</p>
+<p>When not set, this indicates that the GPU error can be described via a set of predefined values in <a href="..\d3dkmdt\ne-d3dkmdt--dxgk-general-error-code.md">DXGK_GENERAL_ERROR_CODE</a> enumeration. <b>GeneralErrorCode</b> value should be set to the corresponding error code.</p>
 </dd>
 
 ### -field <b>GeneralErrorCode</b>
 
 <dd>
-<p>General error code defined by <a href="https://msdn.microsoft.com/library/windows/hardware/dn906347">DXGK_GENERAL_ERROR_CODE</a>.</p>
+<p>General error code defined by <a href="..\d3dkmdt\ne-d3dkmdt--dxgk-general-error-code.md">DXGK_GENERAL_ERROR_CODE</a>.</p>
 </dd>
 
 ### -field <b>IsDeviceSpecificCodeReservedBit</b>
@@ -81,7 +81,7 @@ typedef struct _DXGK_FAULT_ERROR_CODE {
 <dd>
 <p>Same as <b>IsDeviceSpecificCode</b> member above:</p>
 <p>When set, this indicates that the GPU error code is specific to the particular vendor. In this case, <b>DeviceSpecificCode</b> should be set to a vendor specific error code.</p>
-<p>When not set, this indicates that the GPU error can be described via a set of predefined values in <a href="https://msdn.microsoft.com/library/windows/hardware/dn906347">DXGK_GENERAL_ERROR_CODE</a> enumeration. <b>GeneralErrorCode</b> value should be set to the corresponding error code.</p>
+<p>When not set, this indicates that the GPU error can be described via a set of predefined values in <a href="..\d3dkmdt\ne-d3dkmdt--dxgk-general-error-code.md">DXGK_GENERAL_ERROR_CODE</a> enumeration. <b>GeneralErrorCode</b> value should be set to the corresponding error code.</p>
 </dd>
 
 ### -field <b>DeviceSpecificCode</b>
@@ -127,7 +127,7 @@ typedef struct _DXGK_FAULT_ERROR_CODE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906347">DXGK_GENERAL_ERROR_CODE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--dxgk-general-error-code.md">DXGK_GENERAL_ERROR_CODE</a>
 </dt>
 </dl>
 <p> </p>

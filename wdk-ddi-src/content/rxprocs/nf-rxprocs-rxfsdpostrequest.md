@@ -90,26 +90,6 @@ NTSTATUS RxFsdPostRequest(
 
 <p>All calls to <b>RxFsdPostRequest</b> are queued to a worker thread to call the <b>RxFsdDispatch</b> routine passing in the <i>RxContext</i> parameter. </p>
 
-<p><b>RxFsdPostRequest</b> is normally called by RDBSS to process an asynchronous I/O request packet (IRP). These IRPs are normally received by RDBSS in response to a user-mode application requesting operations on a file. It is also possible for another kernel driver to issue such an IRP. </p>
-
-<p>If the <b>Flags</b> member of the RX_CONTEXT structure pointed to by the <i>RxContext</i> parameter does not have the RX_CONTEXT_FLAG_NO_PREPOSTING_NEEDED bit set, then <b>RxFsdPostRequest</b> will try to lock down any user address space that is required for certain types of requests. The requests that result in this behavior are based on the <b>MajorFunction</b> member of RX_CONTEXT structure pointed to by <i>RxContext</i> and include the following:</p>
-
-<p>IRP_MJ_DIRECTORY CONTROL when <b>RxContext-&gt;MinorFunction</b><i> is </i>IRP_MN_QUERY_DIRECTORY.</p>
-
-<p>IRP_MJ_QUERY_EA</p>
-
-<p>IRP_MJ_READ</p>
-
-<p>IRP_MJ_SET_EA</p>
-
-<p>IRP_MJ_WRITE</p>
-
-<p>The <b>MajorFunction</b> member of <i>RxContext</i> will determine which work queue this request will be posted to. An IRP_MJ_DEVICE_CONTROL request where the <b>Parameters.DeviceIoControl.IoControlCode</b> member is IOCTL_REDIR_QUERY_PATH will be posted to the delayed work queue. In the case, the <b>Flags</b> member of the <i>RxContext</i> parameter will have the RX_CONTEXT_FLAG_FSP_DELAYED_OVERFLOW_QUEUE bit set. All other requests are posted to the critical work queue and the Flags member of the <i>RxContext</i> parameter will have the RX_CONTEXT_FLAG_FSP_CRITICAL_OVERFLOW_QUEUE bit set. </p>
-
-<p>If the <b>FileObject</b> member of the IRP is not <b>NULL</b> and the request can be posted immediately for processing (the threshold for the device queue is empty), then this will occur. Otherwise, the request will be posted to an overflow queue on the volume.</p>
-
-<p>All calls to <b>RxFsdPostRequest</b> are queued to a worker thread to call the <b>RxFsdDispatch</b> routine passing in the <i>RxContext</i> parameter. </p>
-
 ## -requirements
 <table>
 <tr>
@@ -145,7 +125,7 @@ NTSTATUS RxFsdPostRequest(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554468">RxFsdDispatch</a>
+<a href="..\mrx\nf-mrx-rxfsddispatch.md">RxFsdDispatch</a>
 </dt>
 </dl>
 <p> </p>

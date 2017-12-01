@@ -97,24 +97,6 @@ NTSTATUS IoCheckEaBufferValidity(
 
 <p>To be valid, the EA buffer must meet all of these conditions.</p>
 
-<p><b>IoCheckEaBufferValidity</b> checks each FILE_FULL_EA_INFORMATION entry in the specified EA buffer to ensure that the following conditions are met:</p>
-
-<p>The entire entry must fall within the buffer.</p>
-
-<p>The value of <b>EaName</b> must be a null-terminated character array.</p>
-
-<p>The value of <b>EaNameLength</b> must match the length in bytes of the <b>EaName</b> array (not including the zero-terminator).</p>
-
-<p>For all entries except the last, the value of <b>NextEntryOffset</b> must be greater than zero and must fall on a ULONG boundary.</p>
-
-<p>In addition, <b>IoCheckEaBufferValidity</b> checks the EA buffer to ensure that the following conditions are met:</p>
-
-<p>The length passed in <i>EaLength</i> matches the actual length of the buffer.</p>
-
-<p>The actual buffer length is nonnegative.</p>
-
-<p>To be valid, the EA buffer must meet all of these conditions.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -170,13 +152,13 @@ NTSTATUS IoCheckEaBufferValidity(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a>
+<a href="..\wdm\ns-wdm--file-full-ea-information.md">FILE_FULL_EA_INFORMATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a>
+<a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549346">IRP_MJ_SET_EA</a>
+<a href="ifsk.irp_mj_set_ea">IRP_MJ_SET_EA</a>
 </dt>
 </dl>
 <p> </p>

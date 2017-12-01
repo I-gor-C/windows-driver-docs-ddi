@@ -7,7 +7,7 @@ old-location: netvista\fwpsallocatenetbufferandnetbufferlist0.htm
 old-project: netvista
 ms.assetid: d7f2d3c0-f2c9-4624-b3e1-9fbbf64c7186
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: FwpsAllocateNetBufferAndNetBufferList0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.iface:
 ## -description
 <p>The 
   <b>FwpsAllocateNetBufferAndNetBufferList0</b> function allocates a new 
-  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+  <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 
 ## -syntax
@@ -66,16 +66,16 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
 
 <dd>
 <p>A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> pool handle that was
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> pool handle that was
      obtained from a previous call to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561611">NdisAllocateNetBufferListPool</a> function.</p>
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">NdisAllocateNetBufferListPool</a> function.</p>
 </dd>
 
 ### -param <i>contextSize</i> [in]
 
 <dd>
 <p>The size, in bytes, of used data space in the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568389">NET_BUFFER_LIST_CONTEXT</a> structure
+     <a href="..\ndis\ns-ndis--net-buffer-list-context.md">NET_BUFFER_LIST_CONTEXT</a> structure
      to reserve for the callout driver. The value of this parameter must be a multiple of the value defined
      by <b>MEMORY_ALLOCATION_ALIGNMENT</b>.</p>
 </dd>
@@ -117,7 +117,7 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
 
 <dd>
 <p>A pointer to a variable that receives a pointer to the new 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+     <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 </dd>
 </dl>
 
@@ -127,7 +127,7 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
      codes.</p><dl>
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl><p>The new 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure was
+       <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure was
        successfully allocated.</p><dl>
 <dt><b>Other status codes</b></dt>
 </dl><p>An error occurred.</p>
@@ -137,28 +137,14 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
 ## -remarks
 <p>A callout driver calls the 
     <b>FwpsAllocateNetBufferAndNetBufferList0</b> function to allocate a new 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
+    <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure.</p>
 
 <p>This function is a wrapper around the 
     <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
     NdisAllocateNetBufferAndNetBufferList</a> function, but it is specialized for use by WFP 
     <a href="NULL">packet injection functions</a>.</p>
 
-<p>After the data described by the new <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure has been successfully injected into the
-    network stack, the callout driver frees the new <b>NET_BUFFER_LIST</b> structure by calling the 
-    <a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">
-    FwpsFreeNetBufferList0</a> function.</p>
-
-<p>A callout driver calls the 
-    <b>FwpsAllocateNetBufferAndNetBufferList0</b> function to allocate a new 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.</p>
-
-<p>This function is a wrapper around the 
-    <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
-    NdisAllocateNetBufferAndNetBufferList</a> function, but it is specialized for use by WFP 
-    <a href="NULL">packet injection functions</a>.</p>
-
-<p>After the data described by the new <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure has been successfully injected into the
+<p>After the data described by the new <a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a> structure has been successfully injected into the
     network stack, the callout driver frees the new <b>NET_BUFFER_LIST</b> structure by calling the 
     <a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">
     FwpsFreeNetBufferList0</a> function.</p>
@@ -216,7 +202,7 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551172">FwpsFreeNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
@@ -227,10 +213,10 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
    NdisAllocateNetBufferListPool</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis--net-buffer-list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568389">NET_BUFFER_LIST_CONTEXT</a>
+<a href="..\ndis\ns-ndis--net-buffer-list-context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 <dt>
 <a href="NULL">Packet Injection Functions</a>
@@ -238,4 +224,4 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAllocateNetBufferAndNetBufferList0 function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAllocateNetBufferAndNetBufferList0 function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GET_CONFIGURATION_IOCTL_INPUT structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559334">IOCTL_CDROM_GET_CONFIGURATION</a> request to specify the sort of feature data that the request retrieves.</p>
+<p>The GET_CONFIGURATION_IOCTL_INPUT structure is used in conjunction with the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-configuration.md">IOCTL_CDROM_GET_CONFIGURATION</a> request to specify the sort of feature data that the request retrieves.</p>
 
 
 ## -syntax
@@ -97,13 +97,13 @@ typedef struct _GET_CONFIGURATION_IOCTL_INPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
+<a href="..\ntddmmc\ns-ntddmmc--feature-header.md">FEATURE_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>
+<a href="..\ntddmmc\ne-ntddmmc--feature-number.md">FEATURE_NUMBER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559334">IOCTL_CDROM_GET_CONFIGURATION</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-configuration.md">IOCTL_CDROM_GET_CONFIGURATION</a>
 </dt>
 </dl>
 <p> </p>

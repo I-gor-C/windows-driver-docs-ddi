@@ -7,7 +7,7 @@ old-location: netvista\riluiccapppersocheckstatus_2.htm
 old-project: netvista
 ms.assetid: 8e51ae9a-4670-4de1-bfca-bef8cb0c9cc9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCAPPPERSOCHECKSTATUS,
 ms.prod: windows-hardware
 ms.technology: windows-devices

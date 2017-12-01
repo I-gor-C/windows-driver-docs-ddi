@@ -140,7 +140,7 @@ typedef struct _DXVA_PictureParameters {
 ### -field <b>bBlockWidthMinus1</b>
 
 <dd>
-<p>Specifies the block width of a residual difference block minus 1. This is equal to 7 for MPEG-1, MPEG-2, H.261, H.263, and MPEG-4. This is 7 if the <b>bConfig4GroupedCoefs</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> structure is 1. Residual difference blocks within a macroblock are sent in the order specified as in MPEG-2 Figures 6-10, 6-11, and 6-12 (raster-scan order for Y, followed by all 4:2:0 blocks of Cb in raster-scan order, followed by 4:2:0 blocks of Cr, followed by 4:2:2 blocks of Cb, followed by 4:2:2 blocks of Cr, followed by 4:4:4 blocks of Cb, followed by 4:4:4 blocks of Cr). A derived term called <i>W</i><sub>T</sub> is formed by adding 1 to <b>bBlockWidthMinus1</b>.</p>
+<p>Specifies the block width of a residual difference block minus 1. This is equal to 7 for MPEG-1, MPEG-2, H.261, H.263, and MPEG-4. This is 7 if the <b>bConfig4GroupedCoefs</b> member of the <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure is 1. Residual difference blocks within a macroblock are sent in the order specified as in MPEG-2 Figures 6-10, 6-11, and 6-12 (raster-scan order for Y, followed by all 4:2:0 blocks of Cb in raster-scan order, followed by 4:2:0 blocks of Cr, followed by 4:2:2 blocks of Cb, followed by 4:2:2 blocks of Cr, followed by 4:4:4 blocks of Cb, followed by 4:4:4 blocks of Cr). A derived term called <i>W</i><sub>T</sub> is formed by adding 1 to <b>bBlockWidthMinus1</b>.</p>
 </dd>
 
 ### -field <b>bBlockHeightMinus1</b>
@@ -170,7 +170,7 @@ typedef struct _DXVA_PictureParameters {
 ### -field <b>bPicIntra</b>
 
 <dd>
-<p>Indicates whether motion-compensated prediction is needed for this picture. If <b>bPicIntra</b> is 1, all macroblocks are sent with either the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563989">DXVA_MBctrl_I_OffHostIDCT_1</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff563983">DXVA_MBctrl_I_HostResidDiff_1</a> macroblock control command structure, in which the <i>IntraMacroblock</i> flag is equal to 1 . That is, no motion-compensated prediction is performed for the picture. Otherwise, some macroblocks of the picture may have the <i>IntraMacroblock</i> parameter of the macroblock control command equal to zero, and the macroblock control command structure will use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563993">DXVA_MBctrl_P_HostResidDiff_1</a> structure or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563997">DXVA_MBctrl_P_OffHostIDCT_1</a> structure.</p>
+<p>Indicates whether motion-compensated prediction is needed for this picture. If <b>bPicIntra</b> is 1, all macroblocks are sent with either the <a href="..\dxva\ns-dxva--dxva-mbctrl-i-offhostidct-1.md">DXVA_MBctrl_I_OffHostIDCT_1</a> or <a href="..\dxva\ns-dxva--dxva-mbctrl-i-hostresiddiff-1.md">DXVA_MBctrl_I_HostResidDiff_1</a> macroblock control command structure, in which the <i>IntraMacroblock</i> flag is equal to 1 . That is, no motion-compensated prediction is performed for the picture. Otherwise, some macroblocks of the picture may have the <i>IntraMacroblock</i> parameter of the macroblock control command equal to zero, and the macroblock control command structure will use the <a href="..\dxva\ns-dxva--dxva-mbctrl-p-hostresiddiff-1.md">DXVA_MBctrl_P_HostResidDiff_1</a> structure or the <a href="..\dxva\ns-dxva--dxva-mbctrl-p-offhostidct-1.md">DXVA_MBctrl_P_OffHostIDCT_1</a> structure.</p>
 </dd>
 
 ### -field <b>bPicBackwardPrediction</b>
@@ -234,7 +234,7 @@ typedef struct _DXVA_PictureParameters {
 ### -field <b>bChromaFormat</b>
 
 <dd>
-<p>Affects the number of prediction error blocks expected by the accelerator. This variable is defined in MPEG-2 (H.262). For <a href="https://msdn.microsoft.com/be4db8ea-98fa-4693-a2ff-888499e97f38">MPEG-1</a>, MPEG-2 Main Profile, H.261 and H.263 bitstreams, this value must always be set to 1, indicating 4:2:0 format. If a value of 2, this indicates 4:2:2, and if a value of 3, indicates 4:4:4 sampling. This member must be equal to 1 if the <b>bConfig4GroupedCoefs</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> is 1 (because <b>bConfig4GroupedCoefs</b> operation does not include the EOB indication needed within coefficient data in 4:2:2 and 4:4:4 formats).</p>
+<p>Affects the number of prediction error blocks expected by the accelerator. This variable is defined in MPEG-2 (H.262). For <a href="https://msdn.microsoft.com/be4db8ea-98fa-4693-a2ff-888499e97f38">MPEG-1</a>, MPEG-2 Main Profile, H.261 and H.263 bitstreams, this value must always be set to 1, indicating 4:2:0 format. If a value of 2, this indicates 4:2:2, and if a value of 3, indicates 4:4:4 sampling. This member must be equal to 1 if the <b>bConfig4GroupedCoefs</b> member of <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> is 1 (because <b>bConfig4GroupedCoefs</b> operation does not include the EOB indication needed within coefficient data in 4:2:2 and 4:4:4 formats).</p>
 <div class="alert"><b>Note</b>    Horizontal chroma siting differs slightly among H.261, H.263, and MPEG-1 versus MPEG-2 and MPEG-4. This difference is assumed to be small enough to ignore.</div>
 <div> </div>
 </dd>
@@ -283,7 +283,7 @@ typedef struct _DXVA_PictureParameters {
 <p> </p>
 <dl>
 <dd>
-<p>If the <b>bConfigHostInverseScan</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> is 1, the scan method defined by <b>bPicScanMethod</b> must be set as follows.</p>
+<p>If the <b>bConfigHostInverseScan</b> member of <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> is 1, the scan method defined by <b>bPicScanMethod</b> must be set as follows.</p>
 </dd>
 </dl>
 <table>
@@ -319,7 +319,7 @@ typedef struct _DXVA_PictureParameters {
 
 <dd>
 <p>Indicates how spatial-domain difference blocks are sent to the accelerator from the host. A value of 1 indicates that spatial-domain difference blocks for host-based residual difference decoding can be sent using 8-bit samples, and a value of zero indicates that they cannot. </p>
-<p>This member must be zero if the <b>bConfigResidDiffHost</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> is zero or if <i>BPP</i> is greater than 8. This member must be 1 if <i>BPP</i> is 8, <b>bPicIntra</b> is 1 and <b>bConfigResidDiffHost</b> is 1. This member must be 1 if the <b>bConfigSpatialResid8</b> member of DXVA_ConfigPictureDecode is 1. </p>
+<p>This member must be zero if the <b>bConfigResidDiffHost</b> member of <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> is zero or if <i>BPP</i> is greater than 8. This member must be 1 if <i>BPP</i> is 8, <b>bPicIntra</b> is 1 and <b>bConfigResidDiffHost</b> is 1. This member must be 1 if the <b>bConfigSpatialResid8</b> member of DXVA_ConfigPictureDecode is 1. </p>
 <p>If this member is equal to 1, spatial-domain intra macroblocks are sent as 8-bit values (that are either signed or unsigned, as determined by the <b>bConfigIntraResidUnsigned</b> member of DXVA_ConfigPictureDecode), and spatial-domain nonintra macroblock differences are sent as signed 8-bit difference values relative to some motion-compensated prediction.</p>
 <p>The <b>bPicSpatialResid8</b> member differs from the <b>bConfigSpatialResid8</b> member of DXVA_ConfigPictureDecode in that it is an indication for a particular picture, not a global indication for the entire video sequence. In some cases such as in an <a href="wdkgloss.i#wdkgloss.intra_picture#wdkgloss.intra_picture"><i>intra picture</i></a> with <i>BPP</i> equal to 8, <b>bPicSpatialResid8</b> will be 1 even though <b>bConfigSpatialResid8</b> may be zero.</p>
 </dd>
@@ -327,7 +327,7 @@ typedef struct _DXVA_PictureParameters {
 ### -field <b>bPicOverflowBlocks</b>
 
 <dd>
-<p>Indicates whether spatial-domain difference blocks are sent to the accelerator from the host using overflow blocks. A value of 1 indicates that spatial-domain difference blocks for host-based residual difference decoding of a picture may be sent using overflow blocks. A value of zero indicates that spatial-domain difference blocks are not sent using overflow blocks. This member must be zero if <b>bConfigResidDiffHost</b> is zero or if <b>bConfigSpatialResid8</b> is zero, or if <i>BPP</i> is greater than 8. Parameters <b>bConfigResidDiffHost</b> and <b>bConfigSpatialResid8</b> are members of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a>. <b>bPicOverflowBlocks</b> indicates whether any overflow blocks may be present for the particular picture. In an intra picture with <i>BPP</i> equal to 8, <b>bPicOverflowBlocks</b> must be zero as no overflow blocks are needed in this case.</p>
+<p>Indicates whether spatial-domain difference blocks are sent to the accelerator from the host using overflow blocks. A value of 1 indicates that spatial-domain difference blocks for host-based residual difference decoding of a picture may be sent using overflow blocks. A value of zero indicates that spatial-domain difference blocks are not sent using overflow blocks. This member must be zero if <b>bConfigResidDiffHost</b> is zero or if <b>bConfigSpatialResid8</b> is zero, or if <i>BPP</i> is greater than 8. Parameters <b>bConfigResidDiffHost</b> and <b>bConfigSpatialResid8</b> are members of <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a>. <b>bPicOverflowBlocks</b> indicates whether any overflow blocks may be present for the particular picture. In an intra picture with <i>BPP</i> equal to 8, <b>bPicOverflowBlocks</b> must be zero as no overflow blocks are needed in this case.</p>
 </dd>
 
 ### -field <b>bPicExtrapolation</b>
@@ -421,8 +421,8 @@ typedef struct _DXVA_PictureParameters {
 </tr>
 </table>
 <p> </p>
-<p>When the <b>bConfigBitstreamRaw</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> structure is 1, <b>wBitstreamFcodes</b> contains four motion vector <i>f_code</i> values. If <b>bConfigBitstreamRaw</b> is 1 and any of the four <i>f_code</i> values is unnecessary or irrelevant due to the structure of the bitstream data or due to the <i>f_code</i> value not being needed in the relevant video coding bitstream syntax (such as in H.261 or H.263), then each irrelevant f_code value is 0xF.</p>
-<p>If the <b>bConfigBitstreamRaw</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> structure is zero, then <b>wBitstreamFcodes</b> is set to 0xFFFF (all f_code values are set to 0xF).</p>
+<p>When the <b>bConfigBitstreamRaw</b> member of the <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure is 1, <b>wBitstreamFcodes</b> contains four motion vector <i>f_code</i> values. If <b>bConfigBitstreamRaw</b> is 1 and any of the four <i>f_code</i> values is unnecessary or irrelevant due to the structure of the bitstream data or due to the <i>f_code</i> value not being needed in the relevant video coding bitstream syntax (such as in H.261 or H.263), then each irrelevant f_code value is 0xF.</p>
+<p>If the <b>bConfigBitstreamRaw</b> member of the <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure is zero, then <b>wBitstreamFcodes</b> is set to 0xFFFF (all f_code values are set to 0xF).</p>
 <div class="alert"><b>Note</b>    MPEG-1 bitstreams provide this information in a different form. Therefore for MPEG-1 bitstreams, f_code[0][0] and f_code[0][1] are equal to MPEG-1's forward_f_code, and f_code[1][0] and f_code[1][1] are equal to MPEG-1's backward_f_code.</div>
 <div> </div>
 </dd>
@@ -430,7 +430,7 @@ typedef struct _DXVA_PictureParameters {
 ### -field <b>wBitstreamPCEelements</b>
 
 <dd>
-<p>When the <b>bConfigBitstreamRaw</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> is 1, this member contains a set of flags necessary for the bitstream decoding process of MPEG-2 video. It is not used and must be zero when <b>bConfigBitstreamRaw</b> is zero and for non-MPEG-2 video. The bits in this member are defined by their correspondence with bitstream elements of the MPEG-2 picture coding extension as follows.</p>
+<p>When the <b>bConfigBitstreamRaw</b> member of <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> is 1, this member contains a set of flags necessary for the bitstream decoding process of MPEG-2 video. It is not used and must be zero when <b>bConfigBitstreamRaw</b> is zero and for non-MPEG-2 video. The bits in this member are defined by their correspondence with bitstream elements of the MPEG-2 picture coding extension as follows.</p>
 <table>
 <tr>
 <th>Bits</th>
@@ -539,7 +539,7 @@ typedef struct _DXVA_PictureParameters {
 ### -field <b>bBitstreamConcealmentNeed</b>
 
 <dd>
-<p>Indicates the likelihood of errors in the bitstream data when the <b>bConfigBitstreamRaw</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> structure is 1. Must be zero if <b>bConfigBitstreamRaw</b> is zero.</p>
+<p>Indicates the likelihood of errors in the bitstream data when the <b>bConfigBitstreamRaw</b> member of the <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure is 1. Must be zero if <b>bConfigBitstreamRaw</b> is zero.</p>
 <p>Video accelerators must be designed not to fail or lock up, regardless of the content of the data given to them. Therefore, it may be helpful for a video accelerator to have information about the host's assessment of the likelihood of syntactical errors. This is in order to determine whether there is a need to invoke a more complex error concealment algorithm that might slow down the bitstream decoding process. Allowed values for this member are as follows (all other values are reserved).</p>
 <table>
 <tr>
@@ -585,7 +585,7 @@ typedef struct _DXVA_PictureParameters {
 ### -field <b>bBitstreamConcealmentMethod</b>
 
 <dd>
-<p>Specifies a preferred default method for error concealment processing when the <b>bConfigBitstreamRaw</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> structure is 1. Must be zero if <b>bConfigBitstreamRaw</b> is zero. Allowed values for this member are as follows (all other values are reserved).</p>
+<p>Specifies a preferred default method for error concealment processing when the <b>bConfigBitstreamRaw</b> member of the <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure is 1. Must be zero if <b>bConfigBitstreamRaw</b> is zero. Allowed values for this member are as follows (all other values are reserved).</p>
 <table>
 <tr>
 <th>Value</th>
@@ -629,7 +629,7 @@ typedef struct _DXVA_PictureParameters {
 </dl>
 
 ## -remarks
-<p>Certain members of this structure are constrained to specific values by the configuration established using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a> structure. After the picture-level parameters are conveyed using DXVA_PictureParameters, the picture decoding process is primarily governed by <a href="https://msdn.microsoft.com/be70ec8f-1821-4075-b5e3-b7574fbe4e27">macroblock control commands</a> formed using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563983">DXVA_MBctrl_I_HostResidDiff_1</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff563989">DXVA_MBctrl_I_OffHostIDCT_1</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff563993">DXVA_MBctrl_P_HostResidDiff_1</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff563997">DXVA_MBctrl_P_OffHostIDCT_1</a> structures.</p>
+<p>Certain members of this structure are constrained to specific values by the configuration established using the <a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure. After the picture-level parameters are conveyed using DXVA_PictureParameters, the picture decoding process is primarily governed by <a href="https://msdn.microsoft.com/be70ec8f-1821-4075-b5e3-b7574fbe4e27">macroblock control commands</a> formed using the <a href="..\dxva\ns-dxva--dxva-mbctrl-i-hostresiddiff-1.md">DXVA_MBctrl_I_HostResidDiff_1</a>, <a href="..\dxva\ns-dxva--dxva-mbctrl-i-offhostidct-1.md">DXVA_MBctrl_I_OffHostIDCT_1</a>, <a href="..\dxva\ns-dxva--dxva-mbctrl-p-hostresiddiff-1.md">DXVA_MBctrl_P_HostResidDiff_1</a>, or <a href="..\dxva\ns-dxva--dxva-mbctrl-p-offhostidct-1.md">DXVA_MBctrl_P_OffHostIDCT_1</a> structures.</p>
 
 ## -requirements
 <table>
@@ -648,19 +648,19 @@ typedef struct _DXVA_PictureParameters {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563983">DXVA_MBctrl_I_HostResidDiff_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-i-hostresiddiff-1.md">DXVA_MBctrl_I_HostResidDiff_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563989">DXVA_MBctrl_I_OffHostIDCT_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-i-offhostidct-1.md">DXVA_MBctrl_I_OffHostIDCT_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563993">DXVA_MBctrl_P_HostResidDiff_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-p-hostresiddiff-1.md">DXVA_MBctrl_P_HostResidDiff_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563997">DXVA_MBctrl_P_OffHostIDCT_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-p-offhostidct-1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a>
+<a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a>
 </dt>
 </dl>
 <p> </p>

@@ -57,7 +57,7 @@ NTSTATUS D3DKMTGetDisplayModeList(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548036">D3DKMT_GETDISPLAYMODELIST</a> structure that describes a list of available display modes.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getdisplaymodelist.md">D3DKMT_GETDISPLAYMODELIST</a> structure that describes a list of available display modes.</p>
 </dd>
 </dl>
 
@@ -68,9 +68,9 @@ NTSTATUS D3DKMTGetDisplayModeList(
 <dt><b>STATUS_DEVICE_REMOVED</b></dt>
 </dl><p>The graphics adapter was stopped.</p><dl>
 <dt><b>STATUS_BUFFER_TOO_SMALL</b></dt>
-</dl><p>The buffer that the OpenGL ICD supplied in the <b>pModeList</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548036">D3DKMT_GETDISPLAYMODELIST</a> that the <i>pData</i> parameter points to is not large enough to contain the requested display mode list. </p><dl>
+</dl><p>The buffer that the OpenGL ICD supplied in the <b>pModeList</b> member of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getdisplaymodelist.md">D3DKMT_GETDISPLAYMODELIST</a> that the <i>pData</i> parameter points to is not large enough to contain the requested display mode list. </p><dl>
 <dt><b>STATUS_GRAPHICS_NO_AVAILABLE_VIDPN_TARGET</b></dt>
-</dl><p>No video present target is available for use with the video present source that is identified by the <b>VidPnSourceId</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548036">D3DKMT_GETDISPLAYMODELIST</a> that the <i>pData</i> parameter points to. Therefore, no display modes are available for this source. </p><dl>
+</dl><p>No video present target is available for use with the video present source that is identified by the <b>VidPnSourceId</b> member of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getdisplaymodelist.md">D3DKMT_GETDISPLAYMODELIST</a> that the <i>pData</i> parameter points to. Therefore, no display modes are available for this source. </p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl><p>Parameters were validated and determined to be incorrect.</p>
 
@@ -136,7 +136,7 @@ NTSTATUS D3DKMTGetDisplayModeList(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548036">D3DKMT_GETDISPLAYMODELIST</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-getdisplaymodelist.md">D3DKMT_GETDISPLAYMODELIST</a>
 </dt>
 </dl>
 <p> </p>

@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>wiauGetValidFormats</b> function calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543986">IWiaMiniDrv::drvGetWiaFormatInfo</a> method and makes a list of valid formats, using a specified tymed value.</p>
+<p>The <b>wiauGetValidFormats</b> function calls the <a href="image.iwiaminidrv_drvgetwiaformatinfo">IWiaMiniDrv::drvGetWiaFormatInfo</a> method and makes a list of valid formats, using a specified tymed value.</p>
 
 
 ## -syntax
@@ -94,8 +94,6 @@ HRESULT _stdcall wiauGetValidFormats(
 <p>On success, the function returns S_OK. If the function fails, it returns a standard COM error.</p>
 
 ## -remarks
-<p>The caller of this function is responsible for freeing the format array, using the <b>delete[]</b> operator.</p>
-
 <p>The caller of this function is responsible for freeing the format array, using the <b>delete[]</b> operator.</p>
 
 ## -requirements

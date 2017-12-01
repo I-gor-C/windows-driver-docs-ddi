@@ -60,7 +60,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265386">Completed</a>
+<a href="print.iprinterbidisetrequestcallback_completed">Completed</a>
 </td>
 <td align="left" width="63%">
 <p>Invoked when the Bidi “Set”” operation is completed.</p>
@@ -71,10 +71,6 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p><b>IPrinterBidiSetRequestCallback</b> provides the Bidi response string, and <b>HRESULT</b> value returned from the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd144984(v=vs.85).aspx">IBidiSpl2::SendRecvXmlString</a> method. In other words,  this interface provides the results of the attempt to send data to the device. </p>
-
-<p><b>IPrinterBidiSetRequestCallback</b>  helps to make it possible to perform device maintenance from a UWP  device app or from a printer extension. For more information, see <a href="NULL">Device Maintenance</a>.</p>
-
 <p><b>IPrinterBidiSetRequestCallback</b> provides the Bidi response string, and <b>HRESULT</b> value returned from the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd144984(v=vs.85).aspx">IBidiSpl2::SendRecvXmlString</a> method. In other words,  this interface provides the results of the attempt to send data to the device. </p>
 
 <p><b>IPrinterBidiSetRequestCallback</b>  helps to make it possible to perform device maintenance from a UWP  device app or from a printer extension. For more information, see <a href="NULL">Device Maintenance</a>.</p>
@@ -116,7 +112,7 @@ req.product: Windows 10 or later.
 </dt>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd144984(v=vs.85).aspx">IBidiSpl2::SendRecvXmlString</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265391">SendBidiSetRequestAsync</a>
+<a href="print.iprinterqueue2_sendbidisetrequestasync">SendBidiSetRequestAsync</a>
 </dt>
 </dl>
 <p> </p>

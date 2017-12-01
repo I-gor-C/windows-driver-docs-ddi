@@ -7,7 +7,7 @@ old-location: bltooth\ioctl_bthx_set_version.htm
 old-project: bltooth
 ms.assetid: FE572606-8F47-4C40-BF74-24D5F667D2EC
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: BTHDDI_SDP_PARSE_INTERFACE, BTHDDI_SDP_PARSE_INTERFACE, *PBTHDDI_SDP_PARSE_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,11 +48,11 @@ req.iface:
 ## -ioctlparameters
 
 ### -input-buffer
-<p>Profile drivers should use KMDF and its <a href="https://msdn.microsoft.com/library/windows/hardware/ff550015">WdfRequestRetrieveInputMemory</a> method to retrieve input parameters.  For example, to get the input buffer:</p>
+<p>Profile drivers should use KMDF and its <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveinputmemory.md">WdfRequestRetrieveInputMemory</a> method to retrieve input parameters.  For example, to get the input buffer:</p>
 
 <p><code>Status = WdfRequestRetrieveInputMemory(_Request, &amp;ReqInMemory);</code></p>
 
-<p>The buffer describes a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450838">BTHX_VERSION</a> structure. </p>
+<p>The buffer describes a <a href="..\bthxddi\ns-bthxddi--bthx-version.md">BTHX_VERSION</a> structure. </p>
 
 <p>Refer to the WDK Bluetooth samples for more information.</p>
 
@@ -163,26 +163,6 @@ I/O Status block
 <p>Any unsuccessful NT status code prevents the driver from loading.</p>
 
 ## -remarks
-<p>IOCTL_BTHX_SET_VERSION is a synchronous operation.</p>
-
-<p>Only one version will be selected and set.</p>
-
-<p>IOCTL_BTHX_SET_VERSION is a synchronous operation.</p>
-
-<p>Only one version will be selected and set.</p>
-
-<p>IOCTL_BTHX_SET_VERSION is a synchronous operation.</p>
-
-<p>Only one version will be selected and set.</p>
-
-<p>IOCTL_BTHX_SET_VERSION is a synchronous operation.</p>
-
-<p>Only one version will be selected and set.</p>
-
-<p>IOCTL_BTHX_SET_VERSION is a synchronous operation.</p>
-
-<p>Only one version will be selected and set.</p>
-
 <p>IOCTL_BTHX_SET_VERSION is a synchronous operation.</p>
 
 <p>Only one version will be selected and set.</p>

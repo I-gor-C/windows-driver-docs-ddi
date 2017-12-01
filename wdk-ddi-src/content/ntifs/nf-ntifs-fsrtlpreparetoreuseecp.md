@@ -67,15 +67,9 @@ VOID FsRtlPrepareToReuseEcp(
 ## -remarks
 <p>The <b>FsRtlPrepareToReuseEcp</b> allows reuse of an ECP used in a previous create request. This prevents having to initialize a new ECP with the same information.</p>
 
-<p>The target of an ECP uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff545574">FsRtlAcknowledgeEcp</a> to mark the ECP as acknowledged. This indicates that the ECP was discovered and processed.  To reuse an previously acknowledged ECP, such as in processing a reparse, a driver can use <b>FsRtlPrepareToReuseEcp</b> to clear the acknowledged state from the ECP before sending it in another create request.</p>
+<p>The target of an ECP uses <a href="..\ntifs\nf-ntifs-fsrtlacknowledgeecp.md">FsRtlAcknowledgeEcp</a> to mark the ECP as acknowledged. This indicates that the ECP was discovered and processed.  To reuse an previously acknowledged ECP, such as in processing a reparse, a driver can use <b>FsRtlPrepareToReuseEcp</b> to clear the acknowledged state from the ECP before sending it in another create request.</p>
 
-<p>Within a file system minifilter driver, use <a href="https://msdn.microsoft.com/library/windows/hardware/hh451026">FltPrepareToReuseEcp</a> to reuse an ECP.</p>
-
-<p>The <b>FsRtlPrepareToReuseEcp</b> allows reuse of an ECP used in a previous create request. This prevents having to initialize a new ECP with the same information.</p>
-
-<p>The target of an ECP uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff545574">FsRtlAcknowledgeEcp</a> to mark the ECP as acknowledged. This indicates that the ECP was discovered and processed.  To reuse an previously acknowledged ECP, such as in processing a reparse, a driver can use <b>FsRtlPrepareToReuseEcp</b> to clear the acknowledged state from the ECP before sending it in another create request.</p>
-
-<p>Within a file system minifilter driver, use <a href="https://msdn.microsoft.com/library/windows/hardware/hh451026">FltPrepareToReuseEcp</a> to reuse an ECP.</p>
+<p>Within a file system minifilter driver, use <a href="..\fltkernel\nf-fltkernel-fltpreparetoreuseecp.md">FltPrepareToReuseEcp</a> to reuse an ECP.</p>
 
 ## -requirements
 <table>
@@ -140,19 +134,19 @@ VOID FsRtlPrepareToReuseEcp(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
+<a href="ifsk.ecp_list">ECP_LIST</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546179">FsRtlInsertExtraCreateParameter</a>
+<a href="..\ntifs\nf-ntifs-fsrtlinsertextracreateparameter.md">FsRtlInsertExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546808">FsRtlIsEcpAcknowledged</a>
+<a href="..\ntifs\nf-ntifs-fsrtlisecpacknowledged.md">FsRtlIsEcpAcknowledged</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451026">FltPrepareToReuseEcp</a>
+<a href="..\fltkernel\nf-fltkernel-fltpreparetoreuseecp.md">FltPrepareToReuseEcp</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547203">FsRtlRemoveExtraCreateParameter</a>
+<a href="..\ntifs\nf-ntifs-fsrtlremoveextracreateparameter.md">FsRtlRemoveExtraCreateParameter</a>
 </dt>
 </dl>
 <p> </p>

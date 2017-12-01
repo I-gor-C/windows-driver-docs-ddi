@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>STORAGE_LB_PROVISIONING_MAP_RESOURCES</b> structure contains, when valid, the count of available and used bytes mapped to a storage device. This structure is returned from an <a href="https://msdn.microsoft.com/library/windows/hardware/hh463914">IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES</a> request.</p>
+<p>The <b>STORAGE_LB_PROVISIONING_MAP_RESOURCES</b> structure contains, when valid, the count of available and used bytes mapped to a storage device. This structure is returned from an <a href="..\ntddstor\ni-ntddstor-ioctl-storage-get-lb-provisioning-map-resources.md">IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES</a> request.</p>
 
 
 ## -syntax

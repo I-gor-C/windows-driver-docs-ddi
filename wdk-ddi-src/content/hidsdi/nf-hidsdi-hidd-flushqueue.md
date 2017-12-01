@@ -65,11 +65,7 @@ BOOLEAN __stdcall HidD_FlushQueue(
 <p><b>HidD_FlushQueue</b> returns <b>TRUE</b> if it successfully flushes the queue. Otherwise, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Only user-mode applications can call <b>HidD_FlushQueue</b>. Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541083">IOCTL_HID_FLUSH_QUEUE</a> request.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>.</p>
-
-<p>Only user-mode applications can call <b>HidD_FlushQueue</b>. Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541083">IOCTL_HID_FLUSH_QUEUE</a> request.</p>
+<p>Only user-mode applications can call <b>HidD_FlushQueue</b>. Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl-hid-flush-queue.md">IOCTL_HID_FLUSH_QUEUE</a> request.</p>
 
 <p>For more information, see <a href="NULL">HID Collections</a>.</p>
 
@@ -128,7 +124,7 @@ BOOLEAN __stdcall HidD_FlushQueue(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541083">IOCTL_HID_FLUSH_QUEUE</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-flush-queue.md">IOCTL_HID_FLUSH_QUEUE</a>
 </dt>
 </dl>
 <p> </p>

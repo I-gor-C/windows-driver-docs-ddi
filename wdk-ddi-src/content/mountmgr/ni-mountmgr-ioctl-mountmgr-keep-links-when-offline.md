@@ -46,7 +46,7 @@ req.iface:
 ## -ioctlparameters
 
 ### -input-buffer
-<p>The mount manager client loads the following structure with the symbolic link that will persist even after its volume is removed from the system. The initialized structure <a href="https://msdn.microsoft.com/library/windows/hardware/ff562289">MOUNTMGR_TARGET_NAME</a>, defined in <i>Mountmgr.h</i>, is inserted at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
+<p>The mount manager client loads the following structure with the symbolic link that will persist even after its volume is removed from the system. The initialized structure <a href="..\mountmgr\ns-mountmgr--mountmgr-target-name.md">MOUNTMGR_TARGET_NAME</a>, defined in <i>Mountmgr.h</i>, is inserted at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.</p>
 
 ### -input-buffer-length
 <p><b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the input buffer, which must be greater than or equal to <b>sizeof</b>(MOUNTMGR_TARGET_NAME).</p>
@@ -119,7 +119,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562289">MOUNTMGR_TARGET_NAME</a>
+<a href="..\mountmgr\ns-mountmgr--mountmgr-target-name.md">MOUNTMGR_TARGET_NAME</a>
 </dt>
 </dl>
 <p> </p>

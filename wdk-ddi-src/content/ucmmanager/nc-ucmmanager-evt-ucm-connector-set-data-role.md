@@ -64,13 +64,13 @@ typedef EVT_UCM_CONNECTOR_SET_DATA_ROLE PFN_UCM_CONNECTOR_SET_DATA_ROLE;
 ### -param <i>Connector</i> [in]
 
 <dd>
-<p>Handle to the connector that the client driver received in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a> method.</p>
+<p>Handle to the connector that the client driver received in a previous call to  the <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a> method.</p>
 </dd>
 
 ### -param <i>DataRole</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/mt187947">UCM_TYPEC_PARTNER</a>-typed flag that specifies the role to set.</p>
+<p>A <a href="buses.ucm_type_c_port_state">UCM_TYPEC_PARTNER</a>-typed flag that specifies the role to set.</p>
 </dd>
 </dl>
 
@@ -78,19 +78,9 @@ typedef EVT_UCM_CONNECTOR_SET_DATA_ROLE PFN_UCM_CONNECTOR_SET_DATA_ROLE;
 <p>If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it must return a status value for which NT_SUCCESS(status) equals FALSE.</p>
 
 ## -remarks
-<p>To register an <i>EVT_UCM_CONNECTOR_SET_DATA_ROLE</i> callback function, the client driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>.  </p>
+<p>To register an <i>EVT_UCM_CONNECTOR_SET_DATA_ROLE</i> callback function, the client driver must call <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>.  </p>
 
-<p>The USB connector manager framework extension (UcmCx) can request  either <b>UcmTypeCPortStateUfp</b> or   <b>UcmTypeCPortStateDfp</b>. If the port is already in the requested role, the client driver can complete the request without any changes. Otherwise, it starts a data-role swap operation (DR_Swap). The driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/mt187910">UcmConnectorDataDirectionChanged</a> to notify UcmCx about the success or failure of that operation. The driver can call that method within the callback function.</p>
-
-<p>The role persists for the current connection.  </p>
-
-<p>If a role-swap operation is pending, UcmCx does not request another role swap. Those operations are serialized across power and data role swaps.</p>
-
-<p>After the swap operation completes, if the partner port sends a DR_Swap request, the client driver must reject the request. </p>
-
-<p>To register an <i>EVT_UCM_CONNECTOR_SET_DATA_ROLE</i> callback function, the client driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>.  </p>
-
-<p>The USB connector manager framework extension (UcmCx) can request  either <b>UcmTypeCPortStateUfp</b> or   <b>UcmTypeCPortStateDfp</b>. If the port is already in the requested role, the client driver can complete the request without any changes. Otherwise, it starts a data-role swap operation (DR_Swap). The driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/mt187910">UcmConnectorDataDirectionChanged</a> to notify UcmCx about the success or failure of that operation. The driver can call that method within the callback function.</p>
+<p>The USB connector manager framework extension (UcmCx) can request  either <b>UcmTypeCPortStateUfp</b> or   <b>UcmTypeCPortStateDfp</b>. If the port is already in the requested role, the client driver can complete the request without any changes. Otherwise, it starts a data-role swap operation (DR_Swap). The driver calls <a href="buses.ucmconnectordatadirectionchanged">UcmConnectorDataDirectionChanged</a> to notify UcmCx about the success or failure of that operation. The driver can call that method within the callback function.</p>
 
 <p>The role persists for the current connection.  </p>
 
@@ -155,7 +145,7 @@ typedef EVT_UCM_CONNECTOR_SET_DATA_ROLE PFN_UCM_CONNECTOR_SET_DATA_ROLE;
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>
+<a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>
 </dt>
 </dl>
 <p> </p>

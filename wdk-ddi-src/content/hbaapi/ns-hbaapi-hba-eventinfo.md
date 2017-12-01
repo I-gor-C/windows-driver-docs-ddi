@@ -128,19 +128,19 @@ typedef struct HBA_EventInfo {
 ### -field <b>Link_EventInfo</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556124">HBA_Link_EventInfo</a> that holds information associated with a link event. </p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-link-eventinfo.md">HBA_Link_EventInfo</a> that holds information associated with a link event. </p>
 </dd>
 
 ### -field <b>RSCN_EventInfo</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557188">HBA_RSCN_EventInfo</a> that holds information associated with a link event.</p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-rscn-eventinfo.md">HBA_RSCN_EventInfo</a> that holds information associated with a link event.</p>
 </dd>
 
 ### -field <b>Pty_EventInfo</b>
 
 <dd>
-<p>Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557125">HBA_Pty_EventInfo</a> that holds information associated with a link event.</p>
+<p>Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba-pty-eventinfo.md">HBA_Pty_EventInfo</a> that holds information associated with a link event.</p>
 </dd>
 </dl>
 </dd>
@@ -166,13 +166,13 @@ typedef struct HBA_EventInfo {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556124">HBA_Link_EventInfo</a>
+<a href="..\hbaapi\ns-hbaapi-hba-link-eventinfo.md">HBA_Link_EventInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557125">HBA_Pty_EventInfo</a>
+<a href="..\hbaapi\ns-hbaapi-hba-pty-eventinfo.md">HBA_Pty_EventInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557188">HBA_RSCN_EventInfo</a>
+<a href="..\hbaapi\ns-hbaapi-hba-rscn-eventinfo.md">HBA_RSCN_EventInfo</a>
 </dt>
 </dl>
 <p> </p>

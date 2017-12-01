@@ -7,7 +7,7 @@ old-location: netvista\netdmaproviderstart.htm
 old-project: netvista
 ms.assetid: e99ebbe8-8605-4bf2-9ec0-d7cde25058f7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NetDmaProviderStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,31 +84,7 @@ VOID NetDmaProviderStart(
 
 <p>The DMA provider driver can also call 
     <b>NetDmaProviderStart</b> after the driver called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568335">NetDmaProviderStop</a> function for
-    application-specific reasons. DMA provider drivers call 
-    <b>NetDmaProviderStop</b> to notify the NetDMA interface that a previously started DMA provider is no
-    longer available.</p>
-
-<p>The DMA provider driver supplies a 
-    <a href="..\netdma\ns-netdma--net-dma-provider-attributes.md">
-    NET_DMA_PROVIDER_ATTRIBUTES</a> structure at the 
-    <i>ProviderAttributes</i> parameter of 
-    <b>NetDmaProviderStart</b>. The NET_DMA_PROVIDER_ATTRIBUTES structure specifies the configuration
-    attributes for a NetDMA provider.</p>
-
-<p>Before a DMA provider driver calls 
-    <b>NetDmaProviderStart</b>, it should be ready to handle all NetDMA interface requests, such as
-    allocating DMA channels and performing DMA transfers.</p>
-
-<p>DMA providers call the 
-    <b>NetDmaProviderStart</b> function to notify the NetDMA interface that a DMA provider is started. A DMA
-    provider driver initializes a DMA engine and calls the 
-    <b>NetDmaProviderStart</b> function while handling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> IRP.</p>
-
-<p>The DMA provider driver can also call 
-    <b>NetDmaProviderStart</b> after the driver called the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568335">NetDmaProviderStop</a> function for
+    <a href="..\netdma\nf-netdma-netdmaproviderstop.md">NetDmaProviderStop</a> function for
     application-specific reasons. DMA provider drivers call 
     <b>NetDmaProviderStop</b> to notify the NetDMA interface that a previously started DMA provider is no
     longer available.</p>
@@ -170,15 +146,15 @@ VOID NetDmaProviderStart(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568737">NET_DMA_PROVIDER_ATTRIBUTES</a>
+<a href="..\netdma\ns-netdma--net-dma-provider-attributes.md">NET_DMA_PROVIDER_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568335">NetDmaProviderStop</a>
+<a href="..\netdma\nf-netdma-netdmaproviderstop.md">NetDmaProviderStop</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568336">NetDmaRegisterProvider</a>
+<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaProviderStart function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NetDmaProviderStart function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\wsk_inspect_id.htm
 old-project: netvista
 ms.assetid: 54578dc5-a88f-4649-adbd-6a5e1e31e7b3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WSK_INSPECT_ID, WSK_INSPECT_ID, *PWSK_INSPECT_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,8 +15,7 @@ ms.topic: struct
 req.header: wsk.h
 req.include-header: Wsk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
-   systems.
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -84,7 +83,7 @@ typedef struct _WSK_INSPECT_ID {
     <u>contents</u> of the WSK_INSPECT_ID structure that is provided by the WSK subsystem into its own
     WSK_INSPECT_ID structure. The WSK application then passes a pointer to its WSK_INSPECT_ID structure to
     the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571136">WskInspectComplete</a> function when it
+    <a href="..\wsk\nc-wsk-pfn-wsk-inspect-complete.md">WskInspectComplete</a> function when it
     completes the inspection.</p>
 
 <p>If the incoming connection request is dropped by the remote system while an inspect operation is
@@ -127,7 +126,7 @@ typedef struct _WSK_INSPECT_ID {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571136">WskInspectComplete</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-inspect-complete.md">WskInspectComplete</a>
 </dt>
 <dt>
 <a href="..\wsk\nc-wsk-pfn-wsk-abort-event.md">WskAbortEvent</a>
@@ -141,4 +140,4 @@ typedef struct _WSK_INSPECT_ID {
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_INSPECT_ID structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_INSPECT_ID structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

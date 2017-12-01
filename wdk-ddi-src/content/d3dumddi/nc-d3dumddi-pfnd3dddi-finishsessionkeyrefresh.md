@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY FinishSessionKeyRefresh(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543120">D3DDDIARG_FINISHSESSIONKEYREFRESH</a> structure that describes the session. </p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-finishsessionkeyrefresh.md">D3DDDIARG_FINISHSESSIONKEYREFRESH</a> structure that describes the session. </p>
 </dd>
 </dl>
 
@@ -83,13 +83,7 @@ __checkReturn HRESULT APIENTRY FinishSessionKeyRefresh(
 ## -remarks
 <p>The hardware and driver can optionally support the <i>FinishSessionKeyRefresh</i> function for all crypto types.</p>
 
-<p>When the Direct3D runtime calls the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451696">StartSessionKeyRefresh</a> function, the driver generates and saves a random number and returns the random number in the buffer that the <b>pRandomNumber</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543375">D3DDDIARG_STARTSESSIONKEYREFRESH</a> structure points to. </p>
-
-<p>When the runtime subsequently calls the driver's <i>FinishSessionKeyRefresh</i> function, the driver performs an XOR operation of the random number with the session key.</p>
-
-<p>The hardware and driver can optionally support the <i>FinishSessionKeyRefresh</i> function for all crypto types.</p>
-
-<p>When the Direct3D runtime calls the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451696">StartSessionKeyRefresh</a> function, the driver generates and saves a random number and returns the random number in the buffer that the <b>pRandomNumber</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543375">D3DDDIARG_STARTSESSIONKEYREFRESH</a> structure points to. </p>
+<p>When the Direct3D runtime calls the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-startsessionkeyrefresh.md">StartSessionKeyRefresh</a> function, the driver generates and saves a random number and returns the random number in the buffer that the <b>pRandomNumber</b> member of the <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-startsessionkeyrefresh.md">D3DDDIARG_STARTSESSIONKEYREFRESH</a> structure points to. </p>
 
 <p>When the runtime subsequently calls the driver's <i>FinishSessionKeyRefresh</i> function, the driver performs an XOR operation of the random number with the session key.</p>
 
@@ -128,13 +122,13 @@ __checkReturn HRESULT APIENTRY FinishSessionKeyRefresh(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543120">D3DDDIARG_FINISHSESSIONKEYREFRESH</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-finishsessionkeyrefresh.md">D3DDDIARG_FINISHSESSIONKEYREFRESH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543375">D3DDDIARG_STARTSESSIONKEYREFRESH</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-startsessionkeyrefresh.md">D3DDDIARG_STARTSESSIONKEYREFRESH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451696">StartSessionKeyRefresh</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-startsessionkeyrefresh.md">StartSessionKeyRefresh</a>
 </dt>
 </dl>
 <p> </p>

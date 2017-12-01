@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwidetaillistparammask_2.htm
 old-project: netvista
 ms.assetid: 1b0777d4-8977-4dd2-a728-65f0e045efc8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

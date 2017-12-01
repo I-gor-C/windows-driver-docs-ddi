@@ -78,7 +78,7 @@ typedef struct _DXGKARG_SETPOINTERPOSITION {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562051">DXGK_SETPOINTERPOSITIONFLAGS</a> structure that identifies, in bit-field flags, information about the mouse pointer.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-setpointerpositionflags.md">DXGK_SETPOINTERPOSITIONFLAGS</a> structure that identifies, in bit-field flags, information about the mouse pointer.</p>
 </dd>
 </dl>
 
@@ -110,7 +110,7 @@ typedef struct _DXGKARG_SETPOINTERPOSITION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562051">DXGK_SETPOINTERPOSITIONFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-setpointerpositionflags.md">DXGK_SETPOINTERPOSITIONFLAGS</a>
 </dt>
 <dt>
 <a href="display.dxgkddisetpointerposition">DxgkDdiSetPointerPosition</a>

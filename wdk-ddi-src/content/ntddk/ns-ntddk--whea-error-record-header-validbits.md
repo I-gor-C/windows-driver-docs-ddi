@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The WHEA_ERROR_RECORD_HEADER_VALIDBITS union describes which members of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a> structure contain valid data.</p>
+<p>The WHEA_ERROR_RECORD_HEADER_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk--whea-error-record-header.md">WHEA_ERROR_RECORD_HEADER</a> structure contain valid data.</p>
 
 
 ## -syntax
@@ -92,24 +92,13 @@ typedef union _WHEA_ERROR_RECORD_HEADER_VALIDBITS {
 </dl>
 
 ## -remarks
-<p>A WHEA_ERROR_RECORD_HEADER_VALIDBITS union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a> structure.</p><p class="note">If you build your <a href="https://msdn.microsoft.com/fb559ac3-1f8d-48b7-8ebe-018623ab8d09">Windows hardware error architecture (WHEA) user-mode application</a> or <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">platform-specific hardware error driver (PSHED) plug-in</a> with the header files from the Windows Server 2008 version of the WDK or Windows SDK, you will have trouble only if your application or PSHED plug-in accesses the <b>Timestamp</b> and <b>PlatformId</b> members directly when it processes the contents of a WHEA_ERROR_RECORD_HEADER structure. When you test these bits in the <b>AsULONG </b>member through the bitfield constants that are described in the following list, you will always produce the correct results.</p><p class="note">This problem has been fixed in the Windows 7 version of the WDK and SDK.</p>
+<p>A WHEA_ERROR_RECORD_HEADER_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk--whea-error-record-header.md">WHEA_ERROR_RECORD_HEADER</a> structure.</p><p class="note">If you build your <a href="https://msdn.microsoft.com/fb559ac3-1f8d-48b7-8ebe-018623ab8d09">Windows hardware error architecture (WHEA) user-mode application</a> or <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">platform-specific hardware error driver (PSHED) plug-in</a> with the header files from the Windows Server 2008 version of the WDK or Windows SDK, you will have trouble only if your application or PSHED plug-in accesses the <b>Timestamp</b> and <b>PlatformId</b> members directly when it processes the contents of a WHEA_ERROR_RECORD_HEADER structure. When you test these bits in the <b>AsULONG </b>member through the bitfield constants that are described in the following list, you will always produce the correct results.</p><p class="note">This problem has been fixed in the Windows 7 version of the WDK and SDK.</p>
 
 <p>The following bitfield constants can be used to test the bits in the <b>AsULONG </b>member:</p>
 
-<p></p><dl>
-<dt><a id="WHEA_ERROR_RECORD_VALID_PLATFORMID"></a><a id="whea_error_record_valid_platformid"></a>WHEA_ERROR_RECORD_VALID_PLATFORMID</dt>
-<dd>
+<p></p>
+
 <p>If this bit is set, it indicates that the <b>PlatformId</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.</p>
-</dd>
-<dt><a id="WHEA_ERROR_RECORD_VALID_TIMESTAMP"></a><a id="whea_error_record_valid_timestamp"></a>WHEA_ERROR_RECORD_VALID_TIMESTAMP</dt>
-<dd>
-<p>If this bit is set, it indicates that the <b>Timestamp</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.</p>
-</dd>
-<dt><a id="WHEA_ERROR_RECORD_VALID_PARTITIONID"></a><a id="whea_error_record_valid_partitionid"></a>WHEA_ERROR_RECORD_VALID_PARTITIONID</dt>
-<dd>
-<p>If this bit is set, it indicates that the <b>PartitionId</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.</p>
-</dd>
-</dl><p>If this bit is set, it indicates that the <b>PlatformId</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.</p>
 
 <p>If this bit is set, it indicates that the <b>Timestamp</b> member of the WHEA_ERROR_RECORD_HEADER structure contains valid data.</p>
 
@@ -141,7 +130,7 @@ typedef union _WHEA_ERROR_RECORD_HEADER_VALIDBITS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a>
+<a href="..\ntddk\ns-ntddk--whea-error-record-header.md">WHEA_ERROR_RECORD_HEADER</a>
 </dt>
 </dl>
 <p> </p>

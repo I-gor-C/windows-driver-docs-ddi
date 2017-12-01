@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>The <b>USB_PORT_PROPERTIES</b> union is used to report the capabilities of a Universal Serial Bus (USB) port.</p>
-<p>The  port capabilities are retrieved in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406265">USB_PORT_CONNECTOR_PROPERTIES</a> structure by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450863">IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES</a> I/O control request.</p>
+<p>The  port capabilities are retrieved in the <a href="..\usbioctl\ns-usbioctl--usb-port-connector-properties.md">USB_PORT_CONNECTOR_PROPERTIES</a> structure by the <a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-port-connector-properties.md">IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES</a> I/O control request.</p>
 
 
 ## -syntax
@@ -122,10 +122,10 @@ typedef union _USB_PORT_PROPERTIES {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406265">USB_PORT_CONNECTOR_PROPERTIES</a>
+<a href="..\usbioctl\ns-usbioctl--usb-port-connector-properties.md">USB_PORT_CONNECTOR_PROPERTIES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450863">IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl-usb-get-port-connector-properties.md">IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES</a>
 </dt>
 </dl>
 <p> </p>

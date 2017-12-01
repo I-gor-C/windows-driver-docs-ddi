@@ -7,7 +7,7 @@ old-location: netvista\ndiscmregisteraddressfamilyex.htm
 old-project: netvista
 ms.assetid: 8890bf31-f2c7-48b0-926d-8931893ede86
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCmRegisterAddressFamilyEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NDIS_STATUS NdisCmRegisterAddressFamilyEx(
 <dd>
 <p>A handle that NDIS provided at the 
      <i>NdisBindingHandle</i> parameter of the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function. This handle
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function. This handle
      identifies the binding to associate with the AF.</p>
 </dd>
 
@@ -126,42 +126,7 @@ NDIS_STATUS NdisCmRegisterAddressFamilyEx(
 <p>A stand-alone call manager's 
     <i>ProtocolBindAdapterEx</i> function first establishes the binding to the underlying miniport driver by
     calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function. Each time
-    NDIS calls 
-    <i>ProtocolBindAdapterEx</i> with another handle at the 
-    <i>BindContext</i> parameter, 
-    <i>ProtocolBindAdapterEx</i> establishes a binding and registers an AF that it supports. In other words, a
-    stand-alone call manager eventually registers an AF for each binding on which it provides call-management
-    services to connection-oriented clients.</p>
-
-<p>The call manager can support more than one AF and can support more than one AF for a single binding.
-    However, only one call manager can support a given AF for clients that are bound to a given miniport
-    adapter.</p>
-
-<p>When a call manager's 
-    <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a> function
-    returns control after a successful binding operation, NDIS calls the 
-    <a href="..\ndis\nc-ndis-protocol-co-af-register-notify.md">
-    ProtocolCoAfRegisterNotify</a> functions of all of the clients that are bound to the same miniport
-    adapter.</p>
-
-<p>NDIS stand-alone call managers, which register as NDIS protocol drivers by calling the 
-    <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
-    NdisRegisterProtocolDriver</a> function, should call the 
-    <b>NdisCmRegisterAddressFamilyEx</b> function to register an AF. Miniport call managers (MCMs) must
-    instead call the 
-    <a href="..\ndis\nf-ndis-ndismcmregisteraddressfamilyex.md">
-    NdisMCmRegisterAddressFamilyEx</a> function.</p>
-
-<p>To register an AF for a binding, the stand-alone call manager should call 
-    <b>NdisCmRegisterAddressFamilyEx</b> from the 
-    <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">
-    ProtocolBindAdapterEx</a> function.</p>
-
-<p>A stand-alone call manager's 
-    <i>ProtocolBindAdapterEx</i> function first establishes the binding to the underlying miniport driver by
-    calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function. Each time
+    <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function. Each time
     NDIS calls 
     <i>ProtocolBindAdapterEx</i> with another handle at the 
     <i>BindContext</i> parameter, 
@@ -233,7 +198,7 @@ NDIS_STATUS NdisCmRegisterAddressFamilyEx(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547917">Irql_CallManager_Function</a>
+<a href="devtest.ndis_irql_callmanager_function">Irql_CallManager_Function</a>
 </td>
 </tr>
 </table>
@@ -248,10 +213,10 @@ NDIS_STATUS NdisCmRegisterAddressFamilyEx(
    NdisMCmRegisterAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564520">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-bind-adapter-ex.md">ProtocolBindAdapterEx</a>
@@ -262,4 +227,4 @@ NDIS_STATUS NdisCmRegisterAddressFamilyEx(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmRegisterAddressFamilyEx function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmRegisterAddressFamilyEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

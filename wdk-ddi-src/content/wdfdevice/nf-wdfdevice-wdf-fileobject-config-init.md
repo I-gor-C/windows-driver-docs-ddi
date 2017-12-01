@@ -7,7 +7,7 @@ old-location: wdf\wdf_fileobject_config_init.htm
 old-project: wdf
 ms.assetid: 87ad817a-4a62-4061-949c-fe45bdfb44d5
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_FILEOBJECT_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]</p>
-<p>The <b>WDF_FILEOBJECT_CONFIG_INIT</b> function initializes a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551319">WDF_FILEOBJECT_CONFIG</a> structure.</p>
+<p>The <b>WDF_FILEOBJECT_CONFIG_INIT</b> function initializes a driver's <a href="..\wdfdevice\ns-wdfdevice--wdf-fileobject-config.md">WDF_FILEOBJECT_CONFIG</a> structure.</p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ VOID WDF_FILEOBJECT_CONFIG_INIT(
 ### -param <i>FileEventCallbacks</i> [out]
 
 <dd>
-<p>A pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff551319">WDF_FILEOBJECT_CONFIG</a> structure.</p>
+<p>A pointer to a driver-allocated <a href="..\wdfdevice\ns-wdfdevice--wdf-fileobject-config.md">WDF_FILEOBJECT_CONFIG</a> structure.</p>
 </dd>
 
 ### -param <i>EvtDeviceFileCreate</i> [in, optional]
@@ -88,13 +88,9 @@ VOID WDF_FILEOBJECT_CONFIG_INIT(
 <p>None</p>
 
 ## -remarks
-<p>The <b>WDF_FILEOBJECT_CONFIG_INIT</b> function sets the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff551319">WDF_FILEOBJECT_CONFIG</a> structure's <b>Size</b> member, stores the specified callback function pointers, sets the <b>FileObjectClass</b> member to <b>WdfFileObjectWdfCannotUseFsContexts</b>, and sets the <b>AutoForwardCleanupClose</b> member to <b>WdfUseDefault</b>. </p>
+<p>The <b>WDF_FILEOBJECT_CONFIG_INIT</b> function sets the specified <a href="..\wdfdevice\ns-wdfdevice--wdf-fileobject-config.md">WDF_FILEOBJECT_CONFIG</a> structure's <b>Size</b> member, stores the specified callback function pointers, sets the <b>FileObjectClass</b> member to <b>WdfFileObjectWdfCannotUseFsContexts</b>, and sets the <b>AutoForwardCleanupClose</b> member to <b>WdfUseDefault</b>. </p>
 
-<p>For a code example that uses <b>WDF_FILEOBJECT_CONFIG_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546107">WdfDeviceInitSetFileObjectConfig</a>.</p>
-
-<p>The <b>WDF_FILEOBJECT_CONFIG_INIT</b> function sets the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff551319">WDF_FILEOBJECT_CONFIG</a> structure's <b>Size</b> member, stores the specified callback function pointers, sets the <b>FileObjectClass</b> member to <b>WdfFileObjectWdfCannotUseFsContexts</b>, and sets the <b>AutoForwardCleanupClose</b> member to <b>WdfUseDefault</b>. </p>
-
-<p>For a code example that uses <b>WDF_FILEOBJECT_CONFIG_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546107">WdfDeviceInitSetFileObjectConfig</a>.</p>
+<p>For a code example that uses <b>WDF_FILEOBJECT_CONFIG_INIT</b>, see <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfileobjectconfig.md">WdfDeviceInitSetFileObjectConfig</a>.</p>
 
 ## -requirements
 <table>

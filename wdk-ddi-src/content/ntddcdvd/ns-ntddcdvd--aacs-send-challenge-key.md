@@ -64,12 +64,12 @@ typedef struct _AACS_SEND_CHALLENGE_KEY {
 ### -field <b>ChallengeKey</b>
 
 <dd>
-<p>A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff550108">AACS_CHALLENGE_KEY</a> that specifies the challenge key to retrieve.</p>
+<p>A structure of type <a href="..\ntddcdvd\ns-ntddcdvd--aacs-challenge-key.md">AACS_CHALLENGE_KEY</a> that specifies the challenge key to retrieve.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Host software send this challenge key to an AACS-compliant device with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559302">IOCTL_AACS_SEND_CHALLENGE_KEY</a> request.</p>
+<p>Host software send this challenge key to an AACS-compliant device with an <a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-send-challenge-key.md">IOCTL_AACS_SEND_CHALLENGE_KEY</a> request.</p>
 
 ## -requirements
 <table>
@@ -88,13 +88,13 @@ typedef struct _AACS_SEND_CHALLENGE_KEY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550108">AACS_CHALLENGE_KEY</a>
+<a href="..\ntddcdvd\ns-ntddcdvd--aacs-challenge-key.md">AACS_CHALLENGE_KEY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553743">DVD_SESSION_ID</a>
+<a href="storage.dvd_session_id">DVD_SESSION_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559302">IOCTL_AACS_SEND_CHALLENGE_KEY</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl-aacs-send-challenge-key.md">IOCTL_AACS_SEND_CHALLENGE_KEY</a>
 </dt>
 </dl>
 <p> </p>

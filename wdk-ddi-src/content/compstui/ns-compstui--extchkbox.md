@@ -186,7 +186,7 @@ typedef struct _EXTCHKBOX {
 </dl>
 
 ## -remarks
-<p>An extended check box is a CPSUI-defined type of check box that can be associated with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559656">OPTITEM</a> structure. An OPTITEM structure can have one extended check box or one extended push button associated with it.</p>
+<p>An extended check box is a CPSUI-defined type of check box that can be associated with an <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structure. An OPTITEM structure can have one extended check box or one extended push button associated with it.</p>
 
 ## -requirements
 <table>
@@ -205,7 +205,7 @@ typedef struct _EXTCHKBOX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548795">EXTPUSH</a>
+<a href="..\compstui\ns-compstui--extpush.md">EXTPUSH</a>
 </dt>
 </dl>
 <p> </p>

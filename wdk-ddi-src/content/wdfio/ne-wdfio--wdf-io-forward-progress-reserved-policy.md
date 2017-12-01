@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_forward_progress_reserved_policy.htm
 old-project: wdf
 ms.assetid: 6d530cf2-de06-4aa3-9f4d-08619906c9ed
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,16 +78,12 @@ typedef enum _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY {
 ### -field <a id="WdfIoForwardProgressReservedPolicyPagingIO"></a><a id="wdfioforwardprogressreservedpolicypagingio"></a><a id="WDFIOFORWARDPROGRESSRESERVEDPOLICYPAGINGIO"></a><b>WdfIoForwardProgressReservedPolicyPagingIO</b>
 
 <dd>
-<p>In a low-memory situation, if the <b>Flags</b> member of the I/O request's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure indicates a paging operation, the framework uses a reserved request object, if one is available. If the I/O request is not a paging operation, the framework completes the I/O request with an error status value.</p>
+<p>In a low-memory situation, if the <b>Flags</b> member of the I/O request's <a href="..\ntifs\ns-ntifs--irp.md">IRP</a> structure indicates a paging operation, the framework uses a reserved request object, if one is available. If the I/O request is not a paging operation, the framework completes the I/O request with an error status value.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</b> enumeration is used as a member type in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552364">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.</p>
-
-<p>The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</b> enumeration is used as a member type in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552364">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.</p>
-
-<p>The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</b> enumeration is used as a member type in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552364">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.</p>
+<p>The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</b> enumeration is used as a member type in the <a href="..\wdfio\ns-wdfio--wdf-io-queue-forward-progress-policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.</p>
 
 ## -requirements
 <table>

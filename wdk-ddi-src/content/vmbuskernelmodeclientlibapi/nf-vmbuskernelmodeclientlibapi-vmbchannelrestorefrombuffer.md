@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelrestorefrombuffer.htm
 old-project: netvista
 ms.assetid: 5A063585-AC45-44DF-BE21-FA1BB6283E6F
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: VmbChannelRestoreFromBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -91,9 +91,6 @@ NTSTATUS VmbChannelRestoreFromBuffer(
 <p> </p>
 
 ## -remarks
-<p>The caller is expected to call this function with buffers that contain whole
-"chunks" of stored data.</p>
-
 <p>The caller is expected to call this function with buffers that contain whole
 "chunks" of stored data.</p>
 

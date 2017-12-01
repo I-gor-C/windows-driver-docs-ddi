@@ -67,24 +67,24 @@ typedef struct _UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS {
 ### -field <b>PdConnState</b>
 
 <dd>
-<p>The state of the connector indicated by one of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187934">UCM_PD_CONN_STATE</a>-typed flags.</p>
+<p>The state of the connector indicated by one of the <a href="buses.ucm_pd_conn_state">UCM_PD_CONN_STATE</a>-typed flags.</p>
 </dd>
 
 ### -field <b>Rdo</b>
 
 <dd>
-<p>An initialized <a href="https://msdn.microsoft.com/library/windows/hardware/mt187942">UCM_PD_REQUEST_DATA_OBJECT</a> structure that describes the characteristics of the new connection state.</p>
+<p>An initialized <a href="buses.ucm_pd_request_data_object">UCM_PD_REQUEST_DATA_OBJECT</a> structure that describes the characteristics of the new connection state.</p>
 </dd>
 
 ### -field <b>ChargingState</b>
 
 <dd>
-<p>Charging state of the port indicated by one of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187921">UCM_CHARGING_STATE</a>-typed flags. </p>
+<p>Charging state of the port indicated by one of the <a href="buses.ucm_charging_state">UCM_CHARGING_STATE</a>-typed flags. </p>
 </dd>
 </dl>
 
 ## -remarks
-<p>Initialize this structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt187927">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS_INIT</a>. An initialized <b>UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</b> structure is an input parameter value to <a href="https://msdn.microsoft.com/library/windows/hardware/mt187911">UcmConnectorPdConnectionStateChanged</a> that is used by the client driver to notify UcmCx about the Attached state of the port.</p>
+<p>Initialize this structure by calling <a href="buses.ucm_connector_pd_conn_state_changed_params_init">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS_INIT</a>. An initialized <b>UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</b> structure is an input parameter value to <a href="buses.ucmconnectorpdconnectionstatechanged">UcmConnectorPdConnectionStateChanged</a> that is used by the client driver to notify UcmCx about the Attached state of the port.</p>
 
 ## -requirements
 <table>
@@ -135,10 +135,10 @@ typedef struct _UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187915">UcmConnectorTypeCAttach</a>
+<a href="buses.ucmconnectortypecattach">UcmConnectorTypeCAttach</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt187911">UcmConnectorPdConnectionStateChanged</a>
+<a href="buses.ucmconnectorpdconnectionstatechanged">UcmConnectorPdConnectionStateChanged</a>
 </dt>
 </dl>
 <p> </p>

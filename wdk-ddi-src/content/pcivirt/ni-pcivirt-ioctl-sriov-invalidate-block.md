@@ -89,30 +89,6 @@ I/O Status block
 The PF driver completes the request when the driver wants to indicate to the virtual function (VF) driver that
 one or more of the configuration blocks need  to be read again.</p>
 
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The   request  is sent to the physical function (PF) driver by VSP.
-The PF driver completes the request when the driver wants to indicate to the virtual function (VF) driver that
-one or more of the configuration blocks need  to be read again.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The   request  is sent to the physical function (PF) driver by VSP.
-The PF driver completes the request when the driver wants to indicate to the virtual function (VF) driver that
-one or more of the configuration blocks need  to be read again.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The   request  is sent to the physical function (PF) driver by VSP.
-The PF driver completes the request when the driver wants to indicate to the virtual function (VF) driver that
-one or more of the configuration blocks need  to be read again.</p>
-
-<p>This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.</p>
-
-<p>The   request  is sent to the physical function (PF) driver by VSP.
-The PF driver completes the request when the driver wants to indicate to the virtual function (VF) driver that
-one or more of the configuration blocks need  to be read again.</p>
-
 ## -requirements
 <table>
 <tr>

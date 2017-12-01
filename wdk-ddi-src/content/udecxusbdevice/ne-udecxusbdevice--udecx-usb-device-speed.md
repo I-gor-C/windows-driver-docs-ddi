@@ -103,7 +103,7 @@ typedef enum _UDECX_USB_DEVICE_SPEED {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt627971">UdecxUsbDeviceInitSetSpeed</a>
+<a href="buses.udecxusbdeviceinitsetspeed">UdecxUsbDeviceInitSetSpeed</a>
 </dt>
 </dl>
 <p> </p>

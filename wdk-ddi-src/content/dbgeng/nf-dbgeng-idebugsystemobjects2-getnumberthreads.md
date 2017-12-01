@@ -7,7 +7,7 @@ old-location: debugger\getnumberthreads.htm
 old-project: debugger
 ms.assetid: f56da2d0-4c4c-4302-a87b-c672dec25d9f
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects2, GetNumberThreads, IDebugSystemObjects2::GetNumberThreads
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,13 +71,7 @@ HRESULT GetNumberThreads(
 ## -remarks
 <p>In kernel-mode debugging, there is a virtual thread representing each processor.</p>
 
-<p>In user-mode debugging, the number of threads changes with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550713">IDebugEventCallbacks::CreateThread</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550730">IDebugEventCallbacks::ExitThread</a> events.</p>
-
-<p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
-
-<p>In kernel-mode debugging, there is a virtual thread representing each processor.</p>
-
-<p>In user-mode debugging, the number of threads changes with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550713">IDebugEventCallbacks::CreateThread</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550730">IDebugEventCallbacks::ExitThread</a> events.</p>
+<p>In user-mode debugging, the number of threads changes with the <a href="debugger.idebugeventcallbacks_createthread">IDebugEventCallbacks::CreateThread</a> and <a href="debugger.idebugeventcallbacks_exitthread">IDebugEventCallbacks::ExitThread</a> events.</p>
 
 <p>For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.</p>
 

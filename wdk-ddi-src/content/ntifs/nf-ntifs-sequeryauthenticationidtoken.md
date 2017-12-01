@@ -64,7 +64,7 @@ NTSTATUS SeQueryAuthenticationIdToken(
 ### -param <i>AuthenticationId</i> [out]
 
 <dd>
-<p>Authentication ID of the access token. (An Authentication ID is the locally unique identifier, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>, that is assigned to the logon session that the access token represents. There can be many tokens representing a single logon session.) </p>
+<p>Authentication ID of the access token. (An Authentication ID is the locally unique identifier, or <a href="ifsk.luid">LUID</a>, that is assigned to the logon session that the access token represents. There can be many tokens representing a single logon session.) </p>
 </dd>
 </dl>
 
@@ -76,8 +76,6 @@ NTSTATUS SeQueryAuthenticationIdToken(
 <p> </p>
 
 ## -remarks
-<p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.</p>
-
 <p>For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.</p>
 
 ## -requirements
@@ -135,25 +133,25 @@ NTSTATUS SeQueryAuthenticationIdToken(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>
+<a href="ifsk.luid">LUID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551893">PsDereferenceImpersonationToken</a>
+<a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551896">PsDereferencePrimaryToken</a>
+<a href="..\ntifs\nf-ntifs-psdereferenceprimarytoken.md">PsDereferencePrimaryToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556690">SeQueryInformationToken</a>
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556698">SeQuerySubjectContextToken</a>
+<a href="..\ntifs\nf-ntifs-sequerysubjectcontexttoken.md">SeQuerySubjectContextToken</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556720">SeTokenIsAdmin</a>
+<a href="..\ntifs\nf-ntifs-setokenisadmin.md">SeTokenIsAdmin</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556724">SeTokenIsRestricted</a>
+<a href="..\ntifs\nf-ntifs-setokenisrestricted.md">SeTokenIsRestricted</a>
 </dt>
 </dl>
 <p> </p>

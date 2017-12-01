@@ -128,7 +128,7 @@ typedef struct _DXVA_MBctrl_P_HostResidDiff_1 {
 <td>
 <p><i>FieldResidual</i></p>
 <p>Indicates whether the residual difference blocks use a field IDCT structure as specified in MPEG-2.</p>
-<p>Must be 1 if the <b>bPicStructure</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff564012">DXVA_PictureParameters</a> is 1 or 2. When used for MPEG-2, <i>FieldResidual</i> must be zero if the <i>frame_pred_frame_DCT</i> variable in the MPEG-2 syntax is 1, and must be equal to the <i>dct_type </i>variable in the MPEG-2 syntax if <i>dct_type</i> is present for the macroblock.</p>
+<p>Must be 1 if the <b>bPicStructure</b> member of <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a> is 1 or 2. When used for MPEG-2, <i>FieldResidual</i> must be zero if the <i>frame_pred_frame_DCT</i> variable in the MPEG-2 syntax is 1, and must be equal to the <i>dct_type </i>variable in the MPEG-2 syntax if <i>dct_type</i> is present for the macroblock.</p>
 </td>
 </tr>
 <tr>
@@ -146,7 +146,7 @@ typedef struct _DXVA_MBctrl_P_HostResidDiff_1 {
 </td>
 <td>
 <p><i>Motion4MV</i></p>
-<p>A variable indicating that forward motion uses a distinct motion vector for each of the four luminance blocks in the macroblock, as used in H.263 Annexes F and J. <i>Motion4MV</i> must be zero if <i>MotionForward</i> is zero or if the <b>bPic4MVallowed</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff564012">DXVA_PictureParameters</a> is zero.</p>
+<p>A variable indicating that forward motion uses a distinct motion vector for each of the four luminance blocks in the macroblock, as used in H.263 Annexes F and J. <i>Motion4MV</i> must be zero if <i>MotionForward</i> is zero or if the <b>bPic4MVallowed</b> member of <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a> is zero.</p>
 </td>
 </tr>
 <tr>
@@ -198,7 +198,7 @@ typedef struct _DXVA_MBctrl_P_HostResidDiff_1 {
 
 <dd>
 <p>Specifies which blocks of the macroblock use overflow residual difference data.</p>
-<p>When using host-based residual difference decoding with the <b>bPicOverflowBlocks</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff564012">DXVA_PictureParameters</a> equal to 1 and IntraMacroblock equal to zero (the 8-8 overflow method), <b>wPC_Overflow</b> contains the pattern code of the overflow blocks. (The pattern code is specified in the same manner as for <b>wPatternCode</b>.) The data for the coded overflow blocks (those blocks having bit (11-i) equal to 1) is found in the residual coding buffer in the same indexing order (increasing i).
+<p>When using host-based residual difference decoding with the <b>bPicOverflowBlocks</b> member of <a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a> equal to 1 and IntraMacroblock equal to zero (the 8-8 overflow method), <b>wPC_Overflow</b> contains the pattern code of the overflow blocks. (The pattern code is specified in the same manner as for <b>wPatternCode</b>.) The data for the coded overflow blocks (those blocks having bit (11-i) equal to 1) is found in the residual coding buffer in the same indexing order (increasing i).
 
  </p>
 </dd>
@@ -212,7 +212,7 @@ typedef struct _DXVA_MBctrl_P_HostResidDiff_1 {
 ### -field <b>MVector</b>
 
 <dd>
-<p>An array containing the value of the motion vector(s) for the macroblock, each motion vector is represented by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564004">DXVA_MVvalue</a> structure.</p>
+<p>An array containing the value of the motion vector(s) for the macroblock, each motion vector is represented by a <a href="..\dxva\ns-dxva--dxva-mvvalue.md">DXVA_MVvalue</a> structure.</p>
 </dd>
 </dl>
 
@@ -244,16 +244,16 @@ typedef struct _DXVA_MBctrl_P_HostResidDiff_1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564004">DXVA_MVvalue</a>
+<a href="..\dxva\ns-dxva--dxva-mvvalue.md">DXVA_MVvalue</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563997">DXVA_MBctrl_P_OffHostIDCT_1</a>
+<a href="..\dxva\ns-dxva--dxva-mbctrl-p-offhostidct-1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564012">DXVA_PictureParameters</a>
+<a href="..\dxva\ns-dxva--dxva-pictureparameters.md">DXVA_PictureParameters</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563133">DXVA_ConfigPictureDecode</a>
+<a href="..\dxva\ns-dxva--dxva-configpicturedecode.md">DXVA_ConfigPictureDecode</a>
 </dt>
 </dl>
 <p> </p>

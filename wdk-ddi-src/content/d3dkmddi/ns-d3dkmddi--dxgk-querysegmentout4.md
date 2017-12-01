@@ -68,7 +68,7 @@ typedef struct _DXGK_QUERYSEGMENTOUT4 {
 ### -field <b>pSegmentDescriptor</b>
 
 <dd>
-<p>Pointer to the array of <a href="https://msdn.microsoft.com/library/windows/hardware/dn906842">DXGK_SEGMENTDESCRIPTOR4</a> structures. The size of the array element is defined by <b>SegmentDescriptorStride</b>. The <b>pSegmentDescriptor</b> type has been changed to a <b>BYTE*</b> to help enforce the use of the stride as the method of iterating the array. The driver fills the array with information about each memory segment.</p>
+<p>Pointer to the array of <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-segmentdescriptor4.md">DXGK_SEGMENTDESCRIPTOR4</a> structures. The size of the array element is defined by <b>SegmentDescriptorStride</b>. The <b>pSegmentDescriptor</b> type has been changed to a <b>BYTE*</b> to help enforce the use of the stride as the method of iterating the array. The driver fills the array with information about each memory segment.</p>
 </dd>
 
 ### -field <b>PagingBufferSegmentId</b>
@@ -132,7 +132,7 @@ typedef struct _DXGK_QUERYSEGMENTOUT4 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906838">DXGK_QUERYSEGMENTIN4</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-querysegmentin4.md">DXGK_QUERYSEGMENTIN4</a>
 </dt>
 </dl>
 <p> </p>

@@ -60,7 +60,7 @@ typedef struct _FEATURE_DATA_PROFILE_LIST_EX {
 ### -field <b>ProfileNumber</b>
 
 <dd>
-<p>Contains the profile number. This number must be one of the values defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553851">FEATURE_PROFILE_TYPE</a> enumeration. <b>ProfileNumber</b>[0] must contain the most significant byte of the profile number. <b>ProfileNumber</b>[1] must contain the least significant byte. </p>
+<p>Contains the profile number. This number must be one of the values defined by the <a href="..\ntddmmc\ne-ntddmmc--feature-profile-type.md">FEATURE_PROFILE_TYPE</a> enumeration. <b>ProfileNumber</b>[0] must contain the most significant byte of the profile number. <b>ProfileNumber</b>[1] must contain the least significant byte. </p>
 </dd>
 
 ### -field <b>Current</b>
@@ -102,10 +102,10 @@ typedef struct _FEATURE_DATA_PROFILE_LIST_EX {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553851">FEATURE_PROFILE_TYPE</a>
+<a href="..\ntddmmc\ne-ntddmmc--feature-profile-type.md">FEATURE_PROFILE_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553816">FEATURE_DATA_PROFILE_LIST</a>
+<a href="..\ntddmmc\ns-ntddmmc--feature-data-profile-list.md">FEATURE_DATA_PROFILE_LIST</a>
 </dt>
 </dl>
 <p> </p>

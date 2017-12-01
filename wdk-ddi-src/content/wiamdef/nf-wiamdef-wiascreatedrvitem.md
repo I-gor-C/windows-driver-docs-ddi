@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <b>wiasCreateDrvItem </b>function creates an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543896">IWiaDrvItem Interface</a> object.</p>
+<p>The <b>wiasCreateDrvItem </b>function creates an <a href="image.iwiadrvitem_interface">IWiaDrvItem Interface</a> object.</p>
 
 
 ## -syntax
@@ -82,7 +82,7 @@ HRESULT _stdcall wiasCreateDrvItem(
 ### -param <i>pIMiniDrv</i> [in, out]
 
 <dd>
-<p>Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545027">IWiaMiniDrv Interface</a> of the current minidriver.</p>
+<p>Pointer to the <a href="image.iwiaminidrv_interface">IWiaMiniDrv Interface</a> of the current minidriver.</p>
 </dd>
 
 ### -param <i>cbDevSpecContext</i> 
@@ -100,7 +100,7 @@ HRESULT _stdcall wiasCreateDrvItem(
 ### -param <i>ppIWiaDrvItem</i> [out]
 
 <dd>
-<p>Pointer to a memory location that receives the address of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543896">IWiaDrvItem Interface</a> for the newly created <b>IWiaDrvItem</b> object.</p>
+<p>Pointer to a memory location that receives the address of an <a href="image.iwiadrvitem_interface">IWiaDrvItem Interface</a> for the newly created <b>IWiaDrvItem</b> object.</p>
 </dd>
 </dl>
 
@@ -108,8 +108,6 @@ HRESULT _stdcall wiasCreateDrvItem(
 <p>On success, the function returns S_OK. If the function fails, it returns a standard COM error or one of the WIA_ERROR_XXX errors (described in the Windows SDK documentation).</p>
 
 ## -remarks
-<p>This function creates and initializes an <a href="NULL">IWiaDrvItem COM Interface</a> object with the specified name and attributes. It also creates a context for the <b>IWiaDrvItem</b> object. Minidrivers typically use this function to build a tree of device items.</p>
-
 <p>This function creates and initializes an <a href="NULL">IWiaDrvItem COM Interface</a> object with the specified name and attributes. It also creates a context for the <b>IWiaDrvItem</b> object. Minidrivers typically use this function to build a tree of device items.</p>
 
 ## -requirements
@@ -167,7 +165,7 @@ HRESULT _stdcall wiasCreateDrvItem(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549156">wiasCreateChildAppItem</a>
+<a href="..\wiamdef\nf-wiamdef-wiascreatechildappitem.md">wiasCreateChildAppItem</a>
 </dt>
 </dl>
 <p> </p>

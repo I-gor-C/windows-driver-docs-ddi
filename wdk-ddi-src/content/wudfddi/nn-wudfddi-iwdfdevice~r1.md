@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice.htm
 old-project: wdf
 ms.assetid: b0f8a156-e0e0-48d1-9e23-4ac07795df07
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: IWDFWorkItem, GetParentObject, IWDFWorkItem::GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,13 +45,13 @@ req.product: Windows 10 or later.
 
 
 ## -inheritance
-<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDevice</b> interface inherits from <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>. <b>IWDFDevice</b> also has these types of members:</p>
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDevice</b> interface inherits from <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>. <b>IWDFDevice</b> also has these types of members:</p>
 
 <p>The <b>IWDFDevice</b> interface has these methods.</p>
 
 <p>The <a href="wdf.iwdfdevice_assigndeviceinterfacestate">AssignDeviceInterfaceState</a> method enables or disables the specified device interface instance for a device.</p>
 
-<p>The <a href="wdf.iwdfdevice_commitpnpstate">CommitPnpState</a> method commits the state of the Plug and Play (PnP) property (that is, turns on, turns off, or sets to the default state) that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a> method set.</p>
+<p>The <a href="wdf.iwdfdevice_commitpnpstate">CommitPnpState</a> method commits the state of the Plug and Play (PnP) property (that is, turns on, turns off, or sets to the default state) that the <a href="wdf.iwdfdevice_setpnpstate">IWDFDevice::SetPnpState</a> method set.</p>
 
 <p>The <a href="wdf.iwdfdevice_configurerequestdispatching">ConfigureRequestDispatching</a> method configures the queuing of I/O requests of the specified type to the specified I/O queue.</p>
 
@@ -93,7 +93,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557006">IWDFDevice::AssignDeviceInterfaceState</a>
+<a href="wdf.iwdfdevice_assigndeviceinterfacestate">IWDFDevice::AssignDeviceInterfaceState</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_assigndeviceinterfacestate">AssignDeviceInterfaceState</a> method enables or disables the specified device interface instance for a device.</p>
@@ -101,15 +101,15 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557010">IWDFDevice::CommitPnpState</a>
+<a href="wdf.iwdfdevice_commitpnpstate">IWDFDevice::CommitPnpState</a>
 </td>
 <td align="left" width="63%">
-<p>The <a href="wdf.iwdfdevice_commitpnpstate">CommitPnpState</a> method commits the state of the Plug and Play (PnP) property (that is, turns on, turns off, or sets to the default state) that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a> method set.</p>
+<p>The <a href="wdf.iwdfdevice_commitpnpstate">CommitPnpState</a> method commits the state of the Plug and Play (PnP) property (that is, turns on, turns off, or sets to the default state) that the <a href="wdf.iwdfdevice_setpnpstate">IWDFDevice::SetPnpState</a> method set.</p>
 </td>
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557014">IWDFDevice::ConfigureRequestDispatching</a>
+<a href="wdf.iwdfdevice_configurerequestdispatching">IWDFDevice::ConfigureRequestDispatching</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_configurerequestdispatching">ConfigureRequestDispatching</a> method configures the queuing of I/O requests of the specified type to the specified I/O queue.</p>
@@ -117,7 +117,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a>
+<a href="wdf.iwdfdevice_createdeviceinterface">IWDFDevice::CreateDeviceInterface</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_createdeviceinterface">CreateDeviceInterface</a> method creates an instance of a device interface class.</p>
@@ -125,7 +125,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
+<a href="wdf.iwdfdevice_createioqueue">IWDFDevice::CreateIoQueue</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_createioqueue">CreateIoQueue</a> method configures the default I/O queue that is associated with a device or creates a secondary I/O queue for the device.</p>
@@ -133,7 +133,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557021">IWDFDevice::CreateRequest</a>
+<a href="wdf.iwdfdevice_createrequest">IWDFDevice::CreateRequest</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_createrequest">CreateRequest</a> method creates an unformatted request object.</p>
@@ -141,7 +141,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557023">IWDFDevice::CreateSymbolicLink</a>
+<a href="wdf.iwdfdevice_createsymboliclink">IWDFDevice::CreateSymbolicLink</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_createsymboliclink">CreateSymbolicLink</a> method creates a symbolic link for the device.</p>
@@ -149,7 +149,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558828">IWDFDevice::CreateWdfFile</a>
+<a href="wdf.iwdfdevice_createwdffile">IWDFDevice::CreateWdfFile</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_createwdffile">CreateWdfFile</a> method creates a file object for a driver to use.</p>
@@ -157,7 +157,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558830">IWDFDevice::GetDefaultIoQueue</a>
+<a href="wdf.iwdfdevice_getdefaultioqueue">IWDFDevice::GetDefaultIoQueue</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_getdefaultioqueue">GetDefaultIoQueue</a> method retrieves the interface of the default I/O queue for a device.</p>
@@ -165,7 +165,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558831">IWDFDevice::GetDefaultIoTarget</a>
+<a href="wdf.iwdfdevice_getdefaultiotarget">IWDFDevice::GetDefaultIoTarget</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_getdefaultiotarget">GetDefaultIoTarget</a> method retrieves the interface of the default I/O target for a device instance.</p>
@@ -173,7 +173,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558833">IWDFDevice::GetDriver</a>
+<a href="wdf.iwdfdevice_getdriver">IWDFDevice::GetDriver</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_getdriver">GetDriver</a> method retrieves the interface to the parent driver object of a device instance.</p>
@@ -181,7 +181,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a>
+<a href="wdf.iwdfdevice_getpnpstate">IWDFDevice::GetPnpState</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_getpnpstate">GetPnpState</a> method determines whether the given Plug and Play (PnP) property of a device is on or off (or set to the default state).</p>
@@ -189,7 +189,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558835">IWDFDevice::PostEvent</a>
+<a href="wdf.iwdfdevice_postevent">IWDFDevice::PostEvent</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_postevent">PostEvent</a> method asynchronously notifies applications that are waiting for the specified event from a driver.</p>
@@ -197,7 +197,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558837">IWDFDevice::RetrieveDeviceInstanceId</a>
+<a href="wdf.iwdfdevice_retrievedeviceinstanceid">IWDFDevice::RetrieveDeviceInstanceId</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_retrievedeviceinstanceid">RetrieveDeviceInstanceId</a> method retrieves the identifier of an instance of a device.</p>
@@ -205,7 +205,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558841">IWDFDevice::RetrieveDeviceName</a>
+<a href="wdf.iwdfdevice_retrievedevicename">IWDFDevice::RetrieveDeviceName</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_retrievedevicename">RetrieveDeviceName</a> method retrieves the name of an underlying kernel-mode device.</p>
@@ -213,7 +213,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
+<a href="wdf.iwdfdevice_retrievedevicepropertystore">IWDFDevice::RetrieveDevicePropertyStore</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_retrievedevicepropertystore">RetrieveDevicePropertyStore</a> method retrieves a property store interface that drivers can use to access the registry.</p>
@@ -221,7 +221,7 @@ req.product: Windows 10 or later.
 </tr>
 <tr data="declared;">
 <td align="left" width="37%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>
+<a href="wdf.iwdfdevice_setpnpstate">IWDFDevice::SetPnpState</a>
 </td>
 <td align="left" width="63%">
 <p>The <a href="wdf.iwdfdevice_setpnpstate">SetPnpState</a> method turns on or off (or sets to the default state) the specified Plug and Play (PnP) property of a device.</p>
@@ -229,7 +229,7 @@ req.product: Windows 10 or later.
 </tr>
 </table><p>The <a href="wdf.iwdfdevice_assigndeviceinterfacestate">AssignDeviceInterfaceState</a> method enables or disables the specified device interface instance for a device.</p>
 
-<p>The <a href="wdf.iwdfdevice_commitpnpstate">CommitPnpState</a> method commits the state of the Plug and Play (PnP) property (that is, turns on, turns off, or sets to the default state) that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a> method set.</p>
+<p>The <a href="wdf.iwdfdevice_commitpnpstate">CommitPnpState</a> method commits the state of the Plug and Play (PnP) property (that is, turns on, turns off, or sets to the default state) that the <a href="wdf.iwdfdevice_setpnpstate">IWDFDevice::SetPnpState</a> method set.</p>
 
 <p>The <a href="wdf.iwdfdevice_configurerequestdispatching">ConfigureRequestDispatching</a> method configures the queuing of I/O requests of the specified type to the specified I/O queue.</p>
 
@@ -264,9 +264,7 @@ req.product: Windows 10 or later.
 <p> </p>
 
 ## -remarks
-<p>Each device object has a parent driver object. When a new device arrives in the system, the framework calls the parent driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554896">IDriverEntry::OnDeviceAdd</a> callback function to notify the driver about the arrival. The driver can then call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to receive a pointer to the <b>IWDFDevice</b> interface for the new device object. </p>
-
-<p>Each device object has a parent driver object. When a new device arrives in the system, the framework calls the parent driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554896">IDriverEntry::OnDeviceAdd</a> callback function to notify the driver about the arrival. The driver can then call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to receive a pointer to the <b>IWDFDevice</b> interface for the new device object. </p>
+<p>Each device object has a parent driver object. When a new device arrives in the system, the framework calls the parent driver's <a href="wdf.idriverentry_ondeviceadd">IDriverEntry::OnDeviceAdd</a> callback function to notify the driver about the arrival. The driver can then call the <a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a> method to receive a pointer to the <b>IWDFDevice</b> interface for the new device object. </p>
 
 ## -requirements
 <table>

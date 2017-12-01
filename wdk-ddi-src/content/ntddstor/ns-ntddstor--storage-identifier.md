@@ -68,7 +68,7 @@ typedef struct _STORAGE_IDENTIFIER {
 ### -field <b>Type</b>
 
 <dd>
-<p>Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566990">STORAGE_IDENTIFIER_TYPE</a> that indicates the identifier type.</p>
+<p>Contains an enumerator value of type <a href="storage.storage_identifier_type">STORAGE_IDENTIFIER_TYPE</a> that indicates the identifier type.</p>
 </dd>
 
 ### -field <b>IdentifierSize</b>
@@ -86,7 +86,7 @@ typedef struct _STORAGE_IDENTIFIER {
 ### -field <b>Association</b>
 
 <dd>
-<p>Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a> that indicates whether the descriptor identifies a device or a port.</p>
+<p>Contains an enumerator value of type <a href="storage.storage_association_type">STORAGE_ASSOCIATION_TYPE</a> that indicates whether the descriptor identifies a device or a port.</p>
 </dd>
 
 ### -field <b>Identifier</b>
@@ -116,10 +116,10 @@ typedef struct _STORAGE_IDENTIFIER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a>
+<a href="storage.storage_association_type">STORAGE_ASSOCIATION_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566990">STORAGE_IDENTIFIER_TYPE</a>
+<a href="storage.storage_identifier_type">STORAGE_IDENTIFIER_TYPE</a>
 </dt>
 </dl>
 <p> </p>

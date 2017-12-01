@@ -7,7 +7,7 @@ old-location: stream\kssettargetstate.htm
 old-project: stream
 ms.assetid: 36f14936-8cc6-4488-aa0f-343e4fbb84e3
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KsSetTargetState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,7 +58,7 @@ VOID KsSetTargetState(
 ### -param <i>Header</i> [in]
 
 <dd>
-<p>Points to a header previously allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff560958">KsAllocateDeviceHeader</a>.</p>
+<p>Points to a header previously allocated by <a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>.</p>
 </dd>
 
 ### -param <i>TargetState</i> [in]
@@ -72,9 +72,7 @@ VOID KsSetTargetState(
 <p>None.</p>
 
 ## -remarks
-<p>Assumes that such a target has been set with <a href="https://msdn.microsoft.com/library/windows/hardware/ff566845">KsSetTargetDeviceObject</a>. The target is initially disabled, and is ignored when recalculating stack depth. For WDM Streaming devices, this is called on a transition back to a Stop state, after having enabled the target and used <a href="..\ks\nf-ks-ksrecalculatestackdepth.md">KsRecalculateStackDepth</a> on a transition to Acquire state. This allows the stack depth to be minimized.</p>
-
-<p>Assumes that such a target has been set with <a href="https://msdn.microsoft.com/library/windows/hardware/ff566845">KsSetTargetDeviceObject</a>. The target is initially disabled, and is ignored when recalculating stack depth. For WDM Streaming devices, this is called on a transition back to a Stop state, after having enabled the target and used <a href="..\ks\nf-ks-ksrecalculatestackdepth.md">KsRecalculateStackDepth</a> on a transition to Acquire state. This allows the stack depth to be minimized.</p>
+<p>Assumes that such a target has been set with <a href="..\ks\nf-ks-kssettargetdeviceobject.md">KsSetTargetDeviceObject</a>. The target is initially disabled, and is ignored when recalculating stack depth. For WDM Streaming devices, this is called on a transition back to a Stop state, after having enabled the target and used <a href="..\ks\nf-ks-ksrecalculatestackdepth.md">KsRecalculateStackDepth</a> on a transition to Acquire state. This allows the stack depth to be minimized.</p>
 
 ## -requirements
 <table>

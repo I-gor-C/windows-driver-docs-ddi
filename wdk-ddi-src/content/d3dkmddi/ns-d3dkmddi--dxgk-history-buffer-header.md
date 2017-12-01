@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Specifies how data is stored in a <a href="https://msdn.microsoft.com/library/windows/hardware/dn439361">DXGK_HISTORY_BUFFER</a> history buffer.</p>
+<p>Specifies how data is stored in a <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-history-buffer.md">DXGK_HISTORY_BUFFER</a> history buffer.</p>
 
 
 ## -syntax
@@ -60,7 +60,7 @@ typedef struct _DXGK_HISTORY_BUFFER_HEADER {
 ### -field <b>RenderCbSequence</b>
 
 <dd>
-<p>The value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544247">D3DDDICB_RENDERFLAGS</a>.<b>Value</b> member that is to be used in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a> function.</p>
+<p>The value of the <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-renderflags.md">D3DDDICB_RENDERFLAGS</a>.<b>Value</b> member that is to be used in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a> function.</p>
 <p>The display miniport driver should compute this value and enter it into <b>DXGK_HISTORY_BUFFER_HEADER</b> before calling <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a>.</p>
 </dd>
 
@@ -132,10 +132,10 @@ typedef struct _DXGK_HISTORY_BUFFER_HEADER {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544247">D3DDDICB_RENDERFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-renderflags.md">D3DDDICB_RENDERFLAGS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn439361">DXGK_HISTORY_BUFFER</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-history-buffer.md">DXGK_HISTORY_BUFFER</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-rendercb.md">pfnRenderCb</a>

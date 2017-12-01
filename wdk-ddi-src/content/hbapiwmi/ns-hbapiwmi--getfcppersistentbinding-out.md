@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The GetFcpPersistentBinding_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFcpPersistentBinding</a> WMI method to the WMI client.</p>
+<p>The GetFcpPersistentBinding_OUT structure is used to report the output parameter data of the <a href="storage.getfcppersistentbinding">GetFcpPersistentBinding</a> WMI method to the WMI client.</p>
 
 
 ## -syntax
@@ -66,13 +66,13 @@ typedef struct _GetFcpPersistentBinding_OUT {
 ### -field <b>TotalEntryCount</b>
 
 <dd>
-<p>Indicates the total number of persistent bindings retrieved by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFcpPersistentBinding</a> WMI method.</p>
+<p>Indicates the total number of persistent bindings retrieved by the <a href="storage.getfcppersistentbinding">GetFcpPersistentBinding</a> WMI method.</p>
 </dd>
 
 ### -field <b>OutEntryCount</b>
 
 <dd>
-<p>Indicates the total number of mappings retrieved by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554948">GetFcpTargetMapping</a> WMI method. This value will be less than or equal to <b>TotalEntryCount</b>.</p>
+<p>Indicates the total number of mappings retrieved by the <a href="storage.getfcptargetmapping">GetFcpTargetMapping</a> WMI method. This value will be less than or equal to <b>TotalEntryCount</b>.</p>
 </dd>
 
 ### -field <b>Entry</b>
@@ -83,9 +83,9 @@ typedef struct _GetFcpPersistentBinding_OUT {
 </dl>
 
 ## -remarks
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFcpPersistentBinding</a> WMI method retrieves the bindings between SCSI and fibre channel protocol (FCP) identifiers for the logical units.</p>
+<p>The <a href="storage.getfcppersistentbinding">GetFcpPersistentBinding</a> WMI method retrieves the bindings between SCSI and fibre channel protocol (FCP) identifiers for the logical units.</p>
 
-<p>The WMI tool suite generates a declaration of the GetFcpPersistentBinding_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.</p>
+<p>The WMI tool suite generates a declaration of the GetFcpPersistentBinding_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbafcpinfo_wmi_class">MSFC_HBAFCPInfo WMI Class</a>.</p>
 
 ## -requirements
 <table>
@@ -104,7 +104,7 @@ typedef struct _GetFcpPersistentBinding_OUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFcpPersistentBinding</a>
+<a href="storage.getfcppersistentbinding">GetFcpPersistentBinding</a>
 </dt>
 </dl>
 <p> </p>

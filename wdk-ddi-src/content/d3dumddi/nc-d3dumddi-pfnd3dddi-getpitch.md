@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY GetPitch(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543176">D3DDDIARG_GETPITCH</a> structure that describes the protected surface. </p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getpitch.md">D3DDDIARG_GETPITCH</a> structure that describes the protected surface. </p>
 </dd>
 </dl>
 
@@ -81,10 +81,6 @@ __checkReturn HRESULT APIENTRY GetPitch(
 <p> </p>
 
 ## -remarks
-<p>Hardware and drivers can optionally support the <i>GetPitch</i> function.  </p>
-
-<p>The surface for which the <i>GetPitch</i> function returns the pitch can be non-lockable or protected. Therefore, the application cannot retrieve the pitch of the surface through a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lock.md">Lock</a> function. The application must retrieve the pitch of the surface to properly allocate the system memory buffer that the application subsequently uses in calls to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-encryptionblt.md">EncryptionBlt</a> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decryptionblt.md">DecryptionBlt</a> functions. </p>
-
 <p>Hardware and drivers can optionally support the <i>GetPitch</i> function.  </p>
 
 <p>The surface for which the <i>GetPitch</i> function returns the pitch can be non-lockable or protected. Therefore, the application cannot retrieve the pitch of the surface through a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-lock.md">Lock</a> function. The application must retrieve the pitch of the surface to properly allocate the system memory buffer that the application subsequently uses in calls to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-encryptionblt.md">EncryptionBlt</a> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decryptionblt.md">DecryptionBlt</a> functions. </p>
@@ -124,7 +120,7 @@ __checkReturn HRESULT APIENTRY GetPitch(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543176">D3DDDIARG_GETPITCH</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-getpitch.md">D3DDDIARG_GETPITCH</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-decryptionblt.md">DecryptionBlt</a>

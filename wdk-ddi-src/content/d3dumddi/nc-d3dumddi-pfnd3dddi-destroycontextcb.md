@@ -67,7 +67,7 @@ _checkReturn HRESULT APIENTRY CALLBACK pfnDestroyContextCb(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544169">D3DDDICB_DESTROYCONTEXT</a> structure that contains a handle to the context to destroy.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddicb-destroycontext.md">D3DDDICB_DESTROYCONTEXT</a> structure that contains a handle to the context to destroy.</p>
 </dd>
 </dl>
 
@@ -83,14 +83,6 @@ _checkReturn HRESULT APIENTRY CALLBACK pfnDestroyContextCb(
 <p>This function might also return other HRESULT values.</p>
 
 ## -remarks
-<p>If the specified context has not finished the work that is currently queued to it, the <b>pfnDestroyContextCb</b> function blocks until the context finishes its work and then returns. </p>
-
-<p><b>pfnDestroyContextCb</b> returns an error if the context to destroy currently owns a synchronization object.</p>
-
-<p><b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnDestroyContextCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.</p>
-
-<p>The following code example shows how to destroy the default context for a display device.</p>
-
 <p>If the specified context has not finished the work that is currently queued to it, the <b>pfnDestroyContextCb</b> function blocks until the context finishes its work and then returns. </p>
 
 <p><b>pfnDestroyContextCb</b> returns an error if the context to destroy currently owns a synchronization object.</p>
@@ -134,7 +126,7 @@ _checkReturn HRESULT APIENTRY CALLBACK pfnDestroyContextCb(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544169">D3DDDICB_DESTROYCONTEXT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddicb-destroycontext.md">D3DDDICB_DESTROYCONTEXT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a>

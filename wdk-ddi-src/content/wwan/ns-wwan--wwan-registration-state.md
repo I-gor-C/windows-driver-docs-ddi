@@ -7,7 +7,7 @@ old-location: netvista\wwan_registration_state.htm
 old-project: netvista
 ms.assetid: 72a41403-9e22-4212-955a-16e243f7af1d
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WWAN_REGISTRATION_STATE, WWAN_REGISTRATION_STATE, *PWWAN_REGISTRATION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,7 +74,7 @@ typedef struct _WWAN_REGISTRATION_STATE {
 
 <dd>
 <p>The registration state of the device. For a list of defined values, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571230">WWAN_REGISTER_STATE</a>.
+     <a href="..\wwan\ne-wwan--wwan-register-state.md">WWAN_REGISTER_STATE</a>.
      </p>
 <p>The 
      <b>WwanRegisterStatePartner</b> value indicates the device is roaming on a preferred partner network
@@ -88,7 +88,7 @@ typedef struct _WWAN_REGISTRATION_STATE {
 
 <dd>
 <p>The registration mode of the device. For a list of defined values, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571229">WWAN_REGISTER_MODE</a>.</p>
+     <a href="..\wwan\ne-wwan--wwan-register-mode.md">WWAN_REGISTER_MODE</a>.</p>
 </dd>
 
 ### -field <b>ProviderId</b>
@@ -261,15 +261,15 @@ typedef struct _WWAN_REGISTRATION_STATE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571230">WWAN_REGISTER_STATE</a>
+<a href="..\wwan\ne-wwan--wwan-register-state.md">WWAN_REGISTER_STATE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571229">WWAN_REGISTER_MODE</a>
+<a href="..\wwan\ne-wwan--wwan-register-mode.md">WWAN_REGISTER_MODE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567917">NDIS_WWAN_REGISTRATION_STATE</a>
+<a href="..\ndiswwan\ns-ndiswwan--ndis-wwan-registration-state.md">NDIS_WWAN_REGISTRATION_STATE</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_REGISTRATION_STATE structure%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_REGISTRATION_STATE structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

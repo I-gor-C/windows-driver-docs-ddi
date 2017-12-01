@@ -86,29 +86,11 @@ BOOLEAN CcCanIWrite(
 <p><b>CcCanIWrite</b> returns <b>TRUE</b> if the cache manager can accept the write request, <b>FALSE</b> otherwise.</p>
 
 ## -remarks
-<p><b>CcCanIWrite</b> should be called before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff539045">CcCopyWrite</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff539075">CcFastCopyWrite</a>.</p>
+<p><b>CcCanIWrite</b> should be called before calling <a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a> or <a href="..\ntifs\nf-ntifs-ccfastcopywrite.md">CcFastCopyWrite</a>.</p>
 
-<p>If <b>CcCanIWrite</b> returns <b>TRUE</b>, the caller can immediately call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539045">CcCopyWrite</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff539075">CcFastCopyWrite</a>.</p>
+<p>If <b>CcCanIWrite</b> returns <b>TRUE</b>, the caller can immediately call <a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a> or <a href="..\ntifs\nf-ntifs-ccfastcopywrite.md">CcFastCopyWrite</a>.</p>
 
-<p>If <b>CcCanIWrite</b> returns <b>FALSE</b>, the caller must instead call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539060">CcDeferWrite</a> to defer the write request.</p>
-
-<p>Generally speaking, the cache manager can accept a write request if the following conditions are true:</p>
-
-<p>The amount of data to be written is not too large.</p>
-
-<p>There is enough memory to perform the write operation.</p>
-
-<p>The number of dirty pages in the system cache does not exceed the dirty page threshold (CcDirtyPageThreshold).</p>
-
-<p>If a per-file dirty page threshold exists for this file, it is not exceeded by the number of dirty pages for this file in the system cache.</p>
-
-<p>To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.</p>
-
-<p><b>CcCanIWrite</b> should be called before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff539045">CcCopyWrite</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff539075">CcFastCopyWrite</a>.</p>
-
-<p>If <b>CcCanIWrite</b> returns <b>TRUE</b>, the caller can immediately call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539045">CcCopyWrite</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff539075">CcFastCopyWrite</a>.</p>
-
-<p>If <b>CcCanIWrite</b> returns <b>FALSE</b>, the caller must instead call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539060">CcDeferWrite</a> to defer the write request.</p>
+<p>If <b>CcCanIWrite</b> returns <b>FALSE</b>, the caller must instead call <a href="..\ntifs\nf-ntifs-ccdeferwrite.md">CcDeferWrite</a> to defer the write request.</p>
 
 <p>Generally speaking, the cache manager can accept a write request if the following conditions are true:</p>
 
@@ -120,7 +102,7 @@ BOOLEAN CcCanIWrite(
 
 <p>If a per-file dirty page threshold exists for this file, it is not exceeded by the number of dirty pages for this file in the system cache.</p>
 
-<p>To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.</p>
+<p>To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.</p>
 
 ## -requirements
 <table>
@@ -169,19 +151,19 @@ BOOLEAN CcCanIWrite(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539045">CcCopyWrite</a>
+<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539060">CcDeferWrite</a>
+<a href="..\ntifs\nf-ntifs-ccdeferwrite.md">CcDeferWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539075">CcFastCopyWrite</a>
+<a href="..\ntifs\nf-ntifs-ccfastcopywrite.md">CcFastCopyWrite</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539209">CcSetDirtyPageThreshold</a>
+<a href="..\ntifs\nf-ntifs-ccsetdirtypagethreshold.md">CcSetDirtyPageThreshold</a>
 </dt>
 </dl>
 <p> </p>

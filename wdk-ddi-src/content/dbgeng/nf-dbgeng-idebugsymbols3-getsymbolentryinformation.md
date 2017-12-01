@@ -7,7 +7,7 @@ old-location: debugger\getsymbolentryinformation.htm
 old-project: debugger
 ms.assetid: 02fe418f-1793-4585-9891-1274a4ddba74
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSymbols3, GetSymbolEntryInformation, IDebugSymbols3::GetSymbolEntryInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,13 +58,13 @@ HRESULT GetSymbolEntryInformation(
 ### -param <i>Id</i> [in]
 
 <dd>
-<p>Specifies the module and symbol ID of the desired symbol.  For details on this structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541511">DEBUG_MODULE_AND_ID</a>.</p>
+<p>Specifies the module and symbol ID of the desired symbol.  For details on this structure, see <a href="..\dbgeng\ns-dbgeng--debug-module-and-id.md">DEBUG_MODULE_AND_ID</a>.</p>
 </dd>
 
 ### -param <i>Info</i> [out]
 
 <dd>
-<p>Receives the symbol entry information for the symbol.  For details on this structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541662">DEBUG_SYMBOL_ENTRY</a>.</p>
+<p>Receives the symbol entry information for the symbol.  For details on this structure, see <a href="..\dbgeng\ns-dbgeng--debug-symbol-entry.md">DEBUG_SYMBOL_ENTRY</a>.</p>
 </dd>
 </dl>
 
@@ -76,8 +76,6 @@ HRESULT GetSymbolEntryInformation(
 <p> </p>
 
 ## -remarks
-<p>For details on the symbol entry information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554702">Scopes and Symbol Groups</a>.</p>
-
 <p>For details on the symbol entry information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554702">Scopes and Symbol Groups</a>.</p>
 
 ## -requirements
@@ -107,7 +105,7 @@ HRESULT GetSymbolEntryInformation(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 </dt>
 <dt>
 <a href="debugger.getsymbolentryinformation2">IdebugSymbolGroup2::GetSymbolEntryInformation</a>
@@ -115,4 +113,4 @@ HRESULT GetSymbolEntryInformation(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSymbolEntryInformation method%20 RELEASE:%20(11/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSymbolEntryInformation method%20 RELEASE:%20(11/27/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

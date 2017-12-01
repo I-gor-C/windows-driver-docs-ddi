@@ -7,7 +7,7 @@ old-location: netvista\pd_buffer.htm
 old-project: netvista
 ms.assetid: 91555FBA-30F5-4CED-BA0D-2F0BE40BFF9E
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: PD_BUFFER, PD_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -481,7 +481,7 @@ length of the L2 packet is the sum of DataLength fields from each partial
 the inner-most IP transport header must be contained in the head <b>PD_BUFFER</b>.</p>
 
 <p>When posting <b>PD_BUFFER</b> structures to receive queues, DataLength is ignored by
-    the provider (For more information see the ReceiveDataLength description in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn931846">NDIS_PD_QUEUE_PARAMETERS</a> structure).
+    the provider (For more information see the ReceiveDataLength description in the <a href="netvista.ndis_pd_queue_parameters">NDIS_PD_QUEUE_PARAMETERS</a> structure).
     When draining completed <b>PD_BUFFER</b>  structures from receive queues,
     the provider stores the length of the received packet in the  DataLength field. The length does not include FCS or any stripped 801Q
     headers.

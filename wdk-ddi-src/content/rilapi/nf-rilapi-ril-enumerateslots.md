@@ -7,7 +7,7 @@ old-location: netvista\ril_enumerateslots.htm
 old-project: netvista
 ms.assetid: 58df87d5-1e7b-4ec8-8e88-631bbd78757a
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_EnumerateSlots
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -7,7 +7,7 @@ old-location: netvista\rilremotepartyinfo.htm
 old-project: netvista
 ms.assetid: 3bcaaf63-adff-4559-9e34-eae089dff6f8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILREMOTEPARTYINFO, RILREMOTEPARTYINFO, *LPRILREMOTEPARTYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>Contains stream-level data for the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451703">VideoProcessorBlt</a> function.</p>
+<p>Contains stream-level data for the <a href="display.videoprocessorblt">VideoProcessorBlt</a> function.</p>
 
 
 ## -syntax
@@ -67,8 +67,8 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_STREAM {
 ### -field <b>Enable</b>
 
 <dd>
-<p>Specifies whether this input stream is enabled. If the value is <b>TRUE</b>, the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451703">VideoProcessorBlt</a> function blits this stream to the output surface. Otherwise, this stream is not blitted.</p>
-<p>The maximum number of streams that can be enabled at one time is given in the <b>MaxInputStreams</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450968">D3D11_1DDI_VIDEO_PROCESSOR_CAPS</a> structure.</p>
+<p>Specifies whether this input stream is enabled. If the value is <b>TRUE</b>, the <a href="display.videoprocessorblt">VideoProcessorBlt</a> function blits this stream to the output surface. Otherwise, this stream is not blitted.</p>
+<p>The maximum number of streams that can be enabled at one time is given in the <b>MaxInputStreams</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-processor-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CAPS</a> structure.</p>
 </dd>
 
 ### -field <b>OutputIndex</b>
@@ -117,7 +117,7 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_STREAM {
 
 <dd>
 <p>If the stereo 3-D format is <b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE</b>, this member is a <b>D3D11_1DDI_HVIDEOPROCESSORINPUTVIEW</b> pointer to an array of   pointers that contains the past reference frames for the right view. The number of elements in the array is equal to <b>PastFrames</b>.</p>
-<p>For any other stereo 3-D format, set this member to <b>NULL</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439817">VideoProcessorSetStreamStereoFormat</a>.
+<p>For any other stereo 3-D format, set this member to <b>NULL</b>. For more information, see <a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a>.
 
 
 
@@ -183,13 +183,13 @@ For any other stereo 3-D format, set this member to <b>NULL</b>.
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450968">D3D11_1DDI_VIDEO_PROCESSOR_CAPS</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddi-video-processor-caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451703">VideoProcessorBlt</a>
+<a href="display.videoprocessorblt">VideoProcessorBlt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439817">VideoProcessorSetStreamStereoFormat</a>
+<a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a>
 </dt>
 </dl>
 <p> </p>

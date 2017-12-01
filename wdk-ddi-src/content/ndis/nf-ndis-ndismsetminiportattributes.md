@@ -7,7 +7,7 @@ old-location: netvista\ndismsetminiportattributes.htm
 old-project: netvista
 ms.assetid: 861626af-23ea-40dc-a91a-7da42d4b0a1c
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMSetMiniportAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,7 +82,7 @@ NDIS_STATUS NdisMSetMiniportAttributes(
 <p><b>NdisMSetMiniportAttributes</b> returns one of the following status values:</p><dl>
 <dt><b>NDIS_STATUS_SUCCESS</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563672">NdisMSetMiniportAttributes</a> registered the miniport adapter attributes successfully.</p><dl>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a> registered the miniport adapter attributes successfully.</p><dl>
 <dt><b>NDIS_STATUS_BAD_VERSION</b></dt>
 </dl><p>Indicates that NDIS does not support the version that is specified in the 
        <b>Revision</b> member of the structure specified in the 
@@ -112,7 +112,7 @@ NDIS_STATUS NdisMSetMiniportAttributes(
     <b>Ndis<i>Xxx</i></b> function that depends on these attributes or that claims hardware resources.</p>
 
 <p>The driver provides a 
-    <b>MiniportAdapterContext</b> member to NDIS in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565934">NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a>
+    <b>MiniportAdapterContext</b> member to NDIS in the <a href="..\ndis\ns-ndis--ndis-miniport-adapter-registration-attributes.md">NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a>
     structure. The 
     <b>MiniportAdapterContext</b> member identifies a caller-supplied context area that NDIS passes as an
     input parameter to the driver's 
@@ -121,44 +121,10 @@ NDIS_STATUS NdisMSetMiniportAttributes(
 <p>Miniport drivers must set the attributes in the 
     <a href="..\ndis\ns-ndis--ndis-miniport-adapter-general-attributes.md">
     NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure after they set the registration attributes in
-    the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565934">NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure and before they set any additional
+    the <a href="..\ndis\ns-ndis--ndis-miniport-adapter-registration-attributes.md">NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure and before they set any additional
     attributes.</p>
 
-<p>A miniport driver can also call <b>NdisMSetMiniportAttributes</b> from its <a href="..\ndis\nc-ndis-miniport-add-device.md">MiniportAddDevice</a> function. In this case, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565945">NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a> structure is used to specify the context area.</p>
-
-<p>A miniport driver must call 
-    <b>NdisMSetMiniportAttributes</b> from its 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a> function
-    before the driver calls any other 
-    <b>Ndis<i>Xxx</i></b> function that depends on the information supplied to 
-    <b>NdisMSetMiniportAttributes</b>.</p>
-
-<p>The 
-    <a href="..\ndis\ns-ndis--ndis-miniport-adapter-attributes.md">
-    NDIS_MINIPORT_ADAPTER_ATTRIBUTES</a> union is a placeholder for various attributes structures. A
-    miniport driver calls 
-    <b>NdisMSetMiniportAttributes</b> multiple times with different attributes structures. A miniport driver
-    must provide an initialized 
-    <a href="..\ndis\ns-ndis--ndis-miniport-adapter-registration-attributes.md">
-    NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure from 
-    <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>. The miniport driver must provide these registration attributes before it
-    calls any other 
-    <b>Ndis<i>Xxx</i></b> function that depends on these attributes or that claims hardware resources.</p>
-
-<p>The driver provides a 
-    <b>MiniportAdapterContext</b> member to NDIS in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565934">NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a>
-    structure. The 
-    <b>MiniportAdapterContext</b> member identifies a caller-supplied context area that NDIS passes as an
-    input parameter to the driver's 
-    <i>MiniportXxx</i> functions. This context area contains miniport-adapter-specific state information.</p>
-
-<p>Miniport drivers must set the attributes in the 
-    <a href="..\ndis\ns-ndis--ndis-miniport-adapter-general-attributes.md">
-    NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure after they set the registration attributes in
-    the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565934">NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure and before they set any additional
-    attributes.</p>
-
-<p>A miniport driver can also call <b>NdisMSetMiniportAttributes</b> from its <a href="..\ndis\nc-ndis-miniport-add-device.md">MiniportAddDevice</a> function. In this case, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565945">NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a> structure is used to specify the context area.</p>
+<p>A miniport driver can also call <b>NdisMSetMiniportAttributes</b> from its <a href="..\ndis\nc-ndis-miniport-add-device.md">MiniportAddDevice</a> function. In this case, the <a href="..\ndis\ns-ndis--ndis-miniport-add-device-registration-attributes.md">NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a> structure is used to specify the context area.</p>
 
 ## -requirements
 <table>
@@ -213,7 +179,7 @@ NDIS_STATUS NdisMSetMiniportAttributes(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975121">NdisMRegisterIoPortRange</a>
+<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>, <a href="..\ndis\nf-ndis-ndismregisterioportrange.md">NdisMRegisterIoPortRange</a>
 </td>
 </tr>
 </table>
@@ -224,7 +190,7 @@ NDIS_STATUS NdisMSetMiniportAttributes(
 <a href="..\ndis\nc-ndis-miniport-initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565945">NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a>
+<a href="..\ndis\ns-ndis--ndis-miniport-add-device-registration-attributes.md">NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-miniport-adapter-attributes.md">
@@ -235,16 +201,16 @@ NDIS_STATUS NdisMSetMiniportAttributes(
    NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565924">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
+<a href="..\ndis\ns-ndis--ndis-miniport-adapter-hardware-assist-attributes.md">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565926">NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a>
+<a href="..\ndis\ns-ndis--ndis-miniport-adapter-native-802-11-attributes.md">NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451558">NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES</a>
+<a href="..\ndis\ns-ndis--ndis-miniport-adapter-ndk-attributes.md">NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565930">NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
+<a href="..\ndis\ns-ndis--ndis-miniport-adapter-offload-attributes.md">NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis--ndis-miniport-adapter-registration-attributes.md">
@@ -259,4 +225,4 @@ NDIS_STATUS NdisMSetMiniportAttributes(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSetMiniportAttributes function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSetMiniportAttributes function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -108,10 +108,6 @@ HRESULT CreateInstanceOfMSXMLObject(
 
 <p>The parameters in this method map directly to those of the <b>CoCreateInstance</b> function (which is described in the Windows SDK documentation). Note that installing a Windows Vista driver on a machine that runs a previous version of Windows does not cause MSXML 6.0 to be installed. The actual DLL is included with the driver-dependent DLLs and is loaded from the driver directory. It is not registered on the system. Plug-ins that use this method should create only MSXML objects.</p>
 
-<p><b>IPrintCoreHelper::CreateInstanceOfMSXMLObject</b> enables a plug-in to use MSXML objects safely even when it runs on down-level client machines (that is, client machines that run Windows Server 2003, Windows XP, or Windows 2000). </p>
-
-<p>The parameters in this method map directly to those of the <b>CoCreateInstance</b> function (which is described in the Windows SDK documentation). Note that installing a Windows Vista driver on a machine that runs a previous version of Windows does not cause MSXML 6.0 to be installed. The actual DLL is included with the driver-dependent DLLs and is loaded from the driver directory. It is not registered on the system. Plug-ins that use this method should create only MSXML objects.</p>
-
 ## -requirements
 <table>
 <tr>

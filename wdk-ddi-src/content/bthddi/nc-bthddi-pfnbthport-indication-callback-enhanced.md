@@ -7,7 +7,7 @@ old-location: bltooth\enhanced_l2cap_callback_function.htm
 old-project: bltooth
 ms.assetid: 1C08937A-2B0C-4A6C-ACDF-1A751BF0D6F6
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: IBidiSpl2, UnbindDevice, IBidiSpl2::UnbindDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,14 +66,14 @@ VOID WINAPI BluetoothPortIndicationCallbackEnhanced(
 <p>For
      changes to existing L2CAP connections, this is the 
      <b>CallbackContext</b> member specified by the profile driver when it built and sent a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/hh450893">_BRB_L2CA_OPEN_ENHANCED_CHANNEL</a> structure.</p>
+     <a href="bltooth._brb_l2ca_open_enhanced_channel">_BRB_L2CA_OPEN_ENHANCED_CHANNEL</a> structure.</p>
 </dd>
 
 ### -param <i>Indication</i> [in]
 
 <dd>
 <p>An 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536679">INDICATION_CODE</a> value that indicates the type
+     <a href="..\bthddi\ne-bthddi--indication-code.md">INDICATION_CODE</a> value that indicates the type
      of L2CAP event.</p>
 </dd>
 
@@ -81,7 +81,7 @@ VOID WINAPI BluetoothPortIndicationCallbackEnhanced(
 
 <dd>
 <p>An 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/hh450875">INDICATION_PARAMETERS_ENHANCED</a> structure that
+     <a href="..\bthddi\ns-bthddi--indication-parameters-enhanced.md">INDICATION_PARAMETERS_ENHANCED</a> structure that
      contains event-specific parameters.</p>
 </dd>
 </dl>
@@ -100,28 +100,10 @@ VOID WINAPI BluetoothPortIndicationCallbackEnhanced(
     Profile drivers can register a single callback function to handle L2CAP channel notifications as a client.</p>
 
 <p>The 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh450875">INDICATION_PARAMETERS_ENHANCED</a> structure held in
+    <a href="..\bthddi\ns-bthddi--indication-parameters-enhanced.md">INDICATION_PARAMETERS_ENHANCED</a> structure held in
     the 
     <i>Parameters</i> parameter is interpreted according to the value of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536679">INDICATION_CODE</a> enumeration that the Bluetooth
-    driver stack passes to the profile driver's enhanced L2CAP callback function through the 
-    <i>Indication</i> parameter. For most notifications, there is an INDICATION_PARAMETERS_ENHANCED union member that
-    corresponds to the event and contains event-specific parameters.</p>
-
-<p>A profile driver registers its L2CAP or eL2CAP callback function by specifying the callback function in the 
-      <b>Callback</b> member of the _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure when the profile driver attempts to connect to a remote device using the
-      BRB_L2CA_OPEN_ENHANCED_CHANNEL or BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE BRBs.</p>
-
-<p>After the profile driver registers its L2CAP callback function, the callback function is only
-    associated with the enhanced channel that the BRB opened. The Bluetooth driver stack can call the L2CAP callback
-    function to notify the profile driver of actions that occur over the open enhanced channel to the remote device.
-    Profile drivers can register a single callback function to handle L2CAP channel notifications as a client.</p>
-
-<p>The 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh450875">INDICATION_PARAMETERS_ENHANCED</a> structure held in
-    the 
-    <i>Parameters</i> parameter is interpreted according to the value of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536679">INDICATION_CODE</a> enumeration that the Bluetooth
+    <a href="..\bthddi\ne-bthddi--indication-code.md">INDICATION_CODE</a> enumeration that the Bluetooth
     driver stack passes to the profile driver's enhanced L2CAP callback function through the 
     <i>Indication</i> parameter. For most notifications, there is an INDICATION_PARAMETERS_ENHANCED union member that
     corresponds to the event and contains event-specific parameters.</p>

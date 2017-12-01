@@ -96,13 +96,13 @@ typedef struct _DXVADDI_PRIVATEDATA {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542927">D3DDDIARG_CREATEDECODEDEVICE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-createdecodedevice.md">D3DDDIARG_CREATEDECODEDEVICE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543001">D3DDDIARG_DECODEEXECUTE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543009">D3DDDIARG_DECODEEXTENSIONEXECUTE</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-decodeextensionexecute.md">D3DDDIARG_DECODEEXTENSIONEXECUTE</a>
 </dt>
 </dl>
 <p> </p>

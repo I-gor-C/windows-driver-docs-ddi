@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_get_cq_results.htm
 old-project: netvista
 ms.assetid: CDCDCF99-4A81-43FE-8A3D-0726699905BB
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,13 +62,13 @@ ULONG NdkGetCqResults(
 ### -param <i>pNdkCq</i> [in]
 
 <dd>
-<p>A pointer to an NDK completion queue (CQ) object  (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439854">NDK_CQ</a>).</p>
+<p>A pointer to an NDK completion queue (CQ) object  (<a href="..\ndkpi\ns-ndkpi--ndk-cq.md">NDK_CQ</a>).</p>
 </dd>
 
 ### -param <i>Results</i> 
 
 <dd>
-<p>An array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh439935">NDK_RESULT</a> structures that will be filled with completion results that were removed from the CQ.</p>
+<p>An array of <a href="..\ndkpi\ns-ndkpi--ndk-result.md">NDK_RESULT</a> structures that will be filled with completion results that were removed from the CQ.</p>
 </dd>
 
 ### -param <i>nResults</i> [in]
@@ -84,8 +84,6 @@ ULONG NdkGetCqResults(
 <p>Zero means there were no completions in the CQ.</p>
 
 ## -remarks
-<p><i>NdkGetCqResults</i> removes completions from a completion queue (CQ).</p>
-
 <p><i>NdkGetCqResults</i> removes completions from a completion queue (CQ).</p>
 
 ## -requirements
@@ -137,13 +135,13 @@ ULONG NdkGetCqResults(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439854">NDK_CQ</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-cq.md">NDK_CQ</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439855">NDK_CQ_DISPATCH</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-cq-dispatch.md">NDK_CQ_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439935">NDK_RESULT</a>
+<a href="..\ndkpi\ns-ndkpi--ndk-result.md">NDK_RESULT</a>
 </dt>
 <dt>
 <a href="NULL">NDKPI Completion Handling Requirements</a>
@@ -151,4 +149,4 @@ ULONG NdkGetCqResults(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_GET_CQ_RESULTS callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_GET_CQ_RESULTS callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

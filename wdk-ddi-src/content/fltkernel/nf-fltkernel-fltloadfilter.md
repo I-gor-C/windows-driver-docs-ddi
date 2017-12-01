@@ -57,7 +57,7 @@ NTSTATUS FltLoadFilter(
 ### -param <i>FilterName</i> [in]
 
 <dd>
-<p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure containing the service name for the minifilter driver. </p>
+<p>Pointer to a <a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a> structure containing the service name for the minifilter driver. </p>
 </dd>
 </dl>
 
@@ -77,11 +77,7 @@ NTSTATUS FltLoadFilter(
 ## -remarks
 <p>A minifilter driver that has a dependency on another minifilter driver can load that minifilter driver by calling <b>FltLoadFilter</b>. </p>
 
-<p>To unload the supporting minifilter driver, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544602">FltUnloadFilter</a>. </p>
-
-<p>A minifilter driver that has a dependency on another minifilter driver can load that minifilter driver by calling <b>FltLoadFilter</b>. </p>
-
-<p>To unload the supporting minifilter driver, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544602">FltUnloadFilter</a>. </p>
+<p>To unload the supporting minifilter driver, call <a href="..\fltkernel\nf-fltkernel-fltunloadfilter.md">FltUnloadFilter</a>. </p>
 
 ## -requirements
 <table>
@@ -138,10 +134,10 @@ NTSTATUS FltLoadFilter(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544602">FltUnloadFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltunloadfilter.md">FltUnloadFilter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm--unicode-string.md">UNICODE_STRING</a>
 </dt>
 </dl>
 <p> </p>

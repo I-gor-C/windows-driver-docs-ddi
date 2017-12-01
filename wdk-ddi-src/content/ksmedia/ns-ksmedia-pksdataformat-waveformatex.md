@@ -7,7 +7,7 @@ old-location: audio\ksdataformat_waveformatex.htm
 old-project: audio
 ms.assetid: b4c0cca8-6277-4458-b1f1-894848987074
 ms.author: windowsdriverdev
-ms.date: 11/21/2017
+ms.date: 11/28/2017
 ms.keywords: PKSDATAFORMAT_WAVEFORMATEX, KSDATAFORMAT_WAVEFORMATEX, *PKSDATAFORMAT_WAVEFORMATEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,14 +64,14 @@ typedef struct {
 ### -field <b>WaveFormatEx</b>
 
 <dd>
-<p>Describes the wave-specific details of the audio stream's data format. This member contains an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a> structure.</p>
+<p>Describes the wave-specific details of the audio stream's data format. This member contains an initialized <a href="audio.waveformatex">WAVEFORMATEX</a> structure.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>In response to an input <i>DataRange</i> parameter that specifies a WAVEFORMATEX format (see example in <a href="NULL">PCM Stream Data Range</a>), the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536764">IMiniport::DataRangeIntersection</a> method checks to see if the specified pin supports a compatible WAVEFORMATEX format. If so, the method outputs a KSDATAFORMAT_WAVEFORMATEX structure (see example in <a href="NULL">PCM Stream Data Format</a>) to the buffer that its <i>ResultantFormat</i> parameter points to.</p>
+<p>In response to an input <i>DataRange</i> parameter that specifies a WAVEFORMATEX format (see example in <a href="NULL">PCM Stream Data Range</a>), the <a href="audio.iminiport_datarangeintersection">IMiniport::DataRangeIntersection</a> method checks to see if the specified pin supports a compatible WAVEFORMATEX format. If so, the method outputs a KSDATAFORMAT_WAVEFORMATEX structure (see example in <a href="NULL">PCM Stream Data Format</a>) to the buffer that its <i>ResultantFormat</i> parameter points to.</p>
 
-<p>Note that the <b>WaveFormatEx</b> member of the KSDATAFORMAT_WAVEFORMATEX structure can be extended to include additional format information (for example, a channel configuration mask). For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538802">WAVEFORMATEXTENSIBLE</a>.</p>
+<p>Note that the <b>WaveFormatEx</b> member of the KSDATAFORMAT_WAVEFORMATEX structure can be extended to include additional format information (for example, a channel configuration mask). For more information, see <a href="audio.waveformatextensible">WAVEFORMATEXTENSIBLE</a>.</p>
 
 ## -requirements
 <table>
@@ -91,15 +91,15 @@ typedef struct {
 <dl>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff561656(v=vs.85).aspx">KSDATAFORMAT</a></dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a>
+<a href="audio.waveformatex">WAVEFORMATEX</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538802">WAVEFORMATEXTENSIBLE</a>
+<a href="audio.waveformatextensible">WAVEFORMATEXTENSIBLE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536764">IMiniport::DataRangeIntersection</a>
+<a href="audio.iminiport_datarangeintersection">IMiniport::DataRangeIntersection</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSDATAFORMAT_WAVEFORMATEX structure%20 RELEASE:%20(11/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSDATAFORMAT_WAVEFORMATEX structure%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

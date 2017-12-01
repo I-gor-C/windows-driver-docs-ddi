@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>DestroyCryptoSession</b> function releases resources for the encryption session that the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function creates. </p>
+<p>The <b>DestroyCryptoSession</b> function releases resources for the encryption session that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a> function creates. </p>
 
 
 ## -prototype
@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY DestroyCryptoSession(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543028">D3DDDIARG_DESTROYCRYPTOSESSION</a> structure that contains one member that specifies the handle to the encryption session to destroy. </p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-destroycryptosession.md">D3DDDIARG_DESTROYCRYPTOSESSION</a> structure that contains one member that specifies the handle to the encryption session to destroy. </p>
 </dd>
 </dl>
 
@@ -77,7 +77,7 @@ __checkReturn HRESULT APIENTRY DestroyCryptoSession(
 </dl><p>The encryption session is successfully destroyed. </p><dl>
 <dt><b>E_OUTOFMEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451632">DestroyCryptoSession</a> could not allocate the required memory for it to complete.</p>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-destroycryptosession.md">DestroyCryptoSession</a> could not allocate the required memory for it to complete.</p>
 
 <p> </p>
 
@@ -119,10 +119,10 @@ __checkReturn HRESULT APIENTRY DestroyCryptoSession(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi-createcryptosession.md">CreateCryptoSession</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543028">D3DDDIARG_DESTROYCRYPTOSESSION</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-destroycryptosession.md">D3DDDIARG_DESTROYCRYPTOSESSION</a>
 </dt>
 </dl>
 <p> </p>

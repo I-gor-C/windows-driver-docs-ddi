@@ -63,7 +63,7 @@ HBA_STATUS HBA_API HBA_RegisterForAdapterPortStatEvents(
 ### -param <i>callback</i> 
 
 <dd>
-<p>Pointer to a callback routine of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557117">HBA_PORTSTAT_CALLBACK</a> that is called when an adapter is added to the system.</p>
+<p>Pointer to a callback routine of type <a href="storage.hba_portstat_callback">HBA_PORTSTAT_CALLBACK</a> that is called when an adapter is added to the system.</p>
 </dd>
 
 ### -param <i>userData</i> 
@@ -75,7 +75,7 @@ HBA_STATUS HBA_API HBA_RegisterForAdapterPortStatEvents(
 ### -param <i>handle</i> 
 
 <dd>
-<p>Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA for which the adapter events are generated. </p>
+<p>Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a> that identifies the HBA for which the adapter events are generated. </p>
 </dd>
 
 ### -param <i>PortWWN</i> 
@@ -87,7 +87,7 @@ HBA_STATUS HBA_API HBA_RegisterForAdapterPortStatEvents(
 ### -param <i>stats</i> 
 
 <dd>
-<p>Pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557110">HBA_PortStatistics</a> that, on input, holds the statistical levels that determine when port statistics events are generated. On output, this member holds statistical data gathered for the port referenced by <i>PortWWN. </i></p>
+<p>Pointer to a structure of type <a href="..\hbaapi\ns-hbaapi-hba-portstatistics.md">HBA_PortStatistics</a> that, on input, holds the statistical levels that determine when port statistics events are generated. On output, this member holds statistical data gathered for the port referenced by <i>PortWWN. </i></p>
 </dd>
 
 ### -param <i>statType</i> 
@@ -100,12 +100,12 @@ HBA_STATUS HBA_API HBA_RegisterForAdapterPortStatEvents(
 ### -param <i>callbackHandle</i> 
 
 <dd>
-<p>Pointer to an opaque identifier that the user must pass to <a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a> to de-register the callback routine.</p>
+<p>Pointer to an opaque identifier that the user must pass to <a href="..\hbaapi\nf-hbaapi-hba-removecallback.md">HBA_RemoveCallback</a> to de-register the callback routine.</p>
 </dd>
 </dl>
 
 ## -returns
-<p>The <b>HBA_RegisterForAdapterPortStatEvents</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, this member should have one of the following values.</p><dl>
+<p>The <b>HBA_RegisterForAdapterPortStatEvents</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, this member should have one of the following values.</p><dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl><p>Returned if the callback routine was successfully registered. </p><dl>
 <dt><b>HBA_STATUS_ERROR_ILLEGAL_WWN</b></dt>
@@ -167,16 +167,16 @@ HBA_STATUS HBA_API HBA_RegisterForAdapterPortStatEvents(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba-openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557117">HBA_PORTSTAT_CALLBACK</a>
+<a href="storage.hba_portstat_callback">HBA_PORTSTAT_CALLBACK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557110">HBA_PortStatistics</a>
+<a href="..\hbaapi\ns-hbaapi-hba-portstatistics.md">HBA_PortStatistics</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="storage.hba_status">HBA_STATUS</a>
 </dt>
 </dl>
 <p> </p>

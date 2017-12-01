@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTCreateContextVirtual(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn906791">D3DKMT_CREATECONTEXTVIRTUAL</a> structure that describes the kernel-mode device context.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createcontextvirtual.md">D3DKMT_CREATECONTEXTVIRTUAL</a> structure that describes the kernel-mode device context.</p>
 </dd>
 </dl>
 
@@ -142,7 +142,7 @@ NTSTATUS APIENTRY D3DKMTCreateContextVirtual(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn906791">D3DKMT_CREATECONTEXTVIRTUAL</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-createcontextvirtual.md">D3DKMT_CREATECONTEXTVIRTUAL</a>
 </dt>
 </dl>
 <p> </p>

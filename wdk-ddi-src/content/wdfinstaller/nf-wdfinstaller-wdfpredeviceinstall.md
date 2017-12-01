@@ -7,7 +7,7 @@ old-location: wdf\wdfpredeviceinstall.htm
 old-project: wdf
 ms.assetid: 2da4b4ea-1cbb-43f7-9001-44b07a3e9ef7
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WdfPreDeviceInstall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,17 +74,7 @@ ULONG WdfPreDeviceInstall(
 <p><b>WdfPreDeviceInstall</b> returns <b>ERROR_SUCCESS</b> if the operation succeeds. Otherwise, the function returns one of the additional <b>ERROR_XXX</b> values that are defined in Winerror.h.</p>
 
 ## -remarks
-<p>The installer for the framework-based drivers of a non-PnP device must call <b>WdfPreDeviceInstall</b> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548839">WdfPreDeviceInstallEx</a> before the installer calls <a href="base.createservice">CreateService</a>.</p>
-
-<p>To obtain the address of the co-installer's <b>WdfPreDeviceInstall</b> function, the installer must call <a href="base.getprocaddress">GetProcAddress</a> after the installer has called <a href="base.loadlibrary">LoadLibrary</a> to load the co-installer.</p>
-
-<p>If the co-installer determines that the computer must be restarted to complete the driver installation (typically because an older version of the framework was previously installed), <b>WdfPreDeviceInstall</b> informs the Plug and Play (PnP) manager. The PnP manager then prompts the user that a restart is necessary. </p>
-
-<p>For more information about the <b>WdfPreDeviceInstall</b> function and installers for framework-based drivers of non-PnP devices, see <a href="wdf.installing_a_non_pnp_driver">Installing a Non-PnP Driver</a>. For more information about <a href="base.createservice">CreateService</a>, <a href="base.getprocaddress">GetProcAddress</a>, and <a href="base.loadlibrary">LoadLibrary</a>, see the Microsoft Windows SDK documentation.</p>
-
-<p>For a code example that uses the <b>WdfPreDeviceInstall</b> function, see the installer for the <a href="wdf.sample_kmdf_drivers">NONPNP</a> sample.</p>
-
-<p>The installer for the framework-based drivers of a non-PnP device must call <b>WdfPreDeviceInstall</b> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548839">WdfPreDeviceInstallEx</a> before the installer calls <a href="base.createservice">CreateService</a>.</p>
+<p>The installer for the framework-based drivers of a non-PnP device must call <b>WdfPreDeviceInstall</b> or <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a> before the installer calls <a href="base.createservice">CreateService</a>.</p>
 
 <p>To obtain the address of the co-installer's <b>WdfPreDeviceInstall</b> function, the installer must call <a href="base.getprocaddress">GetProcAddress</a> after the installer has called <a href="base.loadlibrary">LoadLibrary</a> to load the co-installer.</p>
 
@@ -139,9 +129,9 @@ ULONG WdfPreDeviceInstall(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548829">WdfPostDeviceInstall</a>
+<a href="..\wdfinstaller\nf-wdfinstaller-wdfpostdeviceinstall.md">WdfPostDeviceInstall</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPreDeviceInstall function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPreDeviceInstall function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

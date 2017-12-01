@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The SETRESULT_INFO structure is used as an input parameter to an application's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a>-typed callback function. </p>
+<p>The SETRESULT_INFO structure is used as an input parameter to an application's <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed callback function. </p>
 
 
 ## -syntax
@@ -83,7 +83,7 @@ typedef struct _SETRESULT_INFO {
 </dl>
 
 ## -remarks
-<p>When an application calls CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function, specifying a function code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff547087">CPSFUNC_SET_RESULT</a>, CPSUI calls all registered <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a>-typed functions, specifying a reason of PROPSHEETUI_REASON_SET_RESULT. When specifying this reason, CPSUI also supplies a SETRESULT_INFO structure.</p>
+<p>When an application calls CPSUI's <a href="print.compropsheet">ComPropSheet</a> function, specifying a function code of <a href="print.cpsfunc_set_result">CPSFUNC_SET_RESULT</a>, CPSUI calls all registered <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed functions, specifying a reason of PROPSHEETUI_REASON_SET_RESULT. When specifying this reason, CPSUI also supplies a SETRESULT_INFO structure.</p>
 
 <p>The values contained in the structure's <b>hSetResult</b> and <b>Result</b> members are the <i>lParam1</i> and <i>lParam2</i> values, respectively, that were supplied to CPSUI's <b>ComPropSheet</b> function.</p>
 

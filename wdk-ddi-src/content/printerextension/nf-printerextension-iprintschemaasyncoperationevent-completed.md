@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Is called when asynchronous PrintSchema operation that is represented by an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451224">IPrintSchemaAsyncOperation</a> context is completed.</p>
+<p>Is called when asynchronous PrintSchema operation that is represented by an <a href="..\printerextension\nn-printerextension-iprintschemaasyncoperation.md">IPrintSchemaAsyncOperation</a> context is completed.</p>
 
 
 ## -syntax
@@ -73,8 +73,6 @@ HRESULT Completed(
 <p>This method returns an <b>HRESULT</b> value.</p>
 
 ## -remarks
-<p>The print ticket passed to the <b>Completed</b> method is the final validated, merged, or committed print ticket.</p>
-
 <p>The print ticket passed to the <b>Completed</b> method is the final validated, merged, or committed print ticket.</p>
 
 ## -requirements
@@ -112,10 +110,10 @@ HRESULT Completed(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451211">IPrintSchemaAsyncOperationEvent</a>
+<a href="..\printerextension\nn-printerextension-iprintschemaasyncoperationevent.md">IPrintSchemaAsyncOperationEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>
+<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
 </dt>
 </dl>
 <p> </p>

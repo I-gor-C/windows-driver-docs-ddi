@@ -7,7 +7,7 @@ old-location: stream\avstrminipindisconnect.htm
 old-project: stream
 ms.assetid: 64bcbc05-8dbd-4f97-afbb-dadd44b60078
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>An AVStream minidriver's <i>AVStrMiniPinDisconnect</i> routine is called when the relevant <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> is serving as a sink pin and this sink pin is disconnected from an AVStream source pin.</p>
+<p>An AVStream minidriver's <i>AVStrMiniPinDisconnect</i> routine is called when the relevant <a href="..\ks\ns-ks--kspin.md">KSPIN</a> is serving as a sink pin and this sink pin is disconnected from an AVStream source pin.</p>
 
 
 ## -prototype
@@ -60,7 +60,7 @@ void AVStrMiniPinDisconnect(
 ### -param <i>Pin</i> [in]
 
 <dd>
-<p>Pointer to the relevant <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a>, serving as a sink pin.</p>
+<p>Pointer to the relevant <a href="..\ks\ns-ks--kspin.md">KSPIN</a>, serving as a sink pin.</p>
 </dd>
 </dl>
 
@@ -68,13 +68,7 @@ void AVStrMiniPinDisconnect(
 <p>None</p>
 
 ## -remarks
-<p>The minidriver specifies this routine's address in the <b>Disconnect</b> member of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff563535">KSPIN_DISPATCH</a> structure.</p>
-
-<p>This routine is optional.</p>
-
-<p>Also see <a href="NULL">KS Pins</a>.</p>
-
-<p>The minidriver specifies this routine's address in the <b>Disconnect</b> member of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff563535">KSPIN_DISPATCH</a> structure.</p>
+<p>The minidriver specifies this routine's address in the <b>Disconnect</b> member of its <a href="..\ks\ns-ks--kspin-dispatch.md">KSPIN_DISPATCH</a> structure.</p>
 
 <p>This routine is optional.</p>
 
@@ -115,9 +109,9 @@ void AVStrMiniPinDisconnect(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563535">KSPIN_DISPATCH</a>
+<a href="..\ks\ns-ks--kspin-dispatch.md">KSPIN_DISPATCH</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniPinDisconnect routine%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniPinDisconnect routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

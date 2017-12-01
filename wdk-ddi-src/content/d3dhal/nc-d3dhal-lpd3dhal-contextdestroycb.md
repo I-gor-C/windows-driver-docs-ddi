@@ -60,7 +60,7 @@ DWORD APIENTRY D3dContextDestroy(
 ### -param <i>pcdd</i> [in]
 
 <dd>
-<p>Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544748">D3DHAL_CONTEXTDESTROYDATA</a> structure that contains the information required for the driver to destroy the context. </p>
+<p>Points to a <a href="..\d3dhal\ns-d3dhal--d3dhal-contextdestroydata.md">D3DHAL_CONTEXTDESTROYDATA</a> structure that contains the information required for the driver to destroy the context. </p>
 </dd>
 </dl>
 
@@ -93,31 +93,9 @@ DWORD APIENTRY D3dContextDestroy(
 
 <p>The driver should not free the Microsoft DirectDraw surfaces associated with the context because these will be freed by DirectDraw in response to an application or Direct3D runtime request.</p>
 
-<p>If the driver cached the pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550595">DD_DIRECTDRAW_LOCAL</a> structure that was passed in as the <b>lpDDLcl</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544739">D3DHAL_CONTEXTCREATEDATA</a> structure when <a href="..\d3dhal\nc-d3dhal-lpd3dhal-contextcreatecb.md">D3dContextCreate</a> was called, the pointer might become invalid before <b>D3dContextDestroy</b> is called. Therefore, <b>D3dContextDestroy</b> must not dereference this DD_DIRECTDRAW_LOCAL pointer because an access violation might result or random data might be returned. For example, if the driver's <a href="display.d3ddestroyddlocal">D3dDestroyDDLocal</a> function is called before <b>D3dContextDestroy</b>, the operating system releases this DD_DIRECTDRAW_LOCAL pointer before the <b>D3dContextDestroy</b> call.</p>
+<p>If the driver cached the pointer to the <a href="display.dd_directdraw_local">DD_DIRECTDRAW_LOCAL</a> structure that was passed in as the <b>lpDDLcl</b> member of the <a href="..\d3dhal\ns-d3dhal--d3dhal-contextcreatedata.md">D3DHAL_CONTEXTCREATEDATA</a> structure when <a href="..\d3dhal\nc-d3dhal-lpd3dhal-contextcreatecb.md">D3dContextCreate</a> was called, the pointer might become invalid before <b>D3dContextDestroy</b> is called. Therefore, <b>D3dContextDestroy</b> must not dereference this DD_DIRECTDRAW_LOCAL pointer because an access violation might result or random data might be returned. For example, if the driver's <a href="display.d3ddestroyddlocal">D3dDestroyDDLocal</a> function is called before <b>D3dContextDestroy</b>, the operating system releases this DD_DIRECTDRAW_LOCAL pointer before the <b>D3dContextDestroy</b> call.</p>
 
-<p><b>D3dContextDestroy</b> can be called with a disabled <a href="wdkgloss.p#wdkgloss.pdev#wdkgloss.pdev"><i>PDEV</i></a>. A PDEV is disabled or enabled by calling the display driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556178">DrvAssertMode</a> function. See <a href="https://msdn.microsoft.com/f7badbe8-b24f-438a-8937-95bb98de6310">Managing PDEVs</a> for more information. </p>
-
-<p>All Microsoft Direct3D drivers must support <b>D3dContextDestroy</b>.</p>
-
-<p>The driver should free all resources it allocated to the context that is being deleted. For example, the driver should free the following resources it associated with the context: </p>
-
-<p>Texture resources</p>
-
-<p>Vertex and pixel <a href="https://msdn.microsoft.com/23b38ffb-ce15-4e61-bf7f-7f71848e077f">shaders</a>
-</p>
-
-<p>
-<a href="https://msdn.microsoft.com/6da26a8f-553b-4995-9dda-66a7fd6d478b">Declarations and code for vertex shaders</a>
-</p>
-
-<p>Resources for <a href="https://msdn.microsoft.com/fe7dff3b-8941-4ab1-9539-0be9b59af5e6">asynchronous queries</a>
-</p>
-
-<p>The driver should not free the Microsoft DirectDraw surfaces associated with the context because these will be freed by DirectDraw in response to an application or Direct3D runtime request.</p>
-
-<p>If the driver cached the pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550595">DD_DIRECTDRAW_LOCAL</a> structure that was passed in as the <b>lpDDLcl</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544739">D3DHAL_CONTEXTCREATEDATA</a> structure when <a href="..\d3dhal\nc-d3dhal-lpd3dhal-contextcreatecb.md">D3dContextCreate</a> was called, the pointer might become invalid before <b>D3dContextDestroy</b> is called. Therefore, <b>D3dContextDestroy</b> must not dereference this DD_DIRECTDRAW_LOCAL pointer because an access violation might result or random data might be returned. For example, if the driver's <a href="display.d3ddestroyddlocal">D3dDestroyDDLocal</a> function is called before <b>D3dContextDestroy</b>, the operating system releases this DD_DIRECTDRAW_LOCAL pointer before the <b>D3dContextDestroy</b> call.</p>
-
-<p><b>D3dContextDestroy</b> can be called with a disabled <a href="wdkgloss.p#wdkgloss.pdev#wdkgloss.pdev"><i>PDEV</i></a>. A PDEV is disabled or enabled by calling the display driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556178">DrvAssertMode</a> function. See <a href="https://msdn.microsoft.com/f7badbe8-b24f-438a-8937-95bb98de6310">Managing PDEVs</a> for more information. </p>
+<p><b>D3dContextDestroy</b> can be called with a disabled <a href="wdkgloss.p#wdkgloss.pdev#wdkgloss.pdev"><i>PDEV</i></a>. A PDEV is disabled or enabled by calling the display driver's <a href="display.drvassertmode">DrvAssertMode</a> function. See <a href="https://msdn.microsoft.com/f7badbe8-b24f-438a-8937-95bb98de6310">Managing PDEVs</a> for more information. </p>
 
 ## -requirements
 <table>
@@ -152,13 +130,13 @@ DWORD APIENTRY D3dContextDestroy(
 <a href="display.d3ddestroyddlocal">D3dDestroyDDLocal</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544739">D3DHAL_CONTEXTCREATEDATA</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-contextcreatedata.md">D3DHAL_CONTEXTCREATEDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544748">D3DHAL_CONTEXTDESTROYDATA</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-contextdestroydata.md">D3DHAL_CONTEXTDESTROYDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550595">DD_DIRECTDRAW_LOCAL</a>
+<a href="display.dd_directdraw_local">DD_DIRECTDRAW_LOCAL</a>
 </dt>
 </dl>
 <p> </p>

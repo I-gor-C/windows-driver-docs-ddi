@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The <b>HidP_GetData</b> routine returns, for a specified report, an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539699">HIDP_DATA</a> structures that identify the <a href="NULL">data indices</a> of all HID control buttons that are currently set to ON (1), and the data indices and data associated with all HID control values.</p>
+<p>The <b>HidP_GetData</b> routine returns, for a specified report, an array of <a href="..\hidpi\ns-hidpi--hidp-data.md">HIDP_DATA</a> structures that identify the <a href="NULL">data indices</a> of all HID control buttons that are currently set to ON (1), and the data indices and data associated with all HID control values.</p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ NTSTATUS __stdcall HidP_GetData(
 ### -param <i>ReportType</i> [in]
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.</p>
+<p>Specifies a <a href="..\hidpi\ne-hidpi--hidp-report-type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.</p>
 </dd>
 
 ### -param <i>DataList</i> [out]
@@ -92,7 +92,7 @@ NTSTATUS __stdcall HidP_GetData(
 ### -param <i>ReportLength</i> [in]
 
 <dd>
-<p>Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a> in the collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.</p>
+<p>Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type returned by <a href="..\hidpi\nf-hidpi-hidp-getcaps.md">HidP_GetCaps</a> in the collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure.</p>
 </dd>
 </dl>
 
@@ -105,7 +105,7 @@ NTSTATUS __stdcall HidP_GetData(
 <dt><b>HIDP_STATUS_INVALID_PREPARSED_DATA</b></dt>
 </dl><p>The preparsed data specified by <i>PreparsedData</i> is not valid</p><dl>
 <dt><b>HIDP_STATUS_INVALID_REPORT_LENGTH</b></dt>
-</dl><p>The size, in bytes, of the HID report is not equal to the length specified in the collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure for the specified report type.</p><dl>
+</dl><p>The size, in bytes, of the HID report is not equal to the length specified in the collection's <a href="..\hidpi\ns-hidpi--hidp-caps.md">HIDP_CAPS</a> structure for the specified report type.</p><dl>
 <dt><b>HIDP_STATUS_REPORT_DOES_NOT_EXIST</b></dt>
 </dl><p>The top-level collection does not have a report of the specified type.</p><dl>
 <dt><b>HIDP_STATUS_BUFFER_TOO_SMALL</b></dt>
@@ -114,13 +114,7 @@ NTSTATUS __stdcall HidP_GetData(
 <p> </p>
 
 ## -remarks
-<p>User-mode applications and kernel-mode drivers call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539768">HidP_MaxDataListLength</a> to determine the maximum possible number of HIDP_DATA structures that <b>HidP_GetData</b> can return.</p>
-
-<p><b>HidP_GetData</b> does not return data for <a href="hid.value_capability_arrays#usage_value_array#usage_value_array">usage value arrays</a>.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>. </p>
-
-<p>User-mode applications and kernel-mode drivers call <a href="https://msdn.microsoft.com/library/windows/hardware/ff539768">HidP_MaxDataListLength</a> to determine the maximum possible number of HIDP_DATA structures that <b>HidP_GetData</b> can return.</p>
+<p>User-mode applications and kernel-mode drivers call <a href="..\hidpi\nf-hidpi-hidp-maxdatalistlength.md">HidP_MaxDataListLength</a> to determine the maximum possible number of HIDP_DATA structures that <b>HidP_GetData</b> can return.</p>
 
 <p><b>HidP_GetData</b> does not return data for <a href="hid.value_capability_arrays#usage_value_array#usage_value_array">usage value arrays</a>.</p>
 
@@ -182,13 +176,13 @@ NTSTATUS __stdcall HidP_GetData(
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539699">HIDP_DATA</a>
+<a href="..\hidpi\ns-hidpi--hidp-data.md">HIDP_DATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539768">HidP_MaxDataListLength</a>
+<a href="..\hidpi\nf-hidpi-hidp-maxdatalistlength.md">HidP_MaxDataListLength</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539783">HidP_SetData</a>
+<a href="..\hidpi\nf-hidpi-hidp-setdata.md">HidP_SetData</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: bltooth\isbluetoothversionavailable.htm
 old-project: bltooth
 ms.assetid: 10662237-18b4-4f37-a704-985b2db0d689
 ms.author: windowsdriverdev
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.keywords: IBidiSpl2, UnbindDevice, IBidiSpl2::UnbindDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,9 +78,6 @@ BOOLEAN IsBluetoothVersionAvailable(
      provides is greater than or equal to the Bluetooth version number that is being requested.</p>
 
 ## -remarks
-<p>Bluetooth profile drivers should call this function before performing any operations that are not
-    supported in all Bluetooth versions.</p>
-
 <p>Bluetooth profile drivers should call this function before performing any operations that are not
     supported in all Bluetooth versions.</p>
 

@@ -67,7 +67,7 @@ __checkReturn HRESULT APIENTRY UpdateOverlay(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543400">D3DDDIARG_UPDATEOVERLAY</a> structure that describes how to reconfigure the overlay.</p>
+<p> A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-updateoverlay.md">D3DDDIARG_UPDATEOVERLAY</a> structure that describes how to reconfigure the overlay.</p>
 </dd>
 </dl>
 
@@ -87,8 +87,6 @@ __checkReturn HRESULT APIENTRY UpdateOverlay(
 <p> </p>
 
 ## -remarks
-<p>Overlays are independent from the resources that are displayed by using the overlays.</p>
-
 <p>Overlays are independent from the resources that are displayed by using the overlays.</p>
 
 ## -requirements
@@ -126,10 +124,10 @@ __checkReturn HRESULT APIENTRY UpdateOverlay(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543400">D3DDDIARG_UPDATEOVERLAY</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-updateoverlay.md">D3DDDIARG_UPDATEOVERLAY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
 <p> </p>

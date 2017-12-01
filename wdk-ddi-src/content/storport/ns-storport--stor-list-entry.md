@@ -97,34 +97,34 @@ typedef struct _STOR_LIST_ENTRY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt790428">StorPortInterlockedInsertHeadList</a>
+<a href="..\storport\nf-storport-storportinterlockedinsertheadlist.md">StorPortInterlockedInsertHeadList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt790429">StorPortInterlockedInsertTailList</a>
+<a href="..\storport\nf-storport-storportinterlockedinserttaillist.md">StorPortInterlockedInsertTailList</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt790430">StorPortInterlockedRemoveHeadList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547799">InitializeListHead</a>
+<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547820">InsertHeadList</a>
+<a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547823">InsertTailList</a>
+<a href="..\wdm\nf-wdm-inserttaillist.md">InsertTailList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551789">IsListEmpty</a>
+<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561029">RemoveEntryList</a>
+<a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561032">RemoveHeadList</a>
+<a href="..\wdm\nf-wdm-removeheadlist.md">RemoveHeadList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561036">RemoveTailList</a>
+<a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
 </dt>
 </dl>
 <p> </p>

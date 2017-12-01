@@ -7,7 +7,7 @@ old-location: netvista\ndismsynchronizewithinterruptex.htm
 old-project: netvista
 ms.assetid: 5dca9258-a3ae-43f4-a5aa-d591165d72ed
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisMSynchronizeWithInterruptEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -126,27 +126,6 @@ BOOLEAN NdisMSynchronizeWithInterruptEx(
     <a href="netvista.synchronization_and_notification_in_network_drivers">Synchronization
     and Notification in Network Drivers</a>.</p>
 
-<p>Miniport drivers that register an interrupt with
-    <b>NdisMRegisterInterruptEx</b> use
-    <b>NdisMSynchronizeWithInterruptEx</b>. The value that the 
-    <a href="..\ndis\nc-ndis-miniport-synchronize-interrupt.md">
-    MiniportSynchronizeInterrupt</a> function returns is also returned by 
-    <b>NdisMSynchronizeWithInterruptEx</b>. This propagated value provides status to the caller.</p>
-
-<p>Any miniport driver function that shares resources with any other driver function that runs at DIRQL
-    must use 
-    <b>NdisMSynchronizeWithInterruptEx</b> to synchronize its access to those resources. The 
-    <i>MiniportSynchronizeInterrupt</i> function also runs at DIRQL, and the shared resources are protected by
-    a system-allocated spin lock. Thus, the shared resources are protected from simultaneous access by the 
-    <i>MiniportInterrupt</i> function and the caller.</p>
-
-<p><b>NdisMSynchronizeWithInterruptEx</b> releases the system spin lock and restores the original IRQL of its
-    caller before it returns control.</p>
-
-<p>For more information about acquiring and releasing NDIS spin locks, see 
-    <a href="netvista.synchronization_and_notification_in_network_drivers">Synchronization
-    and Notification in Network Drivers</a>.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -200,7 +179,7 @@ BOOLEAN NdisMSynchronizeWithInterruptEx(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563575">NdisMDeregisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">NdisMDeregisterInterruptEx</a>
 </td>
 </tr>
 </table>
@@ -208,7 +187,7 @@ BOOLEAN NdisMSynchronizeWithInterruptEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550576">IO_INTERRUPT_MESSAGE_INFO</a>
+<a href="..\wdm\ns-wdm--io-interrupt-message-info.md">IO_INTERRUPT_MESSAGE_INFO</a>
 </dt>
 <dt>
 <a href="..\wdm\ns-wdm--io-interrupt-message-info-entry.md">
@@ -222,9 +201,9 @@ BOOLEAN NdisMSynchronizeWithInterruptEx(
    MiniportSynchronizeInterrupt</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563649">NdisMRegisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSynchronizeWithInterruptEx function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSynchronizeWithInterruptEx function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

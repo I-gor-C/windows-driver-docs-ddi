@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure is used in conjunction with <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve the properties of a storage device or adapter. </p>
+<p>This structure is used in conjunction with <a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve the properties of a storage device or adapter. </p>
 
 
 ## -syntax
@@ -59,13 +59,13 @@ typedef struct _STORAGE_PROPERTY_QUERY {
 ### -field <b>PropertyId</b>
 
 <dd>
-<p>Indicates whether the caller is requesting a device descriptor, an adapter descriptor, a write cache property, a device unique ID (DUID), or the device identifiers provided in the device's SCSI vital product data (VPD) page. For a list of the property IDs that can be assigned to this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>. </p>
+<p>Indicates whether the caller is requesting a device descriptor, an adapter descriptor, a write cache property, a device unique ID (DUID), or the device identifiers provided in the device's SCSI vital product data (VPD) page. For a list of the property IDs that can be assigned to this member, see <a href="storage.storage_property_id">STORAGE_PROPERTY_ID</a>. </p>
 </dd>
 
 ### -field <b>QueryType</b>
 
 <dd>
-<p>Contains flags indicating the type of query to be performed. For a list of the various query types that can be assigned to this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566998">STORAGE_QUERY_TYPE</a>. </p>
+<p>Contains flags indicating the type of query to be performed. For a list of the various query types that can be assigned to this member, see <a href="..\ntddstor\ne-ntddstor--storage-query-type.md">STORAGE_QUERY_TYPE</a>. </p>
 </dd>
 
 ### -field <b>AdditionalParameters</b>
@@ -78,11 +78,11 @@ typedef struct _STORAGE_PROPERTY_QUERY {
 ## -remarks
 <p>The results of the query can be one of 
      several structures depending on the value of the <b>PropertyId</b> member. These values are enumerated by the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a> enumeration.</p>
+     <a href="storage.storage_property_id">STORAGE_PROPERTY_ID</a> enumeration.</p>
 
 <p>If the 
      <b>QueryType</b> member is set to 
-     <b>PropertyExistsQuery</b>, then no structure is returned. For more info, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566998">STORAGE_QUERY_TYPE</a>.</p>
+     <b>PropertyExistsQuery</b>, then no structure is returned. For more info, see <a href="..\ntddstor\ne-ntddstor--storage-query-type.md">STORAGE_QUERY_TYPE</a>.</p>
 
 ## -requirements
 <table>
@@ -117,22 +117,22 @@ typedef struct _STORAGE_PROPERTY_QUERY {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl-storage-query-property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566968">STORAGE_DESCRIPTOR_HEADER</a>
+<a href="..\ntddstor\ns-ntddstor--storage-descriptor-header.md">STORAGE_DESCRIPTOR_HEADER</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566998">STORAGE_QUERY_TYPE</a>
+<a href="..\ntddstor\ne-ntddstor--storage-query-type.md">STORAGE_QUERY_TYPE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor--storage-device-descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566346">STORAGE_ADAPTER_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor--storage-adapter-descriptor.md">STORAGE_ADAPTER_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
+<a href="storage.storage_property_id">STORAGE_PROPERTY_ID</a>
 </dt>
 </dl>
 <p> </p>

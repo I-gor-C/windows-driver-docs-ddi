@@ -7,7 +7,7 @@ old-location: debugger\getkdcontext.htm
 old-project: debugger
 ms.assetid: cf795629-cf62-45fa-ad5e-e2eef576bcfd
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: GetKdContext
 ms.prod: windows-hardware
 ms.technology: windows-devices

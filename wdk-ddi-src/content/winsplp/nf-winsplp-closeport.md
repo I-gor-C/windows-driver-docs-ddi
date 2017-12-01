@@ -67,18 +67,11 @@ BOOL ClosePort(
 
 ## -remarks
 <p>
-<a href="NULL">Language monitors</a> and port monitor server DLLs are required to define a <b>ClosePort</b> function and include the function's address in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557532">MONITOR2</a> structure.</p>
+<a href="NULL">Language monitors</a> and port monitor server DLLs are required to define a <b>ClosePort</b> function and include the function's address in a <a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a> structure.</p>
 
-<p>The handle received as the function's <i>hPort</i> argument is the port handle that the monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559593">OpenPort</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559596">OpenPortEx</a> function supplied.</p>
+<p>The handle received as the function's <i>hPort</i> argument is the port handle that the monitor's <a href="..\winsplp\nf-winsplp-openport.md">OpenPort</a> or <a href="print.openportex">OpenPortEx</a> function supplied.</p>
 
-<p>The <b>ClosePort</b> function should close the port by making the received port handle invalid. It should also free all system resources that were allocated by the monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559593">OpenPort</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559596">OpenPortEx</a> function.</p>
-
-<p>
-<a href="NULL">Language monitors</a> and port monitor server DLLs are required to define a <b>ClosePort</b> function and include the function's address in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557532">MONITOR2</a> structure.</p>
-
-<p>The handle received as the function's <i>hPort</i> argument is the port handle that the monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559593">OpenPort</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559596">OpenPortEx</a> function supplied.</p>
-
-<p>The <b>ClosePort</b> function should close the port by making the received port handle invalid. It should also free all system resources that were allocated by the monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559593">OpenPort</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559596">OpenPortEx</a> function.</p>
+<p>The <b>ClosePort</b> function should close the port by making the received port handle invalid. It should also free all system resources that were allocated by the monitor's <a href="..\winsplp\nf-winsplp-openport.md">OpenPort</a> or <a href="print.openportex">OpenPortEx</a> function.</p>
 
 ## -requirements
 <table>
@@ -107,13 +100,13 @@ BOOL ClosePort(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557532">MONITOR2</a>
+<a href="..\winsplp\ns-winsplp--monitor2.md">MONITOR2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559593">OpenPort</a>
+<a href="..\winsplp\nf-winsplp-openport.md">OpenPort</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559596">OpenPortEx</a>
+<a href="print.openportex">OpenPortEx</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: debugger\readprocessorsystemdata.htm
 old-project: debugger
 ms.assetid: 8cb63fe6-61da-4c37-975d-d82430195863
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugDataSpaces3, ReadProcessorSystemData, IDebugDataSpaces3::ReadProcessorSystemData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -160,10 +160,6 @@ HRESULT ReadProcessorSystemData(
 <p>This method can also return error values.  See <a href="debugger.hresult_values">Return Values</a> for more details.</p>
 
 ## -remarks
-<p>This method is only available in kernel-mode debugging.</p>
-
-<p>For information about the PCR, PRCB, and KTHREAD structures, as well as information about paging tables, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.</p>
-
 <p>This method is only available in kernel-mode debugging.</p>
 
 <p>For information about the PCR, PRCB, and KTHREAD structures, as well as information about paging tables, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.</p>

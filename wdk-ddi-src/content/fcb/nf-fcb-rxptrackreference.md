@@ -127,17 +127,7 @@ VOID RxpTrackReference(
 ## -remarks
 <p>In checked builds, <b>RxpTrackReference</b> is used to track requests to reference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures. For retail builds, this function does nothing.</p>
 
-<p>If WMI is enabled, a log of these dereference operations is sent as a WMI event to user-mode WMI components that have requested notification. The deference request is also logged to the RDBSS logging system by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557368">_RxLog</a> routine to record an I/O error log entry if logging is enabled. </p>
-
-<p>Note that this routine does not actually reference the structure passed (increment the reference count on the structure).</p>
-
-<p>A number of macros are defined in <i>fcb.h</i> for debugging that are the preferred way to call this routine. These macros provide a wrapper around the <b>RxReference</b> or <b>RxDereference</b> routines used for file structure management operations on SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures. These macros first call the corresponding <b>RxpTrackReference</b> routine to log diagnostic information about the request before calling the corresponding <b>RxReference</b> routine.</p>
-
-<p>For retail builds, this function does nothing. </p>
-
-<p>In checked builds, <b>RxpTrackReference</b> is used to track requests to reference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures. For retail builds, this function does nothing.</p>
-
-<p>If WMI is enabled, a log of these dereference operations is sent as a WMI event to user-mode WMI components that have requested notification. The deference request is also logged to the RDBSS logging system by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557368">_RxLog</a> routine to record an I/O error log entry if logging is enabled. </p>
+<p>If WMI is enabled, a log of these dereference operations is sent as a WMI event to user-mode WMI components that have requested notification. The deference request is also logged to the RDBSS logging system by calling the <a href="..\rxlog\nf-rxlog--rxlog.md">_RxLog</a> routine to record an I/O error log entry if logging is enabled. </p>
 
 <p>Note that this routine does not actually reference the structure passed (increment the reference count on the structure).</p>
 
@@ -180,22 +170,22 @@ VOID RxpTrackReference(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553384">RxAssert</a>
+<a href="ifsk.rxassert">RxAssert</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554385">RxDbgBreakPoint</a>
+<a href="ifsk.rxdbgbreakpoint">RxDbgBreakPoint</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554388">RxDereference</a>
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554688">RxReference</a>
+<a href="..\rxprocs\nf-rxprocs-rxreference.md">RxReference</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554655">RxpTrackDereference</a>
+<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557368">_RxLog</a>
+<a href="..\rxlog\nf-rxlog--rxlog.md">_RxLog</a>
 </dt>
 </dl>
 <p> </p>

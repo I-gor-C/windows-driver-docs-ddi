@@ -81,13 +81,13 @@ typedef struct HBA_wwn {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556044">HBA_AdapterAttributes</a>
+<a href="..\hbaapi\ns-hbaapi-hba-adapterattributes.md">HBA_AdapterAttributes</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557092">HBA_MgmtInfo</a>
+<a href="..\hbaapi\ns-hbaapi-hba-mgmtinfo.md">HBA_MgmtInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557107">HBA_PortAttributes</a>
+<a href="..\hbaapi\ns-hbaapi-hba-portattributes.md">HBA_PortAttributes</a>
 </dt>
 </dl>
 <p> </p>

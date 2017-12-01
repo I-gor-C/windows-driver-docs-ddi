@@ -70,57 +70,9 @@ VOID _RxLog(
 
 <p>If logging is enabled, <b>_RxLog</b> will output a string for recording as an I/O error log entry based on the format string and number of variables passed.</p>
 
-<p>The <b>_RxLog</b> routine supports the following format string descriptors:</p><dl>
-<dd>
+<p>The <b>_RxLog</b> routine supports the following format string descriptors:</p>
+
 <p>%lN, %wN, %lS, %wS, %ld, %wd--a number</p>
-</dd>
-<dd>
-<p>%x--a hexadecimal number</p>
-</dd>
-<dd>
-<p>%c--a character</p>
-</dd>
-<dd>
-<p>%s--an ASCII string</p>
-</dd>
-<dd>
-<p>%Z--a Unicode string that contains ASCII characters</p>
-</dd>
-</dl><p>%lN, %wN, %lS, %wS, %ld, %wd--a number</p>
-
-<p>%x--a hexadecimal number</p>
-
-<p>%c--a character</p>
-
-<p>%s--an ASCII string</p>
-
-<p>%Z--a Unicode string that contains ASCII characters</p>
-
-<p>The <b>_RxLog</b> routine is limited to an output string of, at most, 48 lines, so the <i>Format</i> string cannot contain more than 48 '\n' characters. </p>
-
-<p>It is recommended that the <b>RxLog</b> macro be used to call this routine. On checked builds, the <b>RxLog</b> macro will call the <b>_RxLog</b> routine. On retail builds, the <b>RxLog</b> macro is defined to nothing.</p>
-
-<p>It is recommended that the <b>RxLog</b> macro be used instead of calling the <b>_RxLog</b> routine directly.</p>
-
-<p>If logging is enabled, <b>_RxLog</b> will output a string for recording as an I/O error log entry based on the format string and number of variables passed.</p>
-
-<p>The <b>_RxLog</b> routine supports the following format string descriptors:</p><dl>
-<dd>
-<p>%lN, %wN, %lS, %wS, %ld, %wd--a number</p>
-</dd>
-<dd>
-<p>%x--a hexadecimal number</p>
-</dd>
-<dd>
-<p>%c--a character</p>
-</dd>
-<dd>
-<p>%s--an ASCII string</p>
-</dd>
-<dd>
-<p>%Z--a Unicode string that contains ASCII characters</p>
-</dd>
-</dl><p>%lN, %wN, %lS, %wS, %ld, %wd--a number</p>
 
 <p>%x--a hexadecimal number</p>
 
@@ -169,13 +121,13 @@ VOID _RxLog(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554515">RxLogEventDirect</a>
+<a href="..\rxprocs\nf-rxprocs-rxlogeventdirect.md">RxLogEventDirect</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554519">RxLogEventWithAnnotation</a>
+<a href="..\rxprocs\nf-rxprocs-rxlogeventwithannotation.md">RxLogEventWithAnnotation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554524">RxLogEventWithBufferDirect</a>
+<a href="..\rxprocs\nf-rxprocs-rxlogeventwithbufferdirect.md">RxLogEventWithBufferDirect</a>
 </dt>
 </dl>
 <p> </p>

@@ -75,7 +75,7 @@ NTSTATUS DxgkDdiOPMCreateProtectedOutput(
 ### -param <i>NewVideoOutputSemantics</i> [in]
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560933">DXGKMDT_OPM_VIDEO_OUTPUT_SEMANTICS</a>-typed value that determines whether the new protected output has COPP or OPM semantics.</p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--dxgkmdt-opm-video-output-semantics.md">DXGKMDT_OPM_VIDEO_OUTPUT_SEMANTICS</a>-typed value that determines whether the new protected output has COPP or OPM semantics.</p>
 </dd>
 
 ### -param <i>NewProtectedOutputHandle</i> [out]
@@ -111,12 +111,6 @@ NTSTATUS DxgkDdiOPMCreateProtectedOutput(
 <p>This function might also return other error codes that are defined in Ntstatus.h.</p>
 
 ## -remarks
-<p>The following figure shows how the display miniport driver typically implements spanning mode.</p>
-
-<p>The following figure shows how the display miniport driver typically implements theater mode.</p>
-
-<p><i>DxgkDdiOPMCreateProtectedOutput</i> should be made pageable.</p>
-
 <p>The following figure shows how the display miniport driver typically implements spanning mode.</p>
 
 <p>The following figure shows how the display miniport driver typically implements theater mode.</p>
@@ -179,7 +173,7 @@ NTSTATUS DxgkDdiOPMCreateProtectedOutput(
 <a href="..\dispmprt\nc-dispmprt-dxgkddi-opm-destroy-protected-output.md">DxgkDdiOPMDestroyProtectedOutput</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560933">DXGKMDT_OPM_VIDEO_OUTPUT_SEMANTICS</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--dxgkmdt-opm-video-output-semantics.md">DXGKMDT_OPM_VIDEO_OUTPUT_SEMANTICS</a>
 </dt>
 </dl>
 <p> </p>

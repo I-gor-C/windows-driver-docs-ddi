@@ -60,13 +60,13 @@ typedef struct {
 ### -field <b>ChunkType</b>
 
 <dd>
-<p>The type of chunk that is to be processed, specified as a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265474">MIRACAST_CHUNK_TYPE</a> enumeration value.</p>
+<p>The type of chunk that is to be processed, specified as a <a href="..\netdispumdddi\ne-netdispumdddi-miracast-chunk-type.md">MIRACAST_CHUNK_TYPE</a> enumeration value.</p>
 </dd>
 
 ### -field <b>ChunkId</b>
 
 <dd>
-<p>The identifier for this chunk, of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn265472">MIRACAST_CHUNK_ID</a>.</p>
+<p>The identifier for this chunk, of type <a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-id.md">MIRACAST_CHUNK_ID</a>.</p>
 </dd>
 
 ### -field <b>ProcessingTime</b>
@@ -118,10 +118,10 @@ typedef struct {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265472">MIRACAST_CHUNK_ID</a>
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast-chunk-id.md">MIRACAST_CHUNK_ID</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265474">MIRACAST_CHUNK_TYPE</a>
+<a href="..\netdispumdddi\ne-netdispumdddi-miracast-chunk-type.md">MIRACAST_CHUNK_TYPE</a>
 </dt>
 </dl>
 <p> </p>

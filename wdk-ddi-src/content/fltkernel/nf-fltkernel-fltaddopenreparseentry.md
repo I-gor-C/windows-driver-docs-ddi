@@ -89,13 +89,7 @@ NTSTATUS FltAddOpenReparseEntry(
     for the lifetime of the open reparse entry structure, not the ECP itself,
     which is conceptually independent of any specific filter.</p>
 
-<p>Use <a href="https://msdn.microsoft.com/library/windows/hardware/mt734261">FltRemoveOpenReparseEntry</a> to remove the open reparse structure from the create operation.</p>
-
-<p>This routine adds an ECP list and/or ECP as needed.  <i>Filter</i> is referenced
-    for the lifetime of the open reparse entry structure, not the ECP itself,
-    which is conceptually independent of any specific filter.</p>
-
-<p>Use <a href="https://msdn.microsoft.com/library/windows/hardware/mt734261">FltRemoveOpenReparseEntry</a> to remove the open reparse structure from the create operation.</p>
+<p>Use <a href="..\fltkernel\nf-fltkernel-fltremoveopenreparseentry.md">FltRemoveOpenReparseEntry</a> to remove the open reparse structure from the create operation.</p>
 
 ## -requirements
 <table>
@@ -138,7 +132,7 @@ NTSTATUS FltAddOpenReparseEntry(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt734261">FltRemoveOpenReparseEntry</a>
+<a href="..\fltkernel\nf-fltkernel-fltremoveopenreparseentry.md">FltRemoveOpenReparseEntry</a>
 </dt>
 </dl>
 <p> </p>

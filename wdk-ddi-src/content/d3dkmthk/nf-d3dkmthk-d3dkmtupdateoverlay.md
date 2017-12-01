@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTUpdateOverlay(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548402">D3DKMT_UPDATEOVERLAY</a> structure that describes how to modify the overlay.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-updateoverlay.md">D3DKMT_UPDATEOVERLAY</a> structure that describes how to modify the overlay.</p>
 </dd>
 </dl>
 
@@ -71,7 +71,7 @@ NTSTATUS APIENTRY D3DKMTUpdateOverlay(
 </dl><p>Parameters were validated and determined to be incorrect.</p><dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl><p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547241">D3DKMTUpdateOverlay</a> could not complete because of insufficient memory.</p>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtupdateoverlay.md">D3DKMTUpdateOverlay</a> could not complete because of insufficient memory.</p>
 
 <p> </p>
 
@@ -135,7 +135,7 @@ NTSTATUS APIENTRY D3DKMTUpdateOverlay(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548402">D3DKMT_UPDATEOVERLAY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-updateoverlay.md">D3DKMT_UPDATEOVERLAY</a>
 </dt>
 </dl>
 <p> </p>

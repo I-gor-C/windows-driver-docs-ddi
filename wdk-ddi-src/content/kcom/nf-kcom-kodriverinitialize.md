@@ -7,7 +7,7 @@ old-location: stream\kodriverinitialize.htm
 old-project: stream
 ms.assetid: ed61d135-967d-4e7c-b437-09c9e0e6f3c2
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: KoDriverInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices

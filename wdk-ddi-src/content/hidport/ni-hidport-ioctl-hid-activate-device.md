@@ -144,7 +144,7 @@ I/O Status block
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541075">IOCTL_HID_DEACTIVATE_DEVICE</a>
+<a href="..\hidport\ni-hidport-ioctl-hid-deactivate-device.md">IOCTL_HID_DEACTIVATE_DEVICE</a>
 </dt>
 </dl>
 <p> </p>

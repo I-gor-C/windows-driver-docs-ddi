@@ -7,7 +7,7 @@ old-location: debugger\geteventprocess.htm
 old-project: debugger
 ms.assetid: 77cf1995-f3f3-4a03-bba7-9df230a10da0
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: IDebugSystemObjects3, GetEventProcess, IDebugSystemObjects3::GetEventProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,10 +69,6 @@ HRESULT GetEventProcess(
 <p> </p>
 
 ## -remarks
-<p>In kernel-mode debugging, the engine process ID for the virtual process representing the kernel is returned.</p>
-
-<p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details about debugger engine events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>
-
 <p>In kernel-mode debugging, the engine process ID for the virtual process representing the kernel is returned.</p>
 
 <p>For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details about debugger engine events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.</p>

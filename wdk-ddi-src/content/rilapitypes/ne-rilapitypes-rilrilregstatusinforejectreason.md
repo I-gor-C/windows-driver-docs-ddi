@@ -7,7 +7,7 @@ old-location: netvista\rilrilregstatusinforejectreason_2.htm
 old-project: netvista
 ms.assetid: 5cc78c46-f426-470c-8f08-bbcf5e8fa1b8
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

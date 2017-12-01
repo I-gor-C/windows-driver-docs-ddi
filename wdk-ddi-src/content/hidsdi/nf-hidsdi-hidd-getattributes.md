@@ -64,7 +64,7 @@ BOOLEAN __stdcall HidD_GetAttributes(
 ### -param <i>Attributes</i> [out]
 
 <dd>
-<p>Pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff538868">HIDD_ATTRIBUTES</a> structure that returns the attributes of the collection specified by <i>HidDeviceObject</i>.</p>
+<p>Pointer to a caller-allocated <a href="..\hidsdi\ns-hidsdi--hidd-attributes.md">HIDD_ATTRIBUTES</a> structure that returns the attributes of the collection specified by <i>HidDeviceObject</i>.</p>
 </dd>
 </dl>
 
@@ -72,11 +72,7 @@ BOOLEAN __stdcall HidD_GetAttributes(
 <p><b>HidD_GetAttributes </b>returns <b>TRUE</b> if succeeds; otherwise, it returns <b>FALSE</b>.</p>
 
 ## -remarks
-<p>Only user-mode applications can call <b>HidD_GetAttributes</b>. Kernel-mode drivers can use <a href="https://msdn.microsoft.com/library/windows/hardware/ff541092">IOCTL_HID_GET_COLLECTION_INFORMATION</a>.</p>
-
-<p>For more information, see <a href="NULL">HID Collections</a>.</p>
-
-<p>Only user-mode applications can call <b>HidD_GetAttributes</b>. Kernel-mode drivers can use <a href="https://msdn.microsoft.com/library/windows/hardware/ff541092">IOCTL_HID_GET_COLLECTION_INFORMATION</a>.</p>
+<p>Only user-mode applications can call <b>HidD_GetAttributes</b>. Kernel-mode drivers can use <a href="..\hidclass\ni-hidclass-ioctl-hid-get-collection-information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>.</p>
 
 <p>For more information, see <a href="NULL">HID Collections</a>.</p>
 
@@ -135,10 +131,10 @@ BOOLEAN __stdcall HidD_GetAttributes(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538868">HIDD_ATTRIBUTES</a>
+<a href="..\hidsdi\ns-hidsdi--hidd-attributes.md">HIDD_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541092">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
+<a href="..\hidclass\ni-hidclass-ioctl-hid-get-collection-information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
 </dt>
 </dl>
 <p> </p>

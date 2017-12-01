@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 <p>
-   The <b>StorPortGetRequestInfo</b> routine retrieves the IO request information associated with a SCSI request block (SRB) and  returns it in a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451524">STOR_REQUEST_INFO</a> structure. 
+   The <b>StorPortGetRequestInfo</b> routine retrieves the IO request information associated with a SCSI request block (SRB) and  returns it in a <a href="storage.stor_request_info">STOR_REQUEST_INFO</a> structure. 
   </p>
 
 
@@ -74,14 +74,14 @@ ULONG StorPortGetRequestInfo(
 ### -param <i>RequestInfo</i> [out]
 
 <dd>
-<p>A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/hh451524">STOR_REQUEST_INFO</a> structure.</p>
+<p>A pointer to a caller-supplied <a href="storage.stor_request_info">STOR_REQUEST_INFO</a> structure.</p>
 </dd>
 </dl>
 
 ## -returns
 <p>The <b>StorPortGetRequestInfo</b> routine returns one of these status codes:</p><dl>
 <dt><b>STOR_STATUS_UNSUPPORTED_VERSION</b></dt>
-</dl><p>The version specified for <a href="https://msdn.microsoft.com/library/windows/hardware/hh451524">STOR_REQUEST_INFO</a> is invalid.</p><dl>
+</dl><p>The version specified for <a href="storage.stor_request_info">STOR_REQUEST_INFO</a> is invalid.</p><dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
 </dl><p>The operation was successful.</p><dl>
 <dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
@@ -90,8 +90,6 @@ ULONG StorPortGetRequestInfo(
 <p> </p>
 
 ## -remarks
-<p>The caller of <b>StorPortGetRequestInfo</b> must set the <b>Version</b> member of <i>RequestInfo</i> to STOR_REQUEST_INFO_VER_1. Otherwise, function will return STOR_STATUS_UNSUPPORTED_VERSION.</p>
-
 <p>The caller of <b>StorPortGetRequestInfo</b> must set the <b>Version</b> member of <i>RequestInfo</i> to STOR_REQUEST_INFO_VER_1. Otherwise, function will return STOR_STATUS_UNSUPPORTED_VERSION.</p>
 
 ## -requirements
@@ -137,7 +135,7 @@ ULONG StorPortGetRequestInfo(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451524">STOR_REQUEST_INFO</a>
+<a href="storage.stor_request_info">STOR_REQUEST_INFO</a>
 </dt>
 </dl>
 <p> </p>

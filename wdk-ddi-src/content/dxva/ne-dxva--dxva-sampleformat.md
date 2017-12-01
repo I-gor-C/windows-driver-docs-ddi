@@ -140,13 +140,13 @@ typedef enum _DXVA_SampleFormat {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a>
+<a href="..\dxva\ns-dxva--dxva-extendedformat.md">DXVA_ExtendedFormat</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564085">DXVA_VideoSample</a>
+<a href="..\dxva\ns-dxva--dxva-videosample.md">DXVA_VideoSample</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564092">DXVA_VideoSample2</a>
+<a href="..\dxva\ns-dxva--dxva-videosample2.md">DXVA_VideoSample2</a>
 </dt>
 </dl>
 <p> </p>

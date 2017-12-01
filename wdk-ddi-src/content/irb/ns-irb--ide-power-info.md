@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The POWER_CHANGE_INFO structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a> to request a power state change.</p>
+<p>The POWER_CHANGE_INFO structure is used in conjunction with the <a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a> to request a power state change.</p>
 
 
 ## -syntax
@@ -58,7 +58,7 @@ typedef struct _IDE_POWER_INFO {
 ### -field <b>CurrentPowerState</b>
 
 <dd>
-<p>Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559129">IDE_POWER_STATE</a> that indicates the current power state of the device.</p>
+<p>Contains an enumeration value of type <a href="..\irb\ne-irb-ide-power-state.md">IDE_POWER_STATE</a> that indicates the current power state of the device.</p>
 </dd>
 
 ### -field <b>DesiredPowerState</b>
@@ -88,10 +88,10 @@ typedef struct _IDE_POWER_INFO {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a>
+<a href="..\irb\ns-irb--ide-request-block.md">IDE_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559129">IDE_POWER_STATE</a>
+<a href="..\irb\ne-irb-ide-power-state.md">IDE_POWER_STATE</a>
 </dt>
 </dl>
 <p> </p>

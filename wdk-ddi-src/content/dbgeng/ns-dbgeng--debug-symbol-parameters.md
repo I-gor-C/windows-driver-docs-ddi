@@ -7,7 +7,7 @@ old-location: debugger\debug_symbol_parameters.htm
 old-project: debugger
 ms.assetid: c73ea2b0-e87a-4fb1-9164-ff14d43f1426
 ms.author: windowsdriverdev
-ms.date: 11/15/2017
+ms.date: 11/27/2017
 ms.keywords: DEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS, *PDEBUG_SYMBOL_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,7 +86,7 @@ typedef struct _DEBUG_SYMBOL_PARAMETERS {
 ### -field <b>Flags</b>
 
 <dd>
-<p>The symbol flags.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541692">DEBUG_SYMBOL_XXX</a> for details.</p>
+<p>The symbol flags.  See <a href="debugger.debug_symbol_xxx">DEBUG_SYMBOL_XXX</a> for details.</p>
 </dd>
 
 ### -field <b>Reserved</b>

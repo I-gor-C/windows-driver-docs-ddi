@@ -7,7 +7,7 @@ old-location: netvista\riluiccslotinfo.htm
 old-project: netvista
 ms.assetid: 4f8ed150-b378-49c3-955c-a1e69ab8c1a9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILUICCSLOTINFO, RILUICCSLOTINFO, *LPRILUICCSLOTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

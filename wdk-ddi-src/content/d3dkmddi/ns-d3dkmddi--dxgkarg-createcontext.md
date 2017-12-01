@@ -81,7 +81,7 @@ typedef struct _DXGKARG_CREATECONTEXT {
 ### -field <b>Flags</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561037">DXGK_CREATECONTEXTFLAGS</a> structure that identifies how to create the context.</p>
+<p>[in] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a> structure that identifies how to create the context.</p>
 </dd>
 
 ### -field <b>pPrivateDriverData</b>
@@ -99,7 +99,7 @@ typedef struct _DXGKARG_CREATECONTEXT {
 ### -field <b>ContextInfo</b>
 
 <dd>
-<p>[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561019">DXGK_CONTEXTINFO</a> structure that the display miniport driver populates to describe the device context.</p>
+<p>[out] A <a href="..\d3dkmddi\ns-d3dkmddi--dxgk-contextinfo.md">DXGK_CONTEXTINFO</a> structure that the display miniport driver populates to describe the device context.</p>
 </dd>
 </dl>
 
@@ -131,10 +131,10 @@ typedef struct _DXGKARG_CREATECONTEXT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561019">DXGK_CONTEXTINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-contextinfo.md">DXGK_CONTEXTINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561037">DXGK_CREATECONTEXTFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a>
 </dt>
 <dt>
 <a href="display.dxgkddicreatecontext">DxgkDdiCreateContext</a>

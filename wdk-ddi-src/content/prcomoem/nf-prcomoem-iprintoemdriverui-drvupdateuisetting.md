@@ -61,13 +61,13 @@ HRESULT DrvUpdateUISetting(
 ### -param <i>pci</i> 
 
 <dd>
-<p>Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559571">OEMUIOBJ</a> structure.</p>
+<p>Caller-supplied pointer to an <a href="..\printoem\ns-printoem--oemuiobj.md">OEMUIOBJ</a> structure.</p>
 </dd>
 
 ### -param <i>pOptItem</i> 
 
 <dd>
-<p>Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559656">OPTITEM</a> structure describing a user interface option item.</p>
+<p>Caller-supplied pointer to an <a href="..\compstui\ns-compstui--optitem.md">OPTITEM</a> structure describing a user interface option item.</p>
 </dd>
 
 ### -param <i>dwPreviousSelection</i> 
@@ -119,11 +119,7 @@ HRESULT DrvUpdateUISetting(
 <p> </p>
 
 ## -remarks
-<p>If you are providing a user interface plug-in that implements the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554173">IPrintOemUI::DocumentPropertySheets</a> method or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554165">IPrintOemUI::DevicePropertySheets</a> method, you typically also supply a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564313">_CPSUICALLBACK</a>-typed callback function to handle user modifications. This callback function must call <code>IPrintOemDriverUI::DrvUpdateUISetting</code> to inform the driver when the value associated with a user interface setting has been modified, if the value is stored in the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure (instead of the plug-in's private DEVMODEW members ) or in registry keys.</p>
-
-<p>The value specified for <i>dwMode</i> should be based on which method specified the callback function.</p>
-
-<p>If you are providing a user interface plug-in that implements the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554173">IPrintOemUI::DocumentPropertySheets</a> method or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554165">IPrintOemUI::DevicePropertySheets</a> method, you typically also supply a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564313">_CPSUICALLBACK</a>-typed callback function to handle user modifications. This callback function must call <code>IPrintOemDriverUI::DrvUpdateUISetting</code> to inform the driver when the value associated with a user interface setting has been modified, if the value is stored in the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure (instead of the plug-in's private DEVMODEW members ) or in registry keys.</p>
+<p>If you are providing a user interface plug-in that implements the <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> method or the <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> method, you typically also supply a <a href="..\compstui\nc-compstui--cpsuicallback.md">_CPSUICALLBACK</a>-typed callback function to handle user modifications. This callback function must call <code>IPrintOemDriverUI::DrvUpdateUISetting</code> to inform the driver when the value associated with a user interface setting has been modified, if the value is stored in the driver's <a href="display.devmodew">DEVMODEW</a> structure (instead of the plug-in's private DEVMODEW members ) or in registry keys.</p>
 
 <p>The value specified for <i>dwMode</i> should be based on which method specified the callback function.</p>
 

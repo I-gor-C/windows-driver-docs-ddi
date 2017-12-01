@@ -58,13 +58,13 @@ typedef struct _D3DKMDT_PREEMPTION_CAPS {
 ### -field <b>GraphicsPreemptionGranularity</b>
 
 <dd>
-<p>A  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439329">D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY</a> value that specifies the level of graphics requests  that the driver can preempt for GPU graphics  operations.</p>
+<p>A  <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-graphics-preemption-granularity.md">D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY</a> value that specifies the level of graphics requests  that the driver can preempt for GPU graphics  operations.</p>
 </dd>
 
 ### -field <b>ComputePreemptionGranularity</b>
 
 <dd>
-<p>A <a href="https://msdn.microsoft.com/library/windows/hardware/hh439326">D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY</a> value that specifies the level of graphics requests that the driver can preempt for GPU compute shader operations.</p>
+<p>A <a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-compute-preemption-granularity.md">D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY</a> value that specifies the level of graphics requests that the driver can preempt for GPU compute shader operations.</p>
 </dd>
 </dl>
 
@@ -104,13 +104,13 @@ typedef struct _D3DKMDT_PREEMPTION_CAPS {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439326">D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-compute-preemption-granularity.md">D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439329">D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY</a>
+<a href="..\d3dkmdt\ne-d3dkmdt--d3dkmdt-graphics-preemption-granularity.md">D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgk-drivercaps.md">DXGK_DRIVERCAPS</a>
 </dt>
 </dl>
 <p> </p>

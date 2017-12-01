@@ -371,19 +371,19 @@ typedef struct _D3DDeviceDesc_V1 {
 ### -field <b>dlcLightingCaps</b>
 
 <dd>
-<p>Specifies the lighting capabilities of the device. This is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548471">D3DLIGHTINGCAPS</a> structure. The driver must set the <b>dwCaps</b>, <b>dwLightingModel</b>, and <b>dwNumLights</b> members of that structure to zero.</p>
+<p>Specifies the lighting capabilities of the device. This is a <a href="..\d3dcaps\ns-d3dcaps--d3dlightingcaps.md">D3DLIGHTINGCAPS</a> structure. The driver must set the <b>dwCaps</b>, <b>dwLightingModel</b>, and <b>dwNumLights</b> members of that structure to zero.</p>
 </dd>
 
 ### -field <b>dpcLineCaps</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549034">D3DPRIMCAPS</a> structure that defines the drawing capabilities of the device for line primitives.</p>
+<p>Specifies a <a href="..\d3dcaps\ns-d3dcaps--d3dprimcaps.md">D3DPRIMCAPS</a> structure that defines the drawing capabilities of the device for line primitives.</p>
 </dd>
 
 ### -field <b>dpcTriCaps</b>
 
 <dd>
-<p>Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549034">D3DPRIMCAPS</a> structure that defines the drawing capabilities of the device for triangle primitives.</p>
+<p>Specifies a <a href="..\d3dcaps\ns-d3dcaps--d3dprimcaps.md">D3DPRIMCAPS</a> structure that defines the drawing capabilities of the device for triangle primitives.</p>
 </dd>
 
 ### -field <b>dwDeviceRenderBitDepth</b>
@@ -427,7 +427,7 @@ typedef struct _D3DDeviceDesc_V1 {
 ## -remarks
 <p>This structure has been replaced by D3DCAPS8 (see the DirectX 8.0 SDK documentation) for DirectX 8.0 and later runtimes, but is required for legacy runtime (DirectX 7.0 and earlier) compatibility. See <a href="https://msdn.microsoft.com/a03a7cbc-95be-4251-8e3a-bef4a093f03d">Reporting DirectX 8.0 Style Direct3D Capabilities</a> for details.</p>
 
-<p>The driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a> function returns this information in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545963">D3DHAL_GLOBALDRIVERDATA</a> structure that the <b>lpD3DGlobalDriverData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a> structure points to.</p>
+<p>The driver's <a href="display.drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a> function returns this information in the <a href="..\d3dhal\ns-d3dhal--d3dhal-globaldriverdata.md">D3DHAL_GLOBALDRIVERDATA</a> structure that the <b>lpD3DGlobalDriverData</b> member of the <a href="display.dd_halinfo">DD_HALINFO</a> structure points to.</p>
 
 <p>The Direct3D runtime constructs the application-level D3DDEVICEDESC7 structure (documented in the Microsoft Windows SDK documentation) from the information returned in the D3DDEVICEDESC_V1 structure and the extended capabilities queried through the driver's <a href="display.ddgetdriverinfo">DdGetDriverInfo</a> function. While some of the <b>dwDevCaps</b> flags are obsolete at the driver level, the driver must set them appropriately in order for applications to work correctly.</p>
 
@@ -448,10 +448,10 @@ typedef struct _D3DDeviceDesc_V1 {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548471">D3DLIGHTINGCAPS</a>
+<a href="..\d3dcaps\ns-d3dcaps--d3dlightingcaps.md">D3DLIGHTINGCAPS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549034">D3DPRIMCAPS</a>
+<a href="..\d3dcaps\ns-d3dcaps--d3dprimcaps.md">D3DPRIMCAPS</a>
 </dt>
 <dt>
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
@@ -460,13 +460,13 @@ typedef struct _D3DDeviceDesc_V1 {
 <a href="display.ddgetdriverinfo">DdGetDriverInfo</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545963">D3DHAL_GLOBALDRIVERDATA</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-globaldriverdata.md">D3DHAL_GLOBALDRIVERDATA</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a>
+<a href="display.dd_halinfo">DD_HALINFO</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a>
+<a href="display.drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a>
 </dt>
 </dl>
 <p> </p>

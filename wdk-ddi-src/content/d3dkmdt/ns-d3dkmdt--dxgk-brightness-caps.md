@@ -90,7 +90,7 @@ Setting this member is equivalent to setting the remaining 30 bits (0xFFFFFFFC) 
 </dl>
 
 ## -remarks
-<p>Do not assume that the <b>SmoothBrightness</b> members of <a href="https://msdn.microsoft.com/library/windows/hardware/jj128361">DXGK_BRIGHTNESS_STATE</a> and <b>DXGK_BRIGHTNESS_CAPS</b> are the same. <b>DXGK_BRIGHTNESS_STATE</b>.<b>SmoothBrightness</b> is used to enable  smooth brightness control on an integrated display panel. <b>DXGK_BRIGHTNESS_CAPS</b>.<b>SmoothBrightness</b> is used to query smooth brightness control capabilities of the integrated display panel.</p>
+<p>Do not assume that the <b>SmoothBrightness</b> members of <a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-state.md">DXGK_BRIGHTNESS_STATE</a> and <b>DXGK_BRIGHTNESS_CAPS</b> are the same. <b>DXGK_BRIGHTNESS_STATE</b>.<b>SmoothBrightness</b> is used to enable  smooth brightness control on an integrated display panel. <b>DXGK_BRIGHTNESS_CAPS</b>.<b>SmoothBrightness</b> is used to query smooth brightness control capabilities of the integrated display panel.</p>
 
 ## -requirements
 <table>
@@ -125,7 +125,7 @@ Setting this member is equivalent to setting the remaining 30 bits (0xFFFFFFFC) 
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj128361">DXGK_BRIGHTNESS_STATE</a>
+<a href="..\d3dkmdt\ns-d3dkmdt--dxgk-brightness-state.md">DXGK_BRIGHTNESS_STATE</a>
 </dt>
 <dt>
 <a href="..\dispmprt\nc-dispmprt-dxgk-brightness-get-caps.md">DxgkDdiGetBrightnessCaps</a>

@@ -84,8 +84,6 @@ VOID APIENTRY* pfnResourceBarrier(
 ## -remarks
 <p>Access this callback function by using a command list functions structure, such as the <b>D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_0020</b> structure. </p>
 
-<p>Access this callback function by using a command list functions structure, such as the <b>D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_0020</b> structure. </p>
-
 ## -requirements
 <table>
 <tr>

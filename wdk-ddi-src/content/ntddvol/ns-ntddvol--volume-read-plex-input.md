@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>This structure is used in conjunction with <a href="https://msdn.microsoft.com/library/windows/hardware/ff561442">IOCTL_VOLUME_READ_PLEX</a> to read data from a specific <a href="wdkgloss.p#wdkgloss.plex#wdkgloss.plex"><i>plex</i></a> in a volume. </p>
+<p>This structure is used in conjunction with <a href="..\ntddvol\ni-ntddvol-ioctl-volume-read-plex.md">IOCTL_VOLUME_READ_PLEX</a> to read data from a specific <a href="wdkgloss.p#wdkgloss.plex#wdkgloss.plex"><i>plex</i></a> in a volume. </p>
 
 
 ## -syntax
@@ -95,7 +95,7 @@ typedef struct _VOLUME_READ_PLEX_INPUT {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561442">IOCTL_VOLUME_READ_PLEX</a>
+<a href="..\ntddvol\ni-ntddvol-ioctl-volume-read-plex.md">IOCTL_VOLUME_READ_PLEX</a>
 </dt>
 </dl>
 <p> </p>

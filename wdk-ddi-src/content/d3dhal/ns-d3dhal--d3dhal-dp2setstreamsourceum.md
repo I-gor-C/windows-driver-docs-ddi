@@ -76,7 +76,7 @@ typedef struct _D3DHAL_DP2SETSTREAMSOURCEUM {
 
 <p>DirectX 8.0 does not support multiple vertex streams with user supplied buffers rather than vertex buffers. Additionally, it is not possible to mix user memory buffers with vertex buffers. When a user memory buffer is supplied, it is guaranteed to be stream zero and to be the only stream that should be accessed by subsequent drawing primitives. It is possible that other streams have non-NULL vertex buffers bound to them at the time when a user memory buffer is bound to stream. However, those other streams must be ignored by the driver and hardware.</p>
 
-<p>The actual user memory pointer to the vertex data should be extracted from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545957">D3DHAL_DRAWPRIMITIVES2DATA</a> passed when actually drawing primitives.</p>
+<p>The actual user memory pointer to the vertex data should be extracted from the <a href="..\d3dhal\ns-d3dhal--d3dhal-drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a> passed when actually drawing primitives.</p>
 
 ## -requirements
 <table>
@@ -99,10 +99,10 @@ typedef struct _D3DHAL_DP2SETSTREAMSOURCEUM {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545798">D3DHAL_DP2SETSTREAMSOURCE</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2setstreamsource.md">D3DHAL_DP2SETSTREAMSOURCE</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545957">D3DHAL_DRAWPRIMITIVES2DATA</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
 </dt>
 </dl>
 <p> </p>

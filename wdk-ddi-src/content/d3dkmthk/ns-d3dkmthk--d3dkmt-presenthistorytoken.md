@@ -70,13 +70,13 @@ typedef struct _D3DKMT_PRESENTHISTORYTOKEN {
 ### -field <b>Model</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548197">D3DKMT_PRESENT_MODEL</a>-typed value that indicates the model for a present operation. </p>
+<p>[in] A <a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-present-model.md">D3DKMT_PRESENT_MODEL</a>-typed value that indicates the model for a present operation. </p>
 </dd>
 
 ### -field <b>TokenSize</b>
 
 <dd>
-<p>[in] The size, in bytes, of the present history token including the value in the <b>Model</b> member. When you submit a token, you should set <b>TokenSize</b> to zero. When the ICD calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff546987">D3DKMTGetPresentHistory</a> to retrieve present history, the runtime initializes <b>TokenSize</b>. You can then use the value in <b>TokenSize</b> to go to the next token in the present-history buffer. </p>
+<p>[in] The size, in bytes, of the present history token including the value in the <b>Model</b> member. When you submit a token, you should set <b>TokenSize</b> to zero. When the ICD calls <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetpresenthistory.md">D3DKMTGetPresentHistory</a> to retrieve present history, the runtime initializes <b>TokenSize</b>. You can then use the value in <b>TokenSize</b> to go to the next token in the present-history buffer. </p>
 <p>A <i>present history token</i> is a data packet that the rendering app submits to inform the Desktop Window Manager (DWM) that rendering is complete and the swap chain back buffer is ready to be presented.</p>
 </dd>
 
@@ -95,13 +95,13 @@ typedef struct _D3DKMT_PRESENTHISTORYTOKEN {
 ### -field <b>Flip</b>
 
 <dd>
-<p>[in/out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547984">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN</a> structure that identifies a flip present-history operation. The <b>Token</b> union that is contained in D3DKMT_PRESENTHISTORYTOKEN holds this structure if the <b>Model</b> member is D3DKMT_PM_REDIRECTED_FLIP. </p>
+<p>[in/out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-flipmodel-presenthistorytoken.md">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN</a> structure that identifies a flip present-history operation. The <b>Token</b> union that is contained in D3DKMT_PRESENTHISTORYTOKEN holds this structure if the <b>Model</b> member is D3DKMT_PM_REDIRECTED_FLIP. </p>
 </dd>
 
 ### -field <b>Blt</b>
 
 <dd>
-<p>[in/out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547292">D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN</a> structure that identifies a bit-block transfer (bitblt) present-history operation. The union that is contained in D3DKMT_PRESENTHISTORYTOKEN holds a structure of this type if the <b>Model</b> member is D3DKMT_PM_REDIRECTED_BLT. </p>
+<p>[in/out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-bltmodel-presenthistorytoken.md">D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN</a> structure that identifies a bit-block transfer (bitblt) present-history operation. The union that is contained in D3DKMT_PRESENTHISTORYTOKEN holds a structure of this type if the <b>Model</b> member is D3DKMT_PM_REDIRECTED_BLT. </p>
 </dd>
 
 ### -field <b>VistaBlt</b>
@@ -113,25 +113,25 @@ typedef struct _D3DKMT_PRESENTHISTORYTOKEN {
 ### -field <b>Gdi</b>
 
 <dd>
-<p>[in/out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548017">D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN</a> structure that identifies a GDI present-history operation. The union that is contained in D3DKMT_PRESENTHISTORYTOKEN holds a structure of this type if the <b>Model</b> member is D3DKMT_PM_REDIRECTED_GDI. </p>
+<p>[in/out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-gdimodel-presenthistorytoken.md">D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN</a> structure that identifies a GDI present-history operation. The union that is contained in D3DKMT_PRESENTHISTORYTOKEN holds a structure of this type if the <b>Model</b> member is D3DKMT_PM_REDIRECTED_GDI. </p>
 </dd>
 
 ### -field <b>Fence</b>
 
 <dd>
-<p>[in/out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547976">D3DKMT_FENCE_PRESENTHISTORYTOKEN</a> structure that identifies a fence present-history operation. The union that is contained in D3DKMT_PRESENTHISTORYTOKEN holds a structure of this type if the <b>Model</b> member is D3DKMT_PM_SCREENCAPTUREFENCE. </p>
+<p>[in/out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-fence-presenthistorytoken.md">D3DKMT_FENCE_PRESENTHISTORYTOKEN</a> structure that identifies a fence present-history operation. The union that is contained in D3DKMT_PRESENTHISTORYTOKEN holds a structure of this type if the <b>Model</b> member is D3DKMT_PM_SCREENCAPTUREFENCE. </p>
 </dd>
 
 ### -field <b>GdiSysMem</b>
 
 <dd>
-<p>[in/out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548023">D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN</a> structure that identifies a GDI system present-history operation. The union that is contained in D3DKMT_PRESENTHISTORYTOKEN holds a structure of this type if the <b>Model</b> member is D3DKMT_PM_REDIRECTED_GDI_SYSMEM.</p>
+<p>[in/out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-gdimodel-sysmem-presenthistorytoken.md">D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN</a> structure that identifies a GDI system present-history operation. The union that is contained in D3DKMT_PRESENTHISTORYTOKEN holds a structure of this type if the <b>Model</b> member is D3DKMT_PM_REDIRECTED_GDI_SYSMEM.</p>
 </dd>
 
 ### -field <b>Composition</b>
 
 <dd>
-<p>[in/out] A <a href="https://msdn.microsoft.com/library/windows/hardware/dn458001">D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN</a> structure that identifies a composition swap chain present-history operation. This type of presentation is used for XAML-based apps.</p>
+<p>[in/out] A <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-composition-presenthistorytoken.md">D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN</a> structure that identifies a composition swap chain present-history operation. This type of presentation is used for XAML-based apps.</p>
 <p>Supported starting with Windows 8.1.</p>
 </dd>
 </dl>
@@ -166,22 +166,22 @@ typedef struct _D3DKMT_PRESENTHISTORYTOKEN {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547292">D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-bltmodel-presenthistorytoken.md">D3DKMT_BLTMODEL_PRESENTHISTORYTOKEN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547976">D3DKMT_FENCE_PRESENTHISTORYTOKEN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-fence-presenthistorytoken.md">D3DKMT_FENCE_PRESENTHISTORYTOKEN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547984">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-flipmodel-presenthistorytoken.md">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548017">D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-gdimodel-presenthistorytoken.md">D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548023">D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-gdimodel-sysmem-presenthistorytoken.md">D3DKMT_GDIMODEL_SYSMEM_PRESENTHISTORYTOKEN</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548197">D3DKMT_PRESENT_MODEL</a>
+<a href="..\d3dkmthk\ne-d3dkmthk--d3dkmt-present-model.md">D3DKMT_PRESENT_MODEL</a>
 </dt>
 </dl>
 <p> </p>

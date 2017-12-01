@@ -69,7 +69,7 @@ _Check_return_ HRESULT APIENTRY* pfnCheckMultiPlaneOverlaySupport(
 ### -param <i>pSupport</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh780229">D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT</a> structure that provides details on hardware support for multiplane overlays.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-checkmultiplaneoverlaysupport.md">D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT</a> structure that provides details on hardware support for multiplane overlays.</p>
 </dd>
 </dl>
 
@@ -122,7 +122,7 @@ _Check_return_ HRESULT APIENTRY* pfnCheckMultiPlaneOverlaySupport(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh780229">D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddiarg-checkmultiplaneoverlaysupport.md">D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT</a>
 </dt>
 </dl>
 <p> </p>

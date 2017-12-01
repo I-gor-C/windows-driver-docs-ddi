@@ -7,7 +7,7 @@ old-location: netvista\wskconnectex.htm
 old-project: netvista
 ms.assetid: 1BC518E9-747C-4406-8A2A-40A3BCB0A3AA
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -42,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p>The 
   <b>WskConnectEx</b> function connects a connection-oriented or stream socket to a remote transport address.</p>
-<p><b>WskConnectEx</b> is similar to <a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a>
+<p><b>WskConnectEx</b> is similar to <a href="..\wsk\nc-wsk-pfn-wsk-connect.md">WskConnect</a>
   except that it can also optionally send a buffer of data during or after connection synchronization.</p>
 
 
@@ -66,7 +66,7 @@ NTSTATUS WINAPI WskConnectEx(
 
 <dd>
 <p>A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a> structure that specifies the socket
+     <a href="..\wsk\ns-wsk--wsk-socket.md">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being connected to a remote transport address.</p>
 </dd>
 
@@ -74,14 +74,14 @@ NTSTATUS WINAPI WskConnectEx(
 
 <dd>
 <p>A pointer to a structure that specifies the remote transport address to which to connect the
-     socket. This pointer must be a pointer to the specific <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a> structure type that corresponds to the
+     socket. This pointer must be a pointer to the specific <a href="netvista.sockaddr">SOCKADDR</a> structure type that corresponds to the
      address family that the WSK application specified when it created the socket.</p>
 </dd>
 
 ### -param <i>Buffer</i> [in, optional]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff571153">WSK_BUF</a> structure, which contains the data to send during or after connection synchronization. The maximum allowed size in bytes is 65,535.</p>
+<p>A pointer to a <a href="..\wsk\ns-wsk--wsk-buf.md">WSK_BUF</a> structure, which contains the data to send during or after connection synchronization. The maximum allowed size in bytes is 65,535.</p>
 </dd>
 
 ### -param <i>Flags</i> 
@@ -114,7 +114,7 @@ NTSTATUS WINAPI WskConnectEx(
 <dt><b>STATUS_FILE_FORCED_CLOSED</b></dt>
 </dl><p>The socket is no longer functional. The IRP will be completed with failure status. The WSK
        application must call the 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a> function to close the
+       <a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a> function to close the
        socket as soon as possible.</p><dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl><p>The WSK application attempted to pass a flag in to the <i>Flags</i> parameter (as no valid flags are currently defined for <b>WskConnectEx</b>, this is not allowed).</p><dl>
@@ -128,10 +128,10 @@ NTSTATUS WINAPI WskConnectEx(
 ## -remarks
 <p>A WSK application can create, bind, and connect a connection-oriented socket in a single function call
     by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a> function rather than
+    <a href="..\wsk\nc-wsk-pfn-wsk-socket-connect.md">WskSocketConnect</a> function rather than
     calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a> function, the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571121">WskBind</a> function, and then the 
+    <a href="..\wsk\nc-wsk-pfn-wsk-socket.md">WskSocket</a> function, the 
+    <a href="..\wsk\nc-wsk-pfn-wsk-bind.md">WskBind</a> function, and then the 
     <b>WskConnectEx</b> function. We recommend calling the 
     <b>WskSocketConnect</b> function unless the WSK application needs to set a socket option or issue an I/O
     control operation before binding or connecting the socket.</p>
@@ -139,34 +139,13 @@ NTSTATUS WINAPI WskConnectEx(
 <p>A WSK application can call the 
     <b>WskConnectEx</b> function only on a connection-oriented or stream socket that the application previously bound to a
     local transport address by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571121">WskBind</a> function.</p>
+    <a href="..\wsk\nc-wsk-pfn-wsk-bind.md">WskBind</a> function.</p>
 
 <p>For stream sockets, once <b>WskConnectEx</b> is successfully called on a stream socket, the socket is committed to a connection-oriented flow and may no longer call listening socket functions.</p>
 
-<p>If the <i>Buffer</i> parameter is used, the caller can free the MDL in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff571153">WSK_BUF</a> structure as soon as the connect request is complete.</p>
+<p>If the <i>Buffer</i> parameter is used, the caller can free the MDL in its <a href="..\wsk\ns-wsk--wsk-buf.md">WSK_BUF</a> structure as soon as the connect request is complete.</p>
 
-<p>Before calling <b>WskConnectEx</b> with a provided send buffer, if the WSK application sets the <b>TCP_FASTOPEN</b> option on a WSK socket via the <a href="https://msdn.microsoft.com/library/windows/hardware/ff571127">WskControlSocket</a> function the system will optionally send some or all of the data in a SYN packet. For more information, see the <b>TCP Fastopen</b> option in <a href="winsock.ipproto_tcp_socket_options">IPPROTO_TCP Socket Options</a>.</p>
-
-<p>A WSK application can create, bind, and connect a connection-oriented socket in a single function call
-    by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a> function rather than
-    calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a> function, the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571121">WskBind</a> function, and then the 
-    <b>WskConnectEx</b> function. We recommend calling the 
-    <b>WskSocketConnect</b> function unless the WSK application needs to set a socket option or issue an I/O
-    control operation before binding or connecting the socket.</p>
-
-<p>A WSK application can call the 
-    <b>WskConnectEx</b> function only on a connection-oriented or stream socket that the application previously bound to a
-    local transport address by calling the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571121">WskBind</a> function.</p>
-
-<p>For stream sockets, once <b>WskConnectEx</b> is successfully called on a stream socket, the socket is committed to a connection-oriented flow and may no longer call listening socket functions.</p>
-
-<p>If the <i>Buffer</i> parameter is used, the caller can free the MDL in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff571153">WSK_BUF</a> structure as soon as the connect request is complete.</p>
-
-<p>Before calling <b>WskConnectEx</b> with a provided send buffer, if the WSK application sets the <b>TCP_FASTOPEN</b> option on a WSK socket via the <a href="https://msdn.microsoft.com/library/windows/hardware/ff571127">WskControlSocket</a> function the system will optionally send some or all of the data in a SYN packet. For more information, see the <b>TCP Fastopen</b> option in <a href="winsock.ipproto_tcp_socket_options">IPPROTO_TCP Socket Options</a>.</p>
+<p>Before calling <b>WskConnectEx</b> with a provided send buffer, if the WSK application sets the <b>TCP_FASTOPEN</b> option on a WSK socket via the <a href="..\wsk\nc-wsk-pfn-wsk-control-socket.md">WskControlSocket</a> function the system will optionally send some or all of the data in a SYN packet. For more information, see the <b>TCP Fastopen</b> option in <a href="winsock.ipproto_tcp_socket_options">IPPROTO_TCP Socket Options</a>.</p>
 
 ## -requirements
 <table>
@@ -211,28 +190,28 @@ NTSTATUS WINAPI WskConnectEx(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571121">WskBind</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-bind.md">WskBind</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-close-socket.md">WskCloseSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571127">WskControlSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-control-socket.md">WskControlSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571129">WskDisconnect</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-disconnect.md">WskDisconnect</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-socket.md">WskSocket</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a>
+<a href="..\wsk\nc-wsk-pfn-wsk-socket-connect.md">WskSocketConnect</a>
 </dt>
 <dt>
 <a href="..\wsk\nc-wsk-pfn-wsk-disconnect-event.md">WskDisconnectEvent</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
+<a href="netvista.sockaddr">SOCKADDR</a>
 </dt>
 <dt>
 <a href="..\wsk\ns-wsk--wsk-provider-connection-dispatch.md">
@@ -243,9 +222,9 @@ NTSTATUS WINAPI WskConnectEx(
    WSK_PROVIDER_STREAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk--wsk-socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONNECT_EX callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONNECT_EX callback function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

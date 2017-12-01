@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwisummarylistparammask.htm
 old-project: netvista
 ms.assetid: f7b9d558-7c95-40d5-9740-ae1b9f7595c1
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices

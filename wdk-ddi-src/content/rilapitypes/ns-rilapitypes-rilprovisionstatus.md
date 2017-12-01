@@ -7,7 +7,7 @@ old-location: netvista\rilprovisionstatus_2.htm
 old-project: netvista
 ms.assetid: 59568338-6718-4f3e-bcf6-cd284e68e6af
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RILPROVISIONSTATUS, RILPROVISIONSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices

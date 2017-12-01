@@ -58,13 +58,13 @@ typedef struct _DXVAHDDDI_DEVICE_DESC {
 ### -field <b>pContentDesc</b>
 
 <dd>
-<p>[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563039">DXVAHDDDI_CONTENT_DESC</a> structure that describes how the device decodes content. </p>
+<p>[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-content-desc.md">DXVAHDDDI_CONTENT_DESC</a> structure that describes how the device decodes content. </p>
 </dd>
 
 ### -field <b>Usage</b>
 
 <dd>
-<p>[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563051">DXVAHDDDI_DEVICE_USAGE</a>-typed value that indicates how the decode device plays video. </p>
+<p>[in] A <a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-device-usage.md">DXVAHDDDI_DEVICE_USAGE</a>-typed value that indicates how the decode device plays video. </p>
 </dd>
 </dl>
 
@@ -96,10 +96,10 @@ typedef struct _DXVAHDDDI_DEVICE_DESC {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563039">DXVAHDDDI_CONTENT_DESC</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-content-desc.md">DXVAHDDDI_CONTENT_DESC</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563051">DXVAHDDDI_DEVICE_USAGE</a>
+<a href="..\d3dumddi\ne-d3dumddi--dxvahdddi-device-usage.md">DXVAHDDDI_DEVICE_USAGE</a>
 </dt>
 </dl>
 <p> </p>

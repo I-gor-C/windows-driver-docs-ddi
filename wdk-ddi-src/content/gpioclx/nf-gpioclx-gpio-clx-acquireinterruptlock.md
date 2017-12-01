@@ -84,18 +84,6 @@ VOID GPIO_CLX_AcquireInterruptLock(
 
 <p>If the <i>Context</i> parameter is NULL or points to an invalid GPIO device context, this method causes a bug check in debug builds of GpioClx.</p>
 
-<p>A GPIO controller driver thread calls this method to synchronize to the interrupt service routine (ISR) in GpioClx. While the caller holds the interrupt lock, the ISR cannot call driver-implemented callback functions to access GPIO registers in the specified bank. A GPIO controller driver should call this method before it tries to access GPIO registers that might be accessed by the GpioClx ISR.</p>
-
-<p>The GpioClx ISR calls driver-implemented callback functions to access interrupt status and enable registers in the GPIO controller. Depending on the capabilities of the GPIO controller, the ISR is called either at DIRQL or at PASSIVE_LEVEL. For more information, see <a href="NULL">Interrupt-Related Callbacks</a>.</p>
-
-<p>If the GpioClx ISR accesses these interrupt registers at DIRQL, <b>GPIO_CLX_AcquireInterruptLock</b> raises the calling thread's IRQL to the DIRQL at which the ISR runs. If the ISR runs at PASSIVE_LEVEL, this method does not change the calling thread's IRQL.</p>
-
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439494">GPIO_CLX_ReleaseInterruptLock</a> method releases an interrupt lock that was acquired in a previous call to <b>GPIO_CLX_AcquireInterruptLock</b>. The <b>BankId</b> parameter specifies the bank that is affected by the lock. To release a lock on a bank, the <b>BankId</b> parameter of the <b>GPIO_CLX_ReleaseInterruptLock</b> call must match the <b>BankId</b> parameter of the <b>GPIO_CLX_AcquireInterruptLock</b> call that acquired the lock. If the <b>GPIO_CLX_AcquireInterruptLock</b> call raised the calling thread's IRQL, <b>GPIO_CLX_ReleaseInterruptLock</b> restores this thread's original IRQL.</p>
-
-<p>The GPIO controller driver can independently acquire and release interrupt locks on the various banks in the GPIO controller. However, it is a fatal error for the driver to try to acquire a lock on a particular bank if the driver already holds a lock on this bank.</p>
-
-<p>If the <i>Context</i> parameter is NULL or points to an invalid GPIO device context, this method causes a bug check in debug builds of GpioClx.</p>
-
 ## -requirements
 <table>
 <tr>

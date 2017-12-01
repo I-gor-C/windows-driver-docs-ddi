@@ -78,8 +78,6 @@ _Check_return_ HRESULT APIENTRY* LogMarkerStringTable(
 ## -remarks
 <p>This function is free-threaded.</p>
 
-<p>This function is free-threaded.</p>
-
 ## -requirements
 <table>
 <tr>

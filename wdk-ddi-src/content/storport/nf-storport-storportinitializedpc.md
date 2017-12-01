@@ -66,7 +66,7 @@ VOID StorPortInitializeDpc(
 ### -param <i>Dpc</i> [out]
 
 <dd>
-<p>Pointer to a buffer where a DPC object of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff567579">STOR_DPC</a> will be created. The caller must ensure that the size in bytes of this buffer is greater than or equal to <b>sizeof</b>(STOR_DPC). </p>
+<p>Pointer to a buffer where a DPC object of type <a href="..\storport\ns-storport--stor-dpc.md">STOR_DPC</a> will be created. The caller must ensure that the size in bytes of this buffer is greater than or equal to <b>sizeof</b>(STOR_DPC). </p>
 </dd>
 
 ### -param <i>HwDpcRoutine</i> [in]
@@ -97,11 +97,7 @@ VOID
 <p>None. </p>
 
 ## -remarks
-<p>The <b>StorPortInitializeDpc</b> routine must be called during HBA initialization from within the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557407">HwStorPassiveInitializeRoutine</a> routine. </p>
-
-<p>This routine is implemented using inline function definitions, so that miniport drivers that use this routine will not have to link to libraries that are dependent on the version of the operating system. Miniport drivers can use this routine without sacrificing backward compatibility with versions of the operating system that do not support DPCs in storage miniport drivers. </p>
-
-<p>The <b>StorPortInitializeDpc</b> routine must be called during HBA initialization from within the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557407">HwStorPassiveInitializeRoutine</a> routine. </p>
+<p>The <b>StorPortInitializeDpc</b> routine must be called during HBA initialization from within the miniport driver's <a href="storage.hwstorpassiveinitializeroutine">HwStorPassiveInitializeRoutine</a> routine. </p>
 
 <p>This routine is implemented using inline function definitions, so that miniport drivers that use this routine will not have to link to libraries that are dependent on the version of the operating system. Miniport drivers can use this routine without sacrificing backward compatibility with versions of the operating system that do not support DPCs in storage miniport drivers. </p>
 
@@ -132,10 +128,10 @@ VOID
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557407">HwStorPassiveInitializeRoutine</a>
+<a href="storage.hwstorpassiveinitializeroutine">HwStorPassiveInitializeRoutine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567579">STOR_DPC</a>
+<a href="..\storport\ns-storport--stor-dpc.md">STOR_DPC</a>
 </dt>
 </dl>
 <p> </p>

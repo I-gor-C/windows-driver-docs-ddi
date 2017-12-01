@@ -99,10 +99,6 @@ NTSTATUS EtwRegister(
 
 <p>Callers of <b>EtwRegister</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.</p>
 
-<p>Before a kernel-mode driver can trace events, the driver must register as an event provider using the <b>EtwRegister</b> function. When a kernel mode driver calls <b>EtwRegister</b>, the function returns a registration handle. This registration handle can be used to test whether a keyword or level is enabled for a specific provider and to call event tracing and logging functions. After tracing is complete, a driver must call the <b>EtwUnregister</b> function to unregister the provider. For every call to <b>EtwRegister</b> there must be a corresponding call to <b>EtwUnregister</b>. Failure to unregister the event provider can cause errors when the process is unloaded because the callback functions associated with the process are no longer valid. No tracing calls should be made that fall outside of the code bounded by the <b>EtwRegister</b> and <b>EtwUnregister</b> functions. For the best performance, you can call the <b>EtwRegister</b> function in your <b>DriverEntry</b> routine and the <b>EtwUnregister</b> function in your <b>DriverUnload</b> routine.</p>
-
-<p>Callers of <b>EtwRegister</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -166,7 +162,7 @@ NTSTATUS EtwRegister(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>
+<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>
 </td>
 </tr>
 </table>
@@ -174,7 +170,7 @@ NTSTATUS EtwRegister(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545613">EtwUnregister</a>
+<a href="..\wdm\nf-wdm-etwunregister.md">EtwUnregister</a>
 </dt>
 </dl>
 <p> </p>

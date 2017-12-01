@@ -76,11 +76,7 @@ typedef enum _DXVAHDDDI_DEVICE_USAGE {
 </dl>
 
 ## -remarks
-<p>A DXVAHDDDI_DEVICE_USAGE-typed value is specified in the <b>Usage</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563048">DXVAHDDDI_DEVICE_DESC</a> structure to help describe a decode device.</p>
-
-<p>A DXVAHDDDI_DEVICE_USAGE-typed value is specified in the <b>Usage</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563048">DXVAHDDDI_DEVICE_DESC</a> structure to help describe a decode device.</p>
-
-<p>A DXVAHDDDI_DEVICE_USAGE-typed value is specified in the <b>Usage</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563048">DXVAHDDDI_DEVICE_DESC</a> structure to help describe a decode device.</p>
+<p>A DXVAHDDDI_DEVICE_USAGE-typed value is specified in the <b>Usage</b> member of a <a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-device-desc.md">DXVAHDDDI_DEVICE_DESC</a> structure to help describe a decode device.</p>
 
 ## -requirements
 <table>
@@ -107,7 +103,7 @@ typedef enum _DXVAHDDDI_DEVICE_USAGE {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563048">DXVAHDDDI_DEVICE_DESC</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvahdddi-device-desc.md">DXVAHDDDI_DEVICE_DESC</a>
 </dt>
 </dl>
 <p> </p>

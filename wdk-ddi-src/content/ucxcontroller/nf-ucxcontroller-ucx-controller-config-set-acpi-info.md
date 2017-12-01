@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188057">UCX_CONTROLLER_CONFIG</a> structure with the specified values for the controller with ACPI as the parent. </p>
+<p>Initializes a <a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a> structure with the specified values for the controller with ACPI as the parent. </p>
 
 
 ## -syntax
@@ -62,7 +62,7 @@ void UCX_CONTROLLER_CONFIG_SET_ACPI_INFO(
 ### -param <i>Config</i> 
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188057">UCX_CONTROLLER_CONFIG</a> structure to initialize.</p>
+<p>A pointer to a <a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a> structure to initialize.</p>
 </dd>
 
 ### -param <i>VendorId</i> 
@@ -115,10 +115,10 @@ void UCX_CONTROLLER_CONFIG_SET_ACPI_INFO(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a>
+<a href="buses._ucxcontrollercreate">UcxControllerCreate</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188057">UCX_CONTROLLER_CONFIG</a>
+<a href="buses._ucx_controller_config">UCX_CONTROLLER_CONFIG</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: netvista\rilhideconnectedidsettingsparammask_2.htm
 old-project: netvista
 ms.assetid: 7977898a-9f45-4db5-9fe3-3702f6bc9124
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices

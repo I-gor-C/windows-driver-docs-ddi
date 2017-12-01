@@ -7,7 +7,7 @@ old-location: netvista\ndiscmnotifycloseaddressfamily.htm
 old-project: netvista
 ms.assetid: 1967f663-86ce-4e9d-9498-61951bdf4db0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCmNotifyCloseAddressFamily
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,25 +99,6 @@ NDIS_STATUS NdisCmNotifyCloseAddressFamily(
     <a href="..\ndis\nc-ndis-protocol-cm-notify-close-af-complete.md">
     ProtocolCmNotifyCloseAfComplete</a> function after the client completes the AF close operation.</p>
 
-<p>Stand-alone CoNDIS call managers, which register as NDIS protocol drivers by calling the 
-    <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
-    NdisRegisterProtocolDriver</a> function, can call the 
-    <b>NdisCmNotifyCloseAddressFamily</b> function. Miniport call managers (MCMs) instead call the 
-    <a href="..\ndis\nf-ndis-ndismcmnotifycloseaddressfamily.md">
-    NdisMCmNotifyCloseAddressFamily</a> function.</p>
-
-<p>To close an AF for a binding, the stand-alone call manager should call 
-    <b>NdisCmNotifyCloseAddressFamily</b> from the 
-    <a href="..\ndis\nc-ndis-protocol-unbind-adapter-ex.md">
-    ProtocolUnbindAdapterEx</a> function. NDIS then calls the 
-    <a href="..\ndis\nc-ndis-protocol-cl-notify-close-af.md">
-    ProtocolClNotifyCloseAf</a> function of the client that has the specified AF open.</p>
-
-<p>If 
-    <b>NdisCmNotifyCloseAddressFamily</b> returns NDIS_STATUS_PENDING, NDIS calls the call manager's 
-    <a href="..\ndis\nc-ndis-protocol-cm-notify-close-af-complete.md">
-    ProtocolCmNotifyCloseAfComplete</a> function after the client completes the AF close operation.</p>
-
 ## -requirements
 <table>
 <tr>
@@ -171,7 +152,7 @@ NDIS_STATUS NdisCmNotifyCloseAddressFamily(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547917">Irql_CallManager_Function</a>
+<a href="devtest.ndis_irql_callmanager_function">Irql_CallManager_Function</a>
 </td>
 </tr>
 </table>
@@ -183,7 +164,7 @@ NDIS_STATUS NdisCmNotifyCloseAddressFamily(
    NdisMCmNotifyCloseAddressFamily</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564520">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cl-notify-close-af.md">ProtocolClNotifyCloseAf</a>
@@ -201,4 +182,4 @@ NDIS_STATUS NdisCmNotifyCloseAddressFamily(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmNotifyCloseAddressFamily function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmNotifyCloseAddressFamily function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

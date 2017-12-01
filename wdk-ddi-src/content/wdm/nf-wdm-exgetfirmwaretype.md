@@ -7,7 +7,7 @@ old-location: kernel\exgetfirmwaretype.htm
 old-project: kernel
 ms.assetid: b8a420d5-7741-4676-9956-dcf996125c6d
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: ExGetFirmwareType
 ms.prod: windows-hardware
 ms.technology: windows-devices

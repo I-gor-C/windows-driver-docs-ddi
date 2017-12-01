@@ -62,27 +62,9 @@ PFLT_GENERIC_WORKITEM FltAllocateGenericWorkItem(void);
 ## -remarks
 <p><b>FltAllocateGenericWorkItem</b> allocates a generic work item from nonpaged pool. </p>
 
-<p>To insert this work item into a work queue, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543452">FltQueueGenericWorkItem</a>. </p>
+<p>To insert this work item into a work queue, call <a href="..\fltkernel\nf-fltkernel-fltqueuegenericworkitem.md">FltQueueGenericWorkItem</a>. </p>
 
-<p>To free the work item, a minifilter driver typically calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff542971">FltFreeGenericWorkItem</a> from the worker routine that was specified in <a href="https://msdn.microsoft.com/library/windows/hardware/ff543452">FltQueueGenericWorkItem</a>. </p>
-
-<p><b>FltAllocateGenericWorkItem</b> allocates a generic work item from nonpaged pool. </p>
-
-<p>To insert this work item into a work queue, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543452">FltQueueGenericWorkItem</a>. </p>
-
-<p>To free the work item, a minifilter driver typically calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff542971">FltFreeGenericWorkItem</a> from the worker routine that was specified in <a href="https://msdn.microsoft.com/library/windows/hardware/ff543452">FltQueueGenericWorkItem</a>. </p>
-
-<p><b>FltAllocateGenericWorkItem</b> allocates a generic work item from nonpaged pool. </p>
-
-<p>To insert this work item into a work queue, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543452">FltQueueGenericWorkItem</a>. </p>
-
-<p>To free the work item, a minifilter driver typically calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff542971">FltFreeGenericWorkItem</a> from the worker routine that was specified in <a href="https://msdn.microsoft.com/library/windows/hardware/ff543452">FltQueueGenericWorkItem</a>. </p>
-
-<p><b>FltAllocateGenericWorkItem</b> allocates a generic work item from nonpaged pool. </p>
-
-<p>To insert this work item into a work queue, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543452">FltQueueGenericWorkItem</a>. </p>
-
-<p>To free the work item, a minifilter driver typically calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff542971">FltFreeGenericWorkItem</a> from the worker routine that was specified in <a href="https://msdn.microsoft.com/library/windows/hardware/ff543452">FltQueueGenericWorkItem</a>. </p>
+<p>To free the work item, a minifilter driver typically calls <a href="..\fltkernel\nf-fltkernel-fltfreegenericworkitem.md">FltFreeGenericWorkItem</a> from the worker routine that was specified in <a href="..\fltkernel\nf-fltkernel-fltqueuegenericworkitem.md">FltQueueGenericWorkItem</a>. </p>
 
 ## -requirements
 <table>
@@ -139,10 +121,10 @@ PFLT_GENERIC_WORKITEM FltAllocateGenericWorkItem(void);
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542971">FltFreeGenericWorkItem</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreegenericworkitem.md">FltFreeGenericWorkItem</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543452">FltQueueGenericWorkItem</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueuegenericworkitem.md">FltQueueGenericWorkItem</a>
 </dt>
 </dl>
 <p> </p>

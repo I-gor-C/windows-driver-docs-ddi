@@ -81,7 +81,7 @@ typedef struct _D3DHAL_DP2CREATEVERTEXSHADER {
 ## -remarks
 <p>Before invoking the driver, the runtime performs validation to ensure that the specified shader is legal for the specified shader language version. The runtime flushes all pending state and rendering when this token is to be sent to the driver. Thus, processing of this token is assumed to be synchronous with the runtime and the driver reports failure of the creation request by failing the <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a> DDI call. Thus, the driver should validate the given shader declaration and code on receipt of this token and report success or failure accordingly. </p>
 
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552855">Direct3D Driver Shader Codes</a> for information about the format of an individual shader code and the tokens that comprise each shader code. </p>
+<p>See <a href="display.direct3d_driver_shader_codes">Direct3D Driver Shader Codes</a> for information about the format of an individual shader code and the tokens that comprise each shader code. </p>
 
 ## -requirements
 <table>
@@ -104,7 +104,7 @@ typedef struct _D3DHAL_DP2CREATEVERTEXSHADER {
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal-drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545925">D3DHAL_DP2VERTEXSHADER</a>
+<a href="..\d3dhal\ns-d3dhal--d3dhal-dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>
 </dt>
 </dl>
 <p> </p>

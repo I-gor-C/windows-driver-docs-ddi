@@ -113,7 +113,7 @@ typedef enum _D3DWDDM1_3DDI_TILED_RESOURCES_SUPPORT_FLAG {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn475744">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1-3ddi-d3d11-options-data1.md">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a>
 </dt>
 </dl>
 <p> </p>

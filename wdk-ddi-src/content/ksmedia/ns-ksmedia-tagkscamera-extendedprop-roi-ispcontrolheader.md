@@ -7,7 +7,7 @@ old-location: stream\kscamera_extendedprop_roi_ispcontrolheader.htm
 old-project: stream
 ms.assetid: F57B0E44-A6A1-4C43-83EE-8DF4A605C0D0
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER {
 ### -field <b>Size</b>
 
 <dd>
-<p>The sum of this structure size, all <a href="https://msdn.microsoft.com/library/windows/hardware/dn925171">KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL</a> structures, and all KSCAMERA_EXTENDEDPROP_ROI_RECTINFO structures that follow</p>
+<p>The sum of this structure size, all <a href="stream.kscamera_extendedprop_roi_ispcontrol">KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL</a> structures, and all KSCAMERA_EXTENDEDPROP_ROI_RECTINFO structures that follow</p>
 </dd>
 
 ### -field <b>ControlCount</b>

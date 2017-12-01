@@ -70,7 +70,7 @@ VOID APIENTRY* CreateGeometryShaderWithStreamOutput(D3D11_1)(
 ### -param <i>pOutput</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542057">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a> structure that describes the parameters that the user-mode display driver uses to create a geometry shader with stream output. </p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-creategeometryshaderwithstreamoutput.md">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a> structure that describes the parameters that the user-mode display driver uses to create a geometry shader with stream output. </p>
 </dd>
 
 ### -param <i>hShader</i> 
@@ -88,7 +88,7 @@ VOID APIENTRY* CreateGeometryShaderWithStreamOutput(D3D11_1)(
 ### -param <i>pSignatures</i> [in]
 
 <dd>
-<p> A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406324">D3D11_1DDIARG_STAGE_IO_SIGNATURES</a> structure that forms the shader's signature.</p>
+<p> A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-stage-io-signatures.md">D3D11_1DDIARG_STAGE_IO_SIGNATURES</a> structure that forms the shader's signature.</p>
 </dd>
 </dl>
 
@@ -144,10 +144,10 @@ VOID APIENTRY* CreateGeometryShaderWithStreamOutput(D3D11_1)(
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11-1ddi-calcprivategeometryshaderwithstreamoutput.md">CalcPrivateGeometryShaderWithStreamOutput(D3D11_1)</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406324">D3D11_1DDIARG_STAGE_IO_SIGNATURES</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11-1ddiarg-stage-io-signatures.md">D3D11_1DDIARG_STAGE_IO_SIGNATURES</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542057">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg-creategeometryshaderwithstreamoutput.md">D3D11DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi-seterror-cb.md">pfnSetErrorCb</a>

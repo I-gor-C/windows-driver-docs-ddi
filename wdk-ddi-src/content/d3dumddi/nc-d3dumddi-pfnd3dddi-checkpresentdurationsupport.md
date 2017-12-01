@@ -67,7 +67,7 @@ _Check_return_ HRESULT* CheckPresentDurationSupport(
 ### -param <i>pPresentDurationSupport</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn465881">D3DDDIARG_CHECKPRESENTDURATIONSUPPORT</a> structure that contains info on hardware device support for seamlessly switching to a new monitor refresh rate.</p>
+<p>A pointer to a <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-checkpresentdurationsupport.md">D3DDDIARG_CHECKPRESENTDURATIONSUPPORT</a> structure that contains info on hardware device support for seamlessly switching to a new monitor refresh rate.</p>
 </dd>
 </dl>
 
@@ -128,10 +128,10 @@ _Check_return_ HRESULT* CheckPresentDurationSupport(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi--d3dddi-devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn465881">D3DDDIARG_CHECKPRESENTDURATIONSUPPORT</a>
+<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg-checkpresentdurationsupport.md">D3DDDIARG_CHECKPRESENTDURATIONSUPPORT</a>
 </dt>
 </dl>
 <p> </p>

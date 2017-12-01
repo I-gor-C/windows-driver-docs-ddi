@@ -97,7 +97,7 @@ typedef enum _DXVADDI_VIDEOTRANSFERFUNCTION {
 
 <dd>
 <p>Specifies true 2.2 gamma--that is, L' = pow(L, 1/gamma) for L=0..1. </p>
-<p>The BT470-2 SysM primaries (that is, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562951">DXVADDI_VIDEOPRIMARIES</a> enumeration type) use gamma 2.2.</p>
+<p>The BT470-2 SysM primaries (that is, the <a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a> enumeration type) use gamma 2.2.</p>
 </dd>
 
 ### -field <a id="DXVADDI_VideoTransFunc_709"></a><a id="dxvaddi_videotransfunc_709"></a><a id="DXVADDI_VIDEOTRANSFUNC_709"></a><b>DXVADDI_VideoTransFunc_709</b>
@@ -128,19 +128,7 @@ typedef enum _DXVADDI_VIDEOTRANSFERFUNCTION {
 </dl>
 
 ## -remarks
-<p>One of the values of DXVADDI_VIDEOTRANSFERFUNCTION can be specified in the <b>VideoTransferFunction</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a> structure.</p>
-
-<p>DXVADDI_VIDEOTRANSFERFUNCTION corresponds to the gamma function of the data. Some transfer functions have corrections to account for 8-bit integer quantization effects.</p>
-
-<p>The following constants can also be used for gamma function:</p>
-
-<p>One of the values of DXVADDI_VIDEOTRANSFERFUNCTION can be specified in the <b>VideoTransferFunction</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a> structure.</p>
-
-<p>DXVADDI_VIDEOTRANSFERFUNCTION corresponds to the gamma function of the data. Some transfer functions have corrections to account for 8-bit integer quantization effects.</p>
-
-<p>The following constants can also be used for gamma function:</p>
-
-<p>One of the values of DXVADDI_VIDEOTRANSFERFUNCTION can be specified in the <b>VideoTransferFunction</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a> structure.</p>
+<p>One of the values of DXVADDI_VIDEOTRANSFERFUNCTION can be specified in the <b>VideoTransferFunction</b> member of the <a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure.</p>
 
 <p>DXVADDI_VIDEOTRANSFERFUNCTION corresponds to the gamma function of the data. Some transfer functions have corrections to account for 8-bit integer quantization effects.</p>
 
@@ -171,10 +159,10 @@ typedef enum _DXVADDI_VIDEOTRANSFERFUNCTION {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a>
+<a href="..\d3dumddi\ns-d3dumddi--dxvaddi-extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562951">DXVADDI_VIDEOPRIMARIES</a>
+<a href="..\d3dumddi\ne-d3dumddi--dxvaddi-videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a>
 </dt>
 </dl>
 <p> </p>

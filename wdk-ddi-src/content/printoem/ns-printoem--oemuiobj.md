@@ -65,12 +65,12 @@ typedef struct _OEMUIOBJ {
 ### -field <b>pOemUIProcs</b>
 
 <dd>
-<p>Pointer to a an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559574">OEMUIPROCS</a> structure, which is a private, internal structure.</p>
+<p>Pointer to a an <a href="..\printoem\ns-printoem--oemuiprocs.md">OEMUIPROCS</a> structure, which is a private, internal structure.</p>
 </dd>
 </dl>
 
 ## -remarks
-<p>User interface plug-ins do not need to reference an OEMUIOBJ structure's members. Plug-ins receive a pointer to this structure as input to their <a href="https://msdn.microsoft.com/library/windows/hardware/ff554162">IPrintOemUI::DeviceCapabilities</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554172">IPrintOemUI::DevQueryPrintEx</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554186">IPrintOemUI::QueryColorProfile</a> methods. Additionally, the OEMCUIPPARAM structure contains an OEMUIOBJ structure pointer. Plug-ins must supply the received pointer when calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff553114">IPrintOemDriverUI::DrvGetDriverSetting</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff553115">IPrintOemDriverUI::DrvUpdateUISetting</a>.</p>
+<p>User interface plug-ins do not need to reference an OEMUIOBJ structure's members. Plug-ins receive a pointer to this structure as input to their <a href="print.iprintoemui_devicecapabilities">IPrintOemUI::DeviceCapabilities</a>, <a href="print.iprintoemui_devqueryprintex">IPrintOemUI::DevQueryPrintEx</a> and <a href="print.iprintoemui_querycolorprofile">IPrintOemUI::QueryColorProfile</a> methods. Additionally, the OEMCUIPPARAM structure contains an OEMUIOBJ structure pointer. Plug-ins must supply the received pointer when calling <a href="print.iprintoemdriverui_drvgetdriversetting">IPrintOemDriverUI::DrvGetDriverSetting</a> or <a href="print.iprintoemdriverui_drvupdateuisetting">IPrintOemDriverUI::DrvUpdateUISetting</a>.</p>
 
 ## -requirements
 <table>

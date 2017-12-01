@@ -61,13 +61,13 @@ VOID APIENTRY CALLBACK* DxgkCbSetPowerComponentActive(
 ### -param <i>hAdapter</i> [in]
 
 <dd>
-<p>A handle to the display adapter. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure in a call to its <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
+<p>A handle to the display adapter. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="..\dispmprt\ns-dispmprt--dxgkrnl-interface.md">DXGKRNL_INTERFACE</a> structure in a call to its <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a> function.</p>
 </dd>
 
 ### -param <i>ComponentIndex</i> 
 
 <dd>
-<p>The power component index specified by  <a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a>.<b>pInputData</b> in a call to the <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function.</p>
+<p>The power component index specified by  <a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>.<b>pInputData</b> in a call to the <a href="display.dxgkddiqueryadapterinfo">DxgkDdiQueryAdapterInfo</a> function.</p>
 </dd>
 </dl>
 
@@ -75,12 +75,6 @@ VOID APIENTRY CALLBACK* DxgkCbSetPowerComponentActive(
 <p>This callback function does not return a value.</p>
 
 ## -remarks
-<p>Each call to this function must be paired with a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentidle.md">DxgkCbSetPowerComponentIdle</a> function to indicate that the component hardware is no longer required.</p>
-
-<p>When this function is called, the active reference count of the component is increased by 1. The <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">Power Management Framework</a> maintains the reference count and places the component into a lower F-state only when the reference count becomes zero.</p>
-
-<p>While calling this function, the display miniport driver might receive a call to the <a href="display.dxgkddisetpowercomponentfstate">DxgkDdiSetPowerComponentFState</a> function on another execution thread.</p>
-
 <p>Each call to this function must be paired with a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentidle.md">DxgkCbSetPowerComponentIdle</a> function to indicate that the component hardware is no longer required.</p>
 
 <p>When this function is called, the active reference count of the component is increased by 1. The <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">Power Management Framework</a> maintains the reference count and places the component into a lower F-state only when the reference count becomes zero.</p>
@@ -138,7 +132,7 @@ VOID APIENTRY CALLBACK* DxgkCbSetPowerComponentActive(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557621">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi--dxgkarg-queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb-setpowercomponentidle.md">DxgkCbSetPowerComponentIdle</a>
@@ -153,7 +147,7 @@ VOID APIENTRY CALLBACK* DxgkCbSetPowerComponentActive(
 <a href="display.dxgkddistartdevice">DxgkDdiStartDevice</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a>
+<a href="..\dispmprt\ns-dispmprt--dxgkrnl-interface.md">DXGKRNL_INTERFACE</a>
 </dt>
 </dl>
 <p> </p>

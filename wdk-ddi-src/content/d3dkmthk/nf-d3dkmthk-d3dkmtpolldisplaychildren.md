@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTPollDisplayChildren(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548161">D3DKMT_POLLDISPLAYCHILDREN</a> structure that describes the parameters for querying for connectivity status of the adapter's child devices.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-polldisplaychildren.md">D3DKMT_POLLDISPLAYCHILDREN</a> structure that describes the parameters for querying for connectivity status of the adapter's child devices.</p>
 </dd>
 </dl>
 
@@ -73,11 +73,7 @@ NTSTATUS APIENTRY D3DKMTPollDisplayChildren(
 <p>This function might also return other NTSTATUS values.</p>
 
 ## -remarks
-<p>The OpenGL installable client driver (ICD) calls <b>D3DKMTPollDisplayChildren</b> to query for connectivity status of all of the adapter's child devices. The ICD sets the <b>NonDestructiveOnly</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548161">D3DKMT_POLLDISPLAYCHILDREN</a> to indicate whether <b>D3DKMTPollDisplayChildren</b> should be destructive (that is, cause visual artifacts). For typical polling, the ICD should set <b>NonDestructiveOnly</b> to <b>TRUE</b> to prevent the screen from flickering.</p>
-
-<p>New child devices are enumerated to the Plug and Play (PnP) manager when PnP detects them. The devices are then listed in the device manager. If PnP determines that a child device was removed, the device is reported as a surprise removal. </p>
-
-<p>The OpenGL installable client driver (ICD) calls <b>D3DKMTPollDisplayChildren</b> to query for connectivity status of all of the adapter's child devices. The ICD sets the <b>NonDestructiveOnly</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548161">D3DKMT_POLLDISPLAYCHILDREN</a> to indicate whether <b>D3DKMTPollDisplayChildren</b> should be destructive (that is, cause visual artifacts). For typical polling, the ICD should set <b>NonDestructiveOnly</b> to <b>TRUE</b> to prevent the screen from flickering.</p>
+<p>The OpenGL installable client driver (ICD) calls <b>D3DKMTPollDisplayChildren</b> to query for connectivity status of all of the adapter's child devices. The ICD sets the <b>NonDestructiveOnly</b> member of <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-polldisplaychildren.md">D3DKMT_POLLDISPLAYCHILDREN</a> to indicate whether <b>D3DKMTPollDisplayChildren</b> should be destructive (that is, cause visual artifacts). For typical polling, the ICD should set <b>NonDestructiveOnly</b> to <b>TRUE</b> to prevent the screen from flickering.</p>
 
 <p>New child devices are enumerated to the Plug and Play (PnP) manager when PnP detects them. The devices are then listed in the device manager. If PnP determines that a child device was removed, the device is reported as a surprise removal. </p>
 
@@ -136,7 +132,7 @@ NTSTATUS APIENTRY D3DKMTPollDisplayChildren(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548161">D3DKMT_POLLDISPLAYCHILDREN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-polldisplaychildren.md">D3DKMT_POLLDISPLAYCHILDREN</a>
 </dt>
 </dl>
 <p> </p>

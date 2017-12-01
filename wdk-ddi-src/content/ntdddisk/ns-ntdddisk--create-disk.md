@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The CREATE_DISK structure is used with the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff559436">IOCTL_DISK_CREATE_DISK</a>  IOCTL to initialize a disk with an empty partition table. The partition table styles are master boot record (MBR)  or GUID partition table (GPT).</p>
+<p>The CREATE_DISK structure is used with the  <a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-create-disk.md">IOCTL_DISK_CREATE_DISK</a>  IOCTL to initialize a disk with an empty partition table. The partition table styles are master boot record (MBR)  or GUID partition table (GPT).</p>
 
 
 ## -syntax
@@ -61,19 +61,19 @@ typedef struct _CREATE_DISK {
 ### -field <b>PartitionStyle</b>
 
 <dd>
-<p>Takes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a> enumerated value that specifies the type of partition table to use when formatting the disk.</p>
+<p>Takes a <a href="storage.partition_style">PARTITION_STYLE</a> enumerated value that specifies the type of partition table to use when formatting the disk.</p>
 </dd>
 
 ### -field <b>Mbr</b>
 
 <dd>
-<p>Contains the signature used to initialize an MBR-style disk partition for the first time. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_MBR. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552490">CREATE_DISK_MBR</a>.</p>
+<p>Contains the signature used to initialize an MBR-style disk partition for the first time. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_MBR. For more information, see <a href="..\ntdddisk\ns-ntdddisk--create-disk-mbr.md">CREATE_DISK_MBR</a>.</p>
 </dd>
 
 ### -field <b>Gpt</b>
 
 <dd>
-<p>Contains data used to initialize a GPT-style disk partition for the first time. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_GPT. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552486">CREATE_DISK_GPT</a>. </p>
+<p>Contains data used to initialize a GPT-style disk partition for the first time. This member is valid when <b>PartitionStyle</b> is PARTITION_STYLE_GPT. For more information, see <a href="..\ntdddisk\ns-ntdddisk--create-disk-gpt.md">CREATE_DISK_GPT</a>. </p>
 </dd>
 </dl>
 
@@ -97,16 +97,16 @@ typedef struct _CREATE_DISK {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559436">IOCTL_DISK_CREATE_DISK</a>
+<a href="..\ntdddisk\ni-ntdddisk-ioctl-disk-create-disk.md">IOCTL_DISK_CREATE_DISK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552490">CREATE_DISK_MBR</a>
+<a href="..\ntdddisk\ns-ntdddisk--create-disk-mbr.md">CREATE_DISK_MBR</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552486">CREATE_DISK_GPT</a>
+<a href="..\ntdddisk\ns-ntdddisk--create-disk-gpt.md">CREATE_DISK_GPT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a>
+<a href="storage.partition_style">PARTITION_STYLE</a>
 </dt>
 </dl>
 <p> </p>

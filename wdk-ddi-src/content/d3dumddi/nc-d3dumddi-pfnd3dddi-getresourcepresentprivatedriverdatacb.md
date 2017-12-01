@@ -68,7 +68,7 @@ HRESULT APIENTRY CALLBACK* pfnGetResourcePresentPrivateDriverDataCb(
 ### -param <i>pData</i> [in, out]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn701957">D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA</a> structure that describes the operation to perform and contains the results.
+<p>A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-getresourcepresentprivatedriverdata.md">D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA</a> structure that describes the operation to perform and contains the results.
 
 </p>
 </dd>
@@ -79,7 +79,7 @@ HRESULT APIENTRY CALLBACK* pfnGetResourcePresentPrivateDriverDataCb(
 <dt>S_OK</dt>
 </dl><p>The operation completed successfully.</p><dl>
 <dt>STATUS_INVALID_BUFFER_SIZE</dt>
-</dl><p>The value of <a href="https://msdn.microsoft.com/library/windows/hardware/dn701957">D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA</a>::<b>PrivateDriverDataSize</b> was zero or was insufficient to hold the data. When control returns to the caller, <b>PrivateDriverDataSize</b> will contain the required buffer size.</p>
+</dl><p>The value of <a href="..\d3dukmdt\ns-d3dukmdt--d3dddi-getresourcepresentprivatedriverdata.md">D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA</a>::<b>PrivateDriverDataSize</b> was zero or was insufficient to hold the data. When control returns to the caller, <b>PrivateDriverDataSize</b> will contain the required buffer size.</p>
 
 <p> </p>
 

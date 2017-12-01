@@ -39,7 +39,7 @@ req.iface:
 
 
 ## -description
-<p>The VOLUME_CONTROL structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559350">IOCTL_CDROM_GET_VOLUME</a> request to retrieve volume values for up to four audio ports.</p>
+<p>The VOLUME_CONTROL structure is used in conjunction with the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-volume.md">IOCTL_CDROM_GET_VOLUME</a> request to retrieve volume values for up to four audio ports.</p>
 
 
 ## -syntax
@@ -81,7 +81,7 @@ typedef struct _VOLUME_CONTROL {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559350">IOCTL_CDROM_GET_VOLUME</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl-cdrom-get-volume.md">IOCTL_CDROM_GET_VOLUME</a>
 </dt>
 </dl>
 <p> </p>

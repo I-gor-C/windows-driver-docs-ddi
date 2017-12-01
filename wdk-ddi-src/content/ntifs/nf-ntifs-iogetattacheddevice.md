@@ -67,19 +67,11 @@ PDEVICE_OBJECT IoGetAttachedDevice(
 ## -remarks
 <p>If the device object specified by <i>DeviceObject</i> has no other device objects attached to it, <i>DeviceObject</i> and the returned pointer are equal.</p>
 
-<p><b>IoGetAttachedDevice</b> differs from <a href="https://msdn.microsoft.com/library/windows/hardware/ff549145">IoGetAttachedDeviceReference</a> in the following respects:</p>
+<p><b>IoGetAttachedDevice</b> differs from <a href="..\ntifs\nf-ntifs-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a> in the following respects:</p>
 
-<p><b>IoGetAttachedDevice</b> does not increment the reference count on the device object. (Thus no matching call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a> is required.)</p>
+<p><b>IoGetAttachedDevice</b> does not increment the reference count on the device object. (Thus no matching call to <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> is required.)</p>
 
-<p>Callers of <b>IoGetAttachedDevice</b> must ensure that no device objects are added to or removed from the stack while <b>IoGetAttachedDevice</b> is executing. Callers that cannot do this must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff549145">IoGetAttachedDeviceReference</a> instead.</p>
-
-<p>If the device object specified by <i>DeviceObject</i> has no other device objects attached to it, <i>DeviceObject</i> and the returned pointer are equal.</p>
-
-<p><b>IoGetAttachedDevice</b> differs from <a href="https://msdn.microsoft.com/library/windows/hardware/ff549145">IoGetAttachedDeviceReference</a> in the following respects:</p>
-
-<p><b>IoGetAttachedDevice</b> does not increment the reference count on the device object. (Thus no matching call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a> is required.)</p>
-
-<p>Callers of <b>IoGetAttachedDevice</b> must ensure that no device objects are added to or removed from the stack while <b>IoGetAttachedDevice</b> is executing. Callers that cannot do this must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff549145">IoGetAttachedDeviceReference</a> instead.</p>
+<p>Callers of <b>IoGetAttachedDevice</b> must ensure that no device objects are added to or removed from the stack while <b>IoGetAttachedDevice</b> is executing. Callers that cannot do this must use <a href="..\ntifs\nf-ntifs-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a> instead.</p>
 
 ## -requirements
 <table>
@@ -136,10 +128,10 @@ PDEVICE_OBJECT IoGetAttachedDevice(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549145">IoGetAttachedDeviceReference</a>
+<a href="..\ntifs\nf-ntifs-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 </dt>
 </dl>
 <p> </p>

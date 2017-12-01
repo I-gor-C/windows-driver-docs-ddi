@@ -119,7 +119,7 @@ typedef struct _MSiSCSI_HBASessionConfig {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563022">MSiSCSI_HBASessionConfig WMI Class</a>
+<a href="storage.msiscsi_hbasessionconfig_wmi_class">MSiSCSI_HBASessionConfig WMI Class</a>
 </dt>
 </dl>
 <p> </p>

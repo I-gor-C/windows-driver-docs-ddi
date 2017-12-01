@@ -7,7 +7,7 @@ old-location: netvista\ril_getuiccatr.htm
 old-project: netvista
 ms.assetid: 7518f018-5ece-43e6-8aad-02038c0e94fc
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: RIL_GetUiccATR
 ms.prod: windows-hardware
 ms.technology: windows-devices

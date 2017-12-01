@@ -117,10 +117,10 @@ typedef enum _DXVA_ProcAmpControlProp {
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564019">DXVA_ProcAmpControlCaps</a>
+<a href="..\dxva\ns-dxva--dxva-procampcontrolcaps.md">DXVA_ProcAmpControlCaps</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564032">DXVA_ProcAmpControlQueryRange</a>
+<a href="..\dxva\ns-dxva--dxva-procampcontrolqueryrange.md">DXVA_ProcAmpControlQueryRange</a>
 </dt>
 </dl>
 <p> </p>

@@ -7,7 +7,7 @@ old-location: sensors\isensordriver_ongetproperties.htm
 old-project: sensors
 ms.assetid: 8c7f378c-b4e6-4074-8b6a-571068b5ab80
 ms.author: windowsdriverdev
-ms.date: 11/26/2017
+ms.date: 11/28/2017
 ms.keywords: ISensorDriver, OnGetProperties, ISensorDriver::OnGetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a> method retrieves values for the specified properties from the specified sensor.</p>
+<p>The <a href="sensors.isensordriver_ongetproperties">ISensorDriver::OnGetProperties</a> method retrieves values for the specified properties from the specified sensor.</p>
 
 
 ## -syntax
@@ -87,22 +87,6 @@ HRESULT OnGetProperties(
 <p>If the operation succeeds, this method returns S_OK. Otherwise, this method returns one of the error codes that are defined in Winerror.h.</p>
 
 ## -remarks
-<p>Properties describe the sensor device, as opposed to data fields, which contain sensor-generated data. Platform-defined properties are defined in sensors.h.</p>
-
-<p>Applications can access some sensor property information before the user grants permission for the sensor. These items are limited to the following IDs defined in sensors.h:</p>
-
-<p>Any <b>PROPERTYKEY</b> that starts with "SENSOR_PROPERTY_".</p>
-
-<p>Any category <b>GUID</b> that starts with "SENSOR_CATEGORY_".</p>
-
-<p>Each <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> object returned in this collection must contain values for the required properties, as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor Properties</a> reference section.</p>
-
-<p>The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> structures returned by this method.</p>
-
-<p>Sensor properties must not contain information that can be used to identify the user. For more information about user privacy, see <a href="NULL">Privacy and Security in the Sensor and Location Platform</a>.</p>
-
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> are documented in Windows Portable Devices.</p>
-
 <p>Properties describe the sensor device, as opposed to data fields, which contain sensor-generated data. Platform-defined properties are defined in sensors.h.</p>
 
 <p>Applications can access some sensor property information before the user grants permission for the sensor. These items are limited to the following IDs defined in sensors.h:</p>

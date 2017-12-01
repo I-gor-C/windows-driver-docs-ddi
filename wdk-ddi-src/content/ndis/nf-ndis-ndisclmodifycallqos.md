@@ -7,7 +7,7 @@ old-location: netvista\ndisclmodifycallqos.htm
 old-project: netvista
 ms.assetid: c31449a6-e275-480c-83ea-8575fda73cd9
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisClModifyCallQoS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisClModifyCallQoS (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisClModifyCallQoS (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClModifyCallQoS (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClModifyCallQoS (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -64,7 +60,7 @@ NDIS_STATUS NdisClModifyCallQoS(
 <dd>
 <p>Specifies the handle to the VC for which the client wants to modify the QoS. The client originally
      obtained this handle by calling 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a>, and, more recently,
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>, and, more recently,
      retrieved this handle from its per-VC state area.</p>
 </dd>
 
@@ -89,19 +85,7 @@ NDIS_STATUS NdisClModifyCallQoS(
     <b>NdisClModifyCallQoS</b> causes NDIS to call the CM's 
     <a href="..\ndis\nc-ndis-protocol-cm-modify-qos-call.md">
     ProtocolCmModifyCallQoS</a> function, which, in turn, calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561649">NdisCmActivateVc</a> to notify the underlying
-    miniport driver to change the call parameters if the requested QoS change can be made.</p>
-
-<p>If the call manager does not accept the client's proposed QoS change, the client either can continue
-    using the unchanged QoS for the call or can tear down the call. If the client and call manager cannot
-    agree on the QoS for a particular call, the creator of the VC is responsible for initiating the teardown
-    of the VC.</p>
-
-<p>A call to 
-    <b>NdisClModifyCallQoS</b> causes NDIS to call the CM's 
-    <a href="..\ndis\nc-ndis-protocol-cm-modify-qos-call.md">
-    ProtocolCmModifyCallQoS</a> function, which, in turn, calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561649">NdisCmActivateVc</a> to notify the underlying
+    <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a> to notify the underlying
     miniport driver to change the call parameters if the requested QoS change can be made.</p>
 
 <p>If the call manager does not accept the client's proposed QoS change, the client either can continue
@@ -166,7 +150,7 @@ NDIS_STATUS NdisClModifyCallQoS(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547996">Irql_Protocol_Driver_Function</a>
+<a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -180,13 +164,13 @@ NDIS_STATUS NdisClModifyCallQoS(
 <a href="..\ndis\nc-ndis-miniport-co-activate-vc.md">MiniportCoActivateVc</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561627">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561679">NdisCmModifyCallQoSComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmmodifycallqoscomplete.md">NdisCmModifyCallQoSComplete</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cl-modify-call-qos-complete.md">
@@ -198,4 +182,4 @@ NDIS_STATUS NdisClModifyCallQoS(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClModifyCallQoS function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClModifyCallQoS function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

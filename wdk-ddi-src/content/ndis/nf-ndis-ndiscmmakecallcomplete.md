@@ -7,7 +7,7 @@ old-location: netvista\ndiscmmakecallcomplete.htm
 old-project: netvista
 ms.assetid: e2c1f849-daf0-479c-9f1d-906149ac550e
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: NdisCmMakeCallComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -15,11 +15,7 @@ ms.topic: function
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   NdisCmMakeCallComplete (NDIS
-   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   NdisCmMakeCallComplete (NDIS
-   5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmMakeCallComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmMakeCallComplete (NDIS   5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -118,55 +114,7 @@ VOID NdisCmMakeCallComplete(
     <b>NdisMCmMakeCallComplete</b> with NDIS_STATUS_SUCCESS only if the underlying miniport driver is ready to
     make data transfers on the VC. That is, the call manager has negotiated with the network to establish
     call parameters for the VC and called 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561649">NdisCmActivateVc</a> successfully.</p>
-
-<p>A stand-alone call manager must call 
-    <b>NdisCmMakeCallComplete</b> if its 
-    <a href="..\ndis\nc-ndis-protocol-cm-make-call.md">ProtocolCmMakeCall</a> function
-    previously returned NDIS_STATUS_PENDING for the given 
-    <i>NdisVcHandle</i> . The client that initiated the pending outgoing call cannot use the VC to make
-    transfers until the CM calls 
-    <b>NdisCmMakeCallComplete</b> with NDIS_STATUS_SUCCESS.</p>
-
-<p>Even if the attempted connection failed, neither NDIS nor the client can release the resources they
-    allocated to maintain state until the CM's call to 
-    <b>NdisCmMakeCallComplete</b> causes a call to that client's 
-    <a href="..\ndis\nc-ndis-protocol-cl-make-call-complete.md">
-    ProtocolClMakeCallComplete</a> function. In fact, neglecting to call 
-    <b>NdisCmMakeCallComplete</b> for a failed attempt to set up such a connection causes a memory leak in the
-    call manager as well; it prevents the client from tearing down the VC it created for its failed outgoing
-    call, so the CM is not called to release the resources it allocated for that VC.</p>
-
-<p>If the CM passes an error, such as NDIS_STATUS_FAILURE, for the 
-    <i>Status</i>, it should consider the 
-    <i>NdisPartyHandle</i>, if any, invalid as soon as it calls 
-    <b>NdisCmMakeCallComplete</b>. The CM can release (or reinitialize for reuse) any resources that it
-    allocated to maintain state for the given party when 
-    <b>NdisCmMakeCallComplete</b> returns control. The CM's 
-    <a href="..\ndis\nc-ndis-protocol-co-delete-vc.md">ProtocolCoDeleteVc</a> function will
-    subsequently be called to release any resources that the CM allocated for tracking the state of the
-    client-created VC whenever the CM passes an error status to 
-    <b>NdisCmMakeCallComplete</b>.</p>
-
-<p>In the course of setting up a client-initiated outgoing call, the CM can modify the client-supplied
-    call parameters originally passed in to its 
-    <a href="..\ndis\nc-ndis-protocol-cm-make-call.md">ProtocolCmMakeCall</a> function. If it
-    does, the CM must pass its modifications in the buffer at 
-    <i>CallParameters</i> when it calls 
-    <b>NdisCmMakeCallComplete</b>. If the client finds these modified call parameters unacceptable, it will
-    then tear down the call, which also causes a call to the CM's 
-    <i>ProtocolCoDeleteVc</i> function.</p>
-
-<p>Only stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
-    <b>NdisCmMakeCallComplete</b>. Miniport drivers that provide integrated call-management support call 
-    <a href="..\ndis\nf-ndis-ndismcmmakecallcomplete.md">
-    NdisMCmMakeCallComplete</a> instead.</p>
-
-<p>A stand-alone call manager should call 
-    <b>NdisMCmMakeCallComplete</b> with NDIS_STATUS_SUCCESS only if the underlying miniport driver is ready to
-    make data transfers on the VC. That is, the call manager has negotiated with the network to establish
-    call parameters for the VC and called 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561649">NdisCmActivateVc</a> successfully.</p>
+    <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a> successfully.</p>
 
 <p>A stand-alone call manager must call 
     <b>NdisCmMakeCallComplete</b> if its 
@@ -267,7 +215,7 @@ VOID NdisCmMakeCallComplete(
 <p>DDI compliance rules</p>
 </th>
 <td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547917">Irql_CallManager_Function</a>
+<a href="devtest.ndis_irql_callmanager_function">Irql_CallManager_Function</a>
 </td>
 </tr>
 </table>
@@ -282,10 +230,10 @@ VOID NdisCmMakeCallComplete(
    NdisAllocateFromNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563544">NdisMCmMakeCallComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmmakecallcomplete.md">NdisMCmMakeCallComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol-cl-make-call-complete.md">ProtocolClMakeCallComplete</a>
@@ -299,4 +247,4 @@ VOID NdisCmMakeCallComplete(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmMakeCallComplete function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmMakeCallComplete function%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: kernel\iowmiquerysingleinstance.htm
 old-project: kernel
 ms.assetid: 742535da-4726-4320-88ec-f6752ad02fb3
 ms.author: windowsdriverdev
-ms.date: 11/20/2017
+ms.date: 11/28/2017
 ms.keywords: IoWMIQuerySingleInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,7 +61,7 @@ NTSTATUS IoWMIQuerySingleInstance(
 ### -param <i>DataBlockObject</i> [in]
 
 <dd>
-<p>Pointer to a WMI data block object. The caller opens the data block object for the WMI class with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550453">IoWMIOpenBlock</a> routine. The object must be opened with the WMIGUID_QUERY access right.</p>
+<p>Pointer to a WMI data block object. The caller opens the data block object for the WMI class with the <a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a> routine. The object must be opened with the WMIGUID_QUERY access right.</p>
 </dd>
 
 ### -param <i>InstanceName</i> [in]
@@ -79,7 +79,7 @@ NTSTATUS IoWMIQuerySingleInstance(
 ### -param <i>OutBuffer</i> [out, optional]
 
 <dd>
-<p>Pointer to the buffer where the routine returns the WMI data. The routine returns a variable-sized <a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a> structure. <i>OutBuffer</i> must point to a buffer allocated from nonpaged pool.</p>
+<p>Pointer to the buffer where the routine returns the WMI data. The routine returns a variable-sized <a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a> structure. <i>OutBuffer</i> must point to a buffer allocated from nonpaged pool.</p>
 </dd>
 </dl>
 
@@ -99,11 +99,7 @@ NTSTATUS IoWMIQuerySingleInstance(
 ## -remarks
 <p><b>IoWMIQuerySingleInstance</b> determines which drivers might support the specified WMI class with the specified instance name, and issues an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551718">IRP_MN_QUERY_SINGLE_INSTANCE</a> request to each such driver. The driver that exports the data block instance with matching <b>InstanceName</b> property returns the appropriate data.</p>
 
-<p>To query for multiple WMI classes and instance names, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550477">IoWMIQuerySingleInstanceMultiple</a> routine. Drivers can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550493">IoWMISetSingleInstance</a> routine to update the class instance. </p>
-
-<p><b>IoWMIQuerySingleInstance</b> determines which drivers might support the specified WMI class with the specified instance name, and issues an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551718">IRP_MN_QUERY_SINGLE_INSTANCE</a> request to each such driver. The driver that exports the data block instance with matching <b>InstanceName</b> property returns the appropriate data.</p>
-
-<p>To query for multiple WMI classes and instance names, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550477">IoWMIQuerySingleInstanceMultiple</a> routine. Drivers can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550493">IoWMISetSingleInstance</a> routine to update the class instance. </p>
+<p>To query for multiple WMI classes and instance names, use the <a href="..\wdm\nf-wdm-iowmiquerysingleinstancemultiple.md">IoWMIQuerySingleInstanceMultiple</a> routine. Drivers can use the <a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetSingleInstance</a> routine to update the class instance. </p>
 
 ## -requirements
 <table>
@@ -168,13 +164,13 @@ NTSTATUS IoWMIQuerySingleInstance(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550453">IoWMIOpenBlock</a>
+<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550477">IoWMIQuerySingleInstanceMultiple</a>
+<a href="..\wdm\nf-wdm-iowmiquerysingleinstancemultiple.md">IoWMIQuerySingleInstanceMultiple</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550493">IoWMISetSingleInstance</a>
+<a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetSingleInstance</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551718">IRP_MN_QUERY_SINGLE_INSTANCE</a>
@@ -182,4 +178,4 @@ NTSTATUS IoWMIQuerySingleInstance(
 </dl>
 <p> </p>
 <p> </p>
-<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIQuerySingleInstance routine%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIQuerySingleInstance routine%20 RELEASE:%20(11/28/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

@@ -7,7 +7,7 @@ old-location: netvista\wwan_ipv6_address.htm
 old-project: netvista
 ms.assetid: 3DAC7E30-B938-429C-B389-59F924216B04
 ms.author: windowsdriverdev
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.keywords: WWAN_IPV6_ADDRESS, WWAN_IPV6_ADDRESS, *PWWAN_IPV6_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices

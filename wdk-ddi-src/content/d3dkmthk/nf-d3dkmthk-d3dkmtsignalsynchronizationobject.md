@@ -57,7 +57,7 @@ NTSTATUS APIENTRY D3DKMTSignalSynchronizationObject(
 ### -param <i>pData</i> [in]
 
 <dd>
-<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548353">D3DKMT_SIGNALSYNCHRONIZATIONOBJECT</a> structure that describes the synchronization objects and context stream that signaling is set up for.</p>
+<p>A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-signalsynchronizationobject.md">D3DKMT_SIGNALSYNCHRONIZATIONOBJECT</a> structure that describes the synchronization objects and context stream that signaling is set up for.</p>
 </dd>
 </dl>
 
@@ -132,7 +132,7 @@ NTSTATUS APIENTRY D3DKMTSignalSynchronizationObject(
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548353">D3DKMT_SIGNALSYNCHRONIZATIONOBJECT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk--d3dkmt-signalsynchronizationobject.md">D3DKMT_SIGNALSYNCHRONIZATIONOBJECT</a>
 </dt>
 </dl>
 <p> </p>
